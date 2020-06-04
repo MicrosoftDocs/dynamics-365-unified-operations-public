@@ -97,3 +97,33 @@ static void Job1(Args _args)
     ttsCommit;
 }
 ```
+### while select example
+
+The following example uses the **forUpdate** keyword.
+
+```xpp
+static void LedgerJob(Args _args)
+{
+    LedgerJournalTrans ledgerJournalTrans;
+    LedgerJournalTable ledgerJournalTable;
+    LedgerJournalId    jnJournalNum;
+    Voucher            vVoucher;
+    Counter            counter = 0;
+    jnJournalNum = "999999_999"; //"000012_003";
+    vVoucher = "88888_888"; //"00001_IRG";
+    ledgerJournalTable =
+        ledgerJournalTable::find(jnJournalNum);
+    ttsBegin;
+    while select forUpdate ledgerJournalTrans
+        index hint NumVoucherIdx
+            where ledgerJournalTrans.journalNum == jnJournalNum
+                && ledgerJournalTrans.voucher == vVoucher
+    {
+        ledgerJournalTrans.doDelete();
+        counter++;
+    }
+    //NumberSeq updates needed?
+    ttsCommit;
+    Global::info(strFmt("counter = %1", counter));
+}
+```

@@ -445,19 +445,22 @@ while select AccountNum, Value from custTable
 }
 ```
 
-<-- START HERE -->
-
 ### join
 
 The `join` keyword is used to join tables on a column that is shared by both tables. The join criteria are specified in a **where** clause, because there is no `on` keyword (as is found in SQL). This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table. For example, you process 500 records in a table and want to update related records in another table. If you use a nested **while select**, there will be 501 trips to the database. However, if you use a **join**, there will be just one trip to the database.
 
 
 ```xpp
-while select ledgerTable
-    join ledgerTrans
-    where ledgerTrans.accountNum == ledgerTable.accountNum
+CustTable custTable;
+CustGroup custGroup;
+int totalCredit;
+
+while select custGroup
+    join custTable
+    where custGroup.CustGroup == custTable.CustGroup
 {
-    amountMST += ledgerTrans.amountMST;
+    totalCredit += custTable.CreditMax;
+}
 }
 ```
 
@@ -466,11 +469,15 @@ while select ledgerTable
 The `notExists` keyword is selected only if there are no posts.
 
 ``` xpp
-while select AccountNum, Name from custTable
+CustTable custTable;
+CtrTable ctrTable;
+
+while select AccountNum, Value from custTable
     order by AccountNum
-    notExists join * from ctr
-    where (ctr.AccountNum ==
-        custTable.AccountNum)
+    notExists join * from ctrTable
+    where (ctrTable.AccountNum == custTable.AccountNum) 
+{
+}
 ```
 
 ### outer
@@ -552,13 +559,15 @@ static void SelectOuterJoinExample(Args _args)
 The `optimisticLock` keyword forces a statement to run by using optimistic concurrency control, even if a different value is set on the table.
 
 ```xpp
+CustTable custTable;
 select optimisticLock custTable
-    where custTable.AccountNum > '1000'
+    where custTable.AccountNum > '1000';
 ```
 
 The `pessimisticLock` keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.  |
 
 ```xpp
+CustTable custTable;
 select pessimisticLock custTable
     where custTable.AccountNum > '1000';
 ```
@@ -572,7 +581,7 @@ The following example finds a customer with AccountNum greater than 100.
 ```xpp
 CustTable custTable;
 select * from custTable
-    where custTable.AccountNum > "100";
+    where custTable.AccountNum > '100';
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -580,21 +589,21 @@ The following examples prints the AccountNum of the lowest AccountNum that is gr
 
 ```xpp
 CustTable custTable;
-select *
-    from custTable 
+select * from custTable
     order by accountNum
-    where custTable.AccountNum > "100";
+    where custTable.AccountNum > '100';
 info("AccountNum: " + custTable.AccountNum);
 ```
 
 The following example prints the AccountNum of the highest AccountNum that is greater than 100.
 ```xpp
-select *
-    from custTable 
+CustTable custTable;        
+select * from custTable
     order by accountNum desc
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
+
 
 ## in examples
 
@@ -657,27 +666,23 @@ The following example shows how an inner join can be performed as part of a **se
 CustTable custTable;
 CashDisc cashDisc;
 struct sut4 = new struct("str AccountNum; str CashDisc; str Description");
-while select firstOnly10 *
-    from custTable
+
+while select firstOnly10 * from custTable
     order by cashDisc.Description
     join cashDisc
-    where 
+    where
         custTable.CashDisc == cashDisc.CashDiscCode
         && cashDisc.Description like "*Days*"
-    {
-        sut4.value("AccountNum", custTable.AccountNum );
-        sut4.value("CashDisc", cashDisc.CashDiscCode );
-        sut4.value("Description", cashDisc.Description );
-        info(sut4.toString());
-    }
+{
+    sut4.value("AccountNum", custTable.AccountNum );
+    sut4.value("CashDisc", cashDisc.CashDiscCode );
+    sut4.value("Description", cashDisc.Description );
+    info(sut4.toString());
 }
 
 // Example output:
 // (AccountNum:"1101"; CashDisc:"0.5%D10"; Description:"0.5% 10 days")
 // (AccountNum:"4001"; CashDisc:"0.5%D10"; Description:"0.5% 10 days")
-// (AccountNum:"1102"; CashDisc:"0.5%D30"; Description:"0.5% 30 days")
-// (AccountNum:"1201"; CashDisc:"0.5%D30"; Description:"0.5% 30 days")
-// (AccountNum:"2211"; CashDisc:"0.5%D30"; Description:"0.5% 30 days")
 ```
 
 ### group by and order by example
@@ -687,17 +692,16 @@ The following example shows that the fields in the **group by** clause can be qu
 ```xpp
 CustTable custTable;
 CashDisc cashDisc;
-sut4 = new struct("str AccountNum_Count; str CashDisc; str Description");
-while select count(AccountNum)
-    from custTable
+struct sut4 = new struct("str AccountNum_Count; str CashDisc; str Description");
+
+while select count(CreditMax) from custTable
     order by cashDisc.Description
     join cashDisc
-        group by cashDisc.CashDiscCode
-        where 
-            custTable.CashDisc == cashDisc.CashDiscCode
-            && cashDisc.Description like "*Days*"
+    group by cashDisc.CashDiscCode
+    where custTable.CashDisc == cashDisc.CashDiscCode
+        && cashDisc.Description like "*Days*"
 {
-    sut4.value("AccountNum_Count", custTable.AccountNum );
+    sut4.value("Location_CreditMax", custTable.CreditMax );
     sut4.value("CashDisc", cashDisc.CashDiscCode );
     sut4.value("Description", cashDisc.Description );
     info(sut4.toString());
@@ -714,24 +718,15 @@ while select count(AccountNum)
 A **while select** statement is used to handle data. It's the most widely used form of the **select** statement. The **while select** statement loops over many records that meet specific criteria, and can run a statement on each record. Typically, when you use the **while select** statement for data manipulation, you do it in a transaction to ensure data integrity. The results of a **while select** statement are returned in a table buffer variable. If you use a field list in the **select** statement, only those fields are available in the table variable. If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields. The syntax of a **while select** statement resembles the syntax of a **select** statement, but the statement is preceded by **while select** instead of **select**. The **select** statement itself is run only one time, immediately before the first iteration of the statements in the loop. Any Boolean expressions (such as **iCounter &lt; 1**) that are added to the **while select** are tested only one time. This behavior differs from the behavior of the **while** statement in languages such as C++ and C\#. For example, the following loop can have more than one iteration.
 
 ```xpp
-static void JobWhileSelect(Args _args)
-{
-    int iCounter = 0;
-    BankAccountTable xrecBAT;
-    while select * from xrecBAT
-        where iCounter < 1
-    {
-        iCounter++;
-        Global::info(strFmt("%1 , %2", iCounter, xrecBAT.AccountID));
-    }
-}
+int iCounter = 0;
+BankAccountTable xrecBAT;
 
-/*** Display from infolog:
-Message (04:59:38 pm)
-1 , Cash1
-2 , STB-DKK
-3 , STB-EUR
-***/
+while select * from xrecBAT
+    where iCounter < 1
+{
+    iCounter++;
+    info(strFmt("%1 , %2", iCounter, xrecBAT.AccountID));
+}
 ```
 
 ### while select example
@@ -739,84 +734,18 @@ Message (04:59:38 pm)
 The following example prints the account number and sales group of every customer in the CustTable table whose account number is within a specified range.
 
 ```xpp
-static void JobPrintTel(Args _args)
+CustTable xrecCT;
+
+while select xrecCT
+    order by xrecCT.AccountNum
+    where  xrecCT.AccountNum >= '4010' && xrecCT.AccountNum <= '4100'
 {
-    CustTable xrecCT;
-    while select xrecCT
-        order by xrecCT.AccountNum
-            where  xrecCT.AccountNum >= "4010"
-                && xrecCT.AccountNum <= "4100"
-    {
-        Global::info(strFmt("%1 , %2",
-            xrecCT.AccountNum, xrecCT.SalesGroup));
-    }
-}
-
-/*** Display from Infolog:
-Message (06:04:03 pm)
-4010 , CSG-EU
-4011 , CSG-EU
-4012 , CSG-OTH
-4013 , CSG-OTH
-4014 , CSG-OTH
-4015 , CSG-OTH
-4016 , CSG-EU
-4017 , CSG-EU
-4018 , CSG-EU
-4020 , 
-4024 , 
-***/
-```
-
-### while select example
-
-The following example uses the **forUpdate** keyword.
-
-```xpp
-static void LedgerJob(Args _args)
-{
-    LedgerJournalTrans ledgerJournalTrans;
-    LedgerJournalTable ledgerJournalTable;
-    LedgerJournalId    jnJournalNum;
-    Voucher            vVoucher;
-    Counter            counter = 0;
-    jnJournalNum = "999999_999"; //"000012_003";
-    vVoucher = "88888_888"; //"00001_IRG";
-    ledgerJournalTable =
-        ledgerJournalTable::find(jnJournalNum);
-    ttsBegin;
-    while select forUpdate ledgerJournalTrans
-        index hint NumVoucherIdx
-            where ledgerJournalTrans.journalNum == jnJournalNum
-                && ledgerJournalTrans.voucher == vVoucher
-    {
-        ledgerJournalTrans.doDelete();
-        counter++;
-    }
-    //NumberSeq updates needed?
-    ttsCommit;
-    Global::info(strFmt("counter = %1", counter));
+    info(strFmt("%1 , %2", xrecCT.AccountNum, xrecCT.SalesGroup));
 }
 ```
 
-### Deleting a set of records
 
-You can use a **while select** statement to loop over a set of records that meet some criteria, and perform an action on each record. In the following example, the statement is used to delete a set of records.
 
-```xpp
-TableName myXrec;
-while select myXrec where conditions // conditions is a Boolean variable defined elsewhere.
-{
-    myXrec.delete();
-}
-```
-
-You can achieve the same effect by using the **delete\_from** keyword.
-
-```xpp
-TableName myXrec;
-delete_from myXrec where conditions; // conditions is a Boolean variable defined elsewhere.
-```
 
 ### select statements on fields
 
@@ -828,15 +757,12 @@ You can use a **select** statement in a lookup on a field. After a **select** st
 ### select field example
 
 ```xpp
-void selectFieldExamples ()
-{
-    // Prints the NameRef field from the selected customer
-    print (select CustTable order by AccountStatement).AccountStatement;
+// Prints the NameRef field from the selected customer
+print (select CustTable order by AccountStatement).AccountStatement;
 
-    // Uses the balance field from the customer with AccountNum 3000
-    if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 50000)
-        print "This customer has a credit maximum less than $50,000.";
-}
+// Uses the balance field from the customer with AccountNum 3000
+if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 5000)
+print "This customer has a credit maximum less than $5000.";
 ```
 
 ### index and order by keywords
@@ -885,64 +811,8 @@ In the following code, the clustered index is used instead of the non-clustered 
 
 ```xpp
 InventTable inv;
-select * from inv index hint GroupItemIdx
+
+select * from inv 
+    index hint ItemIdx
     where inv.ItemId == 'B-R14';
 ```
-
-## Writing a select statement as an expression
-
-You can use a **select** statement as an expression. This type of **select** statement is known as an *expression **select** statement*. A table buffer variable can't be used in an expression **select** statement. The name of the table must be used in the **from** clause. One limitation of expression **select** statements is that the **join** keyword isn't supported in an expression join.
-
-In the following example, the **select** statement inside the parentheses returns one row. 
-+ The only column that can be populated with data is the column that is named before the **from** clause in the **select** clause. 
-+ After the closing parenthesis, the name of that column is used to reference the data value: **AccountNum**. 
-+ This example returns a maximum of one row, because it uses the `firstonly` keyword. However, the value that is assigned to **sAccountNum** is the same, even if the `firstonly` keyword is omitted. 
-+ The table name can't be used to qualify a field name in the **order by** clause.
-
-```xpp
-str sAccountNum;
-sAccountNum = (select firstonly AccountNum from CustTable
-    order by AccountNum des) 
-    .AccountNum;
-info(strFmt("Max AccountNum: %1", sAccountNum));
-
-// Output: Max AccountNum: 4507
-```
-
-Here is a simpler way to achieve the same result as the previous example.
-
-```xpp
-str sAccountNum;
-sAccountNum = (select maxof(AccountNum) from CustTable).AccountNum;
-info(strFmt("Max RecId: %1", sAccountNum));
-
-// Output: Max AccountNum: 4507
-```
-
-The following example returns the maximum RecId of customers that are not blocked. In a **where** clause, the table name must be used as a qualifier of the field. Here, the **maxof** aggregate function is used, and the **RecId** field is mentioned in the function. The field that is mentioned in the aggregate function must be the same as the field name that is used to reference the data value after the closing parenthesis. Otherwise, empty data is returned.
-
-```xpp
-int64 nRecId;
-nRecId = (select maxof(RecId) from CustTable
-    where CustTable.Blocked == CustVendorBlocked::No)
-    .RecId;
-info(strFmt("Max RecId: %1", nRecId));
-
-// Output: Max RecId: 5637144604
-```
-
-In the following example, a field name (in this case, **RecId**) is used to reference a data value that isn't a **RecId** value. The **count** aggregate function doesn't return a **RecId** value. Typically, the **RecId** field is used with the **count** function.
-
-```xpp
-int64 nRecId;
-nRecId = (select count(RecId) from CustTable
-    where CustTable.Blocked == CustVendorBlocked::No)
-    .RecId;
-info(strFmt("Count of unblocked customers: %1", nRecId));
-
-// Output: Count of unblocked customers: 29
-```
-
-There are some limitations of **expression select statements**:
-+ The `join` keyword isn't supported in **expression select statements**. 
-+ You can only mention one table in an **expression select statement**, therefore subselects are not supported as a workaround to the unsupported `join` keyword.

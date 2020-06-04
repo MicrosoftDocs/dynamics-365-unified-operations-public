@@ -60,3 +60,23 @@ while select forUpdate myTable
 }
 ttsCommit;
 ```
+
+
+### Deleting a set of records
+
+You can use a **while select** statement to loop over a set of records that meet some criteria, and perform an action on each record. In the following example, the statement is used to delete a set of records.
+
+```xpp
+TableName myXrec;
+while select myXrec where conditions // conditions is a Boolean variable defined elsewhere.
+{
+    myXrec.delete();
+}
+```
+
+You can achieve the same effect by using the **delete\_from** keyword.
+
+```xpp
+TableName myXrec;
+delete_from myXrec where conditions; // conditions is a Boolean variable defined elsewhere.
+```
