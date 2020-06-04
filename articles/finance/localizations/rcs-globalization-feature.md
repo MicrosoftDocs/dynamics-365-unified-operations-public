@@ -183,7 +183,7 @@ The following actions are available for feature setups:
     - Applicability rules
     - Variables
 
-For more information about feature setups, see [Configuring feature set-up for e-Invoicing](../../fin-ops-core/dev-itpro/analytics/tasks/configuration-feature-set-for-einvoicing.md).
+For more information about feature setups, see [Configuring feature set-up for e-Invoicing](../fin-ops-core/dev-itpro/analytics/tasks/configuration-feature-set-for-einvoicing.md).
 
 ![Feature version setup page](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
