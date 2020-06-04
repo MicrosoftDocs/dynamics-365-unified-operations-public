@@ -32,13 +32,12 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced notes management feature lets you set up predefined notes that apply to all or specific customers, vendors, and products. You can then add these notes to specific business documents.
+The Advanced notes management feature lets you set up predefined notes that apply to all or specific customers, vendors and products. You can then add these notes to specific business documents.
 
 ## Prerequisites
 
 Before you begin the setup, the following prerequisites must be met:
 
-- The primary address of the legal entity must be in Italy.
 - The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Advanced notes setup
@@ -54,6 +53,11 @@ After you create the groups, go to **Accounts receivable** \> **Customers** \> *
 ![Customers group assignment](media/emea-ita-exil-notes-cust-groups.jpg)
 
 To set up advanced notes groups for vendors, go to **Accounts payable** \> **Setup** \> **Advanced notes** \> **Vendors advanced notes groups**.
+After you create the groups for vendors, go to **Accounts payable** \> **Vendors** \> **All vendors**. Then, on the **Purchase orders defaults** FastTab, in the **Advanced notes** section, assign the references for the required vendors to the new groups.
+
+To set up advanced notes groups for products, go to **Product information management** \> **Setup** \> **Advanced notes** \> **Products advanced notes groups**.
+After you create the groups for poducts, go to **Product information management** \> **Products** \> **Released products**. Then, on the **General** FastTab, in the **Administration** section, assign the references for the required products to the new groups.
+
 
 ### Set up advanced notes for customers and vendors
 
