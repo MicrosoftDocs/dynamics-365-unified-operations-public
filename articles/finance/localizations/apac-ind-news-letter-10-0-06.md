@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-06
+title: APAC India GST Localization Newsletter 10.0.06
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-06
 author: prabhatb
 manager: Wangcheng
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.06 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6)
 
-# New Features
+## New Features
 ## Validate non-existing and duplicate records when importing tax setup 
 During the process of importing tax setup, system will validate the data correctness for the master data like HSN, SAC, etc., 
 and the data duplication. Duplicate data means the lookup records which result in the same tax rate, load on inventory %, etc. 
@@ -69,7 +69,7 @@ For example, select GER export to GSTR CSV__Merged. This file is generated as a 
 
 (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-gst-multi-batch-processing-gstr-return)
 
-# Critical Fixes 
+## Critical Fixes 
 
 -	Unable to view the transaction ID in posted tax document transaction and posted tax component transaction after adding column.   
 -	Accounting entry issue on import Purchase order invoicing when invoice is posted with reference to product receipt Quantity scenarios.
@@ -82,7 +82,7 @@ For example, select GER export to GSTR CSV__Merged. This file is generated as a 
 -	Wrong TDS calculation in open vendor invoice screen   
 -	Incorrect calculation of GST for Credit note   
 
-# Upcoming critical fixes in 10.0.7 
+## Upcoming critical fixes in 10.0.7 
 
 - Multiple copies print using Print management not working for Sales Invoice report  
 -	Importing Customer free text invoice not updating for India legal entity  
