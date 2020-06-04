@@ -48,7 +48,7 @@ Procurement and Sourcing Module -> Setup -> Procurement and Sourcing Parameters
 ### Update over delivery Quantity: 
 Invoice registration Page -> Select Import invoice above -> Update Receive Quantity
 
-![](media/Over Delivery -import order-10.0.10.png)
+![](media/GST-over-delivery-1-10-0-10.PNG)
 
 ## TDS on Foreign vendor transaction 
 TDS on foreign vendor invoice gives Voucher imbalance error . The transactions on voucher do not balance . 
@@ -61,7 +61,7 @@ As per rule 26 of Income tax act TDS on foreign currency transaction is converte
 
 Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Default in Ledger form
 
-![](media/TDS on Foreign currency-10.0.10.png
+![](media/GST-tds-exchange-rate-2-10-0-10.PNG)
 
 ### Accounting entries :
 | Description                | Dr.(US$)     | Dr.(INR)          | Cr.(US$)                | Cr.(INR)                                        |
