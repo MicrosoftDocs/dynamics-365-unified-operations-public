@@ -95,11 +95,23 @@ The following table contains values and descriptions for the time properties on 
 | **Property name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
 | Price range base | None, Base price, Selling price | <ul><li>**None** – Price ranges "Lower Limit" and "Upper Limit" are not applicable.</li><li>**Base Price** - A particular warranty will be applicable if the base price (the price without discounts) of the warrantable item falls between upper and lower limits specified here based on price of the warrantable item.</li><li>**Selling price** - Reserved for future use.</li></ul> | 
-| Lower limit, Upper limit | Positive integer value | These properties specify the upper and lower price limits of the warrantable item in company currency. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price, or MSRP). |
+| Lower limit, Upper limit | Positive integer value | These properties specify the upper and lower price limits of the warrantable item and define how the current warranty item is applicable to warrantable item. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price, or MSRP). If the **Price range base** value is set to **Base price**, only a warrantable item (product) with a base price that falls between the **Lower limit** and **Upper limit** values will trigger a prompt to add the warranty item at POS. |
 
 The following image shows an example of the price range properties on the **Released product details** page. 
 
 ![Example of price range properties on the **Released product details** page](./media/ew-release-product-details.png)
+
+### Example
+
+A laptop warrantable item (product) has a base price $999 and there are two laptop warranty items as follows:
+
+- Warranty_1 has a lower limit of $500 and upper limit of $1000 and price range base value of **Base price**.
+- Warranty_2 has a lower limit of $1001 and upper limit of $2000 and price range base value of **Base price**.
+
+In this case, a prompt to add Warranty_1 will be sent when the laptop with value $999 is added to cart in POS, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
+
+>{!NOTE]
+> For the example above, if you want prompts to be sent for both Warranty_1 and Warranty_2 regardless of the laptop (warrantable item) price, you would set the **Price range base** value to **None**.
 
 ## Configure channel-specific settings
 
