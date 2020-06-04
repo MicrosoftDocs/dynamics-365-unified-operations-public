@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-time restore (PITR) for a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-time restore (PITR) for a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for Production environments and 14 days for Sandbox environments.
 
 ## Self-service point-in-time restore
 [!include [pitr](../includes/dbmovement-pitr.md)]
