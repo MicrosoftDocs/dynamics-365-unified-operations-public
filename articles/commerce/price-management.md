@@ -57,7 +57,9 @@ The following illustration shows how price groups are used. In this illustration
 
 When you create price groups, you should not use a single price group for multiple types of commerce entities. Otherwise, it can be difficult to determine why a specific price or discount is being applied to a transaction.
 
-As the red dashed line in the illustration shows, Commerce does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations.
+As the red dashed line in the illustration shows, Commerce does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations. 
+
+Note that if the price group is set on the customer, then this price group gets associated to the sales order header of the orders created for this customer. If the user changes the price group on the order header, then the old price group gets replaced with the new price group only for the current order. For example, the old price group will not affect the current order, but it will still be associated to the customer for future orders.
 
 The following sections provide more information about the commerce entities that you can use to set distinct prices when the price groups are used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to set the price groups on the entities first, because this step is likely to be a one-time setup that is done during implementation. Then, as prices and discounts are created, you can set the price groups on those prices and discounts individually.
 
