@@ -42,19 +42,19 @@ Now it is supported by tax rate type (please refer to the newsletter of 10.0.5).
  
 You can enable the feature in feature management workspace, feature name is "(India) Enable changing tax rate type in purchase invoice "
 
-![](media/Change rate tax type-10.0.8.png)
+![](media/GST-Changing-tax-rate-type-1-10-0-08.PNG)
  
 With the feature enabled, you can update the tax rate type in the tax information of purchase invoice, 
 so you can apply different tax rate.
 
-![](media/Change rate tax type-II-10.0.8.png)
+![](media/GST-tax-rate-type-tax-infomration -2-10-0-08.PNG)
 
 ## Data consistency check
 
 Now you can check/fix some data inconsistency issue regards GTE, go System administration->Periodic tasks->Database->Consistency check.
 We highly recommend you to run this in your environment.
 
-![](media/Data consistency check-10.0.8.png)
+![](media/GST-tax-rate-type-tax-infomration -3-10-0-08.PNG)
 
 ## GST number sequence issue
 
