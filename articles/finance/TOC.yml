@@ -450,6 +450,8 @@
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
+      - name: Advanced notes management
+        href: localizations/emea-ita-exil-structured-notes.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -2020,8 +2022,6 @@
           href: localizations/emea-ita-exil-bank-accounts-setup.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
-        - name: Advanced notes management
-          href: localizations/emea-ita-exil-structured-notes.md
         - name: Intent letters - Invoicing usual exporters
           href: localizations/emea-ita-exil-intent-letter.md
         - name: Tax invoice for goods delivered for free
