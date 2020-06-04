@@ -53,7 +53,7 @@ It solved the following GSTR issues:
 You can create Non-GST item, and it would be defaulted into Tax Information in the taxable transactions.
 
 
-![](media/Non GST item-10.0.1.png)
+![](media/GST-non-gst-item-1-10-0-01.PNG)
 
 # Critical Fixes 
 
