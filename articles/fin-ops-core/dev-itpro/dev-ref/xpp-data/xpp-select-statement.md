@@ -281,9 +281,6 @@ recid = history.getFieldValue("RecId");
 info('RecId:' + int642Str(recid));
 ```
 
-> [!WARNING]
-> why use "getFieldValue" here, instead of history.RecId?
-
 ## Aggregate keywords
 
 ### avg
