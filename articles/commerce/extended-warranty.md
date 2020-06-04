@@ -194,19 +194,19 @@ The following table contains warranty policy properties, values, and description
 
 | **Property name** | **Value** | **Description** |
 |-------------------|------------|-----------------|
-| PolicyNumber |  character string (20 max) | Warranty policy number |
-| WarrantiedItemId |  character string (20 max) | Warrantable item ID |
-| WarrantiedInventoryLotId |  character string (20 max) | Warrantable item lot ID |
-| WarrantiedSerialNumber |  character string (20 max) | Warrantable item serial number |
+| PolicyNumber |  Character string (20 max) | Warranty policy number |
+| WarrantiedItemId |  Character string (20 max) | Warrantable item ID |
+| WarrantiedInventoryLotId |  Character string (20 max) | Warrantable item lot ID |
+| WarrantiedSerialNumber |  Character string (20 max) | Warrantable item serial number |
 | WarrantiedFulfilledDate |  Date | Warranty policy fulfillment date |
-| WarrantyItemId |  character string (20 max) | Warranty item ID |
-| WarrantyInventoryLotId |  character string (20 max) | Warranty item inventory lot ID |
+| WarrantyItemId |  Character string (20 max) | Warranty item ID |
+| WarrantyInventoryLotId |  Character string (20 max) | Warranty item inventory lot ID |
 | WarrantySalesDate |  Date | Warranty item sale date |
 | WarrantyEffectiveDate |  Date | Warranty policy effective date |
 | WarrantyExpirationDate |  Date | Warranty policy expiration date |
-| CustAccount |  character string (20 max) | Customer account number |
+| CustAccount |  Character string (20 max) | Customer account number |
 | Status |  Created, Voided, Effective, Expired) | Warranty policy status |
-| Notes |  character string (255 max) | Warranty policy notes, such as terms and conditions |
+| Notes |  Character string (255 max) | Warranty policy notes, such as terms and conditions |
 
 ## Frequently asked questions (FAQs)
 
