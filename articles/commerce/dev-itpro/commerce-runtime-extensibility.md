@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) and Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -144,7 +144,7 @@ The preceding steps are used for manual deployment and testing in your developme
 
 **Debugging CRT**
 
-To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit)** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
+To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit (self-hosted))** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
 
 **Using extension properties on CRT entities and requests and responses**
 
