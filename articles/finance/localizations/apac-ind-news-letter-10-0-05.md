@@ -1,7 +1,6 @@
 ---
 # required metadata
-
-title: APAC-IND-Newsletter-10-0-05
+title: APAC India GST Localization Newsletter 10.0.05
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-05
 author: prabhatb
 manager: Wangcheng
@@ -33,9 +32,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.05 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5)
 
-# New Features
+## New Features
 ## New Configuration 
 The following configurations, which you can get from Shared Asset Library in LCS and use it in version 10.0.5, are available. You can also find all the released configuration with details here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-ind-gst.
  
@@ -159,7 +158,7 @@ order to mitigate difference for custom duty
 
 - Settle Reverse charge liability from cash account on the last day of the month in which reverse charge liability was created. 
 
-# Critical Fixes 
+## Critical Fixes 
 
 - TDS not deducted correctly when invoice is settled with prepayment .
 -	Save tax document in purchase order confirmation form so tax document form can be opened after posting.
@@ -183,7 +182,7 @@ order to mitigate difference for custom duty
 -	Free text invoice not posting with terms of payment as cash on delivery payment term and GST
 
 
-# Upcoming critical fixes in 10.0.6 
+## Upcoming critical fixes in 10.0.6 
 
 - Accounting entry issue on Import PO invoicing (along with BOE feature) when invoice is posted with reference 
   to product receipt quantity .
