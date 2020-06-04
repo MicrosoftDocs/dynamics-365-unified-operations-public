@@ -47,14 +47,14 @@ You can enable the feature in feature management workspace, feature name is "(In
 With the feature enabled, you can update the tax rate type in the tax information of purchase invoice, 
 so you can apply different tax rate.
 
-![](media/GST-tax-rate-type-tax-infomration -2-10-0-08.PNG)
+![](media/GST-tax-rate-type-tax-infomration-2-10-0-08.PNG)
 
 ## Data consistency check
 
 Now you can check/fix some data inconsistency issue regards GTE, go System administration->Periodic tasks->Database->Consistency check.
 We highly recommend you to run this in your environment.
 
-![](media/GST-tax-rate-type-tax-infomration -3-10-0-08.PNG)
+![](media/GST-tax-rate-type-tax-infomration-3-10-0-08.PNG)
 
 ## GST number sequence issue
 
