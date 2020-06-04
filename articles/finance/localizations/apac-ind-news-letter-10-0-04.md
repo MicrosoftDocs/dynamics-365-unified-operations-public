@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-04
+title: APAC India GST Localization Newsletter 10.0.04
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-04
 author: prabhatb
 manager: Wangcheng
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.04 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-4)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-4)
 
-# New Features
+## New Features
 ## Define GST reference number sequence group
 
 User can define separated GST reference number sequence group for Free Text Invoice, Stock transfer receipt and Stock transfer shipment. 
@@ -45,7 +45,7 @@ User can define separated GST reference number sequence group for Free Text Invo
  ## Financial dimension linked to the inventory dimension site will be auto-populated in stock transfer receipt order line
  
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Total transaction value in GSTR2 is incorrect for multi-line invoice journal with both debit and credit ledger line
 -	Performing Settle and Post Sales tax are not hitting Vendor account
@@ -56,7 +56,7 @@ User can define separated GST reference number sequence group for Free Text Invo
 -	Proforma Invoices consumes number from invoice number sequence
 
 
-# Upcoming critical fixes in 10.0.5 
+## Upcoming critical fixes in 10.0.5 
 
 - TDS not deducted correctly when invoice is settled with prepayment
 -	Calculated GST is not getting posted to Expense Account in case of SAC code selected with ITC category as “Others”
