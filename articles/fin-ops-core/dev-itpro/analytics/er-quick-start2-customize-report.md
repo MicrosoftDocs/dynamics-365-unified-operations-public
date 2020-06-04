@@ -37,22 +37,22 @@ ms.dyn365.ops.version: Version 7.0.0
 The following steps explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can do the following:
 
 - Configure parameters of the [ER framework](general-electronic-reporting.md) in Finance instance
-- Import to this instance an ER solution that is provided by Microsoft for generation of a payment file while [vendor payment](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/vendor-payment-overview) is processed
-- Create a custom version of ER format based on ER format of the provided ER solution
-- Modify a custom ER format to generate payment files in accordance to specific requirements of a particular bank
-- Adopt changes of a new versions of provided by Microsoft ER format in a custom ER format
+- Import to this instance ER configurations that are provided by Microsoft for generation of a payment file while [vendor payment](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/vendor-payment-overview) is processed
+- Create a custom version of ER format configuration based on the provided ER format configuration
+- Modify a custom ER format configuration to generate payment files in accordance to specific requirements of a particular bank
+- Adopt changes of a new versions of provided by Microsoft ER format configuration in a custom ER format configuration
 
 These steps can be performed in **GBSI** company with no coding.
 
 -   [Configure ER framework](#ConfigureFramework)
     -   [Configure ER parameters](#ConfigureParameters)
-    -   [Activate an ER solution provider](#ActivateProvider)
-        -   [Review ER solution providers list](#ReviewProvidersList)
-        -   [Add a new ER solution provider](#ActivateProvider)
-        -   [Activate an ER solution provider](#ActivateAddedProvider)
--   [Import the provided ER solution](#ImportERSolution1)
-    -   [Import the ER format of the provided ER solution](#ImportERFormat1)
-    -   [Review the imported ER solution](#ReviewImportedERSolution)
+    -   [Activate an ER configuration provider](#ActivateProvider)
+        -   [Review ER configuration providers list](#ReviewProvidersList)
+        -   [Add a new ER configuration provider](#ActivateProvider)
+        -   [Activate an ER configuration provider](#ActivateAddedProvider)
+-   [Import the provided ER configurations](#ImportERSolution1)
+    -   [Import the provided ER format configuration](#ImportERFormat1)
+    -   [Review the imported ER configurations](#ReviewImportedERSolution)
 -   [Prepare a vendor payment for processing](#PrepareVendorPayment)
     -   [Add bank information for a vendor account](#AddBankAccount)
     -   [Enter a vendor payment](#EnterVendorPayment)
@@ -66,9 +66,9 @@ These steps can be performed in **GBSI** company with no coding.
 -   [Process a vendor payment by using custom ER format](#ProcessVendorPayment2)
     -   [Set up the electronic payment method](#ConfigureMethodOfPayment2)
     -   [Process a vendor payment](#ProcessPayment2)
--   [Import the new version of the provided ER solution](#ImportERSolution2)
-    -   [Import the new version of the ER format of the provided ER solution](#ImportERFormat2)
-    -   [Review the imported ER format](#ReviewImportedERFormat)
+-   [Import the new versions of the provided ER format configurations](#ImportERSolution2)
+    -   [Import the new version of the provided ER format configuration](#ImportERFormat2)
+    -   [Review the imported ER format configuration](#ReviewImportedERFormat)
 -   [Adopt changes of the new version of imported format in a custom format](#AdoptNewBaseVersion)
     -   [Complete the current draft version of a custom format](#CompleteDerivedFormat)
     -   [Rebase your custom format to a new base version](#RebaseDerivedFormat)
@@ -90,43 +90,43 @@ As the Electronic Reporting Functional Consultant, you must configure the minima
 
 To learn more about ER parameters, review the [Configure the ER framework](electronic-reporting-er-configure-parameters.md) page.
 
-### <a name="ActivateProvider">Activate an ER solution provider</a>
+### <a name="ActivateProvider">Activate an ER configuration provider</a>
 
-Every added ER configuration is marked as owned by an ER solution provider. The activated in the ER workspace ER solution provider is used for that. Therefore, you must activate an ER solution provider in the ER workspace before you start adding or editing any ER configuration.
+Every added ER configuration is marked as owned by an ER configuration provider. The activated in the ER workspace ER configuration provider is used for that. Therefore, you must activate an ER configuration provider in the ER workspace before you start adding or editing any ER configuration.
 
 > [!NOTE]
 >
-> The only owner of an ER configuration can edit it. Therefore, the appropriate ER solution provider must be activated in the ER workspace for editing an ER configuration.
+> The only owner of an ER configuration can edit it. Therefore, the appropriate ER configuration provider must be activated in the ER workspace for editing an ER configuration.
 
-#### <a name="ReviewProvidersList">Review ER solution providers list</a>
+#### <a name="ReviewProvidersList">Review ER configuration providers list</a>
 
 1.  Go to the **Navigation pane** in the upper left corner.
 2.  Select **Organization administration** module.
 3.  Go to **Workspaces \> Electronic reporting**.
 4.  Go to **Related links \> Configuration providers**.
 
-A provider record has a unique name and URL. Review the content of this page and skip the remaining steps of the [Add a new ER solution provider](#ActivateProvider) section  if a record for Litware, Inc. ([https://www.litware.com](https://www.litware.com/)) already exists.
+A provider record has a unique name and URL. Review the content of this page and skip the remaining steps of the [Add a new ER configuration provider](#ActivateProvider) section  if a record for Litware, Inc. ([https://www.litware.com](https://www.litware.com/)) already exists.
 
-#### <a name="ActivateProvider">Add a new ER solution provider</a>
+#### <a name="ActivateProvider">Add a new ER configuration provider</a>
 
 1.  Select **New**.
 2.  In the **Name** field, type **Litware, Inc.**.
 3.  In the **Internet address** field, type <https://www.litware.com>.
 4.  Select **Save**.
 
-#### <a name="ActivateAddedProvider">Activate an ER solution provider</a>
+#### <a name="ActivateAddedProvider">Activate an ER configuration provider</a>
 
 1.  Go to **Workspaces \> Electronic reporting**.
 2.  Select the Litware, Inc. provider.
 3.  Select **Set active**.
 
-To learn more about ER solution provider, review the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) page.
+To learn more about ER configuration provider, review the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) page.
 
-## <a name="ImportERSolution1">Import the provided ER solution</a>
+## <a name="ImportERSolution1">Import the provided ER configurations</a>
 
-### <a name="ImportERFormat1">Import the ER format of the provided ER solution</a>
+### <a name="ImportERFormat1">Import the provided ER format configuration</a>
 
-To bring the provided ER solution to the current Finance instance, you must import it from the configured for this ER
+To bring the provided ER configurations to the current Finance instance, you must import them from the configured for this ER
 [repository](general-electronic-reporting.md#Repository).
 
 1.  Go to the **Navigation pane** and select **Organization administration**.
@@ -144,14 +144,14 @@ To bring the provided ER solution to the current Finance instance, you must impo
 If you experience difficulties with accessing [Global repository](er-download-configurations-global-repo.md), use the alternative way
 of configuration [downloading](download-electronic-reporting-configuration-lcs.md) from Microsoft Lifecycle Services (LCS).
 
-### <a name="ReviewImportedERSolution">Review the imported ER solution</a>
+### <a name="ReviewImportedERSolution">Review the imported ER configurations</a>
 
 1.  Go to the **Navigation pane** and select **Organization administration**.
 2.  Go to **Workspaces \> Electronic reporting**.
 3.  Select **Reporting configurations**.
 4.  Expand **Payment model** in the configurations tree.
 
-Note that, in addition to the selected **BACS (UK)** ER format, other ER configurations were imported as parts of the provided ER solution. Make sure that the following ER configurations are available in the configurations tree:
+Note that, in addition to the selected **BACS (UK)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configurations tree:
 
 -   Payment model
     > Contains [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the payment business domain
@@ -209,7 +209,7 @@ Make sure that the entered payment is configured to use the **Electronic** metho
 ## <a name="ProcessVendorPayment1">Process a vendor payment by using provided ER format</a>
 
 ### <a name="ConfigureMethodOfPayment1">Set up the electronic payment method</a>
-You must configure the electronic method of payment to use the ER format of the imported ER solution.
+You must configure the electronic method of payment to use the imported ER format configuration.
 
 1.  Go to **Accounts payable \> Payment setup \> Methods of payment**.
 2.  Expand the **File format** FastTab.
@@ -246,7 +246,7 @@ You must configure the electronic method of payment to use the ER format of the 
 
 ## <a name="CustomizeProvidedFormat">Customize the provided ER format</a>
 
-Assume that you want to use the provided by Microsoft ER solution to generate vendor payment files in BACS format but you need to add a customization that is required to support specific requirements of a particular bank. You also want to keep the ability to upgrade your custom format as soon as a new version of provided by Microsoft ER solution becomes available performing this upgrade with the lowest cost.
+Assume that you want to use the provided by Microsoft ER configurations to generate vendor payment files in BACS format but you need to add a customization that is required to support specific requirements of a particular bank. You also want to keep the ability to upgrade your custom format as soon as new versions of provided by Microsoft ER configurations become available performing this upgrade with the lowest cost.
 
 To do this, as the representative of the Litware, Inc., you need to create (derive) a new ER format configuration using the Microsoft configuration **BACS (UK)** as a base.
 
@@ -361,13 +361,13 @@ You must configure the electronic method of payment to use your custom ER format
     > [!Note]
     > Note that in accordance to the structure of your custom ER format, the payment line in a generated file now [starts](#PositionSWIFTCode) from the SWIFT code that has been [entered](#DefineSWIFTCode) for a bank account of a vendor whose payment has been processed.
 
-## <a name="ImportERSolution2">Import the new version of the provided ER solution</a>
+## <a name="ImportERSolution2">Import the new versions of the provided ER format configurations</a>
 
 Assume that you have got a notification about the knowledge base article [KB3763330](https://fix.lcs.dynamics.com/Issue/Details?kb=3182046) informing about the new version of the **BACS (UK)** ER format that has been published by Microsoft. In addition to the control report, this new version offers the possibility to generate the payment advice and the attending note reports while a vendor payment is processed. You want to start using the functionality in you Finance instance.
 
-### <a name="ImportERFormat2">Import the new version of the ER format of the provided ER solution</a>
+### <a name="ImportERFormat2">Import the new version of the provided ER format configuration</a>
 
-To bring a new version of the provided ER solution to the current Finance instance, you must import it from the configured for this ER
+To bring new versions of the provided ER configurations to the current Finance instance, you must import them from the configured for this ER
 [repository](general-electronic-reporting.md#Repository).
 
 1.  Go to the **Navigation pane** and select **Organization administration**.
@@ -385,7 +385,7 @@ To bring a new version of the provided ER solution to the current Finance instan
 If you experience difficulties with accessing [Global repository](er-download-configurations-global-repo.md), use the alternative way
 of configuration [downloading](download-electronic-reporting-configuration-lcs.md) from Microsoft Lifecycle Services (LCS).
 
-### <a name="ReviewImportedERFormat">Review the imported ER format</a>
+### <a name="ReviewImportedERFormat">Review the imported ER format configuration</a>
 
 1.  Go to the **Navigation pane** and select **Organization administration**.
 2.  Go to **Workspaces \> Electronic reporting**.
@@ -487,3 +487,4 @@ To start using a new functionality of the version 3.3 of the BACS (UK) format al
 -   [Electronic Reporting overview](general-electronic-reporting.md)
 -   [Download ER configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 -   [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
+
