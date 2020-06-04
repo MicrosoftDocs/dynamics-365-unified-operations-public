@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-07
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-07
+title: APAC India GST Localization Newsletter 10.0.07
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.07
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.07 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-7)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-7)
 
-# New Features
+## New Features
 ## Create tax component with pre-defined rules 
 
 It enables the user to create a new component with pre-defined rules which support GST behaviors including non-deductible, 
@@ -52,7 +52,7 @@ You can enable the feature in feature management workspace, feature name is "Ena
  
  ![](media/GST-Tax-component-pre-defined-2-10-0-07.PNG)
  
-# Critical Fixes 
+## Critical Fixes 
 
 - Multiple copies using print management not working for Sales Invoice Report 
 -	Invoice address is not defaulting in customer tax information in Time-sheet 
@@ -68,7 +68,7 @@ You can enable the feature in feature management workspace, feature name is "Ena
   not be greyed out. 
 
 
-# Upcoming critical fixes in 10.0.8 
+## Upcoming critical fixes in 10.0.8 
 
 - Tax amount showing in Purchase order totals and Purchase Invoice total even the transaction is posted
   with 100%  Reverse charge basis. 
