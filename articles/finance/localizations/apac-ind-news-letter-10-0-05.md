@@ -61,11 +61,11 @@ In India GST, there are following five slabs:
 
 Now you can associate the Tax Rate Type to Released Product, Procurement/Sales categories and Charge code.
 
-![](media/Tax rate type-10.0.5.png)
+![](media/GST-tax-rate-type-1-10-0-05.PNG)
 
 Then use Tax Rate Type to determine the tax rate. It will dramatically reduce the number of record of tax setup data.
 
-![](media/Tax rate type-II-10.0.5.png)
+![](media/GST-tax-rate-type-2-10-0-05.PNG)
 
 For Retail customers who have terminals not updated to 10.0.5, please use following configurations instead. The only difference compare to the 
 above one is it does not support tax rate type. 
@@ -79,7 +79,7 @@ above one is it does not support tax rate type.
 This feature was released in 10.0.2 . Now providing more details on it. If you are using Microsoft's standard configuration or you extend only the tax document,
 you can skip the model mapping which will improve the performance of tax calculation and posting.
 
-![](media/Skip model mapping-10.0.5.png)
+![](media/GST-skip-model-mapping-3-10-0-05.PNG)
 
 ## Support calculate/adjust tax in accounting currency
 This feature was released in App AX 10.0.3 . Now providing more details on it. User can adjust actual tax amount in accounting currency for import/export
@@ -87,9 +87,9 @@ order to mitigate difference for custom duty
 
 ### How to enable : Tax -> Setup -> Tax Configuration -> Tax Setup -> Parameter
 
-![](media/Adjust Tax as accounting currency-10.0.5.png)
+![](media/GST-skip-model-mapping-4-10-0-05.PNG)
 
-![](media/Adjust Tax as accounting currency-II-10.0.5.png)
+![](media/GST-skip-model-mapping-5-10-0-05.PNG)
 
 ## Financial dimension linked to the inventory dimension site is not auto-populated in stock transfer receipt order line
 
@@ -140,9 +140,9 @@ order to mitigate difference for custom duty
 
 - Create new posting account "Tax payable reverse charge" 
 
-![](media/Tax payable reverse charge-10.0.5.png)
+![](media/GST-tax-payable-reverse charge-6-10-0-05.PNG)
 
-![](media/Tax payable reverse charge-II-10.0.5.png)
+![](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
 
 - Identify Reverse charge liability in separate account such as " Tax Payable (Reverse charge)" which should be defined as "Ledger account" instead of "Tax account" because Reverse charge liability cannot directly settled with input tax credit . It must be paid separately first from the "Cash Ledger account" .
  
