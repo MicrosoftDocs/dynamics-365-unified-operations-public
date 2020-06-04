@@ -70,7 +70,7 @@ An overview of each path is given below:
 
 1.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
-1.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-vm-locally).
+1.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-locally).
 
 1.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
