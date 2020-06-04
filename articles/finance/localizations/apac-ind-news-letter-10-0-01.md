@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-01
+title: APAC India GST Localization Newsletter 10.0.01
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-01
 author: prabhatb
 manager: Wangcheng
@@ -35,7 +35,7 @@ This newsletter includes a summary of the new features and critical bug fixes re
 You can learn more about the shipped features in 
 -[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1)
 
-# New Features
+## New Features
 ## New Configuration 
 The following configurations, which you can get from the Shared Asset Library in LCS and use it in version 10.0.1 and above:
  
@@ -55,7 +55,7 @@ You can create Non-GST item, and it would be defaulted into Tax Information in t
 
 ![](media/GST-non-gst-item-1-10-0-01.PNG)
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Cannot post a purchase invoice for service item with load on inventory.
 - HSN summary is empty and no records in B2CL in GST offline tool format.
@@ -81,7 +81,7 @@ You can create Non-GST item, and it would be defaulted into Tax Information in t
 - Retail statement posting fails during sales invoice posting when there is price include tax sales order with service item, 
   and the tax is different from the tax in the head quarter.
 
-# Upcoming critical fixes in 10.0.2 
+## Upcoming critical fixes in 10.0.2 
 
 - Fixed exchange rate is not considered in GSTR1.
 - Unable see the Tax information for a Timesheet in Indian Legal entity.
