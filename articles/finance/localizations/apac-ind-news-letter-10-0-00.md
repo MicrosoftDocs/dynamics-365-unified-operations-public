@@ -45,7 +45,7 @@ The following configurations, which you can get from Shared Asset Library in LCS
  
 You can differentiate customer GST registration number from vendor GST registration number in tax setup.
 
-![](media/GST registration Number-10.0.png)
+![](media/GST-registration-rate-setup-1-10-0-00.PNG)
 
 You can choose to determine the tax rate based on invoice date for the purchase transactions, like purchase invoice.
 
