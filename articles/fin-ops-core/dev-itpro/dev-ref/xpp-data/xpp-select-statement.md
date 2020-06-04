@@ -482,21 +482,23 @@ while select AccountNum, Value from custTable
 
 ### outer
 
-The `outer` keyword returns all rows from the table that is named first, even if rows have no match in the table that is named second. This join is a left outer join. Default values are substituted for the data that couldn't be obtained from a matching row in the other joined table. 
+The `outer` keyword returns all rows from the table that is named first, even if rows have no match in the table that is named second. This join is a left outer join. Default values are substituted for the data that couldn't be obtained from a matching row in the other joined table.
 
 There is no `left` keyword, and there is no right outer join.
 
 For an inner join, the behavior if you filter on an **on** clause is the same as the behavior if you filter on the **where** clause.
 
 ```xpp
-while select AccountNum
-    from custTable
-    order by AccountNum
-    outer join * from custBankAccount
-    where custBankAccount.AccountNum == custTable.AccountNum
+CustTable custTable;
+CustGroup custGroupTable;
+
+while select CustGroup from custGroupTable
+    order by CustGroup
+    outer join * from custGroupTable
+    where custTable.CustGroup == custGroupTable.CustGroup
 {
-    info(custTable.AccountNum + ', ' + custBankAccount.DlvMode);
-} 
+    Info(custTable.CustGroup + ', ' + custGroupTable.Name);
+}
 ```
 
 The following example is based on two tables. The field types and example data are included. There is a one-to-many relationship between the SalesOrder parent table and the SalesOrderLine child table. For each row in the SalesOrder table, there are 0 (zero) or more rows in the SalesOrderLine table. There are two rows in the SalesOrder table.
