@@ -35,33 +35,7 @@ ms.search.validFrom: 2016-02-28
 
 This topic describes the update method and the doUpdate method in the X++ language. 
 
-## forUpdate keyword
 
-The `forUpdate` keyword selects records for update only. Depending on the underlying database, the records might be locked for other users.
-
-The following example 
-
-```xpp
-ttsBegin; 
-while select forUpdate ledgerJournalTrans
-    index hint NumVoucherIdx
-    where ledgerJournalTrans.journalNum ==
-    _journalNum &&
-    ledgerJournalTrans.voucher == _voucher
-{
-    ledgerJournalTrans.doDelete();
-    counter++;
-}
-if (counter
-    && ledgerJournalTable.journalType
-    != LedgerJournalType::Periodic)
-{
-    NumberSeq::release(
-        ledgerJournalTable.voucherSeries,
-        _voucher);
-}
-ttsCommit;
-```
 
 
 

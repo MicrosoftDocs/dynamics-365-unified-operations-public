@@ -80,3 +80,31 @@ You can achieve the same effect by using the **delete\_from** keyword.
 TableName myXrec;
 delete_from myXrec where conditions; // conditions is a Boolean variable defined elsewhere.
 ```
+
+## Example
+
+The following example 
+
+```xpp
+int counter = 0;
+str _journalNum = '';
+str _voucher = '';
+LedgerJournalTrans ledgerJournalTrans;
+LedgerJournalTable ledgerJournalTable;
+
+ttsBegin;
+    while select forUpdate ledgerJournalTrans
+        index hint NumVoucherIdx
+        where ledgerJournalTrans.journalNum == _journalNum 
+            && ledgerJournalTrans.voucher == _voucher
+    {
+        ledgerJournalTrans.doDelete();
+        counter++;
+    }
+
+    if (counter && ledgerJournalTable.journalType != LedgerJournalType::Periodic)
+    {
+        NumberSeq::release(ledgerJournalTable.voucherSeries, _voucher);
+    }
+ttsCommit;
+```

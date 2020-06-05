@@ -35,14 +35,11 @@ ms.search.validFrom: 2016-02-28
 The **select** statement fetches or manipulates data from the database.
 
 + All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
-+ The **select** statement fetches only one record, or field.
-+ To fetch or traverse multiple records, you can use the **next** statement or the **while select** statement.
++ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **while select** statement.
     + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
     + It's more appropriate to use a **while select** statement to traverse multiple records.
 + The results of a **select** statement are returned in a table buffer variable.
 + If you use a field list in the **select** statement, only those fields are available in the table variable.
-+ If you use an aggregate function, such as **sum**, the result is returned in the field that you perform the aggregate function over.
-+ You can count, average, or sum only integer and real fields.
 
 ## Select example
 
@@ -86,7 +83,7 @@ ttsCommit;
 
 ## Delete example
 
-In the following example, all records in the **CustomerTable** table that satisfy the criterion in the **where** clause (that is, all records where the value of the **AccountNum** field is equal to **2000**) are deleted from the database. One record is deleted at a time.
+In the following example, all records in the **CustomerTable** table where the **AccountNum** field is equal to **2000** are deleted from the database. One record is deleted at a time.
 
 ```xpp
 ttsBegin;
@@ -116,7 +113,7 @@ These symbols are used in the syntax:
 |*LockOption*          | = | **optimisticLock** \| **pessimisticLock**                                 |
 |*ForceOption*         | = | **forcePlaceholders** \| **forceLiterals**                                |
 |*FieldList*           | = | { *Field* } \| **\***                                                     |
-|*Field*               | = | *Aggregate* **(** *FieldIdentifier* **) | *FieldIdentifier*               |
+|*Field*               | = | *Aggregate* **(** *FieldIdentifier* **)** \| *FieldIdentifier*            |
 |*Aggregate*           | = | **sum** \| **avg** \| **minof** \| **maxof** \| **count**                 |
 |*Options*             | = | *OrderClause* \| *IndexClause*                                            |
 |*OrderClause*         | = | [*OrderBy* [*GroupBy*]] \| [*GroupBy* [*OrderBy*]]                        |
@@ -136,43 +133,47 @@ These symbols are used in the syntax:
 
 ## Aggregate functions
 
-The aggregate functions perform calculations on a single field over a group of records. The type of the field must be able to hold the value returned. For example, if you call the **count** function over a field named **Total**, then **Total** must be a numeric field.
+The aggregate functions perform calculations on a single field over a group of records.
 
-## Differences between X++ and SQL
++ The result is returned in the field that you perform the aggregate function over.
++ The fields in the results are the aggregate values and the fields in the **group by** clause.
++ You can count, average, or sum only integer and real fields.
++ In cases where the **sum** function would return **null**, no rows are returned.
+
+### Differences between X++ and SQL
 
 In industry-standard SQL, a database query can contain aggregate functions. Examples include **count(RecID)** and **sum(columnA)**. When an aggregate function is used, but no rows match the **where** clause, a row must be returned to hold the result of the aggregates. The row that is returned shows the value **0** (zero) for the **count** function and **null** for the **sum** function. X++ doesn't support the concept of **null** values for the database. Therefore, in cases where the **sum** function will return **null**, no row is returned to the user. Additionally, every data type has a specific value that is treated as a **null** value in some circumstances.
 
 ## Group and order the query results
 
-The following example shows that the fields in the **group by** clause can be qualified by a table name. There can be multiple **group by** clauses. However, the fields can be qualified by a table name in only one **group by** clause. We recommend that you use table name qualifiers. The **order by** clause follows the same syntax patterns as **group by**. Both clauses, if they are provided, must appear after the **join** (or **from**) clause, and both must appear before any **where** clause that exists on the same **join** clause. We recommend that all **group by**, **order by**, and **where** clauses appear immediately after the last **join** clause.
+A query can have multiple **group by** clauses, but the fields can be qualified by a table name in only one **group by** clause. We recommend that you use table name qualifiers. The **order by** clause follows the same syntax patterns as **group by**. Both clauses, if they are provided, must appear after the **join** (or **from**) clause, and both must appear before any **where** clause that exists on the same **join** clause. We recommend that all **group by**, **order by**, and **where** clauses appear immediately after the last **join** clause. The following example shows that the field in the **group by** clause is qualified by a table name.
 
 ```xpp
 CustTable custTable;
-CashDisc cashDisc;
-struct sut4 = new struct("str AccountNum_Count; str CashDisc; str Description");
+CustGroup custGroup;
+struct groupSummary = new struct("int CustomerCount; str CustGroup");
 
 while select count(CreditMax) from custTable
-    order by cashDisc.Description
-    join cashDisc
-    group by cashDisc.CashDiscCode
-    where custTable.CashDisc == cashDisc.CashDiscCode
-        && cashDisc.Description like "*Days*"
+    join custGroup
+    order by custGroup.Name
+    group by custGroup.CustGroup
+    where custTable.CustGroup == custGroup.CustGroup
+        && custGroup.Name like "*Days*"
 {
-    sut4.value("Location_CreditMax", custTable.CreditMax );
-    sut4.value("CashDisc", cashDisc.CashDiscCode );
-    sut4.value("Description", cashDisc.Description );
-    info(sut4.toString());
+
+    groupSummary.value("CustomerCount", custTable.CreditMax);
+    groupSummary.value("CustGroup", custGroup.CustGroup);
+    info(groupSummary.toString());
 }
 
 // Example output:
-// (AccountNum_Count:"2"; CashDisc:"0.5%D10"; Description:"")
-// (AccountNum_Count:"3"; CashDisc:"0.5%D30"; Description:"")
-}
+// (CustomerCount:1; CustGroup:"1")
+// (CustomerCount:3; CustGroup:"2")
 ```
 
 ## Enable index hint in queries
 
-Before you can use **index hint** in queries, you must specify that hints can be used on the server.
+Before you can use [**index hint**](#index-hint-keyword) in queries, you must specify that hints can be used on the server.
 
 1. Go to **Start** > **Administrative Tools** > **Microsoft Dynamics AX Server Configuration**.
 2. On the **Database Tuning** tab, select **Allow INDEX hints in queries**, and then click **OK**.
@@ -201,25 +202,21 @@ The following example shows how an inner join can be performed as part of a **se
 
 ```xpp
 CustTable custTable;
-CashDisc cashDisc;
-struct sut4 = new struct("str AccountNum; str CashDisc; str Description");
+CustGroup custGroup;
+struct output = new struct("int AccountNum; str CustGroup");
 
-while select firstOnly10 * from custTable
-    order by cashDisc.Description
-    join cashDisc
-    where
-        custTable.CashDisc == cashDisc.CashDiscCode
-        && cashDisc.Description like "*Days*"
+while select AccountNum from custTable
+    join Name from custGroup
+    order by custGroup.Name, custTable.AccountNum
+    where custTable.CustGroup == custGroup.CustGroup
 {
-    sut4.value("AccountNum", custTable.AccountNum );
-    sut4.value("CashDisc", cashDisc.CashDiscCode );
-    sut4.value("Description", cashDisc.Description );
-    info(sut4.toString());
+    info(custGroup.Name + ': ' + custTable.AccountNum);
 }
 
 // Example output:
-// (AccountNum:"1101"; CashDisc:"0.5%D10"; Description:"0.5% 10 days")
-// (AccountNum:"4001"; CashDisc:"0.5%D10"; Description:"0.5% 10 days")
+// Days1: 6000
+// Days1: 6001
+// Days2: 5000
 ```
 
 ## Using where, order by, and index hint together in a query
@@ -342,7 +339,7 @@ The following code example returns only the first row of the results.
 
 ```xpp
 CustTable custTable;
-select firstonly custTable
+select firstOnly custTable
     index hint AccountIdx
     where custTable.AccountNum == '5000';
 ```
@@ -406,7 +403,19 @@ while select forceSelectOrder custGroup
 }
 ```
 
+## forUpdate keyword
 
+The **forUpdate** keyword selects records for update only. Depending on the underlying database, the records might be locked for other users. The following example update the **CreditMax** column in the **CustomerTable** table for update for the record where **AccountNum** is **2000**.
+
+```xpp
+ttsBegin;
+    CustTable custTable;
+    select forUpdate custTable
+    where custTable.AccountNum == '2000';
+    custTable.CreditMax = 5000;
+    custTable.update();
+ttsCommit;
+```
 
 
 ## group by keyword
@@ -431,11 +440,11 @@ Without using the **in** keyword, you would write code like this:
 ```X++
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
-    InventSettIement inventSettIement;
+    InventSettlement inventSettlement;
 
-    select sum(CostAmountAdjustment) fron inventSettIement
-        where inventSettlement.TransRecld == this.RecId
-            && inventSettlement.Cencelled == NoYes::No
+    select sum(CostAmountAdjustment) from inventSettlement
+        where inventSettlement.TransRecId == this.RecId
+            && inventSettlement.Cancelled == NoYes::No
             && (inventSettlement.OperationsPosting == LedgerpostingType::purchStdProfit
                 || inventSettlement.OperationsPosting == LedgerpostingType::purchStdLoss
                 || inventSettlement.OperationsPosting == LedgerpostingType::InventStdProfit
@@ -459,21 +468,22 @@ private CostAmountStdAdjustment calcCostAmountStdAdjustment()
             && inventSettlement.OperationsPosting in ledgerPostingTypes;
 
     return inventSettlement.CostAmountAdjustment;
+}
 
 protected container ledgerPostingTypesForCostAmountStdAdjustmentCalculation()
 {
-    return [
-        LedgerPostingType: : purchStdProfit,
-        LedgerPostingType: : PurchStdLoss,
-        LedgerPostingType: : InventStdProfit,
-        LedgerPostingType: : InventStdLoss
-    ];
+return [
+    LedgerPostingType::purchStdProfit,
+    LedgerPostingType::PurchStdLoss,
+    LedgerPostingType::InventStdProfit,
+    LedgerPostingType::InventStdLoss
+];
 }
 ```
 
 ## index
 
-The **index** keyword instructs the database to sort the selected records in the manner that is defined by the index.
+The **index** keyword instructs the database to sort the selected records as specified by the index.
 
 ```xpp
 CustTable custTable;
@@ -499,10 +509,9 @@ while select forUpdate custTable
 }
 ```
 
-
 ## join keyword
 
-The **join** keyword is used to join tables on a column that is shared by both tables. The join criteria are specified in a **where** clause, because there is no `on` keyword (as is found in SQL). This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table. For example, you process 500 records in a table and want to update related records in another table. If you use a nested **while select**, there will be 501 trips to the database. However, if you use a **join**, there will be just one trip to the database.
+The **join** keyword is used to join tables on a column that is shared by both tables. The join criteria are specified in a **where** clause, because there is no **on** keyword (as is found in SQL). This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table. For example, you process 500 records in a table and want to update related records in another table. If you use a nested **while select**, there will be 501 trips to the database. However, if you use a **join**, there will be just one trip to the database.
 
 ```xpp
 CustTable custTable;
@@ -537,11 +546,6 @@ CustTable custTable;
 select minof(CreditMax) from custTable;
 info(int642Str(custTable.Value));
 ```
-
-
-
-
-
 
 ## noFetch keyword
 
@@ -581,11 +585,9 @@ select optimisticLock custTable
     where custTable.AccountNum > '1000';
 ```
 
-
 ## order by keyword
 
-The **order by** keyword instructs the database to sort the selected records by the fields in the **order by** list.
-The keyword **by** is optional.
+The **order by** keyword instructs the database to sort the selected records by the fields in the **order by** list. The keyword **by** is optional.
 
 ```xpp
 CustTable custTable;
@@ -682,14 +684,13 @@ static void SelectOuterJoinExample(Args _args)
 
 ## pessimisticLock keyword
 
-The **pessimisticLock** keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.  |
+The **pessimisticLock** keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.
 
 ```xpp
 CustTable custTable;
 select pessimisticLock custTable
     where custTable.AccountNum > '1000';
 ```
-
 
 ## repeatableRead keyword
 
@@ -765,4 +766,3 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
-
