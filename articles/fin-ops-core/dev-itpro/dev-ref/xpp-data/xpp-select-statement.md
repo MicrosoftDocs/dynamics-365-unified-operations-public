@@ -136,13 +136,13 @@ These symbols are used in the syntax:
 
 ## Aggregate functions
 
-The aggregate keywords perform calculations on a single field over a group of records. The type of the field must be able to hold the value returned. For example, if count over a field named **Total**, then **Total** must be a numeric field.
+The aggregate functions perform calculations on a single field over a group of records. The type of the field must be able to hold the value returned. For example, if you call the **count** function over a field named **Total**, then **Total** must be a numeric field.
 
-### Differences between X++ and SQL
+## Differences between X++ and SQL
 
-In industry-standard SQL, a database query can contain aggregate functions. Examples include `count(RecID)` and `sum(columnA)`. When an aggregate function is used, but no rows match the **where** clause, a row must be returned to hold the result of the aggregates. The row that is returned shows the value **0** (zero) for the **count** function and **null** for the **sum** function. X++ doesn't support the concept of **null** values for the database. Therefore, in cases where the **sum** function will return **null**, no row is returned to the user. Additionally, every data type has a specific value that is treated as a **null** value in some circumstances.
+In industry-standard SQL, a database query can contain aggregate functions. Examples include **count(RecID)** and **sum(columnA)**. When an aggregate function is used, but no rows match the **where** clause, a row must be returned to hold the result of the aggregates. The row that is returned shows the value **0** (zero) for the **count** function and **null** for the **sum** function. X++ doesn't support the concept of **null** values for the database. Therefore, in cases where the **sum** function will return **null**, no row is returned to the user. Additionally, every data type has a specific value that is treated as a **null** value in some circumstances.
 
-### Group and order the query results
+## Group and order the query results
 
 The following example shows that the fields in the **group by** clause can be qualified by a table name. There can be multiple **group by** clauses. However, the fields can be qualified by a table name in only one **group by** clause. We recommend that you use table name qualifiers. The **order by** clause follows the same syntax patterns as **group by**. Both clauses, if they are provided, must appear after the **join** (or **from**) clause, and both must appear before any **where** clause that exists on the same **join** clause. We recommend that all **group by**, **order by**, and **where** clauses appear immediately after the last **join** clause.
 
@@ -170,7 +170,7 @@ while select count(CreditMax) from custTable
 }
 ```
 
-### Enable index hint in queries
+## Enable index hint in queries
 
 Before you can use **index hint** in queries, you must specify that hints can be used on the server.
 
@@ -347,6 +347,13 @@ select firstonly custTable
     where custTable.AccountNum == '5000';
 ```
 
+## forceLiterals keyword
+
+The **forceLiterals** keyword instructs the kernel to reveal the actual values that are used in **where** clauses to the Microsoft SQL Server database at the time of optimization. The **forceLiterals** and **forcePlaceholders** keywords are mutually exclusive. For more information, see [forcePlaceholders keyword](#forceplaceholders-keyword).
+
+> [!WARNING]
+> You should not to use the **forceLiterals** keyword in **select** statements, because it could expose code to an SQL injection security threat.
+
 ## forceNestedLoop keyword
 
 The **forceNestedLoop** keyword forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement that contains a join algorithm. Therefore, a record from the first table is fetched before any records from the second table are fetched. Typically, other join algorithms, such as hash joins and merge joins, are considered. This keyword is often combined with the **forceSelectOrder** keyword.
@@ -363,14 +370,9 @@ while select forceNestedLoop custGroup
 }
 ```
 
-## forcePlaceholders and forceLiterals keywords
+## forcePlaceholders keyword
 
 The **forcePlaceholders** keyword instructs the kernel *not* to reveal the actual values that are used in **where** clauses to the SQL Server database at the time of optimization. By default, this behavior is used in all statements that aren't **join** statements. The advantage of using this keyword is that the kernel can reuse the access plan for similar statements that have other search values. The disadvantage is that the access plan is computed, but the fact that data distribution might be uneven isn't considered. The access plan is an on-average access plan. The **forcePlaceholders** and **forceLiterals** keywords are mutually exclusive.
-
-The **forceLiterals** keyword instructs the kernel to reveal the actual values that are used in **where** clauses to the Microsoft SQL Server database at the time of optimization. The **forceLiterals** and **forcePlaceholders** keywords are mutually exclusive.
-
-> [!WARNING]
-> You should not to use the **forceLiterals** keyword in **select** statements, because it could expose code to an SQL injection security threat.
 
 The following example iterates through the SalesTable joined with the SalesLine.
 
