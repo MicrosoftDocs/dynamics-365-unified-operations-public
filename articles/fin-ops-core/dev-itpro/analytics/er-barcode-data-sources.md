@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: ER Use BARCODE data sources to generate barcode images
-description: This topic explains how to use BARCODE data sources to generate barcode images.
+title: Use Barcode data sources to generate bar code images
+description: This topic explains how to use Barcode data sources to generate bar code images.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/22/2020
@@ -30,29 +30,27 @@ ms.dyn365.ops.version: Version 10.0.13
 
 ---
 
-# Use the BARCODE data source to generate barcode images
+# Use Barcode data sources to generate bar code images
 
 [!include[banner](../includes/banner.md)]
 
-You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design [ER format components](general-electronic-reporting.md#FormatComponentOutbound) that you can run to generate required electronic and printable outbound
-documents. To generate an outbound document in Microsoft Office format, you must use either a Microsoft Excel or Microsoft Word document as a report template to specify the layout of the report. The [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) lets you attach the Excel or Word document as a template for the ER
-format. The named elements in the attached template are associated with the elements of the configured format component:
+You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design [ER format components](general-electronic-reporting.md#FormatComponentOutbound) that you can run to generate electronic and printable outbound documents that you require. To generate an outbound document in Microsoft Office format, you must specify the layout of the report by using either a Microsoft Excel document or a Microsoft Word document as a report template. The [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) lets you attach an Excel or Word document as a template for an ER format. The following named elements in the attached template are associated with the elements of the configured format component:
 
--   Content controls in Word
--   Named sheets, ranges, cells, shapes, and images in Excel
+- Content controls in Word
+- Named sheets, ranges, cells, shapes, and images in Excel
 
-These named elements are used as placeholders of data that is populated to a generated document when an ER format is executed. ER format elements are bound to data sources. These data sources specify the data that will be entered at run time, in the documents that are generated. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
+These named elements are used as placeholders for data that is entered in a generated document when an ER format is run. ER format elements are bound to data sources. These data sources specify the data that will be entered in the generated documents at runtime. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
-The **Barcode** data source type is now supported by ER and allows you to generate an image that represents a barcode for a given text. When you configure an ER format, you can specify **Barcode** type data sources to generate barcode images and then add them to generated business documents such as orders, invoices, packing slips, and receipts, or different kind of labels such as product and shelf labels, and packaging and shipping labels.
+ER now supports the **Barcode** data source type. Therefore, you can now generate an image that represents the bar code for specified text. When you configure an ER format, you can specify data sources of the **Barcode** type to generate bar code images. You can then add those images to generated business documents, such as orders, invoices, packing slips, and receipts. You can also add them to various kind of labels, such as product and shelf labels, and packaging and shipping labels.
 
-The following placeholders can be used in report templates to populate barcode images:
+The following placeholders can be used in report templates to enter bar code images:
 
--   [Picture](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) content control for Word
--   [Picture](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) object in Excel
+- [Picture](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) content control for Word
+- [Picture](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) object in Excel
 
-By using a **Barcode** type data source, you can generate barcodes in the following formats:
+By using a data source of the **Barcode** type, you can generate bar codes in the following formats:
 
-- One-dimensional barcodes:
+- One-dimensional bar codes:
 
     - Codabar
     - Code 39
@@ -67,59 +65,54 @@ By using a **Barcode** type data source, you can generate barcodes in the follow
     - MSI
     - Plessey
 
--   Two-dimensional barcodes:
-    
+- Two-dimensional bar codes:
+
     - Aztec
     - DataMatrix
     - QR Code
 
-When you configure your barcode data source, you can define specific rendering conditions to generate an image:
+When you configure a **Barcode** data source, you can define specific rendering parameters that are used to generate an image:
 
-- Set the value of the **Width** parameter to specify a barcode width in pixels. Zero value indicates that the default width is used. The meaning can vary for different formats.
-- Set the value of the **Height** parameter to specify a barcode height in pixels. Zero value indicates that the default height is used. The meaning can vary for different formats.
-- Set the value of the **Margin** parameter to specify a barcode margin in pixels as the size of the areas to each side of a barcode that must be kept clear (quiet zone). A zero margin value indicates that the default margin is used. The meaning can vary for different formats.
-- Set the value of the **Output content** parameter to **Yes** to generate a barcode image containing the encoded information as text. The default value is **No**.
-- Set the value of the **Encoding** parameter to specify what kind of characters are encoded in a generated barcode image. By default, the **UTF-8** encoding is offered.
+- **Width** – Specify the bar code's width in pixels. A value of **0** (zero) indicates that the default width is used. The meaning can vary for different formats.
+- **Height** – Specify the bar code's height in pixels. A value of **0** (zero) indicates that the default height is used. The meaning can vary for different formats.
+- **Margin** – Specify the size of the bar code's margin in pixels. The margin is the area on each side of a bar code that must be kept clear (quiet zone). A value of **0** (zero) indicates that the default margin is used. The meaning can vary for different formats.
+- **Output content** – Set the value to **Yes** to generate a bar code image that contains the encoded information as text. The default value is **No**.
+- **Encoding** – Specify the type of characters that are encoded in the generated bar code image. By default, the **UTF-8** encoding is used.
 
->[!Important]
+> [!IMPORTANT]
 > When you add a new **Barcode** data source, you must place it under another item (container) as a nested element.
 >
-> When you bind this data source to a format **Cell** element, that represents either a Word content control or an Excel picture, this data source is presented in this binding as a function that has a single **String** type parameter. You must use this parameter to specify the text that must be transformed to a barcode image and that must be read when a generated barcode is scanned.
+> When you bind a **Barcode** data source to a cell element in a format, and the cell element represents either a Word content control or an Excel picture, the data source is presented in that binding as a function that has a single parameter of the **String** type. You must use this parameter to specify the text that should be transformed into a bar code image and read when a generated bar code is scanned.
 
-To learn more about this feature, complete the examples in this topic.
+For more information about this feature, complete the examples in this topic.
 
-## Example: Generate a payment cheque containing a barcode that encodes a payable amount
+## Example: Generate a payment check that contains a bar code that encodes the payable amount
 
-The following steps explain how a user in the System administrator or Electronic reporting functional consultant role can configure an ER format that contains a template to generate an outbound document in Excel format containing a barcode.
+This example shows how a user in the **System administrator** or **Electronic reporting functional consultant** role can configure an ER format that contains a template that is used to generate an outbound document in Excel format that contains a bar code. Here is an overview of the steps that are involved.
 
-1. [Prerequisites](#ExamplePrerequisites)
-2. [Activate a configurations provider](#ExampleProvider)
-3. [Import the provided ER solution](#ExampleImportSolution)
-4. [Generate payment cheque](#ExampleGenerateCheque)
-5. [Review the generated payment cheque](#ExampleReviewGeneratedCheque)
-6. [Modify the format of the provided ER solution](#ExampleModifyFormat)
+1. [Complete the prerequisites](#ExamplePrerequisites).
+2. [Activate a configuration provider](#ExampleProvider).
+3. [Import the provided ER solution](#ExampleImportSolution).
+4. [Generate a payment check](#ExampleGenerateCheque).
+5. [Review the generated payment check](#ExampleReviewGeneratedCheque).
+6. [Modify the format of the provided ER solution](#ExampleModifyFormat).
 
-	i. [Apply a new cheque template](#ExampleModifyFormatApplyTemplate)
-	
-	ii. [Add a new barcode data source](#ExampleModifyFormatAddDataSource)
+    1. [Apply a new check template](#ExampleModifyFormatApplyTemplate).
+    2. [Add a new Barcode data source](#ExampleModifyFormatAddDataSource).
+    3. [Bind a new format element](#ExampleModifyFormatBindFormatElement).
+    4. [Make the modified version available for test runs](#ExampleModifyFormatMakeVersionAvailable).
 
-	iii. [Bind a new format element](#ExampleModifyFormatBindFormatElement)
-	
-	iv. [Make the modified version available for test runs](#ExampleModifyFormatMakeVersionAvailable)
-	
-	  1. [Complete the modified format version](#CompleteToRun)
-	  
-	  2. [Make draft version available for usage](#MarkToRun)
-		
-7. [Generate payment cheque](#ExampleGenerateCheque2)
+        1. [Complete the modified format version](#CompleteToRun).
+        2. [Make the draft version available for use](#MarkToRun).
 
-8. [Convert the generated cheque to PDF](#ExampleConvertToPDF)
+7. [Generate a payment check](#ExampleGenerateCheque2).
+8. [Convert the generated check to a PDF](#ExampleConvertToPDF).
 
-In this example, you will use the provided solution that has been configured to generate payment checks. This solution generates payment checks that havein which the payable amount written as a number and as text. You will modify this ER solution to also present a generated barcode where the payable amount is encoded and can be read by using a barcode scanner.
+In this example, you will use the provided ER solution that has been configured to generate payment checks. This solution generates payment checks where the payable amount is written both as a number and as text. You will modify this ER solution so that the check also includes a generated bar code where the payable amount is encoded and can be read by using a bar code scanner.
 
-These steps can be performed in the **USMF** company in Microsoft Dynamics 365 Finance.
+The steps can be completed in the **USMF** company in Microsoft Dynamics 365 Finance.
 
-### <a name="ExamplePrerequisites">Prerequisites</a>
+### <a name="ExamplePrerequisites"></a>Complete the prerequisites
 
 To complete this example, you must have access to the USMF company in Finance for one of the following roles:
 
@@ -128,198 +121,190 @@ To complete this example, you must have access to the USMF company in Finance fo
 
 If you haven't yet completed the example in the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) topic, download the following configurations of the sample ER solution.
 
-| **Content description**     | **File name**               |
+| Content description         | File name                   |
 |-----------------------------|-----------------------------|
 | ER data model configuration | Model for cheques.xml       |
 | ER format configuration     | Cheques printing format.xml |
 
-In addition, download the Excel file containing the modified template for the provided ER solution.
+Additionally, download the following Excel file that contains the modified template for the provided ER solution.
 
-| **Content description** | **File name**              |
-|-------------------------|----------------------------|
-| Report template         | Check template Excel.xlsx |
+| Content description | File name                 |
+|---------------------|---------------------------|
+| Report template     | Check template Excel.xlsx |
 
-### <a name="ExampleProvider">Activate a configurations provider</a>
+### <a name="ExampleProvider"></a>Activate a configuration provider
 
-1.  Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2.  On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration
-    provider](general-electronic-reporting.md#Provider) for the **Litware, Inc. (http://www.litware.com)** sample company is listed, and
-    that it's marked as active. If this configuration provider isn't listed, or if it's not marked as active, follow the steps in the topic, [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the **Litware, Inc.** sample company is listed, and that it's marked as active. If it isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
 
-![ER workspace page](./media/er-barcode-data-source-active-provider.png)
+![Setting the sample company to active on the Localization configurations page](./media/er-barcode-data-source-active-provider.png)
 
-### <a name="ExampleImportSolution">Import the provided ER solution</a>
+### <a name="ExampleImportSolution"></a>Import the provided ER solution
 
-1.  Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2.  Select **Reporting configurations** to open the **Configurations** page.
-3.  If the **Model for cheques** configuration isn't available in the configuration tree, import the ER data model configuration:
-    1.  Select **Exchange** > **Load from XML file**.
-    2.  Select **Browse**, find and select the **Model for cheques.xml** file, and then select **OK**.
-4.  If the **Cheques printing format** configuration isn't available in the configuration tree, import the ER format configuration:
-    1.  Select **Exchange** > **Load from XML file**.
-    2.  Select **Browse**, find and select the **Cheques printing format.xml** file, and then select **OK**.
-5.  In the configuration tree, expand **Model for cheques**.
-6.  Review the list of imported ER configurations in the configuration tree.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configurations** section, select the **Reporting configurations** tile.
+3. On the **Configurations** page, if the **Model for cheques** configuration isn't available in the configuration tree, follow these steps to import the ER data model configuration:
 
-### <a name="ExampleGenerateCheque">Generate a payment cheque</a>
+    1. On the Action Pane, select **Exchange** \> **Load from XML file**.
+    2. In the dialog box, select **Browse**, find and select the **Model for cheques.xml** file, and then select **OK**.
 
-1.  Go to **Cash and bank management** \> **Bank accounts** and select the account, **USMF OPER**.
-2.  On the **Bank accounts** page, on the Action Pane, select the **Set up** tab, and in the **Layout** group, select **Check**.
-3.  Select **Edit** to make the content of the current page editable.
-4.  On the **General** Fast tab, set the **Generic Electronic Export format** field to **Yes**.
-5.  In the **Export format configuration** field, select the **Cheques printing format** ER format that was imported earlier.
-6.  Select **Print test** and on the dialog page, set **Negotiable check format** to **Yes**.
-7.  Select **OK**.
+4. If the **Cheques printing format** configuration isn't available in the configuration tree, follow these steps to import the ER format configuration:
 
-    ![Check layout page](./media/er-barcode-data-source-check-layout.png)
+    1. On the Action Pane, select **Exchange** \> **Load from XML file**.
+    2. In the dialog box, select **Browse**, find and select the **Cheques printing format.xml** file, and then select **OK**.
 
-### <a name="ExampleReviewGeneratedCheque">Review the generated payment check</a>
+5. In the configuration tree, expand **Model for cheques**.
+6. Review the list of imported ER configurations in the configuration tree.
 
-1.  Open the generated check in Excel.
-2.  Review the generated check.
+### <a name="ExampleGenerateCheque"></a>Generate a payment check
 
-    ![Excel worksheet](./media/er-barcode-data-source-cheque1.png)
+1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
+2. On the **Bank accounts** page, select the **USMF OPER** account.
+3. On the bank account details page, on the Action Pane, on the **Set up** tab, in the **Layout** group, select **Check**.
+4. On the **Check layout** page, select **Edit**.
+5. On the **General** FastTab, set the **Generic electronic Export format** option to **Yes**.
+6. In the **Export format configuration** field, select the **Cheques printing format** ER format that you imported earlier.
+7. On the Action Pane, select **Print test**.
+8. In the dialog box, set the **Negotiable check format** option to **Yes**, and then select **OK**.
 
-### <a name="ExampleModifyFormat">Modify the format of the provided ER solution</a>
+    ![Check layout - print test dialog box](./media/er-barcode-data-source-check-layout.png)
 
-#### <a name="ExampleModifyFormatApplyTemplate">Apply a new check template</a>
+### <a name="ExampleReviewGeneratedCheque"></a>Review the generated payment check
 
-You can open the **Cheque template Excel.xlsx** file that you imported earlier by using the Excel desktop application. Note that it differs from the template used generate payment cheques in the ER solution that was provided. In addition, the imported file contains the **AmountBarcode** image.
+- Open the generated check in Excel.
+2. Review the generated check.
 
-![Excel worksheet](./media/er-barcode-data-source-cheque2.png)
+    ![Generated payment check in Excel](./media/er-barcode-data-source-cheque1.png)
 
-You must modify the ER solution and [re-apply](modify-electronic-reporting-format-reapply-excel-template.md) the modified template.
+### <a name="ExampleModifyFormat"></a>Modify the format of the provided ER solution
 
-1.  Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2.  Select **Reporting configurations** to open the **Configurations** page.
-3.  In the configuration tree, expand **Model for cheques**.
-4.  Select **Cheques printing format** > **Designer**.
-5.  Select the **Mapping** tab, and in the format tree pane, select **Expand/Collapse**.  
-     > [!NOTE] 
-     > All cell format elements are bound to the appropriate data sources.
-     >
-     > ![ER Operations designer page](./media/er-barcode-data-source-cells-bound.png)
+#### <a name="ExampleModifyFormatApplyTemplate"></a>Apply a new check template
 
-8.  Select the **Format** tab.
-9.  On the **Format designer** page riboon, select the ellipsis (**...**), and then select **Import**.
-10. In the **Import** group, select **Update from Excel** and then select **Update template**.
-11. Browse and point to the **Cheque template Excel.xlsx** file saved on your machine.
-12. Select **OK** to confirm the appliance of a selected template.
-13. Select the **Mapping** tab, and in the format tree pane, select **Expand/Collapse**.  
-    
-    > [!NOTE]
-    > The new **AmountBarcode** element has been added to the format. This element is associated with the **AmountBarcode** picture of the modified Excel template that has been added as a placeholder for a barcode.
+You can use the Excel desktop application to open the **Cheque template Excel.xlsx** file that you imported earlier. Notice that this template differs from the template that you used to generate a payment check in the provided ER solution. In addition, it includes an **AmountBarcode** element for the bar code image.
 
-    ![ER Operations designer page](./media/er-barcode-data-source-cell-added.png)
+![AmountBarcode element in the Excel template](./media/er-barcode-data-source-cheque2.png)
 
-#### <a name="ExampleModifyFormatAddDataSource">Add a new barcode data source</a>
+You must now modify the ER solution and then [reapply](modify-electronic-reporting-format-reapply-excel-template.md) the modified template.
 
-You must add a new data source of the **Barcode** type.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configurations** section, select **Reporting configurations**.
+3. On the **Configurations** page, in the configuration tree, expand **Model for cheques**, and select **Cheques printing format**.
+4. On the Action Pane, select **Designer**.
+5. In the ER Operations designer, select the **Mapping** tab on the right side of the page, and then, in the format tree pane on the left, select **Expand/collapse**.
+6. Notice that all cell format elements are bound to the appropriate data sources.
 
-1.  In the **Mapping** tab, select **print** data source.
-2.  Select **Add**.
-3.  Select **Barcode** data source type in the **Functions** group.
+    ![Binding of cell format elements to data sources in the ER Operations designer](./media/er-barcode-data-source-cells-bound.png)
 
-    ![ER Operations designer page](./media/er-barcode-data-source-add.png)
+7. Select the **Format** tab on the right side of the page.
+8. On the Action Pane, select the ellipsis (**...**), and then select **Import**.
+9. In the **Import** group, select **Update from Excel**, and then select **Update template**.
+10. In the dialog box, browse to the **Cheque template Excel.xlsx** file that is saved on your computer, select it, and then select **OK** to confirm that the selected template should be applied.
+11. Select the **Mapping** tab on the right side of the page, and then, in the format tree pane on the left, select **Expand/collapse**.
+12. Notice that the **AmountBarcode** cell element has been added to the format. This element is associated with the **AmountBarcode** element that has been added to the modified Excel template as a placeholder for a bar code image.
 
-4.  In the **Name** field, type **barcode**.
-5.  In the **Barcode format**, select **Code 128** to specify the format of a barcode.
-6.  In the **Width** field, type **500**.
-7.  Select **OK**.
+    ![AmountBarcode cell element added to the format in the ER Operations designer](./media/er-barcode-data-source-cell-added.png)
 
-    ![ER Operations designer page](./media/er-barcode-data-source-add2.png)
+#### <a name="ExampleModifyFormatAddDataSource"></a>Add a new Barcode data source
 
-#### <a name="ExampleModifyFormatBindFormatElement">Bind a new format element</a>
+Next, you must add a new data source of the **Barcode** type.
 
-You must bind the added format element to the added data source.
+1. In the ER Operations designer, on the **Mapping** tab on the right side of the page, select the **print** data source.
+2. Select **Add**, and then, in the **Functions** group, select the **Barcode** data source type.
 
-1.  On the **Format designer** page, on the **Mapping** tab, select the **print\\barcode** data source.
-2.  In the format tree, select the **AmountBarcode** cell element.
-3.  Select **Bind**, and then select **Show details**.
+    ![Selecting the Barcode data source type](./media/er-barcode-data-source-add.png)
 
-    > [!NOTE]
-    > Because the **Barcode** data source is represented in the binding as a function containing a single parameter, the name of the bound format element has been automatically taken as the argument of that parameter.
+3. In the dialog box, in the **Name** field, enter **barcode**.
+4. In the **Barcode format**, select **Code 128**.
+5. In the **Width** field, enter **500**.
+6. Select **OK**.
 
-    ![ER Operations designer page](./media/er-barcode-data-source-bind1.png)
+    ![Data source properties dialog box](./media/er-barcode-data-source-add2.png)
 
-4.  Select **Edit formula** to adjust the binding.
+#### <a name="ExampleModifyFormatBindFormatElement"></a>Bind a new format element
 
-	Instead of the cell element name, you must configure an expression that returns the text containing a payable amount of the current cheque. As the parent **ChequeLines** range is bound to the **model.cheques** data source, the payable amount of the current cheque is available in the **model.cheques.attributes.amount** field of the **Real** data type.
+Next, you must bind the new format element to the data source that you just added.
 
-5.  In the **Formula** field, type `print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))`.
-6.  Select **Save** and close the [ER formula designer](general-electronic-reporting-formula-designer.md) page.
-7.  Select **Save** and close the designer page.
+1. In the ER Operations designer, on the **Mapping** tab on the right side of the page, select the **print\\barcode** data source.
+2. In the format tree pane on the left, select the **AmountBarcode** cell element, and then select **Bind**.
+3. On the Action Pane, select **Show details**.
+4. Notice that, because the **Barcode** data source is represented in the binding as a function that contains a single parameter, the name of the bound format element has been automatically taken as the argument of that parameter.
 
-    ![ER Operations designer page](./media/er-barcode-data-source-bind2.png)
+    ![Details of the Barcode data source in the ER Operations designer](./media/er-barcode-data-source-bind1.png)
 
-#### <a name="ExampleModifyFormatMakeVersionAvailable">Make the modified version available for test runs</a>
+5. Select **Edit formula** to adjust the binding.
 
-By default, the only **Completed** and **Shared** versions are used when you run an ER format.
+    You don't want the name of the cell element to be returned. Therefore, you must configure an expression that returns text that contains the payable amount of the current check. Because the parent **ChequeLines** range is bound to the **model.cheques** data source, the payable amount of the current check is available in the **model.cheques.attributes.amount** field of the **Real** data type.
 
-If you finalized your changes, you can complete your work with the current draft version making your changes available for use. To do that, complete the steps in the section, [Complete the modified format version](#CompleteToRun).
+6. In the **Formula** field, enter **print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
+7. Select **Save**, and then close the [ER Formula designer](general-electronic-reporting-formula-designer.md).
+8. Notice that the binding has been adjusted.
 
-If you want to continue working with the current draft version but need to use it for check generation, you must explicitly define that you want to use the draft version of this format for execution. To do that, complete the steps in the section [Make draft version available for usage](#MarkToRun).
+    ![Adjusted binding in the ER Operations designer](./media/er-barcode-data-source-bind2.png)
 
-##### <a name="CompleteToRun">Complete the modified format version</a>
+9. Select **Save**, and then close the ER Operations designer.
 
-1.  Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2.  Select **Reporting configurations** to open the **Configurations** page, and in the configuration tree, expand **Model for cheques**.
-3.  Select **Cheques printing format**.
-4.  In the **Versions** Fast tab, select the record with the **Draft** status.
-5.  Select **Change status**.
-6.  Select **Complete**.
-7.  Select **OK**.
+#### <a name="ExampleModifyFormatMakeVersionAvailable"></a>Make the modified version available for test runs
 
-The status of the current version has been changed from **Draft** to **Completed**. The new version with a status of **Draft** is created. You can now use it to apply further changes.
+By default, the only versions that have a status of **Completed** and **Shared** are used when you run an ER format.
 
-##### <a name="MarkToRun">Make draft version available for usage</a>
+If you've finalized your changes, you can complete your work with the current draft version and make your changes available for use. For instructions, see the [Complete the modified format version](#CompleteToRun) section that follows.
 
-1.  Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2.  Select **Reporting configurations** to open the **Configurations** page, and on the Action Pane, select the **Configurations** tab.
-3.  In the **Advance settings** group, select **User parameters**.
-4.  Set **Run setting** to **Yes**.
-5.  In the configuration tree, expand **Model for cheques** and select **Cheques printing format**.
-6.  Set **Run draft** to **Yes**.
-7.  Select **Save**.
+If you want to continue to work with the current draft version, but you have to use it to generate checks, you must explicitly specify that you want to use the draft version of the format for execution. For instructions, see the [Make the draft version available for use](#MarkToRun) section.
 
-The version of the selected format in **Draft** status is marked as available for use when the selected format is executed.
+##### <a name="CompleteToRun"></a>Complete the modified format version
 
-### <a name="ExampleGenerateCheque2">Generate payment cheque</a>
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configurations** section, select **Reporting configurations**.
+3. On the **Configurations** page, in the configuration tree, expand **Model for cheques**, and select **Cheques printing format**.
+4. On the **Versions** FastTab, select the record that has a status of **Draft**.
+5. Select **Change status**, and then select **Complete**.
+6. In the dialog box, select **OK**.
 
-1.  Go to **Cash and bank management** \> **Bank accounts**.
-2.  Select **USMF OPER** account.
-3.  On the **Bank accounts** page, on the Action Pane, select the **Set up** tab.
-4.  In the **Layout** group, select **Check**.
-5.  Select **Print test**.
-6.  In the dialog, set **Negotiable check format** to **Yes**.
-7.  Select **OK** and then review the generated check.
+The status of the current version is changed from **Draft** to **Completed**, and a new version that has a status of **Draft** is created. You can use this new draft version to apply additional changes.
 
-![Excel worksheet](./media/er-barcode-data-source-cheque3.png)
+##### <a name="MarkToRun"></a>Make the draft version available for use
 
-Note that the barcode is generated to encode the payable amount of the current cheque.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configurations** section, select **Reporting configurations**.
+3. On the **Configurations** page, on the Action Pane, in the **Configurations** tab, in the **Advance settings** group, select **User parameters**.
+4. In the dialog box, set the **Run setting** options to **Yes**, and then select **OK**.
+5. In the configuration tree, expand **Model for cheques**, and select **Cheques printing format**.
+6. Set the **Run draft** option to **Yes**.
+7. Select **Save**.
+
+The draft version of the selected format is marked as available for use when the selected format is run.
+
+### <a name="ExampleGenerateCheque2"></a>Generate a payment check
+
+1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
+2. On the **Bank accounts** page, select the **USMF OPER** account.
+3. On the bank account details page, on the Action Pane, on the **Set up** tab, in the **Layout** group, select **Check**.
+4. On the **Check layout** page, on the Action Pane, select **Print test**.
+5. In the dialog box, set the **Negotiable check format** option to **Yes**.
+6. Select **OK**.
+7. Review the generated check. Notice that a bar code has been generated to encode the payable amount of the check.
+
+    ![Generated payment check with bar code in Excel](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
-> An exception is thrown when the argument of a **Barcode** data source is not compliant with the appropriate requirements that are specific to the barcode format. For example, when the **Barcode** data source is called to generate an [EAN-8](https://en.wikipedia.org/wiki/EAN-8) barcode for the provided text the length of which exceeds 7 characters.
+> An exception is thrown if the argument of a **Barcode** data source doesn't comply with the appropriate requirements that are specific to the bar code format. For example, when the **Barcode** data source is called to generate an [EAN-8](https://wikipedia.org/wiki/EAN-8) bar code for the provided text, an exception is thrown if the length of the text exceeds seven characters.
 
-### <a name="ExampleConvertToPDF">Convert the generated check to PDF</a>
+### <a name="ExampleConvertToPDF"></a>Convert the generated check to a PDF
 
-As described in the topic, [Generate printable FTI forms](er-generate-printable-fti-forms.md#finland), you can use a special
-font to produce barcodes in a generated document. When you do it in this way, further transformations of a generated document might depend on the availability of this font in the transformation environment. For example, when you want to convert a document to PDF format or preview this document in an environment where this font is missing, barcodes will not be properly rendered.
+As described in the [Generate printable FTI forms](er-generate-printable-fti-forms.md#finland) topic, you can use a special font to produce bar codes in a generated document. In this case, additional transformations of the generated document might depend on the availability of that font in the transformation environment. For example, if you try to convert a document to PDF format or preview it in an environment where the font is missing, bar codes won't be rendered correctly.
 
-Unlike this approach, when you produced barcodes by using the **Barcode** data source, the rendering of those barcodes is not dependable on any font. You can easily convert documents that contain the barcodes to PDF. The picture below
-shows the preview of a generated payment check that has been [converted](electronic-reporting-destinations.md#OutputConversionToPDF) to PDF based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
+However, when you use the **Barcode** data source to produce bar codes, the rendering of those bar codes doesn't depend on any font. Therefore, you can easily convert documents that contain the bar codes to PDF format. The following illustration shows the preview of a generated payment check that has been [converted](electronic-reporting-destinations.md#OutputConversionToPDF) to a PDF, based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
 
-![Excel worksheet](./media/er-barcode-data-source-cheque4.png)
+![Preview of the PDF of a payment check](./media/er-barcode-data-source-cheque4.png)
 
 ## Limitations
 
 > [!NOTE]
-> Some types of barcodes are generated with a fixed aspect ratio. It makes sense when you enabled the **Enable usage of EPPlus library in Electronic reporting framework** feature to work in ER with Excel documents. When this feature is enabled, an image is populated to a placeholder with a locked aspect ratio. Therefore, when the dimensions of a placeholder in a template correspond with a ratio of a populated image, a real picture in a generated document might be resized to keep the required aspect ratio. To prevent picture
-resizing, use template a placeholder with an expected aspect ratio.
+> Some types of bar codes that are generated have a fixed aspect ratio. This behavior makes sense if you've turned on the **Enable usage of EPPlus library in Electronic reporting framework** feature to work with Excel documents in ER. In that case, an image is entered into a placeholder that has a locked aspect ratio. Therefore, when the dimensions of a placeholder in a template correspond to the ratio of an image that is entered, a real picture in a generated document might be resized to maintain the required aspect ratio. To prevent picture resizing, use a placeholder that has an expected aspect ratio.
 
 ## Additional resources
 
--   [Electronic Reporting overview](general-electronic-reporting.md)
--   [Electronic Reporting destinations](electronic-reporting-destinations.md)
--   [Electronic reporting formula language](er-formula-language.md)
--   [NUMBERFORMAT function](er-functions-text-numberformat.md)
+- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Electronic Reporting destinations](electronic-reporting-destinations.md)
+- [Electronic reporting formula language](er-formula-language.md)
+- [NUMBERFORMAT function](er-functions-text-numberformat.md)
