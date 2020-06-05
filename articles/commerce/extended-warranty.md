@@ -214,7 +214,7 @@ The following image shows an example of the **General** tab of the **Choose orga
 
 The following image shows an example of the **Run in the background** tab of the **Choose organization nodes** flyout menu, with the **Recurrence** link and **Batch processing** setting highlighted.
 
-![Example of the **Run in the background** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty_2.png)
+![Example of the **Run in the background** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty-2.png)
 
 ## Warranty policies
 
