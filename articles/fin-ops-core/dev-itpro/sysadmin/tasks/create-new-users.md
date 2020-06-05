@@ -53,8 +53,9 @@ Users external to the tenant that the environment was deployed into need to be r
 10. Select **Save**.
 
 ## Import users
-1. On the Action Pane, select **Import users**.
-2. In the list, mark the selected row.
-3. Select **Import users**.
-4. Select **Close**.
+1. Go to System administration > Users > Users.
+2. On the Action Pane, select **Import users**.
+3. In the list, mark the selected row.
+4. Select **Import users**.
+5. Select **Close**.
 
