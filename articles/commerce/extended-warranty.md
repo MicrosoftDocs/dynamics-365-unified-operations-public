@@ -188,11 +188,33 @@ The following image shows an example of the "add warranty to existing transactio
 
 ## Process warranty transactions
 
-For warranties sold in cash and carry transactions, once the transaction is posted in Commerce headquarters, Commerce users can go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions** to run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
+For warranties sold in cash and carry transactions, once the transaction is posted in Commerce headquarters, Commerce users can run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
 
-The following image shows an example of ???
+To process warranty transactions in Commerce headquarters, follow these steps.
 
-![Example of](./media/ew-process-warranty.png)
+1. Go to **Retail and Commerce \> Products and Categories \> Warranty \>Process warranty transactions**. The **Choose organization nodes** flyout menu appears.
+1. Under **Organizational hierarchy**, select a value from the drop down menu.
+1. Under **AVAILABLE ORGANIATION NODES**, select either an individual store or a node. Select a node if you want to create the batch job for a group of stores. 
+1. Select the arrow symbol to add your selection.
+1. Select the **Run in the background** tab.
+1. Under **Batch processing**, select **Yes**.  
+1. Select **Recurrence**. The **Define recurrence** flyout menu appears.
+1. Under **Start date**, select or enter a start date.
+1. Under **Start time**, select or enter a start time.
+1. Do one of the following:
+    - Select **NO END DATE** if the recurrence should never end.
+    - Select**END AFTER** if you want the recurrence to end after a specific number of runs. If selected, enter the number of runs.
+    - Select**END BY** if you want the recurrence to end by a specific date.
+1. Select **OK**.
+1. Select **OK**.
+
+The following image shows an example of the **General** tab of the **Choose organization nodes** flyout menu, with the **Run in the background** tab highlighted.
+
+![Example of the **General** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty_1.png)
+
+The following image shows an example of the **Run in the background** tab of the **Choose organization nodes** flyout menu, with the **Recurrence** link and **Batch processing** setting highlighted.
+
+![Example of the **Run in the background** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty_2.png)
 
 ## Warranty policies
 
@@ -201,7 +223,7 @@ When an extended warranty is sold, a warranty policy entity is automatically cre
 >[!NOTE]
 >Warranty policy properties are generated automatically during policy entity creation and currently cannot be manually configured or edited.
 
-The following table contains warranty policy properties, values, and descriptions.
+The following table contains warranty policy properties, values, and descriptions. In Commerce headquarters, the database table is named **WARRANTYPOLICY**.
 
 | **Property name** | **Value** | **Description** |
 |-------------------|------------|-----------------|
@@ -227,7 +249,7 @@ Check if the warranty product is assorted to the channel. Also check if the warr
 
 **When I try to add a warranty to an existing transaction and enter the customer order receipt number, why don't I see any transaction line items**?
 
-Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found.
+Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found. To run the P-job, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule \> P-0001** and then select **Run now**.
 
 **Why is the warranty feature only applicable to serialized products?**
 
