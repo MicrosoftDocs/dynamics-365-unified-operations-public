@@ -210,7 +210,7 @@ To process warranty transactions in Commerce headquarters, follow these steps.
 
 The following image shows an example of the **General** tab of the **Choose organization nodes** flyout menu, with the **Run in the background** tab highlighted.
 
-![Example of the **General** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty_1.png)
+![Example of the **General** tab of the **Choose organization nodes** flyout menu](./media/ew-process-warranty.png)
 
 The following image shows an example of the **Run in the background** tab of the **Choose organization nodes** flyout menu, with the **Recurrence** link and **Batch processing** setting highlighted.
 
