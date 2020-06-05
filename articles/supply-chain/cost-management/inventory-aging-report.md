@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)] <!-- KFM: Is this really preview functionality? -->
-
 This topic presents some examples that illustrate how to interpret the results of an **Inventory aging** report, which categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This topic also illustrates the internal logic of the report.
 
 This topic presents an example that illustrates results as they would be presented by a standard inventory aging report. However, we recommend that you normally use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have a large number of items and warehouses to process. Inventory aging report storage saves each report that you generate, displays results as an interactive page and a chart, and lets you export any saved report.
@@ -59,7 +57,7 @@ For this example system, the **Inventory model** for the released products is *F
 
 ### Inventory transactions
 
-The example system contains the following inventory transactions for a released product with **Item number** *1000*. <!-- KFM: I assumed this item number. Please confirm.  -->
+The example system contains the following inventory transactions for a released product with **Item number** *1000*.
 
 | Reference      | Site | Warehouse | Receipt   | Issue | Physical date | Financial date | Quantity | Cost amount | Physical cost amount |
 |----------------|------|-----------|-----------|-------|---------------|----------------|----------|-------------|----------------------|
