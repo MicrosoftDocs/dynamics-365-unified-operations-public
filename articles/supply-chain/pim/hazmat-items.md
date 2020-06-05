@@ -70,18 +70,18 @@ The following table describes the settings available on the **Descriptions** Fas
 
 | **Setting** | Description |
 | --- | --- |
-| **Proper shipping name** | Enter the standard description for the material as specified by the applicable regulation. |
+| **Proper shipping name** | Enter the standard description for the material as specified by the applicable regulation. You can provide translations for this value using the **Item ship text translation** FastTab, as described in the following section. |
 | **Technical name** | Select the common or generic name for the material that may have been established for your company. |
 | **N.O.S.** | Mark this to indicate that the value specified for the **Proper shipping name** is a not-otherwise-specific (N.O.S.) name for the item. N.O.S. shipping names cover groups of similar chemicals and materials with particular end uses that aren't necessarily specifically listed by name in the hazmat table in a specific regulation. |
 
 ### Item ship text translation FastTab
 
-The **Item ship text translation** FastTab shows a table that displays shipping print text for one or more languages.
+The **Item ship text translation** FastTab shows a table that displays translations of the **Proper shipping name** (defined on the **Descriptions** FastTab for the primary language) to be used in shipping print text for one or more additional languages.
 
 | **Column** | **Description** |
 | --- | --- |
-| **Language** | Shows the language code for the shipping print text used by each row. For example, **en-us** indicates US English. |
-| **Shipping print text** | Shows the text defined for the language indicated in each row. |
+| **Language** | Shows the language code used by each row. For example, **pt-br** indicates Brazilian Portuguese. |
+| **Shipping print text** | Shows the translated **Proper shipping name** for the language indicated in each row. |
 
 To create or edit translation, select **Translations** at the top of the table to open **Text translations** page. Then do one of the following:
 
@@ -104,7 +104,7 @@ The following table describes the settings available on the **Material managemen
 | **Description** | Displays the description defined for the group selected in the **Packing group** field (read only). |
 | **Packing Descriptions** | Select the applicable packing description code, which references a description of how the product must be packed. |
 | **Hazardous material labels** | Select a code that references the applicable dangerous goods label that should be applied to the product. |
-| **Limited quantity** | Set this to **Yes** to report the total weight of hazardous material content for this item that is included in each load and load line.  |
+| **Limited quantity** | Set this to **Yes** to report the total weight of this product that is included in each load and load line.  |
 | **Quantity** | Enter the quantity of hazardous material contained in this product (using the specified **Unit**). This will be used to calculate the total hazardous material score for loads and shipments that include this product. |
 | **Multiplier** | Enter the multiplier that applies when calculating the hazardous material score for each load line that includes this product. This value is specified by the applicable regulation according to the type of hazardous material contained in this product. |
 | **Unit** | Select unit of measure that applies to the specified **Quantity** of hazardous material included in this product. This will be used to calculate the total hazardous material score for loads and shipments that include this product. |
@@ -113,28 +113,28 @@ The following table describes the settings available on the **Material managemen
 
 Several of the values specified on the **Material management** FastTab for a product are used to calculate a *hazardous material score* for each load line that includes that product. The score is calculated as follows:
 
-Hazardous material score = *&lt;QtyFromLine&gt;* * *&lt;UnitConversion&gt;* * *&lt;HazmatQty&gt;* * *&lt;Multiplier&gt;*
+Hazardous material score = *&lt;LineQty&gt;* \* *&lt;HazmatQty&gt;* \*  *&lt;UnitConversion&gt;* \* *&lt;Multiplier&gt;*
 
 Where:
 
-- *&lt;QtyFromLine&gt;* is the quantity of product specified for a load line.
-- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the **Unit** specified for a product on the product's **Material management** FastTab.
+- *&lt;LineQty&gt;* is the quantity of product specified for a load line.
 - *&lt;HazmatQty&gt;* is the **Quantity** specified for a product on the product's **Material management** FastTab.
+- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the **Unit** specified for a product on the product's **Material management** FastTab.
 - *&lt;Multiplier&gt;* is the **Multiplier** specified for a product on the product's **Material management** FastTab.
 
-This score is reported for each load line that contains a product where these values are specified.
+This score is reported for each load line that contains a product where these values are specified. See also [Shipments with hazardous materials](#hazmat-shipments) and [Loads with hazardous materials](#hazmat-loads) 
 
 #### How the hazardous material weight is calculated
 
-Loads and load lines that contain products where Limited quantity is set to **Yes** on the **Material management** FastTab will display the total hazardous material weight. The total weight for each load line is calculated as follows:
+Loads and load lines that contain products where **Limited quantity** is set to **Yes** on the **Material management** FastTab will display the total hazardous material weight, as described in [Shipments with hazardous materials](#hazmat-shipments) and [Loads with hazardous materials](#hazmat-loads). The hazardous material weight is calculated as follows:
 
-Hazardous material weight = *&lt;QtyFromLine&gt;* * *&lt;ProductWeight&gt;* *&lt;UnitConversion&gt;*
+Hazardous material weight = *&lt;LineQty&gt;* \* *&lt;ProductWeight&gt;* \* *&lt;UnitConversion&gt;*
 
 Where:
-- *&lt;QtyFromLine&gt;* is the quantity of product specified for a load line.
-- *&lt;ProductWeight&gt;* is the weight specified for the product.
-- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the *&lt;ProductWeight&gt;*.
 
+- *&lt;LineQty&gt;* is the quantity of product specified for a load line.
+- *&lt;ProductWeight&gt;* is the net weight specified for the product (using the inventory unit specified for the product).
+- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the inventory unit used for the *&lt;ProductWeight&gt;*.
 
 ### Transport information FastTab
 
@@ -148,7 +148,7 @@ The following table describes the settings available on the **Transport informat
 | **Aircraft type** | Select the aircraft restriction that applies for this material when shipped by air freight. |
 | **Packing - cargo aircraft only** | Based on the **Aircraft type**, select the packing instructions code that applies when the product can only be shipped by cargo aircraft. |
 | **Packing - passenger and cargo aircraft** | Based on the **Aircraft type**, select the packing instructions code that applies when the product is shipped by either cargo or passenger aircraft. |
-| **IATA Star** | A reference to the International Air Transport Association (IATA) dangerous goods list for reference information. <!-- KFM: A better description is needed here. -->  |
+| **IATA Star** | Set this to **Yes** to indicate that the air transport specifications entered here relate to the International Air Transport Association (IATA) dangerous goods standard. This is for informational use only.  |
 | **Emergence response** | Select the code that references instructions for how to handle the material in an emergency. |
 
 ### Environmental information FastTab
@@ -184,6 +184,8 @@ The shipping carrier is also associated with the mode of delivery, so you must e
 
 Once a sales order is finalized and ready to be shipped, it can be released to warehouse to indicate the transfer between sales to warehouse operations.
 
+<a name="hazmat-shipments"></a>
+
 ## Shipments with hazardous materials
 
 ### View hazardous material scores for each shipment line
@@ -212,6 +214,8 @@ To check whether all the hazardous materials included in a shipment are suitable
 1. The system returns a message to inform you of the results of the check.
 
 The system evaluates compatibility by checking the compatibility group assigned to each product included in the shipment. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
+
+<a name="hazmat-loads"></a>
 
 ## Loads with hazardous materials
 

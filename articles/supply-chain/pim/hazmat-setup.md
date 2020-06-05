@@ -283,7 +283,7 @@ To set up values for this specification, go to **Product information management 
 
 ### Hazardous material packing instruction
 
-This specification identifies packing instructions that must be followed when preparing a given hazardous item for transportation by air. <!--KFM: confirm that this is specific for air transport -->
+This specification identifies packing instructions that must be followed when preparing a given hazardous item for transportation by air.
 
 To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material packing instruction**. From here, you can create any number of packing instruction identifiers and configure each of them with an identifying code and a short description.
 

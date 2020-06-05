@@ -56,7 +56,7 @@ If you are shipping items with hazardous material, then you will usually need to
 | **Carriage of merchandise by road** | **Hazardous material group description** | Enter text with specific warnings related to CMR and carriage of merchandise by road. This text will be included in the report. |
 | **Shippers declaration** | **Warning** | Enter text with a warning message to be printed on the shipper's declaration form (for example, "Warning: Dangerous Goods, Flammable"). |
 | **Shippers declaration** | **Footer declaration** | Enter text to provide a specific message at the bottom of the shipment declaration document. |
-| **Hazardous goods report language** | **Hazardous goods domestic report language** | Select the default language to be used for hazardous material reports associated with domestic shipments |
+| **Hazardous goods report language** | **Hazardous goods domestic report language** | Select the default language to be used for hazardous material reports associated with domestic shipments. |
 | **Hazardous goods report language** | **Hazardous goods export report language** | Select the default language to be used for hazardous material reports associated with international shipments. |
 
 ## Hazardous materials report
