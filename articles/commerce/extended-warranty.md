@@ -86,7 +86,7 @@ The following table contains values and descriptions for the time properties on 
 | Unit of time | Day(s), Week(s), Month(s), Year(s) | This value specifies the unit of time to be used for the warranty. |
 | Length of time | Positive integer value | This value specifies the duration of the warranty (for example, the values for a 2-year warranty would be **Unit of time** = **Year(s)** and **Length of time** = **2**). |
 
-The following image shows an example of the time properties on the **Warranty** FastTab of the **Prodduct details** page.
+The following image shows an example of the time properties on the **Warranty** FastTab of the **Product details** page.
 
 ![Example of time properties on the **Warranty** FastTab](./media/ew-time-properties.png)
 
@@ -110,7 +110,7 @@ A laptop warrantable item (product) has a base price $999 and there are two lapt
 
 In this case, a prompt to add Warranty_1 will be shown at the POS when the laptop warrantable item with a base price of $999 is added to the cart, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
 
->{!NOTE]
+>[!NOTE]
 > For the example above, if you want prompts to be shown for both Warranty_1 and Warranty_2 regardless of the laptop (warrantable item) price, you would set the **Price range base** value to **None**.
 
 ## Configure channel-specific settings
@@ -121,8 +121,8 @@ To configure channel-specific setting in Commerce, follow these steps.
 
 1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel specific**.
 1. In the **Prompt for warranty** column for your channel, do one of the following:
-    - Select the check box to enable the warranty item prompt. When enabled, a prompt for the warranty item will be shown when the warrantable item is added to the cart.
-    - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be shown when the warrantable item is added to the cart.
+    - Select the check box to enable the warranty item prompt. When enabled, a prompt for the warranty item will be shown at the POS when the warrantable item is added to the cart.
+    - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be shown at the POS when the warrantable item is added to the cart.
 1. Run the **1070** job to sync the data to the channel.
 
 The following image shows an example of the **Prompt for warranty** check box on the **Channel specific** page. 
@@ -136,7 +136,7 @@ The warranty policy number sequence is a unique identifier of the policy. For mo
 To configure the warranty policy number sequence in Commerce, follow these steps.
 
 1. Go to **Products and categories \> Warranty \> Warranty settings \> Number sequences**.
-1. Under **Number sequence code**, select a value from the drop down menu. 
+1. Under **Number sequence code**, enter a value or select one from the drop down menu. 
 
 The following image shows the **Number sequence code** field under **Warranty settings**.
 
@@ -194,7 +194,7 @@ To process warranty transactions in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Products and Categories \> Warranty \>Process warranty transactions**. The **Choose organization nodes** flyout menu appears.
 1. Under **Organizational hierarchy**, select a value from the drop down menu.
-1. Under **AVAILABLE ORGANIATION NODES**, select either an individual store or a node. Select a node if you want to create the batch job for a group of stores. 
+1. Under **AVAILABLE ORGANIZATION NODES**, select either an individual store or a node. Select a node if you want to create the batch job for a group of stores. 
 1. Select the arrow symbol to add your selection.
 1. Select the **Run in the background** tab.
 1. Under **Batch processing**, select **Yes**.  
@@ -203,8 +203,8 @@ To process warranty transactions in Commerce headquarters, follow these steps.
 1. Under **Start time**, select or enter a start time.
 1. Do one of the following:
     - Select **NO END DATE** if the recurrence should never end.
-    - Select**END AFTER** if you want the recurrence to end after a specific number of runs. If selected, enter the number of runs.
-    - Select**END BY** if you want the recurrence to end by a specific date.
+    - Select **END AFTER** if you want the recurrence to end after a specific number of runs. If selected, enter the number of runs.
+    - Select **END BY** if you want the recurrence to end by a specific date.
 1. Select **OK**.
 1. Select **OK**.
 
@@ -218,7 +218,7 @@ The following image shows an example of the **Run in the background** tab of the
 
 ## Warranty policies
 
-When an extended warranty is sold, a warranty policy entity is automatically created. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, and warrantable item serial number, for the warranty sold.
+When an extended warranty is sold, a warranty policy entity is created automatically. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, and warrantable item serial number for the warranty sold.
 
 >[!NOTE]
 >Warranty policy properties are generated automatically during policy entity creation and currently cannot be manually configured or edited.
@@ -231,7 +231,7 @@ The following table contains warranty policy properties, values, and description
 | WarrantiedItemId |  Character string (20 max) | Warrantable item ID |
 | WarrantiedInventoryLotId |  Character string (20 max) | Warrantable item lot ID |
 | WarrantiedSerialNumber |  Character string (20 max) | Warrantable item serial number |
-| WarrantiedFulfilledDate |  Date | Warranty policy fulfillment date |
+| WarrantiedFulfilledDate |  Date | Warrantable item fulfillment date |
 | WarrantyItemId |  Character string (20 max) | Warranty item ID |
 | WarrantyInventoryLotId |  Character string (20 max) | Warranty item inventory lot ID |
 | WarrantySalesDate |  Date | Warranty item sale date |
