@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Quick start guide - adjust a provided ER format to generate a custom electronic document
-description: This topic explains how to adjust a provided Electronic reporting (ER) format to generate a custom electronic document.
+title: Adjust an ER format to generate a custom electronic document
+description: This topic explains how to adjust a Microsoft provided Electronic reporting (ER) format to generate a custom electronic document.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Customize the provided ER format to generate a custom electronic document
+# Adjust an ER format to generate a custom electronic document
 
 [!include[banner](../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can do the following:
+The procedures in this topic explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can:
 
-- Configure parameters of the [ER framework](general-electronic-reporting.md) in Finance instance
-- Import to this instance ER configurations that are provided by Microsoft for generation of a payment file while [vendor payment](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/vendor-payment-overview) is processed
-- Create a custom version of ER format configuration based on the provided ER format configuration
-- Modify a custom ER format configuration to generate payment files in accordance to specific requirements of a particular bank
-- Adopt changes of a new versions of provided by Microsoft ER format configuration in a custom ER format configuration
+- Configure the [ER framework](general-electronic-reporting.md) parameters.
+- Import ER configurations that are provided by Microsoft to generate a payment file while a [vendor payment](../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is processed.
+- Create a custom version of an ER format configuration based on the standard ER format configuration.
+- Modify a custom ER format configuration to generate payment files according to requirements specified by a particular bank.
+- Adopt changes made to the standard ER format configuration in a custom ER format configuration.
 
-These steps can be performed in **GBSI** company with no coding.
+These procedures can be performed in **GBSI** company with no coding required.
 
 -   [Configure ER framework](#ConfigureFramework)
     -   [Configure ER parameters](#ConfigureParameters)
@@ -56,105 +56,97 @@ These steps can be performed in **GBSI** company with no coding.
 -   [Prepare a vendor payment for processing](#PrepareVendorPayment)
     -   [Add bank information for a vendor account](#AddBankAccount)
     -   [Enter a vendor payment](#EnterVendorPayment)
--   [Process a vendor payment by using provided ER format](#ProcessVendorPayment1)
+-   [Process a vendor payment by using the standard ER format](#ProcessVendorPayment1)
     -   [Set up the electronic payment method](#ConfigureMethodOfPayment1)
     -   [Process a vendor payment](#ProcessPayment1)
--   [Customize the provided ER format](#CustomizeProvidedFormat)
+-   [Customize the standard ER format](#CustomizeProvidedFormat)
     -   [Create your custom format](#DeriveProvidedFormat)
     -   [Edit your custom format](#ConfigureDerivedFormat)
     -   [Mark a custom format as runnable](#ConfigureDerivedFormat)
 -   [Process a vendor payment by using custom ER format](#ProcessVendorPayment2)
     -   [Set up the electronic payment method](#ConfigureMethodOfPayment2)
     -   [Process a vendor payment](#ProcessPayment2)
--   [Import the new versions of the provided ER format configurations](#ImportERSolution2)
-    -   [Import the new version of the provided ER format configuration](#ImportERFormat2)
+-   [Import the new versions of the standard ER format configurations](#ImportERSolution2)
+    -   [Import the new version of the standard ER format configuration](#ImportERFormat2)
     -   [Review the imported ER format configuration](#ReviewImportedERFormat)
--   [Adopt changes of the new version of imported format in a custom format](#AdoptNewBaseVersion)
+-   [Adopt changes of the new version of an imported format into a custom format](#AdoptNewBaseVersion)
     -   [Complete the current draft version of a custom format](#CompleteDerivedFormat)
     -   [Rebase your custom format to a new base version](#RebaseDerivedFormat)
-    -   [Process a vendor payment by using rebased ER format](#ProcessPayment3)
+    -   [Process a vendor payment by using a rebased ER format](#ProcessPayment3)
 -   [Additional resources](#References)
 
 ## <a name="ConfigureFramework">Configure ER framework</a>
 
-As the Electronic Reporting Functional Consultant, you must configure the minimal set of ER parameters to start using the ER framework for designing your custom version of the provided ER format.
+As the Electronic Reporting Functional Consultant, you must configure the minimal set of ER parameters to start using the ER framework to design your custom version of the standard ER format.
 
 ### <a name="ConfigureParameters">Configure ER parameters</a>
 
-1.  Open the **Electronic reporting** workspace page.
-2.  Select **Electronic reporting parameters**.
-3.  On the **General** tab of the **Electronic reporting parameters** page, set the **Enable design mode** parameter to **Yes.**
-4.  On the **Attachments** tab of the **Electronic reporting parameters** page, set the following parameters:
-    1.  Set the **Configurations** parameter to **File** for the **USMF** company.
-    2.  Set **Job archive**, **Temporary**, **Baseline**, and **Others** parameters to **File**.
+1.  Open the **Electronic reporting** workspace page and select **Electronic reporting parameters**.
+2.  On the **Electronic reporting parameters** page, on the **General** tab, set **Enable design mode** to **Yes**.
+3.  On the **Attachments** tab, set the following parameters:
+   - For the **USMG** company, set **Configurations** to **File**.
+   - Set **Job archive**, **Temporary**, **Baseline**, and **Others** to **File**.
 
-To learn more about ER parameters, review the [Configure the ER framework](electronic-reporting-er-configure-parameters.md) page.
+For more information about ER parameters, see [Configure the ER framework](electronic-reporting-er-configure-parameters.md).
 
 ### <a name="ActivateProvider">Activate an ER configuration provider</a>
 
-Every added ER configuration is marked as owned by an ER configuration provider. The activated in the ER workspace ER configuration provider is used for that. Therefore, you must activate an ER configuration provider in the ER workspace before you start adding or editing any ER configuration.
+Every ER configuration that is added, is marked as owned by an ER configuration provider. The ER configuration provider that is activated in the ER workspace is used for that. This means that you must activate an ER configuration provider in the ER workspace before you start adding or editing any ER configuration.
 
 > [!NOTE]
->
-> The only owner of an ER configuration can edit it. Therefore, the appropriate ER configuration provider must be activated in the ER workspace for editing an ER configuration.
+> Only the owner of an ER configuration can edit it. This means that the appropriate ER configuration provider must be activated in the ER workspace so that an ER configuration can be edited.
 
-#### <a name="ReviewProvidersList">Review ER configuration providers list</a>
+#### <a name="ReviewProvidersList">Review  the list of ER configuration providers</a>
 
-1.  Go to the **Navigation pane** in the upper left corner.
-2.  Select **Organization administration** module.
-3.  Go to **Workspaces \> Electronic reporting**.
-4.  Go to **Related links \> Configuration providers**.
+1.  In the **Navigation pane**, in the upper left corner, select **Organization administration**.
+2.  Go to **Workspaces** \> **Electronic reporting**, and then select **Related links** \> **Configuration providers**.
 
 A provider record has a unique name and URL. Review the content of this page and skip the remaining steps of the [Add a new ER configuration provider](#ActivateProvider) section  if a record for Litware, Inc. ([https://www.litware.com](https://www.litware.com/)) already exists.
 
 #### <a name="ActivateProvider">Add a new ER configuration provider</a>
 
-1.  Select **New**.
+1.  On the **Configuration providers** page, select **New**.
 2.  In the **Name** field, type **Litware, Inc.**.
 3.  In the **Internet address** field, type <https://www.litware.com>.
 4.  Select **Save**.
 
 #### <a name="ActivateAddedProvider">Activate an ER configuration provider</a>
 
-1.  Go to **Workspaces \> Electronic reporting**.
-2.  Select the Litware, Inc. provider.
-3.  Select **Set active**.
+1.  Go to **Workspaces** \> **Electronic reporting**.
+2.  Select the provider, **Litware, Inc.**,and then select **Set active**.
 
-To learn more about ER configuration provider, review the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) page.
+To learn more about ER configuration provider, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="ImportERSolution1">Import the provided ER configurations</a>
 
 ### <a name="ImportERFormat1">Import the provided ER format configuration</a>
 
-To bring the provided ER configurations to the current Finance instance, you must import them from the configured for this ER
-[repository](general-electronic-reporting.md#Repository).
+To add the standard ER configurations to you current Finance instance, you must import them from the ER
+[repository](general-electronic-reporting.md#Repository)that was configured for the instance.
 
-1.  Go to the **Navigation pane** and select **Organization administration**.
-2.  Go to **Workspaces \> Electronic reporting**.
-3.  In the **Providers** grid, select the **Microsoft** tile.
-4.  Select **Repositories** to open the list of repositories for the Microsoft provider.
-5.  Select the repository of **Global** type.
-6.  Select **Open**. If prompted, follow the authorization instructions.
-7.  In the configurations tree in the left pane, select the **BACS (UK)** format configuration.
-8.  On the **Versions** FastTab, select the version 1.1 of the selected ER format configuration.
-9.  On the **Versions** FastTab, click **Import** to download the selected version from Global repository to the current Finance instance.
+1.  From the **Navigation pane**, select **Organization administration**.
+2.  Go to **Workspaces** \> **Electronic reporting**, and innthe **Providers** grid, select the **Microsoft** tile.
+3.  Select **Repositories** to open the list of repositories for the Microsoft provider.
+4.  Select the repository of **Global** type.
+5.  Select **Open**. If prompted, follow the authorization instructions.
+6.  In the configurations tree in the left pane, select the **BACS (UK)** format configuration.
+7.  On the **Versions** FastTab, select the version 1.1.
+9.  Select **Import** to download the selected version from Global repository to the current Finance instance.
 
 ![ER repository page](./media/er-quick-start2-import-solution1.png)
 
-If you experience difficulties with accessing [Global repository](er-download-configurations-global-repo.md), use the alternative way
-of configuration [downloading](download-electronic-reporting-configuration-lcs.md) from Microsoft Lifecycle Services (LCS).
+If you experience difficulties with accessing the [Global repository](er-download-configurations-global-repo.md), use the alternative way to [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Lifecycle Services (LCS).
 
 ### <a name="ReviewImportedERSolution">Review the imported ER configurations</a>
 
-1.  Go to the **Navigation pane** and select **Organization administration**.
-2.  Go to **Workspaces \> Electronic reporting**.
-3.  Select **Reporting configurations**.
-4.  Expand **Payment model** in the configurations tree.
+1.  From the **Navigation pane**, select **Organization administration**.
+2.  Go to **Workspaces** \> **Electronic reporting**, and then select **Reporting configurations**.
+3.  In the configurations tree, expand **Payment model**.
 
-Note that, in addition to the selected **BACS (UK)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configurations tree:
+Note that in addition to the selected **BACS (UK)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configurations tree:
 
 -   Payment model
-    > Contains [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the payment business domain
+    > Contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the payment business domain
 -   Payment model mapping 1611
     > Contains [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how data model is filled in by application data at runtime
 -   BACS (UK)
