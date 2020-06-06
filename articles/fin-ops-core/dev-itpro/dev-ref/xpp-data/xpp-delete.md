@@ -83,7 +83,6 @@ delete_from myXrec where conditions; // conditions is a Boolean variable defined
 
 ## Example
 
-The following example 
 
 ```xpp
 int counter = 0;

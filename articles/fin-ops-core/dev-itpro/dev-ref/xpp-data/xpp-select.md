@@ -32,7 +32,6 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-
 The following example fetches all the columns in the first row of the **CustomerTable** table and prints the **AccountNum** column of the row.
 
 ```xpp

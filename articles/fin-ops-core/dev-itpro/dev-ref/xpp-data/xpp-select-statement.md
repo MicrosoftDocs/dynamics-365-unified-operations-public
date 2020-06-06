@@ -326,14 +326,14 @@ select firstFast custTable
 
 ## firstOnly, firstOnly10, firstOnly100, firstOnly1000 keywords
 
-The **firstOnly** keywords speed up the fetch by returning a limited number of rows.
+The **firstOnly** keywords speed up the fetch by returning a limited number of rows. When you include **firstOnly** in your query, the runtime returns a table buffer. When you omit **firstOnly**, the runtime allocates an object that can iterate over records. From a performance perspective, you should only use **firstOnly** when your intent is to fetch the first record.
 
-| Keyword           | Description |
-|-------------------|-------------|
+| Keyword           | Description                 |
+|-------------------|-----------------------------|
 | firstOnly         | Returns only the first row. |
-| firstOnly10       | Returns 10 rows. |
-| firstOnly100      | Returns 100 rows. |
-| firstOnly1000     | Returns 1,000 rows. |
+| firstOnly10       | Returns 10 rows.            |
+| firstOnly100      | Returns 100 rows.           |
+| firstOnly1000     | Returns 1,000 rows.         |
 
 The following code example returns only the first row of the results.
 
