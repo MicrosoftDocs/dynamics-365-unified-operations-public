@@ -43,7 +43,7 @@ We offer different [deployment options](../../dev-itpro/deployment/choose-deploy
 
 To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum for the Dynamics 365 Finance and Operations Plan or equivalent.
 
-After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
+After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS Implementation project, a reminder will be sent to the project team. You have to make sure that the project onboarding in LCS is completed with most accurate date, and the email addresses in the setup are monitored. To know more about project onboarding, see the [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
 | FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Dedicated FastTrack engineering resources |
 | --- | --- | --- | --- | --- | --- |
@@ -88,7 +88,7 @@ The kick-off meetings are available to customers who are eligible for a designat
 - Explanation of how services are delivered, and where and when to seek help from the FastTrack engineering team
 - Critical success factors and key learning that can be shared by the FastTrack team
 
-Typically, the designated FastTrack solution architect will initialize the engagement by scheduling a partner kick-off meeting followed by a customer kick-off meeting after the eligible customer has completed the onboarding process. For more information about customer onboarding, see [Onboard an implementation project](../imp-lifecycle/onboard.md). 
+Typically, the designated FastTrack solution architect will initialize the engagement by scheduling a partner kick-off meeting followed by a customer kick-off meeting after the eligible customer has completed the onboarding process. For more information about LCS project onboarding, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
 The typical format of a partner kick-off meeting is a one-hour Microsoft Teams call. For customers, the kick-off meeting is a three-hour Microsoft Teams call. The recommended attendees include key stakeholders like customer’s project sponsor (not required for entire kick-off meeting), project managers, solution architects, technical/functional leads, business process owners from the customer, a partner, and the Microsoft teams. The kick-off meeting can also be conducted in a combined customer and partner session if the implementation partners have been through the process before.
 
