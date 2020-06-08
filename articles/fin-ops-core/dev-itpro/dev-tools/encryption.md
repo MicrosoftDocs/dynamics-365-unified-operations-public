@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft uses encryption technology to protect customer data while at rest in an environment's SQL Server database and Azure Storage.
 
-All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?redirectedfrom=MSDN&view=sql-server-ver15) and/or [Azure Storage encryption](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to disk (at rest). 
+All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption) and/or [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to disk (at rest). 
 
 Dynamics 365 for Finance and Operations uses server-side encryption using service-managed keys leaving all key management aspects such as key issuance, rotation, and backup to Microsoft.
 
