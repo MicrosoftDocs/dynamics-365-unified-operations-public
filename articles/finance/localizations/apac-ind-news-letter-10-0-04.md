@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC India GST Localization Newsletter 10.0.04
-description: This topic describes the changes incorporated in Dynamics 365 Finance version 10.0.04.
+title: What's new and changed for APAC India GST Localization in 10.0.04 (July 2019)
+description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.04.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/08/2020
@@ -29,9 +29,10 @@ ms.dyn365.ops.version: 10.0.04
 ---
 [!include [banner](../includes/banner.md)]
 
-# Welcome to the newsletter for version 10.0.4
+# What's new and changed for APAC India GST Localization in 10.0.04 (July 2019)
 
-This topic includes a summary of the new features and critical bug fixes released in version 10.0.04 for India. You can learn more about the shipped features in the topic, [ What's new or changed in Finance and Operations version ](../../fin-and-ops/get-started/whats-new-changed-10-0-4.md).
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.04 for APAC India GST localization. 
+.
 
 ## New Features
 ### Define GST reference number sequence group
