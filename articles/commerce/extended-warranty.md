@@ -153,8 +153,7 @@ To set up a warranty group in Commerce, follow these steps.
 1. On the **Warranty products** FastTab, select **Add line** to add a warranty item.
 1. In the **Display order** field, enter a number to rank the warranty group at the POS. The POS will show warranty items in order of ascending rank in the warranty prompt.
 1. On the **Warrantable products** FastTab, select **Add line** to add warrantable products.
-1. If the warranty item is applicable to a whole category of warrantable items (products), select the category in the **Category** field.
-1. In the **Product** field, select the warrantable item (product) that the warranty item is applicable to.
+1. If the warranty item is applicable to a whole category of warrantable items (products), select the category in the **Category** field. If the warranty item is applicable to a specific warrantable item (product), select the product in the **Product** field.
 1. On the **Applicable channels** FastTab, select **Add line** to add the channel where you want to sell the warranty item.
 
     ![New warranty group on the Warranty groups page](./media/ew-warranty-group.png)
