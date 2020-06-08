@@ -37,18 +37,21 @@ This topic includes a summary of the new features and critical bug fixes release
 ### GST solution document is updated 
 Updates have been made to the topic, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
 
-## GSTR report performance improvement
+### GSTR report performance improvement
 **GSTR** report generation time reduced 30% because of the replacement of line-by-line data fetch with dataset operation.
  
-## Delete the selected (multiple) tax lookup condition record
+### Delete the selected (multiple) tax lookup condition record
 In addition to deleting a single record or all records, you can now delete multiple selected records.
 
 ![](media/GST-delete-multiple-tax-lookup-1-10-0-03.PNG)
 
-## Enable tax calculation based on the accounting currency for import/export order
+### Enable tax calculation based on the accounting currency for import/export order
 For more information about calculating tax in the accounting currency for import/export orders, see [what's new of 10.0.3 ](../../fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order.md).
 
 ![](media/GST-tax-based-accounting-currency-2-10-0-03.PNG	)
+
+### Use Tax transaction inquiry 
+With the release of 10.0.04, use the **Tax transaction inquiry** functionality for TDS/TCS instead of **Post withholding tax**.
 
 ## Critical Fixes 
 
