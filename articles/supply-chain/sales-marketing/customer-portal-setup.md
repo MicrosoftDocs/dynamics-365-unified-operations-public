@@ -5,7 +5,7 @@ title: Install, set up, and update the Customer portal
 description: This topic provides licensing details and setup instructions for the Customer portal.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,7 +64,7 @@ Before you begin, make sure that you've already completed the [required setup](#
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/).
 2. Make sure that you're using the environment where you enabled dual-write.
-3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Supply Chain Management Customer**.
+3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Customer Portal**.
 4. Follow the on-screen instructions.
 
 After provisioning is completed, you can access the Customer portal in the **Your apps** section of the **Home** page.
@@ -76,7 +76,7 @@ After provisioning is completed, you can access the Customer portal in the **You
 
 More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
-## Resources
+## Additional resources
 
 To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
 
