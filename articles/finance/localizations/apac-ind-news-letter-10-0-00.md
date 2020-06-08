@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 10.0.0
 # Welcome to the newsletter for version 10.0.
 
 This topic includes a summary of the new features and critical bug fixes released in version 10.0.for India.
-You can learn more about the shipped features in the topic,
--[ What's new or changed in Finance and Operations version ](../../fin-and-ops/get-started/whats-new-changed-10-0.md).
+You can learn more about the shipped features in the topic, [ What's new or changed in Finance and Operations version ](../../fin-and-ops/get-started/whats-new-changed-10-0.md).
 
 ## New Configuration 
 The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.0:
