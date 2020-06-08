@@ -47,16 +47,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Feature requirements
 
-To use this feature, your system must be set up with the following:
-
-- The [location profiles](tasks/create-location-profile.md) used to store inventory must have **Enable location status** set to **Yes**.
-- Go to **Warehouse management > Setup > Warehouse > Location profiles**
-- Select **Edit** in the Action Pane to enable changes.
-- Select **FLOOR-05** in the left column.
-- In the **General** FastTab, select **Yes** on *Enable location status*.
-- Select **Save**
-<!-- HHM: - You must run a consistency check to ensure the data is accurate. @Karl, I agree, if needed this should be part of every document using demo data. If turning on in an existing environment, the specific modules and elements to check should be called out. -->
-<!-- KAMAYBAC: I don't understand this. Does it really belong here? Can we give a link for more info? -->
+To use this feature, the [location profiles](tasks/create-location-profile.md) used to store inventory must have **Enable location status** set to *Yes*. You can find this setting by going to **Warehouse management > Setup > Warehouse > Location profiles**, selecting a location profile, and expanding the **General** FastTab. You must make this setting for each relevant location profile.
 
 ## Feature scenarios
 
@@ -71,46 +62,47 @@ To work through these scenarios using the sample records and values specified he
 
 You can also use these scenarios as guidance for how to use this feature when working on a production system, but then you must substitute your own values for each setting described here.
 
-<!-- HHM: <a name="demo-set-up"></a> -->
+<a name="demo-set-up"></a>
 
-### Set up for the scenarios
+### Set up the scenarios
 
 The demo data will require setup and inventory adjustments in order to support the scenarios. Do the following to create the inventory data required to work through the FIFO and/or LIFO scenario:
 
 1. Sign into a system with demo data installed and select the **USMF** legal entity.
+1. Go to **Warehouse management > Setup > Warehouse > Location profiles**
+1. Select **Edit** in the Action Pane to enable changes.
+1. Select **FLOOR-05** in the left column.
+1. On the **General** FastTab, set **Enable location status** to *Yes*.
+1. Select **Save**
 1. Go to **Warehouse management** > **Setup** > **Location directives**.
-1. Select *Name* - **63 Pick containerization** from the left column.
+1. Select **63 Pick containerization** from the left column.
 1. Select **Edit**  to put the page into edit mode.
-1. On the **Location directive actions** FastTab, find the line with **Sequence number** "1" and do one of the following:
-    - If you are setting up a FIFO scenario, then change the **Strategy** to "Location aging FIFO".
-    - If you are setting up a LIFO scenario, then change the **Strategy** to "Location aging LIFO".
+1. On the **Location directive actions** FastTab, find the line with a **Sequence number** of *1* and do one of the following:
+    - If you are setting up a FIFO scenario, then change the **Strategy** to *Location aging FIFO*.
+    - If you are setting up a LIFO scenario, then change the **Strategy** to *Location aging LIFO*.
 1. Select the **Edit query** button on the **Location directive actions** FastTab to open a new pane.
-1. On the **Range** tab of the pane, select **Add** to add a new line and then make the following settings for the new line: <!-- KAMAYBAC: What are we setting up here? What do these settings do? -->
-    - **Table** - Locations
-    - **Derived table** - Locations
-    - **Field** - Zone ID
-    - **Criteria** - FLOOR
+1. On the **Range** tab of the pane, select **Add** to add a new line and then make the following settings for the new line:
+    - **Table** - *Locations*
+    - **Derived table** - *Locations*
+    - **Field** - *Zone ID*
+    - **Criteria** - *Floor*
 1. Select **OK** to apply your settings and close the pane.
-1. Select **Save** to save changes to the *Location directive*.
-1. The following step is performed on a mobile device to remove existing inventory from the warehouse location to support the scenarios. The steps provided here assume using a mobile device or the *Dynamics 365 for Finance and Operations - Warehousing* app from your PC. On a mobile device, do the following:<!-- KAMAYBAC: I don't have enough information to do any of this, so I couldn't confirm. Can we give more detail here? What are doing here? -->
-    - Sign in to warehouse 63 with the appropriate *User ID* and *Password*.
-    - Select **Quality** from the *MAIN MENU*.
-    - Select **Scrap** from the *QUALITY MANAGEMENT* menu.
-    - Select **LOC/LP** on the *SCRAP* form.
-    - Enter "63_1".
+1. Select **Save** to save changes to the location directive.
+1. The following step is performed on a mobile device to remove existing inventory from the warehouse location to support the scenarios. The steps provided here assume using a mobile device or the *Dynamics 365 for Finance and Operations - Warehousing* app from your PC. On a mobile device, do the following:
+    - Sign in to warehouse 63 with the appropriate **User ID** and **Password**.
+    - Select **Quality** from the **Main menu**.
+    - Select **Scrap** from the **Quality management** menu.
+    - Select **LOC/LP** on the **Scrap** form.
+    - Enter *63_1*.
     - Select **Enter/OK**
-    - Confirm the *Scrap* details for *Adjustment out* by selecting **Enter/OK**.
-    - There will be a **Work Completed** message displayed when the license plate inventory is adjusted out.  <!-- KAMAYBAC: Are we missing a step here? Shouldn't we change a quantity or something? -->
-<!-- HHM: Karl, this action on the mobile device performs the step to adjust quantity out. -->
+    - Confirm the **Scrap** details for **Adjustment out** by selecting **Enter/OK**.
+    - There will be a **Work Completed** message displayed when the license plate inventory is adjusted out.
 
 This mobile device step leaves inventory in two locations in the demo data with two different aging dates in each location. Location FL-001 has an aging date of 4/15/2017, while location FL-002 has an aging date of 1/29/2017. Both locations contain item A0001.
 
-To view this data go to **Inventory management > Inquiries and reports > On-hand list** then filter on *Warehouse* **63** and *Item* **A0001**. On the rows with *Location* **FL-001** or **FL-002**, focus on a line with a positive *Physical inventory* value then select **Transactions** from the Action Pane. You will see a *Physical date* field with a date that corresponds with the above mentioned aging dates.
+To view this data go to **Inventory management > Inquiries and reports > On-hand list** then filter on **Warehouse** *63* and **Item** *A0001*. On the rows with **Location** *FL-001* or *FL-002*, focus on a line with a positive **Physical inventory** value then select **Transactions** from the Action Pane. You will see a **Physical date** field with a date that corresponds with the above mentioned aging dates.
 
-<!-- KAMAYBAC: How does the above procedure result in this setup?   None of these values are mentioned in the procedure. -->
-<!-- HHM: Karl, the above procedure's only purpose is manipulate the existing demo data to meet the needs of the scenario's. -->
-
-<!-- HHM: <a name="fifo-demo"></a> -->
+<a name="fifo-demo"></a>
 
 ### Scenario 1: Set up and use FIFO location aging
 
@@ -118,7 +110,7 @@ The FIFO strategy finds the location that contains the oldest aging date and all
 
 Do the following:
 
-<!-- HHM: 1. If you haven't already done so, then [prepare the sample data](#demo-set-up) needed for this scenario. (This statement is redundant) -->
+1. If you haven't already done so, then [prepare the sample data](#demo-set-up) needed for this scenario.
 1. Go to **Sales and marketing** > **Sales order** > **All sales orders**.
 1. Select **New** to open the **Create sales order** pane.
 1. In the **Create sales order** pane, enter the following:
@@ -140,8 +132,8 @@ The LIFO strategy finds the location that contains the newest aging date and all
 
 Do the following:
 
-1. Set up and complete the full FIFO scenario, as described in the <!-- HHM: [previous section](#fifo-demo) -->***Setup for the scenarios*** section, before you start this scenario. We will reuse the wave, and most of the setup, created for that scenario in this scenario.
-1. Edit the **63 Pick containerization** location directive to use the "Location aging LIFO" strategy, as described in the first part of the <!-- HHM: [Set up for the scenarios](#demo-set-up) --> procedure.
+1. Set up and complete the full FIFO scenario, as described in the [previous section](#fifo-demo), before you start this scenario. We will reuse the wave, and most of the setup, created for that scenario in this scenario.
+1. Edit the **63 Pick containerization** location directive to use the "Location aging LIFO" strategy, as described in the first part of the [Set up the scenarios](#demo-set-up) procedure.
 1. Next, modify the *Wave* created for the sales order in scenario #1 to use the *Location aging LIFO strategy*. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**.
 1. Select and open the wave containing the order you created for the FIFO scenario.
 1. In the Waves Action Pane, select the **Work** tab and then select **Cancel** to cancel the work you created for the FIFO scenario.
