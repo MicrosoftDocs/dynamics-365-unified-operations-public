@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC India GST Localization newsletter 10.0.0
-description: This topic describes changes that are incorporated in Dynamics 365 Finance version 10.0.0.
+title: What's new and changed for APAC India GST Localization in 10.0.0 (April 2019)
+description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.0.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/08/2020
@@ -29,10 +29,9 @@ ms.dyn365.ops.version: 10.0.0
 ---
 [!include [banner](../includes/banner.md)]
 
-# Welcome to the newsletter for version 10.0.0
+# What's new and changed for APAC India GST Localization in 10.0.0 (April 2019)
 
-This topic includes a summary of the new features and critical bug fixes released in version 10.0.00 for India.
-You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations apps](../../fin-and-ops/get-started/whats-new-changed-10-0.md).
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.0 for APAC India GST localization.
 
 ## New configuration 
 The following configurations are available from the Shared Asset Library in Lifecycle Services (LCS) for use in version 10.0.0:
