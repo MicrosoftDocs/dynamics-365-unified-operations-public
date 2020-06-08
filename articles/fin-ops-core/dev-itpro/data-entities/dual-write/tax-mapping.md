@@ -42,8 +42,8 @@ Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) a
 
 Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
 
-| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
--------------------------|---------------------------------
+Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+-------------------------|---------------------------------|----|
 Tax codes                   | msdyn\_taxcodes.md | 
 Tax groups                 | msdyn\_taxgroups.md | 
 Tax item groups             | msdyn\_taxitemgroups.md | 
