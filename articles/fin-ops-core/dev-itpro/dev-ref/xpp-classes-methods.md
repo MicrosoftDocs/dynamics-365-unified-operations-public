@@ -443,26 +443,26 @@ class Person
 }
 ```
 
-This is an example of how you cannot skip to a second optional parameter. The first method has two optional parameters. The second method is a caller of the first method. The caller wants to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
+This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method  The commented out code tries to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
 
 ```xpp
-public class Additions 
+class Additions
 {
-    static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
+    public static int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
     {
         return _i1 + _i2 + _i3;
     }
+
+    public static void callAdditions()
+    {
+        // The next statement does not compile, because it skips the _i2 parameter.
+        // info(int2Str(Additions::AddThreeInts(1, , 99)));
+
+        // You must specify both optional parameters.
+        info(int2Str(Additions::AddThreeInts(1, 2, 99)));
+    }
+
 }
-
-// This code calls the AddThreeInts method.
-// No way to skip the first optional parameter (so it can default)
-// while also specifying the value of the second optional parameter.
-// The next statement does not compile.
-// info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-
-// Settle for overriding both optional parameters.
-info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-// Output is "102".
 ```
 
 ## Accessor methods
