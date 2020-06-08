@@ -35,19 +35,18 @@ You can use these strategies to ship both batch and non-batch tracked items base
 
 When inventory is first received/created in the warehouse, the system updates the relevant license plate to show the current date as the aging date. This date is then used by the location directive strategies to identify the oldest or youngest inventory in the warehouse. If inventory is moved to a location that isn't tracked by license plate, the location itself is updated with aging information, which will then be used by these strategies.
 
-## Enable the location directive inventory picking aging feature
+## Enable the feature
 
-> [!IMPORTANT]
-> In order for this feature to work, first enable the *Warehouse location status* feature.
+To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - Warehouse management
-- **Feature name** - Location directive inventory picking aging
+1. Warehouse location status
+1. Location directive inventory picking aging
 
 ## Feature requirements
 
-To use this feature, the [location profiles](tasks/create-location-profile.md) used to store inventory must have **Enable location status** set to *Yes*. You can find this setting by going to **Warehouse management > Setup > Warehouse > Location profiles**, selecting a location profile, and expanding the **General** FastTab. You must make this setting for each relevant location profile.
+To use this feature, each [location profile](tasks/create-location-profile.md) used to store inventory must have **Enable location status** set to **Yes**.
+
+To find this setting, go to **Warehouse management > Setup > Warehouse > Location profiles**, select a location profile, and expand the **General** FastTab. You must make this setting for each relevant location profile.
 
 ## Feature scenarios
 
