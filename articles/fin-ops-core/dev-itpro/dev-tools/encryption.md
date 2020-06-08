@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Encryption in Dynamics 365 for Finance and Operations
+# Encryption in Finance and Operations apps
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,9 +39,9 @@ Microsoft uses encryption technology to protect customer data while at rest in a
 
 All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption) and/or [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to disk (at rest). 
 
-Dynamics 365 for Finance and Operations uses server-side encryption using service-managed keys leaving all key management aspects such as key issuance, rotation, and backup to Microsoft.
+Finance and Operations apps use server-side encryption using service-managed keys. All key management aspects such as key issuance, rotation, and backup are handled by Microsoft.
 
-In addition to the default encryption at rest provided above, customers can take advantage of the encryption API available in the Global X++ class. The methods Global::editEncryptedField() and Global::editEncryptedStringField() take use the environment specific Data Encryption certificate to perform data encryption and decryption. These methods can be used as an additional layer of protection beyond the default encryption at rest technology used for data storage.
+In addition to the default encryption at rest provided above, you can use the encryption API available in the **Global** X++ class. The methods **Global::editEncryptedField()** and **Global::editEncryptedStringField()** use the environment-specific data encryption certificate to perform data encryption and decryption. You can use these methods as an additional layer of protection beyond the default encryption at rest technology used for data storage.
 
 ## Encryption in transit
 
