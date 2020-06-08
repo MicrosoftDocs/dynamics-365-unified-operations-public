@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: APAC India GST Localization Newsletter 10.0.06
-description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.06
+title: What's new and changed for APAC India GST Localization in 10.0.06 (November 2019)
+description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
 manager: Wangcheng
-ms.date: 05/31/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,80 +16,69 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend 
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: 
+ms.author: prabhatb
 ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: 10.0.6
 
 ---
 [!include [banner](../includes/banner.md)]
 
-# Welcome to the newsletter for version 10.0.6! 
+# What's new and changed for APAC India GST Localization in 10.0.06 (November 2019)
 
-This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.06 for India.
-You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6)
+This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version ](../../fin-and-ops/get-started/whats-new-changed-10-0-6.md).
 
-## New Features
-## Validate non-existing and duplicate records when importing tax setup 
-During the process of importing tax setup, system will validate the data correctness for the master data like HSN, SAC, etc., 
-and the data duplication. Duplicate data means the lookup records which result in the same tax rate, load on inventory %, etc. 
-It can be turned on in feature management workspace.
+## New features
+### Validate non-existent and duplicate records when importing tax setup 
+During the process of importing tax setup, the system will validate the data correctness for master data like HSN and SAC, 
+and the data duplication. Duplicate data means the lookup records result in the same tax rate, load on inventory percentage, etc. 
+This functionality can be turned on in the **Feature management** workspace.
 
 ![](media/GST-tax-setup-validation-1-10-0-06.PNG)
 
-## Tax information enabled for “Procurement Category”
+### Tax information enabled for procurement category
+Tax information has been enabled for procurement categories. Tax information can be added on the **Tax information** FastTab of the **Procurement categories** page. 
 
 ![](media/GST-tax-setup-validation-2-10-0-06.PNG)
  
-## Enable multi-batch processing for GSTR reports
+### Enable multi-batch processing for GSTR reports
 
-1.Turn on the multi-batch processing feature
-
-Workspaces > Feature management, and turn on the Enable multi-batch processing for GSTR reports feature
-
-2.Generate a GSTR report
-
-Tax > Inquiries and reports > Sales tax reports > GER export to GSTR CSV.
-
-3.Get CSV files
-
-Organization administration > Electronic reporting > Electronic reporting jobs. 
-Select the comma-separated values (CSV) files that you want.
-For example, select GER export to GSTR CSV__Merged. This file is generated as a merged file. 
+1. Turn on the multi-batch processing feature by going to **Workspaces** > **Feature management**.
+2. On the **Features management** page, enable the **ulti-batch processing for GSTR reports** feature.
+3. Go to **Tax** > **Sales tax reports** > **GER export to GSTR CSV** and generate a **GSTR** report.
+3. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. 
+4. Select the comma-separated values (CSV) files that you want.
+For example, select **GER export** to **GSTR CSV__Merged**. This file is generated as a merged file. 
 
 ![](media/GST-multi-batch-processing-3-10-0-06.PNG)
 
-### Document link : 
+For more information about this feature, see [Enable multi-batch processing for GSTR reports](apac-ind-gst-multi-batch-processing-gstr-return.md)
 
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-gst-multi-batch-processing-gstr-return)
+## Critical fixes 
 
-## Critical Fixes 
-
--	Unable to view the transaction ID in posted tax document transaction and posted tax component transaction after adding column.   
--	Accounting entry issue on import Purchase order invoicing when invoice is posted with reference to product receipt Quantity scenarios.
--	Indian legal entity customer invoicing takes too long time.   
--	Base amount should not be "Zero" for sales order when exempt check box is marked   
--	CGST & SGST should be applicable for intra-state transfer order in case the GST registration number are different in two warehouses .
--	TDS is not working for customer with TDS threshold enabled.   
--	Reversal of invoice Journal posted with TDS display incorrect total invoice amount .  
--	Withholding Tax (TDS) threshold not working correctly in normal TDS deduction scenario    
--	Wrong TDS calculation in open vendor invoice screen   
--	Incorrect calculation of GST for Credit note   
+-	The transaction ID in posted tax document transactions and posted tax component transactions can't be viewed after a column is added.
+-	Accounting entry issues occur when you import Purchase order invoicing, and the invoice is posted with reference to a product receipt's quantity. 
+-	Invoicing for customers in the Indian legal entity is taking too long.   
+-	Base amount should not be zero(0) for a sales order when the **Exempt** check box is selected.   
+-	CGST and SGST should be applicable for intra-state transfer orders in case the GST registration number is different in two warehouses.
+-	TDS is not working for customers that have "TDS threshold" enabled.   
+-	Reversal of the Invoice journal posted with TDS shows an incorrect total invoice amount.  
+-	Withholding Tax (TDS) threshold is not working correctly in normal TDS deduction scenarios.   
+-	The TDS calculation in the open vendor invoice screen is incorrect.   
+-	Incorrect calculation of GST for credit notes.   
 
 ## Upcoming critical fixes in 10.0.7 
 
-- Multiple copies print using Print management not working for Sales Invoice report  
--	Importing Customer free text invoice not updating for India legal entity  
--	Data not coming in Tax Transaction inquiry for TDS if TDS settlement period character length is more than 10 characters  
--	Transaction posted through Tax journal not showing in vendor open transaction for settlement  
--	System is not considering threshold defined in Withholding Tax  
--	Incorrect calculation of GST for Credit note  
--	Wrong TDS Calculation in Open Vendor invoice screen  
--	The field ‘Business verticals’ for the GST registration number in the " Enterprise Tax Registration Numbers "  
-  form should be editable and not greyed out  
+- Printing multiple copies using Print management is not working for the Sales Invoice report.  
+-	The imported Customer free text invoice is not updating for the India legal entity.  
+-	Data not coming in the **Tax Transaction inquiry for TDS** if the TDS settlement period character length is more than 10 characters.  
+-	Transactions posted through the **Tax** journal are not showing in **Vendor open transaction for settlement** page. 
+-	The system is not considering the threshold defined for withholding tax.
+-	Incorrect calculation of GST for a credit note . 
+-	Incorrect TDS calculation on the **Open vendor invoice** page.  
+-	The **Business verticals** field for the GST registration number on the **Enterprise Tax Registration Numbers** page should be editable and not greyed out. 
