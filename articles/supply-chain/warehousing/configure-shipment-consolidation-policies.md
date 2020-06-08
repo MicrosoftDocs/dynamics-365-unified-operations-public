@@ -275,7 +275,7 @@ In this example, you will create a *Customers allowing consolidation* policy tha
 
 - The policy will query for a specific order pool to identify customers who accept consolidated shipments.
 - Consolidation with open shipments is turned off.
-- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the earlier **Warehouse** check box).
+- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the previous **Consolidate shipment at release to warehouse** check box).
 
 - You can override the rule on a sales order by selecting a different order pool.
 
@@ -311,7 +311,7 @@ In this example, you will create a *Warehouses allowing consolidation* policy th
 
 - The policy will query for a specific order pool to identify warehouses that can consolidate shipments.
 - Consolidation with open shipments is turned off.
-- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the earlier **Warehouse** check box).
+- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the previous **Consolidate shipment at release to warehouse** check box).
 
 Typically, this business case can be addressed by using the default policies that you created in [scenario 1](#scenario-1). However, you can also manually create similar policies by following these steps.
 

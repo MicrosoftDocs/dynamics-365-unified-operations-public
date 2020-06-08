@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: May 28, 2020
+      href: hr-whats-new-2020-05-28.md
     - name: May 14, 2020
       href: hr-whats-new-2020-05-14.md
     - name: May 1, 2020
@@ -113,6 +115,8 @@
         href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
       - name: Understand Lifecycle Services
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+    - name: Human Resources app in Teams
+      href: hr-admin-teams-leave-app.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -507,6 +511,8 @@
         href: hr-leave-and-absence-accrue.md
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
+      - name: Leave of absence request
+        href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage employee leave
         href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
@@ -517,6 +523,12 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Manage buy and sell leave policies
+        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+      - name: Buy and sell leave
+        href: hr-employee-self-service-buy-sell-leave.md
+    - name: Manage leave requests in Teams
+      href: hr-teams-leave-app.md
     - name: Develop employees
       items:
       - name: Performance management overview

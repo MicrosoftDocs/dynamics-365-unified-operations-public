@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -142,7 +142,7 @@ If the changes that you want to make to a published view only involve the publis
 7. [10.0.9/Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
 
 If the changes to the published view involve modifying the personalizations or filters associated with the view, follow these steps: 
-1.	Switch to the published view that you want to modify. 
+1.	Load the published view that you want to modify. 
 2.	Save a copy of the published view to create a local draft of the published view. 
 3.	Modify the local draft with the needed changes.
 4.	Publish the view with the original name. 
@@ -154,15 +154,28 @@ While all users see a **My views** tab showing their personal views, users with 
 
 For the list of all published views for the page, the following set of actions are available. 
 
--    **Publish**: Use the **Publish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
--    **Remove**: Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected.
+-    **Publish** – Use the **Publish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
+-    **Save as personal** – Use the **Save as personal** action to create a personal draft copy of the published view. This capability can help you understand the contents of a view that wasn't published to you or that hasn't yet been published. You can also use it to edit and then republish a view. This capability is introduced in version 10.0.12.  
+-    **Remove** – Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected.
+
+## Managing views globally
+Although some management capabilities are surfaced on every page, as indicated in this topic, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
+
+- **Published views** – This section lists all views that have been published for your organization. From here, you can republish a view after you adjust the security roles or legal entities that the view targets. You can also export or delete one or more published views. In version 10.0.12 and later, you can use the **Save as personal** action to create a personal copy of the view, so that you can update the view or gain a better understanding of its contents. 
+- **Unpublished views** – This section lists all views that have been imported into your system but haven't yet been published. You can publish, export, or delete these views. The **Quick publish** action that was added in version 10.0.12 enables multiple views from this section to be published in one action, by using the existing security role and legal entity configurations. In version 10.0.12 and later, you can use the **Save as personal** action to create personal copies of these views, so that you can gain a better understand their contents.   
+- **Personal views** – This section lists all views that have been created by users in the system. From here, you can publish a personal view to the organization, or copy one or more of these views to other users. You can also export or delete these views as required.
+- **Users** – Select a user to view a list of the pages that the user has visited. You can then adjust the user's ability to use personalization for specific pages, or for the whole system. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. Then, if the user previously dismissed any pop-up windows that introduced new features, those pop-up windows will appear again the next time that the user encounters those features.
+- **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
+
+Users who have access to the **Personalization** page can also import personal or template views by using the **Import views** button on the Action Pane. In version 10.0.12 and later, a mechanism has been added for immediately publishing views when they are imported.  
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
-Note: The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
+> [!NOTE]
+> The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 **10.0.9 / Platform update 33 and later**
-The **Saved views** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
+The **Saved views** feature is available directly in Feature management in any environment. As for other preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and prior**
 The **Saved views** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.

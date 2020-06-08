@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend a Cloud Scale Unit OData controller
+title: Extend a Commerce Scale Unit OData controller
 description: This topic provides code that extends the CustomController class.
 author: kfend
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Extend a Cloud Scale Unit OData controller
+# Extend a Commerce Scale Unit OData controller
 
 [!include [banner](../includes/banner.md)]
 
