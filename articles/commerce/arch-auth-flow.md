@@ -71,25 +71,25 @@ The following tables describes the set of supported authentication mechanisms fo
 
 ## Dynamics 365 POS employee authentication flows
 
-The following diagram shows 
+The following diagram shows POS employee authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-1.jpg)
 
 ## Dynamics 365 e-Commerce customer authentication flows
 
-The following diagram shows 
+The following diagram shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-2.jpg)
 
-## Third part e-Commerce customer authentication flows
+## Third party e-Commerce customer authentication flows
 
-The following diagram shows 
+The following diagram shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-3.jpg)
 
 ## Third party application authentication flows
 
-The following diagram shows 
+The following diagram shows third-party application flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-4.jpg)
   
@@ -99,7 +99,7 @@ The following diagram shows
 
 [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md)
 
-[POS worker logon](retail-modern-pos-device-activation.md#create-a-worker
+[POS worker logon](retail-modern-pos-device-activation.md#create-a-worker)
 
 [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md)
 
