@@ -64,7 +64,7 @@ Before you begin, make sure that you've already completed the [required setup](#
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/).
 2. Make sure that you're using the environment where you enabled dual-write.
-3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Supply Chain Management Customer**.
+3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Customer Portal**.
 4. Follow the on-screen instructions.
 
 After provisioning is completed, you can access the Customer portal in the **Your apps** section of the **Home** page.
