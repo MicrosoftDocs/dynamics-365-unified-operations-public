@@ -46,15 +46,17 @@ In Commerce versions 10.0.11 and later, store managers can review, make adjustme
 > [!NOTE]
 > For the functionality relating to financial reconciliation in retail stores to work, trickle feed-based order creation must be enabled. For more information, read [Trickle feed-based order creation for retail store transactions](trickle-feed.md). 
   
-## Set up 
-The following set-up is required to be able to use this feature:
-1)	Enable feature “Retail statements - Trickle feed” through the Feature management workspace
-2)	Set the parameter “Enable financial reconciliation in store” to Yes in the POS functionality profile for the concerned store
+## Set up financial reconciliation
 
-## Details
-1)	Applicable parameters as defined on the Statement/closing fast tab of the Retail stores form in HQ are now synchronized to the Channel database to be able to perform financial reconciliation of shifts in the POS client by enforcing the same set of calculation criteria and amount thresholds as in the Retail statements.
+Follow the steps below to use the financial reconciliation functionality.
 
-2)	When the “Close shift” operation is invoked, the system will validate if there is a difference between the system computed amounts and the declared amounts and if the difference is beyond the defined thresholds, it will prompt the user of the same and allow them to make adjustments as needed. 
+1. In the **Feature management** workspace, enable “Retail statements - Trickle feed”.
+1. In the POS functionality profile for the appropriate store, set the parameter **Enable financial reconciliation in store** to **Yes**.
+
+## More information about financial reconciliation
+When you enable financial reconciliation functionality, parameters as defined in the **Statement/closing** FastTab on the **Retail stores** page in Commerce Headquarters will be synchronized to the channel database. Commerce will enforce the same set of calculation criteria and amount thresholds as in the retail statements.
+
+When the **Close shift** operation is invoked, the system will validate if there is a difference between the system-computed amounts and the declared amounts. If the difference is beyond the defined thresholds, the user will be prompted and can make adjustments as needed. 
 
 3)	The adjustments can be made for each Tender and for the selected Tender for adjustment, the user can see the totals for different transaction types and then choose to edit the totals for a specific transaction type. On editing, the system will show the original computed amount and the over-ridden amount for that transaction type. The user can also capture Notes as a part of this editing process to be able to refer to them for audit purposes.  
 
