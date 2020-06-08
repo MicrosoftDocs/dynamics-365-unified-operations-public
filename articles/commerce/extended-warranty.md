@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 
 # Create and configure extended warranties
 
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
 This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 
 ## Overview
