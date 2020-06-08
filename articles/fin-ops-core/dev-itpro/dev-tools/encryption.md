@@ -67,6 +67,6 @@ Dynamics 365 for Finance and Operations supports the following cipher suites onl
 ## Additional resources
 
 * [Azure Data Encryption-at-Rest](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest)
-* [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?redirectedfrom=MSDN&view=sql-server-ver15)
+* [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
 * [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 * [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
