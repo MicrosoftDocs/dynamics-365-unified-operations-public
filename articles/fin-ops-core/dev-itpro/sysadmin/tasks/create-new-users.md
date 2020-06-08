@@ -5,7 +5,7 @@ title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: maertenm
 manager: AnnBe 
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
