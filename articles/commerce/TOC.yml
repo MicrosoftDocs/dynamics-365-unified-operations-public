@@ -572,10 +572,14 @@
             href: set-up-bar-codes.md
           - name: Set up bar code masks 
             href: set-up-bar-code-masks.md
+        - name: Warranties
+          items:
+          - name: Create and configure extended warranties
+            href: extended-warranty.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
-          href: retail-discounts-overview.md
+          href: retail-discounts-overview.md 
         - name: Sales price management 
           href: price-management.md
         - name: Price adjustments and discounts 
