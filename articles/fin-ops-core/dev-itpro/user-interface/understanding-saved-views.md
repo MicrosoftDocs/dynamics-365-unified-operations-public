@@ -84,4 +84,28 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
+This section maintains a list of known issues for the new grid control while the feature is in a preview state.
+
+### Open issues
 - Filtering done via custom filters, advanced filters, or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  
+
+### Fixed as part of 10.0.13
+
+### Fixed as part of 10.0.12
+
+### Fixed as part of 10.0.11
+- [Bug 419245] Personalization form missing from security role
+- [Bug 420619] You can pin a tile with a query that doesn't correspond to the current view's saved query
+- []
+
+### Quality update for 10.0.10 / Platform update 34
+- [Bug 452624] Personalization form doesn't load / Loading a published view for the first time takes a long time
+
+### Fixed as part of 10.0.10 / Platform update 34
+-  [Bug 412479] Views can be published with no name
+-  [Bug 419005] View queries fail to apply due to conflicting "open" ranges on the query
+
+
+
+
+
