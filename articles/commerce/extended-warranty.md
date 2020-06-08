@@ -97,6 +97,8 @@ To create a warranty item in Commerce, follow these steps.
     | Price range base | **None**, **Base price**, or **Selling price** | <ul><li>**None** – The **Lower limit** and **Upper limit** values of price ranges aren't applicable.</li><li>**Base price** – A given warranty will be applicable if the base price (that is, the price without discounts) of the warrantable item is between the **Lower limit** and **Upper limit** values that are specified here, based on the price of the warrantable item.</li><li>**Selling price** – This value is reserved for future use.</li></ul> |
     | Lower limit, Upper limit | A positive integer value | These fields define the upper and lower price limits of the warrantable item, and how the current warranty item is applicable to the warrantable item. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price \[MSRP\]). If the **Price range base** field is set to **Base price**, only a warrantable item (product) that has a base price between the **Lower limit** and **Upper limit** values will trigger a prompt to add the warranty item at the POS. |
 
+    For example, the following illustration shows the **Price range base** field set to **Base price**, the **Lower limit** field set to $500, and the **Upper limit** field set to $1000.
+    
     ![Released product details page for a warranty item](./media/ew-release-product-details.png)
 
 1. Assort the warranty item to the channel where it will be sold. For more information, see [Set up assortments](set-up-assortments.md).
@@ -125,8 +127,6 @@ To configure channel-specific setting in Commerce, follow these steps.
     - Select the check box if a prompt for the warranty item should be shown at the POS when the warrantable item is added to the cart.
     - Clear the check box if no prompt for the warranty item should be shown at the POS when the warrantable item is added to the cart.
 
-    ![Prompt for warranty check box on the Channel specific tab](./media/ew-channel-specific.png)
-
 1. Run the **1070** job to sync the data to the channel.
 
 ## Configure a number sequence for warranty policies
@@ -137,8 +137,6 @@ To configure a number sequence for warranty policies in Commerce, follow these s
 
 1. Go to **Retail and Commerce \> Products and categories \> Warranty \> Warranty settings**.
 1. On the **Number sequences** tab, in the row for the **Warranty policy** reference, enter or select a value in the **Number sequence code** field.
-
-    ![Number sequence code field on the Number sequences tab](./media/ew-number-sequences.png)
 
 ## Set up a warranty group
 
@@ -155,9 +153,6 @@ To set up a warranty group in Commerce, follow these steps.
 1. On the **Warrantable products** FastTab, select **Add line** to add warrantable products.
 1. If the warranty item is applicable to a whole category of warrantable items (products), select the category in the **Category** field. If the warranty item is applicable to a specific warrantable item (product), select the product in the **Product** field.
 1. On the **Applicable channels** FastTab, select **Add line** to add the channel where you want to sell the warranty item.
-
-    ![New warranty group on the Warranty groups page](./media/ew-warranty-group.png)
-
 1. Select **Save** to save the configuration.
 1. Select **Publish** to publish the warranty group.
 1. Run the **1040** job to sync the data to channel.
@@ -169,11 +164,7 @@ Two POS operations let sales associates sell warranty items during the workflow 
 - **Add warranty** – This operation triggers a prompt that shows applicable warranties for a warrantable item that is selected in the cart.
 - **Add warranty to existing transaction** – This operation lets sales associates sell warranties for warrantable items that were previously sold. Sales associates can find the original transaction for a warrantable item by entering the receipt number of the transaction.
 
-The following illustration shows an example of a POS terminal page for a purchase.
-
-![Example of a POS terminal page for a purchase](./media/ew-add-warranty.png)
-
-The following illustration shows an example of a prompt to add a warranty item for the current purchase of a warrantable item.
+The following illustration shows an example of a a POS terminal page with a prompt to add a warranty item for the current purchase of a warrantable item.
 
 ![Example of a prompt to add a warranty item for the current purchase](./media/ew-sell-warranty.png)
 
@@ -192,13 +183,7 @@ To process warranty transactions in Commerce headquarters, follow these steps.
 1. In the **Available organization nodes** list, select either an individual store or, if you want to create the batch job for a group of stores, a node.
 1. Select the right arrow button to add your selection to the **Selected organization nodes** list.
 1. Select the **Run in the background** tab.
-
-    ![Run in the background tab in the Choose organization nodes dialog box](./media/ew-process-warranty.png)
-
 1. Set the **Batch processing** option to **Yes**, and then select **Recurrence**.
-
-    ![Batch processing option and Run in the background tab in the Choose organization nodes dialog box](./media/ew-process-warranty-2.png)
-
 1. In the **Define recurrence** dialog box, in the **Start date** field, select or enter a start date for the recurrence.
 1. In the **Start time** field, select or enter a start time for the recurrence.
 1. Follow one of these steps:
