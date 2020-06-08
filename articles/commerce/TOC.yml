@@ -2,7 +2,7 @@
   items:
   - name: Dynamics 365 Commerce
     items:
-    - name: Dynamics 365 Commerce home page
+    -  name: Dynamics 365 Commerce home page
       href: index.md
     - name: Get started
       items:
@@ -748,12 +748,12 @@
         href: edit-audit-retail-transactions.md
       - name: Create, calculate and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
-      - name: Improvements to statement posting functionality
-        href: statement-posting-eod.md
       - name: Trickle feed-based order creation for retail store transactions 
         href: trickle-feed.md
       - name: Create, calculate and post statements for a retail store 
         href: tasks/create-calculate-post-statement-retail-store.md
+      - name: Financial reconciliation in retail stores
+        href: fin-recon.md
       - name: Improvements to statement posting functionality 
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
