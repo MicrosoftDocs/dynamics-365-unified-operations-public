@@ -443,7 +443,7 @@ class Person
 }
 ```
 
-This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method  The commented out code tries to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
+This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to override only the **\_i3** default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
 
 ```xpp
 class Additions
