@@ -85,7 +85,7 @@ Before you can start installation of channel components, you must first complete
     - StoreSystemSetup.exe
 
      > [!NOTE]
-     > Cloud environments may now synchronize self-service installers through Headquarters from what is available in LCS ([Synchronize self-service installers in Dynamics 365 Commerce](../../../commerce/dev-itpro/synchronize-installers.md)).  On-premises environments cannot utilize this functionality, however, these environment can still download from LCS.  In the deployable package zip file, the SDK is available.  The self-service installers are available from the LCS **Asset library**.  It is fine to utilize the upload and download mechanism from within LCS, but the Headquarters synchronization functionality will not work.
+     > Cloud environments can synchronize self-service installers through Headquarters from what is available in LCS ([Synchronize self-service installers in Dynamics 365 Commerce](../../../commerce/dev-itpro/synchronize-installers.md)). On-premises environments cannot utilize this functionality, however, these environments can still download from LCS. The SDK is available in the deployable package zip file. The self-service installers are available from the LCS **Asset library**. You can utilize the upload and download mechanism from within LCS, but the Headquarters synchronization functionality will not work.
 
 
 7.  Navigate to the AD FS machine, then go to the InfrastructureScripts folder. This is the same file directory where the previously run PowerShell script was located (**RetailUpdateDatabase.ps1**). Find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
