@@ -51,6 +51,15 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Setup
 
+### Regenerate Load Posting Methods
+
+Planned cross docking is implemented as a **Load posting method**. After enabling the feature you need to regenerate the methods.
+
+1. Go to **Warehouse management > Setup > Load posting methods**.
+1. Select **Regenerate methods** from the Toolbar.
+1. When regeneration is completed you will see a **Method name** of **planCrossDocking**.
+1. Close the form.
+
 ### Cross Dock Template
 
 1. Go to **Warehouse management > Setup > Work > Cross docking templates**.
