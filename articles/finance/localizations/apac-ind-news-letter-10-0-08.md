@@ -41,13 +41,13 @@ You can enable the feature in the **Feature management** workspace. The name of 
  
 With the feature enabled, you can update the tax rate type in the tax information for a purchase invoice, so you can apply a different tax rate if needed.
 
-![](media/GST-tax-rate-type-tax-infomration-2-10-0-08.PNG)
+![Tax rate type information](media/GST-tax-rate-type-tax-infomration-2-10-0-08.PNG)
 
 ### Data consistency check
 
 You can verify and fix a data inconsistency issue regarding GTE. To do this, go to **System administration** > **Periodic tasks** > **Database** > **Consistency check**. We recommend that you run this consistency check in your environment.
 
-![](media/GST-tax-rate-type-tax-infomration-3-10-0-08.PNG)
+![Consistency check dialog page](media/GST-tax-rate-type-tax-infomration-3-10-0-08.PNG)
 
 ### GST number sequence issue
 A posting failure can occur due to missing or incorrect setup of the GST number sequence. To resolve the issue and set up the GST number sequence correctly, complete the procedures in the [Define GSTINs and reference number sequences](apac-ind-gst-define-gstin-numbers-number-sequences.md) and [Set up GST reference number groups](apac-ind-gst-reference-groups.md) topics.
