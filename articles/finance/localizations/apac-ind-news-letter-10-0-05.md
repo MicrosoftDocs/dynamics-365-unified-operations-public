@@ -106,9 +106,8 @@ To set up this feature, complete the following steps:
 
 ### Address reverse charge transactions per the government clarification
 
- With few changes in the released standard configuration, the Reverse charge feature can be made simple as it relates to accounting. 
- 
- Regarding, "As govt clarified that RCM on reverse charge transaction can be claimed in the same  month in which it is paid " see the following [link](https://twitter.com/askGST_GoI/status/897360102964944896) for more information.
+With few changes in the released standard configuration, the Reverse charge feature can be made simple as it relates to accounting. 
+
  
 Based on the clarification, in the configuration, you can post GST tax in interim recoverable at the same time that you post a purchase invoice. GST input tax is posted directly into a tax recoverable account. 
 
@@ -139,7 +138,7 @@ Settle the reverse charge liability from the cash account on the last day of the
 
 - TDS is not deducted correctly when an invoice is settled with prepayment.
 -	Save the tax document on the **Purchase order confirmation** page so the **Tax document** page can be opened after posting.
--	The same exchange rate is not picked in the tax document on the **BOE** page and **Import invoice/product receipt** if the 
+-	The same exchange rate is not picked in the tax document on the **BOE** page and the **Import invoice/product receipt** if the 
   date is not the same for both documents. 
 -	Tax information is carried over to the customer history. 
 -	The financial dimension is defined for the ledger account, which is used as the offset account for a vendor transaction. An error could display during withholding tax settlement with TDS authority.
