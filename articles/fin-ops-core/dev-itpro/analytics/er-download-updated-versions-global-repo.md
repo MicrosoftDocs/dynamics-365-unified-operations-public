@@ -73,6 +73,8 @@ ER [repositories](general-electronic-reporting.md#Repository) are used to share 
     3.  Open job history.
     4.  Open job log.
     <br>![Electronic reporting workspace](./media/er-download-updated-versions-global-repo7.png)
+    > [!Note]
+    > It is not recommended to schedule a recurrent batch job for importing updated versions of ER configuration from the Global repository right to the production environment as the imported versions will be immediately available for usage. Better to use this approach for deploying  versions of ER configuration to a sandbox environment where they can be evaluated before their deployment to a production environment.
 
 ## Additional resources
 
