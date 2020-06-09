@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new and changed for APAC India GST Localization in 10.0.0 (April 2019)
-description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.0.
+title: What's new or changed for APAC India GST Localization in 10.0.0 (April 2019)
+description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.0.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/08/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.0
 ---
 [!include [banner](../includes/banner.md)]
 
-# What's new and changed for APAC India GST Localization in 10.0.0 (April 2019)
+# What's new or changed for APAC India GST Localization in 10.0.0 (April 2019)
 
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.0 for APAC India GST localization.
 
@@ -48,7 +48,7 @@ You can determine the tax rate based on invoice date for the purchase transactio
 
 ![](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
 
-You can create a non-GST transaction, which will be reflected in GSTR.
+You can create a non-GST transaction, which will be reflected in the Goods and Services Tax return (GSTR).
 
 ![](media/GST-non-gst-transaction-3-10-0-00.PNG)
 
@@ -73,11 +73,11 @@ You can multi-select lookup columns and search available columns.
 - Exclude the transactions without GST from GSTR. If there is no GST applicable for the transaction, it will not be in the GSTR, unless it's exempt or non-GST.
 - Block the posting with GST if there isn't a GST transaction ID. 
 
-## Upcoming critical fixes in 10.0.1
+## Upcoming fixes in 10.0.1
 
-- Total item discount amount is not coming in GSTR.
+- Total item discount amount is not showing in GSTR.
 - Item unit of measurement should show the unit and a description.
 - Total transaction value in GSTR is not equal to the invoice amount for a transaction with the price including tax.
 - No customer billing name for stock transfer in GSTR.
--	No defaulting logic for original GST transaction ID for credit note.
+-	No default logic for original GST transaction ID for a credit note.
  
