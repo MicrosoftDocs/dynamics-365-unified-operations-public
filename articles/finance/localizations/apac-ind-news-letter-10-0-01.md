@@ -49,9 +49,6 @@ The following GSTR issues are also resolved:
 ## Non-GST item
 You can create a non-GST item that is the default for **Tax information** in taxable transactions.
 
-
-![](media/GST-non-gst-item-1-10-0-01.PNG)
-
 ## Critical fixes 
 
 - Can't post a purchase invoice for a service item with load in inventory.
