@@ -63,7 +63,7 @@ ER [repositories](general-electronic-reporting.md#Repository) are used to share 
 2. Go to **Organization administration > Workspaces > Electronic reporting**.
 3. In the **Related links** section, select **Import configurations versions updates**.
 4. On the **Import ER configurations versions updates** dialog page, in the **Run mode** field, select **Import latest updates** to import the latest versions of ER configurations from the Global repository to the current Finance instance.
-5. In the **Run in background** section, set **Batch processing** to **Yes** if you want to schedule a job for doing such import. Configure the required recurrence if you want to repeat such import periodically.
+5. In the **Run in background** section, set **Batch processing** to **Yes** if you want to schedule a batch job for doing such import. Configure the required recurrence if you want to repeat such import periodically.
     <br>![Electronic reporting workspace](./media/er-download-updated-versions-global-repo5.png)
 6. When you run this import interactively, review user Infolog to learn what configuration versions have been imported. 
     <br>![Electronic reporting workspace](./media/er-download-updated-versions-global-repo6.png)
