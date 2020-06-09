@@ -394,7 +394,7 @@ This scenario will simulate a situation where the packed containers should be au
 
 Complete the created work using the mobile device to the pack station.
 
-1. Log in to **Warehouse** *62* on the Mobile app with the **User ID** created in the **Worker** setup, or use an existing demo data user.
+1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
 1. Select **Outbound** from the **Main Menu**.
 1. Select **Sales Picking** from the **Outbound** menu.
 1. In the **ID** field, enter the work ID created for sales order 1.
@@ -486,113 +486,92 @@ Complete the created work using the mobile device to the pack station.
 1. Select **OK**. The container will be moved to the **SORT** location and is ready for sorting.
 
 To view the container details, go to **Warehouse management > Packing and containerization > Containers** and search for the container IDs created during packing.
-<!-- KFM: continue here -->
+
 ### Sort the containers
 
 #### Sort the first container
 
-1. Log in to **Warehouse** *62* on the Mobile app with the **User ID** created in the *Worker* setup, or an existing demo data user
-1. Select **Outbound** from the *Main Menu*
-1. Select **Pallet build** from the *Outbound* menu
-    - Enter the first *Container ID* from the  Sales order 1 in the **LP/Con** field
+1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
+1. Select **Outbound** from the **Main Menu**.
+1. Select **Pallet build** from the **Outbound** menu.
+1. In the **LP/Con** field, enter the first container ID associated with the sales order 1 .
+1. Select **OK**.
+1. Because no sort positions currently exist, you must specify one. In the **Sort position ID** field, enter *SP01*.
+1. Because there is no license plate currently associated with **Sort position** *SP01*, you must specify one. In the **LP** field, enter *PLP01*.
 1. Select **OK**
-1. Since no sort positions currently exist, the user must specify one.
-    - In the **Sort position ID** field, enter *SP01*.
-1. Because there is no license plate currently associated with **Sort position** *SP01*, the user must specify one.
-    - In the **LP** field, enter *PLP01*
-1. Select **OK**
-1. Sort position validation is enabled, so the user is required to enter the **Sort position ID** again
-    - Enter *SP01* in the **Sort Position ID** field
-1. Select **OK**
-1. A message is displayed that *Work completed*
+1. Sort position validation is enabled, so you must enter the **Sort position ID** again. Enter *SP01* in the **Sort Position ID** field
+1. Select **OK**.
+1. A *Work completed* message is displayed.
 
->[!TIP]
->Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments** to view the sorting position and license plate in the position.
->
->This form will show all of the sort positions that are currently active. **Sort position transactions** show the license plate associated with each, and what containers are in the sort position. Note that one sort position currently exists and in the **Sort position criteria** FastTab , it shows using a criteria of **Shipment – Carrier service - Air**
+> [!TIP]
+> Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments** to view the sorting position and license plate in the position.
+> 
+> This page shows all of the sort positions that are currently active. The **Sort position transactions** field shows the license plate associated with each, and which containers are in the sort position. Note that one sort position currently exists, and on the **Sort position criteria** FastTab, it shows a criteria of **Shipment – Carrier service - Air**.
 
 #### Sort the remaining containers
 
-1. Go to the mobile app
-1. Log in to **Warehouse** *62* on the Mobile app with the **User ID** created in the *Worker* setup, or an existing demo data user
-1. Select **Outbound** from the *Main Menu*
-1. Select **Pallet build** from the *Outbound* menu
-    - Enter the second container ID associated with the Sales order 1 in the **LP/Con** field
-1. Select **OK**
-    - Because the sorting template is setup to sort automatically, and there is already a sort position that exists with matching criteria, the user is automatically directed to the correct sort position.
-1. Select **OK**
-    - Confirm the **Sort Position ID** by entering the sort position *SP01* to show that the inventory is in right place.
-1. Select **OK**
-1. Work is completed on the second container from *Sales order 1*
-1. Sort the remaining containers from *Sales order 2*
-1. In the **LP/Con** field enter the **Container ID** containing *Item A0001* from the second order.
-    - Because the carrier service is different, the user is prompted to enter and new sort position (use *SP02*) and assign a license plate to that position (*PLP02*).
-1. Select **OK**
-    - Confirm the sort position, in the **Sort Position ID** field enter *SP02*
-1. Select **OK**
-1. Work is completed on the container
-1. Enter the *Container ID* for the remaining container from Sales Order 2 that has *Item A0002* into the **LP/Con** Field
-    - Because the carrier service is the same as Sales Order 1, the system displays the sort position that exists with matching criteria.
-1. Select **OK**
-    - Confirm the sort position, in the **Sort Position ID** field enter *SP01*
-1. Select **OK**
-1. Work is completed on the container
+1. Go to the mobile app.
+1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
+1. Select **Outbound** from the **Main Menu**.
+1. Select **Pallet build** from the **Outbound** menu.
+1. In the **LP/Con** field, enter the second container ID associated with the sales order 1.
+1. Select **OK**. Because the sorting template is setup to sort automatically, and there is already a sort position that exists with matching criteria, you are automatically directed to the correct sort position.
+1. Select **OK**.
+1. Confirm the **Sort Position ID** by entering the sort position *SP01* to show that the inventory is in right place.
+1. Select **OK**.
+1. Work is completed on the second container from sales order 1.
+1. Sort the remaining containers from sales order 2.
+1. In the **LP/Con** field, enter the **Container ID** containing *Item A0001* from the second order. Because the carrier service is different, you are prompted to enter and new sort position (use *SP02*) and assign a license plate to that position (*PLP02*).
+1. Select **OK**.
+1. Confirm the sort position by entering *SP02* in the **Sort Position ID** field.
+1. Select **OK**.
+1. Work is completed on the container.
+1. Enter the container ID for the remaining container from sales 2, which has *Item A0002* in the **LP/Con** field. Because the carrier service is the same as Sales Order 1, the system displays the sort position that exists with matching criteria.
+1. Select **OK**.
+1. Confirm the sort position by entering *SP01* in the **Sort Position ID** field.
+1. Select **OK**.
+1. Work is completed on the container.
 
 ### Close the Outbound Sorting positions
 
-Once all inventory has been sorted, the position needs to be closed for work to be created. Sorted inventory picking work will be created to take the inventory to the Baydoor.
+Once all inventory has been sorted, the position needs to be closed for work to be created. Sorted inventory picking work will be created to take the inventory to the baydoor.
 
 #### Close position from the mobile device
 
-1. Log in to **Warehouse** *62* on the Mobile app with the **User ID** created in the *Worker* setup, or an existing demo data user
-1. Select **Outbound** from the *Main Menu*
-1. Select **Pallet build** from the *Outbound* menu
-    - Enter a *Container ID* (that was sorted onto the *SP01* position) in the **LP/Con** field
-1. Select **OK**
-1. A message displays "The container is already sorted to position SP01. Close the position?"
-    - Select **Close**
-1. Work is completed
+1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
+1. Select **Outbound** from the **Main Menu**.
+1. Select **Pallet build** from the **Outbound** menu.
+1. Enter a container ID (that was sorted onto the *SP01* position) in the **LP/Con** field.
+1. Select **OK**.
+1. The following message displays: "The container is already sorted to position SP01. Close the position?" Select **Close**.
+1. Work is completed.
 
-#### Close position from Outbound sorting position assignments
+#### Close position from outbound sorting position assignments
 
-1. Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments**
-1. In the left side column, select the row of the *Outbound sorting position* to close
-    - Select **Outbound sorting position** - *SP02*
-1. On the Action Pane, select **Close position**
-    - The sorting record is closed and is no longer displayed
-    - Select the **Show closed** box to show all closed position records
+1. Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments**.
+1. In the left side column, select **SP02**. This is the outbound sorting position row that you will close.
+1. On the Action Pane, select **Close position**. The sorting record is closed and is no longer displayed.
+1. Select the **Show closed** box to show all closed position records.
 
 ### Sorted inventory picking
 
-Complete the sorted inventory picking work. Once completed the inventory will be picked to the sales order. All other warehouse processes apply at this point.
+Complete the sorted inventory picking work. Once completed, the inventory will be picked to the sales order. All other warehouse processes apply at this point.
 
-1. Log in to **Warehouse** *62* on the Mobile app with the **User ID** created in the *Worker* setup, or an existing demo data user
-1. Select **Outbound** from the *Main Menu*
-1. Select **Load from Sorting** from the *Outbound* menu
-1. Enter the **Target licence plate ID** from the first sort position *SP01*
-    - **ID** - *PLP01*
-
+1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
+1. Select **Outbound** from the **Main Menu**
+1. Select **Load from Sorting** from the **Outbound** menu
+1. Enter the **Target licence plate ID** from the first sort position *SP01*. Set **ID** to *PLP01*.
+1. Select **OK**.
+1. The **Sorted inventory picking: Pick** screen displays the pick work to be performed. Pick from the *SORT* location, target license plate *PLP01* with *Multiple* items and a quantity of *3*.
+1. Select **OK**.
+1. The **Sorted inventory picking: Put** screen displays the put work to be performed. Put to the *Baydoor* location, target license plate *PLP01* with *Multiple* items and a quantity of *3*
+1. Select **OK**.
+1. Work is completed.
+1. Enter the **Target licence plate ID** from the second sort position *SP02*. Set **ID** to *PLP02*.
 1. Select **OK**
-1. The *Sorted inventory picking: Pick* screen displays the pick work to be performed
-    -Picking from the *SORT* location, Target LP *PLP01* with *Multiple* items and a quantity of *3*
-
-1. Select **OK**
-1. The *Sorted inventory picking: Put* screen displays the put work to be performed
-    - Put to the *Baydoor* location, Target LP *PLP01* with *Multiple* items and a quantity of *3*
-
-1. Select **OK**
-1. Work is completed
-1. Enter the **Target licence plate ID** from the second sort position *SP02*
-    - **ID** - *PLP02*
-
-1. Select **OK**
-1. The *Sorted inventory picking: Pick* screen displays the pick work to be performed
-    -Picking from the *SORT* location, Target LP *PLP02* with *Multiple* items and a quantity of *1*
-
-1. Select **OK**
-1. The *Sorted inventory picking: Put* screen displays the put work to be performed
-    - Put to the *Baydoor* location, Target LP *PLP02* with *Multiple* items and a quantity of *1*
-
+1. The **Sorted inventory picking: Pick** screen displays the pick work to be performed. Pick from the *SORT* location, target license plate *PLP02* with *Multiple* items and a quantity of *1*.
+1. Select **OK**.
+1. The **Sorted inventory picking: Put** screen displays the put work to be performed. Put to the *Baydoor* location, target license plate *PLP02* with *Multiple* items and a quantity of *1*.
 1. Select **OK**
 1. Work is completed
 
