@@ -489,6 +489,11 @@ To view the container details, go to **Warehouse management > Packing and contai
 
 ### Sort the containers
 
+> [!CAUTION]
+> When you access the Pallet build menu item on the mobile app to perform **Outbound sorting**, you will see a button option labeled **Full**. *Do not use the Full button to sort or close the position*.
+>
+> The Full button is out of the box and cannot be disabled or removed from the form. It is not used for the Outbound sorting feature.
+
 #### Sort the first container
 
 1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
@@ -505,7 +510,7 @@ To view the container details, go to **Warehouse management > Packing and contai
 
 > [!TIP]
 > Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments** to view the sorting position and license plate in the position.
-> 
+>
 > This page shows all of the sort positions that are currently active. The **Sort position transactions** field shows the license plate associated with each, and which containers are in the sort position. Note that one sort position currently exists, and on the **Sort position criteria** FastTab, it shows a criteria of **Shipment – Carrier service - Air**.
 
 #### Sort the remaining containers
