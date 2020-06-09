@@ -96,28 +96,28 @@ The example scenario requires that you prepare two location profiles.
 
 1. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm** to confirm the purchase order.
 1. On the mobile device, go to **Inbound \> Purchase Receive**.
-1. Select the **PONUM** field, enter the PO number, and then select **Enter** (or select the check mark button at the bottom of the page).
-1. Select the **ITEM** field, enter *A0002* as the item number, and then select **Enter**.
-1. On the **QTY** page, enter *5* as the quantity, and then select the check mark button to confirm your entry.
+1. Select the **PONUM** field, enter the PO number, and confirm.
+1. Select the **ITEM** field, enter *A0002* as the item number, and confirm.
+1. On the **QTY** page, enter *5* as the quantity, and confirm.
 
     You can enter the quantity in either of the following ways:
 
     - Select the plus sign (**+**) or minus sign (**–**) button to add or subtract a numerical value.
     - Select the blank field between the plus sign (**+**) and minus sign (**–**) buttons to open the number pad.
 
-1. Select **Enter** to confirm your selection of item number *A0002* and a quantity of *5*. A "Work Completed" message appears at the bottom of the page.
+1. Confirm your selection of item number *A0002* and a quantity of *5*. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button (sometimes referred to as the hamburger or the hamburger button) in the upper-right corner, and then select **Cancel** to exit **Purchase Receive** and return to the **Inbound** menu.
 1. On the purchase order page, select **Work details** above the **Purchase order lines** grid.
 1. On the **General** tab, notice the **Work ID** and **Target license plate ID** values that were created.
 1. In the **Lines** section, notice the **Location** values for the *Pick* and *Put* work types.
 1. On the mobile device, go to **Inbound \> Purchase Put-away**.
-1. Select the **ID** field, enter the work ID, and then select **Enter**.
-1. Select **Enter** to confirm the *Pick* entry.
+1. Select the **ID** field, enter the work ID, and confirm.
+1. Confirm once more to complete the *Pick* entry.
 1. Select the Menu button in the upper-right corner, and then select **Done** to complete the *Pick* work.
-1. Make a note of the Put **Loc** (Putaway), and then select **Enter** to confirm the *Put* entry. A "Work Completed" message appears at the bottom of the page.
+1. Make a note of the Putaway location, and confirm. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Purchase Put-away** and return to the **Inbound** menu.
 1. Select **Back** to return to the main menu.
-1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Filter on **Location**, and enter the putaway location from the purchase order work. You should see the following results:
 
     - The **Location status** column shows a value of *Storage*, because the last transaction against this location was a put.
@@ -125,13 +125,13 @@ The example scenario requires that you prepare two location profiles.
     - The **Last activity date and time** column shows the timestamp for the date and time when the work was completed at the location.
 
 1. On the mobile device, go to **Quality \> Movement**.
-1. Select the **LOC/LP** field, and enter the location from the putaway location in the previous steps.
-1. Select **Enter** to confirm the information that is shown. Make a note of the license plate number.
-1. Select the *To Information* **LOC/LP** field, and enter *06A07R2S1B* as the location to move the item to.
-1. Select **Enter** to confirm the *To Information* **LP** (target license plate ID) that is automatically generated. A "Work Completed" message appears at the bottom of the page.
+1. Select the **LOC/LP** field, and enter the location you made note of in the previous steps.
+1. Confirm the information that is shown. Make a note of the license plate number that is generated.
+1. Select the **To Information** **LOC/LP** field, and enter *06A07R2S1B* as the location to move the item to.
+1. Confirm the **To Information** **LP** (target license plate ID) that is automatically generated. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Movement** and return to the **Quality Management** menu.
 1. Select **Back** to return to the main menu.
-1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Refresh the **Locations** page, and view the original putaway location again. Notice that the **Location status** field is now set to *Empty*, and the **Item number** column is blank.
 1. View the record for location *06A07R2S1B*, and notice that the **Status** value has changed to *Storage*, and the **Item number** and **Last activity date and time** fields have been updated.
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
@@ -150,22 +150,22 @@ The example scenario requires that you prepare two location profiles.
 1. In the **Sales order lines** section, on the **Warehouse** menu, select **Work details**.
 1. Copy the **Work ID** value that was created.
 1. On the mobile device, go to **Outbound \> Sales picking**.
-1. Select the **ID** field, enter the work ID that you copied earlier, and then select **Enter**.
-1. The *Sales orders: Pick* **LOC** field suggests the picking location as the putaway location that was created earlier. Make a note of the location.
-1. Select the **LOC** field, enter the location, and then select **Enter**.
-1. Select the **LP** field, enter the license plate number that you made a note of during the Movement activity, and then select **Enter**.
-1. Select the **Item** field, enter the *A0002* as the item number, and then select **Enter**.
-1. On the **QTY** page, enter *1* as the quantity, and then select the check mark button to confirm your entry.
+1. Select the **ID** field, enter the work ID that you copied earlier, and confirm.
+1. On the **Sales orders: Pick** page, the **LOC** field suggests the picking location as the putaway location that was created earlier. Make a note of the location.
+1. Select the **LOC** field, enter the location, and confirm.
+1. Select the **LP** field, enter the license plate number that you made a note of during the Movement activity, and confirm.
+1. Select the **Item** field, enter the *A0002* as the item number, and confirm.
+1. On the **QTY** page, enter *1* as the quantity, and confirm.
 
     You can enter the quantity in either of the following ways:
 
     - Select the plus sign (**+**) or minus sign (**–**) button to add or subtract a numerical value.
     - Select the blank field between the plus sign (**+**) and minus sign (**–**) buttons to open the number pad.
 
-1. Select the **TARGET LP** field, enter a user-defined target license plate ID, and then select **Enter**.
-1. Select **Enter** to confirm the picking work. A "Work Completed" message appears at the bottom of the page.
+1. Select the **TARGET LP** field, enter a user-defined target license plate ID, and confirm.
+1. Confirm once more to complete the picking work. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to complete the picking activity and return to the **Outbound** menu.
-1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Filter on **Location**, and enter the pick location from the sales order work.
 1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field has been updated.
 
