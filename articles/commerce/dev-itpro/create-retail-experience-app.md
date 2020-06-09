@@ -5,7 +5,7 @@ title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,7 +57,7 @@ After you've installed Xamarin, you must update it to the latest stable version.
 If you're developing on Windows and using the Mac just for building the iOS app then you must connect the computer that runs Windows and the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
 ## Connect to an online channel
-Open the Retail Experience app solution in Visual Studio for the next steps.The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
+Open the Retail Experience app solution in Visual Studio for the next steps. The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each app, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
 
 > [!NOTE]
 > The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Commerce Scale Unit endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
