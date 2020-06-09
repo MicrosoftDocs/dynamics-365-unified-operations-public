@@ -105,9 +105,9 @@ The Fraud Protection certificate that is stored in Key Vault can be referenced o
 
 Next, select the Key Vault URL that is used to store the Fraud Protection secret, and select **Add**. Then specify the name, description, and path of the Key Vault secret that is used to authenticate Commerce when it sends orders for purchase protection assessment.
 
-##### Retail parameters setup
+##### Commerce parameters setup
 
-1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Retail parameters**.
+1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**.
 2. On the **Dynamics Fraud Protection** tab, set the **Enable Dynamics Fraud Protection integration** option to **Yes**.
 3. On the **Configuration** FastTab, add the Azure Active Directory (Azure AD) client ID, and then select the name of the Key Vault secret that you configured earlier.
 
@@ -117,7 +117,7 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 
 4. The **Dynamics Fraud Protection endpoint URL** field must be set. This URL is provided by Fraud Protection and will vary across user acceptance testing (UAT) and production environments.
 
-![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams.png)
+![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
 > The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
