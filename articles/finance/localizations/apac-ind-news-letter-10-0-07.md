@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: APAC India GST Localization Newsletter 10.0.07
-description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.07
+title: What's new and changed for APAC India GST Localization in 10.0.07 (January 2020)
+description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.07.
 author: prabhatb
 manager: Wangcheng
-ms.date: 05/31/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,65 +16,59 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: 
+ms.author: prabhatb
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
 ---
 [!include [banner](../includes/banner.md)]
 
-# Welcome to the newsletter for version 10.0.7! 
+# What's new and changed for APAC India GST Localization in 10.0.07 (January 2020) 
 
-This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.07 for India.
-You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-7)
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.07 for APAC India GST localization. 
 
 ## New Features
-## Create tax component with pre-defined rules 
+### Create tax component with pre-defined rules 
 
-It enables the user to create a new component with pre-defined rules which support GST behaviors including non-deductible, 
-reverse charge for purchase and sales. With this feature, users do not need to create tax component from scratch, 
-like add tax measures, configure tax calculation formula, configure tax posting profile, etc. 
+You can create a new component with pre-defined rules that support GST behaviors including non-deductible, 
+reverse charge for purchase and sales. With this feature, you do not need to create a tax component from scratch, 
+including adding tax measures, configuring the tax calculation formula, and configuring a tax posting profile. 
 
-You can enable the feature in feature management workspace, feature name is "Enable creating tax component with pre-defined rules"
+You can enable the feature in **Feature management** workspace. The feature name is, **Enable creating tax component with pre-defined rules**.
 
  ![](media/GST-Tax-component-Pre-defined-rule-1-10-0-07.PNG)
  
- With the feature enabled, there are several controls enabled in the dialog box, you can use them to control the behavior 
- of the tax component. Refer (https://docs.microsoft.com/dynamics365/finance/localizations/tax-engine-create-tax-component)
- for details.
+ With the feature enabled, there are several controls enabled in the dialog box. You can use them to control the behavior 
+ of the tax component. For more information, see [Create tax components](tax-engine-create-tax-component.md).
  
  ![](media/GST-Tax-component-pre-defined-2-10-0-07.PNG)
  
-## Critical Fixes 
+## Critical fixes 
 
-- Multiple copies using print management not working for Sales Invoice Report 
--	Invoice address is not defaulting in customer tax information in Time-sheet 
--	Data Importing of customer Free text invoice not updating for Indian legal entity. Actually data is not displayed on 
-  the interface for legal entity that below to country/Region IND. 
--	Transaction posted through tax journal not showing in vendor open transaction for settlement 
--	Sales tax settlement may have an update conflict when same "TaxsalesTaxpaymentHistory" detail gets updated multiple times. 
--	Incorrect Withholding tax (TDS/TCS) posting in reporting currency when exchange rate is changed at the time of payment 
-  with settle transaction function for foreign vendor transaction. 
-- Incorrect calculation of GST for Credit Note 
--	Line imported using the "VendorInvoiceLine"  entity are not visible in the pending vendor invoice form in India entity. 
--	The Field business verticals for the GST registration numbers form should be editable at any time and this field should
-  not be greyed out. 
+- Printing multiple copies of the **Sales invoice report** by using print management is not working.
+-	Invoice address is not automatically populating in the customer tax information included in the timesheet.
+-	Importing customer data to a free text invoice is not updating for the Indian legal entity. 
+-	Transactions posted through the **Tax journal** are not showing in open vendor transactions for settlement.
+-	Sales tax settlement may have an update conflict when the **TaxsalesTaxpaymentHistory** detail is updated multiple times. 
+-	Incorrect Withholding tax (TDS/TCS) posting in the reporting currency when the exchange rate is changed at the time of payment 
+  with the transaction is settled for foreign vendor transactions. 
+- Incorrect calculation of GST for credit note. 
+-	Lines that are imported using the **VendorInvoiceLine** entity are not visible on the **Pending vendor invoice** page in the India entity. 
+-	The **Business verticals** field on the **GST registration numbers** page should always be editable. 
 
 
 ## Upcoming critical fixes in 10.0.8 
 
-- Tax amount showing in Purchase order totals and Purchase Invoice total even the transaction is posted
-  with 100%  Reverse charge basis. 
--	TDS transactions are not updated in withholding tax transaction (TDS/TCS)  report when settled Prepayment with Invoice. 
--	Assessable value is not getting updated after removing charge code form the PO Invoice line. 
--	Change of vendor in Purchase Requisition in not refreshing the vendor tax information in the tax information form 
--	Incorrect FOB (Free on Board) and CIF (Cost , insurance and freight)  calculation in export sales order . 
--	Assessable value is not updated correctly in vendor invoice form when Post changes are incorporated in "Excel import file" 
+- Tax amount showing in Purchase order totals and Purchase invoice total is posted with 100% Reverse charges. 
+-	TDS transactions are not updated in the **Withholding tax transaction (TDS/TCS) report** when settled in the **Prepayment with invoice** report. 
+-	Assessable value is updated after the charge code is removed from the Purchase order invoice line. 
+-	When you change the selected vendor on a Purchase requisition, vendor tax information is not updated on the **Tax information** page.
+-	Incorrect Free on board (FOB) and Cost, insurance. and freight (CIF) calculation on Export sales orders. 
+-	Assessable value is not updated correctly on the **Vendor invoice** page when posted changes are incorporated in the **Excel import file**. 
   and published into Dynamics 365
