@@ -41,13 +41,9 @@ reverse charge for purchase and sales. With this feature, you do not need to cre
 including adding tax measures, configuring the tax calculation formula, and configuring a tax posting profile. 
 
 You can enable the feature in **Feature management** workspace. The feature name is, **Enable creating tax component with pre-defined rules**.
-
- ![](media/GST-Tax-component-Pre-defined-rule-1-10-0-07.PNG)
  
  With the feature enabled, there are several controls enabled in the dialog box. You can use them to control the behavior 
  of the tax component. For more information, see [Create tax components](tax-engine-create-tax-component.md).
- 
- ![](media/GST-Tax-component-pre-defined-2-10-0-07.PNG)
  
 ## Critical fixes 
 
