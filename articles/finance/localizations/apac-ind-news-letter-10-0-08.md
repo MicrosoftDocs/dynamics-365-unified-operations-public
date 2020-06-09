@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: APAC India GST Localization Newsletter 10.0.08
-description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.08
+title: What's new and changed for APAC India GST Localization in 10.0.08 (February 2020)
+description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.08.
 author: prabhatb
 manager: Wangcheng
-ms.date: 05/31/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,74 +16,65 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: 
+ms.author: prabhatb
 ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: 10.0.8
 
 ---
 [!include [banner](../includes/banner.md)]
 
-# Welcome to the newsletter for version 10.0.8! 
+# What's new and changed for APAC India GST Localization in 10.0.08 (February 2020) 
 
-This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.08 for India.
-You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-8)
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.08 for APAC India GST localization. .
 
 ## New Features
-## Enable users to change tax rate type in purchase invoice 
-In India, the invoice received from the supplier may have different tax rates from the purchase order. 
-Now it is supported by tax rate type (please refer to the newsletter of 10.0.5).
+### Change the tax rate type on a purchase invoice 
+In India, the invoice received from the supplier may have different tax rates from the purchase order, which is supported by the tax rate type functionality.
  
-You can enable the feature in feature management workspace, feature name is "(India) Enable changing tax rate type in purchase invoice "
+You can enable the feature in the **Feature management** workspace. The name of the feature is, **(India) Enable changing tax rate type in purchase invoice**.
 
 ![](media/GST-Changing-tax-rate-type-1-10-0-08.PNG)
  
-With the feature enabled, you can update the tax rate type in the tax information of purchase invoice, 
-so you can apply different tax rate.
+With the feature enabled, you can update the tax rate type in the tax information of purchase invoice, so you can apply a different tax rate as necessary.
 
 ![](media/GST-tax-rate-type-tax-infomration-2-10-0-08.PNG)
 
-## Data consistency check
+### Data consistency check
 
-Now you can check/fix some data inconsistency issue regards GTE, go System administration->Periodic tasks->Database->Consistency check.
-We highly recommend you to run this in your environment.
+You can verify and fix some data inconsistency issue regarding GTE. To do this, go **System administration** > **Periodic tasks** > **Database** > **Consistency check**. We highly recommend you run this consistency check in your environment.
 
 ![](media/GST-tax-rate-type-tax-infomration-3-10-0-08.PNG)
 
-## GST number sequence issue
+### GST number sequence issue
 
-Recently, we’ve observed several customers encountered posting failure due to missing/incorrect setup of GST number sequence. 
-The error message like “Posting results for journal batch number ### Error: Number sequence group: "###", 
-transaction type: "Debit/Credit note" has not been set up for the GST reference number sequence group of tax information "###".” 
-In order to resolve the issue, please follow (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-gst-define-gstin-numbers-number-sequences)  
-and (https://docs.microsoft.com/dynamics365/finance/localizations/apac-ind-gst-reference-groups)
-to setup the GST number sequence correctly.
+Recently, we’ve observed several customers encountered posting failure due to missing or incorrect setup of the GST number sequence. 
+To resolve the issue and set up the GST number sequence correctly, complete the procedures in the topics [Define GSTINs and reference number sequences](apac-ind-gst-define-gstin-numbers-number-sequences.md) and [Set up GST reference number groups](apac-ind-gst-reference-groups.md).
 
-## Critical Fixes 
+## Critical fixes 
 
-- Tax amount showing in Purchase Order totals and Purchase Invoice totals even the Reverse charge mechanical is applied 100%.
-- In Purchase Order after defining the tax information, we are not able to see the tax account lines in view distribution form. 
--	TDS transaction not updated in withholding tax transaction reports when settled invoice with prepayment. 
--	Assessable value not getting updated after removing charge code from the Purchase Order invoice line. 
--	Charge of vendor in Purchase requisition is not refreshing the vendor information in tax information .
--	Incorrect FOB and CIF calculation in export sales order . 
--	Assessable value is not updated correctly in vendor invoice form when excel file  imported through data entity.
+- After defining the tax information on a purchase order, the tax account lines on the **View distribution** page are not visible. 
+-	TDS transaction is not updated in **Withholding tax transaction** reports when the invoice is settled with prepayment. 
+- Tax amount showing in Purchase order totals and Purchase invoice total is posted with 100% Reverse charges.
+- Assessable value is updated after the charge code is removed from the Purchase order invoice line.
+- When you change the selected vendor on a Purchase requisition, vendor tax information is not updated on the Tax information page.
+- Incorrect Free on board (FOB) and Cost, insurance. and freight (CIF) calculation on Export sales orders.
+- Assessable value is not updated correctly on the Vendor invoice page when posted changes are incorporated in the Excel import file and published into Dynamics 365.
 
 
 ## Upcoming critical fixes in 10.0.9 
 
-- Free text invoice print not working for Non-GST Invoices. 
--	Tax is not getting calculated when we import the data through data entity file. 
--	While generating Free Text invoice from Indian company, system throw error . 
--	System is generating normal Sales order invoice instead of GST tax invoice when tax value become zero. 
--	GSTR-2 column "Is Reverse charge applicable" value is updating wrong. 
--	Tax code lookup filter option unavailable in tax configuration .
--	GTE set off hierarchy version not get the latest version. 
--	Journal voucher description transaction issue for GST transaction 
--	Tax settlement - Change in hierarchy  of tax settlement components as per govt. notification.
+- Free text invoice print is not working for non-GST invoices. 
+-	Tax is not calculated when data is imported through the data entity file. 
+-	When a free text invoice is generated from an Indian company, an error occurs. 
+-	The system is generating normal sales order invoice instead ofa  GST tax invoice when the tax value becomes zero. 
+-	The value in the GSTR-2 column, **Is Reverse charge applicable** is updating incorrectly. 
+-	The **Tax code** lookup filter option is unavailable in the tax configuration.
+-	The GTE set off hierarchy version is not the latest version. 
+-	There is an issue with the journal voucher description transaction for GST transactions.
+-	Per government notification, there is a change in the hierarchy of the tax settlement components.
