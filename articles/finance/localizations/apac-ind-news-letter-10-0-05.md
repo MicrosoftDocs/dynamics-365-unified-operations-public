@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: What's new and changed for APAC India GST Localization in 10.0.05 (October 2019)
-description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.05.
+title: What's new or changed for APAC India GST Localization in 10.0.05 (October 2019)
+description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.05.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/08/2020
@@ -28,30 +28,28 @@ ms.dyn365.ops.version: 10.0.5
 ---
 [!include [banner](../includes/banner.md)]
 
-# What's new and changed for APAC India GST Localization in 10.0.05 (October 2019)
+# What's new or changed for APAC India GST Localization in 10.0.05 (October 2019)
 
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.05 for APAC India GST localization. 
 
-
-
-## New Configuration 
-The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.5. You can also find all the released configuration details in the topic, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
+## New configuration 
+The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.5. For more informatio about the released configuration details, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
  
 - Taxable Document.version.82.xml
 - Taxable Document (India).version.82.143.xml
 - Tax (India GST).version.82.143.263.xml 
  
  The following features or fixes are also included:
-- Resolved the issue of zero tax-based issue for tax exempt transaction.
-- Support CGST and SGST for intra-state stock transfer ordesr between warehouses with different GST registrations. 
+- Resolved the issue of zero tax-base for tax exempt transactions.
+- Support CGST and SGST for intra-state stock transfer orders between warehouses with different GST registrations. 
 - Support VAT for non-GST items.
 - Enable tax rate type.
  
-In most of the taxation system, there is concept of tax rate type, similar to standard tax rate, reduced tax rate, and super reduced tax rate. In India GST, there are following five slabs: 
+In most of the taxation system, there is concept of tax rate type, similar to standard tax rate, reduced tax rate, and super reduced tax rate. In India GST, there are following five slabs. 
 
 | Rate       | Type             | Products                                                                                                                                                                                                             |
 |------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     0%     |     Nil          |     Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accomodiation below Rs 999 per night.                                                              |
+|     0%     |     Nil          |     Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accommodation below Rs 999 per night.                                                              |
 |     5%     |     Low          |     Household necessities such as edible oil, sugar, spices, tea, and coffee (except instant) are included. Coal, Mishti/Mithai (Indian Sweets), and lifesaving drugs are also covered under this GST slab.    |
 |     12%    |     Standard1    |     This includes computers and processed food.                                                                                                                                                                      |
 |     18%    |     Standard2    |     Hair oil, toothpaste and soaps, capital goods, and industrial intermediaries are covered in this slab.                                                                                                         |
@@ -78,7 +76,7 @@ This feature was released in 10.0.2, but more details are now available. If you 
 ![](media/GST-skip-model-mapping-3-10-0-05.PNG)
 
 ### Support calculate/adjust tax in accounting currency
-This feature was released in 10.0.3, but more details are now available. You can adjust the actual tax amount in the accounting currency for import/export ords to mitigate the difference for customs duty.
+This feature was released in 10.0.3, but more details are now available. You can adjust the actual tax amount in the accounting currency for import/export orders to mitigate the difference for customs duty.
 
 To enable this functionality, go to **Tax** > **Setup** > **Tax Configuration** > **Tax Setup** > **Parameter** and select the appropriate information in the **Calculation method** field group.
 
@@ -92,16 +90,18 @@ This feature was released in 10.0.4, but more details are now available. When yo
  
 - The financial dimension value that is specified for the site defaults as the financial dimension value for the respective site in the stock transfer order.
 - You can change the dimension value for the financial dimension before you post the stock transfer shipment and receipt. However if you lock the financial dimension link, you can't modify the financial dimension value that is associated with a site.
-- Defaulting the financial dimension in stock transfer orders will be based on the standard functionality of the financial dimension and it's association with the site inventory dimension.
+- The default financial dimension in stock transfer orders will be based on the standard functionality of the financial dimension and it's association with the site inventory dimension.
+
+To set up this feature, complete the following steps: 
 
 1. Go to **Inventory management** > **Setup** > **Posting** > **Dimension link**.
 2. In the **Reference** field, select the financial dimension to link to the site inventory dimension.
 3. Select **Sites** to open the **Sites** page. The financial dimension selected in the **Reference** field is displayed 
   on the **Financial dimensions** FastTab, where you can also select a financial dimension value for the dimension.
-4. Select a site,and on the **Financial dimensions** FastTab, select a financial dimension value. The specified financial
+4. Select a site, and on the **Financial dimensions** FastTab, select a financial dimension value. The specified financial
   dimension value is associated with the selected site.
 5. Repeat step 4 for each site.
-6. When you have finished with the sites, go to **Inventory management** > **Outbound Orders** > **Transfer Order** > **Stock transfer order** andcratea  new stock transfer order.
+6. When you have finished with the sites, go to **Inventory management** > **Outbound Orders** > **Transfer Order** > **Stock transfer order** and create a new stock transfer order.
 7. Select a stock order line, and on the **Financial dimension** tab, select **Line details** > **Default financial dimension**. 
 
 ### Address reverse charge transactions per the government clarification
@@ -110,7 +110,7 @@ This feature was released in 10.0.4, but more details are now available. When yo
  
  Regarding, "As govt clarified that RCM on reverse charge transaction can be claimed in the same  month in which it is paid " see the following [link](https://twitter.com/askGST_GoI/status/897360102964944896) for more information.
  
-Based on the clarification, in the configuration, you can post GST tax in Interim recoverable at the same time that you post a purchase invoice. GST input tax is posted directly into a Tax recoverable account. 
+Based on the clarification, in the configuration, you can post GST tax in interim recoverable at the same time that you post a purchase invoice. GST input tax is posted directly into a tax recoverable account. 
 
 To make these changes, complete the following steps.
 
@@ -120,10 +120,10 @@ To make these changes, complete the following steps.
 
 ![](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
 
-2. Identify the reverse charge liability in a separate account such as **Tax Payable (Reverse charge)** which should be defined as a **Ledger account** instead of **Tax account** because reverse charge liability can't bedirectly settled with input tax credit. Instead, it must first be paid separately from the **Cash Ledger account**.
+2. Identify the reverse charge liability in a separate account such as **Tax Payable (Reverse charge)**. This should be defined as a **Ledger account** instead of **Tax account** because reverse charge liability can't be directly settled with input tax credit. Instead, it must first be paid separately from the **Cash Ledger account**.
 3. Set the following field information:
 
-**Under posting
+**Under posting**
 - Tax measure: Interim recoverable  
 - Debit: Tax Recoverable 
 - Credit: Interim Tax payable 
@@ -138,33 +138,32 @@ Settle the reverse charge liability from the cash account on the last day of the
 ## Critical fixes 
 
 - TDS is not deducted correctly when an invoice is settled with prepayment.
--	Save the tax document in the **Purchase order confirmation** page so the **Tax document** page can be opened after posting.
--	The same exchange rate is not picked in the tax document in the **BOE** page and **Import invoice/product receipt** if the 
+-	Save the tax document on the **Purchase order confirmation** page so the **Tax document** page can be opened after posting.
+-	The same exchange rate is not picked in the tax document on the **BOE** page and **Import invoice/product receipt** if the 
   date is not the same for both documents. 
 -	Tax information is carried over to the customer history. 
--	The financial dimension is defined for the ledger account which is used as the offset account for a vendor transaction. During withholding tax settlement with TDS authority, an error message occurs.
--	The TDS amount is showing as incorrect in vendor transactions when the TDS amount is adjusted to "Zero".
+-	The financial dimension is defined for the ledger account, which is used as the offset account for a vendor transaction. An error could display during withholding tax settlement with TDS authority.
+-	The TDS amount shows as incorrect in vendor transactions when the TDS amount is adjusted to zero (0).
 -	The **Open vendor invoice line** disappears when the line is saved.
--	On the Partial invoice against the purchase receipt quantity, the assessable value is not updated and the GST is not being calculated. 
--	The Load on inventory amount is not posting to the Fixed asset account when the fixed asset is acquired through a purchase order with a Service item.
--	Location ID of legal entity, **IN** is not defaulting on the project timesheet.
+-	On the partial invoice against the purchase receipt quantity, the assessable value is not updated and the GST is not calculated. 
+-	The load on inventory amount is not posting to the fixed asset account when the fixed asset is acquired through a purchase order with a service item.
+-	Location ID of legal entity, **IN** does not default on the project timesheet.
 -	Tax is not populated on the **Invoice journal inquiry** page.
 -	A shipping bill can't post when the default values for a summary update is set to **Invoice account**.
--	GST amount and Assessable value should not be rounded by the Rounding rule.
+-	GST amount and assessable value should not be rounded by the rounding rule.
 -	The totals in the GST tax invoice (shipment) are not displaying correctly.
--	Vendor tax information is missing in the Purchase order line when the Purchase order is created from Purchase requisition.
--	Tax documens are not refreshed when the transaction date is updated for a vendor invoice.
+-	Vendor tax information is missing in the purchase order line when the Purchase order is created from a purchase requisition.
+-	Tax documents are not refreshed when the transaction date is updated for a vendor invoice.
 -	Free text invoices are not posting with terms of payment, such as **Cash on delivery**, **Payment term**, and **GST**.
 
+## Upcoming fixes in 10.0.6 
 
-## Upcoming critical fixes in 10.0.6 
-
-- Accounting entry issue on Import PO invoicing, along with BOE feature, when an invoice is posted with reference 
+- Accounting entry issue on Import PO invoicing, along with bill of entry (BOE) feature, when an invoice is posted with reference 
   to product receipt quantity.
 -	TDS is not working for customers with TDS threshold enabled.
 -	Taxable value in the **GSTR1 offline** report does not match the invoice amount in the accounting currency on the 
   **Invoice journal** page for an export order. 
-- Unable to view the Transaction ID in Posted Tax document transactions and posted Tax component transactions after adding a column.
--	Base amount should not be zero(0) for a sales order when the transaction line is marked as exempt tax.
--	Reversal of Invoice posted with TDS shows the wrong display issue in the total invoice amount.
+- Unable to view the Transaction ID in posted tax document transactions and posted Tax component transactions after adding a column.
+-	Base amount should not be zero (0) for a sales order when the transaction line is marked as exempt tax.
+-	Reversal of invoice posted with TDS displays incorrectly in the total invoice amount.
  
