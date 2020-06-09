@@ -48,9 +48,7 @@ By using direct delivery functionality, you can create deliveries directly from 
 
 ### New GSTR return offline tool (Trial Version Prototype) for India in Dynamics 365 Finance 
 
-Under a new GSTR return process, GST ANX-1 (Annexure of supplies) and GST ANX-2 (Annexure of Inward Supplies) will be filed as part of FORM GST RET-1 (Normal) returns. You can generate several GSTR returns.
-
-![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG)
+Under a new GSTR return process, GST ANX-1 (Annexure of supplies) and GST ANX-2 (Annexure of Inward Supplies) will be filed as part of FORM GST RET-1 (Normal) returns. You can generate multiple GSTR returns.
 
 For more information about the GSTR Return offline tool report, see the KB article, [New GSTR Return offline tool (Trial Version Prototype) for India in Dynamics 365 Finance](https://support.microsoft.com/help/4549665). 
 
@@ -61,43 +59,37 @@ you might encounter posting imbalance issues. It can be time consuming to troubl
 
 With debug mode enabled, the system will dump a log file that contains the discrepancies between the input fields from Dynamics 365 Finance and the GTE, and the posting profile. 
 
-1. Append &debug=vs%2CconfirmExit& to D365 AOS URL and press Enter to open a new session.
-
-![](media/GST-debug-mode-4-1-10-0-09.PNG)
-
+1. In the internet address bar, change **&debug=vs%2CconfirmExit&** to your Dynamics 365 Finance AOS URL and press Enter to open a new session.
 2. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup** and mark the **Check model mapping discrepancies** parameter.
-3. Calculate the tax for the transaction , and then select **Save** to save the **GTETroubleshotingLog.txt**.
-4. Provide the file to Microsoft for investigation.
+3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
+4. Submit the file to Microsoft for investigation.
  
 ## Critical fixes 
 
-- Business address is not updated automatically by system in tax information field while crating Sales order .
--	While generating "Free text invoice" from legal entity system throw error " Something went wrong while generating the request" 
--	Tax is not getting calculated when we import the data through data entity files. 
--	System is generating normal sales order invoice instead of GST tax invoice when tax value become zero. 
--	GSTR-2 - "Is reverse charge applicable value is wrong 
--	Fixed Assets value not updated with load on inventory amount when import order invoice with service item. 
+- Business address is not updated automatically by the system in the **Tax information** field when a sales order is created.
+-	When generating a free text invoice from a legal entity, the following error occurs, "Something went wrong while generating the request". 
+-	During data import through data entity files, tax is not calculated. 
+-	The system generates a normal sales order invoice instead of the GST tax invoice when tax value become zero. 
+-	GSTR-2 **Is reverse charge applicable** value is incorrect. 
+-	Fixed assets value is not updated with the **Load on inventory amount** when import order invoice with service item. 
 -	GTE set off hierarchy version not get the latest version 
 -	Journal voucher description truncation issue for GST transaction. 
--	Stock transfer order shipment voucher is not showing in GSTR-2 Report 
--	Direct Delivery Purchase order , customer address getting flow in tax information 
--	GSTIN registration numbers are TDS  registration number are not sharing with the other legal entities while 
-  importing from the data management module even after sharing option enable . 
--	GST tax amount is deducted twice from the sale of assets net amount when price inclusive tax option enabled.
--	System is throwing error " Object reference not set to an instance of an object" while settling the vendor invoice transactions. 
--	In Purchase order invoice HSN/SAC numbers are not populating from PO when selecting PO using "+" sign 
-  (Used for booking consolidated invoices) 
--	List all posting profile in GTE trouble shooting file when enabled debug mode. 
--	Transfer order posting not picking up IGST account .
+-	Stock transfer order shipment voucher is not showing in the **GSTR-2** report.
+-	With direct delivery for a purchase order, the customer's is included in the customer's tax information. 
+-	GSTIN registration numbers and TDS registration number are not shared with the other legal entities when data is imported from the **Data management** module even after sharing is enabled. 
+-	GST tax amount is deducted twice from the sale of assets net amount when **Price inclusive tax** is enabled.
+-	When a vendor invoice is settled, the following error occurs, "Object reference not set to an instance of an object". 
+-	HSN/SAC numbers are not populating from the purchase order to the purchase order invoice when the selected purchase order uses a "+" sign. (This sign is used for booking consolidated invoices.) 
+-	All posting profiles are listed in the GTE troubleshooting file when debug mode is enabled. 
+-	Transfer order posting isn't picking up the IGST account.
 
 
 ## Upcoming critical fixes in 10.0.10 
 
-- Import order-over-delivery setup respected at invoice registration stage 
--	Enable date time tracking for tax run time lookup condition table 
--	Transaction type not showing in case of Tax Journal posting 
--	Unable to generate recurring invoice as getting the error message " The menu item with name customer recurrence 
-  invoice service operation could not be opened" . 
--	Tax calculation is wrong when post customer discount through general Journal 
--	Adjusted amount origin field showing wrong value. 
--	Difference between sales tax payment and actual transaction posted to tax authority .
+- Import order-over-delivery setup is respected at the invoice registration stage. 
+-	Enable date time tracking for the **Tax run time lookup condition** table.
+-	Transaction type not showing when the **Tax Journal** is posted. 
+-	Recurring invoices can't be generated and an error occurs. 
+-	Tax calculation is incorrect when a customer discount is posted in the **General** journal. 
+-	**Adjusted amount origin** field shows the wrong value. 
+-	Difference between sales tax payment and the actual transaction posted to the tax authority.
