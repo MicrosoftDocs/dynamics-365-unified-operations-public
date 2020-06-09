@@ -35,11 +35,11 @@ ms.dyn365.ops.version: Release 10.0.11
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic provides an overview of the various authentication flows in Dynamics 365 Commerce. While there are a number of different authentication scenarios and flows currently supported on the Dynamics 365 Commerce solution as described below, it is worth noting that the core authentication infrastructure of the headless commerce engine is fully based on [OpenID Connect](https://openid.net/connect/).
+This topic provides an overview of the various authentication flows in Dynamics 365 Commerce. While there are a number of different authentication scenarios and flows currently supported for the Dynamics 365 Commerce solution, the core authentication infrastructure of the Commerce Scale Unit (also known as the headless commerce engine) is fully based on [OpenID Connect](https://openid.net/connect/).
 
 ### Authentication methods
 
-Access to each of the application programming interfaces (APIs) on the headless commerce engine (also known as the Commerce Scale Unit) is natively restricted by one or more of the following roles.
+Access to each of the application programming interfaces (APIs) on the Commerce Scale Unit is natively restricted by one or more of the following roles.
 
 - **Employee**: Access to these APIs requires a point of sale (POS) device activation (device token) and an authenticated employee.
 - **Customer**: Access to these APIs requires an authenticated customer and are generally used by e-Commerce sites for such operations as retrieving order history and changing customer details.
@@ -47,18 +47,18 @@ Access to each of the application programming interfaces (APIs) on the headless 
 - **Anonymous**: These APIs are primarily used by e-Commerce sites without user authentication.
 - **Customized APIs**: Access to these APIs can be restricted using any of the methods described above.
 
-For the full list of headless commerce engine APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
+For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
 
 ### Supported authentication methods
 
 The following table describes the set of supported authentication methods for APIs that require either POS device activation that genetrates a device token or user authentication that generates a user token.
 
-|API category|Scenario|Supported authentication Method|Required setup|Additional details|
+|API category|Scenario|Supported authentication method|Required setup|Additional details|
 |----------|-----------|------------|------------|------------|
 |**Employee**|**Dynamics 365 POS authentication flows \*** |Simple cashier username and password |Configure worker in Dynamics 365 Commerce headquarters with username and password. |[Create a worker](retail-modern-pos-device-activation.md#create-a-worker) |
 |**Employee**|**Dynamics 365 POS authentication flows \***|Azure AD credentials  |Configure worker in Dynamics 365 Commerce headquarters  to map to Azure AD credentials. |[Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md) |
 |**Employee**|**Dynamics 365 POS authentication flows \***|Extended sign-in credentials, for example using a barcode or magnetic stripe reader (MSR)  |Configure worker in Dynamics 365 Commerce headquarters configured for extended logon. |[Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md) |
-|**Customer**|**Dynamics 365 Commerce authentication flows**|Site user authentication using Azure AD B2C |Create an AAD business-to-consumer (B2C) application. <br/><br/>Add the Azure AD B2C application to the accepted list of identity providers in Dynamics 365 Commerce headquarters. <br/><br/>Configure the Azure AD B2C application in Commerce site builder.|[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) <br/> <br/> [Set up custom pages for user sign-ins](custom-pages-user-logins.md)|
+|**Customer**|**Dynamics 365 Commerce authentication flows**|Site user authentication using Azure AD B2C |Create an Azure AD business-to-consumer (B2C) application. <br/><br/>Add the Azure AD B2C application to the accepted list of identity providers in Dynamics 365 Commerce headquarters. <br/><br/>Configure the Azure AD B2C application in Commerce site builder.|[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) <br/> <br/> [Set up custom pages for user sign-ins](custom-pages-user-logins.md)|
 |**Customer**|**Dynamics 365 Commerce authentication flows**|Site user authentication using external identity provider that supports Open ID Connect |Create an Azure AD B2C application and configure it to support external identity providers.<br></br>Add the Azure AD B2C application to the accepted list of identity providers in Dynamics 365 Commerce headquarters.<br></br>Configure the Azure AD B2C application in Commerce site builder. |[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) <br></br> [Set up custom pages for user sign-ins](custom-pages-user-logins.md)|
 |**Customer**|**Third-party e-Commerce authentication flows** |Site user authentication using external identity provider that supports Open ID Connect |Add external identity provider to the accepted list of identity providers in Dynamics 365 Commerce headquarters. |[Configure authentication providers](/dev-itpro/configure-authentication-providers.md)|
 |**Application**|**Third-party app or service authentication flows**|Azure AD service to service / Application authentication |Add external identity provider to the accepted list of identity providers in Dynamics 365 Commerce headquarters. | |
