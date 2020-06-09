@@ -33,20 +33,20 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure and manage database logging
 
-You can track changes to tables and fields in Dynamics 365 Human Resources with database logging. This topic describes:
+You can track changes to tables and fields in Dynamics 365 Human Resources with database logging. This topic describes how to:
 
-- How to manage security and performance for database logging
-- How to set up database logging
-- How to clean up database logs
+- Manage security and performance for database logging
+- Set up database logging
+- Clean up database logs
 
 ## Overview of database logging
 
-Database logging tracks specific changes to Microsoft Dynamics 365 Human resources tables and fields. These changes include inserting, updating, or deleting. Database logging stores a record of changes to tables or fields in the database log table.
+Database logging tracks specific changes to Microsoft Dynamics 365 Human Resources tables and fields. These changes include inserting, updating, or deleting. Database logging stores a record of changes to tables or fields in the database log table.
 
 The business uses of database logging include:
 
-- Creating an audit record of changes to specific tables that contain sensitive information
-- Tracking single transactions. Database logging isn't intended for tracking automated transactions running in batch jobs.
+- Creating an audit record of changes to specific tables that contain sensitive information.
+- Tracking single transactions. Database logging isn't intended for tracking automated transactions that run in batch jobs.
 
 ## Security for database logging
 
@@ -60,7 +60,7 @@ While valuable from a business perspective, database logging can be expensive in
 
 - Database logging can adversely affect long-running automated processes, such as long-running data imports.
 
-### Recommended practices
+### Best practices
 
 To improve performance, limit log entries by selecting specific fields to log instead of whole tables. To help maintain overall performance, database logging is limited to 20 tables.
 
@@ -71,18 +71,20 @@ To improve performance, limit log entries by selecting specific fields to log in
 
 You can use the **Logging database changes** wizard to set up database logging. The wizard provides a flexible way to set up logging for tables or fields.
 
-1. Select **System administration > Links > Database > Database log setup**. Select **New** to start the **Logging database changes** wizard.
+1. Go to **System administration > Links > Database > Database log setup**. Select **New** to start the **Logging database changes** wizard.
 2. Complete the wizard.
 
 ## Clean up database logs
 
 You can delete all or part of the database logs, using the following options:
 
-- Select all logs for a particular table
-- Select specific types of database log
-- Select a date and time that a log was created
+- Select all logs for a particular table.
+- Select specific types of database log.
+- Select a date and time that a log was created.
 
-1. Select **System administration > Links > Database > Database log**. Select **Clean up log**.
+To set up database log cleanup, follow these steps: 
+
+1. Go to **System administration > Links > Database > Database log**. Select **Clean up log**.
 
 2. Choose a method of selecting logs to delete by entering one of the following options:
 
@@ -90,4 +92,4 @@ You can delete all or part of the database logs, using the following options:
    - Type of log
    - Created date and time
 
-Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
+3. Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
