@@ -70,5 +70,4 @@ You can enable the feature in **Feature management** workspace. The feature name
 -	Assessable value is updated after the charge code is removed from the Purchase order invoice line. 
 -	When you change the selected vendor on a Purchase requisition, vendor tax information is not updated on the **Tax information** page.
 -	Incorrect Free on board (FOB) and Cost, insurance. and freight (CIF) calculation on Export sales orders. 
--	Assessable value is not updated correctly on the **Vendor invoice** page when posted changes are incorporated in the **Excel import file**. 
-  and published into Dynamics 365
+-	Assessable value is not updated correctly on the **Vendor invoice** page when posted changes are incorporated in the **Excel import file** and published into Dynamics 365.
