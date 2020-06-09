@@ -33,23 +33,25 @@ ms.dyn365.ops.version: Release 10.0.11
 # Dynamics 365 Commerce authentication flow
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic provides an overview of the various authentication flows for the Dynamics 365 Commerce solution. While there are a number of different authentication scenarios and flows currently supported on the Dynamics 365 Commerce solution as described below, it is worth noting that the core authentication infrastructure of the headless commerce engine is fully based on [OpenID Connect](https://openid.net/connect/).
+This topic provides an overview of the various authentication flows in Dynamics 365 Commerce. While there are a number of different authentication scenarios and flows currently supported on the Dynamics 365 Commerce solution as described below, it is worth noting that the core authentication infrastructure of the headless commerce engine is fully based on [OpenID Connect](https://openid.net/connect/).
 
-## Overview
 ### Authentication Methods
-Access to each of the APIs on the Headless Commerce Engine (i.e. Commerce Scale Unit) is natively restricted by one or more of the following roles.
 
-- **Employee**: These APIs require a POS device activation / token and authenticated employee to access.
-- **Customer**: These APIs require an authenticated customer and are generally used by e-Commerce site, e.g. to retrieve order history or change customer details.
-- **Application**: These APIs require application level authentication (e.g. AAD service to service authentication).
-- **Anonymous**: These APIs are primarily used by e-Commerce sites without user login.
-- **Customized APIs**: Access to these APIs can be restricted using any of the method described above, e.g. POS devices, end-user, or anonymous authentication.
+Access to each of the APIs on the headless commerce engine (also known as the Commerce Scale Unit) is natively restricted by one or more of the following roles.
 
-The full list of Headless Commerce Engine APIs and their access restrictions can be found under [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
+- **Employee**: Access to these APIs requires a point of sale (POS) device activation / token and an authenticated employee.
+- **Customer**: Access to these APIs requires an authenticated customer and are generally used by e-Commerce sites for such operations as retrieving order history or changing customer details.
+- **Application**: Access to these APIs requires application-level authentication, for example Azure Active Directory (AD) service-to-service authentication.
+- **Anonymous**: These APIs are primarily used by e-Commerce sites without user authentication.
+- **Customized APIs**: Access to these APIs can be restricted using any of the methods described above.
+
+The full list of headless commerce engine APIs and their access restrictions can be found under [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
 
 ### Supported Authentication Flows 
-The following tables describes the set of supported authentication mechanisms for APIs that require either **POS device activation / token** or **end-user authentication**.
+
+The following table describes the set of supported authentication mechanisms for APIs that require either **POS device activation / token** or **end-user authentication**.
 
 |API Category|Scenario|Supported Authentication Method|Required Setup|Additional details|
 |----------|-----------|------------|------------|------------|
@@ -71,25 +73,25 @@ The following tables describes the set of supported authentication mechanisms fo
 
 ## Dynamics 365 POS employee authentication flows
 
-The following diagram shows POS employee authentication flows in Dynamics 365 Commerce.
+The following illustration shows POS employee authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-1.jpg)
 
 ## Dynamics 365 e-Commerce customer authentication flows
 
-The following diagram shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
+The following illustration shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-2.jpg)
 
 ## Third party e-Commerce customer authentication flows
 
-The following diagram shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
+The following illustration shows e-Commerce customer authentication flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-3.jpg)
 
 ## Third party application authentication flows
 
-The following diagram shows third-party application flows in Dynamics 365 Commerce.
+The following illustration shows third-party application flows in Dynamics 365 Commerce.
 
 <a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-4.jpg)
   
