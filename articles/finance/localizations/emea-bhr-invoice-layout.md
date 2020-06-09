@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-The article explains how to configure printable invoice layouts to make it compliant with Bahraini legal requiremets.
+The article explains how to configure printable invoice layouts to make it compliant with Bahraini legal requirements.
 
 Bahrain-specific invoice layouts are implemented using **Configurable business documents** concept.
 For more information about Configurable business documents, see [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md).
@@ -81,7 +81,7 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 ![Print management configuration](media/emea-bhr-print_management.jpg)
 
 ### Sales tax specification
-In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** tab, choose **Registration and company currenciy** value for **Sales tax specification** field.
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** tab, choose **Registration and company currency** value for **Sales tax specification** field.
 
 ![Sales tax specification](media/emea-bhr-tax-spec.jpg)
 
