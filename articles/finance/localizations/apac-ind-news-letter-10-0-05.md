@@ -26,9 +26,10 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.5
 
 ---
-[!include [banner](../includes/banner.md)]
 
 # What's new or changed for APAC India GST Localization in 10.0.05 (October 2019)
+
+[!include [banner](../includes/banner.md)]
 
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.05 for APAC India GST localization. 
 
