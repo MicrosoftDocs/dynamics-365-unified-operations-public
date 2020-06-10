@@ -127,8 +127,8 @@ The example scenario requires that you prepare two location profiles.
 1. On the mobile device, go to **Quality \> Movement**.
 1. Select the **LOC/LP** field, and enter the location you made note of in the previous steps.
 1. Confirm the information that is shown. Make a note of the license plate number that is generated.
-1. Select the **To Information** **LOC/LP** field, and enter *06A07R2S1B* as the location to move the item to.
-1. Confirm the **To Information** **LP** (target license plate ID) that is automatically generated. A "Work Completed" message appears at the bottom of the page.
+1. On the **To Information** screen, select the **LOC/LP** field, and enter *06A07R2S1B* as the location to move the item to.
+1. On the **To Information** screen, confirm the **LP** value (the target license plate ID), which is automatically generated. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Movement** and return to the **Quality Management** menu.
 1. Select **Back** to return to the main menu.
 1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
