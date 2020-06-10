@@ -490,9 +490,9 @@ To view the container details, go to **Warehouse management > Packing and contai
 ### Sort the containers
 
 > [!CAUTION]
-> When you access the Pallet build menu item on the mobile app to perform **Outbound sorting**, you will see a button option labeled **Full**. *Do not use the Full button to sort or close the position*.
+> When you access the **Pallet build** menu item on the mobile app to perform outbound sorting, you will see a button option labeled **Full**. *Do not use the **Full** button to sort or close the position*.
 >
-> The Full button is out of the box and cannot be disabled or removed from the form. It is not used for the Outbound sorting feature.
+> The **Full** button is provided by default and can't be disabled or removed from the form. It isn't used for the outbound sorting feature.
 
 #### Sort the first container
 
