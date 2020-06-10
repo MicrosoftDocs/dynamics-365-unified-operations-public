@@ -66,7 +66,7 @@ The Retail SDK must be added to Azure Repos Git, GitHub or VSTS. The Retail SDK 
 ```Powershell
     # Script to copy the Retail deployable package with Build number.
 
-    Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Code\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
+    Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
     "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
 ```
 
@@ -98,7 +98,7 @@ steps:
 - powershell: |
    # Script to copy the Retail deployable package with Build number.
    
-   Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Code\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
+   Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
    "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
    
   displayName: 'Copy the Retail deployable package'
