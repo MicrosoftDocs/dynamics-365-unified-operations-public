@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -269,7 +269,7 @@ You must create several user or service accounts for Finance + Operations to wor
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
 \* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
-\*\* If the password of the SQL user contains special characters it can lead to problems during deployment.
+\*\* If the password of the SQL user contains special characters, this could cause problems during deployment.
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
