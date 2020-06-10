@@ -106,5 +106,20 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
 ```
-    
+
+## Setup Azure DevOps build pipeline using build machine:
+
+If build machine is for msbuild with the Azure DevOps pipeline, please follow the below steps in the build machine to make it work with 10.0.11 SDK:
+
+1. Install VS 2017 in the build machine.
+2. Please do a msbuild(msbuild version 15.0) with developer command prompt for VS 2017 in the build machine. Open the developer command prompt for VS 2017 and navigate to Retail SDK root folder and type msbuild dirs.proj and make sure the msbuild complete successfully. Note: This step is optional. 
+3. In the build machine add an environment variable for the msbuild 15.0. Open **System Properties > Environment Variables > System variables and select the Path** and click New and add the path variable for msbuild 15.0.
+Ex: C:\Program Files(x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\  The path will change based on where you installed VS 2017. To get the path for msbuild in the Developer command prompt for VS 2017 type **Where msbuild** this command will give the location. 
+4. Restart the Azure DevOps build agent in the build machines.
+5. In the Azure DevOps pipeline, Set the Agent Pool as Default and change the msbuild version to 15.0 or latest.
+
+## Troubleshooting guides
+
+During build from Azure DevOps pipeline if it fails with NuGet error then it maybe due to the Azure pipeline is not using the msbuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
+
     
