@@ -3,7 +3,7 @@ title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,6 @@ Project onboarding is a self-paced, wizard-driven onboarding experience that gui
 Microsoft relies on the information that you provide. You must provide the most current and accurate data as you complete Project onboarding. After you complete Project onboarding, you can deploy environments and continue with the project implementation.
 
 To access Project onboarding, sign in to LCS, and then, on the main menu, select **Project onboarding**.
-
 
 > [!NOTE]
 > Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
