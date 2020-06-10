@@ -46,7 +46,7 @@ The Dynamics 365 Commerce SDK can be installed on any environment including the 
 
 ## Configure the .env file
 
-To hit the tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** in the .env file to the tier 1 Retail server URL.  Details for setting the .env file can be found at [Configure a development environment (.env) file](configure-env-file.md) page.
+To hit the tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** in the .env file to the tier 1 Retail server URL.  Details for setting the .env file can be found here: [Configure a development environment (.env) file](configure-env-file.md).
 
 To get the Retail server URL open the LCS web page and select the project and tier 1 environment.  Next, select the "Login" button at the top right and select "Retail Server URL" as shown below.
 
