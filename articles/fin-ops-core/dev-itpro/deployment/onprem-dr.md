@@ -41,7 +41,7 @@ This topic does not cover specific configuration details for disaster recovery o
   - SQL Server
 
 > [!NOTE]
-> High availability configuration isn't covered in this topic. For more information abou the minimum setup required for high availability, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements).
+> High availability configuration isn't covered in this topic. For more information about the minimum setup required for high availability, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements).
 
 ### Recommendations
 
@@ -170,7 +170,7 @@ If the SSRS node IP is different, you'll have to modify the following values.
           },
 ```
 
-If you are changing the host name, the following modifications are required:
+If you are changing the host name, the following modifications are required.
 
 ```json
     "name": "AOS",
