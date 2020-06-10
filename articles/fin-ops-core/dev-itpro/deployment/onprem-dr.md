@@ -152,9 +152,9 @@ Pre-deployment scripts are necessary when changes to the deployment configuratio
 
 You can find the location of the config.json file by running the following command.
 
-    ```sql
+  ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
-    ```
+  ```
 
   > [!NOTE]
   > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
