@@ -1,4 +1,35 @@
+---
+# required metadata
+
+title: Zone threshold replenishment
+description: Zone-based replenishment uses a minimum/maximum (min/max) replenishment strategy, but it evaluates whole warehouse zones instead of just individual locations. Therefore, warehouse managers can more quickly learn when additional inventory is required in a picking zone.
+author: Mirzaab
+manager: tfehr
+ms.date: 06/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-06-10
+ms.dyn365.ops.version: Release 10.0.9
+---
+
 # Zone threshold replenishment
+
+[!include [banner](../includes/banner.md)]
 
 Zone-based replenishment uses a minimum/maximum (min/max) [replenishment](replenishment.md) strategy, but it evaluates whole warehouse zones instead of just individual locations. Therefore, warehouse managers can more quickly learn when additional inventory is required in a picking zone.
 
@@ -106,7 +137,7 @@ This example shows how to prepare a replenishment template. If you're planning t
 
 ### Set up location directives
 
-Unlike location-based min/max replenishment, zone-based min/max replenishment requires that you set up both pick location directives and put location directives, because the system evaluates the whole zone instead of just the outbound work pick location.
+Unlike location-based min/max replenishment, zone-based min/max replenishment requires that you set up both pick location directives and put location directives, because the system evaluates the whole zone instead of just the pick location for outbound work.
 
 #### View and edit location directives
 
