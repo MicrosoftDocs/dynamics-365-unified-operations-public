@@ -52,7 +52,7 @@ To get the Retail server URL open the LCS web page and select the project and ti
 
 ![LCS Retail Server URL](media/lcs-retail-server-url.png)
 
-Clicking on the above Retail Server URL should open a new tab with a URL similar to the following example “https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/Commerce”
+Clicking on the above **Retail Server URL** link should open a new tab with a URL similar to the following example URL: “https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/Commerce”
 
 Copy this URL except for the last part “Commerce” into the .env file **MsDyn365Commerce_BASEURL** property.  The remainder properties should be configured to a desired online channel configured on the environment. 
 
