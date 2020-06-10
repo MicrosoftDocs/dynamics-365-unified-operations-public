@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
 ms.search.validFrom: 2020-07-31 
-ms.dyn365.ops.version: Platform update 37 
+ms.dyn365.ops.version: 10.0.13
 
 ---
 
