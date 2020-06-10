@@ -5,7 +5,7 @@ title: Installation steps for Retail channel components in an on-premises enviro
 description: This topic covers the installation steps for Commerce channel components in an on-premises environment. 
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,11 @@ Before you can start installation of channel components, you must first complete
     - ModernPosSetup.exe
     - ModernPosSetupOffline.exe
     - StoreSystemSetup.exe
+
+     > [!NOTE]
+     > Cloud environments can synchronize self-service installers through Headquarters from what is available in LCS ([Synchronize self-service installers in Dynamics 365 Commerce](../../../commerce/dev-itpro/synchronize-installers.md)). On-premises environments cannot utilize this functionality, however, these environments can still download from LCS. The SDK is available in the deployable package zip file. The self-service installers are available from the LCS **Asset library**. You can utilize the upload and download mechanism from within LCS, but the Headquarters synchronization functionality will not work.
+
+
 7.  Navigate to the AD FS machine, then go to the InfrastructureScripts folder. This is the same file directory where the previously run PowerShell script was located (**RetailUpdateDatabase.ps1**). Find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
 8.  On the AD FS machine that you're currently using, run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value can be found in Service Fabric.  To find the **HostUrl** value, go to **Service Fabric** &gt; **Application fabric:/AXSF** &gt; **Details** &gt; **Aad_AADValidAudience**.
 9.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
