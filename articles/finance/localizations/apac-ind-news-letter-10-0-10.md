@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new and changed for APAC India GST Localization in 10.0.10 (May 2020)
-description: This topic describes new and changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.10.
+title: What's new or changed for APAC India GST Localization in 10.0.10 (May 2020)
+description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.10.
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 ---
 [!include [banner](../includes/banner.md)]
 
-# What's new and changed for APAC India GST Localization in 10.0.10 (May 2020) 
+# What's new or changed for APAC India GST Localization in 10.0.10 (May 2020) 
 
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.10 for APAC India GST localization.
 
@@ -37,10 +37,10 @@ This topic includes a summary of the new features and critical bug fixes release
 
 ### Import order over delivery 
 
-Previously, you could not adjust import order quantities on the **Invoice registration** page. This meant that customers couldn't set up accepting a delivery of more items that was originally ordered. With this new feature, you can update the invoice registration quantity to match the over delivery quantity. Complete the following steps to set up accepting over delivery.
+Previously, you could not adjust import order quantities on the **Invoice registration** page. This meant that customers couldn't accept a delivery of more items than what was originally ordered. With this new feature, you can update the invoice registration quantity to match the over delivery quantity. Complete the following steps to set up accepting over delivery.
 
 1. Go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**. 
-2. On the **Deliver** tab, set **Accept delivery** to **YES**, and then select **Save**.
+2. On the **Deliver** tab, set **Accept delivery** to **Yes**, and then select **Save**.
 
 Complete the following steps to update the over delivery quantity.
 
@@ -48,10 +48,10 @@ Complete the following steps to update the over delivery quantity.
 2. In the **Lines** pane, in the **Receive** field, update the quantity.
 
 ### TDS on foreign vendor transactions
-TDS on a foreign vendor invoice results in a voucher imbalance error because the transactions on voucher do not balance out. 
+TDS on a foreign vendor invoice results in a voucher imbalance error because the transactions on voucher do not balance. 
 As per rule 26 of Income tax act, TDS on a foreign currency transaction is converted on the TTR buying rate instead of normal GAP rate.
 
-**TDS on transaction in foreign currency**:
+**TDS on transaction in foreign currency**
 
 - Main transaction in GAP rate or manually updated exchange rate 
 - TDS on transaction as per TDS exchange rate 
@@ -59,7 +59,7 @@ As per rule 26 of Income tax act, TDS on a foreign currency transaction is conve
 You can set up the **TDS exchange rate** as **TDS** and the **Accounting currency exchange rate type** as **Default** on the **Ledger** page.
 
 **Accounting entries**
-| Description                | Dr.(US$)     | Dr.(INR)          | Cr.(US$)                | Cr.(INR)                                        |
+| Description                | Dr. (US$)     | Dr. (INR)          | Cr. (US$)                | Cr. (INR)                                        |
 |----------------------------|--------------|-------------------|-------------------------|-------------------------------------------------|
 |     Service/lease exp.    |     100      |     GAP rate      |                         |                                                 |
 |     CGST                   |        9     |      GAP rate     |                         |                                                 |
@@ -72,23 +72,22 @@ You can set up the **TDS exchange rate** as **TDS** and the **Accounting currenc
 
 - Enable date time tracking for the **Tax run time lookup condition** table. 
 -	Transaction type is not showing when the **Tax journal** is posted. 
--	Unable to generate a recurring free text invoice using the **Free text invoice template**, and an error occurs. 
--	There is a difference between the sales tax payment and the actual transaction posted to tax authorities. Through this fix, it is ensured that the sales tax settlement amount and actual amount posted to tax authority is matched. 
--	**Adjusted amount origin** field shows thr wrong value. The system is picking the adjusted base amount posted in the 
+-	Unable to generate a recurring free text invoice using the **Free text invoice template**. 
+-	There is a difference between the sales tax payment and the actual transaction posted to tax authorities. This fix ensures that the sales tax settlement amount and the actual amount posted to the tax authority is matched. 
+-	**Adjusted amount origin** field shows an incorrect value. The system is picking the adjusted base amount posted in the 
   initial transaction and same base amount is fetching for subsequent transactions. 
--	Tax calculation appears incorrect when a discount is applied through the **General Journal** in multi-line transactions. This happens with the discount ledger account whether it's debit or credit. Two scenarios are included
-:
+-	Tax calculation appears incorrect when a discount is applied through the **General Journal** in multi-line transactions. This happens with the discount ledger account for debit or credit. Two scenarios include:
+
     - Creating a credit note for a customer (GST is calculating negative value for discount).
     - Creating an invoice/debit note for a customer (GST is calculating positive value for discount). 
 
+## Upcoming fixes in 10.0.11 
 
-## Upcoming critical fixes in 10.0.11 
-
--	When a vendor record is created with multiple sub-vendors, the main supplier name and address and displayed in GSTR-2, which is not the information selected on the **Tax information** tab during posting . 
+-	When a vendor record is created with multiple sub-vendors, the main supplier name and address are displayed in GSTR-2, which is not the information selected on the **Tax information** tab during posting. 
 -	The **Withholding tax journal** is created to adjust the withholding tax (TDS) amount and select the voucher transaction for adjustment. An error occurs when the journal is posted and the transaction has been selected and transferred to the **General journal**. 
 -	Warning message is displayed when you define a charge code with the posting type of **Ledger** and an item combination on the transaction. 
 -	A system error occurs while running withholding (TDS) tax payment.
--	Incorrect tax information is created from sales agreement and pushed to the sales order. ISpecifically, the **Address** field is populating with the address of the legal entity instead of the warehouse address. 
--	When you post a free text invoice with GST tax and you selected to round off when setting up currencies, the system is not rounding the invoice amount for the customer sub-ledger account, but isrounding off correctly in the customer main ledger for the voucher.
--	The TDS section code and invoice number is not appearing in TDS inquiries. 
+-	Incorrect tax information is created from sales agreement and pushed to the sales order. Specifically, the **Address** field displays the address of the legal entity instead of the warehouse address. 
+-	When you post a free text invoice with GST tax and you selected to round off when setting up currencies, the system is not rounding the invoice amount for the customer sub-ledger account, but is rounding off correctly in the customer main ledger for the voucher.
+-	The TDS section code and invoice number are not appearing in TDS inquiries. 
  
