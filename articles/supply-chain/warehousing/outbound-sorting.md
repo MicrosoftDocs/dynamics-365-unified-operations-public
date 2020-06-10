@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.9
 
 # Outbound sorting
 
+[!include [banner](../includes/banner.md)]
+
 This functionality makes it easier to handle small containers and will enable warehouse workers to better plan and organize pallet capacity within the truck.
 
 With outbound sorting, you can sort packed containers to the correct pallet after a packing station and build a packing hierarchy.
