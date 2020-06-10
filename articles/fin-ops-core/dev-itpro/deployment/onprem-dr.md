@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: On-premises Disaster Recovery Configuration
-description: This document describes how to configure Dynamics 365 for Finance and Operations on-premises for Disaster Recovery (DR) and the process for switching between the primary and secondary datacenters.
+title: On-premises disaster recovery configuration
+description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery (DR) and the process for switching between the primary and secondary data centers.
 author: faix
 manager: AnnBe
-ms.date: 05/16/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,13 +23,13 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2019-07-31 
+ms.search.validFrom: 2020-07-31 
 ms.dyn365.ops.version: Platform update 37 
 
 ---
 
-# On-premises Disaster Recovery Configuration
-Disaster Recovery (DR) is an important consideration also for on-premise deployments of Dynamics 365 F&O to protect you from any event that may put your organization's operations at risk. Examples for this can be equipment failures, data center break downs due to cyber attacks, electrical, physical or other disasters.
+# On-premises disaster recovery configuration
+Disaster recovery (DR) is an important consideration for on-premise deployments of Dynamics 365 Finance + Operations (on-premises) to protect you from any event that may put your organization's operations at risk. Examples for this can be equipment failures, data center break downs due to cyber attacks, electrical, physical, or other disasters.
 
 The core concept of DR involves the use of a second data center including a data recover environment (DR environment). It is recommended to plan, document and test DR as carefully as your production setup.
 
