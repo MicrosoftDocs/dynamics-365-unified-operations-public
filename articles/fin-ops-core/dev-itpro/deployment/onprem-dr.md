@@ -156,8 +156,8 @@ You can find the location of the config.json file by running the following comma
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
-    > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
+  > [!NOTE]
+  > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
 
 In the case that the SSRS node IP is different you'll have to modify the following values:
 
