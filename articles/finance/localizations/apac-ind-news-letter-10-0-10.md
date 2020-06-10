@@ -74,8 +74,7 @@ You can set up the **TDS exchange rate** as **TDS** and the **Accounting currenc
 -	Transaction type is not showing when the **Tax journal** is posted. 
 -	Unable to generate a recurring free text invoice using the **Free text invoice template**. 
 -	There is a difference between the sales tax payment and the actual transaction posted to tax authorities. This fix ensures that the sales tax settlement amount and the actual amount posted to the tax authority is matched. 
--	**Adjusted amount origin** field shows an incorrect value. The system is picking the adjusted base amount posted in the 
-  initial transaction and same base amount is fetching for subsequent transactions. 
+-	**Adjusted amount origin** field shows an incorrect value. The system is picking the adjusted base amount posted in the initial transaction and that same amount is used for subsequent transactions. 
 -	Tax calculation appears incorrect when a discount is applied through the **General Journal** in multi-line transactions. This happens with the discount ledger account for debit or credit. Two scenarios include:
 
     - Creating a credit note for a customer (GST is calculating negative value for discount).
