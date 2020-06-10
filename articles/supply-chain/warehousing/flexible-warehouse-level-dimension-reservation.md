@@ -106,6 +106,7 @@ The following example shows the end-to-end flow.
 For this example, demo data must be installed, and you must use the **USMF** demo data company.
 
 ### Set up an inventory reservation hierarchy to allow batch-specific reservation
+<a name="Example-batch-allocation"></a>
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**.
 2. Select **New**.
@@ -295,14 +296,17 @@ Do the following:
 
 1. Repeat the previous two steps to create a second new product with the same settings, except set the **Product number** and **Item number** to *Item2*.
 
-1. Open the **Manage inventory** tab on the action pane and select **View > On-hand inventory**, and then select **Quantity adjustment**. Adjust the on-hand inventory of the new items as specified in the following table: <!--KFM: I couldn't do this because the license plates don't exist. Should we include steps to add them? I created the LPs, but then got another error here "Location FL-001 does not allow Mixed Items". So then I changed FLOOR to allow mixed items, and that worked. Again, should we add steps for this? It told me also that Inventory status was required, so I set to "available". -->
+1. Open the **Manage inventory** tab on the action pane and select **View > On-hand inventory**, and then select **Quantity adjustment**. Adjust the on-hand inventory of the new items as specified in the following table:
+<!--KFM: I couldn't do this because the license plates don't exist. Should we include steps to add them? I created the LPs, but then got another error here "Location FL-001 does not allow Mixed Items". So then I changed FLOOR to allow mixed items, and that worked. Again, should we add steps for this? It told me also that Inventory status was required, so I set to "available". -->
 
     | Item      | Warehouse    | Location | License plate | Quantity |
     |-----------|--------------|----------|---------------|----------|
-    | Item1     | 24           | FL-001   | LP01          | 10       |
-    | Item1     | 24           | FL-002   | LP02          | 10       |
-    | Item2     | 24           | FL-001   | LP01          | 5        |
-    | Item2     | 24           | FL-002   | LP02          | 5        |
+    | Item1     | 24           | FL-010   | LP01          | 10       |
+    | Item1     | 24           | FL-011   | LP02          | 10       |
+    | Item2     | 24           | FL-010   | LP01          | 5        |
+    | Item2     | 24           | FL-011   | LP02          | 5        |
+> [!NOTE]
+    >You will need to create the two license plates and use locations which allows to carry mixed items, like FL-010 and FL-011.
 
 ### Create a sales order and reserve a specific license plate
 
@@ -395,7 +399,8 @@ The following key rule is applied to all these exception handling actions: the b
 
 ### Example scenario
 
-An example of this scenario is a situation where previously completed work is being unpicked by using the **Reduce picked quantity** function. This example continues the previous example in this topic.
+An example of this scenario is a situation where previously completed work is being unpicked by using the **Reduce picked quantity** function. This example continues the previous example:
+[Example scenario: Batch number allocation](#Example-batch-allocation).
 
 1. Go to **Warehouse management** \> **Loads** \> **Active loads**.
 2. Select the load that was created in connection with the shipment of your sales order.
