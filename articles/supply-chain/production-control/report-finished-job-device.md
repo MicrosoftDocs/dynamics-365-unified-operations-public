@@ -5,7 +5,7 @@ title: Report as finished from the job card device
 description: This topic describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/18/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
