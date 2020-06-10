@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-premises disaster recovery configuration
-description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery (DR) and the process for switching between the primary and secondary data centers.
+description: This content describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery (DR) and the process for switching between the primary and secondary data centers.
 author: faix
 manager: AnnBe
 ms.date: 06/10/2020
@@ -31,40 +31,39 @@ ms.dyn365.ops.version: Platform update 37
 # On-premises disaster recovery configuration
 Disaster recovery (DR) is an important consideration for on-premise deployments of Dynamics 365 Finance + Operations (on-premises) to protect you from any event that may put your organization's operations at risk. Examples for this can be equipment failures, data center break downs due to cyber attacks, electrical, physical, or other disasters.
 
-The core concept of DR involves the use of a second data center including a data recover environment (DR environment). It is recommended to plan, document and test DR as carefully as your production setup.
+The core concept of DR involves the use of a second data center including a data recover environment (DR environment). It is recommended to plan, document, and test DR as carefully as your production setup.
 
-**Please note:**
-High Availability configuration isn't covered within this document – for the minimum setup required for High Availability read [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)
+> [!Note]
+> High availability configuration isn't covered within this content. For the minimum setup required for high availability read [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements).
 
-### Limitations of this document
+### Limitations of this content
 
-This document won't go into specific configuration details for disaster recovery of the following components:
+This content won't go into specific configuration details for disaster recovery of the following components:
   - AD FS
   - File storage
-  - SQL server.
+  - SQL Server
 
 ### Recommendations
 
 Remember to keep your DR environment updated with the latest Windows Updates. Your environment will have the latest security updates and won't require updates during a disaster event.
 
-Ensure that you're applying new pre-requisites that are specified by Microsoft. Also, keep your Service Fabric Cluster updated and do certificate rotations as required.
+Ensure that you're applying new pre-requisites that are specified by Microsoft. Also, keep your Service Fabric cluster updated and do certificate rotations as required.
 
-Once you've read through this document, write-up the steps that need to be taken by your team. Afterwards, run through the steps multiple times to ensure you don't come across unexpected problems and minimize the potential downtime. 
+Once you've read through this content, write-up the steps that need to be taken by your team. Afterwards, run through the steps multiple times to ensure you don't come across unexpected problems and minimize the potential downtime. 
 
 ## Overview
 
-The basic configuration for DR involves deploying a duplicate of the production environment within another datacenter (the secondary datacenter) and replicating databases to that datacenter. If a disaster event takes place, a few manual steps can be executed to bring the environment within the secondary datacenter online.
+The basic configuration for DR involves deploying a duplicate of the production environment within another data center (the secondary datacenter) and replicating databases to that data center. If a disaster event takes place, a few manual steps can be executed to bring the environment within the secondary datacenter online.
 
 The diagram below illustrates, at a high level, the required setup:
 
 ![Disaster Recovery architecture](media/DRArchitecture.png)
 
+## Environment configuration
 
-## Environment Configuration
+Within LCS, the production environment should be deployed, as usual, by using the environment slot named **PRODUCTION**. Your DR environment **won't** use an additional environment slot in LCS. It will instead **reuse** the slot for your production environment. 
 
-Within LCS, the production environment should be deployed as usual by using the environment slot named **PRODUCTION**. Your DR environment **won't** use an additional environment slot in LCS. It will instead **reuse** the slot for your production environment. 
-
-Dynamics 365 for Finance and Operations [AOS and SQL Server must be colocated](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same datacenter.
+Dynamics 365 for Finance and Operations [AOS and SQL Server must be colocated](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same data center.
 
 ## Deploying code packages to Production
 
@@ -74,30 +73,30 @@ When code packages are deployed to the production environment, they don't need t
 
 The DR environment should have almost the same configuration as the production environment. The table below illustrates the shared and specific settings for DR:
 
-| Environment Settings | DR Environment|
+| Environment settings | DR environment|
 |---------------------------------|----------------|
-| **Active Directory Settings**   |                |
+| **Active Directory settings**   |                |
 | Administrator user              | Same as production|
 | ADFS URL                        | Same as production|
 | ADFS OpenId Connect client ID for AOS | Same as production|
 | ADFS OpenId Connect client ID for Financial Reporting | Same as production|
-| **SQL Database Configuration**  |                 |
-| SQL server name                 | Same as production |
+| **SQL Database configuration**  |                 |
+| SQL Server name                 | Same as production |
 | AX database name                | Same as production |
 | Financial Reporting database name| Same as production |
-| **File Share Settings**         |                 |
+| **File share settings**         |                 |
 | File share for document store   | Same as production |
 | File share certificate thumbprint | Same as production |
-| **SSRS Configuration Settings** |                 |
+| **SSRS configuration settings** |                 |
 | IP address of SSRS instance     | Can be different <sup>1</sup> |
 | SSRS certificate thumbprint     | Same as production |
-| **Configure Service Settings**  |                 |
+| **Configure service settings**  |                 |
 | DNS host name of Dynamics 365 instance | Can be different <sup>2</sup>|
 | AOS service user                | Same as production |
 | MR application service user     | Same as production |
 | MR process service user         | Same as production |
 | MR click-once service user      | Same as production |
-| **Application Certificate Settings** |                 |
+| **Application certificate settings** |                 |
 | Data encryption certificate thumbprint| Same as production |
 | Data signing certificate thumbprint | Same as production   |
 | Session authentication certificate thumbprint | Same as production |
@@ -108,9 +107,9 @@ The DR environment should have almost the same configuration as the production e
 
 <sup>2</sup> This depends on your network configuration, if you've a load balancer that can handle diverting traffic to the other environment then the host name can be the same. If you're unable to do that, then use a different host name. 
 
-## SQL Server Always-On Availability Configuration
+## SQL Server Always-On Availability configuration
 
-The business data database (AXDB) should be replicated to the secondary datacenter, typically using [SQL Server Always-On Availability Groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+The business data database (AXDB) should be replicated to the secondary data center, typically using [SQL Server Always-On Availability Groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 | Database | Replicated |
 |----------|------------|
@@ -142,7 +141,7 @@ Download the LocalAgent installer and configuration file from LCS to your disast
 >[!IMPORTANT]
 > Do not make changes to your connector settings in LCS. 
 
-From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the Message Queue. That's why its important you ensure no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster. 
+From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the message queue. That's why its important you ensure no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster. 
 
 >[!CAUTION]
 > The LocalAgent must only be running in one datacenter at a time. At this point it should only be running in your secondary datacenter.
@@ -205,15 +204,15 @@ If changing the host name, the following modifications will be required:
 ```
 
 >[!IMPORTANT]
-> If changing the hostname url for your deployment ensure that your AD FS server is configured to accept the new url. For more information check out [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
+> If changing the hostname URL for your deployment ensure that your AD FS server is configured to accept the new URL. For more information check out [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
 As the fileshare is shared between the production and DR environments, this predeployment script should be disabled. Only enable it when deploying to your Disaster Recovery environment. 
 
 ### Ensure reports get deployed
 
-As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Do the actions below according to the Platform update that your environment is in. 
+As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Do the actions below according to the version that your environment is in. 
 
-#### Platform Update 37 or later
+#### Version 10.0.13 or later
 
 Run the following command against your business data database (AXDB):
 
@@ -221,7 +220,7 @@ Run the following command against your business data database (AXDB):
 	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
 ```
 
-#### Platform Update 36 or earlier
+#### Version 10.0.12 or earlier
 
 Run the following command against your business data database (AXDB):
 
@@ -230,11 +229,11 @@ Run the following command against your business data database (AXDB):
 ```
 
 >[!NOTE]
-> For Platform update 36 and earlier a full database synchronization will be executed.
+> If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
 
 ### Deploy your environment
 
-If your production environment is on Platform update 36 or earlier. Follow the instructions 
+If your production environment is on 10.0.12 or earlier, follow these instructions. 
 
 1. In LCS navigate to the environment page for your production environment.
 
