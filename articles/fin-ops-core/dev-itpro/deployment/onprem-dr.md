@@ -225,15 +225,13 @@ Run the following command against your business data database (AXDB):
 Run the following command against your business data database (AXDB):
 
 ```sql
-    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
 ```
 
 >[!NOTE]
 > If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
 
 ### Deploy your environment
-
-If your production environment is on 10.0.12 or earlier, follow these instructions. 
 
 1. In LCS navigate to the environment page for your production environment.
 
