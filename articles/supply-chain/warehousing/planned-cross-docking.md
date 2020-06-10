@@ -93,7 +93,7 @@ Planned cross docking is implemented as a *Load posting method*. After enabling 
         *FEFO Criteria*: Maximum number of days between the expiration date of the first expiring batch currently in the warehouse and the batch being received.
 
 1. In the **Supply sources** FastTab you specify what types of supply are valid for this template.
-1. Select **New** from the Toolbar and enter the following:
+1. Select **New** from the toolbar and enter the following:
     - **Sequence number** - *1*
     - **Supply source** - *Purchase order*
 
@@ -117,7 +117,7 @@ Planned cross docking is implemented as a *Load posting method*. After enabling 
     - **Work template description** – *51 Cross Dock*
 1. Select **Save** to enable the *Work Template Details* section.
 
-1. In the **Work Template Details** Toolbar, select **New** to add a line and enter the following:
+1. In the **Work Template Details** toolbar, select **New** to add a line and enter the following:
     - **Work type** – *Pick*
     - **Work class ID** – *CrossDock*
 
@@ -142,12 +142,12 @@ Planned cross docking is implemented as a *Load posting method*. After enabling 
     - **Warehouse** - *51*
 1. Select **Save** to enable the **Lines** FastTab.
 
-1. In the **Lines** Toolbar, select **New** to add a line. Enter the following:
+1. In the **Lines** toolbar, select **New** to add a line. Enter the following:
     - **From quantity** - *1*
     - **To quantity** - *1,000,000*
     - Select **Save** to enable the **Location Directive Actions** FastTab.
 
-1. In the **Location Directive Actions** Toolbar, select **New** to add a line. Enter the following:
+1. In the **Location Directive Actions** toolbar, select **New** to add a line. Enter the following:
     - **Name** - *Baydoor*
     - **Fixed location usage** - *Fixed and non-fixed locations*
 1. Select **Save** to enable **Edit query**.
@@ -171,7 +171,7 @@ Planned cross docking is implemented as a *Load posting method*. After enabling 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. Select **Purchase Put-away** from the list of menu items in the left column.
 1. Select **Edit**.
-1. In the **Work classes** FastTab, select **New** on the Toolbar to add a new line and enter the following:
+1. In the **Work classes** FastTab, select **New** on the toolbar to add a new line and enter the following:
     - **Work class ID** - *CrossDock*
     - **Work order type** - *Cross docking*
 
@@ -251,16 +251,16 @@ The second **Work ID** created is with **Work order type** of *Purchase orders* 
 Both work IDs currently have the same target license plate. You must get the work ID and target licence plate ID to complete the next steps. You can get this from the work details for the purchase order line and sales order line. Alternately, you can go to **Warehouse management > Work > Work details** and filter the work for where **Warehouse** is *51*.
 
 1. On the mobile device, go to **Inbound > Purchase put-away** and enter the target license plate from the work.
-1. In the **ID** field, enter the target license plate ID from the work details. <!-- KFM: Continue here --> The cross docking - Pick form will display the picking location (RECV), Target LP (License plate), Item (A0001) and quantity (3).
+1. In the **ID** field, enter the target license plate ID from the work details. The cross docking pick screen will display the picking location (RECV), target license plate (license plate), item (A0001) and quantity (3).
 
-1. Select **OK**
+1. Select **OK**.
 1. Next enter a **Target LP** for the licence plate ID that will be put (cross docked) to the shipping location. Select a license plate ID of your choosing.
 
 1. Select **OK**.
-1. On the next screen, enter the *Target license plate ID* in the **ID** field and select **OK**.
-1. Confirm the work for picking the remaining quantity of 2, select **OK**.
+1. On the next screen, enter the target license plate ID in the **ID** field and select **OK**.
+1. Confirm the work for picking the remaining quantity of 2 and select **OK**.
 1. Select **Done** on the next screen to end the picking process and begin the put away process.
-1. The screen will present you with the location and license plate to put the item.
+1. The screen presents you with the location and license plate to put the item.
 1. Confirm the bulk storage **Put** by selecting **OK**.
 1. Confirm the cross docking **Put** by selecting **OK** on the next screen. The message "Work Completed" is displayed.
 
