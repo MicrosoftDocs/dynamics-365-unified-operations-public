@@ -2,10 +2,10 @@
 # required metadata
 
 title: Planned cross docking
-description: XXXX
-author: XXXX
+description: This topic describes advanced planned cross docking, where the inventory quantity required to satisfy an order will be directed to the correct outbound dock or staging area straight from receipt or creation. All remaining inventory from the inbound source will be directed to the correct storage location through regular put away process.
+author: Mirzaab
 manager: tfehr
-ms.date: mm/dd/yyyy
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,16 +22,16 @@ ms.search.scope:  Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: XXXX
-ms.search.validFrom: yyyy-mm-dd
-ms.dyn365.ops.version: Release 10.0.xx
+ms.author: mirzaab
+ms.search.validFrom: 2020-06-10
+ms.dyn365.ops.version: Release 10.0.9
 ---
 
 # Planned cross docking
 
 [!include [banner](../includes/banner.md)]
 
-This functionality introduces advanced planned cross docking where the inventory quantity required to satisfy an order will be directed to the correct outbound dock or staging area straight from receipt or creation. All remaining inventory from the inbound source will be directed to the correct storage location through regular put away process. This warehouse process is called cross docking.
+This functionality introduces advanced planned cross docking, where the inventory quantity required to satisfy an order will be directed to the correct outbound dock or staging area straight from receipt or creation. All remaining inventory from the inbound source will be directed to the correct storage location through regular put away process. This warehouse process is called cross docking.
 
 Cross docking therefore allows the worker to skip inbound put away and outbound picking of inventory that is already marked to an outbound order. The result is minimized number of touches of inventory where possible, together with greater time and space savings on the warehouse shop floor due to less interaction with the system.
 
@@ -51,13 +51,13 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Setup
 
-### Regenerate Load Posting Methods
+### Regenerate load posting methods
 
-Planned cross docking is implemented as a **Load posting method**. After enabling the feature you need to regenerate the methods.
+Planned cross docking is implemented as a *Load posting method*. After enabling the feature you must regenerate the methods.
 
 1. Go to **Warehouse management > Setup > Load posting methods**.
-1. Select **Regenerate methods** from the Toolbar.
-1. When regeneration is completed you will see a **Method name** of **planCrossDocking**.
+1. Select **Regenerate methods** from the Action Pane.
+1. When regeneration is completed, you will see a **Method name** of **planCrossDocking**.
 1. Close the form.
 
 ### Cross Dock Template
@@ -248,7 +248,7 @@ The second **Work ID** created is with **Work order type** of *Purchase orders* 
 
 ### Put away to cross dock and bulk
 
-Both work ID's currently have the same target license plate. You will need to get the work ID and target licence plate ID to complete the next steps. You can get this from the work details for the purchase order line and sales order line. Alternately, you can go to **Warehouse management > Work > Work details** and filter the work for where **Warehouse** is *51*.
+Both work IDs currently have the same target license plate. You must get the work ID and target licence plate ID to complete the next steps. You can get this from the work details for the purchase order line and sales order line. Alternately, you can go to **Warehouse management > Work > Work details** and filter the work for where **Warehouse** is *51*.
 
 1. On the mobile device, go to **Inbound > Purchase put-away** and enter the target license plate from the work.
 1. In the **ID** field, enter the target license plate ID from the work details. <!-- KFM: Continue here --> The cross docking - Pick form will display the picking location (RECV), Target LP (License plate), Item (A0001) and quantity (3).
