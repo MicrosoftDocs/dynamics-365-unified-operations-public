@@ -269,11 +269,12 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 ### Failback Checklist
 
-[] 1. Non-Orchestrator nodes are disabled in DR datacenter.
-[] 2. SQL Server is failed back to primary datacenter.
-[] 3. LocalAgent is uninstalled in your DR datacenter.
-[] 4. All Dynamics Service Fabric services (including LocalAgent) are running in your primary datacenter.
-[] 5. No Dynamics Service Fabric services are deployed in your DR datacenter. 
+> [!div class="checklist"]
+> * 1. Non-Orchestrator nodes are disabled in DR datacenter.
+> * 2. SQL Server is failed back to primary datacenter.
+> * 3. LocalAgent is uninstalled in your DR datacenter.
+> * 4. All Dynamics Service Fabric services (including LocalAgent) are running in your primary datacenter.
+> * 5. No Dynamics Service Fabric services are deployed in your DR datacenter. 
 
 >[!IMPORTANT]
 > Your primary environment will be back to functioning as usual and can once again be serviced once you ensure all items in the checklist are verified.
