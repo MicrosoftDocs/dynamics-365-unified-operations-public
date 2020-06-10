@@ -48,7 +48,7 @@ The following features are included in this release. The feature titles link to 
  - [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
  - [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
  - [External data for cashflow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.coms/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
+ - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
  - [Automatic vendor payment proposal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
  
  ### Public sector
