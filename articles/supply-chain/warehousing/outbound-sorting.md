@@ -1,10 +1,39 @@
+---
+# required metadata
+
+title: Outbound sorting
+description: Outbound sorting makes it easier to handle small containers and will enable warehouse workers to better plan and organize pallet capacity within the truck.
+author: Mirzaab
+manager: tfehr
+ms.date: 06/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-06-10
+ms.dyn365.ops.version: Release 10.0.9
+---
+
 # Outbound sorting
 
-With this functionality, several industries will experience easier handling of small containers and will enable the warehouse workers to better plan and organize pallet capacity within the truck.
+This functionality makes it easier to handle small containers and will enable warehouse workers to better plan and organize pallet capacity within the truck.
 
-With outbound sorting you now can sort packed containers to the correct pallet after a packing station, and to build a packing hierarchy.
+With outbound sorting, you can sort packed containers to the correct pallet after a packing station and build a packing hierarchy.
 
-This functionality allows for the building of pallets from containers packed through the packing functionality. The container is not sent to the final shipping location as it would be in the original Packing flow. Instead, this functionality allows the user to close the container and move it to a Sort type location. They can then sort containers onto positions, each position has a license plate. Once the containers have been sorted, work can be created to send the whole LP to the final shipping dock or stage locations based on Location Directives/customer requirements. The closing of the sort position can also immediately move the inventory to the final shipping location and pick it to the order.
+This functionality lets you build pallets from containers packed through the packing functionality. The container is not sent to the final shipping location as it would be in the original packing flow. Instead, this functionality allows workers to close the container and move it to a sort type location. They can then sort containers onto positions, each position has a license plate. Once the containers have been sorted, work can be created to send the whole license plate to the final shipping dock or stage locations based on location directives of your own requirements. The closing of the sort position can also immediately move the inventory to the final shipping location and pick it to the order.
 
 ## Enable the Outbound sorting feature
 
