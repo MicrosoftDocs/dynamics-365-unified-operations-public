@@ -49,7 +49,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Reason for deprecation/removal** | The data action hooks feature has been deprecated due to performance issues. |
 | **Replaced by another feature?**   | It is recommended to instead use [data action overrides](data-action-overrides.md) to modify business logic in the data action layer.|
 | **Product areas affected**         | E-Commerce extensibility data actions |
-| **Deployment option**              | N/A |
+| **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
 ## Features removed or deprecated in the Commerce 10.0.10 release
