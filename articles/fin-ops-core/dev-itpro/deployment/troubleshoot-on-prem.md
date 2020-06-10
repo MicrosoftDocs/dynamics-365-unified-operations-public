@@ -1478,4 +1478,5 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 ```
 
 **Reason:** This issue may occur because the SQL password contains special characters.
+
 **Resolution:** Update the password of the SQL user and remove the special characters. Then, update the Credentials.json file with the new password and retry the deployment from LCS.
