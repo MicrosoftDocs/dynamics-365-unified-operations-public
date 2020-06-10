@@ -117,7 +117,7 @@ The example scenario requires that you prepare two location profiles.
 1. Make a note of the Putaway location, and confirm. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Purchase Put-away** and return to the **Inbound** menu.
 1. Select **Back** to return to the main menu.
-1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Filter on **Location**, and enter the putaway location from the purchase order work. You should see the following results:
 
     - The **Location status** column shows a value of *Storage*, because the last transaction against this location was a put.
@@ -131,7 +131,7 @@ The example scenario requires that you prepare two location profiles.
 1. Confirm the **To Information** **LP** (target license plate ID) that is automatically generated. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to exit **Movement** and return to the **Quality Management** menu.
 1. Select **Back** to return to the main menu.
-1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Refresh the **Locations** page, and view the original putaway location again. Notice that the **Location status** field is now set to *Empty*, and the **Item number** column is blank.
 1. View the record for location *06A07R2S1B*, and notice that the **Status** value has changed to *Storage*, and the **Item number** and **Last activity date and time** fields have been updated.
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
@@ -165,7 +165,7 @@ The example scenario requires that you prepare two location profiles.
 1. Select the **TARGET LP** field, enter a user-defined target license plate ID, and confirm.
 1. Confirm once more to complete the picking work. A "Work Completed" message appears at the bottom of the page.
 1. Select the Menu button in the upper-right corner, and then select **Cancel** to complete the picking activity and return to the **Outbound** menu.
-1. In D365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In Dynamics 365 Supply Chain Management, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Filter on **Location**, and enter the pick location from the sales order work.
 1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field has been updated.
 
