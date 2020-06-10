@@ -5,7 +5,7 @@ title: What's new or changed for APAC India GST Localization in 10.0.09 (April 2
 description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.09.
 author: prabhatb
 manager: Wangcheng
-ms.date: 06/09/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,7 +75,7 @@ With debug mode enabled, the system will generate a log file that contains the d
 -	GTE set off hierarchy version does not get the latest version. 
 -	Journal voucher description truncation issue for GST transaction. 
 -	Stock transfer order shipment voucher is not showing in the **GSTR-2** report.
--	With direct delivery for a purchase order, the customer's is included in the customer's tax information. 
+-	With direct delivery for a purchase order, the customer's address is included in the customer's tax information. 
 -	GSTIN registration numbers and TDS registration numbers are not shared with the other legal entities when data is imported from the **Data management** module even after sharing is enabled. 
 -	GST tax amount is deducted twice from the sale of assets net amount when **Price inclusive tax** is enabled.
 -	When a vendor invoice is settled, the following error occurs, "Object reference not set to an instance of an object". 
