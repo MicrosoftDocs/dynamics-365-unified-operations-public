@@ -45,5 +45,46 @@ The Retail SDK must be added to Azure Repos Git, GitHub or VSTS. The Retail SDK 
 1.	Select Pipeline in Azure DevOps and click New pipeline.
 2.	Select your source repo.
 3.	Click the Pipeline and provide a name for your pipeline. Choose the Agent pool as Azure pipeline and Agent specification as vs2017-win2016.
+4. In the Get sources tab, select the RetailSDK Repo.
+5. In the Agent job, provide some display name and in Agent pool select <inherit from pipeline>
+6. In the task steps, add msbuild task and select the Project as RetailSDK\dirs.proj or RetailSDK\Code\dirs.proj depends on how the Retail SDK is structured. Set the MSBuild version as MSBuild 15.0 and MSBuild Architecture as MsBuild x86.
+7.	Add PowerShell (Run PowerShell script on Linux, macOS or Windows) task and give some name and select the Type as Inline.
+8.	In the PowerShell script section, copy and paste the below script:
+
+```Powershell
+    # Script to copy the Retail deployable package with Build number.
+
+    Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Code\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
+    "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
+```
+9. Add Publish build artifact task, provide the display name, drop name, and set the Path to publish field value as $(Build.ArtifactStagingDirectory)
+10.	Save the changes and queue the build.
+11.	Once the build is completed, the Retail deployable package will be available for download in the Published Artifacts.
+
+## Sample Yaml script for the pipeline:
+
+```Powershell
+pool:
+  name: Azure Pipelines
+  demands: msbuild
+
+steps:
+- task: MSBuild@1
+  displayName: 'Build solution RetailSDK/Code/dirs.proj'
+  inputs:
+    solution: RetailSDK/Code/dirs.proj
+    msbuildVersion: 15.0
+
+- powershell: |
+   # Script to copy the Retail deployable package with Build number.
+   
+   Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Code\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
+   "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
+   
+  displayName: 'Copy the Retail deployable package'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+```
     
     
