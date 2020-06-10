@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 # Financial reconciliation in retail stores
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 In Dynamics 365 Commerce versions 10.0.10 and earlier, the functionality for end of day processes in retail stores in the point of sale (POS) client allows a store clerk and store manager to perform end of day operations such as tender declaration, blind close shift, reconcile shift transactions, and close shift. There is no capability in POS to finalize the financial information for shifts that can  be used to post the financials in Commerce headquarters. 
 
