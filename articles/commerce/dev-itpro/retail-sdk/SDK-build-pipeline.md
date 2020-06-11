@@ -54,38 +54,52 @@ The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK
 
     ![Get sources](media/Step2.png)
 
+    :::image type="content" source="media/Step2.png" alt-text="Get sources":::
+    
 6. In the **Agent job** panel, provide a display name. For **Agent pool**, select **\<inherit from pipeline\>**.
     
     ![Hosted Agent](media/Step3.png)
     
+    :::image type="content" source="media/Step3.png" alt-text="Hosted Agent":::
+
 7. In the **Tasks**, add an MSBuild task and select the Project as RetailSDK\dirs.proj or RetailSDK\Code\dirs.proj depends on how the Retail SDK is structured. Set the MSBuild version as MSBuild 15.0 and MSBuild Architecture as MsBuild x86.
 
     ![MSBuild task](media/Step4.png)
     
+    :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
+
 8.	Add PowerShell (Run PowerShell script on Linux, macOS or Windows) task and give some name and select the Type as Inline.
 9.	In the PowerShell script section, copy and paste the below script:
 
-```Powershell
-    # Script to copy the Retail deployable package with Build number.
+    ```Powershell
+        # Script to copy the Retail deployable package with Build number.
 
-    Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
-    "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
-```
+        Copy-Item "$(Build.SourcesDirectory)\RetailSDK\Packages\RetailDeployablePackage\RetailDeployablePackage.zip" -Destination
+        "$(Build.ArtifactStagingDirectory)\RetailDeployablePackage_$(Build.BuildNumber).zip"
+    ```
 
-![Copy Retail deployable package](media/Step5.png)
+    ![Copy Retail deployable package](media/Step5.png)
+
+    :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
 
 10. Add Publish build artifact task, provide the display name, drop name, and set the Path to publish field value as $(Build.ArtifactStagingDirectory)
 
-![Publish Artifact](media/Step7.png)
+    ![Publish Artifact](media/Step7.png)
+
+    :::image type="content" source="media/Step7.png" alt-text="Publish Artifact":::
 
 10.	Save the changes and queue the build.
 11.	Once the build is completed, the Retail deployable package will be available for download in the Published Artifacts.
 
-![Download Artifact](media/Step8.png)
+    ![Download Artifact](media/Step8.png)
 
-## Sample Yaml script for the pipeline:
+    :::image type="content" source="media/Step8.png" alt-text="Download Artifact":::
 
-```Powershell
+## Sample Yaml script for the pipeline
+
+The following Yaml script specifies the pipeline.
+
+```YAML
 pool:
   name: Azure Pipelines
   demands: msbuild
@@ -111,7 +125,7 @@ steps:
 
 ## Setup Azure DevOps build pipeline using build machine:
 
-If build machine is for msbuild with the Azure DevOps pipeline, please follow the below steps in the build machine to make it work with 10.0.11 SDK:
+If build machine is for MSBuild with the Azure DevOps pipeline, follow these steps in the build machine to make it work with 10.0.11 SDK:
 
 1. Install VS 2017 in the build machine.
 2. Please do a msbuild(msbuild version 15.0) with developer command prompt for VS 2017 in the build machine. Open the developer command prompt for VS 2017 and navigate to Retail SDK root folder and type msbuild dirs.proj and make sure the msbuild complete successfully. Note: This step is optional. 
