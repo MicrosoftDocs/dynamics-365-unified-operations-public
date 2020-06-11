@@ -27,7 +27,6 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-
 # Engineering change management
 
 Engineering change management gives you the possibility to have a *structured process to manage changes to engineering products*. There is a structured process for proposing and requesting changes in the *engineering change request* and there is a structured process for making changes in the *engineering change order*. This will allow you to create the engineering change request and engineering change order, have a process for reviewing and approving them, assessing the impact on existing transactions and following up on them.
