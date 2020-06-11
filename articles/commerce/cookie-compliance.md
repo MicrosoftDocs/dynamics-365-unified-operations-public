@@ -37,15 +37,15 @@ This topic describes considerations for cookie compliance and the default polici
 
 ## Overview
 
-Privacy is an important factor whenever any tracking technologies that affect e-Commerce customers are used. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
+Privacy is an important factor when tracking technologies that affect e-Commerce customers. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
 
 To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.
 
 The following table shows the current reference list of cookies placed by Dynamics 365 Commerce sites.
 
-| Cookie  Name                                | Usage                                                        |
+| Cookie name                               | Usage                                                        |
 | ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Store Azure AD authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). |
+| .AspNet.Cookies                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). |
 | &#95;msdyn365___cart&#95;                           | Store cart ID used to obtain list of products added to cart instance. |
 | &#95;msdyn365___ucc&#95;                            | Cookie compliance consent tracking.                          |
 | ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. |
