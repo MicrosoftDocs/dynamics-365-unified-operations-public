@@ -47,6 +47,8 @@ The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK
 4. Click the pipeline and provide a name for your pipeline. For **Agent pool**, choose **Azure Pipelines**. For **Agent Specification**, enter **vs2017-win2016**.
 
     ![Pipeline](media/Step1.png)
+    
+    :::image type="content" source="media/Step1.png" alt-text="Pipeline":::
 
 5. In the **Get sources** tab, select your RetailSDK Repo.
 
