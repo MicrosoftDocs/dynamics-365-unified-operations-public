@@ -61,13 +61,13 @@ You can select the tables and entities that should be staged in Data Lake.
 2. Select **Configure Data feeds for export to Lake**.
 3. On the **Configure data feeds to Data lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is already being synced. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
-    ![Selecting tables](./media/export-tables-data-lake-unselected.png)
+    ![Selecting tables](./media/export-tables-data-lake-unselectedv2.png)
 
     If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
     
     - On the **Choose using Entities** tab, select entities, and then select **Add Tables using Entities**.
 
-    ![Selecting tables by using entities](./media/export-entities-data-lake-unselected.png)
+    ![Selecting tables by using entities](./media/export-entities-data-lake-unselectedv2.png)
 
     Regardless of the method that you use to select tables, the tables will be staged in Data Lake.
 
@@ -75,4 +75,4 @@ You can select the tables and entities that should be staged in Data Lake.
 
 You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Active** tab of the **Configure data feeds to Data lake** page.
 
-![Monitoring table progress](./media/export-tables-data-lake-monitor.png)
+![Monitoring table progress](./media/export-tables-data-lake-monitorv2.png)
