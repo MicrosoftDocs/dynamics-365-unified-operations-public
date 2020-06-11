@@ -41,25 +41,25 @@ Privacy is an important factor whenever any tracking technologies that affect e-
 
 To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.
 
-The following is the current reference list of cookies dropped by Dynamics Commerce e-Commerce sites:
+The following table shows the current reference list of cookies placed by Dynamics 365 Commerce sites.
 
 | Cookie  Name                                | Usage                                                        |
 | ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Store AAD auth cookies for SSO. Store encrypted user principal  (name, surname, email) |
-| /_msdyn365___cart/_                           | Store cart id so we can get list of products added to cart  instance. |
-| /_msdyn365___ucc/_                            | cookie compliance consent tracking                           |
-| ai_session                                  | Detect how many sessions of user activity have included  certain pages and features of the app. |
-| ai_user                                     | Detect how many people used the app and its features. Users  are counted by using anonymous IDs. |
-| b2cru                                       | Store redirect url dynamically                               |
+| .AspNet.Cookies                             | Store Azure AD authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). |
+| &#95;msdyn365___cart&#95;                           | Store cart ID used to obtain list of products added to cart instance. |
+| &#95;msdyn365___ucc&#95;                            | Cookie compliance consent tracking.                          |
+| ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. |
+| ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. |
+| b2cru                                       | Stores redirect URL dynamically.                              |
 | JSESSIONID                                  | Used by payment connector Adyen to store user session.       |
-| OpenIdConnect.nonce./*                       | Authentication                                               |
-| x-ms-cpim-cache:./*                          | Used for maintaining the request state.                      |
-| x-ms-cpim-csrf                              | Cross-Site Request Forgery token used for CRSF protection    |
-| x-ms-cpim-dc                                | Used to route requests to the appropriate production  authentication server instance. |
-| x-ms-cpim-rc./*                              | Used to route requests to the appropriate production  authentication server instance. |
-| x-ms-cpim-slice                             | Used to route requests to the appropriate production  authentication server instance. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session                         |
-| x-ms-cpim-trans                             | Used for tracking the transactions (as in a number of  open tabs authenticating against B2C) and the current transaction. |
+| OpenIdConnect.nonce.&#42;                       | Authentication                                               |
+| x-ms-cpim-cache:.&#42;                          | Used for maintaining the request state.                      |
+| x-ms-cpim-csrf                              | Cross-site request forgery (CRSF) token used for protection from CRSF.     |
+| x-ms-cpim-dc                                | Used to route requests to the appropriate production authentication server instance. |
+| x-ms-cpim-rc.&#42;                              | Used to route requests to the appropriate production authentication server instance. |
+| x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
+| x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 
 ## Additional resources
 
