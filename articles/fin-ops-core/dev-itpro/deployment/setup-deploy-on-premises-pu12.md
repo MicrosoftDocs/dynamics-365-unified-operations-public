@@ -268,8 +268,10 @@ You must create several user or service accounts for Finance + Operations to wor
 | AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
-\*\* If the password of the SQL user contains special characters it can lead to problems during deployment.
+\* If the password of the SQL user contains special characters it can lead to problems during deployment.
+
+\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
+
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
