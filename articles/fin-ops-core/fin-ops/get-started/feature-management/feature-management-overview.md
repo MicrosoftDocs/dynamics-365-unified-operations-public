@@ -142,6 +142,10 @@ The following examples describe what occurs when you use the **Feature managemen
 
 Feature management lets you to control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
 
+## New features are optional for 12 months
+
+When a new feature is installed, and isn't a critical feature, it will be optional for a 12 months period. This allows you and your organisation to plan ahead for when to uptake a feature and have it tested against your daily operations. You can read more in the One Version release note: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features
+
 ## Using Feature management to turn on ISV features or custom features
 
 Feature management is currently unavailable for features from independent software vendors (ISVs) and custom features. However, Microsoft is adding more functionality to enhance Feature management. After those enhancements are completed, Microsoft will make Feature management available to all features and provide instructions for updating your features to use it.
