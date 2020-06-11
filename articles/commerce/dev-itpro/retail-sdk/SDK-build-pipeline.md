@@ -124,6 +124,8 @@ If the build machine uses MSBuild with the Azure DevOps pipeline, follow these s
 
 ## Troubleshooting guides
 
+If the build from Azure DevOps fails with a NuGet error, check for these problems:
+
 + The Azure pipeline is not using **msbuild**, version 15.0, for NuGet restore.
 + The extension projects have not been upgraded to use the package reference model.
 
