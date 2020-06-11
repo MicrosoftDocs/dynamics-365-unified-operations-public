@@ -43,7 +43,7 @@ The **Export to Azure Data Lake** feature lets you configure your Finance and Op
 > - **This feature might not be available in all regions and/or all environments.** If you don't see this feature in your environment, it isn't available yet.
 > - To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
 
-Before you can use this feature, you need to **configure Export to Data lake**. For more information, see[Configure export to Azure Data Lake](configure-export-data-lake.md).
+Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 The system installs and configures the data lake for the environment. After installation and configuration are completed, you should see **Azure Data Lake** listed on the **Environment** page.
 
