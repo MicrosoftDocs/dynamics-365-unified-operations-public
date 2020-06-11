@@ -13,7 +13,7 @@ The inventory journals in Supply Chain Management are used to post physical inve
 
 1. **Enable &#39;Inventory journal approval workflow&#39; in the Feature management**
 
-In the Feature Management, select feature name as &#39;Inventory journal approve workflow&#39; and enable the feature. Once enabled, the user can configure workflow for inventory journal&#39;s approval process.
+  In the Feature Management, select feature name as &#39;Inventory journal approve workflow&#39; and enable the feature. Once enabled, the user can configure workflow for inventory journal&#39;s approval process.
 
 1. **Configure the Inventory Management workflows**
 
