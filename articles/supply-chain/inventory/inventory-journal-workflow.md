@@ -9,6 +9,8 @@ The inventory journals in Supply Chain Management are used to post physical inve
 - Microsoft Dynamics 365 Finance and Operation apps version 10.0.9+
 - Enable Inventory journal approval workflow in the Feature Management
 
+![Feature management](media/journal-workflow-feature-management.png "Feature management")
+
 ## Instructions
 
 1. **Enable &#39;Inventory journal approval workflow&#39; in the Feature management**
