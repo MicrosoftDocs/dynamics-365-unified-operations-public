@@ -363,7 +363,7 @@
       - name: Azure Data Lake overview
         href: data-entities/azure-data-lake-overview.md
       - name: Configure export to Azure Data Lake
-        href: data-entities/configure-export-azure-data-lake.md
+        href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Make entity store available as a Data Lake 
