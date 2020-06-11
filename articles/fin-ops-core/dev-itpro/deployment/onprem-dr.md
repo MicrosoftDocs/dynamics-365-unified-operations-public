@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # On-premises disaster recovery configuration
-Disaster recovery is an important consideration for on-premises deployments of Dynamics 365 Finance + Operations (on-premises) to protect from events that could put your organization's operations at risk. Examples of such events include equipment failures, data center break downs due to cyberattacks, electrical, physical, or other disasters.
+Disaster recovery is an important consideration for on-premises deployments of Dynamics 365 Finance + Operations (on-premises) to protect from events that could put your organization's operations at risk. Examples of such events include equipment failures, datacenter break downs due to cyberattacks, electrical, physical, or other disasters.
 
-The core concept of disaster recovery involves the use of a second data center including a data recover environment. We recommend that you plan, document, and test disaster recovery as carefully as your production setup.
+The core concept of disaster recovery involves the use of a second datacenter including a data recover environment. We recommend that you plan, document, and test disaster recovery as carefully as your production setup.
 
 ### Limitations of this content
 
@@ -109,7 +109,7 @@ The disaster recovery environment should have a similar configuration as the pro
 
 ## SQL Server Always-On Availability configuration
 
-The business data database (AXDB) should be replicated to the secondary data center, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 | Database | Replicated |
 |----------|------------|
