@@ -5,7 +5,7 @@ title: Data action hooks
 description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 03/03/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Release 10.0.10
 # Data action hooks
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> The data action hooks feature has been deprecated. To avoid performance issues, we strongly recommend that you use [data action overrides](data-action-overrides.md) to modify business logic in the data action layer.
 
 This topic describes how to hook into pre- and post- data action events to further process data if needed.
 
