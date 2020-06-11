@@ -37,7 +37,7 @@ This document demonstrates how to setup the Azure DevOps build pipeline for the 
 
 ## Prerequisites
 
-The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK is available in-Service volume drive of the development virtual machine (VM) from Lifecycle Services (LCS). Follow the steps mentioned in [this doc](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) to provision a development VM in LCS.
+The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure DevOps. The Retail SDK is available in-Service volume drive of the development virtual machine (VM) from Lifecycle Services (LCS). Follow the steps mentioned in [this doc](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) to provision a development VM in LCS.
 
 ## How to setup a build pipeline in Azure DevOps
 
@@ -62,14 +62,15 @@ The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK
     
     :::image type="content" source="media/Step3.png" alt-text="Hosted Agent":::
 
-7. In the **Tasks**, add an MSBuild task and select the Project as RetailSDK\dirs.proj or RetailSDK\Code\dirs.proj depends on how the Retail SDK is structured. Set the MSBuild version as MSBuild 15.0 and MSBuild Architecture as MsBuild x86.
+7. In the **Tasks**, add an MSBuild task. For **Project**, select **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**. The choice depends on how the Retail SDK is structured. Set the **MSBuild Version** to **MSBuild 15.0**. Set **MSBuild Architecture** to **MsBuild x86**.
 
     ![MSBuild task](media/Step4.png)
     
     :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
 
-8.	Add PowerShell (Run PowerShell script on Linux, macOS or Windows) task and give some name and select the Type as Inline.
-9.	In the PowerShell script section, copy and paste the below script:
+8.	Add a PowerShell task (**Run PowerShell script on Linux, MacOS, or Windows**). Provide a name for the task. For **Type**, select **Inline**.
+
+9.	In the **Script** section, copy and paste this script:
 
     ```Powershell
         # Script to copy the Retail deployable package with Build number.
@@ -82,14 +83,15 @@ The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK
 
     :::image type="content" source="media/Step5.png" alt-text="MSBuild task":::
 
-10. Add Publish build artifact task, provide the display name, drop name, and set the Path to publish field value as $(Build.ArtifactStagingDirectory)
+10. Add a **Publish Artifact** task. Provide the **Display name** and **Artifact name** (drop name). Set the **Path to publish** to **$(Build.ArtifactStagingDirectory)**.
 
     ![Publish Artifact](media/Step7.png)
 
     :::image type="content" source="media/Step7.png" alt-text="Publish Artifact":::
 
 10.	Save the changes and queue the build.
-11.	Once the build is completed, the Retail deployable package will be available for download in the Published Artifacts.
+
+11.	When the build is complete, you can download the Retail deployable package from the **Published Artifacts**.
 
     ![Download Artifact](media/Step8.png)
 
