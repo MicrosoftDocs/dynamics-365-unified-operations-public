@@ -103,6 +103,9 @@ Because the primary field in Common Data Service is expected to have only one fi
 
 ## Relations
 
+> [!IMPORTANT]
+> It must be noted that, a write transaction that spans a virtual entity and a native entity is not supported and is discouraged in general as transactionl consistency cannot be gauranteed.
+
 Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 
 For example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
