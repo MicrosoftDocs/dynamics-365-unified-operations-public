@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Commerce SDK build pipeline
-description: This document demonstrates how to setup the Azure DevOps build pipeline for the Retail SDK.
+description: This document demonstrates how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 06/10/2020
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../../includes/banner.md)]
 
-This document demonstrates how to setup the Azure DevOps build pipeline for the Retail SDK, by using the Azure DevOps build agent (a Microsoft-hosted agent). To generate the build for Retail SDK, a dedicated build machine is not required. The setup works with the Azure DevOps build agent. This topic applies to Retail SDK version 10.0.11 or greater. 
+This document demonstrates how to set up the Azure DevOps build pipeline for the Retail SDK, by using the Azure DevOps build agent (a Microsoft-hosted agent). To generate the build for Retail SDK, a dedicated build machine isn't required. The setup works with the Azure DevOps build agent. This topic applies to Retail SDK version 10.0.11 or greater. 
 
 ## Prerequisites
 
 The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure DevOps. The Retail SDK is available in the service volume drive of the development virtual machine (VM) from Lifecycle Services (LCS). Follow the steps in [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) to provision a development VM in LCS.
 
-## How to setup a build pipeline in Azure DevOps
+## How to set up a build pipeline in Azure DevOps
 
 1. Sign in to your Azure DevOps organization.
 2. Select **Pipeline** and click **New pipeline**.
@@ -60,7 +60,7 @@ The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure D
 
     :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
 
-8.	Add a PowerShell task (**Run PowerShell script on Linux, MacOS, or Windows**). Provide a name for the task. For **Type**, select **Inline**.
+8.	Add a PowerShell task (**Run PowerShell script on Linux, macOS, or Windows**). Provide a name for the task. For **Type**, select **Inline**.
 
 9.	In the **Script** section, copy and paste this script:
 
@@ -126,8 +126,8 @@ If the build machine uses MSBuild with the Azure DevOps pipeline, follow these s
 
 If the build from Azure DevOps fails with a NuGet error, check for these problems:
 
-+ The Azure pipeline is not using **msbuild**, version 15.0, for NuGet restore.
-+ The extension projects have not been upgraded to use the package reference model.
++ The Azure pipeline isn't using **msbuild**, version 15.0, for NuGet restore.
++ The extension projects haven't been upgraded to use the package reference model.
 
 
     
