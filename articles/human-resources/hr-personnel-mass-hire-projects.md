@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HRMMassHireProject
+ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

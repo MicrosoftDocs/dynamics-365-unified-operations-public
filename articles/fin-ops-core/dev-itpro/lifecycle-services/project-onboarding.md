@@ -3,7 +3,7 @@ title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,6 @@ Microsoft relies on the information that you provide. You must provide the most 
 
 To access Project onboarding, sign in to LCS, and then, on the main menu, select **Project onboarding**.
 
-
 > [!NOTE]
 > Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
@@ -59,7 +58,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Provide the overview information for the implementation project.
 - Describe the vision and goals for the project in a few sentences. This information will help Microsoft understand the goals that you want to achieve and how you define success for the project.
-- Specify the estimated number of future user licenses after full roll-out. This number can differ from the current license purchase. If no change is planned, provide the current user license count. If a license type isn't applicable, enter **0** (zero).
+- Specify the estimated number of user licenses after full roll-out including current licenses. This number can differ from the current license purchase. If no change is planned, provide the current user license count. If a license type isn't applicable, enter **0** (zero).
 - If your implementation project is a demo project, or if you're moving from another tenant, provide the details.
 
 ## Project scope

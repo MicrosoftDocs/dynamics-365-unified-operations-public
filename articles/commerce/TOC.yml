@@ -572,10 +572,14 @@
             href: set-up-bar-codes.md
           - name: Set up bar code masks 
             href: set-up-bar-code-masks.md
+        - name: Warranties
+          items:
+          - name: Create and configure extended warranties
+            href: extended-warranty.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
-          href: retail-discounts-overview.md
+          href: retail-discounts-overview.md 
         - name: Sales price management 
           href: price-management.md
         - name: Price adjustments and discounts 
@@ -2028,6 +2032,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Development in cloud-hosted dev environments without admin access
           href: dev-itpro/cloud-dev-box.md
+        - name: Set up Commerce SDK build pipeline
+          href: dev-itpro/retail-sdk/SDK-build-pipeline.md
       - name: Point of sale extensibility
         items:
         - name: POS screen layouts

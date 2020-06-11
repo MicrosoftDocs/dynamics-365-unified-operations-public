@@ -5,7 +5,7 @@ title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -102,6 +102,9 @@ Based on this use of the primary field in Common Data Service, the primary field
 Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in Finance and Operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
 ## Relations
+
+> [!IMPORTANT]
+> A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
 
 Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 

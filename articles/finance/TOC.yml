@@ -450,6 +450,8 @@
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
+      - name: Advanced notes management
+        href: localizations/emea-ita-exil-structured-notes.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -2020,8 +2022,6 @@
           href: localizations/emea-ita-exil-bank-accounts-setup.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
-        - name: Advanced notes management
-          href: localizations/emea-ita-exil-structured-notes.md
         - name: Intent letters - Invoicing usual exporters
           href: localizations/emea-ita-exil-intent-letter.md
         - name: Tax invoice for goods delivered for free
@@ -3346,6 +3346,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
         - name: Regulatory service (RCS)
           items:
+          - name: Regulatory Configuration Services (RCS) - Globalization features
+            href: localizations/rcs-globalization-feature.md
           - name: Download ER configurations to Finance
             items: 
             - name: Download configurations from RCS
@@ -3406,15 +3408,17 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
             - name: Modify and run formats to use Document management files
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-            - name: Debug data sources
-              href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-        - name: Configure model mappings
-          items: 
-          - name: Configure country context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-          - name: Manage ER model mapping in separate ER configurations
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-        - name: Configure formats
+          - name: Debug data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+          - name: Use BARCODE to generate barcode images
+            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json 
+        - name: Configure country context dependent ER model mappings
+          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+        - name: Configure ER formats to use parameters that are specified per legal entity
+          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+        - name: Set up the parameters of an ER format per legal entity
+          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+        - name: Defer execution of ER format elements
           items: 
           - name: Configure ER formats to use parameters that are specified per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
@@ -3422,6 +3426,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
           - name: Select model definitions when you create formats
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+          - name: Design multilingual reports
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
           - name: Defer execution of ER format elements
             items: 
             - name: Defer execution of a sequence element
