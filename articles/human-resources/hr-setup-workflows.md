@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: WorkflowParametersAdmin, WorkflowtableListPageRnr, WorkflowStatus
+# ms.search.form: WorkflowParametersAdmin, WorkflowtableListPageRnr, WorkflowStatus, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

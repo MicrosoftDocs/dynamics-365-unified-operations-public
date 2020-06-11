@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -46,7 +46,10 @@ For more information about upcoming features or the update process for Human Res
 
 To see what's new or changed in each biweekly release of Human Resources, see the following articles:
 
-[May 14, 2020](hr-whats-new-2020-05-14.md)</br>[May 1, 2020](hr-whats-new-2020-05-01.md)</br>
+[June 11, 2020](hr-whats-new-2020-06-11.md)</br>
+[May 28, 2020](hr-whats-new-2020-05-28.md)</br>
+[May 14, 2020](hr-whats-new-2020-05-14.md)</br>
+[May 1, 2020](hr-whats-new-2020-05-01.md)</br>
 [April 13, 2020](hr-whats-new-2020-04-13.md)</br>
 [April 3, 2020](hr-whats-new-2020-04-03.md)</br>
 [March 24, 2020](hr-whats-new-2020-03-24.md)</br>

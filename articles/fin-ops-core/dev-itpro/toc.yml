@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.12 (August 2020)
+          href: get-started/whats-new-platform-update-10-0-12.md
         - name: Platform updates for 10.0.11 (July 2020)
           href: get-started/whats-new-platform-update-35.md
         - name: Platform updates for 10.0.10 (May 2020)
           href: get-started/whats-new-platform-update-34.md
-        - name: Platform update 33 (April 2020)
-          href: get-started/whats-new-platform-update-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -198,6 +198,8 @@
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
+                - name: Inventory availability
+                  href: data-entities/dual-write/inventory-availability.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
@@ -452,9 +454,9 @@
           href: ../fin-ops/imp-lifecycle/architecture-overview.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Apply updates and extensions to cloud hosted Retail channel components
+        - name: Apply updates and extensions to Commerce Scale Unit (cloud)
           href: deployment/Update-retail-channel.md  
-        - name: Initialize Retail Cloud Scale Unit
+        - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Retail data residency
           href: deployment/retail-data-residency.md
@@ -488,6 +490,8 @@
             href: deployment/certificate-rotation-on-prem.md
           - name: Client internet connectivity
             href: user-interface/client-disconnected.md
+          - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+            href: deployment/onprem-batchonly.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
@@ -1048,6 +1052,8 @@
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
+      - name: Project onboarding
+        href: lifecycle-services/project-onboarding.md
       - name: Subscription estimator
         href: lifecycle-services/subscription-estimator.md
       - name: Configure security
@@ -1118,6 +1124,20 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+    - name: Microsoft Power Platform integration
+      items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
+      - name: Entity modeling
+        href: power-platform/entity-modeling.md
+      - name: Application lifecycle management
+        href: power-platform/application-lifecycle-management.md
+      - name: Finance and Operations and Common Data Service admin reference
+        href: power-platform/admin-reference.md
+      - name: Power Apps portals with Finance and Operations
+        href: power-platform/power-portal-reference.md
+      - name: Finance and Operations virtual entities FAQ
+        href: power-platform/faq.md
     - name: Mobile platform
       items:
       - name: Mobile platform resources
@@ -1330,9 +1350,7 @@
         href: perf-test/rsat/rsat-overview.md
       - name: Installation and configuration
         href: perf-test/rsat/rsat-install-configure.md
-      - name: Data agnostic testing using the Regression Suite Automation Tool
-        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-      - name: Run test cases
+      - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
       - name: Validate expected values
         href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1358,12 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Use the Regression suite automation tool tutorial
+      - name: Regression suite automation tool tutorial and other features
         href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
+      - name: Data agnostic testing using the Regression Suite Automation Tool
+        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services
@@ -1442,6 +1462,8 @@
           href: sysadmin/copy-batch-job.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
+        - name: Daylight saving time support for active batch periods
+          href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
         - name: Batch job to handle SQL index defragmentation

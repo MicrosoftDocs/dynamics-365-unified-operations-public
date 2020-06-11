@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to use the Regression suite automation tool (RSAT)/Task recorder to record client functions.
+This topic describes best practices and common use cases of the Regression suite automation tool (RSAT) and Task recorder.
 
-## Authoring test cases using the Task recorder
+## Author test cases using the Task recorder
 
 When you author task recordings for RSAT, follow these practices:
 
@@ -46,7 +46,7 @@ When you author task recordings for RSAT, follow these practices:
 5. RSAT cannot play back any test step that is not recognized by the task recorder. For example, you cannot upload a file from the local disk during play back of a test case.
 6. RSAT cannot play back a **page refresh** step. Avoid refreshing a page while recording your test.
 
-## Using the Regression suite automation tool 
+## Best practices when using the Regression suite automation tool 
 
 1. Upon opening the tool for the first time, select **Settings** and ensure that you have all the needed settings. 
 2. Before installing a new version of the tool, it is recommended to close and uninstall the previous version. 
@@ -62,7 +62,7 @@ When you author task recordings for RSAT, follow these practices:
 
     ![Set locale, date, time, and number format](media/locale.png)
 
-## Management of local recording files
+## Manage local recording files
 
 RSAT relies on Azure DevOps to store and manage test recording files (also known as task recordings). When RSAT loads a test plan from Azure DevOps, associated files are downloaded to the current **working directory** on your local computer. (This working directory is defined in RSAT settings.)
 
@@ -90,7 +90,7 @@ After a recording has been tested and finalized, use RSAT to upload it and commi
 > - If you're using a version of RSAT that is earlier than 1.200.37255.0, and you upgrade to the latest version, you must reload your test cases from Azure DevOps to download them into the correct directory. Otherwise, RSAT will fail, and you will receive a "File not found" error.
 > - If you're working across several DevOps projects, we recommend that you use a different working directory for each project. Otherwise, attachment files from multiple projects can become commingled in the same directory structure.
 
-## How to modify a Task recording
+## Modify (Edit) a Task recording
 
 If you want to modify an existing task recording, note these best practices. 
 
@@ -103,4 +103,20 @@ When you've finished editing the recording, play it back in the client, and veri
 ![Playback recording option](media/playback-recording.png)
  
 After you've finished playing back an edited recording, save it. It's then ready to be used by RSAT.
+
+## Copy test cases in Azure DevOps
+
+As you are building your test suites in Azure DevOps, it is handy and common to duplicate test cases along with their
+attachments. If a copied test case contains an existing Excel parameter file attached, RSAT cannot execute it without
+manual edits to the Excel file. The **Test Case ID** in the Excel parameter file must match the Azure DevOps test case ID.
+You will need to edit all copied Excel parameter files. In the following image, the Excel file is associated with
+Test Case number 53 in Azure DevOps.
+
+![copy-test-cases](media/copy-test-cases.png)
+
+As of RSAT version 1.210, this process is easier. To automatically fix all occurrences of a mismatch, select the
+desired test cases in the grid, and then select **Resolve test case ID mismatch** in the **New** menu.
+
+![resolve-test-case-id-mismatch](media/resolve-test-case-id-mismatch.png)
+
 

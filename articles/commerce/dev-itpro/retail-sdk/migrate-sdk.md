@@ -5,7 +5,7 @@ title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 10.0.11
 
 # Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 
-This topic explains what has changed in the 10.0.11 release of the Retail software development kit (SDK), how to migrate it to Visual Studio 2017, and how to update an extension project reference library to NuGet.
-
 [!include [banner](../../includes/banner.md)]
+
+This topic explains what has changed in the 10.0.11 release of the Retail software development kit (SDK), how to migrate it to Visual Studio 2017, and how to update an extension project reference library to NuGet.
 
 ## What has changed in the 10.0.11 release
 
@@ -63,7 +63,7 @@ The Retail SDK reference libraries use PackageReference. All the SDK samples use
 
 There are two ways to migrate:
 
-- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and use the Visual Studio 2017 template.
+- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and use the Visual Studio 2017 template, which is available for manual install in release 10.0.11. The new LCS dev VM with Visual Studio 2017 will be available in release 10.0.12.
 - Update extensions to Visual Studio 2017 in an existing development environment:
 
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM).
@@ -73,7 +73,7 @@ There are two ways to migrate:
         + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
         + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
         + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
-        + [TypeScript_Dev14Full](https://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/TS-2.2-dev14update3-20170321.1/TypeScript_Dev14Full.exe)
+        + Install Typescript version 2.2.2. In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individual components** tab and select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section and install it.
 
 ## Build the Retail SDK
 
@@ -110,3 +110,14 @@ In a similar way, update the references for all the Retail Server, proxy, and Ha
 You don't have to change the extensions code that was written in previous versions of the Retail SDK. You must update references and recompile only for the new SDK.
 
 If you have existing pipelines in Azure Pipelines that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
+
+## Azure DevOps pipeline
+
+The same build machine used for MSBuild  with the Azure DevOps pipeline can be used with 10.0.11 SDK. Perform the following steps on the build machine for the 10.0.11 SDK:
+
+1. Install Visual Studio 2017 on the build machine.
+2. Optional: Run msbuild (msbuild version 15.0) from the developer command prompt for Visual Studio 2017 on the build machine. Open the developer command prompt for Visual Studio 2017 and navigate to the Retail SDK root folder. Type msbuild dirs.proj and make sure that the MSBuild completes successfully. 
+3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path**. Click **New** and add the path variable for MSBuild 15.0. For example, C:\Program Files(x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
+4. Restart the Azure DevOps build agent on the build machine.
+5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
+If the build from Azure DevOps pipeline fails with a NuGet error, the Azure pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
