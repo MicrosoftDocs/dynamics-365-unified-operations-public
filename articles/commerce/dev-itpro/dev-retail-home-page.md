@@ -128,6 +128,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 - [Show custom notifications in POS](extend-pos-notification.md)
+- [Set up Commerce SDK build pipeline](dev-itpro/retail-sdk/SDK-build-pipeline.md)
 
 ## eCommerce
 -   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)
