@@ -19,25 +19,25 @@ The inventory journals in Supply Chain Management are used to post physical inve
 
 1. **Configure the Inventory Management workflows**
 
-- Navigate to **Inventory Management \&gt; Setup\&gt; Inventory management workflows**
-- Click **New** and the user can select the proper workflow type to configure the inventory workflows.
-
-The Inventory journal approval workflow type can be created for the following types of inventory journal：
-
-- Tag Counting Journal
-- Movement Journal
-- Ownership Change journal
-- Transfer Journal
-- Inventory Counting Journal
-- Inventory BOM Journal
-- Inventory Adjustment Journal
-
-For workflow configuration details, you can refer to [Dynamics 365 Supply Chain Management Workflow system overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/supply-chain/toc.json)
+    - Navigate to **Inventory Management \&gt; Setup\&gt; Inventory management workflows**
+    - Click **New** and the user can select the proper workflow type to configure the inventory workflows.
+    
+    The Inventory journal approval workflow type can be created for the following types of inventory journal：
+    
+    - Tag Counting Journal
+    - Movement Journal
+    - Ownership Change journal
+    - Transfer Journal
+    - Inventory Counting Journal
+    - Inventory BOM Journal
+    - Inventory Adjustment Journal
+    
+    For workflow configuration details, you can refer to [Dynamics 365 Supply Chain Management Workflow system overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/supply-chain/toc.json)
 
 1. **Configure the Inventory journal approval workflow in the Journal Name**
 
-- Navigate to \&gt;  **Inventory management**  \&gt;  **Setup**  \&gt;  **Journal names**  \&gt;  **Inventory**
-- Select  **journal name**  and then, in the  **general**  fast tab, set  **approval workflow**  \&gt;  **Approval workflow**  =  **Yes**  and then select the  **workflow**  from Workflow list
+    - Navigate to \&gt;  **Inventory management**  \&gt;  **Setup**  \&gt;  **Journal names**  \&gt;  **Inventory**
+    - Select  **journal name**  and then, in the  **general**  fast tab, set  **approval workflow**  \&gt;  **Approval workflow**  =  **Yes**  and then select the  **workflow**  from Workflow list
 
 1. **Manage the Inventory journal approval workflow in the Inventory journal**
 
