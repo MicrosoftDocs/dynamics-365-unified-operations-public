@@ -75,6 +75,8 @@
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Manage features
       href: hr-admin-manage-features.md
+    - name: Configure and manage database logging
+      href: hr-admin-database-logging.md
     - name: Explore the user interface
       items:
       - name: User interface elements
