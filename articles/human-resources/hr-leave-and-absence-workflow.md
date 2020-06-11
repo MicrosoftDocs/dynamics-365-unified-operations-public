@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -54,6 +54,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:
 
+- **Amount**
 - **Comment**
 - **Company**
 - **Created by**

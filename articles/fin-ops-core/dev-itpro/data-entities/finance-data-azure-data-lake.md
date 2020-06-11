@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Platform Update 34
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 The **Export to Azure Data Lake** feature lets you configure your Finance and Operations apps environment so that it uses a data lake. After the configuration is completed, your data lake will reflect tables and entities from Finance and Operations apps.
 
 > [!NOTE]
