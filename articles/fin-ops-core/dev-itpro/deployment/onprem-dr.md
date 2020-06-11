@@ -220,7 +220,7 @@ Run the following command against your business data database (AXDB):
 ```
 
 > [!Note]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases).
+> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../../fin-ops/get-started/public-preview-releases).
 
 #### Version 10.0.12 or earlier
 
