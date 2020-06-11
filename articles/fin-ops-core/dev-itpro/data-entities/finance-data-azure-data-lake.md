@@ -36,11 +36,14 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-    > **Export to Azure Data Lake** feature may not be available in all regions and/or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services (LCS) or in Finance and Operations, this feature is not available in your environment at this point in time. 
-    > At this point, Export to Data lake feature is not available in developer (ie. Tier-1) environments. You need a cloud based Tier-2 or higher environment to enable this feature  
-    > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
+    > **Export to Azure Data Lake** feature may not be available in all regions and/or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services (LCS) or in Finance and Operations, this feature is not available in your environment at this point in time.
     
-The **Export to Azure Data Lake** feature lets you copy data from Finance and Operations apps into your own Azure Data lake (Gen 2). System let's you choose Tables and Entities. After you choose the desired data, system will make an initial copy. After the initial copy, system keeps the chosen data upto date by applying changes, deletions and additions. 
+    > At this point, Export to Data lake feature is not available in developer (ie. Tier-1) environments. You need a cloud based Tier-2 or higher environment to enable this feature  
+    
+    > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
+ 
+ 
+**Export to Azure Data Lake** feature lets you copy data from Finance and Operations apps into your own Azure Data lake (Gen 2). System let's you choose Tables and Entities. After you choose the desired data, system will make an initial copy. After the initial copy, system keeps the chosen data upto date by applying changes, deletions and additions. 
 
 Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
 
