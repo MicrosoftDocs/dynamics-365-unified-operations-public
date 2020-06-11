@@ -25,16 +25,18 @@
       href: hr-whats-new-2020-03-10.md
     - name: March 3, 2020
       href: hr-whats-new-2020-03-03.md
-    - name: February 25, 2020
-      href: hr-whats-new-2020-02-25.md
-    - name: February 18, 2020
-      href: hr-whats-new-2020-02-18.md
-    - name: February 12, 2020
-      href: hr-whats-new-2020-02-12.md
-    - name: February 7, 2020
-      href: hr-whats-new-2020-02-07.md
-    - name: February 3, 2020
-      href: hr-whats-new-2020-02-03.md 
+    - name: What's new archives 2020
+      items:
+      - name: February 25, 2020
+        href: hr-whats-new-2020-02-25.md
+      - name: February 18, 2020
+        href: hr-whats-new-2020-02-18.md
+      - name: February 12, 2020
+        href: hr-whats-new-2020-02-12.md
+      - name: February 7, 2020
+        href: hr-whats-new-2020-02-07.md
+      - name: February 3, 2020
+        href: hr-whats-new-2020-02-03.md
   - name: Administrator Guide
     items:
     - name: Overview
