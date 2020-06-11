@@ -80,7 +80,7 @@ The Retail SDK must be added to Azure Repos Git, GitHub, or VSTS. The Retail SDK
 
     ![Copy Retail deployable package](media/Step5.png)
 
-    :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
+    :::image type="content" source="media/Step5.png" alt-text="MSBuild task":::
 
 10. Add Publish build artifact task, provide the display name, drop name, and set the Path to publish field value as $(Build.ArtifactStagingDirectory)
 
