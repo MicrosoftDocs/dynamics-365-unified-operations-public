@@ -13,13 +13,13 @@ The inventory journals in Supply Chain Management are used to post physical inve
 
 ## Instructions
 
-1. **Enable &#39;Inventory journal approval workflow&#39; in the Feature management**
+1. Enable "Inventory journal approval workflow" in the Feature management
 
-    In the Feature Management, select feature name as &#39;Inventory journal approve workflow&#39; and enable the feature. Once enabled, the user can configure workflow for inventory journal&#39;s approval process.
+    In the Feature Management, select feature name as "Inventory journal approve workflow" and enable the feature. Once enabled, the user can configure workflow for inventory journal"s approval process.
 
-1. **Configure the Inventory Management workflows**
+1. Configure the Inventory Management workflows
 
-    - Navigate to **Inventory Management \&gt; Setup\&gt; Inventory management workflows**
+    - Navigate to **Inventory management > Setup > Inventory management workflows**
     - Click **New** and the user can select the proper workflow type to configure the inventory workflows.
     
     The Inventory journal approval workflow type can be created for the following types of inventory journal：
@@ -32,14 +32,14 @@ The inventory journals in Supply Chain Management are used to post physical inve
     - Inventory BOM Journal
     - Inventory Adjustment Journal
     
-    For workflow configuration details, you can refer to [Dynamics 365 Supply Chain Management Workflow system overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/supply-chain/toc.json)
+    For workflow configuration details, you can refer to [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
-1. **Configure the Inventory journal approval workflow in the Journal Name**
+1. Configure the Inventory journal approval workflow in the Journal Name
 
-    - Navigate to \&gt;  **Inventory management**  \&gt;  **Setup**  \&gt;  **Journal names**  \&gt;  **Inventory**
-    - Select  **journal name**  and then, in the  **general**  fast tab, set  **approval workflow**  \&gt;  **Approval workflow**  =  **Yes**  and then select the  **workflow**  from Workflow list
+    - Navigate to >  **Inventory management**  >  **Setup**  >  **Journal names**  >  **Inventory**
+    - Select  **journal name**  and then, in the  **general**  fast tab, set  **approval workflow**  >  **Approval workflow**  =  **Yes**  and then select the  **workflow**  from Workflow list
 
-1. **Manage the Inventory journal approval workflow in the Inventory journal**
+1. Manage the Inventory journal approval workflow in the Inventory journal
 
 In the Inventory Journal, the workflow button will be active as per the inventory management workflow and journal name workflow configuration. The post button will be active once the journal will be approved
 
