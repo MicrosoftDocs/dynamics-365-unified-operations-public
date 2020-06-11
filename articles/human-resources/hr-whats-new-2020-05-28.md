@@ -84,7 +84,10 @@ The database logging feature allows you to determine which table and fields shou
 
 ## Buy and sell leave (in preview June 1)
 
-Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature provides a more automated way to manage policies and requests for the HR department, and it helps eliminate mistakes while streamlining the leave management process.
+Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature provides a more automated way to manage policies and requests for the HR department, and it helps eliminate mistakes while streamlining the leave management process. For more information, see:
+
+- [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
 
 ## Data management framework (DMF) entities for Benefits management
  
