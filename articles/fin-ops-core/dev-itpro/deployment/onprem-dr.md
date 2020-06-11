@@ -71,7 +71,7 @@ When code packages are deployed to the production environment, they don't need t
 
 ## Environment deployment settings
 
-The disaster recovery environment should an almost similar configuration as the production environment. The following table illustrates the shared and specific settings for disaster recovery.
+The disaster recovery environment should have a similar configuration as the production environment. The following table illustrates the shared and specific settings for disaster recovery.
 
 | Environment settings | Disaster recovery environment|
 |---------------------------------|----------------|
@@ -151,12 +151,12 @@ Pre-deployment scripts are necessary when changes to the deployment configuratio
 
 You can find the location of the config.json file by running the following command.
 
-    ```sql
+  ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
-    ```
+  ```
 
-    > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
+  > [!NOTE]
+  > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
 
 If the SSRS node IP is different, you'll have to modify the following values.
 
