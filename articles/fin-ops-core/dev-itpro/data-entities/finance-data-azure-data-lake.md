@@ -71,7 +71,7 @@ You can select the tables and entities that should be staged in Data Lake.
 
     If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
     
-    - On the **Choose using Entities** tab, select entities, and then select **Add Tables using Entities**.
+7. On the **Choose using Entities** tab, select entities, and then select **Add Tables using Entities**.
 
     ![Selecting tables by using entities](./media/Export-Entities-toData-lake-unselectedv2.png)
     
@@ -82,4 +82,14 @@ You can select the tables and entities that should be staged in Data Lake.
 You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Active** tab of the **Configure data feeds to Data lake** page.
 
 ![Monitoring table progress](./media/Export-Tables-toData-lake-monitorv2.png)
+
+## Troubleshooting common issues and error conditions
+You may 
+
+###Export to Data lake feature is not available
+This feature is not available in developer (ie. Tier 1) environments. You need a sandbox environments (Tier 2 or higher) with platform update PU36 or higher.
+
+This feature may not be available in all Azure regions where Finance and Operations is available or this feature may not be available for your environment. If you would like to get access to this feature, you can send a mail to the feature team at <..>. We will try and make this feature available soon
+
+
 
