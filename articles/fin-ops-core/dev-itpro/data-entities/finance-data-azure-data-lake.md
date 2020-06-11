@@ -37,13 +37,11 @@ ms.dyn365.ops.version: Platform Update 34
 
 > [!NOTE]
     > **Export to Azure Data Lake** feature may not be available in all regions and/or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services (LCS) or in Finance and Operations, this feature is not available in your environment at this point in time.
-    
     > At this point, Export to Data lake feature is not available in developer (ie. Tier-1) environments. You need a cloud based Tier-2 or higher environment to enable this feature  
-    
     > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
  
  
-**Export to Azure Data Lake** feature lets you copy data from Finance and Operations apps into your own Azure Data lake (Gen 2). System let's you choose Tables and Entities. After you choose the desired data, system will make an initial copy. After the initial copy, system keeps the chosen data upto date by applying changes, deletions and additions. 
+**Export to Azure Data Lake** feature lets you copy data from Finance and Operations apps into your own Azure Data lake (Gen 2). System let's you choose Tables and Entities. After you choose the desired data, system will make an initial copy. After the initial copy, system keeps the chosen data upto date by applying changes, deletions and additions. There may be a delay of a few minutes between data changes in Finance and Operations and the time when the data is available in your data lake. 
 
 Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
 
@@ -65,6 +63,11 @@ You can select the tables and entities that should be staged in Data Lake.
 3. On the **Configure data feeds to Data lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is already being synced. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
     ![Selecting tables](./media/Export-Tables-toData-lake-unselectedv2.png)
+
+4. Choose **Activate data feed** option (This option is activated by default) and select **ok**
+5. The system may show the Status of this table as **Initializing** when you add the table. This means, the system is making an initial copy of data. When the initial copy is complete, the system changes the status to **Running**
+6. In case of an error, the system shows the status **Deactivated**
+6. You can consume data in the lake when you see the **Running** state. If you consume data in the lake while **Initializing** or **Deactivated** status, you may not see all the data. 
 
     If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
     
