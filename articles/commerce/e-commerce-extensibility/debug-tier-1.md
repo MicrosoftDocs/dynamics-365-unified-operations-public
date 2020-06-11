@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Debug against a Tier 1 Commerce development environmnent
+title: Debug against a Tier 1 Commerce development environment
 description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Debug against a Tier 1 Commerce development environmnent
+# Debug against a Tier 1 Commerce development environment
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,9 +46,9 @@ The Dynamics 365 Commerce software development kit (SDK) can be installed on any
 
 ## Configure the .env file
 
-To hit the Tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** variable value in the .env file to the tier 1 Retail Server URL. For details on setting up an .env file, see [Configure a development environment (.env) file](configure-env-file.md).
+To hit the Tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** variable value in the .env file to the Tier 1 Retail Server URL. For details on setting up an .env file, see [Configure a development environment (.env) file](configure-env-file.md).
 
-To obtain the Retail Server URL, open the Microsoft Lifecycle Services (LCS) web page and select the project and Tier 1 environment. Next, select the **Login** at the top right and then select **Retail Server URL** as shown in the following illustration.
+To obtain the Retail Server URL, go to the [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/) webpage and select the project and Tier 1 environment. Next, select **Login** at the top right and then select **Retail Server URL** as shown in the following illustration.
 
 ![LCS Retail Server URL](media/lcs-retail-server-url.png)
 
@@ -68,7 +68,7 @@ MSDyn365Commerce_OUN=128
 ```
 Make sure to restart the Node.js server with "yarn start" command so that it picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
-If you have the **MSDyn365_HOST** variable value set to your e-Commerce site, you can also navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. All data action Retail Server calls will be routed to the Tier 1 environment as specified in the .env file.
+If you have the **MSDyn365_HOST** variable value set to your e-Commerce site URL, you can also navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. All data action Retail Server calls will be routed to the Tier 1 environment as specified in the .env file.
 
 ## Additional resources
 
