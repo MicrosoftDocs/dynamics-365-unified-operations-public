@@ -37,7 +37,7 @@ This document demonstrates how to setup the Azure DevOps build pipeline for the 
 
 ## Prerequisites
 
-The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure DevOps. The Retail SDK is available in-Service volume drive of the development virtual machine (VM) from Lifecycle Services (LCS). Follow the steps mentioned in [this doc](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) to provision a development VM in LCS.
+The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure DevOps. The Retail SDK is available in the service volume drive of the development virtual machine (VM) from Lifecycle Services (LCS). Follow the steps in [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) to provision a development VM in LCS.
 
 ## How to setup a build pipeline in Azure DevOps
 
@@ -48,7 +48,7 @@ The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure D
 
     :::image type="content" source="media/Step1.png" alt-text="Pipeline":::
 
-5. In the **Get sources** tab, select your RetailSDK Repo.
+5. In the **Get sources** tab, select your Retail SDK repo.
 
     :::image type="content" source="media/Step2.png" alt-text="Get sources":::
     
@@ -56,7 +56,7 @@ The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure D
     
     :::image type="content" source="media/Step3.png" alt-text="Hosted Agent":::
 
-7. In the **Tasks**, add an MSBuild task. For **Project**, select **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**. The choice depends on how the Retail SDK is structured. Set the **MSBuild Version** to **MSBuild 15.0**. Set **MSBuild Architecture** to **MsBuild x86**.
+7. Add an MSBuild task. For **Project**, select **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**. The choice depends on how the Retail SDK is structured. Set the **MSBuild Version** to **MSBuild 15.0**. Set **MSBuild Architecture** to **MsBuild x86**.
 
     :::image type="content" source="media/Step4.png" alt-text="MSBuild task":::
 
@@ -79,7 +79,7 @@ The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure D
 
 10.	Save the changes and queue the build.
 
-11.	When the build is complete, you can download the Retail deployable package from the **Published Artifacts**.
+11.	When the build is complete, you can download the deployable package from the **Published Artifacts**.
 
     :::image type="content" source="media/Step8.png" alt-text="Download Artifact":::
 
