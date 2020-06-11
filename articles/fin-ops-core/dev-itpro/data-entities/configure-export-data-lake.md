@@ -35,6 +35,10 @@ ms.dyn365.ops.version: Platform Update 33
 
 [!include [banner](../includes/banner.md)]
 
+    > [!NOTE]
+    > Export to Azure Data Lake functionality may not be available in all regions or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services or in Finance and Operations product, this means the functionality is not available in your environment at this point in time. 
+    > At this point, Export to Data lake functionality is not available in developer (ie. Tier-1) environments.  
+
 To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage,  and create the folder structure and write data. Create a key vault in your subscription and store the names of the storage account, application ID, and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
 The steps, which take place in the Azure portal, are as follows: 
