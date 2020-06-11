@@ -5,7 +5,7 @@ title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -104,7 +104,7 @@ Because the primary field in Common Data Service is expected to have only one fi
 ## Relations
 
 > [!IMPORTANT]
-> It must be noted that, a write transaction that spans a virtual entity and a native entity is not supported and is discouraged in general as transactionl consistency cannot be gauranteed.
+> A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
 
 Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 
