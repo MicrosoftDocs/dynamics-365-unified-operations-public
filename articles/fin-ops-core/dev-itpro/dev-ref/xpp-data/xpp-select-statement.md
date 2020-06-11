@@ -35,7 +35,7 @@ ms.search.validFrom: 2016-02-28
 The **select** statement fetches or manipulates data from the database.
 
 + All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
-+ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **while select** statement.
++ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **[while select](xpp-while-select.md)** statement.
     + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
     + It's more appropriate to use a **while select** statement to traverse multiple records.
 + The results of a **select** statement are returned in a table buffer variable.
@@ -169,31 +169,6 @@ while select count(CreditMax) from custTable
 // Example output:
 // (CustomerCount:1; CustGroup:"1")
 // (CustomerCount:3; CustGroup:"2")
-```
-
-## Enable index hint in queries
-
-Before you can use [**index hint**](#index-hint-keyword) in queries, you must specify that hints can be used on the server.
-
-1. Go to **Start** > **Administrative Tools** > **Microsoft Dynamics AX Server Configuration**.
-2. On the **Database Tuning** tab, select **Allow INDEX hints in queries**, and then click **OK**.
-3. When a message box prompts you to restart the Application Object Server (AOS) service, click **Yes**. Index hints won't be enabled until the service is restarted.
-
-When an `index hint` keyword in a **select** statement refers to a non-clustered index, and the **where** clause contains only the fields that are found in a clustered index on the same table, the clustered index is used instead of the index that is specified in the hint. For example, you run **sp\_helpindex InventTable** in SQL Server Management Studio and you see that the **InventTable** table has a clustered index on the **DataAreaId** and **ItemId** columns, and a non-clustered index on the **DataAreaId**, **ItemProductId**, and **ItemType** columns.
-
-| Index name       | Description                                        | Key columns                         |
-|------------------|----------------------------------------------------|-------------------------------------|
-| I\_175ITEMIDX    | Clustered, unique, primary key, located on PRIMARY | DATAAREAID, ITEMID                  |
-| I\_175PRODUCTIDX | Non-clustered, located on PRIMARY                  | DATAAREAID, ITEMPRODUCTID, ITEMTYPE |
-
-In the following code, the clustered index is used instead of the non-clustered index that is specified by **index hint**.
-
-```xpp
-InventTable inv;
-
-select * from inv
-    index hint ItemIdx
-    where inv.ItemId == 'B-R14';
 ```
 
 ## Join tables
@@ -417,7 +392,6 @@ ttsBegin;
 ttsCommit;
 ```
 
-
 ## group by keyword
 
 The **group by** keyword instructs the database to group selected records by fields.
@@ -496,11 +470,19 @@ while select AccountNum, Value from custTable
 
 ## index hint keyword
 
-The **index hint** keyword gives the database a hint to use this index to sort the selected records in the manner that is defined by the index. The database can ignore the hint. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified.
+The **index hint** keyword gives the database a hint to use a specific index to sort the selected records as specified in the index. The database can ignore the hint. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified.
+
+Before you can use [**index hint**](#index-hint-keyword) in queries, you must call **allowIndexHint(true)** on the table. The default behavior for **index hint** is **false**, and the hint is ignored.
+
+> [!WARNING]
+> You should use **index hints** sparingly and with caution, and only when you can ensure it improves performance. The **index hint** keyword and API let you pass the right hints when needed. When in doubt, avoid using **index hint**.
+
+In the following code example, the **AccountIdx** index is used to sort the records in the query on the **CustTable** table.
 
 ```xpp
 str _accountNum = '111';
 CustTable custTable;
+custTable.allowIndexHint(true);
 
 while select forUpdate custTable
     index hint AccountIdx

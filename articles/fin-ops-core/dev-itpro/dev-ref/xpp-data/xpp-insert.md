@@ -33,18 +33,20 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database. This topic describes the select statement withing source code. The options for inserting new rows are:
+You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database. 
 
-+ **insert method**: Used together with a `select for update` statement, **insert** inserts one row at a time.
-+ **do_insert**: The **Table.do_insert** method inserts one row at a time.
-+ **insert_recordset**: Inserts multiple rows at the same time.
-+ **RecordInsertList**: Inserts multiple rows at the same time.
-+ **RecordSortedList.insertDatabase**: Inserts multiple rows at the same time.
++ **[insert method](#insert-method)**: Used together with a `select for update` statement, this method inserts one row at a time.
++ **[doInsert method](#do-insert-method)**: The **Table.do_insert** method inserts one row at a time.
++ **[insert_recordset](#insert-recordset-method)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.      
++ **[RecordInsertList](#record-insert-list-method)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data. 
++ **[RecordSortedList.insertDatabase](#insert-database)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
-## insert method
+## <a id="insert-method"></a>insert method
 
-The **insert** method of the query variable inserts one record at a time. The **insert** method generates values for the **RecId** field and system fields, and then inserts the contents of the buffer (the column values) into the database.
+The **insert** method of the table variable inserts one record at a time. The method generates values for the **RecId** field and system fields, and then inserts the contents of the buffer (the column values) into the database.
 
++ Do not use a **select** statement on the table variable before you call the **insert** method.
++ The **insert** method does not handle all of the key field requirements and table dependencies. You must write code to handle that.
 
 Here is how the **insert** method works:
 
@@ -58,98 +60,37 @@ Here is how the **insert** method works:
 > [!WARNING]
 > Only the specified columns are inserted, or unspecified columns are set to the default value? or blank (as specified in next section)?
 
-To override the behavior of the **insert** method, use the [**doInsert**](#doInsert-method) method. 
-
-### insert example
-
-The following example inserts a new record into the **CustTable** table. The **AccountNum** column of the new record is set to **5000**, and the **Name** field is set to **MyCompany**. Other fields in the record will be blank.
+The following example inserts a new record into the **CustGroup** table. The **CustGroup** column of the new record is set to **41**. Other fields in the record will be blank.
 
 ```xpp
-CustTable custTable;
+CustGroup custGroup;
 ttsBegin;
-select forUpdate custTable;
-custTable.AccountNum = '5000';
-custTable.insert();
+    custGroup.CustGroup = '41';
+    custGroup.insert();
 ttsCommit;
 ```
 
+To override the behavior of the **insert** method, use the [**doInsert**](#do-insert-method) method.
 
-## doInsert method
+## <a id="do-insert-method"></a>doInsert method
 
-The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when the **insert** method on the table must be bypassed. In the following example, a new record is inserted. The **name** field of the record is set to **Tomas Richardson**, and the **value** field is set to **100**.
+The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when the **insert** method on the table must be bypassed. In the following example, a new record is inserted. The **CustGroup** field of the record is set to **61**.
 
 ```xpp
+CustGroup custGroup;
 ttsBegin;
-myTable.name = 'Tomas Richardson';
-myTable.value = 100;
-myTable.doInsert();
+    custGroup.CustGroup = '61';
+    custGroup.doInsert();
 ttsCommit;
 ```
 
+## Performance considerations
 
-## Transactional integrity
-If steps aren't taken to help guarantee the integrity of transactions, data corruption could occur. At the very least, you might experience poor scalability with respect to concurrent users on the system. Two internal checking features help guarantee the integrity of transactions: the **forUpdate** check and the **tssLevel** check. A **forUpdate** check helps guarantee that a record can be updated or deleted only if it has first been selected for update. You can select a record for update by using either the **forUpdate** keyword in the **select** statement or the **selectForUpdate** method on tables. A **ttsLevel** check helps guarantee that a record can be updated or deleted only within the same transaction scope where it was selected for update. The following statements are used to help guarantee integrity:
-
--   **ttsBegin** – This statement marks the beginning of a transaction. It helps guarantee data integrity, and also helps guarantees that all updates that are done until the transaction ends (through **ttsCommit** or **ttsAbort**) are consistent (all or none).
--   **ttsCommit** – This statement marks the successful end of a transaction. It ends and commits a transaction. The Finance and Operations application helps guarantee that a transaction that has been committed will be performed according to intentions.
--   **ttsAbort** – This statement lets you explicitly discard all changes in the current transaction. In this case, the database is rolled back to the original state where nothing has been changed. Typically, you use this statement if you've detected that the user wants to break the current job. The **ttsAbort** statement helps guarantee that the database is consistent.
-
-Usually, it's a better idea to use exception handling instead of **ttsAbort**. The **throw** statement automatically aborts the current transaction. As the following example shows, statements between **ttsBegin** and **ttsCommit** can include one or more transaction blocks. In these cases, nothing is actually committed until the successful exit from the final **ttsCommit** statement.
-
-```X++
-ttsBegin;
-    // Some statements.
-ttsBegin;
-    // More statements.
-ttsCommit;
-ttsCommit;
-```
-
-The following example selects a set of records and updates the **NameAlias** field.
-
-```X++
-Custtable custTable;
-ttsBegin;
-select forUpdate custTable where custTable.AccountNum == '4000';
-custTable.NameAlias = custTable.Name;
-custTable.update();
-ttsCommit;
-```
-
-### Example of code that is rejected by the two transaction integrity checks
-
-In this example, the first failure occurs because the **forupdate** keyword is missing. The second failure occurs because the transaction scope of the update differs from the transaction scope where the record was selected for update in **ttsCommit**.
-
-```X++
-ttsBegin;
-select myTable; // Rejected by the forUpdate check.
-mytable.myField = 'xyz';
-myTable.update();
-ttsCommit;
-ttsBegin;
-select forUpdate * from myTable;
-myTable.myField = 'xyz';
-ttsCommit;
-...
-ttsBegin;
-myTable.update(); // Rejected by the ttsLevel check.
-ttsCommit;
-```
-
-## Speeding up SQL operations
-The following constructs let you insert, update, or delete multiple records. By using these constructs, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations.
-
-| Construct         | Description                                                                                            |
-|-------------------|--------------------------------------------------------------------------------------------------------|
-| RecordSortedList  | Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index. |
-| RecordInsertList  | Insert multiple records in one database trip. Use this construct when you don't have to sort the data. |
-| insert\_recordset | Copy multiple records directly from one or more tables into another table in one database trip.        |
-| update\_recordset | Update multiple rows in a table in one database trip.                                                  |
-| delete\_from      | Delete multiple records from the database in one database trip.                                        |
+The **RecordSortedList**, **RecordInsertList** and **insert\_recordset** methods let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations.
 
 ## insert\_recordset
-The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert. However, array inserts are more flexible if you want to handle the data before you insert it. **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time. However, it can fall back to record-by-record operations in many situations.
 
+The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert. However, array inserts are more flexible if you want to handle the data before you insert it. **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time. However, it can fall back to record-by-record operations in many situations.
 
 ### insert\_recordset syntax
 
@@ -260,7 +201,6 @@ Beth  --works on--  Project YY (From variable.).
 *****************/
 }
 ```
-
 
 ## Handle a DuplicateKeyException
 

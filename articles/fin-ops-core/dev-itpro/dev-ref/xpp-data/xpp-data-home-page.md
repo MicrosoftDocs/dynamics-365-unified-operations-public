@@ -40,10 +40,8 @@ You can use SQL statements, either interactively or within source code, to retri
 
 - [Insert data](xpp-insert.md): Add one or more new records to a table. You can use these statement to insert records:
 
-    - [insert](xpp-insert.md#insert-statement) statement: Inserts one record at a time.
-    - [array insert](xpp-insert.md#array-insert-statement) statement: Inserts multiple records at the same time.
-    - [insert\_recordset](xpp-insert.md#insert-statement) statement: Inserts multiple records at the same time.
-    - [RecordInsertList](xpp-insert.md#insert-statement) statement: Inserts multiple records at the same time.
+    - [insert](xpp-insert.md#insert-method) and [do_insert](xpp-insert.md#insert-method) methods: Insert one record at a time.
+    - [array insert](xpp-insert.md#array-insert-method), [insert\_recordset](xpp-insert.md#insert-statement), [RecordInsertList](xpp-insert.md#record-insert-list-method), and [RecordSortedList.insertDatabase](xpp-insert.md#insert-database-method) methods: Insert multiple records at the same time.
 
 - [Update data](xpp-update.md): Modify data in existing table records.
     - [update](xpp-update.md#update-statement) statement: Updates one record at a time.

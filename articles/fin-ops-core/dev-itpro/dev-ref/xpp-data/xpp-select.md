@@ -32,46 +32,44 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
+The **select** statement fetches or manipulates data from the database.
+
++ All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
++ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **[while select](xpp-while-select.md)** statement.
+    + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
+    + It's more appropriate to use a **while select** statement to traverse multiple records.
++ The results of a **select** statement are returned in a table buffer variable.
++ If you use a field list in the **select** statement, only those fields are available in the table variable.
+
+## Examples
+
 The following example fetches all the columns in the first row of the **CustomerTable** table and prints the **AccountNum** column of the row.
 
 ```xpp
-CustomerTable customerTable;
-select * from customerTable;
-info("AccountNum: " + customerTable.AccountNum);
+CustTable custTable;
+select * from custTable;
+info("AccountNum: " + custTable.AccountNum);
 ```
 
 The following example prints the **AccountNum** of each row in the **CustomerTable** table.
 
 ```xpp
-CustomerTable customerTable;
-while select * from customerTable
+CustTable custTable;
+while select * from custTable
 {
-    info("AccountNum: " + customerTable.AccountNum);
+    info("AccountNum: " + custTable.AccountNum);
 }
 ```
 
 The following example prints the **AccountNum** of the first two rows returned by the **select** statement.
 
 ```xpp
-CustomerTable customerTable;
-select * from customerTable;
-info("AccountNum: " + customerTable.AccountNum);
+CustTable custTable;
+select * from custTable;
+info("AccountNum: " + custTable.AccountNum);
 
-next customerTable;
-info("AccountNum: " + customerTable.AccountNum);
+next custTable;
+info("AccountNum: " + custTable.AccountNum);
 ```
 
-
-## select statements
-
-The **select** statement fetches or manipulates data from the database.
-
-+ All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
-+ The **select** statement fetches only one record, or field.
-+ To fetch or traverse multiple records, you can use the **next** statement or the **while select** statement.
-    + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
-    + It's more appropriate to use a **while select** statement to traverse multiple records.
-+ The results of a **select** statement are returned in a table buffer variable.
-+ If you use a field list in the **select** statement, only those fields are available in the table variable.
-+ If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over.
-+ You can count, average, or sum only integer and real fields.
+For more examples, see [Select statement](xpp-select-statment.md).
