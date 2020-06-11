@@ -84,12 +84,21 @@ You don't have to monitor or schedule data exports, because the system keeps the
 ![Monitoring table progress](./media/Export-Tables-toData-lake-monitorv2.png)
 
 ## Troubleshooting common issues and error conditions
-You may 
 
-###Export to Data lake feature is not available
+### Export to Data Lake feature is not available in your region and/or your environment at this point in time, please check back later
 This feature is not available in developer (ie. Tier 1) environments. You need a sandbox environments (Tier 2 or higher) with platform update PU36 or higher.
 
 This feature may not be available in all Azure regions where Finance and Operations is available or this feature may not be available for your environment. If you would like to get access to this feature, you can send a mail to the feature team at <..>. We will try and make this feature available soon
 
+### Export to Data Lake feature is currently being installed for your environment. Please check back later
+Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
 
+### Export to Data Lake add-in is not installed. Ask your administrator to install this add-in via Dynamics Life Cycle Services (LCS)
+Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+
+### Export to Data Lake feature failed to install in Dynamics Life Cycle Services (LCS). Ask your administrator to re-install the Export to Data Lake add-in. If this issue persists, call support
+When configuring the export to Data lake feature, the system may have reported an error. Or there may be an error in accessing the Data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+
+### Export to Data Lake feature is temporarily unavailable. Please check back later.
+If you see this error, for prolonged periods of time, contact support.  
 
