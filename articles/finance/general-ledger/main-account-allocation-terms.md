@@ -44,12 +44,13 @@ When you define the destination ledger account for an allocation term you must s
 
 There is no limit to the number of allocations terms that you can add to a main account; however, the sum of the percent to allocated on an allocation term cannot exceed 100. You can create allocations for less than 100% if a portion of the original voucher amount should remain in the source financial dimensions. Allocations terms can be added to a main account as a legal entity override. If you are using a shared chart of accounts, allocation terms must be defined for each legal entity. To access the **Allocation terms** button, you must first select the **Allocation** check on the Legal entity override.
 
-###Allocation term example###
+##Allocation term example
 You have defined a cost center for your organization called CORPORATE that is numbered 000. When invoices are posted for utility expenses, they are coded to this CORPORATE cost center. Your company has defined a rule that all utility expenses should be allocated by a percentage to each of the individual cost centers. The other financial dimensions for department and business unit will stay the same.
 With this example, a new allocation term would be created for the utility expense main account. One row would be created for each cost center with the percentage to be allocated. The **Selection criteria** for the source financial dimensions for each row would be Specific for the Cost center and the value would be set to 000: CORPORATE. For department and business unit, the **Selection criteria** would be Unspecific.
 On the **Destination ledger account FastTab**, the main account will be the same utility expense account, and the **Keep source financial dimensions** will be set to yes for business unit and department. The **Keep source financial dimensions** will be set to no for cost center, and the value selected will be each respective cost center that you are allocating to. If there are three cost centers to allocate to, then three allocation terms records would be created. The only difference between each allocation term is the cost center that is specified on the destination ledger account.
 
-###Create an allocation term on a main account###
+##Create an allocation term on a main account
+
 1. In the **Navigation pane**, go to **Modules > General ledger > Chart of accounts > Accounts > Main accounts**.
 2. In the list, find and select the desired record.
 3. In the **Legal entity overrides** FastTab, click **Add**.
@@ -68,7 +69,8 @@ On the **Destination ledger account FastTab**, the main account will be the same
 12. Repeat steps 7-11 for each additional allocation. The sum of all allocations is indicated int he **Total percent** field. This amount cannot exceed 100.
 13. Close the forms.
 
-NOTE: You can optionally use the **Copy** button to duplicate the selected allocation.
+>[!NOTE] 
+> You can optionally use the **Copy** button to duplicate the selected allocation.
 
 When an allocation term is created for a main account, the system will automatically post a new voucher when a voucher is posted that matches the Source financial dimensions on the allocation terms.
 
