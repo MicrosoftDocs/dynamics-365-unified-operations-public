@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-    > **Export to Azure Data Lake** feature may not be available in all regions and/or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services (LCS) or in Finance and Operations, this feature is not available in your environment at this point in time.
+    > **Export to Azure Data Lake** feature may not be available in all regions and/or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Life cycle services (LCS) or in Finance and Operations, this feature is not available in your environment at this point in time. If you would like to get access to this feature, you can send a mail to the feature team at FnODataLakePreview@service.microsoft.com. We will try and make this feature available soon
     > At this point, Export to Data lake feature is not available in developer (ie. Tier-1) environments. You need a cloud based Tier-2 or higher environment to enable this feature  
     > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
  
@@ -88,7 +88,7 @@ You don't have to monitor or schedule data exports, because the system keeps the
 ### Export to Data Lake feature is not available in your region and/or your environment at this point in time, please check back later
 This feature is not available in developer (ie. Tier 1) environments. You need a sandbox environments (Tier 2 or higher) with platform update PU36 or higher.
 
-This feature may not be available in all Azure regions where Finance and Operations is available or this feature may not be available for your environment. If you would like to get access to this feature, you can send a mail to the feature team at <..>. We will try and make this feature available soon
+This feature may not be available in all Azure regions where Finance and Operations is available or this feature may not be available for your environment. If you would like to get access to this feature, you can send a mail to the feature team at FnODataLakePreview@service.microsoft.com. We will try and make this feature available soon
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later
 Before you can use this feature, you need to **configure Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
