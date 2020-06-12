@@ -42,20 +42,22 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [Designate fields as required via the Personalization toolbar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – For more information, see 
-[Personalize the user experience](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience). 
--  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
--  [Scanning files and attachments for malicious code](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/scanning-files-attachments-malicious-code) – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
--  [Show related document attachments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/show-related-document-attachments) – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
-- [Finance and Operations entities in Common Data Service as virtual entities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform integration with Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
-- Customer and vendor master data can be enabled using Feature Management – For more information, see [Customer and vendor master data sharing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing#customer-and-vendor-master-data-sharing).
-- [Finance and Operations licensing](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) – The product name, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, is displayed in the navigation bar and reflects the base license associated with the current user.
+-  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
+[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
+-  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
+[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
+-  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
+[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
+-  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
+[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
+-  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
+[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
 
 ## Additional resources
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
