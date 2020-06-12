@@ -1901,7 +1901,7 @@
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
           - name: Debug against a Tier 1 Commerce development environment
-            href: debug-tier-1.md
+            href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
