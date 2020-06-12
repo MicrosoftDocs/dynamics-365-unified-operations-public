@@ -3426,6 +3426,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
           - name: Select model definitions when you create formats
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+          - name: Design multilingual reports
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
           - name: Defer execution of ER format elements
             items: 
             - name: Defer execution of a sequence element
