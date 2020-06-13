@@ -303,3 +303,8 @@ After the build is completed, deployable packages are generated as a zip file (R
 ## Deploy the deployable packages
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
+
+LCS has a 300 MB limitation on the package size, if the package size is greater than 300 MB LCS will not allow to deploy the package. Please remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup or HardwareStationSetup installers) from the package to reduce the size and deploy to RCSU. (Unzip the package and remove any of the self-service exes and zip the package again). The self service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS using the below approach:
+https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/synchronize-installers
+
+
