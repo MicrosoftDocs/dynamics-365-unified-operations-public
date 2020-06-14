@@ -58,11 +58,11 @@ In most of the taxation system, there is concept of tax rate type, similar to st
 
 You can now associate the Tax rate type to a Released product, Procurement/Sales categories, and Charge code.
 
-![](media/GST-tax-rate-type-1-10-0-05.PNG)
+![](media/GST-tax-rate-type-1-10-0-05.png)
 
 Use the Tax rate type to determine the tax rate which will dramatically reduce the number of tax setup data records.
 
-![](media/GST-tax-rate-type-2-10-0-05.PNG)
+![](media/GST-tax-rate-type-2-10-0-05.png)
 
 For Retail customers whose terminals haven't been updated to 10.0.5, use the following configurations. The only difference is tax rate types are not supported. 
 
@@ -83,7 +83,7 @@ To enable this functionality, go to **Tax** > **Setup** > **Tax Configuration** 
 
 ![](media/GST-skip-model-mapping-4-10-0-05.PNG)
 
-![](media/GST-skip-model-mapping-5-10-0-05.PNG)
+![](media/GST-skip-model-mapping-5-10-0-05.png)
 
 ### Financial dimension linked to inventory dimension site is not auto-populated in stock transfer receipt order line
 
@@ -116,7 +116,7 @@ To make these changes, complete the following steps.
 
 1. Create new posting account called **Tax payable reverse charge**. 
 
-![](media/GST-tax-payable-reverse-charge-6-10-0-05.PNG)
+![](media/GST-skip-model-mapping-6-10-0-05.png)
 
 ![](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
 
