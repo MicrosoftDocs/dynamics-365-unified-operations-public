@@ -49,14 +49,18 @@ The following GSTR issues are also resolved:
 ## Non-GST item
 You can create a non-GST item that is the default for **Tax information** in taxable transactions.
 
+1[](media\GST-non-gst-item-1-10-0-01.png)
+
 ## Critical fixes 
 
 - Can't post a purchase invoice for a service item with load in inventory.
 - The HSN summary is empty and there are no records in B2CL in GST offline tool format.
 - Total transaction value in GSTR1/GSTR2 does not equal the invoice amount when a transaction price includes tax.
-- Editing a request for quotation (RFQ) reply results in the following error, "Posting exception has been thrown by the target of an invocation”.
+- Editing a request for quotation (RFQ) reply results in the following error, "Posting exception has been thrown by
+  the target of an invocation”.
 - Amount origin of withholding tax is incorrect.
-- Unable to save a purchase order after changing a financial dimension. The following error occurs, "Function MarkupTrans.parmSourceDocLineTypeEnumName has  been incorrectly called".
+- Unable to save a purchase order after changing a financial dimension. The following error occurs, 
+  "Function MarkupTrans.parmSourceDocLineTypeEnumName has  been incorrectly called".
 - Posting a sales invoice can result in the error, "Voucher xxx is already used as of date”.
 - After changing the tax formula, the condition is updated with the same content as the formula.
 - Invoice date is incorrect in GSTR1/GSTR2.
