@@ -48,7 +48,7 @@ In addition to deleting a single record or all records, you can now delete multi
 ### Enable tax calculation based on the accounting currency for import/export order
 For more information about calculating tax in the accounting currency for import/export orders, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](../../fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order.md).
 
-![](media/GST-tax-based-accounting-currency-2-10-0-03.PNG	)
+![](media/GST-tax-based-accounting-currency-2-10-0-03.png	)
 
 ### Use Tax transaction inquiry 
 With the release of 10.0.04, use the Tax transaction inquiry functionality for TDS/TCS instead of post withholding tax.
