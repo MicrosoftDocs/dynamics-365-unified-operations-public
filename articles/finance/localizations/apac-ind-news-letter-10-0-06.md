@@ -53,9 +53,9 @@ Tax information has been enabled for procurement categories. Tax information can
 3. Go to **Tax** > **Sales tax reports** > **GER export to GSTR CSV** and generate a **GSTR** report.
 3. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. 
 4. Select the comma-separated values (CSV) files that you want.
-For example, select **GER export** to **GSTR CSV__Merged**. This file is generated as a merged file. 
+   For example, select **GER export** to **GSTR CSV__Merged**. This file is generated as a merged file. 
 
-For more information, see [Enable multi-batch processing for GSTR reports](apac-ind-gst-multi-batch-processing-gstr-return.md).
+ For more information, see [Enable multi-batch processing for GSTR reports](apac-ind-gst-multi-batch-processing-gstr-return.md).
 
 ## Critical fixes 
 
