@@ -43,6 +43,8 @@ Updates have been made to the following topic, [India Goods and Services Tax (GS
 ### Delete the selected (multiple) tax lookup condition record
 In addition to deleting a single record or all records, you can now delete multiple selected records.
 
+![](media/GST-delete-multiple-tax-lookup-1-10-0-03.PNG )
+
 ### Enable tax calculation based on the accounting currency for import/export order
 For more information about calculating tax in the accounting currency for import/export orders, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](../../fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order.md).
 
