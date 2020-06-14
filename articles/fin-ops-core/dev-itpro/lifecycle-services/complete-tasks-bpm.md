@@ -42,9 +42,18 @@ ms.dyn365.ops.version: 2012
 
     ![Selecting a process](./media/select-upload.PNG "Selecting a process")
 
-3. In the right pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
+3. From the Overview pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
     ![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")
+    
+## Download a task recording
+
+You can download a task recording (AXTR) that have been uploaded to a Business Process Modeler(BPM) process. 
+1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to download the task recording.
+
+2. Select the process to that has a the task recording uploaded. 
+
+3. From the Overview pane, click **Download** to save the task recording (AXTR). 
 
 ## Export a methodology to Word
 
