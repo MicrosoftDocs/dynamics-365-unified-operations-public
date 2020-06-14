@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../includes/banner.md)]
 
-Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in the Finance and Operations apps. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined.
+Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries. BPM helps you align your business processes with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in the Finance and Operations apps. Additionally, you can add new business processes that aren't already defined.
 
 BPM is compatible with the following programs:
 
@@ -51,14 +51,14 @@ To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Azur
 Follow these steps to access BPM.
 
 1. Go to [LCS](https://lcs.dynamics.com/).
-2. Sign in, open a project, and then select the **Business process modeler** tile. The **Business process libraries** page has three sections:
+2. Sign in, open a project, and then select the **Business process modeler** from the dropdown menu. The **Business process libraries** page has three sections:
 
-    - **My libraries** – This section contains business processes that the user has created or added.
-    - **Corporate libraries** – This section contains custom business processes that someone in your organization has uploaded.
-    - **Global libraries** – This section contains cross-industry standard business processes.
+    - **Project libraries** – This section contains business processes that a user has created or added.
+    - **Corporate libraries** – This section contains custom business processes that someone in your organization has published.
+    - **Global libraries** – This section contains cross-industry standard business processes, typically published by Microsoft.
 
-3. To copy a standard business process library from the **Global libraries** section to the **My libraries** section, select the upper-right corner of the tile in the **Global libraries** section, and then select **Copy**.
-4. After the business process library has been added to the **My libraries** section, select the tile to view the business process library.
+3. To copy a standard business process library from the **Global libraries** section to the **Project libraries** section, select the upper-right corner of the tile in the **Global libraries** section, and then select **Copy**.
+4. After the business process library has been added to the **Project libraries** section, select the tile to view the business process library.
 
 ## Working in BPM libraries
 
