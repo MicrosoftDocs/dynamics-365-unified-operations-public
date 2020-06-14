@@ -55,7 +55,6 @@ By using direct delivery functionality, you can create deliveries directly from 
 Under a new GSTR return process, GST ANX-1 (Annexure of supplies) and GST ANX-2 (Annexure of Inward Supplies) will be filed as part of FORM GST RET-1 (Normal) returns. You can generate multiple GSTR returns.
 
 ![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG )
-
 For more information about the GSTR Return offline tool report, see the KB article, [New GSTR Return offline tool (Trial Version Prototype) for India in Dynamics 365 Finance](https://support.microsoft.com/help/4549665). 
 
 ### GTE debug mode
@@ -75,14 +74,13 @@ With debug mode enabled, the system will generate a log file that contains the d
 
 3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
 
-![](media/GST-debug-mode-4-3-10-0-09.PNG )
-
 4. Submit the file to Microsoft for investigation.
  
 ## Critical fixes 
 
 - Business address is not updated automatically by the system in the **Tax information** field when a sales order is created.
--	When generating a free text invoice from a legal entity, the following error occurs, "Something went wrong while generating the request". 
+-	When generating a free text invoice from a legal entity, the following error occurs, "Something went wrong while 
+  generating the request". 
 -	During data import through data entity files, tax is not calculated. 
 -	The system generates a typical sales order invoice instead of the GST tax invoice when the tax value becomes zero. 
 -	GSTR-2 **Is reverse charge applicable** value is incorrect. 
@@ -94,7 +92,8 @@ With debug mode enabled, the system will generate a log file that contains the d
 -	GSTIN registration numbers and TDS registration numbers are not shared with the other legal entities when data is imported from the **Data management** module even after sharing is enabled. 
 -	GST tax amount is deducted twice from the sale of assets net amount when **Price inclusive tax** is enabled.
 -	When a vendor invoice is settled, the following error occurs, "Object reference not set to an instance of an object". 
--	HSN/SAC numbers are not populating from the purchase order to the purchase order invoice when the selected purchase order uses a plus (+) sign. (This sign is used for booking consolidated invoices.) 
+-	HSN/SAC numbers are not populating from the purchase order to the purchase order invoice when the selected purchase order 
+  uses a plus (+) sign. (This sign is used for booking consolidated invoices.) 
 -	All posting profiles are listed in the GTE troubleshooting file when debug mode is enabled. 
 -	Transfer order posting isn't picking up the IGST account.
 
