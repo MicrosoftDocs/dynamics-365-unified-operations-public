@@ -43,6 +43,7 @@ This functionality can be turned on in the **Feature management** workspace.
 
 ### Tax information enabled for procurement category
 Tax information has been enabled for procurement categories. Tax information can be added on the **Tax information** FastTab on the **Procurement categories** page. 
+### Path : Procurement and Sourcing > Consignment > Procurement categories 
 
 ![](media/GST-tax-setup-validation-2-10-0-06.png)
  
