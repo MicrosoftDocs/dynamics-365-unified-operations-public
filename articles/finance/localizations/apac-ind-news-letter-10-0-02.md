@@ -37,7 +37,7 @@ This topic includes a summary of the new features and critical bug fixes release
 ### Auto completion when editing tax formulas or conditions
 Advanced editor is enabled for Global Tax Engine formulas/conditions to improve user productivity. To enable this functionality, go to **Electronic Reporting** > **Tax Configuration** > **Configurations** > **User Parameter** and set the **Enable advanced formula editor** field to **Yes**.
 
- ![](media/GST-advance-editor-1-10-0-02.PNG)
+ ![](media/GST-advance-editor-1-10-0-02.png)
 
 ## Critical fixes 
 
@@ -47,7 +47,8 @@ Advanced editor is enabled for Global Tax Engine formulas/conditions to improve 
 -	Unable to post free text invoices with GST information when signed in with the **Accounts Receivable clerk** role. 
 -	**TDS/TCS group** field is editable only for the first line on the **Pending invoice** page.  
 -	The tax rate is not the same for bill of entry (BOE) and purchase invoice if the date is not the same.
--	GST does not calculate correctly when the **Unit price** and **Discount %/Discount amount** fields are updated at the purchase invoice level.
+-	GST does not calculate correctly when the **Unit price** and **Discount %/Discount amount** fields are updated at the 
+  purchase invoice level.
 -	The **UQC** field from the HSN file in the **GSTR** report is not showing the full value because the length is ten characters.
 -	The **Production order** page stops responding when selecting a production order.
 -	The tax adjustment value is not posted when the voucher number allocation on the posting parameter is enabled.
