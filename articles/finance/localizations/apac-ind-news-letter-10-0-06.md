@@ -39,10 +39,12 @@ During the process of importing tax setup, the system will validate the data cor
 as well as data duplication. Duplicate data means the lookup records result in the same tax rate, load on inventory percentage, etc. 
 This functionality can be turned on in the **Feature management** workspace.
 
+![](media/ST-tax-setup-validation-1-10-0-06.PNG)
+
 ### Tax information enabled for procurement category
 Tax information has been enabled for procurement categories. Tax information can be added on the **Tax information** FastTab on the **Procurement categories** page. 
 
-![](media/GST-tax-setup-validation-2-10-0-06.PNG)
+![](media/GST-tax-setup-validation-2-10-0-06.png)
  
 ### Enable multi-batch processing for GSTR reports
 
@@ -52,8 +54,6 @@ Tax information has been enabled for procurement categories. Tax information can
 3. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. 
 4. Select the comma-separated values (CSV) files that you want.
 For example, select **GER export** to **GSTR CSV__Merged**. This file is generated as a merged file. 
-
-![](media/GST-multi-batch-processing-3-10-0-06.PNG)
 
 For more information, see [Enable multi-batch processing for GSTR reports](apac-ind-gst-multi-batch-processing-gstr-return.md).
 
