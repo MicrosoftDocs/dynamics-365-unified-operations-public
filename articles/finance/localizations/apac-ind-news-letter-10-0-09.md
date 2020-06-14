@@ -66,13 +66,17 @@ you might encounter posting imbalance issues. It can be time consuming to troubl
 With debug mode enabled, the system will generate a log file that contains the discrepancies between the input fields from Dynamics 365 Finance and the GTE, and the posting profile. 
 
 1. In the internet address bar, change **&debug=vs%2CconfirmExit&** to your Dynamics 365 Finance AOS URL and press Enter to open a new session.
+
 ![](media/GST-debug-mode-4-1-10-0-09.PNG )
 
 2. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup** and mark the **Check model mapping discrepancies** parameter.
+
 ![](media/GST-debug-mode-4-2-10-0-09.PNG )
 
 3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
+
 ![](media/GST-debug-mode-4-3-10-0-09.PNG )
+
 4. Submit the file to Microsoft for investigation.
  
 ## Critical fixes 
