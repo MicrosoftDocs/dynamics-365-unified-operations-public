@@ -54,7 +54,7 @@ You can create a non-GST item that is the default for **Tax information** in tax
 ## Critical fixes 
 
 - Can't post a purchase invoice for a service item with load in inventory.
-- The HSN summary is empty and there are no records in B2CL in GST offline tool format.
+- The HSN summary is empty and there are no records in B2CL(Supply to Large customer >INR 2,50,000) in GST offline tool format.
 - Total transaction value in GSTR1/GSTR2 does not equal the invoice amount when a transaction price includes tax.
 - Editing a request for quotation (RFQ) reply results in the following error, "Posting exception has been thrown by
   the target of an invocation”.
@@ -64,8 +64,10 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - Posting a sales invoice can result in the error, "Voucher xxx is already used as of date”.
 - After changing the tax formula, the condition is updated with the same content as the formula.
 - Invoice date is incorrect in GSTR1/GSTR2.
-- Can't create a project invoice proposal for the on-account journal when the journal includes withholding tax with the error, "Object reference not set to an instance of an object".
-- The Tax journal with a tax component of **IGST** and the posting type as **Tax Payable** is posted with SGST and CGST with zero amount.
+- Can't create a project invoice proposal for the on-account journal when the journal includes withholding tax with the error,
+  "Object reference not set to an instance of an object".
+- The Tax journal with a tax component of **IGST** and the posting type as **Tax Payable** is posted with SGST and CGST
+  with zero amount.
 - The **Tax transaction inquiry** page allows only 11 fields to be selected.
 - GSTR2 takes the bill of entry posting date instead of the posting date for the import order.
 - Can't open a tax document when the GST configuration is extended with the error, "Object reference not set an instance of an object".
@@ -73,7 +75,8 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - Auto-block importing of previous Microsoft Dynamics AX (AX2012) configuration versions to Dynamics 365 Finance.
 - GSTR configuration for two companies cannot be set up.
 - Can't add multiple tax measures with the same name.
-- Retail statement posting fails during sales invoice posting when there is price include tax sales order with a service item, and the tax is different from the tax in the head quarter.
+- Retail statement posting fails during sales invoice posting when there is price include tax sales order with a service item,
+  and the tax is different from the tax in the head quarter.
 
 ## Upcoming fixes in 10.0.2 
 
