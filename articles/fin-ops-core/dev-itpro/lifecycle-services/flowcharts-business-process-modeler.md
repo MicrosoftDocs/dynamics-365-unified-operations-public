@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 7.0
 > [!IMPORTAMT]
 > Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
 
-You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can view the default connected flowcharts, create connected flowcharts from Task recorder, and import a business process model flowchart from another library. It also explains how to upload and view unconnected flowcharts.
+You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and how to upload and view unconnected flowcharts.
 
 -   Connected flowcharts are the automatically generated flowchart based on data recorded in the Task recorder and uploaded to Business process modeler, this also includes the process steps from the task recording. 
 -   Unconnected flowcharts are uploaded directly from Visio.
