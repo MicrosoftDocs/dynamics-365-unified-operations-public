@@ -37,6 +37,8 @@ This topic includes a summary of the new features and critical bug fixes release
 ### Charge allocation in sales order  
 You can now include charge allocations on all sales order lines. To enable this feature, go to the **Feature management** workspace and enable the feature, **Charges allocation on a sales order**.
 
+![](media/GST-charge-allocation-1-10-0-09.PNG )
+
 On the sales order header, you can select **Assessable value** on the charge line. Based on this selection, the distributed charge value is added to line item taxable value. The taxes are then calculated accordingly.
 
 ### Default a customer business address on tax information 
@@ -44,11 +46,15 @@ On the sales order header, you can select **Assessable value** on the charge lin
 This feature will default a customer's business address on the **Tax information** tab of a sales transaction, and the company address
 on the **Tax information** tab of a direct delivery purchase order. To enable this feature, go to the **Feature management** workspace, and enable the feature, **Defaulting of customer business address in the tax information tab**.
 
+![](media/GST-customer-business-address-2-10-00-09.png )
+
 By using direct delivery functionality, you can create deliveries directly from vendors to customers, reducing delivery time and order administration. During direct delivery, when a purchase order is created, the customer delivery address defaults from the **Sales order** page. However from the GST prospective, the customer's business address should default in tax information. 
 
 ### New GSTR return offline tool (trial version) for India in Dynamics 365 Finance 
 
 Under a new GSTR return process, GST ANX-1 (Annexure of supplies) and GST ANX-2 (Annexure of Inward Supplies) will be filed as part of FORM GST RET-1 (Normal) returns. You can generate multiple GSTR returns.
+
+![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG )
 
 For more information about the GSTR Return offline tool report, see the KB article, [New GSTR Return offline tool (Trial Version Prototype) for India in Dynamics 365 Finance](https://support.microsoft.com/help/4549665). 
 
@@ -60,8 +66,13 @@ you might encounter posting imbalance issues. It can be time consuming to troubl
 With debug mode enabled, the system will generate a log file that contains the discrepancies between the input fields from Dynamics 365 Finance and the GTE, and the posting profile. 
 
 1. In the internet address bar, change **&debug=vs%2CconfirmExit&** to your Dynamics 365 Finance AOS URL and press Enter to open a new session.
+![](media/GST-debug-mode-4-1-10-0-09.PNG )
+
 2. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup** and mark the **Check model mapping discrepancies** parameter.
+![](media/GST-debug-mode-4-2-10-0-09.PNG )
+
 3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
+![](media/GST-debug-mode-4-3-10-0-09.PNG )
 4. Submit the file to Microsoft for investigation.
  
 ## Critical fixes 
