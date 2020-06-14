@@ -55,6 +55,8 @@ You can download a task recording (AXTR) that have been uploaded to a Business P
 
 3. From the Overview pane, click **Download** to save the task recording (AXTR). 
 
+    ![Download AXTR](./media/Download%20AXTR.png "Donload AXTR")
+    
 ## Export a methodology to Word
 
 1. In your LCS project, on the **Business process libraries** page, select the library to export.
