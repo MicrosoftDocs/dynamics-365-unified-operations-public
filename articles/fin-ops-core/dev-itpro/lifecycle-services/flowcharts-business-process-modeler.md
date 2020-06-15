@@ -147,7 +147,8 @@ Unconnected flowcharts, such as a Visio diagram, can be very helpful for describ
 3.  From the **Overview** pane, click on **Diagram**.   
 5.  From the **Visio** tab, click **Upload** to upload a Visio file.
 
-![Note] If you have uploaded the wrong file, you can delete the existing one, and upload a new one to replace it.
+> [!Note] 
+> If you have uploaded the wrong file, you can delete the existing one, and upload a new one to replace it.
 
 <!--
 ### View an unconnected flowchart
