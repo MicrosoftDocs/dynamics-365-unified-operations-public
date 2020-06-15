@@ -3,7 +3,7 @@ title: Work with activity diagrams in Business process modeler libraries
 description: This topic provides information about how you can use activity diagrams in a BPM library.
 author: kfend
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
