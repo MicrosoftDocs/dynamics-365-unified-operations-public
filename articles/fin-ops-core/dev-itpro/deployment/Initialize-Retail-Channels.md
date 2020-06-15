@@ -5,7 +5,7 @@ title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -138,15 +138,22 @@ The migration process is transparent to the channels. After the scale unit initi
 3. All channels mapped to the **Default** channel database in the headquarters will be updated to map to the new Commerce Scale Unit.
 4. A Commerce Data Exchange (CDX) full data sync will be performed to bring the channel data to the new scale unit.
 
-You should plan for a five-hour downtime window for store and any online channel operations that use Retail Server or Cloud Point of Sale.
+**Planning and testing for Commerce Scale Unit initialization**
+As a general rule, when initializing Commerce Scale Unit, you must plan for a five-hour downtime window for store operations as well as any e-commerce channel operations that use Retail Server or Cloud Point of Sale.
 
-This process should be first performed in a sandbox environment after a database refresh with production data is performed. This will allow for business validations and will provide guidance on the amount of time the migration process will take.
+1. Perform a database refresh from your production environment to a sandbox UAT environment. 
+2. Initialize Commerce Scale Unit in the sandbox UAT environment. 
+3. Note the initialization time to complete for Commerce Scale Unit. This will be comparable to the time this operation takes in your production environment, during which store operations and e-commerce operations will be unavailable.
 
-Because the Commerce Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
+You must perform the following additional steps before initializing Commerce Scale Unit.
 
-1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process.
-2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
-3. **Sign out of all POS devices.** POS operations are not supported during migration.
+- **Close all POS shifts** - After migration, POS users will be unable to close any shifts that were active during the migration process.
+- **Validate that all P-jobs have been successfully completed** - It is recommended that P-jobs to synchronize pending transactions have completed before CSU is initialized.
+- **Sign out of all POS device** - POS operations are not supported during migration.
+- **Recall and void all suspended transactions at POS** - Suspended transactions are not preserved as part of the initialization.
+
+> [!IMPORTANT]
+> As part of Commerce Scale Unit initialization, prior suspended transactions will be lost and cannot be recalled. 
 
 Here is what occurs during the initialization period:
 
