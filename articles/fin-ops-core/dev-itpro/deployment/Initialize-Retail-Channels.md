@@ -149,8 +149,8 @@ You must perform the following additional steps before initializing Commerce Sca
 
 - **Close all POS shifts** - After migration, POS users will be unable to close any shifts that were active during the migration process.
 - **Validate that all P-jobs have been successfully completed** - It is recommended that P-jobs to synchronize pending transactions have completed before CSU is initialized.
-- **Sign out of all POS device.** - POS operations are not supported during migration.
-- **Recall and void all suspended transactions at POS.** - Suspended transactions are not preserved as part of the initialization.
+- **Sign out of all POS device** - POS operations are not supported during migration.
+- **Recall and void all suspended transactions at POS** - Suspended transactions are not preserved as part of the initialization.
 
 > [!IMPORTANT]
 > As part of Commerce Scale Unit initialization, prior suspended transactions will be lost and cannot be recalled. 
