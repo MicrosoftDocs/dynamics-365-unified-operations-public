@@ -61,7 +61,7 @@ The above procedure must be performed for all Orchestrator node VMs.
 
 ## Safe list URLs
 
-The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be safe listed on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
+The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be add to a safe list on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
 
 ```Text
 - lcsapi.lcs.dynamics.com
