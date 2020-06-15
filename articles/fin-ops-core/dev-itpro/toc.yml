@@ -496,6 +496,8 @@
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
+          - name: On-premises disaster recovery configuration
+            href: deployment/onprem-dr.md
           - name: PowerBI.com integration with on-premises environments
             href: analytics/entity-store-on-prem.md
           - name: Reconfigure environments
