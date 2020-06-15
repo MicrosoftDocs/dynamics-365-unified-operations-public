@@ -85,6 +85,7 @@ Because rules can be set up for automatic role assignment, the administrator doe
 
 - [Role-based security](role-based-security.md)
 - [Security architecture](security-architecture.md)
+- [Encryption in Finance and Operations apps](encryption.md)
 
 ## Batch processing
 Many tasks can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
