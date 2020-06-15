@@ -5,7 +5,7 @@ title: Clienteling overview
 description: This topic provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
