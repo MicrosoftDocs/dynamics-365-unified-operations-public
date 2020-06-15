@@ -5,7 +5,7 @@ title: Set up containerization
 description: This topic describes how to automate the containerization of loads in Warehouse management. 
 author: ShylaThompson
 manager: tfehr 
-ms.date: 07/22/19
+ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
