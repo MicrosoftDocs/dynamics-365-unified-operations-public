@@ -5,7 +5,7 @@ title: What's new or changed for APAC India GST Localization in 10.0.06 (Novembe
 description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
 manager: Wangcheng
-ms.date: 06/08/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,9 +27,10 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.6
 
 ---
-[!include [banner](../includes/banner.md)]
 
 # What's new or changed for APAC India GST Localization in 10.0.06 (November 2019)
+
+[!include [banner](../includes/banner.md)]
 
 This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-and-ops/get-started/whats-new-changed-10-0-6.md).
 
