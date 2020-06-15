@@ -4,7 +4,7 @@
 title: Report a production order as finished
 description: This procedure shows how to report a production order as finished. 
 author: johanhoffmann
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Report a production order as finished
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to report a production order as finished. The demo data company used to create this procedure is USMF. This is the sixth procedure out of seven which explains the production order lifecycle.
 

@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use Document Management files in format outputs (Part 5 - Modify and run format)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. These steps can be performed in the DEMF company.
 
-To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 4: Run format)” procedure.
+To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 4: Run format)" procedure.
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -94,7 +94,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 2. Expand the Records to include () section.
 3. Click Filter.
 4. Select the row of the Customer invoice journal and the Sales order field.
-5. In the Criteria field, In the criteria “Sales order” field, type the order number 000148.
+5. In the Criteria field, In the criteria "Sales order" field, type the order number 000148.
     * 000148  
 6. Click OK.
 7. Click OK.

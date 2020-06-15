@@ -4,8 +4,8 @@
 title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 09/16/2017
+manager: tfehr
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParamete
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72653
@@ -67,7 +67,7 @@ At any point, you can add forecast dimensions to the list of dimensions that are
 
 Not all items behave in the same manner from a demand forecasting perspective. Similar items can be grouped in one item allocation key, and parameters such as transaction types and forecast method settings can be set per item allocation key. Click **Item allocation keys** in the left pane of the **Demand forecasting parameters** page. 
 
-To generate the forecast, Supply Chain Management uses a Machine Learning web service. To connect to the service, you must provide the following information if you sign in to Microsoft Azure Machine Learning Studio:
+To generate the forecast, Supply Chain Management uses a Machine Learning web service. To connect to the service, you must provide the following information if you sign in to Microsoft Azure Machine Learning Studio (classic):
 
 -   Web service application programming interface (API) key
 -   Web service endpoint URL
@@ -75,7 +75,7 @@ To generate the forecast, Supply Chain Management uses a Machine Learning web se
 -   Azure storage account key
 
 > [!NOTE]
-> The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that the Machine Learning service can access the historical data. 
+> The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that Machine Learning can access the historical data. 
 
 To create demand predictions, you can deploy your own service by using Machine Learning Studio or the Supply Chain Management demand forecasting experiments. Instructions for deploying the demand forecasting experiments as a web service are available in Supply Chain Management. On the **Demand forecasting parameters** page, click the **Azure Machine Learning** tab.
 

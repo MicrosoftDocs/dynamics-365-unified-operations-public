@@ -3,7 +3,7 @@
 
 title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -100,6 +100,10 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
       - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
+        
+        > [!NOTE]
+        > Support for explicit whitelisting is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
+        
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
 

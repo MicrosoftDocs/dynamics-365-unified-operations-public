@@ -5,7 +5,7 @@ title: Add languages to your site
 description: This topic explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,21 +29,21 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add languages to your site
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 
 ## Overview
 
-You can localize your website into any language that Dynamics 365 Commerce supports. (The list of supported languages appears later in this topic.) To add a language on your website, you must first add it to an online store that is bound to your site.
+You can localize your website into any language that Commerce supports. (The list of supported languages appears later in this topic.) To add a language on your website, you must first add it to an online store that is bound to your site.
 
 ## Add a language to an online store
 
 To add a language to an online store, follow these steps.
 
-1. Open the Dynamics 365 Retail environment for your site.
-1. Go to **Retail \> Channels \> Online stores** to access the list of online stores that are configured for your environment. Alternatively, enter **online stores** as a search term.
+1. Open the Dynamics 365 Commerce environment for your site.
+1. Go to **Retail and Commerce \> Channels \> Online stores** to access the list of online stores that are configured for your environment. Alternatively, enter **online stores** as a search term.
 1. Select the online store to add a language for.
 1. On the **Languages** FastTab, select **Add**.
 1. In the **Language** field, select the language to add.
@@ -169,6 +169,8 @@ The language that you added will now be available so that you can configure your
 [Add a logo](add-logo.md)
 
 [Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
 
 [Add a favicon](add-favicon.md)
 

@@ -3,7 +3,7 @@
 
 title: Deprecation of methods and metadata elements
 description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 03/01/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2019-1-31 
 ms.dyn365.ops.version: 8.1.3 
 ---

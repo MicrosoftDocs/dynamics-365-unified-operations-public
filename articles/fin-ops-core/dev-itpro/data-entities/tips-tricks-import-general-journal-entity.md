@@ -3,9 +3,9 @@
 
 title: Best practices for importing vouchers by using the General journal entity
 description: This topic provides tips for importing data into the General journal by using the General journal entity.  
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides tips for importing data into the General journal by using the General journal entity.
 
-You can use the General journal entity to import vouchers that have an account or offset account type of **Ledger, Customer, Vendor, or Bank**. The voucher can be entered as one line, using both the **Account** field and the **Offset account** field, or as a multi-line voucher, where only the **Account** field is used (and the **Offset account** is left blank on each line). The General journal entity doesn't support every account type. Instead, other entities exist for scenarios where different combinations of account types are required. For example, to import a project transaction, use the Project expense journal entity. Each entity is designed to support specific scenarios, which means additional fields may be available in entities for those scenarios but not in entities for a different scenario.
+You can use the General journal entity to import vouchers that have an account or offset account type of **Ledger**, **Customer**, **Vendor**, or **Bank**. The voucher can be entered as one line, using both the **Account** field and the **Offset account** field, or as a multi-line voucher, where only the **Account** field is used (and the **Offset account** is left blank on each line). The General journal entity doesn't support every account type. Instead, other entities exist for scenarios where different combinations of account types are required. For example, to import a project transaction, use the Project expense journal entity. Each entity is designed to support specific scenarios. This means additional fields may be available in entities for those scenarios. However, additional fields might not be available in entities for different scenarios.
 
 ## Setup
 Before you import by using the General journal entity, validate the following setup:
@@ -50,7 +50,7 @@ Two settings in Data management affect how the default journal batch number or v
 - **Set-based processing** (on the data entity)
 - **Auto-generated** (on the field mapping)
 
-The following sections describe the effect of these settings, and also explain how journal batch numbers and voucher numbers are generated.
+The following sections describe the effect of these settings. They also explain how the system generates batch numbers for journals and voucher numbers.
 
 ### Journal batch number
 
@@ -63,10 +63,10 @@ The following sections describe the effect of these settings, and also explain h
 
 ### Voucher number
 
-- When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers, a hotfix has been provided for the February 2016 release. The hotfix number is 3170316 and available for download from Lifecycle services (LCS). For more information, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+- When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. Note the following points if you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers.
 
     - To enable this functionality, on the journal name that is used for imports, set **Number allocation at posting** to **Yes**.
-    - A voucher number must still be defined in the imported file. However, this number is temporary and is overwritten by the voucher number when the journal is posted. You must make sure that the lines of the journal are grouped correctly by temporary voucher number. For example, during posting, three lines are found that have a temporary voucher number of 1. The temporary voucher number of all three lines is overwritten by the next number in the number sequence. If those three lines aren’t a balanced entry, the voucher isn't posted. Next, if lines are found that have a temporary voucher number of 2, this number is overwritten by the next voucher number in the number sequence, and so on.
+    - A voucher number must still be defined in the imported file. However, this number is temporary and will be overwritten by the voucher number when the journal is posted. Be sure that the lines of the journal are grouped correctly by temporary voucher number. For example, during posting, three lines are found that have a temporary voucher number of 1. The temporary voucher number of all three lines is overwritten by the next number in the number sequence. If those three lines aren’t a balanced entry, the voucher won't be posted. Next, if lines are found that have a temporary voucher number of 2, this number is overwritten by the next voucher number in the  sequence, and so on.
 
 - When you don't use the **Set-based processing** setting, you do not need to provide a voucher number in the imported file. The voucher numbers are created during import, based on the setup of the journal name (**One voucher only**, **In connection of balance**, and so on). For example, if the journal name is defined as **In connection of balance**, the first line receives a new default voucher number. The system then evaluates the line to determine whether the debits equal the credits. If an offset account exists on the line, the next line that is imported receives a new voucher number. If no offset account exists, the system evaluates whether the debits equal the credits as each new line is imported.
 - If the **Voucher number** field is set to **Auto-generated**, the import won't succeed. The **Auto-generated** setting for the **Voucher number** field isn't supported.

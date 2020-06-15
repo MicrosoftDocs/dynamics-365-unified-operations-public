@@ -4,7 +4,7 @@
 title: Replenishment with withdrawal kanbans
 description: This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

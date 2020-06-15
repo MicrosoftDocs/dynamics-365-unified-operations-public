@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Generate Japan consumption tax report
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through generating the Japan consumption tax report. This procedure was created using the demo data company JPMF.
 
@@ -66,3 +66,5 @@ This procedure walks you through generating the Japan consumption tax report. Th
 24. On the Action Pane, click Consumption tax report.
     * Click Print reports to generate the final report.  
 
+> [!NOTE]
+> To calculate the consumption tax report that should be submitted from October 1, 2019, you must turn on the **Japanese sales tax report** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).

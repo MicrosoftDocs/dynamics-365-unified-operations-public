@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Withholding taxes on customer payments (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services. When you post a customer payment journal, the withholding tax group that is set up for the customer is used to calculate the withholding tax on the transaction. This task uses the BRMF demo company.
 

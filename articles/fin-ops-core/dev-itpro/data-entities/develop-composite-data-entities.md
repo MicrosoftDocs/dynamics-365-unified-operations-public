@@ -5,7 +5,7 @@ title: Develop composite data entities
 description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,7 +47,7 @@ Sales Header and Sales Line are two different entities in the system. In case th
 
 Based on the linked entities, these entities can be exposed as an XML document with embedded element tags for entities. XML is the only way to expose a composite entity in data management.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Document>
 
@@ -124,7 +124,7 @@ For local testing the composite entity metadata needs to be refreshed.
 
 2. Alternately, you can write the following job to refresh the composite entity list metadata.
 
-    ```
+    ```xpp
     DMFDataPopulation::refreshCompositeEntityList();
     ```
 
@@ -138,7 +138,7 @@ For local testing the composite entity metadata needs to be refreshed.
 We recommend that you import and export the data as a normal entity from DIXF standard process. Refer to the following the steps for importing and exporting entity.
 
 > [!NOTE]
-> The source types of XML-Attribute or XML-Element are supported for composite entity.
+> The source types of XML-Attribute or XML-Element are supported for composite entity. In entity execution parameters, composite entities cannot be imported in parallel using the parallel processing settings.
 
 ## Import a composite entity
 1. Click **Import**.

@@ -53,7 +53,7 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 **Table of events**
 
-| **Event** | **Description**                                                   | **Event type**             | **Supported in Microsoft Dynamics** | **Comments**                                                                                                                                                                |
+| Event | Description                                                   | Event type             | Supported in Microsoft Dynamics | Comments                                                                                                                                                                |
 |-----------|-------------------------------------------------------------------|----------------------------|-------------------------------------|----------------------------------------|
 | R-1000    | Taxpayer information                                              | Initial                    | **Yes**                             | Support for taxpayers as legal entities.   |
 | R-1070    | Administrative and Judicial process                               | When a process is in place | **Yes**                             |                                              |
@@ -62,7 +62,7 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 | R-2030    | Amounts received by sport associations                            | Periodic event             | **No**                              |                                              |
 | R-2040    | Amounts paid to sport associations                                | Periodic event             | **No**                              |                                              |
 | R-2050    | Trade of rural production by rural legal entities or agribusiness | Periodic event             | **No**                              |                                               |
-| R-2060    | INSS-CPRB assessment                                              | Periodic event             | **Yes**                             | No support for CPRB tax assessment from Retail operations.  |
+| R-2060    | INSS-CPRB assessment                                              | Periodic event             | **Yes**                             | No support for CPRB tax assessment from Commerce operations.  |
 | R-2070    | Withholding on payments (IR, CSLL, PIS, COFINS)                   | Periodic event             | **No**                              | Support will be included as a separate feature in the next release. For more information, see **Sped REINF - event R-2070** in Microsoft Dynamics Lifecycle Services (LCS). |
 | R-2098    | Reopening of periodic                                             | Periodic event             | **Yes**                             |                                                |
 | R-2099    | Closing                                                           | Periodic event             | **Yes**                             |                                              |
@@ -93,7 +93,7 @@ Electronic messages functionality is new in Dynamics 365 Finance. It lets you ma
 
 Before you issue SPED-Reinf events to government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Finance, users will able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.
 
-#### **Import the configuration from the data entity**
+#### Import the configuration from the data entity
 
 To set up Electronic messages functionality for SPED-Reinf event communications, use the predefined configuration that is available in LCS.
 
@@ -119,11 +119,11 @@ To set up Electronic messages functionality for SPED-Reinf event communications,
 
 11. Select **Import**.
 
->   You receive a notification about the import process. You can also manually refresh the page to see the progress of the import process. When the process is completed, you can view the **Execution summary** page.
+	You receive a notification about the import process. You can also manually refresh the page to see the progress of the import process. When the process is completed, you can view the **Execution summary** page.
 
-![Execution summary page](media/bra-execution-summary-page.png)
+	![Execution summary page](media/bra-execution-summary-page.png)
 
-#### **Structure of electronic messages**
+#### Structure of electronic messages
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
@@ -148,7 +148,7 @@ You can find this configuration at **Tax \> Setup \> Electronic messages \> Addi
 ![Electronic messages additional fields](media/bra-electronic-messaging-additional-fields.png)
 
 > [!NOTE]
-> Don't remove this configuration. This configuration is included in the package.*
+> Don't remove this configuration. This configuration is included in the package.
 
 The message item types are classified by the type of event at **Tax \> Setup \> Electronic messages \> Message item types**.
 
@@ -162,9 +162,9 @@ Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on 
 ![Electronic messages number sequences](media/bra-electronic-messages-number-sequences.png)
 
 > [!NOTE]
-> The number sequence must be defined as non-continuous.*
+> The number sequence must be defined as non-continuous.
 
-#### **Certificates**
+#### Certificates
 
 Trusted certificates must be configured and used by Microsoft Dynamics, because the SPED-Reinf should always be signed by an e-CNPJ certificate that is authorized by the ICP-Brazil entity, regardless of any other signatures. This e-CNPJ certificate should match the first eight digits of the root fiscal establishment's CNPJ, because the report is issued by the root fiscal establishment and the related fiscal establishments.
 
@@ -176,36 +176,36 @@ For information about how to set up a Key Vault client, see [Setting up Azure Ke
 
 2.  Enter the following information:
 
--   Key Vault URL
+	-  Key Vault URL
 
--   Key Vault client
+	-  Key Vault client
 
--   Key Vault secret key
+	-  Key Vault secret key
 
--   Key vault secret ID
+	-  Key vault secret ID
 
 After registration, associate the certificate in the setup parameters for the **Report generation** action, as described in the next section.
 
-#### **Setup parameters** 
+#### Setup parameters 
 
 Every time that a message is created, prepared, validated, delivered, or received, the related action must be identified through a X++ class at **Tax \> Setup \> Electronic messages \> Executable class settings**.
 
 -   **Preparation items (Preparacao dos eventos) –** This action is used to create and prepare the XML message. It requests additional parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
 
-![Preparation items](media/bra-preparation-items.png)
+	![Preparation items](media/bra-preparation-items.png)
 
 -   **Process response (Processo de reposta)** – This action is used to update the delivered message when it's approved by the government by using a protocol number. Additionally, the message is updated as registered on the     government website.
 
-![Preparation items process response](media/bra-preparation-items-process-response.png)
+	![Preparation items process response](media/bra-preparation-items-process-response.png)
 
 -   **Report generation (Geracao de relatório)** – This action is used to send and receive the message item.
 
-![Generate reports parameters](media/bra-generate-reports-parameters.png)
+	![Generate reports parameters](media/bra-generate-reports-parameters.png)
 
 > [!NOTE]
-> Don't remove this configuration. This configuration is included in the package.*
+> Don't remove this configuration. This configuration is included in the package.
 
-#### **Specific actions**
+#### Specific actions
 
 Before a message is delivered, you must set up XML schema validation to prevent rejections from the government website.
 
@@ -234,7 +234,7 @@ Go to **Tax \> Setup \> Electronic messages \> Web service settings**, and set u
 > [!NOTE]
 > In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.
 
-### **Set up service types**
+### Set up service types
 
 The service type table represents table 06 that the tax authorities have established to classify the services that are provided, based on assignment of labor. A detailed list of available values is available on the SPED website.
 
@@ -242,7 +242,7 @@ The service type table represents table 06 that the tax authorities have establi
 
 2.  Select **New**, enter a classification code that has been established by the tax authorities, and enter a description.
 
-![Service types](media/bra-service-type-setup.png)
+	![Service types](media/bra-service-type-setup.png)
 
 After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management \> Setup \> Fiscal information \> Service code**, and then, for each service, assign the related service type.
 
@@ -256,13 +256,13 @@ This information is assigned to the fiscal organization on the **General** FastT
 
 ![Fiscal organization](media/bra-fiscal-organization-setup.png)
 
-### **Set up codes explanation suspension**
+### Set up codes explanation suspension
 
 Go to **Fiscal books \> Setup \> SPED Reinf \> Codes explanation suspension**, and set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned at **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
 ![Explanation codes](media/bra-codes-explanation-suspension.png)
 
-### **Set up fiscal books parameters**
+### Set up fiscal books parameters
 
 Go to **Fiscal books \> Setup \> Fiscal books parameters**, and set up the number sequence for events R-2010 and R-2020.
 
@@ -328,7 +328,7 @@ The digital certificates that are used to sign the events that are sent to the S
 
 The events in the SPED-Reinf must be transmitted by using a valid digital certificate. However, an exception is made for micro and small businesses (ME and EPP) that meet the Simple Nacional criteria and have seven or fewer employees. These businesses can transmit their events by using an access code.
 
-### **General process** 
+### General process
 
 1.  Use an electronic message to create, validate, and deliver the event or batch of events through electronic message items.
 
@@ -344,28 +344,29 @@ The following illustrations show the actions that are performed and the status o
 
 ![Flow actions](media/bra-flow-actions.png)
 
-#### **Insertion**
+#### Insertion
 
 This flow is used to deliver any event for the first time.
+
 ![Insertion](media/bra-insertion-flow.png)
 
-#### **Amendment/Update**
+#### Amendment/Update
 
 ![Update](media/bra-amendment-update-flow.png)
 
-#### **Cancel/Delete**
+#### Cancel/Delete
 
 ![Cancel](media/bra-cancel-delete-flow.png)
 
-#### **Inquire event 5011 (from event R-2099)**
+#### Inquire event 5011 (from event R-2099)
 
 ![Inquire event 5011](media/bra-inquire-event-5011.png)
 
-#### **Manage electronic messages** 
+#### Manage electronic messages 
 
 All events are managed and controlled at **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 
-| **Field name**      | **Field description**                                                                                                                                         |
+| Field name      | Field description                                                                                                                                         |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message item type   | The type of event:                                                                                                                                            |
 | Message item status | The current status of the event. This field is automatically filled in and updated, based on the exchange of messages between the tax authority and taxpayer. |
@@ -391,7 +392,7 @@ All events are managed and controlled at **Tax \> Inquiries and reports \> Elect
 -   **Accepted with errors** – The event was sent to the web services and was accepted by the tax authority system, even though there were errors.
 
 
-### **Event R-1000, "Taxpayer information"**
+### Event R-1000, "Taxpayer information"
 
 Event R-1000 is used to delivery information about the company. This event must be delivered only one time to register the information on the government site. However, after this initial registration of information, it can be delivered as many times as required for maintenance actions such as updates and deletions of data.
 
@@ -399,7 +400,7 @@ Therefore, whenever any taxpayer attribute or the valid date of information that
 
 Because communications can fail for technical reasons, such as a time-out or an internet shortage, the tax accountant must be able to resubmit the event. Additionally, because validation of the file by the web service can fail, the tax accountant must be able to view the details and fix the related errors. After the file is validated, the receiving protocol that is returned by the web service must be saved, and the tax accountant must be able to view its details, such as the number and time stamp.
 
-#### **Repro step – Insertion**
+#### Repro step – Insertion
 
 1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 
@@ -411,21 +412,21 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 4.  Select **OK** to confirm the settings.
 
->   A message item of **Informações do contribuinte** type is created, and the status of the message item is set to **Anexado**.
+	A message item of **Informações do contribuinte** type is created, and the status of the message item is set to **Anexado**.
 
-![Electronic message items insertion](media/bra-electronic-message-items-insertion.png)
+	![Electronic message items insertion](media/bra-electronic-message-items-insertion.png)
 
 5.  Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 
 6.  Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Parâmetros adicionais** to update the related information in additional fields.
 
-![Run processing aditional parameters](media/bra-run-processing-additional-parameters.png)
+	![Run processing aditional parameters](media/bra-run-processing-additional-parameters.png)
 
-![Preparation items](media/bra-preparation-items.png)
+	![Preparation items](media/bra-preparation-items.png)
 
 7.  Select **OK** to confirm the settings. The message item of **Informações do contribuinte** type is updated, and the status of the message item is changed to **Preparado**.
 
-![Electronic message items status](media/bra-electronic-message-items-status.png)
+	![Electronic message items status](media/bra-electronic-message-items-status.png)
 
 8.  Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 
@@ -433,13 +434,13 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 10.  Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
-![Generate reports](media/bra-generate-reports.png)
+	 ![Generate reports](media/bra-generate-reports.png)
 
 11.  Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 
 12.  Repeat these steps until you've complete all the actions in the [Insertion](#insertion) flow.
 
-#### **Repro step – Amendment** 
+#### Repro step – Amendment 
 
 If any data of the fiscal organization has been changed, or if the event must be excluded for some reason, event R-1010 must be transmitted again, but the status must be different.
 
@@ -450,11 +451,11 @@ Microsoft Dynamics AX will detect any differences between the information in the
 > [!NOTE]
 > If changes don't affect the related R-1010 event, you will receive the following message: "0 records have been added."
 
-#### **Repro step – Cancel**
+#### Repro step – Cancel
 
 If for some many reason, the taxpayer wants to cancel/exclude an event that has accepted, select **Cancel**, and confirm the operation. The status of the event will be updated to **Excluded**. Complete all the actions in the [Cancel/Delete](#canceldelete) flow.
 
-### **Event R-1070, "Administrative and judicial process"**
+### Event R-1070, "Administrative and judicial process"
 
 Event R-1070 is used to report information about the administrative and lawsuits process to tax authority system.
 
@@ -473,46 +474,46 @@ Besides the typical information that identifies the taxpayer and the event, even
 Before event R-1070 can be delivered, you must create the related process and
 include all related information.
 
-#### **Repro step – Create process**
+#### Repro step – Create process
 
 1.  Go to **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
-![Administrative judicial process](media/bra-administrative-judicial-process.png)
+	![Administrative judicial process](media/bra-administrative-judicial-process.png)
 
 1.  Select **New**, and set the following fields.
 
-| **Field**                    | **Description**        |
-|------------------------------|-----------------------|
-| Number of the process        | Enter the process number that was assigned by the competent authorities. The tax authority system validates the format, because there is a specific rule to consider. |
-| Author of process            | Select the source that the process originated from:                                                                                                                   |
-| Type of process              | Select the type of process:                                                                                                                                           |
-| City of the judicial section | Select the related city where the process originated.                                                                                                                 |
-| Code of the judicial section | Enter the code for the judicial section.                                                                                                                              |
+	| **Field**                    | **Description**        |
+	|------------------------------|-----------------------|
+	| Number of the process        | Enter the process number that was assigned by the competent authorities. The tax authority system validates the format, because there is a specific rule to consider. |
+	| Author of process            | Select the source that the process originated from:                                                                                                                   |
+	| Type of process              | Select the type of process:                                                                                                                                           |
+	| City of the judicial section | Select the related city where the process originated.                                                                                                                 |
+	| Code of the judicial section | Enter the code for the judicial section.                                                                                                                              |
 
--   Taxpayer
+	-   Taxpayer
 
--   Other third party
+	-   Other third party
 
--   Administrative
+	-   Administrative
 
--   Judicial
+	-   Judicial
 
 1.  In the **Details** section, enter details of the fiscal documents that are registered in Microsoft Dynamics, and that are affected by the registered process, because some of them might have exceptions in withholding taxes. You can add fiscal documents or remove fiscal documents that were previously added.
 
-| **Field**                        | **Description**                                                                                           |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Reference                        | The unique identifier of the relation between the process number and the fiscal document.                 |
-| Code                             | Select the explanation suspension code.                                                                   |
-| Service type                     | Select the related service type that is applicable for the fiscal document.                               |
-| Fiscal document                  | Select the fiscal document.                                                                               |
-| Date of decision                 | The date of the decision, sentence, or administrative dispatch.                                           |
-| Amount of withholding            | The amount of withholding that was suspended because of an administrative or lawsuits process.            |
-| Amount of additional withholding | The additional amount of withholding that was suspended because of an administrative or lawsuits process. |
+	| **Field**                        | **Description**                                                                                           |
+	|----------------------------------|-----------------------------------------------------------------------------------------------------------|
+	| Reference                        | The unique identifier of the relation between the process number and the fiscal document.                 |
+	| Code                             | Select the explanation suspension code.                                                                   |
+	| Service type                     | Select the related service type that is applicable for the fiscal document.                               |
+	| Fiscal document                  | Select the fiscal document.                                                                               |
+	| Date of decision                 | The date of the decision, sentence, or administrative dispatch.                                           |
+	| Amount of withholding            | The amount of withholding that was suspended because of an administrative or lawsuits process.            |
+	| Amount of additional withholding | The additional amount of withholding that was suspended because of an administrative or lawsuits process. |
 
-> [!NOTE]
-> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.*
+	> [!NOTE]
+	> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.
 
-### **Event R-2010, "Acquired services"**
+### Event R-2010, "Acquired services"
 
 Periodic event R-2010 is used to report, to the tax authority system, information about the withholding amounts for social security that are present in service fiscal documents that were received by the fiscal establishment. This event has no other purpose but to report those fiscal documents to the government.
 
@@ -555,18 +556,18 @@ Whenever a suspension of amounts occurs, the associated administrative or lawsui
 Event R-2010 uses the concept of closing. After this event is closed, the web service will refuse any new entries or modifications for it, unless it's manually reopened.
 
 > [!NOTE]
-> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.*
+> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.
 
-### **Event R-2020, "Provided services"**
+### Event R-2020, "Provided services"
 
 Periodic event R-2020 is used to report, to the tax authority system, information about the withholdings amounts for social security that are present in service fiscal documents that were issued by the fiscal establishments of a fiscal organization.
 
 This event works like event R-2010, but you must consider customer accounts and fiscal document model SE (outgoing) that is issued by the fiscal establishment.
 
 > [!NOTE]
-> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.*
+> Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.
 
-### **Event R-2060, "INSS CPRB"**
+### Event R-2060, "INSS CPRB"
 
 Periodic event R-2060 is used to send information about the tax assessment of the withholding for social security to the SPED-Reinf when the fiscal organization has chosen to calculate the social security based on the gross revenue instead of the payroll.
 
@@ -589,7 +590,7 @@ After the tax assessment is created and any required adjustments are made, perio
 
 Event R-2060 includes the totals of the tax assessment and details of the tax calculations by economic activity code, adjustments (additions and reductions, when applicable), and references to administrative and lawsuits processes.
 
-#### **Repro step – Setup**
+#### Repro step – Setup
 
 1.  Go to **Fiscal books \> Setup \> Fiscal organization**.
 
@@ -603,7 +604,7 @@ Event R-2060 includes the totals of the tax assessment and details of the tax ca
 
 6.  On the **Line** tab, enter the products or services that are related by the economic activity. Products are identified by the fiscal classification code and services are identified by the service code (federal).
 
-#### **Repro step – Create tax assessment (option 1)**
+#### Repro step – Create tax assessment (option 1)
 
 1.  Go to **Fiscal books \> Common \> Booking period**.
 
@@ -611,7 +612,7 @@ Event R-2060 includes the totals of the tax assessment and details of the tax ca
 
 3.  On the Action Pane, select **INSS-CPRN**, and then select **New** to create a tax assessment. Microsoft Dynamics automatically creates the tax assessment for the selected booking period.
 
-#### **Repro step – Create tax assessment (option 2)**
+#### Repro step – Create tax assessment (option 2)
 
 1.  Go to **Fiscal books \> Common \> Tax assessment \> INSS-CPRB**, and then select **INSS-CPRB tax assessment**.
 
@@ -620,22 +621,21 @@ Event R-2060 includes the totals of the tax assessment and details of the tax ca
 > [!NOTE]
 > You might receive the following warning: "Line XXXX: unable to identify the economic activity code." This warning indicates that Microsoft Dynamics didn't find the economic activity code for the related fiscal document and line. In this case, you must complete the setup that is described in the previous repro step.
 
->   **Delete**
+**Delete**
 
->   You can delete an existing INSS-CPRB tax assessment if the status is
->   **Opened**.
+You can delete an existing INSS-CPRB tax assessment if the status is **Opened**.
 
->   **Fiscal documents and Non-fiscal operations**
+**Fiscal documents and Non-fiscal operations**
 
->   When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations that are part of the tax calculation.
+When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations that are part of the tax calculation.
 
->   **Tax transactions**
+**Tax transactions**
 
->   When INSS-CPRB taxes are assessed, you can view the tax transactions details that are generated by the process.
+When INSS-CPRB taxes are assessed, you can view the tax transactions details that are generated by the process.
 
->   **Adjustment**
+**Adjustment**
 
->   You can enter additional adjustment transactions to adjust (increase or decrease) the amount of INSS-CPRB that is calculated. You configure the adjustment codes at **Fiscal books \> Setup \> Tax adjustment codes \> INSS-CPRB adjustments codes table**.
+You can enter additional adjustment transactions to adjust (increase or decrease) the amount of INSS-CPRB that is calculated. You configure the adjustment codes at **Fiscal books \> Setup \> Tax adjustment codes \> INSS-CPRB adjustments codes table**.
 
 1.  Select **Adjustment** to add an adjustment transaction that will decrease or increase the tax amount (debit) that is calculated.
 
@@ -647,30 +647,30 @@ Event R-2060 includes the totals of the tax assessment and details of the tax ca
 
 5.  Specify the adjustment date.
 
-> [!NOTE]
-> Adjustments for INSS-CPRB are available only through this procedure. This type of adjustment isn't available at **Fiscal books \> Journals \> General tax adjustment/benefit/incentive**.
+	> [!NOTE]
+	> Adjustments for INSS-CPRB are available only through this procedure. This type of adjustment isn't available at **Fiscal books \> Journals \> General tax adjustment/benefit/incentive**.
 
->   **Finalize and Reopen**
+**Finalize and Reopen**
 
->   You can finalize or reopen the related INSS-CPRB tax assessment.
+You can finalize or reopen the related INSS-CPRB tax assessment.
 
->   When an INSS-CPRB tax assessment is finalized, no modifications to the tax assessment are allowed for that period, unless the tax assessment is reopened. A voucher is created to post the INSS-CPRB tax to collect, and the ledger accounts are defined in the ledger posting for INSS tax at **Tax \> Setup \> Sales tax \> Ledger posting groups**.
+When an INSS-CPRB tax assessment is finalized, no modifications to the tax assessment are allowed for that period, unless the tax assessment is reopened. A voucher is created to post the INSS-CPRB tax to collect, and the ledger accounts are defined in the ledger posting for INSS tax at **Tax \> Setup \> Sales tax \> Ledger posting groups**.
 
 > [!NOTE]
 > In the current SPED-Reinf architecture that is defined by the government, the process for payment and settlement of the liability that is created by the tax assessment will be reported to another system that is named DCTF web. This system consumes the output from not only the SPED-Reinf but also the other systems, such as eSocial and PER/DCOMP. Therefore, the payment process is currently out of scope and is delivered through another Microsoft Dynamics feature.
 
->   The reopen action is available if event R-2060 has already been closed for the root fiscal establishment, and if the tax assessment is already finalized. The reopen action reverses the previous voucher that was generated by the closing action.
+The reopen action is available if event R-2060 has already been closed for the root fiscal establishment, and if the tax assessment is already finalized. The reopen action reverses the previous voucher that was generated by the closing action.
 
 > [!NOTE]
 > Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.
 
-### **Events R-2090, "Closing," and R-2098, "Reopen"**
+### Events R-2090, "Closing," and R-2098, "Reopen"
 
 **Closing**
 
 Periodic events R-2010, R-2010, and R-2060 must be closed at the end of a period, when there are no more transactions to report in that period.
 
-#### **Repro step**
+#### Repro step
 
 1.  Finalize the INSS-CPRB tax assessment, even if you don't assess INSS-CPRB tax.
 
@@ -680,7 +680,7 @@ Periodic events R-2010, R-2010, and R-2060 must be closed at the end of a period
 
 After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2099, they can be reopened through an event R-2098. You can then report new transactions or modify existing transactions for the period.
 
-#### **Repro step**
+#### Repro step
 
 1.  Reopen the INSS-CPRB tax assessment, even if you don't assess INSS-CPRB tax.
 

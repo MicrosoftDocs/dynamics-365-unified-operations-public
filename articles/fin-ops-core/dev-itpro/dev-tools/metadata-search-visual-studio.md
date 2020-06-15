@@ -24,7 +24,7 @@ ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -74,9 +74,9 @@ The search query is a search string that consists of a set of filters in this ge
 -   **Property**: Apply property filters. Each comma-separated value should be in the form *property\_name=property\_value*
 -   **Code**: Filter using code snippets, use quotes around code snippets. The matching source code is the elements that contain the specified code snippet.
 
-You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.!
+You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.
 
-[metadatasearchfilter](./media/metadatasearchfilter.jpg)
+[![metadatasearchfilter](./media/metadatasearchfilter.jpg)]
 
 ## Examples
 

@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Cookie API overview
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the application programming interfaces (APIs) in the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK) that are used to set and get cookie data.
@@ -43,7 +42,7 @@ Before cookies can be stored, the user must give consent. The Dynamics 365 Comme
 
 The Dynamics 365 Commerce online SDK provides a set of APIs that access cookies from within the **props.context.request** API, as shown in the following example.
 
-```
+```typescript
 get<T>(cookieName: string, isEssential?: boolean): ICookieValue<T>;
 set<T>(cookieName: string, cookieValue: T, options?: ICookieSetOptions): void;
 remove(cookieName: string): void;
@@ -64,7 +63,7 @@ The **isConsentGiven()** API is used to determine whether user consent has been 
 
 The following example shows how to set a cookie.
 
-```
+```typescript
 this.props.context.request.cookies.set<string>('favoriteColor', 'blue');
 ``` 
 
@@ -74,7 +73,7 @@ If user consent isn't given before this API is called, the SDK maintains a queue
 
 The following example shows how to get the value of a cookie.
 
-```
+```typescript
 const favColor = this.props.context.request.cookies.get<string>('favoriteColor');
 ```
 ## Additional resources

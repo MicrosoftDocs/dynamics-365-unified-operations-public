@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,9 +61,9 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 ### Targeted release schedule
 
 > [!NOTE]
-> The dates in this table are subject to change.
+> The dates in this table are subject to change. Upgrades are available a minimum of two weeks and a maximum of six weeks after the date of general availability (GA) for new customers. In addition, **support for upgrades that have a target version of application 7.3 ends in March 2020**.
 
-| Selectable versions | General availability (GA) of the latest version for new customers | GA of the latest version for upgrade |
+| Selectable versions | GA of the latest version for new customers | GA of the latest version for upgrade |
 |---|---|---|
 | 7.3 with PU 23 – PU 25<br>8.1.3 with PU 23 – 10.0.1 with PU 25 | Week of April 8, 2019 | Week of April 29, 2019 |
 | 7.3 with PU 24 – PU 26<br>10.0.0 with PU 24 – 10.0.2 with PU 26 | Week of May 13, 2019 | Week of May 27, 2019 |
@@ -72,8 +72,10 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 | 7.3 with PU 27 – PU 29<br>10.0.3 with PU 27 – 10.0.5 with PU 29 | Week of September 17, 2019 | Week of September 30, 2019 |
 | 7.3 with PU 28 – PU 30<br>10.0.4 with PU 28 – 10.0.6 with PU 30 | Week of October 11, 2019 | Week of October 28, 2019 |
 | 7.3 with PU 29 – PU 31<br>10.0.5 with PU 29 – 10.0.7 with PU 31 | Week of November 29, 2019 | Week of December 30, 2019 |
-| 7.3 with PU 30 – PU 32<br>10.0.6 with PU 30 – 10.0.8 with PU 32 | Week of January 17, 2020 | Week of January 27, 2020 |
-| 7.3 with PU 31 – PU 33<br>10.0.7 with PU 31 – 10.0.9 with PU 33 | Week of March 13, 2020 | Week of March 30, 2020 |
+| 7.3 with PU 30 – PU 32<br>10.0.6 with PU 30 – 10.0.8 with PU 32 | Week of January 17, 2020 | Week of February 17, 2020 |
+| 7.3 with PU 31 – PU 33<br>10.0.7 with PU 31 – 10.0.9 with PU 33 | Week of March 3, 2020 | Week of March 30, 2020 |
+| 10.0.8 with PU 32 – 10.0.10 with PU 34 | Week of April 8, 2020 | Week of April 27, 2020 |
+
 
 ## Refactor your customizations as extensions
 

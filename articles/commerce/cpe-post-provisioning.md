@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a Commerce preview environment
+title: Configure a Dynamics 365 Commerce preview environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
 author: psimolin
 manager: annbe
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure a Commerce preview environment
+# Configure a Dynamics 365 Commerce preview environment
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
@@ -39,7 +39,7 @@ This topic explains how to configure a Microsoft Dynamics 365 Commerce preview e
 
 Complete the procedures in this topic only after your Commerce preview environment has been provisioned. For information about how to provision your Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
 
-After your Commerce preview environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS), Dynamics 365 Commerce, and Dynamics 365 Retail.
+After your Commerce preview environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
 
 ## Before you start
 
@@ -57,7 +57,7 @@ After your Commerce preview environment has been provisioned end to end, additio
 
 To associate a worker with your identity in LCS, follow these steps.
 
-1. Use the menu on the left to go to **Modules \> Retail \> Employees \> Workers**.
+1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
 1. In the list, find and select the following record: **000713 - Andrew Collette**.
 1. On the Action Pane, select **Retail**.
 1. Select **Associate existing identity**.
@@ -95,12 +95,12 @@ To start to set up your preview site in Commerce, follow these steps.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
 
-## Enable jobs in Retail
+## Enable jobs
 
-To enable jobs in Retail, follow these steps.
+To enable jobs in Commerce, follow these steps.
 
 1. Sign in to the environment (HQ).
-1. Use the menu on the left to go to **Retail \> Inquiries and reports \> Batch jobs**.
+1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
 
     The remaining steps of this procedure must be completed for each of the following jobs:
 
@@ -116,11 +116,11 @@ To enable jobs in Retail, follow these steps.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Waiting**, and then select **OK**.
 
-### Run full data synchronization in Retail
+### Run full data synchronization
 
-To run full data synchronization in Retail, follow these steps.
+To run full data synchronization in Commerce, follow these steps.
 
-1. Use the menu on the left to go to **Modules \> Retail \> Headquarters setup \> Retail scheduler \> Channel database**.
+1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Retail scheduler \> Channel database**.
 1. In the list on the left, the **Default** channel is selected. Select the other available channel. This channel is named **scXXXXXXXXX**.
 1. On the Action Pane, select **Full data sync**.
 1. Enter **9999** as the distribution schedule.
@@ -146,13 +146,13 @@ To configure optional features for your Commerce preview environment, see [Confi
 
 ## Additional resources
 
-[Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
 
-[Provision a Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)
 
-[Commerce preview environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -161,5 +161,3 @@ To configure optional features for your Commerce preview environment, see [Confi
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Help resources for Dynamics 365 Retail](../retail/index.md)

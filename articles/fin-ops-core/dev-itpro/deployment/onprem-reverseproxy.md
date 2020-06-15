@@ -3,7 +3,7 @@
 
 title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
-author: sarvanisathish
+author: faix
 manager: AnnBe
 ms.date: 12/09/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sarvanis
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
 ---
@@ -40,18 +40,18 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 1. Use remote access to connect to the Orchestrator virtual machine (VM).
 2. Execute the following PowerShell script to retrieve the path of the ```machine.config``` file.
 
-	```Powershell
+	```powershell
 	[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
 	```
 
 3. Edit the ```machine.config``` file to add the following code example.
 
-	```XML
-		<system.net>
-			<defaultProxy enabled="true" >
-				<proxy <<<SET YOUR PROXY SETTINGS>> />
-	   	 	</defaultProxy>
-    	</system.net>
+	```xml
+	<system.net>
+		<defaultProxy enabled="true" >
+			<proxy <<<SET YOUR PROXY SETTINGS>> />
+	   	</defaultProxy>
+    </system.net>
 	```
 
 4. Save the file.
@@ -62,7 +62,8 @@ The above procedure must be performed for all Orchestrator node VMs.
 ## Whitelist URLs
 
 The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be whitelisted on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
-```
+
+```Text
 - lcsapi.lcs.dynamics.com
 - login.windows.net
 - uswelcs1lcm.queue.core.windows.net

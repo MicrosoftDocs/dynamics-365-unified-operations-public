@@ -4,7 +4,7 @@
 title: Copy a formula
 description: This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Copy a formula
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. To create the formula lines, you can use the Copy function to copy an existing formula that has most of the ingredients that you need. You can then make any necessary changes to the individual lines in the new version. By using the Copy function, you do not have to create multiple formulas that are almost identical. The demo data company used to create this task is USP2.
 

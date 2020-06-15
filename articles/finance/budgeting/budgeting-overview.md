@@ -62,7 +62,7 @@ Additional planning and budgeting capabilities are available and are integrated 
 -   **Workforce budgets** – Workforce budgeting includes detailed budget cost component planning for positions, compensation groups, and so on.
 -   **Fixed assets budgets** – Based on fixed asset information, you can calculate planned depreciation and record other planned transactions that are related to fixed assets.
 -   **Project budgets** – In the projects module, you can create detailed project forecasts. The projects forecasts will include details about the planned hours, expenses, fees, and items.
--   **Demand forecasting **– Based on historical transaction data, you can estimate future inventory demand and create demand forecasts.
+-   **Demand forecasting** – Based on historical transaction data, you can estimate future inventory demand and create demand forecasts.
 
 For information about how to bring planning data from other modules into budget plans, see [Budget planning integration with other modules](budget-planning-integration-other-modules.md).
 

@@ -163,68 +163,68 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
     - The upper part of the **VAT restoring journal** page shows a list of incoming invoice-factures for which the VAT amount that was previously deducted is subject to restoration in the reporting period. For each incoming invoice, the **Direct VAT 18%**, **Direct VAT 10%**, **Indirect VAT 18%**, and **Indirect VAT 10%** fields show the VAT amounts that must be restored for goods. The **FA VAT 18%** and **FA VAT 10%** fields show the VAT amounts that must be restored for fixed assets.
     - The lower part of the **VAT restoring journal** page shows the lines of incoming VAT processing for the invoice. Based on updated inventory links, the system determines, for each line, whether the direct method or the indirect method should be used to calculate the VAT amount:
 
-        - **Direct method** – The **Expense type** field is set to **Direct** (a connection between purchased and sold goods has been  established). The VAT amount that must be restored is calculated by using the following formulas:
+      - **Direct method** – The **Expense type** field is set to **Direct** (a connection between purchased and sold goods has been  established). The VAT amount that must be restored is calculated by using the following formulas:
 
-            - **For goods:** VAT amount to restore (direct) = VAT amount that is deducted on the incoming invoice × Quantity of goods that are sold on export ÷ Total quantity that is purchased
-            - **For fixed assets:** VAT amount to restore = VAT amount that is deducted from the purchase of the fixed asset × Export (non-taxable) ratio, where the export (non-taxable) ratio is calculated by using the following formula:
+          - **For goods:** VAT amount to restore (direct) = VAT amount that is deducted on the incoming invoice × Quantity of goods that are sold on export ÷ Total quantity that is purchased
+          - **For fixed assets:** VAT amount to restore = VAT amount that is deducted from the purchase of the fixed asset × Export (non-taxable) ratio, where the export (non-taxable) ratio is calculated by using the following formula:
 
-                Export (non-taxable) ratio = **Output/run export** (or **Output/run nontaxable**) value of the current period ÷ Difference between the **Output/mileage** and **Output/run export** (or **Output/run nontaxable**) values of previous periods
+              Export (non-taxable) ratio = **Output/run export** (or **Output/run nontaxable**) value of the current period ÷ Difference between the **Output/mileage** and **Output/run export** (or **Output/run nontaxable**) values of previous periods
 
-        - **Indirect method** – The **Expense type** field is set to **Indirect** (a connection between purchased and sold goods hasn't been established). The VAT amount that must be restored is calculated by using the following formula:
+      - **Indirect method** – The **Expense type** field is set to **Indirect** (a connection between purchased and sold goods hasn't been established). The VAT amount that must be restored is calculated by using the following formula:
 
-          VAT amount to restore (indirect) = VAT amount that is deducted in the current period × Export ratio (for the current period)
+        VAT amount to restore (indirect) = VAT amount that is deducted in the current period × Export ratio (for the current period)
 
-      Note the following information:
+    Note the following information:
        
-       - The preceding formulas are valid for the **Mixed** VAT restoration method. For the **By factor** VAT restoration method, the calculation formula for the indirect method is always applied.
-       - In the lower part of the page, VAT amounts are grouped by expense type and tax type. In the upper part of the page, they are shown in the **Direct VAT** or **Indirect VAT** field. (VAT amounts that must be restored for fixed assets are shown in different fields.)
-       - The **Fixed assets** tab shows information about the fixed asset object (inventory number and name) and the output/mileage (export and non-taxable) of the current period. The **FA VAT (export)**, **FA VAT (nontaxable)**, and **FA VAT (written-off)** fields show information about VAT amounts that are calculated for restoration.
-       - You can include or exclude the incoming invoice-facture from the VAT restoration calculation by selecting or clearing the **Include** check box. VAT amounts will be recalculated.
-       - For each line of an incoming invoice-facture where the **Expense type** field is set to **Direct**, you can review the line of the outgoing customer invoice on the **Customer invoice lines** tab.
-       - Select **Inventory \> Cost explorer** to review the relation between sold items and bought items for lines where the **Expense type** field is set to **Direct**.
-       - Select **Totals** to open the **VAT restoring journal total amounts** dialog box, where you can view the totals of all amounts that are calculated in the journal:
+     - The preceding formulas are valid for the **Mixed** VAT restoration method. For the **By factor** VAT restoration method, the calculation formula for the indirect method is always applied.
+     - In the lower part of the page, VAT amounts are grouped by expense type and tax type. In the upper part of the page, they are shown in the **Direct VAT** or **Indirect VAT** field. (VAT amounts that must be restored for fixed assets are shown in different fields.)
+     - The **Fixed assets** tab shows information about the fixed asset object (inventory number and name) and the output/mileage (export and non-taxable) of the current period. The **FA VAT (export)**, **FA VAT (nontaxable)**, and **FA VAT (written-off)** fields show information about VAT amounts that are calculated for restoration.
+     - You can include or exclude the incoming invoice-facture from the VAT restoration calculation by selecting or clearing the **Include** check box. VAT amounts will be recalculated.
+     - For each line of an incoming invoice-facture where the **Expense type** field is set to **Direct**, you can review the line of the outgoing customer invoice on the **Customer invoice lines** tab.
+     - Select **Inventory \> Cost explorer** to review the relation between sold items and bought items for lines where the **Expense type** field is set to **Direct**.
+     - Select **Totals** to open the **VAT restoring journal total amounts** dialog box, where you can view the totals of all amounts that are calculated in the journal:
 
-            - **Total revenue amounts** – The fields in this section show the amounts that are calculated on all invoices for the period. The **Export** field shows the amount that is calculated on export invoices for the period.
+         - **Total revenue amounts** – The fields in this section show the amounts that are calculated on all invoices for the period. The **Export** field shows the amount that is calculated on export invoices for the period.
 
-            - **Factors** – This section has two fields:
+         - **Factors** – This section has two fields:
 
-                - **Export, %** – The revenue share on export operations. This value is calculated by using the following formula:
+             - **Export, %** – The revenue share on export operations. This value is calculated by using the following formula:
 
-                    Export, % = Export revenue ÷ Total revenue
+                 Export, % = Export revenue ÷ Total revenue
 
-                - **Nontaxable, %** – The revenue share on tax-exempt operations. This value is calculated by using the following formula:
+             - **Nontaxable, %** – The revenue share on tax-exempt operations. This value is calculated by using the following formula:
 
-                    Nontaxable, % = Tax-exempt revenue ÷ Total revenue
+                 Nontaxable, % = Tax-exempt revenue ÷ Total revenue
                 
-                 > [!NOTE]
-                 > When revenue amounts are calculated, VAT amounts are excluded.
+              > [!NOTE]
+              > When revenue amounts are calculated, VAT amounts are excluded.
 
-            - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
-            - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
+         - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
+          - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
 
-            ![VAT restoring journal total amounts](media/2%20VAT%20restoring%20journal%20totals.jpg) 
+          ![VAT restoring journal total amounts](media/2%20VAT%20restoring%20journal%20totals.jpg) 
 
-       - Select **Revenue calculation** to open the **Revenue calculation** dialog box, where you can view the list of customer invoices in the current period.  The list is generated based on the value of the **Revenue calculation method** field on the **General ledger parameters** page.
+     - Select **Revenue calculation** to open the **Revenue calculation** dialog box, where you can view the list of customer invoices in the current period.  The list is generated based on the value of the **Revenue calculation method** field on the **General ledger parameters** page.
 
-           ![](media/3%20Revenue%20calculation.jpg)
+         ![Revenue calculation](media/3%20Revenue%20calculation.jpg)
            
-           For each invoice in the **Revenue calculation** dialog box, you can perform the following actions:
+         For each invoice in the **Revenue calculation** dialog box, you can perform the following actions:
+         
+          - Review revenue amounts in the **Total revenue**, **Export**, **Domestic market**, and **Not liable to VAT** fields.
+              > [!NOTE]
+              > For a domestic invoice, the **Sales tax code** field uses the **Standard VAT** or **Reduced VAT** sales tax type. For an export invoice, the **Sales tax code** field uses the **VAT 0%** sales tax type. For a non-taxable invoice, the **Sales tax code** field is blank.
            
-            - Review revenue amounts in the **Total revenue**, **Export**, **Domestic market**, and **Not liable to VAT** fields.
-                > [!NOTE]
-                > For a domestic invoice, the **Sales tax code** field uses the **Standard VAT** or **Reduced VAT** sales tax type. For an export invoice, the **Sales tax code** field uses the **VAT 0%** sales tax type. For a non-taxable invoice, the **Sales tax code** field is blank.
-           
-            - Select or clear the **Include** check box to include or exclude an invoice from the calculation of revenue for the period. 
-            - When you've finished, select **OK**. Then, on the **VAT restoring journal** page, select **Apply changes** to recalculate revenue amounts.
+          - Select or clear the **Include** check box to include or exclude an invoice from the calculation of revenue for the period. 
+          - When you've finished, select **OK**. Then, on the **VAT restoring journal** page, select **Apply changes** to recalculate revenue amounts.
 
-       - Select **VAT distribution** to open the **VAT distribution** dialog box, where you can view a list of export sales invoices. For each invoice, the system calculates the following information:
+     - Select **VAT distribution** to open the **VAT distribution** dialog box, where you can view a list of export sales invoices. For each invoice, the system calculates the following information:
 
-            - The amounts of VAT that were restored in the current period and distributed to each export invoice
-            - The share of export invoice revenue in the total export revenue amount for the period
+          - The amounts of VAT that were restored in the current period and distributed to each export invoice
+          - The share of export invoice revenue in the total export revenue amount for the period
 
-              ![Incoming VAT for indirect costs](media/4%20VAT%20distribution.jpg)
+            ![Incoming VAT for indirect costs](media/4%20VAT%20distribution.jpg)
               
-              This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
+            This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 
 ### Approve the VAT restoring journal
 

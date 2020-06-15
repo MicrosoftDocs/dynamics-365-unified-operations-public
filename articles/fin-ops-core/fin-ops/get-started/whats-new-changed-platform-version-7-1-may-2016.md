@@ -209,7 +209,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 </tr>
 <tr>
 <td>Take advantage of near-real-time Power BI reporting and the integration of Microsoft Cortana Intelligence Suite (CIS) with Entity store.</td>
-<td>Entity store is an extensible and rich operational data warehouse that is optimized for advanced analytic scenarios. Entity store is now deployed with every instance of Dynamics AX. An administrator or a power user can stage Dynamics AX aggregate measurements into an Entity store and configure the update schedule. Data in the Entity store can be reported on by using Power BI DirectQuery models. Therefore, near-real-time Power BI reports can be generated. Entity store is also used for integration with CIS. Dynamics AX data is sent to Microsoft Azure Machine Learning services for advanced predictions. The results are then shown in the client user interface.</td>
+<td>Entity store is an extensible and rich operational data warehouse that is optimized for advanced analytic scenarios. Entity store is now deployed with every instance of Dynamics AX. An administrator or a power user can stage Dynamics AX aggregate measurements into an Entity store and configure the update schedule. Data in the Entity store can be reported on by using Power BI DirectQuery models. Therefore, near-real-time Power BI reports can be generated. Entity store is also used for integration with CIS. Dynamics AX data is sent to Microsoft Azure Machine Learning for advanced predictions. The results are then shown in the client user interface.</td>
 </tr>
 <tr>
 <td>Take advantage of framework improvements with SQL Server Reporting Services integration.</td>

@@ -3,7 +3,7 @@
 
 title: Copy a batch job
 description: This topic provides information about copying a batch job and batch tasks.
-author: hasaid
+author: Peakerbl
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hasaid
+ms.author: peakerbl
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
 

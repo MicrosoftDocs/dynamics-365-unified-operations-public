@@ -4,7 +4,7 @@
 title: Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing app
 description: This topic explains how to set up Dynamics 365 for Finance and Operations – Warehousing app to scan bar codes using a camera on a mobile device. 
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSMobileAppField
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384

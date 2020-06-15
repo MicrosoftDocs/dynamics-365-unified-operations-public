@@ -307,7 +307,7 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Exposing class members
 
-Additional private members are now available for customization as a result of changes to access modifiers and parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
+Additional private members are now available for customization as a result of changes to access modifiers and parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-chain-of-command).
 
 | Member |
 | -------------|

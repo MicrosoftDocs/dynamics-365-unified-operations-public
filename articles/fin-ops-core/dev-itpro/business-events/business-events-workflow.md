@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/18/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Platform update 24
 
 # Workflow business events
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 Workflow business events are generated at various points in the processing of a workflow.   
 
@@ -93,17 +92,25 @@ For a step-by-step guide to setting up work item completion in Microsoft Power A
 ## Templates for work item completion in Power Automate
 
 The following templates for work item completion in Power Automate are available:
-- [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
-- [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
 
 The Platform update 29 version gets completion options from the business event payload. These options were added in Platform update 29, and presented to the user via the approval action. 
 
 ## Troubleshooting workflow business events
 
-There are a number of key factors that need to work correctly in order for workflow business events to run without errors:
+### Troubleshooting workflow issues ###
+Ensure that the workflow is running correctly and creating work items as expected. If the workflow doesn't work inside the application so that state changes are occurring, then the events won't occur. Adjust the workflow configuration as needed. If needed, review the workflow details in the **Workflow History** form.
 
-- **Workflow** - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside the application so that state changes are occurring, then the events won't occur. Adjust the workflow configuration as needed. If needed, review the workflow details in the **Workflow History** form.
+### Troubleshooting Power Automate issues ###
+Ensure that the Power Automate subscription is available in the **System administration > Setup > Business events > Business events catalog** on the **Active events** tab. If the Power Automate subscription isn't there, then check Power Automate and recreate it if needed.
 
-- **Power Automate** - Ensure that the Power Automate subscription is available in the **System administration > Setup > Business events > Business events catalog** on the **Active events** tab. If the Power Automate subscription isn't there, then check the Power Automate and recreate it if needed.
+### Troubleshooting business events issues ###
+Ensure that other business events are occurring by creating a Power Automate to trigger off another business event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it. For more information, see [Troubleshoot business events](troubleshooting.md).
 
-- **Business events** - Ensure that other business events are occurring by creating a Power Automate to trigger off another business event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it. For more information, see [Troubleshoot business events](troubleshooting.md).
+### Troubleshooting work item approval via Power Automate ### 
+If a flow is trying to handle approval for work items, but it isn't firing, then verify these steps:
+- Are the work items being created so the applicable user can see them waiting for approval in the web client?
+ - Is the event subscription from Flow visible in the Business Events form?
+- Are the workflow configuration and the event subscription from Flow for the correct legal entity (company)?
+

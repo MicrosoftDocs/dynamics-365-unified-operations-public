@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -45,7 +45,7 @@ The Acceptance test library (ATL) is an X++ test library that offers the followi
 
 ## Example of a test that is written in ATL
 
-```
+```xpp
 // Create the data root node
 var data = AtlDataRootNode::construct();
 

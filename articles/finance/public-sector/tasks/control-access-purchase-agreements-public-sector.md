@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Control access to purchase agreements in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can make sure that only approved departments can access a purchase agreement. You can also limit the amount that each department can spend against the purchase agreement. In order to do this, the account structure and financial dimensions for department access must be set on the Accounts payable parameters form. This procedure was created for French public sector organizations using the PSUS demo company data in the public sector partition.
 

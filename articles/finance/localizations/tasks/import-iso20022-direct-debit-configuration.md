@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import ISO20022 direct debit configuration
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to import a customer payment electronic reporting configuration. This procedure uses the ISO 20022 direct debit format as an example. 
 

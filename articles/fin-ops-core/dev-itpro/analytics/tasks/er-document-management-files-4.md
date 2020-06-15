@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use Document Management files in format outputs (Part 4 - Run format)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. These steps can be performed in the DEMF company.
 
-To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 3: Create format)” procedure.
+To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 3: Create format)" procedure.
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -42,7 +42,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 1. Go to Accounts receivable > Invoices > Open customer invoices.
 2. Use the Quick Filter to find records. For example, filter on the Invoice field with a value of 'CIV-000148'.
     * CIV-000148  
-3. Click to follow the selected invoice’s link.
+3. Click to follow the selected invoice's link.
     * CIV-000148  
 4. Click to follow the link in the Sales order field.
     * 000148  
@@ -69,8 +69,8 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 7. Click Filter.
 8. Select the row of the Customer invoice journal and the Sales order field.
 9. In the Criteria field, type '000148'.
-    * In the criteria “Sales order” field, type the order number 000148.  
+    * In the criteria "Sales order" field, type the order number 000148.  
 10. Click OK.
 11. Click OK.
-    * Review the generated output. Note that for each attachment a single XML node has been created. The attachment’s content is populated to the XML output in MIME (base64) text format.  
+    * Review the generated output. Note that for each attachment a single XML node has been created. The attachment's content is populated to the XML output in MIME (base64) text format.  
 

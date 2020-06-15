@@ -34,7 +34,6 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
-
 > The user who executes data task automation must be in the same tenant as the application environment and LCS project.
 
 We recommend the following approach for data task automation.
@@ -70,7 +69,7 @@ A task must be defined in an XML manifest. This section describes the manifest. 
 ### Manifest root
 The **\<TestManifest\>** element is the root of the manifest. All other elements are children of this element.
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup />
@@ -95,7 +94,7 @@ The **Shared setup** section defines general task parameters and behaviors for a
 ### Data files
 **\<DataFile\>** elements define the data packages and data files that the tasks in the manifest will use. The data files must be either in the LCS asset library of your LCS project or in the Shared asset library.
 
-```
+```xml
 <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
@@ -113,7 +112,7 @@ The **Shared setup** section defines general task parameters and behaviors for a
 ### Data project definition
 The **\<JobDefinition\>** element defines the data project definition. There can be more than one job definition in a manifest.
 
-```
+```xml
 <JobDefinition ID='ImportJobDefinition_1'>
     <Operation>Import</Operation>
     <ConfigurationOnly>No</ConfigurationOnly>
@@ -161,7 +160,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 ### Entity setup
 The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
 
-```
+```xml
 <EntitySetup ID='Generic'>
     <Entity name='*'>
         <SourceDataFormatName>Package</SourceDataFormatName>
@@ -214,7 +213,7 @@ The **Entity setup** section defines the characteristics of an entity that a tas
 ### Test groups
 Test groups can be used to organize related tasks in a manifest. There can be more than one test group in a manifest.
 
-```
+```xml
 <TestGroup name='Set up Financials'>
     <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
         <DataFile RefID='SharedSetup' />
@@ -295,7 +294,7 @@ The following data validations are currently supported:
 ## Example 1: Configuration management for data projects
 The **\<ConfigurationOnly\>** element can be used to create configuration tasks for data projects. When ConfigurationOnly is set to Yes, the data projects are only created but not executed. This allows for managing data projects across environments in an automated manner.
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup>
@@ -377,7 +376,7 @@ The **\<ConfigurationOnly\>** element can be used to create configuration tasks 
 ## Example 2: Automated setup of demo data
 The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library. The difference in this example from the previous example is the actual execution of the data projects to set up the demo data. This is accomplished by not using the ConfigurationOnly option or setting it to No to use it for consistency of the manifest.
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup>

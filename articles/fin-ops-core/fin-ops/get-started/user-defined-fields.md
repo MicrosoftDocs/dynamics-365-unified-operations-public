@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create and work with custom fields
-description: This topic shows how to create custom fields to tailor the application to fit their business.
+description: This topic shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include [banner](../includes/banner.md)]
 
-While there is an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, you can create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
+While there is an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. While programmers can be used to add those fields as extensions in the developer tools, the custom fields feature allows fields to be added directly from the user interface, thereby allowing you to tailor the application to fit your business using your web browser.
 
-The ability to add custom fields is available in platform update 13 and later.
+The ability to add custom fields is available in platform update 13 and later. Only users with special permissions have access to this feature.
 
 This video shows how easy it is to add a custom field to a page: [Adding custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -163,3 +163,7 @@ For performance and technical reasons, only tables that meet the following condi
 - The table cannot extend another table.
 - The table cannot be marked as a system table.
 - The table cannot be a temporary table.
+
+### Can I reference custom fields from the developer tools?  
+
+Custom fields can only be managed through the user interface and cannot be referenced by code. 

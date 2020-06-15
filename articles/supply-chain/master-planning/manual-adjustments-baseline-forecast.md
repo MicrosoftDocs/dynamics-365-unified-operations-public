@@ -4,8 +4,8 @@
 title: Make manual adjustments to the baseline forecast
 description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 12/02/2019
+manager: tfehr
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanForecastViewer
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72704
@@ -76,7 +76,7 @@ The **Demand forecast details** page shows the following information in graphica
 
 -   If you enable **Forecast model selection on Demand forecast details** from Feature management, you will be able to select the forecast models to be include, for the historical forecast, on the **Demand forecast details** page.
 -   The confidence interval that appears in the **Forecast** section of the page represents the difference between the confidence interval upper limit and the confidence interval lower limit. To see the values for the upper and lower limits, hover over the chart in the **Historical demand and forecast graphically** section.
--   If you use the Demand forecasting Microsoft Azure Machine Learning service, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
+-   If you use the Demand forecasting Microsoft Azure Machine Learning, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 

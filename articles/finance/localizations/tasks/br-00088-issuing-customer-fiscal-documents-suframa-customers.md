@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to set up tax exemptions for the Superintendência da Zona Franca de Manaus (SUFRAMA) region. This task uses the BRMF demo company.
 

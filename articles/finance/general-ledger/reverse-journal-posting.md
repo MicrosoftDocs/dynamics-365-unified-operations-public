@@ -17,7 +17,7 @@ ms.search.form: LedgerTransVoucher, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15721
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Reverse journal posting
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes capabilities Microsoft Dynamics 365 Finance that allows you to reverse an entire
 journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin. 
@@ -79,5 +78,5 @@ by viewing the comments in the batch job. Any transactions that couldn't be reve
 
 If the number of voucher lines is 100 lines or fewer, the reversal process will run immediately. The results will display in a dialog box that shows any voucher that couldn't be reversed, along with the reason why. Select **OK** to close the dialog box.
 
-Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment).
+Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 

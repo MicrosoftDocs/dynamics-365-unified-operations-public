@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview PDF documents with an embedded viewer 
+title: Preview PDF documents using a PDF viewer 
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
 author: tjvass
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 02/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
 ---
 
-# Preview PDF documents with an embedded viewer
+# Preview PDF documents using a PDF viewer
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,3 +61,10 @@ The hosted PDF document viewer control is automatically available in most deploy
 - Application extensions are available to activate embedded drill-thru links in PDF documents.
 - Use the **Print destination** options to produce documents in formats other than PDF.
 
+## Feature limitations
+The Embedded PDF viewer experience delivers a closed document that exactly matches the printed output of the document.  These documents cannot be modified by the recipient making the format ideal for business operations.  However, as a closed format, the documents are far less interactive on the screen when compared to HTML presentations.  The following end-user capabilities are not supported when previewing documents using the embedded PDF viewer.
+
+- Embedded drill-thru navigations are not actionable while previewing PDF documents. 
+- PDF documents do not support expandable and collapsible sections. 
+- Sub-reports are not supported when viewing reports as PDF documents.
+- Printing the report directly to domain-hosted printer devices.

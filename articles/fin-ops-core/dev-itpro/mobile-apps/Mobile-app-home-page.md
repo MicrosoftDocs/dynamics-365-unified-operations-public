@@ -2,10 +2,10 @@
 # required metadata
 
 title: Mobile app home page
-description: This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
+description: This topic describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
+This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
 Overview
 --------
@@ -86,7 +86,7 @@ The following table includes links to resources that can help you implement both
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Finance and Operations apps in your organization.</td>
+<td>Implement the Finance and Operations app in your organization.</td>
 <td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">

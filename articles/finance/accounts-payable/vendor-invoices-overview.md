@@ -49,7 +49,7 @@ There are several ways to enter a vendor invoice:
 - Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense. You can open the associated purchase orders later to post the invoice against the expense account.
 - The **Open vendor invoices** and **Pending vendor invoices** pages let you create vendor invoices from confirmed purchase orders.
 
-The following discussion provide more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
+The following discussion provides more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
 
 ## Understanding invoice line quantities
 
@@ -71,6 +71,16 @@ You can add a line that wasn't on the purchase order to the vendor invoice. You 
 
 Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, you will see a **Submit** button that you can use to send the vendor invoice through the review process.
 
+### Preventing invoice from being submitted to workflow 
+
+Following are several ways you can prevent an invoice from being submitted to a workflow.
+
+- **Invoice total and the registered total are not equal.** The person who submitted the invoice will receive an alert that the totals aren’t equal so they can correct the balances before resubmitting the invoice to workflow. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page is turned on. 
+
+- **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
+
+- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the Accounts payable parameter labeled **Check the invoice number used** is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
+
 ## Matching vendor invoices to product receipts
 
 You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines. You can also match partial quantities for a line.
@@ -83,9 +93,19 @@ This option assumes that at least one product receipt has been posted for the pu
 
 For more information, see [Record vendor invoice and match against received quantity](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
+## Configure an automated task for vendor invoice workflow to post the vendor invoice using a batch job
+
+You can add an automated posting task to the Vendor invoice workflow so that invoices are processed in a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
+
+To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Vendor invoice batch posting** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**.
+
+You can see the **Post the vendor invoice using a batch** task in the workflow editor, regardless of whether the feature parameter, **Vendor invoice batch posting**, is enabled. When the feature parameter is not enabled, an invoice that contains the **Post the vendor invoice using a batch task** won't process in workflow until the parameter is enabled. The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+
+You can specify the number of invoices to include in the batch, and the number of hours to wait before rescheduling a batch, by going to **Accounts payable > Setup > Accounts payable parameters > Invoice > Invoice workflow**. 
+
 ## Working with multiple invoices
 
-You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
+You can work with multiple invoices at the same time and post all of them  at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
 ## Recovering vendor invoices that are being used
 

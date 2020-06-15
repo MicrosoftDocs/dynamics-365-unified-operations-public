@@ -34,7 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes requirements for Microsoft Dynamics 365 Talent, including Attract, Onboard, and Core HR. It also outlines the countries and regions where Talent is available, plus information about languages and localization for Talent data. In additions, this topic provides the update policy for Talent.
+This topic describes requirements for Microsoft Dynamics 365 Talent, including Attract and Onboard. It also outlines the countries and regions where Talent is available, plus information about languages and localization for Talent data. In additions, this topic provides the update policy for Talent.
 
 ## Supported web browsers
 

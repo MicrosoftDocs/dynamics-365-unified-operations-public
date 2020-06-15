@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Personalize the user experience
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how you can personalize the app.
 
@@ -65,7 +64,8 @@ As you use the app, many of your selections are stored to make the system easier
 
 Implicit personalizations are personalizations that you make just by interacting with controls that store their current visible state.
 
-- **Grid columns** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open the page that includes that grid, the column will be resized to that width.
+- **Grid column widths** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open the page that includes that grid, the column will be resized to that width.
+- **Grid column totals** - (Only available with the new grid control enabled) You can decide whether or not a total should be shown at the bottom of any numeric column in a grid as well as whether the grid footer is visible. The app stores this data so that these preferences are remembered the next time you open the page. See the [Grid capabilities](grid-capabilities.md) topic for more information. 
 - **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. The app stores information about the FastTabs that you've expanded and collapsed. Then, the next time that you open the page, the same FastTabs will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab, because the app doesn't have to retrieve the information for FastTabs until they are expanded. As is explained later this topic, you can also change the order of the FastTabs on a page.
 - **Fact Boxes** – Some pages have a **Related information** pane that shows read-only information that is related to the current subject of the page. Each section in the **Related information** pane is known as a *Fact Box*. You can expand or collapse the **Related information** pane, and you can also expand or collapse individual Fact Boxes. The app stores these preferences. Then, the next time that you open the page, the **Related information** pane and the individual Fact Boxes will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FactBox, because the app doesn't have to retrieve the information for FactBoxes until they are expanded.
 - **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized on tabs. You can "pin" the whole Action Pane open, or you can have it collapsed by default. Then, the next time that you open the page, the Action Pane will be either open or collapsed, based on your last interaction with the page. If you pinned the Action Pane open, the last tab that you used will be shown.
@@ -85,15 +85,16 @@ Some of the most typical and important changes that can be made to a page are av
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this personalization method, the element's property window appears.
 
-![Personalizing an element's properties](./media/personalization-element-properties.png)
+![Personalizing an element's properties](./media/cli-element-property-window.png)
 
 You can use the property window to personalize an element in the following ways:
 
 - Change the element's label.
 - Hide the element so that it isn't shown on the page. The data in the field isn't deleted or modified. The information just doesn't appear on the page any longer.
 - Include the information in the FastTab's summary section (if the element is on a FastTab).
-- Skip the field, so that it never receives focus when you tab through the page.
+- Skip the field so that it never receives focus when you tab through the page.
 - Prevent data in the field from being edited (for any record).
+- Designate a field to be required for data entry. If no value has been entered in this field, it will appear with a red border and an asterisk to indicate this state. This option is only available starting in version 10.0.11 when the [Saved views](saved-views.md) and **Designate fields as required using personalization**  features are enabled.
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
 
@@ -101,7 +102,7 @@ The property window might include other personalization capabilities, depending 
 
 If you want to make multiple changes to a page, or changes that aren't available through other mechanism (for example, if you want to reorder elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, follow one of these steps:
 
-- Select **Personalize this form** in an element's property window.
+- Select **Personalize this page** in an element's property window.
 - Select **Personalize this page** in the **Personalize** group on the **Options** tab of any page's Action Pane.
 - Select the **Settings** button (the gear symbol) on the navigation bar, and then select **Personalize**.
 
@@ -121,8 +122,14 @@ The following tools are available on the **Personalization** toolbar:
 - Use the **Move** tool to move an element to a different location in the current group of elements. Note that you can't move an element outside its parent group. To use this tool, select the **Move** button on the toolbar, and then select the element to move. When you select an element, the app determines the locations where the element is allowed to be moved. These locations are known as *drop zones*. As you drag the element around in the current group, each drop zone is shown as a colored, bold line next to the area where the element can be dropped.
 - Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** button on the toolbar, all elements that are currently skipped are shown in a shaded container. You can interactively remove or add fields to the tab sequence.
 - Use the **Show in header** tool when you want a field to appear in the FastTab's summary section. When you select the **Show in header** button on the toolbar, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from it by selecting the fields.
+- Use the **Require** tool to designate an element as required for data entry. When you select the **Require** button on the toolbar, all elements that have been personalized to make them required are shown in a shaded container. You can then make them not required again. This option is available in version 10.0.12 and later when the **Designate fields as required using personalization** feature is enabled.
+
+    > [!IMPORTANT]
+    > Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Use the **Lock** tool to mark an element as either editable or noneditable. When you select the **Lock** button on the toolbar, all elements that are currently noneditable are shown in a shaded container. You can then make them editable again. Note that some fields are required and can't be made noneditable. A padlock symbol appears next to those fields.
-- Use the **Add a PowerApp** button to embed an app that was created by using Microsoft PowerApps into the page. For detailed information about how to embed a PowerApps app into a page, see [Embed PowerApps apps](embed-power-apps.md).
+- Use the **Add an app from Power Apps** button to embed an app that was created by using Microsoft Power Apps into the page. For detailed information about how to embed an app from Power Apps into a page, see [Embed apps from Power Apps](embed-power-apps.md). This option is only available when the [Saved views](saved-views.md) feature is disabled.  
+- Use the **Add an app** button to embed an app, either one created from Microsoft Power Apps or a third-party, into the page. This option is only available when the [Saved views](saved-views.md) feature is enabled. 
 - Use the **Clear** tool to reset the page to its default, installed state. All personalizations on the current page will be cleared. There is no undo action. Therefore, use this tool only if you're sure that you want to reset the page.
 - Use the **Import** tool to load a personalization from a file that you or someone else previously created. When you import personalizations for a page, you can choose whether they should be added to or replace all your existing personalizations for the page. There is no undo action. Therefore, after you import personalizations, you must manually clear or undo any changes that you don't want.
 - Use the **Export** tool to save your personalizations for the page to a file. You can then share your personalizations with other users. Those users just have to import the file that contains your personalizations for the page.
@@ -158,31 +165,24 @@ The dashboard is often the first page that you see when you open the app. You ca
 To personalize the dashboard, right-click any tile, and then select **Personalize** to open the tile's property window.
 
 - If you want to hide or rename the selected tile, you can make that change directly in the property window.
-- To reorder the workspace tiles, in property window, select **Personalize this form** to open the **Personalization** toolbar. You can then use the **Move** tool to rearrange the tiles as you want.
+- To reorder the workspace tiles, in property window, select **Personalize this page** to open the **Personalization** toolbar. You can then use the **Move** tool to rearrange the tiles as you want.
 - To add a new workspace tile, in the property window, select **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile as you want. You can also add lists, tiles, and links to the workspace as described in the [Adding lists, tiles, or links to workspaces](#adding-a-tile-list-or-link-to-a-workspace) section of this topic.
 
+
+## Sharing personalizations
+After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask other users to open the personalized page and import the personalization file that you created. Alternatively, you can give your personalizations to a user who has admin privileges. That user can then apply your personalization file to many users at the same time by using the **Personalization** administration page.
+
 ## Administration of personalizations
+The **Personalization** page is the central hub for managing personalizations at an organizational level. The content and capabilities on this page depend on whether the **Saved views** feature has been enabled.  
 
-After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask other users to open the personalized page and import the personalization file that you created. Alternatively, you can give your personalizations to a user who has admin privileges. That user can then apply your personalization file to many users at the same time.
+For customers who have enabled the **Saved views** feature, see the "Managing views globally" section in the [Saved views](saved-views.md) topic.  
 
-Users who have admin privileges can also manage personalizations for other users on the **Personalization** page.
-
-For customers who haven't turned on the [Saved views](saved-views.md) feature, this page has four tabs:
+For customers who haven't yet enabled the [Saved views](saved-views.md) feature, this page has four tabs:
 
 - **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, first select a role and users who have that role. Then either select an existing personalization to apply to the selected users, or import a personalization file. The personalization is validated and will be applied to all the selected users the next time that they open the selected page.
 - **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
 - **Users** – Select a user to see a list of the pages that the user has personalized. You can then turn that user's ability to use personalizations for specific pages, or for the whole system, on or off. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. In this case, if the user previously dismissed any pop-up windows that introduce new features, they will appear again the next time that the user encounters those features.
 - **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
-
-For customers who have turned on the [Saved views](saved-views.md) feature, the **Personalization** page has five tabs:
-
-- **Published views** – These views have been published to your organization. To change the users who are targeted by these views, you can change the security roles or legal entities that are associated with each view. You can also export or delete one or more published views.
-- **Unpublished views** – These views are template views that have been imported into your system but haven't yet been published. You can publish, export, or delete these views.
-- **Personal views** – These views have been created by users in the system. You can publish a personal view to the organization, or copy one or more of these views to other users. You can also export or delete these views as required.
-- **Users** – Select a user to see a list of the pages that the user has personalized. You can then turn that user's ability to use personalizations for specific pages, or for the whole system, on or off. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. In this case, if the user previously dismissed any pop-up windows that introduce new features, they will appear again the next time that the user encounters those features.
-- **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
-
-Users who have access to the **Personalization** page can also import personal or template views by using the **Import views** button on the Action Pane.
 
 ## Personalizing inventory dimensions
 

@@ -4,7 +4,7 @@
 title: Amortize constant costs for a manufactured item
 description: A manufactured item’s constant costs reflect the operation setup times and the components that have a constant quantity or a constant scrap amount. 
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274503

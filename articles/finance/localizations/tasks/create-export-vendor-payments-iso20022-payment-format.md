@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and export vendor payments using ISO20022 payment format
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.
 
@@ -36,20 +36,20 @@ This is the fifth procedure, out of five, that illustrates the vendor payment pr
 
 ## Example
 
-1.	Go to **Accounts payable > Payments > Payment journal**.
-2.	Click **New**.
-3.	In the **Name** field, enter or select a value.
-4.	Click **Lines > Payment proposal > Create payment proposal**.
-5.	Expand the **Records to include** section.
-6.	Click **Filter**.
-7.	In the list, select the row for **Vendors table** and **Vendor account field**.
-8.	In the **Criteria** field, enter or select a value. You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.
-12.	Click **OK**.
-13.	Click **OK**.
-14.	Click **Create payments**.
+1.    Go to **Accounts payable > Payments > Payment journal**.
+2.    Click **New**.
+3.    In the **Name** field, enter or select a value.
+4.    Click **Lines > Payment proposal > Create payment proposal**.
+5.    Expand the **Records to include** section.
+6.    Click **Filter**.
+7.    In the list, select the row for **Vendors table** and **Vendor account field**.
+8.    In the **Criteria** field, enter or select a value. You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.
+12.    Click **OK**.
+13.    Click **OK**.
+14.    Click **Create payments**.
 15. Generate an ISO20022 payment file.
-    1.	Click **Generate payments**.
-    2.	In the **Method of payment** field, enter or select a value.
-    3.	In the **File name** field, type a value. For this example, because of the EUR payment, the generated file will be SEPA compliant. ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.
-    4.	In the **Bank account** field, enter or select a value.
+    1.    Click **Generate payments**.
+    2.    In the **Method of payment** field, enter or select a value.
+    3.    In the **File name** field, type a value. For this example, because of the EUR payment, the generated file will be SEPA compliant. ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.
+    4.    In the **Bank account** field, enter or select a value.
 

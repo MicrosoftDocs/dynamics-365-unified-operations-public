@@ -66,132 +66,132 @@ Use Issue search to identify whether a regulatory feature, that is related to th
 
 ### Describe the alert
 
-1. Enter information about the alert in the appropriate fields. Required fields are indicated by a red asterisk (<strong>\</strong><em>). The following table provides more information about the fields on the **Describe the alert</em>* page.
+1. Enter information about the alert in the appropriate fields. Required fields are indicated by a red asterisk. The following table provides more information about the fields on the **Describe the alert** page.
 
-<table >
-        <tr>
-            <td >
-            <p><strong>Field</strong></p>
-            </td>
-            <td >
-            <p><strong>Description</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Title</p>
-            </td>
-            <td>
-            <p>Enter a descriptive title to identify the area of impact. For example, enter <strong>Changes in invoice document as of January 1, 2018</strong>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Description</p>
-            </td>
-            <td>
-            <p>Enter a brief overview of the law. Your description should focus on issues that are relevant to enterprise resource planning (ERP), so that users can understand the requirements at a high level without having to read the legislation first. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Country</p>
-            </td>
-            <td>
-            <p>Select the country or region that the legislation applies to. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Industry</p>
-            </td>
-            <td>
-            <p>Select the industry, if the requirement applies only to specific industries. For example, select <strong>Public sector</strong>, <strong>Retail</strong>, or <strong>Manufacturing</strong>. </p><br/>            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Feature reference</p>
-            </td>
-            <td>
-            <p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Law enforcement date</p>
-            </td>
-            <td>
-            <p>Select the date when affected customers must start to comply with the law.  </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Government announcement date</p>
-            </td>
-            <td>
-            <p>Select the date when the authority announced the change. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Latest filing date</p>
-            </td>
-            <td>
-            <p>Select the deadline for the first submission of the new or changed report.     </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Link to legislation </p>
-            </td>
-            <td>
-            <p>Enter one or more links to the published law, interpretation guideline, implementation guidance, or any other useful documentation that will help users understand or implement the requirement.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Company name</p>
-            </td>
-            <td>
-            <p>Enter the company name for the person who is submitting the alert.         </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Contact name</p>
-            </td>
-            <td>
-            <p>Enter the name of the person who is submitting the alert.     </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Contact email</p>
-            </td>
-            <td>
-            <p>The email address of the person who is submitting the alert.   </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>Business process</p>
-            </td>
-            <td>
-            <p>The business processes that you selected through the <strong>Alert submission</strong> wizard.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>Comments</td>
-            <td>
-            <p>Enter any additional information that might be help users understand or implement the requirement. Click <strong>Submit</strong> to save your comment. Multiple comments can be added and should be submitted separately. Comments are saved in the order that they are added. </p>
-            </td>
-        </tr>
-        <tr>
-            <td> Attachments </td>
-            <td> <p>Click the <strong>Upload</strong> button, and then browse to select a file to add as an attachment. After you select the file, it&#39;s uploaded and appears as a linked file. You can add up to three files that have a size of 5 MB each. To delete files that have been attached, click <strong>Remove</strong> under the title of the file. <strong>Note</strong> Attachments must be publicly available materials. They can&#39;t be propriety or customer-specific/partner-specific.</p>
-            </td>
-        </tr>
-</table>
+    <table >
+            <tr>
+                <td >
+                <p><strong>Field</strong></p>
+                </td>
+                <td >
+                <p><strong>Description</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Title</p>
+                </td>
+                <td>
+                <p>Enter a descriptive title to identify the area of impact. For example, enter <strong>Changes in invoice document as of January 1, 2018</strong>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Description</p>
+                </td>
+                <td>
+                <p>Enter a brief overview of the law. Your description should focus on issues that are relevant to enterprise resource planning (ERP), so that users can understand the requirements at a high level without having to read the legislation first. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Country</p>
+                </td>
+                <td>
+                <p>Select the country or region that the legislation applies to. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Industry</p>
+                </td>
+                <td>
+                <p>Select the industry, if the requirement applies only to specific industries. For example, select <strong>Public sector</strong>, <strong>Commerce</strong>, or <strong>Manufacturing</strong>. </p><br/>            </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Feature reference</p>
+                </td>
+                <td>
+                <p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Law enforcement date</p>
+                </td>
+                <td>
+                <p>Select the date when affected customers must start to comply with the law.  </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Government announcement date</p>
+                </td>
+                <td>
+                <p>Select the date when the authority announced the change. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Latest filing date</p>
+                </td>
+                <td>
+                <p>Select the deadline for the first submission of the new or changed report.     </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Link to legislation </p>
+                </td>
+                <td>
+                <p>Enter one or more links to the published law, interpretation guideline, implementation guidance, or any other useful documentation that will help users understand or implement the requirement.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Company name</p>
+                </td>
+                <td>
+                <p>Enter the company name for the person who is submitting the alert.         </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Contact name</p>
+                </td>
+                <td>
+                <p>Enter the name of the person who is submitting the alert.     </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Contact email</p>
+                </td>
+                <td>
+                <p>The email address of the person who is submitting the alert.   </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Business process</p>
+                </td>
+                <td>
+                <p>The business processes that you selected through the <strong>Alert submission</strong> wizard.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td>
+                <p>Enter any additional information that might be help users understand or implement the requirement. Click <strong>Submit</strong> to save your comment. Multiple comments can be added and should be submitted separately. Comments are saved in the order that they are added. </p>
+                </td>
+            </tr>
+            <tr>
+                <td> Attachments </td>
+                <td> <p>Click the <strong>Upload</strong> button, and then browse to select a file to add as an attachment. After you select the file, it&#39;s uploaded and appears as a linked file. You can add up to three files that have a size of 5 MB each. To delete files that have been attached, click <strong>Remove</strong> under the title of the file. <strong>Note</strong> Attachments must be publicly available materials. They can&#39;t be propriety or customer-specific/partner-specific.</p>
+                </td>
+            </tr>
+    </table>
 
 2.  After you've finished entering all the information, select the consent check box (**By submitting this regulatory alert, I consent to Microsoft contacting me for additional information about this alert. Microsoft Privacy Statement.**). When you select the check box, the **Submit** button becomes available.
 3.  Click **Submit** to save and submit the alert.

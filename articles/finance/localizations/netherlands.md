@@ -5,7 +5,7 @@ title: Netherlands overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for the Netherlands. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,5 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides links to documentation resources for the Netherlands. 
 
+- [VAT declaration](emea-nl-VAT-declaration.md)
 - [Electronic tax declarations (EVAT)](tasks/nl-00010-electronic-tax-declarations-evat.md)
 - [Semansys XBRL integration](tasks/nl-00003-semansys-xbrl-integration.md)
+- [Audit file (XML Auditfile Financieel, XAF)](emea-nl-audit-file.md)

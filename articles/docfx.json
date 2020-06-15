@@ -55,7 +55,6 @@
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
-      "titleSuffix": "Finance & Operations | Dynamics 365 | #MSDyn365FO",
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
@@ -125,13 +124,23 @@
             "Dynamics 365",
             "Unified Operations",
             "Retail"
+        ],
+           "human-resources/**/**.md": [
+           "Dynamics 365",
+           "Unified Operations",
+           "Human Resources"
         ]
        },
       "titleSuffix": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "AX 2012",
-        "talent/**.md": "Talent | Dynamics 365",
-        "retail/**.md": "Retail | Dynamics 365"
+        "commerce/**.md": "Commerce | Dynamics 365",
+        "fin-ops-core/**.md": "Finance & Operations | Dynamics 365",
+        "fin-ops-core/fin-ops/hr/**.md": "Human Resources | Dynamics 365",
+        "finance/**.md": "Finance | Dynamics 365",                
+        "human-resources/**.md": "Human Resources | Dynamics 365",
+        "supply-chain/**.md": "Supply Chain Management | Dynamics 365",
+        "talent/**.md": "Talent | Dynamics 365"
       },
+
       "breadcrumb_path": {
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
     },

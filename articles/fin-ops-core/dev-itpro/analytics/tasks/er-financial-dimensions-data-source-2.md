@@ -5,7 +5,7 @@ title: ER Use financial dimensions as a data source (Part 2 - Model mapping)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use financial dimensions as a data source (Part 2 - Model mapping)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in any company.
 
-To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 1: Design data model” procedure.
+To complete these steps, you must first complete the steps in the "ER Use financial dimensions as a data source (Part 1: Design data model" procedure.
 
 
 ## Add required data sources to model mapping
@@ -60,14 +60,16 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 20. In the Financial dimensions selection field, select 'Legal entity'.
     * Select All to allow the user to select desire dimensions for the current  instance in the Lookup field.  Select Legal entity to allow the user to select dimensions for the company in the Lookup field.  Select Dimension to allow the user to select dimensions using a single dimension set.  
 21. Select Yes in the Ask for main account field.
-    * Set ‘Ask for main account’ to Yes to allow users to select the main account as part of the list of dimensions.   If set to No, the main account will not be included to the list of dimensions and the ‘Is main account mandatory’ option is enabled. If “Is main account mandatory’ is set to Yes, include the main account in the list of dimensions regardless of the user’s selection.  
+    * Set 'Ask for main account' to Yes to allow users to select the main account as part of the list of dimensions.   If set to No, the main account will not be included to the list of dimensions and the 'Is main account mandatory' option is enabled. If "Is main account mandatory' is set to Yes, include the main account in the list of dimensions regardless of the user's selection.  
 22. Click OK.
+![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. In the tree, select 'Dynamics 365 for Operations\Table records'.
 24. Click Add root.
 25. In the Name field, type 'LedgerJournal'.
 26. Select Yes in the Ask for query field.
 27. In the Table field, type 'LedgerJournalTable'.
 28. Click OK.
+![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## Map data model elements to added data sources
 1. In the tree, expand 'Journal'.
@@ -81,7 +83,7 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 9. In the tree, select 'Journal\Transaction\Voucher'.
 10. Click Bind.
 11. In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.
-    * Note that for any reference to financial dimensions that is set to, for instance, LedgerDimension, a corresponding data source item is available (LedgerDimension.Dimension). This data source item offers the financial dimensions of that dimensions set as the record’s list.  
+    * Note that for any reference to financial dimensions that is set to, for instance, LedgerDimension, a corresponding data source item is available (LedgerDimension.Dimension). This data source item offers the financial dimensions of that dimensions set as the record's list.  
 12. In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.
 13. In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.
 14. In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value'.
@@ -98,6 +100,7 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 25. In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.
 26. In the tree, select 'Journal\Transaction\Dimensions data'.
 27. Click Bind.
+![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)'.
 29. In the tree, select 'Journal\Transaction\Debit'.
 30. Click Bind.
@@ -136,14 +139,15 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 63. In the expressionAsStringText field, enter 'Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Click Save.
+![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Close the page.
 66. Click Save.
 67. Close the page.
 
-## Complete this draft model’s version
+## Complete this draft model's version
 1. Close the page.
 2. Close the page.
 3. Click Change status.
 4. Click Complete.
 5. Click OK.
-
+![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping5.png)

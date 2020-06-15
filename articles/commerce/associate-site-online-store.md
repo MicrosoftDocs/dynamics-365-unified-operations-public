@@ -5,7 +5,7 @@ title: Associate an e-Commerce site with an online channel
 description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 author: stuharg
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 # Associate an e-Commerce site with an online channel
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores. 
 
@@ -44,16 +44,24 @@ After your site is created, you can verify that it's associated with your online
 
 ## Additional resources
 
-[Online store overview](online-store-overview.md)
-
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
 
-[Configure your domain name](configure-your-domain-name.md)
+[Set up an online store channel](online-stores.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
-
-[Set up custom pages for user logins](custom-pages-user-logins.md)
