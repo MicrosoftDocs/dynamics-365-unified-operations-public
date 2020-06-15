@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.05 for APAC India GST localization. 
 
 ## New configuration 
-The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.5. For more informatio about the released configuration details, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
+The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.5. For more information about the released configuration details, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
  
 - Taxable Document.version.82.xml
 - Taxable Document (India).version.82.143.xml
@@ -91,7 +91,7 @@ This feature was released in 10.0.4, but more details are now available. When yo
  
 - The financial dimension value that is specified for the site defaults as the financial dimension value for the respective site in the stock transfer order.
 - You can change the dimension value for the financial dimension before you post the stock transfer shipment and receipt. However if you lock the financial dimension link, you can't modify the financial dimension value that is associated with a site.
-- The default financial dimension in stock transfer orders will be based on the standard functionality of the financial dimension and it's association with the site inventory dimension.
+- The default financial dimension in stock transfer orders will be based on the standard functionality of the financial dimension and its association with the site inventory dimension.
 
 To set up this feature, complete the following steps: 
 
@@ -149,7 +149,7 @@ Settle the reverse charge liability from the cash account on the last day of the
 -	The load on inventory amount is not posting to the fixed asset account when the fixed asset is acquired through a purchase order with a service item.
 -	Location ID of legal entity, **IN** does not default on the project timesheet.
 -	Tax is not populated on the **Invoice journal inquiry** page.
--	A shipping bill can't post when the default values for a summary update is set to **Invoice account**.
+-	A shipping bill can't post when the default values for a summary update are set to **Invoice account**.
 -	GST amount and assessable value should not be rounded by the rounding rule.
 -	The totals in the GST tax invoice (shipment) are not displaying correctly.
 -	Vendor tax information is missing in the purchase order line when the Purchase order is created from a purchase requisition.
