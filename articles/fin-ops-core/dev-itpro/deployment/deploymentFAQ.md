@@ -66,7 +66,7 @@ Although you will no longer have Microsoft Remote Desktop access, you can contin
 ### Access the Azure SQL database
 You can access the Microsoft Azure SQL database by following these steps.
 
-1. From LCS, safe list the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
+1. From LCS, add a safe list of the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
 2. Use LCS to request access to see the database credentials. You must provide a reason for requesting access. 
 
 As soon as you submit the request, it's automatically approved. Within a minute or two, you will be able to see the database access credentials on the LCS environment details page. You can use the credentials to connect to the SQL database.
