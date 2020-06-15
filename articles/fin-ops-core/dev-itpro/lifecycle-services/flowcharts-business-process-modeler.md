@@ -3,7 +3,7 @@
 
 title: Flowcharts in Business process modeler (BPM)
 description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
-author: jorisdg
+author: AngelMarshall 
 manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
