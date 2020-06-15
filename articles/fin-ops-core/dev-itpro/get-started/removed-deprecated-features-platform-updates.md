@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,11 +56,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
 
-### Explicit whitelisting for self-service environments
+### Explicit safe lists for self-service environments
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The process for IP whitelisting has changed. Self-service no longer supports IP whitelisting. |
+| **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
 | **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
