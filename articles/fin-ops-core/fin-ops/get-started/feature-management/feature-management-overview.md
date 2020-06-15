@@ -155,13 +155,13 @@ Features are added, removed, and changed through code changes. Environments need
 No, a feature becoming mandatory is not an automatic action. The product teams need to make a code change.
 
 ### When do features become mandatory? 
-The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you choose to enable the feature. The product teams can choose whether or not to make a feature mandatory after that period has ended. 
+The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you enable the feature. The product teams can choose whether to make a feature mandatory after that period has ended. 
 
 ### Why isn't there a specific 'mandatory enabled date'? 
-Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. All of these things (and more) mean that specific dates are difficult to pinpoint. 
+Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to pinpoint. 
 
-### Where's the communication around which features are being made mandatory and when? 
-That communication would be documentation from the application teams. Often, these will be mentioned in the documentation for [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)
+### Where's the documentation for features that are being made mandatory? 
+This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) topic. 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.
@@ -172,7 +172,7 @@ Yes, if features don't have a functional impact then they can be enabled by defa
 ### What is feature flighting and how does it relate to feature management? 
 Feature flights are real-time on/off switches that Microsoft controls. They are separate from the customer control provided by Feature Management. 
 - Private Preview features will not be listed in Feature Management until they are flighted on. In production, the customer needs to agree to be part of a special program for that to occur.
-- Public Preview and Released (GA - generally available) features will be listed in Feature Management unless they are flighted off. Flighting a feature off is an option of last resort for product teams if a critical issue is found and would usually be a per-customer operation.
+- Public Preview and Released (generally available) features will be listed in Feature Management unless they are flighted off. Flighting a feature off is considered a last resort option for product teams if a critical issue is found and would usually be a per-customer operation.
 
 ### Do features ever get flighted off without the customer knowing about it? 
-Yes, if a feature is impacting the functioning of an environment don't have a functional impact then they can be enabled by default.
+Yes, if a feature is impacting the functioning of an environment that doesn't have a functional impact then they can be enabled by default.
