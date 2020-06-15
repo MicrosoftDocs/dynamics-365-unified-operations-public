@@ -78,8 +78,8 @@ BPM automatically generates an activity diagram and detailed process steps for a
 ## Visio files
 You can associate a business process with a Visio diagram. Typically, this functionality is used for high-level processes that can't be represented by a task recording.
 
-![Note]
-BPM supports .vsd and .vsdx files. However, it doesn't support .vsdm files (macro-enabled Visio drawing files). If a .vsd file contain macros, BPM disables the execution of the macros.
+> [!Note]
+> BPM supports .vsd and .vsdx files. However, it doesn't support .vsdm files (macro-enabled Visio drawing files). If a .vsd file contain macros, BPM disables the execution of the macros.
 
 To view or upload a Visio file, follow these steps.
 
