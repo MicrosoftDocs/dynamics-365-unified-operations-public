@@ -63,9 +63,9 @@ data management to upload stock transfer transactions. 
   the **General journal** for posting.  
 -	When you create charge codes with a credit type of Ledger Account, you must also define a SAC code for the charge.
   The charge will be credited to the defined ledger account and will not be included in the vendor balance after 
-  the purchase order is posted. With this posting, you are not allwed to define the SAC/HSN code in the charge code.  
+  the purchase order is posted. With this posting, you are not allowed to define the SAC/HSN code in the charge code.  
 -	On the **Account structure** page, if blank values are not allowed for the financial dimension, then when the invoice
-  with a tax withholding payment is posted, the defined financial dimension must be have a value for the TDS Authority
+  with a tax withholding payment is posted, the defined financial dimension must have a value for the TDS Authority
   vendor and invoice transaction. 
 -	If a sales order is created from a sales agreement, the tax information in the sales order should populate from
   the legal entity instead of the warehouse. If the state of origin is different from the state of the legal entity,
@@ -80,12 +80,12 @@ data management to upload stock transfer transactions. 
   has not been made. 
 -	Vendor invoices that were created by customers using the **Vendor invoice journal** will have GST paid for the invoices 
   on a reverse charge basis.
-  If you want to generate a self invoice, you cannot reverse the charge tax invoice with a GST reference ID.  
+  If you want to generate a self-invoice, you cannot reverse the charge tax invoice with a GST reference ID.  
 -	When posting a vendor invoice journal that includes tax, the section code is not appearing in the **TDS inquiry transaction** page.
-  Similarly Project Sales Order, Section code and Invoice number are not appearing in TDS inquiry transaction form. 
+  Similarly Project Sales Order, Section code, and Invoice number are not appearing in TDS inquiry transaction form. 
 -	Tax information adjustment is not working on project timesheet transactions.   
 -	A sales return order with an SEZ customer is not showing the option **With tax payment** even though it was selected in the 
-  original sales order . 
+  original sales order. 
 -	An error message occurs when posting an invoice journal with multiple lines, applied TDS, and an exchange rate that was 
   updated after lines were created in the invoice journal. The system is not picking up the latest defined exchange rate 
   for the entire transaction. 
