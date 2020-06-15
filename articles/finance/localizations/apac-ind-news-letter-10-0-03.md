@@ -54,7 +54,7 @@ With the release of 10.0.04, use the Tax transaction inquiry functionality for T
 
 ## Critical fixes 
 
-- When you create an export order, there is Basic Custom Duty (BCD) and Social Welfare Surcharge (SWS). When the export orderis posted, only BCD is posted. The following configurations are needed to resolve this issue:
+- When you create an export order, there is Basic Custom Duty (BCD) and Social Welfare Surcharge (SWS). When the export order is posted, only BCD is posted. The following configurations are needed to resolve this issue:
  
   -	Taxable Document .version.81.xml
   -	Taxable Document (India) .version.81.138.xml
