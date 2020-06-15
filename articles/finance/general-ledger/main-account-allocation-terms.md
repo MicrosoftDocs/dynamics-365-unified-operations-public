@@ -2,10 +2,10 @@
 # required metadata
 
 title: Main account allocation terms
-description: This article provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
+description: This topic provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
 author: rachel-profitt
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: raprofit
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
+This topic provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
 
 Each allocation term that you create on a main account defines the percentage of a voucher to be allocated from a single-source main account and a combination of financial dimensions. In addition, you define the destination main account and financial dimensions where the amount will be allocated. 
 
-When you define the source financial dimension for the allocation, you can select if each dimension is specific or unspecific. Specific identifies that the source transaction financial dimension must match the selected dimension. When you select unspecific, it indicates that any value for the financial dimension can contribute to a match.
+When you define the source financial dimension for the allocation, you can select if each dimension is specific or unspecific. Specific indicates that the financial dimention for the source transaction must match the selected dimension. When you select unspecific, it indicates that any value for the financial dimension can contribute to a match.
 
 When you define the destination ledger account for an allocation term, you must specify the main account that you are allocating the amount to. You can use the same main account where the source transaction is posted to, or a different main account. If the same main account is used, a warning displays when saving the record. In addition to specifying the main account, you must also specify the destination dimensions. For each dimension, you can specify if you want to keep the source financial dimension value or change it. If you select no, then you must select a new value for the financial dimension. If you select yes, no additional information is specified, and the system will maintain the original financial dimensions on the post.
 
