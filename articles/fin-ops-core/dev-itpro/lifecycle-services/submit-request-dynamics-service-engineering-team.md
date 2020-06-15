@@ -99,10 +99,10 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
-      - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
+      - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
-        > Support for explicit whitelisting is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
+        > Support for explicit safe lists is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
         
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
