@@ -264,7 +264,7 @@ Secure a downtime window in which you can switch operation from the disaster rec
 
 After the failover has occurred, start the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure that your environment is functioning as expected. When you determine that your environment is working as expected, remove the LocalAgent from your disaster recovery environment and reinstall it on your Production environment.
 
-Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric services
+Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric services.
 
 >[!CAUTION]
 > Do not use the Cleanup functionality in LCS to perform the clean up of your disaster recovery environment. 
