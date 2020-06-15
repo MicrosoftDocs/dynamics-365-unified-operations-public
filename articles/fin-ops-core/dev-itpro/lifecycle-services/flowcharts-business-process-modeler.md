@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flowcharts in Business process modeler (BPM)
-description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
+description: This topic explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
 author: AngelMarshall 
 manager: AnnBe
 ms.date: 06/15/2020
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 7.0
 > [!IMPORTAMT]
 > Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
 
-You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and how to upload and view unconnected flowcharts.
+You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This topic explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
 
 -   Connected flowcharts are the automatically generated flowcharts based on data recorded in Task recorder and uploaded to Business process modeler, this also includes the process steps from the task recording. 
 -   Unconnected flowcharts are uploaded directly from Visio.
@@ -73,11 +73,11 @@ Default connected flowcharts are available for many nodes in the industry-standa
 
 To view a connected flowchart, follow these steps:
 
-1.  Sign in to Microsoft Dynamics Lifecycle Services, open a project, and then click **Business process modeler**.
+1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
 2.  In the **Project libraries** section, select a library to display it. 
 3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
-    The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Process steps is displayed in the right pane. 
+    The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Process steps are displayed in the right pane. 
 
 <!---
 ### Modify a connected flowchart
@@ -109,8 +109,8 @@ You can import a business process model flowchart from an existing business proc
 You can export a business process model flowchart to a Visio file.
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
 2.  In the **Project libraries** section, select a library to display it.
-3.  Expand the library and then click any library node that has a flowchart icon associated with it.
-4.  From the **Overview** pane, click on **Diagram** to view the flowchart.   
+3.  Expand the library and then select any library node that has a flowchart icon associated with it.
+4.  From the **Overview** pane, select **Diagram** to view the flowchart.   
 5.  From the flowchart tab, click **Export** to save as a Visio file. 
 
 <!--
@@ -144,7 +144,7 @@ Unconnected flowcharts, such as a Visio diagram, can be very helpful for describ
 
 1.  In the **Project libraries** section, select a library to display it.
 2.  Expand the library and then click any library node that has a flowchart icon associated with it.
-3.  From the **Overview** pane, click on **Diagram**.   
+3.  From the **Overview** pane, select **Diagram**.   
 5.  From the **Visio** tab, click **Upload** to upload a Visio file.
 
 > [!Note] 
@@ -157,6 +157,3 @@ A business process with an unconnected Visio flowchart associated with it will h
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->
-
-
-
