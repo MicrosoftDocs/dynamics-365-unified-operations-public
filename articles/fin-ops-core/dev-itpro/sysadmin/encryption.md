@@ -50,9 +50,9 @@ Connections established between customers and Microsoft datacenters are encrypte
 
 Finance and Operations apps support TLS 1.2 only. Earlier TLS versions, 1.0 and 1.1, are not supported.
 
-### Supported Cipher Suites
+### Supported cipher suites
 
-Dynamics 365 for Finance and Operations supports only the following cipher suites:
+Finance and Operations apps only support the following cipher suites:
 
 * TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
