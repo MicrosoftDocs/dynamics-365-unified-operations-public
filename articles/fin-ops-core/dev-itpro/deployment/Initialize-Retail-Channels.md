@@ -138,15 +138,22 @@ The migration process is transparent to the channels. After the scale unit initi
 3. All channels mapped to the **Default** channel database in the headquarters will be updated to map to the new Commerce Scale Unit.
 4. A Commerce Data Exchange (CDX) full data sync will be performed to bring the channel data to the new scale unit.
 
-You should plan for a five-hour downtime window for store and any online channel operations that use Retail Server or Cloud Point of Sale.
+**Planning & testing for Commerce Scale Unit initialization**
+As a general rule, when initializing Commerce Scale Unit, you must plan for a five-hour downtime window for store operations as well as any E-commerce channel operations that use Retail Server or Cloud Point of Sale.
 
-This process should be first performed in a sandbox environment after a database refresh with production data is performed. This will allow for business validations and will provide guidance on the amount of time the migration process will take.
+1. Perform a database refresh from your production environment to a Sandbox UAT enviornment. 
+2. Initialize Commerce Scale Unit in the Sandbox UAT enviornment. 
+3. Take note of the Initialization time to complete for CSU. This will be comparable to the time this operation takes in your production environment, during which store operations & E-commerce operations will be unavailable.
 
-Because the Commerce Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
+You must perform the following additional steps before initializing CSU.
 
-1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process.
-2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
+1. **Close all POS shifts** After migration, POS users be unable to close any shifts that were active during the migration process.
+2. **Validate that all P-jobs have been successfully completed.** It is recommended that P-jobs to synchronize pending transactions have completed before CSU is initialized.
 3. **Sign out of all POS devices.** POS operations are not supported during migration.
+4. **Recall and void all suspended transactions at POS**. Suspended transactions are not preserved as part of the initilization.
+
+> [!IMPORTANT]
+> As part of CSU Initialization, prior suspended transactions will be lost and cannot be recalled. 
 
 Here is what occurs during the initialization period:
 
