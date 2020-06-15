@@ -5,7 +5,7 @@ title: On-premises disaster recovery configuration
 description: This content describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery and the process for switching between the primary and secondary datacenters.
 author: faix
 manager: AnnBe
-ms.date: 06/11/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -227,7 +227,7 @@ Run the following command against your business data database (AXDB):
 Run the following command against your business data database (AXDB):
 
 ```sql
-    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
 ```
 
 >[!NOTE]
@@ -264,7 +264,7 @@ Secure a downtime window in which you can switch operation from the disaster rec
 
 After the failover has occurred, start the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure that your environment is functioning as expected. When you determine that your environment is working as expected, remove the LocalAgent from your disaster recovery environment and reinstall it on your Production environment.
 
-Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric services
+Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric services.
 
 >[!CAUTION]
 > Do not use the Cleanup functionality in LCS to perform the clean up of your disaster recovery environment. 

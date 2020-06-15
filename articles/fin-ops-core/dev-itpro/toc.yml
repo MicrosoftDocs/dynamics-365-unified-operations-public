@@ -362,6 +362,8 @@
       items: 
       - name: Azure Data Lake overview
         href: data-entities/azure-data-lake-overview.md
+      - name: Configure export to Azure Data Lake
+        href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Make entity store available as a Data Lake 
@@ -1436,6 +1438,8 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Encryption in Finance and Operations apps
+          href: sysadmin/encryption.md
         - name: Set the session idle timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
