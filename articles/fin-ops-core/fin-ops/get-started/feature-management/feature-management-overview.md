@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -144,7 +144,7 @@ Feature management lets you to control the features that are delivered in each r
 
 ## New features are optional for 12 months
 
-When a new feature is installed, and isn't a critical feature, it will be optional for a 12 months period. This allows you and your organisation to plan ahead for when to uptake a feature and have it tested against your daily operations. You can read more in the One Version release note: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features
+When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## Using Feature management to turn on ISV features or custom features
 
