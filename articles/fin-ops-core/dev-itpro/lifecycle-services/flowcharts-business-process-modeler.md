@@ -138,7 +138,7 @@ To generate a gap analysis and export it, follow these steps:
 -->
 
 ## Unconnected flowcharts
-Unconnected flowcharts such as a Visio diagram can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
+Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
 
 ### Upload an unconnected flowchart
 
