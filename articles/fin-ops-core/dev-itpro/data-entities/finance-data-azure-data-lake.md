@@ -40,14 +40,14 @@ ms.dyn365.ops.version: Platform Update 34
 > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in the topic, [Make entity store available as a Data Lake](entity-store-data-lake.md).
  
  
-The **Export to Azure Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system let's you choose the tables and entities to include. After you choose the data you want, the system will make an initial copy. The system then keeps the chosen data up-to-date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations apps instances and the time when the data is available in your data lake. 
+The **Export to Azure Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system let's you choose the tables and entities to include. After you select the data that you want, the system will make an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations apps instances and the time when the data is available in your data lake. 
 
-Before you can use this feature, you must configure the **Export to Data lake**. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+Before you can use this feature, you must configure the **Export to Data Lake**. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 
 ## Turn on the Export Data to Azure Data Lake feature
 
-An administrator must turn on the **Export to Azure Data Lake** feature before it can be activated. To do this, go to the **Feature management** workspace, locate and select the **Export Data to Azure Data lake** feature, and then select **Enable**.
+An administrator must turn on the **Export to Azure Data Lake** feature before it can be activated. To do this, go to the **Feature management** workspace, locate and select the **Export Data to Azure Data Lake** feature, and then select **Enable**.
 
 After the feature is enabled, you should see the **Export to Azure Data Lake** option under **System administration**.
 
@@ -57,7 +57,7 @@ You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Export to Azure Data Lake**.
 2. Select **Configure Data feeds for export to Lake**.
-3. On the **Configure data feeds to Data lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is already being synced. 
+3. On the **Configure data feeds to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
 4. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
     ![Selecting tables](./media/Export-Tables-toData-lake-unselectedv2.png)
@@ -76,26 +76,26 @@ If you aren't familiar with the specific tables that you require, you can select
 
 ## Monitor the tables in Data Lake
 
-You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Active** tab of the **Configure data feeds to Data lake** page.
+You don't have to monitor or schedule data exports because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Active** tab on the **Configure data feeds to Data lake** page.
 
 ![Monitoring table progress](./media/Export-Tables-toData-lake-monitorv2.png)
 
-## Troubleshooting common issues and error conditions
+## Troubleshooting common issues and errors
 
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.12 or higher.
 
-This feature may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to get access to this feature, send a mail to the feature team at **FnODataLakePreview@service.microsoft.com**. We will try and make this feature available soon.
+This feature may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like access to this feature, send a mail to the feature team at **FnODataLakePreview@service.microsoft.com**. We are working to make this feature available soon.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
-Before you can use this feature, you need to configure the export to Data lake. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake add-in is not installed. 
-Ask your administrator to install this add-in using Dynamics Life Cycle Services (LCS). Before you can use this feature, you need to configure the export to Data lake*. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+Ask your administrator to install this add-in using Dynamics Lifecycle Services (LCS). Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake feature failed to install in Dynamics Life Cycle Services (LCS). 
-Ask your administrator to re-install the Export to Data Lake add-in. If this issue persists, call support. When you configure the Export to Data lake feature, the system may report an error. Or, there may be an error when you access the data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data lake](configure-export-data-lake.md).
+Ask your administrator to re-install the Export to Data Lake add-in. If this issue persists, contact Support. When you configure the Export to Data Lake feature, the system may report an error. Or, there may be an error when you access the data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake feature is temporarily unavailable. Please check back later.
-If you see this error for prolonged periods of time, contact support.  
+If you see this error for a prolonged period of time, contact Support.  
 
