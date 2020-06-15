@@ -131,6 +131,6 @@ Here are some typical examples of service requests that will be denied:
 | Production point-in-time restore | Production | Database point-in-time restore | Five hours | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
-|                                | Production | IP whitelist rules | Five hours | Two hours |
+|                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
