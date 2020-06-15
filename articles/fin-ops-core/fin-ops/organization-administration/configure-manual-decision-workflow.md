@@ -5,7 +5,7 @@ title: Configure manual decisions in a workflow
 description: This topic explains how to configure the properties of a manual decision.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
