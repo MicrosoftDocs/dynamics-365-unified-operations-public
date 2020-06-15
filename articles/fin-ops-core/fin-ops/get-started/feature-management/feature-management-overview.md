@@ -158,10 +158,10 @@ No, a feature becoming mandatory is not an automatic action. The product teams n
 The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you enable the feature. The product teams can choose whether to make a feature mandatory after that period has ended. 
 
 ### Why isn't there a specific 'mandatory enabled date'? 
-Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to pinpoint. 
+Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
 ### Where's the documentation for features that are being made mandatory? 
-This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) topic. 
+This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.
