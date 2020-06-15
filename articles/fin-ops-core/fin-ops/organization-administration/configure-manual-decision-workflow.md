@@ -249,28 +249,6 @@ Follow these steps to specify who a manual decision should be assigned to.
     </ol>
     </td>
     </tr>
-    <tr>
-    <td>Queue</td>
-    <td>A work item queue</td>
-    <td>
-    <ol>
-    <li>After you select <strong>Queue</strong>, click the <strong>Queue based</strong> tab.</li>
-    <li>To assign the decision to a specific queue, follow these steps:
-    <ol>
-    <li>In the <strong>Queue type</strong> list, select <strong>Work item queues</strong>.</li>
-    <li>In the <strong>Queue name</strong> list, select the queue.</li>
-    </ol>
-    </li>
-    <li>If a specific condition should determine which queue the decision is assigned to, follow these steps:
-    <ol>
-    <li>In the <strong>Queue type</strong> list, select <strong>Conditional work item queues</strong>.</li>
-    <li>In the <strong>Queue name</strong> list, select <strong>Conditional queue</strong>.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] This option is used for only a few workflows, such as Case management.</blockquote>
-    </td>
-    </tr>
     </tbody>
     </table>
 
