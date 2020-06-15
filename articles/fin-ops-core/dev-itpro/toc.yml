@@ -1436,6 +1436,8 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Encryption in Finance and Operations apps
+          href: sysadmin/encryption.md
         - name: Set the session idle timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
@@ -1452,8 +1454,6 @@
           href: sysadmin/tasks/assign-users-security-roles.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
-        - name: Encryption in Finance and Operations apps
-          href: sysadmin/encryption.md
       - name: Batch processing
         items:
         - name: Batch processing overview
