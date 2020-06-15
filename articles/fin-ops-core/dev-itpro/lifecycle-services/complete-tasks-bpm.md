@@ -48,9 +48,9 @@ ms.dyn365.ops.version: 2012
     
 ## Download a task recording
 
-You can download a task recording (AXTR file) that has been uploaded to a Business Process Modeler (BPM) process. 
+You can download a task recording (AXTR file) that has been uploaded to a BPM process. 
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to download the task recording.
+1. In your LCS project, on the **Business process libraries** page, select the library to download the task recording.
 
 2. Select the process to that has a the task recording uploaded. 
 
