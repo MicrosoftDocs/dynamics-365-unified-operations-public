@@ -55,8 +55,8 @@ In this example, the item model group isn't marked to include physical value. Th
 -   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   5a. Inventory physical issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
--   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
--   6. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt. An adjustment of USD –10.00 will be made on the issue transaction.
+-   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 15.00 each (running average of financially updated transactions).
+-   6. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt. An adjustment of USD –5.00 will be made on the issue transaction.
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
