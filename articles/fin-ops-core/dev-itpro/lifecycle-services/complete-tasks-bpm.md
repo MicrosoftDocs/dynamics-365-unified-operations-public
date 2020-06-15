@@ -42,7 +42,7 @@ ms.dyn365.ops.version: 2012
 
     ![Selecting a process](./media/select-upload.PNG "Selecting a process")
 
-3. From the Overview pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
+3. On the **Overview** pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
     ![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")
     
@@ -52,9 +52,9 @@ You can download a task recording (AXTR file) that has been uploaded to a BPM pr
 
 1. In your LCS project, on the **Business process libraries** page, select the library to download the task recording.
 
-2. Select the process to that has a the task recording uploaded. 
+2. Select a process that has task recording uploaded. 
 
-3. From the Overview pane, click **Download** to save the task recording (AXTR). 
+3. On the **Overview** pane, select **Download** to save the task recording (AXTR). 
 
     ![Download AXTR](./media/Download%20AXTR.png "Donload AXTR")
     
