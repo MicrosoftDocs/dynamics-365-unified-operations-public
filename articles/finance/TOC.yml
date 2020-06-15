@@ -1766,32 +1766,6 @@
           href: localizations/india.md
         - name: Scope of the Indian localizations
           href: localizations/apac-ind-scope.md
-        - name: What's new or changed for APAC India GST Localization
-          items: 
-          - name: What's new or changed in 10.0.0
-            href: localizations/apac-ind-news-letter-10-0-00.md
-          - name: What's new or changed in 10.0.01
-            href: localizations/apac-ind-news-letter-10-0-01.md
-          - name: What's new or changed in 10.0.02
-            href: localizations/apac-ind-news-letter-10-0-02.md
-          - name: What's new or changed in 10.0.03
-            href: localizations/apac-ind-news-letter-10-0-03.md
-          - name: What's new or changed in 10.0.04
-            href: localizations/apac-ind-news-letter-10-0-04.md 
-          - name: What's new or changed in 10.0.05
-            href: localizations/apac-ind-news-letter-10-0-05.md
-          - name: What's new or changed in 10.0.06
-            href: localizations/apac-ind-news-letter-10-0-06.md
-          - name: What's new or changed in 10.0.07
-            href: localizations/apac-ind-news-letter-10-0-07.md
-          - name: What's new or changed in 10.0.08
-            href: localizations/apac-ind-news-letter-10-0-08.md
-          - name: What's new or changed in 10.0.09
-            href: localizations/apac-ind-news-letter-10-0-09.md
-          - name: What's new or changed in 10.0.10
-            href: localizations/apac-ind-news-letter-10-0-10.md
-          - name: What's new or changed in 10.0.11
-            href: localizations/apac-ind-news-letter-10-0-11.md
         - name: Fixed assets
           items:
           - name: India fixed assets overview
@@ -1822,6 +1796,32 @@
           items:
           - name: India GST overview
             href: localizations/apac-ind-gst.md
+          - name: What's new or changed for APAC India GST localization
+            items: 
+            - name: What's new or changed in 10.0.0
+              href: localizations/apac-ind-news-letter-10-0-00.md
+            - name: What's new or changed in 10.0.01
+              href: localizations/apac-ind-news-letter-10-0-01.md
+            - name: What's new or changed in 10.0.02
+              href: localizations/apac-ind-news-letter-10-0-02.md
+            - name: What's new or changed in 10.0.03
+              href: localizations/apac-ind-news-letter-10-0-03.md
+            - name: What's new or changed in 10.0.04
+              href: localizations/apac-ind-news-letter-10-0-04.md 
+            - name: What's new or changed in 10.0.05
+              href: localizations/apac-ind-news-letter-10-0-05.md
+            - name: What's new or changed in 10.0.06
+              href: localizations/apac-ind-news-letter-10-0-06.md
+            - name: What's new or changed in 10.0.07
+              href: localizations/apac-ind-news-letter-10-0-07.md
+            - name: What's new or changed in 10.0.08
+              href: localizations/apac-ind-news-letter-10-0-08.md
+            - name: What's new or changed in 10.0.09
+              href: localizations/apac-ind-news-letter-10-0-09.md
+            - name: What's new or changed in 10.0.10
+              href: localizations/apac-ind-news-letter-10-0-10.md
+            - name: What's new or changed in 10.0.11
+              href: localizations/apac-ind-news-letter-10-0-11.md
           - name: India GST reference groups
             href: localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
