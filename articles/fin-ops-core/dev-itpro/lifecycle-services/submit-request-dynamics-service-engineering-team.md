@@ -102,7 +102,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
-        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
+        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments).
         
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
