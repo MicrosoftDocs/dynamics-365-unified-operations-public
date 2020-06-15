@@ -24,7 +24,7 @@ ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: 
 ms.dyn365.ops.version: 7.0
 
