@@ -227,7 +227,7 @@ Run the following command against your business data database (AXDB):
 Run the following command against your business data database (AXDB):
 
 ```sql
-    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
 ```
 
 >[!NOTE]
