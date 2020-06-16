@@ -1,8 +1,37 @@
+---
+# required metadata
+
+title: Location product dimension mixing
+description: This Location profile functionality improves location management when using product variants or products with dimensions, such as with the fashion industry. It allows you to decide whether configurations, colors, style, and sizes can be mixed on a specific Location profile, or whether just one or a combination of these dimensions can be put to the same location.
+author: Mirzaab
+manager: tfehr
+ms.date: 06/16/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-06-16
+ms.dyn365.ops.version: Release 10.0.9
+---
+
 # Location product dimension mixing
 
 ## About
 
-This Location profile functionality enables better location management when using product variants or products with dimensions, such as with the fashion industry. It allows you to decide whether configurations, colors, style, and sizes can be mixed on a specific **Location profile**, or if only one, or a combination of some of those dimensions, can be put to the same location.
+This Location profile functionality improves location management when using product variants or products with dimensions, such as with the fashion industry. It allows you to decide whether configurations, colors, style, and sizes can be mixed on a specific **Location profile**, or whether just one or a combination of these dimensions can be put to the same location.
 
 ## Enable the Location product dimension mixing feature
 
@@ -17,27 +46,20 @@ Every location in the warehouse needs to have a location profile associated with
 
 ### Location Profiles - Allow product dimension mixing
 
-1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. Select **BULK** from the Location profiles list.
-1. Select **Edit** in the Toolbar.
-1. In the **General** FastTab make the following edit:
-    - **Enable location product dimension specific mixing** - *Yes*
-    - Note: this can only be enabled when **Allow mixed items** is set to *No*.
+1. Select **Edit** on the Action Pane.
+1. In the **General** FastTab, set **Enable location product dimension specific mixing** to *Yes*. Note that you can only enable this when **Allow mixed items** is set to *No*.
 
-1. Expand the **Allowed product dimension mixing** FastTab and select the following:
-    - **Size** - *Yes*
-    - In this scenario we are only enabling mixing of products with different **Size** dimensions. The other available options are:
-        - **Configuration**
-        - **Color**
-        - **Style**
+1. Expand the **Allowed product dimension mixing** FastTab and set **Size** to *Yes*. In this scenario we are only enabling mixing of products with different **Size** dimensions, though other options are also available.
 
 1. Select **Save**.
 
 ### Create new product master and product variants
 
-1. Go to **Product information management > Products > Product masters**.
+1. Go to **Product information management \> Products \> Product masters**.
 1. Select **New** in the Action Pane to create a new product master.
-1. In the **New product** FlyOut enter the following:
+1. In the **New product** pane enter the following:
     - **Product type** - *Item*
     - **Product subtype** - *Product master*
     - **Product number** - *B0001*
@@ -66,19 +88,20 @@ Every location in the warehouse needs to have a location profile associated with
 ### Update Released Product in Company USMF
 
 1. Ensure your are logged in to Company **USMF**.
-1. Go to **Product information management > Products > Released products** to complete the released product creation.
+1. Go to **Product information management \> Products \> Released products** to complete the released product creation.
 1. On the **Released product details** list page, find and select **Item number** - *B0001* to open **Released product details**.
 1. Select **Edit** in the Action Pane.
-1. In the **General** FastTab confirm or enter the following:
+1. In the **General** FastTab, confirm or enter the following:
     - **Item model group** – *FIFO*
 
 1. Select the **Product** tab in the Action Pane.
 1. In the **Set up** group select **Dimension groups** and enter the following:
     - **Storage dimension group** - *Ware*
     - **Tracking dimension group** - *None*
-    - Select **OK**
 
-1. Next select **Reservation hierarchy** in the **Set up** group and enter the following:
+1. Select **OK**
+
+1. Select **Reservation hierarchy** in the **Set up** group and enter the following:
     - **Reservation hierarchy** - *Default*
     - Select **OK**
 
@@ -99,18 +122,19 @@ Every location in the warehouse needs to have a location profile associated with
 
 ### Location directives
 
-1. Go to **Warehouse management > Setup > Location directives**. 1. In the left column heading, change **Work order type** to *Purchase orders*.
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the left column heading, change **Work order type** to *Purchase orders*.
 1. Then select the Location Directive **Name** - *24 PO Direct*.
-1. On the **Location Directive Actions** FastTab Toolbar, select **New** to add a new line. Enter the following:
-    - **Sequence number** – *1*
-        - It should be in front of the already existing line, use the **Move up** - **Move down** buttons in the Toolbar, or edit the existing line's **Sequence number** to *2* to make the change.
+1. On the **Location Directive Actions** FastTab toolbar, select **New** to add a new line. Enter the following:
+    - **Sequence number** – *1*  
+        It should be in front of the already existing line, use the **Move up** and **Move down** buttons in the toolbar, or edit the existing line's **Sequence number** to *2* to make the change.
     - **Name** – *Put to BULK Location profile*
     - **Fixed location usage** – *Fixed and non-fixed locations*
     - **Allow negative inventory** – *No* (blank)
     - **Batch enabled** – *No* (blank)
     - **Strategy** – *None*
 
-1. On the line you created, select **Edit query** in the Toolbar.
+1. On the line you created, select **Edit query** in the toolbar.
 1. On the query form, **Range** tab, select **Add** to add a new line on Range. enter the following:
     - **Table** – *Locations*
     - **Derived table** – *Locations*
@@ -125,7 +149,7 @@ Every location in the warehouse needs to have a location profile associated with
 
 ### Mobile Device Menu Items
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select **New** in the Action Pane, and create a new menu item to be used for sorting.
 1. In the Header, enter the following:
     - **Menu item name** – *PO line receiving*
@@ -141,9 +165,9 @@ Every location in the warehouse needs to have a location profile associated with
 
 ### Mobile device menu
 
-1. Go to **Warehouse management >  Setup > Mobile device > Mobile device menu**.
+1. Go to **Warehouse management \>  Setup \> Mobile device \> Mobile device menu**.
 1. Select **Inbound** from the list of menus.
-1. Select **Edit** in the Toolbar.
+1. Select **Edit** on the Action Pane.
 1. In the **Available Menus And Menu Items** scroll until you find the menu item **PO line receiving**.
 1. Select **PO line receiving** in the list then select the arrow button **(->)** to move the menu item into the **Menu Structure** list. and add the newly created menu item to the desired menu.
 1. Select **Save**.
@@ -158,9 +182,9 @@ Before starting, ensure there are empty locations in Warehouse 24 with **Locatio
 
 Create a purchase order with three lines: two lines with the same product number, but different **Size** variants, and a third line with a different product that has no variants.
 
-1. Go to **Accounts payable > Purchase orders > All purchase orders**.
+1. Go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Select **New** in the Action Pane.
-1. In the **Create purchase order** FlyOut enter the following:
+1. In the **Create purchase order** pane enter the following:
     - **Vendor account** - *1001*
     - **Warehouse** - *24*
 
@@ -170,27 +194,27 @@ Create a purchase order with three lines: two lines with the same product number
     - **Size** *L*
     - **Quantity** - *2*
 
-1. Select **Add line** in the Toolbar to add another line with the following:
+1. Select **Add line** in the toolbar to add another line with the following:
     - **Item number** - *B0001*
     - **Size** *XL*
     - **Quantity** - *2*
 
-1. Select **Add line** in the Toolbar to add another line with the following:
+1. Select **Add line** in the toolbar to add another line with the following:
     - **Item number** - *A0001*
     - **Quantity** - *1*
 
 1.Select **Save**.
 
-### Mobile App PO Line Receiving
+### Warehouse app PO Line Receiving
 
-1. Log in to the Mobile app with a user enabled for **Warehouse** - *24*.
+1. Log in to the warehouse app with a user enabled for **Warehouse** - *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select **PONUM** to enter the purchase order number.
 1. Enter the *Purchase order number* and confirm your entry by selecting the button at the bottom of the screen.
 1. Next you will enter the line number from the purchase order to be received.
 1. Select **LINENUM** and then select **1** from the number pad and confirm.
-1. Next enter the quantity to be received. Select the **+** button two times to increase **Qty** the received quantity to be *2*.
+1. Next enter the quantity to be received. Select the **+** button two times to increase **Qty** to *2*.
     - Register your entry by selecting the button at the bottom of the screen.
     - Next confirm your entry by selecting the button again.
 
