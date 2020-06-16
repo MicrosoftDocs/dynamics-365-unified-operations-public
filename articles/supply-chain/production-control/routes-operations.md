@@ -170,12 +170,13 @@ When Supply Chain Management searches for the most relevant operation relation f
 Therefore, an operation should be used only one time for each route. If the operation occurs multiple times in the same route, all occurrences of that operation will have the same operation relation, and you won't be able to have different properties (for example, run times) for each occurrence.
 
 ## Route versions
+
 Route versions are used to accommodate variations in the production of products or provide greater control over the production process. They define which route should be used when a specific released product or released product variant is produced. You can use the following constraints to define which route is used for a released product:
 
--   Product dimensions (size, color, style, or configuration)
--   Production quantity
--   Production site
--   Production date
+- Product dimensions (size, color, style, or configuration)
+- Production quantity
+- Production site
+- Production date
 
 When you're producing the product at a specific site, in a specific quantity, or in a specific period, you can designate a specific route version as the default route version. However, note that only one active route is allowed for a given released product and a given set of constraints.  
 
@@ -198,6 +199,7 @@ If you must keep a log that records who approves and activates each route versio
 The product change case for the approval and activation of new or changed routes and route versions gives you an easy way to see an overview of the route version constraints. You can also approve and activate all routes that are related to a specific change in one operation and document the results in the product change case.
 
 ## Maintaining routes
+
 Depending on your business requirements, you might be able to reduce the effort that is required in order to maintain your process definitions.
 
 ### Making routes independent of resources
