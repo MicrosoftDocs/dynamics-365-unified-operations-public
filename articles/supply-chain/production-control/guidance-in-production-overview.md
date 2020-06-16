@@ -44,7 +44,7 @@ You can provide guidance in different ways. One very efficient system that ships
 
 With [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for guidance.
 
-The Dynamics 365 SCM SDK can be used to implement other means of guidance. Please find information on [the data model for guidance here](guidance-datamodel.md).    
+The Dynamics 365 SCM SDK can be used to implement other means of guidance. Please find information on [the data model for guidance here](guidance-datamodel.md).
 
 ### Assembly
 
@@ -86,7 +86,7 @@ As a production manager you can provide dedicated guidance for hazardous materia
 
 ## Get started with guidance
 
-To enable guidance in production processes you Dynamics 365 SCM provides an out of the box integration with [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/). A license and installed application instance of Guides is required in order to build, maintain and assign respective mixed reality guidance to production assets and work.
+To enable guidance in production processes you Dynamics 365 SCM provides an out of the box integration with [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/). A license and installed application instance of Guides is required in order to build, maintain and assign respective mixed reality guidance to production assets and work.
  
 This integration is switched off by default and the admin of the F&O organization must enable it once in the License Configuration.  
 
@@ -94,17 +94,17 @@ This integration is switched off by default and the admin of the F&O organizatio
 
 Before you can attach guides to Asset management work orders, you must complete these prerequisites:
 
-- [Set up Dynamics 365 Supply Chain Management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/) version 10.0.13 or later.
+- [Set up Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/) version 10.0.13 or later.
 
-- [Turn on dual-write](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management apps.
+- [Turn on dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management apps.
 
-- [Turn on flight](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#features-flighted-in-data-management-and-enabling-flighted-features) for the MRGuidesFeature feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
+- [Turn on flight](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#features-flighted-in-data-management-and-enabling-flighted-features) for the MRGuidesFeature feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
 
-- [Turn on the following configuration keys](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the License configuration page:
+- [Turn on the following configuration keys](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the License configuration page:
 
-    - Mixed reality > Mixed reality guide
-    - Production management > Production guidance
-    - [Set up Dynamics 365 Guides](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 or later.
+  - Mixed reality > Mixed reality guide
+  - Production management > Production guidance
+  - [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
 
 ### Use Dynamics 365 Guides
 
