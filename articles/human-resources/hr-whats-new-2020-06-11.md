@@ -96,3 +96,7 @@ A DMF entity is now available for accrual suspensions.
 ## New platform capabilities 
 
 You'll be able to make fields mandatory by using personalization. This feature will require you to enable **Saved views**.
+
+## Configure the name of Employee self-service
+
+A new option will be available in HR parameters to update the name of the Employee self service workspace to Self service. 
