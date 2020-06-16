@@ -18,4 +18,4 @@ Go to **Warehouse management** \> **Periodic tasks** \> **Process outbound shipm
 6.	Select **OK** to return to the main dialog.
 7.	Select **OK** in the main dialog to get the batch job added to the batch queue.
 
-More information can be found here: *[Batch processing and batch servers](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md)* 
+For more information, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md)
