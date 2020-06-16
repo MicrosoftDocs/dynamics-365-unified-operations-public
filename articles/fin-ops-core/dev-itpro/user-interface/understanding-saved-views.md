@@ -87,22 +87,39 @@ While most forms will work well with saved views, there are some areas that may 
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.
 
 ### Open issues
-- Filtering done via custom filters, advanced filters, or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  
+- Filtering done via custom filters the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  
 
 ### Fixed as part of 10.0.13
+-  [Bug 446299] View import flow doesn't surface grid/detail views for Details pages
+-  [Bug 446306] Users are able to export the Standard view
+-  [Bug 453822] Published views recipients are not being updated after republishing from a different legal entity
+-  [Bug 452907] Views should remember the last Quick Filter column used without having to explicitly save it to a view. 
+-  [Bug 438232] Views published to a parent security role are not applied to child roles
 
 ### Fixed as part of 10.0.12
+-  [Bug 441029] Unapplied queries saved in personalization from pre-views formats 
+-  [Bug 441053] Exception thrown when user has multiple pre-views personalizations for the same user and form
+-  [Bug 444015] Default view personalizations not applied for users without personalization rights
+-  [Bug 444459] Import of workspace personalizations for a user sometimes fails
+-  [Bug 444833] Error when trying to open the view selector when user has a large number of views
+-  [Bug 450171] Old custom workspaces aren't shown in the Personalization form after toggling saved views on and off
+
+### Quality update for 10.0.11 / Platform update 35
+-  [KB 4562147] Importing personalizations to a large number of users is timing out 
 
 ### Fixed as part of 10.0.11
-- [Bug 419245] Personalization form missing from security role
-- [Bug 420619] You can pin a tile with a query that doesn't correspond to the current view's saved query
-- []
+-  [Bug 419245] Personalization form missing from security role 
+-  [Bug 420619] Views are not marked to have unsaved changes after using the Advanced filter or sort dialog
+-  [Bug 429335] Crash when attempting to import particular old personalization formats
+-  [Bug 423642] Views can be published with no name
+-  [KB 4564908] Unsaved filters and personalizations reflected in some views 
 
 ### Quality update for 10.0.10 / Platform update 34
-- [Bug 452624] Personalization form doesn't load / Loading a published view for the first time takes a long time
+-  [KB 4560406] Importing personalizations to a large number of users is timing out 
+-  [Bug 452624] Personalization form doesn't load / Loading a published view for the first time takes a long time
 
 ### Fixed as part of 10.0.10 / Platform update 34
--  [Bug 412479] Views can be published with no name
+-  [Bug 412479] Views can be published to a blank legal entity
 -  [Bug 419005] View queries fail to apply due to conflicting "open" ranges on the query
 
 
