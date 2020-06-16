@@ -37,15 +37,17 @@ The Customer portal is a [Power Apps portals](https://docs.microsoft.com/powerap
 
 The Customer portal template has all the customization capabilities that the portals feature of Power Apps offers. The template can easily be modified to represent the company's brand, add increased functionality, and change the user experience. All the functionality that the template offers out of the box can be modified as desired.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ylwW]
-
-The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
-
 > [!IMPORTANT]
 > By itself, the template isn't expected to be completely functional. It just serves as an enabler for customers who want to create an externally facing website so that enterprise customers can engage with data from Supply Chain Management.
 
 > [!NOTE]
 > The Customer portal documentation is directed at admins, customizers, and system integrators who will set up the Customer portal for a Supply Chain Management installation. It uses the terms _customer_ and _user_ to describe people who are customers of the organization that is running Supply Chain Management, and who will use the final portal itself.
+
+## Video
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ylwW]
+
+The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Who should use it?
 
