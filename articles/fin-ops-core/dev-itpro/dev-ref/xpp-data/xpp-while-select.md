@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---
 
-## While select statement
+# While select statement
 
 [!include [banner](../../includes/banner.md)]
 

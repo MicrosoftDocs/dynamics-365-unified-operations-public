@@ -37,8 +37,8 @@ You can use the following statements to improve performance by reducing communic
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
 - [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [RecordSortedList](../r-classes#class-recordsortedlist)
-- [RecordInsertList](../r-classes#class-recordinsertlist)
+- [RecordSortedList](../r-classes.md#class-recordsortedlist)
+- [RecordInsertList](../r-classes.md#class-recordinsertlist)
 
 There are situations where these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 

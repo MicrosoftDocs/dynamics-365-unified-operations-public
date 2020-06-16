@@ -41,8 +41,6 @@ The **select** statement fetches or manipulates data from the database.
 + The results of a **select** statement are returned in a table buffer variable.
 + If you use a field list in the **select** statement, only those fields are available in the table variable.
 
-## Examples
-
 The following example fetches all the columns in the first row of the **CustomerTable** table and prints the **AccountNum** column of the row.
 
 ```xpp
@@ -72,4 +70,4 @@ next custTable;
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-For more examples, see [Select statement](xpp-select-statment.md).
+For more examples, see [Select statement](xpp-select-statement.md).

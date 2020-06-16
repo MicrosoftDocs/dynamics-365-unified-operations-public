@@ -38,8 +38,8 @@ You can use SQL statements, either interactively or within source code, to inser
 + **[insert method](#insert-method)**: This method inserts one row at a time.
 + **[doInsert method](#do-insert-method)**: The **Table.doInsert** method inserts one row at a time.
 + **[insert\_recordset statement](#insert-recordset-statement)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.
-+ **[RecordInsertList](#record-insert-list-method)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
-+ **[RecordSortedList.insertDatabase](#insert-database)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
++ **[RecordInsertList](../r-classes#class-recordinsertlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
++ **[RecordSortedList.insertDatabase](../r-classes#class-recordsortedlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
 **RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
