@@ -4,7 +4,7 @@ title: Set up deferrals (Russia)
 description: This topic explains how to set up deferrals.
 author: anasyash
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -381,120 +381,24 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
 
     ![Counter setup page](media/rus-set-up-deferral-06.png)
     
-    If you want to create a sequence of calculation to generate deferrals master record, for the last line, in the **Output** field, specify **Data output**. The value of this line is the amount of the generated deferral.
+    If you want to create a sequence of calculations to generate a deferrals master record, on the last line, in the **Output** field, specify **Data output**. The value of this line is the amount of the generated deferral.
     
-    In the following table you can see the detailed instructions how to fill in the **From**, **To**, **Period types** and **Index** fields depending on the value in the **Line type** field.
+The following table provides detailed instructions about how to fill in the **From**, **To**, **Period types** and **Index** fields depending on the value in the **Line type** field.
     
-    <table width="654">
-    <thead>
-    <tr>
-    <td width="106">
-    <p><strong>&nbsp;Line type</strong></p>
-    </td>
-    <td width="548">
-    <p><strong>From</strong> and <strong>To</strong></p>
-    </td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td width="106">
-    <p>Register</p>
-    </td>
-    <td width="548">
-    <p>Select a register in the <strong>From</strong> field or a range of registers in the <strong>From</strong> and <strong>To</strong> fields.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Line</p>
-    </td>
-    <td width="548">
-    <p>Select a line number in the <strong>From</strong> field.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Rate</p>
-    </td>
-    <td width="548">
-    <p>Select a rate code in the <strong>From</strong> field.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Constant</p>
-    </td>
-    <td width="548">
-    <p>Enter a constant in the <strong>From</strong> field.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Price</p>
-    </td>
-    <td width="548">
-    <p>The price from the source document that is generate the transaction will be selected. The <strong>From</strong> and <strong>To</strong> fields are not available for editing.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Quantity</p>
-    </td>
-    <td width="548">
-    <p>The quantity from the source document that is generate the transaction will be selected. The <strong>From</strong> and <strong>To</strong> fields are not available for editing.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Expense</p>
-    </td>
-    <td width="548">
-    <p>Select a range of expense or income codes in the <strong>From</strong> and <strong>To</strong> fields to calculate the amount of expenses and income The range can consist of a single code.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Debit activity</p>
-    </td>
-    <td width="548">
-    <p>Select a range of accounts in the <strong>From</strong> and <strong>To</strong> fields on which the amount of debit activity will be calculated. The amount will be calculated for the period defined in the <strong>Period types</strong> and <strong>Index</strong> fields. The range can consist of a single account.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Credit activity</p>
-    </td>
-    <td width="548">
-    <p>Select a range of accounts in the <strong>From</strong> and <strong>To</strong> fields on which the amount of credit activity will be calculated. The amount will be calculated for the period defined in the <strong>Period types</strong> and <strong>Index</strong> fields. The range can consist of a single account.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Debit balance</p>
-    </td>
-    <td width="548">
-    <p>Select a range of accounts in the <strong>From</strong> and <strong>To</strong> fields on which the amount of debit balance will be calculated. The amount will be calculated for the period defined in the <strong>Period types</strong> and <strong>Index</strong> fields. The range can consist of a single account.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Credit balance</p>
-    </td>
-    <td width="548">
-    <p>Select a range of accounts in the <strong>From</strong> and <strong>To</strong> fields on which the amount of credit balance will be calculated. The amount will be calculated for the period defined in the <strong>Period types</strong> and <strong>Index</strong> fields. The range can consist of a single account.</p>
-    </td>
-    </tr>
-    <tr>
-    <td width="106">
-    <p>Deferral write-off</p>
-    </td>
-    <td width="548">
-    <p>Select a deferrals group in the <strong>From</strong> field to calculate the planned write off of deferrals in the current period.</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+| Line type          | From and To                                                                                                                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Register           | Select a register in the **From **field or a range of registers in the**   From** and **To** fields.                                                                                                                                                                         |
+| Line type          | Select a line number in the **From** field.                                                                                                                                                                                                                                  |
+| Rates              | Select a rate code in the **From** field.                                                                                                                                                                                                                                    |
+| Constant           | Enter a constant in the **From** field.                                                                                                                                                                                                                                      |
+| Price              | The price from the source document that is generated in the transaction   will be selected. The **From** and **To** fields are not avialable to edit.                                                                                                                        |
+| Quantity           | The transaction will be selected from the quantity in the generated   source document.                                                                                                                                                                                       |
+| Expense            | Select a range of expense or income codes in the **From** and **To**   fields to calculate the amount of expenses and income. The range can consist   of a single code.                                                                                                      |
+| Debit activity     | Select a range of accounts in the **From** and **To** fields on which the   amount of debit activity will be calculated. The amount will be calculated   for the period defined in the **Period** types and **Index** fields. The   range can consist of a single account.   |
+| Credit activity    | Select a range of accounts in the **From** and **To** fields on which the   amount of credit activity will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index ** fields. The   range can consist of a single account. |
+| Debit balance      | Select a range of accounts in the **From** and **To** fields on which the   amount of debit balance will be calculated. The amount will be calculated for   the period defined in the **Period types**    and **Index** fields. The range can consist of a single account.   |
+| Credit balance     | Select a range of accounts in the **From** and **To** fields on which the   amount of credit balance will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The   range can consist of a single account.   |
+| Deferral write-off | Select a deferrals group in the **From** field to calculate the planned   write-off of deferrals in the current period.                                                                                                                                                      |
 
 5. To copy the counter settings from one calculation sequence to another, on the Action Pane, select **Copy counter** to open the **Copy aisle** dialog box.
 
