@@ -120,6 +120,8 @@ You don't have to change the extensions code that was written in previous versio
 
 If you have existing pipelines in Azure Pipelines not based on build machine agent that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
 
+Please follow the steps mentioned in [this doc to setup a build pipeline in Azure DevOps without using build VM and build agent from the build machine.](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline])
+
 ## Azure DevOps pipeline using build machine agent:
 
 The same build machine used for MSBuild  with the Azure DevOps pipeline can be used with 10.0.11 SDK. Perform the following steps on the build machine for the 10.0.11 SDK:
