@@ -41,11 +41,12 @@ You can use a **select** statement as an expression. This type of **select** sta
 + In a **where** clause, the table name must be used as a qualifier of the field.
 + You can only mention one table in an **expression select statement**, therefore subselects are not supported as a workaround to the unsupported **join** keyword.
 + The only column that can be populated with data is the column that is named before the **from** clause in the **select** clause.
-+ After the closing parenthesis, the name of that column, **AccountNum**, is used to reference the data value.
-+ This example returns a maximum of one row, because it uses the **firstOnly** keyword. However, if the **firstOnly** is omitted, the result is the same.
++ After the closing parenthesis, the name of a column is used to reference the data value.
+
+The following expression returns the **AccountNum** column from the first row (if a rows exists) in the **CustTable** table.
 
 ```xpp
-str accountNum = (select firstonly AccountNum from CustTable order by AccountNum desc).AccountNum;
+str accountNum = (select AccountNum from CustTable order by AccountNum desc).AccountNum;
 info('Max AccountNum: ' + accountNum);
 ```
 

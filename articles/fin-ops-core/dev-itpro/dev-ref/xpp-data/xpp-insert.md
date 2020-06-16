@@ -33,13 +33,15 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database. 
+You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database.
 
-+ **[insert method](#insert-method)**: Used together with a `select for update` statement, this method inserts one row at a time.
-+ **[doInsert method](#do-insert-method)**: The **Table.do_insert** method inserts one row at a time.
-+ **[insert_recordset](#insert-recordset-method)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.      
-+ **[RecordInsertList](#record-insert-list-method)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data. 
++ **[insert method](#insert-method)**: This method inserts one row at a time.
++ **[doInsert method](#do-insert-method)**: The **Table.doInsert** method inserts one row at a time.
++ **[insert\_recordset statement](#insert-recordset-statement)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.
++ **[RecordInsertList](#record-insert-list-method)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
 + **[RecordSortedList.insertDatabase](#insert-database)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
+
+**RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations.
 
 ## <a id="insert-method"></a>insert method
 
@@ -53,12 +55,6 @@ Here is how the **insert** method works:
 + Only the specified columns of the rows that have been selected by the query are inserted into the named table.
 + The columns of the table that is copied from and the columns of the table that is copied to must be type-compatible.
 + If the columns of both tables match in type and order, column list can be omitted from the **insert** clause.
-
-> [!WARNING]
-> Where is this other table that is copied from?
-
-> [!WARNING]
-> Only the specified columns are inserted, or unspecified columns are set to the default value? or blank (as specified in next section)?
 
 The following example inserts a new record into the **CustGroup** table. The **CustGroup** column of the new record is set to **41**. Other fields in the record will be blank.
 
@@ -84,17 +80,11 @@ ttsBegin;
 ttsCommit;
 ```
 
-## Performance considerations
+## <a id="insert-recordset-statement"></a>insert\_recordset statement
 
-The **RecordSortedList**, **RecordInsertList** and **insert\_recordset** methods let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations.
+The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert. However, array inserts are more flexible if you want to handle the data before you insert it. Although, **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time, it can fall back to record-by-record operations in many situations.
 
-## insert\_recordset
-
-The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert. However, array inserts are more flexible if you want to handle the data before you insert it. **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time. However, it can fall back to record-by-record operations in many situations.
-
-### insert\_recordset syntax
-
-*ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
+In the following syntax for the **insert\_recordset** statement, **\[\]** indicates optional elements of the statement.
 
 **insert\_recordset** *DestinationTable* **(** *ListOfFields* **)**
 
@@ -102,19 +92,24 @@ The **insert\_recordset** statement copies data directly from one or more source
 
 **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
-### Example: Inserting data from another table
+- *ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
+- *WhereClause* and *JoinedWhereClause** are described in the *WhereClause* in the [**select** statement](xpp-select-statement.md).
 
-In this example, the **myNum** and **mySum** records are retrieved from the anotherTable table and inserted into the myTable table. The records are grouped according to **myNum**, and only **myNum** records that have a value that is less than or equal to **100** are included in the insertion.
+## insert\_recordset: insert data from another table
 
-```X++
-insert_recordset myTable (myNum, mySum)
-    select myNum, sum(myValue)
-        from anotherTable
-        group by myNum
-        where myNum <= 100;
+In this example, the **Value** column in the **NameValuePair** table is summed for each **Name** value. The results of the aggregation are stored in the **ValueSumByName** table.
+
+```xpp
+ValueSumByName valueSumName;
+NameValuePair nameValuePair;
+
+insert_recordset valueSumName (Name, ValueSum)
+    select Name, sum(Value)
+    from nameValuePair
+    group by Name;
 ```
 
-### Example: Inserting data from variables
+## insert\_recordset: insert data from variables
 
 The following example shows that the **insert\_recordset** statement can insert data that is provided in variables. In this example, the **firstonly** keyword is used so that only one row is inserted. Literals, such as **128** or **"this literal string"**, can't be used as a source of data that is inserted.
 
@@ -143,7 +138,7 @@ a , apple
 }
 ```
 
-### Example: Inserting data by using a join
+## insert\_recordset: insert data by using a join
 
 The following example shows a join of three tables on an **insert\_recordset** statement that has a subselect. It also shows a **while** **select** statement that has a similar join. A variable is used to supply the inserted value for one column. The **str** variable must be declared, and must have a length that is less than or equal to the maximum length of the corresponding database field. In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and the field's data comes from the local variable **sDescriptionVariable**. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
 

@@ -49,7 +49,7 @@ You can use SQL statements, either interactively or within source code, to retri
 
 - [Delete data](xpp-delete.md): Remove existing records from a table.
 
-    - [delete](xpp-delete.md#delete-statement) statement: Deletes one record at a time.
+    - [delete](xpp-delete.md#delete-method) and [doDelete](xpp-delete.md#do-delete-method) methods: Delete one record at a time.
     - [delete\_recordset](xpp-delete.md#delete-recordset-statement) statement: Deletes multiple records at the same time.
 
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.

@@ -7,22 +7,22 @@ author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
 ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
@@ -33,10 +33,18 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the delete method and doDelete method in the X++ language.
+You can use SQL statements, either interactively or within source code, to delete one or more rows from tables stored in the database.
+
++ **[delete method](#insert-method)**: This method deletes one row at a time.
++ **[doDelete method](#do-insert-method)**: The **Table.doDelete** method deletes one row at a time.
++ **[delete\_from statement](#insert-recordset-statement)**: Deletes multiple rows at the same time.
 
 ## delete method
-The **delete** table method deletes the current record from the database. To use this method, use a **where** clause to specify the rows to delete. One record at a time is then removed from the specified table. The **delete\_from** operator is a record set–based operator that removes multiple records at the same time. The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method. In the following example, all records in the MyTable table that satisfy the criterion in the **where** clause (that is, all records where the value of the **AccountNum** field is equal to **1000**) are deleted from the database. One record is deleted at a time.
+The **delete** method deletes the current record from the database. To use this method, use a **where** clause to specify the rows to delete. One record at a time is then removed from the specified table.
+
+The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
+
+In the following example, all records in the MyTable table that satisfy the criterion in the **where** clause (that is, all records where the value of the **AccountNum** field is equal to **1000**) are deleted from the database. One record is deleted at a time.
 
 ```xpp
 ttsBegin;
@@ -94,7 +102,7 @@ LedgerJournalTable ledgerJournalTable;
 ttsBegin;
     while select forUpdate ledgerJournalTrans
         index hint NumVoucherIdx
-        where ledgerJournalTrans.journalNum == _journalNum 
+        where ledgerJournalTrans.journalNum == _journalNum
             && ledgerJournalTrans.voucher == _voucher
     {
         ledgerJournalTrans.doDelete();
@@ -107,3 +115,8 @@ ttsBegin;
     }
 ttsCommit;
 ```
+
+## delete\_from statement
+
+
+The **delete\_from** operator is a record set–based operator that removes multiple records at the same time.
