@@ -50,7 +50,7 @@ With this change, the **HcmPositionWorkerAssignmentV2Entity** is included in the
 
 ## Database logging
 
-The database logging feature allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging).
+The database logging feature allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging.md).
 
 ## Human Resources application in Teams
 
