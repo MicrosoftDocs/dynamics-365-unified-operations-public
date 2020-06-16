@@ -5,7 +5,7 @@
 This topic describes the ability to set up batch jobs that automatically confirm outbound shipments for ready-to-ship loads. For load lines related to transfer orders, the system will automatically run a process that updates the transfer order shipments. However, for sales orders, an operator still must manually run a sales packing slip update from the load to update the outbound cost.
 
 ## Enable the Confirm outbound shipments from batch jobs feature
-Before you can use this feature, it must be enabled on your system. Administrators can use the feature management settings to check the feature status and enable it if needed. You must enable the feature with **Feature name** *Flexible warehouse-level dimension reservation*.
+Before you can use this feature, it must be enabled on your system. Administrators can use the feature management settings to check the feature status and enable it if needed. You must enable the feature with **Feature name** *Confirm outbound shipments from batch jobs*.
 
 ## Process outbound shipments
 In this section it will be explained how to setup a scheduled batch job going to run the outbound shipment confirmation for loads ready to ship
