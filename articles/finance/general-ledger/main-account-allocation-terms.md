@@ -62,12 +62,12 @@ On the **Destination ledger account** FastTab, the main account will be the same
 7. Select **Edit** to modify the default record, or select **New** to add a record.
 8. In the **Percent** field, enter the percentage of voucher transactions that you want to allocate.
 9. On the **Source financial dimension** FastTab, in the **Selection criteria** for each financial dimension, select an option.
-  - If you select **Specific**, then select the financial dimension value in the drop-down box on the right.
-  - If you select **Unspecific**, no additional information is required for the financial dimension.
+    - If you select **Specific**, then select the financial dimension value in the drop-down box on the right.
+    - If you select **Unspecific**, no additional information is required for the financial dimension.
 10. On the **Destination ledger** account FastTab in the **To account** field, select the main account where you want to allocate the percentage of the voucher transaction.
 11. In **Keep source financial dimensions** for each financial dimension, select an option.
-  - If you select **No**, then select the financial dimension value in the drop-down box on the right where you want the voucher transaction to be allocated to.
-  - If you select **Yes**, then no additional information is required. The system will keep the value on the original voucher when posting the allocation.
+    - If you select **No**, then select the financial dimension value in the drop-down box on the right where you want the voucher transaction to be allocated to.
+    - If you select **Yes**, then no additional information is required. The system will keep the value on the original voucher when posting the allocation.
 12. Repeat steps 7-11 for each additional allocation. The sum of all allocations is indicated in the **Total percent** field. This amount cannot exceed 100.
 13. Close all of the pages.
 
