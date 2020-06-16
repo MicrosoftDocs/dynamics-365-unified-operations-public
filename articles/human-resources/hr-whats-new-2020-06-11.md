@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources (June 11, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/11/2020
+ms.date: 6/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -99,4 +99,4 @@ You'll be able to make fields mandatory by using personalization. This feature w
 
 ## Configure the name of Employee self-service
 
-A new option will be available in HR parameters to update the name of the Employee self service workspace to Self service. 
+A new option will be available in Human Resources parameters to update the name of the Employee self service workspace to Self service. 
