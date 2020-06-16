@@ -49,9 +49,9 @@ Every location in the warehouse needs to have a location profile associated with
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. Select **BULK** from the Location profiles list.
 1. Select **Edit** on the Action Pane.
-1. In the **General** FastTab, set **Enable location product dimension specific mixing** to *Yes*. Note that you can only enable this when **Allow mixed items** is set to *No*.
+1. In the **General** FastTab, set **Enable location product dimension specific mixing** to *Yes*. You can only enable this when **Allow mixed items** is set to *No*.
 
-1. Expand the **Allowed product dimension mixing** FastTab and set **Size** to *Yes*. In this scenario we are only enabling mixing of products with different **Size** dimensions, though other options are also available.
+1. Expand the **Allowed product dimension mixing** FastTab and set **Size** to *Yes*. In this scenario, we are only enabling mixing of products with different **Size** dimensions, though other options are also available.
 
 1. Select **Save**.
 
@@ -75,47 +75,48 @@ Every location in the warehouse needs to have a location profile associated with
 1. To view the predefined variants, in the Action Pane select **Product variants**.
 1. The **Product variants** form opens with list of variants from the **Size group** configuration.
 
-### Release to Company USMF
+### Release to company USMF
 
-1. In the Action Pane select **Release products**.
+1. In the Action Pane, select **Release products**.
 1. On the **Select products to release** form confirm that **Product number** - *B0001* is in the list and select **Next**.
 1. Select **Next** to confirm the product variants to release.
 1. On the **Select companies to release to** form, select *USMF*.
 1. Select **Next** to confirm the selection.
-1. On the **Confirm selection** form select **Finish** to complete the release.
+1. On the **Confirm selection** form, select **Finish** to complete the release.
 1. A message saying **Operation completed** is generated.
 
-### Update Released Product in Company USMF
+### Update released product in company USMF
 
-1. Ensure your are logged in to Company **USMF**.
+1. Make sure you're logged in to company **USMF**.
 1. Go to **Product information management \> Products \> Released products** to complete the released product creation.
 1. On the **Released product details** list page, find and select **Item number** - *B0001* to open **Released product details**.
 1. Select **Edit** in the Action Pane.
-1. In the **General** FastTab, confirm or enter the following:
+1. In the **General** FastTab, confirm or enter the following setting:
     - **Item model group** – *FIFO*
 
 1. Select the **Product** tab in the Action Pane.
-1. In the **Set up** group select **Dimension groups** and enter the following:
+1. In the **Set up** group select **Dimension groups** and make the following settings:
     - **Storage dimension group** - *Ware*
     - **Tracking dimension group** - *None*
 
 1. Select **OK**
 
-1. Select **Reservation hierarchy** in the **Set up** group and enter the following:
+1. Select **Reservation hierarchy** in the **Set up** group and make the following setting:
     - **Reservation hierarchy** - *Default*
-    - Select **OK**
+
+1. Select **OK**
 
 1. Note that in the **General** FastTab **Administration** group, your selections have been updated.
-1. In the **Purchase** FastTab enter the following:
+1. On the **Purchase** FastTab, enter the following value:
     - **Price** - *10*
 
-1. In the **Manage costs** FastTab enter the following:
+1. On the **Manage costs** FastTab, enter the following value:
     - **Item group** – *Audio*
 
-1. In the **Purchase** FastTab enter the following:
+1. On the **Purchase** FastTab, enter the following value:
     - **Price** - *10*
 
-1. In the **Warehouse** FastTab enter the following:
+1. On the **Warehouse** FastTab, enter the following value:
     - **Unit sequence group ID** – *ea*
 
 1. Select **Save**.
@@ -125,7 +126,7 @@ Every location in the warehouse needs to have a location profile associated with
 1. Go to **Warehouse management \> Setup \> Location directives**.
 1. In the left column heading, change **Work order type** to *Purchase orders*.
 1. Then select the Location Directive **Name** - *24 PO Direct*.
-1. On the **Location Directive Actions** FastTab toolbar, select **New** to add a new line. Enter the following:
+1. On the **Location Directive Actions** FastTab toolbar, select **New** to add a new line. Enter the following values:
     - **Sequence number** – *1*  
         It should be in front of the already existing line, use the **Move up** and **Move down** buttons in the toolbar, or edit the existing line's **Sequence number** to *2* to make the change.
     - **Name** – *Put to BULK Location profile*
@@ -135,7 +136,7 @@ Every location in the warehouse needs to have a location profile associated with
     - **Strategy** – *None*
 
 1. On the line you created, select **Edit query** in the toolbar.
-1. On the query form, **Range** tab, select **Add** to add a new line on Range. enter the following:
+1. On the query form, **Range** tab, select **Add** to add a new line on **Range** and enter the following values:
     - **Table** – *Locations*
     - **Derived table** – *Locations*
     - **Field** – *Location profile ID*
@@ -169,7 +170,7 @@ Every location in the warehouse needs to have a location profile associated with
 1. Select **Inbound** from the list of menus.
 1. Select **Edit** on the Action Pane.
 1. In the **Available Menus And Menu Items** scroll until you find the menu item **PO line receiving**.
-1. Select **PO line receiving** in the list then select the arrow button **(->)** to move the menu item into the **Menu Structure** list. and add the newly created menu item to the desired menu.
+1. Select **PO line receiving** in the list then select the arrow button **(->)** to move the menu item into the **Menu Structure** list and add the newly created menu item to the desired menu.
 1. Select **Save**.
 
 ## Scenario
@@ -207,7 +208,7 @@ Create a purchase order with three lines: two lines with the same product number
 
 ### Warehouse app PO Line Receiving
 
-1. Log in to the warehouse app with a user enabled for **Warehouse** - *24*.
+1. Sign in to the warehouse app with a user enabled for **Warehouse** - *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select **PONUM** to enter the purchase order number.
@@ -219,7 +220,7 @@ Create a purchase order with three lines: two lines with the same product number
     - Next confirm your entry by selecting the button again.
 
 1. View the information on the **Purchase orders: Put** screen. This is the **Work** created for the put away (Work 1).
-    - The Location where the received item will be Put Away, License plate, Item, Size and Quantity of the PO Line Receiving task just completed will be displayed.
+    - The location where the received item will be put away, license plate, item, size and quantity of the PO line receiving task just completed will be displayed.
     - Confirm the put away work.
 
 1. Repeat this for PO line 2.
