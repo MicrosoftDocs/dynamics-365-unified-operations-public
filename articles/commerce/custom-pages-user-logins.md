@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Set up custom pages for user logins
+# Set up custom pages for user sign-ins
 
 
 [!include [banner](includes/banner.md)]
