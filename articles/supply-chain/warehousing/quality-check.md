@@ -29,6 +29,10 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Quality check
 
+<!-- HHM With this functionality, you can perform rapid quality checks on the spot at the time of receiving to the inbound dock area. These spot checks are beneficial when packaging or any other easily recognizable part of the item is being inspected. It serves as a quick look to see if anything is standing out as faulty before stocking the inventory to its’ location.
+This function offers an alternative to existing quality check process with more flexibility and faster processing.
+At the time of receiving, the worker is required to perform a desired quality check and must decide whether to accept or reject each license plate scanned after they have been registered. Accepted license plates will be guided to the storage location as normal, while rejected license plates will be diverted to a quality check location for further inspection. -->
+
 Use this feature to enable warehouse workers to perform quick quality spot checks while receiving items to the inbound dock area. These spot checks are beneficial when inspecting packaging or any other easily recognizable part of the item. The feature guides workers to take a quick look to see if anything is obviously faulty before stocking the inventory to its location.
 
 This functionality offers an alternative to the existing quality check process, offering more flexibility and faster processing. <!-- can we link to documentation for that existing functionality? How can we tell this feature apart from that functionality? Should this feature be called "quality spot check" "flexible quality check" or "advanced quality check" or something like that? -->
@@ -52,7 +56,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 - **Module** - Warehouse management
 - **Feature name** - Quality check
 
-## Set up and try out this feature
+## Setup
 
 This section provides guidelines and an example of how to set up and use this feature.
 
@@ -64,45 +68,61 @@ You can also use this example as guidance for how to use this feature when worki
 
 <a name="quality-template"></a>
 
-### Set up a quality check template
+### Quality check template
 
-<!-- KFM: Briefly describe what this is and why we are doing this. -->
+During receiving 
 
 1. Go to **Warehouse management > Setup > Work > Quality check template**.
-
 1. Select **New** to add a new template to the table.
+1. Enter the following to define a new template:
+    - **Quality check template name** - *Dock check*
+        - Enter a name that identifies this policy
 
-1. Make the following settings for the new row:
+    - **Acceptance policy** - *Prompt user*
+        - Should the user be prompted to accept or reject the inventory quality while processing the work or will it be automatically rejected? Available options:
+            - *Auto reject*
+            - *Prompt user*
 
-    - **Quality check template name** - Enter a name that identifies this policy.<br>(if you're preparing USMF sample data, then enter "Dock check".)
-    - **Acceptance policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following. (If you're preparing USMF sample data, then select "Prompt user".)
-        - **Auto reject** - <!-- KFM: Briefly describe this option -->
-        - **Prompt user** - <!-- KFM: Briefly describe this option -->
-    - **Quality processing policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following. (If you're preparing USMF sample data, then select "Create quality order".)
-        - **Create work only** - <!-- KFM: Briefly describe this option -->
-        - **Create quality order** - <!-- KFM: Briefly describe this option -->
-    - **Test group** - <!-- KFM: Briefly what this setting is for. Where do these values come from? What is "Destructive testing" for? --><br>(If you're preparing USMF sample data, then select "Enclosure".)
+    - **Quality processing policy** - *Create quality order*
+        - Select the policy that should be used when rejecting the quality of the inventory. Available options:
+        - *Create work only*
+            - Only work is created to facilitate inventory movement.
+        - *Create quality order*
+            - A quality order will be created to facilitate quality tests.
+
+    - **Test group** - *Enclosure*
+        - Test group to use in the created quality order. These are setup in the Quality management module.
+        - *Destructive test* Not enabled for Enclosure.
+            - This option signifies if the sample will be destroyed as part of the tests in the test group. By using a destructive test, creating a quality order for an item will give you a system-generated inventory transaction. The new inventory transaction predicts the inventory reduction for the test quantity. Completion of the quality order through the validation step will result in the inventory reduction. The inventory transaction is identified as a quality order.
 
 <a name="work-class"></a>
 
-### Set up a work class for quality control
+### Work class - Quality Check
 
-<!-- KFM: Briefly describe what this is and why we are doing this. -->
+Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.
 
 1. Go to **Warehouse management > Setup > Work > Work classes**.
 1. Select **New** to create a new work class.
-1. Make the following settings for your new work class:
-    - **Work class ID** - Enter a name that identifies this work class.<br>(If you're preparing USMF sample data, then enter "QC Check".)
-    - **Description** - Enter a short description of what this work class is for.<br>(If you're preparing USMF sample data, then enter "QC Check".)
-    - **Work order type** - Identify the type of work order created by this work class. When setting up quality control work, always select "Quality in quality check" (also if you're preparing USMF sample data).
+1. In the header, enter the following for your new work class:
+    - **Work class ID** - *QC Check*
+        - Enter a name that identifies this work class.
 
-<!-- KFM: What about the lines here (Valid put location types). We should say whether and why we might need them. -->
+    - **Description** - *QC Check*
+        - Enter a short description of what this work class is for.
+
+    - **Work order type** - *Quality in quality check*
+        - Identify the type of work order created by this work class.
+        - When setting up quality control work, always select *Quality in quality check*.
+
+1. In the **Valid put location types** FastTab you have the option to define a **Location type**. Leave this blank.
+    - If you select a **Location type**, this sets a restriction on where items can be put after they've been picked.
+    - This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.
 
 For more information about work classes and how to create them, see [Create a work class](tasks/create-work-class.md).
 
-### Set up a work template that includes quality control
+### Work template - Quality Control
 
-<!-- KFM: Briefly describe what this is and why we are doing this. -->
+Work templates lets you define the work operations that must be performed in the warehouse. Typically, warehouse work operations consist of a pair of actions: a warehouse worker picks up on-hand inventory in one location and then puts the picked inventory down in another location. A work template for quality control defines the work operations for performing the quality checks.
 
 1. Go to **Warehouse management > Setup > Work > Work templates**.
 1. Set **Work order type** to "Purchase orders" to start working with templates of that type.
@@ -128,9 +148,9 @@ For more information about work classes and how to create them, see [Create a wo
 
 For more information about work templates, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 
-### Set up a location directive to handle quality failures
+### Location directive - Quality Failures
 
-<!-- KFM: Briefly describe what this is and why we are doing this. -->
+Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. A location directive rule must be configured to determine how to handle failed quality checks.
 
 1. Go to **Warehouse management > Setup > Location directives**.
 1. Set **Work order type** to "Purchase orders" to start working with location directives of that type.
