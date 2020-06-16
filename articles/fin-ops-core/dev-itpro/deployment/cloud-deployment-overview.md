@@ -85,21 +85,21 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 ## Remote Desktop
 
 ### Microsoft-managed environments
-Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (whitelist) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
+Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
-> Customers need to ensure that RDP endpoints are secured through explicit IP whitelist rules as mentioned above. The IP whitelist rules must adhere to the following conditions.
-> - IP whitelist rules must NOT use asterisk/zero.
+> Customers need to ensure that RDP endpoints are secured through explicit IP safe list rules as mentioned above. The IP safe list rules must adhere to the following conditions.
+> - IP safe list rules must NOT use asterisk/zero.
 > - Wide IP address ranges must NOT be used.
 > - IP address ranges must restrict to the customer's CORPNET. 
 > - If computers outside the customer's CORPNET (such as a home office) are used to connect to sandbox environments, only the specific IP addresses of the computers used to connect to the sandbox environments must be added.
 > - Azure Datacenter IP address ranges must NOT be added.
 > - Public IP addresses, such as a coffee shop location, must NOT be added.     
-> - IP whitelist rules should be removed when not in use. Periodic review of environment IP whitelist rules is recommended.
+> - IP safe list rules should be removed when not in use. Periodic review of environment IP safe list rules is recommended.
 
 > [!WARNING]
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
-> Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice.
+> Microsoft reserves the right to and will remove any IP Address safe list rules that violate the above guidelines, immediately without providing notice.
  
 ### Partner/Customer managed environments 
 By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
@@ -182,9 +182,9 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelist). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address whitelist rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
-- Your current IP address is not in the whitelist.
-- Your IP has changed from the IP address listed in the whitelist. 
-- Microsoft deleted the rule containing your IP address from the whitelist because it violated a guideline.
+Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (safe list). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address safe list rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
+- Your current IP address is not in the safe list.
+- Your IP has changed from the IP address listed in the safe list. 
+- Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
 
 To regain access to the environment, you will need to add the IP address of the computer from which you are connecting. To do this, complete the steps in the section, [Remote Desktop](#remote-desktop) earlier in this document.

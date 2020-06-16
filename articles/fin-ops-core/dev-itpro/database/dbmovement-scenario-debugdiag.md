@@ -5,7 +5,7 @@ title: Debug a copy of the production database
 description: This topic explains a debugging and diagnostics scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
 > * Refresh the user acceptance testing (UAT) environment.
-> * Add the IP address of your developer environment to an approved list ("whitelist").
+> * Add the IP address of your developer environment to an approved list ("safe list").
 > * Update your developer environment so that it connects to the UAT database.
 > * Set a breakpoint, and start to debug the data.
 
@@ -55,7 +55,7 @@ To do a refresh operation, you must have your production environment deployed, o
 
 This refresh operation overwrites the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
-## Add your IP address to a whitelist
+## Add your IP address to a safe list
 
 By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. The databases for these environments are protected by firewalls that restrict access to the Application Object Server (AOS) with which it was originally deployed.
 
@@ -75,7 +75,7 @@ EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment',
 Back in your developer environment, open SSMS, and try to connect by using the same **axdbadmin** credentials against the UAT database. Verify that you can connect before you continue with the next steps.
 
 > [!NOTE]
-> Every time that a refresh is done, the firewall whitelist is reset. You must add your DevTest environments back to this database when they are required in the future.
+> Every time that a refresh is done, the firewall safe list is reset. You must add your DevTest environments back to this database when they are required in the future.
 
 ## Update a OneBox DevTest environment to connect to the UAT database
 
