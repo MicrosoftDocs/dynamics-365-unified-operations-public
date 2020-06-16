@@ -5,7 +5,7 @@ title: Security best practices for Cloud POS in shared environments
 description: Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: pdp1207
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -48,7 +48,7 @@ Here are some of the defense-in-depth recommendations for the operating system a
 -   **Required** - Disable the browser's developer console.
 -   **Required** - Retail Cloud POS should be accessed by a low-privileged user.
 -   **Required** - Set up group policies to enable a kiosk session.
--   **Recommended** - Set up a proxy to access only whitelisted websites.
+-   **Recommended** - Set up a proxy to access only websites included in a safe list.
 
 ## Disable script execution in the address bar of the browser that runs Retail Cloud POS
 ### Internet Explorer
