@@ -5,7 +5,7 @@ title: Conversion of operations from set-based to record-by-record
 description: This topic describes how to speed up SQL operations in the X++ language.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,75 +34,24 @@ ms.search.validFrom: 2016-02-28
 
 You can use the following statements to improve performance by reducing communication between the application and the database:
 
+- [delete_from](xpp-delete.md#delete-from-statement)
+- [update_recordset](xpp-update.md#update-recordset-statement)
+- [insert_recordset](xpp-insert.md#insert-recordset-statement)
 - [RecordSortedList](../r-classes#class-recordsortedlist)
 - [RecordInsertList](../r-classes#class-recordinsertlist)
-- [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [update_recordset](xpp-update.md#update-recordset-statement)
-- [delete_from](xpp-delete.md#delete-from-statement)
 
-There are situations where these record set–based operations can be converted to slower record-by-record operations. The following information identifies these situations.
+There are situations where these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 
-## Non-SQL tables
+|    | delete\_from | update\_recordset | insert\_recordset | RecordSortedList<br>RecordInsertList | Used to override |
+|----|--------------|-------------------|-------------------|--------------------------------------|------------------|
+Non-SQL tables | Yes | Yes | Yes | Yes | Not applicable
+Delete actions | Yes | No | No | No | **skipDeleteActions**
+The database log is enabled | Yes | Yes | Yes | No | **skipDatabaseLog**
+Overridden method | Yes | Yes | Yes | Yes | **skipDataMethods**
+Alerts are set up for the table | Yes | Yes | Yes | No | **skipEvents**
+The **ValidTimeStateFieldType** property on a table isn't equal to None | Yes | Yes | Yes | Yes | Not applicable
 
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|Yes|
-|INSERT_RECORDSET|Yes|
-|ARRAY_INSERT|Yes|
-|Use this setting for overrides|Not applicable|
-
-## Delete actions
-
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|No|
-|INSERT_RECORDSET|No|
-|ARRAY_INSERT|No|
-|Use this setting for overrides|**skipDeleteActions**|
-
-## The database log is enabled
-
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|Yes|
-|INSERT_RECORDSET|Yes|
-|ARRAY_INSERT|No|
-|Use this setting for overrides|**skipDatabaseLog**|
-
-## Overridden method
-
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|Yes|
-|INSERT_RECORDSET|Yes|
-|ARRAY_INSERT|Yes|
-|Use this setting for overrides|**skipDataMethods**|
-
-## Alerts are set up for the table
-
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|Yes|
-|INSERT_RECORDSET|Yes|
-|ARRAY_INSERT|No|
-|Use this setting for overrides|**skipEvents**|
-
-## The ValidTimeStateFieldType property on a table isn't equal to None
-
-| Operation | Can be converted |
-|---|---|
-|DELETE_FROM|Yes|
-|UPDATE_RECORDSET|Yes|
-|INSERT_RECORDSET|Yes|
-|ARRAY_INSERT|Yes|
-|Use this setting for overrides|Not applicable|
-
-You can use the settings that are shown for **Use this setting for overrides** to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+You can use the settings that are shown in the **Used to override** column to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
 ```X++
 public void tutorialRecordInsertList()

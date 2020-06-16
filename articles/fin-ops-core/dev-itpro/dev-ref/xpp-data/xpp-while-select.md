@@ -5,7 +5,7 @@ title: While select statement
 description: You can use a select statement as an expression.
 author: robinarh
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

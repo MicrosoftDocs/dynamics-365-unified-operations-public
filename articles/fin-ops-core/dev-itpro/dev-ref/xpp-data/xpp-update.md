@@ -5,7 +5,7 @@ title: Update data
 description: This topic describes the update method and the doUpdate method in the X++ language.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

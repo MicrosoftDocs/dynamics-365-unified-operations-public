@@ -5,7 +5,7 @@ title: Insert data
 description: This topic describes how to insert data into tables by using X++.
 author: robinarh
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
