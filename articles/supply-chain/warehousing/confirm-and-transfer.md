@@ -54,7 +54,7 @@ You can split only loads that meet all the following criteria:
 - No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed.)
 
 > [!NOTE]
-> This functionality differs from the transport load feature, which should be used in warehouses that can never plan and create loads before picking, but that instead load the available transportation space after picking is completed.
+> This functionality differs from the transport load functionality, which should be used in warehouses that can never plan and create loads before picking, but that instead load the available transportation space after picking is completed.
 >
 > Use the *Confirm and transfer* feature in situations where loads are usually planned and created ahead of time, but where exceptions sometimes occur in which the load doesn't fit the available transport (such as a truck).
 
@@ -71,9 +71,9 @@ To use the *Confirm and transfer* feature, you must turn it on in every relevant
 
 ### Prepare your load templates
 
-1. Go to **Warehouse management \> Setup \> Loads \> Load templates**.
+1. Go to **Warehouse management \> Setup \> Load \> Load templates**.
 1. On the Action Pane, select **Edit** to put the page into edit mode.
-1. Select the **Allow load split during ship confirm** check box for each existing template where you want to turn on the feature. Alternatively, select **Add** to create a new template, and configure it as you require. Every load that you create by using that template will inherit this functionality. (If you're working with the **USMF** demo data, turn on the feature for the **20' Container** load template.)
+1. Select the **Allow load split during ship confirm** check box for each existing template where you want to turn on the feature. Alternatively, select **New** to create a new template, and configure it as you require. Every load that you create by using that template will inherit this functionality. (If you're working with the **USMF** demo data, turn on the feature for the **20' Container** load template.)
 
 ### Prepare your work templates
 
@@ -112,7 +112,7 @@ This scenario shows an example where the picking process isn't yet completed, bu
 
 ### Step 1: Create a load that has multiple load lines
 
-Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you will create. Review the **Location directive** setting (**Warehouse management \> Setup \> Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
+Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you will create. Review the setup of the location directive (**Warehouse management \> Setup \> Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
 
 To create a qualifying load, first create three sales orders by following these steps.
 
@@ -184,7 +184,9 @@ Mobile device tasks will require user input of information, such as the work ID 
 1. In the **Qty** field, enter the quantity of the item that is being picked, and then select **Enter**.
 1. In the **Target LP** field, enter a target license plate ID. Target license plates are user-defined. Be sure to enter a license plate ID that you will remember. We recommend that you use the current date plus a two-digit sequence (YYMMDD\#\#) as the format, such as *19112301*. When you've finished, select **Enter**.
 1. Review information that is shown. This information is the *Pick* information that will now become the *Put* data for the put transaction. When you've finished, select **Enter**.
-1. **Work Completed**.
+
+    - You receive a **Work Completed** message.
+
 1. Repeat steps 4 through 10 for the work ID of the second sales order.
 
 The next step is to load the two picked license plates to the truck.
@@ -194,7 +196,7 @@ The next step is to load the two picked license plates to the truck.
 1. Select **Sales Loading**.
 1. Enter the user-defined target license plate ID that you created for the first work ID in the previous procedure. Then select **Enter** to put the target license plate into the **STAGE** location.
 1. Enter the target license plate ID again, and then select **Enter** to put the license plate into the **BAYDOOR** location.
-1. Repeat these steps for the target license plate ID that you created for the second work ID.
+1. Repeat steps 4 through 5 for the target license plate ID that you created for the second work ID.
 
 The two work IDs will now be closed (loaded).
 
@@ -213,7 +215,7 @@ In this step, you will confirm the two sales orders and work that have been comp
 
     You receive informational messages that indicate that the shipment for your load has been confirmed, and that a new load has been created from the split quantity.
 
-Refresh the main screen to see the newly created load.
+Refresh the **Load planning workbench** page to see the newly created load.
 
 You can also confirm that transaction relations have been updated in the following ways:
 
