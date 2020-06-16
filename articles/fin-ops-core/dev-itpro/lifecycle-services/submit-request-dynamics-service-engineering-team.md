@@ -102,7 +102,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
-        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
+        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments).
         
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
@@ -131,6 +131,6 @@ Here are some typical examples of service requests that will be denied:
 | Production point-in-time restore | Production | Database point-in-time restore | Five hours | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
-|                                | Production | IP whitelist rules | Five hours | Two hours |
+|                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
