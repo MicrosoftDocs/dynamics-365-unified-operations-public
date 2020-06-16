@@ -5,7 +5,7 @@ title: Customer portal for Dynamics 365 Supply Chain Management overview
 description: This topic introduces the Customer portal, and explains who should use it and how it works.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,6 +36,10 @@ Modern supply chain systems rely on integration. They require that inventory, cu
 The Customer portal is a [Power Apps portals](https://docs.microsoft.com/powerapps/maker/portals/overview) template that lets companies create an externally facing business-to-business (B2B) website for scenarios that are related to sales order processing. The template uses [dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), Supply Chain Management, and Power Apps portals to enable external enterprise customers to view and create data from the company's Dynamics 365 environment.
 
 The Customer portal template has all the customization capabilities that the portals feature of Power Apps offers. The template can easily be modified to represent the company's brand, add increased functionality, and change the user experience. All the functionality that the template offers out of the box can be modified as desired.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ylwW]
+
+The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 > [!IMPORTANT]
 > By itself, the template isn't expected to be completely functional. It just serves as an enabler for customers who want to create an externally facing website so that enterprise customers can engage with data from Supply Chain Management.
