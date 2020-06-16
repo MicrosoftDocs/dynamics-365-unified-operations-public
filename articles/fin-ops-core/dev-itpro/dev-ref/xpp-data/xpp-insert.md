@@ -41,7 +41,7 @@ You can use SQL statements, either interactively or within source code, to inser
 + **[RecordInsertList](#record-insert-list-method)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
 + **[RecordSortedList.insertDatabase](#insert-database)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
-**RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations.
+**RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 ## <a id="insert-method"></a>insert method
 
@@ -111,36 +111,29 @@ insert_recordset valueSumName (Name, ValueSum)
 
 ## insert\_recordset: insert data from variables
 
-The following example shows that the **insert\_recordset** statement can insert data that is provided in variables. In this example, the **firstonly** keyword is used so that only one row is inserted. Literals, such as **128** or **"this literal string"**, can't be used as a source of data that is inserted.
+The following example shows that the **insert\_recordset** statement can insert variable data.
+
+- Include the **firstonly** keyword to insert only one new record. If you omit **firstonly**, then a record is inserted for each record in **CustTable**.  
+- Literals, such as **128** or **"this literal string"**, can't be used in the query as a source of data that is inserted.
+- The columns in the source table do not have to correspond to the target table.
+
+In the following example, one new record is inserted in the **NameValuePair** table, with **Id** of **1**, **Name** of **Name1**, and **Value** of **1**.
 
 ```X++
-static void InsertVariable3Job(Args _args)
-{
-    TableAlphabet    tabA2;
-    BankAccountTable tabB3;
-    str  1 sLetter = "a";
-    str 16 sExampleWord = "apple";
-    DELETE_FROM tabA2;
-    INSERT_RECORDSET tabA2
-        (Letter ,ExampleWord)
-    select firstonly
-        sLetter ,sExampleWord // Variables.
-    from tabB3;
-    WHILE SELECT * from tabA2
-    {
-        info(tabA2 .Letter + " , " + tabA2 .ExampleWord);
-    }
+NameValuePair nameValuePair;
+CustTable custTable;
 
-/***********  Actual Infolog output
-Message (04:03:52 pm)
-a , apple
-***********/
-}
+int id_var = 1;
+str name_var = 'Name1';
+int value_var = 1;
+
+insert_recordset nameValuePair (Id, Name, Value)
+select firstonly id_var, name_var, value_var from custTable;
 ```
 
 ## insert\_recordset: insert data by using a join
 
-The following example shows a join of three tables on an **insert\_recordset** statement that has a subselect. It also shows a **while** **select** statement that has a similar join. A variable is used to supply the inserted value for one column. The **str** variable must be declared, and must have a length that is less than or equal to the maximum length of the corresponding database field. In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and the field's data comes from the local variable **sDescriptionVariable**. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
+The following example shows a join of three tables on an **insert\_recordset** statement that has a subselect. It also shows a **while select** statement that has a similar join. A variable is used to supply the inserted value for one column. The **str** variable must be declared, and must have a length that is less than or equal to the maximum length of the corresponding database field. In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and the field's data comes from the local variable **sDescriptionVariable**. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
 
 ```X++
 static void InsertJoin42Job(Args _args)
@@ -211,7 +204,7 @@ static void JobDuplicKeyException44Job(Args _args)
     int newKey;
     int inote;
     container notes;
-    
+
     // Empty the destination table.
     delete_from destinationTable;
 
