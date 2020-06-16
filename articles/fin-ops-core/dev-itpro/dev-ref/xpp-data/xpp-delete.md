@@ -35,11 +35,12 @@ ms.search.validFrom: 2016-02-28
 
 You can use SQL statements, either interactively or within source code, to delete one or more rows from tables stored in the database.
 
-+ **[delete method](#insert-method)**: This method deletes one row at a time.
-+ **[doDelete method](#do-insert-method)**: The **Table.doDelete** method deletes one row at a time.
-+ **[delete\_from statement](#insert-recordset-statement)**: Deletes multiple rows at the same time.
++ **[delete method](#delete-method)**: This method deletes one row at a time.
++ **[doDelete method](#do-delete-method)**: The **Table.doDelete** method deletes one row at a time.
++ **[delete\_from statement](#delete-from-statement)**: Deletes multiple rows at the same time.
 
-## delete method
+## <a id="delete-method"></a>delete method
+
 The **delete** method deletes the current record from the database. To use this method, use a **where** clause to specify the rows to delete. One record at a time is then removed from the specified table.
 
 The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
@@ -48,49 +49,17 @@ In the following example, all records in the MyTable table that satisfy the crit
 
 ```xpp
 ttsBegin;
-while select forUpdate myTable
-    where myTable.AccountNum == '1000'
-{
-    myTable.delete();
-}
+    NameValuePair nameValuePair;
+
+    while select forUpdate nameValuePair
+        where nameValuePair.Name == 'Name1'
+    {
+        nameValuePair.delete();
+    }
 ttsCommit;
 ```
 
-## doDelete method
-Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of the **delete** method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method. The following example deletes all records in the myTable table that have an account number that is more than or equal to **200**.
-
-```xpp
-ttsBegin;
-while select forUpdate myTable
-    where myTable.AccountNum >='200';
-{
-    myTable.doDelete();
-}
-ttsCommit;
-```
-
-
-### Deleting a set of records
-
-You can use a **while select** statement to loop over a set of records that meet some criteria, and perform an action on each record. In the following example, the statement is used to delete a set of records.
-
-```xpp
-TableName myXrec;
-while select myXrec where conditions // conditions is a Boolean variable defined elsewhere.
-{
-    myXrec.delete();
-}
-```
-
-You can achieve the same effect by using the **delete\_from** keyword.
-
-```xpp
-TableName myXrec;
-delete_from myXrec where conditions; // conditions is a Boolean variable defined elsewhere.
-```
-
-## Example
-
+The following example deletes records from the **LedgerJournalTrans** table, and updates the associated number sequence.
 
 ```xpp
 int counter = 0;
@@ -116,7 +85,26 @@ ttsBegin;
 ttsCommit;
 ```
 
-## delete\_from statement
+## <a id="do-delete-method"></a>doDelete method
+Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of the **delete** method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method. The following example deletes all records in the myTable table that have an account number that is more than or equal to **200**.
 
+```xpp
+ttsBegin;
+    NameValuePair nameValuePair;
 
-The **delete\_from** operator is a record set–based operator that removes multiple records at the same time.
+    while select forUpdate nameValuePair
+        where nameValuePair.Name == 'Name1'
+    {
+        nameValuePair.doDelete();
+    }
+ttsCommit;
+```
+
+## <a id="delete-from-statement"></a>delete\_from statement
+
+The **delete\_from** operator is a record set–based operator that removes multiple records at the same time. The following example deletes all the records in the **NameValuePair** table where the **Name** column is **Name1**.
+
+```xpp
+NameValuePair nameValuePair;
+delete_from nameValuePair where nameValuePair.Name == 'Name1';
+```
