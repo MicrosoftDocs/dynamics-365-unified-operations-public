@@ -36,9 +36,8 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Export to Azure Data Lake functionality may not be available in all regions or all environments supported by Finance and Operations. If you are not able to see the Export to Data Lake functionality in Lifecycle Services (LCS) or in Finance and Operations apps, this means that the functionality is not available in your environment at this time. 
-
-> Currently Export to Data lake functionality is not available in developer environments, such as Tier-1.  
+> The **Export to Azure Data Lake** feature may not be available in all regions and environments supported by Microsoft Dynamics 365 Finance and Operations apps. If you are not able to find the **Export to Azure Data Lake** functionality in Life cycle services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. If you would like access to this feature, send an email to the feature team at **FnODataLakePreview@service.microsoft.com**. We will try and make this feature available soon. At this time, the **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud based Tier-2 or higher environment to enable this feature.
+> To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in the topic, [Make entity store available as a Data Lake](entity-store-data-lake.md).
 
 To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the names of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
