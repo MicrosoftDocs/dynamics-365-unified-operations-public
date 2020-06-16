@@ -45,7 +45,7 @@ The Customer portal template has all the customization capabilities that the por
 
 ## Video
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ylwW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
 The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
