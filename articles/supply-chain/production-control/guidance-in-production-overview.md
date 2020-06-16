@@ -42,7 +42,9 @@ Across all of these core business functions, new employees, new equipment, new p
 
 You can provide guidance in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/).
 
-With Guides you empower your employees with hands-on learning.you can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for guidance.  
+With [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for guidance.
+
+The Dynamics 365 SCM SDK can be used to implement other means of guidance. Please find information on [the data model for guidance here](guidance-datamodel.md).    
 
 ### Assembly
 
