@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
-> [!Note]
+> [!NOTE]
 > Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 
@@ -56,7 +56,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | The following libraries are being affected: jQuery (to version 3.5.0 from version 2.1.4), jQuery UI (to version 1.12.1 from version 1.11.4), jQuery qTip (to version 3.0.3 from 2.2.1). Migration guidance has been provided online by jQuery.  |
 | **Product areas affected**         | Extensible controls, specifically custom JavaScript code utilizing deprecated or removed APIs |
 | **Deployment option**              | All |
-| **Status**                         | With 10.0.13 / Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
+| **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
 
 ## Platform updates for version 10.0.12 of Finance and Operations apps
 
