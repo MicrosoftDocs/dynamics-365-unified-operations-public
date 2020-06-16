@@ -5,7 +5,7 @@ title: Installation steps for Retail channel components in an on-premises enviro
 description: This topic covers the installation steps for Commerce channel components in an on-premises environment. 
 author: jashanno
 manager: AnnBe
-ms.date: 06/09/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ Unlike a cloud deployment, an on-premises environment does not enable seamless, 
 Before you can start installation of channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md). In addition, version 8.1.1 must be installed in order for Commerce have full functionality. We recommend that you update to version 8.1.2.
 
 > [!NOTE]
-> It is critical to ensure that a secure network, that is not publicly  accessible, is used to connect Commerce Scale Unit to Headquarters. You must also restrict network access to Headquarters, so access is only allowed to known Commerce Scale Unit devices via network filtering or other means. This means that a firewall must exist and whitelisting is highly recommended.
+> It is critical to ensure that a secure network, that is not publicly  accessible, is used to connect Commerce Scale Unit to Headquarters. You must also restrict network access to Headquarters, so access is only allowed to known Commerce Scale Unit devices via network filtering or other means. This means that a firewall must exist and using a safe list is highly recommended.
 
 ## Installation steps
 
