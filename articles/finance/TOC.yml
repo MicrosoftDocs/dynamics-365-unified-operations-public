@@ -2372,6 +2372,8 @@
           href: localizations/emea-pol-interest-calculation.md
         - name: Turnover balances statement
           href: localizations/emea-pol-turnover-balances-statement.md
+        - name: Split AP/AR exchange difference
+          href: localizations/emea-pol-split-ap-ar-exchange-difference.md
       - name: Russia
         items:
         - name: Russia overview
