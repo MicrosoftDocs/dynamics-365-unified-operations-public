@@ -87,9 +87,8 @@ While most forms will work well with saved views, there are some areas that may 
 This section maintains a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  A view does not get marked as having unsaved changes after using custom filters. If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
+-  A view does not get marked as having unsaved changes after using custom filters (which are the filters above a grid, excluding the QuickFilter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
 -  Views should remember the last Quick Filter column used without having to explicitly save it to a view 
--  
 
 ### Fixed as part of 10.0.13
 
