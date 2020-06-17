@@ -35,9 +35,9 @@ ms.search.validFrom: 2016-02-28
 
 You can use SQL statements, either interactively or within source code, to update one or more rows in a table stored in the database.
 
-+ **[update method](#update-method)**: This method method updates the current record with the contents of the buffer. It also updates the appropriate system fields.
-+ **[doUpdate method](#do-update-method)**: The **Table.doInsert** method inserts one row at a time.
-+ **[update\_recordset statement](#update-recordset-statement)**: This method copies multiple records directly from one or more tables into another table in one database trip. By using the the **update\_recordset** statement, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
++ **[update method](#update-method)**: Updates the current record with the contents of the buffer. It also updates the appropriate system fields.
++ **[doUpdate method](#do-update-method)**: Updates one row at a time.
++ **[update\_recordset statement](#update-recordset-statement)**: Updates multiple records in one database trip. By using the the **update\_recordset** statement, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 ## <a id="update-method"></a>update method
 

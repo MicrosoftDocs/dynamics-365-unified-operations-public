@@ -35,9 +35,9 @@ ms.search.validFrom: 2016-02-28
 
 You can use SQL statements, either interactively or within source code, to delete one or more rows from tables stored in the database.
 
-+ **[delete method](#delete-method)**: This method deletes one row at a time.
-+ **[doDelete method](#do-delete-method)**: This method deletes one row at a time.
-+ **[delete\_from statement](#delete-from-statement)**: This statement deletes multiple rows at the same time. By using the the **delete\_from** statement, you reduce communication between the application and the database, and therefore help increase performance. In some situations, this set–based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
++ **[delete method](#delete-method)**: Deletes one row at a time.
++ **[doDelete method](#do-delete-method)**: Deletes one row at a time.
++ **[delete\_from statement](#delete-from-statement)**: Deletes multiple rows at the same time. By using the the **delete\_from** statement, you reduce communication between the application and the database, and therefore help increase performance. In some situations, this set–based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 ## <a id="delete-method"></a>delete method
 

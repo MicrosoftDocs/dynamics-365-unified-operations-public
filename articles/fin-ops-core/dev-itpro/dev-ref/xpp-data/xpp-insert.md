@@ -35,8 +35,8 @@ ms.search.validFrom: 2016-02-28
 
 You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database.
 
-+ **[insert method](#insert-method)**: This method inserts one row at a time.
-+ **[doInsert method](#do-insert-method)**: The **Table.doInsert** method inserts one row at a time.
++ **[insert method](#insert-method)**: Inserts one row at a time.
++ **[doInsert method](#do-insert-method)**: Inserts one row at a time.
 + **[insert\_recordset statement](#insert-recordset-statement)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.
 + **[RecordInsertList](../r-classes#class-recordinsertlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
 + **[RecordSortedList.insertDatabase](../r-classes#class-recordsortedlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
@@ -45,7 +45,7 @@ You can use SQL statements, either interactively or within source code, to inser
 
 ## <a id="insert-method"></a>insert method
 
-The **insert** method of the table variable inserts one record at a time. The method generates values for the **RecId** field and system fields, and then inserts the contents of the buffer (the column values) into the database.
+The **insert** method inserts one record at a time. The method generates values for the **RecId** field and system fields, and then inserts the contents of the buffer (the column values) into the database.
 
 + Do not use a **select** statement on the table variable before you call the **insert** method.
 + The **insert** method does not handle all of the key field requirements and table dependencies. You must write code to handle that.
@@ -192,7 +192,7 @@ Beth  --works on--  Project YY (From variable.).
 
 ## Handle a DuplicateKeyException
 
-The following example shows how you can catch a **DuplicateKeyException** exception in the context of an explicit transaction. The exception is thrown when a call to **xRecord.insert** fails because key value already exists. In the **catch** block, your code can either take corrective action or log the error for later analysis. Your code can then continue without losing all the pending work of the transaction. You can't catch a duplicate key exception that is caused by a set-based operation such as **insert\_recordset**. This example depends on two tables: **SourceTable** and **DestinationTable**. Both tables have one mandatory integer field. These fields are named **SourceKeyField** and **DestinationKeyField**, respectively. A unique index is defined on each key field. The TableNumberA table must have at least one record in it.
+The following example shows how you can catch a **DuplicateKeyException** exception in the context of an explicit transaction. The exception is thrown when a call to **xRecord.insert** fails because key value already exists. In the **catch** block, your code can either take corrective action or log the error for later analysis. Your code can then continue without losing all the pending work of the transaction. You can't catch a duplicate key exception that is caused by a set-based operation such as **insert\_recordset**. This example depends on two tables: **SourceTable** and **DestinationTable**. Both tables have one mandatory integer field. These fields are named **SourceKeyField** and **DestinationKeyField**, respectively. A unique index is defined on each key field. The **SourceTable** table must have at least one record in it.
 
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)
