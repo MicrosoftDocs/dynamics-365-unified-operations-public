@@ -189,36 +189,6 @@ Entities of this type will have relations with the corresponding attachments ent
 
 Note that Finance and Operations virtual entities support only the reading of attachments. They don't currently support the creation, update, or deletion of attachments by using virtual entities.
 
-## Default views
-
-When an entity (either native or virtual) is created in Common Data Service, five default views are also created for it:
-
-- Default public view
-- Quick find view
-- Advanced find view
-- Associated view
-- Lookup view
-
-Common Data Service adds the primary field of the entity to all these views. Makers can add additional fields to these views as they require.
-
-By default, Finance and Operations entities have five field groups:
-
-- AutoReport
-- AutoLookup
-- AutoIdentification
-- AutoSummary
-- AutoBrowse
-
-The field groups are used to fill in additional fields for the Finance and Operations virtual entities in the default views in Common Data Service. The following table shows the mapping of the field groups to the default views.
-
-| Field group        | Default view        |
-|--------------------|---------------------|
-| AutoReport         | Default public view |
-| AutoLookup         | Lookup view         |
-| AutoIdentification | Quick find view     |
-| AutoSummary        | Associated view     |
-| AutoBrowse         | Advanced find view  |
-
 ## OData actions
 
 OData actions in the Finance and Operations entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
