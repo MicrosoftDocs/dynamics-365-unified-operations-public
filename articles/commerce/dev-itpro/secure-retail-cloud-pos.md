@@ -5,7 +5,7 @@ title: Security best practices for Cloud POS in shared environments
 description: Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: pdp1207
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -338,7 +338,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 | Turn off the Store application                                                                                                                                           | Enabled  | No      | \\Windows Components\\Store                                                 |
 | Prohibit New Task Creation                                                                                                                                               | Enabled  | No      | \\Windows Components\\Task Scheduler                                        |
 
-## Set up a proxy to access only whitelisted websites
+## Set up a proxy to access only websites included in a safe list
 You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites. Retail Cloud POS requires access to the following websites:
 
 -   Retail Cloud POS website
