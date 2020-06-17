@@ -84,43 +84,48 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
-This section maintains a list of known issues for the new grid control while the feature is in a preview state.
+This section maintains a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
-- Filtering done via custom filters the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  
+-  A view does not get marked as having unsaved changes after using custom filters. If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
+-  Views should remember the last Quick Filter column used without having to explicitly save it to a view 
+-  
 
 ### Fixed as part of 10.0.13
--  [Bug 446299] View import flow doesn't surface grid/detail views for Details pages
--  [Bug 446306] Users are able to export the Standard view
--  [Bug 453822] Published views recipients are not being updated after republishing from a different legal entity
--  [Bug 452907] Views should remember the last Quick Filter column used without having to explicitly save it to a view. 
--  [Bug 438232] Views published to a parent security role are not applied to child roles
+
+> [!NOTE]
+> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+-  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
+-  [KB 4568152] Users are able to export the Standard view
+-  [KB 4568151] Published views recipients are not being updated after republishing from a different legal entity
+-  [KB 4562137] Views published to a parent security role are not applied to child roles
 
 ### Fixed as part of 10.0.12
--  [Bug 441029] Unapplied queries saved in personalization from pre-views formats 
--  [Bug 441053] Exception thrown when user has multiple pre-views personalizations for the same user and form
--  [Bug 444015] Default view personalizations not applied for users without personalization rights
--  [Bug 444459] Import of workspace personalizations for a user sometimes fails
--  [Bug 444833] Error when trying to open the view selector when user has a large number of views
--  [Bug 450171] Old custom workspaces aren't shown in the Personalization form after toggling saved views on and off
+-  [KB 4568122] Unexpected queries applied after enabling views
+-  [KB 4562152] Migration of personalizations after enabling saved views throws exception in some cases 
+-  [KB 4568121] Default view personalizations not applied for users without personalization rights
+-  [KB 4568119] Error sometimes when importing a workspace or adding a tile or list to a workspace with views enabled
+-  [KB 4568118] Error when trying to open the view selector when user has a large number of views
+-  [KB 4568148] Old custom user workspaces aren't shown in the Personalization form after enabling views
 
 ### Quality update for 10.0.11 / Platform update 35
 -  [KB 4562147] Importing personalizations to a large number of users is timing out 
 
 ### Fixed as part of 10.0.11
--  [Bug 419245] Personalization form missing from security role 
--  [Bug 420619] Views are not marked to have unsaved changes after using the Advanced filter or sort dialog
--  [Bug 429335] Crash when attempting to import particular old personalization formats
--  [Bug 423642] Views can be published with no name
+-  [KB 4549735] Personalization form missing from security role 
+-  [KB 4568116] Views are not marked as having unsaved changes after using Advanced filter or sort
+-  [KB 4568117] Crash when attempting to import particular old personalization formats
+-  [KB 4568115] Views can be published with no name
 -  [KB 4564908] Unsaved filters and personalizations reflected in some views 
 
 ### Quality update for 10.0.10 / Platform update 34
 -  [KB 4560406] Importing personalizations to a large number of users is timing out 
--  [Bug 452624] Personalization form doesn't load / Loading a published view for the first time takes a long time
+-  [KB 4564906] Personalization form doesn't load / Loading a published view for the first time takes a long time
 
 ### Fixed as part of 10.0.10 / Platform update 34
--  [Bug 412479] Views can be published to a blank legal entity
--  [Bug 419005] View queries fail to apply due to conflicting "open" ranges on the query
+-  [KB 4568114] Views can be published to a blank legal entity
+-  [kB 4568113] "View query cannot be applied" message shown when loading a view that modifies existing filters
 
 
 
