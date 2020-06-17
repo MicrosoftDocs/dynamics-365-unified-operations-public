@@ -5,7 +5,7 @@ title: Order details module
 description: This topic covers order details modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
