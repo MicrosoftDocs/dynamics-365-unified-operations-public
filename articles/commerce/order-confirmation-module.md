@@ -70,7 +70,7 @@ To add an order details module to a new page and set the required properties, fo
 1. In the **Choose a template** dialog box, select **Order details template**. Under **Page name**, enter **Order details page**, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Order details** module, and then select **OK**.
-1. In the property pane for the order details module, select **Heading** next to the pencil symbol.
+1. In the properties pane for the order details module, select **Heading** next to the pencil symbol.
 1. In the **Heading Text** field of the **Heading** dialog box, enter **Order details**, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
