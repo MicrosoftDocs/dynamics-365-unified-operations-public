@@ -40,11 +40,11 @@ This topic covers order details modules and describes how to use them in Microso
 
 The order details module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, and the shipping method.
 
-## Order confirmation module properties
+## Order details module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order confirmation module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order details module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
 | Contact number | Text | A contact number can be provided for order-related questions. |
 
 ## Modules that can be used on an order details page
