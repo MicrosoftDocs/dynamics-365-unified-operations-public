@@ -58,16 +58,26 @@ A checkout module shows an order summary and provides the functionality for plac
 
     ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
-- **Delivery options** – This module lets a customer select a delivery option for an order. Delivery options are based on the shipping address. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden.
+- **Delivery options** – This module lets a customer select a mode of delivery for an order. See [Online channel setup](channel-setup-online.md) for configuring the modes of delivery for the online channel. In addition, each delivery mode can have an associated shipping charge. Refer to [Omni-channel Advanced auto-charges](omni-auto-charges.md) to learn more about configuring charges for the online store. The Fabrikam theme, supports a mixed mode of delivery where some items can be shipping and some can be pickup. For a mixed mode of delivery to work, its required to configure **Header Charges with proration** see [Prorate header chanrges to match sales lines](pro-rate-charges-matching-lines.md) for more details on this configuration.  
+
+In 10.0.13, the Delivery Options module will also work for **Header charges without proration** assuming the workflow doesnt support a mixed mode of delivery in the cart.  This requires "XYZ" flag in backoffice to be turned on. 
+
+If a shipping charge is configured as a Line charge, it will automatically appear on the cart line for each item.
+
+Delivery options module requires a shipping address to determine the modes of delivery. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden. 
 
     The following image shows an example of a delivery options module on a checkout page.
 
     ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
 
 - **Checkout section container** – This module is a container that you can put multiple modules inside to create a section within the checkout flow. For example, you can put all payment-related modules inside this container to make them appear as one section. This module affects only the layout of the flow.
-- **Gift card** – This module lets a customer pay for an order by using a gift card. It supports only Microsoft Dynamics 365 Commerce gift cards. One or more gift cards can be applied to an order. If the balance of the gift card doesn't cover the amount in the cart, the gift card can be combined with another payment method. Gift cards can be redeemed only if the customer is signed in.
+
+- **Gift card** – This module lets a customer pay for an order by using a gift card. See [Gift card module](add-giftcard.md) for more details.
+
 - **Loyalty points** – This module lets a customer pay for an order by using loyalty points. It provides a summary of available points and expiring points, and lets the customer select the number of points to redeem. If the customer isn't signed in or isn't a loyalty member, or if the total amount in the cart is 0 (zero), this module is automatically hidden.
-- **Payment** – This module lets a customer pay for an order by using a credit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. Credit card integration is provided by the Adyen payment connector for this module. For more information about how to use this connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).
+
+- **Payment** – This module lets a customer pay for an order by using credit or debit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. The payment integration is provided by the Adyen payment connector for this module. For more information about how to use setup and configure this connector to use on e-commerce, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md). The Adyen payment connector also supports Strong Customer Authentication. Part of the EU Payment Services Directive 2.0 (PSD2.0) requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. For more details refer to [Strong Customer Authentication using Adyen](adyen_redirect.md). 
+
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 
     The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
@@ -115,3 +125,7 @@ To add a checkout module to a new page and set the required properties, follow t
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+[Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md)
+
+[Strong Customer Authentication using Adyen](adyen_redirect.md)
