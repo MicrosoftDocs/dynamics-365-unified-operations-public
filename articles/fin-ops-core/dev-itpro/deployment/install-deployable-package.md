@@ -46,7 +46,7 @@ This topic walks you through the steps for using the command line to apply eithe
 
 ## Install an application (AOT) deployable package on a development environment
 > [!NOTE]
-> The Steps listed below are for application and platform packages only. Do not use the **devinstall** parameter when running the Data Upgrade deployable package as part of an Microsofy Dynamics AX 2012 to Microsoft D365 Finance and Operations upgrade.
+> The Steps listed below are for customization packages only. Do not use the **devinstall** parameter when running the Data Upgrade deployable package as part of an Microsofy Dynamics AX 2012 to Microsoft D365 Finance and Operations upgrade.
 
 An AOT deployable package is a package that contains customizations and extensions to your application. If you want to use the command line just to install an AOT deployable package on a development or demo environment, follow the instructions in this section. You can then skip the rest of this topic.
 
