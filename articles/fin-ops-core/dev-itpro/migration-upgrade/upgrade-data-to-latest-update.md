@@ -5,7 +5,7 @@ title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Finance and Operations application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
