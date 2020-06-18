@@ -130,8 +130,12 @@ Review the logic around download session retry and cut (Need Daniel / Yonas assi
 
 ## Resources
 *Link to Devices Implementation Guide* [Device management implementation guidance](implementation-considerations-devices.md)
+
 *Link to Commerce Architecture* [Commerce Architecture](commerce-architecture.md)
+
 *Link to In-store Topologies* [Select an in-store topology](dev-itpro/retail-in-store-topology.md)
+
 *Link to MPOS installer* LINK PENDING
+
 *Link to CSU (Self-hosted) installer* LINK PENDING
 
