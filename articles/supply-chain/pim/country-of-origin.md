@@ -31,52 +31,51 @@ ms.dyn365.ops.version: Release 10.0.13
 
 Many organizations issue certificates for their vendors to ensure that a product will meet a certain certification standard. These certificates are often dependent on the country of origin. Supply Chain Management country of origin features let you link a product to its country of origin and keep track of its product certifications.
 
-## Configuring the country of origin
+<!-- KFM: If this feature is primary (or exclusively) intended to relate to hazardous and/or dual-use materials, we should mention that here. -->
 
-Before issuing a certificate for a product you first need to link the product to its destination country and country of origin. To do this, navigate to **Product information management \> Setup \> Country of origin \> Country of origin rules**.
+## Configure source and destination countries
 
-To create a new configuration, select **New** and fill out the following information:
-
-| **Setting** | **Description** |
-| --- | --- |
-| **Item number** | The item number of the product you want to configure |
-| **Destination country** | The country you are sending the product to |
-| **Origin country** | The country you are shipping the product from |
-
-## Keeping track of vendor certificates
-
-Now that you have your country of origin information configured you may want to keep track of the certificates you are issuing to vendors.
-
-Companies will need to figure out which certificate documents they are issuing and how they will send it to the customer. This configuration provides a mechanism to keep track of it and display the certificate number on invoices, packing slips and order confirmations.
-
-To set this information, you need to navigate to **Product information management \> Setup \> Country of origin \> Country of origin vendor certificates**.
-
-Then you need to fill out the following information:
+Before issuing a certificate for a product, you must link the product to its destination country and country of origin. To do this, go to **Product information management \> Setup \> Product compliance \> Country of origin \> Country of origin rules**. Then select an existing country setup to edit it, or select **New** on the Action Pane to create a new one, and make the following settings for the new or selected country:
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Vendor account** | The vendor you are sending the certificate to |
-| **Item number** | The item you issued the certificate for |
-| **Certificate number** | The number of the certificate you issued |
-| **Effective** | The date of effectiveness for the certificate |
-| **Expiration** | The expiry date of the certificate |
-| **Print on invoice** | A checkbox to indicate whether you want the certificate number to be displayed on the invoice |
-| **Print on packing slip** | A checkbox to indicate whether you want the certificate number to be displayed on the packing slip |
-| **Print on sales confirmation** | A checkbox to indicate whether you want the certificate number to be displayed on the sales confirmation |
+| **Item number** | Select the item number of the product. |
+| **Destination country** | Select the country you are sending the product to. |
+| **Origin country** | Select the country you are shipping the product from. |
 
-## Print bill of material lines
+<!-- KFM: Explain any effects of these settings. For example, how do these affect the invoices, packing slips, and/or sales orders? How do these affect certificates entered on the **Country of origin vendor certificates** page? What about BOM reports? -->
 
-The country of origin configuration is also helpful for reporting purposes. Suppose you have a product with a bill of materials, and you want to see what the country of origin is for each of those parts. If you have the country of origin specified for each of your parts you'll easily be able to print a report that shows you all that information.
+## Keep track of vendor certificates
 
-Here's how you can do that:
+Use the **Country of origin vendor certificates** page to keep track of certificates you issue to vendors.
 
-1. Navigate to the released product details of a product that multiple
-2. On the top ribbon select **Engineer** tab
-3. Under BOM select **Designer**
-4. In the form that opens up, select BOM in the top ribbon and select the print option
-5. In the Bill of materials lines form select the destination country if you want it to show up in your report
-6. Select **OK**
+You must decide which certificate documents you are issuing and how you will report them to customers. This feature helps you keep track of your certificates and choose whether to display the relevant certificate numbers on invoices, packing slips, and/or order confirmations.
 
-A report with the information detailing the country of origin of each of the parts should be generated. Here's an example of a generated report:
+To set up you certificate information, go to **Product information management \> Setup \> Product compliance \> Country of origin \> Country of origin vendor certificates**. Then select an existing certificate setup to edit it, or select **New** on the Action Pane to create a new one, and make the following settings for the new or selected certificate:
+
+| **Setting** | **Description** |
+| --- | --- |
+| **Vendor account** | Select the vendor you issued the certificate to. |
+| **Item number** | Select the item you issued the certificate for. |
+| **Country/region** | The destination country or region where you must use this certificate. <!--KFM: I assumed this--true? Or is this the vendor country? How does this relate to the settings on the **Country of origin rules** page? --> |
+| **Certificate number** | Enter the identifying number of the certificate you issued. |
+| **Effective** | Select the first date on which the current certificate is valid.|
+| **Expiration** | Select the last date on which the current certificate is valid. |
+| **Print on invoice** | Select this check box to print this certificate number on invoices addressed to the specified country during the specified date range. |
+| **Print on packing slip** | Select this check box to print this certificate number on packing slips addressed to the specified country during the specified date range. |
+| **Print on sales order** | Select this check box to print this certificate number on sales orders addressed to the specified country during the specified date range. |
+
+## Include country of origin in BOM reports
+
+When you generate a bill of materials (BOM) report, you can include the country of origin for each part that has its source and destination countries specified <!--KFM: Specified where, on the **Country of origin rules** page? -->. To do this:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Select or create a product to open its **Released product details** page.
+1. On the Action Pane, open the **Engineer** tab and, from the **BOM** group, select **Designer**.
+1. A new page opens. On the Action Pane, select **BOM > Print**.
+1. The **Bill of materials lines** dialog box opens. Set **Destination country** to the destination country you want to view in your report.
+1. Select **OK**
+
+A report with the information detailing the country of origin of each of the parts is generated and displayed. Here's an example of a generated report:
 
 ![Country of origin report](media/country-of-origin-report.png "Country of origin report")
