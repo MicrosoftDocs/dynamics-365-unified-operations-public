@@ -67,7 +67,9 @@ In Tier 2 or higher environments, including Production, you will run through the
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
-5. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
+5. If you're upgrading to Dynamics 365 Finance version 10.0.9 or 10.0.10, install the quality updates in the destination environment before you run the data upgrade. 
+
+6. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
     ```sql
     delete from classidtable where id >= 0xf000 and id <= 0xffff
@@ -344,6 +346,11 @@ You might receive one of the following error messages on the **preSyncLedgerPeri
 > Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTask ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, T1.LINENUM FROM LedgerPeriodCloseTemplateTaskTmp T1 session 1013 (Admin)
 
 To resolve this issue, use Management Studio to manually drop the LedgerPeriodCloseTemplateTaskTmp table from the database. Then rerun the runbook step. This issue will be fixed in a future hotfix.
+
+### Table Sync Failed for Table: WarrantyGroupConfigurationItem
+If you're upgrading to Dynamics 365 Finance version 10.0.9 or 10.0.10, you might see this issue during data upgrade.
+
+To resolve the issue, roll back the DB upgrade, install the quality updates in the destination environment and rerun the data upgrade. 
 
 ### KB number 3170386
 
