@@ -64,6 +64,7 @@ Add image for this...
 
 The **Data sync interval** page is   ADD DESCRIPTION. 
 
+Data packages are a series of files zipped together containing all data (or delta of data) required to be applied to a destination database (Whether that be Channel database or Offline database).  **More details or keep higher level?**
 
 Additional details as required......
 
@@ -75,26 +76,62 @@ Data is generated and flows in a very specific way.  It is important to understa
 
 This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
 
-**Insert data configuration flow diagram (Commerce Architecture - Forms flow)**
+**Insert data configuration flow diagram (Commerce Architecture - Forms flow (PNG, Need newer one))**
 
 This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
+
+### Overview of package management
+ - Review that packages are created and showcased in Download sessions
+ - Review the logic around retry and cut (Need Daniel / Yonas assistance here)
+ - 
+
+### Recent CDX related features (All available in 10.0.12 or above, some as old as 10.0.8)
+
+**Generate a table of the features**
+ - Advanced offline
+ - Offline switch before login
+ - Data sizing improvements (Specify the ability to flag data to not be synchronized to offline)
+**Comment high level on each feature and it's reason / value**
+
+Statement on how these features will be discussed later in the document, such as implementation considerations sub-heading (And possibly resources to other docs if decided to break apart).
 
 
 
 ## Implementation considerations
 This section describes some things that you should consider as you plan to implement features that are related to data management and configuration.
 
+**TOPICS**
+ - Timing of jobs... Create a schedule
+   - Specify when to use **Pause offline synchronzation**
+ - When to use **Allow manual switch to offline before login** and **Enable advanced offline switching**
+   - Specify how the **System health check interval (min)** works, compare against the **Reconnect attempt interval (min)**
+ - How to cut away data from offline synchronization (Based on Data sizing improvements)
+   - Specify job and subjob ability to cut away and when it applies to all (Subjob) and when it applies only to subset (Job)
+   - Specify what can and cannot be cut from offline (OPEN QUESTION)
+   - Specify the steps to remove customers completely from offline DBs
+..... additional topics?
+
+**Review implementation considerations**
+ - Have at least one separate channel database group for offline DBs
+ - Have a "Data Calendar", specifying when data is pushed and how it all lines up so that it does not occur:
+   - When system is already loaded with calls
+   - When system is already loaded with statement posting or other Headquarters workloads
+   - When too much data is being generated at the same time
+ - Minimize data pushed to offline DBs to minimize offline size, generate additional database groups (As required) to further cut down on data sizes
+ - 
 
 
-**OPEN QUESTIONS IN THIS DOC**
+
+**OPEN QUESTIONS IN THIS DOC NEEDING ANSWERS**
 Verify Working folders are no longer required with Commerce Batch Service (Azure Batch for now)
-
-
+What data can be cut from offline DBs and it will still work correctly for sales?
+Review the logic around download session retry and cut (Need Daniel / Yonas assistance here)
 
 
 ## Resources
 *Link to Devices Implementation Guide* [Device management implementation guidance](implementation-considerations-devices.md)
 *Link to Commerce Architecture* [Commerce Architecture](commerce-architecture.md)
-*Link to MPOS installer*
-*Link to CSU (Self-hosted) installer*
+*Link to In-store Topologies* [Select an in-store topology](dev-itpro/retail-in-store-topology.md)
+*Link to MPOS installer* LINK PENDING
+*Link to CSU (Self-hosted) installer* LINK PENDING
 
