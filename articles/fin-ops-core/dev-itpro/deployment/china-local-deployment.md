@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Finance and Operations apps - operated by 21Vianet in China
-description: This topic provides information about Finance and Operations apps - operated by 21Vianet in China.
-author: ShylaThompson
+title: Dynamics 365 Finance operated by 21Vianet in China and Dynamics 365 Supply Chain Management operated by 21Vianet in China 
+description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
+author: kfend
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Finance and Operations apps - operated by 21Vianet in China
+# Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,11 +40,11 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 ## Provisioning
 
-Customers in China have two options from which to select how they want to access Finance and Operations apps.
+Customers in China have two options from which to select how they want to access Finance and Supply Chain Management apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Operations services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Supply Chain Management services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for Finance and Operations customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
+- Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
 
 There are a few technical limitations during the provisioning of services that need to be taken in to account to avoid potential issues. 
 
@@ -112,3 +112,4 @@ Due to certain technical dependencies, the following features listed will not be
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
+- [Business applications availability in China – operated by 21Vianet in China](https://docs.microsoft.com/power-platform/admin/business-applications-availability-china)

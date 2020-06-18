@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,6 +42,22 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.13 of Finance and Operations apps
+
+> [!NOTE]
+> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### Upgrade of three jQuery component libraries 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Three jQuery component libraries are being updated for security fixes and to maintain currency.   
+| **Replaced by another feature?**   | The following libraries are being affected: jQuery (to version 3.5.0 from version 2.1.4), jQuery UI (to version 1.12.1 from version 1.11.4), jQuery qTip (to version 3.0.3 from 2.2.1). Migration guidance has been provided online by jQuery.  |
+| **Product areas affected**         | Extensible controls, specifically custom JavaScript code utilizing deprecated or removed APIs |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
+
 ## Platform updates for version 10.0.12 of Finance and Operations apps
 
 ### Grid or group control form extensions containing invalid field references
@@ -56,6 +72,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
 
+### Explicit safe lists for self-service environments
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
+| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Product areas affected**         | Security |
+| **Deployment option**              | Cloud |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
+
 ### Visual Studio 2015
 
 |   |  |
@@ -64,7 +90,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | New virtual machines (VMs) deployed with version 10.0.11 of Finance and Operations apps will include Visual Studio 2017. Existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
+| **Status**                         | Once the availability of new virtual machines (VMs) with Visual Studio 2017 is announced, existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
 
 ### Field groups containing invalid field references
 

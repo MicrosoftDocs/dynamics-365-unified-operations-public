@@ -38,6 +38,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment.
 
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment. You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Common Data Service and already has **Enable Dynamics 365 apps** set to **Yes**.
+
+:::image type="content" source="media/add_database.png" alt-text="Enable apps switch" lightbox="media/add_database_expanded.png":::
+
 1. Validate the platform update and app version.
 
     Make sure that your Finance and Operations app environment is running Platform update 33 (app version 10.0.9) or later.

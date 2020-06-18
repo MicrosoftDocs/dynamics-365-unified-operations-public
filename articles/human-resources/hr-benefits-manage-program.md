@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
+ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -74,7 +74,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
         items:
-        - name: Upgrade and N-1 support for Retail
+        - name: Upgrade and N-1 support for Commerce
           href: dev-itpro/overview-upgrade-n-minus1.md
         - name: Phased Rollout (N-1) installation, configuration, and cutover
           href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
             href: get-started/whats-new-commerce-10-0-11.md
           - name: Commerce 10.0.10 (May 2020)
             href: get-started/whats-new-commerce-10-0-10.md
-          - name: Commerce 10.0.9 (April 2020)
-            href: get-started/whats-new-10-0-9.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -214,9 +212,9 @@
         items:
         - name: Synchronize self-service installers in Dynamics 365 Commerce
           href: dev-itpro/Synchronize-installers.md
-        - name: Commerce Scale Unit
+        - name: Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-system-begin.md
-        - name: Configure and install Commerce Scale Unit
+        - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
         - name: Modern POS configuration and installation
           href: retail-modern-pos-device-activation.md
@@ -572,10 +570,14 @@
             href: set-up-bar-codes.md
           - name: Set up bar code masks 
             href: set-up-bar-code-masks.md
+        - name: Warranties
+          items:
+          - name: Create and configure extended warranties
+            href: extended-warranty.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
-          href: retail-discounts-overview.md
+          href: retail-discounts-overview.md 
         - name: Sales price management 
           href: price-management.md
         - name: Price adjustments and discounts 
@@ -648,6 +650,8 @@
           items:
           - name: Store inventory management  
             href: work-with-store-inventory.md
+          - name: Configure inventory buffers and inventory levels
+            href: inventory-buffers-levels.md
           - name: Work with serialized items in POS
             href: pos-serialized-items.md
           - name: Push products from distribution center to store using buyer's push 
@@ -1894,6 +1898,8 @@
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
+          - name: Debug against a Tier 1 Commerce development environment
+            href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
@@ -2026,6 +2032,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Development in cloud-hosted dev environments without admin access
           href: dev-itpro/cloud-dev-box.md
+        - name: Set up Commerce SDK build pipeline
+          href: dev-itpro/retail-sdk/SDK-build-pipeline.md
       - name: Point of sale extensibility
         items:
         - name: POS screen layouts
@@ -2090,11 +2098,11 @@
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
         items:
-        - name: Extend a Retail Server OData controller
+        - name: Extend a Commerce Scale Unit OData controller
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Retail Server customer and consumer APIs
+        - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Extend the default Retail Server metadata controller
+        - name: Extend the default Commerce Scale Unit metadata controller
           href: dev-itpro/extend-metadata.md
         - name: Call the CRT service in offline mode
           href: dev-itpro/call-crt-service-offline.md

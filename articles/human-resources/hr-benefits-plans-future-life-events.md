@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BenefitFutureLifeEvents
+ms.search.form: BenefitFutureLifeEvents, BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

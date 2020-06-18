@@ -5,7 +5,7 @@ title: Removed or deprecated features in Dynamics 365 Commerce
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Commerce 10.0.11 release
+### Data action hooks
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The data action hooks feature has been deprecated due to performance issues. |
+| **Replaced by another feature?**   | It is recommended to instead use [data action overrides](../e-commerce-extensibility/data-action-overrides.md) to modify business logic in the data action layer.|
+| **Product areas affected**         | E-Commerce extensibility data actions |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.11 |
 
 ## Features removed or deprecated in the Commerce 10.0.10 release
 ### POS operation 803 - Picking and receiving

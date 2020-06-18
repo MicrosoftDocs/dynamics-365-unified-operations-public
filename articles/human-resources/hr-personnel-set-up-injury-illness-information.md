@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HRMInjurySetup   
+ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SuspendLeave
+ms.search.form: SuspendLeave, LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

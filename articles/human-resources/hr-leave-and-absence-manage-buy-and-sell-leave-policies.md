@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LeaveBuySellPolicy
+ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

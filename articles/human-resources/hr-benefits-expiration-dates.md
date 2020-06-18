@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment   
+ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

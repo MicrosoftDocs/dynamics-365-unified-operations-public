@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit   
+ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart  
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

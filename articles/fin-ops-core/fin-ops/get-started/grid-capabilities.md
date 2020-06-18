@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -93,7 +93,7 @@ To undo grouping in a grid, right-click on the grouping column and select **Ungr
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
 
-To support this new behavior, a new column for the row status has been added to the top of the grid when the grid is in edit mode. This column indicates one of the following statuses:
+To support this new behavior, a new column for the row status has been added to the right of the row selection column when the grid is in edit mode. This column indicates one of the following statuses:
 
 - **Blank** – No status image indicates that the row has been successfully saved by the system.
 - **Processing pending** – This status indicates that the changes in the row haven't yet been saved by the server but are in a queue of changes that must be processed. Before you take action outside the grid, you must wait for all the pending changes to be processed. Additionally, the text in these rows is italicized to indicate the unsaved status of the rows. 
