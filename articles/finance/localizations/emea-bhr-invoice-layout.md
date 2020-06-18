@@ -42,7 +42,7 @@ ms.dyn365.ops.version: 10.0.13
 | **INTERNAL REFERENCE**                | 3982346|
 | **FIRST AVAILABLE IN**                | Monthly update 10.0.13|
 | **LATEST FEATURE UPDATE**                | Monthly update 10.0.13|
-| **FEATURE MANAGEMENT**                | Not required|
+| **FEATURE MANAGEMENT**                | Not activation required. [See the related features.](#Features)|
 | **BUSINESS NEED**                | The feature allows to configure printable invoice layouts to make it compliant with Bahraini legal requirements.|
 | **FEATURE DESCRIPTION**                | The article explains how to configure printable invoice layouts to make it compliant with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented using **Configurable business documents** concept. For more information about Configurable business documents, see [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md).|
 
@@ -50,7 +50,7 @@ ms.dyn365.ops.version: 10.0.13
 
 - The primary address of the legal entity must be in Bahrain.
 
-## Features enabling
+## <a name="Features"></a>Features enabling
 
 In the **Feature management** workspace, enable the following features:
 - (Bahrain) Credit invoicing layout for sales and project invoice reports;
@@ -58,9 +58,9 @@ In the **Feature management** workspace, enable the following features:
 
 For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Import of Electronic Reporting configurations
+## <a name="ERConfigs"></a>Import of Electronic Reporting configurations
 In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
- - <a name="ERConfigs"></a>Sales invoice (Excel) (BH);
+ - Sales invoice (Excel) (BH);
  - Free text invoice (Excel) (BH).
  
 > [!NOTE]
