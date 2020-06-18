@@ -65,9 +65,7 @@ In 10.0.13, the Delivery Options module will also work for **Header charges with
 If a shipping charge is configured as a Line charge, it will automatically appear on the cart line for each item.
 
 Delivery options module requires a shipping address to determine the modes of delivery. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden. 
-
-    The following image shows an example of a delivery options module on a checkout page.
-
+     The following image shows an example of a delivery options module on a checkout page.
     ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
 
 - **Checkout section container** – This module is a container that you can put multiple modules inside to create a section within the checkout flow. For example, you can put all payment-related modules inside this container to make them appear as one section. This module affects only the layout of the flow.
@@ -80,7 +78,7 @@ Delivery options module requires a shipping address to determine the modes of de
 
 - **Billing address** – This module lets a customer provide billing address for the payment option that they chose.  Refer to [Payment module](add-payment-module.md) for more details
 
-    The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
+     The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
 
     ![Example of gift card, loyalty points, payment, and billing address modules](./media/ecommerce-payments.PNG)
 
