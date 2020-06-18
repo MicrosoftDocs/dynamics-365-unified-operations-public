@@ -84,7 +84,7 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
-This section maintains a list of known issues for saved views while the feature is in a preview state.
+This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
 -  A view does not get marked as having unsaved changes after using custom filters (which are the filters above a grid, excluding the QuickFilter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
@@ -93,7 +93,7 @@ This section maintains a list of known issues for saved views while the feature 
 ### Fixed as part of 10.0.13
 
 > [!NOTE]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 -  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
