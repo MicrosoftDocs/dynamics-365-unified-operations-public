@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 Many organizations issue certificates for their vendors to ensure that a product will meet a certain certification standard. These certificates are often dependent on the country of origin. Supply Chain Management country of origin features let you link a product to its country of origin and keep track of its product certifications.
 
-<!-- KFM: If this feature is primary (or exclusively) intended to relate to hazardous and/or dual-use materials, we should mention that here. -->
+<!-- KFM: If this feature is primary (or exclusively) intended to relate to hazardous and/or dual-use materials, we should mention that here. D: It isn't. You don't "have" to use it with hazardous or dual-use, but it's a pretty common use case.-->
 
 ## Configure source and destination countries
 
@@ -43,7 +43,7 @@ Before issuing a certificate for a product, you must link the product to its des
 | **Destination country** | Select the country you are sending the product to. |
 | **Origin country** | Select the country you are shipping the product from. |
 
-<!-- KFM: Explain any effects of these settings. For example, how do these affect the invoices, packing slips, and/or sales orders? How do these affect certificates entered on the **Country of origin vendor certificates** page? What about BOM reports? -->
+The purpose of this setup is to help you generate a BOM report where you can include country of origin for each part that has its source and destination countries. This will help you get a holistic picture of where your parts come from and where they are going.
 
 ## Keep track of vendor certificates
 
@@ -57,7 +57,7 @@ To set up you certificate information, go to **Product information management \>
 | --- | --- |
 | **Vendor account** | Select the vendor you issued the certificate to. |
 | **Item number** | Select the item you issued the certificate for. |
-| **Country/region** | The destination country or region where you must use this certificate. <!--KFM: I assumed this--true? Or is this the vendor country? How does this relate to the settings on the **Country of origin rules** page? --> |
+| **Country/region** | The destination country or region where you must use this certificate. <!--KFM: I assumed this--true? Or is this the vendor country? How does this relate to the settings on the **Country of origin rules** page? D: Country of origin rules specifies where the product originates from. This is the country you are sending it to. Ex: product is originated in Brazil. But you are issuing the certificate for France. In this field you would put France. --> |
 | **Certificate number** | Enter the identifying number of the certificate you issued. |
 | **Effective** | Select the first date on which the current certificate is valid.|
 | **Expiration** | Select the last date on which the current certificate is valid. |
@@ -67,7 +67,7 @@ To set up you certificate information, go to **Product information management \>
 
 ## Include country of origin in BOM reports
 
-When you generate a bill of materials (BOM) report, you can include the country of origin for each part that has its source and destination countries specified <!--KFM: Specified where, on the **Country of origin rules** page? -->. To do this:
+When you generate a bill of materials (BOM) report, you can include the country of origin for each part that has its source and destination countries specified in the **Country of origin rules page**. To do this:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select or create a product to open its **Released product details** page.
