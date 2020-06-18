@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
-description: This topic provides the process for upgrading AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
+description: This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
 manager: AnnBe
 ms.date: 06/04/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,246 +28,186 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-#  Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
+# Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
+This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Currently, upgrade is supported only from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
 
 > [!IMPORTANT]
-> This guide only explains the process of performing a data upgrade. For information on how to do a code upgrade please check the upgrade guides available for cloud versions. The code upgrade tooling is only available through Lifecycle Services (LCS).
+> This topic explains the process for doing a data upgrade only. For information about how to do a code upgrade, see the upgrade guides that are available for cloud versions. The code upgrade tooling is available only through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## AX 2012 upgrade to Dynamics 365 Finance + Operations (on-premises)
 
-To upgrade, there are two possible paths that are currently supported.
+Two upgrade methods are currently supported:
 
-An overview of each path is given below:
-
--   **Upgrading from within VHD** - This path involves copying your database into the virtual hard disk (VHD) and executing the upgrade inside it. Overall, this is the simpler method.
-
--   **Upgrading with VHD pointing to your database** - This path involves pointing the VHD upgrade process to your database. The upgrade process is still executed from within the VHD.
+- **Upgrade from inside the VHD** – This method involves copying your database into the virtual hard disk (VHD) and running the upgrade from inside the VHD. Overall, this method is easier.
+- **Upgrade where the VHD points to your database** – This method involves pointing the VHD upgrade process to your database. The upgrade process is still run from inside the VHD.
 
 > [!NOTE]
-> The VHD does not need external network access in order to carry out the upgrade process.
+> The VHD doesn't require external network access to run the upgrade process.
 
 ### Prerequisites
 
-1. [Sign up for a Lifecycle Services trial or partner project](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project)
+1. [Sign up for an LCS trial or partner project](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project).
+1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance and Operations application release.
+1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
+1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
+1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
+1. In LCS, go to the Shared asset library by selecting the tile on the right side of the page. Then, under **Select asset type**, select **Downloadable VHD**, and download all parts of the VHD package that most closely matches the version that you will upgrade to in your on-premises environment. The image requires a large amount of disk space. Therefore, be sure to download and extract the package on a drive that has enough free space. 
+1. The files that you downloaded are a self-extracting zip file. Extract the VHD to a location that has a good amount of free space.
+1. Use Hyper-V to start a virtual machine (VM) and attach the VHD. (Note that the VM must be Generation 1.)
+1. Connect to the VM. For information about the credentials, see [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-locally).
+1. Depending on your planned on-premises target version of 10.0.x and the VHD image that you downloaded, you might have to download and apply the required application update and platform update from the Shared asset library. Under **Select asset type**, select **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
-1. For each AX 2012 release, please update to the latest available cumulative update before upgrading to the latest Finance and Operations application release.
+    > [!IMPORTANT]
+    > In any case, make sure that you've applied the most recent quality update to your VHD, to ensure that it contains the most recent fixes for doing data upgrades. 
 
-1. Install the pre-upgrade checklist, more details can be found [here](prepare-data-upgrade.md#installation)
+1. If you have any extensions or customizations, install them on the VHD now. Otherwise, the upgrade process will remove any data that is related to customizations. If you must prepare your environment before the upgrade, check with your independent software vendor (ISV) or value-added reseller (VAR).
 
-1. Go through the data upgrade preparation steps. You can skip the **Setup User Mapping** step. This is only relevant for cloud-hosted upgrades.   
+### Upgrade from inside the VHD
 
-1. Take a backup of your database (i.e. MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
+1. Restore the backup that you created to the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+1. Optional: If the name of your restored database isn't **AXDB**, open Windows PowerShell as an administrator, and run the following script.
 
-1.  In LCS, go to the Shared Assets Library (right side of the screen).
-
-1.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your on-premises environment. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
-
-1.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
-
-1.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
-
-1.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-locally).
-
-1.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
-
->[!IMPORTANT]
-> In any case, ensure that you have applied the latest quality update to your VHD to ensure it contains the latest fixes for carrying out data upgrades. 
-
-1.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
-
-### Upgrading from within VHD
-
-1.  Restore the backup that you created into the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
-
-1.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
-    
     ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
+
     > [!NOTE] 
-    > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to  Appendix A.
+    > Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [appendix](#appendix) later in this topic.
 
-    The script will run a database connection test to check that the information you provide is valid.
+    The script will run a database connection test to verify that the information that you provided is valid.
 
-1.  Download the MajorVersionDataUpgrade.zip file from LCS. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
+1. In LCS, go to the Shared asset library. Under **Select asset type**, select **Software deployable package**, and then select **AX2012DataUpgrade-10-0-8** to download the **MajorVersionDataUpgrade.zip** file.
+1. Copy the file, paste it in the desired location (for example: **c:\\D365FFOUpgrade\\**), and unzip it.
+1. Open a Command Prompt window as an administrator, change the directory to the folder that you just unzipped, and run the following commands.
 
-1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
+    1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
+    2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
+    3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-1.  Open a command prompt as administrator and change the directory to the unzipped folder in the previous step.
-
-1.  Using the command prompt from the previous step, execute the following commands:
-
-    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
-
-    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
-
-    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
-
-1.  When the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
-
-1. Restore the database into your on-premises environment's SQL Server, with a different name from the AX 2012 (for example, AXDBupgraded). The restored database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-
+1. After the upgrade process is successfully completed, back up the newly upgraded database. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
+1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
-    1. If you have customizations:
+    - If you have customizations, follow these steps:
 
-        1.  In LCS, go to the Shared Assets Library.
+        1. In LCS, go to the Shared asset library.
+        1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance and Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+        1. Use the restore backup option for SQL Server to create a new database from this file. (Typically, this database is named **AXDB**.) For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+        1. The demo database must be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1. In LCS, set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the name of the database that you specify should be the name of the database that you created earlier (typically **AXDB**).
+        1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
+        1. Shut down on-premises Application Object Server (AOS), Business Intelligence (BI), and Management Reporter (MR) servers, or stop the services from the Azure Service Fabric portal (Deactivate (Restart)).
+        1. Rename or delete the demo database (typically **AXDB**) that you used for deployment, and then rename your new database (typically **AXDBupgraded**) to the name that the demo database had (typically **AXDB**).
+        1. The renamed database must be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal (Activate).
 
-        1.  Under **Select asset type**, choose **Model** and download: Dynamics 365 Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+            > [!NOTE]
+            > The Database synchronization process will be triggered when the AOS nodes start up, and your environment will be unavailable until the process is completed.
 
-        1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
-        
-        1.  The demo database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+    - If you don't have customizations, follow these steps:
 
-        1.  In LCS, set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the name of the database that you specify should be the one created in the step above (typically AXDB).
+        1. Optional: Rename your old database (typically **AXDBold**), and then rename your new database (typically **AXDB**). In the next step, make sure that you enter the name of the upgraded database.
+        2. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
-        1.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
+### Upgrade where the VHD points to your database
 
-        1.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal (Deactivate (Restart)).
+1. Back up the database from your on-premises environment (typically **AXDB**). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
+1. Restore the backup that you just created into the database server, and give it a different name (for example, **AXDBtoupgrade**). For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+1. Open Windows PowerShell as an administrator, and run the following script.
 
-        1.  Rename or delete the demo database (typically AXDB) used in the deploy and then rename your new database (typically AXDBupgraded) to the name that the demo database had (typically AXDB).
-        
-        1. The renamed database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-
-        1.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal (Activate).
-
-        > [!NOTE]
-        > The Database synchronization process will be triggered when the AOS nodes startup and your environment will be unavailable until the process is finished.
-
-    1. If you didn't have customizations:
-
-        a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
-
-        b.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
-
-### Upgrading with VHD pointing to your database
-
-1.  Back up your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
-
-1.  Restore the backup that you just created into the database server and give it a different name (AXDBtoupgrade). For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
-
-1.  Open a new PowerShell as Administrator and execute:
-    
     ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
     ```
 
     > [!NOTE]
-    > Substitute \<\*\> with the values you require.
-
-    > [!NOTE]
+    > - Replace **\<DB-name\>**, **\<SqlServerName\>**, **\<User\>**, and **\<Password\>** with the values that you require.
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2016).
-    >
-    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the OneBox trusted certificate authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
-    >
-    > - Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
-    >
-    > - When you install the Certificate Authority in the OneBox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the FQDN and the IP it should resolve to.
+    > - You must add the certificate authority certificate that signed your SQL Server certificate to the OneBox trusted certificate authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
+    > - Make sure that the database user that you use has the **sysadmin** server role, or at least **All Privileges**, assigned on the database that you want to upgrade. Also make sure that the user has permissions to access tempDB. Step 6 of the upgrade process will fail if these conditions aren't met.
+    > - When you install the certificate authority in the OneBox, make sure that you use the fully qualified domain name (FQDN) or IP address to connect to the database that appears there. If you can't access the database by using the domain name, because it doesn't point to that server, edit your hosts file, and add the FQDN and the IP address that the FQDN should be resolved to.
 
-1.  Download the MajorVersionDataUpgrade.zip file from LCS. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
+1. In LCS, go to the Shared asset library. Under **Select asset type**, select **Software deployable package**, and then select **AX2012DataUpgrade-10-0-8** to download the **MajorVersionDataUpgrade.zip** file.
+1. Copy the file, paste it in the desired location (for example: **c:\\D365FFOUpgrade\\**), and unzip it.
+1. Open a Command Prompt window as an administrator, change the directory to the folder that you just unzipped, and run the following commands.
 
-1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
+    1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
+    2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
+    3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
+1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
+1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this topic.
+1. Configure your upgraded database for Dynamics 365 for Finance and Operations by following the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
-1.  Using the Command Prompt from the previous step, execute the following commands:
+    - If you have customizations, follow these steps:
 
-    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
+        1. In LCS, go to the Shared asset library.
+        1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance and Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+        1. Use the restore backup option for SQL Server to create a new database (typically **AXDB**) from this file. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+        1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the database that you should specify should be the database that you configured earlier (typically **AXDB**).
+        1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
+        1. Shut down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
+        1. Rename or delete the demo database (typically **AXDB**) that you used for deployment, and then rename your new database (typically **AXDBupgraded**) to the name that the demo database had (typically **AXDB**).
+        1. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
+            > [!NOTE]
+            > The Database synchronization process will be triggered when the AOS nodes start up, and your environment will be unavailable until the process is completed.
 
-    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
+    - If you don't have customizations, follow these steps:
 
-1. If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
-
-1. Execute the Configure-OnpremUpgrade.ps1 script with the values stated in [Resetting VHD Database](#resetting-vhd-database-optional)
-
-1. Configure your upgraded database for Dynamics 365 for Finance and Operations by following the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-
-1. Deploy a new D365 for Finance and Operations On-premise environment.
-
-    1. If you have customizations:
-
-        1.  In LCS, go to the Shared Assets Library.
-
-        1.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
-
-        1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
-
-        1.  The demo database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-
-        1.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one you configured in the step above (typically AXDB).
-
-        1.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
-
-        1.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
-
-        1.  Rename or delete the demo database (typically AXDB) used in the deploy and then rename your new database (typically AXDBupgraded) to the name the demo database had (typically AXDB).
-
-        1.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
-
-        > [!NOTE]
-        > The Database synchronization process will be triggered when the AOS nodes startup and your environment will be unavailable until the process is finished.
-
-1. If you don't have customizations:
-
-    a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
-
-    b.  Set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+        1. Optional: Rename your old database (typically **AXDBold**), and then rename your new database (typically **AXDB**). In the next step, make sure that you enter the name of the upgraded database.
+        2. Set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
 ### Configuring existing users
 
-If you followed either of the procedures above, you will be able to login with the Administrator user you specified in LCS. The rest of your users however will not be able to login as they haven't been configured for the new system. Execute a Select statement against your USERINFO table and take note of the value in the NETWORKDOMAIN fied for the Admin user. Set the NETWORKDOMAIN field of all interactive users for which you want to enable logging in to the same value that the Admin user has (i.e. https://adfs.contoso.com/adfs or http://adfs.contoso.com/adfs/services/trust). The NETWORKALIAS column will also need to be modified. In Dynamics 365 for Finance and Operation we require that this field be set to the users email address (i.e. testuser@contoso.com).
+If you followed either of the previous procedures, you can sign in by using the Administrator user that you specified in LCS. However, none of your other users can sign in until they have been configured for the new system. Run a **Select** statement against your USERINFO table, and make a note of the value in the **NETWORKDOMAIN** field for the Administrator user (for example, `https://adfs.contoso.com/adfs` or `http://adfs.contoso.com/adfs/services/trust`). Then, for all interactive users who should be able to sign in, set the **NETWORKDOMAIN** field to the same value that the Administrator user has. The **NETWORKALIAS** field must also be modified. In Dynamics 365 for Finance and Operation, this field is set to the user's email address (for example, `testuser@contoso.com`).
 
-### Resetting VHD Database (Optional)
+### Resetting the VHD database (Optional)
 
-If you have used the Configure-On-Premises-Upgrade.ps1 script. Run the following command to reset your database configuration to default:
+If you used the **Configure-On-Premises-Upgrade.ps1** script, run the following command to reset your database to the default configuration.
 
 ```powershell
 .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB' -DatabaseServer 'localhost' -DatabaseUser 'axdbadmin' -DatabasePassword 'AOSWebSite@123'
 ```
 
-## Appendix A
+## Appendix
 
-### Configure-On-Premises-Upgrade.ps1 usage
+### Using the Configure-On-Premises-Upgrade.ps1 script
 
-> [!Important]
-> This script is only meant to be run from a OneBox VHD environment.
+> [!IMPORTANT]
+> This script is intended to be run only from a OneBox VHD environment.
 >
-> The script requires that you pass at least the DatabaseName parameter. If you don't pass it, the script will automatically request it.
+> The script requires that you pass at least the **DatabaseName** parameter. If you don't pass this parameter, the script automatically requests it.
 
-If you want to pass an additional parameter like DatabaseServer, or DatabaseUser you can do so but this will cause the script to ask you for all additional parameters. This happens because the script will assume that you want to point the database connection to a machine outside the VM and those parameters will be required to correctly establish the connection.
+You can pass an additional parameter, such as **DatabaseServer** or **DatabaseUser**, if you want. However, in this case, the script will request all additional parameters. This behavior occurs because the script will assume that you want to point the database connection to a machine outside the VM. Therefore, those parameters are required to correctly establish the connection.
 
-The parameters that can be passed to the script are:
+The following parameters can be passed to the script:
 
--   **-DatabaseName** - Name of the database you want to upgrade.
+- **-DatabaseName** – The name of the database to upgrade.
+- **-DatabaseServer** – The database server that contains the Finance and Operations (on-premises) database.
+- **-DatabaseUser** – The user name for SQL Authentication.
+- **-DatabasePassword** – The password for SQL Authentication.
 
--   **-DatabaseServer** - Database server containing Finance and Operations (on-premises) database.
-
--   **-DatabaseUser** - Username for SQL Authentication.
-
--   **-DatabasePassword** - Password for SQL Authentication.
-
-After configuration has been passed, the script will execute a database connection test with the new parameters. If the script is unable to connect we recommend that you use Microsoft SQL Server Management Studio or some other tool to debug the connection from there.
+After the configuration has been passed, the script uses the new parameters to run a database connection test. If the script can't connect to the database, we recommend that you debug the connection from SQL Server Management Studio or another tool.
 
 **Configure-On-Premises-Upgrade.ps1**
 
 ```powershell
 <#
 .Synopsis
-   Configures a OnebBox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
+    Configures a OneBox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
 
 .DESCRIPTION
-   This must be executed before the upgrade process is carried out.
+    This must be executed before the upgrade process is carried out.
 
 .EXAMPLE
-   .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB'
+    .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB'
 
-   .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB' -DatabaseServer '127.0.0.1' -DatabaseUser 'axdbadmin' -DatabasePassword 'secretPass'
+    .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB' -DatabaseServer '127.0.0.1' -DatabaseUser 'axdbadmin' -DatabasePassword 'secretPass'
 #>
 [CmdletBinding()]
 param
@@ -298,11 +238,11 @@ $command = Resolve-Path "$webroot\bin\Microsoft.Dynamics.AX.Framework.ConfigEncr
 Start-Process $command $commandParameter -PassThru -Wait
 
 if([string]::IsNullOrEmpty($DatabaseUser) -and [string]::IsNullOrEmpty($DatabasePassword) -and [string]::IsNullOrEmpty($DatabaseServer)) { 
-  
+
     [xml]$web = Get-Content $webroot\web.config
 
     $web.SelectSingleNode("configuration/appSettings/add[@key='DataAccess.Database']").value = [string]$DatabaseName
-        
+
 }
 else { 
 
@@ -315,17 +255,17 @@ else {
     if([string]::IsNullOrEmpty($DatabaseUser)){
 
         $DatabaseUser = if($value = Read-Host 'What is the SQL Authentication username? [axdbadmin]') {$value} else {'axdbadmin'}
-    
+
     }
 
     if([string]::IsNullOrEmpty($DatabasePassword)){
-    
+
         $dbPassEn = if($value = Read-Host 'What is the SQL Authentication password?' -AsSecureString) {$value} else {''}
 
         $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($dbPassEn) 
-    
+
         $DatabasePassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
-        
+
     } 
 
     [xml]$web = Get-Content $webroot\web.config
@@ -397,18 +337,6 @@ else{
 
 ### Troubleshooting
 
--   Wrong database name or user doesn't have access to that database:
-    Exception calling \"Open\" with \"0\" argument(s): \"Cannot open
-    database \"AxDB1\" requested by the login. The login failed. Login
-    failed for user \'axdbadmin\'.\"
-
--   Could not establish a connection. Check ip/fqdn and ports: Exception
-    calling \"Open\" with \"0\" argument(s): \"A network-related or
-    instance-specific error occurred while establishing a connection to
-    SQL Server. The server was not found or was not accessible. Verify
-    that the instance name is correct and that SQL Server is configured
-    to allow remote connections. (provider: Named Pipes Provider, error:
-    40 - Could not open a connection to SQL Server)\"
-
--   Login credentials are not correct. Exception calling \"Open\" with
-    \"0\" argument(s): \"Login failed for user \'axdbadmin\'.\"
+- Wrong database name or user doesn't have access to that database: Exception calling "Open" with "0" argument(s): "Cannot open database "AxDB1" requested by the login. The login failed. Login failed for user 'axdbadmin'."
+- Could not establish a connection. Check ip/fqdn and ports: Exception calling "Open" with "0" argument(s): "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)"
+- Login credentials are not correct. Exception calling "Open" with "0" argument(s): "Login failed for user 'axdbadmin'."
