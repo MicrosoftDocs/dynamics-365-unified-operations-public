@@ -46,7 +46,7 @@ As more registers are generated and then linked to the appropriate devices, both
 Finance and Operations and Retail already provide the basic requirements for device management. As you plan your implementation, you must make sure that you take all the appropriate considerations, to help minimize pain and maximize benefit.
 
 ## Implementation considerations
-This section describes some things that you should consider as you plan to implement features that are related to inventory management in your retail store and distribution locations.
+This section describes some things that you should consider as you plan to implement features that are related to device management in your retail store and distribution locations.
 
 ### Generate the physical topology
 Planning is the most critical requirement for successful implementation of an enterprise resource planning (ERP) solution. One of the main deliverables of this planning should be a *physical topology*. The physical topology is a visualization of many details about a company, from the lowest POS device to the highest network connections at the headquarters. At a minimum, the following deliverables should be completed:
