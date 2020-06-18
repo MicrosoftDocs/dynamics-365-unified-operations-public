@@ -47,7 +47,7 @@ We have made some improvements to how extensions are handled during an upgrade. 
 
 ## Ext schema
 
-In Finance and Operations and Commerce we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Operations and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
+In Finance and Operations and Commerce we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Operations and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas. Extension will not have permission to read the ax, dbo or crt schema definition during deployment, so please don’t include any queries in the extension script to read the dbo, ax or crt schema definition. 
 
 We introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Commerce and Finance and Operations, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
 
@@ -103,6 +103,7 @@ END;
 - Don't use any of the crt, ax or dbo schema data types in ext schema. Create custom types in ext schema and use it.
 - Don’t modify any views, procedures, functions, or any of the database artifacts.
 - Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+- Don't access any dbo.objects from extension script because dbo schema objects will not be available in Commerce scale unit deployments.
 
 
 ```sql
