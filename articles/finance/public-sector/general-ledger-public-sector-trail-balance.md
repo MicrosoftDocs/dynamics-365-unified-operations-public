@@ -70,7 +70,7 @@ Based on the type of transaction, such as an Advanced ledger entry (ALE) or purc
  </tr>
 
  <tr>
- <td  valign="top" ><p> laceholder</p></td>
+ <td  valign="top" ><p> </p></td>
  <td  valign="top" ><p>No data</p></td>
  <td  valign="top" ><p>ALE or general journal header description</p></td>
  </tr>
