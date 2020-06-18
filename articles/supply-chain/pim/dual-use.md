@@ -87,7 +87,7 @@ The **Dual use categories** page helps you make a list of those categorizations 
 To identify a product as a dual-use good and apply a dual-use category to it:
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Select or create the product to open its **Released product details** page.
+1. Select or create a product to open its **Released product details** page.
 1. Expand the **Foreign trade** FastTab.
 1. Set **Dual use products** to **Yes** to identify the current product as a dual-use good.
 1. Set the **Dual use code** to the code that applies for the current product (as defined on the **Dual use categories** page).
