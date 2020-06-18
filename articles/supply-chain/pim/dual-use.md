@@ -108,6 +108,5 @@ To do this, go to **Product information management \> Setup \> Product complianc
 | **Effective** | Select the first date on which the current certificate is valid.|
 | **Expiration** | Select the last date on which the current certificate is valid. |
 | **Print on invoice** | Select this check box to print this certificate number on invoices addressed to the specified country during the specified date range. |
-| **Print on packing slip** | Select this check box to print this certificate number on  packing slips addressed to the specified country during the specified date range. |
-| **Print on packing slip** | Select this check box to print this certificate number on  packing slips addressed to the specified country during the specified date range. |
-| **Print on sales order** | Select this check box to print this certificate number on  sales orders. |
+| **Print on packing slip** | Select this check box to print this certificate number on packing slips addressed to the specified country during the specified date range. |
+| **Print on sales order** | Select this check box to print this certificate number on sales orders addressed to the specified country during the specified date range. |
