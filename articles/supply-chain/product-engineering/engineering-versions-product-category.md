@@ -52,7 +52,7 @@ When you use engineering products, each product will have at least one engineeri
 - If the version is **active** and can be released and used in transactions. For more information see …. (readiness control)
 - The **engineering organization** where the product is created, and which owns the product. For more information see …. (Engineering organization)
 - The **engineering documents**
-- The **engineering**** attributes**. For more information see …. (Engineering attributes)
+- The **engineering attributes**. For more information see …. (Engineering attributes)
 - The **engineering bill of material(s)**
 - The **engineering route(s)**
 
@@ -68,7 +68,7 @@ With the engineering version concept, you will always have one or more engineeri
 
 Whether it is required to make the version visible in inventory and orders or not, is dependent on such factors as mentioned above as well as company practice and needs to be determined by the company. You can make choice on the **engineering product category** and this will be applicable for all products created from the engineering product type for all companies where the product is released to.
 
-In case the product is setup with logistical impact, the engineering version needs to be specified on each transaction. The system will propose the **latest active**** version **, but you can choose a different version among the different active versions for the company. In case the product is setup without logistical impact, the engineering version used is not specified on the transactions, but the latest active version is used by the system. As an example, when creating the** production bill of material **and running** master planning**.
+In case the product is setup with logistical impact, the engineering version needs to be specified on each transaction. The system will propose the **latest active version**, but you can choose a different version among the different active versions for the company. In case the product is setup without logistical impact, the engineering version used is not specified on the transactions, but the latest active version is used by the system. As an example, when creating the **production bill of material ** and running **master planning**.
 
 ## Engineering product category
 

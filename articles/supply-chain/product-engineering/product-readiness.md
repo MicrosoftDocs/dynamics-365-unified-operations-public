@@ -60,7 +60,7 @@ In case a new engineering version is created for the product, the system will ve
 
 You can find the menu item for opening the readiness checks for a product on the **Released products details** page. For the readiness checks assigned to an engineering version, you can open them from the **engineering version** page.
 
-For open readiness checks assigned to you, you can open the **My open readiness checks** pageon the menu and on the Product readiness for discrete manufacturing **workspace**. The setup for who is assigned to the readiness check is done at the engineering product type. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check.
+For open readiness checks assigned to you, you can open the **My open readiness checks** page on the menu and on the Product readiness for discrete manufacturing **workspace**. The setup for who is assigned to the readiness check is done at the engineering product type. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check.
 
 ## Processing readiness checks
 

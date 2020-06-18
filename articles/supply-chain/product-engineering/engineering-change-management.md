@@ -63,7 +63,7 @@ As described in the … (engineering organization &amp; data ownership rules), t
 
 - **Engineering change order in engineering organization:** you can make basic changes to the engineering data. As examples this includes creating new versions of the products, changing the products structure via the bill of materials, changing engineering attribute values. You can edit the field **impact** and choose between the following options:
   - **None** : an update to the existing version (in-version update)
-  - **New**** version**: a new version will be created based on the selected version
+  - **New version**: a new version will be created based on the selected version
   - **New product** : a completely new product or a new product variant will be created based on the selected product version
 - **Engineering change order in operational organization:** you can make changes to the logistical data of the product. This can be just enriching the existing bill of materials with settings for sourcing. It can be adding local routes or even local bill of materials. But it can also be enriching the bill of material by adding new bill of material lines for local packaging materials, lubrication fluids or instructions in the local language. Whenever these enrichments have been done in the operational organization, they will be preserved when new updates are sent over from the engineering organization again. For more info see … (Engineering organization &amp; data ownership rules).
 
