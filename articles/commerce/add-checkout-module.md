@@ -76,9 +76,9 @@ Delivery options module requires a shipping address to determine the modes of de
 
 - **Loyalty points** – This module lets a customer pay for an order by using loyalty points. It provides a summary of available points and expiring points, and lets the customer select the number of points to redeem. If the customer isn't signed in or isn't a loyalty member, or if the total amount in the cart is 0 (zero), this module is automatically hidden.
 
-- **Payment** – This module lets a customer pay for an order by using credit or debit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. The payment integration is provided by the Adyen payment connector for this module. For more information about how to use setup and configure this connector to use on e-commerce, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md). The Adyen payment connector also supports Strong Customer Authentication. Part of the EU Payment Services Directive 2.0 (PSD2.0) requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. For more details refer to [Strong Customer Authentication using Adyen](adyen_redirect.md). 
+- **Payment** – This module lets a customer pay for an order by using credit or debit card. Refer to [Payment module](add-payment-module.md) for more details
 
-- **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
+- **Billing address** – This module lets a customer provide billing address for the payment option that they chose.  Refer to [Payment module](add-payment-module.md) for more details
 
     The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
 
@@ -126,6 +126,6 @@ To add a checkout module to a new page and set the required properties, follow t
 
 [Footer module](author-footer-module.md)
 
-[Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md)
+[Payment module](add-payment-module.md)
 
-[Strong Customer Authentication using Adyen](adyen_redirect.md)
+[Gift card module](add-giftcard.md)
