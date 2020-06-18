@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce Data Exchange implementation guidance
-description: This topic is intended for people who implement functionality that is related to data synchronization in a retail environment. It gives an overview, implementation tips, and overall guidance that should be considered as you plan your implementation.
+description: This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives an overview, implementation tips, and overall guidance that should be considered as you plan your implementation in regards to forms, setup, configuration, best practices, and more.
 author: jashanno
 manager: AnnBe
 ms.date: 05/01/2020
@@ -30,20 +30,18 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Commerce Data Exchange implementation guidance
-This topic is intended for people who implement functionality that is related to data synchronization in a retail environment. It gives an overview, implementation tips, and overall guidance that should be considered as you plan your implementation.
+This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives an overview, implementation tips, and overall guidance that should be considered as you plan your implementation in regards to forms, setup, configuration, best practices, and more.
 
 ## Overview
-A *device* is an instrument on which a point of sale (POS) application can be installed, configured, and used to perform operations that are required in order to run or help run the business that owns that instrument. In other words, a device is a piece of technology that runs a POS application to help run a business. This business doesn't have to be exclusively a retail operation. For example, a hospital has a gift shop, a warehouse manages inventory, and a law firm generates invoices. What is important is that the application that the device runs makes business operations simpler, more efficient, or just better managed and recorded. Regardless of the scenario that they are used in, devices are critical elements. As the number of devices that are used increases, it becomes more valuable to put processes in place to track and manage those devices. Together, these processes are known as *device management*.
+Data configuration and synchronization is crucial to a proper implementation.  Regardless of business needs, IT infrastructure, and overall preparedness, if data is not being correctly synchronized, the entire environment is effectively useless.  As such, it is top priority to understand what is required to configure, generate, synchronize, and verify data synchronization across a full implementation. From Headquarters, through the Commerce Scale Unit, to the brick and mortar stores utilizing Modern POS and other in-store components.
 
-The POS application that this topic discusses is Retail Modern POS (MPOS) in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Retail. MPOS lets users complete business operations quickly, efficiently, and simply. It also helps the retail organization manage the many devices that run MPOS across the business. Although this topic discusses many aspects of an MPOS device, the two critical aspects are the business-oriented *register* and the physical concept of a *device*.
+The **Registers** page is the virtual tracking mechanism for the businual device.
 
-The **Registers** page is the virtual tracking mechanism for the business-oriented details of an instance of the MPOS application. These details include the visual profile that is used, the automatic sign-out time, and the store that the register is a part of. All these details are stored in the virtual register. When the register is correctly set up and configured, it's linked to a virtual device.
+The **Devices** page is the virtual tracking mechanism  installed.
 
-The **Devices** page is the virtual tracking mechanism for the physical concept of a device. The business-oriented register is linked here to complete the configuration and prepare for installation. The virtual device stores details such as the validation status, when the POS application was activated, and the version that will be installed or the version that is currently installed.
+As more registers are generated and then linked to the appropriate devices, both physical and virtual management become critically important. For example, a business has one  devices that aren't currently used.
 
-As more registers are generated and then linked to the appropriate devices, both physical and virtual management become critically important. For example, a business has one physical device, a Microsoft Surface that will run MPOS. The Surface must be configured for the business, because it might be on a domain or require additional software that is specific to that business. MPOS must also be installed and activated on the Surface. Over time, the device might require servicing or replacement, or it might even be stolen. If the business doesn't have just one device, but dozens, hundreds, or even thousands, processes must be put in place to appropriately watch, manage, and verify the status of all the devices. These devices include both devices that are currently used and devices that aren't currently used.
-
-Finance and Operations and Retail already provide the basic requirements for device management. As you plan your implementation, you must make sure that you take all the appropriate considerations, to help minimize pain and maximize benefit.
+Commerce already provides the full foundation for CDX functionality. As you plan your implementation, you must make sure that you take all the appropriate considerations, to help minimize pain and maximize benefit.
 
 ## Implementation considerations
 This section describes some things that you should consider as you plan to implement features that are related to inventory management in your retail store and distribution locations.
