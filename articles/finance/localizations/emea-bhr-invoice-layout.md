@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.13
 | **FEATURE TITLE** | Configure invoice layout for Bahrain |
 | **FEATURE REFERENCE**                | BH-00003|
 | **BLUEPRINT CLASSIFICATION**                | INVOICING: Invoice layout / e-invoicing|
-| **CONFIGURABLE**                | Yes. ER formats: **Sales invoice (Excel) (BH)**, **Free text invoice (Excel) (BH)**.|
+| **CONFIGURABLE**                | Yes. [See the configurations.](#ERConfigs)|
 | **INTERNAL REFERENCE**                | 3982346|
 | **FIRST AVAILABLE IN**                | Monthly update 10.0.13|
 | **LATEST FEATURE UPDATE**                | Monthly update 10.0.13|
@@ -60,7 +60,7 @@ For more information how to enable features, see [Feature management overview](.
 
 ## Import of Electronic Reporting configurations
 In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
- - Sales invoice (Excel) (BH);
+ - <a name="ERConfigs"></a>Sales invoice (Excel) (BH);
  - Free text invoice (Excel) (BH).
  
 > [!NOTE]
