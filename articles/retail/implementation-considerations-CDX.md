@@ -123,9 +123,9 @@ This section describes some things that you should consider as you plan to imple
 
 
 **OPEN QUESTIONS IN THIS DOC NEEDING ANSWERS**
-Verify Working folders are no longer required with Commerce Batch Service (Azure Batch for now)
-What data can be cut from offline DBs and it will still work correctly for sales?
-Review the logic around download session retry and cut (Need Daniel / Yonas assistance here)
+ - Verify Working folders are no longer required with Commerce Batch Service (Azure Batch for now)
+ - What data can be cut from offline DBs and it will still work correctly for sales?
+ - Review the logic around download session retry and cut (Need Daniel / Yonas assistance here)
 
 
 ## Resources
