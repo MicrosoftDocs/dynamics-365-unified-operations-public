@@ -73,16 +73,16 @@ Data is generated and flows in a very specific way.  It is important to understa
 
 **Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
 
-This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards.
+This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
 
 **Insert data configuration flow diagram (Commerce Architecture - Forms flow)**
 
-This diagram shows the 
+This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
 
 
 
 ## Implementation considerations
-This section describes some things that you should consider as you plan to implement features that are related to inventory management in your retail store and distribution locations.
+This section describes some things that you should consider as you plan to implement features that are related to data management and configuration.
 
 
 
