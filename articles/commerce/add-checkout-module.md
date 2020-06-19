@@ -52,7 +52,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
 ### Modules that can be used in the checkout module
 
-- **Shipping address** – This module lets a customer add or select the shipping address for an order. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. It can't be customized for individual line items. Shipping address formats are defined for each country or region, and the country/region-specific rules are enforced by this module. Although this module doesn't provide address validation, address validation can be implemented through customization. If the order includes only items that will be picked up in the store, this module is automatically hidden.
+- **Shipping address** – This module lets a customer add or select the shipping address for an order. Refer to [Shipping address module](add-shippingaddress-module.md) for more details.
 
     The following image shows an example of a shipping address module on a checkout page.
 
@@ -120,3 +120,5 @@ To add a checkout module to a new page and set the required properties, follow t
 [Payment module](add-payment-module.md)
 
 [Gift card module](add-giftcard.md)
+
+[Shipping address module](add-shippingaddress-module.md)
