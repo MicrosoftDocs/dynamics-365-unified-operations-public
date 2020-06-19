@@ -41,7 +41,7 @@ Use the **Trial balance with transactional detail** report to display the detail
 - Debits and credits 
 - The resulting balances for a date range of 31 days or less
 
-For transactions, the report information includes the following: 
+For transactions, the report information includes the following items: 
 
 - Transaction date
 - Voucher number
@@ -51,11 +51,11 @@ For transactions, the report information includes the following:
 - Ledger dimension name
 - Transaction description
 - Debits or credits
-- Arunning balance for the year-to-date based on the current fiscal year
+- A running balance for the year-to-date based on the current fiscal year
 
 You can use this trial balance to identify errors for account balances. All accounts that have debit balances should equal all accounts that have credit balances. The report includes information from the general journal accounting entries.
 
-The data can run by
+The data can run by the following items:
 
 - Posted transactions
 - Pending transactions (which includes all transactions that are not posted), or 
