@@ -36,6 +36,10 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic describes the Omni-channel Commerce order payments feature that enables editing of e-Commerce and POS order payments from the back office.
 
+## Availability
+
+This feature is available starting with the 10.0.13 monthly update.
+
 ## Key terms
 
 | Term | Description |
@@ -56,17 +60,34 @@ Order created in the point of sale:
 
 COP_NONCC_PAY
 
-This feature essentially enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders. When order completion is enabled, business logic enforces that those order have payments available prior to submittal for processing. 
+This feature essentially enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
 
 Order completion:
 
 COP_ORDERCOMPLETION
 
-## Key scenarios enabled by Omni-channel order payments
+## Key scenarios
 
 ### Editing order payments
 
-When this feature is enabled, e-commerce order payments can easily be managed through order completion. If a customer places an online order, then calls into the Call Center to request a change to the order, the order completion function will allow for the payments on that order to be adjusted to support the new balance due.
+When this feature is enabled, e-commerce and POS order credit card payments can easily be managed through order completion. For example, if a customer places an online order, then calls into the Call Center to request a change to the order, the order completion function will allow for the payments on that order to be adjusted to support the new balance due.
+
+Properties on order line that can be edited prior to payment capture:
+- Card type
+- Card number
+- Payment amount
+- Percent amount
+
+**Editing to a larger payment amount with the same card**
+If the amount is made larger than when the order was created, a new authorization will be created for that amount.
+
+**Editing to a lower payment amount with the same card**
+
+**Removing an old card and adding a new one**
+
+**Editing a payment that has already been used to invoice part of the order**
+
+
 
 ### Cancelling order payments
 
@@ -80,13 +101,9 @@ Return orders for non-Call Center orders generated in the back office can execut
 
 Return orders can be refunded to a credit card other than the one used to pay for the original order. 
 
+### Orders with prepayments
 
-
-recall a customer that has orders created in the POS and in the Call CenterThe result is that non-Call Center orders have not had the same back office payment management capabilities as orders created in Call Center. 
-
-This feature enables back office management of payments applied to orders originating from the e-commerce storefront and point of sale by leveraging Call Center order completion capabilities.
-
-
+Prepayments already have payment vouchers associated with them.That meass
 
 ## Prerequisite features
 
@@ -101,13 +118,23 @@ To enable Omni-Channel order payments, you first must enable several other featu
 
 ## Prerequisite configurations
 
-map operations to payment methods
+### Map payment methods to operations to payment methods
+
+This feature requires that payment methods in all channels are mapped to a corresponding operation. This was not previously required, but is neccesary to support management of order payments in the back office. .
+
+Example from Call Center:
+
+COP_OPERATION
+
+
 
 Need a call center
 
 Need to be call center user
 
 Need to enable order completion. https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion
+
+Disable pay later
 
 ## Setup
 
