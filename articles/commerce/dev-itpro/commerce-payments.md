@@ -44,7 +44,39 @@ This topic describes the Omni-channel Commerce order payments feature that enabl
 
 ## Overview
 
-This feature enables back office management of payments applied to orders originating from the e-commerce storefront and point of sale.
+Dynamics 365 Commerce consists of 3 main channels: Point of Sale, e-Commerce, and Call Center. Until now, management of payment lines for orders created in those channels has not been uniform. For example, when creating and editing orders the Call Center there is an order completion flow that ensures payments are designated for those orders prior to fulfillment. Alternatively, POS and e-commerce orders have not supported Call Center order completion. The primary way to observe this lack of parity is by observing orders on the **Customer service** form in the back office and observing which orders have an active link to the **Payments** form. 
+
+Order created in Call Center:
+
+COP_CC_PAY
+
+Order created in the point of sale:
+
+COP_NONCC_PAY
+
+This feature essentially enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders. When order completion is enabled, business logic enforces that those order have payments available prior to submittal for processing. 
+
+Order completion:
+
+COP_ORDERCOMPLETION
+
+## Key scenarios enabled by Omni-channel order payments
+
+### Editing non-Call Center order payments
+
+When this feature is enabled, e-commerce order payments can easily be managed through order completion. If a customer places an online order, then calls into the Call Center to request a change to the order, the order completion function will allow for the payments on that order to be adjusted to support the new balance due.
+
+### Cancelling non-Call Center order payments
+
+When this feature is enabled, payments for non-Call Center orders can be cancelled through order completion. 
+
+
+
+recall a customer that has orders created in the POS and in the Call CenterThe result is that non-Call Center orders have not had the same back office payment management capabilities as orders created in Call Center. 
+
+This feature enables back office management of payments applied to orders originating from the e-commerce storefront and point of sale by leveraging Call Center order completion capabilities.
+
+
 
 ## Prerequisite features
 
@@ -56,6 +88,16 @@ To enable Omni-Channel order payments, you first must enable several other featu
 | Unified payment posting journal defaults for Commerce | When this feature is enabled, business logic will be changed in regards to how customer payment and customer refund payment journals are created for orders created through Call Center, POS or e-Commerce channels. For more information, visit the [Unified payment posting journal defaults for Commerce](TBD) topic. | Yes |
 | Duplicate payment protection on invoicing | This feature will enable duplicate payment protection for invoicing scenarios. It may affect customizations in invoicing scenarios. If your organization has customizations in this feature area, please ensure these customizations are refactored prior to enabling this option on production environments. | Yes |
 | Enable refunds over multiple captures | This feature addresses an issue with performing multiple linked refunds against an order. | Yes |
+
+## Prerequisite configurations
+
+map operations to payment methods
+
+Need a call center
+
+Need to be call center user
+
+Need to enable order completion.
 
 ## Setup
 
