@@ -58,7 +58,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
     ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
-- **Delivery options** – This module lets a customer select a mode of delivery for an order. Refer to [Delivery options module](add-deliveryoptions-module.md] for more details.
+- **Delivery options** – This module lets a customer select a mode of delivery for an order. Refer to [Delivery options module](add-deliveryoptions-module.md) for more details.
 
      The following image shows an example of a delivery options module on a checkout page.
     ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
