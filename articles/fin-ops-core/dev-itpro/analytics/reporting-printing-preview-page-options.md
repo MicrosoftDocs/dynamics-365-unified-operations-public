@@ -53,7 +53,7 @@ Use the toolbar option to choose the network printer and establish print setting
 
 ## Accessing preview options
 Use the Feature Management area to access the document preview options.  The two additional features are identified as…
-- Enable Export on Report PDF viewer
-- Enable Network Printing on Report PDF viewer
+- **Enable Export on Report PDF viewer**
+- **Enable Network Printing on Report PDF viewer**
 
 Click the **Enable now** button while selecting these features to begin taking advantage of the new user options.  [Click here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) for more information on Feature Management.
