@@ -71,7 +71,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Payment** – This module lets a customer pay for an order by using credit or debit card. Refer to [Payment module](add-payment-module.md) for more details
 
-- **Billing address** – This module lets a customer provide billing address for the payment option that they chose.  Refer to [Payment module](add-payment-module.md) for more details
+- **Billing address** – This module lets a customer provide billing address for the payment option that they chose.  Refer to [Billing address module](add-payment-module.md) for more details
 
      The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
 
@@ -115,9 +115,7 @@ To add a checkout module to a new page and set the required properties, follow t
 
 [Order confirmation module](order-confirmation-module.md)
 
-[Header module](author-header-module.md)
-
-[Footer module](author-footer-module.md)
+[Delivery options](add-deliveryoptions-module.md)
 
 [Payment module](add-payment-module.md)
 
