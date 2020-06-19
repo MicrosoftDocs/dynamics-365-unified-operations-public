@@ -41,6 +41,8 @@ This topic describes the Omni-channel Commerce order payments feature that enabl
 | Term | Description |
 |---|---|
 | Commerce payment | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. |
+| Order completion | **Enable order completion** is a setting that forces orders to go thgrough a set of validation rules before they can be cofirmed. For more details, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
+| Call Center order | An order created in the back office by a Call Center user. |
 
 ## Overview
 
@@ -62,13 +64,21 @@ COP_ORDERCOMPLETION
 
 ## Key scenarios enabled by Omni-channel order payments
 
-### Editing non-Call Center order payments
+### Editing order payments
 
 When this feature is enabled, e-commerce order payments can easily be managed through order completion. If a customer places an online order, then calls into the Call Center to request a change to the order, the order completion function will allow for the payments on that order to be adjusted to support the new balance due.
 
-### Cancelling non-Call Center order payments
+### Cancelling order payments
 
-When this feature is enabled, payments for non-Call Center orders can be cancelled through order completion. 
+Support cancellation of uncaptured payments for non-Call Center orders through order completion.
+
+### Linked refund 
+
+Return orders for non-Call Center orders generated in the back office can execute linked refunds against the credit card used to pay for the original order.
+
+### Unlinked refund
+
+Return orders can be refunded to a credit card other than the one used to pay for the original order. 
 
 
 
@@ -97,7 +107,7 @@ Need a call center
 
 Need to be call center user
 
-Need to enable order completion.
+Need to enable order completion. https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion
 
 ## Setup
 
