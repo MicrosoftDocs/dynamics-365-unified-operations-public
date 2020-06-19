@@ -502,6 +502,8 @@
             href: dev-itpro/adyen-connector-listPI.md
           - name: Strong Customer Authentication (SCA) using the Adyen connector
             href: adyen_redirect.md
+          - name: Dedicated payment terminals and prompts for a printer and cash drawer
+            href: pos-multi-hws.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
