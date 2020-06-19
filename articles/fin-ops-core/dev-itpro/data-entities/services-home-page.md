@@ -99,7 +99,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 
 ### Register your external application 
 
-1. In the application, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
+1. In Finance and Operations modules, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
