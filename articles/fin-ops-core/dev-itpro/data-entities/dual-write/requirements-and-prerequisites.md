@@ -118,10 +118,15 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
         ![Assigning the System Administrator role](media/manage-user-roles.png)
 
-    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Teams**.
-    8. Select the root business unit/organization, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select the **System Administrator** check box to assign the required system admin rights.
-
-        ![Assigning the System Administrator role](media/assign-system-admin-role.png)
+    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
+    8. Select the **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each of the entity integrated through dual-write. 
+    
+      For instructions on how to create a Security Role, see [Create or configure a custom security role](https://docs.microsoft.com/en-us/power-platform/admin/database-security#create-or-configure-a-custom-security-role)
+      
+      > [!NOTE]
+      > The root business unit’s default team will become the default owner for all records integrated through dual-write.
+      > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
+      > This means that at the very least, **users from that business unit will have a read access on all the records that are owned by that team**. If this isn’t desired behavior, make sure that users are not member of the root business unit
 
     9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
