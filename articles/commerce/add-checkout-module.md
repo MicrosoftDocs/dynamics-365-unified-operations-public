@@ -58,13 +58,8 @@ A checkout module shows an order summary and provides the functionality for plac
 
     ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
-- **Delivery options** – This module lets a customer select a mode of delivery for an order. See [Online channel setup](channel-setup-online.md) for configuring the modes of delivery for the online channel. In addition, each delivery mode can have an associated shipping charge. Refer to [Omni-channel Advanced auto-charges](omni-auto-charges.md) to learn more about configuring charges for the online store. The Fabrikam theme, supports a mixed mode of delivery where some items can be shipping and some can be pickup. For a mixed mode of delivery to work, its required to configure **Header Charges with proration** see [Prorate header chanrges to match sales lines](pro-rate-charges-matching-lines.md) for more details on this configuration.  
+- **Delivery options** – This module lets a customer select a mode of delivery for an order. Refer to ]Delivery options module](add-deliveryoptions-module.md] for more details.
 
-In 10.0.13, the Delivery Options module will also work for **Header charges without proration** assuming the workflow doesnt support a mixed mode of delivery in the cart.  This requires "XYZ" flag in backoffice to be turned on. 
-
-If a shipping charge is configured as a Line charge, it will automatically appear on the cart line for each item.
-
-Delivery options module requires a shipping address to determine the modes of delivery. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden. 
      The following image shows an example of a delivery options module on a checkout page.
     ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
 
