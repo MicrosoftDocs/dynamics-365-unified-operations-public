@@ -8,10 +8,16 @@ The features allow more replenishment work to be created than will fit in a loca
 
 ## Enable the Replenishment over location capacity feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order): Here, the features are listed as:
 
 - **Module** - *Warehouse management*
+- **Feature name** - *Organization-wide work blocking*
+-
+- **Module** - *Warehouse management*
 - **Feature name** - *Replenishment over location capacity*
+
+> [!IMPORTANT]
+> If you are using the Demo Data for Company USMF and have previously enabled the feature *Location license plate positioning*, you will need to disable the setting **Enable license plate positioning** on the **BULK-06** location profile in order to complete the mobile steps in this scenario.
 
 ## Setup
 
@@ -30,14 +36,21 @@ The replenish over capacity functionality is enabled on the location profile.
         - What method is used for determining when to release more work. You can release by either *Quantity* or *Percent*
             - Percent uses a percentage capacity based on stocking limits or volumetrics.
             - Quantity uses a specific quantity value.
-    - **Overflow quantity** - *0.50*
+    - **Overflow quantity** - *0.65*
         - Quantity at which the location overflows. Work will be available whenever the location on hand + work quantity is below this value.
+        - Any replenishment work above this value will be blocked, and will have to be unblocked manually.
+        - Any location stocking limits will not be will be taken into consideration when calculating the work quantity.
+
     - **Overflow unit** - *PL*
         - Unit associated with the overflow quantity.
-1. This will make more replenishment work available when the location gets down to 0.50 PL.
+        - This will make more replenishment work available when the location gets down to 0.65 PL.
+
     - **Overflow percentage**
         - This field is only enabled when the **Work availability threshold type** - *Percent* is selected.
             - Percentage at which the location overflows. Work will be available whenever the location on hand + work quantity is below this percentage.
+            - Any replenishment work quantity percentage above this value will be blocked, and will have to be unblocked manually.
+            - Any location stocking limits will be will be taken into consideration when calculating the work quantity percentage.
+            - If no location stocking limits are defined, work quantity percentage will be calculated by volume if volume constraints are defined on location profile.
 
 >[!TIP]
 >
@@ -80,14 +93,15 @@ Replenishment templates are a set of rules that control when and how to replenis
 
 When **Automate replenishment work release** is set to *Yes*, it will create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template and create a replenishment template of the type Wave demand.
 
-1. Go to **Warehouse management > Setup > Waves > Wave templates**
-1. On the left side pane, ensure **Wave template type** is set to *Shipping*
-1. Select template **61 Shipping** in the pane.
+1. Go to **Warehouse management > Setup > Waves > Wave templates**.
+1. Above the list of Wave templates, ensure **Wave template type** is set to *Shipping*.
+1. Select template **61 Shipping** in the list.
 1. Select **Edit** from the Action Pane.
-1. On the **General** FastTab:
+1. On the **General** FastTab, select the following:
     - **Automate replenishment work release** - *Yes*
+        - Select this option to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template of the type Wave demand. Set up a replenishment template in the Replenishment templates page. This requires that you add the replenish method to the wave template.
 
-1. On the **Methods** FastTab, in the *SELECTED METHODS* area, edit the *Wave step code* on the following line:
+1. On the **Methods** FastTab, in the *SELECTED METHODS* section, edit the *Wave step code* on the following line:
     - **Method sequence** - *4* (may be different)
     - **Method name** - *replenish*
     - **Name** - *Replenishment*
@@ -99,62 +113,73 @@ When **Automate replenishment work release** is set to *Yes*, it will create dem
 
 ### Create replenishment work
 
-1. Go to **Sales and Marketing > Sales orders > All sales orders**
-1. Select **New** in the Action Pane to open a flyout for creating a new sales order.
-1. In the flyout, enter the following:
-    - On the **Customer** section, set **Customer account** to *US-007*.
-    - On the **General** section, set **Warehouse** to *61*.
+#### Sales Order 1
 
-1. Select **OK** to create the sales order and close the flyout.
-1. The new sales order is opened. It includes a new empty line on the **Sales order lines** FastTab. On this line, set the following values:
+1. Go to **Sales and Marketing > Sales orders > All sales orders**
+1. Select **New** in the Action Pane to open a dialog box for creating a new sales order.
+1. In the dialog box, enter the following:
+    - **Customer account** - *US-007*
+    - **Warehouse** - *61*
+
+1. Select **OK** to create the sales order and close the dialog box.
+1. The new sales order is opened. It includes a new empty line on the **Sales order lines** FastTab. On this line, enter the following:
     - **Item number** - *T0100*
     - **Quantity** - *40*
-1. In the **Sales order lines** toolbar select **Inventory**, then select *Reservation*.
-1. On the **Reservation** form select *Reserve lot*.
-1. Close the form.
-1. In the Action Pane, select **Warehouse** then *Release to warehouse*.
+
+1. On the **Sales order lines** Toolbar select **Inventory**, then select *Reservation*.
+1. On the **Reservation** page select *Reserve lot*.
+1. Close the page.
+1. On the Action Pane, select **Warehouse** then *Release to warehouse*.
 1. Informational messages will be displayed indicating *Wave* and *Shipment* ID's created, a *Replenishment wave* is also created.
     - Note a *Warning message* is also displayed indicating that: **Work IDXXXX** cannot be unblocked because it has unfinished replenishment work.
 
-1. Create a second sales order.
-1. Select **New** in the Action Pane to open a flyout for creating a new sales order.
-1. In the flyout, enter the following:
-    - On the **Customer** section, set **Customer account** to *US-001*.
-    - On the **General** section, set **Warehouse** to *61*.
+#### Sales Order 2
 
-1. Select **OK** to create the sales order and close the flyout.
+1. Create a second sales order.
+1. Select **New** in the Action Pane to open a dialog box for creating a new sales order.
+1. In the dialog box, enter the following:
+    - **Customer account** - *US-001*
+    - **Warehouse** - *61*
+
+1. Select **OK** to create the sales order and close the dialog box.
 1. The new sales order is opened. It includes a new empty line on the **Sales order lines** FastTab. On this line, set the following values:
     - **Item number** - *T0100*
     - **Quantity** - *60*
-1. In the **Sales order lines** toolbar select **Inventory**, then select *Reservation*.
-1. On the **Reservation** form select *Reserve lot*.
+
+1. In the **Sales order lines** Toolbar select **Inventory**, then select *Reservation*.
+1. On the **Reservation** page select *Reserve lot*.
 1. Close the form.
 1. In the Action Pane, select **Warehouse** then *Release to warehouse*.
 1. Informational messages will be displayed indicating *Wave* and *Shipment* ID's created, a *Replenishment wave* is also created.
     - Note a *Warning message* is also displayed indicating that: **Work IDXXXX** cannot be unblocked because it has unfinished replenishment work.
 
-1. Create a third order.
-1. Select **New** in the Action Pane to open a flyout for creating a new sales order.
-1. In the flyout, enter the following:
-    - On the **Customer** section, set **Customer account** to *US-004*.
-    - On the **General** section, set **Warehouse** to *61*.
+#### Sales Order 3
 
-1. Select **OK** to create the sales order and close the flyout.
+1. Create a third order.
+1. Select **New** in the Action Pane to open a dialog box for creating a new sales order.
+1. In the dialog box, enter the following:
+    - **Customer account** - *US-004*
+    - **Warehouse** - *61*
+
+1. Select **OK** to create the sales order and close the dialog box.
 1. The new sales order is opened. It includes a new empty line on the **Sales order lines** FastTab. On this line, set the following values:
     - **Item number** - *T0100*
     - **Quantity** - *30*
-1. In the **Sales order lines** toolbar select **Inventory**, then select *Reservation*.
-1. On the **Reservation** form select *Reserve lot*.
+1. In the **Sales order lines** Toolbar select **Inventory**, then select *Reservation*.
+1. On the **Reservation** page select *Reserve lot*.
 1. Close the form.
 1. In the Action Pane, select **Warehouse** then *Release to warehouse*.
 1. Informational messages will be displayed indicating *Wave* and *Shipment* ID's created, a *Replenishment wave* is also created.
     - Note a *Warning message* is also displayed indicating that: **Work IDXXXX** cannot be unblocked because it has unfinished replenishment work.
 
+#### View Work Details
+
 1. Go to **Warehouse management > Work > Work details**.
 1. In the **Overview** section, filter the **Warehouse** column for *61*.
-1. You should have 7 total **Work order type** headers created:
+1. You should have 7 total **Work order type** work created for the three demand sales orders:
     - **Replenishment** - *3*
-    - **Sales orders** - *4* (Picking)
+    - **Sales orders** - *4*
+        - Sales order 1 will have two work ID's created.
         - Make note of the **Work ID** for the Sales orders.
 1. All 3 **Replenishment** Work order types should have the same *Pick* and *Put* locations in the **Lines** section:
     - **Pick** - *02A01R5S1B*
@@ -163,21 +188,20 @@ When **Automate replenishment work release** is set to *Yes*, it will create dem
 Depending on your on-hand quantities, the created **Work quantities** might vary slightly from case to case, but overall the created work headers should match this scenario example.
 
 >[!IMPORTANT]
->You will complete the next steps using the mobile app, you will also need to identify the *License plates* to complete the Picking Scenario.
+>You will complete the next steps using the mobile app, you will also need to identify the *License plates* to complete the Picking and Replenishment Scenarios.
 
-#### Picking License plate
+#### On-hand inventory license plate ID
 
-1. Go to **Inventory management > Inquiries and reports > On-hand list**
-1. Select  **Show filters**, enter the following to get the license plates for the scenario (use the *begins with* filter):
+1. Go to **Inventory management > Inquiries and reports > On-hand list**.
+1. Select the **Show filters** button to open the filter pane.Enter the following filter criteria to get the license plates for the scenario (use the *begins with* filter):
     - **Item number** - *T0100*
     - **Warehouse** - *61*
-    - **Location** - *02A01R5S1B*
     - Click **Apply**
 
-1. In the On-hand grid note the license plate number for item *T0100* in location *02A01R5S1B*.
-    - Note, if license plate is not displayed on the grid, select *Dimensions* from the Action Pane and add it to the display.
+1. In the **On-hand** grid note the license plate numbers for item *T0100* in each of the locations. Note which license plate is in each location, you will need this later.
+    - If license plate is not displayed on the grid, on the Action Pane select **Dimensions**. In the **Storage Dimensions** section of the dialog box, select all the values. In the **Transactions** section, select **Item number** and **Quantity <> 0**. Select **OK** when done.
 
-1. Close the form.
+1. Close the page.
 
 ### Process Steps
 
@@ -187,38 +211,122 @@ Perform the warehouse location replenishment for the first two work ID's. Work o
 
 1. Login to the mobile device for a user in warehouse **61**.
 1. Go to **Inventory > Replenishment**.
-1. You will be prompted to complete the first replenishment work created (qty = first Replenishment work quantity).
-1. Enter a *License plate* number to Pick from:
-    - **LP** - *LPREPL01*
-1. Select **OK**
-1. Confirm the Pick details, select **OK*.
-1. Confirm the Put details.
+1. You will be prompted to complete the first replenishment work.
+    - The Item number, Quantity and Location to pick from are displayed.
+
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+1. Select the **OK** button ( ✔ ).
+1. A system generated **Target LP** number is generated for the new license plate for the picked item.
+1. Select **OK** to confirm.
+1. Put work is displayed to put the Target LP into the replenishment location.
     - The Put location should be **06A01R2S1B**.
-1. Select **OK**.
-1. Work completed for the first replenishment pick.
-1. You will then be prompted to complete the second replenishment work.
-1. Complete the pick and the put replenishment work just as you did for the first pick and put.
 
-After the completion of the second Replenishment work order type, the mobile device will display a message that there is *No work available*, even though some replenishment work is remaining. This is because the replenishment work has a Replenishment Work Availability status of *Held* and is therefore **Blocked**.
+1. Confirm the Put details, select **OK*.
+1. A message **Work Completed** is displayed along with the details of the next replenishment pick task.
+    - The Item number, Quantity and Location to pick from are displayed.
+    - The pick location will be the same as the first replenishment location, therefore, the license plate will be the same license plate ID used for the first replenishment work task.
 
-This status was triggered because the picking location's *Location profile* the work is being put to has an *Overflow quantity* of 0.5 PL (Pallet), and the previous two work headers filled the location to its limit for the Item *T0100*.
+1. Complete the replenishment work for the second work task as you did for the first.
+    - The quantity and Target LP will be different.
+
+After the completion of the second Replenishment work, the mobile device will display a message that is *Work Completed* and there is *No Work Available*, even though some replenishment work is remaining. This is because the replenishment work has a Replenishment Work Availability status of *Held* and is therefore **Blocked**.
+
+This status was triggered because the picking location's *Location profile*, that the work is being assigned to, has an *Overflow quantity* of 0.65 PL (Pallet). The previous two replenishment work tasks filled the location near its overflow limit for the Item *T0100* (the unit conversion for the item is **1 PL = 100 ea**). The remaining replenishment work would put the location over the over flow quantity.
 
 Until inventory is picked from the location that brings it below the work release threshold on the mobile device menu item, this replenishment will remain *Blocked*.
 
 #### Sales Order Pick
 
+Before the remaining replenishment work task can be completed, the picking location must be depleted of inventory to a level that supports unblocking the remaining replenishment work. This means that the quantity of the inventory on-hand in the location plus the replenishment quantity cannot exceed the **Overflow quantity**. When the combination is less than the overflow, the remaining replenishment will be unblocked.
+
 1. Login to the mobile device for a user in warehouse **61**.
 1. Go to **Outbound > Sales Picking**.
-1. Enter the **Work ID** for any of the Sales orders picking work created.
+1. Enter the first **Work ID** for Sales order 1.
     - Refer to the Work ID's for Sales orders from the Work details form.
+    - This work ID will generate pick work from two separate locations, a quantity of 10 ea.
 
-    Enter the LP to pick from and confirm the pick. Repeat this process for the possible picking work. This is to empty the pick location and bring it below the previously specified threshold of 0.5PL.
+1. Select **OK**.
+1. The **Sales orders: Pick** task screen opens.
+    - The Item number, Quantity and Location to pick from the first location are displayed.
 
-As soon as the pick location on-hand quantity is below the threshold, you will be able to process the remaining replenishment work.
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+1. Select the **OK** button ( ✔ ).
+1. The **Sales orders: Pick** task screen opens.
+    - The Item number, Quantity and Location to pick the next location from are displayed.
 
-Go back to work details, and the Replenishment work availability for the final piece of replenishment will be *Open*, as there is now enough space in the location to accept the replenishment.
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+1. Select the **OK** button ( ✔ ).
+1. The **Sales orders: Put** screen is displayed with the instructions to put away to the outbound staging location both of the picking work completed.
+1. Select **OK**.
+1. A message **Work Completed** is displayed on the Sales Picking screen.
+1. Enter the second **Work ID** for Sales order 1.
+    - There is only one Pick task for this Work ID.
+
+1. Select **OK**.
+1. The **Sales orders: Pick** task screen opens.
+    - The Item number, Quantity and Location to pick from are displayed.
+
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+    - The license plate to enter will be one of the system generated license plates from the replenishment work tasks. Check the **On-hand list** inventory for the Item, Location and Quantity to capture the correct license plate ID.
+
+1. Select the **OK** button ( ✔ ).
+1. Confirm the instructions for the Put task to the outbound staging location.
+1. Select **OK**.
+1. A message **Work Completed** is displayed on the Sales Picking screen.
+
+Sales order 2 is blocked from picking because the replenishment task it is linked to has not been completed. At this time there is still a quantity of 30 ea in the picking location, the replenishment quantity for Sales order 2 is 60 ea. The combination of the on-hand inventory and the replenishment inventory (90 ea) is greater than the overflow quantity of 0.65 PL (or 65 ea). Before the replenishment work can be completed, Sales order 3 needs to be picked.
+
+1. Enter the **Work ID** for Sales order 3.
+    - There is only one Pick task for this Work ID.
+
+1. Select **OK**.
+1. The **Sales orders: Pick** task screen opens.
+    - The Item number, Quantity and Location to pick from are displayed.
+
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+    - The license plate to enter will be one of the system generated license plates from the replenishment work tasks. Check the **On-hand list** inventory for the Item, Location and Quantity to capture the correct license plate ID.
+
+1. Select the **OK** button ( ✔ ).
+1. Confirm the instructions for the Put task to the outbound staging location.
+1. Select **OK**.
+1. A message **Work Completed** is displayed on the Sales Picking screen.
+
+As soon as the pick location on-hand quantity plus the replenishment quantity is below the threshold, you will be able to process the remaining replenishment work.
+
+View **Work details** again, and the Replenishment work availability for the final piece of replenishment (for Sales order 2) will be *Open*, as there is now enough space in the location to accept the replenishment.
 
 You can now process this Replenishment work via the mobile device.
+
+1. Go to **Inventory > Replenishment**.
+1. You will be prompted to complete the remaining replenishment work.
+    - The Item number, Quantity and Location to pick from are displayed.
+
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+1. Select the **OK** button ( ✔ ).
+1. A system generated **Target LP** number is generated for the new license plate for the picked item.
+1. Select **OK** to confirm.
+1. Put work is displayed to put the Target LP into the replenishment location.
+    - The Put location should be **06A01R2S1B**.
+
+1. Confirm the Put details, select **OK*.
+1. A message **Work Completed** and *No Work Available* is displayed.
+
+Now it is possible to pick Sales order 2, it became unblocked once the replenishment work linked to the sales order was completed.
+
+1. Enter the **Work ID** for Sales order 2.
+    - There is only one Pick task for this Work ID.
+
+1. Select **OK**.
+1. The **Sales orders: Pick** task screen opens.
+    - The Item number, Quantity and Location to pick from are displayed.
+
+1. In the **LP** field, enter the *License plate* number for the item in the location that is displayed.
+    - The license plate to enter will be the system generated license plate from the replenishment work task. Check the **On-hand list** inventory for the Item, Location and Quantity to capture the correct license plate ID.
+
+1. Select the **OK** button ( ✔ ).
+1. Confirm the instructions for the Put task to the outbound staging location.
+1. Select **OK**.
+1. A message **Work Completed** is displayed on the Sales Picking screen.
 
 ## Tips
 
