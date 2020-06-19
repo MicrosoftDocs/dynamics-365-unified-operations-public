@@ -38,7 +38,7 @@ This topic describes the default reports for trial balances. It also describes t
 Use the **Trial balance with transactional detail** report to display the details about each transaction for ledger accounts. The report information includes the following items: 
 
 - Opening balances
-- Debits and credits, 
+- Debits and credits 
 - The resulting balances for a date range of 31 days or less
 
 For transactions, the report information includes the following: 
@@ -59,7 +59,7 @@ The data can run by
 
 - Posted transactions
 - Pending transactions (which includes all transactions that are not posted), or 
-- All transactions. 
+- All transactions 
 
 If the transaction includes the financial dimensions, the report displays that information under a ledger account. If dimensions aren’t included with transactions, information for financial dimensions will be grouped at the top of the page. 
 Currently, the report is exported directly to excel. 
