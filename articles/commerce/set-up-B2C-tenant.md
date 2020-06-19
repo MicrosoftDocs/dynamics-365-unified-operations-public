@@ -96,7 +96,7 @@ Reply URLs are important as they provide an allow list of the return domains whe
 In the **Reply URL** box on the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
 - ``https://www.fabrikam.com/_msdyn365/authresp``
-- ``https://www.fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
+- ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## Create user flow policies
 
