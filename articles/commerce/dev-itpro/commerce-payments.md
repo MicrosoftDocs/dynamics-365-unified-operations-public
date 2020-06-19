@@ -78,20 +78,47 @@ Properties on order line that can be edited prior to payment capture:
 - Payment amount
 - Percent amount
 
-**Editing to a larger payment amount with the same card**
-If the amount is made larger than when the order was created, a new authorization will be created for that amount.
+**Editing to a larger payment amount with the same card (uncaptured)**
+If the amount is made larger than when the order was created, a new authorization will be created for that amount. Old auth will be voided. 
 
-**Editing to a lower payment amount with the same card**
+**Editing to a lower payment amount with the same card (uncaptured)**
+Void the old auth and get a new auth.
 
-**Removing an old card and adding a new one**
+**Removing an old card and adding a new one(uncaptured)**
+Void and create a new auth.
 
 **Editing a payment that has already been used to invoice part of the order**
+Amount can be decreased to the already posted/captured amount. The card cannot be changed. A payment line should be added to cover the remaining balance.
+
+**Editing amount when the car payment is fully captured**
+If a payment needs to be increased, but the payment line has already fully captured by previous invoices, if the amount is increased for that payment line, a new authorization will be obtained for the amount over posted amount. 
 
 
+### Removing order payments
 
-### Cancelling order payments
+The following scenarios are for removing payments from the order through order completion. 
 
-Support cancellation of uncaptured payments for non-Call Center orders through order completion.
+**Authorized payments**
+
+Voided
+
+**Partially captured payments**
+
+If the payment is in a 'Paid' state, but has not been fully captured, then the payment cannot be removed. However, the payment amount can be reduced to the already posted amount and the uncaptured amount will be voided from the authorization. 
+
+**Fully captured credit card payments and prepayments**
+Cannot be removed from the order
+
+### Order and sales line cancellation
+
+**Order cancellation for credit card payments that have not been captured**
+Voided
+
+**Order cancellation for credit card payments that have been captured**
+Refunded
+
+**Line cancellation**
+If an order is modified to cancel an order line, then order completion must be used to complete the process. During order cancellation, the payment amount should be reduced to reflect the new order total. 
 
 ### Linked refund 
 
