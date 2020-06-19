@@ -976,7 +976,7 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
-          - name: Order confirmation module
+          - name: Order details module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
