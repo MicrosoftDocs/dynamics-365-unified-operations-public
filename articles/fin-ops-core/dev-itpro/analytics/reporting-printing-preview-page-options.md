@@ -2,7 +2,7 @@
 Dynamics 365 Finance & Operations now offers an expanded collection of user management options while previewing documents within the embedded PDF viewer.  This article describes the **Export** and **Network Printer** options now available for users.
 
 ## Overview
-The efficient publication and distribution of documents is a key component to many functions which are critical to daily business activities.  Documents are used to capture transaction details and often represent an agreement between two parties.  From **Customer Quotations** to **Sales Invoices** through the **Sales Packing Slip** process ultimately producing **Customer Receipts** and **Statements**, business documents come in many forms. These preview options are being delivered to empower users to take the appropriate action with minimal distractions.  
+The efficient publication and distribution of documents is a key component to many functions which are critical to daily business activities.  Documents are used to capture transaction details and often represent an agreement between two parties.  From **Customer Quotations** to **Sales Invoices** through the **Sales Packing Slip** process ultimately producing **Customer Receipts** and **Statements**, business documents come in many forms. The latest preview enhancements are being delivered to empower users to take the appropriate action with minimal distractions.  
 
 Image here
 
