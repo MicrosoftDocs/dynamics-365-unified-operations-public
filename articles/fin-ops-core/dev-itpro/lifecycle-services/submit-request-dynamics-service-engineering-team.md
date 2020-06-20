@@ -126,9 +126,9 @@ Here are some typical examples of service requests that will be denied:
 | Service request type           | Applicable environments | Requested service | Lead time | Downtime |
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
-| Package application            | Production | Deployable package application | Five hours | Based on data volume |
+| Package application            | Production | Deployable package application | Five hours | Five hours |
 | Sandbox point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
-| Production point-in-time restore | Production | Database point-in-time restore | Five hours | Based on data volume |
+| Production point-in-time restore | Production | Database point-in-time restore | Based on data volume | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
 |                                | Production | IP safe list rules | Five hours | Two hours |
