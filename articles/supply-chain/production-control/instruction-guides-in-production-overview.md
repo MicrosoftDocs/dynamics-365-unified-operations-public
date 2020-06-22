@@ -40,23 +40,23 @@ Across all of these core business functions, new employees, new equipment, new p
 
 ## Introduction to Instructions
 
-You can provide instructions in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/).
+You can provide instructions in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/).
 
-With [Dynamics 365 Guides](https://dynamics.microsoft.com/en-us/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for instructions.
+With [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for instructions.
 
-The Dynamics 365 SCM SDK can be used to implement other means of instructions. Please find information on [the data model for instructions here](instructions-datamodel.md).
+The Dynamics 365 SCM SDK can be used to implement other means of instructions. Please find information on [the data model for instructions here](instruction-guides-datamodel.md).
 
 ### Assembly
 
-[![Assembly](./media/work-guides-hero-assembly.png)](./media/work-guides-hero-assembly.png)
+[![Assembly](./media/instruction-guides-hero-assembly.png)](./media/work-guides-hero-assembly.png)
 
 Instructions in assembly operations shows workers the tools and parts they need and how to use them in real work situations.
 
-As a production manager you will create and assign instructions for example for [production routes](routes-operations.md), [operation relations](routes-operations.md#operation-relations), or [bill of materials](bill-of-material-bom.md). Workers will find the relevant instructions on the respective operation experience on the shop floor. 
+As a production manager you will create and assign instructions for example for [production routes](routes-operations.md), [operation relations](routes-operations.md#operation-relations), or [bill of materials](bill-of-material-bom.md). Workers will find the relevant instructions on the respective operation experience on the shop floor.
 
 ### Service
 
-[![Assembly](./media/work-guides-hero-service.png)](./media/work-guides-hero-service.png)
+[![Assembly](./media/instruction-guides-hero-service.png)](./media/work-guides-hero-service.png)
 
 You can equip technicians with guided instructions at the job site, eliminating the need to schedule additional visits.
 
@@ -64,7 +64,7 @@ As a service manager you can assign guides for example to [products](../../comme
 
 ### Quality
 
-[![Assembly](./media/work-guides-hero-quality.png)](./media/work-guides-hero-quality.png)
+[![Use Guides in quality assurance tasks](./media/instruction-guides-hero-quality.png)](./media/work-guides-hero-quality.png)
 
 Rollout new processes and ensure increased consistency by turning employee knowledge into a repeatable tool.
 
@@ -72,22 +72,22 @@ As a quality assurance manager you can assign guides for example to [products](.
 
 ### Certifications
 
-[![Assembly](./media/work-guides-hero-certification.png)](./media/work-guides-hero-certification.png)
+[![Use Guides for certification related tasks](./media/instruction-guides-hero-certification.png)](./media/work-guides-hero-certification.png)
 
 Ensure every employee meets high standards by quickly identifying who needs help where.
 
 ### Safety
 
-[![Assembly](./media/work-guides-hero-safety.png)](./media/work-guides-hero-safety.png)
+[![Use Guides in work safety instructions](./media/instruction-guides-hero-safety.png)](./media/work-guides-hero-safety.png)
 
 Provide instructions that walks through dangerous procedures virtually before attempting in the physical environment. With a mixed reality approach workers can experience dangerous procedures virtually.
 
-As a production manager you can provide dedicated handling instructions for hazardous material handling or delicate handling procedures by assigning instructions to [product items](../../commerce/product.md), [routes](routes-operations.md) and [operations](routes-operations.md#operation-relations) while tagging your instructions with a dedicated safety instruction [category](instructions-howto-use-categories.md) which you can create yourself as needed.
+As a production manager you can provide dedicated handling instructions for hazardous material handling or delicate handling procedures by assigning instructions to [product items](../../commerce/product.md), [routes](routes-operations.md) and [operations](routes-operations.md#operation-relations).
 
 ## Get started with instructions
 
 To enable instructions in production processes you Dynamics 365 SCM provides an out of the box integration with [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/). A license and installed application instance of Guides is required in order to build, maintain and assign respective mixed reality instructions to production assets and work.
- 
+
 This integration is switched off by default and the admin of the F&O organization must enable it once in the License Configuration.  
 
 ### Prerequisite steps
@@ -108,6 +108,30 @@ Before you can attach guides to Asset management work orders, you must complete 
 
 ### Use Dynamics 365 Guides
 
-### Managing instructions within Dynamics 365 SCM
+### Managing instructions within Dynamics 365 SCM using Guides
+
+You can assign Guides to the following objects to prescribe the instruction that will be automatically attached to the respective production jobs and available on the shop floor.
+
+- [Resource](operations-resources.md)
+
+    You can add  a Guide to a resource so it will be offered in the context of relevant production jobs. On the Recource form navigate to the tab Associated Guides and  click the new button. Use the drop down in the Name column to select one of the guides that is available to you.
+
+    :::image type="content" source="media/instruction-guides-Resource.png" alt-text="Addign a Guide to a production resource.":::
+
+- [Resource Group](tasks/define-discrete-manufacturing-resource-group.md)
+
+    If you use resource groups to manage groups of machines, production lines or work cells and you want to make available relevant guides on this level, you would navigate to the Associated Guides tab on the Resource Group form and add the relevant guides.
+
+- [Release Product](../pim/tasks/create-released-product-single-company)
+
+    Product level Guides are useful to help shop floor workers with instructions relevant to operate or handle a released product or item. Navigate to the Associated Guides tab on the Release product form and add, remove or manage the associated Guides.
+
+- [Formula](bill-of-material-bom.md#formulas-co-products-and-by-products)
+- [Formula Version](bill-of-material-bom.md#bom-and-formula-versions)
+- [Bill of material](bill-of-material-bom.md)
+- [Bill of material  version](bill-of-material-bom.md#bom-and-formula-versions)
+- [Route](routes-operations.md)
+- [Route Version](routes-operations.md#route-versions)
+- [Route Operation Relation](routes-operations.md#operation-relations)
 
 ### Instructions in the shop floor experience
