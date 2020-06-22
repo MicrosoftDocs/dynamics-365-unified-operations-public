@@ -36,6 +36,7 @@ This topic provides links to documentation resources for Bahrain.
 
 - [Configure invoice layout for Bahrain](emea-bhr-invoice-layout.md)
 - [VAT declaration for Bahrain](bahrain.md)
+- [Invoice issue deadline](emea-invoice-issue-deadline.md)
 
 ## Additional resources
 
