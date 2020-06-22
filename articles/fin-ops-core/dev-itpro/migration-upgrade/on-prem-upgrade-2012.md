@@ -50,7 +50,7 @@ Two upgrade methods are currently supported:
 ### Prerequisites
 
 1. [Sign up for an LCS trial or partner project](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project).
-1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance and Operations application release.
+1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance + Operations application release.
 1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
 1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
 1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
@@ -139,7 +139,7 @@ Two upgrade methods are currently supported:
 
 1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this topic.
-1. Configure your upgraded database for Dynamics 365 for Finance and Operations by following the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Configure your upgraded database for Finance + Operations by following the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
     - If you have customizations, follow these steps:
@@ -164,7 +164,7 @@ Two upgrade methods are currently supported:
 
 ### Configuring existing users
 
-If you followed either of the previous procedures, you can sign in by using the Administrator user that you specified in LCS. However, none of your other users can sign in until they have been configured for the new system. Run a **Select** statement against your USERINFO table, and make a note of the value in the **NETWORKDOMAIN** field for the Administrator user (for example, `https://adfs.contoso.com/adfs` or `http://adfs.contoso.com/adfs/services/trust`). Then, for all interactive users who should be able to sign in, set the **NETWORKDOMAIN** field to the same value that the Administrator user has. The **NETWORKALIAS** field must also be modified. In Dynamics 365 for Finance and Operation, this field is set to the user's email address (for example, `testuser@contoso.com`).
+If you followed either of the previous procedures, you can sign in by using the Administrator user that you specified in LCS. However, none of your other users can sign in until they have been configured for the new system. Run a **Select** statement against your USERINFO table, and make a note of the value in the **NETWORKDOMAIN** field for the Administrator user (for example, `https://adfs.contoso.com/adfs` or `http://adfs.contoso.com/adfs/services/trust`). Then, for all interactive users who should be able to sign in, set the **NETWORKDOMAIN** field to the same value that the Administrator user has. The **NETWORKALIAS** field must also be modified. In Finance + Operations, this field is set to the user's email address (for example, `testuser@contoso.com`).
 
 ### Resetting the VHD database (Optional)
 
@@ -188,7 +188,7 @@ You can pass an additional parameter, such as **DatabaseServer** or **DatabaseUs
 The following parameters can be passed to the script:
 
 - **-DatabaseName** – The name of the database to upgrade.
-- **-DatabaseServer** – The database server that contains the Finance and Operations (on-premises) database.
+- **-DatabaseServer** – The database server that contains the Finance + Operations database.
 - **-DatabaseUser** – The user name for SQL Authentication.
 - **-DatabasePassword** – The password for SQL Authentication.
 
