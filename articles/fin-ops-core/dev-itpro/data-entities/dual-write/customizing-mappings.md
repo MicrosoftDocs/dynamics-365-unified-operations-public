@@ -100,7 +100,7 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges).
     
-    Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against entity fields are supported.  For more examples, see [Standard filter operators](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)
+    Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against entity fields are supported. For more examples, see [Standard filter operators](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
     
 ## Add new entity maps
 
