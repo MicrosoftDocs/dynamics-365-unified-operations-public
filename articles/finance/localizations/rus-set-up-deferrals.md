@@ -4,7 +4,7 @@ title: Set up deferrals (Russia)
 description: This topic explains how to set up deferrals.
 author: anasyash
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -291,7 +291,7 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     | Sequence          | Enter the sequence number.                                              |
     | Description       | Enter a description of the calculation sequence.                        |
     | Channel           | Select the deferral output format for the calculation results.          |
-    | Channel reference | Select the deferred expense group to record the calculation results to. |
+    | Channel reference | Select the deferred expense group to record the calculation results to. If necessary, you can create deferrals for the bookkeeping accounting and tax accounting models at the same time by separating them with commas.|
 
     ![Standard expenses sequence page](media/rus-set-up-deferral-05.png)
 
@@ -380,6 +380,25 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     </table>
 
     ![Counter setup page](media/rus-set-up-deferral-06.png)
+    
+    If you want to create a sequence of calculations to generate a deferrals master record, on the last line, in the **Output** field, specify **Data output**. The value of this line is the amount of the generated deferral.
+    
+The following table provides detailed instructions about how to fill in the **From**, **To**, **Period types**, and **Index** fields depending on the value in the **Line type** field.
+    
+| Line type          | Description                                                                                                                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Register           | Select a register in the **From** field or a range of registers in the **From** and **To** fields.                                                                                                                                                                         |
+| Line type          | Select a line number in the **From** field.                                                                                                                                                                                                                                  |
+| Rates              | Select a rate code in the **From** field.                                                                                                                                                                                                                                    |
+| Constant           | Enter a constant in the **From** field.                                                                                                                                                                                                                                      |
+| Price              | The price from the source document that is generated in the transaction will be selected. The **From** and **To** fields are not editable.                                                                                                                        |
+| Quantity           | The transaction will be selected from the quantity in the generated source document.                                                                                                                                                                                       |
+| Expense            | Select a range of expense or income codes in the **From** and **To**   fields to calculate the amount of expenses and income. The range can consist   of a single code.                                                                                                      |
+| Debit activity     | Select a range of accounts in the **From** and **To** fields on which the amount of debit activity will be calculated. The amount will be calculated   for the period defined in the **Period** types and **Index** fields. The   range can consist of a single account.   |
+| Credit activity    | Select a range of accounts in the **From** and **To** fields on which the amount of credit activity will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The range can consist of a single account. |
+| Debit balance      | Select a range of accounts in the **From** and **To** fields on which the   amount of debit balance will be calculated. The amount will be calculated for   the period defined in the **Period types**  and **Index** fields. The range can consist of a single account.   |
+| Credit balance     | Select a range of accounts in the **From** and **To** fields on which the   amount of credit balance will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The   range can consist of a single account.   |
+| Deferral write-off | Select a deferrals group in the **From** field to calculate the planned   write-off of deferrals in the current period.                                                                                                                                                      |
 
 5. To copy the counter settings from one calculation sequence to another, on the Action Pane, select **Copy counter** to open the **Copy aisle** dialog box.
 
