@@ -5,7 +5,7 @@ title: Adjust an ER format to generate a custom electronic document
 description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -103,7 +103,7 @@ As a user in the Electronic Reporting Functional Consultant role, you must confi
 3. On the **Electronic reporting parameters** page, on the **General** tab, set the **Enable design mode** option to **Yes**.
 4. On the **Attachments** tab, set the following parameters:
 
-    - In the **Configurations** field, select the **File** type for the **USMG** company.
+    - In the **Configurations** field, select the **File** type for the **USMF** company.
     - In the **Job archive**, **Temporary**, **Baseline**, and **Others** fields, select the **File** type.
 
 For more information about ER parameters, see [Configure the ER framework](electronic-reporting-er-configure-parameters.md).
