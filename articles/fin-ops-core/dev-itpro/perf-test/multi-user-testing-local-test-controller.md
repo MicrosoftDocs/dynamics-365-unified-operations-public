@@ -221,6 +221,8 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 ## Configure a tier-2 or above sandbox environment for multi-user testing
 
+### If your AOS allows for Remote Desktop connections
+
 1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
 
     [![Certificates installed](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
@@ -234,7 +236,20 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 6. Save the change, and do an IIRESET.
 7. Repeat steps 3 through 6 on each AOS computer.
-8. Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
+
+### If you have no Remote Desktop access to the server
+
+If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection.
+
+Open a support request, and provide the following information to the support engineer:
+
+    - Your environment ID (You can find this ID on the environment page in Microsoft Dynamics Lifecycle Services \[LCS\])
+    - The **authcert.pfx** and **authcert.cer** certificate files
+    - An acceptable downtime window for the sandbox environment (downtime is expressed in minutes)
+
+## Create test users
+
+Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
 
     [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
 
