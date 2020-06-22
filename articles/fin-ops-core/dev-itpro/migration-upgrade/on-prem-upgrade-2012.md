@@ -5,7 +5,7 @@ title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on
 description: This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -88,7 +88,7 @@ Two upgrade methods are currently supported:
     3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 1. After the upgrade process is successfully completed, back up the newly upgraded database. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
-1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
     - If you have customizations, follow these steps:
