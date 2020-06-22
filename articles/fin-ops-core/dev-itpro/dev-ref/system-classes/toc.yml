@@ -1,7 +1,7 @@
 - name: AbsoluteFieldBinding class
-  href: dev-ref/system-classes/AbsoluteFieldBinding-class
+  href: AbsoluteFieldBinding-class.md
 - name: AdObject class
-  href: dev-ref/system-classes/AdObject-class
+  href: AdObject-class.md
 - name: AllowEncryptionKeyRetrievalPermission class
   href: dev-ref/system-classes/AllowEncryptionKeyRetrievalPermission-class
 - name: AOSLoadGen class
