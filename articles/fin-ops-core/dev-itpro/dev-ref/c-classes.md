@@ -36,6 +36,52 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter C.
 
+[ClassNode class](system-classes/ClassNode-class.md)
+
+[ClientPrintJobSettings class](system-classes/ClientPrintJobSettings-class.md)
+
+[CLRInterop class](system-classes/CLRInterop-class.md)
+
+[CLRObject class](system-classes/CLRObject-class.md)
+
+[CodeAccessPermission class](system-classes/CodeAccessPermission-class.md)
+
+[COM class](system-classes/COM-class.md)
+
+[COMDispFunction class](system-classes/COMDispFunction-class.md)
+
+[COMError class](system-classes/COMError-class.md)
+
+[CommaIo class](system-classes/CommaIo-class.md)
+
+[CommaTextIo class](system-classes/CommaTextIo-class.md)
+
+[CompileOutputInfos class](system-classes/CompileOutputInfos-class.md)
+
+[COMVariant class](system-classes/COMVariant-class.md)
+
+[ConfigurationKeySet class](system-classes/ConfigurationKeySet-class.md)
+
+[Connection class](system-classes/Connection-class.md)
+
+[ContainerClass class](system-classes/ContainerClass-class.md)
+
+[ControlFilterValue class](system-classes/ControlFilterValue-class.md)
+
+[ControlNode class](system-classes/ControlNode-class.md)
+
+[CryptoAPI class](system-classes/CryptoAPI-class.md)
+
+[Cue class](system-classes/Cue-class.md)
+
+[CueGroup class](system-classes/CueGroup-class.md)
+
+[CueReference class](system-classes/CueReference-class.md)
+
+
+
+
+
 Class ClassNode
 ---------------
 
