@@ -36,6 +36,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter E.
 
+[Editor class](system-classes/Editor-class.md)
+
+[Enumerator class](system-classes/Enumerator-class.md)
+
+[ExecutePermission class](system-classes/ExecutePermission-class.md)
+
+
+
+
 ## Class Editor
 
     class Editor extends Object

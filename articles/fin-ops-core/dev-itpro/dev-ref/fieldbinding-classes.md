@@ -36,6 +36,38 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter F.
 
+[FieldBinding class](system-classes/FieldBinding-class.md)
+
+[FieldFilterValue class](system-classes/FieldFilterValue-class.md)
+
+[FileIOPermission class](system-classes/FileIOPermission-class.md)
+
+[FilterValue class](system-classes/FilterValue-class.md)
+
+[Form class](system-classes/Form-class.md)
+
+[FormActionPaneControl class](system-classes/FormActionPaneControl-class.md)
+
+[FormActionPaneTabControl class](system-classes/FormActionPaneTabControl-class.md)
+
+[FormActiveXControl class](system-classes/FormActiveXControl-class.md)
+
+[FormAnimateControl class](system-classes/FormAnimateControl-class.md)
+
+[FormAutoLookupFactory class](system-classes/FormAutoLookupFactory-class.md)
+
+[FormBinding class](system-classes/FormBinding-class.md)
+
+[FormBuildActionPaneControl class](system-classes/FormBuildActionPaneControl-class.md)
+
+[FormBuildActionPaneTabControl class](system-classes/FormBuildActionPaneTabControl-class.md)
+
+[FormBuildActiveXControl class](system-classes/FormBuildActiveXControl-class.md)
+
+[FormBuildAnimateControl class](system-classes/FormBuildAnimateControl-class.md)
+
+
+
 Class FieldBinding
 ------------------
 

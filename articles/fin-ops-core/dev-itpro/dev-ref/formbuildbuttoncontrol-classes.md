@@ -36,6 +36,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter F.
 
+[FormBuildButtonControl class](system-classes/FormBuildButtonControl-class.md)
+
+[FormBuildButtonGroupControl class](system-classes/FormBuildButtonGroupControl-class.md)
+
+[FormBuildButtonSeparatorControl class](system-classes/FormBuildButtonSeparatorControl-class.md)
+
+[FormBuildCheckBoxControl class](system-classes/FormBuildCheckBoxControl-class.md)
+
+[FormBuildComboBoxControl class](system-classes/FormBuildComboBoxControl-class.md)
+
+[FormBuildCommandButtonControl class](system-classes/FormBuildCommandButtonControl-class.md)
+
+[FormBuildContainerControl class](system-classes/FormBuildContainerControl-class.md)
+
+[FormBuildControl class](system-classes/FormBuildControl-class.md)
+
+[FormBuildDataSource class](system-classes/FormBuildDataSource-class.md)
+
+[FormBuildDateControl class](system-classes/FormBuildDateControl-class.md)
+
+[FormBuildDateTimeControl class](system-classes/FormBuildDateTimeControl-class.md)
+
+[FormBuildDesign class](system-classes/FormBuildDesign-class.md)
+
+[FormBuildDropDialogButtonControl class](system-classes/FormBuildDropDialogButtonControl-class.md)
+
+[FormBuildFastTabHeaderControl class](system-classes/FormBuildFastTabHeaderControl-class.md)
+
+[FormBuildFastTabSummarySeparator class](system-classes/FormBuildFastTabSummarySeparator-class.md)
+
+
 Class FormBuildButtonControl
 ----------------------------
 
