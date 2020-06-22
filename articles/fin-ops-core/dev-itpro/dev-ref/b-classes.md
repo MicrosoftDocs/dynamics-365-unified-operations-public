@@ -36,6 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter B.
 
+[Binary class](system-classes/Binary-class.md)
+[BinaryIo class](system-classes/BinaryIo-class.md)
+[BinData class](system-classes/BinData-class.md)
+
+
 Class Binary
 ------------
 

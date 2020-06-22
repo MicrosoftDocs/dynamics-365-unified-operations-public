@@ -36,6 +36,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter A.
 
+[AbsoluteFieldBinding class](system-classes/AbsoluteFieldBinding-class.md)
+[AdObject class](system-classes/AdObject-class.md)
+[AllowEncryptionKeyRetrievalPermission class](system-classes/AllowEncryptionKeyRetrievalPermission-class.md)
+[AOSLoadGen class](system-classes/AOSLoadGen-class.md)
+[AOSSessionInfo class](system-classes/AOSSessionInfo-class.md)
+[AOTTableFieldList class](system-classes/AOTTableFieldList-class.md)
+[ApplicationObjectTreeWindow class](system-classes/ApplicationObjectTreeWindow-class.md)
+[Array class](system-classes/Array-class.md)
+[AsciiIo class](system-classes/AsciiIo-class.md)
+[AssemblyDeployManager class](system-classes/AssemblyDeployManager-class.md)
+[AsyncTaskResult class](system-classes/AsyncTaskResult-class.md)
+[AxaptaCOMConnectorMonitor class](system-classes/AxaptaCOMConnectorMonitor-class.md)
+
+
 ## Class AbsoluteFieldBinding
 
     class AbsoluteFieldBinding extends FieldBinding
