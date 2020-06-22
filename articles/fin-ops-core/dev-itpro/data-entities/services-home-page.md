@@ -76,7 +76,7 @@ The following illustration describes how authorization must be configured for Au
 
 And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
 
-![Service to service calls using clident credentials](./media/S2SAuth.jpg)
+![Service to service calls using client credentials](./media/S2SAuth.jpg)
 
 ### Register a web application with AAD
 
