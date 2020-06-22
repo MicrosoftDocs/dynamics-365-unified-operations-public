@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 Dual-use goods are typically items that have both civilian and military applications. For example, a chemical might potentially be used as either a fertilizer or as an explosive.  Many countries have special regulations that apply to the export, import, and transportation of dual-used goods, so keeping track of the various policies and certificates is important for companies involved in the international trade of dual-use products.
 
-The dual-use feature helps companies keep track of products identified as dual-use, stores certificate numbers for each relevant product and destination country, and can print valid certificate numbers on relevant invoices, packing slips, and/or sales orders. 
+The dual-use feature helps companies keep track of products identified as dual-use, stores certificate numbers for each relevant product and destination country, and can print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 
 This feature helps to ensure that your products always ship with up-to-date certifications. Consider the following scenario:
 
@@ -66,21 +66,10 @@ The **Dual use categories** page helps you make a list of those categorizations 
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Dual use code** | Enter the primary category value of the ECCN. |
-| **Dual use category** |  Enter the subcategory value of the ECCN. |
-| **Dual use group** |  Enter the group of the originating regime for the ECCN. |
-| **Dual use regime** | Enter the originating regime value of the ECCN. |
-
-<!-- KFM. Maybe should be:
-
-| **Setting** | **Description** |
-| --- | --- |
 | **Dual use code** | Enter the full ECCN code. For example, "3A001".|
 | **Dual use category** |  Enter the commerce control list (CCL) category part of the ECCN code. For the previous example, this would be "3". |
 | **Dual use group** |  Enter the product group part of the ECCN code. For the previous example, this would be "A".  |
 | **Dual use regime** | Enter the regime code for the item, which identifies the reason it is classified as dual-use. For the previous example, this would be "001".  |
-
--->
 
 ## Apply dual-use categories to products
 
