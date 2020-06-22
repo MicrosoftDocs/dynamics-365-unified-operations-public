@@ -1,948 +1,948 @@
-- name:AbsoluteFieldBinding class
+- name: AbsoluteFieldBinding class
   href: dev-ref/system-classes/AbsoluteFieldBinding-class.md
-- name:AdObject class
+- name: AdObject class
   href: dev-ref/system-classes/AdObject-class.md
-- name:AllowEncryptionKeyRetrievalPermission class
+- name: AllowEncryptionKeyRetrievalPermission class
   href: dev-ref/system-classes/AllowEncryptionKeyRetrievalPermission-class.md
-- name:AOSLoadGen class
+- name: AOSLoadGen class
   href: dev-ref/system-classes/AOSLoadGen-class.md
-- name:AOSSessionInfo class
+- name: AOSSessionInfo class
   href: dev-ref/system-classes/AOSSessionInfo-class.md
-- name:AOTTableFieldList class
+- name: AOTTableFieldList class
   href: dev-ref/system-classes/AOTTableFieldList-class.md
-- name:ApplicationObjectTreeWindow class
+- name: ApplicationObjectTreeWindow class
   href: dev-ref/system-classes/ApplicationObjectTreeWindow-class.md
-- name:Array class
+- name: Array class
   href: dev-ref/system-classes/Array-class.md
-- name:AsciiIo class
+- name: AsciiIo class
   href: dev-ref/system-classes/AsciiIo-class.md
-- name:AssemblyDeployManager class
+- name: AssemblyDeployManager class
   href: dev-ref/system-classes/AssemblyDeployManager-class.md
-- name:AsyncTaskResult class
+- name: AsyncTaskResult class
   href: dev-ref/system-classes/AsyncTaskResult-class.md
-- name:AxaptaCOMConnectorMonitor class
+- name: AxaptaCOMConnectorMonitor class
   href: dev-ref/system-classes/AxaptaCOMConnectorMonitor-class.md
-- name:Binary class
+- name: Binary class
   href: dev-ref/system-classes/Binary-class.md
-- name:BinaryIo class
+- name: BinaryIo class
   href: dev-ref/system-classes/BinaryIo-class.md
-- name:BinData class
+- name: BinData class
   href: dev-ref/system-classes/BinData-class.md
-- name:ClassNode class
+- name: ClassNode class
   href: dev-ref/system-classes/ClassNode-class.md
-- name:ClientPrintJobSettings class
+- name: ClientPrintJobSettings class
   href: dev-ref/system-classes/ClientPrintJobSettings-class.md
-- name:CLRInterop class
+- name: CLRInterop class
   href: dev-ref/system-classes/CLRInterop-class.md
-- name:CLRObject class
+- name: CLRObject class
   href: dev-ref/system-classes/CLRObject-class.md
-- name:CodeAccessPermission class
+- name: CodeAccessPermission class
   href: dev-ref/system-classes/CodeAccessPermission-class.md
-- name:COM class
+- name: COM class
   href: dev-ref/system-classes/COM-class.md
-- name:COMDispFunction class
+- name: COMDispFunction class
   href: dev-ref/system-classes/COMDispFunction-class.md
-- name:COMError class
+- name: COMError class
   href: dev-ref/system-classes/COMError-class.md
-- name:CommaIo class
+- name: CommaIo class
   href: dev-ref/system-classes/CommaIo-class.md
-- name:CommaTextIo class
+- name: CommaTextIo class
   href: dev-ref/system-classes/CommaTextIo-class.md
-- name:CompileOutputInfos class
+- name: CompileOutputInfos class
   href: dev-ref/system-classes/CompileOutputInfos-class.md
-- name:COMVariant class
+- name: COMVariant class
   href: dev-ref/system-classes/COMVariant-class.md
-- name:ConfigurationKeySet class
+- name: ConfigurationKeySet class
   href: dev-ref/system-classes/ConfigurationKeySet-class.md
-- name:Connection class
+- name: Connection class
   href: dev-ref/system-classes/Connection-class.md
-- name:ContainerClass class
+- name: ContainerClass class
   href: dev-ref/system-classes/ContainerClass-class.md
-- name:ControlFilterValue class
+- name: ControlFilterValue class
   href: dev-ref/system-classes/ControlFilterValue-class.md
-- name:ControlNode class
+- name: ControlNode class
   href: dev-ref/system-classes/ControlNode-class.md
-- name:CryptoAPI class
+- name: CryptoAPI class
   href: dev-ref/system-classes/CryptoAPI-class.md
-- name:Cue class
+- name: Cue class
   href: dev-ref/system-classes/Cue-class.md
-- name:CueGroup class
+- name: CueGroup class
   href: dev-ref/system-classes/CueGroup-class.md
-- name:CueReference class
+- name: CueReference class
   href: dev-ref/system-classes/CueReference-class.md
-- name:DataEntityDataSourceRuntimeContext class
+- name: DataEntityDataSourceRuntimeContext class
   href: dev-ref/system-classes/DataEntityDataSourceRuntimeContext-class.md
-- name:DataEntityPersister class
+- name: DataEntityPersister class
   href: dev-ref/system-classes/DataEntityPersister-class.md
-- name:DataEntityRuntimeContext class
+- name: DataEntityRuntimeContext class
   href: dev-ref/system-classes/DataEntityRuntimeContext-class.md
-- name:DataEventArgs class
+- name: DataEventArgs class
   href: dev-ref/system-classes/DataEventArgs-class.md
-- name:DataImportExportManager class
+- name: DataImportExportManager class
   href: dev-ref/system-classes/DataImportExportManager-class.md
-- name:DataImportManager class
+- name: DataImportManager class
   href: dev-ref/system-classes/DataImportManager-class.md
-- name:DataImportSessionInfo class
+- name: DataImportSessionInfo class
   href: dev-ref/system-classes/DataImportSessionInfo-class.md
-- name:DataSet class
+- name: DataSet class
   href: dev-ref/system-classes/DataSet-class.md
-- name:DataSetRun class
+- name: DataSetRun class
   href: dev-ref/system-classes/DataSetRun-class.md
-- name:DataSourceMethodInfo class
+- name: DataSourceMethodInfo class
   href: dev-ref/system-classes/DataSourceMethodInfo-class.md
-- name:DataSourceMethodInfoList class
+- name: DataSourceMethodInfoList class
   href: dev-ref/system-classes/DataSourceMethodInfoList-class.md
-- name:DataSourceNode class
+- name: DataSourceNode class
   href: dev-ref/system-classes/DataSourceNode-class.md
-- name:DataSourceRuntimeMetadataChangedEvtArgs class
+- name: DataSourceRuntimeMetadataChangedEvtArgs class
   href: dev-ref/system-classes/DataSourceRuntimeMetadataChangedEvtArgs-class.md
-- name:DateTimeUtil class
+- name: DateTimeUtil class
   href: dev-ref/system-classes/DateTimeUtil-class.md
-- name:DialogBox class
+- name: DialogBox class
   href: dev-ref/system-classes/DialogBox-class.md
-- name:DictClass class
+- name: DictClass class
   href: dev-ref/system-classes/DictClass-class.md
-- name:DictCompositeChildDataEntity class
+- name: DictCompositeChildDataEntity class
   href: dev-ref/system-classes/DictCompositeChildDataEntity-class.md
-- name:DictCompositeDataEntity class
+- name: DictCompositeDataEntity class
   href: dev-ref/system-classes/DictCompositeDataEntity-class.md
-- name:DictConfigurationKey class
+- name: DictConfigurationKey class
   href: dev-ref/system-classes/DictConfigurationKey-class.md
-- name:DictDataEntity class
+- name: DictDataEntity class
   href: dev-ref/system-classes/DictDataEntity-class.md
-- name:DictDataEntityField class
+- name: DictDataEntityField class
   href: dev-ref/system-classes/DictDataEntityField-class.md
-- name:DictEnum class
+- name: DictEnum class
   href: dev-ref/system-classes/DictEnum-class.md
-- name:DictField class
+- name: DictField class
   href: dev-ref/system-classes/DictField-class.md
-- name:DictFieldGroup class
+- name: DictFieldGroup class
   href: dev-ref/system-classes/DictFieldGroup-class.md
-- name:DictFullTextIndex class
+- name: DictFullTextIndex class
   href: dev-ref/system-classes/DictFullTextIndex-class.md
-- name:DictIndex class
+- name: DictIndex class
   href: dev-ref/system-classes/DictIndex-class.md
-- name:Dictionary class
+- name: Dictionary class
   href: dev-ref/system-classes/Dictionary-class.md
-- name:DictLicenseCode class
+- name: DictLicenseCode class
   href: dev-ref/system-classes/DictLicenseCode-class.md
-- name:DictMethod class
+- name: DictMethod class
   href: dev-ref/system-classes/DictMethod-class.md
-- name:DictRelation class
+- name: DictRelation class
   href: dev-ref/system-classes/DictRelation-class.md
-- name:DictTable class
+- name: DictTable class
   href: dev-ref/system-classes/DictTable-class.md
-- name:DictTableMap class
+- name: DictTableMap class
   href: dev-ref/system-classes/DictTableMap-class.md
-- name:DictType class
+- name: DictType class
   href: dev-ref/system-classes/DictType-class.md
-- name:DictView class
+- name: DictView class
   href: dev-ref/system-classes/DictView-class.md
-- name:DLL class
+- name: DLL class
   href: dev-ref/system-classes/DLL-class.md
-- name:DLLFunction class
+- name: DLLFunction class
   href: dev-ref/system-classes/DLLFunction-class.md
-- name:DocNode class
+- name: DocNode class
   href: dev-ref/system-classes/DocNode-class.md
-- name:DynamicPropertyCallback class
+- name: DynamicPropertyCallback class
   href: dev-ref/system-classes/DynamicPropertyCallback-class.md
-- name:DynamicPropertyManager class
+- name: DynamicPropertyManager class
   href: dev-ref/system-classes/DynamicPropertyManager-class.md
-- name:Editor class
+- name: Editor class
   href: dev-ref/system-classes/Editor-class.md
-- name:Enumerator class
+- name: Enumerator class
   href: dev-ref/system-classes/Enumerator-class.md
-- name:ExecutePermission class
+- name: ExecutePermission class
   href: dev-ref/system-classes/ExecutePermission-class.md
-- name:FieldBinding class
+- name: FieldBinding class
   href: dev-ref/system-classes/FieldBinding-class.md
-- name:FieldFilterValue class
+- name: FieldFilterValue class
   href: dev-ref/system-classes/FieldFilterValue-class.md
-- name:FileIOPermission class
+- name: FileIOPermission class
   href: dev-ref/system-classes/FileIOPermission-class.md
-- name:FilterValue class
+- name: FilterValue class
   href: dev-ref/system-classes/FilterValue-class.md
-- name:Form class
+- name: Form class
   href: dev-ref/system-classes/Form-class.md
-- name:FormActionPaneControl class
+- name: FormActionPaneControl class
   href: dev-ref/system-classes/FormActionPaneControl-class.md
-- name:FormActionPaneTabControl class
+- name: FormActionPaneTabControl class
   href: dev-ref/system-classes/FormActionPaneTabControl-class.md
-- name:FormActiveXControl class
+- name: FormActiveXControl class
   href: dev-ref/system-classes/FormActiveXControl-class.md
-- name:FormAnimateControl class
+- name: FormAnimateControl class
   href: dev-ref/system-classes/FormAnimateControl-class.md
-- name:FormAutoLookupFactory class
+- name: FormAutoLookupFactory class
   href: dev-ref/system-classes/FormAutoLookupFactory-class.md
-- name:FormBinding class
+- name: FormBinding class
   href: dev-ref/system-classes/FormBinding-class.md
-- name:FormBuildActionPaneControl class
+- name: FormBuildActionPaneControl class
   href: dev-ref/system-classes/FormBuildActionPaneControl-class.md
-- name:FormBuildActionPaneTabControl class
+- name: FormBuildActionPaneTabControl class
   href: dev-ref/system-classes/FormBuildActionPaneTabControl-class.md
-- name:FormBuildActiveXControl class
+- name: FormBuildActiveXControl class
   href: dev-ref/system-classes/FormBuildActiveXControl-class.md
-- name:FormBuildAnimateControl class
+- name: FormBuildAnimateControl class
   href: dev-ref/system-classes/FormBuildAnimateControl-class.md
-- name:FormBuildButtonControl class
+- name: FormBuildButtonControl class
   href: dev-ref/system-classes/FormBuildButtonControl-class.md
-- name:FormBuildButtonGroupControl class
+- name: FormBuildButtonGroupControl class
   href: dev-ref/system-classes/FormBuildButtonGroupControl-class.md
-- name:FormBuildButtonSeparatorControl class
+- name: FormBuildButtonSeparatorControl class
   href: dev-ref/system-classes/FormBuildButtonSeparatorControl-class.md
-- name:FormBuildCheckBoxControl class
+- name: FormBuildCheckBoxControl class
   href: dev-ref/system-classes/FormBuildCheckBoxControl-class.md
-- name:FormBuildComboBoxControl class
+- name: FormBuildComboBoxControl class
   href: dev-ref/system-classes/FormBuildComboBoxControl-class.md
-- name:FormBuildCommandButtonControl class
+- name: FormBuildCommandButtonControl class
   href: dev-ref/system-classes/FormBuildCommandButtonControl-class.md
-- name:FormBuildContainerControl class
+- name: FormBuildContainerControl class
   href: dev-ref/system-classes/FormBuildContainerControl-class.md
-- name:FormBuildControl class
+- name: FormBuildControl class
   href: dev-ref/system-classes/FormBuildControl-class.md
-- name:FormBuildDataSource class
+- name: FormBuildDataSource class
   href: dev-ref/system-classes/FormBuildDataSource-class.md
-- name:FormBuildDateControl class
+- name: FormBuildDateControl class
   href: dev-ref/system-classes/FormBuildDateControl-class.md
-- name:FormBuildDateTimeControl class
+- name: FormBuildDateTimeControl class
   href: dev-ref/system-classes/FormBuildDateTimeControl-class.md
-- name:FormBuildDesign class
+- name: FormBuildDesign class
   href: dev-ref/system-classes/FormBuildDesign-class.md
-- name:FormBuildDropDialogButtonControl class
+- name: FormBuildDropDialogButtonControl class
   href: dev-ref/system-classes/FormBuildDropDialogButtonControl-class.md
-- name:FormBuildFastTabHeaderControl class
+- name: FormBuildFastTabHeaderControl class
   href: dev-ref/system-classes/FormBuildFastTabHeaderControl-class.md
-- name:FormBuildFastTabSummarySeparator class
+- name: FormBuildFastTabSummarySeparator class
   href: dev-ref/system-classes/FormBuildFastTabSummarySeparator-class.md
-- name:FormBuildFilterPaneControl class
+- name: FormBuildFilterPaneControl class
   href: dev-ref/system-classes/FormBuildFilterPaneControl-class.md
-- name:FormBuildFunctionButtonControl class
+- name: FormBuildFunctionButtonControl class
   href: dev-ref/system-classes/FormBuildFunctionButtonControl-class.md
-- name:FormBuildGridControl class
+- name: FormBuildGridControl class
   href: dev-ref/system-classes/FormBuildGridControl-class.md
-- name:FormBuildGroupControl class
+- name: FormBuildGroupControl class
   href: dev-ref/system-classes/FormBuildGroupControl-class.md
-- name:FormBuildGuidControl class
+- name: FormBuildGuidControl class
   href: dev-ref/system-classes/FormBuildGuidControl-class.md
-- name:FormBuildHTMLControl class
+- name: FormBuildHTMLControl class
   href: dev-ref/system-classes/FormBuildHTMLControl-class.md
-- name:FormBuildIntControl class
+- name: FormBuildIntControl class
   href: dev-ref/system-classes/FormBuildIntControl-class.md
-- name:FormBuildListBoxControl class
+- name: FormBuildListBoxControl class
   href: dev-ref/system-classes/FormBuildListBoxControl-class.md
-- name:FormBuildListControl class
+- name: FormBuildListControl class
   href: dev-ref/system-classes/FormBuildListControl-class.md
-- name:FormBuildManagedHostControl class
+- name: FormBuildManagedHostControl class
   href: dev-ref/system-classes/FormBuildManagedHostControl-class.md
-- name:FormBuildMenuButtonControl class
+- name: FormBuildMenuButtonControl class
   href: dev-ref/system-classes/FormBuildMenuButtonControl-class.md
-- name:FormBuildObjectSet class
+- name: FormBuildObjectSet class
   href: dev-ref/system-classes/FormBuildObjectSet-class.md
-- name:FormBuildProgressControl class
+- name: FormBuildProgressControl class
   href: dev-ref/system-classes/FormBuildProgressControl-class.md
-- name:FormBuildRadioControl class
+- name: FormBuildRadioControl class
   href: dev-ref/system-classes/FormBuildRadioControl-class.md
-- name:FormBuildRealControl class
+- name: FormBuildRealControl class
   href: dev-ref/system-classes/FormBuildRealControl-class.md
-- name:FormBuildReferenceControl class
+- name: FormBuildReferenceControl class
   href: dev-ref/system-classes/FormBuildReferenceControl-class.md
-- name:FormBuildReferenceGroupControl class
+- name: FormBuildReferenceGroupControl class
   href: dev-ref/system-classes/FormBuildReferenceGroupControl-class.md
-- name:FormBuildRichTextControl class
+- name: FormBuildRichTextControl class
   href: dev-ref/system-classes/FormBuildRichTextControl-class.md
-- name:FormBuildSegmentedEntryControl class
+- name: FormBuildSegmentedEntryControl class
   href: dev-ref/system-classes/FormBuildSegmentedEntryControl-class.md
-- name:FormBuildStaticTextControl class
+- name: FormBuildStaticTextControl class
   href: dev-ref/system-classes/FormBuildStaticTextControl-class.md
-- name:FormBuildStringControl class
+- name: FormBuildStringControl class
   href: dev-ref/system-classes/FormBuildStringControl-class.md
-- name:FormBuildTabControl class
+- name: FormBuildTabControl class
   href: dev-ref/system-classes/FormBuildTabControl-class.md
-- name:FormBuildTableControl class
+- name: FormBuildTableControl class
   href: dev-ref/system-classes/FormBuildTableControl-class.md
-- name:FormBuildTabPageControl class
+- name: FormBuildTabPageControl class
   href: dev-ref/system-classes/FormBuildTabPageControl-class.md
-- name:FormBuildTimeControl class
+- name: FormBuildTimeControl class
   href: dev-ref/system-classes/FormBuildTimeControl-class.md
-- name:FormBuildTreeControl class
+- name: FormBuildTreeControl class
   href: dev-ref/system-classes/FormBuildTreeControl-class.md
-- name:FormBuildWindowControl class
+- name: FormBuildWindowControl class
   href: dev-ref/system-classes/FormBuildWindowControl-class.md
-- name:FormButtonControl class
+- name: FormButtonControl class
   href: dev-ref/system-classes/FormButtonControl-class.md
-- name:FormButtonGroupControl class
+- name: FormButtonGroupControl class
   href: dev-ref/system-classes/FormButtonGroupControl-class.md
-- name:FormButtonSeparatorControl class
+- name: FormButtonSeparatorControl class
   href: dev-ref/system-classes/FormButtonSeparatorControl-class.md
-- name:FormChangeTracker class
+- name: FormChangeTracker class
   href: dev-ref/system-classes/FormChangeTracker-class.md
-- name:FormCheckBoxControl class
+- name: FormCheckBoxControl class
   href: dev-ref/system-classes/FormCheckBoxControl-class.md
-- name:FormComboBoxControl class
+- name: FormComboBoxControl class
   href: dev-ref/system-classes/FormComboBoxControl-class.md
-- name:FormCommandButtonControl class
+- name: FormCommandButtonControl class
   href: dev-ref/system-classes/FormCommandButtonControl-class.md
-- name:FormContainer class
+- name: FormContainer class
   href: dev-ref/system-classes/FormContainer-class.md
-- name:FormContainerControl class
+- name: FormContainerControl class
   href: dev-ref/system-classes/FormContainerControl-class.md
-- name:FormControl class
+- name: FormControl class
   href: dev-ref/system-classes/FormControl-class.md
-- name:FormControlCancelableSuperEventArgs class
+- name: FormControlCancelableSuperEventArgs class
   href: dev-ref/system-classes/FormControlCancelableSuperEventArgs-class.md
-- name:FormControlCancelEventArgs class
+- name: FormControlCancelEventArgs class
   href: dev-ref/system-classes/FormControlCancelEventArgs-class.md
-- name:FormControlEventArgs class
+- name: FormControlEventArgs class
   href: dev-ref/system-classes/FormControlEventArgs-class.md
-- name:FormDataObject class
+- name: FormDataObject class
   href: dev-ref/system-classes/FormDataObject-class.md
-- name:FormDataRow class
+- name: FormDataRow class
   href: dev-ref/system-classes/FormDataRow-class.md
-- name:FormDataSource class
+- name: FormDataSource class
   href: dev-ref/system-classes/FormDataSource-class.md
-- name:FormDateControl class
+- name: FormDateControl class
   href: dev-ref/system-classes/FormDateControl-class.md
-- name:FormDateTimeControl class
+- name: FormDateTimeControl class
   href: dev-ref/system-classes/FormDateTimeControl-class.md
-- name:FormDesign class
+- name: FormDesign class
   href: dev-ref/system-classes/FormDesign-class.md
-- name:FormDesignView class
+- name: FormDesignView class
   href: dev-ref/system-classes/FormDesignView-class.md
-- name:FormDropDialogButtonControl class
+- name: FormDropDialogButtonControl class
   href: dev-ref/system-classes/FormDropDialogButtonControl-class.md
-- name:FormEventArgs class
+- name: FormEventArgs class
   href: dev-ref/system-classes/FormEventArgs-class.md
-- name:FormFastTabHeaderControl class
+- name: FormFastTabHeaderControl class
   href: dev-ref/system-classes/FormFastTabHeaderControl-class.md
-- name:FormFastTabSummarySeparator class
+- name: FormFastTabSummarySeparator class
   href: dev-ref/system-classes/FormFastTabSummarySeparator-class.md
-- name:FormFilterPaneControl class
+- name: FormFilterPaneControl class
   href: dev-ref/system-classes/FormFilterPaneControl-class.md
-- name:FormFunctionButtonControl class
+- name: FormFunctionButtonControl class
   href: dev-ref/system-classes/FormFunctionButtonControl-class.md
-- name:FormGridControl class
+- name: FormGridControl class
   href: dev-ref/system-classes/FormGridControl-class.md
-- name:FormGroupControl class
+- name: FormGroupControl class
   href: dev-ref/system-classes/FormGroupControl-class.md
-- name:FormGuidControl class
+- name: FormGuidControl class
   href: dev-ref/system-classes/FormGuidControl-class.md
-- name:FormHTMLControl class
+- name: FormHTMLControl class
   href: dev-ref/system-classes/FormHTMLControl-class.md
-- name:FormIntControl class
+- name: FormIntControl class
   href: dev-ref/system-classes/FormIntControl-class.md
-- name:FormListBoxControl class
+- name: FormListBoxControl class
   href: dev-ref/system-classes/FormListBoxControl-class.md
-- name:FormListColumn class
+- name: FormListColumn class
   href: dev-ref/system-classes/FormListColumn-class.md
-- name:FormListControl class
+- name: FormListControl class
   href: dev-ref/system-classes/FormListControl-class.md
-- name:FormListItem class
+- name: FormListItem class
   href: dev-ref/system-classes/FormListItem-class.md
-- name:FormManagedHostControl class
+- name: FormManagedHostControl class
   href: dev-ref/system-classes/FormManagedHostControl-class.md
-- name:FormMenuButtonControl class
+- name: FormMenuButtonControl class
   href: dev-ref/system-classes/FormMenuButtonControl-class.md
-- name:FormNotifyEventArgs class
+- name: FormNotifyEventArgs class
   href: dev-ref/system-classes/FormNotifyEventArgs-class.md
-- name:FormObject class
+- name: FormObject class
   href: dev-ref/system-classes/FormObject-class.md
-- name:FormObjectSet class
+- name: FormObjectSet class
   href: dev-ref/system-classes/FormObjectSet-class.md
-- name:FormObjectSetCacheChangedEventArgs class
+- name: FormObjectSetCacheChangedEventArgs class
   href: dev-ref/system-classes/FormObjectSetCacheChangedEventArgs-class.md
-- name:FormObjectSetCurrentChangedEventArgs class
+- name: FormObjectSetCurrentChangedEventArgs class
   href: dev-ref/system-classes/FormObjectSetCurrentChangedEventArgs-class.md
-- name:FormObjectSetLeaveEventArgs class
+- name: FormObjectSetLeaveEventArgs class
   href: dev-ref/system-classes/FormObjectSetLeaveEventArgs-class.md
-- name:FormObjectSetMarkingChangedEventArgs class
+- name: FormObjectSetMarkingChangedEventArgs class
   href: dev-ref/system-classes/FormObjectSetMarkingChangedEventArgs-class.md
-- name:FormObjectSetNotify class
+- name: FormObjectSetNotify class
   href: dev-ref/system-classes/FormObjectSetNotify-class.md
-- name:FormObjectSetNotifyEvents class
+- name: FormObjectSetNotifyEvents class
   href: dev-ref/system-classes/FormObjectSetNotifyEvents-class.md
-- name:FormObjectSetPagingParamsChangedEvtArgs class
+- name: FormObjectSetPagingParamsChangedEvtArgs class
   href: dev-ref/system-classes/FormObjectSetPagingParamsChangedEvtArgs-class.md
-- name:FormObjectSetRequestCacheSizeEventArgs class
+- name: FormObjectSetRequestCacheSizeEventArgs class
   href: dev-ref/system-classes/FormObjectSetRequestCacheSizeEventArgs-class.md
-- name:FormPart class
+- name: FormPart class
   href: dev-ref/system-classes/FormPart-class.md
-- name:FormProgressControl class
+- name: FormProgressControl class
   href: dev-ref/system-classes/FormProgressControl-class.md
-- name:FormQueryMiner class
+- name: FormQueryMiner class
   href: dev-ref/system-classes/FormQueryMiner-class.md
-- name:FormRadioControl class
+- name: FormRadioControl class
   href: dev-ref/system-classes/FormRadioControl-class.md
-- name:FormRealControl class
+- name: FormRealControl class
   href: dev-ref/system-classes/FormRealControl-class.md
-- name:FormReferenceControl class
+- name: FormReferenceControl class
   href: dev-ref/system-classes/FormReferenceControl-class.md
-- name:FormReferenceGroupControl class
+- name: FormReferenceGroupControl class
   href: dev-ref/system-classes/FormReferenceGroupControl-class.md
-- name:FormReferenceObject class
+- name: FormReferenceObject class
   href: dev-ref/system-classes/FormReferenceObject-class.md
-- name:FormRichTextControl class
+- name: FormRichTextControl class
   href: dev-ref/system-classes/FormRichTextControl-class.md
-- name:FormRowDisplayOption class
+- name: FormRowDisplayOption class
   href: dev-ref/system-classes/FormRowDisplayOption-class.md
-- name:FormSegment class
+- name: FormSegment class
   href: dev-ref/system-classes/FormSegment-class.md
-- name:FormSegmentedEntryControl class
+- name: FormSegmentedEntryControl class
   href: dev-ref/system-classes/FormSegmentedEntryControl-class.md
-- name:FormsPreloadingManager class
+- name: FormsPreloadingManager class
   href: dev-ref/system-classes/FormsPreloadingManager-class.md
-- name:FormStaticTextControl class
+- name: FormStaticTextControl class
   href: dev-ref/system-classes/FormStaticTextControl-class.md
-- name:FormStringControl class
+- name: FormStringControl class
   href: dev-ref/system-classes/FormStringControl-class.md
-- name:FormTabControl class
+- name: FormTabControl class
   href: dev-ref/system-classes/FormTabControl-class.md
-- name:FormTableCell class
+- name: FormTableCell class
   href: dev-ref/system-classes/FormTableCell-class.md
-- name:FormTableControl class
+- name: FormTableControl class
   href: dev-ref/system-classes/FormTableControl-class.md
-- name:FormTabPageControl class
+- name: FormTabPageControl class
   href: dev-ref/system-classes/FormTabPageControl-class.md
-- name:FormTimeControl class
+- name: FormTimeControl class
   href: dev-ref/system-classes/FormTimeControl-class.md
-- name:FormTreeControl class
+- name: FormTreeControl class
   href: dev-ref/system-classes/FormTreeControl-class.md
-- name:FormTreeItem class
+- name: FormTreeItem class
   href: dev-ref/system-classes/FormTreeItem-class.md
-- name:FormWindowControl class
+- name: FormWindowControl class
   href: dev-ref/system-classes/FormWindowControl-class.md
-- name:Gac class
+- name: Gac class
   href: dev-ref/system-classes/Gac-class.md
-- name:HeapCheck class
+- name: HeapCheck class
   href: dev-ref/system-classes/HeapCheck-class.md
-- name:HelpDocSetNode class
+- name: HelpDocSetNode class
   href: dev-ref/system-classes/HelpDocSetNode-class.md
-- name:HelpDocumentManager class
+- name: HelpDocumentManager class
   href: dev-ref/system-classes/HelpDocumentManager-class.md
-- name:HtmlFont class
+- name: HtmlFont class
   href: dev-ref/system-classes/HtmlFont-class.md
-- name:IDispatcherProxy class
+- name: IDispatcherProxy class
   href: dev-ref/system-classes/IDispatcherProxy-class.md
-- name:IISApplicationObject class
+- name: IISApplicationObject class
   href: dev-ref/system-classes/IISApplicationObject-class.md
-- name:IISContextObject class
+- name: IISContextObject class
   href: dev-ref/system-classes/IISContextObject-class.md
-- name:IISPostedFile class
+- name: IISPostedFile class
   href: dev-ref/system-classes/IISPostedFile-class.md
-- name:IISReadCookie class
+- name: IISReadCookie class
   href: dev-ref/system-classes/IISReadCookie-class.md
-- name:IISRequest class
+- name: IISRequest class
   href: dev-ref/system-classes/IISRequest-class.md
-- name:IISRequestDictionary class
+- name: IISRequestDictionary class
   href: dev-ref/system-classes/IISRequestDictionary-class.md
-- name:IISResponse class
+- name: IISResponse class
   href: dev-ref/system-classes/IISResponse-class.md
-- name:IISServer class
+- name: IISServer class
   href: dev-ref/system-classes/IISServer-class.md
-- name:IISSessionObject class
+- name: IISSessionObject class
   href: dev-ref/system-classes/IISSessionObject-class.md
-- name:IISStringList class
+- name: IISStringList class
   href: dev-ref/system-classes/IISStringList-class.md
-- name:IISVariantDictionary class
+- name: IISVariantDictionary class
   href: dev-ref/system-classes/IISVariantDictionary-class.md
-- name:IISViewState class
+- name: IISViewState class
   href: dev-ref/system-classes/IISViewState-class.md
-- name:IISWriteCookie class
+- name: IISWriteCookie class
   href: dev-ref/system-classes/IISWriteCookie-class.md
-- name:Image class
+- name: Image class
   href: dev-ref/system-classes/Image-class.md
-- name:Imagelist class
+- name: Imagelist class
   href: dev-ref/system-classes/Imagelist-class.md
-- name:ImportTableDataInfo class
+- name: ImportTableDataInfo class
   href: dev-ref/system-classes/ImportTableDataInfo-class.md
-- name:ImportTableSchemaInfo class
+- name: ImportTableSchemaInfo class
   href: dev-ref/system-classes/ImportTableSchemaInfo-class.md
-- name:InfoPart class
+- name: InfoPart class
   href: dev-ref/system-classes/InfoPart-class.md
-- name:InfoPartField class
+- name: InfoPartField class
   href: dev-ref/system-classes/InfoPartField-class.md
-- name:InfoPartGroup class
+- name: InfoPartGroup class
   href: dev-ref/system-classes/InfoPartGroup-class.md
-- name:InfoPartLayout class
+- name: InfoPartLayout class
   href: dev-ref/system-classes/InfoPartLayout-class.md
-- name:InitialQueryParameter class
+- name: InitialQueryParameter class
   href: dev-ref/system-classes/InitialQueryParameter-class.md
-- name:InteropPermission class
+- name: InteropPermission class
   href: dev-ref/system-classes/InteropPermission-class.md
-- name:Io class
+- name: Io class
   href: dev-ref/system-classes/Io-class.md
-- name:Job class
+- name: Job class
   href: dev-ref/system-classes/Job-class.md
-- name:Keywords class
+- name: Keywords class
   href: dev-ref/system-classes/Keywords-class.md
-- name:Label class
+- name: Label class
   href: dev-ref/system-classes/Label-class.md
-- name:LabelBulkEditor class
+- name: LabelBulkEditor class
   href: dev-ref/system-classes/LabelBulkEditor-class.md
-- name:LastAotSelection class
+- name: LastAotSelection class
   href: dev-ref/system-classes/LastAotSelection-class.md
-- name:List class
+- name: List class
   href: dev-ref/system-classes/List-class.md
-- name:ListEnumerator class
+- name: ListEnumerator class
   href: dev-ref/system-classes/ListEnumerator-class.md
-- name:ListIterator class
+- name: ListIterator class
   href: dev-ref/system-classes/ListIterator-class.md
-- name:ListPage class
+- name: ListPage class
   href: dev-ref/system-classes/ListPage-class.md
-- name:ListPageArgs class
+- name: ListPageArgs class
   href: dev-ref/system-classes/ListPageArgs-class.md
-- name:ListPageInteraction class
+- name: ListPageInteraction class
   href: dev-ref/system-classes/ListPageInteraction-class.md
-- name:LoadAutoCompleteDataEventArgs class
+- name: LoadAutoCompleteDataEventArgs class
   href: dev-ref/system-classes/LoadAutoCompleteDataEventArgs-class.md
-- name:LoginProperty class
+- name: LoginProperty class
   href: dev-ref/system-classes/LoginProperty-class.md
-- name:ManagedEventArgs class
+- name: ManagedEventArgs class
   href: dev-ref/system-classes/ManagedEventArgs-class.md
-- name:ManagedEventDelegate class
+- name: ManagedEventDelegate class
   href: dev-ref/system-classes/ManagedEventDelegate-class.md
-- name:ManagedEventHandler class
+- name: ManagedEventHandler class
   href: dev-ref/system-classes/ManagedEventHandler-class.md
-- name:Map class
+- name: Map class
   href: dev-ref/system-classes/Map-class.md
-- name:MapEnumerator class
+- name: MapEnumerator class
   href: dev-ref/system-classes/MapEnumerator-class.md
-- name:Mapi class
+- name: Mapi class
   href: dev-ref/system-classes/Mapi-class.md
-- name:MapiEx class
+- name: MapiEx class
   href: dev-ref/system-classes/MapiEx-class.md
-- name:MapiExAppointment class
+- name: MapiExAppointment class
   href: dev-ref/system-classes/MapiExAppointment-class.md
-- name:MapiExContact class
+- name: MapiExContact class
   href: dev-ref/system-classes/MapiExContact-class.md
-- name:MapiExMail class
+- name: MapiExMail class
   href: dev-ref/system-classes/MapiExMail-class.md
-- name:MapiExMessage class
+- name: MapiExMessage class
   href: dev-ref/system-classes/MapiExMessage-class.md
-- name:MapiExTask class
+- name: MapiExTask class
   href: dev-ref/system-classes/MapiExTask-class.md
-- name:MapiFileDesc class
+- name: MapiFileDesc class
   href: dev-ref/system-classes/MapiFileDesc-class.md
-- name:MapiMessage class
+- name: MapiMessage class
   href: dev-ref/system-classes/MapiMessage-class.md
-- name:MapiRecipDesc class
+- name: MapiRecipDesc class
   href: dev-ref/system-classes/MapiRecipDesc-class.md
-- name:MapIterator class
+- name: MapIterator class
   href: dev-ref/system-classes/MapIterator-class.md
-- name:MemberFunction class
+- name: MemberFunction class
   href: dev-ref/system-classes/MemberFunction-class.md
-- name:Menu class
+- name: Menu class
   href: dev-ref/system-classes/Menu-class.md
-- name:MenuItem class
+- name: MenuItem class
   href: dev-ref/system-classes/MenuItem-class.md
-- name:MenuReference class
+- name: MenuReference class
   href: dev-ref/system-classes/MenuReference-class.md
-- name:MessageWin class
+- name: MessageWin class
   href: dev-ref/system-classes/MessageWin-class.md
-- name:MethodInfo class
+- name: MethodInfo class
   href: dev-ref/system-classes/MethodInfo-class.md
-- name:ModifyFieldEventArgs class
+- name: ModifyFieldEventArgs class
   href: dev-ref/system-classes/ModifyFieldEventArgs-class.md
-- name:ModifyFieldValueEventArgs class
+- name: ModifyFieldValueEventArgs class
   href: dev-ref/system-classes/ModifyFieldValueEventArgs-class.md
-- name:MultiSelectionContext class
+- name: MultiSelectionContext class
   href: dev-ref/system-classes/MultiSelectionContext-class.md
-- name:NumberSequence class
+- name: NumberSequence class
   href: dev-ref/system-classes/NumberSequence-class.md
-- name:NumberSequenceSessionLessCache class
+- name: NumberSequenceSessionLessCache class
   href: dev-ref/system-classes/NumberSequenceSessionLessCache-class.md
-- name:Object class
+- name: Object class
   href: dev-ref/system-classes/Object-class.md
-- name:ObjectIdent class
+- name: ObjectIdent class
   href: dev-ref/system-classes/ObjectIdent-class.md
-- name:ObjectRun class
+- name: ObjectRun class
   href: dev-ref/system-classes/ObjectRun-class.md
-- name:OciConnection class
+- name: OciConnection class
   href: dev-ref/system-classes/OciConnection-class.md
-- name:OdbcConnection class
+- name: OdbcConnection class
   href: dev-ref/system-classes/OdbcConnection-class.md
-- name:OleCommand class
+- name: OleCommand class
   href: dev-ref/system-classes/OleCommand-class.md
-- name:OuputSection class
+- name: OuputSection class
   href: dev-ref/system-classes/OuputSection-class.md
-- name:OutputAutoLabelField class
+- name: OutputAutoLabelField class
   href: dev-ref/system-classes/OutputAutoLabelField-class.md
-- name:OutputBitmapField class
+- name: OutputBitmapField class
   href: dev-ref/system-classes/OutputBitmapField-class.md
-- name:OutputBodySection class
+- name: OutputBodySection class
   href: dev-ref/system-classes/OutputBodySection-class.md
-- name:OutputColumnHeadingsSection class
+- name: OutputColumnHeadingsSection class
   href: dev-ref/system-classes/OutputColumnHeadingsSection-class.md
-- name:OutputDateField class
+- name: OutputDateField class
   href: dev-ref/system-classes/OutputDateField-class.md
-- name:OutputDateTimeField class
+- name: OutputDateTimeField class
   href: dev-ref/system-classes/OutputDateTimeField-class.md
-- name:OutputEnumField class
+- name: OutputEnumField class
   href: dev-ref/system-classes/OutputEnumField-class.md
-- name:OutputEpilogSection class
+- name: OutputEpilogSection class
   href: dev-ref/system-classes/OutputEpilogSection-class.md
-- name:OutputField class
+- name: OutputField class
   href: dev-ref/system-classes/OutputField-class.md
-- name:OutputFooterSection class
+- name: OutputFooterSection class
   href: dev-ref/system-classes/OutputFooterSection-class.md
-- name:OutputHeaderSection class
+- name: OutputHeaderSection class
   href: dev-ref/system-classes/OutputHeaderSection-class.md
-- name:OutputIntegerField class
+- name: OutputIntegerField class
   href: dev-ref/system-classes/OutputIntegerField-class.md
-- name:OutputLabelField class
+- name: OutputLabelField class
   href: dev-ref/system-classes/OutputLabelField-class.md
-- name:OutputPage class
+- name: OutputPage class
   href: dev-ref/system-classes/OutputPage-class.md
-- name:OutputPageFooterSection class
+- name: OutputPageFooterSection class
   href: dev-ref/system-classes/OutputPageFooterSection-class.md
-- name:OutputPageHeaderSection class
+- name: OutputPageHeaderSection class
   href: dev-ref/system-classes/OutputPageHeaderSection-class.md
-- name:OutputProgrammableSection class
+- name: OutputProgrammableSection class
   href: dev-ref/system-classes/OutputProgrammableSection-class.md
-- name:OutputPrologSection class
+- name: OutputPrologSection class
   href: dev-ref/system-classes/OutputPrologSection-class.md
-- name:OutputRealField class
+- name: OutputRealField class
   href: dev-ref/system-classes/OutputRealField-class.md
-- name:OutputShapeField class
+- name: OutputShapeField class
   href: dev-ref/system-classes/OutputShapeField-class.md
-- name:OutputStaticTextField class
+- name: OutputStaticTextField class
   href: dev-ref/system-classes/OutputStaticTextField-class.md
-- name:OutputStringField class
+- name: OutputStringField class
   href: dev-ref/system-classes/OutputStringField-class.md
-- name:OutputSumField class
+- name: OutputSumField class
   href: dev-ref/system-classes/OutputSumField-class.md
-- name:OutputTimeField class
+- name: OutputTimeField class
   href: dev-ref/system-classes/OutputTimeField-class.md
-- name:OverwriteSystemfieldsPermission class
+- name: OverwriteSystemfieldsPermission class
   href: dev-ref/system-classes/OverwriteSystemfieldsPermission-class.md
-- name:Page class
+- name: Page class
   href: dev-ref/system-classes/Page-class.md
-- name:PageArgs class
+- name: PageArgs class
   href: dev-ref/system-classes/PageArgs-class.md
-- name:PageInteraction class
+- name: PageInteraction class
   href: dev-ref/system-classes/PageInteraction-class.md
-- name:PartList class
+- name: PartList class
   href: dev-ref/system-classes/PartList-class.md
-- name:Percentbar class
+- name: Percentbar class
   href: dev-ref/system-classes/Percentbar-class.md
-- name:PerformanceMonitor class
+- name: PerformanceMonitor class
   href: dev-ref/system-classes/PerformanceMonitor-class.md
-- name:PerformanceMonitorCounter class
+- name: PerformanceMonitorCounter class
   href: dev-ref/system-classes/PerformanceMonitorCounter-class.md
-- name:PerformanceMonitorInstance class
+- name: PerformanceMonitorInstance class
   href: dev-ref/system-classes/PerformanceMonitorInstance-class.md
-- name:PipeClient class
+- name: PipeClient class
   href: dev-ref/system-classes/PipeClient-class.md
-- name:PipeServer class
+- name: PipeServer class
   href: dev-ref/system-classes/PipeServer-class.md
-- name:PresenceInfo class
+- name: PresenceInfo class
   href: dev-ref/system-classes/PresenceInfo-class.md
-- name:PrintJobSettings class
+- name: PrintJobSettings class
   href: dev-ref/system-classes/PrintJobSettings-class.md
-- name:profiler class
+- name: profiler class
   href: dev-ref/system-classes/profiler-class.md
-- name:ProgressWindow class
+- name: ProgressWindow class
   href: dev-ref/system-classes/ProgressWindow-class.md
-- name:ProjectGroupNode class
+- name: ProjectGroupNode class
   href: dev-ref/system-classes/ProjectGroupNode-class.md
-- name:ProjectListNode class
+- name: ProjectListNode class
   href: dev-ref/system-classes/ProjectListNode-class.md
-- name:ProjectNode class
+- name: ProjectNode class
   href: dev-ref/system-classes/ProjectNode-class.md
-- name:PropertiesWindow class
+- name: PropertiesWindow class
   href: dev-ref/system-classes/PropertiesWindow-class.md
-- name:Query class
+- name: Query class
   href: dev-ref/system-classes/Query-class.md
-- name:QueryBuildDataSource class
+- name: QueryBuildDataSource class
   href: dev-ref/system-classes/QueryBuildDataSource-class.md
-- name:QueryBuildDynalink class
+- name: QueryBuildDynalink class
   href: dev-ref/system-classes/QueryBuildDynalink-class.md
-- name:QueryBuildFieldList class
+- name: QueryBuildFieldList class
   href: dev-ref/system-classes/QueryBuildFieldList-class.md
-- name:QueryBuildLink class
+- name: QueryBuildLink class
   href: dev-ref/system-classes/QueryBuildLink-class.md
-- name:QueryBuildRange class
+- name: QueryBuildRange class
   href: dev-ref/system-classes/QueryBuildRange-class.md
-- name:QueryBuildStaticlink class
+- name: QueryBuildStaticlink class
   href: dev-ref/system-classes/QueryBuildStaticlink-class.md
-- name:QueryFilter class
+- name: QueryFilter class
   href: dev-ref/system-classes/QueryFilter-class.md
-- name:QueryGroupByField class
+- name: QueryGroupByField class
   href: dev-ref/system-classes/QueryGroupByField-class.md
-- name:QueryHavingFilter class
+- name: QueryHavingFilter class
   href: dev-ref/system-classes/QueryHavingFilter-class.md
-- name:QueryOrderByField class
+- name: QueryOrderByField class
   href: dev-ref/system-classes/QueryOrderByField-class.md
-- name:QueryRun class
+- name: QueryRun class
   href: dev-ref/system-classes/QueryRun-class.md
-- name:Random class
+- name: Random class
   href: dev-ref/system-classes/Random-class.md
-- name:RecordInsertList class
+- name: RecordInsertList class
   href: dev-ref/system-classes/RecordInsertList-class.md
-- name:RecordLinkList class
+- name: RecordLinkList class
   href: dev-ref/system-classes/RecordLinkList-class.md
-- name:RecordSortedList class
+- name: RecordSortedList class
   href: dev-ref/system-classes/RecordSortedList-class.md
-- name:RecordViewCache class
+- name: RecordViewCache class
   href: dev-ref/system-classes/RecordViewCache-class.md
-- name:ReferenceNode class
+- name: ReferenceNode class
   href: dev-ref/system-classes/ReferenceNode-class.md
-- name:RelationPath class
+- name: RelationPath class
   href: dev-ref/system-classes/RelationPath-class.md
-- name:RelativeFieldBinding class
+- name: RelativeFieldBinding class
   href: dev-ref/system-classes/RelativeFieldBinding-class.md
-- name:Report class
+- name: Report class
   href: dev-ref/system-classes/Report-class.md
-- name:ReportAutoDesignSpecs class
+- name: ReportAutoDesignSpecs class
   href: dev-ref/system-classes/ReportAutoDesignSpecs-class.md
-- name:ReportBitmapControl class
+- name: ReportBitmapControl class
   href: dev-ref/system-classes/ReportBitmapControl-class.md
-- name:ReportControl class
+- name: ReportControl class
   href: dev-ref/system-classes/ReportControl-class.md
-- name:ReportDateControl class
+- name: ReportDateControl class
   href: dev-ref/system-classes/ReportDateControl-class.md
-- name:ReportDateTimeControl class
+- name: ReportDateTimeControl class
   href: dev-ref/system-classes/ReportDateTimeControl-class.md
-- name:ReportDesign class
+- name: ReportDesign class
   href: dev-ref/system-classes/ReportDesign-class.md
-- name:ReportEnumControl class
+- name: ReportEnumControl class
   href: dev-ref/system-classes/ReportEnumControl-class.md
-- name:ReportFieldGroup class
+- name: ReportFieldGroup class
   href: dev-ref/system-classes/ReportFieldGroup-class.md
-- name:ReportGuidControl class
+- name: ReportGuidControl class
   href: dev-ref/system-classes/ReportGuidControl-class.md
-- name:ReportIntegerControl class
+- name: ReportIntegerControl class
   href: dev-ref/system-classes/ReportIntegerControl-class.md
-- name:ReportLibraryNode class
+- name: ReportLibraryNode class
   href: dev-ref/system-classes/ReportLibraryNode-class.md
-- name:ReportOutput class
+- name: ReportOutput class
   href: dev-ref/system-classes/ReportOutput-class.md
-- name:ReportOutputUser class
+- name: ReportOutputUser class
   href: dev-ref/system-classes/ReportOutputUser-class.md
-- name:ReportPrinter class
+- name: ReportPrinter class
   href: dev-ref/system-classes/ReportPrinter-class.md
-- name:ReportPromptControl class
+- name: ReportPromptControl class
   href: dev-ref/system-classes/ReportPromptControl-class.md
-- name:ReportRealControl class
+- name: ReportRealControl class
   href: dev-ref/system-classes/ReportRealControl-class.md
-- name:ReportRun class
+- name: ReportRun class
   href: dev-ref/system-classes/ReportRun-class.md
-- name:ReportSection class
+- name: ReportSection class
   href: dev-ref/system-classes/ReportSection-class.md
-- name:ReportSectionGroup class
+- name: ReportSectionGroup class
   href: dev-ref/system-classes/ReportSectionGroup-class.md
-- name:ReportShapeControl class
+- name: ReportShapeControl class
   href: dev-ref/system-classes/ReportShapeControl-class.md
-- name:ReportStringControl class
+- name: ReportStringControl class
   href: dev-ref/system-classes/ReportStringControl-class.md
-- name:ReportSumControl class
+- name: ReportSumControl class
   href: dev-ref/system-classes/ReportSumControl-class.md
-- name:ReportTextControl class
+- name: ReportTextControl class
   href: dev-ref/system-classes/ReportTextControl-class.md
-- name:ReportTimeControl class
+- name: ReportTimeControl class
   href: dev-ref/system-classes/ReportTimeControl-class.md
-- name:ReportViewer class
+- name: ReportViewer class
   href: dev-ref/system-classes/ReportViewer-class.md
-- name:ResultSet class
+- name: ResultSet class
   href: dev-ref/system-classes/ResultSet-class.md
-- name:ResultSetMetaData class
+- name: ResultSetMetaData class
   href: dev-ref/system-classes/ResultSetMetaData-class.md
-- name:RunAsPermission class
+- name: RunAsPermission class
   href: dev-ref/system-classes/RunAsPermission-class.md
-- name:ScannerClass class
+- name: ScannerClass class
   href: dev-ref/system-classes/ScannerClass-class.md
-- name:SearchParm class
+- name: SearchParm class
   href: dev-ref/system-classes/SearchParm-class.md
-- name:SecureNode class
+- name: SecureNode class
   href: dev-ref/system-classes/SecureNode-class.md
-- name:SecurityContext class
+- name: SecurityContext class
   href: dev-ref/system-classes/SecurityContext-class.md
-- name:SecurityPolicy class
+- name: SecurityPolicy class
   href: dev-ref/system-classes/SecurityPolicy-class.md
-- name:SecurityRights class
+- name: SecurityRights class
   href: dev-ref/system-classes/SecurityRights-class.md
-- name:SecuritySkipFlush class
+- name: SecuritySkipFlush class
   href: dev-ref/system-classes/SecuritySkipFlush-class.md
-- name:SecurityTableRights class
+- name: SecurityTableRights class
   href: dev-ref/system-classes/SecurityTableRights-class.md
-- name:SecurityUtil class
+- name: SecurityUtil class
   href: dev-ref/system-classes/SecurityUtil-class.md
-- name:SegmentEnteredEventArgs class
+- name: SegmentEnteredEventArgs class
   href: dev-ref/system-classes/SegmentEnteredEventArgs-class.md
-- name:SegmentValueChangedEventArgs class
+- name: SegmentValueChangedEventArgs class
   href: dev-ref/system-classes/SegmentValueChangedEventArgs-class.md
-- name:Sequence class
+- name: Sequence class
   href: dev-ref/system-classes/Sequence-class.md
-- name:Set class
+- name: Set class
   href: dev-ref/system-classes/Set-class.md
-- name:SetEnumerator class
+- name: SetEnumerator class
   href: dev-ref/system-classes/SetEnumerator-class.md
-- name:SetIterator class
+- name: SetIterator class
   href: dev-ref/system-classes/SetIterator-class.md
-- name:SkipAOSValidationPermission class
+- name: SkipAOSValidationPermission class
   href: dev-ref/system-classes/SkipAOSValidationPermission-class.md
-- name:SqlDataDictionary class
+- name: SqlDataDictionary class
   href: dev-ref/system-classes/SqlDataDictionary-class.md
-- name:SqlDataDictionaryPermission class
+- name: SqlDataDictionaryPermission class
   href: dev-ref/system-classes/SqlDataDictionaryPermission-class.md
-- name:SqlStatementExecutePermission class
+- name: SqlStatementExecutePermission class
   href: dev-ref/system-classes/SqlStatementExecutePermission-class.md
-- name:SqlSyncPending class
+- name: SqlSyncPending class
   href: dev-ref/system-classes/SqlSyncPending-class.md
-- name:SqlSystem class
+- name: SqlSystem class
   href: dev-ref/system-classes/SqlSystem-class.md
-- name:SSRSReportAutoDesignNode class
+- name: SSRSReportAutoDesignNode class
   href: dev-ref/system-classes/SSRSReportAutoDesignNode-class.md
-- name:SSRSReportConceptNode class
+- name: SSRSReportConceptNode class
   href: dev-ref/system-classes/SSRSReportConceptNode-class.md
-- name:SSRSReportDesignNode class
+- name: SSRSReportDesignNode class
   href: dev-ref/system-classes/SSRSReportDesignNode-class.md
-- name:SSRSReportPrecisionDesignNode class
+- name: SSRSReportPrecisionDesignNode class
   href: dev-ref/system-classes/SSRSReportPrecisionDesignNode-class.md
-- name:Statement class
+- name: Statement class
   href: dev-ref/system-classes/Statement-class.md
-- name:Struct class
+- name: Struct class
   href: dev-ref/system-classes/Struct-class.md
-- name:SurrogateFKReplacementHelper class
+- name: SurrogateFKReplacementHelper class
   href: dev-ref/system-classes/SurrogateFKReplacementHelper-class.md
-- name:SysGlobalObjectCache class
+- name: SysGlobalObjectCache class
   href: dev-ref/system-classes/SysGlobalObjectCache-class.md
-- name:SystemMonitor class
+- name: SystemMonitor class
   href: dev-ref/system-classes/SystemMonitor-class.md
-- name:systemSequence class
+- name: systemSequence class
   href: dev-ref/system-classes/systemSequence-class.md
-- name:TableExtension class
+- name: TableExtension class
   href: dev-ref/system-classes/TableExtension-class.md
-- name:TextBuffer class
+- name: TextBuffer class
   href: dev-ref/system-classes/TextBuffer-class.md
-- name:TextIo class
+- name: TextIo class
   href: dev-ref/system-classes/TextIo-class.md
-- name:TileReference class
+- name: TileReference class
   href: dev-ref/system-classes/TileReference-class.md
-- name:TreeNode class
+- name: TreeNode class
   href: dev-ref/system-classes/TreeNode-class.md
-- name:TreeNodeIterator class
+- name: TreeNodeIterator class
   href: dev-ref/system-classes/TreeNodeIterator-class.md
-- name:TreeNodeType class
+- name: TreeNodeType class
   href: dev-ref/system-classes/TreeNodeType-class.md
-- name:UnitofWork class
+- name: UnitofWork class
   href: dev-ref/system-classes/UnitofWork-class.md
-- name:UserConnection class
+- name: UserConnection class
   href: dev-ref/system-classes/UserConnection-class.md
-- name:UserMenuList class
+- name: UserMenuList class
   href: dev-ref/system-classes/UserMenuList-class.md
-- name:UserSetup class
+- name: UserSetup class
   href: dev-ref/system-classes/UserSetup-class.md
-- name:UtilFile class
+- name: UtilFile class
   href: dev-ref/system-classes/UtilFile-class.md
-- name:ValidateEventArgs class
+- name: ValidateEventArgs class
   href: dev-ref/system-classes/ValidateEventArgs-class.md
-- name:ValidateFieldEventArgs class
+- name: ValidateFieldEventArgs class
   href: dev-ref/system-classes/ValidateFieldEventArgs-class.md
-- name:ValidateFieldValueEventArgs class
+- name: ValidateFieldValueEventArgs class
   href: dev-ref/system-classes/ValidateFieldValueEventArgs-class.md
-- name:VirtualChannelManager class
+- name: VirtualChannelManager class
   href: dev-ref/system-classes/VirtualChannelManager-class.md
-- name:VSItemNode class
+- name: VSItemNode class
   href: dev-ref/system-classes/VSItemNode-class.md
-- name:VSProjectFileNode class
+- name: VSProjectFileNode class
   href: dev-ref/system-classes/VSProjectFileNode-class.md
-- name:VSProjectFolderNode class
+- name: VSProjectFolderNode class
   href: dev-ref/system-classes/VSProjectFolderNode-class.md
-- name:VSProjectLinkNode class
+- name: VSProjectLinkNode class
   href: dev-ref/system-classes/VSProjectLinkNode-class.md
-- name:VSProjectNode class
+- name: VSProjectNode class
   href: dev-ref/system-classes/VSProjectNode-class.md
-- name:VSProjectsNode class
+- name: VSProjectsNode class
   href: dev-ref/system-classes/VSProjectsNode-class.md
-- name:VSProjectTypeNode class
+- name: VSProjectTypeNode class
   href: dev-ref/system-classes/VSProjectTypeNode-class.md
-- name:VSS class
+- name: VSS class
   href: dev-ref/system-classes/VSS-class.md
-- name:VSSItem class
+- name: VSSItem class
   href: dev-ref/system-classes/VSSItem-class.md
-- name:WebActionMenuFunction class
+- name: WebActionMenuFunction class
   href: dev-ref/system-classes/WebActionMenuFunction-class.md
-- name:WebContentItem class
+- name: WebContentItem class
   href: dev-ref/system-classes/WebContentItem-class.md
-- name:webControlNode class
+- name: webControlNode class
   href: dev-ref/system-classes/webControlNode-class.md
-- name:WebDisplayContentItem class
+- name: WebDisplayContentItem class
   href: dev-ref/system-classes/WebDisplayContentItem-class.md
-- name:WebletItem class
+- name: WebletItem class
   href: dev-ref/system-classes/WebletItem-class.md
-- name:webListDefNode class
+- name: webListDefNode class
   href: dev-ref/system-classes/webListDefNode-class.md
-- name:WebManagedContentItem class
+- name: WebManagedContentItem class
   href: dev-ref/system-classes/WebManagedContentItem-class.md
-- name:WebMenu class
+- name: WebMenu class
   href: dev-ref/system-classes/WebMenu-class.md
-- name:WebMenuFunction class
+- name: WebMenuFunction class
   href: dev-ref/system-classes/WebMenuFunction-class.md
-- name:WebMenuItem class
+- name: WebMenuItem class
   href: dev-ref/system-classes/WebMenuItem-class.md
-- name:webModuleNode class
+- name: webModuleNode class
   href: dev-ref/system-classes/webModuleNode-class.md
-- name:WebOutputContentItem class
+- name: WebOutputContentItem class
   href: dev-ref/system-classes/WebOutputContentItem-class.md
-- name:webPageDefNode class
+- name: webPageDefNode class
   href: dev-ref/system-classes/webPageDefNode-class.md
-- name:webStaticFileNode class
+- name: webStaticFileNode class
   href: dev-ref/system-classes/webStaticFileNode-class.md
-- name:WebUrlMenuFunction class
+- name: WebUrlMenuFunction class
   href: dev-ref/system-classes/WebUrlMenuFunction-class.md
-- name:WinAPINative class
+- name: WinAPINative class
   href: dev-ref/system-classes/WinAPINative-class.md
-- name:xApplication class
+- name: xApplication class
   href: dev-ref/system-classes/xApplication-class.md
-- name:xArgs class
+- name: xArgs class
   href: dev-ref/system-classes/xArgs-class.md
-- name:xAxaptaUserDetails class
+- name: xAxaptaUserDetails class
   href: dev-ref/system-classes/xAxaptaUserDetails-class.md
-- name:xAxaptaUserManager class
+- name: xAxaptaUserManager class
   href: dev-ref/system-classes/xAxaptaUserManager-class.md
-- name:xBrowser class
+- name: xBrowser class
   href: dev-ref/system-classes/xBrowser-class.md
-- name:xClassFactory class
+- name: xClassFactory class
   href: dev-ref/system-classes/xClassFactory-class.md
-- name:xClassTrace class
+- name: xClassTrace class
   href: dev-ref/system-classes/xClassTrace-class.md
-- name:xCompany class
+- name: xCompany class
   href: dev-ref/system-classes/xCompany-class.md
-- name:xCompilerOutput class
+- name: xCompilerOutput class
   href: dev-ref/system-classes/xCompilerOutput-class.md
-- name:XDSServices class
+- name: XDSServices class
   href: dev-ref/system-classes/XDSServices-class.md
-- name:xDynamicVarSet class
+- name: xDynamicVarSet class
   href: dev-ref/system-classes/xDynamicVarSet-class.md
-- name:xExportToExcelController class
+- name: xExportToExcelController class
   href: dev-ref/system-classes/xExportToExcelController-class.md
-- name:xFormRun class
+- name: xFormRun class
   href: dev-ref/system-classes/xFormRun-class.md
-- name:xGlobal class
+- name: xGlobal class
   href: dev-ref/system-classes/xGlobal-class.md
-- name:xInfo class
+- name: xInfo class
   href: dev-ref/system-classes/xInfo-class.md
-- name:xLanguage class
+- name: xLanguage class
   href: dev-ref/system-classes/xLanguage-class.md
-- name:xMenuFunction class
+- name: xMenuFunction class
   href: dev-ref/system-classes/xMenuFunction-class.md
-- name:xNavPane class
+- name: xNavPane class
   href: dev-ref/system-classes/xNavPane-class.md
-- name:XppCompiler class
+- name: XppCompiler class
   href: dev-ref/system-classes/XppCompiler-class.md
-- name:XppPrePostArgs class
+- name: XppPrePostArgs class
   href: dev-ref/system-classes/XppPrePostArgs-class.md
-- name:xRecord class
+- name: xRecord class
   href: dev-ref/system-classes/xRecord-class.md
-- name:xRef class
+- name: xRef class
   href: dev-ref/system-classes/xRef-class.md
-- name:xResourceNode class
+- name: xResourceNode class
   href: dev-ref/system-classes/xResourceNode-class.md
-- name:xSession class
+- name: xSession class
   href: dev-ref/system-classes/xSession-class.md
-- name:xSqlEnumerator class
+- name: xSqlEnumerator class
   href: dev-ref/system-classes/xSqlEnumerator-class.md
-- name:xToastNotification class
+- name: xToastNotification class
   href: dev-ref/system-classes/xToastNotification-class.md
-- name:xVersionControl class
+- name: xVersionControl class
   href: dev-ref/system-classes/xVersionControl-class.md
