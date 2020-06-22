@@ -99,10 +99,10 @@ Two upgrade methods are currently supported:
         1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
         1. In LCS, set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the name of the database that you specify should be the name of the database that you created earlier (typically **AXDB**).
         1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
-        1. Shut down on-premises Application Object Server (AOS), Business Intelligence (BI), and Management Reporter (MR) servers, or stop the services from the Azure Service Fabric portal (Deactivate (Restart)).
+        1. Shut down on-premises Application Object Server (AOS), Business Intelligence (BI), and Management Reporter (MR) servers, or stop the services from the Azure Service Fabric portal by selecting **Deactivate (Restart)**.
         1. Rename or delete the demo database (typically **AXDB**) that you used for deployment, and then rename your new database (typically **AXDBupgraded**) to the name that the demo database had (typically **AXDB**).
         1. The renamed database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-        1. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal (Activate).
+        1. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal by selecting **Activate**.
 
             > [!NOTE]
             > The Database synchronization process will be triggered when the AOS nodes start up, and your environment will be unavailable until the process is completed.
@@ -125,9 +125,9 @@ Two upgrade methods are currently supported:
     > [!NOTE]
     > - Replace **\<DB-name\>**, **\<SqlServerName\>**, **\<User\>**, and **\<Password\>** with the values that you require.
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2016).
-    > - You must add the certificate authority certificate that signed your SQL Server certificate to the OneBox trusted certificate authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
+    > - You must add the certificate authority certificate that signed your SQL Server certificate to the trusted certificate authorities store in your Onebox VHD. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
     > - Make sure that the database user that you use has the **sysadmin** server role, or at least **All Privileges**, assigned on the database that you want to upgrade. Also make sure that the user has permissions to access tempDB. Step 6 of the upgrade process will fail if these conditions aren't met.
-    > - When you install the certificate authority in the OneBox, make sure that you use the fully qualified domain name (FQDN) or IP address to connect to the database that appears there. If you can't access the database by using the domain name, because it doesn't point to that server, edit your hosts file, and add the FQDN and the IP address that the FQDN should be resolved to.
+    > - When you install the certificate authority certificate in the OneBox VHD, make sure that you use the fully qualified domain name (FQDN) or IP address to connect to the database that appears there. If you can't access the database by using the domain name, because it doesn't point to that server, edit your hosts file, and add the FQDN and the IP address that the FQDN should be resolved to.
 
 1. In LCS, go to the Shared asset library. Under **Select asset type**, select **Software deployable package**, and then select **AX2012DataUpgrade-10-0-8** to download the **MajorVersionDataUpgrade.zip** file.
 1. Copy the file, paste it in the desired location (for example: **c:\\D365FFOUpgrade\\**), and unzip it.
@@ -189,8 +189,8 @@ The following parameters can be passed to the script:
 
 - **-DatabaseName** – The name of the database to upgrade.
 - **-DatabaseServer** – The database server that contains the Finance + Operations database.
-- **-DatabaseUser** – The user name for SQL Authentication.
-- **-DatabasePassword** – The password for SQL Authentication.
+- **-DatabaseUser** – The user name for SQL Server Authentication.
+- **-DatabasePassword** – The password for SQL Server Authentication.
 
 After the configuration has been passed, the script uses the new parameters to run a database connection test. If the script can't connect to the database, we recommend that you debug the connection from SQL Server Management Studio or another tool.
 
@@ -337,6 +337,6 @@ else{
 
 ### Troubleshooting
 
-- Wrong database name or user doesn't have access to that database: Exception calling "Open" with "0" argument(s): "Cannot open database "AxDB1" requested by the login. The login failed. Login failed for user 'axdbadmin'."
-- Could not establish a connection. Check ip/fqdn and ports: Exception calling "Open" with "0" argument(s): "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)"
-- Login credentials are not correct. Exception calling "Open" with "0" argument(s): "Login failed for user 'axdbadmin'."
+- Exception calling "Open" with "0" argument(s): "Cannot open database "AxDB1" requested by the login. The login failed. Login failed for user 'axdbadmin'." You supplied the Wrong database name or the user doesn't have access to that database. 
+- Exception calling "Open" with "0" argument(s): "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)". The script could not establish a connection with the SQL Server specified. Check the ip/fqdn and port that you used.  
+- Exception calling "Open" with "0" argument(s): "Login failed for user 'axdbadmin'." The supplied login credentials are not correct.
