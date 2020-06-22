@@ -242,7 +242,7 @@ Open a **Command Prompt** window as an administrator, and run the following comm
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=<Database edition> /p:DatabaseServiceObjective=<Service objective>
 ```
 
 Here is an explanation of the parameters:
@@ -253,11 +253,15 @@ Here is an explanation of the parameters:
 - **tp** (target password) – The SQL password for the target SQL Database instance.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
-- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseEdition** – Specifies the edition of the database such as Basic, Standard, Premium, GeneralPurpose, BusinessCritical, or Hyperscale. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
 
 After you run the commands, you may see the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
+
+If you face an error message about an invalid value, double-check your parameters. If they are fine, you might need to use a newer version of SqlPackage. You can use the [Windows .NET Core](/sql/tools/sqlpackage-download) version without the need to install. It is a .zip file that can be extracted to C:\Temp\Sqlpackage-dotnetcore, for example. Now when you import the database, instead of using the Sqlpackage.exe under C:\Program Files (x86) you can use the Sqlpackage.exe in C:\Temp\Sqlpackage-dotnetcore
+
 
 
 ## Run a T-SQL script to update the database
