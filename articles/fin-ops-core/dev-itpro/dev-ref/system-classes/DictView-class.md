@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class DictView
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class DictView extends DictTable

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class FormAnimateControl
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class FormAnimateControl extends FormControl
@@ -763,7 +763,7 @@ public boolean isUserSetupEnabled(int neededSetupRights)
 ### Parameters - isUserSetupEnabled
 
 neededSetupRights  
-A value from the FormAllowUserSetup enumeration that specifies the level of customization that is being queried for the control. For more information, see “Remarks.”
+A value from the FormAllowUserSetup enumeration that specifies the level of customization that is being queried for the control. For more information, see ï¿½Remarks.ï¿½
 
 ### Return Value - isUserSetupEnabled
 

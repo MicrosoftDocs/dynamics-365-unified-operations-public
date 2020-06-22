@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class COMVariant
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class COMVariant extends Object
@@ -34,7 +34,7 @@ The data type of the COMVariant object can be set by:
 
 -   The new method
 -   The variantType method
--   The createFrom… methods. For example, the createFromBoolean method creates a COMVariant object of type VT\_BOOL (= Boolean).
+-   The createFromï¿½ methods. For example, the createFromBoolean method creates a COMVariant object of type VT\_BOOL (= Boolean).
 -   The property methods. For example, if you set a new value by using the boolean property, and the object is not of type VT\_BOOL (= Boolean), it will be changed to this type.
 
 The value of the data type is set by one of the property methods. For example, the value of a COMVariant object of type VT\_BOOL is set by the boolean method. The possible data types and the methods that set their values are listed in the Remarks section. The data types that the COMVariant class supports are not X++ data types, but data types defined by the COM Automation standard. The COMVariant class is based on the VARIANT structure found in the Win32 SDK. For more information see the Win32 SDK documentation. The property methods of the COMVariant class map to the COMVariantType values in the following way:
@@ -633,7 +633,7 @@ The following example creates a new COMVariant object of type VT\_DISPATCH.
 ```xpp
     // Here, the comInterface variable must be assigned 
     // a COM IDispatch interface 
-    //… 
+    //ï¿½ 
 ```
 
 ```xpp
@@ -782,7 +782,7 @@ The current value.
 
 ### Remarks - longLong
 
-If you pass in a value that has a different data type than the object, the data type of the object will be changed to match the value’s data type. A COMVariant object has a longlong variant type if its data type is set to COMVariantType::VT\_I8.
+If you pass in a value that has a different data type than the object, the data type of the object will be changed to match the valueï¿½s data type. A COMVariant object has a longlong variant type if its data type is set to COMVariantType::VT\_I8.
 
 ### Examples - longLong
 
@@ -1095,7 +1095,7 @@ The current value.
 
 ### Remarks - uLongLong
 
-If you pass in a value that has a different data type than the object, the object’s data type will be changed to match the value’s data type. A COMVariant object has an unsigned longlong variant type if its data type is set to COMVariantType::VT\_I8.
+If you pass in a value that has a different data type than the object, the objectï¿½s data type will be changed to match the valueï¿½s data type. A COMVariant object has an unsigned longlong variant type if its data type is set to COMVariantType::VT\_I8.
 
 ### Examples - uLongLong
 
@@ -1972,7 +1972,7 @@ The following example shows how to call the COM.multiply method with the third a
     varArg2.float(456); 
     varArg3.noValue(); 
     varRet = com.multiply(varArg1, varArg2, varArg3); 
-    // …or… 
+    // ï¿½orï¿½ 
     varRet = com.multiply(varArg1, varArg2, COMArgument::NoValue); 
      ret = varRet.double(); 
     // ret is now 56088 (123*456) 

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class SegmentValueChangedEventArgs
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class SegmentValueChangedEventArgs extends Object

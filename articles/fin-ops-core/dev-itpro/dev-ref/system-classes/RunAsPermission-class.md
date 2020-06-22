@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class RunAsPermission
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class RunAsPermission extends CodeAccessPermission
@@ -32,7 +32,7 @@ The RunAsPermssion class controls the execution of code in the security context 
 
 You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission.demand method is called on before the protected API is executed. Call a method on the server tier from one of the following: The RunAsPermission class is designed to check permissions for the runAs function. For a list of all APIs protected by permissions, see Secured APIs.
 
--   A server static method –or–
+-   A server static method ï¿½orï¿½
 -   A class instance method that is set to run on the server by using the RunOn class property
 
 ## Examples

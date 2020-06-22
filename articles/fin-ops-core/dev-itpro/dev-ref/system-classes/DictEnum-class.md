@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class DictEnum
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class DictEnum extends Object
@@ -627,7 +627,7 @@ The ID of the enumeration.
 
 ### Remarks - new
 
-The constructor does not fail if an invalid enum ID is supplied. However, when the DictEnum instance is used, a run-time error occurs. Note that EnumID values are unsigned integers and are therefore always in the range 0–65535.
+The constructor does not fail if an invalid enum ID is supplied. However, when the DictEnum instance is used, a run-time error occurs. Note that EnumID values are unsigned integers and are therefore always in the range 0ï¿½65535.
 
 ### Examples - new
 

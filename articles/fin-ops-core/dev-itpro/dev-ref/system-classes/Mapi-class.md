@@ -20,13 +20,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class Mapi
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class Mapi extends Object
 ```
 
-The Mapi class enables email to be sent, received, and managed in most major mail systems, such as Microsoft Exchange–based systems, Microsoft Outlook Express, and Lotus CCMail.
+The Mapi class enables email to be sent, received, and managed in most major mail systems, such as Microsoft Exchangeï¿½based systems, Microsoft Outlook Express, and Lotus CCMail.
 
 ## Remarks
 

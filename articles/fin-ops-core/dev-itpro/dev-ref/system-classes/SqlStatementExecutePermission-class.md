@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class SqlStatementExecutePermission
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class SqlStatementExecutePermission extends CodeAccessPermission
@@ -32,7 +32,7 @@ Controls the ability to use SQL.
 
 This class is designed to check permissions for specific APIs. For a list of all protected APIs, see Secured APIs. You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission::demand method is called on before the protected API is executed. Call a method on the server tier from one of the following:
 
--   A server static method –or–
+-   A server static method ï¿½orï¿½
 -   A class instance method that is set to run on the server by using the RunOn class property
 
 ## Examples

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class Report
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class Report extends TreeNode
@@ -524,11 +524,11 @@ container
 
 The parameter format is as follows:
 
--   () – Creates a report object that is not present in the AOT.
--   (c) – Creates a report object that is not present in the AOT, the contents of which are given by the container c.
--   ("existingReportName") – Retrieves a report object that is found in the AOT.
--   ("nonExistingReportName") – Creates a report object in the AOT.
--   ("nonExistingReportName", c) – Creates a report object in the AOT, the contents of which are given by the container c.
+-   () ï¿½ Creates a report object that is not present in the AOT.
+-   (c) ï¿½ Creates a report object that is not present in the AOT, the contents of which are given by the container c.
+-   ("existingReportName") ï¿½ Retrieves a report object that is found in the AOT.
+-   ("nonExistingReportName") ï¿½ Creates a report object in the AOT.
+-   ("nonExistingReportName", c) ï¿½ Creates a report object in the AOT, the contents of which are given by the container c.
 
 The container c should be created by the pack method.
 

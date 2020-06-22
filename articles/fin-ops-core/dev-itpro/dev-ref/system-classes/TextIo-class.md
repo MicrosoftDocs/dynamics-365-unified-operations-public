@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class TextIo
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class TextIo extends CommaIo
@@ -464,7 +464,7 @@ A run-time error occurs if the file is accessed with a method that does not corr
 <tr class="even">
 <td>65001</td>
 <td>UTF-8</td>
-<td>Stores Unicode in a byte-stream–friendly way:
+<td>Stores Unicode in a byte-streamï¿½friendly way:
 <ul>
 <li>ASCII characters are 1 byte</li>
 <li>European alphabets (including basic diacritics) are 2 bytes per character</li>

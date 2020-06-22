@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class systemSequence
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class systemSequence extends Object
@@ -30,7 +30,7 @@ The systemSequence class takes manual control of the system sequence generator a
 
 ## Remarks
 
-When records are inserted into SQL tables, a unique RecId is assigned to each record—regardless of the company each record is associated with. Use extreme caution when you use this class—data integrity could be destroyed. This class is typically used for data import or export routines, or for very large jobs. The record ID is an int64 data type value. The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808). RecIds can be used up prematurely if large, unused ranges of RecIds are created. Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.
+When records are inserted into SQL tables, a unique RecId is assigned to each recordï¿½regardless of the company each record is associated with. Use extreme caution when you use this classï¿½data integrity could be destroyed. This class is typically used for data import or export routines, or for very large jobs. The record ID is an int64 data type value. The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808). RecIds can be used up prematurely if large, unused ranges of RecIds are created. Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.
 
 ## Examples
 

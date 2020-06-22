@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class ReportSection
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class ReportSection extends TreeNode
@@ -120,7 +120,7 @@ static void test(args a)
 | public Units columnspaceUnit(\[Units value\])                                                |                                                                                                                                           |
 | public Real columnspaceValue(\[Real value\])                                                 |                                                                                                                                           |
 | public int columnsValue(\[int value\])                                                       |                                                                                                                                           |
-| public ReportControl control(FieldId fieldId, \[TableId tableId\])                           | Finds a control in the section, based on the control’s table and dataField properties.                                                    |
+| public ReportControl control(FieldId fieldId, \[TableId tableId\])                           | Finds a control in the section, based on the controlï¿½s table and dataField properties.                                                    |
 | public int controlCount()                                                                    |                                                                                                                                           |
 | public ReportControl controlName(str name)                                                   | Finds a control in a section, based on the control's Name property.                                                                       |
 | public ReportControl controlNo(int number)                                                   |                                                                                                                                           |
@@ -1104,7 +1104,7 @@ value
 
 ## Method control
 
-Finds a control in the section, based on the control’s table and dataField properties.
+Finds a control in the section, based on the controlï¿½s table and dataField properties.
 
 ```xpp
 public ReportControl control(FieldId fieldId, [TableId tableId])
@@ -1126,7 +1126,7 @@ The report control that is found.
 
 ### Remarks - control
 
-If the table ID is not supplied, the table property from the section’s parent section group is used.
+If the table ID is not supplied, the table property from the sectionï¿½s parent section group is used.
 
 ## Method controlCount
 

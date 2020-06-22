@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class QueryBuildDataSource
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class QueryBuildDataSource extends TreeNode
@@ -104,7 +104,7 @@ Data sources are arranged in hierarchies that define the sequence in which recor
 | public int sortFieldCount()                                                                                                                                  |                                                                                                                                           |
 | public IndexId sortIndex(int indexNo)                                                                                                                        |                                                                                                                                           |
 | public int sortIndexCount()                                                                                                                                  |                                                                                                                                           |
-| public QueryBuildStaticlink staticlink(int staticlinkNo)                                                                                                     | Returns a static Link object on the query’s data source.                                                                                  |
+| public QueryBuildStaticlink staticlink(int staticlinkNo)                                                                                                     | Returns a static Link object on the queryï¿½s data source.                                                                                  |
 | public int staticlinkCount()                                                                                                                                 | Gives the number of static links that are defined on the QueryBuildDataSource object.                                                     |
 | public TableId table(\[TableId value\])                                                                                                                      | Gets or sets the table ID that is associated with the object.                                                                             |
 | public str toString()                                                                                                                                        | Returns a string that represents the current object.                                                                                      |
@@ -969,7 +969,7 @@ public int sortIndexCount()
 
 ## Method staticlink
 
-Returns a static Link object on the query’s data source.
+Returns a static Link object on the queryï¿½s data source.
 
 ```xpp
 public QueryBuildStaticlink staticlink(int staticlinkNo)

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class FormComboBoxControl
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class FormComboBoxControl extends FormControl
@@ -41,7 +41,7 @@ class FormComboBoxControl extends FormControl
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determines whether the control’s background can be transparent.                                                                                                         |
+| public int backStyle(\[int value\])                                                                         | Determines whether the controlï¿½s background can be transparent.                                                                                                         |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to display text in the control.                                                                                            |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the border line for the control.                                                                                                              |
@@ -346,7 +346,7 @@ public int backgroundColor([int value])
 ### Parameters - backgroundColor
 
 value  
-The value to assign as the background color of the control; optional. This can be one of the values from the control’s color scheme or a Winapi::RGB2int value.
+The value to assign as the background color of the control; optional. This can be one of the values from the controlï¿½s color scheme or a Winapi::RGB2int value.
 
 ### Return Value - backgroundColor
 
@@ -375,7 +375,7 @@ this.backgroundColor(WindowsPalette::DarkShadow3D);
 
 ## Method backStyle
 
-Determines whether the control’s background can be transparent.
+Determines whether the controlï¿½s background can be transparent.
 
 ```xpp
 public int backStyle([int value])
@@ -462,16 +462,16 @@ An integer value between 0 (zero) and 9, inclusive.
 
 The integer that is returned contains the font weight as follows:
 
--   0 – Use the default font weight.
--   1 – Thin.
--   2 – Extra-light.
--   3 – Light.
--   4 – Normal.
--   5 – Medium.
--   6 – Semibold.
--   7 – Bold.
--   8 – Extra-bold.
--   9 – Heavy.
+-   0 ï¿½ Use the default font weight.
+-   1 ï¿½ Thin.
+-   2 ï¿½ Extra-light.
+-   3 ï¿½ Light.
+-   4 ï¿½ Normal.
+-   5 ï¿½ Medium.
+-   6 ï¿½ Semibold.
+-   7 ï¿½ Bold.
+-   8 ï¿½ Extra-bold.
+-   9 ï¿½ Heavy.
 
 ## Method border
 
@@ -494,11 +494,11 @@ An integer between 0 (zero) and 4, inclusive.
 
 The integer that is returned contains the border style line as follows.
 
--   0 – Auto.
--   1 – 3D.
--   2 – Single line.
--   3 – Flat.
--   4 – None.
+-   0 ï¿½ Auto.
+-   1 ï¿½ 3D.
+-   2 ï¿½ Single line.
+-   3 ï¿½ Flat.
+-   4 ï¿½ None.
 
 ### Examples - border
 
@@ -1332,9 +1332,9 @@ Exact mode is used if the value parameter is omitted. Calculate the height accor
 
 | Mode              | Height calculation                                                                         |
 |-------------------|--------------------------------------------------------------------------------------------|
-| -1 – Exact        | The exact height of the control in pixels is used.                                         |
-| 0 – Auto          | The height of the control is calculated automatically, and the value parameter is ignored. |
-| 1 – Column height | The layout of the form determines the height of the control.                               |
+| -1 ï¿½ Exact        | The exact height of the control in pixels is used.                                         |
+| 0 ï¿½ Auto          | The height of the control is calculated automatically, and the value parameter is ignored. |
+| 1 ï¿½ Column height | The layout of the form determines the height of the control.                               |
 
 The height and height calculation mode can be set separately.
 
@@ -3336,9 +3336,9 @@ Exact mode is used if the value parameter is omitted. Calculate the width accord
 
 | Mode             | Width calculation                                                                         |
 |------------------|-------------------------------------------------------------------------------------------|
-| -1 – Exact       | The exact width of the control in pixels is used.                                         |
-| 0 – Auto         | The width of the control is calculated automatically, and the value parameter is ignored. |
-| 1 – Column width | The layout of the form determines the width of the control.                               |
+| -1 ï¿½ Exact       | The exact width of the control in pixels is used.                                         |
+| 0 ï¿½ Auto         | The width of the control is calculated automatically, and the value parameter is ignored. |
+| 1 ï¿½ Column width | The layout of the form determines the width of the control.                               |
 
 The width and width calculation mode can be set separately.
 

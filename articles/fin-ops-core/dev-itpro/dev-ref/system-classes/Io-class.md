@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class Io
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class Io extends Object
@@ -302,11 +302,11 @@ The mode in which the file should be opened.
 
 The mode parameter can be one of the following modes:
 
--   R – read
--   W – write
--   A – append (implies W)
--   T – translate (text)
--   B – binary
+-   R ï¿½ read
+-   W ï¿½ write
+-   A ï¿½ append (implies W)
+-   T ï¿½ translate (text)
+-   B ï¿½ binary
 
 A run-time error occurs if the file is accessed with a method that does not correspond to the current opened mode (for example, if an attempt is made to write to a read-mode file). If an attacker can control input to the new method, a security risk exists. Therefore, this method runs under Code Access Security. Calls to this method on the server require permission. . Ensure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.
 

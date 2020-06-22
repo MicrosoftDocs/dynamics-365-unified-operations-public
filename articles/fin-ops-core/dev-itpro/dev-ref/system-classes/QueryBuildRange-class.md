@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class QueryBuildRange
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class QueryBuildRange extends TreeNode
@@ -241,9 +241,9 @@ The current status of the object.
 
 The following values are possible for the status:
 
--   0 – Status Open.
--   1 – Status Lock.
--   2 – Status Hide.
+-   0 ï¿½ Status Open.
+-   1 ï¿½ Status Lock.
+-   2 ï¿½ Status Hide.
 
 ## Method table
 

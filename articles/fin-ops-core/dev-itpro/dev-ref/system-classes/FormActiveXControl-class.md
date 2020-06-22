@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class FormActiveXControl
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class FormActiveXControl extends FormControl
@@ -766,7 +766,7 @@ public boolean isUserSetupEnabled(int neededSetupRights)
 ### Parameters - isUserSetupEnabled
 
 neededSetupRights  
-A value from the FormAllowUserSetup enumeration that specifies the level of customization that is being queried for the control. For more information, see the “Remarks” section.
+A value from the FormAllowUserSetup enumeration that specifies the level of customization that is being queried for the control. For more information, see the ï¿½Remarksï¿½ section.
 
 ### Return Value - isUserSetupEnabled
 

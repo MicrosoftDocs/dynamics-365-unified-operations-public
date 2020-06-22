@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class DictClass
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class DictClass extends Object
@@ -544,5 +544,5 @@ A value of the classId system data type that indicates the system ID of a class.
 
 ### Remarks - new
 
-Class IDs are unsigned integers and are therefore always in the range 0 to 65535. The method does not fail if an invalid class ID is passed. You can pass a class name to the method instead of a class ID by using the classNum intrinsic function. For more information, see “Intrinsic Functions.”
+Class IDs are unsigned integers and are therefore always in the range 0 to 65535. The method does not fail if an invalid class ID is passed. You can pass a class name to the method instead of a class ID by using the classNum intrinsic function. For more information, see ï¿½Intrinsic Functions.ï¿½
 

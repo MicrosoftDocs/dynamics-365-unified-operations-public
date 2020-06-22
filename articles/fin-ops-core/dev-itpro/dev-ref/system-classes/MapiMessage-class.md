@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class MapiMessage
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class MapiMessage extends Object
@@ -117,9 +117,9 @@ A bitmask of the message status flags.
 
 The following flags can be set:
 
--   \#MAPI\_RECEIPT\_REQUESTED – Receipt notification is requested. Client applications set this bit when they send a message.
--   \#MAPI\_SENT – The message has been sent.
--   \#MAPI\_UNREAD – The message has not been read.
+-   \#MAPI\_RECEIPT\_REQUESTED ï¿½ Receipt notification is requested. Client applications set this bit when they send a message.
+-   \#MAPI\_SENT ï¿½ The message has been sent.
+-   \#MAPI\_UNREAD ï¿½ The message has not been read.
 
 ## Method getFileNo
 

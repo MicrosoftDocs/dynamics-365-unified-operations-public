@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class FormRadioControl
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class FormRadioControl extends FormControl
@@ -374,16 +374,16 @@ An integer value between 0 (zero) and 9, inclusive.
 
 The integer that is returned contains the weight of the font as follows:
 
--   0 – Use the default font weight.
--   1 – Thin.
--   2 – Extra-light.
--   3 – Light.
--   4 – Normal.
--   5 – Medium.
--   6 – Semibold.
--   7 – Bold.
--   8 – Extra-bold.
--   9 – Heavy.
+-   0 ï¿½ Use the default font weight.
+-   1 ï¿½ Thin.
+-   2 ï¿½ Extra-light.
+-   3 ï¿½ Light.
+-   4 ï¿½ Normal.
+-   5 ï¿½ Medium.
+-   6 ï¿½ Semibold.
+-   7 ï¿½ Bold.
+-   8 ï¿½ Extra-bold.
+-   9 ï¿½ Heavy.
 
 ## Method bottomMargin
 

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class FormControl
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class FormControl extends Object
@@ -520,7 +520,7 @@ boolean dDragDrop;
 // as a FormControl value. 
 // Retrieve the drag-and-drop-enabled value. 
 dDragDrop = ctrl.dragDrop(); 
-// Set the drag–and–drop-enabled value. 
+// Set the dragï¿½andï¿½drop-enabled value. 
 ctrl.dragDrop(true);
 ```
 
@@ -787,9 +787,9 @@ Exact mode is used if the value parameter is omitted. Calculate the height accor
 
 | Mode              | Height calculation                                                                         |
 |-------------------|--------------------------------------------------------------------------------------------|
-| -1 – Exact        | The exact height of the control in pixels is used.                                         |
-| 0 – Auto          | The height of the control is calculated automatically, and the value parameter is ignored. |
-| 1 – Column height | The layout of the form determines the height of the control.                               |
+| -1 ï¿½ Exact        | The exact height of the control in pixels is used.                                         |
+| 0 ï¿½ Auto          | The height of the control is calculated automatically, and the value parameter is ignored. |
+| 1 ï¿½ Column height | The layout of the form determines the height of the control.                               |
 
 The height and height calculation mode can be set separately.
 
@@ -2137,9 +2137,9 @@ Exact mode is used if the value parameter is omitted. Calculate the width accord
 
 | Mode             | Width calculation                                                                         |
 |------------------|-------------------------------------------------------------------------------------------|
-| -1 – Exact       | The exact width of the control in pixels is used.                                         |
-| 0 – Auto         | The width of the control is calculated automatically, and the value parameter is ignored. |
-| 1 – Column width | The layout of the form determines the width of the control.                               |
+| -1 ï¿½ Exact       | The exact width of the control in pixels is used.                                         |
+| 0 ï¿½ Auto         | The width of the control is calculated automatically, and the value parameter is ignored. |
+| 1 ï¿½ Column width | The layout of the form determines the width of the control.                               |
 
 The width and width calculation mode can be set separately.
 

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class xSession
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class xSession extends Object
@@ -103,7 +103,7 @@ A string that indicates the name of the AOS.
 
 ### Remarks - AOSName
 
-For non–AOS connected clients, this method returns an empty string.
+For nonï¿½AOS connected clients, this method returns an empty string.
 
 ### Examples - AOSName
 
@@ -575,7 +575,7 @@ An instance of the table that most recently had an update conflict.
 
 ### Examples - lastUpdateConflictingTable
 
-The following example demonstrates the general use of the lastUpdateConflictingTable method—it enables you to abort or retry transactions according to which table has an update conflict.
+The following example demonstrates the general use of the lastUpdateConflictingTable methodï¿½it enables you to abort or retry transactions according to which table has an update conflict.
 
 ```xpp
 try 
@@ -747,7 +747,7 @@ public static void updateAOC()
 
 ### Remarks - updateAOC
 
-AOC is a client-side cache that consists of metadata that is loaded by the client, and then saved to disk when the client is closed. It is saved under the user’s local settings folder. The file has an .auc filename extension and is saved in a user's Local Settings folder. When the client is started, it reads from the cache, and then deletes the cache from the disk.
+AOC is a client-side cache that consists of metadata that is loaded by the client, and then saved to disk when the client is closed. It is saved under the userï¿½s local settings folder. The file has an .auc filename extension and is saved in a user's Local Settings folder. When the client is started, it reads from the cache, and then deletes the cache from the disk.
 
 ## Method setAutoUpdateRecVersion
 

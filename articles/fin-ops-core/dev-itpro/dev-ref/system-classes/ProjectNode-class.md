@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class ProjectNode
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class ProjectNode extends TreeNode
@@ -539,7 +539,7 @@ public void clear()
 
 ### Remarks - clear
 
-This method does not remove the project contents from the Application Object Tree (AOT)—only from the project itself. This method removes the project contents but does not remove the project folder. To delete a project and its contents in one method call, use the AOTdelete method. To delete objects from the AOT, use the AOTdelete method.
+This method does not remove the project contents from the Application Object Tree (AOT)ï¿½only from the project itself. This method removes the project contents but does not remove the project folder. To delete a project and its contents in one method call, use the AOTdelete method. To delete objects from the AOT, use the AOTdelete method.
 
 ### Examples - clear
 

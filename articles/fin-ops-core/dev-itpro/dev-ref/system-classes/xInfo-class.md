@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class xInfo
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class xInfo extends Object
@@ -246,7 +246,7 @@ A container holding information about the current breakpoints.
 The container that holds information about breakpoints is of the format:
 
 -   Item 1: Version number
--   Items 2 - 4, 5-7, … n - n+2: Information about each breakpoint, consisting of:
+-   Items 2 - 4, 5-7, ï¿½ n - n+2: Information about each breakpoint, consisting of:
 
 ```xpp
 -   the AOT path

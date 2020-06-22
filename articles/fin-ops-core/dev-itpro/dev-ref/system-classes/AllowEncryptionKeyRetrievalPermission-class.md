@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class AllowEncryptionKeyRetrievalPermission
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ```xpp
 class AllowEncryptionKeyRetrievalPermission extends CodeAccessPermission
@@ -52,7 +52,7 @@ A copy of the derived class object.
 
 ### Remarks - copy
 
-You can override this method as part of the process of making an API more secure. For more information, see ‘Securing an API that Executes on the Server Tier.’
+You can override this method as part of the process of making an API more secure. For more information, see ï¿½Securing an API that Executes on the Server Tier.ï¿½
 
 ## Method isSubsetOf
 
@@ -73,7 +73,7 @@ true if a current permission is a subset of a specified permission; otherwise, f
 
 ### Remarks - isSubsetOf
 
-You can override the method as part of the process of making an API more secure. For more information, see ‘Securing an API that Executes on the Server Tier.’
+You can override the method as part of the process of making an API more secure. For more information, see ï¿½Securing an API that Executes on the Server Tier.ï¿½
 
 ## Method new
 
