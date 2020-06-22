@@ -71,7 +71,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
 3. Grant Common Data Service access so that it can connect to a Finance and Operations app.
 
-    1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications
+    1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications.
 
     2. Select **New** to add a new client ID record: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This record is the application ID for an app that will be used to connect from Common Data Service to the Finance and Operations app.
     3. Repeat the previous two steps to add another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
@@ -126,7 +126,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
 5. Provide app consent in the tenant.
-   For dual-write core solution version 1.0.16.0 or above, this step is no longer needed
+   For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
         
     **Related health check result:**<br>
     *Apps in tenant*<br>
@@ -178,12 +178,12 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
     > [!NOTE]
-    > For dual-write core solution version lower than 1.0.16.0, see below for modifications and additional steps 
+    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and additional steps. 
 
 **For dual-write core solution lower than version 1.0.16.0 only**
 
-1. In step Step 3b above, create new client ID record: **33976c19-1db5-4c02-810e-c243db79efde** (vs.6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452) 
-2. App consent in the tenant .
+1. In step Step 3b above, create a new client ID record: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
+2. Add app consent in the tenant:
 
     1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.
 
