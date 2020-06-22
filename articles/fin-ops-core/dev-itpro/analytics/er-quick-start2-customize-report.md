@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 7.0.0
 The procedures in this topic explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER) framework](general-electronic-reporting.md).
-- Import ER configurations that are provided by Microsoft and used to generate a payment file while a [vendor payment](../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is being processed.
+- Import ER configurations that are provided by Microsoft and used to generate a payment file while a [vendor payment](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is being processed.
 - Create a custom version of a standard ER format configuration that is provided by Microsoft.
 - Modify the custom ER format configuration so that it generates payment files that meets the requirements of a specific bank.
 - Adopt changes that are made to the standard ER format configuration in the custom ER format configuration.
