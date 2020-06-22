@@ -36,6 +36,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter U.
 
+[UnitofWork class](system-classes/UnitofWork-class.md)
+
+[UserConnection class](system-classes/UserConnection-class.md)
+
+[UserMenuList class](system-classes/UserMenuList-class.md)
+
+[UserSetup class](system-classes/UserSetup-class.md)
+
+[UtilFile class](system-classes/UtilFile-class.md)
+
+
+
 Class UnitofWork
 ----------------
 

@@ -36,6 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter J.
 
+[Job class](system-classes/Job-class.md)
+
+
+
 Class Job
 ---------
 

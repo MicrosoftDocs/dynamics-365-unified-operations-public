@@ -36,6 +36,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter V.
 
+[ValidateEventArgs class](system-classes/ValidateEventArgs-class.md)
+
+[ValidateFieldEventArgs class](system-classes/ValidateFieldEventArgs-class.md)
+
+[ValidateFieldValueEventArgs class](system-classes/ValidateFieldValueEventArgs-class.md)
+
+[VirtualChannelManager class](system-classes/VirtualChannelManager-class.md)
+
+[VSItemNode class](system-classes/VSItemNode-class.md)
+
+[VSProjectFileNode class](system-classes/VSProjectFileNode-class.md)
+
+[VSProjectFolderNode class](system-classes/VSProjectFolderNode-class.md)
+
+[VSProjectLinkNode class](system-classes/VSProjectLinkNode-class.md)
+
+[VSProjectNode class](system-classes/VSProjectNode-class.md)
+
+[VSProjectsNode class](system-classes/VSProjectsNode-class.md)
+
+[VSProjectTypeNode class](system-classes/VSProjectTypeNode-class.md)
+
+[VSS class](system-classes/VSS-class.md)
+
+[VSSItem class](system-classes/VSSItem-class.md)
+
+
+
 Class ValidateEventArgs
 -----------------------
 

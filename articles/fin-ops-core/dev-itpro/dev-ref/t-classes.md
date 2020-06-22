@@ -36,6 +36,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter T.
 
+[TableExtension class](system-classes/TableExtension-class.md)
+
+[TextBuffer class](system-classes/TextBuffer-class.md)
+
+[TextIo class](system-classes/TextIo-class.md)
+
+[TileReference class](system-classes/TileReference-class.md)
+
+[TreeNode class](system-classes/TreeNode-class.md)
+
+[TreeNodeIterator class](system-classes/TreeNodeIterator-class.md)
+
+[TreeNodeType class](system-classes/TreeNodeType-class.md)
+
+
+
 Class TableExtension
 --------------------
 

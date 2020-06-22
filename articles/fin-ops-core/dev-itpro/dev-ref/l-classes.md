@@ -36,6 +36,30 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter L.
 
+[Label class](system-classes/Label-class.md)
+
+[LabelBulkEditor class](system-classes/LabelBulkEditor-class.md)
+
+[LastAotSelection class](system-classes/LastAotSelection-class.md)
+
+[List class](system-classes/List-class.md)
+
+[ListEnumerator class](system-classes/ListEnumerator-class.md)
+
+[ListIterator class](system-classes/ListIterator-class.md)
+
+[ListPage class](system-classes/ListPage-class.md)
+
+[ListPageArgs class](system-classes/ListPageArgs-class.md)
+
+[ListPageInteraction class](system-classes/ListPageInteraction-class.md)
+
+[LoadAutoCompleteDataEventArgs class](system-classes/LoadAutoCompleteDataEventArgs-class.md)
+
+[LoginProperty class](system-classes/LoginProperty-class.md)
+
+
+
 Class Label
 -----------
 

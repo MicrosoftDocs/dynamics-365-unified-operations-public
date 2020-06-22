@@ -36,6 +36,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter H.
 
+[HeapCheck class](system-classes/HeapCheck-class.md)
+
+[HelpDocSetNode class](system-classes/HelpDocSetNode-class.md)
+
+[HelpDocumentManager class](system-classes/HelpDocumentManager-class.md)
+
+[HtmlFont class](system-classes/HtmlFont-class.md)
+
+
 Class HeapCheck
 ---------------
 

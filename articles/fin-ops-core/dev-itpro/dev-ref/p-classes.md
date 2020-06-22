@@ -36,6 +36,44 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter P.
 
+[Page class](system-classes/Page-class.md)
+
+[PageArgs class](system-classes/PageArgs-class.md)
+
+[PageInteraction class](system-classes/PageInteraction-class.md)
+
+[PartList class](system-classes/PartList-class.md)
+
+[Percentbar class](system-classes/Percentbar-class.md)
+
+[PerformanceMonitor class](system-classes/PerformanceMonitor-class.md)
+
+[PerformanceMonitorCounter class](system-classes/PerformanceMonitorCounter-class.md)
+
+[PerformanceMonitorInstance class](system-classes/PerformanceMonitorInstance-class.md)
+
+[PipeClient class](system-classes/PipeClient-class.md)
+
+[PipeServer class](system-classes/PipeServer-class.md)
+
+[PresenceInfo class](system-classes/PresenceInfo-class.md)
+
+[PrintJobSettings class](system-classes/PrintJobSettings-class.md)
+
+[profiler class](system-classes/profiler-class.md)
+
+[ProgressWindow class](system-classes/ProgressWindow-class.md)
+
+[ProjectGroupNode class](system-classes/ProjectGroupNode-class.md)
+
+[ProjectListNode class](system-classes/ProjectListNode-class.md)
+
+[ProjectNode class](system-classes/ProjectNode-class.md)
+
+[PropertiesWindow class](system-classes/PropertiesWindow-class.md)
+
+
+
 Class Page
 ----------
 

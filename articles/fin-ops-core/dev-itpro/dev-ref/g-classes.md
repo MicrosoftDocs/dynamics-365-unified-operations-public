@@ -36,6 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter G.
 
+[Gac class](system-classes/Gac-class.md)
+
+
+
+
 Class Gac
 ---------
 
