@@ -74,7 +74,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
         items:
-        - name: Upgrade and N-1 support for Retail
+        - name: Upgrade and N-1 support for Commerce
           href: dev-itpro/overview-upgrade-n-minus1.md
         - name: Phased Rollout (N-1) installation, configuration, and cutover
           href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
             href: get-started/whats-new-commerce-10-0-11.md
           - name: Commerce 10.0.10 (May 2020)
             href: get-started/whats-new-commerce-10-0-10.md
-          - name: Commerce 10.0.9 (April 2020)
-            href: get-started/whats-new-10-0-9.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -504,6 +502,8 @@
             href: dev-itpro/adyen-connector-listPI.md
           - name: Strong Customer Authentication (SCA) using the Adyen connector
             href: adyen_redirect.md
+          - name: Dedicated payment terminals and prompts for a printer and cash drawer
+            href: pos-multi-hws.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
@@ -978,7 +978,7 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
-          - name: Order confirmation module
+          - name: Order details module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
@@ -1900,6 +1900,8 @@
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
+          - name: Debug against a Tier 1 Commerce development environment
+            href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
@@ -2032,6 +2034,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Development in cloud-hosted dev environments without admin access
           href: dev-itpro/cloud-dev-box.md
+        - name: Set up Commerce SDK build pipeline
+          href: dev-itpro/retail-sdk/SDK-build-pipeline.md
       - name: Point of sale extensibility
         items:
         - name: POS screen layouts

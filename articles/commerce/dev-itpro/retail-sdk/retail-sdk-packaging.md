@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -303,3 +303,5 @@ After the build is completed, deployable packages are generated as a zip file (R
 ## Deploy the deployable packages
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
+
+LCS has a 300 MB limitation on the package size. If the package size is greater than 300 MB, LCS will not allow deploy the package. To reduce the size and deploy to RCSU, remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup, or HardwareStationSetup installers). Unzip the package and remove any of the self-service exes and zip the package again. The self-service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS following the steps in [Synchronize self-service installers in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).

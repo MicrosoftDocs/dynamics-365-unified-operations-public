@@ -148,6 +148,8 @@
                       href: data-entities/dual-write/link-your-environment.md
                     - name: Enable entity map for dual-write
                       href: data-entities/dual-write/enable-entity-map.md
+                - name: Currency data-type migration for dual-write
+                  href: data-entities/dual-write/currrency-decimal-places.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
@@ -362,6 +364,8 @@
       items: 
       - name: Azure Data Lake overview
         href: data-entities/azure-data-lake-overview.md
+      - name: Configure export to Azure Data Lake
+        href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Make entity store available as a Data Lake 
@@ -496,6 +500,8 @@
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
+          - name: On-premises disaster recovery configuration
+            href: deployment/onprem-dr.md
           - name: PowerBI.com integration with on-premises environments
             href: analytics/entity-store-on-prem.md
           - name: Reconfigure environments
@@ -1434,6 +1440,8 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Encryption in Finance and Operations apps
+          href: sysadmin/encryption.md
         - name: Set the session idle timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
