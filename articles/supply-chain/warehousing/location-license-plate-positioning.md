@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location license plate positioning
-description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as one using double-deep pallet racking.
+description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
 author: Mirzaab
 manager: tfehr
 ms.date: 06/09/2020
@@ -31,229 +31,257 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as one using double-deep pallet racking.
+License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
 
-This functionality adds an sequence number to the license plate for each license plate that is put to a location. The sequence number orders the license plates within a storage location. This feature intelligently solves scenarios where customers are using gravity racking system and need to know which license plate is front facing for picking purposes.
+The feature adds a sequence number to each license plate that is put into a storage location. This sequence number is used to order the license plates in the storage location. Therefore, the feature intelligently supports scenarios where customers are using a gravity racking system and must know, for picking purposes, which license plate is front-facing.
 
-This topic presents a scenario that illustrates how to set up and use this feature.
+This topic presents a scenario that shows how to set up and use the feature.
 
-## Enable the location license plate positioning feature
+## Turn on the Location license plate positioning feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use license plate location positioning, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Location license plate positioning*
+- **Module:** *Warehouse management*
+- **Feature name:** *Location license plate positioning*
 
 ## Example scenario
 
-### Enable sample data
+### Make sample data available
 
-To work through this scenario using the values suggested here, you must work on a system that has sample data installed, and select the **USMF** legal entity before starting.
+To work through this scenario by using the values that are suggested here, you must work on a system where sample data is installed. Additionally, you must select the **USMF** legal entity before you start.
 
 ### Set up the feature for this scenario
 
-The feature must be enabled in **Location profiles** for all locations where license plate positioning is to be used. Follow the steps below to enable the feature for the scenario provided in this topic.
+Complete the following procedures to set up the *Location license plate positioning* feature for the scenario that is presented in this topic.
 
-#### Location Profiles
+#### Location profiles
 
-1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
-1. Select **BULK-06** from the location profiles list on the left.
-1. In the **General** FastTab, two new options have been added by this feature. Enable both options:
-    - **Enable license plate position** - *Yes*
-        - When enabled, the license plate position will be maintained for license plates in the location.
-    - **Display mobile device LP position** - *Yes*
-        - Only editable when the functionality is enabled.
-        - When enabled, the license plate position value will be shown to the user on the mobile device during adjustment in and during counting.
+The feature must be turned on in the location profile for every location where it will be used. 
+
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
+1. In the list of location profiles in the left pane, select **BULK-06**.
+1. On the **General** FastTab, two new options have been added by the feature. Set the following values:
+
+    - **Enable license plate position:** *Yes*
+
+        When this option is set to *Yes*, the license plate position will be maintained for license plates in the location.
+
+    - **Display mobile device LP position:** *Yes*
+
+        When this option is set to *Yes*, the license plate position will be shown to mobile device users during adjustment in and counting. You can change the setting of this option only when the functionality is turned on.
 
 1. Select **Save**.
 
 #### Location directives
 
-1. Go to **Warehouse management > Setup > Location directives**.
-1. Ensure **Work order type** is set to *Sales orders*.
-1. Select **61 SO Pick order** from the list of location directives.
-1. Select **Edit** on the Action Pane.
-1. On the **Lines** FastTab, select the line with a **Sequence number** of *2*.
-1. On the **Location Directive Actions** FastTab, select the line with a **Name** of *Pick for less than pallet* (this should be the only line) and change its **Sequence number** to *2*.
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the left pane, make sure that the **Work order type** field is set to *Sales orders*.
+1. In the list of location directives, select **61 SO Pick order**.
+1. On the Action Pane, select **Edit**.
+1. On the **Lines** FastTab, select the line that has a **Sequence number** value of *2*.
+1. On the **Location Directive Actions** FastTab, select the line that has a **Name** value of *Pick for less than pallet* (it should be the only line), and change its **Sequence number** value to *2*.
+1. Select **New** above the grid to add a line for a new location directive action.
+1. On the new line, set the following values:
 
-1. At top of the **Location Directive Actions** FastTab, select **New** and enter the following on the new line to add a new location directive action:
-    - **Sequence number** - *1*
-    - **Name** - *Pick position 1*
+    - **Sequence number:** *1*
+    - **Name:** *Pick position 1*
 
-1. At top of the **Location Directive Actions** FastTab, with your new line still selected, select **Edit query**.
-1. On the query form select the **Joins** tab.
-1. Expand **Locations** table join to reveal the **Inventory dimensions** table.
-1. Expand **Inventory dimensions** to reveal the join to the **On-hand inventory** table.
-1. Select **Inventory dimensions** then select **Add table join**.
-1. In the list of tables displayed, select **License plate (License plate)** in the **Relation** column and then, in the header, select **Select**  to add **License plate** to the **Inventory dimensions** table join.
-1. Next, with the focus still on **License plate**, select **Add table join** in the header.
-1. In the list of tables displayed, select **Location license plate positioning (License plate)** in the **Relation** column and then, in the header, select **Select**  to add **Location license plate positioning** to the **Inventory dimensions** table join.
+1. While the new line is still selected, select **Edit query** above the grid.
+1. In the query editor, select the **Joins** tab.
+1. Expand the **Locations** table join to show the join to the **Inventory dimensions** table.
+1. Expand the **Inventory dimensions** table join to show the join to the **On-hand inventory** table.
+1. Select **Inventory dimensions**, and then select **Add table join**.
+1. In the list of tables that appears, in the **Relation** column, select **License plate (License plate)**. Then select **Select** to add **License plate** to the **Inventory dimensions** table join.
+1. While **License plate** is still selected, select **Add table join**.
+1. In the list of tables that appears, in the **Relation** column, select **Location license plate positioning (License plate)**. Then select **Select** to add **Location license plate positioning** to the **Inventory dimensions** table join.
 
     ![Table joins](media/LpTableJoin.png "Table joins")
 
 1. Select **OK** to confirm the updated joined tables and close the query editor.
-1. At top of the **Location Directive Actions** FastTab, select **Edit query** again to return to the query editor.
-1. On the **Range** tab, select **Add** to create a new line and enter the following:
-    - **Table** - *Location license plate positioning*
-    - **Derived table** - *Location license plate positioning*
-    - **Field** - *LP Position*
-    - **Criteria** - *1*
+1. On the **Location Directive Actions** FastTab, select **Edit query** again to reopen to the query editor.
+1. On the **Range** tab, select **Add** to add a line to the grid.
+1. On the new line, set the following values:
 
-    ![Criteria](media/LpPositionCriteria.png "Criteria")
+    - **Table:** *Location license plate positioning*
+    - **Derived table:** *Location license plate positioning*
+    - **Field:** *LP Position*
+    - **Criteria:** *1*
 
-1. Select **OK** to confirm the changes and close the query editor.
+    ![New range](media/LpPositionCriteria.png "New range")
+
+1. Select **OK** to confirm your changes and close the query editor.
 
 ### Set up sample data for this scenario
 
-The following scenario requires the user to sign in to the warehousing mobile app with a *worker* setup for *Warehouse 61* to perform work, and to complete transactions.
+For this scenario, the user must sign in to the warehousing mobile app by using a worker who is set up for warehouse *61* to perform work. The user must also complete transactions.
 
-Because this feature adds a new identifier for license plate positions within a location, we must first create some data to support the scenario.
+Because the *Location license plate positioning* feature adds a new identifier for license plate positions in a location, you must first create some data to support the scenario.
 
-#### Spot count the first location
+#### Spot-count the first location
 
-1. Open the warehousing mobile app and sign in to **Warehouse** *61*.
-1. Go to **Inventory > Spot Counting**.
-1. on the **Spot Counting** screen, set **Location** to *01A01R1S1B*.
-
+1. Open the warehousing mobile app, and sign in to warehouse *61*.
+1. Go to **Inventory \> Spot Counting**.
+1. On the **Spot Counting** page, set the **Location** field to *01A01R1S1B*.
 1. Select **OK**.
-1. The screen displays the **Location** that was entered and the message: "Location complete, add new LP or Item?"
-1. Select the **Refresh** button.
-1. The **Cycle Count: Add New LP or Item** screen opens, which includes the **Item** field.
-1. Select **Item** and then enter the value *A0001*.
-1. Select **OK**.
-1. The **Cycle Count: Add New LP or Item** screen opens, which includes the **LP** field.
-1. Select **LP** to enter a **License Plate** number and then enter the value *LP1001* (or one of your choosing).
 
-1. **License Plate Position 1** will be displayed on the **Cycle Count: Add New LP or Item** screen.
+    The page shows the location that you entered. It also shows the following message: "Location complete, add new LP or Item?"
+
+1. Select **Refresh** to add a count in the location.
+1. On the **Cycle Count: Add New LP or Item** page, select the **Item** field, and then enter the value *A0001*.
 1. Select **OK**.
-1. Now you must specify quantity of the item counted on the license plate.
-Set **Qty** to *10*.
+1. On the **Cycle Count: Add New LP or Item** page, select the **LP** field, and then enter the value *LP1001* (or any other license plate number of your choice).
+
+    The **Cycle Count: Add New LP or Item** page shows **License Plate Position 1**.
 
 1. Select **OK**.
-1. The screen displays the **Location** that you entered and the message: "Location complete, add new LP or Item?"
-1. Select the **Refresh** button to add another count in the location.
-1. The **Cycle Count: Add New LP or Item** page opens, which includes the **Item** field.
-1. Select **Item** and then enter the value *A0002*.
-1. Select **OK**.
-1. The **Cycle Count: Add New LP or Item** page opens, which includes the **LP** field.
-1. Select **LP** and then enter the license plate number *LP1002* (or one of your choosing, so long as it's different from the first one you picked).
-1. Change the license plate position (**LP Position**) to *2*.
-1. Select **OK**.
-1. Enter the quantity of the item counted on the license plate by setting **Qty** to *10*.
-1. Select **OK**.
-1. The screen displays the **Location** that you entered and the message: "Location complete, add new LP or Item?"
-1. Select **OK**.
-1. Work is completed.
 
-#### Spot count the second location
+    You must now specify the quantity of the item that is counted on the license plate.
 
-1. On the **Spot Counting** screen, set the **Location** to *01A01R1S2B*.
+1. Set the **Qty** field to *10*.
+1. Select **OK**.
 
-1. Select **OK**.
-1. The screen displays the **Location** that you entered and the message: "Location complete, add new LP or Item?"
-1. Select **Refresh**.
-1. The **Cycle Count: Add New LP or Item** screen opens, which includes the **Item** field.
-1. Select **Item** and then set **Item** to *A0002*.
-1. Select **OK**.
-1. The **Cycle Count: Add New LP or Item** screen opens, which includes the **LP** field.
-1. Select **LP** and then enter the license plate number *LP1003* (or one of your choosing, so long as it's different from the previous two).
+    The page shows the location that you entered. It also shows the following message: "Location complete, add new LP or Item?"
 
-1. **License Plate Position 1** is displayed on the **Cycle Count: Add New LP or Item** screen.
+1. Select **Refresh** to add another count in the location.
+1. On the **Cycle Count: Add New LP or Item** page, select the **Item** field, and then enter the value *A0002*.
 1. Select **OK**.
-1. Enter the quantity of the item counted on the license plate by setting **Qty** to *10*.
+1. On the **Cycle Count: Add New LP or Item** page, select the **LP** field, and then enter the value *LP1002* (or any other license plate number of your choice, provided that it differs from the license plate number that you specified earlier).
+1. Change the license plate position by setting the **LP Position** field to *2*.
+1. Select **OK**.
+1. Specify the quantity of the item that is counted on the license plate by setting the **Qty** field to *10*.
+1. Select **OK**.
+
+    The page shows the location that you entered. It also shows the following message: "Location complete, add new LP or Item?"
 
 1. Select **OK**.
-1. The screen displays the **Location** that you entered and the message: "Location complete, add new LP or Item?"
+
+Work is now completed.
+
+#### Spot-count the second location
+
+1. On the **Spot Counting** page, set the **Location** field to *01A01R1S2B*.
 1. Select **OK**.
-1. Work is completed.
+
+    The page shows the location that you entered. It also shows the following message: "Location complete, add new LP or Item?"
+
+1. Select **Refresh** to add a count in the location.
+1. On the **Cycle Count: Add New LP or Item** page, select the **Item** field, and then enter the value *A0002*.
+1. Select **OK**.
+1. On the **Cycle Count: Add New LP or Item** page, select the **LP** field, and then enter the value *LP1003* (or any other license plate number of your choice, provided that it differs from the both the license plate numbers that you specified in the previous procedure).
+
+    The **Cycle Count: Add New LP or Item** page shows **License Plate Position 1**.
+
+1. Select **OK**.
+1. Specify the quantity of the item that is counted on the license plate by setting the **Qty** field to *10*.
+1. Select **OK**.
+
+    The page shows the location that you entered. It also shows the following message: "Location complete, add new LP or Item?"
+
+1. Select **OK**.
+
+Work is now completed.
 
 #### Work details
 
 > [!NOTE]
-> Spot counts from the mobile app will create *Cycle counting* work in Dynamics 365. The work requires that the counts be accepted before posting the counts into inventory.
+> Spot counts from the mobile app create cycle counting work in Microsoft Dynamics 365. The work requires that the counts be accepted before they are posted to inventory.
 
-Sign in to Dynamics 365 Supply Chain Management to complete the next steps.
+1. Sign in to Dynamics 365 Supply Chain Management.
+1. Go to **Warehouse management \> Work \> Work details**.
+1. On the **Overview** tab, look for the lines that have the following values:
 
-1. Go to **Warehouse management > Work > Work details**
-1. On the **Work** *Overview* section look for the following lines:
-    - **Work order type** - *Cycle counting*
-    - **Warehouse** - *61*
-    - **Work status** - *Pending review*
+    - **Work order type:** *Cycle counting*
+    - **Warehouse:** *61*
+    - **Work status:** *Pending review*
 
-1. There will be two **Work ID**'s created. The counts for both work ID's need to be accepted.
-1. Select the first **Cycle counting** Work ID in the *Overview* section.
-1. In the Action Pane **Work** tab select *Cycle counting*.
-1. Two lines will be displayed, one for each *Item* and *License plate*.
-    - The Counted quantity, Location, License plate and Item will match with count entries performed on the mobile device.
-    - If all these fields are not visible, select *Display dimensions* in the Toolbar to add them to the grid.
+    Two work IDs should have been created for these lines. The counts for both these work IDs must be accepted.
+
+1. In the grid, select the first work ID for the *Cycle counting* work order type.
+1. On the Action Pane, on **Work** tab, in the **Work** group, select **Cycle counting**.
+
+    Two lines are shown, one for each item and license plate. The values in the **Counted quantity**, **Location**, **License plate**, and **Item** fields should match the count entries that you created on the mobile device. If any of these fields aren't visible, select **Display dimensions** on the Action Pane to add them to the grid.
 
 1. Select both lines.
-1. In the Toolbar, select **Accept count**.
-1. A *Posting - Journal* message displays, select *Message details* to view the posted journal number.
-1. Close the form.
-1. Refresh the **Work** form.
-1. The first **Work ID** has been closed and is no longer displayed.
-    - Select **Show closed** to view closed *Work*.
+1. On the Action Pane, select **Accept count**.
+1. You receive a "Posting - Journal" message. Select **Message details** to view the posted journal number.
+1. Close the message details.
+1. Refresh the **Work** page.
 
-1. Repeat the steps above to accept the work for the license plate in **Location** - *01A01R1S2B*.
-1. Select the second **Cycle counting** Work ID in the *Overview* section.
-1. In the Action Pane **Work** tab select *Cycle counting*.
-1. One line will be displayed, for the *Item* and *License plate*.
-    - The Counted quantity, Location, License plate and Item will match with count entries performed on the mobile device.
+    The first work ID has been closed and is no longer shown.
+
+    > [!TIP]
+    > To view closed work, select the **Show closed** check box above the grid.
+
+    You will now accept the work for the license plate in the *01A01R1S2B* location.
+
+1. On the **Overview** tab, select the second work ID for the *Cycle counting* work order type.
+1. On the Action Pane, on **Work** tab, in the **Work** group, select **Cycle counting**.
+
+    One line is shown, for the item and license plate. The values in the **Counted quantity**, **Location**, **License plate**, and **Item** fields should match the count entries that you created on the mobile device.
 
 1. Select the line.
-1. In the Toolbar, select **Accept count**.
-1. A *Posting - Journal* message displays, select *Message details* to view the posted journal number.
-1. Close the form.
-1. Refresh the **Work** form.
-1. The second **Work ID** has been closed and is no longer displayed.
-    - Select **Show closed** to view closed *Work*.
+1. On the Action Pane, select **Accept count**.
+1. You receive a "Posting - Journal" message. Select **Message details** to view the posted journal number.
+1. Close the message details.
+1. Refresh the **Work** page.
+
+    The second work ID has been closed and is no longer shown.
+
+    > [!TIP]
+    > To view closed work, select the **Show closed** check box above the grid.
 
 #### On-hand by location
 
-1. Go to **Warehouse management > Inquiries and reports > On-hand by location**.
-1. Enter or select the following:
-    - **Site**  - *6*
-    - **Warehouse** - *61*
-    - **Refresh across locations** - *Yes*
+1. Go to **Warehouse management \> Inquiries and reports \> On-hand by location**.
+1. Set the following values:
 
-1. Note that **Location** *01A01R1S1B* has two License Plates:
-    - **A0001** with **LP Position** *1*
-    - **A0002** with **LP Position** *2*
+    - **Site:** *6*
+    - **Warehouse:** *61*
+    - **Refresh across locations:** *Yes*
 
-1. Note that **Location** *01A01R1S2B* has one License Plate:
-    - **A0002** with **LP Position** *1*
+1. Notice that location *01A01R1S1B* has two license plates:
+
+    - **A0001**, where the **LP Position** field is set to *1*
+    - **A0002**, where the **LP Position** field is set to *2*
+
+1. Notice that location *01A01R1S2B* has one license plate:
+
+    - **A0002**, where the **LP Position** field is set to *1*
 
 ### Sales order scenario
 
-Now that the feature has been setup and the inventory staged, we need to create a sales order to generate picking work that will guide the warehouse worker to pick item A0002 from the inventory location where the pallet ID is in position 1.
+Now that the *Location license plate positioning* feature has been set up, and the inventory has been staged, you must create a sales order to generate picking work that will direct the warehouse worker to pick item *A0002* from the inventory location where the pallet ID is in position *1*.
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
-1. Select **New** in the Action Pane.
-1. In the **Create sales order** FlyOut enter the following:
-    - **Customer account** - *US-004*
-    - **Warehouse** - *61*
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. On the Action Pane, select **New**.
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-004*
+    - **Warehouse:** *61*
 
 1. Select **OK**.
-1. On the **Sales order lines** FastTab a new line is added. Enter the following:
-    - **Item number** - *A0002*
-    - **Quantity** - *1*
+1. A new line is added to the grid on the **Sales order lines** FastTab. On this new line, set the following values:
 
-1. On the **Sales order lines** Toolbar, select **Inventory** then select *Reservation*.
-1. On the **Reservation** form select *Reserve lot* in the Toolbar to reserve inventory to the order line.
-1. Close the form.
-1. In the Action Pane, select the **Warehouse** tab, then select *Release to warehouse*.
-1. An informational message displays with the **Wave ID* and *Shipment ID* created for the order.
-1. On the **Sales order lines** Toolbar select **Warehouse** then select *Work details*.
-1. The **Work** form opens and displays the work created for the sales line. Make note of the work ID shown.
+    - **Item number:** *A0002*
+    - **Quantity:** *1*
+
+1. On the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve inventory for the order line.
+1. Close the **Reservation** page.
+1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
+
+    You receive an informational message that indicates the wave ID and shipment ID that were created for the order.
+
+1. On the **Sales order lines** FastTab, on the **Warehouse** menu above the grid, select **Work details**.
+1. The **Work** page appears and shows the work that was created for the sales line. Make a note of the work ID that is shown.
 
 ### Sales picking scenario
 
-1. Open the mobile app and sign in to **Warehouse** *61*.
-1. Go to **Outbound > Sales picking**.
-1. On the **Scan a work ID / license plate ID** screen, select the **ID** field and enter the wrk ID from the sales line.
-1. Note that the picking work has directed you to pick **Item** *A0002* from **Location** *01A01R1S2B*. This is because item A0002 is on a license plate in that location that is in position 1.
+1. Open the mobile app, and sign in to warehouse *61*.
+1. Go to **Outbound \> Sales picking**.
+1. On the **Scan a work ID / license plate ID** page, select the **ID** field, and then enter the work ID from the sales line.
+1. Notice that the picking work directs you to pick item *A0002* from location *01A01R1S2B*. You receive this instruction because item *A0002* is on a license plate that is in position *1* in that location.
 
     ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
 
-1. Enter the **License plate ID** you created for that location and complete the prompts to pick the sales order.
+1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
