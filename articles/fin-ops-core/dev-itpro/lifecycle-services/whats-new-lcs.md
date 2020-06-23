@@ -46,6 +46,10 @@ The following sections list the features that are included in LCS releases.
 |------|---------|-------|
 | Download task recordings from Business Process Modeler | [Download task recording (AXTR) ](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/complete-tasks-bpm#download-a-task-recording) | General availability | 
 
+## May 2020 - wave 2
+
+This release contains general performance improvements and minor bug fixes.  
+
 ## May 2020 - wave 1
 | Area | Feature |Status |
 |------|---------|-------|
