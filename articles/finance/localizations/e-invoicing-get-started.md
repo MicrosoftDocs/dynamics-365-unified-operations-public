@@ -49,7 +49,7 @@ To complete these steps, you must first do or verify the following:
 
 The diagram below describes the five main steps to complete in this topic:
 
-![Overview 5 steps](media/e-Invoicing services-get started-Overview 5 steps.png)
+![Overview 5 steps](media/e-invoicing-services-get-started-overview-5-steps.png)
 
 1.  Azure resources setup: configuration of Azure storage and uploading of
     digital certificates in Azure Key Vault
@@ -86,7 +86,7 @@ in country-specific articles.
 6.  In the **AAD tenant ID** field, enter the tenant ID of your Azure
     subscription account.
 
-![LCS Addin Setup](media/e-Invoicing services-get started-LCS addin setup.png)
+![LCS Addin Setup](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
 1.  Mark the check box to accept the terms and conditions.
 
@@ -111,7 +111,7 @@ During RCS setup, you will:
 
 3.  Select **Key Vault Parameters**.
 
-![Select key vault parameter](media/e-Invoicing services-get started-Select Key Vault parameters.png)
+![Select key vault parameter](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
 1.  Select **New** to add new key vault.
 
@@ -120,13 +120,13 @@ During RCS setup, you will:
     **DNS name,** see [Create Azure Storage Account and Key
     Vault](https://microsoft-my.sharepoint.com/:w:/p/gionoder/EboUH2wQu9BKouw2czCSXKEBSfGSVoduwzw9zHWhSkgKzQ?e=0SUp3G).
 
-![Enter key vault uri](media/e-Invoicing services-get started-Enter Key Vault URI.png)
+![Enter key vault uri](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
 1.  In the **Certificates** pane, select **Add** to enter the digital
     certificate names and the key vault secrets. Both of these are configured on
     the Key Vault resource in Azure.
 
-![Add digital certificate](media/e-Invoicing services-get started-Add digital certificates.png)
+![Add digital certificate](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
 1.  In case your country invoice requires a chain of certificates for applying a
     digital signature, select **Chain of certificates**.
@@ -152,7 +152,7 @@ During RCS setup, you will:
 5.  in the **LCS Environment id** field, enter the tenant ID of your LCS
     subscription account.
 
-![Enter e-Invoicing parameters](media/e-Invoicing services-get started-Enter e-Invoicing parameters.png)
+![Enter e-Invoicing parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
 
 **Add e-Invoicing service environment**
 
@@ -167,17 +167,17 @@ Test. or Production.
 3.  Enter the value in the **Storage SAS token account** field as the name of
     the Key Vault secret configured in the Key Vault in RCS.
 
-![Enter SAS token secrete](media/e-Invoicing services-get started-Enter SAS token secrete.png)
+![Enter SAS token secret](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
 
 1.  In **Users** field group, select **New** to grant access to users for this
     environment.
 
-![Enter service users](media/e-Invoicing services-get started-Enter Service Users.png)
+![Enter service users](media/e-invoicing-services-get-started-enter-service-users.png)
 
 1.  Select **Publish** to publish the environment to the e-Invoicing service
     server.
 
-![Publish service environments](media/e-Invoicing services-get started-Publish Service Environment.png)
+![Publish service environments](media/e-invoicing-services-get-started-publish-service-environment.png)
 
 **e-Invoicing Feature setup**
 
@@ -230,7 +230,7 @@ During Finance setup, you will:
 4.  In the **Environment** field, enter the name of the e-invoicing service
     environment created during the RCS setup.
 
-![Enter service endpoint](media/e-Invoicing services-get started-Enter Service Endpoint.png)
+![Enter service endpoint](media/e-invoicing-services-get-started-enter-service-endpoint.png)
 
 **Import the ER configurations**
 
@@ -278,7 +278,7 @@ turned on.
     to enable, see the Get started with e-Invoicing services country specific
     documentation.
 
-![Enable Invoicing feature](media/e-Invoicing services-get started-Enable Invoicing Feature.png)
+![Enable Invoicing feature](media/e-invoicing-services-get-started-enable-invoicing-feature.png)
 
 Note: If you have multiple legal entities that are configured for different
 countries, you can enable the country invoicing feature individually by legal
@@ -315,7 +315,7 @@ the status of the invoice document or any other additional field.
     which table names to select, see the Get started with e-Invoicing services
     country specific documentation.
 
-![Set up response type](media/e-Invoicing services-get started-Set up Response Types.png)
+![Set up response type](media/e-invoicing-services-get-started-set-up-response-types.png)
 
 # Electronic invoice processing in Finance
 
@@ -350,7 +350,7 @@ You can submit business documents manually or based upon your schedule needs.
 3.  On the **Records to include** FastTab, select **Filter** to build the query
     to select documents for submission.
 
-![Submission form](media/e-Invoicing services-get started-Submission form.png)
+![Submission form](media/e-invoicing-services-get-started-submission-form.png)
 
 **Filter query**
 
@@ -360,7 +360,7 @@ You can submit business documents manually or based upon your schedule needs.
 2.  Select **Add** to add as many criteria as needed to select the business
     documents.
 
-![Set up submission filter criteria](media/e-Invoicing services-get started-Set up Submission filter criteria.png)
+![Set up submission filter criteria](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
 
 1.  Select **OK** to close the **Filter query** dialog page.
 
@@ -371,18 +371,18 @@ You can submit business documents manually or based upon your schedule needs.
 >   will be asked to confirm the connection with the e-Invoicing service. Select
 >   **Click here to connect to Electronic Document Submission Service**.
 
-![Dialog form to connect to e-Invoicing services](media/e-Invoicing services-get started-Dialog form to connect e-Invoicing services.png)
+![Dialog form to connect to e-Invoicing services](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
 
 >   You will get confirmation about the connection success.
 
-![Confirmation connection to e-Invoicing service](media/e-Invoicing services-get started-Confirmation connection to e-Invoicing services.png)
+![Confirmation connection to e-Invoicing service](media/e-invoicing-services-get-started-confirmation-connection-e-invoicing-services.png)
 
 You can close the dialog box.
 
 Note: After each submission, the **Action center** shows the number of submitted
 documents
 
-![View action center message](media/e-Invoicing services-get started-View Action Center messages.png)
+![View action center message](media/e-invoicing-services-get-started-view-action-center-messages.png)
 
 **Submission by batch**
 
@@ -395,7 +395,7 @@ based on a configured frequency of batch execution.
 2.  Set the **Batch processing** toggle to **Yes**, and then select the
     **Recurrence** tab to configure the batch processing frequency.
 
-![Set up submission batch](media/e-Invoicing services-get started-Set up Submission batch.png)
+![Set up submission batch](media/e-invoicing-services-get-started-set-up-submission-batch.png)
 
 **View all submission logs**
 
@@ -404,7 +404,7 @@ based on a configured frequency of batch execution.
 
 2.  In the **Document type** field, select the document type to filter by.
 
-![Select document type for viewing submission log](media/e-Invoicing services-get started-Select Document type for viewing submission log.png)
+![Select document type for viewing submission log](media/e-invoicing-services-get-started-select-document-type-for-viewing-submission-log.png)
 
 Important: The status displayed in the **Submission status** column represents
 the status which is related to the completion of the submission process itself,
@@ -419,7 +419,7 @@ described in next.
 
 2.  View the submission log details.
 
-![View submission log form](media/e-Invoicing services-get started-View Submission log form.png)
+![View submission log form](media/e-invoicing-services-get-started-view-submission-log-form.png)
 
 Note: The results of submission log depend on how the e-Invoicing feature was
 set up in RCS. The submission log shows three information groups which are
