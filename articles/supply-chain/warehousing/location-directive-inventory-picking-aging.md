@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Location directive inventory picking aging
 
-Read this topic to learn how to use FIFO (first in, first out) and LIFO (last in, first out) location directive strategies during picking. These strategies work in conjunction with aging dates recorded for locations and license plates to track when inventory first entered the warehouse.
+Read this topic to learn how to use FIFO (first in, first out) and LIFO (last in, first out) location directive strategies during picking. These strategies work in conjunction with aging dates recorded for locations to track when inventory first entered the warehouse. The feature *Location directive inventory picking aging* will use the date on the location, and the feature *Warehouse location status* will update the date on the location based on the date from the license plate.
 
 You can use these strategies to ship both batch and non-batch tracked items based on when the inventory entered the warehouse. This can be especially useful for non-batch tracked inventory where an expiration date is not available for use in sorting.
 
@@ -70,11 +70,11 @@ The demo data will require setup and inventory adjustments in order to support t
 1. Sign into a system with demo data installed and select the **USMF** legal entity.
 1. Go to **Warehouse management > Setup > Warehouse > Location profiles**
 1. Select **Edit** in the Action Pane to enable changes.
-1. Select **FLOOR-05** in the left column.
+1. Select **FLOOR-05** in the list.
 1. On the **General** FastTab, set **Enable location status** to *Yes*.
 1. Select **Save**
 1. Go to **Warehouse management** > **Setup** > **Location directives**.
-1. Select **63 Pick containerization** from the left column.
+1. Select **63 Pick containerization** from the list.
 1. Select **Edit**  to put the page into edit mode.
 1. On the **Location directive actions** FastTab, find the line with a **Sequence number** of *1* and do one of the following:
     - If you are setting up a FIFO scenario, then change the **Strategy** to *Location aging FIFO*.
