@@ -62,45 +62,74 @@ To work through the scenario using the values presented in this topic, you must 
 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 
-1. Select **Sales Picking – System** from the column on the left.
-1. This menu item should already be se up as needed for this scenario. Confirm the following settings:
-    - **Directed by** - *System directed*
-    - **Work classes**
-        - **Work class ID** - *Sales*,  **Work order type** - *Sales orders*
-        - **Work class ID** - *SO Pick*, **Work order type** - *Sales orders*
+1. Select **Sales Picking – System** from the list of mobile device menu items.
+1. The required menu item should already exist. Confirm the following settings:
+    - On the **General** FastTab, **Directed by** should be set to *System directed*.
 
-1. On the Action Pane, select **System directed work sequence queries**.
-1. Select **Edit**.
-1. Delete the existing line. If you are asked to confirm, select **Yes**.
-1. On the Action Pane, select **New** to create a new line.
-    - Enter the following values
-        - **Sequence number** - *1*
-        - **Description field** - *Work quantity less than 20 and Descending*
+    - The **Work classes** FastTab should show the following settings:
+        | Work class ID | Work order type |
+        |---|---|
+        | Sales | Sales orders |
+        | SO Pick | Sales orders |
 
-1. Select **Save**.
+1. On the Action pane, select **System directed work sequence queries**.
+1. Select **Edit**
+1. Delete the existing line and then confirm the action by selecting **Yes**.
+
+1. On the Action Pane, select **New** to create a new line. Then enter the following values:
+    - **Sequence number** - *1*
+    - **Description field** - *Work quantity less than 20 and Descending*
+
+1. Select **Save**
 1. On the Action Pane, select **Edit Query**.
+1. Select the **Joins** tab.
+1. Expand the joins hierarchy to reveal the **Work lines** table.
+1. Select the **Work lines** table join.
+1. In the header select **Add table join**.
+1. In the list displayed, find and select the following row:
+    - **Join mode** - *n:1*
+    - **Relation** - *Locations (Location)*
+
+1. In the header choose the **Select** button.
+1. Locations is added to the table join.
 1. Select the **Sorting** tab.
 1. Select **Add**.
 1. On the new line, enter the following:
     - **Table** - *Work lines*
     - **Derived table** - *Work lines*
-    - **Field** - *Work quantity*  
-    In the message window select **Yes** to add sorting to this field.
+    - **Field** - *Work quantity* (In the message box, select **Yes** to add sorting to this field.)
     - **Search direction** - *Descending*
 
 1. Select the **Range** tab.
-    - If only specific work criteria should be included in the sequencing, you can specify that on the range.
-    - In this example, we will only include work with less than 20 eaches (lowest unit of measure).
-    - Select **Add**. Note that there are already some lines included which should not be removed.
+    - If only specific work criteria should be included in the sequencing, you can specify that on the **Range**.
+    - In this example, we will want to include only Work with less than 20 eaches (lowest unit of measure).
+1. Select **Add** in the header.
+    - Note that there are already some lines included which should not be removed.
 1. On the new line, enter the following:
     - **Table** - *Work lines*
     - **Derived table** - *Work lines*
     - **Field** - *Inventory work quantity*
     - **Criteria** - *<20* (less than 20)
 
-1. Select **OK**.
+1. Select **Add** in the header.
+1. On the new line, enter the following:
+    - **Table** - *Work lines*
+    - **Derived table** - *Work lines*
+    - **Field** - *Work type*
+    - **Criteria** - *Pick*
+
+1. Select **Add** in the header.
+1. On the new line, enter the following:
+    - **Table** - *Locations*
+    - **Derived table** - *Locations*
+    - **Field** - *Location profile ID*
+    - **Criteria** - *!STAGE*
+    > [!IMPORTANT]
+    > Be sure to include the exclamation mark ( **!** ) in front of STAGE.
+
+1. Select **OK** to save and close the query.
 1. Select **Save**.
-1. **Close** the form to return to the **Mobile device menu items** form
+1. **Close** the page to return to the **Mobile device menu items** page.
 
 > [!NOTE]
 > This is now the criteria based on which the mobile device menu item will be fed the eligible work. If more query criteria lines are used, the system will first use the query line with lowest sequence number.
@@ -114,11 +143,12 @@ To work through the scenario using the values presented in this topic, you must 
 Default Contoso Data will not require editing of the location directive action query. When applying this feature in a non-Contoso environment, ensure that the Location Directives will capture the items on the Sales orders by creating a new location directive. To verify the settings in the demo environment, do the following:
 
 1. Go to **Warehouse management** > **Setup** > **Location directives**.
-1. Set the **Work order type** to *Sales orders*
-1. Select the following **Location directive**: **Name** - *51 Pick*
+1. Select **Work order type** - *Sales orders*.
+1. Select the following **Location directive**:
+    - **Name** - *51 Pick*
 
 1. In the **Location Directive Actions** FastTab, select the line for the **Pick** action.
-1. Select **Edit query** on the Toolbar.
+1. Select **Edit query** on the Location Directive Actions Toolbar.
 1. Review the **Range** query.
     - Find the line with **Field** - *Location*
     - Ensure that **Criteria** has no restrictions (blank).
@@ -136,11 +166,11 @@ You will release the sales order to the warehouse to create the work.
 #### Sales order 1
 
 1. Go to **Sales and marketing > Sales orders > All sales orders**
-1. On the Action Pane, select **New** to create **Sales Order 1**.
-1. In the **Create sales order** pane, select the following:
-    - In the Customer section, set **Customer account** to *US-004*.
-    - In the **General** section, set **Warehouse** to *51*
-1. Select **OK** to close the pane. Make note of the Sales order number.
+1. On the Action Pane, select **New** to create Sales Order 1.
+1. In the **Create sales order** dialog box, select the following:
+    - In the **Customer** section, set **Customer account** to *US-004*.
+    - In the **General** section, set **Warehouse** to *51*.
+1. Select **OK** to close the dialog box. Make note of the sales order number.
 
 1. Add a new line to the sales order and reserve the inventory, enter, and select the following:
     - **Item number** - *M9200*
@@ -154,11 +184,11 @@ You will release the sales order to the warehouse to create the work.
 
 #### Sales order 2
 
-1. On the Action Pane, select **New** to create **Sales Order 2**.
-1. In the **Create sales order** pane, enter the following:
+1. On the Action Pane, select **New** to create Sales Order 2.
+1. In the **Create sales order** dialog box, enter the following:
     - **Customer account** - *US-007*
     - **Warehouse** - *51*
-1. Select **OK** to close the pane. Make note of the Sales order number.
+1. Select **OK** to close the dialog box. Make note of the Sales order number.
 
 1. Add a line to sales order 2, enter the following:
     - **Item number** - *M9200*
@@ -173,11 +203,11 @@ You will release the sales order to the warehouse to create the work.
 
 #### Sales order 3
 
-1. On the Action Pane, select **New** to create **Sales Order 3**.
-1. In the **Create sales order** pane, enter the following:
+1. In the Action Pane, select **New** to create Sales Order 3.
+1. In the **Create sales order** dialog box, enter the following:
     - **Customer account** - *US-009*
     - **Warehouse** - *51*
-1. Select **OK** to close the pane. Make note of the Sales order number.
+1. Select **OK** to close the dialog box. Make note of the Sales order number.
 
 1. Add a line to sales order 3, enter the following:
     - **Item number** - *M9200*
@@ -192,11 +222,11 @@ You will release the sales order to the warehouse to create the work.
 
 #### Sales order 4
 
-1. On the Action Pane, select **New** to create **Sales Order 4**.
-1. In the **Create sales order** pane, enter the following:
+1. On the Action Pane, select **New** to create Sales Order 4.
+1. In the **Create sales order** dialog box, enter the following:
     - **Customer account** - *US-010*
     - **Warehouse** - *51*
-1. Select **OK** to close the pane.  Make note of the sales order number.
+1. Select **OK** to close the dialog box. Make note of the Sales order number.
 
 1. Add a line to sales order 4, enter the following:
     - **Item number** - *M9200*
@@ -216,18 +246,18 @@ You will release the sales order to the warehouse to create the work.
 
 Four different Work IDs should have been created. Make note of the work ID for each sales order.
 
-**Sales Order ID / Work ID / Work quantity**:
-
-- Sales Order 1 / Work ID 1 / 20 ea
-- Sales Order 2 / Work ID 2 / 6 ea (sum of both lines)
-- Sales Order 3 / Work ID 3 / 15 ea (sum of both lines)
-- Sales Order 4 / Work ID 4 / 35 ea (sum of both lines)
+| Sales Order ID | Work ID | Work quantity |
+| --- | --- | --- |
+| Sales Order 1 | Work ID 1 | 20 ea |
+| Sales Order 2 | Work ID 2 | 6 ea (sum of both lines) |
+| Sales Order 3 | Work ID 3 | 15 ea (sum of both lines) |
+| Sales Order 4 | Work ID 4 | 35 ea (sum of both lines) |
 
 Before executing the flow on the mobile device, ensure that only the created work is in Open status for Warehouse 51 and Work order type Sales order. If not, the results of the test may vary as the System direct picking will include all eligible work.
 
-1. Navigate to **Warehouse management** > **Work** > **Outbound** > **Open sales work**.
-1. In the **Open sales work** grid filter on **Warehouse** for warehouse **51**.
-1. Confirm that the only work displayed are the 4 **Work ID**'s created in the steps above.
+1. Go to **Warehouse management \> Work \> Outbound \> Open sales work**.
+1. In the **Open sales work** grid, filter on **Warehouse** for warehouse **51**.
+1. Confirm that the only work displayed are the four work IDs created in the steps above.
 1. Close the **Work** form
 
 ### Mobile device flow execution
