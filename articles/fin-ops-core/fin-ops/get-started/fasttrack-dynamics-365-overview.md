@@ -109,7 +109,7 @@ The Solution blueprint workshops are designed to promote understanding of the so
 
 - Business intelligence and analytics design
 
-The typical format is a two-to-four-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a two-to-four-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
 ### Environment planning workshop
 
@@ -120,7 +120,7 @@ The Environment planning workshop is designed to cover the environment planning 
 - Project schedule and phases
 - Rollout and long-term operations plan
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
 ### Gap solution design workshop
 
@@ -131,7 +131,7 @@ The Gap solution design workshop is designed for implementations that have criti
 - Potential workarounds that have been considered
 - ISV solutions that have been considered
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
 ### Application lifecycle management review workshop
 
@@ -143,7 +143,7 @@ The Application lifecycle management (ALM) review workshop is designed for cases
 - Build process design
 - Rollout plan
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
 ### Performance workshop
 
@@ -153,7 +153,7 @@ The Performance workshop is designed for cases where implementers must make sure
 - Performance testing approach
 - Performance remediation approach
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Integration design workshop
 
@@ -164,7 +164,7 @@ The Integration design workshop is designed to review the overall plan for integ
 - Middleware designs
 - Performance and operational aspects of the integration designs
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Data migration workshop
 
@@ -173,7 +173,7 @@ The Data migration workshop is designed to help guarantee that the migration str
 - Data migration strategy
 - Data migration design
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Business intelligence and analytics design workshop
 
@@ -184,7 +184,7 @@ The Business intelligence (BI) and analytics design workshop is designed to revi
 - Output document designs
 - Financial reporting designs
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Test strategy workshop
 
@@ -197,7 +197,7 @@ The Test strategy workshop is designed to validate the strategy that has been pr
 - Regression test strategy
 - Mock cutover strategy
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and testing leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and testing leads are mandatory.
 
 ### Cutover plan workshop
 
@@ -209,7 +209,7 @@ The Cutover plan workshop is designed to validate the plan for go-live cutover. 
 - Cutover validation approach
 - Cutover contingency planning
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and project managers are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and project managers are mandatory.
 
 ### Go-live assessment workshop
 
@@ -227,7 +227,7 @@ The Go-live assessment workshop is designed to help guarantee a successful go-li
 - Customer go/no-go criteria
 - Support process and Hyper-care plan
 
-The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
+The typical format is a one-and-a-half-hour Teams meeting. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
 
 ### Post go-live review workshop
 
@@ -239,4 +239,4 @@ The Post go-live review workshop is designed to wrap up the FastTrack engagement
 - Review of aged support items
 - Handover of open issues to support teams
 
-The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams. Project managers are mandatory.
+The typical format is a one-and-a-half-hour Teams meeting. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams. Project managers are mandatory.
