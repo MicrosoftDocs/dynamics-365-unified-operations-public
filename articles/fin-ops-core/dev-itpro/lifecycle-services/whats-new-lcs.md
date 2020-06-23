@@ -41,6 +41,10 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
 The following sections list the features that are included in LCS releases.
+## June 2020 - wave 1
+| Area | Feature |Status |
+|------|---------|-------|
+| Download task recordings from Business Process Modeler | [Download task recording (AXTR) ](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/complete-tasks-bpm#download-a-task-recording) | General availability | 
 
 ## May 2020 - wave 1
 | Area | Feature |Status |
