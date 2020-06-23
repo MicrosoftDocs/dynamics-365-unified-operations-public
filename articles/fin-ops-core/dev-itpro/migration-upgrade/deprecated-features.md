@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -1137,7 +1137,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 |------------|--------------------|
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
 | **Replaced by another feature?**   | SEPA payments export    |
-| **Product areas affected**         | Accounts Payable   |
+| **Product areas affected**         | Accounts payable   |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.    |
 
 ### German MT940 import
