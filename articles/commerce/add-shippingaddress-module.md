@@ -38,16 +38,22 @@ This topic describes how to add a Shipping address module to a checkout page and
 
 ## Overview
 
-This module lets a customer add or select the shipping address for an order. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. It can't be customized for individual line items. Shipping address formats are defined for each country or region, and the country/region-specific rules are enforced by this module. Although this module doesn't provide address validation, address validation can be implemented through customization. If the order includes only items that will be picked up in the store, this module is automatically hidden.
+This module lets a customer add or select the shipping address for an order during the checkout flow. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. 
 
-    The following image shows an example of a shipping address module on a checkout page.
+Shipping address formats can be defined in HQ for each country or region, and the country/region-specific rules are enforced by this module. 
 
-    ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
+Although this module doesn't provide address validation, address validation can be implemented through customization.
 
 
-## Add a Delivery options module to a checkout page and set the required properties
+   The following image shows an example of adding a new shipping address on a checkout page.
 
-A Delivery options module can only be added to a Checkout container. See [Checkout module](add-checkout-module.md] for details on configuring the module to a page.
+   ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
+
+
+
+## Add a Shipping address module to a checkout page and set the required properties
+
+A Shipping address module can only be added to a Checkout container. See [Checkout module](add-checkout-module.md] for details on configuring the module to a page.
 
 ## Additional resources
 
