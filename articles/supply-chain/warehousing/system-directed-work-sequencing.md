@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Release 10.0.9
 
 System directed work sequencing offers the ability to sort and filter which work orders will the system present to the user for execution. This functionality solves scenarios where additional criteria (such as time of shipping, picking zone, location profile, or a combination of various criteria) are required to drive the warehouse picking process.
 
-This functionality extends the current system directed picking with new System directed query order where the user can set up a sequence and a query or multiple queries which will evaluate all created work orders. It will therefore capture and present only the work orders that meet the specified criteria of the mobile device menu item setup.
+This functionality extends the current system directed picking with new System directed query order where the user can set up a sequence and a query or multiple queries that will evaluate all created work orders. It will therefore capture and present only the work orders that meet the specified criteria of the mobile device menu item setup.
 
-Warehouse picking processes can therefore be further optimized as this feature identifies work orders that match the defined criteria and assigns those to the correct mobile device menu item, and consequently presents them to a worker based on a specific skillset, picking equipment, or any other requirement.
+Warehouse picking processes can therefore be further optimized as this feature identifies work orders that match the defined criteria and assigns those to the correct mobile device menu item, and consequently presents them to a worker based on a specific skill set, picking equipment, or any other requirement.
 
 > [!NOTE]
 > If different criteria are needed, multiple mobile device menu items must be used.
@@ -85,13 +85,13 @@ To work through the scenario using the values presented in this topic, you must 
 1. Select the **Joins** tab.
 1. Expand the joins hierarchy to reveal the **Work lines** table.
 1. Select the **Work lines** table join.
-1. In the header select **Add table join**.
+1. In the header, select **Add table join**.
 1. In the list displayed, find and select the following row:
     - **Join mode** - *n:1*
     - **Relation** - *Locations (Location)*
 
-1. In the header choose the **Select** button.
-1. Locations is added to the table join.
+1. In the header, choose the **Select** button.
+1. Locations are added to the table join.
 1. Select the **Sorting** tab.
 1. Select **Add**.
 1. On the new line, enter the following:
@@ -157,7 +157,7 @@ Default Contoso Data will not require editing of the location directive action q
 
 ### Create sales order picking work
 
-Before system directed picking is executed, some outbound work should be created. Based on the specified System directed work sequence queries, create 4 different **Sales Orders**, with the below specifications.
+Before system directed picking is executed, some outbound work should be created. Based on the specified System directed work sequence queries, create four different **Sales Orders**, with the below specifications.
 
 You will reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 
@@ -239,7 +239,7 @@ You will release the sales order to the warehouse to create the work.
 1. Reserve inventory for both lines.
 1. Release the order to the warehouse.
 
-### Get  Work ID's for the created work
+### Get  Work IDs for the created work
 
 1. Go to **Warehouse management > Work > Work details**.
 1. Filter for **Warehouse** - *51*.
@@ -274,10 +274,10 @@ Remember that this setup will capture any work that has at least one line with l
     - Complete the necessary pick and put to close the work ID.
     - Next, **Work ID** - *3* is presented. One of its work lines is next in the sequence based on the work line quantity. Complete the pick and put to close the work ID.
     - Next, **Work ID** - *2* is presented. This work's pick line is next in the sequence based on our setup. Complete the pick and put to close the work ID.
-    - No work should be presented to the user after this completion. **Work ID** - *1* is not eligible for this mobile device menu item because it has been specified on the query that only work headers with work lines less than 20 should be considered.
+    - No work should be presented to the user after this completion. **Work ID** - *1* is not eligible for this mobile device menu item because the query specifies that only work headers with work lines showing fewer than 20 each should be considered.
 
 ## Tips
 
-The system directed work sequence queries is *inclusive*, which is important to know with certain setups. For example, if you want a certain menu item to process only work with work unit in *eaches*, adn that is specified on the **Range**, then all work with at least one work line with work unit *eaches* will be fed to the worker. This could therefore also include all work with work units other than *eaches* (such as box or pallet) and it will not exclude those. It will exclude only work where no work lines have the work unit set as each.
+The system directed work sequence queries is *inclusive*, which is important to know with certain setups. For example, if you want a certain menu item to process only work with work unit in *eaches*, and that is specified on the **Range**, then all work with at least one work line with work unit *eaches* will be fed to the worker. This could therefore also include all work with work units other than *eaches* (such as box or pallet) and it will not exclude those. It will exclude only work where no work lines have the work unit set as each.
 
-Therefore, in the example from this scenario, the work ID 4 was also captured by the query. It was created with 2 lines, one for 25 ea and another one for 10 ea. The work was still assigned to the user because at least one work line had less than 20 ea. This can be prevented with work breaks, depending on the scenario.
+Therefore, in the example from this scenario, the work ID 4 was also captured by the query. It was created with two lines, one for 25 ea and another one for 10 ea. The work was still assigned to the user because at least one work line had less than 20 ea. This can be prevented with work breaks, depending on the scenario.
