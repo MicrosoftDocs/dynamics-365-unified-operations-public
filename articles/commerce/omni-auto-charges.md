@@ -87,7 +87,7 @@ A retailer wants to automatically add charges for freight when transactions are 
 
 #### Setup and configuration
 
-This scenario requires the configuration of two auto-charges tables.
+This scenario requires the configuration of two auto charges tables.
 
 Go to **Accounts receivable \> Charges setup \> Auto charges**.
 
@@ -95,7 +95,7 @@ Configure two different header-level auto charges. Configure one for the "Ground
 
 For the ground delivery charges, in the lines section of the **Auto-charges** page, define a charge that will be applied for orders between $.01 and $100 as $10.00. Create another charges line to indicate orders over $100.01 will have no charges.
 
-![Auto charges example](media/headerchargesexample.png)
+![Two auto charges tables example](media/headerchargesexample.png)
 
 For the air delivery charges, in the lines section of the auto-charges form, define a charge of $20.00 that will be applied to all orders (between a value of $.01 to $9,999,999).
 
@@ -125,7 +125,7 @@ Go to **Accounts Receivable \> Charges setup \> Auto charges**.
 
 Set the **Level** drop-down menu to **Line**, and create a new auto-charges record for all customers and for the specific product or product group where the setup fees will be charged.
 
-![Auto charges example](media/linechargesexample.png)
+![One line-level auto charges table example](media/linechargesexample.png)
 
 Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
