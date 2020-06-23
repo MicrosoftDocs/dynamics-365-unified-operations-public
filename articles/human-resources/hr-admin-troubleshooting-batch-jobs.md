@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 **Issue**
 
-Microsoft Dynamics 365 Human Resources can experience performance issues if long running batch jobs run during normal business hours.
+Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during normal business hours.
 
 **Resolution**
 
