@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 To delegate an individual work item, select the **Delegate** option in the **Workflow** menu and then enter the user to be delegated to along with a comment. This will reassign the work item to that user so they can complete it.
 
-## Delegate multiple work items
+## Manually delegate multiple work items
 
 Multiple work items can be delegated together from the **Work items assigned to me** page. The following workflow types are eligible for mass delegation: Purchase agreement approval workflow, Purchase order workflow, Purchase requisition review, and Vendor invoice workflow. The **Delegate multiple work items** feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help in enabling this feature.
 1.	Go to **Common > Common > Work items > Work items assigned to me**.
