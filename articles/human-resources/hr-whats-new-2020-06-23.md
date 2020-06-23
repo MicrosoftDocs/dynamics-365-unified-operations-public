@@ -29,51 +29,52 @@ ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (June 16, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3347. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (June 23, 2020)
 
-## When an enrollment is expired for a terminated employee, the leave type, balance and amount are all cleared in the leave enrollment form - (444867)
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3347. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-With this change, the values in the leave type, balance are maintained and not cleared upon making this selection.
+## When an enrollment is expired for a terminated employee, the leave type, balance, and amount are all cleared in the Leave enrollment form (444867)
 
-## Incorrect forecasted balance when new feature (Leave accrual for a single company or a single plan) is enabled - (456553)
+Values in the **Leave type**, **Balance**, and **Amount** are now maintained instead of cleared upon making this selection.
 
-This scenario has been corrected to reflect the forecasted balance, when the leave accrual for a single company or single plan has been enabled.
+## Incorrect forecasted balance when new feature (Leave accrual for a single company or a single plan) is enabled (456553)
 
-## Entities with relations that result in duplicate navigation properties - (456486)
+The correct forecasted balance now displays when the leave accrual for a single company or single plan has been enabled.
 
-This weeks release corrects and issue with the navigation properties (relation) of multiple entities. Duplicate relations are detected. These scenarios have all been corrected.
+## Entities with relations that result in duplicate navigation properties (456486)
+
+This release corrects an issue with the navigation properties (relation) of multiple entities. Duplicate relations are detected. These scenarios have all been corrected.
  
-## Cross-company comments on Performance review - (455536)
+## Cross-company comments on Performance review (455536)
 
-Cross company comments are now visible on performance reviews with this fix. This change corrects the view of reviewer comments that were entered in different companies for the same performance review.
+Cross-company comments are now visible on performance reviews with this fix. This change corrects the view of reviewer comments that were entered in different companies for the same performance review.
  
-## Compensation management data - Inconsistency in showing the data - (432562)
+## Inconsistency in showing compensation management data (432562)
 
-A consistent view of compensation data is now maintained in MSS. Depending on the way you navigate to a workers Compensation details, compensation data is now consistently shown to Managers.
+A consistent view of compensation data is now maintained in Manager self service. Depending on how you navigate to a worker's **Compensation details**, compensation data now consistently displays to managers.
  
-## Fixed compensation plan's effective date is defaulted to today's date - (411994)
+## Fixed compensation plan's effective date defaults to today's date (411994)
 
-With this change, the compensation start date will be based on the start date of the position being assigned to the employee.
+The compensation start date is now based on the start date of the position being assigned to the employee.
 
-## Leave and absence form 'enable half day definition' is disabled when form opens - (452607)
+## Leave and absence form Enable half day definition is disabled when form opens (452607)
 
-With this change the enable half day definition will be enabled until new leave transactions exist. 
+With this change, the **Enable half day definition** will be enabled until new leave transactions exist. 
 
-## Unable to publish to HcmDiscussionEntity via Excel - 'TotalRatingScore' field error - (453899)
+## Unable to publish to HcmDiscussionEntity via Excel; TotalRatingScore field error (453899)
 
-With this change, you will now be able to update the TotalRatingScore felid using the HCMDiscussionEntity via the Excel workbook designer.
+You can now update the **TotalRatingScore** field using **HCMDiscussionEntity** in the Excel workbook designer.
 
 ## In preview
 
 ## Database logging
 
-The database logging feature allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging.md).
+Database logging allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging.md).
 
 ## Mandatory fields 
 
-You are now able to make fields mandatory using the HR personalization capabilities. This feature requires **Saved views**.
+You can now make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**.
 
 ## Human Resources application in Teams
 
@@ -117,8 +118,9 @@ A DMF entity is now available for accrual suspensions.
 ## Coming soon
 
 ## Configure the name of Employee self-service
-A new option will be available in Human Resources parameters to update the name of the Employee self service workspace to Self service.
 
-## Checklist entities included in CDS
+A new option will be available in **Human Resources parameters** to update the name of the Employee self service workspace to Self service.
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within the Common Data Service.
+## Checklist entities included in Common Data Service
+
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
