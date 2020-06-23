@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: June 25, 2020
+      href: hr-whats-new-2020-06-23.md
     - name: June 11, 2020
       href: hr-whats-new-2020-06-11.md
     - name: May 28, 2020
@@ -141,6 +143,8 @@
       items:
       - name: Get support
         href: hr-admin-troubleshooting-support.md
+      - name: Optimize performance by scheduling batch jobs after hours
+        href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
       - name: Analytic reports aren't updated
