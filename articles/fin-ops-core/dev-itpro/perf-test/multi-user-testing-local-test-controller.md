@@ -239,9 +239,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ### If you have no Remote Desktop access to the server
 
-If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection.
-
-Open a support request, and provide the following information to the support engineer:
+If your test environment doesn't allow for Remote Desktop access, then you must open a support request to configure the environment to trust the RSAT connection. Open a support request, and provide the following information to the support engineer:
 
     - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
     - The **authcert.pfx** and **authcert.cer** certificate files.
