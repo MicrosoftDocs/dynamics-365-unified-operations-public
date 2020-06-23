@@ -141,7 +141,7 @@
       items:
       - name: Get support
         href: hr-admin-troubleshooting-support.md
-      - name: Optimize performance managing batch jobs
+      - name: Optimize performance by scheduling batch jobs after hours
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
