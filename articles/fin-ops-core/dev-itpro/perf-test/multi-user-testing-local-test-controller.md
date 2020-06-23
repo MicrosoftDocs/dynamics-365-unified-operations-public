@@ -221,7 +221,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 ## Configure a tier-2 or above sandbox environment for multi-user testing
 
-### If your AOS allows for Remote Desktop connections
+### If your AOS allows Remote Desktop connections
 
 1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
 
@@ -243,9 +243,9 @@ If your test environment doesn't allow for Remote Desktop access, follow these s
 
 Open a support request, and provide the following information to the support engineer:
 
-    - Your environment ID (You can find this ID on the environment page in Microsoft Dynamics Lifecycle Services \[LCS\])
-    - The **authcert.pfx** and **authcert.cer** certificate files
-    - An acceptable downtime window for the sandbox environment (downtime is expressed in minutes)
+    - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
+    - The **authcert.pfx** and **authcert.cer** certificate files.
+    - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
 
 ## Create test users
 
