@@ -49,6 +49,12 @@ Although this module doesn't provide address validation, address validation can 
 
    ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
+## Module properties
+
+| Property name  | Values | Description |
+|----------------|--------|-------------|
+| Save as primary address | True or False | This setting allows the address to be saved as primary address for a signed-in user during checkout flow |
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
 
 
 ## Add a Shipping address module to a checkout page and set the required properties
@@ -64,14 +70,6 @@ A Shipping address module can only be added to a Checkout container. See [Checko
 [Buy box module](add-buy-box.md)
 
 [Cart module](add-cart-module.md)
-
-[Order confirmation module](order-confirmation-module.md)
-
-[Online channel setup](channel-setup-online.md). 
-
-[Omni-channel Advanced auto-charges](omni-auto-charges.md) 
-
-[Prorate header chanrges to match sales lines](pro-rate-charges-matching-lines.md) 
 
 [Checkout module](add-checkout-module.md]
 
