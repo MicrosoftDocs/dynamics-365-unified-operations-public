@@ -91,4 +91,3 @@ The information class that is used to create the instance of the AOSLoadGen clas
 ### Remarks - new
 
 Control of the input to the new method could be a security risk. Therefore, this method runs under Code Access Security. Calls to this method on the server require permission from the ExecutePermission class. Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.
-

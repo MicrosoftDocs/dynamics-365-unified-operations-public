@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A classes
+title: F classes
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# A classes
+# F classes
 
 [!include [banner](../includes/banner.md)]
 
@@ -291,5 +291,3 @@ System API classes that start with the letter F.
 [FormTreeItem class](system-classes/FormTreeItem-class.md)
 
 [FormWindowControl class](system-classes/FormWindowControl-class.md)
-
-
