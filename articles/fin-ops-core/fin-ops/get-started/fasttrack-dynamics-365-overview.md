@@ -45,7 +45,7 @@ To get started with FastTrack, your project must meet the minimum license requir
 
 After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS Implementation project, a reminder will be sent to the project team. It's important that the project onboarding in LCS is completed with the most accurate date, and that the email addresses listed in the setup are monitored. For more information, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
-| FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Dedicated FastTrack engineering resources |
+| FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Designated FastTrack engineering resources |
 | --- | --- | --- | --- | --- | --- |
 | **Dynamics 365 FastTrack** <br></br> **Business process applications** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources\* | Combined annual adjusted revenue of $300,000 or more | All included | All included | All included | Included |
 | **FastTrack Essentials** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources | Combined annual adjusted revenue < $300,000 | All included | Pre go-live assessment | Not included | Not included |
