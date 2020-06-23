@@ -2,7 +2,8 @@
 # required metadata
 
 title: Instructions for workers in production using Dynamics 365 Guides
-description: Instructions helps workers in their their tasks across assembly, service, quality assurance and cover as well safety and certification related procedures. 
+description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides to help production  workers in their their tasks across assembly, quality assurance, safety and certification related procedures.
+ 
 author: cabeln
 manager: sorenand
 ms.date: 16/06/2020
@@ -31,14 +32,14 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 (In preview for release version 10.0.13)
 
-# Instructions for workers in production
+# Instructions with Dynamics 365 Guides for workers in production
 
 Workers in production processes will greatly profit from relevant instructions which must be provided in the context of their work and at the right time.
 There are several domains of work where instructions are applicable: Assembly, service, operations, certification, and safety.
 
 Across all of these core business functions, new employees, new equipment, new process and ongoing training instructions will empower workers to achieve more and work better.
 
-## Introduction to Instructions
+## Introduction
 
 You can provide instructions in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/).
 
@@ -106,11 +107,20 @@ Before you can attach guides to Asset management work orders, you must complete 
   - Production management > Production instructions
   - [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
 
+#### Configure how guides appear on the shop floor
+ 
+
 ### Use Dynamics 365 Guides
 
 ### Managing instructions within Dynamics 365 SCM using Guides
 
-You can assign Guides to the following objects to prescribe the instruction that will be automatically attached to the respective production jobs and available on the shop floor.
+Use the global Guides management form to see the list of all available Guides in your organization and all assignments to your production processes and resources.
+Navigate to Mixed reality / Guides / All Guides. In the top list you will see all Guides and you can filter the list of guides. In the list at the bottom you see all assignments and can manage those.
+
+:::image type="content" source="media/instruction-guides-allguides.png" alt-text="Manage Guides":::
+
+
+You can also assign Guides to the following objects directly to prescribe the instruction that will be automatically attached to the respective production jobs and available on the shop floor.
 
 - [Resource](operations-resources.md)
 
