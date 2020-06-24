@@ -84,22 +84,31 @@ The module can be used with the Map module to render the store locations visuall
 | Style| Dialog, Inline| The module can rendered inline or shown in a dialog|
 | Set as preferred store| True or False| When true, it allows the user to set a store as a preferred store for their shopping experience|
 | Show all stores | True or False| When true, it shows an option for the shopper to view all stores ignoring the search radius|
+|Auto-suggest options| Max results| It can be used to define the maximum number of auto-suggest results to render via Bing Auto-suggest API|
 | Search radius | Number | Defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used.|
 |Terms of Service | URL    |  The terms of service URL that is required for the Bing Maps service. |
 
 
 ## Add a store selector module to a page
 
-For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the Mode=Pick up in store
+For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the Mode=Pick up in store for this
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
-The module can be used on any page with Mode=Find stores
-[1] Add a container to the page
-To the container, add Store selector module
-In module property panel, set Mode=Find stores
-In module property panel, set other options such as "Set as preferred store" or "View all stores" to True
-In module property panel, set Search radius in miles 
+To use the module to display available stores for a Store locations page, follow the below steps
+ 1. Go to **Templates**, and create a page template that is named **Marketing template**.
+1. In the **Main** slot of the default page, dont add any modules.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Create a new page **Store locations** using the Marketing template.
+1. Add a Container with 2 columns and set Width=Fill Container
+1. Add a Store selector module to the container. 
+1. In module property panel, set Mode=Find stores
+1. In module property panel, set other options such as "Set as preferred store" or "View all stores" or "Auto-suggest options" as needed
+1. In module property panel, set Search radius in miles
+1. Add a Maps module to the container.
+1. In the Maps module property panel set any additional properties as needed.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+ 
 "
 
 ## Additional resources
@@ -117,3 +126,6 @@ In module property panel, set Search radius in miles
 [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
+
+[Maps module]
+
