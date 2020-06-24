@@ -48,21 +48,15 @@ This topic describes enhancements to tax exempt calculations in the point of sal
 
 This topice describes capabilities that have been added to support more robust tax calculation scenarios for cases where customers are tax exempt. 
 
-### Calculate customer tax exempt
+## Adjust prices for tax exemptions when price includes tax
 
-CalcCust.png
+![Setting to adjust prices in tax exempt scenarios](../medio/CalcPriceInc.png)
 
-This configuration option was added in 10.0.7. It introduced a new store-level setting to support using store and destination based tax calculations while also taking into account tax exemptions for specific customer. This scenario is important for retailers who may perform a mix of retail and B2B transactions in the point of sale and need to be able to have business customer exemptions handled in the point of sale automatically. 
+This configuration setting will be added in 10.0.13. It supports reducing prices in tax inclusive scenarios when the transaction or certain taxes within the transaction should be exempted. When store based taxes are in use, these exemptions may be applied using tax overrides. When customer based taxes are in use at the store, the exemptions are applied automatically based on customer tax settings.  
 
-## Calculate price inclusive tax exempt
+This setting is also supported for orders created in the Call Center and Stores. 
 
-CalcPriceInc.png
-
-This configuration setting will be added in 10.0.13. It supports reducing prices in tax inclusive scenarios when the transaction or certain taxes within the transaction should be exempted from standard taxation. When store based taxes are in use, these exemptions may be applied using tax overrides. When customer based taxes are in use at the store, the exemptions are applied automatically based on customer tax settings.  
-
-This setting is supported for orders created in the Call Center and Stores. 
-
-## Calculate price inclusive tax exempt setup
+## Setup to reduce prices in case of tax exemptions
 
 1. Navigate to **Retail and Commerce** > **Channels** > **Stores** > **All stores**.
 2. Select the **San Francisco** and view its details by clicking on the **Retail Channel Id** for the store.
@@ -99,7 +93,7 @@ Note: Tax details for the channel may be cached, so be sure to close the shift i
 
 An altternative scenario would be to set the store to **Use customer based tax** to **Yes**, then assign the sales tax group created in step 7 above directly on the customer. When that customer is added to the transaction, the prices will be reduced to reflect that customer's exempt status. 
 
-### Calculate customer tax exempt
+### Check customers for exemptions when tax is exclusive of price
 
 Certain retail verticals, a primary example being liquor stores, sell goods to individuals and other businesses in cash and carry transactions. In many cases, however, transactions involving those different customer segments have different requirements for taxation purchases. When a liquor store sells goods to certain businesses, sales taxes associated with the items being sold may be exempt fof those particular businesses. In all other cases, normal sales tax should apply. 
 
@@ -131,6 +125,4 @@ Steps provided are specific to testing this capability in demo data scenarios. S
 18. Add **Matthew Tolley** to the transaction. 
 19. Observe that when **Matthew Tolley** was added to the transaction, taxes were recalculated to take into account his exemption.
 
-
-## Related articles
 
