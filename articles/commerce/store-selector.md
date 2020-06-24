@@ -53,11 +53,11 @@ The store selector module is integrated with the Bing Maps APIs for Geocoding an
 
 
 ## Buy online pick-up in store
-The Store selector supports a "Pick-up in store" mode. In this mode, it displays a list of stores where a product is available for pickup, as well as store hours and product inventory for each store in the pick-up mode. Here it requires the context of a product so it can render product availabilty and allow the user to add the product to cart with delivery mode set to pickup at the selected store. For more details on Inventory settings, refer to [](). 
+The Store selector supports a "Pick-up in store" mode. In this mode, it displays a list of stores where a product is available for pickup, as well as store hours and product inventory for each store in the pick-up mode. Here it requires the context of a product so it can render product availabilty and allow the user to add the product to cart with delivery mode set to pickup at the selected store. For more details on Inventory settings, refer to [Inventory settings](inventory-settings.md). 
 
 The store selector module can be added to a buy box module on the product details page (PDP) to display stores where a product is available for pickup. It can also be added to a cart module. When added to a cart module, the store selector module displays pickup options for each cart line item. In addition, this module can be added to other pages or modules via extensions and customizations.
 
-For the BOPIS scenario to work, products should be configured with the "Pickup" delivery mode. Otherwise, the module will not be shown on the respective pages. For details on how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For this scenario to work, products should be configured with the "Pickup" delivery mode. Otherwise, the module will not be shown on the respective product pages. For details on how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 
 The following image shows an example of a store selector module used on a PDP.
@@ -65,7 +65,7 @@ The following image shows an example of a store selector module used on a PDP.
 ![Example of a store selector module](./media/BOPIS.PNG)
 
 ## Find a store
-The Store selector module supports a "Find stores" mode. Using this a "Store locations" page can be created to render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page.
+The Store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module.
 
 The following image shows an example of a store selector module used on a Store locations page.
 
@@ -91,7 +91,7 @@ The module can be used with the Map module to render the store locations visuall
 
 ## Add a store selector module to a page
 
-For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the Mode=Pick up in store for this
+For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the **Mode as Pick up in store** in the module property panel.
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
@@ -103,14 +103,12 @@ To use the module to display available stores for a Store locations page, follow
 1. Add a Container with 2 columns and set Width=Fill Container
 1. Add a Store selector module to the container. 
 1. In module property panel, set Mode=Find stores
-1. In module property panel, set other options such as "Set as preferred store" or "View all stores" or "Auto-suggest options" as needed
+1. In module property panel, set other options "Set as preferred store" or "View all stores" or "Auto-suggest options" as needed
 1. In module property panel, set Search radius in miles
 1. Add a Maps module to the container.
 1. In the Maps module property panel set any additional properties as needed.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
  
-"
-
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
