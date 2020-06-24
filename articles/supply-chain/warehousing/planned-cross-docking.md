@@ -182,7 +182,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Name:** *Baydoor*
     - **Fixed location usage:** *Fixed and non-fixed locations*
 
-1. Select **Save** to make the **Edit query** button available.
+1. Select **Save** to make the **Edit query** button on the **Location Directive Actions** toolbar available.
 1. Select **Edit query** to open the query editor.
 1. On the **Range** tab, make sure that the following two lines are configured:
 
