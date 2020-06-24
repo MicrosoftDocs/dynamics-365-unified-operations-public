@@ -71,5 +71,5 @@ A Shipping address module can only be added to a Checkout container. See [Checko
 
 [Cart module](add-cart-module.md)
 
-[Checkout module](add-checkout-module.md]
+[Checkout module](add-checkout-module.md)
 
