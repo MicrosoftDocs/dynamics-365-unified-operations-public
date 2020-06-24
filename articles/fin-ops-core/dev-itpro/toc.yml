@@ -1464,6 +1464,7 @@
           href: migration-upgrade/prepare-data-upgrade.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
+        - name: AX 2012 upgrade - On-premises environments
         - name: AX 2012 upgrade - Cutover testing
           href: migration-upgrade/upgrade-cutover-testing.md
         - name: AX 2012 upgrade - Post-upgrade tasks
