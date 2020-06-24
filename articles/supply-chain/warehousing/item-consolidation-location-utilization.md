@@ -62,8 +62,12 @@ Next, enable the Item consolidation location utilization feature, it is listed a
     - **Enable location status** - *Yes*
 
 1. Select **Save**.
-1. If the two configurations above were already enabled, go to the instructions below for the **Dimensions** FastTab.
-1. If the two configurations above were not already enabled, you must run the Warehouse location status consistency check after enabling.
+
+> [!IMPORTANT]
+> If the two configurations above were already enabled, go to the instructions below for the **Dimensions** FastTab.
+>
+> If the two configurations above were not already enabled, you must run a **Consistency check** for the **Warehouse module** after enabling.
+
 1. To run the consistency check, go to **System administration > Periodic tasks > Database > Consistency check**.
 1. In the **Consistency check** dialog box, select the following:
     - **Module** - *Warehouse management*
@@ -77,7 +81,10 @@ Next, enable the Item consolidation location utilization feature, it is listed a
 >
 >If the message for Warehouse location consistency check indicates **Incorrect location status information found for location XXXX in warehouse XX.** you must run the consistency check again with **Check/Fix** set to *Fix error*. Check messages for 0 errors found.
 
-10. On the **Location profiles** page, **Location Profile ID** *FLOOR-05*, expand the **Dimensions** FastTab, and enter the following:
+1. Finish setting up the location profile. Go to **Warehouse management > Setup >  Warehouse > Location profiles**.
+1. Select **FLOOR-05** from the list of location profiles.
+1. Select **Edit** in the Action Pane.
+1. Expand the **Dimensions** FastTab, and enter the following:
     - **Volume utilization percentage** - *100*
     - **Volumetric method used for inventory location** - *Use location volume*
     - **Actual location height** - *10*
@@ -87,18 +94,108 @@ Next, enable the Item consolidation location utilization feature, it is listed a
 
 1. Select **Save**.
 
+### Mobile Device Menu Items
+
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Select **New** in the Action Pane, and create a new menu item to be used for sorting.
+1. In the Header, enter the following:
+    - **Menu item name** – *Adjust In*
+    - **Title** – *Adjust In*
+    - **Mode** – *Work*
+    - **Use existing work** – *No*
+
+1. In **General** FastTab, select the following:
+    - **Work creation process** – *Adjustment in*
+    - **Inventory adjustment types** - *Adjust in*
+
+1. Select **Save**.
+
+### Mobile device menu
+
+1. Go to **Warehouse management >  Setup > Mobile device > Mobile device menu**.
+1. Select **Inventory** from the list of menus.
+1. Select **Edit** on the Action Pane.
+1. In the **Available Menus And Menu Items** scroll until you find the menu item **Adjust In**.
+1. Select **Adjust In** in the list then select the arrow button **(→)** to move the menu item into the **Menu Structure** list and add the newly created menu item to the desired menu.
+1. Select **Save**.
+
+### Movement types
+
+1. Go to **Warehouse management > Setup > Inventory > Movement types**.
+1. Select **New** from the Action Pane and enter the following:
+    - **Movement type code** - *CONSOLIDATE*
+    - **Description** - *Consolidate locations*
+    - **Work class ID** - *InvMov*
+  
+1. Select **Save**.
+
 ## Scenario
 
-Open the mobile device, log in to warehouse 51, and navigate to **Inventory > Adjust In**. (no menu item)
+The following scenario utilizes the Warehousing Mobile Device to perform a task, along with D365 Supply Chain Management functions. The mobile device will be used to make an inventory *adjustment in* to two locations in the warehouse.
 
-Enter Loc = LP-001, make up a new LP (system generated), and Item = M9201. Enter 10 ea as the quantity and confirm the adjustment.
+### Add inventory to locations
 
-Using the same menu item, enter Loc = LP-002, make up a new LP (system generated), and Item = M9201. Enter 15 ea as the quantity and confirm the adjustment.
+1. Login to the mobile device with a user setup for Warehouse **51**.
+1. Go to **Inventory > Adjust In**.
+1. Enter the first location adjustment.
+1. On the **Adjustment in** task, select the location to make the inventory adjustment, enter the following:
+    - **LOC** - *LP-001*
 
-Navigate to **Warehouse management > Periodic tasks > Item Consolidation**. Enter warehouse *51*.
+1. Confirm the location.
+1. Create a license plate ID for the item that will be added to the location, enter the following:
+    - **LP** - *LP00101*
 
-You will see two records displayed, one for each location that you adjusted item M9201 into. The Utilization percentage column shows the volumetric usage of each location.
+1. Confirm the license plate.
+1. Enter the item to be added to the license plate, enter the following:
+    - **ITEM** - *M9201*
 
-To consolidate inventory, select all the locations you want to consolidate, and click on **Consolidate Inventory** in the action bar. Enter the location to consolidate into, and the movement type code to use. (no movement type)
+1. Confirm the item.
+1. Enter the quantity of the item to be added, enter the following:
+    - **QTY** - *10*
 
-The system will create one work ID for each move that needs to be completed. If you enter one of the locations already containing inventory, then only one work ID will be created. If you enter a new location, then two will be created.
+1. Confirm the quantity.
+1. A **Work Completed** message is displayed.
+1. Enter the second location adjustment.
+1. On the **Adjustment in** task, select the location to make the inventory adjustment, enter the following:
+    - **LOC** - *LP-002*
+
+1. Confirm the location.
+1. Create a license plate ID for the item that will be added to the location, enter the following:
+    - **LP** - *LP00201*
+
+1. Confirm the license plate.
+1. Enter the item to be added to the license plate, enter the following:
+    - **ITEM** - *M9201*
+
+1. Confirm the item.
+1. Enter the quantity of the item to be added, enter the following:
+    - **QTY** - *15*
+
+1. Confirm the quantity.
+1. A **Work Completed** message is displayed.
+1. Select the menu button ( **≡** ), then select **Cancel** to exit the adjustment task.
+
+### Consolidate locations
+
+1. Go to **Warehouse management > Periodic tasks > Item Consolidation**.
+1. In the header, select a warehouse to perform the consolidation. Enter the following:
+    - **Warehouse** - *51*
+
+1. Records will be displayed, one for each location that the Item M9201 was adjusted. The Utilization percentage column shows the volumetric usage of each location.
+1. To consolidate inventory, select all the locations to be consolidated, and select **Consolidate Inventory** in the Action Pane.
+1. The **Consolidate inventory** dialog box opens.
+1. Enter the location and movement type to be used to create the Work for inventory movement. Enter the following:
+    - **Location** - *LP-001*
+    - **Movement type code** - *CONSOLIDATE*
+
+1. Select **OK**.
+1. An informational message is displayed with the movement work created. Make note of the **Movement work** ID.
+
+### View Movement Work
+
+1. Go to **Warehouse management > Work > Work details**.
+1. Filter or search the work grid to view the work created using the **Work ID** from consolidate inventory.
+    - In this scenario, the consolidate inventory location used was one of the existing locations with inventory. Only one Work ID was created.
+
+> [!NOTE]
+> The system will create one work ID for each move that needs to be completed. If you enter one of the locations already containing inventory, then only one work ID will be created. If you enter a new location, then two will be created.
