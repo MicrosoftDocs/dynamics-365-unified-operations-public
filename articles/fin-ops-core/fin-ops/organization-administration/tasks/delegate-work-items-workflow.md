@@ -3,7 +3,7 @@
  
 title: Delegate work items in a workflow
 description: If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. 
-author: jasongre
+author: ChrisGarty
 manager: AnnBe 
 ms.date: 06/23/2020
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
