@@ -56,6 +56,9 @@ tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-pack
 
 After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
 
+> [!IMPORTANT]
+> The AAD application must be created on the same tenant as Finance and Operations.
+
 1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
 
 2.  Select **New Registration**. Enter the following information:
