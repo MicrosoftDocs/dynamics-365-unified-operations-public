@@ -119,6 +119,8 @@ The Finance and Operations mobile app enables your organization to make its busi
 ## Process Automation
 The process automation framework allows administrators to view and create automated processes that will be scheduled with the batch server.  The added layer of visibility of scheduled work is presented in a calendar view that can be extended for use in application areas to allow non-system administrator users to view work that impacts their area. 
 
+- [Process Automation home page](process-automation.md)
+
 ## General administration
 - [Demo data overview](../../fin-ops/get-started/demo-data.md)
 - [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
