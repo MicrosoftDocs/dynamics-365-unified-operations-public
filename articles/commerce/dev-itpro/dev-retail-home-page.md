@@ -129,6 +129,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 - [Show custom notifications in POS](extend-pos-notification.md)
 - [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
+- [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 
 ## eCommerce
 -   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)
