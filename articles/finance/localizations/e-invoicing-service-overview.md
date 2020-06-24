@@ -116,4 +116,4 @@ The following illustration shows how data flows to and from the e-invoicing serv
 - [Get started with e-Invoicing service in Brazil](e-invoicing-bra-get-started.md)
 - [Get started with e-Invoicing service in Mexico](e-invoicing-mex-get-started.md)
 - [Get started with e-Invoicing service in Italy](e-invoicing-ita-get-started.md)
-- [Configuration feature set for e-Invoicing](e-invoicing-setup.md)
+- [Set up e-Invoicing](e-invoicing-setup.md)
