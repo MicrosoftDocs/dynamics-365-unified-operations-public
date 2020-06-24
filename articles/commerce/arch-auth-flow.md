@@ -41,11 +41,11 @@ This topic provides an overview of the various authentication flows in Microsoft
 
 Access to each of the application programming interfaces (APIs) on the Commerce Scale Unit is natively restricted by one or more of the following roles:
 
-- **Employee** – Access to these APIs requires point of sale (POS) device activation (a device token) and an authenticated employee.
-- **Customer** – Access to these APIs requires an authenticated customer. E-Commerce sites generally use these APIs for operations such as retrieving order history and changing customer details.
-- **Application** – Access to these APIs requires application-level authentication, such as Azure Active Directory (Azure AD) service-to-service authentication.
-- **Anonymous** – These APIs are primarily used by e-Commerce sites without user authentication.
-- **Customized APIs** – Access to these APIs can be restricted by using any of the previously described methods.
+- **Employee** – Access to APIs associated with this role requires point of sale (POS) device activation (a device token) and an authenticated employee.
+- **Customer** – Access to APIs associated with this role requires an authenticated customer. E-Commerce sites generally use these APIs for operations such as retrieving order history and changing customer details.
+- **Application** – Access to APIs associated with this role requires application-level authentication, such as Azure Active Directory (Azure AD) service-to-service authentication.
+- **Anonymous** – APIs associated with this role are primarily used by e-Commerce sites without user authentication.
+- **Customized APIs** – Access to APIs associated with this role can be restricted using any of the methods described above such as POS device activation, customer authentication, and anonymous authentication.
 
 For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
 
@@ -67,7 +67,7 @@ The following table describes the set of supported authentication methods for AP
 
 ### Unsupported authentication flows
 
-| Scenario | Unsupported scenario | Details |
+| Scenario | Unsupported authentication method | Details |
 |----------|-----------|------------|
 | Dynamics 365 POS authentication flows | Authentication without device activation (that is, without a device token) | All POS-related Commerce Scale Unit APIs require a device activation token for authentication. |
 
