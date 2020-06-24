@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.9
 This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 
 
-## How do I handel a runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)?
+## How do I handle a runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)?
 
 This error might occur when you use **ISupportedTypesAware**.
 
