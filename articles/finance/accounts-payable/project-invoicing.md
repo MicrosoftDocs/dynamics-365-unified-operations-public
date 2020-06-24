@@ -5,7 +5,7 @@ title: Project invoicing
 description: This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,10 @@ After you create and post an invoice proposal, a customer invoice is automatical
 Before you post an invoice proposal, you can add transactions to it or delete transactions from it. For example, you can remove expense transactions that were posted to a project, but that are not chargeable to the customer. 
 
 If your organization requires that invoice proposals be reviewed before they are posted, the invoice proposal might need to be approved through the "Review project invoice proposals" workflow before it is posted.
+
+### View grant information on project invoice list pages
+
+Public sector customers can add the **Grant ID** and **Grant name** to the project invoice proposals and project invoices list pages using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 
 ## On-account invoicing
 The amount that you enter for a project in an on-account invoice is based on the timing, percentage of completion, and other billing conditions that are specified in the related project contract. The amount is not calculated based on the hours, items, expenses, or fees that are posted to the project. 
