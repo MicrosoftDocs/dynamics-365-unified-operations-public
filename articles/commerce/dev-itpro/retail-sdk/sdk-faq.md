@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail SDK FAQ.
+title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.9
 ---
 
-# Known issues with Retail SDK.
+# Retail SDK FAQ
 
 [!include [banner](../../includes/banner.md)]
 
