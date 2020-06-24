@@ -1434,6 +1434,8 @@
         href: sysadmin/pre-configured-system-accounts.md
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
+      - name: Process automation
+        href: /sysadmin/process-automation.md
       - name: Security
         items:
         - name: Role-based security
@@ -1458,6 +1460,8 @@
           href: sysadmin/tasks/assign-users-security-roles.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
+      - name: Process automation
+        href: /sysadmin/process-automation.md
       - name: Batch processing
         items:
         - name: Batch processing overview
