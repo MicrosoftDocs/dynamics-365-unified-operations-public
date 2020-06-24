@@ -36,7 +36,7 @@ To delegate an individual work item, select the **Delegate** option in the **Wor
 
 ## Manually delegate multiple work items
 
-Multiple work items can be delegated together from the **Work items assigned to me** page. The following workflow types are eligible for mass delegation: Purchase agreement approval workflow, Purchase order workflow, Purchase requisition review, and Vendor invoice workflow. The **Delegate multiple work items** feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help in enabling this feature.
+Multiple work items can be delegated together from the **Work items assigned to me** page. The following workflow types are eligible for mass delegation: Purchase agreement approval workflow, Purchase order workflow, Purchase requisition review, and Vendor invoice workflow. The **Delegate multiple work items** feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 1.	Go to **Common > Common > Work items > Work items assigned to me**.
 2.	Select the work items that will be delegated.
 3.	Click the **Delegate work items** menu.
