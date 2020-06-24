@@ -39,7 +39,7 @@ The central administration page for all **Process automations** is found in the 
 
 ## Calendar view 
 One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You will see this view on the right-hand side of the process automation page. It will be populated with the scheduled work for the selected series. 
-[![Process automation calendar](./media/CalendarView.png)](./media/CalendarView.png)
+[![Process automation calendar](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## Occurrence changes
 Each individual occurrence can be modified without impacting other occurrences defined by the series that originated them. Occurrences of scheduled work can be edited from the calendar view by pressing the **View/Edit** button and selecting **Occurrence**.  This allows you access to all the settings originally shown in the series setup wizard and provides you the ability to make a one-off change for the selected occurrence.  An occurrence of scheduled work can also be disabled by pressing the **disable** button from the calendar view. 
