@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Known issues with Retail SDK.
-description: This topic explains some of the known issues in Retail SDK.
+title: Retail SDK FAQ.
+description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 06/18/2020
@@ -33,63 +33,63 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the known issues with Retail SDK.
+This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 
 
-### Runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)
+## How do I handel a runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)?
 
-Error message: 
+This error might occur when you use **ISupportedTypesAware**.
 
-Exception: System.MissingMethodException: Method not found: 'System.Collections.Generic.IEnumerable`1<System.Type> 
-Microsoft.Dynamics.Commerce.Runtime.ISupportedTypesAware.get_SupportedRequestTypes()'
+*Exception: System.MissingMethodException: Method not found: \'System.Collections.Generic.IEnumerable`1<System.Type> 
+Microsoft.Dynamics.Commerce.Runtime.ISupportedTypesAware.get_SupportedRequestTypes()\'*
+
+When extending or implementing CRT handlers, use **IRequestHandlerAsync** instead of **ISupportedTypesAware**. **ISupportedTypesAware** is not supported and if used in extension it may cause this runtime error. Additionally, don't use explicit implementations. 
 
 
-When extending/implementing CRT handlers please don't use ISupportedTypesAware, use  IRequestHandlerAsync. 
-Also don't use  explicit implementations. ISupportedTypesAware is not supported and if used in extension it may cause runtime error.
+The following example shows the recommended approach using **IRequestHandlerAsync**.
 
-To fix this issue use IRequestHandlerAsync instaed of ISupportedTypesAware.
+```csharp
 
-```C#
-Recommended:
-
-     public class MyHandler : IRequestHandlerAsync
+public class MyHandler : IRequestHandlerAsync
+{
+    public IEnumerable<Type> SupportedRequestTypes
+    {
+        get
         {
-            public IEnumerable<Type> SupportedRequestTypes
+            return new[]
             {
-                get
-                {
-                    return new[]
-                    {
-                        typeof(MyRequest)
-                    };
-                }
-            }
-
-            public Task<Response> Execute(Request request)
-            {
-                // return response.
-            }
+                typeof(MyRequest)
+            };
         }
+    }
 
-Not recommended:
+    public Task<Response> Execute(Request request)
+    {
+        // Return response.
+    }
+}
+```
 
- public class MyHandler : IRequestHandlerAsync, ISupportedTypesAware
+The following examples, which is not recommended, uses **ISupportedTypesAware**.
+
+```csharp
+// NOT RECOMMENDED
+public class MyHandler : IRequestHandlerAsync, ISupportedTypesAware
+{
+    public IEnumerable<Type> SupportedRequestTypes
+    {
+        get
         {
-            public IEnumerable<Type> SupportedRequestTypes
+            return new[]
             {
-                get
-                {
-                    return new[]
-                    {
-                        typeof(MyRequest)
-                    };
-                }
-            }
-
-            Task<Response> IRequestHandlerAsync.Execute(Request request)
-            {
-                return null;
-            }
+                typeof(MyRequest)
+            };
         }
-        
+    }
+
+    Task<Response> IRequestHandlerAsync.Execute(Request request)
+    {
+        return null;
+    }
+}
 ```
