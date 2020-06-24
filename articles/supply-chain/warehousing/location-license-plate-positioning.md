@@ -56,7 +56,7 @@ Complete the following procedures to set up the *Location license plate position
 
 #### Location profiles
 
-The feature must be turned on in the location profile for every location where it will be used. 
+The feature must be turned on in the location profile for every location where it will be used.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. In the list of location profiles in the left pane, select **BULK-06**.
@@ -68,7 +68,7 @@ The feature must be turned on in the location profile for every location where i
 
     - **Display mobile device LP position:** *Yes*
 
-        When this option is set to *Yes*, the license plate position will be shown to mobile device users during adjustment in and counting. You can change the setting of this option only when the functionality is turned on.
+        When this option is set to *Yes*, the license plate position will be shown to mobile device users during adjustment and counting. You can change the setting of this option only when the feature is turned on.
 
 1. Select **Save**.
 
