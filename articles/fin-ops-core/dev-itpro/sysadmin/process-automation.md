@@ -45,7 +45,5 @@ One of the key benefits of process automation is the ability to see the schedule
 ## Occurrence changes
 Each individual occurrence can be modified without impacting other occurrences defined by the series that originated them. Occurrences of scheduled work can be edited from the calendar view by pressing the **View/Edit** button and selecting **Occurrence**.  This allows you access to all the settings originally shown in the series setup wizard and provides you the ability to make a one-off change for the selected occurrence.  An occurrence of scheduled work can also be disabled by pressing the **disable** button from the calendar view. 
 
-![Occurrence Edit](./media/OccurrenceEdit.png)
-
 ## Developer documentation 
 A developer guide is currently being written to allow developers to extend the process automation framwork and have custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically. 
