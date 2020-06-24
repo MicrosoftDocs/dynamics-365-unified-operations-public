@@ -5,7 +5,7 @@ title: Finance and Operations and Common Data Service admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/24/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
