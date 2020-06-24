@@ -38,19 +38,18 @@ This topic covers the store selector module and describes how to add it to site 
 
 ## Overview
 
-A store selector module is used to display stores available to "Buy a product online and pick up". In 10.0.13, the module has  additional capabilities that allow it showcase a "Find a Store" page.  In this topic, we will discuss how the module can be used in both modes.
+A store selector module is used to "Pick-up" a product in a selected store. In 10.0.13, the module has  additional capabilities that allow it to showcase a "Find a Store" page to display available stores.  In this topic, we will discuss how the module can be used in both modes.
 
-The Store selector module allows the user to input a location (city, state, address etc) to search for stores nearaby. It then searches for stores within a defined search radius for stores that are available. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
+The Store selector module allows the user to input a location (city, state, address etc) to search for stores within a search radius. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
 
 ## Store selector module usage in e-Commerce
 
-- A store selector module can be used on a product details page (PDP) to find nearby stores and choose a store for pickup
-- A store selector module can be used on a cart page to find nearby stores and choose a store for pickup
+- A store selector module can be used on a product details page (PDP) to choose a store for pickup
+- A store selector module can be used on a cart page to select a store for pickup
 - A store selector module can be used on a stand-alone page that shows all available stores 
 
-## Bing integration
+## Bing Maps integration
 The store selector module is integrated with the Bing Maps APIs for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
-
 
 
 ## Buy online pick-up in store
@@ -66,9 +65,9 @@ The following image shows an example of a store selector module used on a PDP.
 ![Example of a store selector module](./media/BOPIS.PNG)
 
 ## Find a store
-The Store selector module supports a "Find a store" mode. In this mode, it displays stores that are available and does not require any product context. A "Store locations" page can be created using this module in this mode. 
+The Store selector module supports a "Find stores" mode. Using this a "Store locations" page can be created to render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page.
 
-The following image shows an example of a store selector module used on a PDP.
+The following image shows an example of a store selector module used on a Store locations page.
 
 ![Example of a store selector module](./media/Findastore.PNG)
 
@@ -91,10 +90,17 @@ The module can be used with the Map module to render the store locations visuall
 
 ## Add a store selector module to a page
 
-A store selector module needs the context of a product, so it can only be used within buy box and cart modules. Store selector modules do not function outside these modules.
-
+For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the Mode=Pick up in store
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
+
+The module can be used on any page with Mode=Find stores
+[1] Add a container to the page
+To the container, add Store selector module
+In module property panel, set Mode=Find stores
+In module property panel, set other options such as "Set as preferred store" or "View all stores" to True
+In module property panel, set Search radius in miles 
+"
 
 ## Additional resources
 
