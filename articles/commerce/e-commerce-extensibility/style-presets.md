@@ -42,7 +42,7 @@ A style preset is a stored set of all authorable style values across a site's th
 For more details on how the features works from the site builder tool see the [Work with style presets](../style-presets.md) documentation.
 
 ## Style preset definition files
-Each theme contains a style presets definition file, which provides the metadata for the site builder tool including the friendly name and description.  This file then includes the global and module specific styles that will be exposed to the authoring tool to be customized as desired.
+Each theme contains a style presets definition file, which provides the metadata for the site builder tool including the friendly name and description.  This file then includes the global and module specific styles that will be exposed to the authoring tool to be customized as desired. 
 
 When using the CLI command 'add-theme' to create a theme, the style preset definition file is automatically created and can be found under the theme "styles" directory.  The file name uses the pattern THEME_NAME.definition.scss.json file.
 
@@ -50,19 +50,32 @@ The below is an example theme style definition file created as part of the 'add-
 
 ![Style presets definition file](media/style-presets.png)
 
+
+Each styles defined under the global and modules section should also be defined in the theme.scss file.  
+
+In the below example notice SCSS variables have been defined for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the above style preset is turned on the color value is replaced with the default defined in the style preset definition file above, a site builder user can also override this property with any color they desire.  Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within the site builder tool.
+
+![Style presets definition file](media/style-presets-scss-file.png)
+
+
 ## Style preset definition schema
 
-* "**$type**" - The definition file type.  This must be "styleDefinition"
+* "**$type**" - The definition file type.  This must be "styleDefinition".
 * "**name**" – The name of the theme. This property must match the theme name found in the theme definition file.
 * "**friendlyName**" – The friendly name of the style preset. This name is shown in the site builder tool when configuring style presets. The minimum length is three characters.
 * "**description**" – The description of the style preset. The description provides a friendly string that is shown in the site builder tool when configuring the style presets.
-* "**global**" – The global section is used to add style presets that are globally scoped across the theme.
+* "**global**" – The global section is used to add style presets that are globally scoped across the theme. CSS property names are used as children of this node to define styles for the CSS style.
 * "**module**" – The module section is used to add style presets that are scoped only to specific modules.  Module names are used as children of this node to define module specific style presets.
 
 ### Style schema
 The below schema is used for each style property defined in the global and module style section.
 * "**friendlyName**" – The friendly name of the individual style preset property. This name is shown in the site builder tool when configuring style presets. The minimum length is three characters.
 * "**description**" – The description of the style preset property. The description provides a friendly string that is shown in the site builder tool when configuring the style presets.
+* "**type**" – The property type used as metadata for the site builder tool. The only supported values is "string".
+* "**format**" – The format field provides extra metadata to the site builder tool to bring up specific UX entry experiences.  This field is optional and currently only supports "color" which will be used to pop up the color picker within the site builder tool.
+* "**default**" – The default CSS style value set for this property.
+* "**group**" – The group property is used in the site builder to group together similar properties.
+
 
 ## Style preset instances
 
