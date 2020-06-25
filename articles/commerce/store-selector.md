@@ -49,7 +49,7 @@ The Store selector module allows the user to input a location (city, state, addr
 - A store selector module can be used on a stand-alone page that shows all available stores 
 
 ## Bing Maps integration
-The store selector module is integrated with the Bing Maps APIs for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
+The store selector module is integrated with the [Bing Maps REST APIs](https://docs.microsoft.com/en-us/bingmaps/rest-services/) for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
 
 
 ## Buy online pick-up in store
@@ -124,6 +124,8 @@ To use the module to display available stores for a Store locations page, follow
 [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
+
+[Bing Maps REST APIs](https://docs.microsoft.com/en-us/bingmaps/rest-services/)
 
 [Maps module]
 
