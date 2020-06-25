@@ -2,10 +2,10 @@
 # required metadata
 
 title: Warehouse work policies overview
-description: Warehouse work policies control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
-author: johanhoffmann
+description: Warehouse work policies control whether warehouse work is created by warehouse processes, based on work order type, inventory location, and product.
+author: perlynne, clmontor, johanhoffmann
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 06/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,8 +24,8 @@ ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-05-31
+ms.author: perlynne, clmontor, johanhoffmann
+ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: AX 7.0.1
 
 ---
@@ -34,31 +34,148 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Warehouse work policies control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
+# Work policies
 
-This work policy controls whether warehouse work is created for warehouse processes in manufacturing. You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**. For example, product L0101 is reported as finished to output location 001. The finished good is later consumed in another production order at output location 001. In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001. The work policy is an individual entity that can be described through the following information:
+This topic explains how to set up the warehousing app so that it supports work policies. This is a general article, for details relating to license plate receiving please refer to [License plate receiving via the warehousing app](warehousing-mobile-device-app-license-plate-receiving.md).
+
+You can use this functionality to quickly register the inventory without creating put away work when receiving purchase or transfer orders, or when completing manufacturing processes.
+
+A work policy controls whether warehouse work is created. You can set up the work policy by using a combination of: **work order types** (and **Work process**), an **inventory location**, and (optionally) a **product**. For example, a purchase order of the product A0001 is to be received in warehouse 24, location RECV. The product is later consumed in another process at location RECV. In this case, you can set up a work policy to prevent the put away work from being created when you report product A0001 as received in RECV. The work policy is an individual entity that can be described through the following information:
 
 -   **Work policy name** (the unique identifier of the work policy)
--   **Work order types** and **Work creation method**
+-   **Work order types,**  **Work process,** and **Work creation method**
 -   **Inventory locations**
 -   **Products**
 
-## Work order types
-You can select the following work order types:
+> [!NOTE]
+> - For the work policy to be active you must define at least one location for the work policy in the **Inventory locations** section. 
+>		- You can't specify the same location for multiple work policies.
+> - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation.
 
--   Finished goods put away
--   Co-product and by-product put away
--   Raw material picking
+To make all the functionalities available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-The **Work creation method** field has the value **Never**. This value indicates that the work policy will prevent warehouse work from being created for the selected work order type.
+## Work policies form
 
-## Inventory locations
-You can select a location that the work policy applies to. If no location is associated with a work policy, the work policy doesn’t apply to any processes. On the **Locations** page, you can also select or cancel the selection of the work policy for a specific location.
+To setup work policies go to **Warehouse management** &gt; **Setup** &gt; **Work** &gt; **Work policies**.
 
-## Products
-You can select a product that the work policy applies to. You can apply the work policy to either all products or selected products.
+### Work order types
 
-## Example
+In the **Work policies** form, on the **Work order types** tab you can select from the following work order types and related work processes: 
+
+| **Work order type** | **Work process** |
+|--|--|
+| Raw material picking| All related processes |
+| Co-product and by-product put away | All related processes | 
+| Finished goods putaway | All related processes |
+| Transfer receipt | License plate receiving (and putaway) |
+| Purchase orders | License plate receiving (and putaway) <br> Load item receiving (and putaway) <br> Purchase order line receiving (and putaway) <br> Purchase order item receiving (and putaway) |
+
+In order for the work policy to apply for several work processes of the same work order type multiple lines must be added to this grid. 
+
+The **Work creation method** field can have the value **Never,** or **Cross docking**. If this value is set to **Never** the work policy will prevent warehouse work from being created for the selected work order type and related work process. If this value is set to **Cross docking** a cross docking policy must also be created.
+
+### Inventory location
+
+In the **Inventory locations** tab you can add to the grid all the locations where this work policy should be applied. If no location is associated with a work policy, the work policy won't be applied to any process. 
+
+It's possible to use a warehouse location that is assigned to a location profile even when **Use license plate tracking** isn't turned on, and directly register the on-hand inventory.
+
+### Products
+
+In the **Products** tab you can select if this work policy will apply to all products or to the products listed on the grid.
+
+## Warehousing mobile device app processing
+
+Once the work policy is set up, the work policies will be checked whenever a worker uses a menu item associated with the respective **Work process.**
+
+### Default locations
+
+Previously, the system supported receiving only at the default location that is defined for each warehouse. However, when this feature is turned on, mobile device menu items for License plate receiving (and putaway), Load item receiving (and putaway), Purchase order line receiving (and putaway), and Purchase order item receiving (and putaway) now provide the **Use default data** option, which lets you select a custom "to" location for each menu item (this option was already available for some other types of menu items). The **To location** will override the receiving location of the warehouse for all the orders processed with this menu item.
+
+For the work policy to be applied, all the receiving locations (wether default warehouse receiving location or default data **To location**) must be listed in the **Work policies** form. 
+
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## Example 
+
+Some products are to be registered in location **FLOOR-001** and be available in warehouse **24** whenever received by the Purchase order item process. Products received by any other process should be registered in location **RECV** and work should be created as usual. 
+
+To allow for this we will need a work policy for the **Purchase order item receiving (and putaway)** process, on location **FLOOR-001**, for all products, and a menu item with default data **To location** for **FLOOR-001.**
+
+### Set up a work policy
+
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+The USMF demo data company was used to create this procedure.
+
+ 1.   Go to **Warehouse management** &gt; **Setup** &gt; **Work** &gt; **Work policies**. 
+ 2.   Click **New**.
+ 3.   In the Work policy name field, type 'No purchase item putaway work'.
+ 4.   Click **Save**.
+ 5.   Click **Add**.
+ 6.   In the list, mark the selected row.
+ 7.   In the Work order type field, select **Purchase order**.
+ 8.   In the Work order type field, select **Purchase order item receiving (and putaway)**.
+ 9.   Expand the **Inventory locations** section.
+ 10.  Click **Add**.
+ 11.  In the list, mark the selected row.
+ 14.  In the **Warehouse** list, enter **24**.
+ 15.  In the **Location** field, enter or select **FLOOR-001**.
+ 16.  Expand the **Products** section.
+ 17.  In the Product selection field, select **All**.
+ 18.  Click **Save**.
+
+### Set up a mobile device menu item to change the receiving location
+
+The USMF demo data company was used to create this procedure.
+
+
+ 1.   Go to **Warehouse management** &gt; **Setup** &gt; **Mobile device** &gt; **Mobile device menu items**.
+ 2.   Select the existing **Purchase receive** menu item.
+ 3.   Click on the **Use default data** toggle to activate it.
+ 4.   Click **Save**.
+ 5.   Click **Default data**.
+ 6.   Click **New**.
+ 7.   In **Default data field**, select **To location**.
+ 8.   In the **Warehouse** field, select **24**.
+ 9.   In the **Hardcoded value** field, write **FLOOR-001**.
+ 10.  Click **Save**.
+
+### Receive a purchase order without creating work
+
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+This procedure shows an example of receiving a purchase order item without creating work at a location different than the default receiving location set up for the warehouse. An applicable work policy and mobile device menu item is a prerequisite for this task. The previous procedures show these setups. 
+
+**Sub-task: create a purchase order**
+ 1.   Go to **Procurement and sourcing** &gt; **Purchase orders** &gt; **All purchase orders**.
+ 2.   Select **New**.
+ 3.   Select vendor account **US-101**.
+ 4.   Expand the **General** section.
+ 5.   Select site **2**.
+ 6.   Select warehouse **24**.
+ 7.   Select **OK**.
+ 8.   Select the purchase order line.
+ 9.   In the **Item number** field, select **A0001**.
+ 10.  Click **Save**.
+
+**Sub-task: receive a purchase order**
+
+ 1.   Log on to the mobile device on warehouse **24**
+ 2.   Select **Inbound**.
+ 3.   Select **Purchase receive**.
+   The current page should display location **FLOOR-001**.
+ 5.   Write the purchase order number from the previous sub-taks.
+ 6.   Write item number **A0001**.
+ 7.   Select **OK**.
+ 8.   Write quantity **1**.
+ 7.   Select **OK**
+ 8.   Work completed.
+
+The purchase order is now received and there's no work associated to it. The on-hand inventory has been updated and a quantity of 1 **A0001** is available in **FLOOR-001**.
+
+## Manufacturing Example
+
 In the following example, there are two production orders, PRD-001 and PRD-00*2*. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1. Production order PRD-002 also consumes raw material RM1 from location O1. RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released. 
 
 [![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
