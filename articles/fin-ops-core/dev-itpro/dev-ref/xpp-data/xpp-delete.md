@@ -87,19 +87,10 @@ ttsCommit;
 
 ## <a id="do-delete-method"></a>doDelete method
 
-Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of the **delete** method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method. The following example deletes all records in the myTable table that have an account number that is more than or equal to **200**.
+Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of the **delete** method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
-```xpp
-ttsBegin;
-    NameValuePair nameValuePair;
-
-    while select forUpdate nameValuePair
-        where nameValuePair.Name == 'Name1'
-    {
-        nameValuePair.doDelete();
-    }
-ttsCommit;
-```
+> [!WARNING]
+> Calling **doDelete** skips all logic, including database event handlers (for example **onDeleting** and  **onDeleted**), chain-of-command  **onDelete()**, and the **delete()** call itself. It's generally considered bad practice to use **doDelete** and it's not recommended.
 
 ## <a id="delete-from-statement"></a>delete\_from statement
 

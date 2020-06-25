@@ -70,15 +70,10 @@ To override the behavior of the **insert** method, use the [**doInsert**](#do-in
 
 ## <a id="do-insert-method"></a>doInsert method
 
-The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when the **insert** method on the table must be bypassed. In the following example, a new record is inserted. The **CustGroup** field of the record is set to **61**.
+The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when the **insert** method on the table must be bypassed. 
 
-```xpp
-CustGroup custGroup;
-ttsBegin;
-    custGroup.CustGroup = '61';
-    custGroup.doInsert();
-ttsCommit;
-```
+> [!WARNING]
+> Calling **doInsert** skips all logic, including database event handlers (for example **oninserting** and  **oninserted**), chain-of-command  **onInsert()**, and the **insert()** call itself. It's generally considered bad practice to use **doInsert** and it's not recommended.
 
 ## <a id="insert-recordset-statement"></a>insert\_recordset statement
 

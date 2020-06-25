@@ -57,7 +57,12 @@ ttsCommit;
 
 ## <a id="do-update-method"></a>doUpdate method
 
-To override the behavior of **update**, use the **doUpdate** method. The **doUpdate** method updates the current record with the contents of the buffer. This method also updates the appropriate system fields. You should use the **doUpdate** method when the **update** method on the table must be bypassed. The syntax for a **doUpdate** table method is **void doUpdate()**. In the following example, the value of the **CreditMax** field is increased by 1,000.
+To override the behavior of **update**, use the **doUpdate** method. The **doUpdate** method updates the current record with the contents of the buffer. This method also updates the appropriate system fields. You should use the **doUpdate** method when the **update** method on the table must be bypassed. The syntax for a **doUpdate** table method is **void doUpdate()**.
+
+> [!WARNING]
+> Calling **doUpdate** skips all logic, including database event handlers (for example **onUpdating** and  **onUpdated**), chain-of-command  **onUpdate()**, and the **update()** call itself. It's generally considered bad practice to use **doUpdate** and it's not recommended.
+
+
 
 ```xpp
 CustTable custTable;
