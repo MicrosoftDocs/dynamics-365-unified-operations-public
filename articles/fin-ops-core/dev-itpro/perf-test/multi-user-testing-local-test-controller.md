@@ -229,7 +229,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
 
-4. Repeat steps 1 through 4 on each AOS computer.
+4. Repeat steps 1 through 3 on each AOS computer.
 5. Restart all AOS instances.
 
 ### If you have no Remote Desktop access to the server
