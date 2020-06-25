@@ -754,76 +754,58 @@
           href: dev-ref/system-tables.md
         - name: System classes
           items:
-          - name: A classes
-            href: dev-ref/a-classes.md
-          - name: B classes
-            href: dev-ref/b-classes.md
-          - name: C classes
-            href: dev-ref/c-classes.md
-          - name: D classes
-            href: dev-ref/d-classes.md
-          - name: E classes
-            href: dev-ref/e-classes.md
-          - name: F classes (FieldBinding to FormBuildAnimateControl)
-            href: dev-ref/fieldbinding-classes.md
-          - name: F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-            href: dev-ref/formbuildbuttoncontrol-classes.md
-          - name: F classes (FormBuildFilterPaneControl to FormBuildRealControl)
-            href: dev-ref/formbuildfilterpanecontrol-classes.md
-          - name: F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
-            href: dev-ref/formbuildreferencecontrol-classes.md
-          - name: F classes (FormChangeTracker to FormControlEventArgs)
-            href: dev-ref/formchangetracker-classes.md
-          - name: F classes (FormDataObject to FormFastTabHeaderControl)
-            href: dev-ref/formdataobject-classes.md
-          - name: F classes (FormFastTabSummarySeparator to FormGridControl)
-            href: dev-ref/formfasttabsummaryseparator-classes.md
-          - name: F classes (FormGroupControl to FormIntControl)
-            href: dev-ref/formgroupcontrol-classes.md
-          - name: F classes (FormListBoxControl to FormNotifyEventArgs)
-            href: dev-ref/formlistboxcontrol-classes.md
-          - name: F classes (FormObject to FormRealControl)
-            href: dev-ref/formobject-classes.md
-          - name: F classes (FormReferenceControl to FormStringControl)
-            href: dev-ref/formreferencecontrol-classes.md
-          - name: F classes (FormTabControl to FormWindowControl)
-            href: dev-ref/formtabcontrol-classes.md
-          - name: G classes
-            href: dev-ref/g-classes.md
-          - name: H classes
-            href: dev-ref/h-classes.md
-          - name: I classes
-            href: dev-ref/i-classes.md
-          - name: J classes
-            href: dev-ref/j-classes.md
-          - name: K classes
-            href: dev-ref/k-classes.md
-          - name: L classes
-            href: dev-ref/l-classes.md
-          - name: M classes
-            href: dev-ref/m-classes.md
-          - name: N classes
-            href: dev-ref/n-classes.md
-          - name: O classes
-            href: dev-ref/o-classes.md
-          - name: P classes
-            href: dev-ref/p-classes.md
-          - name: Q classes
-            href: dev-ref/q-classes.md
-          - name: R classes
-            href: dev-ref/r-classes.md
-          - name: S classes
-            href: dev-ref/s-classes.md
-          - name: T classes
-            href: dev-ref/t-classes.md
-          - name: U classes
-            href: dev-ref/u-classes.md
-          - name: V classes
-            href: dev-ref/v-classes.md
-          - name: W classes
-            href: dev-ref/w-classes.md
-          - name: X classes
-            href: dev-ref/x-classes.md
+          - name: System class list
+            href: dev-ref/system-classes/toc.yml
+          - name: System classes grouped alphabetically
+            items:
+            - name: A classes
+              href: dev-ref/a-classes.md
+            - name: B classes
+              href: dev-ref/b-classes.md
+            - name: C classes
+              href: dev-ref/c-classes.md
+            - name: D classes
+              href: dev-ref/d-classes.md
+            - name: E classes
+              href: dev-ref/e-classes.md
+            - name: F classes
+              href: dev-ref/f-classes.md
+            - name: G classes
+              href: dev-ref/g-classes.md
+            - name: H classes
+              href: dev-ref/h-classes.md
+            - name: I classes
+              href: dev-ref/i-classes.md
+            - name: J classes
+              href: dev-ref/j-classes.md
+            - name: K classes
+              href: dev-ref/k-classes.md
+            - name: L classes
+              href: dev-ref/l-classes.md
+            - name: M classes
+              href: dev-ref/m-classes.md
+            - name: N classes
+              href: dev-ref/n-classes.md
+            - name: O classes
+              href: dev-ref/o-classes.md
+            - name: P classes
+              href: dev-ref/p-classes.md
+            - name: Q classes
+              href: dev-ref/q-classes.md
+            - name: R classes
+              href: dev-ref/r-classes.md
+            - name: S classes
+              href: dev-ref/s-classes.md
+            - name: T classes
+              href: dev-ref/t-classes.md
+            - name: U classes
+              href: dev-ref/u-classes.md
+            - name: V classes
+              href: dev-ref/v-classes.md
+            - name: W classes
+              href: dev-ref/w-classes.md
+            - name: X classes
+              href: dev-ref/x-classes.md
       - name: Extensibility
         items:
         - name: Extensibility home page
