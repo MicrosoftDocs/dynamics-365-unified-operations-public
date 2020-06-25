@@ -53,7 +53,7 @@ The below is an example theme style definition file created as part of the 'add-
 
 Each styles defined under the global and modules section should also be defined in the theme.scss file.  
 
-In the below example notice SCSS variables have been defined for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the above style preset is turned on the color value is replaced with the default defined in the style preset definition file above, a site builder user can also override this property with any color they desire.  Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within the site builder tool.
+In the below, example notice SCSS variables have been defined for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the above style preset is turned on the color value is replaced with the default defined in the style preset definition file above which happens to be the same color in this example, but a site builder user can choose to override this property with any color they desire.  Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within the site builder tool.
 
 ![Style presets definition file](media/style-presets-scss-file.png)
 
@@ -75,7 +75,85 @@ The below schema is used for each style property defined in the global and modul
 * "**format**" – The format field provides extra metadata to the site builder tool to bring up specific UX entry experiences.  This field is optional and currently only supports "color" which will be used to pop up the color picker within the site builder tool.
 * "**default**" – The default CSS style value set for this property.
 * "**group**" – The group property is used in the site builder to group together similar properties.
-
-
+                    
 ## Style preset instances
 
+
+## Localizing style preset names and descriptions
+Property names and descriptions for the style preset, instance presets and property names and description can be localized in a similar manner to module config properties as found here [Localize a module](localize-module.md) document using the "themes" node within the global.json file.
+
+The below is an example global.json file which sets various localized style preset properties:
+
+```json
+{
+    "settings" : {...},
+    "modules" : {...},
+    "themes" : {
+        "spring": {
+            "friendlyName": {
+                "value": "Spring",
+                "_value.comment": "Spring theme name"
+            },
+            "description": {
+                "value": "This is the spring theme.",
+                "_value.comment": "Spring theme description"
+            },
+            "styles": {
+                "definition": {
+                    "description": {
+                        "value": "This is the Spring theme style preset",
+                        "_value.comment": ""
+                    },
+                    "global": {
+                        "brandPrimaryColor": {
+                              "friendlyName": {
+                                  "value": "Primary brand color",
+                                  "_value.comment": ""
+                              },
+                              "description": {
+                                  "value": "The primary brand color used across the site.",
+                                  "_value.comment": ""
+                              },
+                              "group": {
+                                  "value": "Colors",
+                                  "_value.comment": ""
+                              }
+                          }
+                    },
+                    "modules"
+                        "header": {
+                            "categoryColor" : {
+                                "friendlyName": {
+                                    "value": "Header background",
+                                    "_value.comment": ""
+                                },
+                                "description": {
+                                    "value": "This is the background color for the module",
+                                    "_value.comment": ""
+                                },
+                                "group": {
+                                    "value": "Color",
+                                    "_value.comment": ""
+                                }
+                            }                            
+                        }
+                    }
+                },
+                "presets":  {
+                    "dark-theme": {
+                        "description": {
+                            "value": "This is the dark theme style preset",
+                            "_value.comment": ""
+                        }
+                    },
+                    "light-theme": {
+                        "description": {
+                            "value": "This is the dark theme style preset",
+                            "_value.comment": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
