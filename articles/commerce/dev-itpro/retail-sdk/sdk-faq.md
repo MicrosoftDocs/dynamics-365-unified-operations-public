@@ -70,7 +70,7 @@ public class MyHandler : IRequestHandlerAsync
 }
 ```
 
-The following examples, which is not recommended, uses **ISupportedTypesAware**.
+The following example, which is not recommended, uses **ISupportedTypesAware**.
 
 ```csharp
 // NOT RECOMMENDED
