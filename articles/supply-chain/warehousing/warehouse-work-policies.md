@@ -5,7 +5,7 @@ title: Work policies
 description: This topic explains how to set up work policies.
 author: perlynne
 manager: tfehr
-ms.date: 06/23/2020
+ms.date: 06/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: 2020-06-23
+ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
