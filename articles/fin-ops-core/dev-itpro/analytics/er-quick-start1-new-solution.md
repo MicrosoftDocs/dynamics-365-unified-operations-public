@@ -112,7 +112,7 @@ To run the existing report, you must expand the **Modules \> Questionnaire \> De
 
 ![Select the Questionnaires report item of the Questionnaire module to run the existing SSRS report](./media/er-quick-start1-application-menu-origin.png)
 
-You need to specify the selection criteria to filter the only **SBCCrsExam** questionnaire for the executed report.
+You can specify the selection criteria to filter the only **SBCCrsExam** questionnaire for the executed report.
 
 ![Specify the selection criteria on the SSRS report dialog page](./media/er-quick-start1-ssrs-report-dialog.png)
 
