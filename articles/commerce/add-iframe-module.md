@@ -40,7 +40,7 @@ This topic covers the IFrame module and describes how to add it to site pages in
 
 A IFrame module provies an iframe to host external content on a site. For instance, it can be used to host a youtube video or a pdf viewer on any site page. 
 
-It requires the destination URL to be provided and hosts whatever content in the URL within an iframe. If Content security policy is turned on, the external URLs that are admissable must be called out.
+It requires the destination URL to be provided and hosts whatever content in the URL within an iframe. If [Content security policy](manage-csp.md) is turned on, the external URLs must be called out in the Content Security policy.
 
 ## IFrame module properties
 
@@ -48,8 +48,8 @@ It requires the destination URL to be provided and hosts whatever content in the
 |---------------------------|-----------------------|-------------|
 | Heading| Text| Heading for the module|
 | Target Url| Url to be hosted within the module|
-|Height| Number or percentage| Height of the module can  defined in pixels or percentage. A number "100" will be treated as pixels and 100% will be treated as percentage |
-|Aria label| Text| An aria label can be defined for accessibilty purposes |
+| Height| Number or percentage| Height of the module can  defined in pixels or percentage. A number "100" will be treated as pixels and 100% will be treated as percentage |
+| Aria label| Text| An aria label can be defined for accessibilty purposes |
 
 ## Add an IFrame module to a page
 
@@ -66,6 +66,8 @@ To use the module to display available stores for a Store locations page, follow
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
+
+[Content security policy](manage-csp.md)
 
 
 
