@@ -55,6 +55,8 @@ Below is an example of the module used in a Store locations page.
 | Heading| Text| Heading for the module|
 |Pushpin options - Default icon|image | The icon to use for stores shown on the map|
 |Pushpin options - Active icon|image | The icon to use for a store that is selected on the map|
+|Pushpin options - Default icon color|string  |Text of HEX value for the color of the Active selected pushpin |
+|Pushpin options - Active icon color|string | Text or HEX value for the color of the Active selected pushpin|
 |Show index|True or false  | If true, the pushpins that indicate a store have an index that matches the index on the list view displayed by Store selector module|
 
 
