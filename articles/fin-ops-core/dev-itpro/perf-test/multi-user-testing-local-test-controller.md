@@ -223,26 +223,21 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ### If your AOS allows Remote Desktop connections
 
-1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
-
-    [![Certificates installed](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
-
-2. Add the thumbprint of the **authcert.pfx** certificate in the **wif.config** file of your tier-2 or above sandbox environment.
-3. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
-4. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
-5. Add the thumbprint of the generated certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority.
+1. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
+2. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
+3. Add the thumbprint of the **authcert.pfx** certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority and save the change.
 
     [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
 
-6. Save the change, and do an IIRESET.
-7. Repeat steps 3 through 6 on each AOS computer.
+4. Repeat steps 1 through 4 on each AOS computer.
+5. Restart all AOS instances.
 
 ### If you have no Remote Desktop access to the server
 
 If your test environment doesn't allow for Remote Desktop access, then you must open a support request to configure the environment to trust the RSAT connection. Open a support request, and provide the following information to the support engineer:
 
     - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
-    - The **authcert.pfx** and **authcert.cer** certificate files.
+    - The thumbprint of the **authcert.pfx** certificate.
     - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
 
 ## Create test users
