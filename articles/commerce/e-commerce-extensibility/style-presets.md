@@ -48,7 +48,7 @@ When using the CLI command 'add-theme' to create a theme, the style preset defin
 
 The below is an example theme style definition file created as part of the 'add-theme' CLI command.
 
-![Style presets definition file](/media/style-presets.png)
+![Style presets definition file](media/style-presets.png)
 
 
 
