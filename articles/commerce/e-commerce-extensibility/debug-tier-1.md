@@ -58,7 +58,7 @@ Selecting the **Retail Server URL** link should open a new tab with a URL simila
 
 Copy this URL, except for the last part "Commerce", into the .env file as the value for the **MsDyn365Commerce_BASEURL** variable. The remaining variables should be configured to a desired online channel on the environment. The following example shows configured variables using the URL that was noted above.  
 
-```
+```text
 …
 MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/
 MSDyn365Commerce_CHANNELID=68719478279
