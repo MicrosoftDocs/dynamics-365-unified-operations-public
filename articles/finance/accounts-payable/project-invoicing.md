@@ -80,7 +80,7 @@ If your organization requires that invoice proposals be reviewed before they are
 
 ### View grant information on project invoice list pages
 
-Public sector customers can add the **Grant ID** and **Grant name** to the project invoice proposals and project invoices list pages using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
+Public sector customers can add the **Grant ID** and **Grant name** to the project invoice proposals and project invoices list pages. Thes columns are enabled using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 
 ## On-account invoicing
 The amount that you enter for a project in an on-account invoice is based on the timing, percentage of completion, and other billing conditions that are specified in the related project contract. The amount is not calculated based on the hours, items, expenses, or fees that are posted to the project. 
