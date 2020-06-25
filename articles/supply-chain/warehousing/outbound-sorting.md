@@ -68,7 +68,7 @@ The packing station is seen as a location. When the warehouse workers are loggin
 1. Open the **Worker** drop-down list to open the list of employees and select the target user.
 1. Select the **Select** button.
 1. Select **Save** on the Action Pane.
-1. On the **Users** Toolbar, select **New** to create a mobile device account and make the following settings for it:
+1. On the **Users** FastTab toolbar, select **New** to create a mobile device account and make the following settings for it:
     - **User ID** - Enter a unique ID
     - **User name** - Enter a name for the ID
     - **Default warehouse** - *62*
@@ -247,7 +247,7 @@ This menu item allows users to move the sorted inventory items to the shipping l
 
 1. On the **General** FastTab, set **Directed by** to *User directed*.
 
-1. On the **Work classes** Toolbar, select **New** and enter the following:
+1. On the **Work classes** toolbar, select **New** and enter the following:
     - **Work class ID** - *SORT*
     - **Work order type** - *Sorted inventory picking*
 
@@ -285,15 +285,15 @@ Now you must add the new menu items to the mobile device menu. Do the following:
     - **Warehouse** – *62*
     - **Multiple SKU** - *No*
 
-1. Select **Save** to enable the *Lines* Toolbar.
-1. On the **Lines** Toolbar, select **New** on the Action Pane and enter the following on the new line:
+1. Select **Save** to enable the **Lines** FastTab toolbar.
+1. On the **Lines** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
     - **Sequence** – *1*
     - **From** – *0*
     - **To** – *1,000,000*
     - Accept the defaults for the remaining fields.
 
-1. Select **Save** to enable the *Location Directive Actions* Toolbar.
-1. On the **Location directive actions** Toolbar, select **New** on the Action Pane and enter the following on the new line:
+1. Select **Save** to enable the **Location Directive Actions** FastTab toolbar.
+1. On the **Location directive actions** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
     - **Sequence** – *1*
     - **Name** – *Baydoor*
     - Accept the defaults for the remaining fields.
@@ -318,21 +318,21 @@ Now you must add the new menu items to the mobile device menu. Do the following:
     - **Warehouse** – *62*
     - **Multiple SKU** - *Yes*
 
-1. Select **Save** to enable the **Lines** Toolbar.
-1. On the **Lines** Toolbar, select **New** on the Action Pane and enter the following on the new line:
+1. Select **Save** to enable the **Lines** FastTab toolbar.
+1. On the **Lines** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
     - **Sequence** – *1*
     - **From** – *0*
     - **To** – *1,000,000*
     - Accept the defaults for the remaining fields.
 
-1. Select **Save** to enable the **Location Directive Actions** Toolbar.
-1. On the **Location directive actions** Toolbar, select **New** on the Action Pane and enter the following on the new line:
+1. Select **Save** to enable the **Location Directive Actions** FastTab toolbar.
+1. On the **Location directive actions** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
     - **Sequence** – *1*
     - **Name** – *Baydoor Multi*
     - Accept the defaults for the remaining fields.
 
 1. Select **Save**
-1. On the **Location directive actions** Toolbar, select **Edit query**.
+1. On the **Location directive actions** FastTab toolbar, select **Edit query**.
 1. The query editor opens. On the **Range** tab, find the row where **Field** = *Location* and set its **Criteria** to *Baydoor*.
 1. Select **OK** to save your setting and close the query editor.
 
@@ -378,11 +378,11 @@ This scenario will simulate a situation where the packed containers should be au
     - **Carrier service** - *Air*
 
 1. Select the **Lines** section tab.
-1. If a new line is not automatically opened, select **Add line** on the **Sales order lines** Toolbar. Enter the following values for the new line:
+1. If a new line is not automatically opened, select **Add line** on the **Sales order lines** FastTab toolbar. Enter the following values for the new line:
     - **Item number** - *A0001*
     - **Quantity** - *2*
 
-1. With the new order line still selected, open the **Inventory** menu the **Sales order lines** Toolbar and then select **Reservation** from the menu.
+1. With the new order line still selected, open the **Inventory** menu the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
 1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
 
 1. Close the **Reservation** page to return to your sales order.
@@ -404,19 +404,19 @@ This scenario will simulate a situation where the packed containers should be au
 
 1. Expand the **Line details** FastTab and open its **Delivery** tab. Then set **Mode of delivery** to *Flowe-STD*.
 
-1. On the **Sales order lines** Toolbar, select **Add line** and enter the following values for the second order line:
+1. On the **Sales order lines** FastTab toolbar, select **Add line** and enter the following values for the second order line:
     - **Item** - *A0002*
     - **Quantity** - *1*
 
 1. On the **Line details** FastTab select the **Delivery** tab and change the **Mode of delivery** to *Air C-Air*.
 
 1. On the **Sales order lines** FastTab, select the first order line.
-1. Open the **Inventory** menu on the **Sales order lines** Toolbar and then select **Reservation** from the menu.
+1. Open the **Inventory** menu on the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
 1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
 
 1. Close the **Reservation** page to return to your sales order.
 1. Select the second order line on the **Sales order lines** FastTab
-1. Open the **Inventory** menu on the **Sales order lines** Toolbar and then select **Reservation** from the menu.
+1. Open the **Inventory** menu on the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
 1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
 
 1. Close the **Reservation** page to return to your sales order.
