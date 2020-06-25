@@ -36,12 +36,12 @@ This topic describes how to add authorable style variables to a custom theme whi
 
 ## Overview
 
-A style preset is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from site builder. Style presets let Commerce site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
+A style preset is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from the site builder tool. Style presets let Commerce site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
 
 
 For more details on how the features works from the site builder tool see the [Work with style presets](../style-presets.md) documentation.
 
-Themes with authorable style presets must provide a default style preset but can additional provide optional preset settings called preset instances.  An example would be a theme providing a default "modern light" style with optional "modern dark" and "vintage dark" instance sets of styles.
+Themes with authorable style presets must provide a default style preset but can provide additional optional preset settings called preset instances.  An example would be a theme providing a default "modern light" style with optional "modern dark" and "vintage dark" instance sets of styles.
 
 
 ## Default style presets
