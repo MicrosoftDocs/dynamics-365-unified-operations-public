@@ -242,19 +242,21 @@ Open a **Command Prompt** window as an administrator, and run the following comm
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=<Database edition> /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tdn:<New database name> /tu:sqladmin /tp:<password from LCS> /mp:64 /p:CommandTimeout=1200 /p:DatabaseEdition=<Edition> /p:DatabaseServiceObjective=<Service objective> /p:DatabaseMaximumSize=<Maximum size>
 ```
 
 Here is an explanation of the parameters:
 
+- **sf** (source file) – The path and name of the file to import from.
 - **tsn** (target server name) – The name of the SQL Azure server to import to. The name can be found in LCS. Suffix it with **.database.windows.net**.
 - **tdn** (target database name) – The name of the database to import to. The database should not already exist. The import process will create it.
-- **sf** (source file) – The path and name of the file to import from.
-- **tp** (target password) – The SQL password for the target SQL Database instance.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
+- **tp** (target password) – The SQL password for the target SQL Database instance.
+- **mp** (max parallelism) - Specifies the degree of parallelism for concurrent operations running against a database. The default value is 8. A value of 64 seems to give the best performance in most scenarios.
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
 - **/p:DatabaseEdition** – Specifies the edition of the database such as Basic, Standard, Premium, GeneralPurpose, BusinessCritical, or Hyperscale. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
-- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, P4, or GP_Gen5_8. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseMaximumSize** – Defines the maximum size in GB of an Azure SQL Database. You might need to use this parameter to allow a large database to be imported.
 
 After you run the commands, you may see the following warning. You can safely ignore it.
 
