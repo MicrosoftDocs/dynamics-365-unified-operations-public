@@ -60,19 +60,16 @@ ttsCommit;
 To override the behavior of **update**, use the **doUpdate** method. The **doUpdate** method updates the current record with the contents of the buffer. This method also updates the appropriate system fields. You should use the **doUpdate** method when the **update** method on the table must be bypassed. The syntax for a **doUpdate** table method is **void doUpdate()**. In the following example, the value of the **CreditMax** field is increased by 1,000.
 
 ```xpp
-static void Job1(Args _args)
-{
-    CustTable custTable;
-    ttsBegin;
-    select forUpdate custTable
+CustTable custTable;
+ttsBegin;
+select forUpdate custTable
     where custTable.CreditMax == 3000;
-    if (custTable)
-    {
-        custTable.CreditMax += 1000;
-        custTable.doUpdate();
-    }
-    ttsCommit;
+if (custTable)
+{
+    custTable.CreditMax += 1000;
+    custTable.doUpdate();
 }
+ttsCommit;
 ```
 
 ## <a id="update-recordset-statement"></a>update\_recordset statement

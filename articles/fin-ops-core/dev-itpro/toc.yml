@@ -720,6 +720,8 @@
               href: dev-ref/xpp-data/xpp-update.md
             - name: Delete data
               href: dev-ref/xpp-data/xpp-delete.md
+            - name: While select statement
+              href: dev-ref/xpp-data/xpp-while-select.md
             - name: Writing a select statement as an expression
               href: dev-ref/xpp-data/xpp-select-expression.md
             - name: X++ transactional integrity

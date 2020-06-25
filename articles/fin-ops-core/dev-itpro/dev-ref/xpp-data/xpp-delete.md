@@ -45,7 +45,7 @@ The **delete** method deletes the current record from the database. To use this 
 
 The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
-In the following example, all records in the MyTable table that satisfy the criterion in the **where** clause (that is, all records where the value of the **AccountNum** field is equal to **1000**) are deleted from the database. One record is deleted at a time.
+In the following example, all records in the NameValuePair table that satisfy the **where** clause (that is, all records where the value of the **Name** field is equal to **Name1**) are deleted from the database. One record is deleted at a time.
 
 ```xpp
 ttsBegin;
@@ -114,16 +114,14 @@ delete_from nameValuePair where nameValuePair.Name == 'Name1';
 
 In contrast to the previous example, the following example is inefficient, because it issues a separate SQL **delete** call to the database server for every record. The **delete** method never deletes more than one record per call.
 
-```X++
+```xpp
 // Example of inefficient code.
 MyWidgetTable tabWidget; // extends xRecord.
 ttsBegin;
-    while select
-        forUpdated
-        tabWidget
+    while select forUpdate tabWidget
         where tabWidget .quantity <= 100
     {
-        tabWidget .delete();
+        tabWidget.delete();
     }
 ttsCommit;
 ```
@@ -135,27 +133,22 @@ Inner joins aren't supported on the **delete\_from** statement. Therefore, you c
 The following example shows the recommended way of using the delete_from method and inner joins. The code example is relatively efficient. It issues a separate **delete\_from** statement for each loop iteration. However, each **delete\_from** statement can delete multiple records, a subset of all the records that the job deletes.
 
 ```xpp
-static void DeleteInnerJoin2bJob(Args _args)
+MyWidgetTable tabWidget; // extends xRecord.
+ttsBegin;
+while select from tabGalaxy
+    where tabGalaxy .isTrusted == 0
 {
-    MyWidgetTable tabWidget; // extends xRecord.
-    ttsBegin;
-    while select
-        from tabGalaxy
-            where tabGalaxy .isTrusted == 0
-    {
-        delete_from tabWidget
-            where tabWidget .GalaxyRecId ==
-                tabGalaxy .RecId;
-    }
-    ttsCommit;
+    delete_from tabWidget
+        where tabWidget .GalaxyRecId == tabGalaxy .RecId;
 }
+ttsCommit;
 ```
 
 ### A delete operation that uses the notexists join keyword
 
 You can use the **notexists join** keyword pair in a **delete\_from** statement. The **delete\_from** statements in the following example are efficient. The **notexists join** clause enables the **delete\_from** statement to delete a specific set of rows. In this example, the **delete\_from** statement removes all parent-order header rows that there are no child-order line rows for. You can also use the **exists join** clause on the **delete\_from** statement.
 
-```X++
+```xpp
 static void DeleteFromNotexists3bJob(Args _args)
 {
     GmTabOrderHeader tabOHeader;
@@ -195,18 +188,14 @@ static void DeleteFromNotexists3bJob(Args _args)
     while select tabOHeader
         order by OH_Info
     {
-        info(strFmt(
-            "Before: OHeader:  OH_Info==%1 , RecId==%2"
-            ,tabOHeader .OH_Info ,tabOHeader .RecId
-            ));
+        info(strFmt("Before: OHeader:  OH_Info==%1 , RecId==%2"
+            ,tabOHeader .OH_Info ,tabOHeader .RecId));
     }
     while select tabOLine
         order by OL_Data
     {
-        info(strFmt(
-            "Before: OLine:  OL_Data==%1 , OrderHeaderRecId==%2"
-            ,tabOLine .OL_Data ,tabOLine .OrderHeaderRecId
-            ));
+        info(strFmt("Before: OLine:  OL_Data==%1 , OrderHeaderRecId==%2"
+            ,tabOLine .OL_Data ,tabOLine .OrderHeaderRecId));
     }
     // Delete_From NotExists Join, to remove from the
     // parent table all order headers without children.
@@ -214,8 +203,7 @@ static void DeleteFromNotexists3bJob(Args _args)
         notexists join tabOLine
             where tabOHeader .RecId ==
                 tabOLine .OrderHeaderRecId;
-    info(strFmt
-        ("%1 is the number of childless OHeader records deleted."
+    info(strFmt("%1 is the number of childless OHeader records deleted."
         ,tabOHeader.rowCount()));
     // After the delete notexists.
     // Display all parent, and then all child rows.
@@ -223,18 +211,14 @@ static void DeleteFromNotexists3bJob(Args _args)
     while select tabOHeader
         order by OH_Info
     {
-        info(strFmt(
-            "After: OHeader:  OH_Info==%1 , RecId==%2"
-            ,tabOHeader .OH_Info ,tabOHeader .RecId
-            ));
+        info(strFmt("After: OHeader:  OH_Info==%1 , RecId==%2"
+            ,tabOHeader .OH_Info ,tabOHeader .RecId));
     }
     while select tabOLine
         order by OL_Data
     {
-        info(strFmt(
-            "After: OLine:  OL_Data==%1 , OrderHeaderRecId==%2"
-            ,tabOLine .OL_Data ,tabOLine .OrderHeaderRecId
-            ));
+        info(strFmt("After: OLine:  OL_Data==%1 , OrderHeaderRecId==%2"
+            ,tabOLine .OL_Data ,tabOLine .OrderHeaderRecId));
     }
 
 /**************  Actual Infolog output

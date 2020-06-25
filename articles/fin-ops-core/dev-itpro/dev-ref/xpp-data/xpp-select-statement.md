@@ -55,7 +55,7 @@ For more examples of data selection, see [Select data](xpp-select.md).
 
 ## Insert example
 
-The following example inserts a new record into the **CustomerTable** table. The **AccountNum** column of the new record is set to **2000**, and the **CustGroup** column is set to **1**. Other fields in the record will be blank.
+The following example inserts a new record into the **CustTable** table. The **AccountNum** column of the new record is set to **2000**, and the **CustGroup** column is set to **1**. Other fields in the record will be blank.
 
 ```xpp
 ttsBegin;
@@ -67,23 +67,27 @@ ttsBegin;
 ttsCommit;
 ```
 
+For more examples of inserting data, see [Insert data](xpp-insert.md).
+
 ## Update example
 
-The following example selects the **CustomerTable** table for update. All records where the value of the **AccountNum** field is equal to **2000** are updated. The value of the **CreditMax** field is changed to **5000**.
+The following example selects the **CustTable** table for update. Only records where the value of the **AccountNum** field is equal to **2000** are updated. Because there is no call to **next** and it is not a **select while** statement, only one record is updated. The value of the **CreditMax** field is changed to **5000**.
 
 ```xpp
 ttsBegin;
     CustTable custTable;
     select forUpdate custTable
-    where custTable.AccountNum == '2000';
+        where custTable.AccountNum == '2000';
     custTable.CreditMax = 5000;
     custTable.update();
 ttsCommit;
 ```
 
+For more examples of updating data, see [Update data](xpp-update.md).
+
 ## Delete example
 
-In the following example, all records in the **CustomerTable** table where the **AccountNum** field is equal to **2000** are deleted from the database. One record is deleted at a time.
+In the following example, all records in the **CustTable** table where the **AccountNum** field is equal to **2000** are deleted from the database. One record is deleted at a time.
 
 ```xpp
 ttsBegin;
@@ -95,6 +99,8 @@ ttsBegin;
     }
 ttsCommit;
 ```
+
+For more examples of deleting data, see [Delete data](xpp-select.md).
 
 ## Syntax of the select statement
 
@@ -196,7 +202,7 @@ while select AccountNum from custTable
 
 ## Using where, order by, and index hint together in a query
 
-You use the `order by` keyword in **select** statements to order the data that is returned. Use the `index hint` keyword to specify the index that should be used in the query and to sort the selected records in the manner that is defined by the index. Indexes optimize the selection of records. To select records in a specific order, combine the `index hint` keyword with an **order by** expression. If you want the output to be sorted in reverse order, use the `reverse` keyword. If a table index has been disabled (that is, if the index's **Enabled** property is set to **No**), the **select** statement that references the index is still valid. However, the database can't use the index as a hint to sort the data, because the index doesn't exist in the database. The following table shows how to use the `index hint` and `order by` keywords in **select** statements.
+You use the **order by** keyword in **select** statements to order the data that is returned. Use the **index hint** keyword to specify the index that should be used in the query and to sort the selected records in the manner that is defined by the index. Indexes optimize the selection of records. To select records in a specific order, combine the **index hint** keyword with an **order by** expression. If you want the output to be sorted in reverse order, use the **reverse** keyword. If a table index has been disabled (that is, if the index's **Enabled** property is set to **No**), the **select** statement that references the index is still valid. However, the database can't use the index as a hint to sort the data, because the index doesn't exist in the database. The following table shows how to use the **index hint** and **order by** keywords in **select** statements.
 
 | Task                                                   | Use                                   |
 |--------------------------------------------------------|---------------------------------------|
@@ -364,7 +370,7 @@ while select forcePlaceholders custGroup
 
 The **forceSelectOrder** keyword forces the SQL Server database to access the tables in a join in the specified order. If two tables are joined, the first table in the statement is always accessed first. This keyword is often combined with the **forceNestedLoop** keyword.
 
-The following example joins the **ForecastPurch** and **InventDim** tables on the **itemId** field.
+The following example joins the **CustGroup** and **CustTable** tables on the **CustGroup** field.
 
 ```xpp
 CustGroup custGroup;
@@ -380,13 +386,13 @@ while select forceSelectOrder custGroup
 
 ## forUpdate keyword
 
-The **forUpdate** keyword selects records for update only. Depending on the underlying database, the records might be locked for other users. The following example update the **CreditMax** column in the **CustomerTable** table for update for the record where **AccountNum** is **2000**.
+The **forUpdate** keyword selects records for update only. Depending on the underlying database, the records might be locked for other users. The following example update the **CreditMax** column in the **CustTable** table for update for the record where **AccountNum** is **2000**.
 
 ```xpp
 ttsBegin;
     CustTable custTable;
     select forUpdate custTable
-    where custTable.AccountNum == '2000';
+        where custTable.AccountNum == '2000';
     custTable.CreditMax = 5000;
     custTable.update();
 ttsCommit;
@@ -412,6 +418,7 @@ This **in** keyword filters rows where a value is contained in a list.
 Without using the **in** keyword, you would write code like this:
 
 ```X++
+// This code does't use the in keyword.
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
     InventSettlement inventSettlement;
@@ -431,6 +438,7 @@ private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 Using the **in** keyword, you would write code like this:
 
 ```X++
+// This code uses the in keyword.
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
     InventSettlement inventSettlement;
@@ -627,41 +635,32 @@ The SalesOrderLine table contains a foreign key field that is named **SalesOrder
 The following code has a **select** statement that reads the two tables. The **select** statement includes a left **outer join** clause. Both the join criteria and the data filter are on the **where** clause. The output from the code is also shown. The second record in the output has a **SalesOrderID** value of **2**. However, that value isn't present in the SalesOrderLine table. Therefore, some of the fields in the second record have default values: **0** for an integer and a zero-length string for a string.
 
 ```xpp
-static void SelectOuterJoinExample(Args _args)
+SalesOrder recSalesOrder;
+SalesOrderLine recSalesOrderLine;
+struct struct4 = new struct
+    ("int SalesOrderID;"
+    + "date DateAdded;"
+    + "str SalesOrderLineID;"
+    + "int Quantity"
+    );
+while select *
+    from
+        recSalesOrder
+        outer join recSalesOrderLine
+    where
+        recSalesOrder.SalesOrderID == recSalesOrderLine.SalesOrderID
+        && recSalesOrderLine.Quantity == 66
 {
-    SalesOrder recSalesOrder;
-    SalesOrderLine recSalesOrderLine;
-    struct struct4 = new struct
-        ("int SalesOrderID;"
-        + "date DateAdded;"
-        + "str SalesOrderLineID;"
-        + "int Quantity"
-        );
-    while select *
-        from
-            recSalesOrder
-            outer join recSalesOrderLine
-        where
-            recSalesOrder.SalesOrderID == recSalesOrderLine.SalesOrderID
-            && recSalesOrderLine.Quantity == 66
-    {
-        struct4.value("SalesOrderID", recSalesOrder.SalesOrderID);
-        struct4.value("DateAdded", recSalesOrder.DateAdded);
-        struct4.value("SalesOrderLineID", recSalesOrderLine.SalesOrderLineID);
-        struct4.value("Quantity", recSalesOrderLine.Quantity);
-        info(struct4.toString());
-    }
+    struct4.value("SalesOrderID", recSalesOrder.SalesOrderID);
+    struct4.value("DateAdded", recSalesOrder.DateAdded);
+    struct4.value("SalesOrderLineID", recSalesOrderLine.SalesOrderLineID);
+    struct4.value("Quantity", recSalesOrderLine.Quantity);
+    info(struct4.toString());
 }
 
 // Example output:
-// (SalesOrderID:1;
-// DateAdded:2010/1/1;
-// SalesOrderLineID:"CC";
-// Quantity:66)
-// (SalesOrderID:2;
-// DateAdded:2010/2/2;
-// SalesOrderLineID:"";
-// Quantity:0)
+// (SalesOrderID:1; DateAdded:2010/1/1; SalesOrderLineID:"CC"; Quantity:66)
+// (SalesOrderID:2; DateAdded:2010/2/2; SalesOrderLineID:""; Quantity:0)
 ```
 
 ## pessimisticLock keyword
@@ -676,7 +675,7 @@ select pessimisticLock custTable
 
 ## repeatableRead keyword
 
-This **repeatableRead** keyword specifies that the current transaction must be completed before other transactions can modify data that has been read by logic inside the current transaction. An explicit transaction is completed at either `ttsAbort` or the outermost `ttsCommit`. For a stand-alone **select** statement, the transaction duration is the duration of the **select** command. However, the database sometimes enforces the equivalent of `repeatableRead` in individual **select** statements, even if this keyword doesn't appear in your code. (The behavior depends on the method that the database uses to determine whether it should scan the tables.) For more information, see the documentation for the underlying relational database product.
+This **repeatableRead** keyword specifies that the current transaction must be completed before other transactions can modify data that has been read by logic inside the current transaction. An explicit transaction is completed at either **ttsAbort** or the outermost **ttsCommit**. For a stand-alone **select** statement, the transaction duration is the duration of the **select** command. However, the database sometimes enforces the equivalent of **repeatableRead** in individual **select** statements, even if this keyword doesn't appear in your code. (The behavior depends on the method that the database uses to determine whether it should scan the tables.) For more information, see the documentation for the underlying relational database product.
 
 ## reverse keyword
 
@@ -706,8 +705,6 @@ The **validTimeState** keyword selects rows from a table where the **ValidTimeSt
 CustPackingSlipTransHistory history;
 utcDateTime dateFrom, dateTo = DateTimeUtil::utcNow();
 anytype recid = -1;
-//dateFrom = DateTimeUtil::utcNow();
-//dateTo = dateFrom;
 select
     validTimeState(dateFrom, dateTo)
     *

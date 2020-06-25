@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or within source code, to retrieve and modify data that is stored in the database. You can use the **select** statement for these tasks:
+You can use SQL statements, either interactively or within source code, to retrieve and modify data that is stored in the database. You can use the **select** statement and API methods for these tasks:
 
 - [Select data](xpp-select.md): Select the data to view or modify.
 
@@ -41,7 +41,7 @@ You can use SQL statements, either interactively or within source code, to retri
 - [Insert data](xpp-insert.md): Add one or more new records to a table. You can use these statement to insert records:
 
     - [insert](xpp-insert.md#insert-method) and [doInsert](xpp-insert.md#do-insert-method) methods: Insert one record at a time.
-    - [insert\_recordset](xpp-insert.md#insert-recordset-statement), [RecordInsertList](../r-classes#class-recordinsertlist.md), and [RecordSortedList.insertDatabase](../r-classes#class-recordsortedlist.md) methods: Insert multiple records at the same time.
+    - [insert\_recordset](xpp-insert.md#insert-recordset-statement), [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase), and [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase) methods: Insert multiple records at the same time.
 
 - [Update data](xpp-update.md): Modify data in existing table records.
 
@@ -51,7 +51,7 @@ You can use SQL statements, either interactively or within source code, to retri
 - [Delete data](xpp-delete.md): Remove existing records from a table.
 
     - [delete](xpp-delete.md#delete-method) and [doDelete](xpp-delete.md#do-delete-method) methods: Delete one record at a time.
-    - [delete\_recordset](xpp-delete.md#delete-recordset-statement) statement: Deletes multiple records at the same time.
+    - [delete\_from](xpp-delete.md#delete-from-statement) statement: Deletes multiple records at the same time.
 
 Other statements that you'll use in data access are:
 
@@ -59,6 +59,6 @@ Other statements that you'll use in data access are:
 - [select expression](xpp-select-expression.md).
 - [next](xpp-select.md) statement.
 
-[Conversion of operations from set-based to record-by-record](xp-data-perf.md) provides additional information on using the recordset-based statements and methods efficiently.
+[Conversion of operations from set-based to record-by-record](xpp-data-perf.md) provides additional information on using the recordset-based statements and methods efficiently.
 
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.

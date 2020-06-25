@@ -41,7 +41,7 @@ The **select** statement fetches or manipulates data from the database.
 + The results of a **select** statement are returned in a table buffer variable.
 + If you use a field list in the **select** statement, only those fields are available in the table variable.
 
-The following example fetches all the columns in the first row of the **CustomerTable** table and prints the **AccountNum** column of the row.
+The following example fetches all the columns in the first row of the **CustTable** table and prints the **AccountNum** column of the row.
 
 ```xpp
 CustTable custTable;
@@ -49,7 +49,7 @@ select * from custTable;
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-The following example prints the **AccountNum** of each row in the **CustomerTable** table.
+The following example prints the **AccountNum** of each row in the **CustTable** table.
 
 ```xpp
 CustTable custTable;

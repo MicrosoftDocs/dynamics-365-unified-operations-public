@@ -37,9 +37,9 @@ You can use SQL statements, either interactively or within source code, to inser
 
 + **[insert method](#insert-method)**: Inserts one row at a time.
 + **[doInsert method](#do-insert-method)**: Inserts one row at a time.
-+ **[insert\_recordset statement](#insert-recordset-statement)**: Inserts multiple rows at the same time. Copy multiple records directly from one or more tables into another table in one database trip.
-+ **[RecordInsertList](../r-classes#class-recordinsertlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you don't have to sort the data.
-+ **[RecordSortedList.insertDatabase](../r-classes#class-recordsortedlist)**: Inserts multiple rows at the same time. Insert multiple records in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
++ **[insert\_recordset statement](#insert-recordset-statement)**: Copies multiple records directly from one or more tables into another table in one database trip.
++ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)**: Inserts multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
++ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)**: Inserts multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
 **RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
@@ -82,7 +82,7 @@ ttsCommit;
 
 ## <a id="insert-recordset-statement"></a>insert\_recordset statement
 
-The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert. However, array inserts are more flexible if you want to handle the data before you insert it. Although, **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time, it can fall back to record-by-record operations in many situations.
+The **insert\_recordset** statement copies data directly from one or more source tables into one destination table in one server trip. It's faster to use **insert\_recordset** than an array insert (**RecordInsertList.insertDatabase** or **RecordSortedList.insertDatabase**). However, array inserts are more flexible if you want to handle the data before you insert it. Although **insert\_recordset** is a record set–based operator that performs operations on multiple records at a time, it can fall back to record-by-record operations in many situations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 In the following syntax for the **insert\_recordset** statement, **\[\]** indicates optional elements of the statement.
 
@@ -92,8 +92,8 @@ In the following syntax for the **insert\_recordset** statement, **\[\]** indica
 
 **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
-- *ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
-- *WhereClause* and *JoinedWhereClause** are described in the *WhereClause* in the [**select** statement](xpp-select-statement.md).
++ *ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
++ *WhereClause* and *JoinedWhereClause* are described in the *WhereClause* in the [**select** statement](xpp-select-statement.md#where-keyword).
 
 ## insert\_recordset: insert data from another table
 

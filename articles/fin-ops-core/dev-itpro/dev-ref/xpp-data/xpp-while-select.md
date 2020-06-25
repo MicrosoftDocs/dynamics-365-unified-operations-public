@@ -32,29 +32,36 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-A **while select** statement is used to handle data. It's the most widely used form of the **select** statement. The **while select** statement loops over many records that meet specific criteria, and can run a statement on each record. Typically, when you use the **while select** statement for data manipulation, you do it in a transaction to ensure data integrity. The results of a **while select** statement are returned in a table buffer variable. If you use a field list in the **select** statement, only those fields are available in the table variable. If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields. The syntax of a **while select** statement resembles the syntax of a **select** statement, but the statement is preceded by **while select** instead of **select**. The **select** statement itself is run only one time, immediately before the first iteration of the statements in the loop. Any Boolean expressions (such as **iCounter &lt; 1**) that are added to the **while select** are tested only one time. This behavior differs from the behavior of the **while** statement in languages such as C++ and C\#. For example, the following loop can have more than one iteration.
+A **while select** statement is used to handle data. It's the most widely used form of the **select** statement. The **while select** statement loops over many records that meet specific criteria, and can run a statement on each record. The syntax of a **while select** statement resembles the syntax of a **select** statement, but the statement is preceded by **while select** instead of **select**.
 
-```xpp
-int iCounter = 0;
-BankAccountTable xrecBAT;
++ Typically, when you use the **while select** statement for data manipulation, you do it in a transaction to ensure data integrity.
++ The results of a **while select** statement are returned in a table buffer variable.
++ If you use a field list in the **select** statement, only those fields are available in the table variable.
++ If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields.
++ The **select** statement itself is run only one time, immediately before the first iteration of the statements in the loop.
++ Any Boolean expressions (such as **iCounter &lt; 1**) that are added to the **while select** are tested only one time. This behavior differs from the behavior of the **while** statement in languages such as C++ and C\#. For example, the following loop can have more than one iteration.
 
-while select * from xrecBAT
-    where iCounter < 1
-{
-    iCounter++;
-    info(strFmt("%1 , %2", iCounter, xrecBAT.AccountID));
-}
-```
+    ```xpp
+    int iCounter = 0;
+    BankAccountTable xrecBAT;
+
+    while select * from xrecBAT
+        where iCounter < 1
+    {
+        iCounter++;
+        info(strFmt("%1 , %2", iCounter, xrecBAT.AccountID));
+    }
+    ```
 
 The following example prints the **AccountNum** and **SalesGroup** of every customer in the **CustTable** table whose account number is within a specified range.
 
 ```xpp
-CustTable xrecCT;
+CustTable custTable;
 
-while select xrecCT
-    order by xrecCT.AccountNum
-    where  xrecCT.AccountNum >= '4010' && xrecCT.AccountNum <= '4100'
+while select custTable
+    order by custTable.AccountNum
+    where  custTable.AccountNum >= '4010' && custTable.AccountNum <= '4100'
 {
-    info(strFmt("%1 , %2", xrecCT.AccountNum, xrecCT.SalesGroup));
+    info(strFmt("%1 , %2", custTable.AccountNum, custTable.SalesGroup));
 }
 ```

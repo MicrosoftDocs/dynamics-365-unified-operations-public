@@ -53,7 +53,7 @@ The **ValidTimeStateFieldType** property on a table isn't equal to None | Yes | 
 
 You can use the settings that are shown in the **Used to override** column to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
-```X++
+```xpp
 public void tutorialRecordInsertList()
 {
     MyTable myTable;
