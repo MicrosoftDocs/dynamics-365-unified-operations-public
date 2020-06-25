@@ -270,7 +270,7 @@ select crossCompany :conCompanies
 
 ## desc keyword
 
-The **desc** keyword is an option on the **order by** or **group by** clause. It specifies an descending sort. If neither `asc` nor `desc` is specified, the sort is ascending.
+The **desc** keyword is an option on the **order by** or **group by** clause. It specifies a descending sort. If neither `asc` nor `desc` is specified, the sort is ascending.
 
 ```xpp
 CustTable custTable;
@@ -413,7 +413,7 @@ while select sum(CreditMax) from custTable
 
 ## in keyword
 
-This **in** keyword filters rows where a value is contained in a list.
+The **in** keyword filters rows where a value is contained in a list.
 
 Without using the **in** keyword, you would write code like this:
 
@@ -587,7 +587,7 @@ select * from custTable
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-The following example print the highest **AccountNum** in the **CustTable** table.
+The following example prints the highest **AccountNum** in the **CustTable** table.
 
 ```xpp
 CustTable custTable;

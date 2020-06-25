@@ -41,7 +41,7 @@ You can use SQL statements, either interactively or within source code, to inser
 + **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)**: Inserts multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
 + **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)**: Inserts multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
-**RecordSortedList**, **RecordInsertList** and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
+**RecordSortedList**, **RecordInsertList**, and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database, and therefore help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 ## <a id="insert-method"></a>insert method
 

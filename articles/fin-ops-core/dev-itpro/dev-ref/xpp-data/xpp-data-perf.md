@@ -32,13 +32,13 @@ ms.search.validFrom: 2016-02-28
 
 # Conversion of operations from set-based to record-by-record
 
-You can use the following statements to improve performance by reducing communication between the application and the database:
+You can use the following statements and methods to improve performance by reducing communication between the application and the database:
 
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
 - [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [RecordSortedList](../r-classes.md#class-recordsortedlist)
-- [RecordInsertList](../r-classes.md#class-recordinsertlist)
+- [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)
+- [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)
 
 There are situations where these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 
@@ -51,7 +51,7 @@ Overridden method | Yes | Yes | Yes | Yes | **skipDataMethods**
 Alerts are set up for the table | Yes | Yes | Yes | No | **skipEvents**
 The **ValidTimeStateFieldType** property on a table isn't equal to None | Yes | Yes | Yes | Yes | Not applicable
 
-You can use the settings that are shown in the **Used to override** column to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+You can use the settings that are shown in the **Used to override** column to explicitly skip or ignore one or more factors that adversely affect performance. If for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
 ```xpp
 public void tutorialRecordInsertList()
