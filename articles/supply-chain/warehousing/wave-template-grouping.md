@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.9
 Wave template grouping enables the system to use [wave template](tasks/configure-wave-processing.md) setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually. It enables the system to add each newly released shipment to the first wave that it finds that has matching grouping field values. If no match is found, the system creates a new wave for the new shipment.
 
 > [!IMPORTANT]
-> Grouping of waves is not supported for production and Kanban, due to the use of shipments to identify which wave they will be added. Production and Kanban do not utilize shipments and therefore cannot use this feature.
+> Wave template grouping isn't supported for production or kanban because wave grouping is based on shipments. Production and kanban don't use shipments and therefore can't use this feature.
 
 ## Turn on the Wave template grouping feature
 
