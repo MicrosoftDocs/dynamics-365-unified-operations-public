@@ -41,7 +41,12 @@ A style preset is a stored set of all authorable style values across a site's th
 
 For more details on how the features works from the site builder tool see the [Work with style presets](../style-presets.md) documentation.
 
-## Style preset definition files
+Themes with authorable style presets must provide a default style preset but can additional provide optional preset settings called preset instances.  An example would be a theme providing a default "modern light" style with optional "modern dark" and "vintage dark" instance sets of styles.
+
+
+## Default style presets
+
+### Style preset definition files
 Each theme contains a style presets definition file, which provides the metadata for the site builder tool including the friendly name and description.  This file then includes the global and module specific styles that will be exposed to the authoring tool to be customized as desired. 
 
 When using the CLI command 'add-theme' to create a theme, the style preset definition file is automatically created and can be found under the theme "styles" directory.  The file name uses the pattern THEME_NAME.definition.scss.json file.
@@ -58,7 +63,7 @@ In the below, example notice SCSS variables have been defined for **brandPrimary
 ![Style presets definition file](media/style-presets-scss-file.png)
 
 
-## Style preset definition schema
+### Style preset definition schema
 
 * "**$type**" - The definition file type.  This must be "styleDefinition".
 * "**name**" – The name of the theme. This property must match the theme name found in the theme definition file.
@@ -67,7 +72,7 @@ In the below, example notice SCSS variables have been defined for **brandPrimary
 * "**global**" – The global section is used to add style presets that are globally scoped across the theme. CSS property names are used as children of this node to define styles for the CSS style.
 * "**module**" – The module section is used to add style presets that are scoped only to specific modules.  Module names are used as children of this node to define module specific style presets.
 
-### Style schema
+#### Style schema
 The below schema is used for each style property defined in the global and module style section.
 * "**friendlyName**" – The friendly name of the individual style preset property. This name is shown in the site builder tool when configuring style presets. The minimum length is three characters.
 * "**description**" – The description of the style preset property. The description provides a friendly string that is shown in the site builder tool when configuring the style presets.
@@ -77,6 +82,51 @@ The below schema is used for each style property defined in the global and modul
 * "**group**" – The group property is used in the site builder to group together similar properties.
                     
 ## Style preset instances
+A theme can contain one or more optional style preset instances along with the default style preset settings.  To create an instance file, additional style preset definition files can be manually created under the "styles" directory with similar contents to the default style preset definition file above but would generally have different default values for the properties within the global and modules sections.  The file name should follow the same pattern INSTANCE_PRESET_NAME.scss.json.
+
+The below is an example style preset instance file for a dark theme. The file name is **modern-dark.scss.json**.  Notice the "name" must be unique and different from the default theme and other style preset instances.
+
+```json
+{
+    "$type": "styleDefinition",
+    "name": "modern-dark",
+    "friendlyName": "modern dark",
+    "description": "This is a spring modern light theme template style preset",
+    "global": {
+        "brandPrimaryColor": {
+            "friendlyName": "Brand primary",
+            "description": "Brand primary color",
+            "type": "string",
+            "format": "color",
+            "default": "#AAAAAA",
+            "group": "Colors"
+        },
+        "brandSecondaryColor": {
+            "friendlyName": "Brand secondary",
+            "description": "Brand secondary color",
+            "type": "string",
+            "format": "color",
+            "default": "#CCCCCC",
+            "group": "Colors"
+        },
+        "textDefaultColor": {
+            "friendlyName": "Text default",
+            "description" : "Text default color",
+            "type": "string",
+            "format": "color", 
+            "default": "#555555",
+            "group": "Colors" 
+        },
+        "backgrounDefaultColor": {
+            "friendlyName": "Background default",
+            "description" : "Background default color",
+            "type": "string",
+            "format": "color",
+            "default": "#000000",
+            "group": "Colors"         
+        },
+        ...
+```
 
 
 ## Localizing style preset names and descriptions
