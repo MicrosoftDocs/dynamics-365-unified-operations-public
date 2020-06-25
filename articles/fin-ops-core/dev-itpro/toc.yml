@@ -724,9 +724,9 @@
               href: dev-ref/xpp-data/xpp-while-select.md
             - name: Writing a select statement as an expression
               href: dev-ref/xpp-data/xpp-select-expression.md
-            - name: X++ transactional integrity
+            - name: Transactional integrity
               href: dev-ref/xpp-data/xpp-transaction.md
-            - name: Speeding up SQL operations
+            - name: Conversion of operations from set-based to record-by-record
               href: dev-ref/xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md

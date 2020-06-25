@@ -59,6 +59,8 @@ Other statements that you'll use in data access are:
 - [select expression](xpp-select-expression.md).
 - [next](xpp-select.md) statement.
 
+[Transactional integrity](xpp-transaction.md) helps prevent data corruption and help improve scalability.
+
 [Conversion of operations from set-based to record-by-record](xpp-data-perf.md) provides additional information on using the recordset-based statements and methods efficiently.
 
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.
