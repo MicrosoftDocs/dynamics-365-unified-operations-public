@@ -46,11 +46,23 @@ Each theme contains a style presets definition file, which provides the metadata
 
 When using the CLI command 'add-theme' to create a theme, the style preset definition file is automatically created and can be found under the theme "styles" directory.  The file name uses the pattern THEME_NAME.definition.scss.json file.
 
-The below is an example theme style definition file created as part of the 'add-theme' CLI command.
+The below is an example theme style definition file created as part of the 'add-theme' [CLI command](cli-command-reference.md).
 
 ![Style presets definition file](media/style-presets.png)
 
+## Style preset definition schema
 
+* "**$type**" - The definition file type.  This must be "styleDefinition"
+* "**name**" – The name of the theme. This property must match the theme name found in the theme definition file.
+* "**friendlyName**" – The friendly name of the style preset. This name is shown in the site builder tool when configuring style presets. The minimum length is three characters.
+* "**description**" – The description of the style preset. The description provides a friendly string that is shown in the site builder tool when configuring the style presets.
+* "**global**" – The global section is used to add style presets that are globally scoped across the theme.
+* "**module**" – The module section is used to add style presets that are scoped only to specific modules.  Module names are used as children of this node to define module specific style presets.
 
-The below example shows a theme called "spring" with two style presets defined, one called 
+### Style schema
+The below schema is used for each style property defined in the global and module style section.
+* "**friendlyName**" – The friendly name of the individual style preset property. This name is shown in the site builder tool when configuring style presets. The minimum length is three characters.
+* "**description**" – The description of the style preset property. The description provides a friendly string that is shown in the site builder tool when configuring the style presets.
+
+## Style preset instances
 
