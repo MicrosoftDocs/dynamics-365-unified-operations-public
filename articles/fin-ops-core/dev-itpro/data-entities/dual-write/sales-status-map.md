@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mapping Sales Order Status Setup
+title: Set up the mapping for sales order status fields
 description: 
 author:  robinarh
 manager: AnnBe
@@ -29,46 +29,41 @@ ms.dyn365.ops.version:
 ms.search.validFrom: 2020-06-25
 ---
 
-# Mapping Sales Order Status Setup
+# Set up the mapping for sales order status fields
 
 [!include [banner](../../includes/banner.md)]
 
-The sales order status fields work differently have different Enum values in Dynamics 365 Supply Chain Management and in Dynamics 365 Sales. To effectively map these fields additional setup is required.
+The sales order status fields have different enumeration values in Dynamics 365 Supply Chain Management and in Dynamics 365 Sales. Additional setup is required to map these fields in dual-write.
 
-## Status fields in Dynamics 365 Supply Chain Management vs Dynamics 365 Sales
+## Fields in Dynamics 365 Supply Chain Management
 
-This section describes the different status fields and the Enum values they can have as well as how they are mapped.
+The fields you need to map are **Status** and **Document Status**.
 
-### Dynamics 365 Supply Chain Management
+The **Status** enumeration specifies the overall status of the order.
 
-In Dynamics 365 Supply Chain Management we have two status related fields that are relevant here.
-
-  - Status – Specifies the overall status of the order
-
-| **Status Value (Enum)** |
+| Status |
 | ----------------------- |
 | Open Order              |
 | Delivered               |
 | Invoiced                |
 | Cancelled               |
 
-  - Document Status - specifies what the latest document generated for
-    the order is. This field can have the following values:
+**Document Status** enumeration specifies what the latest document generated for the order is.
 
-| **Document Status Value (Enum)** |
+| Document Status |
 | -------------------------------- |
 | Confirmation                     |
 | Picking List                     |
 | Packing Slip                     |
 | Invoice                          |
 
-### Dynamics 365 Sales
+## Fields in Dynamics 365 Sales
 
-In Dynamics 365 Sales we have the following status related fields:
+The fields you need to map are **Status** and **Processing Status**.
 
-  - Status – the overall status of the order
+The **Status** enumeration specifies the overall status of the order.
 
-| **Status Value (Enum)** |
+| Status |
 | ----------------------- |
 | Active                  |
 | Submitted               |
@@ -76,10 +71,9 @@ In Dynamics 365 Sales we have the following status related fields:
 | Invoiced                |
 | Cancelled               |
 
-  - Processing Status – a status field that was introduced to map the
-    status with D365 SCM
+The **Processing Status** enumeration was introduced to map the status with Dynamics 365 Supply Chain Management.
 
-| **Processing Status Value** | **SCM Status** | **SCM Document Status** |
+| Processing Status | Supply Chain Management Status | Supply Chain Management Document Status |
 | --------------------------- | -------------- | ----------------------- |
 | Active                      | Open Order     | None                    |
 | Confirmed                   | Open Order     | Confirmation            |
@@ -90,9 +84,9 @@ In Dynamics 365 Sales we have the following status related fields:
 | Invoiced                    | Invoiced       | Invoiced                |
 | Cancelled                   | Cancelled      | n/a                     |
 
-### Mapping
+## Mapping for Processing Status
 
-| **Processing Status** | **CE Status** | **F\&O Status** |
+| Processing Status | Sales Status | Supply Chain Management Status |
 | --------------------- | ------------- | --------------- |
 | Active                | Active        | Open Order      |
 | Confirmed             | Submitted     | Open Order      |
@@ -103,75 +97,59 @@ In Dynamics 365 Sales we have the following status related fields:
 | Invoiced              | Invoiced      | Invoiced        |
 | Cancelled             | Cancelled     | Cancelled       |
 
-# Setup Steps
+## Set up
 
-For the prerequisite, we need to enable IsSOPIntegrationEnabled” and
-“isIntegrationUser" two attributes.
+You need to enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** attributes.
 
-For the IsSOPIntegrationEnabled:
+To enable the **IsSOPIntegrationEnabled** attribute:
 
-1.  Go to (replace \<test-name\> with the companies crm link)
+1. Go to (replace \<test-name\> with the companies crm link).
 
-2.  Find the organizationid in the page. Get the value of
-    organizationid.
+2. Find the **organizationid** in the page.
 
-![](media/image1.jpeg)
+    ![Find orgainizationid](media/sales-map-orgid.png)
 
-3.  Open browser’s console in CRM page. Run following script, replace
-    the organizationid with the value we got from last step.
+3. Open browser’s console in CRM page. Run following script, using the **organizationid** from step 2.
 
-Xrm.WebApi.updateRecord("organization",
-"d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
-true}).then(
+    ```javascript
+    Xrm.WebApi.updateRecord("organization",
+    "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
+    true}).then(
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on record update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
+    );
+    ```
 
-    function success(result) {
+    ![JavaScript code in browser console](media/sales-map-script.png)
 
-        console.log("Account updated");
+4. Verify that **IsSOPIntegrationEnabled** is enabled. Use the link from step 1 to check the value.
 
-        // perform operations on record update
+    ![IsSOPIntegrationEnabled shows as true](media/sales-map-integration-enabled.png)
 
-    },
+To enable the **“isIntegrationUser** attribute:
 
-    function (error) {
+1. In Dynamics 365 Sales, navigate to **Setting \> Customization \> Customize the System**, choose **User entity**, and open **Form \> User**.
 
-        console.log(error.message);
+    ![Navigate to user form](media/sales-map-user.png)
 
-        // handle error conditions
+2. Find **Integration user node** in the Field Explorer. Double-click it to add it to the form. Save.
 
-    }
+    ![Adding Integration user node to form](media/sales-map-field-explorer.png)
 
-);
+3. In Dynamics 365 Sales, go to **Setting \> Security \> Users**. Change **Enabled Users** to **Application Users**.
 
-![](media/image2.jpeg)
+    ![Change Users to Application Users](media/sales-map-enabled-users.png)
 
-4.  Then we can validate if we enable “IsSOPIntegrationEnabled"
-    Successfully. Use step 1’s link to check its value.
+4. Select the two entries for **DualWrite IntegrationUser**, and change **Integration user mode** to **Yes**.
 
-![](media/image3.jpeg)
+    ![List of Application Users](media/sales-map-user-mode.png)
 
-For the “isIntegrationUser":
+    ![Changing Integration user mode](media/sales-map-user-mode-yes.png)
 
-1.  In CRM, navigate to Setting -\> Customization -\> Customize the
-    System, choose User entity, open Form -\> User
-
-![](media/image4.jpeg)
-
-2.  Find “Integartion user node” on right Field Explorer, double click
-    it to add it on the form. Then save it.
-
-![](media/image5.jpeg)
-
-3.  In CRM, go to Setting -\> Security -\> Users, change Enabled Users
-    to Application Users.
-
-![](media/image6.jpeg)
-
-4.  Click two DualWrite IntegrationUser, change integration user mode to
-    Yes.
-
-![](media/image7.jpeg)
-
-![](media/image8.jpeg)
-
-Once you’ve completed this setup your sales orders will be mapped
-correctly.
+Your sales orders are now mapped.
