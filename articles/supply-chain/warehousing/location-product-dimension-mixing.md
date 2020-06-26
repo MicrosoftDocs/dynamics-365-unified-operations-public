@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location product dimension mixing
-description: This Location profile functionality improves location management when using product variants or products with dimensions, such as with the fashion industry. It allows you to decide whether configurations, colors, style, and sizes can be mixed on a specific Location profile, or whether just one or a combination of these dimensions can be put to the same location.
+description: This topic provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 author: Mirzaab
 manager: tfehr
 ms.date: 06/16/2020
@@ -29,216 +29,215 @@ ms.dyn365.ops.version: Release 10.0.9
 
 # Location product dimension mixing
 
-## About
+Location product dimension mixing is location profile functionality that helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 
-This Location profile functionality improves location management when using product variants or products with dimensions, such as with the fashion industry. It allows you to decide whether configurations, colors, style, and sizes can be mixed on a specific **Location profile**, or whether just one or a combination of these dimensions can be put to the same location.
+## Turn on the Location product dimension mixing feature
 
-## Enable the Location product dimension mixing feature
+Before you can use location product dimension mixing, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - *Warehouse management*
-- **Feature name** - *Location product dimension mixing*
+- **Module:** *Warehouse management*
+- **Feature name:** *Location product dimension mixing*
 
 ## Setup
 
-Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location. Therefore, all locations with the same location profile will be enabled to allow product dimension mixing when it has been setup.
+Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location. Therefore, all locations that use the same location profile will be able to allow product dimension mixing after it has been set up.
 
-### Location Profiles - Allow product dimension mixing
+### Configure location profiles to allow product dimension mixing
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
-1. Select **BULK** from the Location profiles list.
-1. Select **Edit** on the Action Pane.
-1. In the **General** FastTab, set **Enable location product dimension specific mixing** to *Yes*. You can only enable this when **Allow mixed items** is set to *No*.
+1. In the list of location profiles, select **BULK**.
+1. On the Action Pane, select **Edit**.
+1. On the **General** FastTab, set the **Enable location product dimension specific mixing** option to *Yes*.
 
-1. Expand the **Allowed product dimension mixing** FastTab and set **Size** to *Yes*. In this scenario, we are only enabling mixing of products with different **Size** dimensions, though other options are also available.
+    > [!NOTE]
+    > You can set this option to *Yes* only if the **Allow mixed items** option is set to *No*.
 
+1. On the **Allowed product dimension mixing** FastTab, set the **Size** option to *Yes*. In the scenario that is described in this topic, mixing can be done only for products that have different **Size** dimensions. However, other options are also available.
 1. Select **Save**.
 
-### Create new product master and product variants
+### Create a new product master and product variants
 
 1. Go to **Product information management \> Products \> Product masters**.
-1. Select **New** in the Action Pane to create a new product master.
-1. In the **New product** pane enter the following:
-    - **Product type** - *Item*
-    - **Product subtype** - *Product master*
-    - **Product number** - *B0001*
-    - **Product name** - *B0001 Size*
-    - **Product dimension group** – *Size*
-    - **Configuration technology** - *Predefined variant*
+1. On the Action Pane, select **New** to create a product master.
+1. In the **New product** dialog box, set the following values:
+
+    - **Product type:** *Item*
+    - **Product subtype:** *Product master*
+    - **Product number:** *B0001*
+    - **Product name:** *B0001 Size*
+    - **Product dimension group:** *Size*
+    - **Configuration technology:** *Predefined variant*
 
 1. Select **OK**.
-1. On the **Product details** form, **General** FastTab select the following:
-    - **Generate variants automatically** - *Yes*
-    - **Size group** - *CASUALDHIR*
+1. On the **Product details** page, on the **General** FastTab, set the following values:
 
-1. To view the predefined variants, in the Action Pane select **Product variants**.
-1. The **Product variants** form opens with list of variants from the **Size group** configuration.
+    - **Generate variants automatically:** *Yes*
+    - **Size group:** *CASUALDHIR*
 
-### Release to company USMF
+1. To view the predefined variants, on the Action Pane, select **Product variants**.
 
-1. In the Action Pane, select **Release products**.
-1. On the **Select products to release** form confirm that **Product number** - *B0001* is in the list and select **Next**.
+    The **Product variants** page appears and shows a list of variants from the configuration of the size group.
+
+### Release products to the USMF company
+
+1. On the Action Pane, select **Release products**.
+1. On the **Select products to release** page, confirm that product number *B0001* is in the list, and then select **Next**.
 1. Select **Next** to confirm the product variants to release.
-1. On the **Select companies to release to** form, select *USMF*.
-1. Select **Next** to confirm the selection.
-1. On the **Confirm selection** form, select **Finish** to complete the release.
-1. A message saying **Operation completed** is generated.
+1. On the **Select companies to release to** page, select *USMF*, and then select **Next** to confirm the selection.
+1. On the **Confirm selection** page, select **Finish** to complete the release.
 
-### Update released product in company USMF
+    You receive an "Operation completed" message.
 
-1. Make sure you're logged in to company **USMF**.
-1. Go to **Product information management \> Products \> Released products** to complete the released product creation.
-1. On the **Released product details** list page, find and select **Item number** - *B0001* to open **Released product details**.
-1. Select **Edit** in the Action Pane.
-1. In the **General** FastTab, confirm or enter the following setting:
-    - **Item model group** – *FIFO*
+### Update a released product in the USMF company
 
-1. Select the **Product** tab in the Action Pane.
-1. In the **Set up** group select **Dimension groups** and make the following settings:
-    - **Storage dimension group** - *Ware*
-    - **Tracking dimension group** - *None*
+1. Make sure that you're signed in to the **USMF** company.
+1. Go to **Product information management \> Products \> Released products** to finish creating the released product.
+1. Find and select item number *B0001* to open the **Released product details** page.
+1. On the Action Pane, select **Edit**.
+1. On the **General** FastTab, make sure that the **Item model group** field is set to *FIFO*.
+1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Dimension groups**.
+1. Set the following values:
 
-1. Select **OK**
+    - **Storage dimension group:** *Ware*
+    - **Tracking dimension group:** *None*
 
-1. Select **Reservation hierarchy** in the **Set up** group and make the following setting:
-    - **Reservation hierarchy** - *Default*
-
-1. Select **OK**
-
-1. Note that in the **General** FastTab **Administration** group, your selections have been updated.
-1. On the **Purchase** FastTab, enter the following value:
-    - **Price** - *10*
-
-1. On the **Manage costs** FastTab, enter the following value:
-    - **Item group** – *Audio*
-
-1. On the **Purchase** FastTab, enter the following value:
-    - **Price** - *10*
-
-1. On the **Warehouse** FastTab, enter the following value:
-    - **Unit sequence group ID** – *ea*
-
+1. Select **OK**.
+1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Reservation hierarchy**.
+1. Set the **Reservation hierarchy** field to *Default*, and then select **OK**.
+1. On the **General** FastTab, in the **Administration** section, notice that your selections have been updated.
+1. On the **Purchase** FastTab, in the **Price** field, enter *10*.
+1. On the **Manage costs** FastTab, in the **Item group** field, enter *Audio*.
+1. On the **Purchase** FastTab, in the **Price** field, enter *10*.
+1. On the **Warehouse** FastTab, in the **Unit sequence group ID** field, enter *ea*.
 1. Select **Save**.
 
-### Location directives
+### Create a location directive
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
-1. In the left column heading, change **Work order type** to *Purchase orders*.
-1. Then select the Location Directive **Name** - *24 PO Direct*.
-1. On the **Location Directive Actions** FastTab toolbar, select **New** to add a new line. Enter the following values:
-    - **Sequence number** – *1*  
-        It should be in front of the already existing line, use the **Move up** and **Move down** buttons in the toolbar, or edit the existing line's **Sequence number** to *2* to make the change.
-    - **Name** – *Put to BULK Location profile*
-    - **Fixed location usage** – *Fixed and non-fixed locations*
-    - **Allow negative inventory** – *No* (blank)
-    - **Batch enabled** – *No* (blank)
-    - **Strategy** – *None*
+1. In the left pane, in the **Work order type** field, select *Purchase orders*.
+1. In the list, select the location directive that is named *24 PO Direct*.
+1. On the **Location Directive Actions** FastTab, select **New** to add a line to the grid.
+1. On the new line, set the following values:
 
-1. On the line you created, select **Edit query** in the toolbar.
-1. On the query form, **Range** tab, select **Add** to add a new line on **Range** and enter the following values:
-    - **Table** – *Locations*
-    - **Derived table** – *Locations*
-    - **Field** – *Location profile ID*
-    - **Criteria** - *BULK*
+    - **Sequence number:** *1*
+
+        The new line should be in front of the previously existing line. To make the change, use the **Move up** and **Move down** buttons on the toolbar, or change the existing line's **Sequence number** value to *2*.
+
+    - **Name:** *Put to BULK Location profile*
+    - **Fixed location usage:** *Fixed and non-fixed locations*
+    - **Allow negative inventory:** *No* (blank)
+    - **Batch enabled:** *No* (blank)
+    - **Strategy:** *None*
+
+1. While the new line is still selected, select **Edit query** above the grid.
+1. In the query dialog box, on the **Range** tab, select **Add** to add a line to the grid.
+1. On the new line, set the following values:
+
+    - **Table:** *Locations*
+    - **Derived table:** *Locations*
+    - **Field:** *Location profile ID*
+    - **Criteria:** *BULK*
 
 1. Select **OK**.
-1. Select **Save** in the **Location directives** Action Pane.
+1. On the **Location directives** page, on the Action Pane, select **Save**.
 
 > [!NOTE]
-> If using Location Directive Strategy *Consolidate*, the *Allow product dimension mixing* setup will be overridden and items will be put to the same location even if not allowed by the setup.
+> If you're using the *Consolidate* location directive strategy, the setup of *Allow product dimension mixing* will be overridden, and items will be put to the same location even if this behavior isn't allowed by the setup.
 
-### Mobile Device Menu Items
+### Create a mobile device menu item
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select **New** in the Action Pane, and create a new menu item to be used for sorting.
-1. In the Header, enter the following:
-    - **Menu item name** – *PO line receiving*
-    - **Title** – *PO line receiving*
-    - **Mode** – *Work*
-    - **Use existing work** – *No*
+1. On the Action Pane, select **New** to create a menu item to use for sorting.
+1. In the header, set the following values:
 
-1. In **General** FastTab, select the following:
-    - **Work creation process** – *Purchase order line receiving and putaway*
-    - **Generate license plate** – *Yes*
+    - **Menu item name:** *PO line receiving*
+    - **Title:** *PO line receiving*
+    - **Mode:** *Work*
+    - **Use existing work:** *No*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Work creation process:** *Purchase order line receiving and putaway*
+    - **Generate license plate:** *Yes*
 
 1. Select **Save**.
 
-### Mobile device menu
+### Configure the mobile device menu
 
-1. Go to **Warehouse management \>  Setup \> Mobile device \> Mobile device menu**.
-1. Select **Inbound** from the list of menus.
-1. Select **Edit** on the Action Pane.
-1. In the **Available Menus And Menu Items** scroll until you find the menu item **PO line receiving**.
-1. Select **PO line receiving** in the list then select the arrow button **(->)** to move the menu item into the **Menu Structure** list and add the newly created menu item to the desired menu.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. In the list of menus, select **Inbound**.
+1. On the Action Pane, select **Edit**.
+1. In the **Available Menus And Menu Items** list, find and select the **PO line receiving** menu item.
+1. Select the right arrow button to move the **PO line receiving** menu item to the **Menu Structure** list. In this way, you add your new menu item to the selected menu.
 1. Select **Save**.
 
 ## Scenario
 
-This demo will demonstrate how two different product variants can still be put to the same location when the Location profile does not allow mixed items but *Allow product dimension mixing* is enabled. In this case, we will use the variant *Size* as the criteria.
+This demo scenario shows how two different product variants can be put to the same location when the location profile doesn't allow for mixed items but *Allow product dimension mixing* is enabled. In this case, you will use the variant *Size* as the criterion.
 
-Before starting, ensure there are empty locations in Warehouse 24 with **Location profile** *BULK*.
+Before you begin, make sure that there are empty locations in warehouse *24* that use the *BULK* location profile.
 
-### Create Purchase order
+### Create a purchase order
 
-Create a purchase order with three lines: two lines with the same product number, but different **Size** variants, and a third line with a different product that has no variants.
+You will create a purchase order that has three lines: two lines for the same product number but different **Size** variants, and a third line for a different product that has no variants.
 
 1. Go to **Accounts payable \> Purchase orders \> All purchase orders**.
-1. Select **New** in the Action Pane.
-1. In the **Create purchase order** pane enter the following:
-    - **Vendor account** - *1001*
-    - **Warehouse** - *24*
+1. On the Action Pane, select **New**.
+1. In the **Create purchase order** dialog box, set the following values:
+
+    - **Vendor account:** *1001*
+    - **Warehouse:** *24*
 
 1. Select **OK**.
-1. The purchase order is created with a new line in the **Purchase order lines** FastTab. Make note of the purchase order number. Enter the following:
-    - **Item number** - *B0001*
+1. The purchase order is created, and a new line is added on the **Purchase order lines** FastTab. Make a note of the purchase order number.
+1. On the new line, set the following values:
+
+    - **Item number:** *B0001*
     - **Size** *L*
-    - **Quantity** - *2*
+    - **Quantity:** *2*
 
-1. Select **Add line** in the toolbar to add another line with the following:
-    - **Item number** - *B0001*
+1. Select **Add line** above the grid to add a second purchase order line, and set the following values:
+
+    - **Item number:** *B0001*
     - **Size** *XL*
-    - **Quantity** - *2*
+    - **Quantity:** *2*
 
-1. Select **Add line** in the toolbar to add another line with the following:
-    - **Item number** - *A0001*
-    - **Quantity** - *1*
+1. Select **Add line** to add a third purchase order line, and set the following values:
+
+    - **Item number:** *A0001*
+    - **Quantity:** *1*
 
 1.Select **Save**.
 
-### Warehouse app PO Line Receiving
+### Receive purchase order lines in the warehousing app 
 
-1. Sign in to the warehouse app with a user enabled for **Warehouse** - *24*.
+1. Sign in to the warehousing app as a user who is enabled for warehouse *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
-1. Select **PONUM** to enter the purchase order number.
-1. Enter the *Purchase order number* and confirm your entry by selecting the button at the bottom of the screen.
-1. Next you will enter the line number from the purchase order to be received.
-1. Select **LINENUM** and then select **1** from the number pad and confirm.
-1. Next enter the quantity to be received. Select the **+** button two times to increase **Qty** to *2*.
-    - Register your entry by selecting the button at the bottom of the screen.
-    - Next confirm your entry by selecting the button again.
+1. Select the **PONUM** field, and then enter the purchase order number.
+1. Confirm your entry by selecting the button at the bottom of the page.
+1. Enter the line number from the purchase order that is being received. Select the **LINENUM** field, and then use the number pad to enter *1*.
+1. Confirm your entry.
+1. Enter the quantity to receive. Select the plus sign (**+**) button two times to increase the value in the **Qty** field to *2*.
+1. Register your entry by selecting the button at the bottom of the page, and then confirm your entry by selecting the button again.
+1. View the information on the **Purchase orders: Put** page. This page shows the work that has been created for the put-away (Work 1).
 
-1. View the information on the **Purchase orders: Put** screen. This is the **Work** created for the put away (Work 1).
-    - The location where the received item will be put away, license plate, item, size and quantity of the PO line receiving task just completed will be displayed.
-    - Confirm the put away work.
+    The location where the received item will be put away, the license plate, the item, the size, and the quantity of the **PO Line receiving** task that you just completed are shown.
 
-1. Repeat this for PO line 2.
-    - This time specify a **Quantity** of *1* and confirm.
-    - New Putaway Work (Work 2) is created to the same location as Work 1.
-    - Confirm the put away.
+1. Confirm the put-away work.
+1. Repeat the previous steps for the purchase order line 2. However, in step 8, specify a quantity of *1*.
 
-1. Repeat once again for PO line 2.
-    - Specify the remaining **Quantity** *1* and confirm.
-    - New Putaway Work (Work 3) is created to the same location as Work 1 and Work 2.
-    - This is due to the Consolidation Location Directive strategy and the *Allow product dimension mixing* allowing the *Size* to be mixed on a location.
+    New put-away work (Work 2) is created for the same location as Work 1.
 
-1. Receive the last PO line (line 3).
-    - Specify **Quantity** *1* for **Item** *A0001* and confirm.
-    - New Putaway Work (Work 4) is created to a different location than Line 1 and Line 2.
-    - This is because the location profile does not allow mixed products, but does allow mixed dimensions of the same product master.
+1. Repeat the previous steps again for purchase order line 2. In step 8, specify the remaining quantity of *1*.
 
-1. Select the menu button in the header (some call it the hamburger) then select **Cancel** to exit **PO Line Receiving**.
+    New put-away work (Work 3) is created for the same location as Work 1 and Work 2. This behavior occurs because the *Consolidate* location directive strategy is used, and the *Allow product dimension mixing* setup allows the *Size* to be mixed on a location.
+
+1. Repeat the previous steps for purchase order line 3. In step 8, specify a quantity of *1* for item number *A0001*.
+
+    New put-away work (Work 4) is created for a different location than the location that is used for purchase order lines 1 and 2. This behavior occurs because the location profile doesn't allow for mixed products, but it does allow for mixed dimensions of the same product master.
+
+1. Select the Menu button at the top of the page (sometimes referred to as the hamburger or the hamburger button), and then select **Cancel** to exit **PO Line receiving**.
 
 > [!TIP]
-> This Scenario can be repeated with not allowing any of the Product dimension to be mixed (in this case, disable *Size* under *Allow product dimension mixing*). When receiving the PO in that case, each Product variant will be put to a new location.
+> You can repeat this scenario, but this time, disable *Size* under *Allow product dimension mixing*, so that none of the product dimensions can be mixed. In this case, when you receive the purchase order, each product variant will be put to a new location.
