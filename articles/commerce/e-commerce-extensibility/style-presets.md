@@ -81,7 +81,7 @@ The style preset property schema below is used for each style property that is d
 - **format** – This property provides extra metadata to site builder so that it can present specific user experience (UX) configuration scenarios. This field is optional and currently only supports the value "**color**", which is used to open the color picker within site builder.
 - **default** – The default CSS style value set for this property.
 - **group** – This property is used in site builder to group similar properties together.
-- **enum** - This property is optional and provides a set of hardcoded values for site builder authors to choose from.
+- **enum** – This property is optional and provides a set of hardcoded values for site builder authors to choose from.
                     
 ## Style preset instances
 
