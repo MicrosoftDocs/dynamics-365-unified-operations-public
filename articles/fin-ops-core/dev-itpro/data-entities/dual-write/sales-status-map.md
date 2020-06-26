@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up the mapping for sales order status fields
+title: Set up the mapping for the sales order status fields
 description: 
 author:  robinarh
 manager: AnnBe
