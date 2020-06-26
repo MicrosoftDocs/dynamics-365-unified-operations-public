@@ -91,4 +91,8 @@ A scheduled update could be cancelled due to various reasons.  Here are some of 
 - The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be cancelled before it starts.
 - You’ve enrolled the [First release program](https://experience.dynamics.com).  The First Relase program has different release cadence thus the previously scheduled updates will be cancelled. 
 
-You can find the cancelled updates via the **View recent cancelled updates** in the update settings, it will show cancelled updates, if any, within the last 2 scheduled updates. 
+You can find the cancelled updates via the **View recent cancelled updates** in the update settings, it will show cancelled updates, if any, within the last 2 scheduled updates.
+
+![View recent cancelled updates](./media/ViewRecentCancelledUpdates.png)
+
+![Cancelled updates](./media/CancelledUpdates.png)
