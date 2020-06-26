@@ -53,20 +53,41 @@ The following prerequisites must be met before the functionality can be used:
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
-### Set up a revenue typology for the Unique certification
+### Set up 
 
-You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section of the **Vendors** page.
+You must set up **Setup Unique Certification values**.
 
-You can import the list of possible revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Setup Unique certification values**
+2. Specify nessesary values for Unique Certification feature.
 
-The source data that is used to import revenue typology values can be presented as a Microsoft Excel file that has the following column names:
+**Setup Unique Certification values** page allows to configure the values available in the Unique Certification form for several fields:
+
+-	**record B**: exceptional events
+-	**record D**: exceptional events, special categories, unified counties
+-	**record H**: reason, code.
+
+Format of the telematics model of Unique Certification has been updated according to new specifications (regulatory update of Unique Certification valid from March 7th, 2018):
+
+-	**record A**: CUR18 supply code
+-	**record B**: new values for exceptional events
+-	**record D**: new values for exceptional events and special categories, introduction of unified counties fields
+-	**record H**: new values for reason and code fields
+-	**record Z**: count of L records to 0
+
+Values, specified on **Setup Unique Certification values** page and marked with **Yes** in the **Active** column, will be available in the related lookup fields in the **Unique Certification** page. Use this page for future regulatory upgrades of Unique Certification to add new or delete unnecessary values.
+
+Initial set of values for **Setup Unique Certification values** you can import by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+
+The source data that is used to import **Setup Unique Certification values** can be presented as a Microsoft Excel file that has the following column names:
 
 - FIELD
 - VALUE
 - ACTIVE
 - VALUEDESCRIPTION
 
-You can manually edit revenue topology values by going to **Tax** \> **Setup** \> **Withholding tax** \> **Setup Unique certification values**.
+### Set up a revenue typology for the Unique certification
+
+You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section of the **Vendors** page.
 
 ### Set up a format for the Unique certification
 
