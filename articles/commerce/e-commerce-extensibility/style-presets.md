@@ -130,7 +130,7 @@ The following example shows a style preset instance file for a dark theme. The f
             "default": "#000000",
             "group": "Colors"         
         },
-        …
+        ...
 ```
 
 ## Localize style preset names and descriptions
@@ -141,8 +141,8 @@ The following example shows a global.json file that sets various localized style
 
 ```json
 {
-    "settings" : {…},
-    "modules" : {…},
+    "settings" : {...},
+    "modules" : {...},
     "themes" : {
         "spring": {
             "friendlyName": {
