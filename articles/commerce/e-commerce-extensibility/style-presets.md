@@ -48,13 +48,13 @@ Themes with authorable style presets must have a default style preset but can al
 
 Each theme contains a style presets definition file that provides metadata for site builder such as the friendly name and description of the style preset. This definition file also includes the global and module-specific styles that will be available in site builder to be customized as needed. 
 
-When using the command line interface (CLI) command "add-theme" to create a theme, a style preset definition file is automatically created under the theme's "styles" directory. The naming convention for the definition file's name is **THEME_NAME.definition.scss.json**.
+When using the command line interface (CLI) command "add-theme" to create a theme, a style preset definition file is automatically created under the theme's "styles" directory. The naming convention for the definition file is **THEME_NAME.definition.scss.json**.
 
 The following illustration shows a Visual Studio Code example of a theme style definition file that was created using the 'add-theme' [CLI command](cli-command-reference.md).
 
 ![Style presets definition file](media/style-presets.png)
 
-Each style defined under the global and modules section should also be defined in the theme's Sassy CSS (SCSS) file. The naming convention for this file's name is **THEME_NAME.scss** 
+Each style defined under the global and modules section should also be defined in the theme's Sassy CSS (SCSS) file. The naming convention for this file is **THEME_NAME.scss** 
 
 In the example illustration below, Sassy CSS (SCSS) variables have been defined in the theme.scss file for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the style preset is turned on, the color value is replaced with the default color value defined in the style preset definition file. This happens to be the same color in this example, but a site builder author can choose to override this property with any color. Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within site builder.
 
@@ -85,7 +85,7 @@ The style preset property schema below is used for each style property that is d
                     
 ## Style preset instances
 
-Along with the default style preset settings, a theme can contain one or more optional style preset instances. To create an preset instance file, additional style preset definition files can be manually created under the "styles" directory. These style preset definition files will have similar contents to the default style preset definition file, but would generally have different default values for the properties within the global and modules sections. The naming convention for the preset instance file's name is **PRESET_INSTANCE_NAME.scss.json**.
+Along with the default style preset settings, a theme can contain one or more optional style preset instances. To create an preset instance file, additional style preset definition files can be manually created under the "styles" directory. These style preset definition files will have similar contents to the default style preset definition file, but would generally have different default values for the properties within the global and modules sections. The naming convention for the preset instance file is **PRESET_INSTANCE_NAME.scss.json**.
 
 The following example shows a style preset instance file for a dark theme. The file name is **modern-dark.scss.json**. 
 
