@@ -4,7 +4,7 @@
 title: Set up the mapping for the sales order status fields
 description: 
 author:  robinarh
-manager: AnnBe
+manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
 ms.prod: 
