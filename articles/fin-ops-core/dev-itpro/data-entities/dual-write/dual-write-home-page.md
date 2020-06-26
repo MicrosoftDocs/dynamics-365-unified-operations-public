@@ -56,7 +56,7 @@ These topics describe dual-write integration.
     + [Enable entity map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
-+ [Set up the mapping for sales order status fields](sales-map.md)
++ [Set up the mapping for sales order status fields](sales-status-map.md)
 
 ## Managing dual-write after setup
 
