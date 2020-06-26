@@ -2082,7 +2082,7 @@
           href: dev-itpro/pos-custom-transaction-column.md
         - name: Call POS APIs or operations from POS extensions
           href: dev-itpro/pos-api-extension.md
-        - name: Modern POS triggers and printing
+        - name: Modern POS (MPOS) triggers and printing
           href: dev-itpro/pos-trigger-printing.md
         - name: Add custom controls to non-screen designer-based POS views
           href: dev-itpro/pos-control-non-screen.md
