@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure theme style presets
-description: This topic describes how to add style variables called style presets to custom themes in Dynamics 365 Commerce site builder.
+description: This topic describes how to add style variables called style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
 manager: annbe
 ms.date: 06/26/2020
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add style variables called style presets to custom themes in Dynamics 365 Commerce site builder.
+This topic describes how to add style variables called style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
-A style preset is a stored set of all authorable style values across a site's theme. Style presets can be used to immediately change the look of a site from within site builder. Style presets let Commerce site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
+A style preset is a stored set of all authorable style values across a site theme. Style presets can be used to immediately change the look of a site from within site builder. Style presets let site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy new themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
 
 For more details on how style presets works in site builder, see [Work with style presets](../style-presets.md).
 
@@ -64,33 +64,33 @@ In the example illustration below, Sassy CSS (SCSS) variables have been defined 
 
 The style preset definition schema below is used for top-level section properties in the style presets definition file.
 
-* "**$type**" - The definition file type. The value for this must be **styleDefinition**.
-* "**name**" – The name of the theme. This property must match the theme name found in the theme definition file.
-* "**friendlyName**" – The friendly name of the style preset. This name is shown in site builder when configuring style presets. The minimum length is three characters.
-* "**description**" – The description of the style preset. The description provides a friendly string that is shown in site builder when configuring the style presets.
-* "**global**" – The global section is used to add style presets that are globally scoped across the theme. CSS property names are used as children of this node to define styles for the CSS style.
-* "**module**" – The module section is used to add style presets that are designated for specific modules. Module names are used as children of this node to define module-specific style presets.
+- **$type** - The definition file type. The value for this must be "**styleDefinition**".
+- **name** – The name of the theme. This property must match the theme name found in the theme definition file.
+- **friendlyName** – The friendly name of the style preset. This name is shown in site builder when configuring style presets. The minimum length is three characters.
+- **description** – The description of the style preset. The description provides a friendly string that is shown in site builder when configuring the style presets.
+- **global** – The global section is used to add style presets that are globally scoped across the theme. CSS property names are used as children of this node to define styles for the CSS style.
+- **module** – The module section is used to add style presets that are designated for specific modules. Module names are used as children of this node to define module-specific style presets.
 
-#### Style preset property schema
+### Style preset property schema
 
 The style preset property schema below is used for each style property that is defined within the global and module style sections of the style presets definition file.
 
-* "**friendlyName**" – The friendly name of the individual style preset property. This name is shown in site builder when configuring style presets. The minimum length is three characters.
-* "**description**" – This property is used for the description of the style preset property. The description provides a friendly string that is shown in site builder when configuring the style presets.
-* "**type**" – This property is used as metadata for site builder. The only supported value is **string**.
-* "**format**" – This property provides extra metadata to site builder so that it can present specific user experience (UX) entry scenarios. This field is optional and currently only supports the value **color**, which is used to open the color picker within site builder.
-* "**default**" – The default CSS style value set for this property.
-* "**group**" – This property is used in the site builder to group together similar properties.
-* "**enum**" - This property is optional and provides a set of hardcoded values for site builder authors to choose from.
+- **friendlyName** – The friendly name of the individual style preset property. This name is shown in site builder when configuring style presets. The minimum length is three characters.
+- **description** – This property is used for the description of the style preset property. The description provides a friendly string that is shown in site builder when configuring the style presets.
+- **type** – This property is used as metadata for site builder. The only supported value is "**string**".
+- **format** – This property provides extra metadata to site builder so that it can present specific user experience (UX) configuration scenarios. This field is optional and currently only supports the value "**color**", which is used to open the color picker within site builder.
+- **default** – The default CSS style value set for this property.
+- **group** – This property is used in site builder to group similar properties together.
+- **enum** - This property is optional and provides a set of hardcoded values for site builder authors to choose from.
                     
 ## Style preset instances
 
-Along with the default style preset settings, a theme can contain one or more optional style preset instances. To create an preset instance file, additional style preset definition files can be manually created under the "styles" directory. These style preset definition files will have similar contents to the default style preset definition file but would generally have different default values for the properties within the global and modules sections. The naming convention for the preset instance file's name is **PRESET_INSTANCE_NAME.scss.json**.
+Along with the default style preset settings, a theme can contain one or more optional style preset instances. To create an preset instance file, additional style preset definition files can be manually created under the "styles" directory. These style preset definition files will have similar contents to the default style preset definition file, but would generally have different default values for the properties within the global and modules sections. The naming convention for the preset instance file's name is **PRESET_INSTANCE_NAME.scss.json**.
 
 The following example shows a style preset instance file for a dark theme. The file name is **modern-dark.scss.json**. 
 
 > [!NOTE]
-> The "name" property value must be unique and different from the default theme and other style preset instances.
+> The "**name**" property value must be unique and different from the default theme and other style preset instances.
 
 ```json
 {
