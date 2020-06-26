@@ -2048,8 +2048,6 @@
           href: install-pos-layout-designer.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
-        - name: Modern POS and Cloud POS trigger extensibility
-          href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: Add custom controls to POS views
           href: dev-itpro/pos-custom-control.md
         - name: Add POS operations to POS layouts using Button grid designer
