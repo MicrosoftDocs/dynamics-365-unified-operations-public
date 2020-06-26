@@ -1,20 +1,47 @@
+---
+# required metadata
+
+title: Mapping Sales Order Status Setup
+description: 
+author:  robinarh
+manager: AnnBe
+ms.date: 06/25/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: 
+ms.dyn365.ops.version: 
+ms.search.validFrom: 2020-06-25
+---
+
 # Mapping Sales Order Status Setup
 
-# Overview
+[!include [banner](../../includes/banner.md)]
 
-The sales order status fields work differently have different Enum
-values in Dynamics 365 Supply Chain Management and in Dynamics 365
-Sales. To effectively map these fields additional setup is required.
+The sales order status fields work differently have different Enum values in Dynamics 365 Supply Chain Management and in Dynamics 365 Sales. To effectively map these fields additional setup is required.
 
 ## Status fields in Dynamics 365 Supply Chain Management vs Dynamics 365 Sales
 
-This section describes the different status fields and the Enum values
-they can have as well as how they are mapped.
+This section describes the different status fields and the Enum values they can have as well as how they are mapped.
 
 ### Dynamics 365 Supply Chain Management
 
-In Dynamics 365 Supply Chain Management we have two status related
-fields that are relevant here.
+In Dynamics 365 Supply Chain Management we have two status related fields that are relevant here.
 
   - Status – Specifies the overall status of the order
 
