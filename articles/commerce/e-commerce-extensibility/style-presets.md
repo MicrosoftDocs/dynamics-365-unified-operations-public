@@ -50,13 +50,13 @@ Each theme contains a style presets definition file that provides metadata for s
 
 When using the command line interface (CLI) command "add-theme" to create a theme, a style preset definition file is automatically created under the theme's "styles" directory. The naming convention for the definition file's name is **THEME_NAME.definition.scss.json**.
 
-The following image shows a Visual Studio Code example of a theme style definition file that was created using the 'add-theme' [CLI command](cli-command-reference.md).
+The following illustration shows a Visual Studio Code example of a theme style definition file that was created using the 'add-theme' [CLI command](cli-command-reference.md).
 
 ![Style presets definition file](media/style-presets.png)
 
 Each style defined under the global and modules section should also be defined in the theme's Sassy CSS (SCSS) file. The naming convention for this file's name is **THEME_NAME.scss** 
 
-In the Visual Studio Code example image below, Sassy CSS (SCSS) variables have been defined in the theme.scss file for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the style preset is turned on, the color value is replaced with the default color value defined in the style preset definition file. This happens to be the same color in this example, but a site builder author can choose to override this property with any color. Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within site builder.
+In the example illustration below, Sassy CSS (SCSS) variables have been defined in the theme.scss file for **brandPrimaryColor** with a default color of **#FFFFFF**.  When the style preset is turned on, the color value is replaced with the default color value defined in the style preset definition file. This happens to be the same color in this example, but a site builder author can choose to override this property with any color. Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within site builder.
 
 ![Style presets definition file](media/style-presets-scss-file.png)
 
