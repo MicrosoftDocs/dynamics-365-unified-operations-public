@@ -76,7 +76,7 @@ Format of the telematics model of Unique Certification has been updated accordin
 
 Values, specified on **Setup Unique Certification values** page and marked with **Yes** in the **Active** column, will be available in the related lookup fields in the **Unique Certification** page. Use this page for future regulatory upgrades of Unique Certification to add new or delete unnecessary values.
 
-Initial set of values for **Setup Unique Certification values** you can import by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+Initial set of values for **Setup Unique Certification values** you can import by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md). You can download initial set of values for **Setup Unique Certification values** as **IT SetupUniqueCertificationValues** file from **Data package** asset data type section of **Shared asset library** of [LCS portal](https://lcs.dynamics.com/v2) to your computer and import it in Data management framework.
 
 The source data that is used to import **Setup Unique Certification values** can be presented as a Microsoft Excel file that has the following column names:
 
