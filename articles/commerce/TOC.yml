@@ -502,6 +502,8 @@
             href: dev-itpro/adyen-connector-listPI.md
           - name: Strong Customer Authentication (SCA) using the Adyen connector
             href: adyen_redirect.md
+          - name: Dedicated payment terminals and prompts for a printer and cash drawer
+            href: pos-multi-hws.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
@@ -746,12 +748,12 @@
         href: edit-audit-retail-transactions.md
       - name: Create, calculate and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
-      - name: Improvements to statement posting functionality
-        href: statement-posting-eod.md
       - name: Trickle feed-based order creation for retail store transactions 
         href: trickle-feed.md
       - name: Create, calculate and post statements for a retail store 
         href: tasks/create-calculate-post-statement-retail-store.md
+      - name: Financial reconciliation in retail stores
+        href: fin-recon.md
       - name: Improvements to statement posting functionality 
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
@@ -976,7 +978,7 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
-          - name: Order confirmation module
+          - name: Order details module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
@@ -2034,6 +2036,8 @@
           href: dev-itpro/cloud-dev-box.md
         - name: Set up Commerce SDK build pipeline
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+        - name: Retail SDK FAQ
+          href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale extensibility
         items:
         - name: POS screen layouts
@@ -2044,8 +2048,6 @@
           href: install-pos-layout-designer.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
-        - name: Modern POS and Cloud POS trigger extensibility
-          href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: Add custom controls to POS views
           href: dev-itpro/pos-custom-control.md
         - name: Add POS operations to POS layouts using Button grid designer
@@ -2080,7 +2082,7 @@
           href: dev-itpro/pos-custom-transaction-column.md
         - name: Call POS APIs or operations from POS extensions
           href: dev-itpro/pos-api-extension.md
-        - name: Modern POS triggers and printing
+        - name: Modern POS (MPOS) triggers and printing
           href: dev-itpro/pos-trigger-printing.md
         - name: Add custom controls to non-screen designer-based POS views
           href: dev-itpro/pos-control-non-screen.md

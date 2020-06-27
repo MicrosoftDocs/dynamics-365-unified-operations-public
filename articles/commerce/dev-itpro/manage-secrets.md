@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage secrets for retail channels
-description: This topic explains how to extend the channel database.
+description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
 manager: AnnBe
 ms.date: 09/17/2019

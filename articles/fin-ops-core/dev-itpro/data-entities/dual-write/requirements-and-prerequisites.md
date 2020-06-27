@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment.
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment. You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Common Data Service and already has **Enable Dynamics 365 apps** set to **Yes**.
+You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Common Data Service and already has **Enable Dynamics 365 apps** set to **Yes**.
 
 :::image type="content" source="media/add_database.png" alt-text="Enable apps switch" lightbox="media/add_database_expanded.png":::
 
@@ -71,28 +71,20 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
 3. Grant Common Data Service access so that it can connect to a Finance and Operations app.
 
-    1. Open your instance of the Finance and Operations app by using the following URL. Replace **\<BaseFinanceandOperationsappsURL\>** with your instance.
+    1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications.
 
-        `https://<BaseFinanceandOperationsappsURL>/?cmp=DAT&mi=SysAADClientTable`
-
-    2. Select **New** to add a new client ID record: **33976c19-1db5-4c02-810e-c243db79efde**. This record is the application ID for an app that will be used to connect from Common Data Service to the Finance and Operations app.
+    2. Select **New** to add a new client ID record: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This record is the application ID for an app that will be used to connect from Common Data Service to the Finance and Operations app.
     3. Repeat the previous two steps to add another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
-        ![Adding another client ID record](media/another-client-id-record.png)
 
     When you've finished, follow these steps to refresh the list of entities:
 
     1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
     2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entities list**.
 
-    **Related health check result:**
-
-    *The Common Data Service can connect to the Finance and Operations app*
-
+    **Related health check result:**<br>
+    *The Common Data Service can connect to the Finance and Operations app*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App id 33976c19-1db5-4c02-810e-c243db79efde exists<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 33976c19-1db5-4c02-810e-c243db79efde exists<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
 4. Grant a Finance and Operations app access so that it can connect to Common Data Service.
@@ -118,42 +110,33 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
         ![Assigning the System Administrator role](media/manage-user-roles.png)
 
-    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Teams**.
-    8. Select the root business unit/organization, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select the **System Administrator** check box to assign the required system admin rights.
-
-        ![Assigning the System Administrator role](media/assign-system-admin-role.png)
+    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
+    8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each entity integrated through dual-write. 
+    
+      For instructions on how to create a Security Role, see [Create or configure a custom security role](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
+      
+      > [!NOTE]
+      > The root business unit’s default team will become the default owner for all records integrated through dual-write.
+      > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
+      > This means that at the very least, **users from that business unit will have read access to all the records that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
 
     9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
         ![Assigning the application ID](media/assign-application-id.png)
 
-    **Related health check result:**
-
-    *The Finance and Operations app can connect to the Common Data Service*
-
+    **Related health check result:**<br>
+    *The Finance and Operations app can connect to the Common Data Service*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
 5. Provide app consent in the tenant.
-
-    Make sure that you provide the required app consent.
-
-    1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.
-
-        [https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent](https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent)
-
-    2. Select **Accept**.
-
-        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
-
-    
-    **Related health check result:**
-
-    *Apps in tenant*
-
+   For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
+        
+    **Related health check result:**<br>
+    *Apps in tenant*<br>
     *The required dual-write applications need to be installed in the tenant.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 33976c19-1db5-4c02-810e-c243db79efde<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b*
 
 6. Make sure that the dual-write plug-ins are enabled.
@@ -171,10 +154,8 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
     > [!NOTE]
     > If the dual-write plug-in assemblies can't be found, import the latest version of the dual-write core solution.
 
-    **Related health check result:**
-
-    *The dual-write registration and runtime plugins are enabled*
-
+    **Related health check result:**<br>
+    *The dual-write registration and runtime plugins are enabled*<br>
     *To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled*
 
 7. Install the **Dual-write application orchestration solution** maps solution.
@@ -201,6 +182,28 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
+    > [!NOTE]
+    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and additional steps. 
+
+**For dual-write core solution lower than version 1.0.16.0 only**
+
+1. In step Step 3b above, create a new client ID record: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
+2. Add app consent in the tenant:
+
+    1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.
+
+        [https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent](https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent)
+
+    2. Select **Accept**.
+
+        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
+
+    
+    **Related health check result:**<br>
+    *Apps in tenant*<br>
+    *The required dual-write applications need to be installed in the tenant.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 33976c19-1db5-4c02-810e-c243db79efde<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b*
 
 ## Next steps
 

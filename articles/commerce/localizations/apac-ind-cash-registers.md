@@ -149,7 +149,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 1. Sign in to the POS.
 2. Enter the items, and then select **Enter**.
 
-    ![POS customer order](media/apac-ind-gst-pos-customer-order.png)
+    ![POS customer order screen with "Actions" selected](media/apac-ind-gst-pos-customer-order.png)
 
 3. Validate the GST calculations. Consider the rate that is defined in the tax setup.
 
@@ -167,7 +167,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 7. Select the store and the pick-up date.
 8. Select **OK**.
 
-    ![POS customer order](./media/apac-ind-gst-pos-customer-order2.png)
+    ![POS customer order screen with "Orders" selected](./media/apac-ind-gst-pos-customer-order2.png)
 
     > [!NOTE]
     > In this example, the state of the store location is Delhi, and the state of the customer address is also Delhi. Because the state is the same, intrastate GST is calculated.
@@ -179,7 +179,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
+    ![Scenario 1 first validation receipt example](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Headquarters:
 
@@ -187,7 +187,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the sales order.
     3. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
 
-    ![Tax document](media/apac-ind-gst-tax-document.png)
+    ![Tax document page](media/apac-ind-gst-tax-document.png)
 
 12. Recall and process the customer order:
 
@@ -202,7 +202,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
+    ![Scenario 1 second validation receipt example](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -221,7 +221,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     5. Select **Tax document**.
     6. Verify that the receipt number is updated as the transaction ID.
 
-        ![Tax document](media/apac-ind-gst-tax-document2.png)
+        ![Tax document page with "Transaction ID" field selected](media/apac-ind-gst-tax-document2.png)
 
 ### Scenario 2: Sell taxable goods to a consumer
 
@@ -307,7 +307,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
+    ![Scenario 3 receipt example](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the sales invoice in Headquarters:
 
@@ -392,7 +392,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 6. Select **Exact**.
 7. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-5.png)
+    ![Scenario 4 receipt example](media/apac-ind-gst-receipt-5.png)
 
 8. Validate the sales invoice in Headquarters:
 
