@@ -83,16 +83,16 @@ For more information about how to pause updates to configured sandbox and produc
 
 For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
-## Cancelled updates
-A scheduled update could be cancelled due to various reasons.  Here are some of the common reasons that could cause a scheduled update to be cancelled by Microsoft – 
-- An error was found during update preparation. The update preparation starts approximately 4 hours before the update to ensure the environment is in healthy state. If the environment was in failed state or maintenance mode, the scheduled update will be cancelled before it starts.   
-- An error was found while updating the environment. If there're issues occurred during the update, the scheduled update will be cancelled and the environment is rolled back to the previous state. 
-- The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be cancelled before it starts. 
-- The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be cancelled before it starts.
-- You’ve enrolled the [First release program](https://experience.dynamics.com).  The First Relase program has different release cadence thus the previously scheduled updates will be cancelled. 
+## Canceled updates
+A scheduled update could be canceled for various reasons. Here are some of the common reasons that could cause a scheduled update to be canceled by Microsoft. 
+- An error was found during update preparation. The update preparation starts approximately 4 hours before the update to ensure that the environment is in a healthy state. If the environment was in a failed state or maintenance mode, the scheduled update will be canceled before it starts.    
+- An error was found while updating the environment. If there were issues during the update, the scheduled update will be canceled and the environment is rolled back to the previous state.  
+- The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be canceled before it starts. 
+- The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be canceled before it starts.
+- You’re enrolled in the [First release program](https://experience.dynamics.com).  The First Relase program has different release cadence so the previously scheduled updates will be canceled. 
 
-You can find the cancelled updates via the **View recent cancelled updates** in the update settings, it will show cancelled updates, if any, within the last 2 scheduled updates.
+You can find the canceled updates via the **View recent canceled updates** in the update settings, it will show all canceled updates, if any, within the last 2 scheduled updates.
 
-![View recent cancelled updates](./media/ViewRecentCancelledUpdates.png)
+![View recent canceled updates](./media/ViewRecentCancelledUpdates.png)
 
-![Cancelled updates](./media/CancelledUpdates.png)
+![Canceled updates](./media/CancelledUpdates.png)
