@@ -245,9 +245,11 @@ Specifically do the following to hide these functions from the user interface fo
 3.	Click on Action menu items reference. 
 4.	Click on TransactionReversal_Cust action menu item. 
 5.	Select Deny for Read, Update, Create, Delete.
+![Security configuration](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ITA-bug-457000/articles/finance/localizations/media/Security%20configuration.png)
 
 6.	On Unpublished objects tab, click on the link Publish all.
- 
+![Unpublished objects](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ITA-bug-457000/articles/finance/localizations/media/Unpublished%20objects.png)
+
 7.	Do the same steps for the privilege Reverse vendor transactions.
 
 
