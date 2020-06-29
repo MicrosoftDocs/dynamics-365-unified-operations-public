@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cash position inquiry
-description: This topic provides information about how to determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
+title: Trial balance with transactional detail report
+description: This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 author: v-kiarnd
 manager: AnnBe
 ms.date: 10/24/2019
@@ -28,20 +28,20 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Trial balance with transactional detail
+# Trial balance with transactional detail report
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.
+This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 
-Use the **Trial balance with transactional detail** report to display the details about each transaction for ledger accounts. The report information includes the following items: 
+You can use the **Trial balance with transactional detail** report to show the details of each transaction for ledger accounts. The report includes the following information: 
 
 - Opening balances
 - Debits and credits 
 - The resulting balances for a date range of 31 days or less
 
-For transactions, the report information includes the following items: 
+For transactions, the report includes the following information: 
 
 - Transaction date
 - Voucher number
@@ -51,171 +51,161 @@ For transactions, the report information includes the following items:
 - Ledger dimension name
 - Transaction description
 - Debits or credits
-- A running balance for the year-to-date based on the current fiscal year
+- A running balance for the year to date, based on the current fiscal year
 
-You can use this trial balance to identify errors for account balances. All accounts that have debit balances should equal all accounts that have credit balances. The report includes information from the general journal accounting entries.
+You can use the trial balance to identify errors for account balances. All accounts that have debit balances should equal all accounts that have credit balances. The report includes information from the general journal accounting entries.
 
-The data can run by the following items:
+The data can run by any of the following items:
 
 - Posted transactions
-- Pending transactions (which includes all transactions that are not posted), or 
+- Pending transactions (These transactions include all transactions that aren't posted.) 
 - All transactions 
 
-If the transaction includes the financial dimensions, the report displays that information under a ledger account. If dimensions aren’t included with transactions, information for financial dimensions will be grouped at the top of the page. 
-Currently, the report is exported directly to excel. 
+If the transactions include financial dimensions, the report shows that information under a ledger account. Otherwise, information for financial dimensions is grouped at the top of the page. 
+
+Currently, the report is exported directly to Microsoft Excel. 
 
 ## Transaction information on the report
-Based on the type of transaction, such as an Advanced ledger entry (ALE) or purchase order, additional information appears on the report.
 
-<table  border="1" cellspacing="0" cellpadding="0" > 
+Depending on the type of transaction, such as an advanced ledger entry (ALE) or purchase order, the following additional information appears on the report.
+
+<table> 
+<thead>
+<tr>
+<th>Transaction type</th>
+<th>Additional document information</th>
+<th>Additional description information</th>
+</tr>
+</thead>
 <tbody>
 <tr>
- <td  valign="top" ><p>Transaction type</p></td>
- <td  valign="top" ><p>Additional document information</p></td>
- <td  valign="top" ><p>Additional description information</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>· Advanced ledger entry (ALE) voucher</p>
-
-<p>· Allocation rule</p>
-
-<p>· General journal transfer</p>
-
-<p>· Journal</p></td>
- <td  valign="top" ><p>ALE number OR General journal number</p></td>
- <td  valign="top" ><p>Line item description</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>No data</p></td>
- <td  valign="top" ><p>ALE or general journal header description</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>· Invoice voucher</p>
-
-<p>· Credit note voucher</p></td>
- <td  valign="top" ><p>Invoice number</p></td>
- <td  valign="top" ><p>Vendor number – Vendor name</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Invoice date</p></td>
- <td  valign="top" ><p>Line item description</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>No data</p></td>
- <td  valign="top" ><p>PO number and/or PA number</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>AP payment voucher</p></td>
- <td  valign="top" ><p>Check number OR EFT number</p></td>
- <td  valign="top" ><p>Vendor number – Vendor name for the 'pay to' or invoice account</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Check date OR EFT date OR Settlement date</p></td>
- <td  valign="top" ><p>Vendor number – Vendor name for the original order account</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>· Free text credit note</p>
-
-<p>· Free text invoice voucher</p></td>
- <td  valign="top" ><p>Free text invoice number</p></td>
- <td  valign="top" ><p>Customer number – Customer name</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Billing code</p></td>
- <td  valign="top" ><p>Free text invoice line item description</p>
-
-<p>(<strong>Free text invoices</strong> form, <strong>Invoice lines</strong> FastTab, <strong>Description</strong> field)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>AR payment voucher</p></td>
- <td  valign="top" ><p>Journal batch number</p>
-
-<p>(<strong>Payment journal</strong> form, <strong>Overview</strong> tab, <strong>Journal batch number</strong> field)</p></td>
- <td  valign="top" ><p>Customer number – customer name</p>
-
-<p>(<strong>Journal voucher</strong> form, <strong>Overview</strong> tab; <strong>Account</strong> and <strong>Account name</strong> fields)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Payment reference</p></td>
- <td  valign="top" ><p>Line description</p>
-
-<p>(<strong>Journal voucher</strong> form, <strong>Overview</strong> tab, <strong>Description</strong> field)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>Budget register entries</p></td>
- <td  valign="top" ><p>Budget register entry number</p></td>
- <td  valign="top" ><p>Budget register entry description</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Budget code</p></td>
- <td  valign="top" ><p>Reason code – Budget register entry header description</p>
-
-<p>(<strong>Budget register entry</strong> form, <strong>Budget entry</strong> form, <strong>Budget account entry details</strong> FastTab, <strong>Comment</strong> field)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>· Purchase order confirmation</p>
-
-<p>· Purchase order confirmation voucher</p></td>
- <td  valign="top" ><p>Purchase order number</p></td>
- <td  valign="top" ><p>Line item description</p>
-
-<p>(<strong>Purchase order</strong> form, <strong>Line details</strong> FastTab, <strong>Text</strong> field)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Purchase order line number</p></td>
- <td  valign="top" ><p>Procurement category</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>Purchase requisition voucher</p></td>
- <td  valign="top" ><p>Purchase requisition number</p></td>
- <td  valign="top" ><p>Purchase requisition name</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Purchase requisition line number</p></td>
- <td  valign="top" ><p>Purchase requisition line description</p>
-
-<p>(<strong>Purchase requisition</strong> form, <strong>Purchase requisition lines</strong> FastTab, <strong>Product name</strong> field)</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p>· Project invoice voucher</p>
-
-<p>· Project invoice</p></td>
- <td  valign="top" ><p>Project invoice number</p></td>
- <td  valign="top" ><p>Invoice account – Account name</p></td>
- </tr>
-
- <tr>
- <td  valign="top" ><p> </p></td>
- <td  valign="top" ><p>Funding source</p></td>
- <td  valign="top" ><p>Project ID – Project name</p></td>
- </tr>
-
- </tbody>
+<td>
+<ul>
+<li>ALE voucher</li>
+<li>Allocation rule</li>
+<li>General journal transfer</li>
+<li>Journal</li>
+</ul>
+</td>
+<td>ALE number or general journal number</td>
+<td>Line item description</td>
+</tr>
+<tr>
+<td></td>
+<td>No data</td>
+<td>ALE or general journal header description</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Invoice voucher</li>
+<li>Credit note voucher</li>
+</ul>
+</td>
+<td>Invoice number</td>
+<td>Vendor number – Vendor name</td>
+</tr>
+<tr>
+<td></td>
+<td>Invoice date</td>
+<td>Line item description</td>
+</tr>
+<tr>
+<td></td>
+<td>No data</td>
+<td>Purchase order number and/or PA number</td>
+</tr>
+<tr>
+<td>Accounts payable (AP) payment voucher</td>
+<td>Check number or electronic funds transfer (EFT) number</td>
+<td>Vendor number – Vendor name for the "pay to" or invoice account</td>
+</tr>
+<tr>
+<td></td>
+<td>Check date, EFT date, or settlement date</td>
+<td>Vendor number – Vendor name for the original order account</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Free text credit note</li>
+<li>Free text invoice voucher</li>
+</ul>
+</td>
+<td>Free text invoice number</td>
+<td>Customer number – Customer name</td>
+</tr>
+<tr>
+<td></td>
+<td>Billing code</td>
+<td>Free text invoice line item description<br>
+(<strong>Description</strong> field on the <strong>Invoice lines</strong> FastTab of the <strong>Free text invoices</strong> page)</td>
+</tr>
+<tr>
+<td>Accounts receivable (AR) payment voucher</td>
+<td>Journal batch number<br>
+(<strong>Journal batch number</strong> field on the <strong>Overview</strong> tab of the <strong>Payment journal</strong> page)</td>
+<td>Customer number – Customer name<br>
+(<strong>Account</strong> and <strong>Account name</strong> fields on the <strong>Overview</strong> tab of the <strong>Journal voucher</strong> page)</td>
+</tr>
+<tr>
+<td></td>
+<td>Payment reference</td>
+<td>Line description<br>
+(<strong>Description</strong> field on the <strong>Overview</strong> tab of the <strong>Journal voucher</strong> page)</td>
+</tr>
+<tr>
+<td>Budget register entries</td>
+<td>Budget register entry number</td>
+<td>Budget register entry description</td>
+</tr>
+<tr>
+<td></td>
+<td>Budget code</td>
+<td>Reason code – Budget register entry header description<br>
+(<strong>Comment</strong> field on the <strong>Budget account entry details</strong> FastTab on the <strong>Budget entry</strong> page of the <strong>Budget register entry</strong> page)</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Purchase order confirmation</li>
+<li>Purchase order confirmation voucher</li>
+</ul>
+</td>
+<td>Purchase order number</td>
+<td>Line item description<br>
+(<strong>Text</strong> field on the <strong>Line details</strong> FastTab of the <strong>Purchase order</strong> page)</td>
+</tr>
+<tr>
+<td></td>
+<td>Purchase order line number</td>
+<td>Procurement category</td>
+</tr>
+<tr>
+<td>Purchase requisition voucher</td>
+<td>Purchase requisition number</td>
+<td>Purchase requisition name</td>
+</tr>
+<tr>
+<td></td>
+<td>Purchase requisition line number</td>
+<td>Purchase requisition line description<br>
+(<strong>Product name</strong> field on the <strong>Purchase requisition lines</strong> FastTab of the <strong>Purchase requisition</strong> page)</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Project invoice voucher</li>
+<li>Project invoice</li>
+</ul>
+</td>
+<td>Project invoice number</td>
+<td>Invoice account – Account name</td>
+</tr>
+<tr>
+<td></td>
+<td>Funding source</td>
+<td>Project ID – Project name</td>
+</tr>
+</tbody>
 </table>
