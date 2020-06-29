@@ -125,8 +125,8 @@ Every location in the warehouse needs to have a location profile associated with
 
     - **Name:** *Put to BULK Location profile*
     - **Fixed location usage:** *Fixed and non-fixed locations*
-    - **Allow negative inventory:** *No* (blank)
-    - **Batch enabled:** *No* (blank)
+    - **Allow negative inventory:** *Clear this check box (=No)*
+    - **Batch enabled:** *Clear this check box (=No)*
     - **Strategy:** *None*
 
 1. While the new line is still selected, select **Edit query** above the grid.
@@ -142,7 +142,7 @@ Every location in the warehouse needs to have a location profile associated with
 1. On the **Location directives** page, on the Action Pane, select **Save**.
 
 > [!NOTE]
-> If you're using the *Consolidate* location directive strategy, the setup of *Allow product dimension mixing* will be overridden, and items will be put to the same location even if this behavior isn't allowed by the setup.
+> On the **Location Directive Actions** FastTab **Strategy** field, if you use the *Consolidate* location strategy, the setup of the **Allowed product dimension mixing** FastTab on the **Location profiles** will be overridden, and items will be put to the same location even if this behavior isn't allowed by the setup.
 
 ### Create a mobile device menu item
 
@@ -173,7 +173,7 @@ Every location in the warehouse needs to have a location profile associated with
 
 ## Scenario
 
-This demo scenario shows how two different product variants can be put to the same location when the location profile doesn't allow for mixed items but *Allow product dimension mixing* is enabled. In this case, you will use the variant *Size* as the criterion.
+This demo scenario shows how two different product variants can be put to the same location when the location profile doesn't allow for mixed items, but the *Location product dimension mixing* feature is enabled. In this case, you will use the **Size** variant as the criterion.
 
 Before you begin, make sure that there are empty locations in warehouse *24* that use the *BULK* location profile.
 
@@ -209,35 +209,35 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 1.Select **Save**.
 
-### Receive purchase order lines in the warehousing app 
+### Receive purchase order lines in the warehousing app
 
 1. Sign in to the warehousing app as a user who is enabled for warehouse *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select the **PONUM** field, and then enter the purchase order number.
-1. Confirm your entry by selecting the button at the bottom of the page.
+1. Confirm your entry by selecting the confirm button ( ✔ ) at the bottom of the page.
 1. Enter the line number from the purchase order that is being received. Select the **LINENUM** field, and then use the number pad to enter *1*.
 1. Confirm your entry.
 1. Enter the quantity to receive. Select the plus sign (**+**) button two times to increase the value in the **Qty** field to *2*.
-1. Register your entry by selecting the button at the bottom of the page, and then confirm your entry by selecting the button again.
+1. Register your entry by selecting the button ( ✔ ) at the bottom of the page, and then confirm your entry by selecting the button ( ✔ ) again.
 1. View the information on the **Purchase orders: Put** page. This page shows the work that has been created for the put-away (Work 1).
 
     The location where the received item will be put away, the license plate, the item, the size, and the quantity of the **PO Line receiving** task that you just completed are shown.
 
 1. Confirm the put-away work.
-1. Repeat the previous steps for the purchase order line 2. However, in step 8, specify a quantity of *1*.
+1. Repeat the steps 4 through 11 for the purchase order line 2. However, in step 8, specify a quantity of *1*.
 
     New put-away work (Work 2) is created for the same location as Work 1.
 
-1. Repeat the previous steps again for purchase order line 2. In step 8, specify the remaining quantity of *1*.
+1. Repeat the steps 4 through 11 again for purchase order line 2. In step 8, specify the remaining quantity of *1*.
 
-    New put-away work (Work 3) is created for the same location as Work 1 and Work 2. This behavior occurs because the *Consolidate* location directive strategy is used, and the *Allow product dimension mixing* setup allows the *Size* to be mixed on a location.
+    New put-away work (Work 3) is created for the same location as Work 1 and Work 2. This behavior occurs because the *Consolidate* location directive strategy is used, and the **Allowed product dimension mixing** FastTab on the *Bulk* **Location profiles** setup allows the **Size** variant to be mixed on a location.
 
-1. Repeat the previous steps for purchase order line 3. In step 8, specify a quantity of *1* for item number *A0001*.
+1. Repeat the steps 4 through 11 for purchase order line 3. In step 8, specify a quantity of *1* for item number *A0001*.
 
     New put-away work (Work 4) is created for a different location than the location that is used for purchase order lines 1 and 2. This behavior occurs because the location profile doesn't allow for mixed products, but it does allow for mixed dimensions of the same product master.
 
 1. Select the Menu button at the top of the page (sometimes referred to as the hamburger or the hamburger button), and then select **Cancel** to exit **PO Line receiving**.
 
 > [!TIP]
-> You can repeat this scenario, but this time, disable *Size* under *Allow product dimension mixing*, so that none of the product dimensions can be mixed. In this case, when you receive the purchase order, each product variant will be put to a new location.
+> You can repeat this scenario, but this time, set **Size** - *No* under the **Allow product dimension mixing** FastTab on the *BULK* **Location profiles**, so that none of the product dimensions can be mixed. In this case, when you receive the purchase order, each product variant will be put to a new location.
