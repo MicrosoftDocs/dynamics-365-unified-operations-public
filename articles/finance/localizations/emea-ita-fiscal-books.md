@@ -237,5 +237,17 @@ When the setup is completed, the sales tax book sections appear on the **Number 
 
 Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
 
+## Additional information
+Due to fiscal requirements of sequential documents numbering and their proper reflection in the sales tax books, users in Italy should not have access to the functions Reverse customer transaction (All customers page, click Transactions, click Reverse) and Reverse vendor transaction (All vendors page, click Transactions, click Reverse). These functions must be hidden using the functionality of Privileges (find more details in Role based security privileges) 
+Specifically do the following to hide these functions from the user interface for all security roles:
+1.	Go to System administration > Security > Security configuration.
+2.	On Privileges tab, select privilege Reverse customer transactions.
+3.	Click on Action menu items reference. 
+4.	Click on TransactionReversal_Cust action menu item. 
+5.	Select Deny for Read, Update, Create, Delete.
+
+6.	On Unpublished objects tab, click on the link Publish all.
+ 
+7.	Do the same steps for the privilege Reverse vendor transactions.
 
 
