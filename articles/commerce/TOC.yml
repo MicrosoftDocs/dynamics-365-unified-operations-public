@@ -2000,6 +2000,8 @@
             href: e-commerce-extensibility/create-theme.md
           - name: Configure theme settings
             href: e-commerce-extensibility/configure-theme-settings.md
+          - name: Configure theme style presets
+            href: e-commerce-extensibility/theme-style-presets.md
           - name: Extend a theme to add module extensions
             href: e-commerce-extensibility/theme-module-extensions.md
           - name: Extend a theme from a base theme
