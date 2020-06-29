@@ -56,7 +56,7 @@ A checkout module shows an order summary and provides the functionality for plac
 | Checkout heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Heading for the Checkout module |
 | Order summary heading | Heading | Heading for the order summary section of the module|
 | Cart line items heading| Heading| Heading for the cart line items shown in the checkout module|
-| Show shipping charges on line item| True or False| If True, shows the shipping charges that are applicable for line items on the cart line. If its Header charge with no proration, the shipping charge will be applied at the header level and not line level|
+| Show shipping charges on line item| True or False| If True, shows the shipping charges that are applicable for line items on the cart line. If its Header charge with no proration, the shipping charge will be applied at the header level and not line level. This feature was added in 10.0.13|
 |Disable guided checkout flow| True or False| |
 
 
@@ -93,9 +93,12 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Checkout terms and conditions** - This module can be added to the Checkout module to the Terms and conditions slot. It allows a checkbox and rich text to display the terms and conditions and to recieve the customer input. THe checkbox is optional and configurable. The information is only captured by the module and can be used as a check before the Place order is triggered. However, the information is not persisted in the Order information.
 
+
+    ![Example of checkout terms and conditions](./media/ecommerce-checkout-terms.PNG)
+
 ## Commerce Scale Unit interaction
 
-Most of the checkout information, such as the shipping address and shipping method, is stored in the cart and processed as part of the order. The only exception is the credit card information. This information is processed directly by using the Adyen payment connector. The payment is authorized but isn't charged.
+Most of the checkout information, such as the shipping address and shipping method, is stored in the cart and processed as part of the order. The only exception is the credit card information. This information is processed directly by using the Adyen payment connector. The payment is authorized but isn't charged till the order is fullfilled.
 
 ## Add a checkout module to a page and set the required properties
 
@@ -110,6 +113,7 @@ To add a checkout module to a new page and set the required properties, follow t
 1. In the **Add Module** dialog box, select the **Shipping address**, **Delivery options**, **Checkout section container**, and **Contact information** modules, and then select **OK**.
 1. In the **Checkout section container** module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Gift card**, **Loyalty**, and **Payment** modules, and then select **OK**. In this way, you make sure that all the payment methods appear together in a section.
+1. To the **Terms and conditions slot**, add the "Checkout terms and conditions" module if needed. Configure the terms and condition text
 1. Select **Save**, and then select **Preview** to preview the fragment. Some modules that don't have a cart context might not be rendered in the preview.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
