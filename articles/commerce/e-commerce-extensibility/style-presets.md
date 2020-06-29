@@ -162,19 +162,30 @@ The following example shows a global.json file that sets various localized style
                     },
                     "global": {
                         "brandPrimaryColor": {
-                              "friendlyName": {
-                                  "value": "Primary brand color",
-                                  "_value.comment": ""
-                              },
-                              "description": {
-                                  "value": "The primary brand color used across the site.",
-                                  "_value.comment": ""
-                              },
-                              "group": {
-                                  "value": "Colors",
-                                  "_value.comment": ""
-                              }
-                          }
+                            "friendlyName": {
+                                "value": "Primary brand color",
+                                "_value.comment": ""
+                            },
+                            "description": {
+                                "value": "The primary brand color used across the site.",
+                                "_value.comment": ""
+                            },
+                            "group": {
+                                "value": "Colors",
+                                "_value.comment": ""
+                            }
+                        },
+                        "HeaderFontSize": {
+                            "friendlyName": "Header text size",
+                            "description": "This is the text default size for header elements",
+                            "type": "string",
+                            "enum":{
+                                "5px": "Small",
+                                "10px": "Medium",
+                                "15px": "Large"
+                            },
+                            "group": "Typography"
+                        }
                     },
                     "modules"
                         "header": {
