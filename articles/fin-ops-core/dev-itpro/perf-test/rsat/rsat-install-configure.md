@@ -86,7 +86,7 @@ These settings are required.
 #### Azure DevOps
 Configure your connection to the Azure DevOps project and test plan.
 
-+ **Azure DevOps Url** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
++ **Azure DevOps URL** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
 
     > [!NOTE]
     > If you're using Azure DevOps Server, add **/DefaultCollection** to the end of your Azure DevOps URL.
@@ -106,7 +106,7 @@ Configure your connection to the test environment.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname matches the hostname.
 
-+ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
++ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
 
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
 
@@ -141,7 +141,7 @@ Select the **Optional** tab to configure optional settings.
 
     > [!IMPORTANT]
     > The **Cloud provider** setting is required, and the selected value must be **China** if your Finance and Operations apps were deployed in 21Vianet.
-+ **Configure Retail POS** - Check this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce. Once enabled, a tab named **Retail POS** appears on the **Settings** dialog. For more information on RSAT with cloud POS, go to [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
++ **Configure Retail POS** - Select this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce. Once enabled, a tab named **Retail POS** appears on the **Settings** dialog menu. For more information about RSAT with cloud POS, see [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
 
 ### Configure the test environment to trust the connection
 
