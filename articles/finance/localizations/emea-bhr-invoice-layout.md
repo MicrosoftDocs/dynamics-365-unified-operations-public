@@ -61,8 +61,11 @@ For more information how to enable features, see [Feature management overview](.
 ## <a name="ERConfigs"></a>Import of Electronic Reporting configurations
 In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
  - Sales invoice (Excel) (BH);
- - Free text invoice (Excel) (BH).
- 
+ - Free text invoice (Excel) (BH);
+ - Project invoice (Excel) (BH);
+ - Project contract line items (Excel) (BH);
+ - Project manage invoice (Excel) (BH).
+
 > [!NOTE]
 > The formats above are based on **Invoice model** and use **Invoice model mapping**. These additional configurations will be automatically imported.
 
@@ -73,7 +76,10 @@ By default invoices are being generated as Excel files. To enable their conversi
 
 In **Electronic reporting** workspace > **Electronic reporting destinations**, create destinations for the related formats:
  - Sales invoice (Excel) (BH);
- - Free text invoice (Excel) (BH).
+ - Free text invoice (Excel) (BH);
+ - Project invoice (Excel) (BH);
+ - Project contract line items (Excel) (BH);
+ - Project manage invoice (Excel) (BH).
  
 For each format, mark **Convert to PDF** check-box, select **Portrait** page orientation and enable printing to **Screen**.
 
@@ -86,6 +92,11 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 - **Free text invoice** select **Free text invoice (Excel) (BH)**
 
 ![Print management configuration](media/emea-bhr-print_management.jpg)
+
+In **Project management and accounting** > **Setup** > **Forms** > **Forms setup**, in **General** tab, select **Print management** and define the references to the imported formats for:
+-  **Project invoice without billing rules** select **Project invoice (Excel) (BH)**;
+ - **Project invoice with billing rules** select **Project contract line items (Excel) (BH)**;
+ - **User defined project invoice** select **Project manage invoice (Excel) (BH)**.
 
 ### Sales tax specification
 In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** tab, choose **Registration and company currency** value for **Sales tax specification** field.
