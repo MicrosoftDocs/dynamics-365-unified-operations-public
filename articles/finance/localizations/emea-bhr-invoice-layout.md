@@ -103,10 +103,14 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 
 ![Sales tax specification](media/emea-bhr-tax-spec.jpg)
 
+In **Project management and accounting** > **Setup** > **Forms** > **Forms setup**, in **General** tab, choose **Registration and company currency** value for **Sales tax specification** field.
+
 ### Packing slip specification
 In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoice** tab, mark **Print packing slip specifications** check-box.
 
 ![Packing slip specification](media/emea-bhr-packing-spec.jpg)
+
+In **Project management and accounting** > **Setup** > **Forms** > **Forms setup**, in **Invoice** tab, mark **Print packing slip specifications** check-box.
 
 ### Credit invoicing activation
 In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, in **Updates** tab, **Invoice** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports** option.
