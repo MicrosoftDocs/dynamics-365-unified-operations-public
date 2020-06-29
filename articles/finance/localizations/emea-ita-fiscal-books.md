@@ -238,17 +238,23 @@ When the setup is completed, the sales tax book sections appear on the **Number 
 Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
 
 ## Additional information
-Due to the fiscal requirements of sequential document numbering and their proper reflection in the sales tax books, users in Italy should not have access to the functions, Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) and Reverse vendor transaction (**All vendors** page, select **Transactions** > **Reverse**). These functions must be hidden using the functionality of Privileges. For more information, see [Role based security privileges](../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#privileges) 
-Complete the following to hide these functions from the user interface for all security roles:
+Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
+
+ - Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) 
+ - Reverse vendor transaction (**All vendors** page, select **Transactions** > **Reverse**). 
+ 
+These functions must be hidden using the functionality of Privileges. For more information, see [Role based security privileges](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#privileges) 
+
+To hide these functions from the user interface for all security roles, follow these steps:
 
 1.	Go to **System administration** > **Security** > **Security configuration**.
-2.	On **Privileges** tab, select **Reverse customer transactions**.
+2.	On the **Privileges** tab, select **Reverse customer transactions**.
 3.	Select **Action menu items** > **TransactionReversal_Cust**. 
 4.	Select **Deny** for **Read**, **Update**, **Create**, **Delete**.
 
 ![Security configuration](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ITA-bug-457000/articles/finance/localizations/media/Security%20configuration.png)
 
-5.	On **Unpublished objects** tab, select **Publish all**.
+5.	On the **Unpublished objects** tab, select **Publish all**.
 
 ![Unpublished objects](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ITA-bug-457000/articles/finance/localizations/media/Unpublished%20objects.png)
 
