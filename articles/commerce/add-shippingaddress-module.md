@@ -59,7 +59,7 @@ Although this module doesn't provide address validation, address validation can 
 
 ## Add a Shipping address module to a checkout page and set the required properties
 
-A Shipping address module can only be added to a Checkout container. See [Checkout module](add-checkout-module.md] for details on configuring the module to a page.
+A Shipping address module can only be added to a Checkout container. See [Checkout module](add-checkout-module.md) for details on configuring the module to a page.
 
 ## Additional resources
 
