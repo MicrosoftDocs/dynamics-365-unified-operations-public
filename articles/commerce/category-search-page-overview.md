@@ -109,7 +109,7 @@ The following components are essential for a search results page:
 
 [Product details pages overview](quick-tour-pdp.md)
 
-[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+[Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
-[Overview of account management pages](quick-tour-account-management.md)
+[Account management pages overview](quick-tour-account-management.md)
 
