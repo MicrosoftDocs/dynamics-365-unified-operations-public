@@ -56,15 +56,15 @@ The following prerequisites must be met before the functionality can be used:
 ### Set up the unique certification values
 
 1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Set up unique certification values**
-2. Specify the nessesary values for the **Unique certification** feature.
+2. Specify the values for the **Unique certification** feature.
 
-The **Set up unique certification values** page allows to configure the values available for several fields:
+The **Set up unique certification values** page allows you to configure the values available for several fields:
 
 - **record B**: Exceptional events
 - **record D**: Exceptional events, special categories, and unified counties
 - **record H**: Reason and code
 
-The format of the telematics model of unique certification has been updated according to the new specifications in the regulatory update of Unique Certification, valid from March 7th, 2018:
+The format of the telematics model of unique certification has been updated according to the new specifications in the regulatory update of Unique Certification, valid from March 7, 2018:
 
 - **record A**: CUR18 supply code
 - **record B**: New values for exceptional events
@@ -85,7 +85,7 @@ The source data used for import can be presented as a Microsoft Excel file that 
 
 ### Set up a revenue typology for the Unique certification
 
-You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section of the **Vendors** page.
+You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section on the **Vendors** page.
 
 ### Set up a format for the Unique certification
 
