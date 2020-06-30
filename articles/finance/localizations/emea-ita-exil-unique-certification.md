@@ -5,7 +5,7 @@ title: Unique certification
 description: This topic provides information about the Unique certification for companies in Italy.
 author: ilkond
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,32 +53,30 @@ The following prerequisites must be met before the functionality can be used:
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
-### Set up 
+### Set up the unique certification values
 
-You must set up **Setup Unique Certification values**.
+1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Set up unique certification values**
+2. Specify the nessesary values for the **Unique certification** feature.
 
-1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Setup Unique certification values**
-2. Specify nessesary values for Unique Certification feature.
+The **Set up unique certification values** page allows to configure the values available for several fields:
 
-**Setup Unique Certification values** page allows to configure the values available in the Unique Certification form for several fields:
+- **record B**: Exceptional events
+- **record D**: Exceptional events, special categories, and unified counties
+- **record H**: Reason and code
 
--	**record B**: exceptional events
--	**record D**: exceptional events, special categories, unified counties
--	**record H**: reason, code.
+The format of the telematics model of unique certification has been updated according to the new specifications in the regulatory update of Unique Certification, valid from March 7th, 2018:
 
-Format of the telematics model of Unique Certification has been updated according to new specifications (regulatory update of Unique Certification valid from March 7th, 2018):
+- **record A**: CUR18 supply code
+- **record B**: New values for exceptional events
+- **record D**: New values for exceptional events and special categories and the introduction of unified counties fields
+- **record H**: New values for reason and code fields
+- **record Z**: Count of L records to 0
 
--	**record A**: CUR18 supply code
--	**record B**: new values for exceptional events
--	**record D**: new values for exceptional events and special categories, introduction of unified counties fields
--	**record H**: new values for reason and code fields
--	**record Z**: count of L records to 0
+Values that are specified on **Setup Unique Certification values** page, and marked with **Yes** in the **Active** column, will be available in the related lookup fields on the **Unique certification** page. Use this page for future regulatory upgrades of the unique certification to add or delete values.
 
-Values, specified on **Setup Unique Certification values** page and marked with **Yes** in the **Active** column, will be available in the related lookup fields in the **Unique Certification** page. Use this page for future regulatory upgrades of Unique Certification to add new or delete unnecessary values.
+You can import the initial set of values for **Setup Unique Certification values** by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md). You can download the initial set of values for the **Setup Unique Certification values** from the **IT SetupUniqueCertificationValues** file in the **Data package** asset data type section of the **Shared asset library** in the [LCS portal](https://lcs.dynamics.com/v2) and then import it in to the Data management framework.
 
-Initial set of values for **Setup Unique Certification values** you can import by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md). You can download initial set of values for **Setup Unique Certification values** as **IT SetupUniqueCertificationValues** file from **Data package** asset data type section of **Shared asset library** of [LCS portal](https://lcs.dynamics.com/v2) to your computer and import it in Data management framework.
-
-The source data that is used to import **Setup Unique Certification values** can be presented as a Microsoft Excel file that has the following column names:
+The source data used for import can be presented as a Microsoft Excel file that has the following column names:
 
 - FIELD
 - VALUE
