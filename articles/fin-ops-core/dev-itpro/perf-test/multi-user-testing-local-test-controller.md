@@ -227,7 +227,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 2. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
 3. Add the thumbprint of the **authcert.pfx** certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority and save the change.
 
-    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
+    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-22.png)
 
 4. Repeat steps 1 through 3 on each AOS computer.
 5. Restart all AOS instances.
@@ -244,7 +244,7 @@ If your test environment doesn't allow for Remote Desktop access, then you must 
 
 Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
 
-    [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
+    [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
 
     > [!NOTE]
     > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to do an IISRESET.
