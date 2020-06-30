@@ -44,8 +44,8 @@ The following sections list the features that are included in LCS releases.
 ## June 2020 - wave 1
 | Area | Feature |Status |
 |------|---------|-------|
-| Business process modeler (BPM) | [Download task recording (AXTR) ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/download-task-recordings-business-process-modeler) | General availability | 
-| Service updates | [View canceled updates ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md#canceled-updates) | General availability |  
+| Business process modeler (BPM) | [Download task recording (AXTR)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/download-task-recordings-business-process-modeler) | General availability | 
+| Service updates | [View canceled updates](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md#canceled-updates) | General availability |  
 
 ## May 2020 - wave 2
 
