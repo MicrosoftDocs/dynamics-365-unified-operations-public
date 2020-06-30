@@ -63,3 +63,7 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 ## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### Re-activate POS devices
+
+If you use Point of Sale devices, after you import a database, you must [active POS devices](../../../commerce/dev-itpro/retail-device-activation.md) again. Previously activated devices in the destination environment, will no longer function. 
