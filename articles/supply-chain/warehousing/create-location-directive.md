@@ -134,6 +134,7 @@ To create a location directive, follow these steps:
 | Option | Description |
 |---|---|
 | **Strategy** | Determines the strategy used by the location directive. |
+|  | **None**: No strategy will be used. |
 |  | **Match packing quantity**: checks whether a pick location has the specified packing quantity.  |
 |  | **Consolidate**: consolidates items in a particular location when similar items are already available. |
 |  | **FEFO batch reservation**: used when inventory is located using a batch expiration date and is allocated for batch reservation. The FEFO batch reservation strategy is also used when inventory is located using a batch best before date in addition to the expiration date. |
