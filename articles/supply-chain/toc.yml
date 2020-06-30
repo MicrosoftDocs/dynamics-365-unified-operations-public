@@ -2693,15 +2693,15 @@
           href: warehousing/material-replenishment-withdrawal-kanban.md
         - name: Set up a min-max replenishment process
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
-      - name: Install and configure the warehousing app
+      - name: Install and configure the warehouse app
         items:
-        - name: Install and connect the warehousing app
+        - name: Install and connect the warehouse app
           href: warehousing/install-configure-warehousing-app.md
-        - name: Configure field names in warehousing app
+        - name: Configure field names in warehouse app
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
-        - name: License plate receiving with the warehousing app
+        - name: License plate receiving with the warehouse app
           href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md
