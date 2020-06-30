@@ -5,7 +5,7 @@ title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
