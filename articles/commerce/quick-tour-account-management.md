@@ -95,8 +95,6 @@ For more information about account management modules and how to author them, se
 
 [Home page overview](quick-tour-home-page.md)
 
-[Default category landing page and search results page overview](category-search-page-overview.md)
-
 [Product details pages overview](quick-tour-pdp.md)
 
 [Cart and checkout pages overview](quick-tour-cart-checkout.md)
