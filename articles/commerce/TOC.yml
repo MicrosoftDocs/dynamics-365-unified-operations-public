@@ -814,13 +814,13 @@
           href: enable-store-detection.md
       - name: Sample site overview
         items:
-        - name: Overview of the home page
+        - name: Home page overview
           href: quick-tour-home-page.md
-        - name: Overview of product details pages
+        - name: Product details pages overview
           href: quick-tour-pdp.md
-        - name: Overview of cart and checkout pages
+        - name: Cart and checkout pages overview
           href: quick-tour-cart-checkout.md
-        - name: Overview of of account management pages
+        - name: Account management pages overview
           href: quick-tour-account-management.md
       - name: Manage your site settings
         items:
