@@ -816,8 +816,6 @@
         items:
         - name: Overview of the home page
           href: quick-tour-home-page.md
-        - name: Overview of default category landing page and search results page
-          href: category-search-page-overview.md 
         - name: Overview of product details pages
           href: quick-tour-pdp.md
         - name: Overview of cart and checkout pages
@@ -998,7 +996,7 @@
             href: add-breadcrumb.md
       - name: Search
         items:
-        - name: Default category landing page and search results page
+        - name: Default category landing page and search results page overview
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
