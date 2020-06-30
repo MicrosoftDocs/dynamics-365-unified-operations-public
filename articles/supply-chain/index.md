@@ -107,9 +107,10 @@ The following tech conference recordings discuss supply chain management functio
 There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
 
 ## White papers
+
 - [Lean manufacturing: Capable to promise and kanban job scheduling](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
 - [BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
-- [Cost accounting hands-on labs](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/) (Requires a CustomerSource account)
+<!-- - [Cost accounting hands-on labs](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/) (Requires a CustomerSource account) -->
 
 ## eLearning courses
 
