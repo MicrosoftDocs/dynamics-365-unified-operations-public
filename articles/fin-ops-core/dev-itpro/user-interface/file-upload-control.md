@@ -75,7 +75,7 @@ The file upload control accepts the file and upload strategy in the client, and 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## Scanning uploaded files for viruses and malicious code
-Before you upload a file into the system, you might want to scan it for viruses or malicious code. To this end, an extension point is available for customers to integrate the file scanning software of their choice into the file upload process. Similar extension points are also available for scanning attachments; for more information about these extension points, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
+Before you upload a file into the system, you might want to scan it for viruses or malicious code. To this end, starting in 10.0.12, an extension point is available for customers to integrate the file scanning software of their choice into the file upload process. Similar extension points are also available for scanning attachments; for more information about these extension points, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
 
 > [!IMPORTANT]
 > Finance and Operations apps do not scan files for viruses and malicious code out-of-the-box, nor do we recommend particular software for file scanning. Instead, customers are responsible for choosing their file scanning software and adding the appropriate code to the delegate handlers to scan a file with that software or service.   
