@@ -48,8 +48,12 @@ The following image shows an example of a cart page on the Fabrikam site.
 ![Example of a cart module](./media/cart2.PNG)
 
 ## Cart module properties and slots
+|Property|Value|Descirption|
+|----------------|--------|-------------|
+|Heading| Heading text and tag| It can be to set a heading such as "Shopping bag" or  "Items in your cart" etc|
+|Show Cart out of stock errors| True or False| If True, shows stock related errors on the cart page. Its recommended to set this to True if Inventory checks are applied on the site|
+|Show shipping charge as line item| True or False| If shipping charge is available for a cart line item shows the charge. This is not applicable in Fabrikam theme as the user selects shipping only in checkout flow |
 
-The cart module has a **Heading** property that can be set to values such as **Shopping bag** and **Items in your cart**. 
 
 ## Modules that can be used in a cart module
 
