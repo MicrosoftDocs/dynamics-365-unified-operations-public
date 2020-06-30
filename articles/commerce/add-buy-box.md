@@ -66,7 +66,8 @@ Themes can be used to remove or change the order of buy box product properties a
 
 ## Modules that can be used in a buy box module
 
-- **Media gallery** – This module is used to showcase images of a product on a product details page. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). The media gallery module can be added to the **Media** slot in the buy box module. It currently supports only images. 
+- **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module see [Media Gallery module](add-mediagallery-module.md).
+
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
 
 ## Buy box module settings
@@ -116,6 +117,8 @@ To add a buy box module to a new page and set the required properties, follow th
 [Starter kit overview](starter-kit-overview.md)
 
 [Store selector module](store-selector.md)
+
+[Media gallery module](add-mediagallery-module.md)
 
 [Container module](add-container-module.md)
 
