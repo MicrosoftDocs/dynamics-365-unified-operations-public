@@ -78,7 +78,6 @@ After you set the update environment and update cadence, Microsoft generates an 
 > [!IMPORTANT]
 > After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the 14-day period between the date when the email notification about the update of the sandbox environment is sent and the date when the production environment is updated.
 
-
 For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
 For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
@@ -89,7 +88,7 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 - An error was found while updating the environment. If there were issues during the update, the scheduled update will be canceled and the environment is rolled back to the previous state.  
 - The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be canceled before it starts. 
 - The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be canceled before it starts.
-- You’re enrolled in the [First release program](https://experience.dynamics.com).  The First Relase program has different release cadence so the previously scheduled updates will be canceled. 
+- You’re enrolled in the [First Release program](https://experience.dynamics.com).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
 
-You can find the canceled updates via the **View recent canceled updates** in the update settings, it will show all canceled updates, if any, within the last 2 scheduled updates.
+You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
