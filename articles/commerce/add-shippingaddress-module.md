@@ -53,8 +53,9 @@ Although this module doesn't provide address validation, address validation can 
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Save as primary address | True or False | This setting allows the address to be saved as primary address for a signed-in user during checkout flow |
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
+| Save as primary address | True or False | This setting allows the address to be saved as primary address for a signed-in user during checkout flow |
+| Show address type | True or False | This setting shows an Address type field, E.g. Home, Business, Other etc. Its an optional configuration, if not specified the address will be automatically saved as Type=Other|
 
 
 ## Add a Shipping address module to a checkout page and set the required properties
