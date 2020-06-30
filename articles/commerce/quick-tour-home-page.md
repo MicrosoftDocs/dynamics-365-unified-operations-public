@@ -72,8 +72,6 @@ The main section of the home page can highlight products, categories, or promoti
 
 ## Additional resources
 
-[Default category landing page and search results page overview](category-search-page-overview.md)
-
 [Product details pages overview](quick-tour-pdp.md)
 
 [Cart and checkout pages overview](quick-tour-cart-checkout.md)
