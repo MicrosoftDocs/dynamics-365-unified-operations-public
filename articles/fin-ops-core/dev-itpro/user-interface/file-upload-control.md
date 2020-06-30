@@ -75,10 +75,10 @@ The file upload control accepts the file and upload strategy in the client, and 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## Scanning uploaded files for viruses and malicious code
-Before you upload a file into the system, you might want to scan it for viruses or malicious code. Although Finance and Operations apps don't provide this capability out of the box, an extension point has been added in version 10.0.12, so that customers can now integrate file scanning software of their choice into the file upload process. Similar extension points have been added so that attachments can be scanned. For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
+Before you upload a file into the system, you might want to scan it for viruses or malicious code. To this end, an extension point is available for customers to integrate the file scanning software of their choice into the file upload process. Similar extension points are also available for scanning attachments; for more information about these extension points, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
 
 > [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Finance and Operations apps do not scan files for viruses and malicious code out-of-the-box, nor do we recommend particular software for file scanning. Instead, customers are responsible for choosing their file scanning software and adding the appropriate code to the delegate handlers to scan a file with that software or service.   
 
 In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate. This delegate applies to any file upload scenario where the **Upload strategy class** has been specialized. The upload process will fail if the scanning service determines that the file is malicious.    
 
