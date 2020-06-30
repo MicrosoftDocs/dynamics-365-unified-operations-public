@@ -105,7 +105,7 @@ The following components are essential for a search results page:
 
 ## Additional resources
 
-[Cloud-powered search overview][(cloud-powered-search-overview.md)
+[Cloud-powered search overview](cloud-powered-search-overview.md)
 
 [Home page overview](quick-tour-home-page.md)
 
