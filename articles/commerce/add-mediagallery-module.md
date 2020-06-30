@@ -57,11 +57,11 @@ The following image shows an example of a buy box on a product details page that
 | Property name  | Values | Description |
 |----------------|--------|-------------|
 | Image Source   | Page context, Product id| Default value is Page context. If page context is selected, it expects the page to provide the product id information. If Product id is selected, the Product id for which images should be rendered should be provided as input |
-| Product id    | id  | Applicable only if Image Source = Product id |
+| Product id    | Id  | Applicable only if Image Source = Product id |
 | Image zoom    | Inline, Container | Allows the user to zoom the images in the media gallery. Images can be zoomed inline or the zoomed images can be viewed in a separate container side by side with the images |
-| Zoom scale| decimal number| It provides the scale factor for zomming the images. E.g. 2.5 means the images will be zoomed 2.5x times|
-| Full screen   | Images can be viewed in full screen. Within the full screen, images can be also be further zoomed if zoom is turned on |
-| Images | image | In addtion to images rendered from a product, images can be also curated to this module. These images will be appended to the product images if available|
+| Zoom scale| Decimal number| It provides the scale factor for zomming the images. E.g. 2.5 means the images will be zoomed 2.5x times|
+| Full screen   | True or False|Images can be viewed in full screen. Within the full screen, images can be also be further zoomed if zoom is turned on |
+| Images | Images | In addtion to images rendered from a product, images can be also curated to this module. These images will be appended to the product images if available|
 |Thumbnail orientation| Vertical, Horizontal| Shows images in a vertical or horizontal strip|
 
 
