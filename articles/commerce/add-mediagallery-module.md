@@ -38,7 +38,9 @@ This topic covers Media gallery module and describes how to add them to site pag
 
 ## Overview
 
-The Media gallery module is to display media (images) in a gallery view. It provides additional capabilties that allow images to be zoomed, viewed in full screen etc. Images are expected to be available in CMS to be rendered on the gallery. 
+The Media gallery module is to display media (images) in a gallery view. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). In addition it provides capabilties that allow images to be zoomed, viewed in full screen etc. Images are expected to be available in CMS to be rendered on the gallery. 
+
+Currently the module supports only images.
 
 In the default mode, Media gallery uses the product id available in page context (i.e.product details page) to render the corresponding product images. In HQ, the Media file path must be defined for Products. The images should then be uploaded to Site Builder's [Digital Asset Management](dam-upload-images) per the file path that was defined for the products. This includes images for products and variants if applicable.
 
