@@ -214,6 +214,8 @@ Location directives are rules that help identify pick and put locations for inve
 
 Configure a menu item for mobile devices to perform the Quality Check function.
 
+#### Purchase Put Away
+
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. In the list, select the **Purchase Put-away** menu item.
 1. Select **Edit** in the Action Pane.
@@ -222,6 +224,38 @@ Configure a menu item for mobile devices to perform the Quality Check function.
         - Enter the name of the [work class](#work-class) that you created earlier for quality-control work.
     - **Work order type** - *Quality in quality check*
 
+1. Select **Save** in the Action Pane.
+
+#### PO Line Receiving
+
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Select **New** in the Action Pane.
+1. In the header enter the following:
+    - **Menu item name** - *PO line receiving*
+    - **Title** - *PO line receiving*
+    - **Mode** - *Work*
+    - **Use existing work** - *No*
+
+1. In the **General** FastTab, enter the following:
+    - **Work creation process** - *Purchase order line receiving and put away*
+    - **Generate license plate** - *Yes*
+    - **Work template** - *51 PO Receipt*
+    - Accept the default values for the remaining settings.
+
+1. Select **Save** in the Action Pane.
+
+#### Add the item to a mobile device menu
+
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
+
+    - Add the **PO line receiving** menu item that you just created to a *Mobile device menu*.
+
+1. Select the **Inbound** menu.
+1. Select **Edit** from the Action Pane.
+1. Scroll in the **AVAILABLE MENUS AND MENU ITEMS** list until you find *PO line receiving*.
+1. Select **PO line receiving**, the arrow ( **→** ) pointing to the **MENU STRUCTURE** list will be enabled.
+1. Select the ***arrow*** button ( **→** ) to move the *PO line receiving* menu item into the *Inbound* menu structure.
+1. Select *PO line receiving* from the **MENU STRUCTURE** list then select the *UP* ( **↑** ) or *DOWN* ( **↓** ) arrows to move the menu item into the desired position on the mobile device menu.
 1. Select **Save** in the Action Pane.
 
 <a name="example-scenario"></a>
