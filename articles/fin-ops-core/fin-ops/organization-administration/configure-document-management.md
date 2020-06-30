@@ -159,7 +159,7 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
-When you work with attachments, you might want to scan the files for viruses and malicious code. To this end, extension points are available so that customers can integrate with the file scanning software of their choice when working with attachments. A similar extension point has been added for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
+When you work with attachments, you might want to scan the files for viruses and malicious code. To this end, extension points are available so that customers can integrate with the file scanning software of their choice when working with attachments. A similar extension point is available for file upload; for more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
 
 > [!IMPORTANT]
 > Finance and Operations apps do not scan files for viruses and malicious code out-of-the-box, nor do we recommend particular software for file scanning. Instead, customers are responsible for choosing their file scanning software and adding the appropriate code to the delegate handlers to scan a file with that software or service.   
