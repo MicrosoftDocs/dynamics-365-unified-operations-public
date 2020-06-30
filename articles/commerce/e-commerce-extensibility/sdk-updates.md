@@ -52,10 +52,10 @@ The specific entries can be found in the “dependencies” section as shown bel
     "@msdyn365-commerce/bootloader": "^1.0.0",
 …
 ```
-* @msdyn365-commerce-modules/starter-pack - this entery represents the store starter kit, which includes the set of starter modules and data actions.  The above example is set to only pull down the specific version.
-* @msdyn365-commerce-modules/fabrikam-design-kit - this entry represents the Fabrikam design kit, which includes the Fabrikam theme.  The Fabrikam theme defines specific CSS and module view overrides for the store starter kit set of modules. The above example is set to only pull down the specific version.
-* @msdyn365-commerce/retail-proxy - this entry represents the retail proxy which is used to access the Commerce scale unit set of APIs. The above example is set to only pull down the specific version.
-* @msdyn365-commerce/bootloader - this entry represents the SDK, note the "^" symbol used, which will ensure the **yarn** command always pulls down the latest released version.
+* **@msdyn365-commerce-modules/starter-pack** - this entry represents the store starter kit, which includes the set of starter modules and data actions.  The above example is set to only pull down the specific version.
+* **@msdyn365-commerce-modules/fabrikam-design-kit** - this entry represents the Fabrikam design kit, which includes the Fabrikam theme.  The Fabrikam theme defines specific CSS and module view overrides for the store starter kit set of modules. The above example is set to only pull down the specific version.
+* **@msdyn365-commerce/retail-proxy** - this entry represents the retail proxy which is used to access the Commerce scale unit set of APIs. The above example is set to only pull down the specific version.
+* **@msdyn365-commerce/bootloader** - this entry represents the SDK, note the "^" symbol used, which will ensure the **yarn** command always pulls down the latest released version.
 
 The version numbers used above are X.y.z, where X is the major version, y is the minor version and z is patch version.  
 
@@ -70,6 +70,7 @@ SDK Dependencies are backward-compatible and can be pulled down at any time. The
     "@msdyn365-commerce/bootloader": "^1.0.0",
     …
 ```
+
 
 The below table shows the Store Starter Kit version mapping to the Commerce scale unit.  The same version number below for SSK should be used for the retail proxy and Fabrikam design kit.
 
@@ -98,9 +99,9 @@ To determine the latest released versions of the dependency packages follow the 
 ## Determine the versions deployed on an e-Commerce site.
 To determine the deployed version of the SDK and the store starter kit, navigate to the deployed e-Commerce site, right click on the browser and select "View page source", and search for the below strings and you'll see the version number embedded in the page source: 
 
-* commerceSDKVersion - SDK version
-* commerceSSKVersion - SSK version 
-* retailServerProxyVersion - Retail proxy version
+* **commerceSDKVersion** - SDK version
+* **commerceSSKVersion** - SSK version 
+* **retailServerProxyVersion** - Retail proxy version
 
 
 ## Additional resources
