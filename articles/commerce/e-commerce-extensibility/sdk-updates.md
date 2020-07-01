@@ -36,11 +36,11 @@ This topic covers regular updates that will be released as part of the Microsoft
 
 ## Overview
 
-Regular updates will be released as part of the Dynamics 365 Commerce online SDK and store starter kit. These updates might include new features or product fixes. Product release notes will be provided for all changes.
+Regular updates will be released as part of the Dynamics 365 Commerce online SDK and store starter kit (SSK). These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
 ## Dependency versions in package.json file
 
-The SDK packages.json file included in the SDK root directory controls which versions of the SDK, store starter kit (SSK), Fabrikam theme kit, and Retail Server proxy to download. The specific entries can be found in the "dependencies" section as shown in the example below. Note that the version numbers may differ depending on when the SDK was acquired.
+The SDK packages.json file included in the SDK root directory controls which versions of the SDK, SSK, Fabrikam theme kit, and Retail Server proxy to download. The specific entries can be found in the "dependencies" section as shown in the example below. Note that the version numbers may differ depending on when the SDK was acquired.
 
 ```json
 …
@@ -96,7 +96,7 @@ To determine the latest released versions of the dependency packages, follow the
 
 ## Determine the versions deployed on an e-Commerce site
 
-To determine the deployed versions of the SDK and the SSK used on an e-Commerce site, right-click on a site page, select **View page source**, and then search for the strings below to find the version number.
+To determine the deployed versions of the SDK, SSK, and Retail Server proxy used on an e-Commerce site, right-click on a site page, select **View page source**, and then search for the strings below to find the version number.
 
 - **commerceSDKVersion** - SDK version.
 - **commerceSSKVersion** - SSK version.
