@@ -5,7 +5,7 @@ title: Planned cross docking
 description: This topic describes advanced planned cross-docking, where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/10/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,11 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.9
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: Release 10.0.7
 ---
 
-# Planned cross docking
+# Planned cross-docking
 
 [!include [banner](../includes/banner.md)]
 
