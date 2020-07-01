@@ -66,4 +66,4 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 
 ### Re-activate POS devices
 
-If you use Point of Sale devices, after you import a database, you must [activate POS devices](../../../commerce/dev-itpro/retail-device-activation.md) again. Previously activated devices in the destination environment, will no longer function. 
+If you use point of sale (POS) devices, after you import a database you must activate POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).
