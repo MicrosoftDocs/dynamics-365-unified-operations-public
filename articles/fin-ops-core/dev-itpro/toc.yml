@@ -1437,7 +1437,7 @@
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
       - name: Process automation
-        href: /sysadmin/process-automation.md
+        href: sysadmin/process-automation.md
       - name: Security
         items:
         - name: Role-based security
