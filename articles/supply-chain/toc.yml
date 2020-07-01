@@ -2633,6 +2633,8 @@
             href: warehousing/material-replenishment-withdrawal-kanban.md
           - name: Set up a min-max replenishment process
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
+          - name: Zone threshold replenishment
+            href: warehousing/zone-threshold-replenishment.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
