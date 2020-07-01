@@ -204,6 +204,10 @@ The **Validate** gesture lets you insert a step that validates the value of the 
 -   **Current value validation** will capture the targeted control's value at the time of recording and use it to generate an assertion in the test code. In the list of validation options on the shortcut menu, **Current value** is always first.
 -   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options on the shortcut menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
 
+Additional options are available in 10.0.13 / Platform update 37 and later including
+-   **Enabled**/**Disabled** will validate that the targeted control's state is enabled or disabled and use it to generate an assertion in the test code.
+-   **Read-only**/**Editable** will validate the targeted contro's state is read-only or editable and use it to generate an assertion in the test code.  
+
 ### Add info step
 
 The **Add info step** gesture lets you insert a step and supply your own text for it. This feature is useful primarily for creating task guides. An **informational step** (or **info step** for short) is a task guide step where the instruction text for the step is user-specified. Info steps are useful for describing actions that are a part of the scenario but must occur outside the client. For example, a scenario might require the user to search for item inventory or check an email for information.
