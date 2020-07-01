@@ -2637,10 +2637,10 @@
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
-          - name: Release to warehouse rule
-            href: warehousing/release-to-warehouse-rule.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
+          - name: Release to warehouse rule
+            href: warehousing/release-to-warehouse-rule.md
           - name: Wave template grouping
             href: warehousing/wave-template-grouping.md
         - name: Shipment consolidation policies
