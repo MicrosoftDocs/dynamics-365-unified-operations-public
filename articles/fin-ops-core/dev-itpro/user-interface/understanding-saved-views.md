@@ -73,13 +73,13 @@ While most forms will work well with saved views, there are some areas that may 
 
 -    X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following: 
      -    Modifications of the query post super() of executeQuery() or post super() of run() can cause the query aspect of a view to be ignored.  
-     -    Form changes post super() of run() can result in some user personalizations not applying correctly.  
+     -    Form changes post super() of run() can result in some user personalizations not applying correctly on the default view.  
 
 -    Extra work may be required to ensure the values of custom filters always align to the current view or query.  
-     -    To make sure custom filters work properly with saved views, additional work needs to be done by the platform and there will likely be uptake by forms with custom filters. More information will be provided in the future.  
+     -    To make sure custom filters work properly with saved views, additional work needs to be done by the platform and there will likely be uptake by forms with custom filters. More information will be provided in the future when the recommended approach has been finalized. 
 
 -    Looking forward, in the long-term, views are meant to replace modeled secondary list pages.  
-     -   Typically, secondary list pages, such as Customers on hold, are menu items that point at the same form but have a different query. Because menu items that pass in queries will override any query defined on the default view, these entry points can create confusion for users. Long-term, the current plan is to deprecate secondary list pages and move them to views.
+     -   Typically, secondary list pages, such as Customers on hold, are menu items that point at the same form but have a different query. Because menu items that pass in queries will override any query defined on the default view, these entry points can create confusion for users. Long-term, the current plan is to deprecate secondary list pages and move them to views; however, that effort has not been started yet. 
 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
@@ -87,8 +87,8 @@ While most forms will work well with saved views, there are some areas that may 
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, excluding the QuickFilter)If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
--  Views should keep track of the last Quick Filter column used, without having to explicitly save it to a view. 
+-  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, (excluding the Quick Filter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.   
+-  Views should keep track of the last Quick Filter column used without having to explicitly save it to a view. 
 
 ### Fixed in 10.0.13
 
