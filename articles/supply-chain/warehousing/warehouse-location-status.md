@@ -59,7 +59,7 @@ Before you can use the *Warehouse location status* feature, it must be turned on
 
 ### Prepare the sample data that is required for the example scenario
 
-Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the Dynamics 365 for Finance and Operations - Warehousing app or the browser-based emulator. The steps that are provided here use the warehousing app. The steps for the browser-based emulator are similar.
+Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the warehouse app or the browser-based emulator. The steps that are provided here use the warehouse app. The steps for the browser-based emulator are similar.
 
 #### Use the USMF legal entity
 
