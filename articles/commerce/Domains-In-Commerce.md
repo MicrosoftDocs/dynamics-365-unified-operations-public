@@ -62,7 +62,7 @@ When first selecting a site in site builder to work, the ‘Setup your Site’ d
 
 Below is an example of the initial setup dialogue of a site named ‘default’ in site builder:
 
-**pic: DomainDeepDive_SetupyoursiteScreen.png**
+![Set up your Site screen](./media/Domains_SetupyoursiteScreen.png)
 
 **Select a domain** allows you to associate one of the **Supported Host Names** provided to this site in site builder.
 
@@ -87,11 +87,11 @@ If you had added a Path of ‘fabrikam’ during this same site’s setup instea
 ## Pages and URLs in Dynamics Commerce
 Once your site is set up with a Path, all URLs associated to pages in site builder will reference off the initial working URL for the site.
 
-**Pic: Domains_PageSetup.png**
+![Run user flow option in policy flow](./media/Domains_PageSetup.png)
 
 Creating a new URL will allow a URL path to be designated for the Page associated. This value appends to the site’s working URL to access the page (labeled as `./<URL path>` in the URL list menu.
 
-**Pic: Domains_URLsInSiteBuilder.png**
+![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder.png)
 
 ## Domains in Dynamics Commerce
 The **Supported host names** values are available to be associated as a **domain** when setting up a site. When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder when working in site builder. This domain is a reference only within the Commerce environment, live traffic for that domain is not yet forwarded to dynamics commerce.
