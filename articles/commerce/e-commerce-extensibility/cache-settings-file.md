@@ -5,7 +5,7 @@ title: Data action cache settings
 description: This topic covers cache settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,15 +32,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers cache settings in Microsoft Dynamics 365 Commerce.
+This topic covers date action cache settings in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The SDK \\src\\settings\\cache.settings.json file holds cache settings for entities returned from data actions calls. These entities, once cached would be returned from cache for all data action requests with the same cache key as long as their TTR(time to refresh) TTL(time to live) are valid. The cache key for core data actions provided in the SDK are implicitly set within the data action itself, see below on how to determine the cache key from the SDK. For custom data actions, the cache key can be defined in the action input by overriding getCacheKey() method.
+The software development kit (SDK) \\src\\settings\\cache.settings.json file holds cache settings for entities returned from data actions calls. Once cached, these entities will be returned from cache for all data action requests with the same cache key as long as their time to refresh (TTR) and time to live (TTL) values are valid. The cache key for core data actions provided in the SDK is implicitly set within the data action itself (see [Determine data action cache keys](#Determine-data-action-cache-keys) on how to determine the cache key from the SDK). For custom data actions, the cache key can be defined in the action input by overriding the **getCacheKey()** method.
 
-The default TTR for all the entities is 60 seconds and TTL is 600 seconds.
+For all entities, the default TTR is 60 seconds and the default TTL is 600 seconds.
 
-The following example shows a JavaScript Object Notation (JSON) file that includes a section for the **time to refresh** and **time to live** settings.  Each section contains the data action cache key entity name followed by the time in seconds.
+The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains the data action cache key entity name followed by the time in seconds.
 
 ```json
 {
@@ -71,12 +71,13 @@ The following example shows a JavaScript Object Notation (JSON) file that includ
 }
 ```
 
-## Data action cache keys
-The data cache key for specific core data actions can be found by looking at the source code under the SDK "\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib" directory.
+## Determine data action cache keys
 
-In the below example, the **get-simple-products** data action code is found in the 'get-simple-products.js' file.  Examining the source code, the entity name **SimpleProduct** can be added to the cache settings file above.
+The data cache key for specific core data actions can be found by looking at the source code under the SDK \\node_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory.
 
-```
+In the following example, the "get-simple-products" data action code is found in the get-simple-products.js file. Examining the source code, the entity name **SimpleProduct** can be added to the cache settings file above.
+
+```JavaScript
 ...
 export class ProductInput {
     constructor(productId, apiSettings, channelId) {
