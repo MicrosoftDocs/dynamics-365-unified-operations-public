@@ -138,10 +138,19 @@ If the changes that you want to make to a published view only involve the publis
 2.	Select **Republish** from the view selector drop-down menu. If you are on an older version (10.0.12 / Platform update 36 or earlier), you will need to select **Publish** and then **Yes** to update the existing view.
 4.	Update the name, description, security roles, and legal entities for the view. 
 5.	Select **Publish**. 
-6.	[10.0.8/Platform update 32 or prior] If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
-7. [10.0.9/Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
+6.	[10.0.8 / Platform update 32 or prior] If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
+7. [10.0.9 / Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
 
 If the changes to the published view involve modifying the personalizations or filters associated with the view, follow these steps: 
+
+[10.0.13 / Platform update 13 or later] Make the view with needed changes directly. You should see an asterisk next to the view name
+1.	Load the published view that you want to modify. 
+2.	Modify the local draft with the needed changes.
+3. Select **Republish** from the view selector 
+4. Select Yes to indicate you want to published the view with its unsaved changes. 
+5.	Adjust any publish parameters and select **Publish**. 
+
+[10.0.12 / Platform update 12 or prior]
 1.	Load the published view that you want to modify. 
 2.	Save a copy of the published view to create a local draft of the published view. 
 3.	Modify the local draft with the needed changes.
@@ -150,31 +159,36 @@ If the changes to the published view involve modifying the personalizations or f
 ## Managing published views
 Like managing personal views, the **Manage my views** dialog box gives users with publish privileges basic maintenance capabilities over that page's published views (in addition to their own personal views). To open this page, select the view name to open the view selector drop-down menu, select **More**, and then select **Manage my views**.
 
-While all users see a **My views** tab showing their personal views, users with publish privileges also see a **Published** tab that shows all the published views for that page. Because there may be several users publishing views, it is important to be able to manage the full list of published views, regardless of whether you were the user who actually published the view.
+While all users see a **My views** tab showing their personal views, users with publish privileges also see an **Organization views** tab that shows all the published (and unpublished) views for that page. Because there may be several users publishing views, it is important to be able to manage the full list of published views, regardless of whether you were the user who actually published the view.
 
 For the list of all published views for the page, the following set of actions are available. 
 
--    **Publish** – Use the **Publish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
+-    **Republish** – Use the **Republish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
+-    **Publish** - Use the **Publish** action to publish a view that's currently unpublished. 
+-    **Unpublish** - Use the **Unpublish** action to make a view inactive. The view will still be available in the system, but users will not see it in the view selector until the view is published again.  
 -    **Save as personal** – Use the **Save as personal** action to create a personal draft copy of the published view. This capability can help you understand the contents of a view that wasn't published to you or that hasn't yet been published. You can also use it to edit and then republish a view. This capability is introduced in version 10.0.12.  
--    **Remove** – Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected.
+-    **Delete** – Use the **Delete** action to permanently delete a published or unpublished view. This action also removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected. Once deleted, the view cannot be recovered. 
 
 ## Managing views globally
 Although some management capabilities are surfaced on every page, as indicated in this topic, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
 
-- **Published views** – This section lists all views that have been published for your organization. From here, you can republish a view after you adjust the security roles or legal entities that the view targets. You can also export or delete one or more published views. In version 10.0.12 and later, you can use the **Save as personal** action to create a personal copy of the view, so that you can update the view or gain a better understanding of its contents. 
-- **Unpublished views** – This section lists all views that have been imported into your system but haven't yet been published. You can publish, export, or delete these views. The **Quick publish** action that was added in version 10.0.12 enables multiple views from this section to be published in one action, by using the existing security role and legal entity configurations. In version 10.0.12 and later, you can use the **Save as personal** action to create personal copies of these views, so that you can gain a better understand their contents.   
+- **Published views** – This section lists all views that have been published for your organization. From here, you can republish a view after you adjust the security roles or legal entities that the view targets. You can also export, delete, or unpublish views. In version 10.0.12 and later, you can use the **Save as personal** action to create a personal copy of the view, so that you can update the view or gain a better understanding of its contents. 
+- **Unpublished views** – This section lists all the organization views in your system that are not currently published. These most often come into the system by the import capability. You can publish, export, or delete these views. The **Quick publish** action that was added in version 10.0.12 enables multiple views from this section to be published in one action, by using the existing security role and legal entity configurations. In version 10.0.12 and later, you can use the **Save as personal** action to create personal copies of these views, so that you can gain a better understand their contents.   
 - **Personal views** – This section lists all views that have been created by users in the system. From here, you can publish a personal view to the organization, or copy one or more of these views to other users. You can also export or delete these views as required.
-- **Users** – Select a user to view a list of the pages that the user has visited. You can then adjust the user's ability to use personalization for specific pages, or for the whole system. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. Then, if the user previously dismissed any pop-up windows that introduced new features, those pop-up windows will appear again the next time that the user encounters those features.
-- **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
+- **User settings** – Select a user to view or adjust the user's ability to use personalization for the whole system, or for specific pages that user has visited. You can view and interact with that user's personalizations in the system. You can also delete all personalizations for that user or reset feature callouts for the user. If feature callouts are reset, any pop-up windows that introduced new features that were previously dismissed by the user will appear again the next time that the user encounters those features.
+- **System settings** – You can temporarily turn off personalization for all users in the system. In this case, no personalizations are applied for any user, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
-Users who have access to the **Personalization** page can also import personal or template views by using the **Import views** button on the Action Pane. In version 10.0.12 and later, a mechanism has been added for immediately publishing views when they are imported.  
+Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. In version 10.0.12 and later, a mechanism has been added for immediately publishing views when they are imported.  
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
 > [!NOTE]
 > The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
-**10.0.9 / Platform update 33 and later**
+**10.0.13 / Platform update 37 and later**
+The **Saved views** feature is no longer in preview and is available directly in Feature management in any environment.
+
+**10.0.9 / Platform update 33 through 10.0.12 / Platform update 36**
 The **Saved views** feature is available directly in Feature management in any environment. As for other preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and prior**
@@ -212,7 +226,7 @@ There are a few reasons why a filter may not appear to save with a view:
 ### What data will I see when I visit a page? 
 For pages with small view selectors (only personalizations can be saved to the view), you will see the same data as you always have when you visit the page. 
 
-For pages with large view selectors (personalizations and queries can be saved to the view), you will primarily see the data linked to the query associated with your default view. There are two main exceptions to this: 
+For pages with large view selectors (personalizations and queries can be saved to the view), you will typically see the data linked to the query associated with your default view. There are two main exceptions to this: 
      - If you navigate to a page from a tile, the tile query will execute regardless of the query associated with the default view. If you created that tile after views have been enabled, selecting a tile will open the page with the view associated with that tile.   
      - If you navigate to a page and that entry point includes a query, the original query will execute originally in place of the default view's query. You should be alerted when this occurs via an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.  
 
