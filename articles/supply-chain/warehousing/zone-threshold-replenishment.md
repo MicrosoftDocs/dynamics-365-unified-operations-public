@@ -38,7 +38,8 @@ The setup for this feature resembles the setup for location-based replenishment.
 Like location-based min/max replenishment, zone-based min/max replenishment is based the setup of a minimum inventory threshold that triggers the creation of replenishment work for selected items. This replenishment work will increase inventory up to the specified maximum threshold for the zone.
 
 > [!NOTE]
-> Currently zone replenishment processes for product variants is not supported.
+> Zone replenishment processes for product variants isn't supported in the current release.
+
 
 Unlike location-based min/max replenishment, zone-based min/max replenishment doesn't require fixed locations to evaluate whether locations should store a specific item. Therefore, zone-based replenishment lets you use min/max replenishment even if you don't have fixed locations for each item or item variant in the warehouse. When a quantity in the zone falls below the specified minimum threshold, replenishment work is created. Location directives will determine which specific location the inventory should be put into.
 
