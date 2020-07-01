@@ -55,7 +55,7 @@ There are two size variations to the view selector:
 
 -   **Large view selectors**: Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.  
  
--   **Small view selectors**: All other full-page forms (with the exception of workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the caption or record title is often the most important information at the top of the page. The smaller size of the view selector also reflects a lower expected frequency of view switching on these pages. 
+-   **Small view selectors**: All other full-screen pages (with the exception of workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the caption or record title is often the most important information at the top of the page. The smaller size of the view selector also reflects a lower expected frequency of view switching on these pages. 
  
 If you click on the view name, the view selector opens and shows the list of available views for this page.
 
