@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: <fill in>
+title: Commerce Experimentation
 description: <fill in>
 author:  sushma-rao 
 manager: AnnBe
@@ -28,3 +28,9 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
+
+
+# Run experiments on an e-commerce page
+
+> [!NOTE]
+> This compatiblity list is new as September 2018. The list will grow over time as devices are tested successfully and results are submitted to Microsoft.
