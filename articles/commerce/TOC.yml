@@ -791,9 +791,7 @@
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-Commerce tenant
-          href: deploy-ecommerce-site.md
-        - name: Set up an online store channel
-          href: online-stores.md            
+          href: deploy-ecommerce-site.md          
         - name: Create an e-Commerce site
           href: create-ecommerce-site.md
         - name: Associate an e-Commerce site with an online channel
