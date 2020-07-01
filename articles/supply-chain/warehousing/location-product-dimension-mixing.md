@@ -5,7 +5,7 @@ title: Location product dimension mixing
 description: This topic provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/16/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-16
-ms.dyn365.ops.version: Release 10.0.9
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: Release 10.0.7
 ---
 
 # Location product dimension mixing
+
+[!include [banner](../includes/banner.md)]
 
 Location product dimension mixing is location profile functionality that helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 

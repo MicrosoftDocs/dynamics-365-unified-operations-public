@@ -5,7 +5,7 @@ title: Warehouse location status
 description: This topic provides an overview of the Warehouse location status feature.
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/17/2019
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2019-12-31
-ms.dyn365.ops.version: 10.0.1
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: 10.0.7
 
 ---
 

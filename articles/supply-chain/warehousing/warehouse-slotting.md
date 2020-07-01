@@ -5,7 +5,7 @@ title: Warehouse slotting
 description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 author: mirzaab
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-03-05
-ms.dyn365.ops.version: Release 10.0.8
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: Release 10.0.9
 ---
 
 # Warehouse slotting
+
+[!include [banner](../includes/banner.md)]
 
 Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
 

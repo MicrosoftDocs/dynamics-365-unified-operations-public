@@ -2581,6 +2581,8 @@
             href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
           - name: Set up a work template for purchase orders
             href: warehousing/tasks/set-up-work-template-purchase-orders.md
+          - name: Location product dimension mixing
+            href: warehousing/location-product-dimension-mixing.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
@@ -2619,6 +2621,8 @@
             href: warehousing/system-directed-cluster-pick.md
           - name: Pick line grouping
             href: warehousing/pick-line-grouping.md 
+          - name: Warehouse slotting
+            href: warehousing/warehouse-slotting.md 
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2629,6 +2633,16 @@
             href: warehousing/material-replenishment-withdrawal-kanban.md
           - name: Set up a min-max replenishment process
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
+        - name: Load building and shipments
+          items:
+          - name: Confirm and transfer
+            href: warehousing/confirm-and-transfer.md
+          - name: Release to warehouse rule
+            href: warehousing/release-to-warehouse-rule.md
+          - name: Advanced load building during wave
+            href: warehousing/advanced-load-building-during-wave.md
+          - name: Wave template grouping
+            href: warehousing/wave-template-grouping.md
         - name: Shipment consolidation policies
           items:
           - name: Shipment consolidation policies
@@ -2667,6 +2681,8 @@
             href: production-control/cross-docking-opportunities.md
           - name: Auto-release shipment for cross-docking 
             href: warehousing/auto-release-shipment-for-cross-docking.md
+          - name: Planned cross-docking
+            href: warehousing/planned-cross-docking.md
         - name: Inventory counting
           items:
           - name: Reason codes for inventory counting
@@ -2691,6 +2707,12 @@
             href: inventory/inventory-statuses.md
           - name: Inventory tag counting
             href: inventory/inventory-tag-counting.md
+        - name: Warehouse work
+          items:
+          - name: Work line details
+            href: warehousing/work-line-details.md
+          - name: Location license plate positioning
+            href: warehousing/location-license-plate-positioning.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -2711,6 +2733,10 @@
             href: warehousing/tasks/create-location-profile.md
           - name: Configure locations in a WMS-enabled warehouse
             href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+          - name: Warehouse location status
+            href: warehousing/warehouse-location-status.md
+          - name: Additional location zones
+            href: warehousing/additional-location-zones.md
           - name: Schedule load utilization
             href: warehousing/schedule-load-utilization.md
           - name: Schedule workload capacity
