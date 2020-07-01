@@ -5,7 +5,7 @@ title: Release to warehouse rule
 description: This topic provides information about the Release to warehouse rule feature, which provides flexibility during release to the warehouse. It adds a configuration option that controls whether the system allows partially reserved order lines to be released.
 author: mirzaab
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Retail, Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: Release 10.0.8
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: Release 10.0.7
 ---
 
 # Release to warehouse rule
+
+[!include [banner](../includes/banner.md)]
 
 The *Release to warehouse rule* feature provides flexibility during release to the warehouse. It adds a configuration option for each warehouse. You can use this option to specify whether partially reserved order lines can be released for that warehouse. The feature works together with advanced cross-docking functionality in situations where part of an order line quantity is marked against a supply source, but the remaining part can be processed in the warehouse. Therefore, the line can be released so that warehouse processing of the available inventory quantity can continue.
 

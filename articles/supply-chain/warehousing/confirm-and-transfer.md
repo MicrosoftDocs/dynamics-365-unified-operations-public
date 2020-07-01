@@ -5,7 +5,7 @@ title: Confirm and transfer
 description: This topic explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
 author: mirzaab
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ---
 
 # Confirm and transfer
+
+[!include [banner](../includes/banner.md)]
 
 The *Confirm and transfer* feature lets users ship loads out of the warehouse before they complete all the work that is associated with those loads. When a shipment is received that includes load lines that weren't fully picked, the confirming user is prompted either to split the remaining quantities onto a new load or to cancel the incomplete quantities.
 

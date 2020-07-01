@@ -5,7 +5,7 @@ title: Work line details
 description: This topic provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: mirzaab
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Retail, Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ---
 
 # Work line details
+
+[!include [banner](../includes/banner.md)]
 
 The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides a complete overview of work that is being planned and executed in the warehouse. You can easily switch between viewing all work lines and viewing only open work lines. Details that are provided for each line include the work status, item number, location, work quantity, load ID, and shipment ID.
 
