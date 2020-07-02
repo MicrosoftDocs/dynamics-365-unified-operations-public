@@ -48,8 +48,6 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on the page model.
 1. Make the required changes to the variations in the WYSIWYG editor. 
     - You can also optionally designate a “control” by not making any changes to it.
-1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
-
 > [!NOTE]
 > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
-
+1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
