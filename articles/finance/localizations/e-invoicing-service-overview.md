@@ -2,7 +2,7 @@
 # required metadata
 
 title: E-Invoicing service overview
-description: This topic provides information about the e-Invoicing service in Dynamics 365 Finance and Dynamics 365 Supply chain management.
+description: This topic provides information about the e-Invoicing service in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 06/24/2020
@@ -35,26 +35,25 @@ ms.dyn365.ops.version: AX 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+The e-Invoicing service for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoice documents and configurable document exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at e-invoice processing in business-to-government scenarios, but it can be custom-configured for other purposes.
 
-The e-Invoicing service for Dynamics 365 Finance and Dynamics 365 Supply chain management is a hyper-scalable multi-tenant service that enables configurable electronic invoice document processing and configurable document exchange. The processing and integration rules are fully configurable, and the logic is executed outside of Finance and Supply chain management. The service is targeted mainly for e-invoice processing in business-to-government scenarios but can be custom-configured for other purposes.
+The e-Invoicing service can help you achieve the following goals:
 
-E-Invoicing service can help you achieve the following goals:
-
-- Fast and easy adoption to country / region specific requirements
-- Standardized e-Invoicing solution implementations
-- Enhanced document history traceability
+- Fast and easy adoption of country/region-specific requirements
+- Standardized implementations of an e-invoicing solution
+- Enhanced traceability of document history
 - Shorter implementation cycle
-- Reduced Total Cost of Ownership (TCO)
-- Easy-to-adjust configurations with no code changes
+- Reduced total cost of ownership (TCO)
+- Easily adjustable configurations that don't required code changes
 - Simplified configuration packaging
-- Built-in export, import and integration, easy extensibility in e-Invoice document processing
-- East to reuse the same export/ import/ integration configurations across companies
+- Built-in export, import, and integration, and easy extensibility in the processing of e-invoice documents
+- Easy reuse of the same export, import, and integration configurations across companies
 
-To use the e-Invoicing service, you must install the e-Invoicing service add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and follow setup procedure to enable integration into Finance or Supply chain management. For more information, see [Get started with e-Invoicing Service](e-invoicing-get-started.md).
+To use the e-Invoicing service, you must install the e-Invoicing service add-in from your project in Microsoft Dynamics Lifecycle Services (LCS). You must then follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the e-Invoicing service](e-invoicing-get-started.md).
 
 ## Availability
 
-Initially, the e-Invoicing service is available to selected customers through a preview program. Later the preview will open to a wider range of customers and will then become generally available. Functionality that addresses country-specific requirements might be limited at different phases of the release, so always check the most up-to-date documentation highlighting coverage and scope of supported country-specific solutions. Countries targeted for preview at this time are Brazil, Italy, and Mexico.
+Initially, the e-Invoicing service is available to selected customers through a preview program. Later, the preview will be opened to a wider range of customers. Finally, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions. The countries that are currently targeted for preview are Brazil, Italy, and Mexico.
 
 The e-Invoicing service add-in is deployed in the following Azure geographies:
 
@@ -62,58 +61,58 @@ The e-Invoicing service add-in is deployed in the following Azure geographies:
 - Europe
 
 > [!NOTE]
-> The e-Invoicing service does not support on-premises deployments.
+> The e-Invoicing service doesn't support on-premises deployments.
 
 ## Extended configurability
 
-The e-Invoicing service can be used in scenarios that require you to create and send an electronic document to the designated parties. It's specifically designed for executing configurable flow of processing actions based on received data. The service extends the available configurability options limited to document transformation available in Finance and Supply chain management, with the configurable integrations available in the service. In addition to that, all the electronic invoice functionalities previously available, such as Brazilian NF-e, Mexican CFDI or other Western European UBL \\ PEPPOL, will be using configurations for export, import, and to enable integrations with external web services.
+The e-Invoicing service can be used in scenarios where you must create and send an electronic document to the designated parties. It's specifically designed for running a configurable flow of processing actions, based on received data. The configurability options that are available in Finance and Supply Chain Management are limited to document transformation. The service extends these options by adding the configurable integrations that are available in it. In addition, all the electronic invoice functionalities that were previously available, such as Brazilian Nota fiscal eletrônica (NF-e), Mexican Comprobante Fiscal Digital por Internet (CFDI), or other Western European Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL) functionalities, will use configurations for export and import, and to enable integrations with external web services.
 
 ## Feature highlights
 
--  Out-of-the-box integration with Finance and Supply Chain management
--  Consistent user experience for e-invoice process configuration and monitoring for all countries
--  Faster, easier, and cheaper adoption of e-invoicing solutions in new countries
--  Configuration of the service through the Regulatory Configuration Service (RCS) and Globalization feature setup
--  Transformation of business data into multiple e-invoice formats (XML, JSON, txt, csv) using configurations defined in RCS:
+- Out-of-box integration with Finance and Supply Chain management
+- Consistent user experience for the configuration and monitoring of the e-invoice process for all countries or regions
+- Faster, easier, and less expensive adoption of e-invoicing solutions in new countries or regions
+- Configuration of the service through the Regulatory Configuration Service (RCS) and Globalization feature setup
+- Transformation of business data into multiple e-invoice formats (XML, JavaScript Object Notation \[JSON\], TXT, and comma-separated values \[CSV\]) by using configurations that are defined in RCS:
 
-    - Electronic reporting formats available for countries without enabled configurability for e-invoice transformation
+    - Electronic reporting formats that are available for countries or regions where configurability for e-invoice transformation isn't available
 
-- Configurable submission of e-invoices to external Web services including certification handling with digital signature:
+- Configurable submission of e-invoices to external web services, including certification handling through digital signatures:
 
-    - Built-in, easily extendible, and configurable integration with additional content planned for Brazil and Mexico
+    - Built-in, easily extendable, and configurable integration with additional content that is planned for Brazil and Mexico
 
-> [!NOTE]
-> Currently, a limited number of direct submissions are supported. For more information, check the availability section. Support will be extended in the future.
+    > [!NOTE]
+    > Currently, a limited number of direct submissions is supported. For more information, see the [Availability](#availability) section earlier in this topic. Support will be extended in the future.
 
-- Handling responses from web services, including configurable exception message handling
-- Support of electronic signatures (for example, using the XMLDSIG signing algorithm)
-- Batch processing e-invoice messages
+- Handling of responses from web services, including configurable exception message handling
+- Support for electronic signatures (for example, by using the XMLDSig signing algorithm)
+- Batch processing of e-invoice messages
 
 ## Architecture and data flow
 
-When the e-Invoicing service add-in is enabled from LCS, and the required setup is complete in all required applications, a secure connection to the e-invoicing service is established. The service is currently located in data centers in the United States and Europe. This means that the service location can be different from the related Finance or Supply chain management instance. After you complete the e-invoicing service setup and enable the integration, when an electronic invoice is sent, master data and transactional data related to a particular document is sent to the e-invoicing service.
+When the e-Invoicing service add-in is installed from LCS, and the required setup is completed in all required applications, a secure connection to the e-Invoicing service is established. The service is currently located in data centers in the United States and Europe. Therefore, the service location might differ from the location of the related Finance or Supply Chain Management instance. After you complete the setup of the e-Invoicing service and turn on the integration, whenever an electronic invoice is sent, master data and transactional data that are related to a specific document are sent to the e-Invoicing service.
 
 > [!NOTE]
-> If your electronic invoice or any other document contains personal data, verify that your use of this feature meets GDPR and other regulations for the transfer of personal data.
+> If your electronic invoice or any other document contains personal data, verify that your use of this feature meets the General Data Protection Regulation (GDPR) and other regulations that are related to the transfer of personal data.
 
-### High-level data flow description
+### High-level description of the data flow
 
 1. The client sends a canonical business document to the service.
-2. According to the context information received from the client, the service selects the applicable processing flow.
-3. The service then executes the processing actions, which may include transforming the business document into an electronic invoice, applying an electronic signature, and submitting to external web-service.
-4. All the received and processed documents are stored in the customer’s BLOB storage.
-5. All the tenant secrets and certificates used for processing are stored in the customer’s Azure Key Vault.
-6. The service provides on-demand information to the client about the processing status of for the sent business document.
-7. The client receives information about the completed processing execution and make all the log information as well as document created or received during flow processing available.
+2. Based on the context information that is received from the client, the service selects the applicable processing flow.
+3. The service runs the processing actions. These actions might include transforming the business document into an electronic invoice, applying an electronic signature, and submitting the document to an external web service.
+4. All the received and processed documents are stored in the customer's Azure Blob storage.
+5. All the tenant secrets and certificates that were used for processing are stored in the customer's Azure key vault.
+6. The service provides on-demand information to the client about the processing status of the business document that was sent.
+7. The client receives information about the completed processing execution and makes all the log information available. It also makes the document that was created or received during flow processing available.
 
-The following illustration shows how data flows to and from the e-invoicing service.
+The following illustration shows how data flows to and from the e-Invoicing service.
 
-![Dverview diagram of the e-Invoicing service data flow](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Data flow for the e-Invoicing service](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Related resources
 
-- [Get started with e-Invoicing service](e-invoicing-get-started.md)
-- [Get started with e-Invoicing service in Brazil](e-invoicing-bra-get-started.md)
-- [Get started with e-Invoicing service in Mexico](e-invoicing-mex-get-started.md)
-- [Get started with e-Invoicing service in Italy](e-invoicing-ita-get-started.md)
-- [Set up e-Invoicing](e-invoicing-setup.md)
+- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
+- [Get started with the e-Invoicing service for Brazil](e-invoicing-bra-get-started.md)
+- [Get started with the e-Invoicing service for Mexico](e-invoicing-mex-get-started.md)
+- [Get started with the e-Invoicing service for Italy](e-invoicing-ita-get-started.md)
+- [Set up the e-Invoicing service](e-invoicing-setup.md)
