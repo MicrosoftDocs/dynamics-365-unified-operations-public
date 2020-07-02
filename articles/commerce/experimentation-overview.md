@@ -45,17 +45,25 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
 
 ## Create webpage variations for the experiment
-1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the test connector or the third-party connector. 
+1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from either the test connector or the third-party connector. 
 1. Click “Connect” to open up the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the required number of variations. 
-    - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on pages, modules and fragments.
+    - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
 1. Make the required changes to the variations in the WYSIWYG editor. You can also optionally designate a “control” by not making any changes to it.
     > [!NOTE]
     > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
-1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
+1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
 
-## Editing and deleting webpage variations
-Go to the “Pages” tab in site builder's left nav bar and open the desired page with variations that needs updating. 
+## Editing webpage variations
+1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
+1. Pick the variation that needs updating from the drop down below the experiment name in the WYSIWYG editor.
+1. Make the required changes, preview the changes and publish.
+
+## Deleting webpage variations
+1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
+1. If the experiment is running, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
+1. Pick the variation to be deleted from the drop down below the experiment name in the WYSIWYG editor.
+1. Click on "Delete" in the top bar to delete the variation.
 
 ## Running the experiment and viewing results
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
