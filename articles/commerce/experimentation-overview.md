@@ -38,8 +38,8 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 
 ## Prerequisites
 1. Check and update to the "right" e-commerce product versions.
-1. Setup test connector or purchase and setup third-party connector - terms need explaining.
-1. Turn on feature flags - needs description + images. Also explain event discoverability here.
+1. Setup test connector or purchase and setup third-party connector - terms need explaining. <add link to Sam's doc>
+1. Turn on feature flags - needs description + images. 
 
 ## Create an experiment
 Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
@@ -53,6 +53,12 @@ Once the third-party connector setup is complete, follow the necessary steps to 
     > [!NOTE]
     > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the 'winner'.
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
+
+## Discover events to measure experiment success
+1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
+1. Click on "Events" in the right property pane of the page or module of interest.
+1. View the list of events associated and copy the required event to the clipboard.
+1. Use the event as necessary in the third party service to track success metrics for the experiment.
 
 ## Editing webpage variations
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
