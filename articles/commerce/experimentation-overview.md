@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 
-# Run experiments on an e-commerce page
+# Run experiments on web pages
 ## Overview
 Web-based experimentation is the process of using controlled experiments such as A/B testing to experiment with variations of webpages and determining which changes result in more conversions, thereby better customer adoption and engagement.
 
