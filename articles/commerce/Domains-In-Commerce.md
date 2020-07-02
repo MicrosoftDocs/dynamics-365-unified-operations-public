@@ -4,7 +4,7 @@
 title: Domains in Commerce
 description: This topic describes how domains are used within Dynamics 365 Commerce
 author: BrShoo
-manager: TFehr
+manager: AnnBe
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
@@ -25,21 +25,19 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
-
 ---
 
 # Domains in Commerce
 
+[!include [banner](includes/banner.md)]
+
 The following article reviews how domains are handled within Dynamics 365 Commerce from provisioning through to site launch.
-
-
 
 ## Overview
 
 Domains are the web addresses an end user will utilize in a browser to navigate to your Dynamics 365 Commerce site. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Commerce site builder to coordinate how a site will be reflected when published. This article will review how domains are referenced throughout the lifecycle of the Commerce site development and launch.
 
-## Provisioning and Supported host names
+## Provisioning and supported host names
 
 When provisioning an e-Commerce environment in Dynamics 365 Commerce, the **supported host names** entry is used to input the domain(s) within the Commerce environment deployed. Please note that inputting domains here does not actually start diverting traffic for those domains to Dynamics 365 Commerce yet.
 
@@ -84,8 +82,9 @@ If you had added a Path of ‘fabrikam’ during this same site’s setup instea
 
 - `https://xyz.commerce.dynamics.com/fabrikam`
 
-## Pages and URLs in Dynamics Commerce
-Once your site is set up with a Path, all URLs associated to pages in site builder will reference off the initial working URL for the site.
+## Pages and URLs in Dynamics 365 Commerce
+
+Once your site is set up with a path, all URLs associated to pages in site builder will reference off the initial working URL for the site.
 
 ![Run user flow option in policy flow](./media/Domains_PageSetup.png)
 
@@ -94,6 +93,7 @@ Creating a new URL will allow a URL path to be designated for the Page associate
 ![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder.png)
 
 ## Domains in Dynamics Commerce
+
 The **Supported host names** values are available to be associated as a **domain** when setting up a site. When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder when working in site builder. This domain is a reference only within the Commerce environment, live traffic for that domain is not yet forwarded to dynamics commerce.
 
 When working with sites in site builder, if you have two sites set up with different domains associated, you can use the ‘?domain=’ attribute appended to your working URL to access the published site content in a browser.
@@ -127,34 +127,53 @@ To utilize the Commerce supplied Azure Front Door instance:
   - For brand new domain, the domain verification and SSL certificate can be achieved in a single step. 
   - For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day SLA for a domain to go live as it includes multiple sequential steps for the domain verification and SSL certificate (detailed below in **SSL Certificate Process with Commerce**).
 
- 
-
 **Note**: Custom domains with SSL are only supported on Production environments. For lower environments (Sandbox, UAT,), use the Commerce Generated URL to access published content in a web browser.
 
-### SSL Certificate Process with Commerce
+## SSL certificate process with Commerce
 
-Once the Service Request is filed, the Commerce team will coordinate the following steps with you:
+Once a service request is filed, the Commerce team will coordinate the following steps with you:
 
 - For brand new domains:
-  - Commerce will setup the Azure front door (Commerce hosted)
+  - Commerce will setup the Azure front door (Commerce hosted).
   - Commerce will then provide the CNAME record to point your custom domain.
-  - After the CNAME record is updated, the Commerce hosted Azure front door will be able to verify the domain ownership and get the SSL certificate
-
- 
-
+  - After the CNAME record is updated, the Commerce hosted Azure front door will be able to verify the domain ownership and get the SSL certificate.
+  
 - For existing/active domains:
-  - Commerce will instruct to add an afdverify.`<custom-domain>` CNAME record to add on your domain DNS provider
-  - Once completed, Commerce will add the domain to the Azure Front Door instance and provide additional DNS TXT Records to be added to the DNS for the domain 
-  - After the TXT records are completed, Commerce will complete the AFD updates for the domain which will setup the SSL certificate
+  - Commerce will instruct to add an afdverify.`<custom-domain>` CNAME record to add on your domain DNS provider.
+  - Once completed, Commerce will add the domain to the Azure Front Door instance and provide additional DNS TXT Records to be added to the DNS for the domain.
+  - After the TXT records are completed, Commerce will complete the AFD updates for the domain which will setup the SSL certificate.
 
+## Apex domains
 
-**Apex Domains**
+The Commerce supplied Azure Front Door instance does not support apex domains (also known as naked domains). Apex domains require an IP address to resolve; and the Commerce Azure Front Door instance exists with virtual endpoints only. To utilize an apex domain, you have two options:
 
-The Commerce supplied Azure Front Door instance does not support Apex domains (also known as naked domains). Apex domains require an IP address to resolve; and the Commerce Azure Front Door instance exists with virtual endpoints only. To utilize an apex domain; you have two options:
+- **Option 1:** Utilize your DNS provider to redirect the apex domain to a www domain (e.g. fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is CNAME to the Commerce hosted Azure front door)
 
-​	**Option 1:** Utilize your DNS provider to redirect the apex domain to a www domain (e.g. fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is CNAME to the Commerce hosted Azure front door)
+- **Option 2:** Set up a CDN / front door instance on your own to host the apex domain.
 
-​	**Option 2:** Set up a CDN / front door instance on your own to host the apex domain (**Note**: if you are using Azure front door, you must also set up an Azure DNS in the same subscription). The apex domain hosted on azure DNS can point to your Azure front door as an alias record. (This is the only work around as apex domains must always point to an IP Address).
+>[!NOTE]
+>If you are using Azure front door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure front door as an alias record. This is the only work around as apex domains must always point to an IP Address.
 
 ## Additional resources
 
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Set up an online store channel](online-stores.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
