@@ -56,14 +56,15 @@ Once the third-party connector setup is complete, follow the necessary steps to 
 
 ## Editing webpage variations
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
+1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
 1. Pick the variation that needs updating from the drop down below the experiment name in the WYSIWYG editor.
 1. Make the required changes, preview the changes and publish.
 
 ## Deleting webpage variations
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
-1. If the experiment is running, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
+1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
 1. Pick the variation to be deleted from the drop down below the experiment name in the WYSIWYG editor.
-1. Click on "Delete" in the top bar to delete the variation.
+1. Click on "Delete" in the top bar to delete the variation and publish as necessary.
 
 ## Running the experiment and viewing results
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
