@@ -37,8 +37,12 @@ Web-based experimentation is the process of using controlled experiments such as
 Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments in site builder. Integrations with third-party solution providers enable the creation of experiments and treatment assignments. Event streams from the web storefront support the analytics and reports defining experiment results in the third-party solution.
 
 ## Prerequisites
+1. Check and update to the "right" e-commerce product versions.
+1. Turn on feature flags - need description.
+1. Setup test connector or purchase and setup third-party connector.
 
 ## Create an experiment
+Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
 
 ## Create webpage variations for the experiment
 
@@ -47,6 +51,6 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 1. Go through the wizard to choose the page or fragment to be experimented upon and generate the variations. 
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on the page model.
 1. Make the required changes to the variations in the WYSIWYG editor. You can also optionally designate a “control” by not making any changes to it.
-> [!NOTE]
-> The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
+    > [!NOTE]
+    > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
 1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
