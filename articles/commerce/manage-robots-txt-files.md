@@ -5,7 +5,7 @@ title: Manage robots.txt files
 description: This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -95,8 +95,6 @@ To delete a robots.txt file in Commerce, follow these steps.
 [Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-
-[Set up an online store channel](online-stores.md)
 
 [Create an e-Commerce site](create-ecommerce-site.md)
 
