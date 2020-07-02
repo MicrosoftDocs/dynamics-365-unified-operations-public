@@ -2,7 +2,7 @@
 # required metadata
 
 title: Confirm outbound shipments from batch jobs
-description: This topic describes how to set up batch jobs that automatically confirm outbound shipments for ready-to-ship loads. For load lines related to transfer orders, the system will automatically run a process that updates the transfer order shipments. However, for sales orders, an operator still must manually run a sales packing slip update from the load to update the outbound cost.
+description: This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads. The batch job described here only applies to transfer order shipments, not to sales orders.
 author: perlynne
 manager: tfehr
 ms.date: 07/31/2020
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up batch jobs that automatically confirm outbound shipments for ready-to-ship loads. For load lines related to transfer orders, the system will automatically run a process that updates the transfer order shipments. However, for sales orders, an operator still must manually run a sales packing slip update from the load to update the outbound cost. <!-- I think this topic is describing how to make the system "automatically run a process that updates the transfer order shipments". Isn't that right? -->
+This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads. The batch job described here only applies to transfer order shipments, not to sales orders.
 
 ## Enable the Confirm outbound shipments from batch jobs feature
 
@@ -42,7 +42,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Process outbound shipments
 
-To set up a scheduled batch job to run the outbound shipment confirmation for loads ready to ship:
+To set up a scheduled batch job to run the outbound shipment confirmation for loads that are ready to ship:
 
 1. Go to **Warehouse management \> Periodic tasks \> Process outbound shipments**.
 1. Select **Filter**.
