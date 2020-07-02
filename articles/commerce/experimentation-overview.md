@@ -38,14 +38,13 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 
 ## Prerequisites
 1. Check and update to the "right" e-commerce product versions.
-1. Turn on feature flags - need description.
-1. Setup test connector or purchase and setup third-party connector.
+1. Setup test connector or purchase and setup third-party connector - terms need explaining.
+1. Turn on feature flags - needs description + images. Also explain event discoverability here.
 
 ## Create an experiment
 Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
 
 ## Create webpage variations for the experiment
-
 1. Go to the “Experiments” tab in site builder’s left nav bar.
 1. Click “Connect” to link to an experiment in the test connector or the third-party connector.
 1. Go through the wizard to choose the page or fragment to be experimented upon and generate the variations. 
@@ -54,3 +53,14 @@ Once the third-party connector setup is complete, follow the necessary steps to 
     > [!NOTE]
     > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
 1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
+
+## Editing and deleting webpage variations
+Go to site builder and open the page that needs to be experimented on from the “Pages” tab in the left nav bar.
+
+## Running the experiment and viewing results
+The experiment needs to be started in the third-party service so the right experiences can be shown to web users. When a web request comes in for a published page participating in an experiment, our system will use the connector to ask the third-party service which variation of the page to show to each user.  If the experiment is not running in the third-party service, all users will only see the default version of the page. <need to define what the default is>
+
+## Picking a winning webpage variation
+1. Pick a winner and promote it.
+1. Complete the experiment in Commerce.
+1. Stop the experiment in the third-party service.
