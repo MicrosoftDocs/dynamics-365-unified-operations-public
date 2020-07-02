@@ -58,6 +58,7 @@ Once the third-party connector setup is complete, follow the necessary steps to 
 1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
 1. Click on "Events" in the right property pane of the page or module of interest.
 1. View the list of events associated and copy the required event to the clipboard.
+    - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
 1. Use the event as necessary in the third party service to track success metrics for the experiment.
 
 ## Run the experiment and view results
