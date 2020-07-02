@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce Experimentation
-description: <fill in>
+title: Experimentation in Dynamics 365 Commerce
+description: Enable the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support will be enabled for e-commerce pages, as well as entities within a page.
 author:  sushma-rao 
 manager: AnnBe
 ms.date: 09/15/2020
@@ -51,7 +51,7 @@ Once the third-party connector setup is complete, follow the necessary steps to 
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
 1. Make the required changes to the variations in the WYSIWYG editor. You can also optionally designate a “control” by not making any changes to it.
     > [!NOTE]
-    > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
+    > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the 'winner'.
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
 
 ## Editing webpage variations
@@ -73,6 +73,8 @@ Once the third-party connector setup is complete, follow the necessary steps to 
 <Note: When a web request comes in for a published page participating in an experiment, our system will use the connector to ask the third-party service which variation of the page to show to each user.  If the experiment is not running in the third-party service, all users will only see the default version of the page. <need to define what the default is>
 
 ## Picking a winning webpage variation
-1. Pick a winner and promote it.
-1. Complete the experiment in Commerce.
+1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
+1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
+1. Use the analytics generated in the thir-party service to pick a winner and click "Next".
+1. Click "Complete" to promote the 'winning' experience to the web storefront.
 1. Stop the experiment in the third-party service.
