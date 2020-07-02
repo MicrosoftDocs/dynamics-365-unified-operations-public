@@ -42,9 +42,14 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 
 ## Create webpage variations for the experiment
 
-1.	Go to the “Experiments” tab in site builder’s left nav bar.
-1.	Click “Connect” to link to an experiment in the test connector or the third-party connector.
-
+1. Go to the “Experiments” tab in site builder’s left nav bar.
+1. Click “Connect” to link to an experiment in the test connector or the third-party connector.
+1. Go through the wizard to choose the page or fragment to be experimented upon and generate the variations. 
+    - Click here for more information on the page model.
+1. Make the required changes to the variations in the WYSIWYG editor. 
+1. You can also optionally designate a “control” by not making any changes to it.
 
 > [!NOTE]
-> This compatiblity list is new as September 2018. The list will grow over time as devices are tested successfully and results are submitted to Microsoft.
+> The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the “winner”.
+
+1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
