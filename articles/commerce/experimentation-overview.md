@@ -70,7 +70,7 @@ Once the third-party connector setup is complete, follow the necessary steps to 
 1. Let the experiment run for a few days/weeks depending on the recommendation from the third-party service.
 1. View experiment related data and analytics in the third-party service.
     > [!NOTE]
-    > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will the same 'default' version of the page.
+    > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
 
 ## Picking a winning webpage variation
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
