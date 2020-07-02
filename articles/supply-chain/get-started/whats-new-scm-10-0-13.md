@@ -45,14 +45,14 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [Change the terminology of "inventory closing cancellation" to "inventory closing reverse"](#https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - For more information, see [Inventory close](../cost-management/inventory-close.md).
-- [Confirm outbound shipments from batch jobs](#)<br> - For more information, see [Confirm outbound shipments from batch jobs](#).
+- [Confirm outbound shipments from batch jobs](#)<br> - For more information, see [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 - [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)
-- [Enhanced shop floor terminal for discrete manufacturing](#)<br> - For more information, see [Enhanced shop floor terminal for discrete manufacturing](#).
-- [Enter serial numbers while reporting as finished from the job card device](#)<br> - For more information, see [Enter serial numbers while reporting as finished from the job card device](#).
-- [Enterprise-scale inventory performance improvements and archiving](#)<br> - For more information, see [Enterprise-scale inventory performance improvements and archiving](#).
-- [Order-committed reservation based on license plates](#)<br> - For more information, see [Order-committed reservation based on license plates](#).
-- [Outbound workload visualization](#)<br> - For more information, see [Outbound workload visualization](#).
-- [Work pick line overview](#)<br> - For more information, see [Work pick line overview](#).
+- [Enhanced shop floor terminal for discrete manufacturing](#)
+- [Enter serial numbers while reporting as finished from the job card device](#)
+- [Enterprise-scale inventory performance improvements and archiving](#)
+- [Order-committed reservation based on license plates](#)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Outbound workload visualization](#)
+- [Work pick line overview](#)
 - [Work policy enhancements for inbound work](#)<br> - For more information, see [Work policy enhancements for inbound work](#).
 
 ## Additional resources
