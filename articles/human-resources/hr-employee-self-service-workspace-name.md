@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Human Resources
 If you have volunteers or other non-employees, you might want to change the name of the **Employee self service** workspace. You can change this workspace to **Self service** instead.
 
 > [!NOTE]
-> Changing the label of the **Employee self service** workspace also changes the menu item that Human Resources uses behind the scenes. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** display menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** so you canmaintain parity.
+> Changing the label of the **Employee self service** workspace also changes the menu item that Human Resources uses behind the scenes. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** display menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** so you can maintain parity.
 
 1. In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.
 
