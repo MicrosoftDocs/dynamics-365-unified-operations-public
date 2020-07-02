@@ -3,8 +3,8 @@
 
 title: Domains in Commerce
 description: This topic describes how domains are used within Dynamics 365 Commerce
-author: Brian Shook
-manager: Brendan Sullivan
+author: BrShoo
+manager: TFehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BrianShook
+ms.author: BrShoo
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -110,14 +110,14 @@ When a domain query string is not given in an environment with multiple domains 
 
 You can simulate multi-domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you need to forward the traffic for your custom domain to the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint.
 
-As noted in the Dynamics 365 Commerce [CDN documentation](https://docs.microsoft.com/en-us/dynamics365/commerce/add-cdn-support), the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint does not support custom domain SSLs. This means you must set up custom domains in a front door service or CDN. For this you have two options:
+As noted in the Dynamics 365 Commerce [CDN documentation](add-cdn-support.md), the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint does not support custom domain SSLs. This means you must set up custom domains in a front door service or CDN. For this you have two options:
 
 - **Set up a front door service** like Azure Front Door to handle front-end traffic and connect to your Commerce environment
   - Provides greater control over domain management/certificate management and more granular security policies
 - Utilize the **Commerce supplied Azure Front Door** instance
   - Requires coordinating action with the Dynamics 365 Commerce Team for domain verification and SSL Certificates for your production domain
 
-To set up a CDN service directly, refer to the [Add CDN Support](https://docs.microsoft.com/en-us/dynamics365/commerce/add-cdn-support) article in Microsoft Docs.
+To set up a CDN service directly, refer to the [Add CDN Support](add-cdn-support.md) article in Microsoft Docs.
 
 To utilize the Commerce supplied Azure Front Door instance:
 
@@ -147,7 +147,6 @@ Once the Service Request is filed, the Commerce team will coordinate the followi
   - Once completed, Commerce will add the domain to the Azure Front Door instance and provide additional DNS TXT Records to be added to the DNS for the domain 
   - After the TXT records are completed, Commerce will complete the AFD updates for the domain which will setup the SSL certificate
 
- 
 
 **Apex Domains**
 
@@ -156,4 +155,6 @@ The Commerce supplied Azure Front Door instance does not support Apex domains (a
 ​	**Option 1:** Utilize your DNS provider to redirect the apex domain to a www domain (e.g. fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is CNAME to the Commerce hosted Azure front door)
 
 ​	**Option 2:** Set up a CDN / front door instance on your own to host the apex domain (**Note**: if you are using Azure front door, you must also set up an Azure DNS in the same subscription). The apex domain hosted on azure DNS can point to your Azure front door as an alias record. (This is the only work around as apex domains must always point to an IP Address).
+
+## Additional resources
 
