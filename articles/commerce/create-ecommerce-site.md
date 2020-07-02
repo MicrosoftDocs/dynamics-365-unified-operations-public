@@ -64,8 +64,6 @@ After your site is created, you can verify that it is associated with your onlin
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
 
-[Set up an online store channel](online-stores.md)
-
 [Associate an online site with a channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
