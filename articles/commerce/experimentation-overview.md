@@ -45,7 +45,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 1. Go to the “Experiments” tab in site builder’s left nav bar.
 1. Click “Connect” to link to an experiment in the test connector or the third-party connector.
 1. Go through the wizard to choose the page or fragment to be experimented upon and generate the variations. 
-    - Click here for more information on the page model.
+    - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on the page model.
 1. Make the required changes to the variations in the WYSIWYG editor. 
 1. You can also optionally designate a “control” by not making any changes to it.
 1. Preview the variations and click on “Publish” to publish them. Note that this operation will publish all variations that belong to the experiment.
