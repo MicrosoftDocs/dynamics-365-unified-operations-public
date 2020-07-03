@@ -5,7 +5,7 @@ title: System-directed work sequencing
 description: This topic provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/10/2020
+ms.date: 07/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,8 +23,8 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.9
+ms.search.validFrom: 2020-07-03
+ms.dyn365.ops.version: Release 10.0.7
 ---
 
 # System-directed work sequencing
