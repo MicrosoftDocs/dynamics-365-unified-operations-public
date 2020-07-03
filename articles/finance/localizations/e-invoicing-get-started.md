@@ -119,9 +119,9 @@ During RCS setup, you will:
 
 1. In the **Globalization features workspace**, select **Electronic reporting parameters** link under **Related links**.
 2. Select **Click here to connect to Lifecycle Service**. You can skip connecting to LCS by selecting **Cancel**.
-3. On **e-Invoicing service** tab, in the **Service endpoint URI** field, enter <https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/>.
-4. In the **Application ID** field, enter 2b66cba7-e0cc-4d1b-9cf8-cd173a0de201. This is a fixed value.
-5. In the **LCS Environment ID** field, enter the tenant ID of your LCS subscription account.
+3. On **e-Invoicing service** tab, in the **Service endpoint URI** field, enter <https://businessdocumentsubmission.aksm2nc.westus2.operations365.dynamics.com/>.
+4. In the **Application ID** field, it is pre-populated, leave as the default value 0cdb527f-a8d1-4bf8-9436-b352c68682b2.
+5. In the **LCS Environment ID** field, enter the ID of your LCS subscription account.
 
 ![Enter e-Invoicing parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
 
@@ -168,7 +168,7 @@ During setup, you will:
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, enter <https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/>.
+2. On the **Submission service** tab, in the **Service endpoint URL** field, enter <https://businessdocumentsubmission.aksm2nc.westus2.operations365.dynamics.com/>.
 3. In the **Environment** field, enter the name of the e-invoicing service environment created during the RCS setup.
 
 ![Enter service endpoint](media/e-invoicing-services-get-started-enter-service-endpoint.png)
