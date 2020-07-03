@@ -52,6 +52,14 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
+### Retail SDK support for VS 2015, msbuild 14.0 and Retail SDK\Reference libraries and tools
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Retail SDK support for VS 2015 has been deprecated and updated to support VS 2017, msbuild 15.0 and all the reference libraries and commerce proxy generator tools in the RetailSDK\References folder moved to NuGet packages to simplify the extension model and SDK upgrade process.|
+| **Replaced by another feature?**   | It is recommended to use [VS 2017 for all Retail SDK extensions, msbuild 15.0 for package generation and use NuGet packages for all the references and Commerce proxy generation](../dev-itpro/retail-sdk/migrate-sdk.md) |
+| **Product areas affected**         | Retail SDK extensions |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.11 |
 
 ### Retail Server Extension using IEdmModelExtender and CommerceController
 |   |  |
