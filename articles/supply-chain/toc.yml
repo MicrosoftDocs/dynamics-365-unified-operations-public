@@ -2619,6 +2619,8 @@
             href: warehousing/cancel-warehouse-work.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: System-directed work sequencing
+            href: warehousing/system-directed-work-sequencing.md
           - name: Pick line grouping
             href: warehousing/pick-line-grouping.md 
           - name: Warehouse slotting
