@@ -52,6 +52,25 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
+
+### Retail Server Extension using IEdmModelExtender and CommerceController
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Retail server extension using IEdmModelExtender and CommerceController has been deprecated to provide simplified extension model. The new implementation will have only the controller class without any additional IEdmModelExtender class implementation and to avoid the dependency with particular OData version (if OData version is updated it may break extensions.) |
+| **Replaced by another feature?**   | It is recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
+| **Product areas affected**         | Retail server extensions |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.11 |
+
+### Hardware station Extension using IHardwareStationController
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Hardware station extension using IHardwareStationController has been deprecated to provide simplified extension model. The new implementation will have only the IController class without any additional class implementation and to avoid the dependency with core hardware station libraries, previously extension need to refer multiple libraries.) |
+| **Replaced by another feature?**   | It is recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
+| **Product areas affected**         | Hardware station extensions |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.11 |
+
 ## Features removed or deprecated in the Commerce 10.0.10 release
 ### POS operation 803 - Picking and receiving
 |   |  |
