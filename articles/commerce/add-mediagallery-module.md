@@ -67,7 +67,7 @@ The following image shows an example of a buy box on a product details page that
 |Thumbnail orientation| Vertical, Horizontal| Shows images in a vertical or horizontal strip|
 
 The following image shows an example of a Media gallery with Full screen and zoom option enabled
-![Example of a Media gallery module](./media/ecommerce-media-zoom.PNG)
+![Example of a Media gallery module](./media/ecommerce-media-zoom.png)
 
 The following image shows an example of a Media gallery on a page with curated images (not product images) 
 ![Example of a Media gallery module](./media/ecommerce-media-curated.PNG)
