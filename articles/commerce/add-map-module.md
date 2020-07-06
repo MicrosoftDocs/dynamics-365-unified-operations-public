@@ -59,7 +59,12 @@ This is an example of the Map module used in a Store locations page
 |Pushpin options - Active icon color|string | Text or HEX value for the color of the Active selected pushpin|
 |Show index|True or false  | If true, the pushpins that indicate a store have an index that matches the index on the list view displayed by Store selector module|
 
-
+## Content Security Policy
+For the Maps module to interact with the Bing Maps, you need to ensure the following URLs are whitelisted per [Content security policy](manage-csp.md). 
+1.To connect-src add *.bing.com
+1. To img-src add *.virtualearth.net
+1. To script-src add *.bing.com, *.virtualearth.net
+1. To script style-src add *.bing.com
 
 ## Add a map module to a page
 
