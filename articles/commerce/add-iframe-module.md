@@ -40,7 +40,10 @@ This topic covers the IFrame module and describes how to add it to site pages in
 
 A IFrame module provies an iframe to host external content on a site. For instance, it can be used to host a youtube video or a pdf viewer on any site page. 
 
-It requires the destination URL to be provided and hosts whatever content in the URL within an iframe. If [Content security policy](manage-csp.md) is turned on, the external URLs must be called out in the Content Security policy.
+It requires the destination URL to be provided and hosts whatever content in the URL within an iframe. Its required that the external URLs are whitelisted per the [Content security policy](manage-csp.md). For IFrame content, the URLs should be whitelisted under **frame-ancestor**.
+
+This is an example of an IFrame module on a page showcasing some external videos
+![Example of IFrame module](./media/ecommerce-iframe.PNG)
 
 ## IFrame module properties
 
