@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Change Employee self service workspace name
-description: Change the display name of the Employee self service workspace in Dynamics 365 Human Resources.
+title: Change Employee self-service workspace name
+description: This topic describes how to change the display name of the Employee self-service workspace in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/09/2020
@@ -30,24 +30,23 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Change Employee self service workspace name
+# Change Employee self-service workspace name
 
-If you have volunteers or other non-employees, you might want to change the name of the **Employee self service** workspace. You can change this workspace to **Self service** instead.
+If you have volunteers or other non-employees, you might want to change the name of the **Employee self-service** workspace. You can change this workspace to **Self service** instead.
 
 > [!NOTE]
-> Changing the label of the **Employee self service** workspace also changes the menu item that Human Resources uses behind the scenes. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** display menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** so you can maintain parity.
+> Changing the name of the **Employee self-service** workspace also changes the menu item that is used internally by Dynamics 365 Human Resources. If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** to maintain parity.
 
 1. In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.
 
-2. Select the **Employee self service** tab.
+2. Select the **Employee self-service** tab.
 
 3. Under **Display name**, select **Self service**.
 
-   ![Change Employee self service workspace name to Self service](./media/hr-employee-self-service-workspace-name.png)
+   ![Change Employee self-service workspace name to Self service](./media/hr-employee-self-service-workspace-name.png)
 
 4. Select **Save**.
 
+## Additional resources
 
-## See also
-
-- [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md)
+- [Employee and Manager self-service overview](hr-employee-manager-self-service-overview.md)
