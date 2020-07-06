@@ -109,6 +109,12 @@ Calculate the cash flow forecast by using the **Calculate cash flow forecasts** 
 
 You can also use batch processing for your cash flow forecasting. To help guarantee that your forecasting analytics are regularly updated, set up a recurring batch process for cash flow forecast calculation.
 
+In version 10.0.13 an enhancement to the calcuation process was done to use the process automation framework to schedule the cash flow calcuation job. This is enabled via feature **Cash flow forecast automation** from the Feature Management workspace. Once enabled, clicking on the link to the **Cash flow forecast automation** link will show the new automation page where you can schedule the cash flow calculation process. To create a new cash flow forecast schedule, click the top menu option "Create new process automation" and select **"Cash flow forecast automation"** in the schedule type dropdown. You must set a schedule for each company you wish to update the cash flow forecast data.  This page also allows you to see what cash flow forecast automation jobs are pending and when the last job was completed.  
+
+NOTE: If existing batch jobs are already scheduled for Cash Flow forecast, you will receive an error blocking the ability to enable this feature.  Existing batch jobs will need to be cleared before you can enable this feature. 
+
+For more details about process automation view this page: [Process Automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)
+
 ### Reporting
 
 After the cash flow forecast is calculated, you must refresh the associated entity information for analytical reporting. On the **Entity store** page, select the **LedgerCovLiquidityMeasurement aggregate** measurement, and then click **Refresh**.
