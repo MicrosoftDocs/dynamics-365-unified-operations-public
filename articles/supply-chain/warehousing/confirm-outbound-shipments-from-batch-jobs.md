@@ -45,12 +45,17 @@ Before you can use this feature, it must be enabled on your system. Administrato
 To set up a scheduled batch job to run the outbound shipment confirmation for loads that are ready to ship:
 
 1. Go to **Warehouse management \> Periodic tasks \> Process outbound shipments**.
-1. Select **Filter**.
-1. Select the **Range** section and insert a range for the table **Loads** and field **Load status**. Set the **Criteria** to **Loaded**.
-1. Select **OK** to return to the main dialog.
-1. Enable **Batch processing** under the **Run in background section**.
-1. Select **Recurrence** and set the batch job to process based on the interval needed for your business.
-1. Select **OK** to return to the main dialog.
-1. Select **OK** in the main dialog to add the batch job to the batch queue.
+1. The **Confirm shipment** dialog box opens. On the **Records to include** FastTab, select **Filter**.
+1. The query editor dialog box opens. On the **Range** tab, add a row with the following values:
+    - **Table** - *Loads*
+    - **Derived table** - *Loads*
+    - **Field** - *Load status*
+    - **Criteria** - *Loaded*
+1. Select **OK** to return to the **Confirm shipment** dialog box.
+1. On the **Run in the background** FastTab, set **Batch processing** to **Yes**.
+1. On the **Run in the background** FastTab, select **Recurrence**.
+1. The **Define recurrence** dialog box opens. Set the run schedule as needed for your business.
+1. Select **OK** to return to the **Confirm shipment** dialog box.
+1. Select **OK** on the **Confirm shipment** dialog box to add the batch job to the batch queue.
 
 For more information, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
