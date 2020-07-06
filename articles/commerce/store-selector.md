@@ -100,12 +100,13 @@ To use the module to display available stores for a Store locations page, follow
 1. In the **Main** slot of the default page, dont add any modules.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Create a new page **Store locations** using the Marketing template.
-1. Add a Container with 2 columns and set Width=Fill Container
-1. Add a Store selector module to the container. 
+1. Add a **Container with 2 columns** and set Width=Fill Container
+1. To acheive the look shown in the example above, set the X-Small and Small view port to 100%, set the Medium and Large view ports to 33% 67% width on the container.
+1. Add a Store selector module to the first column in container.
 1. In module property panel, set Mode=Find stores
 1. In module property panel, set other options "Set as preferred store" or "View all stores" or "Auto-suggest options" as needed
 1. In module property panel, set Search radius in miles
-1. Add a Maps module to the container.
+1. Add a Maps module to the second column in  container.
 1. In the Maps module property panel set any additional properties as needed.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
  
