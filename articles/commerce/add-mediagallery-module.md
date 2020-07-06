@@ -66,6 +66,11 @@ The following image shows an example of a buy box on a product details page that
 | Images | Images | In addtion to images rendered from a product, images can be also curated to this module. These images will be appended to the product images if available. This capability is available in 10.0.12|
 |Thumbnail orientation| Vertical, Horizontal| Shows images in a vertical or horizontal strip|
 
+The following image shows an example of a Media gallery with Full screen and zoom option enabled
+![Example of a Media gallery module](./media/ecommerce-media-zoom.PNG)
+
+The following image shows an example of a Media gallery on a page with curated images (not product images) 
+![Example of a Media gallery module](./media/ecommerce-media-curated.PNG)
 
 ## Commerce Scale Unit interaction
 
