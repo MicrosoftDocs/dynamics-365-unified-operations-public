@@ -5,7 +5,7 @@ title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 07/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -94,9 +94,9 @@ public class MyHandler : IRequestHandlerAsync, ISupportedTypesAware
 }
 ```
 
-## ReadOnly CartValidationException - in SDK version (10.0.0 and later)
+## How do I handle a ReadOnly CartValidationException error in SDK version (10.0.0 and later)?
 
-This error will occur if the below read-only properties are updated in SDK version 10.0.9 or lesser, these properties are made read-only in SDK version  10.0.0 to avoid some miscalculations in the cart total:
+This error will occur if the following read-only properties are updated in SDK version 10.0.9 or earlier. These properties are made read only in SDK version 10.0.0 to avoid miscalculations in the cart total:
 
 - ExtendedPrice
 - TaxAmount
@@ -109,15 +109,17 @@ This error will occur if the below read-only properties are updated in SDK versi
 - InvoiceId
 - InvoiceAmount
 
-To mitigate this issue, remove the code in client/server setting this value and OOB code will calculate these values or keep the logic in the read-only fields by following the below approach but later should modify the code according to the best practice (this option is not recommended) :
+To resolve this issue, remove the code in the client/server. Setting this value and OOB code will calculate these values or keep the logic in the read-only fields. You can follow the example shown below, however be sure to modify the code according to the best practice, as this option is not recommended.
 
-In HQ Commerce parameters > Configuration parameters > create a new config with the a name/value like the following pattern:
+In **HQ Commerce parameters > Configuration parameters > Create a new config** with a name/value like the following pattern:
 
 **RetailReadOnlyExempt_[EntityName] : [ColumnName]**
 
-For instance, in the error at the top of this page, ITEMTAXGROUPID is the read-only property with the error. You can search to see this is part of CartLine and CartLineData. So our configuration name/value pair would look like this:
+For example, in the error at the top of this page, ITEMTAXGROUPID is the read-only property with the error. You can search to see this is part of CartLine and CartLineData. The configuration name/value pair would look like this:
 
-**RetailReadOnlyExempt_CartLineData : ITEMTAXGROUPID**  **Note:** The ITEMTAXGROUPID is the column name of the property not the actual property name.
+**RetailReadOnlyExempt_CartLineData : ITEMTAXGROUPID**  
 
-After adding the config **run job 1110 to push this change**.
+> [!NOTE]
+> ITEMTAXGROUPID is the column name of the property, not the actual property name.
 
+After adding the config run job 1110 to push this change.
