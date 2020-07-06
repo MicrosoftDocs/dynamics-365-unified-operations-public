@@ -2,7 +2,7 @@
 # required metadata
 
 title: Confirm outbound shipments from batch jobs
-description: This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads. The batch job described here only applies to transfer order shipments, not to sales orders.
+description: This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads.
 author: perlynne
 manager: tfehr
 ms.date: 07/31/2020
@@ -35,7 +35,7 @@ This topic describes how to set up a batch job that automatically confirms outbo
 
 ## Enable the Confirm outbound shipments from batch jobs feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. The feature is listed as:
 
 - **Module** - *Warehouse management*
 - **Feature name** - *Confirm outbound shipments from batch jobs*
