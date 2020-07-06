@@ -103,7 +103,7 @@ To use the module to display available stores for a Store locations page, follow
 1. Add a **Container with 2 columns** and set Width=Fill Container
 1. To acheive the look shown in the example above, set the X-Small and Small view port to 100%, set the Medium and Large view ports to 33% 67% width on the container.
 1. Add a Store selector module to the first column in container.
-1. In module property panel, set Mode=Find stores
+1. In module property panel, set Mode=Find stores and set Style=Inline
 1. In module property panel, set other options "Set as preferred store" or "View all stores" or "Auto-suggest options" as needed
 1. In module property panel, set Search radius in miles
 1. Add a Maps module to the second column in  container.
