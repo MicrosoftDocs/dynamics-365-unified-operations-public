@@ -42,6 +42,8 @@ This module lets a customer add or select the shipping address for an order duri
 
 Shipping address formats can be defined in HQ for each country or region, and the country/region-specific rules are enforced by this module. 
 
+When entering Shipping address via checkout flow, the user is provided an option to save the address as a primary address (checkbox). This option is only shown when a user is signed-in.
+
 Although this module doesn't provide address validation, address validation can be implemented through customization.
 
 
@@ -54,7 +56,6 @@ Although this module doesn't provide address validation, address validation can 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-| Save as primary address | True or False | This setting allows the address to be saved as primary address for a signed-in user during checkout flow |
 | Show address type | True or False | This setting shows an Address type field, E.g. Home, Business, Other etc. Its an optional configuration, if not specified the address will be automatically saved as Type=Other|
 
 
