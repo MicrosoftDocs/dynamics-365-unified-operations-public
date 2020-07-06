@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Change Employee self-service workspace name
+title: Change Employee self service workspace name
 description: This topic describes how to change the display name of the Employee self-service workspace in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Change Employee self-service workspace name
+# Change Employee self service workspace name
 
 If you have volunteers or other non-employees, you might want to change the name of the **Employee self-service** workspace. You can change this workspace to **Self service** instead.
 
