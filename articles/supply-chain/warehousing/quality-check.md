@@ -35,13 +35,11 @@ This functionality offers an alternative to the existing quality check process, 
 
 When using this feature, the arrival and quality check proceeds as follows:
 
-1. When a shipment arrives, the warehouse worker registers the arrival, and also registers its location by scanning a license plate.
+1. When a shipment arrives, the warehouse worker registers the arrival, and registers its location by scanning a license plate.
 1. The worker does a quick quality check and records the result (pass or fail) for that license plate.
 1. One of the following happens:
-    - License plates containing accepted items are guided to a storage location as usual.
-    - For the rejected license plates, existing put-away work is cancelled and a new *quality check* work order is created. The license plate is then diverted to a quality check location for further inspection.
-
-<!-- The above wasn't entirely clear in the draft.  I tried to clarify with this revision. Please confirm it's still correct -->
+    - License plates containing accepted items are guided to a receiving location as usual.
+    - For the rejected license plates, existing put-away work is redirected to an alternate location for further inspection. A new **Quality order** is created. Go to **Inventory management > Periodic tasks > Quality management > Quality orders** to view the quality order created from the rejected quality check.
 
 This process can also be set to divert all scanned license plates to the quality check location immediately.
 
@@ -183,7 +181,7 @@ Location directives are rules that help identify pick and put locations for inve
     - **Name** - *51 To Quality*
 
 1. In the **Location directives** FastTab, enter the following:
-    - **Work type** - *Put**
+    - **Work type** - *Put*
     - **Site** - *5*
     - **Warehouse** - *51*
     - Accept the defaults for remaining fields.
@@ -195,7 +193,7 @@ Location directives are rules that help identify pick and put locations for inve
     - Accept the defaults for remaining fields.
 
 1. Select **Save** in the Action Pane to save the new line and enable the **Location Directive Actions** FastTab.
-1. With the line still selected in the **Lines** grid, select **New**in the **Location directive actions** FastTab to set up actions for the line. Enter the following:
+1. With the line still selected in the **Lines** grid, select **New** in the **Location directive actions** FastTab to set up actions for the line. Enter the following:
     - **Name** - "Quality"
     - Accept the defaults for remaining fields.
 
@@ -209,6 +207,11 @@ Location directives are rules that help identify pick and put locations for inve
     - **Criteria** - *QMS*
         - The *QMS* location is a warehouse location for quality.
     - Select **OK** to close the dialog box.
+
+1. In the list of purchase order location directives reorder the sequence of warehouse 51 location directives. After saving the **51 To Quality location directive**, refresh the page and select the directive in the list. Then use the **Move up** and **Move down** buttons in the action pane to put the warehouse 51 directives in the following order (select a directive in the list as needed to move up or down):
+    - **51 To Quality**
+    - **51 PO Direct**
+    - **51 QMS**
 
 ### Mobile Device Menu Items
 
@@ -264,7 +267,7 @@ Configure a menu item for mobile devices to perform the Quality Check function.
 
 #### Create a purchase order
 
-Once you have enabled and set up all of the sample data described previously in this topic, do the following to try out this feature. Create a purchase order:
+Once you have enabled and set up all the sample data described previously in this topic, do the following to try out this feature. Create a purchase order:
 
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 1. Select **New** in the Action Pane.
@@ -339,6 +342,9 @@ Once the Purchase Order has been created it can be received utilizing PO Line Re
 1. Confirm the put away work.
 1. A **Work Completed** message is displayed on the PO Line Receiving **Task** screen. The **LINENUM** field is available to begin the receiving of the next pallet.
 
+When you have finished this quality check, you will have created a quality order for the rejected pallet.
+Go to **Inventory management > Periodic tasks > Quality management > Quality orders** to view the order created. Quality order testing can now be processed. Quality testing is not covered here.
+
 ##### Receive pallet 3
 
 1. For this scenario, pallet 3 will be accepted.
@@ -361,6 +367,3 @@ Once the Purchase Order has been created it can be received utilizing PO Line Re
 1. Select the menu button (**≡**) at the top of the screen.
 1. A menu list drop-down opens.
 1. Select **Cancel** from the list to return to the menu. You may now exit the mobile app.
-
-When you have finished this procedure, you will have created a quality order for the rejected pallet.
-Go to **Inventory management > Periodic tasks > Quality management > Quality orders** to view the order created. Quality order testing can now be processed.
