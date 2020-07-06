@@ -38,7 +38,7 @@ This topic covers the store selector module and describes how to add it to site 
 
 ## Overview
 
-A store selector module is used to "Pick-up" a product in a selected store. In 10.0.13, the module has  additional capabilities that allow it to showcase a "Find a Store" page to display available stores.  In this topic, we will discuss how the module can be used in both modes.
+A store selector module is used to "Pick-up" a product in a selected store. In 10.0.13, the module includes additional capabilities that allow it to showcase a "Find a Store" page to display available stores.  In this topic, we will discuss how the module can be used in both modes.
 
 The Store selector module allows the user to input a location (city, state, address etc) to search for stores within a search radius. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
 
@@ -67,9 +67,9 @@ The following image shows an example of a store selector module used on a PDP.
 ## Find a store
 The Store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module.
 
-The following image shows an example of a store selector module used on a Store locations page.
+The following image shows an example of a store selector module used on a Store locations page along with Map module [Maps module](add-maps-module.md).
 
-![Example of a store selector module](./media/Findastore.PNG)
+![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
 
 ## Showing a map
 The module can be used with the Map module to render the store locations visually on a map. For more details on this module, refer to [Maps module](add-maps-module.md)
@@ -84,7 +84,7 @@ The module can be used with the Map module to render the store locations visuall
 | Style| Dialog, Inline| The module can rendered inline or shown in a dialog|
 | Set as preferred store| True or False| When true, it allows the user to set a store as a preferred store for their shopping experience|
 | Show all stores | True or False| When true, it shows an option for the shopper to view all stores ignoring the search radius|
-|Auto-suggest options| Max results| It can be used to define the maximum number of auto-suggest results to render via Bing Auto-suggest API|
+|Auto-suggest options - Max results| Number| It can be used to define the maximum number of auto-suggest results to render via Bing Auto-suggest API|
 | Search radius | Number | Defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used.|
 |Terms of Service | URL    |  The terms of service URL that is required for the Bing Maps service. |
 
@@ -127,5 +127,4 @@ To use the module to display available stores for a Store locations page, follow
 
 [Bing Maps REST APIs](https://docs.microsoft.com/en-us/bingmaps/rest-services/)
 
-[Maps module]
-
+[Maps module](add-maps-module.md)
