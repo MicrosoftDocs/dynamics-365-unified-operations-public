@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.13 of Finance and Operations apps (Sept
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 07/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,8 +37,8 @@ ms.dyn365.ops.version: 10.0.13
 This topic lists the features that are included in the platform updates for version 10.0.13 of Finance and Operations apps. (These updates were formerly referred to as *Platform update 37*.) This version has a build number of 7.0.XXXX and is available on the following schedule:
 
 - **Preview release:** July 2020
-- **General availability (self-update):** August 2020
-- **Auto-update:** September 2020
+- **General availability (self-update):** September 2020
+- **Auto-update:** October 2020
 
 ## Features included in this release
 
