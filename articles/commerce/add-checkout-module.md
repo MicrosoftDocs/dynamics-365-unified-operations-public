@@ -91,8 +91,9 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
-- **Checkout terms and conditions** - This module can be added to the Checkout module to the Terms and conditions slot. It allows a checkbox and rich text to display the terms and conditions and to recieve the customer input. THe checkbox is optional and configurable. The information is only captured by the module and can be used as a check before the Place order is triggered. However, the information is not persisted in the Order information.
+- **Checkout terms and conditions** - This module allows a checkbox and rich text to display the terms and conditions and to recieve the customer input. The checkbox is optional and configurable. The information is  captured by the module and can be used as a check before the Place order is triggered. However, the information is not persisted in the Order information.
 
+The module can bee added to the Checkout container, Checkout section container or Terms and conditions slot. If added to the Checkout or Checkout section container, it will appear as a step in the checkout process. If added to Terms and Conditions slot, it will appear next to the place order. Depending on the busisness need it can be placed where needed.
 
     ![Example of checkout terms and conditions](./media/ecommerce-checkout-terms.PNG)
 
