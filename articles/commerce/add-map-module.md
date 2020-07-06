@@ -40,15 +40,12 @@ This topic covers the Map module and describes how to add it to site pages in Mi
 
 A Map module visually displays the location of the stores in an interactive map.  This module uses the [Bing Maps V8 Web Control](https://docs.microsoft.com/en-us/bingmaps/v8-web-control/) to render a map.  A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. THe map module provides different views such as Road, Aerial, Streetside etc which the user can choose to view the locations. The map allows interactions such as zoom in and out, locate me in the map etc. These are capabilities provided by the Bing Maps V8 web control.
 
-It works in conjunction with the Store selector module to determine the location where stores need to be rendered. Store selector and Map module interact with each other when a user selects a store on either of them.
+It works in conjunction with the Store selector module to determine the location where stores need to be rendered. Store selector and Map module interact with each other when a user selects a store on either of them. The module can be extended for other scenarios outside Store selector but will require a customization.
 
-Themeing  -TBD
-CSP - TBD
+This module was introduced in 10.0.13 version.
 
-The module can be extended for other scenarios outside Store selector but will require a customization.
-
-Below is an example of the module used in a Store locations page.
-()
+This is an example of the Map module used in a Store locations page
+![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
 
 
 ## Module properties
