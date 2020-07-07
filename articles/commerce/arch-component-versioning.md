@@ -46,7 +46,7 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 ### Service updates
 
-To ensure compatibility between all Dynamics 365 Commerce components that are serviced and deployed by customers and partners, there are several versioning dependencies that need to be followed during servicing updates. The list below describes the full list of dependencies:
+To ensure compatibility between all Dynamics 365 Commerce components that are serviced and deployed by customers and partners, there are several versioning dependencies that must be followed during servicing updates. The following list describes all of these dependencies.
 
 - **Commerce headquarters and Finance and Operations apps must be on the same or newer version as the Commerce Scale Unit (both cloud and self-hosted)**.
 
