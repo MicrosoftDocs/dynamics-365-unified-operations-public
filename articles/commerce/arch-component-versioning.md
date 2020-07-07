@@ -98,23 +98,34 @@ For example, customers who are currently on version 10.0.2 can choose to pause u
 
 ### One Version
 For additional details on One Version service updates, see the following articles.
-- [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
-- [Modernizing the way we update Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
-- [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
+
+[One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
+
+[Modernizing the way we update Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
+
+[New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
 
 ### Component selection
 For additional details on selecting the right components to meet your needs, see the following articles.
-- [Select an in-store topology](dev-itpro/retail-in-store-topology.md)
-- [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
+
+[Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
+
+[Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
 
 ### Servicing instructions
 For additional details on how to service individual components described in this topic, see the following articles.
-- [Configure and install Commerce Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-- [Apply updates and extensions to Retail Cloud Scale Unit](/fin-ops-core/dev-itpro/deployment/update-retail-channel.md)
-- [Configure, install, and active Modern POS (MPOS)](retail-modern-pos-device-activation.md)
-- [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
-- [Package configurations and deploy them to an online channel](e-commerce-extensibility/package-deploy.md)
+
+[Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+[Apply updates and extensions to Retail Cloud Scale Unit](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)
+
+[Configure, install, and active Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
+
+[Package configurations and deploy them to an online channel](./e-commerce-extensibility/package-deploy.md)
 
 ### Extensibility and packing
 For additional details on serviceability for extensions, see the following article.
-- [Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md)
+
+[Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md)
