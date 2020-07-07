@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
 manager: AnnBe
-ms.date: 06/30/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -109,3 +109,25 @@ For additional details on how to service individual components described in this
 ### Extensibility and packing
 For additional details on serviceability for extensions see the following articles:
 - [Create deployable package](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging)
+
+## Additional resources
+
+[Dynamics 365 Commerce architecture overview](commerce-architecture.md)
+
+[Dynamics 365 Commerce authentication flows](arch-auth-flow.md)
+
+[Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md)
+
+[POS worker logon](retail-modern-pos-device-activation.md#create-a-worker)
+
+[Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md)
+
+[Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md)
+
+[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
+
+[Set up custom pages for user sign-ins](custom-pages-user-logins.md)
+
+[Configure authentication providers](/dev-itpro/configure-authentication-providers.md)
+
+[Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md)
