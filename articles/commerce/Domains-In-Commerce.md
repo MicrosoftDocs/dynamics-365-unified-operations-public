@@ -128,16 +128,16 @@ To utilize the Commerce supplied Azure Front Door instance:
   - For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day SLA for a domain to go live as it includes multiple sequential steps for the domain verification and SSL certificate (detailed below in **SSL Certificate Process with Commerce**).
 
 >[!NOTE]
->Custom domains with SSL are only supported on Production environments. For lower environments (Sandbox, UAT), use the Commerce Generated URL to access published content in a web browser.
+>Custom domains with SSL are only supported on production environments. For lower environments (Sandbox, UAT), use the Commerce Generated URL to access published content in a web browser.
 
 ## SSL certificate process
 
 Once a service request is filed, the Commerce team will coordinate the following steps with you:
 
-- For brand new domains:
-  - Commerce will setup the Azure front door (Commerce hosted).
+- For new domains:
+  - Commerce will setup the Azure Front Door instance (Commerce-hosted).
   - Commerce will then provide the CNAME record to point your custom domain.
-  - After the CNAME record is updated, the Commerce hosted Azure front door will be able to verify the domain ownership and get the SSL certificate.
+  - After the CNAME record is updated, the Commerce-hosted Azure Front Door instance will be able to verify the domain ownership and get the SSL certificate.
   
 - For existing/active domains:
   - Commerce will instruct to add an afdverify.`<custom-domain>` CNAME record to add on your domain DNS provider.
@@ -146,11 +146,11 @@ Once a service request is filed, the Commerce team will coordinate the following
 
 ## Apex domains
 
-The Commerce supplied Azure Front Door instance does not support apex domains (also known as naked domains). Apex domains require an IP address to resolve; and the Commerce Azure Front Door instance exists with virtual endpoints only. To utilize an apex domain, you have two options:
+The Commerce-supplied Azure Front Door instance does not support apex domains (also known as naked domains). Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance exists with virtual endpoints only. To use an apex domain, you have two options:
 
-- **Option 1:** Utilize your DNS provider to redirect the apex domain to a www domain (e.g. fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is CNAME to the Commerce hosted Azure front door)
+- **Option 1:** Use your DNS provider to redirect the apex domain to a "www" domain (e.g. fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is CNAME to the Commerce-hosted Azure front door instance.)
 
-- **Option 2:** Set up a CDN / front door instance on your own to host the apex domain.
+- **Option 2:** Set up a CDN/front door instance on your own to host the apex domain.
 
 >[!NOTE]
 >If you are using Azure front door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure front door as an alias record. This is the only work around as apex domains must always point to an IP Address.
