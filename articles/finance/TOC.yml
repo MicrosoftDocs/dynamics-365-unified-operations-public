@@ -2541,7 +2541,8 @@
           - name: Inventory reports
             href: localizations/rus-inventory-reports.md
           - name: Inventory profile
-              name: Inventory profile overview
+            items:
+            - name: Inventory profile overview
               href: localizations/rus-inventory-profile-overview.md
             - name: Set up an inventory profile
               hreF: localizations/rus-set-up-inventory-profile.md
