@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.12
 
 This topic describes how to use the **On-hand list** page to inspect on-hand inventory details. It points out a few of the ways that the various filtering and sorting options work together, and how they can sometimes combine to produce unexpected results.
 
-## Inquire on-hand inventory
+## Query your on-hand inventory
 
 To check the inventory availability, go to **Inventory management \> Inquiries and reports \> On-hand list**.
 
