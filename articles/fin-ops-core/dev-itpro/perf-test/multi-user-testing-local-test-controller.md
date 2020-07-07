@@ -232,22 +232,22 @@ Before you complete the steps in this topic, verify that the following prerequis
 4. Repeat steps 1 through 3 on each AOS computer.
 5. Restart all AOS instances.
 
-### If you have no Remote Desktop access to the server
+### If you do not have Remote Desktop access to the server
 
 If your test environment doesn't allow for Remote Desktop access, then you must open a support request to configure the environment to trust the load test connection. Open a support request, and provide the following information to the support engineer:
 
-    - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
-    - The thumbprint of the **authcert.pfx** certificate.
-    - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
+   - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
+   - The thumbprint of the **authcert.pfx** certificate.
+   - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
 
 ## Create test users
 
 Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
 
-    [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
+   [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
 
-    > [!NOTE]
-    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to do an IISRESET.
+   > [!NOTE]
+    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to use IISRESET.
 
 ## Run multi-user testing by using a local test controller
 
