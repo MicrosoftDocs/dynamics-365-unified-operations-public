@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.13 of Finance and Operations apps (September 2020)
+title: Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/06/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
 
 ---
-# Platform updates for version 10.0.13 of Finance and Operations apps (September 2020)
+# Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
