@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Domains in Commerce
+title: Work with domains in Commerce
 description: This topic describes how domains are used within Dynamics 365 Commerce
 author: BrShoo
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 ---
 
-# Domains in Commerce
+# Work with domains in Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -39,20 +39,20 @@ Domains are the web addresses an end user will utilize in a browser to navigate 
 
 ## Provisioning and supported host names
 
-When provisioning an e-Commerce environment in Dynamics 365 Commerce, the **supported host names** entry is used to input the domain(s) within the Commerce environment deployed. Please note that inputting domains here does not actually start diverting traffic for those domains to Dynamics 365 Commerce yet.
+When provisioning an e-Commerce environment in Dynamics 365 Commerce, the "supported host names" entry is used to input the domain(s) within the deployed Commerce environment. Entering domains here does not actually start diverting traffic for those domains to Dynamics 365 Commerce <<,<that happens when...?>>>.
 
-- These are the customer facing DNS names where the ecommerce website will be hosted.
-- You can use production site hostnames in a sandbox environment as well. This option is ideal when you will be copying the site from sandbox to production. The domain information will be copied in to production, ready to work.
+- This domain is the customer-facing DNS names where the e-Commerce website will be hosted.
+- You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from sandbox to production. The domain information will be copied into production, ready to work.
 - Separate multiple supported host names by a semi-colon
-- Create a Service Request to add additional domains to the environment if provisioning has already occurred.
+- Create a service request to add additional domains to the environment if provisioning has already occurred.
 
-When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the ‘e-Commerce site’ link shown in LCS after the environment is provisioned.
+When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the "e-Commerce site" link shown in Microsoft Lifecycle Services (LCS) after the environment is provisioned.
 
 - An example **Commerce Generated URL** is *https://`<e-Commerce tenant>`.commerce.dynamics.com*; where the e-Commerce tenant name you input for the environment is utilized
 
-- Non-production environments will show a suffix reflecting the environment type within the Commerce Generated URL (example format of a sandbox environment: https://`<e-Commerce tenant name`>-**sandbox**.commerce.dynamics.com). Note that in the future, the “-sandbox” suffix will be removed.
+- Non-production environments will show a suffix reflecting the environment type within the Commerce Generated URL (example format of a sandbox environment: https://`<e-Commerce tenant name`>-**sandbox**.commerce.dynamics.com). Note that in the future, the "-sandbox" suffix will be removed.
 
-## Site Setup and generated URLs in Dynamics Commerce
+## Site setup and generated URLs
 
 Once your e-Commerce environment is provisioned, perform an initiate site setup in site builder to associate a site to the working URL.
 
@@ -82,7 +82,7 @@ If you had added a Path of ‘fabrikam’ during this same site’s setup instea
 
 - `https://xyz.commerce.dynamics.com/fabrikam`
 
-## Pages and URLs in Dynamics 365 Commerce
+## Pages and URLs
 
 Once your site is set up with a path, all URLs associated to pages in site builder will reference off the initial working URL for the site.
 
@@ -92,7 +92,7 @@ Creating a new URL will allow a URL path to be designated for the Page associate
 
 ![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder.png)
 
-## Domains in Dynamics Commerce
+## Domains
 
 The **Supported host names** values are available to be associated as a **domain** when setting up a site. When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder when working in site builder. This domain is a reference only within the Commerce environment, live traffic for that domain is not yet forwarded to dynamics commerce.
 
@@ -100,7 +100,7 @@ When working with sites in site builder, if you have two sites set up with diffe
 
 For example: 
 
-Environment ‘xyz’ has been provisioned, and two sites created- one with domain `www.fabrikam.com` and the other with domain `www.constoso.com` associated in site builder. Each using the blank **Path**. These two sites could be referenced in a web browser using the following ‘?domain’ attribute:
+Environment "xyz" has been provisioned, and two sites created- one with domain `www.fabrikam.com` and the other with domain `www.constoso.com` associated in site builder. Each using the blank **Path**. These two sites could be referenced in a web browser using the following ‘?domain’ attribute:
 - `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
 - `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
 
@@ -127,9 +127,10 @@ To utilize the Commerce supplied Azure Front Door instance:
   - For brand new domain, the domain verification and SSL certificate can be achieved in a single step. 
   - For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day SLA for a domain to go live as it includes multiple sequential steps for the domain verification and SSL certificate (detailed below in **SSL Certificate Process with Commerce**).
 
-**Note**: Custom domains with SSL are only supported on Production environments. For lower environments (Sandbox, UAT,), use the Commerce Generated URL to access published content in a web browser.
+>[!NOTE]
+>Custom domains with SSL are only supported on Production environments. For lower environments (Sandbox, UAT), use the Commerce Generated URL to access published content in a web browser.
 
-## SSL certificate process with Commerce
+## SSL certificate process
 
 Once a service request is filed, the Commerce team will coordinate the following steps with you:
 
