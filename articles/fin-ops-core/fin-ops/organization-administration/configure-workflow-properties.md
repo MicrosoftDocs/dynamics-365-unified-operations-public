@@ -5,7 +5,7 @@ title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -97,7 +97,7 @@ Follow these steps to specify when the workflow that you're configuring is used.
 3. Click **Add condition**.
 4. Enter a condition.
 5. Enter any additional conditions that are required.
-6. Run through the workflow with some target records to verfiy that the condition correctly includes and excludes records.
+6. Run through the workflow with some target records to verify that the condition correctly includes and excludes records.
 
 ## Specify when notifications are sent
 
