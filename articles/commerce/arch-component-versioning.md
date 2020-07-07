@@ -45,7 +45,8 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 ## Component dependencies
 
 ### Service updates
-To ensure compatibility between all Dynamics 365 Commerce components that are serviced and deployed by customers and partners there are several versioning dependencies that need to be followed during servicing updates. The list below describes the full list of dependencies:
+
+To ensure compatibility between all Dynamics 365 Commerce components that are serviced and deployed by customers and partners, there are several versioning dependencies that need to be followed during servicing updates. The list below describes the full list of dependencies:
 
 - **Finance and Operations apps/Commerce headquarters must be on the same or newer version as the Commerce Scale Unit (both cloud and self-hosted)**.
   For example, if the Finance and Operations apps/Commerce headquarters is on version 10.0.10, then the Commerce Scale Unit must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
@@ -54,15 +55,15 @@ To ensure compatibility between all Dynamics 365 Commerce components that are se
   For example, if the Commerce Scale Unit is on version 10.0.10, then the Modern POS, Hardware Station, and Commerce storefront must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
  
 - **Extension packages must be compiled against the same or newer version as the target component to which the extension applies.**
-  - For example, if the deployed Commerce Scale Unit is on version 10.0.10 then the corresponding extension packages must be compiled against version 10.0.10 or earlier (for example, 10.0.10, 10.0.9, etc).
+  - For example, if the deployed Commerce Scale Unit is on version 10.0.10 then the corresponding extension packages must be compiled against version 10.0.10 or earlier (for example, 10.0.10, 10.0.9, etc.).
 
 ### Quality updates
 
-During quality updates there are no specific versioning requirements that need to be followed for each of the Dynamics 365 Commerce components aside from what is required for service updates.
+During quality updates, there are no specific versioning requirements that need to be followed for each of the Dynamics 365 Commerce components aside from what is required for service updates.
 
 ## Current supported versions
 
-The following describes the current supported versions of various Dynamics 365 Commerce components as of **July 1st, 2020**.
+The following table describes the current supported versions of various Dynamics 365 Commerce components as of **July 1, 2020**.
 | | Latest available release | Latest available component version number | Earliest supported release | Earliest supported component version number |
 | --- | :-: | :-: | :-: | :-: |
 | Finance and Operations app | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
@@ -74,7 +75,7 @@ The following describes the current supported versions of various Dynamics 365 C
 
 ## One Version requirements
 
-Dynamics 365 Commerce components follow the same [One Version service updates](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that were announced in July 2018 as well as the subsequently published [flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/) announced in June 2019. For additional details, see the [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
+Dynamics 365 Commerce components follow the same [One Version service updates](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that were announced in July 2018 as well as the subsequently published [flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/) announced in June 2019. For more information, see the [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Cloud components
 
@@ -97,7 +98,7 @@ For example, customers who are currently on version 10.0.2 can choose to pause u
 ## Additional resources
 
 ### One Version
-For additional details on One Version service updates, see the following articles.
+For more information on One Version service updates, see the following articles.
 
 [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
 
@@ -106,14 +107,14 @@ For additional details on One Version service updates, see the following article
 [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
 
 ### Component selection
-For additional details on selecting the right components to meet your needs, see the following articles.
+For more information on selecting the right components to meet your needs, see the following articles.
 
 [Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
 
 [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
 
 ### Servicing instructions
-For additional details on how to service individual components described in this topic, see the following articles.
+For more information on how to service individual components described in this topic, see the following articles.
 
 [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
@@ -126,6 +127,6 @@ For additional details on how to service individual components described in this
 [Package configurations and deploy them to an online channel](./e-commerce-extensibility/package-deploy.md)
 
 ### Extensibility and packing
-For additional details on serviceability for extensions, see the following article.
+For more information on serviceability for extensions, see the following article.
 
 [Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md)
