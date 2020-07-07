@@ -77,7 +77,7 @@ Use the **Filters** pane to filter the on-hand inventory list to include only re
 You can modify the set of filters available on the **Filters** pane by doing the following:
 
 - To remove a filter from the pane, select its close button ( **X** ).
-- To add a filter, select **+Add** at the top of the **Filters** pane. This opens the **Add filter fields** dialog box, which shows a list of the available fields together with data type and table information for each of them. Use the column headings to filter and sort the list as needed. Mark the check box for each filed you'd like to add and select **Insert** to apply your setting.
+- To add a filter, select **+Add** at the top of the **Filters** pane. This opens the **Add filter fields** dialog box, which shows a list of the available fields together with data type and table information for each of them. Use the column headings to filter and sort the list as needed. Mark the check box for each field you'd like to add and select **Insert** to apply your setting.
 
 <a name="dimensions"></a>
 ## Choose which dimensions to display
