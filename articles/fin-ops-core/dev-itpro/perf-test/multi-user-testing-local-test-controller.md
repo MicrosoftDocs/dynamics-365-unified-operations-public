@@ -5,7 +5,7 @@ title: Multi-user testing with the Performance SDK and a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
 author: hasaid
 manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
