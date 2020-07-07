@@ -49,13 +49,16 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 To ensure compatibility between all Dynamics 365 Commerce components that are serviced and deployed by customers and partners, there are several versioning dependencies that need to be followed during servicing updates. The list below describes the full list of dependencies:
 
 - **Finance and Operations apps/Commerce headquarters must be on the same or newer version as the Commerce Scale Unit (both cloud and self-hosted)**.
-  For example, if the Finance and Operations apps/Commerce headquarters is on version 10.0.10, then the Commerce Scale Unit must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
+
+    For example, if the Finance and Operations apps/Commerce headquarters is on version 10.0.10, then the Commerce Scale Unit must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
  
 - **Commerce Scale Unit must be on the same or newer version than the Modern Point of Sale (POS), Hardware Station, and Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes)**.
-  For example, if the Commerce Scale Unit is on version 10.0.10, then the Modern POS, Hardware Station, and Commerce storefront must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
+
+    For example, if the Commerce Scale Unit is on version 10.0.10, then the Modern POS, Hardware Station, and Commerce storefront must be on version 10.0.10 or earlier (for example, 10.0.9, 10.0.8, etc.).
  
 - **Extension packages must be compiled against the same or newer version as the target component to which the extension applies.**
-  - For example, if the deployed Commerce Scale Unit is on version 10.0.10 then the corresponding extension packages must be compiled against version 10.0.10 or earlier (for example, 10.0.10, 10.0.9, etc.).
+
+    For example, if the deployed Commerce Scale Unit is on version 10.0.10 then the corresponding extension packages must be compiled against version 10.0.10 or earlier (for example, 10.0.10, 10.0.9, etc.).
 
 ### Quality updates
 
