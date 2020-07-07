@@ -205,10 +205,10 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 Here is an explanation of the parameters:
 
-- **ssn** (source server name) – The name of the SQL Server to export from. For our process, this parameter should always be set to **localhost**.
+- **ssn** (source server name) – The name of the SQL Server to export from. For this process, the parameter should always be set to **localhost**.
 - **sdn** (source database name) – The name of the database to export.
 - **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the file will be created by the process.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
 
 ## Upload the bacpac file to Azure storage or the LCS Asset Library
 
@@ -218,8 +218,8 @@ The bacpac file you have created will need to be copied to the AOS machine in yo
 
 You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
-Another (free) option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option:
-1. Log into your project in LCS and go to your Asset library.
+Another option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option:
+1. Sign in to your project in LCS and go to your Asset library.
 2. Select the Database backup tab.
 3. Upload the bacpac file.
 You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that VM and downloading it from the LCS Asset library.
@@ -249,19 +249,18 @@ Here is an explanation of the parameters:
 - **tsn** (target server name) – The name of the SQL Azure server to import to. The name can be found in LCS. Suffix it with **.database.windows.net**.
 - **tdn** (target database name) – The name of the database to import to. The database should not already exist. The import process will create it.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
-- **tp** (target password) – The SQL password for the target SQL Database instance.
-- **mp** (max parallelism) - Specifies the degree of parallelism for concurrent operations running against a database. The default value is 8. A value of 64 seems to give the best performance in most scenarios.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
+- **tp** (target password) – The SQL password for the target SQL database instance.
+- **mp** (max parallelism) - Specifies the degree of parallelism for concurrent operations running against a database. The default value is 8. A value of 64 provides the best performance in most scenarios.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
 - **/p:DatabaseEdition** – Specifies the edition of the database such as Basic, Standard, Premium, GeneralPurpose, BusinessCritical, or Hyperscale. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
 - **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, P4, or GP_Gen5_8. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
-- **/p:DatabaseMaximumSize** – Defines the maximum size in GB of an Azure SQL Database. You might need to use this parameter to allow a large database to be imported.
+- **/p:DatabaseMaximumSize** – Defines the maximum size in GB of an Azure SQL database. You may need to use this parameter to allow a large database to be imported.
 
-After you run the commands, you may see the following warning. You can safely ignore it.
+After you run the commands, you may receive the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
 
-If you face an error message about an invalid value, double-check your parameters. If they are fine, you might need to use a newer version of SqlPackage. You can use the [Windows .NET Core](/sql/tools/sqlpackage-download) version without the need to install. It is a .zip file that can be extracted to C:\Temp\Sqlpackage-dotnetcore, for example. Now when you import the database, instead of using the Sqlpackage.exe under C:\Program Files (x86) you can use the Sqlpackage.exe in C:\Temp\Sqlpackage-dotnetcore
-
+If you receive an error message about a non-valid value, double-check your parameters. If they are okay, you may need to use a newer version of SqlPackage. You can use the [Windows .NET Core](/sql/tools/sqlpackage-download) version without the need to install. It is a .zip file that can be extracted to C:\Temp\Sqlpackage-dotnetcore, for example. Now when you import the database, instead of using the Sqlpackage.exe under C:\Program Files (x86) you can use the Sqlpackage.exe in C:\Temp\Sqlpackage-dotnetcore.
 
 
 ## Run a T-SQL script to update the database
