@@ -38,7 +38,7 @@ Data configuration and synchronization is crucial to a proper implementation.  R
 Before going through this document, it is important to know the concepts of a channel (Store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this document such as the Devices implementation guide and the Commerce architecture documents. 
 
 ### Important Headquarters forms
-The **Channel database** page is  ADD DESCRIPTION.
+The **Channel database** page is used to create, review, and edit the channel databases (Used in Commerce Scale Units (Both Cloud and Self-hosted)) and offline databases (Used with Modern POS).
 Add image for this...
 
 The **Channel database group** page is  ADD DESCRIPTION.
