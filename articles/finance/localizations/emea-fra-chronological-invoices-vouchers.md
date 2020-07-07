@@ -61,7 +61,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 <tbody>
 <tr class="odd">
 <td>Feature activation</td>
-<td>In the **Feature management** workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).</td>
+<td>In the <strong>Feature management</strong> workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see <strong>Feature management overview</strong>.</td>
 </tr>
 <tr class="even">
 <td>Country/region</td>
