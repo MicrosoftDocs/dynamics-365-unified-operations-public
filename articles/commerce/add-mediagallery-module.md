@@ -5,7 +5,7 @@ title: Media gallery module
 description: This topic covers Media gallery module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -42,7 +42,7 @@ The Media gallery module is to display media (images) in a gallery view. It can 
 
 Currently the module supports only images.
 
-In the default mode, Media gallery uses the product id available in page context (i.e.product details page) to render the corresponding product images. In HQ, the Media file path must be defined for Products. The images should then be uploaded to Site Builder's [Digital Asset Management](dam-upload-images) per the file path that was defined for the products. This includes images for products and variants if applicable.
+In the default mode, Media gallery uses the product id available in page context (i.e.product details page) to render the corresponding product images. In HQ, the Media file path must be defined for Products. The images should then be uploaded to the Commerce site builder Media Library per the file path that was defined for the products. This includes images for products and variants if applicable. For more information on uploading images, see [Upload images](dam-upload-images.md).
 
 In addition, the Media gallery can host a fully curated set of images on an image gallery page with no dependencies on a product. As a precursor, the images need to be first uploaded to Site Builder's Digital Asset Management. 
 
@@ -105,5 +105,5 @@ To add an Image gallery module to a Marketing page,
 
 [Container module](add-container-module.md)
 
-[Digital Asset Management](dam-upload-images)
+[Digital Asset Management](dam-upload-images.md)
 
