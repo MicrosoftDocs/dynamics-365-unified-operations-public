@@ -69,7 +69,7 @@ During quality updates, there are no specific versioning requirements that need 
 The following table describes the current supported versions of various Dynamics 365 Commerce components as of **July 1, 2020**.
 | | Latest available release | Latest available component version number | Earliest supported release | Earliest supported component version number |
 | --- | :-: | :-: | :-: | :-: |
-| Finance and Operations app | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
+| Finance and Operations apps | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
 | Commerce Scale Unit (cloud-hosted) | 10.0.12 | 9.22 | 10.0.9 | 9.19 |
 | Commerce Store Starter Kit (SSK) | 10.0.12 | 9.22 | 10.0.9 | 9.22 |
 | Commerce Scale Unit (self-hosted) | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
@@ -82,25 +82,26 @@ Dynamics 365 Commerce components follow the same [One Version service updates](h
 
 ### Cloud components
 
-Customers can choose to pause up to three consecutive updates (which correspond to roughly six calendar months) across the following components:
+Customers can choose to pause up to three consecutive updates (which corresponds to roughly six calendar months) across the following components:
 - Dynamics 365 Commerce headquarters and Finance and Operations apps
 - Commerce Scale Unit (cloud-hosted)
-- Commerce SDK and associated local site configurations (such as modules, data actions, and themes).
+- Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
 
-For example, customers who are currently on version 10.0.2 can choose to pause updates to versions 10.0.3, 10.0.4, and 10.0.5 but must then update to version 10.0.6. In this scenario, once 10.0.7 becomes available, version 10.0.2 is no longer supported.
+For example, customers who are currently on version 10.0.2 can choose to pause updates to versions 10.0.3, 10.0.4, and 10.0.5, but must then update to version 10.0.6. In this scenario, once version 10.0.7 becomes available, version 10.0.2 is no longer supported.
 
 ### In-store components
 
-Customers can choose to pause up to seven consecutive updates (which correspond to roughly twelve calendar months) across the following components:
+Customers can choose to pause up to seven consecutive updates (which corresponds to roughly twelve calendar months) across the following components:
 - Commerce Scale Unit (in-store hosted)
 - Modern POS
 - Hardware Station 
 
-For example, customers who are currently on version 10.0.2 can choose to pause updates to versions 10.0.3 through 10.0.9 but must then update to version 10.0.10. In this scenario, once 10.0.11 becomes available, version 10.0.2 is no longer supported.
+For example, customers who are currently on version 10.0.2 can choose to pause updates to versions 10.0.3 through 10.0.9, but must then update to version 10.0.10. In this scenario, once version 10.0.11 becomes available, version 10.0.2 is no longer supported.
 
 ## Additional resources
 
-### One Version
+### One Version service updates
+
 For more information on One Version service updates, see the following articles.
 
 [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
@@ -110,6 +111,7 @@ For more information on One Version service updates, see the following articles.
 [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
 
 ### Component selection
+
 For more information on selecting the right components to meet your needs, see the following articles.
 
 [Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
@@ -117,6 +119,7 @@ For more information on selecting the right components to meet your needs, see t
 [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
 
 ### Servicing instructions
+
 For more information on how to service individual components described in this topic, see the following articles.
 
 [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
@@ -130,6 +133,7 @@ For more information on how to service individual components described in this t
 [Package configurations and deploy them to an online channel](./e-commerce-extensibility/package-deploy.md)
 
 ### Extensibility and packing
+
 For more information on serviceability for extensions, see the following article.
 
 [Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md)
