@@ -61,7 +61,7 @@ Additional environments may be purchased as add-ons. For information about licen
 Here's how the lifecycle maps to the available environments.  If you already have environments deployed in your Lifecycle Services project, you can find the Environment Type and Environment Sub type on each environment's details page.
 
 | Lifecycle phase      | Environment Tier         | Subscription            | Environment types                 | Environment Sub type 
-|-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|
+|-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
 | Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
 | Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
 | Golden configuration          | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
