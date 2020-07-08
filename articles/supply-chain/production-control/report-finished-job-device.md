@@ -17,7 +17,7 @@ ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -40,10 +40,10 @@ To control whether and how the quantities that are reported as finished on the l
 1. Go to **Product control \> Setup \> Manufacturing execution \> Production order defaults**.
 1. On the **Report as finished** tab, set the **Update finished report on-line** field to one of the following values:
 
-    - **No** – No quantity will be added to inventory when quantities are reported on the last operation. The status of the production order will never change.
-    - **Status + Quantity** – The status of the production order will change to *Reported as finished*, and the quantity will be reported as finished to inventory.
-    - **Quantity** – The quantity will be reported as finished to inventory, but the status of the production order will never change.
-    - **Status** – Only the status of the production order will change. No quantities will be added to inventory when quantities are reported on the last operation.
+  - **No** – No quantity will be added to inventory when quantities are reported on the last operation. The status of the production order will never change.
+  - **Status + Quantity** – The status of the production order will change to *Reported as finished*, and the quantity will be reported as finished to inventory.
+  - **Quantity** – The quantity will be reported as finished to inventory, but the status of the production order will never change.
+  - **Status** – Only the status of the production order will change. No quantities will be added to inventory when quantities are reported on the last operation.
 
 > [!NOTE]
 > Quantities aren't tracked in inventory if the operations that they are reported as finished on aren't defined as the last operation. However, those quantities can be used to view progress. They can also be included in rules that control whether workers can start the next operation before a defined threshold of reported quantities on the previous operation is reached. You can define these rules on the **Quantity validation** tab of the **Production order defaults** page.
@@ -54,9 +54,9 @@ For more information about how to work with the **Production order defaults** pa
 
 The job card device supports three scenarios for reporting on batch items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
 
-- **Manually assigned batch numbers:** Workers enter a custom batch number. This batch number might come from an external source that isn't known to the system.
-- **Predefined batch numbers:** Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
-- **Fixed batch numbers:** Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
+- **Manually assigned batch numbers**: Workers enter a custom batch number. This batch number might come from an external source that isn't known to the system.
+- **Predefined batch numbers**: Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
+- **Fixed batch numbers**: Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
 
 To enable each scenario, follow these steps.
 
@@ -84,8 +84,8 @@ To allow for manually assigned batch numbers, follow these steps to set up a tra
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Manual** option to **Yes**.
 
-    ![Tracking number groups page](media/tracking-number-group-manual.png "Tracking number groups page")
-
+    ![Tracking number groups page, batch numbers](media/tracking-number-group-manual-serial.png "Tracking number groups page, batch numbers")
+<!-- KFM continue here -->
 1. Set other values as you require, and then select this tracking number group as the batch number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Batch number** field that the **Report progress** page on the job card device provides is a text box where workers can enter any value.
@@ -126,6 +126,121 @@ When you use this scenario, the **Batch number** field that the **Report progres
 
 ![Report progress page with a fixed batch number](media/job-card-device-batch-fixed.png "Report progress page with a fixed batch number")
 
+
+
+
+
+
+
+
+
+
+
+
+
+## Report serial-controlled items as finished
+
+The job card device supports three scenarios for reporting on serial-controlled items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
+
+- **Manually assigned serial numbers**: Workers enter a custom serial number. This serial number might come from an external source that isn't known to the system.
+- **Predefined serial numbers**: Workers select a serial number in a list of serial numbers that the system automatically generates before the production order is released to the job card device.
+- **Fixed serial number**: Workers don't enter or select a serial number. Instead, the system automatically assigns a serial number to the production order before it's released.
+
+To enable each scenario, follow these steps.
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Select the product to configure.
+1. On the **Manage inventory** FastTab, in the **Serial number group** field, select the tracking number group that is set up to support your scenario.
+
+> [!NOTE]
+> By default, if no serial number group is assigned to a serial-controlled product, the job card device provides manual entry for the serial number during reporting as finished.
+
+The following subsections describe how to set up tracking number groups to support each of the three scenarios for reporting on serial controlled items.
+
+### Enable serial number reporting on the job card device
+
+To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
+
+1. Improved user experience for the Report progress dialog in the Job Card Device
+1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device (Preview)
+
+### Set up a tracking number group that lets workers manually assign a serial number**
+
+To allow for manually assigned serial numbers, follow these steps to set up a tracking number group.
+
+1. Go to **Inventory management \> Setup \> Dimensions \> Tracking number groups**.
+1. Create or select the tracking number group to set up.
+1. On the **General** FastTab, set the **Manual** option to **Yes**.
+
+    ![Tracking number groups page, serial numbers](media/tracking-number-group-manual.png "Tracking number groups page, serial numbers")
+
+
+1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
+
+When you use this scenario, the **Serial number** field that the **Report progress** page on the job card device provides is a text box where workers can enter any value for the serial number. Once a value is entered it will populate in a list. In this list the user can confirm a serial number as scrapped by selecting the **Scrap** button. In that case an **Error cause** also needs to be provided. The user can also delete a serial number from the list.
+
+![](RackMultipart20200708-4-1th5ao8_html_f6cfca59a6627465.png)
+
+**Set up a tracking number group that provides a list of predefined serial numbers**
+
+To provide a list of predefined serial numbers, follow these steps to set up a tracking number group.
+
+1. Go to **Inventory management \> Setup \> Dimensions \> Tracking number groups**.
+1. Create or select the tracking number group to set up.
+1. On the **General** FastTab, set the **Only for inventory transactions** option to **Yes**.
+1. Use the **Per qty.** field to split serial numbers per quantity of one.
+
+![](RackMultipart20200708-4-1th5ao8_html_e56ee1f24f925963.png)
+
+1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
+
+When you use this scenario, the **Serial number** field that the **Report progress** page on the job card device provides is a drop-down list where workers must select a predefined value.
+
+![](RackMultipart20200708-4-1th5ao8_html_531ff1e1f4ec7c8a.png)
+
+**Set up a tracking number group that automatically assigns serial numbers**
+
+If a serial number should be assigned automatically, without worker input, follow these steps to set up a tracking number group.
+
+1. Go to **Inventory management \> Setup \> Dimensions \> Tracking number groups**.
+2. Create or select the tracking number group to set up.
+3. On the **General** FastTab, set the **Only for inventory transactions** option to **No**.
+4. Set the **Manual** option to **No**.
+
+![](RackMultipart20200708-4-1th5ao8_html_dce5c99698c0f74d.png)
+
+1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
+
+When you use this scenario, the **Serial number** field that the **Report progress** page on the job card device provides shows a value, but workers can't edit it. This scenario is only relevant when a production order is created for a quantity of one piece of a serial number-controlled item.
+
+![](RackMultipart20200708-4-1th5ao8_html_8198bc016b42c388.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Report as finished to a license plate
 
 Advanced warehouse processes can use the license plate dimension to track inventory on warehouse locations that have been set up for this purpose. In this case, the license plate number is required when a worker reports quantities as finished.
@@ -145,8 +260,8 @@ To control whether workers should reuse an existing license plate or generate a 
 1. Go to **Production control \> Setup \> Manufacturing execution \> Configure job card for devices**.
 2. Set the following options for each device:
 
-    - **Generate license plate** – Set this option to **Yes** to generate a new license plate for each report as finished. Set it to **No** if an existing license plate should be used for each report as finished.
-    - **Print label** – Set this option to **Yes** if the worker must print a license plate label for each report as finished. Set it to **No** if no label is required. 
+  - **Generate license plate** – Set this option to **Yes** to generate a new license plate for each report as finished. Set it to **No** if an existing license plate should be used for each report as finished.
+  - **Print label** – Set this option to **Yes** if the worker must print a license plate label for each report as finished. Set it to **No** if no label is required. 
 
 ![Configure job card for devices page](media/config-job-card-raf.png "Configure job card for devices page")
 
