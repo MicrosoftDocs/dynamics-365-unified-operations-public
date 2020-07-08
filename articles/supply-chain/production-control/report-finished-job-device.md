@@ -87,7 +87,7 @@ To allow for manually assigned batch numbers, follow these steps to set up a tra
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Manual** option to **Yes**.
 
-    ![Tracking number groups page, batch numbers](media/tracking-number-group-manual.png "Tracking number groups page, batch numbers")
+    ![A tracking number group for manual batch numbers](media/tracking-number-group-manual.png "A tracking number group for manual batch numbers")
 
 1. Set other values as you require, and then select this tracking number group as the batch number group for released products that you want to use this scenario for.
 
@@ -231,8 +231,8 @@ To control whether workers should reuse an existing license plate or generate a 
 1. Go to **Production control \> Setup \> Manufacturing execution \> Configure job card for devices**.
 2. Set the following options for each device:
 
-  - **Generate license plate** – Set this option to **Yes** to generate a new license plate for each report as finished. Set it to **No** if an existing license plate should be used for each report as finished.
-  - **Print label** – Set this option to **Yes** if the worker must print a license plate label for each report as finished. Set it to **No** if no label is required. 
+    - **Generate license plate** – Set this option to **Yes** to generate a new license plate for each report as finished. Set it to **No** if an existing license plate should be used for each report as finished.
+    - **Print label** – Set this option to **Yes** if the worker must print a license plate label for each report as finished. Set it to **No** if no label is required. 
 
 ![Configure job card for devices page](media/config-job-card-raf.png "Configure job card for devices page")
 
