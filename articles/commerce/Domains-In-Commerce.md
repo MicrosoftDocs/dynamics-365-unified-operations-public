@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Work with domains in Commerce
-description: This topic describes how domains are used within Dynamics 365 Commerce
+title: Manage domains in Commerce
+description: This topic describes how domains are managed in Microsoft Dynamics 365 Commerce.
 author: BrShoo
 manager: AnnBe
 ms.date: 07/15/2020
@@ -27,11 +27,11 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 ---
 
-# Work with domains in Commerce
+# Manage domains in Commerce
 
 [!include [banner](includes/banner.md)]
 
-The following article reviews how domains are handled within Dynamics 365 Commerce from provisioning through to site launch.
+This topic describes how domains are managed in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
