@@ -35,11 +35,13 @@ This topic describes how domains are managed in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Domains are the web addresses an end user will utilize in a browser to navigate to your Dynamics 365 Commerce site. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Commerce site builder to coordinate how a site will be reflected when published. This article will review how domains are referenced throughout the lifecycle of the Commerce site development and launch.
+Domains are web addresses used to navigate to your Dynamics 365 Commerce site in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Commerce site builder to coordinate how a site will be accessed when published. This article will review how domains are referenced throughout the lifecycle of the Commerce site development and launch.
 
 ## Provisioning and supported host names
 
-When provisioning an e-Commerce environment in Dynamics 365 Commerce, the "supported host names" entry is used to input the domain(s) within the deployed Commerce environment. Entering domains here does not actually start diverting traffic for those domains to Dynamics 365 Commerce <<,<that happens when...?>>>.
+When provisioning an e-Commerce environment in Dynamics 365 Commerce, the "supported host names" field is used to enter the domain(s) that will be associated with the deployed Commerce environment. 
+
+Entering domains here does not actually start diverting traffic for those domains to Dynamics 365 Commerce <<,<that happens when...?>>>.
 
 - This domain is the customer-facing DNS names where the e-Commerce website will be hosted.
 - You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from sandbox to production. The domain information will be copied into production, ready to work.
@@ -48,9 +50,11 @@ When provisioning an e-Commerce environment in Dynamics 365 Commerce, the "suppo
 
 When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the "e-Commerce site" link shown in Microsoft Lifecycle Services (LCS) after the environment is provisioned.
 
-- An example **Commerce Generated URL** is *https://`<e-Commerce tenant>`.commerce.dynamics.com*; where the e-Commerce tenant name you input for the environment is utilized
+- An example Commerce-generated URL is `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the domain you input for the Commerce environment.
 
-- Non-production environments will show a suffix reflecting the environment type within the Commerce Generated URL (example format of a sandbox environment: https://`<e-Commerce tenant name`>-**sandbox**.commerce.dynamics.com). Note that in the future, the "-sandbox" suffix will be removed.
+- Non-production environments will show a suffix reflecting the environment type within the Commerce generated URL (for example, format of a sandbox environment: `https://<e-Commerce tenant name>-sandbox.commerce.dynamics.com`). Note that in the future, the "-sandbox" suffix will be removed.
+
+For more information on provisioning your site, see [Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md).
 
 ## Site setup and generated URLs
 
