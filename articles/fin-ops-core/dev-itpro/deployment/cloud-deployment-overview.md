@@ -3,9 +3,9 @@
 
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
-author: kfend
+author: laswenka
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,37 +36,55 @@ ms.dyn365.ops.version: Platform Update 8
 Working with Microsoft to deploy Finance and Operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
 We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
 
-## Customer lifecycle, subscriptions, and deployment topologies
+## Customer lifecycle, subscriptions, and environment types
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
 
 - Evaluate
 - Develop customizations, if needed
+- Curate a "golden configuration" environment that contains only module configurations without master or transactional data.  This is to be the baseline for your data migration testing and eventual go live.
 - Install and test customizations and partner solutions on a tier-1 sandbox (Development or test environment) 
 - Test customizations, partner solutions and data configuration on a tier-2 sandbox environment
 - Deploy customizations and data configurations to a production environment with high availability
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-You may hear the terms, Customer, Partner, and Microsoft subscriptions. A *customer or partner subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
-A *Microsoft subscription* means that the customer purchases Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. With each Enterprise offer, three environments are included by default. 
+You may hear the terms Cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
+A *Microsoft subscription* means that the customer purchases Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
-- One Tier-1 sandbox which is a development or build environment.
-- One Tier-2 sandbox (multi-box environment) for user acceptance testing (UAT).
-- One production environment with High Availability (HA). This environment is managed and operated by Microsoft.
+With each Enterprise offer, three environments are included by default:
+- One Tier 1 sandbox which can be used for demo, building, golden configuration or development.
+- One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
+- One production environment with High Availability (HA). 
 
 Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-Here's how the lifecycle maps to the available environments.
+Here's how the lifecycle maps to the available environments.  If you already have environments deployed in your Lifecycle Services project, you can find the Environment Type and Environment Sub type on each environment's details page.
 
-| Lifecycle phase               | Environment                               | Subscription                                        |
-|-------------------------------|-------------------------------------------|-----------------------------------------------------|
-| Evaluation and analysis       | Demo, one-box                             | Customer or partner subscription.                                |
-| Customize                     | Dev/build, one-box                        | Microsoft subscription, partner/customer subscription, or local VM
-| User acceptance testing (UAT) | Tier-2 sandbox, multi-box environment | Microsoft subscription                              |
-| Go live                       | Production, High Availability multi-box environment                    | Microsoft subscription                              |
+| Lifecycle phase      | Environment Tier         | Subscription            | Environment types                 | Environment Sub type 
+|-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|
+| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
+| Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
+| Golden configuration          | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
+| User acceptance testing (UAT) | Tiers 2-5 sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
+| Go live                       | Production | Microsoft                    | Microsoft Managed or Self-service | Not applicable     
 
-## Features of a production instance
-A production instance has the following capabilities.
+*Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.
+
+### Environment lifecycle operations
+Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
+
+| Lifecycle operation | Description | Learn more
+|---------------------|-------------|------------|
+| Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md).
+| Enable access | Whitelist your IP for Remote Desktop or Database access | See Remote Desktop section of this article below
+| Restart services | Ability to restart components of your environment | [Restart services](../lifecycle-services//lifecycle-services/restart-environment-services.md)
+| Move database | Full data lifecycle management | [Database movement operations](../database/dbmovement-operations.md)
+| Maintenance mode | Ability to change configuration with only admin access | [Maintenance mode](../sysadmin/maintenance-mode.md)
+| Upgrade | Upgrade code and data from 7.x to the latest version | [Process for moving to the latest version](../migration-upgrade/upgrade-latest-update.md)
+| Deallocate | Ability to turn off an environment not being used, or to troubleshoot a failed action | Not applicable
+| Start | Ability to turn on an environment for use | Not applicable
+| Delete | Ability to delete an environment previously deallocated | Not applicable
+
 
 ## Security and compliance
 Finance and Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
@@ -85,7 +103,11 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 ## Remote Desktop
 
 ### Microsoft-managed environments
-Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
+
+> [!WARNING]
+> Microsoft will be removing the use of Remote Desktop by customers and partners.  Each environment will first have administrator access removed, but still allowing non-administrator access to the virtual machines.  Thereafter all access will be removed.  For each step of this phased removal, an email notification will be sent to the Notification list setup for each environment.  All Remote Desktop access will be removed by November 2020.
+
+Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
 > Customers need to ensure that RDP endpoints are secured through explicit IP safe list rules as mentioned above. The IP safe list rules must adhere to the following conditions.
