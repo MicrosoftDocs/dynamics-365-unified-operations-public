@@ -5,7 +5,7 @@ title: Application lifecycle management for solutions that use virtual entities
 description: This topic explains the application lifecycle for solutions that use virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.0
 # Application lifecycle management for solutions that use virtual entities
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
