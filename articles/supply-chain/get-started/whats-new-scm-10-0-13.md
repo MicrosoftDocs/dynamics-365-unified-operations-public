@@ -50,7 +50,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)
 
-<!-- KFM: out for now unless I hear otherwise - [Enhanced shop floor terminal for discrete manufacturing](#) -->
+- [Enhanced shop floor terminal for discrete manufacturing](#)
 
 - [Enter serial numbers while reporting as finished from the job card device](#)
 
