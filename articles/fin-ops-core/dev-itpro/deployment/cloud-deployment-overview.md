@@ -56,11 +56,11 @@ With each Enterprise offer, three environments are included by default:
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with High Availability (HA). 
 
-Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 Here's how the lifecycle maps to the available environments.  If you already have environments deployed in your Lifecycle Services project, you can find the Environment Type and Environment Sub type on each environment's details page.
 
-| Lifecycle phase      | Environment Tier         | Subscription            | Environment types                 | Environment Sub type 
+| Lifecycle phase      | Environment tier         | Subscription            | Environment types                 | Environment sub-type 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
 | Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
 | Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
