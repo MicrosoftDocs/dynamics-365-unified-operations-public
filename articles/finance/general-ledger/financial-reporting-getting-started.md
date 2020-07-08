@@ -92,13 +92,13 @@ After a user is added or a role is changed, the user should be able to access fi
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
 Starting with the 10.0.7 release the concept of expiration dates has been introduced. A new mandatory feature will be enabled in the feature management workspace. This feature contains the following changes:
-* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
+* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated.
 * Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
-* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available - 
-  * An expiration of 90 days
-  * An option to set the report to never expire
+* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available -<br>
+   * An expiration of 90 days
+   * An option to set the report to never expire
 
-When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date set during report generation. 
+When an expiration, such as 90 days, is selected, it's applied 90 days from today, which is different behavior than the 90 days from the original generation date set when the report was generated. 
 
 ## Default reports
 Financial reporting provides 22 default financial reports. Every report uses the default main account categories. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. 
@@ -137,22 +137,22 @@ When you click the **Financial reporting** menu, the list of default financial r
 From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Finance. 
 
 ## Troubleshooting issues opening Report Designer
-There are a few common issues that can cause problems for users trying to open Report Designer:
+There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
 
-Issue 1: You click New or Edit, but Report Designer does not start
-* In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites and then click Sites. In the Add this website to zone, enter "*.dynamics.com" (without quotes), and then click Add. 
-* In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites. In the area labeled Security level for this zone, change the sliding bar to Medium-Low
+Issue 1: Report Designer doesn't start when you click **New** or **Edit**.
+* In Internet Explorer, click **Settings**, then click **Internet Options**. Click the **Security** tab. Select Trusted Sites and then click **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then click **Add**. 
+* In Internet Explorer, click **Settings**, then click **Internet Options**. Click the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the sliding bar to **Medium-Low**.
 * Disable the pop-up blocker in browser.
 * Workstations are required to install .Net 4.6.2 or higher.
 This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* If using Chrome, you must install a ClickOnce extension in order to download the Report Designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you are unable to login with Chrome, try following the setup steps described in Issue 1 with Internet Explorer or Edge. 
+* If you use the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you are unable to login with Chrome, try following the setup steps described in Issue 1 with Internet Explorer or Edge. 
 
-Issue 2: The user has not been assigned the required permissions to use Financial Reporting. 
-* To verify if the user does not have permission, click Yes on the error “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then click **Test Connection**. If the user does not have permission, you will see a specific message which states "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
-* Required permissions are listed above in [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. Users will not have access unless these privileges (or another security role that includes these privileges) are assigned to the users. 
-* The Company Users Provider to Company integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to integrate across to Financial Reporting. 
-If another user can open Report Designer, click Tools and then click Integration Status. Verify the integration map "Company Users Provider to Company" has successfully ran since the user was assigned permissions to use Financial Reporting. 
-* It is possible some error has occurred that the Dynamics user to Financial Reporting user integration has not completed, a data mart reset has been initiated and not yet completed, or some other system error has occurred. 
+Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
+* To verify if the user does not have permission, click **Yes** on the error, “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then click **Test Connection**. If you don't have permission, you will see a specific message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
+* Required permissions are listed above in the topic [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
+* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. <br>
+If someone else can open Report Designer, click **Tools**, and then click **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully since you were assigned permission to use Financial Reporting. 
+* It's also possible that another error has prevented the **Dynamics user to Financial Reporting user integration** from finishing, that a datamart reset has been initiated and not yet completed, or that another system error has occurred. 
 
 Issue 3: User can proceed past the login page but are unable to complete login within Report Designer. 
 * The time set on the click of the local computer must be within 5 minutes of the time on the Financial Reporting server. If there is a difference of more than 5 minutes, the system will not allow login. 
