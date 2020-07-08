@@ -168,7 +168,7 @@ To submit CFDI invoice cancellation, the Feature setup **Cancellation** and **Ca
 
 ![Change status of e-Invoicing feature](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-# Set up e-Invoicing service integration in Finance
+## Set up e-Invoicing service integration in Finance
 
 Complete the following steps to set up the e-Invoicing service in Finance.
 
@@ -231,7 +231,7 @@ After you enable the **Configurable e-Invoicing Service integration** feature, t
 **Invoices** \> **E-invoices**) for submitting CFDI invoices can no longer be used and it is replaced by the new process, **Submit electronic documents**.
 
 > [!NOTE]
-> Before you use the new **Submit electronic documents** process, verify that the setup required for Mexican e-invoices was completed. For more information, see [CFDI layout version 3.3](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Before you use the new **Submit electronic documents** process, verify that the setup required for Mexican e-invoices was completed. For more information, see [CFDI layout version 3.3](latam-mex-cfdi-3-3.md).
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
 2. For the first submission of the document, always set the **Resubmit documents** field to **No**. Set the **Resubmit documents** field to **Yes** if you need to resubmit a document through the service
