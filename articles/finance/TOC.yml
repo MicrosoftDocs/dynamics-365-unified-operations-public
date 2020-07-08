@@ -1194,6 +1194,22 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: e-Invoicing
+        items: 
+        - name: e-Invoicing service overview
+          href: localizations/e-invoicing-service-overview.md
+        - name: e-Invoicing setup
+          href: localizations/e-invoicing-setup.md
+        - name: Get started with the e-Invoicing service
+          href: localizations/e-invoicing-get-started.md
+        - name: Get started with e-Invoicing services for Brazil
+          href: localizations/e-invoicing-bra-get-started.md
+        - name: Get started with e-Invoicing services for Italy
+          href: localizations/e-invoicing-ita-get-started.md
+        - name: Get started with the e-Invoicing service for Mexico
+          href: localizations/e-invoicing-mex-get-started.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
       - name: Australia
         items:
         - name: Australia overview
