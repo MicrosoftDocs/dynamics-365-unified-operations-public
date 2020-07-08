@@ -168,7 +168,7 @@ You can publish the e-Invoicing feature by changing the version status to **Comp
 
 ![Change status of e-Invoicing feature](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-# Set up e-Invoicing service integration in Finance
+## Set up e-Invoicing service integration in Finance
 
 During the time that you set up Finance, you will:
 
@@ -259,7 +259,7 @@ The status displayed in **Submission status** column represents the status of th
 4. In the **Processing actions** section, you can view the execution log of the actions as configured in the **Feature version** set up in RCS. The **Status** column displays if the action was successfully executed.
 5. In the **Action files** pane, view the intermediate files that were generated along the execution of actions. If you select **View**, you can download the output XML file in **FatturaPA** format and see its content.
 
-# Related topics
+## Related topics
 
 - [E-Invoicing service overview](e-invoicing-service-overview.md)
 - [Get started with e-Invoicing services](e-invoicing-get-started.md)
