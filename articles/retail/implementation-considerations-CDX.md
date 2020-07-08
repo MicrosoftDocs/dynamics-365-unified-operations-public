@@ -62,11 +62,11 @@ Add image for this...
 The **Scheduler subjob** page is used to create, review, and edit the subjob.  A subjob is associated to one or more jobs (Seen via the scheduler job form).  A subjob is associated to a single table within the Headquarters database.  This subjob shows the channel field mapping, which lists all the related fields utilized within the database table.
 Add image for this...
 
-When a job is run (Scheduler job), the channel database group (Channel database group) selects the relevant data for all channel or offline databases (Channel database) associated to itself from the fields listed in the accumulated subjobs (Scheduler subjob.  The product of this selection of data is a data package.  Data packages is a file or files zipped together containing all previously selected data (or selected delta of data, typically) required to be applied to one or more destination databases (Whether that be a Channel database or Offline database).
-Add image to showcase this...
+The **Download sessions** and **Upload sessions** pages are used to review and edit download or upload sessions previously created through the data packages generated via the above described forms.  These forms showcase how many rows of data exist to be synchronized, when the data was made available and when it was synchronized, and the overall size of the data package.  These forms allow for some amount of management and troubleshooting of data packages, such as seeing what errors may have occurred and canceling or deleting jobs that are causing any issue.  This is described more in the [Best practices](CDX-Best-Practices.md) document.
 
 ### Data synchronization overview
-Data is generated and flows in a very specific way.  It is important to understand how this occurs to be able to understand how best to configure the timing and select what data to be synchronized. 
+When a job is run (Scheduler job), the channel database group (Channel database group) selects the relevant data for all channel or offline databases (Channel database) associated to itself from the fields listed in the accumulated subjobs (Scheduler subjob.  The product of this selection of data is a data package.  Data packages is a file or files zipped together containing all previously selected data (or selected delta of data, typically) required to be applied to one or more destination databases (Whether that be a Channel database or Offline database).
+Add image to showcase this...
 
 **Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
 
@@ -75,6 +75,8 @@ This diagram shows the direction and flow of data to be synchronized downward fr
 **Insert data configuration flow diagram (Commerce Architecture - Forms flow (PNG, Need newer one))**
 
 This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
+
+Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various forms are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
 ### Overview of package management
  - Review that packages are created and showcased in Download sessions
@@ -120,16 +122,15 @@ This section describes some things that you should consider as you plan to imple
 
 **OPEN QUESTIONS IN THIS DOC NEEDING ANSWERS**
  - Verify Working folders are no longer required with Commerce Batch Service (Azure Batch for now)
- - What data can be cut from offline DBs and it will still work correctly for sales?
+ - What data can be cut from offline DBs and it will still work correctly for sales (CREATE SEPARATE DOC FOR FEATURE)
  - Review the logic around download session retry and cut (Need Daniel / Yonas assistance here)
 
 
 ## Resources
-*Link to Devices Implementation Guide* [Device management implementation guidance](implementation-considerations-devices.md)
-
-*Link to Commerce Architecture* [Commerce Architecture](commerce-architecture.md)
-
-*Link to In-store Topologies* [Select an in-store topology](dev-itpro/retail-in-store-topology.md)
+[Best practices](CDX-Best-Practices.md)
+[Device management implementation guidance](implementation-considerations-devices.md)
+[Commerce Architecture](commerce-architecture.md)
+[Select an in-store topology](dev-itpro/retail-in-store-topology.md)
 
 *Link to MPOS installer* LINK PENDING
 
