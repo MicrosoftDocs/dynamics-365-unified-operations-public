@@ -69,6 +69,9 @@ To associate an Azure AD account with a worker, follow these steps.
 
 The **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
 
+> [!NOTE]
+After a worker record is updated, for example, new Azure AD account is associated, password is changed, employee address book is updated, etc., it’s recommended to run **1060** (**Staff**) distribution schedule to synchronize the latest staff information to channel, so POS application can fetch the correct data for user authentication and authorization check.
+
 ## Additional resources
 
 [Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md)
