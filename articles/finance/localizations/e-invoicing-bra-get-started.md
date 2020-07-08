@@ -106,7 +106,7 @@ The e-Invoicing feature is the generic name of the resource that is configured a
 ![Configuration ER format designer](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
 > [!NOTE]
-> Use the **Format designer** to edit or view the ER format file configurations. For more details, see [Create electronic document configurations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+> Use the **Format designer** to edit or view the ER format file configurations. For more details, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
 ![ER format designer](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
 
@@ -206,7 +206,7 @@ During set up, you will:
 ## Import the ER data model, data model mapping, and formats required for NF-e fiscal documents
 
 1. Sign into Finance and go to the **Electronic reporting** workspace.
-2. In the **Configuration providers** group, select the **Microsoft** tile. Make sure this configuration provider is set to **Active**. For details about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. In the **Configuration providers** group, select the **Microsoft** tile. Make sure this configuration provider is set to **Active**. For details about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Repositories**.
 4. Select **Global resource \>Open**.
 5. Import the **Fiscal documents**, **Fiscal documents mapping, NF-e submit export format (BR), NF-e submit import format (BR), NF-e status request export format (BR), NF-e cancel export format (BR), NF-e discard export format (BR),** and **NF-e correction letter export format (BR).**
@@ -246,7 +246,7 @@ During processing in Finance, you will:
 
 After you enable the **Configurable e-Invoicing Service integration** feature, the legacy process for submitting NF-e for authorization (**Export/Import NF-e process**) can no longer be used and is replaced by the new process called **Submit electronic documents.**
 
-Make sure you have one or more customer fiscal document model 55s, issued by the customer’s fiscal establishment, with the direction set to **Outgoing** and with a fiscal document status of **Created.** For more information, see [Issue customer fiscal document (Brazil)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
+Make sure you have one or more customer fiscal document model 55s, issued by the customer’s fiscal establishment, with the direction set to **Outgoing** and with a fiscal document status of **Created.** For more information, see [Issue customer fiscal document (Brazil)](tasks/br-00038-issuing-customer-fiscal-document.md).
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
 2. Set the **Resubmit documents** field to **No** for the first submission of any document. Or, if you need to resubmit a document through the service, set the **Resubmit documents** field to **Yes**.
@@ -287,7 +287,7 @@ After you enable the **Configurable e-Invoicing Service integration** feature, y
 
 After you enable the **Configurable e-Invoicing Service integration** feature, the legacy process for cancelling NF-e fiscal documents can’t be used anymore and is replaced by a new cancellation process that is embedded on **Electronic document submission log.**
 
-Make sure you have executed the cancellation of the customer fiscal document for an approved NF-e fiscal document. For more information see, [Cancel customer fiscal document (Brazil)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-bra-cancel-customer-fiscal-documents).
+Make sure you have executed the cancellation of the customer fiscal document for an approved NF-e fiscal document. For more information see, [Cancel customer fiscal document (Brazil)](latam-bra-cancel-customer-fiscal-documents.md).
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log** and select the fiscal document.
 2. Select **Functions** \> **Send related submissions**.
@@ -309,7 +309,7 @@ The page shows all related submissions, and their submission status, for a given
 
 ![View cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
-# Related articles
+## Related articles
 
 - [e-Invoicing service overview](e-invoicing-service-overview.md)
 - [Get started with e-Invoicing services](e-invoicing-get-started.md)
