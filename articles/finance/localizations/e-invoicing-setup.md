@@ -85,7 +85,7 @@ To add ER formats to the e-Invoicing feature:
 > [!NOTE]
 > While you are editing the format, the Configuration version status is setup to **Draft.**
 
-Use the **Format designer** page to change the file format configuration. For more details, see [Create electronic document configurations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+Use the **Format designer** page to change the file format configuration. For more details, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
 ![ER format designer](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
@@ -341,7 +341,7 @@ On the **Feature version setup** page, select **Validate** to validate the featu
 > [!NOTE]
 > The validation checks the consistency of the entire configuration. For example, if a certain parameter for an action is mandatory but its value is kept empty, the validation checks catch this inconsistency and you will receive a warning.
 
-#E Environments
+## Environments
 
 An e-Invoicing feature must have an e-Invoicing environment associated with and enabled for it. The e-Invoicing environments must be previously created and published through the configuration of Globalization features from the RCS for your organization.
 
