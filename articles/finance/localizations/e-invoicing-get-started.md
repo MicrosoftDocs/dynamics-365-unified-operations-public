@@ -179,7 +179,7 @@ To allow for the collection of business data and to send it to the e-Invoicing s
 that is related to the country invoicing feature you want to use.
 
 1. Go to the **Electronic reporting** workspace.
-2. In the **Configuration providers** section, select the **Microsoft** tile. Make sure this configuration provider is marked as **Active**. For details about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. In the **Configuration providers** section, select the **Microsoft** tile. Make sure this configuration provider is marked as **Active**. For details about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Repositories**
 4. Select **Global resource** and then select **Open**.
 5. On the **Connect to Lifecycle Services** dialog page, select **Click here to connect to Lifecycle Service.**
