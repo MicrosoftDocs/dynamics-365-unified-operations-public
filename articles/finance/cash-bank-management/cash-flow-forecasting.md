@@ -5,7 +5,7 @@ title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -107,14 +107,14 @@ Calculate the cash flow forecast by using the **Calculate cash flow forecasts** 
 - To clear all cash flow forecast transactions and recalculate, set the **Cash flow forecast calculation method** field to **Total**. We recommend that you use this approach if you haven't updated the cash flow forecasts for a long time. 
 - To update the existing cash flow information for new transactions only, set the **Cash flow forecast calculation method** field to **New**. The page will show the date when your cash flow calculation was last run.
 
-You can also use batch processing for your cash flow forecasting. To help guarantee that your forecasting analytics are regularly updated, set up a recurring batch process for cash flow forecast calculation.
+You can also use batch processing for your cash flow forecasting. To help ensure that your forecasting analytics are regularly updated, set up a recurring batch process for cash flow forecast calculation.
 
-In version 10.0.13 an enhancement to the calculation process was released to use the process automation framework to schedule the cash flow calculation job. This is enabled via feature **Cash flow forecast automation** from the **Feature Management** workspace. Once enabled, clicking the **Cash flow forecast automation** link will show the new automation page where you can schedule the cash flow calculation process. To create a new cash flow forecast schedule, click the top menu option, **Create new process automation**, and select **"Cash flow forecast automation"** in the **Schedule type** dropdown. You must set a schedule for each company that you're updating the cash flow forecast data for.  This page also shows which cash flow forecast automation jobs are pending, and when the last job was completed.  
+In version 10.0.13, an enhancement to the calculation process was released to use the process automation framework to schedule the cash flow calculation job. This is enabled using the **Cash flow forecast automation** feature in the **Feature Management** workspace. Once enabled, select the **Cash flow forecast automation** link to display the new automation page where you can schedule the cash flow calculation process. To create a new cash flow forecast schedule, select **Create new process automation** and then select **Cash flow forecast automation** in the **Schedule type** drop-down menu. You must set a schedule for each company that you're updating the cash flow forecast data for.  This page also shows which cash flow forecast automation jobs are pending, and when the last job was completed.  
 
 > [!NOTE] 
-> If existing batch jobs are already scheduled for Cash flow forecasts, you will receive an error message and you won't be able to enable this feature. Existing batch jobs will need to be cleared before you can enable this feature. 
+> If existing batch jobs are already scheduled for cash flow forecasts, you will receive an error message and you won't be able to enable this feature. Existing batch jobs will need to be cleared before you can enable this feature. 
 
-For more details about process automation view this page: [Process Automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)
+For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ### Reporting
 
