@@ -46,7 +46,7 @@ To control whether and how the quantities that are reported as finished on the l
     - **Status** – Only the status of the production order will change. No quantities will be added to inventory when quantities are reported on the last operation.
 
 > [!NOTE]
-> Quantities aren't tracked in inventory if the operations that they are reported as finished on aren't defined as the last operation. However, those quantities can be used to view progress. They can also be included in rules that control whether workers can start the next operation before a defined threshold of reported quantities on the previous operation is reached. You can define these rules on the **Quantity validation** tab of the **Production order defaults** page.
+> Quantities aren't tracked in inventory if the operations that they are reported as finished on aren't defined as the last operation. However, those quantities can be used to view progress. They can also be included in rules that control whether workers can start the next operation before a defined threshold of reported quantities on the previous operation is reached. You can define these rules on the **Quantity validation** tab on the **Production order defaults** page.
 
 For more information about how to work with the **Production order defaults** page, see [Production parameters in Manufacturing execution](production-parameters-manufacturing-execution.md).
 
@@ -54,9 +54,9 @@ For more information about how to work with the **Production order defaults** pa
 
 The job card device supports three scenarios for reporting on batch items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
 
-- **Manually assigned batch numbers**: Workers enter a custom batch number. This batch number might come from an external source that isn't known to the system.
-- **Predefined batch numbers**: Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
-- **Fixed batch numbers**: Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
+- **Manually assigned batch numbers** - Workers enter a custom batch number. This batch number might come from an external source that isn't known to the system.
+- **Predefined batch numbers** - Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
+- **Fixed batch numbers** - Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
 
 
 ### Enable the feature on your system
@@ -102,7 +102,7 @@ To provide a list of predefined batch numbers, follow these steps to set up a tr
 1. Go to **Inventory management \> Setup > Dimensions \> Tracking number groups**.
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **Yes**.
-1. Use the **Per qty.** field to split batch numbers per quantity, based on the value that you enter. For example, you have a production order for ten pieces, and the **Per qty.** field is set to *2*. In this case, five batch numbers will be assigned to the production order when it's created.
+1. Use the **Per qty** field to split batch numbers per quantity, based on the value that you enter. For example, you have a production order for ten pieces, and the **Per qty** field is set to *2*. In this case, five batch numbers will be assigned to the production order when it's created.
 
     ![A tracking number group for predefined batch numbers](media/tracking-number-group-predefined.png "A tracking number group for predefined batch numbers")
 
@@ -133,9 +133,9 @@ When you use this scenario, the **Batch number** field that the **Report progres
 
 The job card device supports three scenarios for reporting on serial-controlled items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
 
-- **Manually assigned serial numbers**: Workers enter a custom serial number. This serial number might come from an external source that isn't known to the system.
-- **Predefined serial numbers**: Workers select a serial number in a list of serial numbers that the system automatically generates before the production order is released to the job card device.
-- **Fixed serial number**: Workers don't enter or select a serial number. Instead, the system automatically assigns a serial number to the production order before it's released.
+- **Manually assigned serial numbers** - Workers enter a custom serial number. This serial number might come from an external source that isn't known to the system.
+- **Predefined serial numbers** - Workers select a serial number in a list of serial numbers that the system automatically generates before the production order is released to the job card device.
+- **Fixed serial number** - Workers don't enter or select a serial number. Instead, the system automatically assigns a serial number to the production order before it's released.
 
 ### Enable the feature on your system
 
@@ -185,7 +185,7 @@ To provide a list of predefined serial numbers, follow these steps to set up a t
 1. Go to **Inventory management \> Setup \> Dimensions \> Tracking number groups**.
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **Yes**.
-1. Use the **Per qty.** field to split serial numbers per quantity of one.
+1. Use the **Per qty** field to split serial numbers per quantity of one.
 
     ![A tracking number group for predefined serial numbers](media/tracking-number-group-predefined-sn.png "A tracking number group for predefined serial numbers")
 
