@@ -5,7 +5,7 @@ title: Microsoft Power Platform integration with Finance and Operations
 description: This topic describes virtual entities for Finance and Operations in Common Data Service.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.0
 # Microsoft Power Platform integration with Finance and Operations
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
