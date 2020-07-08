@@ -38,36 +38,32 @@ Data configuration and synchronization is crucial to a proper implementation.  R
 Before going through this document, it is important to know the concepts of a channel (Store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this document such as the Devices implementation guide and the Commerce architecture documents. 
 
 ### Important Headquarters forms
-The **Channel database** page is used to create, review, and edit the channel databases (Used in Commerce Scale Units (Both Cloud and Self-hosted)) and offline databases (Used with Modern POS).
+The **Channel database** page is used to create, review, and edit the channel databases (Used in Commerce Scale Units (Both Cloud and Self-hosted)) and offline databases (Used with Modern POS).  Each database created here refers to a single, physical database (One to One mapping).  The channel or offline database is associated to a channel database group.  From this page, full synchronizations of a scheduler job can be created for a selected channel or offline database.
 Add image for this...
 
-The **Channel database group** page is  ADD DESCRIPTION.
+The **Channel database group** page is used to create, review, and edit the channel database groups.  Each group is associated to one or more databases (channel or offline). The database group is responsible for gathering the relevant data (That is required by all channel and offline databases associated to the database group) necessary to be generated as part of the CDX data synchronization.
 Add image for this...
 
-The **Channel profile** page is  ADD DESCRIPTION.
+The **Channel profile** page is used to create, review, and edit the channel profiles.  Each channel profile stores the URLs relevant to the network-based communication necessary within a channel.  A channel profile will typically have a Retail Server URL and a Cloud POS URL.  Additionally, frequently there will also be a Media Server Base URL (This URL is the internet addressable location of images used by POS, eCommerce, and other Dynamics 365 Commerce channels).  A channel profile is automatically generated for a Commerce Scale Unit (Cloud) but must be manually generated as part of the Commerce Scale Unit (Self-hosted) configuration and installation steps.
 Add image for this...
 
-The **Offline profile** page is  ADD DESCRIPTION.
+The **Offline profile** page is used to create, review, and edit the offline profiles.  Each offline profile allows a user to configure offline related settings, including configurations such as the ability to **allow manual switch to offline before sign-in**, **Enable advanced offline switching**, and **Pause offline synchronization**.  These feature configurations are discussed in this and related documents referenced at the end of this document.
 Add image for this...
 
-The **Channel schema** page is  ADD DESCRIPTION.
+The **Commerce channel schema** page is used to create, review, and edit the channel schemas.  By default, one schema is already created and available named **AX7**.  The channel schema is required to provide the means of "how" to read the Headquarters database for Commerce data.  This is also where the configuration is located to exclude customer related data from data synchronization to offline databases.  This feature will be discussed in this and other documents referenced at the end of this document.
 Add image for this...
 
-The **Distribution schedule** page is  ADD DESCRIPTION.
+The **Distribution schedule** page is used to create, review, and edit the distribution schedule jobs.  These schedule jobs associate which channel database groups will run the associated scheduler job (Detailed next).  A schedule job can be marked active and has a singular direction of data associated to it (Typically download, to send data down to the channels).  By default, all Commerce related jobs already exist and are prepared for use with any generated Commerce Scale unit (Cloud).  From this page, delta synchronizations can be created for a selected schedule job.
 Add image for this...
 
-The **Scheduler job** page is  ADD DESCRIPTION.
+The **Scheduler job** page is used to create, review, and edit the job selected from the schedule job.  This job has a series of associated subjobs.  This job also is associated to a channel schema (Typically the **AX7** schema originally created.  A job can be excluded from synchronization to offline databases.
 Add image for this...
 
-The **Scheduler subjob** page is  ADD DESCRIPTION.
+The **Scheduler subjob** page is used to create, review, and edit the subjob.  A subjob is associated to one or more jobs (Seen via the scheduler job form).  A subjob is associated to a single table within the Headquarters database.  This subjob shows the channel field mapping, which lists all the related fields utilized within the database table.
 Add image for this...
 
-The **Data sync interval** page is   ADD DESCRIPTION. 
-
-Data packages are a series of files zipped together containing all data (or delta of data) required to be applied to a destination database (Whether that be Channel database or Offline database).  **More details or keep higher level?**
-
-Additional details as required......
-
+When a job is run (Scheduler job), the channel database group (Channel database group) selects the relevant data for all channel or offline databases (Channel database) associated to itself from the fields listed in the accumulated subjobs (Scheduler subjob.  The product of this selection of data is a data package.  Data packages is a file or files zipped together containing all previously selected data (or selected delta of data, typically) required to be applied to one or more destination databases (Whether that be a Channel database or Offline database).
+Add image to showcase this...
 
 ### Data synchronization overview
 Data is generated and flows in a very specific way.  It is important to understand how this occurs to be able to understand how best to configure the timing and select what data to be synchronized. 
