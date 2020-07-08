@@ -65,10 +65,11 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 | Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
 | Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
 | Golden configuration          | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
-| User acceptance testing (UAT) | Tiers 2-5 sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
+| User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
 | Go live                       | Production | Microsoft                    | Microsoft Managed or Self-service | Not applicable     
 
-*Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.
+*Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.*
+*For more information about Self-service environment types, check out the [Self-service deployment overview](infrastructure-stack.md).*
 
 ### Environment lifecycle operations
 Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
