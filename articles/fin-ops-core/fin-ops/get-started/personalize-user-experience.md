@@ -36,72 +36,80 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how you can personalize the app.
 
-There are three basic classes of personalizations.
+There are three basic classes of personalizations:
 
-- Personalizations that are made on a setup page. Examples include the color theme and time zone.
-- Personalizations that are related to page usage. These personalizations are known as *implicit* personalizations. For example, the system keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs.
+As you use the app, many of your selections are stored to make the system easier for you to use in the future. To view and manage the personal changes that you've made to pages in the system, select **Personalization** on the Action pane of the **User options** page. 
+
+
+- **System-wide options**, which are made on a setup page. Examples include the color theme and time zone.
+- **Page usage** These *implicit* personalizations are small adjustments to the page that can be automatically remembered by the system and restored the next time you visit the page. Users are required to have at least restricted personalization access  For example, the system keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
 - Personalizations that a user makes to the appearance of a page by changing the way that an element appears or acts on that page, often through an interactive personalization mode. These personalizations are known as *explicit* personalizations. For example, the user might add, hide, or rearrange elements on the page.
 
 Every personalization that a user makes is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
 
 ## System-wide options for the current user
 
-The **User options** page contains several system-wide settings for the current user. To open the **User options** page, select the **Settings** button (the gear symbol) on the navigation bar, and then select **User options**. The **User options** page has four tabs that contain various user settings:
+The **User options** page contains several system-wide settings for the current user. These options are available to all users, even ones who have not been given any access to personalization. To open the **User options** page, select the **Settings** button on the navigation bar, and then select **User options**. The **User options** page has four tabs that contain various user settings:
 
 - **Visual** – Select a color theme and the default size of elements on pages.
-- **Preferences** – Select default values that are used every time that you open the system. These values include the company, the initial page, and the default view/edit mode. (The view/edit mode determines whether a page is locked for viewing or opened for editing every time that you open it.) This tab also includes options for the language, the time zone, and date, time, and number formats. Finally, this tab includes several miscellaneous preferences that vary from release to release.
-- **Account** – Adjust your user name and other account-related options.
+- **Preferences** – Select default values that are used every time that you open the system. These values include the default company, the initial page, and the default view/edit mode. (The view/edit mode determines whether a page is locked for viewing or opened for editing every time that you open it.) This tab also includes options for the language, the time zone, and date, time, and number format. Finally, this tab includes several miscellaneous preferences that vary from release to release.
+- **Account** – View or adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
-In addition to changing your user settings, you can also use the **User options** page to view and delete your usage data and personalizations. Just select **Usage data** on the Action Pane.
-
-As you use the app, many of your selections are stored to make the system easier for you to use in the future. On the **Personalization** tab, you can view and manage the personal changes that you've made to pages in the system. On this tab, you can also reset feature callouts (that is, the pop-up windows that introduce new system features). You will then be alerted again about previously encountered features.
+In addition to changing your user settings, you can also view and delete your usage data and personalizations from the **User options** page. To see your usage data, select **Usage data** on the Action Pane. On the **Personalization** tab, you can view and manage the personal changes that you've made to pages in the system. On this tab, you can also reset feature callouts (that is, the pop-up windows that introduce new system features). You will then be alerted again about previously encountered features.
 
 > [!NOTE]
 > If the [Saved views](saved-views.md) feature is turned on, you can view and manage your personalizations by selecting **Personalization** on Action Pane on the **User options** page.
 
-## Implicit personalizations
+## Restricted personalization access (formerly implicit personalizations)
 
-Implicit personalizations are personalizations that you make just by interacting with controls that store their current visible state.
+With **restricted personalization access**, user actions associated with typical page usage are automatically rememembered by the app and restored the next time you visit the page. No explicit save action is required for these items to be remembered. 
 
-- **Grid column widths** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open the page that includes that grid, the column will be resized to that width.
-- **Grid column totals** - (Only available with the new grid control enabled) You can decide whether or not a total should be shown at the bottom of any numeric column in a grid as well as whether the grid footer is visible. The app stores this data so that these preferences are remembered the next time you open the page. See the [Grid capabilities](grid-capabilities.md) topic for more information. 
-- **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. The app stores information about the FastTabs that you've expanded and collapsed. Then, the next time that you open the page, the same FastTabs will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab, because the app doesn't have to retrieve the information for FastTabs until they are expanded. As is explained later this topic, you can also change the order of the FastTabs on a page.
-- **Fact Boxes** – Some pages have a **Related information** pane that shows read-only information that is related to the current subject of the page. Each section in the **Related information** pane is known as a *Fact Box*. You can expand or collapse the **Related information** pane, and you can also expand or collapse individual Fact Boxes. The app stores these preferences. Then, the next time that you open the page, the **Related information** pane and the individual Fact Boxes will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FactBox, because the app doesn't have to retrieve the information for FactBoxes until they are expanded.
-- **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized on tabs. You can "pin" the whole Action Pane open, or you can have it collapsed by default. Then, the next time that you open the page, the Action Pane will be either open or collapsed, based on your last interaction with the page. If you pinned the Action Pane open, the last tab that you used will be shown.
-- **QuickFilters** – A *QuickFilter* appears above many grids. The QuickFilter lets you filter the grid, based on a column that you select. The app stores the column that you filtered on. Then, the next time that you open the page that includes that grid, the grid will be filtered on the same column. However, you can then select a different column to filter the grid on.
-- **Column header filters** – When you filter a grid by using the *column header filters*, you can change the filter operator as you require to find the data that you want. For example, you can change the operator from **begins with** to **is exactly**. Every time that you use a column header filter and change the filter operator, the app stores the change. Then, the next time that you filter on that column, the filter operator will be restored.
+Here is the list of actions that fall under typical page usage and are covered by restricted personalization access: 
+
+- **Grid column widths** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open that page, the column will be resized to that width.
+- **Grid footer and column totals** - (Only available with the new grid control enabled) You can decide whether or not a total should be shown at the bottom of any numeric column in a grid as well as whether the grid footer is visible. The app stores this data so that these preferences are remembered the next time you open the page. See the [Grid capabilities](grid-capabilities.md) topic for more information. 
+- **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. The app stores information about the FastTabs that you've expanded or collapsed. The next time you open the page, the same FastTabs will be either expanded or collapsed based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab because the app doesn't have to retrieve the information for FastTabs until they are expanded. As explained later this topic, you can also change the order of the FastTabs on a page.
+- **Fact Boxes** – Some pages have a **Related information** pane that shows read-only information related to the current subject of the page. Each section in the **Related information** pane is known as a *Fact Box*. You can expand or collapse the **Related information** pane, and you can also expand or collapse individual Fact Boxes. The app stores these preferences. The next time you open the page, the **Related information** pane and the individual Fact Boxes will be either expanded or collapsed based on your last interaction with the page. In some cases, you can help improve system performance by collapsing the **Related information** Pane or a FactBox because the app doesn't have to retrieve the information for a Fact Box until it is expanded.
+- **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized into tabs. You can *pin* the whole Action Pane open, or you can have it collapsed by default. The next time you open the page, the Action Pane will be either open or collapsed based on your last interaction with the page. If you pinned the Action Pane open, the last tab that you were using will be shown.
+- **QuickFilters** – A *QuickFilter* appears above many grids. The QuickFilter lets you filter the grid based on the single column you select. The app stores the column that you filtered on. Then, the next time you open that page, the grid will by default use that same column for filtering. You can still choose a different column to filter the grid on.
+- **Column header filters** – When you filter a grid using *column header filters*, you can change the filter operator as needed to find the data that you want. For example, you can change the operator from **begins with** to **is exactly**. Every time you use a column header filter and change the filter operator, the app stores the change. Then, the next time that you filter on that column, the filter operator will be restored.
 - **Navigation pane** – You can open the *navigation pane* by selecting the **Expand the navigation pane** button in the upper left of any page. (This button is sometimes referred to as the _**Menu** button_, *hamburger*, *hamburger menu*, or *hamburger button*.) You can pin the navigation pane open, or you can have it collapsed by default. After you pin the navigation pane open, the app will keep it open until you collapse it.
 
-## Explicit personalizations
+## Full personalization access (formerly explicit personalizations)
 
-Different people and companies have a different perspective on the data that is most important to them, and the data that they don't require for the way that they run their business. You can tailor the way that your information is ordered and interacted with. You can also specify that some information should be hidden. These capabilities are key to a personal and productive experience, and are examples of explicit personalizations. Explicit personalizations are personalizations that you explicitly make because you want to change the appearance or behavior of an element or page.
+With **full personalization access**, users have access to all the personalization capabilities the app provides. As different people and companies have unique needs when interacting with the app, especially related to data this is most important or tracked versus data that is not required or utilized, personalization provides tools to allow users and organizations to tailor the way that information is ordered and interacted with on most pages in the application. These capabilities are key to interacting with simplified, productive experiences in the app that are tailored for yourself and your organization. 
+
+If the [Saved views](saved-views.md) feature is turned on, an explicit save is required to persist these modifications of the user experience to a particular view. With Saved views turned off, these modifications are saved automatically.   
+
+In the following sections, we will cover the extent of personalization capabilities available to users with **full personalization access**. This includes options available in shortcut menus and the personalization toolbar.
 
 ### Shortcut menu options
 
-Shortcut menus provide a few ways to explicitly change a page so that it better meets your requirements or the requirements of your company. (A shortcut menu is also known as a *right-click menu* or *context menu*.)
+Shortcut menus provide one avenue for making changes to a page's interface so that it better meets your requirements or the requirements of your organization. (A shortcut menu is also known as a *right-click menu* or *context menu*.)
 
-Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, starting in Platform update 17, if you want to add or hide columns in a grid, just right-click a column header, and then select **Add columns** or **Hide this column**.
+Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, if you want to add or hide columns in a grid, simply right-click a column header and then select **Insert columns...** or **Hide this column**.
 
-Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this personalization method, the element's property window appears.
+Additionally, the most basic types of personalizations are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this personalization method, the element's *property window* appears.
 
 ![Personalizing an element's properties](./media/cli-element-property-window.png)
 
-You can use the property window to personalize an element in the following ways:
+You can use the *property window* to personalize an element in the following ways:
 
 - Change the element's label.
-- Hide the element so that it isn't shown on the page. The data in the field isn't deleted or modified. The information just doesn't appear on the page any longer.
+- Hide the element so that it isn't shown on the page. The data in the field isn't deleted or modified. The information just isn't shown on the page any longer.
 - Include the information in the FastTab's summary section (if the element is on a FastTab).
 - Skip the field so that it never receives focus when you tab through the page.
 - Prevent data in the field from being edited (for any record).
 - Designate a field to be required for data entry. If no value has been entered in this field, it will appear with a red border and an asterisk to indicate this state. This option is only available starting in version 10.0.11 when the [Saved views](saved-views.md) and **Designate fields as required using personalization**  features are enabled.
 
-The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
+The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and property windows for elements on the default dashboard might let you create a new custom workspace.
 
 ### The Personalization toolbar
 
-If you want to make multiple changes to a page, or changes that aren't available through other mechanism (for example, if you want to reorder elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, follow one of these steps:
+If you want to make multiple changes to a page, or make changes that aren't available through other mechanisms (for example, if you want to reorder elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, follow one of these steps:
 
+- Press **Ctrl+Shift+P** from any element on the page
 - Select **Personalize this page** in an element's property window.
 - Select **Personalize this page** in the **Personalize** group on the **Options** tab of any page's Action Pane.
 - Select the **Settings** button (the gear symbol) on the navigation bar, and then select **Personalize**.
@@ -110,15 +118,15 @@ If you want to make multiple changes to a page, or changes that aren't available
 
 #### Navigating the page
 
-When the **Personalization** toolbar is open, the underlying page is read-only (in other words, you can't edit data), but it's still interactive. Specifically, you can expand or collapse the **Related information** pane, switch tabs, and expand or collapse sections, just as you usually perform those actions on the page. To apply a personalization to a collapsible section or tab (for example, to hide a FastTab), you just have to select the button that appears next to that section or tab when it gains keyboard focus or when you hover over it.
+When the **Personalization** toolbar is open, the underlying page is read-only (in other words, you can't edit data) but is still interactive. Specifically, you can expand or collapse the **Related information** pane, switch tabs, and expand or collapse sections, just as you would usually perform those actions on the page. To apply a personalization to a collapsible section or tab (for example, to hide a FastTab), you just have to select the button that appears next to that section or tab when it gains keyboard focus or when you hover over it.
 
 #### Personalization tools
 
 The following tools are available on the **Personalization** toolbar:
 
-- Use the **Select** tool to select and change the properties of an element. To use this tool, select the **Select** button on the toolbar, and then select the desired element. The element's property window appears, and you can change any of the properties of that element. You can repeat the process for other elements that can be personalized on the page. Note that some personalization properties might not be available in some scenarios. For example, you can't lock a field that is required.
-- Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** button on the toolbar, and then select the element to hide. When you use the **Hide** tool, all elements that are currently hidden are made visible but are shown in a shaded container. You can then make an element visible by selecting it. To see how the page will look when elements are hidden, switch to another personalization tool.
-- Use the **Add a field** tool to add a field to your page. When you use this tool, you can add only fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](user-defined-fields.md). After you select the **Add a field** button on the toolbar, you must first select the group or area where you want to add a field. A dialog box will show the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
+- Use the **Select** tool to select and change the properties of an element. To use this tool, select the **Select** button on the toolbar, and then select the desired element. The element's *property window* appears, and you can change any of the properties of that element. You can repeat the process for other elements that can be personalized on the page. Note that some personalization properties might not be available in some scenarios. For example, you can't lock a field that is required.
+- Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** button on the toolbar, and then select the element to hide. When you use the **Hide** tool, all elements that are currently hidden are made visible but are shown in a shaded container. You can then make an element visible by selecting it. To see how the page will look when elements are hidden, switch to another personalization tool or close the personalization toolbar.
+- Use the **Add fields** tool to add fields to your page. When you use this tool, you can add only fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](user-defined-fields.md). After you select the **Add fields** button on the toolbar, you must first select the group or area where you want to add a field. A dialog box will show the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
 - Use the **Move** tool to move an element to a different location in the current group of elements. Note that you can't move an element outside its parent group. To use this tool, select the **Move** button on the toolbar, and then select the element to move. When you select an element, the app determines the locations where the element is allowed to be moved. These locations are known as *drop zones*. As you drag the element around in the current group, each drop zone is shown as a colored, bold line next to the area where the element can be dropped.
 - Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** button on the toolbar, all elements that are currently skipped are shown in a shaded container. You can interactively remove or add fields to the tab sequence.
 - Use the **Show in header** tool when you want a field to appear in the FastTab's summary section. When you select the **Show in header** button on the toolbar, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from it by selecting the fields.
