@@ -52,7 +52,7 @@ Before you create a customer invoice for a project, you can create a preliminary
 
 ### Creating invoice proposals
 
-You can create invoice proposals by manually selecting from a list of transactions for a specified project. You can also set up billing rules that specify when to create an invoice proposal automatically. For example, you can create a billing rule to create an invoice proposal when work on a project is 25-, 50-, 75-, and 100-percent complete. 
+You can create invoice proposals by manually selecting a transaction from a list of available transactions for a specified project. You can also set up billing rules that specify when to create an invoice proposal automatically. For example, you can create a billing rule to create an invoice proposal when work on a project is 25-, 50-, 75-, and 100-percent complete. 
 
 You can create invoice proposals for the following transactions:
 
@@ -62,13 +62,13 @@ You can create invoice proposals for the following transactions:
 -   Amounts that a customer paid to you before a project is started
 
 > [!NOTE]
-> The **Enable sorting by resource during project invoice proposal creation** feature enables the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have a separate field for Resource ID and Resource, allowing the user to filter and sort on the resource name. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help in enabling this feature.
+> The **Enable sorting by resource during project invoice proposal creation** feature enables the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have separate fields for **Resource ID** and **Resource**. These fields let you filter and sort on the resource name. This feature is disabled by default. It can be enabled using the **Feature management** page (**Workspaces > Feature management**). Contact your system administrator for help in enabling this feature.
 
-You can create fee transactions in an invoice proposal. You can also modify the sales price on hour, expense, item, and fee transactions. When you post an invoice proposal, the updated prices and transactions are added to project reports and the transaction history. 
+You can create fee transactions in an invoice proposal. You can also modify the sales price on hour, expense, item, and fee transactions. When you post an invoice proposal, the updated prices and transactions are added to project reports, and the transaction history. 
 
 To create multiple customer invoices for a project, you must create an invoice proposal for each invoice. For example, you can create invoices based on transaction type. To specify hours on one customer invoice and items on another, you must create separate invoice proposals for hour transactions and fee transactions. 
 
-If a project has more than one funding source, you can create a separate invoice proposal for each funding source. On the **Funding rule allocations** page, you can define the percentage of the transaction amount to allocate to each funding source, and the source to post rounding differences.
+If a project has more than one funding source, you can create a separate invoice proposal for each funding source. On the **Funding rule allocations** page, you can define the percentage of the transaction amount to allocate to each funding source, and the source to post rounding differences to.
 
 ### Creating customer invoices from invoice proposals
 
@@ -80,7 +80,7 @@ If your organization requires that invoice proposals be reviewed before they are
 
 ### View grant information on project invoice list pages
 
-Public sector customers can add the **Grant ID** and **Grant name** to the **Project invoice proposals** and **Project invoices** list pages. These columns are enabled using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
+Public sector users can add the **Grant ID** and **Grant name** to the **Project invoice proposals** and **Project invoices** list pages. These columns are enabled using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 
 ## On-account invoicing
 The amount that you enter for a project in an on-account invoice is based on the timing, percentage of completion, and other billing conditions that are specified in the related project contract. The amount is not calculated based on the hours, items, expenses, or fees that are posted to the project. 
