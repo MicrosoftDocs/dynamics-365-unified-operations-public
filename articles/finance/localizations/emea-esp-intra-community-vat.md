@@ -40,16 +40,16 @@ To calculate intra-community VAT for purchase transactions, you must have two sa
 Select the **Intra-community VAT** check box for the line that has a negative sales tax code. 
 
 ## Printing intracommunity VAT on a purchase invoice
-To print intra-community VAT on a purchase invoice, enable the **Print EU sales tax on Spanish invoices** option on the **Invoice** tab of the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
+To print intra-community VAT on a purchase invoice, enable the **Print EU sales tax on Spanish invoices** option on the **Invoice** tab on the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
 
 ## Printing invoices that have intracommunity VAT amounts
-To print purchase invoices and intra-community invoices that have intra-community VAT amounts, on the vendor invoice page, on the **Process** tab, click **Print setup** &gt; **Print options**. In the **Print options** dialog box, enable the **Print invoice** and **Print intra-community invoice** options.
+To print purchase invoices and intra-community invoices that have intra-community VAT amounts, on the vendor invoice page, on the **Process** tab, select **Print setup** &gt; **Print options**. In the **Print options** dialog box, enable the **Print invoice** and **Print intra-community invoice** options.
 
 > [!NOTE]
-> A Vendor’s country must be set up as EU member state. To do this, go to **Tax** \> **Setup** \> **Foreign trade \> Foreign trade parameters Country/region properties tab**).
+> A vendor’s country must be set up as EU member state. To do this, go to **Tax** \> **Setup** \> **Foreign trade \> Foreign trade parameters Country/region properties tab**).
 
 ## Reviewing posted intracommunity VAT amounts
-To review the intra-community VAT amounts that have been posted, run the Posted sales tax query (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**). On the **Posted sales tax** page, on the **General** tab, if the **Intra-community VAT** check box is selected, the tax transaction is an intra-community VAT transaction. Spanish VAT books must be set up so that posted payable and receivable VAT transactions are reflected in the appropriate sections. To set up Spanish VAT books, click **Tax** \> **Setup** \> **Sales tax** \> **Spanish VAT books**. For more information, see [Report 340 for Spain](emea-esp-report-340.md).
+To review the intra-community VAT amounts that have been posted, run the Posted sales tax query (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**). On the **Posted sales tax** page, on the **General** tab, if the **Intra-community VAT** check box is selected, the tax transaction is an intra-community VAT transaction. Spanish VAT books must be set up so that posted payable and receivable VAT transactions are reflected in the appropriate sections. To set up Spanish VAT books, go to **Tax** \> **Setup** \> **Sales tax** \> **Spanish VAT books**. For more information, see [Report 340 for Spain](emea-esp-report-340.md).
 
 ## Example
 
@@ -72,7 +72,7 @@ The following example shows how you can set up sales tax codes and post and prin
 | EU-4              | -4            | EU purchases at a rate of 4 percent. |
 
 4.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups** and create a new sales tax group called **EU**.
-5. On the **Setup** FastTab, add the following codes:
+5. On the **Setup** FastTab, add the following codes.
 
 | **Sales tax code** | **Intra-community VAT** |
 |--------------------|-------------------------|
@@ -83,7 +83,7 @@ The following example shows how you can set up sales tax codes and post and prin
 | EU4                | No                      |
 | EU-4               | Yes                     |
 
-6.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups** and create the following item sales tax groups:
+6.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups** and create the following item sales tax groups.
 
 | **Item sales tax group** | **Sales tax codes** |
 |--------------------------|---------------------|
