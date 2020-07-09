@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure number sequence extensions
+title: Configure number sequences for warehouse flows
 description: This topic provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
 author: GarmMSFT
 manager: tfehr
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.2
 
 ---
 
-# Configure number sequence extensions
+# Configure number sequences for warehouse flows
 
 [!include [banner](../includes/banner.md)]
 

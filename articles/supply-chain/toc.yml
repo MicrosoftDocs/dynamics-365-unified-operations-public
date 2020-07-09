@@ -1513,6 +1513,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
         - name: Set up number sequences using a wizard
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Configure number sequences for warehouse flows
+          href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
       - name: Organizations and organizational hierarchies
         items:
         - name: Organizations and organizational hierarchies overview
@@ -2731,8 +2733,6 @@
             href: warehousing/tasks/configure-wave-processing.md
           - name: Set up and use wave label printing
             href: warehousing/configure-wave-label-printing.md
-          - name: Configure number sequence extensions
-            href: warehousing/configure-number-sequence-extensions.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile
