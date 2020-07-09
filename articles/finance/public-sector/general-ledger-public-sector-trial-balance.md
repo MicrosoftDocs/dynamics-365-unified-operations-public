@@ -55,7 +55,7 @@ For transactions, the report includes the following information:
 
 You can use the trial balance to identify errors for account balances. All accounts that have debit balances should equal all accounts that have credit balances. The report includes information from the general journal accounting entries.
 
-The data can run by any of the following items:
+You can filter the data by any of the following items:
 
 - Posted transactions
 - Pending transactions (These transactions include all transactions that aren't posted.) 
@@ -103,7 +103,7 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 </ul>
 </td>
 <td>Invoice number</td>
-<td>Vendor number – Vendor name</td>
+<td>Vendor number and Vendor name</td>
 </tr>
 <tr>
 <td></td>
@@ -123,7 +123,7 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 <tr>
 <td></td>
 <td>Check date, EFT date, or settlement date</td>
-<td>Vendor number – Vendor name for the original order account</td>
+<td>Vendor number and Vendor name for the original order account</td>
 </tr>
 <tr>
 <td>
@@ -133,7 +133,7 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 </ul>
 </td>
 <td>Free text invoice number</td>
-<td>Customer number – Customer name</td>
+<td>Customer number and Customer name</td>
 </tr>
 <tr>
 <td></td>
@@ -163,7 +163,7 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 <td></td>
 <td>Budget code</td>
 <td>Reason code – Budget register entry header description<br>
-(<strong>Comment</strong> field on the <strong>Budget account entry details</strong> FastTab on the <strong>Budget entry</strong> page of the <strong>Budget register entry</strong> page)</td>
+(<strong>Comment</strong> field on the <strong>Budget account entry details</strong> FastTab on the <strong>Budget entry</strong> page or the <strong>Budget register entry</strong> page)</td>
 </tr>
 <tr>
 <td>
@@ -200,12 +200,12 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 </ul>
 </td>
 <td>Project invoice number</td>
-<td>Invoice account – Account name</td>
+<td>Invoice account and Account name</td>
 </tr>
 <tr>
 <td></td>
 <td>Funding source</td>
-<td>Project ID – Project name</td>
+<td>Project ID and Project name</td>
 </tr>
 </tbody>
 </table>
