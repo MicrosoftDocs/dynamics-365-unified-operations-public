@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 10.0.12
 > [!IMPORTANT]
 > The Electronic invoicing add-on for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
-This topic provides information that will help you get started with the Electronic invoicing add-on for Italy. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the process for submitting electronic invoices that are generated in the Italy-specific **FatturaPA** format through the service, and it explains how to review the results of processing over the status of electronic invoices.
+This topic provides information that will help you get started with the Electronic invoicing add-on for Italy. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the process for submitting electronic invoices that are generated in the Italy-specific **FatturaPA** format through the service, and it explains how to review the results of processing.
 
 ## Prerequisites
 
@@ -227,7 +227,7 @@ You can submit the documents manually, based on your demand for e-invoice docume
 3. Select **OK** submit the selected documents.
 
 > ![NOTE]
-> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on. Select **Click here to connect to Electronic Document Submission Service**.
 
 #### View submission logs
 
@@ -249,6 +249,6 @@ You can view the submission logs for all submitted documents.
 
 ## Related topics
 
-- [E-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
-- [Set up the e-Invoicing service](e-invoicing-setup.md)
+- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
+- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
