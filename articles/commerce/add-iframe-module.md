@@ -2,11 +2,11 @@
 
 # required metadata
 
-title: IFrame module
-description: This topic covers the IFrame module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+title: Iframe module
+description: This topic covers the Iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -33,19 +33,21 @@ ms.dyn365.ops.version:
 # IFrame module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic covers the IFrame module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the Iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A IFrame module provies an iframe to host external content on a site. For instance, it can be used to host a youtube video or a pdf viewer on any site page. 
+An Iframe module provides an iframe (inline frame) to host external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
-It requires the destination URL to be provided and hosts whatever content in the URL within an iframe. Its required that the external URLs are whitelisted per the [Content security policy](manage-csp.md). For IFrame content, the URLs should be whitelisted under **frame-ancestor**.
+An Iframe module requires a destination URL and then hosts whatever content in on the destination page within an HTML Iframe. The external URLs must be on the allow list (otherwise known as a whitelist) per the site's content security policy (CSP) allowed source URLs. For Iframe content, URLs should be allowed using the "frame-ancestor" directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
-This is an example of an IFrame module on a page showcasing some external videos
+The following image shows an example of an Iframe module on a page showcasing some external videos.
+
 ![Example of IFrame module](./media/ecommerce-iframe.PNG)
 
-## IFrame module properties
+## Iframe module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
@@ -54,10 +56,11 @@ This is an example of an IFrame module on a page showcasing some external videos
 | Height| Number or percentage| Height of the module can  defined in pixels or percentage. A number "100" will be treated as pixels and 100% will be treated as percentage |
 | Aria label| Text| An aria label can be defined for accessibilty purposes |
 
-## Add an IFrame module to a page
+## Add an Iframe module to a page
 
-To use the module to display available stores for a Store locations page, follow the below steps
- 1. Go to **Templates**, and create a page template that is named **Marketing template**.
+To use an Iframe module to display available stores for a store locations page, follow these steps.
+
+1. Go to **Templates**, and create a page template that is named **Marketing template**.
 1. In the **Main** slot of the default page, dont add any modules.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Create a new page **Marketing page** using the Marketing template.
