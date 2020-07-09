@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with e-Invoicing services for Italy
-description: This topic provides information about getting started with the e-Invoicing service for Italy in Dynamics 365 Finance and Dynamics 365 Supply chain management.
+title: Get started with the e-Invoicing service for Italy
+description: This topic provides information that will help you get started with the e-Invoicing service for Italy in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 06/25/2020
@@ -30,238 +30,225 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started in e-Invoicing services for Italy
+# Get started with the e-Invoicing service for Italy
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-
 > [!IMPORTANT]
-> The e-Invoicing service for Italy may not currently support all the functions that are available for electronic invoices in Dynamics 365 Finance and Dynamics 365 Supply chain management. 
+> The e-Invoicing service for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
-In this topic, you will learn how to enable e-Invoicing services for Italy. This topic will guide you through the configuration steps which are country-dependent in Regulatory Configuration Services (RCS) and in Finance. The topic will also walk you through the process for submitting electronic invoices that are generated in the Italy-specific “**FatturaPA**” format through the service, and how to acknowledge the results of processing over the status of electronic invoices.
+This topic provides information that will help you get started with the e-Invoicing service for Italy. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the process for submitting electronic invoices that are generated in the Italy-specific **FatturaPA** format through the service, and it explains how to review the results of processing over the status of electronic invoices.
 
 ## Prerequisites
 
-To complete these steps, the following must be complete:
+Before you complete the steps in this topic, you must complete the steps in [Get started with the e-Invoicing service](e-invoicing-get-started.md).
 
-- Complete the steps described in the topic, Get started with e-invoicing service
+## RCS setup
 
-## Regulatory Configuration Services setup
+During the RCS setup, you will complete these tasks:
 
-During the RCS setup you will:
-
-- Import the **e-invoicing feature** for the export of customers electronic invoices in the **FatturaPA** format.
-- Review the format configurations required to generate, submit, and receive responses regarding electronic invoices.
-- Configure the events that will support electronic invoices submission scenarios.
-- Publish the e-Invoicing feature.
-
-The e-Invoicing feature is the generic name of the resource that will be configured and published to consume the e-invoicing service server. In this case, the export of customers electronic invoices is the e-invoicing feature we want to set up.
-
-## Adding e-invoicing features
-
-1. Sign into your RCS account and go to the **Globalization features workspace**.
-2. Select **Features \> e-Invoicing** tile.
-3. Select **Import** to import the e-Invoicing feature from the Global repository.  
+1. Import the e-Invoicing feature for the export of customer electronic invoices in the **FatturaPA** format.
+2. Review the format configurations that are required to generate, submit, and receive responses about electronic invoices.
+3. Configure the events that support the electronic invoice submission scenarios.
+4. Publish the e-Invoicing feature.
 
 > [!NOTE]
-> If you don’t see the list of available features, select **Synchronize**. 
+> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the e-Invoicing service server. In this case, the export of customer electronic invoices is the e-Invoicing feature that you will set up.
+
+## Import the e-Invoicing feature
+
+1. Sign in to your RCS account.
+2. In the **Globalization features** workspace, in the **Features** section, select the **e-Invoicing** tile.
+3. On the **e-Invoicing Features** page, select **Import** to import the e-Invoicing feature from the Global repository.
+
+    > [!NOTE]
+    > If you don't see the list of available features, select **Synchronize**. 
 
 4. Select the **e-Invoices Export (IT)** feature, and then select **Import**.
 
-![Select Import e-Invoicing feature](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Importing the e-Invoices Export (IT) feature](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
-> [!NOTE]
-> After you import the **e-Invoices Export (IT)** feature from the Global repository, all the settings described in the next sections will be also imported.
+When you import the **e-Invoices Export (IT)** feature from the Global repository, all the settings that are described in the next sections are also imported.
 
-## Create a new version of the feature, e-Invoices Export (IT)
+## Create a new version of the e-Invoices Export (IT) feature
 
-1. On the **e-Invoicing Features** page, select the **Versions** tab.
-2. Select **New**. 
+1. On the **e-Invoicing Features** page, on the **Versions** tab, select **New**. 
 
-![Select new e-Invoicing feature version](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Adding a new e-Invoicing feature version](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
-3. On the **Configurations** tab, configure the Electronic Reporting (ER) formats that are associated with the e-Invoicing feature.
-4. Select **Add** to manage the configurations versions.
+    Next, you will configure the Electronic reporting (ER) formats that are associated with the e-Invoicing feature.
 
-![Manage e-Invoicing feature configurations](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+2. On the **Configurations** tab, select **Add** to manage the configuration versions.
 
-   Through this step you are adding and configuring the ER formats of different files that are used to export Italian e-invoices. For Italian FattauraPA e-invoices, use the following standard configurations, or the actual customized configurations you use for e-Invoicing:
+    ![Managing the e-Invoicing feature configuration versions](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
-   - **Sales invoice (IT)**
-   - **Project invoice (IT)**
+    In this step, you're adding and configuring the ER formats of different files that are used to export Italian e-invoices. For Italian FatturaPA e-invoices, use either the following standard configurations or the actual customized configurations that you use for e-invoicing:
 
-   When you create an e-invoicing feature that is derived from another e-invoicing feature, all ER formats are inherited from the original feature.
+    - Sales invoice (IT)
+    - Project invoice (IT)
 
-5. Select a specific ER format file configuration.
-6. Select **Edit** or **View** to open the **ER format designer**.
+    When you create an e-Invoicing feature that is derived from another e-Invoicing feature, all ER formats are inherited from the original feature.
 
-![Configuration ER format designer](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+3. Select a specific ER format file configuration.
+4. Select **Edit** or **View** to open the **Format designer** page.
 
-7. Use the **Format designer** to edit and view the ER format file configurations.
+    ![Opening the Format designer page](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
-![ER format designer](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+5. Use the **Format designer** page to edit and view the ER format file configurations.
 
-## E-invoicing feature setup
+    ![Format designer page](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
-1. On the **e-Invoicing Features** page, select the **Setups** tab.
-2. Select **Add**, **Delete** or **Edit** to manage the e-invoicing feature setups.
+## Manage the e-Invoicing feature setups
 
-![Manage e-Invoicing feature setup](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+- On the **e-Invoicing Features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the e-Invoicing feature setups.
 
-In this step you are configuring the events that are applicable to electronic invoices including generating the XML output files in FatturaPA format and digital signing (if required).
+![Managing the e-Invoicing feature setups](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
-## Sales invoice feature setup 
+In this step, you configure the events that are applicable to electronic invoices, including generation of the XML output files in **FatturaPA** format and digital signing (if required).
 
-1. On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** list, select **Sales invoice**.
-2. Select **Edit**.
-3. On the **Feature version setup** page, select the **Actions** tab to manage the Actions list.
+### Configure the Sales invoice feature setup
 
-![Select Actions](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+1. On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Sales invoice**.
+2. Select **Edit**.
+3. On the **Feature version setup** page, select the **Actions** tab to manage the list of actions. Actions define a list of operations that must be run in sequential order to accomplish full execution of the event.
 
-> [!NOTE]
-> Actions define a list of operations to be run in sequential order, to accomplish the full execution of the event.
+    ![Actions tab](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
-| **Action ID** | **Action name**     | **Action description**                              |
-|---------------|---------------------|-----------------------------------------------------|
-| 1             | Transform document  | Creates the e-invoice XML file in FatturaPA format. |
-| 2             | Sign document       | Applies a digital signature to the XML file .       |
+    | Action ID | Action name        | Action description                                     |
+    |-----------|--------------------|--------------------------------------------------------|
+    | 1         | Transform document | Create the e-invoice XML file in **FatturaPA** format. |
+    | 2         | Sign document      | Apply a digital signature to the XML file.             |
 
-4. Select the **Applicability rules** tab to view and maintain the applicability rules.
+4. Select the **Applicability rules** tab to view and maintain the applicability rules. Applicability rules define the context where the action will be run.
 
-![Select Applicability rules](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
-
-> [!NOTE]
-> Applicability rules define the context where the action is going to be executed.
+    ![Applicability rules tab](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. Select the **Variables** tab to view and maintain the variables.
 
-![Select Variables](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Variables tab](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
-6. Define the public variables that are required to execute the actions.
+6. Define the public variables that are required to run the actions.
 
-## Project invoice feature setup 
+### Configure the Project invoice feature setup 
 
-The steps and settings needed to complete Project invoice feature setup are very similar to those listed for Sales invoice feature setup. Refer to the Sales invoice procedures when working on Project invoices.
+The steps and settings that are required to configure the **Project invoice** feature setup are very similar to the steps and settings for the **Sales invoice** feature setup. When you work with project invoices, see the procedures for sales invoices.
 
-## Assign the e-invoicing feature to the environment
+## Assign the e-Invoicing feature to the environment
 
 1. On the **e-Invoicing Features** page, on the **Environments** tab, select **Enable**.
-2. Select the **Environment**, and in the **Effective from** field, select the date on which the environment will be effective.
-3. Select **Enable**. 
+2. In the **Environment** field, select the environment.
+3. In the **Effective from** field, select the date when the environment should become effective.
+4. Select **Enable**. 
 
-![Enable e-Invoicing environment](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Enabling the e-Invoicing environment](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
-## Publishing the e-invoicing feature
+## Publish the e-invoicing feature
 
 You can publish the e-Invoicing feature by changing the version status to **Completed** or **Published**.
 
-### Change the version status to Completed 
+### Change the version status to Completed
 
-1. On the **e-Invoicing Features** page, on the **Versions** tab, select the **Draft** version of the e-Invoicing feature.
-2. Select **Change status** \> **Complete**. 
+1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Draft**.
+2. Select **Change status \> Complete**. 
 
-### Change the version status to Published 
+### Change the version status to Published 
 
-1. On the **e-Invoicing Features** page, on the **Versions** tab, select the **Completed** version of the e-Invoicing feature.
-2. Select **Change status** \> **Publish**.
+1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Completed**.
+2. Select **Change status \> Publish**.
 
-![Change status of e-Invoicing feature](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## Set up e-Invoicing service integration in Finance
 
-During the time that you set up Finance, you will:
+During the setup of Finance, you will complete these tasks:
 
-- Import the ER data model, ER data model mapping, and the context configurations for FatturaPA e-invoices.
-- Configure the certificate required for digital signature of Italian e-invoices.
+1. Import the ER data model, the ER data model mapping, and the context configurations for FatturaPA e-invoices.
+2. Configure the certificate that is required to digitally sign Italian e-invoices.
 
-## Import the ER data model, data model mapping, and formats
+### Import the ER data model, data model mapping, and formats
 
-1. Go to the **Electronic reporting** workspace and verify that the **Business Document Service** configuration provider is **Active**.
+1. In the **Electronic reporting** workspace, verify that the **Business Document Service** configuration provider is set to **Active**.
 2. Select **Repositories**.
-3. Select **Global resource**.
-4. Select **Open**, and then select to import the **Invoice model**, **Invoice model mapping**, and the **Customer invoice context model**.
+3. Select **Global resource \> Open**.
+4. Import **Invoice model**, **Invoice model mapping**, and **Customer invoice context model**.
 
-### Enable export of customers electronic invoices Feature for Italy
-
-1. Go to **Organization administration \> Setup \> Electronic document parameters.**
-2. On the **Features** tab, in the **Features** list, locate **IT00036** in the **Feature reference** column and select the **Enabled** check box.
-
-![Enable FatturaPA feature](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
-
-### Configure Electronic documents
+#### Turn on the feature for exporting customer electronic invoices for Italy
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Electronic document** tab, select **Add** and enter the tables required for Italian e-invoices generation:
+2. On the **Features** tab, select the **Enabled** check box in the row for feature reference **IT00036**.
 
-    - **Table name** = Customer invoice journal
-    - **Table name** = Project invoice
+![Turning on the FatturaPA feature](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
-3. For each table, define a related document context.
+#### Configure electronic documents
+
+1. Go to **Organization administration \> Setup \> Electronic document parameters**.
+2. On the **Electronic document** tab, select **Add**, and enter the tables that are required to generate Italian e-invoices:
+
+    - **Table name:** Customer invoice journal
+    - **Table name:** Project invoice
+
+3. For each table, define a related document context:
 
     - For **Customer invoice journal**, select **Customer invoice context**.
     - For **Project invoice**, select **Project invoice context**.
 
-![Set up response types](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Setting up response types](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## Electronic invoice processing
 
-During processing in Finance, you will:
+During processing in Finance, you will complete these tasks:
 
-- Generate Italian e-invoices through the e-invoicing service
-- View the execution logs and acknowledge the results of processing
+1. Generate Italian e-invoices through the e-Invoicing service
+2. View the execution logs and review the results of processing
 
-## Generate electronic invoices
+### Generate electronic invoices
 
-After you enable the **Configurable e-Invoicing Service integration** feature and activate the **IT00036** feature, the legacy Finance process for Italian e-invoices generation can no longer be used and is replaced by a new process called **Submit electronic documents**.
+After you turn on the **Configurable e-Invoicing Service integration** feature and activate the **IT00036** feature, the old Finance process for generating Italian e-invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 You can submit the documents manually, based on your demand for e-invoice documents.
 
-Verify that the setup required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Ffinance%2Flocalizations%2Femea-ita-e-invoices&data=02%7C01%7Cilyako%40microsoft.com%7C5bf724af97684b0fc1f408d803a6a90d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637263361621227134&sdata=lfKJcYsBu1%2FiQQnSzvocpSnkofXWt9ygzZDnyYTv8ug%3D&reserved=0).  
-
 > [!NOTE]
-> Some setup steps described in the topic may be unavailable due to **e-invoicing service** activation.
+> Before you continue, verify that the setup that is required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Be aware that some of the setup steps that are described in that topic might be unavailable because of e-Invoicing service activation.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
-2. Set the **Resubmit documents** field to **No** for the first submission of any document. Set the **Resubmit documents** field to **Yes** when you need
- to resubmit documents through the service.
-3. On the **Records to include** FastTab, select **Filter** to build the query to select documents for submission.
+2. For the first submission of any document, set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for submission.
 
-![Submission form](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Submit electronic documents dialog box](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
-### Filter query
+#### Filter query
 
-1. Configure the filtering conditions for both Sales and Project invoices or leave the conditions empty to include all unsubmitted invoices.
+1. In the **Inquiry** dialog box, configure the filtering conditions for both sales invoices and project invoices, or leave the conditions blank to include all unsubmitted invoices.
 
-![Set up Submission filter criteria](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Setting up submission filter criteria](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
-2. Select **OK** button to close the **Filter query dialog** page.
+2. Select **OK** to close the **Inquiry** dialog box.
 3. Select **OK** submit the selected documents.
 
->![NOTE]
-> During your first attempt to submit a document through the services, you will be asked to confirm the connection with the e-invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+> ![NOTE]
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
 
-### View submission logs
+#### View submission logs
 
 You can view the submission logs for all submitted documents.
 
-1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log.**
-2. In the **Document type** field, select **Customer invoice journal** or **Project invoice** to filter required electronic documents.
+1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
+2. In the **Document type** field, select **Customer invoice journal** or **Project invoice** to filter for the required electronic documents.
 
-![Select document type for viewing submission log](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![Selecting a document type to view the submission logs](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
-The status displayed in **Submission status** column represents the status of the submission process, whether the process ran as configured, and if additional action is required.
+    The value that is shown in the **Submission status** column represents the status of the submission process. It indicates whether the process ran as configured and whether additional action is required.
 
-3. Select **Inquires** \> **Submission details**. The page will show you the details of submission execution logs.
+3. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
 
-![View submission log details](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![Viewing the submission log details](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
-4. In the **Processing actions** section, you can view the execution log of the actions as configured in the **Feature version** set up in RCS. The **Status** column displays if the action was successfully executed.
-5. In the **Action files** pane, view the intermediate files that were generated along the execution of actions. If you select **View**, you can download the output XML file in **FatturaPA** format and see its content.
+4. On the **Processing actions** FastTab, you can view the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
+5. On the **Action files** FastTab, you can view the intermediate files that were generated during execution of the actions. You can select **View** to download the output XML file in **FatturaPA** format and view its content.
 
 ## Related topics
 
 - [E-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with e-Invoicing services](e-invoicing-get-started.md)
-- [Set up e-Invoicing](e-invoicing-setup.md)
-
+- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
+- [Set up the e-Invoicing service](e-invoicing-setup.md)
