@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with the e-Invoicing service 
-description: This topic provides information that will help you get started with the e-Invoicing service in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with the Electronic invoicing add-on
+description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the e-Invoicing service
+# Get started with the Electronic invoicing add-on
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides information that will help you get started with the e-Invoicing service. First, it guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS), and Dynamics 365 Finance. Next, it describes the process for submitting documents through the service by using Dynamics 365 Finance or Dynamics 365 Supply Chain Management. You will also learn how to interpret the submission logs.
+This topic provides information that will help you get started with the Electronic invoicing add-on. First, it guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS), and Dynamics 365 Finance. Next, it describes the process for submitting documents through the service by using Dynamics 365 Finance or Dynamics 365 Supply Chain Management. You will also learn how to interpret the submission logs.
 
 ## Availability
 
-The e-Invoicing service is initially available for Brazil, Italy, and Mexico. It supports the creation of electronic invoices and the submission of the following business documents:
+The Electronic invoicing add-on is initially available for Brazil, Italy, and Mexico. It supports the creation of electronic invoices and the submission of the following business documents:
 
 - **Brazil:** Electronic fiscal document model 55 (NF-e) through integration with SEFAZ
 - **Mexico:** CFDI invoice through integration with PAC Interfactura
@@ -47,7 +47,7 @@ The e-Invoicing service is initially available for Brazil, Italy, and Mexico. It
 
 ## Licensing
 
-You can use the e-Invoicing service with your current license. No additional licenses are required to use the service.
+You can use the Electronic invoicing add-on with your current license. No additional licenses are required to use the service.
 
 ## Prerequisites
 
@@ -68,8 +68,8 @@ The following illustration shows the five main steps that you will complete in t
 1. **Azure resources setup:** Configure Azure storage and the upload of digital certificates in Azure Key Vault.
 2. **LCS setup:** Install the add-in for microservices.
 3. **RCS setup:** Set up the environment, user access, and e-Invoicing features.
-4. **Client setup:** Set up the connection between the client and the e-Invoicing service, and turn off the old features for submitting and receiving responses for electronic documents.
-5. **Submit invoices:** Submit electronic documents through the e-Invoicing service, and receive responses.
+4. **Client setup:** Set up the connection between the client and the Electronic invoicing add-on, and turn off the old features for submitting and receiving responses for electronic documents.
+5. **Submit invoices:** Submit electronic documents through the Electronic invoicing add-on, and receive responses.
 
 > [!NOTE]
 > Some configuration steps in this topic are common and country/region-agnostic. The steps and setup procedures that are country/region-specific are described in country/region-specific topics.
@@ -79,7 +79,7 @@ The following illustration shows the five main steps that you will complete in t
 1. Sign in to your LCS account.
 2. Select the LCS deployment project. Before you can select the project, it must be up and running.
 3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-4. Select the **e-invoicing service** add-in.
+4. Select **Electronic invoicing add-on**.
 5. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
 6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
 
@@ -93,8 +93,8 @@ The following illustration shows the five main steps that you will complete in t
 During the RCS setup, you will complete these tasks:
 
 1. Set up the key vault in RCS.
-2. Set up the RCS integration with the e-Invoicing service server.
-3. Create an e-Invoicing service environment for your organization.
+2. Set up the RCS integration with the Electronic invoicing add-on server.
+3. Create an Electronic invoicing add-on environment for your organization.
 
 ### Set up the key vault in RCS
 
@@ -115,19 +115,19 @@ During the RCS setup, you will complete these tasks:
 
 7. If your country/region-specific invoice requires a chain of certificates to apply a digital signature, select **Chain of certificates** on the Action Pane, and then enter the sequence of certificates or key vault secrets that make up the chain.
 
-### Set up the RCS integration with the e-Invoicing service server
+### Set up the RCS integration with the Electronic invoicing add-on server
 
 1. In the **Globalization features** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
 2. Select **Click here to connect to Lifecycle Service**. If you don't want to connect to LCS, select **Cancel**.
-3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/`.
+3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/`.
 4. In the **Application Id** field, enter **2b66cba7-e0cc-4d1b-9cf8-cd173a0de201**. This value is a fixed value.
 5. In the **LCS Environment Id** field, enter the tenant ID of your LCS subscription account.
 
-![Entering e-Invoicing service parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
+![Entering Electronic invoicing add-on parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
 
-### Add an e-Invoicing service environment
+### Add an Electronic invoicing add-on environment
 
-You can create different environments for the e-Invoicing service, such as Dev, Test, or Production environments.
+You can create different environments for the Electronic invoicing add-on, such as Dev, Test, or Production environments.
 
 1. In the **Globalization features** workspace, in the **Environments** section, select the **e-Invoicing** tile.
 2. Select **New** to create an environment.
@@ -139,58 +139,58 @@ You can create different environments for the e-Invoicing service, such as Dev, 
 
     ![Adding service users](media/e-invoicing-services-get-started-enter-service-users.png)
 
-5. On the Action Pane, select **Publish** to publish the environment to the e-Invoicing service server.
+5. On the Action Pane, select **Publish** to publish the environment to the Electronic invoicing add-on server.
 
     ![Publish button](media/e-invoicing-services-get-started-publish-service-environment.png)
 
 ### e-Invoicing feature setup
 
-"The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the e-Invoicing service server. The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and action flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
+"The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server. The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and action flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
 
 Because of variations in invoice formats and action flows, the e-Invoicing feature setup is country/region-dependent.
 
-## Set up E-Invoicing service integration in Finance or Supply Chain Management 
+## Set up Electronic invoicing add-on integration in Finance or Supply Chain Management 
 
 During this setup, you will complete the following tasks:
 
-1. Turn on the e-Invoicing service integration feature to enable the integration of Finance with e-Invoicing services.
-2. Set up the URL of the e-Invoicing service endpoint.
+1. Turn on the Electronic invoicing add-on integration feature to enable integration with Finance.
+2. Set up the URL of the Electronic invoicing add-on endpoint.
 3. Import the ER configurations that are related to the country/region-specific e-Invoicing feature.
 4. Turn on the applicable country/region-specific e-Invoicing feature.
 5. Import the ER configurations and set up the response types that are required to update your country/region-specific invoice document as a result of the submission process.
 
-### Turn on the e-Invoicing service integration feature
+### Turn on the Electronic invoicing add-on integration feature
 
 1. Sign in to Finance or Supply Chain Management.
-2. In the **Feature management** workspace, search for the new feature, **Configurable e-Invoicing Service integration**.
+2. In the **Feature management** workspace, search for the new feature, **Configurable Electronic invoicing add-on integration**.
 3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
 2. On the **Submission service** tab, in the **Service endpoint URL** field, enter `https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/`.
-3. In the **Environment** field, enter the name of the e-Invoicing service environment that you created during RCS setup.
+3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment that you created during RCS setup.
 
 ![Entering service parameters](media/e-invoicing-services-get-started-enter-service-endpoint.png)
 
 ### Import the ER configurations
 
-To enable business data to be collected and sent to the e-Invoicing service, you must import the ER data model and ER data model configuration
+To enable business data to be collected and sent to the Electronic invoicing add-on, you must import the ER data model and ER data model configuration
 that are related to the country/region-specific e-Invoicing feature that you want to use.
 
 1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Select **Repositories**.
 4. Select **Global resource**, and then select **Open**.
 5. In the **Connect to Lifecycle Services** dialog box, select **Click here to connect to Lifecycle Service**.
-6. Depending on the country or region where you want to use the e-Invoicing feature, you must import the applicable data model, data model mapping, and formats. For information about the ER configurations that you should import, see the country/region-specific "Get started with the e-Invoicing service" topic.
-7. Import **Customer invoice context model**. This model contains additional parameters that describe, among other things, the environment in Finance that is used for the e-Invoicing service during the submission of business data.
+6. Depending on the country or region where you want to use the e-Invoicing feature, you must import the applicable data model, data model mapping, and formats. For information about the ER configurations that you should import, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
+7. Import **Customer invoice context model**. This model contains additional parameters that describe, among other things, the environment in Finance that is used for the Electronic invoicing add-on during the submission of business data.
 
 ### Turn on country/region-specific e-Invoicing features
 
-To turn on country/region-specific e-Invoicing features so that they work with the e-Invoicing service, you must turn on the feature in each legal entity where you want to use it. Afterward, the old electronic invoicing integration can no longer be used, and the integration with the new e-Invoicing service is turned on.
+To turn on country/region-specific e-Invoicing features so that they work with the Electronic invoicing add-on, you must turn on the feature in each legal entity where you want to use it. Afterward, the old electronic invoicing integration can no longer be used, and the integration with the new Electronic invoicing add-on is turned on.
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Features** tab, in the row for the feature that is related to your country/region-specific e-Invoicing feature, select the check box in the **Enabled** column. For information about which feature you should turn on, see the country/region-specific "Get started with the e-Invoicing service" topic.
+2. On the **Features** tab, in the row for the feature that is related to your country/region-specific e-Invoicing feature, select the check box in the **Enabled** column. For information about which feature you should turn on, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
 
 ![Turning on the e-Invoicing feature](media/e-invoicing-services-get-started-enable-invoicing-feature.png)
 
@@ -199,15 +199,15 @@ To turn on country/region-specific e-Invoicing features so that they work with t
 
 ### Import ER configurations and set up the response types to update your country/region-specific invoice document
 
-If the submitted invoice document requires an update in response of the submission to the government authorization services, you must import a special ER data model and configurations to enable the status of the invoice document or any other additional field to be updated.
+If the submitted invoice document requires an update in response to the submission to the government authorization services, you must import a special ER data model and configurations to enable the status of the invoice document or any other additional field to be updated.
 
 1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 2. Select **Repositories**.
 3. Select **Global resource**, and then select **Open**.
 4. Import **Response message model**, **Response message import format**, **Response message model mapping to destination**, and **File contents import format**.
 5. Go to **Organization administration \> Setup \> Electronic document parameters**.
-6. On the **Electronic document** tab, select **Add** to enter the name of the table that is related to your country/region-specific invoice document. For information about which table names you should select, see the country/region-specific "Get started with the e-Invoicing service" topic.
-7. Select **Response types** to configure the response types. For information about which table names you should select, see the country/region-specific "Get started with the e-Invoicing service" topic.
+6. On the **Electronic document** tab, select **Add** to enter the name of the table that is related to your country/region-specific invoice document. For information about which table names you should select, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
+7. Select **Response types** to configure the response types. For information about which table names you should select, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
 
 ![Setting up response types](media/e-invoicing-services-get-started-set-up-response-types.png)
 
@@ -215,15 +215,15 @@ If the submitted invoice document requires an update in response of the submissi
 
 During processing, you will complete these tasks:
 
-1. Submit a business document (invoice) through the e-Invoicing service.
+1. Submit a business document (invoice) through the Electronic invoicing add-on.
 2. View the submission execution logs.
 
 ### Submit business documents
 
-During the regular submission process, communication between the client and the e-Invoicing service is bidirectional. The purpose is to accomplish two main tasks during submission of electronic documents:
+During the regular submission process, communication between the client and the Electronic invoicing add-on is bidirectional. The purpose is to accomplish two main tasks during submission of electronic documents:
 
 1. Send all electronic documents that are pending submission from Finance, and that have the correct status for submission and meet the selection criteria.
-2. Import, into Finance, the response that the e-Invoicing service returns for previously submitted electronic documents. After import, the responses are parsed, and the status of the business documents is updated accordingly.
+2. Import, into Finance, the response that the Electronic invoicing add-on returns for previously submitted electronic documents. After import, the responses are parsed, and the status of the business documents is updated accordingly.
 
 You can submit business documents either manually or based on your schedule requirements.
 
@@ -241,16 +241,16 @@ You can submit business documents either manually or based on your schedule requ
     ![Setting up submission filter criteria](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
 
 3. Select **OK** to close the **Inquiry** dialog box.
-4. Select **OK** to submit the selected business documents to the e-Invoicing service.
+4. Select **OK** to submit the selected business documents to the Electronic invoicing add-on.
 
     > [!NOTE]
-    > During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+    > During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on. Select **Click here to connect to Electronic Document Submission Service**.
     >
     > ![Connect to Electronic Document Submission Service message box](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
     >
     > If the connection is successful, you receive a confirmation message.
     >
-    > ![Confirmation of connection to the e-Invoicing service](media/e-invoicing-services-get-started-confirmation-connection-e-invoicing-services.png)
+    > ![Confirmation of connection to the Electronic invoicing add-on](media/e-invoicing-services-get-started-confirmation-connection-e-invoicing-services.png)
 
 5. Close the dialog box.
 
@@ -287,12 +287,12 @@ The results that are shown in the submission log depend on how the e-Invoicing f
 
 - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
 - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. You can select **View** to download the file and view its contents.
-- **Processing action log** – This FastTab shows the results of the communication between the e-Invoicing service and the target web service. It also shows what was returned of the web service processing.
+- **Processing action log** – This FastTab shows the results of the communication between the Electronic invoicing add-on and the target web service. It also shows what was returned from the web service processing.
 
 ## Related topics
 
-- [e-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with the e-Invoicing service for Brazil](e-invoicing-bra-get-started.md)
-- [Get started with the e-Invoicing service for Mexico](e-invoicing-mex-get-started.md)
-- [Get started with the e-Invoicing service for Italy](e-invoicing-ita-get-started.md)
-- [Set up the e-Invoicing service](e-invoicing-setup.md)
+- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
+- [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
+- [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
+- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
