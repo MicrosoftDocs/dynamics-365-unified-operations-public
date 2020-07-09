@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -66,7 +66,7 @@ Themes can be used to remove or change the order of buy box product properties a
 
 ## Modules that can be used in a buy box module
 
-- **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module see [Media Gallery module](add-mediagallery-module.md).
+- **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module, see [Media Gallery module](mediagallery-module.md).
 
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
 
@@ -118,7 +118,7 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Store selector module](store-selector.md)
 
-[Media gallery module](add-mediagallery-module.md)
+[Media gallery module](mediagallery-module.md)
 
 [Container module](add-container-module.md)
 
