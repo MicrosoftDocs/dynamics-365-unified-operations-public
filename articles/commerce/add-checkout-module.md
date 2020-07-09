@@ -57,7 +57,7 @@ A checkout module shows an order summary and provides the functionality for plac
 | Order summary heading | Heading | Heading for the order summary section of the module|
 | Cart line items heading| Heading| Heading for the cart line items shown in the checkout module|
 | Show shipping charges on line item| True or False| If True, shows the shipping charges that are applicable for line items on the cart line. If its Header charge with no proration, the shipping charge will be applied at the header level and not line level. This feature was added in 10.0.13|
-|Disable guided checkout flow| True or False| |
+
 
 
 ### Modules that can be used in the checkout module
