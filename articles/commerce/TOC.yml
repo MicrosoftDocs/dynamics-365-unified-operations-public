@@ -1164,7 +1164,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
         - name: Resolve issues after Entity store maintenance
           href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-        - name: Configure PowerBI.com integration
+        - name: Configure the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
