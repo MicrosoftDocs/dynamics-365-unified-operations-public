@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with e-Invoicing services for Brazil
-description: This topic provides information about how to get started with the e-Invoicing service for Brazil in Dynamics 365 Finance and Dynamics 365 Supply chain management.
+title: Get started with the e-Invoicing service for Brazil
+description: This topic provides information that will help you get started with the e-Invoicing service for Brazil in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 06/24/2020
@@ -30,288 +30,284 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with e-Invoicing services for Brazil 
+# Get started with the e-Invoicing service for Brazil 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-
 > [!IMPORTANT]
-> The e-Invoicing service for Brazil does not currently support all the functions that are available in the fiscal document integration that is built into Dynamics 365 Finance and Dynamics 365 Supply chain management.
+> The e-Invoicing service for Brazil doesn't currently support all the functions that are available in the fiscal document integration that is built into Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This topic provides information about how to enable e-invoicing services for Brazil. This includes the configuration steps which are country-dependent in RCS
-(Regulatory Configuration Services) and in Finance and Supply chain management. This topic also guides you through the process of submitting an NF-e fiscal document
-(Electronic fiscal document model 55) through the service, and how review the results of processing over the status of the fiscal documents.
+This topic provides information that will help you get started with the e-Invoicing service for Brazil. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and in Finance and Supply Chain Management. It also guides you through the process of submitting an NF-e fiscal document (Electronic fiscal document model 55) through the service, and it explains how review the results of processing over the status of the fiscal documents.
 
 ## Prerequisites
 
-To complete these steps, you must first do or verify the following:
-
-- Complete the steps in the topic, [Get started with e-invoicing service](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with the e-Invoicing service](e-invoicing-get-started.md).
 
 ## RCS setup
 
-During the RCS setup you will:
+During the RCS setup, you will complete these tasks:
 
-- Import an e-invoicing feature for NF-e fiscal document
-- Review the file formats required to submit NF-e for authorization
-- Review the file formats required to request the cancellation of an approved NF-e
-- Configure the event required to submit NF-e for authorization
-- Configure the event required to request the cancellation of an approved NF-e
-- Assign the e-invoicing feature to an e-invoicing service environment
-- Publish the e-invoicing feature
+1. Import the e-Invoicing feature for NF-e fiscal documents.
+2. Review the file formats that are required to submit NF-e fiscal documents for authorization.
+3. Review the file formats that are required to request the cancellation of an approved NF-e.
+4. Configure the event that is required to submit NF-e fiscal documents for authorization.
+5. Configure the event that is required to request the cancellation of an approved NF-e.
+6. Assign the e-Invoicing feature to an e-Invoicing service environment.
+7. Publish the e-Invoicing feature.
 
-The e-Invoicing feature is the generic name of the resource that is configured and published for consumption of e-invoicing service server. The e-Invoicing feature setup combines, among others, the usage of Electronic Report (ER) configuration formats to create configurable export and import files, and Actions and Actions flows, which allows the creation of configurable rules to send request, import response and parsing of the response contents.
+> [!NOTE]
+> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the e-Invoicing service server. The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
 
-## Import e-invoicing features
+## Import the e-Invoicing feature
 
-1. Sign into your RCS account
-2. Go to **Globalization features workspace**, and then select **Features \> e-invoicing** tile.
-3. Select **Import** to import a NF-e fiscal document e-invoicing feature from the Global repository.
+1. Sign in to your RCS account
+2. In the **Globalization features** workspace, in the **Features** section, select the **e-Invoicing** tile.
+3. On the **e-Invoicing Features** page, select **Import** to import a NF-e fiscal document e-Invoicing feature from the Global repository.
 
-![Select import e-invoicing feature](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
+    ![Import button](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
 
 4. Select the NF-e fiscal document feature, and then select **Import**.
 
-![Select import NF-e feature](media/e-Invoicing-services-get-started-BRA-Select-Import-NF-e-feature.png)
+    ![Importing the NF-e feature](media/e-Invoicing-services-get-started-BRA-Select-Import-NF-e-feature.png)
 
-### Create new version of NF-e fiscal document feature
+### Create a new version of the NF-e fiscal document feature
 
-1. On the **e-Invoicing Features** page, select the **Versions** tab.
-2. Select **New**.
+- On the **e-Invoicing Features** page, on the **Versions** tab, select **New**.
 
-![Select new e-Invoicing feature version](media/e-Invoicing-services-get-started-BRA-Select-New-e-Invoicing-feature-version.png)
+![Adding a new e-Invoicing feature version](media/e-Invoicing-services-get-started-BRA-Select-New-e-Invoicing-feature-version.png)
 
 ### Update the configuration version
 
-1. On the **e-Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration version (ER file format configurations).
+1. On the **e-Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions (ER file format configurations).
 
-![Manage e-Invoicing feature configurations](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-configurations.png)
+    ![Managing e-Invoicing feature configurations](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-configurations.png)
 
-**Notes:**
+    - When you create a new version of the NF-e fiscal document feature, all configuration version (ER file formats) are inherited from the latest version.
+    - To submit the NF-e fiscal document for authorization, the following configuration versions are required:
 
-- When you create a new version of the NF-e fiscal document feature, all configuration version (ER file formats) are inherited from the latest version.
-- When you submit the NF-e fiscal document for authorization, the following configuration versions are required:
+        - NFe submit export format
+        - NFe response message import
+        - NFe error log import
 
-    - NFe submit export format
-    - NFe response message import
-    - NFe error log import
+    - To submit the NF-e cancellation, the following configuration version is required:
 
-- To submit the NF-e cancellation, the following configuration version is required:
+        - NFe cancel export format
 
-    - NFe cancel export format
+2. In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-2. Select a **Configuration version**, and then select **Edit** or **View** to access ER format designer to edit or view configuration.
+    ![Opening the Format designer page](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
-![Configuration ER format designer](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
+3. Use the **Format designer** page to edit or view the ER format file configurations. For more information, see [Create electronic document configurations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
-> [!NOTE]
-> Use the **Format designer** to edit or view the ER format file configurations. For more details, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
+    ![Format designer page](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
 
-![ER format designer](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
+### Manage the e-Invoicing feature setups
 
-### Feature setup
+- On the **e-Invoicing Features** page, on the **Setups** tab, select **Add** or **Delete** to manage the e-Invoicing feature setups (that is, NF-e events).
 
-1. On the **e-Invoicing Features** page, select the **Setups** tab.
-2. Select **Add** or **Delete** to manage the Feature setup (NF-e events).
+![Managing the e-Invoicing feature setups](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-setup.png)
 
-![Manage e-Invoicing feature setup](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-setup.png)
+When you create a new version of the NF-e fiscal document feature that is derived from another e-Invoicing feature, all feature setups (NF-e events) are inherited from the latest version.
 
-**Notes:**
+To submit NF-e fiscal documents for authorization, the **Submit** feature setup is required.
 
-- When you create a new version of the NF-e fiscal document feature that is derived from another e-invoicing feature, all Feature setups (NF-e events) are inherited from the latest version.
-- To submit NF-e fiscal document for authorization, the Feature setup, **Submit** is required.
-- For submitting NF-e cancellation the Feature setup, **Cancellation** is required.
+To submit NF-e cancellation, the **Cancellation** feature setup is required.
 
-### NF-e Submit event Feature setup
+#### Configure the Submit feature setup
 
 1. On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Submit**.
-2. Select **Edit** button to open the **Feature version setup** page.
+2. Select **Edit**.
 
-![Edit e-Invoicing feature setup](media/e-Invoicing-services-get-started-BRA-Edit-e-Invoicing-feature-setup.png)
+    ![Edit e-Invoicing feature setup](media/e-Invoicing-services-get-started-BRA-Edit-e-Invoicing-feature-setup.png)
 
-3. Select the **Actions** tab to manage the Actions list.
+3. On the **Feature version setup** page, select the **Actions** tab to manage the list of actions.
 
-![Select actions](media/e-Invoicing-services-get-started-BRA-Select-Actions.png)
+    ![Actions tab](media/e-Invoicing-services-get-started-BRA-Select-Actions.png)
 
-Review the actions required to submit an NF-e for authorization.
+4. Review the actions that are required to submit an NF-e for authorization.
 
-| Action ID | Action name                  | Action description                                                |
-|-----------|------------------------------|-------------------------------------------------------------------|
-| 1         | Transform document           | Create the NF-e XML file for submission.                          |
-| 2         | Sign document                | Apply the digital certificate over the XML file.                  |
-| 3         | Call Brazilian SEFAZ service | Submit the signed XML file to the web services for authorization. |
-| 4         | Process response             | Acquire the web service response.                                 |
-| 5         | Transform document           | Parse the content of the file received from as response.          |
-| 6         | Transform document           | Create the XML file to inquire status of the submission status.   |
-| 7         | Call Brazilian SEFAZ service | Submit the XML file requesting the submission status.             |
-| 8         | Process response             | Acquire the web service response.                                 |
+    | Action ID | Action name                  | Action description                                                |
+    |-----------|------------------------------|-------------------------------------------------------------------|
+    | 1         | Transform document           | Create the NF-e XML file for submission.                          |
+    | 2         | Sign document                | Apply the digital certificate to the XML file.                    |
+    | 3         | Call Brazilian SEFAZ service | Submit the signed XML file to the web services for authorization. |
+    | 4         | Process response             | Get the web service response.                                     |
+    | 5         | Transform document           | Parse the content of the file that is received as a response.     |
+    | 6         | Transform document           | Create the XML file to inquire about status of the submission.    |
+    | 7         | Call Brazilian SEFAZ service | Submit the XML file that requests the submission status.          |
+    | 8         | Process response             | Get the web service response.                                     |
 
-### Set up the URL for SEFAZ web services 
+#### Set up the URL for SEFAZ web services 
 
-1. On the **Feature version setup** page, in the **Actions** section, select **Call Brazilian SEFAZ service** (Action ID = 3).
-2. In the **Parameters** section, in the **URL address parameter** field, enter the URL of SEFAZ web service for NF-e submission.
-3. In the **Actions** section, select **Call Brazilian SEFAZ service** (Action ID = 7).
-4. In the **Parameters** section, in the **URL address parameter** field, enter the URL of SEFAZ web service for NF-e submission.
+1. On the **Feature version setup** page, on the **Actions** tab, on the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **3**).
+2. On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for NF-e submission.
+3. On the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **7**).
+4. On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for NF-e submission.
 
-## **NF-e** cancellation event feature setup
+#### Configure the Cancellation feature setup
 
 1. On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Cancellation**.
-2. Select **Edit** to open the **Feature version setup** page.
-3. Select the **Actions** tab to manage the Actions list.
+2. Select **Edit**.
+3. On the **Feature version setup** page, select the **Actions** tab to manage the list of actions.
+4. Review the actions that are required to request the cancellation of an approved NF-e.
 
-Review the actions required to request the cancellation of an approved NF-e.
+    | Action ID | Action name                  | Action description                                               |
+    |-----------|------------------------------|------------------------------------------------------------------|
+    | 1         | Transform document           | Create the NF-e cancellation XML file for submission.            |
+    | 2         | Sign document                | Apply the digital certificate to the XML file.                   |
+    | 3         | Call Brazilian SEFAZ service | Submit the signed XML file to the web services for cancellation. |
+    | 4         | Process response             | Get the web service response.                                    |
 
-| Action ID | Action name                  | Action description                                               |
-|-----------|------------------------------|------------------------------------------------------------------|
-| 1         | Transform document           | Create the NF-e cancellation XML file for submission.            |
-| 2         | Sign document                | Apply the digital certificate over the XML file.                 |
-| 3         | Call Brazilian SEFAZ service | Submit the signed XML file to the web services for cancellation. |
-| 4         | Process response             | Acquire the web service response.                                |
+#### Set up the URL for SEFAZ web services
 
-### Set up the URL for SEFAZ web services
+1. On the **Feature version setup** page, on the **Actions** tab, on the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **3**).
+2. On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for cancellation of an approved NF-e.
 
-1. On the **Feature version setup** page, in the **Actions** section, select **Call Brazilian SEFAZ service** (Action ID = 3).
-2. In the **Parameters** section, in the **URL address parameter** field, enter the URL of SEFAZ web service for cancellation of the approved NF-e.
-
-### Enable an e-invoicing environment and assign a draft version
+### Make an e-Invoicing environment available and assign a Draft version
 
 1. On the **e-Invoicing Features** page, on the **Environments** tab, select **Enable**.
-2. Select the **Environment**, and then select the start date for when the environment is enabled**.**
-3. Select **Enable**.
+2. In the **Environment** field, select the environment.
+3. In the **Effective from** field, select the date when the environment should become effective.
+4. Select **Enable**.
 
-![Enable e-Invoicing environment](media/e-Invoicing-services-get-started-BRA-Enable-e-Invoicing-environment.png)
+![Enabling an e-Invoicing environment](media/e-Invoicing-services-get-started-BRA-Enable-e-Invoicing-environment.png)
 
-### Change the status to Complete 
+### Change the status to Completed
 
-1. On the **e-Invoicing Features** page, on the **Versions** tab, select the **Draft** version of the e-invoicing feature.
-2. Select **Change status** \> **Complete**.
+1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Draft**.
+2. Select **Change status \> Complete**.
 
-![Change status of e-Invoicing feature](media/e-Invoicing-services-get started-BRA-Change-status-of-e-Invoicing-feature.png)
+![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-BRA-Change-status-of-e-Invoicing-feature.png)
 
 ### Change the status to Publish
 
-1. On the **e-Invoicing Features** page, on the **Versions** tab, select the **Complete** version of the e-invoicing feature.
-2. Select **Change status** \> **Publish**.
+1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Completed**.
+2. Select **Change status \> Publish**.
 
-![Publish e-Invoicing feature](media/e-Invoicing-services-get-started-BRA-Publish-e-Invoicing-feature.png)
+![Publishing the e-Invoicing feature](media/e-Invoicing-services-get-started-BRA-Publish-e-Invoicing-feature.png)
 
-## Set up e-Invoicing service integration in Finance or Supply chain management
+## Set up e-Invoicing service integration in Finance or Supply Chain Management
 
-During set up, you will:
+During setup, you will complete these tasks:
 
-- Import the specific ER data model, data model mapping, and formats required for NF-e fiscal document.
-- Import the ER configuration, and set up the response types required to update the status of the Fiscal document after the return of the submission process.
+1. Import the specific ER data model, the data model mapping, and that formats that are required for NF-e fiscal documents.
+2. Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the return of the submission process.
 
-## Import the ER data model, data model mapping, and formats required for NF-e fiscal documents
+### Import the ER data model, data model mapping, and formats that are required for NF-e fiscal documents
 
-1. Sign into Finance and go to the **Electronic reporting** workspace.
-2. In the **Configuration providers** group, select the **Microsoft** tile. Make sure this configuration provider is set to **Active**. For details about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+1. Sign in to Finance.
+2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Select **Repositories**.
-4. Select **Global resource \>Open**.
-5. Import the **Fiscal documents**, **Fiscal documents mapping, NF-e submit export format (BR), NF-e submit import format (BR), NF-e status request export format (BR), NF-e cancel export format (BR), NF-e discard export format (BR),** and **NF-e correction letter export format (BR).**
+4. Select **Global resource \> Open**.
+5. Import **Fiscal documents**, **Fiscal documents mapping**, **NF-e submit export format (BR), NF-e submit import format (BR)**, **NF-e status request export format (BR)**, **NF-e cancel export format (BR)**, **NF-e discard export format (BR)**, and **NF-e correction letter export format (BR)**.
 
-## Enable the Feature NF-e Federal for Brazil
+### Turn on the NF-e Federal feature for Brazil
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Features** tab, enable **Feature reference = BR00053.**
+2. On the **Features** tab, select the **Enable** check box in the row for feature reference **BR00053**.
 
-## Import ER configuration and setup the response type for Fiscal documents
+### Import ER configurations and set up the response types for fiscal documents
 
-1. Go to the **Electronic reporting** workspace, and in the **Configuration providers** group, select the **Microsoft** tile.
+1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 2. Select **Repositories**.
 3. Select **Global resource \> Open**.
-4. Import the **NF-e error log import (BR)**, **NF-e response data import format (BR),** and **NF-e response message import (BR).**
-5. Go to **Organization administration \> Setup \> Electronic document parameters** and on the Electronic document tab, select **Add**.
-6. In the **Table name** field, enter **Fiscal document header.**
-7. In the **Document context** field, select **Customer invoice context model – Fiscal document context.**
+4. Import **NF-e error log import (BR)**, **NF-e response data import format (BR)**, and **NF-e response message import (BR)**.
+5. Go to **Organization administration \> Setup \> Electronic document parameters**.
+6. On the **Electronic document** tab, select **Add**.
+6. In the **Table name** field, enter **Fiscal document header**.
+7. In the **Document context** field, select **Customer invoice context model – Fiscal document context**.
 8. Select **Response types**.
-9. Select **New**, and in the **Response type** field, select **Response**.
-10. In the **Submission status** field, select **Pending.**
+9. Select **New**, and then, in the **Response type** field, select **Response**.
+10. In the **Submission status** field, select **Pending**.
 11. In the **Model mapping** field, select **Response message import format – Model mapping from response message**.
 12. Select **Save**.
-13. Select **New**, and in the **Response type** field, enter **ResponseData**.
+13. Select **New**, and then, in the **Response type** field, enter **ResponseData**.
 14. In the **Submission status** field, select **Pending**.
-15. In the **Model mapping** field, select **NFe response data import format – Response data import**, and then select **Save**.
+15. In the **Model mapping** field, select **NFe response data import format – Response data import**.
+16. Select **Save**.
 
 ## Electronic invoice processing
 
-During processing in Finance, you will:
+During processing in Finance, you will complete these tasks:
 
-- Submit a created fiscal document through the e-invoicing services
-- View the submission execution logs and acknowledge the results of processing
-- Submit the cancellation of a fiscal document through the e-invoicing services
+1. Submit a fiscal document through the e-Invoicing service.
+2. View the submission execution logs and review the results of processing.
+3. Submit the cancellation of a fiscal document through the e-Invoicing service.
 
-## Submit NF-e fiscal documents for SEFAZ authorization 
+### Submit NF-e fiscal documents for SEFAZ authorization 
 
-After you enable the **Configurable e-Invoicing Service integration** feature, the legacy process for submitting NF-e for authorization (**Export/Import NF-e process**) can no longer be used and is replaced by the new process called **Submit electronic documents.**
-
-Make sure you have one or more customer fiscal document model 55s, issued by the customer’s fiscal establishment, with the direction set to **Outgoing** and with a fiscal document status of **Created.** For more information, see [Issue customer fiscal document (Brazil)](tasks/br-00038-issuing-customer-fiscal-document.md).
-
-1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
-2. Set the **Resubmit documents** field to **No** for the first submission of any document. Or, if you need to resubmit a document through the service, set the **Resubmit documents** field to **Yes**.
-3. Expand the **Records to include** FastTab and then select **Filter** to build the query to select the documents for submission.
-4. On the **Range** tab, select **Add**.
-5. In the **Table** field, select **Fiscal document header** and in the **Derived table** field, select **Fiscal document header.**
-6. In the **Field** field, select **Number**.
-7. In the **Criteria** field, enter the number of the fiscal document to be submitted, and then select **OK** to close the **Filter query** dialog page.
-8. Select **OK** to submit the selected documents for submission.
+After you turn on the **Configurable e-Invoicing Service integration** feature, the old process for submitting NF-e fiscal documents for authorization (**Export/Import NF-e process**) can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 > [!NOTE]
-> During your first attempt to submit a document through the services, you will be asked to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+> Before you continue, make sure that you have one or more customer fiscal documents model 55 that were issued by the customer's fiscal establishment. The direction for these fiscal documents must be set to **Outgoing**, and the status must be **Created**. For more information, see [Issue customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
 
-## View all submission logs
+1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
+2. For the first submission of any document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for submission.
+4. On the **Range** tab, select **Add**.
+5. In the **Table** field, select **Fiscal document header**.
+6. In the **Derived table** field, select **Fiscal document header**.
+6. In the **Field** field, select **Number**.
+7. In the **Criteria** field, enter the number of the fiscal document that should be submitted.
+8. Select **OK** to close the **Inquiry** dialog box.
+8. Select **OK** to submit the selected documents.
 
-After you enable the **Configurable e-Invoicing Service integration** feature, a new page is available to follow up on the document submission process. You can use this page to see the submission logs for all submitted documents.
+> [!NOTE]
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+
+### View all submission logs
+
+After you turn on the **Configurable e-Invoicing Service integration** feature, a new page is available that lets you follow up on the document submission process. You can use this page to view the submission logs for all submitted documents.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
-2. In the **Document type** field, select **Fiscal document header** to filter only fiscal documents
-3. Select **Inquires** \> **Submission details**. The page will show you the details of submission execution logs.
+2. In the **Document type** field, select **Fiscal document header** to filter for fiscal documents only.
+3. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
 
-![View submission log details](media/e-Invoicing-services-get-started-BRA-View-Submission-log-details.png)
+![Viewing the submission log details](media/e-Invoicing-services-get-started-BRA-View-Submission-log-details.png)
 
 > [!NOTE] 
-> For the NF-e fiscal document, the **Error code** column contains the return code returned by SEFAZ web services.
+> For NF-e fiscal documents, the **Error code** column shows the return code that was returned by SEFAZ web services.
 
-## View the submission logs through the fiscal document form
+### View submission logs through the fiscal document page
 
-After you enable the **Configurable e-Invoicing Service integration** feature, you can also see the submission logs through the fiscal document.
+After you turn on the **Configurable e-Invoicing Service integration** feature, you can also view the submission logs through the fiscal document page.
 
-1. Go to **General ledger \> Inquires and reports \> Fiscal documents \> All fiscal documents**.
+1. Go to **General ledger \> Inquiries and reports \> Fiscal documents \> All fiscal documents**.
 2. Select a fiscal document that was previously submitted through the e-Invoicing service.
-3. On **NF-e federal** tab, select **Electronic document log**.
+3. On the Action Pane, on the **NF-e federal** tab, select **Electronic document log**.
 
-![View submission log from fiscal document viewer](media/e-Invoicing-services-get-started-BRA-View-Submission-log-from-Fiscal-document-viewer.png)
+![Viewing submission logs from fiscal document page](media/e-Invoicing-services-get-started-BRA-View-Submission-log-from-Fiscal-document-viewer.png)
 
-## Submit Approved NF-e fiscal documents for SEFAZ cancellation
+### Submit approved NF-e fiscal documents for SEFAZ cancellation
 
-After you enable the **Configurable e-Invoicing Service integration** feature, the legacy process for cancelling NF-e fiscal documents can’t be used anymore and is replaced by a new cancellation process that is embedded on **Electronic document submission log.**
+After you turn on the **Configurable e-Invoicing Service integration** feature, the old process for canceling NF-e fiscal documents can no longer be used. It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.
 
-Make sure you have executed the cancellation of the customer fiscal document for an approved NF-e fiscal document. For more information see, [Cancel customer fiscal document (Brazil)](latam-bra-cancel-customer-fiscal-documents.md).
-
-1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log** and select the fiscal document.
-2. Select **Functions** \> **Send related submissions**.
-3. Enter a **Description** for the related submission, and then select **OK**.
-
-## View cancellation submission logs
+> [!NOTE]
+> Make sure that you've run the cancellation of the customer fiscal document for an approved NF-e fiscal document. For more information see, [Cancel customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/latam-bra-cancel-customer-fiscal-documents).
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
-2. In the **Document type** field, select **Fiscal document header** to filter only fiscal documents.
-3. Select the fiscal document and then select **Inquires** \> **Related submission**.
+2. Select the fiscal document, and then select **Functions \> Send related submissions**.
+3. Enter a description for the related submission, and then select **OK**.
 
-Related submissions are submissions that are related to a main submission which was taken first. For example, a submission that authorized a certain NF-e is the main submission. The submission that requested the cancellation of this same NF-e in SEFAZ is called a related submission because it exists only because it is requesting the cancellation of the job done under another submission.
+### View cancellation submission logs
 
-The page shows all related submissions, and their submission status, for a given fiscal document. In the following graphic, the first line represents the submission that requested the approval of the fiscal document. The second line represents the submission that cancelled that fiscal document.
+1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
+2. In the **Document type** field, select **Fiscal document header** to filter for fiscal documents only.
+3. Select the fiscal document, and then, on the Action Pane, select **Inquiries \> Related submission**.
 
-![View cancellation submission log](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log.png)
+    Related submissions are submissions that are related to a main submission that was made first. For example, the submission that authorizes a specific NF-e is the main submission. The submission that requests the cancellation of the same NF-e in SEFAZ is a related submission. It exists only because it's requesting the cancellation of the job that was done through another submission.
 
-4. Select **Inquire** \> **Submission details**. The page will show you the details of the submission execution logs.
+    The **Related submissions** page shows all related submissions, and their submission status, for a given fiscal document. In the following illustration, the first line represents the submission that requested approval of the fiscal document. The second line represents the submission that canceled that fiscal document.
 
-![View cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
+    ![Viewing the cancellation submission logs](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log.png)
 
-## Related articles
+4. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
+
+    ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
+
+## Related topics
 
 - [e-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with e-Invoicing services](e-invoicing-get-started.md)
-- [Set up e-Invoicing](e-invoicing-setup.md)
-
+- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
+- [Set up the e-Invoicing service](e-invoicing-setup.md)
