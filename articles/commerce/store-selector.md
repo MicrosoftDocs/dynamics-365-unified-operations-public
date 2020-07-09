@@ -71,7 +71,7 @@ The following image shows an example of a store selector module used on a PDP.
 ![Example of a store selector module](./media/BOPIS.PNG)
 
 ## Find a store
-The Store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module.
+The Store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module. When a store is selected as preferred store, the store id is maintained in the browser cookie and requires the user to accept the cookie consent message.
 
 The following image shows an example of a store selector module used on a Store locations page along with Map module [Maps module](add-maps-module.md).
 
@@ -88,7 +88,7 @@ The module can be used with the Map module to render the store locations visuall
 | Heading| Text| Heading for the module|
 | Mode| Find stores, Pick up in store| Find stores, displays stores available. Pick up in store, allows user to select a store for pickup|
 | Style| Dialog, Inline| The module can rendered inline or shown in a dialog|
-| Set as preferred store| True or False| When true, it allows the user to set a store as a preferred store for their shopping experience|
+| Set as preferred store| True or False| When true, it allows the user to set a store as a preferred store for their shopping experience. This feature requires the user to accept the cookie consent messaging|
 | Show all stores | True or False| When true, it shows an option for the shopper to view all stores ignoring the search radius|
 |Auto-suggest options - Max results| Number| It can be used to define the maximum number of auto-suggest results to render via Bing Auto-suggest API|
 | Search radius | Number | Defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used.|
