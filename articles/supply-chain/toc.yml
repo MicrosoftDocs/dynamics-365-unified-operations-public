@@ -74,6 +74,8 @@
             href: get-started/whats-new-scm-10-0-12.md
           - name: Supply Chain Management 10.0.11 (July 2020)
             href: get-started/whats-new-scm-10-0-11.md
+          - name: Supply Chain Management 10.0.10 (May 2020)
+            href: get-started/whats-new-scm-10-0-10.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -2565,22 +2567,20 @@
         href: warehousing/warehouse-management-overview.md
       - name: Inbound warehouse operations
         items:
-        - name: Receipts for registration and put-away
-          items:
-          - name: Warehouse handling of inbound loads for purchase orders
-            href: warehousing/inbound-load-handling.md
-          - name: Register items for an advanced warehousing enabled item using an item arrival journal
-            href: warehousing/tasks/register-items-advanced-warehousing.md
-          - name: Register items for a basic warehousing enabled item using an item arrival journal
-            href: warehousing/tasks/register-items-basic-warehousing.md
-          - name: Cross-dock products from receiving warehouse to stores
-            href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-          - name: Set up a location directive for purchase order put-away
-            href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-          - name: Set up a work template for purchase orders
-            href: warehousing/tasks/set-up-work-template-purchase-orders.md
-          - name: Location product dimension mixing
-            href: warehousing/location-product-dimension-mixing.md
+        - name: Warehouse handling of inbound loads for purchase orders
+          href: warehousing/inbound-load-handling.md
+        - name: Register items for an advanced warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-advanced-warehousing.md
+        - name: Register items for a basic warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-basic-warehousing.md
+        - name: Cross-dock products from receiving warehouse to stores
+          href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+        - name: Set up a location directive for purchase order put-away
+          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+        - name: Set up a work template for purchase orders
+          href: warehousing/tasks/set-up-work-template-purchase-orders.md
+        - name: Location product dimension mixing
+          href: warehousing/location-product-dimension-mixing.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
