@@ -38,7 +38,7 @@ by restricting access to table records based on security policies. The query in
 the policy applies a filter and only records that satisfies the conditions will
 be accessible from the restricted tables.
 
-Data security policy components
+## Data security policy components
 
 -   **Constrained table(s)**: the table(s) or from which data is filtered or
     secured. For example, in a policy that secures access to customers based on
@@ -78,7 +78,7 @@ Data security policy components
 In the Application Object Tree (AOT), policies are their components are
 displayed under **Security \> Policies.**
 
-Important to consider
+## Important considerations
 
 The policy query is added to the WHERE clause, or ON clause, on SELECT, UPDATE,
 DELETE and INSERT operations involving the specified constrained tables. Unless
@@ -93,13 +93,13 @@ the records that are included by each policy are the only records that can be
 accessed. This means that a record must satisfy all the applicable security
 policies before access to the record is allowed.
 
-Additional resources
+## Additional resources
 
 For information for how to debug, create more advanced policies, including
 chaining of restricted tables, Table relations based on expressions and much
 more please refer to these resources:
 
-From Microsoft:
+### From Microsoft:
 
 Create a simple Security policy: Securing access to Customers and Customer
 groups based on a range for Customer group
@@ -110,7 +110,7 @@ groups based on a range for Customer group
 [Securing Data by Dimension Value by using Extensible Data Security (White
 paper) [AX 2012]](https://technet.microsoft.com/en-us/library/hh335188.aspx)
 
-From our MVPs:
+### From our MVPs:
 
 [Extensible Data Security examples – by Andre Arnaud De
 Calavon](https://dynamicspedia.com/tag/xds/)
