@@ -40,8 +40,6 @@ Creating a query for the policy
 
 ![Add a new query](media/71c5206330564e8c2612a61a5a211dba.png)
 
->   A screenshot of a social media post Description automatically generated
-
 1.  Right click on **Data Sources**, and click **New Data Source**.
 
 2.  In the **Table** field, enter the Primary table name ‘CustGroup’.
@@ -58,15 +56,11 @@ Creating a query for the policy
 
 ![In the Value field, enter 10](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
 
->   A screenshot of a cell phone Description automatically generated
-
 Creating a query for the policy
 
 1.  Add a new Security policy, e.g. XDSCustTableOnCustGroup10:
 
 ![Add a security policy](media/118355845fa679f8f004e516f0691cff.png)
-
->   A screenshot of a social media post Description automatically generated
 
 1.  Set **Constrained Table** to ‘Yes’. This will secure access also to the
     primary table. In this example to the CustGroup table.
@@ -90,14 +84,10 @@ Creating a query for the policy
 
 ![In the Role Name field, enter TradeSalesClerk](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
 
->   A screenshot of a cell phone Description automatically generated
-
 1.  Next add constrained table(s). In the simple example we will just add one
     table:
 
 ![Add constrained tables](media/e366725fa084d308b7f02a89a3e6175b.png)
-
->   A screenshot of a cell phone Description automatically generated
 
 1.  Right click on **Constrained tables**, and click **New \> Constrained
     Table**.
