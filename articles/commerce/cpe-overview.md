@@ -36,8 +36,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 
 > [!NOTE]
-> Commerce evaluation environments are not generally available and are granted to partners and customers on per request basis.
-> Please reach out to your Microsoft partner contact for more information.
+> Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
 
 ## Overview
 
@@ -53,7 +52,7 @@ Although the Commerce evaluation environment provides the full set of Commerce f
 
 - Although the Commerce evaluation environment itself has no geographical limitations, components of the environment, such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications, should be provisioned only in the United States.
 - Use of the Commerce evaluation environment is limited to 30 days from the date when e-Commerce is provisioned.
-- The Commerce evaluation environment can be successfully deployed and initialized only in an environment that uses the demo topology, where all components of an environment are deployed in a single cloud-hosted virtual machine (VM). The main limitation of this topology is the number of concurrent users that the environment can support.
+- The Commerce evaluation environment can be successfully deployed and initialized only in an environment that uses the demo topology, where all components of an environment are deployed on a single cloud-hosted virtual machine (VM). The main limitation of this topology is the number of concurrent users that the environment can support.
 
 ## Get started
 
