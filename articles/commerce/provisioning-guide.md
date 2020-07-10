@@ -56,7 +56,7 @@ The following prerequisites must be in place before you can provision your Comme
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
-- You have admin access to your Microsoft Azure subscription, or you're in contact with a subscription admin who can complete the two steps that require admin permissions on your behalf.
+- You have admin access to your Microsoft Azure subscription, or you're in contact with a subscription admin who can assist you if required.
 - You have your Azure Active Directory (Azure AD) tenant ID available.
 - You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
