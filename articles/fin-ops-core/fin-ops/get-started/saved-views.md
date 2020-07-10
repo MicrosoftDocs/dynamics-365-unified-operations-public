@@ -133,6 +133,11 @@ To publish a view, follow these steps:
 
 Note that in some environments, it may take some time (up to an hour) before users see the published view.
 
+> [!NOTE]
+> Below are the current expectations when publishing to a legal entity or publishing a view as the default view.
+> -    If you publish a view as the default view to all or some legal entities, this will modify each of the targeted users' single global default view. If a user has roles where multiple views are published as default, the last view published will be the user's default view. 
+> -    If you publish a view to a legal entity not as the default, users will initially only see the view in the view selector for the specified legal entities. However after loading the view once, the view will always be in the user's view selector for that page regardless of the legal entity. 
+
 ## Modifying a published view
 After publishing a view, you may discover that you want to make changes to a published view. While you cannot make live changes to a published view because these views are locked for editing for all users (including publishers), you can re-publish a view to make updates.  
 
