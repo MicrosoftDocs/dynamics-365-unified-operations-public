@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.12
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
-The Common Data Service solution for Finance and Operations virtual entities must be installed from appsource [virtual entity solution](https://appsource.microsoft.com/en-us/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
