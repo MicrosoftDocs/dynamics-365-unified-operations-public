@@ -37,7 +37,7 @@ This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation e
 
 > [!NOTE]
 > Commerce evaluation environments are not generally available and are granted to partners and customers on per request basis.
-> Please reach out to your Microsoft contact for more information.
+> Please reach out to your Microsoft partner contact for more information.
 
 ## Overview
 
