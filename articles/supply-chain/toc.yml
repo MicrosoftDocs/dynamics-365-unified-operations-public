@@ -1357,6 +1357,8 @@
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
       - name: Master plans
