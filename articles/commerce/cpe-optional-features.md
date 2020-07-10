@@ -5,7 +5,7 @@ title: Configure optional features for a Dynamics 365 Commerce evaluation enviro
 description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Configure optional features for a Dynamics 365 Commerce evaluation environment
 
-
 [!include [banner](includes/banner.md)]
 
 This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
@@ -49,7 +48,7 @@ If you want to evaluate the transactional email features, the following prerequi
 > [!NOTE]
 > Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Sign in to the Commerce Site Builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
+1. Sign in to the Commerce site builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Open the **Fabrikam** site.
 1. On the menu on the left, select **Media Library**.
 1. Select any single image asset.
@@ -65,7 +64,7 @@ If you want to evaluate the transactional email features, the following prerequi
 
 ### Update the media base URL
 
-1. Sign in to the Commerce Headquarters.
+1. Sign in to the Commerce headquarters.
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
 1. Select **Edit**.
 1. Under **Profile properties**, replace the value for the **Media Server Base URL** property with the media base URL that you created earlier.
@@ -79,8 +78,8 @@ If you want to evaluate the transactional email features, the following prerequi
 > [!NOTE]
 > The SMTP server or email service that you enter here must be accessible from the Azure subscription that you're using for the environment.
 
-1. Sign in to the Commerce Headquarters.
-1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters Setup \> Parameters \> Email parameters**.
+1. Sign in to Commerce headquarters.
+1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Email parameters**.
 1. On the **SMTP settings** tab, in the **Outgoing mail server** field, enter the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number. (If you aren't using Secure Sockets Layer \[SSL\], the default port number is **25**.)
 1. If authentication is required, enter values in the **User name** and **Password** fields.
@@ -94,7 +93,7 @@ If you want to evaluate the transactional email features, the following prerequi
 
 For each transactional event that you want to send emails for, you must update the email template with a valid sender email address.
 
-1. Sign in to Commerce Headquarters.
+1. Sign in to Commerce headquarters.
 1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**.
 1. Select **Show list**.
 1. For each template in the list, follow these steps:
@@ -126,7 +125,7 @@ You might want to customize the email templates so that they use different image
     1. Under **Email message content**, select the appropriate language version in the list. (The default language is **en-us**.)
     1. Under **Email message content**, select **Edit**. The **Upload email template** pane appears.
     1. Select **Browse**, and find the HTML file that has the customized content.
-    1. Select **Upload**. The template is uploaded into the system, and a evaluation is shown.
+    1. Select **Upload**. The template is uploaded into the system, and a preview is shown.
     1. Select **OK**.
     1. Optional: Customize the **Subject** property of the template.
     1. Select **Save**.
