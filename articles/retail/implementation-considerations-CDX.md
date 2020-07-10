@@ -76,7 +76,7 @@ Data is generated and flows in a very specific way (Download or upload).  It is 
 This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
 
 **Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
-[Channel database](./media/NAMENAMENAME.png)
+[Commerce Architecture - Data Synchronization](./media/Commerce Architecture - Data Synchronization.jpg)
 
 This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
 
@@ -89,15 +89,9 @@ This diagram shows the direction and flow of data to be synchronized downward fr
 | Feature name | Feature description |
 |--------------|---------------------|
 | Advanced offline | A series of configurations in the **Offline profile** to enable additional offline switching scenarios, the ability to switch to offline prior to POS login, and enhanced Headquarters availability testing to return to online status more easily. |
-| Advanced offline | A series of configurations in the **Offline profile** to enable additional offline switching scenarios, the ability to switch to offline prior to POS login, and enhanced Headquarters availability testing to return to online status more easily. |
-| Offline data exclusion | Also called Data sizing improvements, this feature set |
+| Offline data exclusion | Also called Data sizing improvements, this feature set allows the ability to flag specific data to be excluded from offline databases (And not be synchronized in the future).  This additionally includes the ability to fully remove all customer-related data from offline databases. |
 
-**Generate a table of the features**
- - Advanced offline
- - Offline switch before login
- - Data sizing improvements (Specify the ability to flag data to not be synchronized to offline)
-**Comment high level on each feature and it's reason / value**
-
+The above features will be mentioned and referenced in this and related documents that can be found throughout this document and referenced at the end of this document.
 Statement on how these features will be discussed later in the document, such as implementation considerations sub-heading (And possibly resources to other docs if decided to break apart).
 
 
