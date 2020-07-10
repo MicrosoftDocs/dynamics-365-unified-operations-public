@@ -47,7 +47,6 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-
 ### Upgrade of three jQuery component libraries 
 
 |   |  |
@@ -57,6 +56,27 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Extensible controls, specifically custom JavaScript code utilizing deprecated or removed APIs |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
+
+### Existing grid control / forceLegacyGrid() API
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control.  
+| **Replaced by another feature?**   | The new grid control  |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13/Platform update 37, the new grid control is generally available and customers can optionally enable this feature. The new grid feature will be mandatory with the October 2021 release. Additionally, the forceLegacyGrid() API will no longer be honored when the new grid control becomes mandatory. |
+
+### Personalization without saved views 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature to be more performant with additional capabilities.  
+| **Replaced by another feature?**   | Saved views  |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13/Platform update 37, the saved views feature is generally available and customers can optionally enable this feature. The saved views feature will be mandatory with the October 2021 release.  |
+
 
 ## Platform updates for version 10.0.12 of Finance and Operations apps
 
