@@ -85,10 +85,9 @@ Public sector users can add the **Grant ID** and **Grant name** to the **Project
 ## On-account invoicing
 The amount that you enter for a project in an on-account invoice is based on the timing, percentage of completion, and other billing conditions that are specified in the related project contract. The amount is not calculated based on the hours, items, expenses, or fees that are posted to the project. 
 
-You must create an on-account transaction for a time and material project or a fixed-price project before you can add that on-account transaction to a project invoice. On the on-account transaction, enter the amount to invoice a customer. To create a project invoice for the amount, create a preliminary invoice (invoice proposal). In the invoice proposal, select the on-account transaction. You can review the on-account information in the invoice proposal before you create a project invoice for it.
+You must create an on-account transaction for a time-and-material project or a fixed-price project before you can add that on-account transaction to a project invoice. On the on-account transaction, enter the amount to invoice a customer. To create a project invoice for the amount, create a preliminary invoice (invoice proposal). In the invoice proposal, select the on-account transaction. You can review the on-account information in the invoice proposal before you create a project invoice for it. 
 
 ### Fixed-price projects
-
 For fixed-price projects, on-account transactions are based on an agreed-upon milestone, unit of delivery, or progress billing arrangement that is specified in a project contract. One line is created for each payment that must be received from the project customer. No deductions are required.
 
 ### Time and material projects
