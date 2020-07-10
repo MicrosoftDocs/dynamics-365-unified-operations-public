@@ -40,7 +40,7 @@ Before you begin, we recommend that you take a quick scan through this topic to 
 
 > [!NOTE]
 > Commerce evaluation environments are not generally available and are granted to partners and customers on per request basis.
-> Please reach out to your Microsoft contact for more information.
+> Please reach out to your Microsoft partner contact for more information.
 
 ## Overview
 
