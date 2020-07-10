@@ -2,10 +2,10 @@
 # required metadata
 
 title: Project invoicing
-description: This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
+description: This topic provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/06/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
+This topic provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 
 The project type determines which invoicing procedure should be applied. Only the two external project types, Time and material and Fixed-price, can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract.
 
@@ -62,11 +62,11 @@ You can create invoice proposals for the following transactions:
 -   Amounts that a customer paid to you before a project is started
 
 > [!NOTE]
-> The **Enable sorting by resource during project invoice proposal creation** feature enables the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have separate fields for **Resource ID** and **Resource**. These fields let you filter and sort on the resource name. This feature is disabled by default. It can be enabled using the **Feature management** page (**Workspaces > Feature management**). Contact your system administrator for help in enabling this feature.
+> The **Enable sorting by resource during project invoice proposal creation** feature enables the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have separate fields for **Resource ID** and **Resource**. These fields let you filter and sort on the resource name. This feature is turned off by default. It can be enabled using the **Feature management** page (**Workspaces > Feature management**). Contact your system administrator for assistance with enabling this feature.
 
 You can create fee transactions in an invoice proposal. You can also modify the sales price on hour, expense, item, and fee transactions. When you post an invoice proposal, the updated prices and transactions are added to project reports, and the transaction history. 
 
-To create multiple customer invoices for a project, you must create an invoice proposal for each invoice. For example, you can create invoices based on transaction type. To specify hours on one customer invoice and items on another, you must create separate invoice proposals for hour transactions and fee transactions. 
+To create multiple customer invoices for a project, you must create an invoice proposal for each invoice. For example, you can create invoices based on transaction type. To specify hours on one customer invoice and items on another invlice, you must create separate invoice proposals for hour transactions and fee transactions. 
 
 If a project has more than one funding source, you can create a separate invoice proposal for each funding source. On the **Funding rule allocations** page, you can define the percentage of the transaction amount to allocate to each funding source, and the source to post rounding differences to.
 
@@ -74,13 +74,13 @@ If a project has more than one funding source, you can create a separate invoice
 
 After you create and post an invoice proposal, a customer invoice is automatically created for the transactions that are included in the invoice proposal. 
 
-Before you post an invoice proposal, you can add transactions to it or delete transactions from it. For example, you can remove expense transactions that were posted to a project, but that are not chargeable to the customer. 
+Before you post an invoice proposal, you can add transactions to it or delete transactions from it. For example, you can remove expense transactions that were posted to a project, but are not chargeable to the customer. 
 
 If your organization requires that invoice proposals be reviewed before they are posted, you might need to be approved it through the "Review project invoice proposals" workflow before posting it.
 
 ### View grant information on project invoice list pages
 
-Public sector users can add the **Grant ID** and **Grant name** to the **Project invoice proposals** and **Project invoices** list pages. These columns are enabled using the **Add grant information to project invoice list pages** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
+Public sector users can add the **Grant ID** and **Grant name** to the **Project invoice proposals** and **Project invoices** list pages. These columns are enabled using the **Add grant information to project invoice list pages** feature. This feature is turned off by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for assistance with enabling this feature.
 
 ## On-account invoicing
 The amount that you enter for a project in an on-account invoice is based on the timing, percentage of completion, and other billing conditions that are specified in the related project contract. The amount is not calculated based on the hours, items, expenses, or fees that are posted to the project. 
@@ -88,17 +88,17 @@ The amount that you enter for a project in an on-account invoice is based on the
 You must create an on-account transaction for a time-and-material project or a fixed-price project before you can add that on-account transaction to a project invoice. On the on-account transaction, enter the amount to invoice a customer. To create a project invoice for the amount, create a preliminary invoice (invoice proposal). In the invoice proposal, select the on-account transaction. You can review the on-account information in the invoice proposal before you create a project invoice for it. 
 
 ### Fixed-price projects
-For fixed-price projects, on-account transactions are based on an agreed-upon milestone, unit of delivery, or progress billing arrangement that is specified in a project contract. One line is created for each payment that must be received from the project customer. No deductions are required.
+For Fixed-price projects, on-account transactions are based on an agreed-upon milestone, unit of delivery, or progress billing arrangement that is specified in a project contract. One line is created for each payment that must be received from the project customer. No deductions are required.
 
 ### Time and material projects
 
-For time and material projects, you can bill a customer or other funding source for a prepayment amount by using an on-account invoice proposal. Enter on-account transactions as one line. You can optionally enter additional lines as deductions to offset any prepayments that the customer has already made. To create deduction lines, enter a minus sign before the amount.
+For Time and material projects, you can bill a customer or other funding source for a prepayment amount by using an on-account invoice proposal. Enter on-account transactions as one line. You can optionally enter additional lines as deductions to offset any prepayments that the customer has already made. To create deduction lines, enter a minus sign before the amount.
 
 ## Invoice control
 You can use invoice control to track both invoiced and non-invoiced transactions, and to analyze those transactions against quotations for an end-to-end view of your projects from the quotation stage to completion. You can see which transactions have been charged to a specific project and which lines have been invoiced. You can also view individual transactions, so that you can adjust them after they are posted.
 
 ## Invoicing Fixed-price projects
-To invoice a fixed-price project, you must define a billing schedule and complete the invoicing procedure.
+To invoice a Fixed-price project, you must define a billing schedule and complete the invoicing procedure.
 
 ### Billing schedule
 
@@ -118,8 +118,8 @@ When the milestone payments are ready to be invoiced, you use the procedure for 
 ## Vendor invoicing
 When you order an item from a vendor and assign the item to a project, the line property that you select for the purchase order line for that item determines whether the purchased item is invoiced to a customer. If you set up default line properties, they are displayed for the item on the purchase order line (**Line details > Project > Line property amounts**). There are two ways to modify the line property:
 
--   Invoice the project's customer for the item: Set the line property for the item to a chargeable value on the purchase order, and then invoice the customer by using the correct project invoicing method.
--   Don’t invoice the project's customer for the item: Don’t select the **Chargeable** line property on the purchase order line for the item. You can then invoice the purchase order, and no further action is required.
+-   Invoice the project's customer for the item. To do this, set the line property for the item to a chargeable value on the purchase order, and then invoice the customer by using the correct project invoicing method.
+-   Don’t invoice the project's customer for the item. To do this, do not select the **Chargeable** line property on the purchase order line for the item. You can then invoice the purchase order, and no further action is required.
 
 > [!NOTE] 
 > Release retention lines are non-chargeable by default. This means the ability to create an invoice proposal for the released retention is not enabled.
