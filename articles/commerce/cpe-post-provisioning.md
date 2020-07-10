@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure a Dynamics 365 Commerce preview environment
-description: This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
+title: Configure a Dynamics 365 Commerce evaluation environment
+description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
