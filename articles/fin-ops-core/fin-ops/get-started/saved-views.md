@@ -81,7 +81,10 @@ If you want to save those changes, follow these steps.
      3.    Select **Save**.
 
 ## Changing the default view
-The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view that you expect to use most often.  
+The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view that you expect to use most often. 
+
+> [!NOTE]
+> There is a single global default view across companies. Changing the default view will make that view open by default regardless of which legal entity you are currently in. 
 
 To change the default view for a page, follow these steps: 
 1.	Switch to the view that you use as the default. 
@@ -122,7 +125,7 @@ To publish a view, follow these steps:
 2.	With that view currently loaded, select the view name to open the view selector drop-down menu. 
 3.	Select the **More** button and then select **Publish**. The Publish dialog box will open.  
 4.	Enter a name and (optionally) a description for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
-5. [10.0.9 / Platform update 33 or later] Determine if the view should be published as the default view for the selected users. Making a view the default means that this is the view users will see the next time they open the target page. This will modify the default view for these users; however, users can still change their default view after the publish has occurred.    
+5. [10.0.9 / Platform update 33 or later] Determine if the view should be published as the default view for the selected users. Making a view the default means that this is the view users will see the next time they open the target page. This will modify each of the targeted users' single global default view; however, users can still change their default view after the publish has occurred.  
 6.	Add the security roles that correspond to the users being targeted by this view. 
 7. [10.0.13 / Platform update 37 or later] For each security role selected, determine if you want to publish the view to the child roles of that security role. If so, mark the "Include child roles" checkbox in the appropriate rows. Note this checkbox is disabled for roles without child roles.   
 7. Add the legal entities that this view should be available for. 
