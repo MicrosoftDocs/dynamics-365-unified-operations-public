@@ -64,11 +64,11 @@ If you want to evaluate the transactional email features, the following prerequi
 
 ### Update the media base URL
 
-1. Sign in to the Commerce headquarters.
+1. Sign in to Commerce headquarters.
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
 1. Select **Edit**.
 1. Under **Profile properties**, replace the value for the **Media Server Base URL** property with the media base URL that you created earlier.
-1. Select the channel named **scXXXXXXXXX**.
+1. Select the channel that is named **scXXXXXXXXX**.
 1. Under **Profile properties**, select **Add**.
 1. For the property that was added, select **Media Server Base URL** as the property key. As the property value, enter the media base URL that you created earlier.
 1. Select **Save**.
