@@ -46,17 +46,17 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Sign in to the [LCS portal](https://lcs.dynamics.com).
 1. Go to your project.
 1. On the top menu, select **Cloud-hosted environments**.
-1. Select your environment from the list.
+1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
 
-During post-provisioning activities in Commerce headquarters, ensure that the **USRT** legal entity is always selected.
+During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
 ## Configure the point of sale
 
 ### Associate a worker with your identity
 
-To associate a worker with your identity, follow these steps while in Commerce headquarters.
+To associate a worker with your identity, follow these steps in Commerce headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
 1. In the list, find and select the following record: **000713 - Andrew Collette**.
@@ -70,15 +70,15 @@ To associate a worker with your identity, follow these steps while in Commerce h
 
 ### Activate Cloud POS
 
-To activate Cloud POS, follow these steps while in LCS.
+To activate Cloud POS, follow these steps in LCS.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to Cloud Point of Sale**.
-1. Click **Next** to open the **Before you start** dialog box.
-1. Leave **Server URL** as it is. Select **Next**
+1. Select **Next** to open the **Before you start** dialog box.
+1. Leave the **Server URL** field as it is. Select **Next**.
 1. Sign in by using your Microsoft Azure Active Directory (Azure AD) account.
-1. Under **Store name**, select **San Francisco**, and then select **Next**
+1. Under **Store name**, select **San Francisco**, and then select **Next**.
 1. Under **Register and device**, select **SANFRAN-1**.
 1. Select **Activate**. You're signed out and taken to the POS sign-in page.
 1. You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.
@@ -87,7 +87,7 @@ To activate Cloud POS, follow these steps while in LCS.
 
 To start to set up your evaluation site in Commerce, follow these steps.
 
-1. Sign in to site builder using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
+1. Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Select the **Fabrikam** site to open the site setup dialog box.
 1. Select the domain that you entered when you initialized e-Commerce.
 1. Select **Fabrikam extended online store** as the default channel. (Make sure that you select the **extended** online store.)
@@ -116,7 +116,7 @@ To enable jobs in Commerce, follow these steps.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Canceling**, and then select **OK**.
 
-Optionally, you may also set the recurrence interval to one (1) minute for the following jobs:
+Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:
 
 * Process retail order email notification job
 * P-0001 job
@@ -124,10 +124,10 @@ Optionally, you may also set the recurrence interval to one (1) minute for the f
 
 ### Run full data synchronization
 
-To run full data synchronization in Commerce, follow these steps while in headquarters.
+To run full data synchronization in Commerce, follow these steps in headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
-1. Select the channel named **scXXXXXXXXX**.
+1. Select the channel that is named **scXXXXXXXXX**.
 1. On the Action Pane, select **Full data sync**.
 1. Enter **9999** as the distribution schedule.
 1. Select **OK**.
@@ -146,7 +146,7 @@ To perform test transactions on the site, you can use the following test credit 
 
 ## Next steps
 
-After the provisioning and configuration steps are completed, you're ready to start using your evaluation environment. Use the Commerce site builder URL to go to the authoring experience. Use the Commerce site URL to go to the retail customer site experience.
+After the provisioning and configuration steps are completed, you can start to use your evaluation environment. Use the Commerce site builder URL to go to the authoring experience. Use the Commerce site URL to go to the retail customer site experience.
 
 To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).
 
