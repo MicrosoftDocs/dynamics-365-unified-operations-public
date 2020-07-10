@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with the e-Invoicing service for Brazil
-description: This topic provides information that will help you get started with the e-Invoicing service for Brazil in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with the Electronic invoicing add-on for Brazil
+description: This topic provides information that will help you get started with the Electronic invoicing add-on for Brazil in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the e-Invoicing service for Brazil 
+# Get started with the Electronic invoicing add-on for Brazil 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> The e-Invoicing service for Brazil doesn't currently support all the functions that are available in the fiscal document integration that is built into Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+> The Electronic invoicing add-on for Brazil doesn't currently support all the functions that are available in the fiscal document integration that is built into Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This topic provides information that will help you get started with the e-Invoicing service for Brazil. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and in Finance and Supply Chain Management. It also guides you through the process of submitting an NF-e fiscal document (Electronic fiscal document model 55) through the service, and it explains how review the results of processing over the status of the fiscal documents.
+This topic provides information that will help you get started with the Electronic invoicing add-on for Brazil. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and in Finance and Supply Chain Management. It also guides you through the process of submitting an NF-e fiscal document (Electronic fiscal document model 55) through the service, and it explains how review the processing results and the status of the fiscal documents.
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with the e-Invoicing service](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## RCS setup
 
@@ -53,11 +53,11 @@ During the RCS setup, you will complete these tasks:
 3. Review the file formats that are required to request the cancellation of an approved NF-e.
 4. Configure the event that is required to submit NF-e fiscal documents for authorization.
 5. Configure the event that is required to request the cancellation of an approved NF-e.
-6. Assign the e-Invoicing feature to an e-Invoicing service environment.
+6. Assign the e-Invoicing feature to an Electronic invoicing add-on environment.
 7. Publish the e-Invoicing feature.
 
 > [!NOTE]
-> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the e-Invoicing service server. The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
+> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server. The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
 
 ## Import the e-Invoicing feature
 
@@ -187,7 +187,7 @@ To submit NF-e cancellation, the **Cancellation** feature setup is required.
 
 ![Publishing the e-Invoicing feature](media/e-Invoicing-services-get-started-BRA-Publish-e-Invoicing-feature.png)
 
-## Set up e-Invoicing service integration in Finance or Supply Chain Management
+## Set up Electronic invoicing add-on integration in Finance or Supply Chain Management
 
 During setup, you will complete these tasks:
 
@@ -231,13 +231,13 @@ During setup, you will complete these tasks:
 
 During processing in Finance, you will complete these tasks:
 
-1. Submit a fiscal document through the e-Invoicing service.
+1. Submit a fiscal document through the Electronic invoicing add-on.
 2. View the submission execution logs and review the results of processing.
-3. Submit the cancellation of a fiscal document through the e-Invoicing service.
+3. Submit the cancellation of a fiscal document through the Electronic invoicing add-on.
 
 ### Submit NF-e fiscal documents for SEFAZ authorization 
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, the old process for submitting NF-e fiscal documents for authorization (**Export/Import NF-e process**) can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, the old process for submitting NF-e fiscal documents for authorization (**Export/Import NF-e process**) can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 > [!NOTE]
 > Before you continue, make sure that you have one or more customer fiscal documents model 55 that were issued by the customer's fiscal establishment. The direction for these fiscal documents must be set to **Outgoing**, and the status must be **Created**. For more information, see [Issue customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
@@ -254,11 +254,11 @@ After you turn on the **Configurable e-Invoicing Service integration** feature, 
 8. Select **OK** to submit the selected documents.
 
 > [!NOTE]
-> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on. Select **Click here to connect to Electronic Document Submission Service**.
 
 ### View all submission logs
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, a new page is available that lets you follow up on the document submission process. You can use this page to view the submission logs for all submitted documents.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, a new page is available that lets you follow up on the document submission process. You can use this page to view the submission logs for all submitted documents.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
 2. In the **Document type** field, select **Fiscal document header** to filter for fiscal documents only.
@@ -271,17 +271,17 @@ After you turn on the **Configurable e-Invoicing Service integration** feature, 
 
 ### View submission logs through the fiscal document page
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, you can also view the submission logs through the fiscal document page.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, you can also view the submission logs through the fiscal document page.
 
 1. Go to **General ledger \> Inquiries and reports \> Fiscal documents \> All fiscal documents**.
-2. Select a fiscal document that was previously submitted through the e-Invoicing service.
+2. Select a fiscal document that was previously submitted through the Electronic invoicing add-on.
 3. On the Action Pane, on the **NF-e federal** tab, select **Electronic document log**.
 
 ![Viewing submission logs from fiscal document page](media/e-Invoicing-services-get-started-BRA-View-Submission-log-from-Fiscal-document-viewer.png)
 
 ### Submit approved NF-e fiscal documents for SEFAZ cancellation
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, the old process for canceling NF-e fiscal documents can no longer be used. It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, the old process for canceling NF-e fiscal documents can no longer be used. It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.
 
 > [!NOTE]
 > Make sure that you've run the cancellation of the customer fiscal document for an approved NF-e fiscal document. For more information see, [Cancel customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/latam-bra-cancel-customer-fiscal-documents).
@@ -308,6 +308,6 @@ After you turn on the **Configurable e-Invoicing Service integration** feature, 
 
 ## Related topics
 
-- [e-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
-- [Set up the e-Invoicing service](e-invoicing-setup.md)
+- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
+- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
