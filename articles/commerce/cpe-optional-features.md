@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure optional features for a Dynamics 365 Commerce preview environment
-description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce preview environment.
+title: Configure optional features for a Dynamics 365 Commerce evaluation environment
+description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
 ms.date: 12/10/2019
