@@ -56,7 +56,7 @@ Dynamics 365 Commerce and Commerce Scale Unit are completely software as a servi
 
 **How long can the Commerce evaluation environment be used?**
 
-The Commerce evaluation environment has a 30-day time limit from the date of provisioning Commerce.
+The Commerce evaluation environment has a 30-day time limit from the date of provisioning e-Commerce.
 
 **Can I extend the time limit for my Commerce evaluation environment?**
 
