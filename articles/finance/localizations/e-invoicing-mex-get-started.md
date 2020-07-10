@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with the e-Invoicing service for Mexico
-description: This topic provides information that will help you get started with the e-Invoicing service for Mexico in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with the Electronic invoicing add-on for Mexico
+description: This topic provides information that will help you get started with the Electronic invoicing add-on for Mexico in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the e-Invoicing service for Mexico
+# Get started with the Electronic invoicing add-on for Mexico
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> The e-Invoicing service for Mexico might not currently support all the functions that are available in the Comprobante Fiscal Digital por Internet (CFDI) document, and in the related integration that is built into Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
+> The Electronic invoicing add-on for Mexico might not currently support all the functions that are available in the Comprobante Fiscal Digital por Internet (CFDI) document, and in the related integration that is built into Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
-This topic provides information that will help you get started with the e-Invoicing service for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the results of processing over the status of CFDI invoices.
+This topic provides information that will help you get started with the Electronic invoicing add-on for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the processing results and the status of CFDI invoices.
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with the e-Invoicing service](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## RCS setup
 
@@ -54,7 +54,7 @@ During the RCS setup, you will complete these tasks:
 4. Publish the e-Invoicing feature for CFDI invoices.
 
 > [!NOTE]
-> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the e-Invoicing service server. In this case, CFDI invoices (MX) are the e-Invoicing feature that you will set up.
+> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server. In this case, CFDI invoices (MX) are the e-Invoicing feature that you will set up.
 
 ## Import the e-Invoicing feature
 
@@ -71,7 +71,7 @@ When you import the **CFDI invoices (MX)** feature from the Global repository, a
 
 ### Create a new version of the CFDI invoices (MX) feature
 
-You can create a new version if, for example, URLs must be updated. For more information, see.
+You can create a new version if, for example, URLs must be updated. For more information, see [E-invoicing CFDI](mx-00010-e-invoicing-cfdi).
 
 - On the **e-Invoicing Features** page, on the **Versions** tab, select **New**.
 
@@ -160,9 +160,9 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 
 ![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-## Set up e-Invoicing service integration in Finance
+## Set up Electronic invoicing add-on integration in Finance
 
-To set up the e-Invoicing service in Finance, you will complete these tasks:
+To set up the Electronic invoicing add-on in Finance, you will complete these tasks:
 
 1. Import the ER data model, the ER data model mapping, and the formats that are required for CFDI invoices.
 2. Configure response types for updating the CFDI invoices. These response types are used for the response from the authorized certification provider (PAC) server.
@@ -201,7 +201,7 @@ To set up the e-Invoicing service in Finance, you will complete these tasks:
     - For **Customer invoice journal**, enter **Customer invoice context**.
     - For **Project invoice**, enter **Project invoice context**.
 
-4. Select **Response types** to configure the response types for updating the **Customer invoice journal** or **Project invoice** in the response to the return from the e-Invoicing service.
+4. Select **Response types** to configure the response types that can be returned from the Electronic invoicing add-on and included in a customer invoice journal or project invoice.
 5. Select **New**, and then, in the **Response type** field, select **Response**.
 6. In the **Submission status** field, select **Pending**.
 7. In the **Model mapping** field, select **Response message import format – Model mapping from response message**.
@@ -213,7 +213,7 @@ To set up the e-Invoicing service in Finance, you will complete these tasks:
 
 ## Process electronic invoices in Finance 
 
-During the processing of CFDI invoices in Finance through the e-Invoicing service, you can perform the following tasks:
+During the processing of CFDI invoices in Finance through the Electronic invoicing add-on, you can perform the following tasks:
 
 - Submit CFDI invoices.
 - View the submission execution logs.
@@ -221,7 +221,7 @@ During the processing of CFDI invoices in Finance through the e-Invoicing servic
 
 ### Submit CFDI invoices
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, the **Export/Import electronic invoice** process (**Accounts receivable \> Invoices \> E-invoices**) for submitting CFDI invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, the **Export/Import electronic invoice** process (**Accounts receivable \> Invoices \> E-invoices**) for submitting CFDI invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 > [!NOTE]
 > Before you use the new **Submit electronic documents** process, verify that the setup that is required for Mexican e-invoices was completed. For more information, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
@@ -233,7 +233,7 @@ After you turn on the **Configurable e-Invoicing Service integration** feature, 
 ![Submitting a CFDI document](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the e-Invoicing service. Select **Click here to connect to Electronic Document Submission Service**.
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on. Select **Click here to connect to Electronic Document Submission Service**.
 
 ### View submission logs
 
@@ -241,7 +241,7 @@ You can view the submission logs for all submitted documents or for just one sub
 
 #### View all submission logs
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, a new page is available that lets you follow up on the document submission process. You can use this page to view the submission logs for all submitted documents.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, a new page is available that lets you follow up on the document submission process. You can use this page to view the submission logs for all submitted documents.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
 2. In the **Document type** field, select **Customer invoice journal** to filter for the required electronic documents.
@@ -256,26 +256,26 @@ The information in the submission logs is divided among three FastTabs:
 
 - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
 - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. You can select **View** to download and view the file.
-- **Processing action log** – This FastTab shows the results of the communication between the e-Invoicing service and the target web service. It also shows what was returned of the processing from the web service. The **Error code** column shows the return code that was returned by the authorization web service.
+- **Processing action log** – This FastTab shows the results of the communication between the Electronic invoicing add-on and the target web service. It also shows what was returned by the processing from the web service. The **Error code** column shows the return code that was returned by the authorization web service.
 
 When the submitted CFDI invoice is authorized, its status is updated to **Approved**.
 
 #### View submission logs from CFDI invoices
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, you can also view the submission logs from CFDI invoices.
+After you turn on the **ConfigurableElectronic invoicing add-on integration** feature, you can also view the submission logs from CFDI invoices.
 
 1. Go to **Accounts receivable \> Inquiries and reports \> CFDI (electronic invoices)**.
-2. Select a CFDI invoice that was submitted after the **Configurable e-Invoicing Service integration** feature was turned on.
+2. Select a CFDI invoice that was submitted after the **Configurable Electronic invoicing add-on integration** feature was turned on.
 3. On the Action Pane, on the **History** tab, select **Electronic document log**.
 
 ![Viewing submission logs from CFDI invoices](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> For CFDI invoices that were submitted before the **Configurable e-Invoicing Service integration** feature was turned on, the **History** button is available. The **History** button isn't available for CFDI invoices that were submitted after the **Configurable e-Invoicing Service integration** feature was turned on.
+> For CFDI invoices that were submitted before the **Configurable Electronic invoicing add-on integration** feature was turned on, the **History** button is available. The **History** button isn't available for CFDI invoices that were submitted after the **Configurable Electronic invoicing add-on integration** feature was turned on.
 
 ### Submit cancellation of CFDI invoices
 
-After you turn on the **Configurable e-Invoicing Service integration** feature, the old process for canceling CFDI invoices can no longer be used. It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.
+After you turn on the **Configurable Electronic invoicing add-on integration** feature, the old process for canceling CFDI invoices can no longer be used. It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.
 
 1. Go to **Accounts receivable \> Inquiries and reports \> CFDI (electronic invoices)**.
 2. If the CFDI invoice has a status of **Approved**, select **Functions \> Cancel CFDI**.
@@ -299,6 +299,6 @@ After you turn on the **Configurable e-Invoicing Service integration** feature, 
 
 ## Related topics
 
-- [E-Invoicing service overview](e-invoicing-service-overview.md)
-- [Get started with the e-Invoicing service](e-invoicing-get-started.md)
-- [Set up the e-Invoicing service](e-invoicing-setup.md)
+- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
+- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
