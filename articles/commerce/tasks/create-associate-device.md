@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and associate a device
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through how to create a new device and associate it to a register. It is assumed that the register is already created.  This task uses the USRT company in demo data. This task is intended for Administrators, IT Professional or Commerce IT, and the Store Manager roles.
 

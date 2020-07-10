@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) inboun
 author: hhaines
 manager: annbe
 
-ms.date: 02/07/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,7 +35,6 @@ ms.dyn365.ops.version: 10.0.9
 # Inbound inventory operation in POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replace the picking and receiving operation.
 
@@ -64,6 +63,9 @@ To configure an asynchronous document framework, complete the following procedur
 5. On the **General** FastTab, in the **Setup** section, set the **Continuous** option to **No** to ensure that there are no performance issues.
 
 ### Create and schedule two batch jobs for the document processing and monitoring tasks
+
+> [!NOTE]
+> In Commerce version 10.0.13 and later, you don't have to configure these batch jobs through the batch job framework. The batch processes can be configured from the **Retail and Commerce  >Retail and Commerce IT** menu. Use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure the batch jobs.
 
 The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
 

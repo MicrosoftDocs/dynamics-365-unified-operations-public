@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage warehouse workers
-description: This article describes how you can use Dynamics 365 Supply Chain Management - Warehousing app to help control and monitor the work that's carried out by employees in your warehouses.
+description: This article describes how you can use the warehouse app to help control and monitor the work that's carried out by employees in your warehouses.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWork
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72891
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how you can use Dynamics 365 Supply Chain Management - Warehousing app to help control and monitor the work that's carried out by employees in your warehouses.
+This article describes how you can use the warehouse app to help control and monitor the work that's carried out by employees in your warehouses.
 
 If you're using the functionality in Warehouse management, all warehouse worker operations are referred to as *work*. Work such as picking, moving, and counting on-hand inventory is recorded by using mobile devices. Before a warehouse worker can perform work, he or she must be associated with a worker in Human resources. Each **Worker** account can have multiple warehouse work users associated with it. Those work users can work in different warehouses and can have different levels of access to the various mobile device menus. You can think of the warehouse work users as multiple logons for the selected worker. Each work user has a default warehouse, and specific workflows are exposed by the menus items that are available to that work user. 
 

@@ -3,9 +3,9 @@
 
 title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -66,7 +66,7 @@ Although you will no longer have Microsoft Remote Desktop access, you can contin
 ### Access the Azure SQL database
 You can access the Microsoft Azure SQL database by following these steps.
 
-1. From LCS, whitelist the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
+1. From LCS, add a safe list of the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
 2. Use LCS to request access to see the database credentials. You must provide a reason for requesting access. 
 
 As soon as you submit the request, it's automatically approved. Within a minute or two, you will be able to see the database access credentials on the LCS environment details page. You can use the credentials to connect to the SQL database.

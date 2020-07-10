@@ -4,7 +4,7 @@
 title: Generate a statistical baseline forecast
 description: This topic provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanCreateForecastDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72683

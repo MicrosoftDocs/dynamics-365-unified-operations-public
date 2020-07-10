@@ -5,7 +5,7 @@ title: Deploy a new e-Commerce tenant
 description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -71,8 +71,8 @@ In addition, you can collect the following optional information:
 	- Reset password Policy ID.
 	- Edit Profile Policy ID.
 
-[!NOTE]
-This information can be added later, through a service request.
+> [!NOTE]
+> This information can be added later, through a service request.
 
 After you've collected the required information, follow these steps to initialize e-Commerce.
 
@@ -106,7 +106,13 @@ To access site builder, go to the **e-Commerce** tab on the **Retail management*
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 

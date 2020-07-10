@@ -4,7 +4,7 @@
 title: Process guide framework
 description: This topic provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

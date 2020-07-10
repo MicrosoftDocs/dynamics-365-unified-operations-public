@@ -3,9 +3,9 @@
 
 title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -49,7 +49,7 @@ Customers using the self-service capabilities will see the following changes in 
 
 - You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu** option. For more information, see [Maintenance operations for deployments](maintenanceoperationsguide-newinfrastructure.md).
 
-    > [IMPORTANT]
+    > [!IMPORTANT]
     > Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers. 
 
    ![Self-service actions](media/Self-service-actions.png)
@@ -68,4 +68,7 @@ Customers using the self-service capabilities will see the following changes in 
 
 - The service no longer supports business logic defined using Visual Basic script embedded in SQL Server Reporting Services (SSRS) reports. Visual Basic expressions defined in Tablix controls used to format and evaluate data at runtime will continue to be fully supported. However, the service will ignore instructions defined in Visual Basic script functions. This change was necessary to improve the security and reliability of the service.
 
-- Sub-reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub-reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
+- Sub reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
+
+    > [!IMPORTANT]
+    > Support for sub report items has been re-introduced with the Platform update 36 release. Customers dependent on solutions that include properly formatted sub report items can transition to self-service deployments running on Platform update 36 or later.

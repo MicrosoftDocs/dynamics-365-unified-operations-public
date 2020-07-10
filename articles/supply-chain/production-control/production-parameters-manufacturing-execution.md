@@ -4,7 +4,7 @@
 title: Production parameters in Manufacturing execution 
 description: This topic provides information about the setup of production parameters in Manufacturing execution. 
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form:  JmgProdParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

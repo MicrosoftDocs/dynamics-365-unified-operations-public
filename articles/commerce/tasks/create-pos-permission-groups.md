@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create POS permission groups
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
 
@@ -47,6 +47,6 @@ This topic explains how to create a POS permission group. The demo data company 
 13. Next we will assign the POS permission group to a Job. In the list, find and select the desired record.
 14. Select **Edit**.
 15. Expand the **Job classification** section.
-16. In the POS permission group field, enter or select a value. All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.  
+16. In the POS permission group field, enter or select a value. All Workers in Positions for this Job will use this POS permission group's settings unless the workers POS permissions have been overridden at their Position level.  
 17. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to channels.  
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create sales order invoices
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide describes invoicing a sales order, including merging invoices and batch processing. This procedure uses the USMF demo company.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Configure parameters that affect retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic demonstrates configurations for Commerce parameters that affect how statements get created and posted. This procedure uses the USRT demo company.
 

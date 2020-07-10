@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and associate registers
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure demonstrates how to create a point of sale (POS) register. This procedure uses the demo data company USRT.
 
@@ -43,6 +43,6 @@ This procedure demonstrates how to create a point of sale (POS) register. This p
 7. In the Visual profile field, enter or select a value.
     * Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.  
 8. In the EFT POS register number field, type a value.
-    * The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests. This value is often called the "Terminal ID" or “TID”. The TID can generally be found on a sticker on the payment device.  
+    * The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests. This value is often called the "Terminal ID" or "TID". The TID can generally be found on a sticker on the payment device.  
 9. Click Save.
 

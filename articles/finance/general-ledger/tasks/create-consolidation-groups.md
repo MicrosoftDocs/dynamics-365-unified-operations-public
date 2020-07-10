@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create consolidation groups and additional consolidation accounts
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a consolidation account group and then add accounts to the group. This procedure uses the demo data company USMF.
 

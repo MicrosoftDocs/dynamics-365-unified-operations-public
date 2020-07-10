@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ This tutorial requires that you access an environment by using Remote Desktop, a
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-- On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-locally), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 - Download FMLab sample code to C:. For details, see [FMLab sample code](https://github.com/Microsoft/FMLab).
 
 ## Key concepts
@@ -95,7 +95,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 1. Create a new entity that is named **FMLabCustomerEntity**. Right-click you project, and then click **Add** &gt; **New item**. The **Add New Item** dialog box opens.
 2. Select **Data Entity**, and then set the **Name** property to **FMLabCustomerEntity**.
 3. Click **Add**.
-4. In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot.
+4. In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following image.
 
     > [!NOTE]
     > The name of an entity must not have '\_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
@@ -103,7 +103,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
 5. Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities overview](data-entities.md).
-6. Add fields to the new entity from your data source, as shown in the following screen shot. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
+6. Add fields to the new entity from your data source, as shown in the following image. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7. Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
 8. On the line for the **DriverLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
 
@@ -144,7 +144,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 ### Visually validate and customize an entity
 
 1. In Solution Explorer, right-click the **FMLabCustomerEntity** node, and then click **Open**. The designer for the entity opens in the middle pane.
-2. Validate the properties of the **FMLabCustomerEntity** entity. Select the entity in Solution Explorer, and compare the **Properties** pane values to the following screen shot.
+2. Validate the properties of the **FMLabCustomerEntity** entity. Select the entity in Solution Explorer, and compare the **Properties** pane values to the following image.
 3. Set the **Label** property to **Fleet Lab Customers**.
 
     [![FMLabCustomerEntity - Properties](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
@@ -154,7 +154,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 
     [![FMLabCustomerEntity - Properties2](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
 
-6. In the **FMLabCustomerEntity** designer, click **Keys** &gt; **EntityKey**, and then expand the **Fields** node. Verify that the list of fields matches the following screen shot.
+6. In the **FMLabCustomerEntity** designer, click **Keys** &gt; **EntityKey**, and then expand the **Fields** node. Verify that the list of fields matches the following image.
 
     [![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
 
@@ -162,7 +162,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 
     [![fMLabCustomerStaging - Properties](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
 
-8. Click **FMLabCustomerStaging** &gt; **Fields**. In the following screen shot, the standard fields of the staging tables are selected. All entity staging tables have these standard fields. The screen shot also shows the data fields that belong on this data entity.
+8. Click **FMLabCustomerStaging** &gt; **Fields**. In the following image, the standard fields of the staging tables are selected. All entity staging tables have these standard fields. The image also shows the data fields that belong on this data entity.
 
     [![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
 
@@ -227,7 +227,7 @@ After you create your data entity, you can validate import/export.
 
 2. Click **User Dashboard** &gt; **Data management**.
 3. In the **Data Management** workspace, click the **Import** tile.
-4. On the **Import** page, enter the import details, as shown in the following screen shot.
+4. On the **Import** page, enter the import details, as shown in the following image.
 
     ![Import new record](./media/import-new-record.png)
 
@@ -290,7 +290,7 @@ You will review the existing **FleetRental** entity and then create a relationsh
     | Field         | **CustomerDriverLicense**This is the foreign key field on **FMRentalEntity**. |
     | Related Field | **DriverLicense**This is the unique key on **FMCustomerEntity**.              |
 
-    The following screen shot shows the relation in Visual Studio.
+    The following image shows the relation in Visual Studio.
 
     [![FMRentalEntity - Solution explorer](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
 
@@ -310,12 +310,12 @@ In this section, you will use some of the standard OData syntax to navigate and 
 
 You can now use Internet Explorer to explore some OData URIs.
 
-1. Start Internet Explorere, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities.
+1. Start Internet Explorer, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities.
 
     > [!NOTE]
     > The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
 
-2. In the browser, find **FleetRental**. The following screen shot shows the metadata of the **FleetRental** entity, together with the new relationship, **NavigationProperty**.
+2. In the browser, find **FleetRental**. The following image shows the metadata of the **FleetRental** entity, together with the new relationship, **NavigationProperty**.
 
     [![FleetRental metadata](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 
@@ -431,11 +431,13 @@ During an export, column names will be exported in uppercase. Imports are not ca
 ## Tips and tricks
 
 ### Max join limits
-During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
+During entity development, ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recommended because it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. We also recommend managing the total number of columns in the entity to avoid this error.
 
 ```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
+### Exporting container fields
+If an entity has container fields and these fields need to be exported, the entity must implement **getFieldsToBeConvertedToFile** to allow each container field to export its data value to a separate file. This allows for container fields to be exportable and at the same time, prevents making the entity export file (core entity data without the container fields) unreadable. If **getFieldsToBeConvertedToFile** is not implemented, then these fields will not be exported but the rest of the entity data will export as usual.
 
 ## Additional resources
 

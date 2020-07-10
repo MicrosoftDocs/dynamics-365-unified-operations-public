@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Upgrade your format by adopting a new, base version of that format
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP). It also explains how to adopt a new, base version of that format.
 
-To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures. These steps can be performed in the GBSI company.
+To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" and "Use created format to generate electronic documents for payments" procedures. These steps can be performed in the GBSI company.
 
 ## Select format configuration for customization
 1. Go to Organization administration > Workspaces > Electronic reporting.
@@ -125,12 +125,12 @@ Change the status of the designed format configuration from Draft to Completed t
     Note that the created configuration is saved as completed version 1.1.1. This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.  
 
 ## Test the customized format to generate payment files
-Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Finance and Operations session. Select the BACS (UK fictitious custom) format in electronic payment method parameters. Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.  
+Complete the steps in the "Use created format to generate electronic documents for payments" procedure in a parallel Finance and Operations session. Select the BACS (UK fictitious custom) format in electronic payment method parameters. Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.  
 
 ## Update the existing country-specific configuration
 Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document. Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.  
 
-In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository. In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.  
+In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations' LCS repository. In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.  
 
 1. Close the page.
 2. Select Litware, inc. provider.
@@ -144,8 +144,8 @@ In real service provision related processes, each new version of BACS (UK fictit
 ## Localize the base format of the electronic document
 Assume that there are new country-specific requirements to be supported by Litware, Inc.:  
 
-- A value for the creditor’s bank SWIFT code in each payment transaction.
-- A limit of 100 characters for the length of text for the vendor’s name in a generating file.  
+- A value for the creditor's bank SWIFT code in each payment transaction.
+- A limit of 100 characters for the length of text for the vendor's name in a generating file.  
 - New country-specific requirements  
 - Select the draft version of the desired configuration to introduce required changes.  
 
@@ -214,12 +214,12 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
 
 9. Click OK.
 
-    Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.  
+    Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can't be merged automatically.  
 
 ## Resolve rebase conflicts
 1. Click Designer.
     
-    Note that changes to the vendor’s name text length limit couldn’t be resolved automatically. Therefore, this is presented in a conflicts list. For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).  - Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).  - Keep your own (custom) value (60 in our case).  Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.  
+    Note that changes to the vendor's name text length limit couldn't be resolved automatically. Therefore, this is presented in a conflicts list. For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).  - Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).  - Keep your own (custom) value (60 in our case).  Click Apply base value to apply a country-specific limit of 100 characters for vendor's name text length.  
 
     Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.  
 
@@ -245,5 +245,5 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
     Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.  
 
 ## Test the customized format for payment files generation
-Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Finance and Operations session. Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
+Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel Finance and Operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
 

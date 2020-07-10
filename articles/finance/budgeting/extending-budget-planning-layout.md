@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 10.0.4
 
 # Extend the budget planning layout
 
+[!include [banner](../includes/banner.md)]
+
 ## Overview
 
 This topic describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This topic was written for a developer audience.

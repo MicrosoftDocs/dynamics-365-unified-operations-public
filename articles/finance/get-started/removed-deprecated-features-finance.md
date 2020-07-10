@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features in Finance 
-description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
-author: sericks007
+title: Removed or deprecated features in Dynamics 365 Finance 
+description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
+author: roschlom
 manager: AnnBe
-ms.date: 02/25/2019
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2020-02-29 
+ms.search.validFrom: 2020-03-02 
 ms.dyn365.ops.version: Platform update 33
 
 ---
 
-# Removed or deprecated features in Finance
+# Removed or deprecated features in Dynamics 365 Finance
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -42,7 +42,31 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Platform update 32
+## Features removed or deprecated in the Finance 10.0.12 release
+
+### Polish SSRS reports: Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Not legally required.  |
+| **Replaced by another feature?**   | Yes (Excel format for Standard Audit File with VAT declaration - JPK_VDEK) |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By July 1, 2021, we plan to no longer support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**. Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) will be introduced instead. |
+
+## Features removed or deprecated in the Finance 10.0.11 release
+
+### Norwegian Standard main accounts
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Redesign  |
+| **Replaced by another feature?**   | Yes (Replaced with ER format application-specific parameters) |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 1, 2021, we plan to no longer support functionality related to Standard main accounts: Reference field, related table, data entity. |
+
+## Features removed or deprecated in the Finance 10.0.7 release
 
 ### Workflow request change dialog box no longer includes user selection drop-down list
 |   |  |
@@ -51,7 +75,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about the new design in What's new in 10.0.7. |
+| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about the new design in [What's new in 10.0.7](whats-new-changed-10-0-7.md). |
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).

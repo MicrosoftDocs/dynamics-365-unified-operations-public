@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.0
 # Create a database refresh
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 You can create a database refresh between two environments. Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 

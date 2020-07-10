@@ -4,7 +4,7 @@
 title: Sequence production jobs for process manufacturing
 description: This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Sequence production jobs for process manufacturing
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size. The demo data company used to create this procedure is USPI. This procedure is intended for the production planner.
 

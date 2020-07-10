@@ -5,7 +5,7 @@ title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -52,7 +52,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Point of sale (POS) device activation](retail-device-activation.md)
 -   [Install the POS Layout designer](../install-pos-layout-designer.md)
 -   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
--   [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md)
+-   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
 -   [Access instances](../../dev-itpro/dev-tools/access-instances.md)
 
@@ -67,11 +67,9 @@ This page lists the resources that are available for IT pros and developers who 
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
-- [Modern POS (MPOS) and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
-- [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
+- [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
 - [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
-- [Add extension properties to customer entities](add-extension-properties.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
 - [Run the point of sale (POS) samples](pos-run-samples.md)
@@ -93,7 +91,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Extend the default Commerce Scale Unit metadata controller](extend-metadata.md)
 -   [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 -   [Commerce Scale Unit](retail-store-system-begin.md)
--   [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md)
+-   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
 ## Hardware station
 -   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
@@ -101,18 +99,20 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
--   [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
--   [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
--   [Add customer preference data to channel databases](add-customer-preference-channel.md)
--   [Add properties to sales orders](add-properties-sales-order.md)
--   [Manage secrets for retail channels](manage-secrets.md)
--   [Log extension events to Application Insights](commerce-application-insights.md)
--   [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
+- [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
+- [Add customer preference data to channel databases](add-customer-preference-channel.md)
+- [Manage secrets for retail channels](manage-secrets.md)
+- [Log extension events to Application Insights](commerce-application-insights.md)
+- [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Pre-extended columns in the channel database](extended-columns.md)
+- [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database extensions](channel-db-extensions.md) 
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
@@ -128,6 +128,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 - [Show custom notifications in POS](extend-pos-notification.md)
+- [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
+- [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 
 ## eCommerce
 -   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)

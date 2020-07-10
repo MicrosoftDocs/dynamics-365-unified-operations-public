@@ -28,10 +28,10 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up the transfer documents for goods movement inside a company
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create transfer documents for goods movement inside a company. This procedure is only available for legal entities with a primary address in Lithuania. 
-The procedure was created using the demo data company DEMF with a primary address in Lithuania. Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure. 
+The procedure was created using the demo data company DEMF with a primary address in Lithuania. Before you can complete this procedure, you must complete the "Set up transfer documents for goods movement inside a company" procedure. 
 This procedure is intended for inventory accountants. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 

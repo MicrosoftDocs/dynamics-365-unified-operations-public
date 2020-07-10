@@ -4,7 +4,7 @@
 title: Lean manufacturing overview
 description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobScheduling
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19371

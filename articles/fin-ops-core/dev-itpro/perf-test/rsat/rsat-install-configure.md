@@ -5,7 +5,7 @@ title: Regression suite automation tool installation and configuration
 description: This topic contains information about how install and configure the Regression suite automation tool (RSAT).
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 06/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,7 +44,7 @@ Your test environment must be running Platform update 15 or newer. The Regressio
 You need Microsoft Excel installed to generate and edit test parameters. 
 
 ### Azure DevOps
-You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) or [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
 ### Authentication Certificate
 RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to an environment.
@@ -56,9 +56,10 @@ To enable secure authentication, RSAT requires a certificate to be installed on 
 ## Installation
 
 ### Installer
-Download **Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. 
+Download the .msi file from the [Regression Suite Automation Tool Download](https://www.microsoft.com/download/details.aspx?id=57357) to your machine and double-click it to run the installer. 
 
-![Installer](media/download-msi.png)
+> [!NOTE]
+> If you're using Azure DevOps Server, download and install version 1.210.48249.4 or later. 
  
 ### Selenium and Browser Drivers
 RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select Yes when you see the following (or similar) messages.
@@ -85,7 +86,11 @@ These settings are required.
 #### Azure DevOps
 Configure your connection to the Azure DevOps project and test plan.
 
-+ **Azure DevOps Url** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
++ **Azure DevOps URL** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
+
+    > [!NOTE]
+    > If you're using Azure DevOps Server, add **/DefaultCollection** to the end of your Azure DevOps URL.
+
 + **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate). 
 + **Project Name** - The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
 + **Test Plan** - The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). 
@@ -99,9 +104,10 @@ Configure your connection to the test environment.
 + **SOAP Hostname** – The SOAP hostname of the test environment. Typically, you must add a **soap** suffix to the hostname. For example, if your hostname is myhost.cloudax.dynamics.com, use myhost**soap**.cloudax.dynamics.com as the SOAP hostname.
 
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
-    + If your test environment is a self-service user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access (that is, it's an environment that is running on the Azure Service Fabric infrastructure), the SOAP hostname matches the hostname.
+    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname matches the hostname.
 
-+ **Admin User Name** – The email address of an admin user in the test environment.
++ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
+
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
 
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
@@ -118,7 +124,7 @@ Configure your connection to the test environment.
 Configure your local settings.
 
 + **Working directory** - Folder location for storing test automation files, including Excel test data files. For example: **C:\Temp\RegressionTool**.
-+ **Default browser** - Select the browser to use for test execution.
++ **Default browser** - Select the browser to use for test execution. RSAT supports (the new) Microsoft Edge, Microsoft Internet Explorer and Google Chrome. We recommend Microsoft Edge, which you can download from [Introducing the new Microsoft Edge](https://www.microsoft.com/edge). 
 
 Select **Ok** to apply your settings and close the dialog box. Select **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Select **Save As** to save your current settings into a configuration file on your computer. Select **Open** to restore your settings from a configuration file.
 
@@ -132,6 +138,10 @@ Select the **Optional** tab to configure optional settings.
 + **Fail test on first validation error** – By default, if a test case has multiple validation steps, and there is a validation failure, the test case stops running when the first failure occurs. The test case is then marked as failed. If you want test cases to continue to run until all validations are completed, clear this option. The test case can then evaluate all validations.
 + **Abort test suite execution on failure** – By default, execution of a test suite continues even if one of the test cases fails. If you set this option to **True**, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
 + **Cloud provider** – Select the provider of the cloud tenant of your test environment. Supported providers are **Global** (Public cloud) and **China** (Sovereign cloud).
+
+    > [!IMPORTANT]
+    > The **Cloud provider** setting is required, and the selected value must be **China** if your Finance and Operations apps were deployed in 21Vianet.
++ **Configure Retail POS** - Select this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce. Once enabled, a tab named **Retail POS** appears on the **Settings** dialog menu. For more information about RSAT with cloud POS, see [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
 
 ### Configure the test environment to trust the connection
 
@@ -165,7 +175,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection. An environment might not allow for Remote Desktop access if, for example, it's a self-service UAT or higher-tier sandbox environment (that is, it's an environment that is running on the Service Fabric infrastructure).
+If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection.
 
 1. Create the RSAT authentication certificate by using the **New** button in the RSAT settings dialog box, as described earlier in this topic.
 2. Open a support request, and provide the following information to the support engineer:
@@ -193,7 +203,7 @@ For manual installation of Selenium drivers, follow these steps:
     + Unzip the downloaded file. 
     + Unpack the file **dist\Selenium.WebDriver.StrongNamed.3.13.1.nupkg**. To unpack this file, add the .zip suffix to the file and unzip it. 
     + Copy the contents of the folder named **Selenium.WebDriver.StrongNamed.3.13.1.nupkg\lib** to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
-3.	Download the [Internet Explorer driver version 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip). Or, go back in the browser, open the **3.4** folder and download **IEDriverServer_x64_3.4.0.zip**.
+3.	Download the [Internet Explorer driver version 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip). Or, go back in the browser, open the **3.4** folder, and download **IEDriverServer_x64_3.4.0.zip**.
 4.	Unzip the downloaded file and move the contents to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 If you want to use Google Chrome as your browser, follow these steps:

@@ -5,7 +5,7 @@ title: Configure your domain name
 description: This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site.
 author: psimolin
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -55,7 +55,13 @@ To associate new domains with your e-Commerce environment after e-Commerce initi
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 

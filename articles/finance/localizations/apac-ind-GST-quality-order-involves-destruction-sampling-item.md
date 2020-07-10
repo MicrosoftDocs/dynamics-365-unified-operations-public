@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.4
 
 # Quality orders that involve destruction of the sampling item
 
+[!include [banner](../includes/banner.md)]
+
 ## Purchase order page
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.

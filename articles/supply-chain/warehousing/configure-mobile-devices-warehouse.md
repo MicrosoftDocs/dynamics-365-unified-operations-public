@@ -4,8 +4,8 @@
 title: Set up mobile devices for warehouse work
 description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
-manager: AnnBe
-ms.date: 04/18/2019
+manager: tfehr
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: WHSRFMenuItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29941
@@ -100,11 +100,11 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>License plate receiving</td>
-<td>Receive an inbound load by using the license plate ID.</td>
+<td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td>License plate receiving and put away</td>
-<td>Receive and put away an inbound load by using the license plate ID.</td>
+<td>Receive and put away an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td>Load item receiving</td>
@@ -124,7 +124,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="4">Transfer order</td>
+<td rowspan="6">Transfer order</td>
 <td>Transfer order item receiving</td>
 <td>Register the receipt of a quantity of an item, and create put-away work for another worker.
 
@@ -143,6 +143,14 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td>Transfer order line receiving and put away</td>
 <td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td>License plate receiving</td>
+<td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
+</tr>
+<tr>
+<td>License plate receiving and put away</td>
+<td>Receive and put away an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td rowspan="4">Production</td>
@@ -221,7 +229,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>
@@ -254,7 +262,7 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
-<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
+<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action Pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
  <tr class="odd">
 <td>Transport loading</td>

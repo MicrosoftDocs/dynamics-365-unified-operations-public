@@ -2,10 +2,10 @@
 # required metadata
 
 title: Advanced filtering and query syntax
-description: This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the matches operator in the Filter pane or grid column header filters.  
+description: This topic describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the matches operator in the Filter pane or grid column header filters.  
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
+This topic describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
 
 ## Advanced query syntax
 
@@ -127,10 +127,11 @@ This article describes the filtering and query options that are available when y
 <td>Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL statement</span>) (SQL statement between parentheses)</td>
+<td>(<span class="code">Finance and Operations query</span>) (Finance and Operations query between parentheses)</td>
 <td>Matching a defined query</td>
-<td>Type a query as an SQL statement between parentheses.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Type a query as an SQL statement between parentheses using the Finance and Operations query language.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US*") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       as an example of syntax for a filter condition on a field from the root datasource as well as a field from a different datasource (for the All customers page)</td>
 </tr>
 <tr>
 <td>T</td>

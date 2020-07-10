@@ -5,7 +5,7 @@ title: Regression suite automation tool
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into a suite of automated tests without the need to write source code.
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,6 +50,28 @@ RSAT usage is described in these topics:
 + [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
 
 
+## Getting started videos
+These videos will help introduce RSAT and get you started.
+
+### Use task recorder to create a test case for RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
+
+The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### Create a test plan in Azure DevOps to use with RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
+
+The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### How to use RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
+
+The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+
 ## End-to-end flow
 This tool is part of the end to end flow described below. The application, along with Microsoft Dynamics Lifecycle Services (LCS) and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
 
@@ -75,6 +97,9 @@ You must name the developer recording file **Recording.xml** before attaching it
 The Regression suite automation tool is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This is also referred to as *user acceptance testing*. Business cycle testing consists of a smaller number of test cases than component or unit testing. This is illustrated in the following graphic.
 
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
+
+### Warehouse mobile app
+You can use RSAT in combination with the Warehouse App Task Validation Framework to automate the testing of warehouse processes. This [teck talk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) is a good reference to get started.
 
 ### Unit and component testing
 For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance test library resources](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:

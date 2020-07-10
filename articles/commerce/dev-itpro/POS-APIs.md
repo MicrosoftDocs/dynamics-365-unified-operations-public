@@ -5,7 +5,7 @@ title: Point of sale (POS) APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/19/2019
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -214,6 +214,9 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | AddLoyaltyCardToCartOperationRequest |
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
+| AddExpenseAccountLineToCartOperationRequest |
+| ShipAllCartLinesOperationRequest |
+| ShipSelectedCartLinesOperationRequest |
 
 
 ### Payments
@@ -239,6 +242,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | CardPaymentExecuteTaskRequest                          |
 | CardPaymentRefundPaymentRequest                        |
 | CardPaymentVoidPaymentRequest                          |
+| CardPaymentAuthorizeCardTokenPeripheralRequest                          |
 | CashDrawerIsOpenRequest                                |
 | HardwareStationDeviceActionRequest                     |
 | HardwareStationStatusRequest                           |
@@ -255,6 +259,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | PaymentTerminalRefundPaymentRequest                    |
 | PaymentTerminalUpdateLinesRequest                      |
 | PaymentTerminalVoidPaymentRequest                      |
+| PaymentTerminalFetchTokenPeripheralRequest             |
 | PrinterPrintRequest                                    |
 | ScaleReadRequest                                       |
 
@@ -285,6 +290,7 @@ The following is a list of APIs exposed to perform authentication-related functi
 | POS API                |
 |------------------------|
 | LogOffOperationRequest |
+| LockRegisterOperationRequest |
 
 ### DataService
 
@@ -372,6 +378,17 @@ The following is a list of APIs exposed to perform products-related functionalit
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
 | SelectProductClientRequest |
+| SelectProductVariantClientRequest |
+| GetActivePricesServiceRequest |
+
+### Categories
+
+The following is a list of APIs exposed to perform categories-related functionality.
+
+| POS API                                    |
+|--------------------------------------------|
+| GetCategoriesServiceRequest              |
+
 
 ### SalesOrders
 
@@ -436,5 +453,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | SearchCommissionSalesGroupsServiceRequest       |
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
+| BankDropOperationRequest                 |
+| DeclareStartAmountOperationRequest        | 
 
 

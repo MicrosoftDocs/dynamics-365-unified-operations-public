@@ -3,7 +3,7 @@
 
 title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Supplemental Terms of Use for Microsoft Dynamics 365 Previews.
-author: manalidongre
+author: meeramahabala
 manager: AnnBe
 ms.date: 09/12/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: meeram
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.0
 ---

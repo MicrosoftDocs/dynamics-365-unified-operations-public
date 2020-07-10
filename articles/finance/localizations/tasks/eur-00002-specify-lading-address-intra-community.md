@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00002 Specifying a lading address for an intra-community transaction
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to specify a lading address for an intra-community trade transaction. For example, a Germany company orders items from a vendor with a German business address. This vendor has a warehouse in Italy and ships the items from there. This delivery must be reported in the Intrastat. The same behavior is valid for customer returns.
 This procedure applies to all European countries/regions. The task was created using the demo data company DEMF with a primary address in Germany. Before you can complete this procedure, you must configure Intrastat reporting. This procedure is intended for accountants. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.

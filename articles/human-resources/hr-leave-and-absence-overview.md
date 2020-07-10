@@ -2,10 +2,10 @@
 # required metadata
 
 title: Overview
-description: In Dynamics 365 Human Resources, the **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
+description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Overview
 
-Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
+Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics helps your organization measure and monitor leave balances and usage for your leave plans.
 
 ## Set up Leave and absence
 
-Before you can create leave plans for your employees, you need to do a few setup steps:
+Before creating leave plans for your employees, you need to do a few setup steps:
 
 - [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)
 - [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
@@ -59,28 +59,39 @@ Your employees can submit time off requests, and you can manage them, in the **E
 - [Request time off](hr-employee-self-service-request-time-off.md)
 - [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 
+## Leave and absence known issues
+
+### Rounding precision
+
+You can't set **Rounding precision** when you set **Rounding type**. You can only set **Rounding precision** by using the **Leave and absence type** entity. 
+
+1. From **Leave and absence types**, select **Open in Excel** to open the **Leave and absence type** entity.
+
+2. After the file opens and is enabled, select **Design**.
+
+3. On the **Leave and absence type** table, select the pencil option to edit.
+
+4. Select **RoundingPrecision** and **RoundingType**, and then select **Add** to add to the list of fields.
+
+5. Select **Update**, and then select **Done**.
+
+6. Enter or select the **Rounding type** for each leave type if they haven't been set already. 
+
+7. Enter the **Rounding precision** for the appropriate types.
+
+8. Select **Publish** to push the changes into Human Resources.
+
 ## Leave and absence preview features
 
-You can try out new Leave and absence preview features in a **Sandbox** environment. For informationa bout turning on preview features, see [Manage features](hr-admin-manage-features.md). The preview features include:
+You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). 
 
-- **Leave and absence calendar** - Leave and absence parameters will move from **Human resources parameters** to a new screen called **Leave and absence parameters**. The new screen includes a new **Calendar** tab. This preview only enables a subset of the parameters. You can access the new screen from the **Links** tab of the **Leave and absence** workspace. The calendars include:
-  - **Company calendar** - shows all employee time-off requests. People with the **Human resources** role can access this calendar from the **Links** tab of the **Leave and absence** workspace.
-  - **Manager team calendar** - shows all direct reports' time-off requests. Managers can access the calendar from the **My team** tab in Employee self service under **Leave and absence**. 
+[!include [banner](includes/preview-feature.md)]
 
-- **Leave and absence holiday calendars** - Leave types include a new **Holiday** option, used in conjunction with the working time calendar. Days defined by holidays and closures are now designated as **Holiday** when working days are generated. When accruals are processed, adjustments are made to employees assigned to the calendar to account for holidays falling on a working day.
+The preview features include:
 
-- **Leave accrual auditing** - A new screen lets you review when accruals have been processed and deleted, both by all employees and individual employees. You can access this new screen from the **Links** tab of the **Leave and absence** workspace.
+- **Leave accrual per company or plan** - You can run the accrual process either for all companies or for a single company. You can also run the accrual process for a specific leave and absence plan for a specific company. 
 
-- **Leave accrual deletion** - You can now delete accrual records for specific leave plans. You can access this new option from the **Links** tab of the **Leave and absence** workspace. For individual employees, this option appears in the **Leave and absence** grouping in the employee profile. 
+- **Buy leave** - You can enable and create buy leave policies for employees to submit buy requests. Employees can submit buy requests and have balances automatically updated to reflect the request.  
 
-- **Leave accrual rounding** - New options for **Leave type** define what type of rounding accrual should use, plus the decimal precision of the rounding during the accrual process. When accruals are processed, the rounding and precision are applied to the accrual records. 
+- **Add attachments to approved leave requests** - You can add an attachment to a leave request that's already been approved. 
 
-- **Configure multiple leave types on a single leave plan** - A new column in the leave accrual schedule for leave types lets you define multiple leave types on a leave and absence plan with different accrual schedules. The previous **Leave type** field is removed. On the employee enrollment, the balances for the leave types now display in a table instead of at the top of the screen.
-
-  > [!IMPORTANT]
-  > You can't turn this feature off after you enable it.
-
-- **Use an employee's full-time equivalency (FTE) for accrual** - a new column on the leave accrual schedule allows using FTE for accrual. When accruals are processed, the application uses the employee’s primary position and the FTE defined to determine the prorated accrual amount.
-
-  > [!NOTE]
-  > This feature is only available if you enable **Configure multiple leave types per leave plan**. 

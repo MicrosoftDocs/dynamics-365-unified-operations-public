@@ -5,7 +5,7 @@ title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. 
 author: jorisdg
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -80,69 +80,66 @@ There is a restriction on the format. The PFX (PKCS \#12) format should be used 
 ## Enable licensing for your ISV solution
 Follow these steps to enable licensing for your solution.
 
-1.  Create an ISV solution. 
+1. Create an ISV solution. In Visual Studio, click **File \> New project**. In the **New Project** dialog, click **Installed > Templates > Dynamics 365**.  Create a **Finance Operations** project. In this example, we named the project **NewISVSolution**.
 
-    ![Creating an ISV solution](./media/isv1.png)
+    ![Creating an ISV solution](media/isv_new_isv_project.png)
 
-2.  Add the certificate's public key (.cer file) to your project as a resource.
-    1.  Add a new item. 
+2. Add the certificate's public key (.cer file) to your project as a resource. To create a certificate for testing, see [Appendix: Create self-signed certificates for test purposes](#appendix-create-self-signed-certificates-for-test-purposes).
 
-        ![Adding a new item](./media/isv2.png)
+    1. Right-click the project in Solution Explorer, then click **Add \> New item**. 
+    2. Under **Installed \> Dynamics 365 Items**, click **Labels And Resources**, and then select **Resource**. Name the resource. In this example, we named the resource **ISVCert**.
 
-    2.  Click **Labels And Resources**, and then click **Resource**. 
+        ![Clicking Resource](media/isv_new_resource.png)
 
-        ![Clicking Resource](./media/isv3.png)
+    3. Click **Add** and select the certificate's public key file (.cer file).
 
-    3.  Select the certificate's public key as the resource. 
+        ![Selecting the certificate's public key as the resource](media/isv_select_cer.png)
 
-        ![Selecting the certificate's public key as the resource](./media/isv4.png)
+    4. Click **Open** to add the certificate.
 
-    4.  Add the certificate as a resource. 
+        ![Adding the certificate as a resource](media/isv_resource_cer.png)
 
-        ![Adding the certificate as a resource](./media/isv5.png)
+3. Create a license code. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **Configuration**. In the list, choose **License Code** and name the license code. In this example, we named the license code **ISVLicenseCode**. Click **Add**.
 
+    ![Creating a license code](media/isv_new_license_code.png)
 
-3.  Create a license code. 
+4. Map the certificate to the license code. In the Properties window for the license code, set the **Certificate** property to your certificate resource. In this example, we set **Certificate** to **ISVCert**.
 
-    ![Creating a license code](./media/isv6.png)
+    ![Mapping the certificate to the license code](media/isv_map_license_cert.png)
 
-4.  Map the certificate to the license code. 
+5. Create one or more configuration keys. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **Configuration**. In the list, choose **Configuration Key**. Name the key and click **Add**. In this example, we named the configuration key **ISVConfigurationKey1**.
 
-    ![Mapping the certificate to the license code](./media/isv7.png)
+    ![Creating a configuration key](media/isv_new_configuration_key.png)
 
-5.  Create one or more configuration keys. 
+6. Associate the license code with the configuration key. In Solution Explorer, double-click the configuration key to open the Properties window. In the Properties window, set the **LicenseCode** property to your license code. In this example, we set the **LicenseCode** to **ISVLicenseCode**.
 
-    ![Creating a configuration key](./media/isv8.png)
+    [![Associating the license code with the configuration keys](media/isv_select_license_code.png)
 
-6.  Associate the license code with the configuration keys. 
+7. Associate a configuration key to an element in your solution. For example, create a new form. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **User Interface**. In the list, choose **Form** and give it a name. In this example, we named the form **ISVForm**.
 
-    [![Associating the license code with the configuration keys](./media/isv9.png)
+    ![Creating a new form](media/isv_new_form.png)
 
-7.  Associate a configuration key to an element in your solution. For example, create a new form. 
+8. Add a button to the form. Double-click the form in the Solution Explorer. In the Design window, right-click and select **New**, and then **Button**. Set the **Text** property to **ISVButton**.
 
-    ![Creating a new form](./media/isv10.png)
+    ![Adding a button to the new form](media/isv_button_designtime.png)
 
-8.  Add a button to the form. 
+    At runtime, the button is visible because it isn't controlled by a configuration key at first. 
 
-    ![Adding a button to the new form](./media/isv11.png)
+    ![New button is visible when it's first added](media/isv_button_visible_runtime.png)
 
-    The button will be visible because it isn't controlled by a configuration key at first. 
+9.  Associate a configuration key with the button. In the Properties window for the button, set the **Configuration Key** property to your configuration. In this example, we set the **Configuration Key** to **ISVConfigurationKey1**.
 
-    ![New button is visible when it's first added](./media/isv12.png)
+    ![Associating a configuration key with the button](media/isv_select_key_for_button.png) 
 
-9.  Associate a configuration key with the button. 
+    At runtime, the button is not visible because the configuration key must be available and enabled. 
 
-    ![Associating a configuration key with the button](./media/isv13.png) 
-
-    The button will no longer be visible because the configuration key must be available and enabled. 
-
-    ![Button is no longer visible](./media/isv14.png)
+    ![Button is no longer visible](media/isv_button_invisible_runtime.png)
 
 
 ## Create a package and generate a customer-specific license
-1.  Collect the tenant name and ID for the customer to issue the license to. (You can find this information at **Settings** &gt; **About**.) 
+1.  Collect the tenant name and ID for the customer to issue the license to. You can find this information at **Settings \> Help \& Support \> About** on the **Licenses** tab. 
 
-    ![Customer's tenant name and ID](./media/isv15.png)
+    ![Customer's tenant name and ID](./media/isv_tenant_id.png)
 
 2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
@@ -187,13 +184,13 @@ Follow these steps to enable licensing for your solution.
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
-    ![ISVConfigurationKey1 configuration key enabled on the License configuration page](./media/isv18.png)
+    ![ISVConfigurationKey1 configuration key enabled on the License configuration page](media/isv_license_configuration_page.png)
 
 5.  In non-production installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 
-![Button is visible after the configuration key is enabled](./media/isv19.png)
+![Button is visible after the configuration key is enabled](media/isv_button_visible_runtime.png)
 
 ## Protection best practices
 Solutions can be delivered in two forms:
@@ -203,12 +200,13 @@ Solutions can be delivered in two forms:
 
 To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package. Customers will then be able to install and interact with those elements in Visual Studio. Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and should not be able to customize. 
 
-![Protected vs. unprotected ISV solutions](./media/isv20.png)
+![Protected vs. unprotected ISV solutions](./media/isv_protected_solution.png)
 
 ## Production environments
-To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
+To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
-![Location of the template package for configuration mode](./media/isv21.png)
+> [!div class="mx-imgBorder"]
+> ![Location of the template package for configuration mode](media/isv_template_location.png)
 
 1.  Make a copy of the package template.
 2.  Put the license file in the following folder within the package template: ImportISVLicense.zip\\AosService\\Scripts\\License
@@ -220,9 +218,10 @@ More than one license can be installed at a time. If one of the licenses depends
 > [!NOTE]
 > Self-signed certificates can be used only during development. They aren't supported in production environments.
 
-For Platform update 32 and earlier:
+For Platform update 34 and earlier:
+(Deprecated - uses SHA1 hash algorithm for license creation)
 
-1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
+1. For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
 
     ```Console
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
@@ -230,19 +229,19 @@ For Platform update 32 and earlier:
 
     For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
 
-2.  Create a certificate by using the CA.
+2. Create a certificate by using the CA.
 
     ```Console
     makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
     ```
 
-3.  Convert the ISV certificate to PFX format.
+3. Convert the ISV certificate to PFX format.
 
     ```Console
     pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
     ```
 
-4.  For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
+4. For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
 
     ```Console
     certutil -addstore root c:\temp\ca.cer
@@ -254,29 +253,42 @@ For Platform update 32 and earlier:
     certutil -addstore root c:\temp\isvcert.cer
     ```
 
-For Platform update 33 and later:
+For Platform update 35 and later:
+(Uses SHA256 hash algorithm for license creation)
 
 1. For test purposes, create a self-signed certificate using the PowerShell command `New-SelfSignedCertificate`:
-    1. Create the certificate.
+    1. Create the certificate. (Note: adjust start and end dates accordingly.)
+
         ```PowerShell
-        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCertTest" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1)
+        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCert" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1) -NotAfter (Get-Date -Year 2022 -Month 12 -Day 31)
         ```
+
     2. Get a reference to the new certificate.
+
         ```PowerShell
         [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
         ```
-    3. Create the secure string password that the certificate uses.
+
+    3. Create the secure string password that the certificate uses. (Replace "##############" with the certificate password)
+
         ```PowerShell
-        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "########" -Force -AsPlainText
+        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "##############" -Force -AsPlainText
         ```
+
     4. Export the certificate private key as **.pfx** file using the password.
+
         ```PowerShell
-        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.pfx" -Password $rootcertPassword
-        ```
-    5. Export the certificate public key as a **.crt** file.
-        ```PowerShell
-        Export-Certificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.cer"
+        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\IsvCert.pfx" -Password $certPassword
         ```
 
-2. Import the exported *cer* file into the **Trusted Root Certificate Authorities\Certificates** folder for the local machine.
+    5. Export the certificate public key as a **.cer** file.
 
+        ```PowerShell
+        Export-Certificate -Cert $certPath -FilePath "C:\Temp\IsvCert.cer"
+        ```
+
+2. Add the certificate to the root store.
+
+    ```PowerShell
+    certutil -addstore root C:\Temp\IsvCert.cer
+    ```

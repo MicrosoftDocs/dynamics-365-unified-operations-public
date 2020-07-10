@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify formats to generate documents that have application data
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".
 
@@ -44,7 +44,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 6. In the tree, expand 'File\Declaration'.
 7. In the tree, select 'File\Declaration\Data'.
 8. In the Multiplicity field, select 'One many'.
-    * Configure this format element to archive details of the Intrastat reporting process. This item represents the archive’s header record.  
+    * Configure this format element to archive details of the Intrastat reporting process. This item represents the archive's header record.  
 9. In the tree, expand 'File\Declaration\Data'.
 10. In the tree, select 'File\Declaration\Data\Item'.
 11. In the Multiplicity field, select 'Zero many'.
@@ -101,15 +101,15 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 ## Modify format to memorize details of reporting
 1. Click Map format to model.
 2. Click New.
-3. In the Definition field, enter or select the ‘For application data update’ root item.
+3. In the Definition field, enter or select the 'For application data update' root item.
     * For application data update  
 4. In the Name field, type 'Mapping to update data'.
     * Mapping to update data  
 5. Click Save.
-    * This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item ‘For application data update’. These details, the model mapping with same root item ‘For application data update’, and the direction ‘To destination’ will be used for the application data update. The application data update starts immediately after the outgoing Intrastat report is generated. Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).   
+    * This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item 'For application data update'. These details, the model mapping with same root item 'For application data update', and the direction 'To destination' will be used for the application data update. The application data update starts immediately after the outgoing Intrastat report is generated. Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).   
 6. Click Designer.
     * Note that the outgoing Intrastat report format is added by default as a data source for this model mapping.  
-    * Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model’s root item.  
+    * Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model's root item.  
 7. In the tree, expand 'Archive header'.
 8. In the tree, expand 'Archive header\Archive lines'.
 9. In the tree, expand 'format'.

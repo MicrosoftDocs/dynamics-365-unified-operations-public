@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # DE-00003 Electronic transmission of VAT declaration (ELSTER)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through setting electronic tax declaration.
 
@@ -48,7 +48,7 @@ You should have a valid user certificate (like test-soft-pse.pfx) and a Tax auth
 5. Click Electronic tax certificates.
 6. Click New.
 7. In the User ID field, enter or select a value.
-    * You should first install certificates through Microsoft Management Console and assign friendly names that will be used in these steps.  In MMC for private certificate go to “Certificates / Personal /Certificates”, right mouse click.  In the context menu click All Tasks > Import....  Grant read permissions to the certificate for the user who is doing the submission.  In MMC Right click on the certificate and use All Tasks/Manage Private Keys – select the user and add read permission.  For Tax authority certificate in MMC right-click “Trusted Root Certificate Authorities”  Import "Coala2019.pem.cer".  
+    * You should first install certificates through Microsoft Management Console and assign friendly names that will be used in these steps.  In MMC for private certificate go to "Certificates / Personal /Certificates", right mouse click.  In the context menu click All Tasks > Import....  Grant read permissions to the certificate for the user who is doing the submission.  In MMC Right click on the certificate and use All Tasks/Manage Private Keys – select the user and add read permission.  For Tax authority certificate in MMC right-click "Trusted Root Certificate Authorities"  Import "Coala2019.pem.cer".  
 8. In the Certificates reference field, type a value.
 9. Click Save.
 10. Close the page.

@@ -5,7 +5,7 @@ title: REPLACE ER function
 description: This topic provides information about how the REPLACE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -74,7 +74,7 @@ The resulting text value.
 
 If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument. The regular expression is used to find the characters that must be replaced.
 
-If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md). The characters that are specified by the `replacement` argument are used to replace the characters that are found. 
+If the `regular expression flag` argument is **FALSE**, this function returns the specified string after the set of characters that are defined in the `pattern` argument have been replaced by characters of the `replacement` argument. 
 
 ## Example 1
 

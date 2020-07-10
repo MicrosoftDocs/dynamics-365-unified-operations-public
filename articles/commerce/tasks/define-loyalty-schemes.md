@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define loyalty schemes
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through how to define a loyalty scheme. Loyalty schemes are reward earning and redeeming rules for a loyalty program. This procedure uses the USRT demo data company.
 

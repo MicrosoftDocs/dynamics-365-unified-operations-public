@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Configure a worker
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure demonstrates how to configure a worker as a sales representative who is eligible for commission on sales in POS. This procedure uses the USRT demo data company.
 
