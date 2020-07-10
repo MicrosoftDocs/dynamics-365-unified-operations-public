@@ -60,7 +60,7 @@ The Commerce evaluation environment has a 30-day time limit from the date of pro
 
 **Can I extend the time limit for my Commerce evaluation environment?**
 
-This is considered on case by case basis. Please contact your Microsoft partner contact for assistance.
+This is considered on case by case basis. Please reach out to your Microsoft partner contact for assistance.
 
 ## Additional resources
 
