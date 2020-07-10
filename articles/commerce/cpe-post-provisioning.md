@@ -52,11 +52,11 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 
 During post-provisioning activities in Commerce Headquarters, make sure that **USRT** legal entity is always selected.
 
-## Configure the point of sale in Headquarters
+## Configure the point of sale
 
 ### Associate a worker with your identity
 
-To associate a worker with your identity in LCS, follow these steps.
+To associate a worker with your identity, follow these steps while in Commerce Headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
 1. In the list, find and select the following record: **000713 - Andrew Collette**.
@@ -70,7 +70,7 @@ To associate a worker with your identity in LCS, follow these steps.
 
 ### Activate Cloud POS
 
-To activate Cloud POS in LCS, follow these steps.
+To activate Cloud POS, follow these steps while in LCS.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select your environment in the list.
@@ -124,7 +124,7 @@ Optionally you may also set the recurrence interval to 1 minute for the followin
 
 ### Run full data synchronization
 
-To run full data synchronization in Commerce, follow these steps.
+To run full data synchronization in Commerce, follow these steps while in Headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. Select the channel named **scXXXXXXXXX**.
