@@ -5,7 +5,7 @@ title: Demand forecasting overview
 description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ Here are some of the main features of demand forecasting:
 Three major themes are implemented in demand forecasting:
 
 -   **Modularity** – Demand forecasting is modular and easy to configure. You can turn the functionality on and off by changing the configuration key at **Trade** &gt; **Inventory forecast** &gt; **Demand forecasting**.
--   **Reuse of the Microsoft stack** – Microsoft launched the Machine Learning platform in February 2015. Machine Learning, which is now part of the Microsoft Cortana Analytics Suite, lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.
+-   **Reuse of the Microsoft stack** – Machine Learning, which is part of the Microsoft Cortana Analytics Suite, lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.
     -   You can download the Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts. The experiments are available for download if you've purchased a Supply Chain Management subscription for a production planner as enterprise level user.
     -   You can download any of the currently available demand prediction experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Whereas the Demand forecasting experiments are automatically integrated with Supply Chain Management, customers and partners must handle the integration of experiments that they download from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Therefore, experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) aren't as straightforward to use as the Finance and Operations Demand forecasting experiments. You must modify the code of the experiments so that they use the Finance and Operations application programming interface (API).
     -   You can create your own experiments in Microsoft Azure Machine Learning Studio (classic), publish them as services on Azure, and use them to generate demand forecasts.
@@ -77,13 +77,13 @@ Demand forecasting is a tool that helps customers in the manufacturing industry 
 
 ### Demand forecast variant conversion limitation
 
-Unit of measure (UOM) per variant conversion is not fully supported when generating demand forecast if Inventory UOM is different than the Demand forecast UOM. 
+Unit of measure (UOM) per variant conversion is not fully supported when generating demand forecast if inventory UOM is different than the demand forecast UOM.
 
-Generating forecast (Inventory UOM -> Demand forecast UOM) use product UOM conversion. When loading historical data for the demand forecast generation, the product level UOM conversion will be always used when converting from Inventory UOM to the Demand forecast UOM, even if there are conversions defined on the variant level. 
+Generating forecast (**Inventory UOM > Demand forecast UOM**) uses product UOM conversion. When loading historical data for the demand forecast generation, the product level UOM conversion will be always used when converting from inventory UOM to the demand forecast UOM, even if there are conversions defined on the variant level.
 
-First part of Authorizing forecast (Demand forecast UOM -> Inventory UOM) use Product UOM conversion and second part of Authorizing forecast (Inventory UOM -> Sales UOM) use the variant UOM conversion. When the generated demand forecast is authorized the conversion to Inventory UOM from Demand forecast UOM will be done using Product level UOM conversion. At the same time conversion between the Inventory unit and the Sales UOM will respect the variant level defined conversions.
+The first part of authorizing forecast (**Demand forecast UOM > Inventory UOM**) uses product UOM conversion. The second part of authorizing forecast (**Inventory UOM > Sales UOM**) uses the variant UOM conversion. When the generated demand forecast is authorized, the conversion to inventory UOM from demand forecast UOM will be done using product level UOM conversion. At the same time, conversion between the inventory unit and the sales UOM will respect the variant level defined conversions.
 
-Note that the Demand forecast UOM does not have to have any specific meaning. It can be defined just as “Demand forecast unit”. And for each of the products you can define the conversion to be 1 – 1 with the Inventory UOM.
+Note that the demand forecast UOM does not have to have any specific meaning. It can be defined as “Demand forecast unit”. For each of the products, you can define the conversion to be 1:1 with the inventory UOM.
 
 Additional resources
 --------
