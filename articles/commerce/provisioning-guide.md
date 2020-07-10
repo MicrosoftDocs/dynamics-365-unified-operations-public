@@ -33,17 +33,16 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to provision a Dynamics 365 Commerce evaluation environment.
+This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 
 Before you begin, we recommend that you take a quick scan through this topic to get an idea of what the process requires.
 
 > [!NOTE]
-> Commerce evaluation environments are not generally available and are granted to partners and customers on a per request basis.
-> Please reach out to your Microsoft partner contact for more information.
+> Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
 
 ## Overview
 
-To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.
+To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this topic describe all the steps that are required to complete provisioning and the parameters that you must use.
 
 After you successfully provision your Commerce evaluation environment, you must complete a few post-provisioning steps to prepare it for use. Some steps are optional, depending on the aspects of the system that you want to evaluate. You can always complete the optional steps later.
 
@@ -60,7 +59,7 @@ The following prerequisites must be in place before you can provision your Comme
 - You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
 
-Please note that this list is not exhaustive. Should you experience any issues, please reach out to your Microsoft partner contact for assistance.
+Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
 
 ## Provision your Commerce evaluation environment
 
@@ -131,12 +130,13 @@ To initialize CSU, follow these steps.
 1. In the environment view on the right, select **Full details**. The environment details view appears.
 1. Under **Environment features**, select **Manage**.
 1. On the **Commerce** tab, select **Initialize**. The CSU initialization parameters view appears.
-1. In the **Region** field, select the region that is the same or close to the region to which you deployed the environment. Leave the **Version** field as is.
+1. In the **Region** field, select the region that is the same or close to the region that you deployed the environment to.
+1. Leave the **Version** field as it is.
 1. Select **Initialize**.
 1. On the deployment confirmation page, verify that the details are correct, and then select **Yes**. The **Commerce management** view displays again, where the **Commerce** tab is selected. Your CSU has been queued for provisioning.
 1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
 
-If you are unable to locate the **Manage** link from the environment details view, please reach out to your Microsoft contact for assistance.
+If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
 
 ### Initialize e-Commerce
 
@@ -150,9 +150,9 @@ To initialize e-Commerce, follow these steps.
 
 1. Select **Next** to continue.
 1. In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.
-1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass icon to display the search results. Select the correct security group from the list.
-2.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass icon to display the search results. Select the correct security group from the list.
-1. Leave the **Enable ratings and review service** option enabled ("Yes").
+1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1. Leave the **Enable ratings and review service** option set to **Yes**.
 1. Select **Initialize**. The **Commerce management** view displays again, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.
 1. Under **Links** in the lower right, make a note of the URLs for the following links:
