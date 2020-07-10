@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Commerce preview environment FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
+title: Dynamics 365 Commerce evaluation environment FAQ
+description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
 manager: annbe
 ms.date: 04/10/2020
