@@ -85,7 +85,7 @@ To create a new project in LCS, follow these steps.
 
 ### Add the Azure Connector
 
-To add the Azure Connector to your LCS project, follow the steps in [Complete the Azure Resource Manager (ARM) onboarding process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
+To add the Azure Connector to your LCS project, follow the steps in [Complete the Azure Resource Manager (ARM) onboarding process](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### Deploy the environment
 
