@@ -87,6 +87,7 @@ While most forms will work well with saved views, there are some areas that may 
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
+-  The default view is global (not legal entity specific), so publishing a view to a specific legal entity as default will change the targeted users' global default view for the page
 -  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, (excluding the Quick Filter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.   
 -  Views should keep track of the last Quick Filter column used without having to explicitly save it to a view. 
 
