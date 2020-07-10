@@ -48,7 +48,7 @@ Customers will be able to take up to 8 service updates per year and are required
 |          Version          | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
 |:-------------------------:|:---------------------------:|:---------------------------------:|:----------------------------------------------:|:------------------:|
 | 10.0.11                   | April 17, 2020              | May 29, 2020                      | July 1, 2020              | September 11, 2020 |
-| 10.0.12                   | May 29, 2020                | July 10, 2020                     | August 1, 2020            | October 23, 2020   |
+| 10.0.12                   | May 29, 2020                | July 22, 2020                     | August 1, 2020            | October 23, 2020   |
 | 10.0.13                   | August 3, 2020              | September 18, 2020                | October 1, 2020           | December 4, 2020   |
 | 10.0.14                   | September 4, 2020           | October 23, 2020                  | November 1, 2020         | January 22, 2021   |
 | 10.0.15                   | October 9, 2020             | December 4, 2020                  | January 1, 2021          | March 19, 2021     |
