@@ -34,18 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can personalize the app.
+This topic explains how you can personalize the app and covers the following: 
 
-There are three basic classes of personalizations:
-
-As you use the app, many of your selections are stored to make the system easier for you to use in the future. To view and manage the personal changes that you've made to pages in the system, select **Personalization** on the Action pane of the **User options** page. 
-
-
-- **System-wide options**, which are made on a setup page. Examples include the color theme and time zone.
-- **Page usage** These *implicit* personalizations are small adjustments to the page that can be automatically remembered by the system and restored the next time you visit the page. Users are required to have at least restricted personalization access  For example, the system keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
-- Personalizations that a user makes to the appearance of a page by changing the way that an element appears or acts on that page, often through an interactive personalization mode. These personalizations are known as *explicit* personalizations. For example, the user might add, hide, or rearrange elements on the page.
-
-Every personalization that a user makes is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
+-  **System-wide options**. These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zome. 
+-  **Restricted personalization access** With this access level, user actions associated with typical page usage are automatically saved by the app and restored the next time you visit the page. For example, the app will remember the width of grid columns if you adjust them as well as the expanded or collapsed state of FastTabs. 
+-  **Full personalization access** With this access level, users have access to all personalization capabilities in the app, in particular the Personalization toolbar. 
+-  **Sharing personalizations** Users with full personalization access can export their page personalizations and share them other users.
+-  **Adminstration of personalizations** Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
 
 ## System-wide options for the current user
 
