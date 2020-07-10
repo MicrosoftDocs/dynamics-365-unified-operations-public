@@ -48,7 +48,9 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select your environment from the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to the Commerce Headquarters.
-1. Make sure that the **USRT** legal entity is selected in the upper-right corner and is selected during all post-provisioning configuration activities.
+1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
+
+During post-provisioning activities in Commerce Headquarters, make sure that **USRT** legal entity is always selected.
 
 ## Configure the point of sale in Headquarters
 
