@@ -104,10 +104,10 @@ more please refer to these resources:
 - [Create a simple security policy](create-simple-security-policy.md)
 
 - [Developing Extensible Data Security Policies (White paper) [AX
-2012]](https://technet.microsoft.com/en-us/library/hh272862.aspx)
+2012]](https://technet.microsoft.com/library/hh272862.aspx)
 
 - [Securing Data by Dimension Value by using Extensible Data Security (White
-paper) [AX 2012]](https://technet.microsoft.com/en-us/library/hh335188.aspx)
+paper) [AX 2012]](https://technet.microsoft.com/library/hh335188.aspx)
 
 ### From our MVPs:
 
