@@ -38,11 +38,11 @@ This topic covers media gallery modules and describes how to add them to site pa
 
 ## Overview
 
-Media gallery modules display one or more images in a gallery view. Media gallery modules support thumbnail images, which can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). Media gallery modules also provide capabilities that allow images to be zoomed on or viewed in full screen. To be rendered in a media gallery module, an image must be be available in the site builder Media Gallery. Currently media gallery modules only supports images.
+Media gallery modules display one or more images in a gallery view. Media gallery modules support thumbnail images, which can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). Media gallery modules also provide capabilities that allow images to be zoomed on or viewed in full screen. To be rendered in a media gallery module, an image must be be available in the site builder Media Gallery. Currently media gallery modules only support images.
  
-In the default mode, a media gallery module uses the product ID available from the page context (product details page) to render the corresponding product images. In Commerce headquarters, a media file path must be defined for all products. Images should then be uploaded to the Commerce site builder Media Library according to the file path that was defined for the products in headquarters. This includes images for products and product variants, if applicable. For more information on uploading images, see [Upload images](dam-upload-images.md).
+In the default mode, a media gallery module uses the product ID available from the page context of a product details page (PDP) to render the corresponding product images. In Commerce headquarters, a media file path must be defined for all products. Images should then be uploaded to the Commerce site builder Media Library according to the file path that was defined for the products in headquarters. This includes images for products and product variants, if applicable. For more information on uploading images to Media Gallery, see [Upload images](dam-upload-images.md).
 
-In addition, a media gallery module can host a fully curated set of images on an image gallery page with no dependencies on a product. Images would need to be uploaded to site builder Media Gallery. 
+Alternatively, a media gallery module can host a fully curated set of images on an image gallery page with no dependencies on product ID or page context. Images would need to be uploaded to site builder Media Gallery and specified in site builder. 
 
 Usage examples of media gallery modules:
 - A media gallery module can be used on a product details page (PDP) to render product images.
@@ -51,7 +51,7 @@ Usage examples of media gallery modules:
 
 The following image shows an example of a buy box on a product details page that hosts product images using a media gallery module.
 
-![Example of a Media gallery module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box on a product details page that hosts product images using a media gallery module](./media/ecommerce-pdp-buybox.PNG)
 
 ## Media gallery properties
 | Property name  | Values | Description |
@@ -66,11 +66,11 @@ The following image shows an example of a buy box on a product details page that
 
 The following image shows an example of a media gallery module with full screen and zoom options enabled.
 
-![Example of a Media gallery module](./media/ecommerce-media-zoom.png)
+![Example of a media gallery module with full screen and zoom options enabled](./media/ecommerce-media-zoom.png)
 
-The following image shows an example of a media gallery module on a page with curated images (not product images). 
+The following image shows an example of a media gallery module on a page with curated images (that is, specified images not dependent on product ID or page context). 
 
-![Example of a Media gallery module](./media/ecommerce-media-curated.PNG)
+![Example of a media gallery module on a page with curated images](./media/ecommerce-media-curated.PNG)
 
 ## Commerce Scale Unit interaction
 
