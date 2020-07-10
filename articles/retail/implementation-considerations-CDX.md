@@ -39,51 +39,58 @@ Before going through this document, it is important to know the concepts of a ch
 
 ### Important Headquarters forms
 The **Channel database** page is used to create, review, and edit the channel databases (Used in Commerce Scale Units (Both Cloud and Self-hosted)) and offline databases (Used with Modern POS).  Each database created here refers to a single, physical database (One to One mapping).  The channel or offline database is associated to a channel database group.  From this page, full synchronizations of a scheduler job can be created for a selected channel or offline database.
-Add image for this...
+[Channel database](./media/ChannelDatabase.png)
 
 The **Channel database group** page is used to create, review, and edit the channel database groups.  Each group is associated to one or more databases (channel or offline). The database group is responsible for gathering the relevant data (That is required by all channel and offline databases associated to the database group) necessary to be generated as part of the CDX data synchronization.
-Add image for this...
+[Channel database](./media/ChannelDatabaseGroup.png)
 
 The **Channel profile** page is used to create, review, and edit the channel profiles.  Each channel profile stores the URLs relevant to the network-based communication necessary within a channel.  A channel profile will typically have a Retail Server URL and a Cloud POS URL.  Additionally, frequently there will also be a Media Server Base URL (This URL is the internet addressable location of images used by POS, eCommerce, and other Dynamics 365 Commerce channels).  A channel profile is automatically generated for a Commerce Scale Unit (Cloud) but must be manually generated as part of the Commerce Scale Unit (Self-hosted) configuration and installation steps.
-Add image for this...
+[Channel database](./media/ChannelProfile.png)
 
 The **Offline profile** page is used to create, review, and edit the offline profiles.  Each offline profile allows a user to configure offline related settings, including configurations such as the ability to **allow manual switch to offline before sign-in**, **Enable advanced offline switching**, and **Pause offline synchronization**.  These feature configurations are discussed in this and related documents referenced at the end of this document.
-Add image for this...
+[Channel database](./media/OfflineProfile.png)
 
 The **Commerce channel schema** page is used to create, review, and edit the channel schemas.  By default, one schema is already created and available named **AX7**.  The channel schema is required to provide the means of "how" to read the Headquarters database for Commerce data.  This is also where the configuration is located to exclude customer related data from data synchronization to offline databases.  This feature will be discussed in this and other documents referenced at the end of this document.
-Add image for this...
+[Channel database](./media/ChannelSchema.png)
 
 The **Distribution schedule** page is used to create, review, and edit the distribution schedule jobs.  These schedule jobs associate which channel database groups will run the associated scheduler job (Detailed next).  A schedule job can be marked active and has a singular direction of data associated to it (Typically download, to send data down to the channels).  By default, all Commerce related jobs already exist and are prepared for use with any generated Commerce Scale unit (Cloud).  From this page, delta synchronizations can be created for a selected schedule job.
-Add image for this...
+[Channel database](./media/DistributionSchedule.png)
 
 The **Scheduler job** page is used to create, review, and edit the job selected from the schedule job.  This job has a series of associated subjobs.  This job also is associated to a channel schema (Typically the **AX7** schema originally created.  A job can be excluded from synchronization to offline databases.
-Add image for this...
+[Channel database](./media/SchedulerJob.png)
 
 The **Scheduler subjob** page is used to create, review, and edit the subjob.  A subjob is associated to one or more jobs (Seen via the scheduler job form).  A subjob is associated to a single table within the Headquarters database.  This subjob shows the channel field mapping, which lists all the related fields utilized within the database table.
-Add image for this...
+[Channel database](./media/SchedulerSubjob.png)
 
 The **Download sessions** and **Upload sessions** pages are used to review and edit download or upload sessions previously created through the data packages generated via the above described forms.  These forms showcase how many rows of data exist to be synchronized, when the data was made available and when it was synchronized, and the overall size of the data package.  These forms allow for some amount of management and troubleshooting of data packages, such as seeing what errors may have occurred and canceling or deleting jobs that are causing any issue.  This is described more in the [Best practices](CDX-Best-Practices.md) document.
 
+
 ### Data synchronization overview
 When a job is run (Scheduler job), the channel database group (Channel database group) selects the relevant data for all channel or offline databases (Channel database) associated to itself from the fields listed in the accumulated subjobs (Scheduler subjob.  The product of this selection of data is a data package.  Data packages is a file or files zipped together containing all previously selected data (or selected delta of data, typically) required to be applied to one or more destination databases (Whether that be a Channel database or Offline database).
-Add image to showcase this...
 
-**Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
-
-This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
+Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various forms are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
 **Insert data configuration flow diagram (Commerce Architecture - Forms flow (PNG, Need newer one))**
+[Channel database](./media/NAMENAMENAME.png)
 
 This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
 
-Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various forms are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
+**Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
+[Channel database](./media/NAMENAMENAME.png)
+
+This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
 
 ### Overview of package management
  - Review that packages are created and showcased in Download sessions
  - Review the logic around retry and cut (Need Daniel / Yonas assistance here)
  - 
 
-### Recent CDX related features (All available in 10.0.12 or above, some as old as 10.0.8)
+### Important CDX related features (All available in version 10.0.12 or above)
+| Feature name | Feature description |
+|--------------|---------------------|
+| Advanced offline | A series of configurations in the **Offline profile** to enable additional offline switching scenarios, the ability to switch to offline prior to POS login, and enhanced Headquarters availability testing to return to online status more easily. |
+| Advanced offline | A series of configurations in the **Offline profile** to enable additional offline switching scenarios, the ability to switch to offline prior to POS login, and enhanced Headquarters availability testing to return to online status more easily. |
+| Offline data exclusion | Also called Data sizing improvements, this feature set |
 
 **Generate a table of the features**
  - Advanced offline
@@ -136,3 +143,8 @@ This section describes some things that you should consider as you plan to imple
 
 *Link to CSU (Self-hosted) installer* LINK PENDING
 
+
+TABLE EXAMPLE
+| ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
+|----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
+| 707 | Activate device | Activate the current device by allowing an authenticated user to provide connection information and assign a device and register ID. | No | No | No | No | No |
