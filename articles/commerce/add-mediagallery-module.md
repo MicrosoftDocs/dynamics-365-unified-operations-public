@@ -56,12 +56,12 @@ The following image shows an example of a buy box on a product details page that
 ## Media gallery properties
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Image source   | Page context, Product ID| Default value is "Page context." If page context is selected, it expects the page to provide the product ID information. If "Product ID" is selected, the product ID for an image must be provided as the value for the "Product ID" property. This capability is available in Commerce version 10.0.12. |
-| Product ID    | ID  | Applicable only if the Image Source property value is Product ID. |
-| Image zoom    | Inline, Container | Allows the user to zoom on images in the media gallery. An image can be zoomed on inline, or in a separate container next to the image. This capability is available in 10.0.12 |
-| Zoom scale| Decimal number| This property specifies the scale factor for magnifying the images. For example, a value of "2.5" would mean that images would be magnified 2.5 times.|
+| Image source   | Page context, Product ID| Default value is "Page context." If page context is selected, the module expects the page to provide the product ID information. If "Product ID" is selected, the product ID for an image must be provided as the value for the "Product ID" property. This capability is available in Commerce version 10.0.12. |
+| Product ID    | *Product ID*  | Applicable only if the "Image source" property value is "Product ID". |
+| Image zoom    | Inline, Container | This property allows the user to zoom on images in the media gallery. An image can be zoomed on inline, or in a separate container next to the image. This capability is available in 10.0.12 |
+| Zoom scale| Decimal number| This property specifies the scale factor for magnifying images. For example, a value of "2.5" would mean that images would be magnified 2.5 times.|
 | Full screen   | True, False| This property specifies whether or not images can be viewed in full screen. In full screen mode, images can be also be further zoomed on if zoom is turned on. This capability is available in Commerce version 10.0.13. |
-| Images | Images | In addition to images rendered from a product, images can be also curated for this module. These images will be appended to the product images if available. This capability is available in Commerce version 10.0.12. |
+| Images | *Images selected from Media Gallery* | In addition to images rendered from a product, images can be also curated for this module. These images will be appended to the product images if available. This capability is available in Commerce version 10.0.12. |
 |Thumbnail orientation| Vertical, Horizontal| This property specifies whether thumbnail images should displayed in either a vertical or horizontal strip. |
 
 The following image shows an example of a media gallery module with full screen and zoom options enabled.
