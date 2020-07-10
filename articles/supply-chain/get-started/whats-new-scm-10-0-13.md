@@ -50,8 +50,6 @@ The following features are included in this release. The feature titles link to 
 
 - [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)
 
-- [Enhanced shop floor terminal for discrete manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)
-
 - [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)
 
 - [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enterprise-scale--inventory-performance-improvements-archiving)
