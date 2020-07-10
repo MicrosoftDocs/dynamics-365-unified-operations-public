@@ -75,6 +75,16 @@ You can use Supply Chain Management to visualize and modify the baseline forecas
 ## Limitations
 Demand forecasting is a tool that helps customers in the manufacturing industry create forecasting processes. It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended. Demand forecasting might not be the best fit for customers in industries such as commerce, wholesale, warehousing, transportation, or other professional services.
 
+### Demand forecast variant conversion limitation
+
+Unit of measure (UOM) per variant conversion is not fully supported when generating demand forecast if Inventory UOM is different than the Demand forecast UOM. 
+
+Generating forecast (Inventory UOM -> Demand forecast UOM) use product UOM conversion. When loading historical data for the demand forecast generation, the product level UOM conversion will be always used when converting from Inventory UOM to the Demand forecast UOM, even if there are conversions defined on the variant level. 
+
+First part of Authorizing forecast (Demand forecast UOM -> Inventory UOM) use Product UOM conversion and second part of Authorizing forecast (Inventory UOM -> Sales UOM) use the variant UOM conversion. When the generated demand forecast is authorized the conversion to Inventory UOM from Demand forecast UOM will be done using Product level UOM conversion. At the same time conversion between the Inventory unit and the Sales UOM will respect the variant level defined conversions.
+
+Note that the Demand forecast UOM does not have to have any specific meaning. It can be defined just as “Demand forecast unit”. And for each of the products you can define the conversion to be 1 – 1 with the Inventory UOM.
+
 Additional resources
 --------
 
