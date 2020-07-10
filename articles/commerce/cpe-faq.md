@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce evaluation environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,17 +34,17 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 
-**Can we use the Commerce evaluation environment as an e-commerce storefront for customers that currently implement Retail?**
+**Can we use the Commerce evaluation environment as an e-Commerce storefront for customers that currently implement Retail?**
 
-No. The Commerce evaluation environment is just the evaluation environment. If you require an environment for a customer that implements Retail, contact Microsoft.
+No. The Commerce evaluation environment is only for evaluation. If you require an environment for a customer that implements Retail, contact Microsoft.
 
-**Can the Commerce evaluation environment be used to provision the e-commerce features on top of an existing application/environment that implements Retail?**
+**Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**
 
-No. The Commerce evaluation environment is currently available only in new environments.
+No. The Commerce evaluation environment is currently only available in new environments.
 
-**What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
+**What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Lifecycle Services (LCS)?**
 
-Commerce is the only component that is hosted in your subscription. Other components such as Commerce  Scale Unit (CSU) and e-Commerce will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
+Commerce is the only component that is hosted in your subscription. Other components such as Commerce Scale Unit and Commerce will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
 
 **Which Azure geographies are currently supported for the Commerce evaluation environment?**
 
@@ -52,11 +52,11 @@ The Commerce evaluation environment can be deployed only in the North America ge
 
 **Is there a downloadable virtual hard disk (VHD) that has the complete OneBox virtual machine (VM) option?**
 
-Dynamics 365 Commerce Scale Unit (CSU) and e-Commerce are completely software as a service (SaaS) and must be cloud-hosted.
+Dynamics 365 Commerce and Commerce Scale Unit are completely software as a service (SaaS) and must be cloud-hosted.
 
 **How long can the Commerce evaluation environment be used?**
 
-The Commerce evaluation environment has a 30-day time limit from the date of provisioning e-Commerce.
+The Commerce evaluation environment has a 30-day time limit from the date of provisioning Commerce.
 
 **Can I extend the time limit for my Commerce evaluation environment?**
 
