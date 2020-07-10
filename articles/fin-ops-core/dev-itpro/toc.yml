@@ -1458,9 +1458,13 @@
           href: sysadmin/tasks/assign-users-security-roles.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
+        - name: Extensible data security policies
+          href: sysadmin/extensible-data-security-policies.md
+        - name: Create a simple security policy
+          href: sysadmin/create-simple-security-policy.md
       - name: Process automation
         href: sysadmin/process-automation.md
-      - name: Batch processing
+      - name: Batch proceCreate a simple security policyssing
         items:
         - name: Batch processing overview
           href: sysadmin/batch-processing-overview.md
