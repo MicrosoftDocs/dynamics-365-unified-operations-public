@@ -5,7 +5,7 @@ title: Provision a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 06/02/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Provision a Dynamics 365 Commerce evaluation environment
 
-
 [!include [banner](includes/banner.md)]
 
 This topic explains how to provision a Dynamics 365 Commerce evaluation environment.
@@ -39,7 +38,7 @@ This topic explains how to provision a Dynamics 365 Commerce evaluation environm
 Before you begin, we recommend that you take a quick scan through this topic to get an idea of what the process requires.
 
 > [!NOTE]
-> Commerce evaluation environments are not generally available and are granted to partners and customers on per request basis.
+> Commerce evaluation environments are not generally available and are granted to partners and customers on a per request basis.
 > Please reach out to your Microsoft partner contact for more information.
 
 ## Overview
@@ -56,12 +55,12 @@ The following prerequisites must be in place before you can provision your Comme
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
-- You have admin access to your Microsoft Azure subscription, or you're in contact with a subscription admin who can assist you if required.
+- You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
 - You have your Azure Active Directory (Azure AD) tenant ID available.
 - You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
 
-Please note that this list is not exhaustive and should you experience any issues, please reach out to your Microsoft partner contact for assistance.
+Please note that this list is not exhaustive. Should you experience any issues, please reach out to your Microsoft partner contact for assistance.
 
 ## Provision your Commerce evaluation environment
 
@@ -86,7 +85,7 @@ To create a new project in LCS, follow these steps.
 
 ### Add the Azure Connector
 
-Add Azure Connector to your project following the steps documented in [this](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) article.
+To add the Azure Connector to your LCS project, follow the steps in [Complete the Azure Resource Manager (ARM) onboarding process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### Deploy the environment
 
@@ -132,8 +131,7 @@ To initialize CSU, follow these steps.
 1. In the environment view on the right, select **Full details**. The environment details view appears.
 1. Under **Environment features**, select **Manage**.
 1. On the **Commerce** tab, select **Initialize**. The CSU initialization parameters view appears.
-1. In the **Region** field, select region that is the same or close to the region you deployed the environment to.
-1. Leave the **Version** field as is.
+1. In the **Region** field, select the region that is the same or close to the region to which you deployed the environment. Leave the **Version** field as is.
 1. Select **Initialize**.
 1. On the deployment confirmation page, verify that the details are correct, and then select **Yes**. The **Commerce management** view displays again, where the **Commerce** tab is selected. Your CSU has been queued for provisioning.
 1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
@@ -152,15 +150,15 @@ To initialize e-Commerce, follow these steps.
 
 1. Select **Next** to continue.
 1. In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.
-1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, then select the magnifying class icon to display the search results. Select the correct security group from the list.
-2.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, then select the magnifying class icon to display the search results. Select the correct security group from the list.
+1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass icon to display the search results. Select the correct security group from the list.
+2.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass icon to display the search results. Select the correct security group from the list.
 1. Leave the **Enable ratings and review service** option enabled ("Yes").
 1. Select **Initialize**. The **Commerce management** view displays again, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.
 1. Under **Links** in the lower right, make a note of the URLs for the following links:
 
     * **e-Commerce site** – The link to the root of your e-Commerce site.
-    * **e-Commerce site builder** – The link to the site management tool.
+    * **Commerce site builder** – The link to the site management tool.
 
 ## Next steps
 
