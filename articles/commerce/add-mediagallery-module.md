@@ -76,26 +76,28 @@ The following image shows an example of a media gallery module on a page with cu
 
 When the image source is derived from the page context, the product ID from the product details page is used to retrieve the images. The media gallery module retrieves the image file path for products by using Commerce Scale Unit application programming interfaces (APIs). The images are then pulled from the Media Library to render on the module.
 
-## Add an Image gallery to a page
+## Add a media gallery to a page
 
-To add a Image gallery module to a Buy Box, see [Buy Box module](add-buy-box.md)
+To add a media gallery module to a marketing page, follow these steps.
 
-To add an Image gallery module to a Marketing page,
-
-1. Go to **Templates**, and create a new template **Marketing template**
-1. In the Default page, add **Container**
-1. Finish editing and Publish
-1. Create a new page from the Marketing template call it **Image gallery page**
-1. To the Container, add **Media Gallery** module
-1. In the Module property panel, set Image Source as Product id
-1. In the Product id input box, provide a valid product id
-1. **Save** and **Preview**
-1. In Preview mode, you should be able to see the images for the product id in a gallery like view
-1. In the Media gallery,  Module property panel, using Images property add an additional image
-1. **Save** and **Preview**
-1. In Preview mode, you should be able to see the images for the product id and the additional curated image. If you want to use only curated images, set Image source as None.
-1. Set additional properties such as Zoom or Full screen etc as desired.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the **Marketing template** template. Under **Page name**, enter **Media gallery page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
+1. In the property pane for the media gallery module, select **Productid** under **Image source**, and then enter a product ID in the **Product id** field.
+1. Select **Save**, and then select **Preview** to preview the page. You should be able to see the images for the product in a gallery view.
+1. If you want to use only curated images, in the property pane select **Productid** under **Image source**, and then under **Images** select **Add an image** as many times as needed to add images from the Media Gallery.
+1. Set additional properties such as **Image zoom**, **Zoom factor**, and **Thumbnails orientation** as desired.
+1. When done, select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
