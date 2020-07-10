@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) inboun
 author: hhaines
 manager: annbe
 
-ms.date: 03/12/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -65,7 +65,7 @@ To configure an asynchronous document framework, complete the following procedur
 ### Create and schedule two batch jobs for the document processing and monitoring tasks
 
 > [!NOTE]
-> In version 10.0.13 and later, configuration of these batch jobs through the batch job framework is no longer necessary.  Starting in 10.0.13 release, these batch processes can now be configured from the **Retail and Commerce>Retail and Commerce IT** menu.  Please use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure these batch jobs
+> In Commerce version 10.0.13 and later, you don't have to configure these batch jobs through the batch job framework. The batch processes can be configured from the **Retail and Commerce  >Retail and Commerce IT** menu. Use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure the batch jobs.
 
 The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
 
