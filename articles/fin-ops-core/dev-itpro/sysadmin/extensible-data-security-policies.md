@@ -101,20 +101,19 @@ more please refer to these resources:
 
 ### From Microsoft:
 
-Create a simple Security policy: Securing access to Customers and Customer
-groups based on a range for Customer group
+- [Create a simple security policy](create-simple-security-policy.md)
 
-[Developing Extensible Data Security Policies (White paper) [AX
+- [Developing Extensible Data Security Policies (White paper) [AX
 2012]](https://technet.microsoft.com/en-us/library/hh272862.aspx)
 
-[Securing Data by Dimension Value by using Extensible Data Security (White
+- [Securing Data by Dimension Value by using Extensible Data Security (White
 paper) [AX 2012]](https://technet.microsoft.com/en-us/library/hh335188.aspx)
 
 ### From our MVPs:
 
-[Extensible Data Security examples – by Andre Arnaud De
+- [Extensible Data Security examples – by Andre Arnaud De
 Calavon](https://dynamicspedia.com/tag/xds/)
 
-[Extensible Data Security (XDS) Framework in D365FO - by Alex
+- [Extensible Data Security (XDS) Framework in D365FO - by Alex
 Meyer](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-framework-in-d365fo/)
 
