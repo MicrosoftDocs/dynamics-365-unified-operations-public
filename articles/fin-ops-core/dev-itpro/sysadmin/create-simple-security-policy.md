@@ -38,7 +38,7 @@ Creating a query for the policy
     project/solution. The query will be used to restrict data access from the
     Constraint table:
 
-![](media/71c5206330564e8c2612a61a5a211dba.png)
+![Add a new query](media/71c5206330564e8c2612a61a5a211dba.png)
 
 >   A screenshot of a social media post Description automatically generated
 
@@ -56,7 +56,7 @@ Creating a query for the policy
 6.  In the **Value field**, enter ‘10’ to restrict access to data where
     CustGroup has value 10, by defining the Range for the CustGroup field:
 
-![](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
+![In the Value field, enter 10](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
@@ -64,7 +64,7 @@ Creating a query for the policy
 
 1.  Add a new Security policy, e.g. XDSCustTableOnCustGroup10:
 
-![](media/118355845fa679f8f004e516f0691cff.png)
+![Add a security policy](media/118355845fa679f8f004e516f0691cff.png)
 
 >   A screenshot of a social media post Description automatically generated
 
@@ -88,14 +88,14 @@ Creating a query for the policy
     to RoleName for this policy, it is required to enter the AOT name for a user
     role.
 
-![](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
+![In the Role Name field, enter TradeSalesClerk](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
 1.  Next add constrained table(s). In the simple example we will just add one
     table:
 
-![](media/e366725fa084d308b7f02a89a3e6175b.png)
+![Add constrained tables](media/e366725fa084d308b7f02a89a3e6175b.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
