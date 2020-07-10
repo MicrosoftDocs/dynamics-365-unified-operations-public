@@ -65,6 +65,9 @@ To configure an asynchronous document framework, complete the following procedur
 
 ### Create and schedule two batch jobs for the document processing and monitoring tasks
 
+> [!NOTE]
+> In version 10.0.13 and later, configuration of these batch jobs through the batch job framework is no longer necessary.  Starting in 10.0.13 release, these batch processes can now be configured from the **Retail and Commerce>Retail and Commerce IT** menu.  Please use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure these batch jobs
+
 The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
 
 1. Go to **System Administration \> Inquiries \> Batch jobs**.
