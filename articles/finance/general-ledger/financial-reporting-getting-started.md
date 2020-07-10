@@ -152,11 +152,11 @@ Issue 2: The user hasn't been assigned the required permissions to use Financial
 * Required permissions are listed above in the topic [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
 * The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. <br>
 If someone else can open Report Designer, click **Tools**, and then click **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully since you were assigned permission to use Financial Reporting. 
-* It's also possible that another error has prevented the **Dynamics user to Financial Reporting user integration** from finishing, that a datamart reset has been initiated and not yet completed, or that another system error has occurred. 
+* It's also possible that another error has prevented the **Dynamics user to Financial Reporting user integration** from finishing, that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
 
-Issue 3: User can proceed past the login page but are unable to complete login within Report Designer. 
-* The time set on the click of the local computer must be within 5 minutes of the time on the Financial Reporting server. If there is a difference of more than 5 minutes, the system will not allow login. 
-* In this case, it is recommended to enable the Windows option to set time automatically. 
+Issue 3: You can proceed past the ClickOnce Report Designer popup login page, but are unable to complete login within Report Designer. 
+* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow login. 
+* In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
 
 ## Additional resources
