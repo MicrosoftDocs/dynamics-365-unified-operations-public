@@ -61,7 +61,7 @@ The following prerequisites must be in place before you can provision your Comme
 - You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
 
-Please note that this list is not exhaustive and should you experience any issues, please reach out to your Microsoft contact for assistance.
+Please note that this list is not exhaustive and should you experience any issues, please reach out to your Microsoft partner contact for assistance.
 
 ## Provision your Commerce evaluation environment
 
