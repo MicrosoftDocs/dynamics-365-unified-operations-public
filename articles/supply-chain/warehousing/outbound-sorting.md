@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound sorting
-description: Outbound sorting makes it easier to handle small containers and will enable warehouse workers to better plan and organize pallet capacity within the truck.
+description: This topic provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
 author: Mirzaab
 manager: tfehr
 ms.date: 06/10/2020
@@ -31,182 +31,202 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This functionality makes it easier to handle small containers and will enable warehouse workers to better plan and organize pallet capacity within the truck.
+This functionality makes it easier to handle small containers and helps warehouse workers better plan and organize pallet capacity in the truck. When you use outbound sorting, you can sort packed containers to the correct pallet after they have been at a packing station. You can also build a packing hierarchy.
 
-With outbound sorting, you can sort packed containers to the correct pallet after a packing station and build a packing hierarchy.
+This functionality lets you build pallets from containers that are packed through the packing functionality. The container isn't sent to the final shipping location as it is in the original packing flow. Instead, workers can close the container and move it to a sort type location. They can then sort containers to positions, each of which has a license plate (LP). After the containers have been sorted, work can be created to send the whole LP to the final shipping dock or stage locations, based on location directives or your own requirements. Additionally, the action of closing of the sort position can immediately move the inventory to the final shipping location and pick it to the order.
 
-This functionality lets you build pallets from containers packed through the packing functionality. The container is not sent to the final shipping location as it would be in the original packing flow. Instead, this functionality allows workers to close the container and move it to a sort type location. They can then sort containers onto positions, each position has a license plate. Once the containers have been sorted, work can be created to send the whole license plate to the final shipping dock or stage locations based on location directives of your own requirements. The closing of the sort position can also immediately move the inventory to the final shipping location and pick it to the order.
+## Turn on the Outbound sorting feature
 
-## Enable the Outbound sorting feature
+Before you can use the feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - *Warehouse management*
-- **Feature name** - *Outbound sorting*
+- **Module:** *Warehouse management*
+- **Feature name:** *Outbound sorting*
 
 ## Setup
 
-For this scenario, you must use standard **USMF** demo data with Warehouse 62 and make the additional set up steps noted below.
+For this scenario, you must use standard **USMF** demo data and warehouse *62*. You must also complete the setup that is described in the following subsections.
 
 ### Set up a wave template
 
-This setting automatically processes the Wave and creates work when a line is released to the warehouse.
+This setup automatically processes the wave and creates work when a line is released to the warehouse.
 
-1. Go to **Warehouse management > Setup > Waves > Wave templates**.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. In the template list, select **Warehouse 62**.
-1. Ensure that in the **General** FastTab, **Process wave at release to warehouse** is set to **Yes**.
+1. On the **General** FastTab, make sure that the **Process wave at release to warehouse** option is set to *Yes*.
 
 ### Set up a worker
 
-The packing station is seen as a location. When the warehouse workers are logging in at the packing station, they will only see and operate on shipments and containers that are planned at the specific packing location. The user signing into Dynamics 365 must be set up as a **Worker** in Warehouse management. If the user's name doesn't appear in the list of work users, use the following procedure to add them.
+The packing station is considered a location. Warehouse workers who sign in at the packing station see and work on only shipments and containers that are planned at that specific packing location. A user who signs in to Microsoft Dynamics 365 must be set up as a worker in Warehouse management. If the user's name doesn't appear in the list of work users, use the following procedure to add it.
 
->[!NOTE]
->These steps assume that the user already exists in the system and has been associated as an employee or worker in the Human Resources module.
+> [!NOTE]
+> These steps assume that the user already exists in the system and has been associated as an employee or worker in the **Human Resources** module.
 
-1. Go to **Warehouse management > Setup > Worker**.
+1. Go to **Warehouse management \> Setup \> Worker**.
 1. Select **New**.
-1. Open the **Worker** drop-down list to open the list of employees and select the target user.
-1. Select the **Select** button.
-1. Select **Save** on the Action Pane.
-1. On the **Users** FastTab toolbar, select **New** to create a mobile device account and make the following settings for it:
-    - **User ID** - Enter a unique ID
-    - **User name** - Enter a name for the ID
-    - **Default warehouse** - *62*
-    - **Menu name** - *Main*
-1. Select **Save** on the Action Pane.
+1. In the **Worker** field, select the target user in the list of employees.
+1. Select **Select**.
+1. On the Action Pane, select **Save**.
+1. On the **Users** FastTab, select **New** to create a mobile device account, and set the following values for it:
 
-1. The **Set password** dialog box opens, which lets you create a simple password for the user to log in to the mobile app.
-    - **Password** - Enter a simple password
-    - **Confirm password** - Enter the same password again
+    - **User ID:** Enter a unique ID.
+    - **User name:** Enter a name for the ID.
+    - **Default warehouse:** *62*
+    - **Menu name:** *Main*
 
-1. Select **Set password**, a notification is sent to the Action center stating that the password has been set for user that your created.
+1. On the Action Pane, select **Save**.
+1. The **Set password** dialog box appears, where you can create a simple password that the user can use to sign in to the mobile app. Set the following values:
+
+    - **Password:** Enter a simple password.
+    - **Confirm password:** Enter the same password again.
+
+1. Select **Set password**.
+
+    A notification in the Action Center informs you that the password has been set for the user that you created.
 
 ### Create a location type
 
-1. Go to **Warehouse management > Setup > Warehouse > Location types**.
-1. Select **New** on the Action Pane.
-1. Enter the following to create new location type:
-    - **Location type** - *SORT*
-    - **Description** - *Sort*
-1. Select **Save** on the Action Pane.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location types**.
+1. On the Action Pane, select **New** to create a location type, and set the following values for it:
 
-### Set up warehouse management parameters
+    - **Location type:** *SORT*
+    - **Description:** *Sort*
 
-1. Go to **Warehouse management > Setup > Warehouse management parameters**.
-1. Select **General** tab and expand the **Location types** FastTab.
-1. Set **Sorting location type** to *SORT*.
-1. Select **Save** on the Action Pane.
+1. On the Action Pane, select **Save**.
+
+### Set up Warehouse management parameters
+
+1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. On the **General** tab, on the **Location types** FastTab, set the **Sorting location type** field to *SORT*.
+1. On the Action Pane, select **Save**.
 
 ### Set up a location profile
 
-1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
-1. Select **New** on the Action Pane.
-1. Enter the following in the header:
-    - **Location profile ID** – *Sorting*
-    - **Name** – *Sorting*
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
+1. On the Action Pane, select **New**.
+1. In the header, set the following values:
 
-1. On the **General** FastTab, make the following settings:
-    - **Location format** – *ASRB* (Aisle-Rack-Shelf-Bin)
-    - **Location type** – *SORT*
-    - **Use license plate tracking** – *Yes*
-    - **Allow mixed items** – *Yes* (**Allow mixed inventory batches** - is automatically changed to *Yes* and can't be changed independently.)
+    - **Location profile ID:** *Sorting*
+    - **Name:** *Sorting*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Location format:** *ASRB* (Aisle-Rack-Shelf-Bin)
+    - **Location type:** *SORT*
+    - **Use license plate tracking:** *Yes*
+    - **Allow mixed items:** *Yes* (When you set this option to *Yes*, the **Allow mixed inventory batches** option is automatically set to *Yes* and can't be changed independently.)
 
 1. Select **Save**.
 
 ### Set up a location
 
-1. Go to **Warehouse management > Setup > Warehouse > Locations**.
-1. Unselect **Generate check digits for location** in the header.
-1. Select **New** from the Action Pane to create a new *Location*. Enter the following:
-    - **Warehouse** – *62*
-    - **Location** – *SORT*
-    - **Location profile ID** – *SORTING*
+1. Go to **Warehouse management \> Setup \> Warehouse \> Locations**.
+1. In the header, clear the **Generate check digits for location** check box.
+1. On the Action Pane, select **New** to create a location, and set the following values for it:
+
+    - **Warehouse:** *62*
+    - **Location:** *SORT*
+    - **Location profile ID:** *SORTING*
 
 1. Select **Save**.
 
 ### Set up an outbound sorting template
 
-The outbound sorting template determines if work will be created out of the sort location and how sorting will take place, either manually or automatically.
+The outbound sorting template determines whether work is created out of the sort location, and whether sorting is done manually or automatically.
 
-For this scenario, you will create an outbound sorting template for pallet building after the packing station.
+For this scenario, you will create an outbound sorting template to build pallets after the packing station.
 
-1. Go to **Warehouse Management > Setup > Packing > Outbound sorting template**.
-1. Select **New** on the Action Pane.
-1. In the header of the new template, enter the following:
-    - **Outbound sorting template ID** – *AutoWork*
-    - **Description** – *Auto Work Creation*
-    - **Outbound sorting template type** – *Container*
-    - **Warehouse** - *62*
-    - **Location** – *SORT*
-1. On the **General** FastTab, enter the following:
-    - **Sort verification** – *Position scan*
-    - **Create work on position close** – *Yes*  
-        When this is enabled, work will be created when the position is closed to move inventory to the final shipping location. When disabled, inventory will be immediately picked to the order at the time of position close.
-    - **Position assignment** - *Automatic*  
-        When set to *Manual*, the user must always indicate which position the inventory should be sorted to. When set to *Automatic*, the system will automatically guide the inventory to a position when possible, based on the sort template breaks.
+1. Go to **Warehouse Management \> Setup \> Packing \> Outbound sorting template**.
+1. On the Action Pane, select **New**.
+1. In the header of the new template, set the following values:
 
-1. Select **Save** to enable **Edit query**.
-1. On the Action Pane, select **Edit Query** to open the query editor. Go to the **Sorting** tab and add a new line with the following settings:
-    - **Table** – *Shipments*
-    - **Derived table** – *Shipments*
-    - **Field** – *Carrier service*  
-        Select **Yes** if you see the message: "Field Carrier service is not an index field. Do you want to add sorting on this?"
-    - **Search direction** – *Ascending*
+    - **Outbound sorting template ID:** *AutoWork*
+    - **Description:** *Auto Work Creation*
+    - **Outbound sorting template type:** *Container*
+    - **Warehouse:** *62*
+    - **Location:** *SORT*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Sort verification:** *Position scan*
+    - **Create work on position close:** *Yes*
+
+        If this option is set to *Yes*, when the position is closed, work will be created to move inventory to the final shipping location. If it's set to *No*, inventory will immediately be picked to the order when the position is closed.
+
+    - **Position assignment:** *Automatic*
+
+        If this field is set to *Manual*, the user must always indicate which position the inventory should be sorted to. If it's set to *Automatic*, the system will automatically guide the inventory to a position whenever it can, based on the sort template breaks.
+
+1. Select **Save** to make the **Edit query** button on the Action Pane available.
+1. On the Action Pane, select **Edit Query**.
+1. In the query editor, on the **Sorting** tab, add a line that has the following values:
+
+    - **Table:** *Shipments*
+    - **Derived table:** *Shipments*
+    - **Field:** *Carrier service*
+
+        When you select this value, you might receive the following message: "Field Carrier service is not an index field. Do you want to add sorting on this?" Select **Yes**.
+
+    - **Search direction:** *Ascending*
 
 1. Select **OK**.
-    - Select **Yes** if you see the message: "Grouping will be reset, continue?"
-    - This will enable the **Outbound sorting template breaks** button on the Action Pane.
+1. You might receive the following message: "Grouping will be reset, continue?" Select **Yes**.
 
-1. Select **Outbound sorting template breaks** on the Action Pane. The **Outbound sorting criteria** dialog box opens. Make the following selection:
-    - **Reference table name** - *Shipments*
-    - **Reference field name** - *Carrier service*
-    - Select the **Group by field** check box to group shipments by Carrier service.
+    The **Outbound sorting template breaks** button on the Action Pane becomes available.
 
-1. Select **OK** to save you settings and close the dialog box.
+1. On the Action Pane, select **Outbound sorting template breaks**.
+1. In the **Outbound sorting criteria** dialog box, set the following values:
+
+    - **Reference table name:** *Shipments*
+    - **Reference field name:** *Carrier service*
+    - **Group by field:** Select this check box to group shipments by carrier service.
+
+1. Select **OK** to save your settings and close the dialog box.
 
 ### Set up container packing policies
 
-1. Go to **Warehouse management > Setup > Containers > Container packing policies**.
-1. Select **New** on the Action Pane.
-1. In the header enter the following:
-    - **Container packing policy** – *Sort*
-    - **Description** – *Sort*
+1. Go to **Warehouse management \> Setup \> Containers \> Container packing policies**.
+1. On the Action Pane, select **New**.
+1. In the header of the new policy, set the following values:
 
-1. On the **Overview** FastTab, enter the following:
-    - **Warehouse** – *62*
-    - **Default location for sorting** – *SORT*
-    - **Weight unit** – *kg*
-    - **Container closing policy** – *Automatic release*
-    - **Container release policy** – *Assign container to outbound sorting position*
+    - **Container packing policy:** *Sort*
+    - **Description:** *Sort*
+
+1. On the **Overview** FastTab, set the following values:
+
+    - **Warehouse:** *62*
+    - **Default location for sorting:** *SORT*
+    - **Weight unit:** *kg*
+    - **Container closing policy:** *Automatic release*
+    - **Container release policy:** *Assign container to outbound sorting position*
 
 1. Select **Save**.
 
 ### Set up packing profiles
 
-Create a new packing profile to be used with sorting functionality.
+Create a new packing profile that will be used together with the sorting functionality.
 
-1. Go to **Warehouse management > Setup > Packing > Packing profiles**.
-1. On the Action Pane select **New**.
-1. In the new line created, enter the following:
-    - **Packing profile ID** – *Sort*
-    - **Description** – *Sort*
-    - **Container packing policy** - *Sort*
-    - **Container ID mode** – *Auto*
-    - **Container type** – *Box-Large*
-    - **Auto create container at container close** – *No* (unselected)
+1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
+1. On the Action Pane, select **New** to create a line, and set the following values for it:
+
+    - **Packing profile ID:** *Sort*
+    - **Description:** *Sort*
+    - **Container packing policy:** *Sort*
+    - **Container ID mode:** *Auto*
+    - **Container type:** *Box-Large*
+    - **Auto create container at container close:** *No* (unselected)
 
 1. Select **Save**.
 
-### Work classes
+### Set up work classes
 
-Set up a work class to be used with sorting.
+Set up a work class that will be used together with sorting.
 
-1. Go to **Warehouse management > Setup > Work > Work classes**.
-1. Select **New** from the Action Pane.
-and create new Work class for Sorting:
-    - **Work class ID** – *Sort*
-    - **Description** – *Sort*
-    - **Work order type** – *Sorted inventory picking*
+1. Go to **Warehouse management \> Setup \> Work \> Work classes**.
+1. On the Action Pane, select **New** to create a work class for sorting, and set the following values for it:
+
+    - **Work class ID:** *Sort*
+    - **Description:** *Sort*
+    - **Work order type:** *Sorted inventory picking*
 
 1. Select **Save**.
 
@@ -216,406 +236,438 @@ and create new Work class for Sorting:
 
 Create a mobile device menu item to build pallets during sorting.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
-1. Select **New** from the Action Pane.
-1. In the header, enter the following:
-    - **Menu item name** – *Pallet build*
-    - **Title** – *Pallet build*
-    - **Mode** – *Indirect*
-    - **Use existing work** – *No*
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New**.
+1. In the header, set the following values:
 
-1. On the **General** FastTab, enter the following:
-    - **Activity code** – *Outbound sorting*  
-        When selected, the **Outbound sorting template ID** field is displayed.
-    - **Use process guide** - *Yes*  
-        When **Activity code** is set to *Outbound sorting*, this is automatically set to *Yes*.
-    - **Outbound sorting template ID** – *AutoWork*
+    - **Menu item name:** *Pallet build*
+    - **Title:** *Pallet build*
+    - **Mode:** *Indirect*
+    - **Use existing work:** *No*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Outbound sorting*
+
+        When this field is set to *Outbound sorting*, the **Outbound sorting template ID** field is shown.
+
+    - **Use process guide:** *Yes*
+
+        When the **Activity code** field is set to *Outbound sorting*, this option is automatically set to *Yes*.
+
+    - **Outbound sorting template ID:** *AutoWork*
 
 1. Select **Save**.
 
 #### Set up a new loading menu item
 
-This menu item allows users to move the sorted inventory items to the shipping location.
+Next, create a menu item that lets users move the sorted inventory items to the shipping location.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
-1. Select **New** from the Action Pane.
-1. In the header, enter the following:
-    - **Menu item name** – *Load from Sorting*
-    - **Title** – *Load from Sorting*
-    - **Mode** – *Work*
-    - **Use existing work** – *Yes*
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New**.
+1. In the header, set the following values:
 
-1. On the **General** FastTab, set **Directed by** to *User directed*.
+    - **Menu item name:** *Load from Sorting*
+    - **Title:** *Load from Sorting*
+    - **Mode:** *Work*
+    - **Use existing work:** *Yes*
 
-1. On the **Work classes** toolbar, select **New** and enter the following:
-    - **Work class ID** - *SORT*
-    - **Work order type** - *Sorted inventory picking*
+1. On the **General** FastTab, set the **Directed by** field to *User directed*.
+1. On the **Work classes** FastTab, select **New**, and then set the following values:
+
+    - **Work class ID:** *SORT*
+    - **Work order type:** *Sorted inventory picking*
 
 1. Select **Save**.
 
 ### Set up the mobile device menu
 
-Now you must add the new menu items to the mobile device menu. Do the following:
+You must now add the new menu items to the mobile device menu.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. Select the **Outbound** menu.
-1. Select **Edit** from the Action Pane.
-1. Locate and select **Pallet build** in the **Available menus and menu items** column.
-1. Select the right-arrow button ( **→** ) to move **Pallet build** to the **Menu structure** column.
-1. Use the up and down arrows to place the **Pallet build** item at the desired position on the mobile device menu.
+1. On the Action Pane, select **Edit**.
+1. In the **Available menus and menu items** column, find and select **Pallet build**.
+1. Select the right arrow button to move **Pallet build** to the **Menu structure** column.
+1. Use the up arrow and down arrow buttons to put the **Pallet build** menu item in the desired position on the mobile device menu.
 1. Select **Save**.
-1. Repeat this procedure to add **Load from Sorting** to the **Outbound** menu.
+1. Repeat this procedure to add the **Load from Sorting** menu item to the **Outbound** menu.
 
 ### Set up location directives
 
-*Location directives* are rules that help identify pick and put locations for inventory movement. Create a rule to manage the sorting work.
+*Location directives* are rules that help identify pick and put locations for inventory movement. You must now create a rule to manage the sorting work.
 
 #### Set up a single-SKU directive
 
-1. Go to **Warehouse management > Setup > Location directives**.
-1. In the directives list, change **Work order type** to *Sorted inventory picking*.
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the left pane, change the value of the **Work order type** field to *Sorted inventory picking*.
 1. On the Action Pane, select **New**.
-1. In the header enter the following:
-    - **Sequence** – *1*
-    - **Name** – *Baydoor*
+1. In the header, set the following values:
 
-1. On the **Location directives** FastTab, enter the following:
-    - **Work type** – *Put*
-    - **Site** – *6*
-    - **Warehouse** – *62*
-    - **Multiple SKU** - *No*
+    - **Sequence:** *1*
+    - **Name:** *Baydoor*
 
-1. Select **Save** to enable the **Lines** FastTab toolbar.
-1. On the **Lines** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
-    - **Sequence** – *1*
-    - **From** – *0*
-    - **To** – *1,000,000*
-    - Accept the defaults for the remaining fields.
+1. On the **Location directives** FastTab, set the following values:
 
-1. Select **Save** to enable the **Location Directive Actions** FastTab toolbar.
-1. On the **Location directive actions** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
-    - **Sequence** – *1*
-    - **Name** – *Baydoor*
-    - Accept the defaults for the remaining fields.
+    - **Work type:** *Put*
+    - **Site:** *6*
+    - **Warehouse:** *62*
+    - **Multiple SKU:** *No*
 
-1. Select **Save**
-1. On the **Location directive actions** FastTab, select **Edit query**.
-1. The query editor opens. On the **Range** tab, find the row where **Field** = *Location* and set its **Criteria** to *Baydoor*.
-1. Select **OK** to save your setting and close the query editor.
+1. Select **Save** to make the toolbar on the **Lines** FastTab available.
+1. On the **Lines** FastTab, select **New**, and then set the following values on the new line. Accept the default values for all the other fields.
+
+    - **Sequence:** *1*
+    - **From:** *0*
+    - **To:** *1,000,000*
+
+1. Select **Save** to make the toolbar on the **Location Directive Actions** FastTab available.
+1. On the **Location Directive Actions** FastTab, select **New**, and then set the following values on the new line. Accept the default values for all the other fields.
+
+    - **Sequence:** *1*
+    - **Name:** *Baydoor*
+
+1. Select **Save**.
+1. On the **Location Directive Actions** FastTab, select **Edit query**.
+1. In the query editor, on the **Range** tab, find the row where the **Field** field is set to *Location*. Set the **Criteria** field for this row to *Baydoor*.
+1. Select **OK** to save your settings and close the query editor.
 
 #### Set up a multiple-SKU directive
 
-1. Go to **Warehouse management > Setup > Location directives**
-1. In the directives list, change **Work order type** to *Sorted inventory picking*.
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the left pane, change the value of the **Work order type** field to *Sorted inventory picking*.
 1. On the Action Pane, select **New**.
-1. In the header enter the following:
-    - **Sequence** – *2*
-    - **Name** – *Baydoor Multi*
+1. In the header, set the following values:
 
-1. On the **Location directives** FastTab, enter the following:
-    - **Work type** – *Put*
-    - **Site** – *6*
-    - **Warehouse** – *62*
-    - **Multiple SKU** - *Yes*
+    - **Sequence:** *2*
+    - **Name:** *Baydoor Multi*
 
-1. Select **Save** to enable the **Lines** FastTab toolbar.
-1. On the **Lines** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
-    - **Sequence** – *1*
-    - **From** – *0*
-    - **To** – *1,000,000*
-    - Accept the defaults for the remaining fields.
+1. On the **Location directives** FastTab, set the following values:
 
-1. Select **Save** to enable the **Location Directive Actions** FastTab toolbar.
-1. On the **Location directive actions** FastTab toolbar, select **New** on the Action Pane and enter the following on the new line:
-    - **Sequence** – *1*
-    - **Name** – *Baydoor Multi*
-    - Accept the defaults for the remaining fields.
+    - **Work type:** *Put*
+    - **Site:** *6*
+    - **Warehouse:** *62*
+    - **Multiple SKU:** *Yes*
 
-1. Select **Save**
-1. On the **Location directive actions** FastTab toolbar, select **Edit query**.
-1. The query editor opens. On the **Range** tab, find the row where **Field** = *Location* and set its **Criteria** to *Baydoor*.
-1. Select **OK** to save your setting and close the query editor.
+1. Select **Save** to make the toolbar on the **Lines** FastTab available.
+1. On the **Lines** FastTab, select **New**, and then set the following values on the new line. Accept the default values for all the other fields.
+
+    - **Sequence:** *1*
+    - **From:** *0*
+    - **To:** *1,000,000*
+
+1. Select **Save** to make the toolbar on the **Location Directive Actions** FastTab available.
+1. On the **Location Directive Actions** FastTab, select **New**, and then set the following values on the new line. Accept the default values for all the other fields.
+
+    - **Sequence:** *1*
+    - **Name:** *Baydoor Multi*
+
+1. Select **Save**.
+1. On the **Location Directive Actions** FastTab, select **Edit query**.
+1. In the query editor, on the **Range** tab, find the row where the **Field** field is set to *Location*. Set the **Criteria** field for this row to *Baydoor*.
+1. Select **OK** to save your settings and close the query editor.
 
 ### Set up work templates
 
-1. Go to **Warehouse management > Setup > Work > Work templates**
-1. Change the **Work order type** to *Sorted inventory picking*.
-1. Select **New** from the Action Pane to create a new work template
-1. On the **Overview** tab, enter the following:
-    - **Sequence** – *1*
-    - **Work template** – *Sort*
-    - **Work template description** – *Sort*
+1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
+1. Change the value of the **Work order type** field to *Sorted inventory picking*.
+1. On the Action Pane, select **New** to create a work template.
+1. On the **Overview** tab, set the following values:
 
-1. Select **Save** to enable the *Work Template Details*
-1. In **Work Template Details** select **New** to add a new line and enter the following for it:
-    - **Work type** - *Pick*
-    - **Work class ID** - *SORT*
+    - **Sequence:** *1*
+    - **Work template:** *Sort*
+    - **Work template description:** *Sort*
 
-1. In **Work Template Details** select **New** to a second new line and enter the following for it:
-    - **Work type** - *Put*
-    - **Work class ID** - *SORT*
+1. Select **Save** to make the **Work Template Details** FastTab available.
+1. On the **Work Template Details** FastTab, select **New** to add a line, and then set the following values for it:
+
+    - **Work type:** *Pick*
+    - **Work class ID:** *SORT*
+
+1. Select **New** again to add a second line, and then set the following values for it:
+
+    - **Work type:** *Put*
+    - **Work class ID:** *SORT*
 
 1. Select **Save**.
 
 ## Scenario
 
-This scenario will simulate a situation where the packed containers should be automatically sorted to different positions (pallets) after the packing station, based on the shipping carrier service. After all items from the load are packed and sorted by address, the pallets will be moved to the baydoor.
+This scenario simulates a situation where packed containers should automatically be sorted to different positions (pallets) after the packing station, depending on the shipping carrier service. After all items from the load are packed and sorted by address, the pallets will be moved to the bay door.
 
 ### Create sales orders and picking work
 
 #### Create sales order 1
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**
-1. Select **New** on the Action Pane.
-1. The **Create sales order** dialog box opens. Enter the following:
-    - **Customer account** = *US-005*
-    - **Warehouse** = *62*
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. On the Action Pane, select **New**.
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-005*
+    - **Warehouse:** *62*
 
 1. Select **OK** to close the dialog box.
-1. Your new sales order opens.
-1. Select the **Header** section tab and then expand the **Delivery** FastTab. Enter the following in the **Transportation** section:
-    - **Shipping carrier** - *Air cargo*
-    - **Carrier service** - *Air*
 
-1. Select the **Lines** section tab.
-1. If a new line is not automatically opened, select **Add line** on the **Sales order lines** FastTab toolbar. Enter the following values for the new line:
-    - **Item number** - *A0001*
-    - **Quantity** - *2*
+    The new sales order is opened.
 
-1. With the new order line still selected, open the **Inventory** menu the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
-1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+1. Switch to the **Header** view.
+1. On the **Delivery** FastTab, in the **Transportation** section, set the following values:
 
-1. Close the **Reservation** page to return to your sales order.
-1. On the Action Pane, open the **Warehouse** tab and, from the **Actions** group, Select **Release to warehouse**.
-1. An informational message displays with the shipment and wave for this order. Note the **Wave ID** and **Shipment ID** numbers.  
+    - **Shipping carrier:** *Air cargo*
+    - **Carrier service:** *Air*
+
+1. Switch to the **Lines** view.
+1. If a new, empty line isn't automatically added to the grid on the **Sales order lines** FastTab, select **Add line** to add one.
+1. On the new order line, set the following values:
+
+    - **Item number:** *A0001*
+    - **Quantity:** *2*
+
+1. While the new order line is still selected on the **Sales order lines** FastTab, on the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, select **Reserve lot** to reserve the full quantity of the selected line in the warehouse.
+1. Close the **Reservation** page to return to the sales order.
+1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
+1. You receive an informational message that shows the shipment and wave for this order. Make a note of the wave ID and shipment ID numbers.
 
 #### Sales order 2
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
-1. Select **New** from the Action Pane.
-1. On the **Create sales order dialog box, enter the following:
-    - **Customer account** = *US-006*
-    - **Warehouse** = *62*
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. On the Action Pane, select **New**.
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-006*
+    - **Warehouse:** *62*
 
 1. Select **OK** to close the dialog box.
-1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** table. Enter the following values for this first order line:
-    - **Item** - *A0001*
-    - **Quantity** - *1*
+1. The new sales order is opened. It should include a new, empty line in the grid on the **Sales order lines** FastTab. Set the following values on this order line:
 
-1. Expand the **Line details** FastTab and open its **Delivery** tab. Then set **Mode of delivery** to *Flowe-STD*.
+    - **Item:** *A0001*
+    - **Quantity:** *1*
 
-1. On the **Sales order lines** FastTab toolbar, select **Add line** and enter the following values for the second order line:
-    - **Item** - *A0002*
-    - **Quantity** - *1*
+1. On the **Line details** FastTab, on the **Delivery** tab, set the **Mode of delivery** field to *Flowe-STD*.
+1. On the **Sales order lines** FastTab, select **Add line**, and then set the following values on the second order line:
 
-1. On the **Line details** FastTab select the **Delivery** tab and change the **Mode of delivery** to *Air C-Air*.
+    - **Item:** *A0002*
+    - **Quantity:** *1*
 
-1. On the **Sales order lines** FastTab, select the first order line.
-1. Open the **Inventory** menu on the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
-1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+1. On the **Line details** FastTab, on the **Delivery** tab, change the value of the **Mode of delivery** field to *Air C-Air*.
+1. On the **Sales order lines** FastTab, select the first order line. Then, on the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, select **Reserve lot** to reserve the full quantity of the selected line in the warehouse.
+1. Close the **Reservation** page to return to the sales order.
+1. On the **Sales order lines** FastTab, select the second order line. Then, on the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, select **Reserve lot** to reserve the full quantity of the selected line in the warehouse.
+1. Close the **Reservation** page to return to the sales order.
+1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
+1. You receive an informational message that shows the shipment and wave for this order. Notice that two wave ID numbers and two shipment ID numbers have been created, one for each mode of delivery for the sales order lines.
 
-1. Close the **Reservation** page to return to your sales order.
-1. Select the second order line on the **Sales order lines** FastTab
-1. Open the **Inventory** menu on the **Sales order lines** FastTab toolbar and then select **Reservation** from the menu.
-1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+#### Get the work IDs from the work details
 
-1. Close the **Reservation** page to return to your sales order.
-1. On the Action Pane, open the **Warehouse** tab and, from the **Actions** group, select **Release to warehouse**.
-1. An informational message displays with the shipment and wave for this order.Note that two **Wave ID** numbers and two **Shipment ID** numbers are created, one for each Mode of delivery for the sales order lines.
-
-#### Get the work IDs from work details
-
-1. Go to **Warehouse management > Work > Work details**. Here you can see the work IDs that have been created form sales orders.
-1. Using the wave IDs and shipment IDs from the sales orders you created find, and make note of the **Work ID** for each Wave/Shipment. You will use these work IDs in the following steps. Note that two Work IDs were created for the second sales order. Picking different items from different locations will generate two work IDs.
+1. Go to **Warehouse management \> Work \> Work details**.
+1. The page shows the work IDs that have been created from sales orders. Use the wave IDs and shipment IDs from the sales orders that you created to find the work ID for each wave and shipment. Make a note of those work IDs, because you will need them in the next steps. Notice that two work IDs were created for the second sales order. If different items are picked from different locations, separate word IDs are generated.
 
 ### Pick items for the sales orders
 
-Complete the created work using the mobile device to the pack station.
+Complete the created work by using the mobile device to the pack station.
 
-1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
-1. Select **Outbound** from the **Main Menu**.
-1. Select **Sales Picking** from the **Outbound** menu.
-1. In the **ID** field, enter the work ID created for sales order 1.
-
-1. Select **OK**
-1. Enter a **Target LP** (license plate) created for sales order 1 on the **Sales orders - Pick** screen. Note that the picking location (*bulk-001*), item (*A0001*), and quantity (*2 pcs*) are displayed.
-
-1. Select **OK**. Confirm the information shown on the  **Sales orders - Put** screen. The picked items should be going into **Loc** - *Pack*.
-
-1. Select **OK**
-1. A **Work Completed** message is displayed on the *Scan a work ID / license plat ID* screen indicating that the *Work ID* from Sales Order 1 has been completed.
-
-1. Pick the second sales order.
-
-1. In the **ID** field, enter the work ID created for sales order 2, with **Line 1** - *Item A0001*.
+1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
+1. On the main menu, select **Outbound**.
+1. On the **Outbound** menu, select **Sales Picking**.
+1. In the **ID** field, enter the work ID that was created for sales order 1.
 1. Select **OK**.
-1. Enter a **Target LP** (license plate) on the **Sales orders - Pick** screen. Note that the picking location (*bulk-001*), item (*A0001*) and quantity (*1 pcs*) are displayed.
-
-1. Select **OK**. Confirm the information shown on the **Sales orders - Put** screen. The picked item should be going into **Loc** - *Pack*.
-
-1. Select **OK**
-1. A **Work Completed** message is displayed on the **Scan a work ID / license plat ID** screen indicating that the work ID from sales order 2, line 1 has been completed.
-1. In the **ID** field, enter the work ID  created for sales order 2, with **Line 2** - *Item A0002*.
+1. On the **Sales orders - Pick** page, enter a target LP that was created for sales order 1. Notice that the picking location (*bulk-001*), item (*A0001*), and quantity (*2 pcs*) are shown.
 1. Select **OK**.
-1. Enter a **Target LP** (license plate) on the **Sales orders - Pick** screen. Note that the picking location (*bulk-002*), item (*A0001*) and quantity (*1 pcs*) are displayed.
+1. Review the information on the **Sales orders - Put** page. The **Loc** field should indicate that the picked items are going to the *Pack* location.
+1. Select **OK**.
 
-1. Select **OK**. Confirm the information shown on the **Sales orders - Put** screen. The picked item should be going into **Loc** - *Pack*.
+    On the **Scan a work ID / license plate ID** page, you receive a "Work Completed" message, which indicates that the work ID from sales order 1 has been completed.
 
-1. Select **OK**
-1. A **Work Completed** message is displayed on the **Scan a work ID / license plat ID** screen indicating that the work ID from sales order 2, line 2 has been completed.
+    You will now pick sales order 2.
+
+1. In the **ID** field, enter the work ID that was created for sales order 2, where line 1 has item *A0001*.
+1. Select **OK**.
+1. On the **Sales orders - Pick** page, enter a target LP. Notice that the picking location (*bulk-001*), item (*A0001*), and quantity (*1 pcs*) are shown.
+1. Select **OK**.
+1. Review the information on the **Sales orders - Put** page. The **Loc** field should indicate that the picked items are going to the *Pack* location.
+1. Select **OK**.
+
+    On the **Scan a work ID / license plate ID** page, you receive a "Work Completed" message. This message indicates that the work ID from line 1 of sales order 2 has been completed.
+
+1. In the **ID** field, enter the work ID that was created for sales order 2, where line 2 has item *A0002*.
+1. Select **OK**.
+1. On the **Sales orders - Pick** page, enter a target LP. Notice that the picking location (*bulk-002*), item (*A0001*), and quantity (*1 pcs*) are shown.
+1. Select **OK**.
+1. Review the information on the **Sales orders - Put** page. The **Loc** field should indicate that the picked items are going to the *Pack* location.
+1. Select **OK**.
+
+    On the **Scan a work ID / license plate ID** page, you receive a "Work Completed" message. This message indicates that the work ID from line 2 of sales order 2 has been completed.
 
 ### Pack sales orders into containers
 
 #### Pack sales order 1 into containers
 
-1. Go to **Warehouse management > Packing and containerization > Pack**.
-1. The **Select packing station** dialog box opens. The **Worker** field should default to the worker's name you set up earlier. Enter the following to view and operate on shipments and containers that are planned at the specific packing location:
-    - **Site** - *6*
-    - **Warehouse** – *62*
-    - **Location** – *Pack*
-    - **Packing profile ID** – *Sort*
+1. Go to **Warehouse management \> Packing and containerization \> Pack**.
+
+    The **Select packing station** dialog box appears. By default, the **Worker** field should be set to the name of the worker that you set up earlier.
+    
+1. Set the following values to view and work on shipments and containers that are planned at the specific packing location:
+
+    - **Site:** *6*
+    - **Warehouse:** *62*
+    - **Location:** *Pack*
+    - **Packing profile ID:** *Sort*
 
 1. Select **OK** to close the dialog box.
-1. The **Pack** page opens. In the **License plate or shipment** field, enter the target license plate for first sales order. Hit the *Tab* or *Enter* key on your keyboard to exit the field.
+1. On the **Pack** page, in the **License plate or shipment** field, enter the target LP for sales order 1. Then select the **Tab** or **Enter** key on your keyboard to move out of the field.
 1. On the Action Pane, select **New container**.
-1. Leave all settings at their defaults and select **OK**. Make note of the **Container ID**.
-1. On the **Item packing** FastTab, enter the following:
-    - **Quantity** - *1*
-    - **Identifier** - *Item* - *A0001*
+1. Accept all the default settings, and select **OK**. Make a note of the container ID.
+1. On the **Item packing** FastTab, set the following values:
+
+    - **Quantity:** *1*
+    - **Identifier:** Item *A0001*
 
 1. On the Action Pane, select **Close container**.
-1. The **Close container** dialog box opens. Select **Get system weight** to have the system update the **GROSS WEIGHT** field.
-1. Select **OK**. The container will be moved to the **SORT** location and is ready for sorting.
-1. Create a second container to add the second item from the sales order 1 license plate to a new container.
+1. In the **Close container** dialog box, select **Get system weight** to have the system update the **Gross weight** field.
+1. Select **OK**. The container is moved to the *SORT* location and is ready for sorting.
+1. Create a second container to add the second item from the LP for sales order 1 to a new container.
 1. On the Action Pane, select **New container**.
-1. Accept the Defaults and select **OK**. Make note of the **Container ID**.
-1. On the **Item packing** FastTab, enter the following:
-    - **Quantity** - *1*
-    - **Identifier** - *Item* - *A0001*
+1. Accept all the default settings, and select **OK**. Make a note of the container ID.
+1. On the **Item packing** FastTab, set the following values:
+
+    - **Quantity:** *1*
+    - **Identifier:** Item *A0001*
 
 1. On the Action Pane, select **Close container**.
-1. The **Close container** dialog box opens. Select **Get system weight** to have the system update the **GROSS WEIGHT** field.
-1. Select **OK**. The container will be moved to the **SORT** location and is ready for sorting.
+1. In the **Close container** dialog box, select **Get system weight** to have the system update the **Gross weight** field.
+1. Select **OK**. The container is moved to the *SORT* location and is ready for sorting.
 
 #### Pack sales order 2 into containers
 
-1. You should still be on the **Pack** page.
-1. In the **License plate or shipment** field, enter the target license plate for Line 1 of the second sales order. Hit the *Tab* or *Enter* key on your keyboard to exit the field.
+1. On the **Pack** page, in the **License plate or shipment** field, enter the target LP for line 1 of sales order 2. Then select the **Tab** or **Enter** key on your keyboard to move out of the field.
 1. On the Action Pane, select **New container**.
-1. Accept the Defaults and select **OK**. Make note of the **Container ID**.
-1. On the **Item packing** FastTab, enter the following:
+1. Accept all the default settings, and select **OK**. Make a note of the container ID.
+1. On the **Item packing** FastTab, set the following values:
 
-    - **Quantity** - *1*
-    - **Identifier** - *Item* - *A0001*
+    - **Quantity:** *1*
+    - **Identifier:** Item *A0001*
 
 1. On the Action Pane, select **Close container**.
-1. The **Close container** dialog box opens. Select **Get system weight** to have the system update the **GROSS WEIGHT** field.
-1. Select **OK**. The container will be moved to the **SORT** location and is ready for sorting.
-1. In the **License plate or shipment** field, enter the target license plate for Line 2 of the second sales order. Hit the *Tab* or *Enter* key on your keyboard to exit the field.
+1. In the **Close container** dialog box, select **Get system weight** to have the system update the **Gross weight** field.
+1. Select **OK**. The container is moved to the *SORT* location and is ready for sorting.
+1. In the **License plate or shipment** field, enter the target LP for line 2 of the sales order 2. Then select the **Tab** or **Enter** key on your keyboard to move out of the field.
 1. On the Action Pane, select **New container**.
-1. Accept the Defaults and select **OK**. Make note of the *Container ID*
-1. On the **Item packing** FastTab, enter the following:
+1. Accept all the default settings, and select **OK**. Make a note of the container ID.
+1. On the **Item packing** FastTab, set the following values:
 
-    - **Quantity** - *1*
-    - **Identifier field** - *Item* - *A0002*
+    - **Quantity:** *1*
+    - **Identifier field:** Item *A0002*
 
 1. On the Action Pane, select **Close container**.
-1. The **Close container** dialog box opens. Select **Get system weight** to have the system update the **GROSS WEIGHT** field.
-1. Select **OK**. The container will be moved to the **SORT** location and is ready for sorting.
+1. In the **Close container** dialog box, select **Get system weight** to have the system update the **Gross weight** field.
+1. Select **OK**. The container is moved to the *SORT* location and is ready for sorting.
 
-To view the container details, go to **Warehouse management > Packing and containerization > Containers** and search for the container IDs created during packing.
+To view the container details, go to **Warehouse management \> Packing and containerization \> Containers**, and search for the container IDs that were created during packing.
 
 ### Sort the containers
 
-> [!CAUTION]
-> When you access the **Pallet build** menu item on the mobile app to perform outbound sorting, you will see a button option labeled **Full**. *Do not use the **Full** button to sort or close the position*.
+> [!IMPORTANT]
+> When you access the **Pallet build** menu item on the mobile app to do outbound sorting, you will see a button that is labeled **Full**. *Don't use the **Full** button to sort or close the position.*
 >
-> The **Full** button is provided by default and can't be disabled or removed from the form. It isn't used for the outbound sorting feature.
+> The **Full** button is provided by default and can't be disabled or removed from the page. It isn't used for the *Outbound sorting* feature.
 
 #### Sort the first container
 
-1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
-1. Select **Outbound** from the **Main Menu**.
-1. Select **Pallet build** from the **Outbound** menu.
-1. In the **LP/Con** field, enter the first container ID associated with the sales order 1.
+1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
+1. On the main menu, select **Outbound**.
+1. On the **Outbound** menu, select **Pallet build**.
+1. In the **LP/Con** field, enter the first container ID that is associated with sales order 1.
 1. Select **OK**.
 1. Because no sort positions currently exist, you must specify one. In the **Sort position ID** field, enter *SP01*.
-1. Because there is no license plate currently associated with **Sort position** *SP01*, you must specify one. In the **LP** field, enter *PLP01*.
-1. Select **OK**
-1. Sort position validation is enabled, so you must enter the **Sort position ID** again. Enter *SP01* in the **Sort Position ID** field
+1. Because no LP is currently associated with sort position *SP01*, you must specify one. In the **LP** field, enter *PLP01*.
 1. Select **OK**.
-1. A *Work completed* message is displayed.
+1. Because sort position validation is turned on, you must enter the sort position ID again. In the **Sort Position ID** field, enter *SP01*.
+1. Select **OK**.
+
+    You receive a "Work completed" message.
 
 > [!TIP]
-> Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments** to view the sorting position and license plate in the position.
+> To view the sort position and the LP in it, go to **Warehouse management \> Packing and containerization \> Outbound sorting position assignments**.
 >
-> This page shows all the sort positions that are currently active. The **Sort position transactions** field shows the license plate associated with each, and which containers are in the sort position. Note that one sort position currently exists, and on the **Sort position criteria** FastTab, it shows a criteria of **Shipment – Carrier service - Air**.
+> The **Outbound sorting position assignments** page shows all the sort positions that are currently active. The **Sort position transactions** field shows the LP that is associated with each sort position, and the containers that are in the sort position. Notice that one sort position currently exists, and that the **Sort position criteria** FastTab shows a criterion of **Shipment – Carrier service - Air**.
 
 #### Sort the remaining containers
 
-1. Go to the mobile app.
-1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
-1. Select **Outbound** from the **Main Menu**.
-1. Select **Pallet build** from the **Outbound** menu.
-1. In the **LP/Con** field, enter the second container ID associated with the sales order 1.
-1. Select **OK**. Because the sorting template is setup to sort automatically, and there is already a sort position that exists with matching criteria, you are automatically directed to the correct sort position.
+1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
+1. On the main menu, select **Outbound**.
+1. On the **Outbound** menu, select **Pallet build**.
+1. In the **LP/Con** field, enter the second container ID that is associated with sales order 1.
+1. Select **OK**. Because the sorting template is set up to sort automatically, and a sort position that has matching criteria already exists, you're automatically directed to the correct sort position.
 1. Select **OK**.
-1. Confirm the **Sort Position ID** by entering the sort position *SP01* to show that the inventory is in right place.
+1. Confirm the sort position ID to indicate that the inventory is in the correct place. In the **Sort Position ID** field, enter *SP01*.
 1. Select **OK**.
-1. Work is completed on the second container from sales order 1.
-1. Sort the remaining containers from sales order 2.
-1. In the **LP/Con** field, enter the **Container ID** containing *Item A0001* from the second order. Because the carrier service is different, you are prompted to enter and new sort position (use *SP02*) and assign a license plate to that position (*PLP02*).
+
+    Work is completed on the second container from sales order 1. You will now sort the remaining containers from sales order 2.
+
+1.  In the **LP/Con** field, enter the container ID of the container from sales order 2 that holds item *A0001*. Because the carrier service differs, you're prompted to enter a new sort position and assign an LP to that position. Use sort position *SP02* and LP *PLP02*.
 1. Select **OK**.
 1. Confirm the sort position by entering *SP02* in the **Sort Position ID** field.
 1. Select **OK**.
-1. Work is completed on the container.
-1. Enter the container ID for the remaining container from sales 2, which has *Item A0002* in the **LP/Con** field. Because the carrier service is the same as Sales Order 1, the system displays the sort position that exists with matching criteria.
+
+    Work is completed on the container.
+
+1. In the **LP/Con** field, enter the container ID for the remaining container from sales order 2 that holds item *A0002*. Because the carrier service is the same as the carrier service for sales order 1, the system shows the existing sort position that has matching criteria.
 1. Select **OK**.
 1. Confirm the sort position by entering *SP01* in the **Sort Position ID** field.
 1. Select **OK**.
-1. Work is completed on the container.
 
-### Close the Outbound Sorting positions
+    Work is completed on the container.
 
-Once all inventory has been sorted, the position needs to be closed for work to be created. Sorted inventory picking work will be created to take the inventory to the baydoor.
+### Close the outbound sorting positions
 
-#### Close position from the mobile device
+When all inventory has been sorted, the position must be closed before work can be created. Sorted inventory picking work will be created to take the inventory to the bay door.
 
-1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
-1. Select **Outbound** from the **Main Menu**.
-1. Select **Pallet build** from the **Outbound** menu.
-1. Enter a container ID (that was sorted onto the *SP01* position) in the **LP/Con** field.
+#### Close a position from the mobile device
+
+1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
+1. On the main menu, select **Outbound**.
+1. On the **Outbound** menu, select **Pallet build**.
+1. In the **LP/Con** field, enter a container ID that was sorted to sort position *SP01*.
 1. Select **OK**.
-1. The following message displays: "The container is already sorted to position SP01. Close the position?" Select **Close**.
-1. Work is completed.
+1. You receive the following message: "The container is already sorted to position SP01. Close the position?" Select **Close**.
 
-#### Close position from outbound sorting position assignments
+    Work is completed.
 
-1. Go to **Warehouse management > Packing and containerization > Outbound sorting position assignments**.
-1. In the left side column, select **SP02**. This is the outbound sorting position row that you will close.
-1. On the Action Pane, select **Close position**. The sorting record is closed and is no longer displayed.
-1. Select the **Show closed** box to show all closed position records.
+#### Close a position from outbound sorting position assignments
+
+1. Go to **Warehouse management \> Packing and containerization \> Outbound sorting position assignments**.
+1. In the left column, select **SP02**. This outbound sorting position row is the one that you will close.
+1. On the Action Pane, select **Close position**. The sorting position record is closed and is no longer shown.
+
+    > [!TIP]
+    > To show all closed position records, select the **Show closed** check box.
 
 ### Sorted inventory picking
 
-Complete the sorted inventory picking work. Once completed, the inventory will be picked to the sales order. All other warehouse processes apply at this point.
+You must complete the sorted inventory picking work. When it's completed, the inventory will be picked to the sales order. At that point, all other warehouse processes apply.
 
-1. Log in to **Warehouse** *62* on the mobile app with the **User ID** you created for this scenario (or an existing demo data user).
-1. Select **Outbound** from the **Main Menu**
-1. Select **Load from Sorting** from the **Outbound** menu
-1. Enter the **Target license plate ID** from the first sort position *SP01*. Set **ID** to *PLP01*.
+1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
+1. On the main menu, select **Outbound**.
+1. On the **Outbound** menu, select **Load from Sorting**.
+1. Enter the target LP ID from the first sort position, *SP01*. Set the **ID** field to *PLP01*.
 1. Select **OK**.
-1. The **Sorted inventory picking: Pick** screen displays the pick work to be performed. Pick from the *SORT* location, target license plate *PLP01* with *Multiple* items and a quantity of *3*.
+1. The **Sorted inventory picking: Pick** page shows the pick work that must be done. Pick from the *SORT* location and target LP *PLP01*, which has multiple items and a quantity of *3*.
 1. Select **OK**.
-1. The **Sorted inventory picking: Put** screen displays the put work to be performed. Put to the *Baydoor* location, target license plate *PLP01* with *Multiple* items and a quantity of *3*
+1. The **Sorted inventory picking: Put** page shows the put work that must be done. Put to the *Baydoor* location and target LP *PLP01*, which has multiple items and a quantity of *3*.
 1. Select **OK**.
-1. Work is completed.
-1. Enter the **Target license plate ID** from the second sort position *SP02*. Set **ID** to *PLP02*.
-1. Select **OK**
-1. The **Sorted inventory picking: Pick** screen displays the pick work to be performed. Pick from the *SORT* location, target license plate *PLP02* with *Multiple* items and a quantity of *1*.
-1. Select **OK**.
-1. The **Sorted inventory picking: Put** screen displays the put work to be performed. Put to the *Baydoor* location, target license plate *PLP02* with *Multiple* items and a quantity of *1*.
-1. Select **OK**
-1. Work is completed
 
-All other warehouse processes apply from this point forward.
+    Work is completed.
+
+1. Enter the target license plate ID from the second sort position, *SP02*. Set the **ID** field to *PLP02*.
+1. Select **OK**.
+1. The **Sorted inventory picking: Pick** page shows the pick work that must be done. Pick from the *SORT* location and target LP *PLP02*, which has multiple items and a quantity of *1*.
+1. Select **OK**.
+1. The **Sorted inventory picking: Put** page shows the put work that must be done. Put to the *Baydoor* location and target LP *PLP02*, which has multiple items and a quantity of *1*.
+1. Select **OK**.
+
+    Work is completed.
+
+From this point forward, all other warehouse processes apply.
