@@ -1768,20 +1768,14 @@ Refer to the topic [Reverse charge
 VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge)
 to find all details about how to set up and use reverse charges functionality.
 
-1.  Go to **Tax \> Setup \> Sales tax \> Reverse charge item groups**. Create
-    the new group.
+1.  Go to **Tax \> Setup \> Sales tax \> Reverse charge item groups**. Create the new group.
 
-2.  On the FastTab **Setup,** in the **Sales/purchase field**, select
-    **Purchase.** Create a line and define Item code, Item group or Procurement
-    category code that purchase is associated to the created reverse charge item
-    group.
+2.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Purchase.** Create a line and define Item code, Item group or Procurement category code that purchase is associated to the created reverse charge item group: 
+2.1 In the field **Item code** select **Table**, **Group** or **Category**.
+2.2 In the field **Item relation**, select item code or item group.
+2.3 In the field **Category**, select procurement category.
 
-    In the field **Item code** select **Table**, **Group** or **Category**.
-    In the field **Item relation**, select item code or item group.
-    In the field **Category**, select procurement category.
-
-3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales**
-    and associate item, item group and procurement category as described above.
+3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales** and associate item, item group and procurement category as described above.
 
 # Generate VAT declaration
 
