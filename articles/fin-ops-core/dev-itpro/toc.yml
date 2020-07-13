@@ -1464,7 +1464,7 @@
           href: sysadmin/create-simple-security-policy.md
       - name: Process automation
         href: sysadmin/process-automation.md
-      - name: Batch proceCreate a simple security policyssing
+      - name: Batch processing
         items:
         - name: Batch processing overview
           href: sysadmin/batch-processing-overview.md
