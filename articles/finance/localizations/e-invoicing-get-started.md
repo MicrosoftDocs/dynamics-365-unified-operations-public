@@ -168,7 +168,7 @@ During this setup, you will complete the following tasks:
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, enter `https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/`.
+2. On the **Submission service** tab, in the **Service endpoint URL** field, enter `https://businessdocumentsubmission.aksm2nc.westus2.operations365.dynamics.com/`.
 3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment that you created during RCS setup.
 
 ![Entering service parameters](media/e-invoicing-services-get-started-enter-service-endpoint.png)
