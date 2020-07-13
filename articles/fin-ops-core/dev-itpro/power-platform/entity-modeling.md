@@ -152,7 +152,7 @@ The next step is to define this relationship in X++. The following example shows
 The field mapping indicates which field on the virtual entity maps to the field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
 
 ```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
     public static Map syntheticAccountRelationship()
     {
         Map fieldMapping = new Map(Types::String, Types::String);
