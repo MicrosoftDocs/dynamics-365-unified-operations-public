@@ -1776,11 +1776,9 @@ to find all details about how to set up and use reverse charges functionality.
     category code that purchase is associated to the created reverse charge item
     group.
 
->   In the field **Item code** select **Table**, **Group** or **Category**.
-
->   In the field **Item relation**, select item code or item group.
-
->   In the field **Category**, select procurement category.
+    In the field **Item code** select **Table**, **Group** or **Category**.
+    In the field **Item relation**, select item code or item group.
+    In the field **Category**, select procurement category.
 
 3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales**
     and associate item, item group and procurement category as described above.
