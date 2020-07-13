@@ -98,7 +98,9 @@ Statement on how these features will be discussed later in the document, such as
 
 
 ## Implementation considerations
-This section describes some things that you should consider as you plan to implement features that are related to data management and configuration.
+This section describes some things that you should consider as you plan to implement features that are related to data management and configuration.  It is highly valuable to additionally read through the [Best practices](CDX-Best-Practices.md) document.
+
+Do not generate offline database data until 
 
 **TOPICS**
  - Timing of jobs... Create a schedule
@@ -129,17 +131,12 @@ This section describes some things that you should consider as you plan to imple
 
 
 ## Resources
-[Best practices](CDX-Best-Practices.md)
-[Device management implementation guidance](implementation-considerations-devices.md)
-[Commerce Architecture](commerce-architecture.md)
-[Select an in-store topology](dev-itpro/retail-in-store-topology.md)
-
-*Link to MPOS installer* LINK PENDING
-
-*Link to CSU (Self-hosted) installer* LINK PENDING
-
-
-TABLE EXAMPLE
-| ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
-|----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
-| 707 | Activate device | Activate the current device by allowing an authenticated user to provide connection information and assign a device and register ID. | No | No | No | No | No |
+| Links |
+|---------------------------------------------------|
+| [Commerce Data Exchange troubleshooting](dev-itpro/CDX-Troubleshooting.md) |
+| [Commerce Data Exchange best practices](CDX-Best-Practices.md) |
+| [Commerce Architecture](commerce-architecture.md) |
+| [Select an in-store topology](retail-in-store-topology.md) |
+| [Device management implementation guidance](implementation-considerations-devices.md) |
+| Link to MPOS installer* LINK PENDING |
+| Link to CSU (Self-hosted) installer* LINK PENDING |
