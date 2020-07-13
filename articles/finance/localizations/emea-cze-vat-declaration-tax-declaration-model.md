@@ -1,12 +1,12 @@
----
-title: VAT declaration (The Czech Republic)
----
+
+# VAT declaration (The Czech Republic)
+
 
 This topic provides information about the value-added tax (VAT) declaration for
 the Czech Republic. It includes instructions for setting up and generating the
 VAT declaration and VAT control statement.
 
-# Overview
+# VAT declaration overview
 
 ## VAT declaration
 
@@ -458,29 +458,56 @@ in the application and report fields in the Electronic reporting configuration.
 
 4.  On the FastTab **Conditions**, associate Sales tax codes and report fields:
 
-| **Column**      | **Description**                                                                                                                                                                                                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result   | Select report field for which you make setup. See details on report fields assignment to VAT declaration rows in the section [VAT declaration overview](#vat-declaration)                                                                                                                                      |
-| Tax code (Code) | Select Sales tax code which you associate to the report field. Tax transactions posted with the selected sales tax code will be collected in the respective report field. It’s highly recommended to separate sales tax codes in a way that one sales tax code is generating amounts in only one report field. |
-| Name            | If you didn’t create enough sales tax codes so that one sales tax code is generating amounts in only one report field, you can additionally setup **Transaction classifier** in this column. The following transaction classifiers are available for selection:                                                |
-
--   “Purchase” (Purchase),
-
--   “PurchaseExempt” (Tax exempt purchase),
-
--   “PurchaseReverseCharge” (Tax receivable from purchase reverse charge),
-
--   “Sales” (Sales),
-
--   “SalesExempt” (Tax exempt sales),
-
--   “SalesReverseCharge” (Tax payable from purchase reverse charge/ Sales
-    reverse charge),
-
--   “Use tax” (Use tax)
-
-For each transaction classifier a classifier for the credit note is also
-available, for example, “PurchaseCreditNote” (Purchase credit note)
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Column</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lookup result</p>
+</td>
+<td>
+<p>Select report field for which you make setup. See details on report fields assignment to VAT declaration rows in the section <a href="#_VAT_declaration">VAT declaration overview</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tax code (Code)</p>
+</td>
+<td>
+<p>Select Sales tax code which you associate to the report field. Tax transactions posted with the selected sales tax code will be collected in the respective report field.</p>
+<p>It&rsquo;s highly recommended to separate sales tax codes in a way that one sales tax code is generating amounts in only one report field.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>If you didn&rsquo;t create enough sales tax codes so that one sales tax code is generating amounts in only one report field, you can additionally setup <strong>Transaction classifier</strong> in this column.</p>
+<p>The following transaction classifiers are available for selection:</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;Purchase&rdquo; (Purchase),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;PurchaseExempt&rdquo; (Tax exempt purchase),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;PurchaseReverseCharge&rdquo; (Tax receivable from purchase reverse charge),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;Sales&rdquo; (Sales),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;SalesExempt&rdquo; (Tax exempt sales),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;SalesReverseCharge&rdquo; (Tax payable from purchase reverse charge/ Sales reverse charge),</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;Use tax&rdquo; (Use tax)</p>
+<p>&nbsp;</p>
+<p>For each transaction classifier a classifier for the credit note is also available, for example, &ldquo;PurchaseCreditNote&rdquo; (Purchase credit note)</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 To prevent the format to throw an exception error message due to missed setup,
 you can create the following line in the parameters:
@@ -489,31 +516,29 @@ you can create the following line in the parameters:
 |-------------------|---------------------|---------------|
 | Other             | \*Not blank\*       | \*Not blank\* |
 
-Notes: This line must be created as the last line in the parameters.
+> Notes: This line must be created as the last line in the parameters.
+> If you create this line, you should make sure that you set up parameters for all
+> sales tax codes in the system. If some sales tax codes are missing in the setup,
+> tax transactions with them will not be collected to VAT declaration.
+> If you don’t create this line, you’ll get error message during the report run in
+> case of there is tax transaction with the sales tax code that is not configured
+> in the Application specific parameters.
 
-If you create this line, you should make sure that you set up parameters for all
-sales tax codes in the system. If some sales tax codes are missing in the setup,
-tax transactions with them will not be collected to VAT declaration.
+5.  Change **State** of Application specific parameters to **Completed**.
 
-If you don’t create this line, you’ll get error message during the report run in
-case of there is tax transaction with the sales tax code that is not configured
-in the Application specific parameters.
-
-1.  Change **State** of Application specific parameters to **Completed**.
-
-2.  Review example of parameters on the picture:
+6.  Review example of parameters on the picture:
 
 ![](media/9ee9c0c4f7590ccdb0280c9e9c95e88c.png)
 
 >   A screenshot of a social media post Description automatically generated
 
-1.  On the Action pane, click **Export** to export parameters at XML file.
+7.  On the Action pane, click **Export** to export parameters at XML file.
 
-2.  Select configuration **VAT declaration Excel (CZ**). On the Action pane,
+8.  Select configuration **VAT declaration Excel (CZ**). On the Action pane,
     click **Import** to import parameters that you configured for **VAT
     declaration XML (CZ)**. Change **State** to **Completed.**
 
-3.  Select configuration **VAT control statement XML (CZ)**. Make the same
+9.  Select configuration **VAT control statement XML (CZ)**. Make the same
     settings manually as you did in point 4 above. Change **State** to
     **Completed.**
 
@@ -621,7 +646,7 @@ Review example of parameters on the picture:
 
 ![A screenshot of a social media post Description automatically generated](media/de6e7ebd2dad61ba82d80d75af80d1aa.png)
 
-1.  Change **State** of all parameters to **Completed**.
+6.  Change **State** of all parameters to **Completed**.
 
 ## Download and import the Data management package with example settings of Electronic messages.
 
@@ -664,9 +689,9 @@ Review example of parameters on the picture:
 
 1.  Set up information about Taxpayer in Electronic message additional fields
 
-    1.  Go to **Tax \> Setup \> Electronic messages \> Additional fields**
+    1.1  Go to **Tax \> Setup \> Electronic messages \> Additional fields**
 
-    2.  Select the line with additional field and on the FastTab **Value** add
+    1.2  Select the line with additional field and on the FastTab **Value** add
         respective values of the field:
 
 | **Additional field**     | **Value**                                                                                                                                                                           |
@@ -678,10 +703,10 @@ Review example of parameters on the picture:
 
 2.  Set up default values for declarations run in Electronic message processing
 
-    1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+    2.1  Go to **Tax \> Setup \> Electronic messages \> Electronic message
         processing**
 
-    2.  Select the line with processing and set up default values for
+    2.2  Select the line with processing and set up default values for
         declarations parameters on the FastTab **Message additional fields**:
 
 | **Processing**                                           | **Additional field**         | **Comment**                                                                                                                                               | **XML element**                                                                                                                     |
@@ -697,12 +722,12 @@ Review example of parameters on the picture:
 
 3.  Set up parameters in Populate records
 
-    1.  Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate
+    3.1  Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate
         records actions**. On the **Populate records action** page, select the
         line and select **Edit query.** Specify filter on settlement period(s)
         to be included in the report.
 
-    2.  If you need to report tax transactions from other settlement periods in
+    3.2  If you need to report tax transactions from other settlement periods in
         a different declaration, you should create new Populate records action,
         and select appropriate settlement period(s).
 
@@ -740,7 +765,7 @@ to find all details about how to set up and use reverse charges functionality.
 
 >   In the field **Category**, select procurement category.
 
-1.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales**
+3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales**
     and associate item, item group and procurement category as described above.
 
 # Generate VAT declaration
@@ -764,70 +789,157 @@ message processing that is released to LCS.
 
 5.  On the **Messages** FastTab, select **Collect data**, select **OK**.
 
->   On the **Message items** FastTab, review the Sales tax payments that are
->   transferred for processing. By default, you get sales tax payments of the
->   selected period that were not included in any other message of the same
->   processing.
+    On the **Message items** FastTab, review the Sales tax payments that are
+    transferred for processing. By default, you get sales tax payments of the
+    selected period that were not included in any other message of the same
+    processing.
 
->   Click **Original document** to review sales tax payment.
+    Click **Original document** to review sales tax payment.
 
->   Click **Delete** to exclude some sales tax payments from processing.
+    Click **Delete** to exclude some sales tax payments from processing. Note, that this step is optional. If you skip this step, you still can
+    generate VAT declaration using **Tax declaration version** parameter on the
+    declaration dialog. See below for more details.
 
->   Note, that this step is optional. If you skip this step, you still can
->   generate VAT declaration using **Tax declaration version** parameter on the
->   declaration dialog. See below for more details.
-
-1.  On the **Message additional fields** FastTab, validate the value of the
+6.  On the **Message additional fields** FastTab, validate the value of the
     field \<**NullDeclaration\>**. Select Yes if you are reporting the null
     declaration.
 
-2.  On the **Messages** FastTab, select **Update status**. In the **Update
+7.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog, select **Ready to generate** action. Select **OK**.
     Validate that the message status is changed to **Ready to generate**.
 
-3.  On the **Messages** FastTab, select **Generate report**. Then, to preview
+8.  On the **Messages** FastTab, select **Generate report**. Then, to preview
     VAT declaration amounts, in the **Run processing** dialog box,
     select **Preview DPHDP3 in Excel** and click **OK**. In the **Electronic
     reporting parameters** dialog box, enter parameters of VAT declaration. See
     below for details of available parameters
 
-4.  Select **OK**. When Excel file with VAT declaration preview is generated,
+9.  Select **OK**. When Excel file with VAT declaration preview is generated,
     select the **Attachments** button (the paper clip symbol) in the upper-right
     corner of the page. Then select **Open** to open the file. Review amounts in
     Excel.
 
-5.  On the **Messages** FastTab, select **Generate report**. Then, in the **Run
+10.  On the **Messages** FastTab, select **Generate report**. Then, in the **Run
     processing** dialog box, select **Generate DPHDP3** to generate XML file and
     click **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, enter the following
+11.  In the **Electronic reporting parameters** dialog box, enter the following
     information:
 
-| **Field**                                                                                                                           | **Description**                                                                                                                                                                                                                                        |
-|-------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tax settlement period                                                                                                               | If you run **Collect data** above, skip this step. Otherwise, select the applicable settlement period.                                                                                                                                                 |
-| Tax declaration version                                                                                                             | If you run **Collect data** above, skip this step. Report will be generated for sales tax transactions included in the collected sales tax payments. Otherwise, select one of the following values:                                                    |
-| Tax Jurisdiction                                                                                                                    | Select **Default** to take information about the company from **Additional fields** of **Electronic messages**. Select The Czech Republic to take information about the company from the local Czech fields in **General ledger parameters** page.     |
-| Contact person                                                                                                                      | Select the employee who has created the report. Name, surname and phone of this employee will be exported to XML file.                                                                                                                                 |
-| Signatory                                                                                                                           | Select employee who has signed the report. Name, surname and position of this employee in the company will be exported to XML file.                                                                                                                    |
-| Correction reason date                                                                                                              | Enter date on which the reason for submitting supplementary declaration was observed. Applicable for Supplementary and Supplementary/corrective declarations.                                                                                          |
-| New pro rata coefficient                                                                                                            | For December declaration, enter new pro rata coefficient which you have calculated based on annual data. This value will be exported to Row 53 if the declaration.                                                                                     |
-| Next year report periodicity                                                                                                        | For December declaration specify periodicity of declaration for the next year of this is different from the current periodicity.                                                                                                                       |
-| Value of exempt sales not included in calculation of coefficient, Value of taxable sales not included in calculation of coefficient | For December declaration specify amounts of exempt and taxable sales respectively that are not included in calculation of new coefficient if your company had such sales during the year. These amounts will be exported to Row 51 of the declaration. |
-| Value of annual settlement of tax deduction                                                                                         | For December declaration specify amount of annual tax deduction adjustment due to applying of the new pro rata coefficient. This amount will be exported to Row 53 of the declaration.                                                                 |
+<table width="973">
+<thead>
+<tr>
+<td width="255">
+<p><strong>Field</strong></p>
+</td>
+<td width="718">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="255">
+<p>Tax settlement period</p>
+</td>
+<td width="718">
+<p>If you run <strong>Collect data</strong> above, skip this step. Otherwise, select the applicable settlement period.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Tax declaration version</p>
+</td>
+<td width="718">
+<p>If you run <strong>Collect data</strong> above, skip this step. Report will be generated for sales tax transactions included in the collected sales tax payments.</p>
+<p>Otherwise, select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong>&nbsp;&ndash; Generate a report for sales tax transactions of the original sales tax payment, or before the sales tax payment is generated (<strong>Sales tax payment version</strong> has value <strong>Original</strong>).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong>&nbsp;&ndash; Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (<strong>Sales tax payment version</strong> has value <strong>Latest corrections</strong>).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong>&nbsp;&ndash; Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Tax Jurisdiction</p>
+</td>
+<td width="718">
+<p>Select <strong>Default</strong> to take information about the company from <strong>Additional fields</strong> of <strong>Electronic messages</strong>.</p>
+<p>Select The Czech Republic to take information about the company from the local Czech fields in <strong>General ledger parameters</strong> page.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Contact person</p>
+</td>
+<td width="718">
+<p>Select the employee who has created the report. Name, surname and phone of this employee will be exported to XML file.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Signatory</p>
+</td>
+<td width="718">
+<p>Select employee who has signed the report. Name, surname and position of this employee in the company will be exported to XML file.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Correction reason date</p>
+</td>
+<td width="718">
+<p>Enter date on which the reason for submitting supplementary declaration was observed. Applicable for Supplementary and Supplementary/corrective declarations.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>New pro rata coefficient</p>
+</td>
+<td width="718">
+<p>For December declaration, enter new pro rata coefficient which you have calculated based on annual data.</p>
+<p>This value will be exported to Row 53 if the declaration.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Next year report periodicity</p>
+</td>
+<td width="718">
+<p>For December declaration specify periodicity of declaration for the next year of this is different from the current periodicity.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Value of exempt sales not included in calculation of coefficient,</p>
+<p>Value of taxable sales not included in calculation of coefficient</p>
+</td>
+<td width="718">
+<p>For December declaration specify amounts of exempt and taxable sales respectively that are not included in calculation of new coefficient if your company had such sales during the year.</p>
+<p>These amounts will be exported to Row 51 of the declaration.</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Value of annual settlement of tax deduction</p>
+</td>
+<td width="718">
+<p>For December declaration specify amount of annual tax deduction adjustment due to applying of the new pro rata coefficient.</p>
+<p>This amount will be exported to Row 53 of the declaration.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate a report for sales tax transactions of the original
-    sales tax payment, or before the sales tax payment is generated (**Sales tax
-    payment version** has value **Original**).
-
--   **Corrections** – Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period (**Sales tax payment version**
-    has value **Latest corrections**).
-
--   **Total list** – Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
-
-1.  Select **OK**. When the declaration in XML is generated, the status of the
+12.  Select **OK**. When the declaration in XML is generated, the status of the
     message is changed to **Generated**.
 
 ![](media/88e0c7eea30f6fef270d134eac29ef7a.jpg)
@@ -837,10 +949,10 @@ message processing that is released to LCS.
 >   If an error occurs while the report is generated, the status of the message
 >   is changed to **Technical error**.
 
-1.  Select the **Attachments** button (the paper clip symbol) in the upper-right
+13.  Select the **Attachments** button (the paper clip symbol) in the upper-right
     corner of the page. Then select **Open** to open the file.
 
-2.  Review the file and if this is ok, update the status to **Approved** to
+14.  Review the file and if this is ok, update the status to **Approved** to
     finish the processing: select **Update status**. Then, in the **Update
     status** dialog box select action **Approve** and select **OK**.
 
@@ -850,10 +962,10 @@ message processing that is released to LCS.
 >   If the message status is **Technical error**, you can update the message
 >   status to one of initial statuses: **Created** or **Ready to generate**.
 
-1.  On the **Action log** FastTab, review all user actions for the current
+15.  On the **Action log** FastTab, review all user actions for the current
     message.
 
-2.  When you complete generating the VAT declaration, you should manually send
+16.  When you complete generating the VAT declaration, you should manually send
     the generated file to the tax authority.
 
 ## Generate VAT control statement from Electronic messages.
@@ -882,48 +994,106 @@ message processing that is released to LCS.
 
 ## Generate VAT declaration in Excel from Inquiries and reports menu item.
 
->   1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report
->   sales tax for settlement period**. In the **Report sales tax for settlement
->   period** dialog, select the following:
+1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog, select the following:
 
-| **Field**                 | **Description**                               |
-|---------------------------|-----------------------------------------------|
-| Settlement period         | Select the settlement period                  |
-| Sales tax payment version | Select the following:                         |
-| From date                 | Select the first date of the reporting period |
+<table width="973">
+<thead>
+<tr>
+<td width="255">
+<p><strong>Field</strong></p>
+</td>
+<td width="718">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="255">
+<p>Settlement period</p>
+<p>&nbsp;</p>
+</td>
+<td width="718">
+<p>Select the settlement period</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Sales tax payment version</p>
+</td>
+<td width="718">
+<p>Select the following:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong>&nbsp;&ndash; Generate a report for sales tax transactions of the original sales tax payment, or before the sales tax payment is generated (<strong>Sales tax payment version</strong> has value <strong>Original</strong>).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong>&nbsp;&ndash; Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (<strong>Sales tax payment version</strong> has value <strong>Latest corrections</strong>).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong>&nbsp;&ndash; Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>From date</p>
+</td>
+<td width="718">
+<p>Select the first date of the reporting period</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate a report for sales tax transactions of the original
-    sales tax payment, or before the sales tax payment is generated (**Sales tax
-    payment version** has value **Original**).
-
--   **Corrections** – Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period (**Sales tax payment version**
-    has value **Latest corrections**).
-
--   **Total list** – Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
-
-1.  Select **OK**. Review generated Excel file.
+2.  Select **OK**. Review generated Excel file.
 
 ## Generate VAT declaration in Excel from Sales tax payments
 
->   1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and
->   post sales tax.** In the **Settle and post sales tax** dialog, define the
->   following:
+1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and post sales tax.** In the **Settle and post sales tax** dialog, define the following:
 
-| **Field**                 | **Description**                               |
-|---------------------------|-----------------------------------------------|
-| Settlement period         | Select the settlement period                  |
-| Sales tax payment version | Select the following:                         |
-| From date                 | Select the first date of the reporting period |
+<table width="973">
+<thead>
+<tr>
+<td width="255">
+<p><strong>Field</strong></p>
+</td>
+<td width="718">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="255">
+<p>Settlement period</p>
+<p>&nbsp;</p>
+</td>
+<td width="718">
+<p>Select the settlement period</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Sales tax payment version</p>
+</td>
+<td width="718">
+<p>Select the following:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong>&nbsp;&ndash; Generate original sales tax payment for settlement period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Latest corrections</strong>&nbsp;&ndash; Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>From date</p>
+</td>
+<td width="718">
+<p>Select the first date of the reporting period</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate original sales tax payment for settlement period.
-
--   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
-
->   2. Select **OK**. Go to **Tax \> Inquiries and reports \> Sales tax
->   inquiries \> Sales tax payments**. Review generated sales tax payment line.
+2. Select **OK**. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**. Review generated sales tax payment line.
 
 # Set up to run VAT declaration for several legal entities
 
@@ -993,15 +1163,15 @@ The following are preconditions for running this procedure:
 
 7.  On the **Messages** FastTab, select **Collect data**, select **OK**.
 
->   On the **Message items** FastTab, review the Sales tax payments that are
->   transferred for processing. Value in the field **Company** indicates the
->   legal entity where Sales tax payment is processed.
+    On the **Message items** FastTab, review the Sales tax payments that are
+    transferred for processing. Value in the field **Company** indicates the
+    legal entity where Sales tax payment is processed.
 
->   Click **Original document** to review sales tax payment.
+    Click **Original document** to review sales tax payment.
 
->   Click **Delete** to exclude some sales tax payments from processing
+    Click **Delete** to exclude some sales tax payments from processing
 
-1.  Process declaration in standard way. When the file is generated, review that
+8.  Process declaration in standard way. When the file is generated, review that
     the report contains all tax transactions from the selected sales tax
     payments.
 
@@ -1061,26 +1231,19 @@ Follow the example steps to write off customer bad debts:
     journal “WriteOff” that was automatically generated. Select Lines. Review
     that tree lines were created:
 
--   Account type **Customer** – on the total invoice amount including VAT
+    -   Account type **Customer** – on the total invoice amount including VAT
+    -   Account type **Ledger** – on the invoice amount without VAT
+    -   Account type **Ledger** – on the VAT amount.
 
--   Account type **Ledger** – on the invoice amount without VAT
+8.  Select the line with VAT amount. Go to Tab **General**. Select sales tax code WRITEOFF21 created above in the field **Sales tax code**.
 
--   Account type **Ledger** – on the VAT amount.
+9.  Post the journal. Review posted sales tax transaction:
 
-    1.  Select the line with VAT amount. Go to Tab **General**. Select sales tax
-        code WRITEOFF21 created above in the field **Sales tax code**.
+   -   **Sales tax direction** = **Sales tax payable**
+   -   **Amount origin** is equal to invoice amount without VAT
+   -   **Actual sales tax amount** is equal to VAT amount
 
-    2.  Post the journal. Review posted sales tax transaction:
-
--   **Sales tax direction** = **Sales tax payable**
-
--   **Amount origin** is equal to invoice amount without VAT
-
--   **Actual sales tax amount** is equal to VAT amount
-
-    1.  Go to **Electronic reporting** workspace, select configuration with VAT
-        declaration format. Select **Configurations \> Application specific
-        parameters \> Set up**. Create the following lines:
+10.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
 
 | **Lookup result**                     | **Tax code (Code)** | **Name**          |
 |---------------------------------------|---------------------|-------------------|
@@ -1120,18 +1283,13 @@ Follow the example steps to write off vendor bad debts:
     On tab **General**, select Sales tax group **WRITEOFF,** and **Item sales
     tax group** selected on step 5 above.
 
-7.  Settle open vendor invoice in standard way. Post journal. Review posted
-    sales tax transaction:
+7.  Settle open vendor invoice in standard way. Post journal. Review posted sales tax transaction:
 
--   **Sales tax direction** = **Sales tax receivable**
+    -   **Sales tax direction** = **Sales tax receivable**
+    -   **Amount origin** is equal to invoice amount without VAT
+    -   **Actual sales tax amount** is equal to VAT amount
 
--   **Amount origin** is equal to invoice amount without VAT
-
--   **Actual sales tax amount** is equal to VAT amount
-
-    1.  Go to **Electronic reporting** workspace, select configuration with VAT
-        declaration format. Select **Configurations \> Application specific
-        parameters \> Set up**. Create the following lines:
+8.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
 
 | **Lookup result**                   | **Tax code (Code)** | **Name**             |
 |-------------------------------------|---------------------|----------------------|
@@ -1142,12 +1300,9 @@ Follow the example steps to write off vendor bad debts:
 
 Follow the example steps to post correction of VAT deduction (Row 45)
 
-1.  Create a sales tax code **CORR** on **Sales tax codes** page, specifically
-    for usage in correction of the VAT deduction that is reflected in Row 45 of
-    VAT declaration
+1.  Create a sales tax code **CORR** on **Sales tax codes** page, specifically for usage in correction of the VAT deduction that is reflected in Row 45 of VAT declaration
 
-2.  Go to **General ledger \> Journal entries \> General journals**. Select the
-    daily journal. Select **Lines**.
+2.  Go to **General ledger \> Journal entries \> General journals**. Select the daily journal. Select **Lines**.
 
 3.  Create the following journal line:
 
@@ -1155,20 +1310,15 @@ Follow the example steps to post correction of VAT deduction (Row 45)
 |----------------|-------------------|-----------------------------------------------------|---------------------------------------|-----------------------------------------------|-------------------------|--------------------------------------------------------------|
 | Enter the date | Select **Ledger** | Select **Ledger account** for posting VAT deduction | Enter description for the transaction | Enter amount in increase VAT deduction amount | Select **Ledger**       | Select **Ledger account** to offset posting of VAT deduction |
 
-4.  Go to Tab **General**. Select sales tax code **CORR** created above in the
-    field **Sales tax code**.
+4.  Go to Tab **General**. Select sales tax code **CORR** created above in the field **Sales tax code**.
 
 5.  Post the journal. Review posted sales tax transaction:
 
--   **Sales tax direction** = **Sales tax receivable**
+    -   **Sales tax direction** = **Sales tax receivable**
+    -   **Amount origin** is equal to zero
+    -   **Actual sales tax amount** is equal to Debit amount
 
--   **Amount origin** is equal to zero
-
--   **Actual sales tax amount** is equal to Debit amount
-
-    1.  Go to **Electronic reporting** workspace, select configuration with VAT
-        declaration format. Select **Configurations \> Application specific
-        parameters \> Set up**. Create the following lines:
+6.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
 
 | **Lookup result**      | **Tax code (Code)** | **Name**             |
 |------------------------|---------------------|----------------------|
