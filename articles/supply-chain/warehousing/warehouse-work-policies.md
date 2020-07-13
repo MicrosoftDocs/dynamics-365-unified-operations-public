@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 This topic explains how to set up the system and the warehouse app so that they support work policies. Use this functionality to quickly register inventory without creating putaway work when receiving purchase or transfer orders, or when completing manufacturing processes. (This is a general topic, for details relating to license plate receiving see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).)
 
-A work policy controls whether warehouse work is created<!-- KFM: In response to what? -->. You set up each work policy by defining the conditions under which it applies (work order types and processes, inventory location, and (optionally) specific product(s)). For example, a purchase order of the product A0001 is to be received in warehouse 24, location RECV. The product is later consumed in another process at location RECV. In this case, you can set up a work policy to prevent  putaway work from being created when a worker reports product A0001 as received in RECV. 
+A work policy controls whether warehouse work is created<!-- KFM: In response to what? -->. You set up each work policy by defining the conditions under which it applies (work order types and processes, inventory location, and (optionally) specific product(s)). For example, a purchase order of the product A0001 is to be received in warehouse 24, location RECV. The product is later consumed in another process at location RECV. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product A0001 as received in RECV.
 
 > [!NOTE]
 > - For the work policy to be active, you must define at least one location for the work policy in the **Inventory locations** section. 
@@ -88,18 +88,14 @@ Use the **Products** tab to control which products the policy should apply to:
 > [!NOTE]
 > To make the functionality described in this section available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Previously, the system supported receiving only at the default location defined for each warehouse. However, mobile device menu items that use the following processes now provide the **Use default data** option, which lets you assign a custom "to" location for each menu item (this option was already available for some other types of menu items):
+Previously, the system supported receiving only at the default location defined for each warehouse. However, mobile device menu items that use the following processes now provide the **Use default data** option, which lets you assign a custom **To location** for one or more menu items (this option was already available for some other types of menu items):
 
-- License plate receiving
-- License plate receiving and putaway
-- Load item receiving
-- Load item receiving and putaway
-- Purchase order line receiving
-- Purchase order line receiving and putaway
-- Purchase order item receiving
-- Purchase order item receiving and putaway
+- License plate receiving (and putaway)
+- Load item receiving (and putaway)
+- Purchase order line receiving (and putaway)
+- Purchase order item receiving (and putaway)
 
-The **To location** will override the receiving location of the warehouse for all the orders processed with menu items set up to use this feature.
+The **To location** setting for a menu item will override the default receiving location of the warehouse for all the orders processed using that menu item.
 
 To set up a mobile device menu item to support receiving at a custom location:
 
@@ -110,18 +106,20 @@ To set up a mobile device menu item to support receiving at a custom location:
 1. The **Default data** page opens. Make the following settings:
     - **Default data field** - Set to *To location*.
     - **Warehouse** - Select the destination warehouse to use with this menu item.
-    - **Location** - Select the destination location to use with this menu item.
-    - **Hardcoded value** - Leave this blank. <!-- KFM: Correct? What is this for? -->
-
+    - **Location** - Select the destination location to use with this menu item. <!-- KFM: later in the scenario, we set **Hardcoded value** instead of this. Which is it? -->
+    - **Hardcoded value** -  <!-- KFM: How do we use this? It won't let me save with this field blank. -->
 
 > [!TIP]
 > For a work policy to be applied, all the receiving locations (whether your using the default warehouse receiving location or a custom **To location**) must be listed in the relevant **Work policies** setup.
 
 ## Example scenario: Warehouse receiving
 
-Some products are to be registered in location **FLOOR-001** and be available in warehouse **24** whenever received by the *Purchase order item* process. Products received by any other process should be registered in location **RECV** and work should be created as usual.
+All products received by the *Purchase order item* process are to be registered in location FL-001 and be available in warehouse 24<!-- KFM: without creating work? -->. Products received by any other process should be registered in location RECV and work should be created as usual. <!-- KFM: we don't show the standard setup for this. Should we? -->
 
-To allow for this we will need a work policy for the **Purchase order item receiving (and putaway)** process, on location **FLOOR-001**, for all products, and a menu item with default data **To location** for **FLOOR-001.**
+To allow for this, we will need:
+
+- A work policy for the *Purchase order item receiving (and putaway)* process on location FL-001 for all products
+- A mobile device menu item with default data that sets the **To location** to *FL-001*.
 
 ### Prerequisites
 
@@ -133,151 +131,153 @@ This scenario uses the standard demo data, so if you'd like to work through it u
 
 1. Go to **Warehouse management \> Setup \> Work \> Work policies**.
 1. Select **New**.
-1. In the **Work policy name** field, type "No purchase item putaway work".
+1. In the **Work policy name** field, enter *No purchase item putaway work*.
 1. Select **Save**.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the Work order type field, select **Purchase order**.
-1. In the Work order type field, select **Purchase order item receiving (and putaway)**.
-1. Expand the **Inventory locations** section.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the **Warehouse** list, enter **24**.
-1. In the **Location** field, enter or select **FLOOR-001**.
-1. Expand the **Products** section.
-1. In the Product selection field, select **All**.
+1. On the **Work order types** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
+    - **Work order type** - *Purchase orders*
+    - **Work process** - *Purchase order item receiving (and putaway)*
+    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
+    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+
+1. Expand the **Inventory locations** FastTab.
+1. Select **Add** to add a row to the grid and then make the following settings for the new row:
+    - **Warehouse** - *24*
+    - **Location** - *FL-001* <!-- KFM: Original text specified "FLOOR-01" but I see this instead (I changed it everywhere). Please confirm. -->
+1. Expand the **Products** FastTab and set **Product selection** to *All*.
 1. Select **Save**.
 
 ### Set up a mobile device menu item to change the receiving location
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select the existing **Purchase receive** menu item.
-1. Set **Use default data** to **Yes**.
+1. Select the existing **Purchase receive** menu item from the list pane.
+1. On the **General** FastTab, set **Use default data** to *Yes*.
 1. Select **Save**.
 1. On the Action Pane, select **Default data**.
-1. Select **New**.
-1. In **Default data field**, select **To location**.
-1. In the **Warehouse** field, select **24**.
-1. In the **Hardcoded value** field, write **FLOOR-001**.
+1. The **Default data** page opens. On the Action pane, select **New** to add a row to the grid and then make the following settings for the new row:
+    - **Default data field** - *To location*
+    - **Warehouse** - *24*
+    - **Location** - <!-- KFM: Should this really be blank? -->
+    - **Hardcoded value** - *FL-001*
 1. Select **Save**.
 
 ### Receive a purchase order without creating work
 
-This procedure shows an example of receiving a purchase order item without creating work at a location different than the default receiving location set up for the warehouse. An applicable work policy and mobile device menu item is a prerequisite for this task. The previous procedures show these setups.
+This procedure shows an example of how to receive a purchase order item without creating work at a location different than the default receiving location set up for the warehouse. It uses the work policy and mobile device item created earlier in this scenario.
 
 #### Create a purchase order
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.
-1. Select vendor account **US-101**.
-1. Expand the **General** section.
-1. Select site **2**.
-1. Select warehouse **24**.
-1. Select **OK**.
-1. Select the purchase order line.
-1. In the **Item number** field, select **A0001**.
+1. The **Create purchase order** dialog box opens. Make the following settings here:
+    - **Vendor account** - *US-101*
+    - **Site** - *2*
+    - **Warehouse** - *24*
+1. Select **OK** to close the dialog box and open the new purchase order
+1. Make the following settings for the empty row in the **Purchase order lines** FastTab:
+    - **Item number** - *A0001*
+    - **Quantity** - *1*
 1. Select **Save**.
+1. Take note of the purchase order number.
 
 #### Receive a purchase order
 
-1. Sign in to the mobile device on warehouse **24**
+1. Sign in to the mobile device on warehouse 24 (**User ID**: *24*, **Password**: *1*)
 1. Select **Inbound**.
-1. Select **Purchase receive**.
-   The current page should display location **FLOOR-001**.
-1. Write the purchase order number from the previous sub-taks.
-1. Write item number **A0001**.
+1. Select **Purchase receive**. The current page should display **Location** *FL-001*.
+1. Enter the purchase order number for the purchase order you created during the previous procedure.
+1. For **Item number**, enter *A0001*.
 1. Select **OK**.
-1. Write quantity **1**.
-1. Select **OK**
-1. Work completed.
+1. For **Quantity**, enter *1*.
+1. Select **OK**.
 
-The purchase order is now received and there's no work associated to it. The on-hand inventory has been updated and a quantity of 1 **A0001** is available in **FLOOR-001**.
+The purchase order is now received and there's no work associated with it. The on-hand inventory has been updated and a quantity of one A0001 is now available at location FL-001.
 
 ## Example scenario: Manufacturing
 
-In the following example, there are two production orders, PRD-001 and PRD-002. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location 001. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location 001. Production order PRD-002 also consumes raw material RM1 from location 001. RM1 is stored in warehouse location BULK-001 and will be picked to location 001 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released.
+In the following example, there are two production orders, PRD-001 and PRD-002. Production order PRD-001 has an operation that is named *Assembly*, where product SC1 is being reported as finished to location 001. Production order PRD-002 has an operation that is named *Painting* and consumes product SC1 from location 001. Production order PRD-002 also consumes raw material RM1 from location 001. RM1 is stored in warehouse location BULK-001 and will be picked to location 001 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released.
 
 [![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 When you plan to configure a warehouse work policy for this scenario, you should consider the following:
 
-- Warehouse work for finished goods putaway isn’t required when you report product SC1 as finished from production order PRD-001 to location 001. This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.
-- Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location 001.
+- Warehouse work for finished goods putaway isn't required when you report product SC1 as finished from production order PRD-001 to location 001. This is because the *Painting* operation for production order PRD-002 consumes SC1 at the same location.
+- Warehouse work for raw material picking is required to move raw material RM1 from warehouse location BULK-001 to location 001.
 
 Here is an example of a work policy that you could set up, based on these considerations:
 
-- **Work policy name**: No putaway work.
-- **Work order type**: _Finished goods put away_, and _Co-product and by-product put away_.
-- **Inventory locations**: warehouse 51, location 001
+- **Work policy name** - *No putaway work*
+- **Work order types** - *Finished goods put away* and *Co-product and by-product put away*.
+- **Inventory locations** - **Warehouse** *51*, **Location** *001*
 - **Products**: SC1
 
-The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario. A sample setup showing how to report a production order as finished to a location that isn’t license-plate controlled is also described.
+The following example scenario provides step-by-step instructions for how to set up the warehouse work policy for this scenario.
 
-## Example scenario: Report as finished to a location that isn’t license-plate controlled
+## Example scenario: Report as finished to a location that isn't license-plate controlled
 
-This scenario shows an example of reporting a production order as finished to a location that isn't license-plate controlled. This scenario assumes that you already have an appropriate work policy available.
+This scenario shows an example of reporting a production order as finished to a location that isn't license-plate controlled.
 
 This scenario uses the standard demo data, so if you'd like to work through it using the values provided here, you must work on a system with demo data installed and select the **USMF** legal entity.
 
 ### Set up a warehouse work policy
 
-Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.
+Warehouse processes don't always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and putaway of finished goods for a set of products at specific locations.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work policies**.
 1. Select **New**.
-1. In the Work policy name field, type **No put-away work**.
-1. Select **Save**.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the **Work order type** field, select **Finished goods put away**.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the **Work order type field**, select **Co-product and by-product put away**.
-1. Expand the **Inventory locations** section.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the **Warehouse** list, enter **51**.
-1. In the **Location** field, enter or select **001**.
-1. Expand the **Products** section.
-1. In the **Product selection** field, select **Selected**.
-1. Select **Add**.
-1. In the list, mark the selected row.
-1. In the **Item number** field, enter or select **L0101**.
-1. Select **Save**.
+1. In the **Work policy name** field, enter *No putaway work*.
+1. On the Action Pane, select **Save**.
+1. On the **Work order types** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
+    - **Work order type** - *Finished goods put away*
+    - **Work process** - *All related work processes*
+    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
+    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+
+1. Select **Add** from the toolbar again to add a second row to the grid and then make the following settings for the new row:
+    - **Work order type** - *Co-product and by-product put away*
+    - **Work process** - *All related work processes*
+    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
+    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+1. On the **Inventory locations** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
+    - **Warehouse** - *51*
+    - **Location** - *001*
+1. On the **Products** FastTab, set **Product selection** to *Selected*.
+1. On the **Products** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
+    - **Item number** - *L0101*
+1. On the Action Pane, select **Save**.
 
 ### Set up an output location
 
 1. Go to **Organization administration \> Resources \> Resource groups**.
-1. In the list, select resource group **5102**.
-1. Select **Edit**.
-1. In the **Output warehouse** field, enter **51**.
-1. In the **Output location** field, enter **001**.
+1. On the list pane, select resource group **5102**.
+1. Make the following settings on the **General** FastTab:
+    - **Output warehouse** - *51*
+    - **Output location** - *001*
+1. On the Action Pane, select **Save**.
 
 > [!NOTE]
 > Location 001 isn't a license-plate controlled location. You can set up a non–license plate output location only if an applicable work policy exists for the location.
 
 ### Create a production order and report it as finished
 
-1. Close the page.
 1. Go to **Production control \> Production orders \> All production orders**.
-1. Select **New production order**.
-1. In the Item number field, enter **L0101**.
+1. On the Action Pane, select **New production order**.
+1. The **Create production order** dialog box opens. Set the **Item number** to  *L0101* and then select **Create** to create the order and close the dialog box.
 1. Select **Create**.
-1. On the Action Pane, select **Production order**.
-1. Select **Estimate**.
-1. Select **OK**.
-1. Select **Start**.
-1. Select the **General** tab.
-1. In the **Automatic BOM consumption** field, select **Never**.
-1. Select **OK**.
-1. Select **Report as finished**.
-1. Select the **General** tab.
-1. Select **Yes** in the **Accept error** field.
-1. Select **OK**.
+1. A new production order is added to the **All production orders** grid. Keep this new production order selected.
+1. On the Action Pane, open the **Production order** tab and then, from the **Process** group, select **Estimate**.
+1. The **Estimate** dialog box opens. Read the estimate and then select **OK**.
+1. On the Action Pane, open the **Production order** tab and then, from the **Process** group, select **Start**.
+1. The **Start** dialog box opens. Open the **General** tab.
+1. Set **Automatic BOM consumption** to *Never*.
+1. Select **OK** to save you setting and close the dialog box.
+1. On the Action Pane, open the **Production order** tab and then, from the **Process** group, select **Report as finished**.
+1. The **Report as finished** dialog box opens. Open the **General** tab.
+1. Set **Accept error** to *Yes*.
+1. Select **OK** to save you setting and close the dialog box.
 1. On the Action Pane, select **Warehouse**.
-1. Select **Work details**.
+1. On the Action Pane, open the **Warehouse** tab and then, from the **General** group, select **Work details**.
 
-When the production order was reported as finished, no work was generated for put-away. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.
+When the production order was reported as finished, no work was generated for putaway. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.
 
 ## More information
 
