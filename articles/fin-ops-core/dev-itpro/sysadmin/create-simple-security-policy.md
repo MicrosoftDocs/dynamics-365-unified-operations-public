@@ -99,5 +99,5 @@ This topic explains how to create a simple security policy that secures access t
     d.  In the **Table Relation** field, enter the relationship to the primary
     table, in this case ‘CustGroup’.
 
-10.  As a final step, it is required that yoy build and synchronize the solution 
+10.  As a final step, it is required that you build and synchronize the solution 
     to activate the policy.
