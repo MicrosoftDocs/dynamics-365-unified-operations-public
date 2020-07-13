@@ -5,7 +5,7 @@ title: Finance and Operations and Common Data Service admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires Platform update 36 for Finance and Operations and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
