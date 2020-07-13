@@ -29,57 +29,63 @@ ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (July 8, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (July 8, 2020)
+
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## Database logging
 
 Database logging allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging.md).
 
-## Configure the name of Employee self-service
+## Configure the name of Employee self service
 
-A new option is now available in **Human Resources parameters** to update the name of the Employee self service workspace to Self service.
+In **Human Resources parameters**, you can now change the name of the **Employee self service** workspace to **Self service**. For more information, see [Change Employee self service workspace name](hr-employee-self-service-workspace-name.md)
 
 ## Benefits management open enrollment access outside of period
 
-A bug existed where employees could access benefits open enrollment outside of the enrollment period or without a life event.  This bug is fixed, however, if you would like to demo open enrollment in ESS you will need to adjust the open enrollment dates to today (or before) to make it accessible.  You can do this under Benefits management Rules and options periods.
+This release fixes a bug where employees could access benefits open enrollment outside of the enrollment period or without a life event. As a result, if you need to demo open enrollment in Employee self service, you must adjust the open enrollment dates to today (or earlier) to make it accessible. You can change this setting under **Benefits management > Rules and options periods**.
 
 ## Email employee enrollment confirmation
 
-Emails can now be sent to employees after they have completed their benefits selection.  You have the option to send a default message or use an organization email template.   These settings can be found under Human resource parameters > Benefits Management.
+You can now send emails to employees after they complete their benefits selection. You can either send a default message or use an organization email template. These settings are under **Human resource parameters > Benefits management**.
 
-## Cancelled leave still appears in upcoming time off on people workspace  - (441358)
+## Canceled leave still appears in upcoming time off on People workspace (441358)
 
-Cancelled leave will no longer display as upcoming time off on the leave cards in the people workspace.
+Canceled leave no longer displays as upcoming time off on the leave cards in the **People** workspace.
 
-## Unable to use the department entity property in the PositionV2 entity - (456486)
+## Unable to use the department entity property in the PositionV2 entity (456486)
 
-To correct this issue, a changes has been made to allow adding of department without creating a duplicate relation.
+You can now add a department without creating a duplicate relation.
 
-## PayrollWorkerEnrolledBenefitDetailEntity should only use calculated field for retirement plans - (459779)
+## PayrollWorkerEnrolledBenefitDetailEntity should only use calculated field for retirement plans (459779)
 
-When exporting the PayrollWorkerEnrolledBenefitDetailEntity entity it determines if it should utilize a calculated field based on a rate table or utilize the ContributionAmountCur field on the backing table. The logic used by the data entity utilizes the rate table in situations where the application normally would not, which is causing the entity exports to return a zero value for this column since there is no calculation rate table and the product does not allow the customer to specify one.
+When exporting the **PayrollWorkerEnrolledBenefitDetailEntity** entity, the export determines whether it should use a calculated field based on a rate table or use the **ContributionAmountCur** field on the backing table. The logic used by the data entity uses the rate table in situations where the application normally doesn't. This logic causes the entity exports to return a zero value for this column, because there's no calculation rate table and the product doesn't allow the customer to specify one.
  
-## Confusing translations in Czech language in Personnel Management and Employee Self-Service - (400276)
+## Confusing translations in Czech language in Personnel management and Employee self service (400276)
 
-Corrections have been made for translations for Company directory, Next registered course, Job and Position.
+This release corrects the translations for **Company directory**, **Next registered course**, **Job**, and **Position**.
  
-## WorkCalendarEmployment table does not have the Create and Modified System Fields enabled - (460171)
+## The WorkCalendarEmployment table doesn't have the created and modified system fields enabled (460171)
 
-Created and Modified system fields have been enabled on the WorkCalendarEmployment table in Human Resources.
+Created and modified system fields are now enabled on the **WorkCalendarEmployment** table in Human Resources.
  
-## Null reference exception when doing "Hire and add details" for future employee - (455475)
+## Null reference exception for Hire and add details for future employee (455475)
 
-A change has been made to correct an error (Null Reference) when using streamlined employee entry feature, and you hire an employee using the option to "hire and add details.
+This release corrects an error (null reference) in streamlined employee entry when you hire an employee using the option to **Hire and add details**.
 
-## Changes made in CDS worker entity do not reflect in D365 HR - Works from home, Seniority date, Anniversary date and Original hire date - (455652)
+## Changes made in the Common Data Service Worker entity don't reflect in Human Resources (455652)
 
-Changes made to: Works from home, Seniority date, Anniversary date and Original hire date will now be reflected in HR when changes have been made in CDS.
+Changes made to the following fields in the **Worker** entity in Common Data Service will now show up in Human Resources:
 
-## Correct compensation level not defaulting based on the Job assigned to the position. - (394136)
+- **Works from home**
+- **Seniority date**
+- **Anniversary date**
+- **Original hire date**
 
-With this change, the correct compensation level will default based on the date effective records for the position details and the start date of the compensation plan assignment.
+## Correct compensation level doesn't default based on the job assigned to the position (394136)
+
+With this change, the correct compensation level defaults based on the **Date effective** records for the **Position details** and the **Start date** of the **Compensation plan assignment**.
 
 ## In preview
 
@@ -104,9 +110,9 @@ Some organizations provide a benefit that allows employees to buy or sell their 
 
 ## Leave accrual for a single company or single plan
 
-Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity into the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
 
-## Add attachments to time off requests
+## Add attachments to time-off requests
 
 The ability to add attachments to approved leave requests is critical in the current COVID-19 environment. Employees can now add these attachments. They also have more insight into how updates are made to leave requests. For more information, see [Add an attachment to an existing request](hr-employee-self-service-request-time-off.md#add-an-attachment-to-an-existing-request).
 
@@ -130,4 +136,11 @@ A DMF entity is now available for accrual suspensions.
 
 ## Checklist entities included in Common Data Service
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)
