@@ -39,137 +39,1154 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 
 ### Section I Taxable transactions
 
-| **Row** | **Control statement section** | **Description**                                                     | **Rate** | **XML element - Tax base** | **XML element -Tax payable** | **Report field (Application specific parameters – lookup result)**                                                                                                                   |
-|---------|-------------------------------|---------------------------------------------------------------------|----------|----------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1       | A4 \\ A5                      | Domestic sales of goods and services                                | standard | obrat23                    | dan23                        | DomesticSalesVATPayableStandard                                                                                                                                                      |
-|         |                               |                                                                     |          |                            |                              | (minus) VATAdjustmentCustomerBadDebtsStandard                                                                                                                                        |
-| 2       | A4 \\ A5                      | Domestic sales of goods and services                                | reduced  | obrat5                     | dan5                         | DomesticSalesVATPayableReduced                                                                                                                                                       |
-|         |                               |                                                                     |          |                            |                              | DomesticSalesVATPayableReduced2                                                                                                                                                      |
-|         |                               |                                                                     |          |                            |                              | (minus) VATAdjustmentCustomerBadDebtsReduced                                                                                                                                         |
-|         |                               |                                                                     |          |                            |                              | (minus) VATAdjustmentCustomerBadDebtsReduced2                                                                                                                                        |
-| 3       | A2                            | Intra-community purchase of goods                                   | standard | p_zb23                     | dan_pzb23                    | EUPurchaseGoodsVATPayableStandard EUPurchaseGoodsUseTaxStandard                                                                                                                      |
-| 4       | A2                            | Intra-community purchase of goods                                   | reduced  | p_zb5                      | dan_pzb5                     | EUPurchaseGoodsVATPayableReduced                                                                                                                                                     |
-|         |                               |                                                                     |          |                            |                              | EUPurchaseGoodsVATPayableReduced2 EUPurchaseGoodsUseTaxReduced EUPurchaseGoodsUseTaxReduced2                                                                                         |
-| 5       | A2                            | Intra-community purchase of services                                | standard | p_sl23_e                   | dan_psl23_e                  | EUPurchaseServicesVATPayableStandard EUPurchaseServicesUseTaxStandard                                                                                                                |
-| 6       | A2                            | Intra-community purchase of services                                | reduced  | p_sl5_e                    | dan_psl5_e                   | EUPurchaseServicesVATPayableReduced                                                                                                                                                  |
-|         |                               |                                                                     |          |                            |                              | EUPurchaseServicesVATPayableReduced2 EUPurchaseServicesUseTaxReduced EUPurchaseServicesUseTaxReduced2                                                                                |
-| 7       | n/a                           | Import of goods                                                     | standard | dov_zb23                   | dan_dzb23                    | ImportGoodsVATPayableStandard ImportGoodsUseTaxStandard                                                                                                                              |
-| 8       | n/a                           | Import of goods                                                     | reduced  | dov_zb5                    | dan_dzb5                     | ImportGoodsVATPayableReduced ImportGoodsUseTaxReduced                                                                                                                                |
-| 9       | A2                            | Intra-community purchase of new means of transport                  |          | p_dop_nrg                  | dan_pdop_nrg                 | EUPurchaseNewTransportVATPayable EUPurchaseNewTransportUseTax                                                                                                                        |
-| 10      | B1                            | Purchase of goods and services under domestic reverse charge (\$92) | standard | rez_pren23                 | dan_rpren23                  | DomesticPurchaseReverseChargeVATPayableStandard DomesticPurchaseReverseChargeUseTaxStandard                                                                                          |
-| 11      | B1                            | Purchase of goods and services under domestic reverse charge (\$92) | reduced  | rez_pren5                  | dan_rpren5                   | DomesticPurchaseReverseChargeVATPayableReduced                                                                                                                                       |
-|         |                               |                                                                     |          |                            |                              | DomesticPurchaseReverseChargeVATPayableReduced2 DomesticPurchaseReverseChargeUseTaxReduced DomesticPurchaseReverseChargeUseTaxReduced2                                               |
-| 12      | A2                            | Other purchases with obligation to pay VAT                          | standard | p_sl23_z                   | dan_psl23_z                  | OtherPurchasesVATPayableStandard OtherPurchasesUseTaxStandard                                                                                                                        |
-| 13      | A2                            | Other purchases with obligation to pay VAT                          | reduced  | p_sl5_z                    | dan_psl5_z                   | OtherPurchasesVATPayableReduced                                                                                                                                                      |
-|         |                               |                                                                     |          |                            |                              | OtherPurchasesVATPayableReduced2 OtherPurchasesUseTaxReduced OtherPurchasesUseTaxReduced2                                                                                            |
+<table width="100%">
+<tbody>
+<tr>
+<td width="4%">
+<p><strong>Row</strong></p>
+</td>
+<td width="8%">
+<p><strong>Control statement </strong><strong>section</strong></p>
+</td>
+<td width="25%">
+<p><strong>Description</strong></p>
+</td>
+<td width="9%">
+<p><strong>R</strong><strong>ate</strong></p>
+</td>
+<td width="11%">
+<p><strong>XML element - </strong><strong>Tax base</strong></p>
+</td>
+<td width="10%">
+<p><strong>XML element -</strong><strong>Tax payable</strong></p>
+</td>
+<td width="31%">
+<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>1</p>
+</td>
+<td width="8%">
+<p>A4 \ A5</p>
+</td>
+<td width="25%">
+<p>Domestic sales of goods and services</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>obrat23</p>
+</td>
+<td width="10%">
+<p>dan23</p>
+</td>
+<td width="31%">
+<p>DomesticSalesVATPayableStandard<br /> (minus) VATAdjustmentCustomerBadDebtsStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>2</p>
+</td>
+<td width="8%">
+<p>A4 \ A5</p>
+</td>
+<td width="25%">
+<p>Domestic sales of goods and services</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>obrat5</p>
+</td>
+<td width="10%">
+<p>dan5</p>
+</td>
+<td width="31%">
+<p>DomesticSalesVATPayableReduced<br /> DomesticSalesVATPayableReduced2<br /> (minus) VATAdjustmentCustomerBadDebtsReduced<br /> (minus) VATAdjustmentCustomerBadDebtsReduced2</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>3</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Intra-community purchase of goods</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>p_zb23</p>
+</td>
+<td width="10%">
+<p>dan_pzb23</p>
+</td>
+<td width="31%">
+<p>EUPurchaseGoodsVATPayableStandard</p>
+<p>EUPurchaseGoodsUseTaxStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>4</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Intra-community purchase of goods</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>p_zb5</p>
+</td>
+<td width="10%">
+<p>dan_pzb5</p>
+</td>
+<td width="31%">
+<p>EUPurchaseGoodsVATPayableReduced<br /> EUPurchaseGoodsVATPayableReduced2</p>
+<p>EUPurchaseGoodsUseTaxReduced</p>
+<p>EUPurchaseGoodsUseTaxReduced2</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>5</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Intra-community purchase of services</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>p_sl23_e</p>
+</td>
+<td width="10%">
+<p>dan_psl23_e</p>
+</td>
+<td width="31%">
+<p>EUPurchaseServicesVATPayableStandard</p>
+<p>EUPurchaseServicesUseTaxStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>6</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Intra-community purchase of services</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>p_sl5_e</p>
+</td>
+<td width="10%">
+<p>dan_psl5_e</p>
+</td>
+<td width="31%">
+<p>EUPurchaseServicesVATPayableReduced<br /> EUPurchaseServicesVATPayableReduced2</p>
+<p>EUPurchaseServicesUseTaxReduced</p>
+<p>EUPurchaseServicesUseTaxReduced2</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>7</p>
+</td>
+<td width="8%">
+<p>n/a</p>
+</td>
+<td width="25%">
+<p>Import of goods</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>dov_zb23</p>
+</td>
+<td width="10%">
+<p>dan_dzb23</p>
+</td>
+<td width="31%">
+<p>ImportGoodsVATPayableStandard</p>
+<p>ImportGoodsUseTaxStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>8</p>
+</td>
+<td width="8%">
+<p>n/a</p>
+</td>
+<td width="25%">
+<p>Import of goods</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>dov_zb5</p>
+</td>
+<td width="10%">
+<p>dan_dzb5</p>
+</td>
+<td width="31%">
+<p>ImportGoodsVATPayableReduced</p>
+<p>ImportGoodsUseTaxReduced</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>9</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Intra-community purchase of new means of transport</p>
+</td>
+<td width="9%">
+<p>&nbsp;</p>
+</td>
+<td width="11%">
+<p>p_dop_nrg</p>
+</td>
+<td width="10%">
+<p>dan_pdop_nrg</p>
+</td>
+<td width="31%">
+<p>EUPurchaseNewTransportVATPayable</p>
+<p>EUPurchaseNewTransportUseTax</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>10</p>
+</td>
+<td width="8%">
+<p>B1</p>
+</td>
+<td width="25%">
+<p>Purchase of goods and services under domestic reverse charge ($92)</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>rez_pren23</p>
+</td>
+<td width="10%">
+<p>dan_rpren23</p>
+</td>
+<td width="31%">
+<p>DomesticPurchaseReverseChargeVATPayableStandard</p>
+<p>DomesticPurchaseReverseChargeUseTaxStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>11</p>
+</td>
+<td width="8%">
+<p>B1</p>
+</td>
+<td width="25%">
+<p>Purchase of goods and services under domestic reverse charge ($92)</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>rez_pren5</p>
+</td>
+<td width="10%">
+<p>dan_rpren5</p>
+</td>
+<td width="31%">
+<p>DomesticPurchaseReverseChargeVATPayableReduced<br /> DomesticPurchaseReverseChargeVATPayableReduced2</p>
+<p>DomesticPurchaseReverseChargeUseTaxReduced</p>
+<p>DomesticPurchaseReverseChargeUseTaxReduced2</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>12</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Other purchases with obligation to pay VAT</p>
+</td>
+<td width="9%">
+<p>standard</p>
+</td>
+<td width="11%">
+<p>p_sl23_z</p>
+</td>
+<td width="10%">
+<p>dan_psl23_z</p>
+</td>
+<td width="31%">
+<p>OtherPurchasesVATPayableStandard</p>
+<p>OtherPurchasesUseTaxStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>13</p>
+</td>
+<td width="8%">
+<p>A2</p>
+</td>
+<td width="25%">
+<p>Other purchases with obligation to pay VAT</p>
+</td>
+<td width="9%">
+<p>reduced</p>
+</td>
+<td width="11%">
+<p>p_sl5_z</p>
+</td>
+<td width="10%">
+<p>dan_psl5_z</p>
+</td>
+<td width="31%">
+<p>OtherPurchasesVATPayableReduced<br /> OtherPurchasesVATPayableReduced2</p>
+<p>OtherPurchasesUseTaxReduced</p>
+<p>OtherPurchasesUseTaxReduced2</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Section II Other supplies and supplies with place of supply outside the Czech Republic with the right to deduct
 
-| **Row** | ** Control statement section** | **Description**                                                       | **XML element - Tax base** | **Report field (Application specific parameters – lookup result)**   |
-|---------|--------------------------------|-----------------------------------------------------------------------|----------------------------|----------------------------------------------------------------------|
-| 20      | n/a                            | Intra-community sales of goods                                        | dod_zb                     | EUSalesGoods                                                         |
-| 21      | n/a                            | Intra-community sales of services                                     | pln_sluzby                 | EUSalesServices                                                      |
-| 22      | n/a                            | Export of goods                                                       | pln_vyvoz                  | ExportGoods                                                          |
-| 23      | n/a                            | Intra-community sales of new means of transport to non-taxable person | dod_dop_nrg                | EUSalesNewTransport                                                  |
-| 24      | n/a                            | Intra-community consignment of goods                                  | pln_zaslani                | EUConsignmentGoods                                                   |
-| 25      | A1                             | Sales of goods and services under domestic reverse charge (\$92)      | pln_rez_pren               | DomesticSalesReverseCharge                                           |
-| 26      | A3 and Other                   | Other tax deductible transactions                                     | pln_ost                    | OtherSalesWithRightToDeduct                                          |
-|         |                                |                                                                       |                            | OtherSalesWithRightToDeductGoldInvestment                            |
+<table width="100%">
+<tbody>
+<tr>
+<td width="4%">
+<p><strong>Row</strong></p>
+</td>
+<td width="9%">
+<p><strong>&nbsp;Control statement </strong><strong>section</strong></p>
+</td>
+<td width="36%">
+<p><strong>Description</strong></p>
+</td>
+<td width="17%">
+<p><strong>XML element - </strong><strong>Tax base</strong></p>
+</td>
+<td width="31%">
+<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>20</p>
+</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="36%">
+<p>Intra-community sales of goods</p>
+</td>
+<td width="17%">
+<p>dod_zb</p>
+</td>
+<td width="31%">
+<p>EUSalesGoods</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>21</p>
+</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="36%">
+<p>Intra-community sales of services</p>
+</td>
+<td width="17%">
+<p>pln_sluzby</p>
+</td>
+<td width="31%">
+<p>EUSalesServices</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>22</p>
+</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="36%">
+<p>Export of goods</p>
+</td>
+<td width="17%">
+<p>pln_vyvoz</p>
+</td>
+<td width="31%">
+<p>ExportGoods</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>23</p>
+</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="36%">
+<p>Intra-community sales of new means of transport to non-taxable person</p>
+</td>
+<td width="17%">
+<p>dod_dop_nrg</p>
+</td>
+<td width="31%">
+<p>EUSalesNewTransport</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>24</p>
+</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="36%">
+<p>Intra-community consignment of goods</p>
+</td>
+<td width="17%">
+<p>pln_zaslani</p>
+</td>
+<td width="31%">
+<p>EUConsignmentGoods</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>25</p>
+</td>
+<td width="9%">
+<p>A1</p>
+</td>
+<td width="36%">
+<p>Sales of goods and services under domestic reverse charge ($92)</p>
+</td>
+<td width="17%">
+<p>pln_rez_pren</p>
+</td>
+<td width="31%">
+<p>DomesticSalesReverseCharge</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>26</p>
+</td>
+<td width="9%">
+<p>A3 and Other</p>
+</td>
+<td width="36%">
+<p>Other tax deductible transactions</p>
+</td>
+<td width="17%">
+<p>pln_ost</p>
+</td>
+<td width="31%">
+<p>OtherSalesWithRightToDeduct<br /> OtherSalesWithRightToDeductGoldInvestment</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Section III Additional data
 
-| **Row** | ** Control statement section** | **Description**                                            | **XML element - Tax base** | **XML element - Tax amount** | **Report field (Application specific parameters – lookup result)**                                                                                          |
-|---------|--------------------------------|------------------------------------------------------------|----------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 30      | n/a                            | Simplified triangular Intra-community acquisition of goods | tri_pozb                   | n/a                          | SimplifiedTriangularEUPurchaseGoods                                                                                                                         |
-| 31      | n/a                            | Simplified triangular Intra-community sale of goods        | tri_dozb                   | n/a                          | SimplifiedTriangularEUSalesGoods                                                                                                                            |
-| 32      | n/a                            | Import of exempt goods                                     | dov_osv                    | n/a                          | ImportGoodsVATExempt                                                                                                                                        |
-| 33      | A4                             | VAT amount adjustment for bad debts - creditor             | n/a                        | opr_verit                    | *Informative value. Included in Rows 1 and 2*                                                                                                               |
-|         |                                |                                                            |                            |                              |                                                                                                                                                             |
-|         |                                |                                                            |                            |                              | VATAdjustmentCustomerBadDebtsStandard                                                                                                                       |
-|         |                                |                                                            |                            |                              | VATAdjustmentCustomerBadDebtsReduced                                                                                                                        |
-|         |                                |                                                            |                            |                              | VATAdjustmentCustomerBadDebtsReduced2                                                                                                                       |
-| 34      | B2                             | VAT amount adjustment for bad debts - debtor               | n/a                        | opr_dluz                     | *Informative value. Included in Rows 40 and 41*                                                                                                             |
-|         |                                |                                                            |                            |                              |                                                                                                                                                             |
-|         |                                |                                                            |                            |                              | VATAdjustmentVendorBadDebtsStandard                                                                                                                         |
-|         |                                |                                                            |                            |                              | VATAdjustmentVendorBadDebtsReduced                                                                                                                          |
-|         |                                |                                                            |                            |                              | VATAdjustmentVendorBadDebtsReduced2                                                                                                                         |
+<table width="1020">
+<tbody>
+<tr>
+<td width="47">
+<p><strong>Row</strong></p>
+</td>
+<td width="95">
+<p><strong>&nbsp;Control statement </strong><strong>section</strong></p>
+</td>
+<td width="340">
+<p><strong>Description</strong></p>
+</td>
+<td width="113">
+<p><strong>XML element - </strong><strong>Tax base</strong></p>
+</td>
+<td width="104">
+<p><strong>XML element - </strong><strong>Tax amount</strong></p>
+</td>
+<td width="321">
+<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>30</p>
+</td>
+<td width="95">
+<p>n/a</p>
+</td>
+<td width="340">
+<p>Simplified triangular Intra-community acquisition of goods</p>
+</td>
+<td width="113">
+<p>tri_pozb</p>
+</td>
+<td width="104">
+<p>n/a</p>
+</td>
+<td width="321">
+<p>SimplifiedTriangularEUPurchaseGoods</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>31</p>
+</td>
+<td width="95">
+<p>n/a</p>
+</td>
+<td width="340">
+<p>Simplified triangular Intra-community sale of goods</p>
+</td>
+<td width="113">
+<p>tri_dozb</p>
+</td>
+<td width="104">
+<p>n/a</p>
+</td>
+<td width="321">
+<p>SimplifiedTriangularEUSalesGoods</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>32</p>
+</td>
+<td width="95">
+<p>n/a</p>
+</td>
+<td width="340">
+<p>Import of exempt goods</p>
+</td>
+<td width="113">
+<p>dov_osv</p>
+</td>
+<td width="104">
+<p>n/a</p>
+</td>
+<td width="321">
+<p>ImportGoodsVATExempt</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>33</p>
+</td>
+<td width="95">
+<p>A4</p>
+</td>
+<td width="340">
+<p>VAT amount adjustment for bad debts - creditor</p>
+</td>
+<td width="113">
+<p>n/a</p>
+</td>
+<td width="104">
+<p>opr_verit</p>
+</td>
+<td width="321">
+<p><em>Informative value. Included in Rows 1 and 2</em><br /> <br /> VATAdjustmentCustomerBadDebtsStandard<br /> VATAdjustmentCustomerBadDebtsReduced<br /> VATAdjustmentCustomerBadDebtsReduced2</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>34</p>
+</td>
+<td width="95">
+<p>B2</p>
+</td>
+<td width="340">
+<p>VAT amount adjustment for bad debts - debtor</p>
+</td>
+<td width="113">
+<p>n/a</p>
+</td>
+<td width="104">
+<p>opr_dluz</p>
+</td>
+<td width="321">
+<p><em>Informative value. Included in Rows 40 and 41</em><br /> <br /> VATAdjustmentVendorBadDebtsStandard<br /> VATAdjustmentVendorBadDebtsReduced<br /> VATAdjustmentVendorBadDebtsReduced2</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Section IV VAT deduction
 
-| **Row** | ** Control statement section** | **Description**                                               | ** Rate** | **XML element - Tax base** | **XML element -Full tax deduction** | **XML element - Tax deduction adjustment** | **Report field (Application specific parameters – lookup result)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|---------|--------------------------------|---------------------------------------------------------------|-----------|----------------------------|-------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 40      | B2/B3                          | From taxable purchases                                        | standard  | pln23                      | odp_tuz23_nar                       | odp_tuz23                                  | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|         |                                |                                                               |           |                            |                                     |                                            | AcquiredAssetsStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus) VATAdjustmentVendorBadDebtsStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionAdjustStandard AcquiredAssetsAdjustStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus) VATAdjustmentVendorBadDebtsAdjustStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| 41      | B2/B3                          | From taxable purchases                                        | reduced   | pln5                       | odp_tuz5_nar                        | odp_tuz5                                   | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionReduced2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|         |                                |                                                               |           |                            |                                     |                                            | AcquiredAssetsReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus) VATAdjustmentVendorBadDebtsReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus) VATAdjustmentVendorBadDebtsReduced2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionAdjustReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|         |                                |                                                               |           |                            |                                     |                                            | PurchaseVATDeductionAdjustReduced2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus)VATAdjustmentVendorBadDebtsAdjustReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | (minus)VATAdjustmentVendorBadDebtsAdjustReduced2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|         |                                |                                                               |           |                            |                                     |                                            | AcquiredAssetsAdjustReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 42      | n/a                            | From import of goods when Tax authority is the customs office |           | dov_cu                     | odp_cu_nar                          | odp_cu                                     | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | ImportVATDeductionTaxAdminCustomsOffice                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | ImportVATDeductionAdjustTaxAdminCustomsOffice                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 43      | n/a                            | From taxable transactions reported in rows 3-13               | standard  | nar_zdp23                  | od_zdp23                            | odkr_zdp23                                 | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionFromPurchasesWithVATPayableStandard EUPurchaseGoodsUseTaxStandard (from row 3) EUPurchaseServicesUseTaxStandard (from row 5) ImportGoodsUseTaxStandard (from row 7) EUPurchaseNewTransportUseTax (from row 9) DomesticPurchaseReverseChargeUseTaxStandard (from row 10) OtherPurchasesUseTaxStandard (from row 12)                                                                                                                                                                                                                                               |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionAdjustFromPurchasesWithVATPayableStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| 44      | n/a                            | From taxable transactions reported in rows 3-13               | reduced   | nar_zdp5                   | od_zdp5                             | odkr_zdp5                                  | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionFromPurchasesWithVATPayableReduced EUPurchaseGoodsUseTaxReduced (from row 4) EUPurchaseGoodsUseTaxReduced2 (from row 4) EUPurchaseServicesUseTaxReduced (from row 6) EUPurchaseServicesUseTaxReduced2 (from row 6) ImportGoodsUseTaxReduced (from row 8) DomesticPurchaseReverseChargeUseTaxReduced (from row 11) DomesticPurchaseReverseChargeUseTaxReduced2 (from row 11) OtherPurchasesUseTaxReduced (from row 13) OtherPurchasesUseTaxReduced2 (from row 13)                                                                                                 |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionAdjustFromPurchasesWithVATPayableReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 45      | n/a                            | Correction of tax deductions                                  |           | n/a                        | odp_rez_nar                         | odp_rezim                                  | **Full deduction:**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionCorrection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|         |                                |                                                               |           |                            |                                     |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                |                                                               |           |                            |                                     |                                            | **Deduction adjustment**:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|         |                                |                                                               |           |                            |                                     |                                            | VATDeductionAdjustCorrection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **46**  | n/a                            | **Total deduction (40 + 41 + 42 + 43 + 44 + 45)**             |           | **n/a**                    | **odp_sum_nar**                     | **odp_sum_kr**                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| 47      | n/a                            | Value of acquired assets defined in § 4 para. d) ae)          | x         | nar_maj                    | od_maj                              | odkr_maj                                   | *Informative value. Included in Rows 40 and 41* **Full deduction:** AcquiredAssetsStandard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|         |                                |                                                               |           |                            |                                     |                                            | AcquiredAssetsReduced **Deduction adjustment**: AcquiredAssetsAdjustStandard AcquiredAssetsAdjustReduced                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+<table width="99%">
+<tbody>
+<tr>
+<td width="4%">
+<p><strong>Row</strong></p>
+</td>
+<td width="7%">
+<p><strong>&nbsp;Control statement </strong><strong>section</strong></p>
+</td>
+<td width="20%">
+<p><strong>Description</strong></p>
+</td>
+<td width="7%">
+<p><strong>&nbsp;</strong><strong>Rate</strong></p>
+</td>
+<td width="9%">
+<p><strong>XML element - </strong><strong>Tax base</strong></p>
+</td>
+<td width="7%">
+<p><strong>XML element -Full tax deduction</strong></p>
+</td>
+<td width="9%">
+<p><strong>XML element - Tax deduction adjustment</strong></p>
+</td>
+<td width="34%">
+<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>40</p>
+</td>
+<td width="7%">
+<p>B2/B3</p>
+</td>
+<td width="20%">
+<p>From taxable purchases</p>
+</td>
+<td width="7%">
+<p>standard</p>
+</td>
+<td width="9%">
+<p>pln23</p>
+</td>
+<td width="7%">
+<p>odp_tuz23_nar</p>
+</td>
+<td width="9%">
+<p>odp_tuz23</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> PurchaseVATDeductionStandard<br /> AcquiredAssetsStandard<br /> (minus) VATAdjustmentVendorBadDebtsStandard<br /> <br /> <strong>Deduction adjustment</strong>:<br /> PurchaseVATDeductionAdjustStandard</p>
+<p>AcquiredAssetsAdjustStandard<br /> (minus) VATAdjustmentVendorBadDebtsAdjustStandard<br /> </p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>41</p>
+</td>
+<td width="7%">
+<p>B2/B3</p>
+</td>
+<td width="20%">
+<p>From taxable purchases</p>
+</td>
+<td width="7%">
+<p>reduced</p>
+</td>
+<td width="9%">
+<p>pln5</p>
+</td>
+<td width="7%">
+<p>odp_tuz5_nar</p>
+</td>
+<td width="9%">
+<p>odp_tuz5</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> PurchaseVATDeductionReduced<br /> PurchaseVATDeductionReduced2<br /> AcquiredAssetsReduced<br /> (minus) VATAdjustmentVendorBadDebtsReduced<br /> (minus) VATAdjustmentVendorBadDebtsReduced2<br /> <br /> <strong>Deduction adjustment</strong>:<br /> PurchaseVATDeductionAdjustReduced<br /> PurchaseVATDeductionAdjustReduced2<br /> (minus)VATAdjustmentVendorBadDebtsAdjustReduced<br /> (minus)VATAdjustmentVendorBadDebtsAdjustReduced2<br /> AcquiredAssetsAdjustReduced</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>42</p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p>From import of goods when Tax authority is the customs office</p>
+</td>
+<td width="7%">&nbsp;</td>
+<td width="9%">
+<p>dov_cu</p>
+</td>
+<td width="7%">
+<p>odp_cu_nar</p>
+</td>
+<td width="9%">
+<p>odp_cu</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> ImportVATDeductionTaxAdminCustomsOffice<br /> <br /> <strong>Deduction adjustment</strong>:<br /> ImportVATDeductionAdjustTaxAdminCustomsOffice</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>43</p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p>From taxable transactions reported in rows 3-13</p>
+</td>
+<td width="7%">
+<p>standard</p>
+</td>
+<td width="9%">
+<p>nar_zdp23</p>
+</td>
+<td width="7%">
+<p>od_zdp23</p>
+</td>
+<td width="9%">
+<p>odkr_zdp23</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> VATDeductionFromPurchasesWithVATPayableStandard</p>
+<p>&nbsp;</p>
+<p>EUPurchaseGoodsUseTaxStandard (from row 3)</p>
+<p>EUPurchaseServicesUseTaxStandard (from row 5)</p>
+<p>ImportGoodsUseTaxStandard (from row 7)</p>
+<p>EUPurchaseNewTransportUseTax (from row 9)</p>
+<p>DomesticPurchaseReverseChargeUseTaxStandard&nbsp; (from row 10)</p>
+<p>OtherPurchasesUseTaxStandard (from row 12)<br /> <br /> <strong>Deduction adjustment</strong>:<br /> VATDeductionAdjustFromPurchasesWithVATPayableStandard</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>44</p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p>From taxable transactions reported in rows 3-13</p>
+</td>
+<td width="7%">
+<p>reduced</p>
+</td>
+<td width="9%">
+<p>nar_zdp5</p>
+</td>
+<td width="7%">
+<p>od_zdp5</p>
+</td>
+<td width="9%">
+<p>odkr_zdp5</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> VATDeductionFromPurchasesWithVATPayableReduced</p>
+<p>&nbsp;</p>
+<p>EUPurchaseGoodsUseTaxReduced (from row 4)</p>
+<p>EUPurchaseGoodsUseTaxReduced2 (from row 4)</p>
+<p>EUPurchaseServicesUseTaxReduced&nbsp; (from row 6)</p>
+<p>EUPurchaseServicesUseTaxReduced2 (from row 6)</p>
+<p>ImportGoodsUseTaxReduced (from row 8)</p>
+<p>DomesticPurchaseReverseChargeUseTaxReduced (from row 11)</p>
+<p>DomesticPurchaseReverseChargeUseTaxReduced2 (from row 11)</p>
+<p>OtherPurchasesUseTaxReduced (from row 13)</p>
+<p>OtherPurchasesUseTaxReduced2 (from row 13)<br /> <br /> <strong>Deduction adjustment</strong>:<br /> VATDeductionAdjustFromPurchasesWithVATPayableReduced</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>45</p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p>Correction of tax deductions</p>
+</td>
+<td width="7%">&nbsp;</td>
+<td width="9%">
+<p>n/a</p>
+</td>
+<td width="7%">
+<p>odp_rez_nar</p>
+</td>
+<td width="9%">
+<p>odp_rezim</p>
+</td>
+<td width="34%">
+<p><strong>Full deduction:</strong><br /> VATDeductionCorrection<br /> <br /> <strong>Deduction adjustment</strong>:<br /> VATDeductionAdjustCorrection</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p><strong>46</strong></p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p><strong>Total deduction (40 + 41 + 42 + 43 + 44 + 45)</strong></p>
+</td>
+<td width="7%">&nbsp;</td>
+<td width="9%">
+<p><strong>n/a</strong></p>
+</td>
+<td width="7%">
+<p><strong>odp_sum_nar</strong></p>
+</td>
+<td width="9%">
+<p><strong>odp_sum_kr</strong></p>
+</td>
+<td width="34%">&nbsp;</td>
+</tr>
+<tr>
+<td width="4%">
+<p>47</p>
+</td>
+<td width="7%">
+<p>n/a</p>
+</td>
+<td width="20%">
+<p>Value of acquired assets defined in &sect; 4 para. d) ae)</p>
+</td>
+<td width="7%">
+<p>x</p>
+</td>
+<td width="9%">
+<p>nar_maj</p>
+</td>
+<td width="7%">
+<p>od_maj</p>
+</td>
+<td width="9%">
+<p>odkr_maj</p>
+</td>
+<td width="34%">
+<p><em>Informative value. Included in Rows 40 and 41</em></p>
+<p>&nbsp;</p>
+<p><strong>Full deduction:</strong></p>
+<p>AcquiredAssetsStandard<br /> AcquiredAssetsReduced<br /> </p>
+<p><strong>Deduction adjustment</strong>:</p>
+<p>AcquiredAssetsAdjustStandard</p>
+<p>AcquiredAssetsAdjustReduced</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### V Reduction of the right to deduct
 
-| **Row** | **Description**                                                                            | **XML element - Tax base** | **Comment**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---------|--------------------------------------------------------------------------------------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 50      | Exempt sales                                                                               | plnosv_kf                  | Application specific parameter – lookup result: SalesVATExempt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 51      | Value of sales not included in calculation of coefficient Row 53 - With right to deduct    | pln_nkf                    | *Informative value - only for December declaration. Relates to all January-December transactions* Manual amount – user input parameter on the report dialog: **Value of taxable sales not included in calculation of coefficient**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 51      | Value of sales not included in calculation of coefficient Row 53 - Without right to deduct | plnosv_nkf                 | *Informative value - only for December declaration. Relates to all January-December transactions* Manual amount – user input parameter on the report dialog: **Value of exempt sales not included in calculation of coefficient**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 52      | Part of the reduced tax deduction (with deduction adjustment): Pro rata coefficient        | koef_p20_nov               | Pro rata coefficient. User input parameter **Pro rata coefficient**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 52      | Part of the reduced tax deduction (with deduction adjustment): Deduction amount            | dp_uprav_kf                | Calculated automatically as: Deduction amount = 46.odp_sum_kr \* 52.koef_p20_nov                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 53      | Settlement of tax deduction – New pro rata coefficient                                     | koef_p20_vypor             | *Only for December declaration.* New pro rata coefficient. Manual amount – user input parameter on the report dialog: **New pro rata coefficient** You can calculate this amount manually based on all January-December declarations amounts as follows: 1. Calculate **Value of Taxable sales** = Rows (1 + 2 + 20 + 21 + 22 + 23 + 24 + 25 + 26 + 31).TaxBase 2. Calculate **Value of Exempt sales** = Row 50.TaxBase 3. Calculate **New pro rata coefficient** = **Value of Taxable sales** - **Value of taxable sales not included in calculation of coefficient**                                                                                                                                                                                                               |
-|         |                                                                                            |                            | delete on                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|         |                                                                                            |                            | **Value of Taxable sales** + **Value of Exempt sales** - **Value of taxable sales not included in calculation of coefficient** - **Value of exempt sales not included in calculation of coefficient**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 53      | Settlement of tax deduction – Change of deduction                                          | vypor_odp                  | *Only for December declaration.* Adjustment of tax deduction. This line reflects correction of annual VAT deduction based on actual pro rata coefficient versus applied during the year estimated pro rata coefficient.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|         |                                                                                            |                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|         |                                                                                            |                            | Manual amount – user input parameter on the report dialog: **Value of annual settlement of tax deduction** You can calculate this amount manually based on all January-December declarations amounts as follows: Row 46.Tax deduction adjustment \* (**New pro rata coefficient** – **Pro rata coefficient**)                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+<table width="98%">
+<tbody>
+<tr>
+<td width="4%">
+<p><strong>Row</strong></p>
+</td>
+<td width="24%">
+<p><strong>Description</strong></p>
+</td>
+<td width="11%">
+<p><strong>XML element - Tax base</strong></p>
+</td>
+<td width="60%">
+<p><strong>Comment</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>50</p>
+</td>
+<td width="24%">
+<p>Exempt sales</p>
+</td>
+<td width="11%">
+<p>plnosv_kf</p>
+</td>
+<td width="60%">
+<p>Application specific parameter &ndash; lookup result: SalesVATExempt</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>51</p>
+</td>
+<td width="24%">
+<p>Value of sales not included in calculation of coefficient Row 53 - With right to deduct</p>
+</td>
+<td width="11%">
+<p>pln_nkf</p>
+</td>
+<td width="60%">
+<p><em>Informative value - <u>only for December declaration.</u> Relates to all January-December transactions</em></p>
+<p>&nbsp;</p>
+<p>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of taxable sales not included in calculation of coefficient</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>51</p>
+</td>
+<td width="24%">
+<p>Value of sales not included in calculation of coefficient Row 53 - Without right to deduct</p>
+</td>
+<td width="11%">
+<p>plnosv_nkf</p>
+</td>
+<td width="60%">
+<p><em>Informative value - <u>only for December declaration. </u>Relates to all January-December transactions</em></p>
+<p>&nbsp;</p>
+<p>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of exempt sales not included in calculation of coefficient</strong></p>
+<p><em>&nbsp;</em></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>52</p>
+</td>
+<td width="24%">
+<p>Part of the reduced tax deduction (with deduction adjustment): Pro rata coefficient</p>
+</td>
+<td width="11%">
+<p>koef_p20_nov</p>
+</td>
+<td width="60%">
+<p>Pro rata coefficient.</p>
+<p>&nbsp;</p>
+<p>User input parameter <strong>Pro rata coefficient</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>52</p>
+</td>
+<td width="24%">
+<p>Part of the reduced tax deduction (with deduction adjustment): Deduction amount</p>
+</td>
+<td width="11%">
+<p>dp_uprav_kf</p>
+</td>
+<td width="60%">
+<p>Calculated automatically as: Deduction amount = 46.odp_sum_kr * 52.koef_p20_nov</p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>53</p>
+</td>
+<td width="24%">
+<p>Settlement of tax deduction &ndash; New pro rata coefficient</p>
+</td>
+<td width="11%">
+<p>koef_p20_vypor</p>
+</td>
+<td width="60%">
+<p><em><u>Only for December declaration</u></em><em>.</em></p>
+<p><em>&nbsp;</em></p>
+<p>New pro rata coefficient.&nbsp; Manual amount &ndash; user input parameter on the report dialog: <strong>New pro rata coefficient</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>You can calculate this amount manually based on all January-December declarations amounts as follows:</p>
+<p>1. Calculate <strong>Value of Taxable sales</strong> = Rows (1 + 2 + 20 + 21 + 22 + 23 + 24 + 25 + 26 + 31).TaxBase</p>
+<p>2. Calculate <strong>Value of Exempt sales</strong> = Row 50.TaxBase</p>
+<p>3. Calculate <strong>New pro rata coefficient</strong> =</p>
+<p><strong>Value of Taxable sales</strong> - <strong>Value of taxable sales not included in calculation of coefficient</strong><br /> delete on <br /> <strong>Value of Taxable sales</strong> + <strong>Value of Exempt sales</strong> - <strong>Value of taxable sales not included in calculation of coefficient</strong> - <strong>Value of exempt sales not included in calculation of coefficient</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="4%">
+<p>53</p>
+</td>
+<td width="24%">
+<p>Settlement of tax deduction &ndash; Change of deduction</p>
+</td>
+<td width="11%">
+<p>vypor_odp</p>
+</td>
+<td width="60%">
+<p><em><u>Only for December declaration</u></em><em>.</em></p>
+<p>&nbsp;</p>
+<p>Adjustment of tax deduction. This line reflects correction of annual VAT deduction based on actual pro rata coefficient versus applied during the year estimated pro rata coefficient.<strong><br /> <br /> </strong>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of annual settlement of tax deduction</strong></p>
+<p>&nbsp;</p>
+<p>You can calculate this amount manually based on all January-December declarations amounts as follows:</p>
+<p>Row 46.Tax deduction adjustment * (<strong>New pro rata coefficient</strong> &ndash; <strong>Pro rata coefficient</strong>)<br /> </p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### VI Tax calculation
 
-| **Row** | **Description**                      | **Value**  | **Comment**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------|--------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 60      | Tax deduction adjustment             | uprav_odp  | *Only for December declaration* Application specific parameter – lookup result: VATDeductionAdjustmentFA *For all fixed assets from which the Tax payer claimed VAT deduction the Tax payer has to monitor how the fixed assets are used. If the entitlement to VAT deduction changes during the monitoring period, then the Tax payer is obliged to adjust the relevant VAT deduction in the VAT statement for December of the year when the entitlement to VAT deduction has changed.* You should set up a special Sales tax code for tax deduction adjustment due to the change in fixed assets usage and manually post the tax transaction for 100% of tax amount when you need to adjust the VAT deduction in this line           |
-| 61      | Tax refund                           | dan_vrac   | Application specific parameter – lookup result: TaxRefund *Under some conditions, a Tax payer is obliged to pay back amount of VAT to a customer – an individual from third countries who paid Czech VAT from goods which the individual purchased in the Czech Republic and subsequently transported to third country.*  *It means that the tax payer will declare the respective transaction on row 1 or 2 in the VAT statement and then they can claim a tax refund on row 61 once all conditions stipulated by the Czech VAT Act are met.* You should set up a special Sales tax code for tax refund to the individuals and manually post the tax transaction for 100% of tax amount when you need to show Tax refund in this line |
-| **62**  | **Total tax payable**                | dan_zocelk | Calculated automatically as **Rows 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 - 61**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| 63      | Total tax deduction                  | odp_zocelk | Calculated automatically as **Row 46.Full tax deduction + Row 52.Deduction + Row 53.Change of deduction + Row 60**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 64      | Tax to be paid                       | dano_da    | Calculated automatically as Row 62 – Row 63 if 62 \> 63                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 65      | Excess deduction                     | dano_no    | Calculated automatically as Row 63 – Row 62 if 63 \> 62                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 66      | Adjustment for additional tax return | dano       | Calculated automatically as Row 62 – Row 63                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+<table width="99%">
+<tbody>
+<tr>
+<td width="10%">
+<p><strong>Row</strong></p>
+</td>
+<td width="27%">
+<p><strong>Description</strong></p>
+</td>
+<td width="16%">
+<p><strong>Value</strong></p>
+</td>
+<td width="44%">
+<p><strong>Comment</strong></p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>60</p>
+</td>
+<td width="27%">
+<p>Tax deduction adjustment</p>
+</td>
+<td width="16%">
+<p>uprav_odp</p>
+</td>
+<td width="44%">
+<p><em><u>Only for December declaration</u></em></p>
+<p>&nbsp;</p>
+<p>Application specific parameter &ndash; lookup result: VATDeductionAdjustmentFA</p>
+<p>&nbsp;</p>
+<p><em>For all fixed assets from which the Tax payer claimed VAT deduction the Tax payer has to monitor how the fixed assets are used. If the entitlement to VAT deduction changes during the monitoring period, then the Tax payer is obliged to adjust the relevant VAT deduction in the VAT statement for December of the year when the entitlement to VAT deduction has changed.</em></p>
+<p>&nbsp;</p>
+<p>You should set up a special Sales tax code for tax deduction adjustment due to the change in fixed assets usage and manually post the tax transaction for 100% of tax amount when you need to adjust the VAT deduction in this line</p>
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>61</p>
+</td>
+<td width="27%">
+<p>Tax refund</p>
+</td>
+<td width="16%">
+<p>dan_vrac</p>
+</td>
+<td width="44%">
+<p>Application specific parameter &ndash; lookup result: TaxRefund</p>
+<p>&nbsp;</p>
+<p><em>Under some conditions, a Tax payer is obliged to pay back amount of VAT to a customer &ndash; an individual from third countries who paid Czech VAT from goods which the individual purchased in the Czech Republic and subsequently transported to third country. </em></p>
+<p><em>It means that the tax payer will declare the respective transaction on row 1 or 2 in the VAT statement and then they can claim a tax refund on row 61 once all conditions stipulated by the Czech VAT Act are met.</em></p>
+<p>&nbsp;</p>
+<p>You should set up a special Sales tax code for tax refund to the individuals and manually post the tax transaction for 100% of tax amount when you need to show Tax refund in this line</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p><strong>62</strong></p>
+</td>
+<td width="27%">
+<p><strong>Total tax payable</strong></p>
+</td>
+<td width="16%">
+<p>dan_zocelk</p>
+</td>
+<td width="44%">
+<p><strong>&nbsp;</strong></p>
+<p>Calculated automatically as <strong>Rows 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 - 61</strong></p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>63</p>
+</td>
+<td width="27%">
+<p>Total tax deduction</p>
+</td>
+<td width="16%">
+<p>odp_zocelk</p>
+</td>
+<td width="44%">
+<p><strong>&nbsp;</strong></p>
+<p>Calculated automatically as<strong> Row 46.Full tax deduction + Row 52.Deduction + Row 53.Change of deduction + Row 60</strong></p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>64</p>
+</td>
+<td width="27%">
+<p>Tax to be paid</p>
+</td>
+<td width="16%">
+<p>dano_da</p>
+</td>
+<td width="44%">
+<p>Calculated automatically as Row 62 &ndash; Row 63 if 62 &gt; 63</p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>65</p>
+</td>
+<td width="27%">
+<p>Excess deduction</p>
+</td>
+<td width="16%">
+<p>dano_no</p>
+</td>
+<td width="44%">
+<p>Calculated automatically as Row 63 &ndash; Row 62 if 63 &gt; 62</p>
+</td>
+</tr>
+<tr>
+<td width="10%">
+<p>66</p>
+</td>
+<td width="27%">
+<p>Adjustment for additional tax return</p>
+</td>
+<td width="16%">
+<p>dano</p>
+</td>
+<td width="44%">
+<p>Calculated automatically as Row 62 &ndash; Row 63</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## VAT control statement
 
