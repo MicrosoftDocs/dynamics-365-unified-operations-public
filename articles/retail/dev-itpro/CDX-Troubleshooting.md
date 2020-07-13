@@ -59,10 +59,12 @@ If a error is not seen below, please create a Support Request as necessary to re
 | Cashier attempts to switch to offline or is forced offline and the switch fails | There are many possible causes. First, verify basic information. Does the computer have available hard drive space? If using SQL Express, is the offline database at the 10GB size limit? Are there pending download sessions for this register (Proving the register is no longer up to date, potentially (temporarily) disallowing offline switching)?  Beyond these questions, it is recommended to contact Support. If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
 
 ## Resources
-[Best practices](CDX-Best-Practices.md)
-[CDX best practices](../implementation-considerations-CDX.md)
-[Commerce Architecture](../commerce-architecture.md)
-[Select an in-store topology](retail-in-store-topology.md)
-[Device management implementation guidance](../implementation-considerations-devices.md)
-*Link to MPOS installer* LINK PENDING
-*Link to CSU (Self-hosted) installer* LINK PENDING
+| Links |
+|---------------------------------------------------|
+| [Best practices](CDX-Best-Practices.md) |
+| [CDX best practices](../implementation-considerations-CDX.md) |
+| [Commerce Architecture](../commerce-architecture.md) |
+| [Select an in-store topology](retail-in-store-topology.md) |
+| [Device management implementation guidance](../implementation-considerations-devices.md) |
+| Link to MPOS installer* LINK PENDING |
+| Link to CSU (Self-hosted) installer* LINK PENDING |
