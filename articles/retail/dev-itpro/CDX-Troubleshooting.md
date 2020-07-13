@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Data Exchange Troubleshooting
+title: Commerce Data Exchange troubleshooting
 description: This topic is intended for IT personas who are implementing functionality related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. This document focuses on troubleshooting CDX in implementations.
 author: jashanno
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Retail July 2017 update
 ---
 
-# Commerce Data Exchange Troubleshooting
+# Commerce Data Exchange troubleshooting
 This topic is intended for IT personas who are implementing functionality related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. This document focuses on troubleshooting CDX in implementations.
 
 ## Overview
