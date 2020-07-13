@@ -261,7 +261,7 @@ The available parameters vary, depending on the action that is selected on the *
 
 ### Applicability rules
 
-Applicability rules let you create logical rules that determine the usage context for the feature setup. Thus, the matching between the context given by the business document that is sent for processing, with the applicability rule criteria is what determines which Electronic invoicing add-on feature will be used to process that submission.
+Applicability rules let you create logical rules that determine the usage context for the feature setup. Thus, the matching between the context given by the business document that is sent for processing, along with the applicability rule criteria, determine which Electronic invoicing add-on feature is used to process that submission.
 
 #### Set up applicability rules
 
