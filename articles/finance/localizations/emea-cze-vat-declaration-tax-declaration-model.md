@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: VAT declaration (The Czech Republic)
+description: This topic provides information about the value-added tax (VAT) declaration for
+the Czech Republic, including instructions for setting up and generating the
+VAT declaration and VAT control statement.
+author: anasyash
+manager: AnnBe
+ms.date: 07/13/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom
+ms.search.region: Czech Republic
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2020-07-20
+ms.dyn365.ops.version: AX 10.0.13
+
+---
+
 
 # VAT declaration (The Czech Republic)
 
@@ -6,7 +38,7 @@ This topic provides information about the value-added tax (VAT) declaration for
 the Czech Republic. It includes instructions for setting up and generating the
 VAT declaration and VAT control statement.
 
-# VAT declaration overview
+## VAT declaration overview
 
 ## VAT declaration
 
@@ -982,7 +1014,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 <p>52</p>
 </td>
 <td width="24%">
-<p>Part of the reduced tax deduction (with deduction adjustment): Pro rata coefficient</p>
+<p>Part of the reduced tax deduction (with deduction adjustment): pro rata coefficient</p>
 </td>
 <td width="11%">
 <p>koef_p20_nov</p>
@@ -1086,7 +1118,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 <p>&nbsp;</p>
 <p>Application specific parameter &ndash; lookup result: VATDeductionAdjustmentFA</p>
 <p>&nbsp;</p>
-<p><em>For all fixed assets from which the Tax payer claimed VAT deduction the Tax payer has to monitor how the fixed assets are used. If the entitlement to VAT deduction changes during the monitoring period, then the Tax payer is obliged to adjust the relevant VAT deduction in the VAT statement for December of the year when the entitlement to VAT deduction has changed.</em></p>
+<p><em>For all fixed assets from which the taxpayer claimed VAT deduction the taxpayer has to monitor how the fixed assets are used. If the entitlement to VAT deduction changes during the monitoring period, then the taxpayer is obliged to adjust the relevant VAT deduction in the VAT statement for December of the year when the entitlement to VAT deduction has changed.</em></p>
 <p>&nbsp;</p>
 <p>You should set up a special Sales tax code for tax deduction adjustment due to the change in fixed assets usage and manually post the tax transaction for 100% of tax amount when you need to adjust the VAT deduction in this line</p>
 <p><strong>&nbsp;</strong></p>
@@ -1105,7 +1137,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 <td width="44%">
 <p>Application specific parameter &ndash; lookup result: TaxRefund</p>
 <p>&nbsp;</p>
-<p><em>Under some conditions, a Tax payer is obliged to pay back amount of VAT to a customer &ndash; an individual from third countries who paid Czech VAT from goods which the individual purchased in the Czech Republic and subsequently transported to third country. </em></p>
+<p><em>Under some conditions, a taxpayer is obliged to pay back amount of VAT to a customer &ndash; an individual from third countries who paid Czech VAT from goods which the individual purchased in the Czech Republic and subsequently transported to third country. </em></p>
 <p><em>It means that the tax payer will declare the respective transaction on row 1 or 2 in the VAT statement and then they can claim a tax refund on row 61 once all conditions stipulated by the Czech VAT Act are met.</em></p>
 <p>&nbsp;</p>
 <p>You should set up a special Sales tax code for tax refund to the individuals and manually post the tax transaction for 100% of tax amount when you need to show Tax refund in this line</p>
@@ -1314,8 +1346,8 @@ This section contains the following information about each document:
 Sections A4 and A5 show documents which generate amounts in the Rows 1,2 of the
 VAT declaration.
 
-Also note that VAT amount adjustments for customer bad debts are also
-informationally shown in the Row 33 of the VAT declaration.
+Also note that information about VAT amount adjustments for customer bad debts is also
+shown in the Row 33 of the VAT declaration.
 
 To automatically determine amount of VAT adjustment for bad debts, you should
 create a special Tax code and post writing off the customer bad debts using this
@@ -1364,8 +1396,8 @@ statement XML:
 Sections B2 and B3 show documents which generate amounts in the Rows 40,41 of
 the VAT declaration.
 
-Also note that VAT amount adjustments for vendor bad debts are also
-informationally shown in the Row 34 of the VAT declaration.
+Also note that information about VAT amount adjustments for vendor bad debts is also
+shown in the Row 34 of the VAT declaration.
 
 To automatically determine amount of VAT adjustment for bad debts, you should
 create a special Tax code and post writing off the vendor bad debts using this
@@ -1413,7 +1445,7 @@ included in this section:
 
 ### Section B3 Taxable purchases with amount below 10 000 incl. VAT
 
-Sections B2 and B3 show documents which generate amounts in the in the Rows
+Sections B2 and B3 show documents which generate amounts in the Rows
 40,41 of the VAT declaration.
 
 Section B3 contains 1 line with the following information for all documents
@@ -1428,7 +1460,7 @@ included in this section:
 | Tax base at second reduced rate   | zakl_dane3      |
 | Tax amount at second reduced rate | dan3            |
 
-# Set up the VAT declaration
+## Set up the VAT declaration
 
 To start to work with the VAT declaration, you should make the following
 settings:
@@ -1726,7 +1758,7 @@ Follow these steps:
 
 | **Processing**                                           | **Additional field**         | **Comment**                                                                                                                                               | **XML element**                                                                                                                     |
 |----------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| DPHKH1 (VAT control statement)                           | **\<DataBoxID\>**            | Select Data box Id entered earlier                                                                                                                        | id_dats                                                                                                                             |
+| DPHKH1 (VAT control statement)                           | **\<DataBoxID\>**            | Select the Data box ID that was entered earlier                                                                                                                        | id_dats                                                                                                                             |
 | DPHDP3 (VAT declaration)                                 | **\<MainEconomicActivity\>** | Select main economic activity code entered earlier                                                                                                        | c_okec                                                                                                                              |
 | DPHDP3 (VAT declaration), DPHKH1 (VAT control statement) | **\<TaxAuthorityToFile\>**   | Select tax authority code entered earlier                                                                                                                 | c_pracufo                                                                                                                           |
 | DPHDP3 (VAT declaration), DPHKH1 (VAT control statement) | **\<ReportPeriodicity\>**    | Select the periodicity of the declaration submission in the reporting year: Monthly or Quarterly                                                          | Ctvrt – will be filled with the quarter number for Quarterly report Mesic – will be filled with the month number for Monthly report |
@@ -1746,7 +1778,7 @@ Follow these steps:
         a different declaration, you should create new Populate records action,
         and select appropriate settlement period(s).
 
-# Configure system parameters and master records
+## Configure system parameters and master records
 
 You should do the following settings prior to generating VAT declaration:
 
@@ -1858,7 +1890,7 @@ to find all details about how to set up and use reverse charges functionality.
 
 3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales** and associate item, item group and procurement category as described above.
 
-# Generate VAT declaration
+## Generate VAT declaration
 
 ## Generate VAT declaration from Electronic messages.
 
@@ -2180,7 +2212,7 @@ message processing that is released to LCS.
 
 2. Select **OK**. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**. Review generated sales tax payment line.
 
-# Set up to run VAT declaration for several legal entities
+## Set up to run VAT declaration for several legal entities
 
 To use the formats to report the VAT declaration for a group of several legal
 entities, you should first set up Application specific parameters of the ER
@@ -2260,7 +2292,7 @@ The following are preconditions for running this procedure:
     the report contains all tax transactions from the selected sales tax
     payments.
 
-# How to
+## How to
 
 ## How to attach a File or a Note to the VAT declaration
 
