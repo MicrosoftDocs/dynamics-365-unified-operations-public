@@ -5,7 +5,7 @@ title: Create a simple security policy
 description: This topic explains how to create a simple security policy that secures access to customers and customer groups, based on a range for customer group.
 author: Peakerbl
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic explains how to create a simple security policy that secures access t
 
 ## Create a query for the policy
 
-1.  In Visual Studio. Add a new query, e.g. XDSQCustGroup10 to your
+1.  In Visual Studio, add a new query, e.g. XDSQCustGroup10 to your
     project/solution. The query will be used to restrict data access from the
     Constraint table:
 
@@ -44,16 +44,16 @@ This topic explains how to create a simple security policy that secures access t
 
 2.  Right click on **Data Sources**, and click **New Data Source**.
 
-3.  In the **Table** field, enter the Primary table name ‘CustGroup’.
+3.  In the **Table** field, enter the primary table name **CustGroup**.
 
 4.  Right click **Ranges**, and click **New Range**.
 
-5.  Set the **Enabled** field, to ‘Yes’.
+5.  Set the **Enabled** field, to **Yes**.
 
-6.  In the **Data Source** field, enter the Primary table name, in this case,
+6.  In the **Data Source** field, enter the primary table name, in this case,
     ‘CustGroup’.
 
-7.  In the **Value field**, enter ‘10’ to restrict access to data where
+7.  In the **Value field**, enter **10** to restrict access to data where
     CustGroup has value 10, by defining the Range for the CustGroup field:
 
     ![In the Value field, enter 10](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
@@ -67,15 +67,15 @@ This topic explains how to create a simple security policy that secures access t
 2.  Set **Constrained Table** to ‘Yes’. This will secure access also to the
     primary table. In this example to the CustGroup table.
 
-3.  Set the **Context Type** field, to ‘RoleName’.
+3.  Set the **Context Type** field, to **RoleName**.
 
-4.  Set the **Enabled** field, to ‘Yes’.
+4.  Set the **Enabled** field, to **Yes**.
 
-5.  Set the **Operation** field to ‘AllOperations’. Other available values for
+5.  Set the **Operation** field to **AllOperations**. Other available values for
     Operation are ‘Select’, ‘Insert’, ‘Update’, ‘Delete’ or
     ‘InsertUpdateDelete’.
 
-6.  Set **Primary Table** field, to ‘CustGroup’.
+6.  Set **Primary Table** field, to **CustGroup**.
 
 7.  Set the **Query** field, to the name of the query created in above, i.e.
     ‘XDSQCustGroup10’.
