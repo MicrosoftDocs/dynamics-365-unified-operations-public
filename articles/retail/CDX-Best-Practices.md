@@ -38,6 +38,12 @@ Data configuration and synchronization is crucial to a proper implementation.  R
 Before going through this document, it is important to know the concepts of a channel (Store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this document such as the Devices implementation guide and the Commerce architecture documents. 
 
 
+
+Navigate to **Retail and Commerce > Headquarters setup > Parameters > Commerce scheduler parameters** and set the **Try count** value to **3**.  Having this value too high could potentially cause a download session to fail during high usage times.
+
+**Retail and Commerce > Channel setup > POS setup > POS profiles > Functionality profile**, under the **Functions** sub-heading, and set the **Days transactions exist** value to the same or near the value of the return policy (For example, if the return policy states an item may be returned in 30 days or less, then set this value to 30, 31, or 60).
+
+
 ## Resources
 *Link to Devices Implementation Guide* [Device management implementation guidance](implementation-considerations-devices.md)
 
