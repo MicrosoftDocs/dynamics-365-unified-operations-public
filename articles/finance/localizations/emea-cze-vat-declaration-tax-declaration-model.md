@@ -1627,7 +1627,7 @@ lines of the setting:
 Otherwise, to prevent the format to fail with exception due to missed setup, you
 should set up the same line as the last line of the setting.
 
-### Set up parameters for fulfillment mode codes
+### Set up parameters for no obligation to issue tax document
 
 To automatically classify the sales transaction to the condition that there was
 no obligation to issue tax document and consequently the transaction should be
@@ -1674,7 +1674,7 @@ Review example of parameters on the picture:
 >   messaging and how to create your own settings, see [Electronic
 >   messaging](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging).
 
->   Follow these steps:
+Follow these steps:
 
 1.  In the LCS Shared asset library, select **Data package** as the asset type.
     Download the package that is named **CZ VAT EM declaration package**. The
@@ -1963,8 +1963,7 @@ message processing that is released to LCS.
 
 >   A screenshot of a cell phone Description automatically generated
 
->   If an error occurs while the report is generated, the status of the message
->   is changed to **Technical error**.
+  If an error occurs while the report is generated, the status of the message is changed to **Technical error**.
 
 13.  Select the **Attachments** button (the paper clip symbol) in the upper-right
     corner of the page. Then select **Open** to open the file.
@@ -1973,11 +1972,9 @@ message processing that is released to LCS.
     finish the processing: select **Update status**. Then, in the **Update
     status** dialog box select action **Approve** and select **OK**.
 
->   If you need to delete message, you can select action **Allow delete** and
->   select **OK**. Now you can Delete the message.
+   If you need to delete message, you can select action **Allow delete** and select **OK**. Now you can Delete the message.
 
->   If the message status is **Technical error**, you can update the message
->   status to one of initial statuses: **Created** or **Ready to generate**.
+   If the message status is **Technical error**, you can update the message status to one of initial statuses: **Created** or **Ready to generate**.
 
 15.  On the **Action log** FastTab, review all user actions for the current
     message.
