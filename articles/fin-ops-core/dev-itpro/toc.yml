@@ -1460,7 +1460,7 @@
           href: sysadmin/tasks/security-diagstics-task-recordings.md
         - name: Extensible data security policies
           href: sysadmin/extensible-data-security-policies.md
-        - name: Create a simple security policy
+        - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
       - name: Process automation
         href: sysadmin/process-automation.md
