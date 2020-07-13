@@ -5,7 +5,7 @@ title: Extensible data security policies
 description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
 author: Peakerbl
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,28 +35,28 @@ ms.dyn365.ops.version: 10.0.12
 This topic provides an overview of Extensible Data Security (XDS) policies in
 Finance and Operations apps. XDS allows developers to supplement role-based security
 by restricting access to table records based on security policies. The query in
-the policy applies a filter and only records that satisfies the conditions will
+the policy applies a filter and only records that satisfy the conditions will
 be accessible from the restricted tables.
 
 ## Data security policy components
 
--   **Constrained table(s)**: the table(s) or from which data is filtered or
+-   **Constrained table(s)**: The table(s) or from which data is filtered or
     secured. For example, in a policy that secures access to customers based on
     customer group, the CustTable would be the constrained table.
 
--   **Primary table**: used to secure the content of the related constrained
+-   **Primary table**: Used to secure the content of the related constrained
     table. In the above example, the CustGroup table would be the primary table.
     Primary table must have an explicit relationship to the constrained table.
 
--   **Policy query**: used to secure the constrained tables content via a range
+-   **Policy query**: Used to secure the constrained tables content via a range
     condition on the primary table contents. Only records that are included in
     the range will be accessible. The range can for example be based on a
     specific value for Customer Group.
 
--   **Context** – controls the conditions under which a policy is applicable.
+-   **Context** – Controls the conditions under which a policy is applicable.
     Two main types of contexts are available:
 
-    -   **Role context**: based on the role(s) the user is assigned. There are
+    -   **Role context**: Based on the role(s) the user is assigned. There are
         to sub-options for role context:
 
         -   **RoleName** – Indicates that the security policy is only applied to
@@ -69,7 +69,7 @@ be accessible from the restricted tables.
             field for the policy is the same as the ContextString field value
             for the assigned user role(s).
 
-    -   **Application context**: applied if the context string set by the
+    -   **Application context**: Applied if the context string set by the
         application using the XDS::SetContext API is the same as the value
         defined in the Context String field for the policy.
 
