@@ -1239,25 +1239,20 @@ This section contains the following information about each document:
 | Subject code                                   | kod_pred_pl     |
 | Tax base                                       | zakl_dane1      |
 
-For automatic determination of the **Subject code** for the document, you should
+For the automatic determination of the **Subject code** for the document,
 set up enough **Reverse charge item groups** and associate them with Items
 (products), Items group, or procurement categories. You can find more details
-about this step in the sections [below](#set-up-reverse-charge-item-groups). You
+about this step in the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) sections later in this topic. You
 can find more details about how to configure reverse charges fully in the topic
-[Reverse charge
-VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge)
-. If you are going to post incoming reverse charges in the vendor invoice
-journals that do not have association to products, you should have enough item
-sales tax groups to differentiate the subject codes of the reverse charges.
+[Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge. If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
 
 You also need to associate pairs **Reverse charge item groups** – **Tax code**
 with the **Lookup result** of the **\$SubjectCodeLookup** in the **Application
 specific parameters** of the **VAT control statement (CZ)** format. You can find
 more details about how to set up **Application specific parameters** in the
-sections [below](#set-up-parameters-for-subject-codes).
+[Set up parameters for subject codes](#set-up-parameters-for-subject-codes) section in this topic.
 
-The following subject codes are available in the **VAT control statement XML
-(CZ)** format:
+The following subject codes are available in the **VAT control statement XML (CZ)** format:
 
 | **Code**                 | **Description**                                                               |
 |--------------------------|-------------------------------------------------------------------------------|
@@ -1275,7 +1270,7 @@ The following subject codes are available in the **VAT control statement XML
 
 ### Section B1 Purchase of goods and services under domestic reverse charge (\$92)
 
-Section B1 contains document which generate amounts in Rows 10,11 of VAT
+Section B1 contains document which generate amounts in Rows 10, 11 of VAT
 declaration.
 
 This section contains the following information about each document:
@@ -1298,8 +1293,8 @@ make the same settings as described above for the Section A1.
 
 ### Section A2 Purchases with reverse charge (excluding domestic reverse charge) with obligation to pay VAT
 
-Section A2 shows documents which generate amount in the Rows 3,4,5,6,9
-(Intracommunity purchase of goods and services), and in the Rows 11,12 (Other
+Section A2 shows documents which generate amount in the Rows 3, 4, 5, 6, 9
+(Intracommunity purchase of goods and services), and in the Rows 11, 12 (Other
 purchases with the obligation to pay VAT) of the VAT declaration.
 
 This section contains the following information about each document:
@@ -1322,7 +1317,7 @@ This section contains the following information about each document:
 Section A3 shows documents which generate amount in the Row 25 of the VAT
 declaration together with other sales with right to deduct incoming VAT.
 
-To automatically determine such transactions, you should set up a special Sales
+To determine such transactions automatically, set up a special Sales
 tax code for such transactions and associate this sales tax code with the
 **Lookup result OtherSalesWithRightToDeductGoldInvestment** of the
 **\$ReportFieldLookup** in the **Application specific parameters** of the VAT
@@ -1341,9 +1336,9 @@ This section contains the following information about each document:
 | First and last name of the customer if there is no VAT number | jm_prijm_obch   |
 | Date of birth of the customer if there is no VAT number       | d_narozeni      |
 
-### Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts
+## Section A4. Taxable sales with amount above 10,000 including VAT and all VAT adjustments made for customer bad debts
 
-Sections A4 and A5 show documents which generate amounts in the Rows 1,2 of the
+Sections A4 and A5 show documents which generate amounts in the Rows 1, 2 of the
 VAT declaration.
 
 Also note that information about VAT amount adjustments for customer bad debts is also
@@ -1351,9 +1346,8 @@ shown in the Row 33 of the VAT declaration.
 
 To automatically determine amount of VAT adjustment for bad debts, you should
 create a special Tax code and post writing off the customer bad debts using this
-Tax code. You can find more details about this procedure in the sections
-[below](#write-off-customer-bad-debts-using-write-off-function). You also should
-associate this sales tax code with the **Lookup results
+Tax code. For more information this procedure see 
+[Write off customer bad debts using Write off function](#write-off-customer-bad-debts-using-write-off-function) in this topic. Also associate this sales tax code with the **Lookup results
 VATAdjustmentCustomerBadDebtsStandard, VATAdjustmentCustomerBadDebtsReduced,
 VATAdjustmentCustomerBadDebtsReduced2** of the **\$ReportFieldLookup** in the
 **Application specific parameters** of the VAT declaration format and VAT
@@ -1375,12 +1369,11 @@ This section contains the following information about each document:
 | Tax amount at second reduced rate                                                                                                                  | dan3            |
 | Flag of VAT adjustment for bad debts: -“N” if the document is not VAT adjustment of bad debts - “P” if the document is VAT adjustment of bad debts | zdph_44         |
 
-To automatically determine Fulfillment mode code, you should associate sales tax
+To determine Fulfillment mode code automatically, associate sales tax
 codes with the **Lookup result** of the **\$FulfillmentModeCodeLookup** in the
 **Application specific parameters** of the VAT control statement (XML) format.
-You can find more details about how to set up **Application specific
-parameters** in the sections
-[below](#set-up-parameters-for-fulfillment-mode-codes).
+For more information on how to set up **Application specific
+parameters** see [How to post VAT adjustment for bad debts](#set-up-parameters-for-fulfillment-mode-codes) in this topic.
 
 The following Fulfillment mode codes are available in the format VAT control
 statement XML:
@@ -1399,14 +1392,10 @@ the VAT declaration.
 Also note that information about VAT amount adjustments for vendor bad debts is also
 shown in the Row 34 of the VAT declaration.
 
-To automatically determine amount of VAT adjustment for bad debts, you should
-create a special Tax code and post writing off the vendor bad debts using this
-Tax code. You can find more details about this procedure in the sections
-[below.](#write-off-vendor-bad-debts-manually) You also should associate this
-sales tax code with the **Lookup results VATAdjustmentVendorBadDebtsStandard,
-VATAdjustmentVendorBadDebtsReduced, VATAdjustmentVendorBadDebtsReduced2** of the
-**\$ReportFieldLookup** in the **Application specific parameters** of the VAT
-declaration format and VAT control statement format.
+To automatically determine amount of VAT adjustment for bad debts, 
+create a special Tax code and post the writeoff of vendor bad debts using this
+tax code. For more information about this procedure see the [Write off vendor bad debts manually](#write-off-vendor-bad-debts-manually) section in this topic. Also associate this sales tax code with the **Lookup results VATAdjustmentVendorBadDebtsStandard, VATAdjustmentVendorBadDebtsReduced, VATAdjustmentVendorBadDebtsReduced2** of the
+**\$ReportFieldLookup** in the **Application specific parameters** of the VAT declaration format, and the VAT control statement format.
 
 Section B2 contains the following information about each document:
 
@@ -1429,7 +1418,7 @@ Out of the box, flag of the proportional right of deduction is set to No.
 ### Section A5 Taxable sales with amount below 10 000 incl. VAT and when there is no obligation to issue tax document
 
 Sections A4 and A5 show documents which generate amounts in the Rows 1,2 of the
-VAT declaration
+VAT declaration.
 
 Section A5 contains 1 line with the following information for all documents
 included in this section:
@@ -1448,8 +1437,8 @@ included in this section:
 Sections B2 and B3 show documents which generate amounts in the Rows
 40,41 of the VAT declaration.
 
-Section B3 contains 1 line with the following information for all documents
-included in this section:
+Section B3 contains one line with the following information for all documents
+included in this section.
 
 | **Field**                         | **XML element** |
 |-----------------------------------|-----------------|
@@ -1497,13 +1486,12 @@ reporting (ER) configurations for the VAT declaration format:
 To automatically generate VAT declaration, you should associate sales tax codes
 in the application and report fields in the Electronic reporting configuration.
 
-1.  Go to **Workspaces \> Electronic reporting**. Select **Reporting
-    configurations**.
+1.  Go to **Workspaces > Electronic reporting**. Select **Reporting configurations**.
 
 2.  Select configuration **VAT declaration XML (CZ)**. Click **Configurations \>
-    Application specific parameters setup**
+    Application specific parameters setup**.
 
-3.  On the FastTab **Lookups**, select lookup **\$ReportFieldLookup**
+3.  On the FastTab **Lookups**, select lookup **\$ReportFieldLookup**.
 
 4.  On the FastTab **Conditions**, associate Sales tax codes and report fields:
 
@@ -1577,13 +1565,12 @@ you can create the following line in the parameters:
 
 6.  Review example of parameters on the picture:
 
-![Pic1_ReportFieldLookup](media/Pic1_ReportFieldLookup.png)
+[![Pic1_ReportFieldLookup](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
 
 7.  On the Action pane, click **Export** to export parameters at XML file.
 
-8.  Select configuration **VAT declaration Excel (CZ**). On the Action pane,
-    click **Import** to import parameters that you configured for **VAT
-    declaration XML (CZ)**. Change **State** to **Completed.**
+8.  Select configuration **VAT declaration Excel (CZ**). On the **Action pane**,
+    click **Import** to import parameters that you configured for **VAT declaration XML (CZ)**. Change the entry in the **State** field to **Completed.**
 
 9.  Select configuration **VAT control statement XML (CZ)**. Make the same
     settings manually as you did in point 4 above. Change **State** to
@@ -1591,8 +1578,8 @@ you can create the following line in the parameters:
 
 ### Set up parameters for subject codes 
 
-To automatically classify the transaction to the subject code of reverse charge
-in VAT control statement sections A1 and B1, you should associate pairs of
+To classify the transaction to the subject code of reverse charge automatically
+in VAT control statement sections A1 and B1, associate pairs of the
 reverse charge item groups and item sales tax groups in the application and
 supply codes in the Electronic reporting configuration.
 
@@ -1610,37 +1597,35 @@ supply codes in the Electronic reporting configuration.
 | **Column**                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lookup result                       | Select subject code. The full list of subject codes is available above in [Section A1 Sales of goods and services under domestic reverse charge](#section-a1-sales-of-goods-and-services-under-domestic-reverse-charge)                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Reverse charge code (Code)          | Select Reverse charge item group which you associate to the selected Subject code. Note that if for certain transactions you post incoming reverse charge transaction without reference to the product, you will need to associate item sales tax group to the Subject code and in this case you should select \*Blank\* in this field. You must always have one line in the Application specific parameter with **Lookup result** = **Other** and **Reverse charge code (Code)** = **\*Blank\*** so that system does not throw an exception error message when taking transactions without reverse charge. This must be the last line in the setup. |
-| Item sales tax group (TaxItemGroup) | Select Item sales tax group which you associate to the selected Subject code. Note that you need to select specific item sales tax group here if you do not have appropriate reverse charge item group in the application and is going to post incoming reverse charge transaction without reference to the product (for example from the vendor invoice journal). Otherwise for all lines you can select **\*Not blank\*** in this column.                                                                                                                                                                                                          |
-
-To prevent the format to fail with exception due to missed setup, you should set
-up the following lines as the last lines:
+| Reverse charge code (Code)          | Select the Reverse charge item group that you associate with the selected Subject code. Note that if for certain transactions you post incoming reverse charge transaction without reference to the product, you must associate item sales tax group to the **Subject** code and in this case you should select \*Blank\* in this field. You must always have one line in the ** theApplication specific parameter** with **Lookup result** = **Other** and **Reverse charge code (Code)** = **\*Blank\*** to avoid generating an exception error when taking transactions without reverse charge. This must be the last line in the setup. |
+| Item sales tax group (TaxItemGroup) | Select the item sales tax group that's associated with the selected **Subject** code. You must select specific item sales tax group if you do not have an appropriate reverse charge item group that will post the incoming reverse charge transaction without reference to the product (for example from the vendor invoice journal). Otherwise for all lines you can select **\*Not blank\*** in this column.                                                                                                                                                                                                          |
+To prevent the format to fail with exception due to missed setup, you should set up the following lines as the last lines:
 
 | **Lookup result** | **Reverse charge code (Code)** | **Item sales tax group (TaxItemGroup)** | **Comment**                                                                                                     |
 |-------------------|--------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Other             | \*Blank\*                      | \*Not blank\*                           | It’s a must to set up this line so that there is no error message for transactions without reverse charge code. |
+| Other             | \*Blank\*                      | \*Not blank\*                           | This line must be set up to prevent an error message being generated for transactions without a reverse charge code. |
 
 Review example of parameters on the picture:
 
-![Pic2_SubjectCodeLookup](media/Pic2_SubjectCodeLookup.png)
+[![Pic2_SubjectCodeLookup](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
 
-### Set up parameters for fulfillment mode codes
+## Set up parameters for fulfillment mode codes
 
 To automatically classify the transaction to the fulfillment mode code in VAT
 control statement section A4, you should associate sales tax codes in the
 application and fulfillment subjects mode codes in the Electronic reporting
 configuration.
 
-1.  Go to **Workspaces \> Electronic reporting**. Select **Reporting
+1.  Go to **Workspaces > Electronic reporting**. Select **Reporting
     configurations**.
 
 2.  Select configuration **VAT control statement XML (CZ)**. Click
-    **Configurations \> Application specific parameters setup.**
+    **Configurations > Application specific parameters setup**.
 
-3.  On the FastTab **Lookups**, select lookup **\$FulfillmentModeCodeLookup**
+3.  On the **Lookups** FastTab, select **\$FulfillmentModeCodeLookup**.
 
-4.  On the FastTab **Conditions**, associate sales tax codes and fulfillment
-    subjects mode codes:
+4.  On the **Conditions** FastTab, associate sales tax codes and fulfillment
+    subjects mode codes as follows:
 
 | **Column**      | **Description**                                                                                                                                                                                                                                                                                                    |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1654,8 +1639,7 @@ lines of the setting:
 |-------------------|---------------------|
 | NormalFilling     | \*Not blank\*       |
 
-Otherwise, to prevent the format to fail with exception due to missed setup, you
-should set up the same line as the last line of the setting.
+Otherwise, set up the same line as the last line of the preceding setting to prevent the format from failing with an exception because of the missed setup.
 
 ### Set up parameters for no obligation to issue tax document
 
@@ -1665,11 +1649,10 @@ shown in Section A5 regardless the threshold, you should associate pairs of
 Sales tax group and sales tax code from the application to Yes or No condition
 in the Electronic reporting configuration.
 
-1.  Go to **Workspaces \> Electronic reporting**. Select **Reporting
-    configurations**.
+1.  Go to **Workspaces > Electronic reporting**. Select **Reporting configurations**.
 
 2.  Select configuration **VAT control statement XML (CZ)**. Click
-    **Configurations \> Application specific parameters setup.**
+    **Configurations > Application specific parameters setup.**
 
 3.  On the FastTab **Lookups**, select lookup **\$NoTaxDocument**
 
@@ -1691,7 +1674,7 @@ in the Electronic reporting configuration.
 
 Review example of parameters on the picture:
 
-![Pic3_NoTaxDocumentLookup](media/Pic3_NoTaxDocumentLookup.png)
+[![Pic3_NoTaxDocumentLookup](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
 
 6.  Change **State** of all parameters to **Completed**.
 
@@ -1701,8 +1684,7 @@ Review example of parameters on the picture:
 >   that are used to generate VAT declaration and VAT control statement as well
 >   as to preview VAT declaration in Excel. You can extend these settings or
 >   create your own. For more information about how to work with Electronic
->   messaging and how to create your own settings, see [Electronic
->   messaging](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging).
+>   messaging and how to create your own settings, see [Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging).
 
 Follow these steps:
 
@@ -1723,7 +1705,7 @@ Follow these steps:
 
 5.  After the data entities are uploaded, select **Import**.
 
-6.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
+6.  Go to **Tax > Inquiries and reports > Electronic messages > Electronic
     messages** and validate the electronic message processings that you
     imported.
 
@@ -1736,7 +1718,7 @@ Follow these steps:
 
 1.  Set up information about Taxpayer in Electronic message additional fields
 
-    1.1  Go to **Tax \> Setup \> Electronic messages \> Additional fields**
+    1.1  Go to **Tax > Setup > Electronic messages > Additional fields**
 
     1.2  Select the line with additional field and on the FastTab **Value** add
         respective values of the field:
@@ -1750,11 +1732,11 @@ Follow these steps:
 
 2.  Set up default values for declarations run in Electronic message processing
 
-    2.1  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+    2.1  Go to **Tax > Setup > Electronic messages > Electronic message
         processing**
 
     2.2  Select the line with processing and set up default values for
-        declarations parameters on the FastTab **Message additional fields**:
+        declarations parameters on the **Message additional fields** FastTab:
 
 | **Processing**                                           | **Additional field**         | **Comment**                                                                                                                                               | **XML element**                                                                                                                     |
 |----------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -1769,13 +1751,12 @@ Follow these steps:
 
 3.  Set up parameters in Populate records
 
-    3.1  Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate
-        records actions**. On the **Populate records action** page, select the
+    3.1  Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**. On the **Populate records action** page, select the
         line and select **Edit query.** Specify filter on settlement period(s)
         to be included in the report.
 
     3.2  If you need to report tax transactions from other settlement periods in
-        a different declaration, you should create new Populate records action,
+        a different declaration, create new Populate records action,
         and select appropriate settlement period(s).
 
 ## Configure system parameters and master records
