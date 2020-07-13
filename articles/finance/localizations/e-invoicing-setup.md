@@ -127,7 +127,7 @@ The following table describes the fields that are available on the **Actions** F
 
 | Field        | Description |
 |--------------|-------------|
-| Action       | There are nine predefined actions:<ul><li><strong>Sign document</strong></li><li><strong>FileStoreActionName</strong></li><li><strong>Transform document</strong> – Use the MS Power AutomateTransform document.</li><li><strong>Process response</strong></li><li><strong>Call REST web service</strong></li><li><strong>Call Mexican PAC service</strong></li><li><strong>Call Brazilian SEFAZ service</strong></li><li><strong>Call Italian SDI service</strong></li></ul> |
+| Action       | There are eigth predefined actions:<ul><li><strong>Sign document</strong></li><li><strong>FileStoreActionName</strong></li><li><strong>Transform document</strong></li><li><strong>Process response</strong></li><li><strong>Call REST web service</strong></li><li><strong>Call Mexican PAC service</strong></li><li><strong>Call Brazilian SEFAZ service</strong></li><li><strong>Call Italian SDI service</strong></li></ul> |
 | Action name  | The name of the action and its execution order. |
 | Description  | A description of the action. |
 | Enable retry | A selected check box indicates that the action can be retried if the previous attempt is unsuccessful. |
@@ -155,7 +155,7 @@ The available parameters vary, depending on the action that is selected on the *
 
 | Parameter                             | Description |
 |---------------------------------------|-------------|
-| Input file                            | The input XML file with a document that must be signed by using an electronic signature. |
+| Input file                            | The input XML document file that must be signed by using an electronic signature. |
 | Certificate name                      | The name of the certificate in storage. |
 | Signature type                        | The type of signature to use. |
 | Signature method name                 | The name of the signature method that is used to generate an electronic signature. |
@@ -164,7 +164,7 @@ The available parameters vary, depending on the action that is selected on the *
 | Reference attribute name              | The attribute name that indicates where the reference ID should be inserted in the signature element. |
 | Name of element to sign               | The name of the XML element in the document that must be signed by using an electronic signature. If no element is specified, the root of the document is signed. |
 | Name of element to insert signature   | The name of the XML element where a generated digital signature should be inserted. If no element is specified, the signature is inserted in the root of the document. |
-| XLST file with digest transform       | The XLST file that contains digest transformation rules that are used to generate the digest string for an electronic signature. |
+| XLST file with digest transform       | The Extensible Stylesheet Language Transformations (XSLT) file that contains digest transformation rules to generate the digest string for an electronic signature. |
 | Path to insert digest string          | The path, in **\<elementName\>.\<Attribute.Path\>** format, of the location where the generated digest string must be inserted. |
 | Certificate number location           | The name of the element and attribute where the certificate number should be put. |
 | Location of certificate data          | The name of the element and attribute where certificate data (base64) must be inserted. |
@@ -218,7 +218,7 @@ The available parameters vary, depending on the action that is selected on the *
 | Input file               | The file that contains XML data that will be sent to the web service as a method input parameter. |
 | URL address              | The web service address (endpoint). |
 | Web method (action) name | The name of the web method (action) that must be run. |
-| Certificates             | The certificate chain that is required for client authentication on the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
+| Certificates             | The certificate chain that is required for client authentication by the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
 | Web request timeout      | The maximum amount of time (in milliseconds) to wait for a web service response. |
 | Retry interval           | The interval between attempts to call and receive a response from the web service. If no interval is specified, no additional retries will be made after the first call is unsuccessful. |
 | Retry count              | The maximum number of retry attempts to call and retrieve a response from the web service. |
@@ -234,7 +234,7 @@ The available parameters vary, depending on the action that is selected on the *
 | Input file               | The file that contains XML data that will be sent to the web service as a method input parameter. |
 | URL address              | The web service address (endpoint). |
 | Web method (action) name | The name of the web method (action) that must be run. |
-| Certificates             | The certificate chain that is required for client authentication on the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
+| Certificates             | The certificate chain that is required for client authentication by the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
 | Web request timeout      | The maximum amount of time (in milliseconds) to wait for a web service response. |
 | Retry interval           | The interval between attempts to call and receive a response from the web service. If no interval is specified, no additional retries will be made after the first call is unsuccessful. |
 | Retry count              | The maximum number of retry attempts to call and retrieve a response from the web service. |
@@ -250,7 +250,7 @@ The available parameters vary, depending on the action that is selected on the *
 | Input file               | The file that contains XML data that will be sent to the web service as a method input parameter. |
 | URL address              | The web service address (endpoint). |
 | Web method (action) name | The name of the web method (action) that must be run. |
-| Certificates             | The certificate chain that is required for client authentication on the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
+| Certificates             | The certificate chain that is required for client authentication by the web service. The client certificate should be the last certificate in the chain. The root and intermediate certificates should be first. |
 | Web request timeout      | The maximum amount of time (in milliseconds) to wait for a web service response. |
 | Retry interval           | The interval between attempts to call and receive a response from the web service. If no interval is specified, no additional retries will be made after the first call is unsuccessful. |
 | Retry count              | The maximum number of retry attempts to call and retrieve a response from the web service. |
@@ -261,7 +261,7 @@ The available parameters vary, depending on the action that is selected on the *
 
 ### Applicability rules
 
-Applicability rules let you create logical rules that determine the usage context for the feature setup. After the Electronic invoicing add-on feature is deployed to the service, these rules are used for comparison against the context that is received together with a business document that is sent for processing to run actions from the applicable feature setup.
+Applicability rules let you create logical rules that determine the usage context for the feature setup. Thus, the matching between the context given by the business document that is sent for processing, with the applicability rule criteria is what determines which Electronic invoicing add-on feature will be used to process that submission.
 
 #### Set up applicability rules
 
