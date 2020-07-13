@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: VAT declaration (The Czech Republic)
@@ -27,12 +28,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-
 ---
-
 
 # VAT declaration (The Czech Republic)
 
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides information about the value-added tax (VAT) declaration for
 the Czech Republic. It includes instructions for setting up and generating the
@@ -40,34 +41,33 @@ VAT declaration and VAT control statement.
 
 ## VAT declaration overview
 
-## VAT declaration
+### VAT declaration
 
-This paragraph provides an overview of the sections and rows of VAT declaration,
+This section describes the sections and rows of the VAT declaration,
 calculations, and relations between the VAT declaration and VAT control
-statement
+statement.
 
-To be able to generate VAT declaration and VAT control statement automatically,
-you should first create enough sales tax codes for keeping separate VAT
-accounting for each of VAT declaration box. You also need to associate **Sales
+To generate the VAT declaration and VAT control statement automatically,
+first create enough sales tax codes to keep separate VAT
+accounting for each box on the VAT declaration. You must also associate **Sales
 tax codes** with the **Lookup result** of the **Lookup for the VAT declaration
 boxes** in the **Application specific parameters** of the VAT declaration format
 and VAT control statement format. You can find more details about how to set up
-**Application specific parameters** in the sections
-[below](#set-up-parameters-for-declarations-fields).
+**Application specific parameters** in the
+ [Set up parameters for declarations fields](#set-up-parameters-for-declarations-fields) section later in this topic.
 
-Column **Application specific parameters – lookup result** in the table below
-shows you which **Lookup result** is preconfigured for a specific VAT
+The **Application specific parameters – lookup result** column in the following table shows you which **Lookup result** is preconfigured for a specific VAT
 declaration row in the VAT declaration format and VAT control statement format.
-You should use this information to correctly associate Sales tax codes with the
-Lookup result and subsequently with the VAT declaration row.
+Use this information to correctly associate sales tax codes with the
+lookup result, and subsequently with the VAT declaration row.
 
-Note. If you configure Sales tax codes for posting incoming reverse charge VAT
-with **Use tax**, you should associate your Sales tax codes with the Lookup
+> [!Note]
+> If you configure Sales tax codes for posting incoming reverse charge VAT
+with **Use tax**, you should associate your Sales tax codes with the lookup
 result that contains UseTax in the name, for example for EU purchases, configure
-**EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes or
+**EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or
 **EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge.
-See more details about how to configure Reverse charge VAT in the topic [Reverse
-charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge).
+See [Reverse charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
 
 ### Section I Taxable transactions
 
@@ -413,7 +413,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 </tbody>
 </table>
 
-### Section II Other supplies and supplies with place of supply outside the Czech Republic with the right to deduct
+## Section II Other supplies and supplies with place of supply outside the Czech Republic with the right to deduct
 
 <table width="100%">
 <tbody>
@@ -557,7 +557,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 </table>
 
 
-### Section III Additional data
+## Section III Additional data
 
 <table width="1020">
 <tbody>
@@ -685,7 +685,7 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 </table>
 
 
-### Section IV VAT deduction
+## Section IV VAT deduction
 
 <table width="99%">
 <tbody>
@@ -1222,9 +1222,9 @@ charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea
 
 ## VAT control statement
 
-This section provides an overview of the sections of VAT control statement
+This section provides an overview of the sections of VAT control statement.
 
-### Section A1 Sales of goods and services under domestic reverse charge
+## Section A1 Sales of goods and services under domestic reverse charge
 
 Section A1 shows documents which generate amount in the Row 25 of the VAT
 declaration.
