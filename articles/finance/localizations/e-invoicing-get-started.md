@@ -81,7 +81,7 @@ The following illustration shows the five main steps that you will complete in t
 3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
 4. Select **Electronic invoicing add-on**.
 5. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
-6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
+6. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
 
     ![Setup add-in dialog box in LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
@@ -119,9 +119,9 @@ During the RCS setup, you will complete these tasks:
 
 1. In the **Globalization features** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
 2. Select **Click here to connect to Lifecycle Service**. If you don't want to connect to LCS, select **Cancel**.
-3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.aksn2nc.westus2.dev-operations365.dynamics.com/`.
-4. In the **Application Id** field, enter **2b66cba7-e0cc-4d1b-9cf8-cd173a0de201**. This value is a fixed value.
-5. In the **LCS Environment Id** field, enter the tenant ID of your LCS subscription account.
+3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.aksm2nc.westus2.operations365.dynamics.com/`.
+4. In the **Application Id**, the field must display the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
+5. In the **LCS Environment Id** field, enter the ID of your LCS subscription account.
 
 ![Entering Electronic invoicing add-on parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
 
