@@ -41,7 +41,7 @@ Before going through this document, it is important to know the concepts of a ch
 If a error is not seen below, please create a Support Request as necessary to resolve the issue with Microsoft Support.  This article focuses on issues that are either directly able to be worked on without Microsoft Support or issues that can be directly seen but not solved without Microsoft Support.  
 
 | Error | Description |
-|-------------------------------|--------------------------------------------------------------------------------------|
+|-------------------------|--------------------------------------------------------------------------------------|
 | **System.ArgumentNullException: Value cannot be null.Parameter name: connectionString at Microsoft.Dynamics.Retail.CommerceDataExchange.SqlTargetRequestHandler** | An error has occurred (Error seen in a failed download job in **Download sessions**) due to batch job statuses. Navigate to **System administration > Inquiries > Batch jobs** and find the data writing batch associated to your Commerce Scale Unit that the download job would have been applied to and change the batch job's status to **Withhold**. On environments prior to 10.0.12, it is recommended to additionally create a new **Legacy** channel database group, associate the **Default** channel database to this new group, and then do not include this new database group in any distribution schedules (The **Default** (Legacy) channel database should no longer have CDX jobs being generated for it. |
 | Unable to **Run now** from the **Distribution schedule** without running as **Batch processing** | This change was made intentionally in 10.0.11 due to accidental creation of performance issues by running jobs during the busiest environment usage times.  Another change that was made as a part of this feature enhancement was to disallow **Recurrence** when running a **Full data sync** (Full job sync) from the **Channel database** form in Headquarters (Only a single occurrence may be executed). It is not recommended to change this behavior, however, if in a development environment, it is possible to change this by navigating to **Commerce shared parameters > Configuration parameters** and setting a new Name **CDX_DISABLE_FORCESCHEDULEINBATCH** with Value **1**. |
 | **Microsoft.Dynamics.Retail.CommerceDataExchange.SqlWriteRequestRunException: Failed to run SqlWriteRequestRunner for table AX.\<TABLE NAME>** | An error has occurred (Error seen in a failed download job in **Download sessions**) due to extending one or more **DBO** tables to a longer length and thus requiring truncation of data which causes a failure, which has caused a truncation failure. Please generate a Support Request . See [CDX extensibility](cdx-extensibility.md) for best practices, such as removing the EDT extension on the edited table field in question and using the CDX extension table to store the long (Full) value required.  |
@@ -54,17 +54,15 @@ If a error is not seen below, please create a Support Request as necessary to re
 | The **P-job** fails to create an upload session with error, **System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_UPLOADSESSION'. Cannot insert duplicate key in object 'crt.UPLOADSESSION'.** | If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
 | When attempting to download an upload session package from the **Upload sessions** form in Headquarters, the error **Record for Id - \<Number> not found**  | Create a Support Request. |
 | CDX download sessions failing to be applied with error message: **Failed to get download session package URI.** | If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
-| Ue | Cree. |
-| Ue | Cree. |
-| Ue | Cree. |
-
+| No **Download sessions** are applied and no **Upload sessions** are being created | If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
+| Upload sessions fail with an error where the upload session package contains multiple records in the **RetailListingStatusLog** table, which has the same **StatusDateTime** value: **Infolog for task Default:P-0001 (...) Error when bulk inserting data. Target table: RetailListingStatusLog** | If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
+| Cashier attempts to switch to offline or is forced offline and the switch fails | There are many possible causes. First, verify basic information. Does the computer have available hard drive space? If using SQL Express, is the offline database at the 10GB size limit? Are there pending download sessions for this register (Proving the register is no longer up to date, potentially (temporarily) disallowing offline switching)?  Beyond these questions, it is recommended to contact Support. If this occurs in a production environment, login to Lifecycle Services (LCS) and create a request for immediate support.  If in a non-production environment, create a Support Request. |
 
 ## Resources
+[Best practices](CDX-Best-Practices.md)
+[CDX best practices](../implementation-considerations-CDX.md)
 [Commerce Architecture](../commerce-architecture.md)
 [Select an in-store topology](retail-in-store-topology.md)
-[CDX best practices](../implementation-considerations-CDX.md)
 [Device management implementation guidance](../implementation-considerations-devices.md)
 *Link to MPOS installer* LINK PENDING
-
 *Link to CSU (Self-hosted) installer* LINK PENDING
-
