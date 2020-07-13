@@ -124,3 +124,10 @@ A new option will be available in **Human Resources parameters** to update the n
 ## Checklist entities included in Common Data Service
 
 Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)
