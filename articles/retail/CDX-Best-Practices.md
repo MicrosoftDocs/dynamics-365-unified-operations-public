@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Data Exchange implementation guidance
+title: Commerce Data Exchange best practices
 description: This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives best practices advice for implementations.
 author: jashanno
 manager: AnnBe
