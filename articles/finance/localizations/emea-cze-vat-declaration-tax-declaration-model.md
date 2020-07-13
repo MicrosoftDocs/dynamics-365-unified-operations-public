@@ -1547,8 +1547,6 @@ you can create the following line in the parameters:
 
 ![Pic1_ReportFieldLookup](media/Pic1_ReportFieldLookup.png)
 
->   A screenshot of a social media post Description automatically generated
-
 7.  On the Action pane, click **Export** to export parameters at XML file.
 
 8.  Select configuration **VAT declaration Excel (CZ**). On the Action pane,
@@ -1752,15 +1750,98 @@ Follow these steps:
 
 You should do the following settings prior to generating VAT declaration:
 
-| **Page**                                                                                                                                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Legal entities** (Go to **Organization administration \> Organizations \> Legal entities**)                                              | **Click Registration IDs**. Set up Tax registration number of the company. It should be setup for **Tax registration type** that is assigned to Tax registration category **VAT ID**. Find more details in [Set up VAT ID](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-vat-id).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Legal entities**                                                                                                                         | On the FastTab **Addresses**, define the primary address for the legal entity. On the FastTab Contact information define **Phone** and **Email address.** Set them to **Primary.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Tax Authorities**                                                                                                                        | Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**. Create the tax authority where the tax declaration is provided. Enter the tax authority code in the field **Authority identification**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **All customers (Go to Accounts receivable \> Customers \> All customers) All vendors (Go to Accounts payable \> Vendors \> All vendors)** | Set up Vat IDs for customers and vendors. Find more details in [Registration of vendor VAT ID](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-registration-vendor-vat-id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **General ledger parameters** (Go to **General ledger \> Setup \> Ledger setup \> General ledger parameters**)                             | On the tab **Sales tax**, FastTab **Tax options**, in the **Electronic reporting** group of fields, in the **VAT statement format mapping** field, select **VAT declaration Excel (CZ)** format. This format will be printed when you run **Report sales tax for settlement period**. Also this format will be printed when you click **Print** in **Sales tax payments** page. Find more details in the sections below.                                                                                                                                                                                                                                                                                                                                                                                          |
-| **General ledger parameters**                                                                                                              | On the tab **Sales tax**, FastTab **Tax options**, in the **Special report** group of fields, select **Yes** in the **Date of VAT register** field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **General ledger parameters**                                                                                                              | On the tab **Sales tax**, on the FastTab **VAT statement**, you can define some parameters of the company: **Taxpayer status** - select **Taxpayer**, **Group**, or **Other Taxpayer type** - select **Individual**, or **Corporation Main economic activity** - Enter the code **Factor** - Enter the pro rata coefficient applied during the year. Note that you can configure the same information about the company in **Additional fields** of **Electronic messages.** When you run the declaration, you’ll be able to select the source of information about the company in the field **Tax Jurisdiction**: local fields described below that are available for the legal entity in CZE country\\region only (select **The Czech Republic**) or Electronic message additional fields (select **Default**). |
+<table>
+<tbody>
+<tr>
+<td width="387">
+<p><strong>Page</strong></p>
+</td>
+<td width="567">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>Legal entities</strong> (Go to<strong> Organization administration &gt; Organizations &gt; Legal entities</strong>)</p>
+</td>
+<td width="567">
+<p><strong>Click Registration IDs</strong>. Set up Tax registration number of the company.</p>
+<p>&nbsp;</p>
+<p>It should be setup for <strong>Tax registration type</strong> that is assigned to Tax registration category <strong>VAT ID</strong>.</p>
+<p>Find more details in <a href="https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-vat-id">Set up VAT ID</a>.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>Legal entities</strong></p>
+<p>&nbsp;</p>
+</td>
+<td width="567">
+<p>On the FastTab <strong>Addresses</strong>, define the primary address for the legal entity.</p>
+<p>On the FastTab Contact information define <strong>Phone</strong> and <strong>Email address. </strong>Set them to <strong>Primary.</strong></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>Tax Authorities</strong></p>
+</td>
+<td width="567">
+<p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax authorities</strong>. Create the tax authority where the tax declaration is provided. Enter the tax authority code in the field <strong>Authority identification</strong>.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>All customers (Go to Accounts receivable &gt; Customers &gt; All customers)</strong></p>
+<p><strong>All vendors (Go to Accounts payable &gt; Vendors &gt; All vendors)</strong></p>
+<p>&nbsp;</p>
+</td>
+<td width="567">
+<p>Set up Vat IDs for customers and vendors.</p>
+<p>Find more details in <a href="https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-registration-vendor-vat-id">Registration of vendor VAT ID</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>General ledger parameters </strong>(Go to <strong>General ledger &gt; Setup &gt; Ledger setup &gt; General ledger parameters</strong>)</p>
+</td>
+<td width="567">
+<p>On the tab <strong>Sales tax</strong>, FastTab <strong>Tax options</strong>, in the <strong>Electronic reporting</strong> group of fields, in the <strong>VAT statement format mapping</strong> field, select <strong>VAT declaration Excel (CZ)</strong> format.</p>
+<p>This format will be printed when you run <strong>Report sales tax for settlement period</strong>. Also this format will be printed when you click <strong>Print</strong> in <strong>Sales tax payments</strong> page.</p>
+<p>Find more details in the sections below.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>General ledger parameters</strong></p>
+</td>
+<td width="567">
+<p>On the tab <strong>Sales tax</strong>, FastTab <strong>Tax options</strong>, in the <strong>Special report </strong>group of fields, select<strong> Yes </strong>in the<strong> Date of VAT register </strong>field.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="387">
+<p><strong>General ledger parameters</strong></p>
+</td>
+<td width="567">
+<p>On the tab <strong>Sales tax</strong>, on the FastTab <strong>VAT statement</strong>, you can define some parameters of the company:</p>
+<p><strong>Taxpayer status</strong> - select <strong>Taxpayer</strong>, <strong>Group</strong>, or<strong> Other</strong></p>
+<p><strong>Taxpayer type</strong> - select <strong>Individual</strong>, or <strong>Corporation</strong></p>
+<p><strong>Main economic activity</strong> - Enter the code</p>
+<p><strong>Factor </strong>- Enter the pro rata coefficient applied during the year.</p>
+<p>&nbsp;</p>
+<p>Note that you can configure the same information about the company in <strong>Additional fields </strong>of<strong> Electronic messages.</strong></p>
+<p>When you run the declaration, you&rsquo;ll be able to select the source of information about the company in the field <strong>Tax Jurisdiction</strong>: local fields described below that are available for the legal entity in CZE country\region only (select <strong>The Czech Republic</strong>) or Electronic message additional fields (select <strong>Default</strong>).</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Set up reverse charge item groups
 
@@ -1951,9 +2032,7 @@ message processing that is released to LCS.
 12.  Select **OK**. When the declaration in XML is generated, the status of the
     message is changed to **Generated**.
 
-![Pic4_Reverse charge item groups](media/Pic4_Reverse charge item groups.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![PicEM](media/PicEM.jpg)
 
   If an error occurs while the report is generated, the status of the message is changed to **Technical error**.
 
