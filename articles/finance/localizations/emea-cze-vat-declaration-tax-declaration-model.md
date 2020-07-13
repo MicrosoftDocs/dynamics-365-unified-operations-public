@@ -1545,7 +1545,7 @@ you can create the following line in the parameters:
 
 6.  Review example of parameters on the picture:
 
-![](media/9ee9c0c4f7590ccdb0280c9e9c95e88c.png)
+![Pic1_ReportFieldLookup](media/Pic1_ReportFieldLookup.png)
 
 >   A screenshot of a social media post Description automatically generated
 
@@ -1592,7 +1592,7 @@ up the following lines as the last lines:
 
 Review example of parameters on the picture:
 
-![A screenshot of a social media post Description automatically generated](media/f9a43bf89c05bab0c2c4cc878c2eefdf.png)
+![Pic2_SubjectCodeLookup](media/Pic2_SubjectCodeLookup.png)
 
 ### Set up parameters for fulfillment mode codes
 
@@ -1661,7 +1661,7 @@ in the Electronic reporting configuration.
 
 Review example of parameters on the picture:
 
-![A screenshot of a social media post Description automatically generated](media/de6e7ebd2dad61ba82d80d75af80d1aa.png)
+![Pic3_NoTaxDocumentLookup](media/Pic3_NoTaxDocumentLookup.png)
 
 6.  Change **State** of all parameters to **Completed**.
 
@@ -1951,7 +1951,7 @@ message processing that is released to LCS.
 12.  Select **OK**. When the declaration in XML is generated, the status of the
     message is changed to **Generated**.
 
-![](media/88e0c7eea30f6fef270d134eac29ef7a.jpg)
+![Pic4_Reverse charge item groups](media/Pic4_Reverse charge item groups.jpg)
 
 >   A screenshot of a cell phone Description automatically generated
 
