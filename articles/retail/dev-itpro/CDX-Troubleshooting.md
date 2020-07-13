@@ -33,18 +33,16 @@ ms.dyn365.ops.version: Retail July 2017 update
 This topic is intended for IT personas who are implementing functionality related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. This document focuses on troubleshooting CDX in implementations.
 
 ## Overview
-Data configuration and synchronization is crucial to a proper implementation.  Regardless of business needs, IT infrastructure, and overall preparedness, if data is not being correctly synchronized, the entire environment is effectively useless.  As such, it is top priority to understand what is required to configure, generate, synchronize, and verify data synchronization across a full implementation. From Headquarters, through the Commerce Scale Unit, to the brick and mortar stores utilizing Modern POS and other in-store components.
+Data configuration and synchronization is crucial to a proper implementation.  Regardless of business needs, IT infrastructure, and overall preparedness, if data is not being correctly synchronized, the entire environment could become effectively useless.  As such, it is crucial to understand the process of troubleshooting any issue that arises in regards to data synchronization. From Headquarters, through the Commerce Scale Unit, to the brick and mortar stores utilizing Modern POS (With or without an offline database) and other in-store components.  Reviewing this document should provide some general guidance on how to mitigate or fix some issues and highlight when it is best to create a support request and what data is most important to speed up a request for support.
 
-Before going through this document, it is important to know the concepts of a channel (Store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this document such as the Devices implementation guide and the Commerce architecture documents. 
+Before going through this document, it is important to know the concepts of a channel (Store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this document such as the CDX implementation guide, the CDX best practices, and the Commerce architecture documents. 
 
 
 ## Resources
-*Link to Devices Implementation Guide* [Device management implementation guidance](implementation-considerations-devices.md)
-
-*Link to Commerce Architecture* [Commerce Architecture](commerce-architecture.md)
-
-*Link to In-store Topologies* [Select an in-store topology](dev-itpro/retail-in-store-topology.md)
-
+[Commerce Architecture](../commerce-architecture.md)
+[Select an in-store topology](retail-in-store-topology.md)
+[CDX best practices](../implementation-considerations-CDX.md)
+[Device management implementation guidance](../implementation-considerations-devices.md)
 *Link to MPOS installer* LINK PENDING
 
 *Link to CSU (Self-hosted) installer* LINK PENDING
