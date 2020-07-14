@@ -2,10 +2,10 @@
 # required metadata
 
 title: Auto-update Commerce Scale Unit (cloud)
-description: This topic describes auto-updates for Commerce Scale Unit (cloud)
+description: This topic describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
-manager: 
-ms.date: 07/13/2020
+manager: tonyafehr
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,15 +23,17 @@ ms.search.scope: Retail, Operations
 ms.search.region: Global
 # ms.search.industry: retail
 ms.author: aamiral
-ms.search.validFrom: 2020-7-13 
+ms.search.validFrom: 2020-07-13 
 ms.dyn365.ops.version: 8.0 
 ---
 
+# Auto-update Commerce Scale Unit (cloud)
+[!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> Auto-update Commerce Scale Unit (cloud) is currently in Private Preview. To enroll in this program, you may send a request to CSUAutoUpdate@microsoft.com. 
+> Auto-update Commerce Scale Unit (cloud) is currently in private preview. To enroll in this program, you may send a request to CSUAutoUpdate@microsoft.com. 
 
-This feature only applies to cloud hosted Commerce Scale Unit at this point. Self-hosted Commerce Scale Unit is not included, and must be self-updated.
+This feature only applies to cloud-hosted Commerce Scale Unit at this point. Self-hosted Commerce Scale Unit is not included, and must be self-updated.
 
 Auto-update for Commerce Scale Unit enables One Version auto-update. All existing One Version processes, policies, schedules apply to Commerce Scale Unit auto-update.
 
