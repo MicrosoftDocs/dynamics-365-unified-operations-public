@@ -67,7 +67,7 @@ with **Use tax**, you should associate your Sales tax codes with the lookup
 result that contains UseTax in the name, for example for EU purchases, configure
 **EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or
 **EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge.
-See [Reverse charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
+See [Reverse charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
 
 ### Section I Taxable transactions
 
@@ -1244,7 +1244,7 @@ set up enough **Reverse charge item groups** and associate them with Items
 (products), Items group, or procurement categories. You can find more details
 about this step in the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) sections later in this topic. You
 can find more details about how to configure reverse charges fully in the topic
-[Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge). If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
+[Reverse charge VAT](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge). If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
 
 You also need to associate pairs **Reverse charge item groups** – **Tax code**
 with the **Lookup result** of the **\$SubjectCodeLookup** in the **Application
@@ -1477,7 +1477,7 @@ reporting (ER) configurations for the VAT declaration format:
 
 >   For more information, see [Download Electronic reporting configurations from
 >   Lifecycle
->   Services](https://docs.microsoft.com/en-us/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ## Set up Application specific parameters for formats
 
@@ -1684,7 +1684,7 @@ Review example of parameters on the picture:
 >   that are used to generate VAT declaration and VAT control statement as well
 >   as to preview VAT declaration in Excel. You can extend these settings or
 >   create your own. For more information about how to work with Electronic
->   messaging and how to create your own settings, see [Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging).
+>   messaging and how to create your own settings, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
 
 Follow these steps:
 
@@ -1781,7 +1781,7 @@ You should do the following settings prior to generating VAT declaration:
 <p><strong>Click Registration IDs</strong>. Set up Tax registration number of the company.</p>
 <p>&nbsp;</p>
 <p>It should be setup for <strong>Tax registration type</strong> that is assigned to Tax registration category <strong>VAT ID</strong>.</p>
-<p>Find more details in <a href="https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-vat-id">Set up VAT ID</a>.</p>
+<p>Find more details in <a href="https://docs.microsoft.com/dynamics365/finance/localizations/tasks/eur-00015-vat-id">Set up VAT ID</a>.</p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -1813,7 +1813,7 @@ You should do the following settings prior to generating VAT declaration:
 </td>
 <td width="567">
 <p>Set up Vat IDs for customers and vendors.</p>
-<p>Find more details in <a href="https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/eur-00015-registration-vendor-vat-id">Registration of vendor VAT ID</a></p>
+<p>Find more details in <a href="https://docs.microsoft.com/dynamics365/finance/localizations/tasks/eur-00015-registration-vendor-vat-id">Registration of vendor VAT ID</a></p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -1858,7 +1858,7 @@ You should do the following settings prior to generating VAT declaration:
 
 ## Set up reverse charge item groups
 
-Refer to the topic [Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge)
+Refer to the topic [Reverse charge VAT](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge)
 to find all details about how to set up and use reverse charges functionality.
 
 1.  Go to **Tax > Setup > Sales tax > Reverse charge item groups**. Create the new group.
@@ -2264,7 +2264,7 @@ Attached files will be exported as Base64 binary file attachments to the
 
 1.  Go to **Organization administration > Document management > Active document tables**. In the **Table name** select **Sales tax payment**.
 
-2.  Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**. Select a line with sales tax payment and click the the paperclip 
+2.  Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**. Select a line with sales tax payment and click the the paperclip 
     link in the upper right corner.
 
 3.  In the opened page **Attachments for Sales tax payments**, select **New > File** and add a file attachment.
