@@ -41,43 +41,45 @@ Default order settings in Dynamics 365 Supply Chain Management define the site a
 You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan** or **Manage inventory** Action Pane &gt; **Order settings** &gt; **Default order settings**.
 
 ## Default order settings
+
 There are three types of default order settings for purchases, sales, and inventory. The default order settings for purchases are used when creating:
 
--   Purchase order lines
--   Purchase agreement lines
--   Request for quotation lines
--   Purchase requisition lines
--   Consignment replenishment lines
--   Planned purchase orders
+- Purchase order lines
+- Purchase agreement lines
+- Request for quotation lines
+- Purchase requisition lines
+- Consignment replenishment lines
+- Planned purchase orders
 
 The default order settings for sales are used when creating:
 
--   Sales order lines
--   Sales agreement lines
--   Sales quotation lines
--   Return order lines and item replacement lines
--   Demand forecast lines
+- Sales order lines
+- Sales agreement lines
+- Sales quotation lines
+- Return order lines and item replacement lines
+- Demand forecast lines
 
 The  default sales order settings also apply when creating:
 
--   Project item requirements
--   Service order item requirements
+- Project item requirements
+- Service order item requirements
 
 The default order settings for inventory are used when creating:
 
--   Inventory journals
--   Transfer orders
--   Planned transfer orders
+- Inventory journals
+- Transfer orders
+- Planned transfer orders
 
 The  default inventory order settings also apply when creating:
 
--   Quarantine orders
--   Quality orders
--   Production orders
--   BOM lines
--   Planned production orders
+- Quarantine orders
+- Quality orders
+- Production orders
+- BOM lines
+- Planned production orders
 
 ## Full definition of a released product
+
 When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
 
 Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. Obviously no quantity defaulting or checks on multiple and minimums are performed when creating the line or posting the journal. 
@@ -87,6 +89,7 @@ The system always attempts to find a default site and warehouse when an order or
 The default order type, the purchase, and the inventory lead times can be overridden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
 
 ## Default order settings rules
+
 You can define general default order settings and any number of default order setting rules that apply only in certain conditions, such as site or a specific product dimension or product dimensions combination. You can't define warehouse specific order settings.
 
 ### Rank in default order settings
@@ -174,5 +177,24 @@ If the rule system for default order settings is too cumbersome, then there is t
 
 The rank in this case doesn't really matter, so you can choose to hide it. This solution potentially introduces a maintenance issue. However, you may want to consider using this setup if you are consider integrating with Product Lifecycle Management (PLM) systems.
 
+## Use strict or standard validation of default order quantities
 
+You can choose how strict the system should be when validating quantities entered in the **Default order settings** for a product. When you use the new strict option, the **Standard order quantity** must always be a multiple of the specified **Multiple** value for purchase orders, inventory, and sales orders. If you are using strict validation, you won't be able to save default order settings that don't meet this requirement (and an error is shown in the message bar). <!-- KFM: What happens when we choose standard validation? Are all values then allowed? (I.e., no validation?) -->
 
+Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each of these FastTabs has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
+
+### Enable this feature
+
+Before you can use the feature described in this section, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Product information management*
+- **Feature name** - *Strict validation on default order quantities*
+
+### Set the validation option
+
+To set the validation option:
+
+1. Go to **Product information management \> Setup \> Product information management parameters**.
+1. On the **General** tab, set **Validation on default order quantities** to one of the following values:
+    - **Strict** - Select this option to ensure that all **Standard order quantity** values will be be a multiple of the **Multiple** value for each FastTab (**Purchase order**, **Inventory**, and **Sales order**).
+    - **Standard** - Select this option to use standard validation (which works the same as when this feature isn't enabled).
