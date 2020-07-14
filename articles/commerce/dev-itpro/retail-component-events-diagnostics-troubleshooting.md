@@ -72,7 +72,7 @@ Currently, some of the events that are logged by various components are sent to 
 [![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
 
 ## Viewing events by using the (F12) browser developer tools console
-Because Retail Cloud POS & E-commerce modules are a browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-commerce modules, you must use a supported browser version.
+Because Retail Cloud POS & E-commerce modules are a browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://docs.microsoft.com/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-commerce modules, you must use a supported browser version.
 
 ### View events in the browser developer tools console
 
