@@ -62,10 +62,13 @@ The following illustration shows a generic example of the **Retail Self-service 
     > [!IMPORTANT]
     > Previously, the RetailSelfService table was used as the source that all installer information was pulled from. Information was entered in this table, based on the installers that had been uploaded into headquarters through the earlier package application method. The new self-service population methodology combines all values in the RetailSelfService table (the earlier self-service package upload method) with all available installers in the LCS Shared asset library. The self-service drop-down package selectors will show the options from this newly synchronized, combined source.
     >
-    > As was stated at the beginning of this topic, the earlier self-service package upload method is obsolete, but it will continue to be supported until it's removed in the future.
+    > As stated at the beginning of this topic, the earlier self-service package upload method is obsolete, but it will continue to be supported until it's removed in the future.
 
 4. On the same page, you can select default packages that will be used throughout headquarters in their relevant locations (**Devices**, **All stores**, and **Channel database**).
 5. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
+
+> [!NOTE]
+> There are several installers.  Modern POS, Modern POS with offline (Note that this is a separate installer), Commerce Scale Unit (Self-hosted, formerly RSSU), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
 
     | Component | Link |
     |---|---|
