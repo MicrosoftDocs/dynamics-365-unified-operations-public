@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Fiscal registration service integration sample for Germany
-description: This topic provides an overview of the fiscal integration sample for Germany.
+title: Commerce localization for Brazil
+description: This topic provides an overview of the localization of Dynamics 365 Commerce for Brazil.
 author: josaw
 manager: annbe
 ms.date: 05/26/2020
