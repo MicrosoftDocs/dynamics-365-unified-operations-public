@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 This topic explains how to set up the system and the warehouse app so that they support work policies. Use this functionality to quickly register inventory without creating putaway work when receiving purchase or transfer orders, or when completing manufacturing processes. (This is a general topic, for details relating to license plate receiving see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).)
 
-A work policy controls whether warehouse work is created<!-- KFM: In response to what? -->. You set up each work policy by defining the conditions under which it applies (work order types and processes, inventory location, and (optionally) specific product(s)). For example, a purchase order of the product A0001 is to be received in warehouse 24, location RECV. The product is later consumed in another process at location RECV. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product A0001 as received in RECV.
+A work policy controls whether warehouse work is created in response to reporting a manufactured item as finished, or when receiving goods with warehouse app. You set up each work policy by defining the conditions under which it applies (work order types and processes, inventory location, and (optionally) specific product(s)). For example, a purchase order of the product A0001 is to be received in warehouse 24, location RECV. The product is later consumed in another process at location RECV. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product A0001 as received in RECV.
 
 > [!NOTE]
 > - For the work policy to be active, you must define at least one location for the work policy in the **Inventory locations** section. 
@@ -51,7 +51,7 @@ To set up work policies go to **Warehouse management \> Setup \> Work \> Work po
 
 ### The Work order types FastTab
 
-On the **Work order types** FastTab, add all of the work order types (and related processes) the policy will apply too. The following work order types and related work processes are supported for work policies: 
+On the **Work order types** FastTab, add all of the work order types (and related processes) the policy will apply too. The following work order types and related work processes are supported for work policies:
 
 | **Work order type** | **Work process** |
 |--|--|
@@ -83,7 +83,7 @@ Use the **Products** tab to control which products the policy should apply to:
 - Set **Product selection** to **All** to apply this policy for all products.
 - Set **Product selection** to **Selected** to apply the policy only to products listed in the grid. Use the toolbar here to add or remove products to/from the grid.
 
-## Default and custom "to" locations
+## Default and custom "To" locations
 
 > [!NOTE]
 > To make the functionality described in this section available on your system, you must turn on the *License plate receiving enhancements,* and *Work policy enhancements for inbound work* features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -106,15 +106,15 @@ To set up a mobile device menu item to support receiving at a custom location:
 1. The **Default data** page opens. Make the following settings:
     - **Default data field** - Set to *To location*.
     - **Warehouse** - Select the destination warehouse to use with this menu item.
-    - **Location** - Select the destination location to use with this menu item. <!-- KFM: later in the scenario, we set **Hardcoded value** instead of this. Which is it? -->
-    - **Hardcoded value** -  <!-- KFM: How do we use this? It won't let me save with this field blank. -->
+    - **Location** - This drop-down list displays all of the location IDs available for the selected warehouse, but this setting doesn't actually have any effect, so you can leave it blank. You could use this list to double check the ID you need to enter into the **Hardcoded value** field.
+    - **Hardcoded value** - Enter the location ID for the receiving location that applies for this menu item.
 
 > [!TIP]
 > For a work policy to be applied, all the receiving locations (whether your using the default warehouse receiving location or a custom **To location**) must be listed in the relevant **Work policies** setup.
 
 ## Example scenario: Warehouse receiving
 
-All products received by the *Purchase order item* process are to be registered in location FL-001 and be available in warehouse 24<!-- KFM: without creating work? -->. Products received by any other process should be registered in location RECV and work should be created as usual. <!-- KFM: we don't show the standard setup for this. Should we? -->
+All products received by the *Purchase order item* process are to be registered in location FL-001 and be available in warehouse 24 (without creating work). Products received by any other process (using other mobile device menu items) should be registered at the default warehouse receiving location (RECV) and work should be created as usual. (In this scenario, we won't show the second (default) receiving setup.)
 
 To allow for this, we will need:
 
@@ -136,13 +136,13 @@ This scenario uses the standard demo data, so if you'd like to work through it u
 1. On the **Work order types** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
     - **Work order type** - *Purchase orders*
     - **Work process** - *Purchase order item receiving (and putaway)*
-    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
-    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+    - **Work creation method** - *Never*
+    - **Cross docking policy name** - Leave this blank
 
 1. Expand the **Inventory locations** FastTab.
 1. Select **Add** to add a row to the grid and then make the following settings for the new row:
     - **Warehouse** - *24*
-    - **Location** - *FL-001* <!-- KFM: Original text specified "FLOOR-01" but I see this instead (I changed it everywhere). Please confirm. -->
+    - **Location** - *FL-001*
 1. Expand the **Products** FastTab and set **Product selection** to *All*.
 1. Select **Save**.
 
@@ -156,7 +156,7 @@ This scenario uses the standard demo data, so if you'd like to work through it u
 1. The **Default data** page opens. On the Action pane, select **New** to add a row to the grid and then make the following settings for the new row:
     - **Default data field** - *To location*
     - **Warehouse** - *24*
-    - **Location** - <!-- KFM: Should this really be blank? -->
+    - **Location** - (Leave blank)
     - **Hardcoded value** - *FL-001*
 1. Select **Save**.
 
@@ -229,14 +229,14 @@ Warehouse processes don't always include warehouse work. By defining a work poli
 1. On the **Work order types** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
     - **Work order type** - *Finished goods put away*
     - **Work process** - *All related work processes*
-    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
-    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+    - **Work creation method** - *Never*
+    - **Cross docking policy name** - Leave this blank
 
 1. Select **Add** from the toolbar again to add a second row to the grid and then make the following settings for the new row:
     - **Work order type** - *Co-product and by-product put away*
     - **Work process** - *All related work processes*
-    - **Work creation method** - *Never* <!-- KFM: I assumed this. Please confirm. -->
-    - **Cross docking policy name** - Leave this blank <!-- KFM: I assumed this. Please confirm. -->
+    - **Work creation method** - *Never*
+    - **Cross docking policy name** - Leave this blank
 1. On the **Inventory locations** FastTab toolbar, select **Add** to add a row to the grid and then make the following settings for the new row:
     - **Warehouse** - *51*
     - **Location** - *001*
