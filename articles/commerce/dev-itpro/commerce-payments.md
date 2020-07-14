@@ -82,6 +82,8 @@ Prequisite configurations noted below are required for Commerce payments to func
 | Duplicate payment protection on invoicing | This feature will enable duplicate payment protection for invoicing scenarios. It may affect customizations in invoicing scenarios. If your organization has customizations in this feature area, please ensure these customizations are refactored prior to enabling this option on production environments. | Yes |
 | Enable refunds over multiple captures | This feature addresses an issue with performing multiple linked refunds against an order. | Yes |
 
+![Prerequisite feature notice](../dev-itpro/media/COP_PRE.png)
+
 ### Prerequisite configurations
 
 #### Map payment methods to operations to payment methods
@@ -108,7 +110,9 @@ Order completion must be enabled for call centers. This will enforce business lo
 
 When customer orders are created at the point of sale, the store associate has the option to collect a card payment for fulfillment or they can select **Pay later** to skip collection of card details. When this feature is enabled, the option to **Pay later** shoudl be removed from the point of sale. To remove that option, search for **Functionality profiles**. In the **General** fasttab for the functionality profile, change the **Require payment for fulfillment** to **Card required**. These changes need to be synced to the channel data base to take effect at the point of sale. 
 
-### 
+## Enabling Omni-channel Commerce order payments
+
+![Omni-channel Commerce order payments feature](../dev-itpro/media/COP_ENABLE.png)
 
 ## Key scenarios
 
