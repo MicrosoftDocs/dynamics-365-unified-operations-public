@@ -63,10 +63,10 @@ On the **Work order types** FastTab, add all of the work order types (and relate
 
 To set a work policy to apply for several work processes of the same work order type, add multiple lines to the grid (one for each process).
 
-For each line in the grid, set the **Work creation method**, do one of the following:
+For each line in the grid, set the **Work creation method** to one of the following:
 
 - **Never** - the work policy will prevent warehouse work from being created for the selected work order type and related work process.
-- **Cross docking** - the work policy will create cross-docking work using the policy you select in the **Cross docking policy name** column. <!-- KFM: Please confirm this -->
+- **Cross docking** - the work policy will create cross-docking work using the policy you select in the **Cross docking policy name** column.
 
 ### The Inventory locations FastTab
 
