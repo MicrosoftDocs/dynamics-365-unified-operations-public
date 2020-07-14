@@ -67,9 +67,13 @@ Order completion:
 
 ![POS or e-commerce order created with this feature enable has "Payments" link active](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
-## Prerequisite features
+## Prerequisites
 
-To enable Omni-Channel order payments, you first must enable several other features. These features should be enabled as a best practice because they address functional gaps related to orders. After OCOP has been enabled, some these features may be disabled, but that is discouraged because all testing for OCOP has been done with these features enabled.
+To enable Commerce payments, you first must enable several other features and configurations. The features should be enabled as a best practice because they address functional gaps related to orders. After the Commerce payments feature has been enabled, some these features may be disabled, but that is discouraged because all testing for OCOP has been done with these features enabled.
+
+Prequisite configurations noted below are required for Commerce payments to function properly and may not be disabled or reverted while the feature is enabled. 
+
+### Prerequisite features
 
 | Feature name | Description | May be disabled later |
 | --- | --- | --- |
@@ -78,9 +82,9 @@ To enable Omni-Channel order payments, you first must enable several other featu
 | Duplicate payment protection on invoicing | This feature will enable duplicate payment protection for invoicing scenarios. It may affect customizations in invoicing scenarios. If your organization has customizations in this feature area, please ensure these customizations are refactored prior to enabling this option on production environments. | Yes |
 | Enable refunds over multiple captures | This feature addresses an issue with performing multiple linked refunds against an order. | Yes |
 
-## Prerequisite configurations
+### Prerequisite configurations
 
-### Map payment methods to operations to payment methods
+#### Map payment methods to operations to payment methods
 
 This feature requires that payment methods in all channels are mapped to a corresponding operation. This was not previously required, but is neccesary to support management of order payments in the back office. When the feature is enabled, warnings will be issued in the feature management for each payment method which does not have an equivalent operation mapping. Payment methods should be mapped to operations prior to enabling the feature to avoid receiving these errors at the time of feature enablement.
 
@@ -88,21 +92,23 @@ Example from call center:
 
 ![Operation mapped to payment method in call center](../dev-itpro/media/COP_OPERATION.png)
 
-### Call center is required
+#### Call center is required
 
 At least one Call Center channel must be configured in order to manage POS and e-commerce order payments through the back office. For more details on creating a call center, visit the [Set up a call center channel](https://docs.microsoft.com/en-us/dynamics365/commerce/channel-setup-callcenter#overview) article. 
 
-### Users must be set up as call center users
+#### Users must be set up as call center users
 
 Users who will be editing Commerce payments in the back office must be set up as call center channel users. For more details on setting up call center users, visit the [Set up a call center channel user](https://docs.microsoft.com/en-us/dynamics365/commerce/channel-setup-callcenter#set-up-channel-users) section of the call center article. 
 
-### Enable order completion for call enters
+#### Enable order completion for call enters
 
 Order completion must be enabled for call centers. This will enforce business logic to ensure orders can be paid during fulfillment. For more information on order completeion, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) of the article explaining call center order processing options.
 
-### Disable pay later
+#### Disable "Pay later"
 
 When customer orders are created at the point of sale, the store associate has the option to collect a card payment for fulfillment or they can select **Pay later** to skip collection of card details. When this feature is enabled, the option to **Pay later** shoudl be removed from the point of sale. To remove that option, search for **Functionality profiles**. In the **General** fasttab for the functionality profile, change the **Require payment for fulfillment** to **Card required**. These changes need to be synced to the channel data base to take effect at the point of sale. 
+
+### 
 
 ## Key scenarios
 
@@ -183,6 +189,11 @@ To best support
 
 ## Disabling Commerce payments
 
+## Out of scope
+
+Editing call center originating orders in POS
+Using original merchant properties for new authorizations obtained through Call Center.
+Orders created during statement posting
 
 
 ## Related articles
