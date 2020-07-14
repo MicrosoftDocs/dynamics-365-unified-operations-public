@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 06/17/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -245,9 +245,9 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
-| [External gift cards for call center and e-commerce] (https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/gift-card | ✔<br>(Starting with 10.0.10) | 
+| [External gift cards for call center and e-commerce] (https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card | ✔<br>(Starting with 10.0.10) | 
 | [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
-| [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
+| [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
 
 
 ## Sign up with Adyen
