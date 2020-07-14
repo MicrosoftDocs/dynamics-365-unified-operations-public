@@ -134,7 +134,7 @@ For orders that were created in POS or the e-Commerce Storefront, the following 
 
 ### Removing order payments
 
-| Scenario | Description |
+| Scenario | Description | Supported |
 | --- | --- | --- |
 | **Authorized payments** | Commerce order card payments may be removed through order completion only if they have not been partially captured. | Yes |
 | **Prepayments** | Prepayments may not be removed through order completion. Prepayments have payment vouchers already associated with them and may not be removed from an order once they have been applied. | No |
