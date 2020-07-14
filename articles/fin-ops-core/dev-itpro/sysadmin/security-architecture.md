@@ -3,9 +3,9 @@
 
 title: Security architecture
 description: This topic provides an overview of the security architecture of Finance and Operations.
-author: sarvanisathish
+author: Peakerbl
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 15441
 ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,11 +54,11 @@ Context-based security controls access to securable objects. When a privilege is
 For more information, see [Role-based security](role-based-security.md).
 
 ## Data security
-Authorization is used to grant access to elements of the program. By contrast, data security is used to deny access to tables, fields, and rows in the database. 
+Authorization is used to grant access to elements of the program. By contrast, data security is used to deny access to tables, fields, and rows in the database.
 
-Use the extensible data security framework to control access to transactional data by assigning data security policies to security roles. Data security policies can restrict access to data, based on either the effective date or user data, such as the sales territory or organization. 
+Use the extensible data security framework to supplement role-based security by restricting access to table records based on security policies. A security permission, as part of a user role, increases the access a user has to data, while a security policy decreases access to data.
 
-Record-level security, which was a mechanism for securing data in Dynamics AX 2012 and earlier versions, is obsolete. Extensible data security is the recommended mechanism for securing or filtering data in the program. 
+For more information, see [Extensible data security policies](extensible-data-security-policies.md).
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 

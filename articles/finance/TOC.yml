@@ -73,9 +73,7 @@
           - name: Finance 10.0.12 (August 2020)
             href: get-started/whats-new-changed-10-0-12.md     
           - name: Finance 10.0.11 (July 2020)
-            href: get-started/whats-new-changed-10-0-11.md           
-          - name: Finance 10.0.10 (May 2020)
-            href: get-started/whats-new-changed-10-0-10.md            
+            href: get-started/whats-new-changed-10-0-11.md                    
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -1184,6 +1182,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
       - name: Column definitions
         href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+      - name: Reporting tree definitions in financial reports
+        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
       - name: Modify row definition cells
         href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
       - name: Reset the financial reporting data mart
@@ -2540,12 +2540,14 @@
             href: localizations/rus-inventory-adjustment-wizard.md
           - name: Inventory reports
             href: localizations/rus-inventory-reports.md
-          - name: Inventory profile overview
-            href: localizations/rus-inventory-profile-overview.md
-          - name: Set up an inventory profile
-            hreF: localizations/rus-set-up-inventory-profile.md
-          - name: Use an inventory profile in documents and queries
-            href: localizations/rus-use-inventory-profile-documents-queries.md
+          - name: Inventory profile
+            items:
+            - name: Inventory profile overview
+              href: localizations/rus-inventory-profile-overview.md
+            - name: Set up an inventory profile
+              hreF: localizations/rus-set-up-inventory-profile.md
+            - name: Use an inventory profile in documents and queries
+              href: localizations/rus-use-inventory-profile-documents-queries.md
         - name: Reporting
           items:
           - name: Financial reporting

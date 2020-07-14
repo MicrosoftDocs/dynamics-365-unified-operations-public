@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Modern POS (MPOS) triggers and printing
+# POS triggers
 
 [!include [banner](../../includes/banner.md)]
 

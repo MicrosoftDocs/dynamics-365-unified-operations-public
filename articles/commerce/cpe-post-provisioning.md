@@ -5,7 +5,7 @@ title: Configure a Dynamics 365 Commerce preview environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -120,7 +120,7 @@ To enable jobs in Commerce, follow these steps.
 
 To run full data synchronization in Commerce, follow these steps.
 
-1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Retail scheduler \> Channel database**.
+1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. In the list on the left, the **Default** channel is selected. Select the other available channel. This channel is named **scXXXXXXXXX**.
 1. On the Action Pane, select **Full data sync**.
 1. Enter **9999** as the distribution schedule.
