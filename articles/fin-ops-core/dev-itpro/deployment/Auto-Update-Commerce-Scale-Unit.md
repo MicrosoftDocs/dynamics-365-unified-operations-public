@@ -31,38 +31,39 @@ ms.dyn365.ops.version: 8.0
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> Auto-update Commerce Scale Unit (cloud) is currently in private preview. To enroll in this program, you may send a request to CSUAutoUpdate@microsoft.com. 
+> Auto-update Commerce Scale Unit (cloud) is currently in private preview. To enroll in this program, send a request to CSUAutoUpdate@microsoft.com. 
 
-This feature only applies to cloud-hosted Commerce Scale Unit at this point. Self-hosted Commerce Scale Unit is not included, and must be self-updated.
+This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self updated.
 
-Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, schedules apply to Commerce Scale Unit auto-update.
+Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update Commerce Scale Unit.
 
 ## Private preview limitations
+The following limitations currently exist for private preview:
 
-1. Email and in-app notifications are not available and will be made available at public preview.
-2. If you have multiple Commerce Scale Units in a Sandbox UAT environment, Commerce Scale Unit will only be auto-updated on the (alphabetically) first Commerce Scale Unit in that environment. The remaining Commerce Scale Units in each Sandbox UAT environment will need to be self-updated.
-3. Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for PEAP.
+- Email and in-app notifications are not available and will be made available at public preview.
+- If you have multiple Commerce Scale Units in a Sandbox UAT environment, Commerce Scale Unit will only be auto-updated based on the first Commerce Scale Unit in that environment (alphabetically). The remaining Commerce Scale Units in each Sandbox UAT environment will need to be self-updated.
+- Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for PEAP.
 
 ## Downtime duration and impact
 
-Updates to Commerce HQ and Commerce Scale Unit (cloud) are applied sequentially. Downtime duration is typically about one hour, but varies by data volume and region. To estimate downtime duration in your production enviornment, you may either self-update a Commerce Scale Unit in your Sandbox UAT enviornment, or review the total update duration for both Commerce HQ and Commerce Scale Unit in LCS. 
+Updates to Commerce HQ and Commerce Scale Unit (cloud) are applied sequentially. Downtime duration is typically one hour, but varies by data volume and region. To estimate downtime duration in your production environment, you can either self-update a Commerce Scale Unit in your Sandbox UAT environment, or review the total update duration for both Commerce HQ and Commerce Scale Unit in Lifecycle Services (LCS).
 
 > [!NOTE]
-> Downtime duration will vary for each update and data volume. To estimate a realistic downtime duration, ensure that your Sandbox UAT envionrment has the same data as your Production envionrment. To do this, you may (Refresh Production database in Sandbox UAT)[../database/database-refresh]. You must also apply the same update in Sandbox UAT that you plan to estimate the downtime duration for. 
+> Downtime duration will vary for each update and data volume. To estimate a realistic downtime duration, ensure that your Sandbox UAT environment has the same data as your Production environment. To do this, follow the steps in [Refresh Production database in Sandbox UAT](../database/database-refresh). You also need to apply the same update in Sandbox UAT that you plan to estimate the downtime duration for.
 
 For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see Online and offline point of sale (POS) operations.
 
-## Version support and backwards compatibility
+## Version support and backward compatibility
 All in-instore components must be running released software that is less than 12 months old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
 
-Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, and Hardware Station for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, and Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
 
 ## Updating in-store components
-You can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
+You can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager or Microsoft Intune.
 
-With CSU auto-update, updates to in-store components can still be rolled-out in phases. The following controls are available to achieve this:
+With Commerce Scale Unit auto-update, updates to in-store components can still be rolled-out in phases. The following controls are available to achieve this:
 
 - **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [POS user interface visual configurations](../../../commerce/pos-screen-layouts.md).
-- **Functionality profiles, POS permissions, Commerce parameters** – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, Commerce parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
+- **Functionality profiles, POS permissions, Commerce parameters** – Many elements of POS functionality are typically configurable by the user. This can be configured through functionality profiles, POS permissions, Commerce parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
 - **Modern Point of Sale and Commerce Scale Unit** – Because Modern Point of Sale and Commerce Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
 - **Feature flags** - Feature flags, configurable in Commerce HQ provide additional controls to selectively turn features on/off.
