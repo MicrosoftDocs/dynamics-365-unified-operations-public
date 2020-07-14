@@ -58,13 +58,13 @@ Order created in Call Center:
 
 Order created in the point of sale:
 
-![POS order with disabled "Payments" link](../media/COP_NONCC_PAY.png)
+![POS order with disabled "Payments" link](../dev-itpro/media/COP_NONCC_PAY.png)
 
 This feature enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
 
 Order completion:
 
-![POS or e-commerce order created with this feature enable has "Payments" link active](../media/COP_ORDERCOMPLETION.png)
+![POS or e-commerce order created with this feature enable has "Payments" link active](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
 ## Prerequisite features
 
@@ -85,7 +85,7 @@ This feature requires that payment methods in all channels are mapped to a corre
 
 Example from call center:
 
-![Operation mapped to payment method in call center](../media/COP_OPERATION.png)
+![Operation mapped to payment method in call center](../media/dev-itpro/COP_OPERATION.png)
 
 ### Call center is required
 
