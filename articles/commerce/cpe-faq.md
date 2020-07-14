@@ -40,7 +40,7 @@ No. The Commerce evaluation environment is only for evaluation. If you require a
 
 **Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**
 
-No. The Commerce evaluation environment is currently available only in new environments (Commerce versions 10.0.08 or later). Older versions might not have the demo data and configuration required for the evaluation environment. 
+No (mostly). The Commerce evaluation components are only available to environments that match the configurations specified in the prerequisites and provisioning guide. Additionally, environments deployed with an initial release earlier than 10.0.8 will not have the required base demo data available. 
 
 **What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
