@@ -5,7 +5,7 @@ title: Cross channel sharing
 description: This topic descibes how Cross channel sharing feature works in the Site Builder
 author: psimolin
 manager: brendans
-ms.date: 13/07/2020
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -53,15 +53,15 @@ Cross channel sharing is enabled at site level and it is one way operation. Once
 
 To enable cross channel sharing, go to **Features** of your site in the **Site settings**, locate **Cross Channel** and enable.
 
-    ![Enabling cross channel sharing(./media/enabling-cross-channel-sharing.png)
+    ![Enabling cross channel sharing](./media/enabling-cross-channel-sharing.png)
 
 After enabling cross channel sharing, it will become visible in the **Channels** section of **Site settings**.
 
-    ![Channels view after enabling cross channel sharing(./media/channels-cross-channel.png)
+    ![Channels view after enabling] cross channel sharing](./media/channels-cross-channel.png)
 
 Channels drop down in the Site Builder also now has a Cross Channel entry which allows managing cross channel content.
 
-    ![Channels view after enabling cross channel sharing(./media/cross-channel-dropdown.png)
+    ![Channels view after enabling cross channel sharing](./media/cross-channel-dropdown.png)
 
 ### Creating cross channel content
 
