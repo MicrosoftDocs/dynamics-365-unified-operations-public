@@ -199,7 +199,7 @@ To turn on country/region-specific e-Invoicing features so that they work with t
 
 ### Import ER configurations and set up the response types to update your country/region-specific invoice document
 
-If the submitted invoice document requires an update in response to the submission to the government authorization services, you must import a special ER data model and configurations to enable the status of the invoice document or any other additional field to be updated.
+If the submitted invoice document requires an update after the response of the submission to the government authorization services, you must import a special ER data model and configurations to enable the status of the invoice document or any other additional field to be updated.
 
 1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 2. Select **Repositories**.
@@ -287,7 +287,7 @@ The results that are shown in the submission log depend on how the e-Invoicing f
 
 - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
 - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. You can select **View** to download the file and view its contents.
-- **Processing action log** – This FastTab shows the results of the communication between the Electronic invoicing add-on and the target web service. It also shows what was returned from the web service processing.
+- **Processing action log** – This FastTab shows the results of the communication between the Electronic invoicing add-on and the target web service. It also shows what was returned by the web service processing.
 
 ## Related topics
 
