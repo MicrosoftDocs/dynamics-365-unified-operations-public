@@ -124,7 +124,7 @@ Optionally, you can also set the recurrence interval to one (1) minute for the f
 
 ### Run full data synchronization
 
-To run full data synchronization in Commerce, follow these steps in headquarters.
+To run full data synchronization in Commerce, follow these steps in Commerce headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. Select the channel that is named **scXXXXXXXXX**.
