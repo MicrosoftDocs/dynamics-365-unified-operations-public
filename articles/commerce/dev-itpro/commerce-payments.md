@@ -121,6 +121,12 @@ Select the feature from the list and then cick **Enable now**.
 > [!NOTE]
 > This feature includes many changes to payments and order management workflows. Exhaustive testing should be performed prior to enabling this feature in Production.
 
+To easily distinguish between channel orders created with Commerce payments enabled from other orders, a **Payments type** field has been added to the order header. When this feature is enabled, POS and e-commerce orders will show as payments type **Commerce** on the order header.
+
+![Order with payments of type "Commerce"](../dev-itpro/media/COP_HEADERCOM.png)
+
+For call center, payments type will be set to type **Call Center**. For sales orders created in Accounts Receivable, this field wil not be present. 
+
 ## Disabling Omni-channel Commerce order payments
 
 POS and e-Commerce orders created while this feature is enabled must be fulfilled while the feature is enabled. If the feature is later disabled, those orders will be prevented from further processing while the feature is disabled or until it is re-enabled.
@@ -216,19 +222,11 @@ Orders created in POS do not include check number when they are created in the b
 
 When a check is issued as refund payment in call center, the check number field was previously required. After this feature is enabled, check number will no longer be required when designating **Check** as the refund method of payment.  
 
-Previously, payment journal 
-
-## Identifying orders with Commerce payments
-
-## Disabling Commerce payments
-
 ## Out of scope
 
-Editing call center originating orders in POS
-Using original merchant properties for new authorizations obtained through Call Center.
-Orders created during statement posting
+Certain other capabilities that are not included in this feature should be mentioned as they constitute areas for future improvement that did not fit the scope of this feature. 
 
+- Support for editing call center originating orders in the point of sale is not included. That will be addressed as a separate feature. 
+- When a payment is edited in call center and the result is that a new authorization is needed, that new authorization will be obtained using the call center's merchant properties. 
+- Orders created during statement posting for point of sale cash and carry transactions will not be created as Omni-channel commerce orders. Specifically, those transaction will not support linked refund from the back office. 
 
-## Related articles
-
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
