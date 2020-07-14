@@ -3,10 +3,10 @@
 # required metadata
 
 title: Map module
-description: This topic covers the Map module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers map modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -33,18 +33,20 @@ ms.dyn365.ops.version:
 # Map module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic covers the Map module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers map modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A Map module visually displays the location of the stores in an interactive map.  This module uses the [Bing Maps V8 Web Control](https://docs.microsoft.com/en-us/bingmaps/v8-web-control/) to render a map.  A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. THe map module provides different views such as Road, Aerial, Streetside etc which the user can choose to view the locations. The map allows interactions such as zoom in and out, locate me in the map etc. These are capabilities provided by the Bing Maps V8 web control.
+A map module visually displays the location of stores on an interactive map, and uses the [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/) to render maps. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. The map module provides different views such as Road, Aerial, and Streetside that users can select to view map locations, and also allows interactions such as zooming and user location.
 
-It works in conjunction with the Store selector module to determine the location where stores need to be rendered. Store selector and Map module interact with each other when a user selects a store on either of them. The module can be extended for other scenarios outside Store selector but will require a customization.
+A map module works in conjunction with the store selector module to determine the geographic locations where stores need to be rendered on a map. Store selector and map modules interact with each other when a user selects a store on either of these modules. Map modules can be extended for other scenarios outside of store selector interaction but will require customization.
 
-This module was introduced in 10.0.13 version.
+This module was introduced in Commerce version 10.0.13.
 
-This is an example of the Map module used in a Store locations page
+The following image shows an example of a map module used on a store locations page.
+
 ![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
 
 
@@ -59,16 +61,18 @@ This is an example of the Map module used in a Store locations page
 |Pushpin options - Active icon color|string | Text or HEX value for the color of the Active selected pushpin|
 |Show index|True or false  | If true, the pushpins that indicate a store have an index that matches the index on the list view displayed by Store selector module|
 
-## Content Security Policy
-For the Maps module to interact with the Bing Maps, you need to ensure the following URLs are whitelisted per [Content security policy](manage-csp.md). 
-1.To connect-src add *.bing.com
-1. To img-src add *.virtualearth.net
-1. To script-src add *.bing.com, *.virtualearth.net
-1. To script style-src add *.bing.com
+## Content security policy
+
+For the maps module to interact with the Bing Maps, you must ensure that the following URLs are allowed (otherwise known as whitelisted) per your site's [Content security policy](manage-csp.md). 
+
+- To connect-src add &#42;.bing.com
+- To img-src add &#42;.virtualearth.net
+- To script-src add &#42;.bing.com, &#42;.virtualearth.net
+- To script style-src add &#42;.bing.com
 
 ## Add a map module to a page
 
-See [Store selector module](store-selector.md) for details on how to configure Maps module on a page
+For details on how to configure a map module on a page, see [Store selector module](store-selector.md). 
  
 ## Additional resources
 
@@ -80,9 +84,9 @@ See [Store selector module](store-selector.md) for details on how to configure M
 
 [Store selector module](store-selector.md)
 
-[Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
+[Manage Bing Maps for your organization](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 Web Control](https://docs.microsoft.com/en-us/bingmaps/v8-web-control/)
+[Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)
 
 
 
