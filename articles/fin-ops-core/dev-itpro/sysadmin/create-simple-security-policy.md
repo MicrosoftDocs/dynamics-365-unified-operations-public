@@ -5,7 +5,7 @@ title: Create a security policy
 description: This topic explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 author: Peakerbl
 manager: AnnBe
-ms.date: 07/13/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic explains how to create a simple security policy that secures access t
 
 ## Create a query for the policy
 
-1.  1.	In Visual Studio, add a new query, such as XDSQCustGroup10, to your project/solution. The query will be used to restrict data access from the **Constraint** table.
+1.  In Visual Studio, add a new query, such as XDSQCustGroup10, to your project/solution. The query will be used to restrict data access from the **Constraint** table.
 
     ![Add a new query](media/71c5206330564e8c2612a61a5a211dba.png)
 
