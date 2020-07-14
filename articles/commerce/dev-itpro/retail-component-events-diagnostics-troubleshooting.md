@@ -5,7 +5,7 @@ title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud hosted components, such as Commerce Scale Unit & E-commerce modules, log their events locally to Event Viewer (or to the browser developer tools console e.g. F12), as well as in LCS log search experience.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
