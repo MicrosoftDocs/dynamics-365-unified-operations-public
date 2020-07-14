@@ -115,9 +115,9 @@ Properties on order line that can be edited prior to payment capture:
 
 For orders that were created in POS or the e-Commerce Storefront, the following scenarios in call center order completion apply: 
 
-###Editing order payments
+### Editing order payments
 
-####Uncaptured card payments
+#### Uncaptured card payments
 
 | Scenario | Description | Supported |
 | --- | --- |
@@ -132,7 +132,7 @@ For orders that were created in POS or the e-Commerce Storefront, the following 
 | **Editing a payment that has already been used to invoice part of the order** | When an order with Commerce payments has already been partially invoiced, the card payment amount for the existing card may be edited through call center order completion down to the amount that has already been captured. A new card may then be applied to cover the balance due for the order.  |
 | **Editing amount when the car payment is fully captured** | If a card payment has already been fully captured, but the amount for that card payment is increased through call center order completion, upon submittal a new authorization for the card will be created for the amount that the payment was increased. |
 
-###Removing order payments
+### Removing order payments
 
 | Scenario | Description |
 | --- | --- |
