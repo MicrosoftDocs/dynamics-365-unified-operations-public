@@ -160,6 +160,19 @@ If you're receiving inventory, you can use the **Pause receiving** function if y
 
 When you select **Pause receiving**, the document's status is changed to **Paused**. Therefore, users will know that data has been entered for the document, but the document hasn't yet been committed. When you're ready to resume the receiving process, select the paused document, and then select **Order details**. Any **Receiving now** quantities that were previously saved are retained and can be viewed from the **Full order list** view.
 
+### Review
+
+Prior to the final commitment of the receipt to Commerce Headquarters, you can use the **Review** function to validate the inbound document, this will alert you potential missing or incorrect data that may cause processing failure, and provide you opportunity to correct problems before submitting the receipt request. To enable the **Review** function on the app bar, you need to enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in Commerce Headquarters.
+
+The **Review** function validates the following issues in an inbound document:
+- **Over-receiving** – the receiving now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in HQ.
+- **Under-receiving** – the receiving now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in HQ.
+- **Serial number** – serial number is not provided or validated for a serialized item that requires serial number to be registered in inventory.
+- **Location not set** – location is not specified for a location-controlled item that blank location is not allowed.
+- **Deleted lines** – the order has lines deleted by HQ user which was not known to POS application.
+
+You can set **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory** to have validation to be executed automatically upon you select **Finish receiving** function.
+
 ### Finish receiving
 
 When you've finished entering all the **Receiving now** quantities for products, you must select **Finish receiving** on the app bar to process the receipt.
