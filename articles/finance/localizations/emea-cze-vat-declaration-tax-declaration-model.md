@@ -1244,7 +1244,7 @@ set up enough **Reverse charge item groups** and associate them with Items
 (products), Items group, or procurement categories. You can find more details
 about this step in the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) sections later in this topic. You
 can find more details about how to configure reverse charges fully in the topic
-[Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge. If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
+[Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge). If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
 
 You also need to associate pairs **Reverse charge item groups** – **Tax code**
 with the **Lookup result** of the **\$SubjectCodeLookup** in the **Application
@@ -2059,21 +2059,18 @@ message processing, that's available from LCS.
 
 ## Generate VAT control statement from Electronic messages.
 
-1.  To generate the VAT control statement XML file, go to **Tax \> Inquiries and
-    reports \> Electronic messages \> Electronic messages**.
+1.  To generate the VAT control statement XML file, go to **Tax > Inquiries and reports > Electronic messages > Electronic messages**.
 
 2.  In the left pane, select the report format to generate. For example,
     select **DPHKH1**.
 
-3.  Follow steps 3-7 of previous paragraph to create the message and update the
+3.  Follow steps 3-7 of previous procedure to create the message and update the
     status to **Ready to generate**.
 
-4.  On the **Messages** FastTab, select **Generate report**. Then, in the **Run
-    processing** dialog box, select **Generate DPHKH1** to generate XML file and
+4.  On the **Messages** FastTab, select **Generate report**. Then, in the **Run processing** dialog box, select **Generate DPHKH1** to generate the XML file, and
     click **OK**.
 
-5.  In the **Electronic reporting parameters** dialog box, enter the following
-    information:
+5.  In the **Electronic reporting parameters** dialog box, enter the following information:
 
 | **Field**                                                                                                           | **Description**                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -2083,7 +2080,7 @@ message processing, that's available from LCS.
 
 ## Generate VAT declaration in Excel from Inquiries and reports menu item.
 
-1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog, select the following:
+1. Go to **Tax > Periodic tasks > Declarations > Sales tax > Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog, select the following:
 
 <table width="973">
 <thead>
@@ -2131,11 +2128,11 @@ message processing, that's available from LCS.
 </tbody>
 </table>
 
-2.  Select **OK**. Review generated Excel file.
+2.  Select **OK**, and review the Excel file that was generated.
 
 ## Generate VAT declaration in Excel from Sales tax payments
 
-1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and post sales tax.** In the **Settle and post sales tax** dialog, define the following:
+1. Go to **Tax \> Periodic tasks > Declarations > Sales tax > Settle and post sales tax.** In the **Settle and post sales tax** dialog, define the following:
 
 <table width="973">
 <thead>
@@ -2182,7 +2179,7 @@ message processing, that's available from LCS.
 </tbody>
 </table>
 
-2. Select **OK**. Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**. Review generated sales tax payment line.
+2. Select **OK**. Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**. Review generated sales tax payment line.
 
 ## Set up to run VAT declaration for several legal entities
 
@@ -2192,19 +2189,12 @@ formats for each of the legal entities.
 
 ## Set up Electronic messages to collect data from several legal entities
 
-1.  Turn on the **Cross-company queries for the populate records
-    actions** feature in Feature management. Go to **Workspaces** \> **Feature
-    management**, find **Cross-company queries for the populate records
-    actions** in the list, and then select **Enable now** in the lower right of
-    the page.
+1.  Turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** > **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** in the lower right area of the page.
 
-2.  Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records
-    actions**. On the **Populate records action** page, a new **Company** field
-    is available in the **Datasources setup** grid. For existing records, this
-    field shows the identifier of the current legal entity.
+2.  Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**. On the **Populate records action** page, a new **Company** field
+    is available in the **Datasources setup** grid. For existing records, this field shows the identifier of the current legal entity.
 
-3.  In the **Datasources setup** grid, add a line for each additional legal
-    entity that must be included in reporting. Set up the following fields.
+3.  In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. Set up the following fields.
 
 | **Field name**         | **Value**                                                                                                                          |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -2236,16 +2226,14 @@ The following are preconditions for running this procedure:
 
 2.  Sales tax payment is posted for the reporting period in all legal entities.
 
-    To generate VAT declaration for several legal entities, do the following:
+    To generate a VAT declaration for multiple legal entities, complete the following steps:
 
-3.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
-    messages**.
+3.  Go to **Tax > Inquiries and reports > Electronic messages > Electronic messages**.
 
 4.  In the left pane, select the report format to generate. For example,
     select **DPHDP3**.
 
-5.  On the **Messages** FastTab, select **New**. Then, in the **Run
-    processing** dialog box, select **OK**.
+5.  On the **Messages** FastTab, select **New**. Then, in the **Run processing** dialog box, select **OK**.
 
 6.  Select the message line that was created. Enter a **Description** and
     specify the **Start date** and **End date** for the declaration.
@@ -2260,33 +2248,28 @@ The following are preconditions for running this procedure:
 
     Click **Delete** to exclude some sales tax payments from processing
 
-8.  Process declaration in standard way. When the file is generated, review that
-    the report contains all tax transactions from the selected sales tax
+8.  Process the declaration in standard way. When the file is generated, review and verify that
+    the report contains all the tax transactions that included in the selected sales tax
     payments.
-
-## How to
 
 ## How to attach a File or a Note to the VAT declaration
 
-Follow these steps to attach a File or a Note to the VAT declaration XML file.
+Complete the following steps to attach a file or a note to the VAT declaration XML file.
 
-Attached text notes will be exported to Sections **VetaR** of the VAT
+Attached text notes will be exported to **VetaR** sections of the VAT
 declaration XML file.
 
 Attached files will be exported as Base64 binary file attachments to the
 **Prilohy** XML element.
 
-1.  Go to **Organization administration \> Document management \> Active
-    document tables**. In the **Table name** select **Sales tax payment**.
+1.  Go to **Organization administration > Document management > Active document tables**. In the **Table name** select **Sales tax payment**.
 
-2.  Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax
-    payments**. Select a line with sales tax payment and click **Paperclip**
+2.  Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax payments**. Select a line with sales tax payment and click the the paperclip 
     link in the upper right corner.
 
-3.  In the opened page **Attachments for Sales tax payments**, select **New \>
-    File** and add a file attachment.
+3.  In the opened page **Attachments for Sales tax payments**, select **New > File** and add a file attachment.
 
-4.  Select **New \> Note** and fill **Description** and **Notes** fields.
+4.  Select **New > Note** and enter information in the **Description** and **Notes** fields.
 
 ## How to post VAT adjustment for bad debts
 
@@ -2294,30 +2277,27 @@ Attached files will be exported as Base64 binary file attachments to the
 
 Follow the example steps to write off customer bad debts:
 
-1.  Create a customer on **All customers** page in a standard way.
+1.  Create a customer on the **All customers** page.
 
-2.  Create and post a free text invoice on **All free text invoices** page in a
-    standard way.
+2.  Create and post a free text invoice on the **All free text invoices** page.
 
 3.  Create a sales tax code WRITEOFF21 on **Sales tax codes** page, specifically
-    for usage in writing off bad debts with 21% of VAT rate
+    for in writing off bad debts with 21% of the VAT rate.
 
-4.  Go to **General ledger \> Ledger setup \> Journal setup \> Journal names**.
+4.  Go to **General ledger > Ledger setup > Journal setup > Journal names**.
     Create a general ledger journal “WriteOff”. Select **Journal type** =
     **Daily**.
 
-5.  **Go to Accounts receivable \> Setup \> Account receivable parameters \>
-    Collections** tab **\> Write-off** FastTab**.** Select the journal
-    “WriteOff” in the field **Write-off journal**. Set **Separate sales tax** to
-    **Yes.**
+5.  **Go to Accounts receivable > Setup > Account receivable parameters > Collections** tab **> Write-off** FastTab. Select the journal,
+    “WriteOff” in the **Write-off journal** field. Set the **Separate sales tax** field to **Yes.**
 
-6.  Go to **Accounts receivable \> Customers \> All customers**. Select the
-    customer record created above. Select **Collections \> Write off**. On the
-    **Write off** dialog, define **Write-off date, Reason code** and
-    **Description.** Click **OK.**
+6.  Go to **Accounts receivable > Customers > All customers**. Select the
+    customer record created above. Select **Collections > Write off**. On the
+    **Write off** dialog, enter the **Write-off date**, **Reason code** and
+    **Description**, and click **OK.**
 
-7.  Go to General ledger \> Journal entries \> General journals. Select the
-    journal “WriteOff” that was automatically generated. Select Lines. Review
+7.  Go to **General ledger > Journal entries > General journals**. Select the
+    journal writeOff that was automatically generated. Select **Lines**. Review
     that tree lines were created:
 
     -   Account type **Customer** – on the total invoice amount including VAT
@@ -2332,7 +2312,7 @@ Follow the example steps to write off customer bad debts:
    -   **Amount origin** is equal to invoice amount without VAT
    -   **Actual sales tax amount** is equal to VAT amount
 
-10.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
+10.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations > Application specific parameters > Set up**. Create the following lines:
 
 | **Lookup result**                     | **Tax code (Code)** | **Name**          |
 |---------------------------------------|---------------------|-------------------|
@@ -2343,34 +2323,27 @@ Follow the example steps to write off customer bad debts:
 
 Follow the example steps to write off vendor bad debts:
 
-1.  Create a vendor on **All vendors** page in a standard way.
+1.  Create a vendor on **All vendors** page.
 
-2.  Create and post a vendor invoice on **Invoice journal** page in a standard
-    way.
+2.  Create and post a vendor invoice on **Invoice journal** page.
 
-3.  Review the settings of the sales tax code **WRITEOFF21** created above on
-    **Sales tax codes** page. Alternatively create a new one fore writing off
+3.  Review the settings of the sales tax code **WRITEOFF21** created above using the 
+    **Sales tax codes** page. Alternatively, you can create a new vendor before writing off
     vendor bad debts.
 
 4.  Create Sales tax group **WRITEOFF**. Add a line with sales tax code
-    **WRITEOFF21** on the FastTab **Setup**.
+    **WRITEOFF21** on the **Setup** FastTab.
 
-5.  Go to Items sales tax groups. Select affected item sales tax group. Add a
-    line with sales tax code WRITEOFF21 on the FastTab **Setup**.
+5.  Go to **Items sales tax groups**. Select affected item sales tax group. Add a
+    line with sales tax code WRITEOFF21 on the **Setup** FastTab.
 
-6.  Go to daily general journal and create a line for writing off the vendor
-    invoice manually. Fill the following fields:
+6.  Go to the **Daily general journal** page, and create a line for writing off the vendor invoice manually. Enter information in the following fields:
 
-    Enter **Date**,
-
-    Select Vendor in the field **Account type**,
-
-    Select vendor account created above in the field **Account**
-
-    Enter write off amount in the field **Debit**
-
-    On tab **General**, select Sales tax group **WRITEOFF,** and **Item sales
-    tax group** selected on step 5 above.
+    - Enter the **Date**
+    - Select Vendor in the field **Account type**
+    - Select vendor account created above in the field **Account**
+    - Enter write off amount in the field **Debit**
+    - On tab **General**, select Sales tax group **WRITEOFF,** and **Item sales tax group** selected in step 5 above.
 
 7.  Settle open vendor invoice in standard way. Post journal. Review posted sales tax transaction:
 
@@ -2378,7 +2351,7 @@ Follow the example steps to write off vendor bad debts:
     -   **Amount origin** is equal to invoice amount without VAT
     -   **Actual sales tax amount** is equal to VAT amount
 
-8.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
+8.  Go to the **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations > Application specific parameters > Set up**. Create the following lines:
 
 | **Lookup result**                   | **Tax code (Code)** | **Name**             |
 |-------------------------------------|---------------------|----------------------|
@@ -2391,7 +2364,7 @@ Follow the example steps to post correction of VAT deduction (Row 45)
 
 1.  Create a sales tax code **CORR** on **Sales tax codes** page, specifically for usage in correction of the VAT deduction that is reflected in Row 45 of VAT declaration
 
-2.  Go to **General ledger \> Journal entries \> General journals**. Select the daily journal. Select **Lines**.
+2.  Go to **General ledger > Journal entries > General journals**. Select the daily journal. Select **Lines**.
 
 3.  Create the following journal line:
 
@@ -2407,7 +2380,7 @@ Follow the example steps to post correction of VAT deduction (Row 45)
     -   **Amount origin** is equal to zero
     -   **Actual sales tax amount** is equal to Debit amount
 
-6.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations \> Application specific parameters \> Set up**. Create the following lines:
+6.  Go to **Electronic reporting** workspace, select configuration with VAT declaration format. Select **Configurations > Application specific parameters > Set up**. Create the following lines:
 
 | **Lookup result**      | **Tax code (Code)** | **Name**             |
 |------------------------|---------------------|----------------------|
