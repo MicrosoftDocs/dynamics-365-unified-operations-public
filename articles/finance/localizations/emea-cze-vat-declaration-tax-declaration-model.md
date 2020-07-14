@@ -69,6 +69,8 @@ result that contains UseTax in the name, for example for EU purchases, configure
 **EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge.
 See [Reverse charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
 
+VAT declaration format in the Czech Republic contains the following sections:
+
 ### Section I Taxable transactions
 
 <table width="100%">
@@ -1565,7 +1567,7 @@ you can create the following line in the parameters:
 
 6.  Review example of parameters on the picture:
 
-[![Pic1_ReportFieldLookup](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+[!Lookup for the Report fields](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
 
 7.  On the Action pane, click **Export** to export parameters at XML file.
 
@@ -1607,7 +1609,7 @@ To prevent the format to fail with exception due to missed setup, you should set
 
 Review example of parameters on the picture:
 
-[![Pic2_SubjectCodeLookup](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[!Lookup for the Subject code](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
 
 ## Set up parameters for fulfillment mode codes
 
@@ -1674,7 +1676,7 @@ in the Electronic reporting configuration.
 
 Review example of parameters on the picture:
 
-[![Pic3_NoTaxDocumentLookup](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+[!Lookup for no obligation to issue tax document](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
 
 6.  Change **State** of all parameters to **Completed**.
 
@@ -2036,7 +2038,7 @@ message processing, that's available from LCS.
 12.  Select **OK**. When the declaration in XML is generated, the status of the
     message will change to **Generated**.
 
-[![PicEM](media/PicEM.jpg)](media/PicEM.jpg)
+[!Electronic messages](media/PicEM.jpg)](media/PicEM.jpg)
 
   If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 
