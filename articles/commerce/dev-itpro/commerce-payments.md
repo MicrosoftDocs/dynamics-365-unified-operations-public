@@ -54,17 +54,17 @@ Dynamics 365 Commerce consists of 3 main channels: Point of Sale, e-Commerce, an
 
 Order created in Call Center:
 
-COP_CC_PAY
+![Call center order with "Payments" link active](../media/COP_CC_PAY.png)
 
 Order created in the point of sale:
 
-COP_NONCC_PAY
+![POS order with disabled "Payments" link](../media/COP_NONCC_PAY.png)
 
 This feature enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
 
 Order completion:
 
-COP_ORDERCOMPLETION
+![POS or e-commerce order created with this feature enable has "Payments" link active](../media/COP_ORDERCOMPLETION.png)
 
 ## Prerequisite features
 
@@ -85,7 +85,7 @@ This feature requires that payment methods in all channels are mapped to a corre
 
 Example from call center:
 
-COP_OPERATION
+![Operation mapped to payment method in call center](../media/COP_OPERATION.png)
 
 ### Call center is required
 
