@@ -179,7 +179,7 @@ The rank in this case doesn't really matter, so you can choose to hide it. This 
 
 ## Use strict or standard validation of default order quantities
 
-You can choose how strict the system should be when validating quantities entered in the **Default order settings** for a product. When you use the new strict option, the **Standard order quantity** must always be a multiple of the specified **Multiple** value for purchase orders, inventory, and sales orders. If you are using strict validation, you won't be able to save default order settings that don't meet this requirement (and an error is shown in the message bar). <!-- KFM: What happens when we choose standard validation? Are all values then allowed? (I.e., no validation?) -->
+You can choose how strict the system should be when validating quantities entered in the **Default order settings** for a product. When you use the new strict option, the **Standard order quantity** must always be a multiple of the specified **Multiple** value for purchase orders, inventory, and sales orders. If you are using strict validation, you won't be able to save default order settings that don't meet this requirement (and an error is shown in the message bar). 
 
 Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each of these FastTabs has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
 
