@@ -374,7 +374,7 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select the register to link to the Adyen payment terminal.
-3. On the **POS Registers** page, on the **General** FastTab, in the **EFT** section, in the **EFT POS register number** field, enter a unique number. The register number must be exactly four digits long, and it must be unique across all POS registers that are under the same Adyen merchant account ID.
+3. On the **POS Registers** page, on the **General** FastTab, in the **EFT** section, in the **EFT POS register number** field, enter a unique number. 
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
 5. Save your changes.
 6. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
