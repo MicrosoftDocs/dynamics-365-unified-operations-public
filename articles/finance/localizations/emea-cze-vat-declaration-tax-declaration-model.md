@@ -1858,72 +1858,63 @@ You should do the following settings prior to generating VAT declaration:
 
 ## Set up reverse charge item groups
 
-Refer to the topic [Reverse charge
-VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge)
+Refer to the topic [Reverse charge VAT](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge)
 to find all details about how to set up and use reverse charges functionality.
 
-1.  Go to **Tax \> Setup \> Sales tax \> Reverse charge item groups**. Create the new group.
+1.  Go to **Tax > Setup > Sales tax > Reverse charge item groups**. Create the new group.
 
 2.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Purchase.** Create a line and define Item code, Item group or Procurement category code that purchase is associated to the created reverse charge item group: 
   2.1 In the field **Item code** select **Table**, **Group** or **Category**.
   2.2 In the field **Item relation**, select item code or item group.
   2.3 In the field **Category**, select procurement category.
 
-3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales** and associate item, item group and procurement category as described above.
+3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales** and associate the item, item group and procurement category as described above.
 
 ## Generate VAT declaration
 
-## Generate VAT declaration from Electronic messages.
+### Generate VAT declaration from Electronic messages.
 
-The processing steps described below are applicable to the example Electronic
-message processing that is released to LCS.
+The processing steps described below are applicable to the example, Electronic
+message processing, that's available from LCS.
 
-1.  To generate the VAT declaration XML file, go to **Tax \> Inquiries and
-    reports \> Electronic messages \> Electronic messages**.
+1.  To generate the VAT declaration XML file, go to **Tax > Inquiries and reports > Electronic messages > Electronic messages**.
 
 2.  In the left pane, select the report format to generate. For example,
     select **DPHDP3**.
 
-3.  On the **Messages** FastTab, select **New**. Then, in the **Run
-    processing** dialog box, select **OK**.
+3.  On the **Messages** FastTab, select **New**, and then in the **Run processing** dialog box, select **OK**.
 
 4.  Select the message line that was created. Enter a **Description** and
     specify the **Start date** and **End date** for the declaration.
 
 5.  On the **Messages** FastTab, select **Collect data**, select **OK**.
 
-    On the **Message items** FastTab, review the Sales tax payments that are
-    transferred for processing. By default, you get sales tax payments of the
-    selected period that were not included in any other message of the same
-    processing.
+    On the **Message items** FastTab, review the s ales tax payments that aretransferred for processing. The sales tax payments of the selected period that were not included in any other message of the same processing are included by default.
 
     Click **Original document** to review sales tax payment.
 
-    Click **Delete** to exclude some sales tax payments from processing. Note, that this step is optional. If you skip this step, you still can
-    generate VAT declaration using **Tax declaration version** parameter on the
-    declaration dialog. See below for more details.
+    Click **Delete** to exclude sales tax payments from processing. Note, that this step is optional. If you skip this step, you can still 
+    generate VAT declaration using the **Tax declaration version** parameter on the
+    declaration dialog. This is explained further later in this topic.
 
 6.  On the **Message additional fields** FastTab, validate the value of the
-    field \<**NullDeclaration\>**. Select Yes if you are reporting the null
+    field \<**NullDeclaration\>**. Select **Yes** if you are reporting the null
     declaration.
 
-7.  On the **Messages** FastTab, select **Update status**. In the **Update
-    status** dialog, select **Ready to generate** action. Select **OK**.
-    Validate that the message status is changed to **Ready to generate**.
+7.  On the **Messages** FastTab, select **Update status**. In the **Update status** dialog, select **Ready to generate** action. Select **OK**.
+    Validate that the message status has changed to **Ready to generate**.
 
 8.  On the **Messages** FastTab, select **Generate report**. Then, to preview
-    VAT declaration amounts, in the **Run processing** dialog box,
-    select **Preview DPHDP3 in Excel** and click **OK**. In the **Electronic
-    reporting parameters** dialog box, enter parameters of VAT declaration. See
-    below for details of available parameters
+    VAT declaration amounts, select **Preview DPHDP3 in Excel** in the **Run processing** dialog box,
+    and then click **OK**. In the **Electronic reporting parameters** dialog box, enter parameters of the VAT declaration. The details of available parameters are listed and described later in this topic.
 
-9.  Select **OK**. When Excel file with VAT declaration preview is generated,
+9.  Select **OK**. When you generate an Excel file with VAT declaration preview,
     select the **Attachments** button (the paper clip symbol) in the upper-right
-    corner of the page. Then select **Open** to open the file. Review amounts in
-    Excel.
+    corner of the page. Then select **Open** to open the file. Review the amounts that are in the
+    Excel document.
 
 10.  On the **Messages** FastTab, select **Generate report**. Then, in the **Run
-    processing** dialog box, select **Generate DPHDP3** to generate XML file and
+    processing** dialog box, select **Generate DPHDP3** to generate an XML file and
     click **OK**.
 
 11.  In the **Electronic reporting parameters** dialog box, enter the following
@@ -2043,28 +2034,28 @@ message processing that is released to LCS.
 </table>
 
 12.  Select **OK**. When the declaration in XML is generated, the status of the
-    message is changed to **Generated**.
+    message will change to **Generated**.
 
-![PicEM](media/PicEM.jpg)
+[![PicEM](media/PicEM.jpg)](media/PicEM.jpg)
 
-  If an error occurs while the report is generated, the status of the message is changed to **Technical error**.
+  If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 
 13.  Select the **Attachments** button (the paper clip symbol) in the upper-right
     corner of the page. Then select **Open** to open the file.
 
 14.  Review the file and if this is ok, update the status to **Approved** to
-    finish the processing: select **Update status**. Then, in the **Update
-    status** dialog box select action **Approve** and select **OK**.
+    finish the processing. Select **Update status**, and then, in the **Update
+    status** dialog box, select **Approve**, and then **OK**.
 
-   If you need to delete message, you can select action **Allow delete** and select **OK**. Now you can Delete the message.
+   If it's necessary to delete a message, you can select action **Allow delete**, and then select **OK**. Now you can delete the message.
 
    If the message status is **Technical error**, you can update the message status to one of initial statuses: **Created** or **Ready to generate**.
 
 15.  On the **Action log** FastTab, review all user actions for the current
     message.
 
-16.  When you complete generating the VAT declaration, you should manually send
-    the generated file to the tax authority.
+16.  When you've finished generating the VAT declaration, send
+    the generated file to the tax authority manually.
 
 ## Generate VAT control statement from Electronic messages.
 
