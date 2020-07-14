@@ -112,7 +112,22 @@ When customer orders are created at the point of sale, the store associate has t
 
 ## Enabling Omni-channel Commerce order payments
 
+Once the prerequisites have been fulfilled, navigate search for **Feature management** to navigate to the feature managemen workspace. Click **All** to remove the **New** filter from the list of features, then search for "Omni-channel Commerce order payments". 
+
 ![Omni-channel Commerce order payments feature](../dev-itpro/media/COP_ENABLE.png)
+
+Select the feature from the list and then cick **Enable now**.
+
+> [!NOTE]
+> This feature includes many changes to payments and order management workflows. Exhaustive testing should be performed prior to enabling this feature in Production.
+
+## Disabling Omni-channel Commerce order payments
+
+POS and e-Commerce orders created while this feature is enabled must be fulfilled while the feature is enabled. If the feature is later disabled, those orders will be prevented from further processing while the feature is disabled or until it is re-enabled.
+
+## Managing non-Commerce payments orders
+
+Orders that were created prior to enabling the feature may be processed after the feature is enabled. The experience for editing those orders will not change once the feature is enabled and they will not be modified to accomodate Commerce order payment workflows. In addition, sales orders generated in **Accounts Receivable** by non-call center users will continue behave in the same was as they did prior to enabling the feature. 
 
 ## Key scenarios
 
@@ -187,7 +202,21 @@ After the payments have been edited, the order submittal process will rectify an
 
 ## Other enhancements 
 
-To best support 
+To best support this feature, other enhancements have been introduced. 
+
+### Consistent selection of payment journals when posting sales orderd and refund payments
+
+Prior to this feature, payment journal designation has been inconsistent across channels. When this feature is enabled, all channels will use payment vouchers designated in **Commerce  parameters** on the **Posting** tab. 
+
+
+
+### Enhacement for check payment method
+
+Orders created in POS do not include check number when they are created in the back office. When this feature is enabled, orders created in POS that are paid for by check will have **9999** filled in as the check number
+
+When a check is issued as refund payment in call center, the check number field was previously required. After this feature is enabled, check number will no longer be required when designating **Check** as the refund method of payment.  
+
+Previously, payment journal 
 
 ## Identifying orders with Commerce payments
 
