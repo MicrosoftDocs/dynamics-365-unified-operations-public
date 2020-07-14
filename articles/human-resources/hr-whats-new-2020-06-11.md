@@ -100,3 +100,10 @@ You'll be able to make fields mandatory by using personalization. This feature w
 ## Configure the name of Employee self-service
 
 A new option will be available in Human Resources parameters to update the name of the Employee self service workspace to Self service. 
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

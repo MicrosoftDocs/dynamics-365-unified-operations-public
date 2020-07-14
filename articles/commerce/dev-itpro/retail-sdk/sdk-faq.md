@@ -5,7 +5,7 @@ title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 07/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -94,3 +94,32 @@ public class MyHandler : IRequestHandlerAsync, ISupportedTypesAware
 }
 ```
 
+## How do I handle a ReadOnly CartValidationException error in SDK version (10.0.0 and later)?
+
+This error will occur if the following read-only properties are updated in SDK version 10.0.9 or earlier. These properties are made read only in SDK version 10.0.0 to avoid miscalculations in the cart total:
+
+- ExtendedPrice
+- TaxAmount
+- ItemTaxGroupId
+- TaxAmountExclusive
+- TaxAmountInclusive
+- TotalAmount
+- NetAmountWithoutTax
+- IsInvoiceLine
+- InvoiceId
+- InvoiceAmount
+
+To resolve this issue, remove the code in the client/server. Setting this value and OOB code will calculate these values or keep the logic in the read-only fields. You can follow the example shown below, however be sure to modify the code according to the best practice, as this option is not recommended.
+
+In **HQ Commerce parameters > Configuration parameters > Create a new config** with a name/value like the following pattern:
+
+**RetailReadOnlyExempt_[EntityName] : [ColumnName]**
+
+For example, in the error at the top of this page, ITEMTAXGROUPID is the read-only property with the error. You can search to see this is part of CartLine and CartLineData. The configuration name/value pair would look like this:
+
+**RetailReadOnlyExempt_CartLineData : ITEMTAXGROUPID**  
+
+> [!NOTE]
+> ITEMTAXGROUPID is the column name of the property, not the actual property name.
+
+After adding the config run job 1110 to push this change.

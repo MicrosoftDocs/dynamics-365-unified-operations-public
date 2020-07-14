@@ -67,7 +67,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
-- [Modern POS (MPOS) and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
 - [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
