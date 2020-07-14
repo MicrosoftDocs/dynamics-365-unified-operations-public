@@ -70,8 +70,8 @@ The following illustration shows a generic example of the **Retail Self-service 
 > [!NOTE]
 > There are several installers.  Modern POS, Modern POS with offline (note that this is a separate installer), Commerce Scale Unit (self-hosted, formerly named *Retail Store Scale Unit*), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
 
-    | Component | Link |
-    |---|---|
-    | Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
-    | Hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
-    | Commerce Scale Unit (formerly known as Retail Store Scale Unit) | [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
+| Component | Link |
+|---|---|
+| Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
+| Hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
+| Commerce Scale Unit (formerly known as Retail Store Scale Unit) | [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
