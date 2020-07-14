@@ -68,7 +68,7 @@ The following illustration shows a generic example of the **Retail Self-service 
 5. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
 
 > [!NOTE]
-> There are several installers.  Modern POS, Modern POS with offline (Note that this is a separate installer), Commerce Scale Unit (Self-hosted, formerly RSSU), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
+> There are several installers.  Modern POS, Modern POS with offline (note that this is a separate installer), Commerce Scale Unit (self-hosted, formerly reffered to as *Retail Store Scale Uunit*), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
 
     | Component | Link |
     |---|---|
