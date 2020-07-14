@@ -37,6 +37,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 
+> [!NOTE]
+> There are two Modern POS installers.  Modern POS and Modern POS with offline (This installer also installs the offline database).
+
 ## Technology
 
 The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
