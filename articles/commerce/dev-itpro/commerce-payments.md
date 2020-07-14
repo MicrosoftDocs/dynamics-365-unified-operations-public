@@ -54,7 +54,7 @@ Dynamics 365 Commerce consists of 3 main channels: Point of Sale, e-Commerce, an
 
 Order created in Call Center:
 
-![Call center order with "Payments" link active](../media/COP_CC_PAY.png)
+![Call center order with "Payments" link active](../dev-itpro/media/COP_CC_PAY.png)
 
 Order created in the point of sale:
 
