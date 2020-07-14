@@ -44,7 +44,7 @@ Every LCS Implementation project that runs on the same Azure AD tenant must sati
 
 Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
 
-Users who access multiple environments in parallel must be licensed separately for each environment. Since a user only can be assigned one license of for each product for each Azure AD tenant, also this allocation of licneses to LCS parojects for specific users must be doucmented outside the system. For more licensing information, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be doucmented outside the system. For more licensing information, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 ## Disadvantages of multiple LCS projects
 
