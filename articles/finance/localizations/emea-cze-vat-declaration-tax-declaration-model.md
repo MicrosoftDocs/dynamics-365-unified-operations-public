@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: VAT declaration (The Czech Republic)
@@ -22,7 +21,7 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: anasyash
@@ -484,7 +483,7 @@ VAT declaration format in the Czech Republic contains the following sections:
 <p>pln_vyvoz</p>
 </td>
 <td width="31%">
-<p>ExportGoods</p>
+<p> ExportGoods </p>
 </td>
 </tr>
 <tr>
@@ -685,7 +684,6 @@ VAT declaration format in the Czech Republic contains the following sections:
 </tr>
 </tbody>
 </table>
-
 
 ## Section IV VAT deduction
 
@@ -1585,10 +1583,9 @@ supply codes in the Electronic reporting configuration.
 2.  Select configuration **VAT control statement XML (CZ)**. Click
     **Configurations \> Application specific parameters setup.**
 
-3.  On the FastTab **Lookups**, select lookup **\$SubjectCodeLookup**
+3.  On the **Lookups** FastTab, select lookup **\$SubjectCodeLookup**
 
-4.  On the FastTab **Conditions**, associate **Reverse charge item groups** and
-    subject codes:
+4.  On the **Conditions** FastTab, associate **Reverse charge item groups** and subject codes:
 
 | **Column**                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1649,9 +1646,9 @@ in the Electronic reporting configuration.
 2.  Select configuration **VAT control statement XML (CZ)**. Click
     **Configurations > Application specific parameters setup**.
 
-3.  On the FastTab **Lookups**, select lookup **\$NoTaxDocument**.
+3.  On the **Lookups** FastTab, select lookup **\$NoTaxDocument**.
 
-4.  On the FastTab **Conditions**, associate sales tax groups and sales tax
+4.  On the **Conditions** FastTab, associate sales tax groups and sales tax
     codes:
 
 | **Column**      | **Description**                 |
@@ -1715,7 +1712,7 @@ Follow these steps:
 
     1.1  Go to **Tax > Setup > Electronic messages > Additional fields**
 
-    1.2  Select the line with additional field and on the FastTab **Value** add
+    1.2  Select the line with additional field and on the **Value** FastTab add
         respective values of the field:
 
 | **Additional field**     | **Value**                                                                                                                                                                           |
@@ -1786,8 +1783,8 @@ You should do the following settings prior to generating VAT declaration:
 <p>&nbsp;</p>
 </td>
 <td width="567">
-<p>On the FastTab <strong>Addresses</strong>, define the primary address for the legal entity.</p>
-<p>On the FastTab Contact information define <strong>Phone</strong> and <strong>Email address. </strong>Set them to <strong>Primary.</strong></p>
+<p>On the <strong>Addresses</strong> FastTab, define the primary address for the legal entity.</p>
+<p>On the Contact information FastTab, define <strong>Phone</strong> and <strong>Email address. </strong>Set them to <strong>Primary.</strong></p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -1828,7 +1825,7 @@ You should do the following settings prior to generating VAT declaration:
 <p><strong>General ledger parameters</strong></p>
 </td>
 <td width="567">
-<p>On the tab <strong>Sales tax</strong>, FastTab <strong>Tax options</strong>, in the <strong>Special report </strong>group of fields, select<strong> Yes </strong>in the<strong> Date of VAT register </strong>field.</p>
+<p>On the <strong>Sales tax tab</strong>, <strong>Tax options</strong> FastTab, in the <strong>Special report </strong>group of fields, select<strong> Yes </strong>in the<strong> Date of VAT register </strong>field.</p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -1837,7 +1834,7 @@ You should do the following settings prior to generating VAT declaration:
 <p><strong>General ledger parameters</strong></p>
 </td>
 <td width="567">
-<p>On the tab <strong>Sales tax</strong>, on the FastTab <strong>VAT statement</strong>, you can define some parameters of the company:</p>
+<p>On the tab <strong>Sales tax</strong>, on the <strong>VAT statement</strong> FastTab, you can define some parameters of the company:</p>
 <p><strong>Taxpayer status</strong> - select <strong>Taxpayer</strong>, <strong>Group</strong>, or<strong> Other</strong></p>
 <p><strong>Taxpayer type</strong> - select <strong>Individual</strong>, or <strong>Corporation</strong></p>
 <p><strong>Main economic activity</strong> - Enter the code</p>
@@ -1858,12 +1855,12 @@ to find all details about how to set up and use reverse charges functionality.
 
 1.  Go to **Tax > Setup > Sales tax > Reverse charge item groups**. Create the new group.
 
-2.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Purchase.** Create a line and define Item code, Item group or Procurement category code that purchase is associated to the created reverse charge item group: 
+2.  On the **Setup** FastTab, in the **Sales/purchase field**, select **Purchase.** Create a line and define Item code, Item group or Procurement category code that purchase is associated to the created reverse charge item group: 
   2.1 In the field **Item code** select **Table**, **Group** or **Category**.
   2.2 In the field **Item relation**, select item code or item group.
   2.3 In the field **Category**, select procurement category.
 
-3.  On the FastTab **Setup,** in the **Sales/purchase field**, select **Sales** and associate the item, item group and procurement category as described above.
+3.  On the **Setup** FastTab, in the **Sales/purchase field**, select **Sales** and associate the item, item group and procurement category as described above.
 
 ## Generate VAT declaration
 
