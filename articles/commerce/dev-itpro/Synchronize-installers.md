@@ -5,7 +5,7 @@ title: Synchronize self-service installers in Dynamics 365 Commerce
 description: This topic explains how to use Asset and Shared asset libraries in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
 author: jashanno
 manager: AnnBe
-ms.date: 04/15/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
