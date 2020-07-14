@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,25 +53,25 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   May 2020      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST statement for Parana state   |
 |      Brazil         |   July 2020 - May 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
 |      Brazil         |   July 2020      | 10.0.13, 10.0.12HF      |   SPED Fiscal - Record C176 - RS state   |
-|      Czech Republic      |   July 2020      | 10.0.13      |   VAT control statement changes in XML schema (invoice listing) Dynamics 365 for Finance and Operations 10   |
-|      Czech Republic         |   July 2020      | 10.0.13      |   VAT declaration in XML, VAT declaration preview in Excel and VAT control statement XML formats based on Tax declaration model   |
+|      Czech Republic      |   July 2020      | 10.0.13      |   VAT control statement changes in XML schema (invoice listing)   |
+|      Czech Republic         |   July 2020      | 10.0.13      |   VAT declaration in XML, VAT declaration preview in Excel, and VAT control statement XML formats based on Tax declaration model   |
 |      Estonia         |   May 2020       | 10.0.11      |   Electronic invoicing in Estonia: customers invoices export in Estonian specific format version 1.2.  |
 |      Germany         |   May 2020       | 10.0.12      |   Germany - Retail - Cash register requirements    |
-|      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 on Finance and Operations    |
+|      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 in Finance and Operations    |
 |      India         |   May 2020      | 10.0.12      |   Improvements in unit price and cost price handling in Stock transfer orders  |
 |      India         |   May 2020      | 10.0.12      |   Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt)  |
 |      Italy         |   May 2020      | 10.0.12, 10.0.11      |   Modello 770 / 2019 format change |
 |      Italy         |   July 2020      | 10.0.13, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
-|      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (v.10) |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (version 10) |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report dialog change: to provide possibility to select Contact person across companies |
-|      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of on the header only |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of only on the header |
 |      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
 |      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
 |      Poland          |   March 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
 |      Poland          |   May 2020     | 10.0.12     |   JPK_VDEK supplemented pack II |
 |      Poland          |   March 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
 |      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enchantments |
-|      Russia          |   Juky 2020     | 10.0.13    |   Depreciation calculation on the base of Acquision cost and Major repairs with applying the Depreciation bonus in Tax accounting  |
+|      Russia          |   July 2020     | 10.0.13    |   Depreciation calculation on the base of Acquision cost and major repairs with applying the Depreciation bonus in Tax accounting  |
 
 
 
