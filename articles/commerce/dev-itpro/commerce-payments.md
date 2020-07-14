@@ -44,8 +44,8 @@ This feature is available starting with the 10.0.13 monthly update.
 
 | Term | Description |
 |---|---|
-| Commerce payment | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. |
-| Order completion | **Enable order completion** is a setting that forces orders to go thgrough a set of validation rules before they can be cofirmed. For more details, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
+| Commerce payment | A payment associated with a customer order generated at the point of sale or in the e-commerce storefront after this feature has been enabled. |
+| Order completion | Order completinn is the business logic in the Call Center that ensures payments have been collector before the order is submitted. The **Enable order completion** setting in call center parameters is used to enable this business logic in Call Center. For more details, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
 | Call Center order | An order created in the back office by a Call Center user. |
 
 ## Overview
