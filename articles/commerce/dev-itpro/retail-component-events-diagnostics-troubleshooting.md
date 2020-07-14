@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail component events for diagnostics and troubleshooting
-description: To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
+title: Commerce component events for diagnostics and troubleshooting
+description: This article explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud hosted components, such as Commerce Scale Unit & E-commerce modules, log their events locally to Event Viewer (or to the browser developer tools console e.g. F12), as well as in LCS log search experience.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,11 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail component events for diagnostics and troubleshooting
+# Commerce component events for diagnostics and troubleshooting
 
 [!include [banner](../includes/banner.md)]
 
-To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
+This article explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud hosted components, such as Commerce Scale Unit & E-commerce modules, log their events locally to Event Viewer (or to the browser developer tools console e.g. F12), as well as in LCS log search experience.
+
 
 Viewing events in Event Viewer
 ------------------------------
@@ -44,7 +45,7 @@ You can use Event Viewer to view events for components that are installed on com
 -   Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer
 -   Client components, when you're running a conference room pilot and have access to Event Viewer for that computer
 
-However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on Microsoft Dynamics Lifecycle Services (LCS). Log Search is discussed later in this article. This section applies to the following components:
+However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on Microsoft Dynamics Lifecycle Services (LCS). For E-commerce modules, events are currently available only in browser developer tools (e.g. F12). Log Search is discussed later in this article. This section applies to the following components:
 
 -   Commerce Scale Unit
 -   Retail Modern POS
@@ -71,13 +72,13 @@ Currently, some of the events that are logged by various components are sent to 
 [![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
 
 ## Viewing events by using the (F12) browser developer tools console
-Because Retail Cloud POS is a browser-based component, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://msdn.microsoft.com/library/dn255006(v=vs.85).aspx) on MSDN. To use the browser developer tools for Retail Cloud POS, you must use a supported browser version.
+Because Retail Cloud POS & E-commerce modules are a browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-commerce modules, you must use a supported browser version.
 
 ### View events in the browser developer tools console
 
-1.  Start Internet Explorer or Microsoft Edge, and go to Retail Cloud POS.
+1.  Start your browser, and navigate to Retail Cloud POS or your E-commerce website.
 2.  Press F12, and then click the **Console** tab.
-3.  As you perform operations on Retail Cloud POS, events are logged in the console. You can filter by event severity to view events that have different severity levels.
+3.  As you perform operations on Retail Cloud POS or on your E-commerce website, events are logged in the console. You can filter by event severity to view events that have different severity levels.
 
 [![Console tab in the browser developer tools](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
@@ -170,5 +171,26 @@ You can filter by the following criteria to refine your query:
 
 [![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
 
+###E-commerce events
+The following events are logged by the E-commerce website , and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
 
+###Button and link clicks
+
+1.	Header
+
+•	Navigation hierarchy
+•	Cart icon
+•	Sign-in
+•	Search icon
+•	Wishlist icon
+
+2.	Content block action links. (This represents the hero, tile, feature modules for marketing content)
+3.	Video player
+4.	Product cards
+5.	Footer links
+6.	Breadcrumbs
+7.	Promo banner
+8.	Add to cart button
+9.	Checkout button
+10.	Place order button
 
