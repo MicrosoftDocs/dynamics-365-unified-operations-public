@@ -208,7 +208,7 @@ To best support this feature, other enhancements have been introduced.
 
 Prior to this feature, payment journal designation has been inconsistent across channels. When this feature is enabled, all channels will use payment vouchers designated in **Commerce  parameters** on the **Posting** tab. 
 
-
+![Retail parameters payment voucher assignment](../dev-itpro/media/COP_VOUCH.png)
 
 ### Enhacement for check payment method
 
