@@ -60,15 +60,13 @@ Order created in the point of sale:
 
 COP_NONCC_PAY
 
-This feature essentially enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
+This feature enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
 
 Order completion:
 
 COP_ORDERCOMPLETION
 
 ## Key scenarios
-
-### Editing order payments
 
 When this feature is enabled, e-commerce and POS order credit card payments can easily be managed through order completion. For example, if a customer places an online order, then calls into the Call Center to request a change to the order, the order completion function will allow for the payments on that order to be adjusted to support the new balance due.
 
@@ -78,36 +76,33 @@ Properties on order line that can be edited prior to payment capture:
 - Payment amount
 - Percent amount
 
-**Editing to a larger payment amount with the same card (uncaptured)**
-If the amount is made larger than when the order was created, a new authorization will be created for that amount. Old auth will be voided. 
+For orders that were created in POS or the e-Commerce Storefront, the following scenarios are enabled by this feature: 
 
-**Editing to a lower payment amount with the same card (uncaptured)**
-Void the old auth and get a new auth.
+### Editing order payments
 
-**Removing an old card and adding a new one(uncaptured)**
-Void and create a new auth.
+####Uncaptured card payments
 
-**Editing a payment that has already been used to invoice part of the order**
-Amount can be decreased to the already posted/captured amount. The card cannot be changed. A payment line should be added to cover the remaining balance.
+| Scenario | Description | Supported |
+| --- | --- |
+| **Editing to specify a higher amount** | For card payments which have been authorized, but not yet captured, the payment amount may be increased. When this is done, a new authorization will be created for the new amount and the old authorization will be voided. |
+| **Editing to speciry a lower amount** | Card payments which have been authorized, but not yet captured, may be reduced. When a payment line amount is reduced, the previous authorization is cancelled and a new authorization is created for the lower amount. |
+| **Removing an old card and adding a new one** | Uncaptured card payment authorizations may be removed from orders and be replaced by a payment on a different card. When this is done, the authorization for the first card is cancelled and an authorization for the new card will be obtained when the order is submitted. |
 
-**Editing amount when the car payment is fully captured**
-If a payment needs to be increased, but the payment line has already fully captured by previous invoices, if the amount is increased for that payment line, a new authorization will be obtained for the amount over posted amount. 
+####Editing partially and fully captured card payments
 
+| Scenario | Description | Supported |
+| --- | --- |
+| **Editing a payment that has already been used to invoice part of the order** | When an order with Commerce payments has already been partially invoiced, the card payment amount for the existing card may be edited through call center order completion down to the amount that has already been captured. A new card may then be applied to cover the balance due for the order.  |
+| **Editing amount when the car payment is fully captured** | If a card payment has already been fully captured, but the amount for that card payment is increased through call center order completion, upon submittal a new authorization for the card will be created for the amount that the payment was increased. |
 
-### Removing order payments
+###Removing order payments
 
-The following scenarios are for removing payments from the order through order completion. 
-
-**Authorized payments**
-
-Voided
-
-**Partially captured payments**
-
-If the payment is in a 'Paid' state, but has not been fully captured, then the payment cannot be removed. However, the payment amount can be reduced to the already posted amount and the uncaptured amount will be voided from the authorization. 
-
-**Fully captured credit card payments and prepayments**
-Cannot be removed from the order
+| Scenario | Description |
+| --- | --- |
+| **Authorized payments** | |
+| **Voided** | |
+| **Partially captured payments** | If the payment is in a 'Paid' state, but has not been fully captured, then the payment cannot be removed. However, the payment amount can be reduced to the already posted amount and the uncaptured amount will be voided from the authorization. | 
+| **Fully captured credit card payments and prepayments** | Cannot be removed from the order. |
 
 ### Order and sales line cancellation
 
