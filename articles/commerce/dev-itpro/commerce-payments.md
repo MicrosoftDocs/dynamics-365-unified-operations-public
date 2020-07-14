@@ -47,6 +47,7 @@ This feature is available starting with the 10.0.13 monthly update.
 | Commerce payment | A payment associated with a customer order generated at the point of sale or in the e-commerce storefront after this feature has been enabled. |
 | Order completion | Order completinn is the business logic in the Call Center that ensures payments have been collector before the order is submitted. The **Enable order completion** setting in call center parameters is used to enable this business logic in Call Center. For more details, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
 | Call Center order | An order created in the back office by a Call Center user. |
+| AR sales orders | Orders created through Accounts Receivable in the back office by a non-call center user. Payments for these orders may not be edited through call center order completion. |
 
 ## Overview
 
@@ -85,7 +86,7 @@ This feature requires that payment methods in all channels are mapped to a corre
 
 Example from call center:
 
-![Operation mapped to payment method in call center](../media/dev-itpro/COP_OPERATION.png)
+![Operation mapped to payment method in call center](../dev-itpro/media/COP_OPERATION.png)
 
 ### Call center is required
 
@@ -97,7 +98,7 @@ Users who will be editing Commerce payments in the back office must be set up as
 
 ### Enable order completion for call enters
 
-Order completion must be enabled for Commerce payment editing function properly. For more information on order completeion, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) of the article explaining call center order processing options.
+Order completion must be enabled for call centers. This will enforce business logic to ensure orders can be paid during fulfillment. For more information on order completeion, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) of the article explaining call center order processing options.
 
 ### Disable pay later
 
@@ -113,11 +114,19 @@ Properties on order line that can be edited prior to payment capture:
 - Payment amount
 - Percent amount
 
-For orders that were created in POS or the e-Commerce Storefront, the following scenarios in call center order completion apply: 
-
 ### Editing order payments
 
+For order payments that were created in POS or the e-Commerce Storefront, the following scenarios in call center order completion apply: 
+
 #### Uncaptured card payments
+
+For any card payment line on an order that has not yet been partially invoiced, the following properties can be edited prior to payment capture:
+- Card type
+- Card number
+- Payment amount
+- Percent amount
+
+After the payments have been edited, the order submittal process will rectify any changes required for payment lines that were edited. 
 
 | Scenario | Description | Supported |
 | --- | --- | --- |
@@ -130,7 +139,7 @@ For orders that were created in POS or the e-Commerce Storefront, the following 
 | Scenario | Description | Supported |
 | --- | --- | --- |
 | **Editing a payment that has already been used to invoice part of the order** | When an order with Commerce payments has already been partially invoiced, the card payment amount for the existing card may be edited through call center order completion down to the amount that has already been captured. A new card may then be applied to cover the balance due for the order.  | Yes |
-| **Editing amount when the car payment is fully captured** | If a card payment has already been fully captured, but the amount for that card payment is increased through call center order completion, upon submittal a new authorization for the card will be created for the amount that the payment was increased. | Yes |
+| **Editing fully captured card payment lines to specify a higher amount** | If a card payment has already been fully captured, but the amount for that card payment is increased through call center order completion, upon submittal a new authorization for the card will be created for the amount that the payment was increased. | Yes |
 
 ### Removing order payments
 
@@ -139,30 +148,40 @@ For orders that were created in POS or the e-Commerce Storefront, the following 
 | **Authorized payments** | Commerce order card payments may be removed through order completion only if they have not been partially captured. | Yes |
 | **Prepayments** | Prepayments may not be removed through order completion. Prepayments have payment vouchers already associated with them and may not be removed from an order once they have been applied. | No |
 | **Partially captured payments** | If the payment is in a 'Paid' state, but has not been fully captured, then the payment cannot be removed. However, the payment amount can be reduced to the already posted amount and the uncaptured amount will be voided from the authorization. | No | 
-| **Fully captured credit card payments and prepayments** | Cannot be removed from the order. | Yes |
+| **Fully captured credit card payments and prepayments** | Cannot be removed from the order. | No |
 
 ### Order and sales line cancellation
 
-**Order cancellation for credit card payments that have not been captured**
-Voided
+| Scenario | Description | Supported |
+| --- | --- | --- |
+| **Order cancellation for credit card payments that have not been captured** | If an order is cancelled, card payment authorizations that have not yet been captured will be cancelled. | Yes |
+| **Order cancellation for credit card payments that have been captured, but not invoiced** | If an order is created at the point of sale and a card payment is used to capture a deposit, then the order is cancelled prior to invoicing, the card payment will be automatically refunded as part of order cancellation. | Yes |
+| **Order cancellation for orders that have been partially shipped and invoiced** | For orders that have been partially shipped and invoiced, cancellation will cancel the fulfillment of lines that have not alredy been invoiced. Open credit card authorizations for the the remaining balance on the order will not be automaticaly cancelled as part of order cancellation. | Requires manual refund |
+| **Order cancellation for orders that have been invoiced, but not shipped** | If an order has been fully invoiced, but any of the items have not shipped, the order may be cancelled, but payments that have already been captured for that order will not automatically be refunded. Open authorizations for items that have not yet been invoiced will not be cancelled, but will exprire based on the card issueing bank's authorization expiration policies. | Requires manual refund |
+| **Line cancellation for items that have not been fulfilled or invoiced** | If an order line that has not yet been fulfilled or invoiced is cancelled, the order completion process 
 
-**Order cancellation for credit card payments that have been captured**
-Refunded
+### Refunds  
 
-**Line cancellation**
-If an order is modified to cancel an order line, then order completion must be used to complete the process. During order cancellation, the payment amount should be reduced to reflect the new order total. 
+| Scenario | Description | Supported |
+| --- | --- | --- |
+| **Linked refunds for POS and e-commerce orders** | Return orders generated from orders originating in POS and e-Commerce channels can issue linked refunds against the cards charged during invoicing. | Yes |
+| **Linked refunds for AR sales order** | While their payments may not be edited in order completion, returns issued for AR sales orders are capable of linked refund to the original card charged during invoicing. | 
+| **Unlinked refunds** | If allowed by the merchant's return policies and payment processor, unlinked refunds may designated for return orders in cases where the order was originally paid in cash, for example, or in cases where the original card used for payment is no longer active. | Yes |
+| **Refunds to non-card prepayments** | Return orders that were orignally paid with non-card prepayments, such as cash or credit memo payments, will not be subject to linked refund. An appropriate payment method such as **Check** must be designated for the refund payment. Organizations that allow unlinked refunds may refund non-card prepayments to credit cards not previously used for the order if it is allowed by their payment processor. | Yes |
 
-### Linked refund 
+### Editing and removing orders with prepayments
 
-Return orders for non-Call Center orders generated in the back office can execute linked refunds against the credit card used to pay for the original order.
+| Scenario | Description | Supported |
+| --- | --- | --- |
+| **Editing prepayment tender lines** | Prepayment tender lines already have payment vouchers associated with them and may not be edited or removed. | No |
 
-### Unlinked refund
+## Other enhancements 
 
-Return orders can be refunded to a credit card other than the one used to pay for the original order. 
+To best support 
 
-### Orders with prepayments
+## Identifying orders with Commerce payments
 
-Prepayments already have payment vouchers associated with them.That meass
+## Disabling Commerce payments
 
 
 
