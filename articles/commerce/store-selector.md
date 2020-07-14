@@ -40,7 +40,7 @@ This topic covers the store selector module and describes how to add it to site 
 
 A store selector module is used to "Pick-up" a product in a selected store. In 10.0.13, the module includes additional capabilities that allow it to showcase a "Find a Store" page to display available stores.  In this topic, we will discuss how the module can be used in both modes.
 
-The Store selector module allows the user to input a location (city, state, address etc) to search for stores within a search radius. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
+The store selector module allows the user to input a location (city, state, address etc) to search for stores within a search radius. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
 
 ## Store selector module usage in e-Commerce
 
@@ -49,13 +49,14 @@ The Store selector module allows the user to input a location (city, state, addr
 - A store selector module can be used on a stand-alone page that shows all available stores 
 
 ## Bing Maps integration
-The store selector module is integrated with the [Bing Maps REST APIs](https://docs.microsoft.com/en-us/bingmaps/rest-services/) for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
+
+The store selector module is integrated with the [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/) for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
 
 For the Auto-suggest REST API, you need to ensure the following URLs are whitelisted per [Content security policy](manage-csp.md). 
-1.To connect-src add *.bing.com
-1. To img-src add *.virtualearth.net
-1. To script-src add *.bing.com, *.virtualearth.net
-1. To script style-src add *.bing.com
+1.To connect-src add &#42;.bing.com
+1. To img-src add &#42;.virtualearth.net
+1. To script-src add &#42;.bing.com, &#42;.virtualearth.net
+1. To script style-src add &#42;.bing.com
 
 
 ## Buy online pick-up in store
@@ -63,23 +64,23 @@ The Store selector supports a "Pick-up in store" mode. In this mode, it displays
 
 The store selector module can be added to a buy box module on the product details page (PDP) to display stores where a product is available for pickup. It can also be added to a cart module. When added to a cart module, the store selector module displays pickup options for each cart line item. In addition, this module can be added to other pages or modules via extensions and customizations.
 
-For this scenario to work, products should be configured with the "Pickup" delivery mode. Otherwise, the module will not be shown on the respective product pages. For details on how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
-
+For this scenario to work, products should be configured with the "Pickup" delivery mode. Otherwise, the module will not be shown on the respective product pages. For more information on how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module](./media/BOPIS.PNG)
 
 ## Find a store
-The Store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module. When a store is selected as preferred store, the store id is maintained in the browser cookie and requires the user to accept the cookie consent message.
 
-The following image shows an example of a store selector module used on a Store locations page along with Map module [Maps module](add-maps-module.md).
+The store selector module supports a "Find stores" mod which can be used to create a "Store locations" page. The page can  render available stores and their information. It operates without product context in this mode and can be used stand-alone on any page. In addition, a store can be selected as a preferred store if the relevant settings are turned on for the module. When a store is selected as preferred store, the store id is maintained in the browser cookie and requires the user to accept the cookie consent message.
+
+The following image shows an example of a store selector module used on a store locations page along with a map module.
 
 ![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
 
-## Showing a map
-The module can be used with the Map module to render the store locations visually on a map. For more details on this module, refer to [Maps module](add-maps-module.md)
+## Render a map
 
+The module can be used with the map module to render the store locations visually on a map. For more information on the map module, see [Map module](add-map-module.md)
 
 ## Store selector module properties
 
@@ -94,15 +95,15 @@ The module can be used with the Map module to render the store locations visuall
 | Search radius | Number | Defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used.|
 |Terms of Service | URL    |  The terms of service URL that is required for the Bing Maps service. |
 
-
 ## Add a store selector module to a page
 
 For pick-up in store, the module can be used only on PDP and Cart. In addtion, you must set the **Mode as Pick up in store** in the module property panel.
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
-To use the module to display available stores for a Store locations page, follow the below steps
- 1. Go to **Templates**, and create a page template that is named **Marketing template**.
+To use the module to display available stores for a store locations page, follow these steps.
+
+1. Go to **Templates**, and create a page template that is named **Marketing template**.
 1. In the **Main** slot of the default page, dont add any modules.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Create a new page **Store locations** using the Marketing template.
@@ -126,12 +127,12 @@ To use the module to display available stores for a Store locations page, follow
 
 [Quick tour of PDP](quick-tour-pdp.md)
 
-[Quick tour of Cart and checkout](quick-tour-cart-checkout.md)
+[Quick tour of cart and checkout](quick-tour-cart-checkout.md)
 
 [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST APIs](https://docs.microsoft.com/en-us/bingmaps/rest-services/)
+[Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/)
 
-[Maps module](add-maps-module.md)
+[Maps module](add-map-module.md)
