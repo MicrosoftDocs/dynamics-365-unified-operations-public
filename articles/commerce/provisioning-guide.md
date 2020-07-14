@@ -105,10 +105,6 @@ To deploy the environment, follow these steps.
 
     ![Selecting the environment topology 1](./media/project2.png)
 
-1. Select **Dynamics 365 Commerce - Demo** as the environment topology. If you configured a single Azure Connector earlier, it will be used for this environment. If you configured multiple Azure Connectors, you can select which connector to use.
-
-    ![Selecting the environment topology 2](./media/project3.png)
-
 1. On the **Deploy environment** page, enter an environment name. Leave the advanced settings as they are.
 
     ![Deploy environment page](./media/project4.png)
