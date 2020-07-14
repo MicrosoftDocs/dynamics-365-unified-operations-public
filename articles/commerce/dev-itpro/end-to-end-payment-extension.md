@@ -5,7 +5,7 @@ title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -629,7 +629,7 @@ To determine the correct payment connector that should be loaded on the POS, you
 Payment processes are usually used only if a direct connection to a payment gateway is established. This scenario most often occurs in card-not-present sales transactions or more complex card-present scenarios. Additionally, the payment processor is used to process the merchant properties that are configured through the **POS hardware profile** page in the client.
 
 > [!NOTE]
-> The payment processor is currently required, even if all payment requests are handled directly through the payment terminal and no merchant properties must be set through the POS.
+> The payment processor is currently required, even if all payment requests are handled directly through the payment terminal and no merchant properties must be set through the POS. For more information about implementing the **IPaymentProcessor** interface, read the [Implementing a payment connector and payment device](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) white paper.
 
 ### Understanding the merchant properties flows
 The following sections describe how the merchant properties are set on the **POS hardware profile** page in the client, and how they are passed to the payment connector during payment flows on the POS.

@@ -18,8 +18,6 @@
           href: get-started/whats-new-platform-update-10-0-12.md
         - name: Platform updates for 10.0.11 (July 2020)
           href: get-started/whats-new-platform-update-35.md
-        - name: Platform updates for 10.0.10 (May 2020)
-          href: get-started/whats-new-platform-update-34.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -1436,8 +1434,6 @@
         href: sysadmin/pre-configured-system-accounts.md
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
-      - name: Process automation
-        href: /sysadmin/process-automation.md
       - name: Security
         items:
         - name: Role-based security
@@ -1463,7 +1459,7 @@
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
       - name: Process automation
-        href: /sysadmin/process-automation.md
+        href: sysadmin/process-automation.md
       - name: Batch processing
         items:
         - name: Batch processing overview
