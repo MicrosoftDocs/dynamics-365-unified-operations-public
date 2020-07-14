@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) outbou
 author: hhaines
 manager: annbe
 
-ms.date: 07/10/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -161,16 +161,16 @@ When you select **Pause fulfillment**, the document's status is changed to **Pau
 
 ### Review
 
-Prior to the final commitment of the fulfillment to Commerce Headquarters, you can use the **Review** function to validate the outbound document, this will alert you potential missing or incorrect data that may cause processing failure, and provide you opportunity to correct problems before submitting the fulfillment request. To enable the **Review** function on the app bar, you need to enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in Commerce Headquarters.
+Before the final commitment of the fulfillment to Commerce headquarters, you can use the **Review** function to validate the outbound document. This will alert you potential missing or incorrect data that may cause a processing failure, and provide you opportunity to correct issues before submitting the fulfillment request. To enable the **Review** function on the app bar, enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in Commerce headquarters.
 
 The **Review** function validates the following issues in an outbound document:
-- **Over-shipping** – the shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in HQ.
-- **Under-shipping** – the shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in HQ.
-- **Serial number** – serial number is not provided or not available for a serialized item that requires serial number to be registered in inventory.
-- **Location not set** – location is not specified for a location-controlled item that blank location is not allowed.
-- **Deleted lines** – the order has lines deleted by HQ user which was not known to POS application.
+- **Over-shipping** – the shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in Commerce headquarters.
+- **Under-shipping** – the shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in Commerce headquarters.
+- **Serial number** – serial number is not provided or not available for a serialized item that requires a serial number to be registered in inventory.
+- **Location not set** – location is not specified for a location-controlled item where location is not allowed to be blank.
+- **Deleted lines** – the order has lines deleted by a Commerce headquarters user that is not known to the POS application.
 
-You can set **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory** to have validation to be executed automatically upon you select **Finish fulfillment** function.
+If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory**, validation is executed automatically when you select the **Finish fulfillment** function.
 
 ### Finish fulfillment
 
