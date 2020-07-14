@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
-> There are two Modern POS installers.  Modern POS and Modern POS with offline (this installer also installs the offline database).
+> There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 
 ## Technology
 
