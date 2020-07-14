@@ -1348,7 +1348,7 @@ shown in the Row 33 of the VAT declaration.
 
 To automatically determine amount of VAT adjustment for bad debts, you should
 create a special Tax code and post writing off the customer bad debts using this
-Tax code. For more information this procedure see 
+Tax code. For more information this procedure, see 
 [Write off customer bad debts using Write off function](#write-off-customer-bad-debts-using-write-off-function) in this topic. Also associate this sales tax code with the **Lookup results
 VATAdjustmentCustomerBadDebtsStandard, VATAdjustmentCustomerBadDebtsReduced,
 VATAdjustmentCustomerBadDebtsReduced2** of the **\$ReportFieldLookup** in the
@@ -1477,9 +1477,7 @@ reporting (ER) configurations for the VAT declaration format:
 
 -   **VAT control statement (CZ)** – this is configuration in XML format DPHKH1
 
->   For more information, see [Download Electronic reporting configurations from
->   Lifecycle
->   Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ## Set up Application specific parameters for formats
 
@@ -1490,12 +1488,11 @@ in the application and report fields in the Electronic reporting configuration.
 
 1.  Go to **Workspaces > Electronic reporting**. Select **Reporting configurations**.
 
-2.  Select configuration **VAT declaration XML (CZ)**. Click **Configurations \>
-    Application specific parameters setup**.
+2.  Select configuration **VAT declaration XML (CZ)**. Click **Configurations > Application specific parameters setup**.
 
-3.  On the FastTab **Lookups**, select lookup **\$ReportFieldLookup**.
+3.  On the **Lookups** FastTab, select lookup **\$ReportFieldLookup**.
 
-4.  On the FastTab **Conditions**, associate Sales tax codes and report fields:
+4.  On the **Conditions** FastTab, associate Sales tax codes and report fields:
 
 <table>
 <tbody>
@@ -1567,16 +1564,13 @@ you can create the following line in the parameters:
 
 6.  Review example of parameters on the picture:
 
-[!Lookup for the Report fields](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+[![Lookup for the Report fields](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
 
 7.  On the Action pane, click **Export** to export parameters at XML file.
 
-8.  Select configuration **VAT declaration Excel (CZ**). On the **Action pane**,
-    click **Import** to import parameters that you configured for **VAT declaration XML (CZ)**. Change the entry in the **State** field to **Completed.**
+8.  Select configuration **VAT declaration Excel (CZ**). On the **Action pane**, click **Import** to import parameters that you configured for **VAT declaration XML (CZ)**. Change the entry in the **State** field to **Completed**.
 
-9.  Select configuration **VAT control statement XML (CZ)**. Make the same
-    settings manually as you did in point 4 above. Change **State** to
-    **Completed.**
+9.  Select configuration **VAT control statement XML (CZ)**. Make the same settings manually as you did in point 4 above. Change **State** to **Completed**.
 
 ### Set up parameters for subject codes 
 
@@ -1609,7 +1603,7 @@ To prevent the format to fail with exception due to missed setup, you should set
 
 Review example of parameters on the picture:
 
-[!Lookup for the Subject code](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[![Lookup for the Subject code](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
 
 ## Set up parameters for fulfillment mode codes
 
@@ -1631,11 +1625,10 @@ configuration.
 
 | **Column**      | **Description**                                                                                                                                                                                                                                                                                                    |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result   | Select fulfillment code. The full list of codes is available above in [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#section-a4.-taxable-sales-with-amount-above-10000-including-vat-and-all-vat-adjustments-made-for-customer-bad-debts) |
+| Lookup result   | Select fulfillment code. The full list of codes is available above in [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#section-a4.-taxable-sales-with-amount-above-10000-including-vat-and-all-vat-adjustments-made-for-customer-bad-debts). |
 | Tax code (Code) | Select sales tax code                                                                                                                                                                                                                                                                                              |
 
-If you have only transactions with normal filling, you can create the following
-lines of the setting:
+If you have only transactions with normal filling, you can create the following lines of the setting:
 
 | **Lookup result** | **Tax code (Code)** |
 |-------------------|---------------------|
@@ -1654,15 +1647,15 @@ in the Electronic reporting configuration.
 1.  Go to **Workspaces > Electronic reporting**. Select **Reporting configurations**.
 
 2.  Select configuration **VAT control statement XML (CZ)**. Click
-    **Configurations > Application specific parameters setup.**
+    **Configurations > Application specific parameters setup**.
 
-3.  On the FastTab **Lookups**, select lookup **\$NoTaxDocument**
+3.  On the FastTab **Lookups**, select lookup **\$NoTaxDocument**.
 
 4.  On the FastTab **Conditions**, associate sales tax groups and sales tax
     codes:
 
-| **Column**      | **Description**                                                                                                                                                                                                          |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Column**      | **Description**                 |
+|-----------------|---------------------------------|
 | Lookup result   | Select Yes if there is no obligation to issue tax document (primarily this may be because customer is not registered for VAT purposes).                                                                                  |
 | Sales tax group | Select sales tax group that you associate to customer when there is no obligation to issue tax document to them. If you are going to determine the condition using Sales tax code values, select **\*Not blank\*** here. |
 | Tax code (Code) | Select sales tax code assigned to transaction if there is no obligation to issue tax document. If you can determine conditions using Sales tax group only, select **\*Not blank\*** here.                                |
@@ -1676,7 +1669,7 @@ in the Electronic reporting configuration.
 
 Review example of parameters on the picture:
 
-[!Lookup for no obligation to issue tax document](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+[![Lookup for no obligation to issue tax document](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
 
 6.  Change **State** of all parameters to **Completed**.
 
@@ -1740,7 +1733,7 @@ Follow these steps:
     2.2  Select the line with processing and set up default values for
         declarations parameters on the **Message additional fields** FastTab:
 
-| **Processing**                                           | **Additional field**         | **Comment**                                                                                                                                               | **XML element**                                                                                                                     |
+| **Processing**                                           | **Additional field**         | **Comment**                                                                                                                                               | **XML element**               |
 |----------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | DPHKH1 (VAT control statement)                           | **\<DataBoxID\>**            | Select the Data box ID that was entered earlier                                                                                                                        | id_dats                                                                                                                             |
 | DPHDP3 (VAT declaration)                                 | **\<MainEconomicActivity\>** | Select main economic activity code entered earlier                                                                                                        | c_okec                                                                                                                              |
@@ -2038,7 +2031,7 @@ message processing, that's available from LCS.
 12.  Select **OK**. When the declaration in XML is generated, the status of the
     message will change to **Generated**.
 
-[!Electronic messages](media/PicEM.jpg)](media/PicEM.jpg)
+[![Electronic messages](media/PicEM.jpg)](media/PicEM.jpg)
 
   If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 
@@ -2261,8 +2254,7 @@ Complete the following steps to attach a file or a note to the VAT declaration X
 Attached text notes will be exported to **VetaR** sections of the VAT
 declaration XML file.
 
-Attached files will be exported as Base64 binary file attachments to the
-**Prilohy** XML element.
+Attached files will be exported as Base64 binary file attachments to the **Prilohy** XML element.
 
 1.  Go to **Organization administration > Document management > Active document tables**. In the **Table name** select **Sales tax payment**.
 
@@ -2296,7 +2288,7 @@ Follow the example steps to write off customer bad debts:
 6.  Go to **Accounts receivable > Customers > All customers**. Select the
     customer record created above. Select **Collections > Write off**. On the
     **Write off** dialog, enter the **Write-off date**, **Reason code** and
-    **Description**, and click **OK.**
+    **Description**, and click **OK**.
 
 7.  Go to **General ledger > Journal entries > General journals**. Select the
     journal writeOff that was automatically generated. Select **Lines**. Review
@@ -2329,15 +2321,12 @@ Follow the example steps to write off vendor bad debts:
 
 2.  Create and post a vendor invoice on **Invoice journal** page.
 
-3.  Review the settings of the sales tax code **WRITEOFF21** created above using the 
-    **Sales tax codes** page. Alternatively, you can create a new vendor before writing off
-    vendor bad debts.
+3.  Review the settings of the sales tax code **WRITEOFF21** created above using the **Sales tax codes** page. Alternatively, you can create a new vendor before writing off     vendor bad debts.
 
 4.  Create Sales tax group **WRITEOFF**. Add a line with sales tax code
     **WRITEOFF21** on the **Setup** FastTab.
 
-5.  Go to **Items sales tax groups**. Select affected item sales tax group. Add a
-    line with sales tax code WRITEOFF21 on the **Setup** FastTab.
+5.  Go to **Items sales tax groups**. Select affected item sales tax group. Add a line with sales tax code WRITEOFF21 on the **Setup** FastTab.
 
 6.  Go to the **Daily general journal** page, and create a line for writing off the vendor invoice manually. Enter information in the following fields:
 
@@ -2345,9 +2334,9 @@ Follow the example steps to write off vendor bad debts:
     - Select Vendor in the field **Account type**
     - Select vendor account created above in the field **Account**
     - Enter write off amount in the field **Debit**
-    - On tab **General**, select Sales tax group **WRITEOFF,** and **Item sales tax group** selected in step 5 above.
+    - On tab **General**, select Sales tax group **WRITEOFF,** and **Item sales tax group** selected in step 5 above
 
-7.  Settle open vendor invoice in standard way. Post journal. Review posted sales tax transaction:
+7.  Settle open vendor invoice in standard way and Post the journal. Then review the following items in the posted sales tax transaction:
 
     -   **Sales tax direction** = **Sales tax receivable**
     -   **Amount origin** is equal to invoice amount without VAT
