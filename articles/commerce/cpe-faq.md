@@ -40,11 +40,13 @@ No. The Commerce evaluation environment is only for evaluation. If you require a
 
 **Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**
 
-No. The Commerce evaluation environment is currently available only in new environments.
+No. The Commerce evaluation environment is currently available only in new environments (Commerce versions 10.0.08 or later). Older versions might not have the demo data and configuration required for the evaluation environment. 
 
 **What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Commerce is the only component that is hosted in your subscription. Other components, such as Commerce Scale Unit and Commerce, will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
+A traditional Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce headquarters environment will be hosted in your Azure subscription. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
+
+Other components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site will be available as software as a service (SaaS) and hosted by Microsoft.
 
 **Which Azure geographies are currently supported for the Commerce evaluation environment?**
 
@@ -56,11 +58,11 @@ Dynamics 365 Commerce and Commerce Scale Unit are completely software as a servi
 
 **How long can the Commerce evaluation environment be used?**
 
-The Commerce evaluation environment has a 30-day time limit from the date when e-Commerce is provisioned.
+The Commerce evaluation environment has a 30-day time limit from the date when SaaS components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site are provisioned.
 
 **Can I extend the time limit for my Commerce evaluation environment?**
 
-Extension of the time limit is considered on a case-by-case basis. You should reach out to your Microsoft partner contact for assistance.
+Extension of the time limit is exceptional to the norm and considered on a case-by-case basis. You should reach out to your Microsoft partner contact for assistance.
 
 ## Additional resources
 
