@@ -125,7 +125,7 @@ For orders that were created in POS or the e-Commerce Storefront, the following 
 | **Editing to specify a lower amount** | Card payments which have been authorized, but not yet captured, may be reduced. When a payment line amount is reduced, the previous authorization is cancelled and a new authorization is created for the lower amount. | Yes |
 | **Removing an old card and adding a new one** | Uncaptured card payment authorizations may be removed from orders and be replaced by a payment on a different card. When this is done, the authorization for the first card is cancelled and an authorization for the new card will be obtained when the order is submitted. | Yes |
 
-####Editing partially and fully captured card payments
+#### Editing partially and fully captured card payments
 
 | Scenario | Description | Supported |
 | --- | --- | --- |
