@@ -159,6 +159,19 @@ If you're fulfilling the transfer order, you can use the **Pause fulfillment** f
 
 When you select **Pause fulfillment**, the document's status is changed to **Paused**. Therefore, user will know that data has been entered in the document, but the document hasn't yet been committed. When you're ready to resume the fulfillment process, select the paused document, and then select **Order details**. Any **Shipping now** quantities that were previously saved will be retained and can be viewed from the **Full order list** view.
 
+### Review
+
+Prior to the final commitment of the fulfillment to Commerce Headquarters, you can use the **Review** function to validate the outbound document, this will alert you potential missing or incorrect data that may cause processing failure, and provide you opportunity to correct problems before submitting the fulfillment request. To enable the **Review** function on the app bar, you need to enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in Commerce Headquarters.
+
+The **Review** function validates the following issues in an outbound document:
+- **Over-shipping** – the shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in HQ.
+- **Under-shipping** – the shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in HQ.
+- **Serial number** – serial number is not provided or not available for a serialized item that requires serial number to be registered in inventory.
+- **Location not set** – location is not specified for a location-controlled item that blank location is not allowed.
+- **Deleted lines** – the order has lines deleted by HQ user which was not known to POS application.
+
+You can set **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory** to have validation to be executed automatically upon you select **Finish fulfillment** function.
+
 ### Finish fulfillment
 
 When you've finished entering all the **Shipping now** quantities for products, you must select **Finish fulfillment** on the app bar.
