@@ -171,19 +171,17 @@ You can filter by the following criteria to refine your query:
 
 [![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
 
-###E-commerce events
+### E-commerce events
 The following events are logged by the E-commerce website , and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
 
-###Button and link clicks
+### Button and link clicks
 
 1.	Header
-
-•	Navigation hierarchy
-•	Cart icon
-•	Sign-in
-•	Search icon
-•	Wishlist icon
-
+    - Navigation hierarchy
+    - Cart icon
+    - Sign-in
+    - Search icon
+    - Wishlist icon
 2.	Content block action links. (This represents the hero, tile, feature modules for marketing content)
 3.	Video player
 4.	Product cards
