@@ -126,7 +126,7 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
 > [!NOTE]
-> The following instructions refer to completing routing setup steps for your site domain. If the domain that you will use is already **active and live**, follow the instructions for [adding a custom domain to your Azure Front Door] ("https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain") instead of the next section CNAME updates.
+> **Warning:** The following instructions refer to completing routing setup steps for your site domain. If the domain that you will use is already **active and live**, first create a support ticket using the "New support request" in the Azure Portal. Then follow the instructions for [adding a custom domain to your Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain) instead of the next section CNAME updates.
 
 After this initial configuration is deployed, you must add your custom domain to the configuration for Azure Front Door Service. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
