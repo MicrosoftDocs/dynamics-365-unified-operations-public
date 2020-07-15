@@ -3,7 +3,7 @@
 # required metadata
 
 title: Iframe module
-description: This topic covers the Iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 07/31/2020
@@ -35,39 +35,44 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers the Iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-An Iframe module provides an iframe (inline frame) to host external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
+An iframe module provides an iframe (inline frame) to host external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
-An Iframe module requires a destination URL and then hosts whatever content in on the destination page within an HTML Iframe. The external URLs must be on the allow list (otherwise known as a whitelist) per the site's content security policy (CSP) allowed source URLs. For Iframe content, URLs should be allowed using the "frame-ancestor" directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+An iframe module requires a target URL and then hosts whatever content is on the target page within an HTML iframe element. The external URLs must be on the allow list (also known as a "whitelist") per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
-The following image shows an example of an Iframe module on a page showcasing some external videos.
+The following image shows examples of iframe modules showcasing external videos on site pages.
 
-![Example of IFrame module](./media/ecommerce-iframe.PNG)
+![Example of iframe modules showcasing external videos](./media/ecommerce-iframe.PNG)
 
 ## Iframe module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Heading| Text| Heading for the module|
-| Target Url| Url to be hosted within the module|
-| Height| Number or percentage| Height of the module can  defined in pixels or percentage. A number "100" will be treated as pixels and 100% will be treated as percentage |
-| Aria label| Text| An aria label can be defined for accessibilty purposes |
+| Heading | Text | Heading for the module. |
+| Target URL| URL to be hosted within the module. |
+| Height| Number or percentage| The height of the module defined in pixels or percentage. For example, the number "100" will be treated as pixels and "100%" will be treated as a percentage. |
+| Aria label| Text | An aria label can be defined for accessibilty purposes. |
 
-## Add an Iframe module to a page
+## Add an iframe module to a page
 
-To use an Iframe module to display available stores for a store locations page, follow these steps.
+To add an iframe module to a page to display available stores for a store locations page, follow these steps.
 
-1. Go to **Templates**, and create a page template that is named **Marketing template**.
-1. In the **Main** slot of the default page, dont add any modules.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Create a new page **Marketing page** using the Marketing template.
-1. Add a Container and set Width=Fill Container
-1. Add an IFrame module to the container. 
-1. 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Go to the Marketing page and you should see the YouTube video rendered in the IFrame. 
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the **Marketing template** template. Under **Page name**, enter **Marketing page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the module's properties pane, set the **Width** value to **Fill Container**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **iframe** module, and then select **OK**.
+1. In the module's properties pane, set the **Target URL** value to an external video URL.
+1. In the module's properties pane, set other properties such as **Heading** and **Height** as needed.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. Go to the marketing page on your site and you should see the video rendered in the iframe module.
  
 ## Additional resources
 
