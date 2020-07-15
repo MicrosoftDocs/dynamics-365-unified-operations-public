@@ -173,6 +173,7 @@ The **Docu** class exposes the following two delegates. Handlers can be implemen
 The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
 
 
+    ```
     public final class ScanDocuments
     {
 
