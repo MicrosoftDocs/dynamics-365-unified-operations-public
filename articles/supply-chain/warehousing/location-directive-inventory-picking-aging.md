@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Location directive inventory picking aging
 
-This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
+This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
 
 You can use FIFO and LIFO strategies to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting.
 
@@ -137,7 +137,7 @@ The LIFO strategy finds the location that contains the newest aging date, and it
 1. Select and open the wave that contains the order that you created for the FIFO scenario.
 1. On the Action Pane, on the **Work** tab, select **Cancel** to cancel the work that you created for the FIFO scenario.
 1. On the Action Pane, on the **Wave** tab, in the **Wave** group, select **Process**.
-1. When the processing is completed, on the **Wave** tab, in the **Related information** section, select **Work** to open the work that was created for this wave.
+1. When the processing is completed, on the Action Pane, on the **Wave** tab, in the **Related information** group, select **Work** to open the work that was created for this wave.
 1. On the **Work** page, on the **Overview** tab, there should be two lines. Select the line where the **Work status** field is set to *Open*.
 1. Notice that the line where the **Work type** value is *Pick* shows a **Location** value of *FL-001*. This location contains the license plate that has the newest aging date (LIFO).
 
