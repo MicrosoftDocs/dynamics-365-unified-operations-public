@@ -42,10 +42,11 @@ The **Cash overview** Power BI content was created for individuals who are respo
 The following setup needs to be completed in order for data to display in **Cash overview** and **Bank management** Power BI visuals.
 
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
-2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
-3. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
-4. Go to **System administration > Setup > Entity Store** to refresh the **LedgerCovLiquidityMeasurement** aggregate measurement.
+2. Go to **General Ledger > Calendars > Fiscal calendars** validate fiscal calendar dates assigned to active time period.
+3. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
+4. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
+5. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+6. Go to **System administration > Setup > Entity Store** to refresh the **LedgerCovLiquidityMeasurement** aggregate measurement.
 
 ## Accessing the Power BI content
 
