@@ -56,38 +56,36 @@ configuration:
 
 3.  Enter a **Group name** and set **Generate data package** to yes.
 
-![](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
+    ![](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
 
->   A screenshot of a computer Description automatically generated
+4.  Click the **Add multiple** menu action.
 
-1.  Click the **Add multiple** menu action.
+5.  Filter for **Entities** = ‘Security’ and **Entity category** = ‘Master’.
 
-2.  Filter for **Entities** = ‘Security’ and **Entity category** = ‘Master’.
+6.  Select ‘Excel’ as **Target data format**.
 
-3.  Select ‘Excel’ as **Target data format**.
+7.  Select the applicable security customization entities.
 
-4.  Select the applicable security customization entities.
-
-5.  Click **Add selected**.
+8.  Click **Add selected**.
 
     From version 10.012, ignore any warning messages about data length, they are
     not applicable since the included entities use containers in data package
     mode.
 
-6.  Click **Close**.
-
-7.  Make sure that the **Sequence** field value is set in order of the entity
-    dependencies, i.e. first Privileges, then Duties and last Roles.
-
-8.  Click **Export**.
-
 9.  Click **Close**.
 
-10. Wait for the job to complete, click **Refresh** to see the status.
+10.  Make sure that the **Sequence** field value is set in order of the entity
+    dependencies, i.e. first Privileges, then Duties and last Roles.
 
-11. Click **Download package**.
+11.  Click **Export**.
 
-12. Save the package
+12.  Click **Close**.
+
+13. Wait for the job to complete, click **Refresh** to see the status.
+
+14. Click **Download package**.
+
+15. Save the package
 
 **Import customized security configuration**
 --------------------------------------------
