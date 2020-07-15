@@ -66,6 +66,8 @@ To uptake support for incremental capture as part of back office invoicing, you 
 
 This version of the payment SDK adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an optional interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
 
+Sample IPaymentReferenceProfider from the payments SDK:
+
     ``` xml
     namespace Microsoft.Dynamics.Retail.PaymentSDK.Portable
     {
@@ -87,3 +89,19 @@ This version of the payment SDK adds the IPaymentReferenceProvider interface. Th
     }
     ```
 
+Sample authorization request using PaymentTrackingID:
+
+    ``` xml
+                internal string PurchaseLevel { get; set; }
+            /// <summary>
+            /// Gets or sets the payment tracking identifier.
+            /// </summary>
+            /// <value>
+            /// The payment tracking identifier.
+            /// </value>
+            internal string PaymentTrackingId { get; set; }
+            /// <summary>
+            /// Converts from <see cref="Request"/>.
+            /// </summary>
+            /// <param name="request">The request.</param>
+     ``` 
