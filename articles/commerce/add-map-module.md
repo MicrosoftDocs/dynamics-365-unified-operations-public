@@ -62,12 +62,12 @@ The following image shows an example of a map module used on a store locations p
 
 ## Add allowed mapping URLS to site content security policy (CSP) directives
 
-For the maps module to interact with the Bing Maps, you must ensure that the following mapping URLs are allowed (otherwise known as whitelisted) per your site's content security policy (CSP). This is done in Commerce site builder by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
+For the maps module to interact with the Bing Maps, you must ensure that the following mapping URLs are allowed (otherwise known as "whitelisted") per your site's content security policy (CSP). This is done in Commerce site builder by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
 - To the **connect-src** directive, add &#42;.bing.com.
-- To the **img-src** directive, add &#42;.virtualearth.net
-- To the **script-src** directive, add &#42;.bing.com, &#42;.virtualearth.net
-- To the **script style-src** directive, add &#42;.bing.com
+- To the **img-src** directive, add &#42;.virtualearth.net.
+- To the **script-src** directive, add &#42;.bing.com, &#42;.virtualearth.net.
+- To the **script style-src** directive, add &#42;.bing.com.
 
 ## Add a map module to a page
 
