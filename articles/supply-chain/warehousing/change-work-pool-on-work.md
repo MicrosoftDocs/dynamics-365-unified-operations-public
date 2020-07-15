@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change work pool on work
-description: Learn how to use the "Change work pool" button for work items to change the work pool of existing work.
+description: This topic explains how you can use the Change work pool button for work items to change the work pool of existing work.
 author: mirzaab
 manager: AnnBe
 ms.date: 02/01/2020
@@ -29,116 +29,125 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Change work pool on work
 
-Use work pools to organize work into groups. For example, you can create a work pool to classify work that occurs in a particular warehouse location.
+You can use work pools to organize work into groups. For example, you can create a work pool to classify work that occurs in a specific warehouse location.
 
-This features adds a **Change work pool** button to the Action Pane for work items, which makes it easy for warehouse managers to change the work pool of existing work. It enables managers to react quickly to changes on the warehouse shop floor and improves their ability to adapt to changing situations and the need of transferring work to another work pool.
+The *Change work pool on work* feature adds a **Change work pool** button to the Action Pane for work items. Therefore, warehouse managers can easily change the work pool of existing work. This feature lets managers react quickly to changes on the warehouse shop floor, and it helps improve their ability to adapt to changing situations and the need to transfer work to another work pool.
 
-## Enable the change work pool feature
+## Turn on the Change work pool on work feature
 
-Before you begin trying to set up or use this feature, you must make sure it's available on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed listed as:
+Before you begin to set up or use this feature, you must make sure that it's available in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
-- **Module**: *Warehouse management*
-- **Feature name**: *Change work pool on work*
+- **Module:** *Warehouse management*
+- **Feature name:** *Change work pool on work*
 
-## Set up the change work pool feature
+## Set up the Change work pool on work feature
 
-To use this feature, you must have some work pools set up, and you might also set up your work templates to assign a pool automatically. If you'd like to work through the example scenario provided later in this topic, then set up your system as described in this section.
+To use this feature, you must have some work pools set up. You might also set up your work templates so that they automatically assign a pool. If you want to work through the example scenario that is provided later in this topic, set up your system as described in this section.
 
-### Set up your work pools
+### Set up work pools
 
-Work pools enable you to organize work items by type. To work with the change work pool feature, you must have at least two work pools available. To view and add work pools setup the following:
+Work pools let you organize work items by type. To work with the *Change work pool on work* feature, you must have at least two work pools available. To view and add work pools, follow these steps.
 
-1. Go to **Warehouse management > Setup > Work > Work pools**.
-1. If you're working with the **USMF** company demo data and will work through the example scenario later in this topic, then add the following:
-     - **Work pool ID** - *Webshop*, **Description** - *Web Shop*
-     - **Work pool ID** - *CallCenter*, **Description** - *Call Center*
+1. Go to **Warehouse management \> Setup \> Work \> Work pools**.
+1. If you're working with demo data from the **USMF** company and will work through the example scenario later in this topic, add two work pools that have the following settings:
 
-1. Select **Save** on the Action Pane.
+    - Work pool 1:
 
-### Set up your work templates
+        - **Work pool ID:** *Webshop*
+        - **Description:** *Web Shop*
 
-You can set a default work pool for each of your work templates as needed. All work items generated using a given template will automatically inherit the assigned work pool (if any). For each relevant template, assign a work pool in the **Work pool ID** column. If you're working with the **USMF** company demo data and will work through the example scenario later in this topic, then add the following:
+    - Work pool 2:
 
-1. Go to **Warehouse management > Setup > Work > Work templates**.
-1. Select **Edit** on the Action Pane to put the page into edit mode.
-1. Edit the template as follows:
-    - **Work template** - *62 Pick to pack*
-    - **Work pool ID** - *Webshop*
+        - **Work pool ID:** *CallCenter*
+        - **Description:** *Call Center*
+
+1. On the Action Pane, select **Save**.
+
+### Set up work templates
+
+For each of your work templates, you can set a default work pool, as you require. For each relevant template, you assign a work pool in the **Work pool ID** column. In this case, all work items that are generated by using a given template automatically inherit the assigned work pool. If you're working with the demo data from the **USMF** company and will work through the example scenario later in this topic, follow these steps.
+
+1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
+1. On the Action Pane, select **Edit** to put the page into editing mode.
+1. Edit the template by setting the following values:
+
+    - **Work template:** *62 Pick to pack*
+    - **Work pool ID:** *Webshop*
 
 1. Select **Save**.
 
 ## Example scenario
 
-This scenario provides a demonstration for how to change the stream of processing for an existing work item by changing its work pool. It uses the **USMF** company demo data and each of the settings suggested earlier in this topic.
+This scenario shows how to change the stream of processing for an existing work item by changing its work pool. It uses demo data from the **USMF** company and the settings that were suggested earlier in this topic.
 
-### Create a sales order and release to warehouse
+### Create a sales order and release it to the warehouse
 
-1. Confirm that there is enough quantity on-hand for **Item** *A0001* and **Item** *A0002* in **Warehouse** *62*.
-1. To confirm quantities, go to **Inventory management > Inquiries and reports > On-hand list**. Edit the **Filters** as follows:
-    - **Warehouse** begins with - *62*
-    - **Item number** is one of - *A001*, *A002*
+1. Confirm that there is enough on-hand inventory for items *A0001* and *A0002* in warehouse *62*. Go to **Inventory management \> Inquiries and reports \> On-hand list**, and edit the filters as shown here:
+
+    - The **Warehouse** value begins with *62*.
+    - The **Item number** value is either *A001* or *A002*.
 
     Demo data should have a quantity of 10 each.
 
-1. Create a sales order.
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
-1. Select **New** on the Action Pane.
-1. The **Create sales order** dialog box opens, enter the following:
-    - **Customer account** - *US-007*
-    - **Warehouse** - *62*
+    Next, you must create a sales order.
+
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. On the Action Pane, select **New**.
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-007*
+    - **Warehouse:** *62*
 
 1. Select **OK** to create the sales order and close the dialog box.
-1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** FastTab.
-1. On this new line, enter the following:
-    - **Item number** - *A0001*
-    - **Quantity** - *2*
+1. The new sales order is opened. It should include a new, empty line in the grid on the **Sales order lines** FastTab. On this line, set the following values:
 
-1. On the **Sales order lines** FastTab toolbar, select **Inventory** \> **Reservation**.
-1. On the **Reservation** page select **Reserve lot** on the Action Pane to reserve the inventory.
+    - **Item number:** *A0001*
+    - **Quantity:** *2*
+
+1. On the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the inventory.
 1. Close the page.
-1. On the **Sales order lines** FastTab toolbar, select **Add line** to add another line to your sales order. Enter the following:
-    - **Item number** - *A0002*
-    - **Quantity** - *2*
+1. On the **Sales order lines** FastTab, select **Add line** to add another line to your sales order. On this line, set the following values:
 
-1. On the **Sales order lines** FastTab toolbar, select **Inventory** \> **Reservation**.
-1. On the **Reservation** page select **Reserve lot** on the Action Pane to reserve the inventory.
+    - **Item number:** *A0002*
+    - **Quantity:** *2*
+
+1. On the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the inventory.
 1. Close the page.
-1. On the Action Pane select the **Warehouse** tab.
-1. Then select **Release to warehouse**.
-1. Informational messages are displayed with the **Wave ID** and **Shipment ID** created from the release. Make note of the **Wave ID**.
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+1. You receive informational messages that show the wave ID and shipment ID that were created from the release. Make a note of the wave ID.
 
-### Outbound Wave
+### Review the outbound wave
 
-1. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**.
-1. In the table, search for the **Wave ID** created from the release of the sales order.
-1. Select the wave ID you just created to view the details.
-1. On the **Wave lines** FastTab, ensure there is a **Shipment ID** listed for the sales order.
+1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
+1. In the grid, search for the wave ID that was created from the release of the sales order.
+1. Select the wave ID to view the details.
+1. On the **Wave lines** FastTab, make sure that a shipment ID is shown for the sales order.
 
     > [!TIP]
-    > If **Process wave at release to warehouse** is set to *No* on the **Wave template** setup for the shipping wave template, then you will need to manually **Process** the wave from **Wave** in the Action Pane to create work.
+    > If the **Process wave at release to warehouse** option is set to *No* in the setup for the shipping wave template, you must manually process the wave from **Wave** on the Action Pane to create work.
 
-1. Make sure that the wave has been processed. This creates the required work.
+1. Make sure that the wave has been processed. This processing creates the required work.
 
 ### View work details and change the work pool
 
-To see the work created and to manage the work pool, go to to the **Work details** page.
+You can use the **Work details** page to view the work that was created and to manage the work pool.
 
-1. Go to **Warehouse management > Work > Work details**.
-1. Select the row for the work you just created.
-    - The sales order number will be displayed in the **Order number** column.
+1. Go to **Warehouse management \> Work \> Work details**.
+1. Select the row for the work that was just created. The **Order number** column will show the sales order number.
 
-1. The **Work pool ID** field will be populated the work pool ID setup on the work template.
-    - If you do not see the **Work pool ID** field, add the column to the grid and refresh the page.
+    The **Work pool ID** field will be set to the work pool ID that was set up in the work template.
 
-1. To change the work pool associated with this **Work ID**, select the **Work** tab on the Action Pane, and then select **Change Work pool ID**.
-1. The **Change work pool** dialog box opens.
-1. In the **Parameters** FastTab select the following:
-    - **Work pool ID** - *CallCenter*
+    > [!TIP]
+    > If you don't see the **Work pool ID** field, add the column to the grid, and then refresh the page.
 
-1. Select **OK** to apply the change.
-1. Note that the **Work pool ID** has now been changed to *CallCenter*.
+1. To change the work pool that is associated with the work ID, on the Action Pane, on the **Work** tab, select **Change Work pool ID**.
+1. In the **Change work pool** dialog box, on the **Parameters** FastTab, in the **Work pool ID** field, select *CallCenter*.
+1. Select **OK** to apply your change.
+1. Notice that the value of the **Work pool ID** field has now been changed to *CallCenter*.
 
 > [!IMPORTANT]
-> The **Work pool ID** may default to blank when the dialog box opens. If you select **OK** to apply changes and the field is blank, you will remove the work pool completely from the work.
+> When the **Change work pool** dialog box appears, the **Work pool ID** field might be blank by default. If the field is blank when you select **OK** to apply changes, you will remove the work pool completely from the work.
 >
-> In addition to switching work pools, you can also use this procedure to add a work pool to any work item that doesn't have one or remove a work pool from any work item that does have one.
+> In addition to switching work pools, you can use this procedure to add a work pool to any work item that doesn't have one, or to remove a work pool from any work item that does have one.
