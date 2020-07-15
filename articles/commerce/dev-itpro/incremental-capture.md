@@ -64,19 +64,14 @@ In the back office, search for **Feature management**. In the feature management
 
 To uptake support for incremental capture as part of back office invoicing, you will also need to upgrade to the payments SDK provided as part of 10.0.13. 
 
-This version of the payment SDK adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an optional interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
+## IPaymentReferenceProvider
 
-Sample IPaymentReferenceProfider from the payments SDK:
+This version of the payment SDK also adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an optional interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
+
+Sample implementation from the payments SDK SampleConnector.cs:
 
    ``` xml
-    namespace Microsoft.Dynamics.Retail.PaymentSDK.Portable
-    {
-        using Microsoft.Dynamics.Retail.PaymentSDK.Portable.Constants;
-        /// <summary>
-        /// IPaymentReferenceProvider interface.
-        /// </summary>
-        public interface IPaymentReferenceProvider
-        {
+            #region ITrackingSupport
             /// <summary>
             /// Get the payment providers reference to safe guard against duplicate requests.
             /// </summary>
@@ -84,24 +79,40 @@ Sample IPaymentReferenceProfider from the payments SDK:
             /// <param name="amount">The payment transaction amount.</param>
             /// <returns>Returns the PaymentTransactionReferenceData.</returns>
             /// <remarks>List of supported commands can be seen in the constants defined in <see cref="Microsoft.Dynamics.Retail.PaymentSDK.Portable.Constants.SupportedCorrelationCommands"/></remarks>
-            PaymentTransactionReferenceData GetPaymentReferenceData(string command, decimal amount);
-        }
-    }
+            public PaymentTransactionReferenceData GetPaymentReferenceData(string command, decimal amount)
+            {
+                PaymentTransactionReferenceData paymentTransactionReferenceData = new PaymentTransactionReferenceData();
+                paymentTransactionReferenceData.Amount = amount;
+                paymentTransactionReferenceData.Command = command;
+                paymentTransactionReferenceData.IdFromConnector = Guid.NewGuid().ToString();
+                paymentTransactionReferenceData.InitiatedDate = DateTime.UtcNow;
+                return paymentTransactionReferenceData;
+            }
+            #endregion
    ```
 
-Sample authorization request using PaymentTrackingID:
+Sample of AuthorizeRequest.cs in the payments SDK using PaymentTrackingID:
 
-    ``` xml
-                internal string PurchaseLevel { get; set; }
-            /// <summary>
-            /// Gets or sets the payment tracking identifier.
-            /// </summary>
-            /// <value>
-            /// The payment tracking identifier.
-            /// </value>
-            internal string PaymentTrackingId { get; set; }
-            /// <summary>
-            /// Converts from <see cref="Request"/>.
-            /// </summary>
-            /// <param name="request">The request.</param>
-     ``` 
+   ``` xml
+                authorizeRequest.PaymentTrackingId = PaymentUtilities.GetPropertyStringValue(
+                    hashtable,
+                    GenericNamespace.TransactionData,
+                    TransactionDataProperties.PaymentTrackingId);
+    ``` 
+
+## Supports mulitple captures
+
+If a payment processor supports mutiple captures, the authorization responses should have the SupportsMultipleCaptures property set to "True". If the property is set to false or not provided, the authorization will not be eligible for incremental capture and if there is a new balance due after invoicing a new authorization will be obtained. 
+
+Sample from AuthorizationResponseProperties.cs from the payments:
+
+   ``` xml
+     /// <summary>
+           /// Gets an Id the Payment Gateway assigns to the transaction.
+           /// </summary>
+           public static string BankTransactionId
+           {
+               get { return "BankTransactionId"; }
+           }
+    ``` 
+
