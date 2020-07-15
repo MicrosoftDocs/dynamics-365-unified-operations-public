@@ -213,7 +213,7 @@ Create a new packing profile that will be used together with the sorting functio
     - **Container packing policy:** *Sort*
     - **Container ID mode:** *Auto*
     - **Container type:** *Box-Large*
-    - **Auto create container at container close:** *No* (unselected)
+    - **Auto create container at container close:** Cleared (= *No*)
 
 1. Select **Save**.
 
@@ -467,7 +467,7 @@ This scenario simulates a situation where packed containers should automatically
 
 ### Pick items for the sales orders
 
-Complete the created work by using the mobile device to the pack station.
+Complete the created work by using the mobile device to move the items to the pack station.
 
 1. On the mobile device, sign in to warehouse *62* by using the user ID that you created for this scenario (or the user ID of an existing demo data user).
 1. On the main menu, select **Outbound**.
@@ -508,7 +508,7 @@ Complete the created work by using the mobile device to the pack station.
 1. Go to **Warehouse management \> Packing and containerization \> Pack**.
 
     The **Select packing station** dialog box appears. By default, the **Worker** field should be set to the name of the worker that you set up earlier.
-    
+
 1. Set the following values to view and work on shipments and containers that are planned at the specific packing location:
 
     - **Site:** *6*
@@ -607,7 +607,7 @@ To view the container details, go to **Warehouse management \> Packing and conta
 
     Work is completed on the second container from sales order 1. You will now sort the remaining containers from sales order 2.
 
-1.  In the **LP/Con** field, enter the container ID of the container from sales order 2 that holds item *A0001*. Because the carrier service differs, you're prompted to enter a new sort position and assign an LP to that position. Use sort position *SP02* and LP *PLP02*.
+1. In the **LP/Con** field, enter the container ID of the container from sales order 2 that holds item *A0001*. Because the carrier service differs, you're prompted to enter a new sort position and assign an LP to that position. Use sort position *SP02* and LP *PLP02*.
 1. Select **OK**.
 1. Confirm the sort position by entering *SP02* in the **Sort Position ID** field.
 1. Select **OK**.
