@@ -45,7 +45,7 @@ The engineering change order allows you to make changes to engineering products 
 - Use the bill of material to include products lower in the product structure (children)
 - Use a where-used search to include products higher in the product structure (parents)
 
-When the proposal for changes is finished, the **review and approval process** will be handled by a workflow. You can setup different workflows based on the priority and severity. For more information about the workflow see [Workflow system overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/supply-chain/toc.json).
+When the proposal for changes is finished, the **review and approval process** will be handled by a workflow. You can setup different workflows based on the priority and severity. For more information about workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
 Typical stakeholders for approving the engineering change order can be:
 

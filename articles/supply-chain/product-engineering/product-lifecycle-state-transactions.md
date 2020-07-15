@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.13
 ---
 
 <!-- Beatriz: note that the topic that the reference to the product lifecycle state in the doc page refers to 
- https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle. Note that the topic cannot be merged with the topic above as this topic needs to be under a Product engineering section. All the topics for the product engineering need to be under a product engineering section (as it happens with other add-ins) so it is clear that this only applies if the customer gets the add-on. -->
+ https://docs.microsoft.com/dynamics365/supply-chain/pim/product-lifecycle. Note that the topic cannot be merged with the topic above as this topic needs to be under a Product engineering section. All the topics for the product engineering need to be under a product engineering section (as it happens with other add-ins) so it is clear that this only applies if the customer gets the add-on. -->
 
 # Product lifecycle state and transactions
 
