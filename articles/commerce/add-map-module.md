@@ -3,7 +3,7 @@
 # required metadata
 
 title: Map module
-description: This topic covers map modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 07/31/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers map modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -49,26 +49,25 @@ The following image shows an example of a map module used on a store locations p
 
 ![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
 
-
 ## Module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Heading| Text| Heading for the module|
-|Pushpin options - Default icon|image | The icon to use for stores shown on the map|
-|Pushpin options - Active icon|image | The icon to use for a store that is selected on the map|
-|Pushpin options - Default icon color|string  |Text of HEX value for the color of the Active selected pushpin |
-|Pushpin options - Active icon color|string | Text or HEX value for the color of the Active selected pushpin|
-|Show index|True or false  | If true, the pushpins that indicate a store have an index that matches the index on the list view displayed by Store selector module|
+| Heading| Text| The heading for the module. |
+| Pushpin options: Default icon | Image | The pushpin icon image to use for stores shown on the map. |
+| Pushpin options: Active icon | Image | The pushpin icon image to use for a store that is selected on the map|
+| Pushpin options: Default icon color| Character string  |Text or hexadecimal value for the color of the active selected pushpin. |
+| Pushpin options: Active icon color| Character string | Text or hexadecimal value for the color of the active selected pushpin. |
+| Show index | True/False  | If true, pushpin icons that indicate a store have an index that matches the index on the list view displayed by the store selector module. |
 
-## Content security policy
+## Add allowed mapping URLS to site content security policy directives
 
-For the maps module to interact with the Bing Maps, you must ensure that the following URLs are allowed (otherwise known as whitelisted) per your site's [Content security policy](manage-csp.md). 
+For the maps module to interact with the Bing Maps, you must ensure that the following mapping URLs are allowed (otherwise known as whitelisted) per your site's content security policy (CSP). This is done in Commerce site builder by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
-- To connect-src add &#42;.bing.com
-- To img-src add &#42;.virtualearth.net
-- To script-src add &#42;.bing.com, &#42;.virtualearth.net
-- To script style-src add &#42;.bing.com
+- To the **connect-src** directive, add &#42;.bing.com.
+- To the **img-src** directive, add &#42;.virtualearth.net
+- To the **script-src** directive, add &#42;.bing.com, &#42;.virtualearth.net
+- To the **script style-src** directive, add &#42;.bing.com
 
 ## Add a map module to a page
 
