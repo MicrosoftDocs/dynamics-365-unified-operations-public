@@ -41,7 +41,7 @@ There are three types of readiness checks:
 
 ## Creation of readiness checks
 
-When creating a new engineering product, the system will verify if readiness checks are setup on the engineering product type **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
+When creating a new engineering product, the system will verify if readiness checks are set up on the engineering product type **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
 
 - Readiness checks are created for the product
 - The engineering version is not active. This will block the products from being used

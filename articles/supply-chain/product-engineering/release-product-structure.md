@@ -124,4 +124,4 @@ This behavior is only applicable in case the product is directly selected for re
 
 As an example: product X has product owner group &#39;Design cabinets&#39; assigned. Product X is also part of the bill of material of product Y which has product owner group &#39;Design Speakers&#39; assigned. In case a user of the product owner group &#39;Design Speakers&#39; releases product Y and its bill of material, product X will be released along with it.
 
-For more information on the product owners, see <!-- KFM: Add link -->
+For more information about product owners, see [Product owner](product-owner.md) <!-- KFM: Is this the link you mean? -->

@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Engineering change management
 
-Engineering change management gives you the possibility to have a *structured process to manage changes to engineering products*. There is a structured process for proposing and requesting changes in the *engineering change request* and there is a structured process for making changes in the *engineering change order*. This will allow you to create the engineering change request and engineering change order, have a process for reviewing and approving them, assessing the impact on existing transactions and following up on them.
+Engineering change management provides structured processes for managing changes to engineering products. There is a structured process for proposing and requesting changes in the *engineering change request*, and there is a structured process for making changes in the *engineering change order*. This allows you to create an engineering change request and engineering change order, and then have a process for reviewing and approving them, assessing their impact on existing transactions, and following up on them.
 
 ## Engineering change request
 
-The engineering change request allows you to capture requests for change from all involved departments within the organization. It does not matter if you are an engineer, work in manufacturing, sourcing, warehouse or on a sales department, with the engineering change request anybody can make a request for change. This can be **an idea for a new product, an issue which you discovered while working with the product, a suggestion for improving the product** etcetera. After documenting the request for change, the **review and approval process** will be handled by a workflow in which you can use as an example the **product owner** asan approver. For more information about the workflow see [Workflow system overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/supply-chain/toc.json) and for more information on the product owner, see ….
+The engineering change request allows you to capture requests for change from all involved departments within the organization. It does not matter whether you work as an engineer, or in the manufacturing, sourcing, warehouse, or sales department, with the engineering change request, anybody can request a change. This can be **an idea for a new product, an issue which you discovered while working with the product, a suggestion for improving the product** etcetera. After documenting the request for change, the **review and approval process** will be handled by a workflow in which you can use as an example the **product owner** as an approver. For more information about workflows see the [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). For more information about product owners, see [Product owner](product-owner.md) <!-- KFM: Is this the link you mean? -->
 
 As part of the review of the request for change, you can use the **dependencies** option to assess the impact of the requested change on open transaction like sales orders, production order and inventory on-hand. With the **search** option the system scans all open transactions and you can view them with the **view** option. If the issue that requires a change is found critical, you can already block the open transactions or notify the responsible user via processing the actions.
 
@@ -49,7 +49,7 @@ When the proposal for changes is finished, the **review and approval process** w
 
 Typical stakeholders for approving the engineering change order can be:
 
-- Product owners, for more information, see … (product owners)
+- Product owners, for more information, see [Product owner](product-owner.md) <!-- KFM: Is this the link you mean? -->
 - Responsible team lead: the engineering who created the engineering change order is stored in the **Engineer** field at the header of the engineering change order. In case he is a part of a **team** in the system, the **team leader** of the team will be added in the **responsible** field at the header of the engineering change order
 - Finance department in case the change involves high costs
 
@@ -59,7 +59,7 @@ As part of the review of the request for change, you can use the **dependencies*
 
 ### Engineering change order in engineering organization or operational organization
 
-As described in the … (engineering organization &amp; data ownership rules), there is a difference in which data you can change in a legal entity, based on the engineering organization for the product. These rules are also applied in the engineering change order, so based on the legal entity where you create the engineering change order, different types of changes can be made:
+As described in [Engineering organization and data ownership rules](engineering-org-data-ownership-rules.md), there is a difference in which data you can change in a legal entity, based on the engineering organization for the product. These rules are also applied in the engineering change order, so based on the legal entity where you create the engineering change order, different types of changes can be made:
 
 - **Engineering change order in engineering organization:** you can make basic changes to the engineering data. As examples this includes creating new versions of the products, changing the products structure via the bill of materials, changing engineering attribute values. You can edit the field **impact** and choose between the following options:
   - **None** : an update to the existing version (in-version update)
@@ -88,7 +88,7 @@ You can use the engineering change order report to review what changes are made 
 
 Almost all fields on the engineering change order are the same as on the released products, engineering versions, documents, bill of material (lines) and route (operations). The following fields on the fast tab change information are an exception:
 
-| **Fields** | **Description** |
+| **Field** | **Description** |
 | --- | --- |
 | Engineering change reasons | You can choose the reason for change for the impacted product |
 | Change description | You can provide a description of what the change is about |
