@@ -5,7 +5,7 @@ title: Outbound sorting
 description: This topic provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/10/2020
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-10
+ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
 ---
 
