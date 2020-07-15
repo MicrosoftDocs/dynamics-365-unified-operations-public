@@ -66,7 +66,7 @@ To uptake support for incremental capture as part of back office invoicing, you 
 
 ## IPaymentReferenceProvider
 
-This version of the payment SDK also adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an optional interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
+This version of the payment SDK also adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
 
 Sample implementation from the payments SDK SampleConnector.cs:
 
@@ -102,17 +102,23 @@ Sample of AuthorizeRequest.cs in the payments SDK using PaymentTrackingID:
 
 ## Supports mulitple captures
 
-If a payment processor supports mutiple captures, the authorization responses should have the SupportsMultipleCaptures property set to "True". If the property is set to false or not provided, the authorization will not be eligible for incremental capture and if there is a new balance due after invoicing a new authorization will be obtained. 
+If a payment processor supports mutiple captures, authorization responses from the connector should have the SupportsMultipleCaptures property set to "True". If the property is set to false or not provided, the authorization will not be eligible for incremental capture and if there is a new balance due after invoicing a new authorization will be obtained. 
 
 Sample from AuthorizationResponseProperties.cs from the payments:
 
    ``` xml
- /// <summary>
-        /// Gets the SupportsMultipleCaptures property.
-        /// </summary>
-        public static string SupportsMultipleCaptures
-        {
-            get { return "SupportsMultipleCaptures"; }
-        }
-    ``` 
+     /// <summary>
+            /// Gets the SupportsMultipleCaptures property.
+            /// </summary>
+            public static string SupportsMultipleCaptures
+            {
+                get { return "SupportsMultipleCaptures"; }
+            }
+   ``` 
+
+As the back office invoicing processes captures against authorizations that are multiple capture enabled, the total captured amount will be tracked. Capture requests will continue to reference the original authorization until it has been fully captured.
+
+Authorizations that are expired according to Accounts Receivable parameters are not be eligible for incremental capture. 
+
+The supports multiple captures property is not global, but per authorization, so an environment may have connectors which support incremental capture and those which do not.  
 
