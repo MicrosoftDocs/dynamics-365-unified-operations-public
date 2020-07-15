@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for APAC India GST Localization in 10.0.12 (July 2020)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.11.
+description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.12.
 author: prabhatb
 manager: Wangcheng
 ms.date: 07/15/2020
@@ -118,32 +118,36 @@ Feature can be enabled through feature management:
   
 ## Upcoming fixes in 10.0.13
 
-- In the inter-company transaction one company post sales order and in another company purchase order is generated automatically. However, the location of the buyer company in tax information is not defaulting correctly in the auto generated purchase order. After this fix in the auto generated purchase order tax location of buyer company will default based on warehouse information attached with the purchase order. 
-- When withholding tax transaction is posted in foreign currency than at the time of withholding tax settlement to authority imbalance error will pop up. After this fix user will able to run settlement to authority successfully.  
-- The withholding tax (TCS) is not getting calculated for inter-company purchase return order even after updating the line details. After this fix Withholding tax (TCS) is calculated correctly for Inter-company Purchase return order after updating the line details. 
+- In the inter-company transaction one company post sales order and in another company purchase order is generated automatically. However, the location of the buyer 
+  company in tax information is not defaulting correctly in the auto generated purchase order. After this fix in the auto generated purchase order tax location of 
+  buyer company will default based on warehouse information attached with the purchase order. 
+- When withholding tax transaction is posted in foreign currency than at the time of withholding tax settlement to authority imbalance error will pop up. After this 
+  fix user will able to run settlement to authority successfully.  
+- The withholding tax (TCS) is not getting calculated for inter-company purchase return order even after updating the line details. After this fix Withholding 
+  tax (TCS) is calculated correctly for Inter-company Purchase return order after updating the line details. 
 - Importing data via data entity "Ledger journal line transaction tax information" thrown error: 
+  Results “ Matching record with key 'Registration Number': 29AGNPB4831B1Z1 for the data source 'GSTIN' does not exist” .This fix  will update the 
+  data entity "Ledger journal line transaction tax information" to resolve the issue. 
+- Vendor tax information is imported through data entity form then on refreshing data. System is allowing the user to select more than one primary tax information 
+  details in  vendor tax information. After this fix system will restrict the user to enable more than one primary tax information details for a same vendor. 
+- When customer is trying to do import purchase order the value of IGST tax is not getting displayed in Totals tab after doing purchase order totals 
+  and purchase order invoice. After this fix value of IGST tax will displayed in Totals tab in purchase order and purchase order invoice. However, user has
+  to enable check box in parameter to unable this option.  
+- Field transaction type should be disabled in sales quotation form. User can manually add and update the field transaction type in sales quotation form. If it is 
+  updated to a value except None or Expense, the Customer tax information will be invisible. Through this fix the field Transaction type will  only available
+  for project quotations  and it will  not be available to enable on Sales quotation form. 
+- While posting foreign vendor payment and applied withholding tax of Non-Residence.  If user changes currency rates on transaction, similar exchange rate not 
+  applied for withholding tax calculation. instead it is taking from system. Due to this there is imbalance in posting and stopped posting the transaction. 
+  With this fix vendor payment with TDS in foreign currency transaction will post successfully. 
+ - System is not showing the tax adjusted amount at the time of bill of entry to tax document form of invoice posting form. After this fix system
+   ax amount adjusted in  Bill of entry form will flow and display in tax document of posting Invoice form. 
+-  BOE (Bill of entry) number column is present in Product receipt form but BOE number is not being displayed in the same. After this fix Bill of entry number will 
+   default in lines of product receipt form 
 
-   Results “ Matching record with key 'Registration Number': 29AGNPB4831B1Z1 for the data source 'GSTIN' does not exist” .This fix  will update the data entity "Ledger journal line transaction tax information" to resolve the issue. 
+-  Load on inventory tax  amount posting to Purchase expenditure for expense account instead of  Cost of project account/ Fixed asset account when purchase order placed 
+   with procurement category (Transaction posted with  Project -vendor  or fixed asset – vendor combination ). After this fix tax amount will load to offset account.    
 
-  - Vendor tax information is imported through data entity form then on refreshing data. System is allowing the user to select more than one primary tax information details in vendor tax information. After this fix system will restrict the user to enable more than one primary tax information details for a same vendor. 
- - When customer is trying to do import purchase order the value of IGST tax is not getting displayed in Totals tab after doing purchase order totals and purchase order invoice. After this fix value of IGST tax will displayed in Totals tab in purchase order and purchase order invoice. However, user has to enable check box in parameter to unable this option.  
-
- 
-
-- Field transaction type should be disabled in sales quotation form. User can manually add and update the field transaction type in sales quotation form. If it is updated to a value except None or Expense, the Customer tax information will be invisible. Through this fix the field Transaction type will  only available for project quotations  and it will  not be available to enable on Sales quotation form. 
-
- 
-
--  While posting foreign vendor payment and applied withholding tax of Non-Residence.  If user changes currency rates on transaction, similar exchange rate not applied for withholding tax calculation. instead it is taking from system. Due to this there is imbalance in posting and stopped posting the transaction.  With this fix vendor payment with TDS in foreign currency transaction will post successfully. 
-
- - System is not showing the tax adjusted amount at the time of bill of entry to tax document form of invoice posting form. After this fix system Tax amount adjusted in  Bill of entry form will flow and display in tax document of posting Invoice form. 
-
- 
-
--  BOE (Bill of entry) number column is present in Product receipt form but BOE number is not being displayed in the same. After this fix Bill of entry number will default in lines of product receipt form 
-
--  Load on inventory tax  amount posting to Purchase expenditure for expense account instead of  Cost of project account/ Fixed asset account when purchase order placed with procurement category (Transaction posted with  Project -vendor  or fixed asset – vendor combination ). After this fix tax amount will load to offset account.    
-
- - After posting the import PO invoice still system allows user to create invoice through pending vendor invoice form through product receipt option. With this fix Once import PO invoice posted it will not be available in the pending vendor invoice form through Product receipt option. 
+ - After posting the import PO invoice still system allows user to create invoice through pending vendor invoice form through product receipt option. With 
+   this fix Once import PO invoice posted it will not be available in the pending vendor invoice form through Product receipt option. 
 
  
