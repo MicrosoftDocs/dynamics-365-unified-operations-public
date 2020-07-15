@@ -51,9 +51,10 @@ By default, the credit and collections data for the current company is shown. To
 The following setup needs to be completed for data to display in **Customer credit and collections** Power BI visuals.
 
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
-3. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-4. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
+2. Go to **General Ledger > Calendars > Fiscal calendars** validate fiscal calendar dates assigned to active time period.
+3. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
+4. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
+5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
 
 ## Accessing the Power BI content
 
