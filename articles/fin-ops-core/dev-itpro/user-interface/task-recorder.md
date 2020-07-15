@@ -418,7 +418,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
 
 6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
-8.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
+8.  Browse to the folder that contains the Task recorder extension, navigate to using this path **FMLab-master > FMLab > TaskRecorderScreenshot**, and then select **Select Folder**.
 9.  Make sure that **Enabled** is selected so that extension is turned on.
 10.  Restart the browser.
 
