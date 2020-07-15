@@ -1823,6 +1823,10 @@
             href: pim/tasks/obsolete-product-variants.md
           - name: Exclude products from Master planning
             href: pim/tasks/exclude-products-master-planning.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -2601,6 +2605,9 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+
+          - name: System-directed cluster picking
+            href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
@@ -2617,14 +2624,16 @@
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
-          - name: System-directed cluster picking
-            href: warehousing/system-directed-cluster-pick.md
           - name: System-directed work sequencing
             href: warehousing/system-directed-work-sequencing.md
           - name: Pick line grouping
-            href: warehousing/pick-line-grouping.md 
+            href: warehousing/pick-line-grouping.md
           - name: Warehouse slotting
-            href: warehousing/warehouse-slotting.md 
+            href: warehousing/warehouse-slotting.md
+          - name: Location directive inventory picking aging
+            href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Outbound sorting
+            href: warehousing/outbound-sorting.md
         - name: Replenishment
           items:
           - name: Replenishment overview
