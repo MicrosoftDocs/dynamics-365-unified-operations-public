@@ -6,7 +6,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -38,29 +38,30 @@ This topic covers the store selector module and describes how to add it to site 
 
 ## Overview
 
-A store selector module is used to "Pick-up" a product in a selected store. In 10.0.13, the module includes additional capabilities that allow it to showcase a "Find a Store" page to display available stores.  In this topic, we will discuss how the module can be used in both modes.
+A store selector module is used to by customers to "pick up" a product in a selected store after an online purchase. In Commerce version 10.0.13, the module also includes additional capabilities that can showcase a "Find a Store" page that displays nearby stores.
 
 The store selector module allows the user to input a location (city, state, address etc) to search for stores within a search radius. When the module is launched initially, it uses the customer's browser location (if consent is provided) as the initial location to find stores.
 
 ## Store selector module usage in e-Commerce
 
-- A store selector module can be used on a product details page (PDP) to choose a store for pickup
-- A store selector module can be used on a cart page to select a store for pickup
-- A store selector module can be used on a stand-alone page that shows all available stores 
+- A store selector module can be used on a product details page (PDP) to select a store for pickup.
+- A store selector module can be used on a cart page to select a store for pickup.
+- A store selector module can be used on a standalone page that shows all available stores.
 
 ## Bing Maps integration
 
-The store selector module is integrated with the [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/) for Geocoding and Autosuggest. A Bing Maps API key is required and must be added to the Commerce shared parameters page in Dynamics 365 Commerce. Geocoding application programming interface (API) is used to convert the  location to a latitude and longitude. The Autosuggest API integration is used to show search suggestions as the user types a location on the input box.
+The store selector module is integrated with the [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps application programming interface (API) key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude. The Autosuggest API integration is used to show search suggestions when users enter locations into the search box.
 
-For the Auto-suggest REST API, you need to ensure the following URLs are whitelisted per [Content security policy](manage-csp.md). 
-1.To connect-src add &#42;.bing.com
-1. To img-src add &#42;.virtualearth.net
-1. To script-src add &#42;.bing.com, &#42;.virtualearth.net
-1. To script style-src add &#42;.bing.com
+For the Autosuggest REST API, you must ensure the following URLs are allowed (also know as "whitelisted") per your site's content security policy (CSP). This is done in Commerce site builder by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
+- To the **connect-src** directive, add &#42;.bing.com.
+- To the **img-src** directive, add &#42;.virtualearth.net.
+- To the **script-src** directive, add &#42;.bing.com, &#42;.virtualearth.net.
+- To the **script style-src** directive, add &#42;.bing.com.
+ 
+## "Pickup in store" mode
 
-## Buy online pick-up in store
-The Store selector supports a "Pick-up in store" mode. In this mode, it displays a list of stores where a product is available for pickup, as well as store hours and product inventory for each store in the pick-up mode. Here it requires the context of a product so it can render product availabilty and allow the user to add the product to cart with delivery mode set to pickup at the selected store. For more details on Inventory settings, refer to [Inventory settings](inventory-settings.md). 
+The store selector supports a "Pick up in store" mode that displays a list of stores where a product is available for pickup, as well as store hours and product inventory for each store in the "Pick up in store" mode. Here it requires the context of a product so it can render product availabilty and allow the user to add the product to cart with delivery mode set to pickup at the selected store. For more details on Inventory settings, refer to [Inventory settings](inventory-settings.md). 
 
 The store selector module can be added to a buy box module on the product details page (PDP) to display stores where a product is available for pickup. It can also be added to a cart module. When added to a cart module, the store selector module displays pickup options for each cart line item. In addition, this module can be added to other pages or modules via extensions and customizations.
 
