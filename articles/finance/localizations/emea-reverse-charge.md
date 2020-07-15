@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
@@ -32,6 +32,20 @@ ms.dyn365.ops.version: July 2017 update
 
 
 [!include [banner](../includes/banner.md)]
+
+|                     |  |
+|------------------------------|-------------------|
+| **COUNTRY/REGION**          | EU and GCC|
+| **FEATURE TITLE** | Reverse charge |
+| **FEATURE REFERENCE**                | EUR-00022, AE-00004, SA-00008, BH-00001, KW-00001, OM-00001, QA-00001|
+| **BLUEPRINT CLASSIFICATION**                | TAX: Tax settlement|
+| **CONFIGURABLE**                | No|
+| **INTERNAL REFERENCE**                | 197296, 197878, 431332, 436279, 437167|
+| **FIRST AVAILABLE IN**                | July 2017 update|
+| **FEATURE UPDATE HISTORY**                | TBD |
+| **FEATURE MANAGEMENT**                | TBD |
+| **BUSINESS NEED**                | TBD|
+| **FEATURE DESCRIPTION**                | TBD|
 
 
 This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia, Singapore, and European countries, and GCC.
