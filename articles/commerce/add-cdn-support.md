@@ -84,13 +84,12 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 To configure a back-end pool in Azure Front Door Service, follow these steps.
 
 1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty back-end host header.
-1. Under **Health probes**, in the **Path** field, enter **/keepalive**.
-1. In the **Intervals (seconds)** field, enter **255**.
 1. Under **Load balancing**, leave the default values.
 
 The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service.
 
 ![Add a backend pool dialog box](./media/CDN_BackendPool.png)
+![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
 
 ### Set up rules in Azure Front Door Service
 
@@ -126,14 +125,14 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
+> [!NOTE]
+> The following instructions refer to completing routing setup steps for your site domain. If the domain that you will use is already **active and live**, follow the instructions for [adding a custom domain to your Azure Front Door] ("https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain") instead of the next section CNAME updates.
+
 After this initial configuration is deployed, you must add your custom domain to the configuration for Azure Front Door Service. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
 ![CNAME Configuration dialog box](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> If the domain that you will use is already active and live, contact support to enable this domain with Azure Front Door Service to set up a test.
 
 You can use Azure Front Door Service to manage the certificate, or you can use your own certificate for the custom domain.
 
