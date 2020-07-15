@@ -154,5 +154,5 @@ Prior to reading this section, it is recommended to read through the [Best pract
 | [Commerce Architecture](commerce-architecture.md) |
 | [Select an in-store topology](retail-in-store-topology.md) |
 | [Device management implementation guidance](implementation-considerations-devices.md) |
-| Link to MPOS installer* LINK PENDING |
-| Link to CSU (Self-hosted) installer* LINK PENDING |
+| [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md) |
+| [Configure and install Commerce Scale Unit (self-hosted)](dev-itpro/retail-store-scale-unit-configuration-installation.md) |
