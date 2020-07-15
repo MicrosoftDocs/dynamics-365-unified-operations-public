@@ -131,4 +131,4 @@ configuration:
 
 -   [Move all user and security settings with data entities - By Andre Arnaud De
     Calavon
-    [blog]](https://dynamicspedia.com/2020/05/move-all-user-and-security-settings-with-data-entities/)
+    (blog)](https://dynamicspedia.com/2020/05/move-all-user-and-security-settings-with-data-entities/)
