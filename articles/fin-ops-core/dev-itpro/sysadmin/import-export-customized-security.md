@@ -31,4 +31,107 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-Content goes here.
+The topic provides an overview of how customized security configuration can be
+exported and imported across environments using the [Data management
+framework](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+This can for example be used when the is a need to move customized security
+configuration from a test environment to a production environment.
+
+The following entities holds the customized role-based security, i.e.
+privileges, duties and roles that has been added or modified using Security
+configuration:
+
+-   **Security privilege metadata customization entity**
+
+-   **Security duty metadata customization entity**
+
+-   **Security role metadata customization entity**
+
+**Export customized security configuration**
+--------------------------------------------
+
+1.  Go to **System administration \> Workspaces \> Data management**.
+
+2.  Click the **Export** tile.
+
+3.  Enter a **Group name** and set **Generate data package** to yes.
+
+![](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
+
+>   A screenshot of a computer Description automatically generated
+
+1.  Click the **Add multiple** menu action.
+
+2.  Filter for **Entities** = ‘Security’ and **Entity category** = ‘Master’.
+
+3.  Select ‘Excel’ as **Target data format**.
+
+4.  Select the applicable security customization entities.
+
+5.  Click **Add selected**.
+
+    From version 10.012, ignore any warning messages about data length, they are
+    not applicable since the included entities use containers in data package
+    mode.
+
+6.  Click **Close**.
+
+7.  Make sure that the **Sequence** field value is set in order of the entity
+    dependencies, i.e. first Privileges, then Duties and last Roles.
+
+8.  Click **Export**.
+
+9.  Click **Close**.
+
+10. Wait for the job to complete, click **Refresh** to see the status.
+
+11. Click **Download package**.
+
+12. Save the package
+
+**Import customized security configuration**
+--------------------------------------------
+
+1.  Go to **System administration \> Workspaces \> Data management**.
+
+2.  Click the **Import** tile.
+
+3.  Enter a **Group name**.
+
+4.  Click **Add file**.
+
+5.  Click **Upload and add**.
+
+6.  Locate the exported package and click **Open.**
+
+    From version 10.012, ignore any warning messages about data length, they are
+    not applicable since the included entities use containers in data package
+    mode.
+
+7.  Click **Close**.
+
+8.  Click **Import**.
+
+9.  Click **Close**.
+
+10. Wait for the job to complete, click **Refresh** to see the status.
+
+**Related security configuration entities:**
+--------------------------------------------
+
+-   **SystemSecurityUserRoleOrganizationEntity**: assignment of organizations to
+    security roles.
+
+-   **Security segregation of duties rule**: segregation of duties rules.
+
+-   **Security segregation of duties conflict**: segregation of duties
+    conflicts. This entity has unresolved, but also reviewed conflicts.
+
+**Additional resources**
+------------------------
+
+-   <https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job>
+
+-   [Move all user and security settings with data entities - By Andre Arnaud De
+    Calavon
+    [blog]](https://dynamicspedia.com/2020/05/move-all-user-and-security-settings-with-data-entities/)
