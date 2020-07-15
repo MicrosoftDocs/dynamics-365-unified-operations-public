@@ -82,7 +82,7 @@ The following image shows an example of a store selector module used on a store 
 
 ## Render a map
 
-The module can be used with the map module to render the store locations visually on a map. For more information on the map module, see [Map module](add-map-module.md)
+The module can be used with the map module to render the store locations visually on a map. For more information on the map module, see [Map module](map-module.md)
 
 ## Store selector module properties
 
@@ -147,4 +147,4 @@ To configure the store selector module to display available stores for a store l
 
 [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/)
 
-[Maps module](add-map-module.md)
+[Maps module](map-module.md)
