@@ -174,7 +174,7 @@ The sorting template controls whether sort positions are created, what criteria 
         - **Only use empty position** – Positions that already have inventory associated with them will be taken into account
         - **Assume position empty** – Any inventory that is already on the position will be disregarded during assignment. All available positions will be used.
 
-    - **Wave step code:** *Sort* 
+    - **Wave step code:** *Sort*
 
         If the *Organization wide wave step code* feature is turned on, the *Sort* wave step code must also be set up in wave step codes.
 
@@ -214,7 +214,7 @@ The sorting template controls whether sort positions are created, what criteria 
 1. On the Action Pane, select **Outbound sorting template breaks**.
 1. Select the **Group by field** check box to group by shipment ID.
 
-    This setting will create one sort position per shipment that is container in the wave.
+    This setting will create one sort position per shipment that is a container in the wave.
 
 1. Select **OK**.
 
@@ -345,13 +345,13 @@ You must create location directives to guide the work that is created after the 
 1. In the **Work Template Details** section, you will create two lines. Select **New**, and then set the following values for line 1:
 
     - **Work type:** *Pick*
-    - **Mandatory:** *Yes* (selected)
+    - **Mandatory:** Selected (= *Yes*)
     - **Work class ID:** *Sorting*
 
 1. Select **New** again, and then set the following values for line 2:
 
     - **Work type:** *Put*
-    - **Mandatory:** *Yes* (selected)
+    - **Mandatory:** Selected (= *Yes*)
     - **Work class ID:** *Sorting*
 
 1. Select **Save**.
@@ -360,8 +360,7 @@ You must create location directives to guide the work that is created after the 
 
 This scenario simulates a situation where the warehouse stores small items in locations and must pack them into boxes before they are shipped, and where packing station functionality isn't really suitable. Workers pick orders for multiple customers and different addresses at the same time to increase the picking speed. After picking has been completed, the workers arrive at the sorting location, where the picked items can be sorted to the correct box, based on required criteria. In this example, the shipment ID will be used to determine the correct box, because each shipment has a different address. After all items from the load are packed and sorted by shipment, the boxes will be moved to the staging area and eventually loaded onto a truck.
 
-Before you start the scenario, make sure that all standard warehouse functionality is set up correctly for your warehouse. Standard Contoso warehouse 
-*62* is used for this purpose. Standard configurations haven't been changed, besides what is described in the setup.
+Before you start the scenario, make sure that all standard warehouse functionality is set up correctly for your warehouse. Standard Contoso warehouse *62* is used for this purpose. Standard configurations haven't been changed, besides what is described in the setup.
 
 ### Create demand
 
@@ -452,7 +451,7 @@ Complete the following procedure to release each sales order to the warehouse. T
 
     During wave processing, the sorting method will use the sorting template to assign the inventory to sort positions. When wave processing is completed, you receive an informational message that states that the wave has been posted and work has been created.
 
-1. On the Action Pane, in the **Related information** group, select **Work** to view the work that was created. Make a note of the work ID.
+1. On the Action Pane, on the **Wave** tab, in the **Related information** group, select **Work** to view the work that was created. Make a note of the work ID.
 1. Go to **Warehouse management \> Packing and containerization \> Outbound sorting position assignments**.
 1. In the left column, you can view the outbound sorting position that was created for each shipment.
 1. On the **Sort position criteria** FastTab, you can view the shipment ID for that position.
@@ -501,7 +500,7 @@ Now that all inventory has been put to the sorting location, it must be sorted t
 
     Because the sort position is related to the shipment ID, you will sort the picked items into a license plate that is specific to the outbound shipment and sales order.
 
-    The next page shows the item ID, quantity, sort position ID, and the "from" and "to" license plate IDs. The information on this page instructs you to sort the specified item and quantities from the picking license plate into the sorting license plate.
+    The next page shows the item ID, quantity, sort position ID, and the "from" (picking) and "to" (sorting) license plate IDs. The information on this page instructs you to sort the specified item and quantities from the picking license plate into the sorting license plate.
 
 1. Confirm the sort position.
 1. Sort the items in the first sort position. When you've finished, the system directs you to the next sort position.
@@ -512,7 +511,7 @@ Now that all inventory has been put to the sorting location, it must be sorted t
     > [!NOTE]
     > If automatic sorting is turned on, manual override isn't available.
 
-1. When you've finished, open the **Outbound sorting position assignments** page to review the status of the positions.
+1. When you've finished, in Microsoft Dynamics 365 Supply Chain Management, open the **Outbound sorting position assignments** page to review the status of the positions.
 
     - If positions are closed automatically, select **Show closed** to show the closed positions.
     - Notice that sort position transactions are shown. The item and quantity that were processed through the position are shown.
@@ -533,9 +532,9 @@ If sort positions should be closed manually, the **Auto close sort position** op
     - The user can scan one of the items that are already on the position and then select **Close** to close the position.
     - If the user scans a container that has already been sorted container, an error message is shown. However, the user can still continue to close the position.
 
-- From the **Outbound sorting position assignments** page:
+- From the Microsoft Dynamics 365 Supply Chain Management **Outbound sorting position assignments** page:
 
-    - The user can select the outbound sorting position record and then select **Close position** on the toolbar.
+    - The user can select the outbound sorting position record and then select **Close position** on the Action Pane.
 
 ## Tips
 
