@@ -165,6 +165,18 @@ If the dashboard doesn't open after package deployment is completed, a run-time 
 1. Start Event Viewer.
 2. Navigate to **Applications and Services Logs** > **Microsoft** > **Dynamics** > **Ax-SystemRuntime** > **Operational Filter by errors**, see whether there are any errors, and investigate the errors as required.
 
+### Issue: A critical component has encountered an error processing your reuest. Error code: DSUxxxxx.
+
+**Description**
+
+If you received an error that contains the error code of **DSUxxxxx**. It indicases that there's an intermittent outage in the udnerlying Microsoft API but it's expected to be matigated soon. 
+
+
+**Action**
+
+Your environment is healthy and you can try the request again later. 
+
+
 ## Typical database synchronization issues
 If you see the following step failure, a database synchronization issue might be occurring: "GlobalUpdate script for service model: AOSService"
 
