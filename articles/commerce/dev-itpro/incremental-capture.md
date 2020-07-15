@@ -85,6 +85,5 @@ namespace Microsoft.Dynamics.Retail.PaymentSDK.Portable
         PaymentTransactionReferenceData GetPaymentReferenceData(string command, decimal amount);
     }
 }
-
     ```
 
