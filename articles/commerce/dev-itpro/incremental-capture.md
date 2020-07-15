@@ -56,3 +56,35 @@ To address these issues, incremental capture support is being added to the payme
 
 The first part of adding support for incremental capture is to add support for incremental capture as part of back office invoicing, meaning any invoicing happening as part of order fulfillment in the back office. In a future release, incremental capture support will also be added to the out of box Adyen payment connector as captures that occur from the point of sale. 
 
+## Enable the incremental capture for back office invoicing feature
+
+In the back office, search for **Feature management**. In the feature management workspace, click the **All** filter to list all available features, then search for **Extensibility to support incremental credit card capture**. Select the feature and click **Enable now**. 
+
+## Uptake incremental capture for back office invoicing
+
+To uptake support for incremental capture as part of back office invoicing, you will also need to upgrade to the payments SDK provided as part of 10.0.13. 
+
+This version of the payment SDK adds the IPaymentReferenceProvider interface. The IPaymentReferenceProvider interface is an optional interface that supports using a PaymentTrackingID to each request and response. The PaymentTrackingID can be used to track payment requests and ensure that, between back office invoicing requests and the processor, duplicate requests can be caught before they are resent, thus reducing duplicate payments. 
+
+    ``` xml
+namespace Microsoft.Dynamics.Retail.PaymentSDK.Portable
+{
+    using Microsoft.Dynamics.Retail.PaymentSDK.Portable.Constants;
+    /// <summary>
+    /// IPaymentReferenceProvider interface.
+    /// </summary>
+    public interface IPaymentReferenceProvider
+    {
+        /// <summary>
+        /// Get the payment providers reference to safe guard against duplicate requests.
+        /// </summary>
+        /// <param name="command">The payment opertion that will uses the tracking id.</param>
+        /// <param name="amount">The payment transaction amount.</param>
+        /// <returns>Returns the PaymentTransactionReferenceData.</returns>
+        /// <remarks>List of supported commands can be seen in the constants defined in <see cref="Microsoft.Dynamics.Retail.PaymentSDK.Portable.Constants.SupportedCorrelationCommands"/></remarks>
+        PaymentTransactionReferenceData GetPaymentReferenceData(string command, decimal amount);
+    }
+}
+
+    ```
+
