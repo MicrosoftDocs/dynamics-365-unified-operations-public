@@ -5,7 +5,7 @@ title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 07/06/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -119,7 +119,13 @@ For example, in the error at the top of this page, ITEMTAXGROUPID is the read-on
 
 **RetailReadOnlyExempt_CartLineData : ITEMTAXGROUPID**  
 
+Additionally, to exempt more than one column for a given entity, use a comma as the separator for column names. The configuration name/value pair in this case would look like this:
+
+**RetailReadOnlyExempt_CartLineData : TAXAMOUNT,TOTALAMOUNT**
+
 > [!NOTE]
-> ITEMTAXGROUPID is the column name of the property, not the actual property name.
+> ITEMTAXGROUPID, TAXAMOUNT, TOTALAMOUNT are the column names of the properties in the examples above, not the actual property names.
+
+
 
 After adding the config run job 1110 to push this change.
