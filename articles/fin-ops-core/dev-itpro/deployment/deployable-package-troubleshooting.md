@@ -165,16 +165,17 @@ If the dashboard doesn't open after package deployment is completed, a run-time 
 1. Start Event Viewer.
 2. Navigate to **Applications and Services Logs** > **Microsoft** > **Dynamics** > **Ax-SystemRuntime** > **Operational Filter by errors**, see whether there are any errors, and investigate the errors as required.
 
-### Issue: A critical component has encountered an error processing your reuest. Error code: DSUxxxxx.
+### Issue: A package application failed with error code : DSU#####
 
 **Description**
 
-If you received an error that contains the error code of **DSUxxxxx**. It indicases that there's an intermittent outage in the udnerlying Microsoft API but it's expected to be matigated soon. 
-
+If you received an error of **A critical component has encountered an error processing your reuest. Error code: DSU#####** or similar. The error code of **DSU#####** indicases that there's a temporary outage happening in the udnerlying Microsoft API.  This type of outage may also impact the Database movement functionality. 
 
 **Action**
 
-Your environment is healthy and you can try the request again later. 
+Microsoft is proactively monitoring the service status and this type of outage is expected to be matigated shortly. 
+There's no impact on the status and the health of your environment. 
+If you expereince this error when scheduling a service reqeust or performing Database movement task, please try again at a later time. 
 
 
 ## Typical database synchronization issues
