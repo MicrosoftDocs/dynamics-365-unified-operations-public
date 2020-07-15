@@ -68,7 +68,7 @@ This version of the payment SDK adds the IPaymentReferenceProvider interface. Th
 
 Sample IPaymentReferenceProfider from the payments SDK:
 
-    ``` xml
+   ``` xml
     namespace Microsoft.Dynamics.Retail.PaymentSDK.Portable
     {
         using Microsoft.Dynamics.Retail.PaymentSDK.Portable.Constants;
@@ -87,7 +87,7 @@ Sample IPaymentReferenceProfider from the payments SDK:
             PaymentTransactionReferenceData GetPaymentReferenceData(string command, decimal amount);
         }
     }
-    ```
+   ```
 
 Sample authorization request using PaymentTrackingID:
 
