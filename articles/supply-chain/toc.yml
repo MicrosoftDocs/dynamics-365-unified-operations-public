@@ -2605,7 +2605,6 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
-
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
