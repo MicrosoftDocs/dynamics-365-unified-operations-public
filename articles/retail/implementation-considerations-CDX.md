@@ -70,15 +70,11 @@ When a job is run (Scheduler job), the channel database group (Channel database 
 
 Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various forms are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
-**Insert data configuration flow diagram (Commerce Architecture - Forms flow (PNG, Need newer one))**
-[Channel database](./media/NAMENAMENAME.png)
+[Commerce Data Exchange - Association Map](./media/Commerce Data Exchange - Association Map.png)
+This visual showcases the various forms in Headquarters (Previously described in this document) and how they associate to one another.  When fully configured across all of the forms shown, CDX data generation will be able to occur.  Data synchronization occurs in two forms, download and upload.  CDX data generation is required for downloads.  Point of Sale data generated while offline requires data synchronization upload.
 
-This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
-
-**Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
 [Commerce Architecture - Data Synchronization](media/Commerce Architecture - Data Synchronization.jpg)
-
-This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
+This visual showcases the download and upload data flows.  Data packages generated through CDX flow downward from Headquarters to the Commerce Scale Unit and to Modern POS offline databases.  Transactional data flows upward from the Modern POS offline databases to Commerce Scale Unit and Headquarters.
 
 ### Overview of package management
  - Review that packages are created and showcased in Download sessions
@@ -115,36 +111,13 @@ On the **Scheduler job**, setting this field to **Yes** stops all generated data
 Last, this feature is the first steps into row-level filtering. On the **Commerce channel schema** (Navigate to **Retail and Commerce > Headquarters setup > Commerce scheduler > Channel database group** and then select the **Commerce channel schema** value (The default value is **AX7**) to navigate to this page) headquarters form, there is a field titled **Filter shared customer data tables**. Configuring this new field will flag all customer data in shared tables.  This configuration only functions for standard Microsoft created tables (Tables that are not custom created). Setting this field to **Yes** will create a pop-up that states **This will remove customer data from the records in the channel data distribution only. All schedule jobs that contain customer data also need to be marked to skip offline synchronization.** with the options to select **Yes** or **No**. This pop-up is to remind the user that all customer data jobs (By default, this is only the 1010 job) must also be configured to **Exclude from offline databases** as specified above.  As an example of this filtering, the table **DIRPARTYTABLE** is used for both customers and employees, so this filtering will flag all customer records at the row level to not be synchronized to offline databases.  When combined with the previously explained job exclusion, all customer data will be excluded from synchronization to offline databases.
 
 ## Implementation considerations
-This section describes some things that you should consider as you plan to implement features that are related to data management and configuration.  It is highly valuable to additionally read through the [Best practices](CDX-Best-Practices.md) document.
+This section describes configurations that should be considered as implementation planning begins. The features showcased here are related to data management and data configuration. It is highly valuable to additionally read through the [Best practices](CDX-Best-Practices.md) document prior to following the guidance showcased in this sub-heading.
 
-**TOPICS**
-Prior to reading this section, it is recommended to read through the [Best practices](CDX-Best-Practices.md) document.  Many of the points made here are based on various features and practices detailed in this document and related documents.
- - Timing of jobs... Create a schedule
-   - Specify when to use **Pause offline synchronzation**
- - When to use **Allow manual switch to offline before login** and **Enable advanced offline switching**
-   - Specify how the **System health check interval (min)** works, compare against the **Reconnect attempt interval (min)**
- - How to cut away data from offline synchronization (Based on Data sizing improvements)
-   - Specify job and subjob ability to cut away and when it applies to all (Subjob) and when it applies only to subset (Job)
-   - Specify what can and cannot be cut from offline (OPEN QUESTION)
-   - Specify the steps to remove customers completely from offline DBs
-..... additional topics?
-
-**Review implementation considerations**
- - Have at least one separate channel database group for offline DBs
- - Have a "Data Calendar", specifying when data is pushed and how it all lines up so that it does not occur:
-   - When system is already loaded with calls
-   - When system is already loaded with statement posting or other Headquarters workloads
-   - When too much data is being generated at the same time
- - Minimize data pushed to offline DBs to minimize offline size, generate additional database groups (As required) to further cut down on data sizes
- - 
-
-
-
-**OPEN QUESTIONS IN THIS DOC NEEDING ANSWERS**
- - Verify Working folders are no longer required with Commerce Batch Service (Azure Batch for now)
- - What data can be cut from offline DBs and it will still work correctly for sales (CREATE SEPARATE DOC FOR FEATURE)
- - Review the logic around download session retry and cut (Need Daniel / Yonas assistance here)
-
+ - **Create a Scheduler job calendar** - How often will each job occur?  How many times per day will each job occur?  Will large, non-critical jobs occur only during off-hours when the overall environment is not in heavy use?  Create a calendar (Physical or virtual to preference) to assist with knowing the details of how jobs will intersect with other performance impacting workloads like statement posting, hours of operation, batch processing for external data, and any customizations that could push or pull data at specified times (Or maybe frequently across the day just like a CDX job).
+ - **Pause offline synchronization** - This **Offline profile** configuration should be used to its fullest abilities as a retail organization expands.  Growing is good and data generation should be managed to minimize performance impact on the currently operating business.  This feature can allow creation of channels and registers and databases without requiring massive performance impacting data generation long before the registers will ever be used.
+ - **Advanced offline** - Utilizing the previously described advanced offline features can be helpful if it fits in with the priorities and values of the retail organization.  It is valuable to utilize the advanced health check interval to maximize online time, however, this functionality will also be more forceful in pushing the register to offline if Headquarters (Or the Commerce Scale Unit) becomes unresponsive or unavailable for any reason.  Maximizing the performance of registers by quickly switching to offline (And not waiting for timeouts or repeated retry responses) can be very valuable but this must be understood and managed against the standard seamless offline model that attempts to stay online as long as possible (Allowing for operations like loyalty, additional payment methods, and customer orders). 
+ - **Offline data exclusion** - Simply put, a small dataset is typically faster than a large dataset.  Excluding data that is not relevant to the functionality of the offline database is valuable in reducing the overall database size (For example, SQL Express only allows for a 10GB database) as well as minimizing what data is queried as part of general operations while offline by the POS terminal. This feature changes heavily based upon the business requirements of the retail organization, so it is critical to know what data is necessary for customizations to function or even the data necessary for standard day to day operations. For example, if a customer is not critical to be attached to a transaction, then customers could be excluded from the offline databases.  How about **Loyalty information** or **Modes of delivery**? **OPEN QUESTIONS ON TABLES TO EXCLUDE!!!!!!!**
+ - **Channel database groups** - At a minimum, two channel databse groups should exist.  One for the initial Commerce Scale Unit (Cloud) in use and one for any (Or all) offline databases in use.  In large retail enterprises, there could potentially be more than one offline focused channel database group (Separated by similarity of data within their associated channels (Stores)).  Additionally, it is useful to have a dummy channel database group for purposes of being able to configure new channel databases, registers with offline support (offline databases would be created), and potentially new but unused Commerce Scale Units (Either Cloud or Self-hosted). This dummy group would not be associated to any **Distribution schedule** jobs, therefore no data generation would ever occur for anything associated to it. As time and the implementation progresses, the associated entities (Channel (Store), register offline databases, etc.) would be re-associated to the correct database group. A great (and arguably better) alternative to this is to utilize the **Pause offline synchronization** feature explained previously.
 
 ## Resources
 | Links |
