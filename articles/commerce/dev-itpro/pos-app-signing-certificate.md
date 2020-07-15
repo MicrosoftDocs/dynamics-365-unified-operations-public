@@ -67,7 +67,7 @@ Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild
 5. Save the variable.
 6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the Azure DevOps pipeline (step 3). For example:
     ```Xml
-    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile</ModernPOSPackageCertificateKeyFile>
+    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile)</ModernPOSPackageCertificateKeyFile>
     ```
 
 ## Download or generate a certificate to sign the MPOS app
