@@ -76,7 +76,7 @@ Data is generated and flows in a very specific way (Download or upload).  It is 
 This diagram shows the different forms in Headquarters and how the configuration flow functions together to be able to generate data... ADD MORE INFO TO DESCRIBE.
 
 **Insert data sync flow diagram (Commerce Architecture - Data Synchronization (JPG))**
-[Commerce Architecture - Data Synchronization](./media/Commerce Architecture - Data Synchronization.jpg)
+[Commerce Architecture - Data Synchronization](media/Commerce Architecture - Data Synchronization.jpg)
 
 This diagram shows the direction and flow of data to be synchronized downward from Headquarters and the transactional data to be flowed upwards... ADD MORE INFO TO DESCRIBE.
 
