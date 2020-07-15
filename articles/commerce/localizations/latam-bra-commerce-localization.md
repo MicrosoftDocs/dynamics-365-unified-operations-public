@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes **the scope for the Commerce functionality in Microsoft Dynamics 365 Commerce that are specific to Brazil**. This software includes features and functionality that is being designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that commonly affect retail businesses in Brazil (limited to the scope of Brazilian localization published [here](../../financials/localizations/latam-bra-scope.md)).
+This topic describes **the scope for the Commerce functionality in Microsoft Dynamics 365 Commerce that are specific to Brazil**. This software includes features and functionality that is being designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that commonly affect retail businesses in Brazil (limited to the scope of Brazilian localization published [here](../../financials/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 
 However, Microsoft Dynamics doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. Additional details are available in the [Localization Availability Guide](https://aka.ms/ax-availabilityguide).
 
