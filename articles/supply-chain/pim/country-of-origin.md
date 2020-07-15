@@ -5,7 +5,7 @@ title: Country of origin
 description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. This topic provides information about the country of origin feature, which lets you link a product to its country of origin and keep track of its product certifications.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: damadipa
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.13
+ms.search.validFrom: 2020-07-15
+ms.dyn365.ops.version: Release 10.0.9
 ---
 
 # Country of origin
+
+[!include [banner](../includes/banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. The country of origin feature lets you link a product to its country of origin and keep track of its product certifications.
 

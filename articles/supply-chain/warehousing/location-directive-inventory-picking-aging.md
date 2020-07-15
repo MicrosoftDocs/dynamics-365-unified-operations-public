@@ -5,7 +5,7 @@ title: Location directive inventory picking aging
 description: This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: mirzaab
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Retail, Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
 ---
 
 # Location directive inventory picking aging
+
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
 

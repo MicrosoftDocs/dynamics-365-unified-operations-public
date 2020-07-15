@@ -5,7 +5,7 @@ title: Dual-use goods
 description: This topic explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: damadipa
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.13
+ms.search.validFrom: 2020-07-15
+ms.dyn365.ops.version: Release 10.0.9
 ---
 
 # Dual-use goods
+
+[!include [banner](../includes/banner.md)]
 
 Dual-use goods are typically items that have both civilian and military applications. For example, a chemical might be used as either a fertilizer or an explosive. Many countries have special regulations that apply to the export, import, and transportation of dual-use goods. Therefore, it's important that companies that are involved in the international trade of dual-use goods keep track of the various policies and certificates.
 
