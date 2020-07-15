@@ -107,12 +107,12 @@ If a payment processor supports mutiple captures, the authorization responses sh
 Sample from AuthorizationResponseProperties.cs from the payments:
 
    ``` xml
-     /// <summary>
-           /// Gets an Id the Payment Gateway assigns to the transaction.
-           /// </summary>
-           public static string BankTransactionId
-           {
-               get { return "BankTransactionId"; }
-           }
+ /// <summary>
+        /// Gets the SupportsMultipleCaptures property.
+        /// </summary>
+        public static string SupportsMultipleCaptures
+        {
+            get { return "SupportsMultipleCaptures"; }
+        }
     ``` 
 
