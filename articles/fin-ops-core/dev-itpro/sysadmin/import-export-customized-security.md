@@ -55,7 +55,7 @@ configuration:
 
 3.  Enter a group name and set **Generate data package** to **Yes**.
 
-    ![](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
+    ![Select Generate data package](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
 
 4.  Select the **Add multiple** menu.
 
