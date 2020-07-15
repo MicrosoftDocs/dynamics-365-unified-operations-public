@@ -173,7 +173,7 @@ The dashboard is often the first page you see when you open the app. It can be p
 
 One unique personalization capability on the dashboard is the ability to add tiles. 
 
--  If the **Full-page apps** feature is not turned on, you add a new tile by right-clicking on an element on the dashboard and selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile as you want. You can also add lists, tiles, and links to the workspace as described in the [Adding lists, tiles, or links to workspaces](#adding-a-tile-list-or-link-to-a-workspace) section of this topic.
+-  If the **Full-page apps** feature is not turned on, you add a new tile by right-clicking on an element on the dashboard and selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile as you want. You can also add lists, tiles, and links to the workspace as described in the [Adding lists, tiles, or links to workspaces](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) section of this topic.
 -  If the **Full-page apps** feature is turned on, you add a new tile by right-clicking on an element on the dashboard and selecting **Add an app**. In the dialog box, choose whether you want to add a tile for a new workspace or a tile with content from Power Apps or a website. Follow the steps to configure the option you selected. Afterwardsm a new tile is created at the bottom of the dashboard. 
 
 ## Sharing personalizations
