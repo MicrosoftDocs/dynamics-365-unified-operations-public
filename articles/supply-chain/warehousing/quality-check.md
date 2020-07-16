@@ -60,8 +60,6 @@ This section provides guidelines and an example of how to set up this feature an
 
 To work through the [example scenario](#example-scenario) using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
 
-You can also use this example as guidance for how to use this feature when working on a production system, but then you must substitute your own values for each setting described here.
-
 <a name="quality-template"></a>
 
 ### Quality check template
