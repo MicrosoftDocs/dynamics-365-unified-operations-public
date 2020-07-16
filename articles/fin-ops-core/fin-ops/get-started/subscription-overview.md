@@ -65,3 +65,8 @@ If you don't deallocate and delete the existing environments before you suspend 
 ## Can I have a CSP agreement and a Volume Licensing agreement in parallel?
 
 Yes. However, you must maintain the minimum required number of licenses under each program.
+
+## How can a user find the tenant ID with in LCS?
+1. Go to project home page in LCS.
+2. Click on **subscriptions available** button.
+3. On **Subscriptions avaialble** page you can find the **tenant id** and the **tenant name**.
