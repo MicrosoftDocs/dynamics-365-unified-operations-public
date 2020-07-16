@@ -4,8 +4,8 @@
 title: Change work pool on work
 description: This topic explains how you can use the Change work pool button for work items to change the work pool of existing work.
 author: mirzaab
-manager: AnnBe
-ms.date: 02/01/2020
+manager: tfehr
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Retail, Core, Operations
 ms.search.region: global
 # ms.search.industry:
 ms.author: mirzaab
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
 ---
 
 # Change work pool on work
+
+[!include [banner](../includes/banner.md)]
 
 You can use work pools to organize work into groups. For example, you can create a work pool to classify work that occurs in a specific warehouse location.
 
