@@ -68,7 +68,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 6. Working with customer orders on POS.
 7. Calculating and posting fiscal documents in Retail statements in HQ.
 
-	
+## Brazilian localization features
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Is not currently planned |
 |----------------------------------------------------------------------|----------------|---------------------------|---------|--------------------------|
 | Retail product management, tax setup and calculation                 |       +        |                           |         |                          |
@@ -89,7 +89,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 | N-1 support for upgrade from Microsoft Dynamics AX 2012 R3           |                |                           | +       |                          |
 | E-commerce capabilities for Brazil                                   |                |                           | +       |                          |
 | CNPJ/CPF in customer master records merge in a call center           |                |                           | +       |                          |
-| PAF-ECF fiscal printers                                              |                |                           |         | +                        |
 | Retail fiscal documents in *fiscal book statements**                 |                |                           |         | +                        |
+| PAF-ECF fiscal printers                                              |                |                           |         | +                        |
     
 \* *Fiscal book statements - SPED Fiscal, SPED Contributions and ICMS-ST compensation and restitution statements for the supported states.*
