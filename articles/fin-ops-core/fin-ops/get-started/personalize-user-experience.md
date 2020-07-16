@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how you can personalize the app and covers the following: 
 
--  **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zome. 
+-  **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zone. 
 -  **Restricted personalization access** – With this access level, user actions associated with typical page usage are automatically saved by the app and restored the next time you visit the page. For example, the app will remember the width of grid columns if you adjust them as well as the expanded or collapsed state of FastTabs. 
 -  **Full personalization access** – With this access level, users have access to all personalization capabilities in the app, in particular the Personalization toolbar. 
 -  **Sharing personalizations** – Users with full personalization access can export their page personalizations and share them other users.
--  **Adminstration of personalizations** – Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
+-  **Administration of personalizations** – Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
 
 ## System-wide options for the current user
 
@@ -58,7 +58,7 @@ In addition to changing your user settings, you can also view and delete your us
 
 ## Restricted personalization access (formerly implicit personalizations)
 
-With **restricted personalization access**, user actions associated with typical page usage are automatically rememembered by the app and restored the next time you visit the page. No explicit save action is required for these items to be remembered. 
+With **restricted personalization access**, user actions associated with typical page usage are automatically remembered by the app and restored the next time you visit the page. No explicit save action is required for these items to be remembered. 
 
 Here is the list of actions that fall under typical page usage and are covered by restricted personalization access: 
 
