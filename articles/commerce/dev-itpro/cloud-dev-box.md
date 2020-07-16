@@ -70,7 +70,7 @@ If you don’t have admin access in the environment, you will not be able to tes
 6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in **step 8**.
 7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
 8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
-9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the defalut **IISURL** node value to your Cloud POS URL.
+9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL.
 ```    
     Ex:  <IISUrl>https://YourCPOSURL.com</IISUrl>
 ```
