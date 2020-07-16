@@ -69,4 +69,4 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 ## How can I find the Tenant name and Tenant Id with in LCS?
 1. Go to project home page in LCS
 2. Under **Environments** section, click on **Subscriptions available** button.
-3. On **Subscriptions available** page you can find the **Tenant name** and the **Tenant Id**.
+3. On **Subscriptions available** page, you will find the **Tenant name** and the **Tenant Id**.
