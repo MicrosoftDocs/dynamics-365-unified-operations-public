@@ -38,9 +38,9 @@ Saved views are an important expansion of personalization capabilities Finance a
 ## “User-perceived” pages
 Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user’s perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 
 
-Saved views tries to eliminate this confusion by allowing users to create views on “user-perceived” pages, which eliminates the need to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:  
+Saved views try to eliminate this confusion by allowing users to create views on “user-perceived” pages, which eliminate the need to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:  
 
--    **More than one “user-perceived” page in a single modeled form**: The standard modeling of Master Details and Transaction Details forms (like the **CustTable** and **PurchTable** forms, respectively) consist of more than one “user-perceived” page: a grid page and a details page. 
+-    **More than one “user-perceived” page in a single modeled form**: The standard modeling of Master Details and Transaction Details forms (like the **CustTable** and **PurchTable** forms, respectively) consists of more than one “user-perceived” page: a grid page and a details page. 
 
      Because users are not aware when this transition from list to details crosses a form boundary (nor do they need to know this), view support in Details forms is handled differently to allow views to be defined separately for the grid and details portions. This means that the view selector for the “grid” and “details” can show different sets of available views. The special casing of view support on these forms also allows the “grid” views to allow filters in their view definitions, whereas the “details” view only need personalizations.
 
@@ -79,7 +79,7 @@ While most forms will work well with saved views, there are some areas that may 
      -    To make sure custom filters work properly with saved views, additional work needs to be done by the platform and there will likely be uptake by forms with custom filters. More information will be provided in the future when the recommended approach has been finalized. 
 
 -    Looking forward, in the long-term, views are meant to replace modeled secondary list pages.  
-     -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point at the same form but have a different query. Because menu items that pass in queries will override any query defined on the default view, these entry points can create confusion for users. Long-term, the current plan is to deprecate secondary list pages and move them to views; however, that effort has not been started yet. 
+     -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point at the same form but have a different query. Because menu items that pass in queries will override any query defined on the default view, these entry points can create confusion for users. Long term, the current plan is to deprecate secondary list pages and move them to views; however, that effort has not been started yet. 
 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
