@@ -82,7 +82,7 @@ The following image shows an example of a store selector module used on a store 
 
 ## Render a map
 
-The module can be used with the map module to render the store locations visually on a map. For more information on the map module, see [Map module](map-module.md)
+The store selector module can be used with the map module to render the store locations visually on a map. For more information on the map module, see [Map module](map-module.md)
 
 ## Store selector module properties
 
@@ -99,7 +99,7 @@ The module can be used with the map module to render the store locations visuall
 
 ## Add a store selector module to a page
 
-For "pick up in store" mode, the module can only be used on PDP and cart pages. In addition, you must set the **Mode as Pick up in store** in the module's property pane.
+For "pickup in store" mode, the module can only be used on PDP and cart pages. In addition, you must set the mode as **Pickup in store** in the module's property pane.
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
@@ -123,7 +123,7 @@ To configure the store selector module to display available stores for a store l
 1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
 1. In the module's properties pane, set the **Mode** value to **Find stores**.
 1. In the module's properties pane, set the **Search radius** value in miles.
-1. In the module's properties pane, set other properties such as **Set as preferred store**, **View all stores**, and **Autosuggest options** as needed.
+1. In the module's properties pane, set other properties such as **Set as preferred store**, **Show all stores**, and **Enable auto suggestion** as needed.
 1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Map** module, and then select **OK**.
 1. In the module's properties pane, set any additional properties as needed.
