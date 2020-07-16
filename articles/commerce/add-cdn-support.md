@@ -126,9 +126,9 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
 > [!NOTE]
-> **Warning:** The following instructions refer to completing routing setup steps for your site domain. If the domain that you will use is already **active and live**, first create a support ticket using the "New support request" in the Azure Portal. Then follow the instructions for [adding a custom domain to your Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain) instead of the next section CNAME updates.
+> **Warning:** If the domain that you will use is already **active and live**, create a support ticket using the new Support Ticket for Dynamics Commerce to assist in next steps.
 
-After this initial configuration is deployed, you must add your custom domain to the configuration for Azure Front Door Service. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
+If your domain is **new**, and is **not a pre-existing live domain**, you can add your custom domain to the configruation for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
@@ -139,6 +139,9 @@ You can use Azure Front Door Service to manage the certificate, or you can use y
 The following illustration shows the **Custom Domain HTTPS** dialog box in Azure Front Door Service.
 
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
+
+
+Azure Front Door also has detailed instructions for [adding a custom domain to your Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain)
 
 Your CDN should now be correctly configured so that it can be used with your Commerce site.
 
