@@ -66,7 +66,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 4. Cancellation by substitution.
 5. Issuing gift cards, payments by gift cards.
 6. Working with customer orders on POS.
-7. Calculationg and posting fiscal documents in Retail statements in HQ.
+7. Calculating and posting fiscal documents in Retail statements in HQ.
 
 	
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Is not currently planned |
