@@ -44,15 +44,11 @@ The SDK packages.json file that is included in the SDK root directory controls w
 
 ```json
 
-...
-
 "dependencies": {
     "@msdyn365-commerce-modules/starter-pack": "9.20.8",
     "@msdyn365-commerce-modules/fabrikam-design-kit": "9.20.8",
     "@msdyn365-commerce/retail-proxy": "9.20.2",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-
-...
 
 ```
 
@@ -68,15 +64,12 @@ SDK dependencies are backward-compatible and can be pulled down at any time. The
 Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, they can be updated at any time. The tilde (\~) symbol can be used with version numbers to ensure that any patch versions that might include software updates are always pulled down. The following example shows how the tilde is used to pull down the latest patch version.
 
 ```json
-...
 
 "dependencies": {
     "@msdyn365-commerce-modules/starter-pack": "~9.21.0",
     "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.21.0",
     "@msdyn365-commerce/retail-proxy": "~9.21.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-
-...
 
 ```
 
