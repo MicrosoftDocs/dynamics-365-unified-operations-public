@@ -5,7 +5,7 @@ title: File upload control
 description: This topic provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
