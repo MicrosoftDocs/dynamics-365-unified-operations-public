@@ -52,7 +52,7 @@ The following image shows examples of iframe modules showcasing external videos 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
 | Heading | Text | Heading for the module. |
-| Target URL| URL to be hosted within the module. |
+| Target URL| URL | The URL to be hosted within the module.
 | Height| Number or percentage| The height of the module defined in pixels or percentage. For example, the number "100" will be treated as pixels and "100%" will be treated as a percentage. |
 | Aria label| Text | An aria label can be defined for accessibilty purposes. |
 
