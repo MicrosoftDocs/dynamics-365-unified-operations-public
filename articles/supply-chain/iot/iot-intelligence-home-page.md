@@ -4,7 +4,7 @@
 title: IoT Intelligence home page
 description: This topic provides links to information about IoT Intelligence.
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: 
