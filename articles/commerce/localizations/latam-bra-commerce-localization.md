@@ -50,19 +50,22 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 - Generation of electronic fiscal documents CF-e (Cupom Fiscal eletrônico) for retail sales in São Paulo (model 59) and registration of the electronic fiscal documents in the SAT fiscal device. 
 - EFT integration for POS, including integration with popular local and global payment providers, support of debit and credit card payments.
 - Management of Brazil-specific customer registration numbers from point of sale (POS), including entering, viewing, and modifying the registration numbers of CNPJ/CPF or Foreigner ID, and registration this numbers in NFC-e/NF-e/CF-e and printed receipts. 
-- Postponed registration of fiscal documents in case of network failures (offline contingency mode) and subsequent transmission of NFC-e/NF-e in contingency from HQ.
+- Postponed registration of fiscal documents in case of network failures (offline contingency mode) and subsequent transmission of NFC-e/NF-e in contingency from Headquarters (HQ).
 - Control of fiscal documents in HQ, NFC-e discard, cancellation by substitution.
 - Generation and submission of NFC-e/NF-e for customer orders.
 - Issuing Linked NF-e over all types of registered fiscal documents.
 - N-1 support, enabling customers running Microsoft Dynamics AX 2012 R3 in their stores to work with Microsoft Dynamics 365 Commerce headquarters after an upgrade.
 - Support for Brazil-specific fields, such as tax registration numbers CNPJ/CPF, when merging customer master records in a call center.
 
-### Supported *POS-scenarios in brick-and-mortar stores*:
-1. Cash-and-carry sales of goods
-2. Cancellations and returns of cash-and-carry sales of goods
-3. Cash-and-carry sales of goods in offline mode - contingency
-4. Cancellation by substitution
-5. Issuing gift cards, payments by gift cards
+### Supported scenarios:
+1. Cash-and-carry sales of goods.
+2. Cancellations and returns of cash-and-carry sales of goods.
+3. Cash-and-carry sales of goods in offline mode - contingency.
+4. Cancellation by substitution.
+5. Issuing gift cards, payments by gift cards.
+6. Working with customer orders on POS.
+7. Calculationg and posting fiscal documents in Retail statements in HQ.
+
 	
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Is not currently planned |
 |----------------------------------------------------------------------|----------------|---------------------------|---------|--------------------------|
@@ -81,7 +84,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 | EFT integration (advanced capabilities, additional provider(s))      |                |                           | +       |                          |
 | Fiscal documents for POS customer orders                             |                |                           | +       |                          |
 | NF-e linked to NFC-e / CF-e, DANFE                                   |                |                           | +       |                          |
-| N-1 support                                                          |                |                           | +       |                          |
+| N-1 support for upgrade from Microsoft Dynamics AX 2012 R3           |                |                           | +       |                          |
 | E-commerce capabilities for Brazil                                   |                |                           | +       |                          |
 | CNPJ/CPF in customer master records merge in a call center           |                |                           | +       |                          |
 | PAF-ECF fiscal printers                                              |                |                           |         | +                        |
