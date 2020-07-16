@@ -5,7 +5,7 @@ title: Item consolidation - location utilization
 description: This topic provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/25/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-25
-ms.dyn365.ops.version: Release 10.0.9
+ms.search.validFrom: 2020-07-16
+ms.dyn365.ops.version: Release 10.0.7
 ---
 
 # Item consolidation - location utilization
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the **Item Consolidation** page to consolidate items and therefore make better use of warehouse space.
 
