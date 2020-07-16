@@ -40,11 +40,11 @@ No. The Commerce evaluation environment is only for evaluation. If you require a
 
 **Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**
 
-No (mostly). The Commerce evaluation components are only available to environments that match the configurations specified in the prerequisites and provisioning guide. Additionally, environments deployed with an initial release earlier than 10.0.8 will not have the required base demo data available. 
+No (mostly). The Commerce evaluation components are available only to environments that match the configurations that are specified in the prerequisites and provisioning guide. Additionally, the required base demo data won't be available in environments that were deployed with an initial release that is earlier than 10.0.8. 
 
 **What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
-A traditional Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce headquarters demo environment (VM) will be hosted in your Azure subscription. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
+A traditional Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce headquarters demo environment (virtual machine \[VM\]) will be hosted in your Azure subscription. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
 
 Other components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site will be available as software as a service (SaaS) and hosted by Microsoft.
 
@@ -62,7 +62,7 @@ The Commerce evaluation environment has a 30-day time limit from the date when S
 
 **Can I extend the time limit for my Commerce evaluation environment?**
 
-Extension of the time limit is exceptional to the norm and considered on a case-by-case basis. You should reach out to your Microsoft partner contact for assistance.
+Extension of the time limit is an exception to the norm and is considered on a case-by-case basis. You should reach out to your Microsoft partner contact for assistance.
 
 ## Additional resources
 
