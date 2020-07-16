@@ -125,8 +125,8 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
-> [!NOTE]
-> **Warning:** If the domain that you will use is already **active and live**, create a support ticket using the new Support Ticket for Dynamics Commerce to assist in next steps.
+> [!WARNING]
+> If the domain that you will use is already **active and live**, create a support ticket using the new Support Ticket for Dynamics Commerce to assist in next steps.
 
 If your domain is **new**, and is **not a pre-existing live domain**, you can add your custom domain to the configruation for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
