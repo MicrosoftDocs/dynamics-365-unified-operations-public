@@ -214,6 +214,7 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
         }
 
     }
+    ```
 
 ## Frequently asked questions
 
