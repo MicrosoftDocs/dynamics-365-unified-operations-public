@@ -38,7 +38,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
       - name: Set up a Dynamics 365 Commerce evaluation environment
         items:
-        - name: Dynamics 365 Commerce preview evaluation overview
+        - name: Dynamics 365 Commerce evaluation environment overview
           href: cpe-overview.md
         - name: Provision a Dynamics 365 Commerce evaluation environment
           href: provisioning-guide.md
