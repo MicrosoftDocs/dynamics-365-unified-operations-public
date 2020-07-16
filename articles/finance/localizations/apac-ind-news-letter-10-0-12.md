@@ -40,7 +40,6 @@ The previous version of newsletters are available on Microsoft Docs and can be d
 
 (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-news-letter-10-0-00)   
 
-Please note that we are going to stop the circulation of the upcoming newsletter through e-mail and future version of the newsletter will be published directly on Microsoft docs.  
 
 ## New features
 
