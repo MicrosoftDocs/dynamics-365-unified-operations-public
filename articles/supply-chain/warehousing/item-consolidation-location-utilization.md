@@ -205,7 +205,7 @@ The following scenario uses the warehouse app on a mobile device to make an inve
 
 1. Go to **Warehouse management \> Work \> Work details**.
 1. View the work that was created. Use the movement work ID from the inventory consolidation to filter or search the work grid.
- 
+
     In this scenario, an existing location that had inventory was used as the inventory consolidation location. Therefore, only one work ID was created.
 
     > [!NOTE]
