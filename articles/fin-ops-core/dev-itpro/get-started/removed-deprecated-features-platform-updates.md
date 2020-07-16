@@ -62,7 +62,7 @@ This list is intended to help you consider these removals and deprecations for y
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control.  
-| **Replaced by another feature?**   | The new grid control  |
+| **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md)  |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the new grid control is generally available and customers can optionally enable this feature. The new grid feature will be mandatory with the October 2021 release. Additionally, the forceLegacyGrid() API will no longer be honored when the new grid control becomes mandatory. |
