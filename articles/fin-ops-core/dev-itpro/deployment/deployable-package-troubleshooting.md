@@ -169,14 +169,15 @@ If the dashboard doesn't open after package deployment is completed, a run-time 
 
 **Description**
 
-If you received an error of **A critical component has encountered an error processing your request. Error code: DSU#####** or similar. The error code of **DSU#####** indicates that there's a temporary outage happening in the underlying Microsoft API.  This type of outage may also impact the Database movement functionality. 
+You may receive an error stating **A critical component has encountered an error processing your request. Error code: DSU#####**, or similar. The error code of **DSU#####** indicates that there's a temporary outage happening in the underlying Microsoft API.  This type of outage may also impact database movement functionality. 
 
 **Action**
 
-Microsoft is proactively monitoring the service status and this type of outage is expected to be mitigated shortly. 
-There's no impact on the status and the health of your environment. 
-If you experience this error when scheduling a service request or performing Database movement task, please try again at a later time. 
+Microsoft is proactively monitoring the service status and this type of outage is expected to be mitigated shortly.
 
+There's no impact on the status and the health of your environment. 
+
+If you experience this error when scheduling a service request or performing a database movement task, please try again at a later time. 
 
 ## Typical database synchronization issues
 If you see the following step failure, a database synchronization issue might be occurring: "GlobalUpdate script for service model: AOSService"
