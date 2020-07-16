@@ -49,8 +49,8 @@ The SDK packages.json file that is included in the SDK root directory controls w
     "@msdyn365-commerce-modules/fabrikam-design-kit": "9.20.8",
     "@msdyn365-commerce/retail-proxy": "9.20.2",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-...
 }
+...
 ```
 
 - **@msdyn365-commerce-modules/starter-pack** – This entry represents the SSK, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
@@ -71,8 +71,8 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
     "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.21.0",
     "@msdyn365-commerce/retail-proxy": "~9.21.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-...
 }
+...
 ```
 
 The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit.
