@@ -5,7 +5,7 @@ title: Configure a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
 manager: annbe
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Configure a Dynamics 365 Commerce evaluation environment
-
 
 [!include [banner](includes/banner.md)]
 
@@ -157,6 +156,8 @@ To configure optional features for your Commerce evaluation environment, see [Co
 [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
 [Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
+
+[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
 
 [Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
 
