@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how you can personalize the app and covers the following: 
 
--  **System-wide options**. These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zome. 
--  **Restricted personalization access** With this access level, user actions associated with typical page usage are automatically saved by the app and restored the next time you visit the page. For example, the app will remember the width of grid columns if you adjust them as well as the expanded or collapsed state of FastTabs. 
--  **Full personalization access** With this access level, users have access to all personalization capabilities in the app, in particular the Personalization toolbar. 
--  **Sharing personalizations** Users with full personalization access can export their page personalizations and share them other users.
--  **Adminstration of personalizations** Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
+-  **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zome. 
+-  **Restricted personalization access** – With this access level, user actions associated with typical page usage are automatically saved by the app and restored the next time you visit the page. For example, the app will remember the width of grid columns if you adjust them as well as the expanded or collapsed state of FastTabs. 
+-  **Full personalization access** – With this access level, users have access to all personalization capabilities in the app, in particular the Personalization toolbar. 
+-  **Sharing personalizations** – Users with full personalization access can export their page personalizations and share them other users.
+-  **Adminstration of personalizations** – Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
 
 ## System-wide options for the current user
 
@@ -109,7 +109,7 @@ The property window might include other personalization capabilities, depending 
 
 If you want to make multiple changes to a page, or make changes that aren't available through other mechanisms (for example, if you want to reorder elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, follow one of these steps:
 
-- Press **Ctrl+Shift+P** from any element on the page
+- Press **Ctrl+Shift+P** from any element on the page.
 - Select **Personalize this page** in an element's property window.
 - Select **Personalize this page** in the **Personalize** group on the **Options** tab of any page's Action Pane.
 - Select the **Settings** button (the gear symbol) on the navigation bar, and then select **Personalize**.
