@@ -5,7 +5,7 @@ title: Put to wall - put to store
 description: This topic provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
 author: Mirzaab
 manager: tfehr
-ms.date: 06/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,11 +23,13 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-16
+ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
 ---
 
 # Put to wall - put to store
+
+[!include [banner](../includes/banner.md)]
 
 The *Put to wall - put to store* functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. Because this functionality allows for picking to a single target license plate and can use more put positions than cluster picking, companies that ship to stores or handle small items will benefit from decreased picking time.
 

@@ -2633,6 +2633,8 @@
             href: warehousing/location-directive-inventory-picking-aging.md
           - name: Outbound sorting
             href: warehousing/outbound-sorting.md
+          - name: Put to wall - put to store
+            href: warehousing/put-to-wall-put-to-store.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2727,6 +2729,8 @@
             href: warehousing/work-line-details.md
           - name: Location license plate positioning
             href: warehousing/location-license-plate-positioning.md
+          - name: Change work pool on work
+            href: warehousing/change-work-pool-on-work.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
