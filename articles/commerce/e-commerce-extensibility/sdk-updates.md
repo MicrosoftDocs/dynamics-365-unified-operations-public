@@ -43,13 +43,17 @@ Regular updates will be released as part of the Dynamics 365 Commerce online SDK
 The SDK packages.json file that is included in the SDK root directory controls which versions of the SDK, SSK, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
 
 ```json
+
 ...
+
 "dependencies": {
     "@msdyn365-commerce-modules/starter-pack": "9.20.8",
     "@msdyn365-commerce-modules/fabrikam-design-kit": "9.20.8",
     "@msdyn365-commerce/retail-proxy": "9.20.2",
     "@msdyn365-commerce/bootloader": "^1.0.0",
+
 ...
+
 ```
 
 - **@msdyn365-commerce-modules/starter-pack** – This entry represents the SSK, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
