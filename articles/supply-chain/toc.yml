@@ -2731,6 +2731,8 @@
             href: warehousing/location-license-plate-positioning.md
           - name: Change work pool on work
             href: warehousing/change-work-pool-on-work.md
+          - name: Item consolidation - location utilization
+            href: warehousing/item-consolidation-location-utilization.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
