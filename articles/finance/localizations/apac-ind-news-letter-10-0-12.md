@@ -61,58 +61,86 @@ This feature introduces the following improvements in the Stock transfer order f
 
 Feature can be enabled through feature management:  
 
-![](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
+![](media/GST-feature-management-1-10-0-12.png)
 
 *** New parameter under Inventory management:***  
 
 ### Inventory & warehouse management > Setup> Parameters > Transfer orders   
 
-![](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
+![](media/GST-inventory-parameter-2-10-0-12.png)
 
 *** Enable stock transfer for master planning :***  
 
 ### Master planning > Parameter > Transfer type  
 
-![](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
+![](media/GST-master-planning-3-10-0-12.png)
 
 ## Critical fixes 
 
-- Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt): Tax was computing on the new HSN code percentage and causing Revenue loss to the Customer instead of making the Transfer order before the change in the HSN code percentage.   
+- Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt): Tax was computing on the new HSN code percentage and 
+  causing Revenue loss to the Customer instead of making the Transfer order before the change in the HSN code percentage.   
 
-- Tax information fields are not getting updated automatically when we copied from the original free text invoice. After this fix When user copy the lines from the original invoice line after defined tax information system is expected to update the tax information related fields in the copied lines for free text invoice. Also, tax document will display the tax amount correctly.   
+- Tax information fields are not getting updated automatically when we copied from the original free text invoice. After this fix When user copy the lines from the 
+  original invoice line after defined tax information system is expected to update the tax information related fields in the copied lines for free text invoice. 
+  Also, tax document will display the tax amount correctly.   
 
-- The issue was when the Invoice Journal is posted with TDS. Users reverse the one transaction line from vendor transaction form and adjust withholding tax through General journal. When run Withholding tax payment getting error. This issue is fixed because the issue was occurring because the vendor invoice journal with TDS is not getting the ledger account through the table "TaxWHTransGeneralJournalAccountEntry  
+- The issue was when the Invoice Journal is posted with TDS. Users reverse the one transaction line from vendor transaction form and adjust withholding tax through 
+  General journal. When run Withholding tax payment getting error. This issue is fixed because the issue was occurring because the vendor invoice journal with 
+  TDS is not getting the ledger account through the table "TaxWHTransGeneralJournalAccountEntry  
 
-- In multi-line invoice Journal when the transaction date is modified, in the tax document only first line is updated with the latest correction date.  All the lines must be updated with the latest transaction date.  
+- In multi-line invoice Journal when the transaction date is modified, in the tax document only first line is updated with the latest correction date. 
+  All the lines must be updated with the latest transaction date.  
 
-- When we try to post the general journal entry by using Account type as project and offset Account type as a vendor with the load on inventory and Reverse charge percentage 100%. The system is not allowing to post the entry and throwing an error as “the transaction on voucher INMF-00545 do not balance as per 3/25/2020 (Accounting currency: -2500, Reporting currency: -2500)”.  After this fix If posting the Project entry with the load on inventory and reverse charge percentage from the General journal system will allow posting without any imbalance error  
+- When we try to post the general journal entry by using Account type as project and offset Account type as a vendor with the load on inventory and Reverse 
+  charge percentage 100%. The system is not allowing to post the entry and throwing an error as “the transaction on voucher INMF-00545 do not balance as 
+  per 3/25/2020 (Accounting currency: -2500, Reporting currency: -2500)”.  After this fix If posting the Project entry with the load on inventory and reverse 
+  charge percentage from the General journal system will allow posting without any imbalance error  
 
-- Removed/inactive addresses are appearing again under Location on Tax Information form of Invoices that are generated through Invoice Journal/ Free Text Invoice. After this fix Removed/Inactive addresses will not appear again under location on the tax information form  
+- Removed/inactive addresses are appearing again under Location on Tax Information form of Invoices that are generated through Invoice Journal/ Free Text Invoice.
+  After this fix Removed/Inactive addresses will not appear again under location on the tax information form  
 
 - Lookup Condition linked to two different component measure owners  
 
-- Voucher details are not showing in the posted journal during the process of settling the Post-dated Cheque in the customer environment. After this fix Line will show on the grid.  
+- Voucher details are not showing in the posted journal during the process of settling the Post-dated Cheque in the customer environment.
+  After this fix Line will show on the grid.  
 
-- Getting error message while posting invoice journal with multiple lines with TDS where exchange rate changed after creating lines in the invoice journal. After this fix System will post Invoice Journal (Multiline) transaction successfully including TDS where the exchange rate is changed after creating will lines in Invoice Journal. The system will pick the latest defined exchange rate for the whole transaction.  
+- Getting error message while posting invoice journal with multiple lines with TDS where exchange rate changed after creating lines in the invoice journal. 
+  After this fix System will post Invoice Journal (Multiline) transaction successfully including TDS where the exchange rate is changed after creating
+  will lines in Invoice Journal. The system will pick the latest defined exchange rate for the whole transaction.  
 
-- WHT tax group is not editable during invoice processing in India Legal Entity when posting transaction through Pending Invoice form.  After this fix TDS/ TCS group will be editable in Purchase order pending invoice form for the line. User will be able to update the TDS/ TCS related fields in pending invoice form during invoicing.  
+- WHT tax group is not editable during invoice processing in India Legal Entity when posting transaction through Pending Invoice form. 
+  After this fix TDS/ TCS group will be editable in Purchase order pending invoice form for the line. User will be able to update the TDS/ TCS related fields
+  in pending invoice form during invoicing.  
 
-- The system allows deleting the source details in the GST number sequence group. After this fix System will not allow deleting the source details in the GST reference number sequence group if attached to a transaction. If the user does not attach with the transaction and allowed to delete the source details than the user will be allowed to add it again.  
+- The system allows deleting the source details in the GST number sequence group. After this fix System will not allow deleting the source details
+  in the GST reference number sequence group if attached to a transaction. If the user does not attach with the transaction and allowed to delete 
+  the source details than the user will be allowed to add it again.  
 
-- Charges are not auto-updated in assessable value on the sales order line when user apply charges through Auto charges functionality. if the user marks assessable value checkbox in auto-charge setup. Charges are not auto-updating on the sales order line to include charge amount in the assessable value of goods. After this fix Charges will be auto-updated on the sales order line when user mark assessable value field in Auto charges setup and it will be part of the assessable value for tax calculation  
+- Charges are not auto-updated in assessable value on the sales order line when user apply charges through Auto charges functionality.
+  if the user marks assessable value checkbox in auto-charge setup. Charges are not auto-updating on the sales order line to include charge amount
+  in the assessable value of goods. After this fix Charges will be auto-updated on the sales order line when user mark assessable value field in 
+  Auto charges setup and it will be part of the assessable value for tax calculation  
 
-- Importing the general journal lines with tax through data import-export feature successfully but on verification of tax document, it is showing empty tax information for imported general journal transaction. To fix this issue updated the data entity "Ledger journal line transaction tax information".  
+- Importing the general journal lines with tax through data import-export feature successfully but on verification of tax document, it is showing empty
+  tax information for imported general journal transaction. To fix this issue updated the data entity "Ledger journal line transaction tax information".  
 
-- When balancing financial dimension is updated in ledger form and the financial dimension is not set in the authority vendor, the user is getting the error: The transactions on voucher xxx do not balance as per xxx” This message is misleading. Under this fix when balancing the financial dimension is updated in ledger form, an error message will appear to check whether the financial dimension is set in the authorized vendor.   
+- When balancing financial dimension is updated in ledger form and the financial dimension is not set in the authority vendor, the user is getting the error:
+  The transactions on voucher xxx do not balance as per xxx” This message is misleading. Under this fix when balancing the financial dimension is updated 
+  in ledger form, an error message will appear to check whether the financial dimension is set in the authorized vendor.   
 
-- When create a new customer, it write a record TaxInformationCustTable_IN  with TaxInformationCustTable_IN.CustTable='', and then update it with the customer account number. When the second step cancelled by exception, the first step will not roll back and left the record there. it blocks to create customer later, because of column TaxInformationCustTable_IN.CustTable is a unique index of the table. It should not save the record with TaxInformationCustTable_IN.CustTable=''. After this fix when the CustTable field exists, records can be inserted into the related table.  
+- When create a new customer, it write a record TaxInformationCustTable_IN  with TaxInformationCustTable_IN.CustTable='', and then update 
+  it with the customer account number. When the second step cancelled by exception, the first step will not roll back and left the record there.
+  it blocks to create customer later, because of column TaxInformationCustTable_IN.CustTable is a unique index of the table.
+  It should not save the record with TaxInformationCustTable_IN.CustTable=''. After this fix when the CustTable field exists, records can be inserted into the related table.  
 
-- BOE Assessable value is not updating as per Purchase order line Assessable value. After this fix  When a user creates new BOE after the cancellation of earlier one, the new Bill of entry will display the updated assessable value of import order line.  
+- BOE Assessable value is not updating as per Purchase order line Assessable value. After this fix  When a user creates new BOE after the cancellation
+  of earlier one, the new Bill of entry will display the updated assessable value of import order line.  
 
 - Importing data via data entity "Ledger journal line transaction tax information" thrown following  2 errors:  
 
           a. Matching record with key 'Registration Number': 29AGNPB4831B1Z1 for the data source 'GSTIN' does not exist  
-          b. update not allowed for field 'TransTaxInformationEntity.TaxWithholdNatureOfAssessee' Under this fix updated the data entity "Ledger journal line transaction tax information" to resolve this.   
+          b. update not allowed for field 'TransTaxInformationEntity.TaxWithholdNatureOfAssessee' Under this fix updated the data entity "Ledger journal
+             line transaction tax information" to resolve this.   
 
   
 ## Upcoming fixes in 10.0.13
@@ -129,22 +157,22 @@ Feature can be enabled through feature management:
   details  in vendor tax information. After this fixed system will restrict the user to enable more than one primary tax information details for the same vendor.
 - Vendor tax information is imported through data entity form then on refreshing data. The system is allowing the user to select more than one primary tax information 
   details in vendor tax information. After this fixed system will restrict the user to enable more than one primary tax information details for the same vendor.
--  When a customer is trying to do import purchase order the value of IGST tax is not getting displayed in the Totals tab after doing purchase order totals and 
+- When a customer is trying to do import purchase order the value of IGST tax is not getting displayed in the Totals tab after doing purchase order totals and 
   purchase order invoice. After this fixed value of IGST tax will display in Totals tab in purchase order and purchase order invoice. However, the user has to
   enable checkbox in parameter to enable this option.
--  Field transaction type should be disabled in the sales quotation form. User can manually add and update the field transaction type in the sales quotation form.
-   If it is updated to value except None or Expense, the Customer tax information will be invisible. Through this fix, the field Transaction type will only available for
--  While posting foreign vendor payment and applied the withholding tax of Non-Residence. If the user changes currency rates on transaction, a similar exchange rate
-   not applied for withholding tax calculation. instead, it is taking from the system. Due to this, there is an imbalance in posting and stopped posting the transaction.  
-   With this fix vendor payment with TDS in foreign currency, the transaction will post successfully.
--  The system is not showing the tax-adjusted amount at the time of bill of entry to tax document form of the invoice posting form. After this fixed system axe 
-   amount adjusted in Bill of entry form will flow and display in tax document of posting Invoice form.
--  BOE (Bill of entry) number column is present in Product receipt form but BOE number is not being displayed in the same. After this fix, Bill of entry number 
-   will default in lines of product receipt form
--  Load on inventory tax amount posting to Purchase expenditure for expense account instead of Cost of project account/ Fixed asset account when purchase order 
-   placed with procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination ). After this fix tax amount will load to offset account.
--  After posting the import PO invoice still, the system allows user to create an invoice through pending vendor invoice form through product receipt option. 
-   With this fix Once import PO invoice posted it will not be available in the pending vendor invoice form through Product receipt option.
+- Field transaction type should be disabled in the sales quotation form. User can manually add and update the field transaction type in the sales quotation form.
+  If it is updated to value except None or Expense, the Customer tax information will be invisible. Through this fix, the field Transaction type will only available for
+- While posting foreign vendor payment and applied the withholding tax of Non-Residence. If the user changes currency rates on transaction, a similar exchange rate
+  not applied for withholding tax calculation. instead, it is taking from the system. Due to this, there is an imbalance in posting and stopped posting the transaction.  
+  With this fix vendor payment with TDS in foreign currency, the transaction will post successfully.
+- The system is not showing the tax-adjusted amount at the time of bill of entry to tax document form of the invoice posting form. After this fixed system axe 
+  amount adjusted in Bill of entry form will flow and display in tax document of posting Invoice form.
+- BOE (Bill of entry) number column is present in Product receipt form but BOE number is not being displayed in the same. After this fix, Bill of entry number 
+  will default in lines of product receipt form
+- Load on inventory tax amount posting to Purchase expenditure for expense account instead of Cost of project account/ Fixed asset account when purchase order 
+  placed with procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination ). After this fix tax amount will load to offset account.
+- After posting the import PO invoice still, the system allows user to create an invoice through pending vendor invoice form through product receipt option. 
+  With this fix Once import PO invoice posted it will not be available in the pending vendor invoice form through Product receipt option.
 
 
  
