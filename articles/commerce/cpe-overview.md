@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce evaluation environment overview
 description: This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
 manager: annbe
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Dynamics 365 Commerce evaluation environment overview
-
 
 [!include [banner](includes/banner.md)]
 
@@ -63,6 +62,8 @@ To provision the Commerce evaluation environment, see [Provision a Commerce eval
 [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
 [Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md)
+
+[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
 
 [Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
 
