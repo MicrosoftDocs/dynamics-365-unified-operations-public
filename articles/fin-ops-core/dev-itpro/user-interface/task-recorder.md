@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -204,9 +204,9 @@ The **Validate** gesture lets you insert a step that validates the value of the 
 -   **Current value validation** will capture the targeted control's value at the time of recording and use it to generate an assertion in the test code. In the list of validation options on the shortcut menu, **Current value** is always first.
 -   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options on the shortcut menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
 
-Additional options are available in 10.0.13 / Platform update 37 and later including
+Additional options are available in version 10.0.13 and later, including:
 -   **Enabled**/**Disabled** will validate that the targeted control's state is enabled or disabled and use it to generate an assertion in the test code.
--   **Read-only**/**Editable** will validate the targeted contro's state is read-only or editable and use it to generate an assertion in the test code.  
+-   **Read-only**/**Editable** will validate that the targeted control's state is read-only or editable and use it to generate an assertion in the test code.  
 
 ### Add info step
 
@@ -418,7 +418,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
 
 6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
-8.  Browse to the folder that contains the Task recorder extension, navigate to using this path **FMLab-master > FMLab > TaskRecorderScreenshot**, and then select **Select Folder**.
+8.  Browse to the folder that contains the Task recorder extension, using this path **FMLab-master > FMLab > TaskRecorderScreenshot**, and then select **Select Folder**.
 9.  Make sure that **Enabled** is selected so that extension is turned on.
 10.  Restart the browser.
 
