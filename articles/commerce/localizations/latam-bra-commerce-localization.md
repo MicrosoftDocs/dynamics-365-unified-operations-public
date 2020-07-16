@@ -30,14 +30,15 @@ ms.dyn365.ops.version: 10.0.13
 # Commerce localization for Brazil
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes **the scope for the Commerce functionality in Microsoft Dynamics 365 Commerce that are specific to Brazil**. This software includes features and functionality that is being designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that commonly affect retail businesses in Brazil (limited to the scope of [Brazilian localization](../../financials/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 
 However, Microsoft Dynamics doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. Additional details are available in the [Product localization and translation availability Guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 ## Prerequisites
-1. Submission of Brazilian business documents (listed below) is conducted throug [Electronic invoicing](../../financials/localizations/e-invoicing-get-started.md) service. Configuration steps and the process of submitting a NFC-e fiscal document is similar with described at the article [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
-2. Formats for electronic documents in accordance with the legal requirements of Brazil are configured using [Electronic reporting tool](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting).
+1. Submission of Brazilian business documents (listed below) is conducted throug [Electronic invoicing](e-invoicing-get-started.md) service. Configuration steps and the process of submitting a NFC-e fiscal document is similar with described at the article [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
+2. Formats for electronic documents in accordance with the legal requirements of Brazil are configured using [Electronic reporting tool](general-electronic-reporting.md).
 
 ## Brazilian Commerce localization capabilities
 
