@@ -5,7 +5,7 @@ title: Extend Commerce Data Exchange - Real-time Service
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -128,7 +128,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 After you've finished building your new extension methods, the project will be deployed.
 
 ## Call the new method from the CRT
-1.  In your commerce runtime (CRT) extenson, include the Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages nuget package, if it hasn't already been added.
+1.  In your commerce runtime (CRT) extension, include the Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages nuget package, if it hasn't already been added.
 2.  Use the following sample code to call the new method.
 
     ```C#
