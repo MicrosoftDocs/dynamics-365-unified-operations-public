@@ -60,21 +60,13 @@ This feature introduces the following improvements in the Stock transfer order f
 - The feature also restricts changing Unit of measure in stock transfer order lines. 
 
 Feature can be enabled through feature management:  
-
 ![](media/GST-feature-management-1-10-0-12.png)
-
 *** New parameter under Inventory management:***  
-
 ### Inventory & warehouse management > Setup> Parameters > Transfer orders   
-
 ![](media/GST-inventory-parameter-2-10-0-12.png)
-
 *** Enable stock transfer for master planning :***  
-
 ### Master planning > Parameter > Transfer type  
-
 ![](media/GST-master-planning-3-10-0-12.png)
-
 ## Critical fixes 
 
 - Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt): Tax was computing on the new HSN code percentage and 
