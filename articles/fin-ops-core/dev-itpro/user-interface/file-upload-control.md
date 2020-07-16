@@ -85,7 +85,7 @@ In particular, the **FileUploadResultBase** class exposes the **delegateScanStre
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the handler. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
 
-    ```X++
+    ```xpp
     public final class ScanDocuments
     {
 
