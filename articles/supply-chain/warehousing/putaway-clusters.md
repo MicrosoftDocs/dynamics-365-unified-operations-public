@@ -35,71 +35,77 @@ Putaway clusters are a way to pick multiple license plates at once and take them
 
 ## Setup for the example scenario
 
-The setup does not include the standard warehouse configuration required for processing of the inbound flow. Make sure that is set up correctly before processing the example scenario.
+<!-- HHM: The setup does not include the standard warehouse configuration required for processing of the inbound flow. Make sure that is set up correctly before processing the example scenario. -->
 
-### Putaway cluster profiles
+### Cluster profiles
 
-Go to **Advanced Warehouse management \> Setup \> Mobile device \> Putaway clusters**. The Putaway cluster profile determines where the item will go based on the location assigned to the item at receipt. If different clusters are needed, different Putaway clusters should be created, one for each mobile device menu item.
+The Putaway cluster profile determines where the item will go based on the location assigned to the item at receipt. If different clusters are needed, different Putaway clusters should be created, one for each mobile device menu item.
 
-In the **Header**, specify the following:
+1. Go to **Advanced Warehouse management \> Setup \> Mobile device \> Cluster profiles**.
+1. Select **New** in the Action Pane.
+1. In the **Header**, enter the following:
 
-- **Putaway Cluster profile ID** – _Cluster putaway_
-- **Putaway Cluster profile ID Name** – _Cluster putaway_
-- **Cluster type** – _Putaway_
+    - **Putaway Cluster profile ID** – *Cluster putaway*
+    - **Putaway Cluster profile ID Name** – *Cluster putaway*
+    - **Cluster type** – *Putaway*
+    - **Sequence number** - *Accept default*
 
-On the **General** FastTab, specify the following:
+1. Select **Save** to enable the required fields on the **General** FastTab.
+1. On the **General** FastTab, specify the following:
 
-- **Assign putaway cluster at receipt** – _No_
-  - If _Yes_ and if Putaway cluster assignment method is set to _Manual_, after the license plate is entered on the receiving screen, the cluster will be requested from the worker performing the receiving. This eliminates the Mobile device menu item step _Assign to Putaway cluster_
-- **Generate Cluster ID** – _No_
-- **Directive code** – _leave blank_
-  - Restricts the Putaway cluster to a unique Location directive
-- **Putaway Cluster locate** – _At receipt_
-  - At Receipt - Location is found and held at the Receipt of the inventory
-  - Cluster close - Location is found and held after closing the Cluster
-  - User Directed - Location is found at receipt, the inventory is sorted, then the location is removed. Location Directives are run again when the LP is picked up from the Cluster for putaway
-    - The putaway work is created without location and during the putaway itself, the user has to scan the LP or Work ID to initiate the Put step. The system finds the put location again and tells the user where to put the picked quantity.
-- **Putaway cluster per user** – _No_
-  - Restricts the putaway cluster per one user
-- **Work unit break** – _Individual_
-- **Work template** – _leave blank_
-  - Restricts the Putaway cluster profile to a unique Work template
-- **Cluster persists as Parent License Plate** – _No_
-  - If _Yes_, when the Put step is complete, the Cluster ID will become a Parent License Plate and all items on the Cluster ID will be tied to that Parent license plate.
+    - **Cluster assignment timing** - *At receipt*
+        - Should the putaway cluster be assigned immediately when the inventory is being received, or sorted later?
 
-On the **Cluster sorting** FastTab, putaway sorting criteria can be determined by creating a new line:
+    - **Cluster assignment rule** - *Manual*
+        - Should the cluster assignment be determined automatically by the system, or manually by the user?
 
-- **Sequence number** – determines the sequence the system will sort by. It is added automatically but can be changed.
-- **Field name** – _WMSLocationId_
-  - Determines what field will this line use for sorting criteria
-- **Sorting** – _Ascending_
-  - Determines whether sorting should be Ascending or Descending
+    - **Directive code** - *Leave blank*
+    - **Putaway cluster locate** - *Receipt*
+        - **Receipt**: Location found immediately during receipt.
+        - **Cluster close**: Location found when cluster is closed.
+        - **User directed**: Location found when LP is picked from cluster to putaway.
+            - The putaway work is created without location and during the putaway itself, the user has to scan the LP or Work ID to initiate the Put step. The system finds the put location again and tells the user where to put the picked quantity.
 
-![Putaway cluster profiles page](media/putaway-clusters-profiles.png "Putaway cluster profiles page")
+    - **Putaway cluster per user** – *No*
+        - When assigning clusters automatically, should each cluster be unique per user? Only enabled when **Cluster assignment rule** is set to *Automatic*.
 
-Additionally, continue with opening the Edit query form of the newly created line and add a desired value to the Range:
+    - **Unit restriction** - *Leave blank*
+        - Unit that is required to be received for the profile to valid. If left blank, all units will be valid.
 
-1. First line:
+    - **Work unit break** – *Individual*
+        - When closing a cluster, should all inventory be consolidated onto one license plate (using the cluster ID and the LP), and putaway as a single LP, or putaway separately on the LPs that were received? Disabled when **Putaway cluster locate** is set to *Receipt*.
 
-    - **Table** – _Work_
-    - **Derived table** – _Work_
-    - **Field** – _Warehouse_
-    - **Criteria** – _61_
+    - **Cluster persists as Parent License Plate** – *No*
+        - If *Yes*, when the Put step is complete, the Cluster ID will become a Parent License Plate and all items on the Cluster ID will be tied to that Parent license plate.
 
-1. Second line:
+1. On the **Cluster sorting** FastTab, putaway sorting criteria can be determined. Select **New** in the Toolbar and enter the following:
 
-    - **Table** – _Work_
-    - **Derived table** – _Work_
-    - **Field** – _Work ID_
-    - **Criteria** – _leave__blank_
+    - **Sequence number** – *Accept default*
+    - **Field name** – *WMSLocationId*
+        - Determines what field this line will use for sorting criteria.
 
-Save the new putaway cluster profile and exit the form.
+    - **Sorting** – *Ascending*
+        - Determines whether sorting should be Ascending or Descending.
+
+1. On the **Cluster work template** FastTab, select **New** in the Toolbar to add a line. Enter the following:
+    - **Work order type** - *Purchase orders* : **Work template** - *61 PO Direct*
+
+1. In the Action Pane, select **Save**, then select **Edit query**.
+1. In the **Cluster putaway** dialog box, on the **Range** tab, select **Add** to add a second line to the query, then update the query lines as follows:
+
+    | Table | Derived table | Field | Criteria |
+    | -- | -- | -- | -- |
+    | Work | Work | Warehouse | 61 |
+    | Work | Work | Work ID | *Leave blank* |
+
+10. Select **OK** to save the query and close the dialog box.
+1. Select **Save** in the Action Pane and exit the form.
 
 ### Mobile device menu items
 
-Three new mobile device menu items are needed for this functionality. The first one is used to sort the received inventory to a putaway cluster upon receipt, the second one is used to assign multiple license plates to a cluster for putaway, and the third one, which is used to put away the cluster once it has been assigned.
+Three new mobile device menu items are available for this functionality. *Menu item 1* is used to sort the received inventory to a putaway cluster upon receipt. *Menu item 2* is used to assign multiple license plates to a cluster for putaway. *Menu item 3* is used to put away the cluster once it has been assigned.
 
-#### MDMI – Receive and Sort Cluster
+#### 1 – Receive and Sort Cluster
 
 Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
 
@@ -128,7 +134,7 @@ In **General** FastTab, the following setting can be specified:
 > [!NOTE]
 > The **Sort & assign putaway cluster** parameter is only available on the one-step item receiving.
 
-#### MDMI – Assign cluster
+#### 2 – Assign cluster
 
 This menu item must only be used if _Assign putaway cluster at receipt_ is not marked for use on the Putaway cluster profile.
 
@@ -146,7 +152,7 @@ In **General** FastTab, the following setting can be specified:
 
 - **Activity Code** – _Assign to putaway cluster_
 
-#### MDMI – Cluster Putaway
+#### 3 – Cluster Putaway
 
 Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
 
