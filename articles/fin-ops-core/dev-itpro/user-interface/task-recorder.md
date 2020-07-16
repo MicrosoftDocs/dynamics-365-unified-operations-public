@@ -206,7 +206,10 @@ The **Validate** gesture lets you insert a step that validates the value of the 
 
 Additional options are available in version 10.0.13 and later, including:
 -   **Enabled**/**Disabled** will validate that the targeted control's state is enabled or disabled and use it to generate an assertion in the test code.
--   **Read-only**/**Editable** will validate that the targeted control's state is read-only or editable and use it to generate an assertion in the test code.  
+-   **Read-only**/**Editable** will validate that the targeted control's state is read-only or editable and use it to generate an assertion in the test code. 
+
+> [!IMPORTANT]
+> Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### Add info step
 
