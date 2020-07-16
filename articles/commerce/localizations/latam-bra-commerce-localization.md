@@ -39,7 +39,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 ## Prerequisites
 1. [Set up legal entity parameters](../../financials/localizations/latam-bra-legal-entity-parameters.md).
 2. [Set up fiscal document source text](../../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md) for Retail.
-3. Submission of Brazilian business documents (listed below) is conducted throug [Electronic invoicing](../../financials/localizations/e-invoicing-get-started.md) service. Configuration steps and the process of submitting a NFC-e fiscal document is similar with described at the article [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
+3. Submission of Brazilian business documents (listed below) is conducted throug [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). Configuration steps and the process of submitting a NFC-e fiscal document is similar with described at the article [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
 4. Formats for electronic documents in accordance with the legal requirements of Brazil are configured using [Electronic reporting tool](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Brazilian Commerce localization capabilities
@@ -66,7 +66,9 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 4. Cancellation by substitution.
 5. Issuing gift cards, payments by gift cards.
 6. Working with customer orders on POS.
-7. Calculating and posting fiscal documents in Retail statements in HQ.
+7. Posting fiscal documents in Retail statements in HQ.
+8. Sales via e-Commerce storefronts
+9. Call-center sales
 
 ## Brazilian Commerce localization features
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Is not currently planned |
@@ -87,7 +89,7 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 | Fiscal documents for POS customer orders                             |                |                           | +       |                          |
 | NF-e linked to NFC-e / CF-e, DANFE                                   |                |                           | +       |                          |
 | N-1 support for upgrade from Microsoft Dynamics AX 2012 R3           |                |                           | +       |                          |
-| E-commerce capabilities for Brazil                                   |                |                           | +       |                          |
+| e-Commerce capabilities for Brazil                                   |                |                           | +       |                          |
 | CNPJ/CPF in customer master records merge in a call center           |                |                           | +       |                          |
 | Retail fiscal documents in *fiscal book statements**                 |                |                           |         | +                        |
 | PAF-ECF fiscal printers                                              |                |                           |         | +                        |
