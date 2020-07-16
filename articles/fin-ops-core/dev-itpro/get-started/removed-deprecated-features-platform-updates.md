@@ -45,8 +45,7 @@ This list is intended to help you consider these removals and deprecations for y
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
 > [!NOTE]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
-
+> Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 ### Upgrade of three jQuery component libraries 
 
 |   |  |
