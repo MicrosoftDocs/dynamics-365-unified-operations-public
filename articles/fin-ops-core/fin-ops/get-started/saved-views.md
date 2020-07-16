@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ If you want to save those changes, follow these steps.
 The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view that you expect to use most often. 
 
 > [!NOTE]
-> There is a single global default view across companies. Changing the default view will make that view open by default regardless of which legal entity you are currently in. 
+> There is a single, global default view across companies. Changing the default view will make that view open by default regardless of which legal entity you are currently in. 
 
 To change the default view for a page, follow these steps: 
 1.	Switch to the view that you use as the default. 
@@ -93,7 +93,7 @@ To change the default view for a page, follow these steps:
 
 Alternatively, when you create a new view (by using the **Save as** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
 
-Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page with a Standard view that already has a defined query, the original query will execute in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected. Starting in version 10.0.10 / Platform update 34, the informational message will have an embedded action allowing you to load the default view's query directly.
+Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page with a Standard view that already has a defined query, the original query will execute in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected. Starting in version 10.0.10, the informational message will have an embedded action allowing you to load the default view's query directly.
 
 ## Managing personal views 
 The **Manage my views** dialog box gives you basic maintenance capabilities over your personal views and the order of views in the view selector. To open this page, click the view name to open the view selector drop-down menu, select **More**, and then select **Manage my views**.  
@@ -118,16 +118,16 @@ Updates to a published view can easily be distributed to users by republishing t
 The publish capability allows organizations to define corporate standard views that are optimized for their business, targeted at users in specific security roles.  
 
 ## Publishing views
-During the publish process, views can be assigned to one or more security roles for one or more legal entities. Therefore, any user who has access to a legal entity and who is assigned to one of those roles can access and use the views, although they can't edit them. By default, system admins have access to the **Publish** action in the view selector drop-down menu; however, other trusted users in your organization can also be given access to view publishing via the new **Saved views administrator** role.
+During the publish process, views can be assigned to one or more security roles for one or more legal entities. Therefore, any user who has access to a legal entity and is assigned to one of those roles can access and use the views, although they can't edit them. By default, system admins have access to the **Publish** action in the view selector drop-down menu; however, other trusted users in your organization can also be given access to view publishing via the new **Saved views administrator** role.
 
 To publish a view, follow these steps: 
 1.	Create and save a personal copy of the view that you want to publish. 
 2.	With that view currently loaded, select the view name to open the view selector drop-down menu. 
 3.	Select the **More** button and then select **Publish**. The Publish dialog box will open.  
 4.	Enter a name and (optionally) a description for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
-5. [10.0.9 / Platform update 33 or later] Determine if the view should be published as the default view for the selected users. Making a view the default means that this is the view users will see the next time they open the target page. This will modify each of the targeted users' single global default view; however, users can still change their default view after the publish has occurred.  
+5. [Version 10.0.9 or later] Determine if the view should be published as the default view for the selected users. Making a view the default means that this is the view users will see the next time they open the target page. This will modify each of the targeted users' single global default view; however, users can still change their default view after the publish has occurred.  
 6.	Add the security roles that correspond to the users being targeted by this view. 
-7. [10.0.13 / Platform update 37 or later] For each security role selected, determine if you want to publish the view to the child roles of that security role. If so, mark the "Include child roles" checkbox in the appropriate rows. Note this checkbox is disabled for roles without child roles.   
+7. [Version 10.0.13 or later] For each security role selected, determine if you want to publish the view to the child roles of that security role. If so, mark the "Include child roles" checkbox in the appropriate rows. Note this checkbox is disabled for roles without child roles.   
 7. Add the legal entities that this view should be available for. 
 8.	Select **Publish**.
 
@@ -135,7 +135,7 @@ Note that in some environments, it may take some time (up to an hour) before use
 
 > [!NOTE]
 > Below are the current expectations when publishing to a legal entity or publishing a view as the default view.
-> -    If you publish a view as the default view to all or some legal entities, this will modify each of the targeted users' single global default view. If a user has roles where multiple views are published as default, the last view published will be the user's default view. 
+> -    If you publish a view as the default view to all or some legal entities, this will modify each of the targeted users' single, global default view. If a user has roles where multiple views are published as default, the last view published will be the user's default view. 
 > -    If you publish a view to a legal entity not as the default, users will initially only see the view in the view selector for the specified legal entities. However after loading the view once, the view will always be in the user's view selector for that page regardless of the legal entity. 
 
 ## Modifying a published view
@@ -143,22 +143,22 @@ After publishing a view, you may discover that you want to make changes to a pub
 
 If the changes that you want to make to a published view only involve the publish parameters (the name and description of the view, or the security roles the view is published to), do the following: 
 1.	Switch to the published view for the parameters that you want to update. 
-2.	Select **Republish** from the view selector drop-down menu. If you are on an older version (10.0.12 / Platform update 36 or earlier), you will need to select **Publish** and then **Yes** to update the existing view.
-4.	Update the name, description, security roles, and legal entities for the view. 
-5.	Select **Publish**. 
-6.	[10.0.8 / Platform update 32 or prior] If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
-7. [10.0.9 / Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
+2.	Select **Republish** from the view selector drop-down menu. If you are on an older version (10.0.12 or earlier), you will need to select **Publish** and then **Yes** to update the existing view.
+3.	Update the name, description, security roles, and legal entities for the view. 
+4.	Select **Publish**. 
+5.	[Version 10.0.8 or prior] If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
+6. [Version 10.0.9 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
 
 If the changes to the published view involve modifying the personalizations or filters associated with the view, follow these steps: 
 
-[10.0.13 / Platform update 13 or later] Make the view with needed changes directly. You should see an asterisk next to the view name
+[Version 10.0.13 or later] Make the view with needed changes directly. You should see an asterisk next to the view name
 1.	Load the published view that you want to modify. 
 2.	Modify the local draft with the needed changes.
-3. Select **Republish** from the view selector 
-4. Select Yes to indicate you want to published the view with its unsaved changes. 
+3. Select **Republish** from the view selector. 
+4. Select **Yes** to indicate you want to publish the view with its unsaved changes. 
 5.	Adjust any publish parameters and select **Publish**. 
 
-[10.0.12 / Platform update 12 or prior]
+[Version 10.0.12 or prior]
 1.	Load the published view that you want to modify. 
 2.	Save a copy of the published view to create a local draft of the published view. 
 3.	Modify the local draft with the needed changes.
@@ -193,10 +193,10 @@ Users who have access to the **Personalization** page can also import personal o
 > [!NOTE]
 > The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
-**10.0.13 / Platform update 37 and later**
+**Version 10.0.13 and later**
 The **Saved views** feature is no longer in preview and is available directly in Feature management in any environment.
 
-**10.0.9 / Platform update 33 through 10.0.12 / Platform update 36**
+**Versions 10.0.9 through 10.0.12**
 The **Saved views** feature is available directly in Feature management in any environment. As for other preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and prior**
