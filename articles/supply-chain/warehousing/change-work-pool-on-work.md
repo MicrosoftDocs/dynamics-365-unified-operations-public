@@ -126,7 +126,7 @@ This scenario shows how to change the stream of processing for an existing work 
 1. On the **Wave lines** FastTab, make sure that a shipment ID is shown for the sales order.
 
     > [!TIP]
-    > If the **Process wave at release to warehouse** option is set to *No* in the setup for the shipping wave template, you must manually process the wave from **Wave** on the Action Pane to create work.
+    > If the **Process wave at release to warehouse** option is set to *No* in the setup for the shipping wave template, you must manually process the wave by selecting **Process** from the **Wave** tab on the Action Pane to create work.
 
 1. Make sure that the wave has been processed. This processing creates the required work.
 
