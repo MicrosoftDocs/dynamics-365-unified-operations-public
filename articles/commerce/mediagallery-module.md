@@ -38,11 +38,11 @@ This topic covers media gallery modules and describes how to add them to site pa
 
 ## Overview
 
-Media gallery modules show one or more images in a gallery view. Media gallery modules support thumbnail images, which can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). Media gallery modules also provide capabilities that enable images to be zoomed (magnified) or viewed in full-screen mode. To be rendered in a media gallery module, an image must be available in the Commerce site builder Media Gallery. Currently, media gallery modules support only images.
+Media gallery modules show one or more images in a gallery view. Media gallery modules support thumbnail images, which can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). Media gallery modules also provide capabilities that enable images to be zoomed (magnified) or viewed in full-screen mode. To be rendered in a media gallery module, an image must be available in the Commerce site builder Media Library. Currently, media gallery modules support only images.
 
-In the default mode, a media gallery module uses the product ID that is available from the page context of a product details page (PDP) to render the corresponding product images. In Commerce headquarters, a media file path must be defined for all products. Images should then be uploaded to the site builder Media Library according to the file path that was defined for the products in Commerce headquarters. These images include images for products and any product variants. For more information about how to upload images to site builder Media Gallery, see [Upload images](dam-upload-images.md).
+In the default mode, a media gallery module uses the product ID that is available from the page context of a product details page (PDP) to render the corresponding product images. In Commerce headquarters, a media file path must be defined for all products. Images should then be uploaded to the site builder Media Library according to the file path that was defined for the products in Commerce headquarters. These images include images for products and any product variants. For more information about how to upload images to site builder Media Library, see [Upload images](dam-upload-images.md).
 
-Alternatively, a media gallery module can host a fully curated set of images on an image gallery page, where there are no dependencies on the product ID or page context. In this case, images must be uploaded to site builder Media Gallery and specified in site builder.
+Alternatively, a media gallery module can host a fully curated set of images on an image gallery page, where there are no dependencies on the product ID or page context. In this case, images must be uploaded to site builder Media Library and specified in site builder.
 
 Here are some usage examples for media gallery modules:
 
@@ -63,7 +63,7 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 | Image zoom | **Inline** or **Container** | This property lets the user zoom images in the media gallery module. An image can be zoomed either inline or in a separate container next to the image. This capability is available in 10.0.12 |
 | Zoom scale | A decimal number | This property specifies the scale factor for zooming images. For example, if the value is set to **2.5**, images are magnified 2.5 times.|
 | Full screen | **True** or **False** | This property specifies whether images can be viewed in full-screen mode. In full-screen mode, images can be also be further magnified if the zoom capability is turned on. This capability is available in Commerce version 10.0.13. |
-| Images | Images that are selected from Media Gallery | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
+| Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
@@ -78,7 +78,7 @@ The following illustration shows an example of a media gallery module that has c
 
 When the image source is derived from the page context, the product ID from the PDP is used to retrieve the images. The media gallery module retrieves the image file path for products by using Commerce Scale Unit application programming interfaces (APIs). The images are then pulled from the Media Library so that they can be rendered in the module.
 
-## Add a media gallery to a page
+## Add a media gallery module to a page
 
 To add a media gallery module to a marketing page, follow these steps.
 
@@ -97,7 +97,7 @@ To add a media gallery module to a marketing page, follow these steps.
 1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
 1. In the property pane for the media gallery module, under **Image source**, select **Productid**. Then, in the **Product id** field, enter a product ID.
 1. Select **Save**, and then select **Preview** to preview the page. You should be able to see the images for the product in a gallery view.
-1. To use only curated images, in the property pane, under **Image source**, select **Productid**. Then, under **Images**, select **Add an image** as many times as required to add images from the Media Gallery.
+1. To use only curated images, in the property pane, under **Image source**, select **Productid**. Then, under **Images**, select **Add an image** as many times as required to add images from the Media Library.
 1. Set any additional properties that you want to set, such as **Image zoom**, **Zoom factor**, and **Thumbnails orientation**.
 1. When you've finished, select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
