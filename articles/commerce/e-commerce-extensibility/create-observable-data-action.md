@@ -175,7 +175,7 @@ export interface IAsyncTestModuleData {
     testResult: AsyncResult<string>;
 }
 ```
-When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result** and **error** properties. The **status** property contains the current state of the data action which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error the **result** property will not be filled in. Instead, the **error** property can be used to see the error details.
+When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result**, and **error** properties. The **status** property contains the current state of the data action, which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error, the **result** property won't be filled in. Instead, the **error** property can be used to see the error details.
 
 By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
 
