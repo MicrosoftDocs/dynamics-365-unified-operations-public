@@ -68,12 +68,12 @@ However, Microsoft Dynamics doesn't address all laws, regulations, or commercial
 6. Working with customer orders on POS.
 7. Calculating and posting fiscal documents in Retail statements in HQ.
 
-## Brazilian localization features
+## Brazilian Commerce localization features
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Is not currently planned |
 |----------------------------------------------------------------------|----------------|---------------------------|---------|--------------------------|
 | Retail product management, tax setup and calculation                 |       +        |                           |         |                          |
 | NFC-e (model 65) and DANFE for retail sales                          |       +        |                           |         |                          |
-| Communication with Sefaz via *E-invoicing service*                   |       +        |                           |         |                          |
+| Communication with Sefaz via [E-invoicing service](../../financials/localizations/e-invoicing-get-started.md)|+|  |         |                          |
 | Retail statements in HQ                                              |       +        |                           |         |                          |
 | Handling of fiscal customer information (CPF/CNPJ, etc.)             |                | +                         |         |                          |
 | NF-e (model 55) and DANFE for sales returns                          |                | +                         |         |                          |
