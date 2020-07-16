@@ -5,7 +5,7 @@ title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Work with fragments 
-
 
 [!include [banner](includes/banner.md)]
 
@@ -66,9 +65,9 @@ You can either create a new fragment or save an existing module configuration as
 To convert a previously configured module to a reusable fragment, follow these steps.
 
 1. Open a page or template that contains the module that you want to convert to a fragment.
-1. Select the module by clicking on it in either: a) the oultine pane on the left or b) directly in the main canvas.
-1. Click the ellipsis button (**...**) next to the name of the module in either the outline or the selected module's toolbar in the canvas. 
-1. Select **Share as Fragment**. 
+1. Select the module in either the outline pane on the left or directly in the main canvas.
+1. Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in the canvas. 
+1. Select **Share as Page Fragment**. 
 1. A dialog box appears. Enter a name and metadata for the fragment.
 1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
 
@@ -100,7 +99,7 @@ The following procedures describe how to add, remove, and edit fragments.
 To add a fragment to a page, follow these steps.
 
 1. In the outline pane on the left, or directly in the main canvas, select a container or slot that child modules can be added to.
-1. If using the online pane, click the ellipsis button next to the name of the container or slot.  Alternately, if using the main canvas, click the in-line **"+"** button.  
+1. If using the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using the main canvas, click the in-line **"+"** button.  
 1. From the options menu select **Add Fragment**. A dialog box appears.
 
     ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)
