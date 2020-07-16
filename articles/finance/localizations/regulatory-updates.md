@@ -70,7 +70,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland          |   March 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
 |      Poland          |   May 2020     | 10.0.12     |   JPK_VDEK supplemented pack II |
 |      Poland          |   March 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
-|      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enchantments |
+|      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enhancements |
 |      Russia          |   July 2020     | 10.0.13    |   Depreciation calculation on the base of Acquision cost and major repairs with applying the Depreciation bonus in Tax accounting  |
 
 
