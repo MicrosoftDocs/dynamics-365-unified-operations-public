@@ -5,7 +5,7 @@ title: Configure optional features for a Dynamics 365 Commerce evaluation enviro
 description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 07/14/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -179,6 +179,8 @@ The following tokens are replaced with values for each product in the order.
 [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
 [Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md)
+
+[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
 
 [Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
 
