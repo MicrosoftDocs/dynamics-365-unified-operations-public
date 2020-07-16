@@ -5,7 +5,7 @@ title: Data action hooks
 description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 06/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -106,3 +106,5 @@ createDataActionHook({
 [Share state across modules](share-state-across-modules.md)
 
 [Data action overrides](data-action-overrides.md)
+
+[Data action cache settings](data-action-cache-settings.md)
