@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,7 +57,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
 
-### Existing grid control / forceLegacyGrid() API
+### Existing grid control/forceLegacyGrid() API
 
 |   |  |
 |------------|--------------------|
@@ -65,7 +65,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | The new grid control  |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | With version 10.0.13/Platform update 37, the new grid control is generally available and customers can optionally enable this feature. The new grid feature will be mandatory with the October 2021 release. Additionally, the forceLegacyGrid() API will no longer be honored when the new grid control becomes mandatory. |
+| **Status**                         | With version 10.0.13, the new grid control is generally available and customers can optionally enable this feature. The new grid feature will be mandatory with the October 2021 release. Additionally, the forceLegacyGrid() API will no longer be honored when the new grid control becomes mandatory. |
 
 ### Personalization without saved views 
 
