@@ -67,5 +67,16 @@ In **Electronic reporting** workspace, import the following Electronic Reporting
 
 For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
+## Overview
+
+This topic explains how to set up and generate the VAT return form for legal entities in Bahrain.
+
+The VAT Return form for Bahrain is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable and the related VAT tax amount  liability. The form is used for all type of taxpayers, regardless of the size of the VAT payer and it should be completed manually through the tax authority portal. VAT Return Form is commonly referred to as VAT return filing.
+
+The VAT Return form in Dynamics 365 Finance includes the following reports:
+
+	• VAT return form. This reports provides a breakdown of amounts, adjustments and VAT amount  per line item in the VAT Return form as is described in the legislation
+	• Sales transactions details grouped by box classification from Box1 to Box 6
+	• Purchase transaction details grouped by box classification from Box 8 to Box 12
 
 
