@@ -35,11 +35,11 @@ Product owners are global setup in therefor immediately available in all legal e
 
 ## Create a product owner group
 
-1. Go to **Navigation pane \> Modules \> Product engineering \> Setup \> Product owner**.
-2. Click **New**.
+1. Go to **Product engineering \> Setup \> Product owner**.
+2. Select **New**.
 3. In the **Product owner** field, type a value.
 4. In the **Name** field, type a value.
-5. Add as much members as there are users in the product owner group.
+5. Add as many members as there are users in the product owner group.
 
 ## Assigning a product owner
 

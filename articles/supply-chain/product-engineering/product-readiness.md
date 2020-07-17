@@ -35,11 +35,11 @@ Use readiness checks to ensure that the needed master data is completed for a pr
 
 There are three types of readiness checks:
 
-- System checks: The system will verify if there is a valid record. As an example, if there is an active Bill of Material.
-- Manual checks: The user will verify if there is a valid record. As an example, the default order settings must be validated. Based on the product in its phase, the situation can occur that there are no default order settings needed. As an example, while the product is still being designed and will not be put on stock yet. For another product of the same type however, the default order settings are required while it can be held on stock. The responsibility and knowledge to make the correct judgement lies with the user.
-- Checklist: Via a checklist, the user will answer questions of the checklist and the system will verify if the answers meet the expectations. The subject can be anything like if marketing material or product documentation is completed.
+- **System checks**: The system will verify if there is a valid record. As an example, if there is an active Bill of Material.
+- **Manual checks**: The user will verify if there is a valid record. As an example, the default order settings must be validated. Based on the product in its phase, the situation can occur that there are no default order settings needed. As an example, while the product is still being designed and will not be put on stock yet. For another product of the same type however, the default order settings are required while it can be held on stock. The responsibility and knowledge to make the correct judgement lies with the user.
+- **Checklist**: Via a checklist, the user will answer questions of the checklist and the system will verify if the answers meet the expectations. The subject can be anything like if marketing material or product documentation is completed.
 
-## Creation of readiness checks
+## Create readiness checks
 
 When creating a new engineering product, the system will verify if readiness checks are set up on the engineering product type **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
 
@@ -56,15 +56,15 @@ In case a new engineering version is created for the product, the system will ve
 - Readiness checks are created for the product
 - The engineering version is not active. This will block the products from being used
 
-## Viewing readiness checks
+## View readiness checks
 
 You can find the menu item for opening the readiness checks for a product on the **Released products details** page. For the readiness checks assigned to an engineering version, you can open them from the **engineering version** page.
 
 For open readiness checks assigned to you, you can open the **My open readiness checks** page on the menu and on the Product readiness for discrete manufacturing **workspace**. The setup for who is assigned to the readiness check is done at the engineering product type. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check.
 
-## Processing readiness checks
+## Process readiness checks
 
-### Processing system and manual readiness checks
+### Process system and manual readiness checks
 
 If you have opened the readiness form, you can view de subject of the system and manual readiness checks via the **View related information** option in the action pane. This will provide the option to complete and/ or validate the data for the readiness check. When the readiness check has the status pending, the readiness check is still open, and it needs to be processed. This can be done via the following options:
 
@@ -75,13 +75,13 @@ In case the readiness check is updated to status passed, it depends on the setti
 
 In case there are no more open readiness checks, the engineering version becomes active and therefor ready for use automatically.
 
-### Processing checklist readiness checks
+### Process checklist readiness checks
 
 The checklist opens by clicking on **Start checklist** in the action pane. When the checklist is completed, the system will validate if the readiness check is completed based on the settings in the questionnaire and if so, the status is updated to passed. In case the readiness check is not mandatory, it can be skipped, and the status is also updated to skipped.
 
 In case the readiness check is updated to status passed, it depends on the settings on the engineering product type, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
 
-## Setup readiness checks
+## Set up readiness checks
 
 The types of data to be verified, can be different per type of product and therefor the readiness rules can be different per engineering product type. For more information, see ……
 

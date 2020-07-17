@@ -41,18 +41,18 @@ Note that you can release both standard products and engineering products with t
 
 The following data is part of releasing engineering products:
 
-- **Product** data: when releasing a new engineering product, a new released product is created
+- **Product data**: when releasing a new engineering product, a new released product is created
 - **Engineering version** data: when releasing engineering products, the engineering version and its data is created or updated. Note: when you release the same engineering version again to an operational organization, the engineering data will be overridden.
-- **Engineering attributes** : when releasing engineering products, the engineering attributes and its values are created or updated
-- Engineering **bill of materials** : when releasing engineering products, the engineering bill of materials and its lines can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
-- Engineering **routes** : when releasing engineering products, the engineering routes and its operations can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
-- Engineering **documents** : when releasing engineering products, the engineering documents connected to the engineering version are created or updated.
+- **Engineering attributes**: when releasing engineering products, the engineering attributes and its values are created or updated
+- **Engineering bill of materials**: when releasing engineering products, the engineering bill of materials and its lines can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
+- **Engineering routes**: when releasing engineering products, the engineering routes and its operations can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
+- **Engineering documents**: when releasing engineering products, the engineering documents connected to the engineering version are created or updated.
 
 For a standard product, the BOM and the route will also be released.
 
 ## Automatically accept products
 
-A key parameter that influences the release process is the "automatically accept products". This parameter is a per company parameter that you can set in the Product engineering parameters form.
+**Automatically accept products** is a key parameter that influences the release process. You can set this per-company on the **Product engineering parameters** page.
 
 ### Automatically accept products = yes
 
@@ -100,6 +100,7 @@ The following settings apply for both standard and engineering products:
 | Copy BOM activation | Should the active checkmark of the bill of material be copied to the receiving company |
 | Copy Route approval | Should the approval information of the route be copied to the receiving company |
 | Copy Route activation | Should the active checkmark of the route be copied to the receiving company |
+
 #### Setting that apply only to engineering products
 
 The following settings apply only to engineering products:

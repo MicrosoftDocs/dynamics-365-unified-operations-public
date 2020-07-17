@@ -39,7 +39,7 @@ Engineering products typically have a large number of characteristics and proper
 
 Each engineering attribute must belong to an attribute type. This is required because each engineering attribute must have a *data type* that defines which types of values it can hold. Each engineering type might be a standard type (such as free text, integer, or decimal) or a custom type (such as text with a specific set of values to choose from). You can reuse each engineering type with any number of engineering attributes.
 
-#### Work with engineering type
+#### Set up engineering types
 
 To view, create, or edit an engineering type:
 
@@ -59,10 +59,10 @@ To view, create, or edit an engineering attribute:
 1. Go to **Project Oaktree > Setup > Attributes > Engineering attributes**.
 1. Select an existing attribute from the list pane, or select **New** on the Action Pane to create a new one.
 1. Make the following settings:
-    - **Name** - Enter a name for the attribute. <!-- KFM: Where does this appear--just here on this page? -->
+    - **Name** - Enter a name for the attribute. <!-- KFM: Where does this appear, just here on this page? -->
     - **Attribute type** - Select an attribute type defined on the Attribute types page (see also the previous section).
-    - **Friendly name** - Enter a name to identify this attribute in the user interface elsewhere in the system. <!-- KFM: Where does this appear--everywhere else? -->
-    - **Description** - Enter a description of the attribute. <!-- KFM: Where does this appear--just here on this page? -->
+    - **Friendly name** - Enter a name to identify this attribute in the user interface elsewhere in the system. <!-- KFM: Where does this appear, everywhere else? -->
+    - **Description** - Enter a description of the attribute. <!-- KFM: Where does this appear, just here on this page? -->
     - **Help text** - Enter help text that will be displayed as a tool tip for this attribute. <!-- KFM: Correct? -->
     - **Default value** - Enter or select a default value for the attribute. The options presented here will depend on the **Attribute type** you selected.
     - **Currency** - If the **Attribute type** you selected is a currency, then select the currency in which this attribute will accept and display values.
@@ -74,14 +74,18 @@ To view, create, or edit an engineering attribute:
 
 ### Connect engineering attributes to an engineering product type
 
-Some engineering attributes apply to all products, but not all products will need the same engineering attributes. Fo example, you won't need electrical related attributes on mechanical products. Therefore, you can assign per engineering product type, which engineering products are relevant and must be part of the product definition. You can also choose which engineering attributes are **mandatory** and if there is a **default value**.
+Some engineering attributes apply to all products, while others will be specific to individual products or product types. For example, you won't need electrical attributes on mechanical products. Therefore, you can set up *engineering product types*, each of establishes which engineering products <!-- KFM: Do you mean attributes? --> must be part of the definition for products belonging to that type. You can also choose which engineering attributes are **mandatory** and if there is a **default value**.
 
-<!-- KFM: Where are these settings? On the **Engineering product category details** page? -->
+<!-- KFM: Where are these settings? On the **Engineering product category details** page? I can't find any "engineering product types". -->
 
 ### Populate engineering attributes with values
 
-The engineering attributes connected to the engineering product type, will appear in the engineering product creation dialog. Here you can populate them with values. Afterwards, the values can be changed in the engineering version form or as part of engineering change management in the engineering change order. For more information, see [Engineering change management](engineering-change-management.md).
+The engineering attributes connected to an engineering product type appear in the engineering product creation dialog. Here you can populate them with values. Afterwards, the values can be changed in the engineering version form or as part of engineering change management in the engineering change order. For more information, see [Engineering change management](engineering-change-management.md).
+
+<!-- KFM: Where are these settings? I can't find any "engineering product creation dialog" or "engineering version form". -->
 
 ## Engineering attribute search
 
-With the engineering attribute search, you can search on products that meet the engineering attributes values as you define them. This will enable you to find the existing engineering products easily based on their characteristics. You can search within products of an engineering product type, or you leave it empty to search across all engineering products. The search is available from product master data forms, and from transactional places in the system, such as sales orders. On a transactional form like a sales order, you can even use the engineering attribute form to search and create new lines with the **Add as new line** button.
+With the engineering attribute search, you can find products by searching for their engineering attributes values. This makes it easy to find engineering products easily based on their characteristics. You can search within products of an engineering product type, or across all engineering products. The search is available on product master data forms, and from transactional places in the system, such as sales orders. On a transactional form like a sales order, you can even use the engineering attribute form to search and create new lines with the **Add as new line** button.
+
+<!-- KFM: How do we open this search form? What do we mean by "create new lines"?. -->

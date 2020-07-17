@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Product lifecycle state and transactions
 
-When an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. As an example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, if a product is reaching its end-of-life state, you want to ensure that the inflow of this product can be controlled.
+As an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. As an example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, when a product is reaching its end-of-life state, you want to control the inflow of this product.
 
 For an engineering product, changing the lifecycle state goes hand-in-hand with its engineering versions and therefor the product lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can control what transactions are allowed for this engineering version via its product lifecycle state. For more information, see [Product lifecycle state overview](../pim/product-lifecycle.md).
 
