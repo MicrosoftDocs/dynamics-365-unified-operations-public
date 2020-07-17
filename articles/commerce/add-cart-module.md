@@ -54,7 +54,7 @@ The following image shows an example of a cart page on the Fabrikam site with a 
 ## Cart module properties and slots
 | Property | Value | Description |
 |----------------|--------|-------------|
-| Heading | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | This property can be set to display a heading such as "Shopping bag" or "Items in your cart". |
+| Heading | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Displays a heading for the cart such as "Shopping bag" or "Items in your cart". |
 | Show out of stock errors | True/False| If enabled (True), stock-related errors will be displayed on the cart page. It is recommended to set this to True if inventory checks are applied on the site. |
 | Show shipping charges for line items | True/False| If enabled (True), cart line items will show the shipping charges if available. This is not supported in the Fabrikam theme because the user selects shipping only in the checkout flow, but in other workflows this feature can be turned on if applicable. |
 
