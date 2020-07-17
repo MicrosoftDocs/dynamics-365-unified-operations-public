@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up customers and customer bank accounts for ISO20022 direct debits
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit. Depending on the customer payment formats tha are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account. 
 

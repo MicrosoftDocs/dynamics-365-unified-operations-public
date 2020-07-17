@@ -38,7 +38,7 @@ The `UPPER` function returns the specified text string as a *String* value after
 
 ## Syntax
 
-```
+```vb
 UPPER (text )
 ```
 

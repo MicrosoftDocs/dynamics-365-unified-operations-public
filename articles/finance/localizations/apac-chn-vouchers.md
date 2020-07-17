@@ -3,9 +3,9 @@
 
 title: Chinese vouchers
 description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ This topic describes Chinese vouchers and how they are used.
 
 You must create a voucher document for every posted journal. You can print a paper voucher and a posted journal. Based on your requirements, you can use the Voucher type setup wizard to set up the **Get**, **Pay** and **Transfer** voucher types that are often used, or you can create new voucher types on the **Voucher type setup** page. You can use booking vouchers to enter and group transactions into the Receipt voucher, Payment voucher, or Transfer voucher. 
 
-A continuous number sequence that begins from the first day of every monthly period should be assigned to each voucher type. You can define a Chinese voucher type for ledger accounts only. You can assign the voucher types to specific ledger accounts. Then, on the **Voucher type setup** page, you can define validation rules for posting voucher transactions to the specified ledger accounts. During voucher posting, validation is run, based on the rules that are specified on the **Voucher type setup** page. You receive a message if the voucher type that is selected for the selected ledger account is incorrect. 
+A continuous number sequence that begins from the first day of every monthly period should be assigned to each voucher type. On the **Voucher type setup** page, you can define validation rules for posting voucher transactions to the specified accounts. During voucher posting, validation is run, based on the rules that are specified on the **Voucher type setup** page. You receive a message if the voucher type that is selected for the document is incorrect. 
 
 For example, you select a ledger account of the **Credit** type for the **Get** voucher type. However, the validation rule that you defined for the **Get** voucher type specifies that the ledger account must be a debit account. In this case, you receive a message that states that the Chinese voucher type isn't valid. You can then make the appropriate changes and post the voucher again. 
 

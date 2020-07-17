@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Set up depreciation books (May 2016)
-description: This task guide will create a new depreciation book and associate it with a fixed asset group. 
+title: Set up depreciation books
+description: This procedure walks through the process of creating a new depreciation book and associate it with a fixed asset group. 
 author: saraschi2
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -26,12 +26,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up depreciation books (May 2016)
+# Set up depreciation books 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This task guide will create a new depreciation book and associate it with a fixed asset group.  It uses the Accountant role and demo data for the USMF legal entity.
-
+This procedure walks through the process of creating a new depreciation book and associate it with a fixed asset group. 
 
 ## Create a depreciation book
 1. Go to Fixed assets > Setup > Depreciation books.

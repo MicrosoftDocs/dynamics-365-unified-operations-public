@@ -132,7 +132,7 @@ These scripts help guarantee that the users, roles, and change tracking settings
 
 On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.
 
-```
+```powershell
 F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
@@ -165,7 +165,7 @@ Use services.msc to restart the services that you stopped earlier:
 1. Instruct all users to close Report designer and exit the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
 
-    ```
+    ```sql
     ------------------------------------------------------------------------------------------
     ---- Set service into disabled mode
     ------------------------------------------------------------------------------------------
@@ -218,7 +218,7 @@ Use services.msc to restart the services that you stopped earlier:
 4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the database. If the table doesn't exist in the database, skip this step.
 5. Run the **ResetDatamart.sql** script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then reenables the data mart integration.
 
-    ```
+    ```sql
     ------------------------------
     PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
     ------------------------------
@@ -593,7 +593,7 @@ Use services.msc to restart the services that you stopped earlier:
 
 6. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
-    ```
+    ```sql
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 

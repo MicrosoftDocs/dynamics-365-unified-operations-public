@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define financial dimensions
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension.  The guide uses the USMF demo company.
 

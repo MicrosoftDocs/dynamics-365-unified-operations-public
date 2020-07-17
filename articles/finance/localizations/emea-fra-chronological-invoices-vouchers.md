@@ -5,7 +5,7 @@ title: Chronological invoice and voucher numbers
 description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,32 +47,12 @@ In some countries, there is a legal requirement that all invoices and related vo
 -   Sales credit note voucher
 
 ## Prerequisites
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Category</th>
-<th>Prerequisite</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Feature activation</td>
-<td>In the **Feature management** workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).</td>
-</tr>
-<tr class="even">
-<td>Country/region</td>
-<td>If the primary address of the legal entity is in <strong>France</strong> then additionally set the <strong>Chronological numbering</strong> option to <strong>Yes</strong> on the <strong>Accounts receivable parameters</strong> page, on the <strong>Updates</strong> tab.</td>
-</tr>
-<tr class="odd">
-<td>Related setup tasks</td>
-<td>On the <strong>Number sequences</strong> page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.</td>
-</tr>
-</tbody>
-</table>
+
+| Category            | Prerequisite                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Feature activation  | In the Feature management workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).                                                                                                                                                              |
+| Country/region      | If the primary address of the legal entity is in France, set the **Chronological numbering** option to **Yes** on the **Accounts receivable parameters** page, on the **Updates** tab.                                                                                                                                                                                                |
+| Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
 
 ## Set up chronological numbering
 ### Accounts receivable parameters

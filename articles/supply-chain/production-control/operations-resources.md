@@ -4,7 +4,7 @@
 title: Operations resources
 description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 author: sorenva
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 61943

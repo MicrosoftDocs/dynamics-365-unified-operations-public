@@ -41,7 +41,9 @@ curExt
 
 Retrieves the extension that is used for the current company.
 
-    str curExt()
+```xpp
+str curExt()
+```
 
 ### Return value
 
@@ -49,18 +51,22 @@ The extension for the current company.
 
 ### Example
 
-    static void curExtExample(Args _arg)
-    {
-            str s;
-            // Sets s to the extension of the current company.
-            s = curExt();
-            print "Current extension is " + s;
-    }
+```xpp
+static void curExtExample(Args _arg)
+{
+    str s;
+    // Sets s to the extension of the current company.
+    s = curExt();
+    print "Current extension is " + s;
+}
+```
 
 ## curUserId
 Retrieves the nonnumeric ID that represents the current user.
 
-    str curUserId()
+```xpp
+str curUserId()
+```
 
 ### Return value
 
@@ -68,17 +74,21 @@ The nonnumeric ID that represents the current user.
 
 ### Example
 
-    static void curUserIdExample(Args _arg)
-    {
-            str s;
-            s = curUserId();
-            print "Current user ID is " + s;
-    }
+```xpp
+static void curUserIdExample(Args _arg)
+{
+    str s;
+    s = curUserId();
+    print "Current user ID is " + s;
+}
+```
 
 ## funcName
 Retrieves a string that contains the current function context.
 
-    str funcName()
+```xpp
+str funcName()
+```
 
 ### Return value
 
@@ -90,15 +100,19 @@ If execution is currently within the member of a table or class, the name of the
 
 ### Example
 
-    static void funcNameExample(Args _arg)
-    {
-            print "Current function context is " + funcName();
-    }
+```xpp
+static void funcNameExample(Args _arg)
+{
+    print "Current function context is " + funcName();
+}
+```
 
 ## getCurrentPartition
 Retrieves the short name of the current partition.
 
-    str getCurrentPartition()
+```xpp
+str getCurrentPartition()
+```
 
 ### Return value
 
@@ -112,27 +126,31 @@ The maximum length of the data partition name that is returned is eight characte
 
 The following code example shows calls to, and output from, the **getCurrentPartition** function of the X++ language, and related functions or methods.
 
-    static public void Main(Args _args)  // X++ method.
-    {
-            int64 iPartition;
-            str sPartition;
-            SelectableDataArea oSelectableDataArea;  // System ExDT.
-            iPartition = getCurrentPartitionRecId();
-            sPartition = getcurrentpartition();
-            oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
-            Global::info( strFmt(
-                    "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
-                    iPartition, sPartition, oSelectableDataArea) );
-    }
-    /**** Pasted from Infolog window:
-    Message_@SYS14327 (03:42:38 pm)
-    getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
-    ****/
+```xpp
+static public void Main(Args _args)  // X++ method.
+{
+    int64 iPartition;
+    str sPartition;
+    SelectableDataArea oSelectableDataArea;  // System ExDT.
+    iPartition = getCurrentPartitionRecId();
+    sPartition = getcurrentpartition();
+    oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
+    Global::info( strFmt(
+            "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
+            iPartition, sPartition, oSelectableDataArea) );
+}
+/**** Pasted from Infolog window:
+Message_@SYS14327 (03:42:38 pm)
+getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
+****/
+```
 
 ## getCurrentPartitionRecId
 Retrieves the **RecId** field of the current partition.
 
-    int64 getCurrentPartitionRecId()
+```xpp
+int64 getCurrentPartitionRecId()
+```
 
 ### Return value
 
@@ -146,27 +164,31 @@ To see a code example that relies on the **getCurrentPartitionRecId** function, 
 
 The following code example shows calls to, and output from, the **getCurrentPartitionRecId** function of the X++ language, and related functions or methods.
 
-    static public void Main(Args _args)  // X++ method.
-    {
-            int64 iPartition;
-            str sPartition;
-            SelectableDataArea oSelectableDataArea;  // System ExDT.
-            iPartition = getCurrentPartitionRecId();
-            sPartition = getcurrentpartition();
-            oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
-            Global::info( strFmt(
-                    "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
-                    iPartition, sPartition, oSelectableDataArea) );
-    }
-    /**** Pasted from Infolog window:
-    Message_@SYS14327 (03:42:38 pm)
-    getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
-    ****/
+```xpp
+static public void Main(Args _args)  // X++ method.
+{
+    int64 iPartition;
+    str sPartition;
+    SelectableDataArea oSelectableDataArea;  // System ExDT.
+    iPartition = getCurrentPartitionRecId();
+    sPartition = getcurrentpartition();
+    oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
+    Global::info( strFmt(
+            "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
+            iPartition, sPartition, oSelectableDataArea) );
+}
+/**** Pasted from Infolog window:
+Message_@SYS14327 (03:42:38 pm)
+getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
+****/
+```
 
 ## getPrefix
 Retrieves the current execution prefix after successive calls to the **setPrefix** function.
 
-    str getPrefix()
+```xpp
+str getPrefix()
+```
 
 ### Return value
 
@@ -178,17 +200,21 @@ The prefix mechanism makes it more straightforward to write precise error messag
 
 ### Example
 
-    static void getPrefixExample(Args _arg)
-    {
-            setPrefix("Prefix");
-            setPrefix("Another prefix");
-            print getPrefix();
-    }
+```xpp
+static void getPrefixExample(Args _arg)
+{
+    setPrefix("Prefix");
+    setPrefix("Another prefix");
+    print getPrefix();
+}
+```
 
 ## sessionId
 Retrieves the session number of the current session.
 
-    int sessionId()
+```xpp
+int sessionId()
+```
 
 ### Return value
 
@@ -200,17 +226,21 @@ A session number is assigned when the client is started and connects to Applicat
 
 ### Example
 
-    static void sessionIdExample(Args _arg)
-    {
-            int session;
-            session = sessionId();
-            print "This session ID is number " + int2Str(session);
-    }
+```xpp
+static void sessionIdExample(Args _arg)
+{
+    int session;
+    session = sessionId();
+    print "This session ID is number " + int2Str(session);
+}
+```
 
 ## prmIsDefault
 Determines whether the specified parameter for the current method has the default value.
 
-    int prmIsDefault(anytype argument)
+```xpp
+int prmIsDefault(anytype argument)
+```
 
 ### Parameters
 
@@ -224,36 +254,40 @@ Determines whether the specified parameter for the current method has the defaul
 
 ### Example
 
-    static void prmIsDefaultExample(Args _arg)
+```xpp
+static void prmIsDefaultExample(Args _arg)
+{
+    void fn(boolean b = true, int j = 42)
     {
-            void fn(boolean b = true, int j = 42)
-            {
-                    if (prmIsDefault(b) == 1)
-                    {
-                            print "First parameter is using the default value.";
-                    }
-                    else
-                    {
-                            print "First parameter is not using the default value.";
-                    }
-            }
-            fn();
-            fn(false);
+        if (prmIsDefault(b) == 1)
+        {
+            print "First parameter is using the default value.";
+        }
+        else
+        {
+            print "First parameter is not using the default value.";
+        }
     }
+    fn();
+    fn(false);
+}
+```
 
 ## runAs
 Enables the caller to run an X++ method in the security context of another user. This function is most often used with batch processing.
 
-    container runAs(
-            str userId,
-            int classId,
-            str staticMethodName
-            [,
-            container params,
-            str company,
-            str language,
-            str partition
-            ])
+```xpp
+container runAs(
+    str userId,
+    int classId,
+    str staticMethodName
+    [,
+    container params,
+    str company,
+    str language,
+    str partition
+    ])
+```
 
 ### Parameters
 
@@ -279,23 +313,27 @@ This function makes it possible to run code as another user. This capability pre
 
 The following example calls the **runDueDateEventsForUser** method in the **EventJobDueDate** class. The code runs in the security context of a user. Run this code by applying it to a method in a new class.
 
-    server static public void Main(Args _args)
-    {
-            RunAsPermission perm;
-            UserId runAsUser;
-            SysUserInfo userInfo;
-            userInfo = SysUserInfo::find();
-            runAsUser = userInfo.Id;
-            perm = new RunAsPermission(runAsUser);
-            perm.assert();
-            runAs(runAsUser, classnum(EventJobDueDate), "runDueDateEventsForUser");
-            CodeAccessPermission::revertAssert();
-    }
+```xpp
+server static public void Main(Args _args)
+{
+    RunAsPermission perm;
+    UserId runAsUser;
+    SysUserInfo userInfo;
+    userInfo = SysUserInfo::find();
+    runAsUser = userInfo.Id;
+    perm = new RunAsPermission(runAsUser);
+    perm.assert();
+    runAs(runAsUser, classnum(EventJobDueDate), "runDueDateEventsForUser");
+    CodeAccessPermission::revertAssert();
+}
+```
 
 ## setPrefix
 Sets the prefix for the current execution scope.
 
-    int setPrefix(str _prefix)
+```xpp
+int setPrefix(str _prefix)
+```
 
 ### Parameters
 
@@ -313,12 +351,13 @@ The complete prefix for the execution can be fetched by using the **getPrefix** 
 
 ### Example
 
-    static void setPrefixExample(Args _arg)
-    {
-            int i;
-            i = setPrefix("Prefix");
-            print i;
-    }
-
+```xpp
+static void setPrefixExample(Args _arg)
+{
+    int i;
+    i = setPrefix("Prefix");
+    print i;
+}
+```
 
 

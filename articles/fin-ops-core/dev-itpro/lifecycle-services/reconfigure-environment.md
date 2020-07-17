@@ -3,7 +3,7 @@
 
 title: Reconfigure environments to take a new platform or topology
 description: This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.3
 

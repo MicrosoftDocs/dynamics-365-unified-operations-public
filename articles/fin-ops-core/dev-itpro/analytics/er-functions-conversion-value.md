@@ -38,7 +38,7 @@ The `VALUE` function returns a *Real* value that is converted from the specified
 
 ## Syntax
 
-```
+```vb
 VALUE (text)
 ```
 

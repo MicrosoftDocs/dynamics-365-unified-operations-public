@@ -49,7 +49,7 @@ You can mark a field as a phone number field by using business logic. Then, when
 You can mark a field as a URL field by using business logic. Then, when a user clicks the field, the URL opens in the default mobile browser, and the field value appears in the address bar.
 
 > [!NOTE]
-> On iOS, you must provide a complete URL (that is, a URL that starts with a protocol, such as <strong>https</strong>). Otherwise, the URL isn't opened in the browser. A URL such as www.microsoft.com doesn't work. Instead, the URL must be specified as `https://www.microsoft.com`.
+> On iOS, you must provide a complete URL (that is, a URL that starts with a protocol, such as <strong>https</strong>). Otherwise, the URL isn't opened in the browser. A URL such as `www.microsoft.com` doesn't work. Instead, the URL must be specified as `https://www.microsoft.com`.
 
 ## Example
 This example shows how to configure the customer email address and phone number fields so that they can clicked and opened in the appropriate iOS apps.
@@ -62,7 +62,7 @@ Follow these steps to specify that a field is a link.
 
 1. Add the following lines to the **appInit** method. You call the **configureControl** method, and pass in the page name and control name. You then supply the **LinkType** value for the control. The following values are supported: **Telephone**, **Email**, and **Url**.
 
-    ```
+    ```xpp
     metadataService.configureControl('PageName', 'ControlName', { LinkType: 'Telephone' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Email' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Url' });

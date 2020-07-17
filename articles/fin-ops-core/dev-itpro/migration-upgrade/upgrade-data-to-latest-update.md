@@ -5,7 +5,7 @@ title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Finance and Operations application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,32 +48,33 @@ In Tier 2 or higher environments, including Production, you will run through the
 ## Before you begin
 
 1. Back up your current database.
-2. You must have a functional environment that is already successfully running the update.
-3. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
+1. You must have a functional environment that is already successfully running the update.
+1. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
 
    - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1, build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
    - **If you're upgrading from the July 2017 release (also known as 7.2, build 7.2.11792.56024):** No hotfix is required for this version.
    - After you install application hotfixes required in this step, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
-     ```
+     ```Console
      cd J:\AosService\WebRoot\bin>
 
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
 
-4. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
+1. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
 
     - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
-5. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
+1. If you're upgrading to Dynamics 365 Finance version 10.0.9 or 10.0.10, install the quality updates in the destination environment before you run the data upgrade.
+1. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
-    ```
+    ```sql
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-6. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
+1. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
 ## Select the correct data upgrade deployable package
 
@@ -103,7 +104,7 @@ To obtain the latest data upgrade deployable package for a target environment th
 
 3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
-    ```
+    ```sql
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
@@ -115,14 +116,14 @@ To obtain the latest data upgrade deployable package for a target environment th
 
 > [!NOTE]
 > If you are upgrading a database on a development environment, you can instead execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
-
-> This will upgrade your Finance and Operations database, Retail channel database, and reset the Financial reporting database.
+>
+> This will upgrade your Finance and Operations database, channel database, and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 
 Run the following SQL against the upgraded database to make sure that change tracking is enabled at the database level. You must specify the name of your database in the **alter database** command.
 
-```
+```sql
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
 
@@ -138,7 +139,7 @@ This section provides information that can help you troubleshoot various issues.
 
 A data upgrade deployable package enables the runbook to be rerun in a more granular manner than a typical deployable package. The data upgrade scripts begin to be run at Step 5 of the runbook. If you experience a failure during Step 5, view the output in the command window to learn which substep you reached. For example, if you reached substep 5.3, use the following command to rerun from that substep.
 
-```
+```Console
 AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 ```
 
@@ -148,7 +149,7 @@ When you're debugging, you don't have to rerun the whole data upgrade piece and 
 
 Upgrade scripts run in X++ by using a batch process that the runbook installer starts. In Application Explorer in Visual Studio, some classes that you can view are prefixed with **ReleaseUpdate**. If an upgrade script fails during the runbook process, you can learn more about the reason for the error by opening Microsoft SQL Server Management Studio and running the following code to query ReleaseUpdateScriptsErrorLog.
 
-```
+```sql
 select \* from RELEASEUPDATESCRIPTSERRORLOG
 ```
 
@@ -178,7 +179,7 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from the table by running the following SQL script against the database from Management Studio.
 
-```
+```sql
 delete RS from ResourceSetup as RS
 join ResResourceIdentifier as RRI on RRI.RecId = RS.Resource_
 join WrkCtrTable as WCT on WCT.RecId = RRI.RefRecId
@@ -194,7 +195,7 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by running the following SQL script against the database from Management Studio.
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -277,19 +278,19 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future release. The workaround is to delete all records in the InventDistinctProduct table and then resume the runbook from the current step. The records in the InventDistinctProduct table are disposable. They will be regenerated the first time that Finance and Operations is started, when an item is created, or when MRP is run. To delete all records in InventDistinctProduct, run the following query against the current database from Management Studio.
 
-```
+```sql
 truncate table InventDistinctProduct
 ```
 
 To resume the runbook from the current step, run the following command.
 
-```
+```Console
 axupdateinstaller execute -runbookid=<your runbook name> -rerunstep=<the last step number>
 ```
 
 For example, you can use this command.
 
-```
+```Console
 axupdateinstaller execute -runbookid=dataupgrade -rerunstep=5.4
 ```
 
@@ -301,7 +302,7 @@ When you upgrade a demo database, you might receive the following error message 
 
 Because you're upgrading demo data, look in the TrvUnreconciledExpenseTransaction table, which is where the expense line is. Change the currency to **USD**. (Because the data is demo data, you don't have to be careful to preserve this expense line.)
 
-```
+```sql
 update TrvUnreconciledExpenseTransaction
 set transactioncurrencycode = 'USD'
 where transactioncurrencycode = 'INR'
@@ -345,6 +346,14 @@ You might receive one of the following error messages on the **preSyncLedgerPeri
 
 To resolve this issue, use Management Studio to manually drop the LedgerPeriodCloseTemplateTaskTmp table from the database. Then rerun the runbook step. This issue will be fixed in a future hotfix.
 
+### Table Sync Failed for Table: WarrantyGroupConfigurationItem
+
+If you're upgrading to Dynamics 365 Finance version 10.0.9 or 10.0.10, you might receive the following error message during data upgrade:
+
+> Table Sync Failed for Table: WarrantyGroupConfigurationItem
+
+To resolve the issue, roll back the database upgrade, install the quality updates in the destination environment, and then rerun the data upgrade. 
+
 ### KB number 3170386
 
 If KB number 3170386 isn't installed, you will receive the following error message:
@@ -363,7 +372,7 @@ This error is caused by a failure in the pre-sync or the post-sync substep of th
 
 2. In Management Studio, run the following **SELECT** statement.
 
-    ```
+    ```sql
     SELECT * FROM RELEASEUPDATELOG
     ```
 

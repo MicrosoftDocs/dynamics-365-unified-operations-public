@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a tax assessment - ICMS (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create a tax assessment for the ICMS tax for a selected booking period. This tax amount considers the amount of ICMS tax to recover and the amount of ICMS tax to pay from the fiscal documents. For the amount that is due after the tax assessment, you can make the tax payment to the tax authority. This recording uses the BRMF demo company.
 

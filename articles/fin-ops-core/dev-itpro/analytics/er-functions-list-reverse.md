@@ -38,7 +38,7 @@ The `REVERSE` function returns the specified list as a *Record list* value in re
 
 ## Syntax
 
-```
+```vb
 REVERSE (list)
 ```
 

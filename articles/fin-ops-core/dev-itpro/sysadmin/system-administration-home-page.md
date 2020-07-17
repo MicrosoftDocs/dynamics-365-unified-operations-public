@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 10/03/2019
+ms.date: 06/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -85,6 +85,7 @@ Because rules can be set up for automatic role assignment, the administrator doe
 
 - [Role-based security](role-based-security.md)
 - [Security architecture](security-architecture.md)
+- [Encryption in Finance and Operations apps](encryption.md)
 
 ## Batch processing
 Many tasks can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
@@ -115,6 +116,11 @@ The Finance and Operations mobile app enables your organization to make its busi
 - [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
 - [Available mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
 
+## Process Automation
+The process automation framework allows administrators to view and create automated processes that will be scheduled with the batch server.  The added layer of visibility of scheduled work is presented in a calendar view that can be extended for use in application areas to allow non-system administrator users to view work that impacts their area. 
+
+- [Process Automation home page](process-automation.md)
+
 ## General administration
 - [Demo data overview](../../fin-ops/get-started/demo-data.md)
 - [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
@@ -124,3 +130,5 @@ The Finance and Operations mobile app enables your organization to make its busi
 - [Preconfigured system accounts](pre-configured-system-accounts.md)
 - [Export business-to-business (B2B) users to Azure Active Directory](implement-b2b.md)
 - [Set the session idle timeout](session-idle-timeout.md)
+- [Build Odata metadata cache when AOS starts](odata-warmup.md)
+- [Configure and manage database logging](configure-manage-database-log.md)

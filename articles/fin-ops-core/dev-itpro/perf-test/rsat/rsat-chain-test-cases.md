@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Chain test cases
+title: Copy variables to chain test cases
 description: This topic shows how the Regression Suite Automation Tool can be used to chain test cases, which is the ability of a test to pass values to other tests. 
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Chain test cases
+# Copy variables to chain test cases
 
 [!include [banner](../../includes/banner.md)]
 
@@ -39,7 +39,7 @@ To save the value of a variable while recording the test in Task Recorder, right
  
 ![Copy menu item in task recorder](media/task-recorder-copy.png)
 
-In the Excel parameters file, these saved values appear in the **Saved variables** table on the **General** Tab.
+When RSAT generates the Excel parameters file, these saved values appear in the **Saved variables** table on the **General** Tab.
  
 ![Saved variables in Excel](media/saved-variables.png)
  
@@ -56,4 +56,33 @@ You can create formulas that contain saved (copied) variables. If you have been 
 In the image below, two different variables are used in a formula.
  
 ![Creating a formula in Excel](media/formulas.png)
+
+As of RSAT version 1.220, you can also use Excel functions, such as **ROUND**, **CONCAT**, and **UPPER**, to create formulas with RSAT variables. This is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT. 
+
+For example,
++ To round a value into the nearest whole number, use:
+
+    ``` =ROUND({{Item_Price_3274_Copy}}, 0)```
+
++ To concatenate strings, use:
+
+    ```=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})```
  
++ To calculate and format a date and convert it to a string, use:
+
+    ```=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")```
+
+    (Always convert RSAT date values to text for reliable test case execution.)
+
+RSAT evaluates these formulas during test execution, so you must precede the formula with a single quote **\'** to prevent Excel from attempting to prematurely calculate the formula. An example is shown in this image.
+
+![Creating a formula in Excel 2](media/formulas-2.png)
+
+## Use variables in message validation
+
+You can also use a saved variable as part of a string in the Message Validation tab. Here is an example that validates that the message `Customer account {{variable name}} already exists.` It appears in the infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
+
+Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
+
+![message with variable](media/rsat-message-with-variable.png)
+

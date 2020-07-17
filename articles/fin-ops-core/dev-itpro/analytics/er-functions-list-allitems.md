@@ -38,7 +38,7 @@ The `ALLITEMS` function runs as an in-memory selection and returns a new flatten
 
 ## Syntax
 
-```
+```vb
 ALLITEMS (path)
 ```
 

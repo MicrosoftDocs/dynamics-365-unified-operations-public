@@ -82,7 +82,7 @@ This topic shows how to perform the following tasks:
 
 14.  Fill in the message with the required fields.
 
-    <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
+     <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
 
 15. Save the flow.
 

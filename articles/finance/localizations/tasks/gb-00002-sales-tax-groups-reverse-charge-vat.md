@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # GB-00002 Set up sales tax groups for reverse charge VAT
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through setting up reverse charge sales tax groups for purchasing and sales purposes. This walkthrough was created using the demo company GBSI.
 

@@ -38,7 +38,7 @@ The `LEN` function returns the number of characters in the specified string as a
 
 ## Syntax
 
-```
+```vb
 LEN (text)
 ```
 

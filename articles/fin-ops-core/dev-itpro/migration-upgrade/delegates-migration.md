@@ -54,7 +54,7 @@ A delegate declaration must have three things:
 
 Delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler. A delegate takes no action itself. This is enforced by having a void type and having no code in the method. 
 
-```
+```xpp
 delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _result)
 {
 }
@@ -107,7 +107,7 @@ In the Application Suite, we have introduced the notion of discounts by adding a
 
 The TaxCalculator class, in the lower Foundation layer, does not have access to the DiscountRate in the Suite layer and must use a delegate to update receipt total to use in the tax calculation. In the SimpleTax class, we create a delegate method, applyDiscountDelegate, with the state information that is needed by the handler in the signature. A delegate method is always empty because its only purpose is to define the contract between the delegate instance and the handler. 
 
-```
+```xpp
 delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _result)
 {
 } 

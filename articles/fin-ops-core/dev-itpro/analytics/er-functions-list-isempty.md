@@ -38,7 +38,7 @@ The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified li
 
 ## Syntax
 
-```
+```vb
 ISEMPTY (list)
 ```
 

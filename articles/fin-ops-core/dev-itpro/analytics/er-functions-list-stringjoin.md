@@ -38,7 +38,7 @@ The `STRINGJOIN` function returns a *String* value that consists of concatenated
 
 ## Syntax
 
-```
+```vb
 STRINGJOIN (list, field, delimiter)
 ```
 

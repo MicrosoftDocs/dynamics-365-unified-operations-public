@@ -3,9 +3,9 @@
 
 title: Apply updates to on-premises deployments
 description: This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
-author: manalidongre
+author: PeterRFriis
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
@@ -53,7 +53,7 @@ To apply updates to an on-premises environment after it has been deployed, in LC
 > If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy on-premises environments](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
-The following steps can be used to apply X++, All Binary, or Platform bianry updates. 
+The following steps can be used to apply X++, All Binary, or Platform binary updates. 
 
 > [!IMPORTANT]
 > The application of updates requires downtime for your environment. Therefore, no business transactions can be performed in the environment during the update. When you complete the following steps, verify that the system isn't being used, and that an official downtime notice has been communicated to all system users.
@@ -110,7 +110,7 @@ Before you update a production environment, you must successfully complete the p
 4. The rest of the Update flow is the same as that of a sandbox environment. Your update experience will differ based on the version of the local agent running on your environment. We recommend that you always run with the latest version.
 
 ## Resolve a failed update application
-When preparation fails, the envrironment state is **Deployed**. When the application of an update fails, the environment state is **Failed**. The first step is to determine why there is a failure. The location of the logs varies, depending on the stage where the failure occurred:
+When preparation fails, the environment state is **Deployed**. When the application of an update fails, the environment state is **Failed**. The first step is to determine why there is a failure. The location of the logs varies, depending on the stage where the failure occurred:
 
 - **Preparation stage:** If the operation fails during the **Preparation** stage, the logs are uploaded to LCS. In the log files, select **Download logs** to download the log files. If the package has any merge issues, the error is included in the log file.
 - **Deploying stage:** If the operation fails during the **Deploying** stage, the logs are located in the on-premises environment. You must sign in to the environment, and then access the logs and event viewer.

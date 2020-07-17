@@ -38,7 +38,7 @@ The `FA_BALANCE` function returns a *Container (record)* value that consists of 
 
 ## Syntax
 
-```
+```vb
 FA_BALANCE (fixed asset code, value model code, reporting year, reporting date)
 ```
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define shift depreciation rates (India)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through defining shift depreciation rates. You can define rates for single shift, double shift, and triple shift to calculate depreciation using Straight line percentage method or Reducing balance method. The demo data company used to create this procedure is INMF.
 

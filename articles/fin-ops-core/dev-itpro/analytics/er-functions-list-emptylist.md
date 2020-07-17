@@ -38,7 +38,7 @@ The `EMPTYLIST` function returns an empty *Record list* value by using the speci
 
 ## Syntax
 
-```
+```vb
 EMPTYLIST (list)
 ```
 

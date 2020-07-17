@@ -125,7 +125,9 @@ Non-date-effective data sources aren't affected.
 
 Non-date-effective data sources aren't affected.
 
-The following screen shot shows the **Apply Date Filter** property set to **Yes**. Therefore, date filters will be applied to reads of the **Address** data source. [![Apply Date Filter = Yes](./media/date1.png)](./media/date1.png)
+The following screen shot shows the **Apply Date Filter** property set to **Yes**. Therefore, date filters will be applied to reads of the **Address** data source. 
+
+[![Apply Date Filter = Yes](./media/date1.png)](./media/date1.png)
 
 ## Write activities
 This section describes your options for configuring the behavior of date-effective entities and their date-effective data sources. We will start by reviewing the concept of date-effective tables and contrasting them with date-effective entities. **Date-effective table:** When data is inserted or updated in a date-effective table, the process has the option of calling the **xRecord.validTimeStateUpdateMode** method on the table buffer. The method accepts an element of the **ValidTimeStateUpdate** enumeration. Here are the available element values:
@@ -143,7 +145,9 @@ This section shows how to create a date-effective entity.
 
 1.  Click **File** &gt; **New** &gt; **Project** to create a new project.
 2.  In Solution Explorer, right-click your project, and then click **Properties**. The **Property Pages** dialog box for your project opens.
-3.  Change the value of the **Synchronize database on build** property to **True**, and then click **OK**. You must set this property only one time per project. [![Synchronize database on build = True](./media/date3.png)](./media/date3.png)
+3.  Change the value of the **Synchronize database on build** property to **True**, and then click **OK**. You must set this property only one time per project. 
+
+    [![Synchronize database on build = True](./media/date3.png)](./media/date3.png)
 
 #### Add a new data entity to your project
 
@@ -151,9 +155,18 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pro
 
 1.  In the left pane, select **Microsoft Dynamics 365 Artifacts**, and then click **Data Entity** in the left column of the main pane.
 2.  Click **Add**. The **Data Entity View** wizard starts.
-3.  Specify the property values for the data entity that you are creating, as shown in the following screen shot. The most important field is **Primary data source**, where you select **FMVehicleRate**. [![Primary data source = FMVehicleRate](./media/date5.png)](./media/date5.png) Click **Next**.
+3.  Specify the property values for the data entity that you are creating, as shown in the following screen shot. The most important field is **Primary data source**, where you select **FMVehicleRate**. 
+
+    [![Primary data source = FMVehicleRate](./media/date5.png)](./media/date5.png) Click **Next**.
+
 4.  Add fields to the entity from the primary data source, **FMVehicleRate**.
-5.  Select all fields, and then click **Finish**. [![Selecting all the newly added fields](./media/date6.png)](./media/date6.png) The items are added to the project in Solution Explorer. [![The project in Solution Explorer](./media/date7.png)](./media/date7.png)
+5.  Select all fields, and then click **Finish**. 
+
+    [![Selecting all the newly added fields](./media/date6.png)](./media/date6.png) 
+    
+    The items are added to the project in Solution Explorer. 
+    
+    [![The project in Solution Explorer](./media/date7.png)](./media/date7.png)
 
 #### Build your project
 
@@ -162,21 +175,31 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pro
 
 #### Validate the property values
 
--   In Solution Explorer, select the **FMVehicleRateEntity** node, and validate the properties of the **FMVehicleRateEntity** entity by comparing them to the values in the **Properties** pane. [![Values in the Properties pane](./media/date8.png)](./media/date8.png)
+-   In Solution Explorer, select the **FMVehicleRateEntity** node, and validate the properties of the **FMVehicleRateEntity** entity by comparing them to the values in the **Properties** pane. 
+
+    [![Values in the Properties pane](./media/date8.png)](./media/date8.png)
 
 #### Make your entity date effective
 
-1.  In Solution Explorer, right-click the **FMVehicleRateEntity** node, and then click **Open**. The designer for the entity opens in the middle pane. [![Designer for the FMVehicleRateEntity entity](./media/date9.png)](./media/date9.png)
-2.  Change the value of the **Validate Time State Enabled** property to **Yes**. [![Validate Time State Enabled = Yes](./media/date10.png)](./media/date10.png)
+1.  In Solution Explorer, right-click the **FMVehicleRateEntity** node, and then click **Open**. The designer for the entity opens in the middle pane. 
+
+    [![Designer for the FMVehicleRateEntity entity](./media/date9.png)](./media/date9.png)
+
+2.  Change the value of the **Validate Time State Enabled** property to **Yes**. 
+
+    [![Validate Time State Enabled = Yes](./media/date10.png)](./media/date10.png)
 
 #### Configure the Valid Time State Update property for the date-effective data source
 
--   Select the **FMVehicleRate** data source, and then set the **Valid Time State Update** property to **CreateNewTimePeriod**. [![Valid Time State Update = CreateNewTimePeriod](./media/date11.png)](./media/date11.png)
+-   Select the **FMVehicleRate** data source, and then set the **Valid Time State Update** property to **CreateNewTimePeriod**. 
+
+    [![Valid Time State Update = CreateNewTimePeriod](./media/date11.png)](./media/date11.png)
 
 #### Test your project
 
 -   Build your project again, and run the following X++ code to test your project.
-```
+
+```xml
 /// <summary>
     /// Runs the class with the specified arguments.
     /// </summary>

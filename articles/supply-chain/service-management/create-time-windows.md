@@ -4,7 +4,7 @@
 title: Create time windows 
 description: You can use time windows to optimize the scheduling of service order lines.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMATimeAgreement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

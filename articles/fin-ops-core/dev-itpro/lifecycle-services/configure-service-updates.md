@@ -3,9 +3,9 @@
 
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31 
 ms.dyn365.ops.version: Platform update 24 
 
@@ -81,3 +81,14 @@ After you set the update environment and update cadence, Microsoft generates an 
 For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
 For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+
+## Canceled updates
+A scheduled update could be canceled for various reasons. Here are some of the common reasons that could cause a scheduled update to be canceled by Microsoft. 
+- An error was found during update preparation. The update preparation starts approximately 4 hours before the update to ensure that the environment is in a healthy state. If the environment was in a failed state or maintenance mode, the scheduled update will be canceled before it starts.    
+- An error was found while updating the environment. If there were issues during the update, the scheduled update will be canceled and the environment is rolled back to the previous state.  
+- The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be canceled before it starts. 
+- The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be canceled before it starts.
+- You’re enrolled in the [First Release program](https://experience.dynamics.com).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
+
+You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
+

@@ -38,7 +38,7 @@ The `NOT` function returns the reversed logical value of the specified condition
 
 ## Syntax
 
-```
+```vb
 NOT (condition)
 ```
 

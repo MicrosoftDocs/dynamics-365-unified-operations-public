@@ -5,7 +5,7 @@ title: Add a welcome message
 description: This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add a welcome message
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
@@ -45,17 +45,14 @@ When a welcome message is added to a shared header fragment, it will be shown on
 
 To add a welcome message to your site, follow these steps.
 
-1. In Dynamics 365 Commerce, go to your site.
+1. In Commerce site builder, go to your site.
 1. Select **Fragments**.
 1. Select the header fragment to add the message to.
 1. In the outline tree, expand **Error/Information messages**.
-1. Select the alert module.
-
-    If an alert module doesn't yet exist, select the ellipsis button (**...**) next to **Error/Information messages**, and then select **Add module**. Select the alert module, and then select **OK**.
-
+1. Select the alert module, and then select **OK**. If an alert module doesn't yet exist, first select the ellipsis button (**...**) next to **Error/Information messages**, and then select **Add module**.
 1. In the property pane on the right, on the **Data** tab, select **Add Data Source**, and then select **Content**.
 1. In the **Input Text** field, enter the text of the welcome message.
-1. Save the header fragment, check it in, and publish it.
+1. Select **Save**, select **Finish editing** to check in the header fragment, and then select **Publish** to publish it. 
 
 The welcome message will now appear at the top of every site page that uses the selected header fragment.
 

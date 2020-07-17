@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Mass financial period close
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic shows how to place a period on hold or permanently close a period or more than one legal entity at a time. In addition, the task will show how to restrict user group posting to specific modules.
 

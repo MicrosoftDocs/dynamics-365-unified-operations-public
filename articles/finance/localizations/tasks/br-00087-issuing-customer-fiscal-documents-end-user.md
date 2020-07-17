@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Issue customer fiscal documents (for end users) (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can issue a fiscal document to a customer who bought goods from the fiscal establishment. The calculation of the ICMS tax base amount considers the IPI tax amount. This recording uses the BRMF demo company.
 

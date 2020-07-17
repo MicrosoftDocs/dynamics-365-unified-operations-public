@@ -38,7 +38,7 @@ The `NOW` function returns a *DateTime* value that represents the current applic
 
 ## Syntax
 
-```
+```vb
 NOW ()
 ```
 

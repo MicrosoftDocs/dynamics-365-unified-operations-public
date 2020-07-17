@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Learn how to make Finance and Operations applications work for your business, using the resources in this topic to find great content for end users, developers, and IT professionals. 
 
-Much of this content also applies to the related products: Dynamics 365 Retail and Talent. 
+Much of this content also applies to the related products: Dynamics 365 Commerce and Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -89,9 +89,9 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Benefits</a></p>
-<p><a href="../../talent/performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../../talent/questionnaires.md">Questionnaire</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Benefits</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Employee development and training</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Questionnaires</a></p>
 <p><a href="hr/manage-recruiting-process.md">Recruiting</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
 
@@ -134,16 +134,17 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 </td>
 <td>
 <h3>Related products</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Call center</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Benefits</a></p>
-<p><a href="../../talent/performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../../talent/questionnaires.md">Questionnaire</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administrator Guide</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Developer Guide</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">User Guide</a></p>
+
 
 </td>
 </tr>

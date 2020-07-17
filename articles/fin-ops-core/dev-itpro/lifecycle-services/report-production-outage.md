@@ -3,7 +3,7 @@
 
 title: Report a production outage
 description: This topic explains how to report a production outage through Lifecycle Services (LCS).
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2018-4-30 
 ms.dyn365.ops.version: 8.0
 ---

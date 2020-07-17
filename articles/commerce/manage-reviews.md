@@ -5,7 +5,7 @@ title: Manage ratings and reviews
 description: This topic explains how to manage ratings and reviews by using the Microsoft Dynamics 365 Commerce ratings and reviews moderation tool.
 author:  gvrmohanreddy 
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage ratings and reviews
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how to manage ratings and reviews by using the Microsoft Dynamics 365 Commerce ratings and reviews moderation tool.
@@ -43,6 +42,16 @@ Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically mo
 - Moderate reviews by responding to them or removing them.
 - Delete a customer's reviews at the customer's request.
 - Bulk-import ratings and reviews data for all products into a Microsoft Power BI template, so that trends for ratings and reviews can be analyzed.
+
+## Access ratings and reviews moderation features
+
+To access ratings and reviews moderation features in the e-Commerce site management tool, follow these steps.
+
+1. Sign in to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
+1. Open the project that contains the environment where you want to initialize e-Commerce.
+1. In the **Environments** section, select the environment.
+1. Under **Environment features**, select **Retail manage**.
+1. On the **e-Commerce** tab under **Links**, select **e-Commerce Site management tool**.
 
 ## Read a review 
 

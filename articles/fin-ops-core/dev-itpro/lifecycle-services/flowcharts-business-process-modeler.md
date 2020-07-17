@@ -2,10 +2,10 @@
 # required metadata
 
 title: Flowcharts in Business process modeler (BPM)
-description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
-author: robadawy
+description: This topic explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
+author: AngelMarshall 
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: tsmarsha
 ms.search.validFrom: 
 ms.dyn365.ops.version: 7.0
 
@@ -34,13 +34,15 @@ ms.dyn365.ops.version: 7.0
 
 [!include [banner](../includes/banner.md)]
 
-You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can modify the default connected flowcharts, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library. It also explains how to upload and view unconnected flowcharts.
+> [!IMPORTAMT]
+> Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
 
-You can start with default connected flowcharts from Dynamics 365 Finance and Operations apps, and modify them, create and upload connected flowcharts from Task recorder, or you can import a business process model flowchart from another library. Connected flowcharts can also be used to create gaps for export to Microsoft Team Foundation Server. You can also create and upload high-level flowcharts from Microsoft Visio.
+You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This topic explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
 
--   Connected flowcharts are based on data recorded in the Task recorder and uploaded to Business process modeler. They include properties, security roles, and related information. Each flowchart also includes detailed steps.
+-   Connected flowcharts are the automatically generated flowcharts based on data recorded in Task recorder and uploaded to Business process modeler, this also includes the process steps from the task recording. 
 -   Unconnected flowcharts are uploaded directly from Visio.
 
+<!---
 ## Connected flowcharts
 This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler (BPM)](upload-business-processes-bpm-task-recorder.md). 
 
@@ -63,6 +65,7 @@ Activities that can appear in flowcharts are described in the following table.
 | Roles                     | Role swimlane. Add roles when a process requires actions by multiple roles to complete. Swimlanes list the default roles that can perform the action. |
 
 ### 
+--->
 
 ### View a connected flowchart
 
@@ -70,17 +73,13 @@ Default connected flowcharts are available for many nodes in the industry-standa
 
 To view a connected flowchart, follow these steps:
 
-1.  Sign in to Microsoft Dynamics Lifecycle Services, open a project, and then click **Business process modeler**.
-2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md).
+1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
+2.  In the **Project libraries** section, select a library to display it. 
 3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
-    The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Related information is displayed in the right pane, depending on what is selected in the diagram:
-    -   If nothing is selected on the flowchart, the right pane displays a detailed list of steps for the process, usage characteristics (setup, master, or transactions), and a video. You can double-click the video to view it in full-screen mode. Usage characteristics are used in the Usage profiler to help determine the load required for a process. Identify processes as Setup when they are configuration tasks, as Master when they are Master data processes, and as Transaction when they are transactional processes. Setup and master processes are assumed to require less processing than transaction processes.
-    -   If the title of a swimlane is selected, the right pane displays a list of the security roles that have access to the activities that are in the swimlane, and their corresponding duties.
-    -   If a flowchart activity shape is selected, the right pane displays information about the selected activity. This information comes from standard metadata in the application. For example, if a shape represents a form, the metadata includes properties such as the Application Object Tree (AOT) name, the label for the form title, and the data sources for the form.
+    The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Process steps are displayed in the right pane. 
 
-4.  The app bar can be activated when an object is selected in a flowchart. Common actions include **Edit**, **Delete**, **Save**, **Export**, **Not a gap**, and **Gap list**. Some options on the app bar vary depending on the object selected.
-
+<!---
 ### Modify a connected flowchart
 
 You can modify an existing connected flowchart to match your company's business process.
@@ -103,16 +102,18 @@ You can import a business process model flowchart from an existing business proc
 1.  Select an existing task that does not have an associated flowchart, right-click it to display the app bar, and then click **Import**.
 2.  On the **Import business process model** page, select a library to import from, and then select the appropriate business process. Only business processes with existing model flowcharts appear in the list.
 3.  When the **Do you want to copy** message appears, click **Yes**. When the import is complete, the flowchart will be associated with the original task. Gap information and the version history are also copied.
+--->
 
 ### Export a flowchart as a Visio file
 
 You can export a business process model flowchart to a Visio file.
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
-2.  In the **My libraries** section, select a library to display it.
-3.  Expand the library and then click any library node that has a flowchart icon associated with it. The flowchart is displayed.
-4.  Right-click the flowchart to display the app bar, and then click **Export**.
-5.  The file will be treated as a download that you can open or save.
+2.  In the **Project libraries** section, select a library to display it.
+3.  Expand the library and then select any library node that has a flowchart icon associated with it.
+4.  From the **Overview** pane, select **Diagram** to view the flowchart.   
+5.  From the flowchart tab, click **Export** to save as a Visio file. 
 
+<!--
 ### Mark a change to not be a gap
 Please note that gap functionality has been deprecated in LCS. To learn more about how to use Azure DevOps Synchronization, see [Synchronize BPM libraries with Azure DevOps](synchronize-bpm-vsts.md).
 
@@ -134,22 +135,25 @@ To generate a gap analysis and export it, follow these steps:
 3.  Expand the library and then click any library node that has a flowchart icon associated with it. The flowchart is displayed.
 4.  Right-click the flowchart to display the app bar, and then click **Gap list**. The **Gap analysis** page is displayed. The page includes all modifications for the project that you are working with. It includes changes to the standard library and to all default flowcharts for the project.
 5.  Optional: To export the gap analysis to a comma-separated file, right-click to display the app bar, and then click **Export**. A .csv file is created. You can import the file into Visual Studio Team Foundation Server to create work items that represent the work that is required to fill in the gaps.
+-->
 
 ## Unconnected flowcharts
-Unconnected flowcharts can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
+Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
+
 ### Upload an unconnected flowchart
 
-1.  In the **My libraries** section, open a library.
-2.  Expand the library and then click the name of the library node that you want to upload an unconnected flowchart for. A **Visio** tab opens.
-3.  Click **Upload now**, select the appropriate file, and click **Open**.
-4.  If you have uploaded the wrong file, you can delete the existing one, and replace it.
+1.  In the **Project libraries** section, select a library to display it.
+2.  Expand the library and then click any library node that has a flowchart icon associated with it.
+3.  From the **Overview** pane, select **Diagram**.   
+5.  From the **Visio** tab, click **Upload** to upload a Visio file.
 
+> [!Note] 
+> If you have uploaded the wrong file, you can delete the existing one, and upload a new one to replace it.
+
+<!--
 ### View an unconnected flowchart
 
 A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
-
-
-
-
+--->

@@ -38,7 +38,7 @@ The `CHAR` function returns a *String* value that presents a single character th
 
 ## Syntax
 
-```
+```vb
 CHAR (number)
 ```
 

@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Queries in the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 A query class provides fluent application programming interfaces (APIs) that are used to find an instance of the corresponding entity, based on various criteria. Query classes are often used in validation scenarios. They are usually used together with specifications.
 
@@ -49,7 +47,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```xpp
 AtlQueryWHSLoadLines
 
 AtlQueryInventTransferOrderLines
@@ -65,7 +63,7 @@ Query classes should provide fluent setter methods to specify ranges for the que
 
 ### Example
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forSalesOrder(salesOrder).single();
 ```
 
@@ -84,7 +82,7 @@ In this naming convention, `<QueryRangeName>` is the name of the field that the 
 
 ### Examples
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single();
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();

@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Register and post a postdated check for a customer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-You can register details of a postdated check received from a customer. You can also post the postdated check and generate financial transactions.   Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer. This procedure uses the USMF demo company.
+You can register details of a postdated check received from a customer. You can also post the postdated check and generate financial transactions.   Complete the following tasks before you register and post a postdated check received from a customer:   * Set up postdated check in the Cash and bank management page * Set up a method of payment for postdated checks   The role for this procedure is Treasurer. This procedure uses the USMF demo company.
 
 1. Go to Accounts receivable > Payments > Payment journal.
 2. Click New.

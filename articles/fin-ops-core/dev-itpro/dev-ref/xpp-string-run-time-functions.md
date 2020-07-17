@@ -41,7 +41,9 @@ match
 
 Searches for a string or expression in another string.
 
-    int match(str pattern, str text)
+```xpp
+int match(str pattern, str text)
+```
 
 ### Parameters
 
@@ -143,7 +145,9 @@ The search is case-insensitive. The following special characters can be used to 
 ## strAlpha
 Copies only the alphanumeric characters from a string.
 
-    str strAlpha(str _text)
+```xpp
+str strAlpha(str _text)
+```
 
 ### Parameters
 
@@ -161,19 +165,23 @@ For example, **strAlpha("2+2=5 is this correct?")** returns the string **225isth
 
 ### Example
 
-    static void strAlphaExample(Args _arg)
-    {
-            str s;
-            ;
-            s = strAlpha("?a*bc123.");
-            print s;
-            pause;
-    }
+```xpp
+static void strAlphaExample(Args _arg)
+{
+    str s;
+    ;
+    s = strAlpha("?a*bc123.");
+    print s;
+    pause;
+}
+```
 
 ## strCmp
 Compares two text strings.
 
-    int strCmp(str text1, str text2)
+```xpp
+int strCmp(str text1, str text2)
+```
 
 ### Parameters
 
@@ -190,15 +198,19 @@ Compares two text strings.
 
 The comparison performed by this method is case-sensitive.
 
-    print strCmp("abc", "abc"); //Returns the value 0.
-    print strCmp("abc", "ABC"); //Returns the value 1.
-    print strCmp("aaa", "bbb"); //Returns the value -1.
-    print strCmp("ccc", "bbb"); //Returns the value 1.
+```xpp
+print strCmp("abc", "abc"); //Returns the value 0.
+print strCmp("abc", "ABC"); //Returns the value 1.
+print strCmp("aaa", "bbb"); //Returns the value -1.
+print strCmp("ccc", "bbb"); //Returns the value 1.
+```
 
 ## strColSeq
 Converts all uppercase characters to lowercase characters, and converts all characters that have accents to the corresponding unaccented lowercase characters.
 
-    str strColSeq(str text)
+```xpp
+str strColSeq(str text)
+```
 
 ### Parameters
 
@@ -223,17 +235,21 @@ For Unicode-compliant functionality, use the Win32 LCMapString application progr
 
 The following example prints **abcdeabcde**.
 
+```xpp
     static void strColSeqExample(Args _arg)
     {
             ;
             print strColSeq("");
             pause;
     }
+```
 
 ## strDel
 Creates a copy of a string, from which the specified substring is removed.
 
-    str strDel(str _text, int _position, int _number)
+```xpp
+str strDel(str _text, int _position, int _number)
+```
 
 ### Parameters
 
@@ -251,13 +267,17 @@ The remaining characters that are copied from the string.
 
 The **strDel** function is complementary to the **substr** function.
 
-    strDel("ABCDEFGH",2,3); //Returns the string "AEFGH".
-    strDel("ABCDEFGH",4,3); //Returns the string "ABCGH".
+```xpp
+strDel("ABCDEFGH",2,3); //Returns the string "AEFGH".
+strDel("ABCDEFGH",4,3); //Returns the string "ABCGH".
+```
 
 ## strFind
 Searches a string for the first occurrence of one of the specified characters.
 
-    int strFind(str _text, str _characters, int _position, int _number)
+```xpp
+int strFind(str _text, str _characters, int _position, int _number)
+```
 
 ### Parameters
 
@@ -276,15 +296,19 @@ The value of the position of the first occurrence of one of the specified charac
 
 To search from the beginning of the string to the end, use **1** as the value of the *\_position* parameter. If the value of the *\_number* parameter is negative, the system searches the number of characters backward from the specified position. The search isn't case-sensitive. Here is an example.
 
-    strFind("ABCDEFGHIJ","KHD",1,10); //Returns the value 4 (the position where "D" was found).
-    strFind("ABCDEFGHIJ","KHD",10,-10); //Returns the value 8 (the position where "H" was found).
+```xpp
+strFind("ABCDEFGHIJ","KHD",1,10); //Returns the value 4 (the position where "D" was found).
+strFind("ABCDEFGHIJ","KHD",10,-10); //Returns the value 8 (the position where "H" was found).
+```
 
 The **strFind** function is complementary to the **strNFind** function.
 
 ## strFmt
 Formats the specified string and substitutes any occurrences of n with the nth argument.
 
-    str strFmt(str _string, ...)
+```xpp
+str strFmt(str _string, ...)
+```
 
 ### Parameters
 
@@ -302,35 +326,39 @@ If an argument isn't provided for a parameter, the parameter will be returned as
 
 ### Example
 
-    static void strFmtExampleJob(Args _arg)
-    {
-            System.Double sysDouble;
-            real r = 8.3456789;
-            int  i = 42;
-            utcDateTime utc = str2DateTime("2008-01-16 13:44:55" ,321); // 321 == YMD.
-            str  s;
-            ;
-            s = strFmt("real = %1, int = %2, utcDateTime = %3, [%4]", r, i, utc);
-            info("X1:  " + s);
-            //
-            sysDouble = r;
-            s = System.String::Format("{0:##.####}", sysDouble);
-            info("N1:  " + s);
-            //
-            s = System.String::Format("{0,6:C}", sysDouble); // $
-            info("N2:  " + s);
-            /**********  Actual Infolog output
-            Message (02:16:05 pm)
-            X1:  real = 8.35, int = 42, utcDateTime = 1/16/2008 01:44:55 pm, [%4]
-            N1:  8.3457
-            N2:   $8.35
-            **********/
-    }
+```xpp
+static void strFmtExampleJob(Args _arg)
+{
+    System.Double sysDouble;
+    real r = 8.3456789;
+    int  i = 42;
+    utcDateTime utc = str2DateTime("2008-01-16 13:44:55" ,321); // 321 == YMD.
+    str  s;
+    ;
+    s = strFmt("real = %1, int = %2, utcDateTime = %3, [%4]", r, i, utc);
+    info("X1:  " + s);
+    //
+    sysDouble = r;
+    s = System.String::Format("{0:##.####}", sysDouble);
+    info("N1:  " + s);
+    //
+    s = System.String::Format("{0,6:C}", sysDouble); // $
+    info("N2:  " + s);
+    /**********  Actual Infolog output
+    Message (02:16:05 pm)
+    X1:  real = 8.35, int = 42, utcDateTime = 1/16/2008 01:44:55 pm, [%4]
+    N1:  8.3457
+    N2:   $8.35
+    **********/
+}
+```
 
 ## strIns
 Builds a string by inserting one string into another.
 
-    str strIns(str _text1, str _text2, int _position)
+```xpp
+str strIns(str _text1, str _text2, int _position)
+```
 
 ### Parameters
 
@@ -348,13 +376,17 @@ The combined text string.
 
 The **strIns** function is complementary to the **strDel** function. If the value of the *\_position* parameter is more than the length of the original string, the string to insert is appended to the end of the original string.
 
-    strIns("ABFGH","CDE",3); //Returns the string "ABCDEFGH".
-    strIns("ABCD","EFGH",10); //Returns the string "ABCDEFGH".
+```xpp
+strIns("ABFGH","CDE",3); //Returns the string "ABCDEFGH".
+strIns("ABCD","EFGH",10); //Returns the string "ABCDEFGH".
+```
 
 ## strKeep
 Builds a string by using only the characters from the first input string that the second input string specifies should be kept.
 
-    str strKeep(str _text1, str _text2)
+```xpp
+str strKeep(str _text1, str _text2)
+```
 
 ### Parameters
 
@@ -369,15 +401,19 @@ A string of the characters that are kept.
 
 ### Remarks
 
-    strKeep("ABBCDDEFGHB","BCD"); //Returns the string "BBCDDB".
-    strKeep("abcZcba","bc") //Returns the string "bccb".
+```xpp
+strKeep("ABBCDDEFGHB","BCD"); //Returns the string "BBCDDB".
+strKeep("abcZcba","bc") //Returns the string "bccb".
+```
 
 The **strKeep** function is complementary to the **strRem** function.
 
 ## strLen
 Calculates the length of the specified string.
 
-    int strLen(str text)
+```xpp
+int strLen(str text)
+```
 
 ### Parameters
 
@@ -391,13 +427,17 @@ The length of the specified string.
 
 ### Remarks
 
-    strLen("ABC"); //Returns the value 3.
-    strLen("ABCDEFGHIJ"); //Returns the value 10.
+```xpp
+strLen("ABC"); //Returns the value 3.
+strLen("ABCDEFGHIJ"); //Returns the value 10.
+```
 
 ## strLine
 Retrieves a single line from a string that spans multiple lines.
 
-    str strLine(str string, int count)
+```xpp
+str strLine(str string, int count)
+```
 
 ### Parameters
 
@@ -416,7 +456,7 @@ The first line of the string has an offset of 0. You can assign multiple lines t
 
 ### Example
 
-```X++
+```xpp
 str mytxt = "first-line\nsecond-line\nlast-line";
 // Prints "second-line".
 print strLine(mytxt,1);
@@ -427,7 +467,9 @@ print strLine(mytxt,2);
 ## strLTrim
 Removes leading blanks from a text string.
 
-    str strLTrim(str text)
+```xpp
+str strLTrim(str text)
+```
 
 ### Parameters
 
@@ -445,13 +487,17 @@ The **strLTrim** function is complementary to the **strRTrim** function.
 
 ### Example
 
-    // Returns the text string "ABC-DEFG".
-    strLTrim("   ABC-DEFG");
+```xpp
+// Returns the text string "ABC-DEFG".
+strLTrim("   ABC-DEFG");
+```
 
 ## strLwr
 Converts all letters in the specified string to lowercase.
 
-    str strLwr(str _text)
+```xpp
+str strLwr(str _text)
+```
 
 ### Parameters
 
@@ -469,17 +515,20 @@ The **strLwr** function is complementary to the **strUpr** function. The **strLw
 
 ### Example
 
-    static void strLwrExample(Args _args)
-    {
-            // Returns the text string "abcdd55efghij".
-            print strLwr("Abcdd55EFGHIJ");
-            pause;
-    }
-
+```xpp
+static void strLwrExample(Args _args)
+{
+    // Returns the text string "abcdd55efghij".
+    print strLwr("Abcdd55EFGHIJ");
+    pause;
+}
+```
 ## strNFind
 Searches part of a text string for the first occurrence of a character that isn't included in the specified list of characters.
 
-    int strNFind(str _text, str _characters, int _position, int _number)
+```xpp
+int strNFind(str _text, str _characters, int _position, int _number)
+```
 
 ### Parameters
 
@@ -498,17 +547,21 @@ The position of the first occurrence of a character that isn't specified by the 
 
 The search isn't case-sensitive. To search from the beginning of the string to the end, use a value of **1** for the *\_position* parameter. If a minus sign precedes the value of the *\_number* parameter, the characters will be searched in reverse order, starting from the position that is specified by the *\_position* parameter.
 
-    strNFind("ABCDEFGHIJ","ABCDHIJ",1,10); //Returns the value 5 (the position of "E");
-    strNFind("CDEFGHIJ","CDEFGIJ",10,-10); //Returns the value 6 (the position of "H").
-    strNFind("abcdef","abCdef",3,2) //Returns the value 0.
-    strNFind("abcdef", "abcef",3,2) //Returns the value 4.
+```xpp
+strNFind("ABCDEFGHIJ","ABCDHIJ",1,10); //Returns the value 5 (the position of "E");
+strNFind("CDEFGHIJ","CDEFGIJ",10,-10); //Returns the value 6 (the position of "H").
+strNFind("abcdef","abCdef",3,2) //Returns the value 0.
+strNFind("abcdef", "abcef",3,2) //Returns the value 4.
+```
 
 The **strNFind** function is complementary to the **strFind** function.
 
 ## strPoke
 Overwrites part of a string with another string.
 
-    str strPoke(str _text1, str _text2, int _position)
+```xpp
+str strPoke(str _text1, str _text2, int _position)
+```
 
 ### Parameters
 
@@ -526,14 +579,18 @@ The new string.
 
 The new string can be longer than the original string. However, if the value of the *\_position* parameter is more than the length of the string, the original string is returned without replacements.
 
-    strPoke("12345678","AAA",3); //Returns the string "12AAA678".
-    strPoke("abcde","4567",4); //Returns the string "abc4567".
-    strPoke("abcde", "4567", "10"); //Returns the string "abcde".
+```xpp
+strPoke("12345678","AAA",3); //Returns the string "12AAA678".
+strPoke("abcde","4567",4); //Returns the string "abc4567".
+strPoke("abcde", "4567", "10"); //Returns the string "abcde".
+```
 
 ## strPrompt
 Appends a string with the specified number of period characters, followed by a colon and space character.
 
-    str strPrompt(str _string, _int len)
+```xpp
+str strPrompt(str _string, _int len)
+```
 
 ### Parameters
 
@@ -550,25 +607,31 @@ A string that looks like a prompt for user input.
 
 In atypical cases, where the value of the *\_len* parameter is only slightly more than the length of the original string, the highest precedence is given to adding the trailing space. Next, precedence is given to the colon. The lowest precedence is given to the periods. Negative values for the *\_len* parameter return the input string appended with a trailing space.
 
-    strPrompt("ab",-1); //Returns "ab ".
-    strPrompt("ab",3); //Returns "ab ".
-    strPrompt("ab",4); //Returns "ab: ".
-    strPrompt("ab",5); //Returns "ab.: ".
-    strPrompt("ab",6); //Returns "ab..: ".
+```xpp
+strPrompt("ab",-1); //Returns "ab ".
+strPrompt("ab",3); //Returns "ab ".
+strPrompt("ab",4); //Returns "ab: ".
+strPrompt("ab",5); //Returns "ab.: ".
+strPrompt("ab",6); //Returns "ab..: ".
+```
 
 ### Example
 
-    static void JobStrPromptDemo(Args _args)
-    {
-            // Printed string is "[abc..: ]"
-            print "[", strPrompt("abc", 7), "]";
-            pause;
-    }
+```xpp
+static void JobStrPromptDemo(Args _args)
+{
+    // Printed string is "[abc..: ]"
+    print "[", strPrompt("abc", 7), "]";
+    pause;
+}
+```
 
 ## strRem
 Removes the characters that are specified in one string from another string.
 
-    str strRem(str text1, str text2)
+```xpp
+str strRem(str text1, str text2)
+```
 
 ### Parameters
 
@@ -585,15 +648,19 @@ The remaining content of the original string.
 
 This function is case-sensitive.
 
-    strRem("abcd_abcd","Bc"); //Returns the string "abd_abd".
-    strRem("ABCDEFGABCDEFG","ACEG"); //Returns the string "BDFBDF".
+```xpp
+strRem("abcd_abcd","Bc"); //Returns the string "abd_abd".
+strRem("ABCDEFGABCDEFG","ACEG"); //Returns the string "BDFBDF".
+```
 
 This function is complementary to the **strKeep** function.
 
 ## strRep
 Repeats a string of characters.
 
-    str strRep(str _text, str _number)
+```xpp
+str strRep(str _text, str _number)
+```
 
 ### Parameters
 
@@ -610,19 +677,23 @@ A new string that contains the contents of the original string that are repeated
 
 The following example prints the text string **ABABABABABAB**.
 
-    static void strRepExample(Args _arg)
-    {
-            str strL;
-            ;
-            strL = strRep("AB",6);
-            print strL;
-            pause;
-    }
+```xpp
+static void strRepExample(Args _arg)
+{
+    str strL;
+    ;
+    strL = strRep("AB",6);
+    print strL;
+    pause;
+}
+```
 
 ## strRTrim
 Removes the trailing space characters from the end of a string.
 
-    str strRTrim(str _text)
+```xpp
+str strRTrim(str _text)
+```
 
 ### Parameters
 
@@ -636,15 +707,19 @@ A copy of the specified string that doesn't include trailing space characters.
 
 ### Remarks
 
-    strRTrim("ABC-DEFG- "); //Returns the string "ABC-DEFG-".
-    strRTrim(" CD "); //Returns " CD".
+```xpp
+strRTrim("ABC-DEFG- "); //Returns the string "ABC-DEFG-".
+strRTrim(" CD "); //Returns " CD".
+```
 
 The **strRTrim** function is complementary to the **strLTrim** function.
 
 ## strScan
 Searches a text string for an occurrence of another string.
 
-    int strScan(str _text1, str _text2, int _position, int _number)
+```xpp
+int strScan(str _text1, str _text2, int _position, int _number)
+```
 
 ### Parameters
 
@@ -663,13 +738,17 @@ The position at which the specified string was found in the string; otherwise, *
 
 The comparisons aren't case-sensitive. Values for the *\_position* parameter that are less than **1** are treated as **1**. The direction of the scan is controlled by the sign that is specified in the *\_number* parameter. A positive sign indicates that each successive comparison will start one position closer to the end of the string. A negative sign indicates that each comparison will start one position closer to the start of the string.
 
-    strScan("ABCDEFGHIJ","DEF",1,10); //Returns the value 4.
-    strScan ("ABCDEFGHIJ","CDE",10,-10); //Returns the value 3.
+```xpp
+strScan("ABCDEFGHIJ","DEF",1,10); //Returns the value 4.
+strScan ("ABCDEFGHIJ","CDE",10,-10); //Returns the value 3.
+```
 
 ## strUpr
 Converts all the letters in a string to uppercase.
 
-    str strUpr(str _text)
+```xpp
+str strUpr(str _text)
+```
 
 ### Parameters
 
@@ -689,16 +768,20 @@ The **strUpr** function is complementary to the **strLwr** function. The **strUp
 
 The following example will print **ABCDD55EFGHIJ**.
 
-    static void strUprExample(Args _args)
-    {
-            print strUpr("Abcdd55EFGhiJ");
-            pause;
-    }
+```xpp
+static void strUprExample(Args _args)
+{
+    print strUpr("Abcdd55EFGhiJ");
+    pause;
+}
+```
 
 ## subStr
 Retrieves part of a string.
 
-    str subStr(str _text, int _position, int _number)
+```xpp
+str subStr(str _text, int _position, int _number)
+```
 
 ### Parameters
 
@@ -716,11 +799,12 @@ A substring of the original string.
 
 If a minus sign precedes the value of the *\_number* parameter, the substring will be selected backward from the specified position.
 
-    subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
-    subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-    subStr("abcdef"),2,99) //Returns the string "cdef".
-    subStr("abcdef",2,3) //Returns the string "bcd".
-    subStr("abcdef",2,-3); //Returns the string "ab".
-
+```xpp
+subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
+subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
+subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,3) //Returns the string "bcd".
+subStr("abcdef",2,-3); //Returns the string "ab".
+```
 
 

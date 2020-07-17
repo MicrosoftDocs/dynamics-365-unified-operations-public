@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create exchange rate providers
-description: This article describes how to set up an exchange rate provider. 
+description: This topic describes how to set up an exchange rate provider. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up an exchange rate provider. 
-
-This article describes the steps that are required in order to set up an exchange rate provider. For the purpose of illustration, the OANDA exchange rate service is used throughout this article. By following the steps that are described in this article, you will create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference this class as you read through this article. To request an OANDA test account and receive information about the OANDA exchange rate service, go to <https://developer.oanda.com/exchange-rates-api/>.
+This topic describes the steps that are required in order to set up an exchange rate provider. For the purpose of illustration, the OANDA exchange rate service is used throughout this article. By following the steps that are described in this article, you will create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference this class as you read through this topic. To request an OANDA test account and receive information about the OANDA exchange rate service, see [OANDA Exchange Rates API](https://developer.oanda.com/exchange-rates-api/).
 
 ## Terminology
 -   **Import currency exchange rates** – The process that retrieves exchange rates from exchange rate providers and imports them. This process is a system operation that supports batch processing.
@@ -45,9 +43,14 @@ This article describes the steps that are required in order to set up an exchang
 -   **Exchange rate provider configuration** – The configuration settings of an exchange rate provider that determine how it will be used.
 -   **Exchange rate service** – A free or paid subscription service that provides a list of exchange rates that have been published. Foreign Exchange Rates Powered by OANDA is an example of a service that provides exchange rates.
 -   **The framework** – The import currency exchange rates framework that coordinates the retrieval of exchange rates from providers and appropriate storage of the exchange rates.
+-   **SysPlugin framework** - This extension framework is based on the Managed Extension Framework. The Managed Extension Framework makes the SysPlugin extension framework available to non-X++ code. For more information, see [Register subclasses for factory methods] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods). 
 
 ## Conceptual/class model
-The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. [![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) Here are the interfaces and classes that are shown in the illustration:
+The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. 
+
+[![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) 
+
+Here are the interfaces and classes that are shown in the illustration:
 
 - **IExchangeRateProvider** – By implementing this interface, you enable the exchange rate provider framework to recognize a class as an exchange rate provider.
 - **IExchangeRateProviderFrameworkFactory** – This interface enables the exchange rate provider to construct various types of provider framework classes that represent some of the interfaces in the illustration.
@@ -66,60 +69,74 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
 
 1.  In your own model, create a class that implements the **IExchangeRateProvider** interface.
 
-        using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
-        using Microsoft.Dynamics.Currency.Instrumentation;
-        using System.Collections;
-        /// <summary>
-        /// The <c>ExchangeRateProviderOanda</c> class is an exchange rate provider for OANDA.
-        /// </summary>
-        class ExchangeRateProviderOanda implements IExchangeRateProvider
-        {
-        }
+    ```xpp
+    using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
+    using Microsoft.Dynamics.Currency.Instrumentation;
+    using System.Collections;
+    
+    using System.ComponentModel.Composition;
+    
+    /// <summary>
+    /// The <c>ExchangeRateProviderOanda</c> class is an exchange rate provider for OANDA.
+    /// </summary>
+    [ExportMetadataAttribute(enumStr(ExchangeRateProvider), ExchangeRateProvider::OANDA), ExportAttribute('Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework.IExchangeRateProvider')]
+    class ExchangeRateProviderOanda implements IExchangeRateProvider
+    {
+    }
+    ```
 
 2.  Add the following constants and variable declarations to the class.
 
-        private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
-        private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
-        private const str OANDADateFormat = 'yyyy-MM-dd';
-        private const str HttpWebRequestMethod = 'GET';
-        private const str HttpWebRequestContentType = 'application/xml';
-        private const str HttpHeaderAuthorization = 'Authorization';
-        private const str KeyTokenPrefix = 'Bearer ';
-        private const str XPathQuote = '//response/quotes/quote';
-        private const str XPathAverageBid = '//bid';
-        private const str XPathAverageAsk = '//ask';
-        private const str XPathLowBid = '//low_bid';
-        private const str XPathLowAsk = '//low_ask';
-        private const str XPathMidpoint = '//midpoint';
-        private const str XPathDate = '//quote/date';
-        private const str XPathHighBid = '//high_bid';
-        private const str XPathHighAsk = '//high_ask';
-        private const str QuoteParameterAverages = 'averages';
-        private const str QuoteParameterLows = 'lows';
-        private const str QuoteParameterMidPoint = 'midpoint';
-        private const str QuoteParameterHighs = 'highs';
-        IExchangeRateProviderFrameworkFactory factory;
+    ```xpp
+    private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
+    private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
+    private const str OANDADateFormat = 'yyyy-MM-dd';
+    private const str HttpWebRequestMethod = 'GET';
+    private const str HttpWebRequestContentType = 'application/xml';
+    private const str HttpHeaderAuthorization = 'Authorization';
+    private const str KeyTokenPrefix = 'Bearer ';
+    private const str XPathQuote = '//response/quotes/quote';
+    private const str XPathAverageBid = '//bid';
+    private const str XPathAverageAsk = '//ask';
+    private const str XPathLowBid = '//low_bid';
+    private const str XPathLowAsk = '//low_ask';
+    private const str XPathMidpoint = '//midpoint';
+    private const str XPathDate = '//quote/date';
+    private const str XPathHighBid = '//high_bid';
+    private const str XPathHighAsk = '//high_ask';
+    private const str QuoteParameterAverages = 'averages';
+    private const str QuoteParameterLows = 'lows';
+    private const str QuoteParameterMidPoint = 'midpoint';
+    private const str QuoteParameterHighs = 'highs';
+    IExchangeRateProviderFrameworkFactory factory;
+    ```
 
 3.  Implement the **get\_Name** method. A label should be used to enable proper translation. A user can change the name that is provided here when that user sets up the provider’s configuration information.
 
-        public ExchangeRateProviderName get_Name()
-        {
-            return "@CurrencyExchange:Currency_ConfigField_OandaName";
-        }
+    ```xpp
+    public ExchangeRateProviderName get_Name()
+    {
+        return "@CurrencyExchange:Currency_ConfigField_OandaName";
+    }
+    ```
 
 4.  Implement the **get\_Id** method. This method returns a globally unique identifier (GUID) that is used to uniquely identify this provider.
 
-        public ExchangeRateProviderId get_Id()
-        {
-            return ProviderId;
-        }
+    ```xpp
+    public ExchangeRateProviderId get_Id()
+    {
+        return ProviderId;
+    }
+    ```
 
 5.  Implement the **set\_Factory** method. The exchange rate provider framework will invoke this method to set an object that implements the **IExchangeRateProviderFrameworkFactory** interface on your provider. This factory can be used to instantiate new objects that represent some of the interfaces from the previous illustration.
 
-        public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
-        {
-            factory = _factory;
-        }
+    ```xpp
+    public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
+    {
+        factory = _factory;
+    }
+    ```
 
 6.  Implement the **GetSupportedOptions** method. This method indicates whether the exchange rate provider supports some framework features:
 
@@ -127,68 +144,78 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
     -   Set the **fixedBaseIsoCurrency** property to the three-character International Organization for Standardization (ISO) currency code that represents the fixed base currency of the exchange rates that are returned from the exchange rate service. If the exchange rate service doesn't support a fixed base currency, return an empty string. For example, the euro is often used as a fixed base currency. When you create a new provider, be sure to research the exchange rate service so that you can select the correct value.
     -   Set the **singleRateForDateRange** property to **true** if the service can return a single rate that represents the whole date range. For example, you can use this setting to return a single exchange rate that represents the average exchange rate for a month. If the service doesn’t support this functionality, set this property to **false**.
 
-    <!-- -->
+    ```xpp
+    public IExchangeRateProviderSupportedOptions GetSupportedOptions()
+    {
+        IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
 
-        public IExchangeRateProviderSupportedOptions GetSupportedOptions()
-        {
-            IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
-            options.set_doesSupportSpecificCurrencyPairs(true);
-            options.set_doesSupportSpecificDates(false);
-            options.set_fixedBaseIsoCurrency('');
-            options.set_singleRateForDateRange(true);
+        options.set_doesSupportSpecificCurrencyPairs(true);
+        options.set_doesSupportSpecificDates(false);
+        options.set_fixedBaseIsoCurrency('');
+        options.set_singleRateForDateRange(true);                        
+        options.set_doesSupportPreventImportOnNationalHoliday(false);
+        options.set_DoesSupportExchangeRateFromPreviousDay(false);
+
         return options;
+    ```
 
 7.  Implement the **GetConfigurationDefaults** method. Configuration defaults are name-value pairs that represent the default configuration settings for the exchange rate provider. These settings are automatically loaded when the provider is registered, but the user can change them. Take the required precautions when you convert these strings into usable values. The value field is stored as an encrypted field in SQL. Therefore, sensitive data such as an application programming interface (API) key will be more secure.
 
-        public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
-        {
-            IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_ServiceTimeout", '5000');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
-            return configurationDefaults;
-        }
+    ```xpp
+    public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
+    {
+        IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_ServiceTimeout", '5000');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
+        return configurationDefaults;
+    }
+    ```
 
 8.  Implement the **ValidateConfigurationDetail** method. This method enables the exchange rate provider to validate the configuration information that the user modified on the **Configure exchange rate providers** page.
 
-        public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
+    ```xpp
+    public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
+    {
+        boolean result = true;
+        switch (_key)
         {
-            boolean result = true;
-            switch (_key)
-            {
-                case "@CurrencyExchange:Currency_ConfigField_DecimalPlaces":
-                    int decimals = str2Int(_value);
-                    if ((decimals > 12) || (decimals < 1))
-                    {
-                        CurrencyEventSource eventSource = CurrencyEventSource::Log;
-                        eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
-                        error("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
-                        result = false;
-                    }
-                    break;
-                case "@CurrencyExchange:Currency_ConfigField_OandaAPIKey":
-                    if (_value == '')
-                    {
-                        CurrencyEventSource eventSource = CurrencyEventSource::Log;
-                        eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
-                        warning("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
-                    }
-                    break;
-            }
-            return result;
+            case "@CurrencyExchange:Currency_ConfigField_DecimalPlaces":
+                int decimals = str2Int(_value);
+                if ((decimals > 12) || (decimals < 1))
+                {
+                    CurrencyEventSource eventSource = CurrencyEventSource::Log;
+                    eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
+                    error("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
+                    result = false;
+                }
+                break;
+            case "@CurrencyExchange:Currency_ConfigField_OandaAPIKey":
+                if (_value == '')
+                {
+                    CurrencyEventSource eventSource = CurrencyEventSource::Log;
+                    eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
+                    warning("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
+                }
+                break;
         }
+        return result;
+    }
+    ```
 
 9.  Implement the **EnumNameForLookup** method. This method enables the exchange rate provider to enable a lookup for a specific **ExchangeRateProviderPropertyKey** key. Just return the name of an existing enumerated type for the appropriate key. If this feature isn't required, return an empty string.
 
-        public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
+    ```xpp
+    public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
+    {
+        if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
         {
-            if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
-            {
-                return enumStr(ExchangeRateProviderOANDAQuoteType);
-            }
-            return '';
+            return enumStr(ExchangeRateProviderOANDAQuoteType);
         }
+        return '';
+    }
+    ```
 
 10. Implement the **GetExchangeRates** method. This method uses the configuration information and the **IExchangeRateRequest** interface that is provided to call out to the exchange rate service and return the appropriate instance of the **IExchangeRateResponse** class. When you write this method, consider these important points:
 
@@ -201,11 +228,12 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
     -   When exchange rates are returned, always use the date that the exchange rate service provides instead of the dates that the instance of the **IExchangeRateRequest** class supplies. In this manner, you help guarantee that the exchange rate that is returned is associated with the correct date, because an exchange rate service might occasionally return rates for dates that weren't expected. For example, if an exchange rate is requested for a date in the future, some providers return the most recent exchange rate instead of throwing an error or returning nothing.
     -   If you encounter errors when you try to retrieve exchange rates from the exchange rate service, don't throw custom error messages. The framework will alert the user that there is an issue by throwing generic error messages that state that the expected currency pairs could not be retrieved from the provider. If you must log additional errors, use **CurrencyEventSource**. For an example, see the **catch** statement and the **if** condition for the **oandaKey** variable in the following code.
 
-    <!-- -->
-
+        ```xpp
         public IExchangeRateResponse GetExchangeRates(IExchangeRateRequest _request, IExchangeRateProviderConfig _config)
         {
             System.Exception exception;
+
+            // cache configuration and request properties locally for performance
             ExchangeRateProviderPropertyValue oandaKey = _config.GetPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_OandaAPIKey");
             if (oandaKey == '')
             {
@@ -213,39 +241,56 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
                 eventSource.ImportRatesException("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired", "");
                 throw error("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
             }
+
             int decimalPlaces = str2Int(_config.GetPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_DecimalPlaces"));
+
             int serviceTimeout = str2int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_ServiceTimeout"));
+
             boolean singleRateForDateRange = _request.get_SingleRateForDateRange();
+
+            ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteTypeLocked"));
+
+            str quoteTypeParameterForOANDA = this.getQuoteTypeParameterForURL(quoteType);
+
             List rates = new List(Types::Real);
             List dates = new List(Types::Date);
+
             System.TimeZone localTimeZone = System.TimeZone::get_CurrentTimeZone();
+
+            System.DateTime toUTCDate = localTimeZone.ToUniversalTime(_request.get_ToDate());
+            str toDateForRequest = toUTCDate.ToString(OANDADateFormat);
+
             IExchangeRateResponse response = factory.CreateExchangeRateResponse();
+
             // Iterate over the requested currency pairs. This is only required for providers
             // that support specific currency pairs.
             IEnumerator currencyPairsEnumerator = _request.GetEnumerator();
             while(currencyPairsEnumerator.MoveNext())
             {
                 URL OandaUrl = ServiceURL;
+
                 // This loop will either execute once if singleRateForDateRange is true; otherwise, it will
-                // execute once for each day. If we make a single request for multiple dates
-                // then OANDA will return an average the rate for the date range.
+                // execute once for each day.  If we make a single request for multiple dates
+                // then OANDA will return an average rate for the date range.
                 System.DateTime fromDate = _request.get_FromDate();
                 int compareResult = fromDate.CompareTo(_request.get_ToDate());
                 while (compareResult <= 0)
                 {
                     IExchangeRateRequestCurrencyPair currencyPairRequest = currencyPairsEnumerator.Current;
+
                     IExchangeRateResponseCurrencyPair currencyPairResponse = factory.CreateExchangeRateResponseCurrencyPair();
                     currencyPairResponse.set_FromCurrency(currencyPairRequest.get_FromCurrency());
                     currencyPairResponse.set_ToCurrency(currencyPairRequest.get_ToCurrency());
+
                     // All rates are requested with a display factor of 1 for this provider. If the rates
                     // internally are represented using a different exchange rate display factor, the
                     // framework will make the necessary adjustments when saving the exchange rates.
                     currencyPairResponse.set_ExchangeRateDisplayFactor(ExchangeRateDisplayFactor::One);
+
                     // convert to UTC which is required by OANDA
                     System.DateTime fromUTCDate = localTimeZone.ToUniversalTime(fromDate);
                     str fromDateForRequest = fromUTCDate.ToString(OANDADateFormat);
-                    System.DateTime toUTCDate = localTimeZone.ToUniversalTime(_request.get_ToDate());
-                    str toDateForRequest = toUTCDate.ToString(OANDADateFormat);
+
                     // Build the request URL.
                     str oandaRequestString;
                     if (singleRateForDateRange)
@@ -253,50 +298,58 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
                         // getting an average rate for the date range so we invoke the service
                         // only once per currency pair using the from and to date
                         oandaRequestString = strFmt(OandaUrl,
-                            currencyPairRequest.get_FromCurrency(),
-                            currencyPairRequest.get_ToCurrency(),
-                            fromDateForRequest,
-                            toDateForRequest,
-                            this.getQuoteTypeParameterForURL(_config),
-                            decimalPlaces);
+                                        currencyPairRequest.get_FromCurrency(),
+                                        currencyPairRequest.get_ToCurrency(),
+                                        fromDateForRequest,
+                                        toDateForRequest,
+                                        quoteTypeParameterForOANDA,
+                                        decimalPlaces);
                     }
                     else
                     {
-                        // invoke the service once for each day.
+                        // invoke the service once for each day. 
                         oandaRequestString = strFmt(OandaUrl,
-                            currencyPairRequest.get_FromCurrency(),
-                            currencyPairRequest.get_ToCurrency(),
-                            fromDateForRequest,
-                            fromDateForRequest,
-                            this.getQuoteTypeParameterForURL(_config),
-                            decimalPlaces);
+                                        currencyPairRequest.get_FromCurrency(),
+                                        currencyPairRequest.get_ToCurrency(),
+                                        fromDateForRequest,
+                                        fromDateForRequest,
+                                        quoteTypeParameterForOANDA,
+                                        decimalPlaces);
                     }
+
                     // Configure the request for OANDA.
                     System.Net.HttpWebRequest httpWebRequest = System.Net.WebRequest::CreateHttp(oandaRequestString);
                     httpWebRequest.set_Method(HttpWebRequestMethod);
                     httpWebRequest.set_ContentType(HttpWebRequestContentType);
                     httpWebRequest.set_Timeout(serviceTimeout);
+
                     // Authentication
                     System.Net.WebHeaderCollection webCollection = httpWebRequest.get_Headers();
                     webCollection.Add(HttpHeaderAuthorization, KeyTokenPrefix + oandaKey);
+
                     try
                     {
                         // Invoke the service
                         System.Net.WebResponse webResponse;
                         webResponse = httpWebRequest.GetResponse();
+
                         // Retrieve the XML response.
                         System.IO.Stream stream = webResponse.GetResponseStream();
                         System.IO.StreamReader streamReader = new System.IO.StreamReader(stream);
                         str XMLOut = streamReader.ReadToEnd();
+
                         // Parse the XML to retrieve the rate and date.
-                        this.processResult(_config, singleRateForDateRange, _request.get_FromDate(), XMLOut, rates, dates);
+                        this.processResult(quoteType, singleRateForDateRange, _request.get_FromDate(), XMLOut, rates, dates);
+
                         ListEnumerator rateEnumerator = rates.getEnumerator();
                         ListEnumerator dateEnumerator = dates.getEnumerator();
+
                         // Create the Exchange Rate Provider Response.
                         rateEnumerator.moveNext();
                         dateEnumerator.moveNext();
                         CurrencyExchangeRate exchangeRate = rateEnumerator.current();
                         date currentDate = dateEnumerator.current();
+
                         if (currentDate != dateNull() && exchangeRate)
                         {
                             IExchangeRateResponseExchangeRate exchangeRateResponse = factory.CreateExchangeRateResponseExchangeRate();
@@ -310,13 +363,17 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
                         CurrencyEventSource eventSource = CurrencyEventSource::Log;
                         eventSource.ImportRatesException(exception.Message, Exception.StackTrace);
                     }
+
                     response.addOrUpdateCurrencyPair(currencyPairResponse);
+
                     rates = new List(Types::Real);
                     dates = new List(Types::Date);
+
                     fromDate = fromDate.AddDays(1);
+
                     if (singleRateForDateRange)
                     {
-                        // getting an average rate across the date range so we invoke the service
+                        // getting an average rate across the date range so we invoke the service  
                         // only once per currency pair
                         compareResult = 1;
                     }
@@ -328,114 +385,117 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
             }
             return response;
         }
+        ```
 
 11. Implement the following helper methods. These methods are specific to this example and aren't required for every provider.
 
-        private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
+    ```xpp
+    private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
+    {
+        ExchangeRateProviderOANDAQuoteType quoteType = 
+            str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
+        str quoteTypeParameter;
+        switch (quoteType)
         {
-            ExchangeRateProviderOANDAQuoteType quoteType = 
-                str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
-            str quoteTypeParameter;
-            switch (quoteType)
-            {
-                case ExchangeRateProviderOANDAQuoteType::AverageAsk:
-                case ExchangeRateProviderOANDAQuoteType::AverageBid:
-                    quoteTypeParameter = QuoteParameterAverages;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowAsk:
-                case ExchangeRateProviderOANDAQuoteType::LowBid:
-                    quoteTypeParameter = QuoteParameterLows;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::MidPoint:
-                    quoteTypeParameter = QuoteParameterMidPoint;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighAsk:
-                case ExchangeRateProviderOANDAQuoteType::HighBid:
-                    quoteTypeParameter = QuoteParameterHighs;
-                    break;
-            }
-            return quoteTypeParameter;
+            case ExchangeRateProviderOANDAQuoteType::AverageAsk:
+            case ExchangeRateProviderOANDAQuoteType::AverageBid:
+                quoteTypeParameter = QuoteParameterAverages;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowAsk:
+            case ExchangeRateProviderOANDAQuoteType::LowBid:
+                quoteTypeParameter = QuoteParameterLows;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::MidPoint:
+                quoteTypeParameter = QuoteParameterMidPoint;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighAsk:
+            case ExchangeRateProviderOANDAQuoteType::HighBid:
+                quoteTypeParameter = QuoteParameterHighs;
+                break;
         }
-        private void readRate(IExchangeRateProviderConfig _config, System.Xml.XmlNode _xmlQuoteNode, List _rates)
+        return quoteTypeParameter;
+    }
+    private void readRate(IExchangeRateProviderConfig _config, System.Xml.XmlNode _xmlQuoteNode, List _rates)
+    {
+        System.Xml.XmlNode xmlRateNode;
+        CurrencyExchangeRate exchangeRate;
+        str value;
+        ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
+        // Find the exchange rate
+        switch (quoteType)
         {
-            System.Xml.XmlNode xmlRateNode;
-            CurrencyExchangeRate exchangeRate;
-            str value;
-            ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
-            // Find the exchange rate
-            switch (quoteType)
+            case ExchangeRateProviderOANDAQuoteType::AverageBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::AverageAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageAsk);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowAsk);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::MidPoint:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathMidpoint);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighAsk);
+                break;
+        }
+        if (xmlRateNode)
+        {
+            value = xmlRateNode.get_InnerText();
+            exchangeRate = str2num(value);
+            if (exchangeRate)
             {
-                case ExchangeRateProviderOANDAQuoteType::AverageBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::AverageAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageAsk);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowAsk);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::MidPoint:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathMidpoint);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighAsk);
-                    break;
-            }
-            if (xmlRateNode)
-            {
-                value = xmlRateNode.get_InnerText();
-                exchangeRate = str2num(value);
-                if (exchangeRate)
-                {
-                    _rates.addEnd(exchangeRate);
-                }
+                _rates.addEnd(exchangeRate);
             }
         }
-        private void processResult(IExchangeRateProviderConfig _config, boolean _singleRateForDateRange, System.DateTime _defaultDate, 
-            str _xmlString, List _rates, List _dates)
+    }
+    private void processResult(IExchangeRateProviderConfig _config, boolean _singleRateForDateRange, System.DateTime _defaultDate, 
+        str _xmlString, List _rates, List _dates)
+    {
+        System.Xml.XmlDocument xmlDom = new System.Xml.XmlDocument();
+        System.Xml.XmlNode xmlQuoteNode, xmlDateNode;
+        ValidFromDate exchangeDate;
+        str value;
+        xmlDom.LoadXml(_xmlString);
+        // Find the Quote
+        xmlQuoteNode = xmlDom.SelectSingleNode(XPathQuote);
+        if (xmlQuoteNode)
         {
-            System.Xml.XmlDocument xmlDom = new System.Xml.XmlDocument();
-            System.Xml.XmlNode xmlQuoteNode, xmlDateNode;
-            ValidFromDate exchangeDate;
-            str value;
-            xmlDom.LoadXml(_xmlString);
-            // Find the Quote
-            xmlQuoteNode = xmlDom.SelectSingleNode(XPathQuote);
-            if (xmlQuoteNode)
+            this.readRate(_config, xmlQuoteNode, _rates);
+            // Find the date of the exchange rate.
+            xmlDateNode = xmlQuoteNode.SelectSingleNode(XPathDate);
+            if (xmlDateNode || _singleRateForDateRange)
             {
-                this.readRate(_config, xmlQuoteNode, _rates);
-                // Find the date of the exchange rate.
-                xmlDateNode = xmlQuoteNode.SelectSingleNode(XPathDate);
-                if (xmlDateNode || _singleRateForDateRange)
+                if (xmlDateNode)
                 {
-                    if (xmlDateNode)
+                    value = xmlDateNode.get_InnerText();
+                }    
+                if (value)
+                {
+                    // convert the date from UTC to local timezone.
+                    exchangeDate = System.DateTime::Parse(value, System.Globalization.CultureInfo::get_CurrentUICulture(),
+                        System.Globalization.DateTimeStyles::AssumeUniversal);
+                    if (exchangeDate)
                     {
-                        value = xmlDateNode.get_InnerText();
-                    }    
-                    if (value)
-                    {
-                        // convert the date from UTC to local timezone.
-                        exchangeDate = System.DateTime::Parse(value, System.Globalization.CultureInfo::get_CurrentUICulture(),
-                            System.Globalization.DateTimeStyles::AssumeUniversal);
-                        if (exchangeDate)
-                        {
-                            _dates.addEnd(exchangeDate);
-                        }
-                    }
-                    else if (!value && _singleRateForDateRange)
-                    {
-                        exchangeDate = _defaultDate;
                         _dates.addEnd(exchangeDate);
                     }
                 }
+                else if (!value && _singleRateForDateRange)
+                {
+                    exchangeDate = _defaultDate;
+                    _dates.addEnd(exchangeDate);
+                }
             }
         }
+    }
+    ```
 
 12. Compile the **ExchangeRateProviderOanda** class. The provider will be run as part of a SysOperation. It's helpful to understand the following framework classes and methods when you debug issues:
     -   **ExchangeRateProviderFactory.initialize()** – This method creates instances of the exchange rate providers, and is called when exchange rates are registered or imported. If your provider isn't instantiated, start to debug here.

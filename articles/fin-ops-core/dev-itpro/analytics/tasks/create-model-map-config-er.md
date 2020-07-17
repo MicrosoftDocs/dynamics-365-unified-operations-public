@@ -29,20 +29,20 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create Electronic reporting (ER) model mapping configurations
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. In this procedure, you will create a configuration for sample company, Litware, Inc. 
 
 This procedure is created for uses with the assigned role of System administrator or Electronic reporting developer.
 
-These steps can be completed using any dataset. To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”
+These steps can be completed using any dataset. To complete these steps, you must first complete the steps in the procedure, "Create a configuration provider and mark it as active."
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active”.  
+    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don't see this configuration provider, complete the steps in the procedure, "Create a configuration provider and mark it as active".  
 2. Click Reporting configurations.
 3. Click Show filters.
 4. In the "Name" field, enter the filter value, "Intrastat" and use the filter operator "begins with".
-    * Apply this filter to find the ‘Intrastat’ data model configuration. This model may already exist in the configurations tree. If it does, skip the next sub-task.   
+    * Apply this filter to find the 'Intrastat' data model configuration. This model may already exist in the configurations tree. If it does, skip the next sub-task.   
 
 ## Get the Intrastat model configuration provided by Microsoft
 1. Close the page.
@@ -53,7 +53,7 @@ These steps can be completed using any dataset. To complete these steps, you mus
 5. Click Repositories.
     * Click Repositories in the Microsoft provider tile.  
 6. Click Show filters.
-7. In the "Type name" field, enter the filter value, “resources” and use the filter operator "contains". 
+7. In the "Type name" field, enter the filter value, "resources" and use the filter operator "contains". 
 8. Click Open.
 9. In the tree, select 'Intrastat model'.
 10. Click Import.

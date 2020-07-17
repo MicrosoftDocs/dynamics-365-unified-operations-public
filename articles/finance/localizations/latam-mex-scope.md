@@ -109,7 +109,7 @@ The localization scope for the version of Finance that is available in Mexico is
 - Quote to cash
 - Regulatory/statutory reporting
 
-For a list of the specific features that Microsoft delivers and supports, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Finance, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
+For a list of the specific features that Microsoft delivers and supports, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Finance, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/UK/AX/support/support-news/GFMLocalizationPortalMC).
 
 ## Market availability
 Microsoft aims to deliver regulatory features in a manner that provides enough time for installation. In the case of tax and regulatory updates that contain changes that are required in order to implement tax, accounting, financial, or regulatory/statutory reporting requirements that commonly affect a majority of businesses in Mexico, our goal is to release the updates before the effective date or other date that is mandated by the applicable government authority, whether at the federal or state level as identified in the [Mexican localization strategy](#mexican-localization-strategy) section, so that our channel partners have enough time to update their customer solutions. Internally, we call this date the *market required date* (MRD).
@@ -423,7 +423,7 @@ The following table lists the specific features that Microsoft delivers and supp
 </tr>
 <tr>
 <td></td>
-<td>Support for Global CFDI layout 3.3 in customer receipts (Retail)</td>
+<td>Support for Global CFDI layout 3.3 in customer receipts (Commerce)</td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -566,7 +566,7 @@ The following modules are out of scope for Mexican localizations:
 - Compliance and internal controls
 - Human resources
 - Payroll
-- Retail
+- Commerce
 - Call center
 - Trade allowance management
 - Transportation management
@@ -594,19 +594,19 @@ The following features and functionality are out of scope for Mexican localizati
 
     - Public Sector
 
-- **Retail industry:**
+- **Commerce industry:**
 
-    - **Retail services:** The following online services are out of scope for the retail industry for Mexican localizations:
+    - **Services:** The following online services are out of scope for the commerce industry for Mexican localizations:
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP
-        - Modern POS and Retail server
+        - Modern POS and RCommerce Scale Unit
 
     - **Retailers**
     - **Fiscal printer features**
 
 ## References
-The [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal) provides information about localization features and documents that have been released by Microsoft, and also those that are planned for release.
+The [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/UK/AX/support/support-news/GFMLocalizationPortalMC) provides information about localization features and documents that have been released by Microsoft, and also those that are planned for release.
 
 ## Notes
 **Regime especial (special regime)** refers to any differential treatment, except relief from taxation, that the tax authority authorizes with respect to general tax rule requirements (federal, state, or municipal) and ancillary obligations, to simplify tax compliance by the taxpayer in peculiar cases.

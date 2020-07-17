@@ -5,7 +5,7 @@ title: Package configurations and deploy them to an online environment
 description: This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Package configurations and deploy them to an online environment
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
@@ -73,7 +72,7 @@ To upload a site configuration package by using LCS, follow these steps.
     ![LCS options when scrolling to the right](media/lcs-deploy-4.png)
 
 1. To upload the package, in the **More tools** section, select the **Asset Library** tile.
-1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Retail representative to obtain the required code.
+1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Commerce representative to obtain the required code.
 
     ![LCS asset library](media/lcs-deploy-5.png)
 

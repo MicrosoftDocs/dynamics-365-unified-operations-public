@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2018-22-15
+ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
