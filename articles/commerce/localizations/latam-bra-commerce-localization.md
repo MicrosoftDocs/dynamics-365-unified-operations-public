@@ -32,15 +32,15 @@ ms.dyn365.ops.version: 10.0.13
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes **the scope for the Commerce functionality in Microsoft Dynamics 365 Commerce that are specific to Brazil**. This software includes features and functionality that is being designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that commonly affect retail businesses in Brazil (limited to the scope of [Brazilian localization](../../financials/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
+This topic describes **the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Brazil**. It includes features and functionalities that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that commonly affect retail businesses in Brazil (limited to the scope of the [Brazilian localization](../../financials/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 
-However, Microsoft Dynamics doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. Additional details are available in the [Product localization and translation availability Guide](https://aka.ms/dynamics_365_international_availability_deck).
+However, Commerce doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. Additional details are available in the [Product localization and translation availability Guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 ## Prerequisites
 1. [Set up legal entity parameters](../../financials/localizations/latam-bra-legal-entity-parameters.md).
-2. [Set up fiscal document source text](../../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md) for Retail.
-3. Submission of Brazilian business documents (listed below) is conducted throug [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). Configuration steps and the process of submitting a NFC-e fiscal document is similar with described at the article [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
-4. Formats for electronic documents in accordance with the legal requirements of Brazil are configured using [Electronic reporting tool](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+2. [Set up fiscal document source text](../../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md) for Commerce.
+3. Submission of Brazilian business documents (listed below) is done through [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). The configuration steps and the process of submitting an NFC-e fiscal document is similar to the one described in the following article: [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
+4. Formats for electronic documents in accordance with the legal requirements in Brazil are configured using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality.
 
 ## Brazilian Commerce localization capabilities
 
