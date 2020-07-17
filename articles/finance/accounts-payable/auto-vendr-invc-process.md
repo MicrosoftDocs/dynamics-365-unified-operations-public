@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 10.0.13
 
 # Automating vendor invoicing processes overview
 
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 Accounts payable vendor invoicing processes, such as submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines can be automated. This topic provices insight into the progress of a vendor invoice as it moves through each of the processes. Enabling the feature helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. 
 
 Organizations often use vendors to process paper invoices that provide optical character recognition (OCR) services. Then, they receive machine-readable invoice metadata. To help with automation, the Accounts payable automation features enable consumption of these artifacts in Accounts payable. The Accounts payable invoicing automation features can be enabled through Feature management. The feature set applies to Vendor invoices; not invoices that are processed through the Invoice journal or Invoice register journal pages.
