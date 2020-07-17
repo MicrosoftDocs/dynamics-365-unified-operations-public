@@ -93,8 +93,13 @@ This section provides a list of known issues for saved views while the feature i
 ### Fixed in 10.0.13
 
 > [!NOTE]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of vers
+ion 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
+-  [KB 4574781] Duplicate record exception on saving a view
+-  [KB 4575278] Tiles lose their link to the backing published view if the view is republished
+-  [BUG 462286] Publishing to an existing view name overwrites configuration changes already made
+-  [KB 4574778] Pin & Publish as default are not respecting companies that the view was published to
 -  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
 -  [KB 4568151] Published views recipients are not being updated after republishing from a different legal entity
