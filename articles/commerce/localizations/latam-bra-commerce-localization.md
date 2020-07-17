@@ -70,10 +70,11 @@ The following features are available to Commerce customers in Brazil in Commerce
 5. Issuing gift cards and payments by gift cards.
 6. Registering and processing customer orders on POS.
 7. Posting fiscal documents in Retail statements in HQ.
-8. Sales via e-Commerce storefronts
-9. Call-center sales
+8. Sales via e-Commerce storefronts.
+9. Call-center sales.
 
-## Brazilian Commerce localization features
+## Availability of Commerce localization features for Brazil
+
 | Feature                                                              | Public preview | General Availability - GA | Post GA | Not planned |
 |----------------------------------------------------------------------|----------------|---------------------------|---------|-------------|
 | Retail product management, tax setup and calculation                 |       +        |                           |         |             |
