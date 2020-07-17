@@ -42,7 +42,7 @@ Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find suppleme
 
 ## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 
-Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 Talent will now appear as "Dynamics 365 Unified Operations."
+Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 Human Resources will now appear as "Dynamics 365 Unified Operations."
 
 ## Development and customization – Changing the extended data type (EDT) on a table field using table extensions
 

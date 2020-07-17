@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Issue customer fiscal documents (project) (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can issue a fiscal document for a project. The fiscal document can be either a service fiscal document or an electronic fiscal document. This task uses the BRMF demo company.
 

@@ -44,7 +44,7 @@ Note that the web service URL in this sample is fictional.  There is no known we
 2. In the Visual Studio project, add a service reference to the external web service: `http://www.contoso.net/stockquote.asmx`.
 3. Create a new static class, and wrap the StockQuote service operation as shown in the following example.
 
-    ```
+    ```xpp
     public static string GetQuote(string s)
     {
         var binding = new System.ServiceModel.BasicHttpBinding();
@@ -61,7 +61,7 @@ Note that the web service URL in this sample is fictional.  There is no known we
 6. Add **ExternalServiceLibrary.dll** as a reference.
 7. In the X++ class, you can use the external web services that were referenced in ExternalServiceLibrary.dll.
 
-    ```
+    ```xpp
     public static void main(Args _args)
     {
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));

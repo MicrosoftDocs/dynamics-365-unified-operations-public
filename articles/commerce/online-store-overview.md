@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Online store overview
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic introduces the concept of an online store and explains how online stores are used in Microsoft Dynamics 365 Commerce. It also provides a link to more information about online stores and information about how to set up an online store.
 

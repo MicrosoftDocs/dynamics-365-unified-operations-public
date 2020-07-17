@@ -38,7 +38,7 @@ The `TABLENAME2ID` function returns a numeric representation of the table ID for
 
 ## Syntax
 
-```
+```vb
 TABLENAME2ID (text)
 ```
 

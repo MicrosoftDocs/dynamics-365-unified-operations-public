@@ -38,7 +38,7 @@ The `RIGHT` function returns a *String* value that presents the specified number
 
 ## Syntax
 
-```
+```vb
 RIGHT (text, number)
 ```
 

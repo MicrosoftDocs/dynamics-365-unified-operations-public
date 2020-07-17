@@ -93,7 +93,7 @@ In this section, we'll walk you through the process of exporting data displayed 
 1. Open Internet Explorer, and navigate to your instance base URL and sign in.
 
     1. On the cloud environment, the base URL is obtained from LCS
-    2. On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com
+    2. On a local VM, the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 2. On the Dashboard, scroll to the far right, and click the **Reservation management** tile.
 3. Under the **Summary** section, click on the **All rentals** tile.
@@ -194,7 +194,7 @@ The Reporting Framework offers flexibility through service extensions to facilit
 1. In **Solution Explorer**, double-click on the **FMRentalsByCustUIBuilder** class to open the designer.
 2. Locate the class **build** method and update the initialization code as follows
 
-    ```
+    ```xpp
     public void build()
     {
         Dialog dialogLocal = this.dialog();

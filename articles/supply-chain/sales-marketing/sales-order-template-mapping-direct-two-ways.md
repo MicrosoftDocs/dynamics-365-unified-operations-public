@@ -4,7 +4,7 @@
 title: Synchronization of sales orders directly between Sales and Supply Chain Management
 description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

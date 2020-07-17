@@ -143,52 +143,54 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
     1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
     2. Right-click the **Union territory** column, and then click **Form information** > **Form Name: LogisticsAddressSetup**. For this example, notice that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
 
-![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
+    ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
 2. Add a tax engine model field for intrastate transactions in a union territory.
 
-   1. Create a new project of model Application Suite, and add the new class, TaxableDocRowDPExtLineSubscriberSample. Implement the following logic to determine if a transaction is an intrastate transaction in a union territory and pass the flag to GTE.
+    Create a new project of model Application Suite, and add the new class, TaxableDocRowDPExtLineSubscriberSample. Implement the following logic to determine if a transaction is an intrastate transaction in a union territory and pass the flag to GTE.
    
-   			public class TaxableDocRowDPExtLineSubscriberSample
-			{
-			    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
+    ```xpp   
+   	public class TaxableDocRowDPExtLineSubscriberSample
+	{
+		public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 
-			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), 			  delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
-			    public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
-			    {
-				_validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
-			    }
+		[SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), 			  delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
+		public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
+		{
+		_validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
+		}
 
-			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
-			    public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
-			    {
-				_lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
-			    }
+		[SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
+		public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
+		{
+		_lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
+		}
 
-			    private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
-			    {
-				  boolean                     isIntraStateWithUnionTerritory = NoYes::No;
-				  LogisticsPostalAddress      partyAddress;
-				  LogisticsPostalAddress      taxAddress;
-				  LogisticsAddressState       partyState;
-				  SalesPurchJournalLine       documentLineMap;					TaxModelTaxable_IN          taxModelTaxable;
-				  documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
-				  taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
-				  partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
-				  taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
-				  if (partyAddress && taxAddress
-				      && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-				      && partyAddress.State != ''
-				      && taxAddress.State != ''
-				      && partyAddress.State == taxAddress.State)
-				  {
-				      partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-			      	      isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
-				  }
-				  return isIntraStateWithUnionTerritory;
- 			    }
+		private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
+		{
+		boolean                     isIntraStateWithUnionTerritory = NoYes::No;
+		LogisticsPostalAddress      partyAddress;
+		LogisticsPostalAddress      taxAddress;
+		LogisticsAddressState       partyState;
+		SalesPurchJournalLine       documentLineMap;				TaxModelTaxable_IN          taxModelTaxable;
+		documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
+		taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
+		partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
+		taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
+		if (partyAddress && taxAddress
+			&& partyAddress.CountryRegionId == taxAddress.CountryRegionId
+			&& partyAddress.State != ''
+			&& taxAddress.State != ''
+			&& partyAddress.State == taxAddress.State)
+		{
+			partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+			    isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+		}
+		return isIntraStateWithUnionTerritory;
+ 		}
 
-			}
+	}
+    ```
 
 3. Complete the data binding in the Designer.
    1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
@@ -217,28 +219,43 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 #### Method 2: Data mapping using the ER model mapping designer
 Before you use this method, be sure that you are familiar with ER and the table relation, class, and method for purchase orders. 
 1. Open the model mapping designer for a purchase order, add table records **PurchLine** as a root data source.
+
    ![Purchline extension](media/gte-extension-purchline.png)
+
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
+
    ![Add enumerations](media/gte-extension-add-enumerations.png)
+
 3. In the **Data Source** tree, add a calculated field **$PurchLine** under **purchase order** > **lines**  to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
+
    ![Edit formula](media/gte-extension-edit-formula.png)
+
 4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: 
+
    ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
+
    ![Add formula](media/gte-extension-add-formula.png)
+
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
-   ```
+   
+   ```xpp
    AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
    ```
+
 7. In the **Model mapping designer**, complete the mapping:
    1. In the **Data Sources** tree, select **$IntraStateInUnionTerritory**.
    2. In the **Data Model**, select **IntraStateInUnionTerritory**.
    3. Click **Edit**.
+
       ![Edit data mapping](media/gte-extension-data-binding2.png)
+
    4. Input the following formula to convert the Boolean value to the enumeration value, which is used by the extended taxable document field **IntraStateInUnionTerritory**.
-      ```
+
+      ```xpp
       CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
       ```
+
    5. Click **Save** and close the page.
 
 8. Save the configuration, and close the designer.
@@ -363,27 +380,28 @@ Before you use this method, be sure that you are familiar with ER and the table 
 1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2. Create a new record and define tax setup.
 
-![New tax setup](media/gte-extension-new-tax-setup.png)
+    ![New tax setup](media/gte-extension-new-tax-setup.png)
 
 3. Click **Configurations**.
 
 4. Click the **Tax configuration** tab.
 5. In the **Available configurations** section, click **New** to create a tax configuration.
+
 	> [!NOTE]
 	> The configuration that is added to tax gets listed on the **Available configuration** tab
 	
-![New configuration](media/gte-extension-new-configuration2.png)
+    ![New configuration](media/gte-extension-new-configuration2.png)
 
 6. Select the required configuration, such as **Tax (India GST)**. Click **Save**.
 7. Click **Synchronize**.
 
-![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
+    ![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
 
 8. Click **Activate**.
 
-![Activate configuration](media/gte-extension-activate-configuration.png)
+    ![Activate configuration](media/gte-extension-activate-configuration.png)
 
-![Active configuration](media/gte-extension-active-configuration.png)
+    ![Active configuration](media/gte-extension-active-configuration.png)
 
 9. Click **Close**.
 10. Click the **Companies** FastTab.
@@ -391,7 +409,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 12. Click **Save**.
 13. Click **Activate** to activate the configuration for the company.
 
-![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
+    ![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
 
 14. Click **Setup** to set up data for the new version.
 
@@ -446,19 +464,25 @@ After you update the status to be **Complete**, the configuration is ready for d
 	4. Select a table.
 	5. Click **OK**.
 	
-![Add table records](media/gte-extension-add-table-records.png)
-7.Bind the table.
+    ![Add table records](media/gte-extension-add-table-records.png)
+
+7. Bind the table.
+
 	1. In the **Data sources** tree, select the **LogisticsAddressCountryRegion** table record that you created in step 5.
 	2. In the **Date model** tree, select **Countries of Origin: Record list**.
 	3. Click **Bind**.
 	
-![Bind table](media/gte-extension-bind-table.png)
-8.Bind the field.
+    ![Bind table](media/gte-extension-bind-table.png)
+
+8. Bind the field.
+
 	1. In the **Data sources** tree, select **Country/region(CountryRegionID): String**.
 	2. In the **Date model** tree, select **Country of Origin: String**.
 	3. Click **Bind**.
-![Bind field](media/gte-extension-bind-field.png)
-9.Click **Save**.
+
+    ![Bind field](media/gte-extension-bind-field.png)
+
+9. Click **Save**.
 
 ### Link the reference model to a field in the taxable document
 

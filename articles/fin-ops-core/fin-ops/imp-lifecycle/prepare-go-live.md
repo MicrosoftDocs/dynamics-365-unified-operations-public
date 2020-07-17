@@ -5,7 +5,7 @@ title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 07/12/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,7 +51,7 @@ The following table lists all the steps in the process, with the expected durati
 | 6 | Deployable package installation request | Self-service | Customer | Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md). |
 |   | Package installation | Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package | Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
 | 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
-|   | Copy database | Five hours lead time and two hours downtime | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of two hours in case a rollback is required for any reason. |
+|   | Copy database | Five hours lead time and four hours downtime | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
 | 8 | Production ready | After all previous steps have been completed | Customer/Partner | Customer/Partner can take control of the production environment. |
 |   | Cutover activities | Depends on the project | Customer/Partner | |
 | 9 | Go live | Depends on the project | Customer | |
@@ -83,7 +83,7 @@ During the UAT phase, you must test all the business processes that you've imple
 
 Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:
 
-- The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and retail devices in the sandbox environment.
+- The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and commerce devices in the sandbox environment.
 - System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.
 - To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation. This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.
 

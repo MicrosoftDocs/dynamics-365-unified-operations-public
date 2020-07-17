@@ -38,7 +38,7 @@ The `ORDERBY` function returns the specified list as a *Record list* value after
 
 ## Syntax
 
-```
+```vb
 ORDERBY (list , expression 1[, expression 2, …, expression N])
 ```
 

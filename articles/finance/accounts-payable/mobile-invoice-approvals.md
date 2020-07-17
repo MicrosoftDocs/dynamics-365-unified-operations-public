@@ -60,8 +60,8 @@ Every organization orchestrates and defines its business process for vendor invo
     -   How many accounting distributions (extended price, sales tax, charges, splits, and so on) are there for an invoice line? Again, apply the 80-20 rule.
     -   Do the invoices also have accounting distributions on the invoice header? If so, should these accounting distributions be available on the device?
 
-> [!NOTE]
-> This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
+    > [!NOTE]
+    > This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
 
 -   Will users want to see attachments for the invoice on the device?
 
@@ -164,9 +164,9 @@ The first mobile page that you should design is the list of invoices that are as
     - Invoice number
     - Invoice date
 
-  After the fields are added, the mobile page must resemble the following illustration. 
+    After the fields are added, the mobile page must resemble the following illustration. 
     
-   [![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  You must also add the following columns now, so that we can enable workflow actions later.
     - Show complete task
@@ -253,9 +253,10 @@ To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page. To ope
     - It hides the extra workflow-related columns that we added earlier on the mobile list page. We added these columns so that the app has that information in context and can do the next step.
     - Based on the workflow step that is active, it applies logic to show only those actions.
 
-> [!NOTE]
-> The name of the pages and other controls in the code must be the same as the names in the workspace.
+    > [!NOTE]
+    > The name of the pages and other controls in the code must be the same as the names in the workspace.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -314,6 +315,7 @@ To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page. To ope
                  },
            };
         }
+    ```
 
 2.  Upload the code file to the workspace by selecting the **Logic** tab
 3.  Click **Done** to exit edit mode.
@@ -347,7 +349,7 @@ The requirements for this scenario confirm that there will be only line-level di
 
 1.  In the URL, replace the name of the menu item, as you did before. The page that appears should resemble the following illustration.
 
-[![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Open the mobile designer from the **Settings** (gear) button.
 
@@ -373,16 +375,18 @@ The requirements for this scenario confirm that there will be only line-level di
 
 10. Click **Publish workspace** to save your work
 
-> [!NOTE] 
-> The **View accounting** mobile page isn’t currently linked to any of the mobile pages that we have designed so far. Because the user should be able to navigate to the **View accounting** page from the **Invoice details** page on the mobile device, we must provide navigation from the **Invoice details** page to the **View accounting** page. We establish this navigation by using additional logic via JavaScript.
+#### Adding navigation to "View accounting" page
+
+The **View accounting** mobile page isn’t currently linked to any of the mobile pages that we have designed so far. Because the user should be able to navigate to the **View accounting** page from the **Invoice details** page on the mobile device, we must provide navigation from the **Invoice details** page to the **View accounting** page. We establish this navigation by using additional logic via JavaScript.
 
 1.  Open the .js file that you created earlier, and add the lines that are highlighted in the following code. This code does two things:
     1.  It helps guarantee that users can’t navigate directly from the workspace to the **View accounting** page.
     2.  It establishes a navigation control from the **Invoice details** page to the **View accounting** page.
 
-> [!NOTE] 
-> The name of the pages and other controls in the code must be the same as the names in the workspace.
+    > [!NOTE] 
+    > The name of the pages and other controls in the code must be the same as the names in the workspace.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -445,7 +449,8 @@ The requirements for this scenario confirm that there will be only line-level di
                  },
            };
         }
-
+    ```
+    
 2.  Upload the code file to the workspace by selecting the **Logic** tab to overwrite the previous code
 3.  Click **Done** to exit edit mode.
 4.  Click **Back** and then **Done** to exit the workspace

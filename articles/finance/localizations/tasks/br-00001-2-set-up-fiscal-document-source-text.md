@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up fiscal document source text (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can attach fiscal document texts to a sales order, purchase order, or free text invoice. The fiscal document texts that are attached to the sales order, purchase order, or free text invoice are printed on the fiscal document. The fiscal document texts provide additional information about the taxes and laws that are applied to the fiscal document. You can also include placeholders in the fiscal document source text. The placeholders are replaced by predefined text when you post the fiscal document that the fiscal document text is attached to. This task uses the BRMF demo company.
 

@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Script injectors
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
@@ -51,7 +50,7 @@ In some cases, you might have to inject scripts into your site or site pages, bu
 
 To create a custom script injector, use the following command to create a new module. 
 
-```
+```Console
 C:\repos\MySite>yarn msdyn365 add-module myAnalytics
 ```
 

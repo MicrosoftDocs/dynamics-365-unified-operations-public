@@ -3,9 +3,9 @@
 
 title: Standard Audit File for Tax (SAF-T) for Norway
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway. 
-author: LizaGolub
-ms.author: v-elgolu
-ms.date: 12/18/2019
+author: liza-golub
+ms.author: elgolu
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,7 +64,11 @@ Import the latest versions of the configurations. The version description usuall
 >
 > ![Default for model mapping option set to Yes](media/nor-saf-default-model-mapping.jpg)
 
-For more information about how to download ER configurations from LCS, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+
+![Upload and add button](media/nor-saf-default-model-mapping.jpg)
+
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
 
 ## Setup
 
@@ -100,17 +104,22 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
-To associate main accounts that are used in Finance with Norwegian standard accounts, follow these steps.
 
-1. In Finance, go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
-2. On the **Main accounts** page, select the **Main account** record, and then, on the Action Pane, select **Edit**.
-3. On the **General** FastTab, in the **Standard general ledger account** section, in the **Standard account** field, select **Standard account**.
+Starting from **version 54.61**, the electronic reporting format **“SAF-T Format (NO)”** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
 
-![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts.jpg)
+To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
-You must define all the standard accounts on the **Standard general ledger accounts** page before you can select them for a main account. To quickly access the **Standard general ledger accounts** page from the **Main accounts** page, right-click the **Standard account** field, and then select **View details**.
+1. Open the **Electronic reporting** workspace, in the configuration tree, select the **“SAF-T Format (NO)”** electronic reporting format. 
+2. Make sure that company you are working is the company for which you want to set up the **Application specific parameters**.
+3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
+5. On the **Lookup** FastTab, select **StandardMainAccount_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add a separate line for each **Main account** and specify the same **Standard account** for each one.
+6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
+7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-![View details command on the shortcut menu for the Standard account field](media/nor-saf-standard-main-account-setup.jpg)
+![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts-appsppar.jpg)
+
+You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 
 ## Generate the Norwegian SAF-T Financial data report
 
@@ -124,7 +133,23 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
     
     If the **Financial dimensions** check box is cleared, only those financial dimensions that were used in transactions during the reporting period will be reported in the **\<MasterFiles\>** node of the report.
 
-4. In the **Personnel number** field, select an employee to add the employee to the **\<UserID\>** node of the report. This node reports the ID of the user who generated the audit file.
+4. In the **Personnel number** field, select an employee to add the employee to the **\<AuditFileSender\>** node of the report. This node reports information about the contact person for the audit file (First name and Last name).
+
+5. Select the **Report tax information in sales tax currency** check box if you want to report tax information in tax code currency.
+
+    If the **Report tax information in sales tax currency** check box is selected, the **\<TaxInformation\>** element reports the following amounts in the tax code currency:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxBase*
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Amount*
+
+
+    If the **Report tax information in sales tax currency** check box is not selected, the amounts in the **\<TaxInformation\>** element and all of the amounts in the reports are reported in the accounting currency.
+
+    The following amount is always reported in document currency:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/CurrencyAmount*
+
+    Where *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* represents the document currency.
 
 You can also apply filters for the **Main accounts** and **General journal entry** fields by using **Records to include** FastTab in the dialog box for the report.
 

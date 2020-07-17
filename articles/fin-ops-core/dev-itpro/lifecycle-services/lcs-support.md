@@ -96,6 +96,6 @@ For technical questions that are related to signing in to and accessing Customer
 
 ## Additional resources
 - [Get support for Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Get support for Microsoft Dynamics 365 Talent](../../../talent/talent-support.md)
+- [Get support for Microsoft Dynamics 365 Human Resources](../../../human-resources/hr-admin-troubleshooting-support.md)
 - For more information about Microsoft Dynamics support offerings, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).
 

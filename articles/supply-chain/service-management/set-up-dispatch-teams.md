@@ -4,7 +4,7 @@
 title: Set up dispatch teams   
 description: This topic describes how to create a dispatch team.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMADispatchTeamTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

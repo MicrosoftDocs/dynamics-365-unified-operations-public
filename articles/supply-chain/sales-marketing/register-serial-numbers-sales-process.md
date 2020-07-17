@@ -4,7 +4,7 @@
 title: Working with serialized items
 description: This topic explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, Sales
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 
 ms.search.scope: Core, Operations, Retail
 

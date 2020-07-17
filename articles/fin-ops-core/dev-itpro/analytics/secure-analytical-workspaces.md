@@ -71,7 +71,7 @@ Analytical workspaces are embedded Power BI reports that are shown in a form con
 1. Add a menu item for the analytical workspace.
 2. Verify that the form initialization uses the **hasMenuItemAccess** application programming interface (API) to verify that the user has access to the menu item.
 
-    ```
+    ```xpp
     // Note: secure entry point into the Workspace's Analytics report
     if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
     {

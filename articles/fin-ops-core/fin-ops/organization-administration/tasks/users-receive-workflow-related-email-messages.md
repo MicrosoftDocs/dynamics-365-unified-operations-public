@@ -5,7 +5,7 @@ title: Enable users to receive workflow-related email messages
 description: You can configure the system to send email messages to users when workflow-related events occur. 
 author: jasongre
 manager: AnnBe 
-ms.date: 07/01/2019
+ms.date: 06/01/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enable users to receive workflow-related email messages
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can configure the system to send email messages to users when workflow-related events occur. For example, email messages can be sent to users when documents are assigned to them for approval. The demo data company used to create this procedure is USMF.
 
@@ -43,3 +43,5 @@ You can configure the system to send email messages to users when workflow-relat
 6. Click **Save**.
 7. Close the page.
 
+> [!NOTE]
+> The workflow email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.

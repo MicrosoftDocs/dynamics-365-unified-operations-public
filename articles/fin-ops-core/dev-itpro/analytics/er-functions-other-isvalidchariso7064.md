@@ -38,7 +38,7 @@ The `ISVALIDCHARACTERISO7064` function returns a *Boolean* value of **TRUE** if 
 
 ## Syntax
 
-```
+```vb
 ISVALIDCHARACTERISO7064 (text)
 ```
 

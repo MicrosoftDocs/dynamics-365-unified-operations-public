@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Authoring page overview
 
- [!include [banner](includes/preview-banner.md)] 
+  
  [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.

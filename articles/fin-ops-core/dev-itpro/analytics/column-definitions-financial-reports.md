@@ -125,7 +125,7 @@ The following table describes the column restriction codes.
 | ADJ                     | Restrict the amounts in the column to period adjustment amounts, if these amounts are available. |
 | XAD                     | Restrict the amounts in the column, so that period adjustment amounts are excluded. |
 | PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available. |
-| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. For more information, see the <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</p> |
+| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. </p> |
 
 ### Restrict a column to a reporting unit
 

@@ -38,7 +38,7 @@ The `SESSIONTODAY` function returns a *Date* value that represents the current a
 
 ## Syntax
 
-```
+```vb
 SESSIONTODAY ()
 ```
 

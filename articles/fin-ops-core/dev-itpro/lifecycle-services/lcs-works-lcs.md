@@ -3,7 +3,7 @@
 
 title: Lifecycle Services (LCS) for Finance and Operations apps customers
 description: This article is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 84711
 ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

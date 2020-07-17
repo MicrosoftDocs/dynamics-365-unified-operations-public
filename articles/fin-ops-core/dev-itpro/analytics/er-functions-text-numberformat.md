@@ -39,13 +39,13 @@ The `NUMBERFORMAT` function returns a *String* value that presents the specified
 
 ## Syntax 1
 
-```
+```vb
 NUMBERFORMAT (number, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 NUMBERFORMAT (number, format, culture)
 ```
 

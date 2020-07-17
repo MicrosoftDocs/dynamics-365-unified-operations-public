@@ -4,7 +4,7 @@
 title: Submit and approve project budget revision
 description: This procedure provides information about revising a project budget. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, ProjBudgetRevision, WorkflowSubmitDialog   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Submit and approve project budget revision
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure provides information about revising a project budget. You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time. 
 

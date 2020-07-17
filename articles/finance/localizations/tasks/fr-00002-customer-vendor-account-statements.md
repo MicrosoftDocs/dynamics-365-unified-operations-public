@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # FR-00002 Customer and vendor account statements
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can print accounts statements for customers and vendors that display information for a time period that you select.
 

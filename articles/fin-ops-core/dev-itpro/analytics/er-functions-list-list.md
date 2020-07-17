@@ -38,7 +38,7 @@ The `LIST` function returns a *Record list* value that consists of a new list of
 
 ## Syntax
 
-```
+```vb
 LIST (record 1 [, record 2, …, record N])
 ```
 

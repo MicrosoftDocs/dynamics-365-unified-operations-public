@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 In Italy, a company can define the accounting policy so that credit note amounts are posted to ledger accounts that differ from the revenue accounts. This approach is used to track the amount that is issued on credit notes.
 
 ## Prerequisites

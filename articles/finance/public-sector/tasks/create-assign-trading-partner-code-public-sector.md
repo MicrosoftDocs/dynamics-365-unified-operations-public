@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and assign a trading partner code in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Create a trading partner code and assign it to a government agency that your organization does business with. The customer record for the agency must exist before you can perform this task. This procedure was created using the PSUS demo company data in the public sector partition.
 

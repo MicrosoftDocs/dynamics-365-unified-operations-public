@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Update vendor invoice declarations and generate the report
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
 

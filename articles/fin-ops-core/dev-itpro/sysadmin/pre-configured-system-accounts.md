@@ -3,7 +3,7 @@
 
 title: Preconfigured system accounts
 description: This topic provides information about the system accounts that are pre-configured on your Finance and Operations environments.
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
 

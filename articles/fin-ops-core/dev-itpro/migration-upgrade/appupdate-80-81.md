@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,6 +94,9 @@ After you have compiled in a developer environment and there are no errors to re
 ## Merge the deployable package with the 10.0.X binary update package
 In your project's **Asset Library**, locate both your new 10.0.X software deployable package (your customization package that includes your ISVs) and the 10.0.X PU2X binary update package that was saved in Step 1 at the beginning of the topic. Highlight both packages and select **Merge**. This will combine the files into a merged update package. You can now apply this package to your various test environments.
 
+> [!NOTE]
+> You can't move this merged package between different Lifecycle Services projects. The merge references other packages in your Asset library, and those packages won't be found in a different project.
+
 ## Deploy to target environments for validation
 Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1/OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
 
@@ -113,9 +116,11 @@ It was originally communicated that the package would be found on the **All Bina
 
 ### Deployment of my environment fails with error on duplicate objects
 By default, in Visual Studio when an object is extended, it is created with a name of Object.*Extension1*. This name could clash if Microsoft introduces new extensions of the same object. If this occurs, your deployment will fail with an error similar to the following:
-```
+
+```Console
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
+
 To prevent this from occurring, ensure that you compile your extensions on an 10.0.X developer machine. To resolve this issue, rename any of your extension objects with a vanity extension naming convention, such as SystemAdministration.*Customer*.
 
 ### Deployment on my environment fails with error on DVTs or ETWs

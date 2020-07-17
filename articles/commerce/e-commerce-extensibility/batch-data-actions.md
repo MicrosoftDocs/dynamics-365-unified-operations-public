@@ -5,7 +5,7 @@ title: Batch data actions
 description: This topic describes how to batch data actions.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Batch data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to batch data actions.
 
 ## Overview
 
-In many scenarios, you will have an application that requires many calls to the same application programming interface (API) during the load of a single page. An example is a product feature page that showcases information about many products instead of just one product. In a typical approach, multiple calls are made to the data action to get products. However, because this approach uses many individual HTTP requests to get the product information, it might not be very efficient. To solve this issue, the data action architecture supports batchable data actions.
+Often you'll have an application that requires many calls to the same application programming interface (API) during the load of a single page. An example is a product feature page that showcases information about many products instead of just one product. In a typical approach, multiple calls are made to the data action to get products. However, because this approach uses many individual HTTP requests to get the product information, it might not be efficient. To solve this issue, the data action architecture supports batchable data actions.
 
 ## Examples
 
@@ -89,10 +88,10 @@ export default createObservableDataAction({
 });
 ```
 
-Because this action now supports batching, if the action is called in multiple places during a page load, the data action framework automatically groups the requests together. Therefore, this approach helps minimize the number of HTTP requests that are required and helps maximize performance.
+Because this action now supports batching, if the action is called in multiple places during a page load, the data action framework automatically groups the requests together. That's why this approach helps minimize the number of HTTP requests that are required and helps maximize performance.
 
 > [!NOTE]
-> Some APIs might not support batching on their side. Therefore, when you create a batch data action, you should confirm that the service that you're using can support the action.
+> Some APIs might not support batching on their side. So when you create a batch data action, you should confirm that the service that you're using can support the action.
 
 ## Additional resources
 
@@ -101,3 +100,9 @@ Because this action now supports batching, if the action is called in multiple p
 [Create an observable data action](create-observable-data-action.md)
 
 [Share state across modules](share-state-across-modules.md)
+
+[Data action cache settings](data-action-cache-settings.md)
+
+[Data action overrides](data-action-overrides.md)
+
+[Data action hooks](data-action-hooks.md)

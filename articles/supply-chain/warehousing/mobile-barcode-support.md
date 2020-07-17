@@ -4,7 +4,7 @@
 title: Mobile barcode support
 description: This topic describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: BarcodeSetup  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system. A device is only Android-compatible if it can run apps that are written for the Android execution environment.
 However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware. Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it. 
 
-The Dynamics 365 Supply Chain Management - Warehousing app has been tested with a selection of Android powered devices for bar code scanning. These tests only cover a sample of the devices that are available on the market.
+The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning. These tests only cover a sample of the devices that are available on the market.
 
 As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.
 

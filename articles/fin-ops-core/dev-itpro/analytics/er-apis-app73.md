@@ -42,25 +42,25 @@ There are two types of changes to the ER APIs:
 
 To access external classes, you need to add the **using** directive to the beginning of your file.
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 You can then access an external class without any additional changes, for example.
 
-```
+```xpp
 var destination = new ERFileDestinationMemory();
 ```
 
 You can also create an alias for your namespace.
 
-```
+```xpp
 using LF = Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 You can then refer to an external class by using the namespace alias that you created.
 
-```
+```xpp
 var destination = new LF.ERFileDestinationMemory();
 ```
 
@@ -72,7 +72,7 @@ In Application update 7.3 and later updates, the calling code must access the ER
 
 Before Application update 7.3
 
-```
+```xpp
 // pattern
 ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
 // sample code
@@ -81,7 +81,7 @@ ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMi
 
 Application update 7.3 and later
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
 // sample code
@@ -92,7 +92,7 @@ ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGro
 
 Before Application update 7.3
 
-```
+```xpp
 // pattern
 ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
 // sample code
@@ -101,7 +101,7 @@ ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
 
 Application update 7.3 and later
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
 // sample code
@@ -112,7 +112,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).r
 
 Before Application update 7.3
 
-```
+```xpp
 // pattern
 ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
 // sample code
@@ -121,7 +121,7 @@ ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable
 
 Application update 7.3 and later
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
 // sample code
@@ -132,14 +132,14 @@ ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymMod
 
 Before Application update 7.3
 
-```
+```xpp
 // sample code
 new ERFileDestinationBrowser();
 ```
 
 Application update 7.3 and later
 
-```
+```xpp
 // sample code
 ERObjectsFactory::createFileDestinationBrowser();
 ```
@@ -148,7 +148,7 @@ ERObjectsFactory::createFileDestinationBrowser();
 
 Before Application update 7.3
 
-```
+```xpp
 // pattern
 ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
 // sample code
@@ -157,7 +157,7 @@ ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagem
 
 Application update 7.3 and later
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code

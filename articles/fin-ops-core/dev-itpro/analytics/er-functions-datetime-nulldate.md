@@ -38,7 +38,7 @@ The `NULLDATE` function returns a *Date* value that represents the **null** date
 
 ## Syntax
 
-```
+```vb
 NULLDATE () as 
 ```
 

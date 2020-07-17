@@ -4,7 +4,7 @@
 title: Indexed sales prices   
 description: You set up the index for a subscription sales price when you create a subscription fee.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMASubscriptionCreateDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

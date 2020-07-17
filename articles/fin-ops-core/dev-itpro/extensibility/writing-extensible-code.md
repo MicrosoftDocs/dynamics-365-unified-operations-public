@@ -70,7 +70,7 @@ When code is written like in this manner, methods are short, often less than 5 t
 
 Here is an example.
 
-```
+```xpp
 public void processOrder(SalesOrder _salesOrder)
     {
         if (this.approveOrder(_salesOrder))

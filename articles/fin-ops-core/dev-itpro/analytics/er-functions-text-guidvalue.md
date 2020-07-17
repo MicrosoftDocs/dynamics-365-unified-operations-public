@@ -38,7 +38,7 @@ The `GUIDVALUE` function converts the specified input of the *String* type to a 
 
 ## Syntax
 
-```
+```vb
 GUIDVALUE (input)
 ```
 

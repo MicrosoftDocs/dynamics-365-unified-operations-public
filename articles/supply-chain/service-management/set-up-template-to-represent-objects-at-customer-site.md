@@ -4,7 +4,7 @@
 title: Set up template to represent objects at customer site 
 description: Set up template to represent objects at customer site.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMAAgreementTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

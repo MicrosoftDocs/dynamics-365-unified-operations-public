@@ -4,7 +4,7 @@
 title: Enter sales agreements
 description: This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enter sales agreements
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.
 
@@ -45,7 +45,7 @@ This topic explains how to create a sales agreement that commits one of your cus
 
 ## Set up product value commitment lines
 1. Select **Add line**.
-2. In the **Item number** field, select the desired record from the drop-down menu. The type of commitment that you have chosen for the agreement affects the kind of information you can enter for the agreement lines. For example, for a value-based agreement you must specify the total net amount (in the agreed currency) for which the customer commits to buys goods from you. In this example the **Quantity** and **Unit** fields on the line are unavailable because you’re creating an agreement for the customer to buy a specific value of a product.   
+2. In the **Item number** field, select the desired record from the drop-down menu. The type of commitment that you have chosen for the agreement affects the kind of information you can enter for the agreement lines. For example, for a value-based agreement you must specify the total net amount (in the agreed currency) for which the customer commits to buys goods from you. In this example the **Quantity** and **Unit** fields on the line are unavailable because you're creating an agreement for the customer to buy a specific value of a product.   
 3. In the **Net amount** field, enter the monetary amount that the customer has committed to buying.
 4. In the **Discount percent** field, enter a percentage value that will apply to the customer's sales order lines that are linked to this agreement.
 5. Expand the **Line details** section.

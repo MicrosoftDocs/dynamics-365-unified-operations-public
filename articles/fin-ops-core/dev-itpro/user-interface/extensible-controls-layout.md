@@ -5,7 +5,7 @@ title: Extensible control layout guidelines
 description: This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11354
@@ -63,11 +63,13 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 #### Children
 
--   Use **$data.Children **if the content handlers (append, replace) will be used to append children through this container. It should be used only if this control is a container.
+-   Use **$data.Children** if the content handlers (append, replace) will be used to append children through this container. It should be used only if this control is a container.
 
 **Example usage:**
 
-    <div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```html
+<div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```
 
 ### Sizing
 
@@ -79,7 +81,9 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 **Example usage:**
 
-    <div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```html
+<div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```
 
 **Things to note about the sizing binding handler:**
 
@@ -91,7 +95,9 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 **Example:**
 
-    <div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```html
+<div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```
 
 FAQ
 ---

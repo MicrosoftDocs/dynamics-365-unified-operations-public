@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Key invoice data into accounts payable using an approval journal
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
 

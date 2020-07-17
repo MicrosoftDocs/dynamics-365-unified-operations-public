@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Key invoice data into the AP system using invoice pool
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to use the invoice register to create invoices. Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.
 

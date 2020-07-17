@@ -4,7 +4,7 @@
 title: Report as finished to a non-license plate controlled location  (Application, May 2016)
 description: This task guide shows an example of reporting as finished to a location that isn't license plate–controlled. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Report as finished to a non-license plate controlled location  (Application, May 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide shows an example of reporting as finished to a location that isn't license plate–controlled. An applicable work policy is the prerequisite for this task. A previous task guide showed the setup of the work policy. This task guide requires Dynamics AX application 7.0.1 or later.
 

@@ -4,7 +4,7 @@
 title: Moving average
 description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed. 
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: InventModelGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65531

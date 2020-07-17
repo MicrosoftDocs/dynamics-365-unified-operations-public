@@ -5,7 +5,7 @@ title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 201
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
 author: meeramahabala
 manager: AnnBe
-ms.date: 09/11/2019
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ Mainstream support for Dynamics AX 2012 R3 continues through October 12, 2021. M
 
 Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can selectively integrate those changes as required. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
 
-Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Talent:
+Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
 - Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
 - Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
@@ -54,7 +54,7 @@ Yes, it was always publicly available on the Microsoft Support Lifecycle site at
 
 ### Can customers on Premier Extended Hotfix Support or on Unified Support Advanced and Performance Levels get a non-security hotfix or regulatory update?
 
-No. Neither non-security hotfixes nor regulatory updates will be available for Dynamics AX 2009 SP1, Dynamics AX 2012, or Dynamics AX 2012 R2 during the Extended Support phase of the product lifecycle. 
+No. Neither non-security hotfixes nor regulatory updates will be available for the Dynamics AX products during the Extended Support phase of the product lifecycle (Dynamics AX 2009 SP1, Dynamics AX 2012, or Dynamics AX 2012 R2).
 
 While the ability to request a non-security hotfix for select products is included with Unified Support Advanced and Performance Levels, Microsoft has determined that non-security hotfixes cannot be provided with a *commercially reasonable* effort for these products. As a result, no requests for non-security hotfixes or regulatory updates will be accepted. However, Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can selectively integrate those changes as required. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on LCS and discoverable through LCS Issue Search.
 

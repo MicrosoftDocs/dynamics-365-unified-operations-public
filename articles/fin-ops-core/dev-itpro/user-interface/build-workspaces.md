@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27111
@@ -176,7 +176,7 @@ This check is intended to ensure that any field that is modeled for use as a fie
 
 #### Chart parts only contain OLAP charts
 
-When a workspace contains a chat, that chart is be modeled as a separate form, and that form is referenced on the workspace via a Form Part control. The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.
+When a workspace contains a chart, that chart is be modeled as a separate form, and that form is referenced on the workspace via a Form Part control. The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.
 
 #### Count tiles have queries defined
 

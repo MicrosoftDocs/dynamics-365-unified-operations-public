@@ -28,19 +28,19 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Configure format to do counting and summing (Part 1 - Create format)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. These steps can be performed in any company.
 
-To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.
+To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 
 ## Get access to the list of configurations provided by Microsoft
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the “Litware, Inc.” provider is available and marked as active.  
-2. Select the “Litware, Inc.” provider.
+    * Make sure that the "Litware, Inc." provider is available and marked as active.  
+2. Select the "Litware, Inc." provider.
 3. Click Repositories.
     * If a repository of the "Operations resources" type already exists, skip the remaining steps of the current sub-task.  
 4. Click Add to open the drop dialog.

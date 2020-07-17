@@ -5,7 +5,7 @@ title: Work with CSS override files
 description: This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Work with CSS override files
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
@@ -105,6 +105,8 @@ To deactivate a CSS override file on your site, follow these steps.
 [Add a logo](add-logo.md)
 
 [Select a site theme](select-site-theme.md)
+
+[Work with style presets](style-presets.md)
 
 [Add a favicon](add-favicon.md)
 

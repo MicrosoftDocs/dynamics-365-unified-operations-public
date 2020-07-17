@@ -78,11 +78,13 @@ Trace Parser currently requires the user to be an administrator. It is not suppo
 ## Is the Admin user provisioning tool supported?
 The **Admin user provisioning** tool currently requires the user to be an administrator. The **Admin user provisioning** tool is typically used to change the tenant of the environment, but that should not be necessary. You can update the sign in information in the database for the Admin user or any other user. You only need the SID and network alias (email address) from a user that can access the environment or another environment on the same tenant. In many cases, the SID and network alias can be found in the database that came with the environment originally. Run the following commands to get the good SID and network alias from the source environment and update them in the target environment, respectively.
 
-    -- get value from source env.
-    select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
+```Console
+-- get value from source env.
+select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
 
-    -- update value in target env.
-    update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+-- update value in target env.
+update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+```
 
 ## Can the system be put into maintenance mode?
 You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.
@@ -90,7 +92,7 @@ You can put the system into maintenance mode to change the license configuration
 1. Establish an RDP connection to the developer machine.
 2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
 
-    ```
+    ```Console
     update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
     ```
 
@@ -114,5 +116,5 @@ As of the February 2018 release of Lifecyle Services (LCS), you can execute the 
 
 The process described in [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
 
-## What do I need to know if I am developing for Retail?
-If you are developing for Dynamics 365 Retail, configuration steps and other important information is described in [Development in cloud-hosted development environments without admin access](../../../retail/dev-itpro/cloud-dev-box.md).
+## What do I need to know if I am developing for Commerce?
+If you are developing for Dynamics 365 Commerce, configuration steps and other important information is described in [Development in cloud-hosted development environments without admin access](../../../retail/dev-itpro/cloud-dev-box.md).

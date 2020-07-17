@@ -4,7 +4,7 @@
 title: Create a new product
 description: This topic describes how to create a new shared product. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a new product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to create a new shared product. It is usually carried out by a product designer. The demo data company used to create this task is USMF.
 

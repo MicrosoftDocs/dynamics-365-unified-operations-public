@@ -4,7 +4,7 @@
 title: Activity-based subcontracting
 description: This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanAct
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267034
