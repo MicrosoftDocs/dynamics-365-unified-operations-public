@@ -70,7 +70,7 @@ Any CDN service can be used with a Commerce environment. Here are two examples:
 The CDN setup process consists of these general steps:
 
 1. Add a front-end host.
-1. Configure a back-end pool.
+1. Configure a backend pool.
 1. Set up rules for routing and caching.
 
 ### Add a front-end host
@@ -83,7 +83,7 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 
 To configure a backend pool in Azure Front Door Service, follow these steps.
 
-1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty backend host header.
+1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has an empty backend host header.
 1. Under **Load balancing**, leave the default values.
 
 The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
