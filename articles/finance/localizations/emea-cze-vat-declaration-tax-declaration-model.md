@@ -1,13 +1,11 @@
 ---
 # required metadata
 
-title: VAT declaration (The Czech Republic)
-description: This topic provides information about the value-added tax (VAT) declaration for
-the Czech Republic, including instructions for setting up and generating the
-VAT declaration and VAT control statement.
-author: anasyash
+title: Vendor payments workspace
+description: Accounts payable vendor invoicing processes, such as submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines can be automated. 
+author: abruer
 manager: AnnBe
-ms.date: 07/13/2020
+ms.date: 07/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+ms.search.form:  VendPaymentWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom
-ms.search.region: Czech Republic
+# ms.custom: 
+ms.assetid: 
+ms.search.region: Global
 # ms.search.industry: 
-ms.author: anasyash
-ms.search.validFrom: 2020-07-20
-ms.dyn365.ops.version: AX 10.0.13
+ms.author: shpandey
+ms.search.validFrom: 2017-07-20
+ms.dyn365.ops.version: 10.0.13
+
 ---
 
 # VAT declaration (The Czech Republic)
