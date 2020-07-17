@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Vendor payments workspace
-description: Accounts payable vendor invoicing processes, such as submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines can be automated. 
-author: abruer
+title: VAT declaration (The Czech Republic)
+description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic, including instructions for setting up and generating the VAT declaration and VAT control statement. 
+author: anasyash
 manager: AnnBe
 ms.date: 07/17/2020
 ms.topic: article
@@ -13,17 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  VendPaymentWorkspace
+ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
-ms.search.region: Global
+ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
 
