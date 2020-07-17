@@ -42,19 +42,22 @@ However, Commerce doesn't address all laws, regulations, or commercial requireme
 3. Submission of Brazilian business documents (listed below) is done through [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). The configuration steps and the process of submitting an NFC-e fiscal document is similar to the one described in the following article: [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
 4. Formats for electronic documents in accordance with the legal requirements in Brazil are configured using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality.
 
-## Brazilian Commerce localization capabilities
+## Capabilities of Commerce localization for Brazil 
 
-### Scope available in Brazil:
-- Retail product management and calculation of Brazil-specific taxes applicable to sales to final customers, incl. estimated tax breakdown in printed fiscal receipts.
-- Generation of electronic fiscal documents NFC-e for retail sales (model 65), submission of the electronic fiscal documents via the government’s Sefaz web services, and printing of DANFE NFC-e receipts.
-- Cancellations of retail sales via the government’s Sefaz web services within the allowed time.
-- Generation of electronic fiscal documents NF-e for retail returns (model 55), submission of the electronic fiscal documents via the government’s Sefaz web services, and printing of DANFE NF-e receipts.
+### Scope available in Brazil
+
+The following features are available to Commerce customers in Brazil in Commerce Headquarters (HQ) and point of sale (POS):
+
+- Retail product management and calculation of Brazil-specific taxes applicable to sales to final consumers, including estimated tax breakdown in printed fiscal receipts.
+- Generation of electronic fiscal documents NFC-e (Nota Fiscal do Consumidor eletrônica) for retail sales (model 65) and submission of the electronic fiscal documents via the government’s web services, and printing of DANFE NFC-e receipts.
+- Cancellations of retail sales via the government’s web services within the allowed timeframe.
+- Generation of electronic fiscal documents NF-e (Nota Fiscal eletrônica) for retail returns (model 55), submission of the electronic fiscal documents via the government’s web services, and printing of DANFE NF-e receipts.
 - Generation of electronic fiscal documents CF-e (Cupom Fiscal eletrônico) for retail sales in São Paulo (model 59) and registration of the electronic fiscal documents in the SAT fiscal device. 
-- EFT integration for POS, including integration with popular local and global payment providers, support of debit and credit card payments.
-- Management of Brazil-specific customer registration numbers from point of sale (POS), including entering, viewing, and modifying the registration numbers of CNPJ/CPF or Foreigner ID, and registration this numbers in NFC-e/NF-e/CF-e and printed receipts. 
-- Postponed registration of fiscal documents in case of network failures (offline contingency mode) and subsequent transmission of NFC-e/NF-e in contingency from Headquarters (HQ).
-- Control of fiscal documents in HQ, NFC-e discard, cancellation by substitution.
-- Generation and submission of NFC-e/NF-e for customer orders.
+- EFT integration for POS, including integration with popular local and global payment providers amd support of debit and credit card payments.
+- Management of Brazil-specific customer registration numbers, including entering, viewing, and modifying CNPJ/CPF or Foreigner ID, and registration of these numbers in NFC-e/NF-e/CF-e and printed receipts. 
+- Postponed registration of electronic fiscal documents in case of network failures (offline contingency mode) and subsequent transmission of electronic fiscal documents in contingency from HQ.
+- Control of electronic fiscal documents in HQ, including the capabilities to discard the documents and to register a cancellation by substitution.
+- Generation and submission of electronic fiscal documents for customer orders.
 - Issuing Linked NF-e over all types of registered fiscal documents.
 - N-1 support, enabling customers running Microsoft Dynamics AX 2012 R3 in their stores to work with Microsoft Dynamics 365 Commerce headquarters after an upgrade.
 - Support for Brazil-specific fields, such as tax registration numbers CNPJ/CPF, when merging customer master records in a call center.
