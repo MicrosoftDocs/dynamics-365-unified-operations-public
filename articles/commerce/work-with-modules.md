@@ -78,7 +78,7 @@ To add a module to a slot or container on a page, follow these steps.
     > [!NOTE]
     > The module designer defines the list of modules types that can be added to a specific module slot. Template authors can then refine the allowed module options to help guarantee consistent search engine optimization (SEO) and authoring efficiency for all the pages pages that are built from a specific template. When adding a module to a slot, the **Add Module** dialog box is automatically filtered so that it shows only modules that are supported in the selected container or slot. This list of allowed modules is determined by the page's template or the container's module definition.
 
-1. If using the outline pane, select the ellipsis (**...**) next to the module name, and then select **Add Module**. If using the controls directly within the canvas, select the plus symbol (**"+"**) in an empty slot or adjacent to the currently selected module, and then select **Add module"**. The **Add Module** dialog box appears.
+1. If using the outline pane, select the ellipsis (**...**) next to the module name, and then select **Add Module**. If using the controls directly within the canvas, select the plus symbol (**"+"**) in an empty slot or adjacent to the currently selected module, and then select **Add Module"**.
 
     > [!NOTE]
     > If a container or slot doesn't support new child modules, the **Add Module** option is unavailable.
@@ -103,16 +103,22 @@ To move a module to a new position within your page, use any of the following me
 
 ### Move a module using the outline pane
 
-1. Select and hold the module you wish to move in the outline pane, then drag the module to a new position in the outline. The blue line in the outline and on the canvas indicates where the module can be placed.
-1. Release the module to drop into the new position.
+To move a module using the outline pane, follow these steps.
+
+1. Select and hold the module you want to move in the outline pane, then drag the module to a new position in the outline. The blue line in the outline and on the canvas indicates where the module can be placed.
+1. Release the module to drop it into the new position.
 
 ### Move a module directly within the canvas
 
-1. Select the module you wish to move in the canvas. 
-1. Select and hold the **Move** icon in the module's toolbar, and then drag the module to a new position on the page. The blue line in the canvas and outline indicates where the module can be placed.
+To move a module directly within the canvas, follow these steps.
+
+1. Select the module you want to move in the canvas. 
+1. Select either an upward or downward pointing arrow symbol in the module's toolbar, and then drag the arrow to a new position on the page. The blue line in the canvas and outline indicates where the module can be placed. If a module cannot be moved up or down, that arrow symbol will be grayed out. 
 1. Release the module to drop it into the new position.
 
-### Move a module using the ellipsis drop down menu
+### Move a module using the ellipsis menu
+
+To move a module using the ellipsis menu, follow these steps.
 
 1. Select a module in either the outline or the canvas.
 1. Select the ellipsis (**...**) next to the module's name in the outline pane, or in the module's toolbar in the canvas.
@@ -126,13 +132,13 @@ The following procedures describe how to configure content and container modules
 
 To configure a content module on a page, follow these steps.
 
-1. In the outline pane on the left, expand the tree and select any content module (for example, **Content Block**). Alternately, you can select the module within the main canvas.
+1. In the outline pane on the left, expand the tree and select any content module (for example, **Content block**). Alternately, you can select the module in the main canvas.
 1. In the module properties pane on the right, enter properties for any desired module controls.
 1. On the command bar, select **Save**. This will also refresh the preview canvas.
 
 ### Edit module text properties
 
-Module text properties that are not read-only can be edited directly within the canvas.
+Module text properties that are not read-only can be edited directly in the canvas.
 
 To edit module text properties, follow these steps.
 
@@ -140,7 +146,7 @@ To edit module text properties, follow these steps.
 1. Enter your text content.
 1. Select anywhere outside the text content to continue editing other content.
 
-### In-line image selection
+### Inline image selection
 
 Module images that are not read-only can be changed directly from the canvas.
 
