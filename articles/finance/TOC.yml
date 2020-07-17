@@ -790,6 +790,8 @@
       items:
       - name: Set up lease books
         href: asset-leasing/set-up-lease-books.md
+      - name: Create a lease group
+        href: asset-leasing/create-lease-group.md
     - name: General ledger
       items:
       - name: General ledger overview
