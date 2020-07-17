@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -47,18 +47,16 @@ The following image shows an example of a cart page on the Fabrikam site.
 
 ![Example of a cart module](./media/cart2.PNG)
 
-The following image shows an example of a cart page on the Fabirkam site with a Handling fee for a line item. Support added in 10.0.13
-![Example of a cart module](./media/ecommerce-handling fee.PNG)
+The following image shows an example of a cart page on the Fabrikam site with a handling fee for a line item.
+
+![Example of a cart module](./media/ecommerce-handling-fee.png)
 
 ## Cart module properties and slots
-|Property|Value|Descirption|
+| Property | Value | Description |
 |----------------|--------|-------------|
-|Heading| Heading text and tag| It can be to set a heading such as "Shopping bag" or  "Items in your cart" etc|
-|Show Cart out of stock errors| True or False| If True, shows stock related errors on the cart page. Its recommended to set this to True if Inventory checks are applied on the site|
-|Show shipping charge as line item| True or False| If shipping charge is available for a cart line item shows the charge. This is not applicable in Fabrikam theme as the user selects shipping only in checkout flow, but in other workflows this feature can be turned on if applicable |
-
-
-
+| Heading | Heading text  | This property can be set to display a heading such as "Shopping bag" or "Items in your cart". |
+| Show out of stock errors | True/False| If enabled (True), stock-related errors will be displayed on the cart page. It is recommended to set this to True if inventory checks are applied on the site. |
+| Show shipping charges for line items | True/False| If enabled (True), cart line items will show the shipping charges if available. This is not supported in the Fabrikam theme because the user selects shipping only in the checkout flow, but in other workflows this feature can be turned on if applicable. |
 
 ## Modules that can be used in a cart module
 
