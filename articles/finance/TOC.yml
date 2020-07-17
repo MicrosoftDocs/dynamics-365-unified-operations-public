@@ -218,6 +218,10 @@
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
         href: accounts-payable/three-way-matching-policies.md
+      - name: Accounts payable invoice processing automation
+        items:
+        - name: Automating vendor invoicing processes overview
+          href: accounts-payable/auto-vendr-invc-process.md
       - name: Accounts payable invoice matching
         items:
         - name: Accounts payable invoice matching overview
