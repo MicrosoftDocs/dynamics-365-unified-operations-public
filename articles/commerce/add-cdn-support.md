@@ -79,16 +79,19 @@ Any CDN service can be used, but for the example in this topic, Azure Front Door
 
 For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### Configure a back-end pool in Azure Front Door Service
+### Configure a backend pool in Azure Front Door Service
 
-To configure a back-end pool in Azure Front Door Service, follow these steps.
+To configure a backend pool in Azure Front Door Service, follow these steps.
 
-1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty back-end host header.
+1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty backend host header.
 1. Under **Load balancing**, leave the default values.
 
-The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service.
+The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
 
 ![Add a backend pool dialog box](./media/CDN_BackendPool.png)
+
+The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service with the default load balancing values.
+
 ![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
 
 ### Set up rules in Azure Front Door Service
@@ -126,9 +129,9 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
 > [!WARNING]
-> If the domain that you will use is already **active and live**, create a support ticket using the new Support Ticket for Dynamics Commerce to assist in next steps.
+> If the domain that you will use is already **active and live**, create a support ticket using the new [Support Ticket for Dynamics Commerce](TBD) to assist in next steps.
 
-If your domain is **new**, and is **not a pre-existing live domain**, you can add your custom domain to the configruation for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
+If your domain is new and is not a pre-existing live domain, you can add your custom domain to the configuration for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
@@ -140,8 +143,7 @@ The following illustration shows the **Custom Domain HTTPS** dialog box in Azure
 
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
 
-
-Azure Front Door also has detailed instructions for [adding a custom domain to your Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain)
+For detailed instructions on adding a custom domain to your Azure Front Door, see [Add a custom domain to your Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Your CDN should now be correctly configured so that it can be used with your Commerce site.
 
