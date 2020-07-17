@@ -35,97 +35,88 @@ This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Domains are web addresses used to navigate to your Dynamics 365 Commerce site in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Commerce site builder to coordinate how a site will be accessed when published. This article will review how domains are referenced throughout the lifecycle of the Commerce site development and launch.
+Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Commerce site builder to coordinate how a site will be accessed when published. This topic reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.
 
 ## Provisioning and supported host names
 
-When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the "supported host names" field is used to enter the domain(s) that will be associated with the deployed Commerce environment. Multiple supported host names can be entered by separating them with semi-colons. This domain will be the customer-facing DNS name (or names) where the e-Commerce website will be hosted. Entering domains at this stage does not start diverting traffic for those domains to Dynamics 365 Commerce, that happens when (?).
+When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the "supported host names" field is used to enter the domain(s) that will be associated with the deployed Commerce environment. Multiple supported host names can be entered by separating them with semi-colons. Domains entered here will be the customer-facing DNS names where e-Commerce websites will be hosted. Entering domains at this stage does not start diverting traffic for those domains to Dynamics 365 Commerce, that happens when (?).
 
-Create a service request to add additional domains to the environment if provisioning has already occurred.
-
-You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from sandbox to production. The domain information will be copied into production, ready to work.
+You can create a service request to add additional domains to the environment if provisioning has already occurred.
 
 When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the "e-Commerce site" link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the domain you entered in the LCS "supported host names" field for the Commerce environment.
+
+You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from sandbox to production. The domain information will be copied into production, ready to work.
 
 Non-production environments will show a suffix reflecting the environment type within the Commerce generated URL (for example, format of a sandbox environment: `https://<e-Commerce tenant name>-sandbox.commerce.dynamics.com`). Note that in the future, the "-sandbox" suffix will be removed.
 
 ## Site setup and generated URLs
 
-Once your e-Commerce environment is provisioned, perform an initiate site setup in site builder to associate a site to the working URL.
+Once your e-Commerce environment is provisioned, you must perform an initiate site setup in Commerce site builder to associate your site to the working URL.
 
-When first selecting a site in site builder to work, the ‘Setup your Site’ dialogue will be presented.
+When you first set up a site in site builder, the **Setup your Site** dialog box will appear.
 
-Below is an example of the initial setup dialogue of a site named ‘default’ in site builder:
+The following illustration shows an example of the **Setup your Site** dialog box for a site named "default" in site builder:
 
-![Set up your Site screen](./media/Domains_SetupyoursiteScreen.png)
+![**Setup your Site** dialog box](./media/Domains_SetupyoursiteScreen.png)
 
-**Select a domain** allows you to associate one of the **Supported Host Names** provided to this site in site builder.
+The **Select a domain** field allows you to associate one of the supported host names provided for your site in LCS to your site in site builder.
 
-**Path** can be left blank, or an additional path string can be added which will be reflected in your working URL.
+The **Path** field can be left blank, or an additional path string can be added which will be reflected in your working URL. Leaving the **Path** field blank associates the base Commerce-generated URL with the site being set up in site builder. Paths must be unique for each site/domain combination. Within the site and domain selected, only one site in the environment can use the blank path or be associated with a unique path string. Any string added to the **Path** field during site setup will be become a sub-path of the base Commerce-generated URL used to access the site in a web browser. The **Path** is also known as the **Match path** when adding a channel in the **Site Settings \> Channels** configuration section of site builder.
 
-- **Paths** must be unique for each site + domain combination. Within the site and domain selected, only one site in the environment can use the blank path or be associated to a unique path string.
-
-- Leaving the **Path** ‘blank’ associates the base **Commerce Generated URL** to the site being setup.
-
-- Any **Path** string added during site setup will be reflected as a sub-path following the base Commerce Generated URL to access the site content in a web browser.
-
-- **Path** is also referenced as “**Match Path**” when in the Site Settings > Channel configuration sections.
-
-For example, if you have a site in site builder called ‘fabrikam’ in an environment named ‘xyz’, and if you set up the site with a blank **Path**-  then you can access the published site content in a web browser by going directly to the base Commerce Generated URL for this environment:
+For example, if you have a site in site builder called "fabrikam" in an environment named "xyz," and if you set up the site with a blank **Path**, then you would access the published site content in a web browser by going directly to the base Commerce-generated URL:
 
 - `https://xyz.commerce.dynamics.com`
 
-If you had added a Path of ‘fabrikam’ during this same site’s setup instead, you can access the published site content in a web browser by going to:
+Alternately, if you had added a path of "fabrikam" during this same site's setup, you would access the published site content in a web browser by going to:
 
 - `https://xyz.commerce.dynamics.com/fabrikam`
 
 ## Pages and URLs
 
-Once your site is set up with a path, all URLs associated to pages in site builder will reference off the initial working URL for the site.
+Once your site is set up with a path, all URLs associated with pages in site builder will build on the working URL (in other words, the Commerce-generated URL, or the Commerce-generated URL plus the path) for the site. Creating a new URL in site builder (**URLS /> +New**) by selecting a page and entering the desired URL path for that page will associate that URL with the page. This URL path value appends to the site's working URL to access the page, and is labeled as `./<URL path>` in the URL list of the **URLs** page in site builder.
 
-![Run user flow option in policy flow](./media/Domains_PageSetup.png)
+The following illustration shows the **New URL** dialog box in site builder. 
 
-Creating a new URL will allow a URL path to be designated for the Page associated. This value appends to the site’s working URL to access the page (labeled as `./<URL path>` in the URL list menu.
+![**New URL** dialog box in site builder](./media/Domains_PageSetup.png)
+
+The following illustration shows the **URLs** page in site builder.
 
 ![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder.png)
 
-## Domains
+## Domains in site builder
 
-The **Supported host names** values are available to be associated as a **domain** when setting up a site. When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder when working in site builder. This domain is a reference only within the Commerce environment, live traffic for that domain is not yet forwarded to dynamics commerce.
+The supported host names values are available to be associated as a domain when setting up a site. When selecting a supported host name value as the domain, you will see the chosen domain referenced throughout site builder. This domain is a reference only within the Commerce environment, live traffic for that domain is not yet forwarded to Dynamics 365 Commerce.
 
-When working with sites in site builder, if you have two sites set up with different domains associated, you can use the ‘?domain=’ attribute appended to your working URL to access the published site content in a browser.
+When working with sites in site builder, if you have two sites set up with two different domains, you can append the **?domain=** attribute to your working URL to access the published site content in a browser.
 
-For example: 
-
-Environment "xyz" has been provisioned, and two sites created- one with domain `www.fabrikam.com` and the other with domain `www.constoso.com` associated in site builder. Each using the blank **Path**. These two sites could be referenced in a web browser using the following ‘?domain’ attribute:
+For example, environment "xyz" has been provisioned, and two sites have been created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the **?domain=** attribute:
 - `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
 - `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
 
-When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you have provided. In the above example `https://xyz.commerce.dynamics.com` would serve the site for `www.fabrikam.com`.
+When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. If the path "fabrikam" was added during site setup, the URL `https://xyz.commerce.dynamics.com` could be used to access the published site content site for `www.fabrikam.com`.
 
 ## DNS and Go-Live
 
-You can simulate multi-domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you need to forward the traffic for your custom domain to the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint.
+You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you need to forward the traffic for your custom domain to the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint.
 
-As noted in the Dynamics 365 Commerce [CDN documentation](add-cdn-support.md), the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint does not support custom domain SSLs. This means you must set up custom domains in a front door service or CDN. For this you have two options:
+The `<e-Commerce tenant name>.commerce.dynamics.com` endpoint does not support custom domain Secure Sockets Layers (SSLs). This means that you must set up custom domains using a front door service or CDN. For this you have two options:
 
-- **Set up a front door service** like Azure Front Door to handle front-end traffic and connect to your Commerce environment
-  - Provides greater control over domain management/certificate management and more granular security policies
-- Utilize the **Commerce supplied Azure Front Door** instance
-  - Requires coordinating action with the Dynamics 365 Commerce Team for domain verification and SSL Certificates for your production domain
+- Set up a front door service like Azure Front Door to handle front-end traffic and connect to your Commerce environment.
+  - This provides greater control over domain and certificate management and more granular security policies.
+- Use the Commerce-supplied Azure Front Door instance.
+  - This requires coordinating action with the Dynamics 365 Commerce team for domain verification and obtaining SSL certificates for your production domain.
 
-To set up a CDN service directly, refer to the [Add CDN Support](add-cdn-support.md) article in Microsoft Docs.
+To set up a content delivery network (CDN) service directly, see [Add support for a content delivery network (CDN)](add-cdn-support.md).
 
-To utilize the Commerce supplied Azure Front Door instance:
+To use the Commerce-supplied Azure Front Door instance, create a service request for CDN setup assistance from the Commerce onboarding team. 
 
-- Create a Service Request from your Prod environment to request CDN Setup from the Commerce Onboarding Team. 
-  - You will need to provide your Company Name, the production domain, Environment ID, and production eCommerce Tenant Name. 
-  - Also confirm if this is an **existing domain** (used for a currently active site ) or a **brand new domain**. 
-  - For brand new domain, the domain verification and SSL certificate can be achieved in a single step. 
-  - For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day SLA for a domain to go live as it includes multiple sequential steps for the domain verification and SSL certificate (detailed below in **SSL Certificate Process with Commerce**).
+- You will need to provide your company name, the production domain, environment ID, and production e-Commerce tenant name. 
+- You will need to confirm if this is an existing domain (used for a currently active site ) or a brand new domain. 
+- For a brand new domain, the domain verification and SSL certificate can be achieved in a single step. 
+- For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day service level agreement (SLA) for a domain to go live, since it includes multiple sequential steps (detailed below).
 
 >[!NOTE]
->Custom domains with SSL are only supported on production environments. For lower environments (Sandbox, UAT), use the Commerce Generated URL to access published content in a web browser.
+>Custom domains with SSL are only supported on production environments. For lower environments (for example, sandbox and user acceptance testing [UAT]), use the Commerce- generated URL to access published content in a web browser.
 
 ## SSL certificate process
 
@@ -137,9 +128,9 @@ Once a service request is filed, the Commerce team will coordinate the following
   - After the CNAME record is updated, the Commerce-hosted Azure Front Door instance will be able to verify the domain ownership and get the SSL certificate.
   
 - For existing/active domains:
-  - Commerce will instruct to add an afdverify.`<custom-domain>` CNAME record to add on your domain DNS provider.
-  - Once completed, Commerce will add the domain to the Azure Front Door instance and provide additional DNS TXT Records to be added to the DNS for the domain.
-  - After the TXT records are completed, Commerce will complete the AFD updates for the domain which will setup the SSL certificate.
+  - Commerce will instruct you to add an `afdverify.<custom-domain>` CNAME record to provide to your domain DNS provider.
+  - Once completed, Commerce will add the domain to the Azure Front Door instance and provide additional DNS TXT records to be added to the DNS for the domain.
+  - After the TXT records are completed, Commerce will complete the Azure Front Door updates for the domain that will set up the SSL certificate.
 
 ## Apex domains
 
