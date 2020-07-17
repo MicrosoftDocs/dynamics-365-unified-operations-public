@@ -40,7 +40,7 @@ This topic describes how to add a content delivery network (CDN) to your Microso
 
 When you set up an e-Commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
-Your custom domain can be enabled during the provisioning process for your e-Commerce environment. Alternatively, you can use a service request to set it up after the provisioning process is completed. The provisioning process for the e-Commerce environment generates a host name that is associated with the environment. This host name has the following format, where *e-commerce-tenant-name* is the name of your environment:
+Your custom domain can be enabled during the provisioning process for your e-Commerce environment. Alternatively, you can use a service request to set it up after the provisioning process is completed. The provisioning process for the e-Commerce environment generates a host name that is associated with the environment. This host name has the following format, where \<*e-commerce-tenant-name*\> is the name of your environment:
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
