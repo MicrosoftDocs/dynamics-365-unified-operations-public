@@ -147,7 +147,13 @@ This section maintains a list of known issues for the new grid control while the
 > [!NOTE]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-- [KB 4563317] Tooltips aren't shown for images.
+-  [
+-  [KB 4575297] Focus keeps moving to the task recorder pane when editing and tabbing through a grid
+-  [KB 4566773] Correction transactions not showing as negative on voucher transactions inquiry 
+-  [KB 4575288] Focus resets to the active row when clicking the border between rows in a simple list
+-  [KB 4575287] Focus doesn't return to the first column when using the down arrow to create a new row in journals
+-  [KB 4564819] Cannot delete lines in a free text invoice (since the datasource ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Tooltips aren't shown for images.
 
 ### Fixed as part of 10.0.12
 
@@ -164,6 +170,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4562647] Focus is reset to the first control in the **Publish** dialog box after a new row is added in the security roles grid.
 - [KB 4563310] The enhanced preview isn't closed after a row is changed.
 - [KB 4563313] An "unexpected client error" occurs in Internet Explorer when a value is selected in a lookup.
+- [KB 4564557] Lookups and drop downs won't open in Internet Explorer
 - [KB 4563324] Navigation doesn't work after the **Personnel management** workspace is opened.
 
 ### Fixed as part of 10.0.11
