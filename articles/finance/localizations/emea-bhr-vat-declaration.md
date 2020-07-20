@@ -100,7 +100,7 @@ After you've finished downloading the ER configurations from LCS or Global repos
 
 The VAT declaration form includes a set of boxes (lines) which correspond to specific parts of the VAT Return process. Each box should include information about the base, adjustment and VAT amounts. In order to include the requirements established by the form, the user needs to configure each box with the proper information that is coming automatically from sales tax transactions generated from sales , purchase or other operations where VAT tax is posted through the sales tax code configuration.
 
-![Declaration form](media/emea-bhr-vat-Declaration-Form.jpg)
+![Declaration form](media/emea-bhr-vat-Declaration-Form.png)
 
 #### Example
 
@@ -131,7 +131,7 @@ By adding this last record (NA), you define the following rule: Whenever the Tax
 10. Close the Application specific parameters page.
 
 
-![Set up specific parameters](media/emea-bhr-vat-Format-Setup.jpg)
+![Set up specific parameters](media/emea-bhr-vat-Format-Setup.png)
 
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented  in Dynamics Finance 365
@@ -188,7 +188,7 @@ The following table represent an example of how the user needs to configure thes
 |     Box15             |     Corrections from   previous period (between BHD (+/-) 5,000                           |     VAT_COR             |     PurchaseCreditNote                 |
 |     NA                |     Not applicable                                                                        |     *Not blank*         |     *Not blank*                        |
 
-The Box2 and Box2Ajd represent the total amount of sales to GCC states and all adjustments to sales to registered customers in GCC states will be treated as exports (Box5 and Box5Adj) until integrated GCC customs system goes live. One the tax authority enables this option, then the configuration should be changed to achieve the original requirement. 
+The Box2 and Box2Ajd represent the total amount of sales to GCC states and all adjustments to sales to registered customers in GCC states will be treated as exports (Box5 and Box5Adj) until integrated GCC customs system goes live. Once the tax authority enables this option, then the configuration should be changed to achieve the original requirement. 
 
 To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code VAT_ST, you will be facing some issues when the report is generated. We recommend to use **Tax > Inquire > Posted sales tax** menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
 
