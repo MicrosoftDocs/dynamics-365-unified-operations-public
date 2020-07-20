@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 # Create a lease group
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Lease groups are a mandatory field when creating a lease as it determines the default books to create for a lease. Lease books are associated to a lease group. Accounts can be specified in the Lease posting accounts setup for a specific book.
 
