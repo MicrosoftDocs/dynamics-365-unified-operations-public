@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 10.0.6
 # Set up expense types
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topoic lists the steps for setting up expense types in Asset leasging. Costs that aren't represented by the payment schedule are called expense costs. Examples of these costs can include property taxes, common area maintenance costs and insurance expenses. 
 
