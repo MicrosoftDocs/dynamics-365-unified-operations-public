@@ -41,7 +41,7 @@ ms.dyn365.ops.version: 10.0.13
 | **CONFIGURABLE**                | Yes. See the configurations in [Import of Electronic Reporting configurations](#ERConfigs).|
 | **INTERNAL REFERENCE**                | [Compliance 3982342](https://vstsmbs.visualstudio.com/Compliance/_queries/edit/3982342)|
 | **FIRST AVAILABLE IN**                | 2020 Release Wave 2 (Monthly update 10.0.13)|
-| **FEATURE UPDATE HISTORY**                |  |
+| **FEATURE UPDATE HISTORY**                |First version  |
 | **FEATURE MANAGEMENT**                | No activation required. See the related features in [Features enabling](#Features).|
 | **BUSINESS NEED**                | The VAT declararion must be compliant with Bahraini legal requirements.|
 | **FEATURE DESCRIPTION**                | The article explains how to configure and generate the VAT return form in accordance with Bahraini legal requirements.|
@@ -100,7 +100,7 @@ After you've finished downloading the ER configurations from LCS or Global repos
 
 The VAT declaration form includes a set of boxes (lines) which correspond to specific parts of the VAT Return process. Each box should include information about the base, adjustment and VAT amounts. In order to include the requirements established by the form, the user needs to configure each box with the proper information that is coming automatically from sales tax transactions generated from sales , purchase or other operations where VAT tax is posted through the sales tax code configuration.
 
-![Set up specific parameters](media/emea-bhr-Declaration-Form.jpg)
+![Declaration form](media/emea-bhr-vat-Declaration-Form.jpg)
 
 #### Example
 
@@ -131,7 +131,7 @@ By adding this last record (NA), you define the following rule: Whenever the Tax
 10. Close the Application specific parameters page.
 
 
-![Set up specific parameters](media/emea-bhr-Format-Setup.jpg)
+![Set up specific parameters](media/emea-bhr-vat-Format-Setup.jpg)
 
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented  in Dynamics Finance 365
