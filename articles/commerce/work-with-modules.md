@@ -76,9 +76,9 @@ To add a module to a slot or container on a page, follow these steps.
 1. In the outline pane on the left or directly in the main canvas, select a container or slot to which a child module can be added.
 
     > [!NOTE]
-    > The module designer defines the list of modules types that can be added to a specific module slot. Template authors can then refine the allowed module options to help guarantee consistent search engine optimization (SEO) and authoring efficiency for all the pages pages that are built from a specific template. When adding a module to a slot, the **Add Module** dialog box is automatically filtered so that it shows only modules that are supported in the selected container or slot. This list of allowed modules is determined by the page's template or the container's module definition.
+    > The module designer defines the list of modules types that can be added to a specific module slot. Template authors can then refine the allowed module options to help guarantee consistent search engine optimization (SEO) and authoring efficiency for all the pages that are built from a specific template. When adding a module to a slot, the **Add Module** dialog box is automatically filtered so that it shows only modules that are supported in the selected container or slot. This list of allowed modules is determined by the page's template or the container's module definition.
 
-1. If using the outline pane, select the ellipsis (**...**) next to the module name, and then select **Add Module**. If using the controls directly within the canvas, select the plus symbol (**"+"**) in an empty slot or adjacent to the currently selected module, and then select **Add Module"**.
+1. If using the outline pane, select the ellipsis (**...**) next to the module name, and then select **Add Module**. If using the controls directly within the canvas, select the plus symbol (**+**) in an empty slot or adjacent to the currently selected module, and then select **Add Module**.
 
     > [!NOTE]
     > If a container or slot doesn't support new child modules, the **Add Module** option is unavailable.
