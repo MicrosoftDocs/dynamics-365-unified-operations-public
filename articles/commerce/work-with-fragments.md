@@ -100,7 +100,7 @@ The following procedures describe how to add, remove, and edit fragments.
 To add a fragment to a page, follow these steps.
 
 1. In the outline pane on the left or directly in the main canvas, select a container or slot to which child modules can be added.
-1. In the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using the main canvas, select the plus symbol (**"+"**).  
+1. In the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using the main canvas, select the plus symbol (**+**).  
 1. Select **Add Fragment**.
 
     ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)
