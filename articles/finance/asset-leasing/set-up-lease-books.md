@@ -35,6 +35,7 @@ ms.dyn365.ops.version: 10.0.13
 # Set up lease books
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Lease books contain the accounting policies that determine how the lease is accounted for in the system. Asset leasing supports both US GAAP, ASC 842, and ASC 840, international standards IFRS 16 and IAS 17, in addition to cash basis accounting.
 
