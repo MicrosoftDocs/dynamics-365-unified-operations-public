@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Insights administration (preview)
-description: 
+description: This topic walks through the prerequisites and the broad steps required for using a trial version of Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
