@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 10.0.6
 # Configure lease parameters
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 There are several parameters that determine the behavior of Asset leasing capability, such as security information and accounting settings.
 
