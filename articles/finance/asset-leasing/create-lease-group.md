@@ -3,8 +3,9 @@
 
 title: Create a lease group
 description: Lease groups are a mandatory field when creating a lease as it determines the default books to create for a lease. Lease books are associated to a lease group. Accounts can be specified in the Lease posting accounts setup for a specific book.
+author: moaamer
 manager: Ann Beebe
-ms.date: 07/17/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -12,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -25,7 +26,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: vstehman
-ms.search.validFrom: 2020-07-17
+ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: 10.0.13
 
 ---
