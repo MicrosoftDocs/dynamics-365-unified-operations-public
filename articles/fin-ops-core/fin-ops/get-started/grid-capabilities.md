@@ -147,13 +147,21 @@ This section maintains a list of known issues for the new grid control while the
 > [!NOTE]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
--  [
+-  [KB ] 
+
+-  [KB 4575437] Lookups with editable controls close unexpectedly
+-  [KB 4569418] Duplicate line created in delivery schedule form
+-  [KB 4575435] Enhanced preview sometimes persists when my mouse isn't near the field
+-  [KB 4575434] Lookup isn't filtering when the field is dirty
+-  [KB 4575430] Values in password fields aren't masked in the grid
+-  [KB 4569438] "Processing has stopped because of a validation issue" raised after marking lines while settling supplier transactions (
+-  [KB 4569434] Refreshing the Legal entities form results in fewer records
 -  [KB 4575297] Focus keeps moving to the task recorder pane when editing and tabbing through a grid
 -  [KB 4566773] Correction transactions not showing as negative on voucher transactions inquiry 
 -  [KB 4575288] Focus resets to the active row when clicking the border between rows in a simple list
 -  [KB 4575287] Focus doesn't return to the first column when using the down arrow to create a new row in journals
 -  [KB 4564819] Cannot delete lines in a free text invoice (since the datasource ChangeGroupMode=ImplicitInnerOuter)
--  [KB 4563317] Tooltips aren't shown for images.
+-  [KB 4563317] Tooltips/enhanced previews aren't shown for images.
 
 ### Fixed as part of 10.0.12
 
