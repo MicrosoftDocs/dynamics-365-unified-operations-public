@@ -56,7 +56,7 @@ To apply an extension to a Commerce Scale Unit, run the following steps:
 > [!NOTE]
 > You must first upload the Commerce deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
 
-Both **Apply updates** and **Apply extension** operations will involve a downtime which may last up to 1 hour in many cases, or up to 2 hours or more in certain cases (e.g. Non-US locations of Commerce Scale Unit, large data volumes, complex schema updates, etc.). During this time, the following will occur:
+Both **Apply updates** and **Apply extension** operations will involve a downtime which may last up to 1 hour, or in some cases up to 2 hours or more (e.g. when updating non-US locations of Commerce Scale Unit, large data volumes, complex schema updates, etc.). During this time, the following will occur:
 
 - Cloud-hosted Commerce channels will not function (unless POS offline capability is enabled).
 - POS devices that have the offline capability feature enabled will have reduced functionality.
