@@ -2,9 +2,10 @@
 # required metadata
 
 title: Set up lease books
-description: 
+description: This topic describes the information that's maintained in lease books, which contain the accounting policies that determine how the lease is accounted for in the system.
+author: moaamer
 manager: Ann Beebe
-ms.date: 07/17/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -12,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -25,8 +26,9 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: vstehman
-ms.search.validFrom: 2020-07-17
+ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: 10.0.13
+
 
 ---
 
