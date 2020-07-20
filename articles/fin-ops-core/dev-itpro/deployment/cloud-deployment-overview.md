@@ -125,12 +125,15 @@ Production environments are configured with Azure disaster recovery support that
 
 Only primary data stores are supported by replication. This means that some application components, such as Management Reporter, and Entity store, which use transformed data from the primary database, must be generated after the recovery site has been set up and the service has started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of 10 hours and a Recovery Point Objective of 5 seconds. For more information, see [Azure SQL Database Point in Time Restore](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/).
 
-## Service availability 
-Finance and Operations apps can be deployed into different Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
+## Service availability in Azure Regions
+Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
 For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
+> [!IMPORTANT]
+> The regional availability of Finance and Operations apps will now be limited to East US, West US and Central US in North America for all new projects. Support for East US2, West US2, West Central US, North Central US and South Central US will continue to be available for projects and environments that currently have their data stored in those regions. For a list of the latest supported regions please see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
 ## Frequently asked questions
 
@@ -186,5 +189,22 @@ Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desk
 - Your current IP address is not in the safe list.
 - Your IP has changed from the IP address listed in the safe list. 
 - Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
+
+### When will the availability of reduced regions go into effect for new onboarding?
+Beginning August 1st 2020, new projects for Finance and operations will be onboarded to the following regions.
+- East US
+- West US
+- Central US
+
+### My environments are currently in the regions that will be deprecated. How will this change affect me?
+We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1st 2020:
+-	East US2
+-	West US2
+-	West Central US
+-	North Central US
+-	South Central US
+
+This will not affect any environments that have their data stored in the deprecated regions before August 1st 2020. There will be a transition plan in the near future to move customers on the deprecated regions into the reduced regions.
+
 
 To regain access to the environment, you will need to add the IP address of the computer from which you are connecting. To do this, complete the steps in the section, [Remote Desktop](#remote-desktop) earlier in this document.
