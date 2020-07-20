@@ -4,8 +4,8 @@
 title: What's new or changed for APAC India GST Localization in 10.0.12 (July 2020)
 description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.12.
 author: prabhatb
-manager: Wangcheng
-ms.date: 07/15/2020
+manager: annbe
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,40 +34,33 @@ ms.dyn365.ops.version: 10.0.12
 
 This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.12 for APAC India GST localization. 
 
-**Important Announcement** 
-
-The previous version of newsletters are available on Microsoft Docs and can be downloaded from below link.     
-
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-news-letter-10-0-00)   
-
-
 ## New features
 
-### Improvements in unit price and cost price handling in Stock transfer orders  
+### Improvements in unit price and cost price handling in stock transfer orders  
 
-This feature introduces the following improvements in the Stock transfer order functionality: 
+This introduces the following improvements in the stock transfer order functionality: 
 
-- Default values of Transfer type and Price type can be configured in Inventory and warehouse management parameters. 
+- Default Transfer type and Price type values can be configured in the Inventory and warehouse management parameters. 
 
-- Unit price in a stock transfer order line is correctly recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line. 
+- The unit price on a stock transfer order line is correctly recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line. 
 
-- Shipment of a stock transfer order line having zero Unit price can be prevented. 
+- The shipment of a stock transfer order line with a unit price of zero (0) can be prevented. 
 
 - Correct inventory costs are posted for stock transfer orders in case of partial shipment or receipts, batch-controlled items, etc. 
 
-- Unrealized profit or loss is not posted upon shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item. 
+- Unrealized profit or loss is not posted uponduring the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item. 
 
-- The feature also restricts changing Unit of measure in stock transfer order lines. 
+- Changing the unit of measure on stock transfer order lines is restricted. 
 
-Feature can be enabled through feature management:  
+This feature can be enabled through Feature management.
 
-![](media/GST-feature-management-1-10-0-12.PNG)
+![Feature management module and list of available features](media/GST-feature-management-1-10-0-12.PNG)
 
-*** New parameter under Inventory management:***  
+### New parameter under Inventory management
 
-### Inventory & warehouse management > Setup> Parameters > Transfer orders   
+The parameter, **Enable stock transfer for master planning** has been added to the **Inventory management parameters** page (**Inventory & warehouse management** > **Setup** > **Parameters**, **Transfer orders** tab).   
 
-![](media/GST-inventory-parameter-2-10-0-12.PNG)
+![Inventory management parameters page, Transfer orders tab](media/GST-inventory-parameter-2-10-0-12.PNG)
 
 *** Enable stock transfer for master planning :***  
 
@@ -77,12 +70,9 @@ Feature can be enabled through feature management:
 
 ## Critical fixes 
 
-- Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt): Tax was computing on the new HSN code percentage and 
-  causing Revenue loss to the Customer instead of making the Transfer order before the change in the HSN code percentage.   
+- A stock transfer has the same tax rate applicability at the time of shipment and receipt, including partial receipt. This meant that tax was calculated on the new HSN code percentage which caused revenue loss to the customer instead of on the transfer order before the change in the HSN code percentage.   
 
-- Tax information fields are not getting updated automatically when we copied from the original free text invoice. After this fix When user copy the lines from the 
-  original invoice line after defined tax information system is expected to update the tax information related fields in the copied lines for free text invoice. 
-  Also, tax document will display the tax amount correctly.   
+- Tax information fields are not updated automatically when copied from the original free text invoice. After this fix, the system will update the tax information related fields in the free text invoice lines that were copied from the original invoice line after tax. The tax document will display the correct tax amount.   
 
 - The issue was when the Invoice Journal is posted with TDS. Users reverse the one transaction line from vendor transaction form and adjust withholding tax through 
   General journal. When run Withholding tax payment getting error. This issue is fixed because the issue was occurring because the vendor invoice journal with 
@@ -145,14 +135,9 @@ Feature can be enabled through feature management:
   
 ## Upcoming fixes in 10.0.13
 
-- In the intercompany transaction, one company post-sales order and in another company purchase order is generated automatically. However, the location of the buyer 
-  company in tax information is not defaulting correctly in the auto-generated purchase order. After this fix in the auto-generated purchase order tax location
-  of buyer company will default based on warehouse information attached with the purchase order.
-- When withholding tax transaction is posted in foreign currency than at the time of withholding tax settlement to authority imbalance error will pop up.
-  After this fix user will able to run settlement to authority successfully.
-  Withholding tax (TCS) is calculated correctly for Inter-company Purchase return order after updating the line details.
-- Importing data via data entity "Ledger journal line transaction tax information" thrown error: Results “ Matching record with key
-  tax information" to resolve the issue.
+- In an intercompany transaction, when a sales order is posted in one company, a purchase order is automatically generated in another company. However, the tax information based on the location of the purchasing company is not defaulting correctly in the auto-generated purchase order. After this fix, the generated purchase order tax location of the purchasing company will default based on the warehouse information attached to the purchase order.
+- When a withholding tax transaction is posted in a foreign currency, at the time of the withholding tax settlement to the authority, an imbalance error will occur. After this fix is implemented, users will able to run settlements to authority successfully. After the line details are updated, the withholding tax (TCS) is calculated correctly for intercompany purchase return orders.
+- When you import data by using the data entity, **Ledger journal line transaction tax information**, the following error occurs: **Results: Matching record with key tax information" to resolve the issue**.
 - Vendor tax information is imported through data entity form then on refreshing data. The system is allowing the user to select more than one primary tax information
   details  in vendor tax information. After this fixed system will restrict the user to enable more than one primary tax information details for the same vendor.
 - Vendor tax information is imported through data entity form then on refreshing data. The system is allowing the user to select more than one primary tax information 
@@ -171,8 +156,8 @@ Feature can be enabled through feature management:
   will default in lines of product receipt form
 - Load on inventory tax amount posting to Purchase expenditure for expense account instead of Cost of project account/ Fixed asset account when purchase order 
   placed with procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination ). After this fix tax amount will load to offset account.
-- After posting the import PO invoice still, the system allows user to create an invoice through pending vendor invoice form through product receipt option. 
-  With this fix Once import PO invoice posted it will not be available in the pending vendor invoice form through Product receipt option.
+- After you post an imported purchase order, the system would still allow you to create an invoice by selecting **Products receipt** on the **Pending vendor invoice** page . 
+  With this fix, after the imported purchase order invoice is posted, it will not be available on the **Pending vendor invoice** page when you select **Product receipt**.
 
 
  
