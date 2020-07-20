@@ -204,6 +204,6 @@ We will deprecate support for the following regions only for new projects that w
 -	North Central US
 -	South Central US
 
-This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transistion plan to move customers in the deprecated regions into the reduced regions.
+This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.
 
 To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this topic.
