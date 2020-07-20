@@ -798,6 +798,8 @@
         href: asset-leasing/set-up-index-rate-types.md
       - name: Set up expense types
         href: asset-leasing/set-up-expense-types.md
+      - name: Set up lease journal names
+        href: asset-leasing/set-up-lease-journal-names.md
     - name: General ledger
       items:
       - name: General ledger overview
