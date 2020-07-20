@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 # Set up index rates
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 If lease payments are dependent on an index, those index rate types can be added and maintained in the system. The index rate revaluation process will use the most recent index rate from the date of revaluation to revalue the lease payments from the **Index rate type** page.
 
