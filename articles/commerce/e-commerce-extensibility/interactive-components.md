@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Interactive components
+description: 
+author: samjarawan
+manager: annbe
+ms.date: 06/29/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
 # Interactive components
 
 Site builder supports editing, inline, all the CMS fields used in a page. Supported fields are Text, RichText, Link, Image and Video. This experience is powered by means of a set of interactive components that are shipped with the SDK by default. Modules are recommended to use the interactive components when rendering CMS fields. Any custom implementations of these components can still be made interactive by wrapping the component in the EditableField higher order component (HOC).
