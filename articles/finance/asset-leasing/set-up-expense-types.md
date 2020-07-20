@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up expense types
-description: Expense costs account for the costs that a company has that are not represented by the payment schedule. These are non-lease components that are not capitalized in base rent.
+description: This topoic lists the steps for setting up expense types in Asset leasging.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/14/2019
@@ -35,23 +35,23 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-Expense costs account for the costs that a company has that are not represented by the payment schedule. These are non-lease components that are not capitalized in base rent. Examples can include property tax, common area maintenance, and insurance expenses.
+This topoic lists the steps for setting up expense types in Asset leasging. Costs that aren't represented by the payment schedule are called expense costs. Examples of these costs can include property taxes, common area maintenance costs and insurance expenses. 
 
-1.	To add an executory expense type, navigate to Asset leasing > Setup > Expense types.
-2.	Click New and create the Expense type followed by the description in the respective fields.<br>
-Assign accounts to executory costs <br>
-Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the Executory costs payment schedule lines on each lease.
+1. To add an administrative expense type, go to **Asset leasing > Setup > Expense types**.
+2. Click **New** and create the expense type followed by the description in the respective fields.<br>
+   Assign accounts to executory costs <br>
+   Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
 
-1.	Navigate to Asset leasing > Setup > Asset leasing parameters.
-2.	Select Accounts and open the Executory costs drop-down.
-3.	Select the Expense type and click Add.
-4.	Select the book type to be tied to the executory costs from the Book type drop-down.
+1.	Navigate to **Asset leasing > Setup > Asset leasing parameters**.
+2.	Select **Accounts** and open the **Executory costs** drop-down.
+3.	Select the **Expense type** and click **Add**.
+4.	Select the book type to be tied to the administrative, or executory, costs from the **Book type** drop-down.
 
 > [!Note]
 > Multiple book types can be linked to the same expense.
 
-1.	Now, decide whether to have the book be applied to all leases (All), a specific group of leases (Group), or a specified lease or leases (Table) by using the Account code drop-down. If group or table is selected, an Account/Group number must be chosen from the adjacent drop-down.
-2.	Next, select the respective Finance lease main account and Operating lease main account from the appropriate drop-downs.
+1. Decide whether to have the book be applied to all leases (All), a specific group of leases (Group), or a specified lease or leases (Table) by using the Account code drop-down. If group or table is selected, an Account/Group number must be chosen from the adjacent drop-down.
+2. Select the respective Finance lease main account and Operating lease main account from the appropriate drop-downs.
 
-Now, expenses can be added through the Executory costs payment schedule lines on the lease details page of a selected lease or when creating a lease.
+When the preceding steps have been complete, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease, or when creating a lease.
 
