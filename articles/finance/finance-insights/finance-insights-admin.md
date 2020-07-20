@@ -67,34 +67,34 @@ Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Se
 Complete the following steps to deploy the Dynamics 365 Finance and Operations envrionment. 
 
 1. Create or update an F&O environment in LCS. The environment needs App Version 10.0.11/Platform Update 35 or later versions.
-2. The environment must be an HA environment in Sandbox (also known as a Tier-2 environment).  Please see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning for more details.
-3. If using Contoso demo data, additional sample data is required to use payment predictions, cashflow forecasting, and budget forecasting.  Please follow the steps at <TBD> to add the sample data needed (content for payment predictor at https://microsoft.sharepoint.com/:f:/t/FinancialsRDAll909/Essk-ZaYVvxPrKNIHmbJNS8BWKCMxcMsubO_NVxECcsLfg?e=iwOR9e)
+2. The environment must be an HA environment in Sandbox (also known as a Tier-2 environment).  Please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning) for more details.
+3. If using Contoso demo data, additional sample data is required to use payment predictions, cashflow forecasting, and budget forecasting.  Please follow the steps at <TBD> to add the sample data needed (content for payment predictor at [Financials R&D All](https://microsoft.sharepoint.com/:f:/t/FinancialsRDAll909/Essk-ZaYVvxPrKNIHmbJNS8BWKCMxcMsubO_NVxECcsLfg?e=iwOR9e)
 
-## Set up the data lake
-Complete the steps described in https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-overview to set up an Azure Data Lake Storage and supporting resources in your Azure subscription.
+### Set up the data lake
+Complete the steps described in [Azure Data Lake overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-overview) to set up an Azure Data Lake Storage and supporting resources in your Azure subscription.
 
-## Configure entity store
-Complete the steps described in https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake to set up the entity store that uses the Azure resources from the previous step.
+### Configure entity store
+Complete the steps described in [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake) to set up the entity store that uses the Azure resources from the previous step.
 
-## Configure CDS resources and Power AI
+### Configure CDS resources and Power AI
 Complete the steps described in <TBD> to configure the required CDS resources (content at Configure CDS and Configure AI builder integrator).
 
-## Enable customer payment predictions
+### Enable customer payment predictions
 Complete the steps described in <TBD> to configure the required CDS resources (content at Enable Customer Payment Predictions… potentially embed the content).
 
-## Create data integrator project
+### Create data integrator project
 After creating a model in the previous step, create a data integrator project to flow data back into Dynamics 365 for Finance by completing the steps in <TBD> (content at Create Data Integrator Project).  
 
-## Understand and improve initial payment predictor model
+### Understand and improve initial payment predictor model
 Follow the guides at <TBD> to understand and improve the initial payment predictor model (contact at https://microsoft.sharepoint.com/:w:/t/AIforOAG/EahnJjqfQBlMrKRX4oYe_uUBpgtY9UsPXzeU17ERbIrEqA?e=FvJF0f and https://microsoft.sharepoint.com/:w:/t/AIforOAG/EbAsTOn26blNrFQLzMh8VgMBLHcqhxO8I1VfKrURUEP29w?e=8j3tPm).
 
-## Enable cashflow forecasting
+### Enable cashflow forecasting
 Complete the steps described in <TBD> to enable cashflow forecasting (content at Enable Cashflow forecasting… potentially embed the content).
 
-## Setup and use cashflow forecasting
-Follow the steps described in <TBD> to setup and use cashflow forecasting 
+### Setup and use cashflow forecasting
+Follow the steps described in <TBD> to setup and use cashflow forecasting. For more information, see [Set up Cash flow forecasting]() 
 (content at https://microsoft.sharepoint.com/:w:/t/FinancialsRDAll909/ER8QIZ77pnBArbigDMiJx0EBlAYLh8cfTIaBeUVOzKCHtg?e=8xMqK6).
 
-## Provide feedback to Microsoft
-Part of your commitment as part of this preview program is to provide feedback to Microsoft.  Please complete the relevant portions of <TBD>.  Multiple users at your company can fill out the survey if they have participated in any step of the process or evaluated the feature.  (content at https://microsoft.sharepoint.com/:w:/t/AIforOAG/EXwSu5F8R2VLvYcjp20ct_oBmoZXpqz0l9L1OcaNoyPNrA?e=tLBOjI)
+### Provide feedback to Microsoft
+Part of your commitment as part of this preview program is to provide feedback to Microsoft.  Please complete the relevant portions of <TBD>.  Multiple users at your company can fill out the survey if they have participated in any step of the process or evaluated the feature. The steps to complete are lised in the [Setting up Finance Insights](https://microsoft.sharepoint.com/:w:/t/AIforOAG/EXwSu5F8R2VLvYcjp20ct_oBmoZXpqz0l9L1OcaNoyPNrA?e=tLBOjI) document. 
 
