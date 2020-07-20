@@ -46,6 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 ### Upgrade of three jQuery component libraries 
 
 |   |  |
@@ -60,21 +61,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control.  
-| **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md)  |
+| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control. |
+| **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | With version 10.0.13, the new grid control is generally available and customers can optionally enable this feature. The new grid feature will be mandatory with the October 2021 release. Additionally, the forceLegacyGrid() API will no longer be honored when the new grid control becomes mandatory. |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
 
 ### Personalization without saved views 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature to be more performant with additional capabilities.  
-| **Replaced by another feature?**   | Saved views  |
+| **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature, so that it has better performance and offers additional capabilities. |
+| **Replaced by another feature?**   | Saved views |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | With version 10.0.13/Platform update 37, the saved views feature is generally available and customers can optionally enable this feature. The saved views feature will be mandatory with the October 2021 release.  |
+| **Status**                         | In version 10.0.13/Platform update 37, the saved views feature is generally available, and customers can optionally turn on this feature. The saved views feature will become mandatory in the October 2021 release. |
 
 
 ## Platform updates for version 10.0.12 of Finance and Operations apps
