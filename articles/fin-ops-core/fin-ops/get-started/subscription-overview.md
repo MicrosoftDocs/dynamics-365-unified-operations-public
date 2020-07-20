@@ -5,7 +5,7 @@ title: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
 description: This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 07/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,3 +65,8 @@ If you don't deallocate and delete the existing environments before you suspend 
 ## Can I have a CSP agreement and a Volume Licensing agreement in parallel?
 
 Yes. However, you must maintain the minimum required number of licenses under each program.
+
+## How can I find the Tenant name and Tenant ID within LCS?
+1. Go to project home page in LCS.
+2. In the **Environments** section, select **Subscriptions available**.
+3. On the **Subscriptions available** page, you will find the **Tenant name** and the **Tenant ID**.
