@@ -5,7 +5,7 @@ title: Preview PDF documents using a PDF viewer
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
 author: tjvass
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,13 +45,6 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 - A consistent document report preview experience across devices and platforms, including on-premises deployments.
 - The server-side rendering improves the performance when producing the document.
 - A built-in tooling that allows users to quickly navigate the contents of the business document.
-
-## Accessing the PDF preview experience
-The hosted PDF document viewer control is automatically available in most deployment types. However, for one-box deployments, the PDF preview experience must be enabled on the **Report options** page. Complete the following steps to enable the PDF preview experience. 
-
-1) Go to the **Report options** page by adding "&mi=SysReportAdministration" to the URL in your browser window.
-2) Set the **Preview documents using embedded viewer** field to **Yes**.
-3) Click **Save**.
 
 ## Additional feature information
 
