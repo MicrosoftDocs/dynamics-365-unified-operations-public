@@ -42,6 +42,8 @@ These topics describe dual-write integration.
 
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
+
++ [Frequently asked questions](dual-write-faq.md)
     
 ## Dual-write setup
 
