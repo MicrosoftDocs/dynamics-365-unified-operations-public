@@ -45,11 +45,11 @@ By default, your Dynamics 365 Commerce site includes a starter kit module librar
 
 As was mentioned earlier, some modules are designed to hold child modules. These modules are known as *containers*, and they allow for hierarchies of nested modules. Container modules include *slots*. Slots are used to handle the layout and purpose of child modules in the container. An example is a basic page container module (a top-level module for any page) that defines several important slots:
 
-- **A header slot**
+- A header slot
 - A sub-header slot
-- **A main slot**
+- A main slot
+- A footer slot
 - A sub-footer slot
-- **A footer slot**
 
 The module's developer defines these slots, and determines which child modules and how many child modules can be put directly inside it. For example, the header slot might support only one module of the **Header Module** type, whereas the body slot might support an unlimited number of modules of any type (except other page container modules).
 
