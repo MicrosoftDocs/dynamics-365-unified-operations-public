@@ -52,7 +52,7 @@ A **productTitle** config value is specified in the module definition file confi
 ...
 ```
 
-To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component which specified an event handler "handleTextChange" which will set the config value once set.
+To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component which specified an event handler "handleTextChange" which will set the config value.
 
 ```typescript
   public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.productTitle!.text = event.target.value;
