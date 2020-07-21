@@ -42,6 +42,21 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 :::image type="content" source="media/add_database.png" alt-text="Enable apps switch" lightbox="media/add_database_expanded.png":::
 
+## What regions are available?
+
+Currently we support dual-write in the following regions:
+    
+   + Asia
+   + Australia
+   + Canada
+   + Europe
+   + India
+   + Japan
+   + South America
+   + United Kingdom
+   + United States
+   
+
 1. Validate the platform update and app version.
 
     Make sure that your Finance and Operations app environment is running Platform update 33 (app version 10.0.9) or later.
