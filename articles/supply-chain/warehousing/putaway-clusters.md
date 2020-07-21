@@ -31,11 +31,16 @@ ms.dyn365.ops.version: Release 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-Putaway clusters are a way to pick multiple license plates at once and take them for putaway at different locations. It can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. This process is often called a _Milk run_.
+Putaway clusters are a way to pick multiple license plates at once and take them for putaway at different locations. It can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. This process is often called a *Milk run*.
+
+## Enable the Cluster Putaway feature
+
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Cluster Putaway Feature*
 
 ## Setup for the example scenario
-
-<!-- HHM: The setup does not include the standard warehouse configuration required for processing of the inbound flow. Make sure that is set up correctly before processing the example scenario. -->
 
 ### Cluster profiles
 
@@ -107,142 +112,202 @@ Three new mobile device menu items are available for this functionality. *Menu i
 
 #### 1 – Receive and Sort Cluster
 
-Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
-
 Create new mobile device menu item for Receive and Sort Cluster, which will create Inbound Work after receiving the inventory. This where it is indicated that the receiving menu item will be used for Putaway clusters.
 
 > [!NOTE]
-> **Sort & assign putaway cluster** can be used with the following menu items:
+> **Receive and Sort Cluster** can be used with the following menu items:
+>
+> - Purchase Order line receiving
+> - Purchase Order item receiving
+> - Load item receiving
 
-- PO line receiving,
-- PO item receiving,
-- Load item receiving.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Select **New** in the Action Pane.
+1. In the **Header**, enter the following:
 
-In **Header** , specify the following:
+    - **Menu item name** – *Receive and Sort Cluster*
+    - **Title** – *Receive and Sort Cluster*
+    - **Mode** – *Work*
+    - **Use existing work** – *No*
 
-- Menu item name – _Receive and Sort Cluster_
-- Title – _Receive and Sort Cluster_
-- Mode – _Work_
-- Use existing work – _No_
+1. In the **General** FastTab, enable the following settings:
 
-In **General** FastTab, the following setting can be specified:
+    - **Work creation process** – *Purchase order item receiving*
+    - **Generate license plate** – *Yes*
+    - **Sort & assign putaway cluster** – *Yes*
+    - Accept the default values of the remaining parameters
 
-- **Work creation process** – _Purchase order item receiving_
-- **Generate license plate** – _Yes_
-- **Sort & assign putaway cluster** – _Yes_
+1. Select **Save** in the Action Pane.
 
 > [!NOTE]
-> The **Sort & assign putaway cluster** parameter is only available on the one-step item receiving.
+> The **Assign putaway cluster** parameter is only available on one-step receiving **Work creation process** activity.
 
 #### 2 – Assign cluster
 
-This menu item must only be used if _Assign putaway cluster at receipt_ is not marked for use on the Putaway cluster profile.
+This menu item is only used if **Assign putaway cluster** is not marked *Yes* on the **Receive and Sort Cluster** menu item. The scenario applied here does not use this menu item.
 
-Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Select **New** from the Action Pane.
+1. In the **Header**, enter the following:
 
-Create new mobile device menu item to be used for Assigning received inventory to a Cluster.
+    - **Menu item name** – *Assign Cluster*
+    - **Title** – *Assign Cluster*
+    - **Mode** – *Indirect*
+    - **Use existing work** - *No*
 
-In **Header** , specify the following:
+1. In the **General** FastTab, enable the following settings:
 
-- **Menu item name** – _Assign Cluster_
-- **Title** – _Assign Cluster_
-- **Mode** – _Indirect_
+    - **Activity Code** – *Assign to putaway cluster*
+    - Accept the default values of the remaining parameters
 
-In **General** FastTab, the following setting can be specified:
-
-- **Activity Code** – _Assign to putaway cluster_
+1. Select **Save** in the Action Pane.
 
 #### 3 – Cluster Putaway
 
-Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
-
 Create new mobile device menu item to be used for putting away the Cluster once it has been assigned.
 
-In **Header** , specify the following:
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Select **New** in the Action Pane.
+1. In the **Header**, enter the following:
 
-- **Menu item name** – _Cluster putaway_
-- **Title** – _Cluster putaway_
-- **Mode** – _Work_
-- **Use existing work** – _Yes_
+    - **Menu item name** – *Cluster putaway*
+    - **Title** – *Cluster putaway*
+    - **Mode** – *Work*
+    - **Use existing work** – *Yes*
 
-In **General** FastTab, the following setting can be specified:
+1. In the **General** FastTab, enable the following settings:
 
-- Directed by – _Cluster Putaway_
+    - **Directed by** – *Cluster Putaway*
+    - Accept the default values of the remaining parameters
 
-In **Work classes** FastTab, set up the valid work class for this mobile device menu item:
+1. In the **Work classes** FastTab, set up the valid work class for this mobile device menu item:
 
-- **Work class ID** – _Purchase_
-- **Work order type** – _Purchase orders_
+    - **Work class ID** – *Purchase* : **Work order type** – *Purchase orders*
+
+1. Select **Save** in the Action Pane.
 
 ### Mobile device menu
 
-Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu** and add the newly created menu items to the desired menu.
+Add the menu items just created to the inbound menu of the mobile app.
 
-## Example scenario procedure
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu** to add the newly created menu items to the desired menu.
+1. Select **Edit** in the Action Pane.
+1. Select **Inbound** in the menu list.
+1. Scroll in the **AVAILABLE MENUS AND MENU ITEMS** until you find **Receive and Sort Cluster**.
+1. Select **Receive and Sort Cluster**, the move right arrow ( **→** ) is enabled.
+1. Select the arrow button ( **→** ) to move the selected menu item into the **MENU STRUCTURE** list.
+1. Use the UP ( **↑** ) or DOWN ( **↓** ) arrow buttons to move the menu item into the desired position in the menu.
+1. Select **Save** in the Action Pane.
+1. Repeat steps 4 through 8 above to add the remaining menu items:
 
-This scenario simulates putaway cluster processing. The setup did not include the standard warehouse configuration required for inbound flow.
+    - **Assign Cluster**
+    - **Cluster Putaway**
+
+## Example scenario
+
+This scenario simulates putaway cluster processing.
 
 ### Create Purchase order
 
-Before system directed cluster picking, some inbound orders must be created.
+1. Go to **Accounts payable \> Purchase orders \> All purchase orders**.
+1. Select **New** in the Action Pane.
+1. In the **Create purchase order** dialog box, enter the following:
 
-Go to **Accounts payable \> Purchase orders \> All purchase orders**. Select **New** to create a new sales order. Pick any vendor account. On the **General** FastTab, specify warehouse 61.
+    - **Vendor account** - *1001*
+    - **Warehouse** - *61*
 
-Sales order 1: Add a new line to the sales order, item A0001, quantity 10 pcs. Add a second line for item A0002, quantity 20 pcs; and a third line for item L0101, quantity 30 pcs.
+1. Select **OK**.
+1. The **All purchase orders** page opens.
+1. In the **Purchase order lines FastTab** add the following lines (use **Add line** in the Toolbar to add lines):
 
-### Mobile device flow execution
+    - **Item number** - *A0001* : **Quantity** - *10*
+    - **Item number** - *A0002* : **Quantity** - *20*
+    - **Item number** - *M9215* : **Quantity** - *30*
 
-#### Receive the inventory
+1. Select **Save** in the Action Pane.
+1. Make note of the purchase order number.
 
-1. Enter mobile device menu where the _Receive and Sort_ menu item was added during the setup.
+### Receive and put away from the mobile device
 
-1. Select the _Receive and Sort_ menu and initiate the receiving. The mobile device will display the Putaway Cluster profile that the inventory is assigned to.
+#### Receive and sort the inventory into a cluster
 
-1. As each Purchase order line is processed, the user is presented with the _"Work completed"_ message on the mobile device and an indication that the _"Work has been sorted to Cluster Putaway"_.
+1. Logon to the mobile device with a user setup for warehouse 61.
+1. Select **Inbound** from the **MAIN MENU**.
+1. Select **Receive and Sort Cluster** from the **INBOUND** menu.
+1. In the **PONUM** field, enter the purchase order number.
+1. Select **OK** (displayed as a checkmark **(✔)** on the mobile device.)
+1. Select the **ITEM** field, enter the item number *A0001*, and select **OK**.
+1. Select the **QTY** field, enter *10* in the number pad and select the checkmark.
+1. Select **OK** **(✔)** on the **QTY** task screen to confirm the quantity entered.
+1. Select **OK** on the **ITEM** task screen to confirm item *A0001* was entered.
+1. Next assign an ID for the cluster being created. Select the **CLUSTER ID** field and enter a value.
 
-    ![Warehouse app, work completed](media/putaway-clusters-work-completed.png "Warehouse app, work completed")
+    - The ID number you enter here will be used when receiving the remaining two items on the purchase order.
 
-1. All created Work orders will have a Putaway Cluster Profile ID assigned.
+1. Select **OK**.
+1. The task screen for **PONUM** opens with a message **WORK COMPLETED**.
 
-    ![Putaway cluster profile IDs](media/putaway-clusters-work-cluster-profile-id.png "Putaway cluster profile IDs")
+    - Item *A0001* has been received into the RECV location and assigned to the cluster ID entered in step 10.
 
-#### Assign to Putaway Cluster
+1. Repeat steps 4 through 11 to receive the remaining two items from the purchase order and assign them to the cluster ID.
 
-Enter mobile device menu where the _Assign to cluster_ menu item was added during the setup.
+    - Item **A0002** with a quantity of **20**
+    - Item **M9215** with a quantity of **30**
 
-Select the _Assign to cluster_ menu and initiate next flow.
+#### Close cluster
 
-1. Enter the Cluster ID (or have the system generate one automatically)
-1. Add previously created Work IDs/License plates to the Cluster. Repeat for all Work IDs.
-    - The user will see a message on the mobile device _"Work was assigned to cluster"_
-1. After the last Work has been added to the Cluster, initiate the _Close Cluster._ The user will be presented with the message _"Cluster Close Succesfully"_.
-    - Unlike outbound cluster picking, Putaway Clusters do not have maximum number of positions assigned. The user can decide when to close the Cluster manually.
+Before the items in the cluster can be put away, the cluster must first be closed. The following steps will be completed in Supply Chain Management.
 
-This Cluster is now ready for putaway processing.
+1. Go to **Warehouse management \> Work \> Outbound \> Work clusters**.
+1. In the **Work cluster** section of the page, search the **Cluster ID** field for the cluster ID entered previously.
+1. If the cluster is not displayed, it may have already been closed. To verify this, select the **Show closed work** check box, and search from the cluster ID entered previously.
+
+    - If the cluster has been closed go to **Cluster putaway** section below.
+    - If the cluster has not been closed, the following steps describe how to manually close the cluster.
+
+1. From the **Work clusters** page, in the **Work cluster** section, select the cluster ID created previously.
+1. In the Action Pane, select **Close cluster**.
+1. When the cluster has been closed it will no longer be displayed in the **Work cluster** section (with **Show closed work** unselected).
 
 #### Cluster putaway
 
-Enter mobile device menu where the _Cluster putaway_ menu item was added during the setup.
+The following steps will be performed on the mobile device.
 
-Select the _Cluster putaway_ menu and initiate next flow. Remember, the Cluster sorting criteria from the Putaway Cluster Profile setup will be used here to determine the putaway flow.
+1. Logon to the mobile device with a user setup for warehouse 61.
+1. Select **Inbound** from the **MAIN MENU**.
+1. Select **Cluster putaway** from the **INBOUND** menu.
+1. Select **CLUSTER ID** and enter the closed cluster ID created previously.
+1. Select **OK**.
+1. The **Cluster putaway: Pick** screen is displayed.
 
-1. Enter the previously created Cluster ID
+    - The **Cluster ID** is displayed along with the picking location (**Loc**), items (**Multiple** will be displayed) and total quantity (**Total Qty**) in the cluster to be picked.
 
-1. Pick screen will show the Pick location and under _Items_ field it will state _Multiple_, indicating that multiple items are being picked. Total quantity will reflect the sum of quantity from all Work IDs. At this time, all Work IDs' status will be updated to _In process_
+1. Select **OK**.
+1. The **Cluster putaway: Put** screen is displayed.
 
-    ![Work in process](media/putaway-clusters-work-in-process.png "Work in process")
+    - The **Put** instructions identify the cluster ID, the put location, items, quantity as well as the license plate ID's for the items received on the cluster.
+    - The user has the standard option to **Override** or **Pass** this step.
 
-1. The Put step will indicate which item(s) should be put to a specific location. The screen will also show which License plates this includes.
+![Cluster Putaway-Put](media/Cluster_putaway-Put.png "Cluster Putaway-Put")
 
-    ![Warehouse app, putaway step](media/putaway-clusters-put-step.png "Warehouse app, putaway step")
-
-    The user has the standard option to **Override** or **Pass** this step.
-
-1. Repeat the Put to location process as many times as required. Once finished, the user will be presented with the message _"Cluster completed"_ which indicates the flow has been completed successfully. The work is now _Closed_.
-
-    ![Work closed](media/putaway-clusters-work-closed.png "Work closed")
+9. Select **OK** to confirm the putaway of the cluster.
+1. The message **Cluster Completed** will be displayed.
 
 ## Notes and tips
 
-- Another option for one-step receiving and cluster assignment is to set the _Assign Putaway Cluster at Receipt_ on the _Putaway cluster profile_ to _Yes_ and then set the _Putaway Cluster Assignment_ to _Manual_. After the license plate is entered on the receiving screen, the Cluster ID will be requested from the receiver. This eliminates the menu item step _Assign to Putaway Cluster_.
 - For the instances where the Cluster ID becomes the Parent LP for a nested pallet, when the Cluster ID is scanned, the Put position is automatically given and no further LP needs to be scanned, even if generating LP is set to be manual.
+
+### Assign to Putaway Cluster
+
+If **Assign putaway cluster** is marked *No* on the **Receive and Sort Cluster** mobile device menu item, the step to assign the receipt to a putaway cluster is manual. The scenario applied here does not use this menu item. Listed below are steps to manually assign to a putaway cluster.
+
+1. Logon to the mobile device with a user setup for warehouse 61.
+1. Select **Inbound** from the **MAIN MENU**.
+1. Select **Assign Cluster** from the **INBOUND** menu.
+1. Enter the Cluster ID (or have the system generate one automatically).
+1. Add previously created Work IDs/License plates to the Cluster. Repeat for all Work IDs.
+    - The user will see a message on the mobile device _"Work was assigned to cluster"_
+1. After the last Work has been added to the Cluster, initiate the _Close Cluster._ The user will be presented with the message _"Cluster Close Successfully"_.
+    - Unlike outbound cluster picking, Putaway Clusters do not have maximum number of positions assigned. The user can decide when to close the Cluster manually.
+
+This Cluster is now ready for putaway processing.
