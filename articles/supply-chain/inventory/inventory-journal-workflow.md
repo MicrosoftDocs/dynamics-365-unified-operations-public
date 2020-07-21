@@ -1,46 +1,116 @@
-# Inventory Journal workflow
+---
+# required metadata
 
-This topic describes how we can use inventory journal workflow to post various types of physical inventory transactions.
+title: Inventory journal approval workflows
+description: This topic describes how to set up and use inventory journal approval workflows for various types of physical inventory transactions. Inventory journal workflows help ensure that only approved inventory journals can be posted to transactions.
+author: sherry-zheng
+manager: tfehr
+ms.date: 07/21/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-The inventory journals in Supply Chain Management are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory, but they are divided into different types.
+# optional metadata
 
-## Prerequisites
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: chuzheng
+ms.search.validFrom: 2020-07-21
+ms.dyn365.ops.version: Release 10.0.13
+---
 
-- Microsoft Dynamics 365 Finance and Operation apps version 10.0.9+
-- Enable Inventory journal approval workflow in the Feature Management
+# Inventory journal approval workflows
 
-![Feature management](media/journal-workflow-feature-management.png "Feature management")
+[!include [banner](../includes/banner.md)]
 
-## Instructions
+This topic describes how to set up and use inventory journal approval workflows for various types of physical inventory transactions, such as issues and receipts, inventory movements, bills of materials (BOMs), and the reconciliation of physical inventory. Inventory journal workflows help ensure that only approved inventory journals can be posted to transactions.
 
-1. Enable "Inventory journal approval workflow" in the Feature management
+> [!NOTE]
+> Inventory journal approval workflows apply only to transactions recorded using the Inventory Management module. They don't work with inventory journals triggered from the Warehouse Management module.
 
-    In the Feature Management, select feature name as "Inventory journal approve workflow" and enable the feature. Once enabled, the user can configure workflow for inventory journal"s approval process.
+## Create your inventory journal approval workflows
 
-1. Configure the Inventory Management workflows
+To set up this feature, you must create a workflow for each of the inventory journal types you want to control. Because different inventory journal types may have different approval hierarchies and workflow steps, you can configure individual workflows for each inventory journal type.
 
-    - Navigate to **Inventory management > Setup > Inventory management workflows**
-    - Click **New** and the user can select the proper workflow type to configure the inventory workflows.
-    
-    The Inventory journal approval workflow type can be created for the following types of inventory journal：
-    
-    - Tag Counting Journal
-    - Movement Journal
-    - Ownership Change journal
-    - Transfer Journal
-    - Inventory Counting Journal
-    - Inventory BOM Journal
-    - Inventory Adjustment Journal
-    
-    For workflow configuration details, you can refer to [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+Workflows support version control, and each has a workflow ID and an active version. You can choose to activate each new workflow version immediately upon creation or keep it inactive for now. If you need several different workflows for the same journal type, then create multiple workflows for that journal type, and then assign each of these to a different journal name that uses that type.
 
-1. Configure the Inventory journal approval workflow in the Journal Name
+1. Go to **Inventory Management \> Setup\> Inventory management workflows**.
+1. Select **New** on the Action Pane.
+1. Choose the inventory journal type for which you want to set up a workflow:
+    - **Inventory tag counting journal**
+    - **Inventory ownership change journal**
+    - **Inventory movement journal**
+    - **Inventory transfer journal**
+    - **Inventory counting journal**
+    - **Inventory BOM journal**
+    - **Inventory adjustment journal**
 
-    - Navigate to >  **Inventory management**  >  **Setup**  >  **Journal names**  >  **Inventory**
-    - Select  **journal name**  and then, in the  **general**  fast tab, set  **approval workflow**  >  **Approval workflow**  =  **Yes**  and then select the  **workflow**  from Workflow list
+    ![The Create workflow dialog box](media/journal-workflow-create-workflow.png "The Create workflow dialog box")
 
-1. Manage the Inventory journal approval workflow in the Inventory journal
+1. The workflow editor app launches on your machine. (You may be asked to approve this action.) Use it to design your workflow as needed. For details about how to work with the workflow editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+1. Upon saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as inactivate.
 
-In the Inventory Journal, the workflow button will be active as per the inventory management workflow and journal name workflow configuration. The post button will be active once the journal will be approved
+> [!NOTE]
+> Workflows provide version control, which means that you can view a list of versions you have created and choose which one is active. To view the list of available versions and choose which to activate, select a workflow listed on the **Inventory management workflows** page and then, from the Action Pane, open the **Workflow** tab and select **Versions**. Only one version can be active at a time for each workflow ID.
 
-The Inventory journal approval history can be viewed in the Inventory journal approval workflow.
+## Assign approval workflows to inventory journal names
+
+The next step is to assign the right inventory journal workflow to each inventory journal name. For each inventory journal type, you can set up multiple inventory journal names.
+
+To associate an inventory journal workflow with an inventory journal name:
+
+1. Go to **Inventory management \> Setup \> Journal names \> Inventory**.
+1. Select a journal name from the list column to open its settings page.
+1. On the **General** fast tab, set **Approval workflow** to **Yes**. If you are prompted to approve the action, select **Yes**.
+
+    ![Assign a workflow to a journal name](media/journal-workflow-journal-name.png "Assign a workflow to a journal name")
+
+1. Open the **Workflow** drop-down list and select the appropriate workflow. The list shows each active workflow that you have created using the workflow editor app.
+
+## Create an inventory journal and send it for approval
+
+After you associated an inventory journal name with its matching inventory journal approval workflow, you'll be able to create new inventory journals that use that name and then send them for approval using that workflow. You won't be able post the inventory journal until it has been approved by the approver(s) configured in the workflow.
+
+1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
+1. Select **New** to create a new journal of your selected type.
+1. The **Create inventory journal** dialog box opens. Fill out the form as needed and then select **OK** to save the journal.
+1. Complete the journal as required.
+1. When you create or open an inventory journal with an approval workflow associated with it, the **Workflow** button will be active in the Action Pane. When you are ready to submit the journal for approval, select the **Workflow** button to open a drop-down dialog box and then select **Submit**. The approval request will then route to the relevant approver, who will be alerted using the notification method configured for the workflow.
+
+    ![Submit a journal for approval](media/journal-workflow-inventory-journal.png "Submit a journal for approval")
+
+To recall an approval request, open the relevant journal, select the **Workflow** button and then select **Recall** , which will reset the workflow.
+
+When your journal has been approved, you'll be able to post it. To post the journal, select **Post** from the Action Pane. If the **Post** button isn't active, that means that the journal hasn't been approved yet.
+
+## Respond to an inventory journal approval request
+
+If you are an approver, you should receive a message each time your approval is needed (as configured in the relevant workflow). Then you can approve or reject a journal approval request by doing the following:
+
+1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
+1. Open the relevant journal and review it.
+1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select one of the following:
+    - **Approve** - To approve the request.
+    - **Reject** - To reject the reject the request.
+    - **More \> Request change** - To send a message to the requester asking them to change something specific and then resubmit.
+    - **More \> Delegate** - To delegate the approval to another user.
+    - **More \> Recall** - To recall the approval request (resets the workflow).
+    - **More \> Workflow history** - To view the history of this approval workflow so far.
+
+## Review the approval history
+
+As with other types of workflows, you can use the **Workflow history** page to view the approval workflow history for any journal.
+
+To review the workflow history for a journal:
+
+1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
+1. Open the relevant journal.
+1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Then select **Workflow history**. More information: [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
