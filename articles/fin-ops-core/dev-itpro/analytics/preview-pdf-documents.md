@@ -57,7 +57,7 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 ## Feature limitations
 The Embedded PDF viewer experience delivers a closed document that exactly matches the printed output of the document.  These documents cannot be modified by the recipient making the format ideal for business operations.  However, as a closed format, the documents are far less interactive on the screen when compared to HTML presentations.  The following end-user capabilities are not supported when previewing documents using the embedded PDF viewer.
 
-- Embedded drill-thru navigations are not actionable while previewing PDF documents. 
+- Embedded drill-thru navigation is not actionable while previewing PDF documents. 
 - PDF documents do not support expandable and collapsible sections. 
 - Sub-reports are not supported when viewing reports as PDF documents.
 - Printing the report directly to domain-hosted printer devices.
