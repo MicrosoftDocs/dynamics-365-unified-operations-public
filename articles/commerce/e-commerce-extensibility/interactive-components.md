@@ -49,7 +49,6 @@ A **productTitle** config value is specified in the module definition file confi
             "friendlyName": "Product Title",
             "description": "Product placement title"
         },
-...
 ```
 
 To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component which specified an event handler "handleTextChange" which will set the config value.
