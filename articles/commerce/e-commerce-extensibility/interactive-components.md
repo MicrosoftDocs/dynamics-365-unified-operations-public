@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Interactive components overview
 
-The site builder tool allows a page or fragment author to edit fields (Text, RichText, Link, Image and Video) directly on the preview canvas in a WYSIWYG manner using **interactive components**.  Interactive components ship with the e-Commerece online SDK and include **Msdyn365.Text** for text fields, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, the **Msdyn365.Image** for imagess and **Msdyn365.Video** for videos. The site builder tool will allow inline editing for text, bring up a link picker for links and image/video pickers for images and videos.
+The site builder tool allows a page or fragment author to edit fields (Text, RichText, Link, Image and Video) directly on the preview canvas in a WYSIWYG manner using **interactive components**.  **Interactive components** ship with the e-Commerce online SDK and include **Msdyn365.Text** for text fields, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, the **Msdyn365.Image** for imagess and **Msdyn365.Video** for videos. The site builder tool will allow inline editing for text, bring up a link picker for links and image/video pickers for images and videos.
 
 For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can still be made interactive by wrapping the component in the EditableField higher order component (HOC).  Follow the guidelines below to support interactive components inside of your modules html.
 
