@@ -41,7 +41,7 @@ An interactive component hooks an event handler to the component which will do t
 The below example shows how a text configuration field leverages an interactive component to allow inline editing of the text.
 
 A **productTitle** config value is specified in the module definition file config section as shown below:
-```json
+```
 ...
     "config": {
         "productTitle": {
