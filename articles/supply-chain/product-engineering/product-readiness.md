@@ -41,17 +41,17 @@ There are three types of readiness checks:
 
 ## Create readiness checks
 
-When creating a new engineering product, the system will verify if readiness checks are set up on the engineering product type **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
+When creating a new engineering product, the system will verify if readiness checks are set up on the engineering product category **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
 
 - Readiness checks are created for the product
 - The engineering version is not active. This will block the products from being used
 
-In case a new variant is created for the product, the system will verify if readiness checks are setup on the engineering product type **applicable on released variant level and engineering version level**. If this is the case, two things will happen:
+In case a new variant is created for the product, the system will verify if readiness checks are setup on the engineering product category **applicable on released variant level and engineering version level**. If this is the case, two things will happen:
 
 - Readiness checks are created for the product
 - The engineering version is not active. This will block the products from being used
 
-In case a new engineering version is created for the product, the system will verify if readiness checks are setup on the engineering product type **applicable engineering version level**. If this is the case, two things will happen:
+In case a new engineering version is created for the product, the system will verify if readiness checks are setup on the engineering product category **applicable engineering version level**. If this is the case, two things will happen:
 
 - Readiness checks are created for the product
 - The engineering version is not active. This will block the products from being used
@@ -60,7 +60,7 @@ In case a new engineering version is created for the product, the system will ve
 
 You can find the menu item for opening the readiness checks for a product on the **Released products details** page. For the readiness checks assigned to an engineering version, you can open them from the **engineering version** page.
 
-For open readiness checks assigned to you, you can open the **My open readiness checks** page on the menu and on the Product readiness for discrete manufacturing **workspace**. The setup for who is assigned to the readiness check is done at the engineering product type. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check.
+For open readiness checks assigned to you, you can open the **My open readiness checks** page on the menu and on the Product readiness for discrete manufacturing **workspace**. The setup for who is assigned to the readiness check is done at the engineering product category. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check.
 
 ## Process readiness checks
 
@@ -71,7 +71,7 @@ If you have opened the readiness form, you can view de subject of the system and
 - Via the option **Check/ complete** in the action pane, the readiness check can be checked/ completed and the status is updated to passed.
 - Via the option **Skip** in the action pane, the readiness check can be skipped in case it is not mandatory. This can be applicable when there is no data setup which is also not required for the particular product. This can be the case for the cost price calculation for a product that is still in design. The status is updated to skipped.
 
-In case the readiness check is updated to status passed, it depends on the settings on the engineering product type, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
+In case the readiness check is updated to status passed, it depends on the settings on the engineering product category, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
 
 In case there are no more open readiness checks, the engineering version becomes active and therefor ready for use automatically.
 
@@ -79,13 +79,13 @@ In case there are no more open readiness checks, the engineering version becomes
 
 The checklist opens by clicking on **Start checklist** in the action pane. When the checklist is completed, the system will validate if the readiness check is completed based on the settings in the questionnaire and if so, the status is updated to passed. In case the readiness check is not mandatory, it can be skipped, and the status is also updated to skipped.
 
-In case the readiness check is updated to status passed, it depends on the settings on the engineering product type, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
+In case the readiness check is updated to status passed, it depends on the settings on the engineering product category, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
 
 ## Set up readiness checks
 
-The types of data to be verified, can be different per type of product and therefor the readiness rules can be different per engineering product type. For more information, see ……
+The types of data to be verified, can be different per type of product and therefor the readiness rules can be different per engineering product category. For more information, see ……
 
-On the fast tab Readiness control of the engineering product type, you can setup the readiness checks. Click on **Add system checks** to add system and manual readiness checks. Click on **Add existing questionnaire** to adda checklist. Complete the rest of the fields to finish the setup:
+On the fast tab Readiness control of the engineering product category, you can setup the readiness checks. Click on **Add system checks** to add system and manual readiness checks. Click on **Add existing questionnaire** to adda checklist. Complete the rest of the fields to finish the setup:
 
 | **Setting** | Description |
 | --- | --- |

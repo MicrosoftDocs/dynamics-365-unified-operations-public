@@ -109,7 +109,7 @@ The following settings apply only to engineering products:
 | --- | --- |
 | Template BOM | When a product with a BOM is released, the lines of this template BOM will be added. This is useful for adding local components such as the local packaging or a manual of instructions in the local language. |
 | Template route | When a product is released with a route, the lines of this template will be added. |
-| Auto release | Should the product be part of automatic releasing on the engineering change order. This will give you the option to automatically release products of this engineering product type, to this operational organization. You can do this as part of the workflow on the engineering change order. For more information see <!-- KFM: Add link (Engineering change management) --> |
+| Auto release | Should the product be part of automatic releasing on the engineering change order. This will give you the option to automatically release products of this engineering product category, to this operational organization. You can do this as part of the workflow on the engineering change order. For more information see <!-- KFM: Add link (Engineering change management) --> |
 
 ### Review each product when releasing
 

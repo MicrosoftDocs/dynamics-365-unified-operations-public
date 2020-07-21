@@ -32,15 +32,57 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Product lifecycle state and transactions
 
-As an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. As an example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, when a product is reaching its end-of-life state, you want to control the inflow of this product.
+As an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. For example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, when a product is reaching its end-of-life state, you want to control the inflow of this product.
 
-For an engineering product, changing the lifecycle state goes hand-in-hand with its engineering versions and therefor the product lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can control what transactions are allowed for this engineering version via its product lifecycle state. For more information, see [Product lifecycle state overview](../pim/product-lifecycle.md).
+For an engineering product, changing the lifecycle state goes hand-in-hand with its engineering versions and therefor the product lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can control what transactions are allowed for this engineering version via its product lifecycle state.
 
-<!-- KFM: Where are we? I think we need a nav path. -->
+## Work with product lifecycle states
+
+To work with product lifecycle states, go to **Project Oaktree > Setup > Product lifecycle state**. Then do one of the following:
+
+- To create a new lifecycle state, select **New** from the Action Pane and then make settings as described in the following sections.
+- To edit an existing lifecycle state, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following sections.
+- To delete an existing lifecycle state, select it from the list pane and then select **Delete** on the Action Pane.
+
+> [!NOTE]
+> Engineering products use the same product lifecycle states as standard products. You can also open the **Product lifecycle state** page described in this topic by going to **Product information management > Setup > Product lifecycle state**. For more information about product lifecycle states, both for engineering and non-engineering products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
+
+## Settings in the header
+
+Make the following settings in the header of a product lifecycle state:
+
+| **Setting** | **Description** |
+| --- | --- |
+| **State** | Enter a name for the product lifecycle state. |
+| **Description** | Enter a description of the product lifecycle state. |
+
+## The General FastTab
+
+Make the following settings on **General** FastTab:
+
+| **Setting** | **Description** |
+| --- | --- |
+| **Default when released to a legal entity** | Set to *Yes* if this state should be applied by default for all products when they are first released. Set to *No* for states that will be manually applied later. <!-- KFM: Are there any special cases for engineering products (such as versions)? --> |
+| **Is active for planning** | Set this to *Yes* to include products in this state in master planning and BOM-level calculations. Set to *No* to exclude products in this state from those calculations. |
+
+## The Enabled business processes FastTab
+
+Use **Enabled business processes** FastTab to control which of the available business processes can be used with products in the current lifecycle sate. The processes listed here are found automatically as follows:
+
+- The first time you save a new lifecycle state, the page loads the business processes that are currently available at that time.
+- If you add new business processes to your system, you can refresh the list on the **Enabled business processes** FastTab for an existing lifecycle state by selecting **Check for updates** on the Action pane. <!-- KFM: Is this correct? The original text wasn't clear. -->
+
+For each process listed here, make the following settings:
+
+| **Setting** | **Description** |
+| --- | --- |
+| **Process** | This read-only value shows the name of an existing business process. |
+| **Process area** | <!-- KFM: What does this do? Why might I change this? --> |
+| **Policy** | Set this to one of the following to control whether and how the current process will be permitted for products in the current lifecycle state:<ul><li>**Enabled** - Allow this business process.</li><li>**Blocked** - The process is not allowed. If a user attempts to use this process on a product in this lifecycle state, the system will block it and show an error instead. For example, you might block end-of-life products from being purchased.</li><li>**Enabled with warning** - The process is allowed, but a warning will be shown. For example, you might want a prototype product to be put on a production order created by the research and development department, but other departments should be aware that they should not produce the product yet.</li></ul> |
+
+<!-- KFM: The following list doesn't seem useful to me, so I am planning to remove it. Please let me know if you fee otherwise:
 
 Next to the **Is active for planning** check box, the following transactions can be controlled by the product lifecycle state:
-
-<!-- KFM: Are the bolded terms below literal UI text? If not, maybe set in italic, and also spell out all abbreviations. -->
 
 - Entering the product on a **sales quotation**
 - Entering the product on a **sales order**
@@ -58,10 +100,4 @@ Next to the **Is active for planning** check box, the following transactions can
 - Entering the product on a **purchase order**
 - Entering the product on **request for quote**
 
-You can extend these rules by creating extensions. To make them appear in the user interface, use the button **Check for updates**.
-
-There are three options for each transaction:
-
-- **Enabled** - This is the default value where the transaction is allowed. As an example, you can use a matured operational product on all transactions.
-- **Blocked** - The transaction is not allowed and will be blocked, you will get an error. As an example, you want to block an end-of-life product from being purchased
-- **Enabled with warning** - The transaction is allowed, but you will receive a warning. As an example, you want a prototype product to be put on a production order by the research and development department, but other departments should be aware that they should not produce the product yet.
+ -->

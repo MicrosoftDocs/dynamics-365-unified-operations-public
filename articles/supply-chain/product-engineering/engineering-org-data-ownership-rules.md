@@ -35,6 +35,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 To ensure that the master data for products is created and maintained centrally, you can use one or more *engineering organizations*. The engineering organization owns the engineering products and their engineering-relevant data. The engineering organization is always connected to a *legal entity*, which is also an organization. With this connection, the system establishes a central entry point for all engineering-relevant data for engineering products within the company. This is where engineering products are created and engineering-relevant data is maintained. From this central point, the engineering products and engineering-relevant data will be released to *operational companies*, which are the other legal entities (For more information about the release management, see [Release product structure](release-product-structure.md)). These operational companies will use the engineering data as it is designed by the engineering organization. Any logistical data will be maintained locally by each company itself.
 
+<!-- KFM: We should describe how to create an "engineering organization" -->
+
 ## Engineering product category and engineering organizations
 
 Engineering product categories help to ensure that engineering products are created according to your company's business rules. Engineering product categories ensure that each product behaves as required. For more information on engineering product categories, see [Engineering versions and engineering product category](engineering-versions-product-category.md).
@@ -45,7 +47,7 @@ Each engineering product category belongs to a specific engineering organization
 
 Because the engineering organization owns the engineering-relevant data, they control the following:
 
-- **Creation of engineering products**: Each engineering organization can only create new engineering products based on the engineering product types <!-- KFM: Is "type" same as "category"? --> owned by that organization. In the operational companies, the local data will be maintained. <!-- KFM: What does this last sentence mean? -->
+- **Creation of engineering products**: Each engineering organization can only create new engineering products based on an engineering product category owned by that organization. In the operational companies, the local data will be maintained. <!-- KFM: What does this last sentence mean? -->
 - **Creation of engineering versions**: When an organization creates a new engineering product, the system automatically creates an initial engineering version for that product. Only the owning engineering organization will be able to create new versions of the product.
 - **Creation and maintenance of engineering attributes**: When an organization creates a new engineering product, the system automatically adds engineering attributes to the product. Only the owning engineering organization will be able to create maintain these values. For more information about engineering attributes, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).
 - **Creation and maintenance of bill of materials connected to the engineering versions**: The owning engineering organization can directly connect a bill of materials to an engineering product version. When these bills of materials are released to other legal entities, the engineering data on the bills of materials are protected from being changed as follows:
