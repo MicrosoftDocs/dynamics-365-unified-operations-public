@@ -36,29 +36,29 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.12. This version has a build number of 10.0.507 and is available as follows:
 
-- **Preview release:** May 2020
-- **General availability (self-update):** July 2020
-- **Auto-update:** August 2020
+- **Preview release:** July 2020
+- **General availability (self-update):** September 2020
+- **Auto-update:** October 2020
 
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
-- [Customer payment predictions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
- - [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
- - [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
- - [External data for cashflow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
- - [Automatic vendor payment proposal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
+ - [Apply prepayments for finalized purchase orders to invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-prepayments-finalized-purchase-orders-invoices)
+ - [Retained earnings calculation enhancements for financial reporting when using currency translation
+ ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+ - [Apply changes to 1099-NEC and 1099-MISC forms for 2020
+ ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-changes-1099-nec-1099-misc-forms-2020)
  
  ### Public sector
- - [Allow interest distribution and escheatment to update bank balances when posting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
- - [Remove option to replace budget plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
+ - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/trial-balance-transactional-detail-report)
+ - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
+ - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
  
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md). 
+Dynamics 365 Finance 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
