@@ -2,7 +2,7 @@
 # required metadata
 
 title: Interactive components
-description: 
+description: The site builder tool allows a page or fragment author to edit fields (Text, RichText, Link, Image and Video) directly on the preview canvas in a WYSIWYG manner using interactive components.
 author: samjarawan
 manager: annbe
 ms.date: 06/29/2020
@@ -28,16 +28,52 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Interactive components
+# Interactive components overview
 
-Site builder supports editing, inline, all the CMS fields used in a page. Supported fields are Text, RichText, Link, Image and Video. This experience is powered by means of a set of interactive components that are shipped with the SDK by default. Modules are recommended to use the interactive components when rendering CMS fields. Any custom implementations of these components can still be made interactive by wrapping the component in the EditableField higher order component (HOC).
+The site builder tool allows a page or fragment author to edit fields (Text, RichText, Link, Image and Video) directly on the preview canvas in a WYSIWYG manner using **interactive components**.  Interactive components ship with the e-Commerece online SDK and include **Msdyn365.Text** for text fields, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, the **Msdyn365.Image** for imagess and **Msdyn365.Video** for videos. The site builder tool will allow inline editing for text, bring up a link picker for links and image/video pickers for images and videos.
 
-## Text Component
+For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can still be made interactive by wrapping the component in the EditableField higher order component (HOC).  Follow the guidelines below to support interactive components inside of your modules html.
+
+
+## How interactive components work
+An interactive component hooks an event handler to the component which will do the work of setting the specific configuration field required.
+
+The below example shows how a text configuration field leverages an interactive component to allow inline editing of the text.
+
+A **productTitle** config value is specified in the module definition file config section as shown below:
+```json
+...
+    "config": {
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Product Title",
+            "description": "Product placement title"
+        },
+...
+```
+
+To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component which specified an event handler "handleTextChange" which will set the config value once set.
+
+```typescript
+  public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.productTitle!.text = event.target.value;
+
+  <Msdyn365.Text
+    className={'product-title'}
+    tag={'h2'}
+    text={this.props.config.productTitle}
+    editProps={{ onEdit: this.handleTextChange, requestContext: this.props.context.request }}
+  />
+```
+
+## Interactive component reference
+
+### Text Component
 
 ```typescript
 <Msdyn365.Text />
 ```
-### Example
+
+#### Example
 
 ```typescript
  <Msdyn365.Text
@@ -46,9 +82,11 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
     className={'display-4'}
     editProps={{ onEdit: this.handleTextChange, requestContext: this.props.context.request }}
   />
+
+public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.heading!.text = event.target.value;
 ```
 
-### Available props
+#### Available props
 
 | prop      | description                                          | type           |
 | --------- | ---------------------------------------------------- | -------------- |
@@ -64,13 +102,13 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | onEdit         | function handler to handle text change event | Function        |
 | requestContext | request context object                       | IRequestContext |
 
-## RichText Component
+### RichText Component
 
 ```typescript
 <Msdyn365.RichTextComponent />
 ```
 
-### Example
+#### Example
 
 ```typescript
  <Msdyn365.RichTextComponent
@@ -79,7 +117,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
   />
 ```
 
-### Available props
+#### Available props
 
 | prop      | description                                          | type           |
 | --------- | ---------------------------------------------------- | -------------- |
@@ -93,13 +131,14 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | onEdit         | function handler to handle text change event | Function        |
 | requestContext | request context object                       | IRequestContext |
 
-## Links Component
+
+### Links Component
 
 ```typescript
 <Msdyn365.Links />
 ```
 
-### Example
+#### Example
 ```typescript
   <Msdyn365.Links
     links={config.links}
@@ -107,7 +146,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
   />
 ```
 
-### Available props
+#### Available props
 
 | prop      | description                                          | type            |
 | --------- | ---------------------------------------------------- | --------------- |
@@ -137,13 +176,13 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | innerClassName       | css class name for inner component in the anchor tag        | String              |
 | onClick              | click handler to handle link click event                    | Function            |
 
-## Link Component
+### Link Component
 
 ```typescript
 <Msdyn365.Link />
 ```
 
-### Example
+#### Example
 
 ```typescript
   <Msdyn365.Link
@@ -152,7 +191,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
   />
 ```
 
-### Available props
+#### Available props
 
 | prop      | description                                          | type               |
 | --------- | ---------------------------------------------------- | ------------------ |
@@ -182,13 +221,13 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | innerClassName       | css class name for inner component in the anchor tag        | String              |
 | onClick              | click handler to handle link click event                    | Function            |
 
-## Image Component
+### Image Component
 
 ```typescript
 <Msdyn365.Image />
 ```
 
-### Example
+#### Example
 ```typescript
   <Msdyn365.Image
     editProps={{ key: this.props.config.image || {}, requestContext: this.props.context.request }}
@@ -197,7 +236,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
   />
 ```
 
-### Available props
+#### Available props
 
 | prop                 | description                                                 | type                |
 | -------------------- | ----------------------------------------------------------- | ------------------- |
@@ -219,7 +258,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | key            | path to the image property in config | Object          |
 | requestContext | request context object               | IRequestContext |
 
-## Video Component
+### Video Component
 
 ```typescript
 <MsDyn365.Video>
@@ -227,7 +266,7 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 </MsDyn365.Video>
 ```
 
-### Available props
+#### Available props
 
 | prop      | description                                          | type       |
 | --------- | ---------------------------------------------------- | ---------- |
@@ -241,9 +280,9 @@ Site builder supports editing, inline, all the CMS fields used in a page. Suppor
 | key            | path to the property in config | Object          |
 | requestContext | request context object         | IRequestContext |
 
-## Generic Editable Component HOC
 
-Generic editable field component to wrap any custom components and enable interaction in the context of site builder.
+## Generic Editable Component HOC
+Generic editable field component to wrap any custom components and enable interaction in the context of the site builder.
 
 ```typescript
 <EditableField />
