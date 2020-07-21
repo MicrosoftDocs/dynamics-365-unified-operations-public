@@ -36,7 +36,8 @@ Connectors allow you to connect your e-Commerce site to external third parties t
 
 Connectors can be added to your e-Commerce site by adding them as a dependency in your package.json or by implementing them directly in your configuration package code under the **\src\connectors** directory. 
 
-Currently Dynamics 365 Commerce supports only one type of connector, Experimentation Connector.
+Currently Dynamics 365 Commerce supports only one type of connector, Experimentation Connector. Some service providers require a paid license to the service before they can be used, please refer to the service provider documentation for more information.
+
 
 ## Configuring and Enabling a Connector
 
