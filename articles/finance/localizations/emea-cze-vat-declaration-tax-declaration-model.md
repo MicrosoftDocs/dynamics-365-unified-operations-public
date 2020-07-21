@@ -5,7 +5,7 @@ title: VAT declaration (The Czech Republic)
 description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic, including instructions for setting up and generating the VAT declaration and VAT control statement. 
 author: anasyash
 manager: AnnBe
-ms.date: 07/17/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -34,658 +34,72 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic provides information about the value-added tax (VAT) declaration for
-the Czech Republic. It includes instructions for setting up and generating the
-VAT declaration and VAT control statement.
+This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and VAT control statement.
 
-## VAT declaration overview
+## <a name="overview"></a>VAT declaration overview
 
 ### VAT declaration
 
-This section describes the sections and rows of the VAT declaration,
-calculations, and relations between the VAT declaration and VAT control
-statement.
+This section describes the sections and rows of the VAT declaration, calculations, and relations between the VAT declaration and VAT control statement.
 
-To generate the VAT declaration and VAT control statement automatically,
-first create enough sales tax codes to keep separate VAT
-accounting for each box on the VAT declaration. You must also associate **Sales
-tax codes** with the **Lookup result** of the **Lookup for the VAT declaration
-boxes** in the **Application specific parameters** of the VAT declaration format
-and VAT control statement format. You can find more details about how to set up
-**Application specific parameters** in the
- [Set up parameters for declarations fields](#set-up-parameters-for-declarations-fields) section later in this topic.
+To generate the VAT declaration and VAT control statement automatically, first create enough sales tax codes to keep separate VAT accounting for each box on the VAT declaration. You must also associate **Sales tax codes** with the **Lookup result** of the **Lookup for the VAT declaration boxes** in the **Application specific parameters** of the VAT declaration format and VAT control statement format. You can find more details about how to set up **Application specific parameters** in the [Set up parameters for declarations fields](#set-up-parameters-for-declarations-fields) section later in this topic.
 
-The **Application specific parameters – lookup result** column in the following table shows you which **Lookup result** is preconfigured for a specific VAT
-declaration row in the VAT declaration format and VAT control statement format.
-Use this information to correctly associate sales tax codes with the
-lookup result, and subsequently with the VAT declaration row.
+The **Application specific parameters – lookup result** column in the following table shows you which **Lookup result** is preconfigured for a specific VAT declaration row in the VAT declaration format and VAT control statement format. Use this information to correctly associate sales tax codes with the lookup result, and subsequently with the VAT declaration row.
 
-> [!Note]
-> If you configure Sales tax codes for posting incoming reverse charge VAT
-with **Use tax**, you should associate your Sales tax codes with the lookup
-result that contains UseTax in the name, for example for EU purchases, configure
-**EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or
-**EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge.
-See [Reverse charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
+> [!NOTE]
+> If you configure Sales tax codes for posting incoming reverse charge VAT with **Use tax**, you should associate your Sales tax codes with the lookup result that contains UseTax in the name, for example for EU purchases, configure **EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or **EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge. See [Reverse charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
 
 VAT declaration format in the Czech Republic contains the following sections:
 
-### Section I Taxable transactions
+- [Section 1: Taxable transactions](#taxabletransactions)
+- [Section 2: Other supplies and supplies that originate outside of the Czech Republic with the right to deduct](#othersupplies)
+- [Section 3: Additional data](#additionaldata)
+- [Section 4: VAT deduction](#vatreduction)
+- [Section 5: Reduction of the right to deduct](#righttodeduct)
+- [Section 6: Tax calculation](#taxcalculation)
 
-<table width="100%">
-<tbody>
-<tr>
-<td width="4%">
-<p><strong>Row</strong></p>
-</td>
-<td width="8%">
-<p><strong>Control statement </strong><strong>section</strong></p>
-</td>
-<td width="25%">
-<p><strong>Description</strong></p>
-</td>
-<td width="9%">
-<p><strong>R</strong><strong>ate</strong></p>
-</td>
-<td width="11%">
-<p><strong>XML element - </strong><strong>Tax base</strong></p>
-</td>
-<td width="10%">
-<p><strong>XML element -</strong><strong>Tax payable</strong></p>
-</td>
-<td width="31%">
-<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>1</p>
-</td>
-<td width="8%">
-<p>A4 \ A5</p>
-</td>
-<td width="25%">
-<p>Domestic sales of goods and services</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>obrat23</p>
-</td>
-<td width="10%">
-<p>dan23</p>
-</td>
-<td width="31%">
-<p>DomesticSalesVATPayableStandard<br /> (minus) VATAdjustmentCustomerBadDebtsStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>2</p>
-</td>
-<td width="8%">
-<p>A4 \ A5</p>
-</td>
-<td width="25%">
-<p>Domestic sales of goods and services</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>obrat5</p>
-</td>
-<td width="10%">
-<p>dan5</p>
-</td>
-<td width="31%">
-<p>DomesticSalesVATPayableReduced<br /> DomesticSalesVATPayableReduced2<br /> (minus) VATAdjustmentCustomerBadDebtsReduced<br /> (minus) VATAdjustmentCustomerBadDebtsReduced2</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>3</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Intra-community purchase of goods</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>p_zb23</p>
-</td>
-<td width="10%">
-<p>dan_pzb23</p>
-</td>
-<td width="31%">
-<p>EUPurchaseGoodsVATPayableStandard</p>
-<p>EUPurchaseGoodsUseTaxStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>4</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Intra-community purchase of goods</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>p_zb5</p>
-</td>
-<td width="10%">
-<p>dan_pzb5</p>
-</td>
-<td width="31%">
-<p>EUPurchaseGoodsVATPayableReduced<br /> EUPurchaseGoodsVATPayableReduced2</p>
-<p>EUPurchaseGoodsUseTaxReduced</p>
-<p>EUPurchaseGoodsUseTaxReduced2</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>5</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Intra-community purchase of services</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>p_sl23_e</p>
-</td>
-<td width="10%">
-<p>dan_psl23_e</p>
-</td>
-<td width="31%">
-<p>EUPurchaseServicesVATPayableStandard</p>
-<p>EUPurchaseServicesUseTaxStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>6</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Intra-community purchase of services</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>p_sl5_e</p>
-</td>
-<td width="10%">
-<p>dan_psl5_e</p>
-</td>
-<td width="31%">
-<p>EUPurchaseServicesVATPayableReduced<br /> EUPurchaseServicesVATPayableReduced2</p>
-<p>EUPurchaseServicesUseTaxReduced</p>
-<p>EUPurchaseServicesUseTaxReduced2</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>7</p>
-</td>
-<td width="8%">
-<p>n/a</p>
-</td>
-<td width="25%">
-<p>Import of goods</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>dov_zb23</p>
-</td>
-<td width="10%">
-<p>dan_dzb23</p>
-</td>
-<td width="31%">
-<p>ImportGoodsVATPayableStandard</p>
-<p>ImportGoodsUseTaxStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>8</p>
-</td>
-<td width="8%">
-<p>n/a</p>
-</td>
-<td width="25%">
-<p>Import of goods</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>dov_zb5</p>
-</td>
-<td width="10%">
-<p>dan_dzb5</p>
-</td>
-<td width="31%">
-<p>ImportGoodsVATPayableReduced</p>
-<p>ImportGoodsUseTaxReduced</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>9</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Intra-community purchase of new means of transport</p>
-</td>
-<td width="9%">
-<p>&nbsp;</p>
-</td>
-<td width="11%">
-<p>p_dop_nrg</p>
-</td>
-<td width="10%">
-<p>dan_pdop_nrg</p>
-</td>
-<td width="31%">
-<p>EUPurchaseNewTransportVATPayable</p>
-<p>EUPurchaseNewTransportUseTax</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>10</p>
-</td>
-<td width="8%">
-<p>B1</p>
-</td>
-<td width="25%">
-<p>Purchase of goods and services under domestic reverse charge ($92)</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>rez_pren23</p>
-</td>
-<td width="10%">
-<p>dan_rpren23</p>
-</td>
-<td width="31%">
-<p>DomesticPurchaseReverseChargeVATPayableStandard</p>
-<p>DomesticPurchaseReverseChargeUseTaxStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>11</p>
-</td>
-<td width="8%">
-<p>B1</p>
-</td>
-<td width="25%">
-<p>Purchase of goods and services under domestic reverse charge ($92)</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>rez_pren5</p>
-</td>
-<td width="10%">
-<p>dan_rpren5</p>
-</td>
-<td width="31%">
-<p>DomesticPurchaseReverseChargeVATPayableReduced<br /> DomesticPurchaseReverseChargeVATPayableReduced2</p>
-<p>DomesticPurchaseReverseChargeUseTaxReduced</p>
-<p>DomesticPurchaseReverseChargeUseTaxReduced2</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>12</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Other purchases with obligation to pay VAT</p>
-</td>
-<td width="9%">
-<p>standard</p>
-</td>
-<td width="11%">
-<p>p_sl23_z</p>
-</td>
-<td width="10%">
-<p>dan_psl23_z</p>
-</td>
-<td width="31%">
-<p>OtherPurchasesVATPayableStandard</p>
-<p>OtherPurchasesUseTaxStandard</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>13</p>
-</td>
-<td width="8%">
-<p>A2</p>
-</td>
-<td width="25%">
-<p>Other purchases with obligation to pay VAT</p>
-</td>
-<td width="9%">
-<p>reduced</p>
-</td>
-<td width="11%">
-<p>p_sl5_z</p>
-</td>
-<td width="10%">
-<p>dan_psl5_z</p>
-</td>
-<td width="31%">
-<p>OtherPurchasesVATPayableReduced<br /> OtherPurchasesVATPayableReduced2</p>
-<p>OtherPurchasesUseTaxReduced</p>
-<p>OtherPurchasesUseTaxReduced2</p>
-</td>
-</tr>
-</tbody>
-</table>
+### <a name="taxabletransactions"></a>Section 1: Taxable transactions
 
-## Section II Other supplies and supplies with place of supply outside the Czech Republic with the right to deduct
+| Row | Control statement section | Description                                                              | Rate     | Tax base (xml element) | Tax payable (xml element) | Report field <br> (lookup result)                                                                                                                                    |
+|-----|---------------------------|--------------------------------------------------------------------------|----------|------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | A4/A5                     | Domestic sales of goods and   services                                   | Standard | obrat23                | dan23                     | DomesticSalesVATPayableStandard - VATAdjustmentCustomerBadDebtsStandard                                                                                                                     |
+| 2   | A4/A5                     | Domestic sales of goods and   services                                   | Reduced  | obrat5                 | dan5                      | DomesticSalesVATPayableReduced - VATAdjustmentCustomerBadDebtsReduced <br><br> DomesticSalesVATPayableReduced2 - VATAdjustmentCustomerBadDebtsReduced2                                       |
+| 3   | A2                        | Intra-community purchase of   goods                                      | Standard | p_zb23                 | dan_pzb23                 | EUPurchaseGoodsVATPayableStandard <br> EUPurchaseGoodsUseTaxStandard                                                                                                                               |
+| 4   | A2                        | Intra-community purchase of   goods                                      | Reduced  | p_zb5                  | dan_pzb5                  | EUPurchaseGoodsVATPayableReduced <br> EUPurchaseGoodsVATPayableReduced2 <br> EUPurchaseGoodsUseTaxReduced <br> EUPurchaseGoodsUseTaxReduced2                                                           |
+| 5   | A2                        | Intra-community purchase of   services                                   | Standard | p_sl23_e               | dan_psl23_e               | EUPurchaseServicesVATPayableStandard <br> EUPurchaseServicesUseTaxStandard                                                                                                                         |
+| 6   | A2                        | Intra-community purchase of   services                                   | Reduced  | p_sl5_e                | dan_psl5_e                | EUPurchaseServicesVATPayableReduced <br> EUPurchaseServicesVATPayableReduced2 <br> EUPurchaseServicesUseTaxReduced <br> EUPurchaseServicesUseTaxReduced2                                               |
+| 7   | N/A                       | Import of goods                                                          | Standard | dov_zb23               | dan_dzb23                 | ImportGoodsVATPayableStandard <br> ImportGoodsUseTaxStandard                                                                                                                                       |
+| 8   | N/A                       | Import of goods                                                          | Reduced  | dov_zb5                | dan_dzb5                  | ImportGoodsVATPayableReduced <br> ImportGoodsUseTaxReduced                                                                                                                                         |
+| 9   | A2                        | Intra-community purchase of new   means of transport                     | N/A      | p_dop_nrg              | dan_pdop_nrg              | EUPurchaseNewTransportVATPayable <br> EUPurchaseNewTransportUseTax                                                                                                                                 |
+| 10  | B1                        | Purchase of goods and services   under the domestic reverse charge ($92) | Standard | rez_pren23             | dan_rpren23               | DomesticPurchaseReverseChargeVATPayableStandard <br> DomesticPurchaseReverseChargeUseTaxStandard                                                                                                   |
+| 11  | B1                        | Purchase of goods and services   under the domestic reverse charge ($92) | Reduced  | rez_pren5              | dan_rpren5                | DomesticPurchaseReverseChargeVATPayableReduced <br> DomesticPurchaseReverseChargeVATPayableReduced2 <br> DomesticPurchaseReverseChargeUseTaxReduced <br> DomesticPurchaseReverseChargeUseTaxReduced2 |
+| 12  | A2                        | Other purchases with an   obligation to pay VAT                          | Standard | p_sl23_z               | dan_psl23_z               | OtherPurchasesVATPayableStandard <br> OtherPurchasesUseTaxStandard                                                                                                                                 |
+| 13  | A2                        | Other purchases with an   obligation to pay VAT                          | Reduced  | p_sl5_z                | dan_psl5_z                | OtherPurchasesVATPayableReduced <br> OtherPurchasesVATPayableReduced2 <br> OtherPurchasesUseTaxReduced <br> OtherPurchasesUseTaxReduced2                                                               |
 
-<table width="100%">
-<tbody>
-<tr>
-<td width="4%">
-<p><strong>Row</strong></p>
-</td>
-<td width="9%">
-<p><strong>&nbsp;Control statement </strong><strong>section</strong></p>
-</td>
-<td width="36%">
-<p><strong>Description</strong></p>
-</td>
-<td width="17%">
-<p><strong>XML element - </strong><strong>Tax base</strong></p>
-</td>
-<td width="31%">
-<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>20</p>
-</td>
-<td width="9%">
-<p>n/a</p>
-</td>
-<td width="36%">
-<p>Intra-community sales of goods</p>
-</td>
-<td width="17%">
-<p>dod_zb</p>
-</td>
-<td width="31%">
-<p>EUSalesGoods</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>21</p>
-</td>
-<td width="9%">
-<p>n/a</p>
-</td>
-<td width="36%">
-<p>Intra-community sales of services</p>
-</td>
-<td width="17%">
-<p>pln_sluzby</p>
-</td>
-<td width="31%">
-<p>EUSalesServices</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>22</p>
-</td>
-<td width="9%">
-<p>n/a</p>
-</td>
-<td width="36%">
-<p>Export of goods</p>
-</td>
-<td width="17%">
-<p>pln_vyvoz</p>
-</td>
-<td width="31%">
-<p> ExportGoods </p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>23</p>
-</td>
-<td width="9%">
-<p>n/a</p>
-</td>
-<td width="36%">
-<p>Intra-community sales of new means of transport to non-taxable person</p>
-</td>
-<td width="17%">
-<p>dod_dop_nrg</p>
-</td>
-<td width="31%">
-<p>EUSalesNewTransport</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>24</p>
-</td>
-<td width="9%">
-<p>n/a</p>
-</td>
-<td width="36%">
-<p>Intra-community consignment of goods</p>
-</td>
-<td width="17%">
-<p>pln_zaslani</p>
-</td>
-<td width="31%">
-<p>EUConsignmentGoods</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>25</p>
-</td>
-<td width="9%">
-<p>A1</p>
-</td>
-<td width="36%">
-<p>Sales of goods and services under domestic reverse charge ($92)</p>
-</td>
-<td width="17%">
-<p>pln_rez_pren</p>
-</td>
-<td width="31%">
-<p>DomesticSalesReverseCharge</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>26</p>
-</td>
-<td width="9%">
-<p>A3 and Other</p>
-</td>
-<td width="36%">
-<p>Other tax deductible transactions</p>
-</td>
-<td width="17%">
-<p>pln_ost</p>
-</td>
-<td width="31%">
-<p>OtherSalesWithRightToDeduct<br /> OtherSalesWithRightToDeductGoldInvestment</p>
-</td>
-</tr>
-</tbody>
-</table>
+## <a name="othersupplies"></a>Section 2: Other supplies and supplies that originate outside of the Czech Republic with the right to deduct
+
+| Row | Control statement section | Description                                                           | Tax base (xml element)  | Report field  (lookup result)                                                |
+|-----|---------------------------|-----------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------|
+| 20  | N/A                       | Intra-community sales of goods                                        | dod_zb                  | EUSalesGoods                                                                 |
+| 21  | N/A                       | Intra-community sales of   services                                   | pln_sluzby              | EUSalesServices                                                              |
+| 22  | N/A                       | Export of goods                                                       | pln_vyvoz               | ExportGoods                                                                  |
+| 23  | N/A                       | Intra-community sales of new   transport to a non-taxable person      | dod_dop_nrg             | EUSalesNewTransport                                                          |
+| 24  | N/A                       | Intra-community consignment of   goods                                | pln_zaslani             | EUConsignmentGoods                                                           |
+| 25  | A1                        | Sales of goods and services   under the domestic reverse charge ($92) | pln_rez_pren            | DomesticSalesReverseCharge                                                   |
+| 26  | A3 and other              | Other tax deductible   transactions                                   | pln_ost                 | OtherSalesWithRightToDeduct <br> OtherSalesWithRightToDeductGoldInvestment |
 
 
-## Section III Additional data
+## <a name="additionaldata"></a>Section 3: Additional data
 
-<table width="1020">
-<tbody>
-<tr>
-<td width="47">
-<p><strong>Row</strong></p>
-</td>
-<td width="95">
-<p><strong>&nbsp;Control statement </strong><strong>section</strong></p>
-</td>
-<td width="340">
-<p><strong>Description</strong></p>
-</td>
-<td width="113">
-<p><strong>XML element - </strong><strong>Tax base</strong></p>
-</td>
-<td width="104">
-<p><strong>XML element - </strong><strong>Tax amount</strong></p>
-</td>
-<td width="321">
-<p><strong>Report field (Application specific parameters &ndash; lookup result)</strong></p>
-</td>
-</tr>
-<tr>
-<td width="47">
-<p>30</p>
-</td>
-<td width="95">
-<p>n/a</p>
-</td>
-<td width="340">
-<p>Simplified triangular Intra-community acquisition of goods</p>
-</td>
-<td width="113">
-<p>tri_pozb</p>
-</td>
-<td width="104">
-<p>n/a</p>
-</td>
-<td width="321">
-<p>SimplifiedTriangularEUPurchaseGoods</p>
-</td>
-</tr>
-<tr>
-<td width="47">
-<p>31</p>
-</td>
-<td width="95">
-<p>n/a</p>
-</td>
-<td width="340">
-<p>Simplified triangular Intra-community sale of goods</p>
-</td>
-<td width="113">
-<p>tri_dozb</p>
-</td>
-<td width="104">
-<p>n/a</p>
-</td>
-<td width="321">
-<p>SimplifiedTriangularEUSalesGoods</p>
-</td>
-</tr>
-<tr>
-<td width="47">
-<p>32</p>
-</td>
-<td width="95">
-<p>n/a</p>
-</td>
-<td width="340">
-<p>Import of exempt goods</p>
-</td>
-<td width="113">
-<p>dov_osv</p>
-</td>
-<td width="104">
-<p>n/a</p>
-</td>
-<td width="321">
-<p>ImportGoodsVATExempt</p>
-</td>
-</tr>
-<tr>
-<td width="47">
-<p>33</p>
-</td>
-<td width="95">
-<p>A4</p>
-</td>
-<td width="340">
-<p>VAT amount adjustment for bad debts - creditor</p>
-</td>
-<td width="113">
-<p>n/a</p>
-</td>
-<td width="104">
-<p>opr_verit</p>
-</td>
-<td width="321">
-<p><em>Informative value. Included in Rows 1 and 2</em><br /> <br /> VATAdjustmentCustomerBadDebtsStandard<br /> VATAdjustmentCustomerBadDebtsReduced<br /> VATAdjustmentCustomerBadDebtsReduced2</p>
-</td>
-</tr>
-<tr>
-<td width="47">
-<p>34</p>
-</td>
-<td width="95">
-<p>B2</p>
-</td>
-<td width="340">
-<p>VAT amount adjustment for bad debts - debtor</p>
-</td>
-<td width="113">
-<p>n/a</p>
-</td>
-<td width="104">
-<p>opr_dluz</p>
-</td>
-<td width="321">
-<p><em>Informative value. Included in Rows 40 and 41</em><br /> <br /> VATAdjustmentVendorBadDebtsStandard<br /> VATAdjustmentVendorBadDebtsReduced<br /> VATAdjustmentVendorBadDebtsReduced2</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Row | Control statement section | Description                                                  | Tax base (xml element)  | Tax amount (xml element) | Report field  (lookup result)                                                                                                                                         |
+|-----|---------------------------|--------------------------------------------------------------|-------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 30  | N/A                       | Simplified triangular   intra-community acquisition of goods | tri_pozb                | N/A                      | SimplifiedTriangularEUPurchaseGoods                                                                                                                                   |
+| 31  | N/A                       | Simplified triangular   intra-community sale of goods        | tri_dozb                | N/A                      | SimplifiedTriangularEUSalesGoods                                                                                                                                      |
+| 32  | N/A                       | Import of exempt goods                                       | dov_osv                 | N/A                      | ImportGoodsVATExempt                                                                                                                                                  |
+| 33  | A4                        | VAT amount adjustment for bad debts - creditor             | N/A                     | opr_verit                | Informative value included in rows 1 and 2: <br><br> VATAdjustmentCustomerBadDebtsStandard <br> VATAdjustmentCustomerBadDebtsReduced <br> VATAdjustmentCustomerBadDebtsReduced2 |
+| 34  | B2                        | VAT amount adjustment for bad   debts - debtor               | N/A                     | opr_dluz                 | Informative value included in rows 40 and 41: <br><br> VATAdjustmentVendorBadDebtsStandard <br> VATAdjustmentVendorBadDebtsReduced <br> VATAdjustmentVendorBadDebtsReduced2     |
 
-## Section IV VAT deduction
+## <a name="vatreduction"></a>Section 4: VAT deduction
 
 <table width="99%">
 <tbody>
@@ -943,282 +357,30 @@ VAT declaration format in the Czech Republic contains the following sections:
 </table>
 
 
-### V Reduction of the right to deduct
+### <a name="righttodeduct"></a>Section 5: Reduction of the right to deduct
 
-<table width="98%">
-<tbody>
-<tr>
-<td width="4%">
-<p><strong>Row</strong></p>
-</td>
-<td width="24%">
-<p><strong>Description</strong></p>
-</td>
-<td width="11%">
-<p><strong>XML element - Tax base</strong></p>
-</td>
-<td width="60%">
-<p><strong>Comment</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>50</p>
-</td>
-<td width="24%">
-<p>Exempt sales</p>
-</td>
-<td width="11%">
-<p>plnosv_kf</p>
-</td>
-<td width="60%">
-<p>Application specific parameter &ndash; lookup result: SalesVATExempt</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>51</p>
-</td>
-<td width="24%">
-<p>Value of sales not included in calculation of coefficient Row 53 - With right to deduct</p>
-</td>
-<td width="11%">
-<p>pln_nkf</p>
-</td>
-<td width="60%">
-<p><em>Informative value - <u>only for December declaration.</u> Relates to all January-December transactions</em></p>
-<p>&nbsp;</p>
-<p>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of taxable sales not included in calculation of coefficient</strong></p>
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>51</p>
-</td>
-<td width="24%">
-<p>Value of sales not included in calculation of coefficient Row 53 - Without right to deduct</p>
-</td>
-<td width="11%">
-<p>plnosv_nkf</p>
-</td>
-<td width="60%">
-<p><em>Informative value - <u>only for December declaration. </u>Relates to all January-December transactions</em></p>
-<p>&nbsp;</p>
-<p>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of exempt sales not included in calculation of coefficient</strong></p>
-<p><em>&nbsp;</em></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>52</p>
-</td>
-<td width="24%">
-<p>Part of the reduced tax deduction (with deduction adjustment): pro rata coefficient</p>
-</td>
-<td width="11%">
-<p>koef_p20_nov</p>
-</td>
-<td width="60%">
-<p>Pro rata coefficient.</p>
-<p>&nbsp;</p>
-<p>User input parameter <strong>Pro rata coefficient</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>52</p>
-</td>
-<td width="24%">
-<p>Part of the reduced tax deduction (with deduction adjustment): Deduction amount</p>
-</td>
-<td width="11%">
-<p>dp_uprav_kf</p>
-</td>
-<td width="60%">
-<p>Calculated automatically as: Deduction amount = 46.odp_sum_kr * 52.koef_p20_nov</p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>53</p>
-</td>
-<td width="24%">
-<p>Settlement of tax deduction &ndash; New pro rata coefficient</p>
-</td>
-<td width="11%">
-<p>koef_p20_vypor</p>
-</td>
-<td width="60%">
-<p><em><u>Only for December declaration</u></em><em>.</em></p>
-<p><em>&nbsp;</em></p>
-<p>New pro rata coefficient.&nbsp; Manual amount &ndash; user input parameter on the report dialog: <strong>New pro rata coefficient</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p>You can calculate this amount manually based on all January-December declarations amounts as follows:</p>
-<p>1. Calculate <strong>Value of Taxable sales</strong> = Rows (1 + 2 + 20 + 21 + 22 + 23 + 24 + 25 + 26 + 31).TaxBase</p>
-<p>2. Calculate <strong>Value of Exempt sales</strong> = Row 50.TaxBase</p>
-<p>3. Calculate <strong>New pro rata coefficient</strong> =</p>
-<p><strong>Value of Taxable sales</strong> - <strong>Value of taxable sales not included in calculation of coefficient</strong><br /> delete on <br /> <strong>Value of Taxable sales</strong> + <strong>Value of Exempt sales</strong> - <strong>Value of taxable sales not included in calculation of coefficient</strong> - <strong>Value of exempt sales not included in calculation of coefficient</strong></p>
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="4%">
-<p>53</p>
-</td>
-<td width="24%">
-<p>Settlement of tax deduction &ndash; Change of deduction</p>
-</td>
-<td width="11%">
-<p>vypor_odp</p>
-</td>
-<td width="60%">
-<p><em><u>Only for December declaration</u></em><em>.</em></p>
-<p>&nbsp;</p>
-<p>Adjustment of tax deduction. This line reflects correction of annual VAT deduction based on actual pro rata coefficient versus applied during the year estimated pro rata coefficient.<strong><br /> <br /> </strong>Manual amount &ndash; user input parameter on the report dialog: <strong>Value of annual settlement of tax deduction</strong></p>
-<p>&nbsp;</p>
-<p>You can calculate this amount manually based on all January-December declarations amounts as follows:</p>
-<p>Row 46.Tax deduction adjustment * (<strong>New pro rata coefficient</strong> &ndash; <strong>Pro rata coefficient</strong>)<br /> </p>
-</td>
-</tr>
-</tbody>
-</table>
+| Row | Description                                                                                      | Tax base (xml element) | Comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----|--------------------------------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 50  | Exempt sales                                                                                     | plnosv_kf              | Application specific parameter   lookup result: SalesVATExempt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 51  | Value of sales not included in   claculation of coefficient row 53 - with the right to deduct    | pln_nkf                | Informative value: Only for   December declaration. Relates to all January through December transactions.   <br> <br> The user manually inputs the amount in the parameter,   **Value of the taxable sales not included in calculation of the coefficient**   on the report dialog.                                                                                                                                                                                                                                                                                                                                                                                                |
+| 51  | Value of sales not included in   calculation of coefficient row 53 - without the right to deduct | plnosv_nkf             | Informative value: Only for   December declaration. Relates to all January through December transactions.   <br> <br> The user manually inputs the amount in the parameter,   **Value of the taxable sales not included in calculation of the coefficient**   on the report dialog.                                                                                                                                                                                                                                                                                                                                                                                                |
+| 52  | Part of the reduced tax   deduction (with deduction adjustment): pro rata coefficient            | koef_p20_nov           | Pro rata coefficient.   <br><br> User input parameter **Pro rata coefficient**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 52  | Part of the reduced tax   deduction (with deduction adjustment): deduction amount                | dp_uprav_kf            | Calculated automatically as,   Deduction amount = 46.odp_sum_kr * 52.koef_p20_nov                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 53  | Settlement of tax deduction -   New pro rata coefficient                                         | koef_p20_vypor         | Only for December   declaration.<br><br> New pro rata coefficient. User manually   inputs the amount in the parameter, **New pro rata coefficient**. <br>   You can calcuate this amount manually based on all January through December   declarations amounts: <br> <br> 1. Calculate **Value of taxable   sales** = rows (1 + 2 + 20 + 21 + 22 + 23 + 24 + 25 + 26 + 31).TaxBase.   <br>2. Calcuate **Value of exempt sales** = row50.TaxBase. <br>   3. Calculate **New pro rata coefficient** = **Value of taxable sales** -   **Value of taxable sales not included in calculation of coefficient** -   **Value of exempt sales not included in calculation of coefficient**. |
+| 53  | Settlement of tax deduction -   Change of deduction                                              | vypor_odp              | Only for December   declaration.<br><br> Adjustment of tax deduction. This line   reflects the correction of annual VAT deductions based on actual pro rata   coefficient vs. applied during the year estimated in the pro rata   coefficient. <br><br> he user manually inputs the amount in the   parameter, **Value of annual settlement of tax deduction** on the report   dialog. <br><br> You can calculate this amount manually based on   all declarations amounts that occurred January through December, as follows:   <br> Row 46.Tax deduction adjustment * (**New pro rata coefficient** -   **Pro rata coefficient**).                                              |
 
 
-### VI Tax calculation
+### <a name="taxcalculation"></a>Section 6: Tax calculation
 
-<table width="99%">
-<tbody>
-<tr>
-<td width="10%">
-<p><strong>Row</strong></p>
-</td>
-<td width="27%">
-<p><strong>Description</strong></p>
-</td>
-<td width="16%">
-<p><strong>Value</strong></p>
-</td>
-<td width="44%">
-<p><strong>Comment</strong></p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>60</p>
-</td>
-<td width="27%">
-<p>Tax deduction adjustment</p>
-</td>
-<td width="16%">
-<p>uprav_odp</p>
-</td>
-<td width="44%">
-<p><em><u>Only for December declaration</u></em></p>
-<p>&nbsp;</p>
-<p>Application specific parameter &ndash; lookup result: VATDeductionAdjustmentFA</p>
-<p>&nbsp;</p>
-<p><em>For all fixed assets from which the taxpayer claimed VAT deduction the taxpayer has to monitor how the fixed assets are used. If the entitlement to VAT deduction changes during the monitoring period, then the taxpayer is obliged to adjust the relevant VAT deduction in the VAT statement for December of the year when the entitlement to VAT deduction has changed.</em></p>
-<p>&nbsp;</p>
-<p>You should set up a special Sales tax code for tax deduction adjustment due to the change in fixed assets usage and manually post the tax transaction for 100% of tax amount when you need to adjust the VAT deduction in this line</p>
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>61</p>
-</td>
-<td width="27%">
-<p>Tax refund</p>
-</td>
-<td width="16%">
-<p>dan_vrac</p>
-</td>
-<td width="44%">
-<p>Application specific parameter &ndash; lookup result: TaxRefund</p>
-<p>&nbsp;</p>
-<p><em>Under some conditions, a taxpayer is obliged to pay back amount of VAT to a customer &ndash; an individual from third countries who paid Czech VAT from goods which the individual purchased in the Czech Republic and subsequently transported to third country. </em></p>
-<p><em>It means that the tax payer will declare the respective transaction on row 1 or 2 in the VAT statement and then they can claim a tax refund on row 61 once all conditions stipulated by the Czech VAT Act are met.</em></p>
-<p>&nbsp;</p>
-<p>You should set up a special Sales tax code for tax refund to the individuals and manually post the tax transaction for 100% of tax amount when you need to show Tax refund in this line</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p><strong>62</strong></p>
-</td>
-<td width="27%">
-<p><strong>Total tax payable</strong></p>
-</td>
-<td width="16%">
-<p>dan_zocelk</p>
-</td>
-<td width="44%">
-<p><strong>&nbsp;</strong></p>
-<p>Calculated automatically as <strong>Rows 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 - 61</strong></p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>63</p>
-</td>
-<td width="27%">
-<p>Total tax deduction</p>
-</td>
-<td width="16%">
-<p>odp_zocelk</p>
-</td>
-<td width="44%">
-<p><strong>&nbsp;</strong></p>
-<p>Calculated automatically as<strong> Row 46.Full tax deduction + Row 52.Deduction + Row 53.Change of deduction + Row 60</strong></p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>64</p>
-</td>
-<td width="27%">
-<p>Tax to be paid</p>
-</td>
-<td width="16%">
-<p>dano_da</p>
-</td>
-<td width="44%">
-<p>Calculated automatically as Row 62 &ndash; Row 63 if 62 &gt; 63</p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>65</p>
-</td>
-<td width="27%">
-<p>Excess deduction</p>
-</td>
-<td width="16%">
-<p>dano_no</p>
-</td>
-<td width="44%">
-<p>Calculated automatically as Row 63 &ndash; Row 62 if 63 &gt; 62</p>
-</td>
-</tr>
-<tr>
-<td width="10%">
-<p>66</p>
-</td>
-<td width="27%">
-<p>Adjustment for additional tax return</p>
-</td>
-<td width="16%">
-<p>dano</p>
-</td>
-<td width="44%">
-<p>Calculated automatically as Row 62 &ndash; Row 63</p>
-</td>
-</tr>
-</tbody>
-</table>
-
+| Row | Description                         | Value      | Comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-----|-------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 60  | Tax deduction adjustment            | uprav_odp  | *Only for December declaration*   <br><br> Application specific parameter lookup result:<br>   VATDeductionAdjustmentFA <br><br> For all fixed assets from which   the taxpayer claimed a VAT deduction, the taxpayer has to mintor how the   fixed assets are used. If the entitlement to the VAT deduction changes during   the monitoring period, the tax payer is obliged to adjust the relevant VAT   deduction in the VAT statement for December of the year when the entitlement   to VAT deduction has changed.    <br> Set up a special sales tax code for tax deduction   adjustment due to the change in fixed assets usage and manually post the tax   transaction for 100 percent of the tax amount when you need to adjust the VAT   deduction in this line.                  |
+| 61  | Tax refunt                          | dan_vrac   | Application specific parameter   lookup result: <br> TaxRefund <br><br> Under some   conditions, a taxpayer is obliged to refund a partial amount of VAT paid by a   customer. For example, an individual from a third country, who paid Czech VAT   from goods that they purchased in the Czech Republic and then transported to   a third country. <br> This means that the taxpayer will declare the   respective transaction on row 1 or 2 in the VAT statement and then they can   claim a tax refund on row 61 after all of the conditions stipulated by the   Czech VAT Act are met. <br> Set up a special sales tax code for tax   refund to the individuals and manually post the tax transaction for 100% of   the tax amount when you need to show the tax refund on this line.  |
+| 62  | Total tax payable                   | dan_zocelk | Calculated automatically as rows   1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 - 61                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 63  | Total tax deduction                 | odp_zocelk | Calculated automatically as   **row 46.Full tax deduction** + **row 52. Deduction** + **row 53.Change of   deduction** + **Ros 60**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 64  | Tax to be paid                      | dano_da    | Calculated automatically as row   62 - row 63 if 62 is > 63                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 65  | Excess deduction                    | dano_no    | Calculated automatically as row   63 - row 62 if 63 is > 62                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 66  | Adjustment for aditional tax return | dano       | Calculated automatically as row   62 - row 63                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 ## VAT control statement
 
@@ -1336,7 +498,7 @@ This section contains the following information about each document:
 | First and last name of the customer if there is no VAT number | jm_prijm_obch   |
 | Date of birth of the customer if there is no VAT number       | d_narozeni      |
 
-## Section A4. Taxable sales with amount above 10,000 including VAT and all VAT adjustments made for customer bad debts
+## <a name="sectionA4"></a>Section A4. Taxable sales with amount above 10,000 including VAT and all VAT adjustments made for customer bad debts
 
 Sections A4 and A5 show documents which generate amounts in the Rows 1, 2 of the
 VAT declaration.
@@ -1507,7 +669,7 @@ in the application and report fields in the Electronic reporting configuration.
 <p>Lookup result</p>
 </td>
 <td>
-<p>Select report field for which you make setup. See details on report fields assignment to VAT declaration rows in the section <a href="#_VAT_declaration">VAT declaration overview</a></p>
+<p>Select report field for which you make setup. See details on report fields assignment to VAT declaration rows in the section [VAT declaration overview](#overview)</p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -1550,13 +712,8 @@ you can create the following line in the parameters:
 |-------------------|---------------------|---------------|
 | Other             | \*Not blank\*       | \*Not blank\* |
 
-> Notes: This line must be created as the last line in the parameters.
-> If you create this line, you should make sure that you set up parameters for all
-> sales tax codes in the system. If some sales tax codes are missing in the setup,
-> tax transactions with them will not be collected to VAT declaration.
-> If you don’t create this line, you’ll get error message during the report run in
-> case of there is tax transaction with the sales tax code that is not configured
-> in the Application specific parameters.
+> [!NOTE]
+> This line must be created as the last line in the parameters. If you create this line, you should make sure that you set up parameters for all sales tax codes in the system. If some sales tax codes are missing in the setup, tax transactions with them will not be collected to VAT declaration. If you don’t create this line, you’ll get error message during the report run in case of there is tax transaction with the sales tax code that is not configured in the Application specific parameters.
 
 5.  Change **State** of Application specific parameters to **Completed**.
 
@@ -1587,11 +744,13 @@ supply codes in the Electronic reporting configuration.
 
 4.  On the **Conditions** FastTab, associate **Reverse charge item groups** and subject codes:
 
+
 | **Column**                          | **Description**                  |
 |-------------------------------------|----------------------------------|
 | Lookup result                       | Select subject code. The full list of subject codes is available above in [Section A1 Sales of goods and services under domestic reverse charge](#section-a1-sales-of-goods-and-services-under-domestic-reverse-charge)                  |
 | Reverse charge code (Code)          | Select the Reverse charge item group that you associate with the selected Subject code. Note that if for certain transactions you post incoming reverse charge transaction without reference to the product, you must associate item sales tax group to the **Subject** code and in this case you should select \*Blank\* in this field. You must always have one line in the ** theApplication specific parameter** with **Lookup result** = **Other** and **Reverse charge code (Code)** = **\*Blank\*** to avoid generating an exception error when taking transactions without reverse charge. This must be the last line in the setup. |
 | Item sales tax group (TaxItemGroup) | Select the item sales tax group that's associated with the selected **Subject** code. You must select specific item sales tax group if you do not have an appropriate reverse charge item group that will post the incoming reverse charge transaction without reference to the product (for example from the vendor invoice journal). Otherwise for all lines you can select **\*Not blank\*** in this column.                                                                                                                                                                                                          |
+
 To prevent the format to fail with exception due to missed setup, you should set up the following lines as the last lines:
 
 | **Lookup result** | **Reverse charge code (Code)** | **Item sales tax group (TaxItemGroup)** | **Comment**                    |
@@ -1622,7 +781,7 @@ configuration.
 
 | **Column**      | **Description**                                                                                                                                                                                                                                                                                                    |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result   | Select fulfillment code. The full list of codes is available above in [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#section-a4.-taxable-sales-with-amount-above-10000-including-vat-and-all-vat-adjustments-made-for-customer-bad-debts). |
+| Lookup result   | Select fulfillment code. The full list of codes is available above in [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#sectiona4). |
 | Tax code (Code) | Select sales tax code                                                                                                                                                                                                                                                                                              |
 
 If you have only transactions with normal filling, you can create the following lines of the setting:
