@@ -38,17 +38,17 @@ This topic covers delivery options modules and how to configure them in Dynamics
 
 ## Overview
 
-Delivery options modules let customers select a mode of delivery for their order, and require a shipping address to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden. 
+Delivery options modules let customers select a mode of delivery such as shipping or pickup for their online order. A shipping address is required to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden. 
 
-To configure modes of delivery, see [Online channel setup](channel-setup-online.md) and [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery). 
+For information on configuring modes of delivery, see [Online channel setup](channel-setup-online.md) and [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery). 
 
 Each delivery mode can have an associated charge. For more information about configuring charges for an online store, see [Omni-channel Advanced auto-charges](omni-auto-charges.md).
 
-The Fabrikam theme supports a mixed mode of delivery where some items can be selected for shipping and some can be pickup. For a mixed mode of delivery to work, its required to configure **Header Charges with proration** see [Prorate header chanrges to match sales lines](pro-rate-charges-matching-lines.md) for more details on this configuration.  In this mode Shipping charges will be pro-rated for all the items that are selected for Shipping mode of delivery.
+The Fabrikam theme supports a mixed mode of delivery where some items can be selected for shipping and some for pickup. In this mode, shipping charges will be pro-rated for all items that are selected for the shipping mode of delivery. For a mixed mode of delivery to work, you must configure the **Header charges with proration** in Commerce headquarters, for more information on this configuration see [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md).  
 
-In Commerece version 10.0.13, the module has been updated to also support **Header charges without proration** and **Shipping as a Line charge**. If proration is not turned on, the expectation is that the ecommerce workflow does not allow mixed mode of delivery for the items in the cart.  This feature is behind a feature flag and requires requires **Enable consistent delivery mode handling in channel** flag in HQ to be turned on. When the flag is turned on, shipping charge will be applied at the header level or the line level depending on how its configured in HQ. 
+In Commerce version 10.0.13, the delivery options module has been updated to support **Header charges without proration** and **Shipping as a line charge** features. If proration is not turned on, the expectation is that the e-Commerce workflow does not allow a mixed mode of delivery (some items shipped, some to be picked up) for the items in the cart. The **Header charges without proration** feature requires that the **Enable consistent delivery mode handling in channel** flag in Commerce headquarters is be turned on. When the flag is turned on, shipping charges will be applied at the header or line level, depending the configuration in Commerce headquarters. 
 
-If a shipping charges apply to line items, it can be displayed on the cart line for each item. This requires **Show shipping charges on line item** to be set to True on both **Cart** and **Checkout** modules. See [Cart module](add-cart-module.md) and [Checkout module](add-checkout-module.md) for more details on this configuration.
+If shipping charges apply to line items, they can be displayed on the cart line for each item. This requires the **Show shipping charges on line item** property to be enabled on both **Cart** and **Checkout** modules. See [Cart module](add-cart-module.md) and [Checkout module](add-checkout-module.md) for more details on this configuration.
 
 The following image shows an example of a delivery options module on a checkout page.
 
