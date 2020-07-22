@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Set up index rates
+# Set up index rates (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
