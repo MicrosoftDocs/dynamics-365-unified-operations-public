@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration (The Czech Republic)
-description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic, including instructions for setting up and generating the VAT declaration and VAT control statement. 
+description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
 manager: AnnBe
 ms.date: 07/21/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and VAT control statement.
+This topic provides information about the value-added tax (VAT) declaration for the Czech Republic, including instructions for setting up and generating the VAT declaration and VAT control statement.
 
 ## <a name="overview"></a>VAT declaration overview
 
@@ -42,12 +42,12 @@ This topic provides information about the value-added tax (VAT) declaration for 
 
 This section describes the sections and rows of the VAT declaration, calculations, and relations between the VAT declaration and VAT control statement.
 
-To generate the VAT declaration and VAT control statement automatically, first create enough sales tax codes to keep separate VAT accounting for each box on the VAT declaration. You must also associate **Sales tax codes** with the **Lookup result** of the **Lookup for the VAT declaration boxes** in the **Application specific parameters** of the VAT declaration format and VAT control statement format. You can find more details about how to set up **Application specific parameters** in the [Set up parameters for declarations fields](#set-up-parameters-for-declarations-fields) section later in this topic.
+To generate the VAT declaration and VAT control statement automatically, first create enough sales tax codes to keep separate VAT accounting for each box on the VAT declaration. You must also associate **Sales tax codes** with the **Lookup result** of the **Lookup for the VAT declaration boxes** in the **Application specific parameters** of the VAT declaration format and VAT control statement format. You can find more details about how to set up application specific parameters in the [Set up parameters for declarations fields](#set-up-parameters-for-declarations-fields) section later in this topic.
 
-The **Application specific parameters – lookup result** column in the following table shows you which **Lookup result** is preconfigured for a specific VAT declaration row in the VAT declaration format and VAT control statement format. Use this information to correctly associate sales tax codes with the lookup result, and subsequently with the VAT declaration row.
+The **Lookup result** column in the table in Section 1, shows you which **Lookup result** is preconfigured for a specific VAT declaration row in the VAT declaration format and VAT control statement format. Use this information to correctly associate sales tax codes with the lookup result, and subsequently with the VAT declaration row.
 
 > [!NOTE]
-> If you configure Sales tax codes for posting incoming reverse charge VAT with **Use tax**, you should associate your Sales tax codes with the lookup result that contains UseTax in the name, for example for EU purchases, configure **EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or **EUPurchaseGoodsVATPayableStandard** for sales tax codes with Reverse charge. See [Reverse charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge) topic for additional details for configuring Reverse charge VAT.
+> If you configure Sales tax codes for posting incoming reverse charge VAT with **Use tax**, you should associate your sales tax codes with the lookup result that contains **UseTax** in the name. For example, for EU purchases, configure **EUPurchaseGoodsUseTaxStandard** for **Use tax** sales tax codes, or **EUPurchaseGoodsVATPayableStandard** for sales tax codes with a reverse charge. For more information about configuring reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
 VAT declaration format in the Czech Republic contains the following sections:
 
@@ -60,7 +60,7 @@ VAT declaration format in the Czech Republic contains the following sections:
 
 ### <a name="taxabletransactions"></a>Section 1: Taxable transactions
 
-| Row | Control statement section | Description                                                              | Rate     | Tax base (xml element) | Tax payable (xml element) | Report field <br> (lookup result)                                                                                                                                    |
+| Row | Control statement section | Description                                                              | Rate     | Tax base (xml element) | Tax payable (xml element) | Lookup result                                                                                                                                    |
 |-----|---------------------------|--------------------------------------------------------------------------|----------|------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | A4/A5                     | Domestic sales of goods and   services                                   | Standard | obrat23                | dan23                     | DomesticSalesVATPayableStandard - VATAdjustmentCustomerBadDebtsStandard                                                                                                                     |
 | 2   | A4/A5                     | Domestic sales of goods and   services                                   | Reduced  | obrat5                 | dan5                      | DomesticSalesVATPayableReduced - VATAdjustmentCustomerBadDebtsReduced <br><br> DomesticSalesVATPayableReduced2 - VATAdjustmentCustomerBadDebtsReduced2                                       |
@@ -384,12 +384,11 @@ VAT declaration format in the Czech Republic contains the following sections:
 
 ## VAT control statement
 
-This section provides an overview of the sections of VAT control statement.
+The following sections provide an overview of the sections in the VAT control statement.
 
-## Section A1 Sales of goods and services under domestic reverse charge
+### Section A1: Sale of goods and services under domestic reverse charges
 
-Section A1 shows documents which generate amount in the Row 25 of the VAT
-declaration.
+Section A1 shows the documents that generate the amount in row 25 of the VAT declaration.
 
 This section contains the following information about each document:
 
@@ -401,39 +400,31 @@ This section contains the following information about each document:
 | Subject code                                   | kod_pred_pl     |
 | Tax base                                       | zakl_dane1      |
 
-For the automatic determination of the **Subject code** for the document,
-set up enough **Reverse charge item groups** and associate them with Items
-(products), Items group, or procurement categories. You can find more details
-about this step in the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) sections later in this topic. You
-can find more details about how to configure reverse charges fully in the topic
-[Reverse charge VAT](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge). If you are going to post incoming reverse charges in the vendor invoice journals that do not have association to products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
+To automatically determine the **Subject code** for the document, set up enough **Reverse charge item groups** and associate them with Items (products), Items groups, or procurement categories. For more information, see the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) section later in this topic. You
+can also find more information about how to configure reverse charges in the topic [Reverse charge VAT](emea-reverse-charge.md). If you are going to post incoming reverse charges in the vendor invoice journals that are not associated with products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
 
-You also need to associate pairs **Reverse charge item groups** – **Tax code**
-with the **Lookup result** of the **\$SubjectCodeLookup** in the **Application
-specific parameters** of the **VAT control statement (CZ)** format. You can find
-more details about how to set up **Application specific parameters** in the
-[Set up parameters for subject codes](#set-up-parameters-for-subject-codes) section in this topic.
+You also need to associate the pairs **Reverse charge item groups** – **Tax code** with the **Lookup result** of the **\$SubjectCodeLookup** in the **Application
+specific parameters** of the **VAT control statement (CZ)** format. For more information about setupe application specific parameters, see the [Set up parameters for subject codes](#set-up-parameters-for-subject-codes) section in this topic.
 
 The following subject codes are available in the **VAT control statement XML (CZ)** format:
 
 | **Code**                 | **Description**                                                               |
 |--------------------------|-------------------------------------------------------------------------------|
 | GoldDelivery             | 1. Gold delivery (§92b)                                                       |
-| TangibleAssetDelivery    | 3. Delivery of tangible asset (§92d)                                          |
+| TangibleAssetDelivery    | 3. Delivery of tangible assets (§92d)                                          |
 | ConstructionInstallation | 4. Construction or installation (§92e)                                        |
-| GoodsAnnex5              | 5. Goods listed in Annex 5 of VAT Act (§92c)                                  |
+| GoodsAnnex5              | 5. Goods listed in Annex 5 of the VAT Act (§92c)                                  |
 | AllowancesGasEmission    | 11. Transfer of allowances and greenhouse gas emissions                       |
 | CerealsIndustrialCrops   | 12. Cereals and industrial crops                                              |
-| Metals                   | 13. Metals including precious metals                                          |
+| Metals                   | 13. Metals, including precious metals                                          |
 | MobilePhones             | 14. Mobile phones                                                             |
 | Integrated circuits      | 15. Integrated circuits and printed circuit boards                            |
 | PortableDevices          | 16. Portable devices for automatic data processing (e.g. tablets or notebook) |
 | VideoGameConsole         | 17. Video game consoles                                                       |
 
-### Section B1 Purchase of goods and services under domestic reverse charge (\$92)
+### Section B1: Purchase of goods and services under the domestic reverse charge (\$92)
 
-Section B1 contains document which generate amounts in Rows 10, 11 of VAT
-declaration.
+Section B1 contains the information included on the document that is used to generate the amounts in rows 10 and 11 of the VAT declaration.
 
 This section contains the following information about each document:
 
@@ -450,13 +441,11 @@ This section contains the following information about each document:
 | Tax base at second reduced rate                     | zakl_dane3      |
 | Tax amount at second reduced rate                   | dan3            |
 
-For automatic determination of the **Subject code** for the document, you should
-make the same settings as described above for the Section A1.
+To automatically determine the **Subject code** for the document, you should use the same settings as described above for the Section A1.
 
-### Section A2 Purchases with reverse charge (excluding domestic reverse charge) with obligation to pay VAT
+### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
-Section A2 shows documents which generate amount in the Rows 3, 4, 5, 6, 9
-(Intracommunity purchase of goods and services), and in the Rows 11, 12 (Other
+Section A2 shows documents which amounts are generated in rows 3, 4, 5, 6, and 9 (intra-community purchase of goods and services), and in rows 11 and 12 (O\other
 purchases with the obligation to pay VAT) of the VAT declaration.
 
 This section contains the following information about each document:
@@ -474,16 +463,12 @@ This section contains the following information about each document:
 | Tax base at second reduced rate                                        | zakl_dane3      |
 | Tax amount at second reduced rate                                      | dan3            |
 
-### Section A3 Transactions with the special scheme of gold sales
+### Section A3: Transactions with the special scheme of gold sales
 
-Section A3 shows documents which generate amount in the Row 25 of the VAT
-declaration together with other sales with right to deduct incoming VAT.
+Section A3 shows the documents that generate the amount in the row 25 of the VAT declaration and other sales that have the right to deduct incoming VAT.
 
-To determine such transactions automatically, set up a special Sales
-tax code for such transactions and associate this sales tax code with the
-**Lookup result OtherSalesWithRightToDeductGoldInvestment** of the
-**\$ReportFieldLookup** in the **Application specific parameters** of the VAT
-declaration format and VAT control statement format.
+To determine the transactions automatically, set up a special sales tax code for these transactions and associate this sales tax code with the
+**Lookup result OtherSalesWithRightToDeductGoldInvestment** of the **\$ReportFieldLookup** in the **Application specific parameters** of the VAT declaration format and VAT control statement format.
 
 This section contains the following information about each document:
 
@@ -492,28 +477,19 @@ This section contains the following information about each document:
 | Tax document number                                           | c_evid_dd       |
 | VAT number of the customer (numeric part only) if it exists   | vatid_odb       |
 | Country that allocated the VAT number to the customer         | k_stat          |
-| Date (which is the date of VAT register)                      | dup             |
+| Date (VAT register)                                           | dup             |
 | The value of the sales                                        | osv_plneni      |
 | Place of residence of the customer if there is no VAT number  | m_pobytu_sidlo  |
 | First and last name of the customer if there is no VAT number | jm_prijm_obch   |
 | Date of birth of the customer if there is no VAT number       | d_narozeni      |
 
-## <a name="sectionA4"></a>Section A4. Taxable sales with amount above 10,000 including VAT and all VAT adjustments made for customer bad debts
+## <a name="sectionA4"></a>Section A4: Taxable sales with amounts above 10,000 including VAT and all VAT adjustments made for customer bad debts
 
-Sections A4 and A5 show documents which generate amounts in the Rows 1, 2 of the
-VAT declaration.
+Sections A4 and A5 show documents that generate amounts in rows 1 and 2 of the VAT declaration.
 
-Also note that information about VAT amount adjustments for customer bad debts is also
-shown in the Row 33 of the VAT declaration.
+Information about VAT amount adjustments for customer bad debts is also shown in row 33 of the VAT declaration.
 
-To automatically determine amount of VAT adjustment for bad debts, you should
-create a special Tax code and post writing off the customer bad debts using this
-Tax code. For more information this procedure, see 
-[Write off customer bad debts using Write off function](#write-off-customer-bad-debts-using-write-off-function) in this topic. Also associate this sales tax code with the **Lookup results
-VATAdjustmentCustomerBadDebtsStandard, VATAdjustmentCustomerBadDebtsReduced,
-VATAdjustmentCustomerBadDebtsReduced2** of the **\$ReportFieldLookup** in the
-**Application specific parameters** of the VAT declaration format and VAT
-control statement format.
+To automatically determine the amount of VAT adjustment for bad debts, create a special tax code and post the write off the customer bad debts using this tax code. For more information, see the [Write off customer bad debts using Write off function](#write-off-customer-bad-debts-using-write-off-function) section in this topic. Also, associate this sales tax code with the lookup results, **VATAdjustmentCustomerBadDebtsStandard**, **VATAdjustmentCustomerBadDebtsReduced**, and **VATAdjustmentCustomerBadDebtsReduced2** of the **\$ReportFieldLookup** in the **Application specific parameters** of the VAT declaration format and VAT control statement format.
 
 This section contains the following information about each document:
 
@@ -521,24 +497,20 @@ This section contains the following information about each document:
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | Tax document number                                                                                                                                | c_evid_dd       |
 | VAT number of the customer                                                                                                                         | dic_odb         |
-| Date (which is the date of VAT register)                                                                                                           | Dppd            |
-| Fulfillment mode code: - “0” for normal filling - “1” for special scheme for travel service - “2” for special regime for second-hand goods         | kod_rezim_pl    |
+| Date (VAT register)                                                                                                           | Dppd            |
+| Fulfillment mode code: <br>**0** for normal filling<br>**1** for special scheme for travel service <br>**2** for special regime for second-hand goods         | kod_rezim_pl    |
 | Tax base at standard rate                                                                                                                          | zakl_dane1      |
 | Tax amount at standard rate                                                                                                                        | dan1            |
 | Tax base at first reduced rate                                                                                                                     | zakl_dane2      |
 | Tax amount at first reduced rate                                                                                                                   | dan2            |
 | Tax base at second reduced rate                                                                                                                    | zakl_dane3      |
 | Tax amount at second reduced rate                                                                                                                  | dan3            |
-| Flag of VAT adjustment for bad debts: -“N” if the document is not VAT adjustment of bad debts - “P” if the document is VAT adjustment of bad debts | zdph_44         |
+| Flag of VAT adjustment for bad debts:<br>**N** if the document is not VAT adjustment of bad debts <br>**P** if the document is VAT adjustment of bad debts | zdph_44         |
 
-To determine Fulfillment mode code automatically, associate sales tax
-codes with the **Lookup result** of the **\$FulfillmentModeCodeLookup** in the
-**Application specific parameters** of the VAT control statement (XML) format.
-For more information on how to set up **Application specific
-parameters** see [How to post VAT adjustment for bad debts](#set-up-parameters-for-fulfillment-mode-codes) in this topic.
+To determine the fulfillment mode code automatically, associate sales tax codes with the **Lookup result** of the **\$FulfillmentModeCodeLookup** in the
+**Application specific parameters** of the VAT control statement (XML) format. For more information on how to set up **Application specific parameters** see the section, [How to post VAT adjustment for bad debts](#set-up-parameters-for-fulfillment-mode-codes) in this topic.
 
-The following Fulfillment mode codes are available in the format VAT control
-statement XML:
+The following fulfillment mode codes are available in the format VAT control statement XML:
 
 | **Code**                        | **Description**                                     |
 |---------------------------------|-----------------------------------------------------|
@@ -546,18 +518,14 @@ statement XML:
 | SpecialSchemeForTravelService   | 1. § 89 ZDPH (special scheme for travel service)    |
 | SpecialRegimeForSecondHandGoods | 2. § 90 ZDPH (special regime for second-hand goods) |
 
-### Section B2 Taxable purchases with amount above 10 000 including VAT and all VAT adjustments made for vendor bad debts
+### Section B2: Taxable purchases with an amount above 10,000 including VAT and all VAT adjustments made for vendor bad debts
 
-Sections B2 and B3 show documents which generate amounts in the Rows 40,41 of
-the VAT declaration.
+Sections B2 and B3 show documents that generate amounts in rows 40 and 41 of the VAT declaration.
 
-Also note that information about VAT amount adjustments for vendor bad debts is also
-shown in the Row 34 of the VAT declaration.
+Information about VAT amount adjustments for vendor bad debts is also shown in row 34 of the VAT declaration.
 
-To automatically determine amount of VAT adjustment for bad debts, 
-create a special Tax code and post the writeoff of vendor bad debts using this
-tax code. For more information about this procedure see the [Write off vendor bad debts manually](#write-off-vendor-bad-debts-manually) section in this topic. Also associate this sales tax code with the **Lookup results VATAdjustmentVendorBadDebtsStandard, VATAdjustmentVendorBadDebtsReduced, VATAdjustmentVendorBadDebtsReduced2** of the
-**\$ReportFieldLookup** in the **Application specific parameters** of the VAT declaration format, and the VAT control statement format.
+To automatically determine amount of VAT adjustment for bad debts, create a special tax code and post the writeoff of vendor bad debts using this tax code. For more information about this procedure, see the section [Write off vendor bad debts manually](#write-off-vendor-bad-debts-manually) in this topic. Associate this sales tax code with the lookup results, **VATAdjustmentVendorBadDebtsStandard**, **VATAdjustmentVendorBadDebtsReduced**, and **VATAdjustmentVendorBadDebtsReduced2** of the
+**\$ReportFieldLookup** in the **Application specific parameters** of the VAT declaration format and the VAT control statement format.
 
 Section B2 contains the following information about each document:
 
@@ -565,25 +533,23 @@ Section B2 contains the following information about each document:
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | Tax document number                                                                                                                                 | c_evid_dd       |
 | VAT number of the vendor                                                                                                                            | dic_dod         |
-| Date (which is the date of incoming vendor invoice)                                                                                                 | Dppd            |
+| Date (date of the incoming vendor invoice)                                                                                                 | Dppd            |
 | Tax base at standard rate                                                                                                                           | zakl_dane1      |
 | Tax amount at standard rate                                                                                                                         | dan1            |
 | Tax base at first reduced rate                                                                                                                      | zakl_dane2      |
 | Tax amount at first reduced rate                                                                                                                    | dan2            |
 | Tax base at second reduced rate                                                                                                                     | zakl_dane3      |
 | Tax amount at second reduced rate                                                                                                                   | dan3            |
-| Flag of VAT adjustment for bad debts: - “N” if the document is not VAT adjustment of bad debts - “P” if the document is VAT adjustment of bad debts | zdph_44         |
+| Flag of VAT adjustment for bad debts: <br>**N** if the document is not the VAT adjustment of bad debts <br>**P** if the document is VAT adjustment of bad debts | zdph_44         |
 | Flag of the proportional right of deduction: Yes/No                                                                                                 | pomer           |
 
-Out of the box, flag of the proportional right of deduction is set to No.
+Out-of-the-box, the flag of the proportional right of deduction is set to **No**.
 
-### Section A5 Taxable sales with amount below 10 000 incl. VAT and when there is no obligation to issue tax document
+### Section A5: Taxable sales with an amount below 10 000 including VAT, and when there is no obligation to issue a tax document
 
-Sections A4 and A5 show documents which generate amounts in the Rows 1,2 of the
-VAT declaration.
+Sections A4 and A5 show documents that generate amounts in rows 1 and 2 of the VAT declaration.
 
-Section A5 contains 1 line with the following information for all documents
-included in this section:
+Section A5 contains one line with the following information for all documents included in this section:
 
 | **Field**                         | **XML element** |
 |-----------------------------------|-----------------|
@@ -594,13 +560,11 @@ included in this section:
 | Tax base at second reduced rate   | zakl_dane3      |
 | Tax amount at second reduced rate | dan3            |
 
-### Section B3 Taxable purchases with amount below 10 000 incl. VAT
+### Section B3: Taxable purchases with an amount below 10,000 including VAT
 
-Sections B2 and B3 show documents which generate amounts in the Rows
-40,41 of the VAT declaration.
+Sections B2 and B3 show documents that generate amounts in rows 40 and 41 of the VAT declaration.
 
-Section B3 contains one line with the following information for all documents
-included in this section.
+Section B3 contains one line with the following information for all documents included in this section.
 
 | **Field**                         | **XML element** |
 |-----------------------------------|-----------------|
@@ -613,29 +577,14 @@ included in this section.
 
 ## Set up the VAT declaration
 
-To start to work with the VAT declaration, you should make the following
-settings:
-
-## Download electronic reporting formats
-
-In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2),
-in the Shared asset library, download the latest versions of the Electronic
-reporting (ER) configurations for the VAT declaration format:
+To begin working with the VAT declaration, you should download electronic reporting formats. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2),
+in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format:
 
 -   **Tax declaration model**
-
 -   **Tax declaration model mapping**
-
--   **VAT declaration XML (CZ)** – this is configuration in XML format DPHDP3
-
--   **VAT declaration Excel (CZ)** – this configuration could be used to preview
-    VAT declaration amounts in Excel. Please take into account that Excel
-    template in is English language only. If you need to have the report printed
-    in another language, you need have a small customization: to translate the
-    Excel template to another language and attach it to your derived
-    configuration.
-
--   **VAT control statement (CZ)** – this is configuration in XML format DPHKH1
+-   **VAT declaration XML (CZ)**: This is configured in XML format DPHDP3.
+-   **VAT declaration Excel (CZ)**: This configuration could be used to preview VAT declaration amounts in Microsoft Excel. Take into account that the Excel template in is English only. If you need to have the report printed in another language, you must have a small customization to translate the Excel template to another language and attach it to your derived configuration.
+-   **VAT control statement (CZ)**: This is configured in XML format DPHKH1.
 
 >   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
@@ -643,16 +592,15 @@ reporting (ER) configurations for the VAT declaration format:
 
 ### Set up parameters for declarations fields
 
-To automatically generate VAT declaration, you should associate sales tax codes
-in the application and report fields in the Electronic reporting configuration.
+To automatically generate VAT declaration, you should associate sales tax codes in the application and report fields in the Electronic reporting configuration.
 
-1.  Go to **Workspaces > Electronic reporting**. Select **Reporting configurations**.
+1.  Go to **Workspaces** > **Electronic reporting** and select **Reporting configurations**.
 
-2.  Select configuration **VAT declaration XML (CZ)**. Click **Configurations > Application specific parameters setup**.
+2.  Select the configuration, **VAT declaration XML (CZ)** and then select **Configurations** > **Application specific parameters setup**.
 
-3.  On the **Lookups** FastTab, select lookup **\$ReportFieldLookup**.
+3.  On the **Lookups** FastTab, select the lookup, **\$ReportFieldLookup**.
 
-4.  On the **Conditions** FastTab, associate Sales tax codes and report fields:
+4.  On the **Conditions** FastTab, associate the sales tax codes and report fields:
 
 <table>
 <tbody>
