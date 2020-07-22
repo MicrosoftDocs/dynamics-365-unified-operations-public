@@ -1456,8 +1456,14 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Import or export customized security configuration using Data management
+          href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
+        - name: Extensible data security policies
+          href: sysadmin/extensible-data-security-policies.md
+        - name: Create a security policy
+          href: sysadmin/create-simple-security-policy.md
       - name: Process automation
         href: sysadmin/process-automation.md
       - name: Batch processing
@@ -1668,7 +1674,7 @@
           href: user-interface/check-box-tree-controls.md
         - name: Filtering options
           href: user-interface/filtering.md
-        - name: PowerApps Host control
+        - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
       - name: Window management
         items:
