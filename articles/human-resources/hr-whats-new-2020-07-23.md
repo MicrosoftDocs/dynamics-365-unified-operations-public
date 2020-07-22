@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources (June 11, 2020)
+title: What's new or changed in Dynamics 365 Human Resources (July 23, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,32 +25,36 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2020-06-11
+ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources (June 11, 2020)
+# What's new or changed in Dynamics 365 Human Resources (July 23, 2020)
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3316. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3416. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-## Streamlined employee form sometimes causes child form close (X) buttons to stop working (442369)
+## Deleting Financial Dimensions on a Position doesn't work as expected (445476)
 
-When the new **Worker** form was enabled, the close (**X**) button occasionally didn't work on child forms. This problem was intermittent. You could close the form after leaving and coming back to it. For example, you could select a menu item on the left, and navigate back to the **Worker** form, and then close it. This week's release fixes this problem. 
+Removing dimensions from a position now removes those same positions from Common Data Service.
 
-## The Worker personal contact person entity doesn't export personal contacts with a parent relationship type
+## Positions not in hierarchy show inactive positions (397257)
 
-With this release, the **Worker personal contact person** entity exports all relationship types.
+Positions that are inactive (have an expired duration), no longer display in the position hierarchy as **Positions not in hierarchy**. 
 
-## The HcmPositionWorkerAssignmentV2Entity should be part of the Ceridian payroll integration package by default (448506)
+## Validation occurring between LeaveEnrollmentEntity and HcmWorkerEntity on Data Management Framework (DMF) import causes slow data loads (442324)
 
-With this change, the **HcmPositionWorkerAssignmentV2Entity** is included in the Ceridian payroll integration package.
+Changes in this release increase the performance of **LeaveEnrollmentEntity**.
+
+## Unable to personalize in Organization administration (447490)
+
+With this change, you can now personalize the links in **Organization administration**.
 
 ## In preview
 
-## Database logging
+## Mandatory fields 
 
-The database logging feature allows you to determine which tables and fields to monitor. It also lets you determine the events that should trigger change tracking. You use database logging capabilities to see these changes over time. For more information, see [Configure and manage database logging](hr-admin-database-logging.md).
+You can now make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**.
 
 ## Human Resources application in Teams
 
@@ -69,9 +73,9 @@ Some organizations provide a benefit that allows employees to buy or sell their 
 
 ## Leave accrual for a single company or single plan
 
-Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity into the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leaves accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
 
-## Add attachments to time off requests
+## Add attachments to time-off requests
 
 The ability to add attachments to approved leave requests is critical in the current COVID-19 environment. Employees can now add these attachments. They also have more insight into how updates are made to leave requests. For more information, see [Add an attachment to an existing request](hr-employee-self-service-request-time-off.md#add-an-attachment-to-an-existing-request).
 
@@ -93,13 +97,13 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## New platform capabilities 
+## Checklist entities included in Common Data Service
 
-You'll be able to make fields mandatory by using personalization. This feature will require you to enable **Saved views**.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
 
-## Configure the name of Employee self-service
+## Platform changes
 
-A new option will be available in Human Resources parameters to update the name of the Employee self service workspace to Self service. 
+Platform update 10.0.12 (36)
 
 ## See also
 
