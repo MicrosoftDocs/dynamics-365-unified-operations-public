@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up lease posting accounts
-description: This topic walks through steps for setting up posting accounts that will be used for asset leases.  
+description: This topic lists the posting accounts that will be needed for Asset leasing transactions, and walks through the steps for defining posting accounts on the Lease posting parameters page.  
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/22/2020
@@ -36,13 +36,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through steps for setting up posting accounts that will be used for asset leases. 
+This topic lists the posting accounts that will be needed for Asset leasing transactions, and walks through the steps for defining posting accounts on the **Lease posting parameters** page. 
 
-Follow the steps below to set up the lease parameters used in the asset leasing module. The user may have to create new accounts in the chart of accounts to comply with ASC 842 standards and IFRS 16 standards.
+You might find that you need to create new accounts in your chart of accounts to comply with ASC 842 and IFRS 16 standards. These are not Fixed asset accounts. Under ASC 842 the right-of-use (ROU) asset is recorded for both Finance and Operating leases, which are separate from Fixed assets. (However, you can still maintain an ROU asset using Fixed assets.) For information about creating account structures, see [Create account structures](../general-ledger/tasks/create-account-structures.md). For information about creating a main account, see [Create a main account](../general-ledger/tasks/create-main-account.md). 
 
-To learn how to create a general ledger account, please refer to the Microsoft Dynamics training manual. Note, these are not fixed asset accounts, under ASC 842 the right-of-use (ROU) asset is recorded for both Finance leases separately from Fixed Assets. However, the user can manage the ROU asset using the fixed asset module, which we will discuss later.
-
-Below is an example of necessary accounts that may need to be created if they do not already exist. The operating lease relationships are still used under IFRS 16 for low-value and short-term leases.
+The following table shows examples of accounts that you'll need to create for leased asset transactions, if they haven't been created previously. The operating lease relationships are still used under IFRS 16 for low-value and short-term leases.
 
 
 |     Ledger account number    	|     Account type     	|     Account name                                             	|
@@ -74,19 +72,23 @@ Below is an example of necessary accounts that may need to be created if they do
 |     800601                   	|     Expense          	|     Building Lease Interest Expense                          	|
 |     801201                   	|     Balance Sheet    	|     Gain & Loss - Lease Modification                         	|
 
-1. To assign accounts to the lease books and groups that have been created, open the Lease posting parameters page (**Asset leasing > Setup > Lease posting parameters**).
+
+## Configure posting accounts
+
+Complete the following steps below to configure parameters for asset leasing.
+
+1. To assign accounts to the lease books and groups that have been created, open the **Lease posting parameters** page (**Asset leasing > Setup > Lease posting parameters**).
 
 2. Click **Accounts** in the side bar. Open the **Lease accounts** drop-down. Click the **Lease asset** from the **Posting types** for the lease drop-down. The preceding table shows the accounts related to operating and finance leases.
 
->[!Note]
-> This requires for both Operating and Finance leases to have their own separate accounts. After the "Lease Asset" selection is complete, move to lease liability and the other necessary posting types.
+> [!Note]
+> This requires that you set up separate accounts for both Operating and Finance leases. After the "Lease asset" selection is complete, continue to enter information in for the **Lease liability** and other required posting types. Companies that adhere to the IFRS 16 accounting framework won't need to set up the operating account relationships, as all leases under IFRS 16 are classified as Finance leases.
 
-Companies with the IFRS 16 accounting framework will not need to set up the operating account relationships as all leases under IFRS 16 are classified as Finance leases.
+3. To select the main account for a specific lease group, click the drop-down menu under **Account Code** and select **Group**, then select the drop-down of the** Account/Group number** and select the lease group to be assigned to the main account.
 
-3. To select the main account for a specific lease group, click the drop-down menu under Account Code and select "Group". Next, select the drop-down of the Account/Group number and select the lease group to be assigned to the main accounts.
-4. Open the Executory costs subtab to assign account codes to the various executory costs that have been set up in the system. Select an expense from the Expense type dropdown and assign the finance and operating accounts to be used for each book.
+4. Open the **Executory costs** subtab to assign account codes to the various executory costs that have been set up in the system. Select an expense from the **Expense type** dropdown and assign the finance and operating accounts to be used for each book.
 
 > [!Note]
-> The finance or operating account chosen will be debited when the expense's scheduled invoice is posted.
+> The Finance or Operating account chosen will be debited when the invoice for the scheduled expense is posted.
 
 
