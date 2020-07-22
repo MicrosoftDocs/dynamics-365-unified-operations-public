@@ -39,11 +39,11 @@ This topic describes connectors and how to configure and enable them in Dynamics
 
 ## Overview
 
-Connectors allow you to connect your Dynamics 365 Commerce site to external third parties to accomplish certain tasks including capturing analytics, logging, and experimentation. Some third-party service providers require a paid license for the service before they can be used, please check with your service provider for more information.
+Connectors allow you to connect your Dynamics 365 Commerce site to external third parties to accomplish certain tasks including capturing analytics, logging, and experimentation. Some third-party service providers require a paid license for the service before they can be used, check with your service provider for more information.
 
 As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. In future versions you will be able configure and enable other types of connectors. 
 
-## Configure and enable a connector
+## Configure and enable connectors
 
 Connectors can be added to your Commerce site by adding them as a dependency in your package.json file, or by implementing them directly in your configuration package code under the **\src\connectors** directory. 
 
@@ -77,20 +77,24 @@ The following example shows the contents of a **connector.settings.json** file.
 
 - **experimentation** – This object contains all the necessary information to start and enable your experimentation connector.
 - **name** – The name of the experimentation connector to use. The name of the connector can be found in the connector’s definition file. The type of the connector must be a **experimentationConnector**.
-- **config** – The config section allows any configuration object the connector needs to initialize and start communicating with the third party service. Check the connector’s configSchema in its definition file or README file to understand what information is required.
+- **config** – The config section allows any configuration object the connector needs to initialize and start communicating with the third party service. Check the connector’s **configSchema** in its definition file or README file to understand what information is required.
 - **cacheConfig** – You can provide the timings to use when caching certain experimentation related entities. **ttlInSeconds** refers the amount of time an entity should live in the cache before being considered stale and the **ttrInSeconds** refers to when an entity should be refreshed. The connector’s README file should also have a list of recommended cache timings.
 - **experimentation** - Controls the cache timings for getting the list of available experiments configured in your third party provider during getExperiments(). Default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds. 
 - **experimentationDataFile** - Controls the cache timings for how often the config that is passed down to the client during getConfigForClientSideInit(). The default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds.  
 
 ## Experimentation connector
 
-An experimentation connector allows you to connect your application to an external experimentation provider. Adding this type of connector to your application and configuring it will allow you to create and run experiments in the site builder experience as well as track their outcomes to provide the best experience for your customers.
+An experimentation connector allows you to connect your application to an external experimentation service provider. Adding this type of connector to your application, configuring it, and enabling it will allow you to create and run experiments in Commerce site builder as well as track outcomes to provide the best experience for your customers.
 
-An experimentation connector is composed of three parts: A connector definition file (JSON), a provider file. and a listener file.
+An experimentation connector is composed of three parts: 
+
+- A connector definition file (JSON)
+- A provider file
+- A listener file
 
 ### Connector definition file
 
-A connector definition file is used to register and provide configuration metadata data to your application. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.connector.json**. The metadata includes the type of connector, the connector name, a description of the connector, and the configuration schema.
+A connector definition file is used to register and provide configuration metadata data to your application. The metadata includes the type of connector, the connector name, a description of the connector, and the configuration schema. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.connector.json**.
 
 The following example shows the contents of a connector definition file.
 
@@ -113,10 +117,10 @@ The following example shows the contents of a connector definition file.
 ```
 #### Connector definition file schema
 
-- **$type** – This refers to the type of connector. In this case, because this is an example of experimentation connector’s definition file, the type is “experimentationConnector"
-- **name** – This is the name of the connector and must be unique across all connectors
-- **description** – The description of the connector
-- **configSchema** – A config schema allows you to provide a JSON schema that will validate the configuration given to you at application startup so that your connector can be initialized properly. For example, let's say when you initialize your connector, you need the projectId to make an API call necessary to talk to the third party experimentation service. You can specify the JSON above to ensure that the configuration provided matches your connectors requirements.
+- **$type** – This refers to the type of connector. In this case, because this is an example of experimentation connector’s definition file, the type is “experimentationConnector".
+- **name** – The name of the connector. Must be unique across all connectors.
+- **description** – The description of the connector.
+- **configSchema** – A config schema allows you to provide a JSON schema that will validate the configuration given to you at application startup so that your connector can be initialized properly. For example, let's say that when you initialize your connector, you need the **projectId** to make an API call necessary to talk to the third party experimentation service. You can specify this value the JSON above to ensure that the configuration provided matches your connector's requirements.
 
 ### Provider file
 
@@ -186,7 +190,7 @@ export interface IExperimentationProvider {
 }
 ```
 
-Additionally, here are the types that some of the functions use for their return types and arguments.
+In addition, here are types that some of the functions use for their return types and arguments.
 
 ```typescript
 /**
@@ -228,7 +232,7 @@ export interface IVariants {
 
 ### Listener file
 
-An experimentation listener file is necessary to track user conversion events. The listener file implements a logger interface that hooks into the SDK's event logging framework and will subscribe to certain user actions. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.listener.ts**.
+An experimentation listener file is necessary to track user conversion events. The listener file implements a logger interface that hooks into the SDK's event logging framework to subscribe to certain user actions. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.listener.ts**.
 
 The listener file should implement the following interface.
 
