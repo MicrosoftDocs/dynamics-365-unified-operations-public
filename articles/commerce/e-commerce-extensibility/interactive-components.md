@@ -75,6 +75,10 @@ To support an interactive canvas experience, the module uses the **Msdyn365.Text
 
 ### Text component
 
+Once implemented, the text component allows site authors to edit text directly inline on the site builder preview canvas.
+
+#### Text component syntax
+
 ```typescript
 <Msdyn365.Text />
 ```
@@ -110,6 +114,10 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Rich Text component
 
+Once implemented, the Rich Text component allows site authors to edit Rich Text directly inline on the site builder preview canvas.
+
+#### Rich Text component syntax
+
 ```typescript
 <Msdyn365.RichTextComponent />
 ```
@@ -139,6 +147,10 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 
 ### Links component
+
+Once implemented, the links component allows site authors to edit links on the site builder preview canvas.
+
+#### Links component syntax
 
 ```typescript
 <Msdyn365.Links />
@@ -185,6 +197,10 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Link component
 
+Once implemented, the link component allows site authors to edit links on the site builder preview canvas.
+
+#### Link component syntax
+
 ```typescript
 <Msdyn365.Link />
 ```
@@ -230,6 +246,10 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Image component
 
+Once implemented, the image component allows site authors to edit images directly on the site builder preview canvas.
+
+#### Image component syntax
+
 ```typescript
 <Msdyn365.Image />
 ```
@@ -268,6 +288,10 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Video component
 
+Once implemented, the video component allows site authors to edit videos directly on the site builder preview canvas.
+
+#### Video component syntax
+
 ```typescript
 <MsDyn365.Video></MsDyn365.Video>
 ```
@@ -296,6 +320,8 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 ## Generic editable higher-order component (HOC)
 
 Generic editable field components wrap any custom components and enable interactions in the context of site builder.
+
+#### Generic editable higher-order component syntax
 
 ```typescript
 <EditableField />
