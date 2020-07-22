@@ -39,7 +39,7 @@ This topic covers interactive components that allow site authors to edit text, r
 
 Dynamics 365 Commerce site builder allows a page or fragment author to edit fields for text, rich text, link, image, and video directly on the WYSIWYG preview canvas using interactive components. Interactive components ship with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for Rich Text, **Msdyn365.Links** for links, the **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. Once implemented, Commerce site builder will then allow inline editing for text and bring up picker windows for links, images, and videos.
 
-For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher order component (HOC). Follow the guidelines below to support interactive components inside a custom module.
+For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines below to support interactive components inside a custom module.
 
 ## How interactive components work
 
@@ -176,7 +176,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 | ariaLabel            | Aria label for accessibility                                | String              |
 | className            | CSS class name                                              | String              |
 | key                  | React key                                                   | String              |
-| role                 | Role of the anchor tag(button, etc)                         | String              |
+| role                 | Role of the anchor tag(button, etc.)                         | String              |
 | additionalProperties | Additional properties dictionary to be added to the element | [x: string]: string |
 | linkTag              | HTML tag to render the link                                 | String              |
 | innerClassName       | CS class name for inner component in the anchor tag        | String              |
@@ -317,11 +317,11 @@ Generic editable field components wrap any custom components and enable interact
 | fieldProps     | Field properties                                           | [x: string]: string     |
 | type           | Type of the field (text/image/video/link)                  | FieldType               |
 | requestContext | Request context object                                     | IRequestContext         |
-| onChange       | Event handler for onchange event                           | Function                |
-| onMouseOver    | Event handler for onmouseover event                        | Function                |
-| onMouseOut     | Event handler for onmouseout event                         | Function                |
-| onFocus        | Event handler for onfocus event                            | Function                |
-| onBlur         | Event handler for onblur event                             | Function                |
+| onChange       | Event handler for onChange event                           | Function                |
+| onMouseOver    | Event handler for onMouseover event                        | Function                |
+| onMouseOut     | Event handler for onMouseout event                         | Function                |
+| onFocus        | Event handler for onFocus event                            | Function                |
+| onBlur         | Event handler for onBlur event                             | Function                |
 | placeHolderText| Text to show when text is cleared in the field             | String                  |
 | disabled       | Flag to enable or disable editing of the file in site builder | String                  |
 
