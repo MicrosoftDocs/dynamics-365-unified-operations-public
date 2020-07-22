@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Interactive components
-description: The site builder tool allows a page or fragment author to edit fields (Text, RichText, Link, Image and Video) directly on the preview canvas in a WYSIWYG manner using interactive components.
+title: Interactive components overview
+description: This topic covers interactive components that allow site authors to edit text, rich text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
 author: samjarawan
 manager: annbe
 ms.date: 07/31/2020
@@ -33,7 +33,11 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Dynamics 365 Commerce site builder allows a page or fragment author to edit fields for text, rich text, link, image, and video directly on the preview canvas in a WYSIWYG manner using interactive components. Interactive components ship with the Commerce online softwrae development kit (SDK) and include **Msdyn365.Text** for text fields, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, the **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. Commerce site builder will allow inline editing for text and bring up a picker windows for links, images, and videos.
+This topic covers interactive components that allow site authors to edit text, rich text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
+
+## Overview
+
+Dynamics 365 Commerce site builder allows a page or fragment author to edit fields for text, rich text, link, image, and video directly on the WYSIWYG preview canvas using interactive components. Interactive components ship with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for Rich Text, **Msdyn365.Links** for links, the **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. Once implemented, Commerce site builder will then allow inline editing for text and bring up picker windows for links, images, and videos.
 
 For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher order component (HOC). Follow the guidelines below to support interactive components inside a custom module.
 
@@ -278,14 +282,14 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 #### IEditProps
 
-| prop           | description                    | type            |
+| Prop           | Description                    | Type            |
 | -------------- | ------------------------------ | --------------- |
 | key            | Path to the property in config | Object          |
 | requestContext | Request context object         | IRequestContext |
 
 ## Generic editable higher-order component (HOC)
 
-Generic editable field component to wrap any custom components and enable interaction in the context of the site builder.
+Generic editable field components wrap any custom components and enable interactions in the context of site builder.
 
 ```typescript
 <EditableField />
@@ -323,4 +327,12 @@ Generic editable field component to wrap any custom components and enable intera
 
 ## Additional resources
 
-[TBD]()
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
