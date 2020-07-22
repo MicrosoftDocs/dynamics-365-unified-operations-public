@@ -39,15 +39,13 @@ This topic describes connectors and how to configure and enable them in Dynamics
 
 ## Overview
 
-Connectors allow you to connect your Dynamics 365 Commerce site to external third parties to accomplish certain tasks including capturing analytics, logging, and experimentation.
+Connectors allow you to connect your Dynamics 365 Commerce site to external third parties to accomplish certain tasks including capturing analytics, logging, and experimentation. Some third-party service providers require a paid license for the service before they can be used, please check with your service provider for more information.
 
-Connectors can be added to your Commerce site by adding them as a dependency in your package.json file, or by implementing them directly in your configuration package code under the **\src\connectors** directory. 
-
-As of Commerce version 10.0.13, Dynamics 365 Commerce supports only one type of connector, the experimentation connector. Some service providers require a paid license for the service before they can be used, please check with the service provider for more information.
+As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. In future versions you will be able configure and enable other types of connectors. 
 
 ## Configure and enable a connector
 
-As of Commerce version 10.0.13, the experimentation connector is the only supported type of connector. In future versions you will be able configure and enable other types of connectors. 
+Connectors can be added to your Commerce site by adding them as a dependency in your package.json file, or by implementing them directly in your configuration package code under the **\src\connectors** directory. 
 
 ### Connector settings file
 
