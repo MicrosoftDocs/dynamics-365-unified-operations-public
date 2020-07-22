@@ -145,7 +145,7 @@ For each custom field that's exposed on Common Data Service entities, do the fol
 
 The process of unselecting, applying changes, reselecting, and reapplying changes prompts the schema to update in Common Data Service to include the custom fields.
 
-For more information about custom fields, see [Create and work with custom fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+For more information about custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
 ## See also
 
