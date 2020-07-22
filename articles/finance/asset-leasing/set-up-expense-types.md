@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Set up expense types
+# Set up expense types (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
