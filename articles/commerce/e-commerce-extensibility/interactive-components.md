@@ -102,7 +102,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 #### ITextEditProps
 
-| Prop           | description                                  | type            |
+| Prop           | description                                  | Type            |
 | -------------- | -------------------------------------------- | --------------- |
 | onEdit         | Function handler to handle text change event | Function        |
 | requestContext | Request context object                       | IRequestContext |
@@ -176,7 +176,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 | ariaLabel            | Aria label for accessibility                                | String              |
 | className            | CSS class name                                              | String              |
 | key                  | React key                                                   | String              |
-| role                 | Role of the anchor tag(button, etc.)                         | String              |
+| role                 | Role of the anchor tag (button, etc.)                         | String              |
 | additionalProperties | Additional properties dictionary to be added to the element | [x: string]: string |
 | linkTag              | HTML tag to render the link                                 | String              |
 | innerClassName       | CS class name for inner component in the anchor tag        | String              |
