@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Set up lease books
+# Set up lease books (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
