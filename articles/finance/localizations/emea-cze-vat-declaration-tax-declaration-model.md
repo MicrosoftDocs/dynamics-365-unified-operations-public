@@ -428,7 +428,7 @@ To automatically classify the transaction to the fulfillment mode code in the VA
 
 | **Column**      | **Description**                                                                                                                                                                                                                                                                                                    |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result   | Select a fulfillment code. The full list of codes is available in the section, [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#sectiona4). |
+| Lookup result   | Select a fulfillment code. The full list of codes is available in the section, [Section A4. Taxable sales with amount above 10 000 including VAT and all VAT adjustments made for customer bad debts](#sectionA4). |
 | Tax code (Code) | Select the sales tax code.                                                                                                                                                                                                                                                                                              |
 
 If you have transactions with only normal filling, you can create the following lines of the setting:
