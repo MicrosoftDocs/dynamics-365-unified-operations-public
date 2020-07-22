@@ -846,6 +846,8 @@
           href: accounts-payable/accounting-distributions.md
         - name: Process allocations
           href: general-ledger/process-allocations.md
+        - name: Allocation terms
+          href: general-ledger/main-account-allocation-terms.md
         - name: Financial dimensions
           href: general-ledger/financial-dimensions.md
         - name: Consolidation account groups and additional consolidation accounts
