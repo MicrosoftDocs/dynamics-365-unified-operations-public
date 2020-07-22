@@ -2,10 +2,10 @@
 # required metadata
 
 title: Shipping address module
-description: This topic describes how to add a Shipping address  module to a checkout page and set the required properties.
+description: This topic describes covers the shipping address module and how to configure it in Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -25,43 +25,41 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
+ms.dyn365.ops.version: Release 10.0.13
 
 ---
 
 # Shipping address module
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic describes how to add a Shipping address module to a checkout page and set the required properties.
+This topic describes covers the shipping address module and how to configure it in Dynamics 365 Commerce.
 
 ## Overview
 
-This module lets a customer add or select the shipping address for an order during the checkout flow. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. 
+This module allows a customer to add or select the shipping address for an order during the checkout flow. If the customer is signed in, any addresses that were previously saved for that customer are displayed and the customer can then select from those addresses. The customer can also add a new address. The shipping address module is used for all items in an order that require shipping. 
 
-Shipping address formats can be defined in HQ for each country or region, and the country/region-specific rules are enforced by this module. 
+Shipping address formats can be defined in Commerce headquarters for each country or region, and the country- or region-specific rules are then enforced by the shipping address module. 
 
-When entering Shipping address via checkout flow, the user is provided an option to save the address as a primary address (checkbox). This option is only shown when a user is signed-in.
+When entering a shipping address during the checkout flow, the customer is provided with an option to save the address as a primary address. This option is only shown when a customer is signed in.
 
-Although this module doesn't provide address validation, address validation can be implemented through customization.
+Although this module doesn't provide address validation, address validation can be implemented with customization.
 
+The following image shows an example of adding a new shipping address on a checkout page.
 
-   The following image shows an example of adding a new shipping address on a checkout page.
-
-   ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
+![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
 ## Module properties
 
-| Property name  | Values | Description |
+| Property name  | Value | Description |
 |----------------|--------|-------------|
-| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-| Show address type | True or False | This setting shows an Address type field, E.g. Home, Business, Other etc. Its an optional configuration, if not specified the address will be automatically saved as Type=Other|
-
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Displays an optional heading for the shipping address module. |
+| Show address type | True, False | This optional setting shows an address type such as Home, Business, etc. If not specified, the address will be automatically saved as Type=Other.|
 
 ## Add a Shipping address module to a checkout page and set the required properties
 
-A Shipping address module can only be added to a Checkout container. See [Checkout module](add-checkout-module.md) for details on configuring the module to a page.
+A shipping address module can only be added to a checkout module. For more information on configuring the shipping address module and adding it to a checkout page, see [Checkout module](add-checkout-module.md].
 
 ## Additional resources
 
