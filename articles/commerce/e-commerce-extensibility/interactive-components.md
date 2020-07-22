@@ -271,7 +271,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 ```typescript
 <MsDyn365.Video></MsDyn365.Video>
 ```
-### Video component example
+#### Video component example
 
 ```typescript
 <MsDyn365.Video>
