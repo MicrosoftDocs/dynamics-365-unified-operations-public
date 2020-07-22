@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources (July 23, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/23/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,25 +29,26 @@ ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (July 23, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3416. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (July 23, 2020)
 
-## Deleting Financial Dimensions on a Position not working as expected.  - (445476)
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3416. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-With this change, removing dimensions from a position will now remove those same positions from the CDS.
+## Deleting Financial Dimensions on a Position doesn't work as expected (445476)
 
-## Positions not in hierarchy show inactive positions  - (397257)
+Removing dimensions from a position now removes those same positions from Common Data Service.
 
-Positions that are inactive (have an expired duration), will no longer be displayed in the position hierarchy as "positions not in hierarchy". 
+## Positions not in hierarchy show inactive positions (397257)
 
-## Validation occurring between LeaveEnrollmentEntity and HcmWorkerEntity on DMF import is causing slow data loads - (442324)
+Positions that are inactive (have an expired duration), no longer display in the position hierarchy as **Positions not in hierarchy**. 
 
-Changes have been made to increase the performance of the LeaveEnrollmentEntity.
+## Validation occurring between LeaveEnrollmentEntity and HcmWorkerEntity on Data Management Framework (DMF) import causes slow data loads (442324)
 
-## Unable to Personalize in Organization administration  - (447490)
+Changes in this release increase the performance of **LeaveEnrollmentEntity**.
 
-With this change you are now able to personalize the links in Organizational administration.
+## Unable to personalize in Organization administration (447490)
+
+With this change, you can now personalize the links in **Organization administration**.
 
 ## In preview
 
@@ -72,7 +73,7 @@ Some organizations provide a benefit that allows employees to buy or sell their 
 
 ## Leave accrual for a single company or single plan
 
-Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leaves accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
 
 ## Add attachments to time-off requests
 
