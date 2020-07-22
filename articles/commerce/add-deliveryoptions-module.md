@@ -58,7 +58,7 @@ The following image shows an example of a delivery options module on a checkout 
 
 | Property | Value | Description |
 |----------------|--------|-------------|
-| Heading | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Displays a heading for the cart such as "Shopping bag" or "Items in your cart". |
+| Heading | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Displays an optional heading for the delivery options module. |
 | Custom CSS class name | Text | This property specifies a custom CSS class name to be used to render this module, if applicable. |
 | Filter Delivery Mode Option | Do not filter, Non-shipping modes | This property specifies if the delivery options module should filter out all non-shipping delivery modes. |
 
