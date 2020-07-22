@@ -148,7 +148,7 @@ Once implemented, the Rich Text component allows site authors to edit Rich Text 
 
 ### Links component
 
-Once implemented, the links component allows site authors to edit links on the site builder preview canvas.
+Once implemented, the links component allows site authors to edit an array of links on the site builder preview canvas.
 
 #### Links component syntax
 
@@ -197,7 +197,7 @@ Once implemented, the links component allows site authors to edit links on the s
 
 ### Link component
 
-Once implemented, the link component allows site authors to edit links on the site builder preview canvas.
+Once implemented, the link component allows site authors to edit single links on the site builder preview canvas.
 
 #### Link component syntax
 
