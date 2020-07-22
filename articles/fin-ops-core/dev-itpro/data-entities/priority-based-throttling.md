@@ -63,8 +63,8 @@ After you have registered your service in Azure AD and in your Finance and Opera
 
 1. In Finance and Operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
 2. Select **New**. 
-3. In the **Authentication type** field, select **User** or **AAD application** based on your integration scenario.
-4. If **AAD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
+3. In the **Authentication type** field, select **User** or **Azure AD application** based on your integration scenario.
+4. If **Azure AD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
 5. If **User type** is selected, in the **User ID** field select an appropriate service account user ID.
 6. Assign the appropriate priority and then select **Save**.
 
