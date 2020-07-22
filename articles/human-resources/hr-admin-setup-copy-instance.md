@@ -5,7 +5,7 @@ title: Copy an instance
 description: You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -43,6 +43,8 @@ To copy an instance, you need to ensure the following:
 - You must be an Administrator in the target environment so you can sign into it after copying the instance.
 
 - When you copy the Human Resources database, you don't copy the elements (apps or data) that are contained in a Microsoft PowerApps environment. For information about how to copy elements in a PowerApps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment). The PowerApps environment you want to overwrite must be a sandbox environment. You must be a global tenant admin to change a PowerApps production environment to a sandbox environment. For more information about changing a PowerApps environment, see [Switch an instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- If you copy an instance into your Sandbox environment and want to integrate your Sandbox environment with Common Data Service, you must re-apply custom fields to Common Data Service entities. See [Apply custom fields to Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service)
 
 ## Effects of copying a Human Resources database
 
@@ -116,3 +118,30 @@ In addition, the following statuses change when you copy an instance:
 All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you won't be able to sign in to the target sandbox environment after the copy has completed.
 
 All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
+
+## Apply custom fields to Common Data Service
+
+If you copy an instance into your Sandbox environment and want to integrate your Sandbox environment with Common Data Service, you must re-apply custom fields to Common Data Service entities.
+
+For each custom field that's exposed on Common Data Service entities, perform the following steps:
+
+1. Go to the custom field and select **Edit**.
+
+2. Unselect the **Enabled** field for each cdm_* entity that the custom field is enabled on.
+
+3. Select **Apply Changes**.
+
+4. Select **Edit** again, and then select the **Enabled** field for each cdm_* entity that the custom field is enabled on.
+
+5. Select **Apply Changes** again.
+
+The process of unselecting, applying changes, re-selecting, and re-applying changes prompts the schema to update in Common Data Service to include the custom fields.
+
+For more information about custom fields, see [Create and work with custom fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## See also
+
+[Provision Human Resources](hr-admin-setup-provision.md)</br>
+[Remove an instance](hr-admin-setup-remove-instance.md)</br>
+[Update process](hr-admin-setup-update-process.md)
+
