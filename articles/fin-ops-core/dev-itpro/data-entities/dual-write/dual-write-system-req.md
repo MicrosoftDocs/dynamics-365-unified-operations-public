@@ -46,7 +46,7 @@ Dual-write has these limitations:
 
 + You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it.
 + Dual-write setup is not supported on trial instances of Finance and Operations apps. 
-+ Dual-write does not support cross-company data.
++ Dual-write does not support cross-company data sharing.
 
 ## One Version
 
