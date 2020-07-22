@@ -43,9 +43,25 @@ Across all of these core business functions, new employees, new equipment, new p
 
 You can provide instructions in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/).
 
-With [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations. Below are listed a few domains where customer across industries see the biggest value for instructions.
+With [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) you empower your employees with hands-on learning. You can define standardize processes with step-by-step instructions that guide your employees to the tools and parts they need and how to use them in real work situations.
 
-The Dynamics 365 SCM SDK can be used to implement other means of instructions. Please find information on [the data model for instructions here](instruction-guides-datamodel.md).
+You can attach guides to various aspects of the production control including:
+
+- Resources
+- Resource groups
+- Released products
+- BOMs and BOM versions
+- Formulas and formula versions
+- Routes and route versions
+- Route operation relations
+
+> [!NOTE]
+> You can find additional options to attach Guides in the **Asset Management** domain.
+>[Find more information here.](../asset-management/asset-management-guides-integration.md)
+
+When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see associated guides on the job card. When the worker chooses a specific guide a QR renders code on the screen and Guides in HoloLens will then launch the instructions they need to do their work.
+
+Below list a few scenarios  where customer across industries see the biggest value for instructions using guides in manufacturing and related scenarios.
 
 ### Assembly
 
@@ -108,7 +124,21 @@ Before you can attach guides to Asset management work orders, you must complete 
   - [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
 
 #### Configure how guides appear on the shop floor
- 
+
+Navigate to Mixed Reality / Dynamics 365 Guides / Configure Guides integration. You should see the field Environment URL filled in. This is the address of your Dynamics 365 Guides environment in CDS without the web protocol,like 'https://'. The value is used to compose addresses for your guides and will be encoded into the QR codes.
+
+In the  field QR code size allows you can customize the size in which the QR code will be rendered. We recommend to size the QR code to fill as much of the screen estate of your display. Typically 15 is a good value. 
+> [!TIP]
+> Too Large QR codes sizes for your display will take a bit longer to render and will be scaled to display size upon display and therefore do not provide a benefit.
+>
+> With too small QR code sizes may decrease HoloLense may not read the code properly in all environment situations. 
+
+You can use the field QR code error correction level to influence the granularity of the QR code and increase the reliability of the QR code. But the size of the QR code and the error correction level need to be in a good relation.
+
+> [!TIP]
+> We recommend to test the settings for your relevant devices that will be used to display QR codes for HoloLens users and choose a settings that provide sufficient readability in your shop floor environment.  
+
+:::image type="content" source="media/instruction-guides-configure-integration.png" alt-text="Configure Guide integration for manufacturing":::
 
 ### Use Dynamics 365 Guides
 
@@ -118,7 +148,6 @@ Use the global Guides management form to see the list of all available Guides in
 Navigate to Mixed reality / Guides / All Guides. In the top list you will see all Guides and you can filter the list of guides. In the list at the bottom you see all assignments and can manage those.
 
 :::image type="content" source="media/instruction-guides-allguides.png" alt-text="Manage Guides":::
-
 
 You can also assign Guides to the following objects directly to prescribe the instruction that will be automatically attached to the respective production jobs and available on the shop floor.
 
