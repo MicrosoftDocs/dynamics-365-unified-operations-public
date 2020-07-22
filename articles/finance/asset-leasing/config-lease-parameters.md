@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Configure lease parameters
+# Configure lease parameters (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
