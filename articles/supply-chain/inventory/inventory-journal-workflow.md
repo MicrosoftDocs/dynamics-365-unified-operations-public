@@ -38,9 +38,11 @@ This topic describes how to set up and use inventory journal approval workflows 
 
 ## Create your inventory journal approval workflows
 
-To set up this feature, you must create a workflow for each of the inventory journal types you want to control. Because different inventory journal types may have different approval hierarchies and workflow steps, you can configure individual workflows for each inventory journal type.
+To set up this feature, you must create a workflow for each of the inventory journal types you want to control. Because different inventory journal types can have different approval hierarchies and workflow steps, you can configure individual workflows for each inventory journal type.
 
-Workflows support version control, and each has a workflow ID and an active version. You can choose to activate each new workflow version immediately upon creation or keep it inactive for now. If you need several different workflows for the same journal type, then create multiple workflows for that journal type, and then assign each of these to a different journal name that uses that type.
+Workflows support version control, and each has a workflow ID and an active version. You can choose to activate each new workflow version immediately upon creation or keep it inactive. If you need different workflows for the same journal type, then create multiple workflows for that journal type, and then assign each of these to a different journal name that uses that type.
+
+To create your inventory journal approval workflows:
 
 1. Go to **Inventory Management \> Setup\> Inventory management workflows**.
 1. Select **New** on the Action Pane.
@@ -55,21 +57,21 @@ Workflows support version control, and each has a workflow ID and an active vers
 
     ![The Create workflow dialog box](media/journal-workflow-create-workflow.png "The Create workflow dialog box")
 
-1. The workflow editor app launches on your machine. (You may be asked to approve this action.) Use it to design your workflow as needed. For details about how to work with the workflow editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
-1. Upon saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as inactivate.
+1. The workflow editor app launches on your machine. (You may be asked to approve this action.) Use it to design your workflow as needed. For details about how to use the workflow editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+1. After saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as inactivate.
 
 > [!NOTE]
-> Workflows provide version control, which means that you can view a list of versions you have created and choose which one is active. To view the list of available versions and choose which to activate, select a workflow listed on the **Inventory management workflows** page and then, from the Action Pane, open the **Workflow** tab and select **Versions**. Only one version can be active at a time for each workflow ID.
+> Workflows provide version control, which means that you can view a list of versions you have created and choose which one is active. To view the list of available versions and choose which to activate, select a workflow listed on the **Inventory management workflows** page. On the Action Pane, open the **Workflow** tab, and select **Versions**. Only one version can be active at a time for each workflow ID.
 
 ## Assign approval workflows to inventory journal names
 
-The next step is to assign the right inventory journal workflow to each inventory journal name. For each inventory journal type, you can set up multiple inventory journal names.
+The next step is to assign a inventory journal workflow to each inventory journal name. For each inventory journal type, you can set up multiple inventory journal names.
 
 To associate an inventory journal workflow with an inventory journal name:
 
 1. Go to **Inventory management \> Setup \> Journal names \> Inventory**.
 1. Select a journal name from the list column to open its settings page.
-1. On the **General** fast tab, set **Approval workflow** to **Yes**. If you are prompted to approve the action, select **Yes**.
+1. On the **General** FastTab, set **Approval workflow** to **Yes**. If you are prompted to approve the action, select **Yes**.
 
     ![Assign a workflow to a journal name](media/journal-workflow-journal-name.png "Assign a workflow to a journal name")
 
@@ -77,7 +79,7 @@ To associate an inventory journal workflow with an inventory journal name:
 
 ## Create an inventory journal and send it for approval
 
-After you associated an inventory journal name with its matching inventory journal approval workflow, you'll be able to create new inventory journals that use that name and then send them for approval using that workflow. You won't be able post the inventory journal until it has been approved by the approver(s) configured in the workflow.
+After you associate an inventory journal name with its matching inventory journal approval workflow, you'll be able to create new inventory journals that use that name and then send these journals for approval using that workflow. You won't be able post the inventory journal until it has been approved by the approvers configured in the workflow.
 
 1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
 1. Select **New** to create a new journal of your selected type.
@@ -87,9 +89,9 @@ After you associated an inventory journal name with its matching inventory journ
 
     ![Submit a journal for approval](media/journal-workflow-inventory-journal.png "Submit a journal for approval")
 
-To recall an approval request, open the relevant journal, select the **Workflow** button and then select **Recall** , which will reset the workflow.
+To recall an approval request, open the relevant journal, select the **Workflow** button and then select **Recall**. This will reset the workflow.
 
-When your journal has been approved, you'll be able to post it. To post the journal, select **Post** from the Action Pane. If the **Post** button isn't active, that means that the journal hasn't been approved yet.
+When your journal has been approved, you'll be able to post it. To post the journal, select **Post** from the Action Pane. If the **Post** button isn't active the journal hasn't been approved yet.
 
 ## Respond to an inventory journal approval request
 
@@ -113,4 +115,4 @@ To review the workflow history for a journal:
 
 1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
 1. Open the relevant journal.
-1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Then select **Workflow history**. More information: [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select **Workflow history**. For more information, see [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
