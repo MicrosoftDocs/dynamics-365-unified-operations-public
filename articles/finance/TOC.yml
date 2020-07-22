@@ -804,6 +804,10 @@
           href: asset-leasing/set-up-lease-journal-names.md
         - name: Set up lease posting accounts
           href: asset-leasing/set-up-lease-posting-accts.md
+        - name: Assign number sequences
+          href: asset-leasing/leasing-number-sequences.md
+        - name: Assign user roles
+          href: asset-leasing/lease-user-roles.md          
     - name: General ledger
       items:
       - name: General ledger overview
