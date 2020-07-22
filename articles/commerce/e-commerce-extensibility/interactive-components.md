@@ -46,7 +46,7 @@ For the best authoring experience, modules developers should use interactive com
 An interactive component hooks an event handler to the component that will do the work of setting the specific configuration field required.
 
 The following example shows how a text configuration field uses an interactive component to allow inline editing of the text. A **productTitle** configuration value is specified in the module definition file configuration section:
-```
+```json
 ...
     "config": {
         "productTitle": {
@@ -266,6 +266,11 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 | requestContext | Request context object               | IRequestContext |
 
 ### Video component
+
+```typescript
+<MsDyn365.Video></MsDyn365.Video>
+```
+### Video component example
 
 ```typescript
 <MsDyn365.Video>
