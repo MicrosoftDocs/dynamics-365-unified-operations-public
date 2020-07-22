@@ -2,7 +2,7 @@
 # required metadata
 
 title: Interactive components overview
-description: This topic covers interactive components that allow site authors to edit text, rich text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
+description: This topic covers interactive components that allow site authors to edit text, Rich Text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
 author: samjarawan
 manager: annbe
 ms.date: 07/31/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic covers interactive components that allow site authors to edit text, rich text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
+This topic covers interactive components that allow site authors to edit text, Rich Text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
 
 ## Overview
 
