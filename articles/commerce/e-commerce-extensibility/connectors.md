@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Connectors
+title: Connectors overview
 description: 
 author: samjarawan
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,9 +28,10 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Connectors
+# Connectors overview
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Connectors allow you to connect your e-Commerce site to external third parties to accomplish certain scenarios including capturing analytics, logging, experimentation, etc.
 
@@ -38,8 +39,7 @@ Connectors can be added to your e-Commerce site by adding them as a dependency i
 
 Currently Dynamics 365 Commerce supports only one type of connector, Experimentation Connector. Some service providers require a paid license to the service before they can be used, please refer to the service provider documentation for more information.
 
-
-## Configuring and Enabling a Connector
+## Configure and enable a connector
 
 Connectors are configured and enabled in the **connector.settings.json** file which can be found under src\settings\ folder. If no such file exists, one can manually be created. In this file you can select the experimentation connector you would like to use as well as setup any configuration needed for the connector. 
 
@@ -74,15 +74,15 @@ Here is an example of connector.settings.json file
   *	**experimentation** controls the cache timings for getting the list of available experiments configured in your third party provider during getExperiments() . Default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds. 
   * **experimentationDataFile** controls the cache timings for how often the config that is passed down to the client during getConfigForClientSideInit().Default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds.  
 
-## Experimentation Connector
+## Experimentation connector
 
 An experimentation connector allows you to connect your application to an external experimentation provider. Adding this type of connector to your application and configuring it will allow you to create and run experiments in the site builder experience as well as track their outcomes to provide the best experience for your customers.
 
-### Anatomy of an Experimentation Connector
+### Anatomy of an experimentation connector
 
 An experimentation connector is composed of three parts. A JSON definition file, a provider file and a listener file.
 
-#### Connector Definition File
+#### Connector definition file
 
 A connector definition file CONNECTOR_NAME.connector.json is used to register and provide configuration metadata data to your application. The metadata includes the type of connector, the connector’s name, a description of the connector and the configuration schema.
 Here is an example of a connector definition file
@@ -105,12 +105,13 @@ Here is an example of a connector definition file
 }
 ```
 ##### Schema
+
 "* **$type** – This refers to the type of connector. In this case, because this is an example of experimentation connector’s definition file, the type is “experimentationConnector"
 *	**name** – This is the name of the connector and must be unique across all connectors
 * **description** – The description of the connector
 * **configSchema** – A config schema allows you to provide a JSON schema that will validate the configuration given to you at application startup so that your connector can be initialized properly. For example, let's say when you initialize your connector, you need the projectId to make an API call necessary to talk to the third party experimentation service. You can specify the JSON above to ensure that the configuration provided matches your connectors requirements.
 
-#### Provider File
+#### Provider file
 
 An experimentation provider CONNECTOR_NAME.provider.ts file is necessary to initialize your connector and allow it to talk to Site Builder to present a list of available experiments configured in your third party experimentation service. The provider file should implement the following interface.
 
@@ -216,7 +217,7 @@ export interface IVariants {
 }
 ```
 
-#### Listener File
+#### Listener file
 
 An experimentation listener CONNECTOR_NAME.listener.ts file is necessary to track user conversion events. The listener implements a logger interface that hooks into the SDKs event logging framework which will subscribe to certain user actions. The listener file should implement the following interface.
 
@@ -241,3 +242,5 @@ export interface IExperimentationListener {
     trackEvent(eventType: string, payload: any): void;
 }
 ```
+
+## Additional resources
