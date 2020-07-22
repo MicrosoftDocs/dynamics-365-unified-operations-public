@@ -39,10 +39,11 @@ ms.dyn365.ops.version: 10.0.14
 This topic walks through steps for setting up posting accounts that will be used for asset leases. 
 
 Follow the steps below to set up the lease parameters used in the asset leasing module. The user may have to create new accounts in the chart of accounts to comply with ASC 842 standards and IFRS 16 standards.
-To learn how to create a general ledger account, please refer to the Microsoft Dynamics training manual. Note, these are not fixed asset accounts, under ASC 842 the right-of-use (ROU) asset is recorded for both Finance and Operating leases separately from Fixed Assets. However, the user can manage the ROU asset using the fixed asset module, which we will discuss later.
+
+To learn how to create a general ledger account, please refer to the Microsoft Dynamics training manual. Note, these are not fixed asset accounts, under ASC 842 the right-of-use (ROU) asset is recorded for both Finance leases separately from Fixed Assets. However, the user can manage the ROU asset using the fixed asset module, which we will discuss later.
+
 Below is an example of necessary accounts that may need to be created if they do not already exist. The operating lease relationships are still used under IFRS 16 for low-value and short-term leases.
 
-*Table placeholder*
 
 |     Ledger account number    	|     Account type     	|     Account name                                             	|
 |------------------------------	|----------------------	|--------------------------------------------------------------	|
