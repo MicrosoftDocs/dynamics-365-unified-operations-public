@@ -44,6 +44,8 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
+ - [Update the invoice quantities to match product receipt quantities in workflow](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/update-invoice-quantities-match-product-receipt-quantities-workflow)
+ - [Notification of related prepayment invoices marked for settlement](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/notification-related-prepayment-invoices-marked-settlement)
  - [Apply prepayments for finalized purchase orders to invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-prepayments-finalized-purchase-orders-invoices)
  - [Retained earnings calculation enhancements for financial reporting when using currency translation
  ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
@@ -54,6 +56,8 @@ The following features are included in this release. The feature titles link to 
  - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/trial-balance-transactional-detail-report)
  - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
  - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
+ - [Delegation of multiple purchasing work items](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
+ - [Associate 1099 default value to Main account](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
  
 ## Additional resources
 
