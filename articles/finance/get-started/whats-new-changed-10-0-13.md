@@ -59,6 +59,25 @@ The following features are included in this release. The feature titles link to 
  - [Delegation of multiple purchasing work items](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
  - [Associate 1099 default value to Main account](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
  
+### Globalization features
+
+#### Features that are shown in Release plans as not having a specified date for public preview
+ - [Extended Finnish localization - Finvoice 3.0](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/extended-finnish-localization--finvoice-3.0)
+ - [Invoicing: Advanced notes management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-advanced-notes-management)
+ - [Invoicing: VAT directives on project invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-vat-directives-project-invoices)
+ - [Regulatory Configuration Service expanded regional coverage - Europe](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage--europe)
+ - [Regulatory Configuration Service: Global Repository for simplified configuration management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-global-repository-simplified-configuration-management)
+
+#### Features that are shown in Release plans as reaching public preview in August
+- [Regulatory Configuration Service: Simplified Globalization feature management for Globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+ - [Barcode generation data source for configurable business documents](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/barcode-generation-datasource-configurable-business-documents)
+ - [Country/region expansion: Bahrain](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-bahrain)
+ - [Country/region expansion: Hong Kong SAR](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-hong-kong)
+ - [Country/region expansion: Kuwait](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-kuwait)
+ - [Country/region expansion: Oman](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-oman)
+ - [Country/region expansion: Qatar](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-qatar)
+ - [Electronic reporting: Legal entity-specific parameters enhancements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/electronic-reporting-legal-entity-specific-parameters-enhancements)
+ 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
