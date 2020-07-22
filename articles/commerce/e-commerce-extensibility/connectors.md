@@ -3,7 +3,7 @@
 # required metadata
 
 title: Connectors overview
-description: This topic describes connectors and how to configure them in Dynamics 365 Commerce.
+description: This topic describes connectors and how to configure and enable them in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 07/31/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes connectors and how to configure them in Dynamics 365 Commerce.
+This topic describes connectors and how to configure and enable them in Dynamics 365 Commerce.
 
 ## Overview
 
