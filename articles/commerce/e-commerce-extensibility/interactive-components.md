@@ -54,6 +54,7 @@ The following example shows how a text configuration field uses an interactive c
             "friendlyName": "Product Title",
             "description": "Product placement title"
         },
+     }
 ...
 ```
 
