@@ -45,22 +45,22 @@ The payment module hosts the payment information that is served via Adyen in an 
 
 The payment module also allows a signed-in customer to save their payment information. The payment information and billing address are saved and managed via the Dynamics 365 Payment Connector for Adyen.
 
-THe payment module covers any order charges that are not already covered by loyalty points or a gift card. If an order total is fully covered by loyalty points or gift card credits, the payment module will be hidden and the customer will be able to proceed to place the order without it.
+The payment module covers any order charges that are not already covered by loyalty points or a gift card. If an order total is fully covered by loyalty points or gift card credits, the payment module will be hidden and the customer will be able to proceed to place the order without it.
 
-The Adyen payment connector also supports strong customer authentication (SCA). Part of the EU Payment Services Directive 2.0 (PSD2.0) requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. During the checkout flow, the customer is redirected to their banking site and after authentication is redirected back to the e-Commerce checkout flow. During this redirection, the information that was entered by the customer in the checkout flow such as shipping address, delivery options, gift card information, and loyalty information will persist. To turn on this feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md).
+The Adyen payment connector also supports strong customer authentication (SCA). Part of the EU Payment Services Directive 2.0 (PSD2.0) requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. During the checkout flow, the customer is redirected to their banking site, and then after authentication is redirected back to the Commerce checkout flow. During this redirection, the information that was entered by the customer in the checkout flow such as shipping address, delivery options, gift card information, and loyalty information will persist. To turn on this feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md).
 
-The following image shows an example of a checkout page with gift card, loyalty, payment, and billing address modules.
+The following image shows an example of gift card, loyalty, and payment modules on a checkout page.
 
-![Example of gift card, loyalty, payment, and billing address modules](./media/ecommerce-payments.PNG))
+![Example of gift card, loyalty, and payment modules on a checkout page](./media/ecommerce-payments.PNG))
 
 ## Payment module properties
 
-| Property name             | Value                 | Description |
+| Property name             | Values                 | Description |
 |---------------------------|-----------------------|-------------|
-| Heading                  | Heading| An optional heading can be provided for the module. |
-| Height of the iframe | Pixels   | The iframe height can be adjusted as needed. |
-| Show billing address       | True, False | If true, the billing address is served by Adyen inside the payment module iframe. If false, the billing address will not be served by Adyen and will require a Commerce user to configure a billing address module to display the billing address on the checkout page.  |
-| Payment style override  |  CSS code | Since the payment module is hosted within an iframe, there is limited limited styling capability. Some styling can be achieved using this property. The entire CSS code must be pasted into this property to override site styles. Site builder CSS overrides and styles do not apply to this module. |
+| Heading                  | Heading| Displays an optional heading for the module. |
+| Height of the iframe | Pixels   | The iframe height in pixels that can be adjusted as needed. |
+| Show billing address       | True, False | If true, the billing address is served by Adyen inside the payment module iframe. If false, the billing address will not be served by Adyen and will require a Commerce user to configure a module to display the billing address on the checkout page.  |
+| Payment style override  |  CSS code | Since the payment module is hosted within an iframe, there is limited limited styling capability. Some styling can be achieved using this property. The CSS code must be pasted into this property value to override site styles. Site builder CSS overrides and styles do not apply to this module. |
 
 ## Billing address
 
@@ -68,7 +68,7 @@ The payment module lets a customer provide a billing address for their payment i
 
 ## Add a payment module to a checkout page and set the required properties
 
-A payment module can only be added to a checkout module. For more information on configuring a payment module for a checkout page, see [Checkout module](add-checkout-module.md].
+A payment module can only be added to a checkout module. For more information on configuring a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
 ## Additional resources
 
