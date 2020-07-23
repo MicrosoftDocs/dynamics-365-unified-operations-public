@@ -68,7 +68,7 @@ To prepare Finance to interoperate with the SII system, you must import the foll
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping option** to **Yes** for the **SII model mapping** and **ES SII import model mapping** configurations.
 
-For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Import a package of data entities that includes a predefined EM setup
 
