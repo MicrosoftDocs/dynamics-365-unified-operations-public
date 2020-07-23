@@ -5,7 +5,7 @@ title: Test data actions with mocks
 description: This topic describes how to test data actions with mock data.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,19 +37,17 @@ This topic describes how to test data actions with mock data.
 ## Overview
 
 By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. 
-It may be useful to test your module without invoking the actual action using an action mock.  You will need to do this if you haven't configured your Commerce server (MSDyn365Commerce_BASEURL property) in ".env" file. See [Configure a development environment (.env) file](configure-env-file.md) for more information.
-
+It may be useful to test your module without invoking the actual action using an action mock. You will need to do this if you haven't configured your Commerce server (**MSDyn365Commerce_BASEURL** property) in the .env file. For more information on .env files, see [Configure a development environment (.env) file](configure-env-file.md).
 
 ## Action mock structure
 
-To create a data action mock, create a new file under “src/module/MODULE_NAME/mocks/” directory for your module, for example **myModuleMock.actionmock.json**  (note: this file name must have the extension “.actionmock.json” but can start with any name).
+To create a data action mock, create a new file under the **/src/module/MODULE_NAME/mocks/** directory for your module. The new file name should be in the format **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json**, as in the following example.
 
-Example
 ```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
 
-You can now simulate the data action return object inside the file.  Note you need to specify the **CasheObjectType** and **CacheKey** that is definied in the data action.  The **CacheKey** can be set to "*" to accept any Cachekey, see [Data actions](data-actions.md) for more information.
+After file creation, you can now simulate the data action return object inside the file by specifying the **CasheObjectType** and **CacheKey** that is defined in the data action. The **CacheKey** value can be set to "&42;" to accept any cache key. For more information, see [Data actions](data-actions.md).
 
-The following example shows how the MODULE\_NAMEMock.actionmock.json file should be structured.
+The following example shows how the **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json** file should be structured.
 
 ```json
 {
@@ -61,13 +59,13 @@ The following example shows how the MODULE\_NAMEMock.actionmock.json file should
 }
 ```
 
-If no **CacheKey** value is specified or "*" is used, all actions that have the corresponding **CacheObjectType** value receive the mock output.
+If no **CacheKey** value is specified or if "&42;" is used, all actions that have the corresponding **CacheObjectType** value will receive the mock output.
 
 ## Example
 
-The following example shows a module definition file that uses a data action and the corresponding data action mock that returns product data.
+The following example shows a module definition file that uses a data action, and the corresponding data action mock that returns product data.
 
-Sample module definition file:
+Example module definition file:
 ```json
 {
     "$type": "contentModule",
@@ -109,7 +107,7 @@ Sample module definition file:
 }
 ```
 
-Module mock file example:
+Example module mock file:
 ```json
 [
     {
