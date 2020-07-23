@@ -48,3 +48,4 @@ This topic provides links to documentation resources for Spain.
 - [Report 340](emea-esp-report-340.md)
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
+- [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
