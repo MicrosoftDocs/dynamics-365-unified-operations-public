@@ -42,9 +42,9 @@ Broadly, there are two main areas where you will review, set up, and use this fu
 - Product-information management, where you set up the codes to be applied to a released product.
 - Warehouse management, where you will work with additional shipping documents to print for shipments.
 
-
 > [!IMPORTANT]
-> Dynamics 365 Supply Chain Management helps you manage the shipping of dangerous goods by setting up shipping documents and reference information related to hazardous products. The system does not, by itself, make you compliant with regulations; it is only a tool to help with your overall program.
+> The hazardous materials features in Microsoft Dynamics 365 Supply Chain Management provide a collection of useful product information fields and related functionality that can help you record and reference information related to your hazardous products. These features can also help you design and print shipment documents that include some of this same information about any hazardous materials you are shipping. However, the system won't automatically make you compliant with all applicable regulations in your country or region. These tools are intended to help you comply with common regulations, but are neither sufficient in themselves, nor guaranteed to do so. It is your organization's responsibility to be aware of all applicable regulations and to take all necessary steps to comply with them.
+
 ## Product information management
 
 Product information management provides a range of setup tables where you can enter reference information for the various dangerous goods lists for road, air, and sea freight.
