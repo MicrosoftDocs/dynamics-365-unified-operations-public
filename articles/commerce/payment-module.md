@@ -57,7 +57,7 @@ The following image shows an example of gift card, loyalty, and payment modules 
 
 | Property name             | Values                 | Description |
 |---------------------------|-----------------------|-------------|
-| Heading                  | Heading| Displays an optional heading for the module. |
+| Heading                  | Heading| Displays an optional heading for the payment module. |
 | Height of the iframe | Pixels   | The iframe height in pixels that can be adjusted as needed. |
 | Show billing address       | True, False | If true, the billing address is served by Adyen inside the payment module iframe. If false, the billing address will not be served by Adyen and will require a Commerce user to configure a module to display the billing address on the checkout page.  |
 | Payment style override  |  CSS code | Since the payment module is hosted within an iframe, there is limited limited styling capability. Some styling can be achieved using this property. The CSS code must be pasted into this property value to override site styles. Site builder CSS overrides and styles do not apply to this module. |
