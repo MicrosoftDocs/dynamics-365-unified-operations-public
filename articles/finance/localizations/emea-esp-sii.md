@@ -482,45 +482,45 @@ analyzes the following types of the **Registration ID**:
 
 1.  For Spanish counteragents:
 
-TaxRegistrationTypesList::NotCensused
+    `TaxRegistrationTypesList::NotCensused`
 
-TaxRegistrationTypesList::TAXID
+    `TaxRegistrationTypesList::TAXID`
 
 2.  For EU counteragents:
 
-TaxRegistrationTypesList::TAXID
+    `TaxRegistrationTypesList::TAXID`
 
-TaxRegistrationTypesList::OfficialIdDoc
+    `TaxRegistrationTypesList::OfficialIdDoc`
 
-TaxRegistrationTypesList::Passport
+    `TaxRegistrationTypesList::Passport`
 
-TaxRegistrationTypesList::ResidenceCertificate
+    `TaxRegistrationTypesList::ResidenceCertificate`
 
-TaxRegistrationTypesList::OtherIdDoc
+    `TaxRegistrationTypesList::OtherIdDoc`
 
 3.  All other counteragents:
 
-TaxRegistrationTypesList::OfficialIdDoc
+    `TaxRegistrationTypesList::OfficialIdDoc`
 
-TaxRegistrationTypesList::Passport
+    `TaxRegistrationTypesList::Passport`
 
-TaxRegistrationTypesList::ResidenceCertificate
+    `TaxRegistrationTypesList::ResidenceCertificate`
 
-TaxRegistrationTypesList::OtherIdDoc
+    `TaxRegistrationTypesList::OtherIdDoc`
 
 As a result of this analyzes system defined related **IDType**:
 
-TaxRegistrationTypesList::TAXID : '02'
+    `TaxRegistrationTypesList::TAXID : '02'`
 
-TaxRegistrationTypesList::Passport : '03'
+    `TaxRegistrationTypesList::Passport : '03'`
 
-TaxRegistrationTypesList::OfficialIdDoc : '04'
+    `TaxRegistrationTypesList::OfficialIdDoc : '04'`
 
-TaxRegistrationTypesList::ResidenceCertificate : '05'
+    `TaxRegistrationTypesList::ResidenceCertificate : '05'`
 
-TaxRegistrationTypesList::OtherIdDoc : '06'
+    `TaxRegistrationTypesList::OtherIdDoc : '06'`
 
-TaxRegistrationTypesList::NotCensused : '07'
+    `TaxRegistrationTypesList::NotCensused : '07'`
 
 Sometimes, when a Spanish counteragent's tax exempt number (NIF) can't be found
 in the SII system's database, an invoice can't be accepted by the SII system. At
