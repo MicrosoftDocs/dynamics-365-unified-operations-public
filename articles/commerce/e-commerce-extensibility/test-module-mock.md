@@ -40,34 +40,37 @@ Modules typically get their data from data actions and configuration fields, and
 
 ## Module mock files
 
-Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (without the **.json** file name extension) to the module name.
+Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (but without the **.json** file name extension) to the module name.
 
-For example, for a module mock data file named **mockTest1.json** added to the module **mocks** directory, you would use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **product-feature**, which is used in the URL.
+For example, for a module mock data file that is named **mockTest1.json** and added to the module **mocks** directory, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **product-feature**, which is used in the URL.
 
 ## Mock configuration and data fields
 
-To mock the configuration fields of a module, put the config names in the mock .json file under the **config** section. To mock the data fields of a module, put the data names in the mock .json file under the **data** section.  
+To mock the configuration fields of a module, put the configuration names under the **config** section in the mock .json file. To mock the data fields of a module, put the data names under the **data** section in the mock .json file.  
 
-The following example shows a configured module mock .json file:
+The following example shows a configured module mock .json file.
+
 ```json
 {
-  "id": "R1Module1",
-  "config": {
-    "imageAlignment": "left",
-  },
-  "data": {
-    "actionResponse": {
-      "text": "Sample Action Response"
-    }
-  },
-  "typeName": "product-feature"
+    "id": "R1Module1",
+    "config": {
+        "imageAlignment": "left",
+    },
+    "data": {
+        "actionResponse": {
+            "text": "Sample Action Response"
+        }
+    },
+    "typeName": "product-feature"
 } 
 ```
+
 ## Example
 
-The following example shows a module config file with various configuration definitions and the corresponding mock file.
+The following example shows a module config file that includes various configuration definitions, and the corresponding mock file.
 
 Sample module definition file:
+
 ```json
 {
     "$type": "contentModule",
@@ -133,26 +136,27 @@ Sample module definition file:
 ```
 
 Sample mock file:
+
 ```json
 {
-  "id": "R1Module1",
-  "config": {
-    "imageAlignment": "left",
-    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-    "productImage": {
-      "src": "https://bit.ly/33cMGxr",
-      "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+    "id": "R1Module1",
+    "config": {
+        "imageAlignment": "left",
+        "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+        "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+        "productImage": {
+            "src": "https://bit.ly/33cMGxr",
+            "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+        },
+        "buttonText": "Buy Now",
+        "productIds": "68719498121"
     },
-    "buttonText": "Buy Now",
-    "productIds": "68719498121"
-  },
-  "data": {
-    "actionResponse": {
-      "text": "Sample Action Response"
-    }
-  },
-  "typeName": "product-feature"
+    "data": {
+        "actionResponse": {
+            "text": "Sample Action Response"
+        }
+    },
+    "typeName": "product-feature"
 } 
 ```
 
