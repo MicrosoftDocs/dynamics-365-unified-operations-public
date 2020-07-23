@@ -335,9 +335,8 @@ Note: You can't change the values in the **Settlement period**, **Method of numb
 | EUP-4              | \-4            | EU purchases at a rate of 4 percent, where the **Intra-community** option on the **Sales tax groups** page is set to **Yes**.  |
 | EUS                | 0              | EU sales where the **Exempt** option is set to **Yes**.                                                                        |
 
-**Note**
-
-For codes that have a negative tax percentage, the **Allow negative sales tax
+> [!NOTE]
+> For codes that have a negative tax percentage, the **Allow negative sales tax
 percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
 2.  Set up sales tax. For instructions, see [Sales tax
@@ -363,13 +362,13 @@ percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
 7.  On the **Setup** FastTab, add the following sales tax codes:
 
-    -   EUP21
+-   EUP21
 
-    -   EUP-21
+-   EUP-21
 
-    -   EUS
+-   EUS
 
-    -   VAT 10
+-   VAT 10
 
 ![](media/4_Spanish_VAT_book.png)
 
