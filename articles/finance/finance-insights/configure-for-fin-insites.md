@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Configuration for Finance Insights
 
-Finance Insights combines functionality from Microsoft Dynamics 365 Finance, with the Microsoft Common Data Service, Microsoft Azure, and Microsoft AI Builder to provide powerful forecasting tools for your organizations. This topic walks through the configuration steps that will enable your system to the capability that's available in Finance Insights. 
+Finance Insights combines functionality from Microsoft Dynamics 365 Finance, with the Microsoft Common Data Service (CDS), Microsoft Azure, and Microsoft AI Builder to provide powerful forecasting tools for your organizations. This topic walks through the configuration steps that will enable your system to the capability that's available in Finance Insights. 
 
 ## Deploy Dynamics 365 Finance
 
@@ -56,15 +56,33 @@ Deploy the environments by completing the following steps.
       [![Power Platform Admin Center](./media/power-pltfrm-admin-center.png)](power-pltfrm-admin-center.png)
    
  2. Click +New environment
-    - Select a Sandbox for the environment Type.
-    - Set **Create Database** to **Yes**. 
-    - Click **Next**. 
- 	  - Select the language and currency for your organization.
-    - Accept the default values for the other options.
-    - Click **Save**.
-    - Navigate to the environment page, and then refresh the environments page. When the **State** shows **Ready**, complete the following steps. 
-     - Record the CDS Organization ID.
-     - Select the environment and click **Settings**.
+  - Select a Sandbox for the environment Type.
+  - Set **Create Database** to **Yes**. 
+  - Click **Next**.
+  - Select the language and currency for your organization.
+  - Accept the default values for the other options.
+  - Click **Save**.
+  - Navigate to the environment page, and then refresh the environments page. When the **State** shows **Ready**, complete the following steps. 
+   - Record the CDS Organization ID.
+   - Select the environment and click **Settings**.
+   - Click **Resources > All Ledgacy Settings**.
+   - Click **Settings** on the top bar and select **Customizations**.
+  - Click **Developer Resources**.
+  - Record the Instance Reference Information ID as the CDS Organization ID.
+  - From the address bar in the browser, record the CDS Organization URL, such as &lt;https:/org42b2b3d3.crm.dynamics.com&gt;
+  - Record the CDS Directory ID. It is the same ID as your user’s Azure Active Directory ID. 
+   - Go to the [Azure portal](https://portal.azure.com). 
+   - Log in using the user ID that was used to create the CDS environment. 
+   - Copy the Tenant ID and record it as the CDS Dicretory ID. 
+  - Record the user's Azure Active Directory object ID.
+   - Go to Users and search for the user by email.
+   - Click on the user's name. 
+   - Copy the Object ID as the CDS Initial User Object ID. 
+3. If you plan to use Cash flow forecasts, or Budget forecasts, also update the annotation limit for your organization to at least 50 MB. To do so, complete the following steps. 
+  - Go to the [Power Apps](https://make.powerapps.com) portal. Select the environment you created above and click **Advanced settings**.
+  - Click **Settings > Email Configuration**.
+  - Change the **Maximum file size** (in kilobytes) to 51,200.
+  - Click **OK** to save the changes.
      
 
   
