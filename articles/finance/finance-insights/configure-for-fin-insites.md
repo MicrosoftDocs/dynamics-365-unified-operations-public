@@ -185,7 +185,37 @@ If you are unable to find any of the preceding applications, try the following i
 |     storage-account-connection-string    |     The   connection string copied from Access Keys of the storage account         |
 
 3. Authorize the application to access the key vault.
-- In Azure portal, open the Key Vault that you created previously. 
-- Select the access policies. 
+- In Azure portal, open the **Key Vault** that you created previously. 
+- Select the access policies. For the list of application in the table below follow the following steps.
+  - Click **+ Add Access Policy** to create a new access policy.
+  - In the Secret permissions field, select the permissions from the table below.
+  - In the **Select principal** field, search for the application display name from the following table. 
+  - Click **Add**.
+  - Click **Save**.
+  
+|     Application                                                        |     Permissions    |
+|------------------------------------------------------------------------|--------------------|
+|     Display name of   the new application you created from step (c)    |     Get, List      |
+|     Microsoft Dynamics   ERP Microservices                             |     Get, List      |
+
+4. Assign roles to access the storage account. 
+- In the Axure portal, open the storage account that you created previously. Select **Access Control (IAM)** and select **Role Assignments**. 
+  - Click on + Add, Add Role Assignment.
+  - Select the Role from the following table.
+  - Keep “Assign access to” as “Azure AD user, group, or service principal.”
+  - In the **Select** field enter the application from the table below.
+  - Select **Save**.
+ 
+|     Application                           |     Role                             |
+|-------------------------------------------|--------------------------------------|
+|     Your application   from step 2 (b)    |     Owner                            |
+|     Your application   from step 2 (b)    |     Contributor                      |
+|     Your application   from step 2 (b)    |     Storage Account   Contributor    |
+|     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
+|     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
+ 
+  
+  
+  
 
 
