@@ -1126,6 +1126,8 @@
         href: public-sector/tasks/create-fund-type-public-sector.md
       - name: Add a certification type to a vendor in the public sector
         href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+      - name: Calculating Canadian Harmonized Sales Tax 
+        href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
       - name: Financial reporting overview
