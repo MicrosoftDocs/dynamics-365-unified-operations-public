@@ -5,7 +5,7 @@ title: Test modules with module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -36,18 +36,19 @@ This topic describes how to test modules by using module mocks.
 
 ## Overview
 
-
 Modules typically get their data from data actions and configuration fields, and the HTML that they present is then based on that data. Because modules might not have direct access to the data (such as the Commerce Scale Unit data) when they run in a local development environment, module mock data files can be used for testing. These files are used to set data that can be used to render a module when it runs locally through a web browser. 
 
 ## Module mock files
-Module mock data files are stored under the /src/MODULE\_NAME/mocks directory. The default mock file uses the MODULE\_NAME.json file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma separated list of mock file names (without the **.json** file name extension) to the module name.
 
-For example, for a module mock data file added to the module **mocks** directory called **mockTest1.json**, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`.  Note in this example the mock name is **product-feature** which is used in the URL.
+Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (without the **.json** file name extension) to the module name.
+
+For example, for a module mock data file named **mockTest1.json** added to the module **mocks** directory, you would use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **product-feature**, which is used in the URL.
 
 ## Mocking configuration and data fields
-To mock the configuration fields of a module, put the config names in the mock json file under the **config** section. To mock the data fields of a module, you'll put the data names in the mock json file under the **data** section.  
 
-Below is an example module mock file:
+To mock the configuration fields of a module, put the config names in the mock .json file under the **config** section. To mock the data fields of a module, put the data names in the mock .json file under the **data** section.  
+
+The following example shows a configured module mock .json file:
 ```json
 {
   "id": "R1Module1",
@@ -62,12 +63,11 @@ Below is an example module mock file:
   "typeName": "product-feature"
 } 
 ```
-
-
 ## Example
-The following example shows a module config file with various configuration definitions and the corresponding mock file..
 
-Sample module definition file
+The following example shows a module config file with various configuration definitions and the corresponding mock file.
+
+Sample module definition file:
 ```json
 {
     "$type": "contentModule",
