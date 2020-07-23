@@ -79,13 +79,13 @@ Report 340 includes the following entries:
     
 ## Generate a Spanish VAT book and export the Report 340 ASCII file
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), in the Shared asset library,
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library,
     download the latest version of the Electronic reporting (ER) configurations
     for the following VAT declaration format:
 
 -   VAT register book (ES)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 2.  Go to **Tax \> Setup \> Sales tax \> Spanish VAT books**.
 
@@ -340,11 +340,11 @@ Note: You can't change the values in the **Settlement period**, **Method of numb
 percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
 2.  Set up sales tax. For instructions, see [Sales tax
-    overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
+    overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
 
 3.  Set up intra-community VAT for EU purchases. For instructions, see
     [Intra-community VAT for
-    Spain](https://docs.microsoft.com/dynamics365/finance/localizations/emea-esp-intra-community-vat).
+    Spain](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-esp-intra-community-vat.md).
 
 4.  Post the following transactions.
 
