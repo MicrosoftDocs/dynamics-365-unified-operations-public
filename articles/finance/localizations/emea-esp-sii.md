@@ -543,4 +543,406 @@ By default, the system defines the value of the **CodigoPais** additional field
 as the International Organization for Standardization (ISO) county/region code
 from the primary address of the counterparty.
 
+### Algorithm to define the NumSerieFactura (Summary reference) additional field
+
+The **NumSerieFactura** (**Summary reference**) additional field is
+automatically defined by the system only for EM items of the **FacturasСliente**
+type. The value of the **NumSerieFactura** additional field is reported in the
+**NumSerieFacturaEmisorResumenFin** tag for summarized invoices. For customer
+invoices, it collects the value from the last ticket (**receipt ID**) that is
+related to the invoice in the reporting from the **Retail** module.
+Alternatively, it's filled with the invoice document number. (Therefore, the
+invoice isn't a summarized invoice.) If the value of the **NumSerieFactura**
+additional field differs from the value in the document number of the message
+item, the invoice is reported as summarized (that is,
+**\<NumSerieFacturaEmisorResumenFin\>** is printed). The value of the
+**NumSerieFactura** additional field can be manually updated as required. If you
+will report an invoice as a summarized invoice, make sure that the value of the
+**TipoFactura** field is updated to **F4**.
+
+### Algorithm to define the TipoFactura (Invoice type) additional field
+
+The **TipoFactura** (**Invoice type**) additional field is automatically defined
+by the system for EM items of the **FacturasСliente** and
+**FacturasProveedores** types. For the list of values that can be set for
+**TipoFactura**, see the [official documentation for the SII
+system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+
+The following values are available for the **TipoFactura** additional field as
+part of the predefined setup for electronic messages.
+
+| **Field value** | **Description (Spanish)**                                                        | **Description (English)**                                                | **Algorithm**                                                                                                                            |
+|-----------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| F1              | Factura                                                                          | Invoice                                                                  | This value is the default value for all invoices if no specific logic is applied for a given invoice. The value can be manually edited.  |
+| F2              | Factura Simplificada (ticket)                                                    | Simplified invoice                                                       | This value can be manually applied to an invoice\*.                                                                                      |
+| F3              | Factura emitida en sustitución de facturas simplificadas facturadas y declaradas | Invoice issued to replace simplified invoices invoiced and declared      | This value can be manually applied to an invoice\*.                                                                                      |
+| F4              | Asiento resumen de facturas                                                      | Invoice summary entry                                                    | If the system identities that the invoice is created as a summary invoice from the **Retail** module. This value can be manually edited. |
+| F5              | Importaciones (DUA)                                                              | Imports (DUA)                                                            | This value can be manually applied to an invoice\*.                                                                                      |
+| F6              | Justificantes contables                                                          | Accounting supporting documents                                          | This value can be manually applied to an invoice\*.                                                                                      |
+| LC              | Aduanas – Liquidación complementaria                                             | Customs – Complementary clearance                                        | This value can be manually applied to an invoice\*.                                                                                      |
+| R1              | Factura Rectificativa (Error fundadow en derecho y Art. 80 Uno Dos y Seis LIVA)  | Corrective Invoice (Error based on law and Art. 80 One Two and Six LIVA) | This value can be manually applied to an invoice\*.                                                                                      |
+| R2              | Factura Rectificativa (Art. 80.3)                                                | Corrective Invoice (Art. 80.3)                                           | This value can be manually applied to an invoice\*.                                                                                      |
+| R3              | Factura Rectificativa (Art. 80.4)                                                | Corrective Invoice (Art. 80.4)                                           | This value can be manually applied to an invoice\*.                                                                                      |
+| R4              | Factura Rectificativa (Resto)                                                    | Rectifying Invoice (Rest)                                                | This value can be manually applied to an invoice\*.                                                                                      |
+| R5              | Factura Rectificativa en facturas simplificadas                                  | Corrective invoice in simplified invoices                                | This value can be manually applied to an invoice\*.                                                                                      |
+
+\* There are three ways to define a specific invoice type:
+
+-   During invoice registration, before invoice posting, by applying a financial
+    reason to the invoice
+
+-   By setting up rules for additional field values
+
+-   During manual invoice review in EM items before they are submitted to the
+    SII system
+
+The system defines the value of the **TipoFactura** additional field according
+to the following algorithm:
+
+1.  Define the invoice type according to the financial reason code in the
+    document.
+
+2.  If the invoice type isn't defined in step 1, check whether the value is
+    **F4** (summarized invoice).
+
+3.  If the invoice type isn't defined in step 2, define it according to the
+    setup of additional field values.
+
+4.  If the invoice type isn't defined in step 3, set the value to **F1**.
+
+Financial reasons can be specified for invoices that are posted from the
+following documents:
+
+-   Sales order
+
+-   Free text invoice
+
+-   Purchase order
+
+-   Projects
+
+-   Accounts Payable (AP) journal
+
+-   General ledger (GL) general journal
+
+When you can create an invoice from the types of documents that invoices can be
+created from, you can set up a specific reason for the invoice. The
+**GenerateMessageItem** action will analyze this reason, and the reason SII code
+will be set for the electronic message item.
+
+To set up financial reasons, follow these steps.
+
+1.  Go to **Organization administration \> Setup \> Financial reasons**.
+
+2.  Select an existing line, or create a new line.
+
+3.  In the **Invoice type** column, select the code that is applicable to the
+    SII system.
+
+4.  In the **SII code description** column, add a description. This description
+    won't be used in reporting, but it might help users select the appropriate
+    financial reason.
+
+To enable the system to define the invoice type based on the setup of additional
+field values, follow these steps to define the rules.
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
+
+2.  In the list of additional fields on the left, select **TipoFactura**.
+
+3.  On the **Value** FastTab, specify criteria:
+
+    -   **Account type:** Select **Customer** or **Vendor**.
+
+    -   **Account code:** Select **All**, **Group**, **Table**.
+
+    -   **Account/Group number**
+
+    -   **Sales tax group**
+
+    -   **Item sales tax group**
+
+>   You can also specify effective and expiration dates for your rule.
+
+### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
+
+The **TipoOperacion** (**Intra-community operation type**) additional field is
+automatically defined by the system for EM items of the
+**OperacionesIntracomunitarias** type. For the list of values that can be set
+for **TipoOperacion**, see the [official documentation for the
+SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+
+The following values are available for the **TipoOperacion** additional field as
+a part of the predefined setup of electronic messages.
+
+| **Field value** | **Description (Spanish)**                                                                                                                                                             | **Description (English)**                                                                                                                          |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| A               | El envío o recepción de bienes para la realización de los informes parciales o trabajos mencionados en el artículo 70, apartado uno, número 7º, de la Ley del Impuesto (Ley 37/1992). | Sending or receiving goods to carry out the partial reports or works mentioned in article 70, section one, number 7, of the Tax Law (Law 37/1992). |
+| B               | Las transferencias de bienes y las adquisiciones intracomunitarias de bienes comprendidas en los artículos 9, apartado 3º, y 16, apartado 2º, de la Ley del Impuesto (Ley 37/1992).   | Transfers of goods and intra-community acquisitions of goods included in articles 9, section 3, and 16, section 2, of the Tax Law (Law 37/1992).   |
+
+The default value of the **TipoOperacion** additional field is defined as **A**
+on the **Message item additional fields** FastTab in the definition of **SII**
+processing (**Tax \> Setup \> Electronic messages \> Electronic message
+processing**).
+
+To enable the system to define the intra-community operation type based on the
+setup of additional field values, follow these steps to define the rules.
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
+
+2.  In the list of additional fields on the left, select **TipoOperacion**.
+
+3.  On the **Value** FastTab, specify criteria:
+
+    -   **Account type:** select **Customer** or **Vendor**.
+
+    -   **Account code:** Select **All**, **Group**, or **Table**.
+
+    -   **Account/Group number**
+
+    -   **Sales tax group**
+
+    -   **Item sales tax group**
+
+>   You can also specify effective and expiration dates for your rule.
+
+### Set up auto-definition rules for the ClaveRegimenEspecialOTrascendencia (Special scheme code) additional field
+
+The **ClaveRegimenEspecialOTrascendencia** (**Special scheme code**) additional
+field is automatically defined by the system for message items of the
+**FacturasСliente** and **FacturasProveedores** types. For the list of values
+that can be set for **ClaveRegimenEspecialOTrascendencia**, see the [official
+documentation for the
+SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+
+According to the official documentation for the SII system, the following values
+are available for the **ClaveRegimenEspecialOTrascendencia** additional field as
+part of the predefined setup of electronic messages.
+
+| **Field value** | **Description**                                                                                                                                                                                                                              |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 01              | General system transaction                                                                                                                                                                                                                   |
+| 02              | Export                                                                                                                                                                                                                                       |
+| 02              | Transactions for which businesspersons pay compensation for purchasing from individuals under the Special system for agricultural, livestock, and fisheries activities.                                                                      |
+| 03              | Transactions to which the special system of used goods, works of art, antiquities, and collectables applies.                                                                                                                                 |
+| 04              | Special system for investment gold.                                                                                                                                                                                                          |
+| 05              | Special system for travel agencies.                                                                                                                                                                                                          |
+| 06              | Special system applicable to groups of entities and VAT (Advanced).                                                                                                                                                                          |
+| 07              | Special cash basis system.                                                                                                                                                                                                                   |
+| 08              | Transactions subject to IPSI / IGIC (Tax on Production, Services and Imports / General Indirect Canary Islands Tax).                                                                                                                         |
+| 09              | Invoicing of the provision of travel agency services acting as intermediaries in the name of and on behalf of other persons (Additional Provision 4, RD1619/2012).                                                                           |
+| 10              | Collections on behalf of third parties of professional fees or industrial property, copyright, or other such rights by partners, associates or members undertaken by companies, associations, professional organizations, or other entities. |
+| 11              | Business premises lease activities subject to withholding.                                                                                                                                                                                   |
+| 12              | Business premises lease activities not subject to withholding.                                                                                                                                                                               |
+| 13              | Business premises lease activities subject and not subject to withholding/Invoice corresponding to an import (reported without being associated with a DUA).                                                                                 |
+| 14              | Invoice with VAT pending accrual on work certifications with Public Administration recipients for the first half of 2017.                                                                                                                    |
+| 15              | Invoice with VAT pending accrual on transactions of a consecutive nature.                                                                                                                                                                    |
+| 16              | First half 2017.                                                                                                                                                                                                                             |
+
+You can set up auto-definition rules for any value from the preceding list. You
+can also adjust the list of possible values. For auto-definition rules, the
+following criteria are available:
+
+-   **Account type:** Select **All**, **Customer**, or **Vendor**.
+
+-   **Account code:** Select **All**, **Group**, or **Table**.
+
+>   **Note:** You can specify this criterion only when **Account type** is set
+>   to either **Customer** or **Vendor**.
+
+-   **Account/Group number**
+
+>   **Note:** You can specify this criterion only when **Account code** is set
+>   to either **Group** or **Table**.
+
+-   **Sales tax group**
+
+-   **Item sales tax group**
+
+>   You can also specify effective and expiration dates for your rule.
+
+The algorithm that is used to search for the special scheme code for the
+register consists of three stages:
+
+1.  Search among records where **Account code** is set to **Table** for the
+    customer or vendor.
+
+2.  If the record isn't found in stage 1, search among records where **Account
+    code** is set to **Group** for the customer or vendor.
+
+3.  If the record isn't found in stage 2, search among records where **Account
+    code** is set to **All**.
+
+During the search in each stage, valid dates of records are considered, and only
+records that are valid on the register date should be selected.
+
+When **Sales tax group** and **Item sales tax group** columns are used in the
+setup, the algorithm remains the same, in that it still contains three main
+stages. However, the search during each stage differs. When the systems searches
+for the special scheme code for the register in each stage, the sales tax group
+and item sales tax group are now considered. To get the sales tax group and item
+sales tax group for the invoice, the system selects the first tax transaction
+that is related to the current customer, vendor, or project invoice. The sales
+tax group and item sales tax group are then passed as parameters to the method
+for searching for special scheme codes.
+
+The search by **Sales tax group** and **Item sales tax group** can be divided
+into four substages. All four substages are implemented for each of the three
+stages that were mentioned earlier, until a suitable record is found.
+
+1.  Search for a record where neither the **Sales tax group** field nor the
+    **Item sales tax group** field is blank, and where the values match the
+    values that were passed as parameters.
+
+2.  If no record is found in substage 1, search for a record where the value of
+    the **Sales tax group** matches the sales tax group that was passed as a
+    parameter, but the **Item sales tax group** field is blank. (A blank field
+    represents "any.")
+
+3.  If no record is found in substage 2, search for a record where the **Sales
+    tax group** field is blank, but the value of the **Item sales tax group**
+    field matches the item sales tax group that was passed as a parameter.
+
+4.  If no record is found in substage 3, search for a record where both the
+    **Sales tax group** field and the **Item sales tax group** fields are blank.
+
+The following illustration shows the algorithm schema for each of these four
+substages.
+
+![](media/emea-esp-sii-claveregimenespecialotrascendencia-additional-field.png)
+
+>   A close up of a map Description automatically generated
+
+## Set up number sequences for electronic messages
+
+To work with the Electronic messages functionality, you must define related
+number sequences.
+
+1.  Go to **Tax** \> **Setup** \> **General ledger parameters**.
+
+2.  On the **Number sequences** tab, set up two number sequences:
+
+-   Message
+
+-   Message item
+
+## Set up batch settings for automated processing of interoperation with the SII system
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+    processing**.
+
+2.  Select either **SII** or **CollectionInCash** processing.
+
+3.  On the **Batch** FastTab, select **Create batch**, and then define the
+    required parameters.
+
+## Set up security roles for electronic message processing
+
+Different groups of users might require access to **SII** and
+**CollectionInCash** processing. You can limit access to the processing based on
+security groups that are defined in the system.
+
+To limit access to **SII** and **CollectionInCash** processing, follow these
+steps.
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+    processing**.
+
+2.  Select **SII** or **CollectionInCash** processing, and then add the security
+    groups that must work with that processing. If no security group is defined
+    for the processing, only a system admin can see the processing on the
+    **Electronic messages** page.
+
+## Additional setup in Finance for reporting to the SII system
+
+### Exclude transactions that have a negative sales tax percentage from SII processing
+
+Sometimes, companies in Spain set up sales tax codes that allow for negative tax
+percentages and that should not be reported to the SII system as VAT. To exclude
+invoices from reporting to the SII system if they have tax transactions where
+the sales tax code allows for negative tax percentages, in the **Reporting**
+section on the **Ledger** tab of the **General ledger parameters** page
+(**General ledger \> Setup \> General ledger parameters**), select the
+**Negative sales tax percentage** check box.
+
+If the **Negative sales tax percentage** check box is cleared on the **General
+ledger parameters** page, the following behavior occurs:
+
+-   Invoices that have only tax transactions that have negative sales tax
+    percentages won't be filled in as electronic message items for SII
+    processing.
+
+-   Only sales tax transactions that have sales tax codes where the **Negative
+    sales tax percentage** check box is cleared will be included in the XML file
+    that is reported to the SII system.
+
+![](media/emea-esp-sii-negative-sales-tax-percentage.png)
+
+The **Negative sales tax percentage** check box on the **General ledger
+parameters** page doesn't affect reporting of reverse change transactions.
+
+### Sales tax code setup to identify different types of 0.00-percent VAT rates
+
+In Spain, sales tax codes that have a rate of 0.00 percent are used in some
+scenarios. The following scenarios must be differentiated so that they can be
+correctly reported to the SII system:
+
+-   **ImporteTAIReglasLocalizacion** – Transactions in euros that are performed
+    with other Spanish areas that don't have VAT, but that do have some other
+    internal indirect tax (for example, Canary Island, Ceuta, and Melilla).
+
+-   **ImportePorArticulos7_14_Otros** – Other specific transactions in euros
+    that are subject to art. 7.14.
+
+To correctly report both the preceding scenarios that involve a VAT rate of 0.00
+percent, set the value of the **Type of tax** field for sales tax codes (**Tax
+\> Indirect taxes \> Sales tax \> Sales tax codes**) as explained in the
+following table.
+
+| **Tag in SII system**         | **Type of tax value** |
+|-------------------------------|-----------------------|
+| ImportePorArticulos7_14_Otros | VAT 0%                |
+| ImporteTAIReglasLocalizacion  | Other                 |
+
+![](media/emea-esp-sii-zero-percent-vat-rates.png)
+
+### Intra-community sales tax reporting to the SII system
+
+According to SII system rules, an extended set of parameters must be used when
+intra-community invoices are reported to the SII system. To submit additional
+information in a specific format for intra-community invoices, **SII**
+processing in Finance fills in the **OperacionesIntracomunitarias** message item
+type for invoices that were previously reported as standard invoices. The
+**GenerateMessageItem** action runs the **SIIGenerateItems** executable class.
+Based on the following criteria, it identifies invoices as invoices of the
+**OperacionesIntracomunitarias** message item type:
+
+-   The **Intra-community** check box is selected for the sales tax group (**Tax
+    \> Sales tax \> Sales tax group**) that is used in the sales tax transaction
+    that is related to the invoice. Verify that the [Intra-community VAT for
+    Spain](https://docs.microsoft.com/dynamics365/finance/localizations/emea-esp-intra-community-vat)
+    feature is set up and used in your system.
+
+-   The country/region of the primary address of the counterparty from the
+    invoice is identified as **EU** in the **Country/region properties** section
+    of the **Foreign trade parameters** page (**Tax \> Setup \> Foreign trade \>
+    Foreign trade parameters**).
+
+-   The counterparty is included in the SII intra-community setup (go to **Tax
+    \> Setup \> Electronic messages \> Message item additional fields**, and
+    then, in the **TipoOperacion** field, specify those counterparties for which
+    invoices must be reported as intra-community invoices).
+
+To verify that you correctly set up the parameters for the **SIIGenerateItems**
+executable class for the **TipoOperacion** additional field, follow these steps.
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
+
+2.  Select the **SIIGenerateItems** executable class that is associated with the
+    **EMCreateItemsController** executable class name.
+
+3.  On the Action Pane, select **Parameters**, and then set up the
+    **TipoOperacion** value for the **Intra-community operation ID** additional
+    field.
+
 
