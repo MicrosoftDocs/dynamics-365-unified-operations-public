@@ -38,7 +38,7 @@ This topic describes covers the shipping address module and how to configure it 
 
 ## Overview
 
-This module allows a customer to add or select the shipping address for an order during the checkout flow. If a customer is signed in, any addresses that were previously saved for the customer are displayed and the customer can then choose from those addresses. The customer can also add a new address. The shipping address module is used for all items in an order that require shipping. 
+The shipping address module allows a customer to add or select the shipping address for an order during the checkout flow. If a customer is signed in, any addresses that were previously saved for the customer are displayed and the customer can then choose from those addresses. The customer can also add a new address. The shipping address module is used for all items in an order that require shipping. 
 
 Shipping address formats can be defined in Commerce headquarters for each country or region, and the country- or region-specific rules are then enforced by the shipping address module. 
 
