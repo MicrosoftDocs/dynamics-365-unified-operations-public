@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -120,11 +120,11 @@ The preceding example can be accessed by using the following URL: `https://local
 
 ## Rendering context mocks
 
-The "renderingContext" node provides additional mock data that the modules can access via the **this.props.context.request** object.  This can include the bootstrap grid breakpoints, the locale and user context.  See the [Request properties object](request-properties-object.md) documentation for more information.
+The **renderingContext** node provides additional mock data that modules can access via the **this.props.context.request** object. This can include the bootstrap grid breakpoints, the locale, and user context. For more information, see [Request properties object](request-properties-object.md).
 
-### Simulate the signed in state
+### Simulate the signed-in state
 
-Some modules may have logic that needs to check the signed in state of the user and take appropriate action. Typically the module would get the state from the **this.props.context.request.user** object.  B2C sign in is not supported in a development environment, the user object can be mocked with the **userContext** node as shown in the below example:
+Some modules may have logic that needs to check the signed-in state of the user before taking the appropriate action. A module will typically get the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in is not supported in a development environment, the user object can be mocked with the **userContext** node as shown in the following example.
 
 ```json
 {
@@ -201,8 +201,7 @@ Some modules may have logic that needs to check the signed in state of the user 
 }
 ```
 
-If you need to simulate real data returned from Commerce Server after a user signs in or the token it's as simple as signing into your production e-Commerce site and using the F12 browser tools to copy the data.  The user info is available in Global JS variable "___initialData___.requestContext.user".  With the F12 browser tool open and user signed in, open a console and type **___initialData___.requestContext.user** to see the object.  You can now update the above **userContext** properties as needed including the **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name** and **emailAddress**.
-
+If you need to simulate real data or the token returned from Commerce Server after a user signs in, sign in to your production e-Commerce site and use the F12 browser tools to copy the data. The user info is available in the global JavaScript variable **\___initialData\___.requestContext.user**.  With the F12 browser tool open and a user signed in, open a console and type **\___initialData\___.requestContext.user** to see the object. You can then update the **userContext** properties above as needed including the **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress** properties.
 
 ## Additional resources
 
