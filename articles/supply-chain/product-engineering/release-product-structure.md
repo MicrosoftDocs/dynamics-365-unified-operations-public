@@ -29,100 +29,132 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Release product structure
 
-To ensure that engineering relevant data of products can easily be reused in different legal entities, you can release complete product structures in addition to releasing products with their engineering versions. This means that you can release multi-level bill of material structures together with the parent in a single release action. The bill of materials and the lower level products are also released in this case.
+[!include [banner](../includes/banner.md)]
 
-Engineering products are created and maintained in their engineering organization. The engineering products are created in the engineering organization in such way that they meet the quality requirements as they are designed. In all operational organizations which manufacture this product, the same product and underlying bill of materials are needed. Depending on the production facility itself, the route might be a local exercise to create, in which case you do not want to release a route with it. If there are other legal entities that will not manufacture the products, but they only sell them, the bill of materials may not be required.
+To ensure that engineering relevant data of products can easily be reused in different legal entities, you can release complete product structures in addition to releasing products with their engineering versions. This means that you can release multi-level bill of materials structures together with the parent in a single release action. The bill of materials (BOM) and the lower-level products are also released in this case.
 
-To increase the efficiency in the process, the engineering relevant data including the product structure, can be released at once to other operational organizations. In this release process, you can make choices which part of the product data will be released. For more information on the engineering organization and operational organization, see <!-- KFM: Add link -->
+Engineering products are created and maintained by their engineering organization in such way that they meet the quality requirements as they are designed. Each operational organization that manufactures the product needs the same product and underlying BOM. Depending on the production facility, the route might be created locally, in which case you wouldn't release a route with it. For legal entities that won't manufacture the products, but only sell them, the BOM may not be required.
 
-Note that you can release both standard products and engineering products with the "Release product structure". When doing so the whole product structure will be released, including the BOM and route from the company where they are being released.
+To make process more efficient, the engineering relevant data, including the product structure, can be released all at once to other operational organizations. In this release process, you can make choices which part of the product data will be released. For more information on the engineering organization and operational organization, see [Engineering organizations and data ownership rules](engineering-org-data-ownership-rules.md).
 
-## Released data for a product when using "Release product structure"
+Note that you can release both standard products and engineering products with the release product structure. When doing so, the whole product structure will be released, including the BOM and route from the company where they are being released.
 
-The following data is part of releasing engineering products:
+## Released data for a product when using the release product structure
 
-- **Product data**: when releasing a new engineering product, a new released product is created
-- **Engineering version** data: when releasing engineering products, the engineering version and its data is created or updated. Note: when you release the same engineering version again to an operational organization, the engineering data will be overridden.
-- **Engineering attributes**: when releasing engineering products, the engineering attributes and its values are created or updated
-- **Engineering bill of materials**: when releasing engineering products, the engineering bill of materials and its lines can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
-- **Engineering routes**: when releasing engineering products, the engineering routes and its operations can be created or updated. See below for more information how this can be chosen. For more information on the data ownership, see <!-- KFM: Add link -->
-- **Engineering documents**: when releasing engineering products, the engineering documents connected to the engineering version are created or updated.
+The following data are part of releasing engineering products:
 
-For a standard product, the BOM and the route will also be released.
+- **Product data** - A new released product is created.
+- **Engineering version data** - The engineering version and its data are created or updated. Note that if you release the same engineering version again to an operational organization, the engineering data will be overwritten.
+- **Engineering attributes** - The engineering attributes and their values are created or updated.
+- **Engineering bill of materials** - The engineering BOM and its lines can be created or updated. Information about how to set this option is given later in this topic. For more information on data ownership, see [Product owner](product-owner.md).
+- **Engineering routes** - The engineering routes and their operations can be created or updated. Information about how to set this option is given later in this topic. For more information on data ownership, see [Product owner](product-owner.md).
+- **Engineering documents** - The engineering documents connected to the engineering version are created or updated.
+
+For a standard product, the BOM and the route will also be released. <!-- KFM: Are we saying that BOM and route are NOT released for engineering products? -->
 
 ## Automatically accept products
 
-**Automatically accept products** is a key parameter that influences the release process. You can set this per-company on the **Product engineering parameters** page.
+**Automatically accept products** is a key parameter that influences the release process. You can set this per-company on the **Product engineering parameters** page. <!-- KFM: We should describe how to find this setting. We should also document the rest of the **Product engineering parameters** page too, maybe in its own topic. -->
 
-### Automatically accept products = yes
+<!-- KFM: I don't see the **Automatically accept products** setting on **Project Oaktree parameters**. Do we mean the **Product acceptance** setting? (options: Manual|Automatica) -->
 
-Each release of engineering products starts from the engineering organization, by selecting the products to be released. When automatically accept products is set to yes, the user in the engineering organization decides what product data is released and this is received (automatically released) in the operational organization(s). The products released will be automatically released in the company selected in the release wizard.
+### When "Automatically accept products" is set to yes
 
-### Automatically accept products = no
+Each release of engineering product starts when somebody from the engineering organization selects a product to release. When **Automatically accept products** is set to *Yes*, the user at the engineering organization decides which product data to include (automatically release) for the operational organization(s). The product will be automatically released to the company selected in the release wizard.
 
-Each release of engineering products starts from the engineering organization, by selecting the products to be released. When automatically accept products is set to no, the user in the engineering organization decides what product data is released to the operational organization(s). In the operational organization(s), you will be able to decide if to accept the release or not and to review the products data before they are released in the company. You can also control how you receive the data:
+### When "Automatically accept products" is set to no
 
-- If the product (updates) are not relevant for the operational organization, you can choose to not accept the release
-- Change the item template for new products
-- If you want to the product to be released with bill of materials and/or routes and if they should be released approved and active
-- Change the effective from dates of the products
+Each release of engineering product starts when somebody from the engineering organization selects a product to release. When **Automatically accept products** is set to *No*, the user at the engineering organization decides which product data is released to the operational organization(s). A user from the operational organization(s) reviews the products data and decides whether to accept the release or not. The user at the operational organization can set the following options when they receive the data:
 
-Note that for standard products you can release from any legal entity to any other legal entity. For engineering products, you can only release from the engineering organization legal entity.
+- If the product (updates) are not relevant for the operational organization, the user can choose to not accept the release.
+- The user can change the item template for new products.
+- THe user can choose whether the product should be released with BOM and/or routes and if they should be released approved and active.
+- The user can change the effective-from dates of the products.
+
+<!-- KFM: We should provide a procedure for how to accept products and set each of these options. -->
+
+> [!NOTE]
+> For standard products, you can release from any legal entity to any other legal entity. For engineering products, you can only release from the engineering organization legal entity.
 
 ## Release policies
 
-Not all operational organizations need the same product data. In case you release to an operational organization which is **manufactures engineering products** , the bill of material is needed there. In case you release to an operational organization which is a **sales company** that only sells the engineering products, the bill of materials is not per definition needed. While this scenario can be different for different types of products, you can use release policies to establish parameters used for the release of products.
+Not all operational organizations need the same product data. Operational organizations that manufactures engineering products require a BOM, while Operational organization that only sell the engineering products don't need the BOM. While this scenario can be different for different types of products, you can use release policies to establish the parameters used for the release of products.
 
 For engineering products the release policy is assigned in the engineering product category (mandatory field), and for standard products it is assigned to the shared product (optional).
 
-For more information on the engineering product categories, see <!-- KFM: Add link -->
+For more information on the engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md)
 
 During the release process, you can influence the settings as well.
 
-### Parameters on the release policy
+## Work with product release policies
 
-The following settings apply to the release policies: <!-- KFM: Where do these settings apply (in contrast to the other two tables)? -->
+To work with product release policies, go to **Project Oaktree > Setup > product release policies**. Then do one of the following:
 
-| **Setting** | **Description** |
+- To create a new policy, select **New** from the Action Pane and then make settings as described in the following subsections.
+- To edit an existing policy, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
+- To delete an existing policy, select it from the list pane and, on the **General** FastTab, set **Active** to *No*. Then select **Delete** on the Action Pane.
+
+### Settings in the header
+
+Make the following settings in the header of a product release policies:
+
+| Setting | Description |
 | --- | --- |
-| **Apply templates** | <ul><li>Always = use it when you want to make it mandatory that a template released product is used for releasing. The template indicated in the field (Template released product) is used. If it is set to yes and template item is blank and user tries to save error will appear "You must fill in the Template released product". </li><li>Optional = use it when you would like to use the templates indicated in the template fields (released template product, template BOM, template route). If there is a template in the field it will be used, if there are no templates they will not be used. No warning will be shown. </li><li>Never = the template indicated in the product template field (if any) will not be used. The template columns (Template released product, template BOM, template route) are disabled.</li></ul> |
-| **Active** | Is intended to help you with the maintenance of the release policies. You can mark a release policy as inactive when it is not used. Note that you cannot make inactive a release policy that is assigned to an engineering product category. You will be able to delete it when it is inactive. |
+| **Name** | Enter a name for the policy. |
+| **Description** | Enter a description of the policy. |
 
-#### Setting that apply for both standard and engineering products
+### The General FastTab
 
-The following settings apply for both standard and engineering products:
+The following table describes the settings available on **General** FastTab.
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
-| Company | Select the company for which you want to create the line. The parameters on the line will apply when the products are released to this company |
-| Template released product | Adds a template for the product – (need to add which are the fields in the template released product here – need a developer to take a look at this) |
-| Copy BOM approval | Should the approval information of the bill of material be copied to the receiving company |
-| Copy BOM activation | Should the active checkmark of the bill of material be copied to the receiving company |
-| Copy Route approval | Should the approval information of the route be copied to the receiving company |
-| Copy Route activation | Should the active checkmark of the route be copied to the receiving company |
+| **Product type** |  <!-- KFM: What affect does this have? Seems like it can't be changed after saving. --> |
+| **Apply templates** | Choose one of the following options to establish whether and how product release templates should be applied when using this policy:<ul><li>**Always** - A template released product must always be used for releasing. Use the **All products** FastTab to establish the template to use for each company that you release to. When you use this option, you must set a template for each company listed on the **All products** FastTab (otherwise, an error will be shown when you try to save the policy). </li><li>**Optional** - If a company listed on **All products** FastTab has a template released product set, then that template will be used when releasing to that company. Otherwise, no template will be used. When you use this option, then you will be able to save the policy without assigning templates to all companies (no warning is shown). </li><li>**Never** - No template released product will be used for any companies, even if a template is set in teh listed on **All products** FastTab. The template columns are disabled.</li></ul> |
+| **Active** | Use this setting to help maintain your release policies. Set this to *Yes* for all release policy that you use; set it to *No* to mark a release policy as inactive when it is not used. Note that you can't deactivate a release policy that is assigned to an engineering product category, and you can only delete inactive release policies. |
 
-#### Setting that apply only to engineering products
+### The All products FastTab
 
-The following settings apply only to engineering products:
+Add a row on the **All products** FastTab for each operational organization that you will release to using this policy. Use the button in the **All products** FastTab to add and remove rows as needed. For each row you add, make the settings described in the following table.
 
-| **Setting** | **Description** |
+These settings apply for both engineering products and standard products.
+
+| Setting | Description |
 | --- | --- |
-| Template BOM | When a product with a BOM is released, the lines of this template BOM will be added. This is useful for adding local components such as the local packaging or a manual of instructions in the local language. |
-| Template route | When a product is released with a route, the lines of this template will be added. |
-| Auto release | Should the product be part of automatic releasing on the engineering change order. This will give you the option to automatically release products of this engineering product category, to this operational organization. You can do this as part of the workflow on the engineering change order. For more information see <!-- KFM: Add link (Engineering change management) --> |
+| **Company accounts ID** | Select the company that the line applies for. The parameters on the line will apply when products are released to this company. |
+| **Template released product** | Adds a template for the product <!-- KFM: We should describe what affect this has. (Note from original doc: need to add which are the fields in the template released product here – need a developer to take a look at this) --> |
+| **Copy BOM approval** | Select this check box to copy bill of materials approval status to the receiving company. |
+| **Copy BOM activation** | Select this check box to copy the bill of materials activation status to the receiving company. |
+| **Copy route approval** | Select this check box to copy route approval status to the receiving company.|
+| **Copy route activation** | Select this check box to copy the route activation status to the receiving company. |
+
+### The Option parameters for engineering products FastTab
+
+Each time you add (or remove) a row to the **All products** FastTab, a row with a matching **Company accounts ID** values is also created (or removed) on the **Option parameters for engineering products** FastTab. For each row shown here, make the settings described in the following table.
+
+These settings only apply to engineering products.
+
+| Setting | Description |
+| --- | --- |
+| **Template BOM** | When a product with a BOM is released, the lines of this template BOM will be added. This is useful for adding local components, such as packaging or instructions in the local language. <!-- KFM: Which template? The one listed on the **All products** FastTab? --> |
+| **Template route** | When a product is released with a route, the lines of this template will be added. <!-- KFM: Which template? The one listed on the **All products** FastTab? --> |
+| **Copy effectivity** | <!-- KFM: What does this do? --> |
+| **Automatically add to release proposal** | Select this check box for products that should be released automatically on the engineering change order. Products belonging to engineering product categories that use this release policy can therefore be released automatically to operational organization where this option is set. You can do this as part of the workflow on the engineering change order (see also [Engineering change management](engineering-change-management.md)).
 
 ### Review each product when releasing
 
-When engineering products with bill of materials or routes are released, the parameters will be defaulted as indicated in the release policy. As a user you can influence this on the releasing side: in the **release details** form the fields Receive BOM, Copy BOM approval, Copy BOM activation, Receive BOM, Copy route approval and Copy route activation can be changed. In the push-pull scenario, you can change the same fields on the receiving side (in case the bill of material and route are send over).
+<!-- KFM: I don't understand what we are talking about in this section. I think more details are needed. For example, what/where is the **Release details** page? -->
+
+When engineering products with BOM or routes are released, the parameters will be defaulted as indicated in the release policy. As a user, you can influence this on the releasing side: in the **Release details** page the fields Receive BOM, Copy BOM approval, Copy BOM activation, Receive BOM, Copy route approval and Copy route activation can be changed. In the push-pull scenario, you can change the same fields on the receiving side (in case the bill of material and route are sent over).
 
 <!-- KFM: In the above, we need to review the following parameters, which we may change: "Receive BOM, Copy BOM approval, Copy BOM activation, Receive BOM" -->
 
 ## Product owners and releasing products
 
-While product owners know which legal entities need their products, the product can only be released by the members of the product owner group. In case another user will select the product for releasing, the product will not be available in the release form.
+Because product owners know which legal entities need their products, a product can only be released by the members of that product's owner group. Other users won't be able to release products they don't own.
 
-This behavior is only applicable in case the product is directly selected for releasing. In the situation the product is via a bill of material line part of a product structure, the product can be released by other users in case the parent of the product is released.
+This behavior only applies when directly selecting a product for release. Products that are part of another product's structure via a bill of materials *can* be released by non-owner users when they release the parent product (provided they owners of the parent product).
 
-As an example: product X has product owner group &#39;Design cabinets&#39; assigned. Product X is also part of the bill of material of product Y which has product owner group &#39;Design Speakers&#39; assigned. In case a user of the product owner group &#39;Design Speakers&#39; releases product Y and its bill of material, product X will be released along with it.
+For example: product X is assigned to product owner group *Design cabinets*. Product X is also part of the bill of material of product Y, which is assigned to product owner group *Design speakers*. If a user from product owner group *Design speakers* releases product Y and its bill of materials, product X will be released along with it.
 
-For more information about product owners, see [Product owner](product-owner.md) <!-- KFM: Is this the link you mean? -->
+For more information, see [Product owner](product-owner.md)

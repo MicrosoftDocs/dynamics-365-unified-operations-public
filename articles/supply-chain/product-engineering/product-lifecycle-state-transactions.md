@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Product lifecycle state and transactions
 
+[!include [banner](../includes/banner.md)]
+
 As an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. For example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, when a product is reaching its end-of-life state, you want to control the inflow of this product.
 
 For an engineering product, changing the lifecycle state goes hand-in-hand with its engineering versions and therefor the product lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can control what transactions are allowed for this engineering version via its product lifecycle state.
@@ -51,7 +53,7 @@ To work with product lifecycle states, go to **Project Oaktree > Setup > Product
 
 Make the following settings in the header of a product lifecycle state:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **State** | Enter a name for the product lifecycle state. |
 | **Description** | Enter a description of the product lifecycle state. |
@@ -60,7 +62,7 @@ Make the following settings in the header of a product lifecycle state:
 
 Make the following settings on **General** FastTab:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **Default when released to a legal entity** | Set to *Yes* if this state should be applied by default for all products when they are first released. Set to *No* for states that will be manually applied later. <!-- KFM: Are there any special cases for engineering products (such as versions)? --> |
 | **Is active for planning** | Set this to *Yes* to include products in this state in master planning and BOM-level calculations. Set to *No* to exclude products in this state from those calculations. |
@@ -74,13 +76,13 @@ Use **Enabled business processes** FastTab to control which of the available bus
 
 For each process listed here, make the following settings:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **Process** | This read-only value shows the name of an existing business process. |
-| **Process area** | <!-- KFM: What does this do? Why might I change this? --> |
+| **Process&nbsp;area** | <!-- KFM: What does this do? Why might I change this? --> |
 | **Policy** | Set this to one of the following to control whether and how the current process will be permitted for products in the current lifecycle state:<ul><li>**Enabled** - Allow this business process.</li><li>**Blocked** - The process is not allowed. If a user attempts to use this process on a product in this lifecycle state, the system will block it and show an error instead. For example, you might block end-of-life products from being purchased.</li><li>**Enabled with warning** - The process is allowed, but a warning will be shown. For example, you might want a prototype product to be put on a production order created by the research and development department, but other departments should be aware that they should not produce the product yet.</li></ul> |
 
-<!-- KFM: The following list doesn't seem useful to me, so I am planning to remove it. Please let me know if you fee otherwise:
+<!-- KFM: The following list doesn't seem useful to me, so I am planning to remove it. Please let me know if you think we should keep it:
 
 Next to the **Is active for planning** check box, the following transactions can be controlled by the product lifecycle state:
 

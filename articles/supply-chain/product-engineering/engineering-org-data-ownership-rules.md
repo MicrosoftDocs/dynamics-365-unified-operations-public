@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Engineering organizations and data ownership rules
 
+[!include [banner](../includes/banner.md)]
+
 ## Engineering organizations and operational organizations
 
 <!-- KFM Does this feature add the concept of engineering vs organizational organizations? If so, we should make this more clear, and also describe how to configure which is which in the system. We should tell more about what an "operational organizations" is. -->

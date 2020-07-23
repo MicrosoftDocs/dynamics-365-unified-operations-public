@@ -29,11 +29,13 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Engineering change management
 
-Engineering change management provides a structured processes for managing changes to engineering products. There is a structured process for proposing and requesting changes in an *engineering change request*, and there is a structured process for making changes in the *engineering change order*. This lets you create an engineering change request and engineering change order, and then have a process for reviewing and approving them, assessing their impact on existing transactions, and following up on them.
+[!include [banner](../includes/banner.md)]
+
+Engineering change management provides a structured processes for managing changes to engineering products. Use the *engineering change request* process to propose and request changes; use the *engineering change order* process to actually make the changes. This lets users create an engineering change request or engineering change order, and then have a process for reviewing and approving them, assessing their impact on existing transactions, and following up on them.
 
 ## Engineering change requests
 
-The engineering change request allows you to capture requests for change from all the relevant departments within your organization. It doesn't matter whether you work as an engineer, or in the manufacturing, sourcing, warehouse, or sales department&mdash;with the engineering change request, anybody can request a change. This can be an idea for a new product, an issue that you discovered while working with an existing product, a suggestion for improving the product, and more. 
+The engineering change request allows you to capture requests for change from all the relevant departments within your organization. It doesn't matter whether you work as an engineer, or in the manufacturing, sourcing, warehouse, or sales department&mdash;with the engineering change request, anybody can request a change. This can be an idea for a new product, an issue that you discovered while working with an existing product, a suggestion for improving the product, or something else.
 
 After someone submits a request for change, the *review and approval process* is managed by a workflow that establishes who needs to approve it (for example, the product owner). For more information about workflows see the [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). For more information about product owners, see [Product owner](product-owner.md).
 
@@ -49,7 +51,7 @@ Engineering change orders let you make changes to engineering products using a s
 
 <!-- KFM: We should have a procedure here about how to create an engineering change order, and describe all of the options that are available. -->
 
-When the proposal for changes is finished, the review and approval process will be handled by a workflow. You can set up different workflows based on the priority and severity. For more information about workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). <!-- KFM: How to we attach a workflow to a change order? -->
+When the proposal for changes is finished, the review and approval process will be handled by a workflow. You can set up different workflows based on the priority and severity. For more information about workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). <!-- KFM: How do we attach a workflow to a change order? -->
 
 Typical stakeholders for approving an engineering change order include:
 
@@ -78,7 +80,7 @@ As described in [Engineering organization and data ownership rules](engineering-
   - Re-releasing to companies where the product was previously released. Use the **search** option to scan all previous releases, which you can view with the **view** option. Use the **process** option to re-release them.<!-- KFM: where are these options? How do we use them? -->
   - Auto-release settings in the release control of the engineering product category. You can do this as part of the workflow. With the block **collect release proposal** , the release proposal will be populated with **re-releasing proposals** (see previous bullet) and products to companies based on the **auto release** check mark in the release control of the engineering product category. The result can be viewed also via the **view** option as described in the previous bullet. With the block **process release proposal** , the products will be released as well. If you choose to only collect the release proposal as part of the workflow, you can manually start the release via the **process** option as described in the previous bullet.
 
-## Following up an engineering change request with an engineering change order
+## Follow up an engineering change request with an engineering change order
 
 As soon as an engineering change request is approved, you can follow it up with an engineering change order. You can combine multiple engineering change requests into a single engineering change order, which can even include different products. You'd typically do this when applying the same change needs to multiple products. However, you can't create multiple engineering change orders from a single engineering change request.
 

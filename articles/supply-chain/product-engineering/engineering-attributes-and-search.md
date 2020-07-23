@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Engineering attributes and engineering attribute search
 
+[!include [banner](../includes/banner.md)]
+
 To ensure that the all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
 
 ## Engineering attributes
@@ -82,12 +84,12 @@ Some engineering attributes apply to all products, while others will be specific
 
 ### Populate engineering attributes with values
 
-The engineering attributes connected to an engineering product category appear in the engineering product creation dialog. Here you can populate them with values. Afterwards, the values can be changed in the engineering version form or as part of engineering change management in an engineering change order. For more information, see [Engineering change management](engineering-change-management.md).
+The engineering attributes connected to an engineering product category are presented when you create a new engineering product based on that category. At that time, you can populate them with values. Afterwards, the values can be changed in the engineering version form or as part of engineering change management in an engineering change order. For more information, see [Engineering change management](engineering-change-management.md).
 
 <!-- KFM: We should provide a procedure with more details about how to create a new engineering product. Where do we start? What do we need to do differently compared to creating a "standard" product. -->
 
 ## Search for products using engineering attribute values
 
-With the engineering attribute search, you can find products by searching for their engineering attributes values. This makes it easy to find engineering products based on their characteristics. You can search within products of an engineering product category, or across all engineering products. The search is available on product master data forms, and from transactional places in the system such as sales orders. On a transactional form like a sales order, you can even use the engineering attribute form to search and create new lines with the **Add as new line** button.
+With the engineering attribute search, you can find products by searching for their engineering attributes values. This makes it easy to find engineering products based on their characteristics. You can search within products of an engineering product category, or across all engineering products. The search is available on product master data pages, and from transactional places in the system such as sales orders. On a transactional form like a sales order, you can even use the engineering attribute form to search and create new lines with the **Add as new line** button.
 
 <!-- KFM: How do we open this search form? What do we mean by "create new lines"?. -->

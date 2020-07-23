@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Engineering versions and engineering product categories
 
+[!include [banner](../includes/banner.md)]
+
 Engineering products evolve during their product lifecycle. There can be many reasons for this. For example, changes might be introduced to: improve product serviceability, change a component because the supplier no longer offers it, response to new insights, or fix mistakes made in the initial design. There are many reasons why such changes should be stored as part of an ongoing product without overriding previous data. For example:
 
 - You want to keep track of the product as it was manufactured and delivered to your customers in previous lifecycle states.
@@ -97,7 +99,7 @@ To work with engineering product categories, go to **Project Oaktree > Setup > E
 
 Make the following settings in the header of an engineering product category:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **Name** | Enter a name for the engineering product category. |
 | **Engineering organization** | Select the engineering organization where products of this engineering product category can be created and will be maintained. |
@@ -106,7 +108,7 @@ Make the following settings in the header of an engineering product category:
 
 Make the following settings in the **Details** FastTab of an engineering product category:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **Product subtype** | This setting controls whether engineering versions will have impact on logistical transactions. <!-- KFM: Is there more to say here? Seems like there may be more to this other than its affect on logistics. --> Choose one of the following:<ul><li>**Product** - If there is no **Product dimension group** selected, then there is no logistical impact.</li><li>**Product master** - If the selected **Product dimension group** has the version dimension active, there will be logistical impact on each engineering version. If the selected **Product dimension group** doesn't have the version dimension active, there is no logistical impact (each individual variant will have an engineering version, but no impact on transactions). |
 | **Product dimension group** | <!-- KFM: We should describe more about what the **Product dimension group** setting does. Seems like there is more to this other than its affect on logistics --> |
@@ -127,7 +129,7 @@ Use buttons in the **Attributes** FastTab toolbar to add, remove, and arrange at
 
 For each row that you add to the grid, make the following settings:
 
-| **Setting** | **Description** |
+| Setting | Description |
 | --- | --- |
 | **Name** | Select the attribute to add. |
 | **Value** | <!-- KFM: What does this do?  -->  |

@@ -29,32 +29,38 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Product readiness
 
-Use readiness checks to ensure that the needed master data is completed for a product before it is used in transactions. With a readiness check, a user or team is made responsible to validate certain (pre-defined) product related data. When there is an open readiness check, the product cannot be released nor used in transactions. Only when all the data is completed and verified and the readiness checks are processed, the active check mark on the engineering version of the product is enabled, which makes the version ready to be used; it can be released to other companies and used in transactions. Readiness checks can be created for new products, new variants and new engineering versions.
+[!include [banner](../includes/banner.md)]
+
+Use readiness checks to ensure that all the required master data has been specified for a product before it can be used in a transaction. With a readiness check, a user or team is made responsible to validate certain (pre-defined) product related data. When there is an open readiness check, the product can't be released or used in transactions.
+
+The **Active** check box for an engineering product, variant, or version is only enabled after all the required data has been entered and verified, and all the readiness checks have been processed. Only then can it be released to other companies and used in transactions. You can create readiness checks for new products, new variants and new engineering versions.
 
 ## Types of readiness checks
 
 There are three types of readiness checks:
 
-- **System checks**: The system will verify if there is a valid record. As an example, if there is an active Bill of Material.
-- **Manual checks**: The user will verify if there is a valid record. As an example, the default order settings must be validated. Based on the product in its phase, the situation can occur that there are no default order settings needed. As an example, while the product is still being designed and will not be put on stock yet. For another product of the same type however, the default order settings are required while it can be held on stock. The responsibility and knowledge to make the correct judgement lies with the user.
-- **Checklist**: Via a checklist, the user will answer questions of the checklist and the system will verify if the answers meet the expectations. The subject can be anything like if marketing material or product documentation is completed.
+- **System checks**: The system verifies whether there is a valid record. For example, if there is an active bill of materials.
+- **Manual checks**: A user verifies whether there the record is valid. For example, a readiness check may require the default order settings to be be validated. It can sometimes occur that no default order settings are actually needed, such as while the product is still being designed and therefore won't be placed in stock. However, for another product of the same type, the default order settings are required because it can be held in stock. The responsibility and knowledge to make the correct judgement lies with the user.
+- **Checklist**: The user will answer a series of questions from a checklist and the system will verify whether the answers meet expectations. The subject can be anything, such as whether marketing material or product documentation is completed.
 
 ## Create readiness checks
 
-When creating a new engineering product, the system will verify if readiness checks are set up on the engineering product category **applicable on released product level, released variant level and engineering version level**. If this is the case, two things will happen:
+When you create a new engineering product, the system will check whether readiness checks are set up on the engineering product category (applicable on released product level, released variant level, and engineering version level). If this is the case, two things will happen:
 
-- Readiness checks are created for the product
-- The engineering version is not active. This will block the products from being used
+- Readiness checks are created for the product.
+- The engineering version is set to inactive, which blocks the product from being used.
 
-In case a new variant is created for the product, the system will verify if readiness checks are setup on the engineering product category **applicable on released variant level and engineering version level**. If this is the case, two things will happen:
+If a new variant is created for a product, the system will check whether readiness checks are set up on the engineering product category (applicable on released variant level and engineering version level). If this is the case, two things will happen:
 
-- Readiness checks are created for the product
-- The engineering version is not active. This will block the products from being used
+- Readiness checks are created for the product.
+- The engineering version is set to inactive, which blocks the product from being used.
 
-In case a new engineering version is created for the product, the system will verify if readiness checks are setup on the engineering product category **applicable engineering version level**. If this is the case, two things will happen:
+If a new engineering version is created for a product, the system will check whether readiness checks are set up on the engineering product category (applicable on engineering version level). If this is the case, two things will happen:
 
-- Readiness checks are created for the product
-- The engineering version is not active. This will block the products from being used
+- Readiness checks are created for the product.
+- The engineering version is set to inactive, which blocks the product from being used.
+
+<!-- KFM How do we set up readiness checks for the product category? I think we may need a procedure. -->
 
 ## View readiness checks
 
@@ -66,12 +72,12 @@ For open readiness checks assigned to you, you can open the **My open readiness 
 
 ### Process system and manual readiness checks
 
-If you have opened the readiness form, you can view de subject of the system and manual readiness checks via the **View related information** option in the action pane. This will provide the option to complete and/ or validate the data for the readiness check. When the readiness check has the status pending, the readiness check is still open, and it needs to be processed. This can be done via the following options:
+If you have opened the readiness form, you can view the subject of the system and manual readiness checks via the **View related information** option in the action pane. This will provide the option to complete and/ or validate the data for the readiness check. When the readiness check has the status pending, the readiness check is still open, and it needs to be processed. This can be done via the following options:
 
 - Via the option **Check/ complete** in the action pane, the readiness check can be checked/ completed and the status is updated to passed.
 - Via the option **Skip** in the action pane, the readiness check can be skipped in case it is not mandatory. This can be applicable when there is no data setup which is also not required for the particular product. This can be the case for the cost price calculation for a product that is still in design. The status is updated to skipped.
 
-In case the readiness check is updated to status passed, it depends on the settings on the engineering product category, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval checkmark is set. This approval step is always mandatory when the readiness check is skipped.
+In case the readiness check is updated to status passed, it depends on the settings on the engineering product category, if the approval of the readiness check needs to be done as a separate step. In case it is not automatically approved, this needs to be done an additional step. In that case, click on **Approval** to complete the readiness check. The approval check mark is set. This approval step is always mandatory when the readiness check is skipped.
 
 In case there are no more open readiness checks, the engineering version becomes active and therefor ready for use automatically.
 
@@ -83,9 +89,11 @@ In case the readiness check is updated to status passed, it depends on the setti
 
 ## Set up readiness checks
 
-The types of data to be verified, can be different per type of product and therefor the readiness rules can be different per engineering product category. For more information, see ……
+Because types of data to be verified typically vary by product type, you can assign different readiness rules to each engineering product category (see also [Engineering versions and engineering product categories](engineering-versions-product-category.md)).
 
-On the fast tab Readiness control of the engineering product category, you can setup the readiness checks. Click on **Add system checks** to add system and manual readiness checks. Click on **Add existing questionnaire** to adda checklist. Complete the rest of the fields to finish the setup:
+<!-- KFM: I can't find any of these settings for the product category. Does the system still work like this? -->
+
+On the fast tab **Readiness control** of the engineering product category, you can set up the readiness checks. Select **Add system checks** to add system and manual readiness checks. Select **Add existing questionnaire** to add a checklist. Complete the rest of the fields to finish the setup:
 
 | **Setting** | Description |
 | --- | --- |
@@ -95,12 +103,14 @@ On the fast tab Readiness control of the engineering product category, you can s
 | **Company** | In case a single company is chosen, you must specify the company here |
 | **Owner type** | Select if the readiness check is assigned to a person or a team |
 | **Name** | Select the person or team to whom the check must be assigned |
-| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be setup with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. |
+| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be set up with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. <!-- KFM: We should provide detailed instructions for how to set up the checklist. -->|
 | **Automatic approval** | Will check/ complete also set the readiness check to Approved? |
 | **Mandatory** | Is the readiness check mandatory or can it be skipped? |
 
 ## Readiness policy
 
-To manage the readiness checks that apply to a product, the product readiness policies are used.
+Use product readiness policies to manage the readiness checks that apply to a product. <!-- KFM: How can we manage them? Where is this feature? -->
 
 The readiness policies contains a set of readiness checks. When the readiness policy is associated to an engineering product category, all the products created from that engineering product category will have the readiness checks indicated in the readiness policy.
+
+<!-- KFM: We should have a full procedure for how to create product readiness policies -->
