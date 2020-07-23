@@ -508,19 +508,16 @@ analyzes the following types of the **Registration ID**:
 
     `TaxRegistrationTypesList::OtherIdDoc`
 
-As a result of this analyzes system defined related **IDType**:
+As a result of this analyzes system defines related **IDType**
 
-    `TaxRegistrationTypesList::TAXID : '02'`
-
-    `TaxRegistrationTypesList::Passport : '03'`
-
-    `TaxRegistrationTypesList::OfficialIdDoc : '04'`
-
-    `TaxRegistrationTypesList::ResidenceCertificate : '05'`
-
-    `TaxRegistrationTypesList::OtherIdDoc : '06'`
-
-    `TaxRegistrationTypesList::NotCensused : '07'`
+| **Tax registration type** | **IDType in SII system**                                                                |
+|-----------------|--------------------------------------------------------------------------------|
+| `TaxRegistrationTypesList::TAXID`| 02                                                                         |
+| `TaxRegistrationTypesList::Passpor`| 03                                                                       |
+| `TaxRegistrationTypesList::OfficialIdDoc`| 04                                                                 |
+| `TaxRegistrationTypesList::ResidenceCertificate`| 05                                                          |
+| `TaxRegistrationTypesList::OtherIdDoc`| 06                                                                       |
+| `TaxRegistrationTypesList::NotCensused`| 07                                                                       |
 
 Sometimes, when a Spanish counteragent's tax exempt number (NIF) can't be found
 in the SII system's database, an invoice can't be accepted by the SII system. At
