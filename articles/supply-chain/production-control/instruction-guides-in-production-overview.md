@@ -125,7 +125,9 @@ Before you can attach guides to Asset management work orders, you must complete 
 
 #### Configure how guides appear on the shop floor
 
-Navigate to Mixed Reality / Dynamics 365 Guides / Configure Guides integration. You should see the field Environment URL filled in. This is the address of your Dynamics 365 Guides environment in CDS without the web protocol,like 'https://'. The value is used to compose addresses for your guides and will be encoded into the QR codes.
+Navigate to Mixed Reality / Dynamics 365 Guides / Configure Guides integration. You should see the field Organization name filled in. This is the unique name of your Dynamics 365 Guides environment in CDS which is the beginning of the URL of your CDS environment with the Guide application.
+For example if the environment URL is "https://Contoso123.crm.dynamics.com", then the value you would have in this field is "Contoso123".
+The value is used to compose addresses for your guides and will be encoded into the QR codes.
 
 In the  field QR code size allows you can customize the size in which the QR code will be rendered. We recommend to size the QR code to fill as much of the screen estate of your display. Typically 15 is a good value. 
 > [!TIP]
@@ -153,17 +155,44 @@ You can also assign Guides to the following objects directly to prescribe the in
 
 - [Resource](operations-resources.md)
 
-    You can add  a Guide to a resource so it will be offered in the context of relevant production jobs. On the Recource form navigate to the tab Associated Guides and  click the new button. Use the drop down in the Name column to select one of the guides that is available to you.
+    You can add  a Guide to a resource so it will be offered in the context of relevant production jobs.
+
+  - Typical use case
+
+    For example you could attach a Guide with general machine security or handling instructions to a resource of type machine.
+    The Guide will be available on every job that is performed on the machine.
+  - How to set up
+
+    On the Resource form navigate to the tab Associated Guides and  click the new button.
 
     :::image type="content" source="media/instruction-guides-Resource.png" alt-text="Addign a Guide to a production resource.":::
 
+    Use the drop down in the Name column to select one of the guides that is available to you. The filter option allows you to better identify Guides.
+
+    :::image type="content" source="media/instruction-guides-Resource-Selector.png" alt-text="Adding a Guide to a production resource.":::
+
 - [Resource Group](tasks/define-discrete-manufacturing-resource-group.md)
 
-    If you use resource groups to manage groups of machines, production lines or work cells and you want to make available relevant guides on this level, you would navigate to the Associated Guides tab on the Resource Group form and add the relevant guides.
+    If you use resource groups to manage groups of machines, production lines or work cells  you can assign relevant guides on this level.
+  - Typical use cases
+
+    You have defined a resource group for several machines pof the same model. Instead of assigning the relevant handling instruction guide for the machine model to every relevant resource, you would assign the Guide to the resource group that reflect tha machine model.
+
+    You have defined a resource group for a work cell that contains different machines and you have a Guide prepared for general instructions to maintenance of the work cell which applies to any production activity in this work cell.
+
+  - How to set up
+
+    Navigate to the Associated Guides tab on the Resource Group form and add the relevant guides using the+Add button and the Guide lookup.
 
 - [Release Product](../pim/tasks/create-released-product-single-company)
 
-    Product level Guides are useful to help shop floor workers with instructions relevant to operate or handle a released product or item. Navigate to the Associated Guides tab on the Release product form and add, remove or manage the associated Guides.
+  - Typical use cases
+  
+    Product level Guides are useful to help shop floor workers with instructions relevant to operate or handle a released product or item.
+
+  - How to set up
+
+    Navigate to the Associated Guides tab on the Release product form and add, remove or manage the associated Guides.
 
 - [Formula](bill-of-material-bom.md#formulas-co-products-and-by-products)
 - [Formula Version](bill-of-material-bom.md#bom-and-formula-versions)
