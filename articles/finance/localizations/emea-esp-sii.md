@@ -152,7 +152,7 @@ You must now import data from the **ES SII setup.zip** file into the
 
 11.  After the data entities are uploaded, on the Action Pane, select **Import**.
 
-![](media/emea-esp-sii-data-package-file.png)
+![](media/emea-esp-sii-data-entities-upload.png)
 
 You will receive a notification in **Action center**, or you can manually
 refresh the page to view the progress of the data import. When the import is
@@ -185,5 +185,60 @@ following electronic message item types.
 
 To review the imported electronic message item types, go to **Tax \> Setup \>
 Electronic messages \> Message item types**.
+
+## Set up the internet address and certificates for the SII system
+
+To interoperate with the SII system, you must use a security certificate that is
+provided by AEAT. There are two options for storing this sensitive data:
+
+-   Azure Key Vault storage
+
+-   Local storage
+
+For more information about how to set up Key Vault, see [Setting up Azure Key
+Vault
+Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client)
+and [Maintaining Azure Key Vault
+storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
+
+1.  Go to **System administration \> Setup \> System parameters**.
+
+2.  Set the **Use advanced certificate store** option to **No** to store
+    sensitive data locally. Set the option to **Yes** to use Key Vault storage.
+
+3.  If you set the **Use advanced certificate store** option to **Yes**, go to
+    **System administration \> Setup \> Key Vault parameters** to set up the Key
+    Vault parameters.
+
+4.  Go to **Tax \> Setup \> Parameters \> Electronic messages \> Web service
+    settings**.
+
+5.  Enter the following information to define the internet address for web
+    services.
+
+| **Web service name** | **Description**                                                                                                                                                                                                                 | **Testing internet address**                               |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| Cust invoice         | This web service is provided by AEAT. It's used to submit information about issued invoices, and it sends back a response that contains information about invoice processing on the SII system side.                            | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactFEV1SOAP`  |
+| Vend invoice         | This web service is provided by AEAT. It's used to submit information about received invoices, and it sends back a response that contains information about invoice processing on the SII system side.                          | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactFRV1SOAP`  |
+| Intra-community      | This web service is provided by AEAT. It's used to submit information about intra-community invoices, and it sends back a response that contains information about invoice processing on the SII system side.                   | `https://www7.aeat.es/wlpl/SSII-FACT/ws/oi/SiiFactOIV1SOAP`  |
+| Cust payment         | This web service is provided by AEAT. It's used to submit information about payments from customers for specific invoice types, and it sends back a response that contains information about processing on the SII system side. | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactCOBV1SOAP` |
+| Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
+| CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://www7.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
+
+>   Internet addresses are subject to change by AEAT. Therefore, we recommend
+>   that you check for actual internet addresses on the [official website of the
+>   SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+>   The official documentation also has information about the actual
+>   *production* internet addresses that you should set up.
+
+6.  On the **General** tab, in the **Key vault certificate** field, select the
+    security certificate that you set up for all web services that you will use
+    for interoperation with the SII system: **Cust invoice**, **Vend invoice**,
+    **Intra-community**, **Cust payment**, **Vend payment**, and
+    **CollectionInCash**.
+
+![](media/emea-esp-sii-setup-key-vault-certificate.png)
+
+>   This image shows you how to setup Key vault certificate for SII system.
 
 
