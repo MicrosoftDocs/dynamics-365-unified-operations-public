@@ -85,5 +85,18 @@ Deploy the environments by completing the following steps.
   - Click **OK** to save the changes.
      
 
-  
-  
+## Configuring Azure setup
+
+A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the next section and continue with procedure in the Manual Setup section below. 
+
+## Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
+
+A PowerShell script has been provided to easily set up the Azure resources described in [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). The steps for configuring Azure using the script are as follows. You will need rights to create an Azure resource group, Azure resources, and an AAD application. See [Check Azure AD permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app) for details on required permissions.
+
+1. Navigate to your target Azure subscription from the [Azure Portal](https://portal.azure.com). Just to the right of the **Search box**, click the **Cloud Shell** button.
+
+2. Select **PowerShell** in the new window that is displayed.
+
+3. Create storage if prompted. Upload the PowerShell script to the session. 
+
+
