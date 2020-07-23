@@ -5,7 +5,7 @@ title: DAS-2 report
 description: This topic guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: sndray
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,9 +44,9 @@ Before you generate the report for the first time, you must download the followi
 
 - Statistics on invoices.version.36.xml or later versions
 - Statistics on invoices model mapping.version.36.37.xml or later versions
-    - Statistics on invoices for DAS-2 model mapping.version.36.37.8 or later versions. This derive model supports partial payments and amounts with taxes
-    - DAS-2 report.version.36.30 (FR) or later versions
-    - DAS-2 form.version.36.30.15 (FR) or later versions 
+- Statistics on invoices for DAS-2 model mapping.version.36.37.8 or later versions. This derived model supports partial payments and amounts with taxes.
+- DAS-2 report.version.36.30 (FR) or later versions
+- DAS-2 form.version.36.30.15 (FR) or later versions 
 
 > [!NOTE]
 > For more information about how to download ER formats, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
@@ -90,14 +90,14 @@ Because the report includes the SIRET Système d'identification du répertoire d
 
 ## Statistics on invoices process
 
-Before to generate DAS-2 report, execute the process **Statistic on invoices** to calculate and generate all transactions will be reported in DAS-2 declaration. You can run the process in real time or schedule it to run in background by using a batch processing.
+Before to generate DAS-2 report, run the process **Statistic on invoices** to calculate and generate all transactions that will be reported in the DAS-2 declaration. You can run the process in real time or schedule it to run in background by using a batch processing.
 
-1. Go to **Accounts payable > Periodic tasks > Statistics on invoices**.
+1. Go to **Accounts payable** > **Periodic tasks** > **Statistics on invoices**.
 2. Select **Calculate statistics**.
-3. Select the "from" and "to" dates.
-4. Select the vendor posting profile.  Vendor posting profiles let you easily include vendor transactions for all vendors, a group of vendors, or a single vendor on the report that is generated. This option allows multiple selection of vendor posting profile and is mandatory. 
-5. Select the vendor group. This selection allows users to introduce an additional transaction filter. Vendor group is optional. 
-6. Select **OK** to execute the process.
+3. Select the from and to dates.
+4. Select the vendor posting profile. Vendor posting profiles let you easily include vendor transactions for all vendors, a group of vendors, or a single vendor on the report that is generated. This option allows you to select multiple vendor posting profiles and is mandatory. 
+5. Optoinal - Select the vendor group. This selection allows you to introduce an additional transaction filter.  
+6. Select **OK** to run the process.
 
 
 ## Generate the DAS-2 report
@@ -112,7 +112,7 @@ Follow these steps to generate the tax declaration report.
 
 3. Select the "from" and "to" dates.
 4. Select the vendor posting profile. 
-5. Select the vendor group
+5. Select the vendor group.
 
 > [!NOTE]
-> The DAS-2 report doesn't support transactions created and posted from general journal entry and accrual schema scenario. 
+> The DAS-2 report doesn't support transactions that are created and posted from a general journal entry and the accrual schema scenario. 
