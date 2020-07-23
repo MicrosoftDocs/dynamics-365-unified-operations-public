@@ -215,6 +215,24 @@ If you are unable to find any of the preceding applications, try the following i
 |     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
  
   
+  ## Configure entity store
+  
+  Set up the entity store in your Dynamics 365 Finance environment. 
+  
+ 1. So to the **Data connections** page (**System administration > Setup > System parameters > Data connections**).
+ 
+ 2. Set **Enable Data Lake integration** to **Yes**. 
+ 
+ 3. Set Azure key vault. 
+ 
+   - Application (client) ID: This is the App ID that you create above. 
+   - Application Secrete: The secrete you saved for the application created above
+   - DNS name: You can find the DNS name on the application details page for the application you created above
+   - Secrete name: storage-account-connection-string
+   
+   
+  
+  
   
   
 
