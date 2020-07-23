@@ -67,7 +67,7 @@ The following features are available to Commerce customers in Brazil in Commerce
 8. Sales via e-Commerce storefronts.
 9. Call-center sales.
 
-## Fiscal registration for Brazil
+### Fiscal registration for Brazil
 Fiscal registration stands for immediate registration of retail sales per local fiscal laws that are aimed to prevent tax fraud in the Retail industry. The following main fiscal registration methods are available in Brazil:
 1. Generation of an electronic fiscal document NFC-e (Nota Fiscal do Consumidor eletrônica) for a retail sale and submission of the document to tax authorities (SEFAZ - Secretaria de Fazenda) via a dedicated web service maintained by SEFAZ.
 2. Registration of a retail sale in a SAT fiscal device connected to POS using an electronic fiscal document CF-e (Cupom Fiscal eletrônico).
