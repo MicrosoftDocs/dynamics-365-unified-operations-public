@@ -53,7 +53,7 @@ Follow the steps in this section to create a new Commerce Scale Unit extension.
 
 ### Extension class diagram
 
-![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
+![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
 
 The following illustration shows the class structure of the extension.
 
