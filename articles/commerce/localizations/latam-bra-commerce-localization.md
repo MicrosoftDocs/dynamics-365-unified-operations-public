@@ -76,7 +76,7 @@ Fiscal registration stands for immediate registration of retail sales per local 
 Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents in accordance with the legal requirements in Brazil are configured using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality. Submission of electronic fiscal documents is done via the [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). You can find additional details on the electronic fiscal document submission process and configuration for Brazil on the following page: [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
 
 > [!NOTE]
-> Integration with fiscal printers is not available in Commerce. You can leverage the N-1 capabilities to integrate Microsoft Dynamics AX 2012 R3 Retail Enterprise Point of Sale (EPOS), which supports the integration with fiscal printers for Brazil, with Commerce Headquarters.
+> Integration with fiscal printers is not available in Commerce. You can leverage the [N-1 capabilities](../dev-itpro/n-1-installation-configuration.md) to integrate Microsoft Dynamics AX 2012 R3 Retail Enterprise Point of Sale (EPOS), which supports the integration with fiscal printers for Brazil, with Commerce Headquarters.
 
 ## Availability of Commerce localization features for Brazil
 
