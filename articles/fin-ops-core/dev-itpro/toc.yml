@@ -152,6 +152,8 @@
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
