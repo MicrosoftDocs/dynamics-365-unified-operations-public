@@ -118,6 +118,92 @@ The **modules** section lists the modules that are included inside the page arra
 
 The preceding example can be accessed by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
 
+## Rendering context mocks
+
+The "renderingContext" node provides additional mock data that the modules can access via the **this.props.context.request** object.  This can include the bootstrap grid breakpoints, the locale and user context.  See the [Request properties object](request-properties-object.md) documentation for more information.
+
+### Simulate the signed in state
+
+Some modules may have logic that needs to check the signed in state of the user and take appropriate action. Typically the module would get the state from the **this.props.context.request.user** object.  B2C sign in is not supported in a development environment, the user object can be mocked with the **userContext** node as shown in the below example:
+
+```json
+{
+    "exception": null,
+    "pageRoot": {
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "product-feature",
+                                "config": {
+                                    "imageAlignment": "left",
+                                    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                    "productImage": {
+                                        "src" : "https://bit.ly/33cMGxr",
+                                        "altText" : "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+                                    },
+                                    "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "renderingContext": {
+        "gridSettings": {
+            "xs": {
+                "w":767
+            },
+            "sm": {
+                "w":991
+            },
+            "md": {
+                "w":1199
+            },
+            "lg": {
+                "w":1599
+            },
+            "xl": {
+                "w":1600
+            }
+        },        
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
+        },
+        "locale": "en-us",
+        "userContext": {
+            "token": "<TOKEN>",
+            "isAuthenticated": true,
+            "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+            "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+            "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+            "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+            "signinName": "<User Name>",
+            "firstName": "<User First Name>",
+            "lastName": "<User Last Name>",
+            "tenantId": "",
+            "customerAccountNumber": "<User Account Number(HQ)>",
+            "name": "<User Name>",
+            "emailAddress": "<User Email Address>"
+        },
+    },
+    "statusCode": 200
+}
+```
+
+If you need to simulate real data returned from Commerce Server after a user signs in or the token it's as simple as signing into your production e-Commerce site and using the F12 browser tools to copy the data.  The user info is available in Global JS variable "___initialData___.requestContext.user".  With the F12 browser tool open and user signed in, open a console and type **___initialData___.requestContext.user** to see the object.  You can now update the above **userContext** properties as needed including the **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name** and **emailAddress**.
+
+
 ## Additional resources
 
 [Create a new module](create-new-module.md)
