@@ -46,7 +46,7 @@ Each delivery mode can have an associated charge. For more information about con
 
 In Commerce version 10.0.13, the delivery options module has been updated to support **Header charges without proration** and **Shipping as a line charge** features. If proration is not turned on, the expectation is that the e-Commerce workflow does not allow a mixed mode of delivery (some items shipped, some to be picked up) for the items in the cart. The **Header charges without proration** feature requires that the **Enable consistent delivery mode handling in channel** flag in Commerce headquarters is turned on. When the flag is enabled, shipping charges will be applied at the header or line level, depending the configuration in Commerce headquarters. 
 
-The Fabrikam theme supports a mixed mode of delivery where some items can be selected for shipping and some for pickup. In this mode, shipping charges will be prorated for all items that are selected for the shipping mode of delivery. For a mixed mode of delivery to work, you must configure the **Header charges with proration** feature in Commerce headquarters, for more information on this configuration see [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md).  
+The Fabrikam theme supports a mixed mode of delivery where some items can be selected for shipping and some for pickup. In this mode, shipping charges will be prorated for all items that are selected for the shipping mode of delivery. For a mixed mode of delivery to work, you must first configure the **Header charges with proration** feature in Commerce headquarters, for more information on this configuration see [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md).  
 
 If shipping charges apply to line items, they can be displayed on the cart line for each item. This requires the **Show shipping charges on line item** property to be enabled on both the cart and checkout modules. For more information, see [Cart module](add-cart-module.md) and [Checkout module](add-checkout-module.md).
 
@@ -64,7 +64,7 @@ The following image shows an example of a delivery options module on a checkout 
 
 ## Add a delivery options module to a checkout page and set the required properties
 
-A delivery options module can only be added to a checkout module. For more information on configuring the delivery options module and adding it to a checkout page, see [Checkout module](add-checkout-module.md].
+A delivery options module can only be added to a checkout module. For more information on configuring the delivery options module and adding it to a checkout page, see [Checkout module](add-checkout-module.md).
 
 ## Additional resources
 
