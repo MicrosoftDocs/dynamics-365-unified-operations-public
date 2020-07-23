@@ -115,24 +115,102 @@ For more information, see Download Electronic reporting configurations from Life
 
 9.  In the **Spanish VAT list** dialog box, set the following fields.
 
-| **Field**                                            | **Description**                                                                                                                                   |
-|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| VAT book                                             | Select a VAT book.                                                                                                                                |
-| Description                                          | Enter a description of the VAT book.                                                                                                              |
-| Settlement period                                    | Select a settlement period.                                                                                                                       |
-| From date                                            | Enter the first date of the sales tax settlement period                                                                                           |
-| Method of numbering                                  | Select a numbering method: -   **Document number** – The number of the VAT report line equals the invoice
-    number. -   **Number sequence code** – The number of the VAT report line is taken from
-    the number sequence that is defined in the **Number sequence code** field on
-    the **Spanish VAT books** page. -   **Manual** – The numbering for VAT report lines is defined in the **Manual
-    numbering** section of the dialog box. -   **340 sequence** – VAT report lines are numbered separately for purchases
-    and sales. In both cases, the line numbers start from 1.                                                                                                                       |
-| Start numbering (in the **Manual numbering** section) | Enter the first line number.                                                                                                                      |
-| Template (in the **Manual numbering** section)  | Enter the template for the line number. For example, enter **\#\#\#\#\#**.                                                                        |
-| Replacement declaration                              | Set this option to **Yes** to replace the previous declaration.                                                                                   |
-| Previous declaration number                          | Enter the 13-digit number of the previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
-| Minimum payment account in cash                      | Enter the minimum cash payment amount that should be reported in the declaration.                                                                 |
-
+<table>
+<tbody>
+<tr>
+<td width="226">
+<p><strong>Field</strong></p>
+</td>
+<td width="359">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>VAT book</p>
+</td>
+<td width="359">
+<p>Select a VAT book.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Description</p>
+</td>
+<td width="359">
+<p>Enter a description of the VAT book.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Settlement period</p>
+</td>
+<td width="359">
+<p>Select a settlement period.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>From date</p>
+</td>
+<td width="359">
+<p>Enter the first date of the sales tax settlement period</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Method of numbering</p>
+</td>
+<td width="359">
+<p>Select a numbering method:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Document number</strong> &ndash; The number of the VAT report line equals the invoice number.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Number sequence code</strong> &ndash; The number of the VAT report line is taken from the number sequence that is defined in the <strong>Number sequence code</strong> field on the <strong>Spanish</strong> <strong>VAT books</strong> page.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Manual</strong> &ndash; The numbering for VAT report lines is defined in the <strong>Manual numbering</strong> section of the dialog box.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>340 sequence</strong> &ndash; VAT report lines are numbered separately for purchases and sales. In both cases, the line numbers start from 1.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Start numbering<br /> (in the <strong>Manual numbering</strong> section)</p>
+</td>
+<td width="359">
+<p>Enter the first line number.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Template<br /> (in the <strong>Manual numbering</strong> section)</p>
+</td>
+<td width="359">
+<p>Enter the template for the line number. For example, enter <strong>#####</strong>.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Replacement declaration</p>
+</td>
+<td width="359">
+<p>Set this option to <strong>Yes</strong> to replace the previous declaration.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Previous declaration number</p>
+</td>
+<td width="359">
+<p>Enter the 13-digit number of the previous declaration. This field can be edited only if the <strong>Replacement declaration</strong> option is set to <strong>Yes</strong>.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>Minimum payment account in cash</p>
+</td>
+<td width="359">
+<p>Enter the minimum cash payment amount that should be reported in the declaration.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 10.  Select **OK** to create a line on the **Spanish VAT reports** page, based on
     the criteria that you defined in the previous step.
@@ -145,20 +223,69 @@ Note: You can't change the values in the **Settlement period**, **Method of numb
 
 12.  On the **General** tab, set the following fields.
 
-| **Field**                          | **Description**                                                                                                                                                                                                                                                            |
-|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Presentation type                  | Select the type of media to use for the exported file:                                                                                                                                                                                                                     |
-| Reported                           | Set this option to **Yes** to indicate that the declaration has been reported. The **Presentation date** field will be set to the current date, and the **Reported by** field will be set to the user's ID.                                                                |
-| Contact person                     | Enter the name of the contact person.                                                                                                                                                                                                                                      |
-| Telephone                          | Enter the telephone number of the contact person.                                                                                                                                                                                                                          |
-| Document number of the declaration | Enter the four-digit document number. If you enter a number that has fewer than four digits, leading zeros will be added to create a four-digit number. For example, if you enter **1**, the system automatically converts the value to **0001** and stores the new value. |
-| Electronic code                    | Enter the 16-digit electronic code. This number is mandatory and is provided by the tax authorities.                                                                                                                                                                       |
-
--   **Telematic** – Upload the report to the tax authorities' website, or submit
-    the report by using the free software that is provided by the tax
-    authorities.
-
--   **CD-R** – Send the report to the tax authorities on a CD-ROM.
+<table>
+<tbody>
+<tr>
+<td width="151">
+<p><strong>Field</strong></p>
+</td>
+<td width="434">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Presentation type</p>
+</td>
+<td width="434">
+<p>Select the type of media to use for the exported file:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Telematic</strong> &ndash; Upload the report to the tax authorities' website, or submit the report by using the free software that is provided by the tax authorities.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>CD-R</strong> &ndash; Send the report to the tax authorities on a CD-ROM.</p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Reported</p>
+</td>
+<td width="434">
+<p>Set this option to <strong>Yes</strong> to indicate that the declaration has been reported. The <strong>Presentation date</strong> field will be set to the current date, and the <strong>Reported by</strong> field will be set to the user's ID.</p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Contact person</p>
+</td>
+<td width="434">
+<p>Enter the name of the contact person.</p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Telephone</p>
+</td>
+<td width="434">
+<p>Enter the telephone number of the contact person.</p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Document number of the declaration</p>
+</td>
+<td width="434">
+<p>Enter the four-digit document number.</p>
+<p>If you enter a number that has fewer than four digits, leading zeros will be added to create a four-digit number. For example, if you enter <strong>1</strong>, the system automatically converts the value to <strong>0001</strong> and stores the new value.</p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p>Electronic code</p>
+</td>
+<td width="434">
+<p>Enter the 16-digit electronic code. This number is mandatory and is provided by the tax authorities.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 13.  Select **VAT report lines** to open the **VAT report lines** page. On this
     page, you can view the details of the VAT transactions that are transferred
