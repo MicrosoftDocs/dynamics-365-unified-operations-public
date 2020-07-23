@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# "Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)"
+# Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 
 [!include [banner](../includes/banner.md)]
 
@@ -240,5 +240,90 @@ storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-
 ![](media/emea-esp-sii-setup-key-vault-certificate.png)
 
 >   This image shows you how to setup Key vault certificate for SII system.
+
+## Set up EM parameters for the SII system
+
+After the data entities are imported into the database, complete the following
+tasks. When you've completed them, the electronic message functionality will be
+ready to use.
+
+1.  Set up executable class parameters.
+
+2.  Set up additional fields and auto-definition rules.
+
+3.  Set up number sequences for electronic messages.
+
+4.  Set up batch settings for automated processing of interoperation with the
+    SII system.
+
+5.  Set up security roles for electronic message processing.
+
+## Set up executable class parameters
+
+Three executable classes are included in the two types of electronic messages
+processing (**SII** and **CollectionInCash**) that are used to interoperate with
+the SII system and imported into the system by using a package of data entities.
+
+| **Executable class name**    | **Description**                                                                                                                                             |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SIIGenerateItems             | This class fills in EM items of the following types:                                                                                                        |
+| SIIPartyAttributesEvaluation | For filled-in EM items (in **Creado** status), this class evaluates the values for the following additional fields:                                         |
+| MonitorCollectionInCash      | This class monitors changes in the data of records of the **Collections in cash** report and then updates the status of EM items in the appropriate manner. |
+
+-   Customer invoice (FacturasСliente)
+
+-   Vendor invoice (FacturasProveedores)
+
+-   Customer payment (PagosCliente)
+
+-   Vendor payment (PagosProveedores)
+
+-   Intra-community operations (OperacionesIntracomunitarias)
+
+For filled-in EM items, this class evaluates values for the following additional
+fields:
+
+-   Invoice type (TipoFactura)
+
+-   Summary reference (NumSerieFactura)
+
+-   Special schema code (ClaveRegimenEspecialOTrascendencia)
+
+-   Intracommunity transaction ID (TipoOperacion)
+
+-   Registration number (ID)
+
+-   Tax ID type (IDType)
+
+-   Party ISO code (CodigoPais)
+
+### Set up the SIIGenerateItems executable class
+
+1.  To set up parameters of the **SIIGenerateItems** executable class, go to
+    **Tax \> Setup \> Electronic messages \> Executable class settings**.
+
+2.  On the **Executable class settings** page, select the **SIIGenerateItems**
+    executable class that is associated with the **EMCreateItemsController**
+    executable class name.
+
+3.  On the Action Pane, select **Parameters**, and then, in the dialog box that
+    appears, set the following values for the parameters of the executable
+    class.
+
+| **Parameter name**            | **Value**                          |
+|-------------------------------|------------------------------------|
+| Invoice type                  | TipoFactura                        |
+| Summary reference             | NumSerieFactura                    |
+| Special scheme code           | ClaveRegimenEspecialOTrascendencia |
+| Intracommunity transaction ID | TipoOperacion                      |
+| Customer invoices             | FacturasСliente                    |
+| Customer payments             | PagosCliente                       |
+| Vendor invoices               | FacturasProveedores                |
+| Vendor payments               | PagosProveedores                   |
+| Intracommunity operations     | OperacionesIntracomunitarias       |
+
+4.  Select **OK** to initiate the executable class.
+
+![](media/emea-esp-sii-siigenerateitems-executable-class.png)
 
 
