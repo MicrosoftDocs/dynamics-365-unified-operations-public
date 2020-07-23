@@ -50,13 +50,12 @@ The following image shows an example of a Fabrikam checkout module on a checkout
 
 A checkout module shows an order summary and provides the functionality for placing an order. To gather all the customer information that is required before an order can be placed, additional modules must be added to the checkout module. Therefore, retailers have the flexibility to add custome modules to the checkout flow, or to exclude modules, based on their requirements.
 
-
 | Property name  | Values | Description |
 |----------------|--------|-------------|
 | Checkout heading | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Displays a heading for the checkout module. |
-| Order summary heading | Heading | Heading for the order summary section of the module|
-| Cart line items heading| Heading| Heading for the cart line items shown in the checkout module|
-| Show shipping charges on line item| True or False| If True, shows the shipping charges that are applicable for line items on the cart line. If its Header charge with no proration, the shipping charge will be applied at the header level and not line level. This feature was added in 10.0.13|
+| Order summary heading | Heading text | Heading for the order summary section of the module. |
+| Cart line items heading| Heading text | Heading for cart line items shown in the checkout module. |
+| Show shipping charges on line item | True, False| If True, shows the shipping charges that are applicable for line items on the cart line. If **Header charge with no proration** is enabled in Commerce headquarters, the shipping charge will be applied at the header level and not the line level. This feature was added in Commerce version 10.0.13. |
 
 ## Modules that can be used in the checkout module
 
@@ -90,7 +89,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
-- **Checkout terms and conditions** - This module displays rich text to show the terms and conditions and a check box to receive the customer input. The check box is optional and configurable. The information is captured by the module and can be used as a check before order placement is triggered, but is not included in the order summary information. The module can be added to the checkout container, checkout section container, or terms and conditions slots according to business needs. If added to the checkout or checkout section container, it will appear as a step in the checkout process. If added to the terms and conditions slot, it will appear near the place order button.
+- **Checkout terms and conditions** - This module displays Rich Text to show the terms and conditions and a check box to receive the customer input. The check box is optional and configurable. The information is captured by the module and can be used as a check before order placement is triggered, but is not included in the order summary information. The module can be added to the checkout container, checkout section container, or terms and conditions slots according to business needs. If added to the checkout or checkout section container, it will appear as a step in the checkout process. If added to the terms and conditions slot, it will appear near the place order button.
 
    ![Example of checkout terms and conditions](./media/ecommerce-checkout-terms.PNG)
 
