@@ -230,7 +230,31 @@ If you are unable to find any of the preceding applications, try the following i
    - DNS name: You can find the DNS name on the application details page for the application you created above
    - Secrete name: storage-account-connection-string
    
-   
+## Configure the Data Lake
+
+Add Azure Data Lake add-in to the environment in LCS. 
+
+1. Log in to the LCS and click **Full Details** under the environment name, which is on the right side of the page. 
+
+2. Click the **Environment add-ins** section and select **+ Install a new add-in**.
+
+3. Select **Azure Data Lake. 
+
+4. Enter the following values. 
+
+|     Value                                                                                |     Description                                    |
+|------------------------------------------------------------------------------------------|----------------------------------------------------|
+|     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: Azure portal > Azure Active Directory > Tenant ID          |
+|     Provide   the DNS name of your Key Vault                                             |     The   DNS name of the Key Vault (same as what is used in Entity store). For example, &lt;https://customkeyvault.vault.azure.net/&gt;                                               |
+|     Provide   the secret that contains the name of the storage account                   |     storage-account-name                                      |
+|     Secret   Name for App ID to be used for accessing Data Lake                          |     app-id                                                    |
+|     Secret   name to be used with App ID                                                 |     app-secret                                                |
+
+5. Agree to the terms and click **Install**.
+
+6. The add-in will be installed within a few minutes. 
+
+
   
   
   
