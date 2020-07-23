@@ -372,4 +372,178 @@ fields:
 
 ![](media/emea-esp-sii-monitorcollectionincash-executable-class.png)
 
+## Set up additional fields and auto-definition rules
+
+EM items have additional fields that are included in the two types of electronic
+message processing (**SII** and **CollectionInCash**) that are used to
+interoperate with the SII system and imported into the system by using a package
+of data entities. Additional fields are associated with EM items and are
+required for their processing. The system automatically sets values for
+additional fields when actions are run, but you can manually set and adjust the
+values of additional fields before you submit the information to the SII system.
+Additional fields are named according to related elements of the report. For
+more information about what each related report element is, see the [official
+documentation for the SII
+system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+
+| **Additional field**               | **Description**                | **Type of processing where the field is used**                                                                                                                                                 | **Action/executable class that the field is set by**                                                                                                                                                                                                                                                               |
+|------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TipoComunicacion                   | Communication type             | **SII** and **CollectionInCash**. This field is applicable only to the **FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**, and **CobrosEnMetálico** EM item types. | **GenerateMessageItem** action for **SII** processing. The default value is **A0**. The value is updated to **A1** during import of the response by the **ImportResponse** action when the invoice is successfully accepted by the SII system. **PopulateMessageItem** action for **CollectionInCash** processing. |
+| ID                                 | Registration ID                | **SII** and **CollectionInCash**. This additional field is applicable to all EM item types.                                                                                                    | **EvaluationFields** action, **SIIPartyAttributesEvaluation** executable class.                                                                                                                                                                                                                                    |
+| IDType                             | Counterparty ID type           | **SII** and **CollectionInCash**. This field is applicable to all EM item types.                                                                                                               | **EvaluationFields** action, **SIIPartyAttributesEvaluation** executable class.                                                                                                                                                                                                                                    |
+| CodigoPais                         | ISO code                       | **SII** and **CollectionInCash**. This field is applicable to all EM item types.                                                                                                               | **EvaluationFields** action, **SIIPartyAttributesEvaluation** executable class.                                                                                                                                                                                                                                    |
+| ClaveRegimenEspecialOTrascendencia | Special scheme code            | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types.                                                                              | **GenerateMessageItem** action, **SIIGenerateItems** executable class. The default value is **01**. Setup of auto-definition rules is available.                                                                                                                                                                   |
+| NumSerieFactura                    | Summary reference              | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types.                                                                              | **GenerateMessageItem** action, **SIIGenerateItems** executable class.                                                                                                                                                                                                                                             |
+| TipoFactura                        | Invoice type                   | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types                                                                               | **GenerateMessageItem** action, **SIIGenerateItems** executable class. The default value is **01**. Setup of auto-definition rules is available.                                                                                                                                                                   |
+| TipoOperacion                      | Intra-community operation type | **SII** only. This field is applicable only to the **OperacionesIntracomunitarias** EM item type.                                                                                              | Manual definition. The default value is **A**. Setup of auto-definition rules is available and can be applied during execution of the **GenerateMessageItem** action.                                                                                                                                              |
+| EmitidaPorTerceros                 | Issued by third parties        | **SII** only. This field is applicable only to the **FacturasСliente** EM item type.                                                                                                           | Manual definition only. The default value is **N**. Setup of auto-definition rules is available.                                                                                                                                                                                                                   |
+| EntidadSucedidaNIF                 | Succeeded legal entity Tax ID  | **SII** only. This field is applicable only to the **FacturasСliente**, **FacturasProveedores**, and **OperacionesIntracomunitarias** EM item types.                                           | Manual definition. Setup of auto-definition rules is available.                                                                                                                                                                                                                                                    |
+| EntidadSucedidaNombreRazon         | Succeeded legal entity name    | **SII** only. This field is applicable only to the **FacturasСliente**, **FacturasProveedores**, and **OperacionesIntracomunitarias** EM item types.                                           | Manual definition. Setup of auto-definition rules is available.                                                                                                                                                                                                                                                    |
+| ReferenciaCatastral                | Cadastral reference            | **SII** only. This field is applicable only to the **FacturasСliente** EM item type.                                                                                                           | Manual definition. Setup of auto-definition rules is available.                                                                                                                                                                                                                                                    |
+| SituacionInmueble                  | Property location              | **SII** only. This field is applicable only to the **FacturasСliente** EM item type.                                                                                                           | Manual definition. Setup of auto-definition rules is available.                                                                                                                                                                                                                                                    |
+
+### Algorithm to define the value of the TipoComunicacion (Communication type) additional field
+
+The **TipoComunicacion** (**Communication type**) additional field is
+automatically defined by the system for message items of the
+**FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**,
+and **CobrosEnMetálico** types. For a list of values that can be assigned to
+**TipoComunicacion**, see the [official documentation for the
+SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+
+The following values are available for the **TipoComunicacion** additional field
+as part of the predefined setup for electronic messages.
+
+| **Field value** | **Description (Spanish)**                                | **Description (English)** |
+|-----------------|----------------------------------------------------------|---------------------------|
+| A0              | Alta de facturas/registro                                | Invoice registration      |
+| A1              | Modificación de facturas/registros (errores registrales) | Modification of invoices  |
+
+The default value of the **TipoComunicacion** additional field is defined as
+**A0** on the **Message item additional fields** FastTab in the definition of
+**SII** and **CollectionInCash** processing (**Tax \> Setup \> Electronic
+messages \> Electronic message processing**). Later, when Finance receives a
+response from the SII system that the invoice was successfully accepted, the
+invoice's **TipoComunicacion** value is updated to **A1** by the
+**ImportResponse** action.
+
+### Algorithm to define the value of the ID (Registration ID) additional field
+
+The **ID** (**Registration ID**) additional field is automatically defined by
+the system for EM items of all types during the evaluation of additional fields.
+For counterparties that registered for VAT outside Spain, the value of the
+**ID** additional field is reported in the **ID** tag under the **IDOtro** tag
+of the report. For counterparties from Spain, the value is reported in the
+**NIF** tag.
+
+The value of the **ID** additional field is defined by the **EvaluationFields**
+action that is associated with the **SIIPartyAttributesEvaluation** executable
+class. This class retrieves the tax exempt number that is specified for the
+invoice during invoice posting. If the tax exempt number isn't specified for an
+invoice before posting, the system collects the value for the **ID** additional
+field from the **Tax exempt number** field in the counterparty master data.
+
+For counterparties from EU or outside of the EU, **ID** additionally field will
+be supplemented with related ISO code.
+
+### Algorithm to define the IDType (Counterparty ID type) additional field
+
+The **IDType** (**Counterparty ID type**) additional field is automatically
+defined by the system for EM items of all types during the evaluation of
+additional fields. For the list of values that can be set for **IDType**, see
+the [official documentation for the
+SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+
+The following values are available for the **IDType** additional field as part
+of the predefined setup for electronic messages.
+
+| **Field value** | **Description**                                                                |
+|-----------------|--------------------------------------------------------------------------------|
+| 02              | NIF-VAT                                                                        |
+| 03              | Passport                                                                       |
+| 04              | Official identification document issued by the country or region of residence. |
+| 05              | Residence certificate                                                          |
+| 06              | Other supporting document                                                      |
+| 07              | Not registered                                                                 |
+
+Value of the **IDType** additional field is reported in the **IDType** tag under
+the **IDOtro** tag of the report.
+
+By default, for counterparties outside of Spain, when **Registration ID** is not
+defined in the counterparty’s master data, the system defines the following
+values for the **IDType** additional field:
+
+-   **02** – For EU counterparties
+
+-   **04** – For third-country counterparties
+
+When **Registration ID** is defined on the counterparty’s master data, system
+analyzes the following types of the **Registration ID**:
+
+1.  For Spanish counteragents:
+
+TaxRegistrationTypesList::NotCensused
+
+TaxRegistrationTypesList::TAXID
+
+2.  For EU counteragents:
+
+TaxRegistrationTypesList::TAXID
+
+TaxRegistrationTypesList::OfficialIdDoc
+
+TaxRegistrationTypesList::Passport
+
+TaxRegistrationTypesList::ResidenceCertificate
+
+TaxRegistrationTypesList::OtherIdDoc
+
+3.  All other counteragents:
+
+TaxRegistrationTypesList::OfficialIdDoc
+
+TaxRegistrationTypesList::Passport
+
+TaxRegistrationTypesList::ResidenceCertificate
+
+TaxRegistrationTypesList::OtherIdDoc
+
+As a result of this analyzes system defined related **IDType**:
+
+TaxRegistrationTypesList::TAXID : '02'
+
+TaxRegistrationTypesList::Passport : '03'
+
+TaxRegistrationTypesList::OfficialIdDoc : '04'
+
+TaxRegistrationTypesList::ResidenceCertificate : '05'
+
+TaxRegistrationTypesList::OtherIdDoc : '06'
+
+TaxRegistrationTypesList::NotCensused : '07'
+
+Sometimes, when a Spanish counteragent's tax exempt number (NIF) can't be found
+in the SII system's database, an invoice can't be accepted by the SII system. At
+the same time, a customer invoice where the counteragent isn't registered in the
+SII system's database can be sent to the SII system when related tax exempt
+number of the counteragent reported in the **IdOtro** tag by using an **IdType**
+value of **07**. In this case, the SII system will “accept with errors” the
+invoice.
+
+You can manually adjust the value of the **IDType** additional field before you
+submit the invoice to the SII system.
+
+### Algorithm to define the CodigoPais (ISO code) additional field
+
+The **CodigoPais** (**ISO code**) additional field is automatically defined by
+the system for EM items of all types during the evaluation of additional fields.
+The value of the **CodigoPais** additional field is reported in the
+**CodigoPais** tag under the **IDOtro** tag of the report, and identifies the
+country or region of the tax registration number of the counterparty from the
+document.
+
+By default, the system defines the value of the **CodigoPais** additional field
+as the International Organization for Standardization (ISO) county/region code
+from the primary address of the counterparty.
+
 
