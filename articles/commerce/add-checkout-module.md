@@ -77,13 +77,11 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Loyalty points** – This module lets a customer pay for an order by using loyalty points. It provides a summary of available points and expiring points, and lets the customer select the number of points to redeem. If the customer isn't signed in or isn't a loyalty member, or if the total amount in the cart is 0 (zero), this module is automatically hidden.
 
-- **Payment** – This module lets a customer pay for an order using a credit or debit card. For more information on this module, see [Payment module](add-payment-module.md).
+- **Payment** – This module lets a customer pay for an order using a credit or debit card, and also lets a customer provide billing address for the payment option that they chose. For more information on this module, see [Payment module](add-payment-module.md).
 
-- **Billing address** – This module lets a customer provide billing address for the payment option that they chose. For more information on this module, see [Billing address module](add-payment-module.md).
+     The following image shows an example of gift card, loyalty points, and payment modules on a checkout page.
 
-     The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
-
-    ![Example of gift card, loyalty points, payment, and billing address modules](./media/ecommerce-payments.PNG)
+    ![Example of gift card, loyalty points, and payment modules on a checkout page](./media/ecommerce-payments.PNG)
 
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
@@ -91,7 +89,9 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Checkout terms and conditions** - This module displays Rich Text to show the terms and conditions and a check box to receive the customer input. The check box is optional and configurable. The information is captured by the module and can be used as a check before order placement is triggered, but is not included in the order summary information. The module can be added to the checkout container, checkout section container, or terms and conditions slots according to business needs. If added to the checkout or checkout section container, it will appear as a step in the checkout process. If added to the terms and conditions slot, it will appear near the place order button.
 
-   ![Example of checkout terms and conditions](./media/ecommerce-checkout-terms.PNG)
+    The following image shows an example of terms and conditions on a checkout page.
+
+    ![Example of terms and conditions on a checkout page](./media/ecommerce-checkout-terms.PNG)
 
 ## Commerce Scale Unit interaction
 
