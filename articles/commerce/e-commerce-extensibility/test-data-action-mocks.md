@@ -36,32 +36,18 @@ This topic describes how to test data actions with mock data.
 
 ## Overview
 
-By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. Action mocks are useful if you want to test your module without invoking the actual action.
+By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. 
+It may be useful to test your module without invoking the actual action using an action mock.  You will need to do this if you haven't configured your Commerce server in the MSDyn365Commerce_BASEURL property in ".env" file. See [Configure a development environment (.env) file](configure-env-file.md) for more information.
+
 
 ## Action mock structure
 
-Action mocks represent the expected output data of an action. They should be created by the action developer.
+To create a data action mock, create a new file under “src/module/MODULE_NAME/mocks/” directory for your module, for example **myModuleMock.actionmock.json**  (note: this file name must have the extension “.actionmock.json” but can start with any name).
 
-The following example shows the placement of the action mock file.
+Example
+```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
 
-```text
-src
-|__actions
-|__modules
-|__mocks
-|__|__my-package.actionmock.json
-```
-
-Alternatively, the mock file can be put under a module.
-
-```text
-src
-|__actions
-|__modules
-|__|__MODULE_NAME
-|__|__|__mocks
-|__|__|__|__MODULE_NAMEMock.actionmock.json
-```
+You can now simulate the data action return object inside the file.  Note you need to specify the **CasheObjectType** and **CacheKey** that is definied in the data action.  The **CacheKey** can be set to "*" to accept any Cachekey, see [Data actions](data-actions.md) for more information.
 
 The following example shows how the MODULE\_NAMEMock.actionmock.json file should be structured.
 
@@ -75,29 +61,77 @@ The following example shows how the MODULE\_NAMEMock.actionmock.json file should
 }
 ```
 
-If no **CacheKey** value is specified, all actions that have the corresponding **CacheObjectType** value receive the mock output.
+If no **CacheKey** value is specified or "*" is used, all actions that have the corresponding **CacheObjectType** value receive the mock output.
 
 ## Example
 
-The following example shows a data action mock that returns product data.
+The following example shows a module definition file that uses a data action and the corresponding data action mock that returns product data.
 
+Sample module definition file:
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
+    "dataActions": {
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "runOn": "server"
+        }
+    },
+    "config": {
+        "imageAlignment": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "default": "left",
+            "scope": "module",
+            "group": "Layout Properties"
+        }
+    },
+    "resources": {
+        "resourceKey": {
+            "comment": "resource description",
+            "value": "resource value"
+        }
+    }
+}
+```
+
+Module mock file example:
 ```json
 [
     {
-        "CacheObjectType": "Product",
+        "CacheObjectType": "SimpleProduct",
         "CacheKey": "*",
         "Mock": {
             "RecordId": 22565423455,
             "ItemId": "2101",
-            "Name": "Men's Wingtip Shoe",
-            "Description": "Genuine leather crafted to perfection.",
+            "Name": "Retro Horn-Rimmed Keyhole Sunglasses",
+            "Description": "High-quality with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
             "ProductTypeValue": 3,
             "DefaultUnitOfMeasure": "Ea",
-            "BasePrice": 129,
-            "Price": 129,
-            "AdjustedPrice": 103.2,
+            "BasePrice": 15,
+            "Price": 15,
+            "AdjustedPrice": 14,
             "MasterProductId": null,
-            "PrimaryImageUrl": "https://renderingdynrush73-1e0adbc991eb8c2f0ret.cloud.retail.dynamics.com/MediaServer/Products/2101_000_001.png"            
+            "Components": null,
+            "Dimensions": null,
+            "Behavior": null,
+            "LinkedProducts": null,            
+            "PrimaryImageUrl": "https://bit.ly/33cMGxr",
+            "ExtensionProperties": null
         }
     }
 ]
