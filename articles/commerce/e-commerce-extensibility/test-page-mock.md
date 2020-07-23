@@ -120,11 +120,11 @@ The preceding example can be accessed by using the following URL: `https://local
 
 ## Rendering context mocks
 
-The **renderingContext** node provides additional mock data that modules can access via the **this.props.context.request** object. This can include the bootstrap grid breakpoints, the locale, and user context. For more information, see [Request properties object](request-properties-object.md).
+The **renderingContext** node provides additional mock data that modules can access via the **this.props.context.request** object. This mock data can include the bootstrap grid breakpoints, the locale, and the user context. For more information, see [Request properties object](request-properties-object.md).
 
 ### Simulate the signed-in state
 
-Some modules may have logic that needs to check the signed-in state of the user before taking the appropriate action. A module will typically get the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in is not supported in a development environment, the user object can be mocked with the **userContext** node as shown in the following example.
+Some modules might have logic that must check the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, the user object can be mocked by using the **userContext** node, as shown in the following example.
 
 ```json
 {
@@ -201,7 +201,7 @@ Some modules may have logic that needs to check the signed-in state of the user 
 }
 ```
 
-If you need to simulate real data or the token returned from Commerce Server after a user signs in, sign in to your production e-Commerce site and use the F12 browser tools to copy the data. The user info is available in the global JavaScript variable **\___initialData\___.requestContext.user**.  With the F12 browser tool open and a user signed in, open a console and type **\___initialData\___.requestContext.user** to see the object. You can then update the **userContext** properties above as needed including the **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress** properties.
+If you must simulate real data or the token that is returned from Commerce Server after a user signs in, sign in to your production e-Commerce site, and use the F12 browser tools to copy the data. The user information is available in the **\___initialData\___.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\___initialData\___.requestContext.user** to see the object. You can then update the **userContext** properties in the preceding example as required. Those properties include **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**.
 
 ## Additional resources
 
