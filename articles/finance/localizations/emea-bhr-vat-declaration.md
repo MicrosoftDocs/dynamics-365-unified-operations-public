@@ -59,13 +59,13 @@ In the **Feature management** workspace, enable the following features:
 For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="ERConfigs"></a>Import of Electronic Reporting configurations
-In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
+In the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
  - VAT declaration Excel (BH).
 
 > [!NOTE]
 > The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
 
-For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Overview
 
@@ -75,13 +75,13 @@ The VAT return form for Bahrain is the official document that summarizes the tot
 
 The VAT return form in Dynamics 365 Finance includes the following reports:
 
- - **VAT return form**: This report provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT Return form as is described in the legislation.
+ - VAT return form which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT Return form as is described in the legislation.
  - Sales transactions details grouped by box classification from Box1 to Box 6
  - Purchase transaction details grouped by box classification from Box 8 to Box 12
 
 ## Download Electronic reporting configurations
 
-The implementation of VAT return form for Bahrain is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-cre/dev-itpro/analytics/general-electronic-reporting.md).
+The implementation of the VAT return form for Bahrain is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -211,27 +211,27 @@ The following table provides the differents available values in column **Name** 
 
 ## Set up General ledger parameters
 
-To generate the VAT return form report in Excel format you must define an ER format on the General ledger parameters page.
+To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
 
-1. Go to **Tax > Setup > General ledger parameters**.
-2. On the **Sales tax** tab, in the Tax options section, in the VAT statement format mapping field, select VAT Declaration Excel (BH). If you leave the VAT statement format mapping field blank, the standard sales tax  report will be generated in SSRS format.
-3. Select the **category hierarchy**. This category enables the Commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (BH)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
+3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
 
 ## Generate a VAT return report
-The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview)
+The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md)
 
-Follow these steps to generate the tax declaration report.
+Complete the following steps to generate the tax declaration report.
 
-1. Go to **Tax > Declarations > Sales tax > Report sales tax for settlement period** or **Settle and post sales tax**.
+1. Go to **Tax > Declarations** > **Sales tax** > **Report sales tax for settlement period** or **Settle and post sales tax**.
 2. Select the **Settlement period**.
-3. Select the "from" date.
+3. Select the from date.
 4. Select the sales tax payment version.
-5. Select OK to confirm the above steps. 
-6. Enter the amount of credit from previous period if applicable. Otherwise leave the amount in zero.
-7. In the **Generate details** field, select the following available options. VAT return form is always generated in this process.
-   - **All**: To generate sales and purchase tax transactions details reports.
-   - **None**: To generate only the VAT declaration return form.
-   - **Purchase transactions**.
-   - **Sales transactions**.
+5. Select **OK** to confirm the above steps. 
+6. Enter the amount of credit from previous period if applicable or leave the amount as zero.
+7. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
+   - **All**: Generate sales and purchase tax transactions details reports
+   - **None**: Generate only the VAT declaration return form
+   - **Purchase transactions**
+   - **Sales transactions**
    
    
