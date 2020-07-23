@@ -5,7 +5,7 @@ title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -99,10 +99,9 @@ In release 10.0.8, the concept of expiration dates was introduced. A new require
   * An expiration of 90 days.
   * An option to set the report to never expire.
   
-When an expiration, such as 90 days, is selected, it's applied 90 days from today, which is different behavior than the 90 days from the original generation date set when the report was generated. 
+When an expiration, such as 90 days, is selected, it's applied 90 days from today. This is different behavior than the 90 days from the original generation date set when the report was generated. 
   
 Additional options will be considered in future functionality. The expiration of 90 days will be the default, and users with appropriate permissions can override the default on the **Financial reports** list page.    
-
 
 ## Default reports
 Financial reporting provides 22 default financial reports. Every report uses the default main account categories. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. 
