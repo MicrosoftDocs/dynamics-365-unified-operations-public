@@ -71,15 +71,17 @@ When a job is run (Scheduler job), the channel database group (Channel database 
 Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various forms are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
 [Commerce Data Exchange - Association Map](./media/Commerce Data Exchange - Association Map.png)
+
 This visual showcases the various forms in Headquarters (Previously described in this document) and how they associate to one another.  When fully configured across all of the forms shown, CDX data generation will be able to occur.  Data synchronization occurs in two forms, download and upload.  CDX data generation is required for downloads.  Point of Sale data generated while offline requires data synchronization upload.
 
-[Commerce Architecture - Data Synchronization](media/Commerce Architecture - Data Synchronization.jpg)
+[Commerce Architecture - Data Synchronization](./media/Commerce Architecture - Data Synchronization.jpg)
+
 This visual showcases the download and upload data flows.  Data packages generated through CDX flow downward from Headquarters to the Commerce Scale Unit and to Modern POS offline databases.  Transactional data flows upward from the Modern POS offline databases to Commerce Scale Unit and Headquarters.
 
 ### Overview of package management
- - Review that packages are created and showcased in Download sessions
- - Review the logic around retry and cut (Need Daniel / Yonas assistance here)
- - 
+As packages are created, they are processed and sent out into Azure storage, prepared for downloading to Channel database or Offline database.  These packages, through the stages from creation to fully applied, are able to be viewed as a detailed list in the **Download sessions** page.  Similarly, as transactions are uploaded, there is an **Upload sessions** page.  Within these forms, it is possible to somewhat manage the packages as they proceed.
+
+Generally, packages will automatically retry, and take care of, themselves.  However, there are a variety of scenarios that could occur to cause a package to become stuck in some fashion, retrying endlessly without success or failing outright.  In these scenarios, the feature ability to delete or manually retry troublesome jobs can be valuable in troubleshooting the package application process.
 
 ### Important CDX related features (All available in version 10.0.12 or above)
 | Feature name | Feature description |
