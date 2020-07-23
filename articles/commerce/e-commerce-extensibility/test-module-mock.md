@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Test modules by using module mocks
+title: Test modules with module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Test modules by using module mocks
+# Test modules with module mocks
 
 [!include [banner](../includes/banner.md)]
 
