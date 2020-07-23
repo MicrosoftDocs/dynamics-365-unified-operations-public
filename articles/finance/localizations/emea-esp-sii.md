@@ -326,4 +326,50 @@ fields:
 
 ![](media/emea-esp-sii-siigenerateitems-executable-class.png)
 
+### Set up the SIIPartyAttributesEvaluation executable class
+
+1.  To set up parameters of the **SIIPartyAttributesEvaluation** executable
+    class, go to **Tax \> Setup \> Electronic messages \> Executable class
+    settings**.
+
+2.  On the **Executable class settings** page, select the
+    **SIIPartyAttributesEvaluation** executable class that is associated with
+    the **EMAdditionalFieldsEvaluationController_ES** executable class name.
+
+3.  On the Action Pane, select **Parameters**, and then, in the dialog box that
+    appears, set the following values for the parameters of the executable
+    class.
+
+| **Parameter name**  | **Value**  |
+|---------------------|------------|
+| Registration number | ID         |
+| Tax ID type         | IDType     |
+| Party ISO code      | CodigoPais |
+
+4.  Select **OK** to initiate the executable class.
+
+![](media/emea-esp-sii-siipartyattributesevaluation-executable-class.png)
+
+### Set up the MonitorCollectionInCash executable class
+
+1.  To set up parameters of the **MonitorCollectionInCash** executable class, go
+    to **Tax \> Setup \> Electronic messages \> Executable class settings**.
+
+2.  On the **Executable class settings** page, select the
+    **MonitorCollectionInCash** executable class that is associated with the
+    **EMCheckChangesCollectionInCashController_ES** executable class name.
+
+3.  On the Action Pane, select **Parameters**, and then in the dialog box that
+    appears, set the following values for the parameters of the executable
+    class.
+
+| **Parameter name** | **Value**            |
+|--------------------|----------------------|
+| Pending cancel     | CancelacionPendiente |
+| Corrected          | Corregido            |
+
+4.  Select **OK** to initiate the executable class.
+
+![](media/emea-esp-sii-monitorcollectionincash-executable-class.png)
+
 
