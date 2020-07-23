@@ -47,9 +47,9 @@ The Retail software development kit (SDK) includes only a few samples of end-to-
 | Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample          |                                        |
 | Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample              |                                        |
 
-## Create a new extension
+## Create a new RS API
 
-Follow the steps in this section to create a new Commerce Scale Unit extension.
+Follow the steps in this section to create a new RS extension
 
 ### Extension class diagram
 
@@ -62,7 +62,7 @@ The following illustration shows the class structure of the extension.
 1.	Before you create the Retail server (RS) extension, create the CRT extension. Retail Server APIs should have no logic except logic that calls the CRT with the parameters.
 2.	Create a new C# class library project that uses the Microsoft .NET Framework version 4.6.1 or use any of the existing Retail server sample in the Retail SDK as a template.
 3.	In the RS extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response and entities. 
-4.	In the RS extension project add the Microsoft.Dynamics.Commerce.Hosting.Contracts package using NuGet package manager. The NuGet packages can be found in RetailSDK\pkgs folder.
+4.	In the RS extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using NuGet package manager. The NuGet packages can be found in RetailSDK\pkgs folder.
 5.	Create a new controller class and extend it form IController. This controller class will contain the method that must be exposed by the RS API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class form existing controller class like CustomerController, ProductController etc. Extension classes must extend only form IController class.
 6.	Add the Route Prefix attribute on the controller class to expose the controller class.
 ```C#
@@ -135,6 +135,56 @@ Sample code on how to create a simple RS API to return entity, string, and bool 
                                            (new GetSimpleEntityRequest(name)).ConfigureAwait(false);
             return resp.SimpleEntityObj;
         }
+    }
+
+```
+The Retail server APIs support different authorization (roles), access to the controller method will be permitted based on the Authorization roles specified in the controller method Authorizations attribute.
+
+Supported Authorization roles:
+
+```C#
+
+//
+    // Summary:
+    // Represents the type of logon type.
+    [DataContract]
+    public static class CommerceRoles
+    {
+        //
+        // Summary:
+        //     Anonymous Role.
+        [DataMember]
+        public const string Anonymous = "Anonymous";
+        //
+        // Summary:
+        //     SharePoint Role used by Connector.
+        [DataMember]
+        public const string Storefront = "Storefront";
+        //
+        // Summary:
+        //     Employee Role.
+        [DataMember]
+        public const string Employee = "Employee";
+        //
+        // Summary:
+        //     Customer Role.
+        [DataMember]
+        public const string Customer = "Customer";
+        //
+        // Summary:
+        //     Represents the Device level of authentication.
+        [DataMember]
+        public const string Device = "Device";
+        //
+        // Summary:
+        //     Represents Application level of authentication.
+        [DataMember]
+        public const string Application = "Application";
+        //
+        // Summary:
+        //     The list of all possible Microsoft.Dynamics.Commerce.Runtime.DataModel.CommerceRoles
+        //     values.
+        public static readonly string[] All;
     }
 
 ```
