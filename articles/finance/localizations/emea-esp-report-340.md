@@ -121,23 +121,14 @@ For more information, see Download Electronic reporting configurations from Life
 | Description                                          | Enter a description of the VAT book.                                                                                                              |
 | Settlement period                                    | Select a settlement period.                                                                                                                       |
 | From date                                            | Enter the first date of the sales tax settlement period                                                                                           |
-| Method of numbering                                  | Select a numbering method: 
--   **Document number** – The number of the VAT report line equals the invoice
-    number.
-
--   **Number sequence code** – The number of the VAT report line is taken from
+| Method of numbering                                  | Select a numbering method: -   **Document number** – The number of the VAT report line equals the invoice
+    number. -   **Number sequence code** – The number of the VAT report line is taken from
     the number sequence that is defined in the **Number sequence code** field on
-    the **Spanish VAT books** page.
-
--   **Manual** – The numbering for VAT report lines is defined in the **Manual
-    numbering** section of the dialog box.
-
--   **340 sequence** – VAT report lines are numbered separately for purchases
+    the **Spanish VAT books** page. -   **Manual** – The numbering for VAT report lines is defined in the **Manual
+    numbering** section of the dialog box. -   **340 sequence** – VAT report lines are numbered separately for purchases
     and sales. In both cases, the line numbers start from 1.                                                                                                                       |
-| Start numbering 
-(in the **Manual numbering** section) | Enter the first line number.                                                                                                                      |
-| Template    
-(in the **Manual numbering** section)  | Enter the template for the line number. For example, enter **\#\#\#\#\#**.                                                                        |
+| Start numbering (in the **Manual numbering** section) | Enter the first line number.                                                                                                                      |
+| Template (in the **Manual numbering** section)  | Enter the template for the line number. For example, enter **\#\#\#\#\#**.                                                                        |
 | Replacement declaration                              | Set this option to **Yes** to replace the previous declaration.                                                                                   |
 | Previous declaration number                          | Enter the 13-digit number of the previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
 | Minimum payment account in cash                      | Enter the minimum cash payment amount that should be reported in the declaration.                                                                 |
