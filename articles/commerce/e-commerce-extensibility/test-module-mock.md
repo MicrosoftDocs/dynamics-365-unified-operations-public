@@ -63,30 +63,9 @@ Below is an example module mock file:
 } 
 ```
 
-## Data action mocks
-It may be useful to test your module without invoking the actual action using an action mock.  You'll need to do this if you haven't configured your Commerce server in the MSDyn365Commerce_BASEURL property in ".env" file. See [Configure a development environment (.env) file](configure-env-file.md) for more information.
-
-To create a data action mock, create a new file under “src/module/MODULE_NAME/mocks/” directory for your module, for example **myModuleMock.actionmock.json**  (note: this file name must have the extension “.actionmock.json” but can start with any name).
-
-Example
-```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
-
-You can now simulate the data action return object inside the file.  Note you need to specify the **CasheObjectType** and **CacheKey** that is definied in the data action.  The **CacheKey** can be set to "*" to accept any Cachekey, see [Data actions](data-actions.md) for more information.
-
-```
-[
-    {
-        "CacheObjectType": "CACHEOBJECTTYPE",
-        "CacheKey": "*",
-        "Mock": {
-	...
-        }
-    }
-]
-```
 
 ## Example
-The following example shows a module config file with various configuration definitions and a data action and the associated module mock data file and data action mock file..
+The following example shows a module config file with various configuration definitions and the corresponding mock file..
 
 Sample module definition file
 ```json
@@ -102,10 +81,6 @@ Sample module definition file
         ""
     ],
     "dataActions": {
-        "products": {
-            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
-            "runOn": "server"
-        }
     },
     "config": {
         "imageAlignment": {
@@ -179,34 +154,6 @@ Sample mock file:
   },
   "typeName": "product-feature"
 } 
-```
-
-Sample data action mock that returns a "SimpleProduct" object:
-```json
-[
-    {
-        "CacheObjectType": "SimpleProduct",
-        "CacheKey": "*",
-        "Mock": {
-            "RecordId": 22565423455,
-            "ItemId": "2101",
-            "Name": "Retro Horn-Rimmed Keyhole Sunglasses",
-            "Description": "High-quality with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-            "ProductTypeValue": 3,
-            "DefaultUnitOfMeasure": "Ea",
-            "BasePrice": 15,
-            "Price": 15,
-            "AdjustedPrice": 14,
-            "MasterProductId": null,
-            "Components": null,
-            "Dimensions": null,
-            "Behavior": null,
-            "LinkedProducts": null,            
-            "PrimaryImageUrl": "https://bit.ly/33cMGxr",
-            "ExtensionProperties": null
-        }
-    }
-]
 ```
 
 ## Additional resources
