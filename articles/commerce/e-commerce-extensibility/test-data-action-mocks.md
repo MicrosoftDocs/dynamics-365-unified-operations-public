@@ -37,7 +37,7 @@ This topic describes how to test data actions with mock data.
 ## Overview
 
 By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. 
-It may be useful to test your module without invoking the actual action using an action mock.  You will need to do this if you haven't configured your Commerce server in the MSDyn365Commerce_BASEURL property in ".env" file. See [Configure a development environment (.env) file](configure-env-file.md) for more information.
+It may be useful to test your module without invoking the actual action using an action mock.  You will need to do this if you haven't configured your Commerce server (MSDyn365Commerce_BASEURL property) in ".env" file. See [Configure a development environment (.env) file](configure-env-file.md) for more information.
 
 
 ## Action mock structure
