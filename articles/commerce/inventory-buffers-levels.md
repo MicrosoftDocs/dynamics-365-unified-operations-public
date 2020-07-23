@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.12
 # Configure inventory buffers and inventory levels
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic explains how to configure inventory buffers and inventory levels that determine the messaging about inventory availability on Microsoft Dynamics 365 Commerce sites.
 
