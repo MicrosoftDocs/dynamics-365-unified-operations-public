@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.11
 # Schedule of Expenditures of Federal Awards inquiry
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 According to Office of Management and Budget Circular A-133, agencies that receive federal funds are subject to audit requirements, which are also known as single audits. The audit process is used to report on the revenues and expenditures of federal grants on a recurring basis. Part of the single audit report includes the Schedule of Expenditures of Federal Awards (SEFA).
 
