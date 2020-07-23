@@ -44,7 +44,7 @@ Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** 
 
 For example, for a module mock data file named **mockTest1.json** added to the module **mocks** directory, you would use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **product-feature**, which is used in the URL.
 
-## Mocking configuration and data fields
+## Mock configuration and data fields
 
 To mock the configuration fields of a module, put the config names in the mock .json file under the **config** section. To mock the data fields of a module, put the data names in the mock .json file under the **data** section.  
 
