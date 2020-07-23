@@ -254,10 +254,18 @@ Add Azure Data Lake add-in to the environment in LCS.
 
 6. The add-in will be installed within a few minutes. 
 
+## Configure AI Builder
 
-  
-  
-  
-  
+1. Login to LCS and go to the **Environment details** page. 
+2. Scroll to the **Environment add-ins** section. You should see the add-ins that are already installed in this environment. 
+3. You should see the **Export to Data Lake** add-in installed. If you do not see **Export to Data Lake add-in** installed, configure **Export to Data Lake** as a first step.
+4. Select the **AI builder Integrator** add-in. 
+   - AI builder integrator add-in details page will appear. Enter the values listed in the following table. 
 
-
+|     Value                                                         |     Description                                                 |
+|-------------------------------------------------------------------|-----------------------------------------------------------------|
+|     CDS   Organization URL                                        |     The   CDS Organization URL of the CDS instance.           Make.powerapps.com     Click   on settings icon (right upper corner)      Advance   Settings     Copy   the URL (ending with dynamics.com)    |
+|     CDS   Org ID                                                  |     The   Environment ID of the CDS instance.     Make.powerapps.com           Settings   > Customizations > Developer resources > Instance Reference   Information > ID                                    |
+|     CDS   Tenant ID (Directory ID  from AAD)                      |     The   Tenant ID of the CDS instance.     Go   to: Azure portal > Azure Active Directory > Tenant ID                                                                                                     |
+|     Provide   user object ID who has system administrator role    |     The   AAD User Object ID of the user in CDS. This user must be a System   Administrator of the CDS instance           Azure   Active directory > Users > select your user > Identity > Object   ID      |
+|     Is   this the default CDS environment for the tenant?         |     If   the CDS instance was the first production instance created, Click the   checkbox. If the CDS instance was created manually, uncheck the checkbox.                                                  |
