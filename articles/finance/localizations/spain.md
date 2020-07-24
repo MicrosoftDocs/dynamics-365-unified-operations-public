@@ -40,7 +40,7 @@ This topic provides links to documentation resources for Spain.
 - [Conditional sales tax for protested promissory notes or bills of exchange](emea-esp-conditional-sales-tax.md)
 - [Create a corrective invoice](tasks/emea-esp-credit-invoicing.md)
 - [Use fiscal data from the invoice account](emea-esp-fiscal-data-invoice-account.md)
-- [Fixed asset revaluation groups(emea-esp-fixed-asset-group-revaluation.md)
+- [Fixed asset revaluation groups](emea-esp-fixed-asset-group-revaluation.md)
 - [Intra-community VAT](emea-esp-intra-community-vat.md)
 - [One-time customers](emea-esp-no-one-time-customer-for-project-contracts.md)
 - [Print checks by using the Spanish layout](emea-esp-print-checks-with-spanish-layout.md)
