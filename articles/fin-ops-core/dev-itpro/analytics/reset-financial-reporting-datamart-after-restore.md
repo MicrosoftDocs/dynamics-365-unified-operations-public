@@ -168,7 +168,7 @@ Before getting started, instruct all users to close Report designer and exit the
 
     ```sql
     ------------------------------------------------------------------------------------------
-    ---- Set service into disabled mode
+    Set service into disabled mode
     ------------------------------------------------------------------------------------------
 
     --setup for servicing mode
@@ -260,120 +260,125 @@ Before getting started, instruct all users to close Report designer and exit the
 	------------------------------
 	PRINT 'Drop archive tables'
 	------------------------------
-	DECLARE @stagingTableName nvarchar(max)
-	DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
-	SELECT t.TABLE_NAME as TableName
-	FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
-	WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
-	OPEN dropCursor
-	FETCH NEXT FROM dropCursor INTO @stagingTableName
-	WHILE @@FETCH_STATUS = 0
-	BEGIN
-		EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
+	
+		DECLARE @stagingTableName nvarchar(max)
+		DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
+		SELECT t.TABLE_NAME as TableName
+		FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
+		WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
+		OPEN dropCursor
 		FETCH NEXT FROM dropCursor INTO @stagingTableName
-	END
-	CLOSE dropCursor
-	DEALLOCATE dropCursor
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+			EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
+			FETCH NEXT FROM dropCursor INTO @stagingTableName
+		END
+		CLOSE dropCursor
+		DEALLOCATE dropCursor
 
 	------------------------------
 	PRINT 'Dropping tables with dynamic columns'
 	------------------------------
-	DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
-	DROP TABLE IF EXISTS [Datamart].DimensionCombination
-	DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
-	DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
-	DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
-	DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
-	DROP TABLE IF EXISTS [Datamart].FactAttributeValue
-	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
-	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
+	
+		DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
+		DROP TABLE IF EXISTS [Datamart].DimensionCombination
+		DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
+		DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
+		DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
+		DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
+		DROP TABLE IF EXISTS [Datamart].FactAttributeValue
+		DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
+		DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
 
 	------------------------------
 	PRINT 'Begin Truncating tables'
 	------------------------------
-	DECLARE @tablename nvarchar(200)
-	DECLARE @schemaname nvarchar(200)
-	DECLARE clear_tables CURSOR
-	FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
-	PRINT 'remove check constraints'
-	OPEN clear_tables
-	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	WHILE @@FETCH_STATUS = 0
-	BEGIN
-		IF @tablename <> 'VersionHistory'
-		BEGIN
-			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
-		END
+	
+		DECLARE @tablename nvarchar(200)
+		DECLARE @schemaname nvarchar(200)
+		DECLARE clear_tables CURSOR
+		FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
+		PRINT 'remove check constraints'
+		OPEN clear_tables
 		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	END
-	CLOSE clear_tables
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+			IF @tablename <> 'VersionHistory'
+			BEGIN
+				EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
+			END
+			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+		END
+		CLOSE clear_tables
 
 	------------------------------
 	PRINT 'delete data from tables and rebuild indexes'
 	------------------------------
-	OPEN clear_tables
-	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	WHILE @@FETCH_STATUS = 0
-	BEGIN
-		IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
-		BEGIN
-			IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
-				EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
-				INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
-				WHERE o.[type] = 'V'
-				AND referenced_schema_name = @schemaname
-				AND referenced_entity_name = @tablename))
-			BEGIN
-				PRINT 'deleting from ' + @tablename
-				EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
-			END
-			ELSE
-			BEGIN
-				PRINT 'truncating from ' + @tablename
-				EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
-			END
-		END
-		EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
+	
+		OPEN clear_tables
 		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	END
-	CLOSE clear_tables
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+			IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
+			BEGIN
+				IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
+					EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
+					INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
+					WHERE o.[type] = 'V'
+					AND referenced_schema_name = @schemaname
+					AND referenced_entity_name = @tablename))
+				BEGIN
+					PRINT 'deleting from ' + @tablename
+					EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
+				END
+				ELSE
+				BEGIN
+					PRINT 'truncating from ' + @tablename
+					EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
+				END
+			END
+			EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
+			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+		END
+		CLOSE clear_tables
 
 	------------------------------
 	PRINT 'reenable check constraints'
 	------------------------------
-	OPEN clear_tables
-	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	WHILE @@FETCH_STATUS = 0
-	BEGIN
-		IF @tablename <> 'VersionHistory'
-		BEGIN
-			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
-		END
+
+		OPEN clear_tables
 		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-	END
-	CLOSE clear_tables
-	DEALLOCATE clear_tables
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+			IF @tablename <> 'VersionHistory'
+			BEGIN
+				EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
+			END
+			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+		END
+		CLOSE clear_tables
+		DEALLOCATE clear_tables
 	------------------------------
 	PRINT 'Complete Truncating tables'
 	------------------------------
 
-	-- Rebuild the tables with dynamic columns
-	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
-		BEGIN
-			EXEC [Datamart].AddDynamicTables
-		END
-	ELSE
-		BEGIN
-			---- Basically a copy of sproc AddDynamicTables
-			IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
+		-- Rebuild the tables with dynamic columns
+		IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
 			BEGIN
-				CREATE TABLE [Datamart].[DimensionCombinationStaging](
-					[Id] [bigint] NOT NULL,
-					[OrganizationId] [int] NULL,
-					[Description] [nvarchar](51) NULL,
-					[SourceKey] [nvarchar](100) NOT NULL,
-					[OrganizationKey] [nvarchar](100) NULL,
-					[FreshnessDate][datetime2] NULL default sysutcdatetime())
+				EXEC [Datamart].AddDynamicTables
+			END
+		ELSE
+			BEGIN
+				---- Basically a copy of sproc AddDynamicTables
+				IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
+				BEGIN
+					CREATE TABLE [Datamart].[DimensionCombinationStaging](
+						[Id] [bigint] NOT NULL,
+						[OrganizationId] [int] NULL,
+						[Description] [nvarchar](51) NULL,
+						[SourceKey] [nvarchar](100) NOT NULL,
+						[OrganizationKey] [nvarchar](100) NULL,
+						[FreshnessDate][datetime2] NULL default sysutcdatetime())
 
 				CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
 			END
@@ -544,57 +549,60 @@ Before getting started, instruct all users to close Report designer and exit the
 
 
 
-	-- Rebuild dropped indexes that are dynamic
-	EXEC [Datamart].ConfigureIndexesAndConstraints
-	
-	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
-END TRY
-BEGIN CATCH
-	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
-	;THROW;
-END CATCH
+		-- Rebuild dropped indexes that are dynamic
+		EXEC [Datamart].ConfigureIndexesAndConstraints
+
+		EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+		END TRY
+		BEGIN CATCH
+			EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+			;THROW;
+		END CATCH
 
 2. Do not run this script unless you have confirmed with customer it is OK to delete all users and companies. This will remove user references from previously generated reports and remove users from their assigned security groups. ResetUsersAndCompanies: File:ResetUsersAndCompanies.sql.txt
+
 ```sql
 -- Attempt to delete integrated users
-DECLARE @userId nvarchar(max)
-DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
-OPEN removeUserCursor
-FETCH NEXT FROM removeUserCursor INTO @userId
-WHILE @@FETCH_STATUS = 0
-BEGIN
-	BEGIN TRY
-	   exec Reporting.SecurityUserDeleteRelatedEntities @userId
-	   delete from Reporting.SecurityGroupUser where UserID = @userId
-	   delete from Reporting.SecurityUser where UserID = @userId
-	END TRY
-	BEGIN CATCH
-	-- Just skip if we cannot delete a user, integration should take care of it
-	END CATCH
+	DECLARE @userId nvarchar(max)
+	DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
+	select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+	OPEN removeUserCursor
 	FETCH NEXT FROM removeUserCursor INTO @userId
-END
-CLOSE removeUserCursor
-DEALLOCATE removeUserCursor
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		BEGIN TRY
+		   exec Reporting.SecurityUserDeleteRelatedEntities @userId
+		   delete from Reporting.SecurityGroupUser where UserID = @userId
+		   delete from Reporting.SecurityUser where UserID = @userId
+		END TRY
+		BEGIN CATCH
+		-- Just skip if we cannot delete a user, integration should take care of it
+		END CATCH
+		FETCH NEXT FROM removeUserCursor INTO @userId
+	END
+	CLOSE removeUserCursor
+	DEALLOCATE removeUserCursor
 
 -- Attempt to delete integrated companies
-DECLARE @companyId nvarchar(max)
-DECLARE removeCompanyCursor CURSOR LOCAL FAST_FORWARD FOR
-select cc.ID from Reporting.ControlCompany cc join Reporting.ControlCompanyIntegration cci on cc.ID = cci.ID
-OPEN removeCompanyCursor
-FETCH NEXT FROM removeCompanyCursor INTO @companyId
-WHILE @@FETCH_STATUS = 0
-BEGIN
-	BEGIN TRY
-	   delete from Reporting.ControlCompany where ID = @companyId
-	END TRY
-	BEGIN CATCH
-	-- Just skip if we cannot delete a company
-	END CATCH
+	DECLARE @companyId nvarchar(max)
+	DECLARE removeCompanyCursor CURSOR LOCAL FAST_FORWARD FOR
+	select cc.ID from Reporting.ControlCompany cc join Reporting.ControlCompanyIntegration cci on cc.ID = cci.ID
+	OPEN removeCompanyCursor
 	FETCH NEXT FROM removeCompanyCursor INTO @companyId
-END
-CLOSE removeCompanyCursor
-DEALLOCATE removeCompanyCursor
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		BEGIN TRY
+		   delete from Reporting.ControlCompany where ID = @companyId
+		END TRY
+		BEGIN CATCH
+		-- Just skip if we cannot delete a company
+		END CATCH
+		FETCH NEXT FROM removeCompanyCursor INTO @companyId
+	END
+	CLOSE removeCompanyCursor
+	DEALLOCATE removeCompanyCursor
+```
+
 3. Clear the MR tables on the AXDB: File:Reset Datamart AXDB.sql.txt
 
 ```sql
@@ -606,7 +614,7 @@ IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'd
 BEGIN 
     TRUNCATE TABLE [dbo].[FINANCIALREPORTVERSION] 
 END  
-
+```
 
 5. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
@@ -614,7 +622,7 @@ END
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 
-    Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
+Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
 
 ## Export and import report definitions
 
