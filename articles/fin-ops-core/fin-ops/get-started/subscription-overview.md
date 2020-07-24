@@ -76,4 +76,4 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
 > .[!NOTE]
-> It won’t impact your license quality or the ability to provision new environment If the status of the service plan is **In Grace Period**, but if the status of a service plan is in **Suspended** or **Deleted**, it I will reflect in the license quantity and impact your ability to provision new environment.
+> It won’t impact your license quality or the ability to provision new environment If the status of the service plan is **In Grace Period**, but if the status of a service plan is in **Suspended** or **Deleted**, it I will reflect in the license quantity and impact your ability to provision new environment or perform environment operations. 
