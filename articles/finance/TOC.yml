@@ -846,6 +846,8 @@
           href: accounts-payable/accounting-distributions.md
         - name: Process allocations
           href: general-ledger/process-allocations.md
+        - name: Allocation terms
+          href: general-ledger/main-account-allocation-terms.md
         - name: Financial dimensions
           href: general-ledger/financial-dimensions.md
         - name: Consolidation account groups and additional consolidation accounts
@@ -1146,6 +1148,8 @@
         href: public-sector/tasks/create-fund-type-public-sector.md
       - name: Add a certification type to a vendor in the public sector
         href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+      - name: Calculating Canadian Harmonized Sales Tax 
+        href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
       - name: Financial reporting overview
@@ -2636,6 +2640,8 @@
           href: localizations/emea-esp-sales-purchase-cycle.md
         - name: Special entries and opening sheets
           href: localizations/emea-esp-opening-sheets-spain.md
+        - name: Immediate Supply of Information on VAT
+          href: localizations/emea-esp-sii.md
       - name: Sweden
         items:
         - name: Sweden overview

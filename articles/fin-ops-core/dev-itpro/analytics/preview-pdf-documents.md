@@ -5,7 +5,7 @@ title: Preview PDF documents using a PDF viewer
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
 author: tjvass
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,12 +46,21 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 - The server-side rendering improves the performance when producing the document.
 - A built-in tooling that allows users to quickly navigate the contents of the business document.
 
+## Accessing the PDF preview experience (Platform update 35 or earlier)
+The hosted PDF document viewer control is presented by default in most deployment types. However, the PDF preview experience must be enabled on OneBox environments using the **Report Administration** page.
+
+1. Go to the **Report Options** page by adding "**&mi=SysReportAdministration**" to the URL.
+2. Set the **Preview documents using embedded viewer** option to **Yes**.
+3. Select **Save**.
+
+## Accessing the PDF preview experience (Platform update 36 or later)
+In Platform updates 36 or later, use Feature Management to enable the **Report PDF viewer** feature.
+
 ## Additional feature information
 
 - Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.
 - The printer drop-down menu allows users to choose from locally connected devices. This list does not include network printers connected through the service.
 - Documents are downloaded to the local device using the built-in toolbar actions.
-- Application extensions are available to activate embedded drill-thru links in PDF documents.
 - Use the **Print destination** options to produce documents in formats other than PDF.
 
 ## Feature limitations
@@ -59,5 +68,3 @@ The Embedded PDF viewer experience delivers a closed document that exactly match
 
 - Embedded drill-thru navigation is not actionable while previewing PDF documents. 
 - PDF documents do not support expandable and collapsible sections. 
-- Sub-reports are not supported when viewing reports as PDF documents.
-- Printing the report directly to domain-hosted printer devices.
