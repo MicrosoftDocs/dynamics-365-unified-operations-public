@@ -163,7 +163,8 @@ Use services.msc to restart the services that you stopped earlier:
 ## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
 
 Before getting started, instruct all users to close Report designer and exit the Financial reporting area.
-1. On the MRDB, execute the script below, which was last updated April 9, 2020: Reset Datamart Begin:File:Reset Datamart Begin.txt
+1. On the MRDB, execute the script below, which was last updated April 9, 2020: Reset Datamart Begin.txt
+
 
 
     ```sql
@@ -213,8 +214,7 @@ Before getting started, instruct all users to close Report designer and exit the
     WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
     PRINT 'Disable integration tasks'
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-    ```
-
+    
 	------------------------------
 	PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
 	------------------------------
@@ -358,6 +358,7 @@ Before getting started, instruct all users to close Report designer and exit the
 		END
 		CLOSE clear_tables
 		DEALLOCATE clear_tables
+
 	------------------------------
 	PRINT 'Complete Truncating tables'
 	------------------------------
@@ -559,7 +560,11 @@ Before getting started, instruct all users to close Report designer and exit the
 			;THROW;
 		END CATCH
 
-2. Do not run this script unless you have confirmed with customer it is OK to delete all users and companies. This will remove user references from previously generated reports and remove users from their assigned security groups. ResetUsersAndCompanies: File:ResetUsersAndCompanies.sql.txt
+2. (Optional) On the MRDB, execute the script below, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
+> [!NOTE]
+> Do not run this script unless you have confirmed with it is required to delete all users and companies. This will remove user references from previously generated reports and remove users from their assigned security groups. This step is not required in most cases.
+
+
 
 ```sql
 -- Attempt to delete integrated users
@@ -603,7 +608,9 @@ Before getting started, instruct all users to close Report designer and exit the
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. Clear the MR tables on the AXDB: File:Reset Datamart AXDB.sql.txt
+3. On the AXDB, clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart AXDB.txt
+
+
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
@@ -615,6 +622,55 @@ BEGIN
     TRUNCATE TABLE [dbo].[FINANCIALREPORTVERSION] 
 END  
 ```
+
+
+4. On the MRDB, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
+
+
+
+```sql
+DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+------------------------------------------
+------------------------------------------
+PRINT 'Reset the map tokens'
+UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Reset the tasks'
+UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
+PRINT 'Enable integration tasks, RunImmediately'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
+WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Enable the Maintenance Task'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
+(SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
+------------------------------------------
+------------------------------------------
+
+UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
+IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+BEGIN
+       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
+END
+```
+
 
 5. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
