@@ -38,11 +38,10 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 
 The flow-chart below explains the high-level overview of the steps involved in the experimentation journey:
 
-
 ## Prerequisites
-1. Check and update to the "right" e-commerce product versions.
-1. Setup test connector or purchase and setup third-party connector - terms need explaining. <add link to Sam's doc>
-1. Turn on feature flags - needs description + images. 
+1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
+1. Setup test connector or purchase and setup third-party connector, following instructions here. <add link to Sam's doc>
+1. Turn on feature flags - needs description + images.
 
 ## Create an experiment
 Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
@@ -50,9 +49,9 @@ Once the third-party connector setup is complete, follow the necessary steps to 
 ## Create webpage variations for the experiment
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from either the test connector or the third-party connector. 
 1. Click “Connect” to open up the "Connect experiment" wizard.
-1. Go through the wizard to choose an entity to be experimented upon and auto-generate the required number of variations or treatments. 
+1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations. 
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
-1. Make the required changes to the variations in the WYSIWYG editor. You can also optionally designate a “control” by not making any changes to it.
+1. Make the required changes to the variations in the editor view. You can also optionally designate a “control” by not making any changes to it.
     > [!NOTE]
     > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the 'winner'.
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
