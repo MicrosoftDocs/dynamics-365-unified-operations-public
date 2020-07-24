@@ -73,7 +73,7 @@ The next step is to associate the experiment with the corresponding web experien
 ## Edit webpage variations
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
-1. Pick the variation that needs updating from the drop down below the experiment name in the WYSIWYG editor.
+1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
 1. Make the required changes, preview the changes and publish.
 1. Go to the third-party service to make changes to the names of the variations.
 
