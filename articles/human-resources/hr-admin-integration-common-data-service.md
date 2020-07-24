@@ -61,6 +61,8 @@ You might want to turn off integration in these situations:
 
     [![Common Data Service configuration link](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
 
+
+
 ## Turn data integration between Human Resources and Common Data Service on or off
 
 - To turn on integration, set the **Enable the integration to the Common Data Service** option to **Yes**.
@@ -71,6 +73,9 @@ You might want to turn off integration in these situations:
 - To turn off integration, set the option to **No**.
 
 [![Turning the Common Data Service integration on or off](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> It is strongly recommended to turn off the Common Data Service integration while you are performing data migration tasks. Large data uploads can significantly impact the performance of the system. For example, uploading 2000 workers can take several hours or more when the integration is enabled, and less than one hour when it is disabled. The numbers provided in this example are for demonstration purposes only. The exact amount of time it takes to import records can vary greatly based on many factors.
 
 ## View data integration details
 
