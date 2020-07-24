@@ -129,11 +129,11 @@ Navigate to Mixed Reality / Dynamics 365 Guides / Configure Guides integration. 
 For example if the environment URL is "https://Contoso123.crm.dynamics.com", then the value you would have in this field is "Contoso123".
 The value is used to compose addresses for your guides and will be encoded into the QR codes.
 
-In the  field QR code size allows you can customize the size in which the QR code will be rendered. We recommend to size the QR code to fill as much of the screen estate of your display. Typically 15 is a good value. 
+In the  field QR code size allows you can customize the size in which the QR code will be rendered. We recommend to size the QR code to fill as much of the screen estate of your display. Typically 15 is a good value.
 > [!TIP]
 > Too Large QR codes sizes for your display will take a bit longer to render and will be scaled to display size upon display and therefore do not provide a benefit.
 >
-> With too small QR code sizes may decrease HoloLense may not read the code properly in all environment situations. 
+> With too small QR code sizes may decrease HoloLens may not read the code properly in all environment situations.
 
 You can use the field QR code error correction level to influence the granularity of the QR code and increase the reliability of the QR code. But the size of the QR code and the error correction level need to be in a good relation.
 
@@ -194,15 +194,23 @@ You can also assign Guides to the following objects directly to prescribe the in
 
   - How to set up
 
-    Navigate to the Associated Guides tab on the Release product form and add, remove or manage the associated Guides.
+    On the Release product form select the Engineer tab in the action bar and select Assiated Guides in the View action tab.
+
+    :::image type="content" source="media/instruction-guides-releasedProduct.png" alt-text="Associated Guides on a released product.":::
+
+    Use the Associated Guides view to add, remove or manage the associated Guides.
+  
+    :::image type="content" source="media/instruction-guides-releasedProduct-AddGuides.png" alt-text="Adding Guides to a released product.":::
 
 - [Formula](bill-of-material-bom.md#formulas-co-products-and-by-products)
 
   - Typical use cases
   
-    Formula level Guides are useful to help shop floor workers with guides instructions that walk through the production along the specific formula recipe. Guides can also be assigned to versions of a formula.
+    Formula level Guides are useful to help shop floor workers with guided handling instructions in the context of a formula or recipe. Guides can also be assigned to versions of a formula.
 
-    Please note: Formula lines cannot be used to attach individual Guides at this point. 
+    > [!TIP] You can assign guidance relevant for production process  based on this formula to a route, route version or route operation relations.  
+
+    > [!NOTE] Formula lines cannot be used to attach individual Guides at this point.
 
   - How to set up
 
@@ -216,13 +224,15 @@ You can also assign Guides to the following objects directly to prescribe the in
   
     Guides can also be attached to individual versions of a Formula. They are useful to help shop floor workers with guides instructions that walk through the production along specific version formula recipe.
 
-    Please note: Formula lines cannot be used to attach individual Guides at this point.
+    > [!TIP] You can assign guidance relevant for production process based on this formula version to a route, route version or route operation relations.  
+
+    > [!NOTE] Formula lines cannot be used to attach individual Guides at this point.
 
   - How to set up
 
     Navigate to Formula form and open the Header section. In Formula Versions tab on header section of the Formula form select a version.
 
-    :::image type="content" source="media/instruction-guides-FormulaVersion.png" alt-text="Adding a Guide to a Formula version.":::
+    :::image type="content" source="media/instruction-guides-FormulaVersion.png" alt-text="Accessing the associated Guides on a Formula version.":::
 
     The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
 
@@ -232,9 +242,9 @@ You can also assign Guides to the following objects directly to prescribe the in
 
   - Typical use cases
   
-    Bill Of Material (BOM) level Guides are useful to help shop floor workers with guides instructions that walk through the production along the specific BOM. Guides can also be assigned to versions of a BOM.
+    Bill Of Material (BOM) level Guides are useful to help shop floor workers with guides instructions that walk through preparing and handling material from a BOM. Guides can also be assigned to versions of a BOM.
 
-    Please note: BOM lines cannot be used to attach individual Guides at this point.
+    > [!NOTE] BOM lines cannot be used to attach individual Guides at this point.
 
   - How to set up
 
@@ -246,22 +256,63 @@ You can also assign Guides to the following objects directly to prescribe the in
 
   - Typical use cases
   
-    Guides can also be attached to individual versions of a Bill Of Material (BOM). They are useful to help shop floor workers with guides instructions that walk through the production along specific version of a BOM.
+    Guides can also be attached to individual versions of a Bill Of Material (BOM). They are useful to help shop floor workers with guides instructions for handling a version of a BOM which is different from the generic BOm or other versions.
 
-    Please note: BOM lines cannot be used to attach individual Guides at this point.
+    > [!NOTE] BOM lines cannot be used to attach individual Guides at this point.
 
   - How to set up
 
-    Navigate to BOM form and open the Header section. In BOM Versions tab on header section of the BOM form select a version. 
+    Navigate to BOM form and open the Header section. In BOM Versions tab on header section of the BOM form select a version.
 
-    :::image type="content" source="media/instruction-guides-BOMVersion.png" alt-text="Adding a Guide to a BOM version.":::
+    :::image type="content" source="media/instruction-guides-BOMVersion.png" alt-text="Accessing the associated  Guides on a BOM version.":::
 
     The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
 
     :::image type="content" source="media/instruction-guides-BOMVersionAddGuide.png" alt-text="Adding a Guide to a BOM version.":::
 
 - [Route](routes-operations.md)
+
+  - Typical use cases
+
+  Routes are typically used to specify how a certain release product shall be produced based on a BOM or BOM version and with a set of resources or resource groups.
+  You can assign a Guide to a  route in order to provide step by step instructions for the respective production process.
+
+  - How to set up
+
+  Navigate to Route form and in the Associated Guides tab add, remove or manage the associated Guides.
+  
+  :::image type="content" source="media/instruction-guides-Route.png" alt-text="Accessing the associated  Guides on a BOM version.":::
+
 - [Route Version](routes-operations.md#route-versions)
+  - Typical use cases
+    Routes versions are typically used to specify variants of production processes based on an existing route. You can assign a different Guides to each route version.
+
+  - How to set up
+
+    Navigate to Route form and in the Versions tab select a route version.
+
+    :::image type="content" source="media/instruction-guides-RouteVersion.png" alt-text="Accessing the associated  Guides on a BOM version.":::
+
+    The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
+
+    :::image type="content" source="media/instruction-guides-RouteVersionAddGuide.png" alt-text="Adding a Guide to a BOM version.":::
+
 - [Route Operation Relation](routes-operations.md#operation-relations)
+
+  - Typical use cases
+  Operation relations are the most specific way to add guidance to a product process and the related operations. You are able to specify guidance for each operation in a route and specify different guidance for any type of relation context that has been specified for a route, like for specific items, configuration and more. You can also specify to which stages in the operation the guidance applies, like setup, queueing, process, transport,...
+
+  > [!NOTE] If you specify guides in several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
+
+  - How to set up
+
+   Navigate top the route form and in the action bar select the action group Route, under Maintain click on Route details.
+   In the route detail form select in the top section the operation you like to provide dedicated guidance for. And in the bottom grid select the specific relation or the generic All relation.
+
+    :::image type="content" source="media/instruction-guides-RouteOperationRelation.png" alt-text="Accessing the associated Guides on a route operation relation.":::
+
+    Use the Associated Guides button to add, remove or manage the associated Guides. You can add one or more guides and specify for each the relevant  stages of the operation.
+
+    :::image type="content" source="media/instruction-guides-RouteOperationRelation-AddGuide.png" alt-text="Adding a Guide to a route operation relation and relevant stages of the operation.":::
 
 ### Instructions in the shop floor experience
