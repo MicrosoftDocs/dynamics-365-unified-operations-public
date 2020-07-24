@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users. Their interactions with each version are tracked and used to make data-backed changes to drive higher conversion rates.
 
-Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments aka variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Analytics and reports defining experiment results are made available in the third-party service based on live event streams from Dynamics 365 Commerce. 
+Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments aka variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
 
-The flow-chart below explains the high-level overview of the steps involved:
+The flow-chart below explains the high-level overview of the steps involved in the experimentation journey:
 
 
 ## Prerequisites
