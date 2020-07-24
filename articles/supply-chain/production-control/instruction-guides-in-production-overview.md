@@ -165,11 +165,11 @@ You can also assign Guides to the following objects directly to prescribe the in
 
     On the Resource form navigate to the tab Associated Guides and  click the new button.
 
-    :::image type="content" source="media/instruction-guides-Resource.png" alt-text="Addign a Guide to a production resource.":::
+    :::image type="content" source="media/instruction-guides-Resource.png" alt-text="Adding a Guide to a production resource.":::
 
     Use the drop down in the Name column to select one of the guides that is available to you. The filter option allows you to better identify Guides.
 
-    :::image type="content" source="media/instruction-guides-Resource-Selector.png" alt-text="Adding a Guide to a production resource.":::
+    :::image type="content" source="media/instruction-guides-Resource-Selector.png" alt-text="Selecting a Guide for a production resource using lookup.":::
 
 - [Resource Group](tasks/define-discrete-manufacturing-resource-group.md)
 
@@ -184,6 +184,8 @@ You can also assign Guides to the following objects directly to prescribe the in
 
     Navigate to the Associated Guides tab on the Resource Group form and add the relevant guides using the+Add button and the Guide lookup.
 
+    :::image type="content" source="media/instruction-guides-ResourceGroup.png" alt-text="Adding a Guide to a  resource group.":::
+
 - [Release Product](../pim/tasks/create-released-product-single-company)
 
   - Typical use cases
@@ -195,9 +197,69 @@ You can also assign Guides to the following objects directly to prescribe the in
     Navigate to the Associated Guides tab on the Release product form and add, remove or manage the associated Guides.
 
 - [Formula](bill-of-material-bom.md#formulas-co-products-and-by-products)
+
+  - Typical use cases
+  
+    Formula level Guides are useful to help shop floor workers with guides instructions that walk through the production along the specific formula recipe. Guides can also be assigned to versions of a formula.
+
+    Please note: Formula lines cannot be used to attach individual Guides at this point. 
+
+  - How to set up
+
+    Navigate to Formula form and open the Header section. In Associated Guides tab on header section of the Formula form and add, remove or manage the associated Guides.
+
+  :::image type="content" source="media/instruction-guides-Formula.png" alt-text="Adding a Guide to a Formula.":::
+
 - [Formula Version](bill-of-material-bom.md#bom-and-formula-versions)
+
+  - Typical use cases
+  
+    Guides can also be attached to individual versions of a Formula. They are useful to help shop floor workers with guides instructions that walk through the production along specific version formula recipe.
+
+    Please note: Formula lines cannot be used to attach individual Guides at this point.
+
+  - How to set up
+
+    Navigate to Formula form and open the Header section. In Formula Versions tab on header section of the Formula form select a version.
+
+    :::image type="content" source="media/instruction-guides-FormulaVersion.png" alt-text="Adding a Guide to a Formula version.":::
+
+    The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
+
+    :::image type="content" source="media/instruction-guides-FormulaVersionAddGuide.png" alt-text="Adding a Guide to a Formula version.":::
+
 - [Bill of material](bill-of-material-bom.md)
+
+  - Typical use cases
+  
+    Bill Of Material (BOM) level Guides are useful to help shop floor workers with guides instructions that walk through the production along the specific BOM. Guides can also be assigned to versions of a BOM.
+
+    Please note: BOM lines cannot be used to attach individual Guides at this point.
+
+  - How to set up
+
+    Navigate to BOM form and open the Header section. In Associated Guides tab on header section of the BOM form and add, remove or manage the associated Guides.
+
+    :::image type="content" source="media/instruction-guides-BOM.png" alt-text="Adding a Guide to a BOM.":::
+
 - [Bill of material  version](bill-of-material-bom.md#bom-and-formula-versions)
+
+  - Typical use cases
+  
+    Guides can also be attached to individual versions of a Bill Of Material (BOM). They are useful to help shop floor workers with guides instructions that walk through the production along specific version of a BOM.
+
+    Please note: BOM lines cannot be used to attach individual Guides at this point.
+
+  - How to set up
+
+    Navigate to BOM form and open the Header section. In BOM Versions tab on header section of the BOM form select a version. 
+
+    :::image type="content" source="media/instruction-guides-BOMVersion.png" alt-text="Adding a Guide to a BOM version.":::
+
+    The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
+
+    :::image type="content" source="media/instruction-guides-BOMVersionAddGuide.png" alt-text="Adding a Guide to a BOM version.":::
+
 - [Route](routes-operations.md)
 - [Route Version](routes-operations.md#route-versions)
 - [Route Operation Relation](routes-operations.md#operation-relations)
