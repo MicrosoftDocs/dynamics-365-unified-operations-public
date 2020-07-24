@@ -972,9 +972,20 @@
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
 - name: Finance Insights
       items:
+    - name: Configuration and administration
+      items:
+      - name: Finance Insights administration
+        href: finance-insights/finance-insights-admin.md
+      - name: Configuration for Finance Insights
+        href: finance-insights/finance-insights-admin.md
+      - name: Set up demo data for Payment predictions
+        href: finance-insights/set-up-demo-data.md
       - name: Enable Cash flow forecasting
         href: finance-insights/enable-cash-flow-forecasting.md
-
+      - name: Enable Budget proposals
+        href: finance-insights/enable-budget-proposal.md
+      - name: Create data integrator project
+        href: finance-insights/create-data-integrate-project.md
 - name: Project management and accounting
       items:
       - name: Project management and accounting overview
