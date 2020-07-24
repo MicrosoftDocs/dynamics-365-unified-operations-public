@@ -64,7 +64,7 @@ The following steps show how to test this capability in demo data scenarios. The
 7. Enter **Sales tax groups** in the search field to open the **Sales tax groups** page.
 8. Select **New**, and enter a name for the sales tax group.
 9. On the **Setup** FastTab, select **Add**.
-10. In the drop-down list, select **RP\_CAST**, and then select the **Exempt** check box.
+10. On the drop-down list in the **Sales tax code** column, select **RP\_CAST**, and then select the **Exempt** check box.
 11. Select **Save**.
 12. Enter **Sales tax overrides** in the search field to open the **Sales tax overrides** page.
 13. Select **New**, and enter a name for the sales tax override.
@@ -84,7 +84,7 @@ The following steps show how to test this capability in demo data scenarios. The
 27. When the jobs have completed synchronization, open the POS.
 
     > [!NOTE]
-    > Tax details for the channel might be cached. If a shift was open, close it and reactivate the POS if the changes don't immediately appear.
+    > Tax details for the channel might be cached. Then close the point of sale application and relaunch it to to observe the changes after they have synchronized to the channel database.
 
 28. Add item **91050** to a transaction.
 29. Select **Tax overrides**, and then select **Override transaction tax**.
@@ -112,7 +112,7 @@ The following steps show how to test this capability in demo data scenarios. The
 6. Enter **Sales tax groups** in the search field to open the **Sales tax groups** page.
 7. Select **New**, and enter a name for the sales tax group.
 8. On the **Setup** FastTab, select **Add**.
-9. In the drop-down list, select **RP\_CAST**, and then select the **Exempt** check box.
+9. On the drop-down list in the **Sales tax code** column, select **RP\_CAST**, and then select the **Exempt** check box.
 10. Select **Save**.
 11. Go to **Retail and Commerce** \> **All customers**.
 12. Select account ID **004009** for **Matthew Tolley**.
