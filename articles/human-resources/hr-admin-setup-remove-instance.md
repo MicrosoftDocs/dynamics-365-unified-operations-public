@@ -80,3 +80,6 @@ To remove a Human Resources environment from an existing Power Apps environment,
 
 ## Recover an environment that is soft deleted
 In the event you have deleted the Power Apps environment that your Human Resources environment is connected to, the status of the environment in Lifecycle Services will be Soft deleted. When the Human Resources environment is soft deleted, users cannot connect to Dynamics 365 Human Resources. You can restore the environment by following a two step process. First, you must [Recover the Power Apps environment](/power-platform/admin/recover-environment.md). Second, you must conact Support to restore the Human Resources environment.
+
+> [!Warning]
+> Power Apps environments are only saved for seven days after the deletion. The process to recover the environment must be completed within the seven day period.
