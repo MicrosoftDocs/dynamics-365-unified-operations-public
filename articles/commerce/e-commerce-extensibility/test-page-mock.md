@@ -201,7 +201,7 @@ Some modules might have logic that must check the signed-in state of the user be
 }
 ```
 
-If you must simulate real data or the token that is returned from Commerce Server after a user signs in, sign in to your production e-Commerce site, and use the F12 browser tools to copy the data. The user information is available in the **\___initialData\___.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\___initialData\___.requestContext.user** to see the object. You can then update the **userContext** properties in the preceding example as required. Those properties include **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**.
+If you must simulate real data or the token that is returned from Commerce Server after a user signs in, sign in to your production e-Commerce site, and use the F12 browser tools to copy the data. The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. You can then update the **userContext** properties in the preceding example as required. Those properties include **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**.
 
 ## Additional resources
 
