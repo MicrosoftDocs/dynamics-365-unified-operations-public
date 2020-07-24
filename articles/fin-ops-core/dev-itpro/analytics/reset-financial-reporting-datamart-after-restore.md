@@ -255,7 +255,7 @@ Before getting started, instruct all users to close Report designer and exit the
 			EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
 			EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
 		END
-	End
+	   END
 
 	------------------------------
 	PRINT 'Drop archive tables'
