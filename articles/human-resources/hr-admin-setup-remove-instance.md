@@ -72,8 +72,11 @@ To remove a Human Resources environment from an existing Power Apps environment,
 1. Contact Support to initiate a removal request.
 2. The Support team will initiate a removal request with the Human Resources DevOps team. 
 3. Continue after you receive word that the environment has been removed.
-4.  Sign in to LCS using the account that you used to subscribe to Human Resources. 
+4. Sign in to LCS using the account that you used to subscribe to Human Resources. 
 5. Select the Human Resources project that contains the environment. 
 6. In your LCS project, select the **Human Resources App Management** tile. 
 7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
 8. Select **Remove instance** and confirm your decision. 
+
+## Recover an environment that is soft deleted
+In the event you have deleted the Power Apps environment that your Human Resources environment is connected to, the status of the environment in Lifecycle Services will be Soft deleted. When the Human Resources environment is soft deleted, users cannot connect to Dynamics 365 Human Resources. You can restore the environment by following a two step process. First, you must [Recover the Power Apps environment](/power-platform/admin/recover-environment.md). Second, you must conact Support to restore the Human Resources environment.
