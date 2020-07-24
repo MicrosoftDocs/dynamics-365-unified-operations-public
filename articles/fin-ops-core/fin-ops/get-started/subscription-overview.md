@@ -70,3 +70,10 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 1. Go to project home page in LCS.
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you will find the **Tenant name** and the **Tenant ID**.
+
+## how can I find the subscription status?
+1. Go to project home page in LCS.
+2. In the **Environments** section, select **Subscriptions available**.
+3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
+.[Note]
+It won’t impact your license quality or the ability to provision new environment If the status of the service plan is **In Grace Period**, but if the status of a service plan is in **Suspended**, it I will reflect in the license quality and impact your ability to provision new environment.
