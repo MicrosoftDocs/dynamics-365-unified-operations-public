@@ -125,10 +125,12 @@ To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine ta
     }
     ```
 
-## Sync the database and build the project
+## Build the project
 
-Synchronize your database, and build your project.
+Build your project, and synchronize the database.
 
 ## Validate your changes
 
 To validate your changes, you must create a layout in budget planning beyond 36 monetary and/or quantity columns. If you completed all the steps correctly, you should be able to enter a value in every column, save the value, and edit it in Excel.
+
+Once the changes are verified, the extension can be published and promoted beyond the local development enviornment. 
