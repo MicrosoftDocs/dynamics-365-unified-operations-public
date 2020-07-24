@@ -36,17 +36,17 @@ Experimentation is the process of using controlled experiments such as A/B tests
 
 Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments aka variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
 
-The flow-chart below explains the high-level overview of the steps involved in the experimentation journey:
-
 ## Prerequisites
 1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
-1. Setup test connector or purchase and setup third-party connector, following instructions here. <add link to Sam's doc>
 1. Turn on feature flags - needs description + images.
+1. Generate a hypothesis aimed at driving up conversions.
+1. Setup test connector or purchase and setup third-party connector, following instructions here. <add link to Sam's doc>
 
 ## Create an experiment
 Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
 
-## Create webpage variations for the experiment
+## Create webpage variations
+The next step is to associate the experiment with the corresponding web experiences. To do this:
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from either the test connector or the third-party connector. 
 1. Click “Connect” to open up the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations. 
