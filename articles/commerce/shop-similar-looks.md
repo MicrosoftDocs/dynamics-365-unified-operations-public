@@ -91,7 +91,6 @@ After enabling this feature, the Retailer now has the option to add a Buybox "sh
 
 Selecting the button will take a shopper to a deticated shop similar looks page that returns visually similar products, and which can be further filtered based on selectors.
 
-
 To enable **Shop similar looks** for a product in the Commerce site builder, follow these steps.
 
 1. Open an existing site builder page that contains a buybox module.
@@ -100,7 +99,6 @@ To enable **Shop similar looks** for a product in the Commerce site builder, fol
 1. Save the page, finish editing it, and then publish it. After the page is published, the product detail page will now show a shop similar looks button.
 
 ![Shop Similar Looks on Tooling page](./media/SSLecomtooling.png)
-
 
 ## Additional resources
 
