@@ -219,26 +219,26 @@ Before getting started, instruct all users to close Report designer and exit the
 	PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
 	------------------------------
 
-	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
-	BEGIN
-		IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
+		IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
 		BEGIN
-			--create table to store indexses
-			-- Indexes of different table can have same index_id,but we need unique index id
-			Create table [Datamart].[AttributeValueIndexesBackUp]
-			(
-				IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
-				IndexName NVARCHAR(255),
-				IsUnique BIT,
-				IndexType NVARCHAR(60),
-				FilterDefinition NVARCHAR(max),
-				KeyColumns NVARCHAR(max),
-				IncludedColumns NVARCHAR(max),
-				IndexRetry INT,
-				IndexStatus NVARCHAR(60),
-				AttributeType INT,
-			)
-		END
+			IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
+			BEGIN
+				--create table to store indexses
+				-- Indexes of different table can have same index_id,but we need unique index id
+				Create table [Datamart].[AttributeValueIndexesBackUp]
+				(
+					IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
+					IndexName NVARCHAR(255),
+					IsUnique BIT,
+					IndexType NVARCHAR(60),
+					FilterDefinition NVARCHAR(max),
+					KeyColumns NVARCHAR(max),
+					IncludedColumns NVARCHAR(max),
+					IndexRetry INT,
+					IndexStatus NVARCHAR(60),
+					AttributeType INT,
+				)
+			END
 
 		IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'FactAttributeValue')) 
 		BEGIN
