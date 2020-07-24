@@ -970,7 +970,12 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
-    - name: Project management and accounting
+- name: Finance Insights
+      items:
+      - name: Enable Cash flow forecasting
+        href: finance-insights/enable-cash-flow-forecasting.md
+
+- name: Project management and accounting
       items:
       - name: Project management and accounting overview
         href: project-management/overview-project-management-accounting.md
