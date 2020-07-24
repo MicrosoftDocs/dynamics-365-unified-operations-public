@@ -562,7 +562,7 @@ Before getting started, instruct all users to close Report designer and exit the
 
 2. (Optional) On the MRDB, execute the script below, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
 > [!NOTE]
-> Do not run this script unless you have confirmed with it is required to delete all users and companies. This will remove user references from previously generated reports and remove users from their assigned security groups. This step is not required in most cases.
+> Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
 
 
 
