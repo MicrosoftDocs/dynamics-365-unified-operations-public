@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enable Cash flow forecasting 
-description:  
+title: Enable Cash flow forecasts 
+description: This topics lists the steps to complete to enalbe the Cash flow forecasts feature within Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2020-07-23
+ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
@@ -48,6 +48,7 @@ Complete the following steps to enable the Cash flow forecasts capability within
    - Cash flow forecasts (preview)
 
 3. Open the Cash flow forecasts setup page (**Cash and bank management > Cash flow forecast setup**) and add liquidity accounts you want to include in the forecasts.
+
  > [!NOTE]
  > If liquidity accounts are setup, the cash flow cannot be generated.
 
