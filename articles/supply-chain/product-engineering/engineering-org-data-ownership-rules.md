@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 ## Engineering organizations and operational organizations
 
-<!-- KFM Does this feature add the concept of engineering vs organizational organizations? If so, we should make this more clear, and also describe how to configure which is which in the system. We should tell more about what an "operational organizations" is. -->
+<!-- KFM Does this feature add the concept of engineering vs organizational organizations? If so, we should make this more clear and explain the role of each of these, and also describe how to configure which is which in the system.  -->
 
 To ensure that the master data for products is created and maintained centrally, you can use one or more *engineering organizations*. The engineering organization owns the engineering products and their engineering-relevant data. The engineering organization is always connected to a *legal entity*, which is also an organization. With this connection, the system establishes a central entry point for all engineering-relevant data for engineering products within the company. This is where engineering products are created and engineering-relevant data is maintained. From this central point, the engineering products and engineering-relevant data will be released to *operational companies*, which are the other legal entities (For more information about the release management, see [Release product structure](release-product-structure.md)). These operational companies will use the engineering data as it is designed by the engineering organization. Any logistical data will be maintained locally by each company itself.
 

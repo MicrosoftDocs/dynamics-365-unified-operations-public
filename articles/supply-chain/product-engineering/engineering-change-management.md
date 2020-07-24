@@ -37,13 +37,76 @@ Engineering change management provides a structured processes for managing chang
 
 The engineering change request allows you to capture requests for change from all the relevant departments within your organization. It doesn't matter whether you work as an engineer, or in the manufacturing, sourcing, warehouse, or sales department&mdash;with the engineering change request, anybody can request a change. This can be an idea for a new product, an issue that you discovered while working with an existing product, a suggestion for improving the product, or something else.
 
-After someone submits a request for change, the *review and approval process* is managed by a workflow that establishes who needs to approve it (for example, the product owner). For more information about workflows see the [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). For more information about product owners, see [Product owner](product-owner.md).
+After someone submits a request for change, the *review and approval process* is managed by a workflow that establishes who needs to approve it (for example, the product owner). For more information about workflows see the [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). For more information about product owners, see [Product owner](product-owner.md). <!-- KFM: How do we add a workflow here? -->
 
-As part of the review of the request for change, you can use the **dependencies** option to assess the impact of the requested change on open transaction like sales orders, production order and inventory on-hand. With the **search** option the system scans all open transactions and you can view them with the **view** option. If the issue that requires a change is found critical, you can already block the open transactions or notify the responsible user via processing the actions. <!-- KFM: Where are these options? We should have a full procedure that describes how to create a change request and the various options available. -->
+### Create a new engineering change request
+
+To create an engineering change request, do one of the following:
+- Go to **Project Oaktree \> Common \> Engineering change management > Engineering change requests** and then select **New** from the Action Pane.
+- Open the **Product details** page for an existing engineering product. Then, on the Action Pane, open the **Engineer** tab and, from the **Project Oaktree** group, select **Engineering change request > New engineering change request**.
+
+A new change request is created. Then make the settings on each FastTab, as described in the following subsections.
+
+#### The General FastTab
+
+Use the **General** FastTab to provide a basic description of the change request. Make the settings described in the following table.
+
+| **Setting** | Description |
+| --- | --- |
+| **Change request** | <!-- KFM: Describe this setting. How is this different from the title?  --> |
+| **Title** | <!-- KFM: Describe this setting.  --> |
+| **Priority** | Select a value to describe how highly to prioritize this change. You can customize the values available here as required for your organization (see also [Establish common values for engineering change management](engineering-change-management-setup.md)). |
+| **Category** | Select a value to describe the type of change you are requesting. You can customize the values available here as required for your organization (see also [Establish common values for engineering change management](engineering-change-management-setup.md)). |
+| **Severity** | Select a value to describe how severe the problem is that should be resolved by implementing this request. You can customize the values available here as required for your organization (see also [Establish common values for engineering change management](engineering-change-management-setup.md)). |
+| **Requested by** | Shows the name of the user who created the request |
+| **On** | Shows the date the request was created. |
+| **Status** | Shows the status of the request. When first created, the status is *Created*. When approved, the status changes to *Approved*. <!-- KFM: Other values? --> |
+| **Change order** | <!-- KFM: Describe this setting.  --> |
+
+#### The Information FastTab
+
+Use the **Information** FastTab to add more information about your request.
+
+To add a new row here, open the New menu from the **Information** toolbar and select one of the following:
+
+- **File** - To upload a file.
+- **Image** - To upload an image file.
+- **Note** - To enter a note directly into the grid.
+- **URL** - To enter a URL directly into the grid. <!-- KFM: Do we do anything special with URLs? Seems exactly like the Note option.  -->
+
+Each row provides the settings and information described in the following table.
+
+| **Setting** | Description |
+| --- | --- |
+| **Created date and time** | Shows the date and time that the row was created. |
+| **Type** | Shows the type that was selected when the row was created (file, image, note, or URL). |
+| **Description** | Enter a description for the row. |
+| **Restriction** | <!-- KFM: Describe this setting.  --> |
+| **Attached** | If the row includes an attachment (file or image), then a check mark is shown here. To download the attachment, select the row and then select **Open** from the **Information** toolbar |
+
+#### The Products FastTab
+
+The **Products** FastTab can list each product affected by the change request. Use buttons in the toolbar to add or remove products in the grid.
+
+<!-- KFM: What are some features and effects of this list? Affects business impact search? Should a product already be here if I create a request from the product details page (didn't do that when I tried it)? -->
+
+#### The Source FastTab
+
+<!-- KFM: Describe this FastTab and its settings/information.  -->
+
+### Evaluate the business impact of a change request
+
+As part of the review of the request for change, you can use the **dependencies** option to assess the impact of the requested change on open transaction like sales orders, production order and inventory on-hand. With the **search** option the system scans all open transactions and you can view them with the **view** option. If the issue that requires a change is found critical, you can already block the open transactions or notify the responsible user via processing the actions. <!-- KFM: I think this belongs here, but the labels have changed. Now the tab is called "Business impact". Is that right? Please update with the correct labels if this is the case.-->
+
+### Review and approve change requests
+
+### Create a change order from a change request
+
+<!-- KFM: We should describe how to create a change order from a change request.  -->
 
 ## Engineering change orders
 
-Engineering change orders let you make changes to engineering products using a structured process. You propose changes using a copy of the engineering relevant data without affecting the real master data. For more information on engineering relevant data, see [Engineering versions and engineering product category](engineering-versions-product-category.md) <!-- KFM: Is "type" the same as "category"? -->. You can create an engineering change order based on an approved engineering change requests, but engineers can also create them from scratch. You can include multiple products in a single engineering change order by doing any of the following:
+Engineering change orders let you make changes to engineering products using a structured process. You propose changes using a copy of the engineering relevant data without affecting the real master data. For more information on engineering relevant data, see [Engineering versions and engineering product category](engineering-versions-product-category.md). You can create an engineering change order based on an approved engineering change requests, but engineers can also create them from scratch. You can include multiple products in a single engineering change order by doing any of the following:
 
 - Manually select products
 - Use the bill of material to include products lower in the product structure (children)

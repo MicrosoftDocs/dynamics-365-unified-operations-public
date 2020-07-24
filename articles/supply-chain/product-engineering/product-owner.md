@@ -54,7 +54,7 @@ To assign a product owner group to a product:
 
 While a product had an owner assigned, only the members of that product owner group can edit the **Product owner** setting.
 
-The product owner is also visible on the released product form. putaway 
+The product owner is also visible on the released product form. 
 
 ## Product owners and releasing products
 

@@ -41,7 +41,7 @@ To open the **Project Oaktree parameters** page, go to **Project Oaktree > Setup
 
 <!-- KFM: Provide an intro that describes what this tab is for, in general. -->
 
-The following table describes the settings available on the **Release control** tab.
+The following table describes the settings available on the **Release control** tab of the **Project Oaktree parameters** page.
 
 | Setting | Description |
 | --- | --- |
@@ -57,7 +57,7 @@ The following table describes the settings available on the **Release control** 
 
 <!-- KFM: Provide an intro that describes what this tab is for, in general. -->
 
-The following table describes the settings available on the **Engineering change management** tab.
+The following table describes the settings available on the **Engineering change management** tab of the **Project Oaktree parameters** page.
 
 | Setting | Description |
 | --- | --- |

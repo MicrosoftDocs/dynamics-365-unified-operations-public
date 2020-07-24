@@ -39,6 +39,8 @@ To make process more efficient, the engineering relevant data, including the pro
 
 Note that you can release both standard products and engineering products with the release product structure. When doing so, the whole product structure will be released, including the BOM and route from the company where they are being released.
 
+<!-- KFM: I think topic is missing a section with a procedure for how to release a product. -->
+
 ## Released data for a product when using the release product structure
 
 The following data are part of releasing engineering products:
@@ -56,7 +58,7 @@ For a standard product, the BOM and the route will also be released. <!-- KFM: A
 
 **Automatically accept products** is a key parameter that influences the release process. You can set this per-company on the **Product engineering parameters** page. <!-- KFM: We should describe how to find this setting. We should also document the rest of the **Product engineering parameters** page too, maybe in its own topic. -->
 
-<!-- KFM: I don't see the **Automatically accept products** setting on **Project Oaktree parameters**. Do we mean the **Product acceptance** setting? (options: Manual|Automatica) -->
+<!-- KFM: I don't see the **Automatically accept products** setting on **Project Oaktree parameters**. Do we mean the **Product acceptance** setting? (options: Manual|Automatic) -->
 
 ### When "Automatically accept products" is set to yes
 
@@ -92,11 +94,11 @@ To work with product release policies, go to **Project Oaktree > Setup > product
 
 - To create a new policy, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit an existing policy, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
-- To delete an existing policy, select it from the list pane and, on the **General** FastTab, set **Active** to *No*. Then select **Delete** on the Action Pane.
+- To delete an existing policy, select it from the list pane. Select **Edit** on the Action Pane and, on the **General** FastTab, set **Active** to *No* if it isn't already. Then select **Delete** on the Action Pane.
 
 ### Settings in the header
 
-Make the following settings in the header of a product release policies:
+Make the following settings in the header of a product release policy:
 
 | Setting | Description |
 | --- | --- |
@@ -105,17 +107,17 @@ Make the following settings in the header of a product release policies:
 
 ### The General FastTab
 
-The following table describes the settings available on **General** FastTab.
+The following table describes the settings available on **General** FastTab of a product release policy.
 
 | Setting | Description |
 | --- | --- |
 | **Product type** |  <!-- KFM: What affect does this have? Seems like it can't be changed after saving. --> |
 | **Apply templates** | Choose one of the following options to establish whether and how product release templates should be applied when using this policy:<ul><li>**Always** - A template released product must always be used for releasing. Use the **All products** FastTab to establish the template to use for each company that you release to. When you use this option, you must set a template for each company listed on the **All products** FastTab (otherwise, an error will be shown when you try to save the policy). </li><li>**Optional** - If a company listed on **All products** FastTab has a template released product set, then that template will be used when releasing to that company. Otherwise, no template will be used. When you use this option, then you will be able to save the policy without assigning templates to all companies (no warning is shown). </li><li>**Never** - No template released product will be used for any companies, even if a template is set in teh listed on **All products** FastTab. The template columns are disabled.</li></ul> |
-| **Active** | Use this setting to help maintain your release policies. Set this to *Yes* for all release policy that you use; set it to *No* to mark a release policy as inactive when it is not used. Note that you can't deactivate a release policy that is assigned to an engineering product category, and you can only delete inactive release policies. |
+| **Active** | Use this setting to help maintain your release policies. Set this to *Yes* for all release policies that you use; set it to *No* to mark a release policy as inactive when it is not used. Note that you can't deactivate a release policy that is assigned to an engineering product category, and you can only delete inactive release policies. |
 
 ### The All products FastTab
 
-Add a row on the **All products** FastTab for each operational organization that you will release to using this policy. Use the button in the **All products** FastTab to add and remove rows as needed. For each row you add, make the settings described in the following table.
+Add a row on the **All products** FastTab for each operational organization that you will release to using this policy. Use the buttons on the **All products** toolbar to add and remove rows as needed. For each row you add, make the settings described in the following table.
 
 These settings apply for both engineering products and standard products.
 

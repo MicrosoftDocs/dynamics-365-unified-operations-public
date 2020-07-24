@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-When you set up engineering change management, you must establish a few collections of values that you will use to populate drop-down lists in other parts of the interface. You should specify these values according to the types of products you products you produce and your specific business needs.
+When you set up engineering change management, you must establish several collections of values that will be used to populate drop-down lists in other parts of the interface. You should specify these values according to the types of products you produce and your specific business needs.
 
 ## Engineering change categories
 
@@ -104,5 +104,5 @@ To set up the rules that apply to each change severity level that you have defin
 
 For each rule set, make the following settings:
 
-- **Severity** - Select the severity level you want to establish rules for. You can establish these using the **Engineering change severities** page (see the previous section).
+- **Severity** - Select the severity level you want to establish rules for. Use the **Engineering change severities** page to create and name the levels (see the previous section).
 - **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. <!-- KFM Where do these rules come from? Should we define each of them here? What is the Name for? -->

@@ -66,7 +66,7 @@ You can choose to update this data on an existing version or create a new versio
 
 When you use engineering change management, your product master data will always include one or more engineering versions. In your setup of engineering products, you can choose whether or not the engineering version is also part of *logistical transactions* (see [Engineering product category](#product-category) for details). If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product are used and when you introduce a new version, the previous version can't be used anymore. In other cases, the version is needed in logistical transactions to overcome the following challenges:
 
-- Logistics <!-- KFM: Logistics what? Department, manager, philosophy? --> needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
+- Logistics <!-- KFM: Logistics what? Department, manager, personnel? --> needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
 - If it later turns out that a problem occurs specifically related to a change, it may be beneficial to pinpoint exactly which version was shipped with each order.
 - Companies typically want to ship old versions first to phase them out of inventory. This can often be managed by determining the effectivity <!-- KFM: What do you mean by "effectivity"? --> of the new version in relation to predictions of when stock of the old version will be depleted, especially with low-volume products. But sometimes this is not possible, or the uncertainty in stock level prediction is considered too high.
 
@@ -151,7 +151,7 @@ Use the **Product release policy** drop-down list to select the release policy t
 
 ## Connect bills of materials and routes to engineering versions
 
-The choice you make on the **Enforce effectivity** setting is important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in the following <!-- KFM: All of the following, or any of the following?  -->:
+The choice you make on the **Enforce effectivity** setting is also important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in the following <!-- KFM: All of the following, or any of the following?  -->:
 
 - Product dimension
 - Quantity
