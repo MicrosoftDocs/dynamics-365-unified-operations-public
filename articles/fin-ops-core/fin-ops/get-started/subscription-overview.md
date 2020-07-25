@@ -71,7 +71,7 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you will find the **Tenant name** and the **Tenant ID**.
 
-## how can I find the subscription status and how would it impact the environment?
+## How can I find the subscription status and how would it impact the environment?
 1. Go to project home page in LCS.
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
@@ -79,6 +79,6 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 Some of the environment operation may be impact by the subscription status - 
  - **Active**: your subscription is in operative state, you should be able to perform all environment operations. 
  - **In Grace Period**: your subscription has expired but is within the grace period, you should renew your subscription soon. It won’t impact your subscription quantity or the ability to deploy new environment or to perform environment operations.
- - **Suspended**: your subscripton has expired beyond grace period. This may reduce the license quanity and impact your ability to deploy new environment or perform environment operations. 
+ - **Suspended**: your subscription has expired beyond grace period. This may reduce the license quanity and impact your ability to deploy new environment or perform environment operations. 
  - **Deleted**: your subscription has been deleted. This will impact your ability to deploy new environment or perform environment operations.  
 > 
