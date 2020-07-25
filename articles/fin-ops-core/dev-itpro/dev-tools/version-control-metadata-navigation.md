@@ -2,10 +2,10 @@
 # required metadata
 
 title: Version control, metadata search, and navigation
-description: This tutorial will walk you through configuring Azure DevOps (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
+description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models. It’ll also help you learn about other productivity features in the development tools.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial will walk you through configuring Azure DevOps (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
+This tutorial will walk you through configuring Microsoft Azure DevOps to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
 ## Configure your Azure DevOps account and project
 
@@ -292,6 +292,4 @@ You can use Application Explorer to search for all or some elements of a model a
 
     > [!TIP]
     > To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
-
-
 
