@@ -205,4 +205,14 @@ If you host in an application with a bin folder, this is not required. -->
 8.	To verify that the extension was successfully loaded, you can browse the RS metadata, and confirm that your entities and methods appear in the list.
 To browse the metadata, open a URL in the following format in a web browser:
 https://RS-URL/Commerce/$metadata
-9.	To call the RS extension in your client, you must generate the Commerce proxy. You can then use the proxy to call your new RS APIs from the client.
+9.	To call the RS extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new RS APIs from the client.
+
+**Retail server extension built using this new Microsoft.Dynamics.Commerce.Hosting.Contracts can be used in offline, no need to generate separate C# proxy libraray. Drop the Retail server extension library in …\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext folder and update the RetailProxy.MPOSOffline.ext config file to include this new library, extension have to generate only the Typescript proxy (SDK samples can be found in …\RetailSDK\SampleExtensions\TypeScriptProxy).**
+
+```XML
+Ex:
+<add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
+```
+
+![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
+
