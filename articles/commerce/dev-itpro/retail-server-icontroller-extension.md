@@ -207,6 +207,8 @@ To browse the metadata, open a URL in the following format in a web browser:
 https://RS-URL/Commerce/$metadata
 9.	To call the RS extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new RS APIs from the client.
 
+Extension no need to add/include any EdmModelExtender files with the RS extensions APIs. This is required only if you are using Retail SDK version 10.0.10 or lower.
+
 **Retail server extension built using this new Microsoft.Dynamics.Commerce.Hosting.Contracts can be used in offline, no need to generate separate C# proxy libraray. Drop the Retail server extension library in …\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext folder and update the RetailProxy.MPOSOffline.ext config file to include this new library, extension have to generate only the Typescript proxy (SDK samples can be found in …\RetailSDK\SampleExtensions\TypeScriptProxy).**
 
 ```XML
@@ -215,4 +217,28 @@ Ex:
 ```
 
 ![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
+
+### Generate Typescript proxy for POS:
+
+1.	Open the Sample proxy template project from …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj in Visual studio 2017 and rename it if required.
+2.	Add the Retail server extension project as a project reference project to this proxy template project. Remove the existing StoreHoursSample project reference.
+3.	Right click the Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj  and Select Edit Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj.
+4.	Under the <RetailServerExtensionAssemblies> node specify your extension Retail server assembly name.
+
+```XML
+Ex:
+  <ItemGroup>
+    <RetailServerExtensionAssemblies Include="..\..\RetailServer\Extensions.Sample\bin\$(Configuration)\net461\$(AssemblyNamePrefix).RetailServer.Extension.Sample.dll" />
+  </ItemGroup>
+```
+
+5.	Under the Copy node Update the DestinationFolder path to your POS extension folder, so that generated proxy files are copied to the POS Extension folder automatically. 
+The generated proxy files will also be copied to …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\DataService.
+
+```XML
+Ex: 
+<Copy SourceFiles="@(GeneratedDataServiceContracts)" DestinationFolder="$(SdkRootPath)\POS\Extensions\Sample\DataService" SkipUnchangedFiles="true" />
+```
+
+6.	After the changes build the proxy project to generate the typescript proxy files. Once the build is completed the proxy files will be available in the …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\DataService folder and the folder mentioned in the copy command (The path/folder path may vary based on the folder structure).
 
