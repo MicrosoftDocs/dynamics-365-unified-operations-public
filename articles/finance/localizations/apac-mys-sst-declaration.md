@@ -56,7 +56,7 @@ The implementation of SST-02 return form for Malaysia is based on Electronic rep
 
 For production and user acceptance testing (UAT) environments, follow the instructions in Download Electronic reporting configurations from Lifecycle Services to download ER configurations.
 
-To generate the VAT return form and related reports in Malaysia legal entity,  you need to upload the following configurations:
+To generate the SST-02 return form and related reports in Malaysia legal entity,  you need to upload the following configurations:
 	• Tax declaration model.version.67.xml 
 	• Tax declaration model mapping.version.67.93.xml 
 	• SST-02 Declaration Excel (MY).version.67.3.xml  or a later versions
@@ -72,13 +72,13 @@ The SST-02 return form includes a set of boxes (lines) which correspond to speci
 
 The **Application-specific parameters** option let the users to establish the criteria of how the tax transactions will be collected and calculated in each box (line) of declaration form during the generation of report depending on the configuration of sales tax code .
 
-1. In the Electronic reporting workspace, select **Configurations > Setup**. This action is used to setup the rules to identify the tax transaction into the related box of VAT return form.
+1. In the Electronic reporting workspace, select **Configurations > Setup**. This action is used to setup the rules to identify the tax transaction into the related box of SST-022 return form.
 2. Select the current version
-3. On the **Lookups** FastTab select the Lookup name ***ReportFieldLookup***. This lookup identifies the list of lines (boxes) in the VAT form required by tax authority . 
+3. On the **Lookups** FastTab select the Lookup name ***ReportFieldLookup***. This lookup identifies the list of lines (boxes) in the SST-02 form required by tax authority . 
 4. On the **Conditions** FastTab, select **Add**.
 5. In the new line created follow these steps:
    a. In the **Lookup result** column, select the related line of SST-02 return form.
-   b. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of VAT return form.
+   b. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of SST-02 return form.
    c. In the **Name** column, select the tax transaction classification where the sales tax code is used
 6. Repeat the same steps for all SST-02 return form lines (boxes) and the combination of sales tax code and tax transaction types configured in your legal entity
 7. Select Add again, and then follow these steps to include the final record line
@@ -86,7 +86,7 @@ The **Application-specific parameters** option let the users to establish the cr
    * In the **Tax code (Code)** column, select the ***Not blank*** option;
    * In the **Name** column, select the ***Not blank*** option as well
 
-By adding this last record (Other), you define the following rule: Whenever the Tax code and Name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in VAT return form.  Although this rule is not used in the generation of the report,  introduced to avoid errors in report generation in case of missing rule configuration. 
+By adding this last record (Other), you define the following rule: Whenever the Tax code and Name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in SST-02 return form.  Although this rule is not used in the generation of the report,  introduced to avoid errors in report generation in case of missing rule configuration. 
 
 The table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation.
 
@@ -171,13 +171,13 @@ The following table provides a definition of column Name in order to understand 
   
 ## Set up General ledger parameters
 
-To generate the VAT return form report in Excel format you must define an ER format on the General ledger parameters page.
+To generate the SST-02 return form report in Excel format you must define an ER format on the General ledger parameters page.
 
 1. Go to **Tax > Setup > General ledger parameters**.
-2. On the **Sales tax** tab, in the Tax options section, in the SST statement format mapping field, select SST-02 Declaration Excel (MY). If you leave the SST statement format mapping field blank, the standard sales tax  report will be generated in SSRS format.
+2. On the **Sales tax** tab, in the Tax options section, in the electronic reporting field, select SST-02 Declaration Excel (MY). If you leave the SST statement format mapping field blank, the standard sales tax report will be generated in SSRS format.
 3. Select the **Category hierarchy**. This category enables the **Commodity code** in **Foreign trade** tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
 
-## Generate a VAT return report
+## Generate a SST-02 return report
 
 The process of preparing and submitting a SST-02 return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see Sales tax overview (https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview)
 
@@ -187,7 +187,10 @@ Follow these steps to generate the tax declaration report.
 2. Select the **Settlement period**.
 3. Select the "from" date.
 4. Select the sales tax payment version.
-5. Select OK to confirm the above steps. 
-6. Enter the amount of credit from previous period if applicable. Otherwise leave the amount in zero.
-7. In the Generate details field, select the following available options. VAT return form is always generated in this process.
+5. Select OK to confirm the above steps.
+6. Select the **Type of report**
+	* SST for goods and services. 
+	* SST for goods. 
+	* SST for services
+6. Press OK to confirm the generation of report
 		
