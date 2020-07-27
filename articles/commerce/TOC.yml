@@ -310,6 +310,8 @@
               href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json  
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+            - name: Calculation of tax exemption
+              href: tax-exempt-price-inclusive.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
