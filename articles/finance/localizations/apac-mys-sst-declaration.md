@@ -145,7 +145,7 @@ You need to repeat the above steps for Lookup name ReportFieldDetailed and the t
 | PART B1-10     | TaxableServices_B110    | Value   of Taxable Service                                              |   12 | SSTH         | SalesCreditNote |
 | NOT APPLICABLE | Other                   | Other                                                                   |   13 | *No   blank* | *No   Blank*    |
   
-Once the above configuration are done, In the State field, select Completed and Save and close the Application specific parameters page.
+Once the above configuration are done, In the State field, select **Completed** and **Save** and close the Application specific parameters page.
 
 > [!NOTE]
 > To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code SST5 you will be facing some issues when the report is generated. We recommend to use **Tax > Inquire > Posted sales tax** menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
