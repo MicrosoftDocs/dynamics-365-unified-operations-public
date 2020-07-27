@@ -109,7 +109,7 @@ To enable the **IsSOPIntegrationEnabled** attribute:
 
     ![Find orgainizationid](media/sales-map-orgid.png)
 
-3. Open browser’s console in CRM page. Run following script, using the **organizationid** from step 2.
+3. Open the browser console in Dynamics 365 Sales. Run following script, using the **organizationid** from step 2.
 
     ```javascript
     Xrm.WebApi.updateRecord("organization",
