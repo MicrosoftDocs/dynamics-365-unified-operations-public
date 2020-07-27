@@ -1905,6 +1905,39 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
+
+
+    - name: Product engineering
+      items:
+      - name: Engineering organizations and data ownership rules
+        href: product-engineering/engineering-org-data-ownership-rules.md
+
+
+
+        
+      - name: Engineering attributes and engineering attribute search
+        href: product-engineering/engineering-attributes-and-search.md
+      - name: Engineering change management
+        href: product-engineering/engineering-change-management.md
+      - name: Establish common values for engineering change management
+        href: product-engineering/engineering-change-management-setup.md
+        href: product-engineering/engineering-change-management.md
+      - name: Project Oaktree parameters
+        href: product-engineering/engineering-paramters.md
+      - name: Engineering versions and engineering product categories
+        href: product-engineering/engineering-versions-product-category.md
+      - name: Product lifecycle state and transactions
+        href: product-engineering/product-lifecycle-state-transactions.md
+      - name: Product owner
+        href: product-engineering/product-owner.md
+      - name: Product readiness
+        href: product-engineering/product-readiness.md
+      - name: Release product structure
+        href: product-engineering/release-product-structure.md
+
+
+
+        
     - name: Production control
       items:
       - name: Production process overview
