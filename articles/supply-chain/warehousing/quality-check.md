@@ -369,9 +369,7 @@ You've now completed the quality check and created a quality order for the rejec
 
 Quality order testing can now be processed. Quality testing isn't covered in this topic.
 
-<!-- HHM: Karl, please validate the link below to the Quality management overview topic. -->
-
-For more information about quality management, see [Quality management overview](enable-quality-management.md)
+For more information about quality management, see [Quality management overview](../inventory/enable-quality-management.md)
 
 #### Receive pallet 3
 
