@@ -55,14 +55,14 @@ Deploy the environments by completing the following steps.
    
       [![Power Platform Admin Center](./media/power-pltfrm-admin-center.png)](power-pltfrm-admin-center.png)
    
- 2. Click +New environment
-    - Select a Sandbox for the environment Type.
-    - Set **Create Database** to **Yes**. 
-    - Click **Next**.
-    - Select the language and currency for your organization.
-    - Accept the default values for the other options.
-    - Click **Save**.
-    - Navigate to the environment page, and then refresh the environments page. When the **State** shows **Ready**, complete the following steps. 
+2. Click +New environment
+   - Select a Sandbox for the environment Type.
+   - Set **Create Database** to **Yes**. 
+   - Click **Next**.
+   - Select the language and currency for your organization.
+   - Accept the default values for the other options.
+   - Click **Save**.
+   - Navigate to the environment page, and then refresh the environments page. When the **State** shows **Ready**, complete the following steps. 
      - Record the CDS Organization ID.
      - Select the environment and click **Settings**.
      - Click **Resources > All Ledgacy Settings**.
@@ -123,13 +123,13 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 | AI Builder   Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
 If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
- - On your local machine: Click on the Start menu and search for powershell.
- - Right-click on Windows Powershell and choose “Run as administrator”.
- - Run the following command to install “AzureAD” module
+- On your local machine: Click on the Start menu and search for powershell.
+- Right-click on Windows Powershell and choose “Run as administrator”.
+- Run the following command to install “AzureAD” module
    - Install-Module -Name AzureAD
    - If NuGet provider is required to continue, select “Y” to install it.
    - If Untrusted repository message appears, select “Y” to continue.
- - For each application that needs to be added, run the following commands to add the application to the Azure Active Directory. 
+- For each application that needs to be added, run the following commands to add the application to the Azure Active Directory. 
    - Login as the Azure Active Directory administrator when prompted.
      Connect-AzureAD 
      New-AzureADServicePrincipal –AppId <AppId>
@@ -140,8 +140,7 @@ If you are unable to find any of the preceding applications, try the following i
 
   - Create a new Storage Account using the following instructions: 
    > [!NOTE] 
-   > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake]
-	(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
+   > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
 
    - Go to created storage account.
    - Copy and save the storage account Name.
@@ -149,8 +148,8 @@ If you are unable to find any of the preceding applications, try the following i
    - Copy and save Connection string for either Key1 or key2.
    - Copy and save the Storage account name
 		 
-  - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
-  - Create and register an Azure Active directory application using the following instructions: 
+   - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
+   - Create and register an Azure Active directory application using the following instructions: 
     - In the Azure portal, select Azure Active Directory, and then select App registrations.
     - Select New application registration, and enter the following information:
     - **Name**: Enter the name of the app.
