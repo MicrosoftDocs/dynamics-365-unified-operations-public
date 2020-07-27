@@ -3,9 +3,9 @@
 
 title: INTERVAT tax declaration
 description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
-author: v-oloski
+author: anasyash
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,162 +35,101 @@ ms.search.validFrom: 2016-05-31
 
 ## Overview
 
-This topic provides country/region-specific information about how to set up and
-create the INTERVAT tax declaration for legal entities in Belgium.
+This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium.
 
-You can create the INTERVAT tax declaration as an XML file. You can also preview
-the amounts of the value-added tax (VAT) declaration in a printable format.
+You can create the INTERVAT tax declaration as an XML file. You can also preview the amounts of the value-added tax (VAT) declaration in a printable format.
 
-The INTERVAT declaration that you create includes tax transactions from the
-current period. It can also include corrections from the previous period, if a
-transaction was posted in the previous period after that period was closed.
+The INTERVAT declaration that you create includes tax transactions from the current period. It can also include corrections from the previous period, if a transaction was posted in the previous period after that period was closed.
 
-You can enter additional information for the declaration and manually correct
-data on the **Additional sales tax report boxes** page. Manual correction might
-be required if, for example, you can't print the amount of the reporting code in
-the INTERVAT declaration because the amount is negative. Negative amounts must
-be deducted from the next VAT declaration, and this task must be completed
-manually by using corrections. Before you can indicate the corrected amount, you
-must indicate which sales tax reporting codes allow for corrections.
+You can enter additional information for the declaration and manually correct data on the **Additional sales tax report boxes** page. Manual correction might be required if, for example, you can't print the amount of the reporting code in the INTERVAT declaration because the amount is negative. Negative amounts must be deducted from the next VAT declaration, and this task must be completed manually by using corrections. Before you can indicate the corrected amount, you must indicate which sales tax reporting codes allow for corrections.
 
 ## Prerequisites
-The following prerequisites must be set up before you begin to work with the
-INTERVAT tax declaration:
+The following prerequisites must be set up before you begin to work with the INTERVAT tax declaration:
 
 -   Legal entity
-
 -   Registration number
-
 -   Contact information
-
 -   Number sequences
-
 -   Posting journal
-
 -   Sales tax authorities
-
 -   Sales tax reporting codes
-
 -   Sales tax codes
-
 -   Tax exempt number
 
 ### Legal entity
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**,
-    and select your legal entity.
-
+1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
 2.  On the **Addresses** FastTab, create an address.
-
 3.  In the **Country/region** field, select **Belgium**.
-
 4.  Fill in other address components, and mark the address as **Primary**.
-
-5.  On the **Tax registration** FastTab, in the **Tax registration number**
-    field, specify the tax registration number for your company.
+5.  On the **Tax registration** FastTab, in the **Tax registration number** field, specify the tax registration number for your company.
 
 ### Registration number
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**.
-
-2.  Select **Registration IDs**, and then, on the **Registration ID** tab,
-    select **Add**.
-
+1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2.  Select **Registration IDs**, and then, on the **Registration ID** tab, select **Add**.
 3.  In the **Registration type** field, select a value.
-
 4.  In the **Registration number** field, enter a value.
-
-5.  On the **General** tab, enter an effective date. For more information, see
-    [Registration number](emea-registration-ids.md).
+5.  On the **General** tab, enter an effective date. For more information, see [Registration number](emea-registration-ids.md).
 
 ### Contact information
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**.
-
-2.  On the **Contact information** tab, add lines for the phone number and email
-    address, and set them to **Primary**.
+1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2.  On the **Contact information** tab, add lines for the phone number and email address, and set them to **Primary**.
 
 ### Number sequences
 
-1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
-
-2.  On the **Number sequences** tab, set up number sequences for the **Annual
-    sales list ID** and **INTERVAT ID** references.
+1.  Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2.  On the **Number sequences** tab, set up number sequences for the **Annual sales list ID** and **INTERVAT ID** references.
 
 ### Posting journal
 
-1.  Go to **General ledger \> Journal setup \> Posting journals**.
-
-2.  On the **Journal setup** page, select **Create**. The voucher series is
-    automatically created.
+1.  Go to **General ledger** \> **Journal setup** \> **Posting journals**.
+2.  On the **Journal setup** page, select **Create**. The voucher series is automatically created.
 
 ### Sales tax authorities
 
-1.  Go to **Tax \> Indirect taxes \> Sales tax authorities**.
-
+1.  Go to **Tax** \> **Indirect taxes** \> **Sales tax authorities**.
 2.  Verify that the **Report layout** field is set to **Belgium report layout**.
 
 ### Sales tax reporting codes
 
--   Go to **Tax \> Setup \> Sales tax \> Sales tax reporting codes**, and create
-    new sales tax reporting codes.
+-   Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax reporting codes**, and create new sales tax reporting codes.
 
-If the **Sales tax correction** check box is selected for a sales tax reporting
-code, that code is available for selection on the **Additional sales tax report
-boxes** page.
+If the **Sales tax correction** check box is selected for a sales tax reporting code, that code is available for selection on the **Additional sales tax report boxes** page.
 
-Examples of sales tax reporting code are provided in the [Set up sales tax
-reporting codes](#set-up-sales-tax-reporting-codes) section later in this topic.
+Examples of sales tax reporting code are provided in the [Set up sales tax reporting codes](#set-up-sales-tax-reporting-codes) section later in this topic.
 
 ### Sales tax codes
 
-1.  Go to **Tax \> Indirect taxes \> Sales tax codes**.
-
-2.  Add or select information in the fields on the **Report** and **Report –
-    credit note** tabs.
-
+1.  Go to **Tax** \> **Indirect taxes** \> **Sales tax codes**.
+2.  Add or select information in the fields on the **Report** and **Report – credit note** tabs.
 3.  Select the required values in the **Sales tax reporting codes** grid.
 
 ### Tax exempt number
 
-1.  Go to **Tax \> Setup \> Sales tax \> Tax exempt numbers**.
+1.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
+2.  For each tax-exempt number, create a record that includes the followinginformation:
 
-2.  For each tax-exempt number, create a record that includes the following
-    information:
+    -   In the **Country/region** field, select the tax registration of the counterparty.
+    -   In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
+    -   In the **Company name** field, enter the name of the counterparty.
 
--   In the **Country/region** field, select the tax registration of the
-        counterparty.
-
--   In the **Tax exempt number** field, enter the tax-exempt number of the
-        counterparty.
-
--   In the **Company name** field, enter the name of the counterparty.
-
-For more information about how to set up the VAT statement, see [VAT reporting
-for
-Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md).
+For more information about how to set up the VAT statement, see [VAT reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md).
 
 ## Settings
 
 ### Set up INTERVAT
 
-Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \>
-INTERVAT setup**). The information that you enter on this page is used when you
-select **Open Web site** on the **INTERVAT tax declaration** page. You should
-create an element for each language. Set the following fields: **Language**,
-**Description**, and **URL**.
+Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. You should create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
 
-![](media/1_Intervat_setup.png)
+![Intervat setup page](media/1_Intervat_setup.png)
 
 ### Set up sales tax reporting codes
 
-For information about how to set up sales tax reporting codes, see [Set up sales
-tax reporting
-codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
+For information about how to set up sales tax reporting codes, see [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
 
-If users are allowed to manually correct a reporting code, select the **Tax
-corrections** check box. The following table provides an example of sales tax
-reporting codes for Belgium.
+If users are allowed to manually correct a reporting code, select the **Tax corrections** check box. The following table provides an example of sales tax reporting codes for Belgium.
 
 <table width="100%">
 <thead>
@@ -640,69 +579,34 @@ reporting codes for Belgium.
 </table>
 
 > [!NOTE]
-> You don't have to enter codes **71**, **72**, and **91**, because they
-will be generated automatically.
+> You don't have to enter codes **71**, **72**, and **91**, because they will be generated automatically.
 
-To set up an assignment of sales tax reporting codes to sales tax codes, go to
-**Sales tax codes \> Report setup/Report setup - Credit note**.
-Consider the following relations between sales tax reporting codes:
+To set up an assignment of sales tax reporting codes to sales tax codes, go to **Sales tax codes \> Report setup/Report setup - Credit note**. Consider the following relations between sales tax reporting codes:
 
--   If there is an amount in code **01**, **02**, or **03**, there should also
-    be an amount in code **54**.
-
--   If there is an amount in code **54**, there should also be an amount in code
-    **01**, **02**, or **03**.
-
--   If there is an amount in code **86**, there should also be an amount in code
-    **55**.
-
--   If there is an amount in code **87**, there should also be an amount in code
-    **56** or **57**.
-
--   The difference between the amount in code **54** and the sum of codes
-    **01**, **02**, and **03** multiplied by the corresponding VAT rates can't
-    be more than 61.97 EUR.
-
--   The difference between the amount in code **55** and the sum of codes **84**
-    and **86** multiplied by the corresponding VAT rates can't be more than
-    610.97 EUR.
-
--   The difference between the sum of the amounts in codes **56** and **57** and
-    the sum of codes **85** and **87** multiplied by the corresponding VAT rates
-    can't be more than 61.97 EUR.
-
--   The amount in code **59** should be more than the sum of codes **81**,
-    **82**, **83**, **84**, and **85**.
-
--   The amount in code **63** and code **85** multiplied by the corresponding
-    VAT rates can't be more than 61.97 EUR.
-
--   The amount in code **64** and code **49** multiplied by the corresponding
-    VAT rates can't be more than 61.97 EUR.
+-   If there is an amount in code **01**, **02**, or **03**, there should also be an amount in code **54**.
+-   If there is an amount in code **54**, there should also be an amount in code **01**, **02**, or **03**.
+-   If there is an amount in code **86**, there should also be an amount in code **55**.
+-   If there is an amount in code **87**, there should also be an amount in code **56** or **57**.
+-   The difference between the amount in code **54** and the sum of codes **01**, **02**, and **03** multiplied by the corresponding VAT rates can't be more than 61.97 EUR.
+-   The difference between the amount in code **55** and the sum of codes **84** and **86** multiplied by the corresponding VAT rates can't be more than 610.97 EUR.
+-   The difference between the sum of the amounts in codes **56** and **57** and the sum of codes **85** and **87** multiplied by the corresponding VAT rates can't be more than 61.97 EUR.
+-   The amount in code **59** should be more than the sum of codes **81**, **82**, **83**, **84**, and **85**.
+-   The amount in code **63** and code **85** multiplied by the corresponding VAT rates can't be more than 61.97 EUR.
+-   The amount in code **64** and code **49** multiplied by the corresponding VAT rates can't be more than 61.97 EUR.
 
 
 ### Download the format for the report
 
-In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2),
-in the Shared asset library, download the latest versions of the Electronic
-reporting (ER) configurations for the following VAT declaration format:
+In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following VAT declaration format:
 
 -   INTERVAT format (BE)
 
-For more information, see [Download Electronic reporting configurations from
-Lifecycle
-Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ## Additional sales tax report boxes
-1.  Go to **Tax \> Declarations \> Sales tax \> Additional sales tax report
-    boxes**.
 
-2.  Select **New** to create lines that have additional information about
-    reporting codes, including manual corrections of the INTERVAT tax
-    declaration. Before you close a settlement period, you should create the
-    line for it, either by posting the sales tax payment or by creating an
-    INTERVAT declaration that is marked as **Update**. The following table
-    describes the fields that you must set for a new line.
+1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Additional sales tax report boxes**.
+2.  Select **New** to create lines that have additional information about reporting codes, including manual corrections of the INTERVAT tax declaration. Before you close a settlement period, you should create the line for it, either by posting the sales tax payment or by creating an INTERVAT declaration that is marked as **Update**. The following table describes the fields that you must set for a new line.
 
 | **Field**         | **Description**                                                                                                                                                                           |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -732,9 +636,7 @@ Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-el
 
 Follow these steps to enter manual correction amounts.
 
-1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Additional sales tax
-    report boxes**.
-
+1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Additional sales tax report boxes**.
 2.  Select **Tax corrections** \> **Adjustments** and set the following fields.
 
 | **Field**         | **Description**                                                                                                                                                                           |
@@ -746,30 +648,15 @@ Follow these steps to enter manual correction amounts.
 | Amount            | Enter the correction amount.                                                                                                                                                              |
 
 > [!NOTE]
-> -   Composed reporting codes that are used for credit notes. such as code
->    **8185**, aren't available for selection. Nor are codes **71**, **72**, and
->    **91**. Codes **71** and **72** are calculated automatically when Belgian
->    sales tax reporting is run. Code **91** is entered in another way (see
->    description of **Disbursement** field above).
+> Composed reporting codes that are used for credit notes. such as code **8185**, aren't available for selection. Nor are codes **71**, **72**, and **91**. Codes **71** and **72** are calculated automatically when Belgian sales tax reporting is run. Code **91** is entered in another way (see description of **Disbursement** field above).
 >
-> -   If a tax period is updated, a voucher number and a date will be shown. (For
-    more information, see the description of the **Update** check box in the
-    [Generate an INTERVAT tax
-    declaration](#generate-an-intervat-tax-declaration) section later in this
-    topic.) The period that has a voucher number and a date is a closed VAT
-    period for Belgium. Therefore, all values on the **General** tab of the
-    **Tax corrections** page are read-only. When new transactions that have
-    taxes are entered for the closed VAT period, the taxes will be forwarded to
-    the next available open tax period.
+> If a tax period is updated, a voucher number and a date will be shown. (For more information, see the description of the **Update** check box in the [Generate an INTERVAT tax declaration](#generate-an-intervat-tax-declaration) section later in this topic.) The period that has a voucher number and a date is a closed VAT period for Belgium. Therefore, all values on the **General** tab of the **Tax corrections** page are read-only. When new transactions that have taxes are entered for the closed VAT period, the taxes will be forwarded to the next available open tax period.
 
 
 ## Generate an INTERVAT tax declaration
 1.  Go to **Tax** \>**Declarations \> Sales tax \> INTERVAT tax declaration**.
-
 2.  Select **New declaration** to generate an INTERVAT tax declaration.
-
-3.  In the **INTERVAT: Belgian sales tax reporting** dialog box, set the
-    following fields.
+3.  In the **INTERVAT: Belgian sales tax reporting** dialog box, set the following fields.
 
 | **Field**                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -783,21 +670,13 @@ Follow these steps to enter manual correction amounts.
 
 You can also close the tax period by generating a sales tax payment (**Tax \> Declarations \> Sales tax \> Settle and post sales tax**).
 
-4.  Select **OK**. The system generates the INTERVAT tax declaration line and an
-    INTERVAT XML file.
-
+4.  Select **OK**. The system generates the INTERVAT tax declaration line and an INTERVAT XML file.
 5.  Review the information in the declaration.
 
 ![](media/2_Intervat_tax declaration.png)
 
-6.  On the **General** tab, review the following fields: **INTERVAT ID**,
-    **Date**, **Period**, **Start date**, **End date**, **Period frequency**,
-    **Status**, and **File name**.
-
-7.  On the **Frame I: General information** tab, review the following fields.
-    You can edit these fields, even if the period was closed. The exceptions are
-    the fields in the **Pro-rata percentages** section. Those fields are
-    read-only.
+6.  On the **General** tab, review the following fields: **INTERVAT ID**, **Date**, **Period**, **Start date**, **End date**, **Period frequency**, **Status**, and **File name**.
+7.  On the **Frame I: General information** tab, review the following fields. You can edit these fields, even if the period was closed. The exceptions are the fields in the **Pro-rata percentages** section. Those fields are read-only.
 
 | **Field**                        | **Description**                                                                                                                                                                                                                                                                           |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -811,8 +690,7 @@ You can also close the tax period by generating a sales tax payment (**Tax \> De
 | Replaced VAT declaration         | The identification number of the declaration, to replace what you defined in the **INTERVAT: Belgian sales tax reporting** dialog box that is described earlier in this section.                                                                                                          |
 | **Pro-rata percentages** section | Review the amounts in the **Pro-rata percentage**, **B1**, **B2**, **B3**, **B4**, and **B5** fields that you defined on the **Additional sales tax report boxes** page that is described in the [Additional sales tax report boxes](#additional-sales-tax-report-boxes) section.         |
 
-On the **INTERVAT tax declaration** page, you can perform the following actions
-by using the buttons on the Action Pane.
+On the **INTERVAT tax declaration** page, you can perform the following actions by using the buttons on the Action Pane.
 
 | **Button**     | **Description**                                                                                                                                                                                                                                                   |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -826,31 +704,22 @@ by using the buttons on the Action Pane.
 ## Generate an INTERVAT summary tax declaration
 To print an INTERVAT tax declaration for several tax periods, follow these steps.
 
-1.  Go to **Tax \> Inquiries and reports \> Sales tax reports \> INTERVAT
-    summary tax declaration**.
+1.  Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **INTERVAT summary tax declaration**.
+2.  Use the filters to specify criteria for selecting data, and then review the information on the report.
 
-2.  Use the filters to specify criteria for selecting data, and then review the
-    information on the report.
-
-![](media/3_Intervat_summary_tax_declarations.png)
+![Generated INTERVAT summary tax declarations report](media/3_Intervat_summary_tax_declarations.png)
 
 ## Example
-The following example shows how you can set up sales tax codes and sales tax
-reporting codes, post transactions, and generate the INTERVAT tax declaration.
+The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the INTERVAT tax declaration.
 
 1.  Go to **Organization administration \> Organizations \> Legal entities**.
-
-2.  On the **Tax registration** FastTab, in the **Tax registration number**
-    field, enter **0466.158.640**.
-
+2.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter **0466.158.640**.
 3.  Select **Registration IDs**, add a line, and set the following values:
 
 -   **Registration type:** ENTNUM
-
 -   **Registration number:** BTW BE 0466.158.640
 
-4.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
-    the following sales tax codes.
+4.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up the following sales tax codes.
 
 | **Sales tax code** | **Percentage** | **Description**                                                                      |
 |--------------------|----------------|--------------------------------------------------------------------------------------|
@@ -862,8 +731,7 @@ reporting codes, post transactions, and generate the INTERVAT tax declaration.
 | BEEU6              | 6              | EU purchases at a rate of 6 percent where the **Use tax** option is set to **Yes**.  |
 | BEEUS              | 21             | EU sales where the **Exempt** option is set to **Yes**.                              |
 
-5.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
-    reporting codes to sales tax codes.
+5.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
 The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
@@ -877,8 +745,7 @@ The following table shows how to assign the sales tax reporting codes to sales t
 | BEEU6              |                   |                   |                       |                       | 81                       | 86                 | 59          | 55                 |
 | BEEUS              |                   | 46                |                       |                       |                          |                    |             |                    |
 
-6.  On the **Sales tax codes** page, on the **Report setup – credit note**
-    FastTab, assign reporting codes to sales tax codes.
+6.  On the **Sales tax codes** page, on the **Report setup – credit note** FastTab, assign reporting codes to sales tax codes.
 
 The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
@@ -888,15 +755,12 @@ The following table shows how to assign the sales tax reporting codes to sales t
 | BEEU12             |                      |                      |                          |                          | 8184                        | 86                    | 59             | 55                    |
 | BEEU6              |                      |                      |                          |                          | 8184                        | 86                    | 59             | 55                    |
 
-Instead of codes **55** and **59**, you can use corrective codes **63** and
-**64**.
+Instead of codes **55** and **59**, you can use corrective codes **63** and **64**.
 
 > [!NOTE]
 > The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
-7.  Post the following transactions. For example, for customer invoices, go to
-    **Accounts receivable \> Invoices \> All free text invoices**. For vendor
-    invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
+7.  Post the following transactions. For example, for customer invoices, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**. For vendor invoices, go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
 | **Date**         | **Transaction type**  | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code**                 | **Expected tax amount – reporting code** |
 |------------------|-----------------------|----------------|----------------|--------------------|--------------------------------------------------------|------------------------------------------|
@@ -905,63 +769,46 @@ Instead of codes **55** and **59**, you can use corrective codes **63** and
 | February 2, 2020 | Vendor invoice (EU)   | \-200          | \-42           | BEEU21             | 86 – Base payable 81 – Base deduction 84 – Credit base | 55 – Tax payable 59 – Tax deduction      |
 | February 1, 2020 | Customer invoice (EU) | 100            | 0              | BEEUS              | 46                                                     | Not applicable                           |
 
-8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
-    period**.
-
-9.  In the **Report sales tax for settlement period** dialog box, in the **Sales
-    tax payment version** field, select **Original**.
-
+8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement period**.
+9.  In the **Report sales tax for settlement period** dialog box, in the **Sales tax payment version** field, select **Original**.
 10.  Select **OK**, and review the data.
 
-![](media/4_Intervat_tax_declaration.png)
+![Generated INTERVAT tax declaration page](media/4_Intervat_tax_declaration.png)
 
 Notice that the amount of the credit note is shown in code **84**.
 
-11.  Go to **Tax \> Declarations \> Sales tax \> Additional sales tax report
-    boxes**.
-
+11.  Go to **Tax \> Declarations \> Sales tax \> Additional sales tax report boxes**.
 12.  Select **New** to create a line for February 2020.
-
 13.  Select **Tax corrections \> Adjustments**, and create a line.
 
-![](media/5_Adjustments.png)
+![Adjustments page](media/5_Adjustments.png)
 
-14.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
-
-15.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
-    version** field, select **Original**.
-
-16.  Go to **Tax \> Declarations \> Sales tax \> INTERVAT tax declaration**.
-
+14.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+15.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment version** field, select **Original**.
+16.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **INTERVAT tax declaration**.
 17.  Select **New declaration**, set the following values:
 
    -   **Settlement period:** MEN
-
    -   **From date:** 2/1/2020 (February 1, 2020)
-
    -   **Transaction date:** 2/29/2020 (February 29, 2020)
-
    -   **Update:** No
-
    -   **Format mapping:** INTERVAT format (BE)
 
-![](media/6_Intervat.png)
+![INTERVAT tax declaration page](media/6_Intervat.png)
 
 18.  Select **OK**, open the file, and review the report.
 
-![](media/7_Intervat_XML.png)
+![xml INTERVAT tax declaration report](media/7_Intervat_XML.png)
 
 19.  Select **Details**, and review the data.
 
-![](media/8_Intervat_details.png)
+![INTERVAT details page](media/8_Intervat_details.png)
 
 Notice that the amount in **62** code equals **200**.
     
 ## Reconciliation reports for Belgium
 
-For information about reconciliation reports for Belgium, see [Reconciliation
-reports for
-Belgium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-bel-reconciliation-reports.md).
+For information about reconciliation reports for Belgium, see [Reconciliation reports for Belgium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-bel-reconciliation-reports.md).
 
 
 
