@@ -135,26 +135,26 @@ If you are unable to find any of the preceding applications, try the following i
      New-AzureADServicePrincipal –AppId <AppId>
 
 2. Create an Azure resource.
-> [!NOTE]
-> Make sure you are creating the resources below in the same Azure Active Directory as the CDS environment. It is not possible to use resources from another Azure Active Directory.  
+   > [!NOTE]
+   > Make sure you are creating the resources below in the same Azure Active Directory as the CDS environment. It is not possible to use resources from another Azure Active Directory.  
 
-- Create a new Storage Account using the following instructions: 
-  > [!NOTE] 
-  > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake]
+  - Create a new Storage Account using the following instructions: 
+   > [!NOTE] 
+   > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake]
 	(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
 
- - Go to created storage account.
- - Copy and save the storage account Name.
- - Go to Access keys from the menu on the left.
- - Copy and save Connection string for either Key1 or key2.
- - Copy and save the Storage account name
+   - Go to created storage account.
+   - Copy and save the storage account Name.
+   - Go to Access keys from the menu on the left.
+   - Copy and save Connection string for either Key1 or key2.
+   - Copy and save the Storage account name
 		 
-- Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
-- Create and register an Azure Active directory application using the following instructions: 
- - In the Azure portal, select Azure Active Directory, and then select App registrations.
- - Select New application registration, and enter the following information:
- - **Name**: Enter the name of the app.
- - **Application type**: Select Web API.
+  - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
+  - Create and register an Azure Active directory application using the following instructions: 
+    - In the Azure portal, select Azure Active Directory, and then select App registrations.
+    - Select New application registration, and enter the following information:
+    - **Name**: Enter the name of the app.
+    - **Application type**: Select Web API.
  - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
  - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
  - Copy and save the application ID.
@@ -175,7 +175,7 @@ If you are unable to find any of the preceding applications, try the following i
   - Select Generate/Import.
    - In the Create a secret dialog box, in the Upload options field, select Manual.
    - Create the secret name and value from the table below.
-  - Select Enabled, and then select Create. The secret is created and added to Key Vault
+   - Select Enabled, and then select Create. The secret is created and added to Key Vault
 
 |     Secret   Name                        |     Secret   value                                                                 |
 |------------------------------------------|------------------------------------------------------------------------------------|
