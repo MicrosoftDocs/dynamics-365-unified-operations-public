@@ -1,95 +1,84 @@
+---
+# required metadata
+
+title: Declaration 347 report
+description: This topic provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
+author: Anasyash
+manager: AnnBe
+ms.date: 07/27/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 271523
+ms.search.region: Spain
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2016-11-30
+
+---
+
 # Declaration 347 report
+[!include [banner](../includes/banner.md)]
 
-This topic provides information about how to generate the Declaration 347 report
-that is available to legal entities that have their primary address in Spain.
+The Declaration 347 report must be electronically submitted to the tax authorities every year, during the first 20 days of March. It must include all the information from the previous fiscal year (January through December). All transactions over 3,000 euros must be included. Additionally, cash payment amounts that exceed 6,000 euros in a year must be included. Amounts are split per quarter over the year.
 
-The Declaration 347 report must be electronically submitted to the tax
-authorities every year, during the first 20 days of March. It must include all
-the information from the previous fiscal year (January through December). All
-transactions over 3,000 euros must be included. Additionally, cash payment
-amounts that exceed 6,000 euros in a year must be included. Amounts are split
-per quarter over the year.
-
-You can use the **Declaration 347** page to generate the Declaration 347 report.
-All invoices are grouped either by tax exempt number and customer/vendor number,
-or only by tax exempt number. The resulting aggregated line is included on the
-**Declaration 347** page if the total amount of invoices on the line exceeds the
-value of the **Minimum amount** field that is set in the **Declaration 347**
-dialog box. If some invoices are paid in cash, and the total amount of cash
-payments for invoices on the line exceeds the value of the **Minimum amount of
-payments in cash** field in the **Declaration 347** dialog box, this amount will
-be shown in the **Amounts in cash** field of the declaration.
+You can use the **Declaration 347** page to generate the Declaration 347 report. All invoices are grouped either by tax exempt number and customer/vendor number, or only by tax exempt number. The resulting aggregated line is included on the **Declaration 347** page if the total amount of invoices on the line exceeds the value of the **Minimum amount** field that is set in the **Declaration 347** dialog box. If some invoices are paid in cash, and the total amount of cash payments for invoices on the line exceeds the value of the **Minimum amount of payments in cash** field in the **Declaration 347** dialog box, this amount will be shown in the **Amounts in cash** field of the declaration.
 
 ## Prerequisites
 
-The following prerequisites must be set up before you begin to work with the
-Declaration 347 report.
+The following prerequisites must be set up before you begin to work with the Declaration 347 report.
 
 ### Set up a legal entity
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**,
-    and select your legal entity.
-
+1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
 2.  On the **Addresses** FastTab, create an address.
-
-3.  In the **Country/region** field, select **Spain**, and mark the address as
-    **Primary**.
-
+3.  In the **Country/region** field, select **Spain**, and mark the address as **Primary**.
 4.  Fill in the remaining address components.
-
-5.  On the **Tax registration** FastTab, in the **Tax registration number**
-    field, specify the tax registration number for your company.
+5.  On the **Tax registration** FastTab, in the **Tax registration number** field, specify the tax registration number for your company.
 
 ### Set up contact information
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**.
-
-2.  On the **Contact information** tab, add lines for **Phone** and **Email**,
-    and set them to **Primary**.
+1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2.  On the **Contact information** tab, add lines for **Phone** and **Email**, and set them to **Primary**.
 
 ### Set up tax exempt numbers
 
-1.  Go to **Tax \> Setup \> Sales tax \> Tax exempt numbers**.
+1.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
+2.  For each tax exempt number, create a record on the page, and specify the following information:
 
-2.  For each tax exempt number, create a record on the page, and specify the
-    following information:
-
--   **Country/region:** Select the country or region of the tax registration of
-    the counterparty.
-
--   **Tax exempt number:** Enter the tax exempt number of the counterparty.
-
--   **Company name:** (Optional) Enter the name of the counterparty.
+    -   **Country/region:** Select the country or region of the tax registration of the counterparty.
+    -   **Tax exempt number:** Enter the tax exempt number of the counterparty.
+    -   **Company name:** (Optional) Enter the name of the counterparty.
 
 ## Setup
 
-1.  In [Microsoft Dynamics Lifecycle Services
-    (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download
-    the latest versions of the Electronic reporting (ER) configurations for the
-    following VAT declaration formats:
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following VAT declaration formats:
 
--   Declaration 347 export format (ES)
-
--   Declaration 347 report format (ES)
+    -   Declaration 347 export format (ES)
+    -   Declaration 347 report format (ES)
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-2.  Go to **Tax \> Setup \> Sales tax \> Cash ledger accounts**.
-
-3.  On the **Cash ledger accounts** page, specify the cash ledger accounts that
-    are required for the Declaration 347.
-
+2.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**.
+3.  On the **Cash ledger accounts** page, specify the cash ledger accounts that are required for the Declaration 347.
 4.  Go to **Tax \> Setup \> Sales tax \> 347 validation lists**.
-
-5.  On the **Validation list** page, specify any sales tax groups that should be
-    excluded from the Declaration 347.
+5.  On the **Validation list** page, specify any sales tax groups that should be excluded from the Declaration 347.
 
 ## Generate the Declaration 347 report
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Declaration 347**.
-
 2.  On the **Declaration 347** page, select **Generate**.
-
 3.  In the **Declaration 347** dialog box, set the following fields.
 
 | **Field**                          | **Description**                                                                                                               |
@@ -104,386 +93,83 @@ For more information, see [Download Electronic reporting configurations from Lif
 | Group only by tax exempt number    | Set this option to **Yes** to group all customer and vendor transactions by tax exempt number only.                           |
 
 4.  Select **OK** to generate the data on the **Declaration 347** page.
-
 5.  Review the information on the declaration.
 
-![](media/1_Declaration_347.png)
+![Declaration 347 page](media/1_Declaration_347.png)
 
 The **General** tab has the following fields.
 
-<table>
-<thead>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Fiscal year</p>
-</td>
-<td>
-<p>The fiscal year for the Declaration 347.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Replacement</p>
-</td>
-<td>
-<p>A selected check box indicates that the declaration is a replacement declaration.</p>
-<p>This check box is equivalent to the <strong>Replacement declaration</strong> option in the <strong>Declaration 347</strong> dialog box.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Tax exempt number</p>
-</td>
-<td>
-<p>The tax exempt number of the company that the Declaration 347 is generated for.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Name</p>
-</td>
-<td>
-<p>The name of the company that the Declaration 347 is generated for.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Reported</p>
-</td>
-<td>
-<p>Select this check box to indicate that the Declaration 347 reporting is finished and has been sent to the Spanish tax authorities.</p>
-<p>When the <strong>Reported</strong> check box is selected, the declaration lines can't be edited.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Minimum amount</p>
-</td>
-<td>
-<p>The minimum amount, in the company&rsquo;s accounting currency, that was required to generate the Declaration 347. By default, all transactions that exceed 500,000 euros are included on the declaration.</p>
-<p>This amount is filled in from the <strong>Minimum amount</strong> field of the <strong>Declaration 347</strong> dialog box.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Minimum amount of payments in cash</p>
-</td>
-<td>
-<p>The minimum amount of cash payments that was required to report the cash payment amount.</p>
-<p>This amount is filled in from the <strong>Minimum amount of payments in cash</strong> field of the <strong>Declaration 347</strong> dialog box.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Presentation type</p>
-</td>
-<td>
-<p>Select the media type that is used to declare the Declaration 347:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telematic</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CD-R</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Report</p>
-<p>The default value is <strong>Telematic</strong>.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Presentation date</p>
-</td>
-<td>
-<p>The date when the report is generated.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Reported by</p>
-</td>
-<td>
-<p>The identifier (ID) of the user who generated the report.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Telephone</p>
-</td>
-<td>
-<p>The telephone number of the contact person. This value is transferred from the setting that you defined in the "Prerequisites" section earlier in this topic.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Contact</p>
-</td>
-<td>
-<p>Enter the name of the contact person.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Document number of the declaration</p>
-</td>
-<td>
-<p>The document number of the Declaration 347. This number is filled in from the <strong>Document number of the declaration</strong> field of the <strong>Declaration 347</strong> dialog box.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Previous declaration number</p>
-</td>
-<td>
-<p>The document number of the original Declaration 347. This number is filled in from the <strong>Previous declaration number</strong> field of the <strong>Declaration 347</strong> dialog box.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field                                | Description                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fiscal   year                        | The fiscal year for the   Declaration 347.                                                                                                                                                                                                                                                                        |
+| Replacement                          | A selected check box indicates   that the declaration is a replacement declaration.<br>This check box is   equivalent to the **Replacement declaration** option in the **Declaration   347** dialog box.                                                                                                          |
+| Tax   exempt number                  | The tax exempt number of the   company that the Declaration 347 is generated for.                                                                                                                                                                                                                                 |
+| Name                                 | The name of the company that the   Declaration 347 is generated for.                                                                                                                                                                                                                                              |
+| Reported                             | Select this check box to   indicate that the Declaration 347 reporting is finished and has been sent to   the Spanish tax authorities. <br>When the **Reported** check box is   selected, the declaration lines can't be edited.                                                                                  |
+| Minimum   amount                     | The minimum amount, in the   company's accounting currency, that was required to generate the Declaration   347. By default, all transactions that exceed 500,000 euros are included on   the declaration.<br>This amount is filled in for the **Minimum amount**   field of the **Declaration 347** dialog box.  |
+| Minimum   amount of payments in cash | The minimum amount of cash   payments required to report the cash payment amount. <br> This amount   is filled in from the **Minimum amount of payments in cash** field of the   **Declaration 347** dialog box.                                                                                                  |
+| Presentation   type                  | Select the media type that is   used to declare the Declaration 347:<br>- Telematic<br>-   CD-R<br>- Report<br> The default value is **Telematic**.                                                                                                                                                               |
+| Presentation   date                  | The date when the report is   generated.                                                                                                                                                                                                                                                                          |
+| Reported   by                        | The identifier (ID) of the user   who generated the report.                                                                                                                                                                                                                                                       |
+| Telephone                            | The telephone number of the   contact person. This value is transferred from the setting that you defined   in the **Prerequisites** section earlier in this topic.                                                                                                                                               |
+| Contact                              | Enter the name of the contact   person.                                                                                                                                                                                                                                                                           |
+| Document   number of the declaration | The document number of the   Declaration 347. This number is filled in from the **Document number of the   declaration** field of the **Declaration 347** dialog box.                                                                                                                                             |
+| Previous   declaration number        | The document number of the   original Declaration 347. This number is filled in from the **Previous   declaration number** field of the **Declaration 347** dialog box.                                                                                                                                           |
 
 The **Totals** tab shows the number of operations and the total amounts of purchases and sales.
 
-6.  Select **Transactions** to review and modify the information for the
-    aggregated customer transactions and vendor transactions before you generate
-    the report as an ASCII file.
+6.  Select **Transactions** to review and modify the information for the aggregated customer transactions and vendor transactions before you generate the report as an ASCII file.
 
-![](media/2_Transactions.png)
+![Transactions page](media/2_Transactions.png)
 
-7.  On the **Transactions** page, on the **General** tab, review the following
-    fields.
+7.  On the **Transactions** page, on the **General** tab, review the following fields.
 
-<table>
-<thead>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Task code</p>
-</td>
-<td>
-<p>The task code that describes the origin of the transaction:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>A - purchase</strong> &ndash; This task code is automatically defined for purchase transactions.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>B - sales</strong> &ndash; This task code is automatically defined for sales transactions.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>C - Payment via credit institution</strong> &ndash; Select this value if the transaction is a payment that was made through a credit institution.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>D - Purchases from public entity</strong> &ndash; Select this value if the transaction is a purchase from a public entity.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>E - subventions</strong> &ndash; Select this value if the transaction is a subvention that is received from public administrations or private companies.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Tax exempt number</p>
-</td>
-<td>
-<p>The tax exempt number of the customer or vendor.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Name</p>
-</td>
-<td>
-<p>The name of the customer or vendor.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>County</p>
-</td>
-<td>
-<p>The county of the customer or vendor.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Country/region</p>
-</td>
-<td>
-<p>The International Organization for Standardization (ISO) code for the customer's or vendor's country or region.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>1st quarter amount</p>
-</td>
-<td>
-<p>The total amount of aggregated transactions that were posted in the first quarter of the year.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>2nd quarter amount</p>
-</td>
-<td>
-<p>The total amount of aggregated transactions that were posted in the second quarter of the year.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>3rd quarter amount</p>
-</td>
-<td>
-<p>The total amount of aggregated transactions that were posted in the third quarter of the year.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>4th quarter amount</p>
-</td>
-<td>
-<p>The total amount of aggregated transactions that were posted in the fourth quarter of the year.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Amount</p>
-</td>
-<td>
-<p>The total amount of aggregated transactions in the accounting currency.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Amount settled</p>
-</td>
-<td>
-<p>The amount in the accounting currency.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Amounts in cash</p>
-</td>
-<td>
-<p>The amount of payments in cash for the transaction. This value is filled in only for customer transactions.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Invoice year of cash</p>
-</td>
-<td>
-<p>The year of the invoice that is associated with cash payments on the transaction line. This field is set if the <strong>Amounts in cash</strong> field is set.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Tenancy</p>
-</td>
-<td>
-<p>Select this check box to indicate that the transaction is a tenancy process.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Representative</p>
-</td>
-<td>
-<p>Select this check box to indicate that the tax exempt number is attached to a legal representative of the customer or vendor.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Insurance process</p>
-</td>
-<td>
-<p>Select this check box to indicate that the transaction is an insurance process.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Special regime for cash accounting method</p>
-</td>
-<td>
-<p>Select this check box to indicate that the "Special regime for cash accounting" method is set up for this period.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Deposit</p>
-</td>
-<td>
-<p>Select this check box to indicate that the transaction is a deposit.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Reverse charge</p>
-</td>
-<td>
-<p>Select this check box to indicate that the reverse charge is used for this transaction.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Task   code                                 | The task code that describes the   origin of the transaction:<br>- **A - Purchase**: This task code is   automatically defined for purchase transactions.<br>- **B - Sales**:   This task code is automatically defined for sales transactions.<br>-   **C - Payment via credit institution**: Select this value if the transaction   is a payment that was made through a credit institution.<br>- **D -   Purchases from public entity**: Select this value if the transaction is a   purchase from a public entity.<br>- **E - Subventions**: Select this   value if the transaction is a subvention that is received from public   administrations or private companies. |
+| Tax   exempt number                         | The tax exempt number of the   customer or vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Name                                        | The name of the customer or   vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| County                                      | The county of the customer or   vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Country/region                              | The International Organization   for Standardization (ISO) code for the customer's or vendor's country or   region.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 1st   quarter amount                        | The total amount of aggregated   transactions that were posted in the first quarter of the year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 2nd   quarter amount                        | The total amount of aggregated   transactions that were posted in the second quarter of the year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| 3rd   quarter amount                        | The total amount of aggregated   transactions that were posted in the third quarter of the year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 4th   quarter amount                        | The total amount of aggregated   transactions that were posted in the fourth quarter of the year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Amount                                      | The total amount of the   aggregated transactions in the accounting currency.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Amount   settled                            | The amount in the accounting   currency.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Amounts   in cash                           | The amount of payments in cash   for the transaction. This value is filled in only for customer transactions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Invoice   year of cash                      | The year of the invoice that is   associated with cash payments on the transaction line. This field is set if   the **Amounts is cash** field is set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Tenancy                                     | Select this check box to   indicate that the transaction is a tenancy process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Representative                              | Select this check box to   indicate that the tax exempt number is attached to a legal representative of   the customer or vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Insurance   process                         | Select this check box to   indicate that the transaction is an insurance process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Special   regime for cash accounting method | Select this check box to   indicate that the **Special regime for cash accounting** method is set up for   this period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Deposit                                     | Select this check box to   indicate that the transaction is a deposit.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Reverse   charge                            | Select this check box to   indicate that the reverse charge is used for this transaction.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-8.  If you selected the **Tenancy** check box on the **General** tab, select
-    **Declaration 347 tenants** to add information about tenants.
+8.  If you selected the **Tenancy** check box on the **General** tab, select **Declaration 347 tenants** to add information about tenants.
 
-![](media/3_Declaration347_tenants.png)
+![Declaration 347 tenants page](media/3_Declaration347_tenants.png)
 
-9.  On the **Declaration 347 tenants** page, on the **Overview** tab, set the
-    **Name**, **Amount**, **Reference of estate**, **County**,
-    **Country/region**, **City**, and **Street** fields.
-
-10.  On the **General** tab, set the **ZIP/postal code**, **Address
-    abbreviation**, **Street No.**, **Entrance**, **Floor**, **Door**, and
-    **Location code** fields for the building or property.
-
+9.  On the **Declaration 347 tenants** page, on the **Overview** tab, set the **Name**, **Amount**, **Reference of estate**, **County**, **Country/region**, **City**, and **Street** fields.
+10.  On the **General** tab, set the **ZIP/postal code**, **Address abbreviation**, **Street No.**, **Entrance**, **Floor**, **Door**, and **Location code** fields for the building or property.
 11.  Close the **Declaration 347 tenants** page and the **Transactions** page.
-
 12.  On the **Declaration 347** page, select **Output \> Export to ASCII file**.
-
-13.  In the **Export to ASCII file** dialog box, in the **Format mapping** field,
-    select the **Declaration 347 export format (ES)** format that you downloaded
-    earlier.
-
+13.  In the **Export to ASCII file** dialog box, in the **Format mapping** field, select the **Declaration 347 export format (ES)** format that you downloaded earlier.
 14.  In the **File name** field, enter the file name, and then select **OK**.
-
 15.  Select **Output \> Print**.
-
-16.  In the **Declaration 347** dialog box, in the **Format mapping** field,
-    select the **Declaration 347 report format (ES)** format that you downloaded
-    earlier.
-
-17.  In the **File name** field, enter the file name, and then select **OK**. You
-    can review the format of the report in the example later in this topic.
+16.  In the **Declaration 347** dialog box, in the **Format mapping** field, select the **Declaration 347 report format (ES)** format that you downloaded earlier.
+17.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this topic.
 
 ## Generate the delta report
 
-You can create a new Declaration 347 for the same period and use the delta
-report to view lines that differ from the lines of the original Declaration 347.
+You can create a new Declaration 347 for the same period and use the delta report to view lines that differ from the lines of the original Declaration 347.
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Declaration 347**, and select
-    **Generate** to generate the report that has corrections.
-
-2.  In the **Declaration 347** dialog box, set the **Replacement declaration**
-    option to **Yes** to identify this declaration as a correction of the
-    original declaration.
-
-3.  In the **Previous declaration number** field, enter the declaration number
-    of the original declaration, and then select **OK**.
-
+1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, and select **Generate** to generate the report that has corrections.
+2.  In the **Declaration 347** dialog box, set the **Replacement declaration** option to **Yes** to identify this declaration as a correction of the original declaration.
+3.  In the **Previous declaration number** field, enter the declaration number of the original declaration, and then select **OK**.
 4.  Select **Output \> Delta report**.
-
-5.  In the **Delta report** dialog box, in the **Format mapping** field, select
-    the **Declaration 347 report format (ES)** format that you downloaded
-    earlier.
-
-6.  In the **File name** field, enter the file name, and then select **OK**. You
-    can review the format of the report in the example later in this topic.
+5.  In the **Delta report** dialog box, in the **Format mapping** field, select the **Declaration 347 report format (ES)** format that you downloaded earlier.
+6.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this topic.
 
 ## Example
 
@@ -491,57 +177,30 @@ Consider an example in the **DEMF** legal entity.
 
 ### Setup
 
-1.  Go to **Organization administration \> Setup \> Organization \> Legal
-    entities**.
+1.  Go to **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
+2.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter **B80833593**.
+3.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**, and select **New** to create a line.
+    
+![Cash ledger accounts page](media/4_Cash_ledger_accounts.png)
 
-2.  On the **Tax registration** FastTab, in the **Tax registration number**
-    field, enter **B80833593**.
+4.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt number** and select **New** to create a line.
 
-3.  Go to **Tax \> Setup \> Sales tax \> Cash ledger accounts**, and select
-    **New** to create a line.
-
-![](media/4_Cash_ledger_accounts.png)
-
-4.  Go to **Tax \> Setup \> Sales tax \> Tax exempt number** and select **New**
-    to create a line.
-
-![](media/5_Tax_exempt_numbers.png)
+![Tax exempt numbers page](media/5_Tax_exempt_numbers.png)
 
 ### Customer transactions
 
-1.  Go to **Accounts receivable \> Customers \> All customers**, and select
-    customer **DE-010**.
-
-2.  On the **Address** FastTab, set **ESP** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **01396364B**.
-
+1.  Go to **Accounts receivable** \> **Customers** \> **All customers**, and select customer **DE-010**.
+2.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396364B**.
 3.  Select **Save**, and close page.
-
 4.  Select customer **DE-011**.
-
-5.  On the **Address** FastTab, set **ESP** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **01396365B**.
-
+5.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396365B**.
 6.  Select **Save**, and close page.
-
 7.  Select customer **DE-012**.
-
-8.  On the **Address** FastTab, set **ESP** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **01396366B**.
-
+8.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396366B**.
 9.  Select **Save**, and close page.
-
 10. Select customer **DE-014**.
-
-11. On the **Address** FastTab, verify that **DEU** is set as the country, and
-    then, on the **Invoice and Delivery** FastTab, verify that the **Tax exempt
-    number** field is set to **DE9801**.
-
-12. Go to **Accounts receivable \> Invoices \> All free text invoices**, create
-    the following four invoices, and then post them.
+11. On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, verify that the **Tax exempt number** field is set to **DE9801**.
+12. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, create the following four invoices, and then post them.
 
 | **Invoice** | **Customer** | **Date**          | **Delivery address** | **Amount** |
 |-------------|--------------|-------------------|----------------------|------------|
@@ -550,8 +209,7 @@ Consider an example in the **DEMF** legal entity.
 | FTI-000009  | DE-011       | February 5, 2020  | ESP                  | 8,000.00   |
 | FTI-000010  | DE-014       | February 10, 2020 | DEU                  | 6,500.00   |
 
-13. Go to **Accounts receivable \> Payments \> Customer payment journal**,
-    create the following five payments, and then post them.
+13. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**, create the following five payments, and then post them.
 
 | **Date**          | **Account (tax exempt number)** | **Settled invoice** | **Credit** | **Offset account type** | **Offset account** |
 |-------------------|---------------------------------|---------------------|------------|-------------------------|--------------------|
@@ -563,31 +221,19 @@ Consider an example in the **DEMF** legal entity.
 
 ### Vendor transactions
 
-1.  Go to **Accounts payable \> Vendors \> All vendors**, and s elect vendor
-    **DE-001**.
-
-2.  On the **Address** FastTab, set **ESP** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **03566243B**.
-
+1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select vendor **DE-001**.
+2.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
 3.  Select **Save**, and close page.
-
 4.  Select vendor **DE-01001**.
-
-5.  On the **Address** FastTab, verify that **DEU** is set as the country, and
-    then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number**
-    field to **DE124363748**.
-
-6.  Go to **Accounts payable \> Invoices \> Invoice journal**, create the
-    following two invoices, and then post them.
+5.  On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE124363748**.
+6.  Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, create the following two invoices, and then post them.
 
 | **Invoice** | **Vendor** | **Date**         | **Vendor address** | **Amount** |
 |-------------|------------|------------------|--------------------|------------|
 | 1           | DE-001     | February 4, 2020 | ESP                | 6,300      |
 | 2           | DE-01001   | February 7, 2020 | DEU                | 7,100      |
 
-7.  Go to **Accounts payable \> Payments \> Vendor payment journal**, create the
-    following two payments, and then post them.
+7.  Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**, create the following two payments, and then post them.
 
 | **Date**          | **Account** | **Invoice** | **Credit** | **Offset account type** | **Offset account** |
 |-------------------|-------------|-------------|------------|-------------------------|--------------------|
@@ -596,65 +242,39 @@ Consider an example in the **DEMF** legal entity.
 
 ### Generate Declaration 347 and Delta report
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Declaration 347**, select
-    **Generate**, and fill the following fields with the following values:
+1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, select **Generate**, and fill the following fields with the following values:
 
--   **Fiscal year** – 2020
-
--   **Minimum amount** – 6000
-
--   **Minimum amount of payments in cash** - 6000
+    -   **Fiscal year** – 2020
+    -   **Minimum amount** – 6000
+    -   **Minimum amount of payments in cash** - 6000
 
 2.  Select **OK**.
+3.  Select the declaration line that was created, select **Transactions**, and review the data.
 
-3.  Select the declaration line that was created, select **Transactions**, and
-    review the data.
-
-![](media/6_Transactions.png)
+![Transactions page](media/6_Transactions.png)
 
 Notice the following details:
 
--   The line for customer **DE-012** wasn't transferred to the declaration
-    because both amounts were less than 6,000.
+-   The line for customer **DE-012** wasn't transferred to the declaration because both amounts were less than 6,000.
+-   On the line for customer **DE-011** (tax exempt number **01396365B**), because the payment amount in cash is less than 6,000 it was reset to 0 (zero).
+-   On the line for vendor **DE-001** (tax exempt number **03566243B**), even though the payment was in cash, the cash payment amount is 0 (zero) because the **Amounts in cash** field is filled in only for customers.
 
--   On the line for customer **DE-011** (tax exempt number **01396365B**),
-    because the payment amount in cash is less than 6,000 it was reset to 0
-    (zero).
+4.  Close the **Transactions** page, and then, on the **Declaration 347** page, select **Generate** to generate the report that has corrections.
+5.  Set the **Replacement declaration** option to **Yes** to identify this declaration as a correction of the original declaration.
+6.  In the **Previous declaration number** field, enter the declaration number of the original declaration, and then select **OK**.
+7.  Select the declaration line that is created, select **Transactions**, and edit the line for customer with tax exempt number **DE9801** in the following way:
 
--   On the line for vendor **DE-001** (tax exempt number **03566243B**), even
-    though the payment was in cash, the cash payment amount is 0 (zero) because
-    the **Amounts in cash** field is filled in only for customers.
+-   The value in **1st quarter amount** column becomes 7000 instead of 6500
+-   The value in **2nd quarter amount** column becomes 3000 instead of 0.
 
-4.  Close the **Transactions** page, and then, on the **Declaration 347** page,
-    select **Generate** to generate the report that has corrections.
-
-5.  Set the **Replacement declaration** option to **Yes** to identify this
-    declaration as a correction of the original declaration.
-
-6.  In the **Previous declaration number** field, enter the declaration number
-    of the original declaration, and then select **OK**.
-
-7.  Select the declaration line that is created, select **Transactions**, and
-    edit the line for customer with tax exempt number **DE9801** in the
-    following way:
-
--   the value in **1st quarter amount** column becomes 7000 instead of 6500
-
--   the value in **2st quarter amount** column becomes 3000 instead of 0.
-
-![](media/7_Transactions.png)
+![Transactions page, 1st and 2nd quarter amount columns](media/7_Transactions.png)
 
 8.  Close the **Transactions** page.
-
 9.  Select **Output \> Delta report**.
-
-10.  In the **Format mapping** field, select **Declaration 347 report format
-    (ES)**.
-
+10.  In the **Format mapping** field, select **Declaration 347 report format (ES)**.
 11.  In the **File name** field, enter the file name, and then select **OK**.
-
 12.  Open downloaded file and review the data.
 
-![](media/8_Declaration347.png)
+![Declaration 347 report format (ES) generated data](media/8_Declaration347.png)
 
 Notice that only the line that has corrections is printed on the report.
