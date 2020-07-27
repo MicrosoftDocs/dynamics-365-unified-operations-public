@@ -386,6 +386,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Support for network peripherals
+              href: dev-itpro/network-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
