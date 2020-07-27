@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure BOPIS in a Dynamics 365 Commerce environment
-description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
+title: Configure BOPIS in a Dynamics 365 Commerce evaluation environment
+description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after it has been provisioned.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,16 +28,15 @@ ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure BOPIS in a Dynamics 365 Commerce environment
-
+# Configure BOPIS in a Dynamics 365 Commerce evaluation environment
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce environment after the environment has been provisioned.
+This topic explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after the environment has been provisioned.
 
 ## Prerequisite
 
-Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce preview environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 After your Commerce environment has been provisioned and configured end to end, you can use this topic to enable BOPIS scenarios.
 
@@ -75,7 +74,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 5. An authentication dialog box appears. Select the account that uses the email address that was previously associated with worker **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) topic.
+    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) topic.
     
 6. When you're prompted to let your organization manage the device, select **This app only**.
 7. When activation is completed, select **Get started**.
@@ -148,13 +147,13 @@ For all general issues, you should always consult the Modern POS or Internet Inf
 
 ## Additional resources
 
-[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
 
-[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
-[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
 
-[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

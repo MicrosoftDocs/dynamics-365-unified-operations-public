@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Work with style presets
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic describes how to work with site style presets in Microsoft Dynamics 365 Commerce site builder.

@@ -5,7 +5,7 @@ title: Finance and Operations and Common Data Service admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/08/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.12
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
-The Common Data Service solution for Finance and Operations virtual entities must be downloaded from the [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
+The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
@@ -47,9 +47,6 @@ Ensure the following solutions are installed in Common Data Service. These solut
 - **MicrosoftOperationsERPCatalog** - This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity virtual entity.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
-
-Alternatively, you can also import the solutions package directly as a single unit in Common Data Service by using the [PackageDeployer
-tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
 
 ## Authentication and authorization
 
