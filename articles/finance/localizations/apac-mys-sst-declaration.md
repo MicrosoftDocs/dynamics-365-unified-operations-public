@@ -38,8 +38,8 @@ The SST-02 return form is the official electronic form to declare and pay indire
 
 The SST-02 form report in Dynamics 365 Finance includes the following reports:
 
-* **Part B1**: Detailed transactions by tariff code and service type.
-* **Part B2**: Consolidated amounts in accordance with layout proposed by Malaysian government
+* Part B1: Detailed transactions by tariff code and service type.
+* Part B2: Consolidated amounts in accordance with layout proposed by Malaysian government
 
 ## Prerequisites
 The primary address of the legal entity must be in Malaysia.
@@ -147,7 +147,8 @@ You need to repeat the above steps for Lookup name ReportFieldDetailed and the t
   
 Once the above configuration are done, In the State field, select Completed and Save and close the Application specific parameters page.
 
-Note: To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code SST5 you will be facing some issues when the report is generated. We recommend to use Tax > Inquire > Posted sales tax menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
+> [!NOTE]
+> To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code SST5 you will be facing some issues when the report is generated. We recommend to use **Tax > Inquire > Posted sales tax** menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
 
 The following table provides a definition of column Name in order to understand how the tax transactions are classified:
   
