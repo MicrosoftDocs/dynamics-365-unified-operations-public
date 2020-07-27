@@ -262,7 +262,7 @@ Consider an example in the **DEMF** legal entity.
 
 ![](media/5_Tax_exempt_numbers.png)
 
-### Customers
+### Customer transactions
 
 1.  Go to **Accounts receivable \> Customers \> All customers**, and select
     customer **DE-010**.
@@ -316,7 +316,7 @@ Consider an example in the **DEMF** legal entity.
 | March 1, 2020     | DE-011 (01396365B)              | FTI-000009          | 3,000      | Bank                    | DEMF OPER          |
 | March 3, 2020     | DE-014 (DE9801)                 | FTI-000010          | 6,500      | Bank                    | DEMF OPER          |
 
-### Vendors
+### Vendor transactions
 
 1.  Go to **Accounts payable \> Vendors \> All vendors**, and s elect vendor
     **DE-001**.
