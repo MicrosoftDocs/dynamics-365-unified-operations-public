@@ -781,22 +781,20 @@ Follow these steps to enter manual correction amounts.
 | File                     | Enter the file name that the INTERVAT tax declaration will be exported to.                                                                                                                                                                                                                                                                                                                                                 |
 | Format mapping           | Select the **INTERVAT format (BE)** ER format that you downloaded earlier.                                                                                                                                                                                                                                                                                                                                                 |
 
-You can also close the tax period by generating a sales tax payment.
+You can also close the tax period by generating a sales tax payment (**Tax \> Declarations \> Sales tax \> Settle and post sales tax**).
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
-
-2.  Select **OK**. The system generates the INTERVAT tax declaration line and an
+4.  Select **OK**. The system generates the INTERVAT tax declaration line and an
     INTERVAT XML file.
 
-3.  Review the information in the declaration.
+5.  Review the information in the declaration.
 
-![](media/ba8dddf873b1e59581ca0cb88ff29be1.png)
+![](media/2_Intervat_tax declaration.png)
 
-1.  On the **General** tab, review the following fields: **INTERVAT ID**,
+6.  On the **General** tab, review the following fields: **INTERVAT ID**,
     **Date**, **Period**, **Start date**, **End date**, **Period frequency**,
     **Status**, and **File name**.
 
-2.  On the **Frame I: General information** tab, review the following fields.
+7.  On the **Frame I: General information** tab, review the following fields.
     You can edit these fields, even if the period was closed. The exceptions are
     the fields in the **Pro-rata percentages** section. Those fields are
     read-only.
@@ -834,7 +832,7 @@ To print an INTERVAT tax declaration for several tax periods, follow these steps
 2.  Use the filters to specify criteria for selecting data, and then review the
     information on the report.
 
-![A screenshot of a computer Description automatically generated](media/fb7b8d58f53d8baf1d319052e249b5c7.png)
+![](media/3_Intervat_summary_tax_declarations.png)
 
 ## Example
 The following example shows how you can set up sales tax codes and sales tax
@@ -851,7 +849,7 @@ reporting codes, post transactions, and generate the INTERVAT tax declaration.
 
 -   **Registration number:** BTW BE 0466.158.640
 
-1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
+4.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
     the following sales tax codes.
 
 | **Sales tax code** | **Percentage** | **Description**                                                                      |
@@ -864,11 +862,10 @@ reporting codes, post transactions, and generate the INTERVAT tax declaration.
 | BEEU6              | 6              | EU purchases at a rate of 6 percent where the **Use tax** option is set to **Yes**.  |
 | BEEUS              | 21             | EU sales where the **Exempt** option is set to **Yes**.                              |
 
-2.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
+5.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
     reporting codes to sales tax codes.
 
->   The following table shows how to assign the sales tax reporting codes to
->   sales tax codes.
+The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
 |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
@@ -880,11 +877,10 @@ reporting codes, post transactions, and generate the INTERVAT tax declaration.
 | BEEU6              |                   |                   |                       |                       | 81                       | 86                 | 59          | 55                 |
 | BEEUS              |                   | 46                |                       |                       |                          |                    |             |                    |
 
-1.  On the **Sales tax codes** page, on the **Report setup – credit note**
+6.  On the **Sales tax codes** page, on the **Report setup – credit note**
     FastTab, assign reporting codes to sales tax codes.
 
->   The following table shows how to assign the sales tax reporting codes to
->   sales tax codes.
+The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales CN** | **Tax-free sale CN** | **Sales tax payable CN** | **Taxable purchases CN** | **Sales tax receivable CN** | **Taxable import CN** | **Use tax CN** | **Offset use tax CN** |
 |--------------------|----------------------|----------------------|--------------------------|--------------------------|-----------------------------|-----------------------|----------------|-----------------------|
@@ -895,13 +891,9 @@ reporting codes, post transactions, and generate the INTERVAT tax declaration.
 Instead of codes **55** and **59**, you can use corrective codes **63** and
 **64**.
 
->   **Note:** The preceding configuration is just an example and depends on the
->   structure of the sales tax codes that are used. If you want values to be
->   calculated and transferred to the sales tax report, for each tax code that
->   is used in the sales tax payment process, you must set a relevant sales tax
->   reporting code in one or more fields on the **Report setup** tab.
+**Note:** The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
-1.  Post the following transactions. For example, for customer invoices, go to
+7.  Post the following transactions. For example, for customer invoices, go to
     **Accounts receivable \> Invoices \> All free text invoices**. For vendor
     invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
@@ -912,63 +904,57 @@ Instead of codes **55** and **59**, you can use corrective codes **63** and
 | February 2, 2020 | Vendor invoice (EU)   | \-200          | \-42           | BEEU21             | 86 – Base payable 81 – Base deduction 84 – Credit base | 55 – Tax payable 59 – Tax deduction      |
 | February 1, 2020 | Customer invoice (EU) | 100            | 0              | BEEUS              | 46                                                     | Not applicable                           |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**.
 
-3.  In the **Report sales tax for settlement period** dialog box, in the **Sales
+9.  In the **Report sales tax for settlement period** dialog box, in the **Sales
     tax payment version** field, select **Original**.
 
-4.  Select **OK**, and review the data.
+10.  Select **OK**, and review the data.
 
-![](media/157270a8a4e9f38a1d316a772ba86b60.png)
-
->   A screenshot of a social media post Description automatically generated
+![](media/4_Intervat_tax_declaration.png)
 
 Notice that the amount of the credit note is shown in code **84**.
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Additional sales tax report
+11.  Go to **Tax \> Declarations \> Sales tax \> Additional sales tax report
     boxes**.
 
-2.  Select **New** to create a line for February 2020.
+12.  Select **New** to create a line for February 2020.
 
-3.  Select **Tax corrections \> Adjustments**, and create a line.
+13.  Select **Tax corrections \> Adjustments**, and create a line.
 
-![](media/610e074076aabdf979c079f3a525fcc4.png)
+![](media/5_Adjustments.png)
 
->   A screenshot of a cell phone Description automatically generated
+14.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
-
-2.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
+15.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
     version** field, select **Original**.
 
-3.  Go to **Tax \> Declarations \> Sales tax \> INTERVAT tax declaration**.
+16.  Go to **Tax \> Declarations \> Sales tax \> INTERVAT tax declaration**.
 
-4.  Select **New declaration**, set the following values:
+17.  Select **New declaration**, set the following values:
 
-    -   **Settlement period:** MEN
+   -   **Settlement period:** MEN
 
-    -   **From date:** 2/1/2020 (February 1, 2020)
+   -   **From date:** 2/1/2020 (February 1, 2020)
 
-    -   **Transaction date:** 2/29/2020 (February 29, 2020)
+   -   **Transaction date:** 2/29/2020 (February 29, 2020)
 
-    -   **Update:** No
+   -   **Update:** No
 
-    -   **Format mapping:** INTERVAT format (BE)
+   -   **Format mapping:** INTERVAT format (BE)
 
-        ![A screenshot of a cell phone Description automatically generated](media/018d6ab69a6fa0e17093c043adf1e52b.png)
+![](media/6_Intervat.png)
 
-5.  Select **OK**, open the file, and review the report.
+18.  Select **OK**, open the file, and review the report.
 
-![](media/6d2281d7015a558852d13d70b00d75fa.png)
+![](media/7_Intervat_XML.png)
 
->   A screenshot of a social media post Description automatically generated
+19.  Select **Details**, and review the data.
 
-1.  Select **Details**, and review the data.
+![](media/8_Intervat_details.png)
 
-    ![A screenshot of a cell phone Description automatically generated](media/3e85e07a11c36c711efc5cfafeedc296.png)
-
-    Notice that the amount in **62** code equals **200**.
+Notice that the amount in **62** code equals **200**.
     
 ## Reconciliation reports for Belgium
 
