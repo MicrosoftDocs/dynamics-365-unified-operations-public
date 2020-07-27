@@ -639,7 +639,8 @@ reporting codes for Belgium.
 </tbody>
 </table>
 
-**Note**: You don't have to enter codes **71**, **72**, and **91**, because they
+> [!NOTE]
+> You don't have to enter codes **71**, **72**, and **91**, because they
 will be generated automatically.
 
 To set up an assignment of sales tax reporting codes to sales tax codes, go to
@@ -744,15 +745,14 @@ Follow these steps to enter manual correction amounts.
 | Reporting code    | Select the reporting code. Only the reporting codes that the **Tax corrections** check box is selected for will be available during tax correction entry.                                 |
 | Amount            | Enter the correction amount.                                                                                                                                                              |
 
-**Note**:
-
--   Composed reporting codes that are used for credit notes. such as code
-    **8185**, aren't available for selection. Nor are codes **71**, **72**, and
-    **91**. Codes **71** and **72** are calculated automatically when Belgian
-    sales tax reporting is run. Code **91** is entered in another way (see
-    description of **Disbursement** field above).
-
--   If a tax period is updated, a voucher number and a date will be shown. (For
+> [!NOTE]
+> -   Composed reporting codes that are used for credit notes. such as code
+>    **8185**, aren't available for selection. Nor are codes **71**, **72**, and
+>    **91**. Codes **71** and **72** are calculated automatically when Belgian
+>    sales tax reporting is run. Code **91** is entered in another way (see
+>    description of **Disbursement** field above).
+>
+> -   If a tax period is updated, a voucher number and a date will be shown. (For
     more information, see the description of the **Update** check box in the
     [Generate an INTERVAT tax
     declaration](#generate-an-intervat-tax-declaration) section later in this
@@ -891,7 +891,8 @@ The following table shows how to assign the sales tax reporting codes to sales t
 Instead of codes **55** and **59**, you can use corrective codes **63** and
 **64**.
 
-**Note:** The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
+> [!NOTE]
+> The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
 7.  Post the following transactions. For example, for customer invoices, go to
     **Accounts receivable \> Invoices \> All free text invoices**. For vendor
