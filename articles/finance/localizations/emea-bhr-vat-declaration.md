@@ -87,7 +87,7 @@ The VAT declaration form includes a set of boxes (lines) that correspond to spec
 
 **Line/Box1 - Standard rated sales:**  Per legal definition, this box includes the total amount of standard rated goods and services (excluding collected VAT) sold during the current period in The Kingdom of Bahrain, and the VAT that was collected on the sale or adjustments to similar sales made in the previous reporting periods. Examples of adjustments include:
 
-- The return of goods and services by customers on which you have declared/paid VAT to NBR.
+- The return of goods and services by customers on which you have declared/paid VAT to NBR (National Bureau for Revenue).
 - Sales made to tourists under a VAT refunds for tourist scheme and refunded to the refund operator.
 - Bad debt write-off on standard-rated receivables.
 
