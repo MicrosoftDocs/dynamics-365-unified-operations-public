@@ -5,7 +5,7 @@ title: Financials development home page
 description: This topic provides links to topics about financials development.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Financials development home page
 
 [!include [banner](../includes/banner.md)]
+
+This topic provides links to topics about financials development.
 
 - [Support for Dimension Entry controls on dialogs](../financial/dimension-entry-control-dialog-support.md)
 - [Migrate default dimensions controls to Dimension Entry controls](../financial/dimension-entry-control-migration.md)

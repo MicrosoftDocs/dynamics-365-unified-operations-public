@@ -4,8 +4,8 @@
 title: Install the IoT Intelligence add-in in LCS
 description: This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS).
 author: robinarh
-manager: AnnBe
-ms.date: 08/16/2019
+manager: tfehr
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS). Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
+This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS). Note that add-ins cannot be installed on a demo/trial environment. Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
 
 ## Set up the LCS environment
 

@@ -323,7 +323,7 @@ public static DimensionDefault serviceReplaceAttributeValue(
 
 The **serviceMergeValidDefaultDimensions()** API is useful if you want the merge to merge only values that are valid for the current ledger. It works just like **serviceMergeDefaultDimensions** but includes a check for valid values.
 
-**Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
+**Example: DimensionDefaultFacade::serviceMergeValidDefaultDimensions()** 
 
 ```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(

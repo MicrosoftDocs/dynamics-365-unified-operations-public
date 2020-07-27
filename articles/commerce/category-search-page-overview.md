@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Overview of default category landing page and search results page
+title: Default category landing page and search results page overview
 description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,8 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Overview of default category landing page and search results page
-
+# Default category landing page and search results page overview
 
 [!include [banner](includes/banner.md)]
 
@@ -100,13 +99,19 @@ The following components are essential for a search results page:
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
 
+>[!NOTE]
+>These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
+![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## Additional resources
 
-[Overview of the home page](quick-tour-home-page.md)
+[Cloud-powered search overview](cloud-powered-search-overview.md)
 
-[Overview of product details pages](quick-tour-pdp.md)
+[Home page overview](quick-tour-home-page.md)
 
-[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+[Product details pages overview](quick-tour-pdp.md)
 
-[Overview of account management pages](quick-tour-account-management.md)
+[Cart and checkout pages overview](quick-tour-cart-checkout.md)
+
+[Account management pages overview](quick-tour-account-management.md)
 

@@ -5,7 +5,7 @@ title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -70,9 +70,13 @@ If you don’t have admin access in the environment, you will not be able to tes
 6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in **step 8**.
 7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
 8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
-9. Right-click the Pos.Web project and click **Properties**.
-10. In the **Properties** window, click the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL. For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
-11. Save the changes.
+9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL.
+```    
+    Ex:  <IISUrl>https://YourCPOSURL.com</IISUrl>
+```
+10. Right-click the Pos.Web project and select **Properties**.
+11. In the **Properties** window, select the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL. For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
+12. Save the changes.
 
 ## Install the Developer topology prerequisites
 
