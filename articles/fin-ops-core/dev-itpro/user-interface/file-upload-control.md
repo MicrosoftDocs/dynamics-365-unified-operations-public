@@ -5,7 +5,7 @@ title: File upload control
 description: This topic provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 manager: AnnBe
-ms.date: 07/08/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,6 +82,7 @@ In particular, the **FileUploadResultBase** class exposes the **delegateScanStre
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the handler. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
 
+```xpp
     public final class ScanDocuments
     {
 
@@ -103,3 +104,4 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
             return true;
         }
     }
+ ```
