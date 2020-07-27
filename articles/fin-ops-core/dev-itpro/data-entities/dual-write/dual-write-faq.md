@@ -93,3 +93,9 @@ Number sequences for Finance and Operations apps and CDS apps are not connected.
 + F0001,F0002 in Finance and Operations apps and C0001, C0002 in CDS, OR 
 +	US0001 to US4999 in Finance and Operations apps and US5000 to US9999 in CDS.
 If entity is solely created in one system, then number sequencing needs setup in source only. You can refer to [CDS autonumbering features](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/autonumber-fields) for more details.
+### Can we map CDS company specific entity with an F&O global entity or vice versa?
+Dual-write only supports mapping between cross-company entities or company-specific entities from both sides.
+### How can I make CDS entity company specific?
+CDS custom entities can be made company specific by simply adding a M-1 relationship between your custom entities and our standard company entity. You should also include the company FK as part of the entity key. You can find full documentation of company concept [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/company-data)
+### Is there a document on best practice entity usage? Should I use Customers V2, Customers V3, Customer Details? What is the difference and use case for each?
+You should leverage the [out-of-the-box scenarios](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) where possible, as it already covers common scenarios such as customer / vendor integration.
