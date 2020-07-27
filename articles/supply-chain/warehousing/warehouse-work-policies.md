@@ -29,12 +29,14 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Work policies
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to set up the system and the warehouse app so that they support work policies. You can use this functionality to quickly register inventory without creating putaway work when you receive purchase or transfer orders, or when you complete manufacturing processes. This topic provides general information. For detailed information that is related to license plate receiving, see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).
 
 A work policy controls whether warehouse work is created when a manufactured item is reported as finished, or when goods are received by using the warehouse app. You set up each work policy by defining the conditions where it applies: the work order types and processes, the inventory location, and (optionally) the products. For example, a purchase order for product *A0001* must be received in location *RECV* in warehouse *24*. Later, the product is consumed in another process at location *RECV*. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product *A0001* as received in location *RECV*.
 
 > [!NOTE]
-> - For a work policy to be active, you must define at least one location for it in the **Inventory locations** section. 
+> - For a work policy to be active, you must define at least one location for it on the **Inventory locations** FastTab of the **Work policies** page. 
 > - You can't specify the same location for multiple work policies.
 > - The **Print label** option for mobile device menu items won't print a license plate label unless work was created.
 
@@ -279,7 +281,6 @@ Warehouse processes don't always include warehouse work. By defining a work poli
 1. On the Action Pane, select **New production order**.
 1. In the **Create production order** dialog box, set the **Item number** field to *L0101*.
 1. Select **Create** to create the order and close the dialog box.
-1. Select **Create**.
 
     A new production order is added to the grid on the **All production orders** page.
 
@@ -293,7 +294,6 @@ Warehouse processes don't always include warehouse work. By defining a work poli
 1. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Report as finished**.
 1. In the **Report as finished** dialog box, on the **General** tab, set the **Accept error** option to *Yes*.
 1. Select **OK** to save your setting and close the dialog box.
-1. On the Action Pane, select **Warehouse**.
 1. On the Action Pane, on the **Warehouse** tab, in the **General** group, select **Work details**.
 
 When the production order is reported as finished, no work is generated for putaway. This behavior occurs because a work policy is defined that prevents work from being generated when product *L0101* is reported as finished to location *001*.
