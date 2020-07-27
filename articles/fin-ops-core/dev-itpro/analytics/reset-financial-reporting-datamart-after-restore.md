@@ -168,12 +168,11 @@ Before getting started, instruct all users to close Report designer and exit the
 
 
     ```sql
-------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	--setup for servicing mode
 
---setup for servicing mode
-
-BEGIN TRANSACTION
+	BEGIN TRANSACTION
     IF NOT EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
     BEGIN 
         EXEC ('CREATE SCHEMA Servicing') 
