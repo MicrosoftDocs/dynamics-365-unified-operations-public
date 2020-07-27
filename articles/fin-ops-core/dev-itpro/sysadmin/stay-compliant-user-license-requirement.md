@@ -45,7 +45,7 @@ There are several Dynamics 365 for Finance and Operations tools that can be used
 
 While assigning roles to users it is possible to view license requirements for each role in the **Roles for selected user** fact box.
 
-  ![User's roles tab](media/.png)
+  ![User's tab](media/UsersRoles.png)
 
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as Operations, it will be necessary to use the User License estimator report to determine the full user licensing requirements.
 
@@ -53,15 +53,15 @@ The maximum license requirement determines the actual licensing requirement for 
 
 While configuring security, it is possible to select any permission reference, e.g. a role or duty, and click **View permissions** to see all currently included permissions and their licensing requirements:
 
-![](RackMultipart20200727-4-1hd145q_html_dd990d8bf2d69a10.png)
+  ![View permissions form](media/ViewPermissons.png)
 
 The required license level is displayed in the header of the form.
 
 ## User license counts report (System administration > Inquiries > License)
 
-The User license count report is used to get a count of required licenses per license type, e.g. Team members, Activity and Operations:
+The User license counts report is used to get a count of required licenses per license type, e.g. Team members, Activity and Operations:
 
-![](RackMultipart20200727-4-1hd145q_html_69fc72f2ee09400c.png)
+  ![User License Counts report](media/UserLicenseCountsReport.png)
 
 It can also provide details for each user and the licensing requirements for each assigned role. The users are listed under the maximum license type. If the license requirement is identified as Operations, it will be required to use the [User License estimator report](#UserLicenseEstimatorReport) to determine the specific full user licensing requirements.
 
@@ -73,7 +73,7 @@ Note: These reports are dependent on the **Named user license count reports proc
 
 The User license estimator report is used to get a count of specific licensing requirements for a user that has been identified as requiring an Operations license type in the above tools. The report only includes these users. Users who have not been assigned a privilege requiring a specific full user license, will be shown without any of the specific full user licenses marked, and will be compliant with any full user license assigned. An example is a user that has been assigned the Database management administrator role and no other roles requiring an Operations license type:
 
-![](RackMultipart20200727-4-1hd145q_html_bcec2c5d638a821e.png)
+  ![License guide](media/LicenseGuide.png)
 
 Based on the licensing guide this user is compliant with any full user license:
 
@@ -81,17 +81,17 @@ Admin rights apply across Finance, Supply Chain Management, and Commerce applica
 
 There are several roles, provided by Microsoft and custom, where this may be true, based on the included privileges. In the report these users will appear without any specific license indicated. For example:
 
-![](RackMultipart20200727-4-1hd145q_html_f0d2ccc736124f30.png)
+  ![User license estimator report: Any full user license required](media/UserLicenseEstimatorClaire.png)
 
 On the other hand, for a user who has been assigned privileges that require a specific full user license, that license will be indicated:
 
-![](RackMultipart20200727-4-1hd145q_html_cc5aa18f1453d756.png)
+  ![User license estimator report: Specific full user license required](media/UserLicenseEstimatorAlica.png)
 
 In the above example the user must have a base license for Dynamics 365 Supply Chain Management.
 
 For a user who has been assigned privileges that together require more than one specific full user license, those licenses will be indicated accordingly:
 
-![](RackMultipart20200727-4-1hd145q_html_bb5a2ccb2df2c442.png)
+  ![User license estimator report: More than one specific full user license required](media/UserLicenseEstimatorCassie.png)
 
 In such cases, the user must have a base license for one of the licenses, as well as an attach license for all other full user licenses required. In the example above, the user must have either a base license for Finance plus an attach license for Supply Chain Management, or a base license for Supply Chain Management plus an attach license for Finance.
 
