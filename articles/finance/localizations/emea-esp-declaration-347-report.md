@@ -1,6 +1,4 @@
----
-title: Declaration 347 report
----
+# Declaration 347 report
 
 This topic provides information about how to generate the Declaration 347 report
 that is available to legal entities that have their primary address in Spain.
@@ -22,8 +20,7 @@ payments for invoices on the line exceeds the value of the **Minimum amount of
 payments in cash** field in the **Declaration 347** dialog box, this amount will
 be shown in the **Amounts in cash** field of the declaration.
 
-Prerequisites
-=============
+## Prerequisites
 
 The following prerequisites must be set up before you begin to work with the
 Declaration 347 report.
@@ -64,8 +61,7 @@ Declaration 347 report.
 
 -   **Company name:** (Optional) Enter the name of the counterparty.
 
-Setup
-=====
+## Setup
 
 1.  In [Microsoft Dynamics Lifecycle Services
     (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download
@@ -76,22 +72,19 @@ Setup
 
 -   Declaration 347 report format (ES)
 
->   For more information, see [Download Electronic reporting configurations from
->   Lifecycle
->   Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1.  Go to **Tax \> Setup \> Sales tax \> Cash ledger accounts**.
+2.  Go to **Tax \> Setup \> Sales tax \> Cash ledger accounts**.
 
-2.  On the **Cash ledger accounts** page, specify the cash ledger accounts that
+3.  On the **Cash ledger accounts** page, specify the cash ledger accounts that
     are required for the Declaration 347.
 
-3.  Go to **Tax \> Setup \> Sales tax \> 347 validation lists**.
+4.  Go to **Tax \> Setup \> Sales tax \> 347 validation lists**.
 
-4.  On the **Validation list** page, specify any sales tax groups that should be
+5.  On the **Validation list** page, specify any sales tax groups that should be
     excluded from the Declaration 347.
 
-Generate the Declaration 347 report
-===================================
+## Generate the Declaration 347 report
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Declaration 347**.
 
@@ -114,11 +107,9 @@ Generate the Declaration 347 report
 
 5.  Review the information on the declaration.
 
-![](media/60f93c986721b7a4ca5d69e68b31a168.png)
+![](media/1_Declaration_347.png)
 
->   A screenshot of a cell phone Description automatically generated
-
->   The **General** tab has the following fields.
+The **General** tab has the following fields.
 
 | **Field**                          | **Description**                                                                                                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -145,18 +136,15 @@ Generate the Declaration 347 report
 
 The default value is **Telematic**.
 
->   The **Totals** tab shows the number of operations and the total amounts of
->   purchases and sales.
+The **Totals** tab shows the number of operations and the total amounts of purchases and sales.
 
-1.  Select **Transactions** to review and modify the information for the
+6.  Select **Transactions** to review and modify the information for the
     aggregated customer transactions and vendor transactions before you generate
     the report as an ASCII file.
 
-![](media/c22c093f6e5e6eb42ba6e7f3ff6eba42.png)
+![](media/2_Transactions.png)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  On the **Transactions** page, on the **General** tab, review the following
+7.  On the **Transactions** page, on the **General** tab, review the following
     fields.
 
 | **Field**                                 | **Description**                                                                                                                                   |
@@ -196,42 +184,39 @@ The default value is **Telematic**.
 -   **E - subventions** – Select this value if the transaction is a subvention
     that is received from public administrations or private companies.
 
-1.  If you selected the **Tenancy** check box on the **General** tab, select
+8.  If you selected the **Tenancy** check box on the **General** tab, select
     **Declaration 347 tenants** to add information about tenants.
 
-![](media/0f78459304211fdd64f568300d9ecd01.png)
+![](media/3_Declaration347_tenants.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Declaration 347 tenants** page, on the **Overview** tab, set the
+9.  On the **Declaration 347 tenants** page, on the **Overview** tab, set the
     **Name**, **Amount**, **Reference of estate**, **County**,
     **Country/region**, **City**, and **Street** fields.
 
-2.  On the **General** tab, set the **ZIP/postal code**, **Address
+10.  On the **General** tab, set the **ZIP/postal code**, **Address
     abbreviation**, **Street No.**, **Entrance**, **Floor**, **Door**, and
     **Location code** fields for the building or property.
 
-3.  Close the **Declaration 347 tenants** page and the **Transactions** page.
+11.  Close the **Declaration 347 tenants** page and the **Transactions** page.
 
-4.  On the **Declaration 347** page, select **Output \> Export to ASCII file**.
+12.  On the **Declaration 347** page, select **Output \> Export to ASCII file**.
 
-5.  In the **Export to ASCII file** dialog box, in the **Format mapping** field,
+13.  In the **Export to ASCII file** dialog box, in the **Format mapping** field,
     select the **Declaration 347 export format (ES)** format that you downloaded
     earlier.
 
-6.  In the **File name** field, enter the file name, and then select **OK**.
+14.  In the **File name** field, enter the file name, and then select **OK**.
 
-7.  Select **Output \> Print**.
+15.  Select **Output \> Print**.
 
-8.  In the **Declaration 347** dialog box, in the **Format mapping** field,
+16.  In the **Declaration 347** dialog box, in the **Format mapping** field,
     select the **Declaration 347 report format (ES)** format that you downloaded
     earlier.
 
-9.  In the **File name** field, enter the file name, and then select **OK**. You
+17.  In the **File name** field, enter the file name, and then select **OK**. You
     can review the format of the report in the example later in this topic.
 
-Generate the delta report
-=========================
+## Generate the delta report
 
 You can create a new Declaration 347 for the same period and use the delta
 report to view lines that differ from the lines of the original Declaration 347.
@@ -255,13 +240,11 @@ report to view lines that differ from the lines of the original Declaration 347.
 6.  In the **File name** field, enter the file name, and then select **OK**. You
     can review the format of the report in the example later in this topic.
 
-Example
-=======
+## Example
 
 Consider an example in the **DEMF** legal entity.
 
-Setup
------
+### Setup
 
 1.  Go to **Organization administration \> Setup \> Organization \> Legal
     entities**.
@@ -272,19 +255,14 @@ Setup
 3.  Go to **Tax \> Setup \> Sales tax \> Cash ledger accounts**, and select
     **New** to create a line.
 
-![](media/f5b4f378a1fdbc83c2fc538d121b595e.png)
+![](media/4_Cash_ledger_accounts.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Go to **Tax \> Setup \> Sales tax \> Tax exempt number** and select **New**
+4.  Go to **Tax \> Setup \> Sales tax \> Tax exempt number** and select **New**
     to create a line.
 
-![](media/b1b9b5e5edd110e3951900ef2178c156.png)
+![](media/5_Tax_exempt_numbers.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-Customers
----------
+### Customers
 
 1.  Go to **Accounts receivable \> Customers \> All customers**, and select
     customer **DE-010**.
@@ -338,8 +316,7 @@ Customers
 | March 1, 2020     | DE-011 (01396365B)              | FTI-000009          | 3,000      | Bank                    | DEMF OPER          |
 | March 3, 2020     | DE-014 (DE9801)                 | FTI-000010          | 6,500      | Bank                    | DEMF OPER          |
 
-Vendors
--------
+### Vendors
 
 1.  Go to **Accounts payable \> Vendors \> All vendors**, and s elect vendor
     **DE-001**.
@@ -372,8 +349,7 @@ Vendors
 | February 10, 2020 | DE-001      | 1           | 6,300      | Ledger                  | 110180             |
 | February 15, 2020 | DE-01001    | 2           | 7,100      | Bank                    | DEMF OPER          |
 
-Generate Declaration 347 and Delta report
------------------------------------------
+### Generate Declaration 347 and Delta report
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Declaration 347**, select
     **Generate**, and fill the following fields with the following values:
@@ -384,16 +360,14 @@ Generate Declaration 347 and Delta report
 
 -   **Minimum amount of payments in cash** - 6000
 
-1.  Select **OK**.
+2.  Select **OK**.
 
-2.  Select the declaration line that was created, select **Transactions**, and
+3.  Select the declaration line that was created, select **Transactions**, and
     review the data.
 
-![](media/8b638711d362b0aae7c28c68eada56c5.png)
+![](media/6_Transactions.png)
 
->   A screenshot of a video game Description automatically generated
-
->   Notice the following details:
+Notice the following details:
 
 -   The line for customer **DE-012** wasn't transferred to the declaration
     because both amounts were less than 6,000.
@@ -406,16 +380,16 @@ Generate Declaration 347 and Delta report
     though the payment was in cash, the cash payment amount is 0 (zero) because
     the **Amounts in cash** field is filled in only for customers.
 
-1.  Close the **Transactions** page, and then, on the **Declaration 347** page,
+4.  Close the **Transactions** page, and then, on the **Declaration 347** page,
     select **Generate** to generate the report that has corrections.
 
-2.  Set the **Replacement declaration** option to **Yes** to identify this
+5.  Set the **Replacement declaration** option to **Yes** to identify this
     declaration as a correction of the original declaration.
 
-3.  In the **Previous declaration number** field, enter the declaration number
+6.  In the **Previous declaration number** field, enter the declaration number
     of the original declaration, and then select **OK**.
 
-4.  Select the declaration line that is created, select **Transactions**, and
+7.  Select the declaration line that is created, select **Transactions**, and
     edit the line for customer with tax exempt number **DE9801** in the
     following way:
 
@@ -423,19 +397,19 @@ Generate Declaration 347 and Delta report
 
 -   the value in **2st quarter amount** column becomes 3000 instead of 0.
 
-    ![A screenshot of a cell phone Description automatically generated](media/e12aa0a7c26422254bf350e001306bd1.png)
+![](media/7_Transactions.png)
 
-1.  Close the **Transactions** page.
+8.  Close the **Transactions** page.
 
-2.  Select **Output \> Delta report**.
+9.  Select **Output \> Delta report**.
 
-3.  In the **Format mapping** field, select **Declaration 347 report format
+10.  In the **Format mapping** field, select **Declaration 347 report format
     (ES)**.
 
-4.  In the **File name** field, enter the file name, and then select **OK**.
+11.  In the **File name** field, enter the file name, and then select **OK**.
 
-5.  Open downloaded file and review the data.
+12.  Open downloaded file and review the data.
 
-    ![A picture containing screenshot, light, flock, lot Description automatically generated](media/1e76e4a20763d6f43d490be9c6a87dfb.png)
+![](media/8_Declaration347.png)
 
-    Notice that only the line that has corrections is printed on the report.
+Notice that only the line that has corrections is printed on the report.
