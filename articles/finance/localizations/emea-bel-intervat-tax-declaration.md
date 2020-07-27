@@ -158,13 +158,13 @@ reporting codes](#set-up-sales-tax-reporting-codes) section later in this topic.
 2.  For each tax-exempt number, create a record that includes the following
     information:
 
-    -   In the **Country/region** field, select the tax registration of the
+-   In the **Country/region** field, select the tax registration of the
         counterparty.
 
-    -   In the **Tax exempt number** field, enter the tax-exempt number of the
+-   In the **Tax exempt number** field, enter the tax-exempt number of the
         counterparty.
 
-    -   In the **Company name** field, enter the name of the counterparty.
+-   In the **Company name** field, enter the name of the counterparty.
 
 For more information about how to set up the VAT statement, see [VAT reporting
 for
