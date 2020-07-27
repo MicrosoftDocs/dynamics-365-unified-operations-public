@@ -977,7 +977,7 @@
         - name: Finance Insights administration
           href: finance-insights/finance-insights-admin.md
         - name: Configuration for Finance Insights
-          href: finance-insights/finance-insights-admin.md
+          href: finance-insights/configure-for-fin-insites.md
         - name: Set up demo data for Payment predictions
           href: finance-insights/set-up-demo-data.md
         - name: Enable Cash flow forecasting
