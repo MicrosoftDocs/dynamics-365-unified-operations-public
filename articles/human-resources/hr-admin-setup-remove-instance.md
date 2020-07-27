@@ -5,7 +5,7 @@ title: Remove an instance
 description: This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -78,8 +78,15 @@ To remove a Human Resources environment from an existing Power Apps environment,
 7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
 8. Select **Remove instance** and confirm your decision. 
 
-## Recover an environment that is soft deleted
-In the event you have deleted the Power Apps environment that your Human Resources environment is connected to, the status of the environment in Lifecycle Services will be Soft deleted. When the Human Resources environment is soft deleted, users cannot connect to Dynamics 365 Human Resources. You can restore the environment by following a two step process. First, you must [Recover the Power Apps environment](/power-platform/admin/recover-environment.md). Second, you must conact Support to restore the Human Resources environment.
+## Recover a soft-deleted environment
+
+If you delete the Power Apps environment that your Human Resources environment is connected to, the status of the Human Resources environment in Lifecycle Services will be **Soft deleted**. In this case, users can't connect to Human Resources.
+
+To restore the environment:
+
+1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment.md).
+
+2. Contact Support to restore the Human Resources environment. For more information, see [Get support](hr-admin-troubleshooting-support.md).
 
 > [!Warning]
-> Power Apps environments are only saved for seven days after the deletion. The process to recover the environment must be completed within the seven day period.
+> Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.
