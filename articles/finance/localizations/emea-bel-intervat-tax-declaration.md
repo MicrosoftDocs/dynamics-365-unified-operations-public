@@ -168,7 +168,7 @@ reporting codes](#set-up-sales-tax-reporting-codes) section later in this topic.
 
 For more information about how to set up the VAT statement, see [VAT reporting
 for
-Europe](https://docs.microsoft.com/dynamics365/finance/localizations/emea-vat-reporting).
+Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md).
 
 ## Settings
 
@@ -186,7 +186,7 @@ create an element for each language. Set the following fields: **Language**,
 
 For information about how to set up sales tax reporting codes, see [Set up sales
 tax reporting
-codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes).
+codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
 
 If users are allowed to manually correct a reporting code, select the **Tax
 corrections** check box. The following table provides an example of sales tax
@@ -961,7 +961,7 @@ Notice that the amount in **62** code equals **200**.
 
 For information about reconciliation reports for Belgium, see [Reconciliation
 reports for
-Belgium](https://docs.microsoft.com/dynamics365/finance/localizations/emea-bel-reconciliation-reports)*.*
+Belgium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-bel-reconciliation-reports.md).
 
 
 
