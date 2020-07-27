@@ -1,0 +1,41 @@
+---
+# required metadata
+
+title: Product engineering overview
+description: The product engineering solution helps you plan and manage product versioning, lifecycle management, and engineering change management.
+author: t-benebo
+manager: tfehr
+ms.date: 07/31/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: benebotg
+ms.search.validFrom: 2020-07-31
+ms.dyn365.ops.version: Release 10.0.13
+---
+
+# Product engineering overview
+
+[!include [banner](../includes/banner.md)]
+
+The product engineering solution helps you plan and manage product versioning, lifecycle management, and engineering change management. Its main features are:
+
+- Product versioning
+- Enhanced product release functionality that enables you to maintain product master data in one legal entity (the engineering organization), and publish the fully configured released product to other legal entities
+- Rules for validating that necessary information is populated before a product version is activated (readiness checks)
+- Fine-grained control of when a released product may be used in certain business processes (improved product lifecycle management)
+- Engineering change requests with workflow support
+- Engineering change orders with workflow support
