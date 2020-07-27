@@ -180,7 +180,7 @@ select **Open Web site** on the **INTERVAT tax declaration** page. You should
 create an element for each language. Set the following fields: **Language**,
 **Description**, and **URL**.
 
-[](media/1_Intervat_setup.png)
+![](media/1_Intervat_setup.png)
 
 ### Set up sales tax reporting codes
 
