@@ -5,7 +5,7 @@ title: What's new or changed for APAC India GST Localization in 10.0.12 (July 20
 description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.12.
 author: prabhatb
 manager: annbe
-ms.date: 07/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -96,24 +96,13 @@ The parameter, **Enable stock transfer for master planning** has been added to t
 - When a withholding tax transaction is posted in a foreign currency, at the time of the withholding tax settlement to the authority, an imbalance error will occur. After this fix is implemented, you will able to successfully run settlements to the authority. After the line details are updated, the withholding tax (TCS) is calculated correctly for intercompany purchase return orders.
 - When you import data by using the data entity, **Ledger journal line transaction tax information**, the following error occurs: **Results: Matching record with key tax information" to resolve the issue**.
 - Vendor tax information is imported through the **Data entity** page. The system allows you to select more than one set of primary tax information details for vendor tax information. After this is fixed, the system will only allow you to enable one set of primary tax information details for the same vendor.
-- Vendor tax information is imported through data entity form then on refreshing data. The system is allowing the user to select more than one primary tax information 
-  details in vendor tax information. After this fixed system will restrict the user to enable more than one primary tax information details for the same vendor.
-- When a customer is trying to do import purchase order the value of IGST tax is not getting displayed in the Totals tab after doing purchase order totals and 
-  purchase order invoice. After this fixed value of IGST tax will display in Totals tab in purchase order and purchase order invoice. However, the user has to
-  enable checkbox in parameter to enable this option.
-- Field transaction type should be disabled in the sales quotation form. User can manually add and update the field transaction type in the sales quotation form.
-  If it is updated to value except None or Expense, the Customer tax information will be invisible. Through this fix, the field Transaction type will only available for
-- While posting foreign vendor payment and applied the withholding tax of Non-Residence. If the user changes currency rates on transaction, a similar exchange rate
-  not applied for withholding tax calculation. instead, it is taking from the system. Due to this, there is an imbalance in posting and stopped posting the transaction.  
-  With this fix vendor payment with TDS in foreign currency, the transaction will post successfully.
-- The system is not showing the tax-adjusted amount at the time of bill of entry to tax document form of the invoice posting form. After this fixed system axe 
-  amount adjusted in Bill of entry form will flow and display in tax document of posting Invoice form.
-  
-- The **Bill of entry** (BOE) number column is present on the **Product receipt** page, but it is not being displayed After this fix, the BOE number will show by default in the lines on the **Product receipt** page.
-- The load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the cost of project account/fixed asset account when a purchase order 
-  placed with a procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination ). After this fix, the tax amount will load to an offset account.
-- After you post an imported purchase order, the system still allows you to create an invoice by selecting **Products receipt** on the **Pending vendor invoice** page. 
-  With this fix, after the imported purchase order invoice is posted, it will not be available on the **Pending vendor invoice** page when you select **Product receipt**.
+- When you import a purchase order, the value of the IGST tax is not displayed on the **Totals** tab after generating the purchase order totals and purchase order invoice. After this fix, the value of IGST tax will display on the **Totals** tab on the purchase order and the purchase order invoice. However, you have to select the check box in parameter to enable this option.
+- The **Transaction type** field should not be enabled on the **Sales quotation** page. You can manually add and update the field on the **Sales quotation** page. If it is updated to any value except **None** or **Expense**, the customer tax information will not be visible.
+- While posting a foreign vendor payment and the applied the withholding tax of non-residence, if the currency rates on the transaction are changed, a similar exchange rate isn't applied for withholding tax calculation. Instead, the exchange rate is taken from the system. Because of this, there is an imbalance in the posting and it is not completed. With this fix, vendor payments with TDS in foreign currency will post successfully.
+- Tax-adjusted amounts are not showing the bill of entry on the tax document section of the **Invoice posting** page. After this fix, the adjusted amount on the bill of entry will flow and display in the tax document section of the **Posting invoice** page. 
+- The **Bill of entry (BOE) number** column is present on the **Product receipt** page, but it is not being displayed After this fix, the BOE number will show by default in the lines on the **Product receipt** page.
+- The load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the cost of project account/fixed asset account when a purchase order is placed with a procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination ). After this fix, the tax amount will load to an offset account.
+- After you post an imported purchase order, the system still allows you to create an invoice by selecting **Products receipt** on the **Pending vendor invoice** page. With this fix, after the imported purchase order invoice is posted, it will not be available on the **Pending vendor invoice** page when you select **Product receipt**.
 
 
  
