@@ -3,7 +3,7 @@
 
 title: Product owner
 description: The product owner is a group of users who are responsible for certain products. When a product owner group is assigned to a product, the members of the group are the only ones who can release that product. The product owner can also be used in the approval workflow.
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article

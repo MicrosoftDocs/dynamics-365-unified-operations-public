@@ -3,7 +3,7 @@
 
 title: Engineering versions and engineering product category
 description: The engineering version concept ensures that different states of a product and its data are kept current and clear and can be visualized in the system
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article

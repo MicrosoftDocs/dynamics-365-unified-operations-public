@@ -3,7 +3,7 @@
 
 title: Engineering organizations and data ownership rules
 description: To ensure that the master data for products is created and maintained centrally, you can use one or more engineering organizations. The engineering organization represents the organization that owns the engineering products and its engineering relevant data.
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article

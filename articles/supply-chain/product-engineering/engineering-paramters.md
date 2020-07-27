@@ -3,7 +3,7 @@
 
 title: Project Oaktree parameters
 description: This topic describes how to configure product engineering features for Supply Chain Management.
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article

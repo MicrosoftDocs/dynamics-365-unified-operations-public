@@ -3,7 +3,7 @@
 
 title: Release management
 description: To ensure that engineering relevant data of products can easily be reused in different legal entities, you can release complete product structures in addition to releasing products with their engineering versions. This means that you can release multi-level bill of material structures together with the parent in a single release action.
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article

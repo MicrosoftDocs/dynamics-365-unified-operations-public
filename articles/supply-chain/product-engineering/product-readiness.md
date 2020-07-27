@@ -3,7 +3,7 @@
 
 title: Product readiness
 description: Use readiness checks to ensure that the needed master data is completed for a product before it is used in transactions.
-author: XXXX
+author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
