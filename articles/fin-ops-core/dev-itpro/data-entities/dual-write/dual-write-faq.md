@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 We've compiled a list of frequently asked questions and provided brief answers to help you get to your information quickly.
 
-## Setup
+## Dual-write setup
 ### Is dual write available for Government Community Cloud (GCC)?
 Not yet. 
 Dual write requires Finance and Operations apps environment and CDS environment to be in the same tenant. Since Finance and Operations apps is not available in GCC yet, dual write doesn’t support linking Finance and Operations apps/CDS across two different tenants.
