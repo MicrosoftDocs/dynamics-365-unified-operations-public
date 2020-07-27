@@ -45,7 +45,7 @@ There are several Dynamics 365 for Finance and Operations tools that can be used
 
 While assigning roles to users it is possible to view license requirements for each role in the **Roles for selected user** fact box.
 
-![](RackMultipart20200727-4-1hd145q_html_b6c4073e3333aec2.png)
+  ![User's roles tab](media/.png)
 
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as Operations, it will be necessary to use the User License estimator report to determine the full user licensing requirements.
 
