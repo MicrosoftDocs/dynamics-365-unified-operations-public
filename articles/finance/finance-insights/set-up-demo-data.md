@@ -39,6 +39,8 @@ If you're using the Payment predictions capability in Finance Insights, you'll n
 > [!Note]
 > All demo data is set up for the USMF company. Switch to the USMF company when setting up or using this data. 
 
+### Create customer records and invoices
+
 1. Be sure that your entity list has been loaded. One way to refresh entity list is to go **Data management -> Framework parameters -> Entity settings**, and then click **Refresh**. This process can run in the background and can take several minutes to complete. 
 
 2. Create customers and invoices. Open **Data Management** and import the package from the zip file. The package assumes that system has initial demo data containing things like cash discounts, customers groups, among others. This step adds 10 new customers, as well as approximately 900 invoices across these customers. 
@@ -54,10 +56,10 @@ If you're using the Payment predictions capability in Finance Insights, you'll n
 
 5. Pay the invoices. Settle about 90% of invoices that were imported and posted in the preceding steps. The easiest way to settle these invoices is per customer.
 
->  [!IMPORTANT NOTE]
-> Be sure that settle date is the one specified in the file for each customer in the data folder provided above. For this particular data set, the settle date for all customers is 2020-04-22. It's important to pay and settle approximately 90% of the invoices, but it doesn't matter which invoices are paid and which ones aren't.
+   > [!IMPORTANT]
+   > Be sure that settle date is the one specified in the file for each customer in the data folder provided above. For this particular data set, the settle date for all customers is 2020-04-22. It's important to pay and settle approximately 90% of the invoices, but it doesn't matter which invoices are paid and which ones aren't.
 
-## To pay invoices
+### Pay invoices
 1. Open the **Customer Payment Journal**. Create a new entry, and enter the **CustPay** in the **Name** field. Then click **Journal Batch number**.
 
 2. In opened window put the CUSTOMERACCOUNT value from step 3. In the first column, enter the date for settling from step 4 in the **Date** field that corresponds to this customer.  It's important to enter the correct date. When the date is entered, you can settle transactions. To do so, complete the following steps. 
