@@ -5,7 +5,7 @@ title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
 manager: AnnBe
-ms.date: 02/07/2018
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -162,10 +162,9 @@ Use services.msc to restart the services that you stopped earlier:
 
 ## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
 
-Before getting started, instruct all users to close Report designer and exit the Financial reporting area.
-1. On the MRDB, execute the script below, which was last updated April 9, 2020: Reset Datamart Begin.txt
+Before getting started, be sure that all users close Report designer and exit the Financial reporting area.
 
-
+1. On the MRDB, execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
 
     ```sql
 	------------------------------------------------------------------------------------------
@@ -566,11 +565,9 @@ Before getting started, instruct all users to close Report designer and exit the
 	END CATCH
 	
 
-2. (Optional) On the MRDB, execute the script below, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
+2. (Optional) On the MRDB, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
 > [!NOTE]
 > Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
-
-
 
 ```sql
 -- Attempt to delete integrated users
@@ -614,9 +611,7 @@ Before getting started, instruct all users to close Report designer and exit the
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. On the AXDB, clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart AXDB.txt
-
-
+3. On the AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
@@ -684,7 +679,7 @@ END
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 
-Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
+Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the default state but should be automatically resolved.
 
 ## Export and import report definitions
 
