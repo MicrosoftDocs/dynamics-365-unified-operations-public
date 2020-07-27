@@ -88,7 +88,7 @@ The **Application-specific parameters** option let the users to establish the cr
 
 By adding this last record (Other), you define the following rule: Whenever the Tax code and Name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in VAT return form.  Although this rule is not used in the generation of the report,  introduced to avoid errors in report generation in case of missing rule configuration. 
 
-The table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation 
+The table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation.
 
 | Form            | ReportFieldLookup                     |                                                                                                           |      |              |                          |
 |-----------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------|------|--------------|--------------------------|
@@ -125,7 +125,6 @@ The table below represents an example of potential configuration, but you can us
 | PART B2-21      | PurchaseOtherExempted                 | Value   of work performed exempted from sales tax                                                         |   30 | SSTP_3       | PurchaseExempCreditNote  |
 | NOT APPLICABLE  | Other                                 | Other                                                                                                     |   31 | *No   blank* | *No   Blank*             |
 
-
   
 You need to repeat the above steps for Lookup name ReportFieldDetailed and the table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation
 
@@ -146,7 +145,49 @@ You need to repeat the above steps for Lookup name ReportFieldDetailed and the t
 | PART B1-10     | TaxableServices_B110    | Value   of Taxable Service                                              |   12 | SSTH         | SalesCreditNote |
 | NOT APPLICABLE | Other                   | Other                                                                   |   13 | *No   blank* | *No   Blank*    |
   
+Once the above configuration are done, In the State field, select Completed and Save and close the Application specific parameters page.
+
+Note: To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code SST5 you will be facing some issues when the report is generated. We recommend to use Tax > Inquire > Posted sales tax menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
+
+The following table provides a definition of column Name in order to understand how the tax transactions are classified:
   
+
+| Classifier value                | Condition |
+|---------------------------------|-----------|
+| PurchaseCreditNote              | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
+| Purchase                        | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
+| SalesCreditNote                 | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li></ul> |
+| Sales                           | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li></ul> |
+| PurchaseExemptCreditNote        | <ul><li>Credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
+| PurchaseExempt                  | <ul><li>Not credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
+| SalesExemptCreditNote           | <ul><li>Credit note</li><li>Tax direction = Tax-free sales</li></ul> |
+| SaleExempt                      | <ul><li>Not credit note</li><li>Tax direction = Tax-free sales</li></ul> |
+| UseTaxCreditNote                | <ul><li>Credit note</li><li>Tax direction = Use tax</li></ul> |
+| UseTax                          | <ul><li>Not credit note</li><li>Tax direction = Use tax</li></ul> |
+| PurchaseReverseChargeCreditNote | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge_W = Yes</li></ul> |
+| PurchaseReverseCharge           | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge_W = Yes</li></ul> |
+| SalesReverseChargeCreditNote    | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul> |
+| SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul> |  
   
-  
-  
+## Set up General ledger parameters
+
+To generate the VAT return form report in Excel format you must define an ER format on the General ledger parameters page.
+
+1. Go to **Tax > Setup > General ledger parameters**.
+2. On the **Sales tax** tab, in the Tax options section, in the SST statement format mapping field, select SST-02 Declaration Excel (MY). If you leave the SST statement format mapping field blank, the standard sales tax  report will be generated in SSRS format.
+3. Select the **Category hierarchy**. This category enables the **Commodity code** in **Foreign trade** tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
+
+## Generate a VAT return report
+
+The process of preparing and submitting a SST-02 return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see Sales tax overview (https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview)
+
+Follow these steps to generate the tax declaration report.
+
+1. Go to **Tax > Declarations > Sales tax > Report sales tax for settlement period** or **Settle and post sales tax**
+2. Select the **Settlement period**.
+3. Select the "from" date.
+4. Select the sales tax payment version.
+5. Select OK to confirm the above steps. 
+6. Enter the amount of credit from previous period if applicable. Otherwise leave the amount in zero.
+7. In the Generate details field, select the following available options. VAT return form is always generated in this process.
+		
