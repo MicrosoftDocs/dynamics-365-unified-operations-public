@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/08/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -165,7 +165,7 @@ The **Docu** class exposes the following two delegates. Handlers can be implemen
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
 
-
+```xpp
     public final class ScanDocuments
     {
 
@@ -206,6 +206,7 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
         }
 
     }
+```
 
 ## Frequently asked questions
 
