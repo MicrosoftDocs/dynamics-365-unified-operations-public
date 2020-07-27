@@ -88,7 +88,7 @@ For more information on the engineering product categories, see [Engineering ver
 
 During the release process, you can influence the settings as well.
 
-## Work with product release policies
+## Create and manage product release policies
 
 To work with product release policies, go to **Project Oaktree > Setup > product release policies**. Then do one of the following:
 

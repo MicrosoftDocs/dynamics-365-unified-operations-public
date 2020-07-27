@@ -38,7 +38,7 @@ As an engineering product traverses through its lifecycle, it's important that y
 
 For an engineering product, changing the lifecycle state goes hand-in-hand with its engineering versions and therefor the product lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can control what transactions are allowed for this engineering version via its product lifecycle state.
 
-## Work with product lifecycle states
+## Create and manage product lifecycle states
 
 To work with product lifecycle states, go to **Project Oaktree > Setup > Product lifecycle state**. Then do one of the following:
 

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 The product owner is a group of users who are responsible for certain products. When a product owner group is assigned to a product, the members of the group are the only ones who can release that product. The product owner can also be used in the approval workflow in engineering change management.
 
-Product owners are global setup in therefor immediately available in all legal entities.
+Product owners are global settings and are therefore available to all legal entities.
 
 ## Create a product owner group
 

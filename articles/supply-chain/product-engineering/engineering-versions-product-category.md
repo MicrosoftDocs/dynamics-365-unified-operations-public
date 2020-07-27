@@ -76,7 +76,7 @@ For products set up with logistical impact, the engineering version must be spec
 
 <a name="product-category"></a>
 
-## Engineering product category
+## Set up engineering product categories
 
 Set up engineering product categories in the engineering product hierarchy to ensure engineering products will behave as required. Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category; you are also prevented from changing any of the following:
 

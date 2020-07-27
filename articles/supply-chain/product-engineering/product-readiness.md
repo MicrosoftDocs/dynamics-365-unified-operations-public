@@ -81,7 +81,7 @@ The setup for who is assigned to the readiness check is done at the engineering 
 
 ### Process system and manual readiness checks
 
-After opening the readiness form, you can view the subject of system and manual readiness checks by selecting **View related information** on the Action Pane. From there, you will be able to complete and/or validate the data for the readiness check. Open readiness checks have a **Status** of *Pending*, which means that it still needs to be processed. To process a readiness check, do one of the following:
+After opening the readiness form, you can view the subject of system and manual readiness checks by selecting **View related information** on the Action Pane. From there, you can complete and/or validate the data for the readiness check. Open readiness checks have a **Status** of *Pending*, which means that it still needs to be processed. To process a readiness check, do one of the following:
 
 - Select **Check/complete** on the Action Pane to check and complete the readiness check, after which the **Status** will update to *Passed*. <!-- KFM: What happens here? Do we see a new form and/or make some settings or something? -->
 - Select **Skip** in the action pane if you prefer to skip a check that isn't mandatory. This can be applicable when there is no data setup which is also not required for the particular product <!-- KFM: I don't understand this example -->. This can be the case for the cost price calculation for a product that is still in the design phase. If you choose this option, the **Status** will update to *Skipped*.
@@ -104,7 +104,7 @@ Because the types of data to be verified typically vary by product type, you can
 
 <!-- KFM: I can't find any of settings described here--it seems like all I can do is select a "readiness policy". Does the system still work like this? -->
 
-On the fast tab **Readiness control** of the engineering product category, you can set up the readiness checks. Select **Add system checks** to add system and manual readiness checks. Select **Add existing questionnaire** to add a checklist. Complete the rest of the fields to finish the setup:
+On the FastTab **Readiness control** of the engineering product category, you can set up the readiness checks. Select **Add system checks** to add system and manual readiness checks. Select **Add existing questionnaire** to add a checklist. Complete the rest of the fields to finish the setup:
 
 | **Setting** | Description |
 | --- | --- |
@@ -118,7 +118,7 @@ On the fast tab **Readiness control** of the engineering product category, you c
 | **Automatic approval** | Will check/ complete also set the readiness check to Approved? |
 | **Mandatory** | Is the readiness check mandatory or can it be skipped? |
 
-## Work with product readiness policies
+## Create and manage product readiness policies
 
 Use product readiness policies to manage the readiness checks that apply to a product. <!-- KFM: How can we manage them? Where is this feature? -->
 
