@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Version 1611
 
 Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan** or **Manage inventory** Action Pane &gt; **Order settings** &gt; **Default order settings**.
+You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan**. You can also go to **Manage inventory** &gt; **Order settings** &gt; **Default order settings**.
 
 ## Default order settings
 
@@ -82,11 +82,11 @@ The  default inventory order settings also apply when creating:
 
 When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
 
-Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. Obviously no quantity defaulting or checks on multiple and minimums are performed when creating the line or posting the journal. 
+Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. For this reason, no default quantity or checks on multiple and minimums are performed when creating the line or posting the journal. 
 
 The system always attempts to find a default site and warehouse when an order or journal line is created. The site is not always displayed by default from the order settings. For example, when creating a sales order or a purchase order, the site from the order header is automatically used on the order lines. When creating a BOM line, the site from the BOM header is used. After the site is determined, it will be used to find any site-specific order settings that can then be used as the default for the warehouse. 
 
-The default order type, the purchase, and the inventory lead times can be overridden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
+The default order type, the purchase, and the inventory lead times can be overridden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by Master planning (MRP) when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
 
 ## Default order settings rules
 
@@ -98,17 +98,17 @@ The default order settings rules have ranks. The higher the rank, the more impor
 
 ### Default order settings for released products
 
-For distinct released products, you can define general order settings or site-specific order settings. The general order settings will always have rank zero. If you set up new sales, purchase and inventory order settings together at the same time, we recommend that you use the **Details view** on the **Default order settings** page. To switch to the details view, go to the **Options** Action Pane &gt; **Page options** &gt; **Change view** &gt; **Details view**.
+For distinct released products, you can define general order settings or site-specific order settings. The general order settings will always have rank zero. If you set up new sales, purchase, and inventory order settings at the same time, we recommend that you use the **Details view** on the **Default order settings** page. To switch to the details view, go to **Options** &gt; **Page options** &gt; **Change view** &gt; **Details view**.
 
 ### Site-specific order settings
 
-To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rule as needed and you can assign all the site-specific rules the same rank, to model that they are equally important. 
+To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rules as needed and you can assign all the site-specific rules the same rank, to model that they are equally important. 
 
-If you are in **Details view**, you can't get the overview of the rules created for the item. Toggle the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Supply Chain Management searches for a rule with no site specified. This could help determine a default site on the order line. This site is then used to search for a site-specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
+If you are in **Details view**, you can't get the overview of the rules created for the item. Use the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Supply Chain Management searches for a rule with no site specified. This helps to determine a default site on the order line. This site is then used to search for a site-specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
 ### Specific order settings for product dimension
 
-You can define order settings rules for any active product dimension or combination of active product dimensions. If a product dimension field is left empty, then that the rule applies to all values of the product dimension. 
+You can define order settings rules for any active product dimension or combination of active product dimensions. If  a product dimension field is empty, then that the rule applies to all values of the product dimension. 
 
 Consider the following example product.
 
@@ -153,17 +153,17 @@ Consider the following default order setting rules.
 
 The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, style R2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21.
 
-As a general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
+As general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
 
 The rule with rank zero serves as a safety net. If no other rules are hit, then the default order settings from rule zero will be used. 
 
-Because the rank number is so important, on the **Default order settings** Action Pane, there are functions to move a rule up or down and to renumber the rules, so that they are always in increments of 10. 
+Because the rank number is important, on the **Default order settings** Action Pane, there are functions to move a rule up or down and to renumber the rules, so that they are always in increments of 10. 
 
-The number of rules created for a released product may be many. In order to get a better sense of what each rule is overriding and why it's needed, we recommend using the **Grid view** on the **Default order settings** page. You can enable the grid view by going to the **Options** Action Pane &gt; **Page options** &gt; **Change view** &gt; **Grid view**. The number of columns displayed in the grid could be quite significant, especially for the sales and inventory tabs. To limit the number of columns shown in the grid, groups of columns can be hidden or displayed by using the buttons on the **Default order settings** &gt; **Column display** menu.
+The number of rules created for a released product may be many. In order to get a better understanding of what each rule is overriding and why it's needed, we recommend using the **Grid view** on the **Default order settings** page. You can enable the grid view by going to **Options** &gt; **Page options** &gt; **Change view** &gt; **Grid view**. The number of columns displayed in the grid could be quite significant, especially for the sales and inventory tabs. To limit the number of columns shown in the grid, groups of columns can be hidden or displayed by using the buttons on the **Default order settings** &gt; **Column display** menu.
 
 ### Specific order settings for released product variant
 
-If the rule system for default order settings is too cumbersome, then there is the option of simply defining default order settings for each product variant. The following example shows how this will look for the product and the cases described above.
+If the rule system for default order settings is too cumbersome, then there is the option to define default order settings for each product variant. The following example shows how this will look for the product and the cases described above.
 
 | Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
@@ -181,7 +181,7 @@ The rank in this case doesn't really matter, so you can choose to hide it. This 
 
 You can choose how strict the system should be when validating quantities entered in the **Default order settings** for a product. When you use the new strict option, the **Standard order quantity** must always be a multiple of the specified **Multiple** value for purchase orders, inventory, and sales orders. If you are using strict validation, you won't be able to save default order settings that don't meet this requirement (and an error is shown in the message bar). 
 
-Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each of these FastTabs has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
+Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each FastTab has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
 
 ### Enable this feature
 
