@@ -168,12 +168,12 @@ Before getting started, instruct all users to close Report designer and exit the
 
 
     ```sql
-    ------------------------------------------------------------------------------------------
-    Set service into disabled mode
-    ------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
-    --setup for servicing mode
-    BEGIN TRANSACTION
+--setup for servicing mode
+
+BEGIN TRANSACTION
     IF NOT EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
     BEGIN 
         EXEC ('CREATE SCHEMA Servicing') 
@@ -187,58 +187,70 @@ Before getting started, instruct all users to close Report designer and exit the
 
     IF NOT EXISTS(SELECT NAME FROM SYS.TABLES WHERE Name = 'ServicingLock')
     BEGIN 
-        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime      null)
+        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime null)
     END
 
     IF NOT EXISTS(SELECT 1 FROM [Servicing].[ServicingLock])
     BEGIN 
         INSERT INTO [Servicing].[ServicingLock] (Name, Value) VALUES ('ServicingLockMode', 0)
     END
-    COMMIT TRANSACTION
+	COMMIT TRANSACTION
 
-    --Enable servicing mode
-    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
-    BEGIN		
-       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0		
-       UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
-    END
 
-    --Disable maps
-    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
-    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-    PRINT 'Disable integration tasks'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-    
+	PRINT 'Entering servicing mode'
+	DECLARE @result int;
+	EXEC @result = sp_getapplock @DbPrincipal='public', @Resource='ServicingLock', @LockMode='Exclusive', @LockOwner='Session', @LockTimeout=300000;
+	IF @result < 0 RAISERROR ('Unable to acquire SQL applock. Result: %d', 16, 1, @result);
+
+	BEGIN TRY
+	IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+	BEGIN		
+		   UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0		
+		   UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
+	END
+	PRINT 'Acquired servicing locks'
+
+	--Disable maps
+	DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+	INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+	FROM [Scheduling].[Task] t with(nolock)
+	JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+	JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+	LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+	JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+	WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+	PRINT 'Disable integration tasks'
+	UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
+
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+
+
 	------------------------------
 	PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
 	------------------------------
 
-		IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
+	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
+	BEGIN
+		IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
 		BEGIN
-			IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
-			BEGIN
-				--create table to store indexses
-				-- Indexes of different table can have same index_id,but we need unique index id
-				Create table [Datamart].[AttributeValueIndexesBackUp]
-				(
-					IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
-					IndexName NVARCHAR(255),
-					IsUnique BIT,
-					IndexType NVARCHAR(60),
-					FilterDefinition NVARCHAR(max),
-					KeyColumns NVARCHAR(max),
-					IncludedColumns NVARCHAR(max),
-					IndexRetry INT,
-					IndexStatus NVARCHAR(60),
-					AttributeType INT,
-				)
-			END
+			--create table to store indexses
+			-- Indexes of different table can have same index_id,but we need unique index id
+			Create table [Datamart].[AttributeValueIndexesBackUp]
+			(
+				IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
+				IndexName NVARCHAR(255),
+				IsUnique BIT,
+				IndexType NVARCHAR(60),
+				FilterDefinition NVARCHAR(max),
+				KeyColumns NVARCHAR(max),
+				IncludedColumns NVARCHAR(max),
+				IndexRetry INT,
+				IndexStatus NVARCHAR(60),
+				AttributeType INT,
+			)
+		END
 
 		IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'FactAttributeValue')) 
 		BEGIN
@@ -255,131 +267,125 @@ Before getting started, instruct all users to close Report designer and exit the
 			EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
 			EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
 		END
-	   END
+	End
 
 	------------------------------
 	PRINT 'Drop archive tables'
 	------------------------------
-	
-		DECLARE @stagingTableName nvarchar(max)
-		DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
-		SELECT t.TABLE_NAME as TableName
-		FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
-		WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
-		OPEN dropCursor
+	DECLARE @stagingTableName nvarchar(max)
+	DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
+	SELECT t.TABLE_NAME as TableName
+	FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
+	WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
+	OPEN dropCursor
+	FETCH NEXT FROM dropCursor INTO @stagingTableName
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
 		FETCH NEXT FROM dropCursor INTO @stagingTableName
-		WHILE @@FETCH_STATUS = 0
-		BEGIN
-			EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
-			FETCH NEXT FROM dropCursor INTO @stagingTableName
-		END
-		CLOSE dropCursor
-		DEALLOCATE dropCursor
+	END
+	CLOSE dropCursor
+	DEALLOCATE dropCursor
 
 	------------------------------
 	PRINT 'Dropping tables with dynamic columns'
 	------------------------------
-	
-		DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
-		DROP TABLE IF EXISTS [Datamart].DimensionCombination
-		DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
-		DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
-		DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
-		DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
-		DROP TABLE IF EXISTS [Datamart].FactAttributeValue
-		DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
-		DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
+	DROP TABLE IF EXISTS [Datamart].DimensionCombination
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
+	DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
+	DROP TABLE IF EXISTS [Datamart].FactAttributeValue
+	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
+	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
 
 	------------------------------
 	PRINT 'Begin Truncating tables'
 	------------------------------
-	
-		DECLARE @tablename nvarchar(200)
-		DECLARE @schemaname nvarchar(200)
-		DECLARE clear_tables CURSOR
-		FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
-		PRINT 'remove check constraints'
-		OPEN clear_tables
-		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-		WHILE @@FETCH_STATUS = 0
+	DECLARE @tablename nvarchar(200)
+	DECLARE @schemaname nvarchar(200)
+	DECLARE clear_tables CURSOR
+	FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
+	PRINT 'remove check constraints'
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory'
 		BEGIN
-			IF @tablename <> 'VersionHistory'
-			BEGIN
-				EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
-			END
-			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
 		END
-		CLOSE clear_tables
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
 
 	------------------------------
 	PRINT 'delete data from tables and rebuild indexes'
 	------------------------------
-	
-		OPEN clear_tables
-		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-		WHILE @@FETCH_STATUS = 0
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
 		BEGIN
-			IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
+			IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
+				EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
+				INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
+				WHERE o.[type] = 'V'
+				AND referenced_schema_name = @schemaname
+				AND referenced_entity_name = @tablename))
 			BEGIN
-				IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
-					EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
-					INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
-					WHERE o.[type] = 'V'
-					AND referenced_schema_name = @schemaname
-					AND referenced_entity_name = @tablename))
-				BEGIN
-					PRINT 'deleting from ' + @tablename
-					EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
-				END
-				ELSE
-				BEGIN
-					PRINT 'truncating from ' + @tablename
-					EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
-				END
+				PRINT 'deleting from ' + @tablename
+				EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
 			END
-			EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
-			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+			ELSE
+			BEGIN
+				PRINT 'truncating from ' + @tablename
+				EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
+			END
 		END
-		CLOSE clear_tables
+		EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
 
 	------------------------------
 	PRINT 'reenable check constraints'
 	------------------------------
-
-		OPEN clear_tables
-		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-		WHILE @@FETCH_STATUS = 0
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory'
 		BEGIN
-			IF @tablename <> 'VersionHistory'
-			BEGIN
-				EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
-			END
-			FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
 		END
-		CLOSE clear_tables
-		DEALLOCATE clear_tables
-
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
+	DEALLOCATE clear_tables
 	------------------------------
 	PRINT 'Complete Truncating tables'
 	------------------------------
 
-		-- Rebuild the tables with dynamic columns
-		IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
+	-- Rebuild the tables with dynamic columns
+	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
+		BEGIN
+			EXEC [Datamart].AddDynamicTables
+		END
+	ELSE
+		BEGIN
+			---- Basically a copy of sproc AddDynamicTables
+			IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
 			BEGIN
-				EXEC [Datamart].AddDynamicTables
-			END
-		ELSE
-			BEGIN
-				---- Basically a copy of sproc AddDynamicTables
-				IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
-				BEGIN
-					CREATE TABLE [Datamart].[DimensionCombinationStaging](
-						[Id] [bigint] NOT NULL,
-						[OrganizationId] [int] NULL,
-						[Description] [nvarchar](51) NULL,
-						[SourceKey] [nvarchar](100) NOT NULL,
-						[OrganizationKey] [nvarchar](100) NULL,
-						[FreshnessDate][datetime2] NULL default sysutcdatetime())
+				CREATE TABLE [Datamart].[DimensionCombinationStaging](
+					[Id] [bigint] NOT NULL,
+					[OrganizationId] [int] NULL,
+					[Description] [nvarchar](51) NULL,
+					[SourceKey] [nvarchar](100) NOT NULL,
+					[OrganizationKey] [nvarchar](100) NULL,
+					[FreshnessDate][datetime2] NULL default sysutcdatetime())
 
 				CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
 			END
@@ -550,15 +556,16 @@ Before getting started, instruct all users to close Report designer and exit the
 
 
 
-		-- Rebuild dropped indexes that are dynamic
-		EXEC [Datamart].ConfigureIndexesAndConstraints
-
-		EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
-		END TRY
-		BEGIN CATCH
-			EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
-			;THROW;
-		END CATCH
+	-- Rebuild dropped indexes that are dynamic
+	EXEC [Datamart].ConfigureIndexesAndConstraints
+	
+	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+	END TRY
+	BEGIN CATCH
+	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+	;THROW;
+	END CATCH
+	
 
 2. (Optional) On the MRDB, execute the script below, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
 > [!NOTE]
