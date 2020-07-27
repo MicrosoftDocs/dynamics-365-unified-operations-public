@@ -2,7 +2,7 @@
 # required metadata
 
 title: Packing vs. storage dimensions
-description: Thsi topic illustrates the differences between the packing and storage dimensions
+description: This topic illustrates the differences between the packing and storage dimensions
 author: mirzaab
 manager: tfehr
 ms.date: 07/21/2020
