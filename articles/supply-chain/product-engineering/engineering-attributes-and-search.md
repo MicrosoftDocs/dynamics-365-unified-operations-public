@@ -68,7 +68,7 @@ To view, create, or edit an engineering attribute:
     - **Help text** - Enter help text that will be displayed as a tool tip for this attribute. <!-- KFM: Correct? -->
     - **Default value** - Enter or select a default value for the attribute. The options presented here will depend on the **Attribute type** you selected.
     - **Currency** - If the **Attribute type** you selected is a currency, then select the currency in which this attribute will accept and display values.
-1. If the **Attribute type** you selected is an integer or decimal, then the **Range** FastType is shown. Make the following settings here as needed:
+1. If the **Attribute type** you selected is an integer or decimal, then the **Range** FastTab is shown. Make the following settings here as needed:
     - **Tolerance action** - Choose how the system should respond when a user enters a value outside of the range specified here. Choose *Warning* to display a warning but allow the user to save the value. Choose *Not allowed* to show a warning and also disallow saving until the user corrects the value. <!-- KFM: Correct? -->
     - **Minimum** - Enter the minimum recommended or accepted value.
     - **Maximum** -  Enter the maximum recommended or accepted value. <!-- KFM: Set to zero to disable? -->
