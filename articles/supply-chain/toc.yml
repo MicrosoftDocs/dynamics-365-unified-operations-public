@@ -2719,7 +2719,7 @@
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
-          - name: Inventory journal
+          - name: Inventory journals
             href: inventory/inventory-journals.md
           - name: Inventory location
             href: inventory/inventory-locations.md
