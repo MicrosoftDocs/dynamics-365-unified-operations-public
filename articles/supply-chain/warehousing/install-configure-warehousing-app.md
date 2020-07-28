@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install and connect the warehousing app
-description: This topic explains how to install the warehousing app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+title: Install and connect the warehouse app
+description: This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 05/25/2020
@@ -30,39 +30,39 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Install and connect the warehousing app
+# Install and connect the warehouse app
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This topic describes how to configure warehousing for cloud deployments. If you're looking for information about how to configure warehousing for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
-The warehousing app is available from Google Play Store and Microsoft Store. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
+The warehouse app is available from Google Play Store and Microsoft Store. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 
-This topic explains how to install the warehousing app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
 ## System requirements
 
-The warehousing app is available for both Windows and Android operating systems. To use the latest version of the app, you must have one of the following operating systems installed on your mobile devices:
+The warehouse app is available for both Windows and Android operating systems. To use the latest version of the app, you must have one of the following operating systems installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) Fall creators update 1709 (build 10.0.16299) or later
 - Android 4.4 or later
 
 > [!NOTE]
-> If you must support older Windows devices that can't run the latest version of Windows, you can still download version 1.6.3.0 of the warehousing app from Microsoft Store. That version will run on Windows 10 (UWP) November Update 1511 (build 10.0.10586) or later. However, be aware that this version of the warehousing app doesn't support mass deployment of connection settings. Therefore, you must [manually configure the connection](#config-manually) on each device that runs this version of the app.
+> If you must support older Windows devices that can't run the latest version of Windows, you can still download version 1.6.3.0 of the warehouse app from Microsoft Store. That version will run on Windows 10 (UWP) November Update 1511 (build 10.0.10586) or later. However, be aware that this version of the warehouse app doesn't support mass deployment of connection settings. Therefore, you must [manually configure the connection](#config-manually) on each device that runs this version of the app.
 
-## Get the warehousing app
+## Get the warehouse app
 
 Use one of the following links to download the app:
 
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing on Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, in version 1.7.0.0 and later of the warehousing app, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, in version 1.7.0.0 and later of the warehouse app, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
-To enable the warehousing app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure Active Directory (Azure AD). The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
+To enable the warehouse app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure Active Directory (Azure AD). The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
 
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
@@ -86,7 +86,7 @@ To enable the warehousing app to interact with a specific Supply Chain Managemen
 
 1. In the **Manage** list, select **Certificate & secrets**. Then select one of the following buttons, depending on how you want to configure the app for authentication. (For more information, see the [Authenticate by using a certificate or client secret](#authenticate) section later in this topic.)
 
-    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the warehousing app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You will need this value when you configure the certificate on Windows devices.
+    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the warehouse app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You will need this value when you configure the certificate on Windows devices.
     - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
     ![Certificate & secrets](media/app-connect-azure-authentication.png "Certificate & secrets")
@@ -103,7 +103,7 @@ For more information about how to set up web service applications in Azure AD, s
 
 To enable Supply Chain Management to use your Azure AD application, follow these steps.
 
-1. Create a user that corresponds to the user credentials for the warehousing app:
+1. Create a user that corresponds to the user credentials for the warehouse app:
 
     1. In Supply Chain Management, go to **System administration \> Users \> Users**.
     1. Create a user.
@@ -111,7 +111,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
     ![Assign the warehousing mobile device user](media/app-connect-app-users.png "Assign the warehousing mobile device user")
 
-1. Associate your Azure AD application with the warehousing app user:
+1. Associate your Azure AD application with the warehouse app user:
 
     1. Go to **System administration \> Setup \> Azure Active Directory applications**.
     1. Create a line.
@@ -123,9 +123,9 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
 Authentication with Azure AD provides a secure way of connecting a mobile device to Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you will import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code, as described later in this topic.
 
-Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the warehousing app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
+Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the warehouse app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
 
-You must make the certificate available locally on each device where you run the warehousing app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Use certificates for authentication in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+You must make the certificate available locally on each device where you run the warehouse app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Use certificates for authentication in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## Configure the application by importing connection settings
 
@@ -181,7 +181,7 @@ You can either save the information as a JSON file or generate a QR code that ha
 
 ### Save the connection settings file on each device
 
-Typically, you will use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the warehousing app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
+Typically, you will use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the warehouse app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
 
 Every time that the app is started, it reimports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
 
@@ -201,7 +201,7 @@ Usually, the paths are automatically created after the first run of the app. How
 
 Follow these steps to import connection settings from a file or a QR code.
 
-1. Open the warehousing app on your mobile device.
+1. Open the warehouse app on your mobile device.
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 
@@ -230,7 +230,7 @@ Follow these steps to import connection settings from a file or a QR code.
 
 You can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
 
-1. Open the warehousing app on your mobile device.
+1. Open the warehouse app on your mobile device.
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 

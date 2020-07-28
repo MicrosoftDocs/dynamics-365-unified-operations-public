@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -128,6 +128,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+
+### Customer portal
+- [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)
 
 ### Help system
 

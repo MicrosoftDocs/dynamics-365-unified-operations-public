@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -117,6 +117,91 @@ Every page defines a root (**core-root** in the example above) that controls the
 The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
 
 The preceding example can be accessed by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
+
+## Rendering context mocks
+
+The **renderingContext** node provides additional mock data that modules can access via the **this.props.context.request** object. This mock data can include the bootstrap grid breakpoints, the locale, and the user context. For more information, see [Request properties object](request-properties-object.md).
+
+### Simulate the signed-in state
+
+Some modules might have logic that must check the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, the user object can be mocked by using the **userContext** node, as shown in the following example.
+
+```json
+{
+    "exception": null,
+    "pageRoot": {
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "product-feature",
+                                "config": {
+                                    "imageAlignment": "left",
+                                    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                    "productImage": {
+                                        "src" : "https://bit.ly/33cMGxr",
+                                        "altText" : "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+                                    },
+                                    "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "renderingContext": {
+        "gridSettings": {
+            "xs": {
+                "w":767
+            },
+            "sm": {
+                "w":991
+            },
+            "md": {
+                "w":1199
+            },
+            "lg": {
+                "w":1599
+            },
+            "xl": {
+                "w":1600
+            }
+        },        
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
+        },
+        "locale": "en-us",
+        "userContext": {
+            "token": "<TOKEN>",
+            "isAuthenticated": true,
+            "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+            "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+            "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+            "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+            "signinName": "<User Name>",
+            "firstName": "<User First Name>",
+            "lastName": "<User Last Name>",
+            "tenantId": "",
+            "customerAccountNumber": "<User Account Number(HQ)>",
+            "name": "<User Name>",
+            "emailAddress": "<User Email Address>"
+        },
+    },
+    "statusCode": 200
+}
+```
+
+If you must simulate real data or the token that is returned from Commerce Server after a user signs in, sign in to your production e-Commerce site, and use the F12 browser tools to copy the data. The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. You can then update the **userContext** properties in the preceding example as required. Those properties include **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**.
 
 ## Additional resources
 

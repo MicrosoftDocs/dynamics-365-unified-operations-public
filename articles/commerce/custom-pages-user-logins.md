@@ -5,7 +5,7 @@ title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Set up custom pages for user logins
+# Set up custom pages for user sign-ins
 
 
 [!include [banner](includes/banner.md)]
@@ -203,8 +203,6 @@ After you update the global.json file and publish your changes, the new link tex
 [Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-
-[Set up an online store channel](online-stores.md)
 
 [Create an e-Commerce site](create-ecommerce-site.md)
 

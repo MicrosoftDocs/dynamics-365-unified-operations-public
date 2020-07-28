@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -90,7 +90,7 @@ If the Exchange provider is used, then the user account associated with the batc
 
 ## Administrator: User email
 
-The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
+The default **send from** address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). Users can override this **send from** default if needed using the **Sender email** field on the **Options** page.
 
 ## User: Email provider selection section on the Options page
 
@@ -99,7 +99,7 @@ The **Options** page can be opened via **Settings &gt; User options**. The **Ema
 | Field             | Description |
 |-------------------|-------------|
 | Email provider ID | Allows the user to select the email provider that should be used when sending an email. Selecting an option here is the equivalent of selecting **Do not ask again** in the **How would you like to send email** dialog box. Selecting the blank option **Prompt for which email provider to use** will cause the **How would you like to send email** dialog box to display when an email is going to be sent. |
-| Email             | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
+| Sender email    | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
 
 ## User (optional): How would you like to send email dialog box
 
@@ -108,7 +108,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. On-premises Exchange servers are currently not supported for the **Exchange** mail provider. |
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
@@ -203,8 +203,8 @@ Workflow email configuration is a collection of related settings that work in co
     1. Go to **Settings** \> **User options**.
     2. Go to the **Account** tab.
 
-       1. Set the email provider ID (for example, SMTP).
-       2. Optionally, set the email address for the provider if it was not the default from the user setup.
+       1. Set the **Email provider ID** (for example, SMTP).
+       2. Optionally, set a **Sender email** override if the default **send from** address should not be used for the current user.
 
     3. Navigate to the **Workflow** tab. Set the option to send notifications in email to **Yes**.
 

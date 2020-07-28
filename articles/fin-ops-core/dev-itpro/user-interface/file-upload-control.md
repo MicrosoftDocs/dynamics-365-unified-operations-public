@@ -5,7 +5,7 @@ title: File upload control
 description: This topic provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -77,14 +77,12 @@ The file upload control accepts the file and upload strategy in the client, and 
 ## Scanning uploaded files for viruses and malicious code
 Before you upload a file into the system, you might want to scan it for viruses or malicious code. Although Finance and Operations apps don't provide this capability out of the box, an extension point has been added in version 10.0.12, so that customers can now integrate file scanning software of their choice into the file upload process. Similar extension points have been added so that attachments can be scanned. For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
 
-> [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate. This delegate applies to any file upload scenario where the **Upload strategy class** has been specialized. The upload process will fail if the scanning service determines that the file is malicious.    
 
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the handler. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
 
+```xpp
     public final class ScanDocuments
     {
 
@@ -106,3 +104,4 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
             return true;
         }
     }
+ ```

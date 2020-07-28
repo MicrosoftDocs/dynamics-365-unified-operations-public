@@ -5,7 +5,7 @@ title: Add support for a content delivery network (CDN)
 description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -148,8 +148,6 @@ Your CDN should now be correctly configured so that it can be used with your Com
 [Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-
-[Set up an online store channel](online-stores.md)
 
 [Create an e-Commerce site](create-ecommerce-site.md)
 

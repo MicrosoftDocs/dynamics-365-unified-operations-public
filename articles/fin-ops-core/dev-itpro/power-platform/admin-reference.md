@@ -5,7 +5,7 @@ title: Finance and Operations and Common Data Service admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -29,15 +29,14 @@ ms.dyn365.ops.version: 10.0.12
 
 # Finance and Operations and Common Data Service admin reference
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
-The Common Data Service solution for Finance and Operations virtual entities must be downloaded from the [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
+The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
@@ -49,12 +48,12 @@ Ensure the following solutions are installed in Common Data Service. These solut
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
-Alternatively, you can also import the solutions package directly as a single unit in Common Data Service by using the [PackageDeployer
-tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
-
 ## Authentication and authorization
 
 After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
+
+> [!IMPORTANT]
+> The AAD application must be created on the same tenant as Finance and Operations.
 
 1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
 

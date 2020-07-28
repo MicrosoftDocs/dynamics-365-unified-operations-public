@@ -5,7 +5,7 @@ title: Enable change tracking for entities
 description: Use change tracking to enable incremental export of data from Finance and Operations.
 author: Milindav2
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,7 +52,7 @@ You can enable change tracking when you publish one or more entities to a data s
     |----------------------|-------------------------|
     | Enable primary table | Changes that are made to any fields in the primary table trigger a change in entity. Changes that are made to fields in secondary tables don't trigger a change in entity. |
     | Enable entire entity | Changes that are made to any fields in any table in the entity trigger a change in entity. |
-    | Enable Custom query  | Select a set of custom fields from any tables that must trigger a change in entity. |
+    | Enable Custom query  | Uses a custom query that identifies the tables on which changes must be tracked. The custom query is defined in the entity. |
 
     > [!NOTE]
     > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.

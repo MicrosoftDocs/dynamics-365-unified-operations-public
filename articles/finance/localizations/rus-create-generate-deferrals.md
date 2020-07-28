@@ -4,7 +4,7 @@ title: Create or generate deferrals (Russia)
 description: This topic explains how to manually create deferrals and how to generate them by using a periodic task.
 author: anasyash
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,8 +83,6 @@ To automatically generate deferrals, you must set up the sequences of calculatio
 
     | Field             | Description                                                                       |
     |-------------------|-----------------------------------------------------------------------------------|
-    | Start date        | The start date of the deferral calculation period.                                |
-    | End date          | The end date of the deferral calculation period.                                  |
     | Sequence          | The sequence number that is specified on the **Standard expenses sequence** page. |
     | Description       | The sequence name.                                                                |
     | Channel           | The deferral output channel for the selected sequence.                            |
@@ -102,7 +100,7 @@ To automatically generate deferrals, you must set up the sequences of calculatio
 
     1. Select the line that includes the counter that you set up, and then, on the Action Pane, select **Calculate all** or **Calculate marked**.
     2. In the **Start date** and **End date** fields, enter the date range for the deferral calculation period.
-    3. Select the **Overwrite** check box to overwrite existing deferrals for the specified period that don't contain write-off vouchers or disposal vouchers.
+    3. Select the **Overwrite** check box to overwrite existing deferrals for the specified period that don't contain write-off vouchers or disposal vouchers. Only deferrals on which there was no write off or disposal operations will be recalculated.
     4. Select the **Preview** check box to view or modify the deferrals before they are created.
 
         When this check box is selected, a page that shows deferrals information appears before deferrals are created. Therefore, you can change the parameters for the deferrals that are created. When the check box is cleared, deferrals are automatically generated based on the parameters that were entered on the **Deferrals creating** page.
@@ -111,3 +109,9 @@ To automatically generate deferrals, you must set up the sequences of calculatio
     6. Go to **General ledger** \> **Deferrals** \> **Deferrals** to view the deferrals that are generated. To view the transaction details on the **Deferrals transactions** page, on the Action Pane, select **Deferrals models**, and then select **Transactions**.
 
 When you generate deferrals for vendor invoices by using the periodic task, deferral transaction vouchers of **Receipt** type are created.
+
+## View created deferrals
+
+To view manually and automatically created deferrals, go to **General ledger > Deferrals > Deferrals**.
+
+![](media/6_Deferrals.png)

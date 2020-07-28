@@ -67,7 +67,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
-- [Modern POS (MPOS) and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
 - [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
@@ -128,6 +128,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 - [Show custom notifications in POS](extend-pos-notification.md)
+- [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
+- [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 
 ## eCommerce
 -   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)

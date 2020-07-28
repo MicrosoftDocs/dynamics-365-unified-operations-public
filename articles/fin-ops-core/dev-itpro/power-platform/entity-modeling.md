@@ -5,7 +5,7 @@ title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,10 +30,11 @@ ms.dyn365.ops.version: 10.0.12
 # Entity modeling
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+
+> The public entity name that is exposed in Common Data Service metadata for the Finance and Operations virtual entity uses the physical name of the Finance and Operations entity. This could be different from the public name of the entity as exposed by the OData metadata in Finance and Operations apps.
 
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for Finance and Operations.
 
@@ -103,6 +104,9 @@ Because the primary field in Common Data Service is expected to have only one fi
 
 ## Relations
 
+> [!IMPORTANT]
+> A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
+
 Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 
 For example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
@@ -149,7 +153,7 @@ The next step is to define this relationship in X++. The following example shows
 The field mapping indicates which field on the virtual entity maps to the field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
 
 ```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
     public static Map syntheticAccountRelationship()
     {
         Map fieldMapping = new Map(Types::String, Types::String);
@@ -185,36 +189,6 @@ Attachments in Finance and Operations entities are supported on a per-entity bas
 Entities of this type will have relations with the corresponding attachments entity in Finance and Operations. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, Finance and Operations entities that have implemented attachments functionality will also make attachments available by using virtual entities. Finance and Operations entities that don't support attachments also won't support attachments when they are virtualized in Common Data Service.
 
 Note that Finance and Operations virtual entities support only the reading of attachments. They don't currently support the creation, update, or deletion of attachments by using virtual entities.
-
-## Default views
-
-When an entity (either native or virtual) is created in Common Data Service, five default views are also created for it:
-
-- Default public view
-- Quick find view
-- Advanced find view
-- Associated view
-- Lookup view
-
-Common Data Service adds the primary field of the entity to all these views. Makers can add additional fields to these views as they require.
-
-By default, Finance and Operations entities have five field groups:
-
-- AutoReport
-- AutoLookup
-- AutoIdentification
-- AutoSummary
-- AutoBrowse
-
-The field groups are used to fill in additional fields for the Finance and Operations virtual entities in the default views in Common Data Service. The following table shows the mapping of the field groups to the default views.
-
-| Field group        | Default view        |
-|--------------------|---------------------|
-| AutoReport         | Default public view |
-| AutoLookup         | Lookup view         |
-| AutoIdentification | Quick find view     |
-| AutoSummary        | Associated view     |
-| AutoBrowse         | Advanced find view  |
 
 ## OData actions
 

@@ -4,7 +4,7 @@
 title: Schema formats for IoT Hub messages
 description: This topic describes how you should design your message schema for use in IoT Intelligence.
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: 

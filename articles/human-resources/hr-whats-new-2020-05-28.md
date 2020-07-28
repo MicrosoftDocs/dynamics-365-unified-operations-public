@@ -84,7 +84,10 @@ The database logging feature allows you to determine which table and fields shou
 
 ## Buy and sell leave (in preview June 1)
 
-Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature provides a more automated way to manage policies and requests for the HR department, and it helps eliminate mistakes while streamlining the leave management process.
+Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature provides a more automated way to manage policies and requests for the HR department, and it helps eliminate mistakes while streamlining the leave management process. For more information, see:
+
+- [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
 
 ## Data management framework (DMF) entities for Benefits management
  
@@ -105,3 +108,10 @@ In this release, HR can create a rule to suspend leave accruals for employees wi
 ## DMF entity available for accrual suspensions (June 1)
 
 A DMF entity is now available for accrual suspensions.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

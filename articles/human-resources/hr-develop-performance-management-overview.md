@@ -5,7 +5,7 @@ title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -151,7 +151,7 @@ The measurements page lets you create standard measurements that will be used on
 
 ### Performance journal source types
 
-Performance journal source types describe where the performance journals come from. You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee. You can also enable or disable the Send Praise feature by changing the Praise source type. You cannot disable the other source types at this time.
+Performance journal source types describe where the performance journals come from. You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee. You can't disable source types at this time.
 
 ### Review types
 

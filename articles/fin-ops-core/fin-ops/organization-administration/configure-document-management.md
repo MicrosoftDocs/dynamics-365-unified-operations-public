@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -111,9 +111,9 @@ The default cloud-based WOPI server in Finance + Operations can't read the attac
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
-### Document preview (WOPI) will not work in environments with IP whitelisting enabled
+### Document preview (WOPI) will not work in environments with an IP safe list enabled
 
-Document preview (WOPI) will not work in environments with IP whitelisting enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
+Document preview (WOPI) will not work in environments with an IP safe list enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
 
 ## Other configuration
 
@@ -130,10 +130,6 @@ Document management appears to users as the **Attach** button at the top of most
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
 In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
-
-> [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 
 ## Attachment recovery
 
@@ -169,7 +165,7 @@ The **Docu** class exposes the following two delegates. Handlers can be implemen
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
 
-
+```xpp
     public final class ScanDocuments
     {
 
@@ -210,6 +206,7 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
         }
 
     }
+```
 
 ## Frequently asked questions
 

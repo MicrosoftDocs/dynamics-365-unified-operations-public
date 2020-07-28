@@ -104,7 +104,7 @@ At startup, the POS application automatically selects the closest layout size th
 > [!TIP]
 > You can learn the layout size that is required for a POS screen by viewing the resolution in the app. Start the POS, and go to **Settings \> Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.
 
-![POS layout sizes](../commerce/media/POS-Session-Information.png)
+![POS session information page showing the currently loaded screen layout, layout size, and resolution of the app window](../commerce/media/POS-Session-Information.png)
 
 ### Button grids
 
