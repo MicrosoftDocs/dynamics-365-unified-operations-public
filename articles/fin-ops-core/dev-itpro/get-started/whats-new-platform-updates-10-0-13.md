@@ -42,7 +42,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  Visual Studio tools require .NET 4.7.2 runtime – For more information, see 
+-  Visual Studio tools require .NET 4.7.2 runtime<br>For more information, see 
 [Action Required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 -  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
 [Article name](URL to the docs.microsoft.com article that has more details about the feature). 
