@@ -45,7 +45,8 @@ In Customer Engagement app user interface, there are 3 ways to auto-populate the
 ![Autopopulate Company name 3](media/autopopulate-company-name-3.png)
 
 
-As a system configurator or administrator, if you want to autopopulate company data on a custom form, then you can achieve it using [Events in forms](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) and taking a reference of "msdyn_/DefaultCompany.js" javascript for setting the following events. 
+As a system configurator or administrator, if you want to autopopulate company data on a custom form, then you can achieve it using [Events in forms](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) and taking a reference of "msdyn_/DefaultCompany.js" javascript for setting the following events. You can use any out of the box form as an example like "Account" form .
 1) OnLoad : defaultCompany
 2) OnChange of Company field : updateDefaultCompany
-You can use any out of the box form as an example like "Account" form .
+
+
