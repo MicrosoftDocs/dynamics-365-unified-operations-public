@@ -48,17 +48,15 @@ The following features are included in this release. The feature titles link to 
 
 - [Confirm outbound shipments from batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - For more information, see [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)
+- [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - For more information, see [Delegate work items in a workflow](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md)
 
-- [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)
-
-- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enterprise-scale--inventory-performance-improvements-archiving)
+- [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md)
 
 - [Order-committed reservation based on license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
 - [Outbound workload visualization](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
-- [Work pick line overview](#)
+- [Work pick line overview](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
 - [Work policy enhancements for inbound work](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Work policy enhancements for inbound work](#).
 
@@ -72,11 +70,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of 10.0.13, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746). <!-- KFM: Get new link -->
 
-### Dynamics 365: 2020 release wave 1 plan
+### Dynamics 365: 2020 release wave 2 plan
 
-Wondering about upcoming and recently released capabilities in any of our business apps or platform? <!-- KFM: Change to wave 2? -->
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 
