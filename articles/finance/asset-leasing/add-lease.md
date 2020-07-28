@@ -118,8 +118,26 @@ Fields that are required are set off with red borders. The following table descr
 |     Payment Amount                         	|     Enter the payment amount to be inserted in the expense   schedule. The application will insert this amount in the expense schedule   based on the start date, end date, and payment frequency.    	|
 |     Annuity Type                           	|     Select the annuity type. This field is to determine if the   lease is due at the beginning of the payment period or at the end of the   period used to discount the expense payments.             	|
 |     Offset Account Type                    	|     Select the type of account to be credited as a result of   the expense payments.                                                                                                                  	|
-
-
+|     Offset Account                 	|     Select the specific account associated with the type   selected to be credited as a result of the expense payments.                                                                                       	|
+|     Executory Cost Details tab     	|                                                                                                                                                                                                               	|
+|     Cost of Each Incidental        	|     Enter the cost of each incidental as stated in the   insurance policy.                                                                                                                                    	|
+|     Max Coverage                   	|     Enter the amount of maximum coverage by the insurance   policy.                                                                                                                                           	|
+|     Minimum Limits of Liability    	|     Enter the amount of minimum insurance coverage required in   the lease contract.                                                                                                                          	|
+|     Percent Share of CAM           	|     Enter the percent of all common area maintenance for which   the company is responsible. Note: this field is for record keeping purposes   and will not affect the calculation of any executory costs.    	|
+|     Mileage Limit                  	|     Enter the maximum mileage acceptable.                                                                                                                                                                     	|
+|     Cost Per Mile Over Limit       	|     Enter the cost per mile the lessee is responsible for   paying over the mileage limit.                                                                                                                    	|
+|     Current Mileage                	|     Enter the current mileage usage of the vehicle.                                                                                                                                                           	|
+|     Overuse Fee                    	|     Enter the total overuse fee the company expects to incur.                                                                                                                                                 	|
+|     Holdover Fee                      	|     Enter the holdover fee contained in the lease.                                         	|
+|     Security Deposit                  	|     Enter the amount of the security deposit.                                              	|
+|     Late Payment                      	|     Enter the amount of late charge contained in the lease.                                	|
+|     Security Deposit Refundable       	|     Is the security deposit refundable at the end of the   lease?                          	|
+|     Security Deposit Reminder Date    	|     Enter the security deposit reminder date.                                              	|
+|     Last Maintenance                  	|     Enter the date on which the last maintenance visit for the   leased asset occurred.    	|
+|     Next Maintenance                  	|     Enter the date of the next scheduled maintenance visit for   the leased asset.         	|
+|     Maintenance Notes                 	|     Enter any appropriate notes regarding maintenance of the   leased asset.               	|
+|     Contract Detail Tab               	|                                                                                            	|
+|     Bank Contract Number              	|     Enter the contract number found on the lease, if   applicable.                         	|
 
 > [!Note]
 > The financial dimensions may change based upon any custom financial dimensions.
