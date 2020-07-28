@@ -36,16 +36,16 @@ ms.search.validFrom: 2020-07-27
 
 In Customer Engagement app user interface, there are 3 ways to auto-populate the company name.
 1) As a system administrator, you can set the default company for a user from  Advanced Settings > System > Security > Users. Open the User form, under "Organization Information" section, set "Company to default on Form" to required company.
-<image>
+![Autopopulate Company name 1](media/autopopulate-company-name-1.png)
 
 2) 	In case the user has "Write" permission on "SystemUser" entity minimum at "Business Unit" level, then he can change the default company on any form by selecting a company from the Company lookup drop down.
-<image>
+![Autopopulate Company name 2](media/autopopulate-company-name-2.png)
 
 3) In case the user has write access to more than one company data, then by choosing a record that belongs to different company changes his default company to the chosen one.
-<image>
+![Autopopulate Company name 3](media/autopopulate-company-name-3.png)
 
 
-As a system configurator or administrator, if you want to autopopulate company data on a custom form, then you can achieve it using Events in forms and taking a reference of "msdyn_/DefaultCompany.js" javascript for setting the following events. 
+As a system configurator or administrator, if you want to autopopulate company data on a custom form, then you can achieve it using [Events in forms](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) and taking a reference of "msdyn_/DefaultCompany.js" javascript for setting the following events. 
 1) OnLoad : defaultCompany
 2) OnChange of Company field : updateDefaultCompany
-<hper link> https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/events-forms-grids
+You can use any out of the box form as an example like "Account" form .
