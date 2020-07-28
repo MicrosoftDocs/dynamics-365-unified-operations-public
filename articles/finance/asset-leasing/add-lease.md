@@ -138,6 +138,17 @@ Fields that are required are set off with red borders. The following table descr
 |     Maintenance Notes                 	|     Enter any appropriate notes regarding maintenance of the   leased asset.               	|
 |     Contract Detail Tab               	|                                                                                            	|
 |     Bank Contract Number              	|     Enter the contract number found on the lease, if   applicable.                         	|
+|     Financing Amount            	|     Enter the amount of financed in the lease. This number   will not affect ROU asset or liability calculations.          	|
+|     Lessor Reference Number     	|     Enter the unique ID of the lease agreement known to the   lessor.                                                      	|
+|     Lessor Contact Name         	|     Enter the name of the employee from the lessor who is   responsible for maintaining the lease.                         	|
+|     Financial Dimensions Tab    	|                                                                                                                            	|
+|     BusinessUnit                	|     Select the business unit associated with the ROU Asset,   liability, payment, and interest postings for this lease.    	|
+|     CostCenter                  	|     Select the cost center associated with the ROU Asset,   liability, payment, and interest postings for this lease.      	|
+|     Department                  	|     Select the department associated with the ROU Asset,   liability, payment, and interest postings for this lease.       	|
+|     ItemGroup                   	|     Select the item group associated with the ROU Asset,   liability, payment, and interest postings for this lease.       	|
+|     Project                     	|     Select the project associated with the ROU Asset,   liability, payment, and interest postings for this lease.          	|
+
+
 
 > [!Note]
 > The financial dimensions may change based upon any custom financial dimensions.
