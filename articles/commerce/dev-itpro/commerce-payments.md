@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Omni-channel Commerce order payments
-description: This topic describes the Omni-channel Commerce order payments feature.
+title: Omni-channel order payments
+description: This topic describes Omni-channel order payments in Dynamics 365 Commerce.
 author: rubendel
-manager: Tonya.Fehr
-ms.date: 05/13/2019
+manager: annbe
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
@@ -30,38 +30,34 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Omni-channel Commerce order payments
+# Omni-channel order payments
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Omni-channel Commerce order payments feature that enables editing of e-Commerce and POS order payments from the back office.
-
-## Availability
-
-This feature is available starting with the 10.0.13 monthly update.
+This topic describes the omni-channel order payments in Dynamics 365 Commerce. With this functionality, you can edit e-commerce and point of sale (POS) order payments from Commerce headquarters (HQ).
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Commerce payment | A payment associated with a customer order generated at the point of sale or in the e-commerce storefront after this feature has been enabled. |
-| Order completion | Order completinn is the business logic in the Call Center that ensures payments have been collector before the order is submitted. The **Enable order completion** setting in call center parameters is used to enable this business logic in Call Center. For more details, visit the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
-| Call Center order | An order created in the back office by a Call Center user. |
-| AR sales orders | Orders created through Accounts Receivable in the back office by a non-call center user. Payments for these orders may not be edited through call center order completion. |
+| Commerce payment | A payment associated with a customer order generated at the POS or in the e-commerce storefront. |
+| Order completion | Order completion is the business logic in the call center that ensures payments have been collected before the order is submitted. The **Enable order completion** setting in the call center parameters is used to enable this business logic. For more details, read the [Enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) section of the [Set up call center channels](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options) topic. 
+| Call center order | An order created in Commerce headquarters (HQ) by a call center user. |
+| AR sales orders | Orders created through accounts receivable in Commerce headquarters (HQ) by a non-call center user. Payments for these orders may not be edited through call center order completion. |
 
 ## Overview
 
-Dynamics 365 Commerce consists of 3 main channels: Point of Sale, e-Commerce, and Call Center. Until now, management of payment lines for orders created in those channels has not been uniform. For example, when creating and editing orders the Call Center there is an order completion flow that ensures payments are designated for those orders prior to fulfillment. Alternatively, POS and e-commerce orders have not supported Call Center order completion. The primary way to observe this lack of parity is by observing orders on the **Customer service** form in the back office and observing which orders have an active link to the **Payments** form. 
+Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call center. In Commerce versions 10.0.12 and earlier, the management of payment lines for orders created in each channel has not been uniform. For example, when creating and editing orders the call center, there is an order completion flow that ensures payments are designated for those orders prior to fulfillment. Alternatively, POS and e-commerce orders have not supported call center order completion. To illustrate the lack of parity, go to the **Customer service** page in Commerce headquarters (HQ) and note which orders have an active link to the **Payments** form. 
 
-Order created in Call Center:
+Order created in call center:
 
 ![Call center order with "Payments" link active](../dev-itpro/media/COP_CC_PAY.png)
 
-Order created in the point of sale:
+Order created in POS:
 
 ![POS order with disabled "Payments" link](../dev-itpro/media/COP_NONCC_PAY.png)
 
-This feature enables access to the payments form for orders created in e-commerce and the point of sale. In addition, with this feature enabled, those orders can be edited using the order completion function that was previously only available to Call Center orders.  
+In Commerce versions 10.0.13 and later, you can access the payments page for orders created in e-commerce and the POS, and with omni-channel order payments enabled, the orders can be edited using the order completion function that was previously only available for call center orders.  
 
 Order completion:
 
@@ -69,34 +65,32 @@ Order completion:
 
 ## Prerequisites
 
-To enable Commerce payments, you first must enable several other features and configurations. The features should be enabled as a best practice because they address functional gaps related to orders. After the Commerce payments feature has been enabled, some these features may be disabled, but that is discouraged because all testing for OCOP has been done with these features enabled.
+To enable Commerce payments, you must first enable several other features and configurations. The features should be enabled as a best practice because they address functional gaps related to orders. After the Commerce payments feature itself has been enabled, you can disable some of the other functionality, but that is not recommended. 
 
-Prequisite configurations noted below are required for Commerce payments to function properly and may not be disabled or reverted while the feature is enabled. 
-
-### Prerequisite features
+The configurations listed below are required for Commerce payments to function properly. 
 
 | Feature name | Description | May be disabled later |
 | --- | --- | --- |
-| Omni-channel payments | Enables omni-channel payment scenarios such as buy online, pick up in store. For more information, visit the [Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments) topic. | No | 
-| Unified payment posting journal defaults for Commerce | When this feature is enabled, business logic will be changed in regards to how customer payment and customer refund payment journals are created for orders created through Call Center, POS or e-Commerce channels. For more information, visit the [Unified payment posting journal defaults for Commerce](TBD) topic. | Yes |
-| Duplicate payment protection on invoicing | This feature will enable duplicate payment protection for invoicing scenarios. It may affect customizations in invoicing scenarios. If your organization has customizations in this feature area, please ensure these customizations are refactored prior to enabling this option on production environments. | Yes |
-| Enable refunds over multiple captures | This feature addresses an issue with performing multiple linked refunds against an order. | Yes |
+| Omni-channel payments | Enables omni-channel payment scenarios such as buy online, pick up in store. For more information, refer to the [Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments) topic. | No | 
+| Unified payment posting journal defaults for Commerce | When this feature is enabled, business logic is changed in regards to how customer payment and customer refund payment journals are created for orders created through call center, POS, or e-commerce channels.  | Yes |
+| Duplicate payment protection on invoicing | Enables duplicate payment protection for invoicing scenarios. Commerce payments functionality may affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that the customizations are refactored before you enable Commerce payments functionality on production environments. | Yes |
+| Enable refunds over multiple captures | This functionality improves performing multiple linked refunds against an order. | Yes |
 
 ![Prerequisite feature notice](../dev-itpro/media/COP_PRE.png)
 
-### Prerequisite configurations
+### Configure prerequisites
 
-#### Map payment methods to operations to payment methods
+#### Map payment methods to operations
 
-This feature requires that payment methods in all channels are mapped to a corresponding operation. This was not previously required, but is neccesary to support management of order payments in the back office. When the feature is enabled, warnings will be issued in the feature management for each payment method which does not have an equivalent operation mapping. Payment methods should be mapped to operations prior to enabling the feature to avoid receiving these errors at the time of feature enablement.
+You must map payment methods in all channels to a corresponding operation, so that the management of order payments is supported in Commerce headquarters (HQ). You should map payment methods before you enable Commerce payments, otherwise you'll receive warnings for each payment method that doesn't have an equivalent operation mapping. 
 
-Example from call center:
+The imnage below illustrates a payment to operation mapping in call center.
 
 ![Operation mapped to payment method in call center](../dev-itpro/media/COP_OPERATION.png)
 
-#### Call center is required
+#### Configure call center
 
-At least one Call Center channel must be configured in order to manage POS and e-commerce order payments through the back office. For more details on creating a call center, visit the [Set up a call center channel](https://docs.microsoft.com/en-us/dynamics365/commerce/channel-setup-callcenter#overview) article. 
+You must configure at least one call center channel in order to manage POS and e-commerce order payments through Commerce headquarters (HQ). For more information on creating a call center, refer to the [Set up a call center channel](https://docs.microsoft.com/en-us/dynamics365/commerce/channel-setup-callcenter#overview) topic. 
 
 #### Users must be set up as call center users
 
