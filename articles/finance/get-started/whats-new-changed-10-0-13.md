@@ -52,6 +52,8 @@ The following features are included in this release. The feature titles link to 
  - [Apply changes to 1099-NEC and 1099-MISC forms for 2020
  ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-changes-1099-nec-1099-misc-forms-2020)
  
+ - [Cash flow forecast calculation – enhanced scheduling (via process automation)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/cash-forecast-calculation-enhanced-scheduling-via-process-automation)
+ 
  ### Public sector
  - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/trial-balance-transactional-detail-report)
  - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
