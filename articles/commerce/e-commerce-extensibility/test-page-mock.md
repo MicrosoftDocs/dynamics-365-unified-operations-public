@@ -144,13 +144,8 @@ Some modules might have logic that must check the signed-in state of the user be
                                 "typeName": "product-feature",
                                 "config": {
                                     "imageAlignment": "left",
-                                    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-                                    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-                                    "productImage": {
-                                        "src" : "https://bit.ly/33cMGxr",
-                                        "altText" : "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
-                                    },
-                                    "buttonText": "Buy Now"
+                                    "buttonText": "Buy Now",
+                                    "productIds": "68719490621"
                                 }
                             }
                         ]
@@ -162,25 +157,25 @@ Some modules might have logic that must check the signed-in state of the user be
     "renderingContext": {
         "gridSettings": {
             "xs": {
-                "w":767
+                "w": 767
             },
             "sm": {
-                "w":991
+                "w": 991
             },
             "md": {
-                "w":1199
+                "w": 1199
             },
             "lg": {
-                "w":1599
+                "w": 1599
             },
             "xl": {
-                "w":1600
+                "w": 1600
             }
-        },        
+        },
         "staticContext": {
             "staticCdnUrl": "/_scnr/"
         },
-        "locale": "en-us",
+
         "user": {
             "token": "<TOKEN>",
             "isAuthenticated": true,
@@ -196,6 +191,7 @@ Some modules might have logic that must check the signed-in state of the user be
             "name": "<User Name>",
             "emailAddress": "<User Email Address>"
         },
+        "locale": "en-us"
     },
     "statusCode": 200
 }
