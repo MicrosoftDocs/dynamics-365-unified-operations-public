@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cross channel sharing
-description: This topic descibes how Cross channel sharing feature works in the Site Builder
+title: Cross-channel sharing
+description: This topic describes the cross-channel sharing feature of Dynamics 365 Commerce site builder that allows content to be shared between multiple channels of an e-Commerce site.
 author: psimolin
-manager: brendans
-ms.date: 07/15/2020
+manager: annbe
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -22,24 +22,25 @@ ms.search.scope: Retail, Core, Operations
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: niholman
+ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Cross channel sharing
+# Cross-channel sharing
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic describes how content can be shared between multiple channels of a site by using a Cross Channel Sharing feature of the Dynamics 365 Commerce Site Builder.
+This topic describes the cross-channel sharing feature of Dynamics 365 Commerce site builder that allows content to be shared between multiple channels of an e-Commerce site.
 
 ## Overview
 
-Cross channel sharing allows the retailer to reuse and share content between multiple channels of a site. This is particularly useful when the channels of a site have a compatible base language or they have a lot of common content items that can be shared as such between the channels.
+Cross-channel sharing allows the retailer to reuse and share content between multiple channels of a site. This is particularly useful when the channels of a site have a compatible base language or they have a lot of common content items that can be shared as such between the channels.
 
-Cross channel sharing works by enabling a default channel which will be searched for available content in case channel specific version of the requested content is not found. Content meant to be shared between channels is created in this channel and can be localized to any of the locales used on any channels of the site.
+Cross-channel sharing works by enabling a default channel which will be searched for available content in case channel specific version of the requested content is not found. Content meant to be shared between channels is created in this channel and can be localized to any of the locales used on any channels of the site.
 
-### When to use Cross channel sharing?
+### When to use the cross-channel sharing feature
 
 Cross channel sharing is useful when there are multiple channels on a single site that can share some of the content between them.
 
@@ -47,23 +48,28 @@ One example would be a retailer with multiple brands and storefronts that are gr
 
 Sites with a single channel only or multiple channels which cannot share content do not benefit from cross channel sharing.
 
-### Enabling cross channel sharing
+### Enable cross-channel sharing
 
-Cross channel sharing is enabled at site level and it is one way operation. Once enabled, it cannot be disabled.
+Cross-channel sharing is enabled at the site level and is a one-way operation. Once enabled, it cannot be disabled.
 
-To enable cross channel sharing, go to **Features** of your site in the **Site settings**, locate **Cross Channel** and enable.
+To enable cross-channel sharing in site builder, follow these steps.
+
+1. Go to **Site settings \> Features**.
+1. Under **Cross Channel**, set the feature to **On**. 
+
+The following image show the **Cross Channel** setting in site builder under **Site settings \> Features**.
 
 ![Enabling cross channel sharing](./media/enabling-cross-channel-sharing.png)
 
-After enabling cross channel sharing, it will become visible in the **Channels** section of **Site settings**.
+After enabling cross-channel sharing, cross-channel information will be visible in the **Channels** section under **Site settings \> Features**, as shown in the following example image.
 
 ![Channels view after enabling cross channel sharing](./media/channels-cross-channel.png)
 
-Channels drop down in the Site Builder also now has a Cross Channel entry which allows managing cross channel content.
+After enabling cross-channel sharing, the **Channel** drop down menu options in site builder will also include a **Cross Channel Online Store** entry to manage cross-channel content, as show in the following image.
 
 ![Channels view after enabling cross channel sharing](./media/cross-channel-dropdown.png)
 
-### Creating cross channel content
+### Create cross channel content
 
 Log in to the Site builder and navigate to the site you wish to create cross channel content to. Select the Cross channel entry from the drop down list and ensure that the source locale is selected.
 
@@ -72,7 +78,7 @@ In this example we do the following
 * Create a cross channel page where we use the cross channel and channel specific fragments
 * Override cross channel fragment with a channel specific version
 
-#### Creating cross channel fragment
+#### Create cross channel fragment
 
 Click **Fragments** from the left side navigation. Click **New** and choose the **Promo banner** module. Enter any name, e.g. **Cross channel banner** and click OK.
 
@@ -90,7 +96,7 @@ Cross channel pages are available on any channels of your site. Think of this ex
 
 This allows you to create the shared content once and any update required later needs to be done in single place only.
 
-#### Creating channel specific page and use cross channel content on it
+#### Create channel specific page and use cross channel content on it
 
 For this step, select a specific channel from the channel selected, e.g. "Fabrikam extended online store". Create new page with open template, name it "Channel specific page".
 
@@ -98,7 +104,7 @@ Select main Slot and Add a Page Fragment. From the channel drop down list in the
 
 Notice how you can use Cross channel content on channel specific pages. This allows you to create your shared content fragment once and use it on channel specific pages. This is very useful for shared content e.g. terms and conditions, payment terms or contact information.
 
-#### Creating channel specific version of a cross channel page
+#### Create channel specific version of a cross channel page
 
 Cross channel sharing supports overriding a cross channel content. Think of a scenario, where all but one of your channels can the exact same piece of content, but for one channel you need to have different content. In this example we show how would you override the cross channel content with a channel specific content for that one channel only.
 
