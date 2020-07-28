@@ -5,7 +5,7 @@ title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/20/2018
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -148,10 +148,10 @@ After you've run the distribution job and pulled a cash-and-carry transaction in
 
 A new sample that has been added to the Retail SDK adds business logic for order attributes in CRT. This sample includes code only for the business logic. It doesn't show how to save or read the attributes, because read and write operations for attributes are automated.
 
-The sample implements the following scenario: Whenever you suspend a cart, you set set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
+The sample implements the following scenario: When you suspend a cart, you set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
 
 > [!NOTE]
-> Before adding attribute to the cart, check whether the attribute already exists in the cart or cartline if the attribute already exists then don’t add the attribute again, instead update it because if duplicate attribute added to the cart or cartline then CRT will throw runtime error. Sample code for this can be found in sample code section below.
+> Before adding attribute to the cart, check whether the attribute already exists in the cart or cartline. If the attribute already exists, then don’t add the attribute again, instead update it. If a duplicate attribute is added to the cart or cartline, then CRT will display a runtime error. Sample code for this scenario can be found in sample code section below.
 
 
 You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample.
@@ -159,15 +159,6 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
 - Create a new C# portable class library project, and paste in the following code.
 
  ```C#
- /**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
- 
     public class CustomSuspendCartTrigger : IRequestTrigger
     {
         // summary
