@@ -78,7 +78,9 @@ Fields that are required are set off with red borders. The following table descr
 |     Index Rate Type              	|     If the lease payments are dependent on the rate fluctuations   of an index rate, select the index rate from the drop-down menu. The   drop-down menu is populated with the index rates inputted in the Index Rate   Types setup page                              	|
 |     Revaluation Date             	|     Specify the first date that lease payments will be   revalued. This will populate based on the commencement date and months   between revaluation but can be edited.                                          	|
 |     Index Rate (%)               	|     Enter the value of the index rate at the lease   commencement date. This value will be used to remeasure lease payments when   the index revaluation process is run.                 	|
-
+|     For IFRS 16 leases – Lease payment changes due to a change   in index rates constitute a lease adjustment.              	|          	|
+|                                                                                                                             	|          	|
+|     For   ASC842 leases – Only the variable payments are affected when payments change   due to a change in index rates.    	|          	|
 
 
 > [!Note]
