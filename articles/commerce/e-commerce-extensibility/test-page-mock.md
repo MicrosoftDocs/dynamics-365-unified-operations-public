@@ -124,7 +124,7 @@ The **renderingContext** node provides additional mock data that modules can acc
 
 ### Simulate the signed-in state
 
-Some modules might have logic that must check the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, the user object can be mocked by using the **userContext** node, as shown in the following example.
+Some modules might have logic that must check the signed-in state of the user before they take the appropriate action. Typically, a module gets the state from the **this.props.context.request.user** object. Because business-to-consumer (B2C) sign-in isn't supported in a development environment, the user object can be mocked by using the **user** node, as shown in the following example.
 
 ```json
 {
