@@ -203,7 +203,7 @@ If you must simulate real data or the token that is returned from Commerce Serve
 Page mocks can be created to mimic e-Commerce live pages and used locally to test module interaction including mocking the signed in state and other page contextual properties if required. This can be helpful to locally test out scenarios including account or wishlist pages or the order checkout flow.
 
 ### Saving a live e-Commerce page raw json structure
-The raw JSON page structure of any live e-Commerce page can be captured using the query string parameter: **"item=nodeserviceproxy:true"**.  Navigate to your product e-Commerce site and page you wish to capture and sign in if the signed in state is desired.  Next append the query param "?item=nodeserviceproxy:true" to the URL and hit enter to reload the page to get the raw page context JSON.
+The raw JSON page structure of any live e-Commerce page can be captured using the query string parameter: **"item=nodeserviceproxy:true"** and saved to be used as a page mock.  Navigate to your product e-Commerce site and page you wish to capture and sign in if the signed in state is desired.  Next append the query param "?item=nodeserviceproxy:true" to the URL and hit enter to reload the page to get the raw page context JSON.
 
 **Note:** your user will need to have secure AAD access to your production site for this to work and you may be prompted to sign in if not signed in already.  Use the same AAD account you use to sign into the site builder tool.
 
