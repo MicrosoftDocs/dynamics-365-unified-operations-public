@@ -5,7 +5,7 @@ title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -105,6 +105,7 @@ To print reviews, select the **Print review** button. If you don't see the butto
 > The ability to print performance reviews is only available in Human Resources. It's not available in Dynamics 365 Finance.
 
 ## Components you can include in performance reviews
+
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.
 
 ### Review detail
