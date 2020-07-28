@@ -76,7 +76,7 @@ While most forms will work well with saved views, there are some areas that may 
      -    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
 
 -    Extra work may be required to ensure the values of custom filters always align to the current view or query.  
-     -    To make sure that custom filters work correctly with saved views, the platform must do additional work, and there will likely be uptake by forms with custom filters. More information will be provided when the recommended approach has been finalized. 
+     -    To make sure that custom filters work correctly with saved views, the platform still has additional work to better support these controls. Once that support is available, uptake will be required by any form that has custom filters. More information will be provided when the recommended approach has been finalized. 
 
 -    Looking forward, in the long-term, views are meant to replace modeled secondary list pages.  
      -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views. However, that effort hasn't yet been started. 
