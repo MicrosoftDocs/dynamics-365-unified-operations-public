@@ -5,7 +5,7 @@ title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -101,7 +101,7 @@ In a remote customer search, the customer ID isn't shown for customers from the 
 Searches that are based on the phone number have been simplified. These searches now ignore special characters, such as spaces, hyphens, and brackets, that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. They can also search for customers by typing a partial phone number. If a phone number includes special characters, it can also be found by searching for the numbers that appear after the special characters. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **123**, **456**, **7890**, or **1234567890**, or by entering the first few numbers of the phone number.
 
 > [!NOTE]
-> A customer can have multiple phone numbers and multiple emails. The customer search algorithm searches through these secondary emails and phone numbers as well, but the customer search results page only displays the primary email and phone number; So it may cause some confusion as the returned customer results would not show the searched email or phone number. We do plan to improve the customer search results screen in the future to show this information.
+> A customer can have multiple phone numbers and multiple emails. The customer search algorithm also searches through these secondary emails and phone numbers, but the customer search results page only displays the primary email and phone number. This may cause some confusion as the returned customer results would not show the searched email or phone number. In a future release we plan to improve the customer search results screen to show this information.
 
 The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can now search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
 
