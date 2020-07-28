@@ -67,16 +67,26 @@ If you don’t have admin access in the environment, you will not be able to tes
         </application>
     ```
 5. Save the changes to **applicationhost.config** 
-6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in **step 8**.
-7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
+6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in **step 8**.
+7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
 8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
-9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL.
+9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL and set **UseIIS** to false.
 ```    
-    Ex:  <IISUrl>https://YourCPOSURL.com</IISUrl>
+    Ex:  
+    <UseIIS>False</UseIIS>
+    <IISUrl>https://YourCPOSURL.com</IISUrl>
 ```
 10. Right-click the Pos.Web project and select **Properties**.
-11. In the **Properties** window, select the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL. For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
+11. In the **Properties** window, select the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL and under the **Servers section select IIS Express as the server** from the drop down menu and set the **Project URL** as your cloud POS URL. 
+
+If you are using IIS for development (VMs with admin access) then no need to set the UseIIS node value as False and select Local IIS from the Server drop down menu.
+
+For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
+
 12. Save the changes.
+13. Right click the Pos.Web project and select **Set as StartUp Project**.
+14. Press F5 to run the Pos.Web Project or click the Run button in the Visual studio menus.
+
 
 ## Install the Developer topology prerequisites
 
