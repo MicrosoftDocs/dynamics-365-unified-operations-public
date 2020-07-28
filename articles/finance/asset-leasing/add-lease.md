@@ -81,7 +81,14 @@ Fields that are required are set off with red borders. The following table descr
 |     For IFRS 16 leases – Lease payment changes due to a change   in index rates constitute a lease adjustment.              	|          	|
 |                                                                                                                             	|          	|
 |     For   ASC842 leases – Only the variable payments are affected when payments change   due to a change in index rates.    	|          	|
-
+|     Months Between   Revaluations    	|     Specify   the number of months between the revaluation of the index rate                                                                                                                                                                           	|
+|     Manually   Revalue               	|     Select   “No” to include the lease in the index revaluation process. Select “Yes” and   the index revaluation will only be adjusted if the user manually adjusts the   lease payments to account for the new index rate.                           	|
+|     Allow   Decreases                	|     Select   “Yes” if lease payments should change if the index rate decreases. Select   “No” if only increases in the index rate will affect lease payments.                                                                                          	|
+|     Limit   on Rate Increase (%)     	|     Input   the percentage increase limitation if the lease contains a limitation on the   amount payments can increase. Inputs will be divided by 100. For example, a   5% increase limit will be entered as “5”. If there is no limit, enter “0”.    	|
+|     Index Change   to Apply (%)      	|     This   field determines the percent of the index rate increase/decrease that will be   applied to the lease payments.                                                                                                                              	|
+|     Index   Rate Clause              	|     If   information about adjustments due to changes in the index rate is included in   the lease, state the clause here.                                                                                                                             	|
+|     Payment   Schedule Lines tab     	|                                                                                                                                                                                                                                                        	|
+|     Add                              	|     Click   to add an additional payment schedule line                                                                                                                                                                                                 	|
 
 > [!Note]
 > The financial dimensions may change based upon any custom financial dimensions.
