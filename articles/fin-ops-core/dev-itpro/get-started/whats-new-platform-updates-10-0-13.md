@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.13 of Finance and Operations apps (Octo
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,8 +42,8 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
-[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
+-  Visual Studio tools require .NET 4.7.2 runtime – For more information, see 
+[Action Required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 -  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
 [Article name](URL to the docs.microsoft.com article that has more details about the feature). 
 -  [Feature name](URL to the feature description in the Release Plans) – For more information, see 
