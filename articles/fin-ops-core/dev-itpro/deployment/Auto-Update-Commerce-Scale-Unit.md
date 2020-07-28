@@ -49,7 +49,7 @@ The following limitations currently exist for private preview:
 Updates to Commerce HQ and Commerce Scale Unit (cloud) are applied sequentially. Downtime duration is typically one hour, but varies by data volume and region. To estimate downtime duration in your production environment, you can either self-update a Commerce Scale Unit in your Sandbox UAT environment, or review the total update duration for both Commerce HQ and Commerce Scale Unit in Lifecycle Services (LCS).
 
 > [!NOTE]
-> Downtime duration will vary for each update and data volume. To estimate a realistic downtime duration, ensure that your Sandbox UAT environment has the same data as your Production environment. To do this, follow the steps in [Refresh Production database in Sandbox UAT](../database/database-refresh.md). You also need to apply the same update in Sandbox UAT that you plan to estimate the downtime duration for.
+> Downtime duration will vary for each update and data volume. To estimate a realistic downtime duration, ensure that your Sandbox UAT environment has the same data as your Production environment. To do this, follow the steps in [Refresh database](../database/database-refresh.md). You also need to apply the same update in Sandbox UAT that you plan to estimate the downtime duration for.
 
 For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see Online and offline point of sale (POS) operations.
 
