@@ -99,6 +99,11 @@ You can also use the **Competencies** section to discuss, review, and rate the e
 
 You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
 
+To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure you have enabled the feature in the **Feature management** workspace. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+> [!NOTE]
+> The ability to print performance reviews is only available in Human Resources. It's not available in Dynamics 365 Finance.
+
 ## Components you can include in performance reviews
 
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.
@@ -164,6 +169,3 @@ Performance journal source types describe where the performance journals come fr
 ### Review types
 
 Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
-
-
-
