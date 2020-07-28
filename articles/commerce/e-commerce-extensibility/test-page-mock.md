@@ -181,7 +181,7 @@ Some modules might have logic that must check the signed-in state of the user be
             "staticCdnUrl": "/_scnr/"
         },
         "locale": "en-us",
-        "userContext": {
+        "user": {
             "token": "<TOKEN>",
             "isAuthenticated": true,
             "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
