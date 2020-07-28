@@ -234,6 +234,11 @@ Notice the structure of the JSON file should have similar sections as shown belo
 }
 ```
 
+To test out the page mock locally, start up your Node server with yarn start and navigate to the page mock using the following URL format.
+**https://localhost:<port-number>/page?mock=<mock-file>**
+You can now modify the page mock as desired, notice the format of the page mock file
+
+
 ## Additional resources
 
 [Create a new module](create-new-module.md)
