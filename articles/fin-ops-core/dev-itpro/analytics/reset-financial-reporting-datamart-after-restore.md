@@ -45,7 +45,7 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
-> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports. For information about how to back up report definitions, see the note at the end of this topic.
+> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.
 
 ### Reset the Financial reporting data mart from Report designer
 
@@ -677,7 +677,7 @@ Confirm that all rows have a **LastRunTime** value, and that **StateType** is se
 
 ## Export and import report definitions
 
-Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup in the event that it becomes necessary to restore your definitions. 
 
 ### Export report definitions
 
