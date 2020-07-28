@@ -89,6 +89,37 @@ Fields that are required are set off with red borders. The following table descr
 |     Index   Rate Clause              	|     If   information about adjustments due to changes in the index rate is included in   the lease, state the clause here.                                                                                                                             	|
 |     Payment   Schedule Lines tab     	|                                                                                                                                                                                                                                                        	|
 |     Add                              	|     Click   to add an additional payment schedule line                                                                                                                                                                                                 	|
+|     Remove             	|     Click to remove a selected payment schedule line                                	|
+|     Start Date         	|     Enter the date in which the specified payment amount will   start               	|
+|     Period Interval    	|     Select the length of the payment periods to be measured in   months or years    	|
+|     Periods            	|     Enter the number of payment periods for the payment   schedule line             	|
+|     End Date           	|     Enter the date of the last specified payment                                    	|
+|     Payment Frequency       	|     Select the frequency of the payments. Payments can be paid   monthly, quarterly, semiannually, and annually.                                                                                                                                                                              	|
+|     Payment Amount          	|     Enter the payment amount to be inserted in the payment   schedule. The application will insert this amount in the payment schedule   based on the start date, end date, and the payment frequency.                                                                                        	|
+|     Index Rate (%)          	|     This field will automatically populate from the Index Rate   field in the Index Rate tab.                                                                                                                                                                                                 	|
+|     Term                    	|     Enter a short description for that payment term. For   example, "Base Rent" would be entered for all base rent payments.   "Option 1" would be entered for payments relating to the first   renewal option.                                                                               	|
+|     Exercise                	|     Select "Yes if the payment schedule line is   reasonably certain to be exercised, If the line is exercised, it will be   included in the payment schedule and included in calculating the lease   liability. Select "No" to exclude the payment schedule line from   any calculations.    	|
+|     Cost Per Unit (Year)    	|     The auto-populated cost per unit                                                                                                                                                                                                                                                          	|
+|     Location tab            	|                                                                                                                                                                                                                                                                                               	|
+|     Location Number               	|     Select the location number from the Center Details form to   associate with this lease.    	|
+|     Country/Region                	|     Select the country or region where the leased asset is   being used.                       	|
+|     Location Memo                 	|     Enter additional information about the location of the   asset.                            	|
+|     Responsible                   	|     Select the person responsible for the location leased.                                     	|
+|     Rentable Area                 	|     If renting a building or office space, enter the amount of   rentable area.                	|
+|     Unit of Measure               	|     Select the units in which the rentable area is measured.                                   	|
+|     Financial-Commercial Terms    	|     Enter the terms included in the financing contract.                                        	|
+|     Address tab                            	|                                                                                                                                                                                                       	|
+|     Address                                	|     Insert the address of the leased asset.                                                                                                                                                           	|
+|     Executory Cost Payment Schedule tab    	|                                                                                                                                                                                                       	|
+|     Expense Type                           	|     Choose the type of expense from the drop-down. Types of   expenses can be created in the Lease posting parameters.                                                                                	|
+|     Start Date                             	|     Enter the date in which the specified expense payment will   start.                                                                                                                               	|
+|     End Date                               	|     Enter the date of the last specified expense payment.                                                                                                                                             	|
+|     Payment Frequency                      	|     Choose the frequency at which the expense will be paid   off.                                                                                                                                     	|
+|     Payment Amount                         	|     Enter the payment amount to be inserted in the expense   schedule. The application will insert this amount in the expense schedule   based on the start date, end date, and payment frequency.    	|
+|     Annuity Type                           	|     Select the annuity type. This field is to determine if the   lease is due at the beginning of the payment period or at the end of the   period used to discount the expense payments.             	|
+|     Offset Account Type                    	|     Select the type of account to be credited as a result of   the expense payments.                                                                                                                  	|
+
+
 
 > [!Note]
 > The financial dimensions may change based upon any custom financial dimensions.
