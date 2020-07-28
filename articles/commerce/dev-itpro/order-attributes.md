@@ -150,11 +150,24 @@ A new sample that has been added to the Retail SDK adds business logic for order
 
 The sample implements the following scenario: Whenever you suspend a cart, you set set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
 
+> [!NOTE]
+> Before adding attribute to the cart, check whether the attribute already exists in the cart or cartline if the attribute already exists then don’t add the attribute again, instead update it because if duplicate attribute added to the cart or cartline then CRT will throw runtime error. Sample code for this can be found in sample code section below.
+
+
 You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample.
 
 - Create a new C# portable class library project, and paste in the following code.
 
-    ```C#
+ ```C#
+ /**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+ 
     public class CustomSuspendCartTrigger : IRequestTrigger
     {
         // summary
@@ -205,7 +218,41 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
         public void OnExecuted(Request request, Response response)
         {
         }
-    ```
+        // Sample code to check for the duplicate attribute, before adding attributes to the cart check whether the attribute already exists if so then don’t add the attribute again, instead update it.
+        
+        public static class CustomCartHelper
+        {
+            /// <summary>
+            /// Updates the transaction header attribute.
+            /// </summary>
+            /// <param name="cart">The cart.</param>
+            /// <param name="reserveNow">The value of the transaction header attribute.</param>
+            /// <param name="updateAttribute">A flag indicating whether or not to override an existing attribute value.</param>
+            /// <returns>A flag indication whether or not the cart was updated.</returns>
+            public static bool CreateUpdateTransactionHeaderAttribute(Cart cart, bool reserveNow, bool updateAttribute)
+            {
+                ThrowIf.Null(cart, "cart");
+                bool cartUpdated = false;
+                IList<AttributeValueBase> transactionAttributes = cart.AttributeValues;
+                string reserveNowAttributeName = "Reserve now";
+                string reserveNowAttributeValue = reserveNow ? "Yes" : "No";
+                AttributeValueBase reserveNowAttribute = transactionAttributes.SingleOrDefault(attribute => attribute.Name.Equals(reserveNowAttributeName));
+
+                if (reserveNowAttribute == null)
+                {
+                    transactionAttributes.Add(new AttributeTextValue() { Name = reserveNowAttributeName, TextValue = reserveNowAttributeValue });
+                    cartUpdated = true;
+                }
+                else if (updateAttribute && !((AttributeTextValue)reserveNowAttribute).TextValue.Equals(reserveNowAttributeValue))
+                {
+                    ((AttributeTextValue)reserveNowAttribute).TextValue = reserveNowAttributeValue;
+                    cartUpdated = true;
+                }
+
+                return cartUpdated;
+            }
+        }
+```
 
 ## Extend attributes to do some business logic in the POS
 
