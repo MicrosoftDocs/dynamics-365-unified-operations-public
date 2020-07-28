@@ -49,9 +49,6 @@ You should reset the data mart only when a small amount of processing is occurri
 
 ### Reset the Financial reporting data mart from Report designer
 
-> [!NOTE]
-> The steps in this process are supported for Financial reporting release 7.2.6.0 and later.
-
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
@@ -99,9 +96,6 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 ## Reset the Financial reporting data mart through Windows PowerShell
 
 If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
-
-> [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Stop services
 
@@ -164,7 +158,7 @@ Use services.msc to restart the services that you stopped earlier:
 
 Before getting started, be sure that all users close Report designer and exit the Financial reporting area.
 
-1. On the MRDB, execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
+1. On the database used for Financial reporting, which is named ManagementReporter within SQL Server, which is also referred to as MRDB, execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
 
     ```sql
 	------------------------------------------------------------------------------------------
@@ -611,7 +605,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. On the AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
+3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
