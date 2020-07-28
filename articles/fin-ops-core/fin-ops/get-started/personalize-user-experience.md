@@ -74,7 +74,7 @@ Here is a list of the actions that fall under typical page usage and are covered
 
 ## Full personalization access (formerly explicit personalizations)
 
-At the **full personalization access** level, users have access to all the personalization capabilities that the app provides. Because different people and companies have different needs when they interact with the app, especially related to data this is most important or tracked versus data that isn't required or utilized, personalization provides tools that let users and organizations tailor the way that information is ordered and interacted with on most pages in the app. These capabilities are key to interacting with simplified, productive experiences in the app that are tailored to you and your organization. 
+At the **full personalization access** level, users have access to all the personalization capabilities that the app provides. Because different people and companies have different needs when they interact with the app, especially in terms of utilized fields, personalization provides tools that let users and organizations tailor the way that information is ordered and interacted with in the app. These capabilities are key to providing simplified, optimized experiences in the app that are tailored to you and your organization. 
 
 If the [Saved views](saved-views.md) feature is turned on, an explicit save is required to persist these changes to the user experience for a specific view. When the **Saved views** feature is turned off, these changes are automatically saved.
 
