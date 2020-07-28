@@ -5,7 +5,7 @@ title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,9 +92,6 @@ This section provides a list of known issues for saved views while the feature i
 -  Views should keep track of the last QuickFilter column that was used, without requiring that it be explicitly saved to a view. 
 
 ### Fixed in 10.0.13
-
-> [!NOTE]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 -  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
