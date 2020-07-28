@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Iframe module
@@ -30,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# IFrame module
+# Iframe module
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -39,26 +38,26 @@ This topic covers the iframe module and describes how to add it to site pages in
 
 ## Overview
 
-An iframe module provides an iframe (inline frame) to host external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
+An iframe module provides an iframe (inline frame) that hosts external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
-An iframe module requires a target URL and then hosts whatever content is on the target page within an HTML iframe element. The external URLs must be on the allow list (also known as a "whitelist") per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+An iframe module requires a target URL. It then hosts the content of the target page inside an HTML **iframe** element. External URLs must be on the allow list (also known as a "whitelist") per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed by using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
-The following image shows examples of iframe modules showcasing external videos on site pages.
+The following image shows examples of iframe modules that showcase external videos on site pages.
 
-![Example of iframe modules showcasing external videos](./media/ecommerce-iframe.PNG)
+![Example of iframe modules that showcase external videos](./media/ecommerce-iframe.PNG)
 
 ## Iframe module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Heading | Text | Heading for the module. |
-| Target URL| URL | The URL to be hosted within the module.
-| Height| Number or percentage| The height of the module defined in pixels or percentage. For example, the number "100" will be treated as pixels and "100%" will be treated as a percentage. |
-| Aria label| Text | An aria label can be defined for accessibilty purposes. |
+| Heading | Text | The heading for the module. |
+| Target URL | URL | The URL that is hosted in the module. |
+| Height | Number or percentage | The height of the module, in pixels or as a percentage. For example, the value **100** will be treated as a number of pixels, and the value **100%** will be treated as a percentage. |
+| Aria label | Text | An Accessible Rich Internet Applications (ARIA) label can be defined for accessibility purposes. |
 
 ## Add an iframe module to a page
 
-To add an iframe module to a page to display available stores for a store locations page, follow these steps.
+To add an iframe module to a page to show available stores for a store locations page, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
@@ -70,16 +69,13 @@ To add an iframe module to a page to display available stores for a store locati
 1. In the module's properties pane, set the **Width** value to **Fill Container**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **iframe** module, and then select **OK**.
-1. In the module's properties pane, set the **Target URL** value to an external video URL.
-1. In the module's properties pane, set other properties such as **Heading** and **Height** as needed.
-1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. Go to the marketing page on your site and you should see the video rendered in the iframe module.
+1. In the module's properties pane, set the **Target URL** value to an external URL for a video.
+1. Set other properties, such as **Heading** and **Height**, as you require.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+1. Go to the marketing page on your site. You should see that the video is rendered in the iframe module.
  
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
 [Content security policy](manage-csp.md)
-
-
-
-
