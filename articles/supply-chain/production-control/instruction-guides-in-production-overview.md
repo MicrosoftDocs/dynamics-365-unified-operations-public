@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-(In preview for release version 10.0.13)
+(In private preview for release version 10.0.13)
 
 # Instructions with Dynamics 365 Guides for workers in production
 
@@ -59,7 +59,7 @@ You can attach guides to various aspects of the production control including:
 > You can find additional options to attach Guides in the **Asset Management** domain.
 >[Find more information here.](../asset-management/asset-management-guides-integration.md)
 
-When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see associated guides on the job card. When the worker chooses a specific guide a QR renders code on the screen and Guides in HoloLens will then launch the instructions they need to do their work.
+When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the resolved guides](#resolving-logic-for-guides) on the job card. When the worker chooses a specific guide a QR renders code on the screen and Guides in HoloLens will then launch the instructions they need to do their work.
 
 Below list a few scenarios  where customer across industries see the biggest value for instructions using guides in manufacturing and related scenarios.
 
@@ -320,4 +320,14 @@ You can also assign Guides to the following objects directly to prescribe the in
 
 ### Resolving logic for Guides
 
-You can  
+You can add Guides to the following production data: [Resource groups](#resource-grouptasksdefine-discrete-manufacturing-resource-groupmd), [resources](#resourceoperations-resourcesmd), [released products](#release-productpimtaskscreate-released-product-single-company), [BOMs](#bill-of-materialbill-of-material-bommd) and [BOM versions](#bill-of-material-versionbill-of-material-bommdbom-and-formula-versions), [formulas](#formulabill-of-material-bommdformulas-co-products-and-by-products) and [formula versions](#formula-versionbill-of-material-bommdbom-and-formula-versions), [routes](#routeroutes-operationsmd) and [route versions](#route-versionroutes-operationsmdroute-versions), and [route operation relations](#route-operation-relationroutes-operationsmdoperation-relations).
+
+When Dynamics 365 SCM generates the jobs for the production floor it will collect the relevant Guides from these sources.
+
+> [!Note]
+  If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
+
+> [!Note]
+  If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
+
+  :::image type="content" source="media/instruction-guides-Resolve.png" alt-text="Diagram on resolving the relevant Guides":::
