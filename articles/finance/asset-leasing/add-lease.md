@@ -31,12 +31,16 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Add a lease (Preview)
+# Add or copy a lease (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The describes the steps required to create a new lease and record information for it in Asset leasing.
+This topic walks through the steps for creating a new lease in Asset leasing, as well as copying a lease. Creating a new lease involves entering information for the new lease and then creating a lease schedule. When you have at least one lease set up, you might find it easier to copy the information from an existing lease, and modify as needed to create a new lease. 
+
+## Create a new lease
+
+Complete the following steps to create a new lease in Asset leasing.
 
 1.	Open the **Lease summary** page.
 2.	Click **New** in the toolbar.
@@ -147,6 +151,9 @@ Fields that are required are set off with red borders in the product. The follow
 |     Project                     	|     Select the project associated with the ROU Asset,   liability, payment, and interest postings for this lease.          	|
 
 
+## Create a lease schedule
+
+After you've entered information for the lease, complete the following steps to create a lease schedule. 
 
 > [!Note]
 > The financial dimensions may change based upon any custom financial dimensions.
