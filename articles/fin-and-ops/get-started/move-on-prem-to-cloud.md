@@ -91,7 +91,7 @@ UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
 8.	Set up Document Routing Agent(s) for production. If you are re-using any of the DRAs previously installed as part of your trial migration, remember to update their configuration to connect to the production URL instead of sandbox.
 9.	Reconcile, as detailed in your cut-over plan, your cloud and on-premises production environments.
 10.	Obtain sign off for the go-live.
-11. 	Activate cloud production interfaces, batch jobs, etc.
+11.	Activate cloud production interfaces, batch jobs, etc.
 12.	Start transacting in your cloud production environment.
 
 ## Migrating document handling attachments to your sandbox
