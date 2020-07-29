@@ -166,5 +166,5 @@ update DOCUDELETEDVALUE
   STORAGEPROVIDERID = 1
 where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
   and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
-    ```
+  ```
 5. Test a sample of the document handling attachments to ensure they are now accessible in the target environment.
