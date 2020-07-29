@@ -48,7 +48,7 @@ Saved views try to eliminate this confusion by letting users create views on "us
 
      With views, the personalization scope of form parts has been modified to match user expectations. In particular, subform personalizations are now tied to the base form where they are made. This means that exporting a view on the **All customers** details page will include personalizations from the base **CustTable** form as well as any personalizations in FactBoxes or form parts modeled in that portion of the form. Similarly, any personalizations done on the **Addresses** FastTab (form part) on the **All customers** page will not be reflected in other forms where that form part is used.
      
-These are highly technical modifications to the personalization subsystem that are only available when view is enabled. These modifications are very important for ensuring that users have a predictable and understandable experience with views.
+These are highly technical modifications to the personalization subsystem that are only available when view is enabled. These modifications are important for ensuring that users have a predictable and understandable experience with views.
 
 ## View support
 The style of a form determines the level of support for views. 
