@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable and use cross-channel sharing
-description: This topic describes how to enable and use the cross-channel sharing feature of Dynamics 365 Commerce site builder that allows content to be shared between multiple channels of an e-Commerce site.
+description: This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
 ms.date: 07/31/2020
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to enable and use the cross-channel sharing feature of Dynamics 365 Commerce site builder that allows content to be shared between multiple channels of an e-Commerce site.
+This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
-Cross-channel sharing allows retailers to reuse and share content between multiple channels of a site. This is particularly useful when the site channels have a compatible base language or have a lot of common content items that can be shared between the channels.
+Cross-channel sharing allows retailers to reuse and share content between multiple channels of a site. This cross-channel sharing is useful when the site channels have a compatible base language or have numerous common content items that can be shared between the channels.
 
-Cross-channel sharing works by enabling a default channel which will be searched for available content when a channel-specific version of the requested content is not found. Content meant to be shared between channels is created in this channel and can be localized for any of the locales used on any site channel.
+Cross-channel sharing works by enabling a default channel that will be searched for available content when a channel-specific version of the requested content is not found. Content meant to be shared between channels is created in this channel and can be localized for any of the locales used on any site channel.
 
 ## When to use cross-channel sharing
 
@@ -46,7 +46,7 @@ Cross-channel sharing is useful when there are multiple channels on a single sit
 
 For example, a retailer with multiple brands and storefronts that are grouped under a single site could share some content between some or all of the storefronts. This shared content could include pages such as terms and conditions, payment terms, shipment methods, and frequently asked questions (FAQ). 
 
-Cross-channel sharing also supports fragments, which allows a content page containing channel-specific fragments to be created as cross-channel content. This means that while most of the content would be shared between channels, channel-specific fragments on a cross-channel page would only be rendered when requested from the corresponding storefront channel.
+Cross-channel sharing also supports fragments, which allows a content page containing channel-specific fragments to be created as cross-channel content. This use of fragments means that while most of the content would be shared between channels, channel-specific fragments on a cross-channel page would only be rendered when requested from the corresponding storefront channel.
 
 Sites with only a single channel or multiple channels that can't share content do not benefit from cross-channel sharing.
 
@@ -104,7 +104,7 @@ To create a cross-channel page in Commerce site builder that uses cross-channel 
 
 ### Create a channel-specific page that uses cross-channel content
 
-Using cross-channel content on channel-specific pages allows you to create a shared content fragment once and then use it on channel-specific pages. This is very useful for shared content such as terms and conditions, payment terms, or contact information.
+Using cross-channel content on channel-specific pages allows you to create a shared content fragment once and then use it on channel-specific pages. This single sourcing is useful for shared content such as terms and conditions, payment terms, or contact information.
 
 To create a channel-specific page in Commerce site builder that uses cross-channel content, follow these steps.
 
