@@ -105,7 +105,7 @@ You need to enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** att
 
 To enable the **IsSOPIntegrationEnabled** attribute:
 
-1. In your browser, go to https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations, replacing **<test-name>** with your company's link to Dynamics 365 Sales. 
+1. In your browser, go to https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations, replacing **\<test-name\>** with your company's link to Dynamics 365 Sales. 
 
 2. Find the **organizationid** in the page.
 
