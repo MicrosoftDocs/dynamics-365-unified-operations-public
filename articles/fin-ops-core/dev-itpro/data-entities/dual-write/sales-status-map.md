@@ -103,7 +103,7 @@ You need to enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** att
 
 To enable the **IsSOPIntegrationEnabled** attribute:
 
-1. Go to (replace \<test-name\> with the companies crm link).
+1. In your browser, go to the URL for Dynamics 365 Sales.
 
 2. Find the **organizationid** in the page.
 
