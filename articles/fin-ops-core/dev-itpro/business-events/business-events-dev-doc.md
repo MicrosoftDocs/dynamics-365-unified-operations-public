@@ -54,7 +54,7 @@ Regardless of the approach that is used, the fidelity of business events is sign
 - **Targeted** – Business events must be designed to optimize the consumption story for the recipient. In other words, you should make it as easy as possible for the recipient to consume business events. Therefore, business events must be as specific as possible and must be targeted to specific use cases. They must not be generic, so that the consumer has to determine what the business event is for by trying to understand the payload. The design choice must allow for preservation of targeted business events.
 - **Noiseless** – The design should include very little effort to filter out noise. To make business events very specific, avoid writing filtering logic to filter out conditions that don't match the expected business event. The chosen approach must help guarantee that the business event is implemented in code at a sufficiently specific point so that no filtering of noise is required. Any attempt to filter noise by adding logic can affect performance and might also become complicated in specific use cases.
 
-The following tables compares capture at the business and table levels.
+The following table compares capture at the business and table levels.
 
 | Capture at the business logic level | Capture at the table level |
 |-------------------------------------|----------------------------|
