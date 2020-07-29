@@ -55,8 +55,8 @@ You can attach guides to various aspects of the production control including:
 - [Routes](#routeroutes-operationsmd) and [route versions](#route-versionroutes-operationsmdroute-versions)
 - [Route operation relations](#route-operation-relationroutes-operationsmdoperation-relations)
 
-> [!NOTE]
-> You can find additional options to attach Guides in the **Asset Management** domain.
+>[!NOTE]
+>You can use additional options to attach Guides in the **Asset Management** domain.
 >[Find more information here.](../asset-management/asset-management-guides-integration.md)
 
 When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the resolved guides](#resolving-logic-for-guides) on the job card. When the worker chooses a specific guide a QR renders code on the screen and Guides in HoloLens will then launch the instructions they need to do their work.
@@ -324,10 +324,10 @@ You can add Guides to the following production data: [Resource groups](#resource
 
 When Dynamics 365 SCM generates the jobs for the production floor it will collect the relevant Guides from these sources.
 
-> [!Note]
-  If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
+>[!Note]
+If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
 
-> [!Note]
-  If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
+>[!Note]
+If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
 
   :::image type="content" source="media/instruction-guides-Resolve.png" alt-text="Diagram on resolving the relevant Guides":::
