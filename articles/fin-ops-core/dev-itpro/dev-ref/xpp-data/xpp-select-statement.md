@@ -108,9 +108,10 @@ For more examples of data deletion, see [Delete data](xpp-select.md).
 
 The following symbols are used in the syntax:
 
-+ **\[\]** – Optional.
-+ **{}** – Zero or more.
-+ **\+** – One or more.
++ **\[\]** – Brackets enclose an optional element.
++ **{}** – Braces enclose an element that can be included zero or more times.
++ **\+** – A plus sign indicates an element that can be included one or more times.
++ **|** – A bar indicates options. 
 
 | Symbol                |   | Expression |
 |-----------------------|---|------------|
@@ -354,7 +355,7 @@ while select forceNestedLoop custGroup
 
 The **forcePlaceholders** keyword instructs the kernel **not** to reveal the actual values that are used in **where** clauses to the SQL Server database at the time of optimization. By default, this behavior is used in all statements that aren't **join** statements. The advantage of using this keyword is that the kernel can reuse the access plan for similar statements that have other search values. The disadvantage is that, although the access plan is computed, the fact that data distribution might be uneven isn't considered. The access plan is an on-average access plan. The **forcePlaceholders** and **forceLiterals** keywords are mutually exclusive.
 
-The following example iterates through the SalesTable table that is joined with the SalesLine table.
+The following example iterates through the **CustGroup** table that is joined with the **CustTable** table.
 
 ```xpp
 CustGroup custGroup;
