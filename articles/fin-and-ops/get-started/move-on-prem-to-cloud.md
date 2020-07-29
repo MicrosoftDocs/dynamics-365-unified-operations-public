@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-You can move your Microsoft Dynamics 365 for Finance and Oeprations environments from on-premises, i.e. hosted on your own infrastucture, to the Azure cloud. The following are the steps needed to do so.
+You can move your Microsoft Dynamics 365 for Finance and Operations environments from on-premises, i.e. hosted on your own infrastructure, to the Azure cloud. The following are the steps needed to do so.
 
 ## Cloud subscription licenses
 
@@ -39,12 +39,12 @@ If you do not already have cloud subscription licenses, work with your cloud ser
 
 ## Configure LCS cloud implementation project
 
-If these are the first Dynamics 365 for Finance and Operations cloud named user SLs being activated on the AAD tenant, a new LCS cloud inplementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on multiple LCS projects in an AAD tenant.
-Once your LCS cloud implemntation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on.
+If these are the first Dynamics 365 for Finance and Operations cloud named user SLs being activated on the AAD tenant, a new LCS cloud implementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on multiple LCS projects in an AAD tenant.
+Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on.
 
 ## Complete development and testing of updated integrations
 
-It is likely that you will need to make some changes to the integration design patterns you used for interfaces with your on-premises Finance and Operations environment. These changes could be substantial, and it is beyond the scope of this article to discuss them in detail. Nevertheless, you must evaluate each of your interfaces and make the appropriate changes to them. You should consider developing your updated interfaces such that they can coexist in the same code base as the originals, which will simplify code lifecycle management during your on-premises to cloud transition period. If this is not possible, then you will need to manage a new development branch through your cloud go-live. To simplify managmement of such a new branch during the transition period, it would be advisable to freeze other code changes to the maximum extent possible. You should also document carefully the steps for de-activation of your old interfaces and activation of the new ones, in your detailed cut-over plan.
+It is likely that you will need to make some changes to the integration design patterns you used for interfaces with your on-premises Finance and Operations environment. These changes could be substantial, and it is beyond the scope of this article to discuss them in detail. Nevertheless, you must evaluate each of your interfaces and make the appropriate changes to them. You should consider developing your updated interfaces such that they can coexist in the same code base as the originals, which will simplify code lifecycle management during your on-premises to cloud transition period. If this is not possible, then you will need to manage a new development branch through your cloud go-live. To simplify management of such a new branch during the transition period, it would be advisable to freeze other code changes to the maximum extent possible. You should also document carefully the steps for de-activation of your old interfaces and activation of the new ones, in your detailed cut-over plan.
 
 ## Conduct trial migration and resolve issues
 
@@ -83,23 +83,23 @@ UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
 
 1.	Deploy the new Production environment. Note that the normal prerequisites apply, including an active subscription estimator, completion of the LCS methodology phases prior to Operate, and completion of the FastTrack readiness review. See https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.
 2.	Apply the final version of the software deployable package to Production.
-3.	Stop making any further data changes to the on-premises Production environemnt.
+3.	Stop making any further data changes to the on-premises Production environment.
 4.	Repeat steps 3-6 of the trial migration to copy the final / up-to-date on-premises production database to the cloud sandbox.
 5. 	Repeat step 5 of the trial migration to copy the final / up-to-date document handling attachments to the cloud sandbox.
 6.	Request a DB refresh from sandbox to Production (i.e. the same process as promoting a golden configuration database to production).
 7.	Open a support request to have Dynamics Support Engineering copy the document handling attachments from the sandbox storage account to the production storage account and update the references in the production database's DocuValue and DocuDeletedValue tables. After the request has been completed, validate for a sample of document handling records that the attachments are available.
-8.	Set up Document Routing Agent(s) for production. If you are re-using any of the DRAs previosuly installed as part of your trial migration, remember to update their configuration to connect to the production URL instead of sandbox.
+8.	Set up Document Routing Agent(s) for production. If you are re-using any of the DRAs previously installed as part of your trial migration, remember to update their configuration to connect to the production URL instead of sandbox.
 9.	Reconcile, as detailed in your cut-over plan, your cloud and on-premises production environments.
 10.	Obtain sign off for the go-live.
 11. 	Activate cloud production interfaces, batch jobs, etc.
-12.	Start transacting in your cloud production environemnt.
+12.	Start transacting in your cloud production environment.
 
 ## Migrating document handling attachments to your sandbox
 
-Document handling attachments for Dynamics 365 for Finance and Operations on-premises are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For susbsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
+Document handling attachments for Dynamics 365 for Finance and Operations on-premises are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
 
 1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
-2. Get the storage account connection string for the sandbox, from the AzureStorage.StorageConnectionString key in the web.config file in the AOS webroot of the sandbox. Note that this config file is encrypted, so you will need to decrypt a copy of it to get the connection string. If you are unable to get this information (e.g. for a self-service envvironment), open a Support Request to get a (time-limited) SAS token for the documents container of the sandbox Azure storage account. You can then use this, instead of a connection string, to create the storage context in the PowerShell script below.
+2. Get the storage account connection string for the sandbox, from the AzureStorage.StorageConnectionString key in the web.config file in the AOS webroot of the sandbox. Note that this config file is encrypted, so you will need to decrypt a copy of it to get the connection string. If you are unable to get this information (e.g. for a self-service environment), open a Support Request to get a (time-limited) SAS token for the documents container of the sandbox Azure storage account. You can then use this, instead of a connection string, to create the storage context in the PowerShell script below.
 3. Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
   ```powershell
 #Upload F&O on-prem document handling attachments to Azure storage account
