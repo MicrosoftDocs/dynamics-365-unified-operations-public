@@ -73,6 +73,8 @@ The **Status** enumeration specifies the overall status of the order.
 
 The **Processing Status** enumeration was a special field that was introduced to more accurately map the status with Dynamics 365 Supply Chain Management.
 
+The following table shows mapping of **Processing Status** in Supply Chain Management.
+
 | Processing Status | Supply Chain Management Status | Supply Chain Management Document Status |
 | --------------------------- | -------------- | ----------------------- |
 | Active                      | Open Order     | None                    |
@@ -84,7 +86,7 @@ The **Processing Status** enumeration was a special field that was introduced to
 | Invoiced                    | Invoiced       | Invoiced                |
 | Cancelled                   | Cancelled      | n/a                     |
 
-## Mapping for Processing Status
+The following table shows the mapping of **Processing Status** between Dynamics 365 Sales and Supply Chain Management.
 
 | Processing Status | Sales Status | Supply Chain Management Status |
 | --------------------- | ------------- | --------------- |
