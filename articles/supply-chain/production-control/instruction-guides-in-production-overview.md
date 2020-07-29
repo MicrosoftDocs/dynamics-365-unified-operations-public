@@ -55,9 +55,9 @@ You can attach guides to various aspects of the production control including:
 - [Routes](#routeroutes-operationsmd) and [route versions](#route-versionroutes-operationsmdroute-versions)
 - [Route operation relations](#route-operation-relationroutes-operationsmdoperation-relations)
 
->[!NOTE]
->You can use additional options to attach Guides in the **Asset Management** domain.
->[Find more information here.](../asset-management/asset-management-guides-integration.md)
+> [!NOTE]
+> You can use additional options to attach Guides in the **Asset Management** domain.
+> [Find more information here.](../asset-management/asset-management-guides-integration.md)
 
 When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the resolved guides](#resolving-logic-for-guides) on the job card. When the worker chooses a specific guide a QR renders code on the screen and Guides in HoloLens will then launch the instructions they need to do their work.
 
@@ -224,10 +224,10 @@ You can add  a Guide to a resource so it will be offered in the context of relev
     Guides can also be attached to individual versions of a Formula. They are useful to help shop floor workers with guides instructions that walk through the production along specific version formula recipe.
 
     > [!TIP]
-    You can assign guidance relevant for production process based on this formula version to a route, route version or route operation relations.  
+    > You can assign guidance relevant for production process based on this formula version to a route, route version or route operation relations.  
 
     > [!NOTE]
-    Formula lines cannot be used to attach individual Guides at this point.
+    > Formula lines cannot be used to attach individual Guides at this point.
   
 - How to set up
 
@@ -307,7 +307,7 @@ You can add  a Guide to a resource so it will be offered in the context of relev
   Operation relations are the most specific way to add guidance to a product process and the related operations. You are able to specify guidance for each operation in a route and specify different guidance for any type of relation context that has been specified for a route, like for specific items, configuration and more. You can also specify to which stages in the operation the guidance applies, like setup, queueing, process, transport,...
 
   > [!NOTE]
-  If you specify guides in several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
+  > If you specify guides in several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
 
 - How to set up
 
@@ -326,12 +326,15 @@ You can add  a Guide to a resource so it will be offered in the context of relev
 
 You can add Guides to the following production data: [Resource groups](#resource-grouptasksdefine-discrete-manufacturing-resource-groupmd), [resources](#resourceoperations-resourcesmd), [released products](#release-productpimtaskscreate-released-product-single-company), [BOMs](#bill-of-materialbill-of-material-bommd) and [BOM versions](#bill-of-material-versionbill-of-material-bommdbom-and-formula-versions), [formulas](#formulabill-of-material-bommdformulas-co-products-and-by-products) and [formula versions](#formula-versionbill-of-material-bommdbom-and-formula-versions), [routes](#routeroutes-operationsmd) and [route versions](#route-versionroutes-operationsmdroute-versions), and [route operation relations](#route-operation-relationroutes-operationsmdoperation-relations).
 
-When Dynamics 365 SCM generates the jobs for the production floor it will collect the relevant Guides from these sources.
+When Dynamics 365 SCM generates the jobs for the production floor it will collect the relevant Guides from those sources. Please be aware of the following rules:
 
-> [!Note]
-If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
+> [!Important]
+> If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
 
-> [!Note]
-If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
+> [!Important]
+> If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
+
+> [!IMPORTANT]
+> If you define several Route Operation relations, which includes the 'All' relation and assign Guides to those, only the Guides from the most specific relation will be shown for the Job.  
 
 :::image type="content" source="media/instruction-guides-Resolve.png" alt-text="Diagram on resolving the relevant Guides":::
