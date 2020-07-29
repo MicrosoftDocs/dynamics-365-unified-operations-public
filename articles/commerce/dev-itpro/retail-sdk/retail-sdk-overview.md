@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 
 ---
 
@@ -45,36 +45,23 @@ The Retail software development kit (SDK) includes code, code samples, templates
 
 ### Download the Retail SDK
 
-The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
+The Retail SDK is available in development environments provisioned using LCS or the VHDs downloadable from LCS, and in hotfix packages deployed to the LCS environment. For more information check [how to provision a env in LCS](../../../dev-itpro/dev-tools/access-instances.md) and [Apply a deployable/Hotfix package](../../../dev-itpro/deployment/apply-deployable-package-system.md)
 
-- If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../../dev-itpro/dev-tools/access-instances.md). 
-- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Hotfixes are cumulative and includes all other fixes. 
+To access the Retail SDK, login to the development VM and navigate to K:\RetailSDK folder. New version of the Retail SDK can be obtained by applying any Commerce binary hotfix from LCS to the development environment, after the hotfix deployment the new version of the hotfix can be found inside the K:\RetailSDK\Update\ folder. 
 
-We recommend that you put the SDK in a source control system such as Visual Studio Online.
-
-### Rapid development
-
-The main focus of the Retail SDK is to help you write customizations efficiently and correctly. The SDK lets you run applications directly in a single-computer demo environment by using the F5 functionality (run and debug) in Microsoft Visual Studio. All the required "deployment chores" are done for you. Therefore, you don't have to copy any files.
+If the current version of the SDK contains some extensions then after upgrade config files and Extension projects needs to merged from the previous version of the SDK to the new version of the SDK, this steps is required only if your previous version of SDK includes extensions and its needs to migrated to the new version. Refer [Upgrade the Retail channel extension to the latest Retail SDK](../../../dev-itpro/RetailSDK-update.md) for detailed steps. Its recommend that SDK is integrated with any source control system such as Git or Azure repo.
 
 ### Full MSBuild integration
 
-The Retail SDK is a build system. A simple MSBuild command from the root of the SDK builds everything. This behavior eliminates guesswork about how and where to build from, and guarantees consistency and reproducibility. Therefore, the Retail SDK can easily be used together with any application lifecycle management (ALM) system, even Microsoft Visual Studio Online. This integration includes automation of the build.
+The Retail SDK is a build system. A simple MSBuild command from the root of the SDK builds everything. This behavior eliminates about how and where to build from, and guarantees consistency and reproducibility. Therefore, the Retail SDK can easily integrated with build pipeline like Azure DevOps pipeline for build.
 
-### Creation of final update packages, and better and explicit control over the customization
+[Set up Commerce SDK build pipeline](../../../dev-itpro/retail-sdk/SDK-build-pipeline.md)
 
-The Retail SDK includes tools that generate new packages that include everything that is required in order to deploy a service. For example, if the commerce runtime is extended with a new custom service dynamic-link library (DLL), the SDK automatically includes the new DLL in all appropriate packages (RetailServer and MPOSOffline). Or, if the database is extended, the upgrade script is automatically included in both RetailServer and MPOSOffline packages, because these are the packages that must (potentially) run the channel database update. 
+### Deployment packages
 
-Files that are shared exist only one time in the SDK. The packaging projects are set up in such a way that they pull in the right files for the package. Therefore, you edit a commerceruntime.config file in only one place. The same applies for deployment-related script files, even though these files rarely require customization.
+After commerce extension development (Commerce runtime, Retail server, Database scripts, POS and Hardware station) the Retail SDK can be used to generate deployment packages which can be deployed to test, sandbox and production environments. For more information refer [Create deployable packages](../../../dev-itpro/retail-sdk/retail-sdk-packaging.md)
 
-### Better code separation
-
-If the Retail SDK needs to be updated, a potential code merge is required. This requirement applies to existing code samples or templates that have been changed. Some features in the implementation and in the folder structure of the SDK help to provide an easy way to separate customized code from sample code. You can expect to see additional improvements to code separation in future releases.
-
-### Real-world implementation samples
-
-In addition to the source code of some of the Commerce implementations, the Retail SDK includes sample code that illustrates how certain scenarios should be implemented.
-
-## Retail SDK deep dive
+## Retail SDK components deep dive
 
 ### Prerequisites
 
