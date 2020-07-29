@@ -5,7 +5,7 @@ title: SST-02 declaration for Malaysia
 description: This topic explains how to configure and generate the SST-02 return form for Malaysia.
 author: sndray
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,24 +71,20 @@ After all the configurations are uploaded, the configuration tree should be pres
 ### Set up application-specific parameters
 The SST-02 return form includes a set of boxes (lines) that correspond to specific parts of the SST Return form. Each box should include information about SST amounts and operations. To include the requirements established by the form, you must configure each box with the proper information that is coming automatically from the sales tax transactions generated from sales, purchases, or other operations where SST tax is posted through the sales tax code configuration.
 
-The **Application-specific parameters** option lets the user establish the criteria of how the tax transactions will be collected and calculated in each box (line) of declaration form during the generation of report depending on the configuration of sales tax code.
+The **Application-specific parameters** option lets the user establish the criteria of how the tax transactions will be collected and calculated in each box of the declaration form when generating the report, depending on the configuration of sales tax code.
 
 1. In the Electronic reporting workspace, select **Configurations** > **Setup**. This action is used to set up the rules to identify the tax transaction in the related box of the SST-022 return form.
 2. Select the current version, and on the **Lookups** FastTab, select **ReportFieldLookup**. This lookup identifies the list of boxes in the SST-02 form required by the tax authority. 
-4. On the **Conditions** FastTab, select **Add**.
-5. In the new line created follow these steps:
-   a. In the **Lookup result** column, select the related line of SST-02 return form.
-   b. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of SST-02 return form.
-   c. In the **Name** column, select the tax transaction classification where the sales tax code is used
-6. Repeat the same steps for all SST-02 return form lines (boxes) and the combination of sales tax code and tax transaction types configured in your legal entity
-7. Select Add again, and then follow these steps to include the final record line
-   * In the **Lookup result** column, select the Other value.
-   * In the **Tax code (Code)** column, select the ***Not blank*** option;
-   * In the **Name** column, select the ***Not blank*** option as well
+3. On the **Conditions** FastTab, select **Add** and in the new line in the **Lookup result** column, select the related line of SST-02 return form.
+4.  In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of SST-02 return form.
+5. In the **Name** column, select the tax transaction classification where the sales tax code is used.
+6. Repeat 3 - 5 for all of the SST-02 return form lines (boxes) and the combination of sales tax code and tax transaction types configured in your legal entity.
+7. Select **Add** again, and in the **Lookup result** column, select **Other**.
+8. In the **Tax code (Code)** and **Name** columns, select **Not blank**.
 
-By adding this last record (Other), you define the following rule: Whenever the Tax code and Name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in SST-02 return form.  Although this rule is not used in the generation of the report,  introduced to avoid errors in report generation in case of missing rule configuration. 
+By adding the last record **Other**, you define the following rule: Whenever the **Tax code** and **Name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in SST-02 return form.  Although this rule is not used to generate the report, it does help to avoid errors in the generated report due to a missing rule configuration. 
 
-The table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation.
+The following table provides an example of potential configuration, but you can use another combination of tax code and name depending on the Finance implementation.
 
 | Form            | ReportFieldLookup                     |                                                                                                           |      |              |                          |
 |-----------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------|------|--------------|--------------------------|
@@ -126,7 +122,7 @@ The table below represents an example of potential configuration, but you can us
 | NOT APPLICABLE  | Other                                 | Other                                                                                                     |   31 | *No   blank* | *No   Blank*             |
 
   
-You need to repeat the above steps for Lookup name ReportFieldDetailed and the table below represents an example of potential configuration, but you can use another combination of tax code and name depending on the Dynamics Finance 365 implementation
+9. Repeat the previous steps for the lookup name, **ReportFieldDetailed**. The following table provides an example of a potential configuration, however you can use another combination of tax code and name depending on your Finance implementation
 
 | Form           | ReportFieldDetailed     |                                                                         |      |              |                 |
 |----------------|-------------------------|-------------------------------------------------------------------------|------|--------------|-----------------|
@@ -145,12 +141,12 @@ You need to repeat the above steps for Lookup name ReportFieldDetailed and the t
 | PART B1-10     | TaxableServices_B110    | Value   of Taxable Service                                              |   12 | SSTH         | SalesCreditNote |
 | NOT APPLICABLE | Other                   | Other                                                                   |   13 | *No   blank* | *No   Blank*    |
   
-Once the above configuration are done, In the State field, select **Completed** and **Save** and close the Application specific parameters page.
+10. After the comfinguration is complete, in the **State** field, select **Completed**, select **Save**, and then close the **Application specific parameters** page.
 
 > [!NOTE]
-> To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code SST5 you will be facing some issues when the report is generated. We recommend to use **Tax > Inquire > Posted sales tax** menu to review all sales tax codes posted and those one that are not included in this mapping of the configuration.
+> To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has ommitted the operations name, **SalesCreditNote** in this configuration, and tax transactions are posted by using sales tax code SST5, you will face some issues when the report is generated. We recommend that you go to **Tax** > **Inquire** > **Posted sales tax** to review all of the posted sales tax codes and those one that are not included in this mapping of the configuration.
 
-The following table provides a definition of column Name in order to understand how the tax transactions are classified:
+The following table provides a definition of the column **Name** to understand how the tax transactions are classified:
   
 
 | Classifier value                | Condition |
@@ -172,26 +168,27 @@ The following table provides a definition of column Name in order to understand 
   
 ## Set up General ledger parameters
 
-To generate the SST-02 return form report in Excel format you must define an ER format on the General ledger parameters page.
+To generate the SST-02 return form report in Excel you must define an ER format on the **General ledger parameters** page.
 
-1. Go to **Tax > Setup > General ledger parameters**.
-2. On the **Sales tax** tab, in the Tax options section, in the electronic reporting field, select SST-02 Declaration Excel (MY). If you leave the SST statement format mapping field blank, the standard sales tax report will be generated in SSRS format.
-3. Select the **Category hierarchy**. This category enables the **Commodity code** in **Foreign trade** tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **Electronic reporting** field, select **SST-02 Declaration Excel (MY)**. If you leave the **SST statement format mapping** field blank, the standard sales tax report will be generated in SSRS format.
+3. Select the **Category hierarchy**. This category enables the **Commodity code** on the **Foreign trade** tab to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
 
 ## Generate a SST-02 return report
 
-The process of preparing and submitting a SST-02 return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see Sales tax overview (https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview)
+The process of preparing and submitting a SST-02 return report for a period is based on sales tax payment transactions that were posted during the **Settle and post sales tax** job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md)
 
-Follow these steps to generate the tax declaration report.
+Complete the following steps to generate the tax declaration report.
 
-1. Go to **Tax > Declarations > Sales tax > Report sales tax for settlement period** or **Settle and post sales tax**
+1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period** or **Settle and post sales tax**
 2. Select the **Settlement period**.
-3. Select the "from" date.
-4. Select the sales tax payment version.
-5. Select OK to confirm the above steps.
-6. Select the **Type of report**
-	* SST for goods and services. 
-	* SST for goods. 
+3. Select the from date.
+4. Select the sales tax payment version and then select **OK** to save your changes.
+6. Select the repot type:
+
+	* SST for goods and services
+	* SST for goods
 	* SST for services
-6. Press OK to confirm the generation of report
+	
+6. Select **OK** to confirm and generate the report.
 		
