@@ -60,15 +60,17 @@ SELECT TENANTID from B2BINVITATIONCONFIG
 SELECT TENANTID from RETAILSHAREDPARAMETER
   ```
 4.	Copy the database from on-prem to online. The export and import process is as described in the golden configuration promotion tutorial at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig, except that the source database is the existing on-premises, production SQL database. For the import, it recommended to use the sqlpackage.exe approach. The target database credentials available in LCS will have to be provided.
-SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:[Azure SQL database server] /tdn:[target database name] /tu:[axdbadmin user from LCS] /tp:[axdbadmin password from LCS] /p:CommandTimeout=1200
+  ```powershell
+SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
+  ```
 5.  Restore the Admin account and AAD tenant ID information.
   ```sql
-UPDATE USERINFO SET SID='[preserved SID]', NETWORKALIAS='[preserved NETWORKALIAS]', NETWORKDOMAIN='[preserved NETWORKDOMAIN]', IDENTITYPROVIDER='[preserved IDENTITYPROVIDER]' WHERE ID = 'Admin'
-UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='[preserved VALUE]' where name = 'TENANTID'
-UPDATE POWERBICONFIG SET TENANTID='[preserverd TENANTID]'
-UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='[preserverd TENANTID]'
-UPDATE B2BINVITATIONCONFIG SET TENANTID='[preserverd TENANTID]'
-UPDATE RETAILSHAREDPARAMETER SET TENANTID='[preserverd TENANTID]'
+UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
+UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='<preserved VALUE>' where name = 'TENANTID'
+UPDATE POWERBICONFIG SET TENANTID='<preserverd TENANTID>'
+UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserverd TENANTID>'
+UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserverd TENANTID>'
+UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
   ```
 6.  Re-import all other users.
 7.	Set up Document Routing Agent(s).
