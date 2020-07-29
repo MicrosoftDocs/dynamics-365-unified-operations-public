@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -202,7 +202,7 @@ Although some management capabilities are surfaced on every page, as indicated i
 Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. In version 10.0.12 and later, a mechanism has been added for immediately publishing views when they are imported.
 
 ## Known issues
-For a list of known issues with saved views, please see [this](..\..\dev-itpro/user-interface/understanding-saved-views.md) article.
+For a list of known issues with saved views, please see [this](../../dev-itpro/user-interface/understanding-saved-views.md) article.
 
 ## Frequently asked questions
 
