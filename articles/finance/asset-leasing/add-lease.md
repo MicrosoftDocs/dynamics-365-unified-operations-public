@@ -196,4 +196,11 @@ Asset leasing lets you copy the details of a lease to create a new lease with th
  
 2. When you click **Copy**, the lease details from the selected lease will be copied over into a new lease where the user can edit the details before saving and creating the lease schedules.
 
+## Asset leasing journal
 
+All journal entries created in the Asset leasing module are contained in the Asset leasing journal (**Asset leasing > Journal entries> Asset leasing journal**). Use this page to filter by posting status, view specific journal entries and the vouchers, and post unposted journal entries.
+
+To view all journal entries created through Asset leasing, go to (**Asset leasing > Journal entries> Asset leasing journal**).
+
+> [!Note] 
+> The asset leasing journal can't be created manually. Asset leasing journals are created automatically when lease schedules are created.
