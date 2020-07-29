@@ -125,7 +125,7 @@ foreach ($file in Get-ChildItem $filesPath)
     if($blob)
     {
         #Write-Host "Processing $($file.Fullname)..."
-	      #FileHash:
+        #FileHash:
         $fileBytes = [System.IO.File]::ReadAllBytes($file.FullName)
         $hashBytes = $cryptoObj.ComputeHash($fileBytes)
         $encodedHash = [System.Convert]::ToBase64String($hashBytes)
@@ -143,7 +143,7 @@ foreach ($file in Get-ChildItem $filesPath)
         {
             $nameBytes  = [System.Text.Encoding]::UTF8.GetBytes($origFileName)
             $encodedName =  [System.Convert]::ToBase64String($nameBytes)
-	          #Write-Host "Base64 encoded original filename $encodedName."
+            #Write-Host "Base64 encoded original filename $encodedName."
             $blob.Metadata["FileHash"] = $encodedHash
             $blob.Metadata["FileSize"] = $file.Length
             $blob.Metadata["FullFileName"] = $encodedName
