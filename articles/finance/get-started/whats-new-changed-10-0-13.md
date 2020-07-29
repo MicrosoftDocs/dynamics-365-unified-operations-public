@@ -50,6 +50,7 @@ The following features are included in this release. The feature titles link to 
  - [Retained earnings calculation enhancements for financial reporting when using currency translation
  ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
  - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/trial-balance-transactional-detail-report)
+ - [Delegation of multiple purchasing work items](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
  - [Apply changes to 1099-NEC and 1099-MISC forms for 2020
  ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-changes-1099-nec-1099-misc-forms-2020)
   - [Cash flow forecast calculation – enhanced scheduling (via process automation)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/cash-forecast-calculation-enhanced-scheduling-via-process-automation)
@@ -57,7 +58,6 @@ The following features are included in this release. The feature titles link to 
  ### Public sector
  - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
  - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
- - [Delegation of multiple purchasing work items](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
  - [Associate 1099 default value to Main account](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
  
 ### Globalization features
