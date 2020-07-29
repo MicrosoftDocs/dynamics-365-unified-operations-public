@@ -3,7 +3,7 @@
 
 title: Set up the mapping for the sales order status fields
 description: This topic describes how to set up the sales order status fields for dual-write.
-author:  robinarh
+author:  dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
@@ -37,7 +37,7 @@ The sales order status fields have different enumeration values in Dynamics 365 
 
 ## Fields in Dynamics 365 Supply Chain Management
 
-In Dynamics 365 Supply Chain Management we have two different fields that reflect the status of the sales order. The fields you need to map are **Status** and **Document Status**.
+In Dynamics 365 Supply Chain Management there are two different fields that reflect the status of the sales order. The fields you need to map are **Status** and **Document Status**.
 
 The **Status** enumeration specifies the overall status of the order. This is the status you'll see in the header and gives you the overall status of the order.
 
@@ -48,7 +48,7 @@ The **Status** enumeration specifies the overall status of the order. This is th
 | Invoiced                |
 | Cancelled               |
 
-**Document Status** enumeration specifies what the latest document generated for the order is. So if the order is confirmed the latest document generated for it is a sales order confirmation. It's important to note that if a sales order is partially invoiced and then the remaining line is then confirmed the document status will still be 'Invoice' as the invoice is generated later in the process.
+**Document Status** enumeration specifies what the latest document generated for the order is. So if the order is confirmed the latest document generated for it is a sales order confirmation. If a sales order is partially invoiced and then the remaining line is confirmed, then the document status will still be **Invoice**, because the invoice is generated later in the process.
 
 | Document Status |
 | -------------------------------- |
@@ -59,7 +59,7 @@ The **Status** enumeration specifies the overall status of the order. This is th
 
 ## Fields in Dynamics 365 Sales
 
-In Dynamics 365 Sales we have different fields to indicate the status of the order. The fields you need to map are **Status** and **Processing Status**.
+In Dynamics 365 Sales there are different fields to indicate the status of the order. The fields you need to map are **Status** and **Processing Status**.
 
 The **Status** enumeration specifies the overall status of the order.
 
@@ -71,7 +71,7 @@ The **Status** enumeration specifies the overall status of the order.
 | Invoiced                |
 | Cancelled               |
 
-The **Processing Status** enumeration was a special field that was introduced to more accurately map the status with Dynamics 365 Supply Chain Management.
+The **Processing Status** enumeration was introduced to more accurately map the status with Dynamics 365 Supply Chain Management.
 
 The following table shows mapping of **Processing Status** in Supply Chain Management.
 
