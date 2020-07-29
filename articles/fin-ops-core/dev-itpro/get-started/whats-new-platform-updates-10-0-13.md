@@ -42,13 +42,13 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  Visual Studio tools require .NET 4.7.2 runtime<br>- For more information, see 
+-  Visual Studio tools require Microsoft .NET 4.7.2 runtime<br>- For more information, see 
 [Action required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 
 -  Priority-based throttling<br>- For more information, see 
 [Priority-based throttling](../data-entities/priority-based-throttling.md). 
 
--  [Saved views - general availablity](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
+-  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
 [Saved views](../../fin-ops/get-started/saved-views.md). 
 
 -  [New grid control - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
