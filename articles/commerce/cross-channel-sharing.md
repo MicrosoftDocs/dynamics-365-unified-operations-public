@@ -67,7 +67,7 @@ After enabling cross-channel sharing, cross-channel information will be visible 
 
 ![Channels information visible after enabling cross-channel sharing](./media/channels-cross-channel.png)
 
-After enabling cross-channel sharing, the **Channel** drop down menu options on the top right in site builder will also include a **Cross Channel Online Store** entry to manage cross-channel content, as show in the following image.
+After enabling cross-channel sharing, the **Channel** drop down menu options on the top right in site builder will include a **Cross Channel Online Store** item to manage cross-channel content, as show in the following image.
 
 ![Channels drop down menu after enabling cross-channel sharing](./media/cross-channel-dropdown.png)
 
@@ -89,7 +89,7 @@ This cross-channel fragment can be used on cross-channel or channel-specific pag
 
 ### Create a cross-channel page that uses cross-channel content
 
-Cross-channel pages are available for use on any channel of your site. This allows you to create a shared content page once and then make any subsequent updates in a single place. For example, a cross-channel "Terms and conditions" page with the URL "/toc" could be shared for all the channels of a site. If the base URLs for the site channels were www.fabrikam.com/brand1 and www.fabrikam.com/brand2, the same cross-channel shared "Terms and conditions" page would be available from both site channel URLs (www.fabrikam.com/brand1/toc and www.fabrikam.com/brand2/toc). If the "Terms and conditions" page needed to be updated later, you would only have to update the single, shared page. 
+Cross-channel pages are available for use on any channel of your site. This allows you to create a shared content page once and then make any subsequent updates in a single place. For example, a cross-channel "Terms and conditions" page with the URL "/toc" could be shared for all the channels of a site. If the base URLs for the site channels were `www.fabrikam.com/brand1` and `www.fabrikam.com/brand2`, the same cross-channel shared "Terms and conditions" page would be available from both site channel URLs (at `www.fabrikam.com/brand1/toc` and `www.fabrikam.com/brand2/toc` respectively). If the "Terms and conditions" page needed to be updated later, you would only have to update the single, shared page. 
 
 To create a cross-channel page in Commerce site builder that uses cross-channel content, follow these steps.
 
@@ -119,7 +119,7 @@ To create a channel-specific page in Commerce site builder that uses cross-chann
 
 ### Create a channel-specific version of a cross-channel page
 
-Cross-channel sharing supports the overriding of cross-channel content. For example, all of your channels share the exact same piece of content except one, which needs different content. To implement this for the exceptional channel, you would override the cross-channel content with channel-specific content by creating a channel-specific version of the cross-channel page.
+Cross-channel sharing supports the overriding of cross-channel content. For example, all of your site channels share the exact same piece of content except one, which needs different content. To implement the different content for the exceptional channel, you would override the cross-channel content with channel-specific content by creating a channel-specific version of the cross-channel page.
  
 To create a channel-specific version of a cross-channel page in Commerce site builder, follow these steps.
 
@@ -134,7 +134,7 @@ To create a channel-specific version of a cross-channel page in Commerce site bu
 1. Select **Save**, and then select **Preview** to preview the page. You should be able to see the promo banner that says "Channel-specific."
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-Now if you use the base URL of the channel and navigate to the URL of the cross-channel page on that site, you will see that you see the channel-specific content instead of the cross-channel content.
+Now if you use the base URL of the channel and navigate to the URL of the cross-channel page on that site, you will see the channel-specific content instead of the cross-channel content.
  
 ## Additional resources
 
