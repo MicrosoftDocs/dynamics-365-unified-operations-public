@@ -201,18 +201,18 @@ If you must simulate real data or the token that is returned from Commerce Serve
 
 ## Create a dynamic page mock from a production e-Commerce page
 
-You can create dynamic page mocks that mimic live e-Commerce site pages and are used locally to test module interaction, including mocking the signed-in state and other page contextual properties as required. This can be helpful to locally test out pages such as account pages and wishlist pages, or interactions such as order checkout flow.
+You can create dynamic page mocks that mimic live e-Commerce site pages and can be used locally to test module interaction. For example, these page mocks can mock the signed-in state and other page contextual properties as required. Therefore, they can be helpful when you locally test pages such as account pages and wishlist pages, or interactions such as order checkout flow.
 
 ### Save a live e-Commerce page's raw JSON structure
 
-The raw JSON structure of any live e-Commerce page can be captured and saved to be used as a page mock. To do this, navigate to the e-Commerce site page you want to capture and sign in if the signed-in state is desired. Next, append the query string parameter `?item=nodeserviceproxy:true` to the page URL and then reload the page to obtain the raw page context JSON.
+The raw JavaScript Object Notation (JSON) structure of any live e-Commerce page can be captured and saved so that it can be used as a page mock. Open the e-Commerce site page that you want to capture, and sign in if the signed-in state is desired. Next, append the query string parameter `?item=nodeserviceproxy:true` to the page URL, and then reload the page to obtain the JSON of the raw page context.
 
 > [!NOTE]
-> You will need to have secure Azure Active Directory (Azure AD) access to your production site for this operation to work and you may be prompted to sign in if you are not signed in already. Use the same Azure AD account you use to sign into Commerce site builder.
+> For this operation to work, you must have secure Azure Active Directory (Azure AD) access to your production site, and you might be prompted to sign in if you aren't already signed. Use the same Azure AD account that you use to sign in to Commerce site builder.
 
-Next, in your development environment create a new page mock JSON file under the **src/pageMocks** directory and copy the JSON file obtained from the capture and save operation  into it. 
+Next, in your development environment, create a new page mock JSON file under the **src/pageMocks** directory. Paste in the JSON file that you obtained from the capture and save operation. 
 
-The structure of the JSON file should have sections similar to those shown in the example below, including the **pageRoot** section which defines the set of modules for the page and the **renderingContext** section which includes the **user** context for signed-in user information.
+The structure of the JSON file should have sections that resemble the sections in the following example. These sections should include the **pageRoot** section that defines the set of modules for the page and the **renderingContext** section that includes the **user** context for signed-in user information.
 
 ```
 {
@@ -234,7 +234,7 @@ The structure of the JSON file should have sections similar to those shown in th
 }
 ```
 
-To test out the page mock locally, start your Node server with **yarn start** command and navigate to the page mock using the following URL format: `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file without the **.json** file name extension.
+To test the page mock locally, start your Node server by using **yarn start** command. Access the page mock by using the URL format `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file without the **.json** file name extension.
 
 You can now modify the page mock as desired.
 
