@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.13 of Finance and Operations apps (Octo
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,27 +43,22 @@ This topic lists the features that are included in the platform updates for vers
 ## Features included in this release
 
 -  Visual Studio tools require .NET 4.7.2 runtime<br>- For more information, see 
-[Action Required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
+[Action required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 
 -  Priority-based throttling<br>- For more information, see 
 [Priority-based throttling](../data-entities/priority-based-throttling.md). 
 
--  [Saved views - general availablity](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
-[Saved views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/saved-views). 
+-  [Saved views - general availablity](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
+[Saved views](../../fin-ops/get-started/saved-views.md). 
 
--  [New grid control - general availability](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
-[Grid capabilities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities). 
+-  [New grid control - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
+[Grid capabilities](../../fin-ops/get-started/grid-capabilities.md). 
 
 -  [Upgrade three jQuery components libraries](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=40cfa04e-e5bb-ea11-a812-000d3a579c39)<br>- This feature is targeted to be required with the April 2021 release, so be sure to read the feature description for more information.   
 
--  [Allow validation of control state in task recordings](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the Validate section in 
-[Task recorder resources](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder#validate). 
+-  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the Validate section in 
+[Task recorder resources](../user-interface/task-recorder.md#validate). 
 
--  [Feature name](URL to the feature description in the Release Plans)<br>- For more information, see 
-[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
-
--  [Feature name](URL to the feature description in the Release Plans)<br>- For more information, see 
-[Article name](URL to the docs.microsoft.com article that has more details about the feature). 
 
 ## Additional resources
 
