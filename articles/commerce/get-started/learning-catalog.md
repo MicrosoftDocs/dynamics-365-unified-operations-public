@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Commerce
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 

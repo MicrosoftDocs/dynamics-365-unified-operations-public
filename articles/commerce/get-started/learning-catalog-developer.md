@@ -1,10 +1,10 @@
 ---
 title: Developer Learning Catalog
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Developer Learning Catalog
+# Commerce Developer Learning Catalog
 
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 

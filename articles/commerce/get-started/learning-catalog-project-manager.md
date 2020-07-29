@@ -1,10 +1,10 @@
 ---
 title: Implementation Project Manager Learning Catalog
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Implementation Project Manager Learning Catalog
+# Commerce Implementation Project Manager Learning Catalog
 
 Are you in charge of making sure your company’s implementation goes smoothly?
 

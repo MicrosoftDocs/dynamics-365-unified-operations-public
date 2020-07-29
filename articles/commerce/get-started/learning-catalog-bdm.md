@@ -1,10 +1,10 @@
 ---
 title: Business and Technical Decision Makers Learning Catalog
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.date: 07/27/2020
 ms.topic: article
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Business and Technical Decision Makers Learning Catalog
+# Commerce Business and Technical Decision Makers Learning Catalog
 
 Do you decide whether to invest in new technologies?
 

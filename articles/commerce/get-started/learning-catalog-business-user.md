@@ -1,10 +1,10 @@
 ---
 title: Business Users Learning Catalog
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Business Users Learning Catalog
+# Commerce Business Users Learning Catalog
 
 Did you just get a new application to use?
 

@@ -1,10 +1,10 @@
 ---
 title: Administrators Learning Catalog
 description: Find all the training options for Commerce.
-author: kimlandisohio
+author: margoc
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: v-kimbla
+ms.author: margoc
 
 # optional metadata
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
 
-# Administrators Learning Catalog
+# Commerce Administrators Learning Catalog
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
