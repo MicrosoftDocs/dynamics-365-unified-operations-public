@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a lease
-description: The describes the steps required to create a new lease and record information for it in Asset leasing.
+description: This topic describes the steps required to create a new lease by entering information for it in Asset leasing, or by copying information from an existing lease.
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/28/2020
