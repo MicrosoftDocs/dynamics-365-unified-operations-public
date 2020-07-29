@@ -80,7 +80,7 @@ You can use a **select** statement in a lookup on a field. After a **select** st
 + The field **select** statement operates directly on a table.
 + The normal **select** statement operates on a table buffer variable.
 
-The following examples show fields.
+The following examples shows how to access fields from a select statement.
 
 ```xpp
 print((select CustTable order by AccountStatement).AccountStatement);
