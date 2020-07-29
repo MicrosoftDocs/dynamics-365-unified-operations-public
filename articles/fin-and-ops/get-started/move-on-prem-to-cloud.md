@@ -63,7 +63,7 @@ SELECT TENANTID from RETAILSHAREDPARAMETER
   ```powershell
 SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
   ```
-5.  Restore the Admin account and AAD tenant ID information.
+5. 	Restore the Admin account and AAD tenant ID information.
   ```sql
 UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
 UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='<preserved VALUE>' where name = 'TENANTID'
@@ -72,12 +72,12 @@ UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserverd TENANTID>'
 UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserverd TENANTID>'
 UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
   ```
-6.  Re-import all other users and assign the appropriate security roles.
-7.  Direct printing in a cloud environment is accomplished via the Document Routing Agent (DRA). Set up sandbox DRA(s), as described at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent, so that regression testing can include your printing scenarios.
-8.  Copy document handling attachments to the cloud. Document handling attachments are not stored in the database, and must be moved separately, if there is a need to preserve them. See the section below for a detailed description of how to do this.
+6. 	Re-import all other users and assign the appropriate security roles.
+7. 	Direct printing in a cloud environment is accomplished via the Document Routing Agent (DRA). Set up sandbox DRA(s), as described at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent, so that regression testing can include your printing scenarios.
+8. 	Copy document handling attachments to the cloud. Document handling attachments are not stored in the database, and must be moved separately, if there is a need to preserve them. See the section below for a detailed description of how to do this.
 9.	Run a complete regression test cycle, including of integrations.
 10.	Resolve any issues. For any discovered during testing, document and keep track of correcting adjustments in Sandbox and repeat them in the on-premises source. If any change may not be made in the on-premises environment (i.e. would be incompatible with its correct functioning), it is recommended to create a DMF data package for it, rather than to apply it manually for each iteration of the migration process.
-11. Iterate steps 2-10, until all tests have passed, and no further changes are being made to code or configuration.
+11.	Iterate steps 2-10, until all tests have passed, and no further changes are being made to code or configuration.
 
 ## Repeat migration to Production 
 
@@ -85,7 +85,7 @@ UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
 2.	Apply the final version of the software deployable package to Production.
 3.	Stop making any further data changes to the on-premises Production environment.
 4.	Repeat steps 3-6 of the trial migration to copy the final / up-to-date on-premises production database to the cloud sandbox.
-5. 	Repeat step 5 of the trial migration to copy the final / up-to-date document handling attachments to the cloud sandbox.
+5. 	Repeat step 8 of the trial migration to copy the final / up-to-date document handling attachments to the cloud sandbox.
 6.	Request a DB refresh from sandbox to Production (i.e. the same process as promoting a golden configuration database to production).
 7.	Open a support request to have Dynamics Support Engineering copy the document handling attachments from the sandbox storage account to the production storage account and update the references in the production database's DocuValue and DocuDeletedValue tables. After the request has been completed, validate for a sample of document handling records that the attachments are available.
 8.	Set up Document Routing Agent(s) for production. If you are re-using any of the DRAs previously installed as part of your trial migration, remember to update their configuration to connect to the production URL instead of sandbox.
@@ -98,9 +98,9 @@ UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
 
 Document handling attachments for Dynamics 365 for Finance and Operations on-premises are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
 
-1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
-2. Get the storage account connection string for the sandbox, from the AzureStorage.StorageConnectionString key in the web.config file in the AOS webroot of the sandbox. Note that this config file is encrypted, so you will need to decrypt a copy of it to get the connection string. If you are unable to get this information (e.g. for a self-service environment), open a Support Request to get a (time-limited) SAS token for the documents container of the sandbox Azure storage account. You can then use this, instead of a connection string, to create the storage context in the PowerShell script below.
-3. Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
+1.	Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
+2.	Get the storage account connection string for the sandbox, from the AzureStorage.StorageConnectionString key in the web.config file in the AOS webroot of the sandbox. Note that this config file is encrypted, so you will need to decrypt a copy of it to get the connection string. If you are unable to get this information (e.g. for a self-service environment), open a Support Request to get a (time-limited) SAS token for the documents container of the sandbox Azure storage account. You can then use this, instead of a connection string, to create the storage context in the PowerShell script below.
+3.	Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
   ```powershell
 #Upload F&O on-prem document handling attachments to Azure storage account
 #
@@ -156,7 +156,7 @@ foreach ($file in Get-ChildItem $filesPath)
     }    
 }
   ```
-4. Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
+4.	Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
   ```sql
 update DOCUVALUE
   set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
@@ -170,4 +170,4 @@ update DOCUDELETEDVALUE
 where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
   and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
   ```
-5. Test a sample of the document handling attachments to ensure they are now accessible in the sandbox environment.
+5.	Test a sample of the document handling attachments to ensure they are now accessible in the sandbox environment.
