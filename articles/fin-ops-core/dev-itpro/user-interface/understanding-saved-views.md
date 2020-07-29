@@ -81,7 +81,7 @@ While most forms will work well with saved views, there are some areas that may 
 -    Looking forward, in the long-term, views are meant to replace modeled secondary list pages.  
      -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views. However, that effort hasn't yet been started. 
 
-     -  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
+     -  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
 
 ## Known issues
 This section provides a list of known issues for saved views while the feature is in a preview state.
