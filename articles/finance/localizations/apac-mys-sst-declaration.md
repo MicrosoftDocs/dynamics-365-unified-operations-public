@@ -5,7 +5,7 @@ title: SST-02 declaration for Malaysia
 description: This topic explains how to configure and generate the SST-02 return form for Malaysia.
 author: sndray
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
 
-The SST-02 return form is the official electronic form to declare and pay indirect taxes (SST) grouped by specific classifications as is described in the legislation by the tax authorities. Registered manufacturers and legal persons must declare SST-02 returns form every two months according to the taxable period. The SST replaces the existing Goods and Services Tax (GST) and affects all domestic and import operations.
+The SST-02 return form is the official electronic form to declare and pay indirect taxes (SST) grouped by specific classifications as is described in the legislation by the tax authorities. Registered manufacturers and legal persons must declare SST-02 returns every two months according to the taxable period. The SST replaces the existing Goods and Services Tax (GST) and affects all domestic and import operations.
 
 The SST-02 form report in Dynamics 365 Finance includes the following reports:
 
-* Part B1: Detailed transactions by tariff code and service type.
+* Part B1: Detailed transactions by tariff code and service type
 * Part B2: Consolidated amounts in accordance with layout proposed by Malaysian government
 
 ## Prerequisites
@@ -46,7 +46,7 @@ The primary address of the legal entity must be in Malaysia.
 
 ## Features enabling
 
-In the Feature management workspace, enable the following features: **(Malaysia) Category hierarchy for Sales and purchase tax report.**
+In the **Feature management** workspace, enable the feature, **(Malaysia) Category hierarchy for Sales and purchase tax report.**
 
 For more information about how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -54,27 +54,27 @@ For more information about how to enable features, see [Feature management overv
 
 The implementation of SST-02 return form for Malaysia is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in Download Electronic reporting configurations from Lifecycle Services to download ER configurations.
+For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-To generate the SST-02 return form and related reports in Malaysia legal entity,  you need to upload the following configurations:
-	• Tax declaration model.version.67.xml 
-	• Tax declaration model mapping.version.67.93.xml 
-	• SST-02 Declaration Excel (MY).version.67.3.xml  or a later versions
+To generate the SST-02 return form and the related reports in Malaysia legal entity, you need to upload the following configurations:
+
+- Tax declaration model.version.67.xml 
+- Tax declaration model mapping.version.67.93.xml 
+- SST-02 Declaration Excel (MY).version.67.3.xml  or a later versions
  
-After you've finished downloading the ER configurations from LCS or Global repository, follow these steps.
+After you've finished downloading the ER configurations from LCS or Global repository, complete the following steps.
 
 1. In Dynamics 365 Finance in the Electronic reporting workspace, select the **Reporting configurations** tile. 
-2. Then, on the Configurations page, on the Action Pane, select **Exchange > Load from XML file**, and upload all the files in the order in which they are listed in the previous bullets.
-3. After all the configurations are uploaded, the configuration tree should be present in Finance and Operations.
+2. On the **Configurations** page, on the Action Pane, select **Exchange** > **Load from XML file**, and upload all the files in the order in which they are listed in the previous bullets.
+After all the configurations are uploaded, the configuration tree should be present in Finance.
 
 ### Set up application-specific parameters
-The SST-02 return form includes a set of boxes (lines) which correspond to specific parts of the SST Return form. Each box should include information about SST amounts and operations. In order to include the requirements established by the form, the user needs to configure each box with the proper information that is coming automatically from sales tax transactions generated from sales , purchase or other operations where SST tax is posted through the sales tax code configuration.
+The SST-02 return form includes a set of boxes (lines) that correspond to specific parts of the SST Return form. Each box should include information about SST amounts and operations. To include the requirements established by the form, you must configure each box with the proper information that is coming automatically from the sales tax transactions generated from sales, purchases, or other operations where SST tax is posted through the sales tax code configuration.
 
-The **Application-specific parameters** option let the users to establish the criteria of how the tax transactions will be collected and calculated in each box (line) of declaration form during the generation of report depending on the configuration of sales tax code .
+The **Application-specific parameters** option lets the user establish the criteria of how the tax transactions will be collected and calculated in each box (line) of declaration form during the generation of report depending on the configuration of sales tax code.
 
-1. In the Electronic reporting workspace, select **Configurations > Setup**. This action is used to setup the rules to identify the tax transaction into the related box of SST-022 return form.
-2. Select the current version
-3. On the **Lookups** FastTab select the Lookup name ***ReportFieldLookup***. This lookup identifies the list of lines (boxes) in the SST-02 form required by tax authority . 
+1. In the Electronic reporting workspace, select **Configurations** > **Setup**. This action is used to set up the rules to identify the tax transaction in the related box of the SST-022 return form.
+2. Select the current version, and on the **Lookups** FastTab, select **ReportFieldLookup**. This lookup identifies the list of boxes in the SST-02 form required by the tax authority. 
 4. On the **Conditions** FastTab, select **Add**.
 5. In the new line created follow these steps:
    a. In the **Lookup result** column, select the related line of SST-02 return form.
