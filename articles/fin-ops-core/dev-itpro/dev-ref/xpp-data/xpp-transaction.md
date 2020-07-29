@@ -43,7 +43,7 @@ If you don't take steps to ensure the integrity of transactions, data corruption
 
 The following statements are used to help ensure integrity:
 
-- **ttsBegin** – This statement marks the beginning of a transaction. It helps ensure data integrity and also helps ensure that all updates that are done until the transaction ends (through **ttsCommit** or **ttsAbort**) are consistent (all or none).
+- **ttsBegin** – This statement marks the beginning of a transaction. It helps ensure data integrity and also helps ensure that all updates that are done until the transaction ends (through **ttsCommit** or **ttsAbort**) are consistent.
 - **ttsCommit** – This statement marks the successful end of a transaction. It ends and commits a transaction. The Finance and Operations app ensures that a transaction that has been committed will be performed according to intentions.
 - **ttsAbort** – This statement lets you explicitly discard all changes in the current transaction. In this case, the database is rolled back to the original state, where nothing has been changed. Typically, you use this statement if you've detected that the user wants to break the current job. The **ttsAbort** statement helps ensure that the database is consistent.
 
