@@ -115,15 +115,16 @@ Before you can attach guides to Asset management work orders, you must complete 
 
 - [Turn on dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management apps.
 
-- [Turn on flight](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#features-flighted-in-data-management-and-enabling-flighted-features) for the MRGuidesFeature feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
+- [Turn on flight](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#features-flighted-in-data-management-and-enabling-flighted-features) for the MRGuidesFeature feature. (This is required until public release in Fall 2020. For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
 
 - [Turn on the following configuration keys](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the License configuration page:
 
   - Mixed reality > Mixed reality guide
   - Production management > Production instructions
-  - [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
+  
+- [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
 
-#### Configure how guides appear on the shop floor
+### Configure how guides appear on the shop floor
 
 Navigate to Mixed Reality / Dynamics 365 Guides / Configure Guides integration. You should see the field CDS environment subdomain filled in. This field holds the subdomain for the Common Data Service (CDS) environment where you create your Guides. The subdomain is the first part of the CDS URL and is typically named after your organization. For example, if your CDS URL is "contoso.crm4.dynamics.com", you should enter "contoso" here.
 The value is used to compose addresses for your guides and will be encoded into the QR codes.
@@ -141,8 +142,6 @@ You can use the field QR code error correction level to influence the granularit
 
 :::image type="content" source="media/instruction-guides-configure-integration.png" alt-text="Configure Guide integration for manufacturing":::
 
-### Use Dynamics 365 Guides
-
 ### Managing instructions within Dynamics 365 SCM using Guides
 
 Use the global Guides management form to see the list of all available Guides in your organization and all assignments to your production processes and resources.
@@ -154,7 +153,7 @@ You can also assign Guides to the following objects directly to prescribe the in
 
 #### [Resource](operations-resources.md)
 
-    You can add  a Guide to a resource so it will be offered in the context of relevant production jobs.
+You can add  a Guide to a resource so it will be offered in the context of relevant production jobs.
 
 - Typical use case
 
@@ -224,10 +223,12 @@ You can also assign Guides to the following objects directly to prescribe the in
   
     Guides can also be attached to individual versions of a Formula. They are useful to help shop floor workers with guides instructions that walk through the production along specific version formula recipe.
 
-    > [!TIP] You can assign guidance relevant for production process based on this formula version to a route, route version or route operation relations.  
+    > [!TIP]
+    You can assign guidance relevant for production process based on this formula version to a route, route version or route operation relations.  
 
-    > [!NOTE] Formula lines cannot be used to attach individual Guides at this point.
-
+    > [!NOTE]
+    Formula lines cannot be used to attach individual Guides at this point.
+  
 - How to set up
 
     Navigate to Formula form and open the Header section. In Formula Versions tab on header section of the Formula form select a version.
@@ -274,47 +275,50 @@ You can also assign Guides to the following objects directly to prescribe the in
 
 - Typical use cases
 
-  Routes are typically used to specify how a certain release product shall be produced based on a BOM or BOM version and with a set of resources or resource groups.
-  You can assign a Guide to a  route in order to provide step by step instructions for the respective production process.
+    Routes are typically used to specify how a certain release product shall be produced based on a BOM or BOM version and with a set of resources or resource groups.
+    You can assign a Guide to a  route in order to provide step by step instructions for the respective production process.
 
 - How to set up
 
-  Navigate to Route form and in the Associated Guides tab add, remove or manage the associated Guides.
+    Navigate to Route form and in the Associated Guides tab add, remove or manage the associated Guides.
   
-  :::image type="content" source="media/instruction-guides-Route.png" alt-text="Accessing the associated  Guides on a BOM version.":::
+    :::image type="content" source="media/instruction-guides-Route.png" alt-text="Accessing the associated  Guides on a BOM version.":::
 
 ##### [Route Version](routes-operations.md#route-versions)
 
 - Typical use cases
-    Routes versions are typically used to specify variants of production processes based on an existing route. You can assign a different Guides to each route version.
+
+  Routes versions are typically used to specify variants of production processes based on an existing route. You can assign a different Guides to each route version.
 
 - How to set up
 
-    Navigate to Route form and in the Versions tab select a route version.
+  Navigate to Route form and in the Versions tab select a route version.
 
-    :::image type="content" source="media/instruction-guides-RouteVersion.png" alt-text="Accessing the associated  Guides on a BOM version.":::
+  :::image type="content" source="media/instruction-guides-RouteVersion.png" alt-text="Accessing the associated  Guides on a BOM version.":::
 
-    The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
+  The button Associated Guides opens a view where you can add, remove or manage the associated Guides.
 
-    :::image type="content" source="media/instruction-guides-RouteVersionAddGuide.png" alt-text="Adding a Guide to a BOM version.":::
+  :::image type="content" source="media/instruction-guides-RouteVersionAddGuide.png" alt-text="Adding a Guide to a BOM version.":::
 
 ##### [Route Operation Relation](routes-operations.md#operation-relations)
 
 - Typical use cases
+
   Operation relations are the most specific way to add guidance to a product process and the related operations. You are able to specify guidance for each operation in a route and specify different guidance for any type of relation context that has been specified for a route, like for specific items, configuration and more. You can also specify to which stages in the operation the guidance applies, like setup, queueing, process, transport,...
 
-  > [!NOTE] If you specify guides in several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
+  > [!NOTE]
+  If you specify guides in several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
 
 - How to set up
 
-   Navigate top the route form and in the action bar select the action group Route, under Maintain click on Route details.
-   In the route detail form select in the top section the operation you like to provide dedicated guidance for. And in the bottom grid select the specific relation or the generic All relation.
+  Navigate top the route form and in the action bar select the action group Route, under Maintain click on Route details.
+  In the route detail form select in the top section the operation you like to provide dedicated guidance for. And in the bottom grid select the specific relation or the generic All relation.
 
-    :::image type="content" source="media/instruction-guides-RouteOperationRelation.png" alt-text="Accessing the associated Guides on a route operation relation.":::
+  :::image type="content" source="media/instruction-guides-RouteOperationRelation.png" alt-text="Accessing the associated Guides on a route operation relation.":::
 
-    Use the Associated Guides button to add, remove or manage the associated Guides. You can add one or more guides and specify for each the relevant  stages of the operation.
+  Use the Associated Guides button to add, remove or manage the associated Guides. You can add one or more guides and specify for each the relevant  stages of the operation.
 
-    :::image type="content" source="media/instruction-guides-RouteOperationRelation-AddGuide.png" alt-text="Adding a Guide to a route operation relation and relevant stages of the operation.":::
+  :::image type="content" source="media/instruction-guides-RouteOperationRelation-AddGuide.png" alt-text="Adding a Guide to a route operation relation and relevant stages of the operation.":::
 
 ### Instructions in the shop floor experience
 
@@ -324,10 +328,10 @@ You can add Guides to the following production data: [Resource groups](#resource
 
 When Dynamics 365 SCM generates the jobs for the production floor it will collect the relevant Guides from these sources.
 
->[!Note]
+> [!Note]
 If you attach a BOM/Formula version to a route or production order that any Guide attached to this version and also the Guides attached to the parent BOM/Formula of that version will be shown on the job.
 
->[!Note]
+> [!Note]
 If you attach a Route version to a production order that any Guide attached to this version and also the Guides attached to the parent Route of that version will be shown on the job.
 
-  :::image type="content" source="media/instruction-guides-Resolve.png" alt-text="Diagram on resolving the relevant Guides":::
+:::image type="content" source="media/instruction-guides-Resolve.png" alt-text="Diagram on resolving the relevant Guides":::
