@@ -183,7 +183,7 @@ You can choose how strict the system should be when validating quantities entere
 
 Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each FastTab has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
 
-### Enable this feature
+### Enable the strict validation option
 
 Before you can use the strict validation option, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
 
