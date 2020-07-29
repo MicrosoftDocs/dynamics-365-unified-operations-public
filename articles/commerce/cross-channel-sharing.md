@@ -46,7 +46,7 @@ Cross-channel sharing is useful when there are multiple channels on a single sit
 
 For example, a retailer with multiple brands and storefronts that are grouped under a single site could share some content between some or all of the storefronts. This shared content could include pages such as terms and conditions, payment terms, shipment methods, and frequently asked questions (FAQ). 
 
-Cross-channel sharing also supports fragments, which allows a content page containing channel-specific fragments to be created as cross-channel content. This means that while most of the content would shared between channels, channel-specific fragments on a cross-channel page would only be rendered when requested from the corresponding storefront channel.
+Cross-channel sharing also supports fragments, which allows a content page containing channel-specific fragments to be created as cross-channel content. This means that while most of the content would be shared between channels, channel-specific fragments on a cross-channel page would only be rendered when requested from the corresponding storefront channel.
 
 Sites with only a single channel or multiple channels that can't share content do not benefit from cross-channel sharing.
 
@@ -67,9 +67,9 @@ After enabling cross-channel sharing, cross-channel information will be visible 
 
 ![Channels information visible after enabling cross-channel sharing](./media/channels-cross-channel.png)
 
-After enabling cross-channel sharing, the **Channel** drop down menu options on the top right in site builder will include a **Cross Channel Online Store** item to manage cross-channel content, as show in the following image.
+After enabling cross-channel sharing, the **Channel** drop-down menu options on the top right in site builder will include a **Cross Channel Online Store** item to manage cross-channel content, as show in the following image.
 
-![Channels drop down menu after enabling cross-channel sharing](./media/cross-channel-dropdown.png)
+![Channels drop-down menu after enabling cross-channel sharing](./media/cross-channel-dropdown.png)
 
 ## Create and use cross-channel content
 
@@ -123,9 +123,9 @@ Cross-channel sharing supports the overriding of cross-channel content. For exam
  
 To create a channel-specific version of a cross-channel page in Commerce site builder, follow these steps.
 
-1. From the **Channel** drop down menu at the top right of site builder, select **Cross Channel Online Store**. 
+1. From the **Channel** drop-down menu at the top right of site builder, select **Cross Channel Online Store**. 
 1. Open the cross-channel page you created earlier. 
-1. From the **Channel** drop down menu at the top right, select the channel that you want to have specific content. The page editor will display a message prompting you to create new page variant. 
+1. From the **Channel** drop-down menu at the top right, select the channel that you want to have specific content. The page editor will display a message prompting you to create new page variant. 
 1. Select **Create page variant**.
 1. In the **Main** slot of the page variant, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Promo banner** module, and then select **OK**.
