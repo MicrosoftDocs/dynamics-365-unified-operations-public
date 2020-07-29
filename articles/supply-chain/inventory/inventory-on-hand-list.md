@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory on-hand list
-description: This topic describes how to use the On-hand list page to inspect on-hand inventory details. It points out a few of the ways that the various filtering and sorting options work together, and how they can sometimes combine to produce unexpected results.
+description: This topic describes how to use the On-hand list page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
 author: sherry-zheng
 manager: tfehr
 ms.date: 07/07/2020
@@ -31,122 +31,122 @@ ms.dyn365.ops.version: Release 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the **On-hand list** page to inspect on-hand inventory details. It points out a few of the ways that the various filtering and sorting options work together, and how they can sometimes combine to produce unexpected results.
+This topic describes how to use the **On-hand list** page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
 
 ## Query your on-hand inventory
 
-To check the inventory availability, go to **Inventory management \> Inquiries and reports \> On-hand list**.
+To check the availability of inventory, go to **Inventory management \> Inquiries and reports \> On-hand list**.
 
-The inventory **On-hand list** pageupdates automatically when transactions are made in the inventory, whether they are forecasted, physical, or financial transactions.
+The **On-hand list** page is automatically updated when transactions are made in inventory. Those transactions might be forecasted, physical, or financial transactions.
 
-Use the following tools to find the set of products you are looking for:
+Use the following tools to find the set of products that you're looking for:
 
-- Select [**Dimensions**](#dimensions) on the Action Pane to open a dialog box where you can add or remove columns displayed in the **On-hand** grid.
-- On the [**Filters** pane](#filters-pane), enter value for specific fields to only show records that match those values. Note that the filters here apply to source tables that may be aggregated later according to the dimensions you've chosen to display. See the [examples provided later](#examples) to learn how this can affect your results.
-- Select **Apply** on the **Filters** pane to generate the list of matching on-hand inventory in the **On-hand** grid.
-- Select any column heading in the **On-hand** grid to sort or filter by values in that column. A quick filter at the top of the grid also gives additional filtering options. These filters apply to the results (not the source tables). See the [examples provided later](#examples) to learn how this can affect your results.
+- On the Action Pane, select [**Dimensions**](#dimensions) to open a dialog box where you can add or remove columns that are shown in the **On-hand** grid.
+- In the [**Filters** pane](#filters-pane), enter values for specific fields to show only records that match those values. Note that filters that you define here apply to source tables that might be aggregated later, according to the dimensions that you've selected to show. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+- In the **Filters** pane, select **Apply** to generate the list of matching on-hand inventory in the **On-hand** grid.
+- In the **On-hand** grid, select any column heading to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
 
-The **On-hand** grid provides the following columns of inventory information for each matching item:
+For each matching item, the **On-hand** grid provides the following columns of inventory information.
 
-| **Column** | **Description** |
-| --- | --- |
-| **Physical inventory** | The physical quantity available in inventory. |
-| **Physical reserved** | The total quantity that was physically reserved. |
-| **Available physical** | The available (not reserved) quantity available in physical inventory.<br><br>**Available physical** is a calculated field that equals **Physical inventory** minus **Physical reserved**. |
-| **Available physical on extra dimensions** | The available physical quantity for all the dimensions displayed on the grid. |
-| **Ordered in total** | The total quantity that are on inbound orders or have a positive quantity on various inventory journals. |
-| **On Order** | The total quantity that are on outbound orders or have a negative quantity on various inventory journals. |
-| **Ordered reserved** | The total quantity that are reserved on ordered receipts. The value shown here represents the total of items in outbound transactions with the status _Ordered reserved_. Items that are reserved as ordered are not physically available in inventory and therefore can't be directly picked and delivered. |
-| **Available for reservation** | The total quantity on-hand inventory that can be reserved.<br><br>**Note**: If the **Reserve ordered items** check box is selected on the **Inventory and warehouse management parameters** page, the quantity in this field includes expected receipts. If the check box is not selected, the quantity does not include expected receipts. |
-| **Total available** | The total available quantity.<br><br>**Total available** is a calculated field that equals **Available Physical** plus **Ordered in Total** minus **On**  **Order**. |
+| Column | Description |
+|---|---|
+| Physical inventory | The physical quantity that is available in inventory. |
+| Physical reserved | The total quantity that was physically reserved. |
+| Available physical | The available (not reserved) quantity that is available in physical inventory.<p>**Available physical** is a calculated field. The value equals the **Physical inventory** value minus the **Physical reserved** value.</p> |
+| Available physical on extra dimensions | The available physical quantity for all the dimensions that are shown in the grid. |
+| Ordered in total | The total quantity that is included on inbound orders or that has a positive quantity in various inventory journals. |
+| On order | The total quantity that is included on outbound orders or that has a negative quantity in various inventory journals. |
+| Ordered reserved | The total quantity that is reserved on ordered receipts. The value in this field represents the total quantity of items in outbound transactions that have a status of _Ordered reserved_. Items that are reserved as ordered aren't physically available in inventory. Therefore, they can't be directly picked and delivered. |
+| Available for reservation | The total quantity of on-hand inventory that can be reserved.<p>**Note:** If the **Reserve ordered items** check box is selected on the **Inventory and warehouse management parameters** page, the value in this field includes expected receipts. If the check box is cleared, the value excludes expected receipts.</p> |
+| Total available | The total available quantity.<p>**Total available** is a calculated field. The value equals the **Available physical** value plus the **Ordered in total** value minus the **On order** value.</p> |
 
-<a name="filters-pane"></a>
-## Apply filters to find the records you are looking for
+## <a name="filters-pane"></a>Apply filters to find the records that you're looking for
 
-Use the **Filters** pane to filter the on-hand inventory list to include only records with fields that match the filtering criteria. To use the filter:
+Use the **Filters** pane to filter the on-hand inventory list so that it includes only records where the field values match the filtering criteria. To define a filter, follow these steps.
 
-1. On the **Filters** pane, find the field you want to filter on.
-2. Select a logical operator (starts with, equal to, greater than, and so on) using the drop-down list below the target field name.
-3. Enter or select a value to look for.
+1. In the **Filters** pane, find the field that you want to filter on.
+2. In the field below the name of the target field, select a logical operator (for example, *starts with*, *equal to*, or *greater than*).
+3. Enter or select the value to look for.
 
 > [!IMPORTANT]
-> The **On-hand list** page is assembled from a detailed on-hand inventory table, which includes all available dimensions. However, the list shown here is a summary, so it may combine rows from the source table by aggregating according to dimensions displayed. The filters apply to the source table, not to the aggregate list, which can sometimes produce unexpected results. See the [examples provided later](#examples) to learn how this can affect your results.
+> The **On-hand list** page is assembled from a detailed on-hand inventory table that includes all available dimensions. However, the list on this page is a summary. Therefore, it might combine rows from the source table by aggregating values according to the dimensions that are shown.
+>
+> The filters that you define in the **Filters** pane apply to the source table, not to the aggregated list. This behavior can sometimes produce unexpected results. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
 > 
-> However, the [filters provided on the grid](#grid-filters), including the quick filter at the top and for each column heading, do apply to the post-aggregated results.
+> However, the [filters that are provided in the grid](#grid-filters) *do* apply to the aggregated list. These filters include both the QuickFilter at the top of the grid and the filter for each column heading.
 
-You can modify the set of filters available on the **Filters** pane by doing the following:
+You can modify the set of filters that is available in the **Filters** pane by following these steps.
 
-- To remove a filter from the pane, select its close button ( **X** ).
-- To add a filter, select **+Add** at the top of the **Filters** pane. This opens the **Add filter fields** dialog box, which shows a list of the available fields together with data type and table information for each of them. Use the column headings to filter and sort the list as needed. Mark the check box for each field you'd like to add and select **Insert** to apply your setting.
+- To remove a filter from the pane, select its **Close** button (**X**).
+- To add a filter, select **Add** at the top of the **Filters** pane. The **Add filter fields** dialog box that appears shows a list of the available fields. It also shows information about the data type and table for each field. Use the column headings to filter and sort the list as you require, and then select the check box for each field that you want to add to the **Filter** pane. When you've finished, select **Insert** to apply your changes.
 
-<a name="dimensions"></a>
-## Choose which dimensions to display
+## <a name="dimensions"></a>Select which dimensions to show
 
-Dimensions tell you more about each item in the on-hand list and give you more ways to sort and filter the list. The selection of dimensions that you choose to show also affects the way rows are aggregated in the **On-hand list** page, which can affect how rows from the source tables are combined in the results you see (see the [examples provided later](#examples) to learn how this can affect your results).
+Dimensions tell you more about each item in the on-hand inventory list, and give you more ways to sort and filter the list. The dimensions that you select to show also affect how rows are aggregated on the **On-hand list** page. This aggregation, in turn, can affect how rows from the source tables are combined in the results that you see. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
 
-To customize the selection of inventory dimensions displays:
+To customize the selection of inventory dimensions that is shown, follow these steps.
 
-1. Select **Dimensions** on the Action Pane.
-2. The **Dimension display** dialog box opens, showing each of the dimensions.
-3. Mark the check box for each dimension that you want to include in your grid.
-4. Set **Save setup** to **Yes** if you'd like your current selection to become the default next time you open the **On-hand list** page. Set it to **No** to use your new dimensions only during the current session and return to the current default selection next time.
-5. Select **OK** to close the dialog box and apply your settings.
+1. On the Action Pane, select **Dimensions**.
 
-<a name="grid-filters"></a>
-## Filter on the inventory on-hand list output
+    The **Dimension display** dialog box that appears shows every dimension.
 
-Select any column heading in the **On-hand** grid to sort or filter by values in that column. A quick filter at the top of the grid also gives additional filtering options. These filters apply to the results (not the source tables). See the [examples provided later](#examples) to learn how this can affect your results.
+2. Select the check box for each dimension that you want to include in the grid.
+3. If you want your selection to be used by default the next time that you open the **On-hand list** page, set the **Save setup** option to **Yes**. If you set this option to **No**, your selection will be used only during the current session. Therefore, the next time that you open the page, the current default selection will be used.
+4. Select **OK** to close the dialog box and apply your changes.
+
+## <a name="grid-filters"></a>Filter on the output of the inventory on-hand list
+
+You can select any column heading in the **On-hand** grid to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
 
 > [!NOTE]
-> You can't filter and sort by all columns. Most of the quantity columns, other than **On order** , do not include sorting and filtering controls. This is because most quantity columns are calculated fields.
+> You can't filter and sort by all columns. Most of the quantity columns don't include sorting and filtering controls, because they are calculated fields. The **On order** column is an exception.
 
-<a name="examples"></a>
-## Examples
+## <a name="examples"></a>Examples
 
-Your system includes a detailed inventory (non-aggregated) table that shows the following on-hand inventory:
+Your system includes a detailed (non-aggregated) inventory table that shows the following on-hand inventory.
 
-| **Item number** | **Site** | **Warehouse** | **Physical inventory** | **Available physical** |
-| --- | --- | --- | --- | --- |
+| Item Number | Site | Warehouse | Physical Inventory | Available Physical |
+|---|---|---|---|---|
 | IA0001 | 1 | 1 | 1 | 1 |
 | IA0001 | 1 | 2 | 2 | 2 |
 | IA0001 | 1 | 3 | 1 | 1 |
 
 ### Scenario 1
 
-The **On-hand list** page is set to show the final dimensions:
+The **On-hand list** page is set up to show the following final dimensions:
 
-- **Item number**
-- **Site**
-- **Warehouse**
+- Item number
+- Site
+- Warehouse
 
-The **Filters** list is set with the following values:
+In the **Filters** pane, the following filtering criteria are set up:
 
-- **Item Number** | **is exactly** | _IA0001_
-- **Available Physical** | **less than or equal** | _1_
+- **Item Number** \| **is exactly** \| _IA0001_
+- **Available Physical** \| **less than or equal** \| _1_
 
-Therefore, the output looks like this:
+Here is the resulting output.
 
-| **Item Number** | **Site** | **Warehouse** | **Physical Inventory** | **Available Physical** |
-| --- | --- | --- | --- | --- |
+| Item Number | Site | Warehouse | Physical Inventory | Available Physical |
+|---|---|---|---|---|
 | IA0001 | 1 | 1 | 1 | 1 |
 | IA0001 | 1 | 3 | 1 | 1 |
 
 ### Scenario 2
 
-The **On-hand list** page is set to show the final dimensions:
+The **On-hand list** page is set up to show the following final dimensions:
 
-- **Item number**
-- **Site**
+- Item number
+- Site
 
-The **Filters** list is set with the following values:
+In the **Filters** pane, the following filtering criteria are set up:
 
-- **Item Number** | **is exactly** | _IA0001_
-- **Available Physical** | **less than or equal** | _1_
+- **Item Number** \| **is exactly** \| _IA0001_
+- **Available Physical** \| **less than or equal** \| _1_
 
-Note that the **Filters** apply to the detailed table shown at the start of this section. That means that the criterion **Available Physical** | **less than or equal** | _1_ will find two rows from that table (the first and third rows, each of which show a value **Available physical** of _1_). However, because the **On-hand list** page is not showing the **Warehouse** dimension, it aggregates the two original rows into a single resulting row (because both have identical values in all displayed dimensions), so here we see a single row that appears to violate the filter because **Available Physical** is now shown as 2. However, the result is correct because the **Filters** settings apply to the source table, not the aggregated table shown on the page.
+Here is the resulting output.
 
-Therefore, the output looks like this:
-
-| **Item Number** | **Site** | **Physical Inventory** | **Available Physical** |
-| --- | --- | --- | --- |
+| Item Number | Site | Physical Inventory | Available Physical |
+|---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
+
+Note that the settings in the **Filters** pane apply to the detailed (non-aggregated) inventory table that is shown at the beginning of this section. Therefore, the criterion **Available Physical** \| **less than or equal** \| _1_ finds two rows from that table (the first and third rows, each of which shows an **Available Physical** value of _1_). However, in this scenario, the **On-hand list** page isn't set up to show the **Warehouse** dimension. Therefore, it aggregates the two original rows into a single resulting row, because both rows have identical values in all the dimensions that are shown. This row appears to violate the filtering criterion, because the **Available Physical** value is shown as _2_. However, the result is correct, because the settings in the **Filters** pane apply to the source table, not to the aggregated table that is shown on the **On-hand list** page.
