@@ -71,7 +71,7 @@ The style of a form determines the level of support for views.
 ## Modifying forms to fully utilize views
 While most forms will work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
--    X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following: 
+-    X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following items: 
      -    Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.  
      -    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
 
