@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the mapping for the sales order status fields
-description: 
+description: This topic describes how to set up the sales order status fields for dual-write.
 author:  robinarh
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: damadipa
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-06-25
 ---
