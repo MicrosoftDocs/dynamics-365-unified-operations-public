@@ -178,5 +178,15 @@ be 3.	Exit the depreciation schedule and click **Initial recognition** to create
 
 Now you can view the initial recognition journal entry before posting.	Click **Post** to recognize the right-of-use asset and lease liability in General ledger.
 
+## Copy a Lease
+
+Asset leasing lets you copy the details of a lease to create a new lease with the same information. You can change the lease fields before creating the schedules of the copied lease.
+
+1. To copy a lease, select the lease to be copied from the **Lease summary** and select **Copy lease** in the top ribbon.
+
+ > [!Note]
+ > If the **Manual** parameter on the lease ID Number sequence is disabled, the copied lease will automatically generate the next number in the sequence to use for its lease ID. If this parameter is enabled, a message will be displayed that prompts you to enter the Lease ID before proceeding with copying the lease.
+ 
+2. When you click **Copy**, the lease details from the selected lease will be copied over into a new lease where the user can edit the details before saving and creating the lease schedules.
 
 
