@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Learning catalog for Dynamics 365 Commerce Solution Architects
+# Learning catalog for Dynamics 365 Commerce solution architects
 
 Do you design solutions that meet your customers' needs and budgets?
 
