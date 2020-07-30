@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Dynamics 365 Commerce Learning catalog 
 
-Find the right online training, in person workshops, and events for your role as a user of Commerce applications.
+Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
