@@ -1,6 +1,6 @@
 ---
-title: Solution Architects Learning Catalog
-description: Find all the training options for Commerce.
+title: Learning catalog for Dynamics 365 Commerce solution architects
+description: Find all the training options for Dynamics 365 Commerce solution architects.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -9,7 +9,7 @@ ms.author: margoc
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application user
+audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Commerce Solution Architects Learning Catalog
+# Learning catalog for Dynamics 365 Commerce Solution Architects
 
 Do you design solutions that meet your customers' needs and budgets?
 
