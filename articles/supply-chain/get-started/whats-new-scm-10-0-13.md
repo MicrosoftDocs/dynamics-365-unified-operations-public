@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of  10.0.582 and is available as follows: <!-- KFM: confirm final build number -->
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.13. This version has a build number of  10.0.582 and is available as follows: <!-- KFM: confirm final build number -->
 
 - **Preview release:** August 2020
 - **General availability (self-update):** September 2020
@@ -48,9 +48,9 @@ The following features are included in this release. The feature titles link to 
 
 - [Confirm outbound shipments from batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - For more information, see [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - For more information, see [Delegate work items in a workflow](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md)
+- [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - For more information, see [Delegate work items in a workflow](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md)
+- [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
 
 - [Order-committed reservation based on license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
