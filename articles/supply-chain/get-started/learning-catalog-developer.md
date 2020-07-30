@@ -9,7 +9,7 @@ ms.author: margoc
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application user
+audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.search.region: Global

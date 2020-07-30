@@ -1,6 +1,6 @@
 ---
 title: Learning Catalog for Dynamics 365 Supply Chain Management functional consultants
-description: Find all the training options for Finance and Operations.
+description: Find all the training options for functional consultants who work with Dynamics 365 Supply Chain Management.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020

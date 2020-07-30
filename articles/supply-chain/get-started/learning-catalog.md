@@ -16,7 +16,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
-# Dynamics 365 Supply Chain Management Learning catalog
+# Learning catalog for Dynamics 365 Supply Chain Management
 
 Find the right online training, in person workshops, and events for your role as a user of the Supply Chain application.
 
