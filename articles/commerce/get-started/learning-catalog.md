@@ -11,7 +11,7 @@ ms.author: margoc
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
+ms.search.scope: Retail
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1

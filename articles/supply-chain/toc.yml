@@ -109,23 +109,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
