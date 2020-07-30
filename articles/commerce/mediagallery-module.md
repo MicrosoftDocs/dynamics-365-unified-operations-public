@@ -109,4 +109,4 @@ To add a media gallery module to a marketing page, follow these steps.
 
 [Container module](add-container-module.md)
 
-[Digital Asset Management](dam-upload-images.md)
+[Upload images](dam-upload-images.md)
