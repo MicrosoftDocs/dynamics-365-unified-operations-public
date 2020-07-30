@@ -1,6 +1,6 @@
 ---
-title: Functional Application Consultant Learning Catalog
-description: Find all the training options for Finance and Operations.
+title: Learning catalog for Dynamics 365 Finance functional consultants
+description: Find all the training options for Dynamics 365 Finance functional consultants.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Finance Functional Application Consultant Learning Catalog
+# Learning catalog for Dynamics 365 Finance functional consultants
 
 Are you an implementation expert for a business domain?
 
