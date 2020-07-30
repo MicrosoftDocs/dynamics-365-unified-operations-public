@@ -1257,6 +1257,8 @@
         items:
         - name: Inventory journals
           href: inventory/inventory-journals.md
+        - name: Inventory journal approval workflows
+          href: inventory/inventory-journal-workflow.md
         - name: Inventory locations
           href: inventory/inventory-locations.md
         - name: Inventory statuses
@@ -1267,6 +1269,8 @@
           href: inventory/tasks/maintain-barcode-types.md
         - name: Check the availability of stock
           href: inventory/tasks/check-availability-stock.md
+        - name: Inventory on-hand list
+          href: inventory/inventory-on-hand-list.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
         - name: Transfer physical inventory within the warehouse
@@ -1357,6 +1361,8 @@
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
       - name: Master plans
@@ -1513,6 +1519,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
         - name: Set up number sequences using a wizard
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Configure number sequences for warehouse flows
+          href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
       - name: Organizations and organizational hierarchies
         items:
         - name: Organizations and organizational hierarchies overview
@@ -1819,6 +1827,10 @@
             href: pim/tasks/obsolete-product-variants.md
           - name: Exclude products from Master planning
             href: pim/tasks/exclude-products-master-planning.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -2567,22 +2579,22 @@
         href: warehousing/warehouse-management-overview.md
       - name: Inbound warehouse operations
         items:
-        - name: Receipts for registration and put-away
-          items:
-          - name: Warehouse handling of inbound loads for purchase orders
-            href: warehousing/inbound-load-handling.md
-          - name: Register items for an advanced warehousing enabled item using an item arrival journal
-            href: warehousing/tasks/register-items-advanced-warehousing.md
-          - name: Register items for a basic warehousing enabled item using an item arrival journal
-            href: warehousing/tasks/register-items-basic-warehousing.md
-          - name: Cross-dock products from receiving warehouse to stores
-            href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-          - name: Set up a location directive for purchase order put-away
-            href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-          - name: Set up a work template for purchase orders
-            href: warehousing/tasks/set-up-work-template-purchase-orders.md
-          - name: Location product dimension mixing
-            href: warehousing/location-product-dimension-mixing.md
+        - name: Warehouse handling of inbound loads for purchase orders
+          href: warehousing/inbound-load-handling.md
+        - name: Register items for an advanced warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-advanced-warehousing.md
+        - name: Register items for a basic warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-basic-warehousing.md
+        - name: Cross-dock products from receiving warehouse to stores
+          href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+        - name: Set up a location directive for purchase order put-away
+          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+        - name: Set up a work template for purchase orders
+          href: warehousing/tasks/set-up-work-template-purchase-orders.md
+        - name: Location product dimension mixing
+          href: warehousing/location-product-dimension-mixing.md
+        - name: Quality check
+          href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
@@ -2599,14 +2611,14 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: System-directed cluster picking
+            href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
-          - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
-            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Piece picking confirmation
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
@@ -2617,12 +2629,18 @@
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
-          - name: System-directed cluster picking
-            href: warehousing/system-directed-cluster-pick.md
+          - name: System-directed work sequencing
+            href: warehousing/system-directed-work-sequencing.md
           - name: Pick line grouping
-            href: warehousing/pick-line-grouping.md 
+            href: warehousing/pick-line-grouping.md
           - name: Warehouse slotting
-            href: warehousing/warehouse-slotting.md 
+            href: warehousing/warehouse-slotting.md
+          - name: Location directive inventory picking aging
+            href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Outbound sorting
+            href: warehousing/outbound-sorting.md
+          - name: Put to wall - put to store
+            href: warehousing/put-to-wall-put-to-store.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2645,6 +2663,8 @@
             href: warehousing/release-to-warehouse-rule.md
           - name: Wave template grouping
             href: warehousing/wave-template-grouping.md
+          - name: Reprint and void wave labels
+            href: warehousing/reprint-and-void-wave-labels.md
         - name: Shipment consolidation policies
           items:
           - name: Shipment consolidation policies
@@ -2701,7 +2721,7 @@
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
-          - name: Inventory journal
+          - name: Inventory journals
             href: inventory/inventory-journals.md
           - name: Inventory location
             href: inventory/inventory-locations.md
@@ -2715,6 +2735,10 @@
             href: warehousing/work-line-details.md
           - name: Location license plate positioning
             href: warehousing/location-license-plate-positioning.md
+          - name: Change work pool on work
+            href: warehousing/change-work-pool-on-work.md
+          - name: Item consolidation - location utilization
+            href: warehousing/item-consolidation-location-utilization.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -2729,6 +2753,8 @@
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
             href: warehousing/tasks/configure-wave-processing.md
+          - name: Set up and use wave label printing
+            href: warehousing/configure-wave-label-printing.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile
@@ -2753,8 +2779,6 @@
             href: warehousing/system-group-on-open-work-list.md
           - name: Document routing layout for license plate labels
             href: warehousing/document-routing-layout-for-license-plates.md
-          - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
-            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Mobile barcode support
             href: warehousing/mobile-barcode-support.md
           - name: Set up warehouse for transfer orders
@@ -2767,6 +2791,8 @@
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
+          - name: Scan bar codes using a camera in the warehouse app
+            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: License plate receiving with the warehouse app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order

@@ -36,19 +36,19 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Dynamics 365 Commerce preview environment
+      - name: Set up a Dynamics 365 Commerce evaluation environment
         items:
-        - name: Dynamics 365 Commerce preview environment overview
+        - name: Dynamics 365 Commerce evaluation environment overview
           href: cpe-overview.md
-        - name: Provision a Dynamics 365 Commerce preview environment
+        - name: Provision a Dynamics 365 Commerce evaluation environment
           href: provisioning-guide.md
-        - name: Configure a Dynamics 365 Commerce preview environment
+        - name: Configure a Dynamics 365 Commerce evaluation environment
           href: cpe-post-provisioning.md
-        - name: Configure BOPIS in a Dynamics 365 Commerce environment
+        - name: Configure BOPIS in a Dynamics 365 Commerce evaluation environment
           href: cpe-bopis.md
-        - name: Configure optional features for a Dynamics 365 Commerce preview environment
+        - name: Configure optional features for a Dynamics 365 Commerce evaluation environment
           href: cpe-optional-features.md
-        - name: Dynamics 365 Commerce preview environment FAQ
+        - name: Dynamics 365 Commerce evaluation environment FAQ
           href: cpe-faq.md
       - name: Deployment considerations
         items:
@@ -72,6 +72,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+      - name: Get support for Dynamics 365 Commerce
+        href: retail-support.md
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Commerce
@@ -92,8 +94,6 @@
             href: get-started/whats-new-commerce-10-0-12.md
           - name: Commerce 10.0.11 (July 2020)
             href: get-started/whats-new-commerce-10-0-11.md
-          - name: Commerce 10.0.10 (May 2020)
-            href: get-started/whats-new-commerce-10-0-10.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -194,6 +194,8 @@
           href: commerce-architecture.md
         - name: Dynamics 365 Commerce authentication flows
           href: arch-auth-flow.md
+        - name: Dynamics 365 Commerce component versioning requirements
+          href: arch-component-versioning.md
         - name: Commerce Scale Unit architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
@@ -275,7 +277,7 @@
     - name: Set up your channels 
       items:
       - name: Channels overview
-        href: channels-overview.md	  
+        href: channels-overview.md   
       - name: Channel prerequisites
         items:
         - name: Channel setup prerequisites
@@ -289,7 +291,7 @@
             - name: Plan your organizational hierarchy
               href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
             - name: Create legal entities
-              href: channels-legal-entities.md	  
+              href: channels-legal-entities.md   
             - name: Set up organization hierarchies
               href: channels-org-hierarchies.md
             - name: Create an operating unit
@@ -298,16 +300,18 @@
               href: tasks/design-relationships-between-organizational-units.md
           - name: Warehouse setup
             href: channels-setup-warehouse.md
-          - name: Sales tax setup	
+          - name: Sales tax setup 
             items:
             - name: Sales tax overview
               href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
             - name: Sales tax calculation methods
-              href:	../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json		
-            - name: Sales tax assignment and overrides			
-              href:	../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json		
+              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json  
+            - name: Sales tax assignment and overrides   
+              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json  
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+            - name: Calculation of tax exemption
+              href: tax-exempt-price-inclusive.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -322,22 +326,22 @@
             href: default-customer.md
         - name: Retail channel prerequisites
           items:
-          - name: Info codes and info code groups	  
-            href: info-codes-retail.md  		  
-          - name: Create a retail functionality profile		  
-            href: retail-functionality-profile.md	  
-          - name: Create a new address book 		  
+          - name: Info codes and info code groups   
+            href: info-codes-retail.md      
+          - name: Create a retail functionality profile    
+            href: retail-functionality-profile.md   
+          - name: Create a new address book     
             href: new-address-book.md
           - name: Screen layout overview
             href: pos-screen-layouts.md
         - name: Online channel prerequisites 
           items:
           - name: Create an online functionality profile
-            href: online-functionality-profile.md	
+            href: online-functionality-profile.md 
       - name: Set up a retail channel 
         items: 
         - name: Set up a retail channel
-          href: channel-setup-retail.md		
+          href: channel-setup-retail.md  
         - name: Configure retail workers 
           href: tasks/worker.md
         - name: Modern Point of Sale (MPOS) and Cloud POS 
@@ -384,6 +388,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Support for network peripherals
+              href: dev-itpro/network-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -610,12 +616,12 @@
           href: tasks/category-pricing-rules-trade-agreements.md
       - name: Recommendations 
         items:
-        - name:	Product recommendations overview	
-          href:	product-recommendations.md	
-        - name:	Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment	
-          href:	enable-ADLS-environment.md	
-        - name:	Enable product recommendations
-          href:	enable-product-recommendations.md
+        - name: Product recommendations overview 
+          href: product-recommendations.md 
+        - name: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment 
+          href: enable-ADLS-environment.md 
+        - name: Enable product recommendations
+          href: enable-product-recommendations.md
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
@@ -628,29 +634,29 @@
             href: product.md
           - name: Add recommendations to the transaction screen
             href: add-recommendations-control-pos-screen.md
-        - name:	Adjust AI-ML-based product recommendation results	
+        - name: Adjust AI-ML-based product recommendation results 
           href: modify-product-recommendation-results.md
-        - name: Manually create curated product recommendations		
-          href:	create-editorial-recommendation-lists.md
-        - name:	Create recommendations using demo data	
-          href:	product-recommendations-demo-data.md
-        - name:	Product recommendations FAQ
+        - name: Manually create curated product recommendations  
+          href: create-editorial-recommendation-lists.md
+        - name: Create recommendations using demo data 
+          href: product-recommendations-demo-data.md
+        - name: Product recommendations FAQ
           href: faq-recommendations.md
       - name: Ratings and reviews 
         items:
         - name: Ratings and reviews overview
-          href:	ratings-reviews-overview.md	
-        - name: Opt in to use ratings and reviews		
-          href:	opt-in-ratings-reviews.md
-        - name:	Manage ratings and reviews	
-          href:	manage-reviews.md
-        - name:	Configure ratings and reviews	
-          href:	configure-ratings-reviews.md
-        - name:	Sync product ratings
-          href:	sync-product-ratings.md
+          href: ratings-reviews-overview.md 
+        - name: Opt in to use ratings and reviews  
+          href: opt-in-ratings-reviews.md
+        - name: Manage ratings and reviews 
+          href: manage-reviews.md
+        - name: Configure ratings and reviews 
+          href: configure-ratings-reviews.md
+        - name: Sync product ratings
+          href: sync-product-ratings.md
       - name: Manage your inventory  
         items:
-        - name:	Inventory   
+        - name: Inventory   
           items:
           - name: Store inventory management  
             href: work-with-store-inventory.md
@@ -668,7 +674,7 @@
             href: pos-outbound-inventory-operation.md
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
-        - name: Purchase orders	  
+        - name: Purchase orders   
           items:
           - name: Purchase order overview
             href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
@@ -684,13 +690,13 @@
             href: tasks/create-product-packages-purchase-orders.md
     - name: Manage your orders
       items:
-      - name:	Sales orders   
+      - name: Sales orders   
         items:
         - name: Create a call center order 
           href: tasks/create-call-center-orders.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
-      - name: Distributed order management	  
+      - name: Distributed order management   
         items:
         - name: DOM overview
           href: dom.md
@@ -706,7 +712,7 @@
           href: notifications-pos.md
         - name: Sell continuity programs and process sales orders
           href: tasks/use-continuity-program.md
-      - name:	Returns  
+      - name: Returns  
         items:
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
@@ -717,7 +723,7 @@
         - name: Restrict payment methods for returns without a receipt
           href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
-          href: multireturn.md	
+          href: multireturn.md 
         - name: Create and update a returns and refunds policy for a channel
           href: refund_policy_returns.md
     - name: Manage your customers  
@@ -725,18 +731,18 @@
       - name: Clienteling
         items:
         - name: Clienteling overview
-          href: clienteling-overview.md	
+          href: clienteling-overview.md 
       - name: Loyalty 
         items:
-        - name: Loyalty	overview  
+        - name: Loyalty overview  
           href: set-up-customer-loyalty-program.md
-        - name: Define loyalty programs	  
+        - name: Define loyalty programs   
           href: tasks/define-loyalty-programs.md
-        - name: Define loyalty reward points	  
-          href: tasks/define-loyalty-reward-points.md	
-        - name: Define loyalty schemes	  
-          href: tasks/define-loyalty-schemes.md	
-        - name: Process adjustments of loyalty reward points	  
+        - name: Define loyalty reward points   
+          href: tasks/define-loyalty-reward-points.md 
+        - name: Define loyalty schemes   
+          href: tasks/define-loyalty-schemes.md 
+        - name: Process adjustments of loyalty reward points   
           href: tasks/process-loyalty-reward-point-adjustments.md
     - name: Manage your financials
       items:
@@ -793,9 +799,7 @@
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-Commerce tenant
-          href: deploy-ecommerce-site.md
-        - name: Set up an online store channel
-          href: online-stores.md            
+          href: deploy-ecommerce-site.md          
         - name: Create an e-Commerce site
           href: create-ecommerce-site.md
         - name: Associate an e-Commerce site with an online channel
@@ -1012,8 +1016,8 @@
           href: build-pages-400-500-errors.md
     - name: Fraud protection 
       items:
-      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
-        href:	dev-itpro/DFP.md
+      - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce 
+        href: dev-itpro/DFP.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -1938,7 +1942,7 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Test modules by using mocks
+          - name: Test modules with module mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
             href: e-commerce-extensibility/test-page-mock.md 
@@ -1988,6 +1992,8 @@
             href: e-commerce-extensibility/create-observable-data-action.md 
           - name: Share state across modules
             href: e-commerce-extensibility/share-state-across-modules.md
+          - name: Data action cache settings
+            href: e-commerce-extensibility/data-action-cache-settings.md          
           - name: Data action overrides
             href: e-commerce-extensibility/data-action-overrides.md
           - name: Data action hooks

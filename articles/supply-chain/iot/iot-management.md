@@ -4,7 +4,7 @@
 title: Monitor and manage IoT Intelligence
 description: This topic explains how to monitor and manage IoT Intelligence.
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 

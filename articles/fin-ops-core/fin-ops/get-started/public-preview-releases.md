@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 06/22/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.9/Platform Update 33 | February 1, 2020            | March 13, 2020                    | April 1, 2020             | June 5, 2020       |
 | 10.0.10                   | March 6, 2020               | April 10, 2020                    | May 1, 2020               | July 3, 2020       |
 | 10.0.11                   | April 17, 2020              | May 29, 2020                      | July 1, 2020              | September 11, 2020 |
-| 10.0.12                   | May 29, 2020                | July 10, 2020                     | August 1, 2020            | October 23, 2020   |
+| 10.0.12                   | May 29, 2020                | July 22, 2020                     | August 1, 2020            | October 23, 2020   |
 | 10.0.13                   | August 3, 2020              | September 18, 2020                | October 1, 2020           | December 4, 2020   |
 | 10.0.14                   | September 4, 2020           | October 23, 2020                  | November 1, 2020         | January 22, 2021   |
 | 10.0.15                   | October 9, 2020             | December 4, 2020                  | January 1, 2021          | March 19, 2021     |

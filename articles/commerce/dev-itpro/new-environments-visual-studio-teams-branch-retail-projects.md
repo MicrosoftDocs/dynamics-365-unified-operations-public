@@ -4,7 +4,7 @@
 
 title: Set up new environments, Azure DevOps, and branches for Commerce projects
 description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce implementation projects.
-author: AndreasHassing
+author: andreashofmann1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article

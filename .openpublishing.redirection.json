@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/online-stores.md",
+      "redirect_url": "channel-setup-online",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/modern-pos-trigger-extensibility.md",
       "redirect_url": "pos-trigger-printing",
       "redirect_document_id": "false"
