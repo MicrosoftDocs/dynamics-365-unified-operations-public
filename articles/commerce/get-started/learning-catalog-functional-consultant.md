@@ -1,6 +1,6 @@
 ---
-title: Functional Application Consultant Learning Catalog
-description: Find all the training options for Commerce.
+title: Learning catalog for Dynamics 365 Commerce functional consultants
+description: Find all the training options for Dynamics 365 Commerce functional consultants.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Commerce Functional Application Consultant Learning Catalog
+# Learning catalog for Dynamics 365 Commerce functional consultants
 
 Are you an implementation expert for a business domain?
 
