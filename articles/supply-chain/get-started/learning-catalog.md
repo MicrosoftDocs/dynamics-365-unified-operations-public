@@ -1,6 +1,6 @@
 ---
-title: Learning catalog for Supply Chain
-description: Find all the training options for Supply Chain.
+title: Learning catalog for Dynamics 365 Supply Chain Management
+description: Find all the training options for Dynamics 365 Supply Chain Management.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -16,7 +16,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
-# Learning catalog for Supply Chain
+# Dynamics 365 Supply Chain Management Learning catalog
 
 Find the right online training, in person workshops, and events for your role as a user of the Supply Chain application.
 

@@ -1,6 +1,6 @@
 ---
-title: Developer Learning Catalog
-description: Find all the training options for Finance and Operations.
+title: Learning catalog for Dynamics 365 Supply Chain Management developers
+description: Find all the training options for Supply Chain Management developers.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Supply Chain Developer Learning Catalog
+# Learning catalog for Dynamics 365 Supply Chain Management developers
 
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 

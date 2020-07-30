@@ -1,6 +1,6 @@
 ---
-title: Business Users Learning Catalog
-description: Find all the training options for Finance and Operations.
+title: Learning catalog for users of Dynamics 365 Supply Chain Management
+description: Find all the training options for users of Dynamics 365 Supply Chain Management.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Supply Chain Business Users Learning Catalog
+# Learning catalog for users of Dynamics 365 Supply Chain Management
 
 Did you just get a new application to use?
 

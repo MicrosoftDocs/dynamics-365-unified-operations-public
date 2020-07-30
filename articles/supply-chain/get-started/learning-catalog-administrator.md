@@ -1,6 +1,6 @@
 ---
-title: Administrators Learning Catalog
-description: Find all the training options for Finance and Operations.
+title: Administrator learning catalog for Dynamics 365 Supply Chain Management
+description: Find all the training options for Supply Chain Management administrators.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
 
-# Supply Chain Administrators Learning Catalog
+# Learning catalog for Dynamics 365 Supply Chain Management Administrators
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 

@@ -1,6 +1,6 @@
 ---
-title: Business and Technical Decision Makers Learning Catalog
-description: Find all the training options for Finance and Operations.
+title:  Learning catalog for business decision makers considering Dynamics 365 Supply Chain Management
+description: Find all the training options for BDMs and TDMs considering Dynamics 365 Supply Chain Management.
 author: margoc
 ms.date: 07/27/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Supply Chain Business and Technical Decision Makers Learning Catalog
+# Learning catalog for business decision makers considering Dynamics 365 Supply Chain Management
 
 Do you decide whether to invest in new technologies?
 

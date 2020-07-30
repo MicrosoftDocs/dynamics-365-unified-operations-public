@@ -1,5 +1,5 @@
 ---
-title: Functional Application Consultant Learning Catalog
+title: Learning Catalog for Dynamics 365 Supply Chain Management functional consultants
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Supply Chain Functional Application Consultant Learning Catalog
+# Learning Catalog for Dynamics 365 Supply Chain Management functional consultants
 
 Are you an implementation expert for a business domain?
 
