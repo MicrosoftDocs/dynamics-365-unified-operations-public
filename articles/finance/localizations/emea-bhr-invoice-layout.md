@@ -67,7 +67,7 @@ In **Electronic reporting** workspace, import the following Electronic Reporting
  - Project manage invoice (Excel) (BH).
 
 > [!NOTE]
-> The formats above are based on **Invoice model** and use **Invoice model mapping**. These additional configurations will be automatically imported.
+> The formats above are derived from related standard formats based on **Invoice model** and use **Invoice model mapping**. All the required additional configurations will be automatically imported.
 
 For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
