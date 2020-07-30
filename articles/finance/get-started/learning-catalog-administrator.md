@@ -1,6 +1,6 @@
 ---
-title: Administrators Learning Catalog
-description: Find all the training options for Finance and Operations.
+title: Administrator learning catalog for Dynamics 365 Finance
+description: Find all the training options for Dynamics 365 Finance administrators.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
 
-# Finance Administrators Learning Catalog
+# Learning catalog for Dynamics 365 Finance administrators
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
