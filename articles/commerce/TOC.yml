@@ -310,6 +310,8 @@
               href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json  
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+            - name: Calculation of tax exemption
+              href: tax-exempt-price-inclusive.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -386,6 +388,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Support for network peripherals
+              href: dev-itpro/network-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -1938,7 +1942,7 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Test modules by using mocks
+          - name: Test modules with module mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
             href: e-commerce-extensibility/test-page-mock.md 

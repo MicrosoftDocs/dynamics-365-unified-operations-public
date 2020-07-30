@@ -5,7 +5,7 @@ title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -63,7 +63,7 @@ The Retail SDK reference libraries use PackageReference. All the SDK samples use
 
 There are two ways to migrate:
 
-- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and use the Visual Studio 2017 template, which is available for manual install in release 10.0.11. The new LCS dev VM with Visual Studio 2017 will be available in release 10.0.12.
+- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. LCS developer VM with Visual Studio 2017 will be available in a future release.
 - Update extensions to Visual Studio 2017 in an existing development environment:
 
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM) with the following workloads:
