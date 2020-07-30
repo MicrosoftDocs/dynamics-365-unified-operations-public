@@ -151,7 +151,7 @@ As you require, you can select **Ship all** on the app bar to quickly update the
 
 ### Cancel fulfillment
 
-You should use the **Cancel fulfillment** function on the app bar only if you want to back out of the document and don't want to save any changes. For example, you initially selected the wrong document and don't want any of the previous shipping data saved.
+Use the **Cancel fulfillment** function on the app bar only if you want to back out of the document and don't want to save any changes. For example, you initially selected the wrong document and don't want any of the previous shipping data saved.
 
 ### Pause fulfillment
 
@@ -186,7 +186,7 @@ You can enter values in the **Ship date**, **Receive date**, and **Mode of deliv
 
 After the header information is created, you can add products to the transfer order. To start the process of adding items and requested quantities, scan bar codes or select **Add product**.
 
-After lines are entered on the outbound transfer order, you must select **Save** to save the document changes locally or **Submit request** to submit the order details to Commerce headquarters (HQ) for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. You should select **Save** only if you aren't ready to commit the request to Commerce headquarters (HQ) for processing.
+After lines are entered on the outbound transfer order, you must select **Save** to save the document changes locally or **Submit request** to submit the order details to Commerce headquarters (HQ) for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. Select **Save** only if you aren't ready to commit the request to Commerce headquarters (HQ) for processing.
 
 If a document is saved locally, it can be found on the **Drafts** tab of the **Inbound operation** document list. While a document is in **Draft** status, you can edit it by selecting **Edit**. You can update, add, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Drafts** tab.
 
