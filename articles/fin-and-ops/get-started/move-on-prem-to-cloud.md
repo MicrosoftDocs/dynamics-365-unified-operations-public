@@ -40,7 +40,7 @@ If you do not already have cloud subscription licenses, work with your cloud ser
 ## Configure LCS cloud implementation project
 
 If these are the first Dynamics 365 for Finance and Operations cloud named user SLs being activated on the AAD tenant, a new LCS cloud implementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on multiple LCS projects in an AAD tenant.
-Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on.
+Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on. Note that while onboarding your project, you must select "On-premises Finance and Operations" [to be confirmed] as your source system so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool.
 
 ## Complete development and testing of updated integrations
 
@@ -59,7 +59,7 @@ SELECT TENANTID from PROVISIONINGMESSAGETABLE
 SELECT TENANTID from B2BINVITATIONCONFIG
 SELECT TENANTID from RETAILSHAREDPARAMETER
   ```
-4.	Copy the database from on-premises to online. The export and import process is as described in the golden configuration promotion tutorial at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig, except that the source database is the existing on-premises, production SQL database. For the import, it recommended to use the sqlpackage.exe approach. The target database credentials available in LCS will have to be provided.
+4.	Copy the database from on-premises to online. The export and import process is as described in the golden configuration promotion tutorial at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig, except that the source database is the existing on-premises, production SQL database, and for the import, you must use the sqlpackage.exe approach described for importing to a developer environment. If you instead use the LCS self-service database import option, certain data will not be imported, as noted in the provided warnings about data elements which are cleaned up. The target database information, available in the LCS environment details, must be used instead of the placeholders shown below.
   ```powershell
 SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
   ```
@@ -99,7 +99,7 @@ UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
 Document handling attachments for Dynamics 365 for Finance and Operations on-premises are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
 
 1.	Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
-2.	Get the storage account connection string for the sandbox, from the AzureStorage.StorageConnectionString key in the web.config file in the AOS webroot of the sandbox. Note that this config file is encrypted, so you will need to decrypt a copy of it to get the connection string. If you are unable to get this information (e.g. for a self-service environment), open a Support Request to get a (time-limited) SAS token for the documents container of the sandbox Azure storage account. You can then use this, instead of a connection string, to create the storage context in the PowerShell script below.
+2.	Open a Support Request to get the name of the sandbox Azure storage account and a (time-limited) SAS token for the documents container. Update the corresponding placeholders in the PowerShell script below. Also update the placeholders for your temporary folder, and for your Finance and Operations transactional database, from the environment details in LCS.
 3.	Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
   ```powershell
 #Upload F&O on-prem document handling attachments to Azure storage account
@@ -109,11 +109,12 @@ $dBHostName = "<DATABASE_SERVER>.database.windows.net"
 $dBName = "<DATABASE_NAME>"
 $dBUsername = "<DATABASE_USER>"
 $dBPassword  = "<DATABASE_PASSWORD>"
-$storageAccountConnectionString = "AccountName=<STORAGE_ACCOUNT_NAME>;AccountKey=<STORAGE_ACCOUNT_KEY>;DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net"
+$storageAccountName = "<STORAGE_ACCOUNT_NAME>"
+$sasToken = "<SAS_TOKEN>"
 
 [Reflection.Assembly]::LoadWithPartialName("System.Security.Cryptography") #Load crypto
 $cryptoObj = [System.Security.Cryptography.SHA256]::Create()
-$StorageContext = New-AzStorageContext -ConnectionString $storageAccountConnectionString
+$StorageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
 foreach ($file in Get-ChildItem $filesPath) 
 {
     try
