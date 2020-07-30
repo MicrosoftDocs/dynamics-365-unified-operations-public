@@ -49,7 +49,7 @@ The Retail SDK is available in development environments provisioned using LCS or
 
 To access the Retail SDK, login to the development VM and navigate to K:\RetailSDK folder. New version of the Retail SDK can be obtained by applying any Commerce binary hotfix from LCS to the development environment, after the hotfix deployment the new version of the hotfix can be found inside the K:\RetailSDK\Update\ folder. 
 
-If the current version of the SDK contains some extensions then after upgrade config files and Extension projects needs to merged from the previous version of the SDK to the new version of the SDK, this steps is required only if your previous version of SDK includes extensions and its needs to migrated to the new version. Refer [Upgrade the Retail channel extension to the latest Retail SDK](../../../dev-itpro/RetailSDK-update.md) for detailed steps. Its recommend that SDK is integrated with any source control system such as Git or Azure repo.
+If the current version of the SDK contains some extensions then after upgrade config files and Extension projects needs to merged from the previous version of the SDK to the new version of the SDK, this steps is required only if your previous version of SDK includes extensions and its needs to be migrated to the new version. Refer [Upgrade the Retail channel extension to the latest Retail SDK](../../../dev-itpro/RetailSDK-update.md) for detailed steps. Its recommend that SDK is integrated with any source control system such as Git or Azure repo.
 
 ### Full MSBuild integration
 
@@ -88,6 +88,8 @@ Before starting the development with Retail SDK first do the full msbuild from t
 
 Open the Developer command prompt for Visual Studio 2017 or the MSBuild 15.0 command prompt and navigate to the Retail SDK folder in developer command prompt and do msbuild by typing the command **msbuild /t:rebuild** from the root of the SDK folder (the dirs.proj file in the root of the SDK (**RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**) contains all the necessary details to build  the full SDK.
 
+[![Code sample to reference a type](./media/retailsdk02.png)](./media/retailsdk02.png)
+
 ## Retail SDK components deep dive
 
 Retail SDK contains the below folders to help with the extension developments:
@@ -104,47 +106,34 @@ The folder structure and description below are based on the Retail SDK version 1
 <tbody>
 <tr>
 <td>Assets</td>
-<td>Contains shared items such as scripts and configuration files (commerceRuntime.config, dllhost.exe.config, and so on). The configuration files should be customized and edited in this location. The projects that use them will pick them up appropriately.</td>
+<td>Contains scripts and configuration files required for packaging. Only the these (HardwareStation.Extension.config, RetailProxy.MPOSOffline.ext.config, CommerceRuntime.Ext.config and CommerceRuntime.MPOSOffline.Ext.config)  configuration files can be edited to include extension binaries details for packaging.
+    <ul>
+<li><strong>manifest.json</strong> – SDK binary version.</li>
+    </td>
 </tr>
 <tr>
 <td>BuildTools</td>
-<td>Contains anything that is related to the MSBuild and global configurations. Customization.settings is the main file that is used to set up the build system. The following list shows the items that this file controls and that customizers will likely change:
-<ul>
-<li>Prefix for all built assemblies (AssemblyNamePrefix)</li>
-<li>Assembly version for all binaries (CustomAssemblyVersion)</li>
-<li>File version for all binaries (CustomVersion)</li>
-<li>Name of the customization (CustomName)</li>
-<li>Description of the customization (CustomDescription)</li>
-<li>Publisher (CustomPublisher)</li>
-<li>Code signing (SignAssembly, AssemblyOriginatorKeyFile)</li>
-<li>Modern POS certificate path (ModernPOSPackageCertificateKeyFile)</li>
-<li>Files that are related to the customization (RetailServerLibraryPathForProxyGeneration, ISV\_\*)</li>
-</ul>
+<td>Scripts, sample cert and Customization.settings file (Packaging metadata) files. Don’t modify any files in this folder except the Customization.settings.
 </td>
 </tr>
 <tr>
-<td>CommerceRuntime</td>
-<td>Contains a Visual Studio solution file (CommerceRuntime.sln) and related C# projects (CommerceRuntime, PricingEngine).</td>
-</tr>
-<tr>
 <td>Database</td>
-<td>Contains shared database scripts. The full script CommerceRuntimeScripts\_Create.sql is used only to create a new base database. The Upgrade folder includes incremental scripts from both Microsoft and the customizer. The existence of the database or the version in the database during a deployment controls which full or incremental scripts will be run. Only scripts that haven't been run before will be run.</td>
+<td>Contains shared database scripts. Extensions must copy the extension scripts to Database\Upgrade\Custom folder.</td>
 </tr>
 <tr>
-<td>HardwareStation</td>
-<td>Contains a Visual Studio solution file (HardwareStation.sln) and related C# projects (HardwareStation libraries and Webhost).</td>
+<td>Documents</td>
+<td>Contains instructions to execute some of the samples.</td>
 </tr>
 <tr>
 <td>OnlineStore</td>
-<td>Contains a Visual Studio solution file (OnlineStore.sln) and related C# projects (Ecommerce SDK).</td>
+<td>E2E sample e-Commerce storefront solution built using the Retail proxy..</td>
 </tr>
-<tr>
+ <tr>
 <td>Packages</td>
-<td>Contains multiple projects for package creation. These packages are used to deploy via LCS. These packages also include the final web.config files.</td>
+<td>The out Retail deployable package generated after the SDK build for packaging will be copied here (Packages\RetailDeployablePackage). Retail deployable package is deployed to different environments(test, sandbox and Production using LCS)</td>
 </tr>
-<tr>
-<td>PaymentExternals</td>
-<td>Contains all the payment-related assemblies. The following three subfolders hold various payment files:
+    <td>PaymentExternals</td>
+<td>Extension payment assemblies must be copied. The following three subfolders hold various payment files:
 <ul>
 <li><strong>IPaymentProcessor Assemblies</strong> – This folder contains the assembly that implements the IPaymentProcessor interface and its dependent assemblies.</li>
 <li><strong>Payment Web Files</strong> – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.</li>
@@ -155,24 +144,24 @@ The folder structure and description below are based on the Retail SDK version 1
 </tr>
 <tr>
 <td>Payments</td>
-<td>Contains a Visual Studio solution file (PaymentSDK.sln) and related C# projects (PaymentSDK connectors, samples and functional test).</td>
+<td>Sample Payment Connector project for e-Commerce.</td>
+</tr>
+<tr>
+<td>pkgs</td>
+<td>All the NuGet packages (refernce libaraies) required for building the extension projects and tools for packaging and retail proxy generation.</td>
 </tr>
 <tr>
 <td>POS</td>
-<td>Contains files for POS:
+<td>Contains the POS app and extension project :
 <ul>
-<li><strong>CloudPos.sln</strong></li>
-<li><strong>ModernPos.sln</strong></li>
-<li><strong>Folder Core</strong> – Low-level shared POS code</li>
-<li><strong>Folder ViewModels</strong> – Shared POS view models</li>
-<li><strong>Folder SharedApp</strong> – Shared POS views</li>
-<li><strong>Folder App</strong> – Modern POS–specific views and other items</li>
+<li><strong>App</strong> – Modern POS–specific views and other items</li>
+<li><strong>Contracts</strong> – Public contracts for POS extensions, extension can consume only these contracts for POS extension.</li>
+<li><strong>Extensions</strong> – Sample Extension projects and POS.Extension project for extension to consume.</li>
+<li><strong>Folder SharedApp</strong> – Shared POS views between CPOS and MPOS</li>
 <li><strong>Folder Web</strong> – Cloud POS–specific views and other items</li>
+<li><strong>CloudPos.sln</strong> - Cloud POS solution file.</li>
+<li><strong>ModernPos.sln</strong>- Modern POS solution file.</li></li>
 </ul></td>
-</tr>
-<tr>
-<td>Proxies</td>
-<td>Contains two Visual Studio projects that are referenced by others. These projects contain interfaces and generated code that serves as a proxy client of Commerce Scale Unit. Proxies.Retail.TypeScript is the TypeScript proxy, and RetailProxy is the C# proxy. They are used by Modern POS/Cloud POS and the ECommerce SDK.</td>
 </tr>
 <tr>
 <td>References</td>
@@ -180,15 +169,29 @@ The folder structure and description below are based on the Retail SDK version 1
 </tr>
 <tr>
 <td>SampleExtensions</td>
-<td>Contains sample extensions.</td>
+<td>Contains the sample projects and templates for extensions:
+<ul>
+<li><strong>CommerceRuntime</strong> – Sample extension projects for business logic extensons (CRT triggers, handlers and new service extension</li>
+<li><strong>HardwareStation</strong> – Sample Hardware stataion extension projects</li>
+<li><strong>HybridApp</strong> – Andriod and iOS shell apps for POS. Extension can build these apps and deploy it to Andriod and iOS platform</li>
+<li><strong>OnlineStore</strong> – Sample online storefront app</li>
+<li><strong>RetailProxy</strong> – Sample C# proxy project for POS offline. THis is depricated starting 10.0.11, teh retail server extension libaries can be used in offlien, bno need for sperate proxy files.</li>
+<li><strong>RetailServer</strong> - Sample Retail server extension projects.</li>
+<li><strong>SampleExtensionsTest</strong> - Sample project for creating extension test project.</li>
+<li><strong>ShoppingApp</strong> – Sample mobile app for end Customers in ANdroid and iOS (Retailer shopping app).</li>
+<li><strong>TypeScriptProxy</strong> – Sample Proxy projects for how to generate Typescript for POS.</li>
+</ul></td>
 </tr>
+
+
+
 <tr>
 <td>dirs.proj</td>
-<td>The top-level MSBuild file that directs the build order.</td>
+<td>TMSBuild proj file that directs the build order.</td>
 </tr>
 <tr>
 <td>Microsoft-version.txt</td>
-<td>A file that includes the Microsoft version of the Retail SDK. Don't edit this file.</td>
+<td>A file that includes the Microsoft application version of the Retail SDK.</td>
 </tr>
 </tbody>
 </table>
