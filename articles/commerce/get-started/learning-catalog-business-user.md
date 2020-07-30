@@ -1,6 +1,6 @@
 ---
-title: Business Users Learning Catalog
-description: Find all the training options for Commerce.
+title: Learning catalog for users of Dynamics 365 Commerce
+description: Find all the training options for users of Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Commerce Business Users Learning Catalog
+# Learning catalog for users of Dynamics 365 Commerce
 
 Did you just get a new application to use?
 
