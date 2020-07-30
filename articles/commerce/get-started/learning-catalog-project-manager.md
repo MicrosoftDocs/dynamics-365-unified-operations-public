@@ -1,6 +1,6 @@
 ---
-title: Implementation Project Manager Learning Catalog
-description: Find all the training options for Commerce.
+title: Learning catalog for implementation project managers working with Dynamics 365 Commerce
+description: Find all the training options for people working as implementation project managers with Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Commerce Implementation Project Manager Learning Catalog
+# Learning catalog implementation project managers working with Dynamics 365 Commerce
 
 Are you in charge of making sure your company’s implementation goes smoothly?
 
