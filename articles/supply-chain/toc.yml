@@ -1257,6 +1257,8 @@
         items:
         - name: Inventory journals
           href: inventory/inventory-journals.md
+        - name: Inventory journal approval workflows
+          href: inventory/inventory-journal-workflow.md
         - name: Inventory locations
           href: inventory/inventory-locations.md
         - name: Inventory statuses
@@ -2589,6 +2591,8 @@
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing
           href: warehousing/location-product-dimension-mixing.md
+        - name: Quality check
+          href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
@@ -2715,7 +2719,7 @@
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
-          - name: Inventory journal
+          - name: Inventory journals
             href: inventory/inventory-journals.md
           - name: Inventory location
             href: inventory/inventory-locations.md
