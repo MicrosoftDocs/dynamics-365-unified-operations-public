@@ -78,4 +78,4 @@ To add an iframe module to a page to show an external video, follow these steps.
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Content security policy](manage-csp.md)
+[Manage Content Security Policy (CSP)](manage-csp.md)
