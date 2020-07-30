@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Learning catalog implementation project managers working with Dynamics 365 Commerce
+# Learning catalog for implementation project managers working with Dynamics 365 Commerce
 
 Are you in charge of making sure your company’s implementation goes smoothly?
 
