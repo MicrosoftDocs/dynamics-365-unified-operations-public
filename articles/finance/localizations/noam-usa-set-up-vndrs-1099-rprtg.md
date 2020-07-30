@@ -38,36 +38,36 @@ Before you post vendor transactions, it's necessary to set up 1099 information f
 > We recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year before you set up and process 1099 statements.
 Complete the following steps to set up vendors for 1099 reporting. 
 
-1. Go to Accounts payable > Vendors > All vendors or Procurement and sourcing > Common > Vendors > All vendors.
-2. Select a vendor account, and then open the Tax 1099 FastTab.
-3. Select the Report 1099 option to include transaction and 1099 information for the vendor on the 1099 report. If this isn’t selected, 1099 information for the vendor won’t be included on the 1099 report, and the electronic or magnetic files won’t include amounts for the vendor.
-4. In the Federal tax ID field, enter the taxpayer identification number for the vendor. In the Tax ID type field, select the type of tax ID that you used in the Federal tax ID field.
+1. Go to **Accounts payable > Vendors > All vendors or Procurement and sourcing > Common > Vendors > All vendors**.
+2. Select a vendor account, and then open the **Tax 1099** FastTab.
+3. Select the **Report 1099** option to include transaction and 1099 information for the vendor on the 1099 report. If this isn’t selected, 1099 information for the vendor won’t be included on the 1099 report, and the electronic or magnetic files won’t include amounts for the vendor.
+4. In the **Federal tax ID** field, enter the taxpayer identification number for the vendor. In the **Tax ID** type field, select the type of tax ID that you used in the **Federal tax ID** field.
 
   > [!Note]
 > The **Prevent duplicate tax registration numbers** security privilege determines whether you can enter a tax identification number that already been used on another vendor record.
 
-5. In the 1099 box field, enter the default value that appears on each transaction line that is created for the vendor. This is necessary to include transactions for the vendor on the 1099 report and in electronic or magnetic media files.
+5. In the **1099 box** field, enter the default value that appears on each transaction line that is created for the vendor. This is necessary to include transactions for the vendor on the 1099 report and in electronic or magnetic media files.
 6. If the vendor organization is owned by an entity outside the United States, select the Foreign entity indicator option.
 7. If your organization has been notified twice in three calendar years that the vendor provided an incorrect name, select the Second TIN check box.
-8. In the Name to use on the 1099 field, select Vendor name. You can select Doing business as if a doing-business-as (DBA) name is available. If you select Doing business as, enter the alternate name in the DBA field.
-9. In the Name control field, enter the alphanumeric name control ID that the IRS requires to be printed on the mailing label to help validate the vendor’s Employer Identification Number (EIN).
+8. In the **Name to use on the 1099** field, select **Vendor name**. You can select **Doing business as** if the vendor uses an alterantate name. If you select **Doing business as**, enter the alternate name in the **DBA** field.
+9. In the **Name control** field, enter the alphanumeric name control ID that the IRS requires to be printed on the mailing label to help validate the vendor’s Employer Identification Number (EIN).
 10. Select the CUSIP option to indicate that the Committee on Uniform Security Identification Procedures (CUSIP) identification number applies for the debt instrument.
-11. In the CUSIP ID field, enter the nine-character alphanumeric CUSIP number to identify the debt instrument.
-12. In the CUSIP details field, enter the abbreviation of the stock exchange and issuer, coupon rate, and year of maturity.
+11. In the **CUSIP ID** field, enter the nine-character alphanumeric CUSIP number to identify the debt instrument.
+12. In the **CUSIP details** field, enter the abbreviation of the stock exchange and issuer, coupon rate, and year of maturity.
 
   > [!Note]
   > You can enter the CUSIP details only if the CUSIP check box is not selected.
   
-14. In the Nominee details field, enter the names of the nominee and issuer.
-15. In the Investor type field, select the type of investor from the following options:
-    - None
-    - Owner – The owner of the debt instrument.
-    - Nominee/broker – A broker who represents the owner of the debt instrument.
+13. In the **Nominee details** field, enter the names of the nominee and issuer.
+14. In the **Investor type** field, select the type of investor from the following options:
+    - **None**
+    - **Owner** – The owner of the debt instrument.
+    - **Nominee/broker** – A broker who represents the owner of the debt instrument.
 
-16. On the Action Pane, on the Vendor tab under setup, click Vendor state tax IDs.
-17. Create a record for each state in which the vendor receives payments from your organization. Enter the state tax ID and, if tax identification information is available, select the tax ID type.
-18. If local income tax was withheld during the year, select the Local income tax withheld check box.
-19. Close the forms to save your changes.
+15. On the Action Pane, on the **Vendor** tab under setup, click **Vendor state tax IDs**.
+16. Create a record for each state in which the vendor receives payments from your organization. Enter the state tax ID and, if tax identification information is available, select the tax ID type.
+17. If local income tax was withheld during the year, select the **Local income tax withheld** check box.
+18. Close the forms to save your changes.
  
 
 ## Associate a 1099 default value to a Main account
@@ -76,18 +76,18 @@ Some invoice lines identified for 1099 Federal tax reporting might be reported f
 > [!Note]
 > The Report 1099 check box, on the Tax 1099 FastTab of the vendor details form, must be selected for the 1099 box and amount to be populated on the invoice.
 
-20.	Go to Accounts payable > Periodic tasks > Tax 1099 > 1099 main account association.
-21.	In the Main account number field, select the main account to relate to a 1099 box. You can only select an Expense type main account.
-22.	In the 1099 box code field, select the box code on the 1099 form that the amounts posted to the specified main account should be associated with.
-23.	Repeat the preceding steps as necessary for additional main accounts.
+1.	Go to **Accounts payable > Periodic tasks > Tax 1099 > 1099 main account association**.
+2.	In the **Main account number** field, select the main account to relate to a 1099 box. You can only select an Expense type main account.
+3.	In the **1099 box code** field, select the box code on the 1099 form that the amounts posted to the specified main account should be associated with.
+4.	Repeat the preceding steps as needed to add additional main accounts.
 
 
 ## Update 1099 boxes and amounts
 You can refresh the 1099 reporting boxes and amounts for all paid invoices for a calendar year according to the current main account assignments to 1099 boxes. 
 
-24. Go to **Accounts payable > Periodic tasks > Tax 1099 > Update 1099 information by main account**.
-25. Select a date range, and vendor and click **OK**.
-26. Click **OK** to update the 1099 balances based on the main account, which are used for the vendor’s posted and paid invoices.
+1. Go to **Accounts payable > Periodic tasks > Tax 1099 > Update 1099 information by main account**.
+2. Select a date range, and vendor and click **OK**.
+3. Click **OK** to update the 1099 balances based on the main account, which are used for the vendor’s posted and paid invoices.
 
 The system evaluates any vendor that has the **Report 1099** option selected, and then evaluates all of the vendor's invoices. The 1099 amount is recalculated based on the main accounts on each line (including split distributions if applicable). If the line’s fully paid amount is not associated with the 1099 box, the line is not included in the 1099 amount, as shown in the following examples:
 
