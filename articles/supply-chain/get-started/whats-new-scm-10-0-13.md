@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of  10.0.507 and is available as follows: <!-- KFM: get new build number -->
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of  10.0.582 and is available as follows: <!-- KFM: confirm final build number -->
 
 - **Preview release:** August 2020
 - **General availability (self-update):** September 2020
@@ -58,7 +58,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Work pick line overview](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Work policy enhancements for inbound work](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Work policy enhancements for inbound work](#).
+- [Work policy enhancements for inbound work](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Warehouse policies](../warehousing/warehouse-work-policies.md).
 
 ## Additional resources
 
