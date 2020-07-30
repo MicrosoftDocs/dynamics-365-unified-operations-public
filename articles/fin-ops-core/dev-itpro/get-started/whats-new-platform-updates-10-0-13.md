@@ -56,7 +56,7 @@ This topic lists the features that are included in the platform updates for vers
 
 -  Upgrade three jQuery components libraries<br>- This feature upgrades three jQuery components used by Finance and Operations applications. Specifically, this includes moving jQuery to version 3.5.0 (from 2.1.4), jQuery UI to version 1.12.1 (from 1.11.4), and jQuery qTip to version 3.0.3 (from 2.2.1). Enabling this feature means that Finance and Operations apps will utilize these updated libraries.
     > [!Important]
-    > Customers should test any custom JavaScript code, typically code that is part of extensible control implementations, to ensure there are no issues with the upgrade. This feature is targeted to be required with the April 2021 release, but is currently optional to allow time for migration of affected APIs. For more information about migrating APIs that may be affected by this upgrade, see [jQuery.com/](https://jquery.com/upgrade-guide/3.5/).  
+    > Customers should test any custom JavaScript code, typically code that is part of extensible control implementations, to ensure there are no issues with the upgrade. This feature is targeted to be required with the April 2021 release, but is currently optional to allow time for migration of affected APIs. For more information about migrating APIs that may be affected by this upgrade, see [jQuery.com](https://jquery.com/upgrade-guide/3.5/).  
 
 -  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
 [Task recorder resources](../user-interface/task-recorder.md#validate). 
