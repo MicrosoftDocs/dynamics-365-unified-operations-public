@@ -43,6 +43,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 ## Features included in this release
 
 - [feature name](link to release plan)
+- [Review function in POS inventory operations](link to release plan)
 
 
 ## Additional resources
