@@ -45,6 +45,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - [feature name](link to release plan)
 - [Review function in POS inventory operations](link to release plan)
 - [Abandoned cart capabilities for e-commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
+- [Site builder WYSIWYG improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
 
 
 ## Additional resources
