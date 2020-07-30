@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -594,7 +594,7 @@ eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Me
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 notification import. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -627,7 +627,7 @@ You can select an import format for Finnish payments to import customer payment 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 notification import. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -638,7 +638,7 @@ A format that is specific to Finland is used to import accounting transactions i
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.053 bank statement import using Advanced Bank Reconciliation. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -704,7 +704,7 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                    |
-| **Replaced by another feature?**   | No. The formats will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 bank notification import. |
 | **Product areas affected**         | Accounts receivable                                                                        |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                             |
 
@@ -790,7 +790,7 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                        |
-| **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
+| **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway, as well as pain.002 and camt.054 bank notification return files import. |
 | **Product areas affected**         | Accounts payable, Accounts receivable                                                          |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                                 |
 
@@ -1131,13 +1131,13 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | All modules  |
 | **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
-### German DTAZV payment format
+### German DTAZV payment format in domestic Currency
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
 | **Replaced by another feature?**   | SEPA payments export    |
-| **Product areas affected**         | All modules   |
+| **Product areas affected**         | Accounts payable   |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.    |
 
 ### German MT940 import

@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -173,6 +173,8 @@ Customers who bring their own Azure Data Lake Storage accounts can take advantag
 Common Data Service is the unified data store that integrates the data from all your business applications. Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Commerce use Common Data Service to store business data. Therefore, Common Data Service enables cross-business application scenarios, and can power new scenarios through Power Apps and Power Automate. For more information, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
 ## Additional resources
+
+[Dynamics 365 Commerce authentication flows](arch-auth-flow.md)
 
 [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 

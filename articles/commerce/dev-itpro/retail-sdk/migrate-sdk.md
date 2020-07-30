@@ -5,7 +5,7 @@ title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -63,17 +63,26 @@ The Retail SDK reference libraries use PackageReference. All the SDK samples use
 
 There are two ways to migrate:
 
-- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and use the Visual Studio 2017 template, which is available for manual install in release 10.0.11. The new LCS dev VM with Visual Studio 2017 will be available in release 10.0.12.
+- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. LCS developer VM with Visual Studio 2017 will be available in a future release.
 - Update extensions to Visual Studio 2017 in an existing development environment:
 
-    - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM).
+    - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM) with the following workloads:
+    
+        - .NET Desktop development
+        - Universal Windows Platform development
+        - ASP.NET and web development
+        - Azure development
+        - Node.js development
+        - .NET Core cross-platform development
+        - Mobile development with .NET (required for hybrid app development)
+    
     - If you manually install Visual Studio 2017, install the following prerequisites on the development VM. If you don't install these prerequisites, compilation will fail, and .NET SDK and runtime errors will be generated:
 
         + [sdk-2.1.202-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer)
         + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
         + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
         + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
-        + Install Typescript version 2.2.2. In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individual components** tab and select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section and install it.
+        + Install Typescript version 2.2.2. In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individual components** tab and select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section and install it. VS 2017 has Typescript 3.1 as default, please include 2.2.2 also because the POS app is built based on Typescript 2.2.2.
 
 ## Build the Retail SDK
 
@@ -109,9 +118,11 @@ In a similar way, update the references for all the Retail Server, proxy, and Ha
 
 You don't have to change the extensions code that was written in previous versions of the Retail SDK. You must update references and recompile only for the new SDK.
 
-If you have existing pipelines in Azure Pipelines that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
+If you have existing pipelines in Azure Pipelines not based on build machine agent that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
 
-## Azure DevOps pipeline
+Please follow the steps mentioned in [this doc to setup a build pipeline in Azure DevOps without using build VM and build agent from the build machine.](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline])
+
+## Azure DevOps pipeline using build machine agent:
 
 The same build machine used for MSBuild  with the Azure DevOps pipeline can be used with 10.0.11 SDK. Perform the following steps on the build machine for the 10.0.11 SDK:
 

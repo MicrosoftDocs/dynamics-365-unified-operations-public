@@ -2,9 +2,9 @@
 # required metadata
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.2
 ---
@@ -141,6 +141,10 @@ The following examples describe what occurs when you use the **Feature managemen
 ## Feature management and flighting
 
 Feature management lets you to control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
+
+## New features are optional for 12 months
+
+When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## Using Feature management to turn on ISV features or custom features
 

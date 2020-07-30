@@ -5,7 +5,7 @@ title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -102,7 +102,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
-        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments).
+        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments).
         
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
@@ -126,11 +126,11 @@ Here are some typical examples of service requests that will be denied:
 | Service request type           | Applicable environments | Requested service | Lead time | Downtime |
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
-| Package application            | Production | Deployable package application | Five hours | Based on data volume |
+| Package application            | Production | Deployable package application | Five hours | Five hours |
 | Sandbox point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
-| Production point-in-time restore | Production | Database point-in-time restore | Five hours | Based on data volume |
+| Production point-in-time restore | Production | Database point-in-time restore | Based on data volume | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
-|                                | Production | IP whitelist rules | Five hours | Two hours |
+|                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 

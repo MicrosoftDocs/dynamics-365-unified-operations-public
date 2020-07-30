@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 06/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -215,7 +215,7 @@ First, sign in to the environment by using the admin account that can be found o
 
 When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the UAT environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
 
 ## Community tools
 

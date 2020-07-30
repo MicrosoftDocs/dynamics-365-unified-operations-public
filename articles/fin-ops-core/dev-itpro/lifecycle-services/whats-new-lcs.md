@@ -5,7 +5,7 @@ title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,15 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
 The following sections list the features that are included in LCS releases.
+## June 2020 - wave 1
+| Area | Feature |Status |
+|------|---------|-------|
+| Business process modeler (BPM) | [Download task recording (AXTR)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/download-task-recordings-business-process-modeler) | General availability | 
+| Service updates | [View canceled updates](configure-service-updates.md#canceled-updates) | General availability |  
+
+## May 2020 - wave 2
+
+This release contains general performance improvements and minor bug fixes.   
 
 ## May 2020 - wave 1
 | Area | Feature |Status |
