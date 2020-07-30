@@ -109,9 +109,9 @@ To call your new hardware device, you must implement the Hardware station code. 
 
 To implement the Hardware station extension for Retail SDK version 10.0.11 or later, follow these steps:
 
-1. Create a new C# class library project with .NET Framework version 4.6.1 or use one of the HWS samples in the Retail SDK as a template (**...\RetailSDK\SampleExtensions\HardwareStation\\**). Using the sample as a template is recommended.
+1. Create a new C# class library project with .NET Framework version 4.6.1 or use one of the samples in the Retail SDK as a template (**...\RetailSDK\SampleExtensions\HardwareStation\\**). Using the sample as a template is recommended.
 
-2. In the HWS extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\pkgs** folder.
+2. In the extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\pkgs** folder.
 
 3. Add a new controller class that extends the **IController** interface.
 
@@ -121,7 +121,7 @@ To implement the Hardware station extension for Retail SDK version 10.0.11 or la
     [RoutePrefix("ISVEXTENSIONDEVICE")]  
     ```
 
-5. Add a method in the controller class with **HttpPost** attribute to implement your custom logic to call the hardware device. This method will be passed as the second parameter (action parameter) to the POS **HardwareStationDeviceActionRequest**. From the HWS extension method, the extension can call other HWS requests, like printing and cash drawer, by including the relevant NuGet packages from the Retail SDK.
+5. Add a method in the controller class with **HttpPost** attribute to implement your custom logic to call the hardware device. This method will be passed as the second parameter (action parameter) to the POS **HardwareStationDeviceActionRequest**. From the extension method, the extension can call other requests, like printing and cash drawer, by including the relevant NuGet packages from the Retail SDK.
 
     ```C#
     [HttpPost]
@@ -177,7 +177,7 @@ namespace Contoso
         using System.Threading.Tasks;
 
         /// <summary>;
-        /// Sample HWS extension
+        /// Sample hardware station extension
         /// </summary>
 
         [RoutePrefix("ISVEXTENSIONDEVICE")]
