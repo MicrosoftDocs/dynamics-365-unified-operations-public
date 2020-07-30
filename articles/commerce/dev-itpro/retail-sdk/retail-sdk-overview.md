@@ -43,6 +43,8 @@ The Retail software development kit (SDK) includes code, code samples, templates
 > [!NOTE]
 > The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.
 
+:::image type="content" source="media/Developer Experience - Extensibility Diagram.jpg" alt-text="Commerce components":::
+
 ### Download the Retail SDK
 
 The Retail SDK is available in development environments provisioned using LCS or the VHDs downloadable from LCS, and in hotfix packages deployed to the LCS environment. For more information check [how to provision a env in LCS](../../../dev-itpro/dev-tools/access-instances.md) and [Apply a deployable/Hotfix package](../../../dev-itpro/deployment/apply-deployable-package-system.md)
@@ -88,7 +90,7 @@ Before starting the development with Retail SDK first do the full msbuild from t
 
 Open the Developer command prompt for Visual Studio 2017 or the MSBuild 15.0 command prompt and navigate to the Retail SDK folder in developer command prompt and do msbuild by typing the command **msbuild /t:rebuild** from the root of the SDK folder (the dirs.proj file in the root of the SDK (**RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**) contains all the necessary details to build  the full SDK.
 
-[![Code sample to reference a type](./media/retailsdk02.png)](./media/retailsdk02.png)
+:::image type="content" source="media/DevCommandPrompt.png" alt-text="Build Retail SDK":::
 
 ## Retail SDK components deep dive
 
@@ -211,19 +213,6 @@ Consider the following important points:
 - The RetailServer API is consumed by a few projects by means of automatically generated client proxy code. This behavior allows for more rapid development, and reduces opportunities for errors and bugs. By default, the Retail SDK uses the official Microsoft DLL to generate the client code. Customizers can switch to their own DLL (in Customization.settings) and therefore automatically generate the proxy code for their customized RetailServer API. After switching the DLL, a developer might have to change some implementations inside the RetailProxy project. The reason is that Modern POS in offline mode must communicate directly with the commerce runtime, and that code must be implemented. However, no guesswork is required. The C\# compiler will force it.
 - The packaging projects generate the deployment packages in the way that LCS expects them. By default, these projects will ship only the Microsoft assets (non-customized) and the proxy DLLs. Anything else that should be included must be explicitly named in Customization.settings. This behavior is by design. It reduces the deployed custom code and allows for binary patches. For example, a customization adds a new CommerceRuntime service and a new RetailServer controller. In this case, two new DLLs are registered for inclusion in the packages and are automatically included in all relevant places. The packages will **not** have all recompiled binaries from the SDK.
 - There is no single Visual Studio solution that includes all projects. Because there are few couplings between the various Visual Studio projects, you can open multiple projects or solutions side by side, and can compile the appropriate project after a change.
-- Even if you didn't customize every component, the easiest way to get the final deployment packages is by building the whole Retail SDK. To do this, open an **MSBuild Command Prompt for VS2015** window, and enter **msbuild** (or **msbuild /p:Configuration=Release** for a non-debug version). 
-
-[![Screenshot of MSBuild command prompt](./media/retailsdk04.png)](./media/retailsdk04.png)
-
-This command will build all projects. This approach also provides a great way to verify that there are no implementation or code bugs. If there are any bugs, the build will fail, and the Command Prompt window will show what failed (this output resembles what Visual Studio would show). 
-
-[![Screenshot of MSBuild command prompt with sample code](./media/retailsdk05.png)](./media/retailsdk05.png)
-
-For detailed help for MSBuild, see [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx). 
-
-The binaries that the build creates are automatically copied to the SDK's References folder. The References folder also includes all the other binaries. Notice that no DLLs are overwritten, because they are all prefixed with a name (in this case, "Contoso") that you can define in Customization.settings. 
-
-[![Screenshot of Retail SDK's Reference files](./media/retailsdk06.png)](./media/retailsdk06.png)
 
 ### Minimal required configuration
 
