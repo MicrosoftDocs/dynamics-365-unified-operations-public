@@ -1,6 +1,6 @@
 ---
-title: Business and Technical Decision Makers Learning Catalog
-description: Find all the training options for Commerce.
+title: Learning catalog for business and technical decision makers considering Dynamics 365 Commerce
+description: Find all the training options for BDMs and TDMs considering Dynamics 365 Commerce.
 author: margoc
 ms.date: 07/27/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---
 
-# Commerce Business and Technical Decision Makers Learning Catalog
+# Learning catalog for business and technical decision makers considering Dynamics 365 Commerce
 
 Do you decide whether to invest in new technologies?
 
