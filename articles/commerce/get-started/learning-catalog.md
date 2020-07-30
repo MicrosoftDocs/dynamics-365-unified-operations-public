@@ -1,6 +1,6 @@
 ---
-title: Learning catalog for Commerce
-description: Find all the training options for Commerce.
+title: Learning catalog for Dynamics 365 Commerce
+description: Find all the training options for Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -16,7 +16,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---
-# Learning catalog for Commerce
+# Dynamics 365 Commerce Learning catalog 
 
 Find the right online training, in person workshops, and events for your role as a user of Commerce applications.
 
