@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Dynamics 365 Finance learning catalog
 
-Find the right online training, in person workshops, and events for your role as a user of the Finance application.
+Find the right online training, in person workshops, and events for your role as a user of the Dynamics 365 Finance application.
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
