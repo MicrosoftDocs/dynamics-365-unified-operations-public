@@ -788,7 +788,7 @@
           href: fixed-assets/straight-line-service-life-depreciation.md
     - name: Asset leasing
       items:
-      - name: Asset leasing setup
+      - name: Manage asset leases
         items:
         - name: Add or copy a lease
         - href: asset-leasing/add-lease.md
