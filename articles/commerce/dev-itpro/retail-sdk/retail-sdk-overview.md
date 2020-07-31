@@ -43,7 +43,7 @@ The Retail software development kit (SDK) includes code, code samples, templates
 > [!NOTE]
 > The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.
 
-![Commerce components](media/DeveloperExperience.jpg)
+![Commerce components](media/DeveloperExperience.png)
 
 ### Download the Retail SDK
 
@@ -86,7 +86,7 @@ Before starting the development with Retail SDK first do the full msbuild from t
 
 Open the Developer command prompt for Visual Studio 2017 or the MSBuild 15.0 command prompt and navigate to the Retail SDK folder in developer command prompt and do msbuild by typing the command **msbuild /t:rebuild** from the root of the SDK folder (the dirs.proj file in the root of the SDK (**RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**) contains all the necessary details to build  the full SDK.
 
-![Build Retail SDK](media/DevCommandPrompt.png)
+![Build Retail SDK](media/DevCommandPrompt.PNG)
 
 ## Retail SDK components deep dive
 
