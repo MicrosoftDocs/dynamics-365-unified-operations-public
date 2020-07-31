@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -131,6 +131,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Customer portal
 - [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)
+- [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ)
 
 ### Help system
 
