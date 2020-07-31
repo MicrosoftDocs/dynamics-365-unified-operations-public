@@ -63,7 +63,7 @@ The May 2020 release of dual-write orchestration package (version 2.0.777.353) c
 |------|---------|-------|
 | Mapping | Ability to lookup on-hand inventory and available-to-promise dates on forms in model-driven apps in Dynamics 365. | General availability |
 | Data conversion | 	When unit conversions take place in Finance and Operations app at the quote line and order line, the model-driven app in Dynamics 365 honors the unit conversions and reflects the respective changes to unit and price in model-driven app quote detail and order detail. | General availability |
-|  | 	When you try to change the currency in the Finance and Operations app for an existing quote or order, the change fails.   | General availability |
+| Data conversion | 	When you try to change the currency in the Finance and Operations app for an existing quote or order, the change fails.   | General availability |
 | Mapping | Bring attribute parity in **Account** and **Contact** forms in model-driven apps for B2B and B2C customers.  | General availability |
 | Mapping | Don’t duplicate an address in the Finance and Operations app when there is a create or update action on model-driven app quote or order.  | General availability |
 | Mapping | Support for **SalesTaxGroup** in **Account** and **Contact** forms for B2B and B2C customers. | General availability |
