@@ -44,11 +44,12 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Review function in POS inventory operations<br> - For more information, see [Outbound inventory operation in POS](pos-outbound-inventory-operation.md).
+
 - [Abandoned cart capabilities for e-commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
 - [Site builder WYSIWYG improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
 - [Media gallery](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Media gallery module](media-gallery-module.md).
 - [Map module](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Map module](map-module.md).
+
 
 
 ## Additional resources
