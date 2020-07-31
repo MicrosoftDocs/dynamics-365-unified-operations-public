@@ -25,7 +25,7 @@ ms.search.region: Global
 ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
-ms.dyn365.ops.version:
+ms.dyn365.ops.version: Release 10.0.13
 
 ---
 
