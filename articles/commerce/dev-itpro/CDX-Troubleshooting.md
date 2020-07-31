@@ -63,7 +63,7 @@ If a error is not seen below, please create a Support Request as necessary to re
 ## Resources
 | Links |
 |---------------------------------------------------|
-| [Best practices](CDX-Best-Practices.md) |
+| [Commerce Data Exchange best practices](CDX-Best-Practices.md) |
 | [CDX best practices](implementation-considerations-cdx.md) |
 | [Commerce Architecture](../commerce-architecture.md) |
 | [Select an in-store topology](retail-in-store-topology.md) |
