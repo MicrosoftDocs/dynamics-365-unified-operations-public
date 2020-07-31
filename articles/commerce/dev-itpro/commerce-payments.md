@@ -189,38 +189,31 @@ After the payments are edited, the order submittal process rectifies any changes
 
 | Scenario | Description | Supported |
 | --- | --- | --- |
-| **Linked refunds for POS and e-commerce orders** | Return orders generated from orders originating in POS and e-Commerce channels can issue linked refunds against the cards charged during invoicing. | Yes |
-| **Linked refunds for AR sales order** | While their payments may not be edited in order completion, returns issued for AR sales orders are capable of linked refund to the original card charged during invoicing. | 
-| **Unlinked refunds** | If allowed by the merchant's return policies and payment processor, unlinked refunds may designated for return orders in cases where the order was originally paid in cash, for example, or in cases where the original card used for payment is no longer active. | Yes |
-| **Refunds to non-card prepayments** | Return orders that were orignally paid with non-card prepayments, such as cash or credit memo payments, will not be subject to linked refund. An appropriate payment method such as **Check** must be designated for the refund payment. Organizations that allow unlinked refunds may refund non-card prepayments to credit cards not previously used for the order if it is allowed by their payment processor. | Yes |
+| **Linked refunds for POS and e-commerce orders** | Return orders generated from orders originating in POS and e-commerce channels can issue linked refunds against the cards charged during invoicing. | Yes |
+| **Linked refunds for AR sales order** | While the payments may not be edited in order completion, returns issued for Accounts Receivable sales orders can be subject to a linked refund to the original card charged during invoicing. | 
+| **Unlinked refunds** | If allowed by the merchant's return policies and payment processor, unlinked refunds can be designated for return orders in cases where the order was originally paid in cash, for example, or in cases where the original card used for payment is no longer active. | Yes |
+| **Refunds to non-card prepayments** | Return orders that are orignally paid with non-card prepayments, such as cash or credit memo payments, won't be subject to linked refund. An appropriate payment method such as **Check** must be designated for the refund payment. Organizations that allow unlinked refunds may refund non-card prepayments to credit cards that weren't previously used for the order if allowed by the payment processor. | Yes |
 
-### Editing and removing orders with prepayments
+### Edit and remove orders with prepayments
 
 | Scenario | Description | Supported |
 | --- | --- | --- |
-| **Editing prepayment tender lines** | Prepayment tender lines already have payment vouchers associated with them and may not be edited or removed. | No |
+| **Edit prepayment tender lines** | Prepayment tender lines have payment vouchers associated with them and can't be edited or removed. | No |
 
-## Other enhancements 
 
-To best support this feature, other enhancements have been introduced. 
+## Related changes 
+
+To support onmi-channel Commerce payments, changes to existing functionality were introduced in Commerce versions 10.0.13. 
 
 ### Consistent selection of payment journals when posting sales orderd and refund payments
 
-Prior to this feature, payment journal designation has been inconsistent across channels. When this feature is enabled, all channels will use payment vouchers designated in **Commerce  parameters** on the **Posting** tab. 
+In Commerce versions 10.0.12 and earlier, payment journal designation is inconsistent across channels. In Commerce versions 10.0.13 and later, if omni-channel Commerce payments is enabled, all channels use payment vouchers designated in **Commerce parameters** on the **Posting** tab. 
 
 ![Retail parameters payment voucher assignment](../dev-itpro/media/COP_VOUCH.png)
 
-### Enhacement for check payment method
+### Check payment method
 
-Orders created in POS do not include check number when they are created in the back office. When this feature is enabled, orders created in POS that are paid for by check will have **9999** filled in as the check number
+Orders created in POS don't include check number when they're created in the Commerce headquarters (HQ). When omni-channel Commerce payments is enabled, orders created in POS that are paid for by check will have **9999** entered as the check number.
 
-When a check is issued as refund payment in call center, the check number field was previously required. After this feature is enabled, check number will no longer be required when designating **Check** as the refund method of payment.  
-
-## Out of scope
-
-Certain other capabilities that are not included in this feature should be mentioned as they constitute areas for future improvement that did not fit the scope of this feature. 
-
-- Support for editing call center originating orders in the point of sale is not included. That will be addressed as a separate feature. 
-- When a payment is edited in call center and the result is that a new authorization is needed, that new authorization will be obtained using the call center's merchant properties. 
-- Orders created during statement posting for point of sale cash and carry transactions will not be created as Omni-channel commerce orders. Specifically, those transaction will not support linked refund from the back office. 
+Furthermore, the check number won't be required when designating **Check** as the refund method of payment.  
 
