@@ -68,7 +68,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the platform APIs found in the class **HasFunction**. |
 
 ### Hash.ComputeSHA1Hash(string message)
 
@@ -78,7 +78,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers  must use the platform APIs found in the class **HasFunction**. |
 
 
 ### FormDateTimeControl.setUtcString()
