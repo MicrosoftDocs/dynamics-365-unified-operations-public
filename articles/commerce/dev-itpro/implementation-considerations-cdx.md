@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Commerce Data Exchange implementation guidance
+[!include[banner](../includes/banner.md)]
+
 This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives an overview, implementation tips, and overall guidance that should be considered as you plan your implementation in regards to forms, setup, configuration, best practices, and more.
 
 ## Overview
