@@ -35,9 +35,6 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between model-driven apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-> [!IMPORTANT]
-> Dual-write features and changes are not announced via blog posts. Descriptions of dual-write features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
-
 The following sections list the features that are included in dual-write releases. Dual-write features and changes are announced in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 + [Data in Common Data Service – Phase 1](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
