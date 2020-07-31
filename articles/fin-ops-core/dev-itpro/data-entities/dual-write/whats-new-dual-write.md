@@ -43,7 +43,9 @@ The following sections list the features that are included in dual-write release
 
 ## July 2020 release
 
-The July 2020 release is based on [dual-write core version 10.0.18](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write?tab=Overview) and it contains the functions in the following table. If you are using dual-write core version 1.0.16, you should upgrade to 10.0.18. 
+The July 2020 release of the [Dual-write application orchestration solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 10.0.18](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write). If you are using dual-write core version 1.0.16, you should upgrade to 10.0.18. 
+
+The release contains the functions in the following table. 
 
 | Area | Feature |Status |
 |------|---------|-------|
