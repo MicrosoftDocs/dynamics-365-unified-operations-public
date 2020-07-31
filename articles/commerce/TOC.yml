@@ -950,6 +950,8 @@
             href: add-accordion.md
           - name: Tab module
             href: add-tab.md
+          - name: Iframe module
+            href: iframe-module.md
         - name: Marketing modules
           items:
           - name: Promo banner module 
@@ -972,6 +974,8 @@
           items:
           - name: Buy box module
             href: add-buy-box.md
+          - name: Media gallery module
+            href: media-gallery-module.md
           - name: Ratings and reviews modules
             href: ratings-reviews-modules.md
         - name: Purchase modules
@@ -984,10 +988,14 @@
             href: add-checkout-module.md
           - name: Order details module
             href: order-confirmation-module.md 
-          - name: Store selector module
-            href: store-selector.md
           - name: Gift card module
             href: add-giftcard.md
+        - name: Store finder modules
+          items:
+          - name: Map module
+            href: map-module.md
+          - name: Store selector module
+            href: store-selector.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
