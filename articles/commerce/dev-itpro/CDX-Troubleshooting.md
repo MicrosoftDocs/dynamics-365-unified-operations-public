@@ -65,7 +65,7 @@ If a error is not seen below, please create a Support Request as necessary to re
 |---------------------------------------------------|
 | [Commerce Data Exchange best practices](CDX-Best-Practices.md) |
 | [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md) |
-| [Commerce Architecture](../commerce-architecture.md) |
+| [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) |
 | [Select an in-store topology](retail-in-store-topology.md) |
 | [Device management implementation guidance](../implementation-considerations-devices.md) |
 | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
