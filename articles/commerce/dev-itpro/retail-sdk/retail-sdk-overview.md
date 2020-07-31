@@ -272,14 +272,13 @@ Open the HardwareStation.Extension.PaymentSample.sln.
 </tbody>
 </table>
 
+### Best practice:
+
+The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and extension types, if extension code referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. to distinguish between Microsoft libraries vs the libraries from extension. The extension libraries must not begin with Microsoft.Dyanmics name.
+
 ### Deployment packages
 
 After commerce extension development (Commerce runtime, Retail server, Database scripts, POS and Hardware station) the Retail SDK can be used to generate deployment packages which can be deployed to test, sandbox and production environments. For more information refer [Create deployable packages](../../../dev-itpro/retail-sdk/retail-sdk-packaging.md)
-
-
-The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics. If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. That way, you'll know that it's not from the Retail SDK but from a referenced binary. 
-
-[![Code sample to reference a type](./media/retailsdk02.png)](./media/retailsdk02.png)
 
 ### Dependencies, build order, and full build
 
@@ -287,29 +286,20 @@ The following illustration shows a high-level logical dependency tree within the
 
 [![Diagram of high-level logical dependency tree](./media/retailsdk03.png)](./media/retailsdk03.png) 
 
-Consider the following important points:
-
-- The RetailServer API is consumed by a few projects by means of automatically generated client proxy code. This behavior allows for more rapid development, and reduces opportunities for errors and bugs. By default, the Retail SDK uses the official Microsoft DLL to generate the client code. Customizers can switch to their own DLL (in Customization.settings) and therefore automatically generate the proxy code for their customized RetailServer API. After switching the DLL, a developer might have to change some implementations inside the RetailProxy project. The reason is that Modern POS in offline mode must communicate directly with the commerce runtime, and that code must be implemented. However, no guesswork is required. The C\# compiler will force it.
-- The packaging projects generate the deployment packages in the way that LCS expects them. By default, these projects will ship only the Microsoft assets (non-customized) and the proxy DLLs. Anything else that should be included must be explicitly named in Customization.settings. This behavior is by design. It reduces the deployed custom code and allows for binary patches. For example, a customization adds a new CommerceRuntime service and a new RetailServer controller. In this case, two new DLLs are registered for inclusion in the packages and are automatically included in all relevant places. The packages will **not** have all recompiled binaries from the SDK.
-- There is no single Visual Studio solution that includes all projects. Because there are few couplings between the various Visual Studio projects, you can open multiple projects or solutions side by side, and can compile the appropriate project after a change.
-
-### Minimal required configuration
-
-Do you just want to quickly build the Retail SDK, or to run POS in the debugger on a demo machine? For Modern POS only, you must create an app package signing certificate in order to build correctly. Alternatively, you can use Cloud POS. Follow the instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file. Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name (ModernPOSPackageCertificateKeyFile). At this point you have everything that you require in order to build individual solutions, projects, or the whole Retail SDK (by using MSBuild).
 
 ### Normal configuration/code signing
 
-BuildTools\\Customization.settings holds most of the configuration values for the SDK. The highlighted items in the following illustration are the global values. These values control how built binaries, components, and packages are named, versioned, and code-signed. 
+For Modern POS create an app package signing certificate in order to build correctly or use Cloud POS. Follow the instructions at [Create a certificate for package signing](https://docs.microsoft.com/en-us/windows/msix/package/create-certificate-package-signing) to create a PFX file. Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name (ModernPOSPackageCertificateKeyFile). 
+
+BuildTools\\Customization.settings holds most of the configuration values for the SDK. The highlighted items in the following illustration are the global values. These values control how build is managed for binaries, components, and packages are named, versioned, and code-signed. 
 
 [![Screenshot of code for BuildTools Customization settings](./media/retailsdk07.png)](./media/retailsdk07.png)
 
 It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx). 
 
-To build correctly, you must create an app package signing certificate. Follow these instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file. 
+The generated installer files for self-service components like MPOS, Hardware station, Store scale unit can be signed with [SignTool.exe](https://docs.microsoft.com/en-us/windows/win32/seccrypto/signtool).
 
-Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder. The **RetailServerLibraryPathForProxyGeneration** property can be used to set a different RetailServer DLL for proxy generation. Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts. After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created. 
-
-[![Screenshot of code for additional files](./media/retailsdk08.png)](./media/retailsdk08.png)
+Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder or in Azure key vault, for password protected or secured certificate use Azure Key vault.
 
 ### Customizing the build
 
