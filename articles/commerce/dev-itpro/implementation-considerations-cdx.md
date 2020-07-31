@@ -44,18 +44,22 @@ The **Channel database** page is used to create, review, and edit the channel da
 [Channel database](./media/ChannelDatabase.png)
 
 The **Channel database group** page is used to create, review, and edit the channel database groups.  Each group is associated to one or more databases (channel or offline). The database group is responsible for gathering the relevant data (That is required by all channel and offline databases associated to the database group) necessary to be generated as part of the CDX data synchronization.
+
 [Channel database](./media/ChannelDatabaseGroup.png)
 
 The **Channel profile** page is used to create, review, and edit the channel profiles.  Each channel profile stores the URLs relevant to the network-based communication necessary within a channel.  A channel profile will typically have a Retail Server URL and a Cloud POS URL.  Additionally, frequently there will also be a Media Server Base URL (This URL is the internet addressable location of images used by POS, eCommerce, and other Dynamics 365 Commerce channels).  A channel profile is automatically generated for a Commerce Scale Unit (Cloud) but must be manually generated as part of the Commerce Scale Unit (Self-hosted) configuration and installation steps.
+
 [Channel database](./media/ChannelProfile.png)
 
 The **Offline profile** page is used to create, review, and edit the offline profiles.  Each offline profile allows a user to configure offline related settings, including configurations such as the ability to **allow manual switch to offline before sign-in**, **Enable advanced offline switching**, and **Pause offline synchronization**.  These feature configurations are discussed in this and related documents referenced at the end of this document.
 [Channel database](./media/OfflineProfile.png)
 
 The **Commerce channel schema** page is used to create, review, and edit the channel schemas.  By default, one schema is already created and available named **AX7**.  The channel schema is required to provide the means of "how" to read the Headquarters database for Commerce data.  This is also where the configuration is located to exclude customer related data from data synchronization to offline databases.  This feature will be discussed in this and other documents referenced at the end of this document.
+
 [Channel database](./media/ChannelSchema.png)
 
 The **Distribution schedule** page is used to create, review, and edit the distribution schedule jobs.  These schedule jobs associate which channel database groups will run the associated scheduler job (Detailed next).  A schedule job can be marked active and has a singular direction of data associated to it (Typically download, to send data down to the channels).  By default, all Commerce related jobs already exist and are prepared for use with any generated Commerce Scale unit (Cloud).  From this page, delta synchronizations can be created for a selected schedule job.
+
 [Channel database](./media/DistributionSchedule.png)
 
 The **Scheduler job** page is used to create, review, and edit the job selected from the schedule job.  This job has a series of associated subjobs.  This job also is associated to a channel schema (Typically the **AX7** schema originally created.  A job can be excluded from synchronization to offline databases.
@@ -72,11 +76,11 @@ When a job is run (Scheduler job), the channel database group (Channel database 
 
 Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various pages are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
-[Commerce Data Exchange - Association Map](./media/Commerce Data Exchange - Association Map.png)
+[Commerce Data Exchange - Association Map](./media/CommerceDataExchange-AssociationMap.png)
 
 This visual showcases the various pages in Headquarters (Previously described in this document) and how they associate to one another.  When fully configured across all of the pages shown, CDX data generation will be able to occur.  Data synchronization occurs in two pages, download and upload.  CDX data generation is required for downloads.  Point of Sale data generated while offline requires data synchronization upload.
 
-[Commerce Architecture - Data Synchronization](./media/Commerce Architecture - Data Synchronization.jpg)
+[Commerce Architecture - Data Synchronization](./media/CommerceArchitecture-DataSynchronization.jpg)
 
 This visual showcases the download and upload data flows.  Data packages generated through CDX flow downward from Headquarters to the Commerce Scale Unit and to Modern POS offline databases.  Transactional data flows upward from the Modern POS offline databases to Commerce Scale Unit and Headquarters.
 
@@ -124,12 +128,11 @@ This section describes configurations that should be considered as implementatio
  - **Channel database groups** - At a minimum, two channel databse groups should exist.  One for the initial Commerce Scale Unit (Cloud) in use and one for any (Or all) offline databases in use.  In large retail enterprises, there could potentially be more than one offline focused channel database group (Separated by similarity of data within their associated channels (Stores)).  Additionally, it is useful to have a dummy channel database group for purposes of being able to configure new channel databases, registers with offline support (offline databases would be created), and potentially new but unused Commerce Scale Units (Either Cloud or Self-hosted). This dummy group would not be associated to any **Distribution schedule** jobs, therefore no data generation would ever occur for anything associated to it. As time and the implementation progresses, the associated entities (Channel (Store), register offline databases, etc.) would be re-associated to the correct database group. A great (and arguably better) alternative to this is to utilize the **Pause offline synchronization** feature explained previously.
 
 ## Resources
-| Links |
-|---------------------------------------------------|
-| [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) |
-| [Commerce Data Exchange best practices](CDX-Best-Practices.md) |
-| Dynamics 365 Commerce architecture overview](../commerce-architecture.md) |
-| [Select an in-store topology](retail-in-store-topology.md) |
-| [Device management implementation guidance](../implementation-considerations-devices.md) |
-| [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
-| [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) |
+
+- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) 
+- [Commerce Data Exchange best practices](CDX-Best-Practices.md) 
+- Dynamics 365 Commerce architecture overview](../commerce-architecture.md) 
+- [Select an in-store topology](retail-in-store-topology.md) 
+- [Device management implementation guidance](../implementation-considerations-devices.md) 
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
