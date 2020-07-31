@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
