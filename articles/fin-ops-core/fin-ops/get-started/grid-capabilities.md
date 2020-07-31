@@ -141,14 +141,19 @@ This section maintains a list of known issues for the new grid control while the
 
 - Card lists that were rendered as multiple columns are now rendered as a single column.
 - Grouped lists aren't rendered as groups or in separate columns.
+- Checkboxes in inactive rows toggle even if the whitespace in the cell is clicked (addressed in 10.0.14).  
 
 ### Fixed as part of 10.0.13
 
 > [!NOTE]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
--  [KB ] 
-
+-  [Bug 474846] Not all marked rows are deleted in General Journal
+-  [Bug 474848] Enhanced previews with grids do not display
+-  [Bug 474851] Hyperlinks in reference group controls don't work 
+-  [BUg 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [KB 4575233] Display options are not restored after moving to another row
+-  [KB 4571095] Product receipt posting occurs when accidentally pressing enter (correct handling of a page's default action)
 -  [KB 4575437] Lookups with editable controls close unexpectedly
 -  [KB 4569418] Duplicate line created in delivery schedule form
 -  [KB 4575435] Enhanced preview sometimes persists when my mouse isn't near the field
