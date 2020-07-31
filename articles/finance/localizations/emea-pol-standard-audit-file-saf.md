@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 04/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,7 @@ To specify an Electronic reporting (ER) format for each SAF-T scheme, click **Ge
 Each ER format should be predefined and can be updated in ER.
 
 ### Main accounts
-In Polish SAF-T Financial data, main accounts that are used in Finance must be associated with Polish standard accounts for the purpose of SAF-T reporting. The setup required is similar to [Norwegian SAF-T Main Accounts](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nor-satndard-audit-file-for-tax#main-accounts).
+In Polish SAF-T Financial data, main accounts that are used in Finance must be associated with Polish standard accounts for the purpose of SAF-T reporting. The setup required is similar to [Norwegian SAF-T Main Accounts](emea-nor-satndard-audit-file-for-tax.md#main-accounts).
 
 ## Generate a SAF Accounting books file
 To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, and set the following parameters.
