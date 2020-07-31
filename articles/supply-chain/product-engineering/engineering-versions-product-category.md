@@ -53,7 +53,7 @@ When you use engineering products, each product will have at least one engineeri
 - Effective-from and effective-to dates.
 - The product version active status, which tells whether the version can be released and used in transactions (see also [Product readiness](product-readiness.md)).
 - The engineering organization that created and owns the product (see also [Engineering organization and data ownership rules](engineering-org-data-ownership-rules.md)).
-- Related engineering documents. <!-- KFM: what are these? -->
+- Related engineering documents. <!-- KFM: what are these? BNG any type of document related to the product: manual of assembly, instructions for the user, pictures, url to the public webpage where it appears on the catalog...-->
 - The engineering attributes (see also [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md)).
 - The engineering bill(s) of materials
 - The engineering route(s)
@@ -61,14 +61,15 @@ When you use engineering products, each product will have at least one engineeri
 You can choose to update this data on an existing version or create a new version using an **engineering change order** (see also [Engineering change management](engineering-change-management.md)). If you create a new version of the product, the system copies all engineering relevant data to then new version, and then you can modify the data for the new version. This lets you can track specific data for each consecutive version. To compare the differences between consecutive engineering versions, inspect the engineering change order, which includes change types that indicate all changes.
 
 <!-- KFM: We should describe how to make an engineering version and what the settings are. -->
+The first version is automatically created when the engineering product is created. The version will follow the version number rule defined in the engineering category for the product. To transition into a following version, the product must be added into an engineering change order as a line and the impact must be set to New version. The engineering change order will include the details of the change from the current version into the following version.
 
 ## Track versions in transactions
 
 When you use engineering change management, your product master data will always include one or more engineering versions. In your setup of engineering products, you can choose whether or not the engineering version is also part of *logistical transactions* (see [Engineering product category](#product-category) for details). If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product are used and when you introduce a new version, the previous version can't be used anymore. In other cases, the version is needed in logistical transactions to overcome the following challenges:
 
-- Logistics <!-- KFM: Logistics what? Department, manager, personnel? --> needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
+- The logistics department <!-- KFM: Logistics what? Department, manager, personnel? --> needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
 - If it later turns out that a problem occurs specifically related to a change, it may be beneficial to pinpoint exactly which version was shipped with each order.
-- Companies typically want to ship old versions first to phase them out of inventory. This can often be managed by determining the effectivity <!-- KFM: What do you mean by "effectivity"? --> of the new version in relation to predictions of when stock of the old version will be depleted, especially with low-volume products. But sometimes this is not possible, or the uncertainty in stock level prediction is considered too high.
+- Companies typically want to ship old versions first to phase them out of inventory. This can often be managed by determining the effectivity dates <!-- KFM: What do you mean by "effectivity"? BNG dates--> of the new version in relation to predictions of when stock of the old version will be depleted, especially with low-volume products. But sometimes this is not possible, or the uncertainty in stock level prediction is considered too high.
 
 The choice of whether or not to make versions visible in inventory depends on factors such as those mentioned, plus company practice and other considerations specific to each company. You can set this option on the *engineering product category*, and this will be applicable for all products created from the engineering product category for all companies the product is released to.
 
@@ -81,7 +82,7 @@ For products set up with logistical impact, the engineering version must be spec
 Set up engineering product categories in the engineering product hierarchy to ensure engineering products will behave as required. Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category; you are also prevented from changing any of the following:
 
 - Engineering company
-- Product type <!-- KFM: Same as engineering product category? -->
+- Product type <!-- KFM: Same as engineering product category? BNG no, product type is if it an item or a service -->
 - Product subtype
 - Product dimension group
 - Configuration technology
