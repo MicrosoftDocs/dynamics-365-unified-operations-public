@@ -59,10 +59,6 @@ The Retail SDK is a build system. A simple MSBuild command from the root of the 
 
 [Set up Commerce SDK build pipeline](../../../dev-itpro/retail-sdk/SDK-build-pipeline.md)
 
-### Deployment packages
-
-After commerce extension development (Commerce runtime, Retail server, Database scripts, POS and Hardware station) the Retail SDK can be used to generate deployment packages which can be deployed to test, sandbox and production environments. For more information refer [Create deployable packages](../../../dev-itpro/retail-sdk/retail-sdk-packaging.md)
-
 ### Prerequisites
 
 - To **develop** or **build** extensions using the Retail SDK you must have the following components:
@@ -150,7 +146,7 @@ The folder structure and description below are based on the Retail SDK version 1
 </tr>
 <tr>
 <td>pkgs</td>
-<td>All the NuGet packages (refernce libaraies) required for building the extension projects and tools for packaging and retail proxy generation.</td>
+<td>All the NuGet packages (reference libraries) required for building the extension projects and tools for packaging and retail proxy generation.</td>
 </tr>
 <tr>
 <td>POS</td>
@@ -173,20 +169,20 @@ The folder structure and description below are based on the Retail SDK version 1
 <td>SampleExtensions</td>
 <td>Contains the sample projects and templates for extensions:
 <ul>
-<li><strong>CommerceRuntime</strong> – Sample extension projects for business logic extensons (CRT triggers, handlers and new service extension</li>
-<li><strong>HardwareStation</strong> – Sample Hardware stataion extension projects</li>
-<li><strong>HybridApp</strong> – Andriod and iOS shell apps for POS. Extension can build these apps and deploy it to Andriod and iOS platform</li>
+<li><strong>CommerceRuntime</strong> – Sample extension projects for business logic extensions (CRT triggers, handlers and new service extension</li>
+<li><strong>HardwareStation</strong> – Sample Hardware station extension projects</li>
+<li><strong>HybridApp</strong> – Android and iOS shell apps for POS. Extension can build these apps and deploy it to Android and iOS platform</li>
 <li><strong>OnlineStore</strong> – Sample online storefront app</li>
-<li><strong>RetailProxy</strong> – Sample C# proxy project for POS offline. THis is depricated starting 10.0.11, teh retail server extension libaries can be used in offlien, bno need for sperate proxy files.</li>
+<li><strong>RetailProxy</strong> – Sample C# proxy project for POS offline. C# proxy is deprecated starting 10.0.11, the retail server extension libraries can be directly used in offline no need for sperate proxy libraries.</li>
 <li><strong>RetailServer</strong> - Sample Retail server extension projects.</li>
 <li><strong>SampleExtensionsTest</strong> - Sample project for creating extension test project.</li>
-<li><strong>ShoppingApp</strong> – Sample mobile app for end Customers in ANdroid and iOS (Retailer shopping app).</li>
+<li><strong>ShoppingApp</strong> – Sample mobile app for end Customers in Android and iOS (Retailer shopping app).</li>
 <li><strong>TypeScriptProxy</strong> – Sample Proxy projects for how to generate Typescript for POS.</li>
 </ul></td>
 </tr>
 <tr>
 <td>dirs.proj</td>
-<td>TMSBuild proj file that directs the build order.</td>
+<td>Proj file that directs the build order.</td>
 </tr>
 <tr>
 <td>Microsoft-version.txt</td>
@@ -195,7 +191,9 @@ The folder structure and description below are based on the Retail SDK version 1
 </tbody>
 </table>
 
-The below tables provide information on which components in SDK must be customized for different scenarios:
+### Extension components in Retail SDK
+
+The below tables provide information on which components in SDK must be customized for different scenarios, only the sample projects inside the Retail SDK\SampleExtensions can be modified for extension purpose, no other files or projects/scripts should be modified in the Retail SDK:
 
 <table>
 <thead>
@@ -212,7 +210,7 @@ The below tables provide information on which components in SDK must be customiz
     <td>Client (POS)</td>
     <td>Extend the POS for user experience changes, client logic, workflow and simple validations.</td>
     <td>\RetailSDK\POS 
-        Open the ModernPos.Sln or CloudPos.sln
+        Open the ModernPos.Sln or CloudPos.sln. Add extension to the POS.Extension project, don't modify anything in the core POS app/web projects.
 </td>
     <td>Typescript, HTML and CSS</td>
     <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/pos-run-samples?toc=/dynamics365/commerce/toc.json</td>
@@ -273,8 +271,10 @@ Open the HardwareStation.Extension.PaymentSample.sln.
     </tr>
 </tbody>
 </table>
-				
-	
+
+### Deployment packages
+
+After commerce extension development (Commerce runtime, Retail server, Database scripts, POS and Hardware station) the Retail SDK can be used to generate deployment packages which can be deployed to test, sandbox and production environments. For more information refer [Create deployable packages](../../../dev-itpro/retail-sdk/retail-sdk-packaging.md)
 
 
 The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics. If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. That way, you'll know that it's not from the Retail SDK but from a referenced binary. 
