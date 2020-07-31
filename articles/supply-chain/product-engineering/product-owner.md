@@ -41,7 +41,7 @@ To create and populate a product owner group:
 
 1. Go to **Product engineering \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
-3. In the **Product owner** field, type a value. <!-- KFM: What kind of value? How is this different from the name?  -->
+3. In the **Product owner** field, type a value. <!-- KFM: What kind of value? How is this different from the name? BNG is not really different  -->
 4. In the **Name** field, enter a name for the group.
 5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
 
@@ -58,7 +58,7 @@ The product owner is also visible on the released product form.
 
 ## Product owners and releasing products
 
-Only users from a product's owner group can release that product. However, products that are part of a bill of materials of a product structure can be released by other users provided the parent product is already released. <!-- KFM: In this paragraph, it sounds like another user has to release each product from the BOM, but in the following example, it sounds like products from the BOM are released automatically together with the parent product. Which is it? -->
+Only users from a product's owner group can release that product. However, there is an exception: if the item is a child item and its parent is released by the parent's owner. In other words, if the product is part of the BOM of another product (the product is a child item and the parent is released), then the system will not check the product owner of each of the items in the BOM. Only the product owner of the parent item will be checked.  <!-- KFM: In this paragraph, it sounds like another user has to release each product from the BOM, but in the following example, it sounds like products from the BOM are released automatically together with the parent product. Which is it? the second, the example is clear, this one may be misleading, I am changing it a bit -->
 
 For example: product X is assigned to the product owner group *Design cabinets*. Product X is also part of the bill of material of product Y, which is assigned to product owner group *Design Speakers*. If a user from the product owner group *Design Speakers* releases product Y and its bill of materials, then product X will be released along with it.
 
@@ -66,4 +66,4 @@ For example: product X is assigned to the product owner group *Design cabinets*.
 
 Because product owners know whether certain engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this by setting them up as participant providers in the workflows used for engineering change management. The system will then assign approval tasks in the workflows based on the products that are in engineering change requests and engineering change orders. For more information, see [Engineering change management](engineering-change-management.md).
 
-<!-- KFM: I think this section misses some details about whether and how we can use owner-group records as part of a workflow.  -->
+<!-- KFM: I think this section misses some details about whether and how we can use owner-group records as part of a workflow.  BNG let's leave this for later-->
