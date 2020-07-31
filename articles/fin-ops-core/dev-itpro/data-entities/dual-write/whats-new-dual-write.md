@@ -42,6 +42,7 @@ The following sections list the features that are included in dual-write release
 
 + [Data in Common Data Service – Phase 1](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
 + [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
++ [Finance and Operations data in Common Data Service – Phase 3](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
 ## July 2020 release
 
