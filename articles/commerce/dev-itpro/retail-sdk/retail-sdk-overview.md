@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides overview of the Retail SDK. The Dynamics 365 for Commerce platform provides a rich commerce SDK for developers to customize and add new features to the product. The multi-tier architecture of the commerce platform provides simplified options to customize and extend different layers (Client, business logic and Data layer) independently. The Retail SDK includes libraries, NuGet packages, POS application, code samples, templates, and tools that can be used to create extensions apps and features for Dynamics 365 Commerce or modify existing functionalities.
+This topic provides overview of the Retail SDK. The Dynamics 365 Commerce platform provides a rich commerce SDK for developers to customize and add new features to the product. The multi-tier architecture of the commerce platform provides simplified options to customize and extend different layers (Client, business logic and Data layer) independently. The Retail SDK includes libraries, NuGet packages, POS application, code samples, templates, and tools that can be used to create extensions apps and features for Dynamics 365 Commerce or modify existing functionalities.
 
 ## Retail SDK Overview
 
-The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing commerce functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
+The Retail software development kit (SDK) includes code, code samples, templates, and tools that are required to extend or customize existing commerce functionality. The SDK supports rapid development, full MSBuild integration and package generation.
 
 > [!NOTE]
 > The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.
