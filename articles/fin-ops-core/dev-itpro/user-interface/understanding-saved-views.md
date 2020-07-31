@@ -88,7 +88,8 @@ This section provides a list of known issues for saved views while the feature i
 
 ### Open issues
 -  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, excluding the QuickFilter)If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
--  Views should keep track of the last Quick Filter column used, without having to explicitly save it to a view. 
+-  View support for workspaces, dashboards, and dialogs
+-  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank
 
 ### Fixed in 10.0.13
 
@@ -96,14 +97,17 @@ This section provides a list of known issues for saved views while the feature i
 > Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of vers
 ion 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
+-  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
--  [KB 4575278] Tiles lose their link to the backing published view if the view is republished
--  [BUG 462286] Publishing to an existing view name overwrites configuration changes already made
+-  [KB 4575278] Tiles, lists, and links lose their linkage to the published view if the view is republished
+    -  Note that because additional information is needed to restore the linkage, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13+ and re-pin the elements to your workspace once more.
+-  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
 -  [KB 4574778] Pin & Publish as default are not respecting companies that the view was published to
 -  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
 -  [KB 4568151] Published views recipients are not being updated after republishing from a different legal entity
 -  [KB 4562137] Views published to a parent security role are not applied to child roles
+-  [KB 4564528] QuickFilter default field personalization isn't working as expected with views
 
 ### Fixed in release 10.0.12
 -  [KB 4568122] Unexpected queries applied after enabling views
