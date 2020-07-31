@@ -126,10 +126,10 @@ This section describes configurations that should be considered as implementatio
 ## Resources
 | Links |
 |---------------------------------------------------|
-| [Commerce Data Exchange troubleshooting](dev-itpro/CDX-Troubleshooting.md) |
+| [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) |
 | [Commerce Data Exchange best practices](CDX-Best-Practices.md) |
-| [Commerce Architecture](commerce-architecture.md) |
+| Dynamics 365 Commerce architecture overview](../commerce-architecture.md) |
 | [Select an in-store topology](retail-in-store-topology.md) |
-| [Device management implementation guidance](implementation-considerations-devices.md) |
-| [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md) |
-| [Configure and install Commerce Scale Unit (self-hosted)](dev-itpro/retail-store-scale-unit-configuration-installation.md) |
+| [Device management implementation guidance](../implementation-considerations-devices.md) |
+| [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
+| [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) |
