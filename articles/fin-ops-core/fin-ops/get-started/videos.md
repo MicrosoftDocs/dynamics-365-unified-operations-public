@@ -3,7 +3,7 @@
 
 title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
-author: josaw1
+author: sericks007
 manager: AnnBe
 ms.date: 07/30/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
@@ -130,7 +130,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
 ### Customer portal
-- [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)
+- [Overview of the Customer portal template](https://youtu.be/nPrqoLuHfV8)
 - [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ)
 
 ### Help system
