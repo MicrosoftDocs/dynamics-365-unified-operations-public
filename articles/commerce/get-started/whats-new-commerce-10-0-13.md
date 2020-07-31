@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.13. 
 author: josaw1
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.12. This version has a build number of 10.0.XXX and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.12. This version has a build number of 10.0.569 and is available on the following schedule:
 
 - **Preview release:** July 2020
 - **General availability (self-update):** September 2020
@@ -42,10 +42,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-- [feature name](link to release plan)
 - [Review function in POS inventory operations](link to release plan)
 - [Abandoned cart capabilities for e-commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
 - [Site builder WYSIWYG improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
+- [Media gallery](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)
+- [Map module](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)
 
 
 ## Additional resources
