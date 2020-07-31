@@ -79,11 +79,11 @@ When a job is run (Scheduler job), the channel database group (Channel database 
 
 Data is generated and flows in a very specific way (Download or upload).  It is important to understand how the various pages are used and how this data generation occurs to be able to understand how best to configure the timing and select what data to be synchronized.  When done properly, higher performance and lower Headquarters utilization is achieved.
 
-[Commerce Data Exchange - Association Map](./media/CommerceDataExchange-AssociationMap.png)
+![Commerce Data Exchange - Association Map](./media/CommerceDataExchange-AssociationMap.png)
 
 This visual showcases the various pages in Headquarters (Previously described in this document) and how they associate to one another.  When fully configured across all of the pages shown, CDX data generation will be able to occur.  Data synchronization occurs in two pages, download and upload.  CDX data generation is required for downloads.  Point of Sale data generated while offline requires data synchronization upload.
 
-[Commerce Architecture - Data Synchronization](./media/CommerceArchitecture-DataSynchronization.jpg)
+![Commerce Architecture - Data Synchronization](./media/CommerceArchitecture-DataSynchronization.jpg)
 
 This visual showcases the download and upload data flows.  Data packages generated through CDX flow downward from Headquarters to the Commerce Scale Unit and to Modern POS offline databases.  Transactional data flows upward from the Modern POS offline databases to Commerce Scale Unit and Headquarters.
 
