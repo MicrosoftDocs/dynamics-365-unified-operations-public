@@ -282,10 +282,7 @@ After commerce extension development (Commerce runtime, Retail server, Database 
 
 ### Dependencies, build order, and full build
 
-The following illustration shows a high-level logical dependency tree within the Retail SDK. It doesn't show the references to all Microsoft files or assets. To see these, look at the Visual Studio project and solution files in more detail. 
-
-[![Diagram of high-level logical dependency tree](./media/retailsdk03.png)](./media/retailsdk03.png) 
-
+Recommend to build all the extensions and required OOB projects(full msbuild from the root of the SDK), no need to build the sample projects included in the Retail SDK, build your extension, POS and packaging projects. Edit the dirs.proj in the Retail SDK to remove unwanted sample projects, don’t remove the packaging and POS projects from the list. Also include the extension project in the dirs.proj file of the respective folder so that msbuild command ran from the root SDK folder builds all the extension and required OOB projects. Sequence the projects in the right order so the project and dependencies are built correctly. The dirs.proj in the Retail SDK root folder is sequenced in the right order to build all the required projects and then the packaging project.
 
 ### Normal configuration/code signing
 
