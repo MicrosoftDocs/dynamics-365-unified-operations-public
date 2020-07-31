@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
+title: Preview features in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.13. 
 author: kamaybac
 manager: tfehr
@@ -29,12 +29,12 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
+# Preview features in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.13. This version has a build number of  10.0.582 and is available as follows: <!-- KFM: confirm final build number -->
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.13. This version has a build number of 10.0.569 and is available as follows: 
 
 - **Preview release:** August 2020
 - **General availability (self-update):** September 2020
@@ -66,11 +66,11 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md). <!-- KFM: Check link and title -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.13, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.13, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com). <!-- KFM: Get new link -->
 
 ### Dynamics 365: 2020 release wave 2 plan
 
