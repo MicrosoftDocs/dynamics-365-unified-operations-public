@@ -40,8 +40,9 @@ Data configuration and synchronization is crucial to a proper implementation.  R
 Before going through this content, it is important to know the concepts of a channel (store), registers and devices, and the concept of the offline database as a part of Modern POS.  As such, it is recommended to review some of the resources at the bottom of this content such as the Devices implementation guide and the Commerce architecture documents. 
 
 ### Important Headquarters pages
-The **Channel database** page is used to create, review, and edit the channel databases used in Commerce Scale Units (both Cloud and Self-hosted) and offline databases used with Modern POS.  Each database created here refers to a single, physical database (1:1 mapping).  The channel or offline database is associated to a channel database group.  From this page, full synchronizations of a scheduler job can be created for a selected channel or offline database. 
-[Channel database](./media/ChannelDatabase.png)
+The **Channel database** page is used to create, review, and edit the channel databases used in Commerce Scale Units (both Cloud and Self-hosted) and offline databases used with Modern POS.  Each database created here refers to a single, physical database (1:1 mapping).  The channel or offline database is associated to a channel database group.  From this page, full synchronizations of a scheduler job can be created for a selected channel or offline database.
+
+![Channel database](./media/ChannelDatabase.png)
 
 The **Channel database group** page is used to create, review, and edit the channel database groups.  Each group is associated to one or more databases (channel or offline). The database group is responsible for gathering the relevant data (That is required by all channel and offline databases associated to the database group) necessary to be generated as part of the CDX data synchronization.
 
