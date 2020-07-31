@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 
 ---
 
-# Retail software development kit (SDK) architecture
+# Retail software development kit (SDK) architecture and overview
 
 [!include [banner](../../includes/banner.md)]
 
