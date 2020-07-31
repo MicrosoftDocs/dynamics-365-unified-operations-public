@@ -786,6 +786,16 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
+    - name: Asset leasing
+      items:
+      - name: Asset leasing setup
+        items:
+        - name: Add or copy a lease
+        - href: asset-leasing/add-lease.md
+        - name: Create a payment invoice 
+        - href: asset-leasing/asset-leasing-journal.md
+        - name: Record right-of-use asset depreciation
+        - href: asset-leasing/record-rou-asset-depreciation.md
     - name: General ledger
       items:
       - name: General ledger overview
