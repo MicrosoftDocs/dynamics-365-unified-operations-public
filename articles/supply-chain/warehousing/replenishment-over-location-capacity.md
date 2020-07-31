@@ -61,19 +61,19 @@ Enable the replenish over capacity functionality on the location profile.
 
     - **Exceed Location Capacity:** *Yes*
 
-        This option determines whether the replenishment overflow functionality is turned on or off. When it's set to **Yes**, the maximum capacity of the location can be exceeded by replenishment work.
+        When enabled, the maximum capacity of the location will be allowed to be exceeded by replenishment work. This also enables other fields on the **Replenishment** FastTab.
 
     - **Work availability threshold type:** *Quantity*
 
         This field defines the method that is used to determine when more work should be released. You can release by either quantity or a percentage:
 
-        - *Percent* – Select this option to use percentage capacity that is based on stocking limits or volumetrics.
+        - *Percent* – Select this option to use percentage capacity that is based on stocking limits or volumetrics. Selecting this option enables the **Overflow percentage** field, and disables the two quantity related fields,  **Overflow quantity** and **Overflow unit**.
 
             You can use this option if the picking locations use volumetrics.
 
             If this option is selected, set the **Overflow percentage** field to the percentage at which more replenishment work will be made available.
 
-        - *Quantity* – Select this option to use a specific quantity value.
+        - *Quantity* – Select this option to use a specific quantity value. Selecting this option disables the **Overflow percentage** field and enables **Overflow quantity** and **Overflow unit** fields.
 
             Use this option when you aren't using volumetrics for the locations that are being replenished, or when you have consistent quantities at which you want more inventory to be brought to the location.
 
@@ -90,12 +90,12 @@ Enable the replenish over capacity functionality on the location profile.
     - **Overflow unit:** *PL*
 
         This field defines the unit that is associated with the overflow quantity.
-        
+
         In this case, more replenishment work will be made available when the location gets down to 0.65 pallet (PL).
 
     - **Overflow percentage**
 
-        This field is available only when the *Percent* is selected in the **Work availability threshold type** field. It defines the percentage at which the location overflows.
+        This field defines the percentage at which the location overflows.
 
         Work will be available whenever the sum of the on-hand quantity in the location and the work quantity is below this percentage. Any replenishment work quantity percentage above this value will be blocked and must be manually unblocked.
 
@@ -283,7 +283,7 @@ You will perform the warehouse location replenishment for the first two work IDs
 
 1. Select **OK** to confirm the value.
 
-    Put work is shown to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
+    Put work is shown that instructs the user to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
 
 1. Confirm the put details, and select **OK**.
 
@@ -380,7 +380,7 @@ You can now process this replenishment work via the mobile device.
 
 1. Select **OK** to confirm the value.
 
-    Put work is shown to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
+    Put work is shown that instructs the user to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
 
 1. Confirm the put details, and select **OK**.
 
