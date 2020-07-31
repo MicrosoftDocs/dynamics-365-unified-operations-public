@@ -1,9 +1,8 @@
 ---
-
 # required metadata
 
 title: Configure and enable connectors
-description: This topic describes connectors and how to configure and enable them in Dynamics 365 Commerce.
+description: This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 07/31/2020
@@ -35,21 +34,21 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes connectors and how to configure and enable them in Dynamics 365 Commerce.
+This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Connectors allow you to connect your Dynamics 365 Commerce site to external third parties to accomplish certain tasks including capturing analytics, logging, and experimentation. Some third-party service providers require a paid license for the service before they can be used, check with your service provider for more information.
+Connectors let you connect your Dynamics 365 Commerce site to external third parties to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
 
-As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. In future versions you will be able configure and enable other types of connectors. 
+In Commerce version 10.0.13, the only supported type of connector is the experimentation connector. In future versions, you will be able configure and enable other types of connectors.
 
 ## Configure and enable connectors
 
-Connectors can be added to your Commerce site by adding them as a dependency in your package.json file, or by implementing them directly in your configuration package code under the **\src\connectors** directory. 
+You can add connectors to your Commerce site by adding them as a dependency in your **package.json** file. Alternatively, you can implement them directly in your configuration package code under the **\\src\\connectors** directory.
 
 ### Connector settings file
 
-Connectors are configured and enabled in the **connector.settings.json** file which can be found under the **\src\settings** directory. If no **connector.settings.json** file exists, you can create one manually. In this file, you can specify the experimentation connector to use and configure it as needed. Only one experimentation connector can be used at a time. 
+Connectors are configured and enabled in the **connector.settings.json** file under the **\\src\\settings** directory. If no **connector.settings.json** file exists, you can manually create one. In this file, you can specify the experimentation connector that you want to use and configure it as you require. Only one experimentation connector can be used at a time.
 
 The following example shows the contents of a **connector.settings.json** file.
 
@@ -73,28 +72,29 @@ The following example shows the contents of a **connector.settings.json** file.
     }
 }
 ```
+
 #### Connector settings file schema
 
-- **experimentation** – This object contains all the necessary information to start and enable your experimentation connector.
-- **name** – The name of the experimentation connector to use. The name of the connector can be found in the connector’s definition file. The type of the connector must be a **experimentationConnector**.
-- **config** – The config section allows any configuration object the connector needs to initialize and start communicating with the third party service. Check the connector’s **configSchema** in its definition file or README file to understand what information is required.
-- **cacheConfig** – You can provide the timings to use when caching certain experimentation related entities. **ttlInSeconds** refers the amount of time an entity should live in the cache before being considered stale and the **ttrInSeconds** refers to when an entity should be refreshed. The connector’s README file should also have a list of recommended cache timings.
-- **experimentation** - Controls the cache timings for getting the list of available experiments configured in your third party provider during getExperiments(). Default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds. 
-- **experimentationDataFile** - Controls the cache timings for how often the config that is passed down to the client during getConfigForClientSideInit(). The default TTL (time-to-live) is 1800 seconds and default TTR (time-to-refresh) is 60 seconds.  
+- **experimentation** – This object contains all the information that is required to start and enable your experimentation connector.
+- **name** – This setting specifies the name of the experimentation connector that is used. You can find the name of the connector in the connector's definition file. The type of the connector must be **experimentationConnector**.
+- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.
+- **cacheConfig** – You can specify the timings that are used when some experimentation-related entities are cached. In this section, **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings.
+- **experimentation** – This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds.
+- **experimentationDataFile** – This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds.
 
 ## Experimentation connector
 
-An experimentation connector allows you to connect your application to an external experimentation service provider. Adding this type of connector to your application, configuring it, and enabling it will allow you to create and run experiments in Commerce site builder as well as track outcomes to provide the best experience for your customers.
+An experimentation connector lets you connect your application to an external experimentation service provider. By adding this type of connector to your application, configuring it, and enabling it, you can create and run experiments in Commerce site builder, and track outcomes, to provide the best experience for your customers.
 
-An experimentation connector is composed of three parts: 
+An experimentation connector consists of three parts:
 
-- A connector definition file (JSON)
+- A connector definition file (in JavaScript Object Notation \[JSON\] format)
 - A provider file
 - A listener file
 
 ### Connector definition file
 
-A connector definition file is used to register and provide configuration metadata data to your application. The metadata includes the type of connector, the connector name, a description of the connector, and the configuration schema. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.connector.json**.
+A connector definition file is used to register and provide configuration metadata data to your application. This metadata includes the type of connector, the name of the connector, a description of the connector, and the configuration schema. The name of the connector definition file is in the format **&lt;CONNECTOR\_NAME&gt;.connector.json**.
 
 The following example shows the contents of a connector definition file.
 
@@ -108,23 +108,24 @@ The following example shows the contents of a connector definition file.
         "properties": {
           "projectId": {
             "type": "string",
-            "description": "The project id to use for experimentation"
+            "description": "The project ID to use for experimentation"
           }
         },
         "required": ["projectId"]
     }
 }
 ```
+
 #### Connector definition file schema
 
-- **$type** – This refers to the type of connector. In this case, because this is an example of experimentation connector’s definition file, the type is “experimentationConnector".
-- **name** – The name of the connector. Must be unique across all connectors.
+- **$type** – The type of connector. Because the definition file in the preceding example is for an experimentation connector, the type is **experimentationConnector**.
+- **name** – The name of the connector. This name must be unique across all connectors.
 - **description** – The description of the connector.
-- **configSchema** – A config schema allows you to provide a JSON schema that will validate the configuration given to you at application startup so that your connector can be initialized properly. For example, let's say that when you initialize your connector, you need the **projectId** to make an API call necessary to talk to the third party experimentation service. You can specify this value the JSON above to ensure that the configuration provided matches your connector's requirements.
+- **configSchema** – The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party experimentation service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.
 
 ### Provider file
 
-An experimentation provider file is necessary to initialize a connector and enable it to interact with Commerce site builder to present a list of available experiments configured in your third party experimentation service. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.provider.ts**. 
+An experimentation provider file is required to initialize a connector. It also enables the connector to interact with Commerce site builder to present a list of available experiments that are configured in your third-party experimentation service. The name of the provider file is in the format **&lt;CONNECTOR\_NAME&gt;.provider.ts**.
 
 The provider file should implement the following interface.
 
@@ -138,22 +139,22 @@ export interface IExperimentationProvider {
      * @param config The configuration provided in connector.settings.json
      */
     initialize(config: any): Promise<boolean>;
-    
+
     /**
      * Returns the configuration that should be passed to the experimentation connector
      * when it is initialized client-side
      */
     getConfigForClientSideInit(): Promise<any>;
-    
+
     /**
-     * Initailizes the experimentation provider on the browser (client-side) so that
+     * Initializes the experimentation provider on the browser (client-side) so that
      * it may activate experiments for a user.
      *
      * @param config The config that is required to initialize the experimentation connector
      * client-side. The result of getConfigForClientSideInit() is passed into this method
      */
     initializeClientSide(config: any): boolean;
-   
+
     /**
      * Returns a list of all the experiments currently configured whether active or not.
      * This list will be cached and periodically refreshed.
@@ -161,26 +162,26 @@ export interface IExperimentationProvider {
      * @param items Optional argument that specifies the maximum number of objects to return per request.
      */
     getExperiments(page?: string, items?: string): Promise<IExperiments[]>;
-    
+
     /**
      * Returns a list of experiments and variants a user will be a part of based
      * off the userId. Optional attributes can provide the connector with additional criteria
      * to determine which experiments a user should be a part of.
      *
      * @param userId userId unique to a user if signed in or unique to a session if user is anonymous.
-     * userId will be generated from hash if user is signed-in to deterministically generate sanatized userIds.
+     * userId will be generated from hash if user is signed-in to deterministically generate sanitized userIds.
      * @param attributes Optional user related attributes
      */
     getVariantsForUser(userId: string, attributes?: {
         [index: string]: string;
     }): IVariants[];
-    
+
     /**
      * Activates experiment(s) a user is currently being served. This call will be made
      * client-side after the connector has been initialized client-side
      *
      * @param userId userId unique to a user if signed in or unique to a session if user is anonymous.
-     * userId will be generated from hash if user is signed-in to deterministically generate sanatized userIds.
+     * userId will be generated from hash if user is signed-in to deterministically generate sanitized userIds.
      * @param experiments The experiments the user is participating in.
      * @param attributes Optional user related attributes
      */
@@ -190,7 +191,7 @@ export interface IExperimentationProvider {
 }
 ```
 
-In addition, here are types that some of the functions use for their return types and arguments.
+In addition, some of the functions use the following types for their return types and arguments.
 
 ```typescript
 /**
@@ -232,26 +233,26 @@ export interface IVariants {
 
 ### Listener file
 
-An experimentation listener file is necessary to track user conversion events. The listener file implements a logger interface that hooks into the SDK's event logging framework to subscribe to certain user actions. The connector definition file name is in the format **&lt;CONNECTOR_NAME&gt;.listener.ts**.
+An experimentation listener file is required to track user conversion events. The listener file implements a logger interface that hooks into the event logging framework of the software development kit (SDK) to subscribe to specific user actions. The name of the listener file is in the format **&lt;CONNECTOR\_NAME&gt;.listener.ts**.
 
 The listener file should implement the following interface.
 
-```
+```typescript
 export interface IExperimentationListener {
     /**
-     * Initailizes the experimentation listener on the browser (client-side) so that
-     * it may keep track of any conversion events related to the current experiements.
+     * Initializes the experimentation listener on the browser (client-side) so that
+     * it may keep track of any conversion events related to the current experiments.
      *
      * @param config The config that is required to initialize the experimentation connector
-     * client-side. The result of the provider file’s getConfigForClientSideInit() is passed into this method
-     * @param userId The user id of the current user being served the experiment
+     * client-side. The result of the provider file's getConfigForClientSideInit() is passed into this method
+     * @param userId The user ID of the current user being served the experiment
      */
     initializeClientSide(config: any, userId: string): boolean;
-    
+
     /**
      * Tracks a successful user conversion event.
      *
-     * @param eventType The name of the event that occured
+     * @param eventType The name of the event that occurred
      * @param payload Any additional tags or data related to the conversion event
      */
     trackEvent(eventType: string, payload: any): void;
