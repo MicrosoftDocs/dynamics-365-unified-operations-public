@@ -49,10 +49,10 @@ The July 2020 release of the dual-write orchestration package is based on dual-w
 
 | Area | Feature |Status |
 |------|---------|-------|
-| Mapping | Lead qualification process in Sales is new company striped.<br>As a D365 Sales user, you can create a lead, qualify the lead to an opportunity, convert an opportunity in to a quote, activate a quote and create an order. This end to end process was broken in dual-write due to lack of company striping on Lead record. With this release, we are introducing the company striping on the lead record, which upon qualify, cascades the company to the underlying Account and Opportunity records. Thus the application behavior is restored to support the end to end process flow. Note: During the lead qualification process, the contact record is not company striped. This design will support the party model which is due in Sep'20. If you are interested in learning about the Party & Global Address Book model for dual-write, please join the dual-write Yammer group. | |
-| Mapping | Map the state and sub-state transitions between Sales\Order and SCM\SalesOrder.<br>The Order form in Sales app was set to be in Active state always. In order to restore the Order life cycle and correctly reflect the state and sub-state transitions, we have mapped the Order status between Sales app and Supply Chain app. This release contains the respective changes to reflect correct status on both applications. For details, please refer <here - link to Dasani's page> |      |  
-| Data conversion | Money to decimal data type conversion (aka Extended Decimal Support in CDS to support Dual-Write).<br>Standard CDS deployments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. Users who are dual writing from F&O may currently be using more decimal places with their data. Users may now opt-in to extend the decimal support in CDS to help ensure there is no loss of decimal place data when dual writing between the two environments. Documentation is available to describe the change and help users request this extension.  |  |
-| Security | Security role for company and currency exchange.<br>Company and currency exchange entities are global in nature and all dual-write users require read access to these 2 entities. In order to simplify the experience, we have releasing a new security role called "". Each dual-write user must be added to this security role.   |  |
+| Mapping | Lead qualification process in Sales is now company striped.<br>Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity in to a quote, activate a quote, and create an order. This end-to-end process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** entities. Thus the application behavior is restored to support the end-to-end process. During the **Lead** qualification process, the **Contact** entity is not company striped. This design support the **Party** entity model which is due in Septemper 2020. If you are interested in learning about the **Party** and **GlobalAddressBook** model for dual-write, please join the dual-write Yammer group. | Preview |
+| Mapping | [Map the state transitions between **Order** in Dynamics 365 Sales and **SalesOrder** in Dynamics 365 Supply Chain Management](sales-status-map.md).<br>The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions for Dynamics 365 Sales, we introduced the **ProcessingStatus** field. |   Preview   |  
+| Data conversion | [Money to decimal data type conversion](currrency-decimal-places.md) provides extended decimal support in Common Data Service to support dual-write.<br>Common Data Service environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. Finance and Operations apps support more decimal places than Common Data Service. You can now opt-in to extend the decimal support in Common Data Service to help ensure there is no loss of decimal place data when using dual-write. | Preview |
+| Security | Security role for company and currency exchange.<br>Company and currency exchange entities are global in nature and all dual-write users require read access to these 2 entities. In order to simplify the experience, we have releasing a new security role called "". Each dual-write user must be added to this security role.   | Preview |
 
 
 ## May 2020 release
@@ -61,13 +61,13 @@ The May 2020 release of dual-write orchestration package (version 2.0.777.353) c
 
 | Area | Feature |Status |
 |------|---------|-------|
-|  | 	Ability to lookup on-hand inventory and Available to promise dates on CE forms. | Released |
-| Data conversion | 	When unit conversions take place in F&O at the quote line and order line, CE honors the unit conversions and reflect the respective changes (unit & price) in CE quote detail and order detail. |  |
-|  | 	When user tries to change the currency in F&O for an existing quote or order, restrict the change and don’t succeed.   | Released |
-| Mapping | 	Bring attribute parity in CE Account and Contact forms for B2B and B2C customers.  | Released |
-| Mapping | 	Don’t duplicate an address in F&O when there is a create/update action on CE quote/order.  | Released |
-| Mapping | 	Support for Sales Tax Group in Account and Contact forms for B2B and B2C customers. | Released |
-| Mapping | 	Allow creation of a sellable contact through **Quick Create: Contact** form in CE. | Released |
-| Mapping | Enable Quote and Order creation for B2C customers. | Released |
+| Mapping | 	Ability to lookup on-hand inventory and Available to promise dates on CE forms. | General availability |
+| Data conversion | 	When unit conversions take place in F&O at the quote line and order line, CE honors the unit conversions and reflect the respective changes (unit & price) in CE quote detail and order detail. | General availability |
+|  | 	When user tries to change the currency in F&O for an existing quote or order, restrict the change and don’t succeed.   | General availability |
+| Mapping | 	Bring attribute parity in CE Account and Contact forms for B2B and B2C customers.  | General availability |
+| Mapping | 	Don’t duplicate an address in F&O when there is a create/update action on CE quote/order.  | General availability |
+| Mapping | 	Support for Sales Tax Group in Account and Contact forms for B2B and B2C customers. | General availability |
+| Mapping | 	Allow creation of a sellable contact through **Quick Create: Contact** form in CE. | General availability |
+| Mapping | Enable Quote and Order creation for B2C customers. | General availability |
 
 
