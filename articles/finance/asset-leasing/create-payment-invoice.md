@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a Payment Invoice
-description:  
+description: This topic lists the steps for creating monthly lease invoices, which can be created for individual leases or for multiple leases using a batch process.  
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/28/2020
@@ -35,19 +35,22 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Monthly lease invoices can either be created on an individual lease basis or through a batch process for multiple leases. The following steps detail how to create an individual lease payment entry when the Pay to Vendor parameter on the lease book is enabled.
+You can create monthly lease invoices individually, or for multiple leases using a batch process. The following procedure lists the steps to create an individual lease payment entry when the Pay to Vendor parameter on the lease book is enabled.
 
-1.	Select a lease in the main lease summary and click on Books > Payment schedule.
+1. Select a lease in the main lease summary list and click (**Books > Payment schedule**).
 
-2.	Select payment to be made and click on Create invoice. The user will receive an infolog showing an invoice was created against the selected payment.
+2. Select payment to be made and click on Create invoice. The user will receive an infolog showing an invoice was created against the selected payment.
 
-3.	Click on Invoice journals and select invoice to be paid. Select the Lines tab to review journal entry before posting to the general ledger.
+3. Click **Invoice journals** and select the invoice to be paid. Open the **Lines** tab to review the journal entry before posting to the general ledger.
 
-Note: The vendor posting profile from Accounts payable parameters will default to vendor invoice lines created.
+ > [!Note]
+ > The vendor posting profile from **Accounts payable parameters** will default to vendor invoice lines created.
 
-4.	Click on the correct journal and select the invoice to be paid. For this example, the Pay to Vendor parameter is turned on, so the invoice will be in the Invoice journal. A summary of the journal entry is seen in the Overview section, while details on the actual journal lines can be seen in the Lines section below.
-Note: If the Pay to Vendor parameter is disabled in the lease book setup, payment journal entries will exist in the General journals form on the lease book and will create a general journal entry instead of an invoice. The lease payment entry will post to the journal name indicated in the Monthly lease journal field.
+4. Click the correct journal and select the invoice to be paid. For this example, the **Pay to Vendor** parameter is turned on, so the invoice will be in the invoice journal. A summary of the journal entry is seen in the Overview section, while details on the actual journal lines can be seen in the Lines section below.
 
-5.	Once posted, to view the transaction and the carrying value of the lease liability, click the Liability Transactions on the lease book.
+ > [!Note]
+ > If the **Pay to Vendor** parameter is disabled on the **Lease book setup** page, payment journal entries will be listed on the **General journals** page for the lease book and the system will create a general journal entry instead of an invoice. The lease payment entry will post to the journal name that's listed in the **Monthly lease journal** field.
 
-6.	On the payment schedule, the Journal posted field will be checked and the invoice journal number will populate on this line. Once a payment journal is created against a month, an entry cannot be recreated unless first reversed.
+5. When the transaction is posted, you can view the transaction information, and the carrying value of the lease liability, by clicking **Liability transactions** on the lease book.
+
+6. On the payment schedule, the **Journal posted** field will be checked and the invoice journal number will populate on this line. After a payment journal is created against a month, an entry cannot be recreated unless it's reversed first.
