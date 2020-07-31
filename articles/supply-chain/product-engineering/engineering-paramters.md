@@ -32,6 +32,7 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 
 <!-- KFM: Provide an intro that describes what this page is for, in general. -->
+Project Oaktree parameters contains setup parameters that will modify the default behavior related to the release product structure and the engineering change management processes.
 
 ## Open the Project Oaktree parameters page
 
@@ -40,6 +41,7 @@ To open the **Project Oaktree parameters** page, go to **Project Oaktree > Setup
 ## The Release control tab
 
 <!-- KFM: Provide an intro that describes what this tab is for, in general. -->
+The parameters in this section will affect the Release product structure process.
 
 The following table describes the settings available on the **Release control** tab of the **Project Oaktree parameters** page.
 
@@ -51,7 +53,7 @@ The following table describes the settings available on the **Release control** 
 | **Run BOM check** | <!-- KFM: Describe how to use this setting. --> |
 | **Release behavior of inactive BOM** | <!-- KFM: Describe how to use this setting. --> |
 | **Release behavior of inactive route** | <!-- KFM: Describe how to use this setting. --> |
-| **Product acceptance** | <!-- KFM: Describe how to use this setting. --> |
+| **Product acceptance** | Indicates if an additional step for acceptance is needed before the product is released in the legal entity. For adding the acceptance step, choose Manual. The products will be shown in the Open product releases page. When Automatic is chosen, after a product is released with the release product structure, the product will be directly shown in the Released products page in the target legal entity |
 
 ## The Engineering change management tab
 
@@ -65,4 +67,4 @@ The following table describes the settings available on the **Engineering change
 | **Priority** | <!-- KFM: Describe how to use this setting. --> |
 | **Severity rule** | <!-- KFM: Describe how to use this setting. --> |
 | **Re-release impacted products** | <!-- KFM: Describe how to use this setting. --> |
-| **BOM levels to release** | <!-- KFM: Describe how to use this setting. --> |
+| **BOM levels to release** | It indicates the depth of the BOM level to be released. If the BOM is deeper -has more levels- than the BOM levels to release, only the first levels until the BOM levels to release will be released. |
