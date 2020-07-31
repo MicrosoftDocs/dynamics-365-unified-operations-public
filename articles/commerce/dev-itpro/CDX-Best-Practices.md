@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
-ms.dyn365.ops.version: Retail July 2017 update
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Commerce Data Exchange best practices
