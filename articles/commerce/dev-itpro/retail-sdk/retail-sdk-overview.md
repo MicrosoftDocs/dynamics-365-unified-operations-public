@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides overview of the Retail SDK. The Retail SDK includes libraries, NuGet packages, POS application, code samples, templates, and tools that can be used to create extensions apps and features for Dynamics 365 Commerce or modify existing functionalities.
+This topic provides overview of the Retail SDK. The Dynamics 365 for Commerce platform provides a rich commerce SDK for developers to customize and add new features to the product. The multi-tier architecture of the commerce platform provides simplified options to customize and extend different layers (Client, business logic and Data layer) independently. The Retail SDK includes libraries, NuGet packages, POS application, code samples, templates, and tools that can be used to create extensions apps and features for Dynamics 365 Commerce or modify existing functionalities.
 
-## Overview
+## Retail SDK Overview
 
 The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing commerce functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
 
@@ -184,9 +184,6 @@ The folder structure and description below are based on the Retail SDK version 1
 <li><strong>TypeScriptProxy</strong> – Sample Proxy projects for how to generate Typescript for POS.</li>
 </ul></td>
 </tr>
-
-
-
 <tr>
 <td>dirs.proj</td>
 <td>TMSBuild proj file that directs the build order.</td>
@@ -197,6 +194,88 @@ The folder structure and description below are based on the Retail SDK version 1
 </tr>
 </tbody>
 </table>
+
+The below tables provide information on which components in SDK must be customized for different scenarios:
+
+<table>
+<thead>
+<tr>
+<th>Commerce component</th>
+<th>Scenarios</th>
+    <th>Commerce SDK reference</th>
+<th>Technology</th>
+    <th>Detailed documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Client (POS)</td>
+    <td>Extend the POS for user experience changes, client logic, workflow and simple validations.</td>
+    <td>\RetailSDK\POS 
+        Open the ModernPos.Sln or CloudPos.sln
+</td>
+    <td>Typescript, HTML and CSS</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/pos-run-samples?toc=/dynamics365/commerce/toc.json</td>
+    </tr>
+    <tr>
+    <td>Commerce Runtime (CRT)</td>
+    <td>Extend the commerce runtime to add or modify business logic. Ex: Calculating tax, Price, discount etc.</td>
+    <td>\RetailSDK\SampleExtensions\CommerceRuntime
+Open the CommerceRuntimeSamples.sln.
+</td>
+    <td>C#</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/commerce-runtime-extensibility?toc=/dynamics365/commerce/toc.json
+
+</td>
+    </tr>
+    <tr>
+    <td>Retail Server (RS)</td>
+    <td>Create new Retail server extension to expose new Commerce APIs to the client.</td>
+    <td>\RetailSDK\SampleExtensions\RetailServer
+Open any of the sample extensions inside the RetailServer folder.
+</td>
+    <td>OData, C#</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension?toc=/dynamics365/commerce/toc.json</td>
+    </tr>
+        <tr>
+    <td>Typescript Proxy</td>
+    <td>Typescript proxy is required if new RS extensions need to be consumed in POS or E-Commerce clients.</td>
+    <td>\RetailSDK\SampleExtensions\RetailServer
+Open any of the sample extensions inside the RetailServer folder.
+</td>
+    <td>OData, C#</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension?toc=/dynamics365/commerce/toc.json</td>
+    </tr>
+    <tr>
+    <td>Hardware station</td>
+    <td>Hardware station to add or modify logics related to peripherals.</td>
+    <td>\RetailSDK\ \SampleExtensions\HardwareStation
+Open the HardwareStationSamples.sln.
+</td>
+    <td>C#</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hardware-device-extension</td>
+    </tr>
+    <tr>
+    <td>Payment</td>
+    <td>Integrate POS with new Payment connector.</td>
+    <td>\RetailSDK\SampleExtensions\HardwareStation\Extension.PaymentSample
+Open the HardwareStation.Extension.PaymentSample.sln.
+</td>
+    <td>C#</td>
+    <td>https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/end-to-end-payment-extension?toc=/dynamics365/commerce/toc.json</td>
+    </tr>
+    <tr>
+    <td>Client (POS)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+</tbody>
+</table>
+				
+	
+
 
 The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics. If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. That way, you'll know that it's not from the Retail SDK but from a referenced binary. 
 
