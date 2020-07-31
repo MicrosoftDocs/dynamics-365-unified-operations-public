@@ -5,7 +5,7 @@ title: Multi-user testing with the Performance SDK and a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
 author: hasaid
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have a development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
+- You have a development environment that has Platform update 21 or later in your Microsoft Azure subscription.
+> [!IMPORTANT]
+> If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update for 10.0.11 or above.
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -128,11 +130,17 @@ Before you complete the steps in this topic, verify that the following prerequis
 3. Update the **CloudEnvironment.config** file to reflect your configurations. As part of this update, follow these steps:
 
     - Verify that **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.
+    
+    > [!NOTE]
+    > If you don't know the **HostName** or **SOAPHostName** of your test environment, you can find it in the web.config file for the AOS server in **Infrastructure.HostUrl** or **Infrastructure.SoapServicesUrl**.
+    
     - Add the thumbprint of the **authcert.pfx** certificate as a value of **SelfSigningCertificateThumbprint**.
     - Update **UserCount** to reflect the number of test users in your case.
     - Update **UserFormat** to reflect your naming convention for test users.
 
     [![Updated CloudEnvironment.config file](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
+
+    - If your Finance and Operations apps were deployed in 21Vianet, make sure to specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 4. Configure **vsonline.testsettings**. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
@@ -213,25 +221,33 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 ## Configure a tier-2 or above sandbox environment for multi-user testing
 
-1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
+### If your AOS allows Remote Desktop connections
 
-    [![Certificates installed](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
+1. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
+2. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
+3. Add the thumbprint of the **authcert.pfx** certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority and save the change.
 
-2. Add the thumbprint of the **authcert.pfx** certificate in the **wif.config** file of your tier-2 or above sandbox environment.
-3. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
-4. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
-5. Add the thumbprint of the generated certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority.
+    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-22.png)
 
-    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
+4. Repeat steps 1 through 3 on each AOS computer.
+5. Restart all AOS instances.
 
-6. Save the change, and do an IIRESET.
-7. Repeat steps 3 through 6 on each AOS computer.
-8. Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
+### If you do not have Remote Desktop access to the server
 
-    [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
+If your test environment doesn't allow for Remote Desktop access, then you must open a support request to configure the environment to trust the load test connection. Open a support request, and provide the following information to the support engineer:
 
-    > [!NOTE]
-    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to do an IISRESET.
+   - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
+   - The thumbprint of the **authcert.pfx** certificate.
+   - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
+
+## Create test users
+
+Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
+
+   [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
+
+   > [!NOTE]
+    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to use IISRESET.
 
 ## Run multi-user testing by using a local test controller
 

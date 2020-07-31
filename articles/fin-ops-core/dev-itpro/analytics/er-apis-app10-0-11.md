@@ -51,7 +51,7 @@ In the **Data source properties** dialog box, you can set the **Integration poin
 
 You can then use the new API of the ER framework to call an ER format mapping and force it to use a model mapping that has been configured to contain a specific integration point. The following example shows how this new API can be used.
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 
@@ -89,7 +89,7 @@ The new API of the ER framework lets you use the configured integration point to
 
 The following example shows how this new API can be used.
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 

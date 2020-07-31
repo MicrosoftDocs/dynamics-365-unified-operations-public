@@ -5,7 +5,7 @@ title: Hungary overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,3 +41,4 @@ This topic provides links to documentation resources for Hungary.
 - [Move a fixed asset to inventory](emea-hun-fixed-asset-to-inventory.md)
 - [Tax reimbursement documents](emea-hun-tax-reimbursement-docs.md)
 - [Year-end close](emea-cze-hun-year-end.md)
+- [Online invoicing system](emea-hun-online-invoicing.md)

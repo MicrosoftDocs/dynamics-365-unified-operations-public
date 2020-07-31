@@ -1,9 +1,9 @@
 ---
 title: Complete tasks in Business process modeler (BPM)
 description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM). For example, you can publish a BPM library, export a methodology, and distribute a BPM library.
-author: kfend
+author: AngelMarshall 
 manager: AnnBe
-ms.date: 09/17/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.custom: 13301
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ntecklu
+ms.author: tsmarsha
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
@@ -42,10 +42,22 @@ ms.dyn365.ops.version: 2012
 
     ![Selecting a process](./media/select-upload.PNG "Selecting a process")
 
-3. In the right pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
+3. On the **Overview** pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
     ![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")
+    
+## Download a task recording
 
+You can download a task recording (AXTR file) that has been uploaded to a BPM process. 
+
+1. In your LCS project, on the **Business process libraries** page, select the library to download the task recording.
+
+2. Select a process that has task recording uploaded. 
+
+3. On the **Overview** pane, select **Download** to save the task recording (AXTR). 
+
+    ![Download AXTR](./media/Download%20AXTR.png "Donload AXTR")
+    
 ## Export a methodology to Word
 
 1. In your LCS project, on the **Business process libraries** page, select the library to export.

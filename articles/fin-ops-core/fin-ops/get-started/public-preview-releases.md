@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,22 +62,24 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
 
-| Version                   | Preview availability (PEAP) | Generally available (Self-update) | Auto-update schedule (via LCS Update Settings) | End of service    |
-|---------------------------|-----------------------------|-----------------------------------|-----------------------------------------------|-------------------|
-| 10.0.1 Platform update 25 |                             |                                   | Production starting:  May 1, 2019             | June 10, 2019     |
-| 10.0.2 Platform update 26 | April 12, 2019              | May 17, 2019                       | Production starting:  June 1, 2019            | August 12, 2019   |
-| 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting:  July 1, 2019            | September 9, 2019 |
-| 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting:  August 1, 2019          | October 14, 2019  |
-| 10.0.5 Platform update 29 | August 2, 2019              | September 13, 2019                | Production starting:  October 1, 2019         | December 2, 2019  |
-| 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting:  November 1, 2019        | January 13, 2020  |
-| 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting:  January 1, 2020         | March 9, 2020     |
-| 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting:  February 1, 2020        | May 1, 2020    |
-| 10.0.9 Platform Update 33 | February 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | June 5, 2020      |
-| 10.0.10                   | March 6, 2020               | April 10, 2020                    | Production starting:  May 1, 2020             | July 3, 2020      |
-| 10.0.11                   | April 17, 2020              | May 29, 2020                      | Production starting:  July 1, 2020            | September 4, 2020 |
-| 10.0.12                   | May 29, 2020                | July 10, 2020                     | Production starting:  August 1, 2020          | October 9, 2020   |
-| 10.0.13                   | August 3, 2020              | September 18, 2020                | Production starting:  October 1, 2020         | December 4, 2020  |
-
+|          Version          | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
+|:-------------------------:|:---------------------------:|:---------------------------------:|:----------------------------------------------:|:------------------:|
+| 10.0.1/Platform update 25 |                             |                                   | May 1, 2019               | June 10, 2019      |
+| 10.0.2/Platform update 26 | April 12, 2019              | May 17, 2019                      | June 1, 2019              | August 12, 2019    |
+| 10.0.3/Platform update 27 | May 10, 2019                | June 14, 2019                     | July 1, 2019              | September 9, 2019  |
+| 10.0.4/Platform update 28 | June 7, 2019                | July 12, 2019                     | August 1, 2019            | October 14, 2019   |
+| 10.0.5/Platform update 29 | August 2, 2019              | September 13, 2019                | October 1, 2019           | December 2, 2019   |
+| 10.0.6/Platform update 30 | September 6, 2019           | October 11, 2019                  | November 1, 2019          | January 13, 2020   |
+| 10.0.7/Platform update 31 | October 25, 2019            | November 29, 2019                 | January 1, 2020           | March 9, 2020      |
+| 10.0.8/Platform update 32 | November 29, 2019           | January 17, 2020                  | February 1, 2020          | May 1, 2020        |
+| 10.0.9/Platform Update 33 | February 1, 2020            | March 13, 2020                    | April 1, 2020             | June 5, 2020       |
+| 10.0.10                   | March 6, 2020               | April 10, 2020                    | May 1, 2020               | July 3, 2020       |
+| 10.0.11                   | April 17, 2020              | May 29, 2020                      | July 1, 2020              | September 11, 2020 |
+| 10.0.12                   | May 29, 2020                | July 22, 2020                     | August 1, 2020            | October 23, 2020   |
+| 10.0.13                   | August 3, 2020              | September 18, 2020                | October 1, 2020           | December 4, 2020   |
+| 10.0.14                   | September 4, 2020           | October 23, 2020                  | November 1, 2020         | January 22, 2021   |
+| 10.0.15                   | October 9, 2020             | December 4, 2020                  | January 1, 2021          | March 19, 2021     |
+| 10.0.16                   | November 20, 2020           | January 22, 2021                  | February 1, 2021         | April 30, 2021     |
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 

@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 ### Omni-enabled headless commerce engine
 
-The commerce scale unit hosts the headless commerce engine. It serves as the central integration point for all commerce business logic, and powers a complete omni-channel solution across physical and digital stores. The commerce scale unit is built by using a portable architecture, and allows for flexible hosting options across cloud, edge, and hybrid topologies. 
+The Commerce Scale Unit hosts the headless commerce engine. It serves as the central integration point for all commerce business logic, and powers a complete omni-channel solution across physical and digital stores. The Commerce Scale Unit is built by using a portable architecture, and allows for flexible hosting options across cloud, edge, and hybrid topologies. 
 
 The headless commerce engine powers all native Dynamics 365 Commerce channels, including in-store and e-commerce channels. It also serves as the single integration point for third-party channel solutions. Therefore, those solutions can take advantage of the power of Dynamics 365 Commerce business logic and integration with other commerce-related services that are provided by Microsoft and independent software vendors (ISVs).
 
@@ -84,7 +84,7 @@ Site builder is the web-based authoring interface for the content management and
 
 #### External services and apps
 
-The headless commerce engine that is exposed via the commerce scale unit lets partners and customers take advantage of all the same channel-side capabilities and business logic that are used by the out-of-box e-commerce and point of sale (POS) components. Therefore, by tapping into the same data and business process capabilities, it allows for seamless omni-channel capabilities across out-of-box channel components and partner-provided/customer-developed services and applications. It also provides access to all out-of-box and ISV-developed surround services that are available through the commerce scale unit.
+The headless commerce engine that is exposed via the Commerce Scale Unit lets partners and customers take advantage of all the same channel-side capabilities and business logic that are used by the out-of-box e-commerce and point of sale (POS) components. Therefore, by tapping into the same data and business process capabilities, it allows for seamless omni-channel capabilities across out-of-box channel components and partner-provided/customer-developed services and applications. It also provides access to all out-of-box and ISV-developed surround services that are available through the Commerce Scale Unit.
 
 ### Back office
 
@@ -104,19 +104,19 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/) lets businesses get a comprehensive view of their employee resources and manage them in a unified way. It provides integrated experiences from the hiring process through workforce planning and employee time management. For more information, see [Dynamics 365 Human Resources help resources](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome).
 
-### Commerce scale unit
+### Commerce Scale Unit
 
-Retailers are distributed organizations, where the business topography can be represented as a hub and spoke model. Dynamics 365 Commerce supports this model by having head-office capabilities (the hub), and also many distributed channel components (the spokes) that can be deployed and self-managed in-store or in nearby Microsoft-managed Azure datacenters. The spokes are referred to as scale units, because they represent physical isolation (a function of scale) and an atomic unit of update.
+Retailers are distributed organizations, where the business topography can be represented as a hub and spoke model. Dynamics 365 Commerce supports this model by having head-office capabilities (the hub), and also many distributed channel components (the spokes) that can be deployed and self-managed in-store or in nearby Microsoft-managed Azure datacenters. The spokes are referred to as Scale Units, because they represent physical isolation (a function of scale) and an atomic unit of update.
 
-To facilitate cloud and edge computing scenarios, a commerce scale unit is available both as a software as a service (SaaS) component that is managed by Microsoft (cloud scale unit) and as a self-managed component that can be deployed locally (store scale unit). A single environment can have a mixture of cloud scale units and store scale units. Therefore, organizations can tune their investments in operational overhead on a store-by-store basis by implementing network redundancy for poor connectivity. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
+To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is available both as a software as a service (SaaS) component that is managed by Microsoft (Commerce Scale Unit in the Cloud) and as a self-managed component that can be deployed locally (self-hosted). A single environment can have a mixture of Commerce Scale Units (cloud and self-hosted). Therefore, organizations can tune their investments in operational overhead on a store-by-store basis by implementing network redundancy for poor connectivity. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
-#### Cloud scale units (Microsoft-managed)
+#### Commerce Scale Units (cloud)
 
-Multiple scale units can be associated with each environment. Each scale unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each scale unit can be deployed to any of the supported Azure regions, and multiple scale units can be deployed to the same region. The independent nature of each scale unit allows for phased rollout of updates across a collection of channels.
+Multiple Commerce Scale Units can be associated with each environment. Each Commerce Scale Unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each Commerce Scale Unit can be deployed to any of the supported Azure regions, and multiple Commerce Scale Units can be deployed to the same region. The independent nature of each Commerce Scale Unit allows for phased rollout of updates across a collection of channels.
 
-#### Store scale units (self-managed)
+#### Commerce Scale Units (self-hosted)
 
-The ability to bring the cloud scale unit to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a store scale unit, retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
+The ability to bring the Commerce Scale Units to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a Commerce Scale Unit (self-hosted), retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
 ### E-commerce platform
 
@@ -136,7 +136,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Fraud Protection
 
-[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the commerce scale unit. The connection to the service is automatically provisioned with the commerce scale unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in "evaluate" mode, so that you can assess the effectiveness of the service, or in "protect" mode, so that you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
+[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the Commerce Scale Unit. The connection to the service is automatically provisioned with the Commerce Scale Unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in "evaluate" mode, so that you can assess the effectiveness of the service, or in "protect" mode, so that you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
 
 #### Dynamics 365 Customer Insights
 
@@ -144,7 +144,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Bing for Commerce
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) is integrated into Dynamics 365 Commerce to provide consistent product discovery and search experiences across all commerce channels that use the commerce scale unit. In Commerce headquarters, retailers can configure boosting and sinking business rules for product discovery and search experiences. (For example, these rules can be used to boost product discovery for discounted products or remove items that are out of stock.) In this way, retailers can turn shopper frustration and site abandonment into active carts and converted sales. By taking advantage of an out-of-box capability that this integration provides, retailers can let customers use images to search for and discover similar products from a catalog without having to describe them.
+[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) is integrated into Dynamics 365 Commerce to provide consistent product discovery and search experiences across all commerce channels that use the Commerce Scale Unit. In Commerce headquarters, retailers can configure boosting and sinking business rules for product discovery and search experiences. (For example, these rules can be used to boost product discovery for discounted products or remove items that are out of stock.) In this way, retailers can turn shopper frustration and site abandonment into active carts and converted sales. By taking advantage of an out-of-box capability that this integration provides, retailers can let customers use images to search for and discover similar products from a catalog without having to describe them.
 
 #### Product recommendations
 
@@ -173,6 +173,8 @@ Customers who bring their own Azure Data Lake Storage accounts can take advantag
 Common Data Service is the unified data store that integrates the data from all your business applications. Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Commerce use Common Data Service to store business data. Therefore, Common Data Service enables cross-business application scenarios, and can power new scenarios through Power Apps and Power Automate. For more information, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
 ## Additional resources
+
+[Dynamics 365 Commerce authentication flows](arch-auth-flow.md)
 
 [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 

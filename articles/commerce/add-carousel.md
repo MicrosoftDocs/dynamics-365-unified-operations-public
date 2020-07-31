@@ -5,7 +5,7 @@ title: Carousel module
 description: This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Carousel module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -48,6 +47,10 @@ You can add content block modules inside a carousel module. The properties of th
 - A carousel that has multiple promotional modules inside it can be used on a product details page.
 - A carousel can be used on any marketing page to promote multiple promotions or products.
 
+The following image shows an example of a carousel module that is used on a home page. This carousel module contains multiple content block items.
+
+![Example of a carousel module](./media/Hero.PNG)
+
 ## Carousel module properties
 
 | Property name             | Value                 | Description |
@@ -62,7 +65,7 @@ You can add content block modules inside a carousel module. The properties of th
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
-1. Select **New** to create a page template.
+1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Carousel template**, and then select **OK**.
 1. In the **Body** slot, add a **Default page** module.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.  

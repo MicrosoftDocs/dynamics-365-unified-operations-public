@@ -2,10 +2,10 @@
 # required metadata
 
 title: Commerce runtime (CRT) and Server extensibility
-description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
+description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -120,6 +120,9 @@ Attributes are also supported (configuration-driven development). For extension 
 </tbody>
 </table>
 
+> [!NOTE]
+> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
+
 **Manually deploying the CRT extension for 7.1 with May update and later**
 
 After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Commerce Scale Unit). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
@@ -144,7 +147,7 @@ The preceding steps are used for manual deployment and testing in your developme
 
 **Debugging CRT**
 
-To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit)** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
+To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit (self-hosted))** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
 
 **Using extension properties on CRT entities and requests and responses**
 
@@ -729,32 +732,32 @@ public class CustomizedEdmModelFactory : CommerceModelFactory
 }
 ```
 
-### How to call the new Commerce Scale Unit API from MPOS/Cloud POS:
+### Call the new Commerce Scale Unit API from MPOS/Cloud POS
 
-Before calling the new Commerce Scale Unit API please make sure you have performed the below steps:
+Before calling the new Commerce Scale Unit API, make sure that you have performed the following steps:
 
 1.  Register your new extension in Commerce Scale Unit web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section.
 2.  Add the new Commerce Scale Unit extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
 3.  Move both the CRT and Commerce Scale Unit extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have a CRT extension that is related to the new Commerce Scale Unit API, then update that information in the CommerceRuntime.Ext.config file in the **…\\RetailServer\\webroot\\bin\\Ext** folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 5.  Use inetmgr to browse to the Commerce Scale Unit metadata and verify whether your entity is exposed in the xml.
-6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the Commerce Scale Unit metadata, so that you can call the new entities using the commerce context like below:
+6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile, MPOS regenerates all the entities defined in the Commerce Scale Unit metadata, so that you can call the new entities using the commerce context.
 
 > [!NOTE]
-> Do not change or add anything in the Commerce Scale Unit web.config file or Commerce Scale Unit folder, with the expection of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Commerce Scale Unit web.config file to add or modify any custom app settings.
+> Do not change or add anything in the Commerce Scale Unit web.config file or Commerce Scale Unit folder, with the expception of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Commerce Scale Unit web.config file to add or modify any custom app settings.
 
-#### Cross loyalty sample:
+#### Cross loyalty sample
 
 ```typescript
 var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
 return request.execute<number>();
 ```
 
-#### Store hours sample:
+#### Store hours sample
 
 ```typescript
 var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
 return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 ```
 
-Please refer the Retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new Commerce Scale Unit API in mpos.
+For details about how to call the new Commerce Scale Unit API in MPOS, refer to the Retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects.

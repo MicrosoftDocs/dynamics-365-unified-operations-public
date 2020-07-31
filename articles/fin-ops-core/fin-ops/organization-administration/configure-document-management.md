@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -112,9 +111,9 @@ The default cloud-based WOPI server in Finance + Operations can't read the attac
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
-### Document preview (WOPI) will not work in environments with IP whitelisting enabled
+### Document preview (WOPI) will not work in environments with an IP safe list enabled
 
-Document preview (WOPI) will not work in environments with IP whitelisting enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
+Document preview (WOPI) will not work in environments with an IP safe list enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
 
 ## Other configuration
 
@@ -126,9 +125,11 @@ Here are some other configuration options to consider, although these options ar
 
 ## Accessing document management attachments 
 
-Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most forms that contain data sources. Clicking the **Attach** button will open the **Attachments** form in the context of the data source of the currently selected control on the form.
+Document management appears to users as the **Attach** button at the top of most pages that contain data. When you select the **Attach** button (or when you use the corresponding keyboard shortcut, **Ctrl**+**Shift**+**A**), the **Attachments** page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source. 
 
-The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
+
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
 
 ## Attachment recovery
 
@@ -136,7 +137,7 @@ In Platform update 29, an attachment recovery feature has been added that provid
 
 ### Configuration of attachment recovery
 
-Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero this means that the deleted attachments will be recoverable for an indefinite period. 
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero, this means that the deleted attachments will be recoverable for an indefinite period. 
 
 After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
@@ -152,6 +153,60 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification.
 2. On the **Attachments** page, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+
+## Scanning attachments for viruses and malicious code
+When you work with attachments, you might want to be able to scan the files for viruses and malicious code. Although Finance and Operations apps don't provide this capability out of the box, extension points have been added so that customers can integrate file scanning software of their choice when working with attachments. A similar extension point has been added for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
+
+The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
+
+- **Docu.delegateScanDocument()** – This delegate applies the file scanning logic to an existing document attachment when a user tries to preview or download that attachment. The corresponding action will fail if the scanning service determines that the file is malicious.
+-  **Docu.delegateScanDeletedDocument()** – This delegate applies the file scanning logic to documents in the attachments recycle bin when a user tries to preview or download a file. The corresponding action will fail if the scanning service determines that the file is malicious.
+
+### Implementation details
+The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
+
+```xpp
+    public final class ScanDocuments
+    {
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
+        public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDocument(_docuRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
+        public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        private static boolean scanDocument(DocuRef _docuRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+        private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+    }
+```
 
 ## Frequently asked questions
 

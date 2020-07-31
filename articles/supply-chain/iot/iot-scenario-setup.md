@@ -4,7 +4,7 @@
 title: Scenario setup for IoT Intelligence
 description: This topic describes how to configure a scenario in Supply Chain Management for IoT Intelligence.
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
