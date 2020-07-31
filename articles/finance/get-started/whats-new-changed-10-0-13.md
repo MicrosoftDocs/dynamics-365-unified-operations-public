@@ -44,36 +44,36 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
- - [Update the invoice quantities to match product receipt quantities in workflow](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/update-invoice-quantities-match-product-receipt-quantities-workflow)
- - [Notification of related prepayment invoices marked for settlement](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/notification-related-prepayment-invoices-marked-settlement)
- - [Apply prepayments for finalized purchase orders to invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-prepayments-finalized-purchase-orders-invoices)
+ - [Update the invoice quantities to match product receipt quantities in workflow](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/update-invoice-quantities-match-product-receipt-quantities-workflow)
+ - [Notification of related prepayment invoices marked for settlement](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/notification-related-prepayment-invoices-marked-settlement)
+ - [Apply prepayments for finalized purchase orders to invoices](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-prepayments-finalized-purchase-orders-invoices)
  - [Retained earnings calculation enhancements for financial reporting when using currency translation
- ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
- - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/trial-balance-report-transactional-detail-unposted-gl-transactions)
- - [Delegation of multiple purchasing work items](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
+ ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+ - [Trial balance report with transactional detail and unposted GL transactions](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/trial-balance-report-transactional-detail-unposted-gl-transactions)
+ - [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/delegation-multiple-purchasing-work-items)
  - [Apply changes to 1099-NEC and 1099-MISC forms for 2020
- ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-changes-1099-nec-1099-misc-forms-2020)
-  - [Cash flow forecast calculation – enhanced scheduling (via process automation)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/cash-forecast-calculation-enhanced-scheduling-via-process-automation)
+ ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/apply-changes-1099-nec-1099-misc-forms-2020)
+  - [Cash flow forecast calculation – enhanced scheduling (via process automation)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/cash-forecast-calculation-enhanced-scheduling-via-process-automation)
  
  ### Public sector
- - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
- - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
- - [Associate 1099 default value to Main account](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
+ - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
+ - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
+ - [Associate 1099 default value to Main account](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
  
 ### Globalization features
 
- - [Extended Finnish localization - Finvoice 3.0](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/extended-finnish-localization--finvoice-3.0)
- - [Invoicing: Advanced notes management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-advanced-notes-management)
- - [Invoicing: VAT directives on project invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-vat-directives-project-invoices)
- - [Regulatory Configuration Service expanded regional coverage - France](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage--europe)
- - [Regulatory Configuration Service: Global Repository for simplified configuration management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-global-repository-simplified-configuration-management)
- - [Barcode generation data source for configurable business documents](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/barcode-generation-datasource-configurable-business-documents)
- - [Country/region expansion: Bahrain](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-bahrain)
- - [Country/region expansion: Hong Kong SAR](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-hong-kong)
- - [Country/region expansion: Kuwait](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-kuwait)
- - [Country/region expansion: Oman](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-oman)
- - [Country/region expansion: Qatar](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-qatar)
- - [Electronic reporting: Legal entity-specific parameters enhancements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/electronic-reporting-legal-entity-specific-parameters-enhancements)
+ - [Extended Finnish localization - Finvoice 3.0](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/extended-finnish-localization--finvoice-3.0)
+ - [Invoicing: Advanced notes management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-advanced-notes-management)
+ - [Invoicing: VAT directives on project invoices](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-vat-directives-project-invoices)
+ - [Regulatory Configuration Service expanded regional coverage - France](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage--europe)
+ - [Regulatory Configuration Service: Global Repository for simplified configuration management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-global-repository-simplified-configuration-management)
+ - [Barcode generation data source for configurable business documents](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/barcode-generation-datasource-configurable-business-documents)
+ - [Country/region expansion: Bahrain](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-bahrain)
+ - [Country/region expansion: Hong Kong SAR](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-hong-kong)
+ - [Country/region expansion: Kuwait](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-kuwait)
+ - [Country/region expansion: Oman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-oman)
+ - [Country/region expansion: Qatar](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/countryregion-expansion-qatar)
+ - [Electronic reporting: Legal entity-specific parameters enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/electronic-reporting-legal-entity-specific-parameters-enhancements)
  
 ## Additional resources
 
