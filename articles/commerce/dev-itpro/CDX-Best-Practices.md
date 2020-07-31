@@ -5,7 +5,7 @@ title: Commerce Data Exchange best practices
 description: This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives best practices advice for implementations.
 author: jashanno
 manager: AnnBe
-ms.date: 05/01/2020
+ms.date: 08/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,11 +25,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
-ms.search.validFrom: 2020-06-01
+ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Commerce Data Exchange best practices
+[!include[banner](../includes/banner.md)]
+
 This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, often known as CDX) in a Commerce environment. It gives best practices advice for implementations.
 
 ## Overview
@@ -55,11 +57,11 @@ This document is organized in tables with tag-like associated areas to make it e
 ## Resources
 | Links |
 |---------------------------------------------------|
-| [Commerce Data Exchange troubleshooting](dev-itpro/CDX-Troubleshooting.md) |
+| [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) |
 | [Commerce Data Exchange implementation guidance](implementation-considerations-CDX.md) |
 | [Commerce Architecture](commerce-architecture.md) |
 | [Select an in-store topology](retail-in-store-topology.md) |
 | [Device management implementation guidance](implementation-considerations-devices.md) |
 | [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md) |
-| [Configure and install Commerce Scale Unit (self-hosted)](dev-itpro/retail-store-scale-unit-configuration-installation.md) |
+| [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) |
 
