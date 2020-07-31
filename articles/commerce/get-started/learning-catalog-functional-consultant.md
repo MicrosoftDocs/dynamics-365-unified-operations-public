@@ -25,7 +25,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 For functional consultants, our job-task analysis research showed that everyone must understand the core content set as well as a domain area.
 
-For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog/learning-catalog-functional-consultant).
+For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-functional-consultant).
 
 ## Get started<a name="get-started"></a>
 
