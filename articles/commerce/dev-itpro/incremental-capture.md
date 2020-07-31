@@ -91,7 +91,7 @@ Sample of AuthorizeRequest.cs in the payments SDK using PaymentTrackingID:
                     TransactionDataProperties.PaymentTrackingId);
    ``` 
 
-## Support for mulitple captures
+## Support for multiple captures
 
 If a payment processor supports mutiple captures, authorization responses from the connector should have the SupportsMultipleCaptures property set to **True**. If the property is set to **False** or not provided, the authorization won't be eligible for incremental capture, and if there's a new balance due after invoicing, a new authorization will be obtained. 
 
