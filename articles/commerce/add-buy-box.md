@@ -117,7 +117,7 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Store selector module](store-selector.md)
 
-[Media gallery module](mediagallery-module.md)
+[Media gallery module](media-gallery-module.md)
 
 [Container module](add-container-module.md)
 
