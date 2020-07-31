@@ -52,6 +52,8 @@ The following features are included in this release. The feature titles link to 
 
 - [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
 
+- [New inventory dimensions for product version tracking and enhanced extensibility](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - For more information, see [Product dimensions](../pim/product-dimensions.md).
+
 - [Order-committed reservation based on license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
 - [Outbound workload visualization](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
