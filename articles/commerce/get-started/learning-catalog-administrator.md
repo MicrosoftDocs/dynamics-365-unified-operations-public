@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 8.1
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
-The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. This catalog only includes features specific to Dynamics 365 Commerce. For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog?branch=new-learning-catalog).
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. This catalog only includes features specific to Dynamics 365 Commerce. For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog/learning-catalog-administrator).
 
 ## Get started<a name="get-started"></a>
 
