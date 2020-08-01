@@ -2,7 +2,7 @@
 # required metadata
 
 title: Interactive components overview
-description: This topic covers interactive components that allow site authors to edit text, Rich Text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
+description: This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
 manager: annbe
 ms.date: 07/31/2020
@@ -33,19 +33,20 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic covers interactive components that allow site authors to edit text, Rich Text, link, image, and video fields directly on the Commerce site builder WYSIWYG preview canvas.
+This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
-Dynamics 365 Commerce site builder allows a page or fragment author to edit fields for text, rich text, link, image, and video directly on the WYSIWYG preview canvas using interactive components. Interactive components ship with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for Rich Text, **Msdyn365.Links** for links, the **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. Once implemented, Commerce site builder will then allow inline editing for text and bring up picker windows for links, images, and videos.
+In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After the interactive components are implemented, site builder will allow for inline editing of text, and it will open a picker window for links, images, and videos.
 
-For the best authoring experience, modules developers should use interactive components when rendering configuration fields to allow inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines below to support interactive components inside a custom module.
+For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this topic to support interactive components inside a custom module.
 
 ## How interactive components work
 
-An interactive component hooks an event handler to the component that will do the work of setting the specific configuration field required.
+An interactive component hooks an event handler to the component that will do the work of setting the specific configuration field that is required.
 
-The following example shows how a text configuration field uses an interactive component to allow inline editing of the text. A **productTitle** configuration value is specified in the module definition file configuration section:
+The following example shows how a text configuration field uses an interactive component to allow for inline editing of the text. A **productTitle** configuration value is specified in the **config** section of the module definition file.
+
 ```json
 ...
     "config": {
@@ -54,28 +55,28 @@ The following example shows how a text configuration field uses an interactive c
             "friendlyName": "Product Title",
             "description": "Product placement title"
         },
-     }
+    }
 ...
 ```
 
-To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component which specifies an event handler "handleTextChange" that will set the configuration value.
+To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component. This interactive component specifies a **handleTextChange** event handler that will set the configuration value.
 
 ```typescript
-  public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.productTitle!.text = event.target.value;
+public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.productTitle!.text = event.target.value;
 
-  <Msdyn365.Text
+<Msdyn365.Text
     className={'product-title'}
     tag={'h2'}
     text={this.props.config.productTitle}
     editProps={{ onEdit: this.handleTextChange, requestContext: this.props.context.request }}
-  />
+/>
 ```
 
 ## Interactive component reference
 
 ### Text component
 
-Once implemented, the text component allows site authors to edit text directly inline on the site builder preview canvas.
+After it's implemented, the text component lets site authors edit text inline, directly on the site builder preview canvas.
 
 #### Text component syntax
 
@@ -86,69 +87,69 @@ Once implemented, the text component allows site authors to edit text directly i
 #### Text component example
 
 ```typescript
- <Msdyn365.Text
+<Msdyn365.Text
     text={heading.text || ''}
     tag={'h2'}
     className={'display-4'}
     editProps={{ onEdit: this.handleTextChange, requestContext: this.props.context.request }}
-  />
+/>
 
 public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.heading!.text = event.target.value;
 ```
 
-#### Available props
+#### Available properties
 
-| Prop      | Description                                          | Type           |
-| --------- | ---------------------------------------------------- | -------------- |
-| text      | Text to be displayed                                 | String         |
-| tag       | HTML tag (DIV, H2, etc.) to render the text           | String         |
-| className | CSS class name                                       | String         |
-| editProps | Required props to enable interaction in site builder | ITextEditProps |
+| Property  | Description                                                              | Type           |
+|-----------|--------------------------------------------------------------------------|----------------|
+| text      | The text to show.                                                        | String         |
+| tag       | The HTML tag (for example, **DIV** or **H2**) to use to render the text. | String         |
+| className | The Cascading Style Sheets (CSS) class name.                             | String         |
+| editProps | Properties that are required to enable interaction in site builder.      | ITextEditProps |
 
-#### ITextEditProps
+#### ITextEditProps properties
 
-| Prop           | description                                  | Type            |
-| -------------- | -------------------------------------------- | --------------- |
-| onEdit         | Function handler to handle text change event | Function        |
-| requestContext | Request context object                       | IRequestContext |
+| Property       | Description                                              | Type            |
+|----------------|----------------------------------------------------------|-----------------|
+| onEdit         | The function handler that handles the text change event. | Function        |
+| requestContext | The Request context object.                              | IRequestContext |
 
-### Rich Text component
+### Rich text component
 
-Once implemented, the Rich Text component allows site authors to edit Rich Text directly inline on the site builder preview canvas.
+After it's implemented, the rich text component lets site authors edit rich text inline, directly on the site builder preview canvas.
 
-#### Rich Text component syntax
+#### Rich text component syntax
 
 ```typescript
 <Msdyn365.RichTextComponent />
 ```
 
-#### Rich Text component example 
+#### Rich text component example
 
 ```typescript
- <Msdyn365.RichTextComponent
+<Msdyn365.RichTextComponent
     text={`<p className='d-none d-lg-block'>${paragraph}</p>`}
     editProps={{ onEdit: this.handleParagraphChange, requestContext: this.props.context.request }}
-  />
+/>
 ```
 
-#### Available props
+#### Available properties
 
-| Prop      | Description                                          | Type           |
-| --------- | ---------------------------------------------------- | -------------- |
-| text      | HTML text to be displayed                            | String         |
-| editProps | Required props to enable interaction in site builder | ITextEditProps |
+| Property  | Description                                                             | Type           |
+|-----------|-------------------------------------------------------------------------|----------------|
+| text      | The HTML text to show.                                                  | String         |
+| editProps | The properties that are required to enable interaction in site builder. | ITextEditProps |
 
-#### ITextEditProps
+#### ITextEditProps properties
 
-| Prop           | Description                                  | Type            |
-| -------------- | -------------------------------------------- | --------------- |
-| onEdit         | Function handler to handle text change event | Function        |
-| requestContext | Request context object                       | IRequestContext |
+| Property       | Description                                              | Type            |
+|----------------|----------------------------------------------------------|-----------------|
+| onEdit         | The function handler that handles the text change event. | Function        |
+| requestContext | The Request context object.                              | IRequestContext |
 
 
 ### Links component
 
-Once implemented, the links component allows site authors to edit an array of links on the site builder preview canvas.
+After it's implemented, the links component lets site authors edit an array of links on the site builder preview canvas.
 
 #### Links component syntax
 
@@ -159,45 +160,46 @@ Once implemented, the links component allows site authors to edit an array of li
 #### Links component example
 
 ```typescript
-  <Msdyn365.Links
+<Msdyn365.Links
     links={config.links}
     editProps={{ onTextChange: this.handleLinkTextChange, requestContext: this.props.context.request }}
-  />
+/>
 ```
 
-#### Available props
+#### Available properties
 
-| Prop      | Description                                          | Type            |
-| --------- | ---------------------------------------------------- | --------------- |
-| link      | Array of link data to be rendered                    | ILinksData[]    |
-| editProps | Required props to enable interaction in site builder | ITLinkEditProps |
+| Property  | Description                                                             | Type            |
+|-----------|-------------------------------------------------------------------------|-----------------|
+| link      | The array of link data to render.                                       | ILinksData\[\]  |
+| editProps | The properties that are required to enable interaction in site builder. | ITLinkEditProps |
 
-#### ILinkEditProps
+#### ILinksData properties
 
-| Prop           | Description                                       | Type            |
-| -------------- | ------------------------------------------------- | --------------- |
-| onTextChange   | Function handler to handle link text change event | Function        |
-| requestContext | Request context object                            | IRequestContext |
+| Property             | Description                                                               | Type                  |
+|----------------------|---------------------------------------------------------------------------|-----------------------|
+| linkText             | The text to show as a link.                                               | String                |
+| linkUrl              | The URL to open.                                                          | String                |
+| openInNewTab         | A flag that indicates whether the link should be opened on a new tab.     | Boolean               |
+| ariaLabel            | The Accessible Rich Internet Applications (ARIA) label for accessibility. | String                |
+| className            | The CSS class name.                                                       | String                |
+| key                  | The React key.                                                            | String                |
+| role                 | The role of the anchor tag (for example, **button**).                     | String                |
+| additionalProperties | A dictionary of additional properties to add to the element.              | \[x: string\]: string |
+| linkTag              | The HTML tag to use to render the link.                                   | String                |
+| innerClassName       | The CSS class name for the inner component in the anchor tag.             | String                |
+| onClick              | The click handler that handles the link click event.                      | Function              |
 
-#### ILinksData
+#### ILinkEditProps properties
 
-| Prop                 | Description                                                 | type                |
-| -------------------- | ----------------------------------------------------------- | ------------------- |
-| linkText             | Text to be shown as link                                    | String              |
-| linkUrl              | URL to navigate to                                          | String              |
-| openInNewTab         | Flag to indicate if the link should open in new tab         | boolean             |
-| ariaLabel            | Aria label for accessibility                                | String              |
-| className            | CSS class name                                              | String              |
-| key                  | React key                                                   | String              |
-| role                 | Role of the anchor tag (button, etc.)                         | String              |
-| additionalProperties | Additional properties dictionary to be added to the element | [x: string]: string |
-| linkTag              | HTML tag to render the link                                 | String              |
-| innerClassName       | CS class name for inner component in the anchor tag        | String              |
-| onClick              | Click handler to handle link click event                    | Function            |
+| Property       | Description                                                   | Type            |
+|----------------|---------------------------------------------------------------|-----------------|
+| onTextChange   | The function handler that handles the link text change event. | Function        |
+| requestContext | The Request context object.                                   | IRequestContext |
+
 
 ### Link component
 
-Once implemented, the link component allows site authors to edit single links on the site builder preview canvas.
+After it's implemented, the link component lets site authors edit single links on the site builder preview canvas.
 
 #### Link component syntax
 
@@ -208,45 +210,45 @@ Once implemented, the link component allows site authors to edit single links on
 #### Link component example
 
 ```typescript
-  <Msdyn365.Link
+<Msdyn365.Link
     link={config.links[1]}
     editProps={{ onTextChange: this.handleLinkTextChange(1), requestContext: this.props.context.request }}
-  />
+/>
 ```
 
-#### Available props
+#### Available properties
 
-| Prop      | Description                                          | Type               |
-| --------- | ---------------------------------------------------- | ------------------ |
-| links     | Link data to be rendered                             | ILinksData         |
-| editProps | Required props to enable interaction in site builder | ILinkItemEditProps |
+| Property  | Description                                                         | Type               |
+|-----------|---------------------------------------------------------------------|--------------------|
+| links     | The link data to render.                                            | ILinksData         |
+| editProps | Properties that are required to enable interaction in site builder. | ILinkItemEditProps |
 
-#### ILinkItemEditProps
+#### ILinksData properties
 
-| Prop           | Description                                       | Type            |
-| -------------- | ------------------------------------------------- | --------------- |
-| onTextChange   | Function handler to handle link text change event | Function        |
-| requestContext | Request context object                            | IRequestContext |
+| Property             | Description                                                           | Type                  |
+|----------------------|-----------------------------------------------------------------------|-----------------------|
+| linkText             | The text to show as a link.                                           | String                |
+| linkUrl              | The URL to open.                                                      | String                |
+| openInNewTab         | A flag that indicates whether the link should be opened on a new tab. | Boolean               |
+| ariaLabel            | The ARIA label for accessibility.                                     | String                |
+| className            | The CSS class name.                                                   | String                |
+| key                  | The React key.                                                        | String                |
+| role                 | The role of the anchor tag (for example, **button**).                 | String                |
+| additionalProperties | A dictionary of additional properties to add to the element.          | \[x: string\]: string |
+| linkTag              | The HTML tag to use to render the link.                               | String                |
+| innerClassName       | The CSS class name for the inner component in the anchor tag.         | String                |
+| onClick              | The click handler that handles the link click event.                  | Function              |
 
-#### ILinksData
+#### ILinkItemEditProps properties
 
-| Prop                 | Description                                                 | Type                |
-| -------------------- | ----------------------------------------------------------- | ------------------- |
-| linkText             | Text to be shown as link                                    | String              |
-| linkUrl              | URL to navigate to                                          | String              |
-| openInNewTab         | Flag to indicate if the link should open in new tab         | boolean             |
-| ariaLabel            | Aria label for accessibility                                | String              |
-| className            | CSS class name                                              | String              |
-| key                  | React key                                                   | String              |
-| role                 | Role of the anchor tag (button, etc.)                         | String              |
-| additionalProperties | Additional properties dictionary to be added to the element | [x: string]: string |
-| linkTag              | HTML tag to render the link                                 | String              |
-| innerClassName       | CSS class name for inner component in the anchor tag        | String              |
-| onClick              | Click handler to handle link click event                    | Function            |
+| Property       | Description                                                   | Type            |
+|----------------|---------------------------------------------------------------|-----------------|
+| onTextChange   | The function handler that handles the link text change event. | Function        |
+| requestContext | The Request context object.                                   | IRequestContext |
 
 ### Image component
 
-Once implemented, the image component allows site authors to edit images directly on the site builder preview canvas.
+After it's implemented, the image component lets site authors edit images directly on the site builder preview canvas.
 
 #### Image component syntax
 
@@ -257,80 +259,81 @@ Once implemented, the image component allows site authors to edit images directl
 #### Image component example
 
 ```typescript
-  <Msdyn365.Image
+<Msdyn365.Image
     editProps={{ key: this.props.config.image || {}, requestContext: this.props.context.request }}
     {...config.image}
     {...imageProps}
-  />
+/>
 ```
 
-#### Available props
+#### Available properties
 
-| Prop                 | Description                                                 | Type                |
-| -------------------- | ----------------------------------------------------------- | ------------------- |
-| src                  | Image source URL                                            | String              |
-| fallBackSrc          | Fall back URL if the image fails to load                    | String              |
-| altText              | Alt text for the image                                       | String              |
-| caption              | Image caption string                                        | String              |
-| title                | Title for the image                                         | String              |
-| width                | Width of the image                                          | number              |
-| height               | Height of the image                                         | number              |
-| imageSettings        | Settings for the image                                      | ImageSettings       |
-| additionalProperties | Additional properties dictionary to be added to the element | [x: string]: string |
-| editProps            | Required props to enable interaction in site builder        | IEditProps          |
+| Property             | Description                                                         | Type                  |
+|----------------------|---------------------------------------------------------------------|-----------------------|
+| src                  | The URL of the image source.                                        | String                |
+| fallBackSrc          | The fallback URL if the image can't be loaded.                      | String                |
+| altText              | The alt text for the image.                                         | String                |
+| caption              | The caption string for the image.                                   | String                |
+| title                | The title for the image.                                            | String                |
+| width                | The width of the image.                                             | number                |
+| height               | The height of the image.                                            | number                |
+| imageSettings        | Settings for the image.                                             | ImageSettings         |
+| additionalProperties | A dictionary of additional properties to add to the element.        | \[x: string\]: string |
+| editProps            | Properties that are required to enable interaction in site builder. | IEditProps            |
 
-#### IEditProps
+#### IEditProps properties
 
-| Prop           | Description                          | Type            |
-| -------------- | ------------------------------------ | --------------- |
-| key            | Path to the image property in config | Object          |
-| requestContext | Request context object               | IRequestContext |
+| Property       | Description                               | Type            |
+|----------------|-------------------------------------------|-----------------|
+| key            | The path of the image property in config. | Object          |
+| requestContext | The Request context object.               | IRequestContext |
 
 ### Video component
 
-Once implemented, the video component allows site authors to edit videos directly on the site builder preview canvas.
+After it's implemented, the video component lets site authors edit videos directly on the site builder preview canvas.
 
 #### Video component syntax
 
 ```typescript
 <MsDyn365.Video></MsDyn365.Video>
 ```
+
 #### Video component example
 
 ```typescript
 <MsDyn365.Video>
-  <Player playerData={videoPlayerData} />
+    <Player playerData={videoPlayerData} />
 </MsDyn365.Video>
 ```
 
-#### Available props
+#### Available properties
 
-| Prop      | Description                                          | Type       |
-| --------- | ---------------------------------------------------- | ---------- |
-| className | CSS classname                                        | String     |
-| editProps | Required props to enable interaction in site builder | IEditProps |
+| Property  | Description                                                         | Type       |
+|-----------|---------------------------------------------------------------------|------------|
+| className | The CSS class name.                                                 | String     |
+| editProps | Properties that are required to enable interaction in site builder. | IEditProps |
 
-#### IEditProps
+#### IEditProps properties
 
-| Prop           | Description                    | Type            |
-| -------------- | ------------------------------ | --------------- |
-| key            | Path to the property in config | Object          |
-| requestContext | Request context object         | IRequestContext |
+| Property       | Description                         | Type            |
+|----------------|-------------------------------------|-----------------|
+| key            | The path of the property in config. | Object          |
+| requestContext | The Request context object.         | IRequestContext |
 
-## Generic editable higher-order component (HOC)
+## Generic editable HOC
 
 Generic editable field components wrap any custom components and enable interactions in the context of site builder.
 
-#### Generic editable higher-order component syntax
+### Generic editable HOC syntax
 
 ```typescript
 <EditableField />
 ```
 
-### Generic editable higher-order component example
+### Generic editable HOC example
 
 ```typescript
-  <EditableField
+<EditableField
     onChange={this.props.editProps ? this.props.editProps.onEdit : this.onEdit} // handle innerHTML change
     requestContext={this.props.editProps?.requestContext}
     fieldProps={{
@@ -339,23 +342,23 @@ Generic editable field components wrap any custom components and enable interact
         className: this.props.className
     }}
     type={FieldType.Text}
-  />
+/>
 ```
 
-### Available props
+### Available properties
 
-| Prop           | Description                                                | Type                    |
-| -------------- | ---------------------------------------------------------- | ----------------------- |
-| fieldProps     | Field properties                                           | [x: string]: string     |
-| type           | Type of the field (text/image/video/link)                  | FieldType               |
-| requestContext | Request context object                                     | IRequestContext         |
-| onChange       | Event handler for onChange event                           | Function                |
-| onMouseOver    | Event handler for onMouseover event                        | Function                |
-| onMouseOut     | Event handler for onMouseout event                         | Function                |
-| onFocus        | Event handler for onFocus event                            | Function                |
-| onBlur         | Event handler for onBlur event                             | Function                |
-| placeHolderText| Text to show when text is cleared in the field             | String                  |
-| disabled       | Flag to enable or disable editing of the file in site builder | String                  |
+| Property       | Description                                                          | Type                  |
+|----------------|----------------------------------------------------------------------|-----------------------|
+| fieldProps     | Field properties.                                                    | \[x: string\]: string |
+| type           | The type of the field (**text**, **image**, **video**, or **link**). | FieldType             |
+| requestContext | The Request context object.                                          | IRequestContext       |
+| onChange       | The event handler for the **onChange** event.                        | Function              |
+| onMouseOver    | The event handler for the **onMouseover** event.                     | Function              |
+| onMouseOut     | The event handler for the **onMouseout** event.                      | Function              |
+| onFocus        | The event handler for the **onFocus** event.                         | Function              |
+| onBlur         | The event handler for the **onBlur** event.                          | Function              |
+| placeHolderText| The text to show when text is cleared from the field.                | String                |
+| disabled       | A flag that enables or disables editing of the file in site builder. | String                |
 
 ## Additional resources
 
@@ -370,5 +373,5 @@ Generic editable field components wrap any custom components and enable interact
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Work with modules](work-with-modules.md)
- 
+
 [Work with fragments](work-with-fragments.md)
