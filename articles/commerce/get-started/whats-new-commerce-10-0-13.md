@@ -47,8 +47,8 @@ The following features are included in this release. The feature titles link to 
 
 - [Abandoned cart capabilities for e-commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
 - [Site builder WYSIWYG improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
-- [Media gallery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Media gallery module](media-gallery-module.md).
-- [Map module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Map module](map-module.md).
+- [Media gallery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Media gallery module](../media-gallery-module.md).
+- [Map module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Map module](../map-module.md).
 
 
 
