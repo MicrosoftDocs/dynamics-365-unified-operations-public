@@ -70,7 +70,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.13, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.13, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd). 
 
 ### Dynamics 365: 2020 release wave 2 plan
 
