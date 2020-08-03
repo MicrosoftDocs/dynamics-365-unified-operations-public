@@ -140,4 +140,4 @@ When you are testing your solutions for compatibility with the version dimension
 
 1. **Maps**<br>For any maps that use the inventory dimensions, the corresponding relation mapping to these maps must be updated to include the version dimension. Look out for tables in the extended model or table extensions where the fields include inventory dimensions.
 
-1. **Retail functionality**<br>The version dimension floats through retail code on standard<!-- KFM: what do we mean by "on standard"? -->, however the version dimension isn't otherwise supported by Dynamics 365 Commerce at this time. This is similar to the way the config dimension is currently handled in Commerce.
+1. **Retail functionality**<br>The version dimension floats through retail code on standard<!-- KFM: what do we mean by "floats on standard"? -->, however the version dimension isn't otherwise supported by Dynamics 365 Commerce at this time. This is similar to the way the config dimension is currently handled in Commerce.

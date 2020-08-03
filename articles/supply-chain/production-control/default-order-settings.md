@@ -38,7 +38,13 @@ ms.dyn365.ops.version: 10.0.13
 
 Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan**. You can also go to **Manage inventory** &gt; **Order settings** &gt; **Default order settings**.
+To define the default order settings for a product:
+1. Go to **Product information management** &gt; **Products** &gt; **Released products**.
+1. Select the relevant product in the grid.
+1. Open the **Default order settings** page for your selected product by doing one of the following on the Action Pane:
+    - Open the **Plan** tab and, from the **Order settings** group, select **Default order settings**.
+    - Open the **Manage inventory** tab and, from the **Order settings** group, select **Default order settings**.
+1. Make settings as described in the remainder of this topic.
 
 ## Default order settings
 
@@ -102,7 +108,7 @@ For distinct released products, you can define general order settings or site-sp
 
 ### Site-specific order settings
 
-To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rules as needed and you can assign all the site-specific rules the same rank, to model that they are equally important. 
+To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rules as needed and you can assign all the site-specific rules the same rank, to model that they are equally important.
 
 If you are in **Details view**, you can't get the overview of the rules created for the item. Use the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Supply Chain Management searches for a rule with no site specified. This helps to determine a default site on the order line. This site is then used to search for a site-specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
