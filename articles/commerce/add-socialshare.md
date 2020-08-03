@@ -37,7 +37,7 @@ This topic covers social share module and describes how to add them to site page
 
 ## Overview
 
-Social share module allows the user to share the page Url in social media such as Facebook, Linkedin etc. Its commonly used on the product details page to share the product information.
+Social share module allows the user to share the page Url in social media such as Facebook, Linkedin etc. Its commonly used on the product details page to share the product information. This module was enabled in 10.0.13.
 
 **Social share module** is a container of **Social share item** modules. Each Social share item module can be configured to point to a specific social media. We support integration with the following social media's out of box - Facebook, Twitter, Pinterest, Linkedin and Mail. When a site user interacts with the social media icon, an iframe is launched for the respective social media. Within the iframe, the user can login and post the page content that they were viewing. Each social media platform expects certain data to be availble TBD.
 
