@@ -107,23 +107,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog.md
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-bdm.md
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -846,6 +846,8 @@
           href: accounts-payable/accounting-distributions.md
         - name: Process allocations
           href: general-ledger/process-allocations.md
+        - name: Allocation terms
+          href: general-ledger/main-account-allocation-terms.md
         - name: Financial dimensions
           href: general-ledger/financial-dimensions.md
         - name: Consolidation account groups and additional consolidation accounts
@@ -1146,6 +1148,8 @@
         href: public-sector/tasks/create-fund-type-public-sector.md
       - name: Add a certification type to a vendor in the public sector
         href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+      - name: Calculating Canadian Harmonized Sales Tax 
+        href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
       - name: Financial reporting overview
@@ -1846,6 +1850,8 @@
               href: localizations/apac-ind-news-letter-10-0-10.md
             - name: What's new or changed in 10.0.11
               href: localizations/apac-ind-news-letter-10-0-11.md
+            - name: What's new or changed in 10.0.12
+              href: localizations/apac-ind-news-letter-10-0-12.md
           - name: India GST reference groups
             href: localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
@@ -2632,10 +2638,14 @@
           href: localizations/emea-esp-promissory-note-options.md
         - name: Report 340
           href: localizations/emea-esp-report-340.md
+        - name: Declaration 347 report
+          href: localizations/emea-esp-declaration-347-report.md
         - name: Sales and purchase cycles
           href: localizations/emea-esp-sales-purchase-cycle.md
         - name: Special entries and opening sheets
           href: localizations/emea-esp-opening-sheets-spain.md
+        - name: Immediate Supply of Information on VAT
+          href: localizations/emea-esp-sii.md
       - name: Sweden
         items:
         - name: Sweden overview

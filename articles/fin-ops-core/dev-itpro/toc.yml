@@ -152,6 +152,8 @@
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
@@ -1456,6 +1458,8 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Import or export customized security configuration using Data management
+          href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
         - name: Extensible data security policies

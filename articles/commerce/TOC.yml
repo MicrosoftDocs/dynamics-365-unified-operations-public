@@ -90,6 +90,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.13 (October 2020)
+            href: get-started/whats-new-commerce-10-0-13.md
           - name: Commerce 10.0.12 (August 2020)
             href: get-started/whats-new-commerce-10-0-12.md
           - name: Commerce 10.0.11 (July 2020)
@@ -127,23 +129,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog.md
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-bdm.md?
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -310,6 +312,8 @@
               href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json  
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+            - name: Calculation of tax exemption
+              href: tax-exempt-price-inclusive.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -386,6 +390,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Support for network peripherals
+              href: dev-itpro/network-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -946,6 +952,8 @@
             href: add-accordion.md
           - name: Tab module
             href: add-tab.md
+          - name: Iframe module
+            href: iframe-module.md
         - name: Marketing modules
           items:
           - name: Promo banner module 
@@ -968,6 +976,8 @@
           items:
           - name: Buy box module
             href: add-buy-box.md
+          - name: Media gallery module
+            href: media-gallery-module.md
           - name: Ratings and reviews modules
             href: ratings-reviews-modules.md
         - name: Purchase modules
@@ -980,10 +990,14 @@
             href: add-checkout-module.md
           - name: Order details module
             href: order-confirmation-module.md 
-          - name: Store selector module
-            href: store-selector.md
           - name: Gift card module
             href: add-giftcard.md
+        - name: Store finder modules
+          items:
+          - name: Map module
+            href: map-module.md
+          - name: Store selector module
+            href: store-selector.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
@@ -1938,7 +1952,7 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Test modules by using mocks
+          - name: Test modules with module mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
             href: e-commerce-extensibility/test-page-mock.md 

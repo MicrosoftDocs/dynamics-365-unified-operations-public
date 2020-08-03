@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.13 (October 2020)
+            href: get-started/whats-new-scm-10-0-13.md
           - name: Supply Chain Management 10.0.12 (August 2020)
             href: get-started/whats-new-scm-10-0-12.md
           - name: Supply Chain Management 10.0.11 (July 2020)
             href: get-started/whats-new-scm-10-0-11.md
-          - name: Supply Chain Management 10.0.10 (May 2020)
-            href: get-started/whats-new-scm-10-0-10.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -1257,6 +1257,8 @@
         items:
         - name: Inventory journals
           href: inventory/inventory-journals.md
+        - name: Inventory journal approval workflows
+          href: inventory/inventory-journal-workflow.md
         - name: Inventory locations
           href: inventory/inventory-locations.md
         - name: Inventory statuses
@@ -1267,6 +1269,8 @@
           href: inventory/tasks/maintain-barcode-types.md
         - name: Check the availability of stock
           href: inventory/tasks/check-availability-stock.md
+        - name: Inventory on-hand list
+          href: inventory/inventory-on-hand-list.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
         - name: Transfer physical inventory within the warehouse
@@ -1951,7 +1955,7 @@
             href: production-control/tasks/define-resource-capabilities.md
           - name: Routes and operations
             href: production-control/routes-operations.md
-          - name: Warehouse work policies
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
           - name: Create working time scheduling properties
             href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing
           href: warehousing/location-product-dimension-mixing.md
+        - name: Quality check
+          href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
@@ -2651,6 +2657,8 @@
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
+          - name: Confirm outbound shipments from batch jobs
+            href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
@@ -2679,10 +2687,8 @@
         items:
         - name: Warehouse work policies
           items:
-          - name: Warehouse work policies overview
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
-          - name: Set up warehouse work policies
-            href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
           - name: Movement of inventory with associated work in Warehouse management
             href: warehousing/move-inventory-associated-work.md
           - name: Create a work class
@@ -2715,7 +2721,7 @@
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
-          - name: Inventory journal
+          - name: Inventory journals
             href: inventory/inventory-journals.md
           - name: Inventory location
             href: inventory/inventory-locations.md
