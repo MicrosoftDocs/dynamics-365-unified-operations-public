@@ -5,7 +5,7 @@ title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -87,16 +87,23 @@ While most forms will work well with saved views, there are some areas that may 
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  The default view is global (that is, it isn't legal entity–specific). Therefore, if a view is published to a specific legal entity as a default view, the targeted users' global default view for the page will be changed.
--  A view isn't marked as having unsaved changes after custom filters are used. (Custom filters are all the filters above a grid except the QuickFilter.) If custom filter conditions have been saved to a view, the custom filter controls might not correctly reflect the current query.   
--  Views should keep track of the last QuickFilter column that was used, without requiring that it be explicitly saved to a view. 
+-  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, excluding the QuickFilter)If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
+-  View support for workspaces, dashboards, and dialogs
+-  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank
 
 ### Fixed in 10.0.13
 
--  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
+-  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
+-  [KB 4574781] Duplicate record exception on saving a view
+-  [KB 4575278] Tiles, lists, and links lose their link to the published view if the view is republished
+    -  Note that because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
+-  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
+-  [KB 4574778] Pin and publish as default do not respect companies that the view was published to
+-  [KB 4568154] View import flow doesn't surface if views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
--  [KB 4568151] Published views recipients are not being updated after republishing from a different legal entity
+-  [KB 4568151] Published views recipients are not updated after republishing from a different legal entity
 -  [KB 4562137] Views published to a parent security role are not applied to child roles
+-  [KB 4564528] QuickFilter default field personalization isn't working as expected with views
 
 ### Fixed in release 10.0.12
 -  [KB 4568122] Unexpected queries applied after enabling views
