@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -143,9 +143,6 @@ This section maintains a list of known issues for the new grid control while the
 - Grouped lists aren't rendered as groups or in separate columns.
 
 ### Fixed as part of 10.0.13
-
-> [!NOTE]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 - [KB 4563317] Tooltips aren't shown for images.
 
