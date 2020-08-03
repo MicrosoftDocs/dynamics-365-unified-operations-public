@@ -76,3 +76,29 @@ Common Data Service integration brings company parity by using a company identif
 + For records, after a company is added and saved, the value becomes read-only. Therefore, users should make sure that they select the correct company.
 + Only records that have company data are eligible for dual-write between the application and Common Data Service.
 + For existing Common Data Service data, an admin-led bootstrapping experience will soon be available.
+
+
+# Autopopulate company name in customer engagement apps
+
+[!include [banner](../../includes/banner.md)]
+
+In Customer Engagement app user interface, there are 3 ways to auto-populate the company name.
++ As a system administrator, you can set the default company for a user from  Advanced Settings > System > Security > Users. Open the User form, under "Organization Information" section, set "Company to default on Form" to required company.
+![Autopopulate Company name 1](media/autopopulate-company-name-1.png)
+
++ In case the user has "Write" permission on "SystemUser" entity minimum at "Business Unit" level, then he can change the default company on any form by selecting a company from the Company lookup drop down.
+![Autopopulate Company name 2](media/autopopulate-company-name-2.png)
+
++ In case the user has write access to more than one company data, then by choosing a record that belongs to different company changes his default company to the chosen one.
+![Autopopulate Company name 3](media/autopopulate-company-name-3.png)
+
+
+As a system configurator or administrator, if you want to autopopulate company data on a custom form, then you can achieve it using [Events in forms](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) and taking a reference of "msdyn_/DefaultCompany.js" javascript for setting the following events. You can use any out of the box form as an example like "Account" form .
+
++ OnLoad : defaultCompany
++ OnChange of Company field : updateDefaultCompany
+
+# Apply company context based filtering on lookup fields
+
+In order to achieve the company context based filtering on your custom forms or custom lookup fields added to the standard forms, please open the form and use "Related Records Filtering" section to apply the company filter. You can find the setting on each entity's form as shown below. You need to do this setting for each lookup field that requires filtering based on the underlying company on a given record.
+![Apply company context](media/apply-company-context.PNG)
