@@ -86,7 +86,7 @@ There are several ways to auto-populate the company name in customer engagement 
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
 
-+ If you have **Write** access on **SystemUser** entity minimum at **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop down.
++ If you have **Write** access on **SystemUser** entity for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop down.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
 
