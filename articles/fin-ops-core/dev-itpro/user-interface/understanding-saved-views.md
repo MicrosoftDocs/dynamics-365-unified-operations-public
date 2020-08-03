@@ -94,18 +94,17 @@ This section provides a list of known issues for saved views while the feature i
 ### Fixed in 10.0.13
 
 > [!NOTE]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of vers
-ion 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 -  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
--  [KB 4575278] Tiles, lists, and links lose their linkage to the published view if the view is republished
-    -  Note that because additional information is needed to restore the linkage, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13+ and re-pin the elements to your workspace once more.
+-  [KB 4575278] Tiles, lists, and links lose their link to the published view if the view is republished
+    -  Note that because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
 -  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
--  [KB 4574778] Pin & Publish as default are not respecting companies that the view was published to
--  [KB 4568154] View import flow doesn't surface whether views apply to the grid or details aspect of Details pages
+-  [KB 4574778] Pin and publish as default do not respect companies that the view was published to
+-  [KB 4568154] View import flow doesn't surface if views apply to the grid or details aspect of Details pages
 -  [KB 4568152] Users are able to export the Standard view
--  [KB 4568151] Published views recipients are not being updated after republishing from a different legal entity
+-  [KB 4568151] Published views recipients are not updated after republishing from a different legal entity
 -  [KB 4562137] Views published to a parent security role are not applied to child roles
 -  [KB 4564528] QuickFilter default field personalization isn't working as expected with views
 
