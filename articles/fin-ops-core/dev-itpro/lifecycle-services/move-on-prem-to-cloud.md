@@ -67,13 +67,13 @@ SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL databas
   ```sql
 UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
 UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='<preserved VALUE>' where name = 'TENANTID'
-UPDATE POWERBICONFIG SET TENANTID='<preserverd TENANTID>'
-UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserverd TENANTID>'
-UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserverd TENANTID>'
-UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserverd TENANTID>'
+UPDATE POWERBICONFIG SET TENANTID='<preserved TENANTID>'
+UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
+UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserved TENANTID>'
+UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserved TENANTID>'
   ```
 6. 	Re-import all other users and assign the appropriate security roles.
-7. 	Direct printing in a cloud environment is accomplished via the Document Routing Agent (DRA). Set up sandbox DRA(s), as described at https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent, so that regression testing can include your printing scenarios.
+7. 	Direct printing in a cloud environment is accomplished via the Document Routing Agent (DRA). Set up sandbox DRA(s), as described at [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent), so that regression testing can include your printing scenarios.
 8. 	Copy document handling attachments to the cloud. Document handling attachments are not stored in the database, and must be moved separately, if there is a need to preserve them. See the section below for a detailed description of how to do this.
 9.	Run a complete regression test cycle, including of integrations.
 10.	Resolve any issues. For any discovered during testing, document and keep track of correcting adjustments in Sandbox and repeat them in the on-premises source. If any change may not be made in the on-premises environment (i.e. would be incompatible with its correct functioning), it is recommended to create a DMF data package for it, rather than to apply it manually for each iteration of the migration process.
