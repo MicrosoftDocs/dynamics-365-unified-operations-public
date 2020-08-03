@@ -1126,6 +1126,8 @@
           href: public-sector/advanced-ledger-entries-public-sector.md
         - name: Create an advanced ledger entry in the public sector
           href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+        - name: Trial balance with transactional detail report
+          href: public-sector/general-ledger-public-sector-trial-balance.md          
         - name: Use cash control limits
           href: public-sector/cash-control.md
         - name: Year-end processing in the public sector
