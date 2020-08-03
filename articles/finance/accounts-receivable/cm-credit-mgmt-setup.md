@@ -5,7 +5,7 @@ title: Credit management parameters setup
 description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
