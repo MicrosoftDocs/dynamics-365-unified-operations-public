@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,20 +134,47 @@ The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 
 
 All subsequent user sessions will start with the new grid control enabled.
 
+## [Developer] Opting out individual pages from using the new grid 
+If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the form's `run()` method.
+
+        this.forceLegacyGrid();
+
+This API will be honored until the October 2021 release when the new grid control becomes mandatory. Please report any issues to Microsoft which require this API to be utilized. 
+
 ## Known issues
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
 
 ### Open issues
+-  After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:  
+    -  A card list exists on the page that is rendered in multiple columns.
+    -  A grouped card list exists on the page.
+    -  A grid column with a non-react extensible control.
 
-- Card lists that were rendered as multiple columns are now rendered as a single column.
-- Grouped lists aren't rendered as groups or in separate columns.
+    When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.     
 
 ### Fixed as part of 10.0.13
 
-> [!NOTE]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Tooltips aren't shown for images.
+-  [Bug 470173] Checkboxes in inactive rows toggle when the whitespace in the cell is clicked
+-  [Bug 474848] Enhanced previews with grids do not display
+-  [Bug 474851] Hyperlinks in reference group controls don't work 
+-  [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [KB 4569441] Issues with rendering multi-column card lists, tooltips on images, and display options on some fields
+-  [KB 4575279] Not all marked rows are deleted in General Journal
+-  [KB 4575233] Display options are not restored after moving to another row
+-  [KB 4571095] Product receipt posting occurs when accidentally pressing Enter (correct handling of a page's default action)
+-  [KB 4575437] Lookups with editable controls close unexpectedly
+-  [KB 4569418] Duplicate line created in delivery schedule form
+-  [KB 4575435] Enhanced preview sometimes persists even when the mouse pointer isn't near the field
+-  [KB 4575434] Lookup isn't filtering when the field has been modified
+-  [KB 4575430] Values in password fields aren't masked in the grid
+-  [KB 4569438] "Processing has stopped because of a validation issue" displays after marking lines while settling supplier transactions
+-  [KB 4569434] Refreshing the Legal entities form results in fewer records
+-  [KB 4575297] Focus keeps moving to the task recorder pane when editing and tabbing through a grid
+-  [KB 4566773] Correction transactions not showing as negative on voucher transactions inquiry 
+-  [KB 4575288] Focus resets to the active row when selecting the border between rows in a simple list
+-  [KB 4575287] Focus doesn't return to the first column when using the down arrow to create a new row in journals
+-  [KB 4564819] Cannot delete lines in a free text invoice (because the datasource ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Tooltips/enhanced previews aren't shown for images
 
 ### Fixed as part of 10.0.12
 
@@ -164,6 +191,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4562647] Focus is reset to the first control in the **Publish** dialog box after a new row is added in the security roles grid.
 - [KB 4563310] The enhanced preview isn't closed after a row is changed.
 - [KB 4563313] An "unexpected client error" occurs in Internet Explorer when a value is selected in a lookup.
+- [KB 4564557] Lookups and drop-down menus won't open in Internet Explorer
 - [KB 4563324] Navigation doesn't work after the **Personnel management** workspace is opened.
 
 ### Fixed as part of 10.0.11

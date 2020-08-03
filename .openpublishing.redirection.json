@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md",
+      "redirect_url": "../warehouse-work-policies",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/online-stores.md",
       "redirect_url": "channel-setup-online",
       "redirect_document_id": "false"
