@@ -40,7 +40,7 @@ If you do not already have cloud subscription licenses, work with your cloud ser
 ## Configure LCS cloud implementation project
 
 If these are the first Dynamics 365 for Finance and Operations cloud named user SLs being activated on the AAD tenant, a new LCS cloud implementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on multiple LCS projects in an AAD tenant.
-Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on. Note that while onboarding your project, you must select "On-premises Finance and Operations" [to be confirmed] as your source system so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool.
+Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on. Note that while onboarding your project, you must select "AX 2012 Upgrade" as your source system so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool. Note: In future, a more appropriate selection will be made available, such as "On-premises Finance and Operations".
 
 ## Complete development and testing of updated integrations
 
