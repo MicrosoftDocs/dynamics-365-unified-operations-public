@@ -99,7 +99,7 @@ There are several ways to auto-populate the company name in customer engagement 
     + **OnLoad** event for the form : set the **defaultCompany** field.
     + **OnChange** event for the **Company** field : set the **updateDefaultCompany** field.
 
-## Apply company context based filtering on lookup fields
+## Apply filtering based on the company context
 
 To apply filtering based on the company context on your custom forms or on custom lookup fields added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup field that requires filtering based on the underlying company on a given record. The setting is shown for **Account** in the following illustration.
 
