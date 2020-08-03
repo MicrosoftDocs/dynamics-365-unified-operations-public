@@ -2653,6 +2653,8 @@
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
           - name: Zone threshold replenishment
             href: warehousing/zone-threshold-replenishment.md
+          - name: Replenishment over location capacity
+            href: warehousing/replenishment-over-location-capacity.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
