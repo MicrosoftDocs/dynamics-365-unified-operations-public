@@ -82,7 +82,7 @@ Common Data Service integration brings company parity by using a company identif
 
 There are several ways to auto-populate the company name in customer engagement apps.
 
-+ If you are a system administrator, you can set the default company by navigating to **Advanced Settings > System > Security > Users**. Open the **User** form, and in the **Organization Information** section, set the **Company to default on Form** value.
++ If you are a system administrator, you can set the default company by navigating to **Advanced Settings > System > Security > Users**. Open the **User** form, and in the **Organization Information** section, set the **Company to default on Forms** value.
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
 
@@ -94,10 +94,10 @@ There are several ways to auto-populate the company name in customer engagement 
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Choosing a record changes the default company.":::
 
-+ If you are a system configurator or administrator, and you want to autopopulate company data on a custom form, then you can use [Events in forms](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use tehsetting the following events. You can use any out-of-the-box form, for example, the **Account** form.
++ If you are a system configurator or administrator, and you want to autopopulate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
 
-    + OnLoad : defaultCompany
-    + OnChange of Company field : updateDefaultCompany
+    + **OnLoad** event for the form : set the **defaultCompany** field.
+    + **OnChange** event for the **Company** field : set the **updateDefaultCompany** field.
 
 ## Apply company context based filtering on lookup fields
 
