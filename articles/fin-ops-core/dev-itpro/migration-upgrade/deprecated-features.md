@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,7 +68,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the platform APIs found in the class **HasFunction**. |
 
 ### Hash.ComputeSHA1Hash(string message)
 
@@ -78,7 +78,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers  must use the platform APIs found in the class **HasFunction**. |
 
 
 ### FormDateTimeControl.setUtcString()

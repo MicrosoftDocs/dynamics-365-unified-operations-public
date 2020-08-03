@@ -154,9 +154,6 @@ This section maintains a list of known issues for the new grid control while the
 
 ### Fixed as part of 10.0.13
 
-> [!NOTE]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
-
 -  [Bug 470173] Checkboxes in inactive rows toggle when the whitespace in the cell is clicked
 -  [Bug 474848] Enhanced previews with grids do not display
 -  [Bug 474851] Hyperlinks in reference group controls don't work 

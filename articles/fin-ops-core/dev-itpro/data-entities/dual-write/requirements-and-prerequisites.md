@@ -33,6 +33,20 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
+## What regions are available?
+
+Currently, we support dual-write in the following regions:
+    
+   + Asia
+   + Australia
+   + Canada
+   + Europe
+   + India
+   + Japan
+   + South America
+   + United Kingdom
+   + United States
+
 
 ## Verify requirements and grant access
 

@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.13 (October 2020)
+          href: get-started/whats-new-platform-updates-10-0-13.md
         - name: Platform updates for 10.0.12 (August 2020)
           href: get-started/whats-new-platform-update-10-0-12.md
         - name: Platform updates for 10.0.11 (July 2020)
@@ -82,6 +84,8 @@
       items:
       - name: Choose a data integration (import/export) strategy
         href: data-entities/integration-overview.md
+      - name: Priority-based throttling
+        hreF: data-entities/priority-based-throttling.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -152,6 +156,8 @@
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
