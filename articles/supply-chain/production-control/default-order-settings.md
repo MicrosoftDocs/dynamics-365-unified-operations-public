@@ -38,13 +38,16 @@ ms.dyn365.ops.version: 10.0.13
 
 Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-To define the default order settings for a product:
+To define the default order settings for a product, follow these steps.
+
 1. Go to **Product information management** &gt; **Products** &gt; **Released products**.
 1. Select the relevant product in the grid.
-1. Open the **Default order settings** page for your selected product by doing one of the following on the Action Pane:
-    - Open the **Plan** tab and, from the **Order settings** group, select **Default order settings**.
-    - Open the **Manage inventory** tab and, from the **Order settings** group, select **Default order settings**.
-1. Make settings as described in the remainder of this topic.
+1. On the Action Pane, follow one of these steps to open the **Default order settings** page for the selected product:
+
+    - On the **Plan** tab, in the **Order settings** group, select **Default order settings**.
+    - On the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**.
+
+1. Configure the settings as described in the rest of this topic.
 
 ## Default order settings
 
@@ -86,7 +89,7 @@ The  default inventory order settings also apply when creating:
 
 ## Full definition of a released product
 
-When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, version, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
+When you create a transaction, you must specify the full definition of a released product on the line, so that Supply Chain Management can try to identify the default order settings. In the full definition of a released product, the item number and all the active product dimensions, such as configuration, size, style, version, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you must specify all the required product dimensions before the site, warehouse, quantities, and lead time will appear by default on the order line. 
 
 Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. For this reason, no default quantity or checks on multiple and minimums are performed when creating the line or posting the journal. 
 
@@ -108,7 +111,7 @@ For distinct released products, you can define general order settings or site-sp
 
 ### Site-specific order settings
 
-To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rules as needed and you can assign all the site-specific rules the same rank, to model that they are equally important.
+To create site-specific order settings, select **New**. In **Details view**, enter the site in the **Site** field in the **Settings applicable for** section. In **Grid view**, enter the site in the **Site** column. The new rule is automatically assigned a new rank value that is more than 0 (zero). You can create as many site-specific rules as you require. To indicate that they are equally important, you can assign the same rank value to all the site-specific rules.
 
 If you are in **Details view**, you can't get the overview of the rules created for the item. Use the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Supply Chain Management searches for a rule with no site specified. This helps to determine a default site on the order line. This site is then used to search for a site-specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
@@ -134,7 +137,7 @@ Create the following default order settings to model this scenario.
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the version or site the line is placed at, the lead time will be considered 2. Assume that all versions besides V3 are stopped.
+When a purchase order line or a planned purchase order is created for item XW56, configuration C1, regardless of the version or site where the line is put, the lead time will be considered 2. Assume that all versions besides V3 are stopped.
 
 You can create the following default order settings rules.
 
@@ -145,9 +148,9 @@ You can create the following default order settings rules.
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-The two rules for stopping the old versions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
+The two rules for stopping the old versions have the same rank. Therefore, they are equally important. Because both these rules have a higher rank than the rule for configuration C1, they take precedence over the rule for configuration C1. 
 
-This example explains the need for the rank. If a purchase order is created for configuration C1 and version V2, in the absence of the rank, the two rules defined for V2 and C1 would be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and version V2, the user will get a warning message that the item is on hold and that this is caused by the version value. If the rule for the configuration had a higher rank than the one for version, then the creation of a purchase order line for configuration C1 and version V2 would have succeeded and no 'item on hold' message would have been given to the user. 
+This example explains the need for the rank. If the rank isn't used, when a purchase order is created for configuration C1 and version V2, the two rules that are defined for V2 and C1 will be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and version V2, the user will receive a warning message that states that the item is on hold, and that this hold is caused by the version value. If the rule for the configuration had a higher rank than the rule for the version, a purchase order line would be successfully created for configuration C1 and version V2, and the user would receive no "item on hold" message. 
 
 Consider the following default order setting rules.
 
@@ -157,7 +160,7 @@ Consider the following default order setting rules.
 | 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, version V2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21.
+The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, version V2, the site is determined based on the rule that has a rank of 10. The system then searches for a rule for site 2 to determine a warehouse. Rule 20 is found, and because it has a higher rank, the warehouse on the purchase order line will be 22, not 21.
 
 As general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
 
