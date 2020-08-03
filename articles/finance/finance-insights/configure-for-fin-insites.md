@@ -42,11 +42,11 @@ Finance Insights combines functionality from Microsoft Dynamics 365 Finance, wit
 
 Deploy the environments by completing the following steps.
 
-1. Create or update an F&O environment in Lifecycle Services (LCS). The environment needs App Version 10.0.11/Platform Update 35 or later versions.
+1. Create or update a Dynamics 365 Finance environment in Lifecycle Services (LCS). The environment needs App Version 10.0.11/Platform Update 35 or later.
   
-2. The environment must be an HA environment in Sandbox (also known as a Tier-2 environment).For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+2. The environment must be an high availability (HA) environment in Sandbox (also known as a Tier-2 environment).For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
-3. If you are using Contoso demo data, you'll need additional sample data to use Customer payment predictions, Cashflow forecasts, and Budget forecasts. Complete the following steps at <TBD> to add the sample data needed [Sample data instructions](https://microsoft.sharepoint.com/:f:/t/FinancialsRDAll909/Essk-ZaYVvxPrKNIHmbJNS8BWKCMxcMsubO_NVxECcsLfg?e=iwOR9e).
+3. If you are using Contoso demo data, you'll need additional sample data to use Customer payment predictions, Cashflow forecasts, and Budget forecasts. See [Set up demo data for Payment predictions](set-up-demo-data.md) for information about setting up demo data specifically for Customer payment predictions.
 
   
 ## Configure the Common Data Service 
@@ -65,7 +65,7 @@ Deploy the environments by completing the following steps.
    - Navigate to the environment page, and then refresh the environments page. When the **State** shows **Ready**, complete the following steps. 
      - Record the CDS Organization ID.
      - Select the environment and click **Settings**.
-     - Click **Resources > All Ledgacy Settings**.
+     - Click **Resources > All Legacy Settings**.
      - Click **Settings** on the top bar and select **Customizations**.
     - Click **Developer Resources**.
     - Record the Instance Reference Information ID as the CDS Organization ID.
@@ -76,7 +76,7 @@ Deploy the environments by completing the following steps.
     - Copy the Tenant ID and record it as the CDS Dicretory ID. 
   - Record the user's Azure Active Directory object ID.
    - Go to Users and search for the user by email.
-   - Click on the user's name. 
+   - Click the user's name. 
    - Copy the Object ID as the CDS Initial User Object ID. 
 3. If you plan to use Cash flow forecasts, or Budget forecasts, also update the annotation limit for your organization to at least 50 MB. To do so, complete the following steps. 
    - Go to the [Power Apps](https://make.powerapps.com) portal. Select the environment you created above and click **Advanced settings**.
@@ -87,7 +87,7 @@ Deploy the environments by completing the following steps.
 
 ## Configuring Azure setup
 
-A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the next section and continue with procedure in the Manual Setup section below. 
+A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual Setup section below. 
 
 ## Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
 
@@ -95,13 +95,13 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 1. Navigate to your target Azure subscription from the [Azure Portal](https://portal.azure.com). Just to the right of the **Search box**, click the **Cloud Shell** button.
 
-2. Select **PowerShell** in the new window that is displayed.
+2. Select **PowerShell** in the new window that opens.
 
 3. Create storage if prompted. Upload the PowerShell script to the session. 
 
 4. Run the script. 
 
-6. Click the device login link and enter code.
+6. Click the device login link and enter the login information.
 
 7. Follow prompts to execute the script.
 
@@ -116,102 +116,103 @@ A PowerShell script has been provided to easily set up the Azure resources descr
   - Go to Manage > Enterprise Applications 
   - Search for the following applications, using App ID (see steps below if you cannot find those applications)
  
-| Application                                   | App ID                                  |
-|-----------------------------------------------|-----------------------------------------|
-| Microsoft Dynamics   ERP Microservices        | 0cdb527f-a8d1-4bf8-9436-b352c68682b2    |
-| Microsoft Dynamics   ERP Microservices CDS    | 703e2651-d3fc-48f5-942c-74274233dba8    |
-| AI Builder   Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
+   | Application                                 | App ID                                  |
+   |---------------------------------------------|-----------------------------------------|
+   | Microsoft Dynamics ERP Microservices        | 0cdb527f-a8d1-4bf8-9436-b352c68682b2    |
+   | Microsoft Dynamics ERP Microservices CDS    | 703e2651-d3fc-48f5-942c-74274233dba8    |
+   | AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
 If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
-- On your local machine: Click on the Start menu and search for powershell.
-- Right-click on Windows Powershell and choose “Run as administrator”.
+- On your local machine: Click on the **Start** menu and search for powershell.
+- Right-click **Windows Powershell** and choose **Run as administrator**.
 - Run the following command to install “AzureAD” module
    - Install-Module -Name AzureAD
    - If NuGet provider is required to continue, select “Y” to install it.
-   - If Untrusted repository message appears, select “Y” to continue.
-- For each application that needs to be added, run the following commands to add the application to the Azure Active Directory. 
-   - Login as the Azure Active Directory administrator when prompted.
-     Connect-AzureAD 
-     New-AzureADServicePrincipal –AppId <AppId>
+   - If the **Untrusted repository** message appears, select “Y” to continue.
+- For each application that must be added, run the following commands to add the application to the Azure Active Directory. 
+   - Login as the Azure Active Directory administrator when prompted
+   - Connect-AzureAD 
+   - New-AzureADServicePrincipal –AppId <AppId>
 
 2. Create an Azure resource.
    > [!NOTE]
-   > Make sure you are creating the resources below in the same Azure Active Directory as the CDS environment. It is not possible to use resources from another Azure Active Directory.  
+   > Be sure you are creating the following resources in the same Azure Active Directory as the CDS environment. It's not possible to use resources from another Azure Active Directory.  
 
   - Create a new Storage Account using the following instructions: 
+  
    > [!NOTE] 
    > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
 
-   - Go to created storage account.
-   - Copy and save the storage account Name.
-   - Go to Access keys from the menu on the left.
-   - Copy and save Connection string for either Key1 or key2.
-   - Copy and save the Storage account name
+   - Go to the storage account that you created
+   - Copy and save the storage account Name
+   - Go to **Access keys** from the menu on the left
+   - Copy and save the connection string for either Key1 or key2
+   - Copy and save the storage account name
 		 
    - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
    - Create and register an Azure Active directory application using the following instructions: 
-    - In the Azure portal, select Azure Active Directory, and then select App registrations.
-    - Select New application registration, and enter the following information:
-    - **Name**: Enter the name of the app.
-    - **Application type**: Select Web API.
+     - In the Azure portal, select Azure Active Directory, and then select App registrations.
+     - Select New application registration, and enter the following information:
+     - **Name**: Enter the name of the app.
+     - **Application type**: Select Web API.
  - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
  - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
  - Copy and save the application ID.
  - Go to **API permissions**.
  - Then select ‘+ Add a permission’.
  - Select **Azure Key vault**.
- - After selecting delegated permissions, check **user_impersonation**.
+ - After you select delegated permissions, select **user_impersonation**.
 
-- Click **Add permissions**. The result will look like the following illustration. 
+- Click **Add permissions**. The result will look similar to the following illustration. 
 
 [![Application client ID](./media/application-client-id.png)](./media/application-client-id.png)
 
 - Select **Certificates & secrets** on the menu for the app.
 
-- Create Key Vault Secrets.
+- Create Key Vault Secrets by completing the following steps.
   - Go to the Key Vault created previously and select Secrets.
   - For each secrete name in the table below repeat the following steps:
   - Select Generate/Import.
-   - In the Create a secret dialog box, in the Upload options field, select Manual.
-   - Create the secret name and value from the table below.
-   - Select Enabled, and then select Create. The secret is created and added to Key Vault
+    - In the Create a secret dialog box, in the Upload options field, select Manual.
+    - Create the secret name and value from the table below.
+    - Select Enabled, and then select Create. The secret is created and added to Key Vault
 
-|     Secret   Name                        |     Secret   value                                                                 |
-|------------------------------------------|------------------------------------------------------------------------------------|
-|     app-id                               |     The ID   of the application just created                                       |
-|     app-secret                           |     The   client secret saved previously                                           |
-|     storage-account-name                 |     The   name of the storage account created previously. E.g. storageaccount1     |
-|     storage-account-connection-string    |     The   connection string copied from Access Keys of the storage account         |
+    |     Secret   Name                        |     Secret   value                                                                 |
+    |------------------------------------------|------------------------------------------------------------------------------------|
+    |     app-id                               |     The ID   of the application just created                                       |
+    |     app-secret                           |     The   client secret saved previously                                           |
+    |     storage-account-name                 |     The   name of the storage account created previously, such as, storageaccount1     |
+    |     storage-account-connection-string    |     The   connection string copied from Access Keys of the storage account         |
 
 3. Authorize the application to access the key vault.
-- In Azure portal, open the **Key Vault** that you created previously. 
-- Select the access policies. For the list of application in the table below follow the following steps.
+- In the Azure portal, open the **Key Vault** that you created previously. 
+- Select the access policies. To access the list of applications in the table below complete the following steps.
   - Click **+ Add Access Policy** to create a new access policy.
-  - In the Secret permissions field, select the permissions from the table below.
+  - In the **Secret permissions** field, select the permissions from the following table.
   - In the **Select principal** field, search for the application display name from the following table. 
   - Click **Add**.
   - Click **Save**.
   
-|     Application                                                        |     Permissions    |
-|------------------------------------------------------------------------|--------------------|
-|     Display name of   the new application you created from step (c)    |     Get, List      |
-|     Microsoft Dynamics   ERP Microservices                             |     Get, List      |
+  |     Application                                                      |     Permissions    |
+  |----------------------------------------------------------------------|--------------------|
+  |     Display name of the new application you created from step (c)    |     Get, List      |
+  |     Microsoft Dynamics ERP Microservices                             |     Get, List      |
 
 4. Assign roles to access the storage account. 
 - In the Axure portal, open the storage account that you created previously. Select **Access Control (IAM)** and select **Role Assignments**. 
-  - Click on + Add, Add Role Assignment.
-  - Select the Role from the following table.
-  - Keep “Assign access to” as “Azure AD user, group, or service principal.”
-  - In the **Select** field enter the application from the table below.
-  - Select **Save**.
+  - Click **+ Add, Add Role Assignment**.
+  - Select the role from the following table.
+  - Keep **Assign access to** as **Azure AD user, group, or service principal**.
+  - In the **Select** field, enter the application from the following table.
+  - Click **Save**.
  
-|     Application                           |     Role                             |
-|-------------------------------------------|--------------------------------------|
-|     Your application   from step 2 (b)    |     Owner                            |
-|     Your application   from step 2 (b)    |     Contributor                      |
-|     Your application   from step 2 (b)    |     Storage Account   Contributor    |
-|     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
-|     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
+  |     Application                           |     Role                             |
+  |-------------------------------------------|--------------------------------------|
+  |     Your application   from step 2 (b)    |     Owner                            |
+  |     Your application   from step 2 (b)    |     Contributor                      |
+  |     Your application   from step 2 (b)    |     Storage Account   Contributor    |
+  |     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
+  |     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
  
   
   ## Configure entity store
