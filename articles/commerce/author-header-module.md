@@ -36,9 +36,9 @@ This topic covers header modules and describes how to create page headers in Mic
 
 ## Overview
 
-In Dynamics 365 Commerce, a page header comprises multiple modules, such as the header, navigation menu, search, promo banner, and cookie consent modules. 
+In Dynamics 365 Commerce, a page header is configured as page fragment which includes the Header module, Promo banner and [Cookie consent](add-cookieconsent.md) modules. 
 
-The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart symbol, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
+The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart icon, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
 The following image shows an example of a header module on a home page.
 
@@ -52,7 +52,7 @@ The **Logo image** and **Logo link** properties are used to define a logo on the
 
 The **My account links** property can be used to define account pages that the site owner wants to show quick links for in the header.
 
-## Modules that are available in a header module
+## Modules that are available within a header module
 
 The following modules can be used in a header module:
 
@@ -62,23 +62,22 @@ The following modules can be used in a header module:
 
 - **Cart icon** - The cart icon module represents the cart icon, which shows the number of items in the cart at any given time. For more information, see [Cart icon module](cart-icon-module.md).
 
-## Create a header module for a page
+## Create a header fragment for a page
 
-To create a header module, follow these steps.
+To create a header fragment, follow these steps.
 
 1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
-1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill container**.
+1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill screen**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Promo banner** and **Cookie consent** modules, and then select **OK**.
-1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. Select the **Container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill container**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Header** module, and then select **OK**.
+1. In the **Promo banner** module, configure with text and links for the promotional content
+1. To the **Default container** add **Cookie consent** modules, and then select **OK**.
+1. In the **Cookie consent** module, configure with the text and link to the site privacy page.
+1.To the **Default container** add **Header** modules, and then select **OK**.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Navigation menu** module, and then select **OK**.
-1. In the property pane for the navigation menu module, configure the properties as needed.
+1. In the property pane for the navigation menu module, configure the properties as needed. Choose Source= Retail and Static menu items.
 1. In the **Search** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Search** module, and then select **OK**.
 1. In the property pane for the search module, configure the properties as needed.
@@ -98,16 +97,10 @@ To help guarantee that a header appears on every page, follow these steps on eve
 
 [Container module](add-container-module.md)
 
-[Buy box module](add-buy-box.md)
-
-[Cart module](add-cart-module.md)
-
 [Cart icon module](cart-icon-module.md)
 
-[Checkout module](add-checkout-module.md)
+[Promo banner module](add-alert.md)
 
-[Order confirmation module](order-confirmation-module.md)
-
-[Header module](author-header-module.md)
+[Cookie consent](add-cookieconsent.md)
 
 [Footer module](author-footer-module.md)
