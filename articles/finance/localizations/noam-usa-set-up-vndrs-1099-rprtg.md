@@ -69,9 +69,8 @@ Complete the following steps to set up vendors for 1099 reporting.
 17. If local income tax was withheld during the year, select the **Local income tax withheld** check box.
 18. Close the forms to save your changes.
  
-
-## Associate a 1099 default value to a Main account
-Some invoice lines identified for 1099 Federal tax reporting might be reported for a different 1099 box from the vendor’s default box. Because vendors might receive a payment on an invoice that correlates to multiple 1099 boxes, it’s preferable that a line funding distribution using a main account be consistently reported in a specific 1099 box. You can now recalculate the 1099 box values for vendors to more accurately report the accumulated balances with the IRS.
+## Associate a 1099 default value with a Main account
+Some invoice lines that are identified for 1099 Federal tax reporting might be reported for a different 1099 box than the vendor’s default box. Because it’s possible for vendors to receive payments that correlate to multiple 1099 boxes, using a main account on a line for a funding distribution is optimal for consistently reporting payments to a specific 1099 box. You can now recalculate the 1099 box values for vendors to more accurately report the accumulated balances with the IRS.
 
 > [!Note]
 > The Report 1099 check box, on the Tax 1099 FastTab of the vendor details form, must be selected for the 1099 box and amount to be populated on the invoice.
@@ -92,13 +91,13 @@ You can refresh the 1099 reporting boxes and amounts for all paid invoices for a
 The system evaluates any vendor that has the **Report 1099** option selected, and then evaluates all of the vendor's invoices. The 1099 amount is recalculated based on the main accounts on each line (including split distributions if applicable). If the line’s fully paid amount is not associated with the 1099 box, the line is not included in the 1099 amount, as shown in the following examples:
 
   - Vendor’s default value for 1099 box is different than the one specified on the invoice line <br>
-    If a vendor invoice has just one line, using a main account associated with 1099 box 7, and the default 1099 box for the vendor is a different number, that default for the vendor will be recalculated to 1099 box 7 and its associated amount.
+    If a vendor invoice has just one line, using a main account associated with 1099 box 7, and the default 1099 box for the vendor is a different number, that default for the vendor, and the amount that should be reported for it, will be recalculated for 1099 box 7.
   - Not all invoice lines have 1099 box values <br>
-    If a vendor invoice has two lines, one using a main account associated with 1099 box 7, and a second line using a main account that is not associated with a 1099 box, the default entry for the vendor will be recalculated to 1099 box 7 and its associated amount.
+    If a vendor invoice has two lines, one using a main account associated with 1099 box 7, and a second line using a main account that is not associated with a 1099 box, the default entry for the vendor and the amount that should reported for it, will be recalculated for 1099 box 7.
   - Invoice lines have different 1099 box values <br>
-    If one line in a vendor invoice uses a main account associated with 1099 box 7, and another line uses a main account associated with 1099 box 1, the system will ignore the default entry for the vendor, and the 1099 amount be recalculated to the associated main accounts.
+    If one line in a vendor invoice uses a main account associated with 1099 box 7, and another line uses a main account associated with 1099 box 1, the system will ignore the default entry for the vendor, and the 1099 amount be recalculated for the associated main accounts.
   - Invoice has split distributions <br>
-    If a vendor invoice includes a line with split distributions, the default entry for the vendor will be recalculated to the 1099 box associated with the main account used on the distributions.
+    If a vendor invoice includes a line with split distributions, the default entry for the vendor will be recalculated for the 1099 box associated with the main account used on the distributions.
     
 > [!Note]
 > A new column named Created by the 1099 update process, with check boxes is added to the Tax 1099 transactions page, to show whether the new update process updated the 1099 balance, or the transaction was created with standard functionality. You can locate the form by selecting **Accounts Payable > Periodic tasks > Vendor settlement for 1099s > Vendor 1099 transactions** or **Accounts Payable > Vendors > All vendors > Vendor >** Action Pane, **Vendor tab, ** Tax information** group, **Vendor settlement for 1099s > Vendor 1099 transactions**
