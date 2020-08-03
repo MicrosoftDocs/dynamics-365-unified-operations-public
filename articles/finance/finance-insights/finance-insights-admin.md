@@ -86,6 +86,8 @@ Complete the steps described in <TBD> to configure the required CDS resources (c
 After creating a model in the previous step, create a data integrator project to flow data back into Dynamics 365 for Finance by completing the steps in <TBD> (content at Create Data Integrator Project).  
 
 ### Understand and improve initial payment predictor model
+See [Evaluate the initial customer payment prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/evaluate-payment-prediction?branch=bob-fi-evaluate-payment-prediction) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/improve-model?branch=bob-fi-improve-model) for information help you adjust the data that's used to build the predcition so improve its effectiveness. 
+
 Follow the guides at <TBD> to understand and improve the initial payment predictor model (contact at https://microsoft.sharepoint.com/:w:/t/AIforOAG/EahnJjqfQBlMrKRX4oYe_uUBpgtY9UsPXzeU17ERbIrEqA?e=FvJF0f and https://microsoft.sharepoint.com/:w:/t/AIforOAG/EbAsTOn26blNrFQLzMh8VgMBLHcqhxO8I1VfKrURUEP29w?e=8j3tPm).
 
 ### Enable cashflow forecasting
