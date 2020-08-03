@@ -5,7 +5,7 @@ title: Product dimensions
 description: There are five product dimensions - color, configuration, size, style and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 author: cvocph
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -87,7 +87,31 @@ Version is a product dimension that is intended to help you maintain and track m
 
 As a standard product dimension, version will behave similarly to the existing product dimensions of size, style, color and configuration, which means that you could also choose to use it for purposes other than tracking product versions.
 
-### Enable the version product dimension
+### <a name="enable-version-dim"></a>Enable the version dimension
+
+#### Before turning on the version dimension
+
+When you enable the the version dimension, some functionality could become broken or stop working as expected if you have installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you may need to update those solutions to include the version dimension in their references to the inventory dimensions.
+
+When you are testing your solutions for compatibility with the version dimension, look for the following:
+
+1. **Functionality**<br>Most importantly, any customizations that involve the inventory dimensions must be assessed so they can work accordingly in conjunction with the version dimension.
+
+1. **References to the inventory dimensions**<br>Look out for references to the inventory dimensions (where the dimensions are referenced specifically). References to `InventDimId` should work out of the box, but look out for references to style or color. For example, be sure to check the following:
+    - API calls in extended classes
+    - All references to specific inventory dimensions in extension code (which must float the version dimension along with the style, color, size dimensions).
+
+1. **References to obsoleted API calls**<br>With the introduction of the version dimension, we have tried to minimize the obsoleting of APIs as much as possible. Those few APIs that have been obsoleted will issue a warning when you turn on the **Product dimension - version** configuration key. Those API calls must be fixed in your extended solutions before you activate the version dimension on a production system. Here are the version-specific obsoleted APIs:
+    - RetailTransactionServiceInventory::getProductRecordId
+    - EcoResProductNumberIdentifiedProductVariantEntity::find
+    - EGAISAlcoholProduction_RU::findByItemDim
+    - PCVariantConfiguration::findByProductMasterAndDimensions
+
+1. **Maps**<br>For any maps that use the inventory dimensions, the corresponding relation mapping to these maps must be updated to include the version dimension. Look out for tables in the extended model or table extensions where the fields include inventory dimensions.
+
+1. **Commerce functionality**<br>Once enabled, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, it is not yet supported by the Commerce channel database, nor on the point of sales (POS) applications. This is similar to the current behavior of the config dimension throughout Dynamics 365 Commerce.
+
+#### Turn on the version product dimension
 
 Before you can use the version dimension, it must be enabled on your system (which requires admin permissions). To enable the feature:
 
@@ -115,29 +139,7 @@ In addition, Dynamics 365 Commerce order-creation and order-processing features 
 The product dimension version works similarly to the other product dimensions. However, due to its specific nature, and because it is intended to maintain and track multiple versions of a product, it behaves slightly differently. Differences include:
 
 - **There is no version group**<br>Unlike size, color, and style (which have color group, size group, and style group) no version group exists. Groups let you predefine the applicable values so that when, for example, you assign a color group to a product, the product can use all the colors in that color group. This concept doesn't apply for teh version dimension because the versions that a product will take aren't predefined when the product is created. Instead. versions are created during the lifecycle of the product as needed. You would typically create a new version (rather than a new product) when the form, fit, and function of the product otherwise remain the same.
-- **Product variant suggestions work as they currently do**<br>It is expected that there are no changes to the process of creating and releasing versioned products.<!--KFM: I don't understand what this first sentence means--should it mention variants? -->. When creating a versioned product, the first version (V-1) will be created as a product dimension and the variant(s) will be released. As the product changes and a new version is needed, then the new version value (V-2) will be added and the needed variants will be released. It is not expected that all the versions (V-1, V-2, V-3) will be created in advance for the product.
+- **Product variant suggestions work as they currently do**<br>Product variant suggestions will create suggestions for all version dimension values, as with other dimensions. The process of creating and releasing versioned products is the same as for products using other dimensions. When creating a versioned product, the first version (V1) will be created as a product dimension and the variant(s) will be released. As the product changes and a new version is needed, then the new version value (V2) will be added and the needed variants will be released. It is not expected that all the versions (V1, V2, V3) will be created in advance for the product.
 
 > [!IMPORTANT]
-> By enabling this, and using the version dimension in any functionalities could potentially not work as expected if there are any solutions installed that reference the Inventory dimensions. The ISV that owns the solution would be able to determine this. <!--KFM: I'm not sure what we are trying to say here. I think it's this: "If you enable and use the version dimension, then some solutions that reference the inventory dimensions may stop working as expected. Please contact the independent software vendor (ISV) for your affected solutions to confirm and fix these issues." -->
-
-### Before turning on the version dimension
-
-When you enable the the version dimension, some functionality could become broken or stop working as expected if you have installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you may need to update those solutions to include the version dimension in their references to the inventory dimensions.<!--KFM: Is this the same issue we are referring to in the previous IMPORTANT box? Also, we should probably put this info together with or before the instructions on how to enable the feature. -->
-
-When you are testing your solutions for compatibility with the version dimension, look for the following:
-
-1. **Functionality**<br>Most importantly, any customizations that involve the inventory dimensions must be assessed so they can work accordingly in conjunction with the version dimension.
-
-1. **References to the inventory dimensions**<br>Look out for references to the inventory dimensions (where the dimensions are referenced specifically). References to `InventDimId` should work out of the box, but look out for references to style or color.
-    - API calls in extended classes <!-- KFM: what about them? -->
-    - All references to specific inventory dimensions in extension code must float the version dimension along with the style, color, size dimensions.
-
-1. **References to obsoleted API calls**<br>With the introduction of the version dimension, we have tried to minimize the obsoleting of APIs as much as possible. Those few APIs that have been obsoleted will issue a warning when you turn on the **Product dimension - version** configuration key. Those API calls must be fixed in your extended solutions before you activate the version dimension on a production system. Here are the version-specific obsoleted APIs:
-    - RetailTransactionServiceInventory::getProductRecordId
-    - EcoResProductNumberIdentifiedProductVariantEntity::find
-    - EGAISAlcoholProduction_RU::findByItemDim
-    - PCVariantConfiguration::findByProductMasterAndDimensions
-
-1. **Maps**<br>For any maps that use the inventory dimensions, the corresponding relation mapping to these maps must be updated to include the version dimension. Look out for tables in the extended model or table extensions where the fields include inventory dimensions.
-
-1. **Retail functionality**<br>The version dimension floats through retail code on standard<!-- KFM: what do we mean by "floats on standard"? -->, however the version dimension isn't otherwise supported by Dynamics 365 Commerce at this time. This is similar to the way the config dimension is currently handled in Commerce.
+> If you enable and use the version dimension, then some solutions that reference the inventory dimensions may stop working as expected. Please contact the independent software vendor (ISV) for your affected solutions to confirm and fix these issues. More information: [Enable the version dimension](#enable-version-dim)

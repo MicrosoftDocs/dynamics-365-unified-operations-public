@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
 
 ---
-<!-- KFM: Replace "Style" with "Version" everywhere? -->
+
 # Default order settings for dimensions and product variants
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +86,7 @@ The  default inventory order settings also apply when creating:
 
 ## Full definition of a released product
 
-When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
+When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, version, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
 
 Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. For this reason, no default quantity or checks on multiple and minimums are performed when creating the line or posting the journal. 
 
@@ -123,41 +123,41 @@ Consider the following example product.
 | **Product name**                                    | Photoelectric sensor                    |
 | **Item number**                                     | XW56                                    |
 | **Configuration** (used to model the type of light) | C1-Visible red light, C2-Infrared light |
-| **Style** (used to model the engineering revision)  | R1, R2, R3                              |
+| **Version** | V1, V2, V3                              |
 
 For this example, assume that the product is procured and not produced. Also assume that configuration C1 is more commonly used, so it has shorter lead times. 
 
 Create the following default order settings to model this scenario.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the revision or site the line is placed at, the lead time will be considered 2. Assume that all revisions besides R3 are stopped.
+When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the version or site the line is placed at, the lead time will be considered 2. Assume that all versions besides V3 are stopped.
 
 You can create the following default order settings rules.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Yes                                  |                    | Yes                | Yes                               | Yes             |
-| 20   |      |               | R1    | Yes                                  |                    | Yes                | Yes                               | Yes             |
+| 20   |      |               | V2    | Yes                                  |                    | Yes                | Yes                               | Yes             |
+| 20   |      |               | V1    | Yes                                  |                    | Yes                | Yes                               | Yes             |
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-The two rules for stopping the old revisions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
+The two rules for stopping the old versions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
 
-This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have been given to the user. 
+This example explains the need for the rank. If a purchase order is created for configuration C1 and version V2, in the absence of the rank, the two rules defined for V2 and C1 would be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and version V2, the user will get a warning message that the item is on hold and that this is caused by the version value. If the rule for the configuration had a higher rank than the one for version, then the creation of a purchase order line for configuration C1 and version V2 would have succeeded and no 'item on hold' message would have been given to the user. 
 
 Consider the following default order setting rules.
 
-| Rank | Site | Configuration | Style | Default site | Default warehouse | Purchase - Override default storage dimensions | Purchase warehouse |
+| Rank | Site | Configuration | Version | Default site | Default warehouse | Purchase - Override default storage dimensions | Purchase warehouse |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Yes                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, style R2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21.
+The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, version V2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21.
 
 As general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
 
@@ -171,14 +171,14 @@ The number of rules created for a released product may be many. In order to get 
 
 If the rule system for default order settings is too cumbersome, then there is the option to define default order settings for each product variant. The following example shows how this will look for the product and the cases described above.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Yes                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
-| 10   |      | C2            | R1    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
-| 10   |      | C1            | R3    | Yes                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
-| 10   |      | C1            | R1    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
+| 10   |      | C2            | V3    | Yes                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
+| 10   |      | C2            | V1    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
+| 10   |      | C1            | V3    | Yes                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
+| 10   |      | C1            | V1    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 The rank in this case doesn't really matter, so you can choose to hide it. This solution potentially introduces a maintenance issue. However, you may want to consider using this setup if you are considering integrating with Product Lifecycle Management (PLM) systems.
