@@ -193,10 +193,10 @@ If you are unable to find any of the preceding applications, try the following i
   - Click **Add**.
   - Click **Save**.
   
-  |     Application                                                      |     Permissions    |
-  |----------------------------------------------------------------------|--------------------|
-  |     Display name of the new application you created from step (c)    |     Get, List      |
-  |     Microsoft Dynamics ERP Microservices                             |     Get, List      |
+    |     Application                                                      |     Permissions    |
+    |----------------------------------------------------------------------|--------------------|
+    |     Display name of the new application you created from step (c)    |     Get, List      |
+    |     Microsoft Dynamics ERP Microservices                             |     Get, List      |
 
 4. Assign roles to access the storage account. 
 - In the Axure portal, open the storage account that you created previously. Select **Access Control (IAM)** and select **Role Assignments**. 
@@ -205,14 +205,15 @@ If you are unable to find any of the preceding applications, try the following i
   - Keep **Assign access to** as **Azure AD user, group, or service principal**.
   - In the **Select** field, enter the application from the following table.
   - Click **Save**.
+  
  
-  |     Application                           |     Role                             |
-  |-------------------------------------------|--------------------------------------|
-  |     Your application   from step 2 (b)    |     Owner                            |
-  |     Your application   from step 2 (b)    |     Contributor                      |
-  |     Your application   from step 2 (b)    |     Storage Account   Contributor    |
-  |     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
-  |     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
+    |     Application                           |     Role                             |
+    |-------------------------------------------|--------------------------------------|
+    |     Your application   from step 2 (b)    |     Owner                            |
+    |     Your application   from step 2 (b)    |     Contributor                      |
+    |     Your application   from step 2 (b)    |     Storage Account   Contributor    |
+    |     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
+    |     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
  
   
   ## Configure entity store
@@ -232,7 +233,7 @@ If you are unable to find any of the preceding applications, try the following i
    
 ## Configure the Data Lake
 
-Add Azure Data Lake add-in to the environment in LCS. 
+Add Azure Data Lake add-in to the environment using LCS. 
 
 1. Log in to the LCS and click **Full Details** under the environment name, which is on the right side of the page. 
 
@@ -242,13 +243,13 @@ Add Azure Data Lake add-in to the environment in LCS.
 
 4. Enter the following values. 
 
-|     Value                                                                                |     Description                                    |
-|------------------------------------------------------------------------------------------|----------------------------------------------------|
-|     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: Azure portal > Azure Active Directory > Tenant ID          |
-|     Provide   the DNS name of your Key Vault                                             |     The   DNS name of the Key Vault (same as what is used in Entity store). For example, &lt;https://customkeyvault.vault.azure.net/&gt;                                               |
-|     Provide   the secret that contains the name of the storage account                   |     storage-account-name                                      |
-|     Secret   Name for App ID to be used for accessing Data Lake                          |     app-id                                                    |
-|     Secret   name to be used with App ID                                                 |     app-secret                                                |
+  |     Value                                                                                |     Description                                    |
+  |------------------------------------------------------------------------------------------|----------------------------------------------------|
+  |     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: Azure portal > Azure Active Directory > Tenant ID          |
+  |     Provide   the DNS name of your Key Vault                                             |     The   DNS name of the Key Vault (same as what is used in Entity store). For example, &lt;https://customkeyvault.vault.azure.net/&gt;                                               |
+  |     Provide   the secret that contains the name of the storage account                   |     storage-account-name                                      |
+  |     Secret   Name for App ID to be used for accessing Data Lake                          |     app-id                                                    |
+  |     Secret   name to be used with App ID                                                 |     app-secret                                                |
 
 5. Agree to the terms and click **Install**.
 
@@ -259,13 +260,14 @@ Add Azure Data Lake add-in to the environment in LCS.
 1. Login to LCS and go to the **Environment details** page. 
 2. Scroll to the **Environment add-ins** section. You should see the add-ins that are already installed in this environment. 
 3. You should see the **Export to Data Lake** add-in installed. If you do not see **Export to Data Lake add-in** installed, configure **Export to Data Lake** as a first step.
-4. Select the **AI builder Integrator** add-in. 
-   - AI builder integrator add-in details page will appear. Enter the values listed in the following table. 
+4. Select the **AI builder integrator** add-in. 
 
-|     Value                                                         |     Description                                                 |
-|-------------------------------------------------------------------|-----------------------------------------------------------------|
-|     CDS   Organization URL                                        |     The   CDS Organization URL of the CDS instance.           Make.powerapps.com     Click the **Settings** icon (right upper corner)  Advance  Setting  Copy the URL (ending with dynamics.com)    |
-|     CDS   Org ID                                                  |     The   Environment ID of the CDS instance.     Make.powerapps.com           Settings   > Customizations > Developer resources > Instance Reference   Information > ID                                    |
-|     CDS   Tenant ID (Directory ID  from AAD)                      |     The   Tenant ID of the CDS instance.     Go   to: **Azure portal > Azure Active Directory > Tenant ID**       |
-|     Provide   user object ID who has system administrator role    |     The   AAD User Object ID of the user in CDS. This user must be a System Administrator of the CDS instance  **Azure Active directory > Users > select your user > Identity > Object   ID**      |
-|     Is this the default CDS environment for the tenant?         |     If the CDS instance was the first production instance created, Click the checkbox. If the CDS instance was created manually, clear the checkbox.                                                  |
+   - The **AI builder integrator** add-in details page will open. Enter the values listed in the following table. 
+
+   |     Value                                                         |     Description                                                 |
+   |-------------------------------------------------------------------|-----------------------------------------------------------------|
+   |     CDS   Organization URL                                        |     The   CDS Organization URL of the CDS instance.           Make.powerapps.com     Click the **Settings** icon (right upper corner)  Advance  Setting  Copy the URL (ending with dynamics.com)    |
+   |     CDS   Org ID                                                  |     The   Environment ID of the CDS instance.     Make.powerapps.com           Settings   > Customizations > Developer resources > Instance Reference   Information > ID                                    |
+   |     CDS   Tenant ID (Directory ID  from AAD)                      |     The   Tenant ID of the CDS instance.     Go   to: **Azure portal > Azure Active Directory > Tenant ID**       |
+   |     Provide   user object ID who has system administrator role    |     The   AAD User Object ID of the user in CDS. This user must be a System Administrator of the CDS instance  **Azure Active directory > Users > select your user > Identity > Object   ID**      |
+   |     Is this the default CDS environment for the tenant?         |     If the CDS instance was the first production instance created, Click the checkbox. If the CDS instance was created manually, clear the checkbox.                                                  |
