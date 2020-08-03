@@ -37,48 +37,45 @@ This topic covers social share module and describes how to add them to site page
 
 ## Overview
 
-A Social share module allows the user to share the page Url in social media such as Facebook, Linkedin etc. Its commonly used on the product details page to share the product information.
+Social share module allows the user to share the page Url in social media such as Facebook, Linkedin etc. Its commonly used on the product details page to share the product information.
 
-The following image shows an example of a Social share module that is used on product page page. Here it shows integration with Facebook, Instagram, Mail, Linked in.
+**Social share module** is a container of **Social share item** modules. Each Social share item module can be configured to point to a specific social media. We support integration with the following social media's out of box - Facebook, Twitter, Pinterest, Linkedin and Mail. When a site user interacts with the social media icon, an iframe is launched for the respective social media. Within the iframe, the user can login and post the page content that they were viewing. Each social media platform expects certain data to be availble TBD.
+
+Each social media platforms may track some cookies, therefore this module requires the user to accept the cookie consent message. When cookie consent is not accepted, the module will be hidden on the page. For more details, refer to [Cookie compliance](cookie-compliance.md)
+
+The following image shows an example of a Social share module that is used on product details page.
 
 ![Example of a social share module](./media/ecommerce_socialshare.PNG)
 
-## Carousel module properties
+## Social share module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Autoplay                  | **True** or **False** | If the value is set to **True**, the transition between items inside the carousel occurs automatically. If the value is set to **False**, no transition occurs unless the customer uses the keyboard or mouse to move from one item to the next item. |
-| Slide transition interval | A value in seconds    | The interval for transitions between items. |
-| Transition type           | **Slide** or **Fade** | The transition effect between items. |
-| Hide carousel flipper     | **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator are hidden. |
-| Allow carousel dismiss    | **True** or **False** | If the value is set to **True**, users can dismiss the carousel. |
+| Caption                  | Caption text | The module can be provided with a caption for this module|
+| Orientation |Horizontal or Vertical    | This defines the layout for the social media items, it can be Horizontal or Vertical |
 
-## Add a carousel module to a page
+## Social share item module properties
+| Property name             | Value                 | Description |
+|---------------------------|-----------------------|-------------|
+| Social media              | Facebook, Twitter, Pinterest, Linkedin, Mail | A dropdown with a list of social media platforms to chose from|
+| Icon |Image    | This will be the icon that will be shown for the respective social media. As a best practice, refer to the social media platform's SDK for the recommended icon for each platform |
 
-To add a carousel module to a new page and set the required properties, follow these steps.
+## Add a social share module to a buy box module
 
-1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template Name**, enter **Carousel template**, and then select **OK**.
-1. In the **Body** slot, add a **Default page** module.
-1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.  
-1. Use the carousel template that you just created to create a page that is named **Carousel page**.
-1. In the **Main** slot of the new page, add a container module. 
-1. In the pane on the right, set the **Width** value to **Fill Screen**.
-1. Under **Page Outline**, add a carousel module to the container module.
-1. Add a content block module to the carousel module. Set the properties of the content block module by providing **Heading**, **Link**, **Layout**, and other properties.
-1. Add and configure another content block module.
-1. Set additional properties for the carousel module as you require.
-1. Select **Save**, and then select **Preview** to preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
+The Social share module can be added to the buy box module within the **Social share slot**.  
+
+1. In Fabrikam, open the the **DefaultPDP** page which is the product details page 
+1. To the Buy box module, **Social share slot** add the **Social share module**. Set caption if needed. Set Orientation=Horizontal
+1. To the **Social share** add a **Social share item** module.
+1. On the **Social share item** module, select Social Media = Facebook. Set Icon to the Facebook icon.
+1. Conitnue adding more **Social share item**s.
+1. Select **Save**, and then select **Preview** to preview the page. The page will show the social share module.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Promo banner module](add-alert.md)
+[Buy Box](add-buy-box.md)
 
-[Text block module](add-content-rich-block.md)
-
-[Content block module](add-hero-module.md)
-
-[Video player module](add-video-player.md)
+[Cookie compliance](cookie-compliance.md)
