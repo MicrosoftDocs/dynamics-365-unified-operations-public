@@ -78,7 +78,7 @@ Common Data Service integration brings company parity by using a company identif
 + For existing Common Data Service data, an admin-led bootstrapping experience will soon be available.
 
 
-# Autopopulate company name in customer engagement apps
+## Autopopulate company name in customer engagement apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -98,7 +98,7 @@ As a system configurator or administrator, if you want to autopopulate company d
 + OnLoad : defaultCompany
 + OnChange of Company field : updateDefaultCompany
 
-# Apply company context based filtering on lookup fields
+## Apply company context based filtering on lookup fields
 
 In order to achieve the company context based filtering on your custom forms or custom lookup fields added to the standard forms, please open the form and use "Related Records Filtering" section to apply the company filter. You can find the setting on each entity's form as shown below. You need to do this setting for each lookup field that requires filtering based on the underlying company on a given record.
 ![Apply company context](media/apply-company-context.PNG)
