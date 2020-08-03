@@ -2657,6 +2657,8 @@
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
+          - name: Confirm outbound shipments from batch jobs
+            href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
