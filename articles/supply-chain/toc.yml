@@ -1955,7 +1955,7 @@
             href: production-control/tasks/define-resource-capabilities.md
           - name: Routes and operations
             href: production-control/routes-operations.md
-          - name: Warehouse work policies
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
           - name: Create working time scheduling properties
             href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2687,10 +2687,8 @@
         items:
         - name: Warehouse work policies
           items:
-          - name: Warehouse work policies overview
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
-          - name: Set up warehouse work policies
-            href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
           - name: Movement of inventory with associated work in Warehouse management
             href: warehousing/move-inventory-associated-work.md
           - name: Create a work class
