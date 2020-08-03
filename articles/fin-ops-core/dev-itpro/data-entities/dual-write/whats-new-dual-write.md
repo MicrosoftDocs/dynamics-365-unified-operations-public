@@ -62,7 +62,7 @@ The June 2020 release of dual-write orchestration package contains the features 
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Edit legal entity after dual-write setup | The company or legal entity list doesn’t remain static and is constantly changing. There may be a need to add new companies especially during a phased rollout or acquisitions. Up until now, you were unable to add a company or legal entity without system down-time where you have to unlink and relink your environment, which can be expensive, especially due to pre-existing data. With this feature, you will be able to add a company in a live environment without the need for unlinking | General availability |
+| Edit legal entity after setup | The company or legal entity list isn't static and can constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Up until now, couldn't add a company or legal entity without system down-time. During this down-time, you would have to unlink and relink your environment. That can be expensive, especially if you have pre-existing data. With this feature, you will be able to add a company in a live environment without have to unlinking and relink. | General availability |
 
 
 ## May 2020 release
@@ -79,7 +79,7 @@ The May 2020 release of dual-write orchestration package (version 2.0.777.353) c
 | **SalesTaxGroup** support | Support for **SalesTaxGroup** in **Account** and **Contact** forms for B2B and B2C customers. | General availability |
 | Create sellable contracts | Allow creation of a sellable contact through **Quick Create: Contact** form in model-driven apps. | General availability |
 | Quote and order creation | Enable quote and order creation for B2C customers. | General availability |
-| Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This is not always practical and required additional approval which can be time consuming. With this feature, we will remove this prerequisite and the need for explicitly giving consent to the applications | General availability |
-| Force unlink dual-write environment | Previously, while testing dual-write, customers had to disable all entity maps before unlinking a dual-write environment. This may seem cumbersome and sometimes not possible as one of the environments may not be available. This new feature provides a quick way to unlink your test/trial environments | General availability |
+| Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This wasn't always practical and required additional approval which can be time consuming. With this feature, we removed this prerequisite and the need for explicitly giving consent to the applications. | General availability |
+| Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the entity maps before unlinking a dual-write environment. This seemed cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
 
 
