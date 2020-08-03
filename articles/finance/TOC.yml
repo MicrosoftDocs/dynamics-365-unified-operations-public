@@ -792,6 +792,12 @@
         items:
         - name: Configure Asset leasing parameters
           href: asset-leasing/config-lease-parameters.md
+        - name: Add or copy a lease
+          href: asset-leasing/add-lease.md
+        - name: Record right-of-use asset depreciation
+          href: asset-leasing/record-rou-asset-depreciation.md
+        - name: Reverse posted lease transactions 
+          href: asset-leasing/reverse-posted-lease-trans.md
     - name: General ledger
       items:
       - name: General ledger overview
