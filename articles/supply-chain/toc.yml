@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.13 (October 2020)
+            href: get-started/whats-new-scm-10-0-13.md
           - name: Supply Chain Management 10.0.12 (August 2020)
             href: get-started/whats-new-scm-10-0-12.md
           - name: Supply Chain Management 10.0.11 (July 2020)
             href: get-started/whats-new-scm-10-0-11.md
-          - name: Supply Chain Management 10.0.10 (May 2020)
-            href: get-started/whats-new-scm-10-0-10.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -1955,7 +1955,7 @@
             href: production-control/tasks/define-resource-capabilities.md
           - name: Routes and operations
             href: production-control/routes-operations.md
-          - name: Warehouse work policies
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
           - name: Create working time scheduling properties
             href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2657,6 +2657,8 @@
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
+          - name: Confirm outbound shipments from batch jobs
+            href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
@@ -2685,10 +2687,8 @@
         items:
         - name: Warehouse work policies
           items:
-          - name: Warehouse work policies overview
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
-          - name: Set up warehouse work policies
-            href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
           - name: Movement of inventory with associated work in Warehouse management
             href: warehousing/move-inventory-associated-work.md
           - name: Create a work class
