@@ -68,6 +68,7 @@ Themes can be used to remove or change the order of buy box product properties a
 
 - **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](mediagallery-module.md).
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
+- **Social share** - This module can be added to the buy box to allow users to share product information on the social media platforms. For more information, see [Social share](add-socialshare.md]
 
 ## Buy box module settings
 
