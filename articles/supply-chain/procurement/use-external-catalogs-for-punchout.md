@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use external catalogs for PunchOut eProcurement
+title: Use external catalogs for PunchOut e-procurement
 description: This topic explains how you can use external catalogs to create and submit requisitions.
 author: mkirknel
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use external catalogs for PunchOut eProcurement
+# Use external catalogs for PunchOut e-procurement
 
 [!include [banner](../includes/banner.md)]
 
