@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product dimensions
-description: There are five product dimensions - color, configuration, size, style and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
+description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 author: cvocph
 manager: tfehr
 ms.date: 08/03/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-There are five product dimensions: color, configuration, size, style and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
+There are five product dimensions: color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 
 Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
 
@@ -48,7 +48,7 @@ Product variants are also referred to as items. An item is a tangible product, w
 
 A product variant can be generated based on the product dimension values.
 
-Product dimensions values such as size, color and style can be created on the **Size**, **Color** and **Style** pages, which can be accessed from the following locations: **Product information management \> Setup \> Dimension and variant Groups \> Sizes/Colors/Styles**.
+Product dimensions values such as size, color, and style can be created on the **Size**, **Color** and **Style** pages, which can be accessed from the following locations: **Product information management \> Setup \> Dimension and variant Groups \> Sizes/Colors/Styles**.
 
 Product dimension values for the configuration dimension are typically created using either the Product configurator or the Dimension-based configurator. 
 
@@ -85,13 +85,13 @@ A company sells denim jeans. The item, *Jeans*, uses the color and size product 
 
 Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers operating in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
 
-As a standard product dimension, version will behave similarly to the existing product dimensions of size, style, color and configuration, which means that you could also choose to use it for purposes other than tracking product versions.
+As a standard product dimension, version will behave similarly to the existing product dimensions of size, style, color, and configuration, which means that you could also choose to use it for purposes other than tracking product versions.
 
 ### <a name="enable-version-dim"></a>Enable the version dimension
 
 #### Before turning on the version dimension
 
-When you enable the the version dimension, some functionality could become broken or stop working as expected if you have installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you may need to update those solutions to include the version dimension in their references to the inventory dimensions.
+When you enable the version dimension, some functionality could become broken or stop working as expected if you have installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you may need to update those solutions to include the version dimension in their references to the inventory dimensions.
 
 When you are testing your solutions for compatibility with the version dimension, look for the following:
 
@@ -138,7 +138,7 @@ In addition, Dynamics 365 Commerce order-creation and order-processing features 
 
 The product dimension version works similarly to the other product dimensions. However, due to its specific nature, and because it is intended to maintain and track multiple versions of a product, it behaves slightly differently. Differences include:
 
-- **There is no version group**<br>Unlike size, color, and style (which have color group, size group, and style group) no version group exists. Groups let you predefine the applicable values so that when, for example, you assign a color group to a product, the product can use all the colors in that color group. This concept doesn't apply for teh version dimension because the versions that a product will take aren't predefined when the product is created. Instead. versions are created during the lifecycle of the product as needed. You would typically create a new version (rather than a new product) when the form, fit, and function of the product otherwise remain the same.
+- **There is no version group**<br>Unlike size, color, and style (which have color group, size group, and style group) no version group exists. Groups let you predefine the applicable values so that when, for example, you assign a color group to a product, the product can use all the colors in that color group. This concept doesn't apply for the version dimension because the versions that a product will take aren't predefined when the product is created. Instead. versions are created during the lifecycle of the product as needed. You would typically create a new version (rather than a new product) when the form, fit, and function of the product otherwise remain the same.
 - **Product variant suggestions work as they currently do**<br>Product variant suggestions will create suggestions for all version dimension values, as with other dimensions. The process of creating and releasing versioned products is the same as for products using other dimensions. When creating a versioned product, the first version (V1) will be created as a product dimension and the variant(s) will be released. As the product changes and a new version is needed, then the new version value (V2) will be added and the needed variants will be released. It is not expected that all the versions (V1, V2, V3) will be created in advance for the product.
 
 > [!IMPORTANT]
