@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.13 of Finance and Operations apps (Octo
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,7 +66,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
