@@ -168,7 +168,7 @@ This section maintains a list of known issues for the new grid control while the
 -  [KB 4575437] Lookups with editable controls close unexpectedly
 -  [KB 4569418] Duplicate line created in delivery schedule form
 -  [KB 4575435] Enhanced preview sometimes persists even when the mouse pointer isn't near the field
--  [KB 4575434] Lookup isn't filtering when the field is dirty
+-  [KB 4575434] Lookup isn't filtering when the field has been modified
 -  [KB 4575430] Values in password fields aren't masked in the grid
 -  [KB 4569438] "Processing has stopped because of a validation issue" displays after marking lines while settling supplier transactions
 -  [KB 4569434] Refreshing the Legal entities form results in fewer records
