@@ -172,8 +172,8 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     Dual-write will continue to expand in the future to support more scenarios including party, project, and hands-on inventory. The framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
     
     > [!NOTE]
-    > It may take few minutes for the solution packages to be created in powerapps solutions section. Please wait for it to appear. 
     > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
+    > It may take few minutes for the solution packages to be created in powerapps solutions section. Wait for it to appear before moving to the next step.
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 
