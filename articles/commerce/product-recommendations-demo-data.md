@@ -5,7 +5,7 @@ title: Create recommendations with demo data
 description: This topic provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
 manager: AnnBe
-ms.date: 03/30/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -74,7 +74,7 @@ The extension contains a datafile called 'RecoMockDataset.csv', which allows you
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 

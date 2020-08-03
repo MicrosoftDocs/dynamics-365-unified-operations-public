@@ -35,7 +35,7 @@ This topic shows how to set up a shipping carrier and define details such as ser
 
 ## Create a new shipping carrier
 1. Go to **Navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers**.
-2. Select **New** in the Action pane.
+2. Select **New** on the Action Pane.
 3. In the **Shipping carrier** field, type a value.
 4. In the **Name** field, type a value.
 5. In the **Mode** field, select an option from the drop-down menu.

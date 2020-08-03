@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -38,15 +38,13 @@ You can view team and company calendars in Dynamics 365 Human Resources. Team ca
 
 ## View your team calendar as an employee
 
-1. In the **Employee self service** workspace, select **My team**.
-
-2. Select **Leave and absence**, and then select **View team calendar**.
+1. In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.
 
 ## View your team calendar as a manager
 
 1. In the **Employee self service** workspace, select **My team**.
 
-2. Select **Leave and absence**, and then select **View team calendar**.
+2. Select **Leave and absence**, and then select **View manager absence calendar**.
 
 Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**. 
 

@@ -50,7 +50,7 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 3. Click **Save**.
 
 ## Remove the inventory blocking
-1. On the **Action pane**, click **Delete**.
+1. On the **Action Pane**, click **Delete**.
 2. Click **Yes**.
 3. Close the page.
 

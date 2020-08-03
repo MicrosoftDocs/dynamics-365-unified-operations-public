@@ -5,7 +5,7 @@ title: Adjust AI-ML-based product recommendation results
 description: This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -106,7 +106,7 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 

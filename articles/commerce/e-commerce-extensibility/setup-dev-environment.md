@@ -5,7 +5,7 @@ title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/09/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -50,7 +50,7 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Currently, version 10.x is the only supported version. You can find the Windows Installer (MSI) package file on the [Node.js website](https://nodejs.org/dist/latest-v10.x/). Although newer versions might work in development environments, they aren't fully supported.
+Version 12.x is the current supported version. You can find the installer on the [Node.js website](https://nodejs.org).
 
 If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 

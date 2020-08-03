@@ -5,7 +5,7 @@ title: Use JOIN data sources in ER model mappings to get data from multiple appl
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -261,6 +261,33 @@ Review settings of the ER model mapping component. The component is configured t
     - Application database has been called once to calculate the number of configuration versions by using joins that were configured in the **Details** data source.
 
     ![ER model mapping designer page](./media/GER-JoinDS-Set2Run3.PNG)
+
+## Limitations
+
+As you can see from the example in this topic, the **JOIN** data source can be built from several data sources that describe the individual datasets of the records that must eventually be joined. You can configure those data sources by using the built-in ER [FILTER](er-functions-list-filter.md) function. When you configure the data source so that it's called beyond the **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of the **JOIN** data source doesn't support data sources of this type. For example, when you call a [FILTER](er-functions-list-filter.md)-based data source within the scope of execution of a **JOIN** data source, if the called data source contains company ranges as part of the condition for data selection, an exception occurs.
+
+In Microsoft Dynamics 365 Finance version 10.0.12 (August 2020), you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md)-based data sources that are called within the scope of execution of a **JOIN** data source. Because of the limitations of the application [query](../dev-ref/xpp-library-objects.md#query-object-model) builder, the company ranges are supported only for the first data source of a **JOIN** data source.
+
+### Example
+
+For example, you must make a single call to the application database to get the list of foreign trade transactions of multiple companies and the details of the inventory item that is referred to in those transactions.
+
+In this case, you configure the following artifacts in your ER model mapping:
+
+- **Intrastat** root data source that represents the **Intrastat** table.
+- **Items** root data source that represents the **InventTable** table.
+- **Companies** root data source that returns the list of companies (**DEMF** and **GBSI** in this example) where transactions must be accessed. The company code is available from the **Companies.Code** field.
+- **X1** root data source that has the expression `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. As part of the condition for data selection, this expression contains the definition of company ranges `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2** data source as a nested item of the **X1** data source. It includes the expression `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Finally, you can configure a **JOIN** data source where **X1** is the first data source and **X2** is the second data source. You can specify **Query** as the **Execute** option to force ER to run this data source on the database level as a direct SQL call.
+
+When the configured data source is run while the ER execution is [traced](trace-execution-er-troubleshoot-perf.md), the following statement is shown in the ER model mapping designer as part of the ER performance trace.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> An error occurs if you run a **JOIN** data source that has been configured so that it contains data selection conditions that have company ranges for additional data sources of the executed **JOIN** data source.
 
 ## Additional resources
 

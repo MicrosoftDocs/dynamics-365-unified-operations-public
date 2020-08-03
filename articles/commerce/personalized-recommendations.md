@@ -5,7 +5,7 @@ title: Enable personalized product recommendations
 description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -114,7 +114,7 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 

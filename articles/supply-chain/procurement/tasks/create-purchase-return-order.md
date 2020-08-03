@@ -37,7 +37,7 @@ This procedure shows you how to create a purchase return order by using the Cred
 2. Click **New**.
 3. In the **Vendor account** field, enter "US-102".
 4. Click **OK**.
-5. On the **Action pane**, click **Purchase**.
+5. On the **Action Pane**, click **Purchase**.
 6. Click **Credit note**. This is the page from which you can copy from an existing vendor invoice to your return order. This is the same page that's used for other copy actions. But because we've opened it from the Credit note action, the page is configured to support the creation of a return order that offsets vendor invoices.  
 7. Expand the **Parameters** section.
     - The **Invert sign** option is automatically selected, and cannot be changed. This ensures that the sign is changed for the quantities, and that order lines that are added will offset the vendor invoice.  

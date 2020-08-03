@@ -5,7 +5,7 @@ title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -97,12 +97,7 @@ Follow these steps to specify when the workflow that you're configuring is used.
 3. Click **Add condition**.
 4. Enter a condition.
 5. Enter any additional conditions that are required.
-6. To verify that the conditions that you entered are set correctly, follow these steps:
-
-    1. Click **Test**.
-    2. On the **Test workflow condition** page, in the **Validate condition** area, select a record.
-    3. Click **Test**. The system evaluates the record to determine whether it meets the conditions that you specified. For example, if you're creating a purchase requisition workflow for Spain, the **Validate condition** area of the page shows a list of purchase requisitions. When you click **Test**, the system evaluates the selected purchase requisition to determine whether the country/region is ES.
-    4. Click **OK** or **Cancel** to return to the **Properties** page.
+6. Run through the workflow with some target records to verify that the condition correctly includes and excludes records.
 
 ## Specify when notifications are sent
 

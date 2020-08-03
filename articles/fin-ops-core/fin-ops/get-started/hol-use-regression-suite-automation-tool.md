@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Use the Regression suite automation tool tutorial
+# Regression suite automation tool tutorial
 
 [!include [banner](../includes/banner.md)]
 

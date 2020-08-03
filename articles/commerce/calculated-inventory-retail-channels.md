@@ -5,7 +5,7 @@ title: Calculate inventory availability for retail channels
 description: This topic describes the options that are available for showing the on-hand inventory for the store and online channels.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -54,12 +54,7 @@ Both APIs fetch data from the Commerce server and provide an estimate of on-hand
 
 ### Get started with e-Commerce calculated inventory availability
 
-Before you use the two APIs that were mentioned earlier, you must make a parameter change in Commerce Headquarters to ensure that the snapshot of inventory values that Commerce Headquarters calculates by using the **Product Availability** job enters data in the correct tables.
-
-To set the parameter, follow these steps.
-
-1. Go to **Retail and Commerce \> Headquarters Setup \> Parameters \> Commerce shared parameters**.
-1. On the **Inventory** tab, in the **Product availability job** section, select **Use optimized process for Product Availability job**. This setting ensures that the optimal feature set is used to calculate the channel's available inventory through the Commerce server.
+Before you use the two APIs that were mentioned earlier, you must enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters.
 
 Before the APIs can calculate the best estimate of inventory availability for an item, a periodic snapshot of inventory availability from Commerce Headquarters must be processed and sent to the channel database that the e-Commerce Commerce Scale Unit uses. The snapshot represents the information that Commerce Headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. It can include inventory adjustments or movements that are caused by inventory receipts, or by shipments or other processes that are performed in Commerce Headquarters and that the e-Commerce channel has information about only because of the synchronization process.
 
@@ -89,20 +84,15 @@ When channel-side calculation is correctly configured and managed, it can provid
 
 ### Get started with POS channel-side calculated inventory availability
 
-To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first make two parameter changes. You must then sync the changes to the channel through the distribution schedule process.
+To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters. In addition to enabling the feature, you must make changes to the **Functionality profile**.
 
-To set the first parameter, follow these steps.
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
-1. On the **Inventory** tab, in the **Product availability job** section, select **Use optimized process for Product Availability job**. This setting ensures that the optimal feature set is used to calculate the channel's available inventory through the Commerce server.
-
-To set the second parameter, follow these steps.
+To change the **Functionality profile**, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select a functionality profile.
 1. On the **Functions** FastTab, in the **Invent availability calculation** section, change the value of the **Invent availability calculation mode** field from **Real time service** to **Channel**. By default, all functionality profiles use real-time service calls. Therefore, you must change the value of this field if you want to use channel-side calculation logic. Every retail store that is linked to the selected functionality profile will be affected by this change.
 
-To update the servers, follow these steps.
+You must then sync the changes to the channel through the distribution schedule process by performing the following steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **1070** (**Channel configuration**) job.

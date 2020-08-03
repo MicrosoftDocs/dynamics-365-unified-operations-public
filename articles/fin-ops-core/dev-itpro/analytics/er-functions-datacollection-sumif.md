@@ -5,7 +5,7 @@ title: SUMIF ER function
 description: This topic provides information about how the SUMIF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,6 +67,8 @@ In the `condition value` argument, the wildcard character **"\*"** can be used t
 ## Example
 
 For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.
+
+For more information and examples about using this function, see [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) and [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example).
 
 ## Additional resources
 

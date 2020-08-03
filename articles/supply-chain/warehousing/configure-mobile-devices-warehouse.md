@@ -229,7 +229,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>
@@ -262,7 +262,7 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
-<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
+<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action Pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
  <tr class="odd">
 <td>Transport loading</td>

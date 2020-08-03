@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/20/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Platform update 25
 
 You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
-> [!NOTE]
+> [!WARNING]
+> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could  cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
+> 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
 ## Preparation steps 
@@ -50,7 +52,12 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    
+    ```
+
+    > [!IMPORTANT]
+    > Self-signed certificates should never be used in production environments. If you're using trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
+
+    ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -93,12 +100,14 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-### Service Fabric with certificates that are not expired
+### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
 
-1. Edit the Clusterconfig.json file. Find the following section in the file.  
+1. Open the **Clusterconfig.json** file for editing, and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.
+
     ```json
     "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
@@ -124,32 +133,33 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     ```json
     "security":  {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
-                                        "ClusterCertificate":  {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ServerCertificate":   {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ClientCertificateThumbprints":  [
-                                                                                                                                                                                           {
-                                                                                "CertificateThumbprint":  "Old client thumbprint",
-                                                                                "IsAdmin":  false
-                                                                            },
-                                                                            {
-                                                                                "CertificateThumbprint":  "New client thumbprint",
-                                                                                "IsAdmin":  true
-                                                                            }
-                                                                          ]
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+										"Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*Old client thumbprint*",
+                                            "IsAdmin":  false
+                                       },
+                                       {
+                                            "CertificateThumbprint": "*New client thumbprint*",
+                                            "IsAdmin":  true
                                        }
-                    },
+                                             ]
+                                   }
+                },
     ```
 
 3. Edit the new and old thumbprint values. 
@@ -191,7 +201,13 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
-## LocalAgent certificate update (if needed)
+## Update the LocalAgent certificate
+
+You must reinstall the LocalAgent if:
+
+- You changed the service fabric cluster/server certificate.
+- You changed the service fabric client certificate.
+- You changed the LocalAgent certificate.
 
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
@@ -216,6 +232,49 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 	- Server certificate thumbprint
 	- Tenant service principle certificate thumbprint
 
+## Update your current deployment configuration
+
+Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the cleanup job will probably fail. (This manual update must be done just this one time.)
+
+1. Open your configuration file. You can find the location of this file by running the following command.
+
+    ```sql
+    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
+    ```
+
+    > [!NOTE]
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS. 
+
+    The beginning of the file should resemble the following example.
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+        "clientCertThumbprint": "Old client thumbprint"
+        }
+    },
+    ```
+
+2. Replace the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "New server thumbprint(Star/SF)",
+        "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
+
+3. Save and close the file. Remember to close any programs that are accessing this network location. Otherwise, the cleanup process might fail.
+
 ## Update deployment settings in LCS
 
 > [!NOTE]
@@ -229,7 +288,7 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. Change the thumbprints to the new ones that you have previously configured (you can find these in the ConfigTemplate.xml file in the InfrastructureScripts folder).
+3. Change the thumbprints to the new thumbprints that you previously configured. (You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.)
 
 	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
@@ -245,7 +304,7 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 7. During the update, the environment will be unavailable.
 
-8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Note that the name of the thumbprint name from Service Fabric Explorer might differ from the names of the thumbprints that are in Lifecycle Services. Despite the differences, the values should be the same.
+8. After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer. The names of the thumbprints in Service Fabric Explorer might differ from the names in LCS. However, the values should be the same.
 
 	Here is an example of how the name of the same thumbprint might differ.
 
@@ -257,4 +316,48 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
-2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired. 
+2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
+
+## <a name="cleanupoldsfcerts"></a>Clean up old Service Fabric certificates
+
+This procedure should be completed either after a successful certificate rotation or before the next certificate rotation.
+
+1. Remove the old/secondary thumbprints from the cluster configuration. After you've removed them, the appropriate section should resemble the following example.
+
+    ```json
+    "security": {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates.
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "server thumbprint(Star/SF)"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+										"Thumbprint": "server thumbprint(Star/SF)"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "client thumbprint",
+                                            "IsAdmin":  true
+                                       }
+                                             ]
+                                   }
+                },
+    ```
+
+1. Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic. 
+
+## <a name="aftercertrotation"></a> After certificate rotation
+
+### Data encryption certificate
+
+This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+
+In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day for three consecutive days. Depending on the amount of data, the batch job might be able to finish running in less time.
+
+> [!WARNING]
+> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.

@@ -5,7 +5,7 @@ title: Product recommendations overview
 description: This topic provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ In e-Commerce, product recommendations are powered by Microsoft Recommendations 
 
 The product recommendations service utilizes artificial intelligence and machine learning (AI-ML) technologies in the following way:
 
-- Data in the format that the Recommendation service requires is extracted from the Commerce operational database and sent to Azure data lake storage (ADLS) or Entity store.
+- Data in the format that the Recommendation service requires is extracted from the Commerce operational database and sent to Azure Data Lake Storage or Entity store.
 - The recommendations service uses the stored data to train recommendation models for the **People also like**, **Frequently bought together**, **New**, **Best selling**, and **Trending** lists.
 
 ## Scenarios
@@ -71,7 +71,7 @@ The following table describes various types of automated product recommendations
 
 ## Additional resources
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 

@@ -5,7 +5,7 @@ title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,11 +38,11 @@ This topic explains how to make product recommendations that are based on artifi
 
 ## Recommendations pre-check
 
-Before enabling, note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage (ADLS). 
+Before enabling, note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage. 
 
 The following configurations must be enabled in the back office before enabling recommendations:
 
-1. Ensure that ADLS has been purchased and successfully verified in the environment. For more information, see [Ensure that ADLS has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
+1. Ensure that Azure Data Lake Storage has been purchased and successfully verified in the environment. For more information, see [Ensure that Azure Data Lake Storage has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
 2. Ensure that the entity store refresh has been automated. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 
@@ -96,7 +96,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 

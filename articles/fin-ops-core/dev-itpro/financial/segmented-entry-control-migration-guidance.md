@@ -230,10 +230,12 @@ public void modified()
 
 **LedgerJournalTable data source**
 
+```xpp
     public void active()
     {
         .parmJournalName(ledgerJournalTable.JournalName);
     }
+```
 
 > [!NOTE]
 > After you've moved all the code out of the **loadSegments()** method, you can delete the method.

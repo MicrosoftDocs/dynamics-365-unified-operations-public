@@ -150,7 +150,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
     In general, this page works and is interacted with in the same way that it works and is interacted with for items that have an associated reservation hierarchy of the "Batch-above\[location\]" type. However, the following exceptions apply:
 
-    - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfilment cycle of the order line, including the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up through invoicing.
+    - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfillment cycle of the order line, including the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up through invoicing.
     - In addition to reserving a specific batch, a user can manually select the batch's specific location and license plate instead of letting the system automatically select them. This capability is related to the design of the order-committed batch reservation mechanism. As was mentioned earlier, when a batch number is reserved for an item under the "Batch-below\[location\]" reservation policy, the system must reserve all dimensions up through location. Therefore, warehouse work will carry the same storage dimensions that were reserved by the users who worked with the orders, and it might not always represent the item storage placement that is convenient, or even possible, for picking operations. If order processors are aware of the warehouse constraints, they might want to manually select the specific locations and license plates when they reserve a batch. In this case, the user must use the **Display dimensions** functionality on the page header, and must add the location and license plate in the grid on the **Overview** FastTab.
 
 6. On the **Batch reservation** page, select the line for batch **B11**, and then select **Reserve line**. There is no designated logic for assigning locations and license plates during automatic reservation. You can manually enter the quantity in the **Reservation** field. Notice that, on the **Batch numbers committed to source line** FastTab, batch **B11** is shown as **Committed**.
@@ -414,7 +414,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the Warehouse Mobile App (WMA) when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
 <li>Select <strong>Suggest</strong>.</li>
 <li>Confirm the new location that is suggested based on batch quantity availability.</li>
 </ol>
@@ -431,7 +431,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the WMA when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
 <li>Manually enter a location.</li>
 </ol>
 </td>
@@ -459,7 +459,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Full</strong> menu item on the WMA when you process picking work.</li>
+<li>Select the <strong>Full</strong> menu item on the warehouse app when you process picking work.</li>
 <li>In the <strong>Pick Qty</strong> field, enter a partial quantity of the required pick to indicate the full capacity.</li>
 </ol>
 </td>
@@ -534,7 +534,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Start a movement on the WMA.</li>
+<li>Start a movement on the warehouse app.</li>
 <li>Enter "from" and "to" locations.</li>
 </ol></td>
 <td>
@@ -650,7 +650,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -679,7 +679,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -703,7 +703,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -729,7 +729,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 </ol>
@@ -742,7 +742,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -766,7 +766,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with automatic reallocation</strong>.</li>
 </ol>

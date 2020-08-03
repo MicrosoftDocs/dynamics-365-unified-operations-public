@@ -48,13 +48,14 @@ These topics describe dual-write integration.
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Supported scenarios for dual-write setup](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
-+ [Initial synchronization choices and administration views](initial-sync.md)
 + Enable dual-write for existing Finance and Operations apps
 
     + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable entity map for dual-write](enable-entity-map.md)
+
++ [Currency data-type migration for dual-write](currrency-decimal-places.md)
 
 ## Managing dual-write after setup
 
