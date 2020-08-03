@@ -61,6 +61,9 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 
+## E-commerce site 
+If a cookie is not an essential cookie, its required for the e-commerce site user to consent before the cookie is tracked. To allow site users to provide cookie consent on the e-commerce site, a [Cookie consent module](add-cookieconsent.md) is provided. The Site author is required to author this module on the page [Header module](author-header-module.md) to ensure the cookie consent is received before the respective module/feature can be used.
+
 ## Additional resources
 
 [Accessibility features and capabilities](accessibility.md)
@@ -70,3 +73,7 @@ The following table shows the current reference list of cookies placed by Dynami
 [Add a privacy policy page](add-privacy-page.md)
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+
+ [Cookie consent module](add-cookieconsent.md) 
+ 
+ [Header module](author-header-module.md)
