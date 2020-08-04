@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Task recorder resources
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to use Task recorder to record business processes.
 
@@ -205,9 +206,6 @@ Additional options are available in version 10.0.13 and later. Here are some exa
 
 - **Enabled**/**Disabled** validates that the targeted control's state is enabled (or disabled), and then uses that validation step to generate an assertion in the test code.
 - **Read-only**/**Editable** validates that the targeted control's state is read-only (or editable), and then uses that validation step to generate an assertion in the test code.
-
-> [!IMPORTANT]
-> Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### Add info step
 
