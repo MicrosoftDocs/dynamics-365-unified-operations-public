@@ -73,7 +73,7 @@ Variables and methods added in extension classes must have a name that is unique
 
 + Create unique and readable names for variables and methods. For example, an approving worker class-level member variable might be named **approvingWorkerForLocalWarehouse** if the area of functionality is related to supporting some local warehouse extension functionality. An **approveWork** method for the same area of functionality might be named **approveWorkForLocalWarehouse**. 
  
-+ When you cannot create a unique and readable name, then add a prefix, term, or an abbreviation at the beginning of the member variable or method name. For example, an approving worker class-level member variable might be named **whsApprovingWorker** if **WHS** is one of the prefixes that is used by other elements in the model. An **approveWork** method might be named **whsApproveWork** if **WHS** is a prefix that is used by other elements in the hosting model. 
++ When you cannot create a unique and readable name, then add a prefix, term, or an abbreviation at the beginning of the member variable or method name. For example, an approving worker class-level member variable might be named **whsApprovingWorker** if **WHS** is one of the prefixes that is used by other elements in the model. An **approveWork** method might be named **whsApproveWork** if **WHS** is a prefix that is used by other elements in the hosting model. 
  
 + Avoid generic names, because the risk is high that multiple extensions could be using the same term or that the base functionality would be enhanced with an identical name in a future release. Some example of names likely to collide are **Approver**, **Delay**, **Group**, **Lookup**, and **Process**.   
 
