@@ -38,8 +38,11 @@ Complete the following steps to enable the Budget proposals feature within Finan
 
 1. After step 1 from *previous page, **Enabled cash flow forecasting**, then go to the **Feature Management** workspace.
 
-  - Click 'Check for updates'.
-  - Search for 'Budget proposal' and enable that feature.
+   - Click 'Check for updates'.
+   - Search for 'Budget proposal' and enable that feature.
 
 2. Open the **Budget proposals** page (**Budgeting > Setup > basic Budgeting > Budget proposal (preview)**). Choose **Enable feature**.
 
+
+#### Privacy notice
+Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
