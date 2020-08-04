@@ -46,15 +46,11 @@ There are several parameters that determine the behavior of Asset leasing capabi
 
 4.	The **Cross-entity batch** parameter determines whether you can post into other legal entities from the current legal entity. If this parameter is enabled, you'll be able to create journal entries for the legal entities that you have access to.
 
-5. Enable the **Short term on index** to classify leases as shor-term after an index revaluation, if the new lease term is less than or equal to the short-term threshold in the book setup.
+5.	Enable the **Allow delete of confirmed leases** field to allow leases with confirmed payment schedules to be deleted. Leases with associated posted or unposted transactions will not be allowed to be deleted, regadless of this option. Once the lease record is deleted, it can't be restored. Any records for the same that are uploaded manually or through data entities are treated as fresh records.
 
-6.	Enable the **Allow delete of confirmed leases** field to allow leases with confirmed payment schedules to be deleted. Once the lease record is deleted, it can't be restored. Any records for the same that are uploaded manually or through data entities are treated as fresh records.
+6. The **Incremental borrowing rate on books** if the transition type of the book is Cumulative Catchup Option A or B, the system will use the Incremental Borrowing Rate at Transition from the Book Setup to populate the Incremental Borrowing Rate field if this parameter is enabled. If this field is set to "No", the Incremental Borrowing Rate on the Book details will be the rate entered on the head lease regardless of the transition type.
 
-7. The **Incremental borrowing rate on books** if the transition type of the book is Cumulative Catchup Option A or B, the system will use the Incremental Borrowing Rate at Transition from the Book Setup to populate the Incremental Borrowing Rate field if this parameter is enabled. If this field is set to "No", the Incremental Borrowing Rate on the Book details will be the rate entered on the head lease regardless of the transition type.
-
-8. Enable the **Short term on adjustment** field to classify leases as short-term after the lease has been adjusted and the new lease term is less than or equal to the short-term threshold in the book setup. If this parameter is disabled, leases won't be classified as short-term after a lease adjustment, regardless of the lease term.	
-
-9.	Enable the **Allow depreciation reversals on closed book version** to allow depreciation expense transactions to be reversed, even when the book is closed.
+7.	Enable the **Allow depreciation reversals on closed book version** to allow depreciation expense transactions to be reversed, even when the book is closed.
  	
  >  [!Note]
  >  We recommend that you keep this field disabled as this serves as a validation and control for not allowing to reverse out a deprecation on a closed book accidently and thus maintain the correct Net book value and future depreciation calculations.
