@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
-description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
+title: Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
+description: This topic lists the features are included in the platform updates for version 10.0.14 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,46 +25,44 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
+ms.search.validFrom: 2020-08-31
+ms.dyn365.ops.version: 10.0.14
 
 ---
-# Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
+# Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.13 of Finance and Operations apps. (These updates were formerly referred to as *Platform update 37*.) This version has a build number of 7.0.5746 and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.14 of Finance and Operations apps. (These updates were formerly referred to as *Platform update 38*.) This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- **Preview release:** July 2020
-- **General availability (self-update):** September 2020
-- **Auto-update:** October 2020
+- **Preview release:** August 2020
+- **General availability (self-update):** October 2020
+- **Auto-update:** November 2020
 
 ## Features included in this release
 
--  Visual Studio tools require Microsoft .NET 4.7.2 runtime<br>- For more information, see 
-[Action required for non-Microsoft managed developer VMs](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
--  Priority-based throttling<br>- For more information, see 
-[Priority-based throttling](../data-entities/priority-based-throttling.md). 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
--  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
-[Saved views](../../fin-ops/get-started/saved-views.md). 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
--  [New grid control - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
-[Grid capabilities](../../fin-ops/get-started/grid-capabilities.md). 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
--  [Upgrade three jQuery components libraries](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
-
--  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
-[Task recorder resources](../user-interface/task-recorder.md#validate). 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
 
 ## Additional resources
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
