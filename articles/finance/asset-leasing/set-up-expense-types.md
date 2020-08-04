@@ -40,8 +40,9 @@ This topoic lists the steps for setting up expense types in Asset leasging. Cost
 
 1. To add an administrative expense type, go to **Asset leasing > Setup > Expense types**.
 2. Click **New** and create the expense type followed by the description in the respective fields.<br>
-   Assign accounts to executory costs <br>
-   Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
+
+# Assign accounts to executory costs <br>
+  Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
 
 1.	Navigate to **Asset leasing > Setup > Asset leasing parameters**.
 2.	Select **Accounts** and open the **Executory costs** drop-down.
