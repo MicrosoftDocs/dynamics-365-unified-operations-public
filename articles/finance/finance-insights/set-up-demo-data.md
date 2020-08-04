@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up demo data for Payment predictions 
-description: This topic lists the steps to complete to set up demo data you can use with Customer payment predictions.  
+description: This topic lists the steps for setting up demo data that you can use with Customer payment predictions.  
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/23/2020
@@ -34,18 +34,18 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-If you're using the Payment predictions capability in Finance Insights, you'll need to set up demo data in addition to the demo data that's included in Dynamics 365 Finance by default. This topic lists the steps to complete to set up demo data you can use with Customer payment predictions.  
+If you're using the Payment predictions capability in Finance Insights, you'll need to set up demo data in addition to the demo data that's included by default with Dynamics 365 Finance. This topic lists the steps for setting up demo data that you can use with Customer payment predictions.  
 
 > [!Note]
-> All demo data is set up for the USMF company. Switch to the USMF company when setting up or using this data. 
+> All demo data is set up for the USMF demo data company. Switch to the USMF company when setting up or using this data. 
 
 ### Create customer records and invoices
 
-1. Be sure that your entity list has been loaded. One way to refresh entity list is to go **Data management -> Framework parameters -> Entity settings**, and then click **Refresh**. This process can run in the background and can take several minutes to complete. 
+1. Be sure that your entity list has been loaded. One way to refresh the entity list is to go **Data management > Framework parameters > Entity settings**, and then click **Refresh**. This process can run in the background and can take several minutes to complete. 
 
 2. Create customers and invoices. Open **Data Management** and import the package from the zip file. The package assumes that system has initial demo data containing things like cash discounts, customers groups, among others. This step adds 10 new customers, as well as approximately 900 invoices across these customers. 
 
-3. Post invoices to customers. The invoices that were imported in the previous steps must be posted. To do so, go to the **Free Text Invoice batch invoicing** page.
+3. Post invoices for the customers that were added. The invoices that were imported in the previous steps must be posted. To do so, open the **Free Text Invoice batch invoicing** page.
 
    In the opened panel click **Records To Include > Filter**. Add list of customers from step 2, separated by commas, into the **Invoice account** field (you can also find the customers entity in the package and obtain the customer IDs from there):
    US-SM1,US-SM2,US-SM3,US-SM4,US-SM5,US-MD6,US-MD7,US-MD8,US-LG9,US-LG10
@@ -62,13 +62,13 @@ If you're using the Payment predictions capability in Finance Insights, you'll n
 ### Pay invoices
 1. Open the **Customer Payment Journal**. Create a new entry, and enter the **CustPay** in the **Name** field. Then click **Journal Batch number**.
 
-2. In opened window put the CUSTOMERACCOUNT value from step 3. In the first column, enter the date for settling from step 4 in the **Date** field that corresponds to this customer.  It's important to enter the correct date. When the date is entered, you can settle transactions. To do so, complete the following steps. 
+2. In opened window put the CUSTOMERACCOUNT value from step 3. In the first column, enter the date for settling from step 4 in the **Date** field that corresponds to this customer. It's important to enter the correct date. When the date is entered, you can settle transactions. To do so, complete the following steps. 
 
-   - Click **Checkmark** in the first column, Mark Selected button, and clear the section of a couple of records randomly (this would become what you will predict). Click **OK** and go back to the payment journal.
+   - Click **Checkmark** in the first column, mark **Selected** button to mark all the records, and then clear the section of a couple of records randomly (this would become what you will predict). Click **OK** and go back to the payment journal.
 
-   - Click **OK** and return to the payment journal. To post this journal, the balance, which is displayed at the bottom of the page, must be zero. Depending on the data that's in your system, the balance might already be zero, However, if it's not, scroll to the right and fill in **Offset Account** and **Method of Payment** fields with values from their drop down menus. When you've finished, click **Post**.
+   - Click **OK** and return to the payment journal. To post this journal, the balance must be zero. (The balance is displayed at the bottom of the page.) Depending on the data that's in your system, the balance might already be zero, However, if it's not, scroll to the right and enter values in the **Offset Account** and **Method of Payment** fields, using the values that are in their drop-down menus. When you've finished, click **Post**.
  
-   - Click **OK** and get back to the payment journal. In order to be able to post this journal the Balance (bottom of the page) has to be zero. Depending on the data you have in the system it might already be zero but if not, scroll all the way to the right and fill in Offset Account and method of Payment with any values from their drop down menus. After that, click **Post**.
+   - Click **OK** and go back to the payment journal. To post this journal the Balance must to be zero. Depending on the data you have in the system it might already be zero but if not, scroll all the way to the right and fill in Offset Account and method of Payment with any values from their drop-down menus. When you've finished, click **Post**.
  
 3. The demo data setup process is now complete and you are ready to use Payment predictions.
 
