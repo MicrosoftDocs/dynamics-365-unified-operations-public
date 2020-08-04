@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance Insights administration (preview)
+title: Finance Insights home page (preview)
 description: This topic walks through the prerequisites and the broad steps required for using a trial version of Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Finance Insights administration (preview)
+# Finance Insights home page (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -100,10 +100,10 @@ After creating a model in the previous step, create a data integrator project to
 When you've completed the configuration steps and set up demo data, you must also enable each of the capabilities that you plan to use, Cash flow forecasts, Customer payment predictions, and Budget proposals. 
 
 ### Enable cashflow forecasting
-Complete the steps described in [Enble Cash flow forecasts](enable-cash-flow-forecasting.md) to enable cashflow forecasting (content at Enable Cashflow forecasting… potentially embed the content).
+Complete the steps described in [Enble Cash flow forecasts](enable-cash-flow-forecasting.md) to build and use a machine learning model along with your organization's data to generate cash flow forecasts.
 
 ### Enable customer payment predictions
-Complete the steps described in []() to configure the required CDS resources (content at Enable Customer Payment Predictions… potentially embed the content).
+Complete the steps described in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to build and use a machine learning model along with your organization's data to generate predictions of when customers are likely to pay outstanding invoices, as well as predictions of when specific invoices are likely to be paid.
   
 ### Enable Budget proposals
 Complete the steps described in [Enable Budget proposals](enable-budget-proposal.md) to use a machine learning model along with your organization's historical data to generate a budget proposal that help you begin your budgeting process with effectiveness than a manual process provides. 
