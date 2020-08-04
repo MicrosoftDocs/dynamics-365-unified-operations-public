@@ -271,3 +271,7 @@ Add Azure Data Lake add-in to the environment using LCS.
    |     CDS   Tenant ID (Directory ID  from AAD)                      |     The   Tenant ID of the CDS instance.     Go   to: **Azure portal > Azure Active Directory > Tenant ID**       |
    |     Provide   user object ID who has system administrator role    |     The   AAD User Object ID of the user in CDS. This user must be a System Administrator of the CDS instance  **Azure Active directory > Users > select your user > Identity > Object   ID**      |
    |     Is this the default CDS environment for the tenant?         |     If the CDS instance was the first production instance created, Click the checkbox. If the CDS instance was created manually, clear the checkbox.                                                  |
+
+
+#### Privacy notice
+Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
