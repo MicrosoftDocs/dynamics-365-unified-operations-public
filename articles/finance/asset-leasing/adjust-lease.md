@@ -40,7 +40,7 @@ The topic lists the steps for adjusting a lease, which might necessary if the le
 
 IFRS 16 states that a lessee must revalue the lease liability to reflect changes to the lease payments (Paragraph 39).
 
-For both ASC 842 and IFRS 16 users, the lease is remeasured to reflect the change in the present value of [future?] minimum lease payments (PVFMLP). If there is an increase to the PVFMLP, the journal entry created will be a debit to the right-of-use asset (ROU) and a credit to the lease liability for the difference between the new PVFMLP and prior PVFMLP. A decrease in the present value of future minimum lease payments will debit the lease liability and credit the right-of-use asset for the difference.
+For organizations that adhere to ASC 842 or IFRS 16, the lease is remeasured to reflect the change in the present value of [future?] minimum lease payments (PVFMLP). If there is an increase to the PVFMLP, the journal entry created will be a debit to the right-of-use asset (ROU) and a credit to the lease liability for the difference between the new PVFMLP and prior PVFMLP. A decrease in the present value of future minimum lease payments will debit the lease liability and credit the right-of-use asset for the difference.
 
 Should the adjustment decrease the ROU asset past 0, the remainder will be credited to the gain on lease modification posting account specified on the **Lease posting accounts** page. The system accounts for these transactions and other adjustment entries such as classification changes, initial direct costs, lease incentives, prepayments, and dismantling costs arising from lease modifications.
 
@@ -57,15 +57,16 @@ For example, if the lessor provides a $1,000 incentive for signing into a lease 
 1.	The payment schedule lines of the adjusted lease should be created on a prospective basis, meaning they cannot start before the lease modification takes effect.
 2.	The steps that follow are nearly identical to initially recognizing a lease. Select **Create schedules** to generate the adjusted payment schedule. Once clicked, a notification will show that the payment schedule has been created for that lease.
 
-Note: Before clicking **Create Schedules**, ensure that the **Modification Date** and **Payment schedule lines** are accurate. Also ensure the Initial direct costs, Lease incentives, Prepayments, or Dismantling costs all correspond with only those costs arising from adjustment.
+   > [!Note]
+   > Before clicking **Create Schedules**, ensure that the **Modification Date** and **Payment schedule lines** are accurate. Also ensure the Initial direct costs, Lease incentives, Prepayments, or Dismantling costs all correspond with only those costs arising from adjustment.
 
 1.	To view the newly created Payment schedule, select **Books** and navigate to the **Payment schedule**.
 2.	The **Payment schedule** will open, and the user can edit the adjusted payment amounts and payment reasons before confirming the schedule by clicking **Confirm schedule**. 
 
    When confirmed, the new asset depreciation and new lease liability schedules will be created.
 
-3.	To view the new lease liability amortization schedule generated from the new inputs, exit the Payment Schedule and navigate to **Liability amortization schedule**.
-4.	To view the newly generated asset depreciation schedule, navigate to **Asset depreciation schedule** from the **Book details** page.
+3.	To view the new lease liability amortization schedule generated from the new inputs, exit the **Payment Schedule** page and navigate to **Liability amortization schedule**.
+4.	To view the newly generated asset depreciation schedule, open the **Asset depreciation schedule** from the **Book details** page.
 5.	To generate the adjustment journal entry, select **Function > Lease adjustment**.
 6.	A message will appear notifying the user that the adjustment journal entry has been created. To view the journal entry, click **Journals > General Journals**.
 7.	To post the journal entry, select the line and click **Post**.
