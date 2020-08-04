@@ -5,7 +5,7 @@ title: Company concept in Common Data Service
 description: This topic describes the integration of company data between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,15 +86,15 @@ There are several ways to auto-populate the company name in customer engagement 
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
 
-+ If you have **Write** access on **SystemUser** entity for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop down.
++ If you have **Write** access to the **SystemUser** entity for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop-down menu.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
 
-+ If you have **Write** to data in more than one company, then you can change the default company by choosing a record that belongs to different company.
++ If you have **Write** access to data in more than one company, then you can change the default company by choosing a record that belongs to different company.
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Choosing a record changes the default company.":::
 
-+ If you are a system configurator or administrator, and you want to autopopulate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
++ If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
 
     + **OnLoad** event for the form : set the **defaultCompany** field.
     + **OnChange** event for the **Company** field : set the **updateDefaultCompany** field.
