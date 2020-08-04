@@ -261,4 +261,4 @@ export interface IExperimentationListener {
 
 ## Additional resources
 
-[TBD]()
+[Online channel extensibility overview](overview.md)
