@@ -100,7 +100,7 @@ When you turn on the version dimension, some functionality could become broken o
 When you're testing your solutions for compatibility with the version dimension, look for the following elements:
 
 1. **Functionality:** Most importantly, any customizations that involve the inventory dimensions must be assessed to ensure that they can work in conjunction with the version dimension.
-1. **References to the inventory dimensions:** Look out for references to the inventory dimensions (that is, places where the dimensions are referenced specifically). References to `InventDimId` should work out of the box, but look out for references to style or color. For example, be sure to check the following elements:
+1. **References to the inventory dimensions:** Look out for references to the inventory dimensions (that is, places where the dimensions are explicitly referenced). References to `InventDimId` should work out of the box, but look out for references to style or color. For example, be sure to check the following elements:
 
     - API calls in extended classes
     - All references to specific inventory dimensions in extension code (This code must float the version dimension together with the style, color, and size dimensions.)
@@ -140,7 +140,7 @@ In addition, the order creation and order processing features in Commerce (for e
 
 ### Functional characteristics of the version dimension
 
-The version dimension works like the other product dimensions. However, because of its specific nature, and because it's intended to maintain and track multiple versions of a product, it behaves slightly differently. Here are some of the differences:
+The version dimension works like the other product dimensions. However, because of its specific nature, and because it's intended to maintain and track multiple versions of a product, it behaves slightly differently. Here are some of the differences and similarities:
 
 - **There is no version group.**
 
