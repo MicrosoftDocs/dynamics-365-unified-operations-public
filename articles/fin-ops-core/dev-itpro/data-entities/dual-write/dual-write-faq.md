@@ -93,57 +93,59 @@ You can find basic filtering examples in [Filter your data](customizing-mappings
 
 You can find more advanced examples for Common Data Service in [Filter results](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results). Nested lookup is not supported in dual-write source filter. Only [standard filter operators](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) directly against entity fields are supported.
 
-More advanced Finance and Operations filters can be found using [Using Expressions in Query Ranges](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/using-expressions-in-query-ranges) & [Advanced filtering and query syntax](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
+More advanced Finance and Operations filters can be found using [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) & [Advanced filtering and query syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
 
-### With Dual write live sync introducing tight coupling across Dynamics applications. What is the impact to user experience of one side fails, will the other side fail too?
+### Dual-write live sync introduces tight coupling across applications. What happens if one side fails? Will the other side fail, too?
 
-When integration is in live sync mode, user will see error and if one side fails and other side will fail. When integration is paused, changes will be staged and will be written once the target system is up and running. You can find more details about automatically pausing integrations [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/errors-and-alerts#alert-notifications)
+When integration is in live sync mode, you will see an error and if one app fails, and the other app will fail, too. When integration is paused, changes are staged and are written once the target system is up and running. For more information about automatically pausing integrations see [Alert notifications](errors-and-alerts.md#alert-notifications)
 
-### When data flow is paused and then resumed, does it follow the sequence of changes? E.g. customer name changes in Finance and Operations from A to B, and then to C. Will CE show all changes, or will it just show A to C?
+### When live sync is paused and then resumed, does it follow the sequence of changes? For example, if the **Name** field changes in the Finance and Operations app from **NameA** to **NameB** to **NameC**, does the customer engagement data change from **NameA** to **NameB** to **NameC**, or **NameA** to **NameC**?
 
-It follows sequence of changes. In the above example  changes A,B,C will be synched in sequence
+The integration follows the complete sequence of changes. In the above example, the customer engagement app data would change from **NameA** to **NameB** to **NameC**.
 
-### How does Dual-write work after a Disaster Recovery event? Does it automatically work with the secondary instance that deployed on the secondary azure region?
+### How does dual-write work after a Disaster Recovery event? Does it automatically work with the secondary instance that deployed on the secondary Azure region?
 
-In case of a failover event, Dual-Write solution will continue working as it is once the failover transition is completed.
-After failover transition is completed, Dual write solution will continue to work as it is, as long as both Finance and Operations apps environment and Common Data Service environment are accessible. Finance and Operations apps environment and Common Data Service environment will adhere to standard failover process.
-You can find the documentation around system availability [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview#availability).
+In a failover event, dual-Write continues working after the failover transition finishes, if both the Finance and Operations environment and Common Data Service environment are accessible. Finance and Operations environments and Common Data Service environments adhere to the standard failover process. For more information about system availability, see [Cloud deployment overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview#availability).
 
-### How do you deal with a Finance and Operations apps database transfer from PROD to STAGE? What will be the effect from dual write point of view? After this process, the systems are not in sync anymore. Is the sync done automatically?
+### How we handle a Finance and Operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are not in sync anymore. Is the sync done automatically?
 
-Today this is a manual process of unlinking and linking the refreshed environments.
-Dual write does not have APIs for these steps yet, otherwise this could be orchestrated hands-free with using LCS APIs followed by Dual write APIs.
+The transfer is a manual process of unlinking and linking the refreshed environments. Dual-write does not have APIs for these steps, otherwise this could automated in LCS by using LCS APIs and dual-write APIs.
 
-### How to move some entities or scenarios from DI to DW set up just because of they need real time integration, and implications of changing pattern (I referred this as cutover)?
+### We need real-time integration and want to move some entities or scenarios from Data integrator to dual-write. How do we migrate and what are the implications of changing our integration pattern? 
 
-Migration path for Prospect to cash scenarios already documented [here](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024)
-In general, the migration consists of 3 possible changes: 1) Manual maps migration from DI to DW , 2) Possible entity changes (Due to absence of advanced query capabilities) and 3) Possible data migration due to adapting to new concepts such as Company striping.
+For information on migrating Prospect to Cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, there three things that might change during migration.
 
-### Can I develop unbounded fields on Finance and Operations data entities to flow to Common Data Service via DW?
++ Manually migrating the maps from Data integrator to dual-write.
++ Entity changes, due to absence of advanced query capabilities.
++ Data migration, due to adapting to new concepts such as company striping.
 
-Yes. Both [computed and virtual fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields) can be used, but you should pay special attention to performance overhead from additional X++ logic required for reads/write. Also roundtripping within the same transaction is not allowed, so avoid using virtual fields to transform / calculate additional values through X++ and expect that to go back to Common Data Service within same transaction.
+### Can I develop unbounded fields on Finance and Operations data entities that flow to Common Data Service by using dual-write?
 
-### With Common Data Service offline app, What if it is not possible to update the 'other' side after reconnecting? Would that cause incorrect state between Common Data Service and Finance and Operations
+Yes. You can use both [computed and virtual fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields), but you should monitor the performance overhead from the additional X++ logic required for reads and write. Round-tripping within the same transaction is not allowed, so avoid using virtual fields to transform or calculate additional values through X++. You should expect that to go back to Common Data Service within the same transaction.
 
-Users can access Common Data Service data offline either via using Common Data Service applications or through using Field Service Mobile app. In both options, data will be kept offline, and it can be synced with the server in user's discretion. In case of any issues when the offline data is being synced with the server and updates cannot be performed because other end of Dual write is failing the error can be handled by utilizing conflict management settings in both options. For more details about different conflict management settings, see [Common Data Service conflict management settings](https://docs.microsoft.com/en-us/dynamics365/mobile-app/setup-mobile-offline-for-admin#step-23-set-conflict-detection-for-mobile-offline) and [Resco conflict resolution settings](https://docs.resco.net/wiki/Conflict_resolution).
+### With the Common Data Service offline app, what if it is not possible to sync the data after reconnecting? Would that lead to an inconsistent state between the Common Data Service environment and the Finance and Operations environment?
+
+You can access Common Data Service data offline by using Common Data Service applications by using the Field Service mobile app. In both cases, data is stored offline, and it can be synced with the server at your direction. If there are errors when the offline data is synced with the server, and updates cannot be performed because the other environment is failing, then you can handle the error by using conflict management settings. For more details about different conflict management settings, see [Common Data Service conflict management settings](https://docs.microsoft.com/en-us/dynamics365/mobile-app/setup-mobile-offline-for-admin#step-23-set-conflict-detection-for-mobile-offline) and [Resco conflict resolution settings](https://docs.resco.net/wiki/Conflict_resolution).
 
 ## Mapping concepts between apps
 
-### How are the numbers sequences handled? For instance, customer account in Finance and Operations apps is auto generated and customer account in CE is manual
+### How are number sequences handled? For example, the customer account number in Finance and Operations apps is autogenerated and in customer engagement apps it's manual.
 
-Number sequences for Finance and Operations apps and Common Data Service apps are not connected. In a multi mastered entity scenario, plan for separate number sequence format or range per app, such as:
-+ F0001,F0002 in Finance and Operations apps and C0001, C0002 in Common Data Service, OR
-+	US0001 to US4999 in Finance and Operations apps and US5000 to US9999 in Common Data Service.
-If entity is solely created in one system, then number sequencing needs setup in source only. You can refer to [Common Data Service autonumbering features](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/autonumber-fields) for more details.
+Number sequences for Finance and Operations apps and customer engagement apps are not connected. In a multi-mastered entity scenario, you must plan for separate number sequence formats or create a range per app. Here are some examples:
 
-### Can we map Common Data Service company specific entity with an Finance and Operations global entity or vice versa?
++ In the Finance and Operations app, use **F0001, F0002, ...**. In the customer engagement app, use **C0001, C0002, ...**.
++ In the Finance and Operations app, use **US0001 to US4999**. In the customer engagement app, use **US5000 to US9999**.
 
-Dual-write only supports mapping between cross-company entities or company-specific entities from both sides.
+If entity is created in only one system, then set up the number sequence in only the source app. For more details, see [Autonumber fields](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/autonumber-fields).
 
-### How can I make Common Data Service entity company specific?
+### Can we map company-specific entity in a customer engagement app with a global entity in a Finance and Operations app, or vice-versa?
 
-Common Data Service custom entities can be made company specific by simply adding a M-1 relationship between your custom entities and our standard company entity. You should also include the company FK as part of the entity key. You can find full documentation of company concept [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/company-data)
+Dual-write supports only mapping between cross-company entities or company-specific entities from both sides.
 
-### Is there a document on best practice entity usage? Should I use Customers V2, Customers V3, Customer Details? What is the difference and use case for each?
+### How do I make an company-specific entity in Common Data Service?
 
-You should leverage the [out-of-the-box scenarios](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) where possible, as it already covers common scenarios such as customer / vendor integration.
+Common Data Service custom entities can be made company specific by adding a M-1 relationship between your custom entities and the out-of-the-box standard company entity. You should also include the company foreign key as part of the entity key. For more information, see [Company concept in Common Data Service](company-data.md)
+
+### Is there a document on best practices for entity usage? Should I use Customers V2, Customers V3, Customer Details? What is the difference and use case for each?
+
+You should use the [out-of-the-box scenarios](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) if possible, because they cover common scenarios like customer/vendor integration.
