@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Turn on and use Customer payment predictions (preview)
+title: Enable Customer payment predictions (preview)
 description: This topic describes the steps for turning on and configuring the Customer payment predictions feature.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Turn on and use Customer payment predictions (preview)
+# Enable Customer payment predictions (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
