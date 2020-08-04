@@ -120,3 +120,5 @@ Follow the guides at <TBD> to understand and improve the initial payment predict
 ### Provide feedback to Microsoft
 Part of your commitment as part of this preview program is to provide feedback to Microsoft.  Please complete the relevant portions of <TBD>.  Multiple users at your company can fill out the survey if they have participated in any step of the process or evaluated the feature. The steps to complete are lised in the [Setting up Finance Insights](https://microsoft.sharepoint.com/:w:/t/AIforOAG/EXwSu5F8R2VLvYcjp20ct_oBmoZXpqz0l9L1OcaNoyPNrA?e=tLBOjI) document. 
 
+#### Privacy notice
+Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
