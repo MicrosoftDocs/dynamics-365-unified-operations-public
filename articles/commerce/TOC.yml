@@ -2026,6 +2026,10 @@
           items:
           - name: Script injectors
             href: e-commerce-extensibility/script-injector.md
+        - name: Connectors
+          items:
+          - name: Configure and enable connectors
+            href: e-commerce-extensibility/connectors.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger
