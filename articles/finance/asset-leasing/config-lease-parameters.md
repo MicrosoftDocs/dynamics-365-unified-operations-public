@@ -50,9 +50,9 @@ There are several parameters that determine the behavior of Asset leasing capabi
 
 6. The **Incremental borrowing rate on books** if the transition type of the book is Cumulative Catchup Option A or B, the system will use the Incremental Borrowing Rate at Transition from the Book Setup to populate the Incremental Borrowing Rate field if this parameter is enabled. If this field is set to "No", the Incremental Borrowing Rate on the Book details will be the rate entered on the head lease regardless of the transition type.
 
-7.	Enable the **Allow depreciation reversals on closed book version** to allow depreciation expense transactions to be reversed, even when the book is closed.
+7.	Enable the **Allow depreciation reversals on closed book version** to allow depreciation expense transactions to be reversed, even when the book version is closed.
  	
  >  [!Note]
- >  We recommend that you keep this field disabled as this serves as a validation and control for not allowing to reverse out a deprecation on a closed book accidently and thus maintain the correct Net book value and future depreciation calculations.
+ >  We recommend that you keep this field disabled as this serves as a validation and control for not allowing to reverse out a deprecation on a closed book version accidently and thus maintain the correct Net book value and future depreciation calculations.
 
 
