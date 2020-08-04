@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up demo data for Payment predictions 
-description:  
+description: This topic lists the steps to complete to set up demo data you can use with Customer payment predictions.  
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/23/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-If you're using the Payment predictions capability in Finance Insights, you'll need to set up demo data in addition to the demo data that's included in Dynamics 365 Finance by default. Complete the following steps to set up demo data for Payment predictions. 
+If you're using the Payment predictions capability in Finance Insights, you'll need to set up demo data in addition to the demo data that's included in Dynamics 365 Finance by default. This topic lists the steps to complete to set up demo data you can use with Customer payment predictions.  
 
 > [!Note]
 > All demo data is set up for the USMF company. Switch to the USMF company when setting up or using this data. 
@@ -64,11 +64,13 @@ If you're using the Payment predictions capability in Finance Insights, you'll n
 
 2. In opened window put the CUSTOMERACCOUNT value from step 3. In the first column, enter the date for settling from step 4 in the **Date** field that corresponds to this customer.  It's important to enter the correct date. When the date is entered, you can settle transactions. To do so, complete the following steps. 
 
- - Click on **Checkmark** in the first column, Mark Selected button, and clear the section of a couple of records randomly (this would become what you will predict). Click **OK** and go back to the payment journal.
+   - Click **Checkmark** in the first column, Mark Selected button, and clear the section of a couple of records randomly (this would become what you will predict). Click **OK** and go back to the payment journal.
 
- - Click **OK** and return to the payment journal. To post this journal, the balance, which is displayed at the bottom of the page, must be zero. Depending on the data that's in your system, the balance might already be zero, However, if it's not, scroll to the right and fill in **Offset Account** and **Method of Payment** fields with values from their drop down menus. When you've finished, click **Post**.
+   - Click **OK** and return to the payment journal. To post this journal, the balance, which is displayed at the bottom of the page, must be zero. Depending on the data that's in your system, the balance might already be zero, However, if it's not, scroll to the right and fill in **Offset Account** and **Method of Payment** fields with values from their drop down menus. When you've finished, click **Post**.
  
- - Click **OK** and get back to the payment journal. In order to be able to post this journal the Balance (bottom of the page) has to be zero. Depending on the data you have in the system it might already be zero but if not, scroll all the way to the right and fill in Offset Account and method of Payment with any values from their drop down menus. After that, click **Post**.
+   - Click **OK** and get back to the payment journal. In order to be able to post this journal the Balance (bottom of the page) has to be zero. Depending on the data you have in the system it might already be zero but if not, scroll all the way to the right and fill in Offset Account and method of Payment with any values from their drop down menus. After that, click **Post**.
  
 3. The demo data setup process is now complete and you are ready to use Payment predictions.
 
+#### Privacy notice
+Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
