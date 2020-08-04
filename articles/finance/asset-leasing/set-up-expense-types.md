@@ -45,15 +45,15 @@ This topoic lists the steps for setting up expense types in Asset leasging. Cost
   Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
 
 1.	Navigate to **Asset leasing > Setup > Asset leasing parameters**.
-2.	Select **Accounts** and open the **Executory costs** drop-down.
+2.	Select **Accounts** and open the **Executory costs** fast tab.
 3.	Select the **Expense type** and click **Add**.
 4.	Select the book type to be tied to the administrative, or executory, costs from the **Book type** drop-down.
 
 > [!Note]
-> Multiple book types can be linked to the same expense.
+> Multiple book types can be linked to the same expense account.
 
-1. Decide whether to have the book be applied to all leases (All), a specific group of leases (Group), or a specified lease or leases (Table) by using the Account code drop-down. If group or table is selected, an Account/Group number must be chosen from the adjacent drop-down.
-2. Select the respective Finance lease main account and Operating lease main account from the appropriate drop-downs.
+5. Decide whether to have the book be applied to all leases (All), a specific group of leases (Group), or a specified lease or leases (Table) by using the Account code drop-down. If group or table is selected, an Account/Group number must be chosen from the adjacent drop-down.
+6. Select the respective Finance lease main account and Operating lease main account from the appropriate drop-downs.
 
 When the preceding steps have been complete, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease, or when creating a lease.
 
