@@ -798,6 +798,8 @@
           href: asset-leasing/record-rou-asset-depreciation.md
         - name: Reverse posted lease transactions 
           href: asset-leasing/reverse-posted-lease-trans.md
+        - name: Adjust a lease 
+          href: asset-leasing/adjust-lease.md
     - name: General ledger
       items:
       - name: General ledger overview
