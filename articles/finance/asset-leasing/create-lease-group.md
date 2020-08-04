@@ -40,7 +40,7 @@ Lease groups are a mandatory field when creating a lease as it determines the de
 
 1. To create a lease book, go to **Asset leasing > Setup > Lease groups**.
 2. To add a lease group, click on the **New** button in the action pane. A new line will add to the lease group grid.
-3. In the **Name** field, enter a value
+3. In the **Lease group** field, enter a value
 4. In the **Description** field, enter a value
 
 The information added in the preceding steps will be added to the **Lease group** drop-down list on the **Add lease** page.
