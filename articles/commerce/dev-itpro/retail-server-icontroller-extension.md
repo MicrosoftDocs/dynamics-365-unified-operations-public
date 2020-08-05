@@ -188,41 +188,39 @@ The following illustration shows the class structure of the extension.
 10. In Microsoft Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
 11. To verify that the extension loaded successfully, you can browse the Retail Server metadata. Confirm that your entities and methods appear in the list. To browse the metadata, open a URL in the following format in a web browser:
 
-    https://RS-URL/Commerce/$metadata
+    **https://RS-URL/Commerce/$metadata**
 
 12. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
-    Extension no need to add/include any EdmModelExtender files with the RS extensions APIs. This is required only if you are using Retail SDK version 10.0.10 or lower.
+    You don't need to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you are using Retail SDK version 10.0.10 or earlier.
 
-    **Retail server extension built using this new Microsoft.Dynamics.Commerce.Hosting.Contracts can be used in offline, no need to generate separate C# proxy libraray. Drop the Retail server extension library in …\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext folder and update the RetailProxy.MPOSOffline.ext config file to include this new library, extension have to generate only the Typescript proxy (SDK samples can be found in …\RetailSDK\SampleExtensions\TypeScriptProxy).**
+    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+
+    The following example shows how to update the **RetailProxy.MPOSOffline.ext** config file.
 
     ```xml
     <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
     ```
 
     ![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
-    
+
 ## Generate the Typescript proxy for POS
 
-1.	Open the Sample proxy template project from …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj in Visual studio 2017 and rename it if required.
-2.	Add the Retail server extension project as a project reference project to this proxy template project. Remove the existing StoreHoursSample project reference.
-3.	Right click the Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj  and Select Edit Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj.
-4.	Under the <RetailServerExtensionAssemblies> node specify your extension Retail server assembly name.
+1. Open the sample proxy template project from **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** in Visual Studio 2017. Rename it if required.
+2. Add the Retail Server extension project as a project reference project to this proxy template project. Remove the existing **StoreHoursSample** project reference.
+3. Right click the **Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** and select **Edit Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj**.
+4. Under the **\<RetailServerExtensionAssemblies\>** node, specify your extension Retail Server assembly name. The following example shows how to add the assembly name.
 
-```XML
-Ex:
-  <ItemGroup>
-    <RetailServerExtensionAssemblies Include="..\..\RetailServer\Extensions.Sample\bin\$(Configuration)\net461\$(AssemblyNamePrefix).RetailServer.Extension.Sample.dll" />
-  </ItemGroup>
-```
+    ```xml
+      <ItemGroup>
+        <RetailServerExtensionAssemblies Include="..\..\RetailServer\Extensions.Sample\bin\$(Configuration)\net461\$(AssemblyNamePrefix).RetailServer.Extension.Sample.dll" />
+      </ItemGroup>
+    ```
 
-5.	Under the Copy node Update the DestinationFolder path to your POS extension folder, so that generated proxy files are copied to the POS Extension folder automatically. 
-The generated proxy files will also be copied to …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\DataService.
+5.  Under the **Copy** node, update the **DestinationFolder** path to your POS extension folder, so that generated proxy files are copied to the POS Extension folder automatically. The generated proxy files will also be copied to **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService**. The following example shows how to update the path.
 
-```XML
-Ex: 
-<Copy SourceFiles="@(GeneratedDataServiceContracts)" DestinationFolder="$(SdkRootPath)\POS\Extensions\Sample\DataService" SkipUnchangedFiles="true" />
-```
+    ```xml
+    <Copy SourceFiles="@(GeneratedDataServiceContracts)" DestinationFolder="$(SdkRootPath)\POS\Extensions\Sample\DataService" SkipUnchangedFiles="true" />
+    ```
 
-6.	After the changes build the proxy project to generate the typescript proxy files. Once the build is completed the proxy files will be available in the …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\DataService folder and the folder mentioned in the copy command (The path/folder path may vary based on the folder structure).
-
+6. After the changes are complete, build the proxy project to generate the typescript proxy files. When the build is completed the proxy files are available in the **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService** folder and the folder specified in the **Copy** command. The path and folder path can vary based on the folder structure.
