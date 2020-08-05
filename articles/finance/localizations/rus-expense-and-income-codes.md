@@ -65,24 +65,24 @@ Create an expense or income code
 
 >   **Note:** You can select registers only for codes that aren't parent codes.
 
->   In the **Available registers** section, select the registers, and then
->   select the right arrow button to move them to the **Selected registers**
->   section.
+   In the **Available registers** section, select the registers, and then
+   select the right arrow button to move them to the **Selected registers**
+   section.
 
-Alternatively, on the Action Pane, select **Default \> Default**. In this case,
-the system automatically suggests registers and moves them to **Selected
-registers** section. A register will be suggested for an income or expense code
-in the following situations:
+   Alternatively, on the Action Pane, select **Default \> Default**. In this case,
+   the system automatically suggests registers and moves them to **Selected
+   registers** section. A register will be suggested for an income or expense code
+   in the following situations:
 
--   The income or expense code, or its parent code, was selected in the register
-    settings.
+    -   The income or expense code, or its parent code, was selected in the register
+        settings.
 
--   The income or expense code, or its parent code, was used in the sequence of
-    calculation for rated expense register settings.
+    -   The income or expense code, or its parent code, was used in the sequence of
+        calculation for rated expense register settings.
 
--   The register is preconfigured so that it's used by default when totals are
-    calculated for the expense or income code. You can find an example list of
-    expense and income codes in the **RUMF** legal entity.
+    -   The register is preconfigured so that it's used by default when totals are
+        calculated for the expense or income code. You can find an example list of
+        expense and income codes in the **RUMF** legal entity.
 
 7.  On the Action Pane, select **Ledger account setup** to select the ledger
     accounts that transactions will be assigned to for the income or expense
