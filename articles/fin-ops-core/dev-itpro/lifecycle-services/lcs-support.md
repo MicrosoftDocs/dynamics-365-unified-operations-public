@@ -62,7 +62,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 </tr>
 <tr class="even">
 <td>Get in-app support.</td>
-<td>Select the <strong>Help</strong> option (<strong>?</strong>) in the upper-right of the app. Select <strong>Support</strong>. Issues that you log here are reported on the <strong>Active issues</strong> tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft.</td>
+<td>Select the <strong>Help</strong> option (<strong>?</strong>) in the upper-right of the app. Select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft.</td>
 </tr>
 <tr class="odd">
 <td>Open a support ticket with the Support team.</td>
