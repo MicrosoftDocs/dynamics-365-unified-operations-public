@@ -40,7 +40,7 @@ We've compiled a list of frequently asked questions and provided brief answers t
 
 ### Is dual-write available for Government Community Cloud (GCC)?
 
-Not yet. Dual-write requires that the Finance and Operations apps environment and and the Common Data Service environment be in the same tenant. That is, dual-write doesn’t support linking a Finance and Operations apps and Common Data Service across two different tenants. Because Finance and Operations apps are not available in GCC, you can't have both environments in GCC. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-us-government).
+Dual-write isn't supported in GCC cloud yet. It will be made available once Finance & Operations goes live in GCC cloud. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-us-government).
 
 ### If I don't have a license for Dynamics 365 Sales or Dynamics 365 Field Service, but I want to have the sales order data in Common Data Service, can I do it without buying a license?
 
@@ -57,11 +57,11 @@ This makes more sense in the context of initial sync. Tne system provides relate
 
 ### Do application users need to have any special permissions to enable or configure dual-write?
 
-Dual-write setup requires 2 Azure AD applications setups in for the Finance and Operations app and that application users are setup in Common Data Service. These application users should contain the appropriate application IDs. For the connection to work properly, you need to give these application the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites#verify-requirements-and-grant-access).
+Dual-write setup requires two Azure Active Directory (AD) applications setup for the Finance and Operations environment and two app application users need to be setup in Common Data Service environments. These application users should contain the appropriate application IDs. For the connection to work properly, you need to give these application the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites#verify-requirements-and-grant-access).
 
 ### I have multiple legal entities and some of my maps are specific per legal entity, or they are valid for only some of the legal entities. What is the best way to address this requirement? Can we apply a filter, for example, **Company = USMF** to address this?
 
-It is not possible to map entity maps applicable to specific legal entity. Legal entity mapping can be done when the linking Common Data Service environment.
+Legal entity mapping can be done when linking the Common Data Service environment. It is not possible to map entity maps to a specific legal entity.
 
 ### Can we use both data integrator and dual-write at the same? If yes, does it cause any referential integrity issues?
 
@@ -69,7 +69,7 @@ You can't run dual-write and the [Prospect to cash solution](https://docs.micros
 
 ### If dual-write solutions are installed in Common Data Service, can I uninstall them?
 
-These are managed solutions. Uninstalling and reinstalling a managed solution is practically never an option when the solution contains entities or attributes. This is because data is lost when entities are deleted. For more information see [Maintain managed solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions which can be uninstalled. However keep in mind that when a managed solution is uninstalled all components in the solution including data that is stored in these components get deleted. For more information see [Maintain managed solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### Suppose that we have data in both a customer engagement app and a Finance and Operations app, and we bootstrap our existing data in the customer engagement app. If our data is not currently aligned, can we specify a master source for the initialization run so that all differences are applied to the target?
 
@@ -82,6 +82,8 @@ After the bootstrapping is done, you can configure the initial sync to apply dif
 The integration key is the natural key which uniquely identifies records. Integration keys are only required for Common Data Service entities, and you can manually created one within dual-write. It can also be automatically created from the entity's alternate keys, if one is already provided for an entity. Integration keys are used for the same purpose of alternate keys, to provide an efficient and accurate way of integrating data with external systems. It’s essential in cases when an external system doesn’t store the Globally Unique Identifier (GUID) IDs that uniquely identify records in Common Data Service.
 
 Dual-write uses integration keys to uniquely identify records using one or more entity field values that represent a unique combination. For example, to identify an account record with an integration key, you can use the account number or the account number field in combination with some other fields which have values that should not change. For more information, see [Define alternate keys using Power Apps portal](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal.md).
+
+It is important to ensure keys are matched on Finance and Operations and Common Data Service environments, otherwise it might cause problems in the initial sync phase.
 
 ### How do I move entity maps between environments? Is version control supported for entity maps?
 
@@ -97,7 +99,7 @@ More advanced Finance and Operations filters can be found using [Using Expressio
 
 ### Dual-write live sync introduces tight coupling across applications. What happens if one side fails? Will the other side fail, too?
 
-When integration is in live sync mode, you will see an error and if one app fails, and the other app will fail, too. When integration is paused, changes are staged and are written once the target system is up and running. For more information about automatically pausing integrations see [Alert notifications](errors-and-alerts.md#alert-notifications)
+When integration is in live sync mode, you will see an error and if one app fails, the other app will fail too. When integration is paused, changes are staged and are written once the target system is up and running. For more information about automatically pausing integrations see [Alert notifications](errors-and-alerts.md#alert-notifications)
 
 ### When live sync is paused and then resumed, does it follow the sequence of changes? For example, if the **Name** field changes in the Finance and Operations app from **NameA** to **NameB** to **NameC**, does the customer engagement data change from **NameA** to **NameB** to **NameC**, or **NameA** to **NameC**?
 
@@ -113,7 +115,7 @@ The transfer is a manual process of unlinking and linking the refreshed environm
 
 ### We need real-time integration and want to move some entities or scenarios from Data integrator to dual-write. How do we migrate and what are the implications of changing our integration pattern? 
 
-For information on migrating Prospect to Cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, there three things that might change during migration.
+For information on migrating Prospect to Cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, there are three things that might change during migration.
 
 + Manually migrating the maps from Data integrator to dual-write.
 + Entity changes, due to absence of advanced query capabilities.
