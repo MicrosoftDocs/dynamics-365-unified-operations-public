@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.11
 
 ---
 
-# Create a new Retail Server extension API
+# Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)
 
 [!include [banner](../includes/banner.md)]
 
