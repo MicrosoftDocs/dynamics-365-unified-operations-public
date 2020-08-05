@@ -800,6 +800,10 @@
           href: asset-leasing/reverse-posted-lease-trans.md
         - name: Adjust a lease 
           href: asset-leasing/adjust-lease.md
+        - name: Impair a right-of-use asset
+          href: asset-leasing/impair-rou-asset.md
+        - name: Associate a lease with a fixed asset          
+          href: asset-leasing/associate-lease-with-fixed-asset.md          
     - name: General ledger
       items:
       - name: General ledger overview
