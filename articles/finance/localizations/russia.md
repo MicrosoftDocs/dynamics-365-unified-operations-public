@@ -160,6 +160,9 @@ This topic provides information about functionality that supports Russian regula
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
+## Tax accounting
+- [Expence and incomes codes](rus-expense-and-income-codes.md)
+
 ## Additional resources
 
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
