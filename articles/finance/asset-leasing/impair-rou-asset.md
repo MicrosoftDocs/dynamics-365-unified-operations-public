@@ -56,40 +56,47 @@ Right-of-use asset impairment example:
 
    This lease is presumed to be a nonspecialized asset that does not transfer ownership or grant the Lessee the option of purchase.
 
-General Tab inputs:
+### General Tab inputs
 
-Field	Value
-Fair value of the asset	600,000
-Incremental borrowing rate	7%
-Compounding interval	Annually
-Asset useful life (months)	600
-Annuity type	Ordinary annuity
-Commencement date	01/01/2019
+   |     Field                         	|     Value               	|
+   |-----------------------------------	|-------------------------	|
+   |     Fair value of the asset       	|     600,000             	|
+   |     Incremental borrowing rate    	|     7%                  	|
+   |     Compounding interval          	|     Annually            	|
+   |     Asset useful life (months)    	|     600                 	|
+   |     Annuity type                  	|     Ordinary annuity    	|
+   |     Commencement date             	|     01/01/2019          	|
 
-Payment schedule lines tab inputs:
 
-Field	Value
-Start date	1/1/2019
-Period interval	Monthly
-Periods	120
-End date	12/31/2028
-Payment frequency	Annually
-Payment amount	10,000
+### Payment schedule lines tab inputs
+
+   |     Field                	|     Value         	|
+   |--------------------------	|-------------------	|
+   |     Start date           	|     1/1/2019      	|
+   |     Period interval      	|     Monthly       	|
+   |     Periods              	|     120           	|
+   |     End date             	|     12/31/2028    	|
+   |     Payment frequency    	|     Annually      	|
+   |     Payment amount       	|     10,000        	|
+
 
 1. After creating this lease, go to the lease book and confirm the payment schedule. Then, post the initial recognition journal entry. The initial right-of-use asset and lease liability should be $70,235.82. Assume this lease was classified as an operating lease under ASC 842.
 2. Next, in order to simulate the passing of 3 years, run the batch journal process for the lease payments, interest expense, and depreciation expense.
 3. After running all 3 batch jobs, navigate back to the lease book and open the liability and asset transactions tables to see the current carrying value of the ROU asset and lease liability.
+
  	After three years, the value of both is $53,893.00.
+   
 4. At this point after 3 years, impairment tests are performed by the business, and it is determined that the ROU asset has an impairment of $35,000. To record this impairment, navigate to the lease book, and click Impairment in the top ribbon.
 5. An impairment parameter form will then appear. Enter the following details:
 
-Field	Value
-Impairment amount	35,000
-Transaction date	1/1/2022
-Periods remaining	84
-Post	Yes
-Preview before posting	No
-Close book	No
+   |     Field                     	|     Value       	|
+   |-------------------------------	|-----------------	|
+   |     Impairment amount         	|     35,000      	|
+   |     Transaction date          	|     1/1/2022    	|
+   |     Periods remaining         	|     84          	|
+   |     Post                      	|     Yes         	|
+   |     Preview before posting    	|     No          	|
+   |     Close book                	|     No          	|
 
 1. An impairment expense journal entry has now been created and posted. To view the journal entry, navigate to the general journal in the lease book. The amount of the impairment has debited the Impairment expense posting type account and credited the Lease asset posting type account.
 2. To view the next effect of the impairment, navigate back to the liability and asset transactions tables. The impairment expense has decreased the ROU asset, but the carrying amount of the lease liability remains the same.
