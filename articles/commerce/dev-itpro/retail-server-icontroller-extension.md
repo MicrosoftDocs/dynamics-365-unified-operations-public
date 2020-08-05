@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported. This topic is applicable for Retail SDK version 10.0.11 or greater for older version refer this [doc](retail-server-extension.md).
+This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported. 
 
 This topic applies to Retail SDK version 10.0.11 and later.
 
-The Retail software development kit (SDK) includes only a few samples of end-to-end Retail Server extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
+The Retail software development kit (SDK) includes only a few samples of end-to-end Retail Server extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the **RetailSDK\\SampleExtensions\\RetailServer** folder.
 
 ## End-to-end sample repository in the Retail SDK
 
@@ -49,22 +49,18 @@ The Retail software development kit (SDK) includes only a few samples of end-to-
 | Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample          |                                        |
 | Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample              |                                        |
 
-## Create a new RS API
-
-Follow the steps in this section to create a new RS extension
-
-### Extension class diagram
-
-![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
+## Extension class diagram
 
 The following illustration shows the class structure of the extension.
 
-### Steps to create the new RS API:
+![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
 
-1.	Before you create the Retail server (RS) extension, create the CRT extension. Retail Server APIs should have no logic except logic that calls the CRT with the parameters.
-2.	Create a new C# class library project that uses the Microsoft .NET Framework version 4.6.1 or use any of the existing Retail server sample in the Retail SDK as a template.
-3.	In the RS extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response and entities. 
-4.	In the RS extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using NuGet package manager. The NuGet packages can be found in RetailSDK\pkgs folder.
+## Create the new Retail Server API
+
+1.	Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
+2.	Create a new C# class library project that uses Microsoft .NET Framework version 4.6.1, or use any of the Retail Server samples in the Retail SDK as a template.
+3.	In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities. 
+4.	In the Retail Server extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using NuGet package manager. The NuGet packages can be found in RetailSDK\pkgs folder.
 5.	Create a new controller class and extend it form IController. This controller class will contain the method that must be exposed by the RS API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class form existing controller class like CustomerController, ProductController etc. Extension classes must extend only form IController class.
 6.	Add the Route Prefix attribute on the controller class to expose the controller class.
 ```C#
