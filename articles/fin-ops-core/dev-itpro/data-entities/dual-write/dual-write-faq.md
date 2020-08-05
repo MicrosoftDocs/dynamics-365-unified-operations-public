@@ -40,7 +40,7 @@ We've compiled a list of frequently asked questions and provided brief answers t
 
 ### Is dual-write available for Government Community Cloud (GCC)?
 
-No. Dual-write requires that the Finance and Operations environment and the Common Data Service environment be in the same tenant, but Finance and Operations apps are not available in GCC. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-us-government).
+No. Dual-write requires that the Finance and Operations environment and the Common Data Service environment be in the same tenant, but Finance and Operations apps are not available in GCC. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
 
 ### If I don't have a license for Dynamics 365 Sales or Dynamics 365 Field Service, but I want to have the sales order data in Common Data Service, can I do it without buying a license?
 
@@ -65,11 +65,11 @@ Legal entity mapping can be done when linking the Common Data Service environmen
 
 ### Can we use both data integrator and dual-write at the same? If yes, does it cause any referential integrity issues?
 
-You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it before setting up dual-write. We suggest adopting one of the two patterns anytime. We recommend using dual-write as integration pattern.
+You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it before setting up dual-write. We suggest adopting one of the two patterns anytime. We recommend using dual-write as integration pattern.
 
 ### If dual-write solutions are installed in Common Data Service, can I uninstall them?
 
-Dual-write solutions are managed solutions which can be uninstalled. However, when a managed solution is uninstalled all components in the solution are deleted, including any data that is stored in the components. For more information see [Maintain managed solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions which can be uninstalled. However, when a managed solution is uninstalled all components in the solution are deleted, including any data that is stored in the components. For more information see [Maintain managed solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### Suppose that we have data in both a customer engagement app and a Finance and Operations app, and we bootstrap our existing data in the customer engagement app. If our data is not currently aligned, can we specify a master source for the initialization run so that all differences are applied to the target?
 
@@ -107,7 +107,7 @@ The integration follows the complete sequence of changes. In the above example, 
 
 ### How does dual-write work after a Disaster Recovery event? Does it automatically work with the secondary instance that deployed on the secondary Azure region?
 
-In a failover event, dual-Write continues working after the failover transition finishes, if both the Finance and Operations environment and Common Data Service environment are accessible. Finance and Operations environments and Common Data Service environments adhere to the standard failover process. For more information about system availability, see [Cloud deployment overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview#availability).
+In a failover event, dual-Write continues working after the failover transition finishes, if both the Finance and Operations environment and Common Data Service environment are accessible. Finance and Operations environments and Common Data Service environments adhere to the standard failover process. For more information about system availability, see [Cloud deployment overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview#availability).
 
 ### How we handle a Finance and Operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are not in sync anymore. Is the sync done automatically?
 
@@ -123,11 +123,11 @@ For information on migrating Prospect to Cash to dual-write, see [Migrating data
 
 ### Can I develop unbounded fields on Finance and Operations data entities that flow to Common Data Service by using dual-write?
 
-Yes. You can use both [computed and virtual fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields), but you should monitor the performance overhead from the additional X++ logic required for reads and write. Round-tripping within the same transaction is not allowed, so avoid using virtual fields to transform or calculate additional values through X++. You should expect that to go back to Common Data Service within the same transaction.
+Yes. You can use both [computed and virtual fields](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields), but you should monitor the performance overhead from the additional X++ logic required for reads and write. Round-tripping within the same transaction is not allowed, so avoid using virtual fields to transform or calculate additional values through X++. You should expect that to go back to Common Data Service within the same transaction.
 
 ### With the Common Data Service offline app, what if it is not possible to sync the data after reconnecting? Would that lead to an inconsistent state between the Common Data Service environment and the Finance and Operations environment?
 
-You can access Common Data Service data offline by using Common Data Service applications by using the Field Service mobile app. In both cases, data is stored offline, and it can be synced with the server at your direction. If there are errors when the offline data is synced with the server, and updates cannot be performed because the other environment is failing, then you can handle the error by using conflict management settings. For more details about different conflict management settings, see [Common Data Service conflict management settings](https://docs.microsoft.com/en-us/dynamics365/mobile-app/setup-mobile-offline-for-admin#step-23-set-conflict-detection-for-mobile-offline) and [Resco conflict resolution settings](https://docs.resco.net/wiki/Conflict_resolution).
+You can access Common Data Service data offline by using Common Data Service applications by using the Field Service mobile app. In both cases, data is stored offline, and it can be synced with the server at your direction. If there are errors when the offline data is synced with the server, and updates cannot be performed because the other environment is failing, then you can handle the error by using conflict management settings. For more details about different conflict management settings, see [Common Data Service conflict management settings](https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin#step-23-set-conflict-detection-for-mobile-offline) and [Resco conflict resolution settings](https://docs.resco.net/wiki/Conflict_resolution).
 
 ## Mapping concepts between apps
 
@@ -138,7 +138,7 @@ Number sequences for Finance and Operations apps and customer engagement apps ar
 + In the Finance and Operations app, use **F0001, F0002, ...**. In the customer engagement app, use **C0001, C0002, ...**.
 + In the Finance and Operations app, use **US0001 to US4999**. In the customer engagement app, use **US5000 to US9999**.
 
-If entity is created in only one system, then set up the number sequence in only the source app. For more details, see [Autonumber fields](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/autonumber-fields).
+If entity is created in only one system, then set up the number sequence in only the source app. For more details, see [Autonumber fields](https://docs.microsoft.com/powerapps/maker/common-data-service/autonumber-fields).
 
 ### Can we map company-specific entity in a customer engagement app with a global entity in a Finance and Operations app, or vice-versa?
 
@@ -150,4 +150,4 @@ Common Data Service custom entities can be made company specific by adding a M-1
 
 ### Is there a document on best practices for entity usage? Should I use Customers V2, Customers V3, Customer Details? What is the difference and use case for each?
 
-You should use the [out-of-the-box scenarios](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) if possible, because they cover common scenarios like customer/vendor integration.
+You should use the [out-of-the-box scenarios](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) if possible, because they cover common scenarios like customer/vendor integration.
