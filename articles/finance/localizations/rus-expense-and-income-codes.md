@@ -1,6 +1,5 @@
----
-title: Expense and income codes
----
+Expense and income codes
+========================
 
 Expense and income codes are created on the **Expense and income codes** page.
 The hierarchical structure lets you group income and expenses according to the
@@ -28,24 +27,22 @@ Create an expense or income code
 
 1.  Go to **Tax \> Setup \> Profit tax \> Expense codes**.
 
-![](media/e7f1a888c0af6c8428de2b3e4af46c16.png)
+![](media/1_Expense_codes.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  On the Action Pane, select **Tree view** to view expense and income codes as
+2.  On the Action Pane, select **Tree view** to view expense and income codes as
     a tree, and then select **New** to create a code.
 
-2.  In the **Expense code** field, enter the expense or income code. The code
+3.  In the **Expense code** field, enter the expense or income code. The code
     should be unique.
 
 >   Typically, when codes are numbered, you should adhere to a hierarchical
 >   principle. For example, if you create a child code for code **90100000**, it
 >   should start with **901**, such as **901010000** or **901020000**.
 
-1.  In the **Name** field, enter a detailed description of the expense or income
+4.  In the **Name** field, enter a detailed description of the expense or income
     code.
 
-2.  On the **General** FastTab, set the following fields:
+5.  On the **General** FastTab, set the following fields:
 
 -   In the **Short description** field, enter the short name of the expense or
     income code.
@@ -63,7 +60,7 @@ Create an expense or income code
     sales tax code that should be used to calculate the amount of tax assets and
     tax liabilities for the expense or income code.
 
-1.  On the **Set up** FastTab, you can select the registers that will be used to
+6.  On the **Set up** FastTab, you can select the registers that will be used to
     calculate the amounts and totals for expense or income codes.
 
 >   **Note:** You can select registers only for codes that aren't parent codes.
@@ -87,7 +84,7 @@ in the following situations:
     calculated for the expense or income code. You can find an example list of
     expense and income codes in the **RUMF** legal entity.
 
-1.  On the Action Pane, select **Ledger account setup** to select the ledger
+7.  On the Action Pane, select **Ledger account setup** to select the ledger
     accounts that transactions will be assigned to for the income or expense
     code.
 
@@ -96,9 +93,9 @@ in the following situations:
 >   set to **901010200** or left blank, will be assigned to income code
 >   **901010200** (**Revenue from sales of goods**).
 
-![A screenshot of a computer Description automatically generated](media/22660b830d321c948cdaac76c180c9d4.png)
+![A screenshot of a computer Description automatically generated](media/2_Expense_code_and_ledger_relation.png)
 
-1.  On the **Expense code and ledger relation** page, in the header, set the
+8.  On the **Expense code and ledger relation** page, in the header, set the
     following values:
 
 -   In each of the two **Valid for** fields, select one of the following values:
@@ -119,7 +116,7 @@ in the following situations:
 
     -   If the **Valid for** field is set to **All**, leave the field blank.
 
-1.  On the **Financial dimensions** FastTab, in the **Default financial
+9.  On the **Financial dimensions** FastTab, in the **Default financial
     dimensions** and **Offset dimensions** sections, you can specify financial
     dimension codes that account entries will be used for when totals are
     calculated on the expense or income code, in addition to the setup of ledger
