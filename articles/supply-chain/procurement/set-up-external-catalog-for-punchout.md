@@ -121,3 +121,7 @@ Delete an external catalog with the Delete action on the page.
 
 If a product from the external vendor catalog has been requested, the external vendor catalog cannot be deleted. Instead, the status of the external vendor catalog is set to inactive. If you want to remove access to the external vendor's catalog site, but not delete it, change the external catalog status to Inactive.
 
+## Additional resources
+
+- [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)
+- [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)

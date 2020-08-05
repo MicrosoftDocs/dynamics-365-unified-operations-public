@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# Purchasing cXML Enhancements
+# Purchasing cXML enhancements
 
 [!include [banner](../includes/banner.md)]
 
@@ -272,3 +272,9 @@ To view the XML for the purchase order request message, open the **Response XML*
 To view the content of a vendor acknowledged or error response, open the **Response XML** tab at the bottom of the **Purchase order request** page.
 
 ![Response XML](media/cxml-response-xml.png "Response XML")
+
+## Additional resources
+
+- [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
+- [Purchasing cXML Enhancements](purchasing-cxml-enhancements.md)
+- [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)
