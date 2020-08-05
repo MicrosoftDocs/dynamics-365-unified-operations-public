@@ -78,7 +78,7 @@ To obtain support, use the resources in the following table. These resources are
 </tr>
 <tr class="even">
 <td>Request new features and functionality</td>
-<td>Visit [Dynamics 365 Appliation Ideas](https://experience.dynamics.com/ideas/) to view, search, or vote for existing ideas, or to add new ideas.</td>
+<td>Visit <a href="https://experience.dynamics.com/ideas/"><span style="color: #0066cc;">Dynamics 365 Appliation Ideas</span></a> to view, search, or vote for existing ideas, or to add new ideas.</td>
 </tr>
 </tbody>
 </table>
