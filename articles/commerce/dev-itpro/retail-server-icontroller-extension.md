@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new Retail Server API
-description: This topic explains how to create a new Retail Server API.
+description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/22/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported. 
+This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported.
 
 This topic applies to Retail SDK version 10.0.11 and later.
 
@@ -57,92 +57,80 @@ The following illustration shows the class structure of the extension.
 
 ## Create the new Retail Server API
 
-1.	Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
-2.	Create a new C# class library project that uses Microsoft .NET Framework version 4.6.1, or use any of the Retail Server samples in the Retail SDK as a template.
-3.	In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities. 
-4.	In the Retail Server extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using NuGet package manager. The NuGet packages can be found in RetailSDK\pkgs folder.
-5.	Create a new controller class and extend it form IController. This controller class will contain the method that must be exposed by the RS API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class form existing controller class like CustomerController, ProductController etc. Extension classes must extend only form IController class.
-6.	Add the Route Prefix attribute on the controller class to expose the controller class.
-```C#
-[RoutePrefix("SimpleExtension")]  
-```
-7.	Bind Entity attribute is required on a controller class if you are creating a new controller and exposing an entity. 
-Sample code on how to create a simple RS API to return entity, string, and bool value. CRT request/response used in the sample is not included here, please check the CRT extension doc for that.
+1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
+2. Create a new C# class library project that uses Microsoft .NET Framework version 4.6.1, or use any of the Retail Server samples in the Retail SDK as a template.
+3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
+4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
+5. Create a new controller class and extend it from **IController**. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes like **CustomerController** and **ProductController**. Extension classes must extend only the **IController** class.
+6. Add the **RoutePrefix** attribute on the controller class to expose the controller class.
 
-```C#
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
- 
-/// <summary>
-    /// New extended controller.
-    /// </summary>
+    ```csharp
     [RoutePrefix("SimpleExtension")]  
-    [BindEntity(typeof(SimpleEntity))]
-                                  
-    public class SimpleExtensionController : IController
-    {
-        /// <summary>
-        /// The action to get the string value.
+    ```
+
+7. The **BindEntity** attribute is required on a controller class if you are creating a new controller and exposing an entity.
+
+    The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+
+    ```csharp
+    /// <summary>
+        /// New extended controller.
         /// </summary>
-        /// <param name="context">The context parameters.</param>
-        /// <param name="stringValue">The string value parameters.</param>
-        /// <returns>The string value.</returns>
-        [HttpPost]
-        [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-        public async Task<string> GetStringValue(IEndpointContext context, string stringValue)
+        [RoutePrefix("SimpleExtension")]  
+        [BindEntity(typeof(SimpleEntity))]
+
+        public class SimpleExtensionController : IController
         {
-            GetStringValueResponse resp = await context.ExecuteAsync<GetStringValueResponse>
-                                     (new GetStringValueRequest(stringValue)).ConfigureAwait(false);
-            return resp.StringValue;
+            /// <summary>
+            /// The action to get the string value.
+            /// </summary>
+            /// <param name="context">The context parameters.</param>
+            /// <param name="stringValue">The string value parameters.</param>
+            /// <returns>The string value.</returns>
+            [HttpPost]
+            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+            public async Task<string> GetStringValue(IEndpointContext context, string stringValue)
+            {
+                GetStringValueResponse resp = await context.ExecuteAsync<GetStringValueResponse>
+                                         (new GetStringValueRequest(stringValue)).ConfigureAwait(false);
+                return resp.StringValue;
+            }
+
+            /// <summary>
+            /// The action to get the bool value.
+            /// </summary>
+            /// <param name="context">The context parameters.</param>
+            /// <param name="boolValue">The string value parameters.</param>
+            /// <returns>The bool value.</returns>
+            [HttpPost]
+            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+            public async Task<bool> GetBoolValue(IEndpointContext context, string boolValue)
+            {
+                GetBoolValueResponse resp = await context.ExecuteAsync<GetBoolValueResponse>
+                                           (new GetBoolValueRequest(boolValue)).ConfigureAwait(false);
+                return resp.BoolValue;
+            }
+
+            /// <summary>
+            /// The action to get the simple entity.
+            /// </summary>
+            /// <param name="context">The context parameters.</param>
+            /// <param name="name">The name parameters.</param>
+            /// <returns>The simple entity.</returns>
+            [HttpPost]
+            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+            public async Task<SimpleEntity> GetSimpleEntity(IEndpointContext context, string name)
+            {
+                GetSimpleEntityResponse resp = await context.ExecuteAsync<GetSimpleEntityResponse>
+                                               (new GetSimpleEntityRequest(name)).ConfigureAwait(false);
+                return resp.SimpleEntityObj;
+            }
         }
+    ```
 
-        /// <summary>
-        /// The action to get the bool value.
-        /// </summary>
-        /// <param name="context">The context parameters.</param>
-        /// <param name="boolValue">The string value parameters.</param>
-        /// <returns>The bool value.</returns>
-        [HttpPost]
-        [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-        public async Task<bool> GetBoolValue(IEndpointContext context, string boolValue)
-        {
-            GetBoolValueResponse resp = await context.ExecuteAsync<GetBoolValueResponse>
-                                       (new GetBoolValueRequest(boolValue)).ConfigureAwait(false);
-            return resp.BoolValue;
-        }
+    The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are down in the following code example.
 
-
-        
-      /// <summary>
-        /// The action to get the simple entity.
-        /// </summary>
-        /// <param name="context">The context parameters.</param>
-        /// <param name="name">The name parameters.</param>
-        /// <returns>The simple entity.</returns>
-        [HttpPost]
-        [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-        public async Task<SimpleEntity> GetSimpleEntity(IEndpointContext context, string name)
-        {
-            GetSimpleEntityResponse resp = await context.ExecuteAsync<GetSimpleEntityResponse>
-                                           (new GetSimpleEntityRequest(name)).ConfigureAwait(false);
-            return resp.SimpleEntityObj;
-        }
-    }
-
-```
-The Retail server APIs support different authorization (roles), access to the controller method will be permitted based on the Authorization roles specified in the controller method Authorizations attribute.
-
-Supported Authorization roles:
-
-```C#
-
-//
+    ```csharp
     // Summary:
     // Represents the type of logon type.
     [DataContract]
@@ -184,39 +172,37 @@ Supported Authorization roles:
         //     values.
         public static readonly string[] All;
     }
+    ```
 
-```
+8. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
+9. Update the Commerce Scale Unit **web.config** file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
-5.	Build the extension project, and drop the binary into the \RetailServer\webroot\bin\Ext folder.
-6.	Update the Commerce Scale Unit web.config file in the \RetailServer\webroot folder by adding the new extension library name in the extensionComposition section.
+    ```xml
+    <extensionComposition>
+    <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
+    If you host in an application with a bin folder, this is not required. -->
+    <add source="assembly" value="SimpleExtensionSample" >
+    </extensionComposition>
+    ```
 
-```XML
-<extensionComposition>
-<!-- Please use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
-If you host in an application with a bin folder, this is not required. -->
-<add source="assembly" value="SimpleExtensionSample" >
-</extensionComposition>
+10. In Microsoft Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
+11. To verify that the extension loaded successfully, you can browse the Retail Server metadata. Confirm that your entities and methods appear in the list. To browse the metadata, open a URL in the following format in a web browser:
 
-```
+    https://RS-URL/Commerce/$metadata
 
-7.	In Microsoft Internet Information Services (IIS), restart Commerce Scale Unit to load the new extension.
-8.	To verify that the extension was successfully loaded, you can browse the RS metadata, and confirm that your entities and methods appear in the list.
-To browse the metadata, open a URL in the following format in a web browser:
-https://RS-URL/Commerce/$metadata
-9.	To call the RS extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new RS APIs from the client.
+12. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
-Extension no need to add/include any EdmModelExtender files with the RS extensions APIs. This is required only if you are using Retail SDK version 10.0.10 or lower.
+    Extension no need to add/include any EdmModelExtender files with the RS extensions APIs. This is required only if you are using Retail SDK version 10.0.10 or lower.
 
-**Retail server extension built using this new Microsoft.Dynamics.Commerce.Hosting.Contracts can be used in offline, no need to generate separate C# proxy libraray. Drop the Retail server extension library in …\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext folder and update the RetailProxy.MPOSOffline.ext config file to include this new library, extension have to generate only the Typescript proxy (SDK samples can be found in …\RetailSDK\SampleExtensions\TypeScriptProxy).**
+    **Retail server extension built using this new Microsoft.Dynamics.Commerce.Hosting.Contracts can be used in offline, no need to generate separate C# proxy libraray. Drop the Retail server extension library in …\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext folder and update the RetailProxy.MPOSOffline.ext config file to include this new library, extension have to generate only the Typescript proxy (SDK samples can be found in …\RetailSDK\SampleExtensions\TypeScriptProxy).**
 
-```XML
-Ex:
-<add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
-```
+    ```xml
+    <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
+    ```
 
-![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
-
-### Generate Typescript proxy for POS:
+    ![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
+    
+## Generate the Typescript proxy for POS
 
 1.	Open the Sample proxy template project from …\RetailSDK\Code\SampleExtensions\TypeScriptProxy\TypeScriptProxy.Extensions.StoreHoursSample\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj in Visual studio 2017 and rename it if required.
 2.	Add the Retail server extension project as a project reference project to this proxy template project. Remove the existing StoreHoursSample project reference.
