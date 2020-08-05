@@ -75,12 +75,13 @@ To obtain support, use the resources in the following table. These resources are
 <td>Use the LCS event monitoring dashboard.</td>
 <td>To see the current health status of the platform and services, go to the <strong>Environments</strong> section of your LCS project.</td>
 </tr>
+</tr>
+<tr class="even">
+<td>Request new features and functionality</td>
+<td>Visit [Dynamics 365 Appliation Ideas](https://experience.dynamics.com/ideas/) to view, search, or vote for existing ideas, or to add new ideas.</td>
+</tr>
 </tbody>
 </table>
 
 
-## Additional resources
-- [Get support for Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Get support for Microsoft Dynamics 365 Human Resources](../../../human-resources/hr-admin-troubleshooting-support.md)
-- For more information about Microsoft Dynamics support offerings, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).
 
