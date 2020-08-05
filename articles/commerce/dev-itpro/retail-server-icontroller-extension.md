@@ -70,7 +70,7 @@ The following illustration shows the class structure of the extension.
 
 7. The **BindEntity** attribute is required on a controller class if you are creating a new controller and exposing an entity.
 
-    The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+    The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
 
     ```csharp
     /// <summary>
@@ -128,7 +128,7 @@ The following illustration shows the class structure of the extension.
         }
     ```
 
-    The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are down in the following code example.
+    The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are shown in the following code example.
 
     ```csharp
     // Summary:
@@ -211,7 +211,7 @@ The following illustration shows the class structure of the extension.
 
 1. Open the sample proxy template project from **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** in Visual Studio 2017. Rename it if required.
 2. Add the Retail Server extension project as a project reference project to this proxy template project. Remove the existing **StoreHoursSample** project reference.
-3. Right click the **Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** and select **Edit Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj**.
+3. Right-click the **Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** and select **Edit Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj**.
 4. Under the **\<RetailServerExtensionAssemblies\>** node, specify your extension Retail Server assembly name. The following example shows how to add the assembly name.
 
     ```xml
