@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get support
+# Get support for Finance and Operations apps or Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
