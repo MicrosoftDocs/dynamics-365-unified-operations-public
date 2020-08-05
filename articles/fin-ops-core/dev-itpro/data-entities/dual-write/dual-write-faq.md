@@ -40,7 +40,7 @@ We've compiled a list of frequently asked questions and provided brief answers t
 
 ### Is dual-write available for Government Community Cloud (GCC)?
 
-Dual-write isn't supported in GCC cloud yet. It will be made available once Finance & Operations goes live in GCC cloud. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-us-government).
+No. Dual-write requires that the Finance and Operations environment and the Common Data Service environment be in the same tenant, but Finance and Operations apps are not available in GCC. For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-us-government).
 
 ### If I don't have a license for Dynamics 365 Sales or Dynamics 365 Field Service, but I want to have the sales order data in Common Data Service, can I do it without buying a license?
 
@@ -69,7 +69,7 @@ You can't run dual-write and the [Prospect to cash solution](https://docs.micros
 
 ### If dual-write solutions are installed in Common Data Service, can I uninstall them?
 
-Dual-write solutions are managed solutions which can be uninstalled. However keep in mind that when a managed solution is uninstalled all components in the solution including data that is stored in these components get deleted. For more information see [Maintain managed solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions which can be uninstalled. However, when a managed solution is uninstalled all components in the solution are deleted, including any data that is stored in the components. For more information see [Maintain managed solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### Suppose that we have data in both a customer engagement app and a Finance and Operations app, and we bootstrap our existing data in the customer engagement app. If our data is not currently aligned, can we specify a master source for the initialization run so that all differences are applied to the target?
 
@@ -83,7 +83,7 @@ The integration key is the natural key which uniquely identifies records. Integr
 
 Dual-write uses integration keys to uniquely identify records using one or more entity field values that represent a unique combination. For example, to identify an account record with an integration key, you can use the account number or the account number field in combination with some other fields which have values that should not change. For more information, see [Define alternate keys using Power Apps portal](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal.md).
 
-It is important to ensure keys are matched on Finance and Operations and Common Data Service environments, otherwise it might cause problems in the initial sync phase.
+It is important to ensure keys are matched between the Finance and Operations and Common Data Service environments, otherwise it might cause problems in the initial sync phase.
 
 ### How do I move entity maps between environments? Is version control supported for entity maps?
 
@@ -99,7 +99,7 @@ More advanced Finance and Operations filters can be found using [Using Expressio
 
 ### Dual-write live sync introduces tight coupling across applications. What happens if one side fails? Will the other side fail, too?
 
-When integration is in live sync mode, you will see an error and if one app fails, the other app will fail too. When integration is paused, changes are staged and are written once the target system is up and running. For more information about automatically pausing integrations see [Alert notifications](errors-and-alerts.md#alert-notifications)
+When integration is in live sync mode, you will see an error and if one app fails, the other app will fail, too. When integration is paused, changes are staged and are written once the target system is up and running. For more information about automatically pausing integrations see [Alert notifications](errors-and-alerts.md#alert-notifications)
 
 ### When live sync is paused and then resumed, does it follow the sequence of changes? For example, if the **Name** field changes in the Finance and Operations app from **NameA** to **NameB** to **NameC**, does the customer engagement data change from **NameA** to **NameB** to **NameC**, or **NameA** to **NameC**?
 
