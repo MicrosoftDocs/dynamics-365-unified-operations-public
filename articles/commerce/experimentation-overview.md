@@ -89,3 +89,14 @@ The next step is to associate the experiment with the corresponding web experien
 1. Use the analytics generated in the thir-party service to pick a winner and click "Next".
 1. Click "Complete" to promote the 'winning' experience to the web storefront.
 1. Stop the experiment in the third-party service.
+
+## FAQs
+1. Reorder modules 
+1. Whole page variation with templates 
+1. fragment-based experiments 
+1. Making changes to the experiment (2 schools of thought) 
+1. Making changes to the default around the experiment (using module variations) 
+1. Don’t allow changes to the page (create separate page variations)  
+1. localization – we support it, yes! (do it once, do it for all) – advanced topic? 
+1. publish groups – advanced topic?  
+1. Statuses
