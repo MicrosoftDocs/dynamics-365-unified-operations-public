@@ -27,7 +27,7 @@ Create an expense or income code
 
 1.  Go to **Tax \> Setup \> Profit tax \> Expense codes**.
 
-![](media/1_Expense_codes.png)
+    ![](media/1_Expense_codes.png)
 
 2.  On the Action Pane, select **Tree view** to view expense and income codes as
     a tree, and then select **New** to create a code.
@@ -35,30 +35,30 @@ Create an expense or income code
 3.  In the **Expense code** field, enter the expense or income code. The code
     should be unique.
 
->   Typically, when codes are numbered, you should adhere to a hierarchical
->   principle. For example, if you create a child code for code **90100000**, it
->   should start with **901**, such as **901010000** or **901020000**.
+    Typically, when codes are numbered, you should adhere to a hierarchical
+    principle. For example, if you create a child code for code **90100000**, it
+    should start with **901**, such as **901010000** or **901020000**.
 
 4.  In the **Name** field, enter a detailed description of the expense or income
     code.
 
 5.  On the **General** FastTab, set the following fields:
 
--   In the **Short description** field, enter the short name of the expense or
-    income code.
+    -   In the **Short description** field, enter the short name of the expense or
+        income code.
 
--   In the **Code type** field, select the type of code: **Income**, **Issue**
-    or **Unknown**.
+    -   In the **Code type** field, select the type of code: **Income**, **Issue**
+        or **Unknown**.
 
--   In the **Dimension** section, set the **Locked** option to **Yes** to stop
-    synchronization of the selected expense or income code.
+    -   In the **Dimension** section, set the **Locked** option to **Yes** to stop
+        synchronization of the selected expense or income code.
 
--   Optional: In the **Parent code** section, in the **Parent code** field,
-    select a parent code to create a hierarchical structure.
+    -   Optional: In the **Parent code** section, in the **Parent code** field,
+        select a parent code to create a hierarchical structure.
 
--   In the **Income tax** section, in the **Sales tax code** field, select the
-    sales tax code that should be used to calculate the amount of tax assets and
-    tax liabilities for the expense or income code.
+    -   In the **Income tax** section, in the **Sales tax code** field, select the
+        sales tax code that should be used to calculate the amount of tax assets and
+        tax liabilities for the expense or income code.
 
 6.  On the **Set up** FastTab, you can select the registers that will be used to
     calculate the amounts and totals for expense or income codes.
