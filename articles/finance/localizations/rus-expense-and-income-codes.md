@@ -23,7 +23,7 @@ places:
 -   In vendor, customer, ledger, and inventory transactions
 
 Create an expense or income code
-================================
+--------------------------------
 
 1.  Go to **Tax \> Setup \> Profit tax \> Expense codes**.
 
