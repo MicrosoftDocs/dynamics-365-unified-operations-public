@@ -68,17 +68,17 @@ A delivery options module can be added only to a checkout module. For more infor
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Payment module](payment-module.md)
+
+[Shipping address module](ship-address-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)
 
 [Online channel setup](channel-setup-online.md)
 
