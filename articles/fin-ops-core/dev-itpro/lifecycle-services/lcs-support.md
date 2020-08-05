@@ -55,11 +55,11 @@ To obtain support, use the resources in the following table. These resources are
 <td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Community page</span></a> to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr class="even">
-<td>Use the Issue search tool.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
+  <td>Use the <strong>Issue search</strong> tool.</td>
+<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use <strong>Issue search</strong> to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
 </tr>
 <tr class="odd">
-<td>Open a support ticket with the support team.</td>
+<td>Open a support ticket with the Support team.</td>
 <td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, the <strong>Support</strong> tile is a tool that helps you manage support incidents. To submit issues directly to Microsoft, go to the <strong>Support</strong> tile in your LCS project. From there, you can submit issues in two ways:
 <ul>
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
@@ -68,11 +68,11 @@ To obtain support, use the resources in the following table. These resources are
 </td>
 </tr>
 <tr class="odd">
-<td>Get help with questions about Finance and Operations apps licensing.</td>
+<td>Get help with questions about licensing.</td>
 <td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
 </tr>
 <tr class="even">
-<td>Use the LCS Event monitoring dashboard.</td>
+<td>Use the LCS event monitoring dashboard.</td>
 <td>To see the current health status of the platform and services, go to the <strong>Environments</strong> section of your LCS project.</td>
 </tr>
 </tbody>
