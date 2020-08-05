@@ -988,6 +988,12 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Payment module
+            href: payment-module.md
+          - name: Shipping address module
+            href: ship-address-module.md
+          - name: Delivery options module
+            href: delivery-options-module.md
           - name: Order details module
             href: order-confirmation-module.md 
           - name: Gift card module
