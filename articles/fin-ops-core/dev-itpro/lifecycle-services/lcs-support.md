@@ -63,7 +63,7 @@ To obtain support, use the resources in the following table. These resources are
 <td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, the <strong>Support</strong> tile is a tool that helps you manage support incidents. To submit issues directly to Microsoft, go to the <strong>Support</strong> tile in your LCS project. From there, you can submit issues in two ways:
 <ul>
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
-<li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit an incident</strong> and follow the instructions to submit the issue. After you submit the issue, and incident is created and added to the <strong> Incidents</strong> list. You will receive an email message from the Microsoft Support engineer assigned to your case.</li>
+<li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit an incident</strong> and follow the instructions to submit the incident. After you submit the incident, you will receive an email message from the Microsoft Support engineer assigned to your case.</li>
 </ul>
 </td>
 </tr>
