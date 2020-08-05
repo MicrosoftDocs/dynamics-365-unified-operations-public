@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 # Expense and income codes
 [!include [banner](../includes/banner.md)]
 
-Expense and income codes are created on the **Expense and income codes** page. The hierarchical structure lets you group income and expenses according to the lines of the profit tax declaration. Therefore, the list of expense and income codes contains all the income and expense codes that are used in tax reporting. Turnovers on parent income and expense codes consist of the turnovers on child income and expense codes. The list of expense and income codes is synced with the list of financial dimensions that is selected in the **Tax dimension** field on the **Profit tax** tab of the **General ledger parameters** page. This mechanism is used to calculate the profit tax declaration. For more information, see [Profit tax declaration](rus-profit-tax-declaration.md).
+Expense and income codes are created on the **Expense and income codes** page. The hierarchical structure lets you group income and expenses according to the lines of the profit tax declaration. Therefore, the list of expense and income codes contains all the income and expense codes that are used in tax reporting. Turnovers on parent income and expense codes consist of the turnovers on child income and expense codes. The list of expense and income codes is synced with the list of financial dimensions selected in the **Tax dimension** field on the **Profit tax** tab of the **General ledger parameters** page. This mechanism is used to calculate the profit tax declaration. For more information, see [Profit tax declaration](rus-profit-tax-declaration.md).
 
 You should set the value of the **ExpenseAndIncomeCode** field in the following places:
 
