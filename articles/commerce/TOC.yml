@@ -630,6 +630,8 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
+        - name: Enable "shop similar looks" recommendations
+          href: shop-similar-looks.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
