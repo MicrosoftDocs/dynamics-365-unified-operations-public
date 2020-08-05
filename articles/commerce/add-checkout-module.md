@@ -118,20 +118,16 @@ To add a checkout module to a new page and set the required properties, follow t
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
-
-[Delivery options](delivery-options-module.md)
+[Cart icon module](cart-icon-module.md)
 
 [Payment module](payment-module.md)
 
-[Gift card module](add-giftcard.md)
-
 [Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)
