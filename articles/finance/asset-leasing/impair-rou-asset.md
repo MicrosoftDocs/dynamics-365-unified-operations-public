@@ -36,24 +36,24 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-If a right-of-use asset's carrying amount isn't be recoverable, you might need to test for impairment of the asset. If you determine the asset is impairment, Asset leasing can record the impairment and adjust the asset depreciation schedule accordingly. This topic describes the functionality records the impairment and adjusts the asset depreciation schedule for an ASC 842 operating lease. (The same method applies for IFRS 16 leases, as well.)
+If a right-of-use (ROU) asset's carrying amount isn't be recoverable, you might need to test for impairment of the asset. If you determine the asset is impairment, Asset leasing can record the impairment and adjust the asset depreciation schedule accordingly. This topic describes the functionality records the impairment and adjusts the asset depreciation schedule for an ASC 842 operating lease. (The same method applies for IFRS 16 leases, as well.)
 
-In accordance with IFRS 16 and ASC 842, the remaining right-of-use asset balance will be amortized on a straight-line basis for the number of periods remaining regardless if that lease was classified as operating.
+In accordance with IFRS 16 and ASC 842, the remaining ROU asset balance will be amortized on a straight-line basis for the number of periods remaining regardless if that lease was classified as operating.
 
-1. To impair a right-of-use asset, navigate to the impaired lease and select Books.
+1. To impair a ROU asset, navigate to the impaired lease and select Books.
 2. Select **Impairment** on the top ribbon
-3. A window will appear, enter the amount of the asset impairment in the Impairment amount field. This value should be entered as a positive value to decrease the right-of-use asset.
+3. A window will appear, enter the amount of the asset impairment in the Impairment amount field. This value should be entered as a positive value to decrease the ROU asset.
 4. In the **Transaction date** field, enter the date on which the impairment entry will be posted
-5. In the **Periods remaining** field, enter the number of months remaining to amortize the right-of-use asset.
+5. In the **Periods remaining** field, enter the number of months remaining to amortize the ROU asset.
 6. Enable the **Post** field for the system to automatically post the impairment expense journal entry. If left disabled, the system will create the entry and the user can navigate to the General journals form on the lease book to post the entry
 7. Enable the **Preview before posting** field to view the proposed entry before creating or posting.
 8. Enable the **Close book** field to close the lease book. This action can't be undone, and entries cannot be posted against closed leases, nor can a closed lease be adjusted.
 9. Click **OK** to create or post the impairment entry
 10.	To view the impaired asset depreciation schedule, navigate to the Asset depreciation schedule for that lease book. As noted above, the asset will now be depreciated on a straight-line basis over the number of months inputted in the **Periods remaining** field.
 11.	To view the impairment expense journal entry, select **General journals** on the top ribbon for the impaired lease book. The system will create a journal entry debiting the impairment expense posting type account and crediting the lease asset posting type account.
-12.	To view the new carrying value of the right-of-use asset, navigate to the Asset transactions on the top ribbon of the lease book
+12.	To view the new carrying value of the ROU asset, navigate to the Asset transactions on the top ribbon of the lease book
 
-## Right-of-use asset impairment example
+## ROU asset impairment example
 
    This lease is presumed to be a nonspecialized asset that does not transfer ownership or grant the Lessee the option of purchase.
 
@@ -81,7 +81,7 @@ In accordance with IFRS 16 and ASC 842, the remaining right-of-use asset balance
    |     Payment amount       	|     10,000        	|
 
 
-1. After creating this lease, go to the lease book and confirm the payment schedule. Then, post the initial recognition journal entry. The initial right-of-use asset and lease liability should be $70,235.82. Assume this lease was classified as an operating lease under ASC 842.
+1. After creating this lease, go to the lease book and confirm the payment schedule. Then, post the initial recognition journal entry. The initial ROU asset and lease liability should be $70,235.82. Assume this lease was classified as an operating lease under ASC 842.
 2. Next, in order to simulate the passing of 3 years, run the batch journal process for the lease payments, interest expense, and depreciation expense.
 3. After running all 3 batch jobs, navigate back to the lease book and open the liability and asset transactions tables to see the current carrying value of the ROU asset and lease liability.
 
