@@ -803,7 +803,9 @@
         - name: Impair a right-of-use asset
           href: asset-leasing/impair-rou-asset.md
         - name: Associate a lease with a fixed asset          
-          href: asset-leasing/associate-lease-with-fixed-asset.md          
+          href: asset-leasing/associate-lease-with-fixed-asset.md
+        - name: Record leases in foreign currencies
+          href: asset-leasing/record-leases-foreign-currency.md
     - name: General ledger
       items:
       - name: General ledger overview
