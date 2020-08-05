@@ -100,22 +100,18 @@ To add a cart module to a new page and set the required properties, follow these
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Store selector module](store-selector.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Payment module](payment-module.md)
 
-[Header module](author-header-module.md)
+[Shipping address module](ship-address-module.md)
 
-[Footer module](author-footer-module.md)
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
