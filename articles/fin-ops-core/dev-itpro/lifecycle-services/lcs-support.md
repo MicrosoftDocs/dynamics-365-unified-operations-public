@@ -54,6 +54,10 @@ To obtain support, use the resources in the following table. These resources are
 <td>Ask the community.</td>
 <td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Community page</span></a> to find help with your questions from the Dynamics community.</td>
 </tr>
+<tr class="odd">
+<td>Get help with questions about licensing.</td>
+<td>Contact your partner or a Microsoft sales representative.</td>
+</tr>
 <tr class="even">
   <td>Use the <strong>Issue search</strong> tool.</td>
 <td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use <strong>Issue search</strong> to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
@@ -66,14 +70,6 @@ To obtain support, use the resources in the following table. These resources are
 <li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit an incident</strong> and follow the instructions to submit the incident. After you submit the incident, you will receive an email message from the Microsoft Support engineer assigned to your case.</li>
 </ul>
 </td>
-</tr>
-<tr class="odd">
-<td>Get help with questions about licensing.</td>
-<td>Contact your partner or a Microsoft sales representative.</td>
-</tr>
-<tr class="even">
-<td>Use the LCS event monitoring dashboard.</td>
-<td>To see the current health status of the platform and services, go to the <strong>Environments</strong> section of your LCS project.</td>
 </tr>
 </tr>
 <tr class="even">
