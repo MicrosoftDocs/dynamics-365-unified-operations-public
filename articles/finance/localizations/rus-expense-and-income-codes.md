@@ -51,11 +51,11 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 4.  In the **Name** field, enter a detailed description of the expense or income code.
 5.  On the **General** FastTab, set the following fields:
 
-    1. In the **Short description** field, enter the short name of the expense or income code.
-    2. In the **Code type** field, select the type of code: **Income**, **Issue** or **Unknown**.
-    3. In the **Dimension** section, set the **Locked** option to **Yes** to stop synchronization of the selected expense or income code.
-    4. Optional: In the **Parent code** section, in the **Parent code** field, select a parent code to create a hierarchical structure.
-    5. In the **Income tax** section, in the **Sales tax code** field, select the sales tax code that should be used to calculate the amount of tax assets and tax liabilities for the expense or income code.
+    - In the **Short description** field, enter the short name of the expense or income code.
+    - In the **Code type** field, select the type of code: **Income**, **Issue** or **Unknown**.
+    - In the **Dimension** section, set the **Locked** option to **Yes** to stop synchronization of the selected expense or income code.
+    - Optional: In the **Parent code** section, in the **Parent code** field, select a parent code to create a hierarchical structure.
+    - In the **Income tax** section, in the **Sales tax code** field, select the sales tax code that should be used to calculate the amount of tax assets and tax liabilities for the expense or income code.
 
 6.  On the **Set up** FastTab, you can select the registers that will be used to calculate the amounts and totals for expense or income codes.
 
