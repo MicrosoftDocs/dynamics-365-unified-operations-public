@@ -47,9 +47,9 @@ The topic lists the steps for associating an existing fixed asset with a new lea
 8. Select the journal line containing the asset and open the **Fixed Assets** tab.
 9. From the **Fixed assets** tab, you can view the transaction type and the value model. The entry in the **Transaction type** field will default to **Acquisition**, and the entry in the **Value model** field will default to the current value model for that fixed asset.
 
-> [!Note]
-> If values in the **Transaction type** and **Book** fields aren't entered by default, go to **Fixed assets > Setup > Fixed asset parameters** to set up the book and transaction type for the fixed asset records you create.
+   > [!Note]
+   > If values in the **Transaction type** and **Book** fields aren't entered by default, go to **Fixed assets > Setup > Fixed asset parameters** to set up the book and transaction type for the fixed asset records you create.
 
-1.	After posting the initial recognition journal entry, the transaction will appear as an acquisition transaction for the fixed asset. To view the transaction table, navigate to **Fixed Assets > Fixed Assets > Fixed Assets**. Select the appropriate asset, and click **Valuations**. The initial recognition journal entry has created an acquisition transaction for the specified fixed asset.
+After posting the initial recognition journal entry, the transaction will appear as an acquisition transaction for the fixed asset. To view the transaction table, navigate to **Fixed Assets > Fixed Assets > Fixed Assets**. Select the appropriate asset, and click **Valuations**. The initial recognition journal entry has created an acquisition transaction for the specified fixed asset.
 
 The fixed asset can now be depreciated using the standard depreciation functionality in Fixed assets. See [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md) for more information about depreciation.
