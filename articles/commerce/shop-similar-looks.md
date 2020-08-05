@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable "shop similar looks" recommendations
-description: This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce. 
+description: This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
 ms.date: 07/31/2020
@@ -39,55 +39,55 @@ This topic describes how to enable "shop similar looks" product recommendations 
 
 ## Overview
 
-The "shop similar looks" recommendations feature in Dynamics 365 Commerce delivers customers visually similar product recommendations using the power of artificial intelligence and machine learning (AI-ML). By making "shop similar looks" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers to easily find what they want. 
+The "shop similar looks" recommendations feature in Dynamics 365 Commerce uses the power of artificial intelligence and machine learning (AI-ML) to deliver recommendations for visually similar products to customers. By making "shop similar looks" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers easily find what they want.
 
-"Shop similar looks" recommendations functionality uses product images of seed product variants to find and recommend visually similar products in a retailer's product catalog. The Commerce recommendations system also provides "selectors" or filters for product types that can be used by customers to further refine their searches. For example, fashion selectors might include color and type of clothing that customers could use to filter results.
+The functionality for "shop similar looks" recommendations uses product images of seed product variants to find and recommend visually similar products in a retailer's product catalog. The Commerce recommendations system also provides *selectors*, or filters for product types. Customer can use selectors to further refine their searches. For example, for fashion products, customers might be able to filter results might by using selectors for color and type of clothing.
 
-"Shop similar looks" recommendations are available on both the point of sale (POS) and e-Commerce experiences.
+"Shop similar looks" recommendations are available in both the point of sale (POS) and e-Commerce experiences.
 
 ### Example scenarios
 
-- A customer views a black striped sweater, is recommended a similar red sweater, selects that color instead, and is then recommended similar products in red. 
-- A retailer provides a selector for a type of jewelry that helps the customer find suitably matching earrings to go with a ring that the customer is interested in. 
+- A customer views a black striped sweater and receives a recommendation for a similar sweater in red. The customer selects the recommended product instead of the originally viewed product and then receives recommendations for similar products in red. 
+- A retailer provides a selector for type of jewelry. A customer uses this selector to find suitably matching earrings for a ring that the customer is interested in.
 
 ## Enable "shop similar looks" recommendations in Commerce headquarters
 
-Product recommendations are only supported for Commerce users who have migrated their storage to Microsoft Azure Data Lake Store. 
+Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Storage.
 
-Before customers can receive "shop similar looks" recommendations, retailers must first enable product recommendations in Commerce headquarters. For more information, see [Enable product recommendations](enable-product-recommendations.md).
+Before customers can receive "shop similar looks" recommendations, retailers must enable product recommendations in Commerce headquarters. For more information, see [Enable product recommendations](enable-product-recommendations.md).
 
 > [!NOTE]
-> When you turn on the "shop similar looks" recommendations feature, the process of generating product recommendation lists will begin. Up to one day might be required before these lists are available and visible online and on POS terminals.
+> When you enable the "shop similar looks" recommendations feature, the process of generating product recommendation lists begins. Up to one day might be required before those lists are available and visible online and on POS terminals.
 
-To enable the "shop similar looks" feature in Commerce headquarters, follow these steps.
+To enable the "shop similar looks" recommendations feature in Commerce headquarters, follow these steps.
 
 1. Go to **Feature management**.
 1. In the list of available features, search for and select **Shop similar looks**.
 1. In the right pane, select **Enable** to turn on the service.
 
-The following image shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters. 
+The following illustration shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters.
 
-![The **Shop similar looks** feature on the **Feature management** page in Commerce headquarters](./media/enableshopsimilarlooks.png)
+![The Shop similar looks feature on the Feature management page in Commerce headquarters](./media/enableshopsimilarlooks.png)
 
-After enabling the **Shop similar looks** feature in Commerce headquarters, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. Selecting **See more** will take the POS terminal user to a dedicated "shop similar looks" page that can be further filtered based on selectors. 
+After you enable the "shop similar looks" recommendations feature in Commerce headquarters, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be further filtered based on selectors.
 
 > [!NOTE]
-> If you turn off "shop similar looks" recommendations, this will not impact other types of product recommendations. For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
+> If you turn off the "shop similar looks" recommendations feature, no other types of product recommendations are affected. For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
 
-## Add a "Shop similar looks" button to PDPs using Commerce site builder
+## Add a Shop similar looks button to product details pages by using Commerce site builder
 
-After enabling the "shop similar looks" recommendations feature in Commerce headquarters, retailers have the option in Commerce site builder of adding a **Shop similar looks** button to any product details page (PDP) buy box. Selecting the button will take customers to a dedicated "shop similar looks" page that returns visually similar products that can be further filtered based on selectors.
+After you enable the "shop similar looks" recommendations feature in Commerce headquarters, an option in Commerce site builder lets retailers to add a **Shop similar looks** button to the buy box on any product details page (PDP). A customer who selects this button is taken to a dedicated "shop similar looks" page that returns visually similar products. There, the customer can use selectors to further filter the products.
 
-To add a **Shop similar looks** button to a PDP using Commerce site builder, follow these steps.
+To add a **Shop similar looks** button to a PDP by using Commerce site builder, follow these steps.
 
 1. Open an existing site builder page that contains a buy box module.
 1. In the left navigation pane, select the buy box module.
-1. In the right navigation pane, select the **Enable Shop Similar Looks Link** check box. 
-1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. After the page is published, the product detail page will show a **Shop similar looks** button.
+1. In the right navigation pane, select the **Enable Shop Similar Looks Link** check box.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. After the page is published, the PDP will include a **Shop similar looks** button.
 
-The following image shows an example page in site builder with the **Enable Shop Similar Looks Link** check box and **Shop similar looks** PDP button highlighted. 
+The following illustration shows the **Enable Shop Similar Looks Link** check box and **Shop similar looks** button on an example PDP in site builder.
 
-![Example page in site builder with the **Enable Shop Similar Looks Link** check box and **Shop similar looks** PDP button highlighted](./media/SSLecomtooling.png)
+![Enable Shop Similar Looks Link check box and Shop similar looks button on a PDP in site builder](./media/SSLecomtooling.png)
 
 ## Additional resources
 
