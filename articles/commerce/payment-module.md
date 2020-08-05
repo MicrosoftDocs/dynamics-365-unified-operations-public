@@ -71,19 +71,19 @@ A payment module can be added only to a checkout module. For more information ab
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Cart icon module](cart-icon-module.md)
 
-[Header module](author-header-module.md)
+[Checkout module](add-checkout-module.md)
 
-[Footer module](author-footer-module.md)
+[Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)
 
 [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md)
 
