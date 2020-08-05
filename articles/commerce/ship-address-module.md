@@ -57,18 +57,22 @@ The following illustration shows an example of a new shipping address module on 
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the shipping address module. |
 | Show address type | **True** or **False** | If this optional property is set to **True**, an address type, such as **Home** or **Business**, will be shown. If no address type is specified, the address will automatically be saved as **Type**=**Other**. |
 
-## Add a Shipping address module to a checkout page and set the required properties
+## Add a shipping address module to a checkout page and set the required properties
 
 A shipping address module can be added only to a checkout module. For more information about how to configure the shipping address module and add it to a checkout page, see [Checkout module](add-checkout-module.md).
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
 
+[Cart icon module](cart-icon-module.md)
+
 [Checkout module](add-checkout-module.md)
+
+[Payment module](payment-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)
