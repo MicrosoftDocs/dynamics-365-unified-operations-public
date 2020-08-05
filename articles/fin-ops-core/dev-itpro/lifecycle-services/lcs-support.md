@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
-To obtain support, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you're troubleshooting.
-
 <table>
 <colgroup>
 <col width="33%" />
