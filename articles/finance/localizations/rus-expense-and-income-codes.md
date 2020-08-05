@@ -88,12 +88,12 @@ Create an expense or income code
     accounts that transactions will be assigned to for the income or expense
     code.
 
->   For example, amounts for ledger transactions **Debit 62.110** and **Credit
->   90.110**, where the **ExpenseAndIncomeCode** financial dimension is either
->   set to **901010200** or left blank, will be assigned to income code
->   **901010200** (**Revenue from sales of goods**).
+    For example, amounts for ledger transactions **Debit 62.110** and **Credit
+    90.110**, where the **ExpenseAndIncomeCode** financial dimension is either
+    set to **901010200** or left blank, will be assigned to income code
+    **901010200** (**Revenue from sales of goods**).
 
-![A screenshot of a computer Description automatically generated](media/2_Expense_code_and_ledger_relation.png)
+    ![A screenshot of a computer Description automatically generated](media/2_Expense_code_and_ledger_relation.png)
 
 8.  On the **Expense code and ledger relation** page, in the header, set the
     following values:
