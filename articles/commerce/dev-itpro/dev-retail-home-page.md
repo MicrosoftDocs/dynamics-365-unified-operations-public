@@ -130,7 +130,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Show custom notifications in POS](extend-pos-notification.md)
 - [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
-- [Create new Retail Server extension API (Retail SDK version 10.0.11 and later)](retail-server-icontroller-extension.md.md)
+- [Create new Retail Server extension API (Retail SDK version 10.0.11 and later)](retail-server-icontroller-extension.md)
 - [Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)](retail-server-extension.md)
 
 ## eCommerce
