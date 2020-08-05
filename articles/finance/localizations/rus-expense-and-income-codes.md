@@ -98,23 +98,23 @@ Create an expense or income code
 8.  On the **Expense code and ledger relation** page, in the header, set the
     following values:
 
--   In each of the two **Valid for** fields, select one of the following values:
+    -   In each of the two **Valid for** fields, select one of the following values:
 
-    -   **Table** – The setting applies to a separate account.
+        -   **Table** – The setting applies to a separate account.
 
-    -   **Group** – The setting applies to an account interval group.
+        -   **Group** – The setting applies to an account interval group.
 
-    -   **All** – The setting applies to all accounts.
+        -   **All** – The setting applies to all accounts.
 
--   Set the **Debit account** and **Credit account** fields, based on the value
-    of the corresponding **Valid for** field:
+    -   Set the **Debit account** and **Credit account** fields, based on the value
+        of the corresponding **Valid for** field:
 
-    -   If the **Valid for** field is set to **Table**, select a ledger account.
+        -   If the **Valid for** field is set to **Table**, select a ledger account.
 
-    -   If the **Valid for** field is set to **Group**, select the code for an
-        account interval group.
+        -   If the **Valid for** field is set to **Group**, select the code for an
+            account interval group.
 
-    -   If the **Valid for** field is set to **All**, leave the field blank.
+        -   If the **Valid for** field is set to **All**, leave the field blank.
 
 9.  On the **Financial dimensions** FastTab, in the **Default financial
     dimensions** and **Offset dimensions** sections, you can specify financial
@@ -125,9 +125,9 @@ Create an expense or income code
     For example, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker**
     fields, select the dimensions for the account and the offset account.
 
-    **Note**. The **ExpenseAndIncomeCode** dimension is selected as the
-    dimension for expense and income codes on the **General ledger parameters**
-    page. It can’t be changed. If you set the **Empty dimension using** option
-    to **Yes**, the expense or income code will also include transactions that
-    have the same ledger accounts, but the **ExpenseAndIncomeCode** field is
-    blank.
+    >   **Note**. The **ExpenseAndIncomeCode** dimension is selected as the
+    >   dimension for expense and income codes on the **General ledger parameters**
+    >   page. It can’t be changed. If you set the **Empty dimension using** option
+    >   to **Yes**, the expense or income code will also include transactions that
+    >   have the same ledger accounts, but the **ExpenseAndIncomeCode** field is
+    >   blank.
