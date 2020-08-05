@@ -50,7 +50,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 <tbody>
 <tr class="odd">
 <td>Ask the community.</td>
-<td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Community page</span></a> to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://community.dynamics.com/"><span style="color: #0066cc;">Community page</span></a> to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr class="odd">
 <td>Get help with questions about licensing.</td>
