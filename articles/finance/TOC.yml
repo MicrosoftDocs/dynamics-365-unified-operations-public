@@ -786,18 +786,6 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
-    - name: Asset leasing
-      items:
-      - name: Manage asset leases
-        items:
-        - name: Add or copy a lease
-        - href: asset-leasing/add-lease.md
-        - name: Create a payment invoice 
-        - href: asset-leasing/create-payment-invoice.md
-        - name: Record right-of-use asset depreciation
-        - href: asset-leasing/record-rou-asset-depreciation.md
-        - name: Reverse posted lease transactions
-        - href: asset-leasing/reverse-posted-lease-trans.md
     - name: General ledger
       items:
       - name: General ledger overview
@@ -984,22 +972,22 @@
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
     - name: Finance Insights
       items:
+      - name: Finance Insights home page
+        href: finance-insights/finance-insights-admin.md
       - name: Configuration and administration
-        - name: Finance Insights home page
-          href: finance-insights/finance-insights-admin.md
-          items:
-          - name: Configure Finance Insights
-            href: finance-insights/configure-for-fin-insites.md
-          - name: Set up demo data for Payment predictions
-            href: finance-insights/set-up-demo-data.md
-          - name: Enable Customer payment predictions
-            href: finance-insights/enable-cust-paymnt-prediction.md
-          - name: Enable Cash flow forecasting
-            href: finance-insights/enable-cash-flow-forecasting.md
-          - name: Enable Budget proposals
-            href: finance-insights/enable-budget-proposal.md
-          - name: Create data integrator project
-            href: finance-insights/create-data-integrate-project.md
+        items:
+        - name: Configure Finance Insights
+          href: finance-insights/configure-for-fin-insites.md
+        - name: Set up demo data for Payment predictions
+          href: finance-insights/set-up-demo-data.md
+        - name: Enable Customer payment predictions
+          href: finance-insights/enable-cust-paymnt-prediction.md
+        - name: Enable Cash flow forecasting
+          href: finance-insights/enable-cash-flow-forecasting.md
+        - name: Enable Budget proposals
+          href: finance-insights/enable-budget-proposal.md
+        - name: Create data integrator project
+          href: finance-insights/create-data-integrate-project.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
