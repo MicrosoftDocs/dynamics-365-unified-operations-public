@@ -161,7 +161,7 @@ This topic provides information about functionality that supports Russian regula
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Tax accounting
-- [Expense and incomes codes](rus-expense-and-income-codes.md)
+- [Expense and income codes](rus-expense-and-income-codes.md)
 
 ## Additional resources
 
