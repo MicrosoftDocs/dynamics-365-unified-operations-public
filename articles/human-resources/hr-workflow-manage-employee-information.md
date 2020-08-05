@@ -73,6 +73,9 @@ To configure a basic workflow that is started when employees request changes to 
 11. Select **Matrix**.
 12. Add the **Worker identification number** workflow to the list.
 
+## Related articles
+
+[View and manage address changes](hr-personnel-view-address-changes.md) 
 
 
 
