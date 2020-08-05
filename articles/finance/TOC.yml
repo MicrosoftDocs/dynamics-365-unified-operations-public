@@ -2600,7 +2600,11 @@
             href: localizations/rus-counting-deferrals.md
           - name: Reporting for deferrals
             href: localizations/rus-reporting-deferrals.md
-      - name: Saudi Arabia
+        - name: Tax accounting
+        items:
+          - name: Expense and income codes
+            href: localizations/rus-expense-and-income-codes.md
+     - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
           href: localizations/saudi-arabia.md
