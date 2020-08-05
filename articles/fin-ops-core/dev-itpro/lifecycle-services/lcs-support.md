@@ -69,7 +69,7 @@ To obtain support, use the resources in the following table. These resources are
 </tr>
 <tr class="odd">
 <td>Get help with questions about licensing.</td>
-<td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
+<td>Contact your partner or a Microsoft sales representative.</td>
 </tr>
 <tr class="even">
 <td>Use the LCS event monitoring dashboard.</td>
