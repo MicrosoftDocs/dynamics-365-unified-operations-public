@@ -2601,7 +2601,7 @@
           - name: Reporting for deferrals
             href: localizations/rus-reporting-deferrals.md
         - name: Tax accounting
-        items:
+          items:
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
      - name: Saudi Arabia
