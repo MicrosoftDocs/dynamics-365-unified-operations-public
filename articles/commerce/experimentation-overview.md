@@ -43,7 +43,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 1. Setup test connector or purchase and setup third-party connector, following instructions here. <add link to Sam's doc>
 
 ## Create an experiment
-Once the third-party connector setup is complete, follow the necessary steps to create an experiment in the third-party service. The list of experiments from here will be pulled into site builder to help with associating the required web experiences.
+Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will surface in site builder within about 5 minutes.
 
 ## Create webpage variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
