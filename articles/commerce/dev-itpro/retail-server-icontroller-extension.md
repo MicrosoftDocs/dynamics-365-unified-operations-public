@@ -196,13 +196,16 @@ The following illustration shows the class structure of the extension.
 
     A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
 
-    The following example shows how to update the **RetailProxy.MPOSOffline.ext** config file.
+    The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
 
     ```xml
-    <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
+    <?xml version="1.0" encoding="utf-8"?> 
+    <retai1ProxyExtensions> 
+        <composition> 
+            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
+        </composition> 
+    </retai1ProxyExtensions> 
     ```
-
-    ![RetailProxy.MPOSOffline.ext config](media/OfflineProxy.PNG)
 
 ## Generate the Typescript proxy for POS
 
