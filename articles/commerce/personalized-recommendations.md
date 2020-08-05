@@ -118,6 +118,8 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Enable product recommendations](enable-product-recommendations.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
 [Add product recommendations on POS](product.md)

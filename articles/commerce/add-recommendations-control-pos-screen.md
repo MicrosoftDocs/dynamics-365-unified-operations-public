@@ -112,6 +112,8 @@ There are two configurations options available. Choose the option that works bes
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Add product recommendations on POS](product.md)
 
 [Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
