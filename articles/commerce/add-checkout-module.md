@@ -5,7 +5,7 @@ title: Checkout module
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -59,13 +59,13 @@ A checkout module shows an order summary and provides the functionality for plac
 
 ## Modules that can be used in the checkout module
 
-- **Shipping address** – This module lets a customer add or select the shipping address for an order. For more information about this module, see [Shipping address module](add-shippingaddress-module.md).
+- **Shipping address** – This module lets a customer add or select the shipping address for an order. For more information about this module, see [Shipping address module](ship-address-module.md).
 
     The following image shows an example of a shipping address module on a checkout page.
 
     ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
-- **Delivery options** – This module lets a customer select a mode of delivery for an order. For more information about this module, see [Delivery options module](add-deliveryoptions-module.md).
+- **Delivery options** – This module lets a customer select a mode of delivery for an order. For more information about this module, see [Delivery options module](delivery-options-module.md).
 
     The following image shows an example of a delivery options module on a checkout page.
  
@@ -77,7 +77,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Loyalty points** – This module lets a customer pay for an order by using loyalty points. It provides a summary of available points and expiring points, and lets the customer select the number of points to redeem. If the customer isn't signed in or isn't a loyalty member, or if the total amount in the cart is 0 (zero), this module is automatically hidden.
 
-- **Payment** – This module lets a customer pay for an order by using a credit or debit card. Customers can also provide a billing address for the payment option that they select. For more information about this module, see [Payment module](add-payment-module.md).
+- **Payment** – This module lets a customer pay for an order by using a credit or debit card. Customers can also provide a billing address for the payment option that they select. For more information about this module, see [Payment module](payment-module.md).
 
     The following image shows an example of gift card, loyalty points, and payment modules on a checkout page.
 
@@ -128,10 +128,10 @@ To add a checkout module to a new page and set the required properties, follow t
 
 [Order confirmation module](order-confirmation-module.md)
 
-[Delivery options](add-deliveryoptions-module.md)
+[Delivery options](delivery-options-module.md)
 
-[Payment module](add-payment-module.md)
+[Payment module](payment-module.md)
 
 [Gift card module](add-giftcard.md)
 
-[Shipping address module](add-shippingaddress-module.md)
+[Shipping address module](ship-address-module.md)
