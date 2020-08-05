@@ -56,7 +56,7 @@ Dual-write is transaction-based. For example, if a change in a Finance and Opera
 
 ### Do application users need to have any special permissions to enable or configure dual-write?
 
-You must have two Azure Active Directory (AD) applications set up for the Finance and Operations environment and two app application users set up in the Common Data Service environment. These application users should contain the appropriate application IDs. For the connection to work properly, you need to give the applications the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites#verify-requirements-and-grant-access).
+You must have two Azure Active Directory (AD) applications set up for the Finance and Operations environment and two app application users set up in the Common Data Service environment. These application users should contain the appropriate application IDs. For the connection to work properly, you need to give the applications the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
 ### I have multiple legal entities. Some of my maps are specific per legal entity, or they're valid for only some of the legal entities. What is the best way to address this requirement? Can we apply a filter, for example, **Company = USMF** to address this requirement?
 
