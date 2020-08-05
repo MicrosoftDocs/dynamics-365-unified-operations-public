@@ -5,7 +5,7 @@ title: Planning Optimization extensibility
 description: This topic describes the extensibility scenarios that are supported in Planning Optimization. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 07/07/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
