@@ -50,7 +50,7 @@ The Retail SDK is available in development environments provisioned using LCS, i
 
 To access the Retail SDK, login to the development VM and navigate to the **K:\\RetailSDK** folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After the hotfix deployment, the new version of the hotfix can be found inside the **K:\\RetailSDK\\Update** folder.
 
-If the current version of the SDK contains some extensions, then after upgrading, the config files and extension projects need to merged from the previous version of the SDK to the new version of the SDK. This merge is required only if your previous version of SDK includes extensions, and they need to be migrated to the new version. For more information, see [Upgrade the Retail channel extension to the latest Retail SDK](../dev-itpro/RetailSDK-update.md) for detailed steps. We recommend that you integrate the SDK with a source control system such as Git or Azure.
+If the current version of the SDK contains some extensions, then after upgrading, the config files and extension projects need to merged from the previous version of the SDK to the new version of the SDK. This merge is required only if your previous version of SDK includes extensions, and they need to be migrated to the new version. For more information, see [Upgrade the Retail channel extension to the latest Retail SDK](../RetailSDK-update.md) for detailed steps. We recommend that you integrate the SDK with a source control system such as Git or Azure.
 
 ## Full MSBuild integration
 
