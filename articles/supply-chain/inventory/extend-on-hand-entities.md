@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend inventory on-hand data entities
-description: This topic provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entity can work with the extensions.
+description: This topic provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
 author: sherry-zheng
 manager: tfehr
 ms.date: 07/27/2020
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension). This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand [data entity](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages) can work with the extensions. For more information about data entities, see [Data Management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension). This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages) can work with the extensions. For more information about data entities, see [Data Management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 > [!NOTE]
 > Here is a list of some of the inventory on-hand data entities:
