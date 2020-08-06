@@ -91,16 +91,16 @@ After you run the preceding command, two new files are generated: **DataActionEx
 
 ### Proxy data methods
 
-The proxy is closely linked to the Data Action Framework. For every Commerce Scale Unit extension API, there are two exposed proxy methods:
+The proxy is closely linked to the data action framework. For every Retail Server extension API, there are two exposed proxy methods:
 
-- The **createInput** method – This method creates an IActionInput class that can be used either to run a page load data action, or to do a direct state update or fetch via the actionContext.update() or actionContext.get() methods. This method is always named create{COMMERCE_SCALE_UNIT_EXTENSION_API_NAME}Input.
-- The **action** method – This method can be invoked on its own as an event-based data action, or it can be added inside another action method to create a data action chain. This method is always named {RETAIL_SERVER_API_NAME}Async.
+- **createInput** – This method creates an **IActionInput** class that can be used either to run a page load data action, or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{COMMERCE_SCALE_UNIT_EXTENSION_API_NAME}Input**.
+- **action** – This method can be invoked on its own as an event-based data action, or it can be added inside another action method to create a data action chain. This method is always named **{RETAIL_SERVER_API_NAME}Async**.
 
-## Create a new data action
+## Call a proxy API with a data action
 
 From the Dynamics 365 Commerce online SDK, include the two new files from the previous section in the **/src/actions/** directory. Then create a new data action .ts file, and paste in code that resembles the following example to call the Retail extension APIs from the data action. 
 
-The following example uses a file that is named get-warranty-info.ts. Notice that it imports the DataActionExtension.g and DataServiceEntities.g files that were generated earlier, and it calls the **createGetWarrantyByProductIdInput** Retail extension API.
+The following example uses a file that is named **get-warranty-info.ts**. Notice that it imports the **DataActionExtension.g** and **DataServiceEntities.g** files that were generated earlier, and it calls the **createGetWarrantyByProductIdInput** Retail Server extension API.
 
 ```typescript
 import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
