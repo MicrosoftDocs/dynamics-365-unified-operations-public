@@ -285,7 +285,7 @@ After it's implemented, the image component lets site authors edit images direct
 
 | Property       | Description                               | Type            |
 |----------------|-------------------------------------------|-----------------|
-| key            | The path of the image property in config. | Object          |
+| key            | The path of the image property in the **config** section of the module definition file. | Object          |
 | requestContext | The Request context object.               | IRequestContext |
 
 ### Video component
@@ -317,7 +317,7 @@ After it's implemented, the video component lets site authors edit videos direct
 
 | Property       | Description                         | Type            |
 |----------------|-------------------------------------|-----------------|
-| key            | The path of the property in config. | Object          |
+| key            | The path of the property in the **config** section of the module definition file. | Object          |
 | requestContext | The Request context object.         | IRequestContext |
 
 ## Generic editable HOC
