@@ -311,7 +311,7 @@ A good ALM solution provides version control, builds, automated builds, planning
 
 To work efficiently in a team, or even just to be able to go back and look at some changes that were done in the past, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops) .
 
-![Diagram of branching and merging](media/retailsdk12.png)
+:::image type="content" source="media/retailsdk12.png" alt-text="Diagram of branching and merging":::
 
 ### Retail SDK mirror branch
 
