@@ -91,11 +91,18 @@ To read the secret in the CRT extension, follow these steps.
             if (requestedType == typeof(SaveCartRequest))
             {
                 // Sample code to get the secret in string format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
-                string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
-                // Sample code to get the secret in X509Certificate2 format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest ();
-                X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+               
+                string result = null;
+                   
+                GetUserDefinedSecretStringValueServiceRequest keyVaultRequest = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+                GetUserDefinedSecretStringValueServiceResponse keyVaultResponse = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(keyVaultRequest);
+                result = keyVaultResponse.SecretStringValue;
+
+                 GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: null, secretName: "SecretName", thumbprint: null, expirationInterval: null);
+                 GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+
+                X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+               
                 // custom code to additional processing with secrets.
             }
         }
