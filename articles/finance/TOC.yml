@@ -809,7 +809,7 @@
         - name: Revalue lease payments tied to an Index Rate
           href: asset-leasing/revalue-payments-tied-2-index-rate.md
         - name: Reclassify short-term portion of lease liability
-          href: asset-leasting/reclassify-st-lease-liability.md
+          href: asset-leasing/reclassify-st-lease-liability.md
     - name: General ledger
       items:
       - name: General ledger overview
