@@ -2821,6 +2821,8 @@
         href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
       - name: Create a new transportation management engine
         href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Extend inventory on-hand data entities
+        href: inventory/extend-on-hand-entities.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
