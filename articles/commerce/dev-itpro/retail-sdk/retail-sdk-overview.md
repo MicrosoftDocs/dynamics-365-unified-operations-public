@@ -50,7 +50,7 @@ The Retail SDK is available in development environments provisioned using LCS, i
 
 To access the Retail SDK, login to the development VM and navigate to the **K:\\RetailSDK** folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After the hotfix deployment, the new version of the hotfix can be found inside the **K:\\RetailSDK\\Update** folder.
 
-If the current version of the SDK contains some extensions, then after upgrading, the config files and extension projects need to merged from the previous version of the SDK to the new version of the SDK. This merge is required only if your previous version of SDK includes extensions, and they need to be migrated to the new version. For more information, see [Upgrade the Retail channel extension to the latest Retail SDK](../RetailSDK-update.md) for detailed steps. We recommend that you integrate the SDK with a source control system such as Git or Azure.
+If the current version of the SDK contains some extensions, then after upgrading, the config files and extension projects need to be merged from the previous version of the SDK to the new version of the SDK. This merge is required only if your previous version of SDK includes extensions, and they need to be migrated to the new version. For more information, see [Upgrade the Retail channel extension to the latest Retail SDK](../RetailSDK-update.md) for detailed steps. We recommend that you integrate the SDK with a source control system such as Git or Azure.
 
 ## Full MSBuild integration
 
@@ -102,14 +102,14 @@ Retail SDK contains the below folders to help with the extension developments. T
 <tbody>
 <tr>
 <td>Assets</td>
-<td>Contains scripts and configuration files required for packaging. Only the these (HardwareStation.Extension.config, RetailProxy.MPOSOffline.ext.config, CommerceRuntime.Ext.config and CommerceRuntime.MPOSOffline.Ext.config)  configuration files can be edited to include extension binaries details for packaging.
+<td>Contains scripts and configuration files required for packaging. Only these (HardwareStation.Extension.config, RetailProxy.MPOSOffline.ext.config, CommerceRuntime.Ext.config and CommerceRuntime.MPOSOffline.Ext.config)  configuration files can be edited to include extension binaries details for packaging.
     <ul>
 <li><strong>manifest.json</strong> – SDK binary version.</li>
     </td>
 </tr>
 <tr>
 <td>BuildTools</td>
-<td>Scripts, sample cert and Customization.settings file (Packaging metadata) files. Don’t modify any files in this folder except the Customization.settings.
+<td>Scripts, sample cert, and Customization.settings file (Packaging metadata) files. Don’t modify any files in this folder except the Customization.settings.
 </td>
 </tr>
 <tr>
@@ -122,11 +122,11 @@ Retail SDK contains the below folders to help with the extension developments. T
 </tr>
 <tr>
 <td>OnlineStore</td>
-<td>E2E sample e-Commerce storefront solution built using the Retail proxy..</td>
+<td>E2E sample e-Commerce storefront solution built using the Retail proxy.</td>
 </tr>
  <tr>
 <td>Packages</td>
-<td>The out Retail deployable package generated after the SDK build for packaging will be copied here (Packages\RetailDeployablePackage). Retail deployable package is deployed to different environments(test, sandbox and Production using LCS)</td>
+<td>The out Retail deployable package generated after the SDK build for packaging will be copied here (Packages\RetailDeployablePackage). Retail deployable package is deployed to different environments(test, sandbox, and Production using LCS)</td>
 </tr>
     <td>PaymentExternals</td>
 <td>Extension payment assemblies must be copied. The following three subfolders hold various payment files:
@@ -148,7 +148,7 @@ Retail SDK contains the below folders to help with the extension developments. T
 </tr>
 <tr>
 <td>POS</td>
-<td>Contains the POS app and extension project :
+<td>Contains the POS app and extension project:
 <ul>
 <li><strong>App</strong> – Modern POS–specific views and other items</li>
 <li><strong>Contracts</strong> – Public contracts for POS extensions, extension can consume only these contracts for POS extension.</li>
@@ -167,7 +167,7 @@ Retail SDK contains the below folders to help with the extension developments. T
 <td>SampleExtensions</td>
 <td>Contains the sample projects and templates for extensions:
 <ul>
-<li><strong>CommerceRuntime</strong> – Sample extension projects for business logic extensions (CRT triggers, handlers and new service extension).</li>
+<li><strong>CommerceRuntime</strong> – Sample extension projects for business logic extensions (CRT triggers, handlers, and new service extension).</li>
 <li><strong>HardwareStation</strong> – Sample Hardware station extension projects</li>
 <li><strong>HybridApp</strong> – Android and iOS shell apps for POS. Extension can build these apps and deploy it to Android and iOS platform</li>
 <li><strong>OnlineStore</strong> – Sample online storefront app</li>
@@ -197,9 +197,9 @@ The below tables provide information on which components in SDK must be customiz
 
 | Item | Description |
 |---|---|
-| Scenarios | Extend the POS for user experience changes, client logic, workflow and simple validations.|
+| Scenarios | Extend the POS for user experience changes, client logic, workflow, and simple validations.|
 | Commerce SDK reference | \RetailSDK\POS.  Open the ModernPos.Sln or CloudPos.sln. Add extension to the POS.Extension project, don't modify anything in the core POS app/web projects.|
-| Technology | Typescript, HTML and CSS|
+| Technology | Typescript, HTML, and CSS|
 | Documentation | [Run the point of sale (POS) samples](../pos-run-samples.md) |
 
 ### Commerce Runtime (CRT)
@@ -253,7 +253,7 @@ The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easie
 
 ## Deployment packages
 
-After extension development (Commerce runtime, Retail Server, database scripts, POS, and Hardware station) you can use the Retail SDK to generate deployment packages. Packages can be deployed to test, sandbox and production environments. For more information refer [Create deployable packages](retail-sdk-packaging.md)
+After extension development (Commerce runtime, Retail Server, database scripts, POS, and Hardware station) you can use the Retail SDK to generate deployment packages. Packages can be deployed to test, sandbox, and production environments. For more information, see [Create deployable packages](retail-sdk-packaging.md)
 
 ## Dependencies, build order, and full build
 
@@ -271,7 +271,7 @@ For Modern POS, create an app package signing certificate in order to build corr
 
 :::image type="content" source="media/retailsdk07.png" alt-text="Screenshot of code for BuildTools Customization settings":::
 
-It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).
+It's good practice to sign your assemblies with a strong name, even though a strong name isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).
 
 The generated installer files for self-service components like MPOS, Hardware station, Store scale unit can be signed with [SignTool.exe](https://docs.microsoft.com/windows/win32/seccrypto/signtool).
 
@@ -287,7 +287,7 @@ It's easy to add new projects to the Retail SDK's build system. You can either c
 
 ### Changing the build order or adding to the build
 
-The whole directory tree of the Retail SDK is built with the help of MSBuild traversal files (dirs.proj files). The following illustration shows the main traversal file of the Retail SDK. Similar files might also exist in subdirectories. Notice that Visual Studio solution files (.sln files) are very similar to traversal files. Both "direct" the MSBuild engine to process other build scripts.
+The whole directory tree of the Retail SDK is built with the help of MSBuild traversal files (dirs.proj files). The following illustration shows the main traversal file of the Retail SDK. Similar files might also exist in subdirectories. Notice that Visual Studio solution files (.sln files) are similar to traversal files. Both "direct" the MSBuild engine to process other build scripts.
 
 ![Screenshot of code for changing build order or adding to build](media/retailsdk10.png)
 
@@ -315,10 +315,10 @@ To work efficiently in a team, or even just to be able to go back and look at so
 
 ### Retail SDK mirror branch
 
-A very important point to emphasize is that the non-customized Retail SDK should be stored in your source control. You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes). Only a simple merge of all changes (additions, changes, and deletions) should be done. No other development work should occur in this branch. The Retail SDK has its own version. All Commerce binaries and packages that are included have the same version. The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.
+An important point to emphasize is that the non-customized Retail SDK should be stored in your source control. You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes). Only a simple merge of all changes (additions, changes, and deletions) should be done. No other development work should occur in this branch. The Retail SDK has its own version. All Commerce binaries and packages that are included have the same version. The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.
 
 ### Customization branch
 
 For development a new customization branch should be created. At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for team's development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly.
 
-Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, update this rarely. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
+The **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, update this property rarely. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
