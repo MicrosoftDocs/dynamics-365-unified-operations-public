@@ -48,7 +48,7 @@ The functionality for "shop similar looks" recommendations uses product images o
 ### Example scenarios
 
 - A customer views a black striped sweater and receives a recommendation for a similar sweater in red. The customer selects the recommended product instead of the originally viewed product and then receives recommendations for similar products in red. 
-- A customer uses the "shop similar looks" feature to discover matching earrings for a ring that the customer is interested in purchasing.
+- A customer uses "shop similar looks" recommendations to discover matching earrings for a ring that the customer is interested in purchasing.
 
 ## Enable "shop similar looks" recommendations in Commerce headquarters
 
