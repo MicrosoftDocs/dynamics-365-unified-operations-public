@@ -806,6 +806,10 @@
           href: asset-leasing/associate-lease-with-fixed-asset.md
         - name: Record leases in foreign currencies
           href: asset-leasing/record-leases-foreign-currency.md
+        - name: Revalue lease payments tied to an Index Rate
+          href: asset-leasing/revalue-payments-tied-2-index-rate.md
+        - name: Reclassify short-term portion of lease liability
+          href: asset-leasting/reclassify-st-lease-liability.md
     - name: General ledger
       items:
       - name: General ledger overview
