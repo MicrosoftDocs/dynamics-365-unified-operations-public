@@ -273,7 +273,7 @@ For Modern POS, create an app package signing certificate in order to build corr
 
 It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).
 
-The generated installer files for self-service components like MPOS, Hardware station, Store scale unit can be signed with [SignTool.exe](https://docs.microsoft.com/en-us/windows/win32/seccrypto/signtool).
+The generated installer files for self-service components like MPOS, Hardware station, Store scale unit can be signed with [SignTool.exe](https://docs.microsoft.com/windows/win32/seccrypto/signtool).
 
 Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder or in Azure key vault, for password protected or secured certificate use Azure Key vault.
 
