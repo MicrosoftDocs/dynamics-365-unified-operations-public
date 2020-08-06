@@ -48,7 +48,7 @@ It's assumed that the following prerequisites are in place:
 
 In addition, make sure that your .env file's **MSDyn365Commerce\_BASEURL** value points to the environment that has the deployed Retail extension, so that you can test against it. If this option isn't available, you can use mocks instead.
 
-If you're developing on the local Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here is an example of an .env file.
+If you're developing on the local Tier 1 Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here is an example of an .env file.
 
 ```text
 …
@@ -70,13 +70,12 @@ For more information, see [Configure a development environment (.env) file](conf
 
 ## Create proxy files
 
+You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
+
 For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](https://docs.microsoft.com/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos). That topic explains how to create a proxy file by using a command that resembles the following command.
  
 ```Console
-C:\RetailSDK\SourceCode\RetailSDK\Code\References\CommerceProxyGenerator.10.9.19281.3\tools>
-CommerceProxyGenerator.exe 
-
-C:\RetailSDK\SourceCode\RetailSDK\Code\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19315.4\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll c:\RetailSDK\SourceCode\RetailSDK\Code\References\RetailServer.Extensions.WarrantySample.dll /application:typescriptextensions
+K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.14.20128.1\tools>CommerceProxyGenerator.exe ..\..\..\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.22.20167.4\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll k:\WarrantySample\Contoso.RetailServer.WarrantySample.dll /application:typescriptextensions
 ```
 
 > [!NOTE]
@@ -85,10 +84,7 @@ C:\RetailSDK\SourceCode\RetailSDK\Code\References\Microsoft.Dynamics.Retail.Prox
 The process for creating proxy files for e-Commerce is similar, but the final **/application:typescriptextensions** option is replaced by **/application:typescriptmoduleextensions**, as shown in the following example.
 
 ```Console
-C:\RetailSDK\SourceCode\RetailSDK\Code\References\CommerceProxyGenerator.10.9.19281.3\tools>
-CommerceProxyGenerator.exe 
-
-C:\RetailSDK\SourceCode\RetailSDK\Code\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19315.4\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\SourceCode\RetailSDK\Code\References\RetailServer.Extensions.WarrantySample.dll /application:typescriptmoduleextensions
+K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.14.20128.1\tools>CommerceProxyGenerator.exe ..\..\..\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.22.20167.4\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll k:\WarrantySample\Contoso.RetailServer.WarrantySample.dll /application:typescriptmoduleextensions
 ```
 
 After you run the preceding command, two new files are generated: **DataActionExtension.g.ts** and **DataServiceEntities.g.ts**.
