@@ -200,7 +200,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Extend the POS for user experience changes, client logic, workflow and simple validations.|
 | Commerce SDK reference | \RetailSDK\POS.  Open the ModernPos.Sln or CloudPos.sln. Add extension to the POS.Extension project, don't modify anything in the core POS app/web projects.|
 | Technology | Typescript, HTML and CSS|
-| Documentation | [Run the point of sale (POS) samples](../pos-run-samples.ms) |
+| Documentation | [Run the point of sale (POS) samples](../pos-run-samples.md) |
 
 ### Commerce Runtime (CRT)
 
@@ -236,7 +236,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Hardware station to add or modify logics related to peripherals.|
 | Commerce SDK reference | \RetailSDK\ \SampleExtensions\HardwareStation. Open the HardwareStationSamples.sln.|
 | Technology | C# |
-| Documentation | [Integrate POS with a new hardware device](../dev-itpro/hardware-device-extension.md) | 
+| Documentation | [Integrate POS with a new hardware device](../hardware-device-extension.md) | 
 
 ### Payment
 
@@ -245,7 +245,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios |Integrate POS with new Payment connector. |
 | Commerce SDK reference |\RetailSDK\SampleExtensions\HardwareStation\Extension.PaymentSample. Open the HardwareStation.Extension.PaymentSample.sln. |
 | Technology | C#|
-| Documentation | [Create an end-to-end payment integration for a payment terminal](../dev-itpro/end-to-end-payment-extension.md)|
+| Documentation | [Create an end-to-end payment integration for a payment terminal](../end-to-end-payment-extension.md)|
 
 ## Best practices for naming
 
