@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (August 06, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
-author: Darinkramer
+author: darinkramer
 manager: AnnBe
 ms.date: 8/06/2020
 ms.topic: article
@@ -29,77 +29,93 @@ ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (August 06, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3444. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (August 06, 2020)
 
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3444. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-## Claire creates a workflow for buying and selling leave requests - (446557)
+## Platform update 10.0.12(36) is now available
 
-In some organizations, your are allowed to buy or sell their leave. This benefit is provided to enable employees to get the most out of their leave benefit. By providing a more automated way to manage the policies and requests for the human resource department, HR will help eliminate mistakes and streamline the leave management process.
-
-## Worker postal addresses V2 entity has access across legal entities with restricted access to users to legal entity - (459126)
-
-With this change, the Worker postal address V2 will restrict based on the legal entity access given to the user.
-
-## Workflow email hyperlink failing to open to relevant reviews - (437398)
-
-When the placeholder to open a performance review is used in the review workflow. The hyperlink generated from the placeholder, in the email, will now open the selected record.
-
-## New leave and absence: Buy/Sell Entities - (473180)
-
-Data management framework entities are now available for the buying and selling of leave.
-
-## Platform update 10.0.12(36) is now available.
-
-More information is available [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
-
-## When viewing record information and using advanced filters user could gain access to other employees records - (472490)
-
-With this change, Employee self-service users are only be able to access their records using employee self service. Viewing record information while changing the filtering option will no longer expose additional data.
-
-## Personnel Management Analytics include exited worker records  - (382893)
-
-With this release, personnel management analytics will now only include active workers. 
- 
-## Unable to process a Merit increase for an employee - (473125)
-
-This change allows for the entry of merit increases when the effective date is changed for the new merit increase.
-
-## Review workflow can be started more than once - (467541)
-
-With this change, the performance review workflow can only be "started" one time. The status for the manager will no longer display the option to begin the review.
-
-## Leave request work flow ends in error when cancelling an approved leave request. - (472063)
-
-In this release, when an approved leave request is cancelled the state of the request will no longer remain approved and the workflow will continue.
-
-## System suggests exited workers when creating a new review form the template - (460624)
-
-With this change, exited workers will no longer be available when creating new reviews from a template. Reviews cannot be created for employees that are outside the dates of the their employment.
-
-## Position hierarchy circular reference detection - (415879)
-
-With this change, position hierarchy circular reference detection is now limited to a single point and time. Circular reference detection can be run for different dates to verify the reporting structure doesn't have any circular references.
+For more information, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
 
 ## Data management framework (DMF) entities for Benefits management
  
-Benefits management entities are releasing. DMF entities allow you to import and export data to easily configure benefits management. A Benefits management template will be available to move data. The template exports and imports the data sequentially to respect data dependencies.
+Benefits management entities are releasing. DMF entities allow you to import and export data to easily configure benefits management. A Benefits management template will be available to move data. The template exports and imports the data sequentially to respect data dependencies. For more information, see:
+
+- [DMF entity support](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) in the Dynamics 365 2020 release wave 1 plan
+- [Data management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+
+
+## Claire creates a workflow for buying and selling leave requests (446557)
+
+For more information, see:
+
+- [Allow employees to buy and sell leave](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) in the Dynamics 365 2020 release wave 2 plan
+- [Manage buy and sell leave policies](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Buy and sell leave](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+
+
+## Worker postal addresses V2 entity has access across legal entities with restricted access (459126)
+
+With this change, the **Worker postal address V2** entity will restrict based on the legal entity access given to the user.
+
+## Workflow email hyperlink fails to open relevant reviews (437398)
+
+When you use the placeholder to open a performance review in the review workflow, the hyperlink generated in the email now opens the selected record.
+
+## New entities for buying and selling leave (473180)
+
+Data management framework entities are now available for buying and selling leave. For more information, see [Data management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+
+## When viewing record information and using advanced filters, a user could gain access to other employees' records (472490)
+
+With this change, Employee self-service users can only access their own records while using employee self service. Viewing record information while changing the filtering option no longer exposes additional data.
+
+## Personnel management analytics include exited worker records (382893)
+
+With this release, personnel management analytics now only include active workers. 
+ 
+## Unable to process a merit increase for an employee (473125)
+
+This change allows you to enter merit increases when you change the effective date for the new merit increase.
+
+## Review workflow can be started more than once (467541)
+
+With this change, you can only start the performance review workflow once. The status for the manager no longer displays the option to begin the review.
+
+## Leave request work flow ends in error when canceling an approved leave request (472063)
+
+In this release, when you cancel an approved leave request, the state of the request no longer remains approved, and the workflow will continue.
+
+## System suggests exited workers when creating a new review form the template (460624)
+
+With this change, exited workers are longer available when creating new reviews from a template. You can't create reviews for employees who are outside the dates of their employment.
+
+## Position hierarchy circular reference detection (415879)
+
+With this change, position hierarchy circular reference detection is limited to a single point in time. You can run circular reference detection for different dates to verify the reporting structure doesn't have any circular references.
 
 ## In preview
 
-You can now make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**.
+You can make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**. For more information about saved views, see:
+
+- [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) in the Dynamics 365 2020 release wave 2 plan
+- [Build forms that fully utilize saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
 
 ## Human Resources application in Teams
 
-Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
+
+- [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
+- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ## Buy and sell leave 
 
 Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature automates managing policies and requests for the HR department. It streamlines the leave management process and helps eliminate mistakes. For more information, see:
 
-- [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
-- [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
+- [Allow employees to buy and sell leave](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) in the Dynamics 365 2020 release wave 2 plan
+- [Manage buy and sell leave policies](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Buy and sell leave](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
 
 ## Leave accrual for a single company or single plan
 
