@@ -2,7 +2,7 @@
 # required metadata
 
 title: Record leases in foreign currencies
-description: This topic lists the steps for recording leases in currencies other than the accounting or reporting currencies.
+description: This topic describes the adjustment to lease liability for a right of use asset that arises from changes in variable lease payments because of a change in the index rate.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/05/2020
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Asset leasing accounts for variable lease payments measured by an index rate. Changes in lease payments caused by index rate fluctuations constitute a lease adjustment under IFRS 16. The lease liability and right-of-use (ROU) assets will be adjusted to account for the new payments. Under US GAAP ASC 842, only the variable payments will change when payments increase/decrease due to a change in the index rate unless there are additional changes to cash flows such as a change in lease terms related to interest rates.
-For more information, refer to ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
+This topic describes the adjustment to lease liability for a right of use asset that arises from changes in variable lease payments because of a change in the index rate. The lease liability and right-of-use (ROU) assets will be adjusted to account for the new payments. Under US GAAP ASC 842, only the variable payments will change when payments increase/decrease due to a change in the index rate unless there are additional changes to cash flows such as a change in lease terms related to interest rates. For more information, refer to ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
 
 1.	To run the lease index revaluation process, open the **Index rate revaluation** page (**Asset leasing > Periodic > Index rate revaluation**).
    The Index rate revaluation page shows all prior lease index revaluation processes that have been run. Information included on this form are the Process ID generated from the number sequences setup form, the legal entity, number of leases adjusted, total liability adjustment for IFRS 16 leases, and the total variable payments adjusted for ASC 842 leases.
