@@ -48,25 +48,24 @@ The functionality for "shop similar looks" recommendations uses product images o
 ### Example scenarios
 
 - A customer views a black striped sweater and receives a recommendation for a similar sweater in red. The customer selects the recommended product instead of the originally viewed product and then receives recommendations for similar products in red. 
-- A customer uses "shop similar looks" recommendations to discover matching earrings for a ring that the customer is interested in purchasing.
+- A customer uses "shop similar looks" recommendations to discover matching earrings for a ring that the customer is interested in buying.
 
 ## Enable "shop similar looks" recommendations in Commerce headquarters
 
-Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Gen 2 (ADLS).
+Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Gen2.
 
 ### Prerequisites
 
-Before retailers can begin showing "shop similar looks" recommendations to customers, there are two prerequisite steps: 
+Before retailers can begin to show "shop similar looks" recommendations to customers, there are two prerequisite steps:
+
 - [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
-- Confirm that the media server supports HTTPs calls. 
+- Confirm that the media server supports HTTPS calls.
 
-For the recommendations engine to access the product images, retailers must ensure that they have generated the product URLs.
-
-To generate product URLs in Commerce headquarters, follow these steps.
+For the recommendations engine to access the product images, retailers must generate the product URLs. To generate product URLs in Commerce headquarters, follow these steps.
 
 1. Go to **Product images**.
 1. On the Action Pane, select **Define media template**.
-1. Under **Media URLs** on the **Define media template** properties pane, select **Generate URLs**.
+1. In the **Define media template** properties pane, under **Media URLs**, select **Generate URLs**.
 
 > [!NOTE]
 > When you enable the "shop similar looks" recommendations feature, the process of generating product recommendation lists begins. Up to a day might be required before those lists are available and visible online and on POS terminals.
@@ -77,11 +76,11 @@ To enable the "shop similar looks" recommendations feature in Commerce headquart
 1. In the list of available features, search for and select **Shop similar looks**.
 1. In the right pane, select **Enable** to turn on the service.
 
-The following illustration shows the **Shop similar looks** feature, located on the **Feature management** page in Commerce headquarters.
+The following illustration shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters.
 
 ![The Shop similar looks feature on the Feature management page in Commerce headquarters](./media/enableshopsimilarlooks.png)
 
-Once the tasks above have been completed, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be filtered further.
+After the preceding tasks been completed, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be filtered further.
 
 > [!NOTE]
 > If you turn off the "shop similar looks" recommendations feature, no other types of product recommendations are affected. For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
