@@ -271,4 +271,6 @@ Here in an example of the page mock.
 
 [Cookie API overview](cookie-api-overview.md)
 
+[Interactive components overview](interactive-components.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
