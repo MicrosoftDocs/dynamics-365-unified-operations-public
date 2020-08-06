@@ -200,7 +200,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Extend the POS for user experience changes, client logic, workflow and simple validations.|
 | Commerce SDK reference | \RetailSDK\POS.  Open the ModernPos.Sln or CloudPos.sln. Add extension to the POS.Extension project, don't modify anything in the core POS app/web projects.|
 | Technology | Typescript, HTML and CSS|
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/pos-run-samples?toc=/dynamics365/commerce/toc.json |
+| Documentation | [Run the point of sale (POS) samples](../pos-run-samples.ms) |
 
 ### Commerce Runtime (CRT)
 
@@ -209,7 +209,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Extend the commerce runtime to add or modify business logic. Ex: Calculating tax, Price, discount etc.|
 | Commerce SDK reference |\RetailSDK\SampleExtensions\CommerceRuntime. Open the CommerceRuntimeSamples.sln. |
 | Technology | C#|
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/commerce-runtime-extensibility?toc=/dynamics365/commerce/toc.json | 
+| Documentation | [Commerce runtime (CRT) and Retail Server extensibility](../commerce-runtime-extensibility.md) | 
 
 ### Retail Server (RS)
 
@@ -218,7 +218,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Create new Retail server extension to expose new Commerce APIs to the client.|
 | Commerce SDK reference | \RetailSDK\SampleExtensions\RetailServer. Open any of the sample extensions inside the RetailServer folder.|
 | Technology | OData, C#|
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension?toc=/dynamics365/commerce/toc.json|
+| Documentation | [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](../retail-server-icontroller-extension.md)<br>[Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)](../retail-server-extension.md)|
 
 ### Typescript Proxy
 
@@ -227,7 +227,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Typescript proxy is required if new RS extensions need to be consumed in POS or E-Commerce clients.|
 | Commerce SDK reference | \RetailSDK\SampleExtensions\RetailServer. Open any of the sample extensions inside the RetailServer folder.|
 | Technology | OData, C#|
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension?toc=/dynamics365/commerce/toc.json| 
+| Documentation | [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](../retail-server-icontroller-extension.md)<br>[Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)](../retail-server-extension.md) |
 
 ### Hardware station
 
@@ -236,7 +236,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios | Hardware station to add or modify logics related to peripherals.|
 | Commerce SDK reference | \RetailSDK\ \SampleExtensions\HardwareStation. Open the HardwareStationSamples.sln.|
 | Technology | C# |
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hardware-device-extension | 
+| Documentation | [Integrate POS with a new hardware device](../dev-itpro/hardware-device-extension.md) | 
 
 ### Payment
 
@@ -245,7 +245,7 @@ The below tables provide information on which components in SDK must be customiz
 | Scenarios |Integrate POS with new Payment connector. |
 | Commerce SDK reference |\RetailSDK\SampleExtensions\HardwareStation\Extension.PaymentSample. Open the HardwareStation.Extension.PaymentSample.sln. |
 | Technology | C#|
-| Documentation | https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/end-to-end-payment-extension?toc=/dynamics365/commerce/toc.json| 
+| Documentation | [Create an end-to-end payment integration for a payment terminal](../dev-itpro/end-to-end-payment-extension.md)|
 
 ## Best practices for naming
 
