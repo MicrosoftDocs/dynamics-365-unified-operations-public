@@ -89,6 +89,13 @@ K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.
 
 After you run the preceding command, two new files are generated: **DataActionExtension.g.ts** and **DataServiceEntities.g.ts**.
 
+### Proxy data methods
+
+The proxy is closely linked to the Data Action Framework. For every Commerce Scale Unit extension API, there are two exposed proxy methods:
+
+- The **createInput** method – This method creates an IActionInput class that can be used either to run a page load data action, or to do a direct state update or fetch via the actionContext.update() or actionContext.get() methods. This method is always named create{COMMERCE_SCALE_UNIT_EXTENSION_API_NAME}Input.
+- The **action** method – This method can be invoked on its own as an event-based data action, or it can be added inside another action method to create a data action chain. This method is always named {RETAIL_SERVER_API_NAME}Async.
+
 ## Create a new data action
 
 From the Dynamics 365 Commerce online SDK, include the two new files from the previous section in the **/src/actions/** directory. Then create a new data action .ts file, and paste in code that resembles the following example to call the Retail extension APIs from the data action. 
