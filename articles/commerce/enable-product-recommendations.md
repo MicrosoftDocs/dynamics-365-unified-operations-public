@@ -100,6 +100,8 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
 [Add product recommendations on POS](product.md)

@@ -630,6 +630,8 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
+        - name: Enable "shop similar looks" recommendations
+          href: shop-similar-looks.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
@@ -2136,7 +2138,9 @@
           href: dev-itpro/extend-metadata.md
         - name: Call the CRT service in offline mode
           href: dev-itpro/call-crt-service-offline.md
-        - name: Create new Retail Server extension
+        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
+          href: dev-itpro/retail-server-icontroller-extension.md
+        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
           href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
