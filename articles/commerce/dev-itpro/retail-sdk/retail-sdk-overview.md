@@ -42,7 +42,7 @@ The Retail software development kit (SDK) includes the code, code samples, templ
 > [!NOTE]
 > The Retail SDK supports the Transport Layer Security (TLS) 1.2 standard. Any customization build using the Retail SDK should follow the TLS 1.2 standard.
 
-![Commerce components](media/developer-environment.png)
+:::image type="content" source="media/developer-environment.png" alt-text="Commerce components":::
 
 ## Download the Retail SDK
 
