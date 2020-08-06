@@ -86,7 +86,7 @@ Before starting development with Retail SDK, you must do a full msbuild from the
 2. Navigate to the Retail SDK folder in developer command prompt.
 3. Run the msbuild by typing the command **msbuild /t:rebuild** from the root of the SDK folder. The **dirs.proj** file in the root of the SDK (**RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj**) contains all the necessary details to build  the full SDK.
 
-![Retail SDK command prompt](media/retail-sdk-command-prompt.png)
+    ![Retail SDK command prompt](media/retail-sdk-command-prompt.png)
 
 ## Retail SDK components deep dive
 
@@ -249,7 +249,7 @@ The below tables provide information on which components in SDK must be customiz
 
 ## Best practices for naming
 
-The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and extension types, if extension code referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. to distinguish between Microsoft libraries vs the libraries from extension. The extension libraries must not begin with Microsoft.Dyanmics name.
+The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and extension types. If your extension code references a type from the Microsoft binary, reference it by using Microsoft.Dynamics to distinguish between Microsoft libraries and the libraries from the extension. The extension libraries must not begin with Microsoft.Dynamics name.
 
 ## Deployment packages
 
@@ -260,8 +260,8 @@ After extension development (Commerce runtime, Retail Server, database scripts, 
 You should build all the extensions and required out-of-box projects ([a full msbuild from the root of the SDK](#build-the-retail-sdk)).
 
 - You should build your extension, POS, and packaging projects, but you do not need to build the sample projects included in the Retail SDK. You can edit the **dirs.proj** in the Retail SDK to remove unwanted sample projects, but don’t remove the packaging and POS projects from the list.
-- Include the extension project in the **dirs.proj** file of the respective folder so that msbuild command ran from the root SDK folder builds all the extension and required OOB projects.
-- The dirs.proj in the Retail SDK root folder is sequenced in the right order to build all the required projects and then the packaging project. The sequence must correct so that the project and dependencies are built correctly.
+- Include the extension project in the **dirs.proj** file of the respective folder so that when you run msbuild from the root SDK folder, all the extension and required out-of-box projects are built.
+- The **dirs.proj** in the Retail SDK root folder is sequenced in the right order to build all the required projects and then the packaging project. The sequence must correct so that the project and dependencies are built correctly.
 
 ## Normal configuration/code signing
 
