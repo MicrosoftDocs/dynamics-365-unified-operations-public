@@ -56,7 +56,7 @@ Product recommendations are supported only for Commerce users who have migrated 
 
 ### Prerequisites
 
-Before retailers can begin showing "shop similar looks" recommendations to customers, there are two prerequisites: 
+Before retailers can begin showing "shop similar looks" recommendations to customers, there are two prerequisite steps: 
 - [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
 - Confirm that the media server supports HTTPs calls. 
 
