@@ -41,23 +41,32 @@ This topic describes how to enable "shop similar looks" product recommendations 
 
 The "shop similar looks" recommendations feature in Dynamics 365 Commerce uses the power of artificial intelligence and machine learning (AI-ML) to deliver recommendations for visually similar products to customers. By making "shop similar looks" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers easily find what they want.
 
-The functionality for "shop similar looks" recommendations uses product images of seed product variants to find and recommend visually similar products in a retailer's product catalog. The Commerce recommendations system also provides *selectors*, or filters for product types. Customer can use selectors to further refine their searches. For example, for fashion products, customers might be able to filter results might by using selectors for color and type of clothing.
+The functionality for "shop similar looks" recommendations uses product images of seed product variants to find and recommend visually similar products in a retailer's product catalog. 
 
 "Shop similar looks" recommendations are available in both the point of sale (POS) and e-Commerce experiences.
 
 ### Example scenarios
 
 - A customer views a black striped sweater and receives a recommendation for a similar sweater in red. The customer selects the recommended product instead of the originally viewed product and then receives recommendations for similar products in red. 
-- A retailer provides a selector for type of jewelry. A customer uses this selector to find suitably matching earrings for a ring that the customer is interested in.
+- A customer uses "Shop Similar Looks" to discover matching earrings for a ring that the customer is interested purchasing.
 
 ## Enable "shop similar looks" recommendations in Commerce headquarters
 
-Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Storage.
+Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Gen 2 (ADLS).
 
-Before customers can receive "shop similar looks" recommendations, retailers must enable product recommendations in Commerce headquarters. For more information, see [Enable product recommendations](enable-product-recommendations.md).
+## Prerequisites
+Before retailers can begin showing "shop similar looks" recommendations to customers, there are two prerequisites: 
+1. [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
+1. Confirm that the media server supports HTTPs calls. 
+
+For the recommendations engine to access the product images, Retailers will need to ensure that they have generated the product URLs.
+To do this, 
+
+1. Go to **Product images**.
+1. In the list of settings, select **Define Media Template** and then select **Generate URLs**.
 
 > [!NOTE]
-> When you enable the "shop similar looks" recommendations feature, the process of generating product recommendation lists begins. Up to one day might be required before those lists are available and visible online and on POS terminals.
+> When you enable the "shop similar looks" recommendations feature, the process of generating product recommendation lists begins. Up to a day might be required before those lists are available and visible online and on POS terminals.
 
 To enable the "shop similar looks" recommendations feature in Commerce headquarters, follow these steps.
 
@@ -65,11 +74,11 @@ To enable the "shop similar looks" recommendations feature in Commerce headquart
 1. In the list of available features, search for and select **Shop similar looks**.
 1. In the right pane, select **Enable** to turn on the service.
 
-The following illustration shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters.
+The following illustration shows the **Shop similar looks** feature, located on the **Feature management** page in Commerce headquarters.
 
 ![The Shop similar looks feature on the Feature management page in Commerce headquarters](./media/enableshopsimilarlooks.png)
 
-After you enable the "shop similar looks" recommendations feature in Commerce headquarters, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be further filtered based on selectors.
+Once the above tasks are completed, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be further filtered.
 
 > [!NOTE]
 > If you turn off the "shop similar looks" recommendations feature, no other types of product recommendations are affected. For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
