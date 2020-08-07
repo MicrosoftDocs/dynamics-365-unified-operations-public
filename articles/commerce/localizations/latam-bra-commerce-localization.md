@@ -45,7 +45,7 @@ The following features in Commerce headquarters and the point of sale (POS) are 
 - Retail product management and calculation of Brazil-specific taxes that are applicable to sales to final consumers. This feature includes an estimated tax breakdown in printed fiscal receipts.
 - Generation of NFC-e (Nota Fiscal do Consumidor eletrônica) electronic fiscal documents for retail sales (model 65), submission of the electronic fiscal documents via the government's web services, and printing of DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) NFC-e receipts.
 - Cancellation of retail sales via the government's web services within the allowed timeframe.
-- Generation of NF-e (Nota Fiscal eletrônica) electronic fiscal documents for retail returns (model 55), submission of the electronic fiscal documents via the government's web services, and printing of DANFE NF-e receipts.
+- Generation of NF-e (Nota Fiscal eletrônica) electronic fiscal documents for retail returns (model 55), submission of the electronic fiscal documents via the government's web services, and printing of DANFE receipts.
 - Generation of CF-e (Cupom Fiscal eletrônico) electronic fiscal documents for retail sales in São Paulo (model 59) and registration of the electronic fiscal documents in the SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal device.
 - Electronic funds transfer (EFT) integration for the POS. This feature includes integration with popular local and global payment providers, and support for debit and credit card payments.
 - Management of Brazil-specific customer registration numbers. This feature includes capabilities for entering, viewing, and modifying CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) tax registration numbers or Foreigner IDs, and for registering these numbers in NFC-e, NF-e, and CF-e, and printed receipts.
@@ -62,7 +62,7 @@ The following scenarios are supported by Commerce localization for Brazil:
 
 - Cash-and-carry sales of goods
 - Cancellations and returns of cash-and-carry sales of goods
-- Cash-and-carry sales of goods in offline mode - contingency
+- Cash-and-carry sales of goods in offline contingency mode
 - Cancellation by substitution
 - Issuing gift cards and payments by gift cards
 - Registering and processing customer orders in the POS
