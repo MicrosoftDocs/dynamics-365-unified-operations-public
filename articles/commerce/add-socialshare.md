@@ -45,7 +45,7 @@ Each social media platforms may track some cookies, therefore this module requir
 
 The following image shows an example of a Social share module that is used on product details page.
 
-![Example of a social share module](./media/ecommerce_socialshare.PNG)
+![Example of a social share module](./media/ecommerce-socialshare.png)
 
 ## Social share module properties
 
