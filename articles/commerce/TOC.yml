@@ -2054,6 +2054,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
+        - name: Important development and ALM changes from version 10.0.10 to 10.0.13
+          href: dev-itpor/dev-changes-10-13.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
