@@ -70,7 +70,7 @@ For more information, see [Configure a development environment (.env) file](conf
 
 ## Create proxy files
 
-You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
+You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail Server SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
 
 For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](https://docs.microsoft.com/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos). That topic explains how to create a proxy file by using a command that resembles the following command.
  
