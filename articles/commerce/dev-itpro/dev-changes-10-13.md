@@ -50,7 +50,7 @@ The following features are available to across products and users. Some features
     - Custom payment connectors for card-not-present can be included in your deployable package starting in version 10.0.10.
     - All-in-one packages will be **mandatory** in version 10.0.13.
 
-- The commerce deployable package created using the [Retail SDK](retail-sdk/retail-sdk-overview.md) is not deployed to the AOS anymore. Instead, upload your self-service installers to LCS and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
+- The commerce deployable package created using the [Retail SDK](retail-sdk/retail-sdk-overview.md) isn't deployed to the AOS anymore. Instead, upload your self-service installers to LCS and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
 
 - Use a Microsoft-hosted build agent instead of a dedicated build machine.
 
@@ -122,7 +122,7 @@ Always check to see what's new and changed for a general overview of each applic
     > [!WARNING]
     > Your build server will likely fail as the NuGet reference folders are exceptionally long and will exceed the 260 character file path limit.  
 
-- Retail SDK file size: An unmodified retail deployable package is now around 340 MB. With customizations, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (formerly Retail Cloud Scale Unit, RCSU), you will get an error message informing you that [packages larger than 300 megabytes](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages) can't be deployed.
+- Retail SDK file size: An unmodified retail deployable package is now around 340 MB. With customizations, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (formerly Retail Cloud Scale Unit, RCSU), you'll get an error message that you can't deploy [packages larger than 300 megabytes](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages).
 
     1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages), and manually remove the self-service installer files.  
     2. Upload the much smaller package to LCS and continue with your deployment as usual.
