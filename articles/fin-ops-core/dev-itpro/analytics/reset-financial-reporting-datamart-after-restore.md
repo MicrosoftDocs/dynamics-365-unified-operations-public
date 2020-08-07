@@ -5,7 +5,7 @@ title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
 manager: AnnBe
-ms.date: 02/07/2018
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,12 +45,9 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
-> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports. For information about how to back up report definitions, see the note at the end of this topic.
+> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.
 
 ### Reset the Financial reporting data mart from Report designer
-
-> [!NOTE]
-> The steps in this process are supported for Financial reporting release 7.2.6.0 and later.
 
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
@@ -99,9 +96,6 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 ## Reset the Financial reporting data mart through Windows PowerShell
 
 If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
-
-> [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Stop services
 
@@ -162,16 +156,16 @@ Use services.msc to restart the services that you stopped earlier:
 
 ## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
 
-1. Instruct all users to close Report designer and exit the Financial reporting area.
-2. Run the following script against the Financial reporting database (MRDB).
+Before getting started, be sure that all users close Report designer and exit the Financial reporting area.
+
+1. On the database used for Financial reporting, which is named ManagementReporter within SQL Server, which is also referred to as MRDB, execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
 
     ```sql
-    ------------------------------------------------------------------------------------------
-    ---- Set service into disabled mode
-    ------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	--setup for servicing mode
 
-    --setup for servicing mode
-    BEGIN TRANSACTION
+	BEGIN TRANSACTION
     IF NOT EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
     BEGIN 
         EXEC ('CREATE SCHEMA Servicing') 
@@ -185,423 +179,505 @@ Use services.msc to restart the services that you stopped earlier:
 
     IF NOT EXISTS(SELECT NAME FROM SYS.TABLES WHERE Name = 'ServicingLock')
     BEGIN 
-        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime      null)
+        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime null)
     END
 
     IF NOT EXISTS(SELECT 1 FROM [Servicing].[ServicingLock])
     BEGIN 
         INSERT INTO [Servicing].[ServicingLock] (Name, Value) VALUES ('ServicingLockMode', 0)
     END
-    COMMIT TRANSACTION
+	COMMIT TRANSACTION
 
-    --Enable servicing mode
-    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
-    BEGIN		
-       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0		
-       UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
-    END
 
-    --Disable maps
-    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
-    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-    PRINT 'Disable integration tasks'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-    ```
+	PRINT 'Entering servicing mode'
+	DECLARE @result int;
+	EXEC @result = sp_getapplock @DbPrincipal='public', @Resource='ServicingLock', @LockMode='Exclusive', @LockOwner='Session', @LockTimeout=300000;
+	IF @result < 0 RAISERROR ('Unable to acquire SQL applock. Result: %d', 16, 1, @result);
 
-3. Truncate or delete all records from the FINANCIALREPORTS table in the database (AXDB).
-4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the database. If the table doesn't exist in the database, skip this step.
-5. Run the **ResetDatamart.sql** script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then reenables the data mart integration.
+	BEGIN TRY
+	IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+	BEGIN		
+		   UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0		
+		   UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
+	END
+	PRINT 'Acquired servicing locks'
 
-    ```sql
-    ------------------------------
-    PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
-    ------------------------------
+	--Disable maps
+	DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+	INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+	FROM [Scheduling].[Task] t with(nolock)
+	JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+	JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+	LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+	JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+	WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+	PRINT 'Disable integration tasks'
+	UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
 
-    IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
-    BEGIN
-        IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
-        BEGIN
-            --create table to store indexes
-            -- Indexes of different table can have same index_id, but we need unique index id
-            Create table [Datamart].[AttributeValueIndexesBackUp]
-            (
-                IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
-                IndexName NVARCHAR(255),
-                IsUnique BIT,
-                IndexType NVARCHAR(60),
-                FilterDefinition NVARCHAR(max),
-                KeyColumns NVARCHAR(max),
-                IncludedColumns NVARCHAR(max),
-                IndexRetry INT,
-                IndexStatus NVARCHAR(60),
-                AttributeType INT,
-            )
-        END
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------
 
-        --truncate table to increase index drop performance
-        PRINT('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
-        EXEC('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
-        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'FACTID','[Datamart].[FactAttributeValue]'
 
-        --truncate table to increase index drop performance
-        PRINT('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
-        EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
-        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
-    End
+	------------------------------
+	PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
+	------------------------------
 
-    ------------------------------
-    PRINT 'Drop archive tables'
-    ------------------------------
-    DECLARE @stagingTableName nvarchar(max)
-    DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
-    SELECT t.TABLE_NAME as TableName
-    FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
-    WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
-    OPEN dropCursor
-    FETCH NEXT FROM dropCursor INTO @stagingTableName
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
-        FETCH NEXT FROM dropCursor INTO @stagingTableName
-    END
-    CLOSE dropCursor
-    DEALLOCATE dropCursor
-
-    ------------------------------
-    PRINT 'Dropping tables with dynamic columns'
-    ------------------------------
-    DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
-    DROP TABLE IF EXISTS [Datamart].DimensionCombination
-    DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
-    DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
-    DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
-    DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
-    DROP TABLE IF EXISTS [Datamart].FactAttributeValue
-    DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
-    DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
-
-    ------------------------------
-    PRINT 'Begin Truncating tables'
-    ------------------------------
-    DECLARE @tablename nvarchar(200)
-    DECLARE @schemaname nvarchar(200)
-    DECLARE clear_tables CURSOR
-    FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
-    PRINT 'remove check constraints'
-    OPEN clear_tables
-    FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @tablename <> 'VersionHistory'
-        BEGIN
-            EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
-        END
-        FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    END
-    CLOSE clear_tables
-
-    ------------------------------
-    PRINT 'delete data from tables and rebuild indexes'
-    ------------------------------
-    OPEN clear_tables
-    FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
-        BEGIN
-            IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
-                EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
-                INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
-                WHERE o.[type] = 'V'
-                AND referenced_schema_name = @schemaname
-                AND referenced_entity_name = @tablename))
-            BEGIN
-                PRINT 'deleting from ' + @tablename
-                EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
-            END
-            ELSE
-            BEGIN
-                PRINT 'truncating from ' + @tablename
-                EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
-            END
-        END
-        EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
-        FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    END
-    CLOSE clear_tables
-
-    ------------------------------
-    PRINT 'reenable check constraints'
-    ------------------------------
-    OPEN clear_tables
-    FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @tablename <> 'VersionHistory'
-        BEGIN
-            EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
-        END
-        FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
-    END
-    CLOSE clear_tables
-    DEALLOCATE clear_tables
-    ------------------------------
-    PRINT 'Complete Truncating tables'
-    ------------------------------
-
-    -- Rebuild the tables with dynamic columns
-    IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
-        BEGIN
-            EXEC [Datamart].AddDynamicTables
-        END
-    ELSE
-        BEGIN
-            ---- Basically a copy of sproc AddDynamicTables
-            IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
-            BEGIN
-                CREATE TABLE [Datamart].[DimensionCombinationStaging](
-                    [Id] [bigint] NOT NULL,
-                    [OrganizationId] [int] NULL,
-                    [Description] [nvarchar](51) NULL,
-                    [SourceKey] [nvarchar](100) NOT NULL,
-                    [OrganizationKey] [nvarchar](100) NULL,
-                    [FreshnessDate][datetime2] NULL default sysutcdatetime())
-
-			CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
-		END
-
-		IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationResolving' AND TABLE_SCHEMA = 'Datamart')
+	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
+	BEGIN
+		IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
 		BEGIN
-			CREATE TABLE [Datamart].[DimensionCombinationResolving]
+			--create table to store indexses
+			-- Indexes of different table can have same index_id,but we need unique index id
+			Create table [Datamart].[AttributeValueIndexesBackUp]
 			(
-				[Id] [BIGINT] NOT NULL,
-				[Description] [NVARCHAR](51) NULL,
-				[SourceKey] [NVARCHAR](100) NULL,
-				[OrganizationId] [INT] NULL
+				IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
+				IndexName NVARCHAR(255),
+				IsUnique BIT,
+				IndexType NVARCHAR(60),
+				FilterDefinition NVARCHAR(max),
+				KeyColumns NVARCHAR(max),
+				IncludedColumns NVARCHAR(max),
+				IndexRetry INT,
+				IndexStatus NVARCHAR(60),
+				AttributeType INT,
 			)
 		END
 
-		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionCombination' AND TABLE_SCHEMA='Datamart')
+		IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'FactAttributeValue')) 
 		BEGIN
-			CREATE TABLE [Datamart].[DimensionCombination](
-				[Id] [bigint] NOT NULL,
-				[Description] [nvarchar](51) NULL,
-				[SourceKey] [nvarchar](100) NULL,
-				[OrganizationId] [int] NULL
-			)
+			--truncate table to increase index drop performance
+			PRINT('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+			EXEC('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+			EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'FACTID','[Datamart].[FactAttributeValue]'
 		END
 
-		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='FactAttributeValue' AND TABLE_SCHEMA='Datamart')
+		IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'DimensionValueAttributeValue')) 
 		BEGIN
-			CREATE TABLE [Datamart].[FactAttributeValue](
-				[FactId] [bigint] NOT NULL
-			)
+			--truncate table to increase index drop performance
+			PRINT('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+			EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+			EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
 		END
+	End
 
-		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionValueAttributeValue' AND TABLE_SCHEMA='Datamart')
+	------------------------------
+	PRINT 'Drop archive tables'
+	------------------------------
+	DECLARE @stagingTableName nvarchar(max)
+	DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
+	SELECT t.TABLE_NAME as TableName
+	FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
+	WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
+	OPEN dropCursor
+	FETCH NEXT FROM dropCursor INTO @stagingTableName
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
+		FETCH NEXT FROM dropCursor INTO @stagingTableName
+	END
+	CLOSE dropCursor
+	DEALLOCATE dropCursor
+
+	------------------------------
+	PRINT 'Dropping tables with dynamic columns'
+	------------------------------
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
+	DROP TABLE IF EXISTS [Datamart].DimensionCombination
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
+	DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
+	DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
+	DROP TABLE IF EXISTS [Datamart].FactAttributeValue
+	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
+	DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
+
+	------------------------------
+	PRINT 'Begin Truncating tables'
+	------------------------------
+	DECLARE @tablename nvarchar(200)
+	DECLARE @schemaname nvarchar(200)
+	DECLARE clear_tables CURSOR
+	FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
+	PRINT 'remove check constraints'
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory'
 		BEGIN
-			CREATE TABLE [Datamart].[DimensionValueAttributeValue](
-				[DimensionValueId] [bigint] NOT NULL
-			)
+			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
 		END
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
 
-		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='PeriodExchangeRate' AND TABLE_SCHEMA='Datamart')
+	------------------------------
+	PRINT 'delete data from tables and rebuild indexes'
+	------------------------------
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
 		BEGIN
-			CREATE TABLE [Datamart].[PeriodExchangeRate]
-			(
-				[PeriodId] INT NOT NULL,
-				[FromUnitOfMeasureId] INT NOT NULL,
-				[CurrencyMethod] TINYINT NOT NULL,
-				[ExchangeRateTypeId] INT NOT NULL,
-				CONSTRAINT [PK_PeriodExchangeRates] PRIMARY KEY ([FromUnitOfMeasureId], [PeriodId], [CurrencyMethod], [ExchangeRateTypeId])
-			)
-		END
-
-		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalance' AND TABLE_SCHEMA='Datamart')
-		BEGIN
-			CREATE TABLE [Datamart].[TranslatedPeriodBalance](
-				[PeriodId] [INT] NOT NULL,
-				[DimensionsId] [BIGINT] NOT NULL,
-				[ScenarioId] [INT] NOT NULL,
-				[FactType] [SMALLINT] NOT NULL,
-				[PostingLayerId] [INT] NULL
-			)
-		END
-
-		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalanceChanges' AND TABLE_SCHEMA='Datamart')
-		BEGIN
-			CREATE TABLE [Datamart].TranslatedPeriodBalanceChanges(PeriodId bigint, DimensionsId bigint, ScenarioId int, PostingLayerId int null, FactType smallint,
-					constraint [IDX_BC1] unique Clustered (PeriodId, DimensionsId, ScenarioId, PostingLayerId, FactType DESC))
-		END
-
-		IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimensionCombinationArchive' AND TABLE_SCHEMA='Datamart')
-		BEGIN
-			IF EXISTS (SELECT TOP 1 * FROM [Datamart].[DimensionCombinationArchive])
+			IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
+				EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
+				INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
+				WHERE o.[type] = 'V'
+				AND referenced_schema_name = @schemaname
+				AND referenced_entity_name = @tablename))
 			BEGIN
-				-- move archived combinations from the obsolete DimensionCombinationArchive table to a new table in the archive
-				-- and set its generation to 5, so it will run in 4 hours (which is how long the archived combinations were attempted originally before moving to the archive table).
-				DECLARE @archiveId INT = 0
-				INSERT INTO [Datamart].[Archive] (Generation, NextAttempt) VALUES (5, DATEADD(MINUTE, POWER(3, 5), SYSUTCDATETIME()))
-				SET @archiveId = SCOPE_IDENTITY()
-
-				DECLARE @comboArchiveTableName nvarchar(100) = 'DimensionCombinationStaging' + CAST(@archiveId as nvarchar(10))
-				EXEC sp_rename 'Datamart.DimensionCombinationArchive', @comboArchiveTableName
-
-				DECLARE @factArchiveTableName nvarchar(100) = 'FactStaging' + CAST(@archiveId as nvarchar(10))
-				EXEC ('select top 0 * into Datamart.' + @factArchiveTableName + ' from Datamart.FactStaging')
+				PRINT 'deleting from ' + @tablename
+				EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
 			END
 			ELSE
 			BEGIN
-				DROP TABLE [Datamart].[DimensionCombinationArchive]
+				PRINT 'truncating from ' + @tablename
+				EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
 			END
 		END
+		EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
 
-		IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationUnreferenced' and TABLE_SCHEMA ='Datamart')
+	------------------------------
+	PRINT 'reenable check constraints'
+	------------------------------
+	OPEN clear_tables
+	FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @tablename <> 'VersionHistory'
 		BEGIN
-			CREATE TABLE [Datamart].[DimensionCombinationUnreferenced]
-			(
-				[Id] [bigint] NOT NULL,
-				[Description] [nvarchar](51) NULL,
-				[SourceKey] [nvarchar](100) NULL,
-				[OrganizationId] [int] NULL
-			)
+			EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
+		END
+		FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
+	END
+	CLOSE clear_tables
+	DEALLOCATE clear_tables
+	------------------------------
+	PRINT 'Complete Truncating tables'
+	------------------------------
 
-			DECLARE @columnIndex int
-			DECLARE @idColumn nvarchar(128)
-			DECLARE columnCursor CURSOR LOCAL FAST_FORWARD FOR SELECT DISTINCT ColumnIndex FROM [Datamart].DimensionDefinition ORDER BY ColumnIndex
-			OPEN columnCursor
-			FETCH NEXT FROM columnCursor INTO @columnIndex
-			WHILE (@@FETCH_STATUS <> -1)
+	-- Rebuild the tables with dynamic columns
+	IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
+		BEGIN
+			EXEC [Datamart].AddDynamicTables
+		END
+	ELSE
+		BEGIN
+			---- Basically a copy of sproc AddDynamicTables
+			IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
 			BEGIN
-				SET @idColumn = 'Dimension' + CAST(@columnIndex as nvarchar(3)) + 'Id'
-				EXEC [Datamart].AddColumn @schemaName = 'Datamart', @tableName = 'DimensionCombinationUnreferenced', @columnName = @idColumn, @columnType = 'bigint NULL'
-				FETCH NEXT FROM columnCursor INTO @columnIndex
+				CREATE TABLE [Datamart].[DimensionCombinationStaging](
+					[Id] [bigint] NOT NULL,
+					[OrganizationId] [int] NULL,
+					[Description] [nvarchar](51) NULL,
+					[SourceKey] [nvarchar](100) NOT NULL,
+					[OrganizationKey] [nvarchar](100) NULL,
+					[FreshnessDate][datetime2] NULL default sysutcdatetime())
+
+				CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
 			END
-			CLOSE columnCursor
-			DEALLOCATE columnCursor
 
-			DECLARE @dcColumnList nvarchar(max) = ''
-			DECLARE @rowsCopied bigint
-			DECLARE @columnName nvarchar(100)
-			DECLARE columnNameCursor cursor local fast_forward for select distinct Name from sys.columns c where c.object_id = OBJECT_ID('DimensionCombination')
-			OPEN columnNameCursor
-			FETCH NEXT FROM columnNameCursor INTO @columnName
-			WHILE (@@FETCH_STATUS <> -1)
+			IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationResolving' AND TABLE_SCHEMA = 'Datamart')
 			BEGIN
-				IF @dcColumnList <> ''
-					SET @dcColumnList = @dcColumnList + ', '
-
-				SET @dcColumnList = @dcColumnList + @columnName
-				FETCH NEXT FROM columnNameCursor INTO @columnName
+				CREATE TABLE [Datamart].[DimensionCombinationResolving]
+				(
+					[Id] [BIGINT] NOT NULL,
+					[Description] [NVARCHAR](51) NULL,
+					[SourceKey] [NVARCHAR](100) NULL,
+					[OrganizationId] [INT] NULL
+				)
 			END
-			CLOSE columnNameCursor
-			DEALLOCATE columnNameCursor
 
-			if @dcColumnList <> ''
+			IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionCombination' AND TABLE_SCHEMA='Datamart')
 			BEGIN
-				exec ('
-					insert into [Datamart].DimensionCombinationUnreferenced (' + @dcColumnList + ')
-					select ' + @dcColumnList + ' from [Datamart].DimensionCombination dc
-					where dc.Id not in (Select distinct DimensionsId from [Datamart].Fact)')
+				CREATE TABLE [Datamart].[DimensionCombination](
+					[Id] [bigint] NOT NULL,
+					[Description] [nvarchar](51) NULL,
+					[SourceKey] [nvarchar](100) NULL,
+					[OrganizationId] [int] NULL
+				)
+			END
 
-				SET @rowsCopied = @@ROWCOUNT
-				IF @rowsCopied > 0
+			IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='FactAttributeValue' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].[FactAttributeValue](
+					[FactId] [bigint] NOT NULL
+				)
+			END
+
+			IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionValueAttributeValue' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].[DimensionValueAttributeValue](
+					[DimensionValueId] [bigint] NOT NULL
+				)
+			END
+
+			IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='PeriodExchangeRate' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].[PeriodExchangeRate]
+				(
+					[PeriodId] INT NOT NULL,
+					[FromUnitOfMeasureId] INT NOT NULL,
+					[CurrencyMethod] TINYINT NOT NULL,
+					[ExchangeRateTypeId] INT NOT NULL,
+					CONSTRAINT [PK_PeriodExchangeRates] PRIMARY KEY ([FromUnitOfMeasureId], [PeriodId], [CurrencyMethod], [ExchangeRateTypeId])
+				)
+			END
+
+			IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalance' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].[TranslatedPeriodBalance](
+					[PeriodId] [INT] NOT NULL,
+					[DimensionsId] [BIGINT] NOT NULL,
+					[ScenarioId] [INT] NOT NULL,
+					[FactType] [SMALLINT] NOT NULL,
+					[PostingLayerId] [INT] NULL
+				)
+			END
+
+			IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalanceChanges' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].TranslatedPeriodBalanceChanges(PeriodId bigint, DimensionsId bigint, ScenarioId int, PostingLayerId int null, FactType smallint,
+						constraint [IDX_BC1] unique Clustered (PeriodId, DimensionsId, ScenarioId, PostingLayerId, FactType DESC))
+			END
+
+			IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimensionCombinationArchive' AND TABLE_SCHEMA='Datamart')
+			BEGIN
+				IF EXISTS (SELECT TOP 1 * FROM [Datamart].[DimensionCombinationArchive])
 				BEGIN
-					DECLARE @comboCount bigint
-					EXEC [Datamart].GetRowCount 'DimensionCombination', @comboCount
+					-- move archived combinations from the obsolete DimensionCombinationArchive table to a new table in the archive
+					-- and set its generation to 5, so it will run in 4 hours (which is how long the archived combinations were attempted originally before moving to the archive table).
+					DECLARE @archiveId INT = 0
+					INSERT INTO [Datamart].[Archive] (Generation, NextAttempt) VALUES (5, DATEADD(MINUTE, POWER(3, 5), SYSUTCDATETIME()))
+					SET @archiveId = SCOPE_IDENTITY()
 
-					IF (@rowsCopied * 2) > @comboCount
+					DECLARE @comboArchiveTableName nvarchar(100) = 'DimensionCombinationStaging' + CAST(@archiveId as nvarchar(10))
+					EXEC sp_rename 'Datamart.DimensionCombinationArchive', @comboArchiveTableName
+
+					DECLARE @factArchiveTableName nvarchar(100) = 'FactStaging' + CAST(@archiveId as nvarchar(10))
+					EXEC ('select top 0 * into Datamart.' + @factArchiveTableName + ' from Datamart.FactStaging')
+				END
+				ELSE
+				BEGIN
+					DROP TABLE [Datamart].[DimensionCombinationArchive]
+				END
+			END
+
+			IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationUnreferenced' and TABLE_SCHEMA ='Datamart')
+			BEGIN
+				CREATE TABLE [Datamart].[DimensionCombinationUnreferenced]
+				(
+					[Id] [bigint] NOT NULL,
+					[Description] [nvarchar](51) NULL,
+					[SourceKey] [nvarchar](100) NULL,
+					[OrganizationId] [int] NULL
+				)
+
+				DECLARE @columnIndex int
+				DECLARE @idColumn nvarchar(128)
+				DECLARE columnCursor CURSOR LOCAL FAST_FORWARD FOR SELECT DISTINCT ColumnIndex FROM [Datamart].DimensionDefinition ORDER BY ColumnIndex
+				OPEN columnCursor
+				FETCH NEXT FROM columnCursor INTO @columnIndex
+				WHILE (@@FETCH_STATUS <> -1)
+				BEGIN
+					SET @idColumn = 'Dimension' + CAST(@columnIndex as nvarchar(3)) + 'Id'
+					EXEC [Datamart].AddColumn @schemaName = 'Datamart', @tableName = 'DimensionCombinationUnreferenced', @columnName = @idColumn, @columnType = 'bigint NULL'
+					FETCH NEXT FROM columnCursor INTO @columnIndex
+				END
+				CLOSE columnCursor
+				DEALLOCATE columnCursor
+
+
+				DECLARE @dcColumnList nvarchar(max) = ''
+				DECLARE @rowsCopied bigint
+				DECLARE @columnName nvarchar(100)
+				DECLARE columnNameCursor cursor local fast_forward for select distinct Name from sys.columns c where c.object_id = OBJECT_ID('DimensionCombination')
+				OPEN columnNameCursor
+				FETCH NEXT FROM columnNameCursor INTO @columnName
+				WHILE (@@FETCH_STATUS <> -1)
+				BEGIN
+					IF @dcColumnList <> ''
+						SET @dcColumnList = @dcColumnList + ', '
+
+					SET @dcColumnList = @dcColumnList + @columnName
+					FETCH NEXT FROM columnNameCursor INTO @columnName
+				END
+				CLOSE columnNameCursor
+				DEALLOCATE columnNameCursor
+
+				if @dcColumnList <> ''
+				BEGIN
+					exec ('
+						insert into [Datamart].DimensionCombinationUnreferenced (' + @dcColumnList + ')
+						select ' + @dcColumnList + ' from [Datamart].DimensionCombination dc
+						where dc.Id not in (Select distinct DimensionsId from [Datamart].Fact)')
+
+					SET @rowsCopied = @@ROWCOUNT
+					IF @rowsCopied > 0
 					BEGIN
-						-- most of the combinations in the combination table were unreferenced, so it would be faster to move the referenced out, truncate the table, then move back
-						SELECT * INTO #referencedCombos from [Datamart].DimensionCombination dc
-						WHERE dc.Id NOT IN (SELECT Id from [Datamart].DimensionCombinationUnreferenced)
+						DECLARE @comboCount bigint
+						EXEC [Datamart].GetRowCount 'DimensionCombination', @comboCount
 
-						TRUNCATE TABLE [Datamart].[DimensionCombination]
+						IF (@rowsCopied * 2) > @comboCount
+						BEGIN
+							-- most of the combinations in the combination table were unreferenced, so it would be faster to move the referenced out, truncate the table, then move back
+							SELECT * INTO #referencedCombos from [Datamart].DimensionCombination dc
+							WHERE dc.Id NOT IN (SELECT Id from [Datamart].DimensionCombinationUnreferenced)
 
-						INSERT INTO [Datamart].[DimensionCombination]
-						SELECT * FROM #referencedCombos
+							TRUNCATE TABLE [Datamart].[DimensionCombination]
 
-						DROP TABLE #referencedCombos
-					END
-					ELSE
-					BEGIN
-						-- we didn't find many unreferenced combinations, so delete them
-						DELETE FROM [Datamart].[DimensionCombination] WHERE Id in (SELECT Id FROM [Datamart].[DimensionCombinationUnreferenced])
+							INSERT INTO [Datamart].[DimensionCombination]
+							SELECT * FROM #referencedCombos
+
+							DROP TABLE #referencedCombos
+						END
+						ELSE
+						BEGIN
+							-- we didn't find many unreferenced combinations, so delete them
+							DELETE FROM [Datamart].[DimensionCombination] WHERE Id in (SELECT Id FROM [Datamart].[DimensionCombinationUnreferenced])
+						END
 					END
 				END
 			END
 		END
+
+
+
+	-- Rebuild dropped indexes that are dynamic
+	EXEC [Datamart].ConfigureIndexesAndConstraints
+	
+	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+	END TRY
+	BEGIN CATCH
+	EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+	;THROW;
+	END CATCH
+	
+
+2. (Optional) On the MRDB, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
+> [!NOTE]
+> Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
+
+```sql
+-- Attempt to delete integrated users
+	DECLARE @userId nvarchar(max)
+	DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
+	select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+	OPEN removeUserCursor
+	FETCH NEXT FROM removeUserCursor INTO @userId
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		BEGIN TRY
+		   exec Reporting.SecurityUserDeleteRelatedEntities @userId
+		   delete from Reporting.SecurityGroupUser where UserID = @userId
+		   delete from Reporting.SecurityUser where UserID = @userId
+		END TRY
+		BEGIN CATCH
+		-- Just skip if we cannot delete a user, integration should take care of it
+		END CATCH
+		FETCH NEXT FROM removeUserCursor INTO @userId
 	END
+	CLOSE removeUserCursor
+	DEALLOCATE removeUserCursor
 
-    -- Rebuild dropped indexes that are dynamic
-    EXEC [Datamart].ConfigureIndexesAndConstraints
+-- Attempt to delete integrated companies
+	DECLARE @companyId nvarchar(max)
+	DECLARE removeCompanyCursor CURSOR LOCAL FAST_FORWARD FOR
+	select cc.ID from Reporting.ControlCompany cc join Reporting.ControlCompanyIntegration cci on cc.ID = cci.ID
+	OPEN removeCompanyCursor
+	FETCH NEXT FROM removeCompanyCursor INTO @companyId
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		BEGIN TRY
+		   delete from Reporting.ControlCompany where ID = @companyId
+		END TRY
+		BEGIN CATCH
+		-- Just skip if we cannot delete a company
+		END CATCH
+		FETCH NEXT FROM removeCompanyCursor INTO @companyId
+	END
+	CLOSE removeCompanyCursor
+	DEALLOCATE removeCompanyCursor
+```
 
-    --------------------------------------------------------------------------
-    ----- Re-Enable the service after resetting the tokens
-    --------------------------------------------------------------------------
+3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
 
-    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
-    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+```sql
+IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
+BEGIN 
+    TRUNCATE TABLE [dbo].[FINANCIALREPORTS] 
+END 
+IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTVERSION') 
+BEGIN 
+    TRUNCATE TABLE [dbo].[FINANCIALREPORTVERSION] 
+END  
+```
 
-    PRINT 'Reset the map tokens'
-    UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
 
-    PRINT 'Reset the tasks'
-    UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
+4. On the MRDB, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
 
-    PRINT 'Enable integration tasks, RunImmediately'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
-    WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
-    PRINT 'Enable the Maintenance Task'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
-    (SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
 
-    IF EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
-    BEGIN
-        UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
-    END
 
-    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
-    BEGIN
-           UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
-    END
-    ```
+```sql
+DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+------------------------------------------
+------------------------------------------
+PRINT 'Reset the map tokens'
+UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Reset the tasks'
+UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
+PRINT 'Enable integration tasks, RunImmediately'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
+WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Enable the Maintenance Task'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
+(SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
+------------------------------------------
+------------------------------------------
 
-6. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
+UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
+IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+BEGIN
+       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
+END
+```
+
+
+5. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
     ```sql
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 
-    Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
+Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the default state but should be automatically resolved.
 
 ## Export and import report definitions
 
-Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup in the event that it becomes necessary to restore your definitions. 
 
 ### Export report definitions
 
