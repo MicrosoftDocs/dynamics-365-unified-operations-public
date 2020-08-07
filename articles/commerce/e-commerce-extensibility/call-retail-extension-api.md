@@ -36,7 +36,7 @@ This topic describes how to call Microsoft Dynamics 365 Retail Server extension 
 
 ## Overview
 
-Dynamics 365 Retail Server extension APIs are usually implemented and called from the point of sale (POS) system. However, they can also be called from e-Commerce modules and data actions. To call the APIs in this way, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
+Dynamics 365 Retail Server extension APIs are usually implemented and called from the point of sale (POS) system or from e-Commerce modules and data actions. However, they can also be called from e-Commerce modules and data actions. To call the APIs from e-Commerce modules and data actions, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
 
 > [!NOTE]
 > This topic doesn't explain how to create Retail Server extensions. For more information, see [Create a new Retail Server extension](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-extension).
@@ -44,9 +44,9 @@ Dynamics 365 Retail Server extension APIs are usually implemented and called fro
 It's assumed that the following prerequisites are in place:
 
 - A Retail Server extension has already been deployed.
-- You have access to the Retail extension dynamic-link libraries (DLLs) that are available.
+- You have access to the Retail Server extension dynamic-link libraries (DLLs) that are available.
 
-In addition, make sure that your .env file's **MSDyn365Commerce\_BASEURL** value points to the environment that has the deployed Retail extension, so that you can test against it. If this option isn't available, you can use mocks instead.
+In addition, make sure that your .env file's **MSDyn365Commerce\_BASEURL** value points to the environment that has the deployed Retail Server extension, so that you can test against it. If this option isn't available, you can use mocks instead.
 
 If you're developing on the local Tier 1 Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here is an example of an .env file.
 
