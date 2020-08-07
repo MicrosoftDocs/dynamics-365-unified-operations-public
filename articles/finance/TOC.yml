@@ -814,6 +814,8 @@
           href: asset-leasing/view-asset-transactions.md
         - name: Compound interval functionality
           href: asset-leasing/compound-interval-functionality.md
+        - name: Transition methods
+          href: asset-leasing/transition-methods.md
     - name: General ledger
       items:
       - name: General ledger overview
