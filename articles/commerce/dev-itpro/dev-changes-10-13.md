@@ -79,7 +79,7 @@ Always check to see what's new and changed for a general overview of each applic
 
 ## What's changed in the 10.0.11 release
 
-- The Retail SDK has been updated to Visual Studio 2017. The templates for pre-configured virtual machines for developers have Visual Studio 2015 installed. You need Visual Studio 2017 installed to build the Retail SDK. So you'll need to [update Visual Studio manually](retail-sdk/migrate-sdk.md#migrate-to-the-sdk-for-visual-studio-2017.md).
+- The Retail SDK has been updated to Visual Studio 2017. The templates for pre-configured virtual machines for developers have Visual Studio 2015 installed. You need Visual Studio 2017 installed to build the Retail SDK. So you'll need to [update Visual Studio manually](retail-sdk/migrate-sdk.md#migrate-to-the-sdk-for-visual-studio-2017).
 
     We're working to rebuild the VHD templates that are used to provision developer and test environments so that they include Visual Studio 2017 automatically. There's no confirmed date when it will be available, but we expect it to be ready shortly after 10.0.13 is generally available in September 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017)
 
