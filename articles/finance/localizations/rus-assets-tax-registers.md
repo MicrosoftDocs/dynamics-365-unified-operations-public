@@ -184,10 +184,10 @@ Example: Scenario that involves miscellaneous purchase charges
 2.  Create the following two items. In the **Fixed assets (Russia)** section, in
     the **FA group** field, select the fixed asset group that you just created.
 
-| **Product number** | **Product name** | **FA group** |
-|--------------------|------------------|--------------|
-| Inventory01        | Inventory01      | Inventory    |
-| Inventory02        | Inventory02      | Inventory    |
+    | **Product number** | **Product name** | **FA group** |
+    |--------------------|------------------|--------------|
+    | Inventory01        | Inventory01      | Inventory    |
+    | Inventory02        | Inventory02      | Inventory    |
 
 3.  Go to **Tax \> Setup \> Profit tax \> Registers**. On the **Tax registers**
     page, create the **Goods cost calculation** register. On the **Hide**
@@ -196,44 +196,44 @@ Example: Scenario that involves miscellaneous purchase charges
 4.  Go to **Tax \> Setup \> Profit tax \> Expense codes**. On the **Expense and
     income codes** page, create the following two expense codes.
 
-| **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
-|------------------|---------------|-----------------|--------------------|
-| 902000000        | Income        |                 | НП                 |
-| 902030000        | Income        | 902000000       | НП                 |
+    | **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
+    |------------------|---------------|-----------------|--------------------|
+    | 902000000        | Income        |                 | НП                 |
+    | 902030000        | Income        | 902000000       | НП                 |
 
 5.  Go to **Fixed assets (Russia) \> Common \> Fixed assets**. On the **Fixed
     assets** page, create the following two fixed assets.
 
-| **FA group** | **Name**    | **Acquisition date** | **Acquisition cost** |
-|--------------|-------------|----------------------|----------------------|
-| Inventory    | Inventory01 | 01/01/2019           | 100.00               |
-| Inventory    | Inventory02 | 01/01/2019           | 100.00               |
+    | **FA group** | **Name**    | **Acquisition date** | **Acquisition cost** |
+    |--------------|-------------|----------------------|----------------------|
+    | Inventory    | Inventory01 | 01/01/2019           | 100.00               |
+    | Inventory    | Inventory02 | 01/01/2019           | 100.00               |
 
-   The **FA inventory number** field is automatically set. In this example,
-   it's set to **RUMF-000003** for the first fixed asset and **RUMF-000004**
-   for the second fixed asset.
+    The **FA inventory number** field is automatically set. In this example,
+    it's set to **RUMF-000003** for the first fixed asset and **RUMF-000004**
+    for the second fixed asset.
 
 6.  On the Action pane, select **Value models**. On the opened **FA value
     models** page, add the value models for the fixed assets. On the **General**
     FastTab, set the following fields (the names of the fields are in the first
     line of the table):
 
-| **Name**    | **Value model** | **Putting into operation amount** | **ExpenseAndIncomeCode** |
-|-------------|-----------------|-----------------------------------|--------------------------|
-| Inventory01 | RAP             | 150.00                            | 902030000                |
-| Inventory01 | TAX             | 150.00                            | 902030000                |
-| Inventory02 | RAP             | 100.00                            | 902030000                |
-| Inventory02 | TAX             | 100.00                            | 902030000                |
+    | **Name**    | **Value model** | **Putting into operation amount** | **ExpenseAndIncomeCode** |
+    |-------------|-----------------|-----------------------------------|--------------------------|
+    | Inventory01 | RAP             | 150.00                            | 902030000                |
+    | Inventory01 | TAX             | 150.00                            | 902030000                |
+    | Inventory02 | RAP             | 100.00                            | 902030000                |
+    | Inventory02 | TAX             | 100.00                            | 902030000                |
 
 7.  Create a purchase order. In the **Vendor account** field, select
     **RUMF-000002**.
 
 8.  Create the following two sales order lines.
 
-| **Item number** | **Quantity** | **Unit price** | **FA inventory number** | **ExpenseAndIncomeCode** |
-|-----------------|--------------|----------------|-------------------------|--------------------------|
-| Inventory01     | 1.00         | 100.00         | RUMF-000003             | 902030000                |
-| Inventory02     | 1.00         | 100.00         | RUMF-000004             | 902030000                |
+    | **Item number** | **Quantity** | **Unit price** | **FA inventory number** | **ExpenseAndIncomeCode** |
+    |-----------------|--------------|----------------|-------------------------|--------------------------|
+    | Inventory01     | 1.00         | 100.00         | RUMF-000003             | 902030000                |
+    | Inventory02     | 1.00         | 100.00         | RUMF-000004             | 902030000                |
 
 9.  For the first line, create a miscellaneous charge where the **Charges
     value** field is set to **20.00**.
@@ -246,12 +246,12 @@ Example: Scenario that involves miscellaneous purchase charges
     February 21, 2019, as the transaction date. Edit the lines as shown the
     following table.
 
-| **Accounting** | **Date**  | **Account type** | **Account** | **Transaction type**   | **Debit** |
-|----------------|-----------|------------------|-------------|------------------------|-----------|
-| RAP            | 2/21/2019 | Fixed asset      | RUMF-000003 | Putting into operation | 150.00    |
-| TAX            | 2/21/2019 | Fixed asset      | RUMF-000003 | Putting into operation | 150.00    |
-| RAP            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
-| TAX            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
+    | **Accounting** | **Date**  | **Account type** | **Account** | **Transaction type**   | **Debit** |
+    |----------------|-----------|------------------|-------------|------------------------|-----------|
+    | RAP            | 2/21/2019 | Fixed asset      | RUMF-000003 | Putting into operation | 150.00    |
+    | TAX            | 2/21/2019 | Fixed asset      | RUMF-000003 | Putting into operation | 150.00    |
+    | RAP            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
+    | TAX            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
 
 12. Post the journal.
 
@@ -536,23 +536,23 @@ differences** register should be considered obsolete.
 1.  On the **Depreciation groups** page, create the following two depreciation
     groups.
 
-| **Depreciation group** | **Depreciation method** | **Value model** | **Lifetime** | **Minimal depreciation** | **Depreciation start date** | **Depreciation bonus** |
-|------------------------|-------------------------|-----------------|--------------|--------------------------|-----------------------------|------------------------|
-| 01                     | Linear                  | RAP             | 25           | 0.01                     | Next month start            | 0.00                   |
-| 02                     | Linear                  | TAX             | 25           | 0.01                     | Next month start            | 30.00                  |
+    | **Depreciation group** | **Depreciation method** | **Value model** | **Lifetime** | **Minimal depreciation** | **Depreciation start date** | **Depreciation bonus** |
+    |------------------------|-------------------------|-----------------|--------------|--------------------------|-----------------------------|------------------------|
+    | 01                     | Linear                  | RAP             | 25           | 0.01                     | Next month start            | 0.00                   |
+    | 02                     | Linear                  | TAX             | 25           | 0.01                     | Next month start            | 30.00                  |
 
 2.  On the **FA groups** page, create the following fixed asset group.
 
-| **FA group** | **Name**  |
-|--------------|-----------|
-| Inventory    | Inventory |
+    | **FA group** | **Name**  |
+    |--------------|-----------|
+    | Inventory    | Inventory |
 
 3.  Create the following item. In the **Fixed assets (Russia)** section, in the
     **FA group** field, select the fixed asset group that you just created.
 
-| **Product number** | **Product name** | **FA group** |
-|--------------------|------------------|--------------|
-| Inventory01        | Inventory01      | Inventory    |
+    | **Product number** | **Product name** | **FA group** |
+    |--------------------|------------------|--------------|
+    | Inventory01        | Inventory01      | Inventory    |
 
 4.  On the **Tax registers** page, create the following four registers: **FA –
     information about object**, **FA depreciation**, **FA/IA sale**, and
@@ -563,40 +563,40 @@ differences** register should be considered obsolete.
     codes. For the second expense code, select the **FA – information about
     object** and **FA depreciation** registers.
 
-| **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
-|------------------|---------------|-----------------|--------------------|
-| 911000000        | Income        |                 | НП                 |
-| 911050000        | Income        | 911000000       | НП                 |
+    | **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
+    |------------------|---------------|-----------------|--------------------|
+    | 911000000        | Income        |                 | НП                 |
+    | 911050000        | Income        | 911000000       | НП                 |
 
 6.  On the **Depreciation bonus** page, create the following record.
 
-| **Depreciation bonus** | **Depreciation bonus percent** |
-|------------------------|--------------------------------|
-| 30%                    | 30.00                          |
+    | **Depreciation bonus** | **Depreciation bonus percent** |
+    |------------------------|--------------------------------|
+    | 30%                    | 30.00                          |
 
 7.  Create the following fixed asset.
 
-| **FA group** | **Name**    | **Acquisition date** | **Acquisition cost** |
-|--------------|-------------|----------------------|----------------------|
-| Inventory    | Inventory01 | 01/01/2019           | 200,000.00           |
+    | **FA group** | **Name**    | **Acquisition date** | **Acquisition cost** |
+    |--------------|-------------|----------------------|----------------------|
+    | Inventory    | Inventory01 | 01/01/2019           | 200,000.00           |
 
-   The **FA inventory number** field is automatically set. In this example,
-   it's set to **4031**.
+    The **FA inventory number** field is automatically set. In this example,
+    it's set to **4031**.
 
 8.  Add the value models for the fixed asset. On the **General** FastTab, set
     the following fields.
 
-| **Value model** | **Depreciation group** | **Putting into operation amount** |
-|-----------------|------------------------|-----------------------------------|
-| RAP             | 01                     | 200,000.00                        |
-| TAX             | 02                     | 200,000.00                        |
+    | **Value model** | **Depreciation group** | **Putting into operation amount** |
+    |-----------------|------------------------|-----------------------------------|
+    | RAP             | 01                     | 200,000.00                        |
+    | TAX             | 02                     | 200,000.00                        |
 
 9.  Create the FA journal for putting into operation. Select **New** to create
     the following journal line.
 
-| **Transaction date** | **Transaction type**   | **FA inventory number** | **Depreciation bonus** |
-|----------------------|------------------------|-------------------------|------------------------|
-| 1/1/2019             | Putting into operation | 4031                    | 30%                    |
+    | **Transaction date** | **Transaction type**   | **FA inventory number** | **Depreciation bonus** |
+    |----------------------|------------------------|-------------------------|------------------------|
+    | 1/1/2019             | Putting into operation | 4031                    | 30%                    |
 
 10. Select **OK**. Verify that one line for RAP value model and one line for TAX
     value model were created.
@@ -610,15 +610,15 @@ differences** register should be considered obsolete.
     using May 1, 2019, as the transaction date. Verify that the following lines
     have been created.
 
-| **Accounting** | **Date** | **Account type** | **Account** | **Transaction type** | **Description**    | **Credit** |
-|----------------|----------|------------------|-------------|----------------------|--------------------|------------|
-| RAP            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 2/28/2019 | 8,000.00   |
-| RAP            | 3/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 3/31/2019 | 8,000.00   |
-| RAP            | 4/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 4/30/2019 | 8,000.00   |
-| TAX            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 2/28/2019 | 5,600.00   |
-| TAX            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depreciation bonus | 60,000.00  |
-| TAX            | 3/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 3/31/2019 | 5,600.00   |
-| TAX            | 4/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 4/30/2019 | 5,600.00   |
+    | **Accounting** | **Date** | **Account type** | **Account** | **Transaction type** | **Description**    | **Credit** |
+    |----------------|----------|------------------|-------------|----------------------|--------------------|------------|
+    | RAP            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 2/28/2019 | 8,000.00   |
+    | RAP            | 3/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 3/31/2019 | 8,000.00   |
+    | RAP            | 4/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 4/30/2019 | 8,000.00   |
+    | TAX            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 2/28/2019 | 5,600.00   |
+    | TAX            | 2/1/2019 | Fixed asset      | 4031        | Depreciation         | Depreciation bonus | 60,000.00  |
+    | TAX            | 3/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 3/31/2019 | 5,600.00   |
+    | TAX            | 4/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 4/30/2019 | 5,600.00   |
 
 14. Post the journal.
 
@@ -632,9 +632,9 @@ differences** register should be considered obsolete.
 
 18. Create the following sales order line.
 
-| **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
-|-----------------|--------------|----------------|-------------------------|
-| Inventory01     | 1            | 190,000.00     | 4031                    |
+    | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
+    |-----------------|--------------|----------------|-------------------------|
+    | Inventory01     | 1            | 190,000.00     | 4031                    |
 
 19. Switch to the **Header** view, and then, on the **Financial dimensions**
     FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
@@ -652,33 +652,33 @@ differences** register should be considered obsolete.
     In the **FA – information about object** register, you should see the
     following information.
 
-| **Column**              | **Value**   |
-|-------------------------|-------------|
-| Inventory number        | 4031        |
-| Object name             | Inventory01 |
-| Acquisition date        | 1/1/2019    |
-| Initial cost            | 200,000.00  |
-| Depreciation group      | 02          |
-| Useful life             | 25          |
-| Depreciation method     | Linear      |
-| Depreciation start date | 2/1/2019    |
-| Depreciation sum        | 65,600.00   |
-| Useful life (months)    | 1           |
+    | **Column**              | **Value**   |
+    |-------------------------|-------------|
+    | Inventory number        | 4031        |
+    | Object name             | Inventory01 |
+    | Acquisition date        | 1/1/2019    |
+    | Initial cost            | 200,000.00  |
+    | Depreciation group      | 02          |
+    | Useful life             | 25          |
+    | Depreciation method     | Linear      |
+    | Depreciation start date | 2/1/2019    |
+    | Depreciation sum        | 65,600.00   |
+    | Useful life (months)    | 1           |
 
-   In the **FA depreciation** register, you should see the following two lines.
+    In the **FA depreciation** register, you should see the following two lines.
 
-| **Column**                            | **Line 1**  | **Line 2**  |
-|---------------------------------------|-------------|-------------|
-| Depreciation month                    | 2/1/2019    | 2/1/2019    |
-| Inventory number                      | 4031        | 4031        |
-| Object name                           | Inventory01 | Inventory01 |
-| Depreciation method                   | Linear      | Linear      |
-| Original (depreciated) cost           | 200,000.00  | 200,000.00  |
-| Useful life for depreciation (months) | 25          | 25          |
-| Depreciation amount                   | 60,000.00   | 5,600.00    |
+    | **Column**                            | **Line 1**  | **Line 2**  |
+    |---------------------------------------|-------------|-------------|
+    | Depreciation month                    | 2/1/2019    | 2/1/2019    |
+    | Inventory number                      | 4031        | 4031        |
+    | Object name                           | Inventory01 | Inventory01 |
+    | Depreciation method                   | Linear      | Linear      |
+    | Original (depreciated) cost           | 200,000.00  | 200,000.00  |
+    | Useful life for depreciation (months) | 25          | 25          |
+    | Depreciation amount                   | 60,000.00   | 5,600.00    |
 
-   Note that 60,000.00 is the amount of the depreciation bonus, and 5,600.00 is
-   the depreciation amount for February.
+    Note that 60,000.00 is the amount of the depreciation bonus, and 5,600.00 is
+    the depreciation amount for February.
 
 24. Approve the journal.
 
@@ -690,25 +690,25 @@ differences** register should be considered obsolete.
 
     In the **FA/IA sale** register, you should see the following information.
 
-| **Column**                   | **Value**  |
-|------------------------------|------------|
-| Transaction date             | 4/30/2019  |
-| Object name                  | 4031       |
-| Object selling price         | 190,000.00 |
-| Initial value                | 200,000.00 |
-| Depreciation charges amount  | 16,800.00  |
-| Total object selling expense | 183,200.00 |
+    | **Column**                   | **Value**  |
+    |------------------------------|------------|
+    | Transaction date             | 4/30/2019  |
+    | Object name                  | 4031       |
+    | Object selling price         | 190,000.00 |
+    | Initial value                | 200,000.00 |
+    | Depreciation charges amount  | 16,800.00  |
+    | Total object selling expense | 183,200.00 |
 
-Note that 16,800.00 is the total depreciation amount before the sale, and
-183,200.00 is equal to 200,000.00 minus 16,800.00.
+    Note that 16,800.00 is the total depreciation amount before the sale, and
+    183,200.00 is equal to 200,000.00 minus 16,800.00.
 
-In the **Depreciation bonus recovery** register, you should see the following
-information.
+    In the **Depreciation bonus recovery** register, you should see the following
+    information.
 
-| **Column**                          | **Value**                                                                   |
-|-------------------------------------|-----------------------------------------------------------------------------|
-| Transaction date                    | 4/30/2019                                                                   |
-| Expense/income type                 | «Восстановленная амортизационная премия» (ENU: Depreciation bonus recovery) |
-| The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
-| Income amount                       | 60,000.00                                                                   |
-| CTL amount                          | 12,000.00                                                                   |
+    | **Column**                          | **Value**                                                                   |
+    |-------------------------------------|-----------------------------------------------------------------------------|
+    | Transaction date                    | 4/30/2019                                                                   |
+    | Expense/income type                 | «Восстановленная амортизационная премия» (ENU: Depreciation bonus recovery) |
+    | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
+    | Income amount                       | 60,000.00                                                                   |
+    | CTL amount                          | 12,000.00                                                                   |
