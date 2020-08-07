@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Fixed assets and intangible assets registers
-description: This topic provides information about fixed assets and intangible assets registers which are depreciable assets.
+description: This topic provides information about fixed assets and intangible assets registers.
 author: anasyash
 manager: AnnBe
 ms.date: 08/07/2020
@@ -124,7 +124,7 @@ The following fields are also available: **Transaction description**, **Qty**, *
     |--------------|-----------|
     | Inventory    | Inventory |
 
-2.  Create the following two items. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you just created.
+2.  Create the following two items. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you created.
 
     | **Product number** | **Product name** | **FA group** |
     |--------------------|------------------|--------------|
@@ -286,7 +286,7 @@ On the register lines, you can view the following information:
 -   **Object selling price** – The selling price of the fixed asset or intangible asset.
 -   **Initial value** – The acquisition cost of the fixed asset or intangible asset.
 -   **Depreciation charges amount** – The total amount of depreciation until the end of the month of sale for the **TAX** value model.
--   **Total object selling expense** – The amount of expenses during the object sale. The values equals the initial cost minus the total depreciation amount.
+-   **Total object selling expense** – The amount of expenses during the object sale. The value equals the initial cost minus the total depreciation amount.
 -   **Deferrals selling loss** – The amount of deferrals that are created from the sale of fixed assets when there is a loss.
 
 ## The Depreciation bonus recovery register
