@@ -37,10 +37,12 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes how to choose between compounding levels of monthly, quarterly, semiannual, or annual. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. The following examples illustrate how a lease's payment schedule would appear using each of the 4 different interval choices.
 
-The user is unable to select a compounding interval that is less frequent than the lease's payment frequency. For example, there cannot be a quarterly compounding interval with a monthly payment frequency, or an annual compounding interval with a semiannual payment frequency. If the user attempts this, a warning will be thrown.
-Note: These 4 examples showcase compounding intervals with matching payment frequencies.
+You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, there cannot be a quarterly compounding interval with a monthly payment frequency, or an annual compounding interval, with a semiannual payment frequency. If the user attempts this, a warning will be thrown.
 
-## Setup for all 4 leases:
+> [!Note]
+> The following examples use compounding intervals with matching payment frequencies.
+
+## Setup for all four leases:
 
 The following tables list the values that are made in the **General** and **Payment schedule** tabs for the examples. 
 
@@ -86,9 +88,9 @@ The first 12 months of the payment schedule are listed in the following table.
 |     11        	|     11       	|     11/30/2020    	|     50,000.00         	|     50,000/(1+5%/12)^11 = 47,764.61    	|
 |     12        	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/12)^12 = 47,566.41    	|
 
-#### Lease 2: Quarterly Compounding Interval with Quarterly Payment Frequency
+#### Lease 2: Quarterly compounding Interval with quarterly payment frequency
 
-In the present value formula, the rate is divided by 4 because that is the number of compounding periods per year. The exponent is equal to the value in the Period column of the Payment schedule. The Period column increases by 1 every 3 months, or every quarter, because each quarter is a new compounding interval.
+In the present value formula, the rate is divided by 4 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every three months, or every quarter, because each quarter is a new compounding interval.
 
 The first 12 months of the Payment schedule are listed in the following table.
 
@@ -107,9 +109,9 @@ The first 12 months of the Payment schedule are listed in the following table.
 |     4         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/4)^4 = 0              	|
 |     4         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/4)^4 = 47,576.21    	|
 
-#### Lease 3: Semiannual Compounding Interval with Semiannual Payment Frequency
+#### Lease 3: Semiannual compounding interval with semiannual payment frequency
 
-In the present value formula, the rate is divided by 2 because that is the number of compounding periods per year. The exponent is equal to the value in the Period column of the Payment schedule. The Period column increases by 1 every 6 months, or semiannually, because the compounding interval is semiannually.
+In the present value formula, the rate is divided by 2 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every six months, or semiannually, because the compounding interval is semiannually.
 
 The first 12 months of the Payment schedule are listed in the following table.
 
@@ -128,9 +130,9 @@ The first 12 months of the Payment schedule are listed in the following table.
 |     2         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
 |     2         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/2)^2 = 47,590.72    	|
 
-#### Lease 4: Annual Compounding Interval with Annual Payment Frequency
+#### Lease 4: Annual compounding interval with annual payment frequency
 
-In the present value formula, the rate is divided by 1 because that is the number of compounding periods per year. The exponent is equal to the value in the Period column of the Payment schedule. The Period column increases by 1 every 12 months, or once a year, because the compounding interval is annually.
+In the present value formula, the rate is divided by 1 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every 12 months, or once a year, because the compounding interval is annually.
 
 The first 12 months of the Payment schedule are listed in the following table.
 
