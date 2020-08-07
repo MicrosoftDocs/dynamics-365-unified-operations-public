@@ -1,9 +1,8 @@
----
-title: Fixed assets and intangible assets registers
----
+Fixed assets and intangible assets registers
+============================================
 
 Introduction
-============
+------------
 
 Fixed assets (FA) and intangible assets (IA) are considered depreciable assets.
 The following basic provisions of tax accounting for depreciable assets are
@@ -44,18 +43,16 @@ following registers:
 -   Depreciation bonus recovery
 
 Set up registers
-================
+----------------
 
-Set up expense codes
---------------------
+### Set up expense codes
 
 For **FA – information about object**, **IA – object information**, **FA
 depreciation**, and **IA depreciation** registers, you must create expense codes
 and income codes on the **Expense code** page, and you must set up ledger
 accounts for the expense codes.
 
-Set up register parameters
---------------------------
+### Set up register parameters
 
 Follow these steps for each of the following registers: **FA – information about
 object**, **IA – object information**, **FA depreciation**, **IA depreciation**,
@@ -67,22 +64,22 @@ and **FA/IA sale**.
 2.  On the **Parameters** FastTab, set the following fields that are used to
     generate registers:
 
--   Depreciation groups
+    -   Depreciation groups
 
--   Type of fixed asset
+    -   Type of fixed asset
 
->   In each field, you can specify multiple comma-separated values. If you leave
->   these fields blank, the register will be generated for all fixed assets or
->   intangible assets.
+    In each field, you can specify multiple comma-separated values. If you leave
+    these fields blank, the register will be generated for all fixed assets or
+    intangible assets.
 
-1.  On the Action Pane, select **Specific** to set up the expense codes and
+3.  On the Action Pane, select **Specific** to set up the expense codes and
     income codes for the register.
 
-2.  On the **Setup** FastTab, in the **Fixed asset type** field, select **Use
+4.  On the **Setup** FastTab, in the **Fixed asset type** field, select **Use
     for production** if you want to attribute fixed assets to production.
     Otherwise, select **Don't use for production**.
 
-### Set up the IA depreciation register
+#### Set up the IA depreciation register
 
 -   On the **Tax registers** page, on the **Parameters** FastTab, in the
     **Expense code** field, specify the expense code. You can specify multiple
@@ -91,21 +88,21 @@ and **FA/IA sale**.
     depreciation transactions that have the selected expense codes will be
     considered.
 
-### Set up the FA/IA sale register
+#### Set up the FA/IA sale register
 
 -   Go to **Tax \> Setup \> Profit tax \> Registers**. On the **Tax registers**
     page, on the **Parameters** FastTab, set the following fields to generate a
     register:
 
--   **Expense code** – Specify the expense code. You can specify multiple
-    comma-separated values. If you leave this field blank, the register will be
-    generated for sales transactions for all fixed assets or intangible assets.
+    -   **Expense code** – Specify the expense code. You can specify multiple
+        comma-separated values. If you leave this field blank, the register will be
+        generated for sales transactions for all fixed assets or intangible assets.
 
--   **Do you want to calculate IA?** – Indicate whether lines for intangible
-    assets should be calculated at the same time as the register lines.
+    -   **Do you want to calculate IA?** – Indicate whether lines for intangible
+        assets should be calculated at the same time as the register lines.
 
 Set up Fixed assets (Russia)
-============================
+----------------------------
 
 In the **Fixed assets (Russia)** module, you can keep accounts of fixed assets
 and intangible assets for an unlimited number of value models.
@@ -136,7 +133,7 @@ prerequisites. For instructions, follow the links.
     groups](https://docs.microsoft.com/dynamics365/finance/localizations/rus-depreciation-setup#set-up-depreciation-groups)
 
 The Goods cost calculation register
-===================================
+-----------------------------------
 
 The **Goods cost calculation** register is used to generate the cost of the
 accounting object (that is, the fixed asset or intangible asset). The accounting
@@ -212,11 +209,11 @@ Example: Scenario that involves miscellaneous purchase charges
 | Inventory    | Inventory01 | 01/01/2019           | 100.00               |
 | Inventory    | Inventory02 | 01/01/2019           | 100.00               |
 
->   The **FA inventory number** field is automatically set. In this example,
->   it's set to **RUMF-000003** for the first fixed asset and **RUMF-000004**
->   for the second fixed asset.
+   The **FA inventory number** field is automatically set. In this example,
+   it's set to **RUMF-000003** for the first fixed asset and **RUMF-000004**
+   for the second fixed asset.
 
-1.  On the Action pane, select **Value models**. On the opened **FA value
+6.  On the Action pane, select **Value models**. On the opened **FA value
     models** page, add the value models for the fixed assets. On the **General**
     FastTab, set the following fields (the names of the fields are in the first
     line of the table):
@@ -228,23 +225,23 @@ Example: Scenario that involves miscellaneous purchase charges
 | Inventory02 | RAP             | 100.00                            | 902030000                |
 | Inventory02 | TAX             | 100.00                            | 902030000                |
 
-2.  Create a purchase order. In the **Vendor account** field, select
+7.  Create a purchase order. In the **Vendor account** field, select
     **RUMF-000002**.
 
-3.  Create the following two sales order lines.
+8.  Create the following two sales order lines.
 
 | **Item number** | **Quantity** | **Unit price** | **FA inventory number** | **ExpenseAndIncomeCode** |
 |-----------------|--------------|----------------|-------------------------|--------------------------|
 | Inventory01     | 1.00         | 100.00         | RUMF-000003             | 902030000                |
 | Inventory02     | 1.00         | 100.00         | RUMF-000004             | 902030000                |
 
-4.  For the first line, create a miscellaneous charge where the **Charges
+9.  For the first line, create a miscellaneous charge where the **Charges
     value** field is set to **20.00**.
 
-5.  In the **Invoice date** field, specify **1/21/2019**, and then post the
+10. In the **Invoice date** field, specify **1/21/2019**, and then post the
     invoice.
 
-6.  Go to **Fixed assets (Russia) \> Journals \> FA journal**. Create the FA
+11. Go to **Fixed assets (Russia) \> Journals \> FA journal**. Create the FA
     journal for putting into operation, and put the assets into operation, using
     February 21, 2019, as the transaction date. Edit the lines as shown the
     following table.
@@ -256,21 +253,21 @@ Example: Scenario that involves miscellaneous purchase charges
 | RAP            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
 | TAX            | 2/21/2019 | Fixed asset      | RUMF-000004 | Putting into operation | 100.00    |
 
-7.  Post the journal.
+12. Post the journal.
 
-8.  Create the tax register journal for the first month of the year 2019.
+13. Create the tax register journal for the first month of the year 2019.
     Calculate all registers, and approve the journal.
 
-9.  Create the tax register journal for the second month of the year 2019.
+14. Create the tax register journal for the second month of the year 2019.
     Calculate all registers.
 
-10. In the **Goods cost calculation** register, you should see the following
+15. In the **Goods cost calculation** register, you should see the following
     information.
 
     ![A screenshot of a computer Description automatically generated](media/c99b5ddb6654489a96b2336d175fb52b.png)
 
 The FA – information about object register
-==========================================
+------------------------------------------
 
 The **FA – information about object** register is used to collect information
 about the existence and movement of property that belongs to an organization and
@@ -362,7 +359,7 @@ factor start date**, **Asset original cost**, **Original cost depreciation
 period**, **Depreciation stopping base**, and **Taking out base**.
 
 The IA – object information register
-====================================
+------------------------------------
 
 The **IA – object information** register is used to collect information about
 the existence and movement of property that belongs to an organization and that
@@ -380,7 +377,7 @@ for the [FA – information about object
 register](#_Register-information_about_fixed).
 
 The FA depreciation register
-============================
+----------------------------
 
 The **FA depreciation** register is used to determine the amount of depreciation
 for fixed assets. The amount of depreciation is required to create direct
@@ -421,7 +418,7 @@ group membership using for production**, **Original (depreciated) cost**, and
 **Base cost**.
 
 The IA depreciation register
-============================
+----------------------------
 
 The **IA depreciation** register is used to determine the amount of depreciation
 for intangible assets. The amount of depreciation is included in indirect
@@ -435,7 +432,7 @@ The fields in this register are the same as the fields that were previously
 described for the [FA depreciation register](#the-fa-depreciation-register).
 
 The FA/IA sale register
-=======================
+-----------------------
 
 The **FA/IA sale** register is used for the following purposes:
 
@@ -481,7 +478,7 @@ On the register lines, you can view the following information:
     the sale of fixed assets when there is a loss.
 
 The Depreciation bonus recovery register
-========================================
+----------------------------------------
 
 The depreciation bonus for a fixed asset for which **Putting into operation**
 was posted after January 1, 2008, must be recovered if that fixed asset is sold
@@ -534,8 +531,7 @@ year 2020, any tax differences that are related to assets are classified as
 temporary tax differences. Therefore, the **Calculation of constant tax
 differences** register should be considered obsolete.
 
-Example: Scenario that involves a depreciation bonus
-----------------------------------------------------
+### Example: Scenario that involves a depreciation bonus
 
 1.  On the **Depreciation groups** page, create the following two depreciation
     groups.
@@ -584,10 +580,10 @@ Example: Scenario that involves a depreciation bonus
 |--------------|-------------|----------------------|----------------------|
 | Inventory    | Inventory01 | 01/01/2019           | 200,000.00           |
 
->   The **FA inventory number** field is automatically set. In this example,
->   it's set to **4031**.
+   The **FA inventory number** field is automatically set. In this example,
+   it's set to **4031**.
 
-1.  Add the value models for the fixed asset. On the **General** FastTab, set
+8.  Add the value models for the fixed asset. On the **General** FastTab, set
     the following fields.
 
 | **Value model** | **Depreciation group** | **Putting into operation amount** |
@@ -595,22 +591,22 @@ Example: Scenario that involves a depreciation bonus
 | RAP             | 01                     | 200,000.00                        |
 | TAX             | 02                     | 200,000.00                        |
 
-2.  Create the FA journal for putting into operation. Select **New** to create
+9.  Create the FA journal for putting into operation. Select **New** to create
     the following journal line.
 
 | **Transaction date** | **Transaction type**   | **FA inventory number** | **Depreciation bonus** |
 |----------------------|------------------------|-------------------------|------------------------|
 | 1/1/2019             | Putting into operation | 4031                    | 30%                    |
 
-3.  Select **OK**. Verify that one line for RAP value model and one line for TAX
+10. Select **OK**. Verify that one line for RAP value model and one line for TAX
     value model were created.
 
-4.  For both lines that were created, in the **Debit** field, specify
+11. For both lines that were created, in the **Debit** field, specify
     **200,000.00**.
 
-5.  Post the journal.
+12. Post the journal.
 
-6.  Create the FA journal for depreciation, and do the depreciation proposal,
+13. Create the FA journal for depreciation, and do the depreciation proposal,
     using May 1, 2019, as the transaction date. Verify that the following lines
     have been created.
 
@@ -624,37 +620,37 @@ Example: Scenario that involves a depreciation bonus
 | TAX            | 3/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 3/31/2019 | 5,600.00   |
 | TAX            | 4/1/2019 | Fixed asset      | 4031        | Depreciation         | Depr. by 4/30/2019 | 5,600.00   |
 
-7.  Post the journal.
+14. Post the journal.
 
-8.  On the **All customers** page, create customer **RUMF-000001**. On the
+15. On the **All customers** page, create customer **RUMF-000001**. On the
     **Invoice and delivery** FastTab, in the **Affiliated** section, set the
     **Affiliated** option to **Yes**.
 
-9.  Create a sales order:
+16. Create a sales order:
 
-10. In the **Customer account** field, select **RUMF-000001**.
+17. In the **Customer account** field, select **RUMF-000001**.
 
-11. Create the following sales order line.
+18. Create the following sales order line.
 
 | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
 |-----------------|--------------|----------------|-------------------------|
 | Inventory01     | 1            | 190,000.00     | 4031                    |
 
-12. Switch to the **Header** view, and then, on the **Financial dimensions**
+19. Switch to the **Header** view, and then, on the **Financial dimensions**
     FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
 
-13. In the **Invoice date** field, specify **4/30/2019**.
+20. In the **Invoice date** field, specify **4/30/2019**.
 
-14. Post the invoice.
+21. Post the invoice.
 
-15. Create the tax register journal for first month of the year 2019, calculate
+22. Create the tax register journal for first month of the year 2019, calculate
     all registers, and approve the journal.
 
-16. Create the tax register journal for second month of the year 2019, and
+23. Create the tax register journal for second month of the year 2019, and
     calculate all registers.
 
->   In the **FA – information about object** register, you should see the
->   following information.
+    In the **FA – information about object** register, you should see the
+    following information.
 
 | **Column**              | **Value**   |
 |-------------------------|-------------|
@@ -669,7 +665,7 @@ Example: Scenario that involves a depreciation bonus
 | Depreciation sum        | 65,600.00   |
 | Useful life (months)    | 1           |
 
->   In the **FA depreciation** register, you should see the following two lines.
+   In the **FA depreciation** register, you should see the following two lines.
 
 | **Column**                            | **Line 1**  | **Line 2**  |
 |---------------------------------------|-------------|-------------|
@@ -681,15 +677,15 @@ Example: Scenario that involves a depreciation bonus
 | Useful life for depreciation (months) | 25          | 25          |
 | Depreciation amount                   | 60,000.00   | 5,600.00    |
 
->   Note that 60,000.00 is the amount of the depreciation bonus, and 5,600.00 is
->   the depreciation amount for February.
+   Note that 60,000.00 is the amount of the depreciation bonus, and 5,600.00 is
+   the depreciation amount for February.
 
-1.  Approve the journal.
+24. Approve the journal.
 
-2.  Create the tax register journal for the third month of the year 2019,
+25. Create the tax register journal for the third month of the year 2019,
     calculate all registers, and approve the journal.
 
-3.  Create the tax register journal for fourth month of 2019 year, and calculate
+26. Create the tax register journal for fourth month of 2019 year, and calculate
     all registers.
 
     In the **FA/IA sale** register, you should see the following information.
