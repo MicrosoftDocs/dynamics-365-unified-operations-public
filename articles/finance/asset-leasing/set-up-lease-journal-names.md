@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.6
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Lease journal names specify the journal that Asset leasing transactions will post to. Only journal names that are assigned to the Asset leasing journal type, will appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page. Only daily vendor invoice recording journal types can be assigned to the **Invoice journal name** field.
+Lease journal names specify the journal that Asset leasing transactions will post to. Only journal names that are assigned to the Asset leasing journal type, will appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page. Only vendor invoice recording journal types can be assigned to the **Invoice journal name** field.
 
 1.	To configure the journal names, open the **Asset leasing parameters** page (**Asset leasing > Setup > Asset leasing parameters**).
 
@@ -45,4 +45,3 @@ Lease journal names specify the journal that Asset leasing transactions will pos
 3.	In the **Invoice journal name** field, select a journal. Lease and expense payment invoices will post to this journal if the **Pay to vendor parameter** is enabled on the lease book.
 
 4.	In the **Lease journal name** field, select a journal. All depreciation, interest, and short-term reclassification entries will post to this journal name. Lease payments and expense payment entries will also post to this journal if the Pay to vendor parameter is disabled on the lease book.
-
