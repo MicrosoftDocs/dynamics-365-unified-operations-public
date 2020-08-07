@@ -43,7 +43,7 @@ If user consent is not received, modules/feature that require the consent will n
 
 A cookie consent module is can be configured on the page [Header fragment](author-header-module.md) so it can be enforced when the page loads.
 
-![Example of a cookie consent module](./media/ecommerce_cookieconsent.PNG)
+![Example of a cookie consent module](./media/ecommerce-cookieconsent.png)
 
 ## Cookie consent module properties
 
