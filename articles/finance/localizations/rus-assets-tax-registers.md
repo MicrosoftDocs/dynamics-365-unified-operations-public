@@ -177,9 +177,9 @@ Example: Scenario that involves miscellaneous purchase charges
 1.  Go to **Fixed assets (Russia) \> Setup \> FA groups**. On the **FA groups**
     page, create the following fixed asset group.
 
-| **FA group** | **Name**  |
-|--------------|-----------|
-| Inventory    | Inventory |
+    | **FA group** | **Name**  |
+    |--------------|-----------|
+    | Inventory    | Inventory |
 
 2.  Create the following two items. In the **Fixed assets (Russia)** section, in
     the **FA group** field, select the fixed asset group that you just created.
