@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: TL;DR - Important changes to the development and ALM experiences in 10.0.10 - 10.0.13 
-description: This topic highlights the major changes in the development tools, SDKs, and ALM .
+title: Important development and ALM changes from version 10.0.10 to 10.0.13 
+description: This topic highlights the major changes in the development tools, SDKs, and ALM.
 author: RobBertram 
 manager: AnnBe
 ms.date: 07/28/2020
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Navigating the development and ALM changes from version 10.0.10 to 10.0.13
+# Important development and ALM changes from version 10.0.10 to 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
