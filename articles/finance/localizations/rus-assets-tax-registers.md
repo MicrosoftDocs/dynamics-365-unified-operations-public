@@ -105,7 +105,7 @@ Miscellaneous purchase charges that are distributed across items are specified i
 
 If the cost of putting a fixed asset or intangible asset into operation differs from the purchase cost, a correction line is created in the register. This line indicates the difference in cost.
 
-When a fixed asset is assembled from components, the register specifies all components, their quantity, and their cost. For more information about fixed asset assembly, see [Fixed asset assembly](https://docs.microsoft.com/dynamics365/finance/localizations/rus-fixed-asset-acquisition#fixed-asset-assembly).
+When a fixed asset is assembled from components, the register specifies all components, their quantity, and their cost. For more information about fixed asset assembly, see [Fixed asset assembly](rus-fixed-asset-acquisition.md#fixed-asset-assembly).
 
 On the register lines, you can view the following information:
 
@@ -183,7 +183,7 @@ The following fields are also available: **Transaction description**, **Qty**, *
 
     ![A screenshot of a computer Description automatically generated](media/1_Goods_cost_calculation.png)
 
-## The FA – information about object register
+## <a name="register-information-fixed"></a>The FA – information about object register
 
 The **FA – information about object** register is used to collect information about the existence and movement of property that belongs to an organization and that is recognized, for tax purposes, as fixed assets as part of depreciable property.
 
@@ -232,9 +232,9 @@ Register lines are created after the intangible assets are put into operation.
 
 The register contains information about objects of depreciable property that have been created in the **Fixed assets** module, and that are of the **Intangible**, **Financial**, or **Goodwill** type.
 
-The fields in this register resemble the fields that were previously described for the [FA – information about object register](#_Register-information_about_fixed).
+The fields in this register resemble the fields that were previously described for the [FA – information about object register](#register-information-fixed).
 
-## The FA depreciation register
+## <a name="fa-depreciation-register"></a>The FA depreciation register
 
 The **FA depreciation** register is used to determine the amount of depreciation for fixed assets. The amount of depreciation is required to create direct expenses and other expenses that are recognized in the current tax period for tax purposes.
 
@@ -261,7 +261,7 @@ The **IA depreciation** register is used to determine the amount of depreciation
 
 The register contains information about objects of depreciable property that have been created in the **Fixed assets** module, and that are of the **Intangible**, **Financial**, or **Goodwill** type.
 
-The fields in this register are the same as the fields that were previously described for the [FA depreciation register](#the-fa-depreciation-register).
+The fields in this register are the same as the fields that were previously described for the [FA depreciation register](#fa-depreciation-register).
 
 ## The FA/IA sale register
 
