@@ -110,7 +110,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
-- [Upcoming changes in the Retail SDK](dev-itpro/UpcomingSDKChanges.md)
+- [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
 - [Important development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
