@@ -810,6 +810,10 @@
           href: asset-leasing/revalue-payments-tied-2-index-rate.md
         - name: Reclassify short-term portion of lease liability
           href: asset-leasing/reclassify-st-lease-liability.md
+        - name: View liability, asset, and expense transactions
+          href: asset-leasing/view-asset-transactions.md
+        - name: Compound interval functionality
+          href: asset-leasing/compound-interval-functionality.md
     - name: General ledger
       items:
       - name: General ledger overview
