@@ -56,7 +56,7 @@ The **My account links** property can be used to define account pages that the s
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce. The navigation menu has a **Navigation Source** property that is used to specify Retail Server navigation menu items and static menu items as a source. If static menu items are specified as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. 
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. See [Navigation Menu module](navigationmenu-module.md) for more details.
 
 - **Search** – The search module lets users enter search terms to search for products. The URL of the default search page and the search query parameters must be provided at **Site Settings \> Extensions**. The search module has properties that let you suppress the search button or label as you require. The search module also supports auto-suggest options, such as product, keyword, and category search results.
 
@@ -78,6 +78,7 @@ To create a header fragment, follow these steps.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Navigation menu** module, and then select **OK**.
 1. In the property pane for the navigation menu module, configure the properties as needed. Choose Source= Retail and Static menu items.
+1. Add Static Menu items say "Contact" with a relative link to a Contact page on the site.
 1. In the **Search** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Search** module, and then select **OK**.
 1. In the property pane for the search module, configure the properties as needed.
@@ -100,6 +101,8 @@ To help guarantee that a header appears on every page, follow these steps on eve
 [Cart icon module](cart-icon-module.md)
 
 [Promo banner module](add-alert.md)
+
+[Navigation Menu module](navigationmenu-module.md) 
 
 [Cookie consent](add-cookieconsent.md)
 
