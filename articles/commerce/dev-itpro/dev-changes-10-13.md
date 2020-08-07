@@ -63,7 +63,7 @@ The following features are available to across products and users. Some features
 Always check to see what's new and changed for a general overview of each application release.
 
 - [What's new or changed in Finance and Operations apps home page](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed?toc=/dynamics365/commerce/toc.json)
-- [What's new or changed in Dynamics 365 Commerce](../whats-new-home-page.md)
+- [What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)
 - [What's new and changed in Platform updates](../../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md)
 
 ## What's changed in the 10.0.10 release
@@ -79,7 +79,7 @@ Always check to see what's new and changed for a general overview of each applic
 
 ## What's changed in the 10.0.11 release
 
-- The Retail SDK has been updated to Visual Studio 2017. The templates for pre-configured virtual machines for developers have Visual Studio 2015 installed. You need Visual Studio 2017 installed to build the Retail SDK. So you'll need to [update Visual Studio manually](retail-sdk/migrate-sdk#migrate-to-the-sdk-for-visual-studio-2017.md).
+- The Retail SDK has been updated to Visual Studio 2017. The templates for pre-configured virtual machines for developers have Visual Studio 2015 installed. You need Visual Studio 2017 installed to build the Retail SDK. So you'll need to [update Visual Studio manually](retail-sdk/migrate-sdk.md#migrate-to-the-sdk-for-visual-studio-2017.md).
 
     We're working to rebuild the VHD templates that are used to provision developer and test environments so that they include Visual Studio 2017 automatically. There's no confirmed date when it will be available, but we expect it to be ready shortly after 10.0.13 is generally available in September 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017)
 
@@ -122,9 +122,9 @@ Always check to see what's new and changed for a general overview of each applic
     > [!WARNING]
     > Your build server will likely fail as the NuGet reference folders are exceptionally long and will exceed the 260 character file path limit.  
 
-- Retail SDK file size: An unmodified retail deployable package is now around 340 MB. With customizations, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (formerly Retail Cloud Scale Unit, RCSU), you will get an error message informing you that [packages larger than 300 megabytes](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages.md) can't be deployed.
+- Retail SDK file size: An unmodified retail deployable package is now around 340 MB. With customizations, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (formerly Retail Cloud Scale Unit, RCSU), you will get an error message informing you that [packages larger than 300 megabytes](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages) can't be deployed.
 
-    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages.md), and manually remove the self-service installer files.  
+    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages), and manually remove the self-service installer files.  
     2. Upload the much smaller package to LCS and continue with your deployment as usual.
 
     > [!NOTE]
