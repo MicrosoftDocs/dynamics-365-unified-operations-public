@@ -41,8 +41,9 @@ A cookie consent module is required to allow users to provide consent for any fe
 
 If user consent is not received, modules/feature that require the consent will not be rendered on the page. E.g. Checkout module, Social share module, Preferred store feature etc require cookie consent and will not be rendered if consent is not received. 
 
-A cookie consent module is can be configured on the page [Header fragment](author-header-module.md) so it can be enforced when the page loads.
+A cookie consent module can be configured on the page [Header fragment](author-header-module.md) so it can be enforced when the page loads. It should have a clear message informing the site user about cookie usage on the site and should provide a link to the site's Privacy page.
 
+Below is an example of the cookie consent message shown on the Header of the page with a message and link to the Fabrikam site's privacy policy page.
 ![Example of a cookie consent module](./media/ecommerce-cookieconsent.png)
 
 ## Cookie consent module properties
