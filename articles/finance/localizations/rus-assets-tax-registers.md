@@ -264,7 +264,7 @@ Example: Scenario that involves miscellaneous purchase charges
 15. In the **Goods cost calculation** register, you should see the following
     information.
 
-    ![A screenshot of a computer Description automatically generated](media/c99b5ddb6654489a96b2336d175fb52b.png)
+    ![A screenshot of a computer Description automatically generated](media/1_Goods_cost_calculation.png)
 
 The FA – information about object register
 ------------------------------------------
