@@ -5,7 +5,7 @@ title: Call Retail Server extension APIs
 description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
 author: samjarawan
 manager: annbe
-ms.date: 08/06/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -98,28 +98,27 @@ The proxy is closely linked to the data action framework. For every Retail Serve
 
 ## Call a proxy API with a data action
 
-From the Dynamics 365 Commerce online SDK, include the two new files from the previous section in the **/src/actions/** directory. Then create a new data action .ts file, and paste in code that resembles the following example to call the Retail extension APIs from the data action. 
+From the Dynamics 365 Commerce online SDK, include the two new files from the previous section in the **/src/actions/** directory. Then create a new data action .ts file, and paste in code that resembles the following example to call the Retail Server extension APIs from the data action. 
 
-The following example uses a file that is named **get-warranty-info.ts**. Notice that it imports the **DataActionExtension.g** and **DataServiceEntities.g** files that were generated earlier, and it calls the **createGetWarrantyByProductIdInput** Retail Server extension API.
+The following example uses a file that is named **get-warranty-info.ts**. Notice that it imports the **DataActionExtension.g** and **DataServiceEntities.g** files that were generated earlier, and it calls the **createGetWarrantyByProductIdInput** Retail Server extension API as defined in the proxy file.
 
 ```typescript
 import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
 import { retailAction } from '@msdyn365-commerce/retail-proxy';
 import { createGetWarrantyByProductIdInput } from './DataActionExtension.g';
 import { IProductWarranty } from './DataServiceEntities.g';
-
 /**
- * Get Org Unit Configuration Data Action
+ * Get Warranty Info Data Action
  */
 export default createObservableDataAction({
     action: <IAction<IProductWarranty[]>>retailAction,
     input: (context: ICreateActionContext) => {
-        return createGetWarrantyByProductIdInput({ Paging: { Top: 250 } }, '12345');
+        return createGetWarrantyByProductIdInput({Paging:{Top:250}}, '12345');
     }
 });
 ```
 
-You can now call the data action just as you might call any other data action, by declaring it in the **dataActions** node of your module.definition.json file, as shown in the following example.
+You can now call the data action just as you might call any other data action, by declaring it in the **dataActions** node of your module.definition.json file, as shown in the following example. The data action will be called at page load time.
 
 ```json
 {
@@ -171,7 +170,63 @@ export interface IWarrantylistData {
 }
 ```
 
-Finally, you can access the data from your module React component by using the **this.props.data.productWarranties** property.
+Finally, you can access the data from your module React component by using the **this.props.data.productWarranties** property. The following example shows a sample module view.tsx file that renders data coming back from the Retail Server extension API.
+
+```typescript
+import * as React from 'react';
+import { IWarrantylistsampleViewProps } from './warrantylistsample';
+export default (props: IWarrantylistsampleViewProps) => {
+    const {
+        data: { productWarranties }
+    } = props;
+    if (productWarranties && productWarranties.result) {
+        return (
+            <table className='table'>
+                <thead>
+                    <tr>
+                        <th>Warranty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {productWarranties.result.map(warranty => (
+                        <tr>
+                            <td>{warranty.Description}</td>
+                            <td>${warranty.Price}</td>
+                            <button type='button' className='btn btn-primary'>Buy Now</button>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        );
+    } else {
+        return <div>No warranty info returned</div>;
+    };
+};
+```
+
+## Call proxy APIs directly
+
+The following example shows a Retail Server API being called directly inside of a module's typescript React view code without using a data action.
+
+```
+import * as React from 'react';
+import { getWarrantyByProductIdAsync } from '../../actions/DataActionExtension.g';
+import { IWarrantylistViewProps } from './warrantylist';
+export default (props: IWarrantylistViewProps) => {
+    const _getWarrantyOnClick = async() => {
+        getWarrantyByProductIdAsync({ callerContext: props.context.actionContext }, '12345').then( result => {
+           ...
+        });
+    }
+    
+    return (
+        <div>
+            <button onClick={_getWarrantyOnClick}>Get Warranty Info</button>
+        </div>
+    );    
+};
+```
 
 ## Additional resources
 
