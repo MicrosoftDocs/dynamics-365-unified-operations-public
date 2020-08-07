@@ -1,8 +1,7 @@
 ---
 # required metadata
-
 title: Transition methods
-description:  This topic describes the three transition methods that are compliant with IFRS 16: full retrospective, cumulative catch-up option A, and cumulative catch-up option B.
+description: This topic describes the three transition methods that are compliant with IFRS 16: full retrospective, cumulative catch-up option A, and cumulative catch-up option B.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
