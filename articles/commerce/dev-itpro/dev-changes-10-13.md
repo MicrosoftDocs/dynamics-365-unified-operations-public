@@ -112,7 +112,7 @@ Always check to see what's new and changed for a general overview of each applic
         msbuild /t:rebuild
         ```
 
-        If the fails, you probably skipped a step from above.
+        If the build fails, you probably skipped a step from above.
 
 - References to PackageReference (NuGet package reference) are updated. This means that project references are much easier to maintain. It also means that you have to manually update *every* custom project in the Retail SDK. Expect to spend about 5 minutes per project. Look at how the standard projects were updated and emulate that.
 
