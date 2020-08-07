@@ -2,7 +2,7 @@
 # required metadata
 
 title: Confirm payment schedules in batch
-description: 
+description: This topic walks through the process of confirmaing multiple payment schedules in a batch. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Payment schedules are confirmed on a lease-to-lease basis or through the confirmation batch process. A journal entry can only be posted against a lease with a confirmed payment schedule. Confirming the payment schedule acts as a final approval of the financial information for the lease. All future changes of the financial information of the lease, such as payments and lease term, constitute a lease adjustment and should be processed as such.
+This topic walks through the process of confirmaing multiple payment schedules in a batch. Payment schedules are confirmed on a lease-to-lease basis or through the confirmation batch process. A journal entry can only be posted against a lease with a confirmed payment schedule. Confirming the payment schedule acts as a final approval of the financial information for the lease. All future changes of the financial information of the lease, such as payments and lease term, constitute a lease adjustment and should be processed as such.
 
 1. To confirm multiple payment schedules, open the Confirmation batch** page (**Asset leasing > Periodic > Confirmation batch**).
 2. Click **Confirmation batch**.
