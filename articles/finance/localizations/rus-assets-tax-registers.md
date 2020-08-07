@@ -628,25 +628,25 @@ differences** register should be considered obsolete.
 
 16. Create a sales order:
 
-17. In the **Customer account** field, select **RUMF-000001**.
+    1.  In the **Customer account** field, select **RUMF-000001**.
 
-18. Create the following sales order line.
+    2.  Create the following sales order line.
 
-    | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
-    |-----------------|--------------|----------------|-------------------------|
-    | Inventory01     | 1            | 190,000.00     | 4031                    |
+        | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
+        |-----------------|--------------|----------------|-------------------------|
+        | Inventory01     | 1            | 190,000.00     | 4031                    |
 
-19. Switch to the **Header** view, and then, on the **Financial dimensions**
-    FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
+    3.  Switch to the **Header** view, and then, on the **Financial dimensions**
+        FastTab, in the **ExpenseAndIncomeCode** field, select **911050000**.
 
-20. In the **Invoice date** field, specify **4/30/2019**.
+    4.  In the **Invoice date** field, specify **4/30/2019**.
 
-21. Post the invoice.
+    5.  Post the invoice.
 
-22. Create the tax register journal for first month of the year 2019, calculate
+17. Create the tax register journal for first month of the year 2019, calculate
     all registers, and approve the journal.
 
-23. Create the tax register journal for second month of the year 2019, and
+18. Create the tax register journal for second month of the year 2019, and
     calculate all registers.
 
     In the **FA – information about object** register, you should see the
@@ -680,12 +680,12 @@ differences** register should be considered obsolete.
     Note that 60,000.00 is the amount of the depreciation bonus, and 5,600.00 is
     the depreciation amount for February.
 
-24. Approve the journal.
+19. Approve the journal.
 
-25. Create the tax register journal for the third month of the year 2019,
+20. Create the tax register journal for the third month of the year 2019,
     calculate all registers, and approve the journal.
 
-26. Create the tax register journal for fourth month of 2019 year, and calculate
+21. Create the tax register journal for fourth month of 2019 year, and calculate
     all registers.
 
     In the **FA/IA sale** register, you should see the following information.
