@@ -79,7 +79,9 @@ Always check to see what's new and changed for a general overview of each applic
 
 ## What's changed in the 10.0.11 release
 
-- The Retail SDK has been updated to Visual Studio 2017. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](/retail-sdk/migrate-sdk.md). VM templates for 10.0.13 are expected to have Visual Studio 2017 installed. So you will need to [update manually](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk#migrate-to-the-sdk-for-visual-studio-2017).
+- The Retail SDK has been updated to Visual Studio 2017. The templates for pre-configured virtual machines for developers have Visual Studio 2015 installed. You need Visual Studio 2017 installed to build the Retail SDK. So you will need to [update Visual Studio manually](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk#migrate-to-the-sdk-for-visual-studio-2017). 
+
+    We are working to rebuild the VHD templates that are used to provision developer and test environments so that they include Visual Studio 2017 automatically. There is no confirmed date when it will be available, but we expect it to be ready shortly after 10.0.13 is generally available in September, 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017)
 
   - Install the Visual Studio tools by installing the Visual Studio extension. To download the extension, follow these steps:
 
@@ -100,17 +102,17 @@ Always check to see what's new and changed for a general overview of each applic
 
         [![Visual Studio 2017 D365 extension](./media/vs2017-individual-workloads.png)](./media/vs2017-extensions.png)
 
-    4. Open the Visual Studio 2017 command prompt as an administrator, and verify that the standard SDK compiles. Navigate to the root of the **RetailSDK** folder and execute the following command:  
+    4. Open the Visual Studio 2017 command prompt as an administrator, and verify that you are using the correct version of the Visual Studio command prompt. Visual Studio 2017 uses version 15 of the developer command prompt. (Visual Studio 2015 uses version 14.) The version number appears in the window, as shown in the following screenshot.
+
+        > ![Visual Studio 2017 D365 extension](media/vs2017-command-prompt.png)
+
+    5. Verify that the standard SDK compiles. Navigate to the root of the **RetailSDK** folder and execute the following command:  
 
         ```plaintext
         msbuild /t:rebuild
         ```
 
         If the fails, you probably skipped a step from above.
-
-    > [!IMPORTANT]
-    > Visual Studio 2015 uses version 14 of the developer command prompt.  Visual Studio 2017 uses version 15.
-    > ![Visual Studio 2017 D365 extension](media/vs2017-command-prompt.png)
 
 - References to PackageReference (NuGet package reference) are updated. This means that project references are much easier to maintain. It also means that you have to manually update *every* custom project in the Retail SDK. Expect to spend about 5 minutes per project. Look at how the standard projects were updated and emulate that.
 
@@ -126,7 +128,7 @@ Always check to see what's new and changed for a general overview of each applic
     2. Upload the much smaller package to LCS and continue with your deployment as usual.
 
     > [!NOTE]
-    > The build and deployment scripts embedded in the deployable package are hard-coded to check for the self-service installers. Expect an update to the build process when we update the pipeline tools to support automatic uploading of Commerce self-service installers to LCS.
+    > The build and deployment scripts embedded in the deployable package are hard-coded to check for the self-service installers.
 
 ## What's changed in 10.0.12
 
@@ -136,7 +138,7 @@ Always check to see what's new and changed for a general overview of each applic
 
 - Application development with X++ requires Visual Studio 2017 in version 10.0.13. If you haven't updated yet, review the section above on 10.0.11.  
 
-- We are actively working to rebuild the VHD template used to provision Dev/Test environments so that they include Visual Studio 2017 automatically.  There is no confirmed date when it will be available, but we expect it to be ready shortly after 10.0.13 is generally available in September, 2020.
+- We are working to rebuild the VHD templates that are used to provision developer and test environments so that they include Visual Studio 2017 automatically. There is no confirmed date when it will be available, but we expect it to be ready shortly after 10.0.13 is generally available in September, 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017)
 
 ## Where to go for help
 
