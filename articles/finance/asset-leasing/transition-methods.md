@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transition methods
-description:  This topic describes the three transition methods that are compliant with IFRS 16.
+description:  This topic describes the three transition methods that are compliant with IFRS 16: full retrospective, cumulative catch-up option A, and cumulative catch-up option B.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
@@ -35,9 +35,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the three transition methods that are compliant with IFRS 16. Asset leasing module contains all three transition methods that are compliant with IFRS 16:
+This topic describes the three transition methods that are compliant with IFRS 16. Asset leasing module contains all three transition methods that are compliant with IFRS 16. The three options are: 
 
-Full retrospective
+- Full retrospective
+- Cumulative catch-up option A
+- Cumulative catch-up option B
 
 The Full retrospective approach treats the lease as if IFRS 16 has always been applied from the original commencement date. The payments are discounted using the incremental borrowing rate as of the commencement date. Therefore, all schedules are created from the commencement date forward.
 
@@ -46,10 +48,12 @@ The Full retrospective approach treats the lease as if IFRS 16 has always been a
  -	Right-of-use asset
     -	Net book value from the asset depreciation schedule in the period immediately before the Transition date
 
-Cumulative Catch Up
+Cumulative catch-up
+
 Both cumulative catch-up options allow the comparative periods to stay as they were reported in the past. The differences between the assets and liability are recognized in opening retained earnings at Transition date.
 
-Cumulative Catch Up Option A
+Cumulative catch-up option A
+
 Like the Full retrospective approach, Cumulative catch up option A will create all schedules from the Commencement date forward. However, unlike the Full Retrospective approach, the system will calculate the present value of lease payments using the Incremental borrowing rate as of the Transition date.
 
  -	Lease liability
@@ -57,7 +61,8 @@ Like the Full retrospective approach, Cumulative catch up option A will create a
  -	Right-of-use asset
     -	Net book value from the asset depreciation schedule in the period immediately before the Transition date
 
-Cumulative Catch Up Option B
+Cumulative catch-up option B
+
 Schedules are created starting on the Transition date. These leases are essentially treated as a new lease with a Commencement date equal to the Transition date. Payments are discounted using the Incremental borrowing rate as of the Transition date.
 
  -	Lease liability
