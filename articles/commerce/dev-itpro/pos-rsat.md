@@ -372,6 +372,7 @@ You must manually delete these files and secure them as you require. All these f
 ### Creating test cases by using the test recorder
 
 + Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
++ Disable Chrome extension - If possible disable the chrome extension in the chrome browser used in the recording and playback environment, sometimes the chrome extension may change the DOM element xpath and it may result in test case failure because of the element not found during the execution of steps (xpath is different from the recording).
 + Make sure that all your recordings start from the POS log-in screen.
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
@@ -388,6 +389,10 @@ You must manually delete these files and secure them as you require. All these f
 ### Chrome driver
 
 If playback fails by flickering (opens and closes browser multiple times without starting playback), this could be related to the Chrome driver version. Check the error log in the RSAT tool. If the error states that the Chrome driver version is not supported, then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the Chrome driver from [ChromeDriver](https://chromedriver.chromium.org/downloads).
+
+### Disable Chrome extension
+
+If possible disable the chrome extension in the chrome browser used in the recording and playback environment, sometimes the chrome extension may change the DOM element xpath and it may result in test case failure because of the element not found during the execution of steps (xpath is different from the recording).
 
 ### .NET standard error
 
