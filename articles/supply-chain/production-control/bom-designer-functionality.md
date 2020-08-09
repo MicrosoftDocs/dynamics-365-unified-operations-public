@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesignerBOMVersion
+ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesignerBOMVersion, BOMChangeLine
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
