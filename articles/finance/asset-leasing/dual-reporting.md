@@ -39,9 +39,9 @@ This topic walks through an example of the dual reporting capabilities in Asset 
 
 ## Fact Pattern
 
-The lease below will be account for under both Italian statutory reporting under a cash-basis method and IFRS reporting methods. The company must establish three books in order to account for both Italian statutory requirements and IFRS 16 requirements -- a book for IFRS 16, a book for statutory requirements, and a book to automatically reverse the statutory postings. The book setup details are explained as follows.
+The following example accounts for a lease under Italian statutory reporting under a cash-basis method and IRF reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IRS 16 requirements. The books that are needed include one for IFRS 16, a book for statutory requirements, and a book to automatically reverse statutory postings. The books are set up as shown in the following tables. 
 
-This first book is to comply with the IFRS 16 accounting standard. All entries posted in this book will post to a custom layer.
+This first book is set up to comply with the IFRS 16 accounting standard. All entries posted in this book will post to a custom layer.
 
 |     Name                                       	|     Description     	|
 |------------------------------------------------	|---------------------	|
