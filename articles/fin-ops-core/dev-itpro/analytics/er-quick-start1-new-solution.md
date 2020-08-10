@@ -248,34 +248,34 @@ To continue, skip the next procedure, [Create a new data model configuration](#D
 5. Select the **Questionnaire** node.
 6. Continue to add the required fields of the editable data model in the same manner until you complete the following data model structure.
 
-    | Field path                      | Data type   | Field designation/returned value |
-    |---------------------------------|-------------|----------------------------------|
-    | Root                            |             | The reference point to request questionnaire data. |
-    | \* CompanyName                  | String      | The name of the current company. |
-    | \* ExecutionContext             | Record      | Format execution details. |
-    | \*\* FormatName                 | String      | The name of the ER format that is being run. |
-    | \* Questionnaire                | Record list | The list of questionnaires |
-    | \*\* Active                     | String      | The status of the current questionnaire. |
-    | \*\* Code                       | String      | The code of the current questionnaire. |
-    | \*\* Description                | String      | The description of the current questionnaire. |
-    | \*\* QuestionnaireType          | String      | The type of the current questionnaire. |
-    | \*\* QuestionOrder              | String      | The numerical order of the current questionnaire. |
-    | \*\* ResultsGroup               | Record      | The result parameters of the current questionnaire. |
-    | \*\*\* Code                     | String      | The identification code of the current result group. |
-    | \*\*\* Description              | String      | The description of the current result group. |
-    | \*\*\* MaxNumberOfPoints        | Real        | The maximum number of points that could be earned. |
-    | \*\* Question                   | Record list | The list of questions for the current questionnaire. |
-    | \*\*\* CollectionSequenceNumber | Integer     | The sequence number of the current answer collection. |
-    | \*\*\* Id                       | String      | The identification code of the current question. |
-    | \*\*\* MustBeCompleted          | String      | A flag that indicates whether the current question must be answered. |
-    | \*\*\* PrimaryQuestion          | String      | A flag that indicates whether the current question is primary. |
-    | \*\*\* SequenceNumber           | Integer     | The sequence number of the current question. |
-    | \*\*\* Text                     | String      | The text of the current question. |
-    | \*\*\* Answer                   | Record list | The list of answers for the current question. |
-    | \*\*\*\* CorrectAnswer          | String      | A flag that indicates whether the current answer is correct. |
-    | \*\*\*\* Points                 | Real        | The points that are earned when the current answer is selected. |
-    | \*\*\*\* SequenceNumber         | Integer     | The sequence number of the current answer. |
-    | \*\*\*\* Text                   | String      | The text of the current answer. |
+    | Field path                                                    | Data type   | Field designation/returned value |
+    |---------------------------------------------------------------|-------------|----------------------------------|
+    | Root                                                          |             | The reference point to request questionnaire data. |
+    | Root\\CompanyName                                             | String      | The name of the current company. |
+    | Root\\ExecutionContext                                        | Record      | Format execution details. |
+    | Root\\ExecutionContext\\FormatName                            | String      | The name of the ER format that is being run. |
+    | Root\\Questionnaire                                           | Record list | The list of questionnaires |
+    | Root\\Questionnaire\\Active                                   | String      | The status of the current questionnaire. |
+    | Root\\Questionnaire\\Code                                     | String      | The code of the current questionnaire. |
+    | Root\\Questionnaire\\Description                              | String      | The description of the current questionnaire. |
+    | Root\\Questionnaire\\QuestionnaireType                        | String      | The type of the current questionnaire. |
+    | Root\\Questionnaire\\QuestionOrder                            | String      | The numerical order of the current questionnaire. |
+    | Root\\Questionnaire\\ResultsGroup                             | Record      | The result parameters of the current questionnaire. |
+    | Root\\Questionnaire\\ResultsGroup\\Code                       | String      | The identification code of the current result group. |
+    | Root\\Questionnaire\\ResultsGroup\\Description                | String      | The description of the current result group. |
+    | Root\\Questionnaire\\ResultsGroup\\MaxNumberOfPoints          | Real        | The maximum number of points that could be earned. |
+    | Root\\Questionnaire\\Question                                 | Record list | The list of questions for the current questionnaire. |
+    | Root\\Questionnaire\\Question\\CollectionSequenceNumber       | Integer     | The sequence number of the current answer collection. |
+    | Root\\Questionnaire\\Question\\Id                             | String      | The identification code of the current question. |
+    | Root\\Questionnaire\\Question\\MustBeCompleted                | String      | A flag that indicates whether the current question must be answered. |
+    | Root\\Questionnaire\\Question\\PrimaryQuestion                | String      | A flag that indicates whether the current question is primary. |
+    | Root\\Questionnaire\\Question\\SequenceNumber                 | Integer     | The sequence number of the current question. |
+    | Root\\Questionnaire\\Question\\Text                           | String      | The text of the current question. |
+    | Root\\Questionnaire\\Question\\Answer                         | Record list | The list of answers for the current question. |
+    | Root\\Questionnaire\\Question\\Answer\\CorrectAnswer          | String      | A flag that indicates whether the current answer is correct. |
+    | Root\\Questionnaire\\Question\\Answer\\Points                 | Real        | The points that are earned when the current answer is selected. |
+    | Root\\Questionnaire\\Question\\Answer\\SequenceNumber         | Integer     | The sequence number of the current answer. |
+    | Root\\Questionnaire\\Question\\Answer\\Text                   | String      | The text of the current answer. |
 
     The following illustration shows the completed editable data model on the **Data model designer** page.
 
@@ -504,31 +504,31 @@ You must bind the configured data sources to the fields of the data model to spe
 
 6. Continue to bind data sources to data model fields in the same manner until you achieve the following result.
 
-    | Field path                    | Data type   | Action | Binding expression |
-    |-------------------------------|-------------|--------|--------------------|
-    | CompanyName                   | String      | Bind   | CompanyInfo.'find()'.Name |
-    | Questionnaire                 | Record list | Bind   | Questionnaire |
-    | \* Active                     | String      | Edit   | Helper.NoYesEnumToString(\@.active = EnumAppNoYes.Yes) |
-    | \* Code                       | String      | Bind   | \@.kmCollectionId |
-    | \* Description                | String      | Bind   | \@.Description |
-    | \* QuestionnaireType          | String      | Bind   | \@.'&gt;Relations'.kmCollectionTypeId.Description |
-    | \* QuestionOrder              | String      | Edit   | CASE (\@.questionMode,<br>EnumAppQuestionOrder.Conditional, "Conditional",<br>EnumAppQuestionOrder.Random, "Random (percentage in questionnaire)",<br>EnumAppQuestionOrder.RandomGroup, "Random (percentage in result groups)",<br>EnumAppQuestionOrder.Sequence, "Sequential",<br>"") |
-    | \* ResultsGroup               | Record      |        | |
-    | \*\* Code                     | String      | Bind   | \@.'\$ResultGroup'.kmQuestionResultGroupId |
-    | \*\* Description              | String      | Bind   | \@.'\$ResultGroup'.description |
-    | \*\* MaxNumberOfPoints        | Real        | Bind   | \@.'\$ResultGroup'.maxPoint |
-    | \* Question                   | Record list | Bind   | \@.'&lt;Relations'.KMCollectionQuestion |
-    | \*\* CollectionSequenceNumber | Integer     | Bind   | \@.answerCollectionSequenceNumber |
-    | \*\* Id                       | String      | Bind   | \@.kmQuestionId |
-    | \*\* MustBeCompleted          | String      | Edit   | Helper.NoYesEnumToString(\@.mandatory = EnumAppNoYes.Yes) |
-    | \*\* PrimaryQuestion          | String      | Bind   | \@.parentQuestionId |
-    | \*\* SequenceNumber           | Integer     | Bind   | \@.SequenceNumber |
-    | \*\* Text                     | String      | Bind   | \@.'\$Question'.text |
-    | \*\* Answer                   | Record list | Bind   | \@.'\$Question'.'\$Answer' |
-    | \*\*\* CorrectAnswer          | String      | Edit   | Helper.NoYesEnumToString(\@.correctAnswer = EnumAppNoYes.Yes) |
-    | \*\*\* Points                 | Real        | Bind   | \@.point |
-    | \*\*\* SequenceNumber         | Integer     | Bind   | \@.sequenceNumber |
-    | \*\*\* Text                   | String      | Bind   | \@.text |
+    | Field path                                              | Data type   | Action | Binding expression |
+    |---------------------------------------------------------|-------------|--------|--------------------|
+    | CompanyName                                             | String      | Bind   | CompanyInfo.'find()'.Name |
+    | Questionnaire                                           | Record list | Bind   | Questionnaire |
+    | Questionnaire\\Active                                   | String      | Edit   | Helper.NoYesEnumToString(\@.active = EnumAppNoYes.Yes) |
+    | Questionnaire\\Code                                     | String      | Bind   | \@.kmCollectionId |
+    | Questionnaire\\Description                              | String      | Bind   | \@.Description |
+    | Questionnaire\\QuestionnaireType                        | String      | Bind   | \@.'&gt;Relations'.kmCollectionTypeId.Description |
+    | Questionnaire\\QuestionOrder                            | String      | Edit   | CASE (\@.questionMode,<br>EnumAppQuestionOrder.Conditional, "Conditional",<br>EnumAppQuestionOrder.Random, "Random (percentage in questionnaire)",<br>EnumAppQuestionOrder.RandomGroup, "Random (percentage in result groups)",<br>EnumAppQuestionOrder.Sequence, "Sequential",<br>"") |
+    | Questionnaire\\ResultsGroup                             | Record      |        | |
+    | Questionnaire\\ResultsGroup\\Code                       | String      | Bind   | \@.'\$ResultGroup'.kmQuestionResultGroupId |
+    | Questionnaire\\ResultsGroup\\Description                | String      | Bind   | \@.'\$ResultGroup'.description |
+    | Questionnaire\\ResultsGroup\\MaxNumberOfPoints          | Real        | Bind   | \@.'\$ResultGroup'.maxPoint |
+    | Questionnaire\\Question                                 | Record list | Bind   | \@.'&lt;Relations'.KMCollectionQuestion |
+    | Questionnaire\\Question\\CollectionSequenceNumber       | Integer     | Bind   | \@.answerCollectionSequenceNumber |
+    | Questionnaire\\Question\\Id                             | String      | Bind   | \@.kmQuestionId |
+    | Questionnaire\\Question\\MustBeCompleted                | String      | Edit   | Helper.NoYesEnumToString(\@.mandatory = EnumAppNoYes.Yes) |
+    | Questionnaire\\Question\\PrimaryQuestion                | String      | Bind   | \@.parentQuestionId |
+    | Questionnaire\\Question\\SequenceNumber                 | Integer     | Bind   | \@.SequenceNumber |
+    | Questionnaire\\Question\\Text                           | String      | Bind   | \@.'\$Question'.text |
+    | Questionnaire\\Question\\Answer                         | Record list | Bind   | \@.'\$Question'.'\$Answer' |
+    | Questionnaire\\Question\\Answer\\CorrectAnswer          | String      | Edit   | Helper.NoYesEnumToString(\@.correctAnswer = EnumAppNoYes.Yes) |
+    | Questionnaire\\Question\\Answer\\Points                 | Real        | Bind   | \@.point |
+    | Questionnaire\\Question\\Answer\\SequenceNumber         | Integer     | Bind   | \@.sequenceNumber |
+    | Questionnaire\\Question\\Answer\\Text                   | String      | Bind   | \@.text |
 
     The following illustration shows the final state of the configured model mapping on the **Model mapping designer** page.
 
@@ -738,7 +738,7 @@ You can now run a designed format for testing purposes from the **Configurations
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configuration** page, in the configuration tree, expand **Questionnaire model**, and then select **Questionnaire report**.
 3. Select **Designer** for the format version that has a status of **Draft**.
-4. In the ER Operation designer, select **Run**.
+4. On the **Format designer** page, select **Run**.
 5. In the **ER parameters** dialog box, on the **Records to include** FastTab, configure the filtering option so that only the **SBCCrsExam** questionnaire is included.
 6. Select **OK** to confirm the filtering option.
 7. Select **OK** to run the report.
@@ -756,7 +756,7 @@ By [default](electronic-reporting-destinations.md#default-behavior), a generated
 
 By default, a generated document is named by using the alias of the current user. By modifying the format, you can change this behavior so that a generated document is named based on your custom logic. For example, the name of a generated document can be based on the current session date and time, and on the report's title.
 
-1. In the ER Operation designer, select the **Report** root item.
+1. On the **Format designer** page, select the **Report** root item.
 2. On the **Mapping** tab, select **Edit file name**.
 3. In the **Formula** field, enter **CONCATENATE (\@"GER\_LABEL:ReportTitle", " - ", DATETIMEFORMAT(SESSIONNOW(), "yyyy-MM-dd hh-mm-ss"))**.
 4. Select **Save**, and close the formula editor.
@@ -766,7 +766,7 @@ By default, a generated document is named by using the alias of the current user
 
 The questions aren't correctly ordered in a generated report. You can change the order by modifying the format.
 
-1. In the ER Operation designer, select the **Report** root item.
+1. On the **Format designer** page, select the **Report** root item.
 2. On the **Mapping** tab, in the format tree, expand **Report\\Questionnaire\\Question**.
 
     ![Question format element of the Range type in the ER Operation designer](./media/er-quick-start1-bindings3.png)
@@ -788,7 +788,7 @@ The questions aren't correctly ordered in a generated report. You can change the
 
 You can now run a modified format for testing purposes from the ER framework.
 
-1. In the ER Operation designer, select **Run**.
+1. On the **Format designer** page, select **Run**.
 2. In the **ER parameters** dialog box, on the **Records to include** FastTab, configure the filtering option so that only the **SBCCrsExam** questionnaire is included.
 3. Select **OK** to confirm the filtering option.
 4. Select **OK** to run the report.
@@ -1055,7 +1055,7 @@ Build your project to make a new menu item available to users.
 
 ### <a name="RunFormatFromApp"></a>Run a format from the application
 
-1. Go to **Questionnaire** \> **Design** \> **Electronic reporting** \> **Configurations** \> **Questionnaires report (powered by ER)**.
+1. Go to **Questionnaire** \> **Design** \> **Questionnaires report (powered by ER)**.
 
     ![Selecting the Questionnaires report (powered by ER) menu item in the Questionnaire module to run the configured ER format](./media/er-quick-start1-application-menu-modified.png)
 
@@ -1079,7 +1079,7 @@ You can modify the configured ER solution so that it uses the data provider clas
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree, expand **Questionnaire model**, and then select **Questionnaire mapping**.
-3. Select **Designer** to open the model mappings page.
+3. Select **Designer** to open the **Model to datasource mapping** page.
 4. Select **Designer** to open the selected mapping in the model mapping designer.
 5. On the **Model mapping designer** page, in the **Data source types** pane, select **Dynamics 365 for Operations\\Object**.
 6. In the **Data sources** pane, select **Add root**.
@@ -1146,7 +1146,7 @@ You can modify the configured ER format so that its name is shown in the footer 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree, expand **Questionnaire model**, and then select **Questionnaire report**.
 3. Select **Designer**.
-4. In the ER Operation designer, select the **Report** root item.
+4. On the **Format designer** page, select the **Report** root item.
 5. Select **Add** to add a new nested format element for the selected **Report** root item.
 6. Select **Excel\\Footer**.
 7. In the **Name** field, enter **Footer**.
@@ -1155,7 +1155,7 @@ You can modify the configured ER format so that its name is shown in the footer 
 
 #### <a name="BindAddedFormatElement"></a>Bind the added format element
 
-1. In the ER Operation designer, on the **Mapping** tab, in the format tree, for the active **Footer\\String** element, select **Edit formula**.
+1. On the **Format designer** page, on the **Mapping** tab, in the format tree, for the active **Footer\\String** element, select **Edit formula**.
 2. In the formula editor, in the **Formula** field, enter **CONCATENATE ("\&C\&10", FORMAT("Generated by'\%1' ER solution", model.ExecutionContext.FormatName))**.
 3. Select **Save**, and close the formula editor.
 4. Select **Save**.
@@ -1166,7 +1166,7 @@ The configured format has now been modified so that its name will be entered in 
 
 #### <a name="CompleteFormat2"></a>Complete the format design
 
-1. Close the ER Operation designer page.
+1. Close the **Format designer** page.
 2. On the **Configurations** page, in the configuration tree, make sure that the **Questionnaire report** configuration is still selected. Then, on the **Versions** FastTab, select the configuration version that has a status of **Draft**.
 3. Select **Change status** \> **Complete**.
 
@@ -1174,7 +1174,7 @@ The status of version 1.2 of this configuration is changed from **Draft** to **C
 
 ### <a name="RunFormatFromApp2"></a>Run a format from the application
 
-1. Go to **Questionnaire** \> **Design** \> **Electronic reporting** \> **Configurations** \> **Questionnaires report (powered by ER)**.
+1. Go to **Questionnaire** \> **Design** \> **Questionnaires report (powered by ER)**.
 2. In the dialog box, in the **Format mapping** field, select **Questionnaires report**.
 3. Select **OK**.
 4. In the **ER parameters** dialog box, on the **Records to include** FastTab, configure the filtering option so that only the **SBCCrsExam** questionnaire is included.
@@ -1209,7 +1209,7 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 
 ### <a name="RunFormatFromApp3"></a>Run a format from the application to preview it as a PDF document
 
-1. Go to **Questionnaire** \> **Design** \> **Electronic reporting** \> **Configurations** \> **Questionnaires report (powered by ER)**.
+1. Go to **Questionnaire** \> **Design** \> **Questionnaires report (powered by ER)**.
 2. In the dialog box, in the **Format mapping** field, select **Questionnaires report**.
 3. Select **OK**.
 4. In the **Electronic report parameters** dialog box, on the **Records to include** FastTab, configure the filtering option so that only the **SBCCrsExam** questionnaire is included.
