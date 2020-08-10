@@ -75,6 +75,7 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 1. Go to project home page in LCS.
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
+4. The **Assigned date** indicates the date of the service plan status was changed. 
 
 Some of the environment operation may be impact by the subscription status - 
  - **Active**: your subscription is in operative state, you should be able to perform all environment operations. 
