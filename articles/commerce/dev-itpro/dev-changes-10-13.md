@@ -77,7 +77,7 @@ For a general overview of each application release, always check the "What's new
 
 ## What's changed in the 10.0.11 release
 
-- The Retail SDK has been updated to Visual Studio 2017. Visual Studio 2015 is installed on the templates for preconfigured virtual machines (VMs) for developers. However, to build the Retail SDK, you must have Visual Studio 2017 installed. Therefore, you will have to [manually update Visual Studio](retail-sdk/migrate-sdk.md#migrate-to-the-sdk-for-visual-studio-2017).
+- The Retail SDK has been updated to Visual Studio 2017. Visual Studio 2015 is installed on the templates for preconfigured virtual machines (VMs) for developers. However, to build the Retail SDK, you must have Visual Studio 2017 installed. Therefore, you will have to [manually update Visual Studio](retail-sdk/migrate-sdk.md#migrate-to-the-sdk-for-visual-studio-2017) and rebuild the Retail SDK.
 
     Microsoft is working to rebuild the virtual hard disk (VHD) templates that are used to provision developer and test environments. When this work is completed, the VHD templates will automatically include Visual Studio 2017. Although there is no confirmed date for when the rebuilt templates will be available, Microsoft expects them to be ready soon after version 10.0.13 is generally available in September 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 
@@ -98,13 +98,7 @@ For a general overview of each application release, always check the "What's new
         1. Go to the folder that contains your unmodified version 10.0.11 Retail SDK.
         2. Create a backup copy of the Retail SDK for safekeeping.
         3. Open Visual Studio 2017 as an admin, and then open each standard solution file in the SDK folder. You will probably receive a message that states that Visual Studio will close and reopen, and that a computer restart might be required. Select **Continue**.
-
-            ![Message box](./media/vs2017-individual-workloads.png)
-
-        4. Open the Visual Studio 2017 Command Prompt window as an admin, and verify that you're using the correct version of the Visual Studio developer command prompt. Visual Studio 2017 uses version 15 of the developer command prompt (whereas Visual Studio 2015 uses version 14). The version number appears in the window, as shown in the following illustration.
-
-            ![Version number in the Visual Studio 2017 Command Prompt window](media/vs2017-command-prompt.png)
-
+        4. Open the Visual Studio 2017 Command Prompt window as an admin, and verify that you're using the correct version of the Visual Studio developer command prompt. Visual Studio 2017 uses version 15 of the developer command prompt (whereas Visual Studio 2015 uses version 14). The version number appears in the command window when it opens.
         5. Verify that the standard SDK can be compiled. Go to the root of the **RetailSDK** folder, and run the following command.
 
             ```plaintext
@@ -115,7 +109,7 @@ For a general overview of each application release, always check the "What's new
 
 - References to PackageReference (NuGet package reference) are updated. Because of this change, project references are much easier to maintain. Additionally, because of this change, you must manually update *every* custom project in the Retail SDK. Expect to spend about five minutes per project. Look at how the standard projects were updated, and use those updates as a model.
 
-    1. Make sure that everything can be compiled, and that a package can be created from your local developer box.
+    1. Make sure that everything can be compiled, and that a package can be created from your local developer machine.
     2. Make sure that your build server is updated to Visual Studio 2017.
 
     > [!WARNING]
@@ -141,7 +135,7 @@ For a general overview of each application release, always check the "What's new
 ## Where to go for help
 
 1. First, double-check and triple-check to make sure that you followed every step in the relevant topics that are listed earlier in this topic.
-2. Check with your partner. Your partner knows your business and setup better than anyone else. Your setup might involve a unique customization that your partner can quickly identify and address.
+2. Check with your partner. Your partner is familiar with your business and setup. Your setup might involve a unique customization that your partner can quickly identify and address.
 3. Check the [Retail SDK FAQ](retail-sdk/sdk-faq.md). It's updated as common issues are identified.
 4. Submit a support request through LCS. Provide as much information as you can about the issue. When you submit the request, send a copy to your FastTrack solution architect.
 5. Expect to share your screen with your partner, the support specialist, your solution architect, or even a combination of the three. Be prepared to reproduce the error.
