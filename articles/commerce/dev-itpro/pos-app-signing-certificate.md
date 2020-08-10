@@ -82,7 +82,7 @@ In this case, the certificate file name is **appxsignkey.pfx**, located in the *
 
 If you use thumbprint to sign the MPOS app, then install the certificate locally. Update the thumbprint value in the **ModernPOSPackageCertificateThumbprint** node in the **BuildTools\\Customization.settings** file.
 
-This option will work if the build user is a local user. However if you are using the Azure DevOps/Visual Studio Codespaces agents to generate the build, then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. In this case, the workaround is to change the build user to local user and install the certificate in the box. However, this option will not work if you don’t have admin access to the box.
+This option will work if the build user is a local user. However if you are using the Azure DevOps agents to generate the build, then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. In this case, the workaround is to change the build user to local user and install the certificate in the box. However, this option will not work if you don’t have admin access to the box.
 
 > [!NOTE]
 > If the .pfx file or Secure File task option is used to sign the app, then leave the **ModernPOSPackageCertificateThumbprint** node in the **Customization.settings** file empty. If the thumbprint option is used, then leave **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.
