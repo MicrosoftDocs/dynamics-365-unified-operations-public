@@ -89,7 +89,7 @@ The statutory reversal book will be setup identically to the statutory book.
 |     Low Value Threshold                        	|     0                                 	|
 |     Pay to Vendor                              	|     No                                	|
 
-Assume a lease with the following entries in the **General** tab.
+Assume that a lease with the following entries has been created and is visible in the **General** tab.
 
 |     Field                         	|     Value               	|
 |-----------------------------------	|-------------------------	|
@@ -102,7 +102,7 @@ Assume a lease with the following entries in the **General** tab.
 |     Annuity type                  	|     Ordinary annuity    	|
 |     Compounding interval          	|     Monthly             	|
 
-Payment schedule lines inputs:
+The entries for the Payment schedule lines are as follows.
 
 |     Field                	|     Value         	|
 |--------------------------	|-------------------	|
@@ -113,15 +113,15 @@ Payment schedule lines inputs:
 |     Payment frequency    	|     Monthly       	|
 |     Payment amount       	|     1,000         	|
 
-In order to account for this lease under 2 different frameworks, we will use a current posting layer and a custom posting layer. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
+In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
 
 *There seems to be a table here, but I'm not sure what the columns and rows are intended to be.*
 
-You will see that there are 3 books required in order to report under both statutory reporting and IFRS. The statutory book will record the lease payment under cash basis under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will book journal entries required under IFRS 16. The user will only need to enter a lease once and navigate to books, in order to see all the books associated to a lease. When entering the books, you will note all three books are associated to one lease record.
+You will see that three books are required to report under both statutory reporting and IFRS. The statutory book will record the lease payment according to the rules for cash basis accouning under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will create the journal entries that are required under IFRS 16. You will need only to enter a lease once, and theh navigate to the **Books** page to see all the books associated with a lease. When you create the books, note that all three books must be associated with the same lease record.
 
 The first journal entry will record the lease expense under the statutory book. The user will be able to either create these payments in batch, or by selecting the payment schedule in the statutory book.
 
-Assume the following journal entry is produced for the Statutory book from the Payment schedule:
+Assume the following journal entry is produced for the statutory book from the payment schedule.
 
 ### Lease payment -- 1/31/2020 -- JE 100
 
@@ -130,7 +130,7 @@ Assume the following journal entry is produced for the Statutory book from the P
 |     Ledger          	|     1             	|     Current    	|     Lease expense          	|     1,000    	|               	|
 |     Ledger          	|     4             	|     Current    	|     Clearing account       	|              	|     1,000     	|
 
-Then following standard Dynamics functionality, an AP clerk, outside of the Asset leasing module, will create an invoice to pay for the lease, but instead of selecting "lease expense" as the debit account, they will select clearing account and generate the following entry.
+Following standard Dynamics functionality, an accounts payable clerk, will create an invoice to pay for the lease outside of the Asset leasing module, but instead of selecting **Lease expense** as the debit account, they will select clearing account to generate the following entry.
 
 ### AP Process - 1/31/2020 - JE 110
 
@@ -141,7 +141,7 @@ Then following standard Dynamics functionality, an AP clerk, outside of the Asse
 |     Ledger          	|     3             	|     Current    	|     VAT expense            	|     5.00        	|                 	|
 |     Vendor          	|     5             	|     Current    	|     Accounts payable       	|                 	|     1,008.00    	|
 
-Once the payable is issued to the vendor, the user will follow its normal payment process using standard Dynamics functionality. The following journal entry will be generated during the payment process.
+When the statement is issued to the vendor, you'll follow the normal payment process. The following journal entry will be generated during the payment process.
 
 ### Cash payment - 1/31/2020 -- JE 120
 
@@ -150,13 +150,13 @@ Once the payable is issued to the vendor, the user will follow its normal paymen
 |     Vendor          	|     5             	|     Current    	|     Accounts Payable       	|     1,008.00    	|          	|                 	|
 |     Bank            	|     9             	|     Current    	|     Cash                   	|                 	|          	|     1,008.00    	|
 
-At this point the user has fully accounted for this lease under statutory reporting requirements and will be able to extract its trial balance using the current layer. Dynamics will return a trial balance with the following figures:
+At this point, you will have fully accounted for this lease under statutory reporting requirements and will be able to generate a trial balance using the current layer. The system will return a trial balance with the following figures:
 
-*There seems to be a table here, but I'm not sure what the columns and rows are intended to be.*
+   *There seemed to be a table at this location in the Word document, but I'm not sure what the columns and rows are intended to be. Something didn't come across the right way.*
 
-In order to then be able to run the same trial balance but with the IFRS 16 figures, we first need to reverse the statutory accounting journal entries, and then book the IFRS 16 journal entries. In order to reverse the statutory journal entries, we have created a "reversal" book that has exactly the same setup as the "statutory" book but has an opposite posting profile. For example, the statutory book would have debited a lease expense account, but the "reversal" book will be crediting this account. These relationships are easily defined in the Asset lease posting accounts (Asset leasing > Setup > Asset leasing parameters).
+To run the same trial balance but with the IFRS 16 figures, we first need to reverse the statutory accounting journal entries, and then book the IFRS 16 journal entries. To reverse the statutory journal entries, this example includes a "reversal" book with the same as the *statutory* book but has an opposite posting profile. For example, the statutory book will have debited a lease expense account, but the "reversal" book will be crediting this account. These relationships are easily defined in the Asset lease posting accounts (**Asset leasing > Setup > Asset leasing parameters**).
 
-The following journal entry will be made by the reversal book following the same process as the statutory book, with the major difference that the reversal book will be booking the reversing entries from the statutory book. The reversal entry will also be made to the "Custom" layer, thus when running a trial balance at the "Current" layer the reversal journal entries will not be included.
+The following journal entry will be made from the reversal book following the same process that was used with the statutory book. The difference is that the reversal book will book the reversing entries from the statutory book. The reversing entry will also be made to the custom layer. When running a trial balance at the current layer, the reversing journal entries will not be included.
 
 ### Lease Payment - 1/31/2020 - JE 130
 
@@ -169,7 +169,10 @@ Now that we have eliminated the statutory journal entries. We will book all the 
 
 ### Initial recognition -- 1/1/2020 - JE 140
 
-
+|     Account type    	|     Account No    	|     Layer     	|     Account Description         	|     Debit        	|     Credit       	|
+|---------------------	|-------------------	|---------------	|---------------------------------	|------------------	|------------------	|
+|     Ledger          	|     6             	|     Custom    	|     ROU Asset                   	|     22,793.90    	|                  	|
+|     Ledger          	|     7             	|     Custom    	|     Finance lease obligation    	|                  	|     22,793.90    	|
 
 The lease payment will be posted as the other lease payments. The purpose of use this clearing account is for cash to only be credited once.
 
@@ -198,6 +201,6 @@ The depreciation expense journal entry will be generated from the Asset deprecia
 |     Ledger          	|     10            	|     Custom    	|     Depreciation expense        	|     949.75    	|               	|
 |     Ledger          	|     11            	|     Custom    	|     Accumulated depreciation    	|               	|     949.75    	|
 
-After all these journal entries, the see the "custom layer" values below. You will note the last column includes the bank fee, VAT expense and the reduction to cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
+After all these journal entries are created and posted, the, see the "custom layer" values below. You will note the last column includes the bank fee, VAT expense and the reduction of cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
 
 
