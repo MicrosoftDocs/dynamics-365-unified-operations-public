@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# VAT declaration for Bahrain
+# VAT declaration for Bahrain - BH-00002
 
 [!include [banner](../includes/banner.md)]
 
