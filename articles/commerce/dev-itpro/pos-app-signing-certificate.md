@@ -40,7 +40,7 @@ To install Modern POS (MPOS) you must sign the MPOS app with a signing certifica
 
     > [!NOTE] 
     > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. Don’t remove the certificate password for other scenarios.
-- Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Visual Studio Codespaces agent or build user should have access to this path and file.
+- Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Microsoft-hosted agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign in with that certificate.
 
 ## Use a Secure File task for Universal Windows Platform app signing
