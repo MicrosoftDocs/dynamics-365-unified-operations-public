@@ -85,7 +85,34 @@ Employees can update their own address in the **Employee self service** workspac
 
 ## Create or change an address on Workers
 
+1. In the **Personnel management** workspace, select **Links**, and then select **Workers**.
 
+3. Select the worker, and then select **Addresses**.
+
+3. To add an address, select **Add**. To update an existing address, select the address from the list and then select **Edit**.
+
+4. Enter or update the **Name or description** field.
+
+5. Select the **Purpose** drop-down box and then select the type of address.
+
+6. Enter or update the **Country/region** field.
+
+7. Enter or update the **ZIP/postal code** field.
+
+8. Enter or update the **Street** field.
+
+9. Enter or update the **City** field. This field usually autopopulates based on the **ZIP/postal code** field.
+
+10. Enter or update the **State** field. This field usually autopopulates based on the **ZIP/postal code** field.
+
+11. Enter or update the **County** field. This field usually autopopulates based on the **ZIP/postal code** field.
+
+12. Optionally, select the **Primary** field to indicate a primary address. Only one address can be marked as the primary. If another address is already marked as the primary address, you'll need to confirm that you want to use this address as the primary.
+
+13. Optionally, select the **Private** field to indicate that the address is private. Only users with explicit permission to view private address information can see your address.
+
+14. Select **OK**.
+ 
 ## Create a future change for an address
 
 In some cases, you might want to update an address to change in the future, like when an employee is moving on the 15th of the following month.
