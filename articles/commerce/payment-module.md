@@ -42,7 +42,7 @@ The payment module lets customers pay for orders by using credit or debit cards.
 
 In 10.0.14 this module is also integrated with the Paypal connector to provide payments via Paypal. or more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Paypal](tbd). 
 
-## Adyen payment
+## Dynamics 365 Payment Connector for Adyen 
 
 The payment module hosts the payment information that is served via Adyen in an HTML inline frame (iframe). The payment module interacts with the Commerce Scale Unit to retrieve the Adyen payment information. As part of the Commerce Scale Unit interaction, the payment module can allow billing address information to be served either in the iframe or as a separate module. In the Fabrikam theme, the billing address is shown in a separate module. This approach allows for more formatting flexibility, because the address lines can be rendered so that they resemble the lines of the shipping address.
 
@@ -56,7 +56,8 @@ The following illustration shows an example of gift card, loyalty, and Adyen pay
 
 ![Example of gift card, loyalty, and payment modules on a checkout page](./media/ecommerce-payments.PNG)
 
-## Paypal
+## Dynamics 365 Payment Connector for Paypal
+
 In 10.0.14, payment module is integrated with the Dynamics 365 Payment Connector for Paypal. For more information about how to setup and configure this payment connector see  [Dynamics 365 Payment Connector for Paypal](tbd)
  
 On the checkout page, you can have both Adyen and the Paypal connector configured. The module has been enhanced with additional properties to help identify which connector it should work with. See module properties **Supported tender types** and **Is primary payment** for more details.
@@ -81,7 +82,7 @@ The following illustration shows an example of gift card, loyalty, Adyen payment
 
 ## Billing address
 
-A billing address module can be used if the billing address provided within the Payment connector does not suffice (look and feel, consistency of the fields shown etc). 
+A billing address module can be used if the billing address provided within the Payment connector does not suffice in terms of look and feel and consistency of the fields etc. 
 
 When the payment module is integrated with the Adyen payment connector, set **Show billing address** property is set to **False** so a dedicated Billing address module can be used instead of the default Adyen billing address. In this case, the site author should include a Billing address module on the checkout page. The Adyen payment connector also allows the ability to use the Shipping address as Billing address to minimize the number of steps for the site user.
 
