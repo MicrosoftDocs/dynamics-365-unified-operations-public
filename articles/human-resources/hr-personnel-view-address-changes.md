@@ -135,7 +135,7 @@ In some cases, you might want to update an address to change in the future, like
 
 HR personnel can view and monitor address changes from the **Personnel management** workspace. To view the address changes, open the **Personnel management** tile from the **Home** page. The address changes display on a tile in the upper right corner. The number above **Address changes** shows how many address changes occurred in the number of days specified in the **Human resources parameters** page. 
 
-When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select the **Include future address changes** slider in the upper right corner to display address changes with a future date as well.
+When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select the **Include future address changes** slider in the upper right corner to display address changes with a future date.
 
 > [!NOTE]
 > If you want to receive an alert or email about these address changes, you can create a new alert rule from the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).
