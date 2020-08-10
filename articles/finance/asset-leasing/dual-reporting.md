@@ -175,27 +175,29 @@ The lease payment will be posted as the other lease payments. The purpose of use
 
 ### Lease payment -- 1/31/2020 - JE 150
 
-|     Account type    	|     Account No    	|     Layer     	|     Account Description         	|     Debit       	|          	|     Credit      	|
-|---------------------	|-------------------	|---------------	|---------------------------------	|-----------------	|----------	|-----------------	|
-|     Ledger          	|     7             	|     Custom    	|     Finance lease obligation    	|     1,000.00    	|          	|                 	|
-|     Ledger          	|     4             	|     Custom    	|     Clearing account            	|                 	|          	|     1,000.00    	|
+|     Account type    	|     Account No    	|     Layer     	|     Account Description         	|     Debit       	|     Credit      	|
+|---------------------	|-------------------	|---------------	|---------------------------------	|-----------------	|-----------------	|
+|     Ledger          	|     7             	|     Custom    	|     Finance lease obligation    	|     1,000.00    	|                 	|
+|     Ledger          	|     4             	|     Custom    	|     Clearing account            	|                 	|     1,000.00    	|
 
 The interest expense journal entry will be generated from the liability amortization schedule.
 
 ### Interest expense -- 1/31/2020 - JE 160
 
-
+|     Account type    	|     Account No    	|     Layer     	|     Account Description         	|     Debit    	|     Credit    	|
+|---------------------	|-------------------	|---------------	|---------------------------------	|--------------	|---------------	|
+|     Ledger          	|     8             	|     Custom    	|     Interest expense            	|     94.97    	|               	|
+|     Ledger          	|     7             	|     Custom    	|     Finance lease obligation    	|              	|     94.97     	|
 
 The depreciation expense journal entry will be generated from the Asset depreciation schedule.
 
 ### Depreciation expense -- 1/31/2020 - JE 170
 
-
+|     Account type    	|     Account No    	|     Layer     	|     Account Description         	|     Debit     	|     Credit    	|
+|---------------------	|-------------------	|---------------	|---------------------------------	|---------------	|---------------	|
+|     Ledger          	|     10            	|     Custom    	|     Depreciation expense        	|     949.75    	|               	|
+|     Ledger          	|     11            	|     Custom    	|     Accumulated depreciation    	|               	|     949.75    	|
 
 After all these journal entries, the see the "custom layer" values below. You will note the last column includes the bank fee, VAT expense and the reduction to cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
-
-
-
-
 
 
