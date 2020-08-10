@@ -44,7 +44,7 @@ This topic explains the data synchronization processes that can be run frequentl
 
 You can use the following APIs to show inventory availability for a product when your customers are shopping on an e-Commerce site.
 
-- **GetEstimatedAvailabilty** – Use this API to get inventory availability for the item in the e-Commerce channel warehouse or all warehouses that are linked to the configuration of the fulfillment group for the e-Commerce channel. This API can also be used for warehouses in a specific search area or radius, based on longitude and latitude data.
+- **GetEstimatedAvailability** – Use this API to get inventory availability for the item in the e-Commerce channel warehouse or all warehouses that are linked to the configuration of the fulfillment group for the e-Commerce channel. This API can also be used for warehouses in a specific search area or radius, based on longitude and latitude data.
 - **GetEstimatedProductWarehouseAvailability** – Use this API to request inventory for an item from a specific warehouse. For example, you can use it to show inventory availability in scenarios that involve order pickup.
 
 > [!NOTE]
@@ -54,7 +54,7 @@ Both APIs fetch data from the Commerce server and provide an estimate of on-hand
 
 ### Get started with e-Commerce calculated inventory availability
 
-Before you use the two APIs that were mentioned earlier, you must enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters.
+Before you use the two APIs that were mentioned earlier, you must enable the **Optimized product availability calculation** feature through the **Feature management** workspace in Commerce Headquarters.
 
 Before the APIs can calculate the best estimate of inventory availability for an item, a periodic snapshot of inventory availability from Commerce Headquarters must be processed and sent to the channel database that the e-Commerce Commerce Scale Unit uses. The snapshot represents the information that Commerce Headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. It can include inventory adjustments or movements that are caused by inventory receipts, or by shipments or other processes that are performed in Commerce Headquarters and that the e-Commerce channel has information about only because of the synchronization process.
 
@@ -70,7 +70,7 @@ After the **Product availability** job has finished running, the data that was c
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **1130** (**Product availability**) job to sync the snapshot data that the **Product availability** job created from Commerce Headquarters to your channel databases.
 
-When inventory availability is requested from the **GetEstimatedAvailabilty** or **ProductWarehouseInventoryAvailabilities** API, a calculation is run to try to get the best possible estimate of inventory for the product. The calculation references any e-Commerce customer orders that are in the channel database but that weren't included in the snapshot data that the 1130 job provided. This logic is performed by tracking the last processed inventory transaction from Commerce Headquarters and comparing it with the transactions in the channel database. It provides a baseline for the channel-side calculation logic, so that the additional inventory movements that occurred for customer order sales transactions in the e-Commerce channel database can be factored into the estimated inventory value that the API provides.
+When inventory availability is requested from the **GetEstimatedAvailability** or **GetEstimatedProductWarehouseAvailability** API, a calculation is run to try to get the best possible estimate of inventory for the product. The calculation references any e-Commerce customer orders that are in the channel database but that weren't included in the snapshot data that the 1130 job provided. This logic is performed by tracking the last processed inventory transaction from Commerce Headquarters and comparing it with the transactions in the channel database. It provides a baseline for the channel-side calculation logic, so that the additional inventory movements that occurred for customer order sales transactions in the e-Commerce channel database can be factored into the estimated inventory value that the API provides.
 
 The channel-side calculation logic returns an estimated physically available value and a total available value for the requested product and warehouse. The values can be shown on your e-Commerce site if you want, or they can be used to trigger other business logic on your e-Commerce site. For example, you can show an "out of stock" message instead of the actual on-hand quantity that the API passed.
 
@@ -84,7 +84,7 @@ When channel-side calculation is correctly configured and managed, it can provid
 
 ### Get started with POS channel-side calculated inventory availability
 
-To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters. In addition to enabling the feature, you must make changes to the **Functionality profile**.
+To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first enable the **Optimized product availability calculation** feature through the **Feature management** workspace in Commerce Headquarters. In addition to enabling the feature, you must make changes to the **Functionality profile**.
 
 To change the **Functionality profile**, follow these steps:
 
