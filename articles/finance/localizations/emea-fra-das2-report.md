@@ -58,7 +58,7 @@ After you've finished downloading the ER configurations from LCS, follow these s
 3. Select **Configurations** \> **Exchange**, and load the configurations from the XML files to import the Statistics model, model mapping, DAS-2 report and DAS-2 form format file.
 4. Select **DAS-2 report** format.
 5. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
-6. On the **Conditions** tab, select version **32.14**, and create the configuration that will let you set up the mapping between the main accounts that are configured in your company and the related tax authority classification of the DAS-2 report.
+6. On the **Conditions** tab, select version **36.30** or later, and create the configuration that will let you set up the mapping between the main accounts that are configured in your company and the related tax authority classification of the DAS-2 report.
 
     1. In the **Lookup result** field, select the related classification.
     2. In the **Main account** field, select the main account that is used to post the related transactions that belong to the selected classification.
