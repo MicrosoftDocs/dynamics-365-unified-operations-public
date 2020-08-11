@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Add a logo
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
@@ -55,7 +54,7 @@ Before you can add a logo to all the pages of your site, you must complete these
 
 To add a logo to the header fragment for your site, follow these steps.
 
-1. In the navigation pane on the left, select **Page Fragments**.
+1. In the navigation pane on the left, select **Fragments**.
 1. Select the header fragment that you created, and then select **Edit**.
 1. Expand the header module.
 1. In the property pane for the header module, provide an image and link for the logo. 
