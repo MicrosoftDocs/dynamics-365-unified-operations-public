@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
