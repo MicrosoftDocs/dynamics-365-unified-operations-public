@@ -101,9 +101,9 @@ Most of the checkout information, such as the shipping address and shipping meth
 
 To add a checkout module to a new page and set the required properties, follow these steps.
 
-1. Go to **Page Fragments**, and select **New** to create a new fragment.
-1. In the **New Page Fragment** dialog box, select the **Checkout** module.
-1. Under **Page Fragment Name**, enter the name **Checkout fragment**, and then select **OK**.
+1. Go to **Fragments**, and select **New** to create a new fragment.
+1. In the **New page fragment** dialog box, select the **Checkout** module.
+1. Under **Page fragment name**, enter the name **Checkout fragment**, and then select **OK**.
 1. Select the **Checkout module** slot.
 1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
 1. In the **Checkout Information** slot, select the ellipsis (**...**), and then select **Add Module**.
