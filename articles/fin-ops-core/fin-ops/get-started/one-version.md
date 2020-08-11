@@ -148,14 +148,14 @@ Critical issues should always be submitted to the support team via Lifecycle Ser
 
 ### How much time do I get for validation?
 
-You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll out.
+You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll-out.
 
 ### What happens when the service update is complete?
 
 Once the service update is applied by Microsoft you will receive a notification if the update was successful or if it was not able to be applied.  There can be several reasons an update was unable to be applied:
 
 - Pending Package Sign-off - If a package is pending signoff, Microsoft will not apply the service update to production.  
-- Deployment Failure - If there was a deployment failure ,the environment will be rolled-back to the original state.
+- Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.
  
 ### If there is a failure, can I reschedule the update to be auto applied?
 
