@@ -159,7 +159,7 @@ Once the service update is applied by Microsoft you will receive a notification 
  
 ### If there is a failure, can I reschedule the update to be auto applied?
 
-You will not be able to reschedule the update per se, but you may to apply the package when it is convenient for you, just as you might schedule to apply any other update.
+You will not be able to reschedule the update per se, but you may apply the package when it is convenient for you, just as you might schedule to apply any other update.
 
 ### Will critical hotfixes be automatically applied to my sandbox/ production environment during auto-update?
 
