@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/human-resources/hr-setup-workflows.md",
+      "redirect_url": "hr-workflow-manage-employee-information",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md",
       "redirect_url": "../warehouse-work-policies",
       "redirect_document_id": "false"
