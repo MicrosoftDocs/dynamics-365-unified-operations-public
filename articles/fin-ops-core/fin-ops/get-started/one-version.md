@@ -103,7 +103,9 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 ### Can I select the day and time to update?
 
-Customers can configure the day and maintenance time windows in LCS, the service update will start within 15 minutes based on your update settings. Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through LCS. The production ready deployable package will be made available to all customers via the Action Center in Lifecycle services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more inforamtion, see [configure service update](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates).
+Customers can configure the day and maintenance time windows in LCS. The service update will start within 15 minutes based on your update settings. Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation. 
+
+Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more inforamtion, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
