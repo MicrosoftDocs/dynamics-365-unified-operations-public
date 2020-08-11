@@ -227,8 +227,6 @@
         href: hr-setup-parameters.md
       - name: Configure Human resources shared parameters
         href: hr-setup-shared-parameters.md
-      - name: Set up Human resource workflows
-        href: hr-setup-workflows.md
       - name: Understand Date and Time fields
         href: hr-setup-date-time-fields.md
     - name: Configure organization settings
