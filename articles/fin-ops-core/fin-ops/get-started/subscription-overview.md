@@ -71,15 +71,16 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you will find the **Tenant name** and the **Tenant ID**.
 
-## How can I find the subscription status and how would it impact the environment?
-1. Go to project home page in LCS.
+## How can I find the subscription status?
+1. Go to the project home page in LCS.
 2. In the **Environments** section, select **Subscriptions available**.
 3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
-4. The **Assigned date** indicates the date of the service plan status was changed. 
+4. The **Assigned date** indicates the date that service plan status was changed. 
 
-Some of the environment's operations may be impact by the subscription status:
-- **Active**: Your subscription is in an operative state. You should be able to perform all environment operations. 
-- **In Grace Period**: Your subscription has expired, but is within the grace period. You should renew your subscription soon. The subscription status won’t impact your license quantity, ability to deploy new environment, or to perform environment operations.
-- **Suspended**: Your subscription has expired beyond grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or perform environment operations. 
-- **Deleted**: Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
+## How would the subscription status impact the environment?
+Some of the environment's operations may be impacted by the subscription status:
+- **Active** - Your subscription is in an operative state. You should be able to perform all environment operations. 
+- **In Grace Period** - Your subscription has expired, but is within the grace period. You should renew your subscription soon. The subscription status won’t impact your license quantity, ability to deploy a new environment, or to perform environment operations.
+- **Suspended** - Your subscription has expired beyond the grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or impact your ability to perform environment operations. 
+- **Deleted** - Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
 
