@@ -112,6 +112,8 @@ To ensure the best possible estimate of inventory, it's critical that you use th
 - **Product availability** – This job creates the snapshot of inventory from Commerce Headquarters.
 - **1130 (Product availability)** – This job is found on the **Distribution schedules** page and should be run immediately after the **Product availability** job. This job transports the inventory snapshot data from Commerce Headquarters to the channel databases.
 
+It's not recommended to run those batch jobs too frequently (every few minutes), which will overload Commerce Headquarters and potentially impact performance. In general, running Product availability and 1130 jobs on hourly basis and schedule P-job, synchronize orders, and trickle feed posting related jobs with the same or higher frequency is a good practice.
+
 > [!NOTE]
 > For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the new POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
 
