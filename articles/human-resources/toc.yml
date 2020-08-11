@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: August 6, 2020
+      href: hr-whats-new-2020-08-06.md
     - name: July 23, 2020
       href: hr-whats-new-2020-07-23.md
     - name: July 8, 2020
@@ -23,16 +25,16 @@
       href: hr-whats-new-2020-04-13.md
     - name: April 3, 2020
       href: hr-whats-new-2020-04-03.md
-    - name: March 24, 2020
-      href: hr-whats-new-2020-03-24.md
-    - name: March 19, 2020
-      href: hr-whats-new-2020-03-19.md
-    - name: March 10, 2020
-      href: hr-whats-new-2020-03-10.md
-    - name: March 3, 2020
-      href: hr-whats-new-2020-03-03.md
     - name: What's new archives 2020
       items:
+      - name: March 24, 2020
+        href: hr-whats-new-2020-03-24.md
+      - name: March 19, 2020
+        href: hr-whats-new-2020-03-19.md
+      - name: March 10, 2020
+        href: hr-whats-new-2020-03-10.md
+      - name: March 3, 2020
+        href: hr-whats-new-2020-03-03.md
       - name: February 25, 2020
         href: hr-whats-new-2020-02-25.md
       - name: February 18, 2020

@@ -2604,6 +2604,8 @@
           items:
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
+          - name: Assets tax registers
+            href: localizations/rus-assets-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3417,7 +3419,9 @@
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
-          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+        - name: Design a new ER solution to print a custom report
+          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
       - name: Tutorials
         items: 
         - name: Learn how to use data sources

@@ -630,6 +630,8 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
+        - name: Enable "shop similar looks" recommendations
+          href: shop-similar-looks.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
@@ -988,6 +990,12 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Payment module
+            href: payment-module.md
+          - name: Shipping address module
+            href: ship-address-module.md
+          - name: Delivery options module
+            href: delivery-options-module.md
           - name: Order details module
             href: order-confirmation-module.md 
           - name: Gift card module
@@ -1974,6 +1982,8 @@
             href: e-commerce-extensibility/extend-module-definition.md
           - name: Cookie API overview
             href: e-commerce-extensibility/cookie-api-overview.md
+          - name: Interactive components overview
+            href: e-commerce-extensibility/interactive-components.md
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
         - name: Develop data actions
@@ -2046,6 +2056,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
+        - name: Important development and ALM changes from version 10.0.10 to 10.0.13
+          href: dev-itpro/dev-changes-10-13.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
@@ -2130,7 +2142,9 @@
           href: dev-itpro/extend-metadata.md
         - name: Call the CRT service in offline mode
           href: dev-itpro/call-crt-service-offline.md
-        - name: Create new Retail Server extension
+        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
+          href: dev-itpro/retail-server-icontroller-extension.md
+        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
           href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
