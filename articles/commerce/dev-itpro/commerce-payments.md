@@ -183,7 +183,7 @@ After the payments are edited, the order submittal process rectifies any changes
 | **Order cancellation for credit card payments that are captured, but not invoiced** | If an order is created at the POS and a card payment is used to capture a deposit, the order is cancelled prior to invoicing. The card payment is automatically refunded as part of order cancellation. | Yes |
 | **Order cancellation for orders that are partially shipped and invoiced** | For orders that have been partially shipped and invoiced, cancellation will cancel the fulfillment of lines that aren't invoiced. Open credit card authorizations for the the remaining balance on the order aren't automaticaly cancelled. | Requires manual refund |
 | **Order cancellation for orders that are invoiced, but not shipped** | If an order is fully invoiced, but any of the items haven't shipped, the order can be cancelled, but payments that are captured for that order won't automatically be refunded. Open authorizations for items that aren't invoiced won't be cancelled, but will expire based on the card issuing bank's authorization expiration policies. | Requires manual refund |
-| **Line cancellation for items that aren't fulfilled or invoiced** | If an order line that isn't fulfilled or invoiced is cancelled, the order completion process 
+| **Line cancellation for items that aren't fulfilled or invoiced** | If an order line that isn't fulfilled or invoiced is cancelled, the order completion process will require that payments for the order balance with the order total. If removing a line decreases the amount due, then the payment amount should be reduced accordingly. 
 
 ### Refunds  
 
