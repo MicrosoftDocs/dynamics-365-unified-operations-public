@@ -48,7 +48,7 @@ If you associate cycle count plans with work templates by using the **Work lines
 
 Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator will be asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory will be ignored for this counting process. 
 
-For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location.
+For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location. The partial cycle count doesn't consider the parameter **Days between cycle counting** on **Cycle count plans** form. Partial cycle count doesn't support simultaneous count of multiple items in the same location. Partial cycle count functionality may result in same location being counted multiple times for an item when **Process cycle counting plan** is executed, to avoid such scenario specify filters on **select locations**. 
 
 ## Example
 For this example, only item number A0001 must be counted in warehouse 61.
