@@ -103,7 +103,7 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 ### Can I select the day and time to update?
 
-Customers can configure the day and maintenance time windows in LCS. The service update will start within 15 minutes based on your update settings. Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation. 
+Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.
 
 Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
@@ -128,7 +128,7 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 Before any feature is removed from the product, the deprecation notice will be announced in the product documentation 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 ### Can I delay an update?
 
