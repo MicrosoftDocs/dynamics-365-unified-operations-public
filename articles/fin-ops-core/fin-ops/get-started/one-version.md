@@ -227,7 +227,7 @@ Individual hotfixes will not be supported after 8.1. Customers must update to th
 
 ### Will you notify me about critical hotfixes released for the monthly update that I’m on? 
 
-Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign-up to be notified when an open issue is resolved.  
+Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign up to be notified when an open issue is resolved.  
 
 ### How can I upgrade to 8.x?
 
