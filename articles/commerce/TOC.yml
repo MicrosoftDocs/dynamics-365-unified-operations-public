@@ -688,12 +688,12 @@
             href: tasks/create-product-packages-purchase-orders.md
     - name: Manage your orders
       items:
-    - name: Customer orders
-      items:
-       - name: Customer orders in MPOS
-         href: customer-orders-overview.md
-       - name: Hybrid customer orders
-         href: hybrid-customer-orders.md
+      - name: Customer orders
+        items:
+        - name: Customer orders in MPOS
+          href: customer-orders-overview.md
+        - name: Hybrid customer orders
+          href: hybrid-customer-orders.md
       - name: Sales orders   
         items:
         - name: Create a call center order 
