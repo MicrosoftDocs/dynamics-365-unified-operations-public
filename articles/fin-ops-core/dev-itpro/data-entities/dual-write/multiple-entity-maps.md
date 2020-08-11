@@ -1,7 +1,7 @@
 ---
 
 title: Handling multiple entity maps
-description: This article describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
+description: This topic describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
 author: sabinn-msft
 manager: AnnBe
 ms.date: 08/10/2020
@@ -33,12 +33,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-As part of day to day operations, there may be a need to bulk handle entity maps. For example, you may want to simultaneously enable or pause a set of entity maps. Earlier you had to do this one by one, which is cumbersome and time consuming. You can now enable, pause, resume, or stop more than one entity map at the same time.
+This topic describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
 
-![Selecting multiple entity maps](media/select-multiple-entity-maps.png)
+As part of day to day operations, there may be a need to bulk handle entity maps. For example, you may want to simultaneously enable or pause a set of entity maps. Instead of doing this one by one, which is cumbersome and time consuming, you can now enable, pause, resume, or stop more than one entity map at the same time.
+
+![Select multiple entity maps](media/select-multiple-entity-maps.png)
  
 As part of enabling multiple entity maps, you also get to view the list of all the dependent entity maps by selecting **Show related entity map(s)**.
 
 ![Show related entity maps](media/show-related-entity-map.png)
  
-To enable the selected entity map and all its related entities, select **Run** in the dialog box. If you want to copy the pre-existing data for the selected entity maps or its dependents, select the corresponding **Initial sync** checkbox. Alternatively, remove one or more of the related entities by clearing the corresponding checkbox. You can also drag and drop the entity maps to change the order that they'll be synced in.
+To enable the selected entity map and all its related entities, select **Run** in the dialog box. If you want to copy the pre-existing data for the selected entity maps or its dependents, select the corresponding **Initial sync** check box. Alternatively, remove one or more of the related entities by clearing the corresponding check box. You can also drag and drop the entity maps to change the order in which the maps will be synced.
