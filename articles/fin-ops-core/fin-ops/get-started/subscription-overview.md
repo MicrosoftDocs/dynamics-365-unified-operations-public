@@ -77,9 +77,9 @@ Yes. However, you must maintain the minimum required number of licenses under ea
 3. On the **Subscriptions available** page, you’ll find all **Service plans** available to the tenant.  
 4. The **Assigned date** indicates the date of the service plan status was changed. 
 
-Some of the environment operation may be impact by the subscription status - 
- - **Active**: your subscription is in operative state, you should be able to perform all environment operations. 
- - **In Grace Period**: your subscription has expired but is within the grace period, you should renew your subscription soon. It won’t impact your license quantity, ability to deploy new environment, or to perform environment operations.
- - **Suspended**: your subscription has expired beyond grace period. This may reduce the license quantity and impact your ability to deploy new environment or perform environment operations. 
- - **Deleted**: your subscription has been deleted. This will impact your ability to deploy new environment or perform environment operations.  
-> 
+Some of the environment's operations may be impact by the subscription status:
+- **Active**: Your subscription is in an operative state. You should be able to perform all environment operations. 
+- **In Grace Period**: Your subscription has expired, but is within the grace period. You should renew your subscription soon. The subscription status won’t impact your license quantity, ability to deploy new environment, or to perform environment operations.
+- **Suspended**: Your subscription has expired beyond grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or perform environment operations. 
+- **Deleted**: Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
+
