@@ -5,7 +5,7 @@ title: Process automation
 description: This topic provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
 manager: tonyafehr
-ms.date: 06/24/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -36,7 +36,8 @@ Process automation allows simple scheduling of processes that will be run by the
 ## Administration
 
 The central administration page for all process automations is found in the System Administration module under the **Setup** menu. This page will list all automated processes (series) that are set up in the system. It will also allow you to add new process automations directly from this page. After a series is set up, you can manage each series from this list. You can chose to edit the entire series, delete it, view all occurrences in a list view, or disable the series if you would like to pause the scheduled work for a period of time. 
-Any process that is enabled or disabled in feature management will not show when the feature is disabled.  Additionally, the Process Automation scheduling engine will not schedule any occurrences or background processes for the disabled feature. Re-enabling the feature will cause any occurrences or background processes scheduled to run in the past to be immediately executed.
+
+Any processes that are disabled in feature management will not show when the feature is disabled. Additionally, the Process automation scheduling engine will not schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately.
 
 ## Calendar view 
 One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You will see this view on the right side of the **Process automation** page. It will be populated with the scheduled work for the selected series. 
