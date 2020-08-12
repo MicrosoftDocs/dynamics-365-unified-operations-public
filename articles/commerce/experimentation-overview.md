@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Experiment on e-commerce pages
 ## Overview
-Experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users. Their interactions with each version are tracked and used to make data-backed changes to drive higher conversion rates.
+Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users. Users' interactions with each version are tracked to make data-backed changes and drive higher conversion rates.
 
-Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments aka variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
+Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
 
 ## Prerequisites
 1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
