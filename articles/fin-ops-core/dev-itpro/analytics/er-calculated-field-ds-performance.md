@@ -265,7 +265,7 @@ You must also download and locally store the following files.
 | Performance improvement mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Performance improvement format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
 
-## <a name="appendix1"></a>Appendix 2: Configure the ER framework
+## <a name="appendix2"></a>Appendix 2: Configure the ER framework
 
 You must configure the minimal set of ER parameters before you can start to use the ER framework to  improve the performance of the sample Microsoft ER solution.
 
