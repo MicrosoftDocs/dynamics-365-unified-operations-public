@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,7 +77,7 @@ To generate a SAF Bank statement file, click **General ledger > Inquiries and re
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
 | **Bank account**             | Specify the bank account to export transactions for.                               |
 
-**SAF Bank statement** file incudes information about transactions posted during the specified period of time for bank account selected on the report's dialog. Name of the counterparty reported in **NazwaPodmiotu** element is collected from the **Customers** (Accounts receivable > Customers > All customers) and **Vendors** (Accounts payable > Vendors > All vendors) master data of the system registered in the legal entity in relation to which the bank transaction was posted. Operation description reported in **OpisOperacji** element is collect from **Description** field of the bank transaction.
+The **SAF Bank statement** file incudes information about transactions posted during the specified period of time for the bank account selected on the report's dialog. The name of the counterparty reported in the **NazwaPodmiotu** element is collected from the **Customers** (**Accounts receivable** > **Customers** > **All customers**) and **Vendors** (**Accounts payable** > **Vendors** > **All vendors**) master data of the system registered in the legal entity as it relates to the posted bank transaction. The operation description reported in the **OpisOperacji** element is collected from the **Description** field of the bank transaction.
 
 ## Generate a SAF Inventory file
 To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
