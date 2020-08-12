@@ -208,6 +208,7 @@ We will deprecate support for the following regions only for new projects that w
 
 This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.
 
-### I cannot re-deploy an environment after deleting it, the environment slot is missing. 
-This is due to the license expiring that you no longer having the minimum required licenses to obtain an environment slot.  Please check your [subscriptions status](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) and reactivate the expired licenses to enable the redeployment. 
+### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
+This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
+
 
