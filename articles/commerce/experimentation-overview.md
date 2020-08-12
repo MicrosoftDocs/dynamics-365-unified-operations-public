@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users. Users' interactions with each version are tracked to make data-backed changes and drive higher conversion rates.
 
-The experimentationjourney begins with creating a hypothesis aimed at driving up conversions. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
+The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 ## Prerequisites
 1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
