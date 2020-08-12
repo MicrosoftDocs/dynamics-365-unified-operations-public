@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to split a percentage of one asset book to a new asset book. It uses the Accountant role and USMF demo data.
-
+This topic explains how to split a percentage of one asset book to a new asset book. It uses the Accountant role and USMF demo data. 
 
 ## Create a new fixed asset
 1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
@@ -41,6 +40,8 @@ This topic explains how to split a percentage of one asset book to a new asset b
 5. Close the form.
 
 ## Split a fixed asset
+If a fully depreciated asset must be split, the asset book status should be changed from **Closed** to **Open** manually before completing the process to split the asset. This reason this is necessary is that if you need to post transactions for that asset, for example for a disposal sale, the book status must be open. After changing the asset book status, complete the following procedure for splitting the asset. 
+
 1. In the list, find and select the link of the fixed asset to split.
 2. Select **Books**. Select the book to split to the new asset.  
 3. Select **Functions**.
