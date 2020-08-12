@@ -790,8 +790,6 @@
       items:
       - name: Manage Asset leases 
         items:
-        - name: Configure Asset leasing parameters
-          href: asset-leasing/config-lease-parameters.md
         - name: Add or copy a lease
           href: asset-leasing/add-lease.md
         - name: Record right-of-use asset depreciation
