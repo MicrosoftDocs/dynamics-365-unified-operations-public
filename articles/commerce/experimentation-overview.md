@@ -34,16 +34,17 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users. Users' interactions with each version are tracked to make data-backed changes and drive higher conversion rates.
 
-Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations in site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
+Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics and reports defining experiment results in the third-party service.
+
+<Generate a hypothesis aimed at driving up conversions.>
 
 ## Prerequisites
 1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
 1. Turn on feature flags - needs description + images.
-1. Generate a hypothesis aimed at driving up conversions.
-1. Setup test connector or purchase and setup third-party connector, following instructions here. <add link to Sam's doc>
+1. Experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 
 ## Create an experiment
-Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will surface in site builder within about 5 minutes.
+Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
 
 ## Create webpage variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
