@@ -378,3 +378,8 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 
 ![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## Additional resources
+
+- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
