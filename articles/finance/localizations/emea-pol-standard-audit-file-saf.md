@@ -77,7 +77,7 @@ To generate a SAF Bank statement file, click **General ledger > Inquiries and re
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
 | **Bank account**             | Specify the bank account to export transactions for.                               |
 
- 
+**SAF Bank statement** file incudes information about transactions posted during the specified period of time for bank account selected on the report's dialog. Name of the counterparty reported in **NazwaPodmiotu** element is collected from the **Customers** (Accounts receivable > Customers > All customers) and **Vendors** (Accounts payable > Vendors > All vendors) master data of the system registered in the legal entity in relation to which the bank transaction was posted. Operation description reported in **OpisOperacji** element is collect from **Description** field of the bank transaction.
 
 ## Generate a SAF Inventory file
 To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
