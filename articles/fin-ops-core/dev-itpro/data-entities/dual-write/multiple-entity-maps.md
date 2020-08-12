@@ -1,7 +1,7 @@
 ---
 
 title: Manage multiple entity maps
-description: This topic describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
+description: This article describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
 author: sabinn-msft
 manager: AnnBe
 ms.date: 08/12/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-This topic describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
+This article describes how to select multiple entity maps, view a list of dependent entity maps, enable the entity maps and all of its related entities, and copy pre-existing data.
 
 As part of day to day operations, there may be a need to bulk handle entity maps. For example, you may want to simultaneously enable or pause a set of entity maps. Instead of doing this one by one, which is cumbersome and time consuming, you can now enable, pause, resume, or stop more than one entity map at the same time in the dual-write list page.
 
