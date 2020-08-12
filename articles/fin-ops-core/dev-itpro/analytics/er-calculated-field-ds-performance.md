@@ -208,8 +208,9 @@ Complete these steps to use caching and a data source of the **Calculated field*
 
     1. On the **Model mapping designer** page, in the **Data sources** pane, select the **Box\Vend** item.
     2. Select **Cache**.
-
-    > [!NOTE] The **Box\Vend** data source caching will be performed in scope of all vendor transactions of the **Trans** data source at runtime. 
+    
+    > [!NOTE] 
+    > The **Box\Vend** data source caching will be performed in scope of all vendor transactions of the **Trans** data source at runtime.
 
 8. Follow these steps to update the nested **Trans\#Vend** data source as using the **Box\Vend** data source:
 
