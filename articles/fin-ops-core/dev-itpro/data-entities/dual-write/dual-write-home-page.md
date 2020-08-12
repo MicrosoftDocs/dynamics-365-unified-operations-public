@@ -60,6 +60,8 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize entity and field mappings](customizing-mappings.md)
++ [Handling multiple entity maps](multiple-entity-maps.md)
++ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 
