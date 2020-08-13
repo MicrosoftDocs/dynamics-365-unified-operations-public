@@ -175,7 +175,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 - The functionality for cluster picking isn't supported for catch weight products.
 - Pick and pack warehouse processing isn't supported for catch weight products.
-- For catch weight products, work that is defined in a work template can be run automatically.
+- For catch weight products, work that is defined in a work template cannot be run automatically.
 - For catch weight products, the system doesn't support manual packing station processing where packed container picking work is created after containers are closed.
 - The functionality for pcs-by-pcs scanning isn't supported for catch weight products.
 
