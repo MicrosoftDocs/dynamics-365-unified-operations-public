@@ -5,7 +5,7 @@ title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -122,13 +122,19 @@ If you have existing pipelines in Azure Pipelines not based on build machine age
 
 Please follow the steps mentioned in [this doc to setup a build pipeline in Azure DevOps without using build VM and build agent from the build machine.](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline])
 
-## Azure DevOps pipeline using build machine agent:
+## Azure DevOps pipeline using build machine agent
 
-The same build machine used for MSBuild  with the Azure DevOps pipeline can be used with 10.0.11 SDK. Perform the following steps on the build machine for the 10.0.11 SDK:
+The same build machine used for MSBuild  with the Azure DevOps pipeline can be used with SDK version 10.0.11. Perform the following steps on the build machine for the SDK:
 
 1. Install Visual Studio 2017 on the build machine.
-2. Optional: Run msbuild (msbuild version 15.0) from the developer command prompt for Visual Studio 2017 on the build machine. Open the developer command prompt for Visual Studio 2017 and navigate to the Retail SDK root folder. Type msbuild dirs.proj and make sure that the MSBuild completes successfully. 
-3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path**. Click **New** and add the path variable for MSBuild 15.0. For example, C:\Program Files(x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
+2. Optionally, run msbuild (msbuild version 15.0) from the developer command prompt for Visual Studio 2017 on the build machine. Open the developer command prompt for Visual Studio 2017 and navigate to the Retail SDK root folder. Type *msbuild dirs.proj* and make sure that the MSBuild completes successfully. 
+3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path**. Select **New** and add the path variable for MSBuild 15.0 at the top of the list of PATH variables. For example, C:\Program Files(x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
+- To validate the config information
+  +  Open a regular "CMD" window (not the Visual Studio command prompt).
+  +  Run **where MSBuild**.
+  +  The first result in the list should be: C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe.
+         
 4. Restart the Azure DevOps build agent on the build machine.
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
+
 If the build from Azure DevOps pipeline fails with a NuGet error, the Azure pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
