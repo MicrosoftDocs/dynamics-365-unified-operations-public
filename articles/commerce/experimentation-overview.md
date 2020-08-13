@@ -38,7 +38,7 @@ The experimentation journey begins with creating a hypothesis or the theory that
 
 ## Prerequisites
 1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
-1. Turn on feature flags - needs description + images.
+1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 1. Setup an experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 
 ## Create an experiment
