@@ -5,7 +5,7 @@ title: Fiscal document text placeholders for Brazil
 description: Fiscal document text placeholders are predefined tags that represent specific values. You can include the placeholders in the <strong>Text </strong>field on the <strong>Fiscal document source texts </strong>page when you create a fiscal document source text.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -140,17 +140,17 @@ Tags that support fiscal document text for referenced processes
 ## Tags for Poverty funds over ICMS (ICMS FCP)
 | Predefined tag          | Value                                                                 |
 |-------------------------|-----------------------------------------------------------------------|
-| %FCP\_amount            | The amount of the Poverty fund calculated over the ICMS amount.       |
+| %FCP\_amount            | The amount of the poverty fund calculated over the ICMS amount.       |
 | %FCP\_baseAmount        | The ICMS base amount for calculation of the poverty fund amount.      |
-| %FCP\_percentage        | The Poverty fund rate over the ICMS amount.                           |
+| %FCP\_percentage        | The poverty fund rate over the ICMS amount.                           |
 
 
 ## Tags for Poverty funds over ICMS-ST (ICMS-ST FCP)
 | Predefined tag          | Value                                                                 |
 |-------------------------|-----------------------------------------------------------------------|
-| %FCP\_ST\_amount        | The amount of the Poverty fund calculated over the ICMS-ST amount.    |
+| %FCP\_ST\_amount        | The amount of the poverty fund calculated over the ICMS-ST amount.    |
 | %FCP\_ST\_baseAmount    | The ICMS-ST base amount for calculation of the poverty fund amount.   |
-| %FCP\_ST\_percentage    | The Poverty fund rate over the ICMS-ST amount                         |
+| %FCP\_ST\_percentage    | The poverty fund rate over the ICMS-ST amount                         |
 
 
 ## Tags for Presumed tax (ICMS-ST)
@@ -167,7 +167,7 @@ Tags that support fiscal document text for referenced processes
 | %Presumed\_FCP\_tax\_amount                   | The presumed poverty fund amount                            |
 | %Presumed\_FCP\_per\_unit\_tax\_amount        | The presumed poverty fund amount per unit                   |
 
-## Tags for Presumed tax (from the Substitute)
+## Tags for Presumed tax (from the substitute)
 | Predefined tag                 | Value                                                                |
 |--------------------------------|----------------------------------------------------------------------|
 | %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute                |
