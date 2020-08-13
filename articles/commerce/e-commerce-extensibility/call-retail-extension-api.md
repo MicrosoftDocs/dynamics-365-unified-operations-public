@@ -58,6 +58,7 @@ MSDyn365Commerce_CATALOGID=0
 MSDyn365Commerce_OUN=128
 …
 ```
+For more information, see [Configure a development environment (.env) file](configure-env-file.md).
 
 You might also have to change the following setting in the Retail Server web.config file, so that the call can go through in the local development environment.
 
@@ -65,8 +66,6 @@ You might also have to change the following setting in the Retail Server web.con
 <add key="AllowedOrigins" value="*" />
 <!-- <add key="AllowedOrigins" value="https://usnconeboxax1pos.cloud.onebox.dynamics.com;https://usnconeboxax1ecom.cloud.onebox.dynamics.com" /> -->
 ```
-
-For more information, see [Configure a development environment (.env) file](configure-env-file.md).
 
 ## Create proxy files
 
