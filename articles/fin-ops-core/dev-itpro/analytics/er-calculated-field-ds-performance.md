@@ -118,46 +118,45 @@ Assume that you've finished designing the first version of the ER solution. You 
 
 ### <a id='run-format'></a>Run the ER format
 
-1. Go to **Organization administration \> Electronic reporting \> Configurations**.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree, select the **Performance improvement format** item.
 3. On the Action Pane, select **Run**.
 
 ## Use the performance trace to analyze model mapping performance
 
-1. On the **Configurations** page, in the configuration tree, select the **Performance improvement mapping** item.
+1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
-3. Select **Designer**.
-4. On the **Model mapping designer** page, on the Action Pane, select **Performance trace**.
-5. Select the latest generated trace.
-6. Select **OK**.
+3. Select **Designer** and on the **Model mapping designer** page, on the Action Pane, select **Performance trace**.
+4. Select the latest generated trace and then select **OK**.
 
-Notice that new information becomes available for some data source items of the current model mapping:
+New information is now available for some data source items of the current model mapping:
 
 - The actual time that was spent getting data by using the data source.
 - The same time expressed as a percentage of the total time that was spent running the whole model mapping.
 
 ![Execution time details on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2.png)
 
-The **Performance statistics** table informs that the **Trans** data source calls the **VendTrans** table once. The value **\[265\]\[Q:265\]** of the **Trans** data source indicates that 265 vendor transactions have been fetched from the application table and returned to the data model.
+The **Performance statistics** table shows that the **Trans** data source calls the **VendTrans** table once. The value **\[265\]\[Q:265\]** of the **Trans** data source indicates that 265 vendor transactions have been fetched from the application table and returned to the data model.
 
-Notice that the **Performance statistics** table informs that the current model mapping duplicates database requests while the **#Vend** data source is run. This duplication occurs due to the following:
+The **Performance statistics** table now shows that the current model mapping duplicates database requests while the **#Vend** data source is run. This duplication occurs because:
 
-- the vendor table is called two times (in total 530) for each iterated vendor transaction (in total 265):
+- The vendor table is called two times (in total 530) for each iterated vendor transaction (in total 265):
 
     - One call is made to enter the vendor account number.
     - One call is made to enter the vendor name.
 
-- the vendor table is called for each iterated vendor transaction despite the fact that the fetched transactions have been posted for the only 5 vendors (for 530 calls the only 525 are duplicated ones).
+- The vendor table is called for each iterated vendor transaction even though the fetched transactions have been posted for only five vendors. Of the 530 calls, 525 are duplicates.
 
 ![Message about duplicate database requests on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
-Notice that more that 80% (~6 seconds) of the model mapping execution time (~8 seconds) has been spent to get values from the **VendTable** application table that is too much for 2 attributes of 5 vendors comparing with the volume of information from the **VendTrans** application table.
+Notice that more that 80% (approximately six seconds) of the model mapping execution time (approximately eight seconds) has been spent retrieving values from the **VendTable** application table that is too much for two attributes of five vendors compared with the volume of information from the **VendTrans** application table.
 
-You can use caching for the **#Vend** data source to reduce the number of calls that are made to get the vendor details for every transactions and help improve the performance of the model mapping.
+You can use caching for the **#Vend** data source to reduce the number of calls that are made to get the vendor details for every transactions and improve the performance of the model mapping.
 
-[!NOTE] The **Trans\#Vend** data source caching will be performed in scope of the current transaction of the **Trans** data source at runtime.
+> [!NOTE] 
+> The **Trans\#Vend** data source caching will be performed within the scope of the current transaction of the **Trans** data source at runtime.
 
-Caching of the **#Vend** data source will reduce the number of duplicated calls from 525 to 260 but will not totally eliminate duplication of calls. You can configure a new parameterized data source of the **Calculated field** type to achieve this.
+Caching the **#Vend** data source will reduce the number of duplicated calls from 525 to 260 but will not totally eliminate the duplication. You can configure a new parameterized data source of the **Calculated field** type to achieve this.
 
 ## Improve the model mapping based on information from the execution trace
 
@@ -165,63 +164,50 @@ Caching of the **#Vend** data source will reduce the number of duplicated calls 
 
 Complete these steps to use caching and a data source of the **Calculated field** type, to help prevent duplicate calls to the database.
 
-1. On the **Configurations** page, in the configuration tree, select the **Performance improvement mapping** item.
+1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
 3. Select **Designer**.
-4. Follow these steps to add a new data source of the **Table records** type to access records of the **VendTable** application table:
+4. Follow these steps to add a new data source of the **Table records** type, to access records in the **VendTable** application table:
 
-    1. In the **Data source types** pane, expand the **Dynamics 365 for Operations** item, and select the **Table records** item.
-    2. Select **Add root**.
-    3. In the **Name** field, enter **Vend**.
-    4. In the **Table** field, enter **VendTable**.
-    5. Select **OK**.
+    1. In the **Data source types** pane, expand **Dynamics 365 for Operations** and select **Table records**.
+    2. Select **Add root**, and in the **Name** field, enter **Vend**.
+    3. In the **Table** field, enter **VendTable** and then select **OK**.
 
-5. Follow these steps to add a new data source of the **Empty container** type to hold a new parameterized data source of the **Calculated field** type as you can parameterize calls to the only data sources of the **Calculated field** type that are resides in a container:
+5. Follow these steps to add a new data source of the **Empty container** type to hold a new parameterized data source of the **Calculated field** type as you can parameterize calls to only the data sources of the **Calculated field** type that reside in a container:
 
-    1. In the **Data source types** pane, expand the **General** item, and select the **Empty container** item.
-    2. Select **Add root**.
-    3. In the **Name** field, enter **Box**.
-    4. Select **OK**.
+    1. In the **Data source types** pane, expand **General** and select **Empty container**.
+    2. Select **Add root** and in the **Name** field, enter **Box**.
+    3. Select **OK**.
 
     ![Model mapping designer page showing Box data source](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Follow these steps to add a new parameterized data source of the **Calculated field** type:
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, select the **Box** item.
-    2. In the **Data source types** pane, expand the **Functions** item, and select the **Calculated field** item.
-    3. Select **Add**.
-    4. In the **Name** field, enter **Vend**.
-    5. Select **Edit formula**.
-    6. On the **Formula designer** page, select **Parameters** to specify what parameters must be provided when this data source is called.
-    
-        1. On the **Parameters** dialog, select **New**.
-        2. In the **Name** field, enter **parmVendAccNumber**.
-        3. In the **Type** field, select **String**.
-        4. Select **OK**.
-
+    1. On the **Model mapping designer** page, in the **Data sources** pane, select **Box**.
+    2. In the **Data source types** pane, expand **Functions** and select **Calculated field**.
+    3. Select **Add** and in the **Name** field, enter **Vend**.
+    4. Select **Edit formula** and onthe **Formula designer** page, select **Parameters** to specify what parameters must be provided when this data source is called.
+    5. On the **Parameters** dialog, select **New** and in the **Name** field, enter **parmVendAccNumber**.
+    6. In the **Type** field, select **String** and then select **OK**.
     7. In the **Formula** field, enter `FIRSTORNULL(FILTER(Vend, Vend.AccountNum=parmVendAccNumber))`.
-    8. Select **Save**.
-    9. Close the **Formula designer** page.
-    10. Select **OK** to complete the new data source entry.
+    8. Select **Save** and close the **Formula designer** page.
+    9. Select **OK** to complete the new data source entry.
 
 7. Follow these steps to mark the added data source as cached during the execution:
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, select the **Box\Vend** item.
+    1. On the **Model mapping designer** page, in the **Data sources** pane, select **Box\Vend**.
     2. Select **Cache**.
     
     > [!NOTE] 
-    > The **Box\Vend** data source caching will be performed in scope of all vendor transactions of the **Trans** data source at runtime.
+    > The **Box\Vend** data source caching will be performed in the scope of all vendor transactions of the **Trans** data source at runtime.
 
-8. Follow these steps to update the nested **Trans\#Vend** data source as using the **Box\Vend** data source:
+8. Follow these steps to update the nested **Trans\#Vend** data source to use the **Box\Vend** data source:
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, expand the **Trans** item.
-    2. Select the **Trans\#Vend** data source.
-    3. Select **Edit**.
-    4. Select **Edit formula**.
-    5. In the **Formula** field, enter `Box.Vend(@.AccountNum)`.
-    6. Select **Save**.
-    7. Close the **Formula designer** page.
-    8. Select **OK** to complete the modification of the selected data source.
+    1. On the **Model mapping designer** page, in the **Data sources** pane, expand **Trans**.
+    2. Select the **Trans\#Vend** data source and then select **Edit** > **Edit formula**.
+    3. In the **Formula** field, enter `Box.Vend(@.AccountNum)`.
+    4. Select **Save** and then close the **Formula designer** page.
+    5. Select **OK** to complete the modification of the selected data source.
 
 9. Select **Save**.
 
@@ -234,8 +220,7 @@ Complete these steps to use caching and a data source of the **Calculated field*
 
 1. On the **Configurations** page, on the **Versions** FastTab, select version **1.2** of the **Performance improvement mapping** configuration.
 2. Select **Change status**.
-3. Select **Complete**.
-4. Select **OK**.
+3. Select **Complete**, and then select **OK**.
 
 ## Run the modified ER solution to trace execution
 
@@ -250,7 +235,7 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 5. Select the latest generated trace.
 6. Select **OK**.
 
-Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has been also reduced. The total execution time has been reduced in ~ 20 times (from ~8 seconds to ~400 milliseconds). Therefore, the performance of the whole ER solution has improved. 
+Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has also been reduced. The total execution time has been reduced ~ 20 times (from ~8 seconds to ~400 milliseconds) improving the performance of the whole ER solution. 
 
 ![Trace information on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-5.png)
 
@@ -268,7 +253,7 @@ You must also download and locally store the following files.
 
 ## <a name="appendix2"></a>Appendix 2: Configure the ER framework
 
-You must configure the minimal set of ER parameters before you can start to use the ER framework to  improve the performance of the sample Microsoft ER solution.
+You must configure the minimal set of ER parameters before you can start to use the ER framework to improve the performance of the sample Microsoft ER solution.
 
 ### <a id="ConfigureParameters"></a>Configure ER parameters
 
@@ -287,7 +272,7 @@ For more information about ER parameters, see [Configure the ER framework](elect
 Every ER configuration that is added is marked as owned by an ER configuration provider. The ER configuration provider that is activated in the **Electronic reporting** workspace is used for this purpose. Therefore, you must activate an ER configuration provider in the **Electronic reporting** workspace before you start to add or edit ER configurations.
 
 > [!NOTE]
-> Only the owner of an ER configuration can edit it. Therefore, before an ER configuration can be edited, the appropriate ER configuration provider must be activated in the **Electronic reporting** workspace.
+> Only the owner of an ER configuration can edit the configuration. Therefore, before an ER configuration can be edited, the appropriate ER configuration provider must be activated in the **Electronic reporting** workspace.
 
 #### <a id="ReviewProvidersList"></a>Review the list of ER configuration providers
 
