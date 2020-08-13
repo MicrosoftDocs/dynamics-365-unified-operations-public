@@ -46,7 +46,7 @@ It's assumed that the following prerequisites are in place:
 - A Retail Server extension has already been deployed.
 - You have access to the Retail Server extension dynamic-link libraries (DLLs) that are available.
 
-In addition, make sure that your .env file's **MSDyn365Commerce\_BASEURL** value points to the environment that has the deployed Retail Server extension, so that you can test against it. If this option isn't available, you can use mocks instead.
+In addition, make sure that the .env file **MSDyn365Commerce\_BASEURL** has a value that points to the environment that has the deployed Retail Server extension, so that you can test against it. If this option isn't available, you can use a mock-up instead.
 
 If you're developing on the local Tier 1 Retail Server virtual machine (VM), you must point **MSDyn365Commerce\_BASEURL** to the local URL (`https://usnconeboxax1ret.cloud.onebox.dynamics.com/`), and make sure that **MSDyn365Commerce\_CHANNELID** and **MSDyn365Commerce\_OUN** are set to the appropriate online channel that you're using. Here is an example of an .env file.
 
@@ -69,7 +69,7 @@ You might also have to change the following setting in the Retail Server web.con
 
 ## Create proxy files
 
-You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail Server SDK installed. For more information, see [Migrate the Retail Server SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
+You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, make sure that you have the latest Retail Server SDK installed. For more information, see [Migrate the Retail Server SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
 
 For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](https://docs.microsoft.com/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos). That topic explains how to create a proxy file by using a command that resembles the following command.
  
