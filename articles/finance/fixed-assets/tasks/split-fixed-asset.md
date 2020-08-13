@@ -40,7 +40,7 @@ This topic explains how to split a percentage of one asset book to a new asset b
 5. Close the form.
 
 ## Split a fixed asset
-If a fully depreciated asset must be split, the asset book status should be changed from **Closed** to **Open** manually before completing the process to split the asset. This reason this is necessary is that if you need to post transactions for that asset, for example for a disposal sale, the book status must be open. After changing the asset book status, complete the following procedure for splitting the asset. 
+If a fully depreciated asset must be split, the asset book status should be changed from **Closed** to **Open** manually before completing the process to split the asset. This is necessary if you need to post transactions for that asset, for example for a disposal sale, the book status must be open. After changing the asset book status, complete the following procedure for splitting the asset. 
 
 1. In the list, find and select the link of the fixed asset to split.
 2. Select **Books**. Select the book to split to the new asset.  
