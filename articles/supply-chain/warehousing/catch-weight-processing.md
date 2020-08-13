@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -175,7 +175,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 - The functionality for cluster picking isn't supported for catch weight products.
 - Pick and pack warehouse processing isn't supported for catch weight products.
-- For catch weight products, work that is defined in a work template can be run automatically.
+- For catch weight products, work that is defined in a work template cannot be run automatically.
 - For catch weight products, the system doesn't support manual packing station processing where packed container picking work is created after containers are closed.
 - The functionality for pcs-by-pcs scanning isn't supported for catch weight products.
 
