@@ -35,13 +35,10 @@ To use hazardous materials functionality, you must first set up the data require
 
 ## Turn on the hazardous material feature for your system
 
-To make the hazardous material feature available on your system, you must enable its configuration key. You only need to do this once. To do this:
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
-1. Place your system into maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-2. Go to **System administration \> Setup \> License configuration**.
-3. Expand the **Trade** section.
-4. Select the **Hazardous materials** check box.
-5. Turn off maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+- **Module:** *Product information management*
+- **Feature name:** *Hazardous materials product information and shipping documentation*
 
 ## Hazardous material regulations
 
