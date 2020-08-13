@@ -125,7 +125,7 @@ Tags that support fiscal document text for referenced processes
 | %DifICMS\_vICMSUFDest    | Tax amount for recipient state.                                                |
 | %DifICMS\_vICMSUFRemet   | Tax amount for issuer state.                                                   |
 
-## Tags for Approximated tax values
+## Tags for approximated tax values
 | Predefined tag          | Value                                                            |
 |-------------------------|------------------------------------------------------------------|
 | %ApproximateTaxValue    | The approximated tax rate.                                       |
@@ -137,7 +137,7 @@ Tags that support fiscal document text for referenced processes
 |-------------------------|------------------------------------------------------------------|
 | %FCINumber              | The number of the Ficha Controle de Importação (FCI).            |
 
-## Tags for Poverty funds over ICMS (ICMS FCP)
+## Tags for poverty funds over ICMS (ICMS FCP)
 | Predefined tag          | Value                                                                 |
 |-------------------------|-----------------------------------------------------------------------|
 | %FCP\_amount            | The amount of the poverty fund calculated over the ICMS amount.       |
@@ -145,35 +145,30 @@ Tags that support fiscal document text for referenced processes
 | %FCP\_percentage        | The poverty fund rate over the ICMS amount.                           |
 
 
-## Tags for Poverty funds over ICMS-ST (ICMS-ST FCP)
+## Tags for poverty funds over ICMS-ST (ICMS-ST FCP)
 | Predefined tag          | Value                                                                 |
 |-------------------------|-----------------------------------------------------------------------|
 | %FCP\_ST\_amount        | The amount of the poverty fund calculated over the ICMS-ST amount.    |
 | %FCP\_ST\_baseAmount    | The ICMS-ST base amount for calculation of the poverty fund amount.   |
-| %FCP\_ST\_percentage    | The poverty fund rate over the ICMS-ST amount                         |
+| %FCP\_ST\_percentage    | The poverty fund rate over the ICMS-ST amount.                         |
 
 
-## Tags for Presumed tax (ICMS-ST)
+## Tags for presumed tax (ICMS-ST)
 | Predefined tag                                | Value                                                       |
 |-----------------------------------------------|-------------------------------------------------------------|
-| %Presumed\_tax\_rate                          | The presumed ICMS-ST tax rate                               |
-| %Presumed\_tax\_base\_amount                  | The base amount for presumed ICMS-ST tax amount             |
-| %Presumed\_per\_unit\_tax\_base\_amount       | The base amount for presumed ICMS-ST tax amount per unit    |
-| %Presumed\_tax\_amount                        | The presumed ICMS-ST tax amount                             |
-| %Presumed\_per\_unit\_tax\_amount             | The presumed ICMS-ST tax amount per unit                    |
-| %Presumed\_FCP\_tax\_rate                     | The presumed poverty fund tax rate                          |
-| %Presumed\_FCP\_tax\_base\_amount             | The presumed poverty fund tax base amount                   |
-| %Presumed\_FCP\_per\_unit\_tax\_base\_amount  | The presumed poverty fund tax base amount per unit          |
-| %Presumed\_FCP\_tax\_amount                   | The presumed poverty fund amount                            |
-| %Presumed\_FCP\_per\_unit\_tax\_amount        | The presumed poverty fund amount per unit                   |
+| %Presumed\_tax\_rate                          | The presumed ICMS-ST tax rate.                               |
+| %Presumed\_tax\_base\_amount                  | The base amount for presumed ICMS-ST tax amount.             |
+| %Presumed\_per\_unit\_tax\_base\_amount       | The base amount for presumed ICMS-ST tax amount per unit.    |
+| %Presumed\_tax\_amount                        | The presumed ICMS-ST tax amount.                             |
+| %Presumed\_per\_unit\_tax\_amount             | The presumed ICMS-ST tax amount per unit.                    |
+| %Presumed\_FCP\_tax\_rate                     | The presumed poverty fund tax rate.                          |
+| %Presumed\_FCP\_tax\_base\_amount             | The presumed poverty fund tax base amount.                   |
+| %Presumed\_FCP\_per\_unit\_tax\_base\_amount  | The presumed poverty fund tax base amount per unit.          |
+| %Presumed\_FCP\_tax\_amount                   | The presumed poverty fund amount.                            |
+| %Presumed\_FCP\_per\_unit\_tax\_amount        | The presumed poverty fund amount per unit.                   |
 
-## Tags for Presumed tax (from the substitute)
+## Tags for presumed tax (from the substitute)
 | Predefined tag                 | Value                                                                |
 |--------------------------------|----------------------------------------------------------------------|
-| %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute                |
-| %Substituto\_FCP\_tax\_amount  | The presumed FCP amount from the ICMS substitute                     |
-
-
-
-
-
+| %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute.                |
+| %Substituto\_FCP\_tax\_amount  | The presumed FCP amount from the ICMS substitute.                     |
