@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a location directive
+title: Create location directives
 description: This topic explains how to create location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-07-28
 ms.dyn365.ops.version: Release 10.0.9
 ---
 
-# Create a location directive
+# Create location directives
 
 [!include [banner](../includes/banner.md)]
 
@@ -109,6 +109,12 @@ To create a location directive, follow these steps.
     | Allow negative inventory | Select this check box to allow negative inventory at the specified warehouse location. |
     | Batch enabled | Select this check box to use batch strategies for the items that are batch-enabled. If this check box is selected, and the **Strategy** field is set to *None*, the system will move on to the next action line. |
     | Strategy | Select the strategy that the location directive should use:<ul><li>**None** – No strategy will be used.</li><li>**Match packing quantity** – This strategy checks whether a pick location has the specified packing quantity. This strategy is valid only when the **Work type** field is set to *Pick*.</li><li>**Consolidate** – This strategy consolidates items in a specific location when similar items are already available. This strategy is valid only when the **Work type** field is set to *Put*. In a typical setup for put, the system tries to consolidate on the first action line, and then, on the second action line, it tries to put without consolidation. Consolidation of goods makes later picking more efficient.</li><li>**FEFO batch reservation** – This strategy is used when inventory is located by using a batch expiration date, and it's allocated for batch reservation. The first expiry, first out (FEFO) batch reservation strategy is also used when inventory is located by using a batch best-before date in addition to the expiration date. You can use this strategy only for batch-enabled items. This strategy is valid only when the **Work type** field is set to *Pick*. When you select this strategy, you override any query sorting for batch numbers that is applied.</li><li>**Round up to full LP** – This strategy rounds up the inventory quantity so that it matches the license plate quantity that is assigned to the items that must be picked. This strategy can only be used for replenishment type of location directives, and only when the **Work type** field is set to *Pick*.</li><li>**Empty location with no incoming work** – This strategy is used to locate empty locations. A location is considered empty if it has no physical inventory and no expected incoming work. This strategy is valid only when the **Work type** field is set to *Put*.</li></ul> |
+
+## Example of the use of location directives
+
+For this example, consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, you need to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, then you need to find an empty location.
+
+For this scenario, you must define two location directive actions. The first action in the sequence must use the **Consolidate** strategy, and the second should use the **Empty location with no incoming work** strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
 
 ## Next step
 
