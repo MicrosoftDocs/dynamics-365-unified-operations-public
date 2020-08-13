@@ -2134,14 +2134,8 @@
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
         items:
-        - name: Extend a Commerce Scale Unit OData controller
-          href: dev-itpro/extend-retail-server-odata-controller.md
         - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Extend the default Commerce Scale Unit metadata controller
-          href: dev-itpro/extend-metadata.md
-        - name: Call the CRT service in offline mode
-          href: dev-itpro/call-crt-service-offline.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
@@ -2156,16 +2150,12 @@
           href: dev-itpro/crt-services.md
         - name: CRT and Retail Server extensibility
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Add customer preference data to channel databases
-          href: dev-itpro/add-customer-preference-channel.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md
         - name: CRT extensibility and triggers
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
         - name: Block transactions using triggers
           href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: Implement a return policy using triggers
-          href: dev-itpro/trigger-example-return-policy.md
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
         - name: Extension points for packing slips
