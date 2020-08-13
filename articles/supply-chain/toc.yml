@@ -2751,6 +2751,8 @@
             href: inventory/warehouse-template.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
+          - name: Create location directives
+            href: warehousing/create-location-directive.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
