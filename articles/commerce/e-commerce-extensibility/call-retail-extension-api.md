@@ -5,7 +5,7 @@ title: Call Retail Server extension APIs
 description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
 author: samjarawan
 manager: annbe
-ms.date: 08/07/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,7 +69,7 @@ You might also have to change the following setting in the Retail Server web.con
 
 ## Create proxy files
 
-You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail Server SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
+You will need the Retail Server SDK to generate proxy files. If you are using a Tier 1 development VM environment, ensure that you have the latest Retail Server SDK installed. For more information, see [Migrate the Retail Server SDK from Visual Studio 2015 to Visual Studio 2017](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/migrate-sdk).
 
 For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](https://docs.microsoft.com/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos). That topic explains how to create a proxy file by using a command that resembles the following command.
  
