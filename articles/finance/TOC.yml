@@ -1156,7 +1156,7 @@
         href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
-      - name: Financial reporting overview
+      - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
