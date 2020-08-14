@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Buy and sell leave
 
-[!include [banner](includes/preview-feature.md)]
-
-You can submit requests to buy leave.  
+You can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.  
 
 ## Request to buy leave
 
@@ -44,7 +42,17 @@ You can submit requests to buy leave.
 
 3. Select **Submit** when you're ready to submit your request. 
 
-Once the request is submitted, your balances will automatically be updated with the amount of leave you requested to buy. 
+Depending on how the buy policy has been configured, the request will either automatically update your balance with the amount you request to buy or will go through an approval process before balances are updated. 
+
+## Request to sell leave
+
+1. In the **Employee self service** workspace, select **Sell leave request** in the **Time Off Balances** tile. 
+
+2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to sell. 
+
+3. Select **Submit** when you're ready to submit your request. 
+
+Depending on how the buy policy has been configured, the request will either automatically update your balance with the amount you request to sell or will go through an approval process before balances are updated. 
 
 ## See also
 
