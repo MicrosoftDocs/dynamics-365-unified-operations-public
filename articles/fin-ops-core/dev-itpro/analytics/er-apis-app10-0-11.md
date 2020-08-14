@@ -5,7 +5,7 @@ title: Electronic reporting framework API changes
 description: This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
 
 ## API to run a format mapping for the generation of outbound documents
@@ -53,7 +51,7 @@ In the **Data source properties** dialog box, you can set the **Integration poin
 
 You can then use the new API of the ER framework to call an ER format mapping and force it to use a model mapping that has been configured to contain a specific integration point. The following example shows how this new API can be used.
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 
@@ -91,7 +89,7 @@ The new API of the ER framework lets you use the configured integration point to
 
 The following example shows how this new API can be used.
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 

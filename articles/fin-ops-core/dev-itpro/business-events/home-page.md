@@ -5,7 +5,7 @@ title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 Finance and Operations applications.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -196,11 +196,11 @@ If an error can't be successfully processed, you can use the **Download payload*
 
 The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. In summary, you must consider the following points when you design integrations that use business events:
 
-- Business events can be consumed using Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
-- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
+- Business events can be consumed using Power Automate, Service Bus, Event Grid, or other endpoint types.
+- Customers must bring their own subscriptions to use Power Automate, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
 - A business event can be sent to a unique endpoint or the same endpoints.
-- Microsoft Flow can directly subscribe to business events.
+- Power Automate can directly subscribe to business events.
 
 ## Idempotency
 Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
@@ -242,7 +242,7 @@ Starting in Platform update 29, role-based security can be applied to business e
 | Only certain users must have access to view the business events catalog.                                                                       | **BusinessEventsCatalogView**                 | None                              |
 | Only certain users must have access to activate business events.                                                                               | **BusinessEventsCatalogMaintain**             | None                              |
 | Only certain users must have access to create and manage endpoints.                                                                            | **Business events security privilege**        | **Business events security duty** |
-| Users must only be able to subscribe to business events which they have been granted access to from external applications like Microsoft Flow. | **Subscribe to business events from service** | None                              |
+| Users must only be able to subscribe to business events which they have been granted access to from external applications like Power Automate. | **Subscribe to business events from service** | None                              |
 | Only certain users must be able to view the business events security setup.                                                                    | **BusinessEventsCatalogSecuritySetupView**    | None                              |
 | Only certain users must be able to manage business events security.                                                                            | **Maintain business events catalog security** | None                              |
 
@@ -269,7 +269,7 @@ Role-based security for business events must be enabled via Feature management.
 ### Subscribe to business events from service
 
 Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, which is described below. The organizational assignments that are done, if any, as part of role-based security is honored in the context of business events by letting users to only subscribe
-to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Microsoft Flow or Logic Apps.
+to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Power Automate or Logic Apps.
 
 ### Backward compatibility
 

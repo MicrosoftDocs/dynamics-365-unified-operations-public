@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.11 (July 2020)
+title: What's new or changed in Dynamics 365 Commerce 10.0.11 (July 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.11. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/18/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,11 +29,9 @@ ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.11 (July 2020)
+# What's new or changed in Dynamics 365 Commerce 10.0.11 (July 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.11. This version has a build number of 10.0.464 and is available as follows:
 
@@ -51,7 +49,7 @@ The following features are included in this release. The feature titles link to 
 - [Notifications and mini-cart](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [Theme extensions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
 - [New events and placeholders for transactional emails](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
-- Commerce SDK updated to Visual Studio 2017
+- [Commerce SDK updated to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk)
 
 ## Additional resources
 

@@ -5,7 +5,7 @@ title: Add product recommendations on POS
 description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -77,7 +77,7 @@ To set up product recommendations, follow these steps:
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 

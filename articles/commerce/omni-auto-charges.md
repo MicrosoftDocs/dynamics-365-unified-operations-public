@@ -46,7 +46,7 @@ When using releases prior to version 10.0, a POS user is prompted to manually en
 
 The use of manual prompts to add shipping charges is still available in versions 10.0 and later. If an organization does not enable the **Advanced Auto-charges** parameter, the POS prompts for manual entry of charges will remain the same.
 
-With the advanced auto-charges feature, POS users can have systematic calculations for any defined miscellaneous charges based on auto-charges setup tables. In addition, users will have the ability to add or edit an unlimited amount of additional charges and fees to any POS sales transaction at the header or line-level (for a cash and carry or customer order).
+With the advanced auto-charges feature, POS users can have systematic calculations for any defined miscellaneous charges based on auto-charges setup tables. In addition, users will have the ability to add or edit an unlimited number of additional charges and fees to any POS sales transaction at the header or line-level (for a cash and carry or customer order).
 
 ## Enabling advanced auto-charges
 
@@ -58,7 +58,7 @@ When advanced auto-charges are enabled, users are no longer prompted to manually
 
 When advanced auto-charges are enabled, the existing **Commerce parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized. These parameters are only applicable if the **Use advanced auto-charges** parameter is set to **No**.
 
-Before you enable this feature, ensure that you have tested and trained your employees, as this will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Make sure that you understand the impact of the process flow to the creation of transactions from POS. For call center and e-Commerce orders, the impact of enabling advanced auto-charges is minimal. Call center and e-Commerce applications will continue to have the same behavior they have had historically related to the auto-charges tables to calculate additional order fees. Call center channel users will continue to have the ability to manually edit any system calculated auto-charges at the header or line level, or manually add additional miscellaneous charges at the header or line level.
+Before you enable this feature, ensure that you have tested and trained your employees, as the enabled feature will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Make sure that you understand the impact of the process flow to the creation of transactions from POS. For call center and e-Commerce orders, the impact of enabling advanced auto-charges is minimal. Call center and e-Commerce applications will continue to have the same behavior they have had historically related to the auto-charges tables to calculate additional order fees. Call center channel users will continue to have the ability to manually edit any system calculated auto-charges at the header or line level, or manually add additional miscellaneous charges at the header or line level.
 
 ## Additional POS operations
 
@@ -87,7 +87,7 @@ A retailer wants to automatically add charges for freight when transactions are 
 
 #### Setup and configuration
 
-This scenario requires the configuration of two auto-charges tables.
+This scenario requires the configuration of two auto charges tables.
 
 Go to **Accounts receivable \> Charges setup \> Auto charges**.
 
@@ -95,7 +95,7 @@ Configure two different header-level auto charges. Configure one for the "Ground
 
 For the ground delivery charges, in the lines section of the **Auto-charges** page, define a charge that will be applied for orders between $.01 and $100 as $10.00. Create another charges line to indicate orders over $100.01 will have no charges.
 
-![Auto charges example](media/headerchargesexample.png)
+![Two auto charges tables example](media/headerchargesexample.png)
 
 For the air delivery charges, in the lines section of the auto-charges form, define a charge of $20.00 that will be applied to all orders (between a value of $.01 to $9,999,999).
 
@@ -125,7 +125,7 @@ Go to **Accounts Receivable \> Charges setup \> Auto charges**.
 
 Set the **Level** drop-down menu to **Line**, and create a new auto-charges record for all customers and for the specific product or product group where the setup fees will be charged.
 
-![Auto charges example](media/linechargesexample.png)
+![One line-level auto charges table example](media/linechargesexample.png)
 
 Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
@@ -179,7 +179,7 @@ The **Add line charge** operation must be configured in your [POS screen layout]
 
 To execute the scenario in the POS application, the POS user will create the sales transaction as usual, adding the products and any other configurations to the sale. Prior to collecting payment, the user should select the specific line where the charge will apply from the POS item list display and execute the **Add line charge** operation. The user will be prompted to select a charges code and enter the charges value. Once the user completes the process, the charge will be linked to the line and added to the order total as a line level charge. The user can repeat the process to add additional line charges to other items lines on the transaction if needed.
 
-The same process can be applied in the call center by using the "maintain charges" feature found under the **Financials** drop-down menu in the **Sales order lines** section on the **Sales order** page. This will open the **Maintain charges** page where the user can add a new line-specific charge to the transaction.
+The same process can be applied in the call center by using the "maintain charges" feature found under the **Financials** drop-down menu in the **Sales order lines** section on the **Sales order** page. Selecting this option will open the **Maintain charges** page where the user can add a new line-specific charge to the transaction.
 
 ## Additional features
 

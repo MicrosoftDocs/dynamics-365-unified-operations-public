@@ -62,4 +62,3 @@ To download the **Power Automate – SQL Connect and execute** template, go to [
 ## Additional resources
 
 [The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
-[Migrate app between tenants and environments](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

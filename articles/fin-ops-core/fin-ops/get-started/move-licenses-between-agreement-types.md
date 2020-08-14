@@ -5,7 +5,7 @@ title: Move licenses between agreement types
 description: This topic explains how to move licenses between agreement types.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 10/10/2019
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ If the customer has only the three standard environments that come with the Micr
     > Make sure that the subscriptions are purchased against the same Azure AD tenant that is used on the original agreement.
 
 2. The customer activates the subscriptions.
-3. In Microsoft Office 365 Admin center, the customer verifies that both the new and subscriptions and the existing subscriptions are active.
+3. In Microsoft 365 Admin center, the customer verifies that both the new and subscriptions and the existing subscriptions are active.
 4. When the new subscriptions are active, the customer requests that the Volume Licensing reseller or the CSP suspend the existing subscriptions. Typically, there is an overlap to help guarantee continuity and avoid disruption of service.
 
 ## The customer has add-on environments
@@ -83,7 +83,7 @@ Before you begin the move, you must complete the following tasks:
     > Make sure that the subscriptions are purchased against the existing Azure AD tenant.
 
 2. The customer activates the subscriptions.
-3. In Office 365 Admin center, the customer verifies that both the new subscriptions and the existing subscriptions are active.
+3. In Microsoft 365 Admin center, the customer verifies that both the new subscriptions and the existing subscriptions are active.
 
 ### Deploy new environments
 

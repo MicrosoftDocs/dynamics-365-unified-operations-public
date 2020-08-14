@@ -5,7 +5,7 @@ title: Clienteling overview
 description: This topic provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -119,7 +119,7 @@ Follow these steps to set up the integration.
 3. Create an Azure key vault, and save the application secret. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Turn on access to Azure Key Vault from Commerce. To complete this step, you must have an application ID and secret. The application can be the same application that you created in step 1, or it can be a new application. (In other words, you can use the application that you created in step 1 for both Key Vault access and Customer Insights service access, or you can create a unique application for each type of access.) For instructions, see [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. In Headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
-6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a whitelist), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
 
     1. In the **Application ID** field, enter the application ID that you used in step 1.

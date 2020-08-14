@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) inboun
 author: hhaines
 manager: annbe
 
-ms.date: 03/12/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 10.0.9
 In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replace the picking and receiving operation.
 
 > [!NOTE]
-> In version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
+> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
 
 ## Prerequisite: Configure an asynchronous document framework
 
@@ -63,6 +63,9 @@ To configure an asynchronous document framework, complete the following procedur
 5. On the **General** FastTab, in the **Setup** section, set the **Continuous** option to **No** to ensure that there are no performance issues.
 
 ### Create and schedule two batch jobs for the document processing and monitoring tasks
+
+> [!NOTE]
+> In Commerce version 10.0.13 and later, you don't have to configure these batch jobs through the batch job framework. The batch processes can be configured from the **Retail and Commerce  >Retail and Commerce IT** menu. Use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure the batch jobs.
 
 The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
 
@@ -156,6 +159,20 @@ You should use the **Cancel receiving** function on the app bar only if you want
 If you're receiving inventory, you can use the **Pause receiving** function if you want to take a break from the receiving process. For example, you might want to perform another operation from the POS, such as ringing up a customer sale, or delay posting of the receipt.
 
 When you select **Pause receiving**, the document's status is changed to **Paused**. Therefore, users will know that data has been entered for the document, but the document hasn't yet been committed. When you're ready to resume the receiving process, select the paused document, and then select **Order details**. Any **Receiving now** quantities that were previously saved are retained and can be viewed from the **Full order list** view.
+
+### Review
+
+Before the final commitment of the receipt to Commerce headquarters (HQ), you can use the review functionality to validate the inbound document. The review will alert you to any missing or incorrect data that may cause processing failure and provide you the opportunity to correct problems before submitting the receipt request. To enable the **Review** function on the app bar, enable the **Enable validation in POS inbound and outbound inventory operations** feature through the **Feature management** workspace in Commerce headquarters (HQ).
+
+The **Review** function validates the following issues in an inbound document:
+
+- **Over-receiving** – the receiving now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in Commerce headquarters (HQ).
+- **Under-receiving** – the receiving now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in Commerce headquarters (HQ).
+- **Serial number** – the serial number is not provided or validated for a serialized item that requires serial number to be registered in inventory.
+- **Location not set** – the location is not specified for a location-controlled item where blank location is not allowed.
+- **Deleted lines** – the order has lines deleted by aa Commerce headquarters (HQ) user that is not known to POS application.
+
+Set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory** to have the validation executed automatically when **Finish receiving** is selected.
 
 ### Finish receiving
 

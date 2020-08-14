@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -79,26 +79,25 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
-> [!IMPORTANT]
-> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
+> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
 ## Remote Desktop
 
 ### Microsoft-managed environments
-Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (whitelist) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
+Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
-> Customers need to ensure that RDP endpoints are secured through explicit IP whitelist rules as mentioned above. The IP whitelist rules must adhere to the below conditions to ensure the environments are secure and the Intellectual Property is protected.
-> - IP whitelist rules must NOT use star/zero, opening the environment to internet
+> Customers need to ensure that RDP endpoints are secured through explicit IP safe list rules as mentioned above. The IP safe list rules must adhere to the following conditions.
+> - IP safe list rules must NOT use asterisk/zero.
 > - Wide IP address ranges must NOT be used.
-> - IP address ranges must restrict to the Customer's CORPNET 
-> - If computers outside the customer's CORPNET (e.g. a home office) are used to connect to the Sandbox environment(s), only the specific IP addresses of the computers used to connect to the sandbox environment(s) must be added.
-> - Azure Datacenter IP Address ranges must NOT be added
-> - Public IP addresses, such as a coffee shop location must NOT be configured.     
+> - IP address ranges must restrict to the customer's CORPNET. 
+> - If computers outside the customer's CORPNET (such as a home office) are used to connect to sandbox environments, only the specific IP addresses of the computers used to connect to the sandbox environments must be added.
+> - Azure Datacenter IP address ranges must NOT be added.
+> - Public IP addresses, such as a coffee shop location, must NOT be added.     
+> - IP safe list rules should be removed when not in use. Periodic review of environment IP safe list rules is recommended.
 
-> [!WARNING]
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
-> Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice.
+> Microsoft reserves the right to and will remove any IP Address safe list rules that violate the above guidelines, immediately without providing notice.
  
 ### Partner/Customer managed environments 
 By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
@@ -124,17 +123,25 @@ Production environments are configured with Azure disaster recovery support that
 
 Only primary data stores are supported by replication. This means that some application components, such as Management Reporter, and Entity store, which use transformed data from the primary database, must be generated after the recovery site has been set up and the service has started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of 10 hours and a Recovery Point Objective of 5 seconds. For more information, see [Azure SQL Database Point in Time Restore](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/).
 
-## Service availability 
-Finance and Operations apps can be deployed into different Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
+## Service availability in Azure Regions
+Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
 For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
+> The regional availability of Finance and Operations apps will now be limited to East US, West US, and Central US in North America for all new projects. Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions. For a list of the latest supported regions, see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
 ## Frequently asked questions
 
-### Why does the status display 'Migrating' on my environment in LCS?
-To provide the best experience and performance, Microsoft has to perform maintenance operations on your environment. During some of these maintenance operations, your environment status may display 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before the maintenance operation is initiated.
+### Why does the status display 'Maintenance' on my environment in LCS?
+To provide the best experience and performance, Microsoft performs maintenance operations on your environment. During some of these maintenance operations, your environment status may display one of the following statuses:
+
+- Preparing for maintenance
+- Prepared for maintenance
+- Maintenance in progress
+
+While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my Sandbox environment?
 Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
@@ -159,7 +166,7 @@ Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox enviro
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
-### How do I deploy a demo environment
+### How do I deploy a demo environment?
 A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
 
 ### How do I move my customizations between environments?
@@ -175,9 +182,28 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelist). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address whitelist rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
-- Your current IP address is not in the whitelist.
-- Your IP has changed from the IP address listed in the whitelist. 
-- Microsoft deleted the rule containing your IP address from the whitelist because it violated a guideline.
+Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (safe list). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address safe list rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
 
-To regain access to the environment, you will need to add the IP address of the computer from which you are connecting. To do this, complete the steps in the section, [Remote Desktop](#remote-desktop) earlier in this document.
+- Your current IP address is not in the safe list.
+- Your IP has changed from the IP address listed in the safe list. 
+- Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
+
+To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this topic.
+
+### When will the availability of reduced regions go into effect for new onboarding?
+Beginning August 1, 2020, new projects for Finance and Operations will be onboarded to the following regions:
+
+- East US
+- West US
+- Central US
+
+### My environments are currently in the regions that will be deprecated. How will this change affect me?
+We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1, 2020:
+
+-	East US2
+-	West US2
+-	West Central US
+-	North Central US
+-	South Central US
+
+This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.

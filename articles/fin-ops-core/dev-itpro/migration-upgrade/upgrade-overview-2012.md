@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 to Finance and Operations
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,6 +40,9 @@ Finance and Operations running Platform update 8 and the July 2017 Application r
 
 > [!IMPORTANT]
 > Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) cannot currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
+
+> [!NOTE]
+> Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
 
 ## Overview
 

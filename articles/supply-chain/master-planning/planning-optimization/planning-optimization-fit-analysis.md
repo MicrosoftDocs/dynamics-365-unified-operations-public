@@ -5,7 +5,7 @@ title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.9
 ---
 # Planning Optimization fit analysis
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 To see how compatible your current setup and data are with the Planning Optimization functionality, go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**, and then select **Run analysis**. If the analysis finds any inconsistencies, they are listed on the same page. (The analysis can take a few minutes to run.)
@@ -76,6 +75,7 @@ The following table shows the various results that can be shown after a fit anal
 | Intercompany | Master plans including planned downstream demand: _\#_ | This feature is pending. Currently, master planning doesn't include downstream planned demand when Planning Optimization is enabled, regardless of this setting. Note that released/firmed orders still work with the normal intercompany functionality and will cover most scenarios. |
 | Kanban | Item coverage records with planned order type kanban: _\#_ | This feature is pending. Currently, item coverage that is set to kanban will be ignored when Planning Optimization is enabled. The kanban planned order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. |
 | Kanban | Items with default order type kanban: _\#_ | Currently, a default order type that is set to kanban will be ignored when Planning Optimization is enabled. The kanban default order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. |
+| Product lifecycle state	| Product lifecycle states not active for planning: _\#_ | This is a pending feature. Currently the Product lifecycle state is ignored with Planning Optimization enabled. You can adjust the plan level product filter to avoid including products where product lifecycle state is disabled for planning. |
 | Production | BOM lines with rounding or multiple setup: _\#_ | This feature is pending. Currently, rounding and multiple setups are ignored on BOM lines when Planning Optimization is enabled, regardless of this setting. |
 | Production | BOM/formula lines with formula measurement: _\#_ | This feature is pending. Currently, formula measurement is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. |
 | Production | BOM/formula lines with item substitution (plan groups): _\#_ | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. |
@@ -102,7 +102,7 @@ The following table shows the various results that can be shown after a fit anal
 | Sales quotations | Master plans with sales quotations enabled: _\#_ | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. |
 | Shelf life | Master plans with shelf life enabled: _\#_ | This feature is pending. Currently, shelf life isn't considered when Planning Optimization is enabled, regardless of this setting. |
 
-## Related resources
+## Additional resources
 
 [Planning Optimization overview](planning-optimization-overview.md)
 

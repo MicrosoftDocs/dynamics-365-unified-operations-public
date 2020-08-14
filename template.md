@@ -19,7 +19,7 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
 ms.search.scope:
 # ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+# ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tfehr

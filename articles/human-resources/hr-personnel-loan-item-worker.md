@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HcmPersonLoan, HcmPersonLookup   
+ms.search.form: HcmPersonLoan, HcmPersonLookup, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

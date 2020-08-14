@@ -62,7 +62,7 @@ You can create service orders manually by using a service agreement or by using 
 
 1.  Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.
 
-2.  In the **Projects** form, on the **Action pane**, click the **Manage** tab \> click **Service** \> **Service orders**.
+2.  In the **Projects** form, on the **Action Pane**, click the **Manage** tab \> click **Service** \> **Service orders**.
 
 3.  Follow the previous procedure to create a service order manually in the **Service orders** form. The **Project ID** field displays the project reference.
 

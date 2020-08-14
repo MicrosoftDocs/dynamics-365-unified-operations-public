@@ -5,7 +5,7 @@ title: Move LCS implementation projects to different Azure AD tenants
 description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-You can move your subscriptions and your Microsoft Dynamics Lifecyle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:
+You can move your subscriptions and your Microsoft Dynamics Lifecycle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:
 
 - Subscriptions were accidentally purchased against the incorrect Azure AD tenant.
 
@@ -56,7 +56,7 @@ Ask the cloud service provider not to suspend the existing subscriptions at this
 
 ### Volume Licensing
 
-If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft Office 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
+If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
 
 - Public customer number
 - Enrollment number

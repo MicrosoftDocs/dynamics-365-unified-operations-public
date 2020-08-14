@@ -38,7 +38,7 @@ This topic explains how to perform nonconformance management, based on an existi
 2. In the list, select the quality order that was created in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).  
 
 ## Create a nonconformance
-1. In the action pane, select **Inquiries**.
+1. On the Action Pane, select **Inquiries**.
 2. Select **Non conformances**.
 3. Select **New**.
 4. In the drop-down menu of the **Problem type** field, select the problem that was found during the inspection process.  

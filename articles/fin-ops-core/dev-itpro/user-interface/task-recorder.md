@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
@@ -171,6 +171,10 @@ This image shows the annotation options for changing a step.
 Titles and notes provide places for user-specified text to be associated with a step in a task guide.
 - **Title** – The title lets you specify the text that appears above the step instruction for this step in the task guide. The title a good place to put text that you want users to read before they complete the action that is indicated by the step instruction.
 - **Note** – You can use a note to specify text that appears in the expandable section of the pop-up for this step in the task guide. A note is a good place to put optional reading material or other information that might be useful to users, but that they aren't required to read to complete the action that is indicated by the step instruction.
+
+### Change recorded values
+
+Starting in version 10.0.12, you can adjust the values that are recorded in basic input controls (for example, simple text, numeric, date, and picklist fields), without having to re-record those steps. Note that lookup controls and reference groups aren't currently supported.  
 
 ### Hide from task guide
 
@@ -390,16 +394,26 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         ...
     ```
 
-3.  Open the new (Chromium-based) Microsoft Edge browser or Google Chrome.
-4.  Select **Settings and more &gt; Extensions"** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
+3.  **21Vianet deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **.com** with **.cn**
+    ```xpp
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.cn/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  Open the latest Microsoft Edge browser or Google Chrome.
+5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-5.  Select the **Developer mode** box.
-6.  Click **Load unpacked extension**.
-7.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
-8.  Make sure that the **Enabled** box is selected, so that extension is turned on.
-9.  Restart the browser.
+6.  Select **Developer mode**.
+7.  Click **Load unpacked extension**.
+8.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
+9.  Make sure that **Enabled** is selected so that extension is turned on.
+10.  Restart the browser.
 
 Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
 
