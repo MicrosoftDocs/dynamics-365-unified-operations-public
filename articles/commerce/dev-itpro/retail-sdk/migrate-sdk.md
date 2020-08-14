@@ -92,7 +92,7 @@ Follow these steps to build the Retail SDK.
 2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, see [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.md).
 3. After the extensions have been merged, update all the hard-coded references to PackageReference by using the NuGet packages.
 
-## Update the reference in the CRT extensions project
+## Update the reference in the CRT and RS extension projects
 
 1. Open the CRT extension project in Visual Studio 2017.
 2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
@@ -112,7 +112,11 @@ Follow these steps to build the Retail SDK.
 > [!NOTE]
 > PackageReference also supports floating versions, where the version is updated with the floating version number. For more information about floating versions, see [How NuGet resolves package dependencies](https://docs.microsoft.com/nuget/concepts/dependency-resolution#floating-versions). When the floating version is used, extensions no longer have to update the reference for every update, because NuGet will automatically resolve to the latest version. For example, the package reference might resemble **\<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" /\>**.
 
-In a similar way, update the references for all the Retail Server, proxy, and Hardware station extension projects.
+In a similar way, update the references for all the Retail Server, proxy, and Hardware station extension projects. 
+
+### Retail server and Proxy extensions:
+
+Migrate the RS and Proxy extensions to the new extension model released in 10.0.12, starting 10.0.12 the same RS extension library can be used for offline, no separate C# proxy library is needed, client typescript proxy is still required. [Check the RS extension doc for more details](../retail-server-icontroller-extension.md). This step is recommended but not mandatory the old Retail server and Proxy extension libraries will continue to work till the old extension model is deprecated.
 
 ## What isn't affected
 
@@ -128,7 +132,7 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 
 1. Install Visual Studio 2017 on the build machine.
 2. Optionally, run msbuild (msbuild version 15.0) from the developer command prompt for Visual Studio 2017 on the build machine. Open the developer command prompt for Visual Studio 2017 and navigate to the Retail SDK root folder. Type *msbuild dirs.proj* and make sure that the MSBuild completes successfully. 
-3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path**. Select **New** and add the path variable for MSBuild 15.0 at the top of the list of PATH variables. For example, C:\Program Files(x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
+3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path** variable and click **Edit**. In the Edit environment variable window click **New** and add the path variable for MSBuild 15.0 and move it to the top of the list of PATH variables. For example the path will be something like - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
 - To validate the config information
   +  Open a regular "CMD" window (not the Visual Studio command prompt).
   +  Run **where MSBuild**.
