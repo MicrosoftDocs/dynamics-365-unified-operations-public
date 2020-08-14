@@ -37,8 +37,15 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes how to view transactions for a leased asset, including lease liability, and executory or administrative, expenses that have been posted. The carrying values of the liability and right-of-use asset are used on a number of reports, in addition to being used to calculate adjustment values.
 
-1. To view the lease liability transactions, select a lease from the **Lease summary** page and click **Books** to open the books for that lease. Click **Liability transactions** after an initial recognition, an invoice, or an interest journal has been posted.
-2. A diaglog will open showing the transactions that either increase or decrease the lease liability. Negative amounts in this form represent credit transaction in the standard application. Any interest accruals will show as negative and increase the total lease liability. Any lease adjustment will show as positive or negative depending on the nature and impact of the lease book. The current net total balance of the lease liability for the selected lease is shown at the bottom left of the dialog.
-3. To view the lease asset transactions, select a lease from the **Lease Summary** page and click **Books** to open the lease books that are attached to the lease record, and then click **Asset transactions**.
-4. A dialog will open showing the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Like the **Liability transactions** dialog, debits will show as positive values and credits shown as negative values. The carrying balance of the right-of-use asset, net of accumulated depreciation is shown in the bottom left of the form.
-5. To view the lease expense transactions, select a lease from the **Lease Summary** page and click **Books** to open the attached lease books on the lease record, and then click **Expense transactions**. This form will show all expenses posted against a lease such as interest expense, depreciation expense, and any executory costs.
+## Liabiity transactions
+To view the lease liability transactions, select a lease from the **Lease summary** page and click **Books** to open the books for that lease. Click **Liability transactions** after an initial recognition, an invoice, or an interest journal has been posted.
+
+The liability transactions form is showing the transactions that either increase or decrease the lease liability. Negative amounts in this form represent credit transaction in the standard application. Any interest accruals will show as negative and increase the total lease liability. Any lease adjustment will show as positive or negative depending on the nature and impact of the lease book. The current net total balance of the lease liability for the selected lease is shown at the bottom left of the dialog.
+
+## Asset transactions
+To view the lease asset transactions, select a lease from the **Lease Summary** page and click **Books** to open the lease books that are attached to the lease record, and then click **Asset transactions**.
+
+The asset transaction form is showing the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Like the **Liability transactions** dialog, debits will show as positive values and credits shown as negative values. The carrying balance of the right-of-use asset, net of accumulated depreciation is shown in the bottom left of the form.
+
+## Expenses transactions
+To view the lease expense transactions, select a lease from the **Lease Summary** page and click **Books** to open the attached lease books on the lease record, and then click **Expense transactions**. This form will show all expenses posted against a lease such as interest expense, depreciation expense, and any executory costs.
