@@ -37,7 +37,7 @@ Web experimentation is the process of using controlled experiments such as A/B t
 The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 ## Prerequisites
-1. Upgrade SSK, SDK and Retail Server to 10.0.13.
+1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to 10.0.13.
 1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 <Add Images>
 <Tenant level flags>
