@@ -5,7 +5,7 @@ title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,10 +69,11 @@ Save and close the page.
 
 To turn on product recommendations, follow these steps.
 
-1. From Commerce headquarters, search for **Feature Management**.
+1. In Commerce headquarters, search for **Feature Management**.
 1. Select **All** to see a list of available features. 
-1. In the search filter, enter **Recommendations**.
-1. Select the **Product Recommendations** feature, and then select **Enable Now**.
+1. In the search box, enter **Recommendations**.
+1. Select the **Product recommendations** feature.
+1. In the **Product recommendations** properties pane, select **Enable now**.
 
 ![Turning on recommendations](./media/FeatureManagement_Recommendations.PNG)
 
