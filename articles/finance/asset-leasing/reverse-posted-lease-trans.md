@@ -40,19 +40,18 @@ Any transaction that was created through Asset leasing can be reversed. Transact
 
 1. To create a reversing transaction for a lease, select the transaction from either the **Asset transactions** or **Liability transactions** page and click **Reverse transaction**.
 
-2. A parameters page will open where you can edit the date that the reversing entry will be posted on. The transaction posting date of the transaction you selected is the default entry on the **Date** field. Note that the reversing entry can't be posted earlier than the original posting date of the selected transaction.
+2. A dialogue will open where you can edit the date that the reversing entry will be posted on. The transaction posting date of the transaction you selected is the default entry on the **Date** field. Note that the reversing entry can't be posted earlier than the original posting date of the selected transaction.
 
-3. When you clide **OK**, a journal entry will be posted reversing the entry you selected. The reversal is shown in the **Asset transactions** or **Liability transactions** and the net total current balance that's displayed on the page is updated.
+3. When you click **OK**, a journal entry will be posted reversing the entry you selected. The reversal is shown in the **Asset transactions** or **Liability transactions** and the net total of the current balance of which displayed on the page is updated.
 
-4. When you clide **Reverse tracing**, a new page opens and displays the original and reversed transactions with a linked number known as trace number. You can also track reversals using the lease schedules for ease of understanding and visibility.
+4. When you click **Reverse tracing**, a new page opens and displays the original and reversed transactions with a linked number known as trace number. You can also track reversals using the lease schedules for ease of understanding and visibility.
 
-5. When a transaction is reversed, the **Latest journal number** field shows the journal number of the reversal transactions, and is updated with journal number subsequently where the reversal has been revoked. *Why was the reversal revoked? When did that happen?*  The **Reversed** check box is marked to indicate the reversal *transaction??* and the **Journal posted** field are unmarked concurrently.
+5. When a transaction is reversed, the **Latest journal number** field in relevent schedule form shows the journal number of the reversal transactions, and is updated with journal number. The **Reversed** check box is marked to indicate the transaction is reversed and the **Posted** field is marked concurrently.
 
-6. To revoke a reversed transaction, select either the original transaction or its reversal on the **Transactions** form and click **Reverse transaction** again. A parameter page appears that tells you that this is a revocation of an earlier reversal, and that you can edit the date for posting for this revocation. However the **Date** field has general business validations for allowed dates.
+6. To revoke a reversed transaction, select either the original transaction on the **Schedule** to follow the process of **Create journal** and the journal will be created and need to be posted manually, or by selecting original transaction on the **Transactions** form and click **Reverse transaction** again. A parameter page appears that tells you that this is a revocation of an earlier reversal, and that you can edit the date for posting for this revocation. However the **Date** field has general business validations for allowed dates.
 
 7. When you click **OK**, a journal entry will be posted reversing the selected entry. The reversal is shown in the transactions form and the net total current balance on form is updated and re-instated as it was before the first reversal thus negating the impact of reversal on the balances.
 
 8. When you click **Reverse tracing**, a dialog opens that displays both the original and reversed transactions with a linked number, known as trace number.
 
-9. You can also track revocations using the **Transactions** page. The **Reverse** field is cleared while the **Journal** posted field is marked, and the **Latest journal number** field is updated with the journal number of the revocation transaction.
-
+9. You can also track revocations using the respective **Schedules** page. The **Reverse** field is cleared while the **Journal** posted field is marked, and the **Latest journal number** field is updated with the journal number of the revocation transaction and **Journal number** updated with reversal journal number.
