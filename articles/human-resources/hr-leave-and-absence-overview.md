@@ -61,25 +61,7 @@ Your employees can submit time off requests, and you can manage them, in the **E
 
 ## Leave and absence known issues
 
-### Rounding precision
-
-You can't set **Rounding precision** when you set **Rounding type**. You can only set **Rounding precision** by using the **Leave and absence type** entity. 
-
-1. From **Leave and absence types**, select **Open in Excel** to open the **Leave and absence type** entity.
-
-2. After the file opens and is enabled, select **Design**.
-
-3. On the **Leave and absence type** table, select the pencil option to edit.
-
-4. Select **RoundingPrecision** and **RoundingType**, and then select **Add** to add to the list of fields.
-
-5. Select **Update**, and then select **Done**.
-
-6. Enter or select the **Rounding type** for each leave type if they haven't been set already. 
-
-7. Enter the **Rounding precision** for the appropriate types.
-
-8. Select **Publish** to push the changes into Human Resources.
+No known issues at this time. 
 
 ## Leave and absence preview features
 
@@ -89,9 +71,5 @@ You can try out new Leave and absence preview features in a **Sandbox** environm
 
 The preview features include:
 
-- **Leave accrual per company or plan** - You can run the accrual process either for all companies or for a single company. You can also run the accrual process for a specific leave and absence plan for a specific company. 
-
-- **Buy leave** - You can enable and create buy leave policies for employees to submit buy requests. Employees can submit buy requests and have balances automatically updated to reflect the request.  
-
-- **Add attachments to approved leave requests** - You can add an attachment to a leave request that's already been approved. 
+No preview features at this time. 
 
