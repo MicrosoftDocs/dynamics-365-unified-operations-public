@@ -244,6 +244,9 @@ If a warehouse work item consists of lines that equal a complete pallet and have
 
 Because **Handle by license plate** functionality doesn't support work that covers several pallets, it's better to have a separate work item for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
 
+> [!NOTE]
+    > For the order-committed work creation process an 'order-committed inventory dimension' value will get assigned on the picking work lines and the license plate value will not be possible to view directly. For the setup for the mobile device menu item it is only the **User directed** process which is supported.
+
 ## Example scenario: Set up and process an order-committed license plate reservation
 
 This scenario describes how to set up and process an order-committed license plate reservation.
