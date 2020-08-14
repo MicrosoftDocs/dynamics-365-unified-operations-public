@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial reporting overview
+# Get started with Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -139,6 +139,12 @@ When you select the **Financial reporting** menu, the list of default financial 
 ## Creating and modifying financial reports
 From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by selecting **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 Finance. 
 
+## Reporting tree definitions 
+One of the components that's used to build financial reports is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that is based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree.
+
+You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
+
+
 ## Troubleshooting issues opening Report Designer
 There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
 
@@ -167,3 +173,4 @@ Issue 3: You can proceed past the ClickOnce Report Designer signin page, but are
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
+- [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
