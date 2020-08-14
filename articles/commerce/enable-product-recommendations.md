@@ -69,11 +69,12 @@ Save and close the page.
 
 To turn on product recommendations, follow these steps.
 
-1. Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation parameters**.
-1. In the list of shared parameters, select **Recommendation Lists**.
-1. Set the **Enable recommendations** option to **Yes**.
+1. From Commerce Headquarters, search for **Feature Management**.
+1. Select **All**, to see a list of available features. 
+1. In the search filter, type  **Recommendations**.
+1. Select the **Product Recommendations** feature, and click **Enable Now**.
 
-![Turning on recommendations](./media/enablepersonalization.png)
+![Turning on recommendations](./media/FeatureManagement_Recommendations.png)
 
 > [!NOTE]
 > This procedure starts the process of generating product recommendation lists. It may take several hours before the lists are available and can be viewed at the point of sale (POS) or in Dynamics 365 Commerce.
