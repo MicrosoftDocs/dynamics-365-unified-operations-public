@@ -56,6 +56,7 @@ The next step is to associate the experiment with the corresponding web experien
     > [!NOTE]
     > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the 'winner'.
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
+<<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
 
 ## Discover events to measure success
 Every experiment needs metrics that measure its impact. Follow the steps below to enable metrics computation in the third-party service using events from Dynamics 365 Commerce:
@@ -100,21 +101,8 @@ After an experiment completes and has sufficient results to determine whether it
 
 ## Experiment status within Dynamics 365 Commerce
 An experiment in Dynamics 365 Commerce can be in one of the following status:
-1. Not Started - 
+1. Not Started - The experiment isn't connected to a page or fragment yet.
 1. Draft - The experiment is connected to a page or fragment.
 1. Published - The experiment is ready to go live once it is started in the third-party service.
-1. Unpublished - The experiment 
+1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
-
-## FAQs
-1. How to reorder modules in an experiment?
-  Ensure the page being experimented upon has a "container" module. 
-1. When to use module level experiments vs. page level experiments?
-When making changes to the default around the experiment (using module variations) 
-Don’t allow changes to the page (create separate page variations)  
-1. How to make significant changes to page variations?
-Change page template
-1. How to run multi-variate and multi-page experiments? 
-fragment-based experiments 
-1. How to localize experiments?
-Follow the same process as for pages.
