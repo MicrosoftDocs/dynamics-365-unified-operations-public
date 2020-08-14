@@ -57,4 +57,4 @@ When creating the depreciation expense journal entries against a lease denominat
 
 The final depreciation expense amount can be calculated using a slightly different exchange rate to fully depreciate the ROU asset in both the accounting and reporting currencies.
 
-When adjusting leases in foreign currencies, the adjustment journal entry is created using the exchange rates effective as of the modification date of the lease. The depreciation amounts will be calculated using those same rates.
+In case of the lease have been reclassified as **Deferred rent** the system will automatically clear the exchange rates of accounting and reporting currency if they are already defined.
