@@ -62,19 +62,19 @@ Beginning in version 10.0.12, a feature was introduced to allow organizations to
 
 When working with customer orders in Point of Sale, you will need to consider some of the configurations on the store channel setup.  These settings are found on the **Stores** form in Commerce Headquarters
 
--**Shipping warehouse** - indicate which warehouse will be used to fulfill orders configured for shipment from the store
--**Fulfillment group assignment** - link the fulfillment groups that will be referenced when displaying options for pickup locations or shipment origins when creating customer orders in POS
--**Use destination-based tax** - determines if the shipping address will be leveraged to determine the tax group to be applied to the order line
--**Use customer-based tax** - determines if the customer's tax group will be leveraged to determine the tax group to be applied to the order line
+- **Shipping warehouse** - indicate which warehouse will be used to fulfill orders configured for shipment from the store
+- **Fulfillment group assignment** - link the fulfillment groups that will be referenced when displaying options for pickup locations or shipment origins when creating customer orders in POS
+- **Use destination-based tax** - determines if the shipping address will be leveraged to determine the tax group to be applied to the order line
+- **Use customer-based tax** - determines if the customer's tax group will be leveraged to determine the tax group to be applied to the order line
 
 ### Set up customer order parameters
 
 Before attempting to create customer orders in the Point of Sale (POS) application, ensure that you have configured the appropriate parameters for this feature in Commerce Headquarters (HQ).  These parameters can be found on the **Commerce parameters** form under the **Customer orders** tab:
 
--**Default order type** - when creating customer orders in POS, you can configure the default order type as a sales order or a quotation order.  Regardless of the default type, users will still be able to create both sales orders and customer orders from POS.
--**Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed.  Depending on privileges, a store associate might be able to override the amount by using the **Deposit override** operation in POS if configured on the transaction screen layout.
--**Pickup mode of delivery** - Specify which mode of delivery will be applied to sales order lines that have been configured for pickup in POS.  
--**Carryout mode of delivery** - Specificy which mode of delivery will be applied to sales lines that are considered carryout order lines when creating a mixed cart where some lines will be picked up or shipped while other lines will be carried out by the customer immediately.
+- **Default order type** - when creating customer orders in POS, you can configure the default order type as a sales order or a quotation order.  Regardless of the default type, users will still be able to create both sales orders and customer orders from POS.
+- **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed.  Depending on privileges, a store associate might be able to override the amount by using the **Deposit override** operation in POS if configured on the transaction screen layout.
+- **Pickup mode of delivery** - Specify which mode of delivery will be applied to sales order lines that have been configured for pickup in POS.  
+- **Carryout mode of delivery** - Specificy which mode of delivery will be applied to sales lines that are considered carryout order lines when creating a mixed cart where some lines will be picked up or shipped while other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge will be applied when a customer order is canceled, specify the amount of that charge.
 - **Cancellation charge code** – Specificy which accounts receivable Charge code will be used when applying the cancelation charge to a canceled customer order through POS. The charges code will define the financial posting logic for the cancelation charge.
 - **Shipping charge code** – Please note, if **Use advanced auto charges** is enabled, this parameter setting has no functionality. During creation of customer orders in POS, users will be prompted to enter a shipping charge manually if **Use advanced auto charges** is disabled.  Use this parameter to map an accounts receivable Charge code which will be applied to the order when shipping charges are entered by the user.  The charges code will define the financial posting logic for the shipping charge
@@ -84,15 +84,15 @@ Before attempting to create customer orders in the Point of Sale (POS) applicati
 
 Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) has been configured to support the creation and management of customer orders and that all necessary POS operations are configured.   Some POS operations that are recommended to properly support customer order creation and management in POS are listed below
 
--**Ship all products** - used to configure all lines in the transaction cart to be shipped to a destination
--**Ship selected products** - used to configure select lines in the transaction cart to be shipped to a destination
--**Pick up all products** - used to configure all lines in the transaction cart to be picked up at a select store location
--**Pick up selected products** - used to configure select lines in the transaction cart to be picked up at a select store location
--**Carry out all products** - used to configure all lines in the transaction cart to be carried out (note that if this operation is used in POS the customer order will be converted to a cash and carry transaction)
--**Carryout out selected products** - used to configure select lines in the transaction cart as being carried out by the customer at the time of purchase.  This operation is only useful in a [hybrid order](https://docs.microsoft.com/en-us/dynamics365/commerce/hybrid-customer-orders) scenario.
--**Recall order** - used to search and retrieve customer orders so that POS users may edit, cancel or perform fulfillment related operations on these orders as needed.
--**Change mode of delivery** - can be used to quickly change the mode of delivery for lines already configured to be shipped without the user having to go through the Ship all products or Ship selected products flows again.
--**Deposit override** - can be used to change the deposit amount the customer will pay for the selected customer order.
+- **Ship all products** - used to configure all lines in the transaction cart to be shipped to a destination
+- **Ship selected products** - used to configure select lines in the transaction cart to be shipped to a destination
+- **Pick up all products** - used to configure all lines in the transaction cart to be picked up at a select store location
+- **Pick up selected products** - used to configure select lines in the transaction cart to be picked up at a select store location
+- **Carry out all products** - used to configure all lines in the transaction cart to be carried out (note that if this operation is used in POS the customer order will be converted to a cash and carry transaction)
+- **Carryout out selected products** - used to configure select lines in the transaction cart as being carried out by the customer at the time of purchase.  This operation is only useful in a [hybrid order](https://docs.microsoft.com/en-us/dynamics365/commerce/hybrid-customer-orders) scenario.
+- **Recall order** - used to search and retrieve customer orders so that POS users may edit, cancel or perform fulfillment related operations on these orders as needed.
+- **Change mode of delivery** - can be used to quickly change the mode of delivery for lines already configured to be shipped without the user having to go through the Ship all products or Ship selected products flows again.
+- **Deposit override** - can be used to change the deposit amount the customer will pay for the selected customer order.
 
 ## Working with customer orders in POS
 
