@@ -32,12 +32,12 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Experiment on e-commerce pages
 ## Overview
-Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a webpage to groups of end-users and validate hypotheses with data. Users' interactions with each version are tracked to allow making data-backed changes to webpages and thereby drive higher conversion rates.
+Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. Users' interactions with each version are tracked to allow making data-backed changes to webpages and thereby drive higher conversion rates.
 
 The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 ## Prerequisites
-1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to 10.0.13.
+1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
 1. Setup an experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 <Add Images>
@@ -48,8 +48,8 @@ Once the third-party connector setup is complete, follow the required steps to c
 
 ## Create webpage variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
-1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from either the test connector or the third-party connector. 
-1. Click “Connect” to open up the "Connect experiment" wizard.
+1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
+1. Click “Connect” to open the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations. 
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
 1. Make the required changes to the variations in the editor view. You can also optionally designate a “control” by not making any changes to it.
@@ -93,7 +93,7 @@ To delete variations in Dynamics 365 Commerce:
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
 1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
-1. Use the analytics generated in the thir-party service to pick a winner and click "Next".
+1. Use the analytics generated in the third-party service to pick a winner and click "Next".
 1. Stop the experiment in the third-party service.
 1. Click "Complete" to promote the 'winning' experience to the web storefront.
 
