@@ -38,10 +38,10 @@ The experimentation journey begins with creating a hypothesis or the theory that
 
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to 10.0.13.
+1. Setup an experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 <Add Images>
 <Tenant level flags>
-1. Setup an experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 
 ## Create an experiment
 Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
@@ -94,8 +94,8 @@ After an experiment completes and has sufficient results to determine whether it
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
 1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
 1. Use the analytics generated in the thir-party service to pick a winner and click "Next".
-1. Click "Complete" to promote the 'winning' experience to the web storefront.
 1. Stop the experiment in the third-party service.
+1. Click "Complete" to promote the 'winning' experience to the web storefront.
 
 ## Publishing experiments through Publish Groups
 
