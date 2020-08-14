@@ -37,7 +37,7 @@ Web experimentation is the process of using controlled experiments such as A/B t
 The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 ## Prerequisites
-1. Upgrade to the "right" e-commerce product versions (SSK 2.0).
+1. Upgrade SSK, SDK and Retail Server to 10.0.13.
 1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 <Add Images>
 <Tenant level flags>
@@ -91,13 +91,18 @@ The next step is to associate the experiment with the corresponding web experien
 1. Click "Complete" to promote the 'winning' experience to the web storefront.
 1. Stop the experiment in the third-party service.
 
+## Publishing experiments through Publish Groups
+
+## Experiment status within Dynamics 365 Commerce
+
 ## FAQs
-1. Reorder modules 
-1. Whole page variation with templates 
-1. fragment-based experiments 
-1. Making changes to the experiment (2 schools of thought) 
-1. Making changes to the default around the experiment (using module variations) 
-1. Don’t allow changes to the page (create separate page variations)  
-1. localization – we support it, yes! (do it once, do it for all) – advanced topic? 
-1. publish groups – advanced topic?  
-1. Statuses
+1. How to reorder modules in an experiment?
+1. When to use module level experiments vs. page level experiments?
+When making changes to the default around the experiment (using module variations) 
+Don’t allow changes to the page (create separate page variations)  
+1. How to make significant changes to page variations?
+Change page template
+1. How to run multi-variate and multi-page experiments? 
+fragment-based experiments 
+1. How to localize experiments?
+Follow the same process as for pages.
