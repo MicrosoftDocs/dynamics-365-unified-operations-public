@@ -68,9 +68,10 @@ After you've entered information for the lease, complete the following steps to 
 
 In order to calculate the lease term in months, the system will find the difference between the start date and the end date for a particular payment schedule line and will then move to the next payment schedule line, and find the difference again. Then the system sums all these amounts to determine the lease term in months.
 
-1.	Click **Liability amortization schedule**.
-2.	Exit the amortization schedule and **Asset depreciation schedule**.
-be 3.	Exit the depreciation schedule and click **Initial recognition** to create the initial recognition journal entry. A prompt that shows that the journal has been created will displayed.
+
+In order to view the calculated period interest expenses go to **Liability amortization schedule**, to view calculated stright line depreciation go to **Asset depreciation schedule**, 
+
+After revewing calculated amount you can go to **Initial recognition** to create the initial recognition journal entry. A prompt that shows that the journal has been created will displayed.
 
 > [!Note]
 > The journal entry is not posted to General ledger until the user manually "posts" the entry.
