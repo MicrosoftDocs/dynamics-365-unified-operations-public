@@ -5,7 +5,7 @@ title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 08/12/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -92,7 +92,7 @@ Follow these steps to build the Retail SDK.
 2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, see [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.md).
 3. After the extensions have been merged, update all the hard-coded references to PackageReference by using the NuGet packages.
 
-## Update the reference in the CRT and RS extension projects
+## Update the reference in the CRT and Retail Server extension projects
 
 1. Open the CRT extension project in Visual Studio 2017.
 2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
@@ -114,9 +114,9 @@ Follow these steps to build the Retail SDK.
 
 In a similar way, update the references for all the Retail Server, proxy, and Hardware station extension projects. 
 
-### Retail server and Proxy extensions:
+### Retail Server and Proxy extensions
 
-Migrate the RS and Proxy extensions to the new extension model released in 10.0.12, starting 10.0.12 the same RS extension library can be used for offline, no separate C# proxy library is needed, client typescript proxy is still required. [Check the RS extension doc for more details](../retail-server-icontroller-extension.md). This step is recommended but not mandatory the old Retail server and Proxy extension libraries will continue to work till the old extension model is deprecated.
+Migrate the Retail Server and Proxy extensions to the new extension model released in version 10.0.12. Starting in version 10.0.12, the same Retail Server extension library can be used for offline use, no separate C# proxy library is needed, however a client typescript proxy is still required. For more information, see [Create a new Retail Server extension API](../retail-server-icontroller-extension.md). This step is recommended but not required, as the Retail Server and proxy extension libraries will continue to work until the old extension model is deprecated.
 
 ## What isn't affected
 
@@ -124,7 +124,7 @@ You don't have to change the extensions code that was written in previous versio
 
 If you have existing pipelines in Azure Pipelines not based on build machine agent that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
 
-Please follow the steps mentioned in [this doc to setup a build pipeline in Azure DevOps without using build VM and build agent from the build machine.](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline])
+Follow the steps to set up a build pipeline in Azure DevOps without using build VM and build agent from the build machine. For more information, see [Set up Commerce SDK build pipeline](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline).
 
 ## Azure DevOps pipeline using build machine agent
 
@@ -132,7 +132,7 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 
 1. Install Visual Studio 2017 on the build machine.
 2. Optionally, run msbuild (msbuild version 15.0) from the developer command prompt for Visual Studio 2017 on the build machine. Open the developer command prompt for Visual Studio 2017 and navigate to the Retail SDK root folder. Type *msbuild dirs.proj* and make sure that the MSBuild completes successfully. 
-3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables** and select **Path** variable and click **Edit**. In the Edit environment variable window click **New** and add the path variable for MSBuild 15.0 and move it to the top of the list of PATH variables. For example the path will be something like - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
+3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables**. Select the **Path** variable, and then select **Edit**. In the **Edit environment variable** window, select **New** and add the path variable for MSBuild 15.0. Move it to the top of the list of PATH variables. For example, the path will be something like - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
 - To validate the config information
   +  Open a regular "CMD" window (not the Visual Studio command prompt).
   +  Run **where MSBuild**.
