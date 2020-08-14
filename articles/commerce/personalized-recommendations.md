@@ -5,7 +5,7 @@ title: Enable personalized product recommendations
 description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -53,12 +53,13 @@ For more information about product recommendations, see the [Product recommendat
 
 To turn on personalization, follow these steps.
 
-1. From Commerce Headquarters, search for **Feature Management**.
-1. Select **All**, to see a list of available features. 
-1. In the search filter, type  **Recommendations**.
-1. Select the **Personalized product recommendations** feature, and click **Enable Now**.
+1. In Commerce headquarters, search for **Feature Management**.
+1. Select **All** to see a list of available features. 
+1. In the search box, enter **Recommendations**.
+1. Select the **Personalized product recommendations** feature.
+1. In the **Personalized product recommendations** properties pane, select **Enable now**.
 
-![Turning on personalization](./media/FeatureManagement_Personalized.png)
+![Turning on personalization](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > When you turn on personalization, the process of generating personalized product recommendation lists is started. Up to one day might be required before these lists are available and visible online and at the POS.
