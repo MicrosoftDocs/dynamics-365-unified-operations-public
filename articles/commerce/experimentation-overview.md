@@ -66,7 +66,7 @@ Every experiment needs metrics that measure its impact. Follow the steps below t
 1. Use the event as necessary in the third party service to track success metrics for the experiment.
 
 ## Start the experiment and collect results
-Once the variations are created and setup in Dynamics 365 Commerce, the next step is to run the experiment in the third-party service and track user interactions to compute success metrics.
+Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
 1. Let the experiment run for a few days/weeks depending on the recommendation from the third-party service.
 1. View experiment related data and analytics in the third-party service.
@@ -74,7 +74,7 @@ Once the variations are created and setup in Dynamics 365 Commerce, the next ste
     > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
 
 ## Edit webpage variations
-To edit variations in Dyamics 365 Commerce:
+To edit variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
@@ -82,7 +82,7 @@ To edit variations in Dyamics 365 Commerce:
 1. Go to the third-party service to make changes to the names of the variations.
 
 ## Delete webpage variations
-To delete variations in Dyamics 365 Commerce:
+To delete variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
 1. Pick the variation to be deleted from the drop down below the experiment name in the WYSIWYG editor.
