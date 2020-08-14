@@ -36,16 +36,16 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-For leases that are recognized on the organization's balance sheet, the right-of-use (ROU) asset is amortized on a monthly basis. This topic lists the steps for creating that journal entry for the amortization. The amortization will debit the depreciation expense posting type account and credit the accumulated depreciation posting type account. These entries can be created for each lease, or for multiple leases using the batch journal functionality.
+For leases that are recognized on the organization's balance sheet, the right-of-use (ROU) asset is amortized on a monthly basis. This topic lists the steps for creating that journal entry for the amortization. The amortization will debit the expense ledger account and credit the accumulated depreciation ledger account according to your posting profile setup and lease type. These entries can be created for each lease, or for multiple leases using the batch journal functionality.
 
-## Operating Leases
-1. Open the **Lease summary** page and select the operating lease. Open the **Asset depreciation schedule** page (**Books > Asset depreciation schedule**).
+## Asset depreciation schedule
+1. Open the **Lease summary** page and select a lease. Open the **Asset depreciation schedule** page (**Books > Asset depreciation schedule**).
 
 The right-of-use asset depreciation expense journal entry is based on the amount in the **Depreciation Expense** column. Refer to the Calculation of ROU Asset Amortization Expense for Finance Leases section in this topic for an illustration of the accounting standard compliance guidance.
 
 2. Select the period of depreciation and click **Create journal**. The user will receive a prompt that the journal to record depreciation was created.
 
-3. Open the **General journals** page to (**Journals > General journals**) to view the depreciation expense journal entry that was created.
+3. Open the **Asset leasing journal** page to (**Journals > Asset leasing journals**) to view the depreciation expense journal entry that was created.
 
 4. Select the journal entry and click **Post** to record the depreciation entry to General ledger.
 
@@ -76,7 +76,7 @@ The straight-line lease expense is calculated as the sum of all payments divided
 
 
 > [!Note] 
-> According to ASC 842, the depreciation of the right-of-use asset for an operating lease is classified as lease expense in the income statement. For purposes of visibility, the Asset leasing module describes the entry as the depreciation of the right-of-use asset, but the debit should be assigned to an operating lease expense account, and the credit directly to the operating lease right-of-use asset. However, the company can specify in the lease parameters to credit to an accumulated depreciation account for operating right-of-use asset if desired.
+> According to US GAAP ASC 842, the depreciation of the right-of-use asset for an operating lease is classified as lease expense in the income statement. For purposes of visibility, the Asset leasing module describes the entry as the depreciation of the right-of-use asset, but the debit should be assigned to an operating lease expense account, and the credit directly to the operating lease right-of-use asset. However, the company can specify in the lease parameters to credit to an accumulated depreciation account for operating right-of-use asset if desired.
 
 ## Calculation of ROU Asset Amortization Expense for Finance Leases
 
