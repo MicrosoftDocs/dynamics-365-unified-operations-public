@@ -540,7 +540,7 @@
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
       - name: Create buy and sell leave workflows
-        href: hr-leave-and-absence-buy-and-sell-leave-workflow.md   
+        href: hr-leave-and-absence-buy-and-sell-workflow.md   
       - name: Buy and sell leave
         href: hr-employee-self-service-buy-sell-leave.md
     - name: Manage leave requests in Teams
