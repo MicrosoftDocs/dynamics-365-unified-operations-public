@@ -5,7 +5,7 @@ title: Improve performance of ER solutions by adding parameterized CALCULATED FI
 description: This topic provides information about how to improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/12/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial provides guidelines about how to take [performance traces](trace-execution-er-troubleshoot-perf.md) for executed ER formats, and how to use the information from these traces to help improve performance by configuring a parametrized **Calculated field** data source.
+This topic provides guidelines about how to take [performance traces](trace-execution-er-troubleshoot-perf.md) for executed ER formats and use the information from these traces to help improve performance by configuring a parametrized **Calculated field** data source.
 
-As part of the process of designing [Electronic reporting (ER)](general-electronic-reporting.md) configurations to generate business documents, you define the method that is used to get data out of the application and enter it in the output that is generated. You can design a parametrized ER data source of the **Calculated field** type to reduce the number of database calls and significantly reduce the time and cost that are involved in collecting the details of ER format execution.
+As part of the process of designing [Electronic reporting (ER)](general-electronic-reporting.md) configurations to generate business documents, you define the method that is used to retrieve data from the application and enter it in the generated output. You can design a parametrized ER data source of the **Calculated field** type to reduce the number of database calls and significantly reduce the time and cost that are involved in collecting the details of ER format execution.
 
 ## Prerequisites
 
@@ -47,22 +47,20 @@ As part of the process of designing [Electronic reporting (ER)](general-electron
     - System administrator
 
 - The company must be set to **DEMF**.
-
-- Follow the steps in [Appendix 1](#appendix1) of this topic to download the components of the sample Microsoft ER solution that are required to complete the steps of this tutorial.
-
-- Follow the steps in [Appendix 2](#appendix2) of this topic to configure the minimal set of ER parameters before you can start to use the ER framework to improve the performance of the sample Microsoft ER solution.
+- Complete the steps in [Appendix 1](#appendix1) of this topic to download the components of the sample Microsoft ER solution required to complete the steps in this topic.
+- Complete the steps in [Appendix 2](#appendix2) of this topic to configure the minimal set of ER parameters before you can use the ER framework to improve the performance of the sample Microsoft ER solution.
 
 ## Import the sample ER solution
 
-Assume that you need to design a new ER solution to generate a new report that presents vendor transactions. Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**). However, you want to have transactions of all vendors at the same time in one electronic document in XML format. This solution will consist of several ER configurations that contain the required data model, model mapping, and format components. You will import the sample ER solution to start using it for generation of a vendor transactions report.
+Assume that you need to design an ER solution to generate a new report that shows vendor transactions. Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable** \> **Vendors** \> **All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**). However, you want to have all vendor transactions at the same time in one electronic document in XML format. This solution will consist of several ER configurations that contain the required data model, model mapping, and format components. You start by importing the sample ER solution to generate a vendor transactions report.
 
-1. Sign in to the Finance instance that has been provisioned for your company.
-2. In this tutorial, you will create and modify configurations for the **Litware, Inc.** sample company. Therefore, make sure that this configuration provider has been added to your Finance instance and selected as active. For instructions, see the [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) procedure.
+1. Sign in to the Finance instance provisioned for your company.
+2. In this topic, you will create and modify configurations for the sample company, **Litware, Inc.**. Make sure that this configuration provider has been added to your Finance instance and is selected as active. For more information, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into Finance, in the following order: data model, model mapping, format. For each configuration, follow these steps:
+4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into Finance, in the following order: data model, model mapping, format. For each configuration:
 
-    1. On the Action Pane, select **Exchange \> Load from XML file**.
-    2. Select **Browse** to select the appropriate file for the required ER configuration in XML format.
+    1. On the Action Pane, select **Exchange** \> **Load from XML file**.
+    2. Select **Browse** and navigate the appropriate file for the ER configuration in XML format.
     3. Select **OK**.
 
     ![ER configurations page showing imported configurations](./media/er-calculated-field-ds-performance-imported-configurations.png)
@@ -71,33 +69,32 @@ Assume that you need to design a new ER solution to generate a new report that p
 
 ### Review model mapping
 
-1. In the configuration tree, expand the content of the **Performance improvement model** item.
+1. In the configuration tree, expand **Performance improvement model**.
 2. Select **Performance improvement mapping**.
-3. Select **Designer** on the **Configurations** page.
-4. Select **Designer** on the **Model to datasource mapping** page.
+3. On the **Configurations** page, select **Designer**.
+4. On the **Model to datasource mapping** page, select **Designer**.
    
     This ER model mapping is designed to do the following:
     
-    - Fetch the list of vendor transactions residing in the **VendTrans** table (**Trans** data source).
+    - Fetch the list of vendor transactions that are stored in the **VendTrans** table (**Trans** data source).
     - For every transaction, fetch from the **VendTable** table the record of a vendor for which the current transaction has been posted (**#Vend** data source).
     
-    Note that the **#Vend** data source is configured as fetching the corresponded vendor record by using the existing many-to-one relation **@.'>Relations'.VendTable_AccountNum**.
+    > [!NOTE]
+    > The **#Vend** data source is configured to fetch the corresponding vendor record by using the existing many-to-one relation **@.'>Relations'.VendTable_AccountNum**.
 
-    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance. As a result, the content of the **Trans** data sources is exposed for ER formats such as abstract **model** data sources.
+    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance. As a result, the content of the **Trans** data source is exposed for ER formats such as abstract **model** data sources.
 
     ![Model mapping designer page showing Trans data source](media/er-calculated-field-ds-performance-mapping-1.png)
 
-5.  Close the **Model mapping designer** page.
-6.  Close the **Model to datasource mapping** page.
+5.  Close the **Model mapping designer** page and then close the **Model to datasource mapping** page.
 
 ### Review format
 
-1. In the configuration tree, expand the content of the ***Performance improvement model** item.
+1. In the configuration tree, expand **Performance improvement model**.
 2. Select **Performance improvement format**.
 3. Select **Designer**.
-4. Select the **Mapping** tab.
-5. Select **Expand/Collapse**.
-6. Expand the **Model**, **Data,** and **Transaction** items. 
+4. On the **Mapping** tab, select **Expand/Collapse**.
+5. Expand the items, **Model**, **Data,** and **Transaction**. 
 
     This ER format is designed to generate a vendor transactions report in XML format.
 
@@ -107,12 +104,12 @@ Assume that you need to design a new ER solution to generate a new report that p
 
 ## Run the sample ER solution to trace execution
 
-Assume that you've finished designing the first version of the ER solution. You now want to test it in your Finance instance and analyze execution performance.
+Assume that you've finished designing the first version of the ER solution. You now want to test the solution in your Finance instance and analyze the execution performance.
 
 ### Turn on the ER performance trace
 
 1. Select the **DEMF** company.
-2. Complete the steps of the [Turn on the ER performance trace](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) section to generate a performance trace while an ER format is executed.
+2. Complete the steps in the [Turn on the ER performance trace](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) section to generate a performance trace while an ER format is executed.
 
     ![User parameters dialog on the ER configurations page](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
