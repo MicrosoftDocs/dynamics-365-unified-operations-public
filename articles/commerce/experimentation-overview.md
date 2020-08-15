@@ -38,7 +38,6 @@ Use experimentation to measure the impact of new changes or ideas and avoid maki
 
 ## Experimentation journey
 The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as <b>variations</b> within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
-
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 > [!NOTE]
@@ -63,11 +62,13 @@ The next step is to associate the experiment with the corresponding web experien
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
-    - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
+    1.1 associate the experiment with a page that uses a layout, they will only be able to scope the experiment to the entire page 
+    1.1 Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
 1. Make the required changes to the variations in the editor view. 
     > [!NOTE]
     > You can also optionally establish a "control" or base experience to compare your experiment results against. Designate one of the variations generated as the control by not making any changes to it.
-1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
+1. Preview the variations to ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
+1. Click on “Publish” to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
 <<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
 
 ## Add events to measure experiment success
@@ -91,9 +92,7 @@ To edit variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
-1. Make the required changes, preview the changes and publish. 
-    > [!NOTE]
-    > The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
+1. Make the required changes, preview and publish them.
 1. Go to the third-party service to make changes to the names of the variations.
 
 ## Delete experiment variations
@@ -112,10 +111,13 @@ After an experiment completes and has sufficient results to determine whether it
 1. Click "Complete" to overwrite the default version of the page and publish the winning variation to all users of the website.
 
 ## Use Publish Groups to publish experiment variations 
-Experiment variations created within Dynamics 365 Commerce can be published as a unit 
+Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. To do this:
+1. 
 
 Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
+> [!NOTE]
+> While adding a page to a publish group, any experiments running on it will be removed. 
 
 ## Experiment status within Dynamics 365 Commerce
 An experiment in Dynamics 365 Commerce can be in one of the following status:
