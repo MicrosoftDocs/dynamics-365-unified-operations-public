@@ -34,25 +34,20 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. User interactions with each version are tracked to enable making data-informed changes and thereby drive higher conversion rates.
 
-Use experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website before understanding their impact.
+Use experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website before understanding their impact. Dynamics 365 Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page testing can be achieved with fragment-based experimentation, as long as these tests are supported in the third-party service.
 
 ## Experimentation journey
 The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as <b>variations</b> within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
-> [!NOTE]
-> A/B testing on pages, modules and fragments is fully supported in Dynamics 365 Commerce. Multi-variate and multi-page testing can be achieved with fragment-based experimentation, as long as these tests are supported in the third-party service.
-
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
 1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
-1. Turn on the experimentation feature flags
-    1.1 Go to Site Settings -> Features. 
-    1.1 Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. 
-    1.1 Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
+1. Turn on the experimentation feature flags in Site Settings -> Features
+    - Set the "Experimentation" flag to on to enable creating experiment variations of modules within a page. Turning this flag off will turn off the entire experimentation feature and no experiment variations will be shown to end users. 
+    - Set the "Experimentation on pages or fragments" flag to on to enable experiments to be run on a page or fragment. Turning this flag off will disable the creation of new page and fragment experiment variations.
 
-<Add Images>
-<Tenant level flags>
+<Tenant level flags???>
 
 ## Create an experiment
 Once the connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
@@ -62,11 +57,9 @@ The next step is to associate the experiment with the corresponding web experien
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
-    1.1 associate the experiment with a page that uses a layout, they will only be able to scope the experiment to the entire page 
-    1.1 Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
-1. Make the required changes to the variations in the editor view. 
     > [!NOTE]
-    > You can also optionally establish a "control" or base experience to compare your experiment results against. Designate one of the variations generated as the control by not making any changes to it.
+    > Remember to enable the "Experimentation on pages or fragments" feature flag to allow experimentation on pages and fragments. Set the experimentation scope to "entire" if experimentating on the full entity and to "partial" if experimenting on a small portion of the entity.
+1. Make the required changes to the variations in the editor view. You can also optionally establish a "control" or base variation to compare to by not making any changes to it.
 1. Preview the variations to ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Click on “Publish” to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
 <<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
@@ -117,12 +110,13 @@ Experiment variations created within Dynamics 365 Commerce can be scheduled for 
 Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
 > [!NOTE]
-> While adding a page to a publish group, any experiments running on it will be removed. 
+> While adding a page to a publish group, any experiments running on it will be removed.
 
 ## Experiment status within Dynamics 365 Commerce
-An experiment in Dynamics 365 Commerce can be in one of the following status:
+The "Experiments" tab shows the following states in the "Commerce status" field to help you quickly see what state your experiment is in:
 1. Not Started - The experiment isn't connected to a page or fragment yet.
 1. Draft - The experiment is connected to a page or fragment.
 1. Published - The experiment is ready to go live once it is started in the third-party service.
 1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
+Similarly you can also use the "third-party status" field to understand the state of your experiment in the third-party service. 
