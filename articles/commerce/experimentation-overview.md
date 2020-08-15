@@ -32,10 +32,12 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Experiment on e-commerce pages
 ## Overview
-Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. Users' interactions with each version are tracked to allow making data-backed changes to webpages and thereby drive higher conversion rates.
+Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. User interactions with each version are tracked to enable making data-informed changes and thereby drive higher conversion rates.
+
+Use experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website before understanding their impact.
 
 ## Experimentation journey
-The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as variations within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
+The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as <b>variations</b> within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 ![Simplified pricing logic](./media/Simplified-pricing-logic.png "Simplified pricing logic")
 
@@ -56,7 +58,7 @@ The experimentation journey begins with creating a hypothesis or the theory that
 ## Create an experiment
 Once the connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
 
-## Create webpage variations
+## Create experiment variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
@@ -68,7 +70,7 @@ The next step is to associate the experiment with the corresponding web experien
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
 <<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
 
-## Discover events to measure success
+## Add events to measure experiment success
 Every experiment needs metrics that measure its impact. Follow the steps below to enable metrics computation in the third-party service using events from Dynamics 365 Commerce:
 1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
 1. Click on "Events" in the right property pane of the page or module of interest.
@@ -84,7 +86,7 @@ Once the variations are setup in Dynamics 365 Commerce, follow the steps below t
     > [!NOTE]
     > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
 
-## Edit webpage variations
+## Edit experiment variations
 To edit variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
@@ -94,14 +96,14 @@ To edit variations in Dynamics 365 Commerce:
     > The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Go to the third-party service to make changes to the names of the variations.
 
-## Delete webpage variations
+## Delete experiment variations
 To delete variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
 1. Pick the variation to be deleted from the drop down below the experiment name in the WYSIWYG editor.
 1. Click on "Delete" in the top bar to delete the variation and publish as necessary.
 
-## Pick a winning webpage variation
+## Pick a winning experiment variation
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
 1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
@@ -109,7 +111,11 @@ After an experiment completes and has sufficient results to determine whether it
 1. Stop the experiment in the third-party service.
 1. Click "Complete" to overwrite the default version of the page and publish the winning variation to all users of the website.
 
-## Publishing experiments through Publish Groups
+## Use Publish Groups to publish experiment variations 
+Experiment variations created within Dynamics 365 Commerce can be published as a unit 
+
+Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+
 
 ## Experiment status within Dynamics 365 Commerce
 An experiment in Dynamics 365 Commerce can be in one of the following status:
