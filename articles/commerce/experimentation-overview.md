@@ -105,9 +105,9 @@ To delete variations in Dynamics 365 Commerce:
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment.
 1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
-1. Use the analytics generated in the third-party service to pick a winner and click "Next".
+1. Use the analytics generated in the third-party service to pick the variation that performed the best and click "Next".
 1. Stop the experiment in the third-party service.
-1. Click "Complete" to promote the winning variation to all users of the website. This will overwrite the default version of the page and will be published live.
+1. Click "Complete" to overwrite the default version of the page and publish the winning variation to all users of the website.
 
 ## Publishing experiments through Publish Groups
 
