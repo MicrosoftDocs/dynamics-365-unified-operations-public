@@ -97,7 +97,7 @@ After an experiment completes and has sufficient results to determine whether it
 1. Click "Complete" on the top bar once the experiment has run and gathered sufficient data.
 1. Use the analytics generated in the third-party service to pick a winner and click "Next".
 1. Stop the experiment in the third-party service.
-1. Click "Complete" to promote the 'winning' experience to the web storefront.
+1. Click "Complete" to promote the winning variation to all users of the website. This will overwrite the default version of the page and will be published live.
 
 ## Publishing experiments through Publish Groups
 
