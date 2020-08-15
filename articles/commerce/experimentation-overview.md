@@ -119,4 +119,5 @@ The "Experiments" tab shows the following states in the "Commerce status" field 
 1. Published - The experiment is ready to go live once it is started in the third-party service.
 1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
+
 Similarly you can also use the "third-party status" field to understand the state of your experiment in the third-party service. 
