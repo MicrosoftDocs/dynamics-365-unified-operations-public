@@ -40,7 +40,7 @@ The experimentation journey begins with creating a hypothesis or the theory that
 ![Simplified pricing logic](./media/Simplified-pricing-logic.png "Simplified pricing logic")
 
 > [!NOTE]
-> A/B testing on pages, modules and fragments is fully supported in Dynamics 365 Commerce. Fragment-based experimentation can be used for multi-variate and multi-page testing, as long as these are supported in the third-party service.
+> A/B testing on pages, modules and fragments is fully supported in Dynamics 365 Commerce. Multi-variate and multi-page testing can be achieved with fragment-based experimentation, as long as these tests are supported in the third-party service.
 
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
