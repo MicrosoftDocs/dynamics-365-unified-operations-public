@@ -38,23 +38,23 @@ The experimentation journey begins with creating a hypothesis or the theory that
 
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
-1. Setup an experimentation Connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either setup the sample test connector or a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
+1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 1. Turn on the experimentation feature flags - Go to Site Settings -> Features. Set the "Experimentation" flag to on to enable experiments to be run on modules within a page. Turning this flag off will turn off the experimentation feature and no experiment variations will be shown to end users. Set the "Experimentation on pages or fragments" flag to enable experiments to be run on a page or fragment. Setting this flag to off will turn off the ability to create new page and fragment experiments.
 <Add Images>
 <Tenant level flags>
 
 ## Create an experiment
-Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
+Once the connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
 
 ## Create webpage variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
-1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations. 
+1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
     - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/page-elements-overview) for more information on page model entities - pages, modules and fragments.
-1. Make the required changes to the variations in the editor view. You can also optionally designate a “control” by not making any changes to it.
+1. Make the required changes to the variations in the editor view. 
     > [!NOTE]
-    > The control in a web experiment refers to the experience that will remain unchanged throughout the duration of the experiment. This helps set the baseline metric for the experiment and identify the 'winner'.
+    > You can also optionally establish a "control" or base experience to compare your experiment results against. Designate one of the variations generated as the control by not making any changes to it.
 1. Preview the variations and click on “Publish” to publish them. Note that this single operation will publish all variations that belong to the experiment.
 <<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
 
@@ -64,7 +64,7 @@ Every experiment needs metrics that measure its impact. Follow the steps below t
 1. Click on "Events" in the right property pane of the page or module of interest.
 1. View the list of events associated and copy the required event to the clipboard.
     - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
-1. Use the event as necessary in the third party service to track success metrics for the experiment.
+1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Start the experiment and collect results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
@@ -77,9 +77,11 @@ Once the variations are setup in Dynamics 365 Commerce, follow the steps below t
 ## Edit webpage variations
 To edit variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
-1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
+1. If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
-1. Make the required changes, preview the changes and publish.
+1. Make the required changes, preview the changes and publish. 
+    > [!NOTE]
+    > The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Go to the third-party service to make changes to the names of the variations.
 
 ## Delete webpage variations
