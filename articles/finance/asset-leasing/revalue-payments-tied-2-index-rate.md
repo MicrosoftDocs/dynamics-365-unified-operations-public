@@ -35,14 +35,14 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the adjustment to lease liability for a right-of-use asset (ROU) that arises from changes in variable lease payments because of a change in the index rate. The lease liability for ROU assets will be adjusted to account for the new payment amounts. Under US GAAP ASC 842, only the variable payments will change when payments increase or decrease because of a change in the index rate, unless there are additional changes to cash flows, such as a change in lease terms that's related to interest rates. For more information, refer to ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
+This topic describes the adjustment to lease liability and right-of-use asset (ROU) that arises from changes in variable lease payments because of a change in the index rate. The lease liability and ROU assets will be adjusted to account for the new payment amounts. Under US GAAP ASC 842, only the variable payments will change when payments increase or decrease because of a change in the index rate, unless there are additional changes to cash flows, such as a change in lease terms that's related to interest rates. For more information, refer to ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
 
 ## Adjust lease payments
 
 Complete the following steps to revalue lease payments that are tied to an index rate.
 
 1.	To run the lease index revaluation process, open the **Index rate revaluation** page (**Asset leasing > Periodic > Index rate revaluation**).
-   The Index rate revaluation page shows all prior lease index revaluation processes that have been run. Information included on this form are the Process ID generated from the number sequences setup form, the legal entity, number of leases adjusted, total liability adjustment for IFRS 16 leases, and the total variable payments adjusted for ASC 842 leases.
+   The Index rate revaluation page shows all prior lease index revaluation processes that have been run. Information included on this form are the Process ID generated from the number sequences setup form, the legal entity, number of lease books adjusted, total liability adjustment for IFRS 16 leases, and the total variable payments adjusted for ASC 842 leases.
 2. To run the revaluation, select Lease index revaluation in the top ribbon.
 3. The **Index revaluation parameters** page will appear. You can filter and select which leases, lease groups, or other criteria are used when you select the leases to revalue. 
 
@@ -57,7 +57,7 @@ The index revaluation process can also be set up to run in batch by using the **
 
 ## ASC 842 Leases – Index Revaluation
 
-To view the effects of the lease revaluation process on ASC 842 leases, navigate to the payment schedule for the lease. Only the variable payments on or after the revaluation date has been changed due to the index revaluation [*are displayed? Something is missing from this*]. The amortization and depreciation schedules remain unchanged. When you create an invoice with a variable payment, the variable payment will be debited to the Variable payment posting account, and the variable payment amount will also be added to the credit entry to the vendor or Lease payment posting account.
+To view the effects of the lease revaluation process on ASC 842 leases, navigate to the payment schedule for the lease. Only the variable payments on or after the revaluation date has been changed due to the index revaluation [*are displayed? Something is missing from this* *the system display the updated variable payments after index revaluation* ]. The amortization and depreciation schedules remain unchanged. When you create an invoice with a variable payment, the variable payment will be debited to the Variable payment posting account, and the variable payment amount will also be added to the credit entry to the vendor or Lease payment posting account.
 
 The payment schedule lines in the lease details form are automatically updated with a new line indicating the new index rate and a column showing how line was created -- either manually or through the index revaluation process.
 
