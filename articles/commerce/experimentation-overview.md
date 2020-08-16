@@ -60,7 +60,7 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Create experiment variations
-The next step is to associate the experiment with the corresponding web experiences. To do this:
+The next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
@@ -91,7 +91,7 @@ To edit variations in Dynamics 365 Commerce:
 To delete variations in Dynamics 365 Commerce:
 1. Go to the “Experiments” tab in site builder's left nav bar and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the "Unpublish" button in the top bar.
-1. Pick the variation to be deleted from the drop down below the experiment name in the WYSIWYG editor.
+1. Pick the variation to be deleted from the drop down below the experiment name in the editor.
 1. Click on "Delete" in the top bar to delete the variation and publish as necessary.
 
 ## Pick a winning experiment variation
