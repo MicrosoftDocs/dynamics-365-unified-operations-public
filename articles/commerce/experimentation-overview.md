@@ -61,7 +61,7 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 
 ## Create experiment variations
 The next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
-1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
+1. Go to the “Experiments” tab in site builder to view the list of experiments from the connector configured above. 
 1. Click “Connect” to open the "Connect experiment" wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
     > [!NOTE]
