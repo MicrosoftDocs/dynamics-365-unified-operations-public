@@ -69,14 +69,15 @@ The next step is to associate the experiment with the corresponding experiences 
 1. Make the required changes to the variations in the editor view. You can also optionally establish a "control" or base variation to compare to by not making any changes to it.
 1. Preview the variations to ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Click on “Publish” to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
-<<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
+    > [!NOTE]
+    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
 
 ## Start the experiment and collect results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
     > [!NOTE]
     > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
-1. Let the experiment run for a few days/weeks depending on the recommendation from the third-party service.
+1. Let the experiment run for a few days/weeks depending on how long it takes to gather sufficient data for statistical analyses in the third-party service.
 1. View experiment related data and analytics in the third-party service.
 
 ## Edit experiment variations
@@ -102,7 +103,7 @@ After an experiment completes and has sufficient results to determine whether it
 1. Stop the experiment in the third-party service.
 1. Click "Complete" to overwrite the default version of the page and publish the winning variation to all users of the website.
 
-## Use Publish Groups to publish experiment variations 
+## Publish experiment variations with Publish Groups
 Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. To do this:
 1. 
 
