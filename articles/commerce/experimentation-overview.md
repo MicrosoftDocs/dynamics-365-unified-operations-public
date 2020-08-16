@@ -42,7 +42,7 @@ The experimentation journey typically begins with creating a hypothesis or the t
 
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
-1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
+1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 1. Turn on the experimentation feature flags in Site Settings -> Features.
     - Set the "Experimentation" flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
     - Set the "Experimentation on pages or fragments" flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
@@ -50,7 +50,7 @@ The experimentation journey typically begins with creating a hypothesis or the t
 <Tenant level flags???>
 
 ## Create an experiment
-Once the connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
+Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be one or more experiments with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
 
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using events from Dynamics 365 Commerce:
 1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
@@ -72,7 +72,7 @@ The next step is to associate the experiment with the corresponding experiences 
     > [!NOTE]
     > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
 
-## Start the experiment and collect results
+## Start the experiment to gather results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
     > [!NOTE]
