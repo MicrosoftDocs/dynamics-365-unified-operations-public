@@ -43,9 +43,9 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
 1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
-1. Turn on the experimentation feature flags in Site Settings -> Features
-    - Set the "Experimentation" flag to on to enable creating experiment variations of modules within a page. Turning this flag off will turn off the entire experimentation feature and no experiment variations will be shown to end users. 
-    - Set the "Experimentation on pages or fragments" flag to on to enable experiments to be run on a page or fragment. Turning this flag off will disable the creation of new page and fragment experiment variations.
+1. Turn on the experimentation feature flags in Site Settings -> Features.
+    - Set the "Experimentation" flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
+    - Set the "Experimentation on pages or fragments" flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
 
 <Tenant level flags???>
 
