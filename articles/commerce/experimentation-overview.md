@@ -52,6 +52,13 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ## Create an experiment
 Once the connector setup is complete, follow the required steps to create an experiment in the third-party service. The list of experiments from here will be available in site builder within about 5 minutes.
 
+Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using events from Dynamics 365 Commerce:
+1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
+1. Click on "Events" in the right property pane of the page or module of interest.
+1. View the list of events associated and copy the required one to the clipboard.
+    - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
+1. Use the event as necessary in the third-party service to track success metrics for the experiment.
+
 ## Create experiment variations
 The next step is to associate the experiment with the corresponding web experiences. To do this:
 1. Go to the “Experiments” tab on site builder’s left nav bar to view the list of experiments from the connector configured above. 
@@ -63,14 +70,6 @@ The next step is to associate the experiment with the corresponding web experien
 1. Preview the variations to ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Click on “Publish” to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
 <<Note that if this page has an unpublished URL, it will not be visible to the end customers. Make sure to publish the page URL first. Add link to doc on how to publish a page.>>
-
-## Add events to measure experiment success
-Every experiment needs metrics that measure its impact. Follow the steps below to enable metrics computation in the third-party service using events from Dynamics 365 Commerce:
-1. Go to the “Pages” tab in site builder's left nav bar and click on the desired page. 
-1. Click on "Events" in the right property pane of the page or module of interest.
-1. View the list of events associated and copy the required event to the clipboard.
-    - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
-1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Start the experiment and collect results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
