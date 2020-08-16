@@ -74,10 +74,10 @@ The next step is to associate the experiment with the corresponding experiences 
 ## Start the experiment and collect results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
-1. Let the experiment run for a few days/weeks depending on the recommendation from the third-party service.
-1. View experiment related data and analytics in the third-party service.
     > [!NOTE]
     > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
+1. Let the experiment run for a few days/weeks depending on the recommendation from the third-party service.
+1. View experiment related data and analytics in the third-party service.
 
 ## Edit experiment variations
 To edit variations in Dynamics 365 Commerce:
