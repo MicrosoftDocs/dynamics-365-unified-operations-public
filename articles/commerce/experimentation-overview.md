@@ -62,7 +62,7 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 ## Create experiment variations
 The next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
 1. Go to the **Experiments** tab in site builder to view the list of experiments from the connector configured above. 
-1. Click **Connect** to open the "Connect experiment" wizard.
+1. Click **Connect** to open the *Connect experiment* wizard.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
     > [!NOTE]
     > Remember to enable the "Experimentation on pages or fragments" feature flag to allow experimentation on pages and fragments. Set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity.
@@ -101,7 +101,7 @@ After an experiment completes and has sufficient results to determine whether it
 1. Click **Complete** on the top bar once the experiment has run and gathered sufficient data.
 1. Use the analytics generated in the third-party service to pick the variation that performed the best and click **Next**.
 1. Stop the experiment in the third-party service.
-1. Click "Complete" to overwrite the default version of the page and publish the winning variation to all users of the website.
+1. Click **Complete** to overwrite the default version of the page and publish the winning variation to all users of the website.
 
 ## Publish experiment variations with Publish Groups
 Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. To do this:
@@ -113,11 +113,11 @@ Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-group
 > While adding a page to a publish group, any experiments running on it will be removed.
 
 ## Experiment status within Dynamics 365 Commerce
-The **Experiments** tab in site builder shows the following states in the "Commerce status" field to help you quickly see what state your experiment is in:
+The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
 1. Not Started - The experiment isn't connected to a page or fragment yet.
 1. Draft - The experiment is connected to a page or fragment.
 1. Published - The experiment is ready to go live once it is started in the third-party service.
 1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
 
-Similarly you can also use the "third-party status" field to understand the state of your experiment in the third-party service. 
+Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service. 
