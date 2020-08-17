@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use the Create Lease Workflow
-description: 
+description: This topic lists the steps for using workflows for approving asset leases, as well as for tracking the status and history of the workflow.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/17/2020
@@ -35,20 +35,20 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The workflow represents a business process that defines how the lease moves though the system by allowing the user to set designated approvers. By using the workflow feature, users will have a more consistent leasing operation since the leases will be processed and approved in an efficient manner, have process visibility because the user can track the status and history of the workflow, and have a centralized worklist where users can view the tasks and approvals that are assigned to them.
+This topic lists the steps for using workflows for approving asset leases, as well as for tracking the status and history of the workflow. Workflows help bring consistency to the management of lease approvals by providing a standard set of approval steps, and by designating specific users to approve each step of the process. Workflows can also bring greater visibility into the approval process by letting you track the status and history of the workflow, as well as viewing a centralized worklist where users can view the tasks and approvals that are assigned to them. An approver can approve a lease, reject a lease, request a change in the lease, or assign the lease to another user for approval.
 
-1.	Create a lease approval workflow, which is outlined in the setup lease workflow section. An approver can approve a lease, reject a lease, request a change in the lease, or assign the lease to another user for approval.
-2.	Submit a lease for approval by navigating to the desired lease's Book Details page and then clicking Workflow.
-3.	From the drop-down, select the Submit button.
-4.	Once the user hits Submit, it will bring up a window where the user can add a comment, which will appear along with the lease to the designated approver. After the desired comment is entered, select Submit. Upon submission, the approver will receive the lease to approve.
-5.	To view the leases that they are designated to approve, navigate to Modules > Common > Work items > Work items assigned to me.
-6.	To review the lease, select the Lease ID hyperlink. From there, the user will be taken to a page with accessibility to all lease books and lease details.
-7.	Once the lease has been reviewed, select Workflow and decide what action to take: Approve, Rejected, Request change, Delegate, Canceled, and View history.
-8.	Once the action has been selected, the user can submit a comment to accompany the action. After the comment is complete, click the bottom action, which is Approved in the example below.
-9.	The approval actions can be viewed by navigating back to the Lease details page from the Lease summary. Workflow > View history
-10.	From the Workflow history page, the user can see the workflow activities, which outlines what steps have been taken in the workflow on the specific lease. The user can also see the status of the work items assigned by viewing the Work items drop-down.
-11.	To stop a workflow, go to the Workflow history page and select Recall. Upon selection, a pop-up will appear. Insert a comment in the dialog box and click Ok.
-12.	To make a workflow inactive or to activate a previously created workflow, navigate to Asset leasing > Setup > Lease workflow.
-13.	Navigate to Workflow > Versions
-14.	To make a current workflow inactive, select the active lease from the lease version's pop-up and click Make inactive.
-15.	To make an existing workflow active, select the desired workflow and click Make active.
+1. Before using this proceddure, you should have created at least on lease approval workflow. If you haven't create one yet, see [Set up a lease workflow](set-up-lease-wrkflw.md) for information on setting up a workflow. 
+2. Submit a lease for approval by opening the **Book details** page for the lease to approve, and then clicking **Workflow**.
+3. From the drop-down, select the **Submit** button.
+4. When you click **Submit**, it will bring up a window where the user can add a comment, which will appear along with the lease to the designated approver. After entering a comment, select **Submit**. When you submit the lease to workflow, the approver will receive the lease to approve.
+5. To view the leases that they are designated to approve, open the **Work items assigned to me** page (**Modules > Common > Work items > Work items assigned to me**).
+6. To review the lease, select the **Lease ID** link. The page that's displayed will depend on which lease books and lease details you have access to.
+7. When you viewed the lease, select **Workflow** and decide what action to take. The options include **Approve**, **Rejected**, **Request change**, **Delegate**, and **Canceled**. You can also select **View history** to see approval histor for the selected lease.
+8. Once the action has been selected, the user can submit a comment to accompany the action. After the comment is complete, click the bottom action, which is Approved in the example below.
+9. The approval actions can be viewed by navigating back to You can see the approval actions on the **Lease details** page from the **Lease summary**, (**Workflow > View history**).
+10. From the **Workflow history** page, the user can see the workflow activities, which outlines what steps have been taken in the workflow on the specific lease. You can also see the status of the work items assigned by viewing the **Work items** drop-down list.
+11. To stop a workflow, go to the Workflow history page and select Recall. Upon selection, a pop-up will appear. Insert a comment in the dialog box and click Ok.
+12. To make a workflow inactive or to activate a previously created workflow, open the **Lease workflow** page (**Asset leasing > Setup > Lease workflow**).
+13. Open the **Versions** page (**Navigate to Workflow > Versions**).
+14. To make a current workflow inactive, select the active lease from the lease version's pop-up and click **Make inactive**.
+15. To make an existing workflow active, select the desired workflow and click **Make active**.
