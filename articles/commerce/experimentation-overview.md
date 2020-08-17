@@ -111,12 +111,10 @@ Experiment variations created within Dynamics 365 Commerce can be scheduled for 
 > [!NOTE]
 > While adding a page to a publish group, any experiments running on it will be removed.
 
-You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
-1. Update the content and/or connect experiments to the items within the publish group.
-
-- once an experiment is connected in livesite, its not available in publish groups and vice versa
-- can connect to experiments and publish entire publish group (cant publish experiments only)
-
+Some pointers to keep in mind:
+1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
+1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
+1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
 ## Experiment status within Dynamics 365 Commerce
 The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
