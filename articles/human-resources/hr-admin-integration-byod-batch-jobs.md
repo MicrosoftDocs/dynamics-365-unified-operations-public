@@ -5,7 +5,7 @@ title: Optimize BYOD scheduled batch jobs
 description: This topic explains best practices when setting up and scheduling BYOD batch jobs with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -28,58 +28,74 @@ ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# BYOD scheduling and performance
+# Optimize BYOD scheduled batch jobs
 
-## Data export/Performance considerations
+This topic explains how to optimize performance when you're using the bring your own database (BYOD) feature. For more information about BYOD, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
 
-After entities are published to the destination database, you can use the Export function in the Data management workspace to move data. The Export function lets you define a Data movement job that contains one or more entities.
+## Performance considerations for data export
 
-You can use the Export page to export data into many target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
+After entities are published to the destination database, you can use the Export function in the **Data management** workspace to move data. The Export function lets you define a Data movement job that contains one or more entities. For more information about exporting, see [Data import and export jobs overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+
+You can use the **Export** page to export data into different target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
  
-You can create a data project that has multiple entities. You can schedule this data project to run by using the batch framework. You also schedule the data export job to run on a periodic basis by selecting the Export in batch option.
+You can create a data project that has multiple entities and use a batch job to schedule this data project to run. If you select the **Export in batch** option, you can schedule the data export job to run periodically.
 
-Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
+To avoid compromising the overall reliability of the BYOD export, you must be careful when adding multiple entities to an export project. When determining the number of entities to add to the same project, consider the following parameters:
 
-## Scheduling 
+- Complexity of the entities
+- Expected data volume per entity
+- Overall time it will take for the export to complete at the job level
 
-BYOD batch jobs should run at night or after hours if possible. Be sure to check the time zone for these recurring batch jobs. Some batch jobs might use Pacific Standard Time (PST).
+For best performance, avoid adding hundreds of entities to a single project. Instead, create multiple jobs that each contain fewer entities.
 
-| Batch job | Recommended occurrence |
-| --- | --- |
-| BYOD Batch Jobs | Scheduling frequency of BYOD batch jobs should be configured based on the length of time each batch job takes to execute. The execution time, along with the business need for the data in BYOD will help to avoid any performance issues. Frequency of running these jobs should only be set to a value where the job can complete well before its next scheduled run time. Running multiple jobs in parallel is also not recommended as this may also cause performance issues. |
+## Scheduling BYOD batch jobs
 
-Use of recurring exports in Manage > Manage recurring data jobs for BYOD is discouraged. You must use the Export in batch option.
+To reduce the impact on Human Resources users, run BYOD batch jobs at night or after hours, if possible. Be sure to check the time zone for recurring batch jobs. Some batch jobs might use Pacific Standard Time (PST).
 
-### Incremental export
+To avoid performace issues, configure the scheduling frequency for BYOD batch jobs based on the following considerations:
 
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the Change tracking option in the database and specify an appropriate change tracking option, as described earlier in this topic.
+- The time each batch job takes to complete
+- The business need for the data in BYOD
 
-A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
+Set the frequency for each batch job to a value that ensures the job can complete well before its next scheduled run time. Avoid running multiple jobs in parallel, because it can negatively impact the performance of Human Resources.
 
-If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity.
+For best performance, always use the **Export in batch** option on the **Export** page to schedule BYOD batch jobs. Avoid scheduling recurring exports in **Manage > Manage recurring data jobs**.
 
-Because the first push is always a full push, we do not recommend that you do an explicit full push before you enable change tracking.
+## Incremental export
 
-We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
+When you add an entity for data export, you can choose to do either an incremental push (export) or a full push. A full push deletes all existing records from an entity in the BYOD database and then inserts the current set of records from the selected entity from Human Resources.
+
+By default, change tracking is turned on in Human Resources. However, you need to enable change tracking on each entity in the **Entities** form. For more information, see [Enable change tracking for entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+
+If you select an incremental push, the first push will always be a full push. SQL tracks subsequent changes. Whenever a new record is inserted, or a record is updated or deleted, the corresponding change will be reflected in the destination entity.
 
 ## Timeouts
 
-The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to Data management > Framework parameters > Bring your own database. These timeouts are company specific and must be set separately for each company.
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings might not be sufficient, so you must update them. Update the timeout settings in **Data management > Framework parameters > Bring your own database**. These timeouts are company-specific and must be set separately for each company.
 
 ## Known limitations
 
-The BYOD feature has the following limitations.
-There should be no active locks on your database during synchronization
-Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
+The BYOD feature has the following limitations:
 
-You can't export composite entities into your own database. Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
+- There should be no active locks on your database during synchronization.
 
-Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
+- Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
+
+- You can't export composite entities into your own database. Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both of the entities in the same data project.
+
+- Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
 
 ## Troubleshooting
 
-### Incremental push not working correctly
+### Incremental push doesn't work correctly
 
-Issue - When a full push occurs for some entity then a large set of records can be seen in BYOD using a select statement. However, an incremental push results in only a few records in BYOD. It seems as if the incremental push deleted all the records and added only the changed records in BYOD.
+**Issue**: When a full push occurs for an entity, you can see a large set of records in BYOD when using a select statement. However, an incremental push results in only a few records in BYOD. It seems like the incremental push deleted all the records and added only the changed records in BYOD.
 
-Solution - In cases like this it is recommended to disable and re-enable change tracking for the entity in question. The state of the SQL change tracking tables might not be in the expected state. 
+**Solution**: The SQL change tracking tables might not be in the expected state. In cases like this, it is recommended to disable and re-enable change tracking for the entity.
+
+## See also
+
+[Data management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
+[Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
+[Data import and export jobs overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
+[Enable change tracking for entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
