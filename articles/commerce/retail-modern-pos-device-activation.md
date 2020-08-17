@@ -280,7 +280,7 @@ The device should now be activated and ready to use.
 
 - If you're using a downloaded virtual hard disk (VHD) instead of a cloud-hosted environment, the downloader might fail.
 
-    - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
+    - **Solution 1:** In a downloaded VHD, the Azure Storage Emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
         1. In File Explorer, browse to **C:\\Microsoft Dynamics 365\\70\\Retail Server**.
