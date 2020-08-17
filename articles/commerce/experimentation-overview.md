@@ -62,7 +62,7 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 ## Create experiment variations
 The next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
 1. Go to the **Experiments** tab in site builder to view the list of experiments from the connector configured above. 
-1. Click **Connect** to open the *Connect experiment* wizard.
+1. Click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
     > [!NOTE]
     > Remember to enable the "Experimentation on pages or fragments" feature flag to allow experimentation on pages and fragments. Set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity.
@@ -71,8 +71,6 @@ The next step is to associate the experiment with the corresponding experiences 
 1. Click on **Publish** to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
     > [!NOTE]
     > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
-    
-<<Can also do this from the "Pages" or "Fragments" tab>>
 
 ## Start the experiment to gather results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
