@@ -125,19 +125,21 @@ You can create a rule to suspend leave accruals for employees with leave request
 
 ## In preview
 
+### Mandatory fields
+
 You can make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**. For more information about saved views, see:
 
 - [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) in the Dynamics 365 2020 release wave 2 plan
 - [Build forms that fully utilize saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
 
-## Human Resources application in Teams
+### Human Resources application in Teams
 
 Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
 
 - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
 - [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
-## DMF entity available for accrual suspensions
+### DMF entity available for accrual suspensions
 
 A DMF entity is now available for accrual suspensions.
 
@@ -149,11 +151,11 @@ Checklist entities for Onboarding, Offboarding, Transfers, and Business processe
 
 ## Known issues
 
-The feature management workspace may be displaying features that are disabled as preview features when they are generally available. Below is a list of Generally available features that show an incorrect status. 
+The **Feature management** workspace may be displaying features that are disabled as preview features when they are generally available. Below is a list of generally available features that show an incorrect status. 
 
 1.	Benefits management
 2.	Case management
-3.	Database Logging (Auditing)
+3.	Database logging (Auditing)
 4.	Leave accrual for a single company or a single plan
 5.	Leave and absence accrual suspension
 6.	Balance adjustment reason code and comment
@@ -164,12 +166,11 @@ The feature management workspace may be displaying features that are disabled as
 11.	Leave accrual deletion
 12.	Leave accrual rounding
 13.	Configure multiple leave types on a single leave plan
-14.	Update time off enhancements
+14.	Update time-off enhancements
 15.	Use an employee's FTE for accruals
 16.	Cross company compensation view
 17.	Print performance reviews
 18.	Leave accrual holiday corrections
-
 
 ## See also
 
