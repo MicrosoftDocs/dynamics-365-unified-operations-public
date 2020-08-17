@@ -70,7 +70,7 @@ The following illustration shows an example of two Payment modules one configure
 ![Example of  Adyen payment and Paypal modules on a checkout page](./media/ecommerce-paypal.PNG)
 
 The following illustration shows an example of the Paypal iframe which is invoked via the Paypal button. Once a user chooses Paypal, the remaining balance on the order will be charged via Paypal
-![Example of  Paypal ifram on a checkout page](./media/ecommerce-paypal.PNG)
+![Example of  Paypal ifram on a checkout page](./media/ecommerce-paypal-iftrame.PNG)
 
 
 
@@ -82,8 +82,12 @@ The following illustration shows an example of the Paypal iframe which is invoke
 | Height of the iframe | Pixels | The iframe height, in pixels. The height can be adjusted as required. |
 | Show billing address | **True** or **False** | If this property is set to **True**, the billing address will be served by Adyen inside the payment module iframe. If it's set to **False**, the billing address won't be served by Adyen, and a Commerce user will have to configure a module to show the billing address on the checkout page. For Paypal payment connector, this field has no impact as billing address is fully handled within Paypal |
 | Payment style override | Cascading Style Sheets (CSS) code | Because the payment module is hosted in an iframe, there is limited styling capability. You can achieve some styling by using this property. To override site styles, you must paste the CSS code as the value of this property. Site builder CSS overrides and styles don't apply to this module. |
-|Supported tender types| string| If multiple payment connectors are configured, you should provide the Supported tender type string as defined in Commerce HQ payment connector configuration. If blank, it defaults to the Adyen Payment connector. Added in 10.0.14.|
+|Supported tender types| string| If multiple payment connectors are configured, you should provide the Supported tender type string as defined in Commerce HQ payment connector configuration. If blank, it defaults to the Adyen Payment connector. Added in 10.0.14. See attached image below.|
 |Is primary payment|  **True** or **False** | If true, error messages will be surfaced from the primary connector on the checkout page. If both Adyen and Paypal connector are configured, set Adyen to true. Added in 10.0.14.|
+
+The following shows an image of **Supported tender types** as configured as part of the payment configuration in HQ.
+![Example of Supported tender types](./media/ecommerce-paymenttendertypes.png)
+
 
 ## Billing address
 
