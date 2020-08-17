@@ -35,11 +35,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-You can create monthly lease invoices individually, or for multiple leases using a batch process. The following procedure lists the steps to create an individual lease payment entry when the Pay to Vendor parameter on the lease book is enabled.
+You can create monthly lease invoices individually, or for multiple leases using a batch process. The following procedure lists the steps to create an individual lease payment entry when the **Pay to Vendor** parameter on the lease book is enabled.
 
 1. Select a lease in the main lease summary list and click (**Books > Payment schedule**).
 
-2. Select payment to be made and click on Create invoice. The user will receive an infolog showing an invoice was created against the selected payment.
+2. Select payment to be made and click on Create journal. The user will receive an infolog showing a journal was created against the selected payment.
 
 3. Click **Invoice journals** and select the invoice to be paid. Open the **Lines** tab to review the journal entry before posting to the general ledger.
 
@@ -49,7 +49,7 @@ You can create monthly lease invoices individually, or for multiple leases using
 4. Click the correct journal and select the invoice to be paid. For this example, the **Pay to Vendor** parameter is turned on, so the invoice will be in the invoice journal. A summary of the journal entry is seen in the Overview section, while details on the actual journal lines can be seen in the Lines section below.
 
  > [!Note]
- > If the **Pay to Vendor** parameter is disabled on the **Lease book setup** page, payment journal entries will be listed on the **General journals** page for the lease book and the system will create a general journal entry instead of an invoice. The lease payment entry will post to the journal name that's listed in the **Monthly lease journal** field.
+ > If the **Pay to Vendor** parameter is disabled on the **Lease book setup** page, payment journal entries will be listed on the **Asset leasing** page for the lease book and the system will create a asset leasing entry instead of an invoice. The lease payment entry will post to the journal name that's listed in the **Monthly lease journal** field.
 
 5. When the transaction is posted, you can view the transaction information, and the carrying value of the lease liability, by clicking **Liability transactions** on the lease book.
 
