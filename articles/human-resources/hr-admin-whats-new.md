@@ -38,7 +38,7 @@ Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resou
 >To account for holidays, the release schedule for November and December 2020 is as follows:<br><br>
 >- November 11<br>
 >- December 9<br><br>
->The two-week release cadence will resume as usual on January 6, 2021.<b>
+>The two-week release cadence will resume as usual on January 6, 2021.<br>
 
 For more information about upcoming features or the update process for Human Resources, see the following articles:
 
