@@ -77,9 +77,8 @@ The statutory reversal book will be setup identically to the statutory book.
 |------------------------------------------------	|---------------------------------------	|
 |     Book type                                  	|     Statutory - Reversal              	|
 |     Book description                           	|     Book to reverse statutory book    	|
-|     Posting Layer                              	|     Custom layer                      	|
-|     Lease Type                                 	|     None                              	|
-|     Automatic                                  	|     Yes                               	|
+|     Posting Layer                              	|     Custom layer 1                     	|
+|     Lease Type                                 	|     Automatic                          	|
 |     Accounting Framework                       	|     Cash basis                        	|
 |     Lease Term / Useful life Set Up            	|     0.00                              	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00                              	|
@@ -111,7 +110,7 @@ The entries for the Payment schedule lines are as follows.
 |     Payment frequency    	|     Monthly       	|
 |     Payment amount       	|     1,000         	|
 
-In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
+In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer 1. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
 
 *There seems to be a table here, but I'm not sure what the columns and rows are intended to be.*
 
