@@ -46,8 +46,8 @@ We recommend that you have 8 gigabytes (GB) or more of RAM and at least 20 GB of
 
 The online extensibility development environment can preview customizations in any of the following web browsers:
 
+* Apple Safari (up to the current version minus 1)
 * Google Chrome (up to the current version minus 1)
-* Internet Explorer 11
 * Mozilla Firefox (up to the current version minus 1)
 * Microsoft Edge (up to the current version minus 1)
 
