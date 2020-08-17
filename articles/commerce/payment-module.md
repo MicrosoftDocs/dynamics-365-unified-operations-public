@@ -40,17 +40,17 @@ This topic covers the payment module and explains how to configure it in Microso
 
 The payment module lets customers pay for orders by using credit or debit cards. Payment integration for this module is provided by the Dynamics 365 Payment Connector for Adyen. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).  
 
-In 10.0.14 this module is also integrated with the Paypal connector to provide payments via Paypal. or more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Paypal](tbd). 
+In 10.0.14 this module is also integrated with the Dynamics 365 Payment connector for Paypal to provide payments via Paypal. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Paypal](paypal.md). 
 
 ## Dynamics 365 Payment Connector for Adyen 
 
-The payment module hosts the payment information that is served via Adyen in an HTML inline frame (iframe). The payment module interacts with the Commerce Scale Unit to retrieve the Adyen payment information. As part of the Commerce Scale Unit interaction, the payment module can allow billing address information to be served either in the iframe or as a separate module. In the Fabrikam theme, the billing address is shown in a separate module. This approach allows for more formatting flexibility, because the address lines can be rendered so that they resemble the lines of the shipping address.
+The payment module hosts the payment information that is served via Adyen in an HTML inline frame (iframe). The payment module interacts with the Commerce Scale Unit to retrieve the Adyen payment information. As part of the Commerce Scale Unit interaction, the payment module can allow billing address information to be served either withiin the iframe via Adyen or as a separate module. In the Fabrikam theme, the billing address is enabled as a separate module. This approach allows for more formatting flexibility, because the address lines can be rendered so that they resemble the lines of the shipping address.
 
 The payment module also lets signed-in customers save their payment information. The payment information and billing address are saved and managed via the Adyen payment connector.
 
 The payment module covers any order charges that aren't already covered by loyalty points or a gift card. If the total for an order is fully covered by loyalty points or gift card credits, the payment module will be hidden, and the customer will be able to place the order without it.
 
-The Adyen payment connector also supports strong customer authentication (SCA). Part of the European Union (EU) Payment Services Directive 2.0 (PSD2.0) requires that online shoppers be authenticated outside their online shopping experience when they use an electronic payment method. During the checkout flow,  customers are redirected to their banking site. Then, after authentication, they are redirected back to the Commerce checkout flow. During this redirection, the information that a customer entered in the checkout flow (for example, the shipping address, delivery options, gift card information, and loyalty information) will persist. Before you can turn on this feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md).
+The Adyen payment connector also supports strong customer authentication (SCA). Part of the European Union (EU) Payment Services Directive 2.0 (PSD2.0) requires that online shoppers be authenticated outside their online shopping experience when they use an electronic payment method. During the checkout flow,  customers are redirected to their banking site. Then, after authentication, they are redirected back to the Commerce checkout flow. During this redirection, the information that a customer entered in the checkout flow (for example, the shipping address, delivery options, gift card information, and loyalty information) will persist. Before you can turn on this feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md). This feature was enabled in 10.0.12 release.
 
 The following illustration shows an example of gift card, loyalty, and Adyen payment modules on a checkout page.
 
@@ -58,16 +58,21 @@ The following illustration shows an example of gift card, loyalty, and Adyen pay
 
 ## Dynamics 365 Payment Connector for Paypal
 
-In 10.0.14, payment module is integrated with the Dynamics 365 Payment Connector for Paypal. For more information about how to setup and configure this payment connector see  [Dynamics 365 Payment Connector for Paypal](tbd)
+In 10.0.14, payment module is integrated with the Dynamics 365 Payment Connector for Paypal. For more information about how to setup and configure this payment connector see  [Dynamics 365 Payment Connector for Paypal](paypal.md)
  
-On the checkout page, you can have both Adyen and the Paypal connector configured. The module has been enhanced with additional properties to help identify which connector it should work with. See module properties **Supported tender types** and **Is primary payment** for more details.
+On the checkout page, you can have both Adyen and the Paypal connector configured. The payment module has been enhanced with additional properties to help identify which connector it should work with. See module properties **Supported tender types** and **Is primary payment** for more details.
   
 When the module is configured with Paypal connector, a Paypal button  appears on the checkout page. When invoked by the site user it renders an iframe with Paypal information. The site user can login and provide their paypal information within this iframe to complete thier transaction.
 
 The paypal connector does not require a billing address module as all billing related infromation is handled by Paypal within its iframe. SHipping and shipping options are required though.
 
-The following illustration shows an example of gift card, loyalty, Adyen payment and Paypal on a checkout page.
-![Example of gift card, loyalty, Adyen payment and Paypal modules on a checkout page](./media/ecommerce-paypal.PNG)
+The following illustration shows an example of two Payment modules one configured with Adyen and the other with Paypal on a checkout page.
+![Example of  Adyen payment and Paypal modules on a checkout page](./media/ecommerce-paypal.PNG)
+
+The following illustration shows an example of the Paypal iframe which is invoked via the Paypal button. Once a user chooses Paypal, the remaining balance on the order will be charged via Paypal
+![Example of  Paypal ifram on a checkout page](./media/ecommerce-paypal.PNG)
+
+
 
 ## Payment module properties
 
@@ -111,5 +116,7 @@ If both Adyen and Paypal connector are needed, add both modules to the payment s
 [Gift card module](add-giftcard.md)
 
 [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md)
+
+[Dynamics 365 Payment Connector for Paypal](paypal.md)
 
 [Strong Customer Authentication using Adyen](adyen_redirect.md)
