@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Attribute-based sales prices for the product configurator
-description: This topic describes how to use attribute-based sales prices in the Product configurator, which allows you to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route.
-author: XXXX
+title: Attribute-based sales prices for constraint-based product configuration
+description: This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. 
+author: sorenva 
 manager: tfehr
 ms.date: 08/17/2020
 ms.topic: article
@@ -27,9 +27,9 @@ ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# Attribute-based sales prices for the product configurator
-<!-- KFM: Do we still use the term "product configurator"? -->
-This topic describes how to use attribute-based sales prices in the product configurator, which allows you to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
+# Attribute-based sales prices for constraint-based product configuration
+
+This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
 
 ## Define your default currency
 <!-- KFM: Retitle and re-target to also mention the "attach price model" option ? -->
@@ -41,7 +41,7 @@ To set your default currency:
 1. Open the **Constraint-Based product configuration models** tab.
 1. Open the **Default currency** drop-down list and select your currency.
 
-    ![Set the default currency for the configurator](media/prod-config-currency.png "Set the default currency for the configurator")
+    ![Set the default currency for constraint-based product configuration](media/prod-config-currency.png "Set the default currency for constraint-based product configuration")
 
 ## <a name="build-price-model"></a>Build your sales price models
 <!-- KFM: Can we give one or two sentences that describe what a sales price model is and how we are going to use it? Mention how it relates to product configuration models. -->
@@ -85,7 +85,7 @@ To add explicit prices in an additional currency:
     > The **Condition** field for the expression rules is "owned" by the default currency, which means that you can't modify the condition for other currencies. You also can't add new expression rules while a currency other than the default currency is selected as the **Current currency**.
 1. Edit values in the **Expression** column as needed for the current currency.
 
-In the example below,_EUR_ is the default currency, and _USD_ has been added as an additional currency.
+In the example below, _EUR_ is the default currency, and _USD_ has been added as an additional currency.
 
 ![Example of a model with multiple currencies](media/prod-config-rules-currency-example.png "Example of a model with multiple currencies")
 
@@ -95,6 +95,7 @@ In the example below,_EUR_ is the default currency, and _USD_ has been added as 
 ## Test your price model
 
 To test how the sales prices behave in a configuration session, open the edit page for your price model, as described in [Build your sales price models](#build-price-model) and then select  **Test** on the Action Pane. The **Test product model** dialog box opens, where you can do the following:
+
 - Use the configuration settings offered here to select product options and then see how they affect the value shown for **Price and ship date**.
 - Select **View price breakdown** to download a Microsoft Excel document that shows full details about how the price was calculated.
 
@@ -133,7 +134,7 @@ To set up selection criteria for price models:
 
 ## Set attribute-based sales prices for the product model version
 
-The final step is to specify attribute-based sales prices for the product model version. To do this:
+The final step is to specify attribute-based sales prices for the product model version. <!-- KFM: Can we add a couple of sentences that mention what we are doing here and why? --> To do this:
 
 1. Go to  **Product information management \> Products \> Product configuration models**.
 1. Select the target product configuration model.
