@@ -35,10 +35,10 @@ ms.dyn365.ops.version: Human Resources
 Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
 >[!NOTE]
->To account for holidays, the release schedule for November and December 2020 is as follows:<br><br>
->- November 11<br>
->- December 9<br><br>
->
+>To account for holidays, the release schedule for November and December 2020 is as follows:<br>
+>- November 11
+>- December 9
+> 
 >The two-week release cadence will resume as usual on January 6, 2021.<br>
 
 For more information about upcoming features or the update process for Human Resources, see the following articles:
