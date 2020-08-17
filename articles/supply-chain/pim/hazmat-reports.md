@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hazardous materials inquiries and reports
-description: This topic describes how to work with the various reports related to hazardous materials. Many of these reports are required to remain compliant with various hazardous material regulations during shipping and storage.
+description: This topic explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
 author: dasani-madipalli
 manager: tfehr
 ms.date: 06/10/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  HMIMStockListLimits, HMIMShipperDeclaration, HMIMCarrOfMerchByRoad, HMIMMultimodalDGItem, HMIMCarrOfMerchByRoadItem
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -31,90 +31,86 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Management provides a variety of reports related to hazardous materials. Many of these are required to remain compliant with various hazardous material regulations during shipping and storage.
+Microsoft Dynamics 365 Supply Chain Management provides various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
 
-These reports, with the exception of the multi-model dangerous goods report, use the delivery method defined on the shipment to locate the regulation to use for printing the item shipping text. The mode of delivery is associated with the shipping carrier and the carrier service. You must set up a shipping carrier and service and link that to a mode of delivery. The mode of delivery is related to the hazardous materials regulation.
+All these reports, except the **Multimodal dangerous goods** report, use the mode of delivery that is defined for the shipment to find the regulation that should be used to print the shipping text for items. The mode of delivery is associated with the shipping carrier and the carrier service. Therefore, you must set up a shipping carrier and carrier service, and link them to a mode of delivery. The mode of delivery is related to the hazardous materials regulation.
 
-The following diagram shows the sequence of activities that occur when the system generates hazardous material reports.
+The following illustration shows the sequence of activities that occur when the system generates hazardous materials reports.
 
-![Hazardous material reports sequence](media/hazmat-report-sequence.png "Hazardous material reports sequence")
+![Sequence of activities for hazardous materials reports](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
 
-## Set up hazardous materials reporting
+## <a name="set-up"></a>Set up hazardous materials reporting
 
-If you are shipping items with hazardous material, then you will usually need to generate specific reports to preserve safety and comply with hazardous materials regulations. To set up your reports:
+Usually, if you ship items that contain hazardous materials, you must generate specific reports to help preserve safety and comply with hazardous materials regulations. To set up your reports, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-2. Open the **Reports** tab.
-3. Expand the **Hazardous materials report parameter** FastTab
-4. Make the settings described in the following table.
+2. On the **Reports** tab, on the **Hazardous materials report parameter** FastTab, set the following fields.
 
-| Group | Setting | Description |
-| --- | --- | --- |
-| **Multimodal&nbsp;Dangerous Goods** | **Regulation&nbsp;code** | Choose the regulation to be used when generating a multimodal dangerous goods report. |
-| **Hazardous Material stock limits** | **Regulation code** | Choose the regulation to be used when evaluating stock limits. |
-| **Carriage of merchandise by road** | **CMR group product** | CMR stands for carcinogenic, mutagenic, and reprotoxic substances. Set this to **Yes** to configure the system to print specific warnings and messages related to the handling of these substances. |
-| **Carriage of merchandise by road** | **Hazardous material group description** | Enter text with specific warnings related to CMR and carriage of merchandise by road. This text will be included in the report. |
-| **Shippers declaration** | **Warning** | Enter text with a warning message to be printed on the shipper's declaration form (for example, "Warning: Dangerous Goods, Flammable"). |
-| **Shippers declaration** | **Footer declaration** | Enter text to provide a specific message at the bottom of the shipment declaration document. |
-| **Hazardous goods report language** | **Hazardous goods domestic report language** | Select the default language to be used for hazardous material reports associated with domestic shipments. |
-| **Hazardous goods report language** | **Hazardous goods export report language** | Select the default language to be used for hazardous material reports associated with international shipments. |
+    | Section | Field | Description |
+    |---|---|---|
+    | Multimodal Dangerous Goods | Regulation code | Select the regulation that should be used when a **Multimodal dangerous goods** report is generated. |
+    | Hazardous Material stock limits | Regulation code | Select the regulation that should be used when stock limits are evaluated. |
+    | Carriage of merchandise by road | CMR group product | CMR stands for "carcinogenic, mutagenic, and reprotoxic substances." Set this option to **Yes** to configure the system to print specific warnings and messages that are related to the handling of these substances. |
+    | Carriage of merchandise by road | Hazardous material group description | Enter the text of specific warnings that are related to CMR and carriage of merchandise by road. This text will be included on the report. |
+    | Shippers declaration | Warning | Enter the text of a warning message that should be printed on the shipper's declaration form (for example, "Warning: Dangerous Goods, Flammable"). |
+    | Shippers declaration | Footer declaration | Enter the text of a message that should be printed at the bottom of the shipment declaration document. |
+    | Hazardous goods report language | Hazardous goods domestic report language | Select the default language for hazardous materials reports that are associated with domestic shipments. |
+    | Hazardous goods report language | Hazardous goods export report language | Select the default language for hazardous materials reports that are associated with international shipments. |
 
 ## Hazardous materials report
 
-The **Hazardous materials** report shows a list of all items that have been set up and defined with dangerous goods information. Use it to monitor and review the information you need to maintain. It shows a limited selection of fields from the hazardous material setup. You can personalize the page to add additional fields as required.
+The **Hazardous materials** report shows a list of all items that have been set up and defined so that they have dangerous goods information. You can use this report to monitor and review the information that you must maintain. The page for the report shows a limited selection of fields from the hazardous material setup. However, you can personalize it to add additional fields as you require.
 
-To view this information, go to **Product information management \> Inquiries and reports \> Hazardous material shipping documentation \> Hazardous materials**.
+To view this report, go to **Product information management \> Inquiries and reports \> Hazardous material shipping documentation \> Hazardous materials**.
 
-<a name="stock-limit-report"></a>
+## <a name="stock-limit-report"></a>Hazardous material stock limit report
 
-## Hazardous material stock limit report
+The **Hazardous material stock limit** report lets you monitor the stock levels of the hazardous materials in your warehouse locations, to make sure that they remain under established, safe limits. These limits come from the limits that are defined for each released product.
 
-The **Hazardous material stock limit report** page lets you monitor the stock levels of the hazardous materials in your warehouse locations to make sure they remain under established, safe limits. The limits shown here come from those defined for each released product.
+To view this report, go to **Product information management \> Inquiries and reports \> Hazardous shipping documentation \> Hazardous material stock limits**.
 
-To view the report, go to **Product information management \> Inquiries and reports \> Hazardous shipping documentation \> Hazardous material stock limits**.
+For more information about how to set stock limits on a released product, see [Set stock limits for hazardous products](hazmat-items.md#stock-limits).
 
-For more information about how to set stock limits on each released product, see [Set stock limits for hazardous products](hazmat-items.md#stock-limits).
-
-The regulation used for stock limits is defined on the **Warehouse management \> Setup \> Warehouse management parameters** page. Open the **Reports** tab and set a **Regulation code** for the **Hazardous materials stock limit** parameter. See also Set up hazardous materials reporting.
+The regulation that is used for stock limits is defined on the **Warehouse management parameters** page. Go to **Warehouse management \> Setup \> Warehouse management parameters**, and then, on the **Reports** tab, in the **Hazardous materials stock limit**, specify a regulation code. For more information, see the [Set up hazardous materials reporting](#set-up) section earlier in this topic.
 
 ## Verified gross mass report
 
-This report lets you print information about the weight of a shipment.
+The **Verified gross mass** report lets you print information about the weight of a shipment.
 
-To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Verified gross mass**.
+To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Verified gross mass**.
 
 ## Multimodal dangerous goods report
 
-This report is provided for shipments to be moved using a combination of transport methods. It is typically used when a shipment is first moved by road and then later by sea.
+The **Multimodal dangerous goods** report is provided for shipments that must be moved by using a combination of transport methods. It's typically used when a shipment is moved first by road and later by sea.
 
-To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Multi model dangerous goods**.
+To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Multi model dangerous goods**.
 
-When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Multimodal dangerous goods** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
+When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Multimodal dangerous goods**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
 
 ## Shippers declaration report
 
-This report lets print information related to a declaration of what materials are included in the shipment.
+The **Shippers declaration** report lets you print information that is related to a declaration of the materials that are included in the shipment.
 
-To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Shippers declaration**.
+To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Shippers declaration**.
 
 ## Carriage of merchandise by road report
 
-This is similar to a bill of lading but is commonly used for road transportation in Europe under the ADR regulations. This report will pick up the shipping print text for an item unless you use the group description parameter found in warehouse management parameters.
+The **Carriage of merchandise by road** report resembles a bill of lading but is typically used for road transportation in Europe under the Agreement concerning the International Carriage of Dangerous Goods by Road (ADR) regulations. This report uses the shipping print text for an item unless you set the **Hazardous material group description** field on the **Warehouse management parameters** page.
 
-To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Carriage of merchandise by road**.
+To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Carriage of merchandise by road**.
 
-When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Carriage of merchandise by road** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
+When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Carriage of merchandise by road**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
 
 ## Shipment summary report
 
-This report provides a summary of the points on a shipment summarized by the transport category related to the released items.
+The **Shipment summary** report provides a summary of the points on a shipment. The information is summarized by the transport category that is related to the released items.
 
-To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Shipment summary**.
+To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Shipment summary**.
 
 ## Bill of landing report
 
-When the hazardous materials feature is enabled on your system, bill of landing reports include a **Hazardous materials** column, which indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
+When the hazardous materials feature is turned on in your system, the **Bill of landing** report includes a **Hazardous materials** column that indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
 
 ## Packing list report
 
-When the hazardous materials feature is enabled on your system, packing lists will include additional information related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
+When the hazardous materials feature is turned on in your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
