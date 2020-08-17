@@ -45,6 +45,6 @@ The first year of service will conclude in December 2020, which means the end of
 If you change the date that the last depreciation was run during the asset’s service life, the last year of depreciation will move out by the number of periods affected. For example, if the date that the depreciation calculation is run is moved out three months, the last year of service will have nine months of depreciation, rather than six. 
 For this example, the monthly and annual depreciation amounts are shown in the following illustration. 
 
-       [![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 The extended depreciation periods that are added by the half-year convention provide more accurate allocation of depreciation. The six-month convention represents depreciation expenses more equally for reporting on the profit and loss statement.  
