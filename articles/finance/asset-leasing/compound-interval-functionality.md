@@ -44,7 +44,7 @@ You can't select a compounding interval that is less frequent than the lease's p
 
 ## Setup for all four leases:
 
-The following tables list the values that are made in the **General** and **Payment schedule** tabs for the examples. 
+The following tables list the values that are made in the **General** and **Payment schedule lines** tabs for the examples. 
 
 ### General tab values
 
@@ -56,7 +56,7 @@ The following tables list the values that are made in the **General** and **Paym
 |     Payment frequency             	|     Monthly               	|
 |     Commencement date             	|     1/1/2020              	|
 
-### Payment schedule tab values
+### Payment schedule lines tab values
 
 |     Field                	|     Value                 	|
 |--------------------------	|---------------------------	|
@@ -109,6 +109,8 @@ The first 12 months of the Payment schedule are listed in the following table.
 |     4         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/4)^4 = 0              	|
 |     4         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/4)^4 = 47,576.21    	|
 
+  >Note: If the annutiy type change to **Annuity due** the payment will be at the beggning of the quarter instead of the end of the quarter.   
+
 #### Lease 3: Semiannual compounding interval with semiannual payment frequency
 
 In the present value formula, the rate is divided by 2 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every six months, or semiannually, because the compounding interval is semiannually.
@@ -130,6 +132,8 @@ The first 12 months of the Payment schedule are listed in the following table.
 |     2         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
 |     2         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/2)^2 = 47,590.72    	|
 
+>Note: If the annutiy type change to **Annuity due** the payment will be at Janyary and July instead of June and December.  
+
 #### Lease 4: Annual compounding interval with annual payment frequency
 
 In the present value formula, the rate is divided by 1 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every 12 months, or once a year, because the compounding interval is annually.
@@ -150,3 +154,5 @@ The first 12 months of the Payment schedule are listed in the following table.
 |     1         	|     10       	|     10/31/2020    	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
 |     1         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
 |     1         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/1)^1 = 47,619.05    	|
+
+>Note: If the annutiy type change to **Annuity due** the payment will be at Janyary instead of December.  
