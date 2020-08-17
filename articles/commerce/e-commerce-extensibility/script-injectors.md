@@ -36,21 +36,17 @@ This topic covers script injectors that can be used to add scripts to online pag
 
 ## Overview
 
-The Dynamics 365 Commerce online starter kit provides several prebuilt script injector modules including an "External script" and "Inline script" module. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page, as you require. For example, you can add a script for integration with third-party analytics, or other service scripts.
+The Dynamics 365 Commerce online starter kit provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page, as you require. For example, you can add a script for integration with third-party analytics, or other service scripts.
 
+## External script module
+The external script module allows you to add Javascript from external sources by providing a URL pointing to a valid Javascript file.  Once the module is added using the site builder tool the script URL can be added to the **Script source** configuration property.
 
-## External and Inline script modules
-The online SDK provides two modules to aid in adding script to a rendered page, the **external script** and **inline script** modules.
-
-### External script module
-External Javascript files can be referenced on a page using the external script module.  Once the module is added using the site builder tool the scriprt link can be added to the **Script source** configuration property.
-
-The following illustration shows a script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
+The following illustration shows an external script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
 
 ![External script injector in the authoring tools](media/script-injector.png)
 
 ### Inline script module
-Inline Javascript code can be added to a page template or page using the inline script module.  Once the module is added using the site builder tool, the script can be pasted into the **Inline script** configuration property on the module.
+Inline Javascript code can be added to a page template or page using the inline script module.  Once the module is added using the site builder tool, the script can be pasted into the **Inline script** configuration property on the module. Note when adding script you do not need to add the outer **script** tag.
 
 The inline script module includes configuration properties **execute script asynchronously** and a **defer script execution** property which will run the script when the page has finished parsing configuration properies.
 
