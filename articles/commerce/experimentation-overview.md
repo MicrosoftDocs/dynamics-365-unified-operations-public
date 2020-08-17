@@ -40,6 +40,15 @@ Use experimentation to measure the impact of new changes or ideas and avoid maki
 The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
+## Planning considerations
+There are some things to consider before starting with the experiment lifecycle.
+
+### Decide what you want to experiment on
+Full or partial
+
+### Decide how you want to publish your experiment
+If you want to schedule your experiment to be published in a publish group or directly publish to Live site
+
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
 1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
@@ -114,7 +123,7 @@ Some pointers to keep in mind:
 1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
 1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
-## Experiment status within Dynamics 365 Commerce
+## Check the status of an experiment
 The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
 1. Not Started - The experiment isn't connected to a page or fragment yet.
 1. Draft - The experiment is connected to a page or fragment.
