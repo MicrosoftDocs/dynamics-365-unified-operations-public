@@ -169,6 +169,23 @@ When the statement is issued to the vendor, you'll follow the normal payment pro
 At this point, you will have fully accounted for this lease under statutory reporting requirements and will be able to generate a trial balance using the current layer. The system will return a trial balance with the following figures:
 
    *There seemed to be a table at this location in the Word document, but I'm not sure what the columns and rows are intended to be. Something didn't come across the right way.*
+   
+|            |                          | Statutory Book | Statutory Book | Statutory Book |                         |
+|            |                          | Current Layer  | Current Layer  | Current Layer  |                         |
+|            |                          | JE\-100        | JE\-110        | JE\-120        |                         |
+| Account No | Description              | Dr \(Cr\)      | Dr \(Cr\)      | Dr \(Cr\)      | Current Layer \- Totals |
+|------------|--------------------------|----------------|----------------|----------------|-------------------------|
+| 1          | Lease expense            | 1,000\.00      |                |                | 1,000\.00               |
+| 2          | Bank fee                 |                | 3\.00          |                | 3\.00                   |
+| 3          | VAT expense              |                | 5\.00          |                | 5\.00                   |
+| 4          | Clearing account         | \-1,000\.00    | 1,000\.00      |                | 0\.00                   |
+| 5          | Accounts payable         |                | \-1,008\.00    | 1,008\.00      | 0\.00                   |
+| 6          | ROU asset                |                |                |                | 0\.00                   |
+| 7          | Finance lease obligation |                |                |                | 0\.00                   |
+| 8          | Interest expense         |                |                |                | 0\.00                   |
+| 9          | Cash                     |                |                | \-1,008\.00    | \-1,008\.00             |
+| 10         | Depreciation expense     |                |                |                | 0\.00                   |
+| 11         | Accumulated depreciation |                |                |                | 0\.00                   |   
 
 To run the same trial balance but with the IFRS 16 figures, we first need to reverse the statutory accounting journal entries, and then book the IFRS 16 journal entries. To reverse the statutory journal entries, this example includes a "reversal" book with the same as the *statutory* book but has an opposite posting profile. For example, the statutory book will have debited a lease expense account, but the "reversal" book will be crediting this account. These relationships are easily defined in the Asset lease posting accounts (**Asset leasing > Setup > Asset leasing parameters**).
 
