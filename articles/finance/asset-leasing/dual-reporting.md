@@ -112,7 +112,25 @@ The entries for the Payment schedule lines are as follows.
 
 In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer 1. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
 
-*There seems to be a table here, but I'm not sure what the columns and rows are intended to be.*
+
+|            |                          | Statutory Book | Statutory Book | Statutory Book |                         |   | Reversal Book | IFRS 16 Book | IFRS 16 Book | IFRS 16 Book | IFRS 16 Book |                                         |
+|            |                          | Current Layer  | Current Layer  | Current Layer  |                         |   | Custom layer  | Custom layer | Custom layer | Custom layer | Custom layer |                                         |
+|            |                          | JE\-100        | JE\-110        | JE\-120        |                         |   | JE\-130       | JE\-140      | JE\-150      | JE\-160      | JE\-170      |                                         |
+| Account No | Description              | Dr \(Cr\)      | Dr \(Cr\)      | Dr \(Cr\)      | Current Layer \- Totals |   | Dr \(Cr\)     | Dr \(Cr\)    | Dr \(Cr\)    | Dr \(Cr\)    | Dr \(Cr\)    | Custom Layer \+ Current Layer \- Totals |
+|------------|--------------------------|----------------|----------------|----------------|-------------------------|---|---------------|--------------|--------------|--------------|--------------|-----------------------------------------|
+| 1          | Lease expense            | 1,000\.00      |                |                | 1,000\.00               |   | \-1,000       |              |              |              |              | 0\.00                                   |
+| 2          | Bank fee                 |                | 3\.00          |                | 3\.00                   |   |               |              |              |              |              | 3\.00                                   |
+| 3          | VAT expense              |                | 5\.00          |                | 5\.00                   |   |               |              |              |              |              | 5\.00                                   |
+| 4          | Clearing account         | \-1,000\.00    | 1,000\.00      |                | 0\.00                   |   | 1,000         |              | \-1,000      |              |              | 0\.00                                   |
+| 5          | Accounts payable         |                | \-1,008\.00    | 1,008\.00      | 0\.00                   |   |               |              |              |              |              | 0\.00                                   |
+| 6          | ROU asset                |                |                |                | 0\.00                   |   |               | 22,794       |              |              |              | 22,793\.90                              |
+| 7          | Finance lease obligation |                |                |                | 0\.00                   |   |               | \-22,794     | 1,000        | \-94\.97     |              | \-21,888\.87                            |
+| 8          | Interest expense         |                |                |                | 0\.00                   |   |               |              |              | 94\.97       |              | 94\.97                                  |
+| 9          | Cash                     |                |                | \-1,008\.00    | \-1,008\.00             |   |               |              |              |              |              | \-1,008\.00                             |
+| 10         | Depreciation expense     |                |                |                | 0\.00                   |   |               |              |              |              | 949\.75      | 949\.75                                 |
+| 11         | Accumulated depreciation |                |                |                | 0\.00                   |   |               |              |              |              | \-949\.75    | \-949\.75                               |
+
+
 
 You will see that three books are required to report under both statutory reporting and IFRS. The statutory book will record the lease payment according to the rules for cash basis accouning under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will create the journal entries that are required under IFRS 16. You will need only to enter a lease once, and theh navigate to the **Books** page to see all the books associated with a lease. When you create the books, note that all three books must be associated with the same lease record.
 
