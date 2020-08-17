@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize BYOD scheduled batch jobs
-description: This topic explains best practices when setting up and scheduling BYOD batch jobs with Microsoft Dynamics 365 Human Resources.
+description: This topic explains how to optimize performance when you're using the bring your own database (BYOD) feature with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/17/2020
@@ -46,13 +46,13 @@ To avoid compromising the overall reliability of the BYOD export, you must be ca
 - Expected data volume per entity
 - Overall time it will take for the export to complete at the job level
 
-For best performance, avoid adding hundreds of entities to a single project. Instead, create multiple jobs that each contain fewer entities.
+For best performance, avoid adding hundreds of entities to a single project. We recommend creating multiple jobs that each contain fewer entities.
 
 ## Scheduling BYOD batch jobs
 
-To reduce the impact on Human Resources users, run BYOD batch jobs at night or after hours, if possible. Be sure to check the time zone for recurring batch jobs. Some batch jobs might use Pacific Standard Time (PST).
+To reduce the impact on Human Resources users, run BYOD batch jobs at night or after hours. Be sure to check the time zone for recurring batch jobs. Some batch jobs might use Pacific Standard Time (PST).
 
-To avoid performace issues, configure the scheduling frequency for BYOD batch jobs based on the following considerations:
+To avoid performance issues, configure the scheduling frequency for BYOD batch jobs based on the following considerations:
 
 - The time each batch job takes to complete
 - The business need for the data in BYOD
@@ -63,27 +63,30 @@ For best performance, always use the **Export in batch** option on the **Export*
 
 ## Incremental export
 
-When you add an entity for data export, you can choose to do either an incremental push (export) or a full push. A full push deletes all existing records from an entity in the BYOD database and then inserts the current set of records from the selected entity from Human Resources.
+When you add an entity for data export, you can do either an incremental push (export) or a full push. A full push deletes all existing records from an entity in the BYOD database. It then inserts the current set of records from the Human Resources entity.
 
-By default, change tracking is turned on in Human Resources. However, you need to enable change tracking on each entity in the **Entities** form. For more information, see [Enable change tracking for entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+You must enable change tracking on each entity in the **Entities** form to allow incremental export. For more information, see [Enable change tracking for entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
-If you select an incremental push, the first push will always be a full push. SQL tracks subsequent changes. Whenever a new record is inserted, or a record is updated or deleted, the corresponding change will be reflected in the destination entity.
+If you select an incremental push, the first push is always a full push. SQL tracks changes from this first full push. When a new record is inserted, or a record is updated or deleted, the change is reflected in the destination entity.
 
 ## Timeouts
 
-The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings might not be sufficient, so you must update them. Update the timeout settings in **Data management > Framework parameters > Bring your own database**. These timeouts are company-specific and must be set separately for each company.
+The default timeouts for BYOD exports are:
+
+- 10 minutes for truncation operations
+- One hour for bulk insert operations 
+
+When volumes are high, these timeout settings might not be sufficient. Update the timeout settings in **Data management > Framework parameters > Bring your own database**. These timeouts are company-specific and must be set separately for each company.
 
 ## Known limitations
 
 The BYOD feature has the following limitations:
 
-- There should be no active locks on your database during synchronization.
-
-- Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
+- There should be no active locks on your database during synchronization. Active locks can cause slow writes or even failure to export to your Azure SQL database.
 
 - You can't export composite entities into your own database. Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both of the entities in the same data project.
 
-- Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
+- Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key, which limits incremental push. One workaround is to extend the required entity and define a unique key.
 
 ## Troubleshooting
 
@@ -91,7 +94,7 @@ The BYOD feature has the following limitations:
 
 **Issue**: When a full push occurs for an entity, you can see a large set of records in BYOD when using a select statement. However, an incremental push results in only a few records in BYOD. It seems like the incremental push deleted all the records and added only the changed records in BYOD.
 
-**Solution**: The SQL change tracking tables might not be in the expected state. In cases like this, it is recommended to disable and re-enable change tracking for the entity.
+**Solution**: The SQL change tracking tables might not be in the expected state. In cases like this, we recommend disabling and re-enabling change tracking for the entity. For more information, see [Enable change tracking for entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
 ## See also
 
