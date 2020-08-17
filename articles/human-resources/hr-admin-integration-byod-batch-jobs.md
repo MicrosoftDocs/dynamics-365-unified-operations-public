@@ -86,7 +86,7 @@ The BYOD feature has the following limitations:
 
 - You can't export composite entities into your own database. Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both of the entities in the same data project.
 
-- Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key, which limits incremental push. One workaround is to extend the required entity and define a unique key.
+- Entities that don't have unique keys can't be exported by using incremental push. You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data, they don't have a unique key.
 
 ## Troubleshooting
 
