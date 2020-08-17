@@ -74,11 +74,11 @@ Before attempting to create customer orders in the Point of Sale (POS) applicati
 - **Default order type** - when creating customer orders in POS, you can configure the default order type as a sales order or a quotation order.  Regardless of the default type, users will still be able to create both sales orders and customer orders from POS.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed.  Depending on privileges, a store associate might be able to override the amount by using the **Deposit override** operation in POS if configured on the transaction screen layout.
 - **Pickup mode of delivery** - Specify which mode of delivery will be applied to sales order lines that have been configured for pickup in POS.  
-- **Carryout mode of delivery** - Specificy which mode of delivery will be applied to sales lines that are considered carryout order lines when creating a mixed cart where some lines will be picked up or shipped while other lines will be carried out by the customer immediately.
+- **Carryout mode of delivery** - Specify which mode of delivery will be applied to sales lines that are considered carryout order lines when creating a mixed cart where some lines will be picked up or shipped while other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge will be applied when a customer order is canceled, specify the amount of that charge.
-- **Cancellation charge code** – Specificy which accounts receivable Charge code will be used when applying the cancelation charge to a canceled customer order through POS. The charges code will define the financial posting logic for the cancelation charge.
-- **Shipping charge code** – Please note, if **Use advanced auto charges** is enabled, this parameter setting has no functionality. During creation of customer orders in POS, users will be prompted to enter a shipping charge manually if **Use advanced auto charges** is disabled.  Use this parameter to map an accounts receivable Charge code which will be applied to the order when shipping charges are entered by the user.  The charges code will define the financial posting logic for the shipping charge
--**Use advanced auto charges** - Enable this feature to utilize system calculated auto-charges when creating customer orders in POS.  These auto-charges can be used to calculated shipping fees or other order or item specific charges.   Refer to [this document](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-auto-charges) for more information on setting up and using advanced auto charges.
+- **Cancellation charge code** – Specify which accounts receivable Charge code will be used when applying the cancelation charge to a canceled customer order through POS. The charges code will define the financial posting logic for the cancelation charge.
+- **Shipping charge code** – Please note, if **Use advanced auto charges** is enabled, this parameter setting has no functionality. During creation of customer orders in POS, users will be prompted to enter a shipping charge manually if **Use advanced auto charges** is disabled.  Use this parameter to map an accounts receivable charge code which will be applied to the order when shipping charges are entered by the user.  The charges code defines the financial posting logic for the shipping charge
+- **Use advanced auto charges** - Enable this feature to utilize system calculated auto-charges when creating customer orders in POS.  These auto-charges can be used to calculated shipping fees or other order or item specific charges.   Refer to [this document](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-auto-charges) for more information on setting up and using advanced auto charges.
 
 ### Update transaction screen layouts in POS
 
@@ -127,7 +127,7 @@ Retail orders created in either the Online or Store channels can be recalled and
 In versions 10.0.13 or earlier, users are only able to edit supported customer orders in POS if the order is fully open.  If any lines of the order have already been processed to fulfillment (pick, pack, etc..), the order becomes locked for editing in POS.
 
 > [!NOTE]
->In version 10.0.14 a feature has been released in public preview that will allow for POS users to edit customer orders from POS even if some of the order has already been fulfilled.   Orders that are fully invoiced remain un-editable through POS.   To try out this preview feature and provide additional feedback, enable **(Preview) Edit partially fulfilled orders in Point of Sale** in feature management.  Please note that customer orders originated in a Call Center channel that uses enable order completion will continue to be un-editable even after this preview feature is enabled.
+>In version 10.0.14 a feature has been released in [public preview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) that will allow for POS users to edit customer orders from POS even if some of the order has already been fulfilled.   Orders that are fully invoiced remain un-editable through POS.   To try out this preview feature and provide additional feedback, enable **(Preview) Edit partially fulfilled orders in Point of Sale** in feature management.  Please note that customer orders originated in a Call Center channel that uses enable order completion will continue to be un-editable even after this preview feature is enabled.
 
 1. Select **Recall order** operation
 2. Use **Search** function to enter desired filters to locate the order and click **Apply**
@@ -147,12 +147,12 @@ In versions 10.0.13 or earlier, users are only able to edit supported customer o
 5. From the transaction cart, complete the cancelatoin process by choosing a payment operation.  If deposits were paid in excess of the cancelation charge, refund payments may be due.
 6. If desired, exit the cancelatoin process without saving any changes by using the **Void transaction** operation.
 
-## Finalzing the customer order shipment or pickup from POS
+## Finalizing the customer order shipment or pickup from POS
 Once the orders are created, depending on the configuration of the order, the items will either be picked up by a customer at a store location or shipped.  Refer to documentation on [store order fulfillment](https://docs.microsoft.com/en-us/dynamics365/commerce/order-fulfillment-overview) for more information on this process.
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created from the point of sale (POS) client in either synchronous mode or asynchronous mode.  If you are noting any performance issues or user delays when creating customer orders in POS, it is advised to consider enabling asychronous order creation. 
+Customer orders can be created from the point of sale (POS) client in either synchronous mode or asynchronous mode.  If you are noting any performance issues or user delays when creating customer orders in POS, it is advised to consider enabling asynchronous order creation. 
 
 ### Enable customer orders to be created in asynchronous mode
 
