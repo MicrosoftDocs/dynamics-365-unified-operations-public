@@ -58,6 +58,7 @@ The following table describes the settings available on the **Release control** 
 ## The Engineering change management tab
 
 <!-- KFM: Provide an intro that describes what this tab is for, in general. -->
+These parameters will affect the engineering change process.
 
 The following table describes the settings available on the **Engineering change management** tab of the **Project Oaktree parameters** page.
 
