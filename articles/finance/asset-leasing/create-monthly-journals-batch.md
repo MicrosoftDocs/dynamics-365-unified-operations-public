@@ -38,6 +38,8 @@ ms.dyn365.ops.version: 10.0.14
 This topic describes the process of creating journal entries in batch to increase efficiency when recording the monthly lease expense. Batch processing can be used to create journal entries from multiple schedules. These journal entries can include lease payments, liability amortization, right-of-use asset amortization, and executory cost expenses. You can also use batch processing to initially recognize multiple leases at once, or to perform transition adjustments for multiple leases at once.
 
 To setup a batch job or to process payment invoices, depreciation, or interest for multiple leases, open the **Batch journal creation** page (**Asset leasing > Periodic > Batch journal creation**).	A parameters dialog will appear where you can select the schedule that the journal entries will be created from, as well as whether to run the batch process for certain entities, lease groups, or individual lease books.
+> [!Note]
+> Subsequent transactions such as liability amortization schedule, payments, depreiation and expenses will be posted only after posting the initial recognition for respective leases.   
 
 If the **Preview before running** parameter is enabled, a grip will display showing all the journal entries that will be posted. The grid includes an **Error** tab that will show all the expected errors from the batch process, if any exist.
 
