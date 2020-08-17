@@ -71,6 +71,8 @@ The next step is to associate the experiment with the corresponding experiences 
 1. Click on **Publish** to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
     > [!NOTE]
     > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+    
+<<Can also do this from the "Pages" or "Fragments" tab>>
 
 ## Start the experiment to gather results
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
@@ -104,13 +106,17 @@ After an experiment completes and has sufficient results to determine whether it
 1. Click **Complete** to overwrite the default version of the page and publish the winning variation to all users of the website.
 
 ## Publish experiment variations with Publish Groups
-Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. To do this:
-1. 
-
-Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
 > [!NOTE]
 > While adding a page to a publish group, any experiments running on it will be removed.
+
+Follow the steps below once the required content is within a publish group:
+1. Update the content and/or connect experiments to the items within the publish group.
+
+- once an experiment is connected in livesite, its not available in publish groups and vice versa
+- can connect to experiments and publish entire publish group (cant publish experiments only)
+
 
 ## Experiment status within Dynamics 365 Commerce
 The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
