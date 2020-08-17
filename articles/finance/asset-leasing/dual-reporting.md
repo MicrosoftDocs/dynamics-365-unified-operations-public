@@ -35,11 +35,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through an example of the dual reporting capabilities in Asset leasing for both IFRS and statutory reporting. For purposes of this example, familiarity with posting layers in Dynamics is required.
+This topic walks through an example of the dual reporting capabilities in Asset leasing for both IFRS and statutory reporting. For purposes of this example, familiarity with posting layers in Dynamics 365 Finance is required.
 
 ## Fact Pattern
 
-The following example accounts for a lease under Italian statutory reporting under a cash-basis method and IRF reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IRS 16 requirements. The books that are needed include one for IFRS 16, a book for statutory requirements, and a book to automatically reverse statutory postings. The books are set up as shown in the following tables. 
+The following example accounts for a lease under Italian statutory reporting under a cash-basis method and IFRS reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IFRS 16 requirements. The books that are needed include one for IFRS 16, a book for statutory requirements, and a book to automatically reverse statutory postings. The books are set up as shown in the following tables. 
 
 This first book is set up to comply with the IFRS 16 accounting standard. All entries posted in this book will post to a custom layer.
 
@@ -47,9 +47,8 @@ This first book is set up to comply with the IFRS 16 accounting standard. All en
 |------------------------------------------------	|---------------------	|
 |     Book type                                  	|     IFRS 16         	|
 |     Book description                           	|     IFRS 16         	|
-|     Posting Layer                              	|     Custom layer    	|
+|     Posting Layer                              	|     Custom layer 1   	|
 |     Lease Type                                 	|     Finance         	|
-|     Automatic                                  	|     No              	|
 |     Accounting Framework                       	|     IFRS 16         	|
 |     Lease Term / Useful life Set Up            	|     0.00            	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00            	|
@@ -64,8 +63,7 @@ The statutory book is a cash-basis book where the company will account for the l
 |     Book type                                  	|     Statutory      	|
 |     Book description                           	|     Local GAAP     	|
 |     Posting Layer                              	|     Current        	|
-|     Lease Type                                 	|     None           	|
-|     Automatic                                  	|     Yes            	|
+|     Lease Type                                 	|     Automatic      	|
 |     Accounting Framework                       	|     Cash basis     	|
 |     Lease Term / Useful life Set Up            	|     0.00           	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00           	|
