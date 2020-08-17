@@ -49,5 +49,5 @@ When the user creates the transition adjustment journal entry, a journal entry w
  	> [!Note]
  	> A transition adjustment can be created only for lease books that are assigned to a book that has the **Transition book** field enabled. Also, if the value in the **Lease commencement** field is later than the transition date, then the entry in the **Transition adjustment** field won't be updated.
   
-5.	To view the journal entry, select **General journals**.
+5.	To view the journal entry, select **Asset leasing journals**.
 6.	Select the new journal and click **Post**.
