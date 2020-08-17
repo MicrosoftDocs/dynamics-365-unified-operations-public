@@ -49,7 +49,7 @@ The experimentation journey typically begins with creating a hypothesis or the t
 
 <Tenant level flags???>
 
-## Create an experiment
+## Configure an experiment
 Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be one or more experiments with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
 
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using live telemetry events from Dynamics 365 Commerce:
@@ -72,7 +72,7 @@ The next step is to associate the experiment with the corresponding experiences 
     > [!NOTE]
     > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
 
-## Start the experiment to gather results
+## Launch and monitor the experiment
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
     > [!NOTE]
@@ -95,7 +95,7 @@ To delete variations in Dynamics 365 Commerce:
 1. Pick the variation to be deleted from the drop down below the experiment name in the editor.
 1. Click on **Delete** in the top bar to delete the variation and publish as necessary.
 
-## Pick a winning experiment variation
+## Promote a winning experiment variation
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the **Experiments** tab in site builder's left nav bar and click on the desired experiment.
 1. Click **Complete** on the top bar once the experiment has run and gathered sufficient data.
