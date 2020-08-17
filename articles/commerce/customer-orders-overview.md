@@ -119,12 +119,24 @@ Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/comm
 
 ### Edit an existing customer order
 
+Retail orders created in either the Online or Store channels can be recalled and edited through POS if needed.  
+
+> [!IMPORTANT]
+> Orders created in a Call center channel cannot be edited through the POS application if the call center channel has [enable order completion](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) turned on.  To ensure proper payment processing, Call center originated orders that use enable order completion logic must be edited through the Call center application in Commerce Headquarters.  
+
+In versions 10.0.13 or earlier, users are only able to edit supported customer orders in POS if the order is fully open.  If any lines of the order have already been processed to fulfillment (pick, pack, etc..), the order becomes locked for editing in POS.
+
+> [!NOTE]
+>In version 10.0.14 a feature has been released in public preview that will allow for POS users to edit customer orders from POS even if some of the order has already been fulfilled.   Orders that are fully invoiced remain un-editable through POS.   To try out this preview feature and provide additional feedback, enable **(Preview) Edit partially fulfilled orders in Point of Sale** in feature management.  Please note that customer orders originated in a Call Center channel that uses enable order completion will continue to be un-editable even after this preview feature is enabled.
+
 1. Select **Recall order** operation
 2. Use **Search** function to enter desired filters to locate the order and click **Apply**
 3. Select the order from the results list and click **Edit** (note that if **Edit** is disabled the order is in a state where it cannot be edited)
 4. From the transaction cart, make any necessary changes to the customer order.  Certain changes may be prohibited while editing.
 5. Complete the editing process by choosing a payment operation.
 6. If desired, exit the editing process without saving any changes by using the **Void transaction** operation.
+
+
 
 ### Cancel a customer order
 
