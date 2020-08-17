@@ -43,12 +43,12 @@ The external script module allows you to add Javascript from external sources by
 
 The following illustration shows an external script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
 
+The inline script module includes configuration properties **execute script asynchronously** and a **defer script execution** property which will run the script when the page has finished parsing configuration properies.
+
 ![External script injector in the authoring tools](media/script-injector.png)
 
 ### Inline script module
 Inline Javascript code can be added to a page template or page using the inline script module.  Once the module is added using the site builder tool, the script can be pasted into the **Inline script** configuration property on the module. Note when adding script you do not need to add the outer **script** tag.
-
-The inline script module includes configuration properties **execute script asynchronously** and a **defer script execution** property which will run the script when the page has finished parsing configuration properies.
 
 The following illustration shows a script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
 
