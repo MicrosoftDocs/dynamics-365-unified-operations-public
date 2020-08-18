@@ -41,15 +41,16 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 ## Planning considerations
-Here are some things to consider before starting with configuring the experiment:
+Here are some things to consider before you start:
 
-### Create a hypothesis
+### Create a hypothesis and measures
+Define the assumption on theory you want to validate with the experiment and the corresponding success metrics that you expect the experiment to affect.
 
 ### Decide what you want to experiment on
-Full or partial
+Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and don't want to affect content that isn't part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a full instance copy of the entire page or fragment is created and content changes across experimentation instances will not be synchronized.
 
 ### Decide how you want to publish your experiment
-If you want to schedule your experiment to be published in a publish group or directly publish to Live site
+If you want to schedule your experiment to be published in a [publish group](#publish-experiment-variations-with-publish-groups) or directly [publish to your live site](#create-experiment-variations).
 
 ## Prerequisites
 1. Get the right version of Dynamics 365 Commerce - Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
@@ -82,6 +83,17 @@ The next step is to associate the experiment with the corresponding experiences 
 1. Click on **Publish** to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
     > [!NOTE]
     > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+    
+## Publish experiment variations with Publish Groups
+Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+
+> [!NOTE]
+> While adding a page to a publish group, any experiments running on it will be removed.
+
+Some pointers to keep in mind:
+1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
+1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
+1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
 ## Launch and monitor the experiment
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
@@ -113,17 +125,6 @@ After an experiment completes and has sufficient results to determine whether it
 1. Use the analytics generated in the third-party service to pick the variation that performed the best and click **Next**.
 1. Stop the experiment in the third-party service.
 1. Click **Complete** to overwrite the default version of the page and publish the winning variation to all users of the website.
-
-## Publish experiment variations with Publish Groups
-Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
-
-> [!NOTE]
-> While adding a page to a publish group, any experiments running on it will be removed.
-
-Some pointers to keep in mind:
-1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
-1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
-1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
 ## Check the status of an experiment
 The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
