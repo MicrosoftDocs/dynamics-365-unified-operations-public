@@ -64,7 +64,7 @@ The resulting *Boolean* value.
 
 ## Usage notes
 
-In general, the `VALUEIN` function is translated to a set of **OR** conditions.
+In general, the `VALUEIN` function is translated to a set of **OR** conditions. If it is expected that the list of **OR** conditions might be large and the maximum total length of an SQL statement might be exceeded, consider to use the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -123,3 +123,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+[VALUEINLARGE functions](er-functions-logical-valueinlarge.md)
