@@ -46,6 +46,8 @@ Electronic reporting (ER) logical functions can be used to work with logical val
 | [Not](er-functions-logical-not.md)                       | This function returns the reversed logical value of the specified condition as a *Boolean* value. |
 | [Or](er-functions-logical-or.md)                         | This function returns a *Boolean* value of **FALSE** if all the specified conditions are false. If any specified condition is true, the function returns a *Boolean* value of **TRUE**. |
 | [ValueIn](er-functions-logical-valuein.md)               | This function determines whether the specified input matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | This function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. |
+
 
 ## Additional resources
 
