@@ -56,14 +56,12 @@ If you want to schedule your experiment to be published in a [publish group](#pu
 Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
 
 ### Setup an experimentation connector
-An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
+An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors) or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com) following directions provided by the publisher. A sample test connector comes with a preconfigured list of experiments to allow you to test the experimentation workflow within Dynamics 365 Commerce without needing to depend on an external service for treatment allocation or analytics. Note that you will need a developer to configure a third-party connector.
 
 ### Turn on the experimentation feature flags
-Go to Site Settings -> Features, and:
+Go to Tenant Settings -> Features or Site Settings -> Features, and:
 1. Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
 1. Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
-
-<Tenant level flags???>
 
 ## Configure an experiment
 Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be one or more experiments with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
@@ -72,8 +70,7 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
 1. Click on **Events** in the right property pane of the page or module of interest.
 1. View the list of events associated and copy the required one to the clipboard.
-    - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
-1. <<Tracking page views and revenue??>>
+    - Click [here](https://docs.microsoft.com) to view all available events and attributes including tracking page views and revenue.
 1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Create experiment variations
