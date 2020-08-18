@@ -788,6 +788,12 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
+    - name: Asset leasing
+      items:
+      - name: Reporting in Asset leasing 
+        items:
+        - name: Asset movements
+          href: asset-leasing/asset-movements.md
     - name: General ledger
       items:
       - name: General ledger overview
