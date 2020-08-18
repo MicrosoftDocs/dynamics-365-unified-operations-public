@@ -45,7 +45,7 @@ There are three types of safety margins.
 2. **Receipt margin** – buffer time for handling incoming supply
 3. **Issue margin** – buffer time for handing shipment
 
-![](RackMultipart20200818-4-1hxafz0_html_8f8f263be12168f0.png)
+![Safety margins](media/safety-margins-1.png)
 
 All margins are defined in days. Default value is 0 (zero), meaning that no margin is applied. If you setup multiple margins, they will all add to the total time from supply **Order date** to demand **Requirement date**.
 
@@ -55,7 +55,9 @@ Example: A setup with no lead time and 1 day for all 3 margin types will result 
 
 Receipt margin is probably the most used of the three safety margins. It is applied to the delivery date, backward from the **Requirement date**. Meaning that the products should be received &#39;Receipt margin days&#39; before they are required.
 
-![](RackMultipart20200818-4-1hxafz0_html_43c372830ccdac3.png) This is typically used as a buffer to ensure time for warehouse registration, or other time-consuming processes that are not captured as part of the general lead time in the system. For purchase it gives the benefit that the **Delivery date** of the purchase order is moved forward accordingly. If the lead time was increased, instead of using a safety margin, then the vendor would still be asked to deliver last minute.
+![Safety margins](media/safety-margins-2.png)
+
+This is typically used as a buffer to ensure time for warehouse registration, or other time-consuming processes that are not captured as part of the general lead time in the system. For purchase it gives the benefit that the **Delivery date** of the purchase order is moved forward accordingly. If the lead time was increased, instead of using a safety margin, then the vendor would still be asked to deliver last minute.
 
 Notice that the **Requirement date** of the supply is not changed by the receipt margin. This means that the receipt margin is not visible directly when comparing requirement dates for demand and supply, e.g. on the **Net requirements** form.
 
@@ -68,7 +70,7 @@ Note that Receipt margin is not applied when using on-hand as the supply. All on
 > [!NOTE]
 > _**Coming soon** – currently not supported with Planning Optimization. Until supported, values in **Reorder margin added to item lead time** will be treated as zero (0)._
 
-![](RackMultipart20200818-4-1hxafz0_html_db8c1ca43e75c6e8.png)
+![Safety margins](media/safety-margins-3.png)
 
 The Reorder margin is added prior to the item lead time for all planned orders during master planning, ensuring additional time for placing a supply order.
 
@@ -79,7 +81,7 @@ This is typically used as a buffer to ensure time for approval processes or othe
 > [!NOTE]
 > _**Coming soon** – currently not supported with Planning Optimization. Until supported, values in **Issue margin deducted from requirement date** will be treated as zero (0)._
 
-![](RackMultipart20200818-4-1hxafz0_html_14c6f28fbdb66622.png)
+![Safety margins](media/safety-margins-4.png)
 
 The Issue margin is deducted from the demand requirement date during master planning. Ensuring time to react on and ship incoming demand orders. This is typically used as a buffer to ensure time for shipment and related outbound warehouse processes.
 
@@ -155,7 +157,7 @@ To determine if a given date is available for the planning engine to use for the
 
 #### Calendar setup overview matrix
 
-![](RackMultipart20200818-4-1hxafz0_html_7fc545c957af833a.jpg)
+![Safety margins](media/safety-margins-calendar-matrix.png)
 
 ## Calculating delays
 
@@ -163,7 +165,7 @@ All 3 types of safety margins are included when determining if an order is delay
 
 Example: Given an item with a lead time of 1 day and a receipt margin of 3 days. When we have a demand for a sales order for this item, that is required today. Then there will be a delay of the lead time + receipt margin = 4 days. In case today is August 14th, then the 4 days of delay would result in a delivery on the 18th.
 
-![](RackMultipart20200818-4-1hxafz0_html_81ee749a52b0d5a9.png)
+![Safety margins](media/safety-margins-delays.png)
 
 ## Additional resources
 
