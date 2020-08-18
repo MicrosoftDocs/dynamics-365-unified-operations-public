@@ -64,7 +64,7 @@ The resulting *Boolean* value.
 
 ## <a name="usage_note">Usage notes</a>
 
-When the specified input represents an *Int64* or *Integer* type item of a data source the call to which is translatable to a direct SQL statement, the specified list is converted to a temporary SQL table and the the matching is performed in database by executing a single EXISTS JOIN query. Otherwise, this function works as the [VALUEIN](er-functions-logical-valuein.md) function.
+When the specified input represents an *Int64* or *Integer* type item of a data source the call to which is translatable to a direct SQL statement, the specified list is converted to a temporary SQL table and the the matching is performed in database by executing a single `EXISTS JOIN` query. Otherwise, this function works as the [`VALUEIN`](er-functions-logical-valuein.md) function.
 
 When the specified input represents an item of a data source that is designed as an item of other than *Int64* and *Integer* type, the error is thrown at design time informing that the `VALUEINLARGE` function is not applicable for the configured ER expression.
 
