@@ -1198,8 +1198,8 @@
         items: 
         - name: Electronic invoicing add-on overview
           href: localizations/e-invoicing-service-overview.md
-        - name: Set up the Electronic invoicing add-on
-          href: localizations/e-invoicing-setup.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
         - name: Get started with the Electronic invoicing add-on
           href: localizations/e-invoicing-get-started.md
         - name: Get started with Electronic invoicing add-on for Brazil
@@ -1208,8 +1208,8 @@
           href: localizations/e-invoicing-ita-get-started.md
         - name: Get started with the Electronic invoicing add-on for Mexico
           href: localizations/e-invoicing-mex-get-started.md
-        - name: Create an Azure storage account and a Key Vault
-          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Set up the Electronic invoicing add-on
+          href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
