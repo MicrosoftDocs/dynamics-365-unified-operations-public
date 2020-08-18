@@ -65,7 +65,7 @@ If you want to schedule your experiment to be published in a [publish group](#pu
 Once the third-party connector setup is complete, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be one or more experiments with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
 
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using live telemetry events from Dynamics 365 Commerce:
-1. Go to the **Pages** tab in site builder's left nav bar and click on the desired page. 
+1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
 1. Click on **Events** in the right property pane of the page or module of interest.
 1. View the list of events associated and copy the required one to the clipboard.
     - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
@@ -85,10 +85,10 @@ The next step is to associate the experiment with the corresponding experiences 
 1. Preview the variations to ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
 1. Click on **Publish** to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
     > [!NOTE]
-    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to the end users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to end-users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
     
 ## Publish experiment variations with Publish Groups
-Experiment variations created within Dynamics 365 Commerce can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+Experiment variations created within site builder can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
 > [!NOTE]
 > While adding a page to a publish group, any experiments running on it will be removed.
@@ -100,15 +100,15 @@ Some pointers to keep in mind:
 
 ## Launch and monitor the experiment
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
-1. Start the experiment in the third-party service so the right variation experiences can be shown to web users.
+1. Start the experiment in the third-party service so the right variation experiences can be shown to end-users.
     > [!NOTE]
-    > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all web users will see the same 'default' version of the page.
+    > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all end-users will see the same 'default' version of the page.
 1. Let the experiment run for a few days/weeks depending on how long it takes to gather sufficient data for statistical analyses in the third-party service.
 1. View experiment related data and analytics in the third-party service.
 
 ## Edit experiment variations
 To edit variations in Dynamics 365 Commerce:
-1. Go to the **Experiments** tab in site builder's left nav bar and click on the desired experiment. 
+1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
 1. Make the required changes, preview and publish them.
@@ -116,14 +116,14 @@ To edit variations in Dynamics 365 Commerce:
 
 ## Delete experiment variations
 To delete variations in Dynamics 365 Commerce:
-1. Go to the **Experiments** tab in site builder's left nav bar and click on the desired experiment. 
+1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
 1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the **Unpublish** button in the top bar.
 1. Pick the variation to be deleted from the drop down below the experiment name in the editor.
 1. Click on **Delete** in the top bar to delete the variation and publish as necessary.
 
 ## Promote a winning experiment variation
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
-1. Go to the **Experiments** tab in site builder's left nav bar and click on the desired experiment.
+1. Go to the **Experiments** tab in site builder and click on the desired experiment.
 1. Click **Complete** on the top bar once the experiment has run and gathered sufficient data.
 1. Use the analytics generated in the third-party service to pick the variation that performed the best and click **Next**.
 1. Stop the experiment in the third-party service.
