@@ -82,13 +82,13 @@ When a data source is called, if it has been configured as the `VALUEIN ("B", Li
 
 The upper limit for the number of characters in the text of such a condition is 32,768 characters. Therefore, you should not create data sources that might exceed this limit at runtime. If the limit is exceeded, the application stops running, and an exception is thrown. For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.
 
-In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator. This behavior occurs when the [FILTER](er-functions-list-filter.md) function is used and the following conditions are met:
+In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator. This behavior occurs when the [`FILTER`](er-functions-list-filter.md) function is used and the following conditions are met:
 
 - The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records. No additional conditions will be applied to this data source at runtime.
 - No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.
 - A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.
 
-Consider using this option instead of the [WHERE](er-functions-list-where.md) function that is described earlier in this example.
+Consider using this option instead of the [`WHERE`](er-functions-list-where.md) function that is described earlier in this example.
 
 ## Example 2
 
