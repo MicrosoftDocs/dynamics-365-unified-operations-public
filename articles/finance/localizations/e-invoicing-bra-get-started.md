@@ -191,8 +191,14 @@ To submit NF-e cancellation, the **Cancellation** feature setup is required.
 
 During setup, you will complete these tasks:
 
-1. Import the specific ER data model, the data model mapping, and that formats that are required for NF-e fiscal documents.
-2. Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the return of the submission process.
+1. Turn on the NF-e Federal feature for Brazil
+2. Import the specific ER data model, the data model mapping, and that formats that are required for NF-e fiscal documents.
+3. Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the return of the submission process.
+
+### Turn on the NF-e Federal feature for Brazil
+
+1. Go to **Organization administration \> Setup \> Electronic document parameters**.
+2. On the **Features** tab, select the **Enable** check box in the row for feature reference **BR00053**.
 
 ### Import the ER data model, data model mapping, and formats that are required for NF-e fiscal documents
 
@@ -201,11 +207,6 @@ During setup, you will complete these tasks:
 3. Select **Repositories**.
 4. Select **Global resource \> Open**.
 5. Import **Fiscal documents**, **Fiscal documents mapping**, **NF-e submit export format (BR), NF-e submit import format (BR)**, **NF-e status request export format (BR)**, **NF-e cancel export format (BR)**, **NF-e discard export format (BR)**, and **NF-e correction letter export format (BR)**.
-
-### Turn on the NF-e Federal feature for Brazil
-
-1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Features** tab, select the **Enable** check box in the row for feature reference **BR00053**.
 
 ### Import ER configurations and set up the response types for fiscal documents
 
@@ -305,6 +306,9 @@ After you turn on the **Configurable Electronic invoicing add-on integration** f
 4. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
 
     ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
+
+## Privacy notes
+By enabling the BR-00053 (NF-e Federal) feature, limited data, which includes the organization tax registration ID, will be transmitted to third party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the BR-00053 (NF-e Federal) feature by navigating to **Organization administration \> Setup \> Electronic document parameters**, clicking the **Features** tab, choosing the row containing the BR-00053 feature and then making the appropriate selection.
 
 ## Related topics
 
