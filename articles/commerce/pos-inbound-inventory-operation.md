@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) inboun
 author: hhaines
 manager: annbe
 
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -152,11 +152,11 @@ As you require, you can select **Receive all** on the app bar to quickly update 
 
 ### Receipt of unplanned items on purchase orders
 
-In version 10.0.14 a new feature is available which allows users to receive a product that was not originally on the purchase order.  This functionality is available by enabling feature **Add lines to Purchase Order during Point of Sale receiving**.  
+In Commerce version 10.0.14 and later, you can receive a product that was not originally on the purchase order. To enable this functionality, turn on **Add lines to Purchase Order during Point of Sale receiving**.  
 
-It is important to note that this feature will only work for purchase order receiving, it is not possible to receive items against transfer orders that were not previously ordered and shipped from the outbound warehouse.
+This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items were not previously ordered and shipped from the outbound warehouse.
 
-The ability to add new products to the purchase order during POS receiving is not supported if the organization has enabled purchase order [change management workflow](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) in Commerce HQ.  Enabling change management requires all changes to a purchase order to be first approved before receiving is allowed, and because this process allows a receiver to add new lines to the purchase order, the receiving would fail if change management workflow was enabled.  If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user will not be allowed to add new products to the purchase order during receiving in POS.
+You can't add new products to the purchase order during POS receiving if purchase order [change management workflow](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce headquarters (HQ). To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving will fail if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, you will not be allowed to add new products to the purchase order during receiving in POS.
 
 The add lines feature cannot be used as a work around to receiving additional quantities of products already on the purchase order.  Over-receiving is managed through the standard [over receiving](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) settings for the product line on the purchase order.
 
