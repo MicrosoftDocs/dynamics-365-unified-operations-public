@@ -824,7 +824,7 @@
           href: asset-leasing/dual-reporting.md
         - name: Set up a lease workflow
           href: asset-leasing/set-up-lease-wrkflw.md
-        - name: Use a lease workflow
+        - name: Use lease approval workflows
           href: asset-leasing/use-create-lease-wrkflw.md
         - name: Manage leases through the Lease import framework
           href: asset-leasing/manage-leases-thru-imprt-framewrk.md
