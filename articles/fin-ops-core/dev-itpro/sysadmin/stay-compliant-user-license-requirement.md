@@ -5,7 +5,7 @@ title: Stay compliant with user licensing requirements
 description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
 manager: AnnBe
-ms.date: 07/24/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,7 +51,7 @@ The maximum license requirement determines the actual licensing requirement for 
 
 ## View permissions page
 
-During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any permission reference, a role or duty, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
+During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
 ![View permissions page](media/ViewPermissons.png)
 
@@ -63,7 +63,7 @@ The **User license counts** report (**System administration \> Inquiries \> Lice
 
 The report also provides details about each user and the licensing requirements for each assigned role. Users are listed under the highest license type. If the license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the specific full user licensing requirements.
 
-The history version of the report shows total counts per date, but without any details.
+The **User counts history** report shows total counts per date, but without any details.
 
 > [!NOTE]
 > This report depends on the **Named user license count reports processing** batch job. To determine when the batch was last run, use the **Batch job history** page.
