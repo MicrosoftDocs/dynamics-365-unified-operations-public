@@ -307,7 +307,7 @@ After you turn on the **Configurable Electronic invoicing add-on integration** f
 
     ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
-## Privacy notes
+## Privacy notice
 By enabling the BR-00053 (NF-e Federal) feature, limited data, which includes the organization tax registration ID, will be transmitted to third party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the BR-00053 (NF-e Federal) feature by navigating to **Organization administration \> Setup \> Electronic document parameters**, clicking the **Features** tab, choosing the row containing the BR-00053 feature and then making the appropriate selection.
 
 ## Related topics
