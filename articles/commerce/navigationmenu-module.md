@@ -51,6 +51,9 @@ The following is an example of Navigation Menu in Fabrikam with 2-levels of cate
 | Show category images |True or False    | This property was added in 10.0.14 and displays category images defined in HQ for a category on the navigation menu|
 | Static menu item| Array of values| Static menu items take a menu item name and link to a static page. Recursively, you can create menu items below each other. By default, static menu appear on the root level and will be appended to channel navigation heirarchy if it exists |
 
+The following is an example of Navigation Menu in Fabrikam with category images showing up on the menu
+![Example of a navigation meu module with category images](./media/ecommerce-categoryimages.PNG)
+
 ## Add a navigation menu module to a Header module
 
 See Header module for details on how to author navigation menu
