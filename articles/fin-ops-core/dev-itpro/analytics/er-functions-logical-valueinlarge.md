@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, please, read the [**Usage note**](#usage_note) section.
+The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. The function returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, see the [**Usage note**](#usage_note) section.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ VALUEINLARGE (input, list, list item expression)
 
 `input`: *Field*
 
-The valid path of an item of a data source of the *Record list* type. The value of this item will be matched.
+The valid path of a data source item of the *Record list* type. The value of this item will be matched.
 
 `list`: *Record list*
 
@@ -64,11 +64,11 @@ The resulting *Boolean* value.
 
 ## <a name="usage_note">Usage notes</a>
 
-When the specified input represents an *Int64* or *Integer* type item of a data source the call to which is translatable to a direct SQL statement, the specified list is converted to a temporary SQL table and the the matching is performed in database by executing a single `EXISTS JOIN` query. Otherwise, this function works as the [`VALUEIN`](er-functions-logical-valuein.md) function.
+When the specified input represents an *Int64* or *Integer* type of a data source item, the call to which is translatable to a direct SQL statement, the specified list is converted to a temporary SQL table and matching is performed in the database by executing a single `EXISTS JOIN` query. Otherwise, this function works as the [`VALUEIN`](er-functions-logical-valuein.md) function.
 
-When the specified input represents an item of a data source that is designed as an item of other than *Int64* and *Integer* type, the error is thrown at design time informing that the `VALUEINLARGE` function is not applicable for the configured ER expression.
+When the specified input represents a data source item that is designed as an item other than *Int64* and *Integer* type, an error occurs at design time informing you that the `VALUEINLARGE` function is not applicable for the configured ER expression.
 
-When the containing `VALUEINLARGE` function expression is executed and more than one temporary table are used in scope of this execution, the runtime error is thorwn informing about that.
+When the `VALUEINLARGE` function expression is executed and more than one temporary table is used in scope of this execution, the runtime error occurs.
 
 ## Example
 
