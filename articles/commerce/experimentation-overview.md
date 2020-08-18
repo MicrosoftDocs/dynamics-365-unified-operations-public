@@ -50,7 +50,7 @@ Full or partial
 If you want to schedule your experiment to be published in a publish group or directly publish to Live site
 
 ## Prerequisites
-1. Get the right version of Dynamics 365 Commerce - Upgrade SSK, SDK and Retail Server to version 10.0.13.
+1. Get the right version of Dynamics 365 Commerce - Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
 1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
 1. Turn on the experimentation feature flags in Site Settings -> Features.
     - Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
