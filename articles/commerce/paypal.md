@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Strong Customer Authentication (SCA) using the Adyen connector
+# Dynamics 365 Payment Connector for PayPal
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,7 +48,11 @@ Microsoft Dynamics 365 Commerce now offers an out of box integration for PayPal 
 
 ## Supported capabilities
 
-The PayPal Connector supports leverages the omni-channel payments framework supported by Dynamics 365 Commerce. This means that, by default, orders created online using the connector can be fulfilled from the Commerce back office or may be picked up in store, if applicable. In addition to supported omni-channnel scenarios, if an order is returned that was 
+The following capabilities are supported out of box by the PayPal Connector. 
+
+### PayPal checkout 
+
+The connector supports the use of the PayPal Checkout, or PayPal button, for e-commerce payments. This 
 
 ## Prerequisites for the PayPal connector
 
