@@ -36,23 +36,26 @@ This topic covers script injectors that can be used to add scripts to online pag
 
 ## Overview
 
-The Dynamics 365 Commerce online starter kit provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page, as you require. For example, you can add a script for integration with third-party analytics, or other service scripts.
+The Dynamics 365 Commerce online starter kit provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
 
 ## External script module
-The external script module allows you to add Javascript from external sources by providing a URL pointing to a valid Javascript file.  Once the module is added using the site builder tool the script URL can be added to the **Script source** configuration property.
 
-The following illustration shows an external script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
+The external script module allows you to add Javascript from external sources by providing a URL that points to a valid Javascript file. Once the module is added using Commerce site builder, the script URL can be added to the **Script source** property.
 
-The inline script module includes configuration properties **execute script asynchronously** and a **defer script execution** property which will run the script when the page has finished parsing configuration properies.
+The external script module includes the **execute script asynchronously** and **defer script execution** configuration properties. The **execute script asynchronously** property specifies whether the script should be executed asynchronously. The **defer script execution** property specifies whether the script should be executed when the page has finished parsing configuration properties.
+
+The following illustration shows an external script injector module that is being configured on a page template. The **Script source** property box is where you add the URL that points to the script source code that will be injected into the HTML for the rendered page.
 
 ![External script injector in the authoring tools](media/script-injector.png)
 
-### Inline script module
-Inline Javascript code can be added to a page template or page using the inline script module.  Once the module is added using the site builder tool, the script can be pasted into the **Inline script** configuration property on the module. Note, when adding script to the module, you do not need to add the outer **<script>** tags, just the inline Javascript code as shown in the below example.
+## Inline script module
 
-The following illustration shows a script injector module that is being configured on a page template. Note the highlighted **Script source** configuration property where you can paste the script source code which will be injected in the html for the rendered page.
+The inline script module allows you to add inline Javascript code directly to a page template or page. Once the module is added using Commerce site builder, the script can be pasted into the **Inline script** box, as highlighted in the following illustration. 
 
 ![Script injector in the authoring tools](media/inline-script-injector.png)
+
+> [!NOTE]
+> When adding script to the inline script module, you do not need to add the outer **<script>** tags, just the inline Javascript code.
 
 ## Custom script injector modules
 
