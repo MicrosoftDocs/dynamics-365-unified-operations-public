@@ -97,23 +97,22 @@ Experiment variations created within site builder can be scheduled for publishin
 > [!NOTE]
 > While adding a page to a publish group, any experiments running on it will be removed.
 
-Some pointers to keep in mind:
+Some things to keep in mind:
 1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
 1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
 1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
 ## Launch and monitor the experiment
 Once the variations are setup in Dynamics 365 Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
-1. Start the experiment in the third-party service so the right variation experiences can be shown to end-users.
-    > [!NOTE]
-    > If the experiment is not running in the third-party service, the variation experiences will not be shown i.e. all end-users will see the same 'default' version of the page.
+1. Start the experiment in the third-party service so the right variation experiences can be shown to end-users. If the experiment is not running in the third-party service, the experiment variations will not be shown i.e. all end-users will continue to see the existing version of the page.
 1. Let the experiment run for a few days/weeks depending on how long it takes to gather sufficient data for statistical analyses in the third-party service.
 1. View experiment related data and analytics in the third-party service.
 
 ## Edit experiment variations
 To edit variations in Dynamics 365 Commerce:
 1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
-1. If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
+    > [!NOTE]
+    > If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
 1. Make the required changes, preview and publish them.
 1. Go to the third-party service to make changes to the names of the variations.
@@ -121,7 +120,9 @@ To edit variations in Dynamics 365 Commerce:
 ## Delete experiment variations
 To delete variations in Dynamics 365 Commerce:
 1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
-1. If the experiment is running and/or already published, stop the experiment in the third-party service and click on the **Unpublish** button in the top bar.
+    > [!NOTE]
+    > If the experiment is running and/or already published, stop the experiment in the third-party service before proceeding.
+1. Click on the **Unpublish** button in the top bar.
 1. Pick the variation to be deleted from the drop down below the experiment name in the editor.
 1. Click on **Delete** in the top bar to delete the variation and publish as necessary.
 
