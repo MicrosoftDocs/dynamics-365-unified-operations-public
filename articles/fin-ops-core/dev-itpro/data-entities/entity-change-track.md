@@ -71,7 +71,7 @@ public static Query defaultCTQuery()
 {
 	Query q = new Query();    
     
-	QueryBuildDataSource custDs = query.addDataSource(tableNum(CustTable));
+	QueryBuildDataSource custDs = q.addDataSource(tableNum(CustTable));
 
 	QueryBuildDataSource partyDs = custDs.addDataSource(tableNum(DirPartyTable));
 	partyDs.relations(true);
