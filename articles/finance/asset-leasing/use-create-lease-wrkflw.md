@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use the Create Lease Workflow
+title: Use lease approval workflows
 description: This topic lists the steps for using workflows for approving asset leases, as well as for tracking the status and history of the workflow.
 author: moaamer
 manager: Ann Beebe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Use the Create Lease Workflow
+# Use lease approval workflows
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
