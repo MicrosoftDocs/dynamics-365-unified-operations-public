@@ -41,7 +41,7 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 ## Prerequisites
-Here are some things to do, before you can start running experiments:
+Here are some things to do, before you can start running experiments in Dynamics 365 Commerce's site builder:
 
 ### Create a hypothesis and measures
 You must define the assumption or theory you want to validate with the experiment. You will also need to decide on the corresponding success metrics that you expect the experiment to impact.
