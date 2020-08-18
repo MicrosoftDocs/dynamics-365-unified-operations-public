@@ -69,12 +69,15 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 1. Click on **Events** in the right property pane of the page or module of interest.
 1. View the list of events associated and copy the required one to the clipboard.
     - Click [here](https://docs.microsoft.com) to view all available events and attributes. <add link to Aamir's doc> 
+1. <<Tracking page views and revenue??>>
 1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Create experiment variations
 The next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
 1. Go to the **Experiments** tab in site builder to view the list of experiments from the connector configured above. 
 1. Click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
+    > [!NOTE]
+    > One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
 1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
     > [!NOTE]
     > Remember to enable the "Experimentation on pages or fragments" feature flag to allow experimentation on pages and fragments. Set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity.
