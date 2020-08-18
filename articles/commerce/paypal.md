@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Strong Customer Authentication (SCA) using the Adyen connector
-description: This topic describes Strong Customer Authentication (SCA) in the storefront checkout.
+title: Dynamics 365 Payment Connector for PayPal
+description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: rubendel
 manager: annbe
-ms.date: 05/21/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,26 +32,29 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Strong Customer Authentication (SCA) using the Adyen connector
 
-
 [!include [banner](../includes/banner.md)]
 
-This topic describes Strong Customer Authentication (SCA) support built into the Adyen connector.
+This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal(PayPal Connector). It includes a comprehensive list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Redirect | The action of moving an online shopper's browsing session out of the context of the merchant's storefront. |
-| SCA | Strong Customer Authentication. Part of the EU Payment Services Directive 2.0 (PSD2.0) that requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. |
-| Issuing bank | The financial institution that issues a payment instrument to a customer. |
+| PayPal Checkout | Also known as the PayPal "button", PayPal Checkout describes customer experience and integration supported by the PayPal Connector. |
 
 ## Overview
 
-PSD2.0 requires that SCA be supported during online shopping checkout so a customer can be authenticated by the bank that issued their payment method. The authentication commonly occurs when a shopper is going through the checkout for an online order and after they have provided their payment details. Those details are evaluated, and based on criteria provided by PSD2.0, the customer may be redirected to their bank. After being redirected to their bank, the customer is required to provide some form of authentication to confirm that they are an authorized user for the payment instrument. If the user is confirmed to be the cardholder, they are then redirected back to the storefront where the payment was previously submitted, after which checkout is allowed to proceed. If SCA fails, the process will not allowed to continue for the transaction.
+Microsoft Dynamics 365 Commerce now offers an out of box integration for PayPal Checkout. When the PayPal Connector is configured, the PayPal button is as a selectable payment method as part of online order checkout. When users select "PayPal" they are directed to complete their payment directly with PayPal and then returned to the web storefront for order completion.  
 
-## Prerequisites for SCA support
+## Supported capabilities
 
-Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). This can be implemented by any third-party connector using the payments SDK.
+The PayPal Connector supports leverages the omni-channel payments framework supported by Dynamics 365 Commerce. This means that, by default, orders created online using the connector can be fulfilled from the Commerce back office or may be picked up in store, if applicable. In addition to supported omni-channnel scenarios, if an order is returned that was 
+
+## Prerequisites for the PayPal connector
+
+### Testing
+
+To test the PayPal connector in a sandbox environment, you must create a PayPal development environment. To create a developmet environment, navigate to the [Get Started](https://developer.paypal.com/docs/platforms/get-started/) page provided as part of PayPal's development resources.
 
 ## Setup
 
