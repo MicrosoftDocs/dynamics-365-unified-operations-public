@@ -117,7 +117,7 @@ To manage your hazardous material definitions, follow these steps.
 1. Go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**.
 2. Select the regulation to set up a hazardous material definition for.
 3. On the Action Pane, on the **Setup** tab, select **Hazardous materials**.
-4. In the **Material code** field, enter a material code for the hazardous material definition. You will select this value when you apply the material to a released product.
+4. In the **Material code** field, enter a material code for the hazardous material definition. You will select this value when you apply the material code to a released product.
 
     The **Regulation code** field is read-only and shows the regulation that you selected in step 2.
 

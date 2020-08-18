@@ -65,7 +65,7 @@ The following table describes the fields that are available on the **Description
 | Field | Description |
 |---|---|
 | Proper shipping name | Enter the standard description for the material, as specified by the applicable regulation. You can provide translations for this value on the **Item ship text translation** FastTab, as described in the next section. |
-| Technical name | Select the common or generic name for the material. This name might have been established for your company. |
+| Technical name | Select the common or generic name for the material. This name might be a name that your company uses internally for the material. |
 | N.O.S. | Select this check box to indicate that the **Proper shipping name** value is a not-otherwise-specific (N.O.S.) shipping name for the item. N.O.S. shipping names are used for groups of similar chemicals and materials that have specific end uses, but that might not be listed by name in the hazmat table in a specific regulation. |
 
 ### Item ship text translation FastTab

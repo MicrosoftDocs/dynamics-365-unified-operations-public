@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Release 10.0.11
 
 To remain compliant with shipping and transport regulations, organizations that ship materials that are classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets customers store information that is related to released items. This information can then be used to help prepare shipping documentation. An organization that ships dangerous goods must have its own processes and procedures for managing the shipping process. Microsoft Dynamics 365 Supply Chain Management is just a tool that can help generate the required documents.
 
+The following diagram illustrates the steps needed to set up and use the hazardous materials feature.
+
 ![Setup and use of the hazardous materials feature](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
 
 The hazardous materials feature is set up in Product information management and provides documents that can be printed through Warehouse management. Therefore, broadly speaking, those areas are the two main areas where you will review, set up, and use this feature's functionality:
@@ -54,7 +56,7 @@ The following common regulations were referenced when this functionality was dev
 - **IMDG** – The International Marine Dangerous Goods (IMDG) code
 - **IATA** – The International Air Transport Association (IATA) dangerous goods regulations
 
-Each set of regulations has a list of dangerous goods list and reference codes. The lists for each type of transport are unified on common international classifications. Therefore, Supply Chain Management provides a reference table for the common codes on those lists. Each list also has some unique codes that you can define.
+Each set of regulations provides standardized lists of dangerous goods and reference codes. Therefore, Supply Chain Management provides a reference table for the common codes on those lists. Each list also has some unique codes that you can define.
 
 For more information about how to set up regulations and values for hazardous materials, and how to assign the values to relevant products, see the following topics:
 

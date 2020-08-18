@@ -44,7 +44,7 @@ The following illustration shows the sequence of activities that occur when the 
 Usually, if you ship items that contain hazardous materials, you must generate specific reports to help preserve safety and comply with hazardous materials regulations. To set up your reports, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-2. On the **Reports** tab, on the **Hazardous materials report parameter** FastTab, set the following fields.
+2. Open the **Reports** tab. On the **Hazardous materials report parameter** FastTab, set the following fields.
 
     | Section | Field | Description |
     |---|---|---|
@@ -103,13 +103,13 @@ When you generate this report, the information is saved so that you can edit it 
 
 ## Shipment summary report
 
-The **Shipment summary** report provides a summary of the points on a shipment. The information is summarized by the transport category that is related to the released items.
+The **Shipment summary** report provides information that is summarized by the transport category that is related to the released items.
 
 To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Shipment summary**.
 
-## Bill of landing report
+## bill of lading report
 
-When the hazardous materials feature is turned on in your system, the **Bill of landing** report includes a **Hazardous materials** column that indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
+When the hazardous materials feature is turned on in your system, the **bill of lading** report includes a **Hazardous materials** column that indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
 
 ## Packing list report
 
