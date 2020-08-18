@@ -41,7 +41,9 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 ## Planning considerations
-There are some things to consider before starting with the experiment lifecycle.
+Here are some things to consider before starting with configuring the experiment:
+
+### Create a hypothesis
 
 ### Decide what you want to experiment on
 Full or partial
