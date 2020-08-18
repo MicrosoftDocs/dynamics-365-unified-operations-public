@@ -40,22 +40,26 @@ Use experimentation to measure the impact of new changes or ideas and avoid maki
 The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
-## Planning considerations
-Here are some things to consider before you start:
+## Prerequisites
+Here are some things to do, before you can start running experiments:
 
 ### Create a hypothesis and measures
-Define the assumption on theory you want to validate with the experiment and the corresponding success metrics that you expect the experiment to affect.
+You must define the assumption or theory you want to validate with the experiment. You will also need to decide on the corresponding success metrics that you expect the experiment to impact.
 
 ### Decide what you want to experiment on
-Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and don't want to affect content that isn't part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a full instance copy of the entire page or fragment is created and content changes across experimentation instances will not be synchronized.
+Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and do not want to affect content that is not part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a new instance copy of the entire page or fragment is created i.e. content changes will not be synchronized across experimentation instances.
 
 ### Decide how you want to publish your experiment
 If you want to schedule your experiment to be published in a [publish group](#publish-experiment-variations-with-publish-groups) or directly [publish to your live site](#create-experiment-variations).
 
-## Prerequisites
-1. Get the right version of Dynamics 365 Commerce - Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
-1. Setup an experimentation connector - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
-1. Turn on the experimentation feature flags in Site Settings -> Features.
+### Get the right version of Dynamics 365 Commerce
+Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
+
+### Setup an experimentation connector
+An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector <available where??> or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors).
+
+### Turn on the experimentation feature flags
+Go to Site Settings -> Features, and:
     - Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
     - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
 
