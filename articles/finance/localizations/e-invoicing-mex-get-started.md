@@ -297,6 +297,9 @@ After you turn on the **Configurable Electronic invoicing add-on integration** f
 
     ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
+## Privacy notes
+By enabling the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features, limited data, which includes the organization tax registration ID, will be transmitted to third party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features by navigating to **Organization administration \> Setup \> Electronic document parameters**, clicking the **Features** tab, choosing the rows containing the MX-00010 and MX-00016 features and then making the appropriate selection.
+
 ## Related topics
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
