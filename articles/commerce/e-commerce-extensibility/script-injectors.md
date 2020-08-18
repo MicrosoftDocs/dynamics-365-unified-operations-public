@@ -50,12 +50,12 @@ The following illustration shows an external script injector module that is bein
 
 ## Inline script module
 
-The inline script module allows you to add inline Javascript code directly to a page template or page. Once the module is added using Commerce site builder, the script can be pasted into the **Inline script** box, as highlighted in the following illustration. 
+The inline script module allows you to add inline Javascript code directly to a page template or page. Once the module is added using Commerce site builder, the script can be pasted into the **Inline script** property box, as highlighted in the following illustration. 
 
 ![Inline script module properties in site builder](media/inline-script-injector.png)
 
 > [!NOTE]
-> When adding script to the inline script module, you do not need to add the outer **<script>** tags, just the inline Javascript code.
+> When adding script to the **Inline script** property box, you do not need to add the outer **\<script\>** tags, just the inline Javascript code.
 
 ## Custom script injector modules
 
