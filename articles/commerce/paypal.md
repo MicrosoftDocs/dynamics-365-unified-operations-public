@@ -53,7 +53,7 @@ The PayPal connector is implemented using the same payments SDK that is leverage
 
 The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
 
-## Supported capabilities
+## Functional overview
 
 The following capabilities are supported out of box by the PayPal Connector. 
 
@@ -75,15 +75,17 @@ Orders made using the PayPal connector should be fulfilled within 30 days. If an
 
 Billing agreement support, which allows for creation of new authorizations upon expiration of the original authorization, will be added in a future release. 
 
-## Prerequisites for the PayPal connector
 
-### Testing
+## Testing the PayPal connector
 
-To test the PayPal connector in a sandbox environment, you must create a PayPal sandbox environment. To create a sandbox environment:
+### Creating a PayPal developer account
+
+To test the PayPal connector, you must first create PayPal developer credentials and a PayPal sandbox environment. 
+
 1. Navigate to the [**Test and go live**](https://developer.paypal.com/docs/business/test-and-go-live/) page provided as part of PayPal's development resources. 
-2. Click [**Get Started**](https://developer.paypal.com/docs/platforms/get-started/) link on the **Test and go live** page should be used to create sandbox environment crentials. 
+2. Click the [**Get Started**](https://developer.paypal.com/docs/platforms/get-started/) link on the **Test and go live** page. 
 3. From that page, click **Log in to the Developer Dashboard**.
-4. If propted to log in, click **Sign up**.
+4. If prompted to log in, click **Sign up**.
 5. Select **Business Account**, then click **Next**.
 6. Provide the email address you want to associate with your PayPal account and create a password for your PayPal account. 
 7. In the next form, fill out contact information details, then read the PayPal user agreement and Privacy statement. If you agree to the terms, click **Agree and Create Account**.  
@@ -92,16 +94,20 @@ To test the PayPal connector in a sandbox environment, you must create a PayPal 
 > The terms agreed to for the creation of a PayPal developer account are between the organization or individual creating the account and PayPal. Microsoft is in no way liable  and makes not warranty as to the terms specified the agreement. These instructions are for informational purposes only. 
 
 8. Once you have agreed to the terms, specify your business type and click **Continue**.
-9. Next navigate to the [PayPal Devloper](https://developer.paypal.com/developer/applications) and click **Log in to Dashboard**.
+9. Next navigate to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and click **Log in to Dashboard**.
 10. Log in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
-12. Note your **Sandbox account**, **Client ID**, and **Secret**.
+12. Note your **Sandbox account**, **Client ID**, and **Secret**. These will be used to set up the connector in Dynamics 365 Commerce.
 
-Specify: Merchant Client ID = Client ID
-Merchant API key = Secret 
-Environment = Live or Sandbox
+## Setup the connector in Dynamics 365
 
-## Setup
+> [!NOTE]
+> Some of these steps leverage a new capability called **Processor payment methods**. For more information on this feature, visit the docs article for [**Processor payment methods**](
+
+
+1. Navigate to 
+
+
 
 Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
 
