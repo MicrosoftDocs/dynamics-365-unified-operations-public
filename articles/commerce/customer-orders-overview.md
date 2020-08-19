@@ -62,7 +62,7 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
 
 ## Disable option to pay later
 
-In Commerce version 10.0.12 and later, merchants can remove the option for paying later when a customer order is created at the POS. To disable the option, open the **Functionality profile** for the channel where paying later will not be allowed, and then click **Edit**. On the **General** tab, click the dropdown for **Require payment for fulfillment**. If paying later should not be allowed at the POS, select **Card required** and click **Save**. Be sure to run the **1070** distribution schedule to synchronize this change to the channel. 
+In Commerce version 10.0.12 and later, merchants can remove the option to pay later when a customer order is created at the POS. To disable the option, open the **Functionality profile** for the channel that paying later is not allowed in, and then select **Edit**. On the **General** tab, select the dropdown for **Require payment for fulfillment**. If paying later should not be allowed at the POS, select **Card required** and select **Save**. Run the **1070** distribution schedule to synchronize this change to the channel. 
 
 ## Transaction flow for customer orders
 
