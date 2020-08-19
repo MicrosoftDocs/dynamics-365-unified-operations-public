@@ -44,15 +44,15 @@ The experimentation journey begins with creating a hypothesis or the theory that
 ## Prerequisites
 1. **Get the right version of Dynamics 365 Commerce** - Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
 1. **Setup an experimentation connector** - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following directions provided by the publisher. You can also use the sample test connector from Dynamics 365 Commerce following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors), to test the experimentation workflow without needing to configure an external service.
-1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level or at the site level.
+1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level (Tenant Settings -> Features) or at the site level (Site Settings -> Features).
     - Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
     - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
 
 ## Planning for your experiment
-Here are some things to do, before you can start running experiments in Dynamics 365 Commerce's site builder:
+Here are some things to consider, before you start running experiments in Dynamics 365 Commerce's site builder:
 
 ### Create a hypothesis and metrics
-You must define the assumption or theory you want to validate with the experiment. You will also need to decide on the corresponding success metrics that you expect the experiment to impact.
+Define the assumption or theory you want to validate with your experiment and the success metrics that you expect it to impact.
 
 ### Decide what you want to experiment on
 Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and do not want to affect content that is not part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a new instance copy of the entire page or fragment is created i.e. content changes will not be synchronized across experimentation instances.
@@ -93,7 +93,7 @@ Experiment variations created within site builder can be scheduled for publishin
 
 Some things to keep in mind:
 1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
-1. Once an experiment is connected in Live site, it will not be available within publish groups and the other way around.
+1. Once an experiment is connected in live site, it will not be available within publish groups and the other way around.
 1. When you click **Publish** to publish the content in a publish group, all content inside of it will be published, whether it has an experiment or not.
 
 ## Launch and monitor the experiment
@@ -106,19 +106,18 @@ Once the variations are setup in Dynamics 365 Commerce, follow the steps below t
 To edit variations in Dynamics 365 Commerce:
 1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
     > [!NOTE]
-    > If the experiment is running and/or already published, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
+    > If the experiment is still active, stop the experiment in the third-party service, unless making a minor change with no significant impact to the experiment results.
 1. Pick the variation that needs updating from the drop down just below the experiment name in the editor.
 1. Make the required changes, preview and publish them.
 1. Go to the third-party service to make changes to the names of the variations.
 
 ## Delete experiment variations
 To delete variations in Dynamics 365 Commerce:
-1. Go to the **Experiments** tab in site builder and click on the desired experiment. 
+1. Go to the **Experiments** tab in site builder and select or click on the desired experiment. 
     > [!NOTE]
-    > If the experiment is running and/or already published, stop the experiment in the third-party service before proceeding.
-1. Click on the **Unpublish** button in the top bar.
-1. Pick the variation to be deleted from the drop down below the experiment name in the editor.
-1. Click on **Delete** in the top bar to delete the variation and publish as necessary.
+    > If the experiment is still active, stop the experiment in the third-party service before proceeding.
+1. Click on the **Unpublish** button in the top bar to take down the page from live site.
+1. Click on the **Delete** button in the top bar to delete the experiment.
 
 ## Promote a winning experiment variation
 After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
