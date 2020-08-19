@@ -172,7 +172,7 @@ You can filter by the following criteria to refine your query:
 [![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
 
 ### E-commerce events
-The following events are logged by the E-commerce website , and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
+The following events are logged by the E-commerce website, and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
 
 ### Button and link clicks
 Button and link clicks for the following types of elements on an E-commerce website are logged as telemetry events.
