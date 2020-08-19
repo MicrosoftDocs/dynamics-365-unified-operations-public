@@ -98,7 +98,7 @@ The **Welcome** page provides general guidance and information that you will nee
 - The **FastTrack** page introduces the FastTrack program. It explains what the program consists of and how your implementation can benefit from it.
 - We strongly recommend that you watch the existing [TechTalks](https://community.dynamics.com/365/b/alltechtalks) and subscribe to upcoming TechTalks as Microsoft continues to share best practice guidance and information about the changes that are occurring in the product and platform.
 
-## Next seps
+## Next steps
 
 The **Next Steps** page provides additional resources about the most critical aspects of the implementation. You can access this page at any time during the implementation.
 
