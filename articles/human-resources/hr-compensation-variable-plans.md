@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
+ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, HcmCompensationWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

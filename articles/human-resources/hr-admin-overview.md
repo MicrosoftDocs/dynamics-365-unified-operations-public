@@ -56,6 +56,8 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 
 - [Manage features](hr-admin-manage-features.md)
 
+- [Configure and manage database logging](hr-admin-database-logging.md)
+
 - Explore the user interface
   - [User interface elements](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Accessibility features](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)

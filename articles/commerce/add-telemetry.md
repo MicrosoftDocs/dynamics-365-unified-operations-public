@@ -49,9 +49,9 @@ A page fragment allows you to reuse inline or external script code across all pa
 
 To create a reusable page fragment for your inline script code in site builder, follow these steps.
 
-1. Go to **Page Fragments**, and then select **New**.
-1. In the **New Page Fragment** dialog box, select **Inline script**.
-1. Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.
+1. Go to **Fragments**, and then select **New**.
+1. In the **New page fragment** dialog box, select **Inline script**.
+1. Under **Page fragment name**, enter a name for the fragment, and then select **OK**.
 1. Under the page fragment that you created, select the **Default inline script** module.
 1. In the property pane on the right, under **Inline script**, enter your client-side script. Then configure other options as you require.
 1. Select **Save**, and then select **Finish editing**.
@@ -61,9 +61,9 @@ To create a reusable page fragment for your inline script code in site builder, 
 
 To create a reusable page fragment for your external script code in site builder, follow these steps.
 
-1. Go to **Page Fragments**, and then select **New**.
-1. In the **New Page Fragment** dialog box, select **External script**.
-1. Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.
+1. Go to **Fragments**, and then select **New**.
+1. In the **New page fragment** dialog box, select **External script**.
+1. Under **Page fragment name**, enter a name for the fragment, and then select **OK**.
 1. Under the page fragment that you created, select the **Default external script** module.
 1. In the property pane on the right, under **Script source**, add an external or relative URL for the external script source. Then configure other options as you require.
 1. Select **Save**, and then select **Finish editing**.

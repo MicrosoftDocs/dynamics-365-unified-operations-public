@@ -5,7 +5,7 @@ title: Master planning with purchase trade agreements
 description: This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/29/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,20 +72,23 @@ After your system is prepared as described in the previous section, you should f
 1. On the Action Pane, on the **Plan** tab, in the **Order settings** group, select **Default order settings** to open the **Default order settings** page for the selected product. On the **Purchase order** FastTab, view the value of the **Purchase lead time** field. If no item coverage lead-time override is defined, Planning Optimization will use this value when it selects trade agreements where the **Disregard lead time** option is set to **Yes**. Therefore, you should adjust this value as you require.
 1. Repeat this procedure for each relevant product.
 
+> [!NOTE]
+> Currency on the purchase trade agreement line must match the currency of the selected vendor. Master planning will only include information from purchase trade agreement lines where the currency matches the currency on the vendor.
+
 ## Examples of how Planning Optimization finds vendor and lead times
 
 The following table provides examples that show how various settings for a released product and its associated purchase trade agreements affect the values that are found for the resulting planned purchase order. The **bold** values in the two rightmost columns are the values that are selected by Planning Optimization. The ***bold and italic*** values in the other columns are the settings that produced those resulting values for each row.
 
 | Released product: Vendor | Default order settings: Lead time | Item coverage: Override vendor | Item coverage: Override lead time | Trade agreement: Vendor | Trade agreement: Lead time | Trade agreement: Disregard lead time | Resulting vendor | Resulting lead time |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | No | No | US003 | 3 | NO | **US001** | **1** |
-| US001 | 1 | ***Yes: US002*** | ***Yes: 2*** | US003 | 3 | NO | **US002** | **2** |
-| *(Blank)* | 1 | No | No | ***US003*** | ***3*** | NO | **US003** | **3** |
-| *(Blank)* | ***1*** | No | No | ***US003*** | 3 | YES | **US003** | **1** |
-| *(Blank)* | ***1*** | ***Yes: US002*** | No | US003 | 3 | NO | **US002** | **1** |
-| *(Blank)* | ***1*** | ***Yes: US002*** | No | US003 | 3 | NO | **US002** | **1** |
-| *(Blank)* | 1 | No | Yes: 2 | ***US003*** | ***3*** | NO | **US003** | **3** |
-| *(Blank)* | 1 | No | ***Yes: 2*** | ***US003*** | 3 | YES | **US003** | **2** |
+| ***US001*** | ***1*** | No | No | US003 | 3 | No | **US001** | **1** |
+| US001 | 1 | ***Yes: US002*** | ***Yes: 2*** | US003 | 3 | No | **US002** | **2** |
+| *(Blank)* | 1 | No | No | ***US003*** | ***3*** | No | **US003** | **3** |
+| *(Blank)* | ***1*** | No | No | ***US003*** | 3 | Yes | **US003** | **1** |
+| *(Blank)* | ***1*** | ***Yes: US002*** | No | US003 | 3 | No | **US002** | **1** |
+| *(Blank)* | ***1*** | ***Yes: US002*** | No | US003 | 3 | No | **US002** | **1** |
+| *(Blank)* | 1 | No | Yes: 2 | ***US003*** | ***3*** | No | **US003** | **3** |
+| *(Blank)* | 1 | No | ***Yes: 2*** | ***US003*** | 3 | Yes | **US003** | **2** |
 
 ## Additional resources
 

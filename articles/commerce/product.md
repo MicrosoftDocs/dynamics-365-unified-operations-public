@@ -5,7 +5,7 @@ title: Add product recommendations on POS
 description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -84,6 +84,8 @@ To set up product recommendations, follow these steps:
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 

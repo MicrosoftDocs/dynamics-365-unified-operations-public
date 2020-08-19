@@ -5,7 +5,7 @@ title: Create recommendations with demo data
 description: This topic provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -81,6 +81,8 @@ The extension contains a datafile called 'RecoMockDataset.csv', which allows you
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 

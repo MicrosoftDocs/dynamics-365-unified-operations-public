@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
+ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

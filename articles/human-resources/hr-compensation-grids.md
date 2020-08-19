@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HRCCompGrid, HRCCompGridView   
+ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

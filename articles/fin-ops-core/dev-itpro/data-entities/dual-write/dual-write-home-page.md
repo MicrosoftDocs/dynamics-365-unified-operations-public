@@ -55,9 +55,13 @@ These topics describe dual-write integration.
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable entity map for dual-write](enable-entity-map.md)
 
++ [Currency data-type migration for dual-write](currrency-decimal-places.md)
+
 ## Managing dual-write after setup
 
 + [Customize entity and field mappings](customizing-mappings.md)
++ [Handling multiple entity maps](multiple-entity-maps.md)
++ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 

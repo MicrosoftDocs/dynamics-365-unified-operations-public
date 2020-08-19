@@ -5,7 +5,7 @@ title: Accordion module
 description: This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Accordion module
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -87,4 +86,8 @@ To add an accordion module to a FAQ page and set its properties in site builder,
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Text block](add-content-rich-block.md)
+[Container module](add-container-module.md)
+
+[Tab module](add-tab.md)
+
+[Text block module](add-content-rich-block.md)

@@ -83,6 +83,26 @@
       }
     },
     "fileMetadata": {
+      "search.app":{
+        "finance/**/*.md": [
+          "Finance"
+        ],
+        "supply-chain/**/*.md": [
+          "SCM"
+        ],
+        "commerce/**/*.md": [
+          "Commerce"
+        ],
+        "human-resources/**/*.md": [
+          "HumanResources"
+        ],
+        "talent/**/*.md": [
+          "HumanResources"
+        ],
+        "fin-ops-core/**/*.md": [
+          "FinanceAndOperations"
+        ]
+      },
       "featureFlags": {
         "dev-itpro/**/*.md": [
           "show_learn_banner"

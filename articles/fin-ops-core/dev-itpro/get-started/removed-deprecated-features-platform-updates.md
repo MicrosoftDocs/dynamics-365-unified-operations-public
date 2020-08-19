@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,10 +39,77 @@ This topic describes features that have been removed, or that are planned for re
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Platform updates for version 10.0.13 of Finance and Operations apps
+
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### Custom code defined in SSRS report properties 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
+
+### Upgrade of three jQuery component libraries 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Three jQuery component libraries are being updated for security fixes and to maintain currency.   
+| **Replaced by another feature?**   | The following libraries are being affected: jQuery (to version 3.5.0 from version 2.1.4), jQuery UI (to version 1.12.1 from version 1.11.4), jQuery qTip (to version 3.0.3 from 2.2.1). Migration guidance has been provided online by jQuery.  |
+| **Product areas affected**         | Extensible controls, specifically custom JavaScript code utilizing deprecated or removed APIs |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
+
+### Existing grid control/forceLegacyGrid() API
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control. |
+| **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+
+### Personalization without saved views 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature, so that it has better performance and offers additional capabilities. |
+| **Replaced by another feature?**   | Saved views |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | In version 10.0.13/Platform update 37, the saved views feature is generally available, and customers can optionally turn on this feature. The saved views feature will become mandatory in the October 2021 release. |
+
+
+## Platform updates for version 10.0.12 of Finance and Operations apps
+
+### Grid or group control form extensions containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The data group property on grid or group controls is used to automatically show all the fields of a field group. A grid or group control added by extension could contain fields that are no longer defined on the field group, or it might be missing fields that are defined on the field group. This can cause inconsistent behavior at runtime. Platform updates for version 10.0.12 of Finance and Operations apps now categorize this issue as a compiler *warning*. To fix this issue, open the form extension and save it.
+| **Replaced by another feature?**   | This compiler warning will be replaced with a compiler error in a future update. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | A compiler warning is introduced in platform updates for version 10.0.12 of Finance and Operations apps. |
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
+
+### Explicit safe lists for self-service environments
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
+| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Product areas affected**         | Security |
+| **Deployment option**              | Cloud |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
 
 ### Visual Studio 2015
 
@@ -52,7 +119,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | New virtual machines (VMs) deployed with version 10.0.11 of Finance and Operations apps will include Visual Studio 2017. Existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
+| **Status**                         | Once the availability of new virtual machines (VMs) with Visual Studio 2017 is announced, existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
 
 ### Field groups containing invalid field references
 

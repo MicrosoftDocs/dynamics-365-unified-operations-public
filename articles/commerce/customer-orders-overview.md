@@ -5,7 +5,7 @@ title: Customer orders in Modern POS (MPOS)
 description: This topic provides information about customer orders in Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -59,6 +59,7 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
     - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
     - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
     
+
 ## Disable option to pay later
 
 In Commerce version 10.0.12 and later, merchants can remove the option for paying later when a customer order is created at the POS. To disable the option, open the **Functionality profile** for the channel where paying later will not be allowed, and then click **Edit**. On the **General** tab, click the dropdown for **Require payment for fulfillment**. If paying later should not be allowed at the POS, select **Card required** and click **Save**. Be sure to run the **1070** distribution schedule to synchronize this change to the channel. 

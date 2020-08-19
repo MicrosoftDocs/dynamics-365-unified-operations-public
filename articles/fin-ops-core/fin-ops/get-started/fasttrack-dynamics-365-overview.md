@@ -5,7 +5,7 @@ title: Microsoft FastTrack
 description: This topic provides an overview of Microsoft FastTrack. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
 author: Jeff-Luo-MSFT
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,9 +43,9 @@ We offer different [deployment options](../../dev-itpro/deployment/choose-deploy
 
 To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum for the Dynamics 365 Finance and Operations Plan or equivalent.
 
-After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
+After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS Implementation project, a reminder will be sent to the project team. It's important that the project onboarding in LCS is completed with the most accurate date, and that the email addresses listed in the setup are monitored. For more information, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
-| FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Dedicated FastTrack engineering resources |
+| FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Designated FastTrack engineering resources |
 | --- | --- | --- | --- | --- | --- |
 | **Dynamics 365 FastTrack** <br></br> **Business process applications** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources\* | Combined annual adjusted revenue of $300,000 or more | All included | All included | All included | Included |
 | **FastTrack Essentials** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources | Combined annual adjusted revenue < $300,000 | All included | Pre go-live assessment | Not included | Not included |
@@ -88,7 +88,7 @@ The kick-off meetings are available to customers who are eligible for a designat
 - Explanation of how services are delivered, and where and when to seek help from the FastTrack engineering team
 - Critical success factors and key learning that can be shared by the FastTrack team
 
-Typically, the designated FastTrack solution architect will initialize the engagement by scheduling a partner kick-off meeting followed by a customer kick-off meeting after the eligible customer has completed the onboarding process. For more information about customer onboarding, see [Onboard an implementation project](../imp-lifecycle/onboard.md). 
+Typically, the designated FastTrack solution architect will initialize the engagement by scheduling a partner kick-off meeting followed by a customer kick-off meeting after the eligible customer has completed the onboarding process. For more information, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
 The typical format of a partner kick-off meeting is a one-hour Microsoft Teams call. For customers, the kick-off meeting is a three-hour Microsoft Teams call. The recommended attendees include key stakeholders like customer’s project sponsor (not required for entire kick-off meeting), project managers, solution architects, technical/functional leads, business process owners from the customer, a partner, and the Microsoft teams. The kick-off meeting can also be conducted in a combined customer and partner session if the implementation partners have been through the process before.
 
@@ -109,7 +109,7 @@ The Solution blueprint workshops are designed to promote understanding of the so
 
 - Business intelligence and analytics design
 
-The typical format is a two-to-four-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a two-to-four-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
 ### Environment planning workshop
 
@@ -120,7 +120,7 @@ The Environment planning workshop is designed to cover the environment planning 
 - Project schedule and phases
 - Rollout and long-term operations plan
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
 ### Gap solution design workshop
 
@@ -131,7 +131,7 @@ The Gap solution design workshop is designed for implementations that have criti
 - Potential workarounds that have been considered
 - ISV solutions that have been considered
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
 ### Application lifecycle management review workshop
 
@@ -143,7 +143,7 @@ The Application lifecycle management (ALM) review workshop is designed for cases
 - Build process design
 - Rollout plan
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
 ### Performance workshop
 
@@ -153,7 +153,7 @@ The Performance workshop is designed for cases where implementers must make sure
 - Performance testing approach
 - Performance remediation approach
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Integration design workshop
 
@@ -164,7 +164,7 @@ The Integration design workshop is designed to review the overall plan for integ
 - Middleware designs
 - Performance and operational aspects of the integration designs
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Data migration workshop
 
@@ -173,7 +173,7 @@ The Data migration workshop is designed to help guarantee that the migration str
 - Data migration strategy
 - Data migration design
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Business intelligence and analytics design workshop
 
@@ -184,7 +184,7 @@ The Business intelligence (BI) and analytics design workshop is designed to revi
 - Output document designs
 - Financial reporting designs
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Test strategy workshop
 
@@ -197,7 +197,7 @@ The Test strategy workshop is designed to validate the strategy that has been pr
 - Regression test strategy
 - Mock cutover strategy
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and testing leads are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and testing leads are mandatory.
 
 ### Cutover plan workshop
 
@@ -209,7 +209,7 @@ The Cutover plan workshop is designed to validate the plan for go-live cutover. 
 - Cutover validation approach
 - Cutover contingency planning
 
-The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and project managers are mandatory.
+The typical format is a one-to-three-hour Teams meeting. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and project managers are mandatory.
 
 ### Go-live assessment workshop
 
@@ -227,7 +227,7 @@ The Go-live assessment workshop is designed to help guarantee a successful go-li
 - Customer go/no-go criteria
 - Support process and Hyper-care plan
 
-The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
+The typical format is a one-and-a-half-hour Teams meeting. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
 
 ### Post go-live review workshop
 
@@ -239,4 +239,4 @@ The Post go-live review workshop is designed to wrap up the FastTrack engagement
 - Review of aged support items
 - Handover of open issues to support teams
 
-The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams. Project managers are mandatory.
+The typical format is a one-and-a-half-hour Teams meeting. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams. Project managers are mandatory.
