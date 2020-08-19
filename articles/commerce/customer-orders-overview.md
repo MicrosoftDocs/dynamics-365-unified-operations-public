@@ -91,7 +91,6 @@ Before attempting to create customer orders in the Point of Sale (POS) applicati
 
 ### Update transaction screen layouts in POS
 
-
 Ensure the POS [screen layout](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) has been configured to support the creation and management of customer orders and that all necessary POS operations are configured. Some POS operations that are recommended to properly support customer order creation and management in POS are listed below.
 - **Ship all products** - used to configure all lines in the transaction cart to be shipped to a destination
 - **Ship selected products** - used to configure select lines in the transaction cart to be shipped to a destination
