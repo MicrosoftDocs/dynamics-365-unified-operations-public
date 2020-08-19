@@ -156,6 +156,8 @@
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Handling multiple entity maps
+                  href: data-entities/dual-write/multiple-entity-maps.md
                 - name: Edit a legal entity after dual-write setup
                   href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
@@ -1470,6 +1472,8 @@
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
+      - name: Stay compliant with user licensing requirements
+        href: sysadmin/stay-compliant-user-license-requirement.md
       - name: Process automation
         href: sysadmin/process-automation.md
       - name: Batch processing

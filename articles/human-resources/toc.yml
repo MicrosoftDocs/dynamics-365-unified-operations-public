@@ -383,6 +383,8 @@
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
         href: hr-workflow-manage-employee-information.md
+      - name: View and manage address changes
+        href: hr-personnel-view-address-changes.md
       - name: Modify reporting relationships for a position
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
@@ -395,8 +397,6 @@
         href: hr-personnel-loan-items.md
       - name: Develop a succession plan
         href: hr-personnel-develop-succession-plan.md
-      - name: Enter project timesheets
-        href: hr-personnel-enter-project-timesheets.md
       - name: Mass hire projects
         href: hr-personnel-mass-hire-projects.md
       - name: Create a mass hire project

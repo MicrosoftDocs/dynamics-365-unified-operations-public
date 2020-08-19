@@ -66,9 +66,7 @@ This page lists the resources that are available for IT pros and developers who 
 ## Customize POS
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
-- [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
 - [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
-- [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
@@ -87,8 +85,6 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
 
 ## Commerce Scale Unit
--   [Extend a Commerce Scale Unit OData controller](extend-retail-server-odata-controller.md)
--   [Extend the default Commerce Scale Unit metadata controller](extend-metadata.md)
 -   [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 -   [Commerce Scale Unit](retail-store-system-begin.md)
 -   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
@@ -101,7 +97,6 @@ This page lists the resources that are available for IT pros and developers who 
 ## Commerce Runtime
 - [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
 - [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
-- [Add customer preference data to channel databases](add-customer-preference-channel.md)
 - [Manage secrets for retail channels](manage-secrets.md)
 - [Log extension events to Application Insights](commerce-application-insights.md)
 - [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)

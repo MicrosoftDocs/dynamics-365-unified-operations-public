@@ -5,7 +5,7 @@ title: Customer orders in Point of Sale (POS)
 description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 08/11/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -91,8 +91,8 @@ Before attempting to create customer orders in the Point of Sale (POS) applicati
 
 ### Update transaction screen layouts in POS
 
-Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) has been configured to support the creation and management of customer orders and that all necessary POS operations are configured.   Some POS operations that are recommended to properly support customer order creation and management in POS are listed below
 
+Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) has been configured to support the creation and management of customer orders and that all necessary POS operations are configured.   Some POS operations that are recommended to properly support customer order creation and management in POS are listed below.
 - **Ship all products** - used to configure all lines in the transaction cart to be shipped to a destination
 - **Ship selected products** - used to configure select lines in the transaction cart to be shipped to a destination
 - **Pick up all products** - used to configure all lines in the transaction cart to be picked up at a select store location

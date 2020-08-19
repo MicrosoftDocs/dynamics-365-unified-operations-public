@@ -3,9 +3,9 @@
 
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
-author: kfend
+author: AngelMarshall
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -207,3 +207,8 @@ We will deprecate support for the following regions only for new projects that w
 -	South Central US
 
 This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.
+
+### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
+This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
+
+

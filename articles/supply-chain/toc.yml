@@ -1827,10 +1827,6 @@
             href: pim/tasks/obsolete-product-variants.md
           - name: Exclude products from Master planning
             href: pim/tasks/exclude-products-master-planning.md
-        - name: Dual-use goods
-          href: pim/dual-use.md
-        - name: Country of origin
-          href: pim/country-of-origin.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -1839,6 +1835,20 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Hazardous materials
+          items:
+          - name: Hazardous materials overview
+            href: pim/hazmat-overview.md
+          - name: Set up hazardous materials
+            href: pim/hazmat-setup.md
+          - name: Hazardous materials in products, orders, shipments, and loads
+            href: pim/hazmat-items.md
+          - name: Hazardous materials inquiries and reports
+            href: pim/hazmat-reports.md
         - name: Translation of product information FAQ
           href: pim/translations-product-related-information.md
         - name: Search for product during order entry
@@ -2751,6 +2761,8 @@
             href: inventory/warehouse-template.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
+          - name: Create location directives
+            href: warehousing/create-location-directive.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
