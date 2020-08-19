@@ -177,9 +177,10 @@ Once the above changes have been made in the back office environment, synchroniz
 
 ### Configure PayPal for the Storefront checkout module
 
-For details related to configuring Storefront to use PayPal in the checkout module, please visit the [Configure Storefront to use PayPal](www.microsoft.com) docs article.  
+For details related to configuring Storefront to use PayPal in the checkout module, please visit the [Payment module](https://docs.microsoft.com/en-us/dynamics365/commerce/payment-module) docs article.  
 
 ## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Checkout module](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
+- [Payment module](https://docs.microsoft.com/en-us/dynamics365/commerce/payment-module)
