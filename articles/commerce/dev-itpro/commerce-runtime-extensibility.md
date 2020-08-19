@@ -124,7 +124,7 @@ Attributes are also supported (configuration-driven development). For extension 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
-**Register the CRT extension**
+## Register the CRT extension
 
 After extending CRT, place the extension library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (when POS is connected to Retail server). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
 
@@ -143,7 +143,7 @@ For offline, you should you put the custom library in the **…\\Program Files (
 ```C#
 <add source="assembly" value="your custom library name" />.
 ```
-Register extension configuration
+## Register extension configuration in the ommerceRuntime.Ext.config
 
 Extension can register any key-value type of configs in the ommerceRuntime.Ext.config under the <settings> node
 
@@ -172,7 +172,7 @@ Ex:
 
 The preceding steps are used for manual deployment and testing in your development box. To package the extension and deploy it to production or user acceptance testing (UAT), use the information in the packaging document.
 
-**Debugging CRT**
+## Debugging CRT
 
 To debug CRT from POS, you should attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server, for offline attach the CRT extension project to the dllhost.exe process.
 
@@ -323,7 +323,7 @@ namespace Contoso
 > [!NOTE]
 > You must change this query, based on your new field and table, or whatever condition you're using. When you design the table, make sure that you have the primary key field from the parent table, so that you can query it by using the CRT entity. Most CRT entities should have the primary key field in them, such as the **RecId** field or another relevant unique field that is used to select the record.
 
-**Saving extension properties by overriding the handler** 
+## Saving extension properties by overriding the handler
 
 **Scenario**
 
@@ -450,7 +450,7 @@ let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
 this.context.runtime.executeAsync(new SaveExtensionPropertiesOnCartClientRequest([sampleExtensionProperty]));
 ```
 
-**Reading the extension property from the cart in POS**
+## Reading the extension property from the cart in POS
 
 ```typescript
 let getCartRequest: GetCurrentCartClientRequest<GetCurrentCartClientResponse> = new GetCurrentCartClientRequest<GetCurrentCartClientResponse>();
