@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and reciving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
 
 ## Definition of a calendar
 
