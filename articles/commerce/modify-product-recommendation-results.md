@@ -114,6 +114,8 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Add product recommendations on POS](product.md)
 
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)

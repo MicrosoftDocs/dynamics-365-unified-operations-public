@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.13 (October 2020)
+          href: get-started/whats-new-platform-updates-10-0-13.md
         - name: Platform updates for 10.0.12 (August 2020)
           href: get-started/whats-new-platform-update-10-0-12.md
         - name: Platform updates for 10.0.11 (July 2020)
@@ -82,6 +84,8 @@
       items:
       - name: Choose a data integration (import/export) strategy
         href: data-entities/integration-overview.md
+      - name: Priority-based throttling
+        hreF: data-entities/priority-based-throttling.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -152,6 +156,10 @@
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Handling multiple entity maps
+                  href: data-entities/dual-write/multiple-entity-maps.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
@@ -1456,8 +1464,16 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Import or export customized security configuration using Data management
+          href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
+        - name: Extensible data security policies
+          href: sysadmin/extensible-data-security-policies.md
+        - name: Create a security policy
+          href: sysadmin/create-simple-security-policy.md
+      - name: Stay compliant with user licensing requirements
+        href: sysadmin/stay-compliant-user-license-requirement.md
       - name: Process automation
         href: sysadmin/process-automation.md
       - name: Batch processing
@@ -1668,7 +1684,7 @@
           href: user-interface/check-box-tree-controls.md
         - name: Filtering options
           href: user-interface/filtering.md
-        - name: PowerApps Host control
+        - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
       - name: Window management
         items:

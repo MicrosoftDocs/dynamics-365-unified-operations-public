@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BOMReportFinish, BOMReportFinishMax
+ms.search.form: BOMReportFinish, BOMReportFinishMax, BOMSetupReportFinish
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

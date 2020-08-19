@@ -5,6 +5,12 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: August 6, 2020
+      href: hr-whats-new-2020-08-06.md
+    - name: July 23, 2020
+      href: hr-whats-new-2020-07-23.md
+    - name: July 8, 2020
+      href: hr-whats-new-2020-07-08.md
     - name: June 25, 2020
       href: hr-whats-new-2020-06-23.md
     - name: June 11, 2020
@@ -19,16 +25,16 @@
       href: hr-whats-new-2020-04-13.md
     - name: April 3, 2020
       href: hr-whats-new-2020-04-03.md
-    - name: March 24, 2020
-      href: hr-whats-new-2020-03-24.md
-    - name: March 19, 2020
-      href: hr-whats-new-2020-03-19.md
-    - name: March 10, 2020
-      href: hr-whats-new-2020-03-10.md
-    - name: March 3, 2020
-      href: hr-whats-new-2020-03-03.md
     - name: What's new archives 2020
       items:
+      - name: March 24, 2020
+        href: hr-whats-new-2020-03-24.md
+      - name: March 19, 2020
+        href: hr-whats-new-2020-03-19.md
+      - name: March 10, 2020
+        href: hr-whats-new-2020-03-10.md
+      - name: March 3, 2020
+        href: hr-whats-new-2020-03-03.md
       - name: February 25, 2020
         href: hr-whats-new-2020-02-25.md
       - name: February 18, 2020
@@ -221,8 +227,6 @@
         href: hr-setup-parameters.md
       - name: Configure Human resources shared parameters
         href: hr-setup-shared-parameters.md
-      - name: Set up Human resource workflows
-        href: hr-setup-workflows.md
       - name: Understand Date and Time fields
         href: hr-setup-date-time-fields.md
     - name: Configure organization settings
@@ -379,6 +383,8 @@
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
         href: hr-workflow-manage-employee-information.md
+      - name: View and manage address changes
+        href: hr-personnel-view-address-changes.md
       - name: Modify reporting relationships for a position
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
@@ -391,8 +397,6 @@
         href: hr-personnel-loan-items.md
       - name: Develop a succession plan
         href: hr-personnel-develop-succession-plan.md
-      - name: Enter project timesheets
-        href: hr-personnel-enter-project-timesheets.md
       - name: Mass hire projects
         href: hr-personnel-mass-hire-projects.md
       - name: Create a mass hire project
@@ -577,5 +581,7 @@
       items:
       - name: Employee and Manager self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Change Employee self service workspace name
+        href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information
         href: hr-employee-manager-self-service-edit-personal-information.md

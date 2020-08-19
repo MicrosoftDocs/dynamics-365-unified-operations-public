@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -36,6 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](includes/banner.md)]
 
 This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+
+> [!NOTE]
+> There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 
 ## Technology
 
@@ -277,7 +280,7 @@ The device should now be activated and ready to use.
 
 - If you're using a downloaded virtual hard disk (VHD) instead of a cloud-hosted environment, the downloader might fail.
 
-    - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
+    - **Solution 1:** In a downloaded VHD, the Azure Storage Emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
         1. In File Explorer, browse to **C:\\Microsoft Dynamics 365\\70\\Retail Server**.

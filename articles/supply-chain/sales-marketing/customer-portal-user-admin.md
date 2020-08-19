@@ -5,7 +5,7 @@ title: Create and manage Customer portal users
 description: This topic explains how to create Customer portal user accounts and set permissions for them.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,6 +34,11 @@ In the out-of-box implementation, there is no way for users to self-register for
 Before a user can use a website, a contact record must be created for that user. This record indicates which customer account and legal entity the user belongs to. This information is essential for ensuring that the user can create and view sales orders.
 
 When users self-register, contact records are automatically created for them. Therefore, you can't ensure that a user selects the correct customer account and legal entity. On the other hand, the invitation process lets an admin assign the correct customer account and legal entity to the contact record before an invitation is sent. If you're thinking about customizing the solution so that users can self-register, be sure to consider the possible consequences.
+
+## Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+The [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Prerequisite setup
 

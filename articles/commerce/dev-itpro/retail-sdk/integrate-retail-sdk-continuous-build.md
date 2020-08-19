@@ -3,7 +3,7 @@
 
 title: Merge the build systems for Commerce and Finance
 description: This topic describes the steps for merging the build systems for both Dynamics 365 Commerce and Dynamics 365 Finance using Azure DevOps.  
-author: AndreasHassing
+author: andreashofmann1
 manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
