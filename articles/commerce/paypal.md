@@ -101,11 +101,64 @@ To test the PayPal connector, you must first create PayPal developer credentials
 
 ## Setup the connector in Dynamics 365
 
+### Map the PayPal wallet payment method to a procesor payment method
+
 > [!NOTE]
-> Some of these steps leverage a new capability called **Processor payment methods**. For more information on this feature, visit the docs article for [**Processor payment methods**](
+> Some of these steps leverage a new capabilities for supporting wallet payment methods. For more information on this feature, visit the docs article for [**wallet support**](articles/commerce/wallets.md).
+
+1. Navigate to **Retail and Commerce \> Channel Setup \> Payment methods \> Payment methods**.
+2. Click **New**.
+3. Specify a **Payment method ID**, **Payment method name** such as **Wallet**, and set the **Default function** to **Wallet**, then click **Save**.
+4. Navigate to **Retail and Commerce \> Channel Setup \> Payment methods \> Card types**.
+5. Click **New**.
+6. Specify an **ID** such as **PayPal**, an **Electronic payment name** such as **PayPal**, set **Type** to **Wallet** and specify a name for the **Issuer** such as **PayPal**, then click **Save**.
+7. Select the entry previously created and click **Processor mapping**.
+8. In the **Processor payment method mapping** form, select the previously created **Paypal** card type, then in the middle column select the **Dynamics 365 Payment connetor for PayPal** and click **Add**. 
+
+### Set up the PayPal connector in Payment services
+
+Follow these steps to configure the PayPal payment connector in **Payment Services**.
+
+1. Sign in to Headquarters, and go to **Accounts receivable \> Payments setup \> Payment services**.
+2. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
+
+    | Field | Description | Sample value |
+    |---|---|---|
+    | Payment service | Enter the name of the payment service to configure. | Adyen Payment Service |
+    | Payment connector | Select the payment connector to use for new credit card payments. | Dynamics 365 Payment Connector for Adyen |
+    | Test mode | For the Adyen connector, in production and test environments you should set this field to **false**. | false |
+    | Default processor for credit cards | Specify whether this payment processor should be the default processor that's used for new credit cards. | Yes |
+    | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
+
+3. On the **Payment service account** tab, enter the following information.
+
+    | Field | Description | Required | Automatically set | Sample value |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
+    | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
+    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
+    | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
+    | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
+    | Local Key Identifier | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
+    | Local Key Version | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
+    | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
+    | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
+    | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. | No | No | SVS |
+    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
 
-1. Navigate to 
+
+
+
+
 
 
 
