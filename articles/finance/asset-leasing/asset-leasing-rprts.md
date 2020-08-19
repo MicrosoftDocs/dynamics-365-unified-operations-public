@@ -35,33 +35,32 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists and briefly describes the reports that are available in Asset leasing. You can display most reports by completing similar steps. For the reports that require a different selection path, the steps to generate the report are include with that report's description. 
+This topic lists and briefly describes the reports that are available in Asset leasing. You can display most reports by completing similar steps. 
 
-- To view most Asset leasing reports, open the **Asset movements** report page (**Asset Leasing > Inquiries & reports** and then select a report to view). 
-- A parameters page will open where you can set filters on the lease transactions. Enter filter criteria and click **OK**.
-  The generated report will show information that falls within the filters that you specified.
+- To view most Asset leasing reports, click **Asset Leasing > Inquiries & reports > Lease reports** and then select a report to view). For the reports that require a different selection path, the steps to open the report are include with that report's description. 
+- When you select a report to print, a parameters page will open that lets you filter the information that's included on the report. Enter filter criteria, and then click **OK** to generate the report. The generated report will show information that falls within the filters that you specified.
 
 ## Asset movements 
-The Asset movement report, which serves as a rollforward report for the right-of-use asset balances for each lease. This report lets you view the asset transactions of a lease during a specified period. The report includes the following fields. 
+The Asset movement report serves as a rollforward report for the right-of-use asset balances for each lease. This report lets you view the asset transactions of a lease during a specified period. The report includes the following fields. 
 
 |     Name                           |     Description                                                                |
-|------------------------------------|--------------------------------------------------------------------|
-|     Commencement Date              |     The commencement date of the lease’s earliest version.   |   
-|     Lease Term                     |     The lease term of the lease’s earliest version.                               |
-|     Short Term Lease               |     If lease is classified as a short-term lease will show as   “Yes”               |
-|     Low Value Lease                |     If lease is classified as a low-value lease will show as   “Yes”                   |
+|------------------------------------|--------------------------------------------------------------------------------|
+|     Commencement Date              |     The commencement date of the lease’s earliest version.                     |   
+|     Lease Term                     |     The lease term of the lease’s earliest version.                            |
+|     Short Term Lease               |     If lease is classified as a short-term lease will show as   “Yes”          |
+|     Low Value Lease                |     If lease is classified as a low-value lease will show as   “Yes”           |
 |     Initial Right of Use Asset     |     The original value of the right of use asset from the   initial recognition journal entry      |
 |     Beginning Balance              |     The net book value of the right of use asset as of the   From Date                             |
 |     Period Depreciation Expense    |     The amount of depreciation expense taken between the To   and From Dates                       |
 |     Accumulated Depreciation       |     The amount of accumulated depreciation as of the From Date                                     |
-|     Impairment                    	|     The amount the asset was impaired between date parameters                                     |
+|     Impairment                     |     The amount the asset was impaired between date parameters                                      |
 |     Modifications                  |     The amount of adjustments to the right of use asset   between date parameters                  |
 |     Net Book Value                 |     The ending net book value of the right of use asset, net   of accumulated depreciation as of the To Date    |
 
 ## Differences report
-The Differences report, shows the differences between information loaded into the Lease import framework and the information that's currently in the system. This lets you compare what was adjusted, updated, or added through the Lease import framework functionality.
+The Differences report shows the differences between information loaded into the Lease import framework and the information that's currently in the system. This lets you compare what was adjusted, updated, or added through the Lease import framework.  
 
-The values in the report will vary based on the lease presented. The report will only show those fields that are differ from what is currently in the system and what is in the staging tables. The Old value is what is either currently in the system or that was previously in the system, depending on whether the import process has run. The New value are the values in the staging table and will replace the Old value.
+The values in the report will vary based on the selected lease. The report will only show those fields that are differ from what is currently in the system and what is in the staging tables. The Old value is what is either currently in the system or that was previously in the system, depending on whether the import process has run. The New value are the values in the staging table and will replace the Old value.
 
 ## Five-years undiscounted payment forecast
 The Five years undiscounted payment forecast report shows the projected undiscounted lease payments to be paid over the next five years from the date specified on the report parameters. The report includes the following fields. 
@@ -105,71 +104,71 @@ The Lease balances forecast report is a forecasted report lists information dire
 
 |     Name                        	|     Description                                                                                                                                                                            	|
 |---------------------------------	|--------------------------------------------------------------------------------------------------------------------	|
-|     Beginning Balance           	|     The “Beginning Balance” in the lease’s amortization   schedule for the period containing the start date of the report                         	|
-|     Initial Recognition         	|     If the commencement date of the lease falls between the   report’s date parameters, this column will display the liability account   value of the Initial Recognition journal entry    	|
-|     Payments                    	|     The sum of the lease’s payments that fall within the   report’s date parameters                                           	|
-|     Interest                    	|     The sum of the lease’s interest expenses that fall within   the report’s date parameters                                  	|
-|     Ending Balance              	|     The liability balance of the lease as of the report’s “To   Date”                                                         	|
-|     Short Term Liability        	|     The short term liability amount in the lease’s   amortization schedule as of the report’s “To Date”                        	|
-|     Long Term Liability         	|     The long term liability amount in the lease’s amortization   schedule as of the report’s “To Date”                         	|
-|     Beginning Net Book Value    	|     The “Beginning Net Book Value” in the lease’s asset   depreciation schedule for the period containing the start date of the report    	|
-|     Initial Recognition         	|     If the commencement date of the lease falls between the   report’s date parameters, this column will display the asset account value of   the Initial Recognition journal entry        	|
-|     Depreciation Expense        	|     The sum of the lease’s depreciation expenses that fall   within the report’s date parameters                                	|
-|     Ending Balance              	|     The asset balance as of the lease as of the report’s “To   Date”                                                             	|
-|     Equity Adjustment           	|     The Beginning Balance minus the Beginning Net Book Value                                                                    	|
+|     Beginning balance           	|     The beginning balance in the lease’s amortization schedule for the period containing the start date of the report.         	|
+|     Initial recognition         	|     If the commencement date of the lease falls within the date range defined for the report, this column will display the liability account value of the initial recognition journal entry.    	|
+|     Payments                    	|     The sum of the lease’s payments that fall within the date range defined for the report.                                           	|
+|     Interest                    	|     The sum of the lease’s interest expenses that fall within the date range defined for the report.                                  	|
+|     Ending balance              	|     The liability balance of the lease as of the **To date**.                                                         	|
+|     Short term liability        	|     The short term liability amount in the lease’s amortization schedule as of the **To date**.                        	|
+|     Long term liability         	|     The long term liability amount in the lease’s amortization schedule as of the **To date**.                         	|
+|     Beginning Net Book Value    	|     The “Beginning Net Book Value” in the lease’s asset depreciation schedule for the period containing the start date of the report    	|
+|     Initial recognition         	|     If the commencement date of the lease falls between the report’s date parameters, this column will display the asset account value of   the initial recognition journal entry.        	|
+|     Depreciation expense        	|     The sum of the lease’s depreciation expenses that fall within the date range defined for the report.                         	|
+|     Ending balance              	|     The asset balance as of the lease as of the **To date**.                                                             	|
+|     Equity adjustment           	|     The beginning balance minus the beginning net book value.                                                                    	|
 
 ## Lease commencements report
 The Lease commencements report shows all leases that have commenced within a specified date range including the initial liability and right-of-use asset balances. The report includes the following fields. 
 
 |     Name                        	|     Description                                                                                   	|
 |---------------------------------	|---------------------------------------------------------------------------------------------------	|
-|     Commencement Date           	|     The date of the Initial Recognition journal entry that was   posted for that lease version    	|
-|     Initial Liability Amount    	|     The liability amount from the Initial Recognition journal   entry                             	|
-|     Initial Asset Amount        	|     The asset amount from the Initial Recognition journal   entry                                 	|
+|     Commencement Date           	|     The date of the initial recognition journal entry that was posted for that lease version.     	|
+|     Initial liability amount    	|     The liability amount from the initial recognition journal entry.                              	|
+|     Initial asset amount        	|     The asset amount from the initial Recognition journal entry.                                  	|
 
 ## Lease modifications report
-The Lease modification report shows all leases that have been modified within a specified date range, along with information into the user who adjusted the lease and the total amount of liability adjusted. The report includes the following fields. 
+The Lease modification report shows all leases that have been modified within a specified date range. The report also shows the user who adjusted the lease, and the total amount of liability adjusted. The report includes the following fields. 
 
 |     Name                        	|     Description         	|
 |---------------------------------	|-------------------------	|
-|     Adjusted By                 	|     The username of the person who modified the lease.                             	|
-|     Adjustment Date             	|     The date on which the adjustment journal entry was posted.                     	|
-|     Adjustments                 	|     The amount for any adjustment journal entry posted to the   lease’s Liability Account between the date parameters. Credits will appear   positive, while debits will be negative.    	|
-|     Gain (Loss) Amount          	|     The amount for any adjustment journal entry posted to the   lease’s Gain/Loss Account between the date parameters. Credits will appear   positive, while debits will be negative.    	|
-|     Retained Earnings           	|     The amount for any adjustment journal entry posted to the   lease’s Retained Earnings Account between the date parameters.                    	|
-|     Ending Liability Balance    	|     The resulting liability balance as of the adjustment date   of the lease.       	|
+|     Adjusted by                 	|     The username of the person who modified the lease.                             	|
+|     Adjustment fate             	|     The date on which the adjustment journal entry was posted.                     	|
+|     Adjustments                 	|     The amount for any adjustment journal entry posted to the lease’s liability account between the date parameters. Credits will appear   positive, while debits will be negative.    	|
+|     Gain (loss) amount          	|     The amount for any adjustment journal entry posted to the lease’s gain/loss account between the date parameters. Credits will appear   positive, while debits will be negative.    	|
+|     Retained earnings           	|     The amount for any adjustment journal entry posted to the lease’s retained earnings account between the date parameters.     	|
+|     Ending liability balance    	|     The resulting liability balance as of the adjustment date of the lease.       	|
 
 ## Lease movements report
 The Lease movement report serves as a rollforward report for the lease lability balances for each lease. This report allows the user to view the liability transactions of a lease during a specified period.
 
 |     Name                   	|     Description                                             	|
 |----------------------------	|--------------------------------------------------------------	|
-|     Commencement Date      	|     The commencement date of the lease’s earliest version.   	|
-|     Lease Term             	|     The lease term of the lease’s earliest version.           |
-|     Payments Remaining     	|     The number of payments that have not yet been posted for   the lease.                    	|
-|     Beginning Balance      	|     The sum of all transactions affecting the lease’s   liability that occurred before the report’s start date.            	|
-|     Initial Recognition    	|     The amount of any initial recognition transaction for the   lease that was posted between the “From” and “To” dates of the report.          	|
-|     Payments               	|     The sum of the lease’s payment transactions that have been   posted between the “From” and “To” dates of the report. This column will   appear as a negative amount, as the payments are decreasing the lease’s   liability balance.    	|
-|     Interest               	|     The sum of the interest accruals that have been posted   against the lease between the “From” and “To” dates of the report.          	|
-|     Adjustments            	|     The sum of the lease’s posted adjustment transactions   between the “From” and “To” date of the report.                             	|
-|     Ending Balance         	|     The balance of all the lease’s liability transactions that   have been posted as of the “To” date of the report.                     	|
+|     Commencement date      	|     The commencement date of the lease’s earliest version.   	|
+|     Lease term             	|     The lease term of the lease’s earliest version.           |
+|     Payments remaining     	|     The number of payments that have not yet been posted for the lease.                    	|
+|     Beginning balance      	|     The sum of all transactions affecting the lease’s liability that occurred before the report’s start date.            	|
+|     Initial recognition    	|     The amount of any initial recognition transaction for the lease that was posted within the date range defined for the report.   	|
+|     Payments               	|     The sum of the lease’s payment transactions that have been posted within the date range defined for the report. This values in this column will appear as negative amounts as the payments are decreasing the lease’s liability balance.  |
+|     Interest               	|     The sum of the interest accruals that have been posted against the lease within the date range defined for the report.          	|
+|     Adjustments            	|     The sum of the lease’s posted adjustment transactions within the date range defined for the report.                             	|
+|     Ending balance         	|     The balance of all the lease’s liability transactions that have been posted as of the **To date** of the report.                 	|
 
 ## Lease transactions report
-The **Lease Transactions inquiry** shows all the journal entries that have been generated by Asset leasing. Each journal entry is linked with the book ID from where the entry was produced. This lets you easily associate the journal entry with corresponding lease. The **Lease transactions inquiry** page contains similar functionality to the **Voucher transactions** page in General ledger.
+The **Lease Transactions inquiry** shows all the journal entries that have been generated by Asset leasing. Each journal entry is linked with the book ID it was originated from. This lets you easily associate the journal entry with corresponding lease. The **Lease transactions inquiry** functions in manner that's similar to the **Voucher transactions** page in General ledger.
 
 ## Weighted-average discount rate report
-The Weighted-Average Discount Rate Report satisfies the US GAAP disclosure requirement specified in ASC 842-20-50-4(g)(4) for a weighted-average discount rate. The report includes the following fields. 
+The Weighted-average discount rate report satisfies the US GAAP disclosure requirement specified in ASC 842-20-50-4(g)(4) for a weighted-average discount rate. To view this report, click **Asset Leasing > Inquiries & reports > Disclosures > Weighted-average discount rate**.The report includes the following fields. 
 
 |     Report Field                   	|     Description                                                                                                                                                                           	|
 |------------------------------------	|----------------------------------------------------------------------------------------------------------------------------	|
-|     As Of Date                     	|     This report will include all leases that have commenced   before or on the ‘As Of’ date parameter. This report should be run ‘As Of’   the last day of the period to be disclosed.    	|
-|     Legal Entity                   	|     The legal entity that is tied to the lease                                                                                                                                            	|
-|     Lease ID                       	|     The unique lease ID                                                                                                                                                                   	|
-|     Lease Description              	|     The lease description from the lease header                                                                                                                                           	|
-|     Book                           	|     The specific book type of the displayed lease                                                                                                                                         	|
-|     Posting Layer                  	|     Each book that is attached to a fixed asset is set up for   a particular posting layer that has an overall depreciation objective.                                                    	|
-|     Lease Group                    	|     The group to which the lease belongs                                                                                                                                                  	|
-|     Discount Rate                  	|     The rate used to discount lease payments                                                                                                                                              	|
-|     Currency                       	|     The abbreviation for the transactional currency used. All   reports will convert the transactional currency to the reporting currency.                                                	|
-|     Lease Payments Remaining       	|     The total amount of unpaid lease payments from the payment   schedule remaining from the ‘As Of’ date                                                                                 	|
-|     Weighted Payments Remaining    	|     The lease payments remaining multiplied by the discount   rate used.                                                                                                                  	|
+|     As of date                     	|     This report will include all leases that have commenced on or before the **As of** date parameter. This report should be run as of   the last day of the period to be disclosed.    	|
+|     Legal entity                   	|     The legal entity that is tied to the lease.                       	|
+|     Lease ID                       	|     The unique lease ID.                                               	|
+|     Lease description              	|     The lease description from the lease header.                      	|
+|     Book                           	|     The specific book type of the displayed lease.                                                                                                                                         	|
+|     Posting layer                  	|     Each book that is attached to a fixed asset is set up for a particular posting layer that has an overall depreciation objective.   	|
+|     Lease group                    	|     The group to which the lease belongs.                              	|
+|     Discount rate                  	|     The rate used to discount lease payments.                          	|
+|     Currency                       	|     The abbreviation for the transactional currency used. All reports will convert the transactional currency to the reporting currency. 	|
+|     Lease payments remaining       	|     The total amount of unpaid lease payments from the payment schedule remaining from the ‘As Of’ date.         	|
+|     Weighted payments remaining    	|     The lease payments remaining multiplied by the discount rate used.   |
