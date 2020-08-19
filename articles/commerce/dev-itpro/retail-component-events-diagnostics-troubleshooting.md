@@ -5,7 +5,7 @@ title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
