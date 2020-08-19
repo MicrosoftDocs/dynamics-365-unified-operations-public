@@ -76,12 +76,12 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 
 | Lifecycle operation | Description | Learn more
 |---------------------|-------------|------------|
-| Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md).
+| Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md)
 | Enable access | Whitelist your IP for Remote Desktop or Database access | See Remote Desktop section of this article below
 | Restart services | Ability to restart components of your environment | [Restart environment services](../lifecycle-services/restart-environment-services.md)
 | Move database | Full data lifecycle management | [Database movement operations](../database/dbmovement-operations.md)
 | Maintenance mode | Ability to change configuration with only admin access | [Maintenance mode](../sysadmin/maintenance-mode.md)
-| Upgrade | Upgrade code and data from 7.x to the latest version | [Process for moving to the latest version](../migration-upgrade/upgrade-latest-update.md)
+| Upgrade | Upgrade code and data from 7.x to the latest version | [Process for moving to the latest update](../migration-upgrade/upgrade-latest-update.md)
 | Deallocate | Ability to turn off an environment not being used, or to troubleshoot a failed action | Not applicable
 | Start | Ability to turn on an environment for use | Not applicable
 | Delete | Ability to delete an environment previously deallocated | Not applicable
