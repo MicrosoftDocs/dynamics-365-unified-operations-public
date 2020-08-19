@@ -97,7 +97,10 @@ To test the PayPal connector, you must first create PayPal developer credentials
 9. Next navigate to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and click **Log in to Dashboard**.
 10. Log in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
-12. Note your **Sandbox account**, **Client ID**, and **Secret**. These will be used to set up the connector in Dynamics 365 Commerce.
+12. Note your the **Client ID**, and **Secret** for your Sandbox account. These will be used to set up the connector in Dynamics 365 Commerce.
+
+> [!NOTE]
+> To collect **Client ID** and **Secret** for a live environment, click the **Live** tab for the selected RestAPI app.
 
 ## Setup the connector in Dynamics 365
 
@@ -124,52 +127,59 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
 
     | Field | Description | Sample value |
     |---|---|---|
-    | Payment service | Enter the name of the payment service to configure. | Adyen Payment Service |
-    | Payment connector | Select the payment connector to use for new credit card payments. | Dynamics 365 Payment Connector for Adyen |
-    | Test mode | For the Adyen connector, in production and test environments you should set this field to **false**. | false |
-    | Default processor for credit cards | Specify whether this payment processor should be the default processor that's used for new credit cards. | Yes |
+    | Payment service | Enter the name of the payment service to configure. | PayPal |
+    | Payment connector | Select the PayPal payment connector. | Dynamics 365 Payment Connector for PayPal |
+    | Test mode | For the PayPal connector, in production and test environments you should set this field to **false**. | false |
+    | Default processor for credit cards | This should be selt to **No** because the Call Center uses the default processor. | No |
     | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
 
 3. On the **Payment service account** tab, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
-    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for PayPal. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
-    | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
+    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
+    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
+    | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
-    | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
-    | Local Key Identifier | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
-    | Local Key Version | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
-    | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
-    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
-    | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
-    | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. | No | No | SVS |
-    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
-    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
-    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
+    
+> [!NOTE]
+> When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
 
+### Set up the PayPal connector for the online store
 
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Online stores**.
+2. Select the online store to add the Dynamics 365 Payment Connector for PayPal.
+3. On the **Online store** page, on the **Payment accounts** FastTab, select **Add**.
+4. In the **Connectors** field, select **Dynamics 365 Payment Connector for PayPal**.
+5. Enter the following additional information.
 
+    | Field | Description | Required | Automatically set | Sample value |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for PayPal. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
+    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
+    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
+    | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
+    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
+    | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
+    
+> [!NOTE]
+> When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
 
+Once the above changes have been made in the back office environment, synchronize the changes using the **1070** distribution schedule.
 
+### Configure PayPal for the Storefront checkout module
 
-
-
-
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
-
-## Functional experience
-
-When a customer is redirected for SCA, they will be presented with a challenge by their bank, typically within a new browser window or iFrame. After they have been authenticated, they will be redirected back to the checkout session. If the validation fails, they will not be allowed to continue with checkout. 
+For details related to configuring Storefront to use PayPal in the checkout module, please visit the [Configure Storefront to use PayPal](www.microsoft.com) docs article.  
 
 ## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Checkout module](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
