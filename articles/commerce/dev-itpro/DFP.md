@@ -5,7 +5,7 @@ title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
 manager: AnnBe
-ms.date: 05/26/2020 
+ms.date: 08/19/2020 
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -140,7 +140,7 @@ After **Loss prevention** has finished analyzing the data, the results are surfa
 
 #### Set up Fraud Protection
 
-To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative. When the merchant's Fraud Protection environment is available, and loss prevention settings have been configured, you can continue the setup by turning on Data Lake Storage Gen2 for the Commerce environment.  
+To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative. When the merchant's Fraud Protection environment is available, and Loss prevention settings have been configured, you can continue the setup by turning on Data Lake Storage Gen2 for the Commerce environment.  
 
 #### Turn on Data Lake Storage Gen2 for your Commerce environment
 
@@ -148,11 +148,11 @@ Before the data can be available in Data Lake Storage Gen2, the service must be 
 
 #### Turn on Loss prevention
 
-You can turn on the Loss prevention integration through the **Feature management** workspace in Commerce. The feature is named "Dynamics 365 Fraud Protection (DFP) Loss Prevention." No other setup in Commerce is required to turn on the integration.
+You can turn on the Loss prevention integration through the **Feature management** workspace in Commerce. The feature is named "Dynamics 365 Fraud Protection (DFP) Loss prevention." No other setup in Commerce is required to turn on the integration.
 
-#### Configure Loss Prevention to connect to Data Lake Storage Gen2
+#### Configure Loss prevention to connect to Data Lake Storage Gen2
 
-The final step is to return to the Fraud Protection environment and connect Loss Prevention to the Data Lake Storage Gen2 pool that is associated with the Commerce account. 
+The final step is to return to the Fraud Protection environment and connect Loss prevention to the Data Lake Storage Gen2 pool that is associated with the Commerce account. 
 
 ## Privacy notice
 
