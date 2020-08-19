@@ -110,7 +110,7 @@ The following illustration shows how data flows to and from the Electronic invoi
 ![Data flow for the Electronic invoicing add-on](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
-By enabling this action, you consent to share your data with external systems.  Data imported from external systems into this Dynamics 365 online service are subject to our privacy statement. Please consult the country specific feature documentation for more information. 
+Enabling and using Electronic invoicing may require sending your limited data, which includes the organization tax registration IDs, to authorities or third party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privaty notice sections in country specific feature documentation for more information. 
 
 ## Related resources
 
