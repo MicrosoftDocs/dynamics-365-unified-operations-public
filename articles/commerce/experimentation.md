@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. User interactions with each version are tracked to enable making data-informed changes and thereby drive higher conversion rates.
 
-Use experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website before understanding their impact. Dynamics 365 Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page testing are currently only supported using fragments and can be achieved as long as they are supported in the third-party service.
+Use web experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website before understanding their impact. Dynamics 365 Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page testing are currently only supported using fragments and can be achieved as long as they are supported in the third-party service.
 
 ## Experimentation journey
 The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
@@ -53,7 +53,7 @@ Define the scope of the experiment - full or partial. Think **partial** if you w
 If you want to schedule your experiment to be published in a [publish group](#publish-experiment-variations-with-publish-groups) or directly [publish to your live site](#create-experiment-variations).
 
 ### Get the right version of Dynamics 365 Commerce
-Upgrade your store starter kit,  online channel extensibility SDK and Commerce scale unit to version 10.0.13.
+Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
 
 ### Setup an experimentation connector
 An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can either use the sample test connector following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors) or setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com) following directions provided by the publisher. A sample test connector comes with a preconfigured list of experiments to allow you to test the experimentation workflow within Dynamics 365 Commerce without needing to depend on an external service for treatment allocation or analytics. Note that you will need a developer to configure a third-party connector.
