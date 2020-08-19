@@ -75,81 +75,19 @@ To map a processor payment method to a card or wallet, first select the card or 
 
 ![Mapped processor payment method](../media/Payments/Mapped.png)
 
+### When not to use procesor payment method mapping
 
+In certain cases, processor payment method mapping may not be granular enough for reporting needs. For example, some retailers differentiate different external gift cards from the same provider by their BIN range. In cases such as that, the gift cards should not be mapped using the above form. Instead, they should continue to use traditional BIN range mapping. 
 
+## Support for unidentified card types
 
-## Mapping cards and wallets to processor payment methods
+In certain cases, a payment connector may return a card that does not have a BIN range or processor payment method mapping. When that happens, the payment is authorized by the payment terminal, but is then reveresed when the point of sale cannot map the authorization response to a specific card type. To address this issue, a capability is provided to specify map unknown authorization responses to a default card type. 
 
+![Default for unmapped cards](../media/Payments/DefaultUnMapped.png)
 
-
-## Availability
-
-The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
-
-## Functional overview
-
-The following capabilities are supported out of box by the PayPal Connector. 
-
-### PayPal Checkout in Storefront 
-
-The connector supports the use of the PayPal Checkout, or PayPal button, for e-commerce payments. When the connector is configured for the web Storefront, at the time of checkout customers will be presented with the option to pay using the PayPal button. When the customer selects the PayPal button, they will be redirected to a PayPal Checkout mini browser window where they will be authenticated by PayPal and be able to select their method of payment. Upon succesful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. Once the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to the Commerce back office.
-
-For more information on PayPal Checkout, please visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
-
-### Fulfillment
-
-Orders with PayPal payment lines are fulfilled in the same was as orders that are paid using credit card. When an order is created, the PayPal payment is added in an "Authorized" state. Upon fulfillment, whether the order is shipped to the customer from a distribution center, or picked up in a store, the payment authorization associated with the order is then "Captured" using the same payments SDK requests used to capture credit card payments. 
-
-Fulfillment for PayPal orders supports incremental capture. This means that if an order is partially fulfilled and invoiced, a portion of the original authorization will be captured and, rather than getting a new authorization for the remainder, the same original authorization will be referenced when the remainder of the order is fulfilled. 
-
-### Authorization expiration
-
-Orders made using the PayPal connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization exipry. This means that if an authorization expires, the order will fall into a 'Do not process' state and customer will need to be contacted to arrange for an alternate form of payment. 
-
-Billing agreement support, which allows for creation of new authorizations upon expiration of the original authorization, will be added in a future release. 
-
-
-## Testing the PayPal connector
-
-### Creating a PayPal developer account
-
-To test the PayPal connector, you must first create PayPal developer credentials and a PayPal sandbox environment. 
-
-1. Navigate to the [**Test and go live**](https://developer.paypal.com/docs/business/test-and-go-live/) page provided as part of PayPal's development resources. 
-2. Click the [**Get Started**](https://developer.paypal.com/docs/platforms/get-started/) link on the **Test and go live** page. 
-3. From that page, click **Log in to the Developer Dashboard**.
-4. If prompted to log in, click **Sign up**.
-5. Select **Business Account**, then click **Next**.
-6. Provide the email address you want to associate with your PayPal account and create a password for your PayPal account. 
-7. In the next form, fill out contact information details, then read the PayPal user agreement and Privacy statement. If you agree to the terms, click **Agree and Create Account**.  
-
-> [!NOTE]
-> The terms agreed to for the creation of a PayPal developer account are between the organization or individual creating the account and PayPal. Microsoft is in no way liable  and makes not warranty as to the terms specified the agreement. These instructions are for informational purposes only. 
-
-8. Once you have agreed to the terms, specify your business type and click **Continue**.
-9. Next navigate to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and click **Log in to Dashboard**.
-10. Log in using the credentials used when creating your PayPal account.
-11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
-12. Note your **Sandbox account**, **Client ID**, and **Secret**. These will be used to set up the connector in Dynamics 365 Commerce.
-
-## Setup the connector in Dynamics 365
-
-> [!NOTE]
-> Some of these steps leverage a new capability called **Processor payment methods**. For more information on this feature, visit the docs article for [**Processor payment methods**](
-
-
-1. Navigate to 
-
-
-
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
-
-## Functional experience
-
-When a customer is redirected for SCA, they will be presented with a challenge by their bank, typically within a new browser window or iFrame. After they have been authenticated, they will be redirected back to the checkout session. If the validation fails, they will not be allowed to continue with checkout. 
+This ensures that the payment is never authorizaed by the terminal and reversed by the POS, thus avoiding confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being maped to the default for unknown card types. If a card type is truly unwanted for processing, it should be disabled at the processor level. 
 
 ## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Checkout module](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
+- [Dynamics 365 Payment Connector for PayPal](paypal.md)
