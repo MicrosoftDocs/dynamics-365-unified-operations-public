@@ -5,7 +5,7 @@ title: VALUEIN ER function
 description: This topic provides information about how the VALUEIN Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,7 +64,7 @@ The resulting *Boolean* value.
 
 ## Usage notes
 
-In general, the `VALUEIN` function is translated to a set of **OR** conditions. If it is expected that the list of **OR** conditions might be large and the maximum total length of an SQL statement might be exceeded, consider to use the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.
+In general, the `VALUEIN` function is translated to a set of **OR** conditions. If the list of **OR** conditions is large and the maximum total length of an SQL statement might be exceeded, consider using the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
