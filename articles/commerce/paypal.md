@@ -142,7 +142,6 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
     | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
-    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
@@ -165,7 +164,6 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
     | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
-    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
