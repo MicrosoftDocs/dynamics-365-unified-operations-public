@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VALUEIN ER function
+title: VALUEINLARGE ER function
 description: This topic provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
