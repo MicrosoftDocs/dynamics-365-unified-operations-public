@@ -5,7 +5,7 @@ title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -77,11 +77,11 @@ Once your site is set up with a path, all URLs associated with pages in site bui
 
 The following illustration shows the **New URL** dialog box in site builder. 
 
-![**New URL** dialog box in site builder](./media/Domains_PageSetup.png)
+![**New URL** dialog box in site builder](./media/Domains_PageSetup2a.png)
 
 The following illustration shows the **URLs** page in site builder.
 
-![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder.png)
+![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## Domains in site builder
 
