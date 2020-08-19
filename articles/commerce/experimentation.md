@@ -30,14 +30,16 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Web experimentation
-## Overview
-Web experimentation is the process of using controlled experiments such as A/B tests to present different versions of a page to groups of end-users and validate hypotheses with data. User interactions with each version are tracked to enable making data-informed changes and thereby drive higher conversion rates.
 
-Use web experimentation to measure the impact of new changes or ideas and avoid making costly updates to your website. Dynamics 365 Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page testing can be run using fragments and can be achieved as long as they are supported in the third-party service.
+## Overview
+Web experimentation is the process of using controlled experiments such as A/B tests to validate hypotheses and bring data-driven confidence in decisions and therefore higher conversion rates. Use web experimentation to scientifically measure the impact of proposed changes to your website and avoid making costly decisions without data.
 
 ## Experimentation journey
-The experimentation journey typically begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Live event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
+The experimentation journey begins with creating a hypothesis or the theory that needs to be tested. Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Real-time event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
+
+> [!NOTE]
+> Dynamics 365 Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page tests can be run using fragments, as long as they are supported in the third-party service.
 
 ## Prerequisites
 Here are some things to do, before you can start running experiments in Dynamics 365 Commerce's site builder:
