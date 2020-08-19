@@ -59,7 +59,10 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
     - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
     - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
     
-- **Tax calculation behavior** - **Recalculate** is the default and traditional setting for how taxes are recalculated when the order is imported into the back office. **Don't recalculate** disables tax recalculation until or unless the order is edited in the back office, when recalculation is triggered. 
+
+## Disable option to pay later
+
+In Commerce version 10.0.12 and later, merchants can remove the option to pay later when a customer order is created at the POS. To disable the option, open the **Functionality profile** for the channel that paying later is not allowed in, and then select **Edit**. On the **General** tab, select the dropdown for **Require payment for fulfillment**. If paying later should not be allowed at the POS, select **Card required** and select **Save**. Run the **1070** distribution schedule to synchronize this change to the channel. 
 
 ## Transaction flow for customer orders
 
