@@ -98,7 +98,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
-> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
+> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
 ## Remote Desktop
 
