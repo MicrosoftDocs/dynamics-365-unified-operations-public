@@ -5,7 +5,7 @@ title: Retail software development kit (SDK) samples
 description: This topic describes the samples that are included in the Retail SDK.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
