@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Payment Connector for PayPal
-description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
+description: Wallet payment method support
 author: rubendel
 manager: annbe
 ms.date: 08/17/2020
@@ -30,24 +30,47 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Dynamics 365 Payment Connector for PayPal
+# Wallet payment support
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal(PayPal Connector). It includes a comprehensive list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
+This topic provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.  
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| PayPal Checkout | Also known as the PayPal "button", PayPal Checkout describes customer experience and integration supported by the PayPal Connector. |
 | Wallet | A payment type which does not include traditional payment characteristics, such as the BIN range that is used to differentiate among credit and debit card types. |
+| Processor payment method | A new property payment card property in the payments SDK. When this property is added to supported payment methods within a connnector, those payment methods can be maped to cards or wallets configured in the Dynamics 365 back office and avoid the traditional BIN range mapping. 
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce now offers an out of box integration for PayPal Checkout. When the PayPal Connector is configured, the PayPal button is as a selectable payment method as part of online order checkout. When users select "PayPal" they are directed to complete their payment directly with PayPal and then returned to the web storefront for order completion.  
+Unlike traditional credit and debit cards, wallet payment authorization responses to not include BIN ranges. Traditionally, BIN ranges have been used to match payment authorization responses to predefined card types with BIN ranges. This feature adds support for **Processor payment methods** and mapping of those variants to card types set up in the back office.
 
-The PayPal connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "Wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping has been introduced for payments that do not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, visit Processor payment method documentation. 
+**Processor payment method** is a new property for the payments SDK that can be applied to payment methods supported for a particular payment connector. When an authorization response is received that includes the processor payment method, a lookup will be performed to determine if that procesor payment method has been mapped to a card or wallet type. If a mapping is found, that payment will be mapped to the matching card or wallet type. If a match cannot be found, a BIN lookup will be performed following the traditional bin range settings for Commerce. 
+
+Because wallet payments don't include BIN range, if a payment connector supports wallet payments, such as PayPal, the payment connector should be updated to the latest payments SDK and the processor payment method property should be populated at least for all supported wallet payments. 
+
+Processor payment method mappings are also useful for traditional debit and credit card payments. Mapping processor payment methods to cards is much more straight forward than BIN range mapping and less prone to errors because it is easy to ensure all possible payment methods supported by a connector are mapped to a card or wallet type. 
+
+## Wallet payment method support and processor payment methods
+
+This feature introduces support for a new payment method and card type called **Wallet**. The primary characteristic of a wallet payment is that it does not have a BIN range, but wallet payment methods may also not return expiration dates and some properties that have traditionally been considered mandatory. Wallet payment methods must be mapped to processor payment methods as an alternative to the traditional BIN range mapping. 
+
+### Adding support of processor payment methods
+
+To support processor payment methods, payment connectors need to populate the PaymentMethodVariant property in PaymentCardProperties. If the payments SDK in use does not include this property, it should be updated. 
+
+### Processor payment method mapping
+
+This feature adds a new form called **Processor payment method mapping** which can be used to map processor payment methods to configured card or wallet types. When this form is launched, it queries available payment connectors to collect a set or payment methods with the PaymentMethodVariant field populated. It then checks to determin if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the form. 
+
+
+
+
+## Mapping cards and wallets to processor payment methods
+
+
 
 ## Availability
 
