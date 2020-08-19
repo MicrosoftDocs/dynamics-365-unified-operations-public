@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce runtime (CRT) and Server extensibility
-description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. 
+title: Commerce runtime (CRT) and Retail Server extensibility
+description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail server. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/04/2020
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
+This topic describes various ways that you can extend the commerce runtime (CRT) and create new Retail server API. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.
 
 CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and it's then compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS. 
 
-Every CRT service consists of a group of one or more requests and responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT then processes the request and sends back the response.
+Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail server, and Retail server calls CRT. CRT then processes the request and sends back the response.
 
 For example, the Customer service in CRT contains all the customer-related requests and responses, each of which is run in a different flow. Likewise, the Product service in CRT contain all the product-related requests and responses. The following table shows the requests in the Customer service.
 
@@ -81,6 +81,7 @@ Before you learn about the CRT extension patterns, you should understand how a C
 <ul>
 <li>You want to override the POS search functionality to search from an external system instead of searching in a local database or HQ. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.</li>
 <li>Search for a customer in a local database or HQ, and in an external system, and then finally merge or modify the result.</li>
+<li>Avoid overriding the handler, most of the CRT extension scenarios can be achieved in pre or post trigger, overriding is required only when you want to completely replace the existing functionality.</li>
 </ul>
 </td>
 </tr>
@@ -115,7 +116,7 @@ Attributes are also supported (configuration-driven development). For extension 
 </tr>
 <tr>
 <td>CRT data service and data service with entity</td>
-<td>Specialized data service for channel database data access and entity for Commerce Scale Unit exposures.</td>
+<td>Data service to read data/entity from channel database.</td>
 </tr>
 </tbody>
 </table>
@@ -123,9 +124,9 @@ Attributes are also supported (configuration-driven development). For extension 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
-**Manually deploying the CRT extension for 7.1 with May update and later**
+**Register the CRT extension**
 
-After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Commerce Scale Unit). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
+After extending CRT, place the extension library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (when POS is connected to Retail server). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
 
 ```C#
 <add source="assembly" value="your custom library name" />
@@ -142,12 +143,38 @@ For offline, you should you put the custom library in the **…\\Program Files (
 ```C#
 <add source="assembly" value="your custom library name" />.
 ```
+Register extension configuration
+
+Extension can register any key-value type of configs in the ommerceRuntime.Ext.config under the <settings> node
+
+```XML
+
+      This section is a key value pair collection used to configure the CommerceRuntime components.
+      The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator.
+      Extension configuration values MUST be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise.
+      Additional prefixes can be added to represent the sub-area they control.
+      For example:
+
+      <add name="ext.SalesTransaction.Storage.CartSerializationFormat" value="XML" />
+
+      For HTTP binding timeouts on Realtime Service calls, configure the timeout in seconds per method
+      (Note: this timeout value is limited by maxExtensionTimeoutInSeconds, set in CommerceRuntime.config):
+      <add name="ext.RealTimeServiceClient.TimeoutInSeconds.InvokeExtensionMethod.ContosoRetailStoreHours_UpdateStoreHours" value="300" />
+   
+```
+To read the key-value from the CRT extension config, extension code can use the RequestContext.Runtime.Configuration and read it.
+
+```C#
+Ex:
+ string key = context.Runtime.Configuration.GetSettingValue("ext.SalesTransaction.Storage.CartSerializationFormat") ?? string.Empty;
+```
+
 
 The preceding steps are used for manual deployment and testing in your development box. To package the extension and deploy it to production or user acceptance testing (UAT), use the information in the packaging document.
 
 **Debugging CRT**
 
-To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit (self-hosted))** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
+To debug CRT from POS, you should attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server, for offline attach the CRT extension project to the dllhost.exe process.
 
 **Using extension properties on CRT entities and requests and responses**
 
@@ -155,7 +182,7 @@ One way to add new data to an existing CRT entity is to use extension properties
 
 **Using extension properties on CRT entities with persistence**
 
-Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Commerce Scale Unit/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
+Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail server/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
 
 > [!NOTE]
 > For HQ, extension properties are sent only for customers and orders.
@@ -181,54 +208,61 @@ entity.SetProperty("key", value);
 
 **Scenario**
 
-You created a new extension table for Commerce parameters. You want to read a field from that extension table and send it to POS.
+New extension table and fields created for the Customer entity and extension want to read those field from the extension table and send it to POS.
 
-When you extend the channel database, it's always a good idea to have a primary key relation between the main table and the extension table. You can then read the data from the extension table by using the primary key.
+When you extend the channel database, it's always a good idea to include the primary key from the main table in the extension table (don'y have direct relation, then read the data from the extension table by using the primary key.
 
 **Steps**
 
-1. Create the extension table for Commerce parameters in the channel table that has the primary key relation to the main table. (In this case, the main table is Commerce shared parameters.)
-2. Identify the CRT data request that reads the Commerce parameters.
-3. Add a post-trigger for the data request. You will then be able to use the primary key of the shared parameters table to query your extension table for Commerce shared parameters and read the custom fields.
+1. Create the extension table for Customer entity in the channel database ext schema that has the primary key of the main table. 
+2. Identify the CRT data request that reads the Customer entity.
+3. Add a post-trigger for the data request. You will then be able to use the primary key of the Customer table to query your extension table to read the custom fields.
 
-    > [!NOTE]
-    > You can get the primary key for the entity in the post-trigger request. That request will have the entity object, and that entity object will have all the required fields.
+> [!NOTE]
+> You can get the primary key for the entity in the post-trigger request. That request will have the entity object, and that entity object will have all the required fields.
 
 4. Add the custom fields as extension properties to the shared parameters entity in the CRT post-trigger, and send it to POS.
 
 **Reading extension properties in triggers**
 
-The request that reads the data from the Commerce parameters table is GetChannelConfigurationDataRequest. The following example shows how you can add a post-trigger for this request.
+The request that reads the data from the Customer table is GetCustomerDataRequest. The following example shows how you can add a post-trigger for this request.
 
 ```C#
+/**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+
 namespace Contoso
 {
     namespace Commerce.Runtime.EmailPreferenceSample
     {
         using System;
         using System.Collections.Generic;
+        using System.Threading.Tasks;
         using Microsoft.Dynamics.Commerce.Runtime;
         using Microsoft.Dynamics.Commerce.Runtime.Data;
         using Microsoft.Dynamics.Commerce.Runtime.DataModel;
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
         /// <summary>
-        /// Class that implements a post trigger for the GetChannelConfigurationDataRequest request type.
+        /// Class that implements a post trigger for the GetCustomerDataRequest request type.
         /// </summary>
-
-        public class GetChannelConfigurationDataRequestTriggers : IRequestTrigger
+        public class GetCustomerTriggers : IRequestTriggerAsync
         {
             /// <summary>
             /// Gets the supported requests for this trigger.
             /// </summary>
-
             public IEnumerable<Type> SupportedRequestTypes
             {
                 get
                 {
-                    return new[] { typeof(GetChannelConfigurationDataRequest) };
+                    return new[] { typeof(GetCustomerDataRequest) };
                 }
             }
 
@@ -237,32 +271,37 @@ namespace Contoso
             /// </summary>
             /// <param name="request">The request.</param>
             /// <param name="response">The response.</param>
-
-            public void OnExecuted(Request request, Response response)
+            public async Task OnExecuted(Request request, Response response)
             {
                 ThrowIf.Null(request, "request");
                 ThrowIf.Null(response, "response");
-                var channelConfiguration = ((SingleEntityDataServiceResponse<ChannelConfiguration>)response).Entity;
-                if (channelConfiguration == null)
+
+                var customer = ((SingleEntityDataServiceResponse<Customer>)response).Entity;
+
+                if (customer == null)
                 {
                     return;
                 }
+
                 var query = new SqlPagedQuery(QueryResultSettings.SingleRecord)
                 {
                     DatabaseSchema = "ext",
-                    Select = new ColumnSet(new string[] { "CUSTOMFIELD" }),
-                    From = "PARAMETERSEXTENSIONVIEW", // Create your own view to read the data from the parameter extension table by passing the primary key from the entity (in this case its Rec ID)
-                    Where = "PARAMETERSRECID = @RecId AND DATAAREAID = @dataAreaId" //This query assumes I have PARAMETERSRECID, DATAAREAID and CUSTOMFIELD as new fields in the extension tables.
+                    Select = new ColumnSet(new string[] { "EMAILOPTIN" }),
+                    From = "CUSTOMEREXTENSIONVIEW",
+                    Where = "ACCOUNTNUM = @accountNum AND DATAAREAID = @dataAreaId"
                 };
-                query.Parameters["@RecId"] = channelConfiguration.RetailParametersRecId;
+
+                query.Parameters["@accountNum"] = customer.AccountNumber;
                 query.Parameters["@dataAreaId"] = request.RequestContext.GetChannelConfiguration().InventLocationDataAreaId;
-                using (var databaseContext = new SqlServerDatabaseContext(request))
+                using (var databaseContext = new DatabaseContext(request.RequestContext))
                 {
-                    ExtensionsEntity extensions = databaseContext.ReadEntity<ExtensionsEntity>(query).FirstOrDefault();
-                    var customField = extensions != null ? extensions.GetProperty("customField") : null;
-                    if (customField != null)
+                    var extensionsResponse = await databaseContext.ReadEntityAsync<ExtensionsEntity>(query).ConfigureAwait(false);
+                    ExtensionsEntity extensions = extensionsResponse.FirstOrDefault();
+
+                    var emailOptIn = extensions != null ? extensions.GetProperty("EMAILOPTIN") : null;
+                    if (emailOptIn != null)
                     {
-                        **channelConfiguration.SetProperty("CUSTOMFIELD", customField);**
+                        customer.SetProperty("EMAILOPTIN", emailOptIn);
                     }
                 }
             }
@@ -271,9 +310,10 @@ namespace Contoso
             /// Pre trigger code.
             /// </summary>
             /// <param name="request">The request.</param>
-
-            public void OnExecuting(Request request)
+            public async Task OnExecuting(Request request)
             {
+                // It's only stub to handle async signature 
+                await Task.CompletedTask;
             }
         }
     }
@@ -283,7 +323,7 @@ namespace Contoso
 > [!NOTE]
 > You must change this query, based on your new field and table, or whatever condition you're using. When you design the table, make sure that you have the primary key field from the parent table, so that you can query it by using the CRT entity. Most CRT entities should have the primary key field in them, such as the **RecId** field or another relevant unique field that is used to select the record.
 
-**Setting extension properties by overriding the handler**
+**Saving extension properties by overriding the handler** 
 
 **Scenario**
 
@@ -299,7 +339,7 @@ You created a new extension table for Customer. When values for the extension fi
 3. Override the handler, and call the base request to set values in the main table (CustTable) and then the extension table.
 
 > [!NOTE]
-> You can send any additional properties that you want to your extension procedure or view.
+> Extension code can pass additional properties required for the  extension procedure or view. Extension properties can be saved in the CRT pre or post triggers, no need to override the CRT handler. Avoid overriding the handler, most of the CRT extension scenarios can be achieved in pre or post trigger.
 
 The example that follows doesn't have the SQL scripts that are used. You can find the full sample code and scripts at the following locations in the Retail SDK.
 
@@ -314,52 +354,59 @@ The example that follows doesn't have the SQL scripts that are used. You can fin
 **Example**
 
 ```C#
+/**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+
 namespace Contoso
 {
     namespace Commerce.Runtime.EmailPreferenceSample
     {
+        using System.Threading.Tasks;
         using System.Transactions;
         using Microsoft.Dynamics.Commerce.Runtime;
-        using Microsoft.Dynamics.Commerce.Runtime.Data.Types;
+        using Microsoft.Dynamics.Commerce.Runtime.Data;
         using Microsoft.Dynamics.Commerce.Runtime.DataModel;
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
         /// <summary>
         /// Create or update customer data request handler.
         /// </summary>
-
-        public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleRequestHandler<CreateOrUpdateCustomerDataRequest, SingleEntityDataServiceResponse<Customer>>
+        public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncRequestHandler<CreateOrUpdateCustomerDataRequest>
         {
             /// <summary>
             /// Executes the workflow to create or update a customer.
             /// </summary>
             /// <param name="request">The request.</param>
             /// <returns>The response.</returns>
-
-            protected override SingleEntityDataServiceResponse<Customer> Process(CreateOrUpdateCustomerDataRequest request)
+            protected override async Task<Response> Process(CreateOrUpdateCustomerDataRequest request)
             {
                 ThrowIf.Null(request, "request");
-                using (var databaseContext = new SqlServerDatabaseContext(request))
+
+                using (var databaseContext = new DatabaseContext(request.RequestContext))
                 using (var transactionScope = new TransactionScope())
                 {
                     // Execute original functionality to save the customer.
-
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();
                     var response = (SingleEntityDataServiceResponse<Customer>)requestHandler.Execute(request);
 
                     // Execute additional functionality to save the customer's extension properties.
-
                     if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
                     {
-
                         // The stored procedure will determine which extension properties are saved to which tables.
-
                         ParameterSet parameters = new ParameterSet();
-                        parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
-                        databaseContext.ExecuteStoredProcedureNonQuery("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters);
+                        parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
+                        await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
                     }
+                    
                     transactionScope.Complete();
+
                     return response;
                 }
             }
@@ -393,7 +440,7 @@ To set an extension property on the cart line, you use SaveExtensionPropertiesOn
 
 Here is an example.
 
-```typescript
+```C#
 let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
     Key: "sampleExtensionProperty",
     Value: <ProxyEntities.CommercePropertyValue>{
@@ -438,7 +485,7 @@ It's a typical case to implement a new CRT service. First, you must create new r
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
-```typescript
+```C#
 using System.Runtime.Serialization;
 using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
@@ -457,7 +504,7 @@ public sealed class GetStoreHoursDataRequest : Request
 
 The new response type resembles the request type.
 
-```typescript
+```C#
 [DataContract]
 public sealed class GetStoreHoursDataResponse : Response
 {
@@ -478,35 +525,71 @@ Next, you must create a new CRT service that uses the request and response types
 1.  Implement the new service.
 
     ```typescript
-    public class StoreHoursDataService : IRequestHandler
+    public class StoreHoursDataService : IRequestHandlerAsync
     ```
 
 2.  Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The execute method is the method that the CRT calls for you if a request for this service is run.
 
-    ```typescript
-    public IEnumerable SupportedRequestTypes
-    {
-        get
-        {
-            return new[]
+  ```C#
+   public IEnumerable<Type> SupportedRequestTypes
             {
-            typeof(GetStoreHoursDataRequest),
-            };
-        }
-    }
+                get
+                {
+                    return new[] 
+                    {
+                        typeof(GetStoreHoursDataRequest),
+                     };
+                }
+            }
 
-    public Response Execute(Request request);
+    public async Task<Response> Execute(Request request)
+            {
+                if (request == null)
+                {
+                    throw new ArgumentNullException("request");
+                }
+
+                Type reqType = request.GetType();
+                if (reqType == typeof(GetStoreHoursDataRequest))
+                {
+                    return await this.GetStoreDayHoursAsync((GetStoreHoursDataRequest)request).ConfigureAwait(false);
+                }
+                else
+                {
+                    string message = string.Format(CultureInfo.InvariantCulture, "Request '{0}' is not supported.", reqType);
+                    Console.WriteLine(message);
+                    throw new NotSupportedException(message);
+                }
+            }
+            
+            private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
+
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
     ```
 
-3.  In the commerceRuntime.Config file, update the **composition** section (or the equivalent section) to register this service. Note that you can register single types or all types from an assembly. The CommerceRuntime engine will find all IRequestHandler derived types.
-4.  Optional: Use the CommerceRuntime Test Host to do a test run of your service.
+3.  Register the CRT extension as mentioned in the begining of this doc.
 
 ### Implementing a new CRT service that handles a single new request
 
 It’s slightly easier to create a single-request service.
 
-```typescript
-public class CrossLoyaltyCardService : SingleRequestHandler
+```C#
+public class CrossLoyaltyCardService : SingleAsyncRequestHandler<GetCrossLoyaltyCardRequest>
 ```
 
 Registration is done as described in the previous procedure.
@@ -519,7 +602,7 @@ In some cases, the request and response types are sufficient, but the service im
 
 Any new entity must be of the **CommerceEntity** type. When you use this type, lots of low-level functionality is automatically handled for you. The following example, which is taken from the StoreHours sample, shows how to create an entity that is bound to the database table. This is the usual case.
 
-```typescript
+```C#
 public class StoreDayHours : CommerceEntity
 {
     private const string DayColumn = "DAY";
@@ -569,195 +652,33 @@ public class StoreDayHours : CommerceEntity
 
 When you want to use the new entity in a service, the process is straightforward. As described earlier, you create a new service as a derived IRequestHandler. Then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
 
-```typescript
-private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
-{
-    ThrowIf.Null(request, "request");
-    using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
-    {
-        var query = new SqlPagedQuery(request.QueryResultSettings)
-        {
-            DatabaseSchema = "crt",
-            Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
-            From = "ISVRETAILSTOREHOURSVIEW",
-            Where = "STORENUMBER = @storeNumber",
-        };
+```C#
+   private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
 
-        query.Parameters["@storeNumber"] = request.StoreNumber;
-        return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
-    }
-}
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
 ```
 
 For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
 ### Adding pre-triggers and post-triggers for a specific request
 
-In some cases, some processing must be done before or after a request is handled. There are two hooks that can be used to run additional code. These hooks are called pre-triggers and post-triggers. Follow these steps to create new triggers and associate them with a request.
+For information about how to create CRT triggers extensio, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
 
-1.  Create a new trigger class that implements IRequestTrigger.
+## Retail server extension
 
-    ```typescript
-    public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
-    ```
-
-2.  In the **IRequest.SupportedRequestTypes** property, return the list of requests that this trigger should be run for.
-
-    ```typescript
-    public IEnumerable SupportedRequestTypes
-    {
-        get
-        {
-            return new[] { typeof(GetCrossLoyaltyCardRequest) };
-        }
-    }
-    ```
-
-3.  Implement the functions that are called before and after the request.
-
-    ```typescript
-    void OnExecuted(Request request, Response response);
-    void OnExecuting(Request request);
-    ```
-
-4.  Register the class in the commerceRuntime.Config file.
-
-## Commerce Scale Unit extensibility scenarios
-### Adding a new ODATA action to an existing controller
-
-In the easiest scenario, you must add a new application programming interface (API) for a slightly different use case. To make this scenario work, you can add the new action through inheritance. For any changes to the APIs to Commerce Scale Unit, you must follow these steps.
-
-1.  Implement the new action or controller.
-2.  Override the requirements of the model factory to add the new corresponding metadata.
-
-The following example, which is taken from the Retail SDK, shows how to extend an existing controller so that it has a POST action.
-
-```typescript
-public class MyCustomersController : CustomersController
-{
-    [HttpPost]
-    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
-    public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
-    {
-        if (parameters == null)
-        {
-            throw new ArgumentNullException("parameters");
-        }
-
-        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-        string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
-
-        GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
-
-        string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
-        RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
-        return resp.Discount;
-    }
-}
-```
-
-Next, override the model factory.
-
-```typescript
-[Export(typeof(IEdmModelFactory))]
-[ComVisible(false)]
-public class CustomizedEdmModelFactory : CommerceModelFactory
-{
-    protected override void BuildActions()
-    {
-        base.BuildActions();
-        var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
-        var1.Parameter("LoyaltyCardNumber");
-        var1.Returns();
-    }
-}
-```
-
-Before clients can use this new customization, you must adjust the build system to generate the Commerce Scale Unit proxy code for the new model factory. This configuration step is done in the build system. Finally, you must adjust the web.config file. You must complete this step in the packaging project for Commerce Scale Unit in the SDK. If local tests will be done, you can also optionally complete this step on the local development topology machine that is used for testing.
-
-### Adding a new simple controller for an entity
-
-Suppose that you have a simple entity and require a controller to fetch the data. For an example, see the StoreHours sample in the Retail SDK. A new Commerce Scale Unit controller makes sense, and all the low-level work is done in the CRT (new entity, request, response, and service). To create a new controller, you derive from CommerceController. An example is shown here. The controller name is important and must match the name of the entity.
-
-```typescript
-[ComVisible(false)]
-public class StoreHoursController : CommerceController
-{
-    public override string ControllerName
-    {
-        get { return "StoreHours"; }
-    }
-
-    [HttpPost]
-    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
-    public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
-    {
-        if (parameters == null)
-        {
-            throw new ArgumentNullException("parameters");
-        }
-
-        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-
-        QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-        queryResultSettings.Paging = new PagingInfo(10);
-
-        var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
-        PagedResult hours = runtime.Execute(request, null).DayHours;
-        return this.ProcessPagedResults(hours);
-    }
-}
-```
-
-For new entities, you must also override the factory’s **BuildEntitySets()** method, as shown in the following example.
-
-```typescript
-[Export(typeof(IEdmModelFactory))]
-[ComVisible(false)]
-public class CustomizedEdmModelFactory : CommerceModelFactory
-{
-    protected override void BuildActions()
-    {
-        base.BuildActions();
-        var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
-        action.Parameter("StoreNumber");
-        action.ReturnsCollectionFromEntitySet("StoreHours");
-    }
-
-    protected override void BuildEntitySets()
-    {
-        base.BuildEntitySets();
-        CommerceModelFactory.BuildEntitySet("StoreHours");
-    }
-}
-```
-
-### Call the new Commerce Scale Unit API from MPOS/Cloud POS
-
-Before calling the new Commerce Scale Unit API, make sure that you have performed the following steps:
-
-1.  Register your new extension in Commerce Scale Unit web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section.
-2.  Add the new Commerce Scale Unit extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
-3.  Move both the CRT and Commerce Scale Unit extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have a CRT extension that is related to the new Commerce Scale Unit API, then update that information in the CommerceRuntime.Ext.config file in the **…\\RetailServer\\webroot\\bin\\Ext** folder.
-4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
-5.  Use inetmgr to browse to the Commerce Scale Unit metadata and verify whether your entity is exposed in the xml.
-6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile, MPOS regenerates all the entities defined in the Commerce Scale Unit metadata, so that you can call the new entities using the commerce context.
-
-> [!NOTE]
-> Do not change or add anything in the Commerce Scale Unit web.config file or Commerce Scale Unit folder, with the expception of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Commerce Scale Unit web.config file to add or modify any custom app settings.
-
-#### Cross loyalty sample
-
-```typescript
-var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
-return request.execute<number>();
-```
-
-#### Store hours sample
-
-```typescript
-var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
-return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
-```
-
-For details about how to call the new Commerce Scale Unit API in MPOS, refer to the Retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects.
+For information about how to create new Retail server API, see [Create a new Retail Server extension API](retail-server-icontroller-extension.md).
