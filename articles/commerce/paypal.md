@@ -88,6 +88,18 @@ To test the PayPal connector in a sandbox environment, you must create a PayPal 
 6. Provide the email address you want to associate with your PayPal account and create a password for your PayPal account. 
 7. In the next form, fill out contact information details, then read the PayPal user agreement and Privacy statement. If you agree to the terms, click **Agree and Create Account**.  
 
+> [!NOTE]
+> The terms agreed to for the creation of a PayPal developer account are between the organization or individual creating the account and PayPal. Microsoft is in no way liable  and makes not warranty as to the terms specified the agreement. These instructions are for informational purposes only. 
+
+8. Once you have agreed to the terms, specify your business type and click **Continue**.
+9. Next navigate to the [PayPal Devloper](https://developer.paypal.com/developer/applications) and click **Log in to Dashboard**.
+10. Log in using the credentials used when creating your PayPal account.
+11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
+12. Note your **Sandbox account**, **Client ID**, and **Secret**.
+
+Specify: Merchant Client ID = Client ID
+Merchant API key = Secret 
+Environment = Live or Sandbox
 
 ## Setup
 
