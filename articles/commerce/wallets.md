@@ -63,7 +63,17 @@ To support processor payment methods, payment connectors need to populate the Pa
 
 ### Processor payment method mapping
 
-This feature adds a new form called **Processor payment method mapping** which can be used to map processor payment methods to configured card or wallet types. When this form is launched, it queries available payment connectors to collect a set or payment methods with the PaymentMethodVariant field populated. It then checks to determin if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the form. 
+This feature adds a new form called **Processor payment method mapping** which can be used to map processor payment methods to configured card or wallet types. This form is accessed via a new link in the **Card types** form.
+
+![Procesor payment mapping link](../media/Payments/ProcPmtMap.png)
+
+When this form is launched, it queries available payment connectors to collect a set or payment methods with the PaymentMethodVariant field populated. It then checks to determin if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the form. 
+
+![Unmapped processor payment method](../media/Payments/Unmapped.png)
+
+To map a processor payment method to a card or wallet, first select the card or wallet, then select the processor payment method and click **Add**. This will move the processor payment method to the **Mapped** column and the next time a matching payment authorization is received, it will be mapped to the chosen card or wallet.
+
+![Mapped processor payment method](../media/Payments/Mapped.png)
 
 
 
