@@ -2048,7 +2048,7 @@
           items:
           - name: Package configurations and deploy them to an online environment
             href: e-commerce-extensibility/package-deploy.md
-          - name: SDK and core library updates
+          - name: SDK and store starter kit updates
             href: e-commerce-extensibility/sdk-updates.md
       - name: Retail SDK
         items:
