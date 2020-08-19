@@ -43,7 +43,7 @@ The experimentation journey typically begins with creating a hypothesis or the t
 ## Prerequisites
 Here are some things to do, before you can start running experiments in Dynamics 365 Commerce's site builder:
 
-### Create a hypothesis and measures
+### Create a hypothesis and metrics
 You must define the assumption or theory you want to validate with the experiment. You will also need to decide on the corresponding success metrics that you expect the experiment to impact.
 
 ### Decide what you want to experiment on
@@ -68,9 +68,9 @@ Once the third-party connector setup is complete, follow the required steps to c
 
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using live telemetry events from Dynamics 365 Commerce:
 1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
-1. Click on **Events** in the right property pane of the page or module of interest.
-1. View the list of events associated and copy the required one to the clipboard.
-    - Click [here](https://docs.microsoft.com) to view all available events and attributes including tracking page views and revenue.
+1. Click on **Event IDs to track** in the right property pane of the page or module of interest.
+1. View the list of event IDs associated and copy the one(s) that relate to the right UI component.
+    - Click [here](https://docs.microsoft.com) to view all available events and attributes, including tracking page views and revenue.
 1. Use the event as necessary in the third-party service to track success metrics for the experiment.
 
 ## Create experiment variations
