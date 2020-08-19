@@ -58,6 +58,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Provide the overview information for the implementation project.
 - Describe the vision and goals for the project in a few sentences. This information will help Microsoft understand the goals that you want to achieve and how you define success for the project.
+- Provide the Partner MPN Id which you can get from the implementation partner team. If no partner involved or yet to be identified, kindly choose the appropriate option in implementation partner dropdown. Please note that providing accurate partner data is a pre-requisite for appropriate [FastTrack Program](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/commerce/toc.json) assignment. You might lose out on valuable services if you do not provide the correct partner information. Once partner identified, Its necessary to update the MPN Id here.
 - Specify the estimated number of user licenses after full roll-out including current licenses. This number can differ from the current license purchase. If no change is planned, provide the current user license count. If a license type isn't applicable, enter **0** (zero).
 - If your implementation project is a demo project, or if you're moving from another tenant, provide the details.
 
