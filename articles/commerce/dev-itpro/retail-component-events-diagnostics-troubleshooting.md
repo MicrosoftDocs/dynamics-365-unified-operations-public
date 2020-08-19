@@ -177,18 +177,18 @@ The following events are logged by the E-Commerce website, and can be consumed f
 ### Button and link clicks
 Button and link clicks for the following types of elements on an E-Commerce website are logged as telemetry events.
 
-1.	Header
-    - Navigation hierarchy
-    - Cart icon
-    - Sign-in
-    - Search icon
-    - Wishlist icon
-2.	Content block action links (This represents the hero, tile, and feature modules for marketing content.)
-3.	Video player
-4.	Product cards
-5.	Footer links
-6.	Breadcrumbs
-7.	Promo banner
-8.	Add to cart button
-9.	Checkout button
-10.	Place order button
+- Header
+  - Navigation hierarchy
+  - Cart icon
+  - Sign-in
+  - Search icon
+  - Wishlist icon
+- Content block action links (This represents the hero, tile, and feature modules for marketing content.)
+- Video player
+- Product cards
+- Footer links
+- Breadcrumbs
+- Promo banner
+- Add to cart button
+- Checkout button
+- Place order button
