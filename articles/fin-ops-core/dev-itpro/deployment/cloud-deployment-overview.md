@@ -151,9 +151,9 @@ Finance and Operations apps can be deployed into a subset of Microsoft Azure dat
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
-For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+For more information, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
-> The regional availability of Finance and Operations apps will now be limited to East US, West US, and Central US in North America for all new projects. Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions. For a list of the latest supported regions, see [Where your Finance and Operations data is stored](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+> The regional availability of Finance and Operations apps will now be limited to East US, West US, and Central US in North America for all new projects. Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
 ## Frequently asked questions
 
