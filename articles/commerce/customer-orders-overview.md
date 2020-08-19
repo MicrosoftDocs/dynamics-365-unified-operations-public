@@ -52,6 +52,7 @@ Before attempting to use customer order functionality in POS, ensure you have ma
 
 To use customer orders, modes of delivery must be configured that can be used by the store channel.  You will need to define at least one mode of delivery that can be used when order lines will be shipped to a customer from a store.  You must also define at least one pickup mode of delivery that can be used when order lines will be picked up from the store.  Modes of delivery are defined on the **Modes of delivery** form in Commerce Headquarters.  Refer to [this document](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes) for more information on how to set up modes of delivery for Commerce channels.
 
+![Configuration of Modes of delivery](media/customer-order-modes-of-delivery.png)
 
 
 ### Set up Fulfillment groups
@@ -59,6 +60,8 @@ To use customer orders, modes of delivery must be configured that can be used by
 Fulfillment group setup is defined on the **Fulfillment groups** form.   Organizations may create as many fulfillment groups as needed.  Fulfillment groups are used to determine which store/warehouse locations are offered as options for selection when creating a customer order in POS.   There may be certain stores or warehouse locations that are not able to fulfill customer orders so the fulfillment group configuration allows an organization to specifically indicate which stores or warehouses will be shown as options to users creating customer orders in POS.   Once a fulfillment group is defined, it is linked to a store through the **Stores** form through the **Set up** tab.
 
 Beginning in version 10.0.12, a feature was introduced to allow organizations to define if the warehouse or warehouse/store combinations defined in fulfillment groups can be used for shipping or pickup or both.  This gives additional flexibility to the store to drive which warehouse/store options appear to users when creating an order for pickup vs. shipment.  Enable feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** to take advantage of these additional configuration options. It's important to note that if a warehouse is linked to a fulfillment group and that warehouse is not a store, that warehouse can only be configured as a shipping location and cannot be used when configuring orders for pickup in POS.
+
+![Configuration of Fulfillment group](media/customer-order-fulfillment-group.png)
 
 ### Configure channel settings
 
@@ -68,6 +71,8 @@ When working with customer orders in Point of Sale, you will need to consider so
 - **Fulfillment group assignment** - link the fulfillment groups that will be referenced when displaying options for pickup locations or shipment origins when creating customer orders in POS
 - **Use destination-based tax** - determines if the shipping address will be leveraged to determine the tax group to be applied to the order line for lines shipping to the customer's address.
 - **Use customer-based tax** - determines if tax group as defined on the customer's delivery address will be used to tax a customer order created in POS for shipment to the customer's home.
+
+![Configuration of Fulfillment group](media/customer-order-all-stores.png)
 
 ### Set up customer order parameters
 
@@ -82,6 +87,8 @@ Before attempting to create customer orders in the Point of Sale (POS) applicati
 - **Shipping charge code** – Please note, if **Use advanced auto charges** is enabled, this parameter setting has no functionality. During creation of customer orders in POS, users will be prompted to enter a shipping charge manually if **Use advanced auto charges** is disabled.  Use this parameter to map an accounts receivable charge code which will be applied to the order when shipping charges are entered by the user.  The charges code defines the financial posting logic for the shipping charge
 - **Use advanced auto charges** - Enable this feature to utilize system calculated auto-charges when creating customer orders in POS.  These auto-charges can be used to calculated shipping fees or other order or item specific charges.   Refer to [this document](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-auto-charges) for more information on setting up and using advanced auto charges.
 
+![Configuration of Fulfillment group](media/customer-order-parameters.png)
+
 ### Update transaction screen layouts in POS
 
 Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) has been configured to support the creation and management of customer orders and that all necessary POS operations are configured.   Some POS operations that are recommended to properly support customer order creation and management in POS are listed below
@@ -95,6 +102,8 @@ Ensure the POS [screen layout](https://docs.microsoft.com/en-us/dynamics365/comm
 - **Recall order** - used to search and retrieve customer orders so that POS users may edit, cancel or perform fulfillment related operations on these orders as needed.
 - **Change mode of delivery** - can be used to quickly change the mode of delivery for lines already configured to be shipped without the user having to go through the Ship all products or Ship selected products flows again.
 - **Deposit override** - can be used to change the deposit amount the customer will pay for the selected customer order.
+
+![Configuration of Fulfillment group](media/customer-order-screen-layout.png)
 
 ## Working with customer orders in POS
 
