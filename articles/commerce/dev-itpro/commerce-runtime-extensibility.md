@@ -57,7 +57,7 @@ For example, the Customer service in CRT contains all the customer-related reque
 | CustomerSearchByFieldsServiceRequest         | This request is run when you search for customers by using fields (hint search). |
 | GetCustomerSearchFieldsServiceRequest        | This request gets the list of customer search fields (hint fields).              |
 
-**Types of extension patterns that CRT supports**
+## CRT extension patterns
 
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following table. Always use the samples that Microsoft provides as template for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
@@ -176,11 +176,11 @@ The preceding steps are used for manual deployment and testing in your developme
 
 To debug CRT from POS, you should attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server, for offline attach the CRT extension project to the dllhost.exe process.
 
-**Using extension properties on CRT entities and requests and responses**
+## Using extension properties on CRT entities and requests and responses
 
 One way to add new data to an existing CRT entity is to use extension properties. Extension properties are key-value pairs on the entity. By default, these key-value pairs aren't persisted in the database. To persist an extension property, you must write custom code.
 
-**Using extension properties on CRT entities with persistence**
+## Using extension properties on CRT entities with persistence
 
 Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail server/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
 
@@ -223,7 +223,7 @@ When you extend the channel database, it's always a good idea to include the pri
 
 4. Add the custom fields as extension properties to the shared parameters entity in the CRT post-trigger, and send it to POS.
 
-**Reading extension properties in triggers**
+## Reading extension properties in triggers
 
 The request that reads the data from the Customer table is GetCustomerDataRequest. The following example shows how you can add a post-trigger for this request.
 
@@ -421,7 +421,7 @@ namespace Contoso
 var property = entity.GetProperty("EXTENSION_PROPERTY_ADDED");
 ```
 
-### Using extension properties on CRT request and response types
+## Using extension properties on CRT request and response types
 
 Like entities, request and response types can be extended to set and get extension properties. However, they will persist only for the lifecycle of the request and won't be available in POS. If you want to save them to the database, you must write custom code.
 
@@ -477,11 +477,11 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 Likewise, you can read the extension property from all the other entities, such as products, customers, and addresses.
 
-### Implementing a new CRT service that handles multiple new requests
+## Implementing a new CRT service that handles multiple new requests
 
 It's a typical case to implement a new CRT service. First, you must create new request and response classes.
 
-#### Creating the request and response classes
+## Creating the request and response classes
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
@@ -520,7 +520,7 @@ public sealed class GetStoreHoursDataResponse : Response
 
 Next, you must create a new CRT service that uses the request and response types.
 
-#### Creating a new CRT service
+## Creating a new CRT service
 
 1.  Implement the new service.
 
@@ -580,11 +580,11 @@ Next, you must create a new CRT service that uses the request and response types
                     return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
                 }
             }
-    ```
+```
 
 3.  Register the CRT extension as mentioned in the begining of this doc.
 
-### Implementing a new CRT service that handles a single new request
+## Implementing a new CRT service that handles a single new request
 
 It’s slightly easier to create a single-request service.
 
@@ -594,11 +594,11 @@ public class CrossLoyaltyCardService : SingleAsyncRequestHandler<GetCrossLoyalty
 
 Registration is done as described in the previous procedure.
 
-### Implementing a new CRT service that overrides the functionality of an existing request
+## Implementing a new CRT service that overrides the functionality of an existing request
 
 In some cases, the request and response types are sufficient, but the service implementation must be changed. If some new data must be transmitted, you can also extend entity, request, or response objects by using extension properties. In this scenario, you can create the service as described earlier and use the existing IRequestHandler types. Additionally, registration in the commerceRuntime.Config file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file win.
 
-### Implementing a new CRT entity and using it in new CRT service
+## Implementing a new CRT entity and using it in new CRT service
 
 Any new entity must be of the **CommerceEntity** type. When you use this type, lots of low-level functionality is automatically handled for you. The following example, which is taken from the StoreHours sample, shows how to create an entity that is bound to the database table. This is the usual case.
 
@@ -675,7 +675,7 @@ When you want to use the new entity in a service, the process is straightforward
 
 For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
-### Adding pre-triggers and post-triggers for a specific request
+## Adding pre-triggers and post-triggers for a specific request
 
 For information about how to create CRT triggers extensio, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
 
