@@ -52,6 +52,8 @@ Before attempting to use customer order functionality in POS, ensure you have ma
 
 To use customer orders, modes of delivery must be configured that can be used by the store channel.  You will need to define at least one mode of delivery that can be used when order lines will be shipped to a customer from a store.  You must also define at least one pickup mode of delivery that can be used when order lines will be picked up from the store.  Modes of delivery are defined on the **Modes of delivery** form in Commerce Headquarters.  Refer to [this document](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes) for more information on how to set up modes of delivery for Commerce channels.
 
+
+
 ### Set up Fulfillment groups
 
 Fulfillment group setup is defined on the **Fulfillment groups** form.   Organizations may create as many fulfillment groups as needed.  Fulfillment groups are used to determine which store/warehouse locations are offered as options for selection when creating a customer order in POS.   There may be certain stores or warehouse locations that are not able to fulfill customer orders so the fulfillment group configuration allows an organization to specifically indicate which stores or warehouses will be shown as options to users creating customer orders in POS.   Once a fulfillment group is defined, it is linked to a store through the **Stores** form through the **Set up** tab.
@@ -64,8 +66,8 @@ When working with customer orders in Point of Sale, you will need to consider so
 
 - **Shipping warehouse** - indicate which warehouse will be used to fulfill orders configured for shipment from the store
 - **Fulfillment group assignment** - link the fulfillment groups that will be referenced when displaying options for pickup locations or shipment origins when creating customer orders in POS
-- **Use destination-based tax** - determines if the shipping address will be leveraged to determine the tax group to be applied to the order line
-- **Use customer-based tax** - determines if the customer's tax group will be leveraged to determine the tax group to be applied to the order line
+- **Use destination-based tax** - determines if the shipping address will be leveraged to determine the tax group to be applied to the order line for lines shipping to the customer's address.
+- **Use customer-based tax** - determines if tax group as defined on the customer's delivery address will be used to tax a customer order created in POS for shipment to the customer's home.
 
 ### Set up customer order parameters
 
