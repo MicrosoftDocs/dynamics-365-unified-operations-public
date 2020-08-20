@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure all POS clients to process card not present transactions without the need for a hardware station. This capability is currently limited to processing existing credit card payments and does not include creation of new credit card not present payments through an iFrame or some other method within the point of sale. The core scenario targted for this feature is buy online, pick up in store(BOPIS) or curbside pickup.
+This topic describes how to configure all POS clients to process card not present transactions without the need for a hardware station. Specifically targeting emerging scenarios such as curbside pickup, this feature removes the need for a hardware station when performing curbside pickup. When enabled, this feature allows clients such as the Cloud POS and Modern POS for iOS make credit card processing calls through Commerce scale unit, rather than depending on a standalone hardware station deployed on the local network. The result is that curbside pickup can be supported with many fewer setup steps. 
 
 ## Key terms
 
@@ -48,61 +48,32 @@ This topic describes how to configure all POS clients to process card not presen
 
 ## Overview
 
-While credit card processing in the point of sale has traditionally relied upon a communication with a physical payment terminal, 
-## Prerequisites
+When this feature is not enabled, card not present credit card requests cannot be processed by the Cloud POS or Modern POS for iOS by themselves due to the fact that they do not have a built-in hardware station. By enabling this feature, the Commerce Scale unit can be used to facilitate these clients for those clients. Aside from Cloud POS and Modern POS for iOS, this feature can also be used for Modern POS for Windows and Android clients, but it is not suported for offline mode, so for cases in which a Windows client with offline mode is used, this feature should not be used.  
 
-The List PI capability requires the following elements:
+## Supported scenarios
 
-- An e-commerce integration with Microsoft Dynamics 365 Commerce
-- A payment connector that is compatible with the List PI capability
-- A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
+This feature enables the following scenarios for point of sale clients that do not have a built-in hardware station. Most of these scenarios are partially supported by these point of sale clients today, but step required to finalize the transaction with the payment processor was not supported prior to this feature.
 
-For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Commerce for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+| Scenario | Description |
+| --- | --- |
+| Payment capture | Recall of orders for pickup and capture of the credit card payment associate with the order. |
+| Linked refund | Linked refund to the original payment instrument for return orders and cash and carry transactions. |
+| Order editing | Orders can be recalled and edited in the point of sale with the same payment card being authorized to support the new order total. | 
+| Order cancellation | Orders that are cancelled can have the balance due back to the customer refunded to the original payment card. |
+
+## Unsupported scenarios
+
+This feature does not add support for creating credit card authorizations. Only exisitng card payments can be captured, refunded or edited. 
+
+| Scenario | Description |
+| --- | --- |
+| Creating payment | Creating new customer orders and authorizing payments for fulfillment is not supported by this feature. Creating new payments will continue to require a hardware station. |
+| Changing payment card | If an order is recalled in the point of sale, the same payment method must be used for pickup. If the store associate chooses not to use the card associated with the order, they will not be able to replace it with a different card unless a hardware station is available. |
+| Offline | When this feature is enabled, card not present requests will always be sent to the Commerce Scale Unit. If a register goes offline, the Commerce Scale Unit is no longer available, so card not present requests will fail. This feature should not be enabled for registers that are configured to support offline mode. |
 
 ## Setup
 
-The List PI capability requires the following components and setup steps:
-
-- **E-commerce integration** – An online storefront integration with Commerce is required. For more information about the e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk).
-- **Online payments configuration** – The Dynamics 365 Payment Connector for Adyen supports List PI out of the box. For information about how to configure payments for online stores, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). 
-
-    In addition to completing the ecommerce setup steps that are described in that topic, you must set the **Allow saving payment information in e-commerce** option in the Payment accounts fasttab of the **Online store** form to **Yes**. 
-
-- **Omni-channel payments configuration** – In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. 
-
-## Functional experience
-
-### Guest checkout
-
-When e-commerce visitors choose to check out as guests, customer records aren't created during checkout, and the customers can't save payment instruments for their next visit. 
-
-### Named user checkout
-
-When named users (signed-in customers) go to the payment step of the checkout process, they will experience the List PI capability. The first time that a named user checks out, a **Save for my next payment** check box appears in the section where credit card information is entered. 
-
-![Save for my next payment option](../media/Payments/Save_PI.png)
-
-If this check box is selected, when a new credit card is submitted for payment, the named user's unique customer ID is sent to the payment processor, and the credit card is securely saved and mapped to the that unique customer ID. 
-
-If the same customer signs in during future visits to the storefront, he or she will be able to select the same credit card for payment at checkout. 
-
-![Previously saved payment instrument](../media/Payments/Saved_PI.jpg)
-
-### Order fulfillment and processing
-
-E-Commerce orders where the customer applied a tender line by using the List PI capability work in the same way as orders that were created without using a saved card payment. From the standpoint of order processing and fulfillment, the two types of payment are indistinguishable. 
-
-## Details of eCommerce payment card tokenization
-
-### Standard flow
-
-In e-Commerce integrations, the payment card is typically entered as part of the checkout process and is saved together with the order before finalization. The card details are entered directly on a payment acceptance page that a payment processor provides. After card details are entered and the customer moves on to the next step of the checkout process, the processor creates a token that is used later in the order creation process. 
-
-When the customer finalizes the online order, the payment card token is sent to the payment processor as part of an authorization request. If the payment authorization request is successful, the payment processor replies by sending an authorization token. This authorization token is saved together with the customer's order and is referenced when that order is fulfilled from the back office. 
-
-### List PI flow
-
-The main difference between the standard flow and the List PI flow is that the customer doesn't have to enter the full credit card number. Instead, the customer just has to select a previously saved credit card and provide the Card Verification Value (CVV number). If the customer provides the correct CVV number and moves on to the next step of the checkout process, the payment processor provides a payment card token that will be included in the authorization request. 
+The configuration to enable this feature is at the register level. Navigate to 
 
 ## Related articles
 
