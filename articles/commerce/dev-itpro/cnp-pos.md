@@ -37,6 +37,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic describes how to configure all POS clients to process card not present transactions without the need for a hardware station. Specifically targeting emerging scenarios such as curbside pickup, this feature removes the need for a hardware station when performing curbside pickup. When enabled, this feature allows clients such as the Cloud POS and Modern POS for iOS make credit card processing calls through Commerce scale unit, rather than depending on a standalone hardware station deployed on the local network. The result is that curbside pickup can be supported with many fewer setup steps. 
 
+> [!NOTE]
+> This feature should not be enabled for registers that support offline mode. It routes all card not present payment requests through the Commerce Scale Unit, which is not available when the register goes offline.  
+
 ## Key terms
 
 | Term | Description |
@@ -73,7 +76,7 @@ This feature does not add support for creating credit card authorizations. Only 
 
 ## Setup
 
-The configuration to enable this feature is at the register level. Navigate to 
+The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce /> Channel setup \> \> POS setup \> Registers** 
 
 ## Related articles
 
