@@ -46,13 +46,13 @@ There are several parameters that affect how Asset leasing behaves, including jo
 
    The **Cross-entity batch** parameter determines whether you can post into other legal entities from the current legal entity. If this parameter is enabled, you'll be able to create journal entries for the legal entities that you have access to.
 
-3.	Set the **Allow delete of confirmed leases** field to **Yes** to allow leases with confirmed payment schedules to be deleted. Leases with associated posted or unposted transactions can't be deleted, regadless of the field is set. You can't retore the lease record after it's been deleted. If you upload any records for a deleted lease, either manually or through data entities, the uploaded information is treated as new, rather than updates to an existing lease.
+3.	Set the **Allow delete of confirmed leases** field to **Yes** to allow leases with confirmed payment schedules to be deleted. Leases with associated posted or unposted transactions can't be deleted, regadless of the field is set. You can't restore the lease record after it's been deleted. If you upload any records for a deleted lease, either manually or through data entities, the uploaded information is treated as new, rather than as updates to an existing lease.
 
-   If the transition type of the book is Cumulative Catchup Option A or B, the system will insert the value in the **Incremental borrowing rate at transition** from the **Book setup** page into the **Incremental borrowing rate** field, if this parameter is enabled. If this field is set to **No**, the value in the **Incremental borrowing rate** field on the **Book details** page will be the rate entered on the head lease regardless of the transition type.
+   If this parameter is set to **Yes** and the transition type of the book is **Cumulative Catchup Option A or B**, the system will insert the value that's in the **Incremental borrowing rate at transition** field, on the **Book setup** page, into the **Incremental borrowing rate** field. If this field is set to **No**, the value in the **Incremental borrowing rate**, field on the **Book details** page, will be the rate entered on the head lease regardless of the transition type.
 
 4.	Set the **Allow depreciation reversals on closed book version** field to **Yes** to allow depreciation expense transactions to be reversed. Expense transactions can be reversed, even when the book version is closed.
  	
  >  [!Note]
- >  We recommend that you keep this field disabled. The field is used as a validation and control to prevent depreciating a closed book version accidently. Keeping the field disabled helps to keep net book value and future depreciation calculations accurate.
+ >  We recommend that you keep this field set to **No**. The value in this field is used as a validation and control to prevent depreciating a closed book version accidently. Keeping the field set to **No** helps to keep the net book value and future depreciation calculations accurate.
 
 
