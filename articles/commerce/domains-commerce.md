@@ -24,7 +24,8 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Release 10.0.12
+
 ---
 
 # Domains in Dynamics 365 Commerce
@@ -39,11 +40,14 @@ Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a w
 
 ## Provisioning and supported host names
 
-When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** field on the e-Commerce provisioning screen is used to enter the domain(s) that will be associated with the deployed Commerce environment. Multiple supported host names can be entered by separating them with semi-colons. Domains entered here will be the customer-facing DNS names where e-Commerce websites will be hosted. Entering domains at this stage does not start diverting traffic for those domains to Dynamics 365 Commerce. Traffic for the domain will only be routed to the Commerce endpoint when you update your Domain Name Server (DNS) to use the Commerce endpoint with the domain.
+When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-Commerce provisioning screen is used to enter the domain(s) that will be associated with the deployed Commerce environment.  Domains entered here will be the customer-facing DNS names where e-Commerce websites will be hosted. Entering domains at this stage does not start diverting traffic for those domains to Dynamics 365 Commerce. Traffic for the domain(s) will only be routed to the Commerce endpoint when you update your Domain Name Server (DNS) to use the Commerce endpoint with the domain(s).
 
-The following illustration shows the LCS e-Commerce provisioning screen with the **Supported host names** field highlighted. 
+> [!NOTE]
+> Multiple domains can be entered into the **Supported host names**by separating them with semi-colons.
 
-![LCS e-Commerce provisioning screen with the **Supported host names** field highlighted](./media/Domains_LCSProvisioningScreen.png)
+The following illustration shows the LCS e-Commerce provisioning screen with the **Supported host names** box highlighted. 
+
+![LCS e-Commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_LCSProvisioningScreen.png)
 
 You can create a service request to add additional domains to the environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **+ Submit an incident**.
 
