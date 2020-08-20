@@ -18,8 +18,6 @@
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
         - name: Software lifecycle policy - On-premises
           href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/commerce/toc.json
-        - name: Service update overview
-          href: ../fin-ops-core/fin-ops/get-started/service-update-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Service update availability
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
         - name: Apply updates to cloud environments
