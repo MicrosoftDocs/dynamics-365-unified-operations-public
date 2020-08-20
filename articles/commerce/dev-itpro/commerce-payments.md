@@ -59,13 +59,13 @@ The following illustration shows an order that was created at the POS. Notice th
 
 In Commerce version 10.0.13 and later, you can access the **Payments** page for orders that were created in e-commerce and the POS. Additionally, when the omni-channel Commerce order payments feature is turned on, the orders can be edited by using the order completion function that was previously available only for call center orders.
 
-The Sales
+With this feature enabled, the **Sales order summary** dialog can be used to edit payments for orders originating in POS and e-commerce.  
 
 ![Payments button available for a POS or e-commerce order that was created while the feature was turned on](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
 ## Prerequisites
 
-To turn on the omni-channel Commerce order payments feature, you must first turn on several other features and complete other configuration. The features should be turned on as a best practice, because they address functional gaps that are related to orders. Although you can turn off some of the other features after you turn on the omni-channel Commerce order payments feature, that approach isn't recommended.
+To turn on the omni-channel Commerce order payments feature, you must first turn on several other features and complete other configurations. Aside from being requirements for enabling **Omni-channel Commerce order payments**, these features should be turned on as a best practice because they address functional gaps that are related to orders. 
 
 If any of the prerequisites are missing when you try to turn on the omni-channel Commerce order payments feature, you receive a message that states that you can't continue until the prerequisite features and configurations are in place.
 
@@ -75,12 +75,13 @@ If any of the prerequisites are missing when you try to turn on the omni-channel
 
 The following features are required for omni-channel Commerce order payments to work correctly.
 
-| Feature name | Description | Can be turned off later |
+| Feature name | Description |
 |---|---|---|
-| Unified payment posting journal defaults for Commerce | This feature changes the way that business logic creates customer payment and customer refund payment journals for orders that are created through the call center, POS, or e-commerce channel. | Yes |
-| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments). | No | 
-| Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payments functionality might affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payments functionality in production environments. | Yes |
-| Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. | Yes |
+| Unified payment posting journal defaults for Commerce | This feature changes the way that business logic creates customer payment and customer refund payment journals for orders that are created through the call center, POS, or e-commerce channel. |
+| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments). |  
+| Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payments functionality might affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payments functionality in production environments. | 
+| Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
+| Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
 
 ### Configure prerequisites
 
@@ -106,7 +107,7 @@ The order completion function must be turned on for call centers. Order completi
 
 #### Remove the Pay later option from the POS
 
-When customer orders are created at the POS, the store associate can either collect a card payment for fulfillment or select **Pay later** to skip collection of card details. When the omni-channel Commerce order payments feature is turned on, the **Pay later** option should be removed from the POS. To remove it, search for **Functionality profiles** to open the **Functionality profiles** page. On the **General** FastTab for the functionality profile, change the value of the **Require payment for fulfillment** field to **Card required**. This change must be synced to the channel database before it takes effect at the POS.
+When customer orders are created at the POS, the store associate can either collect a card payment for fulfillment or select **Pay later** to skip collection of card details. When the omni-channel Commerce order payments feature is turned on, the **Pay later** option should be removed from the POS. To remove it, search for **Functionality profiles** to open the **Functionality profiles** page. Select the relevant functionality provide and click **Edit**. On the **General** FastTab for the functionality profile, change the value of the **Require payment for fulfillment** field to **Card required**. This change must be synced to the channel database before it takes effect at the POS.
 
 ## Turn on the omni-channel Commerce order payments feature
 
@@ -163,8 +164,8 @@ After the payments are edited, the order submission process corrects any changes
 
 | Scenario | Description | Supported |
 |---|---|---|
-| Edit to specify a higher amount. | For card payments that have been authorized but haven't yet been captured, the payment amount can be increased. A new authorization is created for the new amount, and the old authorization is voided. | Yes |
-| Edit to specify a lower amount. | For card payments that have been authorized but haven't yet been captured, the payment amount can be reduced. When the amount on a payment line is reduced, the old authorization is canceled, and a new authorization is created for the new amount. | Yes |
+| Edit to specify a higher amount. | For card payments that have been authorized but haven't yet been captured, the payment amount can be increased. When the amount on a payment line is increased, a new authorization is created for the new amount, and the old authorization is voided. | Yes |
+| Edit to specify a lower amount. | For card payments that have been authorized but haven't yet been captured, the payment amount can be reduced. When the amount on a payment line is reduced, a new authorization is created for the new amount, and the old authorization is voided. | Yes |
 | Remove an old card, and add a new card. | Uncaptured card payment authorizations can be removed from orders and replaced by a payment on a different card. The authorization for the first card is canceled, and an authorization for the new card will be obtained when the order is submitted. | Yes |
 
 #### Partially and fully captured card payments
@@ -180,7 +181,7 @@ After the payments are edited, the order submission process corrects any changes
 |---|---|---|
 | Authorized payments | Omni-channel Commerce order card payments can be removed from an order through order completion, but only if they weren't partially captured. | Yes |
 | Prepayments | Prepayments can't be removed through order completion. Prepayments can't be removed from an order after they are applied. Payment vouchers are already associated with them. | No |
-| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted, and the uncaptured amount is voided from the authorization. | No |
+| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, the a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
 | Fully captured credit card payments and prepayments | Fully captured credit card payments and prepayments can't be removed from the order. | No |
 
 ### Cancel order and sales lines
@@ -191,7 +192,7 @@ After the payments are edited, the order submission process corrects any changes
 | Order cancellation for credit card payments that are captured but aren't invoiced | If an order is created at the POS, and a card payment is used to capture a deposit, the order is canceled before invoicing. The card payment is automatically refunded as part of order cancellation. | Yes |
 | Order cancellation for orders that are partially shipped and invoiced | For orders that have been partially shipped and invoiced, cancellation will cancel the fulfillment of lines that haven't been invoiced. Open credit card authorizations for the remaining balance on the order aren't automatically canceled. | Manual refund is required. |
 | Order cancellation for orders that are invoiced but aren't shipped | If an order is fully invoiced, but some of the items haven't been shipped, the order can be canceled. However, payments that are captured for that order won't automatically be refunded. Open authorizations for items that haven't been invoiced won't be canceled but will expire according to the authorization expiration policies of the bank that issued the card. | Manual refund is required. |
-| Line cancellation for items that aren't fulfilled or invoiced | If an order line that hasn't been fulfilled or invoiced is canceled, the order completion process will require that payments for the order balance with the order total. If removal of a line decreases the amount that is due, the payment amount should be reduced accordingly. |
+| Line cancellation for items that aren't fulfilled or invoiced | If an order line that hasn't been fulfilled or invoiced is canceled, the order completion process will require that payments are reduced to equal the new order total. |
 
 ### Refunds
 
