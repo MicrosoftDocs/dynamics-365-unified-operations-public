@@ -174,6 +174,11 @@ Once the above changes have been made in the back office environment, synchroniz
 
 For details related to configuring Storefront to use PayPal in the checkout module, please visit the [Payment module](https://docs.microsoft.com/en-us/dynamics365/commerce/payment-module) docs article.  
 
+## Entering a merchant relationship with PayPal
+
+To create a **Live** merchant account with PayPal, visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) for self-service or [connect with a sales representative](https://www.paypal.com/business/contact-sales) to discuss custom rates. 
+ 
+
 ## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
