@@ -55,7 +55,7 @@ When provisioning an e-Commerce environment, Commerce will generate a URL that w
 
 You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from a sandbox environment to production. Non-production sandbox environment URLs will contain a "-sandbox" suffix reflecting the environment type within the Commerce-generated URL (for example, `https://<e-Commerce tenant name>-sandbox.commerce.dynamics.com`).
 
-## Site setup and generated URLs
+## Site setup and Commerce-generated URLs
 
 Once your e-Commerce environment is provisioned, you must set up your site in Commerce site builder to associate your site to the working URL.
 
@@ -104,7 +104,7 @@ For example, environment "xyz" has been provisioned, and two sites have been cre
 
 When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. If the path "fabrikam" was added during site setup, the URL `https://xyz.commerce.dynamics.com` could be used to access the published site content site for `www.fabrikam.com`.
 
-## DNS and Go-Live
+## Traffic forwarding in production
 
 You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you need to forward the traffic for your custom domain to the `<e-Commerce tenant name>`.commerce.dynamics.com endpoint.
 
@@ -123,7 +123,7 @@ To use the Commerce-supplied Azure Front Door instance, create a service request
 - For a domain serving an existing website, there is a multi-step process required to establish the domain verification and SSL certificate. This process has a 7-working-day service level agreement (SLA) for a domain to go live, since it includes multiple sequential steps.
 
 > [!NOTE]
-> Custom domains with SSL are only supported on production environments. For lower environments (for example, sandbox and user acceptance testing [UAT]), use the Commerce- generated URL to access published content in a web browser.
+> Custom domains with SSL are only supported on production environments. For non-production environments such as sandbox and user acceptance testing UAT), use the Commerce-generated URL to access published content in a web browser.
 
 ## SSL certificate process
 
