@@ -2186,6 +2186,8 @@
           href: https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf
         - name: Deploy payment connectors
           href: dev-itpro/deploy-payment-connector.md
+        - name: Incremental capture for back-office invoicing
+          href: dev-itpro/incremental-capture.md
         - name: Create custom localized error messages for payment terminal extensions
           href: dev-itpro/payment-custom-error-messages.md
         - name: Create Windows installers for payment connectors
