@@ -43,7 +43,7 @@ When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Ser
 
 The following illustration shows the LCS e-Commerce provisioning screen with the **Supported host names** field highlighted. 
 
-![LCS e-Commerce provisioning screen with the **Supported host names** field highlighted]()
+![LCS e-Commerce provisioning screen with the **Supported host names** field highlighted](./media/Domains_LCSProvisioningScreen.png)
 
 You can create a service request to add additional domains to the environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **+ Submit an incident**.
 
@@ -79,11 +79,11 @@ Alternately, if you had added a path of "fabrikam" during this same site's setup
 
 Once your site is set up with a path, all URLs associated with pages in site builder will build on the working URL (in other words, the Commerce-generated URL, or the Commerce-generated URL plus the path) for the site. Creating a new URL in site builder (**URLS /> +New**) by selecting a page and entering the desired URL path for that page will associate that URL with the page. This URL path value appends to the site's working URL to access the page, and is labeled as `./<URL path>` in the URL list of the **URLs** page in site builder.
 
-The following illustration shows the **New URL** dialog box in site builder. 
+The following illustration shows the **New URL** dialog box in site builder with an example URL path highlighted. 
 
 ![**New URL** dialog box in site builder](./media/Domains_PageSetup2a.png)
 
-The following illustration shows the **URLs** page in site builder.
+The following illustration shows the **URLs** page in site builder with an example URL highlighted in the list.
 
 ![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder2a.png)
 
