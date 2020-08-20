@@ -36,10 +36,10 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-If lease payments are dependent on an index, those index rate types can be added and maintained in the system. The index rate revaluation process will use the most recent index rate from the date of revaluation to revalue the lease payments from the **Index rate type** page.
+If lease payments are dependent on an index, those index rate types can be added and maintained in the system. To revalue the lease payments from the **Index rate type** page, the index rate revaluation process will use the most recent index rate from the date of revaluation.
 
-1. To add index rate types and index rates, navigate to **Asset leasing > Setup > Index rate type**.
+1. To add index rate types and index rates, open the **Index rate type** page (**Asset leasing > Setup > Index rate type**).
 2. Click **New**. Enter the rate type, and the name of the index rate, in the respective fields.
 3. To add a new index rate value, select the index rate type and click **Add**. Select the effective start date of the rate, and the rate value.
 
-You'll need to select the index rate method either **Index rate value difference** or **Index rate value**. Select index rate value difference to calculate a new lease payment based on the difference between the index rate at commencement date and the most recent index rate defined in the Index rate (%) field. Select index rate value to calculate the lease payment using the percentage defined in the Index rate (%) field.
+You'll need to select the index rate method either **Index rate value difference** or **Index rate value**. Select index rate value difference to calculate a new lease payment based on the difference between the index rate at commencement date and the most recent index rate. The index rate is defined in the **Index rate (%)** field. Select index rate value to calculate the lease payment using the percentage that's specified in the **Index rate (%)** field.
