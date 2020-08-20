@@ -59,7 +59,7 @@ The following illustration shows an order that was created at the POS. Notice th
 
 In Commerce version 10.0.13 and later, you can access the **Payments** page for orders that were created in e-commerce and the POS. Additionally, when the omni-channel Commerce order payments feature is turned on, the orders can be edited by using the order completion function that was previously available only for call center orders.
 
-Order completion:
+The Sales
 
 ![Payments button available for a POS or e-commerce order that was created while the feature was turned on](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
