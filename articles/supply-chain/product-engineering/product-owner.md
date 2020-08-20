@@ -41,7 +41,7 @@ To create and populate a product owner group:
 
 1. Go to **Product engineering \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
-3. In the **Product owner** field, type a value. <!-- KFM: What kind of value? How is this different from the name? BNG is not really different  -->
+3. In the **Product owner** field, type a value. <!-- KFM: What kind of value? How is this different from the name? BNG it is like when you use Name and Description for other fields, Name would be Product owner and name would be descripton, labels should be name and descripton here... -->
 4. In the **Name** field, enter a name for the group.
 5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
 
