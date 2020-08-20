@@ -73,12 +73,12 @@ The Five years undiscounted payment forecast report shows the projected undiscou
 |     Classification       	|     The classification of the lease.                                                              	|
 |     Posting Layer        	|     The layer to which this lease is posting.                                                     	|
 |     Currency             	|     The currency of the lease.                                                                    	|
-|     Current              	|     The sum of all lease payments payable within the next 12 months from the Reporting Date.      	|
-|     13-24 Months         	|     The sum of all lease payments payable between 13 and 24 months from the Reporting Date.       	|
-|     25-36 Months         	|     The sum of all lease payments payable between 25 and 36 months from the Reporting Date.       	|
-|     37-48 Months         	|     The sum of all lease payments payable between 37 and 48 months from the Reporting Date.       	|
-|     49-60 Months         	|     The sum of all lease payments payable between 49 and 60 months from the Reporting Date.       	|
-|     Thereafter           	|     The sum of all lease payments payable on or after 61 months from the Reporting Date.          	|
+|     Current              	|     The sum of all lease payments payable within the next 12 months from the reporting date.      	|
+|     13-24 Months         	|     The sum of all lease payments payable between 13 and 24 months from the reporting date.       	|
+|     25-36 Months         	|     The sum of all lease payments payable between 25 and 36 months from the reporting date.       	|
+|     37-48 Months         	|     The sum of all lease payments payable between 37 and 48 months from the reporting date.       	|
+|     49-60 Months         	|     The sum of all lease payments payable between 49 and 60 months from the reporting date.       	|
+|     Thereafter           	|     The sum of all lease payments payable on or after 61 months from the reporting date.          	|
 
 ## GAAP cash flows report
 The GAAP disclosures Report satisfies the US GAAP disclosure requirement specified in 842-20-50-4(g)(1). To view this report, click **Asset Leasing > Inquiries & reports > Disclosures > GAAP – cash flows**. 
