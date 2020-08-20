@@ -34,28 +34,26 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal(PayPal Connector). It includes a comprehensive list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
+This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal(PayPal connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | PayPal Checkout | Also known as the PayPal "button", PayPal Checkout describes customer experience and integration supported by the PayPal Connector. |
-| Wallet | A payment type which does not include traditional payment characteristics, such as the BIN range that is used to differentiate among credit and debit card types. |
+| Wallet | A payment type which does not include traditional payment characteristics, such as the BIN range and expiration date, that are used to differentiate among credit and debit card types. |
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce now offers an out of box integration for PayPal Checkout. When the PayPal Connector is configured, the PayPal button is as a selectable payment method as part of online order checkout. When users select "PayPal" they are directed to complete their payment directly with PayPal and then returned to the web storefront for order completion.  
+Microsoft Dynamics 365 Commerce now offers an out of box integration for PayPal Checkout. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select "PayPal" they are directed to complete their payment directly with PayPal and then returned to the web storefront for order completion.  
 
-The PayPal connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "Wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping has been introduced for payments that do not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, visit Processor payment method documentation. 
+The PayPal connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "Wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping has been introduced for payments that do not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, visit [**Wallet documentation**](articles/commerce/wallets.md). 
 
 ## Availability
 
 The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
 
 ## Functional overview
-
-The following capabilities are supported out of box by the PayPal Connector. 
 
 ### PayPal Checkout in Storefront 
 
@@ -74,7 +72,6 @@ Fulfillment for PayPal orders supports incremental capture. This means that if a
 Orders made using the PayPal connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization exipry. This means that if an authorization expires, the order will fall into a 'Do not process' state and customer will need to be contacted to arrange for an alternate form of payment. 
 
 Billing agreement support, which allows for creation of new authorizations upon expiration of the original authorization, will be added in a future release. 
-
 
 ## Testing the PayPal connector
 
@@ -107,7 +104,7 @@ To test the PayPal connector, you must first create PayPal developer credentials
 ### Map the PayPal wallet payment method to a procesor payment method
 
 > [!NOTE]
-> Some of these steps leverage a new capabilities for supporting wallet payment methods. For more information on this feature, visit the docs article for [**wallet support**](articles/commerce/wallets.md).
+> Some of these steps leverage a new capabilities for supporting wallet payment methods. For more information on this feature, visit the docs article for [**Wallet support**](articles/commerce/wallets.md).
 
 1. Navigate to **Retail and Commerce \> Channel Setup \> Payment methods \> Payment methods**.
 2. Click **New**.
