@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic lists and briefly describes the reports that are available in Asset leasing. You can display most reports by completing similar steps. 
 
-- To view most Asset leasing reports, click **Asset Leasing > Inquiries & reports > Lease reports** and then select a report to view). For the reports that require a different selection path, the steps to open the report are include with that report's description. 
+- To view most Asset leasing reports, click **Asset Leasing > Inquiries & reports > Lease reports** and then select a report to view). For the reports that require a different selection path, the steps to open the report are included with that report's description. 
 - When you select a report to print, a parameters page will open that lets you filter the information that's included on the report. Enter filter criteria, and then click **OK** to generate the report. The generated report will show information that falls within the filters that you specified.
 
 ## Asset movements 
@@ -47,7 +47,7 @@ The Asset movement report serves as a rollforward report for the right-of-use as
 |------------------------------------|--------------------------------------------------------------------------------|
 |     Commencement date              |     The commencement date of the lease’s earliest version.                     |   
 |     Lease term                     |     The lease term of the lease’s earliest version.                            |
-|     Short term lease               |     If lease is classified as a short-term lease will show as **Yes**.          |
+|     Short-term lease               |     If lease is classified as a short-term lease will show as **Yes**.          |
 |     Low value lease                |     If lease is classified as a low-value lease will show as **Yes**.           |
 |     Initial right of use asset     |     The original value of the right-of-use asset from the initial recognition journal entry.      |
 |     Beginning balance              |     The net book value of the right of use asset as of the **From date**.                         |
@@ -60,7 +60,7 @@ The Asset movement report serves as a rollforward report for the right-of-use as
 ## Differences report
 The Differences report shows the differences between information loaded into the Lease import framework and the information that's currently in the system. This lets you compare what was adjusted, updated, or added through the Lease import framework.  
 
-The values in the report will vary based on the selected lease. The report will only show those fields that are differ from what is currently in the system and what is in the staging tables. The Old value is what is either currently in the system or that was previously in the system, depending on whether the import process has run. The New value are the values in the staging table and will replace the Old value.
+The values in the report will vary based on the selected lease. The report will only show those fields that differ from what is currently in the system and what is in the staging tables. The old value is what is either currently in the system or what was previously in the system, depending on whether the import process has run. The new value shows the value that's in the staging table that will replace the old value.
 
 ## Five-years undiscounted payment forecast
 The Five years undiscounted payment forecast report shows the projected undiscounted lease payments to be paid over the next five years from the date specified on the report parameters. The report includes the following fields. 
@@ -108,7 +108,7 @@ The Lease balances forecast lists information directly from the liability amorti
 |     Payments                    	|     The sum of the lease’s payments that fall within the date range defined for the report.                            	|
 |     Interest                    	|     The sum of the lease’s interest expenses that fall within the date range defined for the report.                    |
 |     Ending balance              	|     The liability balance of the lease as of the **To date**.                                                         	|
-|     Short term liability        	|     The short term liability amount in the lease’s amortization schedule as of the **To date**.                        	|
+|     Short-term liability        	|     The short-term liability amount in the lease’s amortization schedule as of the **To date**.                        	|
 |     Long term liability         	|     The long term liability amount in the lease’s amortization schedule as of the **To date**.                         	|
 |     Beginning Net Book Value    	|     The “Beginning Net Book Value” in the lease’s asset depreciation schedule for the period containing the start date of the report    	|
 |     Initial recognition         	|     If the commencement date of the lease falls between the report’s date parameters, this column will display the asset account value of   the initial recognition journal entry.        	|
@@ -138,7 +138,7 @@ The Lease modification report shows all leases that have been modified within a 
 |     Ending liability balance    	|     The resulting liability balance as of the adjustment date of the lease.       	|
 
 ## Lease movements report
-The Lease movement report serves as a rollforward report for the lease lability balances for each lease. This report allows the user to view the liability transactions of a lease during a specified period.
+The Lease movement report serves as a rollforward report for the lease liability balances for each lease. This report allows the user to view the liability transactions of a lease during a specified period.
 
 |     Report fields          	|     Description                                             	|
 |----------------------------	|--------------------------------------------------------------	|
@@ -156,7 +156,7 @@ The Lease movement report serves as a rollforward report for the lease lability 
 The **Lease Transactions inquiry** shows all the journal entries that have been generated by Asset leasing. Each journal entry is linked with the book ID it was originated from. This lets you easily associate the journal entry with corresponding lease. The **Lease transactions inquiry** functions in manner that's similar to the **Voucher transactions** page in General ledger.
 
 ## Weighted-average discount rate report
-The Weighted-average discount rate report satisfies the US GAAP disclosure requirement specified in ASC 842-20-50-4(g)(4) for a weighted-average discount rate. To view this report, click **Asset Leasing > Inquiries & reports > Disclosures > Weighted-average discount rate**.The report includes the following fields. 
+The Weighted-average discount rate report satisfies the US GAAP disclosure requirement specified in ASC 842-20-50-4(g)(4) for a weighted-average discount rate. To view this report, click **Asset Leasing > Inquiries & reports > Disclosures > Weighted-average discount rate**. The report includes the following fields. 
 
 |     Report fields                  	|     Description                                                       	|
 |------------------------------------	|------------------------------------------------------------------------	|
