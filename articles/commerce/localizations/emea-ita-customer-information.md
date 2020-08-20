@@ -162,9 +162,9 @@ Follow these steps to update customizations.
 
 # [Retail 10.0.7](#tab/retail-10-0-7)
 
-If any of your customizations includes request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest`:
+If any of your customizations include request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest` requests:
 
-1. Find the request handler for the `SaveCartRequest`.
+1. Find the request handler for `SaveCartRequest`.
 1. Find the line of code that runs the original request handler.
 1. Add the following line before calling the original request handler:
 
@@ -176,7 +176,7 @@ If any of your customizations includes request handlers for the `SaveCartRequest
     new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-1. Find the request handler for the `CreateSalesOrderServiceRequest`.
+1. Find the request handler for `CreateSalesOrderServiceRequest`.
 1. Find the line of code that runs the original request handler.
 1. Replace it with the following code:
 
@@ -190,7 +190,7 @@ If any of your customizations includes request handlers for the `SaveCartRequest
 
 # [Retail 10.0.12](#tab/retail-10-0-12)
 
-If customizations have references to the `TaxRegistrationIdFiscalCustomerService`, they must be removed.
+If customizations have references to the `TaxRegistrationIdFiscalCustomerService` service, they must be removed.
 
 ---
 
