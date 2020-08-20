@@ -78,6 +78,11 @@ This feature does not add support for creating credit card authorizations. Only 
 
 The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce \> Channel setup \> POS setup \> Registers** Then select the relevant register and click **Edit**. Click on the dropdown for **Card not present processing** and select **Use retail server**, then click **Save**
 
+![Previously saved payment instrument](../media/Payments/CNP-POS.png)
+
+After the change has been saved, run the **1090** distribution schedule to sync the changes to the point of sale. 
+
 ## Related articles
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
+- 
