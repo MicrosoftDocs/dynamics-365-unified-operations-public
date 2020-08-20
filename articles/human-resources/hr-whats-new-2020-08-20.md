@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 20, 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2020
@@ -29,33 +29,34 @@ ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (August 20, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3478. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
+
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3478. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Show upcoming and pending leave of absence information to cards in People workspace
 
-Pending and upcoming leave request options are now available on the leave and absence cards of the people workspace.
+Pending and upcoming leave request options are now available on the Leave and absence cards in the **People** workspace.
 
-## Private field is not yes by default for Employee role in Employee Self Service - (477106)
+## Private field isn't Yes by default for Employee role in Employee self service (477106)
 
-In this release, the private flag will now default to yes when employees add new address records through the personal information page in Employee self-service. 
+The **Private** field now defaults to **Yes** when employees add new address records through the **Personal information** page in Employee self service. 
 
-## Candidates to hire FastTab in personnel management shows an incorrect count of candidates - (470110)
+## Candidates to hire FastTab in Personnel management shows an incorrect count of candidates (470110)
 
-With this release, the personnel management page has been updated to accurately reflect the number of candidates to hire. 
+The **Personnel management** page now accurately displays the number of candidates to hire. 
 
-## Can’t enter sickness for terminated employee when accrual is set to zero - (446195)
+## Can’t enter sickness for terminated employee when accrual is set to zero (446195)
 
-Leave transactions are now allowed for employees that have been terminated in the future and the accrual is set to "zero".Leave transactions can be entered up to the termination date of the employee. 
+Leave transactions are now allowed for employees that have been terminated in the future and the accrual is set to zero. Leave transactions can be entered up to the termination date of the employee. 
 
-## Adding custom fields to the new worker form is disabling the fields in the action pane for Manage Leave - (473314)
+## Adding custom fields to the new Worker form disables the fields in the action pane for Manage leave (473314)
 
-Action pane options on the new worker form for Manage leave will no longer be disabled if custom fields have been added to the new worker form.
+Action pane options on the new **Worker** form in **Manage leave** will no longer be disabled if custom fields have been added to the new **Worker** form.
 
-## Making the leave comment field mandatory allows a leave request to be submitted when no comment is entered - (473543)
+## Making the Leave comment field mandatory allows a leave request to be submitted when no comment is entered (473543)
 
-Comment fields can now be mandatory and leave request will honor this setting. Mandatory fields is a preview feature.
+Comment fields can now be mandatory, and leave requests honor this setting. Mandatory fields is a preview feature.
 
 ### DMF entity available for accrual suspensions
 
@@ -87,28 +88,28 @@ Checklist entities for Onboarding, Offboarding, Transfers, and Business processe
 
 The **Feature management** workspace may be displaying features that are disabled as preview features when they are generally available. Below is a list of generally available features that show an incorrect status. 
 
-1.	Benefits management
-2.	Case management
-3.	Database logging (Auditing)
-4.	Leave accrual for a single company or a single plan
-5.	Leave and absence accrual suspension
-6.	Balance adjustment reason code and comment
-7.	Buy and sell leave
-8.	Leave and absence calendar
-9.	Leave carry-forward rules
-10.	Leave accrual auditing
-11.	Leave accrual deletion
-12.	Leave accrual rounding
-13.	Configure multiple leave types on a single leave plan
-14.	Update time-off enhancements
-15.	Use an employee's FTE for accruals
-16.	Cross company compensation view
-17.	Print performance reviews
-18.	Leave accrual holiday corrections
+- Benefits management
+- Case management
+- Database logging (Auditing)
+- Leave accrual for a single company or a single plan
+- Leave and absence accrual suspension
+- Balance adjustment reason code and comment
+- Buy and sell leave
+- Leave and absence calendar
+- Leave carry-forward rules
+- Leave accrual auditing
+- Leave accrual deletion
+- Leave accrual rounding
+- Configure multiple leave types on a single leave plan
+- Update time-off enhancements
+- Use an employee's FTE for accruals
+- Cross company compensation view
+- Print performance reviews
+- Leave accrual holiday corrections
 
 ## Benefit plan employee entity 
 
-We have recently discovered two issues regarding the BenefitsPlanEmployee entity. When importing worker enrollments, the Coverage Code and the Plan Type Code are being set incorrectly.  This will cause the employees benefit plans to be displayed incorrectly in the Worker Benefits Plan form and in the Open enrollment form of Employee self-service. This can also impact the employees’ ability to select plans in ESS.  Currently there is not a work around.  The team is treating this as a high priority fix and will be rolling the fix out with our next release.
+We have recently discovered two issues regarding the **BenefitsPlanEmployee** entity. When importing worker enrollments, the **Coverage code** and the **Plan type code** are being set incorrectly. This issue causes employee benefit plans to display incorrectly in the **Worker benefits plan** form and in the **Open enrollment** form in Employee self service. This issue can also impact the employee's ability to select plans in Employee self service. Currently there isn't a workaround. We're treating this as a high-priority fix and will roll out the fix with our next release.
 
 ## See also
 
