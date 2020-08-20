@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: August 20, 2020
+      href: hr-whats-new-2020-08-20.md
     - name: August 6, 2020
       href: hr-whats-new-2020-08-06.md
     - name: July 23, 2020
@@ -539,6 +541,8 @@
         href: hr-employee-self-service-calendar.md
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+      - name: Create buy and sell leave workflows
+        href: hr-leave-and-absence-buy-sell-workflow.md   
       - name: Buy and sell leave
         href: hr-employee-self-service-buy-sell-leave.md
     - name: Manage leave requests in Teams
