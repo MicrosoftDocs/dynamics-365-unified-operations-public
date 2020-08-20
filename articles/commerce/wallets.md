@@ -47,7 +47,7 @@ This topic provides an overview of wallet payment support for Microsoft Dynamics
 
 Unlike traditional credit and debit cards, wallet payment authorization responses to not include BIN ranges. Traditionally, BIN ranges have been used to match payment authorization responses to predefined card types with BIN ranges. This feature adds support for **Processor payment methods** and mapping of those variants to card types set up in the back office.
 
-**Processor payment method** is a new property for the payments SDK that can be applied to payment methods supported for a particular payment connector. When an authorization response is received that includes the processor payment method, a lookup will be performed to determine if that procesor payment method has been mapped to a card or wallet type. If a mapping is found, that payment will be mapped to the matching card or wallet type. If a match cannot be found, a BIN lookup will be performed following the traditional bin range settings for Commerce. 
+**Processor payment method** is a new property for the payments SDK that can be applied to payment methods supported for a particular payment connector. When an authorization response is received that includes the processor payment method, a lookup will be performed to determine if that processor payment method has been mapped to a card or wallet type. If a mapping is found, that payment will be mapped to the matching card or wallet type. If a match cannot be found, a BIN lookup will be performed following the traditional bin range settings for Commerce. 
 
 Because wallet payments don't include BIN range, if a payment connector supports wallet payments, such as PayPal, the payment connector should be updated to the latest payments SDK and the processor payment method property should be populated at least for all supported wallet payments. 
 
@@ -85,7 +85,7 @@ In certain cases, a payment connector may return a card that does not have a BIN
 
 ![Default for unmapped cards](../media/Payments/DefaultUnMapped.png)
 
-This ensures that the payment is never authorizaed by the terminal and reversed by the POS, thus avoiding confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being maped to the default for unknown card types. If a card type is truly unwanted for processing, it should be disabled at the processor level. 
+This ensures that the payment is never authorizaed by the terminal and then reversed by the POS, thus avoiding confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being mapped to the default for unknown card types. If a card type is truly unwanted for processing, it should be disabled at the processor level. 
 
 ## Additional resources
 
