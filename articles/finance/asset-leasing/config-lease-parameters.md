@@ -36,23 +36,23 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-There are several parameters that determine the behavior of Asset leasing capability, such as jouenal names, general parameters and posting profile settings.
+There are several parameters that affect how Asset leasing behaves, including journal names, general parameters, and posting profile settings.
 
-1.	Open the Asset leasing parameters page (**Asset leasing > Setup > Asset leasing parameters**).
+1.	Open the **Asset leasing parameters** page (**Asset leasing > Setup > Asset leasing parameters**).
 
 2.	Open the **Leases** tab and expand **General** fasttab. 
 
-3.	The **Allow manual classification override** determines whether or not the lease classification can be overidden before the payment schedule is confirmed.
+   The **Allow manual classification override** determines whether or not the lease classification can be overridden before the payment schedule is confirmed.
 
-4.	The **Cross-entity batch** parameter determines whether you can post into other legal entities from the current legal entity. If this parameter is enabled, you'll be able to create journal entries for the legal entities that you have access to.
+   The **Cross-entity batch** parameter determines whether you can post into other legal entities from the current legal entity. If this parameter is enabled, you'll be able to create journal entries for the legal entities that you have access to.
 
-5.	Enable the **Allow delete of confirmed leases** field to allow leases with confirmed payment schedules to be deleted. Leases with associated posted or unposted transactions will not be allowed to be deleted, regadless of this option. Once the lease record is deleted, it can't be restored. Any records for the same that are uploaded manually or through data entities are treated as fresh records.
+3.	Set the **Allow delete of confirmed leases** field to **Yes** to allow leases with confirmed payment schedules to be deleted. Leases with associated posted or unposted transactions can't be deleted, regadless of the field is set. You can't retore the lease record after it's been deleted. If you upload any records for a deleted lease, either manually or through data entities, the uploaded information is treated as new, rather than updates to an existing lease.
 
-6. The **Incremental borrowing rate on books** if the transition type of the book is Cumulative Catchup Option A or B, the system will use the Incremental Borrowing Rate at Transition from the Book Setup to populate the Incremental Borrowing Rate field if this parameter is enabled. If this field is set to "No", the Incremental Borrowing Rate on the Book details will be the rate entered on the head lease regardless of the transition type.
+   If the transition type of the book is Cumulative Catchup Option A or B, the system will insert the value in the **Incremental borrowing rate at transition** from the **Book setup** page into the **Incremental borrowing rate** field, if this parameter is enabled. If this field is set to **No**, the value in the **Incremental borrowing rate** field on the **Book details** page will be the rate entered on the head lease regardless of the transition type.
 
-7.	Enable the **Allow depreciation reversals on closed book version** to allow depreciation expense transactions to be reversed, even when the book version is closed.
+4.	Set the **Allow depreciation reversals on closed book version** field to **Yes** to allow depreciation expense transactions to be reversed. Expense transactions can be reversed, even when the book version is closed.
  	
  >  [!Note]
- >  We recommend that you keep this field disabled as this serves as a validation and control for not allowing to reverse out a deprecation on a closed book version accidently and thus maintain the correct Net book value and future depreciation calculations.
+ >  We recommend that you keep this field disabled. The field is used as a validation and control to prevent depreciating a closed book version accidently. Keeping the field disabled helps to keep net book value and future depreciation calculations accurate.
 
 
