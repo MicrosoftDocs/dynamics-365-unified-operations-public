@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) inboun
 author: hhaines
 manager: annbe
 
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -149,6 +149,20 @@ The operation respects the **Blank receipt allowed** configuration on the **Loca
 ### Receive all
 
 As you require, you can select **Receive all** on the app bar to quickly update the **Receiving now** quantity for all the document lines to the maximum value that is available to be received for those lines.
+
+### Receipt of unplanned items on purchase orders
+
+In Commerce version 10.0.14 and later, users can receive a product that was not originally on the purchase order. To enable this functionality, turn on **Add lines to Purchase Order during Point of Sale receiving**.  
+
+This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
+
+Users can't add new products to the purchase order during POS receiving if purchase order [change management workflow](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce headquarters (HQ). To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving will fail if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
+
+The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) settings for the product line on the purchase order.
+
+If **Add lines to Purchase Order during Point of Sale receiving** is enabled and a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that isn't recognized as an item on the current purchase order, but is recognized as a valid item, the user receives a message about adding the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
+
+When the purchase order receipt is complete and submitted to HQ for processing, the added lines are created on the purchase order master document. On the purchase order line in HQ, there will be an **Added by POS** flag on the **General** tab of the purchase order line. The **Added by POS** flag indicates that the purchase order line was added by the POS receiving process and was not a line that was on the purchase order prior to receiving.
 
 ### Cancel receiving
 
