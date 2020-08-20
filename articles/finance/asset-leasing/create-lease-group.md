@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a lease group
-description: Lease groups are a mandatory field when creating a lease as it determines the default books to create for a lease. Lease books are associated to a lease group. Accounts can be specified in the Lease posting accounts setup for a specific book.
+description: This topic describes the process of setting up lease groups, which are required for creating a new lease.
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/20/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Lease groups are a mandatory field when creating a lease as it determines the default books to create for a lease. Lease books are associated to a lease group. Accounts can be specified in the Lease posting accounts setup for a specific book.
+This topic describes the process of setting up lease groups, which are required for creating a new lease. The lease book determines the default books that must be created for each lease. Lease books are associated with a lease group. You can assign specific accounts to a lease group on the **Lease posting parameters** page.
 
 1. To create a lease book, go to **Asset leasing > Setup > Lease groups**.
 2. To add a lease group, click on the **New** button in the action pane. A new line will add to the lease group grid.
@@ -47,11 +47,11 @@ The information added in the preceding steps will be added to the **Lease group*
 
 ## Associate a book to a lease group
 
-After creating the lease groups, books can be assigned to each group. When a user creates a lease and assigns it to a lease group, the system will create a set of schedules for each book associated to that lease group.
+After creating the lease groups, books can be assigned to each group. When you create a lease and assigns it to a lease group, the system will create a set of schedules for each book associated to that lease group.
 
-1. To add books to a group, go to **Asset leasing > Setup > Lease group**.
-2. Highlight a lease group then select **Books** button
-3. Click **New**, and then select the book you wish to assign to the lease group from the Book type drop-down menu. You can assign multiple books to a lease group if a user needs to account for a lease in different ways. 
+1. To add books to a group, open the **Lease group** page (**Asset leasing > Setup > Lease group**).
+2. Select a lease group, and then click the **Books** button.
+3. Click **New**, and then select the book to assign to the lease group from the **Book type** drop-down menu. You can assign multiple books to a lease group if it's necessary to account for a lease in different ways. 
 
 > [!Note] 
 > Books must be set up first before they can be assigned to a lease group.
