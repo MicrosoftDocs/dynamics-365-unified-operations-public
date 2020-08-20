@@ -31,7 +31,11 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-The product engineering solution helps you plan and manage product versioning, lifecycle management, and engineering change management. Its main features are:
+Today’s manufacturers require strong product data management, version control and engineering change management to succeed in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, as well as increased focus on product safety. 
+
+Engineering change management brings structure and discipline to the product data management process and enables products to be defined, released and revised in a controlled manner supported by workflow. Through product versions and engineering change management, it is possible to document, assess the impact of and apply engineering changes throughout the entire lifecycle of a product.
+
+Summarizing, it helps you plan and manage product versioning, lifecycle management, and engineering change management. Its main features are:
 
 - Product versioning
 - Enhanced product release functionality that enables you to maintain product master data in one legal entity (the engineering organization), and publish the fully configured released product to other legal entities
@@ -39,3 +43,6 @@ The product engineering solution helps you plan and manage product versioning, l
 - Fine-grained control of when a released product may be used in certain business processes (improved product lifecycle management)
 - Engineering change requests with workflow support
 - Engineering change orders with workflow support
+
+To enable it, you will need to turn on the configuration key **Engineering Change Management**.
+
