@@ -42,7 +42,9 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+
+5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the accrual process.
 
@@ -60,7 +62,9 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+
+5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the accrual process.
 
@@ -107,18 +111,6 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 1. On the **Leave and absence** page, select the **Links** tab.
 
 2. Under **Manage leave**, select **Delete leave accrual audit**.
-
-## Configure preview features
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
-
-### Accrue leave per company or per leave plan
-
-When accruing leave and absence plans, you can choose to accrue for all companies. If you choose all companies, you can't select individual leave plans. If you choose to not accrue for all companies, you can accrue for a specific leave plan. 
-
-These options are available when accruing for all employees or individual employees. 
 
 ## See also
 
