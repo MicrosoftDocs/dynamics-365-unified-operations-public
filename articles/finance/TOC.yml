@@ -3170,6 +3170,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
             - name: ValueIn
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+            - name: ValueInLarge
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
           - name: Mathematical
             items: 
             - name: Mathematical functions
