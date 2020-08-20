@@ -74,7 +74,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 
 1. Fully configure LCS. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, the Asset library, Business process modeler (BPM), and so on.
 2. Deploy all non-production environments in the new LCS project.
-3. Apply the required code packages to the environments and make sure that the target is running the same application version as the source. We recommend using [All-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
+3. Apply the required code packages to the environment. Make sure that the target is running the same application version as the source. We recommend using [All-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 4. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, additional steps are required in order to remap some properties to the new tenant.
 5. Update your user information.
 
