@@ -40,21 +40,20 @@ We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
 
 - Evaluate
-- Develop customizations, if needed
+- Develop customizations, if needed.
 - Curate a "golden configuration" environment that contains only module configurations without master or transactional data.  This is to be the baseline for your data migration testing and eventual go live.
-- Install and test customizations and partner solutions on a tier-1 sandbox (Development or test environment) 
-- Test customizations, partner solutions and data configuration on a tier-2 sandbox environment
-- Deploy customizations and data configurations to a production environment with high availability
+- Install and test customizations and partner solutions on a tier-1 sandbox (Development or test environment). 
+- Test customizations, partner solutions and data configuration on a tier-2 sandbox environment.
+- Deploy customizations and data configurations to a production environment with high availability.
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-You may hear the terms Cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
-A *Microsoft subscription* means that the customer purchases Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
+You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases Finance and Operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
 With each Enterprise offer, three environments are included by default:
 - One Tier 1 sandbox which can be used for demo, building, golden configuration or development.
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
-- One production environment with High Availability (HA). 
+- One production environment with high availability (HA). 
 
 Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
@@ -77,7 +76,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 | Lifecycle operation | Description | Learn more
 |---------------------|-------------|------------|
 | Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md)
-| Enable access | Whitelist your IP for Remote Desktop or Database access | See [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section of this article below
+| Enable access | Allow list your IP for Remote Desktop or database access | See the [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section later in this topic
 | Restart services | Ability to restart components of your environment | [Restart environment services](../lifecycle-services/restart-environment-services.md)
 | Move database | Full data lifecycle management | [Database movement operations](../database/dbmovement-operations.md)
 | Maintenance mode | Ability to change configuration with only admin access | [Maintenance mode](../sysadmin/maintenance-mode.md)
@@ -105,7 +104,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 ### Microsoft-managed environments
 
 > [!WARNING]
-> Microsoft will be removing the use of Remote Desktop by customers and partners.  Each environment will first have administrator access removed, but still allowing non-administrator access to the virtual machines.  Thereafter all access will be removed.  For each step of this phased removal, an email notification will be sent to the Notification list setup for each environment.  All Remote Desktop access will be removed by November 2020.
+> Microsoft will be removing the use of Remote Desktop by customers and partners.  Each environment will first have administrator access removed, but still allow non-administrator access to the virtual machines. After this, all access will be removed. For each step of this phased removal, an email notification will be sent to the Notification list setup for each environment. All Remote Desktop access will be removed by November 2020.
 
 Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information, see [Security rules](https://docs.microsoft.com/azure/virtual-network/security-overview#security-rules).
 
