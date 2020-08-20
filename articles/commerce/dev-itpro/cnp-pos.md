@@ -76,7 +76,7 @@ This feature does not add support for creating credit card authorizations. Only 
 
 ## Setup
 
-The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce /> Channel setup \> \> POS setup \> Registers** 
+The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce \> Channel setup \> POS setup \> Registers** Then select the relevant register and click **Edit**. Click on the dropdown for **Card not present processing** and select **Use retail server**, then click **Save**
 
 ## Related articles
 
