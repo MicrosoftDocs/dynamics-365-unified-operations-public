@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) and Retail Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail server. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
