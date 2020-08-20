@@ -5,7 +5,7 @@ title: Theming overview
 description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -108,4 +108,8 @@ Custom themes can be created by using the Dynamics 365 Commerce online SDK. They
 
 [Configure theme settings](configure-theme-settings.md)
 
-[Extend a theme](extend-theme.md)
+[Configure theme style presets](theme-style-presets.md)
+
+[Extend a theme to add module extensions](theme-module-extensions.md)
+
+[Extend a theme from a base theme](extend-theme.md)

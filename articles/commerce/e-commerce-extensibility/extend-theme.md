@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend a theme
+title: Extend a theme from a base theme
 description: This topic describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.11
 
 ---
-# Extend a theme
+# Extend a theme from a base theme
 
 [!include [banner](../includes/banner.md)]
 
@@ -127,3 +127,7 @@ The following example resembles the previous example. It shows that you can also
 [Create a theme](create-theme.md)
 
 [Configure theme settings](configure-theme-settings.md)
+
+[Configure theme style presets](theme-style-presets.md)
+
+[Extend a theme to add module extensions](theme-module-extensions.md)

@@ -5,7 +5,7 @@ title: Log extension events to Application Insights
 description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -116,7 +116,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
                     {
                         if (client == null)
                         {
-                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey");
+                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey") ?? string.Empty;
                             client = new TelemetryClient(new TelemetryConfiguration(key));
                         }
                     }

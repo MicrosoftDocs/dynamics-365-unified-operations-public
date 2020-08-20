@@ -53,7 +53,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 10. In the**Work class ID** field, select a value.
 11. Click **New**.
 12. In the **Work class ID** field, select a value.
-13. In the **Action pane**, click **Save**.
+13. In the **Action Pane**, click **Save**.
 14. Close the page.
 15. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.
 16. In the list, find and select the desired record.

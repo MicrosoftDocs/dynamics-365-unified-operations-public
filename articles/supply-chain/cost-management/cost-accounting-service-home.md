@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cost accounting service home page
+title: Cost accounting service home page (private preview)
 description: This topic is the home page for the cost accounting service.
 author: AndersGirke
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
 ---
 
-# Cost accounting service home page
+# Cost accounting service home page (private preview)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

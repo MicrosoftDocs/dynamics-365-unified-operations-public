@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1457,3 +1457,26 @@ select * into databaselog_bak from databaselog
 truncate table databaselog
 ```
 
+## DBSync fails to start
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found.
+
+```stacktrace
+Microsoft.Dynamics.AX.InitializationException: Database login failed. Please check SQL credentials and try again.
+   at Microsoft.Dynamics.AX.AOS.StartupInternal(String[] Arguments)
+   at Microsoft.Dynamics.AX.AOS.Startup()
+   at Microsoft.Dynamics.AX.AosConfig.?A0xb5100bbf.GetAosConfig()
+   at Microsoft.Dynamics.AX.AosConfig.Config.InitInternal()
+   at Microsoft.Dynamics.AX.AosConfig.Config.InitOnce(Boolean isOfflineMode)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.StartAosCode(SyncOptions syncOptions, String sqlConnectionString)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.ExecuteWithinAOS(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Func`1 func, Action`1 errorHandler)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.NOTE_LeavingSynchronizer_CallStackAboveThisLineIsCustomCode(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Action`1 a)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.RunCustomAction(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Action`1 a)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.PreTableSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.FullSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.RunSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.Run(String metadataDirectory, String sqlConnectionString, SyncOptions options)
+```
+
+**Reason:** This issue may occur because the SQL password contains special characters.
+
+**Resolution:** Update the password of the SQL user and remove the special characters. Then, update the Credentials.json file with the new password and retry the deployment from LCS.

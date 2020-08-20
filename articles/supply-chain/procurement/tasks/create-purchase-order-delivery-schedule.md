@@ -34,7 +34,7 @@ This topic demonstrates how to create a delivery schedule for a purchase order. 
 
 ## Create a delivery schedule
 1. In the navigation pane, go to **Modules > Procurement and sourcing > Purchase orders > All purchase orders**.
-2. In the action pane, select **New**.
+2. On the Action Pane, select **New**.
 3. In the **Vendor account** field, enter `US-101`.
 4. Select **OK**.
 5. In the **Item number** field, enter `M0001`.

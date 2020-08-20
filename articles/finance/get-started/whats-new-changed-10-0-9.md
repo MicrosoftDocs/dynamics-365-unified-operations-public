@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance version 10.0.9 (March 2020)
+title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
 
 ---
-# What's new or changed in Dynamics 365 Finance version 10.0.9 (March 2020)
+# What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Daily statement of Treasures accountability ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
- - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  

@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HRMMassHireProject, HRMMassHireLine   
+ms.search.form: HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

@@ -71,7 +71,7 @@ This topic shows you how to create a purchase order manually. It's more typical 
 ## Review order totals
 1. Select **Totals**.
 
-    - If you don't see the **Totals** action, select the **Purchase Order** tab on the action bar.  
+    - If you don't see the **Totals** action, select the **Purchase Order** tab on the Action Pane.  
     - This dialog box shows totals for the whole order.  
     - The **Selection** field allows you to change the basis of how totals are calculated. For example, you could choose **Product receipt quantity** to show totals that relate to the amount of the product(s) that have been received, or **Ordered quantity** to show the amount of product that was ordered.  
 

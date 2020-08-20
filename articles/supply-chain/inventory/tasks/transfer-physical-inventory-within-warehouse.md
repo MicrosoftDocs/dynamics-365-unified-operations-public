@@ -54,7 +54,7 @@ This procedure walks you through the process of creating and posting an inventor
 12. Click **Save**.
 
 ## Post the inventory transfer journal
-1. On the **Action pane**, click **Post**.
+1. On the **Action Pane**, click **Post**.
 2. Click **OK**.
 
 ## View inventory transactions

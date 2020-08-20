@@ -5,7 +5,7 @@ title: Associate an e-Commerce site with an online channel
 description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 author: stuharg
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -47,8 +47,6 @@ After your site is created, you can verify that it's associated with your online
 [Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-
-[Set up an online store channel](online-stores.md)
 
 [Create an e-Commerce site](create-ecommerce-site.md)
 

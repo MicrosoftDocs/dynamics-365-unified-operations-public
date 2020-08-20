@@ -68,4 +68,3 @@ This procedure demonstrates how to create a delivery schedule for a sales order.
 22. Click OK.
 23. Click Yes.
 24. Close the page.
-

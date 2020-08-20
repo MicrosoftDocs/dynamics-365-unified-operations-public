@@ -5,30 +5,46 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: August 6, 2020
+      href: hr-whats-new-2020-08-06.md
+    - name: July 23, 2020
+      href: hr-whats-new-2020-07-23.md
+    - name: July 8, 2020
+      href: hr-whats-new-2020-07-08.md
+    - name: June 25, 2020
+      href: hr-whats-new-2020-06-23.md
+    - name: June 11, 2020
+      href: hr-whats-new-2020-06-11.md
+    - name: May 28, 2020
+      href: hr-whats-new-2020-05-28.md
+    - name: May 14, 2020
+      href: hr-whats-new-2020-05-14.md
     - name: May 1, 2020
       href: hr-whats-new-2020-05-01.md
     - name: April 13, 2020
       href: hr-whats-new-2020-04-13.md
     - name: April 3, 2020
       href: hr-whats-new-2020-04-03.md
-    - name: March 24, 2020
-      href: hr-whats-new-2020-03-24.md
-    - name: March 19, 2020
-      href: hr-whats-new-2020-03-19.md
-    - name: March 10, 2020
-      href: hr-whats-new-2020-03-10.md
-    - name: March 3, 2020
-      href: hr-whats-new-2020-03-03.md
-    - name: February 25, 2020
-      href: hr-whats-new-2020-02-25.md
-    - name: February 18, 2020
-      href: hr-whats-new-2020-02-18.md
-    - name: February 12, 2020
-      href: hr-whats-new-2020-02-12.md
-    - name: February 7, 2020
-      href: hr-whats-new-2020-02-07.md
-    - name: February 3, 2020
-      href: hr-whats-new-2020-02-03.md 
+    - name: What's new archives 2020
+      items:
+      - name: March 24, 2020
+        href: hr-whats-new-2020-03-24.md
+      - name: March 19, 2020
+        href: hr-whats-new-2020-03-19.md
+      - name: March 10, 2020
+        href: hr-whats-new-2020-03-10.md
+      - name: March 3, 2020
+        href: hr-whats-new-2020-03-03.md
+      - name: February 25, 2020
+        href: hr-whats-new-2020-02-25.md
+      - name: February 18, 2020
+        href: hr-whats-new-2020-02-18.md
+      - name: February 12, 2020
+        href: hr-whats-new-2020-02-12.md
+      - name: February 7, 2020
+        href: hr-whats-new-2020-02-07.md
+      - name: February 3, 2020
+        href: hr-whats-new-2020-02-03.md
   - name: Administrator Guide
     items:
     - name: Overview
@@ -71,6 +87,8 @@
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Manage features
       href: hr-admin-manage-features.md
+    - name: Configure and manage database logging
+      href: hr-admin-database-logging.md
     - name: Explore the user interface
       items:
       - name: User interface elements
@@ -111,6 +129,8 @@
         href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
       - name: Understand Lifecycle Services
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+    - name: Human Resources app in Teams
+      href: hr-admin-teams-leave-app.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -129,6 +149,8 @@
       items:
       - name: Get support
         href: hr-admin-troubleshooting-support.md
+      - name: Optimize performance by scheduling batch jobs after hours
+        href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
       - name: Analytic reports aren't updated
@@ -205,8 +227,6 @@
         href: hr-setup-parameters.md
       - name: Configure Human resources shared parameters
         href: hr-setup-shared-parameters.md
-      - name: Set up Human resource workflows
-        href: hr-setup-workflows.md
       - name: Understand Date and Time fields
         href: hr-setup-date-time-fields.md
     - name: Configure organization settings
@@ -363,6 +383,8 @@
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
         href: hr-workflow-manage-employee-information.md
+      - name: View and manage address changes
+        href: hr-personnel-view-address-changes.md
       - name: Modify reporting relationships for a position
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
@@ -375,8 +397,6 @@
         href: hr-personnel-loan-items.md
       - name: Develop a succession plan
         href: hr-personnel-develop-succession-plan.md
-      - name: Enter project timesheets
-        href: hr-personnel-enter-project-timesheets.md
       - name: Mass hire projects
         href: hr-personnel-mass-hire-projects.md
       - name: Create a mass hire project
@@ -505,6 +525,8 @@
         href: hr-leave-and-absence-accrue.md
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
+      - name: Leave of absence request
+        href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage employee leave
         href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
@@ -515,6 +537,12 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Manage buy and sell leave policies
+        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+      - name: Buy and sell leave
+        href: hr-employee-self-service-buy-sell-leave.md
+    - name: Manage leave requests in Teams
+      href: hr-teams-leave-app.md
     - name: Develop employees
       items:
       - name: Performance management overview
@@ -553,5 +581,7 @@
       items:
       - name: Employee and Manager self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Change Employee self service workspace name
+        href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information
         href: hr-employee-manager-self-service-edit-personal-information.md

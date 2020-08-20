@@ -5,7 +5,7 @@ title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,13 +41,28 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
 The following sections list the features that are included in LCS releases.
+## June 2020 - wave 1
+| Area | Feature |Status |
+|------|---------|-------|
+| Business process modeler (BPM) | [Download task recording (AXTR)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/download-task-recordings-business-process-modeler) | General availability | 
+| Service updates | [View canceled updates](configure-service-updates.md#canceled-updates) | General availability |  
+
+## May 2020 - wave 2
+
+This release contains general performance improvements and minor bug fixes.   
+
+## May 2020 - wave 1
+| Area | Feature |Status |
+|------|---------|-------|
+| Issue Search improvements | [Lifecycle Services Issue search improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | General availability | 
+
 
 ## April 2020 - wave 2
 
-| Area | Feature |
-|------|---------|
-| Environment actions | [Lifecycle Services support for dual-write capabilities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-support-dual-write-capabilities) - Preview|
-| Environment actions | [Removing Remote Desktop access to Tier 2-5 Standard Acceptance Test (or sandbox) environments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments) - Preview|
+| Area | Feature | Status |
+|------|---------|---------|
+| Environment actions | [Lifecycle Services support for dual-write capabilities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-support-dual-write-capabilities) | Preview|
+| Environment actions | [Removing Remote Desktop access to Tier 2-5 Standard Acceptance Test (or sandbox) environments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments) | Preview|
 
 ## April 2020 - wave 1
 
@@ -55,11 +70,11 @@ This release contains general performance improvements and minor bug fixes.
 
 ## March 2020 - wave 2
 
-| Area | Feature |
-|------|---------|
-| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) - Preview |
-| Environment actions | [Apply data upgrade packages for AX2012 customers on sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) - Generally available |
-| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Generally available|
+| Area | Feature | Status |
+|------|---------|--------|
+| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) | Preview |
+| Environment actions | [Apply data upgrade packages for AX2012 customers on sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) | General availability |
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | General availability|
 
 ## March 2020 - wave 1
 
@@ -67,15 +82,15 @@ This release contains general performance improvements and minor bug fixes.
 
 ## February 2020 - wave 2
 
-| Area | Feature |
-|------|---------|
-| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Preview |
+| Area | Feature | Status |
+|------|---------|--------|
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | General availability |
 
 ## February 2020 - wave 1
 
-| Area | Feature |
-|------|---------|
-| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) - Generally available |
+| Area | Feature | Status |
+|------|---------|-------|
+| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) | General availability |
 
 ## LCS releases before November 2019
 

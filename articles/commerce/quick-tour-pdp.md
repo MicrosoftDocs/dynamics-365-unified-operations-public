@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of product details pages
+title: Product details pages overview
 description: This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -27,8 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Overview of product details pages
-
+# Product details pages overview
 
 [!include [banner](includes/banner.md)]
 
@@ -85,12 +84,10 @@ If marketing content is unique to a specific product, any marketing module can b
 
 ## Additional resources
 
-[Overview of the home page](quick-tour-home-page.md)
+[Home page overview](quick-tour-home-page.md)
 
-[Overview of default category landing page and search results page](category-search-page-overview.md)
+[Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
-[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
-
-[Overview of account management pages](quick-tour-account-management.md)
+[Account management pages overview](quick-tour-account-management.md)
 
 [Enrich a product details page](enrich-product-page.md)

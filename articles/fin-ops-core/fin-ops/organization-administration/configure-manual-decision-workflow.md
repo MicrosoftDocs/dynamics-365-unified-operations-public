@@ -3,9 +3,9 @@
 
 title: Configure manual decisions in a workflow
 description: This topic explains how to configure the properties of a manual decision.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -247,28 +247,6 @@ Follow these steps to specify who a manual decision should be assigned to.
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
     <li>The <strong>Available users</strong> list includes all users. Select the users to assign the decision to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Queue</td>
-    <td>A work item queue</td>
-    <td>
-    <ol>
-    <li>After you select <strong>Queue</strong>, click the <strong>Queue based</strong> tab.</li>
-    <li>To assign the decision to a specific queue, follow these steps:
-    <ol>
-    <li>In the <strong>Queue type</strong> list, select <strong>Work item queues</strong>.</li>
-    <li>In the <strong>Queue name</strong> list, select the queue.</li>
-    </ol>
-    </li>
-    <li>If a specific condition should determine which queue the decision is assigned to, follow these steps:
-    <ol>
-    <li>In the <strong>Queue type</strong> list, select <strong>Conditional work item queues</strong>.</li>
-    <li>In the <strong>Queue name</strong> list, select <strong>Conditional queue</strong>.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] This option is used for only a few workflows, such as Case management.</blockquote>
     </td>
     </tr>
     </tbody>

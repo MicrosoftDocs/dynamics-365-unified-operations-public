@@ -5,7 +5,7 @@ title: Configure theme settings
 description: This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -94,4 +94,8 @@ Default grid breakpoint settings can also be set in the theme.settings.json file
 
 [Create a new theme](create-theme.md)
 
-[Extend a theme](extend-theme.md)
+[Configure theme style presets](theme-style-presets.md)
+
+[Extend a theme to add module extensions](theme-module-extensions.md)
+
+[Extend a theme from a base theme](extend-theme.md)

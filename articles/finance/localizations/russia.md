@@ -5,7 +5,7 @@ title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,6 +72,7 @@ This topic provides information about functionality that supports Russian regula
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 - [Prepayments management](rus-prepayments-management.md)
 - [Incoming VAT restoring](rus-incoming-VAT-restoring.md)
+- [Process invoice factures for export trade](rus-export-trade.md)
 
 ## Fixed assets (Russia)
 - [Fixed assets overview](rus-fixed-assets-overview.md)
@@ -128,6 +129,9 @@ This topic provides information about functionality that supports Russian regula
 - [Inventory cost structure](rus-inventory-cost-structure.md)
 - [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md)
 - [Inventory reports](rus-inventory-reports.md)
+- [Inventory profile](rus-inventory-profile-overview.md)
+  - [Set up an inventory profile](rus-set-up-inventory-profile.md)
+  - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 
 ## Reporting
 
@@ -155,6 +159,10 @@ This topic provides information about functionality that supports Russian regula
 - [Dispose of deferrals](rus-dispose-deferrals.md)
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
+
+## Tax accounting
+- [Expense and income codes](rus-expense-and-income-codes.md)
+- [Assets tax registers](rus-assets-tax-registers.md)
 
 ## Additional resources
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Overview of the home page
+title: Home page overview
 description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,8 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Overview of the home page
-
+# Home page overview
 
 [!include [banner](includes/banner.md)]
 
@@ -73,10 +72,8 @@ The main section of the home page can highlight products, categories, or promoti
 
 ## Additional resources
 
-[Overview of default category landing page and search results page](category-search-page-overview.md)
+[Product details pages overview](quick-tour-pdp.md)
 
-[Overview of product details pages](quick-tour-pdp.md)
+[Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
-[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
-
-[Overview of account management pages](quick-tour-account-management.md)
+[Account management pages overview](quick-tour-account-management.md)
