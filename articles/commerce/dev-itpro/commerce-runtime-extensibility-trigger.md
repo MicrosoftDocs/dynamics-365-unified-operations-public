@@ -2,10 +2,10 @@
 # required metadata
 
 title: Commerce runtime (CRT) extensibility and triggers
-description: This article explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+description: This topic explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article explains trigger support for the Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+This topic explains trigger support for the Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 
 ## CRT trigger overview
 
@@ -51,17 +51,10 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 3.  Write a trigger implementation in the **OnExecuting** method if business logic must be run before the request is addressed.
 4.  Write a trigger implementation in the **OnExecuted** method if business logic must be run after the request is addressed.
 
-### Sample trigger implemntation for Get customer data request:
+### Sample trigger implementation for Get customer data request:
 
 ```C#
-    /**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
+    
         using Microsoft.Dynamics.Commerce.Runtime;
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
@@ -91,12 +84,12 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
             {
                 //Custom logic
                 
-            // It's only stub to handle async signature 
+            // The only stub to handle async signature 
                 await Task.CompletedTask;
             }
 
             /// <summary>
-            /// Pre trigger code.
+            /// Pre trigger code
             /// </summary>
             /// <param name="request">The request.</param>
             public async Task OnExecuting(Request request)
@@ -107,13 +100,13 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
         }
   ```
 
-### Register the extension:
+### Register the extension
 
 Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
     <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
 
-For the CRT extension to work in offline mode update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section and copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
+For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
 
 ### Debugging CRT
 
-To debug CRT from POS, you should attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server, for offline attach the CRT extension project to the dllhost.exe process.
+To debug CRT from POS, attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server. For offline mode, attach the CRT extension project to the dllhost.exe process.
