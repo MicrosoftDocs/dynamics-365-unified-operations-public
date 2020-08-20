@@ -5,7 +5,7 @@ title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/13/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -109,6 +109,6 @@ Finance and Operations business logic that resides on forms isn't invoked throug
 
 In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Common Data Service. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
 
-### Do you have some guidance on when to use a virtual entity and when to use dual write?
+### Do you have guidance on when to use a virtual entity and when to use dual-write?
 
-Dual Write is only provided for a few key data entities where the data needs to be natively in CDS. Those data entities are not available as Virtual Entities.
+Dual-write is only provided for a few key data entities where the data needs to be natively in Common Data Service. Those data entities are not available as virtual entities.
