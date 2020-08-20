@@ -63,6 +63,8 @@ You can choose to update this data on an existing version or create a new versio
 <!-- KFM: We should describe how to make an engineering version and what the settings are. -->
 The first version is automatically created when the engineering product is created. The version will follow the version number rule defined in the engineering category for the product. To transition into a following version, the product must be added into an engineering change order as a line and the impact must be set to New version. The engineering change order will include the details of the change from the current version into the following version.
 
+Note that an engineering product can only be in a single engineering change order to ensure data accuracy and avoid overlapping or contradictory changes in the product. Note that in the engineering change order the engineer responsible for the change order, is shown in the engineering change order in the Header view. In the case that the engineer belongs to a team, the team lead will be shown as the Responsible field.
+
 ## Track versions in transactions
 
 When you use engineering change management, your product master data will always include one or more engineering versions. In your setup of engineering products, you can choose whether or not the engineering version is also part of *logistical transactions* (see [Engineering product category](#product-category) for details). If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product are used and when you introduce a new version, the previous version can't be used anymore. In other cases, the version is needed in logistical transactions to overcome the following challenges:
@@ -79,7 +81,13 @@ For products set up with logistical impact, the engineering version must be spec
 
 ## Set up engineering product categories
 
-Set up engineering product categories in the engineering product hierarchy to ensure engineering products will behave as required. Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category; you are also prevented from changing any of the following:
+The engineering product categories is the base for the product creation and it consists of a set of the defaults and policies. So, to create an engineering product you will have to choose from which category you want to create it from.  
+
+Note that a new Category hierarchy type **Engineering Product Hierarchy** is automatically created and associated with a category hierarchy Engineering product hierarchy in the for you. So you can directly create the categories under **Project Oaktree > Setup > Engineering product category details**.
+
+Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category. If you choose the engineering category wrongly, you can always delete the product and re-create it. 
+
+When a category is created, you are prevented from changing any of the following:
 
 - Engineering company
 - Product type <!-- KFM: Same as engineering product category? BNG no, product type is if it an item or a service -->
@@ -149,7 +157,7 @@ Use the **Product readiness policy** drop-down list to select the readiness poli
 
 Use the **Product release policy** drop-down list to select the release policy that applies to products belonging to this category. For more information, see [Release product structure](release-product-structure.md).
 
-<!-- KFM: When I tried to create an engineering product category, I got the error "Your organization does not have an Engineering category hierarchy. Please go to Product Information Management to create an engineering product hierarchy." Maybe we should mention this and explain what to do about it. I was simply blocked and could not continue. --BNG yes - we should create that topic. You need to create an engineering product category hierarchy. You must go to the category hierarchies and create a new hierarchy that is going to be the engineering. then go to Category hierarchy roles and then associate the engineering category hierarchy just created with the engineering category hierarchy role>
+<!-- KFM: When I tried to create an engineering product category, I got the error "Your organization does not have an Engineering category hierarchy. Please go to Product Information Management to create an engineering product hierarchy." Maybe we should mention this and explain what to do about it. I was simply blocked and could not continue. --BNG yes - we should create that topic. You need to create an engineering product category hierarchy. You must go to the category hierarchies and create a new hierarchy that is going to be the engineering. then go to Category hierarchy roles and then associate the engineering category hierarchy just created with the engineering category hierarchy role         BNG we have modified this in the last version so it is automatically created and user does not need to do it :)>
 
 <a name="boms-routes"></a>
 
