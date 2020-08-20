@@ -45,17 +45,17 @@ The Asset movement report serves as a rollforward report for the right-of-use as
 
 |     Name                           |     Description                                                                |
 |------------------------------------|--------------------------------------------------------------------------------|
-|     Commencement Date              |     The commencement date of the lease’s earliest version.                     |   
-|     Lease Term                     |     The lease term of the lease’s earliest version.                            |
-|     Short Term Lease               |     If lease is classified as a short-term lease will show as   “Yes”          |
-|     Low Value Lease                |     If lease is classified as a low-value lease will show as   “Yes”           |
-|     Initial Right of Use Asset     |     The original value of the right of use asset from the   initial recognition journal entry      |
-|     Beginning Balance              |     The net book value of the right of use asset as of the   From Date                             |
-|     Period Depreciation Expense    |     The amount of depreciation expense taken between the To   and From Dates                       |
-|     Accumulated Depreciation       |     The amount of accumulated depreciation as of the From Date                                     |
-|     Impairment                     |     The amount the asset was impaired between date parameters                                      |
-|     Modifications                  |     The amount of adjustments to the right of use asset   between date parameters                  |
-|     Net Book Value                 |     The ending net book value of the right of use asset, net   of accumulated depreciation as of the To Date    |
+|     Commencement date              |     The commencement date of the lease’s earliest version.                     |   
+|     Lease term                     |     The lease term of the lease’s earliest version.                            |
+|     Short term lease               |     If lease is classified as a short-term lease will show as **Yes**.          |
+|     Low value lease                |     If lease is classified as a low-value lease will show as **Yes**.           |
+|     Initial right of use asset     |     The original value of the right-of-use asset from the initial recognition journal entry.      |
+|     Beginning balance              |     The net book value of the right of use asset as of the **From date**.                         |
+|     Period depreciation expense    |     The amount of depreciation expense taken within the date range defined for the report.        |
+|     Accumulated depreciation       |     The amount of accumulated depreciation as of the **From date**.                               |
+|     Impairment                     |     The amount the asset was impaired within the date range defined for the report.               |
+|     Modifications                  |     The amount of adjustments to the right of use asset within the date range defined for the report.          |
+|     Net book value                 |     The ending net book value of the right of use asset, net of accumulated depreciation as of the **To date**.    |
 
 ## Differences report
 The Differences report shows the differences between information loaded into the Lease import framework and the information that's currently in the system. This lets you compare what was adjusted, updated, or added through the Lease import framework.  
@@ -85,19 +85,19 @@ The GAAP disclosures Report satisfies the US GAAP disclosure requirement specifi
 
 |     Report Field                               	|     Description                                                                                                                                             	|
 |------------------------------------------------	|-------------------------------------------------------------------------	|
-|     From Date                                  	|     The date for which the report starts                                                                                                                    	|
-|     To Date                                    	|     The date for which the report ends                                                                                                                      	|
-|     Legal Entity                               	|     The legal entity tied to the leases                                                                                                                     	|
-|     Lease Type                                 	|     The classification of the lease as either finance or   operating                                                                                        	|
-|     Lease ID                                   	|     The unique lease ID                                                                                                                                     	|
-|     Lease Description                          	|     The lease description from the lease header                                                                                                             	|
-|     Lease Book                                 	|     The lease book for which the line is referring to                                                                                                       	|
-|     Posting Layer                              	|     Each book that is attached to a fixed asset is set up for   a particular posting layer that has an overall depreciation objective.                      	|
-|     Lease Group                                	|     The group which the lease is tied to                                                                                                                    	|
+|     From Date                                  	|     The date for which the report starts                                   	|
+|     To Date                                    	|     The date for which the report ends                                     	|
+|     Legal Entity                               	|     The legal entity tied to the leases                                    	|
+|     Lease Type                                 	|     The classification of the lease as either finance or   operating       	|
+|     Lease ID                                   	|     The unique lease ID                                                   	|
+|     Lease Description                          	|     The lease description from the lease header                           	|
+|     Lease Book                                 	|     The lease book for which the line is referring to                     	|
+|     Posting Layer                              	|     Each book that is attached to a fixed asset is set up for a particular posting layer that has an overall depreciation objective.                      	|
+|     Lease Group                                	|     The group which the lease is tied to                                   	|
 |     Currency                                   	|     The abbreviation for the transactional currency used. All   reports will convert the transactional currency to the reporting currency.                  	|
 |     Finance Leases – Operating Cash Flows      	|     The sum of the total posted variable payments and the   total interest payments posted from the amortization schedule between the   date parameters.    	|
-|     Finance Leases – Finance Cash Flows        	|     The sum of the total principal payments from the amortization   schedule between the date parameters.                                                   	|
-|     Operating Leases – Operating Cash Flows    	|     The sum of all posted lease payments and posted variable   payments between the date parameters.                                                        	|
+|     Finance Leases – Finance Cash Flows        	|     The sum of the total principal payments from the amortization   schedule between the date parameters.    	|
+|     Operating Leases – Operating Cash Flows    	|     The sum of all posted lease payments and posted variable   payments between the date parameters.         	|
 
 ## Lease balances forecast
 The Lease balances forecast report is a forecasted report lists information directly from the liability amortization schedule and asset depreciation schedule. The report shows forecasted amounts of the projected lease liability, and right-of-use assets over a period of time, including all projected expenses for those leases. The report includes the following fields.
