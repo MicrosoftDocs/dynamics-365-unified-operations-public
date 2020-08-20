@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Task recorder resources
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to use Task recorder to record business processes.
 
@@ -176,9 +177,6 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 Starting in version 10.0.12, you can adjust the values that are recorded in basic input controls (for example, simple text, numeric, date, and picklist fields), without having to re-record those steps. Note that lookup controls and reference groups aren't currently supported.  
 
-> [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 ### Hide from task guide
 
 The **Hide this step** option lets the author prevent specific steps from appearing in the task guide. This option is useful for hiding steps that are required for the task recording to run in playback mode, but that should not be seen by users. Examples of these steps include copy steps, system-generated steps, and data clean-up steps. If you hide a sub-task, all the steps that are recorded inside that sub-task will also be hidden.
@@ -203,6 +201,11 @@ The **Validate** gesture lets you insert a step that validates the value of the 
 
 -   **Current value validation** will capture the targeted control's value at the time of recording and use it to generate an assertion in the test code. In the list of validation options on the shortcut menu, **Current value** is always first.
 -   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options on the shortcut menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
+
+Additional options are available in version 10.0.13 and later. Here are some examples:
+
+- **Enabled**/**Disabled** validates that the targeted control's state is enabled (or disabled), and then uses that validation step to generate an assertion in the test code.
+- **Read-only**/**Editable** validates that the targeted control's state is read-only (or editable), and then uses that validation step to generate an assertion in the test code.
 
 ### Add info step
 
@@ -414,7 +417,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
 
 6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
-8.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
+8.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
 9.  Make sure that **Enabled** is selected so that extension is turned on.
 10.  Restart the browser.
 

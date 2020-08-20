@@ -5,7 +5,7 @@ title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/17/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,10 +30,11 @@ ms.dyn365.ops.version: 10.0.12
 # Entity modeling
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+
+> The public entity name that is exposed in Common Data Service metadata for the Finance and Operations virtual entity uses the physical name of the Finance and Operations entity. This could be different from the public name of the entity as exposed by the OData metadata in Finance and Operations apps.
 
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for Finance and Operations.
 
@@ -152,7 +153,7 @@ The next step is to define this relationship in X++. The following example shows
 The field mapping indicates which field on the virtual entity maps to the field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
 
 ```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
     public static Map syntheticAccountRelationship()
     {
         Map fieldMapping = new Map(Types::String, Types::String);

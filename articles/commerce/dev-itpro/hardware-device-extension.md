@@ -5,7 +5,7 @@ title: Integrate POS with a new hardware device
 description: This topic explains how to integrate POS with a new hardware device.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/03/2019
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
-ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
+ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
 
 ---
 
@@ -36,11 +36,15 @@ ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
 
 This topic explains how to integrate POS with a new hardware device. 
 
-
 To call Hardware station from POS you need to use a request and a response:
 
 + **HardwareStationDeviceActionRequest** - Request sent from POS to Hardware station.
 + **HardwareStationDeviceActionResponse** - Response received from Hardware station to POS.
+
+The class that you extend depends on which version of the Retail SDK you are using.
+
++ For Retail SDK version 10.0.11 or later, you extend the **IController** interface.
++ For Retail SDK prior to version 10.0.11, you extend the **HardwareStationController** and **IHardwareStationController** classes.
 
 ## HardwareStationDeviceActionRequest
 
@@ -86,6 +90,7 @@ class HardwareStationDeviceActionResponse extends Response {
   constructor(response: any);
 }
 ```
+
 The parameters are described in the following table.
 
 | Parameters | Data type | Description                                       |
@@ -102,7 +107,32 @@ The follow diagram shows the flow between POS, Hardware station, and the hardwar
 
 To call your new hardware device, you must implement the Hardware station code. From the Hardware station code, call your hardware device.
 
-To implement the Hardware station extension, follow these steps:
+To implement the Hardware station extension for Retail SDK version 10.0.11 or later, follow these steps:
+
+1. Create a new C# class library project with .NET Framework version 4.6.1 or use one of the samples in the Retail SDK as a template (**...\RetailSDK\SampleExtensions\HardwareStation\\**). Using the sample as a template is recommended.
+
+2. In the extension project add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\pkgs** folder.
+
+3. Add a new controller class that extends the **IController** interface.
+
+4. Add the **RoutePrefix** attribute to the controller class to expose the controller class to clients.
+
+    ```csharp
+    [RoutePrefix("ISVEXTENSIONDEVICE")]  
+    ```
+
+5. Add a method in the controller class with **HttpPost** attribute to implement your custom logic to call the hardware device. This method will be passed as the second parameter (action parameter) to the POS **HardwareStationDeviceActionRequest**. From the extension method, the extension can call other requests, like printing and cash drawer, by including the relevant NuGet packages from the Retail SDK.
+
+    ```C#
+    [HttpPost]
+    public async Task<bool> IsReady(IEndpointContext context)
+    {
+    }
+    ```
+
+6.  Build the project.
+
+To implement the Hardware station extension for Retail SDK prior to version 10.0.11, follow these steps:
 
 1.  Create a new C# class library project.
 2.  Add a new controller class that extends **HardwareStationController** and **IHardwareStationController**.
@@ -116,9 +146,9 @@ To deploy the Hardware station extension in MPOS and test it using the local Har
 2. Open the **HardwareStation.Extension.config**.
 3. Add the extension library details under the composition section.
 
-  ```Xml
-  <add source="assembly" value="your extension library name" />
-  ```
+    ```Xml
+    <add source="assembly" value="your extension library name" />
+    ```
  
 4. Save the file.
 5. Close Modern POS if running.
@@ -134,9 +164,67 @@ Here are some samples in the Retail SDK for reference:
 + **POS**: \RetailSDK\POS\Extensions\FiscalRegisterSample
 + **Hardware station**: \RetailSDK\SampleExtensions\HardwareStation\Extension.FiscalRegisterSample
 
-## Sample Hardware station code
+## Sample code for Retail SDK version 10.0.11 or later
 
-```C#
+```csharp
+namespace Contoso
+{
+    namespace Commerce.HardwareStation.ISVExtensionDevice
+    {
+
+        using Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts;
+        using System;
+        using System.Threading.Tasks;
+
+        /// <summary>;
+        /// Sample hardware station extension
+        /// </summary>
+
+        [RoutePrefix("ISVEXTENSIONDEVICE")]
+        public class ISVExtensionDeviceController : IController
+        {
+            /// <summary>
+            /// Sample.
+            /// </summary>
+
+            /// <param name="request">Custom request.<param>
+            /// <returns>Result of Custom response.</returns>
+
+            [HttpPost]
+            public async Task<CustomResponse> Sample(CustomRequest request, IEndpointContext context)
+            {
+                CustomResponse response;
+
+                try
+                {
+                    response = new CustomResponse();
+                }
+
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                return await Task.FromResult(response);
+            }
+        }
+
+        public class CustomResponse
+        {
+            public string sampleProp { get; set; }
+
+            public CustomResponse()
+            {
+                this.sampleProp = "sampleValue";
+            }
+        }
+    }
+}
+```
+
+
+## Sample code for Retail SDK prior to version 10.0.11
+
+```csharp
 namespace Contoso
 {
   namespace Commerce.HardwareStation.ISVExtensionDevice

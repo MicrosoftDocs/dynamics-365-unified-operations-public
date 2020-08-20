@@ -3,7 +3,7 @@
 
 title: Configure manual decisions in a workflow
 description: This topic explains how to configure the properties of a manual decision.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

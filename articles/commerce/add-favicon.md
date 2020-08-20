@@ -66,8 +66,8 @@ To create the HTML for the favicon, use the following HTML string. For the **hre
 
 To create a page fragment that contains a metatag for your favicon, follow these steps.
 
-1. Go to **Page fragments**, and select **New**.
-1. In the **New Page Fragment** dialog box, select **Metatags** as the module that the page fragment is based on.
+1. Go to **Fragments**, and select **New**.
+1. In the **New page fragment** dialog box, select **Metatags** as the module that the page fragment is based on.
 1. Enter a name for the page fragment, and then select **OK**.
 1. In the fragment hierarchy tree, select the **Default metatags** child.
 1. In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon. 
@@ -79,7 +79,7 @@ To add the metatag page fragment to the HTML **head** section of your pages, fol
 
 1. Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.
 1. In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add page fragment**.
-1. In the **Select Page Fragment** dialog box, select the metatag page fragment that you created earlier, and then select **OK**.
+1. In the **Select page fragment** dialog box, select the metatag page fragment that you created earlier, and then select **OK**.
 1. Select **Finish editing**, and then select **Publish** to publish the template.
 
 > [!NOTE]

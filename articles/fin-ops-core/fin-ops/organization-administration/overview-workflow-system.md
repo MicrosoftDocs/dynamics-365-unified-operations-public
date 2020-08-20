@@ -3,7 +3,7 @@
 
 title: Workflow system overview
 description: This topic describes the workflow system.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

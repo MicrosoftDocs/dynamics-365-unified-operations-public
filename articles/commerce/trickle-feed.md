@@ -5,7 +5,7 @@ title: Trickle feed-based order creation for retail store transactions
 description: This topic describes the trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 06/08/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,13 +29,13 @@ ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 
 
 ---
-# Trickle feed-based order creation for retail store transactions (Public preview)
+# Trickle feed-based order creation for retail store transactions
 
 [!include [banner](includes/banner.md)]
 
 In Dynamics 365 Retail versions 10.0.4 and earlier, statement posting is an end-of-day operation and all transactions are posted in the books at the end of the day. Large transactions must then be processed in a limited time window, sometimes resulting in load and locks and statement posting failures. Retailers also can't recognize revenue and payments in their books throughout the day.
 
-With the public preview of trickle feed-based order creation introduced in Retail version 10.0.5, transactions are processed throughout the day, and only the financial reconciliation of tenders and other cash management transactions are processed at the end of the day. This functionality splits the load of creating sales orders, invoices, and payments throughout the day, providing better perceived performance and the ability to recognize revenue and payments in the books in near real-time. 
+With trickle feed-based order creation introduced in Retail version 10.0.5, transactions are processed throughout the day, and only the financial reconciliation of tenders and other cash management transactions are processed at the end of the day. This functionality splits the load of creating sales orders, invoices, and payments throughout the day, providing better perceived performance and the ability to recognize revenue and payments in the books in near real-time. 
 
 
 ## How to use trickle feed-based posting
