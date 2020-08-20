@@ -160,13 +160,13 @@ This section provides deployment guidance for enabling customer information mana
 
 Follow these steps to update customizations.
 
-# [Retail 10.0.7](#tab/retail-10-0-7)
+# [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
 If any of your customizations include request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest` requests:
 
 1. Find the request handler for `SaveCartRequest`.
 1. Find the line of code that runs the original request handler.
-1. Add the following line before calling the original request handler:
+1. Add the following lines before calling the original request handler:
 
     ```cs
     using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
