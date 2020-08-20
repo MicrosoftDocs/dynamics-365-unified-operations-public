@@ -2,10 +2,10 @@
 # required metadata
 
 title: Buy and sell leave
-description: You can submit requests to buy and sell leave.
+description: In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Buy and sell leave
 
-You can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.  
+In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.  
 
 ## Request to buy leave
 
@@ -42,7 +42,7 @@ You can submit requests to buy and sell leave based on the buy and sell leave po
 
 3. Select **Submit** when you're ready to submit your request. 
 
-Depending on how the buy policy has been configured, the request will either automatically update your balance with the amount you request to buy or will go through an approval process before balances are updated. 
+Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
 
 ## Request to sell leave
 
@@ -50,9 +50,9 @@ Depending on how the buy policy has been configured, the request will either aut
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to sell. 
 
-3. Select **Submit** when you're ready to submit your request. 
+3. Select **Submit** when you're ready to submit your request.
 
-Depending on how the buy policy has been configured, the request will either automatically update your balance with the amount you request to sell or will go through an approval process before balances are updated. 
+Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
 
 ## See also
 

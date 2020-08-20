@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview
-description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
+description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/01/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Overview
 
-Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics helps your organization measure and monitor leave balances and usage for your leave plans.
+Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
 ## Set up Leave and absence
 
@@ -56,20 +56,6 @@ Before creating leave plans for your workers, you need to create leave and absen
 
 Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-- [Request time off](hr-employee-self-service-request-time-off.md)
-- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
-
-## Leave and absence known issues
-
-No known issues at this time. 
-
-## Leave and absence preview features
-
-You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). 
-
-[!include [banner](includes/preview-feature.md)]
-
-The preview features include:
-
-No preview features at this time. 
+[Request time off](hr-employee-self-service-request-time-off.md)
+[Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 

@@ -42,7 +42,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, mark **All plans** as no and select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
@@ -62,7 +62,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, mark **All plans** as no and select a **Leave plan**. If you select all companies, you can't select an individual leave plan.
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create a buy and sell leave request workflow
-description: Create a buy and sell leave request workflow to manage buy and sell leave requests consistently in Dynamics 365 Human Resources.
+description: Create a buy and sell leave request workflow to manage to buy and sell leave requests consistently in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/08/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-08-13
+ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -73,6 +73,7 @@ You can use the following data elements to create conditional or automatic appro
 - **Submitted on behalf**
 - **Worker**
 
+## Workflow examples
 
 These examples show how you can create different types of workflow conditions by using these data elements:
 
@@ -82,4 +83,6 @@ These examples show how you can create different types of workflow conditions by
 
 ## See also
 
-- [Leave and absence overview](hr-leave-and-absence-overview.md)
+[Leave and absence overview](hr-leave-and-absence-overview.md)<br>
+[Manage buy and sell leave policies](hr-leave-and-absence-by-and-sell-leave-policies.md)
+
