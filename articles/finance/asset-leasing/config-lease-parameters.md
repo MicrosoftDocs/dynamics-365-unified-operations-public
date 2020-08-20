@@ -40,7 +40,7 @@ There are several parameters that affect how Asset leasing behaves, including jo
 
 1.	Open the **Asset leasing parameters** page (**Asset leasing > Setup > Asset leasing parameters**).
 
-2.	Open the **Leases** tab and expand **General** fasttab. 
+2.	Open the **Leases** tab and expand **General** FastTab. 
 
    The **Allow manual classification override** determines whether or not the lease classification can be overridden before the payment schedule is confirmed.
 
