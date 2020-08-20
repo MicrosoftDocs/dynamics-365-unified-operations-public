@@ -47,7 +47,7 @@ The information added in the preceding steps will be added to the **Lease group*
 
 ## Associate a book to a lease group
 
-After creating the lease groups, books can be assigned to each group. When you create a lease and assigns it to a lease group, the system will create a set of schedules for each book associated to that lease group.
+After create lease groups, you can assign books to each group. When you create a lease and assign it to a lease group, the system will create a set of schedules for each book that's associated with that lease group.
 
 1. To add books to a group, open the **Lease group** page (**Asset leasing > Setup > Lease group**).
 2. Select a lease group, and then click the **Books** button.
