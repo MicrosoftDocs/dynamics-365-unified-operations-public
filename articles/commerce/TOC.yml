@@ -68,6 +68,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+        - name: Commerce Data Exchange implementation guidance
+          href: dev-itpro/implementation-considerations-cdx.md
         - name: Finance and Operations apps operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
@@ -202,8 +204,14 @@
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
           href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange and commerce channel communications
-          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Commerce Data Exchange
+          items:
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
+          - name: Commerce Data Exchange and commerce channel communications
+            href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange troubleshooting
+            href: dev-itpro/CDX-Troubleshooting.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Online store publishing architecture
