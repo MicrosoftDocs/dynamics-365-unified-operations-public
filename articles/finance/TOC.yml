@@ -828,7 +828,7 @@
           href: asset-leasing/use-create-lease-wrkflw.md
         - name: Manage leases through the Lease import framework
           href: asset-leasing/manage-leases-thru-imprt-framewrk.md
-- name: General ledger
+    - name: General ledger
       items:
       - name: General ledger overview
         href: general-ledger/general-ledger.md
