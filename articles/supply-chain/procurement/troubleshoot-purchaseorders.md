@@ -44,9 +44,6 @@ Quantity is mandatory for posting invoices. So, if the full quantity on the line
 
 This is by design.
 
-**Explanation:**
-A purchase agreement has to be associated to the purchase order at the time of creation. Purchase order lines cannot be associated to purchase agreement lines if the purchase order was not initially associated at the time of purchase order creation.
-
 ## Changes to purchase orders are only allowed in state Draft when change management is activated
 
 When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
