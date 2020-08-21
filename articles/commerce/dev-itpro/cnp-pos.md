@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Processing credit cards without hardware station
+title: Processing credit cards without a hardware station
 description: This topic describes how to configure the point of sale to process card not present transactions in POS clients that do not include a hardware station. 
 author: rubendel
 manager: AnnBe
@@ -30,12 +30,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Processing credit cards without hardware station
-
+# Processing credit cards without a hardware station
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure all POS clients to process card not present transactions without the need for a hardware station. Specifically targeting emerging scenarios such as curbside pickup, this feature removes the need for a hardware station when performing curbside pickup. When enabled, this feature allows clients such as the Cloud POS and Modern POS for iOS make credit card processing calls through Commerce scale unit, rather than depending on a standalone hardware station deployed on the local network. The result is that curbside pickup can be supported with many fewer setup steps. 
+This topic describes how to configure POS clients to process card not present transactions without the need for a hardware station. Specifically targeting emerging scenarios such as curbside pickup, this feature removes the need for a hardware station when card not present payment operaitons. When enabled, this feature allows clients such as the Cloud POS and Modern POS for iOS make credit card processing calls through Commerce scale unit, rather than depending on a standalone hardware station deployed on the local network. The result is that curbside pickup can be supported on any point of sale client, and with fewer setup steps. 
 
 > [!NOTE]
 > This feature should not be enabled for registers that support offline mode. It routes all card not present payment requests through the Commerce Scale Unit, which is not available when the register goes offline.  
@@ -47,7 +46,7 @@ This topic describes how to configure all POS clients to process card not presen
 | BOPIS | BOPIS is the common abbreviation for buy online, pick up in store. |
 | Curbside pickup | This scenario is similar to BOPIS, but rather than picking up in store, the customer generally does not enter the store and in many cases does not leave their car. |
 | Card not present | Sometimes abbreviated as CNP, card not present describes scenarios where the credit card or other form of electronic payment is not phyically present. In the case of BOPIS and curbside pickup, the customer makes their payment online or over the phone and the payment is then captured from the point of sale at the time of pick up. 
-| Hardware station | Used to describe the business logic that drives interactions between the point of sale and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android. Modern POS for iOS and Cloud POS require standalone deployed hardware station to interact with physical devices. |
+| Hardware station | Used to describe the business logic that drives interactions between the point of sale and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android. Modern POS for iOS and Cloud POS require a standalone deployed hardware station to interact with physical devices. |
 
 ## Overview
 
@@ -55,7 +54,7 @@ When this feature is not enabled, card not present credit card requests cannot b
 
 ## Supported scenarios
 
-This feature enables the following scenarios for point of sale clients that do not have a built-in hardware station. Most of these scenarios are partially supported by these point of sale clients today, but step required to finalize the transaction with the payment processor was not supported prior to this feature.
+This feature enables the following scenarios for point of sale clients that do not have a built-in hardware station. Most of the scenarios below are partially supported by these point of sale clients today, but step required to finalize the transaction with the payment processor was not supported prior to this feature. Therefore, the user experience does not materially change for the below scenarios, except for the fact that they can now be completed successfully. 
 
 | Scenario | Description |
 | --- | --- |
@@ -76,13 +75,14 @@ This feature does not add support for creating credit card authorizations. Only 
 
 ## Setup
 
-The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce \> Channel setup \> POS setup \> Registers** Then select the relevant register and click **Edit**. Click on the dropdown for **Card not present processing** and select **Use retail server**, then click **Save**
+The configuration to enable this feature is at the register level. In the back office, navigate to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. Then select the relevant register and click **Edit**. Click on the dropdown for **Card not present processing** and select **Use retail server**, then click **Save**
 
 ![Previously saved payment instrument](../media/Payments/CNP-POS.png)
 
 After the change has been saved, run the **1090** distribution schedule to sync the changes to the point of sale. 
 
+The **Card not present processing** configuration option is set to **Use hardware station** by default. 
+
 ## Related articles
 
 - [Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
-- 
