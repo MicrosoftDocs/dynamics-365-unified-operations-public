@@ -174,7 +174,7 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
-        - name: Grid capabilites
+        - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
@@ -414,7 +414,7 @@
               href: pos-sales-groups-track-commissions.md
           - name: Device activation
             items:
-            - name: Configure, install and activate MPOS
+            - name: Configure, install, and activate MPOS
               href: retail-modern-pos-device-activation.md
             - name: Set up extended logon functionality for MPOS and Cloud POS
               href: extended-logon.md
@@ -760,12 +760,10 @@
         href: disable-consistency-check-rule.md
       - name: Edit and audit retail store transactions
         href: edit-audit-retail-transactions.md
-      - name: Create, calculate and post statements for a retail store
+      - name: Create, calculate, and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Trickle feed-based order creation for retail store transactions 
         href: trickle-feed.md
-      - name: Create, calculate and post statements for a retail store 
-        href: tasks/create-calculate-post-statement-retail-store.md
       - name: Financial reconciliation in retail stores
         href: fin-recon.md
       - name: Improvements to statement posting functionality 
