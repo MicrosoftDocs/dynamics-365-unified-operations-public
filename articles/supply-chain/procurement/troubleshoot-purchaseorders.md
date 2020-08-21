@@ -33,23 +33,19 @@ ms.dyn365.ops.version: AX 10.0.9
 
 This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Unable to get the master planning job from cancelling to waiting state
+## Unable to link a Purchase Agreement to a Purchase Order Line after creation
 
-When a master planning job was cancelled and seems to be in the canceling state for some time now and you want to get it back to the waiting status.
+A purchase agreement has to be associated to the purchase order at the time of creation. Purchase order lines cannot be associated to purchase agreement lines if the purchase order was not initially associated at the time of purchase order creation.
 
-**Fix 1: Through the Unfinished planning processes form:**
-Navigate to Master planning > Inquiries and reports > Master planning > Unfinished planning processes
-Click "Cancel" on all unfinished tasks.
-If cancellation through Unfinished planning processes form didn't work:
+This is by design.
+## Unable to post more than one invoice for a purchase order line with category based items
 
-**Fix 2: Through the Batch Jobs form:**
-Navigate to System administration >Inquiries > Batch jobs
-Click "Delete" on the batch job related to MRP
-If cancellation through Batch Jobs form didn't work:
+Quantity is mandatory for posting invoices. So, if the full quantity on the line has been invoiced but only a partial amount and the expectation is to invoice the rest of the amount in another invoice, then that is not possible. 
 
-**Fix 3: Through the Batch Jobs task form:**
-Click on the Job ID of the Batch Job related to MRP
-Select the batch tasks in Batch tasks:Click "Abort" in the Batch tasks fast
+This is by design.
+
+**Explanation:**
+A purchase agreement has to be associated to the purchase order at the time of creation. Purchase order lines cannot be associated to purchase agreement lines if the purchase order was not initially associated at the time of purchase order creation.
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
