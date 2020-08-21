@@ -522,7 +522,7 @@
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
-    - name: Merchandizing your products and services  
+    - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
         items:
@@ -538,7 +538,7 @@
             href: create-product-hierarchy.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
-          - name: Change the sort order for merchandizing entities 
+          - name: Change the sort order for merchandising entities 
             href: custom-order-categories-nav-retail-prod-hierarchy.md
         - name: Product dimensions 
           items:
