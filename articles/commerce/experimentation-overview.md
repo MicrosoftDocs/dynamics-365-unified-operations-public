@@ -40,14 +40,14 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 > A/B testing on pages, modules and fragments is supported in Commerce. Multi-variate and multi-page tests can be accomplished using fragments, as long as these tests are also supported in the third-party service.
 
 ## Prerequisites
-1. **Get the right version of Dynamics 365 Commerce** - Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
-1. **Setup an experimentation connector** - An experimentation connector allows Dynamics 365 Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following directions provided by the publisher. You can also use the sample test connector from Dynamics 365 Commerce following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors), to test the experimentation workflow without needing to configure an external service.
+1. **Get the right Commerce version** - Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
+1. **Setup an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following directions provided by the publisher. You can also use the sample test connector from Commerce following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors), to test the experimentation workflow without needing to configure an external service.
 1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level (Tenant Settings -> Features) or at the site level (Site Settings -> Features).
     - Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
     - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
     
 ## Experimentation journey
-The experimentation journey begins with creating a hypothesis or the theory that needs to be tested.
+The diagram below shows the user's experimentation journey in Commerce and the third-party service.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 1. [Identify](experimentation-identify.md)
