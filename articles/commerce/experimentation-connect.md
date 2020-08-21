@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Connect
-Once a hypothesis and metrics are defined, the next step is to associate the experiment with the corresponding experiences in Dynamics 365 Commerce. To do this:
+Once the experiment is setup in the third-party service, the next step is to associate it with the corresponding experiences in Dynamics 365 Commerce. To do this:
 1. Go to the **Experiments** tab in site builder to view the list of experiments from the connector configured above. 
 1. Click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
     > [!NOTE]
