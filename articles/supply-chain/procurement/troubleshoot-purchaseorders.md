@@ -65,19 +65,14 @@ This is caused by a pending feature for Planning Optimization.
 
 **Fix**: Until the pending feature is available, filter or delete planned orders to remove supply suggestions outside of the coverage time fence.
 
-## Can't enable Planning Optimization
+## What check triggers the prompt 'Update prices and discounts entered manually or external document' message?
 
-The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
+We prompt this when changing the shipping date because often times this means that a different trade or sales agreement can get triggered, resulting in a price change. It can also effect warehouse schedules and other related information. It gets triggered whenever any of the dates have been changed, to ensure that the user is aware of price changes that can happen due to this change.
 
-**Fix**: Make sure that the Planning Optimization add-in was installed successfully.
+## Can I show only Purchase orders created by me?
 
-## Error message is shown during CTP
+This functionality is not available currently.
 
-If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you will receive the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
-
-This is related to a pending feature that is planned as part of the support for production orders.
-
-**Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
 
 ## Additional resources
 
