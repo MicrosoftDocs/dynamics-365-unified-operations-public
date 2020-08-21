@@ -5,7 +5,7 @@ title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Cookie compliance
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 
@@ -61,8 +62,9 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 
-## E-commerce site 
-If a cookie is not an essential cookie, its required for the e-commerce site user to consent before the cookie is tracked. To allow site users to provide cookie consent on the e-commerce site, a [Cookie consent module](add-cookieconsent.md) is provided. The Site author is required to author this module on the page [Header module](author-header-module.md) to ensure the cookie consent is received before the respective module/feature can be used.
+## Site user cookie consent on an E-commerce site 
+
+If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is received. This consent must be given before the feature or module using a non-essential cookie can be rendered on a site page.
 
 ## Additional resources
 
@@ -74,6 +76,6 @@ If a cookie is not an essential cookie, its required for the e-commerce site use
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
 
- [Cookie consent module](add-cookieconsent.md) 
+[Cookie consent module](cookie-consent-module.md) 
  
- [Header module](author-header-module.md)
+[Header module](author-header-module.md)
