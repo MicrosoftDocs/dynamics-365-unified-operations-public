@@ -50,4 +50,9 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 The experimentation journey begins with creating a hypothesis or the theory that needs to be tested.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
-[Identify](experimentation-identify.md)
+1. [Identify](experimentation-identify.md)
+1. [Setup](experimentation-setup.md)
+1. [Connect and edit](experimentation-connect-edit.md)
+1. [Preview and publish(experimentation-preview-publish.md)
+1. [Run and monitor](experimentation-run-monitor.md)
+1. [Review, archive and complete](experimentation-review-archive-complete.md)
