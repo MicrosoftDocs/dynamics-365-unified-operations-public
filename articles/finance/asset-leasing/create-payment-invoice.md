@@ -39,7 +39,7 @@ You can create monthly lease invoices individually, or for multiple leases using
 
 1. Select a lease in the main lease summary list and click (**Books > Payment schedule**).
 
-2. Select payment to be made and click on Create journal. The user will receive an infolog showing a journal was created against the selected payment.
+2. Select payment to be made and click **Create journal**. A message saying that a journal was created against the selected payment will display.
 
 3. Click **Invoice journals** and select the invoice to be paid. Open the **Lines** tab to review the journal entry before posting to the general ledger.
 
