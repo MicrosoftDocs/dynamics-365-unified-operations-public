@@ -690,7 +690,7 @@
       items:
       - name: Customer orders
         items:
-        - name: Customer orders in MPOS
+        - name: Customer orders in Point of Sale (POS)
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
