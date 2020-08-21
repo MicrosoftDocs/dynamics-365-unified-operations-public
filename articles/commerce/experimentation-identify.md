@@ -39,4 +39,4 @@ Define the assumption or theory you want to validate with your experiment and th
 Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and do not want to affect content that is not part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a new instance copy of the entire page or fragment is created i.e. content changes will not be synchronized across experimentation instances.
 
 ## Decide how you want to publish your experiment
-Think about whether you want to schedule your experiment to be published in a [publish group](#publish-experiment-variations-with-publish-groups) or directly [publish to your live site](#create-experiment-variations).
+Think about whether you want to schedule your experiment to be published in a publish group or directly publish to your live site.
