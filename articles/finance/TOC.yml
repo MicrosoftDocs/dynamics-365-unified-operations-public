@@ -792,6 +792,8 @@
         items:
         - name: Add or copy a lease
           href: asset-leasing/add-lease.md
+        - name: Create a payment invoice
+          href: asset-leasing/create-payment-invoice.md
         - name: Record right-of-use asset depreciation
           href: asset-leasing/record-rou-asset-depreciation.md
         - name: Reverse posted lease transactions 
