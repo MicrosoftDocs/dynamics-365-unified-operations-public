@@ -29,17 +29,29 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Troubleshoot Purchase orders 
+# Troubleshoot master planning 
 
 [!include [banner](../../includes/banner.md)]
 
 This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Installation of the Planning Optimization add-in doesn't complete
+## Unable to get the master planning job from cancelling to waiting state
 
-Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
+When a master planning job was cancelled and seems to be in the canceling state for some time now and you want to get it back to the waiting status.
 
-**Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
+**Fix 1: Through the Unfinished planning processes form:**
+Navigate to Master planning > Inquiries and reports > Master planning > Unfinished planning processes
+Click "Cancel" on all unfinished tasks.
+If cancellation through Unfinished planning processes form didn't work:
+
+**Fix 2: Through the Batch Jobs form:**
+Navigate to System administration >Inquiries > Batch jobs
+Click "Delete" on the batch job related to MRP
+If cancellation through Batch Jobs form didn't work:
+
+**Fix 3: Through the Batch Jobs task form:**
+Click on the Job ID of the Batch Job related to MRP
+Select the batch tasks in Batch tasks:Click "Abort" in the Batch tasks fast
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
