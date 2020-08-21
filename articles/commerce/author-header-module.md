@@ -5,7 +5,7 @@ title: Header module
 description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -26,19 +26,21 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+
 ---
 
 # Header module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-In Dynamics 365 Commerce, a page header is configured as page fragment which includes the Header module, Promo banner and [Cookie consent](add-cookieconsent.md) modules. 
+In Dynamics 365 Commerce, a page header is configured as a page fragment that includes the header, promo banner, and cookie consent modules. 
 
-The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart icon, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
+The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart icon module, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
 The following image shows an example of a header module on a home page.
 
@@ -56,7 +58,7 @@ The **My account links** property can be used to define account pages that the s
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. See [Navigation Menu module](navigationmenu-module.md) for more details.
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. For more information, see [Navigation menu module](navigation-menu-module.md).
 
 - **Search** – The search module lets users enter search terms to search for products. The URL of the default search page and the search query parameters must be provided at **Site Settings \> Extensions**. The search module has properties that let you suppress the search button or label as you require. The search module also supports auto-suggest options, such as product, keyword, and category search results.
 
@@ -102,8 +104,8 @@ To help guarantee that a header appears on every page, follow these steps on eve
 
 [Promo banner module](add-alert.md)
 
-[Navigation Menu module](navigationmenu-module.md) 
+[Navigation Menu module](navigation-menu-module.md) 
 
-[Cookie consent](add-cookieconsent.md)
+[Cookie consent](cookie-consent-module.md)
 
 [Footer module](author-footer-module.md)
