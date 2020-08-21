@@ -70,7 +70,7 @@ The following illustration shows an example of two payment modules on a checkout
 ![Example of  Adyen payment and PayPal modules on a checkout page](./media/ecommerce-paypal.PNG)
 
 The following illustration shows an example of the PayPal iframe invoked using the PayPal button. 
-![Example of  Paypal ifram on a checkout page](./media/ecommerce-paypal-iftrame.PNG)
+![Example of  Paypal ifram on a checkout page](./media/ecommerce-paypal-iframe.PNG)
 
 ## Payment module properties
 
