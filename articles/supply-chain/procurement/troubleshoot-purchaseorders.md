@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Troubleshoot master planning 
+# Troubleshoot Purchase Orders 
 
 This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
 
