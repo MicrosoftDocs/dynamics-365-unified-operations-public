@@ -37,3 +37,11 @@ After an experiment completes and has sufficient results to determine whether it
 1. Use the analytics generated in the third-party service to pick the variation that performed the best and click **Next**.
 1. Stop and/or archive the experiment in the third-party service.
 1. Click **Complete** to overwrite the original page and publish the winning variation to all users of the website. If there is no clear winner, choose **Republish the original page**.
+
+## Delete experiment variations
+To delete and experiment and its variations in Commerce:
+1. Go to the **Experiments** tab in site builder and select or click on the desired experiment. 
+    > [!NOTE]
+    > If the experiment is still active, stop the experiment in the third-party service before proceeding.
+1. Click on the **Unpublish** button in the top bar to take down the page from live site.
+1. Click on the **Delete** button in the top bar to delete the experiment.
