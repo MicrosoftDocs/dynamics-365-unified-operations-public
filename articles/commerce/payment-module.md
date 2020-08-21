@@ -67,7 +67,7 @@ When the payment module is configured to use the PayPal payment connector, a Pay
 The PayPal payment connector does not require a billing address module because all billing-related information is handled by PayPal within its iframe. However, the shipping address and delivery options modules are required.
 
 The following illustration shows an example of two payment modules on a checkout page, one configured with the Adyen payment connector and the other with the PayPal payment connector.
-![Example of Adyen payment and PayPal modules on a checkout page](./media/ecommerce-paypal.PNG)
+![Example of Adyen payment and PayPal modules on a checkout page](./media/ecommerce-paypal.png)
 
 The following illustration shows an example of the PayPal iframe invoked using the PayPal button. 
 ![Example of Paypal iframe on a checkout page](./media/ecommerce-paypal-iframe.png)
