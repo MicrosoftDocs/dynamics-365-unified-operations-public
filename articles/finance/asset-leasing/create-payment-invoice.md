@@ -53,4 +53,4 @@ You can create monthly lease invoices individually, or for multiple leases using
 
 5. When the transaction is posted, you can view the transaction information, and the carrying value of the lease liability, by clicking **Liability transactions** on the lease book.
 
-6. On the payment schedule, the **Journal posted** field will be checked and the invoice journal number will populate on this line. After a payment journal is created against a month, an entry cannot be recreated unless it's reversed first.
+6. On the payment schedule, the **Journal posted** field will be checked and the invoice journal number will display on this line. After a payment journal has been created, and an entry for that journal has been created, you must reverse that entry before it can be recreated.
