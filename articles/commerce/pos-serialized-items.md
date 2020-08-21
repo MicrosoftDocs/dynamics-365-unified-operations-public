@@ -37,7 +37,7 @@ Many retailers sell products that require serial control. These products are ref
 
 An item is considered a serialized item if it's assigned a tracking dimension group that's set up to allow for serial numbers. In Commerce headquarters, on the **Tracking dimension groups** page, select the **Active** option to enable serial numbers for the inventory process, or select the **Active in sales process** option to enable serial numbers for the sales process.
 
-On the **Tracking dimensions** FastTab, turn on the **Blank receipt allowed** parameter to allow serial number to be an optional input during the inventory **receipt** process of serialized item. Turning this parameter off enforces serial number to be a required input. Similarly, the **Blank issue allowed** parameter controls whether serial number is required during inventory **shipment** process.
+On the **Tracking dimensions** FastTab, turn on the **Blank receipt allowed** parameter to allow serial number to be an optional input during the inventory **receipt** process of serialized item. Turning off this parameter enforces serial number to be a required input. Similarly, the **Blank issue allowed** parameter controls whether serial number is required during inventory **shipment** process.
 
 > [!NOTE]
 > To use the **Inbound inventory** and **Outbound inventory** POS operations to register or validate serial numbers against a serialized item, you must configure that item to be assigned a tracking dimension group that's set up to allow for serial numbers for the **Active** option, not the **Active in sales process** option.
@@ -46,7 +46,7 @@ On the **Tracking dimensions** FastTab, turn on the **Blank receipt allowed** pa
 
 In the **Inbound inventory** and **Outbound inventory** POS operations, if the item that is being selected, received, or shipped is a serialized item, its **Details** pane contains a **Manage serial number** option that links to the **Serial number management** page where you can register or validate serial numbers for the item. Alternatively, you can open the **Serial number management** page either by selecting the **Serial number** action on the app bar of the order details view, or by selecting the **Manage serial number** option in the dialog box that prompts you during the receiving or shipping process. 
 
-The **Serial number management** page lists all open serial number lines that are pending registration or validation. There might be two tabs on this form: one for the current item and another for all serilized item in the order.
+The **Serial number management** page lists all open serial number lines that are pending registration or validation. There might be two tabs on this form: one for the current item and another for all serialized item in the order.
 
 The **Status** field on the **Serial number management** page provides information about the current stage that each serial number is in:
 
