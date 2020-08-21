@@ -77,7 +77,7 @@ Creation of credit card authorizations isn't supported. Only exisitng card payme
 
 The configuration to enable this feature is completed at the register level. In the back office, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. Select the relevant register and then select **Edit**. Select the dropdown for **Card not present processing**, select **Use retail server**, and then select **Save**.
 
-![Previously saved payment instrument](../media/Payments/CNP-POS.png)
+![Previously saved payment instrument](media/PAYMENTS/CNP-POS.png)
 
 After the change is saved, run the **1090** distribution schedule to sync the changes to the POS. 
 
@@ -85,4 +85,4 @@ The **Card not present processing** configuration option is set to **Use hardwar
 
 ## Related articles
 
-- [Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
+- [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
