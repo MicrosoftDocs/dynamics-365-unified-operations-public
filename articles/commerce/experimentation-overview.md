@@ -50,6 +50,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 The diagram below shows the user's experimentation journey in Commerce and the third-party service.
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
+Click on the links below to learn more about each stage:
 1. [Identify](experimentation-identify.md)
 1. [Setup](experimentation-setup.md)
 1. [Connect and edit](experimentation-connect-edit.md)
