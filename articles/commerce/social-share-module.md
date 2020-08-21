@@ -2,7 +2,7 @@
 # required metadata
 
 title: Social share module 
-description: This topic covers social share module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 08/31/2020
@@ -26,7 +26,8 @@ ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Release 10.0.14
+
 ---
 
 # Social share module
@@ -34,17 +35,17 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers social share module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Social share module allows the user to share the page Url in social media such as Facebook, Linkedin etc. Its commonly used on the product details page to share the product information. This module was enabled in 10.0.13.
+Social share modules allow users to share e-Commerce site page URLs on social media such as Facebook, Twitter, Pinterest, and LinkedIn. Site page URLs can also be shared via email. Social share modules are commonly used on product details pages (PDPs) to help users share product information. This module was enabled as of Commerce release 10.0.13.
 
-**Social share module** is a container of **Social share item** modules. Each Social share item module can be configured to point to a specific social media. We support integration with the following social media's out of box - Facebook, Twitter, Pinterest, Linkedin and Mail. When a site user interacts with the social media icon, an iframe is launched for the respective social media. Within the iframe, the user can login and post the page content that they were viewing. Each social media platform expects certain data to be availble TBD.
+Each social share module is a container for social share item modules. Each social share item module can be configured to point to a specific social media site. Integration with Facebook, Twitter, Pinterest, Linkedin, and email is supported out of the box. When a site user interacts with a social media icon, an HTML iframe is launched for the respective social media site. Within the iframe, the user can sign in and post the page content that they were viewing.
 
-Each social media platforms may track some cookies, therefore this module requires the user to accept the cookie consent message. When cookie consent is not accepted, the module will be hidden on the page. For more details, refer to [Cookie compliance](cookie-compliance.md)
+Each social media platform may track some cookies, so this module requires site users to accept the cookie consent message. When cookie consent is not accepted, the module will be hidden on the page. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
-The following image shows an example of a Social share module that is used on product details page.
+The following illustration shows an example of a social share module used on a product details page.
 
 ![Example of a social share module](./media/ecommerce-socialshare.png)
 
@@ -52,18 +53,18 @@ The following image shows an example of a Social share module that is used on pr
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Caption                  | Caption text | The module can be provided with a caption for this module|
-| Orientation |Horizontal or Vertical    | This defines the layout for the social media items, it can be Horizontal or Vertical |
+| Caption                  | Text | This property specifies a caption for the module. |
+| Orientation | **Horizontal** or **Vertical**  | This property defines the layout orientation for the social media items. |
 
 ## Social share item module properties
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Social media              | Facebook, Twitter, Pinterest, Linkedin, Mail | A dropdown with a list of social media platforms to chose from|
+| Social media              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | A dropdown with a list of social media platforms to chose from|
 | Icon |Image    | This will be the icon that will be shown for the respective social media. As a best practice, refer to the social media platform's SDK for the recommended icon for each platform |
 
 ## Add a social share module to a buy box module
 
-The Social share module can be added to the buy box module within the **Social share slot**.  
+The social share module can be added to the buy box module within the **Social share slot**.  
 
 1. In Fabrikam, open the the **DefaultPDP** page which is the product details page 
 1. To the Buy box module, **Social share slot** add the **Social share module**. Set caption if needed. Set Orientation=Horizontal
@@ -77,6 +78,6 @@ The Social share module can be added to the buy box module within the **Social s
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Buy Box](add-buy-box.md)
+[Buy box module](add-buy-box.md)
 
 [Cookie compliance](cookie-compliance.md)
