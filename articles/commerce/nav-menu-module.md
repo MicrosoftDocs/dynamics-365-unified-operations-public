@@ -2,7 +2,7 @@
 # required metadata
 
 title: Navigation menu module 
-description: This topic covers Navigation menu module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 08/31/2020
@@ -35,37 +35,38 @@ ms.dyn365.ops.version: Release 10.0.14
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers Navigation menu module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Navigation menu module allows the users to browse the channel navigation heirarchy as defined in Dynamics 365 Commerce HQ.  Configured items then appear as header navigation. In addition, it also supports static menu items which showcase relative links to other pages on the site.  The primary purpose of the module is to help the user browse the products and the site pages.
+The primary purpose of navigation menu modules is to allow site users to browse products and site pages according to the channel navigation heirarchy defined Dynamics 365 Commerce headquarters. Items configured in a navigation menu module appear as site header navigation. Navigation menu modules also support static menu items that link to other pages on an e-Commerce site.
 
-The module can be added to the [Header](author-header-module.md) of the page. In Fabrikam theme, the navigation menu shows 2-levels by default. In Starter theme, the navigation menu shows 3-levels by default. For changes to the nubmer of levels, a view extension is required on the theme.
+The navigation menu module can be added to the header module of a page. In the Fabrikam theme, the navigation menu shows two levels by default. In the Starter theme, the navigation menu shows three levels by default. To change to the number of levels, a view extension is required on the theme.
 
-The following is an example of Navigation Menu in Fabrikam with 2-levels of category heirarchy and some static menu items.
+The following illustration shows an example of a navigation menu for the Fabrikam site with two levels of category hierarchy and some static menu items.
 ![Example of a navigation meu module](./media/ecommerce-header.png)
 
 ## Navigation menu module properties
+
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Source                  | Retail, Manual authoring, Retail and manual authoring |Retail source allows the channel navigaiton heirarchy from HQ to be displayed on the navigation menu. Manaul authoring allows static menu items to be curated|
-| Show category images |True or False    | This property was added in 10.0.14 and displays category images defined in HQ for a category on the navigation menu|
-| Static menu item| Array of values| Static menu items take a menu item name and link to a static page. Recursively, you can create menu items below each other. By default, static menu appear on the root level and will be appended to channel navigation heirarchy if it exists |
+| Source                  | **Retail**, **Manual authoring**, **Retail and manual authoring** | The **Retail** value allows the channel navigation hierarchy from Commerce headquarters to be displayed on the navigation menu. The **Manual authoring** value allows static menu items to be curated. The **Retail and manual authoring** value allows a mix of both. |
+| Show category images | **True** or **False**    | When enabled, this property displays category images on the navigation menu as defined in Commerce headquarters for each category. Added as of Commerce release 10.0.14. |
+| Static menu item| Array of values| Static menu items associate a menu item name with a link to a static site page. You can create menu items below each other. By default, static menus appear at the root level and will be appended to the channel navigation heirarchy if it exists. |
 
-The following is an example of Navigation Menu in Fabrikam with category images showing up on the menu
+The following illustration shows an example of a category image displayed on the navigation menu for the Fabrikam site.
 ![Example of a navigation meu module with category images](./media/ecommerce-categoryimages.PNG)
 
-## Add a navigation menu module to a Header module
+## Add a navigation menu module to a header module
 
-See Header module for details on how to author navigation menu
+For details on how to add a navigation menu module to a header module, see [Header module](author-header-module.md).
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Buy Box](add-buy-box.md)
+[Buy box module](add-buy-box.md)
 
 [Cookie compliance](cookie-compliance.md)
 
-[Header](author-header-module.md)
+[Header module](author-header-module.md)
