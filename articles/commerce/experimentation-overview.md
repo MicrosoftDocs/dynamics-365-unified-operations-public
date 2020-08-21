@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 Web experimentation is the process of using controlled experiments such as A/B tests to validate hypotheses and bring data-driven confidence in decisions and therefore higher conversion rates. Use web experimentation to scientifically measure the impact of proposed changes to your website and avoid making costly decisions without data.
 
-Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Real-time event streams from Dynamics 365 Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
+Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Real-time event streams from Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 > [!NOTE]
 > A/B testing on pages, modules and fragments is supported in Commerce. Multi-variate and multi-page tests can be accomplished using fragments, as long as these tests are also supported in the third-party service.
