@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through the steps for creating a new lease in Asset leasing, as well as copying a lease. Creating a new lease involves entering information for the new lease and then creating a lease schedule. When you have at least one lease set up, you might find it easier to copy the information from an existing lease, and modify as needed to create a new lease. 
+This topic walks through the steps for creating a new lease in Asset leasing, as well as copying a lease. Creating a new lease involves entering information for the new lease and then creating a lease schedule. When at least one lease has been set up, you might find it easier to copy the information from an existing lease, and then modify as needed to create a new lease. 
 
 ## Create a new lease
 
@@ -69,9 +69,9 @@ After you've entered information for the lease, complete the following steps to 
 In order to calculate the lease term in months, the system will find the difference between the start date and the end date for a particular payment schedule line and will then move to the next payment schedule line, and find the difference again. Then the system sums all these amounts to determine the lease term in months.
 
 
-In order to view the calculated period interest expenses go to **Liability amortization schedule**, to view calculated stright line depreciation go to **Asset depreciation schedule**, 
+In order to view the calculated period interest expenses go to **Liability amortization schedule**, to view calculated straight line depreciation go to **Asset depreciation schedule**, 
 
-After revewing calculated amount you can go to **Initial recognition** to create the initial recognition journal entry. A prompt that shows that the journal has been created will displayed.
+After reviewing the calculated amount, you can create the initial recognition journal entry on the **Initial recognition** page. A prompt that shows that the journal has been created will be displayed.
 
 > [!Note]
 > The journal entry is not posted to General ledger until the user manually "posts" the entry.
@@ -90,7 +90,7 @@ Asset leasing lets you copy the details of a lease to create a new lease with th
 1. To copy a lease, select the lease to be copied from the **Lease summary** and select **Copy lease** in the top ribbon.
 
  > [!Note]
- > If the **Manual** parameter on the lease ID Number sequence is disabled, the copied lease will automatically generate the next number in the sequence to use for its lease ID. If this parameter is enabled, a message will be displayed that prompts you to enter the Lease ID before proceeding with copying the lease.
+ > If the **Manual** parameter for the lease ID number sequence is disabled, the copied lease will automatically generate the next number in the sequence to use for its lease ID. If this parameter is enabled, a message will be displayed that prompts you to enter the Lease ID before proceeding with copying the lease.
  
 2. When you click **Copy**, the lease details from the selected lease will be copied over into a new lease where the user can edit the details before saving and creating the lease schedules.
 
