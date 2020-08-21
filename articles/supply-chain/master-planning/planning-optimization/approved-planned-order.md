@@ -46,4 +46,4 @@ You can use the  **Status**  field to help track your progress. The following va
 - **Approved:** If you want to keep edits or are planning to firm a planned order, you can change the status to Approved. Planned orders with Approved status are considered as fixed and expected supply by master planning, so they are not modified or deleted during later master planning runs. To achieve this, the planning logic copies the Approved planned orders from the old plan version to the new plan version during master planning.
 Note that Approved planned orders are only seen as supply within the specific master plan.
 
-Planned orders can be managed from the  **Master planning**  workspace, the  **Planned order**  list, or the  **Planned production orders** ,  **Planned purchase orders** , and  **Planned transfer**  lists.
+Planned orders can be managed from the  **Master planning**  workspace, the  **Planned order**  list, or the  **Planned production orders**,  **Planned purchase orders**, and  **Planned transfer**  lists.
