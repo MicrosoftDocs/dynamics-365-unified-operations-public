@@ -1644,9 +1644,9 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
         - name: Defer execution of ER format elements
           items: 
-          - name: Defer execution of a sequence element
+          - name: Defer the execution of sequence elements in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-          - name: Defer execution of a XML element
+          - name: Defer the execution of XML elements in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
       - name: Use Electronic reporting solutions in Finance and Operations
         items: 
