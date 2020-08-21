@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -64,13 +64,13 @@ Themes can be used to remove or change the order of buy box product properties a
 
 - **Heading tag** – This property defines the heading tag for the product title. If the buy box is at the top of the page, this property should be set to **h1** to meet accessibility standards. 
 
-- **Enable sShop similar looks** - This property defines allows the buy box to show a link to products that have similar looks as the currently viewed item. This feature is availalbe in 10.0.13.
+- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that have similar looks to the currently viewed item. This feature is available as of Commerce release 10.0.13.
 
 ## Modules that can be used in a buy box module
 
 - **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](mediagallery-module.md).
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
-- **Social share** - This module can be added to the buy box to allow users to share product information on the social media platforms. For more information, see [Social share](add-socialshare.md]
+- **Social share** - This module can be added to the buy box to allow users to share product information on social media platforms. For more information, see [Social share module](add-socialshare.md]
 
 ## Buy box module settings
 
