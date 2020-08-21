@@ -31,8 +31,6 @@ ms.dyn365.ops.version: AX 10.0.9
 ---
 # Troubleshoot master planning 
 
-[!include [banner](../../includes/banner.md)]
-
 This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
 
 ## Unable to get the master planning job from cancelling to waiting state
