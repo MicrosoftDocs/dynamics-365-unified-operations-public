@@ -47,19 +47,19 @@ This is by design.
 **Explanation:**
 A purchase agreement has to be associated to the purchase order at the time of creation. Purchase order lines cannot be associated to purchase agreement lines if the purchase order was not initially associated at the time of purchase order creation.
 
-## Planning of batch jobs fails when Planning Optimization is enabled
+## Changes to purchase orders are only allowed in state Draft when change management is activated
 
 When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
 **Fix**: Cancel all master planning batch jobs that were created for the built-in Supply Chain Management planning engine.
 
-## Planning Optimization results are different from earlier results
+## Updating Purchase Order in Received State creates Error
 
 Planning Optimization differs from the built-in master planning design in some areas. This can also be caused by pending features.
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-## Master planning doesn't respect the coverage time fence
+## Unable to edit the unit price for a purchase order line linked to an agreement
 
 This is caused by a pending feature for Planning Optimization.
 
