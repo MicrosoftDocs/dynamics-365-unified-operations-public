@@ -44,13 +44,13 @@ This topic describes how to configure point of sale (POS) clients to process "ca
 | Term | Description |
 |---|---|
 | BOPIS | BOPIS is the common abbreviation for "buy online, pick up in store." |
-| Curbside pickup | This scenario is similar to BOPIS, but rather than picking the item up in the store, the customer generally doesn't enter the store and in many cases doesn't leave their vehicle. |
-| Card not present | Sometimes abbreviated as CNP, "card not present" describes scenarios where the credit card or other form of electronic payment is not phyically present. In  BOPIS and curbside pickup scenarios, the customer makes their payment online or over the phone, and the payment is then captured from the POS at the time of pick up. 
+| Curbside pickup | This scenario is similar to BOPIS, but rather than picking up the item in the store, the customer generally doesn't enter the store and in many cases doesn't leave their vehicle. |
+| Card not present | Sometimes abbreviated as CNP, "card not present" describes scenarios where the credit card or other form of electronic payment is not physically present. In  BOPIS and curbside pickup scenarios, the customer makes their payment online or over the phone, and the payment is then captured from the POS at the time of pickup. 
 | Hardware station | This term is used to describe the business logic that drives interactions between the POS and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android. Modern POS for iOS and Cloud POS require a standalone deployed hardware station to interact with physical devices. |
 
 ## Overview
 
-If this feature isn't enabled, "card not present" credit card requests can't be processed by the Cloud POS or Modern POS for iOS by themselves because they don't have a built-in hardware station. By enabling the feature, the Commerce Scale Unit can be used to facilitate these requests for those clients. Aside from Cloud POS and Modern POS for iOS, this feature can also be used for Modern POS for Windows and Android clients, but it isn't suported for offline mode. For scenarios where a Windows client is using offline mode, this feature shouldn't be used.  
+If this feature isn't enabled, the Cloud POS or Modern POS for iOS can't process "card not present" credit card requests by themselves because they don't have a built-in hardware station. By enabling the feature, the Commerce Scale Unit can be used to facilitate these requests for those clients. Aside from Cloud POS and Modern POS for iOS, this feature can also be used for Modern POS for Windows and Android clients, but it isn't supported for offline mode. For scenarios where a Windows client is using offline mode, this feature shouldn't be used.  
 
 ## Supported scenarios
 
@@ -61,11 +61,11 @@ The following scenarios are supported for POS clients that don't have a built-in
 | Payment capture | Recall of orders for pickup and capture of the credit card payment associated with the order. |
 | Linked refund | Linked refund to the original payment instrument for return orders and cash and carry transactions. |
 | Order editing | Orders can be recalled and edited in the POS with the same payment card being authorized to support the new order total. | 
-| Order cancellation | Orders that are cancelled can have the balance that is due back to the customer refunded to the original payment card. |
+| Order cancellation | Orders that are canceled can have the balance that is due back to the customer refunded to the original payment card. |
 
 ## Unsupported scenarios
 
-Creation of credit card authorizations isn't supported. Only exisitng card payments can be captured, refunded, or edited. 
+Creation of credit card authorizations isn't supported. Only existing card payments can be captured, refunded, or edited. 
 
 | Scenario | Description |
 | --- | --- |
