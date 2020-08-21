@@ -44,6 +44,7 @@ Before you go through this topic, it's important that you understand the concept
 
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 
+
 | Error | Description |
 |-------|-------------|
 | You receive the following error message: "System.ArgumentNullException: Value cannot be null.Parameter name: connectionString at Microsoft.Dynamics.Retail.CommerceDataExchange.SqlTargetRequestHandler." | An error has occurred because of batch job statuses. (You can see the error in a failed download job on the **Download sessions** page.) Go to **System administration \> Inquiries \> Batch jobs**, find the data writing batch that is associated with the Commerce Scale Unit that the download job was supposed to be applied to, and change the batch job's status to **Withhold**. In environments that are earlier than version 10.0.12, we recommend that you also create a channel database group that is named **Legacy**, associate the **Default** channel database with this new group, and then exclude the new database group from all distribution schedules. CDX jobs should no longer be generated for the **Default** channel database in the **Legacy** group. |
