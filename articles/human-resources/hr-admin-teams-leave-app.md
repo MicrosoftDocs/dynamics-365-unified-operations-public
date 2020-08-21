@@ -46,6 +46,27 @@ You can find the Human Resources app in the Teams store. For information about i
 
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+## Enable notifications for the Human Resources app in Teams
+
+If you want users to receive leave request notifications in the Teams app, you must enable notifications in Human Resources.
+
+>[!NOTE]
+>Only users who are signed into Teams and using the Human Resources Teams app will receive notifications.
+
+1. In Human Resources, select **System administration**.
+
+2. Select **Links**.
+
+3. Under **Users**, select **User options**.
+
+4. Select the **Workflow** tab.
+
+5. Set **Enable notifications for Teams app** to **Yes**.
+
+   ![Enable Teams app notifications in User options Workflow tab](./media/hr-admin-teams-leave-app-notifications.png)
+
+6. Select **Save**.
+
 ## Known issues
 
 | Issue | Status |

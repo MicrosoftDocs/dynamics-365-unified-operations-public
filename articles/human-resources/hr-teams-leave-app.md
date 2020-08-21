@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -135,6 +135,28 @@ The **Time off** tab allows you to view:
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
+### Teams notifications
+
+When you or a direct report submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+
+If you're a manager, you can select **Approve**, **Reject**, or **Delegate** in the notification. You can also provide an optional message.
+
+![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
+
+## View your team's leave calendar
+
+If you're a manager with direct reports, you can view your team's approved and pending time off.
+
+1. In the Human Resources app in Teams, select **Time off**.
+
+2. Select **Team calendar**.
+
+   ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
+
+The calendar displays your direct reports' approved and pending time off.
+
+![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+
 ## Privacy notice
 
 With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/) which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
