@@ -63,7 +63,7 @@ SELECT TENANTID from RETAILSHAREDPARAMETER
   ```powershell
 SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
   ```
-5. 	Restore the Admin account and AAD tenant ID information.
+5. 	Restore the Admin account and AAD tenant ID information. Also remove the SF schema and its tables, if present.
   ```sql
 UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
 UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='<preserved VALUE>' where name = 'TENANTID'
@@ -71,6 +71,9 @@ UPDATE POWERBICONFIG SET TENANTID='<preserved TENANTID>'
 UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
 UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserved TENANTID>'
 UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserved TENANTID>'
+DROP TABLE IF EXISTS SYNCLOG
+DROP TABLE IF EXISTS SYNCLOCK
+DROP SCHEMA IF EXISTS SF
   ```
 6. 	Re-import all other users and assign the appropriate security roles.
 7. 	Direct printing in a cloud environment is accomplished via the Document Routing Agent (DRA). Set up sandbox DRA(s), as described at [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent), so that regression testing can include your printing scenarios.
