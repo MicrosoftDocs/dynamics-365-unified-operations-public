@@ -84,9 +84,7 @@ The remaining ROU asset balance will be amortized on a straight-line basis for t
 
 1. After creating this lease, go to the lease book and confirm the payment schedule. Then, post the initial recognition journal entry. The initial ROU asset and lease liability should be $70,235.81. Assume this lease was classified as an operating lease under ASC 842.
 2. Next, in order to simulate the passing of 3 years, run the batch journal process for the lease payments, interest expense, and depreciation expense.
-3. After running all three batch jobs, navigate back to the lease book and open the liability and asset transactions tables to see the current carrying value of the ROU asset and lease liability.
-
- 	After three years, the value of both is around $53,893.00.
+3. After running all three batch jobs, navigate back to the lease book and open the liability and asset transactions tables to see the current carrying value of the ROU asset and lease liability. After three years, the value of liability and asset are around $-53,893.00 and $53,893.00 respectivley.  
    
 4. At this point after 3 years, impairment tests are performed by the business, and it is determined that the ROU asset has an impairment of $35,000. To record this impairment, navigate to the lease book, and click **Impairment** in the top ribbon.
 5. The **Impairment parameter** page will open. Enter the following details:
@@ -100,6 +98,6 @@ The remaining ROU asset balance will be amortized on a straight-line basis for t
    |     Preview before posting    	|     No          	|
    |     Close book                	|     No          	|
 
-1. An impairment expense journal entry has now been created and posted. To view the journal entry, navigate to the asset leasing journal in the lease book. The amount of the impairment was debited to the Impairment expense posting account and the Lease asset posting account was credited.
+1. An impairment expense journal entry has now been created and posted. To view the journal entry, navigate to the asset leasing journal in the lease book. The amount of the impairment was debited to the Impairment expense posting account and the ROU asset posting account was credited.
 2. To view the next effect of the impairment, navigate to the liability and asset transactions tables. The impairment expense has decreased the ROU asset, but the carrying amount of the lease liability remains the same.
 There is one final effect of the impairment to consider. Because the ROU asset amount is now much lower than the lease liability, it must be depreciated differently than before. Specifically, the asset is now depreciated in a straight-line manner throughout the remaining 84 months of the lease beginning on the transaction date.
