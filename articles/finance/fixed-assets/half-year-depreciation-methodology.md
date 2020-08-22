@@ -42,8 +42,8 @@ When you use the six-month depreciation convention, the system considers the acq
 
 The first year of service will conclude in December 2020, which means the end of the asset’s five-year service life will be December 2024. The half-year depreciation convention will add six months to the asset’s life, which means its service life will end in June 2025. 
 
-If you change the date that the depreciation was last calculated, the last year of depreciation will move out by that number of periods. For example, if you extend the date that the depreciation is calculated by three months, the last year of service will have nine months of depreciation, rather than six. 
-For this example, the monthly and annual depreciation amounts are shown in the following illustration. 
+Yearly depreciation 50,000/5 = 10,000 monthly depreciation 10,000/12 = 833.33
+First year depreciation 10,000/2 = 5,000  and the subsequent monthly depreciation 5,000/9 = 555.56
 
    [![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
