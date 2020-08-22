@@ -46,8 +46,8 @@ Should the adjustment decrease the ROU asset past 0, the remainder will be credi
 
 We recomment that you refer to IFRS 16 and ASC 842 for specific guidance on lease adjustment transactions.
 
-1. To adjust a lease, select the lease to be adjusted from the **Lease summary** page and select **Adjust lease**. The modified data will update lease schedules after the **Create schedule** process has run.
-2. A page that's similar to the **Add lease** page will appear. The user may enter the new information for the adjusted lease. Note, like the commencement date when first adding a lease, the **Modification date** field determines when the modified lease will commence. This date cannot be after the Start Date on the payment schedule lines.
+1. To adjust a lease, select the lease to be adjusted from the **Asset leasing| Leases| Lease summary** page and select **Adjust lease**. The modified data will update lease schedules after the **Create schedule** process has run.
+2. **Adjust lease**  page that's similar to the **Add lease** page will appear. The user may enter the new information for the adjusted lease. Note, like the commencement date when first adding a lease, the **Modification date** field determines when the modified lease will commence. This date cannot be after the Start Date on the payment schedule lines.
 
  > [!Note] 
  > The **ROU Considerations** fields apply to the lease adjustment. If there are no initial direct costs, lease incentives, prepayments, or dismantling costs associated with the modified lease, these fields should be left blank. The original amounts will not apply to the updated lease. Any additional costs incurred in modifying the lease should be inputted in this form.
