@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic lists and briefly describes the reports that are available in Asset leasing. You can display most reports by completing similar steps. 
 
-- To view most Asset leasing reports, click **Asset Leasing > Inquiries and reports > Lease reports** and then select a report to view). For the reports that require a different selection path, the steps to open the report are included with that report's description. 
+- To view most Asset leasing reports, click **Asset Leasing > Inquiries and reports > Lease reports** and then select a report to view. For the reports that require a different selection path, the steps to open the report are included with that report's description. 
 - When you select a report to print, a parameters page will open that lets you filter the information that's included on the report. Enter filter criteria, and then click **OK** to generate the report. The generated report will show information that falls within the filters that you specified.
 
 ## Asset movements 
