@@ -41,7 +41,7 @@ To setup a batch job or to process payment invoices, depreciation, or interest f
 > [!Note]
 > Subsequent transactions such as liability amortization schedule, payments, depreiation and expenses will be posted only after posting the initial recognition for respective leases.   
 
-If the **Preview before running** parameter is enabled, a grip will display showing all the journal entries that will be posted. The grid includes an **Error** tab that will show all the expected errors from the batch process, if any exist.
+
 
 > [!Note]
 > The journal entries are created but will not post until you click the **Run** command.
