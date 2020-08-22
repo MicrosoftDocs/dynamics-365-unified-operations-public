@@ -215,6 +215,6 @@ The depreciation expense journal entry will be generated from the Asset deprecia
 |     Ledger          	|     10            	|     Custom    	|     Depreciation expense        	|     949.75    	|               	|
 |     Ledger          	|     11            	|     Custom    	|     Accumulated depreciation    	|               	|     949.75    	|
 
-After all these journal entries are created and posted, the, see the "custom layer" values below. You will note the last column includes the bank fee, VAT expense and the reduction of cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
+After all these journal entries are created and posted, the, see the "custom layer 1" values below. You will note the last column includes the bank fee, VAT expense and the reduction of cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
 
 
