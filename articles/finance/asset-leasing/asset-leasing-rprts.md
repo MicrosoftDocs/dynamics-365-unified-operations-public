@@ -47,13 +47,15 @@ The Asset movement report serves as a rollforward report for the right-of-use as
 |------------------------------------|--------------------------------------------------------------------------------|
 |     Commencement date              |     The commencement date of the lease’s earliest version.                     |   
 |     Lease term                     |     The lease term of the lease’s earliest version.                            |
+|     Short term Lease               |     If lease is classified as a short-term lease will show as **Yes**.         |
+|     Low value Lease                |     If lease is classified as a low-value lease will show as **Yes**.          |
 |     Initial right of use asset     |     The original value of the right-of-use asset from the initial recognition journal entry.      |
 |     Beginning balance              |     The net book value of the right of use asset as of the **From date**.                         |
 |     Period depreciation expense    |     The amount of depreciation expense taken within the date range defined for the report.        |
 |     Accumulated depreciation       |     The amount of accumulated depreciation as of the **From date**.                               |
 |     Impairment                     |     The amount the asset was impaired within the date range defined for the report.               |
-|     Adjustments                    |     The amount of adjustments to the right of use asset within the date range defined for the report.          |
-|     Ending balance                 |     The ending net book value of the right of use asset, net of accumulated depreciation as of the **To date**.    |
+|     Modifications                  |     The amount of adjustments to the right of use asset between date parameters.                            |
+|     Net book value                 |     The ending net book value of the right of use asset, net of accumulated depreciation as of the **To date**.    |
 
 ## Differences report
 The Differences report shows the differences between information loaded into the Lease import framework and the information that's currently in the system. This lets you compare what was adjusted, updated, or added through the Lease import framework.  
@@ -61,7 +63,7 @@ The Differences report shows the differences between information loaded into the
 The values in the report will vary based on the selected lease. The report will only show those fields that differ from what is currently in the system and what is in the staging tables. The old value is what is either currently in the system or what was previously in the system, depending on whether the import process has run. The new value shows the value that's in the staging table that will replace the old value.
 
 ## Five-years undiscounted payment forecast
-The Five years undiscounted payment forecast report shows the projected undiscounted lease payments to be paid over the next five years from the date specified on the report parameters. The report includes the following fields. 
+The Five-years undiscounted payment forecast report shows the projected undiscounted lease payments to be paid over the next five years from the date specified on the report parameters. The report includes the following fields. 
 
 |     Report fields        	|     Description                                                                                   	|
 |--------------------------	|---------------------------------------------------------------------------------------------------	|
