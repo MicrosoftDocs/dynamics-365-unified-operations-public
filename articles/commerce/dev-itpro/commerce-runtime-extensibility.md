@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various ways that you can extend the commerce runtime (CRT) and create new Retail server API. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.
+This topic describes various ways that you can extend the commerce runtime (CRT) and create a new Retail Server API. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.
 
-CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and it's then compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS. 
+CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and then it's compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS.
 
-Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail server, and Retail server calls CRT. CRT then processes the request and sends back the response.
+Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail Server, and Retail Server calls CRT. CRT then processes the request and sends back the response.
 
 For example, the Customer service in CRT contains all the customer-related requests and responses, each of which is run in a different flow. Likewise, the Product service in CRT contain all the product-related requests and responses. The following table shows the requests in the Customer service.
 
@@ -61,133 +61,125 @@ For example, the Customer service in CRT contains all the customer-related reque
 
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following table. Always use the samples that Microsoft provides as template for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
-<table>
-<thead>
-<tr>
-<th>Extensibility pattern</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Create a new CRT service</td>
-<td>Create a new functionality/feature.</td>
-</tr>
-<tr>
-<td>Override existing Service</td>
-<td>
-<p>You can completely override existing functionality or customize it according to your business flow.</p>
-<p>Here are some examples:
-<ul>
-<li>You want to override the POS search functionality to search from an external system instead of searching in a local database or HQ. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.</li>
-<li>Search for a customer in a local database or HQ, and in an external system, and then finally merge or modify the result.</li>
-<li>Avoid overriding the handler, most of the CRT extension scenarios can be achieved in pre or post trigger, overriding is required only when you want to completely replace the existing functionality.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Triggers</td>
-<td>
-<p>You can execute additional logic before or after any request.</p>
-<p>In the pre-trigger, you can do some validation, custom logic, and so on.</p>
-<p>In the post-trigger, you can add some custom information to the request and send it to POS. Alternatively, you can modify the result that is returned from the standard functionality or do some additional business logic.</p>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Extension properties</td>
-<td>
-<p>You can add custom properties to any CRT entity and send it to POS. Extension properties are key-value pairs. If you set an extension property in POS, it will be available in CRT. Likewise, if you set an extension property in CRT, it will be available in POS. You can also set extension properties at the level of the request, the response, or the request context. By default, extension properties aren't stored in and read from the database. To read or set extension properties, you must write custom code. However, that custom code is automatically sent between POS and CRT.</p>
-<p>For example, you want to capture and show some additional information to the customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customer, add them to the customer entity as extension properties, and send those extension properties to POS.</p>
-<p>You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.</p>
-<p>All CRT entities, such as products, customers, transactions, and parameters, support extension properties.</p>
-<blockquote><strong>Note:</strong><br>
-Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.</blockquote>
-<p>For details about the attributes, see the following topics:</p>
-<ul>
-<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/order-attributes">Order attributes</a></li>
-<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/customer-attributes">Customer attributes</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Real-time transaction service calls</td>
-<td>You can do synchronous call from CRT to HQ.</td>
-</tr>
-<tr>
-<td>CRT data service and data service with entity</td>
-<td>Data service to read data/entity from channel database.</td>
-</tr>
-</tbody>
-</table>
+### Create a new CRT service
+
+Create a new functionality/feature.
+
+### Override existing Service
+
+You can completely override existing functionality or customize it according to your business flow. Here are some examples:
+
++ You want to override the POS search functionality to search from an external system instead of searching in a local database or HQ. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.
++ Search for a customer in a local database or HQ, and in an external system, and then finally merge or modify the result.
++ Avoid overriding the handler. You can implement most of the CRT extension scenarios by using pre or post triggers. Overriding is required only when you want to completely replace the existing functionality.</li>
+
+### Triggers
+
+You can execute additional logic before or after any request.
+
+In the pre-trigger, you can do some validation, custom logic, and so on.
+
+In the post-trigger, you can add some custom information to the request and send it to POS. Alternatively, you can modify the result that is returned from the standard functionality or do some additional business logic.
+
+### Extension properties
+
+You can add custom properties to any CRT entity and send it to POS. Extension properties are key-value pairs. If you set an extension property in POS, it will be available in CRT. Likewise, if you set an extension property in CRT, it will be available in POS. You can also set extension properties at the level of the request, the response, or the request context. By default, extension properties aren't stored in and read from the database. To read or set extension properties, you must write custom code. However, that custom code is automatically sent between POS and CRT.
+
+For example, you want to capture and show some additional information to the customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customer, add them to the customer entity as extension properties, and send those extension properties to POS.
+
+You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.
+
+All CRT entities, such as products, customers, transactions, and parameters, support extension properties.
+
+> [!NOTE]
+> Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.
+
+For details about the attributes, see the following topics:
+
++ [Order attributes](order-attributes.md)
++ [Customer attributes](customer-attributes.md)
+
+### Real-time transaction service calls
+
+You can do synchronous call from CRT to HQ.
+
+### CRT data service and data service with entity
+
+Data service to read data/entity from channel database.
 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 ## Register the CRT extension
 
-After extending CRT, place the extension library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (when POS is connected to Retail server). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
+### Online
 
-```C#
+For online (when POS is connected to Retail Server), after extending CRT, put the extension library in the **\\RetailServer\\webroot\\bin\\Ext** folder. Update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown in the following example.
+
+```xml
 <add source="assembly" value="your custom library name" />
 ```
 
 For example, if the name of your custom library is **Contoso.Commerce.Runtime.CustomerSearchSample**, add the following line in the **composition** section.
 
-```C#
+```xml
 <add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />
 ```
 
-For offline, you should you put the custom library in the **…\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder. You should also update the **composition** section in the **CommerceRuntime.MPOSOffline.ext.config** file with the custom library information, as shown here.
+### Offline
 
-```C#
+For offline, after extending CRT, put the custom library in the **\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder. Update the **composition** section in the **CommerceRuntime.MPOSOffline.ext.config** file with the custom library information, as shown in the following example.
+
+```xml
 <add source="assembly" value="your custom library name" />.
 ```
-## Register extension configuration in the ommerceRuntime.Ext.config
 
-Extension can register any key-value type of configs in the ommerceRuntime.Ext.config under the <settings> node
+## Register the extension configuration in the CommerceRuntime.Ext.config file
 
-```XML
+Your extension can register any key-value configurations in the **CommerceRuntime.Ext.config** file in the **\<settings\>** node.
 
-      This section is a key value pair collection used to configure the CommerceRuntime components.
-      The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator.
-      Extension configuration values MUST be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise.
-      Additional prefixes can be added to represent the sub-area they control.
-      For example:
+This **\<settings\>** node is a key-value pair collection used to configure the CommerceRuntime components. The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator. Extension configuration values MUST be prefixed with **ext**, because the Commerce Runtime initialization enforces this convention and will not load otherwise. Additional prefixes can be added to represent the sub-area they control. The following example sets a key-value pair.
 
+```xml
       <add name="ext.SalesTransaction.Storage.CartSerializationFormat" value="XML" />
-
-      For HTTP binding timeouts on Realtime Service calls, configure the timeout in seconds per method
-      (Note: this timeout value is limited by maxExtensionTimeoutInSeconds, set in CommerceRuntime.config):
-      <add name="ext.RealTimeServiceClient.TimeoutInSeconds.InvokeExtensionMethod.ContosoRetailStoreHours_UpdateStoreHours" value="300" />
-   
 ```
-To read the key-value from the CRT extension config, extension code can use the RequestContext.Runtime.Configuration and read it.
 
-```C#
-Ex:
+For HTTP binding timeouts on Realtime Service calls, configure the timeout in seconds per method. This timeout value is limited by **maxExtensionTimeoutInSeconds**, which set in **CommerceRuntime.config**.
+
+```xml
+<add name="ext.RealTimeServiceClient.TimeoutInSeconds.InvokeExtensionMethod.ContosoRetailStoreHours_UpdateStoreHours" value="300" />
+```
+
+To read the key-value from the CRT extension config, extension code can use **RequestContext.Runtime.Configuration**. The following example shows how to retrieve a value.
+
+```csharp
  string key = context.Runtime.Configuration.GetSettingValue("ext.SalesTransaction.Storage.CartSerializationFormat") ?? string.Empty;
 ```
-
 
 The preceding steps are used for manual deployment and testing in your development box. To package the extension and deploy it to production or user acceptance testing (UAT), use the information in the packaging document.
 
 ## Debugging CRT
 
-To debug CRT from POS, you should attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server, for offline attach the CRT extension project to the dllhost.exe process.
+### Attach online
 
-## Using extension properties on CRT entities and requests and responses
+To debug CRT from POS, you should attach the CRT extension project to **w3wp.exe** (the IIS process for Retail Server) when POS is connected to Retail server.
+
+### Attach offline
+
+For offline, attach the CRT extension project to the **dllhost.exe** process.
+
+## Using extension properties on CRT entities, requests, and responses
 
 One way to add new data to an existing CRT entity is to use extension properties. Extension properties are key-value pairs on the entity. By default, these key-value pairs aren't persisted in the database. To persist an extension property, you must write custom code.
 
 ## Using extension properties on CRT entities with persistence
 
-Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail server/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
+Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server or CRT, the key-value pair is available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
 
 > [!NOTE]
 > For HQ, extension properties are sent only for customers and orders.
 
-However, as was mentioned earlier, the extension property isn't persisted by default. If you want to persist an extension property, you must do data modeling to help guarantee that you make the correct design choices about where the data should reside. We recommend that you use a new table and a join. This approach fits most requirements well. The EmailPreference sample in the Retail SDK provides a good end-to-end example.
+However, as mentioned earlier, the extension property isn't persisted by default. If you want to persist an extension property, you must do data modeling to help guarantee that you make the correct design choices about where the data should reside. We recommend that you use a new table and a join. This approach fits most requirements well. The **EmailPreference** sample in the Retail SDK provides a good end-to-end example.
 
 **Location of the sample code in the Retail SDK**
 
@@ -199,7 +191,7 @@ However, as was mentioned earlier, the extension property isn't persisted by def
 
 **Syntax to set an extension property on an entity**
 
-```C#
+```csharp
 public virtual void SetProperty(string key, object value);
 entity.SetProperty("key", value);
 ```
@@ -208,18 +200,18 @@ entity.SetProperty("key", value);
 
 **Scenario**
 
-New extension table and fields created for the Customer entity and extension want to read those field from the extension table and send it to POS.
+A new extension table and fields created for the Customer entity and extension need to read those fields from the extension table and send them to POS.
 
-When you extend the channel database, it's always a good idea to include the primary key from the main table in the extension table (don'y have direct relation, then read the data from the extension table by using the primary key.
+When you extend the channel database, it's always a good idea to include the primary key from the main table in the extension table. That is, don't have a direct relation, and then read the data from the extension table by using the primary key.
 
 **Steps**
 
-1. Create the extension table for Customer entity in the channel database ext schema that has the primary key of the main table. 
-2. Identify the CRT data request that reads the Customer entity.
-3. Add a post-trigger for the data request. You will then be able to use the primary key of the Customer table to query your extension table to read the custom fields.
+1. Create the extension table for the **Customer** entity in the channel database extension schema that has the primary key of the main table.
+2. Identify the CRT data request that reads the **Customer** entity.
+3. Add a post-trigger for the data request. You will then be able to use the primary key of the **Customer** table to query your extension table to read the custom fields.
 
-> [!NOTE]
-> You can get the primary key for the entity in the post-trigger request. That request will have the entity object, and that entity object will have all the required fields.
+    > [!NOTE]
+    > You can get the primary key for the entity in the post-trigger request. That request will have the entity object, and that entity object will have all the required fields.
 
 4. Add the custom fields as extension properties to the shared parameters entity in the CRT post-trigger, and send it to POS.
 
@@ -227,16 +219,7 @@ When you extend the channel database, it's always a good idea to include the pri
 
 The request that reads the data from the Customer table is GetCustomerDataRequest. The following example shows how you can add a post-trigger for this request.
 
-```C#
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
-
+```csharp
 namespace Contoso
 {
     namespace Commerce.Runtime.EmailPreferenceSample
@@ -312,7 +295,7 @@ namespace Contoso
             /// <param name="request">The request.</param>
             public async Task OnExecuting(Request request)
             {
-                // It's only stub to handle async signature 
+                // It's only stub to handle async signature.
                 await Task.CompletedTask;
             }
         }
@@ -334,12 +317,12 @@ You created a new extension table for Customer. When values for the extension fi
 
 **Steps**
 
-1. Create your extension table for Customers in the channel table that has the primary key relation to the main table. (In this case, the main table is CustTable.)
-2. Identify the CRT data request that sets data in CustTable.
-3. Override the handler, and call the base request to set values in the main table (CustTable) and then the extension table.
+1. Create your extension table for Customers in the channel table that has the primary key relation to the main table. (In this case, the main table is **CustTable**.)
+2. Identify the CRT data request that sets data in **CustTable**.
+3. Override the handler, and call the base request to set values in the main table (**CustTable**) and then the extension table.
 
 > [!NOTE]
-> Extension code can pass additional properties required for the  extension procedure or view. Extension properties can be saved in the CRT pre or post triggers, no need to override the CRT handler. Avoid overriding the handler, most of the CRT extension scenarios can be achieved in pre or post trigger.
+> Extension code can pass additional properties required for the extension procedure or view. Extension properties can be saved in the CRT pre or post triggers, you no not need to override the CRT handler. Avoid overriding the handler, most of the CRT extension scenarios can be achieved in pre or post trigger.
 
 The example that follows doesn't have the SQL scripts that are used. You can find the full sample code and scripts at the following locations in the Retail SDK.
 
@@ -353,16 +336,7 @@ The example that follows doesn't have the SQL scripts that are used. You can fin
 
 **Example**
 
-```C#
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
-
+```csharp
 namespace Contoso
 {
     namespace Commerce.Runtime.EmailPreferenceSample
@@ -404,7 +378,7 @@ namespace Contoso
                         parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
                         await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
                     }
-                    
+
                     transactionScope.Complete();
 
                     return response;
@@ -522,13 +496,13 @@ Next, you must create a new CRT service that uses the request and response types
 
 ## Creating a new CRT service
 
-1.  Implement the new service.
+1. Implement the new service.
 
     ```typescript
     public class StoreHoursDataService : IRequestHandlerAsync
     ```
 
-2.  Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The execute method is the method that the CRT calls for you if a request for this service is run.
+2. Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The **execute** method is the method that the CRT calls for you if a request for this service is run.
 
   ```C#
    public IEnumerable<Type> SupportedRequestTypes
@@ -561,7 +535,7 @@ Next, you must create a new CRT service that uses the request and response types
                     throw new NotSupportedException(message);
                 }
             }
-            
+
             private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
             {
                 ThrowIf.Null(request, "request");
@@ -580,9 +554,9 @@ Next, you must create a new CRT service that uses the request and response types
                     return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
                 }
             }
-```
+    ```
 
-3.  Register the CRT extension as mentioned in the begining of this doc.
+3. Register the CRT extension as mentioned in the beginning of this topic.
 
 ## Implementing a new CRT service that handles a single new request
 
@@ -677,7 +651,7 @@ For the preceding example, the CRT runtime engine automatically makes a query to
 
 ## Adding pre-triggers and post-triggers for a specific request
 
-For information about how to create CRT triggers extensio, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
+For information about how to create CRT triggers extension, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
 
 ## Retail server extension
 
