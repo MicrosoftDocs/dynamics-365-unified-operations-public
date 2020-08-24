@@ -52,11 +52,11 @@ A warranty agreement can include several agreement lines to cover the warranty f
 
     On the **Details** FastTab, the **Assets** field shows the number of active assets that use the warranty agreement.
 
-5. On the **Warranty lines** FastTabs, follow these steps to add lines that should be included in a warranty agreement.
+5. On the **Warranty lines** FastTab, follow these steps to add lines that should be included in a warranty agreement:
 
     1. Select **Add line** to add a new condition to the warranty. A sequential line number is automatically entered in the **Line** field.
     2. In the **Period** field, select the type of warranty period.
     3. In the **Interval** field, enter a number. This field defines the number of periods that the warranty should be valid for.
     4. In the **Percent** field, enter the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
-![Warrenty page](media/01-warranty.png)
+![Warranty page](media/01-warranty.png)
