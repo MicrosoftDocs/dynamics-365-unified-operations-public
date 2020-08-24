@@ -2,7 +2,7 @@
 # required metadata
 
 title: Adjust a lease
-description: The topic lists the steps for adjusting a lease, which might necessary if the lease terms are modified, the lease is extended, or if there are other circumstances changes that require an adjustment to the lease.  
+description: The topic lists the steps for adjusting a lease, which might be necessary if the lease terms are modified, the lease is extended, or if other circumstances change that require an adjustment to the lease.  
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/04/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic lists the steps for adjusting a lease, which might necessary if the lease terms are modified, the lease is extended, or if other circumstances change that require an adjustment to the lease. Asset leasing is compliant with the guidance provided by ASC 842 and IFRS 16 regarding lease modifications. ASC 842 defines a lease modification as a change to the terms and conditions of a contract that result in a change in scope of or the consideration for a lease (ASC 842-20-15-1).
+The topic lists the steps for adjusting a lease, which might be necessary if the lease terms are modified, the lease is extended, or if other circumstances change that require an adjustment to the lease. Asset leasing is compliant with the guidance provided by ASC 842 and IFRS 16 regarding lease modifications. ASC 842 defines a lease modification as a change to the terms and conditions of a contract that result in a change in scope of, or the consideration for, a lease (ASC 842-20-15-1).
 
 IFRS 16 states that a lessee must revalue the lease liability to reflect changes to the lease payments (Paragraph 39).
 
@@ -50,7 +50,7 @@ We recomment that you refer to IFRS 16 and ASC 842 for specific guidance on leas
 2. **Adjust lease**  page that's similar to the **Add lease** page will appear. The user may enter the new information for the adjusted lease. Note, like the commencement date when first adding a lease, the **Modification date** field determines when the modified lease will commence. This date cannot be after the Start Date on the payment schedule lines.
 
  > [!Note] 
- > The **ROU Considerations** fields apply to the lease adjustment. If there are no initial direct costs, lease incentives, prepayments, or dismantling costs associated with the modified lease, these fields should be left blank. The original amounts will not apply to the updated lease. Any additional costs incurred in modifying the lease should be inputted in this form.
+ > The **ROU considerations** fields apply to the lease adjustment. If there are no initial direct costs, lease incentives, prepayments, or dismantling costs associated with the modified lease, these fields should be left blank. The original amounts will not apply to the updated lease. Any additional costs incurred in modifying the lease should be inputted in this form.
 
 For example, if the lessor provides a $1,000 incentive for signing into a lease extension, when adjusting the lease to account for the extension, the user should enter 1,000 in the **Lease incentives** field. If there were no incentives associated with the lease adjustment, any value previously in this field should be removed. The same logic is applied to other ROU Considerations.
 
@@ -58,7 +58,7 @@ For example, if the lessor provides a $1,000 incentive for signing into a lease 
 2.	The steps that follow are nearly identical to initially recognizing a lease. Select **Create schedules** to generate the adjusted payment schedule. Once clicked, a notification will show that the payment schedule has been created for that lease.
 
    > [!Note]
-   > Before clicking **Create Schedules**, ensure that the **Modification Date** and **Payment schedule lines** are accurate. Also ensure the Initial direct costs, Lease incentives, Prepayments, or Dismantling costs all correspond with only those costs arising from adjustment.
+   > Before clicking **Create schedules**, ensure that the **Modification date** and **Payment schedule lines** are accurate. Also ensure the Initial direct costs, Lease incentives, Prepayments, or Dismantling costs all correspond with only those costs arising from adjustment.
 
 1.	To view the newly created Payment schedule, select **Books** and navigate to the **Payment schedule**.
 2.	The **Payment schedule** will open, and the user can edit the adjusted payment amounts before confirming the schedule by clicking **Confirm schedule**. 
@@ -68,7 +68,7 @@ When confirmed, the new asset depreciation and new lease liability schedules wil
 3.	To view the new lease liability amortization schedule generated from the new inputs, exit the **Payment Schedule** page and navigate to **Liability amortization schedule**.
 4.	To view the newly generated asset depreciation schedule, open the **Asset depreciation schedule** from the **Book details** page.
 5.	To generate the adjustment journal entry, select **Function > Lease adjustment**.
-6.	A message will appear notifying the user that the adjustment journal entry has been created. To view the journal entry, click **Journals > Asset leasing journal**.
+6.	A message will appear to notify you that the adjustment journal entry has been created. To view the journal entry, click **Journals > Asset leasing journal**.
 7.	To post the journal entry, select the line and click **Post**.
 
 
@@ -77,6 +77,6 @@ When confirmed, the new asset depreciation and new lease liability schedules wil
 If a lease has been modified, the user is able to view the different versions of the lease including the historical schedules and past lease details.
 
 1.	Navigate to that lease and select the lease in the Lease summary and select **Lease version history** in the top ribbon.
-2.	The **Lease Versions** page displays the versions of a lease if it has been adjusted. The original lease is labeled "1" with subsequent versions in ascending numerical order. The **Lease Status** is shown under the lease ID which indicates which lease version is currently active or closed. Transactions cannot entered for a closed lease. The user can view the financial dimensions, contract details, location, and payment schedule lines of the selected lease version.
+2.	The **Lease versions** page displays the versions of a lease if it has been adjusted. The original lease is labeled "1" with subsequent versions in ascending numerical order. The **Lease status** is shown under the lease ID, which indicates which lease version is currently active or closed. Transactions cannot be entered for a closed lease. The user can view the financial dimensions, contract details, location, and payment schedule lines of the selected lease version.
 3.	To view historical schedules, open the modified lease from the **Lease summary** page, and then select the desired book. Then, click **Book version history** in the top ribbon.
 4.	From the **Book version** page, select the desired version and the desired schedule to view.
