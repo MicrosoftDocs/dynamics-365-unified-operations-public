@@ -57,7 +57,7 @@ This topic lists the features that are included in the platform updates for vers
 -  [Upgrade three jQuery components libraries](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
 
 -  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
-[Task recorder resources](../user-interface/task-recorder.md#validate). 
+[Task recorder resources](../user-interface/task-recorder.md#validate). To use this feature in combination with the Regression Suite Automation Tool (RSAT), you must update to RSAT 2.0, which will be available in October 2020.  
 
 
 ## Additional resources
