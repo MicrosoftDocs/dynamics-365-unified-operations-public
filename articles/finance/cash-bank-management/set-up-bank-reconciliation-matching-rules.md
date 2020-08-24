@@ -43,6 +43,8 @@ You can set up reconciliation matching rules and reconciliation matching rule se
 
 On the **Reconciliation matching rules** page, you can select which actions and selection criteria are used when the matching rule is run. In the **Actions** field group, select the action that will be performed when the matching rule is run during the reconciliation process.  
 
+By default matching rules will match to the first bank document that meets the matching rule criteria.  If multiple bank document meet the matching rule criteria the parameter to require manual matching can be turned on by going to Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount
+
 > [!NOTE] 
 > The option that you select determines the fields that appear.
 
