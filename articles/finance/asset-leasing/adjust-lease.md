@@ -52,10 +52,10 @@ We recomment that you refer to IFRS 16 and ASC 842 for specific guidance on leas
  > [!Note] 
  > The **ROU considerations** fields apply to the lease adjustment. If there are no initial direct costs, lease incentives, prepayments, or dismantling costs associated with the modified lease, these fields should be left blank. The original amounts will not apply to the updated lease. Any additional costs incurred in modifying the lease should be inputted in this form.
 
-For example, if the lessor provides a $1,000 incentive for signing into a lease extension, when adjusting the lease to account for the extension, the user should enter 1,000 in the **Lease incentives** field. If there were no incentives associated with the lease adjustment, any value previously in this field should be removed. The same logic is applied to other ROU Considerations.
+For example, assume that a lessor provides a $1,000 incentive for signing into a lease extension. When adjusting the lease to account for the extension, you would enter 1,000 in the **Lease incentives** field. If there no incentives were associated with the lease adjustment, any value previously in this field should be removed. The same logic is applied to other ROU Considerations.
 
-1.	The payment schedule lines of the adjusted lease should be created on a prospective basis, meaning they cannot start before the lease modification takes effect.
-2.	The steps that follow are nearly identical to initially recognizing a lease. Select **Create schedules** to generate the adjusted payment schedule. Once clicked, a notification will show that the payment schedule has been created for that lease.
+1.	The payment schedule lines of the adjusted lease should be created on a prospective basis. Creating payment schedule lines on a prospective basis means they cannot start before the lease modification takes effect.
+2.	The steps that follow are nearly identical to initially recognizing a lease. Select **Create schedules** to generate the adjusted payment schedule. A notification will show that the payment schedule has been created for that lease.
 
    > [!Note]
    > Before clicking **Create schedules**, ensure that the **Modification date** and **Payment schedule lines** are accurate. Also ensure the Initial direct costs, Lease incentives, Prepayments, or Dismantling costs all correspond with only those costs arising from adjustment.
