@@ -54,7 +54,7 @@ To revoke a reversed transaction, either select the original transaction from th
 - If you’re selecting the transaction from the **Schedule** page, follow the process for creating a journal that described in [Create journal entries in batch](create-monthly-journals-batch.md). You’ll need to post that journal manually.
 - If you select the transaction from the **Transactions** page, click **Reverse transaction**. A message will display telling you this is a revocation of an earlier reversal, and that you can edit the posting date for this revocation. However, the **Date** field has general business validations that affect what dates are allowed. 
 
-   When you click **OK**, a journal entry will be posted that reverses the entry you selected. The reversal is shown on the **Transactions** page and the net total current balance will be updated and re-instated as it was before the first reversal thus negating the impact of reversal on the balances.
+   When you click **OK**, a journal entry will be posted that reverses the entry you selected. The reversal is shown on the **Transactions** page and the net total current balance will be updated and reinstated as it was before the first reversal thus negating the impact of reversal on the balances.
 
    When you click **Reverse tracing**, a dialog opens that displays both the original and reversed transactions with a linked number, known as trace number.
 
