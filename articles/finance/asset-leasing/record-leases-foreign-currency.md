@@ -37,24 +37,23 @@ ms.dyn365.ops.version: 10.0.14
 
 Asset leasing accounts for leases in currencies other than the accounting or reporting currencies established in Ledger setup. All leases should be entered in their transaction currency, or in other words, the currency denominated on the lease contract. This topic lists the steps for recording leases in currencies other than the accounting or reporting currencies.
 
-As in Fixed assets, when a lease is entered in a foreign currency, the right-of-use (ROU) asset will be depreciated in both the accounting currency and reporting currency,  which are configured in **Ledger setup**. When creating a lease in a foreign currency, select the transaction currency from the **Currency** dropdown.
+When you enter a lease using a foreign currency, the right-of-use (ROU) asset will be depreciated in both the accounting currency and reporting currency,  which are configured in **Ledger setup**. This behavior is also used in Fixed assets. When you create a lease in a foreign currency, select the transaction currency from the **Currency** drop-down.
 
-In the **Financial and reporting exchange information** tab, the default entry in the **Accounting currency exchange rate** will be the currency exchange rate effective as of the Commencement date of the lease for the accounting currency and lease currency. Similar, the Reporting currency exchange rate field will populate with the currency exchange rate effective as of Commencement date of the lease for the reporting currency and lease currency.
+In the **Financial and reporting exchange information** tab, the default entry in the **Accounting currency exchange rate** field will be the currency exchange rate that was effective as of the commencement date of the lease for the accounting currency and lease currency. Similarly, the value entered in the **Reporting currency exchange rate** field will be the currency exchange rate that's effective as of the commencement date of the lease for the reporting currency and lease currency.
 
-1. To override the automatically populated exchange rate and enter a rate manually, select the **Fixed rate** check box.
-2. Continue entering the other necessary information for this lease and select **Create schedules**.
-3. On the newly created lease details, select **Books**.
-4. On the lease book, view the Financial and reporting exchange information tab to view the newly calculated **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields. These values in these fields will be the translated right-of-use asset balance in each respective currency. These fields will be updated when you change any financial information, and then click **Create schedules** before confirming the payment schedule.
+1. To override the exchange rate that was entered automatically and enter a rate manually, select the **Fixed rate** check box.
+2. Entering the information you need for this lease in the other fields and click **Create schedules**.
+3. On the newly created **Lease details** page, select **Books**.
+4. On the **Lease book** page, review the information in the **Financial and reporting exchange information** tab to verify the values in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields. The values in these fields will be the translated right-of-use asset balance in each respective currency. These fields will be updated when you change any financial information, and then click **Create schedules** before confirming the payment schedule.
 5. The initial recognition journal entry will record the ROU asset that uses the currency exchange rates listed on the lease, and with the values shown in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.
 
 ## Subsequent measurement for foreign currency leases
-
 The depreciation schedule shows the expected depreciation expense amounts in the reporting currency and accounting currency in addition to the transaction currency.
 
-To view the right-of-use asset balances and depreciation amounts in the either the reporting or accounting currency, navigate to **Asset depreciation schedule** and select the **Show accounting currency amounts** or **Show reporting currency amounts** check box.
+To view the right-of-use asset balances and depreciation amounts in either the reporting or accounting currency, go to **Asset depreciation schedule** and select the **Show accounting currency amounts** or **Show reporting currency amounts** check box.
 
-When creating the depreciation expense journal entries against a lease denominated in a foreign currency, the entry will be created using the exchange rates listed on the lease, and using the values shown in the **Accounting currency initial right-of-use asset** and the **Reporting currency initial right-of-use asset** fields.
+When you create the depreciation expense journal entries against a lease denominated in a foreign currency, the entry will be created using the exchange rates listed on the lease, and using the values shown in the **Accounting currency initial right-of-use asset** and the **Reporting currency initial right-of-use asset** fields.
 
 The final depreciation expense amount can be calculated using a slightly different exchange rate to fully depreciate the ROU asset in both the accounting and reporting currencies.
 
-In case of the lease have been reclassified as **Deferred rent** the system will automatically clear the exchange rates of accounting and reporting currency if they are already defined.
+If the lease has been reclassified as **Deferred rent**, the system will automatically clear the exchange rates of the accounting and reporting currencies, if they've  already been defined.
