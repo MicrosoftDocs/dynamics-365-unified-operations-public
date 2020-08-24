@@ -28,9 +28,15 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# VAT declaration for Bahrain - BH-00002
+# VAT declaration for Bahrain (BH-00002)
 
 [!include [banner](../includes/banner.md)]
+
+- **First release:** This feature is included in the platform updates for version 10.0.12 of Finance and Operations apps. These update is formerly referred to as Platform update 36.
+
+- **Latest update:** This feature was updated in the platform updates for version 10.0.12. This update is formerly referred to as Platform update 37.  
+
+## Overview
 
 This topic explains how to set up and generate the VAT return form for legal entities in Bahrain.
 
@@ -41,6 +47,8 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
  - VAT return form, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as is described in the legislation.
  - Sales transactions details grouped by box classification from Box1 to Box6.
  - Purchase transaction details grouped by box classification from Box8 to Box12.
+ 
+ The feature is available 
  
 ## Prerequisites
 
