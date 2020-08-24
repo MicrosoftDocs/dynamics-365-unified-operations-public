@@ -42,10 +42,10 @@ When you enter a lease using a foreign currency, the right-of-use (ROU) asset wi
 The default entry in the **Accounting currency exchange rate** field of the **Financial and reporting exchange information** tab, will be the currency exchange rate that was effective as of the commencement date of the lease. The commencement date applies to both the accounting currency and lease currency.
 
 1. Select the **Fixed rate** check box to override the exchange rate that was entered automatically, and enter the new rate.
-2. Enter the information you need for this lease in the other fields and click **Create schedules**.
+2. Enter the information you need for this lease in the other fields, and then click **Create schedules**.
 3. On the newly created **Lease details** page, select **Books**.
-4. On the **Lease book** page, review the information in the **Financial and reporting exchange information** tab to verify the values in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields. The values in these fields will be the translated right-of-use asset balance in each respective currency. These fields will be updated when you change any financial information, and then click **Create schedules** before confirming the payment schedule.
-5. The initial recognition journal entry will record the ROU asset that uses the currency exchange rates listed on the lease, and with the values shown in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.
+4. On the **Lease book** page, review the information in the **Financial and reporting exchange information** tab to verify the values in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields. The values in these fields will be the translated right-of-use asset balance in each respective currency. These fields will be updated when you change any financial information. Click **Create schedules** before confirming the payment schedule.
+5. The initial recognition journal entry will record the ROU asset that uses the currency exchange rates listed on the lease. The journal entry will also include the values shown in the **Accounting currency initial right-of-use asset** and **Reporting currency initial right-of-use asset** fields.
 
 ## Subsequent measurement for foreign currency leases
 The depreciation schedule shows the expected depreciation expense amounts in the reporting currency and accounting currency in addition to the transaction currency.
