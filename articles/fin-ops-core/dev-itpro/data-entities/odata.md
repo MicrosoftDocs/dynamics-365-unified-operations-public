@@ -57,6 +57,9 @@ For more information about OData, see the following webpages.
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
+> [!NOTE]
+> It must be noted that OData actions added via extensions are currently not supported.
+
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
 
