@@ -5,7 +5,7 @@ title: Warranty agreements
 description: This topic explains warranty agreements in Asset Management.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
