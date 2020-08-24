@@ -57,6 +57,9 @@ For more information about OData, see the following webpages.
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
+> [!NOTE]
+> OData actions added via extensions are currently not supported.
+
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
 
@@ -331,7 +334,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in GitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
