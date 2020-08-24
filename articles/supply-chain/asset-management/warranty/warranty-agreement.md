@@ -47,12 +47,12 @@ A warranty agreement can include several agreement lines to cover the warranty f
 
 1. Select **Asset management** \> **Setup** \> **Assets** \> **Warranty**.
 2. Select **New** to create a product.
-3. In the **Warranty** field, enter a warranty ID.
+3. In the **Warranty** field, enter a warranty ID. 
 4. In the **Name** field, enter a description.
 
     On the **Details** FastTab, the **Assets** field shows the number of active assets that use the warranty agreement.
 
-5. On the **Hour warranty** and **Item warranty** FastTabs, follow these steps to add lines that should be included in a warranty agreement that pertains to hours or items:
+5. On the **Warranty lines** FastTabs, follow these steps to add lines that should be included in a warranty agreement.
 
     1. Select **Add line** to add a new condition to the warranty. A sequential line number is automatically entered in the **Line** field.
     2. In the **Period** field, select the type of warranty period.
