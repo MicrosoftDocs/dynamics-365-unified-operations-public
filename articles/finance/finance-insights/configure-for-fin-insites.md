@@ -143,16 +143,15 @@ A PowerShell script has been provided to easily set up the Azure resources descr
    > [!NOTE]
    > Be sure you are creating the following resources in the same Azure Active Directory as the CDS environment. It's not possible to use resources from another Azure Active Directory.  
 
-  - Create a new Storage Account using the following instructions: 
+   - Create a new Storage Account using the following instructions: 
   
    > [!NOTE] 
    > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
 
-   - Go to the storage account that you created
-   - Copy and save the storage account Name
-   - Go to **Access keys** from the menu on the left
-   - Copy and save the connection string for either Key1 or key2
-   - Copy and save the storage account name
+     - Go to the storage account that you created
+     - Go to **Access keys** from the menu on the left
+     - Copy and save the connection string for either Key1 or key2
+     - Copy and save the storage account name
 		 
    - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
    - Create and register an Azure Active directory application using the following instructions: 
