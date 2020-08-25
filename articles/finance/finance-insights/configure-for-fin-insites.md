@@ -67,9 +67,9 @@ Deploy the environments by completing the following steps.
      - Select the environment and click **Settings**.
      - Click **Resources > All Legacy Settings**.
      - Click **Settings** on the top bar and select **Customizations**.
-    - Click **Developer Resources**.
-    - Record the Instance Reference Information ID as the CDS Organization ID.
-    - From the address bar in the browser, record the CDS Organization URL, such as &lt;https:/org42b2b3d3.crm.dynamics.com&gt;
+     - Click **Developer Resources**.
+     - Record the Instance Reference Information ID as the CDS Organization ID.
+     - From the address bar in the browser, record the CDS Organization URL, such as &lt;https:/org42b2b3d3.crm.dynamics.com&gt;
 2. If you plan to use Cash flow forecasts, or Budget forecasts, also update the annotation limit for your organization to at least 50 MB. To do so, complete the following steps. 
    - Go to the [Power Apps](https://make.powerapps.com) portal. Select the environment you created above and click **Advanced settings**.
    - Click **Settings > Email Configuration**.
