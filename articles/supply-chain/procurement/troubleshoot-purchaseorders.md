@@ -43,9 +43,9 @@ Quantity is mandatory for posting invoices. So, if the full quantity on the line
 
 ## Changes to purchase orders are only allowed in state Draft when change management is activated
 
-This issue only occurs if the purchase order was in a 'Confirmed' state before requesting changes. If the user requested changes while the purchase order was in an "Approved" status, then he will get the expected results. 
+This issue only occurs if the purchase order was in a 'Confirmed' state before requesting changes. If the user requested changes while the purchase order was in an "Approved" status, then the workflow can be processed successfully. 
 
-###Issue repro steps
+_*Issue repro steps*
 1. An active Purchase order workflow and a purchase order line workflow is created, activated.
 2. Change management ie anbled for purchase orders. In Procurement and Sourcing -> Setup -> Procurement and Sourcing parameter, and turn this to Yes.
 3. Navigate to Accounts Payable > All purchase orders > purchase order.
@@ -60,16 +60,16 @@ This issue only occurs if the purchase order was in a 'Confirmed' state before r
 31.	Check workflow PO order line history.
 32.	Getting the workflow error.
  
-###Result
+*Result*
 An error occurs in the workflow when a purchase order is resubmitted after a request change.
 
 Stopped (error): X++ Exception: Changes to purchase order PO0000569 are only allowed in state Draft when change management is activated
  at SysWorkflowParticipantProvider-resolve
 SysWorkflowParticipantProvider-resolveParticipants
 SysWorkflowServiceProvider-resolveParticipant
-SysWorkflowQueue-resume
+SysWorkflowQueue-resume_
 
-###Fix
+*Fix*
 This is a known issue that will be resolved with this [KB](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
 ## Updating Purchase Order in Received State creates Error
