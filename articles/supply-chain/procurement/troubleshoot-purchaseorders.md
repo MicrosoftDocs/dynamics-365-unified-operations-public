@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot Purchase orders
-description: This topic describes how to fix issues that you might encounter while working with Planning Optimization.
+description: This topic describes how to fix issues that you might encounter while working with Purchase Orders.
 author: SmithaNataraj
 manager: tfehr
 ms.date: 05/07/2020
@@ -26,12 +26,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-5-7
-ms.dyn365.ops.version: AX 10.0.9
+ms.dyn365.ops.version: AX 10.0.14
 
 ---
 # Troubleshoot Purchase Orders 
 
-This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
+This topic describes how to fix common issues that you might encounter while working with Purchase Orders.
 
 ## Unable to link a Purchase Agreement to a Purchase Order Line after creation
 
@@ -39,11 +39,37 @@ A purchase agreement has to be associated to the purchase order at the time of c
 
 ## Unable to post more than one invoice for a purchase order line with category based items
 
-Quantity is mandatory for posting invoices. So, if the full quantity on the line has been invoiced but only a partial amount and the expectation is to invoice the rest of the amount in another invoice, then that is not possible. 
+Quantity is mandatory for posting invoices. So, if the full quantity on the line has been invoiced but only a partial amount and the expectation is to invoice the rest of the amount in another invoice, then that is not possible.
 
 ## Changes to purchase orders are only allowed in state Draft when change management is activated
 
-When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+This issue only occurs if the purchase order was in a 'Confirmed' state before requesting changes. If the user requested changes while the purchase order was in an "Approved" status, then he will get the expected results. 
+
+Issue repro steps:
+1. An active Purchase order workflow and a purchase order line workflow is created, activated.
+2. Change management ie anbled for purchase orders. In Procurement and Sourcing -> Setup -> Procurement and Sourcing parameter, and turn this to Yes.
+3. Navigate to Accounts Payable > All purchase orders > purchase order.
+4. Create a new purchase order with a purchase order line.
+5. Submit the workflow.
+6. Approve the workflow from the line level, so that it is approved and completed. Purchase order is also approved at this point.
+7. Confirm the purchase order.
+8. Click on request change.
+9. Click on update line and click on delivery remainder. 
+10. Change the delivery remainder.
+30.	Submit it back to the workflow.
+31.	Check workflow PO order line history.
+32.	Getting the workflow error.
+ 
+Actual Results:
+An error occurs in the workflow when a purchase order is resubmitted after a request change.
+
+Stopped (error): X++ Exception: Changes to purchase order PO0000569 are only allowed in state Draft when change management is activated
+ at SysWorkflowParticipantProvider-resolve
+SysWorkflowParticipantProvider-resolveParticipants
+SysWorkflowServiceProvider-resolveParticipant
+SysWorkflowQueue-resume
+
+This is a known issue that will be resolved with this [KB](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
 ## Updating Purchase Order in Received State creates Error
 
