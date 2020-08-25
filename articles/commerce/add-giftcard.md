@@ -37,7 +37,7 @@ This topic covers gift card modules and describes how to add them to site pages 
 
 ## Overview
 
-Gift cards are a common form of payment, and the gift card module can be used in a checkout module to accept gift cards. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information on support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md)
+Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information on support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md)
 
 There are two gift card modules available:
 
