@@ -60,7 +60,7 @@ The following illustration shows the class structure of the extension.
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
 2. Create a new C# class library project that uses Microsoft .NET Framework version 4.6.1, or use any of the Retail Server samples in the Retail SDK as a template.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
-4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
+4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
 5. Create a new controller class and extend it from **IController**. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes like **CustomerController** and **ProductController**. Extension classes must extend only the **IController** class.
 6. Add the **RoutePrefix** attribute on the controller class (Controller class name).
 
@@ -245,7 +245,7 @@ The Retail Server APIs support different authorization roles. Access to the cont
 
     You don't need to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you are using Retail SDK version 10.0.10 or earlier.
 
-    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
 
     The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
 
