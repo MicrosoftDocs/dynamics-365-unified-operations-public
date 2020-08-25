@@ -62,23 +62,34 @@ The following illustration shows the class structure of the extension.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
 4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
 5. Create a new controller class and extend it from **IController**. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes like **CustomerController** and **ProductController**. Extension classes must extend only the **IController** class.
-6. Add the **RoutePrefix** attribute on the controller class to expose the controller class.
+6. Add the **RoutePrefix** attribute on the controller class (Controller class name).
 
     ```csharp
     [RoutePrefix("SimpleExtension")]  
     ```
 
-7. The **BindEntity** attribute is required on a controller class if you are creating a new controller and exposing an entity.
+7. Add the **BindEntity** attribute. This is required on a controller class if you are creating a new controller and exposing an entity.
 
-    The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+```csharp
+    [BindEntity(typeof(SimpleEntity))]
+```
 
-    ```csharp
+> [!NOTE]
+> Step 6 and 7 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
+
+The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+
+### Sample code for a controller class bounded to a custom entity
+
+> [!NOTE]
+> Extension code should not bound the existing OOB entity, such as Customer or Product.
+
+```csharp
     /// <summary>
         /// New extended controller.
         /// </summary>
         [RoutePrefix("SimpleExtension")]  
         [BindEntity(typeof(SimpleEntity))]
-
         public class SimpleExtensionController : IController
         {
             /// <summary>
@@ -126,11 +137,51 @@ The following illustration shows the class structure of the extension.
                 return resp.SimpleEntityObj;
             }
         }
-    ```
+```
 
-    The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are shown in the following code example.
+### Sample code for a controller class not bounded to a custom entity
 
-    ```csharp
+```csharp
+namespace Contoso.UnboundController.Sample
+{
+    using System.Threading.Tasks;
+    using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+    using Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts;
+
+    /// <summary>
+    /// An extension unbounded controller sample.
+    /// </summary>
+    public class UnboundController : IController
+    {
+        /// <summary>
+        /// A simple GET endpoint to demonstrate GET endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpGet]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Application, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee, CommerceRoles.Storefront)]
+        public Task<bool> SampleGet()
+        {
+            return Task.FromResult(true);
+        }
+
+        /// <summary>
+        /// A simple POST endpoint to demonstrate POST endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpPost]
+        [Authorization(CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public Task<bool> SamplePost()
+        {
+            return Task.FromResult(true);
+        }
+    }
+}
+
+```
+
+The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are shown in the following code example.
+
+```csharp
     // Summary:
     // Represents the type of logon type.
     [DataContract]
@@ -172,18 +223,18 @@ The following illustration shows the class structure of the extension.
         //     values.
         public static readonly string[] All;
     }
-    ```
+ ```
 
 8. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
 9. Update the Commerce Scale Unit **web.config** file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
-    ```xml
+```xml
     <extensionComposition>
     <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
     If you host in an application with a bin folder, this is not required. -->
     <add source="assembly" value="SimpleExtensionSample" >
     </extensionComposition>
-    ```
+```
 
 10. In Microsoft Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
 11. To verify that the extension loaded successfully, you can browse the Retail Server metadata. Confirm that your entities and methods appear in the list. To browse the metadata, open a URL in the following format in a web browser:
@@ -198,14 +249,14 @@ The following illustration shows the class structure of the extension.
 
     The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
 
-    ```xml
+```xml
     <?xml version="1.0" encoding="utf-8"?> 
     <retai1ProxyExtensions> 
         <composition> 
             <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
         </composition> 
     </retai1ProxyExtensions> 
-    ```
+```
 
 ## Generate the Typescript proxy for POS
 
