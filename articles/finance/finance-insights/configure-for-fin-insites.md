@@ -128,12 +128,12 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 | AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
 If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
-- On your local machine: Click on the **Start** menu and search for powershell.
-- Right-click **Windows Powershell** and choose **Run as administrator**.
-- Run the following command to install “AzureAD” module
-     - Install-Module -Name AzureAD
-     - If NuGet provider is required to continue, select “Y” to install it.
-     - If the **Untrusted repository** message appears, select “Y” to continue.
+1. On your local machine: Click on the **Start** menu and search for powershell.
+2. Right-click **Windows Powershell** and choose **Run as administrator**.
+3. Run the following command to install “AzureAD” module
+   - Install-Module -Name AzureAD
+   - If NuGet provider is required to continue, select “Y” to install it.
+   - If the **Untrusted repository** message appears, select “Y” to continue.
    - For each application that must be added, run the following commands to add the application to the Azure Active Directory. 
      - Login as the Azure Active Directory administrator when prompted
      - Connect-AzureAD 
@@ -143,29 +143,34 @@ If you are unable to find any of the preceding applications, try the following i
    > [!NOTE]
    > Be sure you are creating the following resources in the same Azure Active Directory as the CDS environment. It's not possible to use resources from another Azure Active Directory.  
 
-   - Create a new Storage Account using the following instructions:
+1. Create a new Storage Account using the following instructions:
    - In the Azure portal, create a new storage account.
-
-In the Create storage account dialog box, provide values for the following parameter fields:
-
-Location: Select the data center where your environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
-Performance: We recommend that you select Standard.
-Account kind: You must select StorageV2.
-In the Advanced options dialog box, you will see the Data Lake storage Gen2 option. Select Enable under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows.
-
-Select Review and create. When the deployment is completed, the new resource will be shown in the Azure portal.
-   
+   - In the **Create storage account** dialog box, provide values for the following parameter fields:
+     - **Location**: Select the data center where your environment is located.
+     - **Performance**: We recommend that you select **Standard**.
+     - **Account kind**: You must select **StorageV2**.
+     - In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows.
+     - Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
    - Go to the storage account that you created
      - Go to **Access keys** from the menu on the left
      - Copy and save the connection string for either Key1 or key2
      - Copy and save the storage account name
 		 
-   - Create a new Key Vault using the following instructions. These instructions are also listed in the Create a key vault section of the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-a-key-vault-and-a-secret) topic.
-   - Create and register an Azure Active directory application using the following instructions: 
-     - In the Azure portal, select Azure Active Directory, and then select App registrations.
-     - Select New application registration, and enter the following information:
-     - **Name**: Enter the name of the app.
-     - **Application type**: Select Web API.
+ 2. Create a new **Key Vault** using the following instructions:
+   - In the Azure portal, create a new Key Vault.
+   - In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
+   - After Key Vault is created, select it in the list, and then select **Secrets**.
+   - Select **Generate/Import**.
+   - In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+   - Enter a name for the secret. Make a note of the name, because you will have to provide it later.
+   - In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
+   - Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
+   
+ 3. Create and register an Azure Active directory application using the following instructions: 
+    - In the Azure portal, select Azure Active Directory, and then select App registrations.
+    - Select New application registration, and enter the following information:
+    - **Name**: Enter the name of the app.
+    - **Application type**: Select Web API.
  - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
  - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
  - Copy and save the application ID.
