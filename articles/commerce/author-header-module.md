@@ -58,7 +58,7 @@ The **My account links** property can be used to define account pages that the s
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. For more information, see [Navigation menu module](navigation-menu-module.md).
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. For more information, see [Navigation menu module](nav-menu-module.md).
 
 - **Search** – The search module lets users enter search terms to search for products. The URL of the default search page and the search query parameters must be provided at **Site Settings \> Extensions**. The search module has properties that let you suppress the search button or label as you require. The search module also supports auto-suggest options, such as product, keyword, and category search results.
 
@@ -107,7 +107,7 @@ To help guarantee that a header appears on every page, follow these steps on eve
 
 [Promo banner module](add-alert.md)
 
-[Navigation Menu module](navigation-menu-module.md) 
+[Navigation Menu module](nav-menu-module.md) 
 
 [Cookie consent](cookie-consent-module.md)
 
