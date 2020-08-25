@@ -116,21 +116,21 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 ### Manual Setup
 
-1. Add Applications to the Azure Active Directory Tenant
-   - Go to Azure Active Directory
-   - Go to Manage > Enterprise Applications 
-   - Search for the following applications, using App ID (see steps below if you cannot find those applications)
+#### Add Applications to the Azure Active Directory Tenant
+1. Go to Azure Active Directory
+2. Go to Manage > Enterprise Applications
+3. Search for the following applications, using App ID (see steps below if you cannot find those applications)
  
-   | Application                                 | App ID                                  |
-   |---------------------------------------------|-----------------------------------------|
-   | Microsoft Dynamics ERP Microservices        | 0cdb527f-a8d1-4bf8-9436-b352c68682b2    |
-   | Microsoft Dynamics ERP Microservices CDS    | 703e2651-d3fc-48f5-942c-74274233dba8    |
-   | AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
+| Application                                 | App ID                                  |
+|---------------------------------------------|-----------------------------------------|
+| Microsoft Dynamics ERP Microservices        | 0cdb527f-a8d1-4bf8-9436-b352c68682b2    |
+| Microsoft Dynamics ERP Microservices CDS    | 703e2651-d3fc-48f5-942c-74274233dba8    |
+| AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
-   If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
-   - On your local machine: Click on the **Start** menu and search for powershell.
-   - Right-click **Windows Powershell** and choose **Run as administrator**.
-   - Run the following command to install “AzureAD” module
+If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
+- On your local machine: Click on the **Start** menu and search for powershell.
+- Right-click **Windows Powershell** and choose **Run as administrator**.
+- Run the following command to install “AzureAD” module
      - Install-Module -Name AzureAD
      - If NuGet provider is required to continue, select “Y” to install it.
      - If the **Untrusted repository** message appears, select “Y” to continue.
@@ -139,16 +139,23 @@ A PowerShell script has been provided to easily set up the Azure resources descr
      - Connect-AzureAD 
      - New-AzureADServicePrincipal –AppId <AppId>
 
-2. Create an Azure resource.
+#### Create an Azure resources.
    > [!NOTE]
    > Be sure you are creating the following resources in the same Azure Active Directory as the CDS environment. It's not possible to use resources from another Azure Active Directory.  
 
-   - Create a new Storage Account using the following instructions: 
-  
-   > [!NOTE] 
-   > You must enable hierarchical namespaces when creating the storage account. See the Create storage accounts section in the [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#create-storage-accounts) topic for more information.
+   - Create a new Storage Account using the following instructions:
+   - In the Azure portal, create a new storage account.
 
-     - Go to the storage account that you created
+In the Create storage account dialog box, provide values for the following parameter fields:
+
+Location: Select the data center where your environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
+Performance: We recommend that you select Standard.
+Account kind: You must select StorageV2.
+In the Advanced options dialog box, you will see the Data Lake storage Gen2 option. Select Enable under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows.
+
+Select Review and create. When the deployment is completed, the new resource will be shown in the Azure portal.
+   
+   - Go to the storage account that you created
      - Go to **Access keys** from the menu on the left
      - Copy and save the connection string for either Key1 or key2
      - Copy and save the storage account name
