@@ -73,7 +73,8 @@ To create a header fragment, follow these steps.
 1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill Screen**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Cookie consent**, **Header**, and **Promo banner** modules, and then select **OK**.
-1. In the properties pane of the **Promo banner** module, add and configure text and links for the promotional content.
+1. In the properties pane of the **Promo banner** module, select **+ Add Message**, and then select **Message**.
+1. In the **Message** dialog box, add text and links for the promotional content, and then select **OK**.
 1. In the properties pane of the **Cookie consent** module, add and configure text and a link to the site privacy page.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Navigation menu** module, and then select **OK**.
