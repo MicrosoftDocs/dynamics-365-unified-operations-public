@@ -69,8 +69,6 @@ In Commerce site builder under **Site Settings \> Extensions**, there is a gift 
 
 For instructions on how to add a gift card module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
 
-A gift card balance check module can be added to any page and is used to check the balance on a gift card.
-
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
