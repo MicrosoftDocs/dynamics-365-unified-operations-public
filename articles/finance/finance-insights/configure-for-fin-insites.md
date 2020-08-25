@@ -55,7 +55,7 @@ Deploy the environments by completing the following steps.
    
       [![Power Platform Admin Center](./media/power-pltfrm-admin-center.png)](power-pltfrm-admin-center.png)
    
-2. Click +New environment
+   - Click +New environment
    - Select a Sandbox for the environment Type.
    - Set **Create Database** to **Yes**. 
    - Click **Next**.
@@ -70,7 +70,7 @@ Deploy the environments by completing the following steps.
     - Click **Developer Resources**.
     - Record the Instance Reference Information ID as the CDS Organization ID.
     - From the address bar in the browser, record the CDS Organization URL, such as &lt;https:/org42b2b3d3.crm.dynamics.com&gt;
-    - Record the CDS Directory ID. It is the same ID as your user’s Azure Active Directory ID. 
+2. Record the CDS Directory ID. It is the same ID as your user’s Azure Active Directory ID. 
     - Go to the [Azure portal](https://portal.azure.com). 
     - Log in using the user ID that was used to create the CDS environment. 
     - Copy the Tenant ID and record it as the CDS Dicretory ID. 
