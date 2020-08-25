@@ -40,7 +40,9 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** October 2020
 - **Auto-update:** November 2020
 
-This release includes an updated platform, but doesn't include any new features specific to Supply Chain Management. For more information about upcoming features, see the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.
+## Features included in this release
+
+This release includes an updated platform and general improvements, but doesn't include any new features specific to Supply Chain Management. For more information about upcoming features, see the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.
 
 ## Additional resources
 
