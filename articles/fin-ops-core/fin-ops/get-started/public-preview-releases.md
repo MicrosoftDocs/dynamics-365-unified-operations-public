@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 11
 
 Microsoft is committed to delivering predictable service updates. These service updates will be made generally available for self-deployment approximately 2 weeks prior to Microsoft automatically applying the update. 
 
-Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year. Customers can choose to pause up to 3 consecutive updates at a time. Pausing a service update can apply to the designated UAT sandbox, production, or both environments. After the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in LCS. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
+Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year. Customers can choose to pause up to 3 consecutive updates at a time. Pausing a service update can apply to the designated user acceptance testing (UAT) sandbox, production, or both environments. After the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in Lifecycle Services (LCS). To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
 
 > [!NOTE] 
 > Service updates will not be provided during the months of March, June, September, and December. 
@@ -54,7 +54,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.12                   | May 29, 2020                | July 22, 2020                     | August 1, 2020            | October 23, 2020   |
 | 10.0.11                   | April 17, 2020              | May 29, 2020                      | July 1, 2020              | September 11, 2020 |
 | 10.0.10                   | March 6, 2020               | April 10, 2020                    | May 1, 2020               | July 3, 2020       |
-| 10.0.9/Platform Update 33 | February 1, 2020            | March 13, 2020                    | April 1, 2020             | June 5, 2020       |
+| 10.0.9/Platform update 33 | February 1, 2020            | March 13, 2020                    | April 1, 2020             | June 5, 2020       |
 | 10.0.8/Platform update 32 | November 29, 2019           | January 17, 2020                  | February 1, 2020          | May 1, 2020        |
 | 10.0.7/Platform update 31 | October 25, 2019            | November 29, 2019                 | January 1, 2020           | March 9, 2020      |
 | 10.0.6/Platform update 30 | September 6, 2019           | October 11, 2019                  | November 1, 2019          | January 13, 2020   |
@@ -67,14 +67,14 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
-Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. Once your nomination has been accepted, join the program.
+Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. After your nomination has been accepted, join the program.
 
 Public previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 
 ## Service update overview
-Service updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
+Service updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression suite automation tool (RSAT) for regression testing.
 
-You are in control and manage how your organization receives these updates. For example, you can sign up for the First Release program so that your organization receives updates first. You can apply the updates to any of your environments manually (self-update) or remain on the default release schedule and receive the auto-updates when you schedule them using Lifecycle Services (LCS). This topic explains the different release options and how you can use them for your organization.
+You are in control and manage how your organization receives these updates. For example, you can sign up for the First Release program so that your organization receives updates first. You can apply the updates to any of your environments manually (self-update) or remain on the default release schedule and receive the auto-updates when you schedule them using LCS.
 
 Service updates contain both application and platform changes that are critical improvements to the service, including regulatory updates. 
 
@@ -86,4 +86,4 @@ Preview Early Access Program (PEAP) is available to partners, customers, and ISV
 
 The First Release program is open to all customers. Customers who join the First Release program will be the first, select group of customers to take the service update all the way to production.  Microsoft will manage the deployment of this service update to a UAT sandbox and then 7 days later will auto-deploy the update to production. Customers participating in this program have the additional benefit of having dedicated Microsoft engineers closely monitoring the environments for any issues after updates have been applied. To join First Release, sign up via the [Insider Program](https://experience.dynamics.com/).  
 
-The service update will be made generally available using the action center in LCS.  When the service update is available, it can be manually applied to all environments including production.  If the service update has not been applied to the designated sandbox or production environment, Microsoft will auto-apply the update based on the “Update settings” for the LCS project. To learn more, see [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates).
+The service update will be made generally available using the action center in LCS.  When the service update is available, it can be manually applied to all environments including production.  If the service update has not been applied to the designated sandbox or production environment, Microsoft will auto-apply the update based on the Update settings for the LCS project. To learn more, see [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates).
