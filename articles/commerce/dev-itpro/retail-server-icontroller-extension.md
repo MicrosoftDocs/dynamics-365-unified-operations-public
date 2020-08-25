@@ -245,7 +245,7 @@ The Retail Server APIs support different authorization roles. Access to the cont
 
     You don't need to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you are using Retail SDK version 10.0.10 or earlier.
 
-    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include the new library. This extension must only generate the Typescript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
 
     The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
 
