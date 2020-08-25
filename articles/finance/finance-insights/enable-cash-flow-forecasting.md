@@ -42,7 +42,7 @@ Complete the following steps to enable the Cash flow forecasts capability within
 2. Go to the **Feature management** workspace and complete the following steps. 
    - Click 'Check for updates'.
    - Turn ON following features:
-     - (Preview) New grid control
+     - New grid control
      - (Preview) Grouping in grids
      - Customer payment predictions (preview)
      - Cash flow forecasts (preview)
