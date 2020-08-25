@@ -63,7 +63,7 @@ The following table shows the current reference list of cookies placed by Dynami
 
 ## Site user cookie consent on an E-commerce site 
 
-If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is received. This consent must be given before the feature or module using a non-essential cookie can be rendered on a site page.
+If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
 
 ## Additional resources
 
