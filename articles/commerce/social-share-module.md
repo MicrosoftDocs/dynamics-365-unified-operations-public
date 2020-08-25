@@ -64,13 +64,20 @@ The following illustration shows an example of a social share module used on a p
 
 ## Add a social share module to a buy box module
 
-The social share module can be added to the buy box module within the **Social share slot**.  
+To add a social share module to a buy box module, follow these steps.
 
-1. In Fabrikam, open the the **DefaultPDP** page which is the product details page 
-1. To the Buy box module, **Social share slot** add the **Social share module**. Set caption if needed. Set Orientation=Horizontal
-1. To the **Social share** add a **Social share item** module.
-1. On the **Social share item** module, select Social Media = Facebook. Set Icon to the Facebook icon.
-1. Conitnue adding more **Social share item**s.
+1. In the Fabrikam site, select **Pages**, and then select the **DefaultPDP** page to open the product details page. 
+1. In the **Buybox (required)** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Social Share** module, and then select **OK**.
+1. In the **Social Share** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **SocialShare** module, and then select **OK**.
+1. In the properties pane of the **SocialShare** module, under **Orientation**, select **Horizontal**. Add a caption as needed.
+1. In the **SocialShare** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **SocialShareItem** module, and then select **OK**.
+1. In the properties pane of the **SocialShareItem** module, under **Social Media**, select **Facebook**.
+1. In the properties pane of the **SocialShareItem** module, under **Icon**, select **+ Add an image**.
+1. In the **Media Picker** dialog box, select the Facebook logo image, and then select **OK**. If no Facebook logo image is present, select **Upload new media item** to upload one.
+1. Add and configure additional **SocialShareItem** modules as needed.
 1. Select **Save**, and then select **Preview** to preview the page. The page will show the social share module.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
