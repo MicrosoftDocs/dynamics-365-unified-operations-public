@@ -155,8 +155,8 @@ If you are unable to find any of the preceding applications, try the following i
      - Go to **Access keys** from the menu on the left
      - Copy and save the connection string for either Key1 or key2
      - Copy and save the storage account name
-		 
- 2. Create a new **Key Vault** using the following instructions:
+
+2. Create a new **Key Vault** using the following instructions:
    - In the Azure portal, create a new Key Vault.
    - In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
    - After Key Vault is created, select it in the list, and then select **Secrets**.
@@ -169,29 +169,29 @@ If you are unable to find any of the preceding applications, try the following i
  3. Create and register an Azure Active directory application using the following instructions: 
     - In the Azure portal, select Azure Active Directory, and then select App registrations.
     - Select New application registration, and enter the following information:
-    - **Name**: Enter the name of the app.
-    - **Application type**: Select Web API.
- - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
- - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
- - Copy and save the application ID.
- - Go to **API permissions**.
- - Then select ‘+ Add a permission’.
- - Select **Azure Key vault**.
- - After you select delegated permissions, select **user_impersonation**.
+      - **Name**: Enter the name of the app.
+      - **Application type**: Select Web API.
+      - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
+      - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
+    - Go to **API permissions**.
+      - Then select ‘+ Add a permission’.
+      - Select **Azure Key vault**.
+      - After you select delegated permissions, select **user_impersonation**.
+      - Click **Add permissions**. The result will look similar to the following illustration. 
+    - Select **Certificates & secrets** on the menu for the app. Create Key Vault Secrets by completing the following steps.
+      - Select ‘+ New client secret’.
+      - In the Key Description field, enter a name.
+      - Select a duration, and then select Add.
+      - A secret is generated in the Value field.
+      - Copy and save the Secrete value
 
-- Click **Add permissions**. The result will look similar to the following illustration. 
-
-[![Application client ID](./media/application-client-id.png)](./media/application-client-id.png)
-
-- Select **Certificates & secrets** on the menu for the app.
-
-- Create Key Vault Secrets by completing the following steps.
-  - Go to the Key Vault created previously and select Secrets.
-  - For each secrete name in the table below repeat the following steps:
-  - Select Generate/Import.
-    - In the Create a secret dialog box, in the Upload options field, select Manual.
-    - Create the secret name and value from the table below.
-    - Select Enabled, and then select Create. The secret is created and added to Key Vault
+4. Create Key Vault Secrets using the following instructions:
+    - Go to the Key Vault created previously and select Secrets.
+    - For each secrete name in the table below repeat the following steps:
+      - Select Generate/Import.
+      - In the Create a secret dialog box, in the Upload options field, select Manual.
+      - Create the secret name and value from the table below.
+      - Select Enabled, and then select Create. The secret is created and added to Key Vault
 
     |     Secret   Name                        |     Secret   value                                                                 |
     |------------------------------------------|------------------------------------------------------------------------------------|
@@ -200,36 +200,37 @@ If you are unable to find any of the preceding applications, try the following i
     |     storage-account-name                 |     The   name of the storage account created previously, such as, storageaccount1     |
     |     storage-account-connection-string    |     The   connection string copied from Access Keys of the storage account         |
 
-3. Authorize the application to access the key vault.
-- In the Azure portal, open the **Key Vault** that you created previously. 
-- Select the access policies. To access the list of applications in the table below complete the following steps.
-  - Click **+ Add Access Policy** to create a new access policy.
-  - In the **Secret permissions** field, select the permissions from the following table.
-  - In the **Select principal** field, search for the application display name from the following table. 
-  - Click **Add**.
-  - Click **Save**.
+3. Authorize the application to access the key vault using the following instructions:
+    - In the Azure portal, open the **Key Vault** that you created previously. 
+    - Select the access policies. 
+    - To access the list of applications in the table below complete the following steps.
+      - Click **+ Add Access Policy** to create a new access policy.
+      - In the **Secret permissions** field, select the permissions from the following table.
+      - In the **Select principal** field, search for the application display name from the following table. 
+      - Click **Select**.
+      - Click **Add**.
+      - Click **Save**.
   
     |     Application                                                      |     Permissions    |
     |----------------------------------------------------------------------|--------------------|
-    |     Display name of the new application you created from step (c)    |     Get, List      |
+    |     Display name of the new application you created                  |     Get, List      |
     |     Microsoft Dynamics ERP Microservices                             |     Get, List      |
 
-4. Assign roles to access the storage account. 
-- In the Axure portal, open the storage account that you created previously. Select **Access Control (IAM)** and select **Role Assignments**. 
-  - Click **+ Add, Add Role Assignment**.
-  - Select the role from the following table.
-  - Keep **Assign access to** as **Azure AD user, group, or service principal**.
-  - In the **Select** field, enter the application from the following table.
-  - Click **Save**.
-  
- 
-    |     Application                           |     Role                             |
-    |-------------------------------------------|--------------------------------------|
-    |     Your application   from step 2 (b)    |     Owner                            |
-    |     Your application   from step 2 (b)    |     Contributor                      |
-    |     Your application   from step 2 (b)    |     Storage Account   Contributor    |
-    |     Your application   from step 2 (b)    |     Storage Blob Data   Owner        |
-    |     AI Builder   Authorization Service    |     Storage Blob Data   Reader       | 
+4. Assign roles to access the storage account using the following instructions:
+    - In the Azure portal, open the storage account that you created previously. Select **Access Control (IAM)** and select **Role Assignments**. 
+    - Click **+ Add, Add Role Assignment**.
+      - Select the role from the following table.
+      - Keep **Assign access to** as **Azure AD user, group, or service principal**.
+      - In the **Select** field, enter the application from the following table.
+      - Click **Save**.
+   
+    |     Application                                         |     Role                             |
+    |---------------------------------------------------------|--------------------------------------|
+    |     Display name of the new application you created     |     Owner                            |
+    |     Display name of the new application you created     |     Contributor                      |
+    |     Display name of the new application you created     |     Storage Account   Contributor    |
+    |     Display name of the new application you created     |     Storage Blob Data   Owner        |
+    |     AI Builder Authorization Service                    |     Storage Blob Data   Reader       | 
  
   
   ## Configure entity store
