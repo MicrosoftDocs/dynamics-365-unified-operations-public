@@ -39,13 +39,13 @@ This topic covers social share modules and describes how to add them to site pag
 
 ## Overview
 
-Social share modules allow users to share e-Commerce site page URLs on social media such as Facebook, Twitter, Pinterest, and LinkedIn. Site page URLs can also be shared via email. Social share modules are commonly used on product details pages (PDPs) to help users share product information. This module was enabled as of Commerce release 10.0.13.
+Social share modules allow users to share e-Commerce site page URLs on social media such as Facebook, Twitter, Pinterest, and LinkedIn. Site page URLs can also be shared via email. Social share modules are commonly used on product details pages (PDPs) to help users share product information.
 
-Each social share module is a container for social share item modules. Each social share item module can be configured to point to a specific social media site. Integration with Facebook, Twitter, Pinterest, Linkedin, and email is supported out of the box. When a site user interacts with a social media icon, an HTML iframe is launched for the respective social media site. Within the iframe, the user can sign in and post the page content that they were viewing.
+Each social share module is a container for social share item modules. Each social share item module can be configured to point to a specific social media site. Integration with Facebook, Twitter, Pinterest, Linkedin, and email is supported out of the box. When a site user selects a social media symbol, an HTML iframe is launched for the respective social media site. Within the iframe, the user can sign in and post the page content that they were viewing.
 
-Each social media platform may track some cookies, so this module requires site users to accept the cookie consent message. When cookie consent is not accepted, the module will be hidden on the page. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
+Each social media platform may track some cookies, so this module requires site users to accept the cookie consent notification message. When cookie consent is not accepted, the module will be hidden on the page. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
-The following illustration shows an example of a social share module used on a product details page.
+The following illustration highlights an example of a social share module used on a product details page.
 
 ![Example of a social share module](./media/ecommerce-socialshare.png)
 
@@ -59,8 +59,8 @@ The following illustration shows an example of a social share module used on a p
 ## Social share item module properties
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
-| Social media              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | A dropdown with a list of social media platforms to chose from|
-| Icon |Image    | This will be the icon that will be shown for the respective social media. As a best practice, refer to the social media platform's SDK for the recommended icon for each platform |
+| Social media              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | A drop down menu with a list of social media platforms to choose from. |
+| Icon |Image    | This will be the image that will be shown for the respective social media. As a best practice, refer to the social media platform's SDK for the recommended image to use for each platform. |
 
 ## Add a social share module to a buy box module
 
