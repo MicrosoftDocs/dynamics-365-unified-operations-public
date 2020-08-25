@@ -70,15 +70,7 @@ Deploy the environments by completing the following steps.
     - Click **Developer Resources**.
     - Record the Instance Reference Information ID as the CDS Organization ID.
     - From the address bar in the browser, record the CDS Organization URL, such as &lt;https:/org42b2b3d3.crm.dynamics.com&gt;
-2. Record the CDS Directory ID. It is the same ID as your user’s Azure Active Directory ID. 
-    - Go to the [Azure portal](https://portal.azure.com). 
-    - Log in using the user ID that was used to create the CDS environment. 
-    - Copy the Tenant ID and record it as the CDS Dicretory ID. 
-  - Record the user's Azure Active Directory object ID.
-   - Go to Users and search for the user by email.
-   - Click the user's name. 
-   - Copy the Object ID as the CDS Initial User Object ID. 
-3. If you plan to use Cash flow forecasts, or Budget forecasts, also update the annotation limit for your organization to at least 50 MB. To do so, complete the following steps. 
+2. If you plan to use Cash flow forecasts, or Budget forecasts, also update the annotation limit for your organization to at least 50 MB. To do so, complete the following steps. 
    - Go to the [Power Apps](https://make.powerapps.com) portal. Select the environment you created above and click **Advanced settings**.
    - Click **Settings > Email Configuration**.
    - Change the **Maximum file size** (in kilobytes) to 51,200.
@@ -87,9 +79,21 @@ Deploy the environments by completing the following steps.
 
 ## Configuring Azure setup
 
-A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual Setup section below. 
+### Record the CDS Directory ID and user's Azure Active Directory object ID
 
-## Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
+1. Record CDS Directory ID
+   - Go to the [Azure portal](https://portal.azure.com).
+   - Log in using the user ID that was used to create the CDS environment.
+   - Copy the Tenant ID and record it as the CDS Dicretory ID.
+2. Record the user's Azure Active Directory object ID.
+   - Go to the [Azure portal](https://portal.azure.com).
+   - Go to Users and search for the user by email.
+   - Click the user's name.
+   - Copy the Object ID as the CDS Initial User Object ID. 
+
+### Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
+
+A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual Setup section below. 
 
 A PowerShell script has been provided to easily set up the Azure resources described in [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). The steps for configuring Azure using the script are as follows. You will need rights to create an Azure resource group, Azure resources, and an AAD application. See [Check Azure AD permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app) for details on required permissions.
 
@@ -109,7 +113,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
 
-## Manual Setup
+### Manual Setup
 
 1. Add Applications to the Azure Active Directory Tenant
   - Go to Azure Active Directory
