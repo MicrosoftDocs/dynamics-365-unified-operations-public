@@ -70,17 +70,19 @@ To create a header fragment, follow these steps.
 
 1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
-1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill screen**.
+1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill Screen**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Promo banner** and **Cookie consent** modules, and then select **OK**.
-1. In the **Promo banner** module, configure with text and links for the promotional content
-1. To the **Default container** add **Cookie consent** modules, and then select **OK**.
-1. In the **Cookie consent** module, configure with the text and link to the site privacy page.
-1.To the **Default container** add **Header** modules, and then select **OK**.
+1. In the **Add Module** dialog box, select the **Cookie consent**, **Header**, and **Promo banner** modules, and then select **OK**.
+1. In the properties pane of the **Promo banner** module, add and configure text and links for the promotional content.
+1. In the properties pane of the **Cookie consent** module, add and configure text and a link to the site privacy page.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Navigation menu** module, and then select **OK**.
-1. In the property pane for the navigation menu module, configure the properties as needed. Choose Source= Retail and Static menu items.
-1. Add Static Menu items say "Contact" with a relative link to a Contact page on the site.
+1. In the property pane for the navigation menu module, under **Source for navigation menu**, select **Retail Server**.
+1. In the property pane for the navigation menu module, under **Static menu items**, select **+ Add Menu item**, and then select **Menu item**. 
+1. In the **Menu item** dialog box, under **Menu Item Text** enter "Contact."
+1. In the **Menu item** dialog box, under **Menu Item Link target** select **+ Add a link**.
+1. In the **Add a link** dialog box, select the URL for the site's "Contact" page, and then select **OK**.  
+1. In the **Menu item** dialog box, select **OK**.
 1. In the **Search** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Search** module, and then select **OK**.
 1. In the property pane for the search module, configure the properties as needed.
