@@ -119,7 +119,7 @@ The below is an example script injector definition file
 }
 ```
 
-## Modifying the script injector view file
+#### Modifying the script injector view file
 You can now change the my-script-injector.tsx and my-script-injector.view.tsxAnalytics.tsx React and view files as you require. 
 
 To create a custom script injector we can make use of **HtmlHeadInclude**, a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. The usage is simple, you can add whatever you want in your view file between the <HtmlHeadInclude> tags as shown in the example below.
