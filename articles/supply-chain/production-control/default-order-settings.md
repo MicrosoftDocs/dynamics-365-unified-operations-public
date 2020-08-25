@@ -5,7 +5,7 @@ title: Default order settings for dimensions and product variants
 description: Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. 
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: 10.0.13
 
 ---
 
@@ -38,7 +38,16 @@ ms.dyn365.ops.version: Version 1611
 
 Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan**. You can also go to **Manage inventory** &gt; **Order settings** &gt; **Default order settings**.
+To define the default order settings for a product, follow these steps.
+
+1. Go to **Product information management** &gt; **Products** &gt; **Released products**.
+1. Select the relevant product in the grid.
+1. On the Action Pane, follow one of these steps to open the **Default order settings** page for the selected product:
+
+    - On the **Plan** tab, in the **Order settings** group, select **Default order settings**.
+    - On the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**.
+
+1. Configure the settings as described in the rest of this topic.
 
 ## Default order settings
 
@@ -80,7 +89,7 @@ The  default inventory order settings also apply when creating:
 
 ## Full definition of a released product
 
-When creating a transaction, you need to specify the full definition of a released product on the line in order for Supply Chain Management to attempt to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
+When you create a transaction, you must specify the full definition of a released product on the line, so that Supply Chain Management can try to identify the default order settings. In the full definition of a released product, the item number and all the active product dimensions, such as configuration, size, style, version, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you must specify all the required product dimensions before the site, warehouse, quantities, and lead time will appear by default on the order line. 
 
 Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. For this reason, no default quantity or checks on multiple and minimums are performed when creating the line or posting the journal. 
 
@@ -102,7 +111,7 @@ For distinct released products, you can define general order settings or site-sp
 
 ### Site-specific order settings
 
-To create site-specific order settings, select **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site-specific rules as needed and you can assign all the site-specific rules the same rank, to model that they are equally important. 
+To create site-specific order settings, select **New**. In **Details view**, enter the site in the **Site** field in the **Settings applicable for** section. In **Grid view**, enter the site in the **Site** column. The new rule is automatically assigned a new rank value that is more than 0 (zero). You can create as many site-specific rules as you require. To indicate that they are equally important, you can assign the same rank value to all the site-specific rules.
 
 If you are in **Details view**, you can't get the overview of the rules created for the item. Use the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Supply Chain Management searches for a rule with no site specified. This helps to determine a default site on the order line. This site is then used to search for a site-specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
@@ -117,41 +126,41 @@ Consider the following example product.
 | **Product name**                                    | Photoelectric sensor                    |
 | **Item number**                                     | XW56                                    |
 | **Configuration** (used to model the type of light) | C1-Visible red light, C2-Infrared light |
-| **Style** (used to model the engineering revision)  | R1, R2, R3                              |
+| **Version** | V1, V2, V3                              |
 
 For this example, assume that the product is procured and not produced. Also assume that configuration C1 is more commonly used, so it has shorter lead times. 
 
 Create the following default order settings to model this scenario.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the revision or site the line is placed at, the lead time will be considered 2. Assume that all revisions besides R3 are stopped.
+When a purchase order line or a planned purchase order is created for item XW56, configuration C1, regardless of the version or site where the line is put, the lead time will be considered 2. Assume that all versions besides V3 are stopped.
 
 You can create the following default order settings rules.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Yes                                  |                    | Yes                | Yes                               | Yes             |
-| 20   |      |               | R1    | Yes                                  |                    | Yes                | Yes                               | Yes             |
+| 20   |      |               | V2    | Yes                                  |                    | Yes                | Yes                               | Yes             |
+| 20   |      |               | V1    | Yes                                  |                    | Yes                | Yes                               | Yes             |
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-The two rules for stopping the old revisions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
+The two rules for stopping the old versions have the same rank. Therefore, they are equally important. Because both these rules have a higher rank than the rule for configuration C1, they take precedence over the rule for configuration C1. 
 
-This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have been given to the user. 
+This example explains the need for the rank. If the rank isn't used, when a purchase order is created for configuration C1 and version V2, the two rules that are defined for V2 and C1 will be ambiguous. To solve the ambiguity, Supply Chain Management will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and version V2, the user will receive a warning message that states that the item is on hold, and that this hold is caused by the version value. If the rule for the configuration had a higher rank than the rule for the version, a purchase order line would be successfully created for configuration C1 and version V2, and the user would receive no "item on hold" message. 
 
 Consider the following default order setting rules.
 
-| Rank | Site | Configuration | Style | Default site | Default warehouse | Purchase - Override default storage dimensions | Purchase warehouse |
+| Rank | Site | Configuration | Version | Default site | Default warehouse | Purchase - Override default storage dimensions | Purchase warehouse |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Yes                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, style R2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21.
+The system traverses the set of rules two times to determine the site and warehouse. When a purchase order line is created for configuration C1, version V2, the site is determined based on the rule that has a rank of 10. The system then searches for a rule for site 2 to determine a warehouse. Rule 20 is found, and because it has a higher rank, the warehouse on the purchase order line will be 22, not 21.
 
 As general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
 
@@ -165,14 +174,14 @@ The number of rules created for a released product may be many. In order to get 
 
 If the rule system for default order settings is too cumbersome, then there is the option to define default order settings for each product variant. The following example shows how this will look for the product and the cases described above.
 
-| Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
+| Rank | Site | Configuration | Version | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Yes                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
-| 10   |      | C2            | R1    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
-| 10   |      | C1            | R3    | Yes                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
-| 10   |      | C1            | R1    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
+| 10   |      | C2            | V3    | Yes                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
+| 10   |      | C2            | V1    | Yes                                  | 5                  | Yes                | Yes                               | Yes             |
+| 10   |      | C1            | V3    | Yes                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
+| 10   |      | C1            | V1    | Yes                                  | 2                  | Yes                | Yes                               | Yes             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 The rank in this case doesn't really matter, so you can choose to hide it. This solution potentially introduces a maintenance issue. However, you may want to consider using this setup if you are considering integrating with Product Lifecycle Management (PLM) systems.

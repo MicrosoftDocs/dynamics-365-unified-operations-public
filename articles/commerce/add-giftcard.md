@@ -71,8 +71,18 @@ For instructions on how to add a gift card module to a checkout page and set the
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Cart module](add-cart-module.md)
+
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
+
+[Payment module](payment-module.md)
+
+[Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
 
 [Support for external gift cards](./dev-itpro/gift-card.md)

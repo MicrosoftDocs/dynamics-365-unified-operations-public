@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: SDK and core library updates
+title: SDK and store starter kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 07/21/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# SDK and core library updates
+# SDK and store starter kit updates
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,7 +81,8 @@ The following table maps SSK versions to Commerce Scale Unit versions. The same 
 | --------------- | --------------- |
 | 10.0.10 | 9.20.x |
 | 10.0.11 | 9.21.x |
-| 10.0.12 (not live yet) | 9.22.x |
+| 10.0.12 | 9.22.x |
+| 10.0.13 (not live yet) | 9.23.x |
 
 ## Pull updates
 

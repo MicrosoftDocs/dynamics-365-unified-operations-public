@@ -339,3 +339,5 @@ export interface INumberFormatOptions {
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
+
+[Interactive components overview](interactive-components.md)

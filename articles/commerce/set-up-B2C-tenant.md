@@ -81,7 +81,7 @@ Once the B2C tenant has been created, you will create a B2C application within t
 
 To create the B2C application, follow these steps.
 
-1. In the Azure portal, select **Applications** and then select **Add**.
+1. In the Azure portal, select **Applications(Legacy)** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API**, select **Yes**.
 1. For **Allow implicit flow**, select **Yes** (the default value).

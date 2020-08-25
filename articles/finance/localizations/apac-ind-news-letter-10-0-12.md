@@ -5,7 +5,7 @@ title: What's new or changed for APAC India GST Localization in 10.0.12 (July 20
 description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.12.
 author: prabhatb
 manager: annbe
-ms.date: 07/29/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,15 +49,15 @@ The following improvements are included in the stock transfer order functionalit
 
 This feature can be enabled through Feature management.
 
-![Feature management module and list of available features](media/GST-feature-management-1-10-0-12.PNG)
+![Feature management module and list of available features](media/gst-feature-management.png)
 
 ### New parameter under Inventory management
 
 The parameter, **Enable stock transfer for master planning** has been added to the **Inventory management parameters** page (**Inventory & warehouse management** > **Setup** > **Parameters**, **Transfer orders** tab) and the **Transfer type** page (**Master planning** > **Parameters** > **Transfer type**).  
 
-![Inventory management parameters page, Transfer orders tab](media/GST-inventory-parameter-2-10-0-12.PNG)
+![Inventory management parameters page, Transfer orders tab](media/gst-inventory-parameters.png)
 
-![Transfer type page](media/GT-master-planning-parameters-3-10-0-12-F.png)
+![Transfer type page](media/gst-master-planning-parameters.png)
 
 ## Critical fixes 
 
