@@ -68,19 +68,21 @@ The following illustration shows the class structure of the extension.
     [RoutePrefix("SimpleExtension")]  
     ```
 
-7. Add the **BindEntity** attribute is required on a controller class if you are creating a new controller and exposing an entity.
+7. Add the **BindEntity** attribute. This is required on a controller class if you are creating a new controller and exposing an entity.
 
 ```csharp
     [BindEntity(typeof(SimpleEntity))]
 ```
 
-**Note:** Step 6 and 7 required if the extension class bounded to an entity, not required for unbounded controller class returning simple types not any entity.
+> [!NOTE]
+> Step 6 and 7 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
 
 The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
 
-### Sample code for a controller class bounded to a custom entity:
+### Sample code for a controller class bounded to a custom entity
 
-**Note:** Extension code should not bound the existing(OOB entity like Customer, Product etc.) entity.
+> [!NOTE]
+> Extension code should not bound the existing OOB entity, such as Customer or Product.
 
 ```csharp
     /// <summary>
@@ -137,7 +139,7 @@ The following sample code creates a simple Retail Server API to return an entity
         }
 ```
 
-### Sample code for a controller class not bounded to a custom entity:
+### Sample code for a controller class not bounded to a custom entity
 
 ```csharp
 namespace Contoso.UnboundController.Sample
