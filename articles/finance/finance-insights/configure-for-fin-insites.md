@@ -165,6 +165,7 @@ If you are unable to find any of the preceding applications, try the following i
    - Enter a name for the secret. Make a note of the name, because you will have to provide it later.
    - In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
    - Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
+   - Go to the Key Valut Overview and note the DNS Name.
    
  3. Create and register an Azure Active directory application using the following instructions: 
     - In the Azure portal, select Azure Active Directory, and then select App registrations.
@@ -197,7 +198,7 @@ If you are unable to find any of the preceding applications, try the following i
     |------------------------------------------|------------------------------------------------------------------------------------|
     |     app-id                               |     The ID   of the application just created                                       |
     |     app-secret                           |     The   client secret saved previously                                           |
-    |     storage-account-name                 |     The   name of the storage account created previously, such as, storageaccount1     |
+    |     storage-account-name                 |     The   name of the storage account created previously, such as, storageaccount1 |
     |     storage-account-connection-string    |     The   connection string copied from Access Keys of the storage account         |
 
 3. Authorize the application to access the key vault using the following instructions:
@@ -237,13 +238,13 @@ If you are unable to find any of the preceding applications, try the following i
   
   Set up the entity store in your Dynamics 365 Finance environment. 
   
- 1. So to the **Data connections** page (**System administration > Setup > System parameters > Data connections**).
+ 1. Go to **System administration > Setup > System parameters > Data connections**.
  
  2. Set **Enable Data Lake integration** to **Yes**. 
  
  3. Set Azure key vault. 
  
-    - Application (client) ID: This is the App ID that you create above. 
+    - Application (client) ID: This is the Application client ID that you create above. 
     - Application Secrete: The secrete you saved for the application created above
     - DNS name: You can find the DNS name on the application details page for the application you created above
     - Secrete name: storage-account-connection-string
@@ -256,7 +257,7 @@ Add Azure Data Lake add-in to the environment using LCS.
 
 2. Click the **Environment add-ins** section and select **+ Install a new add-in**.
 
-3. Select **Azure Data Lake. 
+3. Select **Export to Data Lake** add-in. 
 
 4. Enter the following values. 
 
@@ -276,10 +277,10 @@ Add Azure Data Lake add-in to the environment using LCS.
 
 1. Login to LCS and go to the **Environment details** page. 
 2. Scroll to the **Environment add-ins** section. You should see the add-ins that are already installed in this environment. 
-3. You should see the **Export to Data Lake** add-in installed. If you do not see **Export to Data Lake add-in** installed, configure **Export to Data Lake** as a first step.
-4. Select the **AI builder integrator** add-in. 
+3. You should see the **Export to Data Lake** add-in installed. If you do not see **Export to Data Lake** add-in installed, configure **Export to Data Lake** as a first step.
+4. Select the **Get insights** add-in. 
 
-   - The **AI builder integrator** add-in details page will open. Enter the values listed in the following table. 
+   - The **Get insights** add-in details page will open. Enter the values listed in the following table. 
 
    |     Value                                                         |     Description                                                 |
    |-------------------------------------------------------------------|-----------------------------------------------------------------|
