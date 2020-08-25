@@ -41,32 +41,28 @@ Complete the following steps to create a data integrator project.
 2. Open the **Data entities** page (**Workspaces > Data Management > Data entities**). Wait until the all the data entities have refreshed before continuing to the next step. 
 
 3. Open the [Power Apps](https://make.powerapps.com/) portal.
-
-	1. Choose the appropriate environment.
-  
-	2. On the left hand navigation pane select Data > Connections.  
-		a. Connect to appropriate instances of:
-			i. Dynamics 365
-			ii. Dynamics 365 for Fin & Ops
+   - Choose the appropriate environment.
+   - On the left hand navigation pane select Data > Connections. Connect to appropriate instances of:
+     - Dynamics 365
+     - Dynamics 365 for Fin & Ops
 
 4. Open the [Power Apps environments](https://admin.powerapps.com/environments).
+   - Select Data Integrator
+   - Select Connection sets
+   - Click New connection set
+   - Provide connection name
+   - Select the appropriate connections for
+     - Dynamics 365
+     - Dynamics 365 for Fin & Ops
+    - Chose the appropriate Organization mapping
+    - Click Create
 
-  1. Select Data Integrator
-      a. Select Connection sets
-      b. Click New connection set
-        i. Provide connection name
-        ii. Select the appropriate connections for
-          i. Dynamics 365
-          ii. Dynamics 365 for Fin & Ops
-        iii. Chose the appropriate Organization mapping
-        iv. Click Create
-
-  2. Go to: Projects tab
-      a. Create data integration projects for following templates using the connection set created above:
-        i. Customer payment insights results (CDS to Fin and Ops)
-        ii. Cash flow time series results (CDS to Fin and Ops)
-        iii. Budget time series results (CDS to Fin and Ops)
-      b. Set appropriate Scheduling for each project.
+5. Open the [Power Apps environments](https://admin.powerapps.com/environments).
+   - Create data integration projects for following templates using the connection set created above:
+     - Customer payment insights results (CDS to Fin and Ops)
+     - Cash flow time series results (CDS to Fin and Ops)
+     - Budget time series results (CDS to Fin and Ops)
+   - Set appropriate Scheduling for each project.
 
 
 #### Privacy notice
