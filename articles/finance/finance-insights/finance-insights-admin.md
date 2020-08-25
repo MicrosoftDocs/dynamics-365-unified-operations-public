@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights public preview is available to for trial deployments in the United Stated of America, Europe and United Kingdom. We are incrementally adding support in additional regions.
+Finance Insights preview is available to for trial deployments in the United Stated of America, Europe and United Kingdom. We are incrementally adding support in additional regions.
 
 Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment may not be migrated to a production environment. Please read Supplemental Terms of Use for Microsoft Dynamics 365 Previews for more details.
 
-## Requirements
+## Prerequisites
 
 A list of the requirements for using Finance Insights follows, along with links to sources of additional information where possible. 
 
@@ -56,8 +56,8 @@ At least one year of customer invoices is needed to properly train the machine l
 
 Sample data is available for demo systems that have the Contoso demo data set on them. 
 
-## Prerequisites
-Changes will be made to Microsoft Dynamics 365 for Finance, PowerApps, and Azure.  Proper permissions will be required across these three environments. For example:
+### Roles and permissions
+Changes will be made to Microsoft Dynamics 365 for Finance, Lifecycle Services, PowerApps, and Azure.  Proper permissions will be required across these three environments. For example:
 
 - A new environment will be created in the Power Platform.
 - A storage account, key vault, and application will be created in Azure.
@@ -65,11 +65,6 @@ Changes will be made to Microsoft Dynamics 365 for Finance, PowerApps, and Azure
 - Feature will be enabled in Dynamics 365.
 
 Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Services (LCS) will be  helpful for completing this process.
-
-### Historical data needs
-At least one year of customer invoices is needed to properly train the machine learning model used for customer payment predictions. 
-
-Sample data is available for demo systems that have the Contoso demo data set on them. 
 
 ## Configuring Finance Insights 
 
