@@ -66,44 +66,42 @@ In some cases, you might have to inject scripts into your site or site pages, bu
 To create a custom script injector, use the following command to create a new module. 
 
 ```Console
-C:\repos\MySite>yarn msdyn365 add-module myAnalytics
+C:\repos\MySite>yarn msdyn365 add-module my-script-injector
 ```
 
-The myAnalytics.definition.json file can then reference the base definition file for a starter kit script injector module.
+Open the my-script-injector.definition.json file and change the "$type" property to **"scriptModule"**. After providing a friendly name and description add the **"Script"** and **"HTML head"** categories and **"script"** to the "tags" property.  These categories and tags will help the script injector be allowed in the applicable page slots already defined inside a page template.
+
+Script modules contain a special **"attributes"** section that define where the module can be places, the options include **"allowInBodyBegin"**, **"allowInBodyEnd"** and **"allInHead"**. It’s important to specify where it can be loaded as the defaults for all three values are false.
+
+Configurations can also be added to allow script to be added from within the site builder and any other options needed.  
+
+The below is an example script injector definition file
 
 ```json
 {
-    "$ref": "@msdyn365-commerce-modules/core-components/dist/lib/modules/script-injector/script-injector.definition.json",
-    "friendlyName": "My Analytics",
-    "name": "my-analytics"
-}
-```
-
-If you open the base definition file for the script injector module, you can see the preconfigured attributes and configuration fields.
-
-```json
 {
     "$type": "scriptModule",
-    "friendlyName": "External Script",
-    "name": "script-injector",
-    "description": "External script tag to be rendered on the page",
-    "categories": ["script-injector"],
-    "tags": [
-        "script",
-        "sdk-modules"
-    ],
+    "friendlyName": "My Script Injector",
+    "name": "my-script-injector",
+    "description": "Used to add custom script to a page.",
+    "categories": [
+        "Script",
+        "HTML head"],
+    "tags": ["script"],
     "attributes": {
-        "private": true,
         "allowInBodyBegin": true,
         "allowInBodyEnd": true,
         "allowInHead": true
     },
+    "dataActions": {        
+    },    
     "config": {
         "scriptSource": {
-            "friendlyName": "Script tags",
-            "description": "script source or inline script",
+            "friendlyName": "Script source",
+            "description": "The script source. Can be an external URL or a relative URL. Relative URLs are resolved from the public folder",
             "type": "string",
-            "group": "script tag"
+            "group": "script tag",
+            "required": true
         },
         "async": {
             "friendlyName": "execute script asynchronously",
@@ -116,23 +114,37 @@ If you open the base definition file for the script injector module, you can see
             "description": "Specifies that the script is executed when the page has finished parsing",
             "type": "boolean",
             "default": false
-        },
-        "loadPoint": {
-            "friendlyName": "script load point",
-            "description": "load point in the html document where script tag should be loaded",
-            "type": "string",
-            "enum": {
-                "headStart": "headStart",
-                "headEnd": "headEnd",
-                "bodyStart": "bodyStart",
-                "bodyEnd": "bodyEnd"
-            }
         }
     }
 }
 ```
 
-You can now change the myAnalytics.tsx file as you require. For example, you can add more configuration fields.
+## Modifying the script injector view file
+You can now change the my-script-injector.tsx and my-script-injector.view.tsxAnalytics.tsx React and view files as you require. 
+
+To create a custom script injector we can make use of **HtmlHeadInclude**, a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. The usage is simple, you can add whatever you want in your view file between the <HtmlHeadInclude> tags as shown in the example below.
+
+```typescript
+import { HtmlHeadInclude } from '@msdyn365-commerce/core-internal';
+import * as React from 'react';
+import { IMyScriptInjectorViewProps } from './my-script-injector';
+
+export default (props: IMyScriptInjectorViewProps) => {
+    const scriptContents = `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview')`;
+    return (
+        <HtmlHeadInclude>
+            <script data-load-point='headStart'>
+               {scriptContents}
+            </script>
+            <script data-load-point='headStart' async src={props.config.scriptSource} />
+        </HtmlHeadInclude>
+    );
+};
+```
+
+Note: Inline script content should be saved as a string and then inserted into the script and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed and possible values include `headStart`, `headEnd`, `bodyStart` and `bodyEnd.
+
+HtmlHeadInclude can also be used to insert <title>, <meta>, <link> and <style> tags into the head of the HTML document. However, unlike scripts, these elements do not need a data-load-point attribute as they will always be placed in the head.
 
 After the custom script injector module is deployed to a Dynamics 365 Commerce environment, it appears in the authoring tools.
 
