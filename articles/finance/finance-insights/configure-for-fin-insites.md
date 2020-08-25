@@ -84,7 +84,8 @@ Deploy the environments by completing the following steps.
 1. Record CDS Directory ID
    - Go to the [Azure portal](https://portal.azure.com).
    - Log in using the user ID that was used to create the CDS environment.
-   - Copy the Tenant ID and record it as the CDS Dicretory ID.
+   - Go to Azure Active Directory
+   - Copy the Tenant ID and record it as the CDS Directory ID.
 2. Record the user's Azure Active Directory object ID.
    - Go to the [Azure portal](https://portal.azure.com).
    - Go to Users and search for the user by email.
@@ -116,9 +117,9 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 ### Manual Setup
 
 1. Add Applications to the Azure Active Directory Tenant
-  - Go to Azure Active Directory
-  - Go to Manage > Enterprise Applications 
-  - Search for the following applications, using App ID (see steps below if you cannot find those applications)
+   - Go to Azure Active Directory
+   - Go to Manage > Enterprise Applications 
+   - Search for the following applications, using App ID (see steps below if you cannot find those applications)
  
    | Application                                 | App ID                                  |
    |---------------------------------------------|-----------------------------------------|
@@ -126,17 +127,17 @@ A PowerShell script has been provided to easily set up the Azure resources descr
    | Microsoft Dynamics ERP Microservices CDS    | 703e2651-d3fc-48f5-942c-74274233dba8    |
    | AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
-If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
-- On your local machine: Click on the **Start** menu and search for powershell.
-- Right-click **Windows Powershell** and choose **Run as administrator**.
-- Run the following command to install “AzureAD” module
-   - Install-Module -Name AzureAD
-   - If NuGet provider is required to continue, select “Y” to install it.
-   - If the **Untrusted repository** message appears, select “Y” to continue.
-- For each application that must be added, run the following commands to add the application to the Azure Active Directory. 
-   - Login as the Azure Active Directory administrator when prompted
-   - Connect-AzureAD 
-   - New-AzureADServicePrincipal –AppId <AppId>
+   If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
+   - On your local machine: Click on the **Start** menu and search for powershell.
+   - Right-click **Windows Powershell** and choose **Run as administrator**.
+   - Run the following command to install “AzureAD” module
+     - Install-Module -Name AzureAD
+     - If NuGet provider is required to continue, select “Y” to install it.
+     - If the **Untrusted repository** message appears, select “Y” to continue.
+   - For each application that must be added, run the following commands to add the application to the Azure Active Directory. 
+     - Login as the Azure Active Directory administrator when prompted
+     - Connect-AzureAD 
+     - New-AzureADServicePrincipal –AppId <AppId>
 
 2. Create an Azure resource.
    > [!NOTE]
