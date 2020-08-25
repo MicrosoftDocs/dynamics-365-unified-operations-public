@@ -45,7 +45,7 @@ Quantity is mandatory for posting invoices. So, if the full quantity on the line
 
 This issue only occurs if the purchase order was in a 'Confirmed' state before requesting changes. If the user requested changes while the purchase order was in an "Approved" status, then the workflow can be processed successfully. 
 
-* **Issue repro steps**
+**Issue repro steps**
 1. An active Purchase order workflow and a purchase order line workflow is created, activated.
 2. Change management ie anbled for purchase orders. In Procurement and Sourcing -> Setup -> Procurement and Sourcing parameter, and turn this to Yes.
 3. Navigate to Accounts Payable > All purchase orders > purchase order.
