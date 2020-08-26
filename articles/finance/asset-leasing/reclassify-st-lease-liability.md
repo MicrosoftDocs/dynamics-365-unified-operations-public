@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reclassify short term portion of lease liability
+title: Reclassify short-term portion of lease liability
 description: This topic describes the process for creating a monthly journal entry to reclassify a portion of the lease liability as short term.
 author: moaamer
 manager: Ann Beebe
