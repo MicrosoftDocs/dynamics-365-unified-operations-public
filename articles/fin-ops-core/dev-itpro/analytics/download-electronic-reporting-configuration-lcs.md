@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 
-This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
+This tutorial guides you through the process of downloading the newest version of [Electronic reporting (ER)](general-electronic-reporting.md) [configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library) of Microsoft Dynamics Lifecycle Services (LCS).
 
 1. Sign in to the application by using one of the following roles:
 
@@ -64,6 +64,9 @@ This tutorial guides you through the process of downloading the newest version o
 
     [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
+    >[!TIP]
+    >If you have trouble accessing the LCS repository to download configurations from the LCS Shared asset library, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.
+    
 7. In the configurations tree in the left pane, select the ER configuration that you require.
 8. On the **Versions** FastTab, select the required version of the selected ER configuration.
 9. Click **Import** to download the selected version from LCS to the current instance.
@@ -79,3 +82,5 @@ This tutorial guides you through the process of downloading the newest version o
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)
