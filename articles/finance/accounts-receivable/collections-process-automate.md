@@ -66,9 +66,10 @@ If the action type of collection letter is selected there will not be a business
 ## FastTab reference
 The following tables list the pages and fields that the specified FastTabs can be accessed from, along with a description of the information in that tab. 
 
-*** Process hierarchy
-|     Page                                               	|     Field                     	|     Purpose                                                                                                                                                                                                	|
-|--------------------------------------------------------	|-------------------------------	|---------------------------------------	|
+### Process hierarchy
+
+|     Page                                                	|     Field                     	|     Purpose                           	|
+| --------------------------------------------------------	|-------------------------------	|---------------------------------------	|
 |     Collections   process setup; Process automation    	|                               	|     Create and   manage collections processes based on customer pool assignments                                                                                                                           	|
 |     Collections   process setup; Process automation    	|     Hierarchy                 	|     Defines the   priority of process automation to assign a customer should they fall into   multiple pools                                                                                               	|
 |     Collections   process setup; Process automation    	|     Pool ID                   	|     Queries that   define a group of customer records.                                                                                                                                                     	|
