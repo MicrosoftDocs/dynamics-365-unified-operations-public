@@ -227,7 +227,10 @@ One option after you finish your recording is to download the task recording pac
 
 ### Save to Lifecycle Services (LCS) 
 
-When you save your recording to an LCS library, it's published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
+When you save your recording to an LCS library, it's published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu. 
+
+    > [!NOTE]
+    > To be able to save a recording to an LCS library, the user must be in the AAD tenant that the environment was deployed from.  
 
 ### Export as Word document
 
