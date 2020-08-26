@@ -35,8 +35,8 @@ ms.dyn365.ops.version: 10.0.13
 This topic provides links to documentation resources for Bahrain. 
 
 - [Configure invoice layout for Bahrain](emea-bhr-invoice-layout.md)
-- [VAT declaration for Bahrain](bahrain.md)
-- [Invoice issue deadline](emea-invoice-issue-deadline.md)
+- [VAT declaration for Bahrain](emea-bhr-vat-declaration.md)
+- [Invoice issue deadline](gcc-invoice-issue-deadline.md)
 
 ## Additional resources
 
