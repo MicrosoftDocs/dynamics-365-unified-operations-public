@@ -37,12 +37,12 @@ This topic covers gift card modules and describes how to add them to site pages 
 
 ## Overview
 
-Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information on support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md)
+Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
 
 There are two gift card modules available:
 
 - **Gift card** - This module can be used on a checkout page to redeem a gift card as tender. 
-- **Gift card balance check** - This module can be used on any page to check the balance on a gift card. This module is available as of the Commerce 10.0.14 release.
+- **Gift card balance check** - This module can be used on any page to check the balance on a gift card. This module is available in Commerce release 10.0.14 and later.
 
 The following image shows an example of a gift card module on a checkout page.
 
