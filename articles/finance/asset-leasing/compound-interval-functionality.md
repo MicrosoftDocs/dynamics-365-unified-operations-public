@@ -35,9 +35,9 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes how to choose between compounding levels of monthly, quarterly, semiannual, or annual. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. The following examples illustrate how a lease's payment schedule would appear using each of the 4 different interval choices.
+This topic describes how to choose between compounding levels of monthly, quarterly, semiannual, or annual. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. The following examples illustrate how a lease's payment schedule will appear based on each of the four possible interval choices.
 
-You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, there cannot be a quarterly compounding interval with a monthly payment frequency, or an annual compounding interval, with a semiannual payment frequency. If the user attempts this, a warning will be thrown.
+You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, there cannot be a quarterly compounding interval with a monthly payment frequency, or an annual compounding interval, with a semiannual payment frequency. An error message will display if you select a compounding interval that is less frequent than the lease's payment frequency.
 
 > [!Note]
 > The following examples use compounding intervals with matching payment frequencies.
