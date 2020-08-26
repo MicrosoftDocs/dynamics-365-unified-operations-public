@@ -85,6 +85,8 @@ To set up product recommendations, follow these steps:
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 
 [Adjust AI-ML recommendations results](modify-product-recommendation-results.md)

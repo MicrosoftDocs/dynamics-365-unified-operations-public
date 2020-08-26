@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,16 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 > [!NOTE]
 > Version 10.0.13 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### Custom code defined in SSRS report properties 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
 
 ### Upgrade of three jQuery component libraries 
 

@@ -95,6 +95,8 @@ The following example shows how a retailer can accomplish this task.
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Add product recommendations on POS](product.md)
 
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)

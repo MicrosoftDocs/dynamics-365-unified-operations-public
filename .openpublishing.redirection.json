@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/extend-retail-server-odata-controller.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/extend-metadata.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/call-crt-service-offline.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/add-customer-preference-channel.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/trigger-example-return-policy.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-setup-workflows.md",
+      "redirect_url": "hr-workflow-manage-employee-information",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md",
       "redirect_url": "../warehouse-work-policies",
       "redirect_document_id": "false"

@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed Microsoft Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1156,7 +1156,7 @@
         href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
-      - name: Financial reporting overview
+      - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
             href: localizations/rus-counting-deferrals.md
           - name: Reporting for deferrals
             href: localizations/rus-reporting-deferrals.md
+        - name: Tax accounting
+          items:
+          - name: Expense and income codes
+            href: localizations/rus-expense-and-income-codes.md
+          - name: Assets tax registers
+            href: localizations/rus-assets-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -2884,13 +2890,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
       - name: Power BI content
         items:
@@ -2986,7 +2992,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
         - name: Resolve issues after Entity store maintenance
           href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-        - name: Configure PowerBI.com integration
+        - name: Configure the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -3126,6 +3132,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
             - name: List
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+            - name: "ListDistinct"
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
             - name: ListJoin
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
             - name: ListOfFields
@@ -3162,6 +3170,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
             - name: ValueIn
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+            - name: ValueInLarge
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
           - name: Mathematical
             items: 
             - name: Mathematical functions
@@ -3413,7 +3423,9 @@
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
-          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+        - name: Design a new ER solution to print a custom report
+          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
       - name: Tutorials
         items: 
         - name: Learn how to use data sources

@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # View team and company calendars
 
-[!include [banner](includes/preview-feature.md)]
-
 You can view team and company calendars in Dynamics 365 Human Resources. Team calendars only display direct reports, as defined in the line hierarchy.
 
 ## View your team calendar as an employee
