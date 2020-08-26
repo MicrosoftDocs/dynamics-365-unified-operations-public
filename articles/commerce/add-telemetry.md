@@ -5,7 +5,7 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 03/20/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
