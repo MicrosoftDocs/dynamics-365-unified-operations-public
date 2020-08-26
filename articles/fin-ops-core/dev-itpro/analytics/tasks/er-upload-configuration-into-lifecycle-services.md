@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new [Electronic reporting (ER)](general-electronic-reporting.md) [configuration](general-electronic-reporting.md#Configuration) and upload it into the [project-level asset library](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library) of Microsoft Lifecycle Services (LCS).
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new [Electronic reporting (ER)](../general-electronic-reporting.md) [configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level asset library](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library) of Microsoft Lifecycle Services (LCS).
 
 In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. Access to LCS is also required for completion of these steps.
 
