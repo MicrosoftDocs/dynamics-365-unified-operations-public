@@ -130,6 +130,8 @@
             items: 
             - name: Dual-write home page
               href: data-entities/dual-write/dual-write-home-page.md
+            - name: What's new or changed in dual-write
+              href: data-entities/dual-write/whats-new-dual-write.md
             - name: Dual-write overview
               href: data-entities/dual-write/dual-write-overview.md
             - name: Dual-write setup
