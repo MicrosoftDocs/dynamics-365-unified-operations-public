@@ -169,10 +169,11 @@ Document handling attachments for Finance + Operations on-premises environments 
 	```
 
 4. Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
+
 	```sql
 	update DOCUVALUE
-	  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 	'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
-	  STORAGEPROVIDERID = 1
+	  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'),
+  	STORAGEPROVIDERID = 1
 	where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
 	  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
 
@@ -182,4 +183,5 @@ Document handling attachments for Finance + Operations on-premises environments 
 	where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
 	  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
 	```
+ 
 5.	Test a sample of the document handling attachments to ensure they are now accessible in the sandbox environment.
