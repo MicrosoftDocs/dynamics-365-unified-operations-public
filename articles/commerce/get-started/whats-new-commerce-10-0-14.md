@@ -36,9 +36,9 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.14. This version has a build number of 10.0.XXX and is available on the following schedule:
 
-- **Preview release:** July 2020
-- **General availability (self-update):** September 2020
-- **Auto-update:** October 2020
+- **Preview release:** August 2020
+- **General availability (self-update):** October 2020
+- **Auto-update:** November 2020
 
 ## Features included in this release
 
@@ -51,7 +51,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Commerce 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-14.md).
+Dynamics 365 Commerce 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/)
