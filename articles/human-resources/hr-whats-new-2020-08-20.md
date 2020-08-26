@@ -80,7 +80,13 @@ Employees can view and request time away from work within Microsoft Teams. They 
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+### Human Resources app in Teams preview features
+ 
+-  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers will be able to approve or deny time-off requests, and submitters will be notified if the request was approved or denied.
+ 
+- **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work.
+
+### Checklist entities included in Common Data Service
 
 Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
 
@@ -107,7 +113,7 @@ The **Feature management** workspace may be displaying features that are disable
 - Print performance reviews
 - Leave accrual holiday corrections
 
-## Benefit plan employee entity 
+### Benefit plan employee entity 
 
 We have recently discovered two issues regarding the **BenefitsPlanEmployee** entity. When importing worker enrollments, the **Coverage code** and the **Plan type code** are being set incorrectly. This issue causes employee benefit plans to display incorrectly in the **Worker benefits plan** form and in the **Open enrollment** form in Employee self service. This issue can also impact the employee's ability to select plans in Employee self service. Currently there isn't a workaround. We're treating this as a high-priority fix and will roll out the fix with our next release.
 
