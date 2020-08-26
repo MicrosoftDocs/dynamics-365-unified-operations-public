@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Confirm payment schedules in batch
-description: This topic walks through the process of confirmaing multiple payment schedules in a batch. 
+title: Confirm Asset leasing payment schedules in batch
+description: This topic walks through the process of confirming multiple payment schedules in a batch. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
@@ -30,14 +30,14 @@ ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Confirm payment schedules in batch
+# Confirm Asset leasing payment schedules in batch
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through the process of confirmaing multiple payment schedules in a batch. Payment schedules are confirmed on a lease-to-lease basis or through the confirmation batch process. A journal entry can only be posted against a lease with a confirmed payment schedule. Confirming the payment schedule acts as a final approval of the financial information for the lease. All future changes of the financial information of the lease, such as payments and lease term, constitute a lease adjustment and should be processed as such.
+This topic walks through the process of confirming multiple payment schedules in a batch. Payment schedules are confirmed on a lease-to-lease basis or through the confirmation batch process. A journal entry can only be posted against a lease with a confirmed payment schedule. Confirming the payment schedule acts as a final approval of the financial information for the lease. All future changes of the financial information of the lease, such as payments and lease term, constitute a lease adjustment and should be processed that way.
 
-1. To confirm multiple payment schedules, open the Confirmation batch** page (**Asset leasing > Periodic > Confirmation batch**).
+1. To confirm multiple payment schedules, open the **Confirmation batch** page (**Asset leasing > Periodic > Confirmation batch**).
 2. Click **Confirmation batch**.
-3. A parameter dialog will open. To filter which books to confirm, the user can select the specific lease group to confirm all the books of by selecting the group from the **Lease group** menu. In addition, the user can select specific books from the **Book ID** menu. To confirm all books, enable the **For all books** parameter. 
-4. The newly confirmed books will populate the **Confirmed books** page. Once the payment schedules are confirmed, the initial recognition journal entries can be posted against the leases.
+3. A parameter dialog will open. To filter which books to confirm, the user can select the specific lease group to confirm all the books of by selecting the group from the **Lease group** menu. You can also select specific books from the **Book ID** menu. To confirm all books, enable the **For all books** parameter. 
+4. Information for the newly confirmed books will display on the **Confirmed books** page. Once the payment schedules are confirmed, the initial recognition journal entries can be posted against the leases.
