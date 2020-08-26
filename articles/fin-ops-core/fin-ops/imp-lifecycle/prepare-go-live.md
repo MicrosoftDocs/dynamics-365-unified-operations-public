@@ -38,23 +38,23 @@ This graphic lists the phases of the go-live process.
 
 The following table lists all the steps in the process, with the expected duration and who is responsible to take the action.
 
-|   | Action | Duration/When | Who | Notes |
-|---|--------|---------------|-----|-------|
-| 1 | Update Go-live date in LCS | At the latest 2-3 months in advance | Partner/Customer | The milestone dates should be kept up to date on an ongoing basis |
-| 2 | Complete and send check list | After UAT complete | Partner/Customer | Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic. |
-| 3 | Project assessment (Fast Track Essentials) | 3-business days for initial report, plus additional time for mitigation, if required | FastTrack Architect | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
-|   | Project workshop (Fast Track) | To coordinate with architect assigned | FastTrack Architect | |
-| 4 | Release for production deployment | Upon successfully completed assessment | FastTrack Architect | If the production deployment request has already been submitted, deployment will start. However, we request that you only submit the Production request after the assessment has successfully completed. |
-| 5 | Production deployment request | Self-service | Customer | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
-|   | Sizing | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Sizing team | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
-|   | Deployment | 48 hours | Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
-| 6 | Deployable package installation request | Self-service | Customer | Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md). |
-|   | Package installation | Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package | Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
-| 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
-|   | Copy database | Five hours lead time and four hours downtime | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
-| 8 | Production ready | After all previous steps have been completed | Customer/Partner | Customer/Partner can take control of the production environment. |
-|   | Cutover activities | Depends on the project | Customer/Partner | |
-| 9 | Go live | Depends on the project | Customer | |
+|  | Action | Topology | Duration/When | Who | Notes |
+|-|-|-|-|-|-|
+| 1 | Update Go-live date in LCS | Both | At the latest 2-3 months in advance | Customer/Partner | The milestone dates should be kept up to date on an ongoing basis |
+| 2 | Complete and send check list | Both | After UAT complete | Customer/Partner | Follow the instructions provided in the "FastTrack Go-live Assessment" section later in this topic. |
+| 3 | Project Go-Live assessment (FastTrack Essentials) | Both | 3-business days for initial report, plus additional time for mitigation, if required | Microsoft-FastTrack Solution Architect | Solutions Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
+|  | Go-live Assessment workshop (FastTrack) | Both | To coordinate with architect assigned | Microsoft-FastTrack Solution Architect |  |
+| 4 | Release for production deployment |  | Upon successfully completed assessment | Microsoft-FastTrack Solution Architect | If the production deployment request has already been submitted, deployment will start. However, we request that you only submit the Production request after the assessment has successfully completed. |
+| 5 | Production deployment request |  | Self-service | Customer/Partner | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
+|  | Sizing |  | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Microsoft-Dynamic Service Engineering (DSE) | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
+|  | Deployment |  | 48 hours | Microsoft-Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
+| 6 | Deployable package installation request |  | Self-service | Customer/Partner | Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md). |
+|  | Package installation |  | Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package | Microsoft-Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
+| 7 | Database copy from Sandbox request (if applicable) |  | Self-service | Customer/Partner | Follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
+|  | Copy database |  | Five hours lead time and four hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
+| 8 | Production ready |  | After all previous steps have been completed | Customer/Partner | Customer/Partner can take control of the production environment. |
+|  | Cutover activities |  | Depends on the project | Customer/Partner |  |
+| 9 | Go live |  | Depends on the project | Customer/Partner |  |
 
 ## Completing the LCS methodology
 
