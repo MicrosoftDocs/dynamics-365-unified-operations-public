@@ -41,6 +41,19 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Common Data Service – Phase 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## July 2020 release
+
+The July 2020 release of the [Dual-write application orchestration solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 10.0.18](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). If you're using dual-write core version 10.0.16, you should upgrade to 10.0.18. 
+
+The July 2020 release contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** entities. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in September 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [dual-write Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all). | Preview |
+| [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** field. |   Preview   |  
+| [Money to decimal data type conversion](currrency-decimal-places.md) |  Common Data Service environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. Finance and Operations apps support more decimal places than Common Data Service. You can now opt in to extend the decimal support in Common Data Service to help ensure there's no loss of decimal place data when using dual-write. | Preview |
+| Security role for company and currency exchange | Company and currency exchange entities are global in nature and all dual-write users require read access to these 2 entities. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | Preview |
+
 ## June 2020 release
 
 The June 2020 release of the dual-write orchestration package contains the features and bug fixes listed in the following table.
