@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Move implementation project from on-premises to cloud
-description: This topic explains how to move your Dynamics 365 for Finance and Operations from on-premises to the cloud.
+title: Move LCS implementation projects from on-premises to cloud
+description: This topic explains how to move your Finance and Operations environments from on-premises to the cloud.
 author: MartinWalkerDynSA
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,22 +16,22 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: sericks
 ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: marwalke
-ms.search.validFrom: 2020-07-28 
-ms.dyn365.ops.version: AX 7.0
+ms.search.validFrom: 2020-09-30 
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Move LCS implementation projects from on-premises to cloud
 
 [!include [banner](../includes/banner.md)]
 
-You can move your Microsoft Dynamics 365 for Finance and Operations environments from on-premises, i.e. hosted on your own infrastructure, to the Azure cloud. The following are the steps needed to do so.
+You can move your Finance and Operations environments from on-premises (hosted on your own infrastructure) to the Azure cloud. The following are the steps needed to do so.
 
 ## Cloud subscription licenses
 
@@ -39,7 +39,7 @@ If you do not already have cloud subscription licenses, work with your cloud ser
 
 ## Configure LCS cloud implementation project
 
-If these are the first Dynamics 365 for Finance and Operations cloud named user SLs being activated on the AAD tenant, a new LCS cloud implementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant).
+If these are the first Finance and Operations cloud-named user SLs being activated on the AAD tenant, a new LCS cloud implementation project will be provisioned automatically. If these are not the first SLs on the tenant, you will need to open a Support Request to have a cloud LCS implementation project created. See the article on [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant).
 Once your LCS cloud implementation project has been created, you will need to fully configure it. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, populate the Asset library, Business Process Modeler (BPM), and so on. Note that while onboarding your project, you must select "AX 2012 Upgrade" as your source system so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool. Note: In future, a more appropriate selection will be made available, such as "On-premises Finance and Operations".
 
 ## Complete development and testing of updated integrations
