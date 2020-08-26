@@ -5,7 +5,7 @@ title: Customer electronic invoices
 description: This topic provides information about management of customer electronic invoices for Italy.
 author: v-oloski
 manager: 
-ms.date: 08/10/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -105,7 +105,7 @@ The specified values are used for output to the XML file blocks. The following t
 | Stamp duty that isn't included in the invoice total for sales invoices, and that is or isn't included for project invoices | Bollo<p><strong>Note:</strong> This document property type is used for sales order invoices, free text invoices, and project invoices.</p> | Example: **Stamp duty, included/not included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type for this charge code should be **Ledger**.</li><li>**Project category** – This project category should be billable.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
 | Stamp duty that is included in the invoice total | BolloPay<p><strong>Note:</strong> This document property type is used only for sales order invoices and free text invoices.</p> | Example: **Stamp duty, included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type should be **Customer/Vendor**.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
 | Representative | TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **IT** for the **TaxRepPaese** document property type. For other types, fill in data for the representative. | **Cognome** (**RappresentanteFiscale** block) |
-| Invoice types | DocumentType | Example: **Invoice, document type** | **CustInvoiceJour** (Customer invoice journal), **ProjInvoiceJour** (Project invoice) | In customer electronic document properties (**Accounts receivable \> Inquiries and reports \> Invoices \> Invoice journal** or **Project management and accounting \> Project invoices \> Project invoices**), set the **Value** field to a document type, such as **TD16**. | **TipoDocumento** (**DatiGeneraliDocumento** block) |
+| Invoice types | DocumentType | Example: **Invoice, document type** | **CustInvoiceJour** (Customer invoice journal), **ProjInvoiceJour** (Project invoice) | Go to **Accounts receivable \> Inquiries and reports \> Invoices \> Invoice journal** or **Project management and accounting \> Project invoices \> Project invoices**, and set the **Value** field to a document type, such as **TD16**. | **TipoDocumento** (**DatiGeneraliDocumento** block) |
 
 > [!NOTE]
 > The preceding table uses the following shorthand:
@@ -163,7 +163,7 @@ The party that is issuing invoices must use a qualified signature certificate to
 
 Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
 
-1. On client computers, install and configure digital certificates that have private and public keys in the **Application server machine** to the **Personal** node.
+1. On client computers, in the **Application server machine** field of the **Personal** node, install and configure digital certificates that have private and public keys.
 
     > [!NOTE]
     > You can complete the installation and configuration by using standard Windows functionality.
@@ -243,7 +243,7 @@ If an intent letter is set up for a customer, the **Causale** element (**DatiGen
 
 ### Reverse charge and reverse charge group configuration
 
-The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters with these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters that have these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
 
@@ -258,7 +258,7 @@ The following types of invoice documents are supported and will automatically be
 - TD05 – Debit note
 - TD20 – Self-invoice
 
-If a required document type isn't covered by the values in the preceding list, you can manually adjust it in the invoice journals. To enable manual adjustment, you must complete the following setup:
+If a required document type isn't covered by the values in the preceding list, you can manually adjust the document type in the invoice journals. To enable manual adjustment, you must complete the following setup:
 
 - Electronic document property definition
 - Invoice document type registration
