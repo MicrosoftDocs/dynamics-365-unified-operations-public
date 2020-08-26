@@ -64,6 +64,55 @@ If the action type of collection letter is selected there will not be a business
 
 
 ## FastTab reference
+The following tables list the pages and fields that the specified FastTabs can be accessed from, along with a description of the information in that tab. 
+
+*** Process hierarchy
+|     Page                                               	|     Field                     	|     Purpose                                                                                                                                                                                                	|
+|--------------------------------------------------------	|-------------------------------	|---------------------------------------	|
+|     Collections   process setup; Process automation    	|                               	|     Create and   manage collections processes based on customer pool assignments                                                                                                                           	|
+|     Collections   process setup; Process automation    	|     Hierarchy                 	|     Defines the   priority of process automation to assign a customer should they fall into   multiple pools                                                                                               	|
+|     Collections   process setup; Process automation    	|     Pool ID                   	|     Queries that   define a group of customer records.                                                                                                                                                     	|
+|     Collections   process setup; Process automation    	|     Quiet days                	|     Limit the frequency   which a process step can be completed.    For example, if two quiet days are set the next process step will not   occur for at least two days if the leading invoice changes.    	|
+|     Collections   process setup; Process automation    	|     Exclude from   Process    	|     Selecting   either Customer aging balance less than or Invoice amount less than will   exclude a customer from the process automation if the value criteria is not   met                               	|
+
+### Process details
+|     Page                                               	|     Field                                     	|     Purpose               	|
+|--------------------------------------------------------	|-----------------------------------------------	|----------------------------	|
+|     Collections   process setup; Process automation    	|                                               	|     Define the steps   taken based on the leading invoice                                                                                               	|
+|                                                        	|     Description                               	|     Free text   field used for providing a name and/or description of the step                                                                          	|
+|                                                        	|     Action type                               	|     Activity,   email, or collection letter that will be created by the process step                                                                    	|
+|                                                        	|     Business   document                       	|     Defines the   activity or e-mail template that is used during the process step                                                                      	|
+|                                                        	|     When                                      	|     Defines if   the process step will occur before or after the leading invoice due date   along with the Days in relate to invoice due date field.    	|
+|                                                        	|     Days in   relation to invoice due date    	|     Together   with the When field it identifies the timing of the process step.                                                                        	|
+|                                                        	|     Recipient                                 	|     Identifies   if an e-mail will be sent to a Customer, Sales group, or Collections Agent   contact.                                                  	|
+|                                                        	|     Business   purpose contact                	|     Determines   which recipient’s e-mail is used in e-mail communications.                                                                             	|
+
+### Business process activity template details 
+|     Page                                               	|     Field                  	|     Purpose              	|
+|--------------------------------------------------------	|----------------------------	|-------------------------	|
+|     Collections   process setup; Process automation    	|                            	|     Section of   the setup process that identifies the details of the activity template                                                                     	|
+|     Collections   process setup; Process automation    	|     Activity   template    	|     Identifies   the type, purpose, number of days to complete, and gives details of the   activity that will be created during an activity process step    	|
+
+### Business document email template details 
+|     Page                                               	|     Field    	|     Purpose                 	|
+|--------------------------------------------------------	|--------------	|-----------------------------	|
+|     Collections   process setup; Process automation    	|              	|     Identifies   the email description, default language, senders name and email that will be   created during an email process step    	|
 
 
+### Collections history 
+|     Page                           	|     Field    	|     Purpose                                                         	|
+|------------------------------------	|--------------	|---------------------------------------------------------------------	|
+|     Collections   process setup    	|              	|     View the   recent history for the selected process hierarchy    	|
 
+### Collection process assignment
+|     Page                           	|     Field    	|     Purpose                                               	|
+|------------------------------------	|--------------	|-----------------------------------------------------------	|
+|     Collections   process setup    	|              	|     View   customers assigned to a collections process    	|
+
+### Parameters
+|     Page                                                                 	|     Field                                            	|     Purpose                          	|
+|--------------------------------------------------------------------------	|------------------------------------------------------	|-------------------------------------	|
+|     Accounts   receivable parameters > Collections process automation    	|     Percentage   of customers per batch task         	|     Setting to   determine the number of batch tasks per automation process.                                         	|
+|     Accounts   receivable parameters > Collections process automation    	|     Post   Collection letters automatically          	|     Collection   letter action types will post the letter during the automation.                                     	|
+|     Accounts   receivable parameters > Collections process automation    	|     Create   activities for automation               	|     Create and   close activities for non-activity action types to see all automated steps   taken on an account.    	|
+|     Accounts   receivable parameters > Collections process automation    	|     Days to keep   collections process automation    	|     Defines the   number of days collections history is stored.                                                      	|
