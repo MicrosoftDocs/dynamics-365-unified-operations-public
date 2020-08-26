@@ -90,7 +90,7 @@ It is likely that you will need to make some changes to the integration design p
 
 ## Repeat migration to Production 
 
-1. Deploy the new production environment. Note that the normal prerequisites apply, including an active subscription estimator, completion of the LCS methodology phases prior to operate, and completion of the FastTrack readiness review. See [Prepare for go-live](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live) for more informaiton.
+1. Deploy the new production environment. Note that the normal prerequisites apply, including an active subscription estimator, completion of the LCS methodology phases prior to operate, and completion of the FastTrack readiness review. See [Prepare for go-live](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live) for more information.
 2. Apply the final version of the software deployable package to Production.
 3. Stop making any further data changes to the on-premises Production environment.
 4. Repeat steps 3-6 of the trial migration to copy the final/up-to-date on-premises production database to the cloud sandbox.
