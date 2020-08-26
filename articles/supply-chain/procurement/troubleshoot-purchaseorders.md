@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -92,6 +92,19 @@ We prompt this when changing the shipping date because often times this means th
 
 This functionality is not available currently.
 
+## Able to reserve inventory and transact against goods in Registered status on the purchase order.
+
+When items are Registered on a Purchase order, it is possible to reserve the inventory, that is we can create transactions against the Registered Inventory.
+
+**Repro steps:**
+		1. Create PO
+		2. Register the PO line
+		3. Generate reservation or transaction against Registered inventory. 
+  
+  Is there a way to block this?
+		
+**Resolution/Fix:**
+The Registered items are expected to be phyiscally arrived in the warehouse / inventory, hence available for reservation.
 
 ## Additional resources
 
