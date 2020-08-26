@@ -39,7 +39,11 @@ If site or warehouse or delivery address is being changed on a sales order heade
 **Resolution/Fix**
 That's because the delivery address, site and warehouse doesn't automatically get changed at the line level either - you'll need to update that yourself
 
-
+##  When there are two trade agreements for the same/overlapping period, then the same agreement line is always picked.
+If there are two trade agreements defined for the same/overlapping period, then when creating sales order lines with those items, the sam etrade agreement seems to be picked each time.
+		
+**Resolution/Fix**
+When there is more than one trade agreement for a given date, then the trade agreement with the lower price will always be picked up. Read more on trade agreements [here] (https://www.axug.com/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=3396a3a8-1f48-4d85-8cd6-5fa982f62e90).
 
 
 ## Additional resources
