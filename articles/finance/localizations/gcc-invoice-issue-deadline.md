@@ -57,45 +57,44 @@ In the **Feature management** workspace, enable the following feature:
 
 - Invoice issue deadline availability for additional countries
 
-For more information how to enable features, see [Feature management overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ilkond-bh-0003/articles/fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > This feature is same as for European Union (EU) countries. For additional information, see [Invoice issue deadline](emea-invoice-issue-deadline.md).
 
 ## Setup
 
-Complete the following steps for settings the invoice issue deadline functionality:
+Complete the following steps to set up the invoice issue deadline functionality.
 
-1.  Create a new date interval on **Date intervals** page list (**General ledger \> Ledger setup \> Date intervals**) and fill in the highlighted fields (the **To date +/-** field can be filled in different values, if needed
+1. Go to **General ledger** \> **Ledger setup** \> **Date intervals**.
+2. On the **Date intervals** page, create a new date interval and on the **General** FastTab, enter the appropriate field information in the **Interval start** and **Interval end** field groups.
      
      ![Date interval](media/gcc-invoice-issue-deadline-date-interval.jpg)
      
       > [!NOTE]
-      > If the date interval is set in this way, this means that the deadline for issuing the invoice will be set on the 15th of the next month following the month of issuing the packing slip.
-      
-     If the **To date period type** and **To date Start/End** is blank, this means that the deadline for issuing the invoice will be set on the 15th day after issurance of the packing slip.
+      > The graphic shows an interval of 15 days. If the date interval is set in this way, this means that the deadline for issuing the invoice will be set on the 15th of the next month following the month of issuing the packing slip. If the **To date period type** and **To date Start/End** is blank, the deadline for issuing the invoice will be set on the 15th day after the packing slip is issued.
        
-2.  Create a new record in Country\ Region properties (**Tax \> Setup \> Foreign trade**, **Country/region properties** tab)
+3. Go **Tax** \> **Setup** \> **Foreign trade**.
+4. On the **Country/region properties** tab, select **New**.
     
     ![Country/region properties](media/gcc-invoice-issue-deadline-Foreign-trade-parameters.jpg)
 
-     Select the country in **Party country/region** and **Domestic** in **Country/region type**.
-
-3.  Create a new record in **Set up calculation for invoice issue due date** page list (**Accounts receivable parameters \> Setup**)
+5. On the new record line, in the **Party country/region** field, select a country, and in the **Country/region type** field, select **Domestic**.
+6. Go to (Need navigation path to the page - the previous navigation is incorrect )**Set up calculation for invoice issue due date page** and create a new record.
 
    ![Invoice issue deadline calculation](media/gcc-invoice-issue-deadline-calculation-for-invoice-issue-deadline.jpg)
    
- 4.  Set up invoice date control in the Accounts receivable parameters (**Accounts receivable parameters \> Setup \> Accounts receivable parameters**, **Updates** tab, **Invoice date control** FastTab)
+7. Go to **Accounts receivable** \> **Setup** \> **Parameters**, and on the **Updates** tab, on the **Invoice date control** FastTab, set up the invoice date control.
      
      ![Accounts receiveble parameters](media/gcc-invoice-issue-deadline-ar-parameters.jpg)
 
-You can select the following values:
+     You can select from the following values:
 
-- None: The control date does not execute
-- Warning: The invoice is posted but the warning appears after
-- Error: The invoice is not posted and an error message occurs
+     - **None**: The control date does not execute
+     - **Warning**: The invoice is posted but the warning appears after
+     - **Error**: The invoice is not posted and an error message occurs
 
-According to settings the system filled in **Invoice issue due date** field in packing slip journal. A user can overview all not invoiced packing slips in **Sales and Marketing \> Sales orders \> Order shipping \> Packing slip not invoiced**.  To review packing slips from a sales order go to **Sales order \> Pick and Pack tab \> Journals \> Packing slip journal**). 
+According to the settings, the system populates the **Invoice issue due date** field in the packing slip journal. You can  view all of the packing slips that are not yet invoiced by going to **Sales and Marketing** \> **Sales orders** \> **Order shipping** \> **Packing slip not invoiced**.  To review packing slips from a sales order, go to **Sales and marketing** \> **Sales orders** \> **Order shipping** \> **Packing slip**). 
 
  > [!NOTE] 
- > If the Invoice date control is set to **None**, the **Invoice issue due date** field is empty.
+ > If the **Invoice date control** field is set to **None**, the **Invoice issue due date** field is empty.
