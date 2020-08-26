@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revalue lease payments tied to an Index Rate
-description: This topic describes the adjustment to lease liability for a right of use asset that arises from changes in variable lease payments because of a change in the index rate.
+description: This topic describes the adjustment to lease liability for a right of use asset that results from changes in variable lease payments because of a change in the index rate.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/06/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the adjustment to lease liability and right-of-use asset (ROU) that arises from changes in variable lease payments because of a change in the index rate. The lease liability and ROU assets will be adjusted to account for the new payment amounts. Under US GAAP ASC 842, only the variable payments will change when payments increase or decrease because of a change in the index rate, unless there are additional changes to cash flows, such as a change in lease terms that's related to interest rates. For more information, refer to ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
+This topic describes the adjustment to lease liability and right-of-use asset (ROU) that results from changes in variable lease payments because of a change in the index rate. The lease liability and ROU assets will be adjusted to account for the new payment amounts. Under US GAAP ASC 842, only the variable payments will change when payments increase or decrease because of a change in the index rate, unless there are additional changes to cash flows, such as a change in lease terms that's related to interest rates. For more information, see ASC 842-10-55-225 and IFRS 16 paragraph 42(b).
 
 ## Adjust lease payments
 
@@ -48,7 +48,7 @@ Complete the following steps to revalue lease payments that are tied to an index
 
 The index revaluation process can also be set up to run in batch by using the **Run in the Background** tab.
 
-4. Select the filters for selecting leases that will be included in the backgroun processing and click **OK**.
+4. Select the filters for selecting leases that will be included in the background processing and click **OK**.
 5. The **Index Rate revaluation preview** dialog will open. This page displays the leases that will be revalued. It will also display the asset and liability adjustments or the variable payment adjustments. To prevent leases from being revalued, select only the leases that should be revalued. If you don't select any leases, all leases will be revalued. To revalue the lease payments, click **OK**.
 6. To view the transactions that are created on a specific index revaluation process, select that process ID, and then select **Transactions**. A dialog will open that shows the details of the transactions that were created during processing.
 
@@ -57,14 +57,14 @@ The index revaluation process can also be set up to run in batch by using the **
 
 ## ASC 842 Leases – Index Revaluation
 
-To view the effects of the lease revaluation process on ASC 842 leases, navigate to the payment schedule for the lease. Only the variable payments on or after the revaluation date has been changed due to the index revaluation [*are displayed? Something is missing from this* *the system display the updated variable payments after index revaluation* ]. The amortization and depreciation schedules remain unchanged. When you create an invoice with a variable payment, the variable payment will be debited to the Variable payment posting account, and the variable payment amount will also be added to the credit entry to the vendor or Lease payment posting account.
+To view the effects of the lease revaluation process on ASC 842 leases, navigate to the payment schedule for the lease. Only the variable payments on or after the revaluation date has been changed because of the index revaluation are displayed. The amortization and depreciation schedules remain unchanged. When you create an invoice with a variable payment, the variable payment will be debited to the Variable payment posting account, and the variable payment amount will also be added to the credit entry to the vendor or Lease payment posting account.
 
-The payment schedule lines in the lease details form are automatically updated with a new line indicating the new index rate and a column showing how line was created -- either manually or through the index revaluation process.
+The payment schedule lines in the lease details form are automatically updated with a new line indicating the new index rate and a column showing how line was created–either manually or through the index revaluation process.
 
 ## IFRS 16 Leases – Index Revaluation
 
-To view the effects of the lease revaluation process on IFRS 16 leases, navigate to the lease details for the adjusted lease. The Lease term and Asset useful life fields have been updated to reflect the passage of time from the Commencement date or Modification date to the Revaluation date. Also, the payment schedule lines have updated to reflect the new payments on the lease as well as the new index rate and how the line was created.
+To view the effects of the lease revaluation process on IFRS 16 leases, navigate to the lease details for the adjusted lease. The Lease term and Asset useful life fields have been updated to reflect the passage of time from the Commencement date or Modification date to the Revaluation date. Also, the payment schedule lines have updated to reflect the new payments on the lease, as well as the new index rate and how the line was created.
 
-You can view the newly generated payment schedule that starts on therevaluation date and display the total updated payment amount. A new lease liability amortization schedule, and as asset depreciation schedule, have also been created to reflect the adjusted payment schedule. 
+You can view the newly generated payment schedule that starts on the revaluation date and display the total updated payment amount. A new lease liability amortization schedule, and as asset depreciation schedule, have also been created to reflect the adjusted payment schedule. 
 
 The journal entry has automatically posted the adjustment journal entry to account for the change in lease payments related to the index revaluation.
