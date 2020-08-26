@@ -49,7 +49,10 @@ The following features are included in this release. The feature titles link to 
 - [Experimentation in Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
 - [Support serial number registration on outbound transfer order shipments from POS](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
 - Process credit cards without a hardware station<br> - For more information, see [Process credit cards without a hardware station](../dev-itpro/cnp-pos.md).
-
+- Cookie consent module<br> - For more information, see [Cookie consent module](../cookie-consent-module.md).
+- Navigation menu module<br> - For more information, see [Navigation menu module](../nav-menu-module.md).
+- Social share module<br> - For more information, see [Social share module](../social-share-module.md).
+- Gift card balance check module<br> - For more information, see [Gift card module](../add-giftcard.md).
 
 
 ## Additional resources
