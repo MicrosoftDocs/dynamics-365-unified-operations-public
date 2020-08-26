@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-You can move your Finance and Operations environments from on-premises (hosted on your own infrastructure) to the Azure cloud. The following are the steps needed to do so.
+You can move your Finance + Operations on-premises environments (hosted on your own infrastructure) to the Azure cloud. The following are the steps needed to do so.
 
 ## Cloud subscription licenses
 
@@ -105,79 +105,81 @@ It is likely that you will need to make some changes to the integration design p
 
 ## Migrating document handling attachments to your sandbox
 
-Document handling attachments for Dynamics 365 for Finance and Operations on-premises are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
+Document handling attachments for Finance + Operations on-premises environments are stored in a file share, which the cloud version does not support. With the following procedure you can copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request Dynamics Support Engineering to copy them from your sandbox to production.
 
-1.	Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
-2.	Open a Support Request to get the name of the sandbox Azure storage account and a (time-limited) SAS token for the documents container. Update the corresponding placeholders in the PowerShell script below. Also update the placeholders for your temporary folder, and for your Finance and Operations transactional database, from the environment details in LCS.
-3.	Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
-  ```powershell
-#Upload F&O on-prem document handling attachments to Azure storage account
-#
-$filesPath = "<TEMP_ATTACHMENTS_FOLDER_PATH>"
-$dBHostName = "<DATABASE_SERVER>.database.windows.net"
-$dBName = "<DATABASE_NAME>"
-$dBUsername = "<DATABASE_USER>"
-$dBPassword  = "<DATABASE_PASSWORD>"
-$storageAccountName = "<STORAGE_ACCOUNT_NAME>"
-$sasToken = "<SAS_TOKEN>"
+1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox AOSs. You can do this by, e.g. uploading a zip of the attachments and unpacking it on the target. If you do not have remote desktop access (e.g. for a self-service environment), then you can use a different VM instead, which for reasonable conversion performance, should be in the same Azure Data Center as the target sandbox. If you are not using the AOS, you will need to whitelist your VM for access to the sandbox's Azure SQL instance.
+2. Open a support request to get the name of the sandbox Azure storage account and a (time-limited) SAS token for the documents container. Update the corresponding placeholders in the PowerShell script below. Also update the placeholders for your temporary folder, and for your Finance and Operations transactional database, from the environment details in LCS.
+3. Execute the following PowerShell script on the sandbox AOS (or other VM) to upload the document handling files to the storage account and create the required metadata for each file.
 
-[Reflection.Assembly]::LoadWithPartialName("System.Security.Cryptography") #Load crypto
-$cryptoObj = [System.Security.Cryptography.SHA256]::Create()
-$StorageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
-foreach ($file in Get-ChildItem $filesPath) 
-{
-    try
+	```powershell
+	#Upload F&O on-prem document handling attachments to Azure storage account
+	#
+	$filesPath = "<TEMP_ATTACHMENTS_FOLDER_PATH>"
+	$dBHostName = "<DATABASE_SERVER>.database.windows.net"
+	$dBName = "<DATABASE_NAME>"
+	$dBUsername = "<DATABASE_USER>"
+	$dBPassword  = "<DATABASE_PASSWORD>"
+	$storageAccountName = "<STORAGE_ACCOUNT_NAME>"
+	$sasToken = "<SAS_TOKEN>"
+
+	[Reflection.Assembly]::LoadWithPartialName("System.Security.Cryptography") #Load crypto
+	$cryptoObj = [System.Security.Cryptography.SHA256]::Create()
+	$StorageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
+	foreach ($file in Get-ChildItem $filesPath) 
 	{
-	    $blob = (Set-AzStorageBlobContent -Context $StorageContext -Container documents -File $file.FullName -Blob "$($file.Name)" -Force).ICloudBlob
+	    try
+		{
+		    $blob = (Set-AzStorageBlobContent -Context $StorageContext -Container documents -File $file.FullName -Blob "$($file.Name)" -Force).ICloudBlob
+		}
+		catch
+		{
+			Write-Host "Could not upload $($file.Fullname) to blob"
+			Write-Host $_
+		}
+	    if($blob)
+	    {
+	        #Write-Host "Processing $($file.Fullname)..."
+	        #FileHash:
+	        $fileBytes = [System.IO.File]::ReadAllBytes($file.FullName)
+	        $hashBytes = $cryptoObj.ComputeHash($fileBytes)
+	        $encodedHash = [System.Convert]::ToBase64String($hashBytes)
+	        #FullFileName:
+	        $origFileName = (Invoke-Sqlcmd -Query "SELECT ORIGINALFILENAME FROM DOCUVALUE WHERE FILEID = '$($file.Name)'" -ServerInstance $dBHostName -Database $dBName -Username $dBUsername -Password $dBPassword).ORIGINALFILENAME
+	        if ($origFileName.Length -eq 0)
+	        {
+	            $origFileName = (Invoke-Sqlcmd -Query "SELECT ORIGINALFILENAME FROM DOCUDELETEDVALUE WHERE FILEID = '$($file.Name)'" -ServerInstance $dBHostName -Database $dBName -Username $dBUsername -Password $dBPassword).ORIGINALFILENAME
+	        }
+	        if ($origFileName.Length -eq 0)
+	        {
+	            Write-Host "Missing DOCUVALUE $($file.Name)"
+	        }
+	        else
+	        {
+   	         $nameBytes  = [System.Text.Encoding]::UTF8.GetBytes($origFileName)
+  	          $encodedName =  [System.Convert]::ToBase64String($nameBytes)
+  	          #Write-Host "Base64 encoded original filename $encodedName."
+  	          $blob.Metadata["FileHash"] = $encodedHash
+ 	           $blob.Metadata["FileSize"] = $file.Length
+ 	           $blob.Metadata["FullFileName"] = $encodedName
+ 	           $blob.SetMetadata()
+	            Write-Host "Uploaded $($file.Fullname)"
+	        }
+	    }    
 	}
-	catch
-	{
-		Write-Host "Could not upload $($file.Fullname) to blob"
-		Write-Host $_
-	}
-    if($blob)
-    {
-        #Write-Host "Processing $($file.Fullname)..."
-        #FileHash:
-        $fileBytes = [System.IO.File]::ReadAllBytes($file.FullName)
-        $hashBytes = $cryptoObj.ComputeHash($fileBytes)
-        $encodedHash = [System.Convert]::ToBase64String($hashBytes)
-        #FullFileName:
-        $origFileName = (Invoke-Sqlcmd -Query "SELECT ORIGINALFILENAME FROM DOCUVALUE WHERE FILEID = '$($file.Name)'" -ServerInstance $dBHostName -Database $dBName -Username $dBUsername -Password $dBPassword).ORIGINALFILENAME
-        if ($origFileName.Length -eq 0)
-        {
-            $origFileName = (Invoke-Sqlcmd -Query "SELECT ORIGINALFILENAME FROM DOCUDELETEDVALUE WHERE FILEID = '$($file.Name)'" -ServerInstance $dBHostName -Database $dBName -Username $dBUsername -Password $dBPassword).ORIGINALFILENAME
-        }
-        if ($origFileName.Length -eq 0)
-        {
-            Write-Host "Missing DOCUVALUE $($file.Name)"
-        }
-        else
-        {
-            $nameBytes  = [System.Text.Encoding]::UTF8.GetBytes($origFileName)
-            $encodedName =  [System.Convert]::ToBase64String($nameBytes)
-            #Write-Host "Base64 encoded original filename $encodedName."
-            $blob.Metadata["FileHash"] = $encodedHash
-            $blob.Metadata["FileSize"] = $file.Length
-            $blob.Metadata["FullFileName"] = $encodedName
-            $blob.SetMetadata()
-            Write-Host "Uploaded $($file.Fullname)"
-        }
-    }    
-}
-  ```
-4.	Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
-  ```sql
-update DOCUVALUE
-  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
-  STORAGEPROVIDERID = 1
-where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
-  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
+	```
+	
+4. Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
+	```sql
+	update DOCUVALUE
+	  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 	'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
+	  STORAGEPROVIDERID = 1
+	where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
+	  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
 
-update DOCUDELETEDVALUE
-  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
-  STORAGEPROVIDERID = 1
-where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
-  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
-  ```
+	update DOCUDELETEDVALUE
+	  set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), 
+	  STORAGEPROVIDERID = 1
+	where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
+	  and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
+	```
 5.	Test a sample of the document handling attachments to ensure they are now accessible in the sandbox environment.
