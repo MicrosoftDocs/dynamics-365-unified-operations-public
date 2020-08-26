@@ -80,6 +80,14 @@ Employees can view and request time away from work within Microsoft Teams. They 
 
 ## Coming soon
 
+## Human Resources app in Teams preview features
+ 
+### Notifications
+Submitters and approvers of time-off request will be notified in the HR app in Teams. Approvers will be able to take action (approve or deny) time-off requests and submitters will be notified if the request was approved or denied.
+ 
+### Manager time-off calendar
+Managers will be able to see direct reports approved and pending time-off in a calendar view, allowing for easy understanding of when employees are away from work.
+
 ## Checklist entities included in Common Data Service
 
 Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
