@@ -69,7 +69,7 @@ The following modules can be used in a header module:
 To create a header fragment, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
+1. In the **New fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.
 1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill Screen**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Cookie consent**, **Header**, and **Promo banner** modules, and then select **OK**.
