@@ -45,6 +45,8 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [feature](link to release plan)
+- [Support for adding items to purchase orders during receiving in POS](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
+
 
 
 ## Additional resources
