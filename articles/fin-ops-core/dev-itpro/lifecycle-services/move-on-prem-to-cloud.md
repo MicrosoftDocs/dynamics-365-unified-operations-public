@@ -70,7 +70,7 @@ It is likely that you will need to make some changes to the integration design p
 5. Restore the Admin account and AAD tenant ID information. Also remove the SF schema and its tables, if present.
 
 	```sql
-	UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', 		IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
+	UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
 	UPDATE SYSSERVICECONFIGURATIONSETTING set VALUE='<preserved VALUE>' where name = 'TENANTID'
 	UPDATE POWERBICONFIG SET TENANTID='<preserved TENANTID>'
 	UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
