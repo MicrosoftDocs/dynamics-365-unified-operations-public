@@ -172,8 +172,7 @@ Document handling attachments for Finance + Operations on-premises environments 
 
 	```sql
 	update DOCUVALUE
-	set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'),
-  	STORAGEPROVIDERID = 1
+	set ACCESSINFORMATION = replace(ACCESSINFORMATION, 'file://<SOURCE_PREFIX>/documents/', 'https://<STORAGE_ACCOUNT>.blob.core.windows.net/documents/'), STORAGEPROVIDERID = 1
 	where STORAGEPROVIDERID = 4 --4 for LBD filesystem, 1 for Azure blob
 	and ACCESSINFORMATION like 'file://<SOURCE_PREFIX>/documents/%'
 
