@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process for creating a monthly journal entry to reclassify a portion of the lease liability as shor term. When the schedule that's selected in the batch process is **Short-term lease liability reclass**, a journal entry will be created. This entry is used to post current portion of the lease liability on the last day of the month. As the same time, reversal entry will be posted as of the first day of the next month.
+This topic describes the process for creating a monthly journal entry to reclassify a portion of the lease liability as short term. When the schedule that's selected in the batch process is **Short-term lease liability reclass**, a journal entry will be created. This entry is used to post current portion of the lease liability on the last day of the month. As the same time, reversal entry will be posted as of the first day of the next month.
 
 The short-term portion of the lease liability is displayed on the liability amortization schedule. When the journal entry is posted, the **Liability reclass journal created** column will become enabled and the journal ID will also populate on the schedule.
 
