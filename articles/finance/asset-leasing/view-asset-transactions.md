@@ -45,7 +45,7 @@ The **Liability transactions** page displays the transactions that either increa
 ## Asset transactions
 To view the lease asset transactions, select a lease from the **Lease Summary** page and click **Books** to open the lease books that are attached to the lease record. Then click **Asset transactions**.
 
-The **Asset transaction** page diplays the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits will display as positive values and credits shown as negative values, which is similar to the **Liability transactions** dialog. The carrying balance of the right-of-use asset, net of accumulated depreciation, is shown at the bottom left area of the page.
+The **Asset transaction** page displays the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits will display as positive values and credits shown as negative values, which are similar to the **Liability transactions** dialog. The carrying balance of the right-of-use asset, net of accumulated depreciation, is shown at the bottom-left area of the page.
 
 ## Expenses transactions
 To view the lease expense transactions, select a lease from the **Lease Summary** page and click **Books** to open the attached lease books on the lease record. Then click **Expense transactions**. This page will display all the expenses posted against a lease, such as interest expense, depreciation expense, and any executory costs.
