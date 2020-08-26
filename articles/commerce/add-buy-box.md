@@ -64,7 +64,7 @@ Themes can be used to remove or change the order of buy box product properties a
 
 - **Heading tag** – This property defines the heading tag for the product title. If the buy box is at the top of the page, this property should be set to **h1** to meet accessibility standards. 
 
-- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that have similar looks to the currently viewed item. This feature is available as of Commerce release 10.0.13.
+- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
 
 ## Modules that can be used in a buy box module
 
