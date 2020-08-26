@@ -40,7 +40,7 @@ The Dynamics 365 Commerce online starter kit provides two prebuilt script inject
 
 ## External script module
 
-The external script module allows you to add Javascript from external sources by providing a URL that points to a valid Javascript file. Once the module is added using Commerce site builder, the script URL can be added to the **Script source** property.
+The external script module allows you to add JavaScript from external sources by providing a URL that points to a valid JavaScript file. After the module is added using Commerce site builder, the script URL can be added to the **Script source** property.
 
 The external script module includes the **execute script asynchronously** and **defer script execution** configuration properties. The **execute script asynchronously** property specifies whether the script should be executed asynchronously. The **defer script execution** property specifies whether the script should be executed when the page has finished parsing configuration properties.
 
@@ -73,7 +73,7 @@ Next, open the **my-script-injector.definition.json** file and change the **"$ty
 
 Script modules contain a special **"attributes"** section that defines where the module can be placed. The attributes include **"allowInBodyBegin"**, **"allowInBodyEnd"**, and **"allInHead"**, and the attribute values can be **true** or **false**. The default values for all three attributes are **false**, so it's important to specify where the module can be loaded.
 
-Configurations can also be added to allow script to be added from within Commerce site builder.  
+Configurations can also be added to allow the script to be added from within Commerce site builder.  
 
 The following example shows a configured custom script injector definition file.
 
@@ -120,9 +120,9 @@ The following example shows a configured custom script injector definition file.
 
 #### Modify the script injector view file
 
-You can modify the **my-script-injector.tsx** React file and the **my-script-injector.view.tsxAnalytics.tsx** view file as you require. 
+You can modify the **my-script-injector.tsx** React file and the **my-script-injector.view.tsxAnalytics.tsx** view file, if needed. 
 
-To create a custom script injector you can use **HtmlHeadInclude**, a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. It is simple to use, and you can add any elements you want in your view file between the **\<HtmlHeadInclude\>** tags as shown in the example below.
+To create a custom script injector you can use **HtmlHeadInclude**, which is a React [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to insert elements into the head of the page. It is simple to use, and you can add any elements you want in your view file between the **\<HtmlHeadInclude\>** tags, as shown in the following example.
 
 ```typescript
 import { HtmlHeadInclude } from '@msdyn365-commerce/core-internal';
@@ -145,7 +145,7 @@ export default (props: IMyScriptInjectorViewProps) => {
 > [!NOTE]
 > Inline script content should be saved as a string and then inserted into the script, and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
 
-The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. However, unlike scripts these elements do not need a **data-load-point** attribute as they will always be placed in the head.
+The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements do not need a **data-load-point** attribute as they will always be placed in the head.
 
 After a custom script injector module is deployed to a Dynamics 365 Commerce environment, it will appear in site builder.
 
