@@ -79,7 +79,6 @@ The following example shows a configured custom script injector definition file.
 
 ```json
 {
-{
     "$type": "scriptModule",
     "friendlyName": "My Script Injector",
     "name": "my-script-injector",
