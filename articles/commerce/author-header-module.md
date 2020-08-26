@@ -73,15 +73,15 @@ To create a header fragment, follow these steps.
 1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill Screen**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Cookie consent**, **Header**, and **Promo banner** modules, and then select **OK**.
-1. In the properties pane of the **Promo banner** module, select **+ Add Message**, and then select **Message**.
+1. In the properties pane of the **Promo banner** module, select **Add Message**, and then select **Message**.
 1. In the **Message** dialog box, add text and links for the promotional content, and then select **OK**.
 1. In the properties pane of the **Cookie consent** module, add and configure text and a link to the site privacy page.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Navigation menu** module, and then select **OK**.
 1. In the property pane for the navigation menu module, under **Source for navigation menu**, select **Retail Server**.
-1. In the property pane for the navigation menu module, under **Static menu items**, select **+ Add Menu item**, and then select **Menu item**. 
+1. In the property pane for the navigation menu module, under **Static menu items**, select **Add Menu item**, and then select **Menu item**. 
 1. In the **Menu item** dialog box, under **Menu Item Text** enter "Contact."
-1. In the **Menu item** dialog box, under **Menu Item Link target** select **+ Add a link**.
+1. In the **Menu item** dialog box, under **Menu Item Link target** select **Add a link**.
 1. In the **Add a link** dialog box, select the URL for the site's "Contact" page, and then select **OK**.  
 1. In the **Menu item** dialog box, select **OK**.
 1. In the **Search** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
@@ -92,7 +92,7 @@ To create a header fragment, follow these steps.
 1. In the property pane for the cart icon module, configure the properties as needed. If you want the cart icon to display a cart summary (also known as a mini cart) when users hover over it, select **Show mini cart**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
-To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
+To help ensure that a header appears on every page, follow these steps on every page template that is created for the site.
 
 1. In the **Header** slot of the **Default page** module, add the footer fragment that you created.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
