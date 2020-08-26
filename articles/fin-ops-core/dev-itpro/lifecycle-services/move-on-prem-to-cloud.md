@@ -155,19 +155,19 @@ Document handling attachments for Finance + Operations on-premises environments 
 	        }
 	        else
 	        {
-   	         $nameBytes  = [System.Text.Encoding]::UTF8.GetBytes($origFileName)
-  	          $encodedName =  [System.Convert]::ToBase64String($nameBytes)
-  	          #Write-Host "Base64 encoded original filename $encodedName."
-  	          $blob.Metadata["FileHash"] = $encodedHash
- 	           $blob.Metadata["FileSize"] = $file.Length
- 	           $blob.Metadata["FullFileName"] = $encodedName
- 	           $blob.SetMetadata()
+	            $nameBytes  = [System.Text.Encoding]::UTF8.GetBytes($origFileName)
+	            $encodedName =  [System.Convert]::ToBase64String($nameBytes)
+	            #Write-Host "Base64 encoded original filename $encodedName."
+	            $blob.Metadata["FileHash"] = $encodedHash
+	            $blob.Metadata["FileSize"] = $file.Length
+	            $blob.Metadata["FullFileName"] = $encodedName
+	            $blob.SetMetadata()
 	            Write-Host "Uploaded $($file.Fullname)"
 	        }
 	    }    
 	}
 	```
-	
+
 4. Update the DocuValue and DocuDeletedValue records to reference the target storage location by running the following T-SQL commands in SSMS.
 	```sql
 	update DOCUVALUE
