@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Purchase orders
-description: This topic describes how to fix issues that you might encounter while working with Purchase Orders.
+title: Troubleshoot Inventory Management
+description: This topic describes how to fix issues that you might encounter while working with Inventory Management.
 author: SmithaNataraj
 manager: tfehr
 ms.date: 05/07/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
