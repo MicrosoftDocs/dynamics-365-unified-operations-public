@@ -159,7 +159,7 @@ Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificate
 
 ![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
 
-The party that is issuing invoices must use a qualified signature certificate to sign each [FatturaPA file](http://www.fatturapa.gov.it/export/fatturazione/en/b-2.htm) that is transmitted to the [Exchange System](http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
+The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the Exchange System - **SDI** (*Sistema di Interscambio*). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
 
 Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
 
