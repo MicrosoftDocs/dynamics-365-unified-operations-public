@@ -36,7 +36,7 @@ This topic describes how to prepare to go live with a project by using Microsoft
 There are two different deployment topologies for LCS: the standard [Cloud Deployment](../../dev-itpro/deployment/cloud-deployment-overview.md) topology and the new [Self-Service Deployment](../../dev-itpro/deployment/infrastructure-stack.md) topology. Both follow the same preparation for go-live, but the SLA's and some of the process steps are different. 
 
 [!IMPORTANT] 
-You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service environments. 
+You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service environments. 
 
 Cloud 
 ![Cloud deployment](./media/prepare-for-go-live-microsoft-managed.PNG)
