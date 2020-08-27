@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-There are two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md)for production and sandbox, Microsoft Managed and Self-Service. Both follow the same preparation for go-live, but the Service Level Agreements (SLA's) and some of the process steps are different. 
+In LCS, there are two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md) for production and sandbox, Microsoft Managed and Self-Service. Both follow the same preparation for go-live, but the Service Level Agreements (SLA's) and some of the process steps are different. 
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
