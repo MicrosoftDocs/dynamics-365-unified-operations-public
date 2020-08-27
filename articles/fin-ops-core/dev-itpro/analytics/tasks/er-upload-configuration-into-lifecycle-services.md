@@ -5,7 +5,7 @@ title: ER Upload a configuration into Lifecycle Services
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/27/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,23 +30,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new [Electronic reporting (ER)](../general-electronic-reporting.md) [configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level asset library](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library) of Microsoft Lifecycle Services (LCS).
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level asset library](../../lifecycle-services/asset-library.md) of Microsoft Lifecycle Services (LCS).
 
-In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. Access to LCS is also required for completion of these steps.
+In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the procedure, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). Access to LCS is also required to complete these steps.
 
 1. Sign in to the application by using one of the following roles:
     - Electronic reporting developer
     - System administrator
-2. Go to Organization administration \> Workspaces \> Electronic reporting.
-3. Select 'Litware, Inc.' and set it as active.
-4. Click Configurations.
+2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+3. Select **Litware, Inc.** and mark it as **Active**.
+4. Click **Configurations**.
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> Make sure that the current Finance user is the member of an LCS project the asset library of which he wants to [access](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library#asset-library-support) for importing ER configurations.
+> Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [asset library](../../lifecycle-services/asset-library#asset-library-support.md) for importing ER configurations.
 
 > [!NOTE]
-> Note that an LCS project cannot be accessed from an ER repository by a Finance application's user that represents a different domain comparing with the domain (tenant) of the using Finance application. The empty list of LCS projects will be shown for such user not allowing him to import ER configurations from LCS project-level asset library. To access LCS project-level asset libraries from an ER repository for importing ER configurations, sign in to the Finance application with credentials of a user belonging to the tenant (domain) for which the current Finance instance has been provisioned.
+> You can't access an LCS project from an ER repository that represents a different domain than the domain used in Finance. If you do try this, an empty list of LCS projects will be shown and you won't be able to import ER configurations from the LCS project-level asset library. To access LCS project-level asset libraries from an ER repository for importing ER configurations, sign in to the Finance application with the credentials of a user that belongs to the tenant (domain) for which the current Finance instance has been provisioned.
 
 ## Create a new data model configuration
 1. Click Create configuration to open the drop dialog.
