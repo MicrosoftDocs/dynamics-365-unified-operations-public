@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual reporting
-description: This topic walks through an example of the capaibility in Asset leasing to fulfill both IFRS and statutory reporting requirements. 
+description: This topic walks through an example of the capability in Asset leasing to fulfill both IFRS and statutory reporting requirements. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/10/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through an example of the capaibility in Asset leasing to fulfill both IFRS and statutory reporting requirements. Familiarity with posting layers in Dynamics 365 Finance is required will make the example easier to understand.
+This topic walks through an example of the capability in Asset leasing to fulfill both IFRS and statutory reporting requirements. Familiarity with posting layers in Dynamics 365 Finance is required will make the example easier to understand.
 
 ## Fact Pattern
 
@@ -67,7 +67,7 @@ The statutory book is a cash-basis book where the company will account for the l
 |     Accounting Framework                       	|     Cash basis     	|
 |     Lease Term / Useful life Set Up            	|     0.00           	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00           	|
-|     Short term threshold                       	|     0              	|
+|     Short-term threshold                       	|     0              	|
 |     Low Value Threshold                        	|     0              	|
 |     Pay to Vendor                              	|     No             	|
 
@@ -110,7 +110,7 @@ The entries for the Payment schedule lines are as follows.
 |     Payment frequency    	|     Monthly       	|
 |     Payment amount       	|     1,000         	|
 
-In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer 1. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
+In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer 1. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the first month of the lease.
 
 *There seemed to be a table at this location in the Word document, but I'm not sure what the columns and rows are intended to be. Something didn't come across the right way.*
 *Considering to reduce adjust headers since GitHub could not recognize multiple headers. Number of columns are too many, consider to reduce them as well.*
@@ -123,7 +123,7 @@ The first journal entry will record the lease expense under the statutory book. 
 
 Assume the following journal entry is produced for the statutory book from the payment schedule.
 
-### Lease payment -- 1/31/2020 -- JE 100
+### Lease payment--1/31/2020--JE 100
 
 |     Account type    	|     Account No    	|     Layer      	|     Account Description    	|     Debit    	|     Credit    	|
 |---------------------	|-------------------	|----------------	|----------------------------	|--------------	|---------------	|
