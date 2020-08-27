@@ -65,7 +65,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 <td>Select the <strong>Help</strong> option (<strong>?</strong>) in the upper-right corner of the app. Select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft.</td>
 </tr>
 <tr class="odd">
-<td>Open a support ticket with the Support team.</td>
+<td>Open a support ticket with the Microsoft Support team.</td>
 <td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, the <strong>Support</strong> tile is a tool that helps you manage support incidents. To submit issues directly to Microsoft, go to the <strong>Support</strong> tile in your LCS project. From there, you can submit issues in two ways:
 <ul>
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
