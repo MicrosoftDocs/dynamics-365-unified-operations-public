@@ -1212,6 +1212,18 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+      - name: Bahrain
+        items: 
+        - name: Bahrain overview
+          href: localizations/bahrain.md
+        - name: Configure invoice layout for Bahrain
+          href: localizations/emea-bhr-invoice-layout.md
+        - name: VAT declaration for Bahrain
+          href: localizations/emea-bhr-vat-declaration.md
+        - name: Invoice issue deadline
+          href: localizations/gcc-invoice-issue-deadline.md
+        - name: Customer electronic invoices
+          href: localizations/emea-ita-e-invoices.md
       - name: Belgium
         items:
         - name: Belgium overview
