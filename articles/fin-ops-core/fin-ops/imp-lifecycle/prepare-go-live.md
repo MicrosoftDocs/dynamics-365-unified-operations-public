@@ -33,25 +33,25 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-In LCS, there are two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md) for production and sandbox, Microsoft Managed and Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA's) and some of the process steps are different. 
+Production and Sandbox can be deployed only in two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md), Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different. 
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
 
 The following table lists all the steps in the process, the environment type to which each step applies with the expected duration and who is responsible to take the action.
 
-|  | Action | Topology | Duration/When | Who | Notes |
+|  | Action | Environment Type | Duration/When | Who | Notes |
 |-|-|-|-|-|-|
 | 1 | Update Go-live date in LCS | Both | At the latest 2-3 months in advance | Customer/Partner | The milestone dates should be kept up to date on an ongoing basis |
 | 2 | Complete and send pre go-live checklist | Both | After UAT complete | Customer/Partner | Follow the instructions provided in the "FastTrack Go-live Assessment" section later in this topic. |
 | 3 | Project Go-Live assessment (FastTrack Essentials) | Both | 3-business days for initial report, plus additional time for mitigation, if required | Microsoft-FastTrack Solution Architect | Solutions Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 |  | Go-live Assessment workshop (FastTrack) | Both | To coordinate with architect assigned | Microsoft-FastTrack Solution Architect |  |
-| 4 | Release for production deployment | Cloud | Immediate upon successfully completed assessment | Microsoft-FastTrack Solution Architect | Do not submit production request until the assessment is successfully completed. |
-|  |  | Self-Service | Immediate upon successfully completed assessment and Configure button is enabled | Microsoft-FastTrack Solution Architect | For Self-Service Deployment topology, the Configure button remains disabled until the assessment is complete. |
-| 5 | Production deployment request | Cloud | Self-service | Customer/Partner | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
+| 4 | Release for production deployment | Microsoft Managed | Immediate upon successfully completed assessment | Microsoft-FastTrack Solution Architect | Do not submit production request until the assessment is successfully completed. |
+|  |  | Self-Service | Immediate upon successfully completed assessment and Configure button is enabled | Microsoft-FastTrack Solution Architect | For Self-Service deployment, the Configure button remains disabled until the assessment is complete. |
+| 5 | Production deployment request | Microsoft Managed | Self-service | Customer/Partner | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
 |  |  | Self-Service | Self-service | Customer/Partner | Once the assessment is complete, Configure button will be enabled and customer will be able to request the production deployment. |
 |  | Sizing | Both | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Microsoft-Dynamic Service Engineering (DSE) | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
-|  | Deployment | Cloud | 48 hours | Microsoft-Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
+|  | Deployment | Microsoft Managed | 48 hours | Microsoft-Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
 |  |  | Self-Service | 1-2 hours | Microsoft-FastTrack Solution Architect | The deployment could take from 1-2 hours after the assessment has completed and the production environment has been requested. Please review this topic, [Deploy a new environment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
 | 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure#apply-updates.md). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
 |  | Package installation | Both | Minimum 5 hours lead time and 4 hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
@@ -84,7 +84,7 @@ During the UAT phase, you must test all the business processes that you've imple
 - Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users.
 - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
-- Run the [Customization analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md) and resolve critical issues.
+- Run the [Customization Analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md) and resolve critical issues.
 - Complete the Performance testing.
 - Document all features, and obtain approval and sign-off from the customer.
 
@@ -128,6 +128,6 @@ We recommend that you select a service account, for example a generic user accou
 
 Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.
 
-After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For **Microsoft Managed** environment deployments the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For **Self-service** environment, the deployment will take from 1 to 2 hours after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
+After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For **Microsoft Managed** deployments, the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For **Self-Service** deployment, the deployment will take from 1 to 2 hours after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
 
 When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. 
