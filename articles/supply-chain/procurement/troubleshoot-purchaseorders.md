@@ -78,7 +78,19 @@ It is possible to reset the purchase order to a draft state using Procurement an
 The issue  will be resolved with this [KB](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
 ## One or more accounting distributions is either over-distributed or under-distributed.
+
+**Fix**
+This is an issue that could occur due to inconsistency in purchase order distributions. 
+
+It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+
 ## This action can only be completed after the line number %1 is fully distributed.
+
+**Fix**
+This is an issue that could occur due to inconsistency in purchase order distributions. 
+
+It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+
 ## Object reference not set, for purchase order confirmation, or exception has been thrown by the target of an invocation, for vendor invoice posting.
 
 **Fix**
