@@ -1910,7 +1910,7 @@
       - name: Engineering change management overview
         href: product-engineering/product-engineering-overview.md
       - name: Engineering change management parameters
-        href: product-engineering/engineering-paramters.md
+        href: product-engineering/engineering-parameters.md
       - name: Establish common values for engineering change management
         href: product-engineering/engineering-change-management-setup.md
       - name: Engineering organizations and data ownership rules
