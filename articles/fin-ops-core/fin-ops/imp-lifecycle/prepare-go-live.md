@@ -36,7 +36,7 @@ This topic describes how to prepare to go live with a project by using Microsoft
 There are two different deployment topologies for LCS: the standard [Cloud Deployment](../../dev-itpro/deployment/cloud-deployment-overview.md) topology and the new [Self-Service Deployment](../../dev-itpro/deployment/infrastructure-stack.md) topology. Both follow the same preparation for go-live, but the SLA's and some of the process steps are different. 
 
 [!IMPORTANT] 
-You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service topology. 
+You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service environments. 
 
 [!Cloud deployment](./media/Environment_Microsoft_Managed.PNG)
 
@@ -92,7 +92,7 @@ During the UAT phase, you must test all the business processes that you've imple
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users.
 - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
 - Run the [Customization analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md) and resolve critical issues.
-- Complete Performance testing
+- Complete the Performance testing.
 - Document all features, and obtain approval and sign-off from the customer.
 
 Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:
