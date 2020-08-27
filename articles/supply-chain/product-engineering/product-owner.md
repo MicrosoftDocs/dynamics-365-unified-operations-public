@@ -39,7 +39,7 @@ Product owners are global settings and are therefore available to all legal enti
 
 To create and populate a product owner group:
 
-1. Go to **Product engineering \> Setup \> Product owners**.
+1. Go to **Engineering change management \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
 3. In the **Product owner** field, enter a name for the group. <!-- KFM: What kind of value? How is this different from the name? BNG it is like when you use Name and Description for other fields, Name would be Product owner and name would be description, labels should be name and description here... KFM: OK, I wrote it like that for now (though it looks kind of silly). If we change these labels, we need to remember to update these steps.  -->
 4. In the **Name** field, enter a description of the group.

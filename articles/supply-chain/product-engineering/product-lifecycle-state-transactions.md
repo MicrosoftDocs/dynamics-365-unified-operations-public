@@ -64,7 +64,7 @@ Make the following settings on **General** FastTab:
 
 | Setting | Description |
 | --- | --- |
-| **Default when released to a legal entity** | This setting is not applicable for engineering products. The lifecycle state of an engineering product version after creation in the engineering legal entity is the specified in its engineering change category. When the product is released to another legal entity, the lifecycle state for the product copied. In other words, when the engineering product is released in a legal entity it will have the same lifecycle state as it had in the engineering legal entity. It can be overwritten at the company. For standard products: Set to *Yes* if this state should be applied by default for all products when they are first released. Set to *No* for states that will be manually applied later.  <!-- KFM: Are there any special cases for engineering products (such as versions)? BNG actually, it only applies to standard products, I changed the description above--> |
+| **Default when released to a legal entity** | This setting is not applicable for engineering products. The lifecycle state of an engineering product version after creation in the engineering legal entity is the specified in its engineering change category. When the product is released to another legal entity, the lifecycle state for the product copied. In other words, when the engineering product is released in a legal entity it will have the same lifecycle state as it had in the engineering legal entity. It can be overwritten at the company. For standard products: Set to *Yes* if this state should be applied by default for all products when they are first released. Set to *No* for states that will be manually applied later. |
 | **Is active for planning** | Set this to *Yes* to include products in this state in master planning and BOM-level calculations. Set to *No* to exclude products in this state from those calculations. |
 
 ## The Enabled business processes FastTab
@@ -72,36 +72,14 @@ Make the following settings on **General** FastTab:
 Use **Enabled business processes** FastTab to control which of the available business processes can be used with products in the current lifecycle sate. The processes listed here are found automatically as follows:
 
 - The first time you save a new lifecycle state, the page loads the business processes that are currently available at that time.
-- If you add new business processes to your system, you can refresh the list on the **Enabled business processes** FastTab for an existing lifecycle state by selecting **Check for updates** on the Action pane. <!-- KFM: Is this correct? The original text wasn't clear. -->
+- If you add new business processes to your system, you can refresh the list on the **Enabled business processes** FastTab for an existing lifecycle state by selecting **Check for updates** on the Action Pane.
 
 For each process listed here, make the following settings:
 
 | Setting | Description |
 | --- | --- |
 | **Process** | This read-only value shows the name of an existing business process. |
-| **Process&nbsp;area** | <!-- KFM: What does this do? Why might I change this? --> |
+| **Process&nbsp;area** | This read-only value shows the name of an existing process area. |
 | **Policy** | Set this to one of the following to control whether and how the current process will be permitted for products in the current lifecycle state:<ul><li>**Enabled** - Allow this business process.</li><li>**Blocked** - The process is not allowed. If a user attempts to use this process on a product in this lifecycle state, the system will block it and show an error instead. For example, you might block end-of-life products from being purchased.</li><li>**Enabled with warning** - The process is allowed, but a warning will be shown. For example, you might want a prototype product to be put on a production order created by the research and development department, but other departments should be aware that they should not produce the product yet.</li></ul> |
-
-<!-- KFM: The following list doesn't seem useful to me, so I am planning to remove it. Please let me know if you think we should keep it: BNG does not add any value, we can just delete it
-
-Next to the **Is active for planning** check box, the following transactions can be controlled by the product lifecycle state:
-
-- Entering the product on a **sales quotation**
-- Entering the product on a **sales order**
-- Generating a **sales picking list** for the product
-- Creating **WBS estimates for items** for the product
-- Entering **item forecast** for the product
-- Creating a **production order** for the product
-- Reporting the product **BOM report as Finished**
-- Adding the product to the **production BOM**
-- Generating **production picking list** for the product
-- Entering the product on an **inventory transfer**
-- Entering the product on **inventory journals**
-- Entering the product on an **inventory movement** journal
-- Entering the product on an **inventory adjustment** journal
-- Entering the product on a **purchase order**
-- Entering the product on **request for quote**
-
- -->
 
 If you are customizing by adding more lifecycle state rules, you will be able to view those rules in the UI using the button **Refresh processes** in the top pane. You need to be an administrator to have access to the Refresh processes button.

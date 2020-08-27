@@ -76,7 +76,7 @@ When you use engineering change management, your product master data will always
 
 The choice of whether or not to make versions visible in inventory depends on factors such as those mentioned, plus company practice and other considerations specific to each company. You can set this option on the *engineering product category*, and this will be applicable for all products created from the engineering product category for all companies the product is released to.
 
-For products set up with logistical impact, the engineering version must be specified on each transaction. The system will propose the *latest active version*, but you can choose a different version among the various active versions available for the company. For products set up without logistical impact, the engineering version isn't specified on the transactions, but the latest active version is used by the system. For example, when creating the *production bill of material* and running *master planning*. <!-- KFM: What is this an example of? -->
+For products set up with logistical impact, the engineering version must be specified on each transaction. The system will propose the *latest active version*, but you can choose a different version among the various active versions available for the company. For products set up without logistical impact, the engineering version isn't specified on the transactions, but the latest active version is used by the system. For example, when you add a product to a *production bill of material*, the latest version will be used, and when running *master planning*, the latest version will be assumed.
 
 <a name="product-category"></a>
 
@@ -137,7 +137,9 @@ Use the grid on the **Attributes** FastTab to set up the engineering attributes 
 
 For details about how to create engineering attributes, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).
 
-Use buttons in the **Attributes** FastTab toolbar to add, remove, and arrange attributes in the grid. <!-- KFM: what does "Update existing products" do? What affect does the order have?  -->
+Use buttons in the **Attributes** FastTab toolbar to add, remove, and arrange attributes in the grid.
+
+After you make changes to the attribute selection for an engineering category that already has products based on it, you must decide whether you want to apply those changes to existing products. If so, select **Update existing products** from the **Attributes** toolbar.
 
 For each row that you add to the grid, make the following settings:
 
@@ -145,8 +147,8 @@ For each row that you add to the grid, make the following settings:
 | --- | --- |
 | **Name** | Select the attribute to add. |
 | **Value** | Select the default value for the attribute  |
-| **Mandatory** | <!-- KFM: What does this do?  -->  |
-| **Batch attribute** | <!-- KFM: What does this do?  -->  |
+| **Mandatory** | For attributes of type Boolean, setting this to *Yes* means that users must set the attribute to *Yes* (otherwise, it can be *Yes* or *No*). For other data types, this is just informational. |
+| **Batch attribute** | Controls whether the attribute should be propagated through the batch functionality. |
 | **Inheritance attribute** | <!-- KFM: What does this do?  -->  |
 
 ### The Readiness policy FastTab
@@ -157,13 +159,11 @@ Use the **Product readiness policy** drop-down list to select the readiness poli
 
 Use the **Product release policy** drop-down list to select the release policy that applies to products belonging to this category. For more information, see [Release product structure](release-product-structure.md).
 
-<!-- KFM: When I tried to create an engineering product category, I got the error "Your organization does not have an Engineering category hierarchy. Please go to Product Information Management to create an engineering product hierarchy." Maybe we should mention this and explain what to do about it. I was simply blocked and could not continue. --BNG yes - we should create that topic. You need to create an engineering product category hierarchy. You must go to the category hierarchies and create a new hierarchy that is going to be the engineering. then go to Category hierarchy roles and then associate the engineering category hierarchy just created with the engineering category hierarchy role         BNG we have modified this in the last version so it is automatically created and user does not need to do it :) -->
-
 <a name="boms-routes"></a>
 
 ## Connect bills of materials and routes to engineering versions
 
-The choice you make on the **Enforce effectivity** setting is also important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in the following: <!-- KFM: All of the following, or any of the following?  -->
+The choice you make on the **Enforce effectivity** setting is also important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in any of the following:
 
 - Product dimension
 - Quantity

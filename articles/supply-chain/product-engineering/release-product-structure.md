@@ -52,7 +52,7 @@ The following data are part of releasing engineering products:
 - **Engineering routes** - The engineering routes and their operations can be created or updated. Information about how to set this option is given later in this topic. For more information on data ownership, see [Product owner](product-owner.md).
 - **Engineering documents** - The engineering documents connected to the engineering version are created or updated.
 
-For a standard product, the BOM and the route will also be released. <!-- KFM: Are we saying that BOM and route are NOT released for engineering products? BNG BOM and route are released for both standard and engineering products. KFM: I'm not sure how to fix this. -->
+When you enable engineering change management on your system, then the release product structure is available, and standard products will also include their BOMs and routes when released.
 
 ## Product acceptance
 
@@ -138,12 +138,10 @@ These settings only apply to engineering products.
 | --- | --- |
 | **Template BOM** | When a product with a BOM is released, the lines of this template BOM will be added. This is useful for adding local components, such as packaging or instructions in the local language.  |
 | **Template route** | When a product is released with a route, the lines of this template will be added. |
-| **Copy effectivity** | <!-- KFM: What does this do? --> |
+| **Copy effectivity** | Choose whether to copy effectivity dates from the engineering company to the operational company when releasing. |
 | **Automatically add to release proposal** | Select this check box for products that should be released automatically on the engineering change order. Products belonging to engineering product categories that use this release policy can therefore be released automatically to operational company where this option is set. You can do this as part of the workflow on the engineering change order (see also [Engineering change management](engineering-change-management.md)).
 
 ### Review each product when releasing
-
-<!-- KFM: I don't understand what we are talking about in this section. I think more details are needed. For example, what/where is the **Release details** page? BNG added more info on how to find the page and process -->
 
 When engineering products with BOMs or routes are released, the parameters will be defaulted as indicated in the release policy. As a user, you can influence this on the releasing side when using the release product structure.
 
@@ -159,4 +157,4 @@ This behavior only applies when directly selecting a product for release. Produc
 
 For example: product X is assigned to product owner group *Design cabinets*. Product X is also part of the bill of material of product Y, which is assigned to product owner group *Design speakers*. If a user from product owner group *Design speakers* releases product Y and its bill of materials, product X will be released along with it.
 
-For more information, see [Product owner](product-owner.md)
+For more information, see [Product owner](product-owner.md).

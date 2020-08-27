@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project Oaktree parameters
-description: This topic describes how to configure product engineering features for Supply Chain Management.
+description: This topic describes how to configure engineering change management features for Supply Chain Management.
 author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
@@ -46,9 +46,9 @@ The following table describes the settings available on the **Release control** 
 | **Item number rule** | Choose how the item number should be defined when the product is released to a legal entity. Select *Engineering product number* if the product number in the receiving legal entity should be the same as in the engineering company. Select *Local item number sequence* if the product should take the following number in the receiving legal entity number sequence for product number.  |
 | **BOM name rule** | Choose how is the BOM name is defined when the product is received (released) in a legal entity. Select *Engineering name* or *Receiving item number*. |
 | **Route name rule** | Choose how the route name should be defined when the route of a product is received (released) in a legal entity. Select *Engineering name* or *Receiving item number*.  |
-| **Run BOM check** | Choose whether a BOM check will be run when the product is received (released) in a legal entity |
-| **Release behavior of inactive BOM** | <!-- KFM: Describe how to use this setting. --> |
-| **Release behavior of inactive route** | <!-- KFM: Describe how to use this setting. --> |
+| **Run BOM check** | Choose whether a BOM check will be run when the product is received (released) in a legal entity. |
+| **Release behavior of inactive BOM** | Choose whether to allow a product to be released when it has an inactive BOM. Options are *Accept*, *Warning only*, and *Not allowed*. |
+| **Release behavior of inactive route** | Choose whether to allow a product to be released when it has an inactive route. Options are *Accept*, *Warning only*, and *Not allowed*.|
 | **Product acceptance** | Choose whether an additional step for acceptance is needed before the product is released in the legal entity. To add the acceptance step, choose *Manual*, in which case the products will be shown on the **Open product releases** page. Select *Automatic* show the product directly on the **Released products** page in the target legal entity immediately after it is released with the release product structure. |
 
 ## The Engineering change management tab

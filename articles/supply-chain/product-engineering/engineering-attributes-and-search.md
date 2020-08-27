@@ -72,7 +72,7 @@ To view, create, or edit an engineering attribute:
     - **Tolerance action** - Choose how the system should respond when a user enters a value outside of the range specified here. Choose *Warning* to display a warning but allow the user to save the value. Choose *Not allowed* to show a warning and also disallow saving until the user corrects the value.
     - **Minimum** - Enter the minimum recommended or accepted value.
     - **Maximum** -  Enter the maximum recommended or accepted value.
-    - **Increment** - <!-- KFM: What does this do? Set to zero to disable? BNG separate topic for this. KFM: I think we should be able to provide a brief description here, but are you saying we should just remove this point? -->
+    <!-- - **Increment** -  KFM: What does this do? Set to zero to disable? BNG separate topic for this. KFM: I think we should be able to provide a brief description here, but are you saying we should just remove this point? -->
 
 ### Connect engineering attributes to an engineering product category
 
@@ -88,7 +88,8 @@ The engineering attributes connected to an engineering product category are pres
 
 ### Create an engineering product
 
-To create an engineering product, go to the **Released products** page. On the ACtion Pane, open **Product** tab and, from the **New** group, select **Engineering product**.
+To create an engineering product, go to the **Released products** page. On the Action Pane, open **Product** tab and, from the **New** group, select **Engineering product**.
+
 You must specify the engineering category where this product belongs to. The category will set all the default values and characteristics for the product and set the attributes applicable to the product. Once the category is selected, the attributes will be populated, and then you are able to modify its value.
 
 ## Search for products using engineering attribute values

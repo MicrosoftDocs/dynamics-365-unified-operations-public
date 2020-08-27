@@ -107,4 +107,4 @@ To set up the rules that apply to each change severity level that you have defin
 For each rule set, make the following settings:
 
 - **Severity** - Select the severity level you want to establish rules for. Use the **Engineering change severities** page to create and name the levels (see the previous section).
-- **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. <!-- KFM Where do these rules come from? Should we define each of them here? What is the Name for? --> The rules are established by the system and indicate the types of changes that a product can have. The name will indicate you the type of change.
+- **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. The rules are established by the system and indicate the types of changes that a product can have. The name will indicate you the type of change.

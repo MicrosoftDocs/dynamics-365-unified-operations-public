@@ -102,8 +102,6 @@ When all of the open readiness checks for a new product, variant, or version hav
 
 Because the types of data to be verified typically vary by product type, you can assign different readiness rules to each engineering product category (see also [Engineering versions and engineering product categories](engineering-versions-product-category.md)).
 
-<!-- KFM: I can't find any of settings described here--it seems like all I can do is select a "readiness policy". Does the system still work like this? BNG readiness policy yes. KFM: I'm not sure where we are here (I don't have access to the feature right now); is this section accurate for the current product? -->
-
 On the readiness policy, you can set up the readiness checks. Select **Add system checks** to add system and manual readiness checks. Select **Add existing questionnaire** to add a checklist. Complete the rest of the fields to finish the setup:
 
 | **Setting** | Description |
