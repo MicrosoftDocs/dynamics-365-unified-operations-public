@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering attributes and engineering attribute search
-description: To ensure that the all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
+description: To ensure that all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
 author: t-benebo
 manager: tfehr
 ms.date: 07/31/2020
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-To ensure that the all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
+To ensure that all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
 
 ## Engineering attributes
 

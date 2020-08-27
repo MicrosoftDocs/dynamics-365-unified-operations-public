@@ -102,7 +102,7 @@ To set up the rules that apply to each change severity level that you have defin
 - To create a new rule set, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit a rule set, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
 - To delete an existing rule set, select it from the list pane and then select **Delete** on the Action Pane.
-- To rearrange the list, select a rule set from the list pane and use **Up** and **Down** buttons on teh Action Pane to reposition it.
+- To rearrange the list, select a rule set from the list pane and use **Up** and **Down** buttons on the Action Pane to reposition it.
 
 For each rule set, make the following settings:
 
