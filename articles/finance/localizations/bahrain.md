@@ -2,10 +2,10 @@
 # required metadata
 
 title: Bahrain overview
-description: This topic provides links to documentation resources for Bahrain. 
+description: This topic provides an overview of functionality specific to Bahrain. 
 author: ilkond
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,11 +32,12 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Bahrain. 
+This topic includes information and links to documentation resources for Bahrain.
 
 - [Configure invoice layout for Bahrain](emea-bhr-invoice-layout.md)
 - [VAT declaration for Bahrain](emea-bhr-vat-declaration.md)
 - [Invoice issue deadline](gcc-invoice-issue-deadline.md)
+- [Customer electronic invoices](emea-ita-e-invoices.md)
 
 ## Additional resources
 
