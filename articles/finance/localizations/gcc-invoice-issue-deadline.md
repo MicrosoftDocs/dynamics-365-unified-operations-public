@@ -115,11 +115,12 @@ Follow these steps to set up the invoice issue deadline functionality.
 
 7. Go to (Need navigation path to the page - the previous navigation is incorrect).
 8. On the **Set up calculation for invoice issue due date** page, create a record.
+9. In the **Country/region type** field, select **Domestic** and in the **Date interval code** field, enter a value. For example, 15.
 
     ![Set up calculation for invoice issue due date page](media/gcc-invoice-issue-deadline-calculation-for-invoice-issue-deadline.jpg)
 
-9. Go to **Accounts receivable** \> **Setup** \> **Parameters**.
-10. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice date control** FastTab, in the **Invoice date control** field, select one of the following values:
+10. Go to **Accounts receivable** \> **Setup** \> **Parameters**.
+11. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice date control** FastTab, in the **Invoice date control** field, select one of the following values:
 
     - **None** – Date control isn't run.
     - **Warning** – The invoice is posted, but a warning message appears afterward.
