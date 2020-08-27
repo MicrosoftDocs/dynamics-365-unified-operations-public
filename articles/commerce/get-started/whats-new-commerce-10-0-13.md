@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.13. 
 author: josaw1
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,7 @@ The following features are included in this release. The feature titles link to 
 - [Site builder WYSIWYG improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
 - [Media gallery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Media gallery module](../media-gallery-module.md).
 - [Map module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Map module](../map-module.md).
+- [Review function in POS inventory operations](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/review-function-pos-inventory-operations)
 
 
 
