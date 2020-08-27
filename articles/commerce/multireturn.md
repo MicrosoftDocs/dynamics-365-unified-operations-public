@@ -47,8 +47,8 @@ This feature enables multiple linked refunds against the same customer order.
 
 This feature ensures that when an order is returned using multiple invoices, the taxes will ultimately be equal to the tax amount originally charged. 
 
-1. Go to the **Feature management** workspace and search for **Enable proper tax calculationfor returns with partial quantity**.
-2. Select **Enable proper tax calculationfor returns with partial quantity** and then click **Enable**. 
+1. Go to the **Feature management** workspace and search for **Enable proper tax calculation for returns with partial quantity**.
+2. Select **Enable proper tax calculation for returns with partial quantity** and then click **Enable**. 
 
 
 ## Process returns
