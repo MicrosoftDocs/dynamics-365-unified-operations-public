@@ -171,7 +171,7 @@ You can add  a Guide to a resource so it will be offered in the context of relev
 
 #### [Resource Group](tasks/define-discrete-manufacturing-resource-group.md)
 
-    If you use resource groups to manage groups of machines, production lines or work cells  you can assign relevant guides on this level.
+If you use resource groups to manage groups of machines, production lines or work cells you can assign relevant guides on this level.
 
 - Typical use cases
 
