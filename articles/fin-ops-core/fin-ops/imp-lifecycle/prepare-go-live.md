@@ -38,9 +38,11 @@ There are two different deployment topologies for LCS: the standard [Cloud Deplo
 [!IMPORTANT] 
 You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service environments. 
 
-[!Cloud deployment](./media/Environment_Microsoft_Managed.PNG)
+Cloud 
+![Cloud deployment](./media/prepare-for-go-live-microsoft-managed.PNG)
 
-[!Self-Service](./media/Environment_Self_Service.PNG)
+Self-Service
+![Self-Service](./media/prepare-for-go-live-self-service.PNG)
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
