@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: engineering companies and data ownership rules
+title: Engineering companies and data ownership rules
 description: To ensure that the master data for products is created and maintained centrally, you can use one or more engineering companies. The engineering company represents the company that owns the engineering products and its engineering relevant data.
 author: t-benebo
 manager: tfehr
@@ -27,11 +27,11 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# engineering companies and data ownership rules
+# Engineering companies and data ownership rules
 
 [!include [banner](../includes/banner.md)]
 
-## engineering companies and operational companies
+## Engineering companies and operational companies
 
 To ensure that the master data for products is created and maintained centrally, you can use one or more *engineering companies*. The engineering company owns the engineering products and their engineering-relevant data. The engineering company is always connected to a *legal entity*, which is also a company. With this connection, the system establishes a central entry point for all engineering-relevant data for engineering products within the company. This is where engineering products are created and engineering-relevant data is maintained. From this central point, the engineering products and engineering-relevant data will be released to *operational companies*, which are the other legal entities. (For more information about the release management, see [Release product structure](release-product-structure.md).) These operational companies will use the engineering data as it is designed by the engineering company. Any logistical data will be maintained locally by each company itself.
 
