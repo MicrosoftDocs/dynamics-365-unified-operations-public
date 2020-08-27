@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual reporting
-description: This topic walks through an example of the dual reporting capabilities in Asset leasing for both IFRS and statutory reporting. For purposes of this example, familiarity with posting layers in Dynamics 365 Finance is required.
+description: This topic walks through an example of the capaibility in Asset leasing to fulfill both IFRS and statutory reporting requirements. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/10/2020
@@ -35,11 +35,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic walks through an example of the dual reporting capabilities in Asset leasing for both IFRS and statutory reporting. For purposes of this example, familiarity with posting layers in Dynamics 365 Finance is required.
+This topic walks through an example of the capaibility in Asset leasing to fulfill both IFRS and statutory reporting requirements. Familiarity with posting layers in Dynamics 365 Finance is required will make the example easier to understand.
 
 ## Fact Pattern
 
-The following example accounts for a lease under Italian statutory reporting under a cash-basis method and IFRS reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IFRS 16 requirements. The books that are needed include one for IFRS 16, a book for statutory requirements, and a book to automatically reverse statutory postings. The books are set up as shown in the following tables. 
+The following example accounts for a lease under Italian statutory reporting using both cash-basis method and IFRS reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IFRS 16 requirements. The books that are needed include one for IFRS 16, a book for statutory requirements, and a book to automatically reverse statutory postings. The books are set up as shown in the following tables. 
 
 This first book is set up to comply with the IFRS 16 accounting standard. All entries posted in this book will post to a custom layer.
 
@@ -119,7 +119,7 @@ In order to account for this lease under two frameworks, we will use a current p
 
 You will see that three books are required to report under both statutory reporting and IFRS. The statutory book will record the lease payment according to the rules for cash basis accounting under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will create the journal entries that are required under IFRS 16. You will need only to enter a lease once, and then navigate to the **Books** page to see all the books associated with a lease. When you create the books, note that all three books must be associated with the same lease record.
 
-The first journal entry will record the lease expense under the statutory book. The user will be able to either create these payments in batch, or by selecting the payment schedule in the statutory book.
+The first journal entry will record the lease expense under the statutory book. You'll be able to either create these payments in batch, or by selecting the payment schedule in the statutory book.
 
 Assume the following journal entry is produced for the statutory book from the payment schedule.
 
@@ -145,10 +145,10 @@ When the statement is issued to the vendor, you'll follow the normal payment pro
 
 ### Cash payment - 1/31/2020 -- JE 120
 
-|     Account type    	|     Account No    	|     Layer      	|     Account Description    	|     Debit       	|          	|     Credit      	|
-|---------------------	|-------------------	|----------------	|----------------------------	|-----------------	|----------	|-----------------	|
-|     Vendor          	|     5             	|     Current    	|     Accounts Payable       	|     1,008.00    	|          	|                 	|
-|     Bank            	|     9             	|     Current    	|     Cash                   	|                 	|          	|     1,008.00    	|
+|     Account type    	|     Account No    	|     Layer      	|     Account Description    	|     Debit       	|     Credit      	|
+|---------------------	|-------------------	|----------------	|----------------------------	|-----------------	|-----------------	|
+|     Vendor          	|     5             	|     Current    	|     Accounts Payable       	|     1,008.00    	|                 	|
+|     Bank            	|     9             	|     Current    	|     Cash                   	|                 	|     1,008.00    	|
 
 At this point, you will have fully accounted for this lease under statutory reporting requirements and will be able to generate a trial balance using the current layer. The system will return a trial balance with the following figures:
 
@@ -168,7 +168,7 @@ At this point, you will have fully accounted for this lease under statutory repo
 | 10         | Depreciation expense     |                |                |                | 0\.00                   |
 | 11         | Accumulated depreciation |                |                |                | 0\.00                   |
 
-To run the same trial balance but with the IFRS 16 figures, we first need to reverse the statutory accounting journal entries, and then book the IFRS 16 journal entries. To reverse the statutory journal entries, this example includes a "reversal" book with the same as the *statutory* book but has an opposite posting profile. For example, the statutory book will have debited a lease expense account, but the "reversal" book will be crediting this account. These relationships are easily defined in the Asset lease posting accounts (**Asset leasing > Setup > Asset leasing parameters**).
+To run the same trial balance using the IFRS 16 figures, the statutory accounting journal entries must be reversed, and the IFRS 16 journal entries must be posted. To reverse the statutory journal entries, this example includes a "reversal" book with the same as the *statutory* book but has an opposite posting profile. For example, the statutory book will have debited a lease expense account, but the "reversal" book will be crediting this account. These relationships are easily defined in the Asset lease posting accounts (**Asset leasing > Setup > Asset leasing parameters**).
 
 The following journal entry will be made from the reversal book following the same process that was used with the statutory book. The difference is that the reversal book will book the reversing entries from the statutory book. The reversing entry will also be made to the custom layer. When running a trial balance at the current layer, the reversing journal entries will not be included.
 
