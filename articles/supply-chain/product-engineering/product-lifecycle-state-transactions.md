@@ -40,14 +40,14 @@ For an engineering product, changing the lifecycle state goes hand-in-hand with 
 
 ## Create and manage product lifecycle states
 
-To work with product lifecycle states, go to **Project Oaktree > Setup > Product lifecycle state**. Then do one of the following:
+To work with product lifecycle states, go to **Project Oaktree \> Setup \> Product lifecycle state**. Then do one of the following:
 
 - To create a new lifecycle state, select **New** from the Action Pane and then make settings as described in the following sections.
 - To edit an existing lifecycle state, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following sections.
 - To delete an existing lifecycle state, select it from the list pane and then select **Delete** on the Action Pane.
 
 > [!NOTE]
-> Engineering products use the same product lifecycle states as standard products. You can also open the **Product lifecycle state** page described in this topic by going to **Product information management > Setup > Product lifecycle state**. For more information about product lifecycle states, both for engineering and non-engineering products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
+> Engineering products use the same product lifecycle states as standard products. You can also open the **Product lifecycle state** page described in this topic by going to **Product information management \> Setup \> Product lifecycle state**. For more information about product lifecycle states, both for engineering and non-engineering products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
 
 ## Settings in the header
 

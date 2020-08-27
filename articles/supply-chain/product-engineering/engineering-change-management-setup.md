@@ -35,65 +35,57 @@ When you set up engineering change management, you must establish several collec
 
 ## Engineering change categories
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-Engineering change categories are used for organizing the different engineering change orders for easier manage or review of them.  For example it could be useful to setup a workflow where depending on the category a specific department needs to review the proposed changes. You will find the Category field in the engineering change order.
+Use engineering change categories to organize your various engineering change orders and make them easier to mange and review.  For example, it could be useful to set up a workflow where, depending on the category, a specific department needs to review the proposed changes. You will find the **Category** field on the engineering change order.
 
-To establish the collection of engineering change categories in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Engineering change categories**.
+To establish the collection of engineering change categories in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change categories**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Engineering change priorities
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-Engineering change priorities are used for indicating the importance or urgency of the engineering change order. These are helpful to keep track of the importance of the engineering change order so you identify those which need prioritization easily.
+Use engineering change priorities to indicate the importance or urgency of an engineering change order. These are helpful to keep track of the importance of an engineering change order so you can easily identify which orders to process first, and how quickly.
 
-To establish the collection of engineering change priorities in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Engineering change priorities**.
+To establish the collection of engineering change priorities in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change priorities**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Engineering change reasons
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-Engineering change reasons are useful to indicate the cause or nature of the change in the change order. 
+Engineering change reasons indicate the cause or nature of the change in the change order.
 
-To establish the collection of engineering change reasons in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Engineering change reasons**.
+To establish the collection of engineering change reasons in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change reasons**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Material disposal codes
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-If the materials used in your finished goods or components need a particular way of being disposed or treated before they can be put together with the residues of your company, you an use the material disposal codes to keep track of the disposal. When you add the product in the engineering change order, in the change details you can set which is the disposal code for the product.
+Use material disposal codes to categorize materials used in your finished goods or components that need to be disposed of in a particular way, or that require some treatment before they can be added to your regular trash. When you add a relevant product to an engineering change order, you can assign a disposal code as part of the change details.
 
-To establish the collection of material disposal codes in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Material disposal codes**.
+To establish the collection of material disposal codes in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Material disposal codes**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Received customer approval
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-When you design products for a specific customer, it is common the design or other specifications need to be validated before the product can be set as ready. With the received customer approval field you can indicate how far in the customer approval process the product is and/or if the approval has been received.
+When you design products for a specific customer, the design and specifications often need to be validated before the product can be set as ready. With the **Received customer approval** field, you can indicate how far in the customer approval process the product is and/or whether the approval has been received.
 
-To establish the collection of received customer approval values in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Received customer approval**.
+To establish the collection of received customer approval values in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Received customer approval**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Engineering change - Environmental health and safety codes
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-If the manufacturing of a product must take into account any standard Environmental health and safety regulations or any company specific regulation or procedure, you can use the Environmental health and safety codes to define them. You can indicate which are the codes that apply to the manufacturing of the product in the engineering change order, in the details of the impacted product.
+If the manufacturing of a product must take into account any standard environmental health and safety regulations, or any company-specific regulation or procedure, you can use the environmental health and safety codes to define them. You can indicate which codes apply to the manufacturing of the product in the engineering change order while editing the details of the impacted product.
 
-
-To establish the collection of health and safety values in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Engineering change - Environmental health and safety codes**.
+To establish the collection of health and safety values in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change - Environmental health and safety codes**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
 ## Engineering change severities
 
-<!-- KFM Briefly describe what these values are used for and link to any topics where they come up. -->
-Engineering change severities can be used to indicate the degree of the change of the products in an engineering change order. 
+Use engineering change severities to indicate the level of impact that will apply to the products in an engineering change order.
 
-To establish the collection of engineering change severities in use at your organization, go to **Project Oaktree > Setup > Engineering change management > Engineering change severities**.
+To establish the collection of engineering change severities in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change severities**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -101,12 +93,11 @@ You can establish rules that apply to each severity level you create here. See t
 
 ## Engineering change severity rule sets
 
-<!-- KFM Briefly describe what these settings do and link to any topics where they come up. -->
-The engineering change severity rules sets are a group of rules that can be used for automatically calculating the severity of the change order depending on the type of changes in the impacted products. To make use of the severity rules the parameter Severity rule in the Project Oaktree parameters must be set to Calculate or Calculate automatically.
+Use engineering change severity rule sets to establish a group of rules that you can use to automatically calculate the severity of the change order based on the type of changes in the impacted products. To make use of the severity rules, open the **Project Oaktree parameters** page and set **Severity rule** to *Calculate* or *Calculate automatically*.
 
-For evaluating the severity the system will evaluate the rules from top to bottom in the order shown in the form. All the rules in the rule set must be met for the rule to be selected and its priority to be established. 
+When evaluating the severity, the system will process the rules from top to bottom in the order shown in the form. All the rules in a rule set must be met for that rule to be selected and its priority to be established.
 
-To set up the rules that apply to each change severity level that you have defined, go to **Project Oaktree > Setup > Engineering change management > Engineering change severity rule sets**. Then do one of the following:
+To set up the rules that apply to each change severity level that you have defined, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change severity rule sets**. Then do one of the following:
 
 - To create a new rule set, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit a rule set, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
@@ -116,4 +107,4 @@ To set up the rules that apply to each change severity level that you have defin
 For each rule set, make the following settings:
 
 - **Severity** - Select the severity level you want to establish rules for. Use the **Engineering change severities** page to create and name the levels (see the previous section).
-- **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. <!-- KFM Where do these rules come from? Should we define each of them here? What is the Name for? --> The rules are established by the system and indicate the types of changes that a product can have. The name will indicate you the type of change. 
+- **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. <!-- KFM Where do these rules come from? Should we define each of them here? What is the Name for? --> The rules are established by the system and indicate the types of changes that a product can have. The name will indicate you the type of change.

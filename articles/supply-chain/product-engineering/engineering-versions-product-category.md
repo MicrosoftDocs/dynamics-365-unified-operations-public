@@ -52,45 +52,46 @@ When you use engineering products, each product will have at least one engineeri
 - The version number and previous version number (if applicable).
 - Effective-from and effective-to dates.
 - The product version active status, which tells whether the version can be released and used in transactions (see also [Product readiness](product-readiness.md)).
-- The engineering organization that created and owns the product (see also [Engineering organization and data ownership rules](engineering-org-data-ownership-rules.md)).
-- Related engineering documents. <!-- KFM: what are these? BNG any type of document related to the product: manual of assembly, instructions for the user, pictures, url to the public webpage where it appears on the catalog...-->
+- The engineering company that created and owns the product (see also [Engineering company and data ownership rules](engineering-org-data-ownership-rules.md)).
+- Related engineering documents (such as a manual of assembly, user instructions, pictures, links, and so on)
 - The engineering attributes (see also [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md)).
 - The engineering bill(s) of materials
 - The engineering route(s)
 
 You can choose to update this data on an existing version or create a new version using an **engineering change order** (see also [Engineering change management](engineering-change-management.md)). If you create a new version of the product, the system copies all engineering relevant data to then new version, and then you can modify the data for the new version. This lets you can track specific data for each consecutive version. To compare the differences between consecutive engineering versions, inspect the engineering change order, which includes change types that indicate all changes.
 
-<!-- KFM: We should describe how to make an engineering version and what the settings are. -->
-The first version is automatically created when the engineering product is created. The version will follow the version number rule defined in the engineering category for the product. To transition into a following version, the product must be added into an engineering change order as a line and the impact must be set to New version. The engineering change order will include the details of the change from the current version into the following version.
+The first version is automatically created when you create the engineering product. The version will follow the version number rule defined in the engineering category for the product. To transition to a subsequent version, the product must be added into an engineering change order as a line and the **Impact** must be set to *New version*. The engineering change order will include the details of the change from the current version into the following version.
 
-Note that an engineering product can only be in a single engineering change order to ensure data accuracy and avoid overlapping or contradictory changes in the product. Note that in the engineering change order the engineer responsible for the change order, is shown in the engineering change order in the Header view. In the case that the engineer belongs to a team, the team lead will be shown as the Responsible field.
+Note that an engineering product can only be in a single engineering change order at a time. This is to ensure data accuracy and avoid overlapping or contradictory changes in the product. Note that in the engineering change order, the engineer responsible for the change order is shown in the engineering change order **Header** view. If the engineer belongs to a team, the team lead will be shown in the **Responsible** field.
+
+<!-- KFM: We should describe how to make an engineering version and what the settings are, like we do below for engineering product categories. -->
 
 ## Track versions in transactions
 
 When you use engineering change management, your product master data will always include one or more engineering versions. In your setup of engineering products, you can choose whether or not the engineering version is also part of *logistical transactions* (see [Engineering product category](#product-category) for details). If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product are used and when you introduce a new version, the previous version can't be used anymore. In other cases, the version is needed in logistical transactions to overcome the following challenges:
 
-- The logistics department <!-- KFM: Logistics what? Department, manager, personnel? --> needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
+- The logistics department needs to ship two pieces of a product to a customer. Do you allow or  desire to ship two different versions?
 - If it later turns out that a problem occurs specifically related to a change, it may be beneficial to pinpoint exactly which version was shipped with each order.
-- Companies typically want to ship old versions first to phase them out of inventory. This can often be managed by determining the effectivity dates <!-- KFM: What do you mean by "effectivity"? BNG dates--> of the new version in relation to predictions of when stock of the old version will be depleted, especially with low-volume products. But sometimes this is not possible, or the uncertainty in stock level prediction is considered too high.
+- Companies typically want to ship old versions first to phase them out of inventory. This can often be managed by determining the effectivity dates of the new version in relation to predictions of when stock of the old version will be depleted, especially with low-volume products. But sometimes this is not possible, or the uncertainty in stock level prediction is considered too high.
 
 The choice of whether or not to make versions visible in inventory depends on factors such as those mentioned, plus company practice and other considerations specific to each company. You can set this option on the *engineering product category*, and this will be applicable for all products created from the engineering product category for all companies the product is released to.
 
-For products set up with logistical impact, the engineering version must be specified on each transaction. The system will propose the *latest active version*, but you can choose a different version among the various active versions available for the company. For products set up without logistical impact, the engineering version isn't specified on the transactions, but the latest active version is used by the system. For example, when creating the *production bill of material* and running *master planning* <!-- KFM: What is this an example of? -->.
+For products set up with logistical impact, the engineering version must be specified on each transaction. The system will propose the *latest active version*, but you can choose a different version among the various active versions available for the company. For products set up without logistical impact, the engineering version isn't specified on the transactions, but the latest active version is used by the system. For example, when creating the *production bill of material* and running *master planning*. <!-- KFM: What is this an example of? -->
 
 <a name="product-category"></a>
 
 ## Set up engineering product categories
 
-The engineering product categories is the base for the product creation and it consists of a set of the defaults and policies. So, to create an engineering product you will have to choose from which category you want to create it from.  
+An engineering product category provides a basis for creating a certain engineering product. Each category establishes a set of defaults and policies. So, when you create an engineering product you will start by selecting a category to create it from.  
 
-Note that a new Category hierarchy type **Engineering Product Hierarchy** is automatically created and associated with a category hierarchy Engineering product hierarchy in the for you. So you can directly create the categories under **Project Oaktree > Setup > Engineering product category details**.
+Note that a new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can directly create the categories by going to **Project Oaktree \> Setup \> Engineering product category details**.
 
-Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category. If you choose the engineering category wrongly, you can always delete the product and re-create it. 
+Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category. If you choose the engineering category wrongly, you can always delete the product and re-create it.
 
 When a category is created, you are prevented from changing any of the following:
 
 - Engineering company
-- Product type <!-- KFM: Same as engineering product category? BNG no, product type is if it an item or a service -->
+- Product type
 - Product subtype
 - Product dimension group
 - Configuration technology
@@ -98,7 +99,7 @@ When a category is created, you are prevented from changing any of the following
 
 Other settings may inherit default values set up on the engineering product category, but those can be changed according to the system rules.
 
-To work with engineering product categories, go to **Project Oaktree > Setup > Engineering product category details**. Then do one of the following:
+To work with engineering product categories, go to **Project Oaktree \> Setup \> Engineering product category details**. Then do one of the following:
 
 - To create a new category, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit an existing category, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
@@ -111,7 +112,7 @@ Make the following settings in the header of an engineering product category:
 | Setting | Description |
 | --- | --- |
 | **Name** | Enter a name for the engineering product category. |
-| **Engineering organization** | Select the engineering organization where products of this engineering product category can be created and will be maintained. |
+| **Engineering company** | Select the engineering company where products of this engineering product category can be created and will be maintained. |
 
 ### The Details FastTab
 
@@ -119,17 +120,16 @@ Make the following settings in the **Details** FastTab of an engineering product
 
 | Setting | Description |
 | --- | --- |
-| **Product type** | Select if the category will apply to products or services   |
-| **Track versions in transactions** | With this setting you can choose if you want the version of the product to be stamped in all transactions (logistical impact) or not. For example, if you track the version in transactions you will be able to view in a sales order which was the specific version of a product that was sold in that sales order. If you do not track the version in transactions, you will not see which was the version of a product that was sold at a specific point in time, it will always be the latest version at that point in time. When track version in transactions is set to yes, a product master for the product is created and each of the versions of the product will be a variant using the product dimension version. So, when set to yes, product subtype is automatically set to Product master and you must select a product dimension group where the version is enabled. Only product dimension groups where the version is an active dimension will be shown. You can create new product dimension groups with the pencil icon. 
-If you set Track version in transactions to no, the product dimension version will not be used. You can then choose if you would like to want to create a product or a product master using the other dimensions. It is common to use track the version in transactions for those products which have a cost difference between versions or for which different conditions apply in regards to the customer and it is important to note which is the version in each transaction.   |
-| **Product subtype** | Choose if this category will hold product or product masters (and the dimensions to be used). 
-| **Product dimension group** | Note that the previous setting Track version in transactions helps you choosing the product subtype, if you want to track the version in transactions, then product dimension groups where the version is used will be shown and if you don't want to track the version in transactions then only product dimension groups where it is not used will be shown. <!-- KFM: We should describe more about what the **Product dimension group** setting does. Seems like there is more to this other than its affect on logistics BNG this reasoning is a bit complex, I have rephrased the above and added one parameter that we introduced to try to make it more easy to understand, I think it is more clear now--> |
+| **Product type** | Specify whether the category will apply to products or services. |
+| **Track versions in transactions** | Choose whether the version of the product should be stamped on all transactions (logistical impact) or not. For example, if you track the version in transactions, each sales order will show which  specific version of the product was sold in that sales order. If you do not track the version in transactions, you won't see which version was sold at a given time; instead, it will always show the latest version.<br><br>When **Track version in transactions** is set to *Yes*, a product master for the product is created and each of the versions of the product will be a variant using the product dimension version. The **Product subtype** is automatically set to *Product master* and you must select a product dimension group where the version is enabled. Only product dimension groups where the version is an active dimension will be shown. You can create new product dimension groups by selecting the pencil icon.<br><br>When **Track version in transactions** is set to *No*, the product dimension version will not be used. You can then choose whether to create a product or a product master using the other dimensions.<br><br>It is common to use **Track version in transactions** for those products that have a cost difference between versions or for which different conditions apply in regards to the customer, so it is important to note which version was used in each transaction.   |
+| **Product subtype** | Choose whether this category will hold products or product masters. For product masters, product dimensions will be used.
+| **Product dimension group** | The **Track version in transactions** setting helps you choose the product subtype. If you want to track the version in transactions, then the product dimension groups where the version is used will be shown. If you don't want to track the version in transactions, then only product dimension groups where it is not used will be shown. |
 | **Product lifecycle state at creation** | Set up the default product lifecycle state at creation of a new engineering product. For more information see [Product lifecycle state and transactions](product-lifecycle-state-transactions.md). |
 | **Version number rule** | Select the version number rule that applies to this engineering product category. The rules can be setup as:<ul><li>**Manual** - You choose the version number for each new version.</li><li>**Automatic**: The system sets the version number based on a format that you define. When setting up the format, use # to position a number and any other character to position a constant value. For example, if you defined the format as "V-##", the first version will be 'V-01', the second version 'V-02', and so on.</li><li>**List**: the system takes the next number from a predefined list of custom values defined by you.</li><ul><!-- KFM: We should have a separate topic or section that describes how to create version number rules of all types. Then link there from here. --> |
 | **Enforce effectivity** | Choose whether the effectivity dates of engineering versions must be contiguous, or whether to allow gaps and overlaps. This setting affects the way you can use the **Effective from** and **Effective to** settings for each engineering version where this category applies. Choose one of the following:<ul><li>**Yes** - Each version must specify an **Effective from** value, and neither overlaps nor gaps are allowed between versions. The date range for each engineering version connects directly to the previous and next engineering versions (if they exist). In this scenario, the newest version is always used, and older versions aren't used anymore.</li><li>**No** - There are no restrictions on the effectivity date fields for engineering versions, and both overlaps and gaps are allowed. In this scenario, multiple versions can be active at the same time and you can choose to work with any active version.</li></ul><p>This setting also affects  bills of materials and routes connected to a product version. For details, see [Connect bills of materials and routes to engineering versions](#boms-routes).</p> |
-| **Use number rule&nbsp;nomenclature** | Set this to **Yes** to enable rules for defining product number using number sequences, engineering attribute names and values and text constants as segments. Select the **Edit** button to create and/or modify the rules. <!-- KFM: What does it mean to "use the engineering attributes"? What if we set No? We should describe how to use the settings that open when selected Edit. BNG more explanation added--> |
-| **Use name rule&nbsp;nomenclature** | Set this to **Yes** to enable rules for defining the name using the engineering attribute names and values and text constants as segments. Select the **Edit** button to create and/or modify the rules. <!-- KFM: Same notes as above. -->  |
-| **Use description rule&nbsp;nomenclature** | Set this to **Yes** to enable rules for defining the description using the engineering attribute names and values and text constants as segments. Select the **Edit** button to create and/or modify the rules. <!-- KFM: Same notes as above. -->   |
+| **Use number rule&nbsp;nomenclature** | Set this to *Yes* to enable rules for defining a product number using number sequences, engineering attribute names and values, and text constants as segments. Select the **Edit** button to create and/or modify the rules. |
+| **Use name rule&nbsp;nomenclature** | Set this to *Yes* to enable rules for defining the name using the engineering attribute names, engineering attribute values, and text constants as segments. Select the **Edit** button to create and/or modify the rules. |
+| **Use description rule&nbsp;nomenclature** | Set this to *Yes* to enable rules for defining the description using the engineering attribute names, engineering attribute values, and text constants as segments. Select the **Edit** button to create and/or modify the rules.  |
 
 ### The Attributes FastTab
 
@@ -137,7 +137,7 @@ Use the grid on the **Attributes** FastTab to set up the engineering attributes 
 
 For details about how to create engineering attributes, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).
 
-Use buttons in the **Attributes** FastTab toolbar to add, remove, and arrange attributes in the grid. <!-- KFM: what does "Update existing products" do? What affect does the order have?  --> 
+Use buttons in the **Attributes** FastTab toolbar to add, remove, and arrange attributes in the grid. <!-- KFM: what does "Update existing products" do? What affect does the order have?  -->
 
 For each row that you add to the grid, make the following settings:
 
@@ -157,20 +157,20 @@ Use the **Product readiness policy** drop-down list to select the readiness poli
 
 Use the **Product release policy** drop-down list to select the release policy that applies to products belonging to this category. For more information, see [Release product structure](release-product-structure.md).
 
-<!-- KFM: When I tried to create an engineering product category, I got the error "Your organization does not have an Engineering category hierarchy. Please go to Product Information Management to create an engineering product hierarchy." Maybe we should mention this and explain what to do about it. I was simply blocked and could not continue. --BNG yes - we should create that topic. You need to create an engineering product category hierarchy. You must go to the category hierarchies and create a new hierarchy that is going to be the engineering. then go to Category hierarchy roles and then associate the engineering category hierarchy just created with the engineering category hierarchy role         BNG we have modified this in the last version so it is automatically created and user does not need to do it :)>
+<!-- KFM: When I tried to create an engineering product category, I got the error "Your organization does not have an Engineering category hierarchy. Please go to Product Information Management to create an engineering product hierarchy." Maybe we should mention this and explain what to do about it. I was simply blocked and could not continue. --BNG yes - we should create that topic. You need to create an engineering product category hierarchy. You must go to the category hierarchies and create a new hierarchy that is going to be the engineering. then go to Category hierarchy roles and then associate the engineering category hierarchy just created with the engineering category hierarchy role         BNG we have modified this in the last version so it is automatically created and user does not need to do it :) -->
 
 <a name="boms-routes"></a>
 
 ## Connect bills of materials and routes to engineering versions
 
-The choice you make on the **Enforce effectivity** setting is also important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in the following <!-- KFM: All of the following, or any of the following?  -->:
+The choice you make on the **Enforce effectivity** setting is also important with regards to the connection of bills of materials and routes to each engineering version. You can only activate multiple bills of materials or routes per product provided there is a difference in the following: <!-- KFM: All of the following, or any of the following?  -->
 
 - Product dimension
 - Quantity
 - Site
 - Effectivity dates
 
-Engineering bills of materials and routes are created from the engineering version where they apply, and can be recognized by the **Engineering controlled** check mark<!-- KFM: Where is this check mark? How do I create these from the engineering version? We should maybe give a procedure for this. BNG it is mentioned in other topics, first one is created automatically and followings have to be created using an engineering change order and impact to new version-->. When working with engineering bills of materials and routes, you won't normally design them using different quantities, nor will you design different bills of material per site. Also, for engineering bills of materials and routes, the effectivity dates are always taken from the engineering version, so an engineering version, its bill of materials, and its route will all have the same effectivity dates.
+Engineering bills of materials and routes are created from the engineering version where they apply, and can be recognized by the **Engineering controlled** check mark. When working with engineering bills of materials and routes, you won't normally design them using different quantities, nor will you design different bills of material per site. Also, for engineering bills of materials and routes, the effectivity dates are always taken from the engineering version, so an engineering version, its bill of materials, and its route will all have the same effectivity dates.
 
 For products where you are using the *version* product dimension (with logistical impact on the transactions), the version is also added to the bill of material and routes. This helps to differentiate between the bill of materials and routes of consecutive versions, regardless of the **Enforce effectivity** setting.
 

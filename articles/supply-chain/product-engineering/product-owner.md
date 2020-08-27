@@ -41,8 +41,8 @@ To create and populate a product owner group:
 
 1. Go to **Product engineering \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
-3. In the **Product owner** field, type a value. <!-- KFM: What kind of value? How is this different from the name? BNG it is like when you use Name and Description for other fields, Name would be Product owner and name would be descripton, labels should be name and descripton here... -->
-4. In the **Name** field, enter a name for the group.
+3. In the **Product owner** field, enter a name for the group. <!-- KFM: What kind of value? How is this different from the name? BNG it is like when you use Name and Description for other fields, Name would be Product owner and name would be description, labels should be name and description here... KFM: OK, I wrote it like that for now (though it looks kind of silly). If we change these labels, we need to remember to update these steps.  -->
+4. In the **Name** field, enter a description of the group.
 5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
 
 ## Assign a product owner to a product
@@ -58,7 +58,7 @@ The product owner is also visible on the released product form.
 
 ## Product owners and releasing products
 
-Only users from a product's owner group can release that product. However, there is an exception: if the item is a child item and its parent is released by the parent's owner. In other words, if the product is part of the BOM of another product (the product is a child item and the parent is released), then the system will not check the product owner of each of the items in the BOM. Only the product owner of the parent item will be checked.  <!-- KFM: In this paragraph, it sounds like another user has to release each product from the BOM, but in the following example, it sounds like products from the BOM are released automatically together with the parent product. Which is it? the second, the example is clear, this one may be misleading, I am changing it a bit -->
+Only users from a product's owner group can release that product. However, there is an exception when the item is a child item and its parent is released by the parent's owner. In other words, if the product is part of the BOM of another product (the product is a child item and the parent is released), then the system will not check the product owner of each of the items in the BOM. Only the product owner of the parent item will be checked.
 
 For example: product X is assigned to the product owner group *Design cabinets*. Product X is also part of the bill of material of product Y, which is assigned to product owner group *Design Speakers*. If a user from the product owner group *Design Speakers* releases product Y and its bill of materials, then product X will be released along with it.
 
