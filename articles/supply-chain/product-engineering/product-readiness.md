@@ -70,7 +70,7 @@ To find the open readiness checks for a product, open its **Released products de
 
 To see the open readiness checks assigned to you, do one of the following:
 
-- Go to **Project Oaktree \> Common \> Product readiness \> My open readiness checks**.
+- Go to **Engineering change management \> Common \> Product readiness \> My open readiness checks**.
 - Go to  **Product information management \> Workspaces \> Product readiness for discrete manufacturing**. <!-- KFM: Where do I find my readiness checks here? -->
 
 The setup for who is assigned to the readiness check is done at the engineering product category. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check. <!-- KFM: How do we make this assignment? We should probably describe this in the topic about creating categories and refer to that from here. BNG agree-->
@@ -122,7 +122,7 @@ Use product readiness policies to manage the readiness checks that apply to a pr
 
 Each readiness policy contains a set of readiness checks. When the readiness policy is associated to an engineering product category, all the products created from that engineering product category will have the readiness checks indicated in the readiness policy.
 
-To work with product readiness policies, go to **Project Oaktree \> Setup \> Product readiness policies**. Then do one of the following:
+To work with product readiness policies, go to **Engineering change management \> Setup \> Product readiness policies**. Then do one of the following:
 
 - To create a new policy, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit an existing policy, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.

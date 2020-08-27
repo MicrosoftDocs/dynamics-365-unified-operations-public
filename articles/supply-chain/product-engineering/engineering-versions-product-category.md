@@ -84,7 +84,7 @@ For products set up with logistical impact, the engineering version must be spec
 
 An engineering product category provides a basis for creating a certain engineering product. Each category establishes a set of defaults and policies. So, when you create an engineering product you will start by selecting a category to create it from.  
 
-Note that a new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can directly create the categories by going to **Project Oaktree \> Setup \> Engineering product category details**.
+Note that a new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can directly create the categories by going to **Engineering change management \> Setup \> Engineering product category details**.
 
 Each engineering product category establishes the (default) behavior of the engineering products that are created based on that category. Once you've create an engineering product, you can't change its engineering product category. If you choose the engineering category wrongly, you can always delete the product and re-create it.
 
@@ -99,7 +99,7 @@ When a category is created, you are prevented from changing any of the following
 
 Other settings may inherit default values set up on the engineering product category, but those can be changed according to the system rules.
 
-To work with engineering product categories, go to **Project Oaktree \> Setup \> Engineering product category details**. Then do one of the following:
+To work with engineering product categories, go to **Engineering change management \> Setup \> Engineering product category details**. Then do one of the following:
 
 - To create a new category, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit an existing category, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.

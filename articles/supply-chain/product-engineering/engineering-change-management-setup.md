@@ -37,7 +37,7 @@ When you set up engineering change management, you must establish several collec
 
 Use engineering change categories to organize your various engineering change orders and make them easier to mange and review.  For example, it could be useful to set up a workflow where, depending on the category, a specific department needs to review the proposed changes. You will find the **Category** field on the engineering change order.
 
-To establish the collection of engineering change categories in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change categories**.
+To establish the collection of engineering change categories in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change categories**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -45,7 +45,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 Use engineering change priorities to indicate the importance or urgency of an engineering change order. These are helpful to keep track of the importance of an engineering change order so you can easily identify which orders to process first, and how quickly.
 
-To establish the collection of engineering change priorities in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change priorities**.
+To establish the collection of engineering change priorities in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change priorities**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -53,7 +53,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 Engineering change reasons indicate the cause or nature of the change in the change order.
 
-To establish the collection of engineering change reasons in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change reasons**.
+To establish the collection of engineering change reasons in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change reasons**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -61,7 +61,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 Use material disposal codes to categorize materials used in your finished goods or components that need to be disposed of in a particular way, or that require some treatment before they can be added to your regular trash. When you add a relevant product to an engineering change order, you can assign a disposal code as part of the change details.
 
-To establish the collection of material disposal codes in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Material disposal codes**.
+To establish the collection of material disposal codes in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Material disposal codes**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -69,7 +69,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 When you design products for a specific customer, the design and specifications often need to be validated before the product can be set as ready. With the **Received customer approval** field, you can indicate how far in the customer approval process the product is and/or whether the approval has been received.
 
-To establish the collection of received customer approval values in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Received customer approval**.
+To establish the collection of received customer approval values in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Received customer approval**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -77,7 +77,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 If the manufacturing of a product must take into account any standard environmental health and safety regulations, or any company-specific regulation or procedure, you can use the environmental health and safety codes to define them. You can indicate which codes apply to the manufacturing of the product in the engineering change order while editing the details of the impacted product.
 
-To establish the collection of health and safety values in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change - Environmental health and safety codes**.
+To establish the collection of health and safety values in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change - Environmental health and safety codes**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -85,7 +85,7 @@ Use the buttons on the Action Pane to add, remove, and edit values, and to arran
 
 Use engineering change severities to indicate the level of impact that will apply to the products in an engineering change order.
 
-To establish the collection of engineering change severities in use at your company, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change severities**.
+To establish the collection of engineering change severities in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severities**.
 
 Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
 
@@ -93,11 +93,11 @@ You can establish rules that apply to each severity level you create here. See t
 
 ## Engineering change severity rule sets
 
-Use engineering change severity rule sets to establish a group of rules that you can use to automatically calculate the severity of the change order based on the type of changes in the impacted products. To make use of the severity rules, open the **Project Oaktree parameters** page and set **Severity rule** to *Calculate* or *Calculate automatically*.
+Use engineering change severity rule sets to establish a group of rules that you can use to automatically calculate the severity of the change order based on the type of changes in the impacted products. To make use of the severity rules, open the **Engineering change management parameters** page and set **Severity rule** to *Calculate* or *Calculate automatically*.
 
 When evaluating the severity, the system will process the rules from top to bottom in the order shown in the form. All the rules in a rule set must be met for that rule to be selected and its priority to be established.
 
-To set up the rules that apply to each change severity level that you have defined, go to **Project Oaktree \> Setup \> Engineering change management \> Engineering change severity rule sets**. Then do one of the following:
+To set up the rules that apply to each change severity level that you have defined, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severity rule sets**. Then do one of the following:
 
 - To create a new rule set, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit a rule set, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.

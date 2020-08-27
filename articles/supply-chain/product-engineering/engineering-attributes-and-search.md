@@ -45,7 +45,7 @@ Each engineering attribute must belong to an attribute type. This is required be
 
 To view, create, or edit an engineering attribute type:
 
-1. Go to **Project Oaktree \> Setup \> Attributes \> Attribute types**.
+1. Go to **Engineering change management \> Setup \> Attributes \> Attribute types**.
 1. Select an existing type from the list pane, or select **New** on the Action Pane to create a new one.
 1. Make the following settings:
     - **Attribute type name** - Enter a name for the attribute type.
@@ -58,7 +58,7 @@ To view, create, or edit an engineering attribute type:
 
 To view, create, or edit an engineering attribute:
 
-1. Go to **Project Oaktree \> Setup \> Attributes \> Engineering attributes**.
+1. Go to **Engineering change management \> Setup \> Attributes \> Engineering attributes**.
 1. Select an existing attribute from the list pane, or select **New** on the Action Pane to create a new one.
 1. Make the following settings:
     - **Name** - Enter a name for the attribute. This name only appears on the **Engineering attributes** page; elsewhere in the system, the **Friendly name** is usually shown to identify the attribute.

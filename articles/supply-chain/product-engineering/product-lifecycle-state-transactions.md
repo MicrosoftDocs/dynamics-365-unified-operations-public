@@ -40,7 +40,7 @@ For an engineering product, changing the lifecycle state goes hand-in-hand with 
 
 ## Create and manage product lifecycle states
 
-To work with product lifecycle states, go to **Project Oaktree \> Setup \> Product lifecycle state**. Then do one of the following:
+To work with product lifecycle states, go to **Engineering change management \> Setup \> Product lifecycle state**. Then do one of the following:
 
 - To create a new lifecycle state, select **New** from the Action Pane and then make settings as described in the following sections.
 - To edit an existing lifecycle state, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following sections.

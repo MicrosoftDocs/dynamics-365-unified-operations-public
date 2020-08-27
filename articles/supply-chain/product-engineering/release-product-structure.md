@@ -56,7 +56,7 @@ When you enable engineering change management on your system, then the release p
 
 ## Product acceptance
 
-**Product acceptance** is a key parameter that influences the release process. You can set this per-company by going to **Project Oaktree \> Setup \> Project Oaktree parameters**. See also [Project Oaktree parameters](engineering-parameters.md).
+**Product acceptance** is a key parameter that influences the release process. You can set this per-company by going to **Engineering change management \> Setup \> Engineering change management parameters**. See also [Engineering change management parameters](engineering-parameters.md).
 
 ### When "Product acceptance" is set to Automatic
 
@@ -88,7 +88,7 @@ During the release process, you can influence the settings as well.
 
 ## Create and manage product release policies
 
-To work with product release policies, go to **Project Oaktree \> Setup \> product release policies**. Then do one of the following:
+To work with product release policies, go to **Engineering change management \> Setup \> product release policies**. Then do one of the following:
 
 - To create a new policy, select **New** from the Action Pane and then make settings as described in the following subsections.
 - To edit an existing policy, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.

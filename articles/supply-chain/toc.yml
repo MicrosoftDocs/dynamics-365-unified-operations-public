@@ -1905,11 +1905,11 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-    - name: Product engineering
+    - name: Engineering change management
       items:
-      - name: Product engineering overview
+      - name: Engineering change management overview
         href: product-engineering/product-engineering-overview.md
-      - name: Project Oaktree parameters
+      - name: Engineering change management parameters
         href: product-engineering/engineering-paramters.md
       - name: Establish common values for engineering change management
         href: product-engineering/engineering-change-management-setup.md
@@ -1923,7 +1923,7 @@
         href: product-engineering/engineering-versions-product-category.md
       - name: Product lifecycle state and transactions
         href: product-engineering/product-lifecycle-state-transactions.md
-      - name: Engineering change management
+      - name: Manage changes to engineering products
         href: product-engineering/engineering-change-management.md
       - name: Product readiness
         href: product-engineering/product-readiness.md

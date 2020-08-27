@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Engineering change management
+title: Manage changes to engineering products
 description: Engineering change management gives you the possibility to have a structured process to manage changes to engineering products. There are structured processes for proposing, requesting, and making changes. This are also processes for reviewing and approving changes, assessing the impact on existing transactions, and following up.
 author: t-benebo
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# Engineering change management
+# Manage changes to engineering products
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ The engineering change request allows you to capture requests for change from al
 
 After someone submits a request for change, the *review and approval process* is managed by a workflow that establishes who needs to approve it (for example, the product owner).
 
-To setup the workflow for engineering change orders or engineering change requests go to **Project Oaktree \> Engineering workflows**. Select **New** and choose whether you would like to set it up for an engineering change order review or an engineering change request review and then configure the workflow.
+To setup the workflow for engineering change orders or engineering change requests go to **Engineering change management \> Engineering workflows**. Select **New** and choose whether you would like to set it up for an engineering change order review or an engineering change request review and then configure the workflow.
 
 For more information about workflows see the [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). For more information about product owners, see [Product owner](product-owner.md).
 
@@ -47,8 +47,8 @@ For more information about workflows see the [Workflow system overview](../../fi
 
 To create an engineering change request, do one of the following:
 
-- Go to **Project Oaktree \> Common \> Engineering change management \> Engineering change requests** and then select **New** from the Action Pane.
-- Open the **Product details** page for an existing engineering product. Then, on the Action Pane, open the **Engineer** tab and, from the **Project Oaktree** group, select **Engineering change request \> New engineering change request**.
+- Go to **Engineering change management \> Common \> Engineering change management \> Engineering change requests** and then select **New** from the Action Pane.
+- Open the **Product details** page for an existing engineering product. Then, on the Action Pane, open the **Engineer** tab and, from the **Engineering change management** group, select **Engineering change request \> New engineering change request**.
 
 A new change request is created. Then make the settings on each FastTab, as described in the following subsections.
 
@@ -125,7 +125,7 @@ Engineering change orders let you make changes to engineering products using a s
 
 When the proposal for changes is finished, the review and approval process will be handled by a workflow. You can set up different workflows based on the priority and severity.
 
-To setup the workflow for engineering change orders or engineering change requests go to **Project Oaktree \> Engineering workflows**. Select **New** and choose whether you would like to set it up for an engineering change order review or an engineering change request review and then configure the workflow.
+To setup the workflow for engineering change orders or engineering change requests go to **Engineering change management \> Engineering workflows**. Select **New** and choose whether you would like to set it up for an engineering change order review or an engineering change request review and then configure the workflow.
 
 For more information about workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 To ensure that the master data for products is created and maintained centrally, you can use one or more *engineering companies*. The engineering company owns the engineering products and their engineering-relevant data. The engineering company is always connected to a *legal entity*, which is also a company. With this connection, the system establishes a central entry point for all engineering-relevant data for engineering products within the company. This is where engineering products are created and engineering-relevant data is maintained. From this central point, the engineering products and engineering-relevant data will be released to *operational companies*, which are the other legal entities. (For more information about the release management, see [Release product structure](release-product-structure.md).) These operational companies will use the engineering data as it is designed by the engineering company. Any logistical data will be maintained locally by each company itself.
 
-To create an engineering company, go to **Project Oaktree> Setup \> Engineering company**. The select **New**, enter a name for the company, and select the existing company (legal entity) that it is based on.
+To create an engineering company, go to **Engineering change management> Setup \> Engineering company**. The select **New**, enter a name for the company, and select the existing company (legal entity) that it is based on.
 
 If you are integrating with external PLM systems you would need to create a business unit (type of company) that would become an external company.
 

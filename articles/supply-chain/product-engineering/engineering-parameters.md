@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Project Oaktree parameters
+title: Engineering change management parameters
 description: This topic describes how to configure engineering change management features for Supply Chain Management.
 author: t-benebo
 manager: tfehr
@@ -27,19 +27,19 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# Project Oaktree parameters
+# Engineering change management parameters
 
 [!include [banner](../includes/banner.md)]
 
-**Project Oaktree parameters** contains setup parameters that modify the default behavior related to the release product structure and the engineering change management processes.
+**Engineering change management parameters** contains setup parameters that modify the default behavior related to the release product structure and the engineering change management processes.
 
-## Open the Project Oaktree parameters page
+## Open the Engineering change management parameters page
 
-To open the **Project Oaktree parameters** page, go to **Project Oaktree \> Setup \> Project Oaktree parameters**. Then make the settings described in the other sections of this topic.
+To open the **Engineering change management parameters** page, go to **Engineering change management \> Setup \> Engineering change management parameters**. Then make the settings described in the other sections of this topic.
 
 ## The Release control tab
 
-The following table describes the settings available on the **Release control** tab of the **Project Oaktree parameters** page. These settings affect the release product structure process.
+The following table describes the settings available on the **Release control** tab of the **Engineering change management parameters** page. These settings affect the release product structure process.
 
 | Setting | Description |
 | --- | --- |
@@ -53,7 +53,7 @@ The following table describes the settings available on the **Release control** 
 
 ## The Engineering change management tab
 
-The following table describes the settings available on the **Engineering change management** tab of the **Project Oaktree parameters** page. These settings affect the engineering change process.
+The following table describes the settings available on the **Engineering change management** tab of the **Engineering change management parameters** page. These settings affect the engineering change process.
 
 | Setting | Description |
 | --- | --- |
