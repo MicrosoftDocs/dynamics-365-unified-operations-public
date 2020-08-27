@@ -35,14 +35,12 @@ This topic describes how to prepare to go live with a project by using Microsoft
 
 There are two different deployment topologies for LCS: the standard [Cloud Deployment](../../dev-itpro/deployment/cloud-deployment-overview.md) topology and the new [Self-Service Deployment](../../dev-itpro/deployment/infrastructure-stack.md) topology. Both follow the same preparation for go-live, but the SLA's and some of the process steps are different. 
 
-[!IMPORTANT] You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service topology. 
+[!IMPORTANT] 
+You can identify the topology of your implementation project by going to Environment Details, and the Environment Type will indicate if your topology is a standard Cloud Deployment when it says “Microsoft Managed”, and “Self-Service” for Self-Service topology. 
 
-Cloud topology: 
-(./media/Environment_Microsoft_Managed.PNG)
+[!Cloud deployment](./media/Environment_Microsoft_Managed.PNG)
 
-Self-Service topology:
-(./media/Environment_Self_Service.PNG)
-
+[!Self-Service](./media/Environment_Self_Service.PNG)
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
@@ -76,7 +74,7 @@ A major milestone in each implementation project is the cutover to the productio
 
 To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Customers must complete the Analysis, Design and Develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. Note that for Self-Service, the Configure button will only become available after the Solution Architect has signed off on the assessment. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 The process of completing a step has two parts:
 
@@ -93,7 +91,7 @@ During the UAT phase, you must test all the business processes that you've imple
 - Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users.
 - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
-- Run the [Customization analysis Report (CAR)] (../../dev-itpro/dev-tools/customization-analysis-report.md)
+- Run the [Customization analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md) and resolve critical issues.
 - Complete Performance testing
 - Document all features, and obtain approval and sign-off from the customer.
 
