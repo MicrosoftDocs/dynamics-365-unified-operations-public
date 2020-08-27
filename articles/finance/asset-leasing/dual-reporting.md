@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual reporting
-description:   
+description: This topic walks through an example of the dual reporting capabilities in Asset leasing for both IFRS and statutory reporting. For purposes of this example, familiarity with posting layers in Dynamics 365 Finance is required.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/10/2020
@@ -52,7 +52,7 @@ This first book is set up to comply with the IFRS 16 accounting standard. All en
 |     Accounting Framework                       	|     IFRS 16         	|
 |     Lease Term / Useful life Set Up            	|     0.00            	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00            	|
-|     Short term threshold                       	|     12              	|
+|     Short-term threshold                       	|     12              	|
 |     Low Value Threshold                        	|     5,000.00        	|
 |     Pay to Vendor                              	|     No              	|
 
@@ -71,7 +71,7 @@ The statutory book is a cash-basis book where the company will account for the l
 |     Low Value Threshold                        	|     0              	|
 |     Pay to Vendor                              	|     No             	|
 
-The statutory reversal book will be setup identically to the statutory book.
+The statutory reversal book will be set up identically to the statutory book.
 
 |     Name                                       	|     Description                       	|
 |------------------------------------------------	|---------------------------------------	|
@@ -82,7 +82,7 @@ The statutory reversal book will be setup identically to the statutory book.
 |     Accounting Framework                       	|     Cash basis                        	|
 |     Lease Term / Useful life Set Up            	|     0.00                              	|
 |     Present Value / Asset Fair Value Set Up    	|     0.00                              	|
-|     Short term threshold                       	|     0                                 	|
+|     Short-term threshold                       	|     0                                 	|
 |     Low Value Threshold                        	|     0                                 	|
 |     Pay to Vendor                              	|     No                                	|
 
@@ -113,11 +113,11 @@ The entries for the Payment schedule lines are as follows.
 In order to account for this lease under two frameworks, we will use a current posting layer and a custom posting layer 1. The figure below is an example of each journal entry required to fairly represent the financials under each reporting standard. We will be walking through each journal entry in detail for the 1st month of the lease.
 
 *There seemed to be a table at this location in the Word document, but I'm not sure what the columns and rows are intended to be. Something didn't come across the right way.*
-*Considering to reduce adjust headers since GitHub could not recorize multiple headers. Number of columns are too many, consider to reduce them as well.*
+*Considering to reduce adjust headers since GitHub could not recognize multiple headers. Number of columns are too many, consider to reduce them as well.*
 
 
 
-You will see that three books are required to report under both statutory reporting and IFRS. The statutory book will record the lease payment according to the rules for cash basis accouning under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will create the journal entries that are required under IFRS 16. You will need only to enter a lease once, and theh navigate to the **Books** page to see all the books associated with a lease. When you create the books, note that all three books must be associated with the same lease record.
+You will see that three books are required to report under both statutory reporting and IFRS. The statutory book will record the lease payment according to the rules for cash basis accounting under the current layer, the reversal book will reverse the statutory journal entries, and the IFRS 16 book will create the journal entries that are required under IFRS 16. You will need only to enter a lease once, and then navigate to the **Books** page to see all the books associated with a lease. When you create the books, note that all three books must be associated with the same lease record.
 
 The first journal entry will record the lease expense under the statutory book. The user will be able to either create these payments in batch, or by selecting the payment schedule in the statutory book.
 
@@ -179,7 +179,7 @@ The following journal entry will be made from the reversal book following the sa
 |     Ledger          	|     4             	|     Custom    	|     Clearing account       	|     1,000.00    	|                 	|
 |     Ledger          	|     1             	|     Custom    	|     Lease expense          	|                 	|     1,000.00    	|
 
-Now that we have eliminated the statutory journal entries. We will book all the journal entries required by IFRS 16 in the IFRS 16 book. These includes the initial recognition of the ROU Asset and the Liability and the recording of interest and depreciation.
+Now that we have eliminated the statutory journal entries. We will book all the journal entries required by IFRS 16 in the IFRS 16 book. These entries include the initial recognition of the ROU Asset and the Liability and the recording of interest and depreciation.
 
 ### Initial recognition -- 1/1/2020 - JE 140
 
@@ -215,6 +215,6 @@ The depreciation expense journal entry will be generated from the Asset deprecia
 |     Ledger          	|     10            	|     Custom    	|     Depreciation expense        	|     949.75    	|               	|
 |     Ledger          	|     11            	|     Custom    	|     Accumulated depreciation    	|               	|     949.75    	|
 
-After all these journal entries are created and posted, the, see the "custom layer 1" values below. You will note the last column includes the bank fee, VAT expense and the reduction of cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
+After all these journal entries are created and posted, see the "custom layer 1" values below. You will note the last column includes the bank fee, VAT expense and the reduction of cash from the previous layer, but does not include the statutory reporting journal entries, thus achieving true dual reporting capabilities. From here, all that the company would need to do is run their trial balance and combined both the current layer and the custom layer in order to create an IFRS trial balance.
 
 
