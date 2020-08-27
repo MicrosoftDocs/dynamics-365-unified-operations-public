@@ -84,7 +84,7 @@ To make your navigation hierarchy available to your online storefront, follow th
 To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment. The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.
 
 > [!NOTE]
-> The navigation menu module that is included in the store starter kit lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
+> The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
 
 ## Add custom navigation options
 
