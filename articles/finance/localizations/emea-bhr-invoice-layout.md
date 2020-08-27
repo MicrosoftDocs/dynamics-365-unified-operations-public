@@ -32,110 +32,152 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-|                     |  |
-|------------------------------|-------------------|
-| **COUNTRY/REGION**          | BHR - Bahrain|
-| **FEATURE TITLE** | Configure invoice layout for Bahrain |
-| **FEATURE REFERENCE**                | BH-00003|
-| **BLUEPRINT CLASSIFICATION**                | INVOICING: Invoice layout / e-invoicing|
-| **CONFIGURABLE**                | Yes. See the configurations in [Import Electronic reporting configurations](#ERConfigs).|
-| **INTERNAL REFERENCE**                | [Compliance 3982346](https://vstsmbs.visualstudio.com/Compliance/_queries/edit/3982346)|
-| **FIRST AVAILABLE IN**                | 2020 Release Wave 2 (Monthly update 10.0.13)|
-| **FEATURE UPDATE HISTORY**                |  |
-| **FEATURE MANAGEMENT**                | No activation required. See the related features in [Enable features](#features).|
-| **BUSINESS NEED**                | The layout of printable invoices must be compliant with Bahraini legal requirements.|
-| **FEATURE DESCRIPTION**                | The article explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented using the **Configurable business documents** concept. For more information about configurable business documents, see [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md).|
+<table>
+<tbody>
+<tr>
+<td><strong>Country/region</strong></td>
+<td>BHR - Bahrain</td>
+</tr>
+<tr>
+<td><strong>Feature title</strong></td>
+<td>Configure invoice layout for Bahrain</td>
+</tr>
+<tr>
+<td><strong>Feature reference</strong></td>
+<td>BH-00003</td>
+</tr>
+<tr>
+<td><strong>Blueprint classification</strong></td>
+<td>INVOICING: Invoice layout / e-invoicing</td>
+</tr>
+<tr>
+<td><strong>Configurable</strong></td>
+<td>Yes. See the list of configurations in the <a href="#ERConfigs">Import Electronic reporting configurations</a> section.</td>
+</tr>
+<tr>
+<td><strong>Internal reference</strong></td>
+<td><a href="https://vstsmbs.visualstudio.com/Compliance/_queries/edit/3982346">Compliance 3982346</a></td>
+</tr>
+<tr>
+<td><strong>First available</strong></td>
+<td>2020 Release Wave 2 (Monthly update 10.0.13)</td>
+</tr>
+<tr>
+<td><strong>Feature update history</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Feature management</strong></td>
+<td>Activation isn't required. See the information about related features in the <a href="#features">Turn on features</a> section.</td>
+</tr>
+<tr>
+<td><strong>Business need</strong></td>
+<td>The layout of printable invoices must comply with Bahraini legal requirements.</td>
+</tr>
+<tr>
+<td><strong>Feature description</strong></td>
+<td>This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of <i>configurable business documents</i>. For more information about configurable business documents, see <a href="../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md">Business document management overview</a>.</td>
+</tr>
+</tbody>
+</table>
 
 ## Prerequisites
 
 The primary address of the legal entity must be in Bahrain.
 
-## <a name="features"></a>Enable features
+## <a id="features"></a>Turn on features
 
-In the **Feature management** workspace, enable the following features:
+In the **Feature management** workspace, turn on the following features:
 
 - (Bahrain) Credit invoicing layout for sales and project invoice reports
 - Convert Electronic reporting outbound documents from Microsoft Office formats to PDF
 
-For more information about how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="ERConfigs"></a>Import Electronic reporting configurations
+## <a id="ERConfigs"></a>Import Electronic reporting configurations
 
-In the **Electronic reporting** workspace, import the following Electronic reporting formats from the repository:
+In the **Electronic reporting** workspace, import the following Electronic reporting (ER) formats from the repository:
 
- - Sales invoice (Excel) (BH)
- - Free text invoice (Excel) (BH)
- - Project invoice (Excel) (BH)
- - Project contract line items (Excel) (BH)
- - Project manage invoice (Excel) (BH)
+- Sales invoice (Excel) (BH)
+- Free text invoice (Excel) (BH)
+- Project invoice (Excel) (BH)
+- Project contract line items (Excel) (BH)
+- Project manage invoice (Excel) (BH)
 
 > [!NOTE]
-> The formats above are derived from related standard formats based on **Invoice model** and use **Invoice model mapping**. All required additional configurations will be automatically imported.
+> These formats are derived from related standard formats, based on **Invoice model**, and they use **Invoice model mapping**. All required additional configurations will be automatically imported.
 
-For more information how to import Electronic reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Configure conversion to PDF
 
-By default, invoices are generated as Excel files. To enable their conversion to a PDF format, complete the following setup.
+By default, invoices are generated as Microsoft Excel files. To enable their conversion to PDF format, follow these steps.
 
-1. In **Electronic reporting** workspace, select **Electronic reporting destinations** and create destinations for the related formats:
+1. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting destination**.
+2. On the **Electronic reporting destination** page, create destinations for the following related formats:
 
- - Sales invoice (Excel) (BH)
- - Free text invoice (Excel) (BH)
- - Project invoice (Excel) (BH)
- - Project contract line items (Excel) (BH)
- - Project manage invoice (Excel) (BH)
+    - Sales invoice (Excel) (BH)
+    - Free text invoice (Excel) (BH)
+    - Project invoice (Excel) (BH)
+    - Project contract line items (Excel) (BH)
+    - Project manage invoice (Excel) (BH)
  
-2. For each format, select the **Convert to PDF** check-box, select the **Portrait** page orientation, and enable printing to **Screen**.
+3. For each format, follow these steps:
 
-![Enable conversion to PDF](media/emea-bhr-pdf.jpg)
+    1. Select the **Convert to PDF** check box.
+    2. In the **Page orientation** field, select **Portrait**.
+    3. Select **Settings**, and then, on the **Destination settings** page, on the **Screen** tab, set the **Enabled** option to **Yes** to enable printing to the screen.
+
+![Enabling conversion to PDF](media/emea-bhr-pdf.jpg)
 
 ## Configure parameters
 
-### Configure print management 
+### Configure Print management 
 
-1. Go to **Accounts receivable** > **Setup** > **Forms** > **Forms setup**.
-2. On the **General** tab, select **Print management** and define the references to the imported formats for:
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **Form setup** page, on the **General** tab, select **Print management**.
+3. On the **Print management setup** page, define the references to the imported formats for the following documents:
 
- - **Customer invoice**: Select **Sales invoice (Excel) (BH)**
- - **Free text invoice**: Select **Free text invoice (Excel) (BH)**
+    - **Customer invoice:** In the **Report format** field, select **Sales invoice (Excel) (BH)**.
+    - **Free text invoice:** In the **Report format** field, select **Free text invoice (Excel) (BH)**.
 
-![Print management configuration](media/emea-bhr-print_management.jpg)
+    ![Configuring Print management](media/emea-bhr-print_management.jpg)
 
-3. Go to **Project management and accounting** > **Setup** > **Forms** > **Forms setup**.
-4. On the **General** tab, select **Print management** and define the references to the imported formats for:
+4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
+5. On the **Form setup** page, on the **General** tab, select **Print management**.
+6. On the **Print management** page, define the references to the imported formats for the following documents:
 
- -  **Project invoice without billing rules**: Select **Project invoice (Excel) (BH)**
-  - **Project invoice with billing rules**: Select **Project contract line items (Excel) (BH)**
-  - **User defined project invoice**: Select **Project manage invoice (Excel) (BH)**
+    - **Project invoice without billing rules:** In the **Report format** field, select **Project invoice (Excel) (BH)**.
+    - **Project invoice with billing rules:** In the **Report format** field, select **Project contract line items (Excel) (BH)**.
+    - **User defined project invoice:** In the **Report format** field, select **Project manage invoice (Excel) (BH)**.
 
-### Sales tax specification
+### Configure sales tax specification
 
-1. Go to **Accounts receivable** > **Setup** > **Forms** > **Forms setup**.
-2. On the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **Form setup** page, on the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
 
-![Sales tax specification](media/emea-bhr-tax-spec.jpg)
+    ![Configuring sales tax specification](media/emea-bhr-tax-spec.jpg)
 
-3. Go to **Project management and accounting** > **Setup** > **Forms** > **Forms setup**.
-4. On the **General** tab, in the **Sales tax specification** field, select**Registration and company currency**.
+3. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
+4. On the **Form setup** page, on the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
 
-### Packing slip specification
+### Configure packing slip specification
 
-1. Go to **Accounts receivable** > **Setup** > **Forms** > **Forms setup**.
-2. On the **Invoice** tab, select the **Print packing slip specifications** check-box.
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
 
-![Packing slip specification](media/emea-bhr-packing-spec.jpg)
+    ![Configuring packing slip specification](media/emea-bhr-packing-spec.jpg)
 
-3. Go to **Project management and accounting** > **Setup** > **Forms** > **Forms setup**.
-4. On the **Invoice** tab, select the **Print packing slip specifications** check-box.
+3. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
+4. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
 
 ### Activate credit invoicing 
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Updates** tab, on the **Invoice** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports**.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.
 
-![Credit invoicing activation](media/emea-bhr-credit.jpg)
+![Activating credit invoicing](media/emea-bhr-credit.jpg)
 
 ## Generate invoices
 
-After all of the previous steps in this topic are complete, you can print invoices based on sales orders and free text invoices in accordance with Bahraini legal requirements.
+After you've completed all the previous procedures in this topic, you can print invoices that are based on sales orders and free text invoices, in accordance with Bahraini legal requirements.
