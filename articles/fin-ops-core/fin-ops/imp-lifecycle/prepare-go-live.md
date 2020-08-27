@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-In LCS, there are two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md) for production and sandbox, Microsoft Managed and Self-Service. Both follow the same preparation for go-live, but the Service Level Agreements (SLA's) and some of the process steps are different. 
+In LCS, there are two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md) for production and sandbox, Microsoft Managed and Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA's) and some of the process steps are different. 
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
@@ -47,7 +47,7 @@ The following table lists all the steps in the process, the environment type to 
 | 3 | Project Go-Live assessment (FastTrack Essentials) | Both | 3-business days for initial report, plus additional time for mitigation, if required | Microsoft-FastTrack Solution Architect | Solutions Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 |  | Go-live Assessment workshop (FastTrack) | Both | To coordinate with architect assigned | Microsoft-FastTrack Solution Architect |  |
 | 4 | Release for production deployment | Cloud | Immediate upon successfully completed assessment | Microsoft-FastTrack Solution Architect | Do not submit production request until the assessment is successfully completed. |
-|  |  | Self-Service | Immediate upon successfully completed assessment and Configure button is enabled | Microsoft-FastTrack Solution Architec | For Self-Service Deployment topology, the Configure button remains disabled until the assessment is complete. |
+|  |  | Self-Service | Immediate upon successfully completed assessment and Configure button is enabled | Microsoft-FastTrack Solution Architect | For Self-Service Deployment topology, the Configure button remains disabled until the assessment is complete. |
 | 5 | Production deployment request | Cloud | Self-service | Customer/Partner | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
 |  |  | Self-Service | Self-service | Customer/Partner | Once the assessment is complete, Configure button will be enabled and customer will be able to request the production deployment. |
 |  | Sizing | Both | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Microsoft-Dynamic Service Engineering (DSE) | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
@@ -67,7 +67,7 @@ A major milestone in each implementation project is the cutover to the productio
 
 To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-Customers must complete the Analysis, Design and Develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. Note that for Self-Service, the Configure button will only become available after the Solution Architect has signed off on the assessment. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Customers must complete the Analysis, Design and Develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. Note that for Self-Service environments, the Configure button will only become available after the Solution Architect has signed off on the assessment. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 The process of completing a step has two parts:
 
@@ -108,7 +108,7 @@ When you've completed the go-live checklist, email it to **Dynamics 365 FO Go-Li
 
 After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.
 
-For projects in cloud deployment topology, it is recommended you request the Production environment after the assessment is completed. If you request the production environment before the assessment is completed, the deployment will remain in the **Queued** state until the assessment is successfully completed.
+For Microsoft Managed environments, if you request the production environment before the assessment is completed, the deployment will remain in the **Queued** state until the assessment is successfully completed. For Self-Service environments, the **Configure** button to request production will be only enabled after the assessment is completed. 
 
 You can cancel an environment deployment request while it is in a **Queued** state by following these steps:
 
@@ -128,6 +128,6 @@ We recommend that you select a service account, for example a generic user accou
 
 Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.
 
-After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For **Cloud** deployments the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For **Self-service** the deployment will take from 1 to 2 hours after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
+After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For **Microsoft Managed** environment deployments the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For **Self-service** environment, the deployment will take from 1 to 2 hours after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
 
 When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. 
