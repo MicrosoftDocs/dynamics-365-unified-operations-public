@@ -81,7 +81,7 @@ To add a tab module to a page and set the properties, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 
