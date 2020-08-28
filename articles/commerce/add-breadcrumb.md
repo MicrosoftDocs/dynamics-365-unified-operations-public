@@ -80,7 +80,7 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Overview of default category landing page and search results page](category-search-page-overview.md)
 
