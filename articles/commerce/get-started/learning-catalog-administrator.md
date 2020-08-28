@@ -1,6 +1,6 @@
 ---
 title: Administrator learning catalog for Dynamics 365 Commerce
-description: Find all the training options for Dynamics 365 Commerce.
+description: Find all the training options for administrators of Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
