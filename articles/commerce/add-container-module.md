@@ -127,7 +127,7 @@ To add a container player module to a new page and set the required properties, 
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Accordion module](add-accordion.md)
 
