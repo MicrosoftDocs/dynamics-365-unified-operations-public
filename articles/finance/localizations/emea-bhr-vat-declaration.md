@@ -5,7 +5,7 @@ title: VAT declaration for Bahrain
 description: This topic explains how to configure and generate the VAT return form for Bahrain.
 author: sndray
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,10 +31,6 @@ ms.dyn365.ops.version: 10.0.13
 # VAT declaration for Bahrain (BH-00002)
 
 [!include [banner](../includes/banner.md)]
-
-- **First release:** This feature is included in the platform updates for version 10.0.12 of Finance and Operations apps. These update is formerly referred to as Platform update 36.
-
-- **Latest update:** This feature was updated in the platform updates for version 10.0.12. This update is formerly referred to as Platform update 37.  
 
 ## Overview
 
