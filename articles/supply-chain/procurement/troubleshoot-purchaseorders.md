@@ -122,7 +122,7 @@ This functionality is not available currently.
 
 When items are Registered on a Purchase order, it is possible to reserve the inventory, that is we can create transactions against the Registered Inventory.
 
-**Repro steps:**
+**Repro steps**
 		1. Create PO
 		2. Register the PO line
 		3. It is possible to generate reservation or transaction against Registered inventory. 
@@ -131,8 +131,106 @@ When items are Registered on a Purchase order, it is possible to reserve the inv
 **Resolution/Fix:**
 The Registered items are expected to be phyiscally arrived in the warehouse orinventory, hence this is available for reservation.
 
+## Language settings on legal entity not reflected in purchase orders - the product name is shown in the company language.
+
+The product name in a purchase order shows up in system language, and not in the language set for the legal entity in which the purchase order has been created.
+
+**Repro steps**
+1. System language EN-US
+2. Make sure there is a product that has languages en-us and de maintained for translations for the product name.
+3. Change the language of a legal entity to DE.
+4. Create a  purchase order with this product in the legal entity DE.
+5. Result: The product name is still shown in EN-US, the same as what was set as the system language.
+
+**Resolution**
+On the purchase orders, the product is always show in the system language. When a confirmation journal is created, then the PO language 
+
+## Purchase order receipt does not include all charges
+
+**Repro steps**
+1. Make sure the procurement and sourcing parameter > Delivery > Generate charges on product receipt option is set to yes.
+2. Create purchase order that includes charges.
+3. Confirm the PO.
+4. Receive the PO.
+5. Look at the receipt total and compare it to the expected total. 
+6. Result: The charges on the purchase order receipt does not include all the charges.
+
+**Resolution**
+This is dependent on how the miscellaneous charges have been setup. Please see this blog for how to set this according your requirements. [Post Misc. charges at time of Product receipt] (https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
+
+## Trade agreement price and discounts are not applied on purchase order lines imported through data management
+Trade agreements that are applicable for purchase order lines do not get applied to lines imported through data management, though the same trade agreements are applied on regular purchase order lines created manually.
+
+**Repro steps**
+1. Create a purchase order for a vendor that has a trade agreement set up for line discount percentage.
+2 Import purchase order lines with price set for eg., through the entity Purchase Order Lines V2
+3. Check field "Line discount percentage".
+4. Result: The line discount percentage is not updated after import of these lines.
+
+**Resolution**
+When purchase order lines that are imported via data management  already are decorated with price information, then the trade agreement will not be re-evaluated for these lines. 
+
+**Workaround**
+Import the purchase order lines without setting any of the price information, then the trade agreements will get kicked in and the purcase order lines would get updated based on the defined trade agreements.
+
+## Cannot consolidate multiple Product Receipts (PR) into a single Purchase order
+Cannot consolidate multiple PR into a single PO when the different PR lines have different accounting dates.
+
+**Resolution**
+This was possibility in an earlier version that allowed for consolidating PR lines with different accounting dates. However, this is error prone. The accounting date on the created PO lines - which is the same as the accounting date on the header of the PO - should not be different from the accounting date on the PR line from which the PO line was created. Hence, the consolidation of multiple product receipts into a single purchase orders will is not allowed. 
+
+The accounting date is used e.g. for budget reservations and encumbrance, this should be kept when transitioning from PR to PO. 
+
+## Cancelling Product Receipts allows to post transactions to the suspended ledger account.
+System is allowing the posting of transactions to suspended ledger accounts on cancelling of the Product Receipt even though the main accounts are “suspended”.
+
+**Repro Steps**
+1. Ensure the “Post product receipt in ledger “enabled in parameter.
+2. Create a purchase order and create a line with a product, with 1000 quantity and confirm the purchase order.
+3. Post the Product receipt and check the vouchers.
+4. Suspend the relevant main accounts 200140 and 140200.
+5. Cancel the posted product receipt.
+
+Result: This allows posting transactions to the suspended leger accounts.
+
+**Resolution**
+With reversals, our recommendation is to skip all validations to ensure that the same transaction that was posted is also reversed.  The customer will have to post an adjusting entry in GL, so as to move the balance from the suspended account to the new main account that replaces the suspended account.
+
+## Vendor rebate is not cumulated based on invoices.
+Posting invoices with different due dates is not reflected to the vendor rebates that is generated from the invoices.
+
+**Resolution**
+Due date is not considered when calculating the vendor rebate.
+Customization as extension could be considered so that the due date and the relation to the invoice is more apparent in relation to the actual vendor rebate.
+
+## Unit price in purchase order is not calculated based on UOM conversion
+Trade agreement Prices are not recalculated according to unit conversion definitions when a unit is changed on a purchase order.
+
+Price is always obtained from trade agreements (or other price settings in the system e.g. sales agreements; item price) and the price is set for a Unit. 
+
+If the unit is changed on an order line then the system will look for a price for that particular unit and apply that price; if no price is found for the unit it will not apply the price. The unit conversion cannot be used to recalculate the price into an other unit. Theoretically, it could be that the price is different for a box with 10 than 10xthe price of 1.
+
+**Workaround**
+A way to overcome this is to make sure that there are trade agreements for the particular units that are expected to be used on order lines for the item.
+
+## After changing the Delivery address on the purchase order header, the Delivery name is not synchronized.
+The address on the header of a purchase order is changed to an address that is not a delivery address. The address updates - however the delivery name does not update with the selected address.
+
+**Resolution**
+ Only if the address selected is classified as a delivery address, then the delivery name will also be updated according to the selected address. Otherwise, the delivery name is not updated but not the address.
+
+## Cancelling of delivery remainder on a purchase order with change management enabled, get the purchase order to a confirmed state
+For a purchase order under change management: When a requested change is "just" to cancel a delivery remainder on the line(s) the PO will when it is approved go directly to a Confirmed state and no journal is created. 
+
+**Resolution**
+The cancelling on the delivery remainder is not having any influence of the contents of thes confirmation journal.
+
+However, the cancelling of the delivery remainder functionality should be used for when the line has been partially received and then remainder quality is being cancelled, in the process step after the PO has been confirmed with the Vendor.
+
+In case of the PO confirmation, the line that is not required anymore should be removed from the PO not cancelled. 
+
+
 ## Additional resources
 
-[Get started with Planning Optimization](get-started.md)
+[Get started with Purchase Orders](get-started.md)
 
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
