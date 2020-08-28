@@ -158,7 +158,7 @@ On the purchase orders, the product is always show in the system language. When 
 **Resolution**
 This is dependent on how the miscellaneous charges have been setup. Please see this blog for how to set this according your requirements. [Post Misc. charges at time of Product receipt] (https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
 
-## Trade agreement price and discounts are not applied on purchase order lines imported through data management
+## Trade agreement price and discounts are not applied on purchase order lines imported through data management (DMF)
 Trade agreements that are applicable for purchase order lines do not get applied to lines imported through data management, though the same trade agreements are applied on regular purchase order lines created manually.
 
 **Repro steps**
@@ -172,6 +172,27 @@ When purchase order lines that are imported via data management  already are dec
 
 **Workaround**
 Import the purchase order lines without setting any of the price information, then the trade agreements will get kicked in and the purcase order lines would get updated based on the defined trade agreements.
+
+## Purchase order Line Numbers are not following the increment defined in system parameter, when purchase orders are imported through data management (DMF)
+The line numbers for imported purchase order lines through data entity "Purchase order lines V2" are not defaulting to system line number increment specified in system parameters when adding auto-generated line numbers in DMF. When you create a PO and add lines manually through UI, it is correctly incrementing. However, when using DMF it is not.
+
+**Resolution**
+When importing the lines via the Data Management framework it will use the data management frameworks methods of assigning line numbers, when the line number is not already assigned in the imported entity. And that method is increments of 1.
+
+**Workaround**
+A way to do this could be to make sure that the desired line numbers are already given in the entity data when importing the purchase order line, then they will not be overwritten by the data management framework.
+
+## Approved vendor list by product entity does not allow to change effective date.
+The "Approved vendor list by product" doesn’t allow to change effective date. Suppose, ADB0797 has approved supplier CS0295 with effective date 01/11/2018 and expiration date ‘never’. 
+It is not possible to change effective date to 01/10/2018 Or 01/12/2018. The following error is seen: Cannot create a record in Approved supplier list (PdsApproveVendorList). The 'Expiration' value needs to be greater than or equal to the 'Effective' value.
+
+**Resolution**
+It is only possible to extend the period that the vendor is approved for. 
+
+1. To bring the effective date to an earlier date than any of existing records (periods) given for that item-vendor, the expiration date on the new period has to be before any of the expiration dates in the existing records.
+2. To bring the expiration date to a later date than any of the existing periods, the effective date has to be after the latest expiration date of any existing records.
+
+To reduce the overall time period that the vendor is approved, this has to be done through UI by either deleting records or modifying existing records - or by using the truncate switch when importing which deletes all existing records in the table for approved vendors by item. For this case above, where there is a record of effective date 01/11/2018 and expiration date ‘never’, it would be possible to import a new record with effective date 01/10/2018 and expiration date before "never". However it is not possible to reduce the period so that the effective date is updated to 01/12/2018 via data management. This would have to be done through the UI.
 
 ## Cannot consolidate multiple Product Receipts (PR) into a single Purchase order
 Cannot consolidate multiple PR into a single PO when the different PR lines have different accounting dates.
