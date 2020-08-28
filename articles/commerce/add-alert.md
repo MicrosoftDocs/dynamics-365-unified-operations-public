@@ -91,7 +91,7 @@ To add a promo banner module to a page and set the required properties, follow t
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Carousel module](add-carousel.md)
 
