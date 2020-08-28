@@ -79,7 +79,7 @@ To join loyalty program, a marketing page can be created with loyalty sign up an
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 
