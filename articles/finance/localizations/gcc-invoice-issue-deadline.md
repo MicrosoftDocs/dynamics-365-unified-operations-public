@@ -69,7 +69,7 @@ Follow these steps to set up the invoice issue deadline functionality.
 
     ![Foreign trade parameters page](media/gcc-invoice-issue-deadline-Foreign-trade-parameters.jpg)
 
-7. Go to (Need navigation path to the page - the previous navigation is incorrect).
+7. Go to **Accounts receivable** > **Setup** > **Set up calculation for invoice issue date**.
 8. On the **Set up calculation for invoice issue due date** page, create a record.
 9. In the **Country/region type** field, select **Domestic** and in the **Date interval code** field, enter a value. For example, 15.
 
