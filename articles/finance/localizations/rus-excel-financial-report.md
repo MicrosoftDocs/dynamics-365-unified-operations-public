@@ -114,20 +114,21 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
 5. Bind the calculated values of financial report cells to elements of the ER format cells:
 
-    1. Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
-    2. Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
-    3. For all four ER format cells, on the **Format** tab, enter a value in the **Name** field. The value of the **Name** field must equal the value of the **Cell code** field in the financial report. For this example, the value that you enter in the **Name** field should equal the value of the **Excel range** field: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, or **АктивВнеОбАНематАктСумПрдшв**.
-
-        ![Format mapping field name](media/rus-format-designer-format.jpg)
-
-    4. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
-    5. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
+    Note
+    In the current example, elements are binded already in the format, so to handle the example steps, you first need to unbind them:
+       Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
+       Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
+    You'll not need to do these steps for your new reports. 
+    
+    1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
+    2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
         ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
-    6. On the **Mapping** tab, select the **Value** element.
-    7. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
-    8. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
+    3. On the **Mapping** tab, select the **Value** element.
+    4. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
+    5. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
+    
 
 ## Run the financial report format
 
