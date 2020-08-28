@@ -127,7 +127,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
     3. On the **Mapping** tab, select the **Value** element.
     4. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
-    5. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
+    5. Repeat the previous two steps for **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв** Excel cells.
     
 
 ## Run the financial report format
