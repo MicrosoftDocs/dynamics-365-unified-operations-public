@@ -992,6 +992,8 @@
             href: media-gallery-module.md
           - name: Ratings and reviews modules
             href: ratings-reviews-modules.md
+          - name: Social share module
+            href: social-share-module.md
         - name: Purchase modules
           items:
           - name: Cart module
@@ -1028,6 +1030,12 @@
           items:
           - name: Breadcrumb module
             href: add-breadcrumb.md
+          - name: Navigation menu module
+            href: nav-menu-module.md
+        - name: Compliance modules
+          items:
+          - name: Cookie consent module
+            href: cookie-consent-module.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
