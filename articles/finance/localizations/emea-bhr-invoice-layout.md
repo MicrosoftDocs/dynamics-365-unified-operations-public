@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md). 
+This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 
 ## Prerequisites
 
