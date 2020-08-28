@@ -103,7 +103,7 @@ To add a media gallery module to a marketing page, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
