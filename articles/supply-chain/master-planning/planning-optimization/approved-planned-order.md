@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planning Optimization extensibility
+title: Approve planned orders
 description: This topic describes approval of planned orders that are supported in Planning Optimization. 
 author: ChristianRytt
 manager: tfehr
@@ -39,11 +39,10 @@ Note that approval of planned orders is an optional step, on the way to create a
 
 ![Planned order flow](media/approved-planned-orders-1.png)
 
-You can use the  **Status**  field to help track your progress. The following values are available:
+The **Status** field helps you tack your progress using the following values:
 
-- **Unprocessed:** When master planning generates planned orders, the planned orders have a status of Unprocessed. Planned order with this status will be deleted during the next planning run.
-- **Completed:** If you decide not to firm a planned order, you can change the status to Completed to indicate that you completed evaluating this planned order. Note that status Unprocessed and Completed are treated the same by the system.
-- **Approved:** If you want to keep edits or are planning to firm a planned order, you can change the status to Approved. Planned orders with Approved status are considered as fixed and expected supply by master planning, so they are not modified or deleted during later master planning runs. To achieve this, the planning logic copies the Approved planned orders from the old plan version to the new plan version during master planning.
-Note that Approved planned orders are only seen as supply within the specific master plan.
+- **Unprocessed:** When master planning generates planned orders, the planned orders have a status of *Unprocessed*. Planned orders with this status will be deleted during the next planning run.
+- **Completed:** If you decide not to firm a planned order, you can change the status to *Completed* to indicate that you completed evaluating this planned order. Note that status *Unprocessed* and *Completed* are treated the same by the system.
+- **Approved:** If you want to keep edits or are planning to firm a planned order, change the status to *Approved*. Planned orders with *Approved* status are considered as fixed and expected supply by master planning, so they are not modified or deleted during later master planning runs. To achieve this, the planning logic copies the *Approved* planned orders from the old plan version to the new plan version during master planning. Note that *Approved* planned orders are only seen as supply within the specific master plan.
 
-Planned orders can be managed from the  **Master planning**  workspace, the  **Planned order**  list, or the  **Planned production orders**,  **Planned purchase orders**, and  **Planned transfer**  lists.
+You can manage planned orders from the  **Master planning**  workspace, the  **Planned order**  list, or the  **Planned production orders**,  **Planned purchase orders**, and  **Planned transfer**  lists.
