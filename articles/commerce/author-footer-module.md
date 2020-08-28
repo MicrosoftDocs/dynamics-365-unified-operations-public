@@ -76,7 +76,7 @@ By adding the page fragment to page templates, you help guarantee that the foote
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 
