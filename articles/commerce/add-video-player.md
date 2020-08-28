@@ -102,7 +102,7 @@ To add a video player module to a new page and set the required properties, foll
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 
