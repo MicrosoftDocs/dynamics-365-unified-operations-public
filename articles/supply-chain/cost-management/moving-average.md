@@ -42,8 +42,13 @@ The following are prerequisites when you use moving average cost as a costing me
 
 1.  In the **Item model groups** page, set up an item model group that has Moving average selected in the **Inventory model** field. **Note:** By default, when Moving average is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected. 
 
-2.  In the **Posting** page, assign accounts to the **Price difference for moving average** and the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs because of a difference in cost between a purchase receipt and the purchase invoice, and because of a difference between the original inventory quantity and the current on-hand quantity. Use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
-3.  In the **Released products** page, assign the moving average item model group to the product. **Note:** The inventory close process only closes the accounting period. It does not affect products that have moving average assigned to them as an item model group.
+2.  In the **Posting** page, assign accounts to the **Price difference for moving average**. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs in following two scenarios:
+    1. There is difference in cost between a purchase receipt and the purchase invoice, and because of a difference between the original inventory quantity and the current on-hand quantity. 
+    2. The transactions bring the inventory from negative to zero, and there is difference between transaction cost and the current moving average cost.
+
+3.  In the **Posting** page, assign accounts to the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
+
+4.  In the **Released products** page, assign the moving average item model group to the product. **Note:** The inventory close process only closes the accounting period. It does not affect products that have moving average assigned to them as an item model group.
 
 ## Convert to the moving average costing method
 Products can be converted to use the moving average inventory valuation method. This type of conversion is usually done at the end of the year, after the last month of the current year is closed. It is done by using the product’s current costing model. You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average. 
@@ -102,6 +107,21 @@ Backdated transactions are assigned the current moving average cost, and the pro
 3.  Post the adjustment.
 
 In the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00. You can post in the past, but the difference in cost is expensed, so the moving average cost is not affected.
+
+## Negative inventory balances
+Transactions are handled differently depending on whether the new on-hand quantity after the transaction is negative, zero, or positive. 
+
+### New balance is negative or zero
+If the new on-hand quantity is negative or zero, the transaction is costed at the current average costs. In case there is difference between the purchase price and the current average costs, it's posted to **Price difference for moving average**. 
+
+### New balance is positive 
+If the new on-hand quantity is positive after the transaction, the transaction is split into two parts and costed differently as below:
+
+|  | |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Quantity from negative to zero | Inventory uses the current moving average cost of the item rather than the transaction cost for that portion of the receipt quantity that increases the on-hand balance from negative to zero. The difference between the transaction cost and the current moving average cost is posted to **Price difference for moving average**|
+| Quantity from zero to positive | Inventory uses the transaction cost for that portion of the receipt quantity that increases the on-hand balance from zero to positive.                                                  |
+
 
 ## Inventory value report
 In this moving average example, the inventory value report is printed to support the current moving average calculation for a product. The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product. The report displays the moving average cost for the product. In the **Inventory value reports** dialog box, a Date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by. The **Posting date** option is how the report is traditionally printed. The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated. You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time. The following table displays the transactions for the product that the report is printed for when the **Transaction time sorting** option is used.
