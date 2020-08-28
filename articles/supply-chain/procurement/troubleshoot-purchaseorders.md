@@ -125,12 +125,11 @@ When items are Registered on a Purchase order, it is possible to reserve the inv
 **Repro steps:**
 		1. Create PO
 		2. Register the PO line
-		3. Generate reservation or transaction against Registered inventory. 
-  
+		3. It is possible to generate reservation or transaction against Registered inventory. 
   Is there a way to block this?
 		
 **Resolution/Fix:**
-The Registered items are expected to be phyiscally arrived in the warehouse / inventory, hence available for reservation.
+The Registered items are expected to be phyiscally arrived in the warehouse orinventory, hence this is available for reservation.
 
 ## Additional resources
 
