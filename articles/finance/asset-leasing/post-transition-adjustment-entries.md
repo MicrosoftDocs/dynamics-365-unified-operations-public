@@ -37,15 +37,15 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the steps for posting transition adjustments to a lease portfolio that adhere to new accounting standards – US GAAP ASC 842 and IFRS 16. For a full review of the transition methods, see [Transition methods](transition-methods.md). For information on how to setup a book to transition to the new standards, see [Setup lease books](https://review.docs.microsoft.com/en-us/dynamics365/finance/asset-leasing/set-up-lease-books?branch=bob-asset-leasing-setup).
 
-When you create a transition adjustment journal entry, the journal entry that's generated will reflect the impact on your balance sheet of recording that lease under the new standards at that date. The appropriate asset account will be debited for the carrying amount at that date and the liability account will be credited. The difference will be either debited or credited to retained earnings.
+When you create a transition adjustment journal entry, that entry will be reflected on your balance sheet. The balance sheet will now reflect the changes to the lease based on the new standards. The appropriate asset account will be debited for the carrying amount at that date and the liability account will be credited. The difference will be either debited or credited to retained earnings. When you create a transition adjustment journal entry, that entry will be reflected on your balance. The balance sheet will now reflect the changes to the lease based on the new standards. 
 
-1.	To post a transition adjustment in compliance with the new accounting standards, select the lease from the lease summary form and click **Books**.
+1.	To post a transition adjustment in compliance with the new accounting standards, select the lease from the **Lease summary** page and click **Books**.
 2.	In the book, select **Payment schedule**.
 3.	Click **Confirm** and exit the payment schedule.
 4.	Click **Transition adjustment**.
 
 > [!Note]
-> Only those lease books assigned to a book with the **Transition book** field enabled will allow for a transition adjustment entry to be created. Also, if the Lease commencement field is later than the Transition date then the Transition adjustment will not populate.
+> Only those lease books assigned to a book with the **Transition book** field enabled will allow for a transition adjustment entry to be created. Also, if the **Lease commencement** field is later than the transition date then the **Transition adjustment** field won't be filled in.
 
 5.	To view the journal entry, select **General journals**.
 6.	Select the new journal and click **Post**.
