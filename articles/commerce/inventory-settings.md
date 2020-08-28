@@ -78,7 +78,7 @@ The following image shows an example of a cart that is showing an in-stock ("Ava
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Configure inventory buffers and inventory levels](inventory-buffers-levels.md)
 
