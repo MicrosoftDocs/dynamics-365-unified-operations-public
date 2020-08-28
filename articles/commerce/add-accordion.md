@@ -84,7 +84,7 @@ To add an accordion module to a FAQ page and set its properties in site builder,
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 
