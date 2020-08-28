@@ -126,8 +126,6 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Cart module](add-cart-module.md)
 
-[Cart icon module](cart-icon-module.md)
-
 [Checkout module](add-checkout-module.md)
 
 [Order confirmation module](order-confirmation-module.md)
@@ -135,5 +133,7 @@ To add a buy box module to a new page and set the required properties, follow th
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+[Social share module](social-share-module.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
