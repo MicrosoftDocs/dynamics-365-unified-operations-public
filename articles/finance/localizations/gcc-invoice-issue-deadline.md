@@ -5,7 +5,7 @@ title: Invoice issue deadline (GCC)
 description: This topic provides information about how to calculate the due dates for issuing customer invoices in Gulf Cooperation Council (GCC) countries.
 author: v-oloski
 manager: Annbe
-ms.date: 08/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,54 +32,10 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-<table>
-<tbody>
-<tr>
-<td><strong>Country/region</strong></td>
-<td>Gulf Cooperation Council (GCC) countries include Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and United Arab Emirates.</td>
-</tr>
-<tr>
-<td><strong>Feature title</strong></td>
-<td>Invoice issue deadline</td>
-</tr>
-<tr>
-<td><strong>Feature reference</strong></td>
-<td>GCC-00001</td>
-</tr>
-<tr>
-<td><strong>Blueprint classification</strong></td>
-<td>INVOICING: Invoice processing</td>
-</tr>
-<tr>
-<td><strong>Configurable</strong></td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Internal reference</strong></td>
-<td><a href="https://vstsmbs.visualstudio.com/web/wi.aspx?pcguid=bf66efc0-4097-46c2-80a1-746442695fc7&id=3982487">Compliance 3982487</a></td>
-</tr>
-<tr>
-<td><strong>First available</strong></td>
-<td>2020 Release Wave 2 (Monthly update 10.0.13)</td>
-</tr>
-<tr>
-<td><strong>Feature update history</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Feature management</strong></td>
-<td>Yes. See the <a href="#turn-on-the-feature">Turn on the feature</a> section.</td>
-</tr>
-<tr>
-<td><strong>Business need</strong></td>
-<td>The tax invoice issue date must comply with the GCC legal requirements and should be no later than the data that is set in the legislation.</td>
-</tr>
-<tr>
-<td><strong>Feature description</strong></td>
-<td>This topic explains how to configure Microsoft Dynamics 365 Finance so that it complies with GCC legal requirements for the tax invoice issue deadline.</td>
-</tr>
-</tbody>
-</table>
+[!include [banner](../includes/preview-banner.md)]
+
+This topic explains how to configure Microsoft Dynamics 365 Finance so that it complies with GCC legal requirements for the tax invoice issue deadline. The tax invoice issue date must comply with the GCC legal requirements and should be no later than the data that is set in the legislation.
+
 
 ## Prerequisites
 
