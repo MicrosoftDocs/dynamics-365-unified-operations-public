@@ -1222,8 +1222,6 @@
           href: localizations/emea-bhr-vat-declaration.md
         - name: Invoice issue deadline
           href: localizations/gcc-invoice-issue-deadline.md
-        - name: Customer electronic invoices
-          href: localizations/emea-ita-e-invoices.md
       - name: Belgium
         items:
         - name: Belgium overview
