@@ -62,7 +62,7 @@ Because the engineering company owns the engineering-relevant data, they control
 - **Creation and maintenance of routes connected to the engineering versions**: The engineering company can directly connect a route to each engineering version. When these routes are released to other legal entities, they are protected as follows:
   - The engineering data on the routes are protected from being removed.
   - Other legal entities can add operations to the route, which enables them to add local route steps.
-  - Operational companies can  add completely new routes, which can be necessary, for example, if you've chosen not to to include routes during the release. The operational companies owns and maintains these local routes. For more information about the release management, see [Release product structure](release-product-structure.md).
+  - Operational companies can  add completely new routes, which can be necessary, for example, if you've chosen not to include routes during the release. The operational companies owns and maintains these local routes. For more information about the release management, see [Release product structure](release-product-structure.md).
   - All changes made locally are preserved when updates from the engineering company to the routes are released again.
 
 - **Creation and maintenance of engineering documents**: The engineering company can attach engineering documents to each engineering version.

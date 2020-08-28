@@ -107,6 +107,8 @@ When you are reviewing a request for change, use the **Dependencies** option to 
 
 ### Review and approve change requests
 
+<!-- KFM: Maybe we should review this process here. Maybe just a link to the HOL. -->
+
 ### Create a change order from a change request
 
 When an engineer reviews the engineering change request, they can directly create an engineering change order from the change request form by selecting **Copy link and products** in the Action Pane, under the group **Engineering change order**.

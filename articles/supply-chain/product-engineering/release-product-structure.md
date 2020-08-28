@@ -68,7 +68,7 @@ Each release of engineering product starts when somebody from the engineering co
 
 - If the product (updates) are not relevant for the operational company, the user can choose to not accept the release.
 - The user can change the item template for new products.
-- THe user can choose whether the product should be released with BOM and/or routes and if they should be released approved and active.
+- The user can choose whether the product should be released with BOM and/or routes and if they should be released approved and active.
 - The user can change the effective-from dates of the products.
 
 <!-- KFM: Add a link somewhere here to the demo script for how to accept a product (when we've converted the demo). -->
