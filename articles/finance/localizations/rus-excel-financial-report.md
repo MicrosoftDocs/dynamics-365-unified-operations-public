@@ -114,11 +114,11 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
 5. Bind the calculated values of financial report cells to elements of the ER format cells:
 
-    Note
-    In the current example, elements are binded already in the format, so to handle the example steps, you first need to unbind them:
-       Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
-       Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
-    You'll not need to do these steps for your new reports. 
+    > [!NOTE]
+    > In the current example, elements are binded already in the format, so to handle the example steps, you first need to unbind them:
+    >   Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
+    >   Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
+    > You'll not need to do these steps for your new reports. 
     
     1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
     2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
