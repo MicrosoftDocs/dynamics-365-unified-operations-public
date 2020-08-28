@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps for posting transition adjustments to a lease portfolio that adhere to new accounting standards – US GAAP ASC 842 and IFRS 16. For a full review of the transition methods, see [Transition methods](transition-methods.md). For information on how to setup a book to transition to the new standards, see [Setup lease books](https://review.docs.microsoft.com/en-us/dynamics365/finance/asset-leasing/set-up-lease-books?branch=bob-asset-leasing-setup).
+This topic describes the steps for posting transition adjustments to a lease portfolio that adhere to new accounting standards – US GAAP ASC 842 and IFRS 16. For a full review of the transition methods, see [Transition methods](transition-methods.md). For information on how to set up a book to transition to the new standards, see [Setup lease books](https://review.docs.microsoft.com/en-us/dynamics365/finance/asset-leasing/set-up-lease-books?branch=bob-asset-leasing-setup).
 
 When you create a transition adjustment journal entry, that entry will be reflected on your balance sheet. The balance sheet will now reflect the changes to the lease based on the new standards. The appropriate asset account will be debited for the carrying amount at that date and the liability account will be credited. The difference will be either debited or credited to retained earnings. When you create a transition adjustment journal entry, that entry will be reflected on your balance. The balance sheet will now reflect the changes to the lease based on the new standards. 
 
