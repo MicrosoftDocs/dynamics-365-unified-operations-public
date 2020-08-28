@@ -40,13 +40,13 @@ When you use moving average, inventory settlements and inventory marking are not
 
 The following are prerequisites when you use moving average cost as a costing method.
 
-1. On the **Item model groups** page, set up an item model group that has Moving average selected in the **Inventory model** field.
+1. On the **Item model groups** page, set up an item model group that has **Moving average** selected in the **Inventory model** field.
 
     > [!NOTE]
-    > By default, when Moving average is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected.
+    > By default, when **Moving average** is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected.
 
 1. On the **Posting** page, assign accounts to the **Price difference for moving average**. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs in following two scenarios:
-    - There is difference in cost between a purchase receipt and the purchase invoice, and because of a difference between the original inventory quantity and the current on-hand quantity.
+    - There is a difference in cost between a purchase receipt and the purchase invoice, because there is a difference between the original inventory quantity and the current on-hand quantity.
     - The transactions bring the inventory from negative to zero, and there is a difference between the transaction cost and the current moving average cost.
 
 1. On the **Posting** page, assign accounts to the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
@@ -97,17 +97,22 @@ If you need to adjust the moving average cost of a product, inventory adjustment
 
 In this example, the moving average cost is adjusted for a product.
 
-1. Select the product that you want to adjust the moving average cost for. **Note:** The **Revaluation for moving average** page examines the inventory available for a product. The product selected has a posted quantity of 1, a posted a value of 12.00, a posted unit cost of 12.00, and a unit cost of 12.00.
+1. Select the product that you want to adjust the moving average cost for. 
+
+ > [!NOTE]
+ > The **Revaluation for moving average** page examines the inventory available for a product. The product selected has a posted quantity of 1, a posted a value of 12.00, a posted unit cost of 12.00, and a unit cost of 12.00.
+    
 1. Update the **Unit cost** field to 16.00. The system calculates the remaining fields.
 1. The adjustment is posted.
 
-**Note:** You can only adjust the moving average cost as of today’s date.
+> [!NOTE]
+> You can only adjust the moving average cost as of today’s date.
 
-In the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.
+On the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.
 
 ## Moving average with production
 
-Moving average supports produced items. If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selected. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
+Moving average supports produced items. If you plan to use moving average in a production environment, select **Use estimated cost price** on the **Production control parameters** page. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
 
 ## Moving average with a backdated transaction
 
@@ -119,7 +124,7 @@ Backdated transactions are assigned the current moving average cost, and the pro
     - An inventory adjustment of 1, a cost of 20.00, a posting date of January 1, and a transaction date of January 15.
 1. Post the adjustment.
 
-In the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00. You can post in the past, but the difference in cost is expensed, so the moving average cost is not affected.
+On the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00. You can post in the past, but the difference in cost is expensed, so the moving average cost is not affected.
 
 ## Negative inventory balances
 
@@ -127,11 +132,11 @@ Transactions are handled differently depending on whether the new on-hand quanti
 
 ### New balance is negative or zero
 
-If the new on-hand quantity is negative or zero, the transaction is costed at the current average costs. IF there is a difference between the purchase price and the current average costs, it's posted to **Price difference for moving average**.
+If the new on-hand quantity is negative or zero, the transaction is costed at the current average costs. If there is a difference between the purchase price and the current average costs, it's posted to **Price difference for moving average**.
 
 ### New balance is positive
 
-If the new on-hand quantity is positive after the transaction, the transaction is split into two parts and costed differently, as summarized in the following table:
+If the new on-hand quantity is positive after the transaction, the transaction is split into two parts and costed differently, as summarized in the following table.
 
 | Part | Description |
 |---|---|
@@ -140,7 +145,7 @@ If the new on-hand quantity is positive after the transaction, the transaction i
 
 ## Inventory value report
 
-In this moving average example, the inventory value report is printed to support the current moving average calculation for a product. The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product. The report displays the moving average cost for the product. In the **Inventory value reports** dialog box, a Date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by. The **Posting date** option is how the report is traditionally printed. The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated. You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time. The following table displays the transactions for the product that the report is printed for when the **Transaction time sorting** option is used.
+In this moving average example, the inventory value report is printed to support the current moving average calculation for a product. The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product. The report displays the moving average cost for the product. In the **Inventory value reports** dialog box, a date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by. The **Posting date** option is how the report is traditionally printed. The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated. You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time. The following table displays the transactions for the product that the report is printed for when the **Transaction time sorting** option is used.
 
 | Transaction time | Date         | Transaction type           | Quantity | Amount | Average unit cost |
 |------------------|--------------|----------------------------|----------|--------|-------------------|
