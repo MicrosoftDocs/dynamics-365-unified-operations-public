@@ -74,7 +74,7 @@ For detailed information about how to configure a map module on a page, see [Sto
  
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
