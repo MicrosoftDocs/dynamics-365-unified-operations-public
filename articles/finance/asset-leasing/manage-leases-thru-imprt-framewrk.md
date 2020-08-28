@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process of using the Lease import framework to adjust multiple leases in a single step. Updating lease using the Lease import framework allows is  useful when integrating Dynamics 365 Finance with external systems where the adjustments are handled externally. Adjusting many leases at once can save time and help ensure more accurate adjustments by reducing exposure to human error. This capability can also connect Dynamics 365 Finance with external data entities to create a more streamlined process of uploading data.
+This topic describes the process of using the Lease import framework to adjust multiple leases in a single step. Adjusting multiple leases at once can save time and help ensure more accurate adjustments by reducing the chances of human error. This capability can also connect Dynamics 365 Finance with external data entities to upload data efficiently.
 
 Asset leasing can integrate with external systems using the following data entities:
 
@@ -43,9 +43,9 @@ Asset leasing can integrate with external systems using the following data entit
 - Payment contract staging
 - Executory contract staging
 
-When information is imported into the data entities, you can view and edit the leasing data, such as adjusting a lease, updating nonfinancial information, or adding new leases,  before running the import process.
+You can use the import process to adjust a lease, update nonfinancial information, or add new leases. You can view and edit the leasing data before importing them. 
 
-The system can run three different processes through the import suite functionality:
+The system can run three different processes through the import suite:
 
 |     Process Type     	|     Description                                    	|
 |----------------------	|-----------------------------------------------------	|
