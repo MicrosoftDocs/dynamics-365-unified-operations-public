@@ -229,6 +229,46 @@ However, the cancelling of the delivery remainder functionality should be used f
 
 In case of the PO confirmation, the line that is not required anymore should be removed from the PO not cancelled. 
 
+## Tax group and Cash discount are not defaulted from Invoice account
+The customer has a different invoice account than the customer account. When a Purchase order is created, Tax group and Cash discount are not defaulted from the Invoice account. 
+
+**Resolution**
+The defaulting of of tax group, cash discounts and other price information that should be defaulted based on the customer, is always based on the customer account and not the invoice account.
+
+## Product receipt Voucher number is consumed even if no financial voucher is generated
+When the "Accrue liability on product receipt" is OFF on the item model group, then no postings to GL will happen. However, there is a physical event that is recorded for the purpose of accounting in subledger and that needs a voucher number. This is what is referenced in the Inventory transactions.
+
+In the following blogpost, we recommend the "Accrue liability on product receipts" to be YES: [Post Misc. charges at time of Product receipt] (https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
+
+## Cancelled purchase orders show in draft list in purchase order preparation workspace
+After cancellation of purchase orders that were in a confirmed state, the cancelled Purchase Orders still show in the list of Draft PO's in the "Purchase order preparation" workspace. 
+
+**Resolution** 
+This happens only for purchase orders that are under change management because the Cancellation is seen as a change that needs to be approved. The approval can be done automatically by the system. So, the process is to submit the cancelled purchase order to the approval workflow so that it can get into an approved state. Once this is done, the purchase order will not appear in the list of Draft PO's in the "Purchase order preparation" workspace. 
+
+## Setting - 'Post to charge account in ledger' is not active
+
+**Repro steps**
+1. Go to Accounts payable> Setup>Accounts payable parameters; Activate “Post to charge account in ledger “
+2. Go to Inventory Management > Setup > Posting > Posting > Purchase Order 
+3. Make sure you have deleted all of the lines in purchase expenditure for product
+4. Go to Accounts payable > Purchase orders > All Purchase order and create a new PO. Select for Vendor Account – 1001 Acme Office Supplies
+5.For Item number select D0011 Laser Projector; Site 1 ; Warehouse 11; Quantity 4
+6. Confirm the PO by clicking on PURCHASE > Action > Confirm
+7. Click on RECEIVE > Product receipt. And add a product receipt number (random number)
+8. After that Invoice > Invoice
+9. Add an Invoice Number (random number); Update match status and Post
+
+Result:
+Error “Account number for transaction type Purchase expenditure for product does not exist” when we generate Invoice form a PO.
+
+**Resolution**
+This is dependent on the parameter settings for invoices and invoice groups. Please find more details on in this blog: [Accounting for Purchase charge and Stock variation]
+(https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+## When opening the Purchase agreement form in a line view mode, it is not possible to personalize the screen to add the Price unit field in the overview of the line.
+Certain shared fields in the agreement framework cannot be included in personalization as requested. This is due to the implemented datamodel. Hence, the price unit field cannot be personalized.
+
 
 ## Additional resources
 
