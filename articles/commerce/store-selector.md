@@ -131,7 +131,7 @@ To configure the store selector module to show available stores for a store loca
  
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
