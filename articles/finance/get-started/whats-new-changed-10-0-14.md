@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.14 (October 2020)
+title: What's new or changed in Dynamics 365 Finance 10.0.14 (November 2020)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.14 preview release.
 author: roschlom
 manager: AnnBe
@@ -29,28 +29,29 @@ ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.14 (October 2020)
+# Preview features in Dynamics 365 Finance 10.0.14 (November  2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.14. This version has a build number of 10.0.XXX and is available as follows:
 
-- **Preview release:** September 2020
+- **Preview release:** August 2020
 - **General availability (self-update):** October 2020
-- **Auto-update:** NOvember 2020
+- **Auto-update:** November 2020
 
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
- - [Update the invoice quantities to match product receipt quantities in workflow](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/update-invoice-quantities-match-product-receipt-quantities-workflow)
+ - [Asset leasing](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/asset-leasing)
+ - [Automatic collection task creation](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/automatic-collection-task-creation)
+ - [Touchless email reminders to customer](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/touchless-email-reminders-customer)
 
  
  ### Public sector
- - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
- - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
  - [Associate 1099 default value to Main account](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
+ - [Vendor details to bridged transactions and check forms](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-details-bridged-transactions-check-forms)
  
 ### Globalization features
 
