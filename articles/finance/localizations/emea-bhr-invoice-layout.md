@@ -32,54 +32,9 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-<table>
-<tbody>
-<tr>
-<td><strong>Country/region</strong></td>
-<td>BHR - Bahrain</td>
-</tr>
-<tr>
-<td><strong>Feature title</strong></td>
-<td>Configure invoice layout for Bahrain</td>
-</tr>
-<tr>
-<td><strong>Feature reference</strong></td>
-<td>BH-00003</td>
-</tr>
-<tr>
-<td><strong>Blueprint classification</strong></td>
-<td>INVOICING: Invoice layout / e-invoicing</td>
-</tr>
-<tr>
-<td><strong>Configurable</strong></td>
-<td>Yes. See the list of configurations in the <a href="#ERConfigs">Import Electronic reporting configurations</a> section.</td>
-</tr>
-<tr>
-<td><strong>Internal reference</strong></td>
-<td><a href="https://vstsmbs.visualstudio.com/Compliance/_queries/edit/3982346">Compliance 3982346</a></td>
-</tr>
-<tr>
-<td><strong>First available</strong></td>
-<td>2020 Release Wave 2 (Monthly update 10.0.13)</td>
-</tr>
-<tr>
-<td><strong>Feature update history</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Feature management</strong></td>
-<td>Activation isn't required. See the information about related features in the <a href="#features">Turn on features</a> section.</td>
-</tr>
-<tr>
-<td><strong>Business need</strong></td>
-<td>The layout of printable invoices must comply with Bahraini legal requirements.</td>
-</tr>
-<tr>
-<td><strong>Feature description</strong></td>
-<td>This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of <i>configurable business documents</i>. For more information about configurable business documents, see <a href="../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md">Business document management overview</a>.</td>
-</tr>
-</tbody>
-</table>
+[!include [banner](../includes/preview-banner.md)]
+
+This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md). 
 
 ## Prerequisites
 
