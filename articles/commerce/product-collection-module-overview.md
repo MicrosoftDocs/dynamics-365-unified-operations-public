@@ -102,7 +102,7 @@ The following table shows the list types that are available for selection in the
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Carousel module](add-carousel.md)
 
