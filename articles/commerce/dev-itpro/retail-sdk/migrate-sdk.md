@@ -94,7 +94,7 @@ Follow these steps to build the Retail SDK.
 
 ## Update the reference in the CRT and Retail Server extension projects
 
-1. Open the CRT extension project in Visual Studio 2017.
+1. Use any of the sample CRT project in Retail SDK (..\RetailSDK\SampleExtensions\CommerceRuntime) as a template and migrate your CRT extension to this new format because the new samples uses the VS 2017 formats for project dependencies (NuGet references) etc.
 2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
     > [!NOTE]
