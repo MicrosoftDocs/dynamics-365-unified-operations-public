@@ -135,8 +135,8 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 3. On the build machine, add an environment variable for the MSBuild 15.0. Go to **System Properties > Environment Variables > System variables**. Select the **Path** variable, and then select **Edit**. In the **Edit environment variable** window, select **New** and add the path variable for MSBuild 15.0. Move it to the top of the list of PATH variables. For example, the path will be something like - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\. The path will change based on where you installed Visual Studio 2017. To get the path for MSBuild from the developer command prompt for Visual Studio 2017, type **where MSBuild**. 
 - To validate the config information
   +  Open a regular "CMD" window (not the Visual Studio command prompt).
-  +  Run **where MSBuild**.
-  +  The first result in the list should be: C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe.
+  +  Run **msbuild /version**.
+  +  Verify the first result in the list is msbuild version is 15.9.* or greater.
          
 4. Restart the Azure DevOps build agent on the build machine.
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
