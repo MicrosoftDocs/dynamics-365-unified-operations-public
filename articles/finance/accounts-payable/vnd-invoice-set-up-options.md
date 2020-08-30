@@ -2,7 +2,7 @@
 # required metadata
 
 title: Setup options for vendor invoice automation
-description: This topics describes the options that are available to setting up and configuring the vendor invoice automation process.  
+description: This topics describes the options that are available for setting up and configuring the vendor invoice automation process.  
 author: abruer
 manager: AnnBe
 ms.date: 08/30/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topics describes the options that are available to setting up and configuring the vendor invoice automation process. The setup parameters for Accounts payable automation features cover the following choices:
+This topics describes the options that are available for setting up and configuring the vendor invoice automation process. The setup parameters for invoice automation features cover the following choices:
 
 - Parameters for submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines.
 - Parameters for process automation background tasks. Submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines automations use the Process automation framework. Different business processes use this framework to define the recurrence of a selected process. You can use a frequency of Hour or Daily for the Match product receipt to invoice lines and the Submit vendor invoices to workflow background processes. 
