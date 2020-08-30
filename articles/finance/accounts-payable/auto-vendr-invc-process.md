@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Automating vendor invoicing processes overview
 # Automated vendor invoicing processes overview
 
 [!include [banner](../includes/banner.md)]
