@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Platform update 33
 The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
 -  Calculating totals
--  Grouping data
 -  Typing ahead of the system
 -  Evaluating math expressions 
+-  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. These totals are shown in a footer section at the bottom of the grid. 
@@ -75,21 +75,6 @@ If the calculation is taking too long, you can cancel the operation by selecting
 
 Totals will update automatically as you update, delete, or create rows in the dataset.  
 
-## Grouping data
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping** capability in tabular grids allows users to organize their data in interesting ways within Finance and Operations apps. As this feature extends the **Totals** feature, **Grouping** also allows you to get meaningful insights into the data by providing subtotals at the group level.
-
-To use this feature, right-click on the column you wish to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
--  Data value for the group 
--  Column label (This information will be especially useful after multiple levels of grouping are supported.)
--  Number of data rows in this group
--  Subtotals for any column configured to show totals
-
-With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
-
-If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported in version 10.0.9 with Platform update 33.
-
-To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
-
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
 
@@ -112,6 +97,30 @@ Users have always been able to export data from grids in Finance and Operations 
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## Grouping tabular data
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **(Preview) Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. As this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+
+To use this feature, right-click on the column you wish to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
+-  Data value for the group 
+-  Column name (This information will be especially useful after multiple levels of grouping are supported.)  
+-  Number of data rows in this group
+-  Subtotals for any column configured to show totals
+
+With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
+
+If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported as of version 10.0.9 / Platform update 33.
+
+To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
+
+### Expanding and collapsing groups
+The initial grouping of that data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron button in the corresponding group header row. Note that expand/collapse state of individual groups is **not** saved in personalization.
+
+### Selecting and unselecting rows at the group level
+In the same way that you can select (or unselect) all rows in the grid by toggling the checkbox at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by toggling the checkbox in the corresponding group header row. The checkbox in the group header row will always reflect the current selection state of rows in that group, whether all rows are selected, no rows are selected, or only some rows are selected.  
+
+### Hiding column names
+When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14 / Platform update 38, you can now choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
