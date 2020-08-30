@@ -231,7 +231,9 @@
       - name: Invoice automation
         items:         
         - name: Correct a free text invoice
-          href: accounts-receivable/correct-free-text-invoice.md
+          href: accounts-payable/correct-free-text-invoice.md
+        - name: Setup options for vendor invoice automation
+          href: accounts-payable/vnd-invoice-set-up-options.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
