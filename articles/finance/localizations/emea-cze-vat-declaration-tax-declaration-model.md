@@ -47,7 +47,7 @@ To automatically generate the VAT declaration and the VAT control statement, you
 In the table in section 1, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format and the VAT control statement format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
 > [!NOTE]
-> If you configure sales tax codes to post incoming reverse charge VAT with use tax, you should associate your sales tax codes with the lookup result that contains "UseTax" in the name. For example, for European Union (EU) purchases, configure the **EUPurchaseGoodsUseTaxStandard** lookup result for **Use tax** sales tax codes, or configure the **EUPurchaseGoodsVATPayableStandard** lookup result for sales tax codes that have a reverse charge. For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
+> If you configure sales tax codes to post incoming reverse charge VAT by using use tax, you should associate your sales tax codes with the lookup result that contains "UseTax" in the name. For example, for intra-community purchases, configure the **EUPurchaseGoodsUseTaxStandard** lookup result for **Use tax** sales tax codes, or configure the **EUPurchaseGoodsVATPayableStandard** lookup result for sales tax codes that have a reverse charge. For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
 The VAT declaration format in the Czech Republic contains the following sections:
 
@@ -71,8 +71,8 @@ The VAT declaration format in the Czech Republic contains the following sections
 | 7   | Not applicable            | Import of goods                                                        | Standard       | dov\_zb23              | dan\_dzb23                | <ul><li>ImportGoodsVATPayableStandard</li><li>ImportGoodsUseTaxStandard</li></ul> |
 | 8   | Not applicable            | Import of goods                                                        | Reduced        | dov\_zb5               | dan\_dzb5                 | <ul><li>ImportGoodsVATPayableReduced</li><li>ImportGoodsUseTaxReduced</li></ul> |
 | 9   | A2                        | Intra-community purchase of new means of transport                     | Not applicable | p\_dop\_nrg            | dan\_pdop\_nrg            | <ul><li>EUPurchaseNewTransportVATPayable</li><li>EUPurchaseNewTransportUseTax</li></ul> |
-| 10  | B1                        | Purchase of goods and services under the domestic reverse charge (\$92) | Standard       | rez\_pren23            | dan\_rpren23              | <ul><li>DomesticPurchaseReverseChargeVATPayableStandard</li><li>DomesticPurchaseReverseChargeUseTaxStandard</li></ul> |
-| 11  | B1                        | Purchase of goods and services under the domestic reverse charge (\$92) | Reduced        | rez\_pren5             | dan\_rpren5               | <ul><li>DomesticPurchaseReverseChargeVATPayableReduced</li><li>DomesticPurchaseReverseChargeVATPayableReduced2</li><li>DomesticPurchaseReverseChargeUseTaxReduced</li><li>DomesticPurchaseReverseChargeUseTaxReduced2</li></ul> |
+| 10  | B1                        | Purchase of goods and services under the domestic reverse charge (\§92) | Standard       | rez\_pren23            | dan\_rpren23              | <ul><li>DomesticPurchaseReverseChargeVATPayableStandard</li><li>DomesticPurchaseReverseChargeUseTaxStandard</li></ul> |
+| 11  | B1                        | Purchase of goods and services under the domestic reverse charge (\§92) | Reduced        | rez\_pren5             | dan\_rpren5               | <ul><li>DomesticPurchaseReverseChargeVATPayableReduced</li><li>DomesticPurchaseReverseChargeVATPayableReduced2</li><li>DomesticPurchaseReverseChargeUseTaxReduced</li><li>DomesticPurchaseReverseChargeUseTaxReduced2</li></ul> |
 | 12  | A2                        | Other purchases with an obligation to pay VAT                          | Standard       | p\_sl23\_z             | dan\_psl23\_z             | <ul><li>OtherPurchasesVATPayableStandard</li><li>OtherPurchasesUseTaxStandard</li></ul> |
 | 13  | A2                        | Other purchases with an obligation to pay VAT                          | Reduced        | p\_sl5\_z              | dan\_psl5\_z              | <ul><li>OtherPurchasesVATPayableReduced</li><li>OtherPurchasesVATPayableReduced2</li><li>OtherPurchasesUseTaxReduced</li><li>OtherPurchasesUseTaxReduced2</li></ul> |
 
@@ -85,7 +85,7 @@ The VAT declaration format in the Czech Republic contains the following sections
 | 22  | Not applicable            | Export of goods                                                     | pln\_vyvoz             | ExportGoods |
 | 23  | Not applicable            | Intra-community sales of new transport to a non-taxable person      | dod\_dop\_nrg          | EUSalesNewTransport |
 | 24  | Not applicable            | Intra-community consignment of goods                                | pln\_zaslani           | EUConsignmentGoods |
-| 25  | A1                        | Sales of goods and services under the domestic reverse charge (\$92) | pln\_rez\_pren         | DomesticSalesReverseCharge |
+| 25  | A1                        | Sales of goods and services under the domestic reverse charge (\§92) | pln\_rez\_pren         | DomesticSalesReverseCharge |
 | 26  | A3 and other              | Other tax deductible transactions                                   | pln\_ost               | <ul><li>OtherSalesWithRightToDeduct</li><li>OtherSalesWithRightToDeductGoldInvestment</li></ul> |
 
 ## <a name="additionaldata"></a>Section 3: Additional data
@@ -171,7 +171,7 @@ The following subject codes are available in the **VAT control statement XML (CZ
 | PortableDevices          | 16. Portable devices for automatic data processing (e.g. tablets or notebook) |
 | VideoGameConsole         | 17. Video game consoles                                                       |
 
-### Section B1: Purchase of goods and services under the domestic reverse charge ($92)
+### Section B1: Purchase of goods and services under the domestic reverse charge (§92)
 
 Section B1 contains the information that is included in the documents and used to generate the amounts in rows 10 and 11 of the VAT declaration.
 
