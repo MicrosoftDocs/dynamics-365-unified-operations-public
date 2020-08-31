@@ -147,7 +147,7 @@ All subsequent user sessions will start with the new grid control enabled.
 ## [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the form's `run()` method.
 
-    `this.forceLegacyGrid();`
+ ```this.forceLegacyGrid();```
 
 This API will be honored until the October 2021 release when the new grid control becomes mandatory. Please report any issues to Microsoft which require this API to be utilized. 
 
