@@ -62,7 +62,7 @@ The business document details will vary based on the action type that's selected
 If the action type is an email in the process details, this section will contain two FastTabs.  The first is used to define the template ID, email description, default language, the user name that will be assigned to email messages that are automatically sent and the associated senders email address.  The second will allow the body of the email to be created after the values in the **Language** and **Subject** fields are saved by clicking **Edit**.  This will open a window that allows HTML content to be uploaded. You can also type the message that’s created manually in the lower left box of the window.  
 
 > [!Note]
-> An Outlook email can be saved with the desired body of the communication in HTML format. This can then be uploaded to implement the template. <br> If the action type of collection letter is selected there will not be a business document detail section on the setup form.
+> An Outlook email can be saved with the desired body of the communication in HTML format. This can then be uploaded to implement the template. <br> <br> If the action type of collection letter is selected there will not be a business document detail section on the setup form.
 
 
 ## FastTab reference
