@@ -38,13 +38,13 @@ This article describes features that are either new or changed in Dynamics 365 T
 
 ## Changes in Attract
 
-This release includes the following changes to LinkedIn Recruiter in Attract:
+This release includes the following changes to LinkedIn Recruiter integration in Attract:
 
 - A new **Recruiting activities** tab that displays recruiter notes, InMail activity, and candidate rejection activity
 
 - The ability to send InMail or save to a job without having to leave Attract
 
-- Updates to Recruiter notes
+- Updates to LinkedIn Recruiter Notes, including the ability for users to see their private and others' public notes
 
 - Updates to browser support (LinkedIn no longer supports Internet Explorer 11 as of July 1, 2020)
 
