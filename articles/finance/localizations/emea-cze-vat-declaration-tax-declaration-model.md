@@ -121,7 +121,7 @@ The VAT declaration format in the Czech Republic contains the following sections
 | 52  | Part of the reduced tax deduction (with deduction adjustment): pro rata coefficient            | koef\_p20\_nov         | <p>The pro-rata coefficient.</p><p>User input parameter: **Pro rata coefficient**.</p> |
 | 52  | Part of the reduced tax deduction (with deduction adjustment): deduction amount                | dp\_uprav\_kf          | Automatically calculated as Deduction amount = 46.odp\_sum\_kr × 52.koef\_p20\_nov. |
 | 53  | Settlement of tax deduction – New pro rata coefficient                                         | koef\_p20\_vypor       | <p>Only for the December declaration.</p><p>The new pro rata coefficient.</p><p>The user manually enters the amount in the **New pro rata coefficient** parameter.</p><p>You can manually calculate this amount, based on all declaration amounts that occurred from January through December, in the following way:</p><ol><li>Calculate **Value of taxable sales** as rows (1 + 2 + 20 + 21 + 22 + 23 + 24 + 25 + 26 + 31).TaxBase.</li><li>Calculate **Value of exempt sales** as row 50.TaxBase.</li><li>Calculate **New pro rata coefficient** as **Value of taxable sales** – **Value of taxable sales not included in calculation of coefficient** – **Value of exempt sales not included in calculation of coefficient**.</li></ol> |
-| 53  | Settlement of tax deduction – Change of deduction                                              | vypor\_odp             | <p>Only for the December declaration.</p><p>The adjustment of the tax deduction.</p><p>This line reflects the correction of annual VAT deductions, based on the actual pro-rata coefficient versus the applied during the year estimated in the pro rata coefficient.</p><p>The user manually enters the amount in the **Value of annual settlement of tax deduction** parameter in the report dialog box.</p><p>You can manually calculate this amount, based on all declaration amounts that occurred from January through December, in the following way:</p><p>Row 46.Tax deduction adjustment × (**New pro rata coefficient** – **Pro rata coefficient**)</p>|
+| 53  | Settlement of tax deduction – Change of deduction                                              | vypor\_odp             | <p>Only for the December declaration.</p><p>The adjustment of the tax deduction.</p><p>This line reflects the correction of annual VAT deductions, based on the actual pro-rata coefficient versus the estimated pro rata coefficient that was applied during the year.</p><p>The user manually enters the amount in the **Value of annual settlement of tax deduction** parameter in the report dialog box.</p><p>You can manually calculate this amount, based on all declaration amounts that occurred from January through December, in the following way:</p><p>Row 46.Tax deduction adjustment × (**New pro rata coefficient** – **Pro rata coefficient**)</p>|
 
 ### <a name="taxcalculation"></a>Section 6: Tax calculation
 
@@ -194,7 +194,7 @@ To automatically determine the subject code for the document, you should use the
 
 ### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
-Section A2 shows the documents that generate the amounts in rows 3, 4, 5, 6, and 9 (Intra-community purchase of goods, Intra-community purchase of services, and Intra-community purchase of new means of transport), and rows 11 and 12 (Other purchases with an obligation to pay VAT) of the VAT declaration.
+Section A2 shows the documents that generate the amounts in rows 3, 4, 5, 6, and 9 (Intra-community purchase of goods, Intra-community purchase of services, and Intra-community purchase of new means of transport), and rows 12 and 13 (Other purchases with an obligation to pay VAT) of the VAT declaration.
 
 This section contains the following information about each document.
 
@@ -510,7 +510,7 @@ For more information about how to set up and use reverse charge functionality, s
 2. On the **Setup** FastTab, in the **Sales/purchase** field, select **Purchase**.
 3. Create a line, and select an item code, item group, or procurement category code to associate the purchase with the new reverse charge item group. 
 4. In the **Item code** field, select **Table**, **Group**, or **Category**.
-5. In the **Item relation** field, select an item code or item group.
+5. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group respectively.
 6. In the **Category** field, select a procurement category.
 7. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, and procurement category as described in steps 4 through 6.
 
