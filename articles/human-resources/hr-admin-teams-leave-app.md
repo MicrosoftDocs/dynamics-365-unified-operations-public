@@ -61,7 +61,7 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 4. On the **General** tab, set **Enable notifications for Teams app** to **Yes**.
 
-   ![Enable Teams app notifications in System Parameters](./media/hr-admin-teams-leave-app-enable-notifcations.png)
+   ![Enable Teams app notifications in System Parameters](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. To turn on Teams notifications for all users, select **Yes** at the prompt.
 
