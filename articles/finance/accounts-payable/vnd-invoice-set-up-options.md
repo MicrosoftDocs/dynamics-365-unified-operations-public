@@ -2,7 +2,7 @@
 # required metadata
 
 title: Setup options for vendor invoice automation
-description: This topics describes the options that are available for setting up and configuring the vendor invoice automation process.  
+description: This topic describes the options that are available for setting up and configuring the vendor invoice automation process.  
 author: abruer
 manager: AnnBe
 ms.date: 08/30/2020
@@ -34,17 +34,22 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topics describes the options that are available for setting up and configuring the vendor invoice automation process. The setup parameters for invoice automation features cover the following choices:
+This topic describes the options that are available for setting up and configuring the vendor invoice automation process. The setup parameters for invoice automation features cover the following:
 
 - Parameters for submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines.
-- Parameters for process automation background tasks. Submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines automations use the Process automation framework. Different business processes use this framework to define the recurrence of a selected process. You can use a frequency of Hour or Daily for the Match product receipt to invoice lines and the Submit vendor invoices to workflow background processes. 
+- Parameters for process automation background tasks. The process automation framework is used to submit imported vendor invoices to workflow. It's also use to match posted product receipt lines to pending vendor invoice lines automations. Different business processes use this framework to define how often the selected process is run. The frequencies include Hour or Daily for the Match product receipt to invoice lines and the Submit vendor invoices to workflow background processes. 
 
 To set up or view the background task information, go to **System administration > Setup > Process automations**. Open the **Background task** tab. 
 
-- The **Vendor invoice workflow** field must be set up to achieve touchless automation, from the import process through the vendor invoice posting. To ensure that the invoice can be processed straight-through, without manual intervention, an automated posting task must be included in the workflow configuration. To set up workflow, go to **Accounts payable > Setup > Accounts payable workflows**.
+- The **Vendor invoice workflow** field must be set up to achieve touchless automation, from the import process through the vendor invoice posting. You must include an automated posting task in your workflow configuration to ensure that the invoice can be processed straight-through, without manual intervention. To set up workflow, go to **Accounts payable > Setup > Accounts payable workflows**.
 
 ## Parameters for submitting imported vendor invoices to workflow
-Some specific parameters are used to submit imported vendor invoices to workflow. There are also parameters used to match posted product receipt lines to pending vendor invoice lines. Submitting imported invoices to workflow and matching posted product receipt lines to pending vendor invoice line settings are configured on the Vendor invoice automation tab of the **Accounts payable parameters** page **(Accounts payable > Setup > Accounts payable parameters**). The following settings are available:
+Some specific parameters are used to submit imported vendor invoices to workflow. There are also parameters used to match posted product receipt lines to pending vendor invoice lines. Use the **Vendor invoice automation** tab on the **Accounts payable parameters** page to enter the following configuration settings.
+
+- Submit imported invoices to workflow
+- Match post product receipt lines to pending vendor invoice lines
+
+The following settings are available:
 
 - **Automatically submit imported invoices to workflow** – Set this field to **Yes** to enable the system to automatically submit imported invoices to workflow. If this field isn't to Yes, invoices must be submitted manually. This switch enables a touchless process from import results through posting. 
   
