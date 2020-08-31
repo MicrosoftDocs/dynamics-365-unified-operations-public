@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.14 of Finance and Operations apps (Nove
 description: This topic lists the features are included in the platform updates for version 10.0.14 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 08/04/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,16 +47,6 @@ This topic lists the features that are included in the platform updates for vers
 
 -  [Updates to the (Preview) Grouping in grids feature](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=491a6c33-24ea-ea11-a817-000d3a579c38)<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
 [Grid capabilities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities).
-
--  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
-[Article that provides details](URL to article that provides feature details).
-
--  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
-[Article that provides details](URL to article that provides feature details).
-
--  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
-[Article that provides details](URL to article that provides feature details).
-
 
 ## Additional resources
 
