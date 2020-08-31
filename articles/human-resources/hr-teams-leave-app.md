@@ -87,7 +87,7 @@ You can ask the bot to:
 
    ![Human Resources Teams leave app request leave](./media/hr-teams-leave-app-bot-request.png)
  
-After you start a leave request, you can adjust the days right within the card, or you can select **Edit details** to add additional information to your request.
+After you start a leave request, you can adjust the days right within the card.
 
 ![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
  
