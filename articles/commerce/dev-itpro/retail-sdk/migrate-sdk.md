@@ -94,7 +94,7 @@ Follow these steps to build the Retail SDK.
 
 ## Update the reference in the CRT and Retail Server extension projects
 
-1. Use any of the sample CRT project in Retail SDK (..\RetailSDK\SampleExtensions\CommerceRuntime) as a template and migrate your CRT extension to this new format because the new samples uses the VS 2017 formats for project dependencies (NuGet references) etc.
+1. 1.	Use any of the sample CRT projects in the Retail SDK (..\RetailSDK\SampleExtensions\CommerceRuntime) as a template and migrate your CRT extension to this new format. The new samples uses the Visual Studio 2017 formats for project dependencies (NuGet references).
 2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
     > [!NOTE]
@@ -136,7 +136,7 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 - To validate the config information
   +  Open a regular "CMD" window (not the Visual Studio command prompt).
   +  Run **msbuild /version**.
-  +  Verify the first result in the list is msbuild version is 15.9.* or greater.
+  +  Verify that the first result in the list is MSBuild version is 15.9.* or greater.
          
 4. Restart the Azure DevOps build agent on the build machine.
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
