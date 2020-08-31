@@ -511,8 +511,8 @@ For more information about how to set up and use reverse charge functionality, s
 3. Create a line, and select an item code, item group, or procurement category code to associate the purchase with the new reverse charge item group. 
 4. In the **Item code** field, select **Table**, **Group**, or **Category**.
 5. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group respectively.
-6. In the **Category** field, select a procurement category.
-7. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, and procurement category as described in steps 4 through 6.
+6. If you selected **Category** in the **Item code** field, in the **Category** field, select a procurement category.
+7. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, or procurement category as described in steps 4 through 6.
 
 ## Generate a VAT declaration
 
@@ -581,7 +581,7 @@ To generate the XML file for the VAT control statement, follow these steps.
     | Reference number                                                                                                    | Enter the reference number, if applicable. |
     | Threshold                                                                                                           | Enter the threshold amount to split documents between sections A4/A5 and B2/B3. For example, for the year 2020, enter **10000**. |
 
-### Generate a VAT declaration in Excel from the Inquiries and reports menu item
+### Generate a VAT declaration in Excel from the Report sales tax for settlement period periodic task.
 
 1. Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**.
 2. Enter the following information.
@@ -673,15 +673,15 @@ You can attach a file or a text note to the XML file for the VAT declaration. At
 
 1. On the **All customers** page, create a customer.
 2. On the **All free text invoices** page, create and post a free text invoice.
-3. On the **Sales tax codes** page, create a sales tax code that is named **WRITEOFF21**. This sales tax code will be used to write off bad debts with 21 percent of the VAT rate.
+3. On the **Sales tax codes** page, create a sales tax code that is named **WRITEOFF21**. This sales tax code will be used to write off bad debts at 21 percent of the VAT rate.
 4. Go to **General ledger \> Ledger setup \> Journal setup \> Journal names**, and create a general ledger journal that is named **WriteOff**. In the **Journal type** field, select **Daily**.
 5. Go to **Accounts receivable \> Setup \> Account receivable parameters**, and then, on the **Collections** tab, on the **Write-off** FastTab, in the **Write-off journal** field, select the **WriteOff** journal. Set the **Separate sales tax** option to **Yes**.
 6. Go to **Accounts receivable \> Customers \> All customers**, select the customer record that you created in step 1, and then select **Collections \> Write off**. In the **Write off** dialog box, set the **Write-off date**, **Reason code**, and **Description** fields, and then select **OK**.
 7. Go to **General ledger \> Journal entries \> General journals**, select the **writeOff** journal that was automatically generated, and then select **Lines**. Review the three lines that were created:
 
-    - **Customer** account type on the total invoice amount that includes VAT
-    - **Ledger** account type on the invoice amount without VAT
-    - **Ledger** account type on the VAT amount
+    - first line has **Customer** account type and the total invoice amount that includes VAT
+    - second line has **Ledger** account type and the invoice amount without VAT
+    - third line has **Ledger** account type and the VAT amount
 
 8. Select the line that has the VAT amount. Then, on the **General** tab, in the **Sales tax code** field, select the **WRITEOFF21** sales tax code that you created in step 3.
 9. Post the journal, and then review the posted sales tax transaction:
