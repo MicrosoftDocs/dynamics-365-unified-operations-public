@@ -89,6 +89,11 @@ A way to overcome this is to make sure that there are trade agreements for the p
 ## When opening the Purchase agreement form in a line view mode, it is not possible to personalize the screen to add the Price unit field in the overview of the line.
 Certain shared fields in the agreement framework cannot be included in personalization as requested. This is due to the implemented datamodel. Hence, the price unit field cannot be personalized.
 
+**Purchase agreement max limit on a purchase requisition is not effective**
+When a purchase requisition is linked to a purchase agreement, the max limit from the purchase agrement is not effective on the purchase requisition. The price is defaulted correctly but it is possible to order more than the maximum purchase agreement limit in the purchase requisition.
+
+**Fix**
+This is working as expected. As requisitions are not always being approved, we do not want to "reserve" quantity or amount on the purchase agreement - hence we are not running into meeting the max limit on the purchase agreement. 
 
 ## Additional resources
 
