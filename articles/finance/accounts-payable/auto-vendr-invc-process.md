@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Vendor payments workspace
-description: Accounts payable vendor invoicing processes, such as submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines can be automated. 
+title: Automated vendor invoicing processes overview
+description: This topic describes the capability for automating your vendor invoice processing, and the benefits of using an automated process. 
 author: abruer
 manager: AnnBe
 ms.date: 08/30/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Automating vendor invoices processes helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. The automated vendor invoices capability comprises features that are enabled using the **Feature management**. These features apply only to vendor invoices; not invoices that are processed through the **Invoice journal** or **Invoice register journal** pages.
+This topic describes the capability for automating your vendor invoice processing, and the benefits of using an automated process. Automating vendor invoices processes helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. The automated vendor invoices capability comprises features that are enabled using the **Feature management**. These features apply only to vendor invoices; not invoices that are processed through the **Invoice journal** or **Invoice register journal** pages.
 
 Organizations often work with third-parties to process paper invoices using an optical character recognition (OCR) service provider. The service providers return receive machine-readable invoice metadata. To help with automation, the Accounts payable automation features let you consume these artifacts from within Accounts payable.
 
