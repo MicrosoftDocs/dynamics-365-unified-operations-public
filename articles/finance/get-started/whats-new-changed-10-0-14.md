@@ -44,21 +44,21 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
- - [Asset leasing](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/asset-leasing)
- - [Vendor invoice automation – Analytics and metrics](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-analytics-metrics)
- - [Vendor invoice automation – Match product receipts to invoice lines that have a three-way matching policy](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-match-product-receipts-invoice-lines-that-have-three-way-matching-policy)
- - [Vendor invoice automation – Prevalidate vendor invoice posting](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-pre-validate-vendor-invoice-posting)
- [Vendor invoice automation – Submit imported vendor invoices to workflow](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-submit-imported-vendor-invoices-workflow)
- - [Vendor invoice automation – Tracking imported invoice amount and imported sales tax amount](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-tracking-imported-invoice-amount-imported-sales-tax-amount)
- -[Vendor invoice automation – Tracking the invoice received date](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-tracking-invoice-received-date)
+ - [Asset leasing](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/asset-leasing)
+ - [Vendor invoice automation – Analytics and metrics](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-analytics-metrics)
+ - [Vendor invoice automation – Match product receipts to invoice lines that have a three-way matching policy](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-match-product-receipts-invoice-lines-that-have-three-way-matching-policy)
+ - [Vendor invoice automation – Prevalidate vendor invoice posting](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-pre-validate-vendor-invoice-posting)
+ [Vendor invoice automation – Submit imported vendor invoices to workflow](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-submit-imported-vendor-invoices-workflow)
+ - [Vendor invoice automation – Tracking imported invoice amount and imported sales tax amount](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-tracking-imported-invoice-amount-imported-sales-tax-amount)
+ -[Vendor invoice automation – Tracking the invoice received date](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-tracking-invoice-received-date)
  
- - [Automatic collection task creation](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/automatic-collection-task-creation)
- - [Touchless email reminders to customer](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/touchless-email-reminders-customer)
+ - [Automatic collection task creation](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/automatic-collection-task-creation)
+ - [Touchless email reminders to customer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/touchless-email-reminders-customer)
 
  
  ### Public sector
  - [Associate 1099 default value to Main account](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
- - [Vendor details to bridged transactions and check forms](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-details-bridged-transactions-check-forms)
+ - [Vendor details to bridged transactions and check forms](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-details-bridged-transactions-check-forms)
  
 ### Globalization features
 
