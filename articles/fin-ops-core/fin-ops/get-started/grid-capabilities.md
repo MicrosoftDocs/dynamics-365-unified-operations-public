@@ -100,9 +100,9 @@ To make the system recognize a value as an expression, start the value with an e
 ## Grouping tabular data
 [!include [preview banner](../includes/preview-banner.md)]
 
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **(Preview) Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. As this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **(Preview) Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
 
-To use this feature, right-click on the column you wish to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
+To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by column** to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
 -  Data value for the group 
 -  Column name (This information will be especially useful after multiple levels of grouping are supported.)  
 -  Number of data rows in this group
@@ -110,18 +110,18 @@ To use this feature, right-click on the column you wish to group by, and select 
 
 With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
 
-If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported as of version 10.0.9 / Platform update 33.
+If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported as of version 10.0.9/Platform update 33.
 
-To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
+To undo grouping in a grid, right-click the grouping column and select **Ungroup**.  
 
 ### Expanding and collapsing groups
-The initial grouping of that data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron button in the corresponding group header row. Note that expand/collapse state of individual groups is **not** saved in personalization.
+The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
 
 ### Selecting and unselecting rows at the group level
-In the same way that you can select (or unselect) all rows in the grid by toggling the checkbox at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by toggling the checkbox in the corresponding group header row. The checkbox in the group header row will always reflect the current selection state of rows in that group, whether all rows are selected, no rows are selected, or only some rows are selected.  
+In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless if all rows are selected, no rows are selected, or only some rows are selected.
 
 ### Hiding column names
-When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14 / Platform update 38, you can now choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
+When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
@@ -147,7 +147,7 @@ All subsequent user sessions will start with the new grid control enabled.
 ## [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the form's `run()` method.
 
-        this.forceLegacyGrid();
+    `this.forceLegacyGrid();`
 
 This API will be honored until the October 2021 release when the new grid control becomes mandatory. Please report any issues to Microsoft which require this API to be utilized. 
 
