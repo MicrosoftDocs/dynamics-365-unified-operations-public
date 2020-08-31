@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Automating vendor invoices processes helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. Automated vendor invoices comprises a set of features that are be enabled through Feature management. The feature set applies to Vendor invoices; not invoices that are processed through the **Invoice journal** or **Invoice register journal** pages.
+Automating vendor invoices processes helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. The automated vendor invoices capability comprises features that are enabled using the **Feature management**. These features apply only to vendor invoices; not invoices that are processed through the **Invoice journal** or **Invoice register journal** pages.
 
 Organizations often work with third-parties to process paper invoices using an optical character recognition (OCR) service provider. The service providers return receive machine-readable invoice metadata. To help with automation, the Accounts payable automation features let you consume these artifacts from within Accounts payable.
 
-Accounts payable vendor invoicing processes, such as submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines can be automated. The functionality displays information about the progress of a vendor invoice as it moves through each of the processes. Enabling the feature helps accounts payable clerks and managers process vendor invoices more efficiently, while reducing the errors and inefficiencies that arise when information is entered and processed manually. 
+You can automate certain Accounts payable vendor invoicing processes. These processes include submitting imported vendor invoices to workflow and matching posted product receipt lines to pending vendor invoice lines. The automated process displays information about the progress of a vendor invoice as it moves through each of the processes. This capability can help accounts payable clerks and managers process vendor invoices more efficiently. It can also help reduce errors and inefficiencies that arise when information is entered and processed manually. 
 
 The automation processes can be used to perform these tasks:
 -	Submit imported invoices to workflow automatically
@@ -62,5 +62,5 @@ Simulation of posting completes the validation steps that are done during the po
 An easy-to-read view of vendor invoice workflow history is provided. Vendor invoice workflow history can be accessed directly from the vendor invoice, reducing the number of clicks that are needed to find that information. 
 
 ## Vendor invoice automation – Analytics and metrics
-The Vendor invoice entry workspace lets you focus on vendor invoices that didn’t make it through the automated process. Tiles on the workspace list information about vendor invoices that weren’t successfully submitted to workflow, imported, or matched to product receipts. PowerBI metrics are also provided to give accounts payable managers insight into the efficiencies of vendor invoice automation. 
+The Vendor invoice entry workspace lets you focus on vendor invoices that didn’t make it through the automated process. Tiles on the workspace list information about vendor invoices that weren’t successfully submitted to workflow, imported, or matched to product receipts. Power BI metrics are also provided to give accounts payable managers insight into the efficiencies of vendor invoice automation. 
 
