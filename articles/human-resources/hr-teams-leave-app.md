@@ -91,7 +91,7 @@ After you start a leave request, you can adjust the days right within the card.
 
 ![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
  
-When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+When you're done entering information, select **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
 
 ![Human Resources Teams leave app submit request](./media/hr-teams-leave-app-bot-submit.png)
 
