@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -137,9 +137,9 @@ The **Time off** tab allows you to view:
    
 ### Teams notifications
 
-When you or a direct report submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+When you or a worker you're an approver submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
 
-If you're a manager, you can select **Approve**, **Reject**, or **Delegate** in the notification. You can also provide an optional message.
+If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
 
 ![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
 

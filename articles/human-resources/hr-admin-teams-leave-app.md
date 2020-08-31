@@ -5,7 +5,7 @@ title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -57,11 +57,29 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 2. Select **Links**.
 
+3. Under **Setup**, select **System parameters**.
+
+4. On the **General** tab, set **Enable notifications for Teams app** to **Yes**.
+
+   ![Enable Teams app notifications in System Parameters](./media/hr-admin-teams-leave-app-enable-notifcations.png)
+
+5. To turn on Teams notifications for all users, select **Yes** at the prompt.
+
+   ![Enable Teams notifications for all users](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+
+### Turn Teams notifications on or off for individual users
+
+After you've enabled notifications for the Human Resources Teams app, you can turn notifications on or off for individual users.
+
+1. In Human Resources, select **System administration**.
+
+2. Select **Links**.
+
 3. Under **Users**, select **User options**.
 
 4. Select the **Workflow** tab.
 
-5. Set **Enable notifications for Teams app** to **Yes**.
+5. Set **Enable notifications for Teams app** to **Yes** to enable notifications for the user or **No** to disable notifications for the user.
 
    ![Enable Teams app notifications in User options Workflow tab](./media/hr-admin-teams-leave-app-notifications.png)
 
@@ -74,7 +92,6 @@ If you want users to receive leave request notifications in the Teams app, you m
 | Horizontal scrolling doesn't work on Android phones | Horizontal scrolling isn't an issue on iOS or desktop devices. We're working on a fix for Android. |
 | Error: There is an issue finding an environment to connect to. | You might receive this error even if you've verified that the user can access one or more Human Resources environments. Also, you might not see all the environments you expect. Until we fix this issue, delete the user and then import them in again to resolve the problem. |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
-| When reducing the number of hours taken in an existing request, the **Remaining balance** goes down instead of up. | We'll address this known issue in the future. The display is incorrect, but the correct amounts are adjusted upon submission. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
 | Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters. |
 
