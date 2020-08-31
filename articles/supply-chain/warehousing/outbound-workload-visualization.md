@@ -52,7 +52,7 @@ To add the outbound workload visualization flight to your system:
 
 <!-- KFM: I borrowed this SQL query from somewhere else. Please confirm. Also, we really should not publish documentation for flighted features. Ideally, we should be able to delete this before we publish. -->
 
-### Enable the outbound workload visualization feature 
+### Enable the outbound workload visualization feature
 
 To enable the feature after adding the flight:
 
@@ -98,7 +98,7 @@ To set up your visualizations, you will create a collection of filters, and desi
 ## Example: Outbound workload visualization for zones
 
 Suppose you want to set up a visualization that shows work lines for each zone and their status (_Open_, _Closed_, or _Cancelled_). To do this, you could set up a filter with the following settings:
- 
+
 - **Filter name** – Enter a name for this filter (such as _Zone vs. work status_).
 - **Description** – Enter a short description for this filter (such as _Zone vs. work status_).
 - **X-axis group table** – Select _Locations._
