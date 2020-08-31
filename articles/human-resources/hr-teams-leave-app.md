@@ -137,7 +137,7 @@ The **Time off** tab allows you to view:
    
 ### Teams notifications
 
-When you or a worker you're an approver submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
 
