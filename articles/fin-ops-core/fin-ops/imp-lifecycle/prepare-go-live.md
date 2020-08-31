@@ -33,29 +33,29 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-Production and Sandbox can only be deployed in two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview.md#customer-lifecycle-subscriptions-and-environment-types), Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different. 
+Production and Sandbox can only be deployed in two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview.md#customer-lifecycle-subscriptions-and-environment-types): Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different. 
 
 This graphic and the following table list the phases of the go-live process, the environment type to which each phase applies with the expected duration, and who is responsible to take the action.
 
 ![Go-live process](./media/go-live-process.PNG)
 
 
-| Phase  | Action | Environment Type | Duration/When | Who | Notes |
+| Phase  | Action | Environment type | Duration/When | Who | Notes |
 |-|-|-|-|-|-|
-| 1 | Update Go-live date in LCS | Both | At the latest 2-3 months in advance | Customer/Partner | The milestone dates should be kept up to date on an ongoing basis |
-| 2 | Complete and send pre go-live checklist | Both | After UAT complete | Customer/Partner | Follow the instructions provided in the "FastTrack Go-live Assessment" section later in this topic. |
+| 1 | Update Go-live date in LCS | Both | At the latest 2-3 months in advance | Customer/Partner | The milestone dates should be kept up to date on an ongoing basis. |
+| 2 | Complete and send pre go-live checklist | Both | After user acceptance testing (UAT) complete | Customer/Partner | Follow the instructions provided in the "FastTrack Go-live Assessment" section later in this topic. |
 | 3 | Project Go-Live assessment (FastTrack Essentials) | Both | 3-business days for initial report, plus additional time for mitigation, if required | Microsoft-FastTrack Solution Architect | Solution Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 |  | Go-live Assessment workshop (FastTrack) | Both | To coordinate with architect assigned | Microsoft-FastTrack Solution Architect |  |
 | 4 | Release for production deployment | Microsoft Managed | Immediate upon successfully completed assessment | Microsoft-FastTrack Solution Architect | Do not submit production request until the assessment is successfully completed. |
-|  |  | Self-Service | Immediate upon successfully completed assessment and Configure button is enabled | Microsoft-FastTrack Solution Architect | For Self-Service deployment, the Configure button remains disabled until the assessment is complete. |
+|  |  | Self-Service | Immediate upon successfully completed assessment and **Configure** button is enabled | Microsoft-FastTrack Solution Architect | For Self-Service deployment, the **Configure** button remains disabled until the assessment is complete. |
 | 5 | Production deployment request | Microsoft Managed | Self-service | Customer/Partner | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
-|  |  | Self-Service | Self-service | Customer/Partner | Once the assessment is complete, Configure button will be enabled and customer will be able to request the production deployment. |
+|  |  | Self-Service | Self-service | Customer/Partner | After the assessment is complete, the **Configure** button will be enabled and customer will be able to request the production deployment. |
 |  | Sizing | Both | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Microsoft-Dynamic Service Engineering (DSE) | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
 |  | Deployment | Microsoft Managed | 48 hours | Microsoft-Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
-|  |  | Self-Service | An average of 30 minutes | Microsoft-FastTrack Solution Architect | The deployment could take an average of 30 minutes after the assessment has completed and the production environment has been requested. Please review this topic, [Deploy a new environment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
-| 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
+|  |  | Self-Service | An average of 30 minutes | Microsoft-FastTrack Solution Architect | The deployment could take an average of 30 minutes after the assessment has completed and the production environment has been requested. For more information, see [Deploy a new environment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
+| 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
 |  | Package installation | Both | Minimum 5 hours lead time and 4 hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
-| 7 | Database copy from Sandbox request (if applicable) | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Self-service database refresh](../../dev-itpro/database/database-refresh.md#self-service-database-refresh). If you have a golden configuration you can review this topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
+| 7 | Database copy from Sandbox request (if applicable) | Both | Self-service | Customer/Partner | Follow the instructions [Self-service database refresh](../../dev-itpro/database/database-refresh.md#self-service-database-refresh). If you have a golden configuration you can review [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
 |  | Copy database | Both | Five hours lead time and four hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
 | 8 | Production ready | Both | After all previous steps have been completed | Customer/Partner | Customer can take control of the production environment. |
 |  | Cutover activities | Both | Depends on the project | Customer/Partner |  |
@@ -90,7 +90,7 @@ During the UAT phase, you must test all the business processes that you've imple
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users.
 - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
 - Run the [Customization Analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md) and resolve critical issues.
-- Complete the Performance testing.
+- Complete performance testing.
 - Document all features, and obtain approval and sign-off from the customer.
 
 Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:
@@ -117,8 +117,8 @@ For Microsoft Managed environments, if you request the production environment be
 
 You can cancel an environment deployment request while it is in a **Queued** state by following these steps:
 
-1. Click **Queued**.
-2. On the **Customer sign-off** tab, click **Clear sign-off**.
+1. Select **Queued**.
+2. On the **Customer sign-off** tab, select **Clear sign-off**.
 
 This will set the environment back into a state of **Configure** and allow you to make changes to the configuration, such as selecting a different data center or environment topology.
 
