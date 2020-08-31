@@ -121,6 +121,10 @@ The customer has a different invoice account than the customer account. When a P
 **Resolution**
 The defaulting of of tax group, cash discounts and other price information that should be defaulted based on the customer, is always based on the customer account and not the invoice account.
 
+## Is it possible to find the User who cancelled a Purchase Order (PO)
+This information is not tracked, if the purchase order is not under change management. If you use change management you can see who submitted the change (a cancellation) and who approved it.
+
+
 ## Additional resources
 
 [Get started with Purchase Orders](get-started.md)
