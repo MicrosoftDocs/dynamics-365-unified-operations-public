@@ -42,10 +42,10 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [Enable a drop-down list on multi-line controls]<br>- This feature adds drop-down lists/lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br><br>- For more information about enabling lookup behavior on any control, see 
+-  [Enable a drop-down list on multi-line controls]<br>- This feature adds drop-down lists/lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br>- For more information about enabling lookup behavior on any control, see 
 [Lookup controls](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/lookups-controls).
 
--  [Updates to the (Preview) Grouping in grids feature](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=491a6c33-24ea-ea11-a817-000d3a579c38)<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
+-  [Updates to the (Preview) Grouping in grids feature]<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
 [Grid capabilities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities).
 
 ## Additional resources
