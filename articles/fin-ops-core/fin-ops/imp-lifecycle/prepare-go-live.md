@@ -5,7 +5,7 @@ title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,12 +33,12 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-Production and Sandbox can be deployed only in two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview#customer-lifecycle-subscriptions-and-environment-types.md), Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different. 
+Production and Sandbox can only be deployed in two different [types of environments](../../dev-itpro/deployment/cloud-deployment-overview.md#customer-lifecycle-subscriptions-and-environment-types), Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different. 
 
-This graphic lists the phases of the go-live process.
+This graphic and the following table list the phases of the go-live process, the environment type to which each phase applies with the expected duration, and who is responsible to take the action.
+
 ![Go-live process](./media/go-live-process.PNG)
 
-The following table lists all the steps in the process, the environment type to which each step applies with the expected duration and who is responsible to take the action.
 
 |  | Action | Environment Type | Duration/When | Who | Notes |
 |-|-|-|-|-|-|
@@ -55,7 +55,7 @@ The following table lists all the steps in the process, the environment type to 
 |  |  | Self-Service | An average of 30 minutes | Microsoft-FastTrack Solution Architect | The deployment could take an average of 30 minutes after the assessment has completed and the production environment has been requested. Please review this topic, [Deploy a new environment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
 | 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure#apply-updates.md). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
 |  | Package installation | Both | Minimum 5 hours lead time and 4 hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
-| 7 | Database copy from Sandbox request (if applicable) | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Self-service database refresh](../../dev-itpro/database/database-refresh#self-service-database-refresh.md). If you have a golden configuration you can review this topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
+| 7 | Database copy from Sandbox request (if applicable) | Both | Self-service | Customer/Partner | Follow the instructions in the topic, [Self-service database refresh](../../dev-itpro/database/database-refresh.md#self-service-database-refresh). If you have a golden configuration you can review this topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
 |  | Copy database | Both | Five hours lead time and four hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
 | 8 | Production ready | Both | After all previous steps have been completed | Customer/Partner | Customer can take control of the production environment. |
 |  | Cutover activities | Both | Depends on the project | Customer/Partner |  |
@@ -65,9 +65,14 @@ The following table lists all the steps in the process, the environment type to 
 
 A major milestone in each implementation project is the cutover to the production environment.
 
-To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+To ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the **Operate** phase, after the required activities in the LCS methodology are complete. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-Customers must complete the Analysis, Design and Develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. Note that for Self-Service environments, the Configure button will only become available after the Solution Architect has signed off on the assessment. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Customers must complete the **Analysis**, **Design and Develop**, and **Test** phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. 
+
+> [!NOTE]
+> For Self-Service environments, the **Configure** button will only become available after the Solution Architect has signed off on the assessment. 
+
+To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 The process of completing a step has two parts:
 
