@@ -59,11 +59,12 @@ When an email action type is selected, the recipient will be used to define if t
 ## Business document details
 The business document details will vary based on the action type that's selected n the process details.  When the action type is an activity, the activity template details will be shown.  These details include the activity template name, the type of activity that will be created, the purpose of the activity, the number of days scheduled to complete the activity, and the details of the activity.  This activity will then link to the leading invoice that tells the recipient of the action that’s needed to complete the activity.
 
-If the action type is [?] in the process details, this section will contain two FastTabs.  The first is used to define the template ID, email description, default language, the user name that will be assigned to email messages that are automatically sent and the associated senders email address.  The second will allow the body of the email to be created after the values in the **Language** and **Subject** fields are saved by clicking **Edit**.  This will open a window that allows HTML content to be uploaded. You can also type the message that’s created manually in the lower left box of the window.  
+If the action type is an email in the process details, this section will contain two FastTabs.  The first is used to define the template ID, email description, default language, the user name that will be assigned to email messages that are automatically sent and the associated senders email address.  The second will allow the body of the email to be created after the values in the **Language** and **Subject** fields are saved by clicking **Edit**.  This will open a window that allows HTML content to be uploaded. You can also type the message that’s created manually in the lower left box of the window.  
 
 > [!Note]
 > An Outlook email can be saved with the desired body of the communication in HTML format.  This can then be uploaded to implement the template.
-If the action type of collection letter is selected there will not be a business document detail section on the setup form.
+
+>If the action type of collection letter is selected there will not be a business document detail section on the setup form.
 
 
 ## FastTab reference
@@ -111,8 +112,11 @@ The following tables list the pages and fields that the specified FastTabs can b
 ### Collection process assignment
 |     Page                           	|     Field    	|     Purpose                                               	|
 |------------------------------------	|--------------	|-----------------------------------------------------------	|
-|     Collections   process setup    	|              	|     View   customers assigned to a collections process    	|
-
+|     Collections   process setup    	|              	|     View   customers assigned to a collections process  
+|     Manual assignment               |               |     View customers that have been manually assigned to a process or select customers to be assigned to a process |
+|     Preview process assignment      |               |     Preview the customers that will be assigned to a strategy when it is run   |
+|     Preview customer assignment     |               |     View the strategy that a specific customer is assigned    |
+ 
 ### Parameters
 |     Page                                                                 	|     Field                                            	|     Purpose                          	|
 |--------------------------------------------------------------------------	|------------------------------------------------------	|-------------------------------------	|
