@@ -127,5 +127,5 @@ This information is not tracked, if the purchase order is not under change manag
 
 ## Additional resources
 
-[Get started with Purchase Orders](get-started.md)
-
+[Get started with Purchase Orders](purchase-order-overview.md)
+[Creation of Purchase Orders](create-purchase-order.md)
