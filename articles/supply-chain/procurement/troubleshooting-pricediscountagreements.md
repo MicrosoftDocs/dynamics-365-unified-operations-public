@@ -52,7 +52,7 @@ We prompt this when changing the shipping date because often times this means th
 6. Result: The charges on the purchase order receipt does not include all the charges.
 
 **Reason**
-This is dependent on how the miscellaneous charges have been setup. Please see this blog for how to set this according your requirements. [Post Misc. charges at time of Product receipt] (https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
+This is dependent on how the miscellaneous charges have been setup. Please see this blog for how to set this according your requirements. [Post Misc. charges at time of Product receipt](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
 
 ## Trade agreement price and discounts are not applied on purchase order lines imported through data management (DMF)
 Trade agreements that are applicable for purchase order lines do not get applied to lines imported through data management, though the same trade agreements are applied on regular purchase order lines created manually.
@@ -97,5 +97,6 @@ This is working as expected. As requisitions are not always being approved, we d
 
 ## Additional resources
 
-[Get started with Purchase Orders](get-started.md)
+[Purchase agreements](purchase-agreements.md)
+[Vendor Rebates](vendor-rebates.md)
 
