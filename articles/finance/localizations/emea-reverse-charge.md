@@ -33,22 +33,10 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-|                     |  |
-|------------------------------|-------------------|
-| **COUNTRY/REGION**          | EU, GCC, SG|
-| **FEATURE TITLE** | Reverse charge |
-| **FEATURE REFERENCE**                | EUR-00022, AE-00004, SA-00008, BH-00001, KW-00001, OM-00001, QA-00001|
-| **BLUEPRINT CLASSIFICATION**                | TAX: Tax settlement|
-| **CONFIGURABLE**                | No|
-| **INTERNAL REFERENCE**                | 197296, 197878, 431332, 436279, 437167|
-| **FIRST AVAILABLE IN**                | Dynamics 365 for Operations version 1611 (November 2016)|
-| **FEATURE UPDATE HISTORY**                | Dynamics 365 for Finance and Operations, Enterprise edition, July 2017 update: extended to EU counries available in release; Dynamics 365 for Finance and Operations, Enterprise edition 7.3: extended to the United Arab Emirates, Saudi Arabia and Singapore; Dynamics 365 for Finance and Operations, 10.0.13: extended to Bahrain, Kuwait, Oman, and Qatar |
-| **FEATURE MANAGEMENT**                | Starting from 10.0.13, for Bahrain, Kuwait, Oman, and Qatar, a **Reverse charge availability for additional countries** feature should be enabled |
-| **BUSINESS NEED**                | Enable the calculation and posting of tax for operations under the reverse charge schema|
-| **FEATURE DESCRIPTION**                | Functionality provides a generic approach for setting up reverse charge value-added tax (VAT)|
-
-
 This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for EU and GCC countries, and Singapore.
+
+> [!NOTE]                                                                                  
+> Starting from 10.0.13, for Bahrain, Kuwait, Oman, and Qatar, a **Reverse charge availability for additional countries** feature should be enabled in the **Feature management** workspace. 
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
 
