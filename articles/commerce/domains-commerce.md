@@ -63,7 +63,7 @@ Once your e-Commerce environment is provisioned, you must set up your site in Co
 
 When you first set up a site in site builder, the **Setup your Site** dialog box will appear.
 
-The following illustration shows the **Setup your Site** dialog box for a site named "default" in site builder (when accessing the site in SiteBuilder for the first time):
+The following illustration shows the **Setup your Site** dialog box for a site named "default" when accessing a site in site builder for the first time.
 
 ![**Setup your Site** dialog box](./media/Domains_SetupyoursiteScreen.png)
 
