@@ -40,7 +40,7 @@ Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a w
 
 ## Provisioning and supported host names
 
-When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-Commerce provisioning screen is used to enter domains that will be associated with the deployed Commerce environment. These domains will be the customer-facing Domain Name Server (DNS) names where e-Commerce websites will be hosted. Entering a domain at this stage does not start diverting traffic for the domain to Dynamics 365 Commerce. Traffic for a domain will only be routed to the Commerce endpoint when the DNS name is updated to use the Commerce endpoint with the domain.
+When provisioning an e-Commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-Commerce provisioning screen is used to enter domains that will be associated with the deployed Commerce environment. These domains will be the customer-facing Domain Name Server (DNS) names where e-Commerce websites will be hosted. Entering a domain at this stage does not start diverting traffic for the domain to Dynamics 365 Commerce. Traffic for a domain will only be routed to the Commerce endpoint when the DNS CNAME record is updated to use the Commerce endpoint with the domain.
 
 > [!NOTE]
 > Multiple domains can be entered into the **Supported host names** box by separating them with semi-colons.
@@ -53,7 +53,7 @@ You can create a service request to add additional domains to an environment if 
 
 ## Commerce-generated URLs
 
-When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the e-Commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the domain you entered in LCS for the Commerce environment.
+When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the e-Commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the name entered in LCS for the Commerce environment.
 
 You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from a sandbox environment to production. Non-production sandbox environment URLs will contain a "-sandbox" suffix reflecting the environment type within the Commerce-generated URL (for example, `https://<e-Commerce tenant name>-sandbox.commerce.dynamics.com`).
 
@@ -63,7 +63,7 @@ Once your e-Commerce environment is provisioned, you must set up your site in Co
 
 When you first set up a site in site builder, the **Setup your Site** dialog box will appear.
 
-The following illustration shows the **Setup your Site** dialog box for a site named "default" in site builder:
+The following illustration shows the **Setup your Site** dialog box for a site named "default" in site builder (when accessing the site in SiteBuilder for the first time):
 
 ![**Setup your Site** dialog box](./media/Domains_SetupyoursiteScreen.png)
 
