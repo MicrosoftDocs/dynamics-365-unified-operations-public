@@ -30,10 +30,10 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Run and monitor
-Once the variations are setup in Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
+Once the variations are connected and edited in Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Start the experiment in the third-party service so the right variation experiences can be shown to end-users. If the experiment is not running in the third-party service, the experiment variations will not be shown i.e. all end-users will continue to see the existing version of the page.
 1. Let the experiment run for however long it takes to gather sufficient data for statistical analyses in the third-party service.
-1. View experiment related data and analytics in the third-party service.
+1. Monitor experiment related data and analytics in the third-party service.
 
 ## Adjust
 If you need to make changes to variations in Commerce:
