@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources
-description: This topic provides information about how to improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources.
+title: Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
+description: This topic explains how you can help improve the performance of Electroinic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/14/2020
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources
+# Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidelines about how to take [performance traces](trace-execution-er-troubleshoot-perf.md) for executed ER formats and use the information from these traces to help improve performance by configuring a parametrized **Calculated field** data source.
+This topic explains how you can take [performance traces](trace-execution-er-troubleshoot-perf.md) of [Electronic reporting (ER)](general-electronic-reporting.md) formats that are run, and then use the information from those traces to help improve performance by configuring a parameterized **Calculated field** data source.
 
-As part of the process of designing [Electronic reporting (ER)](general-electronic-reporting.md) configurations to generate business documents, you define the method that is used to retrieve data from the application and enter it in the generated output. You can design a parametrized ER data source of the **Calculated field** type to reduce the number of database calls and significantly reduce the time and cost that are involved in collecting the details of ER format execution.
+As part of the process of designing ER configurations to generate business documents, you define the method that is used to retrieve data from the application and enter it in the generated output. By designing a parametrized ER data source of the **Calculated field** type, you can reduce the number of database calls, and significantly reduce the time and cost that are involved in collecting the details of ER format execution.
 
 ## Prerequisites
 
@@ -47,168 +47,177 @@ As part of the process of designing [Electronic reporting (ER)](general-electron
     - System administrator
 
 - The company must be set to **DEMF**.
-- Complete the steps in [Appendix 1](#appendix1) of this topic to download the components of the sample Microsoft ER solution required to complete the steps in this topic.
-- Complete the steps in [Appendix 2](#appendix2) of this topic to configure the minimal set of ER parameters before you can use the ER framework to improve the performance of the sample Microsoft ER solution.
+- Follow the steps in [Appendix 1](#appendix1) of this topic to download the components of the sample Microsoft ER solution that is required to complete the examples in this topic.
+- Follow the steps in [Appendix 2](#appendix2) of this topic to configure the minimal set of ER parameters that is required to use the ER framework to help improve the performance of the sample Microsoft ER solution.
 
 ## Import the sample ER solution
 
-Assume that you need to design an ER solution to generate a new report that shows vendor transactions. Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable** \> **Vendors** \> **All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**). However, you want to have all vendor transactions at the same time in one electronic document in XML format. This solution will consist of several ER configurations that contain the required data model, model mapping, and format components. You start by importing the sample ER solution to generate a vendor transactions report.
+Imagine that you must design an ER solution to generate a new report that shows vendor transactions. Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable** \> **Vendors** \> **All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**). However, you want to have all vendor transactions together in one electronic document in XML format. This solution will consist of several ER configurations that contain the required data model, model mapping, and format components.
 
-1. Sign in to the Finance instance provisioned for your company.
-2. In this topic, you will create and modify configurations for the sample company, **Litware, Inc.**. Make sure that this configuration provider has been added to your Finance instance and is selected as active. For more information, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+The first step is to import the sample ER solution to generate a vendor transactions report.
+
+1. Sign in to the instance of Microsoft Dynamics 365 Finance that is provisioned for your company.
+2. In this topic, you will create and modify configurations for the **Litware, Inc.** sample company. Make sure that this configuration provider has been added to your Finance instance and is marked as active. For more information, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into Finance, in the following order: data model, model mapping, format. For each configuration:
+4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into Finance, in the following order: data model, model mapping, format. For each configuration, follow these steps:
 
     1. On the Action Pane, select **Exchange** \> **Load from XML file**.
-    2. Select **Browse** and navigate the appropriate file for the ER configuration in XML format.
+    2. Select **Browse**, and select the appropriate file for the ER configuration in XML format.
     3. Select **OK**.
 
-    ![ER configurations page showing imported configurations](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Imported configurations on the Configurations page](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## Review the sample ER solution
 
-### Review model mapping
+### Review the model mapping
 
-1. In the configuration tree, expand **Performance improvement model**.
-2. Select **Performance improvement mapping**.
-3. On the **Configurations** page, select **Designer**.
-4. On the **Model to datasource mapping** page, select **Designer**.
-   
-    This ER model mapping is designed to do the following:
-    
-    - Fetch the list of vendor transactions that are stored in the **VendTrans** table (**Trans** data source).
-    - For every transaction, fetch from the **VendTable** table the record of a vendor for which the current transaction has been posted (**#Vend** data source).
-    
+1. On the **Configurations** page, in the configuration tree, expand **Performance improvement model**, and select **Performance improvement mapping**.
+2. On the Action Pane, select **Designer**.
+3. On the **Model to datasource mapping** page, on the Action Pane, select **Designer**.
+
+    This ER model mapping is designed to perform the following actions:
+
+    - Fetch the list of vendor transactions that are stored in the VendTrans table (**Trans** data source).
+    - For every transaction, fetch, from the VendTable table, the record of a vendor that the transaction has been posted for (**\#Vend** data source).
+
     > [!NOTE]
-    > The **#Vend** data source is configured to fetch the corresponding vendor record by using the existing many-to-one relation **@.'>Relations'.VendTable_AccountNum**.
+    > The **\#Vend** data source is configured to fetch the corresponding vendor record by using the existing many-to-one relation **\@.'\>Relations'.VendTable\_AccountNum**.
 
-    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance. As a result, the content of the **Trans** data source is exposed for ER formats such as abstract **model** data sources.
+    The model mapping in this configuration implements the base data model for any ER formats that are created for this model and run in Finance. Therefore, the content of the **Trans** data source is exposed for ER formats such as abstract **model** data sources.
 
-    ![Model mapping designer page showing Trans data source](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans data source on the Model mapping designer page](media/er-calculated-field-ds-performance-mapping-1.png)
 
-5.  Close the **Model mapping designer** page and then close the **Model to datasource mapping** page.
+4. Close the **Model mapping designer** page.
+5. Close the **Model to datasource mapping** page.
 
 ### Review format
 
-1. In the configuration tree, expand **Performance improvement model**.
-2. Select **Performance improvement format**.
-3. Select **Designer**.
-4. On the **Mapping** tab, select **Expand/Collapse**.
-5. Expand the items, **Model**, **Data,** and **Transaction**. 
+1. On the **Configurations** page, in the configuration tree, expand **Performance improvement model**, and select **Performance improvement format**.
+2. On the Action Pane, select **Designer**.
+3. On the **Format designer** page, on the **Mapping** tab, select **Expand/Collapse**.
+4. Expand the **Model**, **Data,** and **Transaction** items.
 
     This ER format is designed to generate a vendor transactions report in XML format.
 
-    ![Format designer page showing format data sources and configured bindings of format elements](media/er-calculated-field-ds-performance-format.png)
+    ![Format data sources and configured bindings of format elements on the Format designer page](media/er-calculated-field-ds-performance-format.png)
 
-7. Close the **Format designer** page.
+5. Close the **Format designer** page.
 
 ## Run the sample ER solution to trace execution
 
-Assume that you've finished designing the first version of the ER solution. You now want to test the solution in your Finance instance and analyze the execution performance.
+Imagine that you've finished designing the first version of the ER solution. You now want to test the solution in your Finance instance and analyze the execution performance.
 
 ### Turn on the ER performance trace
 
 1. Select the **DEMF** company.
-2. Complete the steps in the [Turn on the ER performance trace](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) section to generate a performance trace while an ER format is executed.
+2. Follow the steps in [Turn on the ER performance trace](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) to generate a performance trace while an ER format is run.
 
-    ![User parameters dialog on the ER configurations page](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![User parameters dialog box](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
-### <a id='run-format'></a>Run the ER format
+### <a id="run-format"></a>Run the ER format
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-2. On the **Configurations** page, in the configuration tree, select the **Performance improvement format** item.
+2. On the **Configurations** page, in the configuration tree, select **Performance improvement format**.
 3. On the Action Pane, select **Run**.
 
 ## Use the performance trace to analyze model mapping performance
 
 1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
-3. Select **Designer** and on the **Model mapping designer** page, on the Action Pane, select **Performance trace**.
-4. Select the latest generated trace and then select **OK**.
+3. On the **Model mappings** page, on the Action Pane, select **Designer**.
+4. On the **Model mapping designer** page, on the Action Pane, select **Performance trace**.
+5. Select the most recent trace that was generated, and then select **OK**.
 
 New information is now available for some data source items of the current model mapping:
 
-- The actual time that was spent getting data by using the data source.
-- The same time expressed as a percentage of the total time that was spent running the whole model mapping.
+- The actual time that was spent getting data by using the data source
+- The same time expressed as a percentage of the total time that was spent running the whole model mapping
 
 ![Execution time details on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2.png)
 
-The **Performance statistics** table shows that the **Trans** data source calls the **VendTrans** table once. The value **\[265\]\[Q:265\]** of the **Trans** data source indicates that 265 vendor transactions have been fetched from the application table and returned to the data model.
+The **Performance statistics** grid shows that the **Trans** data source calls the VendTrans table one time. The value **\[265\]\[Q:265\]** of the **Trans** data source indicates that 265 vendor transactions have been fetched from the application table and returned to the data model.
 
-The **Performance statistics** table now shows that the current model mapping duplicates database requests while the **#Vend** data source is run. This duplication occurs because:
+The **Performance statistics** grid also shows that the current model mapping duplicates database requests while the **\#Vend** data source is run. This duplication occurs for the following reasons:
 
-- The vendor table is called two times (in total 530) for each iterated vendor transaction (in total 265):
+- The vendor table is called two times for each of the 265 iterated vendor transactions, for a total of 530 calls:
 
     - One call is made to enter the vendor account number.
     - One call is made to enter the vendor name.
 
-- The vendor table is called for each iterated vendor transaction even though the fetched transactions have been posted for only five vendors. Of the 530 calls, 525 are duplicates.
+- The vendor table is called for each iterated vendor transaction, even though the fetched transactions have been posted for only five vendors. Of the 530 calls, 525 are duplicates. The following illustration shows the message that you receive about duplicate calls (database requests).
 
 ![Message about duplicate database requests on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
-Notice that more that 80% (approximately six seconds) of the model mapping execution time (approximately eight seconds) has been spent retrieving values from the **VendTable** application table that is too much for two attributes of five vendors compared with the volume of information from the **VendTrans** application table.
+Of the total model mapping execution time (approximately eight seconds), notice that more than 80 percent (approximately six seconds) has been spent retrieving values from the VendTable application table. That percentage is too large for two attributes of five vendors, compared with the volume of information from the VendTrans application table.
 
-You can use caching for the **#Vend** data source to reduce the number of calls that are made to get the vendor details for every transactions and improve the performance of the model mapping.
+To reduce the number of calls that are made to get the vendor details for every transaction, and to improve the performance of the model mapping, you can use caching for the **\#Vend** data source.
 
-> [!NOTE] 
-> The **Trans\#Vend** data source caching will be performed within the scope of the current transaction of the **Trans** data source at runtime.
+> [!NOTE]
+> The **Trans\\\#Vend** data source will be cached in the scope of the current transaction of the **Trans** data source at runtime.
 
-Caching the **#Vend** data source will reduce the number of duplicated calls from 525 to 260 but will not totally eliminate the duplication. You can configure a new parameterized data source of the **Calculated field** type to achieve this.
+By caching the **\#Vend** data source, you reduce the number of duplicated calls from 525 to 260, but you don't completely eliminate the duplication. To completely eliminate duplication, you can configure a new parameterized data source of the **Calculated field** type.
 
 ## Improve the model mapping based on information from the execution trace
 
-### Modify the logic of the model mapping
+### Change the logic of the model mapping
 
-Complete these steps to use caching and a data source of the **Calculated field** type, to help prevent duplicate calls to the database.
+Follow these steps to use caching and a data source of the **Calculated field** type, to help prevent duplicate calls to the database.
 
 1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
-3. Select **Designer**.
-4. Follow these steps to add a new data source of the **Table records** type, to access records in the **VendTable** application table:
+3. On the **Model mappings** page, on the Action Pane, select **Designer**.
+4. On the **Model mapping designer** page, follow these steps to add a data source of the **Table records** type to access records in the VendTable application table:
 
-    1. In the **Data source types** pane, expand **Dynamics 365 for Operations** and select **Table records**.
-    2. Select **Add root**, and in the **Name** field, enter **Vend**.
-    3. In the **Table** field, enter **VendTable** and then select **OK**.
+    1. In the **Data source types** pane, expand **Dynamics 365 for Operations**, and select **Table records**.
+    2. Select **Add root**.
+    3. In the dialog box, in the **Name** field, enter **Vend**.
+    4. In the **Table** field, enter **VendTable**.
+    5. Select **OK**.
 
-5. Follow these steps to add a new data source of the **Empty container** type to hold a new parameterized data source of the **Calculated field** type as you can parameterize calls to only the data sources of the **Calculated field** type that reside in a container:
+5. You can parameterize calls to data sources of the **Calculated field** type only if those data sources reside in a container. Therefore, follow these steps to add a data source of the **Empty container** type to hold a new parameterized data source of the **Calculated field** type:
 
-    1. In the **Data source types** pane, expand **General** and select **Empty container**.
-    2. Select **Add root** and in the **Name** field, enter **Box**.
+    1. In the **Data source types** pane, expand **General**, and select **Empty container**.
+    2. Select **Add root**.
+    3. In the dialog box, in the **Name** field, enter **Box**.
     3. Select **OK**.
 
-    ![Model mapping designer page showing Box data source](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Box data source on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-3.png)
 
-6. Follow these steps to add a new parameterized data source of the **Calculated field** type:
+6. Follow these steps to add a parameterized data source of the **Calculated field** type:
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, select **Box**.
-    2. In the **Data source types** pane, expand **Functions** and select **Calculated field**.
-    3. Select **Add** and in the **Name** field, enter **Vend**.
-    4. Select **Edit formula** and onthe **Formula designer** page, select **Parameters** to specify what parameters must be provided when this data source is called.
-    5. On the **Parameters** dialog, select **New** and in the **Name** field, enter **parmVendAccNumber**.
-    6. In the **Type** field, select **String** and then select **OK**.
-    7. In the **Formula** field, enter `FIRSTORNULL(FILTER(Vend, Vend.AccountNum=parmVendAccNumber))`.
-    8. Select **Save** and close the **Formula designer** page.
-    9. Select **OK** to complete the new data source entry.
+    1. In the **Data sources** pane, select **Box**.
+    2. In the **Data source types** pane, expand **Functions**, and select **Calculated field**.
+    3. Select **Add**.
+    4. In the dialog box, in the **Name** field, enter **Vend**.
+    5. Select **Edit formula**.
+    6. On the **Formula designer** page, select **Parameters** to specify the parameters that must be provided when this data source is called.
+    7. In the **Parameters** dialog box, select **New**.
+    8. In the **Name** field, enter **parmVendAccNumber**.
+    9. In the **Type** field, select **String**.
+    10. Select **OK**.
+    11. In the **Formula** field, enter **FIRSTORNULL(FILTER(Vend, Vend.AccountNum=parmVendAccNumber))**.
+    12. Select **Save**, and close the **Formula designer** page.
+    13. Select **OK** to add the new data source.
 
 7. Follow these steps to mark the added data source as cached during the execution:
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, select **Box\Vend**.
+    1. In the **Data sources** pane, select **Box\\Vend**.
     2. Select **Cache**.
-    
-    > [!NOTE] 
-    > The **Box\Vend** data source caching will be performed in the scope of all vendor transactions of the **Trans** data source at runtime.
 
-8. Follow these steps to update the nested **Trans\#Vend** data source to use the **Box\Vend** data source:
+    > [!NOTE]
+    > The **Box\\Vend** data source will be cached in the scope of all vendor transactions of the **Trans** data source at runtime.
 
-    1. On the **Model mapping designer** page, in the **Data sources** pane, expand **Trans**.
-    2. Select the **Trans\#Vend** data source and then select **Edit** > **Edit formula**.
-    3. In the **Formula** field, enter `Box.Vend(@.AccountNum)`.
-    4. Select **Save** and then close the **Formula designer** page.
-    5. Select **OK** to complete the modification of the selected data source.
+8. Follow these steps to update the nested **Trans\\\#Vend** data source so that it uses the **Box\\Vend** data source:
+
+    1. In the **Data sources** pane, expand **Trans**.
+    2. Select the **Trans\\\#Vend** data source, and then select **Edit** \> **Edit formula**.
+    3. On the **Formula designer** page, in the **Formula** field, enter **Box.Vend(\@.AccountNum)**.
+    4. Select **Save**, and then close the **Formula designer** page.
+    5. Select **OK** to complete your changes to the selected data source.
 
 9. Select **Save**.
 
-    ![Model mapping designer page showing Vend data source](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Vend data source on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Close the **Model mapping designer** page.
 11. Close the **Model mappings** page.
@@ -216,8 +225,7 @@ Complete these steps to use caching and a data source of the **Calculated field*
 ### Complete the modified version of the ER model mapping
 
 1. On the **Configurations** page, on the **Versions** FastTab, select version **1.2** of the **Performance improvement mapping** configuration.
-2. Select **Change status**.
-3. Select **Complete**, and then select **OK**.
+2. Select **Change status** \> **Complete**, and then select **OK**.
 
 ## Run the modified ER solution to trace execution
 
@@ -225,32 +233,33 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 ## Use the performance trace to analyze model mapping performance
 
-1. On the **Configurations** page, in the configuration tree, select the **Performance improvement mapping** item.
+1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
-3. Select **Designer**.
+3. On the **Model mappings** page, on the Action Pane, select **Designer**.
 4. On the **Model mapping designer** page, on the Action Pane, select **Performance trace**.
-5. Select the latest generated trace.
-6. Select **OK**.
+5. Select the most recent trace that was generated, and then select **OK**.
 
-Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has also been reduced. The total execution time has been reduced ~ 20 times (from ~8 seconds to ~400 milliseconds) improving the performance of the whole ER solution. 
+Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has also been reduced.
 
-![Trace information on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Trace information on the Model mapping designer page 1](./media/er-calculated-field-ds-performance-mapping-5.png)
 
-![Trace information on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-5a.png)
+The total execution time has been reduced about 20 times (from about 8 seconds to about 400 milliseconds). Therefore, the performance of the whole ER solution has been improved.
+
+![Trace information on the Model mapping designer page 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix1"></a>Appendix 1: Download the components of the sample Microsoft ER solution
 
-You must also download and locally store the following files.
+You must download the following files and store them locally.
 
-| File                                        | Content                               |
-|---------------------------------------------|---------------------------------------|
-| Performance improvement model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
+| File                                        | Content |
+|---------------------------------------------|---------|
+| Performance improvement model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Performance improvement mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
+| Performance improvement format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ## <a name="appendix2"></a>Appendix 2: Configure the ER framework
 
-You must configure the minimal set of ER parameters before you can start to use the ER framework to improve the performance of the sample Microsoft ER solution.
+Before you can start to use the ER framework to improve the performance of the sample Microsoft ER solution, you must configure the minimal set of ER parameters.
 
 ### <a id="ConfigureParameters"></a>Configure ER parameters
 
@@ -275,7 +284,7 @@ Every ER configuration that is added is marked as owned by an ER configuration p
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Configuration providers**.
-3. On the **Configuration provider table** page, each provider record has a unique name and URL. Review the contents of this page. If a record for **Litware, Inc.** (`https://www.litware.com`) already exists, skip the next procedure, [Add a new ER configuration provider](#ActivateProvider).
+3. On the **Configuration provider table** page, each provider record has a unique name and URL. Review the contents of this page. If a record for **Litware, Inc.** already exists, skip the next procedure, [Add a new ER configuration provider](#ActivateProvider).
 
 #### <a id="ActivateProvider"></a>Add a new ER configuration provider
 
@@ -295,6 +304,6 @@ For more information about ER configuration providers, see [Create configuration
 
 ## Additional resources
 
--   [Electronic Reporting overview](general-electronic-reporting.md)
--   [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
--   [Support parameterized calls of ER data sources of the Calculated field type](er-calculated-field-type.md)
+- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
+- [Support parameterized calls of ER data sources of the Calculated field type](er-calculated-field-type.md)
