@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process credit cards without a hardware station
-description: This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. 
+description: This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: rubendel
 manager: AnnBe
 ms.date: 08/21/2020
@@ -34,54 +34,61 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure point of sale (POS) clients to process "card not present" transactions without a hardware station. This functionality specifically targets emerging scenarios such as curbside pickup. When enabled, clients such as the Cloud POS and Modern POS for iOS can make credit card processing calls through Commerce Scale Unit, rather than depending on a standalone hardware station deployed on the local network. The result is that curbside pickup can be supported on any POS client, and with fewer setup steps. 
+This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
+
+When this feature is turned on, clients such as Cloud POS and Modern POS for iOS can make credit card processing calls through Commerce Scale Unit. They don't have to depend on a standalone hardware station that is deployed on the local network. Therefore, any POS client can support curbside pickup, and fewer setup steps are required.
 
 > [!NOTE]
-> This feature shouldn't be enabled for registers that support offline mode. It routes all "card not present" payment requests through the Commerce Scale Unit, which isn't available when the register goes offline.  
+> This feature should not be turned on for registers that support offline mode. The feature routes all "card not present" payment requests through the Commerce Scale Unit, but the Commerce Scale Unit isn't available when the register goes offline.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| BOPIS | BOPIS is the common abbreviation for "buy online, pick up in store." |
-| Curbside pickup | This scenario is similar to BOPIS, but rather than picking up the item in the store, the customer generally doesn't enter the store and in many cases doesn't leave their vehicle. |
-| Card not present | Sometimes abbreviated as CNP, "card not present" describes scenarios where the credit card or other form of electronic payment is not physically present. In  BOPIS and curbside pickup scenarios, the customer makes their payment online or over the phone, and the payment is then captured from the POS at the time of pickup. 
-| Hardware station | This term is used to describe the business logic that drives interactions between the POS and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android. Modern POS for iOS and Cloud POS require a standalone deployed hardware station to interact with physical devices. |
+| BOPIS | This abbreviation is short for "buy online, pick up in store." |
+| Curbside pickup | This scenario resembles BOPIS. However, instead of picking up items in the store, customers don't usually enter the store and often don't even leave their vehicle. |
+| Card not present | This term is sometimes abbreviated CNP. It describes scenarios where the credit card or other form of electronic payment isn't physically present. In BOPIS and curbside pickup scenarios, customers make a payment online or over the phone, and the payment is then captured from the POS at the time of pickup. |
+| Hardware station | This term describes the business logic that drives interactions between the POS and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android clients. The Cloud POS and Modern POS for iOS clients require a standalone deployed hardware station to interact with physical devices. |
 
 ## Overview
 
-If this feature isn't enabled, the Cloud POS or Modern POS for iOS can't process "card not present" credit card requests by themselves because they don't have a built-in hardware station. By enabling the feature, the Commerce Scale Unit can be used to facilitate these requests for those clients. Aside from Cloud POS and Modern POS for iOS, this feature can also be used for Modern POS for Windows and Android clients, but it isn't supported for offline mode. For scenarios where a Windows client is using offline mode, this feature shouldn't be used.  
+When this feature is turned off, Cloud POS and Modern POS for iOS can't process "card not present" credit card requests by themselves, because they don't have a built-in hardware station. When the feature is turned on, the Commerce Scale Unit can be used to facilitate the requests for those clients.
+
+Although this feature can also be used for Modern POS for Windows and Modern POS for Android, in addition to Cloud POS and Modern POS for iOS, it isn't supported for offline mode. Therefore, the feature should not be used in scenarios where a Windows client uses offline mode.
 
 ## Supported scenarios
 
-The following scenarios are supported for POS clients that don't have a built-in hardware station. 
+The following scenarios are supported for POS clients that don't have a built-in hardware station.
 
 | Scenario | Description |
-| --- | --- |
-| Payment capture | Recall of orders for pickup and capture of the credit card payment associated with the order. |
-| Linked refund | Linked refund to the original payment instrument for return orders and cash and carry transactions. |
-| Order editing | Orders can be recalled and edited in the POS with the same payment card being authorized to support the new order total. | 
-| Order cancellation | Orders that are canceled can have the balance that is due back to the customer refunded to the original payment card. |
+|---|---|
+| Payment capture | An order can be recalled for pickup, and the credit card payment that is associated with the order can be captured. |
+| Linked refund | A refund can be linked to the original payment instrument for return orders and cash-and-carry transactions. |
+| Order editing | Orders can be recalled and edited in the POS, and the same payment card can be authorized to support the new order total. |
+| Order cancellation | For orders that are canceled, the balance that is due back to the customer can be refunded to the original payment card. |
 
 ## Unsupported scenarios
 
-Creation of credit card authorizations isn't supported. Only existing card payments can be captured, refunded, or edited. 
+Creation of credit card authorizations isn't supported. Only existing card payments can be captured, refunded, or edited.
 
 | Scenario | Description |
-| --- | --- |
-| Creating payment | Creation of new customer orders and authorization of payments for fulfillment isn't supported by this feature. Creating new payments will continue to require a hardware station. |
-| Changing payment card | If an order is recalled in the POS, the same payment method must be used for pickup. If the store associate chooses not to use the card associated with the order, they won't be able to replace it with a different card unless a hardware station is available. |
-| Offline | When this feature is enabled, "card not present" requests will always be sent to the Commerce Scale Unit. If a register goes offline, the Commerce Scale Unit is no longer available, so "card not present" requests will fail. This feature shouldn't be enabled for registers that are configured to support offline mode. |
+|---|---|
+| Creating a payment | This feature doesn't support the creation of new customer orders and authorization of payments for fulfillment. Creation of new payments will continue to require a hardware station. |
+| Changing the payment card | If an order is recalled in the POS, the same payment method must be used for pickup. Store associates can substitute a different card for the card that is associated with an order only if a hardware station is available. |
+| Offline mode | When this feature is turned on, "card not present" requests are always sent to the Commerce Scale Unit. If a register goes offline, "card not present" requests will fail, because the Commerce Scale Unit is no longer available. The feature should not be turned on for registers that are configured to support offline mode. |
 
-## Set up POS to process "card not present" transactions without a hardware station
+## Set up the POS to process "card not present" transactions without a hardware station
 
-The configuration to enable this feature is completed at the register level. In the back office, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. Select the relevant register and then select **Edit**. Select the dropdown for **Card not present processing**, select **Use retail server**, and then select **Save**.
+The configuration to turn on this feature is completed at the register level.
 
-![Previously saved payment instrument](media/PAYMENTS/CNP-POS.png)
+1. In the back office, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
+2. Select the relevant register, and then select **Edit**.
+3. On the **General** FastTab, in the **Card not present processing** field, select **Use retail server**. (By default, this field is set to **Use hardware station**.)
 
-After the change is saved, run the **1090** distribution schedule to sync the changes to the POS. 
+    ![Card not present processing field](media/PAYMENTS/CNP-POS.png)
 
-The **Card not present processing** configuration option is set to **Use hardware station** by default. 
+4. Select **Save**.
+5. After the change is saved, run the **1090** distribution schedule to sync the changes to the POS.
 
 ## Related articles
 
