@@ -55,7 +55,7 @@ You can create a service request to add additional domains to an environment if 
 
 When provisioning an e-Commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the e-Commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-Commerce tenant name>.commerce.dynamics.com`, where the e-Commerce tenant name is the name entered in LCS for the Commerce environment.
 
-You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from a sandbox environment to production. Non-production sandbox environment URLs will contain a "-sandbox" suffix reflecting the environment type within the Commerce-generated URL (for example, `https://<e-Commerce tenant name>-sandbox.commerce.dynamics.com`).
+You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from a sandbox environment to production.
 
 ## Site setup
 
@@ -74,7 +74,7 @@ The **Path** box can be left blank, or an additional path string can be added th
 > [!NOTE]
 > The path is also known as the **Match path** when adding a channel in the **Site Settings \> Channels** configuration section of site builder.
 
-For example, if you have a site in site builder called "fabrikam" in an environment named "xyz," and if you set up the site with a blank path, then you would access the published site content in a web browser by going directly to the base Commerce-generated URL:
+For example, if you have a site in site builder called "fabrikam" in an e-Commerce tenant named "xyz," and if you set up the site with a blank path, then you would access the published site content in a web browser by going directly to the base Commerce-generated URL:
 
 `https://xyz.commerce.dynamics.com`
 
