@@ -34,7 +34,7 @@ ms.search.validFrom: 2020-09-01
 [!include [banner](../includes/preview-banner.md)]
 
 
-Performance issues related to resource scheduling can occur when with you work with projects that number in to the thousands. These performance issues are due to the resource capacity roll-up synchronization process and the **ResProjectResource** table. The resource scheduling performance feature removes the roll-up synchronization process and deformalizes the **ResProjectResource** table.  
+Performance issues related to resource scheduling can occur when there are projects that number into the thousands.  To improve resource scheduling performance, a feature is available for users that allows them to reduce the time it takes to launch the resource availability form.  Specifically, this will remove the resource capacity roll-up synchronization process and make use of ResProjectResource table to speed up the resource lookup.  Please note that ResRollup table will no longer be used.  
 
 > [!IMPORTANT]
 > If there is a dependency on either the resource capacity roll-up synchronization process or the **ResProjectResource** table, do not use this feature.
