@@ -5,7 +5,7 @@ title: What's new and changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
