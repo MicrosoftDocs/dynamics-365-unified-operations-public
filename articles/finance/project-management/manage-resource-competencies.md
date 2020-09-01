@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage resource competencies
 
-[!include [banner](../includes/banner.md)
+[!include [banner](../includes/banner.md)]
 
 Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.
 
