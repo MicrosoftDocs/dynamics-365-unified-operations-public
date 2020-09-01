@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LISTJOIN">LISTJOIN ER function</a>
+# LISTJOIN ER function
 
 [!include [banner](../includes/banner.md)]
 
