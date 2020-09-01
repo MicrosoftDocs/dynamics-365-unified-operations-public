@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INDEX">INDEX ER function</a>
+# INDEX ER function
 
 [!include [banner](../includes/banner.md)]
 
