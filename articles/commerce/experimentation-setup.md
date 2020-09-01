@@ -35,6 +35,6 @@ Once a hypothesis and metrics are defined, follow the required steps to create a
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using live telemetry events from Dynamics 365 Commerce:
 1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module of interest.
-1. Click on **View** to see the list of event IDs associated and copy to clipboard the one(s) that relate to the right UI component.
+1. Click on **View** to see the list of all event IDs associated and copy the one(s) you want to paste into the third-party service. If you need more than one event ID, view and copy them one by one. 
     - Click [here](https://docs.microsoft.com) to view all available events and attributes, including tracking page views and revenue.
-1. Use the event as necessary in the third-party service to track success metrics for the experiment.
+1. Use the event as described in the third-party service to track success metrics for the experiment.
