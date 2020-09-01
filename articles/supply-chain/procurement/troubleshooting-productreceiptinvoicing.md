@@ -42,7 +42,7 @@ Quantity is mandatory for posting invoices. So, if the full quantity on the line
 **Fix**
 This is an issue that could occur due to inconsistency in purchase order distributions. 
 
-It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## Cannot consolidate multiple Product Receipts (PR) into a single Purchase order
 Cannot consolidate multiple PR into a single PO when the different PR lines have different accounting dates.
@@ -70,7 +70,7 @@ With reversals, our recommendation is to skip all validations to ensure that the
 ## Product receipt Voucher number is consumed even if no financial voucher is generated, during Product Receipt
 When the "Accrue liability on product receipt" is OFF on the item model group, then no postings to GL will happen. However, there is a physical event that is recorded for the purpose of accounting in subledger and that needs a voucher number. This is what is referenced in the Inventory transactions.
 
-In the following blogpost, we recommend the "Accrue liability on product receipts" to be YES: [Post Misc. charges at time of Product receipt] (https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
+In the following blogpost, we recommend the "Accrue liability on product receipts" to be YES: [Post Misc. charges at time of Product receipt](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
 
 ## Setting - 'Post to charge account in ledger' is not active
 
@@ -93,12 +93,11 @@ This issue occurs upon invoicing a purchase order, when the “Post to charge ac
 Error “Account number for transaction type Purchase expenditure for product does not exist” when we generate Invoice form a PO.
 
 **Fix**
-This is dependent on the parameter settings for invoices and invoice groups. Please find full details in this blog: [Accounting for Purchase charge and Stock variation]
-(https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+This is dependent on the parameter settings for invoices and invoice groups. Please find full details in this blog: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
 
 
 
 ## Additional resources
 
-[Get started with Purchase Orders](get-started.md)
-
+[Product receipts against purchase orders](product-receipt-against-purchase-orders.md)
+[Vendor Invoicing](vendor-invoices-overview.md)
