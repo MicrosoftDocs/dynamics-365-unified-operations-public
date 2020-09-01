@@ -65,16 +65,16 @@ SysWorkflowQueue-resume
 **Fix**
 This is an issue that could occur due to inconsistency in purchase order distributions. 
 
-It is possible to reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+It is possible to reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
-The issue  will be resolved with this [KB](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
+The issue will be resolved with this [KB Article](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
 ## One or more accounting distributions is either over-distributed or under-distributed.
 
 **Fix**
 This is an issue that could occur due to inconsistency in purchase order distributions. 
 
-It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## Cancelling of delivery remainder on a purchase order with change management enabled, get the purchase order to a confirmed state
 For a purchase order under change management: When a requested change is "just" to cancel a delivery remainder on the line(s) the PO will when it is approved go directly to a Confirmed state and no journal is created. 
@@ -95,5 +95,5 @@ This happens only for purchase orders that are under change management because t
 
 ## Additional resources
 
-[Get started with Purchase Orders](get-started.md)
+[Get started with Procurement workflows](procurement-sourcing-workflows.md)
 
