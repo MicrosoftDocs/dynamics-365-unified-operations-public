@@ -29,8 +29,8 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Review, archive, and complete
-After an experiment completes and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
+# Review and complete
+After an experiment ends and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the **Experiments** tab in site builder and click on the desired experiment.
 1. Click the **Complete** button on the top bar once the experiment has run and gathered sufficient data.
 1. Click on **Review the experiment data in your third-party app** to view the experiment's results in the third-party service.
@@ -39,9 +39,9 @@ After an experiment completes and has sufficient results to determine whether it
 1. Click **Complete** to overwrite the original page and publish the winning variation to all users of the website. If there is no clear winner, choose **Republish the original page**.
 
 ## Delete experiment variations
-To delete and experiment and its variations in Commerce:
+To delete an experiment and its variations in Commerce:
 1. Go to the **Experiments** tab in site builder and select or click on the desired experiment. 
     > [!NOTE]
     > If the experiment is still active, stop the experiment in the third-party service before proceeding.
-1. Click on the **Unpublish** button in the top bar to take down the page from live site.
-1. Click on the **Delete** button in the top bar to delete the experiment.
+1. Click on the **Unpublish** button in the command bar to take down the page from live site.
+1. Click on the **Delete** button in the command bar to delete the experiment.
