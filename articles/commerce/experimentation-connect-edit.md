@@ -31,11 +31,12 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect and edit
 Once the experiment is setup in the third-party service, the next step is to connect it to an entity in Commerce and edit its variations. To do this:
-1. Go to the **Experiments** tab in site builder to view the list of experiments from the connector configured above. 
-1. Click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
+1. Go to the **Experiments** tab in site builder and click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
     > [!NOTE]
     > One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
-1. Go through the wizard to choose an entity to be experimented upon and auto-generate the variations as a copy of what already exists. 
+1. As a first step in the wizard, choose a page or fragment to be experimented upon.
     > [!NOTE]
-    > Remember to enable the "Experimentation on pages or fragments" feature flag to allow experimentation on pages and fragments. Set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity.
-1. Make the required changes to the variations in the editor view. You can also optionally establish a **control** or base variation to compare to by not making any changes to it.
+    > Remember to enable the "Experiment on pages or fragments" feature flag to allow experimentation on full pages and fragments. 
+1. In the next step, set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity.
+1. As the final step, click on **Generate variations and exit wizard** to auto-generate the variations as copies of the existing page or fragment. 
+1. Make the required changes to the variations in the editor view. You can switch between variations using the variations drop-down below the command bar. You can also optionally establish a **control** or base variation to compare to by leaving it unchanged.
