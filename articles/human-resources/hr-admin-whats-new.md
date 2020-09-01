@@ -42,7 +42,7 @@ Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resou
 > 
 >The two-week release cadence will resume as usual on January 11, 2021.
 
-For more information about upcoming features or the update process for Human Resources, see the following articles:
+For more information about upcoming features or the update process for Human Resources, see the following articles: 
 
 - [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
