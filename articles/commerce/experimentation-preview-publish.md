@@ -31,18 +31,16 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Preview and publish
 Once you edit the variation experiences in Commerce, follow the steps below to preview and publish them:
-1. Click on **Preview** to review the variations and ensure everything looks good. The editor context will determine which variation you are previewing. If you want to preview a different variation, select the variation in the editor drop down and click preview again.
-1. Click on **Publish** to publish the variations. Note that this single operation will publish all variations that belong to the experiment.
+1. Click on **Preview** to review the variation you are currently working on and ensure everything looks good. If you want to preview a different variation, select it from the variation drop down and click preview again.
+1. Click on **Publish** to publish all variations that belong to the experiment.
     > [!NOTE]
-    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to end-users. See more details on how to save, preview and publish [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to end-users. See more details on how to save, preview and publish a page [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
     
-## Using publish groups to publish experiments
-Experiment variations created within site builder can be scheduled for publishing within a publish group. You can either create pages or other items within publish groups or add existing ones to them. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
-
-> [!NOTE]
-> While adding a page to a publish group, any experiments running on it will be removed.
+## Publish experiments with publish groups
+Experiment variations created within site builder can also be scheduled for publishing with a publish group. You can either create pages within a publish group or add existing ones to it. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
 Some things to keep in mind:
-1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained above. 
+1. While adding a page to a publish group, any experiments running on it will be removed.
+1. You can connect to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained in the *Connect and edit* section. 
 1. Experiments that are already connected to pages in live site, will not be available to pages within publish groups. The same is true for experiments connected to pages within publish groups.
 1. When you publish the content in a publish group, all content within it will be published, whether it has an experiment or not.
