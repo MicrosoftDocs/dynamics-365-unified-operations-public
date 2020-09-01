@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up project resources
-description: This topic provides information about setting up project resources.
+description: This topic provides information about setting up or requesting project resources.
 author: Yowelle
 manager: AnnBe
 ms.date: 09/01/2020
@@ -66,3 +66,17 @@ When you set up a worker as an intercompany resource, you must complete the setu
 
 - On the **Resources list** page, in the search filter, enter the name of the resource that you created for the lending company, to verify that the name is included in the resource list for the borrowing company.
 
+## Request project resources
+The functionality for project resource scheduling only lets resource managers distribute staffed resources on engagements or projects. To enable this functionality, complete the following tasks, or verify that they have been completed:
+
+- Set up number sequences.
+- Set up project management and accounting workflows.
+- Enable resource request workflows.
+
+After the preceding tasks have been completed, you can complete the following tasks as you require:
+
+- Create a resource request from a soft-booked staffed resource.
+- Monitor resource requests.
+- Fulfill resource requests.
+- Request a staffed resource from a WBS.
+- Book resources to a project without having a request for a staffed resource.
