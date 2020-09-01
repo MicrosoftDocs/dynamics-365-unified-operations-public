@@ -64,7 +64,7 @@ The following features are included in this release. The feature titles link to 
 
  
 ### Globalization features
- - *I didn't find any globalization features myself, and no one from the team communicated anything to me. I'll remove this section if I haven't heard from them by the time the release happens. 
+ *I didn't find any globalization features myself, and no one from the team communicated anything to me. I'll remove this section if I haven't heard from them by the time the release happens.* 
  
 ## Additional resources
 
