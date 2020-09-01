@@ -57,4 +57,4 @@ Click on the links below to learn more about the phases:
 1. [Connect and edit](experimentation-connect-edit.md)
 1. [Preview and publish](experimentation-preview-publish.md)
 1. [Run and monitor](experimentation-run-monitor.md)
-1. [Review, archive and complete](experimentation-review-archive-complete.md)
+1. [Review and complete](experimentation-review-complete.md)
