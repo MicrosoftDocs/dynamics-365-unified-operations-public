@@ -29,15 +29,15 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Web experimentation
+# E-commerce experimentation
 
 ## Overview
-Web experimentation is the process of using controlled experiments such as A/B tests to validate hypotheses and bring data-driven confidence in decisions and therefore higher conversion rates. Use web experimentation to scientifically measure the impact of proposed changes to your website and avoid making costly decisions without data.
+Experimentation is the process of using controlled experiments such as A/B tests to validate hypotheses and making decisions with data-driven confidence. Use e-commerce experimentation to scientifically measure the impact of proposed changes to your website and thereby drive higher conversion rates.
 
 Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Real-time event streams from Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
 
 > [!NOTE]
-> A/B testing on pages, modules and fragments is supported in Commerce. Multi-variate and multi-page tests can be accomplished using fragments, as long as these tests are also supported in the third-party service.
+> Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page tests can currently only be accomplished using fragments.
 
 ## Prerequisites
 1. **Get the right Commerce version** - Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
@@ -47,8 +47,9 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
     - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
     
 ## Experimentation journey
-The diagram below shows the user's experimentation journey in Commerce and the third-party service.
+The diagram below shows the user's experimentation journey in Commerce and the third-party service - it is a cyclical process that can take a few iterations to learn and get the desired results:
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
+<<need updated diagram from Charla/Jo>>
 
 Click on the links below to learn more about the phases:
 1. [Identify](experimentation-identify.md)
