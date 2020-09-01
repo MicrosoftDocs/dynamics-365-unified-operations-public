@@ -59,8 +59,8 @@ Click on the links below to learn more about the phases:
 1. [Run and monitor](experimentation-run-monitor.md)
 1. [Review and complete](experimentation-review-complete.md)
 
-## Experiment states
-The **Experiments** tab in site builder shows the following states in the **Commerce status** field to help you quickly see what state your experiment is in:
+## Experiment statuses
+The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
 1. Not Started - The experiment isn't connected to a page or fragment yet.
 1. Draft - The experiment is connected to a page or fragment.
 1. Published - The experiment is ready to go live once it is started in the third-party service.
