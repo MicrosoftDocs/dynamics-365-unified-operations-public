@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CN_GBT_ADDITIONALDIMENSIONID">CN_GBT_ADDITIONALDIMENSIONID ER function</a>
+# CN_GBT_ADDITIONALDIMENSIONID ER function
 
 [!include [banner](../includes/banner.md)]
 
