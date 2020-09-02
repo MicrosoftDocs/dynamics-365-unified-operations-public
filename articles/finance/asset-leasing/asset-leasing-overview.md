@@ -63,17 +63,17 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 [![Leasing, lease book and payment schedule](./media/overview-02.png)](./media/overview-02.png)
 
-**Lease book** The lease books contains all the lease contract information such as lease terms, fair value, and lease payments. The followed accounting standard that you're following, lease type and thresholds that are considered in lease classification test. The lease book also contains the lease transactions that posted to general ledger. 
+**Lease book** The lease books includes all the lease contract information such as lease terms, fair value, and lease payments. It also includes the accounting standard that you're following, the lease type and thresholds that are considered in lease classification test. The lease book also contains the lease transactions that posted to general ledger. 
   
-- **Lease**: The lease carries the asset lease information that represents the foundation of the asset leasing, lease information source is lease contract and management decision that are both are done outside of Microsoft Dynamics 365 Finance. The asset's fair value is the price that would be paid for an asset in a transaction at the measurement date. This value might depend on the asset type, market conditions, and other criteria that can be taken into consideration in the assessment. The asset fair value will be considered in the classification test equation.
+**Lease** The lease carries the asset lease information that represents the foundation of the asset leasing, lease information source is lease contract and management decision that are both are done outside of Microsoft Dynamics 365 Finance. The asset's fair value is the price that would be paid for an asset in a transaction at the measurement date. This value might depend on the asset type, market conditions, and other criteria that can be taken into consideration in the assessment. The asset fair value will be considered in the classification test equation.
 
-The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The asset useful life will be considered in the classification test equation. It differes from the fixed asset useful life.
+The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset useful will be considered in the classification test equation. It differes from the useful life as defined in Fixed assets.
 
-The **incremental borrowing rate** represents the interest rate that will be used to calculate the present value. The system will use the implicit rate if it is defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
+The **incremental borrowing rate** represents the interest rate that will be used to calculate the present value. The system will use the implicit rate if it's defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
 
 The **annuity type** represents the lease payment due either at the beginning of the payment period or at the end of the period. This could be payment-in-advance (at the beginning of the lease payment period), or payment arrears (at the end of the lease payment period).
 
-The first month will be considered as period number zero for payment in advance; the first month will be considered as period number one for payment arrears.
+The first month will be considered period number zero for payment in advance; the first month will be considered period one for payment arrears.
 
 The **compounding interval** represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year) or annually (1 period per year). The number of periods will be considered in the present value calculation.
 
@@ -84,20 +84,26 @@ The **lease term** represents the length of lease period, in months.
 > [!Note] 
 > The definition of the lease term is based on the number of periods, or intervals, in the payment schedule. The defined number of intervals will be converted to months.
 
-The **payment schedule line** captures the lease payments per period. It also specifies whether a renewal period will be exercised and included in the initial measurement of the right-of-use asset and lease liability. You can define the start date of the lease due payments, period intervals of which represents the lease length, which could be defined by days, months or years.
+The **payment schedule line** captures the lease payments per period. It also specifies whether a renewal period will be exercised and included in the initial measurement of the right-of-use asset and lease liability. You can also define the start date of the lease due payments, and the period intervals that represent the length of the lease, which can be days, months, or years.
 
 The **payment frequency** indicates whether the payment is monthly, quarterly, semiannually, or annually. The end date is calculated automatically based on the start date and the number of periods entered.
 
-- **Payment schedule** represents the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods and the annuity type.
+**Payment schedule** represents the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods and the annuity type.
 
-**Periods** represent the lease periods that reflect the compounding internal and annuity type. The periods will be divided as defined in the compounding interval. Compounding intervals can be monthly, 12 periods per year; quarterly, 4 periods per year; semiannually, 2 periods per year; or annually, 1 period per year. The first period will start by 0 if the annuity type is payment in advance. Otherwise the first period will start by 1 if the annuity type is payment arrears.
+**Periods** represent the lease periods that reflect the compounding internal and annuity type. The compounding interval determines how periods will be divided. You can set the following compounding intervals:
+- Monthly, 12 periods per year
+- Quarterly, 4 periods per year
+- Semiannually, 2 periods per year
+- Annually, 1 period per year. 
 
-Months indicates the number of calendar months over the length of the lease. The payment amount represents the amount due as defined in the payment frequency. The calculated present value represents the lease payment present value-based lease payment per period, compounding intervals, and incremental borrowing rate.
+The first period will start with period zero, if the annuity type is payment in advance. Otherwise the first period will start start with one, if the annuity type is payment arrears.
+
+**Months** indicates the number of calendar months over the length of the lease. The payment amount represents the amount due as defined in the payment frequency. The calculated present value represents the present value-based lease payment per period, the compounding intervals, and the incremental borrowing rate.
 
 > [!Note] 
 > The present value is calculated based on the discounted cash flow equation.
 
-- **Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that are used as the basis for the classification tests. The result of the classification tests are used to automatically specify the lease type.
+**Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that are used as the basis for the classification tests. The result of the classification tests are used to automatically specify the lease type.
 
 The **accounting framework**: shows the selected accounting standard that you're supporting, either IFRS 16 and ASC 842. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile. Asset leasing also supports older accounting standards IFRS 17 and ASC 840.
 
@@ -133,6 +139,7 @@ Debit: Right of use asset
 Credit: Operating lease liability
 
 **Lease liability amortization (Interest expense)**: The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on organization’s balance sheet statement. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
+
 Operating lease entry of US GAAP:
 Debit: Lease expense
 Credit: Operating lease liability
