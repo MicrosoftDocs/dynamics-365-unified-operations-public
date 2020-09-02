@@ -30,8 +30,6 @@ ms.search.validFrom: 2020-09-01
 ms.dyn365.ops.version: 10.0.14
 ---
 
-
-
 # Asset leasing overview
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +46,7 @@ The following diagram shows the main elements of the business process for leases
 
 The main components that define a leased asset include the following:
 
-**Lease agreement** The lessor owns the asset and agrees with the lessee to lease an asset for specific period in exchange for periodic lease payments. In addition to the legal contract between the lessor and lessee, management decisions such as the likelihood of exercising a renewal option and transfer of ownership must be captured.
+**Lease agreement** The lessor owns the asset and agrees with the lessee to lease an asset for specific period in exchange for periodic lease payments. In addition to the legal contract between the lessor and lessee, the lease agreement captures management decisions such as the likelihood of exercising a renewal option and transfer of ownership.
 
 **Lease calculation and classification per accounting standard** The lease calculation and classification identify the accounting standard that will be applied in the initial and subsequent measurement, as well as the classification test that determines what the lease type will be. A lease can be a finance lease, an operating lease, a short-term lease or a low-value lease. The system also calculates the present value of future minimum lease payments for the purpose of valuation and classification.
 
@@ -56,10 +54,10 @@ The main components that define a leased asset include the following:
 
 For off-balance sheet leases, the system calculates the straight-line lease expense over whichever is less: the economic life of the asset, or the lease term. Finally, lease adjustments measure contract modifications such as a lease extension or expansion, and the impairment transaction that writes down the right-of-use asset for non-recoverable costs.
 
-Asset leasing is integrated with General ledger, ensurnig that all lease transactions are posted to your chart of accounts. Asset leasing is integrated with accounts payable to track lessor invoices in accounts payable module and take future payments from there. The integration with fixed assets is to track leases in the fixed assets register and post right-of-use assets related transactions (initial recognition, depreciation and impairment) from fixed assets module.   
+Asset leasing is integrated with General ledger, which ensures that all posted lease transactions update your chart of accounts. Asset leasing is integrated with accounts payable to track lessor invoices in Accounts payable and take future payments from there. The integration with Fixed assets lets you track leases in the fixed assets register and post right-of-use assets transactions, including the initial recognition, depreciation, and impairment of the asset, from within Fixed assets.   
 
 ## Asset leasing components in Microsoft Dynamics 365 Finance.
-Asset leasing in is designed to map lease information, payment schedules, starting and ending dates, and the payment frequency. Asset leasing automates the calculations of present value, monthly lease payments, interest and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, based on the framework defined by the accounting standard you’re following.
+Asset leasing maps lease information, payment schedules, starting and ending dates, and the payment frequency. It also automates calculations for present value, monthly lease payments, interest, and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, that are based on the framework defined by the accounting standard you’re following.
 
 The following diagram shows the lease book, the lease, calculated payment schedule, books and lease classification tests and the corresponding accounting transactions.
 
@@ -101,7 +99,7 @@ Months indicates the number of calendar months over the length of the lease. The
 
 - **Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that are used as the basis for the classification tests. The result of the classification tests are used to automatically specify the lease type.
 
-The **accounting framework** shows the selected accounting standard that you're supporting, either IFRS 16 and ASC 842. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile. Asset leasing also supports older accounting standards IFRS 17 and ASC 840.
+The **accounting framework**: shows the selected accounting standard that you're supporting, either IFRS 16 and ASC 842. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile. Asset leasing also supports older accounting standards IFRS 17 and ASC 840.
 
 **Lease types** indicate which of the two types of leases will be used, either a finance lease or operating lease. Under a finance lease, risks and rewards related to the leased asset are transferred to the lessee. Under an operating lease, risks and rewards related to leased asset remain with the lessor. A third option is an automated identification of the lease type either finance or operating, based on the defined thresholds in the book. This automatic identification is performed during the lease reclassification test.
 
@@ -134,7 +132,7 @@ Finance lease entry for IFRS and US GAAP:
 Debit: Right of use asset
 Credit: Operating lease liability
 
-Lease liability amortization (Interest expense): The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on organization’s balance sheet statement. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
+**Lease liability amortization (Interest expense)**: The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on organization’s balance sheet statement. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
 Operating lease entry of US GAAP:
 Debit: Lease expense
 Credit: Operating lease liability
@@ -146,17 +144,19 @@ Finance lease entry for IFRS and US GAAP:
 Debit: Interest expense
 Credit: Finance lease liability
 
-Accrued lease payment: An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting lease liability account against wither vendor subledger in case of the lessor is defined as a vendor or posting the credit side to notes payable ledger account then the payment will be executed against either vendor or notes payable.
+**Accrued lease payment**: An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting lease liability account against wither vendor subledger in case of the lessor is defined as a vendor or posting the credit side to notes payable ledger account then the payment will be executed against either vendor or notes payable.
 Operating lease entry of US GAAP:
 Debit: Operating lease liability
 Credit: Vendor liability (sub ledger)/Notes payable  
 
-Note: Operating leases are supported only by US GAAP ASC 842.
+> [!Note]
+> Operating leases are supported only by US GAAP ASC 842.
 
 Finance lease entry for IFRS and US GAAP:
 Debit: Finance lease liability
-Credit: Vendor liability (sub ledger)/Notes payable  
-Asset depreciation: The right-of-use asset is depreciated over the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will carried over fixed assets module only. 
+Credit: Vendor liability (subledger)/Notes payable 
+
+**Asset depreciation**: The right-of-use asset is depreciated over the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will carried over fixed assets module only. 
 
 Operating lease entry of US GAAP:
 Debit: Lease expense
@@ -167,12 +167,12 @@ Finance lease entry for IFRS and US GAAP:
 Debit: Depreciation of right of use asset expense
 Credit: Right of use asset accumulated depreciation  
 
-Short term lease: A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
+**Short term lease**: A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
 Short term lease entry for IFRS and US GAAP:
 Debit: Lease expense
 Credit: Vendor liability (sub ledger)/ Notes payable
 
-Low value lease: A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
+**Low value lease**: A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
 Short term lease entry for IFRS and US GAAP:
 Debit: Lease expense
 Credit: Vendor liability (sub ledger)/ Notes payable
@@ -197,11 +197,14 @@ Lease adjustment entry for IFRS and US GAAP in case of decrease:
 Debit: Operating lease liability
 	Credit: Right of use asset
 
-Lease impairment: represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date and periods remaining. The remaining right-of-use asset will be amortized on a straight-line bases.  The lease impairment logic considers the asset carryover value of which exist in asset depreciation schedule.   
+**Lease impairment**: represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date and periods remaining. The remaining right-of-use asset will be amortized on a straight-line bases.  The lease impairment logic considers the asset carryover value of which exist in asset depreciation schedule.  
+
 Impairment entry for IFRS and US GAAP:
 Debit: Impairment expense
 Credit: Right of use asset
-Note: In case of the lease is linked to fixed asset the lease impairment should be posted from fixed assets submodule since asset depreciation ran from fixed assets module.
+
+>[!Note]
+> In case of the lease is linked to fixed asset the lease impairment should be posted from fixed assets submodule since asset depreciation ran from fixed assets module.
 
 To create a New lease, go to Asset leasing| Common| Lease summary 
 
