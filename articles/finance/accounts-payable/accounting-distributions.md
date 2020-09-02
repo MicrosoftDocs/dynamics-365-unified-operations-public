@@ -59,6 +59,7 @@ The generic accounting distribution capabilities provide the following options f
     -   You can view the current document accounting status in **Reference**. The status is for the entire document, and indicates whether the document is in process or completed.
 -   ** View distributions** – View the accounting distributions for the all lines and monetary amounts on the document. You can't modify the accounting distributions from this view.
 
+In version 10.0.13, new validation that can be turned on which will validate the accounting distribution table when we are creating them making sure the fields are properly set that are required and are valid. This is tied to a feature management flag that can be enabled and disabled. The feature is "Enable additional validation of data for documents using the source document accounting framework". 
 
 For more information, see [Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 
