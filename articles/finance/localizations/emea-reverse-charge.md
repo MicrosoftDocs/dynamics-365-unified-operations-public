@@ -92,7 +92,7 @@ On the **Reverse charge item groups** page (**Tax** &gt; **Setup** &gt; **Sales 
 On the **Reverse charge rules** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge rules**), you can define the applicability rules for purchase and sales purposes. You can configure a set of reverse charge applicability rules. For each rule, set the following fields:
 
 - **Document type** – Select **Purchase order**, **Vendor invoice journal**, **Sales order**, **Free text invoice**, **Customer invoice journal**, and/or **Vendor invoice**.
-- **Country/region type of the partner** – Select **Domestic**, **EU**, **GCC** or **Foreign**. Alternatively, if the rule can be applied to all trade partners, regardless of the country or region of their address, select **All**.
+- **Country/region type of the partner** – Select **Domestic**, **EU**, **GCC**, or **Foreign**. Alternatively, if the rule can be applied to all trade partners, regardless of the country or region of their address, select **All**.
 - **Domestic delivery address** – Select this check box to apply the rule to deliveries within the same country or region. This check box can't be selected for the **Vendor invoice journal** and **Customer invoice journal** document types.
 - **Reverse charge item group** – Select the group that the rule can be applied to.
 - **Threshold amount** – The Reverse Charge schema is applied to an invoice only if the value of items and/or services that are included in the reverse charge item group exceeds the limit that you specify here.
