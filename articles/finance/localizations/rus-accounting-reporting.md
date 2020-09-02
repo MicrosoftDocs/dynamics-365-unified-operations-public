@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.1
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for accounting reporting.
 
-    For example, to generate accounting reporting in XML format for the year after the 2016 reporting period, download the latest versions of the following configurations:
+    For example, to generate accounting reporting in XML format for the year after the 2019 reporting period, download the latest versions of the following configurations:
 
     - Financial reports model
     - Financial reports model mapping (RU)
-    - Accounting reporting format 5.07 (RU)
+    - Accounting reporting format 5.08 (RU)
 
     For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -52,22 +52,22 @@ ms.dyn365.ops.version: 10.0.1
     Follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset type.
-    2. Download the **RU Accounting reporting 5.07 (2016)** package. The file that is downloaded is named **RU Accounting reporting 5.07 (2016).zip**.
+    2. Download the **RU Accounting reporting 5.08 (2019)** package. The file that is downloaded is named **RU Accounting reporting 5.08 (2019).zip**.
     3. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
     4. In the **Job details** section, enter any name for the job.
     5. In the **Data source format** field, select **Package**.
-    6. In the **Upload data file** field, select **Upload**, and then select the **RU Accounting reporting 5.07 (2016).zip** file that you downloaded earlier.
+    6. In the **Upload data file** field, select **Upload**, and then select the **RU Accounting reporting 5.08 (2019).zip** file that you downloaded earlier.
     7. After the data entities are uploaded, select **Import**.
 
 3. Go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that are imported. (All the data that is imported is presented only in the Russian language.)
 
     | Report           | Report code | Description                                             |
     |------------------|-------------|---------------------------------------------------------|
-    | Balance sheet    | Баланс      | Бухгалтерский баланс (2016)                             |
-    | Income statement | ПрибУб      | Отчет о прибылях и убытках (2016)                       |
-    | Equity statement | ОтчетИзмКап | Отчет об изменении капитала (2016)                      |
-    | Cash flow        | ДвижениеДен | Отчет о движении денежных средств (2016)                |
-    | Funds usage      | ЦелИсп      | Отчет о целевом использовании полученных средств (2016) |
+    | Balance sheet    | Баланс      | Бухгалтерский баланс (2019)                             |
+    | Income statement | ПрибУб      | Отчет о прибылях и убытках (2019)                       |
+    | Equity statement | ОтчетИзмКап | Отчет об изменении капитала (2019)                      |
+    | Cash flow        | ДвижениеДен | Отчет о движении денежных средств (2019)                |
+    | Funds usage      | ЦелИсп      | Отчет о целевом использовании полученных средств (20169 |
 
 4. Set up financial report cell operations for the financial reports that are imported. Set up all required cells. These required cells include cells for totals.
 
@@ -77,7 +77,7 @@ ms.dyn365.ops.version: 10.0.1
 
     | Processing           | Processing code    | Description                     |
     |----------------------|--------------------|---------------------------------|
-    | Accounting reporting | БухОтч 5.07 (2016) | Бухгалтерская отчетность (2016) |
+    | Accounting reporting | БухОтч 5.08 (2019) | Бухгалтерская отчетность (2019) |
 
 6. Set up the organization codes that are used in accounting reporting.
 
@@ -97,16 +97,16 @@ ms.dyn365.ops.version: 10.0.1
 7. Set up the ER format that is run when accounting reporting is generated in electronic format.
 
     1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
-    2. In the left pane, select the action that is named **Generate BUHOTCH 5.07**, and then select **Edit**.
+    2. In the left pane, select the action that is named **Generate BUHOTCH 5.08**, and then select **Edit**.
     3. Set the **Show dialog** option to **Yes**.
-    4. In the **Format mapping** field, select the **Accounting reporting format 5.07 (RU)** configuration that you downloaded in step 1.
+    4. In the **Format mapping** field, select the **Accounting reporting format 5.08 (RU)** configuration that you downloaded in step 1.
 
     For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
 
 ## Generate accounting reporting in electronic format
 
 1. To generate the accounting reporting file, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. In the left pane, select the report format to generate. For example, select **БухОтч 5.07 (2016)**.
+2. In the left pane, select the report format to generate. For example, select **БухОтч 5.08 (2019)**.
 3. On the **Messages** FastTab, select **New**. Then, in the **Run processing** dialog box, select **OK**.
 4. Select the message line that was created. Enter a description, and specify the start date and end date for the report. The end date is treated as the base date for financial reports.
 5. Optional: On the **Message additional fields** FastTab, enter the following information.
