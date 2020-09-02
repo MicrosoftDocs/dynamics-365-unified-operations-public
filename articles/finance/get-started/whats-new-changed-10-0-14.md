@@ -65,7 +65,7 @@ The following features are included in this release. The feature titles link to 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md). 
+Dynamics 365 Finance 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
