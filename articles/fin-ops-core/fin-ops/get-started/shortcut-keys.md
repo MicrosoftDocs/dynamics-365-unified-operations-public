@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The following keyboard shortcuts can help you quickly and efficiently enter data in .
+The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
