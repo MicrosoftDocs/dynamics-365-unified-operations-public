@@ -5,7 +5,7 @@ title: VAT declaration (Czech Republic)
 description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
