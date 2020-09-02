@@ -52,7 +52,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
