@@ -1496,6 +1496,8 @@
           href: localizations/emea-amount-printing-forms.md
         - name: VAT statement
           href: localizations/emea-cze-vat-statement-details.md
+        - name: VAT declaration (Czech Republic)
+          href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
