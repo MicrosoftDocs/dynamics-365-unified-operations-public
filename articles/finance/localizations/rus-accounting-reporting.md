@@ -79,27 +79,32 @@ ms.dyn365.ops.version: 10.0.1
     |----------------------|--------------------|---------------------------------|
     | Accounting reporting | БухОтч 5.08 (2019) | Бухгалтерская отчетность (2019) |
 
-6. Set up the organization codes that are used in accounting reporting.
+6. Set up the organization codes that are used in accounting reporting and other information about company.
 
     1. Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
     2. In the left pane, select the field that is named **EconomicActivityTypeCode (ОКВЭД)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for legal entity's economic activity type.
     3. Select the field that is named **OrganizationalFormCode (ОКОПФ)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for the legal entity's organizational form.
     4. Select the field that is named **OwneshipFormCode (ОКФС)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for the legal entity's ownership form.
-    5. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
-    6. On the **Message additional fields** FastTab, enter the following information.
+    5. Select the field that is named **AuditorCompanyName (Наименование аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the name of the auditor company in case of mandatory audit of the reporting.
+    6. Select that field that is named **AuditorStateRegistrationNumber (ОГРН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the state registration number of the auditr company.
+    7. Select the field that is named **AuditorTaxRegistrationNumber (ИНН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter tax registration number f the auditor company.
+    8. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
+    9. On the **Message additional fields** FastTab, enter the following information.
 
         | Field name               | Default value                                |
         |--------------------------|----------------------------------------------|
         | EconomicActivityTypeCode | Select the value that you entered in step 2. |
         | OwneshipFormCode         | Select the value that you entered in step 3. |
         | OrganizationalFormCode   | Select the value that you entered in step 4. |
+        | AuditorCompanyName       | Select the value that you entered in step 5. |
+        | AuditorStateRegistrationNumber | Select the value that you entered in step 6. |
+        | AuditorTaxRegistrationNumber | Select the value that you entered in step 7. |
 
 7. Set up the ER format that is run when accounting reporting is generated in electronic format.
 
     1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
-    2. In the left pane, select the action that is named **Generate BUHOTCH 5.08**, and then select **Edit**.
-    3. Set the **Show dialog** option to **Yes**.
-    4. In the **Format mapping** field, select the **Accounting reporting format 5.08 (RU)** configuration that you downloaded in step 1.
+    2. In the left pane, select the action that is named **Generate BUHOTCH 5.08**, and then expand **General** FastTab.
+    3. Validate that in the **Format mapping** field, the configuraiton name **Accounting reporting format 5.08 (RU)** is selected. Validate that **Show dialog** is set to **Yes**.
 
     For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
 
