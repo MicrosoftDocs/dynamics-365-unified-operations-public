@@ -231,7 +231,7 @@ Follow these steps to use caching and a data source of the **Calculated field** 
 
 Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
 
-## Use the performance trace to analyze model mapping performance
+## Use the performance trace to analyze adjustments to the model mapping 
 
 1. On the **Configurations** page, in the configuration tree, select **Performance improvement mapping**.
 2. On the Action Pane, select **Designer**.
