@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.14. This version has a build number of 10.0.XXX and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.14. This version has a build number of 10.0.605 and is available as follows:
 
-- **Preview release:** August 2020
+- **Preview release:** September 2020
 - **General availability (self-update):** October 2020
 - **Auto-update:** November 2020
 
@@ -62,17 +62,13 @@ The following features are included in this release. The feature titles link to 
  
  - [Public sector – Project invoice proposal selection parameter by funding source](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-project-operations/public-sector--project-invoice-proposal-selection-parameter-funding-source)
 
- 
-### Globalization features
- *I didn't find any globalization features myself, and no one from the team communicated anything to me. I'll remove this section if I haven't heard from them by the time the release happens.* 
- 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 Dynamics 365 Finance 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
 
 ### Regulatory updates
 For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
