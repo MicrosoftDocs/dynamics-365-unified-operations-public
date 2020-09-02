@@ -81,11 +81,11 @@ The following tables list the pages and fields that the specified FastTabs can b
 ### Process details
 |     Page                                               	|     Field                                     	|      Description                	|
 |--------------------------------------------------------	|-----------------------------------------------	|----------------------------	|
-|     Collections   process setup; Process automation    	|                                               	|     Define the steps   taken based on the leading invoice.                                                                                               	|
+|     Collections   process setup <br> Process automation    	|                                               	|     Define the steps   taken based on the leading invoice.                                                                                               	|
 |                                                        	|     Description                               	|     Free text   field used for providing a name and/or description of the step.                                                                          	|
 |                                                        	|     Action type                               	|     Activity,   email, or collection letter that will be created by the process step.                                                                    	|
 |                                                        	|     Business   document                       	|     Defines the   activity or email template that is used during the process step.                                                                      	|
-|                                                        	|     When                                      	|     Defines if   the process step will occur before or after the leading invoice due date   along with the **Days in relate to invoice due date** field.    	|
+|                                                        	|     When                                      	|     Defines if   the process step will occur before or after the leading invoice due date   along with the **Days in relation to invoice due date** field.    	|
 |                                                        	|     Days in   relation to invoice due date    	|     Together   with the **When** field it identifies the timing of the process step.                                                                        	|
 |                                                        	|     Recipient                                 	|     Identifies   if an email will be sent to a Customer, Sales group, or Collections Agent contact.                                                  	|
 |                                                        	|     Business   purpose contact                	|     Determines   which recipient’s email address is used in email communications.                                                                             	|
@@ -93,13 +93,13 @@ The following tables list the pages and fields that the specified FastTabs can b
 ### Business process activity template details 
 |     Page                                               	|     Field                  	|      Description              	|
 |--------------------------------------------------------	|----------------------------	|-------------------------	|
-|     Collections   process setup; Process automation    	|                            	|     Section of   the setup process that identifies the details of the activity template.                                                                     	|
-|     Collections   process setup; Process automation    	|     Activity   template    	|     Identifies   the type, purpose, number of days to complete, and provides details about the   activity that will be created during an activity process step.    	|
+|     Collections   process setup <br> Process automation    	|                            	|     Section of   the setup process that identifies the details of the activity template.                                                                     	|
+|     Collections   process setup <br> Process automation    	|     Activity   template    	|     Identifies   the type, purpose, number of days to complete, and provides details about the   activity that will be created during an activity process step.    	|
 
 ### Business document email template details 
 |     Page                                               	|     Field    	|      Description                 	|
 |--------------------------------------------------------	|--------------	|-----------------------------	|
-|     Collections   process setup; Process automation    	|              	|     Identifies   the email description, default language, senders name, and email address that will be   created during an email process step.    	|
+|     Collections   process setup <br> Process automation    	|              	|     Identifies   the email description, default language, senders name, and email address that will be   created during an email process step.    	|
 
 
 ### Collections history 
