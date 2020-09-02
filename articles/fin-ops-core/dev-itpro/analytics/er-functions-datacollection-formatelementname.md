@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FORMATELEMENTNAME">FORMATELEMENTNAME ER function</a>
+# FORMATELEMENTNAME ER function
 
 [!include [banner](../includes/banner.md)]
 
