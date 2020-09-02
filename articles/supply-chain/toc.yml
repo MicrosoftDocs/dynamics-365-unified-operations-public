@@ -1345,8 +1345,6 @@
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Planning with negative on-hand quantities
-          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
@@ -1355,16 +1353,20 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Approve planned orders
+          href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Planning with negative on-hand quantities
+          href: master-planning/planning-optimization/negative-on-hand.md 
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
       - name: Master plans
         items:
         - name: Master plans overview
