@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance downtime
-description: This topic describes maintenance downtime in Asset Management.
+description: This topic describes how to create maintenance downtime registrations on the asset that is selected on a work order.
 author: josaw1
 manager: tfehr
 ms.date: 10/15/2019
