@@ -412,6 +412,8 @@
           href: accounts-receivable/set-up-collections.md
         - name: Review collections information
           href: accounts-receivable/tasks/review-collections-information.md
+        - name: Collections process automation
+          href: accounts-receivable/collections-process-automate.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
@@ -756,6 +758,8 @@
           href: fixed-assets/175-percent-reducing-balance-depreciation.md
         - name: 200 percent reducing balance depreciation
           href: fixed-assets/200-percent-reducing-balance-depreciation.md
+        - name: Half-year depreciation convention methodology
+          href: fixed-assets/half-year-depreciation-methodology.md
         - name: Bonus depreciation
           href: fixed-assets/bonus-depreciation.md
         - name: Set up bonus depreciation
@@ -1013,7 +1017,27 @@
       - name: Transfer a quotation to a project
         href: project-management/transfer-quote-new-existing-project.md
       - name: Project resourcing
-        href: project-management/project-resourcing.md
+        items:
+        - name: Project resourcing overview
+          href: project-management/project-resourcing.md
+        - name: Set up project resources
+          href: project-management/set-up-project-resources.md
+        - name: Manage resource competencies
+          href: project-management/manage-resource-competencies.md
+        - name: Create a new project
+          href: project-management/create-new-project.md
+        - name: Set up role-based pricing
+          href: project-management/set-up-role-based-pricing.md
+        - name: Create a project team
+          href: project-management/create-project-team.md
+        - name: Synchronize resource capacity
+          href: project-management/synchronize-resource-capacity.md
+        - name: Project resource scheduling performance
+          href: project-management/project-scheduling-performance.md
+        - name: Set up roles on Work breakdown structure templates
+          href: project-management/set-up-roles-wbs-template.md
+        - name: Resource fulfillment for planned resources
+          href: project-management/resource-fulfillment-planned-resources.md
       - name: Receive items on purchase order from item requirement
         href: project-management/tasks/receive-items-purchase-order-item-requirement.md
       - name: Work breakdown structures
@@ -1224,6 +1248,16 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+      - name: Bahrain
+        items: 
+        - name: Bahrain overview
+          href: localizations/bahrain.md
+        - name: Configure invoice layout for Bahrain
+          href: localizations/emea-bhr-invoice-layout.md
+        - name: VAT declaration for Bahrain
+          href: localizations/emea-bhr-vat-declaration.md
+        - name: Invoice issue deadline
+          href: localizations/gcc-invoice-issue-deadline.md
       - name: Belgium
         items:
         - name: Belgium overview
@@ -1496,6 +1530,8 @@
           href: localizations/emea-amount-printing-forms.md
         - name: VAT statement
           href: localizations/emea-cze-vat-statement-details.md
+        - name: VAT declaration (Czech Republic)
+          href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
