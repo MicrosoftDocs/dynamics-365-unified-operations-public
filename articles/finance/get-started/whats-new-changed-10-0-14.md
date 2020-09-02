@@ -55,12 +55,12 @@ The following features are included in this release. The feature titles link to 
  - [Automatic collection task creation](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/automatic-collection-task-creation)
  - [Touchless email reminders to customer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/touchless-email-reminders-customer)
  
- - [New Invoice summary page available from Project invoice proposals and Project invoices list pages](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-project-operations/new-invoice-summary-page-project-invoice-proposals-project-invoices-list-pages)
+ - [New Invoice summary page available from Project invoice proposals and Project invoices list pages](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-project-operations/new-invoice-summary-page-project-invoice-proposals-project-invoices-list-pages)
 
  - [Associate 1099 default value to Main account](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
  - [Vendor details to bridged transactions and check forms](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-details-bridged-transactions-check-forms)
  
- - [Public sector – Project invoice proposal selection parameter by funding source](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-project-operations/public-sector--project-invoice-proposal-selection-parameter-funding-source)
+ - [Public sector – Project invoice proposal selection parameter by funding source](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-project-operations/public-sector--project-invoice-proposal-selection-parameter-funding-source)
 
 ## Additional resources
 
