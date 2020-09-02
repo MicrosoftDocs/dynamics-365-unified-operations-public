@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (September 03, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 3, 2020.
 author: Darinkramer
-manager: AnnBe
+manager: tfehr
 ms.date: 9/03/2020
 ms.topic: article
 ms.prod: 
@@ -29,47 +29,49 @@ ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (August 25, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3504. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (September 3, 2020)
 
-## Checklist entities included in Common Data Service
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3504. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+For more information about upcoming features in Human Resources, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). For more information about the update process for Human Resources, see [Update process](hr-admin-setup-update-process.md).
 
-## Uptake new Default Financial Dimensions grid and dialog pattern throughout D365HR - (469495)
+## In this release
+
+### New default financial dimensions grid and dialog pattern throughout Human Resources (469495)
 
 The new pattern for financial dimensions is now available in the following areas:
-- Position Actions  (Form: HcmPositionActionDetail)
-- Payroll Earning Codes  (Form: PayrollEarningCode)
 
-## Entries not appearing in Company Leave Calendar if the 'Leave and absence calendar enhancements' feature is not enabled - (484406)
+- Position actions  (Form: **HcmPositionActionDetail**)
+- Payroll earning codes  (Form: **PayrollEarningCode**)
 
-This change corrects an issue where leave entries are not being displayed in the company leave calendar. This only occurs when the feature management option "leave and absence calendar enhancements" is not enabled.
+### Entries don't appear in company leave calendar if Leave and absence calendar enhancements aren't enabled (484406)
 
-## BenefitPlanEmployeeEntity issues corrected - (467597)
+This release corrects an issue where leave entries aren't displayed in the company leave calendar. This issue only occurs when the Feature management option **Leave and absence calendar enhancements** isn't enabled.
 
-The following issue has been corrected with the **BenefitsPlanEmployee** entity. When importing worker enrollments, the **Coverage code** and the **Plan type code** are now being set correctly. This issue caused employee benefit plans to display incorrectly in the **Worker benefits plan** form and in the **Open enrollment** form in Employee self service.
+### BenefitPlanEmployeeEntity issue (467597)
 
-## Electronic file 1094-C output missing letter in XML - (435190)
+This release corrects an issue with the **BenefitsPlanEmployee** entity. When importing worker enrollments, the **Coverage code** and the **Plan type code** are now set correctly. This issue caused employee benefit plans to display incorrectly in the **Worker benefits plan** and **Open enrollment** forms in Employee self service.
+
+### Electronic file 1094-C output missing letter in XML (435190)
 
 This change corrects an issue with the 1094-C output file missing a character needed when submitting to the IRS.
 
-## Employee Variable compensation table mapped to fixed compensation form - (476117)
+### Employee variable compensation table mapped to fixed compensation form (476117)
 
 This change aligns the fixed compensation fields with the fixed compensation form. Variable compensation fields are now only available with the variable compensation form.
 
-## System allows leave requests prior to enrollment if that leave type has a negative minimum balance  - (469917)
+### Leave requests allowed before enrollment if that leave type has a negative minimum balance (469917)
 
-This change prohibits entering leave requests prior to being enrolled in the plan, even if the enrollment has a negative minimum balance.Requests can only be entered/submitted when the type/plan is active.
+This change prohibits entering leave requests before being enrolled in the plan, even if the enrollment has a negative minimum balance. You can only enter or submit requests when the plan is active.
 
-## Document templates are not downloading - (457279)
+### Document templates don't download (457279)
 
-With this change, all document templates can now be downloaded. 
+With this change, you can now download all document templates. 
 
-## Compensation plan report. Data is showing as column headers instead of rows for the field Pay rate - (476077)
+### Data displays as column headers instead of rows for the Pay rate field in the compensation plan report (476077)
 
-Analytics report has been corrected to display the correct information for Pay Rate.
+The analytics report now displays the correct information for **Pay rate**.
 
 ## In preview
 
@@ -78,23 +80,36 @@ Analytics report has been corrected to display the correct information for Pay R
 Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
 
 - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
-- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
 
 ### Human Resources app in Teams preview features
  
--  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers will be able to approve or deny time-off requests, and submitters will be notified if the request was approved or denied.
+-  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers will be able to approve or deny time-off requests. Submitters will be notified if the request was approved or denied. For more information, see:
+   - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
+   - [Enable notifications for the Human Resources app in Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) in Human Resources documentation
+   - [Turn Teams notifications on or off for individual users](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) in Human Resources documentation
+   - [Teams notifications](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications)
+   - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
  
-- **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work.
+- **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work. For more information, see:
+   - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
+   - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
 
-### Configuration option to position work items assigned to me list - (477004)
+### Configuration option to position work items assigned to me list (477004)
 
-A new option is now available to position the work items assigned to me list in the right hand column of the dashboard. With this change, all work items and to do lists display in the same area. Enable this functionality by turning on the "Preview - Workflow experience enhancements" feature in feature management. This feature when enabled will also "promote" the workflow options that appear in the personnel actions forms. Workflow options have been collocated above the action fast tab for quick access.
+A new option is now available to position the **Work items assigned to me** list in the right-hand column of the dashboard. With this change, all work items and to do lists display in the same area. Enable this functionality by turning on the "Preview - Workflow experience enhancements" feature in feature management. This feature also promotes the workflow options that appear in the personnel actions forms. Workflow options also appear above the action fast tab for quick access. For more information, see:
+
+- [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
 
 ## Coming Soon
 
-## Benefits Management reason codes
+### Checklist entities included in Common Data Service
 
-Benefits Management reason codes will soon be combined with the existing reason codes within Dynamics 365 Human Resources.  If you have created reason codes within Benefits management over 15 characters, you will need to go to the Benefits Management Reason Codes form and update the name of the reason code to be 15 characters or less.  Once the name is updated, the reason code will appear under the existing reason code form in Personnel Management. This change will be available in the future and will not affect existing functionally.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+
+### Benefits management reason codes
+
+Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionally.
 
 ## See also
 
