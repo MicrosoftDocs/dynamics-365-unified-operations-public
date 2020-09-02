@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance downtime
-description: This topic explains maintenance downtime in Asset Management.
+description: This topic explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
