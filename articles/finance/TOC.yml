@@ -1015,7 +1015,27 @@
       - name: Transfer a quotation to a project
         href: project-management/transfer-quote-new-existing-project.md
       - name: Project resourcing
-        href: project-management/project-resourcing.md
+        items:
+        - name: Project resourcing overview
+          href: project-management/project-resourcing.md
+        - name: Set up project resources
+          href: project-management/set-up-project-resources.md
+        - name: Manage resource competencies
+          href: project-management/manage-resource-competencies.md
+        - name: Create a new project
+          href: project-management/create-new-project.md
+        - name: Set up role-based pricing
+          href: project-management/set-up-role-based-pricing.md
+        - name: Create a project team
+          href: project-management/create-project-team.md
+        - name: Synchronize resource capacity
+          href: project-management/synchronize-resource-capacity.md
+        - name: Project resource scheduling performance
+          href: project-management/project-scheduling-performance.md
+        - name: Set up roles on Work breakdown structure templates
+          href: project-management/set-up-roles-wbs-template.md
+        - name: Resource fulfillment for planned resources
+          href: project-management/resource-fulfillment-planned-resources.md
       - name: Receive items on purchase order from item requirement
         href: project-management/tasks/receive-items-purchase-order-item-requirement.md
       - name: Work breakdown structures
