@@ -129,25 +129,21 @@ Each lease type handles accounting differently for different lease transactions.
 ## Initial recognition
 The initial recognition of a leased asset is recognized using the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the Operating lease liability as follows.
 
+> [!NOTE]
+> Operating leases are supported only by US GAAP ASC 842.
+
 Operating lease entry of US GAAP <BR>
    Debit: Right-of-use asset <BR>
      Credit: Operating lease liability <BR>
-
-[!NOTE]
-> Operating leases are supported only by US GAAP ASC 842.
-
 Finance lease entry for IFRS and US GAAP: <br>
    Debit: Right of use asset <BR>
      Credit: Operating lease liability <br>
 
-**Lease liability amortization (Interest expense)**: The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on organization’s balance sheet statement. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
+**Lease liability amortization (Interest expense)**: The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on the organization’s balance sheet. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
 
 Operating lease entry of US GAAP <br>
  Debit: Lease expense <br>
     Credit: Operating lease liability <br>
-
- > [!NOTE]
- > Operating leases are supported only by US GAAP ASC 842.
 
 Finance lease entry for IFRS and US GAAP <br>
 Debit: Interest expense <br>
@@ -156,10 +152,7 @@ Credit: Finance lease liability <br>
 **Accrued lease payment**: An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting lease liability account against wither vendor subledger in case of the lessor is defined as a vendor or posting the credit side to notes payable ledger account then the payment will be executed against either vendor or notes payable.
 Operating lease entry of US GAAP:
 Debit: Operating lease liability
-Credit: Vendor liability (sub ledger)/Notes payable  
-
-> [!NOTE]
-> Operating leases are supported only by US GAAP ASC 842.
+Credit: Vendor liability (subledger)/Notes payable  
 
 Finance lease entry for IFRS and US GAAP:
 Debit: Finance lease liability
@@ -171,26 +164,23 @@ Operating lease entry of US GAAP <br>
    Debit: Lease expense <br>
      Credit: Right of use asset accumulated depreciation <br>
 
- Note: Operating leases are supported only by US GAAP ASC 842.
-
 Finance lease entry for IFRS and US GAAP: <br>
    Debit: Depreciation of right of use asset expense <br>
      Credit: Right of use asset accumulated depreciation   <br>
 
-**Short term lease**: A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
+**Short term lease** A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
 
 Short term lease entry for IFRS and US GAAP <br>
    Debit: Lease expense <br>
      Credit: Vendor liability (subledger)/ Notes payable <br>
 
-**Low value lease**: A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
+**Low value lease** A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
 
 Short term lease entry for IFRS and US GAAP <br>
    Debit: Lease expense <br>
-     Credit: Vendor liability (subledger)/ Notes payable <br>
+     Credit: Vendor liability (subledger)/Notes payable <br>
 
-
-**Index revaluation**: Asset leasing  accounts for variable lease payments measured by an index rate. Changes in lease payments caused by index rate fluctuations constitute a lease adjustment under IFRS 16. The lease liability and right-of-use assets will be adjusted to account for the new payments. 
+**Index revaluation** Asset leasing  accounts for variable lease payments measured by an index rate. Changes in lease payments caused by index rate fluctuations constitute a lease adjustment under IFRS 16. The lease liability and right-of-use assets will be adjusted to account for the new payments. 
 
 Index revaluation entry for IFRS in case of increase <br>
    Debit: Right of use asset <br>
@@ -200,9 +190,9 @@ Index revaluation entry for IFRS in case of decrease <br>
    Debit: Operating lease liability <br>
      Credit: Right of use asset <br>
      
-When payments change because of a change in the index rate, only the variable payments will change Under US GAAP ASC 842 unless there are additional changes to cash flows. such as a change in lease terms related to interest rates.
+When payments change because of a change in the index rate, only the variable payments will change unless there are additional changes to cash flows, such as a change in lease terms related to interest rates, under US GAAP ASC 842.
 
-**Lease adjustment**: Asset leasing allows leases to be adjusted if the lease terms are modified, the lease is extended, or if there are additional circumstances under which a lease requires an adjustment. Lease adjustments are posted to increase or decrease right-of-use asset and lease liability. The adjustment logic takes carryover ending balances of liability amortization and asset balance at the adjustment date. In case of the lease is linked to fixed asset the right-of-use adjustment will be posted through fixed asset ID. 
+**Lease adjustment**: Asset leasing allows leases to be adjusted if the lease terms are modified, the lease is extended, or if there are additional circumstances under which a lease requires an adjustment. Lease adjustments are posted to increase or decrease right-of-use asset and lease liability. The adjustment process takes carryover ending balances of liability amortization and asset balance at the adjustment date. When a lease is linked to fixed asset, the right-of-use adjustment will be posted using the ID that's assigned in Fixed assets. 
 
 Lease adjustment entry for IFRS and US GAAP in case of increase: <br>
    Debit: Right of use asset <br>
@@ -219,9 +209,9 @@ Impairment entry for IFRS and US GAAP: <br>
      Credit: Right of use asset <br>
 
 >[!NOTE]
-> In case of the lease is linked to fixed asset the lease impairment should be posted from fixed assets submodule since asset depreciation ran from fixed assets module.
+> In case of the lease is linked to fixed asset the lease impairment should be posted from Fixed assets since asset depreciation is run from fixed assets module.
 
-To create a New lease, go to Asset leasing| Common| Lease summary 
+To create a New lease, go to **Asset leasing > Common > Lease summary**. 
 
 Enter the mandatory fields under the **General** FastTab. 
 
@@ -229,6 +219,42 @@ Enter the mandatory fields under the **General** FastTab.
 
 Move to the **Payment schedule lines** FastTab and enter a payment line, then click the **Create schedules** button.
 
-[![Payment schedule line FastTab](./media/overview-05.png)](./media/overview-05.png)
+[![Payment line FastTab](./media/overview-05.png)](./media/overview-05.png)
+
+Click the **Books** button. 
+
+[![Book details highlighted](./media/overview-06.png)](./media/overview-06.png)
+
+Switch to **General** FastTab; the **Initial right-of-use asset** and **lease liability** are calculated. 
+
+[![Lease status highlighted](./media/overview-07.png)](./media/overview-07.png)
+
+Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
+
+[![XXX](./media/overview-08.png)](./media/overview-08.png)
+
+The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
+
+[![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
+
+
+[![XXX](./media/overview-10.png)](./media/overview-10.png)
+
+
+[![XXX](./media/overview-11.png)](./media/overview-11.png)
+
+
+[![XXX](./media/overview-12.png)](./media/overview-12.png)
+
+
+[![XXX](./media/overview-13.png)](./media/overview-13.png)
+
+
+[![XXX](./media/overview-14.png)](./media/overview-14.png)
+
+
+
+
+
 
 
