@@ -5,7 +5,7 @@ title: Process credit cards without a hardware station
 description: This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: rubendel
 manager: AnnBe
-ms.date: 08/21/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Process credit cards without a hardware station
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
 
@@ -90,6 +91,6 @@ The configuration to turn on this feature is completed at the register level.
 4. Select **Save**.
 5. After the change is saved, run the **1090** distribution schedule to sync the changes to the POS.
 
-## Related articles
+## Additional resources
 
-- [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
