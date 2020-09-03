@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound workload visualization
-description: XXXX
+description: Outbound workload visualization enables warehouse managers and supervisors to create custom workload charts that can be used to monitor progress of current work and what is left of it. Warehouse managers can create multiple views and set up auto refresh as needed.
 author: Mirzaab
 manager: tfehr
 ms.date: 08/28/2020
@@ -23,8 +23,8 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: yyyy-mm-dd
-ms.dyn365.ops.version: Release 10.0.xx
+ms.search.validFrom: 2020-08-28
+ms.dyn365.ops.version: Release 10.0.13
 ---
 
 # Outbound workload visualization
@@ -50,7 +50,7 @@ To add the outbound workload visualization flight to your system:
 - **Flight name**: WHSOutboundWorkLoadVisualizationFeature
 - **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('WHSOutboundWorkLoadVisualizationFeature', 1);`
 
-<!-- KFM: I borrowed this SQL query from somewhere else. Please confirm. Also, we really should not publish documentation for flighted features. Ideally, we should be able to delete this before we publish. -->
+<!-- KFM: I borrowed this SQL query from somewhere else. Please confirm. Also, we really should not publish documentation for flighted features. Ideally, we should be able to delete this before we publish. Also, do we need to activate this in Feature Management? -->
 
 ### Enable the outbound workload visualization feature
 
@@ -63,6 +63,8 @@ To enable the feature after adding the flight:
 ## Set up outbound workload visualizations
 
 To set up your visualizations, you will create a collection of filters, and design each of them to show a different type of analysis. You'll use the **Configure filters** page to design your filters.
+
+To set up an outbound workload visualization:
 
 1. Go to **Warehouse management \> Warehouse monitoring reports \> Outbound workload visualization**.
 
