@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Uploading assets in Azure Pipelines
+title: Upload assets by using Azure Pipelines
 description: The topic explains how you can upload assets to the LCS asset library using Azure Pipelines.
 author: jorisdg
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset Upload in Azure Pipelines
+# Upload assets by using Azure Pipelines
 
 You can automate uploading assets to the **Lifecycle Services Asset Library** by using the **Deploy Lifecycle Services (LCS) Asset Upload** task in Azure DevOps. The task is only available in **Releases** pipelines.
 
