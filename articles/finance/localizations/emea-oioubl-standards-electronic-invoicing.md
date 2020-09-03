@@ -48,8 +48,10 @@ The following country-specific formats of electronic invoices are available:
 -   FatturaPA v.1.2 for Italy
 -   xRechnung v.1.2 for Germany
 -   Open PEPPOL BIS Billing v.3.0 for European Union
+-   Estonian specific format version 1.2
+-   Finvoice 3.0 for Finland
 
-Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). A **Customer invoice model** data model and several country/region-specific ER format configurations have been created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), and the European Union (EU).
+Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping and several country/region-specific ER format configurations have been created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), Estonia (EE), Finland (FI), and the European Union (EU).
 
 -   OIOUBL Sales invoice - for AT, DK, and NO
 -   OIOUBL Sales credit note - for AT, DK, and NO
@@ -77,6 +79,10 @@ Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/ana
 -   Peppol Sales Credit Note - for EU
 -   Peppol Project Invoice - for EU
 -   Peppol Project Credit Note - for EU
+-   Sales invoice (EE)
+-   Project invoice (EE)
+-   Sales invoice (FI)
+-   Project invoice (FI)
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
