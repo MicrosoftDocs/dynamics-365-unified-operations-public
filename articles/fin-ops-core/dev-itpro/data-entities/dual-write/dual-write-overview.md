@@ -106,7 +106,7 @@ To create parity with Finance and Operations applications, dual-write makes some
 
 + To prevent data loss during currency transmission between Finance and Operations apps and the Common Data Service, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing records to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places.md).
 
-+ The [date effectivity](../../dev-tools/date-effectivity.md) concept on Common Data Service will support past, present, and future data on the same entity.
++ [Date effectivity](../../dev-tools/date-effectivity.md) will be added to Common Data Service. It will support past, present, and future data on the same entity.
 
 + Product [unit conversions](../../../../supply-chain/pim/tasks/manage-unit-measure.md) are supported for products, quotes, orders, and invoices.
 
