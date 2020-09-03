@@ -54,6 +54,6 @@ The following table describes the options that are available for this task.
 Depending on the type of **Search Pattern** that you selected, the following options are available.
 
 * When selecting **Asset ID (guid)**, provide a GUID or a semi-colon separated list of GUIDs of asset IDs in the **LCS File Asset Id(s)** field.
-* When selecting **Name**, select the asset type from the **LCS File Asset Type** dropdown, and a name to search for in the **LCS File Asset Name** field. You can use a wildcard in the name using the asterisk (*) symbol, for example **MyPackage\***.
+* When selecting **Name**, select the asset type from the **LCS File Asset Type** dropdown, and a name to search for in the **LCS File Asset Name** field. You can use a wildcard in the name using the asterisk (\*) symbol, for example **MyPackage\***.
 
-After a successful download, a list of the file paths can be captured with an output variable. In case of multiple files, a semi-colon separated list of file paths is assigned to the output variable. For more information about output variables in **Azure DevOps**, see [Use output variables from tasks](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#use-output-variables-from-tasks)
+After a successful download, a list of the file paths can be captured with an output variable. If there are multiple files, a semi-colon separated list of file paths is assigned to the output variable. For more information about output variables in **Azure DevOps**, see [Use output variables from tasks](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#use-output-variables-from-tasks)
