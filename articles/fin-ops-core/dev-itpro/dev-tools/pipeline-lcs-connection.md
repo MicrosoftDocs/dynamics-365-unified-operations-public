@@ -60,11 +60,11 @@ To allow connections from Azure DevOps directly to LCS on a user's behalf, you m
 
 You can create a new connection from a pipeline task directly, or from your project's settings page. For more information on creating service connections, see [Create a service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops). On the **Dynamics Lifecycle Services** service connection dialog, provide the following information.
 
-- Authentication Endpoint: The default value provided works for all Azure Active Directory (AAD) tenants in the public Azure cloud. If your AAD is located in a national cloud,  see [Nation clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
+- Authentication Endpoint: The default value provided works for all Azure Active Directory (AAD) tenants in the Azure cloud. If your AAD is located in a national cloud,  see [Nation clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
 - Lifecycle Services API Endpoint: Provide the endpoint.
 - Username: Provide the email alias of the user credentials.
 - Password: Provide the password of the user credentials.
 - Application (Client) ID: Provide the ID previously created for your application registration in AAD.
-- Service connection name: Provide a meaningul name for the connection. This name will show in the connection dropdown on pipeline tasks that require an LCS connection.
+- Service connection name: Provide a meaninful name for the connection. This name will show in the connection dropdown on pipeline tasks that require an LCS connection.
 - Description: Provide an optional description for this connection.
 
