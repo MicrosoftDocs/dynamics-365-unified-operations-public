@@ -52,7 +52,7 @@ In most taxation systems, there is the concept of a tax rate type, such as stand
 
 | Rates | Type      | Products                                                                                                                                                     |
 | ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accomodation below Rs 999 per night.           |
+| 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accommodation below Rs 999 per night.           |
 | 5%    | Low       | Household necessities, such as consumable oil, sugar, spices, tea, and coffee (except instant). Coal, Mmishti/mithai (Indian sweets), and life-saving drugs. |
 | 12%   | Standard1 | Computers and processed food.                                                                                                                                |
 | 18%   | Standard2 | Hair oil, toothpaste and soaps. Capital goods. Industrial intermediaries.                                                                                    |
