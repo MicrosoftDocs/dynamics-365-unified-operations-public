@@ -94,19 +94,22 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 + The dual-write infrastructure follows the no-code/low-code principle. Minimal engineering effort is required to extend the standard table-to-table maps and to include custom maps.
 + Dual-write supports both online mode and offline mode. Microsoft is the only company that offers support for online and offline modes.
 
-## What does dual-write mean for users and architects of CRM products?
+## What does dual-write mean for developers and architects of customer engagement app?
 
-Dual-write automates the data flow between Finance and Operations apps and Common Data Service. In future releases, concepts in model-driven apps in Dynamics 365 (for example, customer, contact, quotation, and order) will be scaled to mid-market and upper-mid-market customers.
+Dual-write automates the data flow between Finance and Operations apps and customer engagement apps.
+Dual-write consists of two AppSource solutions that are installed on Common Data Service. The solutions expand the entity schema, plugins, and workflows on Common Data Service so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on Finance and Operations apps.
 
-In the first release, most of the automation is handled by dual-write solutions. In future releases, those solutions will become part of Common Data Service. By understanding the upcoming changes to Common Data Service, you can save yourself effort in the long term. Here are some of the crucial changes:
+To create parity with Finance and Operations applications, dual-write creates some crucial changes on the Common Data Service schema. If you understand the plan, you can avoid some design and development re-work in the future.
 
-+ Common Data Service will have new concepts, such as company and party. These concepts will affect all apps that are built on Common Data Service, such as Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service.
++ When the dual-write AppSource package is installed, Common Data Service will have new concepts such as company and party. These concepts help applications built on Common Data Service, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with Finance and Operations apps.
+
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
-+ Here are some of the upcoming changes in Common Data Service:
 
-    - The decimal data type will replace the money data type.
-    - Date effectivity will support past, present, and future data in the same place.
-    - There will be more support for currency and exchange rates, and the **Exchange Rate** application programming interface (API) will be revised.
-    - Unit conversions will be supported.
++ To prevent data loss during currency transmission between Finance and Operations apps and the Common Data Service, you will be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature auto-translates existing records to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This is an opt-in feature, and organizations that do not need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places).
 
-For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1).
++ The date effectivity concept on Common Data Service will support past, present, and future data on the same entity.
+
++ Product unit conversions are supported for products, quotes, orders and invoices.
+
+For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
+
