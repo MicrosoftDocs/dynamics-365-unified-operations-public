@@ -130,7 +130,10 @@ To set up selection criteria for price models:
     > [!TIP]
     > You can sometimes save time by copying an existing row that is already similar to a new one that you need to add. To do this, select a target row and then select **Duplicate** on the Action Pane.
 
-1. When you have finished setting up your criteria, arrange them into the proper order in the **Price model criteria** list. At configuration time, the system starts looking from the top of the list and uses the first query that matches the data on the quote or the order line. Therefore, you want to put your most specific queries on top. If you place a general query at the top of the list, this is the one that will be used even though there might be a query further down the list that targets the exact customer or prospect of the configuration. To reposition a row, select the row and then select **Up** or **Down** on the Action Pane.
+1. When you have finished setting up your criteria, arrange them into the proper order in the **Price model criteria** list. To reposition a row, select the row and then select **Up** or **Down** on the Action Pane.
+
+    > [!IMPORTANT]
+    > At configuration time, the system starts looking from the top of the list and uses the first query that matches the data on the quote or the order line. Therefore, you must put your most specific queries on top. If you place a general query at the top of the list, this is the one that will be used even though there might be a query further down the list that targets the exact customer or prospect of the configuration.
 
 ## Set attribute-based sales prices for the product model version
 
@@ -138,7 +141,7 @@ The final step is to specify attribute-based sales prices for the product model 
 
 1. Go to  **Product information management \> Products \> Product configuration models**.
 1. Select the target product configuration model.
-1. On the Action pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
-1. Make sure the **Pricing method** is set to **Attribute based**.
+1. On the Action Pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
+1. The **Versions** page opens. Make sure the **Pricing method** is set to **Attribute based**.
+    ![Set the pricing method to attribute based](media/prod-config-versions.png "Set the pricing method to attribute based")
 
-![Set the pricing method to attribute based](media/prod-config-versions.png "Set the pricing method to attribute based")
