@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: SDK and store starter kit updates
+title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# SDK and store starter kit updates
+# SDK and module library updates
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ This topic covers regular updates that will be released as part of the Microsoft
 
 ## Overview
 
-Regular updates will be released as part of the Dynamics 365 Commerce online SDK and store starter kit (SSK). These updates might include new features or product fixes. Product release notes will be provided for all changes.
+Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
 ## Dependency versions in the packages.json file
 
