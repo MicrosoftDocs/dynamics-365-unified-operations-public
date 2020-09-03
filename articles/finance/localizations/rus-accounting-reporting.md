@@ -4,7 +4,7 @@ title: Accounting reporting in electronic format (Russia)
 description: This topic explains how to set up accounting reporting for Russia.
 author: Anasyash
 manager: AnnBe
-ms.date: 03/01/2019
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ ms.dyn365.ops.version: 10.0.1
     Follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset type.
-    2. Download the **RU Accounting reporting 5.08 (2019)** package. The file that is downloaded is named **RU Accounting reporting 5.08 (2019).zip**.
+    2. Download the package, **RU Accounting reporting 5.08 (2019).zip**. 
     3. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
     4. In the **Job details** section, enter any name for the job.
     5. In the **Data source format** field, select **Package**.
@@ -79,15 +79,15 @@ ms.dyn365.ops.version: 10.0.1
     |----------------------|--------------------|---------------------------------|
     | Accounting reporting | БухОтч 5.08 (2019) | Бухгалтерская отчетность (2019) |
 
-6. Set up the organization codes that are used in accounting reporting and other information about company.
+6. Set up the organization codes that are used in accounting reporting and any additional information about the company.
 
     1. Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
     2. In the left pane, select the field that is named **EconomicActivityTypeCode (ОКВЭД)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for legal entity's economic activity type.
     3. Select the field that is named **OrganizationalFormCode (ОКОПФ)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for the legal entity's organizational form.
     4. Select the field that is named **OwneshipFormCode (ОКФС)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the code for the legal entity's ownership form.
     5. Select the field that is named **AuditorCompanyName (Наименование аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the name of the auditor company in case of mandatory audit of the reporting.
-    6. Select that field that is named **AuditorStateRegistrationNumber (ОГРН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the state registration number of the auditr company.
-    7. Select the field that is named **AuditorTaxRegistrationNumber (ИНН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter tax registration number f the auditor company.
+    6. Select that field that is named **AuditorStateRegistrationNumber (ОГРН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter the state registration number of the auditor company.
+    7. Select the field that is named **AuditorTaxRegistrationNumber (ИНН аудиторской организации)**. Then, on the **Value** FastTab, select **Add**. In the **Field value** field, enter tax registration number of the auditor company.
     8. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
     9. On the **Message additional fields** FastTab, enter the following information.
 
@@ -106,7 +106,7 @@ ms.dyn365.ops.version: 10.0.1
     2. In the left pane, select the action that is named **Generate BUHOTCH 5.08**, and then expand **General** FastTab.
     3. Validate that in the **Format mapping** field, the configuraiton name **Accounting reporting format 5.08 (RU)** is selected. Validate that **Show dialog** is set to **Yes**.
 
-    For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
+    For more information about how to set up electronic messaging functionality, see [../general-ledger/electronic-messaging.md).
 
 ## Generate accounting reporting in electronic format
 
