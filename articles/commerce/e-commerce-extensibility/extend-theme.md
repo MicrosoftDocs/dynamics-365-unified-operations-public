@@ -42,7 +42,7 @@ By using the Dynamics 365 Commerce online store extensibility software developme
 
 To specify the base theme for a theme, edit the theme definition file, and add a **$ref** section that points to the base theme.
 
-In the following example, the **$ref** section references the **fabrikam** sample theme that is included as part of the store starter kit.
+In the following example, the **$ref** section references the **fabrikam** sample theme that is included as part of the module library.
 
 ```json
 {
