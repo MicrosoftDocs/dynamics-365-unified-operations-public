@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.13 preview release.
 author: roschlom
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ The following features are included in this release. The feature titles link to 
  ### Public sector
  - [A-133 Circular Report for Grants (SEFA)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
  - [Schedule of Expenditures of Federal Awards inquiry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
- - [Associate 1099 default value to Main account](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
+
  
 ### Globalization features
 
