@@ -20,8 +20,7 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 72181
-ms.assetid: fe5d3cdd-8b3d-4967-98a2-dadada18a421
+ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -48,13 +47,14 @@ X++ is an object-oriented, application-aware, and data-aware programming languag
 | **Collections**             | Dynamic arrays are supported and the X++ includes several collection objects.|
 
 The X++ language programming guide is divided into these sections: 
-+ [X++ attribute classes](xpp-attribute-classes.md) 
+
++ [Variables and data types](xpp-variables-data-types.md)
++ [Statements, loops, and exception handling](xpp-conditional.md)
++ [Operators](xpp-operators.md) 
 + [X++ classes and methods](xpp-classes-methods.md) 
-+ [X++ data selection and manipulation](xpp-data-query.md) 
++ [Data selection and manipulation](xpp-data-home-page.md)
 + [X++ macros](xpp-macros.md) 
-+ [X++ operators](xpp-operators.md) 
-+ [X++ statements and loops](xpp-statements-loops.md)
-+ [X++ variables and data types](xpp-variables-data-types.md)
++ [X++ attribute classes](xpp-attribute-classes.md) 
 
 ## Additional resources
 + [X++ Syntax](xpp-syntax.md)
