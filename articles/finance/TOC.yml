@@ -3479,7 +3479,7 @@
             - name: To improve user experience and usability maintenance
               href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: To improve performance of data access
-              href: ../fin-ops-core/dev-itpro/analyticser-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
           - name: Cross-company ER data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
           - name: Use FINANCIAL DIMENSIONS DETAILS data sources
