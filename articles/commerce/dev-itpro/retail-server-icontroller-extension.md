@@ -5,7 +5,7 @@ title: Create a new Retail Server API
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/22/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -60,25 +60,36 @@ The following illustration shows the class structure of the extension.
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
 2. Create a new C# class library project that uses Microsoft .NET Framework version 4.6.1, or use any of the Retail Server samples in the Retail SDK as a template.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
-4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
+4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
 5. Create a new controller class and extend it from **IController**. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes like **CustomerController** and **ProductController**. Extension classes must extend only the **IController** class.
-6. Add the **RoutePrefix** attribute on the controller class to expose the controller class.
+6. Add the **RoutePrefix** attribute on the controller class (Controller class name).
 
     ```csharp
     [RoutePrefix("SimpleExtension")]  
     ```
 
-7. The **BindEntity** attribute is required on a controller class if you are creating a new controller and exposing an entity.
+7. Add the **BindEntity** attribute. This is required on a controller class if you are creating a new controller and exposing an entity.
 
-    The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+```csharp
+    [BindEntity(typeof(SimpleEntity))]
+```
 
-    ```csharp
+> [!NOTE]
+> Step 6 and 7 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
+
+The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
+
+### Sample code for a controller class bounded to a custom entity
+
+> [!NOTE]
+> Extension code should not bound the existing OOB entity, such as Customer or Product.
+
+```csharp
     /// <summary>
         /// New extended controller.
         /// </summary>
         [RoutePrefix("SimpleExtension")]  
         [BindEntity(typeof(SimpleEntity))]
-
         public class SimpleExtensionController : IController
         {
             /// <summary>
@@ -126,11 +137,51 @@ The following illustration shows the class structure of the extension.
                 return resp.SimpleEntityObj;
             }
         }
-    ```
+```
 
-    The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are shown in the following code example.
+### Sample code for a controller class not bounded to a custom entity
 
-    ```csharp
+```csharp
+namespace Contoso.UnboundController.Sample
+{
+    using System.Threading.Tasks;
+    using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+    using Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts;
+
+    /// <summary>
+    /// An extension unbounded controller sample.
+    /// </summary>
+    public class UnboundController : IController
+    {
+        /// <summary>
+        /// A simple GET endpoint to demonstrate GET endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpGet]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Application, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee, CommerceRoles.Storefront)]
+        public Task<bool> SampleGet()
+        {
+            return Task.FromResult(true);
+        }
+
+        /// <summary>
+        /// A simple POST endpoint to demonstrate POST endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpPost]
+        [Authorization(CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public Task<bool> SamplePost()
+        {
+            return Task.FromResult(true);
+        }
+    }
+}
+
+```
+
+The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles specified in the controller method **Authorizations** attribute. The supported authorization roles are shown in the following code example.
+
+```csharp
     // Summary:
     // Represents the type of logon type.
     [DataContract]
@@ -172,18 +223,18 @@ The following illustration shows the class structure of the extension.
         //     values.
         public static readonly string[] All;
     }
-    ```
+ ```
 
 8. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
 9. Update the Commerce Scale Unit **web.config** file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
-    ```xml
+```xml
     <extensionComposition>
     <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
     If you host in an application with a bin folder, this is not required. -->
     <add source="assembly" value="SimpleExtensionSample" >
     </extensionComposition>
-    ```
+```
 
 10. In Microsoft Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
 11. To verify that the extension loaded successfully, you can browse the Retail Server metadata. Confirm that your entities and methods appear in the list. To browse the metadata, open a URL in the following format in a web browser:
@@ -192,22 +243,13 @@ The following illustration shows the class structure of the extension.
 
 12. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
-    You don't need to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you are using Retail SDK version 10.0.10 or earlier.
+You don't need to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you are using Retail SDK version 10.0.10 or earlier.
 
-    A Retail Server extension built using this new **Microsoft.Dynamics.Commerce.Hosting.Contracts** API can be used in and offline implementation. You don't need to generate separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this new library. Extension must generate only the Typescript proxy. SDK samples can be found in **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
-
-    The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?> 
-    <retai1ProxyExtensions> 
-        <composition> 
-            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
-        </composition> 
-    </retai1ProxyExtensions> 
-    ```
 
 ## Generate the Typescript proxy for POS
+The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
+
+**Steps to generate the proxy files**
 
 1. Open the sample proxy template project from **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** in Visual Studio 2017. Rename it if required.
 2. Add the Retail Server extension project as a project reference project to this proxy template project. Remove the existing **StoreHoursSample** project reference.
@@ -227,3 +269,19 @@ The following illustration shows the class structure of the extension.
     ```
 
 6. After the changes are complete, build the proxy project to generate the typescript proxy files. When the build is completed the proxy files are available in the **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService** folder and the folder specified in the **Copy** command. The path and folder path can vary based on the folder structure.
+
+## Retail server extension in offline
+
+A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in an offline implementation. You don't need to generate a separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include the this library. This extension must only generate the Typescript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+
+The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** config file.
+
+```xml
+    <?xml version="1.0" encoding="utf-8"?> 
+    <retailProxyExtensions> 
+        <composition> 
+            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
+        </composition> 
+    </retailProxyExtensions> 
+```
+
