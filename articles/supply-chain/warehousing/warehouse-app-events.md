@@ -34,7 +34,6 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-
 This feature adds a queue for processing events issued by the warehouse app. Batch jobs running in Supply Chain Management can use data from this queue to react as needed to the signaled events. The warehouse app adds relevant events to the queue in response to certain types of actions taken by workers using the app.
 An example is when using the feature **Create and process transfer orders from the warehouse app** where the transfer order header and lines gets created and updated in the back end when the system is running the **Process warehouse app events** batch job.
 
@@ -73,7 +72,7 @@ The warehouse apps events queue will typically be used with the following descri
 
 ## Handle event errors
 As part of the warehouse event processing, it might happen that the requested message activity cannot get processes by the batch job. In this case the event message will get updated to **Failed** and you can use the **Batch log** information to read why and take action to correct any problems.
-You can see an example for the process for using the [Create transfer order from warehouse app ](create-transfer-order-from-warehouse-app.md).
+You can see an example for the process for using the [Create transfer order from warehouse app](create-transfer-order-from-warehouse-app.md).
 
 To reset a failed warehouse app event message:
 1.	Go to the **Warehouse management \> Inquiries and reports \> Mobile device logs \> Warehouse app events.
