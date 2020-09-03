@@ -38,7 +38,7 @@ This topic provides an overview of the home page in Microsoft Dynamics 365 Comme
 
 The home page is the default page that shoppers go to when they visit an e-Commerce site. Typically, this page showcases products and promotions by using a combination of marketing modules. The home page should be rich with images and text to keep shoppers engaged.
 
-The following illustration shows an example of a home page that was built by using the online starter kit and the "Fabrikam" theme.
+The following illustration shows an example of a home page that was built by using the module library and the "Fabrikam" theme.
 
 ![Example of a home page](./media/Homepage2.PNG)
 
