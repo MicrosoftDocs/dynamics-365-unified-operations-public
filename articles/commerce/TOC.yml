@@ -702,7 +702,7 @@
       items:
       - name: Customer orders
         items:
-        - name: Customer orders in MPOS
+        - name: Customer orders in Point of Sale (POS)
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
@@ -828,6 +828,8 @@
           href: custom-pages-user-logins.md
         - name: Configure multiple B2C tenants in a Commerce environment
           href: configure-multi-B2C-tenants.md
+        - name: Domains in Dynamics 365 Commerce
+          href: domains-commerce.md
         - name: Add support for a content delivery network (CDN)
           href: add-cdn-support.md
         - name: Enable location-based store detection
