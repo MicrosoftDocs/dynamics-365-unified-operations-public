@@ -238,21 +238,55 @@ The automatic **Lease type** is classified based on the defied criteria that's d
 [![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
 
 
-[![XXX](./media/overview-10.png)](./media/overview-10.png)
+[![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
+Go to **Payment schedule** under the **Function** section. 
 
-[![XXX](./media/overview-11.png)](./media/overview-11.png)
+[![Payment schedule under the Function section](./media/overview-11.png)](./media/overview-11.png)
 
+The **Payment schedule** page lists future payment schedules for a lease ID. 
 
-[![XXX](./media/overview-12.png)](./media/overview-12.png)
+[![List of payment schedules](./media/overview-12.png)](./media/overview-12.png)
 
+Then **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
-[![XXX](./media/overview-13.png)](./media/overview-13.png)
+[![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
 
+Click **General journal** to post the initial recognition transaction. 
 
-[![XXX](./media/overview-14.png)](./media/overview-14.png)
+[![General journals selection](./media/overview-14.png)](./media/overview-14.png)
 
+The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
 
+[![Payment schedule for an ROU transaction](./media/overview-15.png)](./media/overview-15.png)
+
+The **Lease liability amortization schedule** shows the interest amount that's calculated for each period. 
+
+[![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
+
+Create the journal, and then go to **General journals**.
+
+[![General journals link](./media/overview-17.png)](./media/overview-17.png)
+
+The **Lease liability amortization schedule** also shows in the interest transactions.
+
+[![Interest transactions on the Lease liability amortization schedule](./media/overview-18.png)](./media/overview-18.png)
+
+The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
+
+[![Depreciation transactions on the Asset depreciation schedule](./media/overview-19.png)](./media/overview-19.png)
+
+The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
+
+[![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
+
+The **Lease liability transactions** page showsthe initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+
+[![XXX](./media/overview-21.png)](./media/overview-21.png)
+
+The **Lease liability transactions** page showsthe initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+
+[![XXX](./media/overview-22.png)](./media/overview-22.png)
 
 
 
