@@ -5,7 +5,7 @@ title: Customer orders in Point of Sale (POS)
 description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 08/21/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
