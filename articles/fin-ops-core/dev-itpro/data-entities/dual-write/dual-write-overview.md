@@ -38,7 +38,7 @@ ms.search.validFrom: 2020-01-06
 
 ## What is dual-write?
 
-Dual-write is an out-of-box infrastructure that provides near-real-time interaction between model-driven apps in Microsoft Dynamics 365 and Finance and Operations apps. When data about customers, products, people, and operations flows beyond application boundaries, all departments in an organization are empowered.
+Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and Finance and Operations apps. When data about customers, products, people, and operations flows beyond application boundaries, all departments in an organization are empowered.
 
 Dual-write provides tightly coupled, bidirectional integration between Finance and Operations apps and Common Data Service. Any data change in Finance and Operations apps causes writes to Common Data Service, and any data change in Common Data Service causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.
 
@@ -53,7 +53,7 @@ The dual-write infrastructure is extensible and reliable, and includes the follo
 + Synchronous and bidirectional data flow between applications
 + Synchronization, together with play, pause, and catchup modes to support the system during online and offline/asynchronous modes.
 + Ability to sync initial data between the applications
-+ Consolidated view of activity and error logs for data admins
++ Combined view of activity and error logs for data admins
 + Ability to configure custom alerts and thresholds, and to subscribe to notifications
 + Intuitive user interface (UI) for filtering and transformations
 + Ability to set and view entity dependencies and relationships
@@ -63,7 +63,7 @@ The dual-write infrastructure is extensible and reliable, and includes the follo
 
 ### Application
 
-Dual-write creates a mapping between concepts in Finance and Operations apps and concepts in model-driven apps in Dynamics 365. This integration supports the following scenarios:
+Dual-write creates a mapping between concepts in Finance and Operations apps and concepts in customer engagement apps. This integration supports the following scenarios:
 
 + Integrated customer master
 + Access to customer loyalty cards and reward points
@@ -90,7 +90,7 @@ Dual-write creates a mapping between concepts in Finance and Operations apps and
 Dual-write provides data integration across Microsoft Dynamics 365 applications. This robust framework links environments and enables different business applications to work together. Here are the top reasons why you should use dual-write:
 
 + Dual-write provides tightly coupled, near-real-time, and bidirectional integration between Finance and Operations apps and model-driven apps in Dynamics 365. This integration makes Microsoft Dynamics 365 the one-stop shop for all your business solutions. Customers who use Dynamics 365 Finance and Dynamics 365 Supply Chain Management, but who use non-Microsoft solutions for customer relationship management (CRM), are moving toward Dynamics 365 for its dual-write support.
-+ Data from customers, products, operations, projects, and the Internet of Things (IoT) automatically flows to Common Data Service through dual-write. This connection is very useful for businesses that are interested in Microsoft Power Platform expansions.
++ Data from customers, products, operations, projects, and the Internet of Things (IoT) automatically flows to Common Data Service through dual-write. This connection is useful for businesses that are interested in Microsoft Power Platform expansions.
 + The dual-write infrastructure follows the no-code/low-code principle. Minimal engineering effort is required to extend the standard table-to-table maps and to include custom maps.
 + Dual-write supports both online mode and offline mode. Microsoft is the only company that offers support for online and offline modes.
 
@@ -98,17 +98,17 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 
 Dual-write automates the data flow between Finance and Operations apps and customer engagement apps. Dual-write consists of two AppSource solutions that are installed on Common Data Service. The solutions expand the entity schema, plugins, and workflows on Common Data Service so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on Finance and Operations apps.
 
-To create parity with Finance and Operations applications, dual-write makes some crucial changes in the Common Data Service schema. If you understand the plan, you can avoid some design and development re-work in the future.
+To create parity with Finance and Operations applications, dual-write makes some crucial changes in the Common Data Service schema. If you understand the plan, you can avoid some design and development rework in the future.
 
 + When the dual-write AppSource package is installed, Common Data Service will have new concepts such as company and party. These concepts help applications built on Common Data Service, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with Finance and Operations apps.
 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
 
-+ To prevent data loss during currency transmission between Finance and Operations apps and the Common Data Service, you will be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature auto-translates existing records to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This is an opt-in feature, and organizations that do not need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places).
++ To prevent data loss during currency transmission between Finance and Operations apps and the Common Data Service, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing records to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places.md).
 
 + The [date effectivity](../../dev-tools/date-effectivity.md) concept on Common Data Service will support past, present, and future data on the same entity.
 
-+ Product [unit conversions](../../../supply-chain/pim/tasks/manage-unit-measure.md) are supported for products, quotes, orders and invoices.
++ Product [unit conversions](../../../../supply-chain/pim/tasks/manage-unit-measure.md) are supported for products, quotes, orders, and invoices.
 
 For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 
