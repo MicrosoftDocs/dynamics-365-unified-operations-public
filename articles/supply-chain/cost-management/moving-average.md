@@ -46,7 +46,7 @@ The following are prerequisites when you use moving average cost as a costing me
     > By default, when **Moving average** is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected.
 
 1. On the **Posting** page, assign accounts to the **Price difference for moving average**. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs in following two scenarios:
-    - There is a difference in cost between a purchase receipt and the purchase invoice, because there is a difference between the original inventory quantity and the current on-hand quantity.
+    - There is a difference in cost between a purchase receipt and the purchase invoice because there is a difference between the original inventory quantity and the current on-hand quantity.
     - The transactions bring the inventory from negative to zero, and there is a difference between the transaction cost and the current moving average cost.
 
 1. On the **Posting** page, assign accounts to the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
