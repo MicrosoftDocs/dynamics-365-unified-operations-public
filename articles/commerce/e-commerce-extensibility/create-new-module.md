@@ -71,7 +71,7 @@ Module names are case-insensitive. We recommended that you use whole words for m
 ## Additional resources
 [CLI command reference](cli-command-reference.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 
