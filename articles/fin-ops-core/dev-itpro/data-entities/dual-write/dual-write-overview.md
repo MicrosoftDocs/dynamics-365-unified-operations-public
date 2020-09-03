@@ -94,7 +94,7 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 + The dual-write infrastructure follows the no-code/low-code principle. Minimal engineering effort is required to extend the standard table-to-table maps and to include custom maps.
 + Dual-write supports both online mode and offline mode. Microsoft is the only company that offers support for online and offline modes.
 
-## What does dual-write mean for developers and architects of customer engagement app?
+## What does dual-write mean for developers and architects of customer engagement apps?
 
 Dual-write automates the data flow between Finance and Operations apps and customer engagement apps.
 Dual-write consists of two AppSource solutions that are installed on Common Data Service. The solutions expand the entity schema, plugins, and workflows on Common Data Service so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on Finance and Operations apps.
