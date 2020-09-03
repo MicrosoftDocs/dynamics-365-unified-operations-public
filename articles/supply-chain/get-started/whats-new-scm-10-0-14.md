@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.14. This version has a build number of 10.0.569 <!-- KFM: Confirm build number --> and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.14. This version has a build number of 10.0.605 and is available as follows:
 
 - **Preview release:** September 2020
 - **General availability (self-update):** October 2020
@@ -48,11 +48,11 @@ This release includes an updated platform and general improvements, but doesn't 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-14.md). <!-- KFM: Confirm platform link link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.14, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd). <!-- KFM: Get new KB link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.14, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
