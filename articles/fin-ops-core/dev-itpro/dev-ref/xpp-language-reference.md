@@ -52,7 +52,7 @@ The X++ language programming guide is divided into these sections:
 + [Statements, loops, and exception handling](xpp-conditional.md)
 + [Operators](xpp-operators.md) 
 + [Classes and methods](xpp-classes-methods.md) 
-+ [Data selection and manipulation](xpp-data-home-page.md)
++ [Data selection and manipulation](xpp-data/xpp-data-home-page.md)
 + [Macros](xpp-macros.md) 
 + [Attribute classes](xpp-attribute-classes.md) 
 
