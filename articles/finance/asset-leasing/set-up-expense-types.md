@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up expense types
-description: This topic lists the steps for setting up expense types in Asset leasing.
+title: Set up expense types (Preview)
+description: This topic explains how to set up expense types in Asset leasing.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/14/2019
@@ -36,24 +36,33 @@ ms.dyn365.ops.version: 10.0.6
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists the steps for setting up expense types in Asset leasing. Costs that aren't represented by the payment schedule are called expense costs. Examples of these costs can include property taxes, common area maintenance costs and insurance expenses. 
+This topic explains how to set up expense types in Asset leasing. Costs that aren't represented by the payment schedule are known as *expense costs*. Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.
 
-1. To add an administrative expense type, go to **Asset leasing > Setup > Expense types**.
-2. Click **New** and create the expense type followed by the description in the respective fields.
+## Add an administrative expense type
 
-## Assign accounts to administrative costs 
-  Next, accounts should be associated to the expense types. These accounts will be debited when posting expense schedule entries. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
+1. Go to **Asset leasing \> Setup \> Expense types**.
+2. Select **New**.
+3. In the appropriate fields, enter the new expense type and a description.
 
-1.	Navigate to **Asset leasing > Setup > Asset leasing parameters**.
-2.	Select **Accounts** and open the **Executory costs** FastTab.
-3.	Select the **Expense type** and click **Add**.
-4.	Select the book type to be tied to the administrative costs from the **Book type** drop-down.
+## Assign accounts to administrative costs
 
-  > [!Note]
-  > Multiple book types can be linked to the same expense account.
+Next, you should associate accounts with the expense types. These accounts will be debited when expense schedule entries are posted. The offset account is specified on the **Executory costs payment schedule** lines on each lease.
 
-5. Use the **Account code** drop-down to specify which leases the book should be applied to. To apply the book at all leases, select **All**. To apply the book to a specific group of leases, select **Group**. To apply the book to specific leases, select **Table**. If you select **Group** or **Table**, an you must select an account or group number from the **Account/Group number** drop-down.
-6. Select the respective finance lease main account and operating lease main account from the appropriate drop-downs.
+1. Go to **Asset leasing \> Setup \> Asset leasing parameters**.
+2. On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.
+3. Select **Add**.
+4. In the **Book type** field, select the book type to link to the administrative costs.
 
-When you've finished the preceding steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease, or when you create a new lease.
+    > [!NOTE]
+    > Multiple book types can be linked to the same expense account.
 
+5. In the **Account code** field, specify which leases the book should be applied to:
+
+    - **All** – Apply the book to all leases.
+    - **Group** – Apply the book to a specific group of leases.
+    - **Table** – Apply the book to specific leases.
+
+6. If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.
+7. In the appropriate fields, select the finance lease main account and the operating lease main account.
+
+When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease. Alternatively, you can add expenses when you create a new lease.
