@@ -606,13 +606,13 @@
           href: dev-tools/pipeline-create-deployable-package.md
         - name: X++ model-versioning in Azure Pipelines
           href: dev-tools/pipeline-model-version.md
-        - name: Asset Download in Azure Pipelines
+        - name: Download assets by using Azure Pipelines
           href: dev-tools/pipeline-asset-download.md
-        - name: Asset Upload in Azure Pipelines
+        - name: Upload assets by using Azure Pipelines
           href: dev-tools/pipeline-asset-upload.md
-        - name: Asset Deployment in Azure Pipelines
+        - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
-        - name: LCS Connection in Azure Pipelines
+        - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection.md        
       - name: Fleet Management sample application
         items:
