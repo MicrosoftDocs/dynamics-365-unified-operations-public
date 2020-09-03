@@ -58,8 +58,8 @@ A theme can be set on the master page in a similar manner. In this case, the the
 
 ## Best practices
 
-- Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, you should include **font-awesome** in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in a SCSS file.
+- Module library modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
+- If you want to take advantage of module library modules that are built by using Font Awesome glyph icons, you should include **font-awesome** in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in a SCSS file.
 
     ```css
     $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
