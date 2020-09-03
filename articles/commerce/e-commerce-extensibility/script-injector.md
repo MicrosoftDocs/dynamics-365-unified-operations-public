@@ -36,7 +36,7 @@ This topic covers script injectors that can be used to add scripts to online pag
 
 ## Overview
 
-The Dynamics 365 Commerce online starter kit provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
+The Dynamics 365 Commerce module library provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
 
 ## External script module
 
@@ -59,7 +59,7 @@ The inline script module allows you to add inline JavaScript code directly to a 
 
 ## Custom script injector modules
 
-In some cases, you might have to inject scripts into your site or site pages, but the prebuilt script injector modules from the starter kit aren't flexible as you require. For example, you might want additional configuration fields to be exposed in the authoring tools. In these cases, you can extend the prebuilt script injector modules into new custom script injector modules. You can put a custom script injector module on a page, in a shared template, or in a master template.
+In some cases, you might have to inject scripts into your site or site pages, but the prebuilt script injector modules from the module library aren't flexible as you require. For example, you might want additional configuration fields to be exposed in the authoring tools. In these cases, you can extend the prebuilt script injector modules into new custom script injector modules. You can put a custom script injector module on a page, in a shared template, or in a master template.
 
 ### Create a custom script injector
 
