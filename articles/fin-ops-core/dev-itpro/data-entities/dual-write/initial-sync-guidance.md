@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-# Overview
+## Overview
 
 Before you turn on dual-write for an entity, you can run initial sync to handle existing data on both sides of Finance and Operations apps, and model-driven apps which the data is saved in Common Data Service(CDS); or you can just skip the initial sync to turn on the dual-write if there is no need to synchronize data between those two apps.
 
@@ -44,7 +44,7 @@ Initial sync provides the ability to copy existing data from one app to another 
 - [Scenario 3: An existing Finance and Operations app instance and a new model-driven app instance](#_Scenario_3:_An)
 - [Scenario 4: An existing Finance and Operations app instance and an existing model-driven app instance](#_Scenario_4:_An)
 
-# Scenario 1: A new Finance and Operations app instance and a new model-driven app instance
+## Scenario 1: A new Finance and Operations app instance and a new model-driven app instance
 
 Basically, you may need to migrate data before Go-live, so in that case, data can be loaded into one side through data migration and synchronize to the other side through initial sync.
 
@@ -60,7 +60,7 @@ To synchronize the data, follow these steps.
 
 Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
 
-# Scenario 2: A new Finance and Operations app instance and an existing model-driven app instance
+## Scenario 2: A new Finance and Operations app instance and an existing model-driven app instance
 
 In this scenario, you are live with model-driven app and already have existing data in CDS, so in that case, data can be synchronized from CDS to Finance and Operations app through initial sync.
 
@@ -74,7 +74,7 @@ To sync the existing CDS data to the Finance and Operations app, follow these st
 
 Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
 
-# Scenario 3: An existing Finance and Operations app instance and a new model-driven app instance
+## Scenario 3: An existing Finance and Operations app instance and a new model-driven app instance
 
 In this scenario, you are live with Finance and Operations app and already has existing data there, so in that case, data can be synchronized from Finance and Operations app to CDS through initial sync.
 
@@ -85,7 +85,7 @@ To synchronize the data from Finance and Operations app to CDS, follow these ste
 
 Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
 
-# Scenario 4: An existing Finance and Operations app instance and an existing model-driven app instance
+## Scenario 4: An existing Finance and Operations app instance and an existing model-driven app instance
 
 In this scenario, you are live with both model-driven app and Finance and Operations app, although you already have existing data in both apps, it is recommended to trigger initial sync to move data between CDS to Finance and Operations app to keep data consistency.
 
@@ -97,19 +97,19 @@ You will need to bootstrap the CDS and then run the initial sync, please follow 
 
 Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
 
-# Considerations
+## Considerations
 
-## Data migration slow-down with enabled dual-write
+### Data migration slow-down with enabled dual-write
 
 If you first activate the map in dual-write and then start data importing that will cause poor migration performance. It is recommended not activate running maps in dual-write until data migration is completed.
 
-## 500k limit per execution
+### 500k limit per execution
 
 The maximum number of records allowed through initial sync is 500K per execution (per legal entity, as each legal entity will have its own execution). Please refer to details [here](https://docs.microsoft.com/en-us/power-platform/admin/data-integrator), to optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project.
 
 **Workaround** : In case you need to run initial sync with data volume greater than 500K per execution, then it is recommended to migrate data into Finance and Operations app and CDS separately and skip initial sync.
 
-## 24-hour limit
+### 24-hour limit
 
 In case of running initial sync from CDS to Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from Finance and Operations app. For large volumes of initial sync from CDS to Finance and Operations app, if the single execution takes above 24 hours, that may hit the timeout and the initial sync will fail.
 
@@ -129,13 +129,13 @@ E.g. Initial sync from CDS to Finance and Operations apps for Customer/Account e
 
 -   Employment (cdm\_employments)
 
-## 40 legal entities limit while linking the environments
+### 40 legal entities limit while linking the environments
 
 The current limit is 40 legal entities while linking the environments. You will get the below error if trying to enable maps with more than 40 legal entities linked between the environments.
 
 Dual-write failure - Plugin registration failed: [(Unable to get partition map for project DWM-1ae35e60-4bc2-4905-88ea-XXXXX. Error Exceeds the maximum partitions allowed for mapping DWM-1ae35e60-4bc2-4905-88ea- XXXXX)], One or more errors occurred.
 
-## Initial sync for entity map with 10+ lookups is not currently supported
+### Initial sync for entity map with 10+ lookups is not currently supported
 
 This impacts only the initial sync from CDS for entity maps with 10+ lookups.
 
@@ -143,27 +143,27 @@ If run initial sync against entity map with 10+ lookups you may see error messag
 
 **Workaround** : To migrate data into Finance and Operations app and CDS separately and skip initial sync.
 
-## 5 minutes limit for Finance and Operations export
+### 5 minutes limit for Finance and Operations export
 
 In case of running initial sync from Finance and Operations app to CDS, if Finance and Operations export takes 5+ minutes, the Initial sync may time out. This can happen if the data entity has virtual fields with postLoad method, or the export query isn&#39;t optimum (i.e. missing indexes etc.).
 
 **Workaround** : This will be supported post PU37. Please consider update your Finance and Operations app to PU37+.
 
-## Error handling capabilities
+### Error handling capabilities
 
-### Initial sync is always full push
+#### Initial sync is always full push
 
 You can&#39;t reprocess only failed records; it always pushes entire data again (full push). When the initial sync was partially succeeded, then 2nd time will re-run for all the records, not only the error ones.
 
-### Only top 5 errors can be viewed
+#### Only top 5 errors can be viewed
 
 You can only view top 5 errors from the initial synch error log.
 
-# Known issues
+## Known issues
 
 Please refer to [details](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-troubleshooting-initial-sync) that can help you fix issues that might occur during initial sync.
 
-# Guidance matrix
+## Guidance matrix
 
 <table><thead><tr class="header"><th>Finance and Operations instance</th><th>CDS instance</th><th>Has data to run initial sync</th><th>Description</th><th>Max Volume in an Entity</th><th>Data Entity Type (Single thread/Multi thread)</th><th>Approach</th></tr></thead><tbody><tr class="odd"><td>New</td><td>New</td><td>No</td><td>A new Finance and Operations app instance and a new model-driven app instance, with no initial data</td><td>-NA-</td><td>Any</td><td>1. Activate dual-write and skip initial write</td></tr><tr class="even"><td>New</td><td>New</td><td>Yes</td><td>A new Finance and Operations app instance and a new model-driven app instance, with migrated data in either apps</td><td>&lt; 500K</td><td>Single-Threaded (*)</td><td>1. Migrate data to Finance and Operations apps<br />
 2. Run Initial sync</td></tr><tr class="odd"><td></td><td></td><td></td><td></td><td>&lt; 500K</td><td>Multi-Threaded</td><td>1. Migrate data to CDS<br />
