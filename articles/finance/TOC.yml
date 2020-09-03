@@ -2326,6 +2326,8 @@
           href: localizations/tasks/my-00007-self-billed-invoices.md
         - name: Set up GST relief clauses
           href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: SST-02 declaration for Malaysia
+          href: localizations/apac-mys-sst-declaration.md
       - name: Mexico
         items:
         - name: Mexico overview
