@@ -98,7 +98,7 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 
 Dual-write automates the data flow between Finance and Operations apps and customer engagement apps. Dual-write consists of two AppSource solutions that are installed on Common Data Service. The solutions expand the entity schema, plugins, and workflows on Common Data Service so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on Finance and Operations apps.
 
-To create parity with Finance and Operations applications, dual-write creates some crucial changes on the Common Data Service schema. If you understand the plan, you can avoid some design and development re-work in the future.
+To create parity with Finance and Operations applications, dual-write makes some crucial changes in the Common Data Service schema. If you understand the plan, you can avoid some design and development re-work in the future.
 
 + When the dual-write AppSource package is installed, Common Data Service will have new concepts such as company and party. These concepts help applications built on Common Data Service, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with Finance and Operations apps.
 
