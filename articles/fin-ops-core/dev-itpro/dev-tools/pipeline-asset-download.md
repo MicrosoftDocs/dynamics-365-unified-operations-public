@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can automate downloading assets from the **Lifecycle Services Asset Library** by using the **Deploy Lifecycle Services (LCS) Asset Download** task in Azure DevOps.
 
-This topic assumes a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
+This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser).
@@ -47,7 +47,7 @@ The following table describes the options that are available for this task.
 | Input name | Mandatory | Description |
 | --- | --- | --- |
 | LCS Connection | Yes | Select or create a service connection to Dynamics Lifecycle Services (LCS). For more information, see [Creating an LCS connection in Azure Pipelines](pipeline-lcs-connection.md). |
-| LCS Project Id | Yes | Enter the project ID identifying the project in LCS that contains both the asset to be deployed, and the target environment. The project ID can be found at the end of the URL of your project's dashboard. |
+| LCS Project ID | Yes | Enter the project ID identifying the project in LCS that contains both the asset to be deployed, and the target environment. You can find the project ID at the end of the URL of your project's dashboard. |
 | Path to download to | Yes | Enter the path to download the asset into. |
 | Search Pattern | Yes | Select how to find the assets in the **Asset Library**. |
 
