@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.14 (November 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.14. 
 author: josaw1
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,9 +49,8 @@ The following features are included in this release. The feature titles link to 
 - [Support for adding items to purchase orders during receiving in POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
 - [Support serial number registration on outbound transfer order shipments from POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
 - Social share module<br> - For more information, see [Social share module](../social-share-module.md).
+- Process credit cards without a hardware station<br> - For more information, see [Process credit cards without a hardware station](../dev-itpro/cnp-pos.md).
 - [Gift card balance check module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - For more information, see [Gift card module](../add-giftcard.md).
-<!--
-- Process credit cards without a hardware station<br> - For more information, see [Process credit cards without a hardware station](../dev-itpro/cnp-pos.md).-->
 
 ## Additional resources
 
