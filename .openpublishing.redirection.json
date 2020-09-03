@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/xpp-data-query.md",
+      "redirect_url": "xpp-data/xpp-data-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/extend-retail-server-odata-controller.md",
       "redirect_url": "dev-retail-home-page",
       "redirect_document_id": "false"
