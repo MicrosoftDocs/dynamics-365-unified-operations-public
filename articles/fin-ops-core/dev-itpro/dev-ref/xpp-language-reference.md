@@ -51,10 +51,10 @@ The X++ language programming guide is divided into these sections:
 + [Variables and data types](xpp-variables-data-types.md)
 + [Statements, loops, and exception handling](xpp-conditional.md)
 + [Operators](xpp-operators.md) 
-+ [X++ classes and methods](xpp-classes-methods.md) 
++ [Classes and methods](xpp-classes-methods.md) 
 + [Data selection and manipulation](xpp-data-home-page.md)
-+ [X++ macros](xpp-macros.md) 
-+ [X++ attribute classes](xpp-attribute-classes.md) 
++ [Macros](xpp-macros.md) 
++ [Attribute classes](xpp-attribute-classes.md) 
 
 ## Additional resources
 + [X++ Syntax](xpp-syntax.md)
