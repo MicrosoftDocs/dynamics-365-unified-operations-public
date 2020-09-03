@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up index rates
-description: This topic lists the steps for setting up index rates, which are needed if your organization associates lease payment amounts with a set of index rates.  
+title: Set up index rates (Preview)
+description: This topic explains how to set up index rates. Index rates are required if your organization associates lease payment amounts with a set of index rates.
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/20/2020
@@ -36,10 +36,17 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-If lease payments are dependent on an index, those index rate types can be added and maintained in the system. To revalue the lease payments from the **Index rate type** page, the index rate revaluation process will use the most recent index rate from the date of revaluation.
+If lease payments depend on an index, the index rate types can be added and maintained in the system. To revalue the lease payments from the **Index rate type** page, the index rate revaluation process uses the most recent index rate from the date of revaluation.
 
-1. To add index rate types and index rates, open the **Index rate type** page (**Asset leasing > Setup > Index rate type**).
-2. Click **New**. Enter the rate type, and the name of the index rate, in the respective fields.
-3. To add a new index rate value, select the index rate type and click **Add**. Select the effective start date of the rate, and the rate value.
+To add index rate types and index rates, follow these steps.
 
-You'll need to select the index rate method either **Index rate value difference** or **Index rate value**. Select index rate value difference to calculate a new lease payment based on the difference between the index rate at commencement date and the most recent index rate. The index rate is defined in the **Index rate (%)** field. Select index rate value to calculate the lease payment using the percentage that's specified in the **Index rate (%)** field.
+1. Go to **Asset leasing \> Setup \> Index rate type**.
+2. Select **New**.
+3. In the appropriate fields, enter the rate type and the name of the index rate.
+4. To add a new index rate value, select the index rate type, and then select **Add**.
+5. Select the effective start date of the rate, and select the rate value.
+
+You must select either **Index rate value difference** or **Index rate value** as the index rate method.
+
+- Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate. The index rate is defined in the **Index rate (%)** field.
+- Select the **Index rate value** method to calculate the lease payment by using the percentage that is specified in the **Index rate (%)** field.
