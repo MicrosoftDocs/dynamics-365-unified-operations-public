@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up lease books
-description: This topic describes the information that's maintained in lease books, which contain the accounting policies that determine how the lease is accounted for in the system.
+title: Set up lease books (Preview)
+description: This topic describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/20/2020
@@ -37,23 +37,31 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Lease books contain the accounting policies that determine how the lease is accounted for in the system. Asset leasing supports both US GAAP, ASC 842, and ASC 840, international standards IFRS 16 and IAS 17, in addition to cash basis accounting.
+Lease books contain the accounting policies that determine how a lease is accounted for in the system. In addition to cash basis accounting, Asset leasing supports the following standards:
 
-1. To create a lease book, go to **Asset leasing > Setup > Lease books**.
-2. Select **New** to add a new book.
-3. Enter information in the following fields as indicated in the following table.
+- Generally Accepted Accounting Principles in the United States (US GAAP)
+- Accounting Standards Codification Topic 842 (ASC 842)
+- ASC 840
+- International Financial Reporting Standard 16 (IFRS 16)
+- International Accounting Standard 17 (IAS 17)
 
-|     Name                                        |     Description                   |
-|-------------------------------------------------|-----------------------------------|
-|     Posting layer                               |     Select the desired posting layer to be used. Each book that is attached to a lease is set up for a particular posting layer   that has different posting purposes.          |
-|     Lease type                                  |     Select whether the lease type will be classified automatically, or predefined as a Finance or Operating lease.      |
-|     Accounting framework                        |     Select the framework that's associated with the book you're working with.               |
-|     Lease term / Useful life Set Up             |     Enter the percentage of the useful life. The system will classify the lease as a finance lease if it's set to automatic and if the lease term over the asset's useful life is greater than or equal to the percentage entered in this field.                                                    |
-|     Present value / Asset fair value setup     |     Enter the value as a whole number. The value you enter will be used as the threshold to determine the lease type. If the present value of future minimum lease payments is greater than the user-defined value from the book setup, the system will classify the lease as finance when the book’s lease classification is set to automatic.                                                           |
-|     Short-term threshold                        |     Enter the number of months to be used as a short-term lease threshold. If the lease term is less than or equal to the number of months entered in this field, the lease will be classified as a short-term lease and the deferred rent treatment will be applied.            |
-|     Low value threshold                         |     Enter an amount to use as a low-value lease threshold. If the fair value of the asset equal or less than the value entered, the system will classify the lease as low-value, and the deferred rent treatment will be applied.            |
-|     Pay to vendor                               |     Select Yes to allow lease payments to be posted as an invoice to the vendor account specified on each lease. When a lease payment is posted, the vendor account will be credited. If set to No, the account specified on the Lease Posting Parameters page for Lease Payments will be credited instead. |   |  Transition book                             |     Select Yes if this book will be used to transition leases from the old standard to the new standard. If you select No, all leases will be accounted for using the full retrospective transition method.       |
-|  Transition book   |  Select Yes if this book will be used to transition leases from the old standard to the new standard. If you select No, all leases will be accounted for using the full retrospective transition method.    | 
-|     Transition type                             |     If the selected book is a transition book, select transition method to use when posting the transition adjustment for the   lease. If the selected book is not a transition book, the transition type will be Full retrospective by default.                     |
-|     Transition date                             |     Enter the date of transition onto the new standard. This will be the transition date used to post the transition adjustment. Depending on the accounting framework and transition method, your company may need to comparatively state the balance sheet prior to the transition date. Enter the   earliest comparative period as the transition date to accommodate this requirement.    |
-|     Incremental borrowing rate at transition    |     Enter the incremental borrowing rate present at the date of transition. Based on the transition type, this rate will be used to calculate the present value of future minimum lease payments. This field will be inactive if the Incremental Borrowing Rate on Books is not checked.                                                                                                        |
+To create a lease book, follow these steps.
+
+1. Go to **Asset leasing \> Setup \> Lease books**.
+2. Select **New** to add a book.
+3. Set the following fields.
+
+    | Name                                     | Description |
+    |------------------------------------------|-------------|
+    | Posting layer                            | Select the posting layer to use. Each book that is attached to a lease is set up for a specific posting layer. Each posting layer has different posting purposes. |
+    | Lease type                               | Select whether the lease should be classified automatically, or whether it should be predefined as a finance or operating lease. |
+    | Accounting framework                     | Select the framework that is associated with the book. |
+    | Lease term / Useful life Set Up          | Enter the percentage of the useful life. The system will classify the lease as a finance lease if it's set to automatic, and if the lease term over the asset's useful life is longer than or equal to the percentage that you enter here. |
+    | Present value / Asset fair value setup   | Enter a whole number to define the threshold that will determine the lease type. If the present value of future minimum lease payments is more than the user-defined value from the book setup, and if the book's lease classification is set to automatic, the system will classify the lease as a finance lease. |
+    | Short-term threshold                     | Enter the number of months to use as a threshold for short-term leases. If the lease term is less than or equal to the number of months that you enter here, the system will classify the lease as a short-term lease, and the deferred rent treatment will be applied. |
+    | Low value threshold                      | Enter an amount to use as a threshold for low-value leases. If the fair value of the asset is less than or equal or the value that you enter here, the system will classify the lease as a low-value lease, and the deferred rent treatment will be applied. |
+    | Pay to vendor                            | Set this option to **Yes** to allow lease payments to be posted, as an invoice, to the vendor account that is specified on each lease. When a lease payment is posted, the vendor account will be credited. If this option is set to **No**, the account that is specified for Lease Payments on the **Lease posting parameters** page will be credited instead. |
+    | Transition book                          | Set this option to **Yes** if the book will be used to transition leases from the old standard to the new standard. If you this option is set to **No**, all leases will be accounted for by using the full retrospective transition method. |
+    | Transition type                          | If the book is a transition book, select the transition method that should be used when the transition adjustment for the lease is posted. By default, if the book isn't a transition book, the transition type will be **Full retrospective**. |
+    | Transition date                          | Enter the date of transition to the new standard. This date will be the transition date that is used to post the transition adjustment. Depending on the accounting framework and the transition method, your company might have to comparatively state the balance sheet before the transition date. To accommodate this requirement, enter the earliest comparative period as the transition date. |
+    | Incremental borrowing rate at transition | Enter the incremental borrowing rate that applies on the transition date. Based on the transition type, this rate will be used to calculate the present value of future minimum lease payments. This field will be unavailable if the Incremental Borrowing Rate on Books isn't checked. |
