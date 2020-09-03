@@ -2326,6 +2326,8 @@
           href: localizations/tasks/my-00007-self-billed-invoices.md
         - name: Set up GST relief clauses
           href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: SST-02 declaration for Malaysia
+          href: localizations/apac-mys-sst-declaration.md
       - name: Mexico
         items:
         - name: Mexico overview
@@ -3475,7 +3477,11 @@
           - name: Use RAW XML to add content
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
           - name: Support parameterized calls of CALCULATED FIELD data sources
-            href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+            items:
+            - name: Improve user experience and usability maintenance
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+            - name: Improve performance of data access
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
           - name: Cross-company ER data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
           - name: Use FINANCIAL DIMENSIONS DETAILS data sources

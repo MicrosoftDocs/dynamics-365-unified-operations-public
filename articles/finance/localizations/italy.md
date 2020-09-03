@@ -60,4 +60,5 @@ This topic provides links to documentation resources for Italy.
 - [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
+- [Tax plafond](emea-ita-exil-tax-plafond.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
