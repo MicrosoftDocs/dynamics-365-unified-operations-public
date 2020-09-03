@@ -47,7 +47,7 @@ The following table describes the options that are available for this task.
 | Input name | Mandatory | Description |
 | --- | --- | --- |
 | LCS Connection | Yes | Select or create a service connection to Dynamics Lifecycle Services (LCS). For more information, see [Creating an LCS connection in Azure Pipelines](pipeline-lcs-connection.md). |
-| LCS Project ID | Yes | Enter the project ID identifying the project in LCS that contains both the asset to be deployed, and the target environment. The project ID can be found at the end of the URL of your project's dashboard. |
+| LCS Project ID | Yes | Enter the project ID identifying the project in LCS that contains both the asset to be deployed, and the target environment. YOu can find the project ID at the end of the URL of your project's dashboard. |
 | Type of asset | Yes | Select the type of asset you wish to upload. |
 | File to upload | Yes | Enter the path to the file to upload into the LCS **Asset Library**. |
 | LCS Asset Name | No | Enter a name for the asset to be shown in the **Asset Library**. If no name is specified, the file name will be used. |
