@@ -97,6 +97,10 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md)
 - [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md)
 - [X++ model-versioning in Azure Pipelines](pipeline-model-version.md)
+- [Asset Download in Azure Pipelines](pipeline-asset-download.md)
+- [Asset Upload in Azure Pipelines](pipeline-asset-upload.md)
+- [Asset Deployment in Azure Pipelines](pipeline-deploy-asset.md)
+- [LCS Connection in Azure Pipelines](pipeline-lcs-connection.md)      
 
 ## X++ programming language
 
