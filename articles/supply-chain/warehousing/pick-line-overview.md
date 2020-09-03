@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to add a **Show work line list** option for mobile device menu items used to manage picking work. It enables warehouse workers to view and select from a list of all the work lines related to the current task, which can help workers better optimize their picking sequence. This feature provides options that can replace the standard **Skip** button, which requires workers to cycle through each line, one at a time, in a fixed order (though that option is still available).
+This topic explains how to configure pick line overview options for mobile device menu items used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines related to their current task, which can help workers to better optimize their picking sequence. This feature provides options that replace the standard **Skip** button, which lets workers to cycle through each line, one at a time, in a fixed order (though that option is still available).
 
-Administrators can configure each menu item individually to control how the **Show work line list** option will work for that item and which options it will provide.
+Administrators can configure each menu item individually to control how, when, and where the warehouse app will preset the pick line overview.
 
 ## Turn on the work pick line overview feature
 
@@ -59,10 +59,10 @@ To set up a mobile device menu item to provide a pick line overview:
 
 1. On the **General** FastTab, configure this feature by setting **Show work line list** to one of the following values:
 
-    - **Show only upon request** - Workers will be able to choose to see the pick line list by selecting the **Skip to** button.
-    - **Show at the start of every pick** - Workers will see the list every time they start or complete a pick line, and can see it again by selecting the **Skip to** button.
-    - **Show at the start of the first pick only** - Workers will see the list each time they start a new picking work, but not after each line. If needed, they can see the list again by selecting the **Skip to** button.
-    - **Never show** - Provides the standard **Skip** button, thereby disabling the work lines list display. The **Skip** button lets workers cycle through each line, one at a time, in a fixed order.
+    - **Show only upon request** - Workers will be able to choose to see the pick line list by selecting the **Skip to** button on the warehouse app.
+    - **Show at the start of every pick** - Workers will see the list every time they start or complete a pick line, and can see it again by selecting the **Skip to** button on the warehouse app.
+    - **Show at the start of the first pick only** - Workers will see the list each time they start a new picking work, but not after each line. If needed, they can see the list again by selecting the **Skip to** button on the warehouse app.
+    - **Never show** - Provides the standard **Skip** button on the warehouse app, thereby disabling the work lines list display. The **Skip** button lets workers cycle through each line, one at a time, in a fixed order, and to cycle through the list as many times as required until all lines have been processed.
 
 1. On the Action Pane, select **Save**. Provided you set **Show work line list** to anything other than *Never show*, the **Field list** button on the Action Pane becomes active.
 
