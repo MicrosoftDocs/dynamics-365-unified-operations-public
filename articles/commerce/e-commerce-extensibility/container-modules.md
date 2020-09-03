@@ -64,7 +64,7 @@ For more information, see [Create a page container module](create-page-container
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 
