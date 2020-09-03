@@ -3476,9 +3476,9 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
           - name: Support parameterized calls of CALCULATED FIELD data sources
             items:
-            - name: To improve user experience and usability maintenance
+            - name: Improve user experience and usability maintenance
               href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
-            - name: To improve performance of data access
+            - name: Improve performance of data access
               href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
           - name: Cross-company ER data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
