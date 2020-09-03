@@ -394,7 +394,7 @@ export default (props: IProductFeatureViewProps) => {
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Preview and debug a module](test-module.md)
 
