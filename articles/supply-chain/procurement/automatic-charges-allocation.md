@@ -62,9 +62,11 @@ To enable charges allocation for sales orders, enable the following flight:
 - **Flight name**: SalesChargesAllocationFeature
 - **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('SalesChargesAllocationFeature', 1);`
 
-## Setup charge codes
+<!-- KFM: Do we also need to turn these on in feature management? -->
 
-To allocate charges, you must first define charge codes. The following steps provide instructions on how to set up charge codes:
+## Setup charges codes
+
+To allocate charges, you must first define charge codes. To set up charge codes:
 
 1. Do one of the following:
     - For purchase orders, got to **Accounts payable \> Charges setup \> Charges code**
@@ -75,12 +77,13 @@ To allocate charges, you must first define charge codes. The following steps pro
     - **Charges code** - Enter a code for the charges.
     - **Description** - Enter a description of the charges
     - **Item sales tax group** - Select an item sales tax group, if applicable.
-1. **Only for purchase orders**: In the **Maximum amount** field, enter the maximum amount that is allowed for this charges code. This field is used to validate charges for vendor invoices.
+    - **Prorate** (sales orders only): Set to *Yes* if you want to prorate your charges.
+    - **Maximum amount** (purchase orders only): Enter the maximum amount that is allowed for this charges code. This field is used to validate charges for vendor invoices.
+
 
     > [!NOTE]
-    > To turn on the functionality for validating charges, go to **Accounts payable \> Setup \> Accounts payable parameters**. Expand the the **Invoice validation** FastTab and, in the **Invoice validation** section, set **Enable invoice matching validation** to *Yes*.
+    > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable \> Setup \> Accounts payable parameters**. Expand the the **Invoice validation** FastTab and, in the **Invoice validation** section, set **Enable invoice matching validation** to *Yes*.
 
-1. **Only for sales orders**: If you want to prorate your charges, set **Prorate** to *Yes*.
 1. The **Posting** FastTab includes sections for **Debit** and **Credit**. Make the following settings according to which ledger you want to post these charges to:
     - **Type** - Select the type of account you are posting to (*Ledger*, *Customer* or *Item*).
     - **Posting** - Select the type of postings to create (such as *Broker fee*, *Customer settlement*, and so on).
@@ -114,10 +117,10 @@ To create charge groups for sales orders:
 1. Select **Save** on the Action Pane.
 1. Go to **Accounts receivable \> Customers \> All customers** and open an existing customer or create a new one.
 1. Expand the **Purchase order defaults** FastTab and, in the **Sales order** section, set **Charges group** to your newly created charge group.
-<!-- KFM: continue here -->
-## Define auto charges
 
-Once you have your charge codes setup you can start defining the auto charges. Here are steps on how to do that.
+## Define auto charges
+<!-- KFM: Continue here -->
+Once you have your charge codes set up, you can start defining the auto charges by doing the following:
 
 1. For purchase orders: **Procurement and sourcing \> Setup \> Charges \> Automatic charges**
 
