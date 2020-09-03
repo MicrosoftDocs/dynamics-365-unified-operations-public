@@ -56,7 +56,7 @@ To install the proxy in your software development kit (SDK) development environm
 
 1. Run **yarn install**.
 
-You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the Store Starter Kit.
+You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the module library.
 
 ## Retail Server proxy data action managers
 
