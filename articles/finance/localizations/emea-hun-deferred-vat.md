@@ -1,6 +1,4 @@
----
-title: Deferred sales tax calculations
----
+# Deferred sales tax calculations
 
 In Hungary, value-added tax (VAT) on the continuous delivery of services, such
 as renting, leasing, consulting, and heating, must be recorded and reported on
@@ -39,8 +37,7 @@ For free text invoices and purchase orders, if the document line amounts are
 distributed among financial dimensions, the sale tax amounts are distributed the
 same as the document line amounts.
 
-Set up deferred VAT posting 
-============================
+## Set up deferred VAT posting 
 
 You can specify that VAT is posted to a deferred VAT account.
 
@@ -50,8 +47,7 @@ You can specify that VAT is posted to a deferred VAT account.
 2.  On the **Item sales tax groups** page, select the **Deferred VAT** check box
     to specify that VAT is posted to a deferred VAT account.
 
-Set up ledger accounts for deferred VAT posting
-===============================================
+## Set up ledger accounts for deferred VAT posting
 
 You can designate the deferred VAT posting on ledger accounts.
 
