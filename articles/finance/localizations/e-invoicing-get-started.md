@@ -58,6 +58,7 @@ The Electronic invoicing add-on is initially available for several countries. It
     | Spain             | Sales and Project invoices                  |
     | Europe            | PEPPOL Sales and Project invoices           |
     
+    
 ## Licensing
 
 You can use the Electronic invoicing add-on with your current license. No additional licenses are required to use the service.
@@ -166,16 +167,25 @@ Because of variations in invoice formats and action flows, the e-Invoicing featu
 
 During this setup, you will complete the following tasks:
 
-1. Turn on the Electronic invoicing add-on integration feature to enable integration with Finance.
-2. Set up the URL of the Electronic invoicing add-on endpoint.
-3. Import the ER configurations that are related to the country/region-specific e-Invoicing feature.
-4. Turn on the applicable country/region-specific e-Invoicing feature.
-5. Import the ER configurations and set up the response types that are required to update your country/region-specific invoice document as a result of the submission process.
+1. Open flighted feature
+2. Turn on the Electronic invoicing add-on integration feature to enable integration with Finance.
+3. Set up the URL of the Electronic invoicing add-on endpoint.
+4. Import the ER configurations that are related to the country/region-specific e-Invoicing feature.
+5. Turn on the applicable country/region-specific e-Invoicing feature.
+6. Import the ER configurations and set up the response types that are required to update your country/region-specific invoice document as a result of the submission process.
+
+### Open flighted feature
+The Electronic invoice integration feature is enabled via flighting. Flighting is a concept that allows a feature to be ON or OFF by default. The following steps enable a flight in a non-production environment. 
+
+1. Execute the following SQL command:
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+2. After making the above change, perform an IISReset on all AOS's
 
 ### Turn on the Electronic invoicing add-on integration feature
 
 1. Sign in to Finance or Supply Chain Management.
-2. In the **Feature management** workspace, search for the new feature, **Configurable Electronic invoicing add-on integration**.
+2. In the **Feature management** workspace, search for the new feature, **Configurable Electronic invoicing add-on integration**. If the feature is still not shown in Feature management page, run **Check for updates** function
 3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
@@ -223,6 +233,14 @@ If the submitted invoice document requires an update after the response of the s
 7. Select **Response types** to configure the response types. For information about which table names you should select, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
 
 ![Setting up response types](media/e-invoicing-services-get-started-set-up-response-types.png)
+
+## e-Invoicing feature names by country ##
+The following table describes other e-Invoicing feature names avaliable for downloading from the Electronic reporting Global respository for generation of electronic invoices.
+In RCS, you can download the e-Invoicing feature names listed in this table, its ER Configurations and the avaliable e-Invoicing feature setups.
+In Finance, you can turn on the related Feature references in the Electronic document parameters form to enable its usage for issuing of electronic invoices for those countries.
+
+<<Put the table here >>
+
 
 ## Electronic invoice processing in Finance and Supply Chain Management
 
