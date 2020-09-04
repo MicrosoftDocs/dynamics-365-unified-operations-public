@@ -79,7 +79,7 @@ The Electronic invoicing add-on can be used in scenarios where you must create a
 
 - Configurable submission of e-invoices to external web services, including certification handling through digital signatures:
 
-    - Built-in, easily extendable, and configurable integration with additional content that is planned for Brazil and Mexico
+    - Built-in, easily extendable, and configurable integration with additional content for several countries
 
     > [!NOTE]
     > Currently, a limited number of direct submissions is supported. For more information, see the [Availability](#availability) section earlier in this topic. Support will be extended in the future.
