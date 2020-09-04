@@ -40,7 +40,7 @@ With trickle feed-based order creation introduced in Retail version 10.0.5, tran
 
 ## How to use trickle feed-based posting
   
-1. To enable trickle feed-based posting of reatil transactions, enable the feature named 'Retail statements - Trickle feed' using Feature management
+1. To enable trickle feed-based posting of reatil transactions, enable the feature named 'Retail statements - Trickle feed' using Feature management.
 
     > [!Important]
     > Before you enable the feature, make sure that no pending statements are waiting to be posted.
