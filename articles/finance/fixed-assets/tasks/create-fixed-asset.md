@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a fixed asset
-description: This topic lists the steps for creationg a new fixed asset record from the **Fixed asset** list page. 
+description: This topic lists the steps for creating a new fixed asset record from the **Fixed asset** list page. 
 author: saraschi2
 manager: AnnBe 
 ms.date: 07/01/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic lists the steps for creationg a new fixed asset record from the **Fixed asset** list page.
+This topic lists the steps for creating a new fixed asset record from the **Fixed asset** list page.
 
 The system will assign the asset number based on the number sequence that’s assigned to the fixed asset group. If you use the fixed asset template to import assets with  the Excel add-in, or use another an import job, the system will create fixed asset records and increment the asset number automatically. To manually create an asset record, complete the following steps. 
 
@@ -47,4 +47,4 @@ The system will assign the asset number based on the number sequence that’s as
 
 You can also import fixed assets using the Excel add-in or by running an import job from the **Data management** workspace. Enter the values for required fields into the template before running the import. 
 
-If you didn't define the fixed asset number in the template of Excel add-in or in Data management the system will create a fixed asset number for each imported asset,  and automatically increment the next number sequence for each one. However, if you import assets and define asset numnbers in the template, the system *will not* automatically increment the next number sequence. In this case, an administrator might need to update the next number sequence manually. But if you decided to define the fixed asset number in Excel add-in template the system will use the defined fixed asset number and increment the next number sequence.
+If you didn't define the fixed asset number in the template of Excel add-in or in Data management the system will create a fixed asset number for each imported asset,  and automatically increment the next number sequence for each one. However, if you import assets and define asset numbers in the template, the system *will not* automatically increment the next number sequence. In this case, an administrator might need to update the next number sequence manually. But if you decided to define the fixed asset number in Excel add-in template the system will use the defined fixed asset number and increment the next number sequence.
