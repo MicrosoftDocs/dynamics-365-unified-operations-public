@@ -38,8 +38,8 @@ After an experiment ends and has sufficient results to determine whether it was 
 1. Stop and/or archive the experiment in the third-party service.
 1. Click **Complete** to overwrite the original page and publish the winning variation to all users of the website. If there is no clear winner, choose **Republish the original page**.
 
-## Delete experiment variations
-To delete an experiment and its variations in Commerce:
+## Delete
+Once an experiment is complete, you can optionally follow the steps below to delete it and cleanup its variations in Commerce:
 1. Go to the **Experiments** tab in site builder and select or click on the desired experiment. 
     > [!NOTE]
     > If the experiment is still active, stop the experiment in the third-party service before proceeding.
