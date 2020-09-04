@@ -53,7 +53,7 @@ To use the Electronic invoicing add-on, you must install it from your project in
 
 ## Availability
 
-Initially, the Electronic invoicing add-on is available to selected customers through a preview program. Later, the preview will be opened to a wider range of customers. Finally, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions. The countries that are currently targeted for preview are Brazil, Italy, and Mexico.
+Initially, the Electronic invoicing add-on is available to selected customers through a preview program. Later, the preview will be opened to a wider range of customers. Finally, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
 
 The Electronic invoicing add-on is deployed in the following Azure geographies:
 
