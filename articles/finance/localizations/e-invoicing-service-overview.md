@@ -5,7 +5,7 @@ title: Electronic invoicing add-on overview
 description: This topic provides information about the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 07/08/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -110,9 +110,9 @@ The following illustration shows how data flows to and from the Electronic invoi
 ![Data flow for the Electronic invoicing add-on](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
-Enabling and using Electronic invoicing may require sending your limited data, which includes the organization tax registration IDs, to authorities or third party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privacy notice sections in country specific feature documentation for more information. 
+Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privacy notice sections in country-specific feature documentation for more information.
 
-## Related resources
+## Additional resources
 
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
