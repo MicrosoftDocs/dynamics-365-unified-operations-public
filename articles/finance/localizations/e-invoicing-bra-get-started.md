@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on for Brazil
 description: This topic provides information that will help you get started with the Electronic invoicing add-on for Brazil in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -306,9 +306,10 @@ After you turn on the **Configurable Electronic invoicing add-on integration** f
     ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
 ## Privacy notice
-By enabling the BR-00053 (NF-e Federal) feature, limited data, which includes the organization tax registration ID, will be transmitted to third party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the BR-00053 (NF-e Federal) feature by navigating to **Organization administration \> Setup \> Electronic document parameters**, clicking the **Features** tab, choosing the row containing the BR-00053 feature and then making the appropriate selection.
+Enabling the BR-00053 (NF-e Federal) feature may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the BR-00053 (NF-e Federal) feature by navigating to **Organization administration \> Setup \> Electronic document parameters**. Select the **Features** tab, select the row containing the BR-00053 feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privacy notice sections in country-specific feature documentation for more information.
 
-## Related topics
+
+## Additional resources
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
