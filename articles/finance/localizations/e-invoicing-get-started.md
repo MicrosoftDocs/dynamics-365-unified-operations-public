@@ -39,25 +39,24 @@ This topic provides information that will help you get started with the Electron
 
 ## Availability
 
-The Electronic invoicing add-on is initially available for several countries. It supports the creation of electronic invoices and the submission of the following business documents:
+The Electronic invoicing add-on is initially available for several countries. The add-in supports creating electronic invoices and submitting the following business documents:
 
-    | Country/Region    | Business document                           |
-    |-------------------|---------------------------------------------|
-    | Austria           | Sales and Project invoices                  |
-    | Belgium           | Sales and Project invoices                  |
-    | Brazil            | Electronic fiscal document model 55 (NF-e)  |
-    | Denmark           | Sales and Project invoices                  |
-    | Estonia           | Sales and Project invoices                  |
-    | Finland           | Sales and Project invoices                  |
-    | France            | Sales and Project invoices                  |
-    | Germany           | Sales and Project invoices                  |
-    | Italy             | Sales and Project invoices                  |
-    | Mexico            | CFDI invoice                                |
-    | Netherlands       | Sales and Project invoices                  |
-    | Norway            | Sales and Project invoices                  |
-    | Spain             | Sales and Project invoices                  |
-    | Europe            | PEPPOL Sales and Project invoices           |
-    
+| Country/Region  | Business document                          |
+|-----------------|--------------------------------------------|
+| Austria         | Sales and Project invoices                 |
+| Belgium         | Sales and Project invoices                 |
+| Brazil          | Electronic fiscal document model 55 (NF-e) |
+| Denmark         | Sales and Project invoices                 |
+| Estonia         | Sales and Project invoices                 |
+| Finland         | Sales and Project invoices                 |
+| France          | Sales and Project invoices                 |
+| Germany         | Sales and Project invoices                 |
+| Italy           | Sales and Project invoices                 |
+| Mexico          | CFDI invoice                               |
+| Netherlands     | Sales and Project invoices                 |
+| Norway          | Sales and Project invoices                 |
+| Spain           | Sales and Project invoices                 |
+| Europe          | PEPPOL Sales and Project invoices          |
     
 ## Licensing
 
@@ -235,11 +234,24 @@ If the submitted invoice document requires an update after the response of the s
 ![Setting up response types](media/e-invoicing-services-get-started-set-up-response-types.png)
 
 ## e-Invoicing feature names by country ##
-The following table describes other e-Invoicing feature names avaliable for downloading from the Electronic reporting Global respository for generation of electronic invoices.
-In RCS, you can download the e-Invoicing feature names listed in this table, its ER Configurations and the avaliable e-Invoicing feature setups.
+The following table describes other e-Invoicing feature names avaliable for download from the Electronic reporting Global respository to generate electronic invoices.
+In RCS, you can download the e-Invoicing feature names listed in this table, the ER Configurations and the avaliable e-Invoicing feature setups.
 In Finance, you can turn on the related Feature references in the Electronic document parameters form to enable its usage for issuing of electronic invoices for those countries.
 
-<<Put the table here >>
+| Feature name                      | Description                                 | ER configurations                                                                                                  | Setups                                                                                                                                                         | Country/Region  | Feature reference      |
+|-----------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------------------|
+| Austrian electronic invoices (AT) | Sales and Project invoices for Austria      | - OIOUBL Sales invoice <br>- OIOUBL Project invoice <br>- OIOUBL Sales credit note <br>- OIOUBL Project credit note | - Sales invoice generation (AT) <br>- Project invoice generation (AT) <br>- Sales credit note generation (AT) <br>- Project credit note generation (AT)         | Austria         | EUR-00023              |
+| Belgian electronic invoice (BE)   | Sales and Project invoices for Belgium      | - UBL Sales invoice BE <br>- UBL Project invoice BE <br>- UBL Project credit note BE <br>- UBL Sales credit note BE | - Sales invoice generation (BE)<br>- Project invoice generation (BE) <br>- Sales credit note generation (BE) <br>- Project credit note generation (BE)         | Belgium         | EUR-00023              |
+| Danish electronic invoice (DK)    | Sales and Project invoices for Denmark      | - OIOUBL Sales invoice <br>- OIOUBL Project invoice <br>- OIOUBL Sales credit note <br>- OIOUBL   Project credit note | - Sales invoice generation (DK) <br>- Project invoice generation (DK) <br>- Sales credit note generation (DK)<br>- Project credit note generation (DK)         | Denmark         | EUR-00023<br> DK-00001 |
+| Dutch electronic invoice (NL)     | Sales and Project invoices for Netherlands  | - UBL Sales invoice NL <br>- UBL Project invoice NL <br>- UBL Sales credit note NL <br>- UBL   Project credit note NL | - Sale invoice generation (NL) <br> - Project invoice generation (NL) <br> - Sales credit note generation (NL) <br>- Project credit note generation (NL)          | The Netherlands | EUR-00023              |
+| Estonian electronic invoice (EE)  | Sales and Project invoices for Estonia      | - Sales invoice (EE) <br> - Project invoice (EE)                                                                     | - Sales invoice generation (EE) <br>- Project invoice generation (EE)                                                                                           | Estonia         | EUR-00023              |
+| Finnish electronic invoice (FI)   | Sales and Project invoices for Finland      | - Sales invoice (FI) <br>- Project invoice generation (FI)                                                          | - Sales invoice generation (FI) <br>- Project invoice generation (FI)                                                                                           | Finland         | EUR-00023              |
+| French electronic invoice (FR)    | Sales and Project invoices for France    | - UBL Sales invoice FR <br> - UBL Project invoice FR <br> - UBL Sales credit note FR <br>- UBL   Project credit note FR | - Sales invoice generation (FR) <br> - Project invoice generation (FR) <br>- Sales credit note generation (FR) <br>- Project credit note generation (FR)         | France          | EUR-00023              |
+| German electronic invoice (DE)    | Sales and Project invoices for Germany      |- Sales invoice (DE) <br> - Project invoice <DE>                                                                     | - Sales invoice generation (DE) <br>- Project invoice generation (DE)                                                                                           | Germany         | EUR-00023              |
+| Norwegian electronic invoice (NO) | Sales and Project invoices for Norway       | - OIOUBL Sales invoice <br>- OIOUBL Project invoice <br>- OIOUBL Sales credit note <br>- OIOUBL Project credit note | - Sales invoice generation (NO) <br>- Project invoice generation (NO) <br>- Sales credit note generation (NO) <br>- Project credit note generation (NO)          | Norway          | EUR-00023<br> NO-00010 |
+| Spanish electronic invoice (ES)   | Sales and Project invoices for Spain        | - Sales invoice (ES) <br>- Project invoice (ES)                                                                     | - Sales invoice generation (ES) <br>- Project invoice generation (ES)                                                                                           | Spain           | EUR-00023 <br>ES-00025 |
+| Italian electronic invoice (IT)   | Sales and Project invoices for Italy        | - (Preview) Sales invoice (IT) <br> - Project invoice (IT)                                                           | - Sales invoice <br> - Project   invoice                                                                                                                           | Italy           | EUR-00023 <br>IT-00036 |
+| PEPPOL electronic invoice         | PEPPOL Sales and Project invoice generation | - PEPPOL Sales invoice <br>- PEPPOL Project invoice <br>- PEPPOL Sales credit note <br> - PEPPOL   Project credit note | - PEPPOL Sales invoice generation <br>- PEPPOL Project invoice generation <br>- PEPPOL Sales credit note generation <br>- PEPPOL Project credit note generation |                 | EUR-00023              |
 
 
 ## Electronic invoice processing in Finance and Supply Chain Management
