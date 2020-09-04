@@ -207,7 +207,7 @@ that are related to the country/region-specific e-Invoicing feature that you wan
 6. Depending on the country or region where you want to use the e-Invoicing feature, you must import the applicable data model, data model mapping, and formats. For information about the ER configurations that you should import, see the country/region-specific "Get started with the Electronic invoicing add-on" topic.
 7. Import **Customer invoice context model**. This model contains additional parameters that describe, among other things, the environment in Finance that is used for the Electronic invoicing add-on during the submission of business data.
 
-### Turn on country/region-specific e-Invoicing features
+### <a name="region-specific"></a>Turn on country/region-specific e-Invoicing features
 
 To turn on country/region-specific e-Invoicing features so that they work with the Electronic invoicing add-on, you must turn on the feature in each legal entity where you want to use it. Afterward, the old electronic invoicing integration can no longer be used, and the integration with the new Electronic invoicing add-on is turned on.
 
@@ -233,10 +233,10 @@ If the submitted invoice document requires an update after the response of the s
 
 ![Setting up response types](media/e-invoicing-services-get-started-set-up-response-types.png)
 
-## e-Invoicing feature names by country ##
-The following table describes other e-Invoicing feature names avaliable for download from the Electronic reporting Global respository to generate electronic invoices.
-In RCS, you can download the e-Invoicing feature names listed in this table, the ER Configurations and the avaliable e-Invoicing feature setups.
-In Finance, you can turn on the related Feature references in the Electronic document parameters form to enable its usage for issuing of electronic invoices for those countries.
+## e-Invoicing feature names by country 
+The following table describes other e-Invoicing features avaliable to download from the Electronic reporting Global respository to generate electronic invoices.
+In RCS, you can download the e-Invoicing features listed in this table, the ER configurations, and the avaliable e-Invoicing feature setups.
+In Finance, you can enable the related feature references on the **Electronic document parameters** page to issue electronic invoices for these countries. For more information, see the section, [Turn on country/region-specific e-Invoicing features](#region-specific) earlier in this topic.
 
 | Feature name                      | Description                                 | ER configurations                                                                                                  | Setups                                                                                                                                                         | Country/Region  | Feature reference      |
 |-----------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------------------|
