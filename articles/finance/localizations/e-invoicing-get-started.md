@@ -39,12 +39,25 @@ This topic provides information that will help you get started with the Electron
 
 ## Availability
 
-The Electronic invoicing add-on is initially available for Brazil, Italy, and Mexico. It supports the creation of electronic invoices and the submission of the following business documents:
+The Electronic invoicing add-on is initially available for several countries. It supports the creation of electronic invoices and the submission of the following business documents:
 
-- **Brazil:** Electronic fiscal document model 55 (NF-e) through integration with SEFAZ
-- **Mexico:** CFDI invoice through integration with PAC Interfactura
-- **Italy:** FatturaPA
-
+    | Country/Region    | Business document                           |
+    |-------------------|---------------------------------------------|
+    | Austria           | Sales and Project invoices                  |
+    | Belgium           | Sales and Project invoices                  |
+    | Brazil            | Electronic fiscal document model 55 (NF-e)  |
+    | Denmark           | Sales and Project invoices                  |
+    | Estonia           | Sales and Project invoices                  |
+    | Finland           | Sales and Project invoices                  |
+    | France            | Sales and Project invoices                  |
+    | Germany           | Sales and Project invoices                  |
+    | Italy             | Sales and Project invoices                  |
+    | Mexico            | CFDI invoice                                |
+    | Netherlands       | Sales and Project invoices                  |
+    | Norway            | Sales and Project invoices                  |
+    | Spain             | Sales and Project invoices                  |
+    | Europe            | PEPPOL Sales and Project invoices           |
+    
 ## Licensing
 
 You can use the Electronic invoicing add-on with your current license. No additional licenses are required to use the service.
