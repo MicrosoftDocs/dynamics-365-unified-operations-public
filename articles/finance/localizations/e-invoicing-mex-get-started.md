@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on for Mexico
 description: This topic provides information that will help you get started with the Electronic invoicing add-on for Mexico in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -71,7 +71,7 @@ When you import the **CFDI invoices (MX)** feature from the Global repository, a
 
 ### Create a new version of the CFDI invoices (MX) feature
 
-You can create a new version if, for example, URLs must be updated. For more information, see [E-invoicing CFDI](mx-00010-e-invoicing-cfdi).
+You can create a new version if, for example, URLs must be updated. For more information, see [E-invoicing CFDI](tasks/mx-00010-e-invoicing-cfdi).
 
 - On the **e-Invoicing Features** page, on the **Versions** tab, select **New**.
 
