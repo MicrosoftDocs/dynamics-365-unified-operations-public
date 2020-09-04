@@ -178,8 +178,6 @@ To submit NF-e cancellation, the **Cancellation** feature setup is required.
 1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Draft**.
 2. Select **Change status \> Complete**.
 
-![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-BRA-Change-status-of-e-Invoicing-feature.png)
-
 ### Change the status to Publish
 
 1. On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Completed**.
@@ -191,9 +189,9 @@ To submit NF-e cancellation, the **Cancellation** feature setup is required.
 
 During setup, you will complete these tasks:
 
-1. Turn on the NF-e Federal feature for Brazil
-2. Import the specific ER data model, the data model mapping, and that formats that are required for NF-e fiscal documents.
-3. Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the return of the submission process.
+1. Turn on the NF-e Federal feature for Brazil.
+2. Import the specific ER data model, the data model mapping, and the formats that are required for NF-e fiscal documents.
+3. Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the submission process is returned.
 
 ### Turn on the NF-e Federal feature for Brazil
 
