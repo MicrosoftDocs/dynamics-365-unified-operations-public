@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,8 +120,8 @@ During the RCS setup, you will complete these tasks:
 1. In the **Globalization features** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
 2. Select **Click here to connect to Lifecycle Service**. If you don't want to connect to LCS, select **Cancel**.
 3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
-4. In the **Application Id**, the field must display the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
-5. In the **LCS Environment Id** field, enter the ID of your LCS subscription account.
+4. In the **Application ID** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
+5. In the **LCS Environment ID** field, enter the ID of your LCS subscription account.
 
 ![Entering Electronic invoicing add-on parameters](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
 
