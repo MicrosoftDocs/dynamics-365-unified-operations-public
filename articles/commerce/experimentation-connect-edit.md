@@ -35,7 +35,7 @@ Once the experiment is setup in the third-party service, the next step is to con
     > [!NOTE]
     > One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
-1. In the next step, set the experimentation scope to **entire** if experimentating on the full entity and to **partial** if experimenting on a small portion of the entity. If you associate your experiment with a page that uses a layout, you will only be able to scope the experiment to the entire page.
+1. In the next step, set the experimentation scope to **entire** if experimenting on the full entity and to **partial** if experimenting on a small portion of the entity. If you associate your experiment with a page that uses a layout, you will only be able to scope the experiment to the entire page.
     > [!NOTE]
     > Remember to enable the "Experiment on pages or fragments" feature flag if you want to experiment on a full page or fragment.
 1. In the final step, click on **Generate variations and exit wizard** to auto-generate the variations. These are nothing but copies of the original page or fragment you previously chose. 
