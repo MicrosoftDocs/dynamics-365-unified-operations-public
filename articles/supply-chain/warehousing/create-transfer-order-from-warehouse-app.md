@@ -37,8 +37,7 @@ ms.dyn365.ops.version: 10.0.15
 This feature lets warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and can following scan one or more license plates using the app.
 When the warehouse worker selects the **Complete order** a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates.
 
-
-## Enable the create transfer orders from Warehouse app feature
+## <a name="enable-create-transfer-order-from-warehouse-app"></a>Enable the create transfer orders from Warehouse app feature
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
 
@@ -47,8 +46,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 The feature is dependent on having the feature [Process warehouse app events](warehouse-app-events.md) enabled.
 
-
-### Set up a mobile device menu item to create transfer orders
+### <a name="setup-warehouse-app-menu"></a>Set up a mobile device menu item to create transfer orders
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 2. Select **New** to add a new menu item. Then make the following settings to get started:
@@ -64,7 +62,142 @@ The feature is dependent on having the feature [Process warehouse app events](wa
     - **Release to warehouse**
     - **Ship confirm**
     - **Release and ship confirm**
+5. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**
+9. Select Edit.
+10.	Select a existing menu following selection of the new menu item under **Available menus and menu items**. Add the menu item into by clicking the "->".
 
-You can read in detail about the automated batch job setup process in the example #####
+
+# Example scenario using the feature in an automated way
+
+You will get an overview of process of getting transfer orders created and outbound processed based on the on-hand inventory registered on license plates.
+
+To work through this scenario using the values suggested here, you must work on a system with demo data installed and select the USMF legal entity before you begin.
+
+It is assumed that you already have enabled the feature [Enable the create transfer orders from Warehouse app](#enable-create-transfer-order-from-warehouse-app), including the [Warehouse app event processing](warehouse-app-events.md) capability and as well created a **Mobile device menu item** as described under
+[Set up a mobile device menu item to create transfer orders](#setup-warehouse-app-menu).
+
+## Example Scenario blueprint
+You are a retailer and have multiple license plates each containing a mix of items placed at a specific location within one of your warehouse **51**.
+You would like to enable the process of creating a transfer order to another warehouse for all the license plates and automatically ship update the transfer order.
+
+
+### Set up work templates to auto process to auto process and break work by Located license plateP
+
+In this section it will be explained how to enable a work template to automatically process the work created by the template when a wave is released.
+
+1. Go to  **Warehouse management \> Setup \> Work \gt; Work templates**.
+2. Select **Edit**.
+3. In the **Work order type** select **Transfer issue**.
+4. Select **+New** to create a new work template with Work template name **Auto process LP**
+5. Enable **Automatically process**.
+6. Add two work template details lines for work type **Pick** and **Put**. Use **Work Class ID TransfOut** for both.
+7. Update the second **Put** line **Directive code** field to **Baydoor**.
+8. Make sure this new work template gets the lowest **Sequence number**.
+9. Select the **Edit query** and in the query select the **Sorting** section.
+10. Select **+Add** and lookup in **Field** the value **Located license plate ID**.
+11. Select **OK** following by **Yes** to reset the grouping and get back to the Work templates page.
+12. Select **Work header breaks** and enable the **Group by this field** for the **Located license plate ID** and close.
+
+> [!NOTE]
+> Not all setup can get auto processed. E.g. catch weight items and the use of mixed tracking dimensions.
+
+### Setup Location directives for License plate guided strategy
+
+In this section it will be explained how to enable a location directive pick process to use the **License plate guided** strategy.
+
+1. Go to **Warehouse management \> Setup \> Location directives**.
+2. Select **Edit**.
+3. In the **Work order type** select **Transfer issue**.
+4. Select the existing location directive **51 TO Pick** and enable the **Allow split** for the existing location directive line.
+5. For the existing location directive action select **License plate guided** in the **Strategy** option.
+
+> [!NOTE]
+> The **License plate guided** strategy will try to reserve and create picking work against the locations holding the requested license plates that have been associated with the transfer order lines. But in case this is not possible and you still would like to create picking work you should fall back to another location directive action strategy, and perhaps also search for inventory in another area of the warehouse, depending on the business process needs.
+
+### Setup the Process warehouse app events batch job
+
+In this section it will be explained how to setup a scheduled batch job going to process the warehouse app events for the transfer order creation and line updates.
+
+1. Go to  **Warehouse management \> Periodic tasks \> Process warehouse app events**.
+2. Enable **Batch processing** under the **Run in background** section.
+3. Select  **Recurrence**  and setup the batch job to process based on interval needed for your business.
+4. Select  **OK**  to return to the main dialog.
+5. Select **OK** in the main dialog to get the batch job added to the batch queue.
+
+### Setup the Automatic release of transfer orders batch job
+
+In this section it will be explained how to setup a scheduled batch job going to release the transfer orders that have been marked as &quot;ready to release&quot;.
+
+1. Go to  **Warehouse management \> Release to warehouse \> Automatic release of transfer orders**.
+2. Select **Filter** under the **Records to** include section.
+3. Insert a range for the table **Transfer line release to warehouse** , field **Outbound shipment policy** and select **Criteria** as **Release and ship confirm**.
+4. Select **OK** to return to the main dialog.
+5. Enable **Batch processing** under the **Run in background** section.
+6. Select  **Recurrence**  and setup the batch job to process based on interval needed for your business.
+7. Select  **OK**  to return to the main dialog.
+8. Select **OK** in the main dialog to get the batch job added to the batch queue.
+
+### Setup the Process outbound shipment batch job
+
+In this section it will be explained how to setup a scheduled batch job going to run the outbound shipment confirmation for loads ready to ship related to transfer order lines which are &quot;ready to ship&quot;.
+
+1. Go to  **Warehouse management \> Periodic tasks \> Process outbound shipments**.
+2. Select **Filter** under the **Records to** include section.
+3. Select the **Joins** button following a selection of the Loads table in the hierarchy list.
+4. Select the **+Add table join** and mark the relation **Load details (Load ID)**. Then press the "Select" button.
+5. Continue this process from the **Load details** to get the **Transfer order lines** joined, following the **Invent Transfer Additional Fields** table.
+6. Select the **Range** section and insert a range for the table **Loads** , field **Load status** and select **Criteria** as **Loaded**.
+7. Add another line for the table **Invent Transfer Additional Fields** , field **Outbound shipment policy** and select **Criteria** as **Release and ship confirm**.
+8. Select  **OK**  to return to the main dialog.
+9. Enable **Batch processing** under the **Run in background** section.
+10. Select  **Recurrence**  and setup the batch job to process based on interval needed for your business.
+10. Select  **OK**  to return to the main dialog.
+12. Select **OK** in the main dialog to get the batch job added to the batch queue.
+
+## Processing with the "Create transfer order from the warehouse app"
+
+### Add on-hand on a license plate
+
+As a starting point for this scenario you will need to have a license plate containing physical available inventory on-hand.
+
+| Item | Warehouse | Inventory status | Location | License plate | Quantity |
+| --- | --- | --- | --- | --- | --- |
+| A0001 | 51 | Available | LP-010 | LP10 | 1 |
+| A0002 | 51 | Available | LP-010 | LP10 | 2 |
+
+Add physical inventory on-hand quantities by using the following values:
+
+> [!NOTE]
+> You will need to create the license plate and use locations which allows to carry mixed items, like LP-010.
+
+### Create and process transfer orders from the warehouse app
+
+1. Open the app and login as user **51**. Current user warehouse will be 51.
+2. Select the menu item from [Set up a mobile device menu item to create transfer orders](#setup-warehouse-app-menu).
+3. Create transfer order by selecting to-warehouse **61** in the **Warehouse** field. The new transfer order will be going from current warehouse 51 to destination warehouse 61.
+4. Scan a license plate **LP10** into the **License plate** field to add the license plate to the transfer order.
+5. Click on the menu button and select **Complete order** to finalize the warehouse app transfer order creation.
+
+For the above-mentioned example two **Warehouse app events** (_Create transfer order_ and _Complete transfer order_) gets used.
+
+
+
+### Inquire the warehouse app events
+You can view the event queue and events messages generated by the warehouse app by going to **Warehouse management \> Inquiries and reports \> Mobile device logs \> Warehouse app events**. 
+
+The _Create transfer order_ event messages will get created in the status **Waiting** which means that the **Process warehouse app events** batch job will not pick-up and process the event messages. As soon as the event messages gets updates to status **Queued** the batch job will process the events. This will happen at the same time as the creation of the _Complete transfer order_ event (**Complete order** button click). When the _Create transfer order_ event messages has been processed the status gets updated to **Completed** or **Failed**. When the _Complete transfer order_ status gets updated to **Completed,** all the related events gets deleted from the queue.
+
+Because the **Warehouse app events** for the creation of transfer order data will not get processed by the batch job before the messages gets updated into status **Queued** , you will need to look-up the requested transfer order numbers as part of the **Identifier** field.
+
+As part of the warehouse event processing it might happen that the creation of the transfer order lines fails. In this case the state of the event message will get updated to **Failed** and you can use the **Batch log** information to read why and use take action to correct any problems.
+
+Typical issues could be related to missing setup for the process, like e.g. a missing transit warehouse for the _Create transfer order_ event. In an example like this this, you would simply add a transit warehouse to the shipping warehouse and change the status for all the warehouse app event messages via the **Reset** option from **Failed** into **Queued** which will mean that the batch job will process the event messages again after the correction of the setup data.
+
+Within production environments, the exceptions would of cause be more process related, like e.g. having a requested license plate which at the batch job processing time is empty and thereby no transfer order lines can get created. This failed event message can either be removed by using the **Delete** option or you can add the needed physical on-hand on the license plate and use the **Reset** option for all the related event messages.
+
+More information can be found here: [Warehouse app event processing](warehouse-app-events.md).
+
+
+### Following the automated batch job processes
 
 
