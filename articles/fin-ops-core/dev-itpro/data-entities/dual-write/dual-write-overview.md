@@ -110,5 +110,5 @@ To create parity with Finance and Operations applications, dual-write makes some
 
 + Product [unit conversions](../../../../supply-chain/pim/tasks/manage-unit-measure.md) are supported for products, quotes, orders, and invoices.
 
-For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
+For more information about upcoming changes, see [What's new or changed in dual-write](whats-new-dual-write.md).
 
