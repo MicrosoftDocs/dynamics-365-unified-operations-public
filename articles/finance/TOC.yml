@@ -1818,6 +1818,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: Deferred sales tax calculations
+          href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
         items:
         - name: Iceland overview
