@@ -298,9 +298,9 @@ After you turn on the **Configurable Electronic invoicing add-on integration** f
     ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## Privacy notice
-By enabling the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features, limited data, which includes the organization tax registration ID, will be transmitted to third party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features by navigating to **Organization administration \> Setup \> Electronic document parameters**, clicking the **Features** tab, choosing the rows containing the MX-00010 and MX-00016 features and then making the appropriate selection.
+Enabling the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features by navigating to **Organization administration \> Setup \> Electronic document parameters**. Select the **Features** tab, select the rows containing the MX-00010 and MX-00016 features, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privacy notice sections in country-specific feature documentation for more information.
 
-## Related topics
+## Additional resources
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
