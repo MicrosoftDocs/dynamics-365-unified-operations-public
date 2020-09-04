@@ -79,7 +79,7 @@ The following illustration shows the five main steps that you will complete in t
 1. Sign in to your LCS account.
 2. Select the LCS deployment project. Before you can select the project, it must be up and running.
 3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-4. Select **Electronic invoicing add-on**.
+4. Select **Business Document Submission**.
 5. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
 6. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
 
