@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMDimensionMember
+ms.search.form: CAMDimensionMember, CAMCostObject
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

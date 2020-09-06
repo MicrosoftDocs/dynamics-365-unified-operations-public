@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SUMIFS">SUMIFS ER function</a>
+# SUMIFS ER function
 
 [!include [banner](../includes/banner.md)]
 

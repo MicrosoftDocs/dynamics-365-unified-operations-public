@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: Release 10.0.10
 ---
 
 # Quality management for warehouse processes
