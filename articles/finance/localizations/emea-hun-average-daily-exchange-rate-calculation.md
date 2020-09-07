@@ -139,10 +139,10 @@ This example walks you through the function for calculating the average exchange
 | March 3, 2020 | Bank             | DEMF USD    |           | 150        | Vendor                  | DE-001             | USD          | 92.0000           |
 | March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 92.0000           |
 
-The value **92** for second line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93)/(100 + 200 + 100).
+The value **92.0000** for second line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93)/(100 + 200 + 100). Three earlier incoming transactions for 100, 200 and 100 were considered in calculation formula.
 
-The value **92** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150).
+The value **92.0000** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150). Three earlier incoming and one earlier outgoing transactions were considered in the formula.
 
-The Average exchange rate calculation method is available for the outgoing bank transaction. It considers posted bank transactions and not-posted bank transactions in the current general journal, which were created before considered outgoing bank transaction, for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions as a result of dividing total amount of the foreign currency by total amount of the accounting currency. The resulting exchange rate is then assigned to outgoing transactions.
+The Average exchange rate calculation method is available for the outgoing bank transaction. It considers posted bank transactions and not-posted bank transactions in the current general journal that were created before considered outgoing bank transaction, for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions as a result of dividing total amount of all earlier transactions in the foreign currency by total amount of all earlier transactions in the accounting currency. The resulting exchange rate is then assigned to outgoing transaction.
 
 The Daily exchange rate and Average exchange rate methods are also available for the petty cash transactions that you enter in the slip journal (**Cash and bank management** \> **Cash transactions** \> **Slip journal**). The same algorithm that is used for the bank transactions is used to calculate the average rate.
