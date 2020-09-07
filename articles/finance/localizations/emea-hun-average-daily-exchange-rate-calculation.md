@@ -140,6 +140,7 @@ This example walks you through the function for calculating the average exchange
 | March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 92.0000           |
 
 The value **92** for second line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93)/(100 + 200 + 100).
+
 The value **92** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150).
 
 The Average exchange rate calculation method is available for the outgoing bank transaction. It considers incoming bank transactions (both posted and not-posted transactions in the current general journal) for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions by using the arithmetic mean formula. The resulting exchange rate is then assigned to outgoing transactions.
