@@ -110,8 +110,8 @@ This example walks you through the function for calculating the average exchange
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| March 1, 2020 | Bank             | DEMF USD    | 100       |            | Customer                | DE-010             | USD          | 91                |
-| March 2, 2020 | Bank             | DEMF USD    | 200       |            | Customer                | DE-011             | USD          | 92                |
+| March 1, 2020 | Bank             | DEMF USD    | 100       |            | Customer                | DE-010             | USD          | 91.0000           |
+| March 2, 2020 | Bank             | DEMF USD    | 200       |            | Customer                | DE-011             | USD          | 92.0000           |
 
 6. Select **Post**.
 7. Go to **General ledger** \> **Journal entries** \> **General journals**, and select **New**.
@@ -120,9 +120,9 @@ This example walks you through the function for calculating the average exchange
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| March 3, 2020 | Bank             | DEMF USD    | 110       |            | Customer                | DE-012             | USD          | 93                |
-| March 3, 2020 | Bank             | DEMF USD    |           | 150        | Vendor                  | DE-001             | USD          | 93                |
-| March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 93                |
+| March 3, 2020 | Bank             | DEMF USD    | 100       |            | Customer                | DE-012             | USD          | 93.0000           |
+| March 3, 2020 | Bank             | DEMF USD    |           | 150        | Vendor                  | DE-001             | USD          | 93.0000           |
+| March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 93.0000           |
 
 10. Verify that the currency exchange rate value that is automatically entered on the lines is **93**.
 11. Select **Functions** \> **Exchange rate calculation**.
@@ -135,11 +135,12 @@ This example walks you through the function for calculating the average exchange
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| March 3, 2020 | Bank             | DEMF USD    | 110       |            | Customer                | DE-012             | USD          | 93                |
-| March 3, 2020 | Bank             | DEMF USD    |           | 150        | Vendor                  | DE-001             | USD          | 92                |
-| March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 92                |
+| March 3, 2020 | Bank             | DEMF USD    | 100       |            | Customer                | DE-012             | USD          | 93.0000           |
+| March 3, 2020 | Bank             | DEMF USD    |           | 150        | Vendor                  | DE-001             | USD          | 92.0000           |
+| March 3, 2020 | Bank             | DEMF USD    |           | 250        | Vendor                  | DE-01001           | USD          | 92.0000           |
 
-The value **92** was calculated as (91 + 92 + 93) ÷ 3, where 91 is the exchange rate for the incoming posted bank transaction on March 1, 2020, 92 is the exchange rate for the incoming posted bank transaction on March 2, 2020, and 93 is the exchange rate for the incoming not-posted bank transaction on March 3, 2020 in the same journal.
+The value **92** for second line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93)/(100 + 200 + 100).
+The value **92** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150).
 
 The Average exchange rate calculation method is available for the outgoing bank transaction. It considers incoming bank transactions (both posted and not-posted transactions in the current general journal) for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions by using the arithmetic mean formula. The resulting exchange rate is then assigned to outgoing transactions.
 
