@@ -72,7 +72,7 @@ The warehouse app processing has a very simple main process flow consisting of:
 2. Repeatable identification of License plates going to get shipped.
 3. **Complete order** indication via warehouse app menu button.
 >[!Note]
-> It is possible for multiple workers to assign license plates intended for the same transfer order by using the the **Select transfer order** button to select an existing, unprocessed, transfer order number from the warehouse app event queue. For information about how to find the transfer order number values, see [Inquire the warehouse app events]("##inquire-the-warehouse-app-events").
+> It is possible for multiple workers to assign license plates intended for the same transfer order by using the the **Select transfer order** button to select an existing, unprocessed, transfer order number from the warehouse app event queue. For information about how to find the transfer order number values, see [Inquire the warehouse app events](#inquire-the-warehouse-app-events).
 
 # Example scenario using the feature in an automated way
 You will get an overview of process of getting transfer orders created and automatically outbound processed based on the on-hand inventory registered on license plates.
@@ -247,7 +247,7 @@ The follwing happend in the scenario:
 
 >Q: How can I find existing transfer orders to be used via the **Select transfer order** button in the warehouse app, if the order has not yet been created in the backend system?
 >
->A: Currently, you can't look up transfer orders in the app, but you can find the transfer order numbers in the **Warehouse app events** page, see: [Inquire the warehouse app events]("#inquire-the-warehouse-app-events").
+>A: Currently, you can't look up transfer orders in the app, but you can find the transfer order numbers in the **Warehouse app events** page, see: [Inquire the warehouse app events](#inquire-the-warehouse-app-events).
 
 >Q: Can I manually select the transfer order number to be used from the warehouse app?
 >
