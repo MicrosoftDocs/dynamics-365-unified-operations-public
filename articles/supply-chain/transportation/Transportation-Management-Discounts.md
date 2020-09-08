@@ -1,15 +1,38 @@
-Transportation Management Discounts
-===================================
+---
+# required metadata
 
-Within Transportation management you can setup discounts to be applied on top of
-the transportation price calculated by the rating engine. A discount given
-either as a % of charges calculated or as a fixed amount.
+title: Transportation management discounts
+description: This topic describes the options for setting up discounts for transportation charges.
+author: Henrikan
+manager: tfehr
+ms.date: 09/08/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-Importantly working with transportation discounts enable you to define whether
-to pass on the discount to the end customer , by choosing discount type
-customer, or to retain it in the company, by choosing discount type shipper.
-This enables you to define a setup by which you earn a margin on the freight
-charge calculated.
+# optional metadata
 
-The discount can be setup using multiple qualifiers such as carrier, carrier
-service, delivery terms, customer, destination, and more.
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: henrikan
+ms.search.validFrom: 2020-09-08
+ms.dyn365.ops.version: Release 10.0.14
+---
+
+# Transportation management discounts
+
+[!include [banner](../includes/banner.md)]
+
+Transportation management lets you set up discounts to be applied on top of the transportation price calculated by the rating engine. You can specify each discount either as a percentage of charges or as a fixed amount.
+
+You can choose whether to pass the discount on to your customer (by setting the discount type to customer) or to retain it in the company (by setting the discount type to shipper). This lets you define a setup in which you earn a margin on the calculated freight charges.
+
+You can set up multiple qualifiers for each discount, such as carrier, carrier service, delivery terms, customer, destination, and more.
