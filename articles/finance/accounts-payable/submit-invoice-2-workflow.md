@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  VendPaymentWorkspace
+ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
