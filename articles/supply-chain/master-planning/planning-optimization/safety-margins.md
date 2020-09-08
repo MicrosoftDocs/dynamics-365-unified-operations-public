@@ -2,7 +2,7 @@
 # required metadata
 
 title: Safety margins
-description: This topic describes how safety margins works with Planning Optimization.
+description: This topic describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: tfehr
 ms.date: 08/18/2020
@@ -37,158 +37,149 @@ This topic describes how safety margins can be used with the Planning Optimizati
 
 ## Safety margins overview
 
-The purpose of safety margins is to enable a setup with some buffer time beyond the normal lead time. An example is that material needs to be unpacked or inspected after arrival from the vendor. In this scenario, we can't just add the extra time to the purchase lead time because this would just give the supplier the additional buffer time. In this example, the receipt margin can be used to ensure that the supplier delivers earlier, and thereby provide buffer time to handle the goods internally.
+The purpose of safety margins is to enable a setup that provides some buffer time beyond the normal lead time. For example, when material must be unpacked or inspected after it arrives from the vendor, you can't just add the extra time to the purchase lead time, because this approach will give the additional buffer time to the supplier. In this example, the receipt margin can be used to ensure that the supplier delivers earlier. This approach provides buffer time so that the goods can be handled internally.
 
 There are three types of safety margins:
 
-- **Reorder margin** – buffer time for placing the supply order
-- **Receipt margin** – buffer time for handling incoming supply
-- **Issue margin** – buffer time for handing shipment
+- **Reorder margin** – The buffer time for placing the supply order
+- **Receipt margin** – The buffer time for handling incoming supply
+- **Issue margin** – The buffer time for handling shipments
 
-The following diagram shows how these safety margins apply over time.
+The following illustration shows how these safety margins apply over time.
 
 ![Safety margins](media/safety-margins-1.png)
 
-All margins are defined in days. Default value is 0 (zero), meaning that no margin is applied. If you set up multiple margins, they will all add to the total time from the supply *order date* to the demand *requirement date*.
-
-For example, a setup with no lead time and all thee margin types set to one day will result in three days between the supply order date and the demand requirement date.
+All margins are defined in days. The default value, *0* (zero), indicates that no margin is applied. If you set up multiple margins, they all add to the total time from the supply *order date* to the demand *requirement date*. For example, a setup has no lead time, and all three margin types are set to one day. In this case, there will be three days between the supply order date and the demand requirement date.
 
 ### Receipt margin
 
-Receipt margin is probably the most used of the three safety margins. It is applied to the delivery date and backward from the *requirement date*. Meaning that the products should be received "Receipt margin days" before they are required.
+The receipt margin is probably the most used of the three safety margins. It's applied to the *delivery date* and backward from the *requirement date*. In other words, the products should be received the specified number of receipt margin days before they are required.
 
-The following diagram highlights the receipt margin.
+The following illustration highlights the receipt margin.
 
-![Safety margins](media/safety-margins-2.png)
+![Receipt margin](media/safety-margins-2.png)
 
-This is typically used as a buffer to ensure time for warehouse registration, or other time-consuming processes that are not captured as part of the general lead time in the system. For purchases, it gives the benefit that the *delivery date* of the purchase order is moved forward accordingly. If the lead time was increased, instead of using a safety margin, then the vendor would still be asked to deliver at the last minute.
+The receipt margin is typically used as a buffer to ensure time for warehouse registration or other time-consuming processes that aren't captured as part of the general lead time in the system. For purchases, one benefit is that the *delivery date* of the purchase order is moved forward accordingly. If you  increase the lead time instead of using a safety margin, the vendor will still be asked to deliver at the last minute.
 
-Notice that the *requirement date* of the supply is not changed by the receipt margin. This means that the receipt margin is not visible directly when comparing requirement dates for demand and supply (for example, on the **Net requirements** page).
+Notice that the receipt margin doesn't change the *requirement date* of the supply. Therefore, the receipt margin isn't directly visible when requirement dates for demand and supply are compared (for example, on the **Net requirements** page). For example, if the receipt margin is set to four days, and a purchase order line is planned for receipt on the fifteenth of the month, master planning calculates the adjusted receipt date as the nineteenth of the month.
 
-For example, if the receipt margin is set to four days and a purchase order line is planned for receipt on the 15th of the month, then master planning calculates the adjusted receipt date as the 19th of the month.
-
-Note that receipt margin is not applied when using on-hand as the supply. All on-hand is assumed to be available immediately, regardless of when it was actually received.
+Note that a receipt margin isn't applied when on-hand inventory is used as the supply. All on-hand inventory is assumed to be available immediately, regardless of when it was actually received.
 
 ### Reorder margin
 
 > [!NOTE]
-> _**Coming soon** – This feature isn't yet supported for Planning Optimization. Until supported, all values entered for **Reorder margin added to item lead time** will be treated as zero (0)._
+> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Reorder margin added to item lead time** will be treated as *0* (zero).
 
-The following diagram highlights the reorder margin.
+The following illustration highlights the reorder margin.
 
-![Safety margins](media/safety-margins-3.png)
+![Reorder margin](media/safety-margins-3.png)
 
-The reorder margin is added prior to the item lead time for all planned orders during master planning, ensuring additional time for placing a supply order.
-
-This is typically used as a buffer to ensure time for approval processes or other internal processes needed during creation of supply orders. Reorder margin is placed between the Supply *order date* and *start date*.
+The reorder margin is added before the item lead time for all planned orders during master planning. Therefore, it ensures additional time for a supply order to be placed. This margin is typically used as a buffer to ensure time for approval processes or other internal processes that are required during the creation of supply orders. The reorder margin is put between the supply *order date* and *start date*.
 
 ### Issue margin
 
 > [!NOTE]
-> _**Coming soon** – This feature isn't yet supported for Planning Optimization. Until supported, all values entered for **Issue margin deducted from requirement date** will be treated as zero (0)._
+> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Issue margin deducted from requirement date** will be treated as *0* (zero).
 
-The following diagram highlights the issue margin.
+The following illustration highlights the issue margin.
 
-![Safety margins](media/safety-margins-4.png)
+![Issue margin](media/safety-margins-4.png)
 
-The issue margin is deducted from the demand requirement date during master planning. It helps ensure time to react to and ship incoming demand orders. This is typically used as a buffer to ensure time for shipment and related outbound warehouse processes.
+The issue margin is deducted from the demand requirement date during master planning. It helps ensure that you have time to react to and ship incoming demand orders. This margin is typically used as a buffer to ensure time for shipment and related outbound warehouse processes.
 
-Notice that when an issue margin is applied, related supply and demand requirement dates will not match. Instead, they will differ by the Issue margin because the issue margin is added between the supply requirement date and the demand requirement date.
+Notice that when an issue margin is applied, related supply and demand requirement dates don't match. Instead, they differ by the issue margin, because the issue margin is added between the supply *requirement date* and the demand *requirement date*.
 
 ## Set up safety margins
 
-### Enable safety margins in feature management
+### Turn on safety margins in Feature management
 
-Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- **Module:**  _Master planning_
-- **Feature name:**  _Margins for Planning Optimization_
+- **Module:** _Master planning_
+- **Feature name:** _Margins for Planning Optimization_
 
 ### Define safety margins
 
-Safety margins comes with a flexible setup that can be set on both the *coverage group* and *master plan*. It is important to notice that the margins are added on top of each other. For example, a *receipt margin* of 2 days on the coverage group and 3 days on the master plan will result in an effective *receipt margin* of 5 days.
+Safety margins have a flexible setup. They can be set on both the *coverage group* and the *master plan*. It's important that you understand that the margins are added on top of each other. For example, a receipt margin of two days on the coverage group and three days on the master plan will produce an effective receipt margin of five days.
 
-Setting the margin on the master plan can be useful for simulating longer lead times or uncertainty with a specific plan, without affecting the daily planning.
+The ability to set the margin on the master plan can be useful when you want to simulate longer lead times or uncertainty for a specific plan, but without affecting the daily planning.
 
 #### Coverage group safety margins
 
-To apply a safety margin to a coverage group:
+To apply a safety margin to a coverage group, follow these steps.
 
 1. Go to **Master planning \> Setup \> Coverage groups**.
-1. Select the desired coverage group from the list pane.
-1. Expand the **Other** FastTab.
-1. Set the safety margins (in days) as required using the following fields from the **Safety margins in days** section:
-    - **Receipt margin added to requirement date**
-    - **Issue margin deducted from requirement date**
-    - **Reorder margin added to item lead time**
+1. In the list pane, select the desired coverage group.
+1. On the **Other** FastTab, in the **Safety margins in days** section, use the following fields to set the required safety margins (in days):
+
+    - Receipt margin added to requirement date
+    - Issue margin deducted from requirement date
+    - Reorder margin added to item lead time
 
 #### Master plan safety margins
 
-To apply a safety margin to a master plan:
+To apply a safety margin to a master plan, follow these steps.
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
-1. Select the desired master plan from the list pane.
-1. Expand the **Safety margins in days** FastTab.
-1. Set the safety margins (in days) as required using the following fields:
-    - **Receipt margin added to requirement date**
-    - **Issue margin deducted from requirement date**
-    - **Reorder margin added to item lead time**
+1. In the list pane, select the desired master plan.
+1. On the **Safety margins in days** FastTab, use the following fields to set the required safety margins (in days):
 
-### Calendars
+    - Receipt margin added to requirement date
+    - Issue margin deducted from requirement date
+    - Reorder margin added to item lead time
 
-You can set all safety margins to be calculated based on calendar days or on work days. To set this option:
+### Define whether calculations are based on calendar days or work days
 
-1. Go to **Master planning \> Setup \> Master planning parameters**
-1. Open the **General** tab.
-1. In the **Safety margins in days** section, set **Working days** to *Yes* to calculate margins based on working days. Set it to *No* to calculate based on calendar days.
+You can set all safety margins so that they are calculated based on either calendar days or work days.
 
-For example, a calendar is open Monday to Friday and closed Saturday to Sunday. With a receipt margin of one day, a requirement date on a Monday would result in a delivery date on the previous Friday because Saturday to Sunday are non-working days.
+1. Go to **Master planning \> Setup \> Master planning parameters**.
+1. On the **General** tab, in the **Safety margins in days** section, set the **Working days** option to *Yes* to calculate margins based on working days. Set the option to *No* to calculate margins based on calendar days.
 
-The calendar used to determine the working days depends on the setup and supply type. It can be controlled by the calendars of the *coverage group*, the *warehouse*, and the *vendor*.
+For example, a calendar is open from Monday through Friday and closed from Saturday through Sunday. If there is a receipt margin of one day, a requirement date on a Monday produces a delivery date on the previous Friday, because Saturday and Sunday aren't working days.
+
+The calendar that is used to determine the working days depends on the setup and the supply type. It can be controlled by the calendars of the coverage group, the warehouse, and the vendor.
 
 > [!NOTE]
-> If warehouse is not part of the coverage dimension (in other words, planning is only based on site) then the warehouse calendar isn't used.
+> If *warehouse* isn't part of the coverage dimension (in other words, planning is based only on *site*), the warehouse calendar isn't used.
 
-The system can handle a setup with one or more calendars defined. The following subsections describe the possible combinations that can be used to control the result.
+The system can handle a setup where one or more calendars are defined. The following subsections describe the possible combinations that can be used to control the result.
 
-#### Calendar used for duration
+#### Calendar that is used for the duration
 
-The actual total lead time in calendar days, from supply order date to demand requirement date, is controlled by the defined calendars.
+The defined calendars control the actual total lead time in calendar days, from supply the order date to the demand requirement date. The following calendar prioritization is used:
 
-The following calendar prioritization is used:
+- **Purchase lead time** – Only the coverage group calendar is considered.
+- **Receipt margin** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
+- **Issue margin** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
+- **Order margin** – Only the coverage group calendar is considered.
 
-- **Purchase lead time**: Only the coverage group calendar is considered.
-- **Receipt margin**: The coverage group calendar is used, if defined. Otherwise the warehouse calendar is used.
-- **Issue margin**: The coverage group calendar is used, if defined. Otherwise the warehouse calendar is used.
-- **Order margin**: Only the coverage group calendar is considered.
+#### Calendar that is used for the final date
 
-#### Calendar used for final date
+The following rules are applied to determine whether the planning engine can use a given date for a given date type:
 
-To determine whether a given date is available for the planning engine to use for a given date type, the following rules are applied:
-
-- **Purchase receipt date**: The vendor calendar is used, if defined. Otherwise, the coverage group calendar is used, if defined. If neither is defined, the warehouse calendar is used.
-- **Transfer receipt date**: The coverage group calendar is used, if defined. Otherwise the warehouse calendar is used.
-- **Production receipt date**: The coverage group calendar is used, if defined. Otherwise the warehouse calendar is used.
-- **Demand issue open day**: The warehouse calendar is sued, if defined. Otherwise the coverage group calendar is used.
-- **Order open day**: Use a combination (intersection) of coverage group and vendor calendars, where both must be open to use the date. If only one of the calendars is defined, then that calendar is used alone.
+- **Purchase receipt date** – The vendor calendar is used, if it's defined. Otherwise, the coverage group calendar is used, if it's defined. If neither of those calendars is defined, the warehouse calendar is used.
+- **Transfer receipt date** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
+- **Production receipt date** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
+- **Demand issue open day** – The warehouse calendar is used, if it's defined. Otherwise, the coverage group calendar is used.
+- **Order open day** – A combination (intersection) of the coverage group calendar and the vendor calendar is used. Both calendars must be open to use the date. If only one of the calendars is defined, that calendar is used alone.
 
 #### Calendar setup overview matrix
 
-The following chart summarizes which calenders apply when calculating safety margins. The following abbreviations and colors are used to indicate where each type of calendar is specified:
+The following illustration presents a matrix that summarizes which calendars apply when safety margins are calculated. The following abbreviations and colors are used to indicate where each type of calendar is specified:
 
-- CG (green): Coverage group
-- WH (yellow): Warehouse
-- V (blue): Vendor
+- **Coverage group (CG):** Green
+- **Warehouse (WH):** Yellow
+- **Vendor (V):** Blue
 
-![Safety margins](media/safety-margins-calendar-matrix.png)
+![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)
 
 ## Calculating delays
 
-All three types of safety margins are included when determining if an order is delayed.
+All three types of safety margins are included when the system determines whether an order is delayed.
 
-For example, you have an item with a lead time of 1 day and a receipt margin of 3 days. We have a sales order for this item, which is set as required today. The delay will be: *lead time + receipt margin = 4 days*. So, if today is August 14th, then the 4 days of delay would result in a delivery on the 18th. The following diagram illustrates this example:
+For example, an item has lead time of one day and a receipt margin of three days. A sales order for this item is set as required today. In this case, the delay is calculated as *lead time* + *receipt margin* = four days. Therefore, if today is August 14, the four days of delay produces a delivery on August 18. The following illustration shows this example.
 
-![Safety margins](media/safety-margins-delays.png)
+![Delay calculation example](media/safety-margins-delays.png)
 
 ## Additional resources
 
