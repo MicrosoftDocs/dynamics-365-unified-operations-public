@@ -49,7 +49,7 @@ When there is more than one trade agreement for a given date, then the trade agr
 A purchase order can be created from a sales order. For more details see [Create a purchase order from a sales order](https://docs.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-purchase-order-sales-order).
 
 ## Unable to cancel or delete a return order or a sales order
-Only sales orders and return orders in the state 'Created' can be cancelled. 
+Only sales orders and return orders in the state 'Created' can be cancelled. See more [Cancel a return order](https://docs.microsoft.com/en-us/dynamics365/supply-chain/service-management/cancel-return-order)
 
 ## Getting the error 'Reservations cannot be removed because there is work created which relies on the reservations.' when trying to cancel a sales order.
 If there is work associated to the sales order (even if the work is closed), it will not allow to cancel the sales order until the work is cancelled and reversed.
