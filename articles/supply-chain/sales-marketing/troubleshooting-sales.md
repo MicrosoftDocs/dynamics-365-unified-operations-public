@@ -60,6 +60,8 @@ If there is work associated to the sales order (even if the work is closed), it 
 3. Then delete the load which will delete the shipment as well.
 4. It should then be possible to go to the sales order and cancel the sales order.
 
+## It is not possible to cancel an intercompany PO that is linked to a sales order. Error message: Quantity cannot be reduced because the remaining update quantity changes sign
+This issue has been fixed in 10.0.13. It is possible to cancel an intercompany PO that is linked to a sales order from 10.0.13.
 
 ## Additional resources
 
