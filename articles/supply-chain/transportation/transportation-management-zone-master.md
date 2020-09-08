@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transportation management zone master
-description: Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
+description: Transport management lets you divide geographic locations into zones, which can help simplify transportation pricing, optimize load planning, and optimize route planning
 author: Henrikan
 manager: 
 ms.date: 09/08/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-Transport management allows you divide geographic locations into zones. Dividing locations into zones can help to:
+Transport management lets you divide geographic locations into zones. Dividing locations into zones can help to:
 
 - **Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.
 - **Optimize load planning** – By consolidating loads by zones.
