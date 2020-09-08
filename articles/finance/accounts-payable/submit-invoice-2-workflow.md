@@ -52,6 +52,6 @@ To view the **Last match** status for invoices that are not part of the Automati
 
 The following conditions will exclude an invoice line from the automated processing:
 
-- Invoice lines whose **Automated receipt match status** is **Failed** 
+- Invoice lines whose **Automated receipt match status** is **Failed** are not included 
 - Invoices that are in use are not included 
 - Invoices that are in workflow are not included
