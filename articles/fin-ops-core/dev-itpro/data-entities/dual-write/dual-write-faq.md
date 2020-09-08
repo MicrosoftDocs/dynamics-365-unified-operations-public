@@ -58,13 +58,11 @@ Dual-write is transaction-based. For example, if a change in a Finance and Opera
 
 You must have two Azure Active Directory (Azure AD) applications set up for the Finance and Operations environment and two application users set up in the Common Data Service environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
+End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Common Data Service and Finance and Operations environments. 
+
 ### I have multiple legal entities. Some of my maps are legal entity–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 
 Legal entity mapping can be done when the Common Data Service environment is linked. You can't map entity maps to a specific legal entity.
-
-### Can I use both Data integrator and dual-write at the same time? If I can, does simultaneous use cause any referential integrity issues?
-
-You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it before you set up dual-write. We recommend that you adopt one of the two patterns anytime. We recommend that you use dual-write as the integration pattern.
 
 ### If dual-write solutions are installed in Common Data Service, can I uninstall them?
 
@@ -86,7 +84,7 @@ It's important that keys be matched between the Finance and Operations environme
 
 ### How do I move entity maps between environments? Is version control supported for entity maps?
 
-You can export maps and then import them into a different environment. You can automate the process by using Azure DevOps. For more information, see [Update entity maps and export them to other environments as a solution](app-lifecycle-management.md#update-entity-maps-and-export-them-to-other-environments-as-a-solution).
+You can export maps and then import them into a different environment. You can automate the process by using Azure DevOps. You can have version control on your dual-write mappings, because the mappings are solution-aware components. For more information, see [Update entity maps and export them to other environments as a solution](app-lifecycle-management.md#update-entity-maps-and-export-them-to-other-environments-as-a-solution).
 
 ### Where can I find examples and patterns for filtering dual-write maps?
 
@@ -98,11 +96,11 @@ For more advanced Finance and Operations filters, see [Using Expressions in Quer
 
 ### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Will the other side fail too?
 
-When the integration is in live sync mode, if one app fails, you will receive an error, and the other app will fail too. When the integration is paused, changes are staged. They are then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications)
+When the integration is in live sync mode, if the sync fails on one of the apps, then the other app will fail as well and users will receive an error. When the integration is paused, changes are staged. They are then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications)
 
 ### When live synchronization is paused and then resumed, does it follow the sequence of changes? For example, if the Name field in the Finance and Operations app is changed from NameA to NameB to NameC, is customer engagement data changed from NameA to NameB to NameC, or is it changed directly from NameA to NameC?
 
-The integration follows the complete sequence of changes. In the example, the customer engagement app is data changed from **NameA** to **NameB** to **NameC**.
+The integration follows the complete sequence of changes. In the example, the customer engagement app data is changed from **NameA** to **NameB** to **NameC**.
 
 ### How does dual-write work after a Disaster Recovery event? Does it automatically work with the secondary instance that is deployed in the secondary Azure region?
 
@@ -110,7 +108,12 @@ In a failover event, dual-write continues to work after the failover transition 
 
 ### How do I handle a Finance and Operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are no longer in sync. Is the synchronization done automatically?
 
-The transfer is a manual process that involves unlinking and linking the updated environments. Dual-write doesn't have APIs for these steps. Otherwise, the transfer could be automated in Microsoft Dynamics Lifecycle Services (LCS) by using LCS APIs and dual-write APIs.
+Each linked environment-pair (Finance and Operations apps environment and Common Data Service environment) should be treated as a single unit and refreshed accordingly. For example, if you are refreshing a sandbox from production, then both Finance and Operations app sandbox environment and the Common Data Service sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
+
+    + Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
+    + Common Data Service entities: **DualwriteRuntimeConfiguration**. 
+    
+The environments need to be relinked and maps reactivated manually. We’ll be publishing the detailed steps for this process soon and this answer will be updated with a link to the new docs article once ready.
 
 ### I need real-time integration, and I want to move some entities or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern? 
 
@@ -122,11 +125,11 @@ For information about how to migrate Prospect to cash to dual-write, see [Migrat
 
 ### On Finance and Operations data entities, can I develop unbounded fields that flow to Common Data Service by using dual-write?
 
-Yes. You can use both [computed fields and virtual fields](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields). However, you should monitor the performance overhead from the additional X++ logic that is required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual fields to transform or calculate additional values through X++. You should expect to go back to Common Data Service within the same transaction.
+Yes. You can use both [computed fields and virtual fields](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields). However, you should monitor the performance overhead from the additional X++ logic that is required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual fields to transform or calculate additional values through X++ and expect that to go back to Common Data Service within the same transaction.
 
 ### When I use the Common Data Service offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Common Data Service environment and the Finance and Operations environment?
 
-To access Common Data Service data offline by using Common Data Service applications, you can use the Dynamics 365 Field Service mobile app. In both cases, data is stored offline and can be synced with the server at your direction. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, you can handle the error by using conflict management settings. For more information about conflict management settings, see [Common Data Service conflict management settings](https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin#step-23-set-conflict-detection-for-mobile-offline) and [Resco conflict resolution settings](https://docs.resco.net/wiki/Conflict_resolution).
+You can interact with Common Data Service data offline when using the Dynamics 365 for phones app or the Field Service Mobile app in offline mode. In both cases, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Common Data Service will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the Finance and Operations environment when the mapping is up and running again. 
 
 ## Mapping concepts between apps
 
@@ -146,6 +149,8 @@ Dual-write supports mappings only between cross-company entities or company-spec
 ### How do I make a company-specific entity in Common Data Service?
 
 You can make Common Data Service custom entities company-specific by adding a many-to-one (N:1) relationship between your custom entities and the out-of-box company entity. You should also include the company foreign key as part of the entity key. For more information, see [Company concept in Common Data Service](company-data.md).
+
+To enable entity maps for dual-write, you must define an alternate key in Common Data Service. The value of the alternative key in Common Data Service must match the key that is defined in the Finance and Operations app. For more information, see [Criteria for linking entities](enable-entity-map.md#criteria-for-linking-entities).
 
 ### Is there a document about best practices for entity usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these entities, and what is the use case for each?
 
