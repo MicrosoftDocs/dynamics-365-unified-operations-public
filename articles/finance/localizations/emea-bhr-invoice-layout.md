@@ -89,7 +89,7 @@ By default, invoices are generated as Microsoft Excel files. To enable their con
 
 In the **Electronic reporting** workspace, select the **Project invoice model mapping (RDP)** configuration. Turn on **Default model mapping** parameter for the selected configuration.
 
-![Enabling conversion to PDF](media/emea-bhr-pdf.jpg)
+![Project invoice model mapping configuration](media/invoice-model-tree.png)
 
 ## Configure parameters
 
