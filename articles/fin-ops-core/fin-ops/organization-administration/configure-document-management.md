@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,7 +83,7 @@ SharePoint communication works for the current user only if the following condit
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
 
-1. Verify the Admin account has an associated email account (verify or change this in the **User** page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply and refresh. Once complete, you can update the Admin account.
+1. Verify the Admin account has an associated email account (verify or change this in the **User** page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply, and refresh. Once complete, you can update the Admin account.
 
 2. After the Admin account has an associated email account, sign in to Dynamics as the admin.
 
@@ -131,17 +131,13 @@ The **Attach** button also shows a count of the attachments for the currently se
 
 In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
 
-> [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
-
 ## Attachment recovery
 
 In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.
 
 ### Configuration of attachment recovery
 
-Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero, this means that the deleted attachments will be recoverable for an indefinite period. 
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days but can be changed as needed. If the **Number of days to defer deletion** value is zero, this means that the deleted attachments will be recoverable for an indefinite period. 
 
 After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
@@ -159,7 +155,10 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
-When you work with attachments, you might want to be able to scan the files for viruses and malicious code. Although Finance and Operations apps don't provide this capability out of the box, extension points have been added so that customers can integrate file scanning software of their choice when working with attachments. A similar extension point has been added for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
+When you work with attachments, you might want to scan the files for viruses and malicious code. Therefore, in version 10.0.12 and later, extension points are available so that customers can integrate with the file scanning software of their choice when they work with attachments. A similar extension point is also available for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
+
+> [!IMPORTANT]
+> Out of the box, Finance and Operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
 
 The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
 
@@ -169,7 +168,7 @@ The **Docu** class exposes the following two delegates. Handlers can be implemen
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
 
-
+```xpp
     public final class ScanDocuments
     {
 
@@ -210,6 +209,7 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
         }
 
     }
+```
 
 ## Frequently asked questions
 

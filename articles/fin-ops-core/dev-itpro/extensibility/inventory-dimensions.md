@@ -49,10 +49,10 @@ In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensi
  
 This brings the total number of inventory dimensions in the standard application to 25:
 
-- 4 product dimensions: Color, Size, Style, and Config
+- 5 product dimensions: Color, Size, Style, Config, and Version
 - 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
 - 6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)
-- 10 unassigned generic dimensions: InventDimension1 to InventDimension10
+- 12 unassigned generic dimensions: InventDimension1 to InventDimension12
 
 Microsoft provides the physical schema.
 

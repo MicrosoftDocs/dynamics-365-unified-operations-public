@@ -41,9 +41,10 @@ These topics describe dual-write integration.
 + [What is dual-write?](dual-write-overview.md)
 
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
-    - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
+    - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
 
-+ [Frequently asked questions](dual-write-faq.md)
++ [What's new or changed in dual-write](whats-new-dual-write.md)
++ [Frequently asked questions](dual-write-faq.md)    
     
 ## Dual-write setup
 
@@ -62,6 +63,8 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize entity and field mappings](customizing-mappings.md)
++ [Handling multiple entity maps](multiple-entity-maps.md)
++ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 
