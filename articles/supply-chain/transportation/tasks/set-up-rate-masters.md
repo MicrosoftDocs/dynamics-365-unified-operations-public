@@ -13,7 +13,8 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType  
+# Added by Henrikan to reduce IPD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
@@ -32,6 +33,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure shows you how to set up a rate master. The logistic manager usually sets up rate masters, depending on the contracts signed with the carriers. In this scenario you will set up a rate master for an air carrier. The demo data company used to create this procedure is USMF.
 
+## Set up break master
+1. Go to Transportation management > Setup > Rating > Break master.
+    * Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions.  
+2. Click New.
+3. In the Break master field, type a value.
+4. In the Name field, type a value.
+5. In the Data type field, select the data type.
+6. In the Comparison field, type the kind of comparison requested using operators
+7. In the Break unit field type the break unit
+7. In the Details section create as many breaks as needed for the pricing structure.
+8. Toggle the expansion of the Details section.
+9. Click Save.
 
 ## Set up rate master
 1. Go to Transportation management > Setup > Rating > Rate master.
@@ -40,7 +53,7 @@ This procedure shows you how to set up a rate master. The logistic manager usual
 4. In the Name field, type a value.
 5. In the Rating metadata ID field, click the drop-down button to open the lookup.
     * The rating metadata ID will determine the data needed for the rate master, as it defines the metadata expected by the TMS engine using this rate master.  
-6. For this example, select the P2P option
+6. For this example, select the P2P option. This is already defined in the demo data.
 7. In the list, click the link in the selected row.
 8. Click Save.
 
@@ -52,7 +65,7 @@ This procedure shows you how to set up a rate master. The logistic manager usual
 4. In the Name field, type a value.
 5. In the Break master field, click the drop-down button to open the lookup.
     * Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions.  
-6. For this example, use weight
+6. For this example, use weight. This is already defined in the demo data. 
 7. In the list, click the link in the selected row.
 8. Toggle the expansion of the Details section.
 9. Click New.
