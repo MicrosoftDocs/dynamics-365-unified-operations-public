@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cluster position full
-description: This feature offers an alternative to more rigid enforcement of work break rules when using cluster picking as it enables larger margin of error in volumetric constraints of containers or totes. 
+description: This topic provides information about the Cluster position full feature. This feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes.
 author: Mirzaab
 manager: tfehr
 ms.date: 08/25/2020
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This feature offers an alternative to more rigid enforcement of work break rules when using cluster picking because it enables larger margin of error in volumetric constraints of containers or totes. It is a common scenario that not all items within a work order fit into a selected container. This leaves warehouse workers who are cluster picking with little option for resolution&mdash;they must either change the container size to a larger one or solve it differently with their supervisor.
+The *Cluster position full* feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes. In a common scenario, not all items on a work order fit into a selected container. Warehouse workers who are cluster picking have few options in this scenario: they must either change to a larger container size or work with their supervisor to come up with a different solution.
 
-This functionality introduces the ability to execute the *full* option on one of the work units within a cluster. This wasn't an option with cluster picking in older versions&mdash;it was only available with normal order picking. However, this feature differs from standard full-button flow as it cancels the remaining work. It doesn't suggest that the user add another bin to same cluster and it doesn't create new work automatically.
+This feature introduces the ability to run the *full* option on one of the work units in a cluster. In older versions, this option was available only for regular order picking, not for cluster picking. However, this feature differs from the standard full-button flow in that it cancels the remaining work. It doesn't suggest that the user add another bin to the same cluster, and it doesn't automatically create new work.
 
 ## Turn on the Cluster position full feature
 
@@ -42,194 +42,232 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - **Module:** *Warehouse management*
 - **Feature name:** *Cluster position full*
 
-## Set up
+## Setup
 
-This section provides guidelines and an example of how to set up and use this feature.
+This section provides guidelines, and an example that shows how to set up and use the *Cluster position full* feature.
 
-### Enable sample data
+### Make sample data available
 
-To work through the [example scenario](#example-scenario) using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
+To work through the [example scenario](#example-scenario) by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
-You can also use this example as guidance for how to use this feature when working on a production system, but then you must substitute your own values for each setting described here.
+You can also use the example scenario as guidance for working with this feature on a production system. However, in that case, you must substitute your own values for the settings that are described here.
 
 ### Cluster profiles
 
-Specify whether to automatically generate cluster IDs, the number of positions to use, when to break clusters, and how to sequence and verify the picking work:
+You must specify whether cluster IDs are automatically generated, how many positions are used, when clusters are broken, and how the picking work is sequenced and verified.
 
-1. Go to **Warehouse management > Setup > Mobile device > Cluster profiles**.
-1. On the list pane, select the *Create Cluster* record.
-1. On the **General** FastTab, make the following settings:
-    - **Generate cluster ID** - *Yes*
-    - **Activate positions** - *Yes*
-    - **Number of positions** - *2*
-    - **Position name** - *Numeric*
-    - **Break cluster at** - *Put*
-    - **Sort verification type** - *Position scan*
-1. The **Cluster sorting** FastTab should be empty (no lines).
+1. Go to **Warehouse management \> Setup \> Mobile device \> Cluster profiles**.
+1. In the list pane, select the **Create Cluster** record.
+1. On the **General** FastTab, set the following values:
+
+    - **Generate cluster ID:** *Yes*
+    - **Activate positions:** *Yes*
+    - **Number of positions:** *2*
+    - **Position name:** *Numeric*
+    - **Break cluster at:** *Put*
+    - **Sort verification type:** *Position scan*
+
+1. Select the **Cluster sorting** FastTab. The grid should be blank (that is, it should contain no lines).
 
 ### Work templates
 
-Define how to create the picking work for cluster picking:
+You must define how the picking work for cluster picking is created.
 
-1. Go to **Warehouse management > Setup > Work > Work templates**.
-1. At the top of the page, set **Work order type** to *Sales orders*.
-1. Make sure that the following demo-data work templates are listed (if they aren't available, you won't be able to complete the scenario):
-    - **61 SO Stage**
-    - **61 SO Cluster pick**
+1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
+1. At the top of the page, set the **Work order type** field to *Sales orders*.
+1. Make sure that the following work templates from the demo data are listed. If they aren't available, you won't be able to complete the scenario.
+
+    - 61 SO Stage
+    - 61 SO Cluster pick
 
 ### Location directives
 
-Specify where to pick items from, and where to put them:
+You must specify where items are picked from and where they are put.
 
-1. Go to **Warehouse management > Setup > Location directives**.
-1. On the list pane, set the **Work order type** to *Sales orders*.
-1. Make sure that the following demo-data sales order directives are listed (if they aren't available, you won't be able to complete the scenario):
-    - **61 Cluster pick**
-    - **61 SO Pick order**
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the list pane, set the **Work order type** field to *Sales orders*.
+1. Make sure that the following sales order directives from the demo data are listed. If they aren't available, you won't be able to complete the scenario.
+
+    - 61 Cluster pick
+    - 61 SO Pick order
 
 ### Mobile device menu items
 
-Configure a mobile device menu item to use existing work that is directed by cluster picking. The cluster picking mobile device menu item must have the **Allow splitting of work** parameter enabled and the **SO Pick** work class added. Do the following:
+You must configure a mobile device menu item to use existing work that is directed by cluster picking. In the mobile device menu item for cluster picking, the **Allow splitting of work** parameter must be turned on, and the *SO Pick* work class must be added.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
-1. On the list pane, select the *Cluster Pick Create* record.
-1. On the **General** FastTab, make the following settings:
-    - **Directed by** - *Cluster picking*
-    - **Generate license plate** - *Yes*
-    - **Allow splitting of work** - *Yes*
-    - **Cluster profile ID** - *Create Cluster*
-    - Accept all other defaults
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. In the list pane, select the **Cluster Pick Create** record.
+1. On the **General** FastTab, set the following values:
 
-1. On the **Work classes** FastTab, add the following two lines (as needed):
+    - **Directed by:** *Cluster picking*
+    - **Generate license plate:** *Yes*
+    - **Allow splitting of work:** *Yes*
+    - **Cluster profile ID:** *Create Cluster*
+
+    Accept the default values for all other fields.
+
+1. On the **Work classes** FastTab, add the following two lines, as required:
+
     - Line 1 (usually present in demo data):
-        - **Work class ID** - *Sales* 
-        - **Work order type** - *Sales orders*
-    - Line 2 (probably not present):
-        - **Work class ID** - *SO Pick*
-        - **Work order type** - *Sales orders*
+
+        - **Work class ID:** *Sales* 
+        - **Work order type:** *Sales orders*
+
+    - Line 2 (probably not present in demo data):
+
+        - **Work class ID:** *SO Pick*
+        - **Work order type:** *Sales orders*
 
 ## Create picking work
 
-Before you can start cluster picking, you must create some outbound work. The previously created **Cluster profile** specifies two cluster positions, so at least two different work IDs must be created for sales order picking. For this scenario, transactions will take place in **Warehouse** *61* and use **Items** *L0101* and *T0100*. Demo data should have a sufficient level of on-hand inventory of these items. Ensure that you have sufficient inventory to complete the transactions.
+Before you can start cluster picking, you must create some outbound work. The cluster profile that you created earlier specifies two cluster positions. Therefore, at least two work IDs must be created for sales order picking. For this scenario, transactions will occur in warehouse *61*, and they will use items *L0101* and *T0100*. The demo data should have enough on-hand inventory of these items. Make sure that you have enough inventory to complete the transactions.
 
 ### Create sales order 1
 
-Do the following:
-
-1. Go to **Sales and Marketing > Sales orders > All sales orders**.
+1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create sales order 1.
-1. In the **Create sales order** dialog box, enter the following:
-    - **Customer account** - *US-010*
-    - **Warehouse** - *61*
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-010*
+    - **Warehouse:** *61*
+
 1. Select **OK**.
-1. Your new sales order opens. On the **Sales order lines** FastTab, add a line with the following settings:
-    - **Item number** - *T0100*
-    - **Quantity** - *5*
-1. On the **Line details** FastTab, open the **Delivery** tab and set the **Confirmed ship date** to today's date.
-1. On the **Sales order lines** FastTab, add a second line with the following settings:
-    - **Item number** - *L0101*
-    - **Quantity** - *20*
-1. On the **Line details** FastTab, open the **Delivery** tab and set the **Confirmed ship date** to today's date.
-1. Reserve inventory for each of the lines you just added by doing the following for each line:
-    - Select the line you need to reserve.
-    - On the **Sales order lines** toolbar, select **Inventory > Reservation**.
-    - The **Reservation** page opens. Select **Reserve lot** on the Action Pane to reserve the inventory. Then close the **Reservation** page.
-1. On  the Action Pane, open the **Warehouse** tab and then select **Release to warehouse**.
-1. When the release completes, informational messages will be displayed the the wave and load IDs created.
+1. The new sales order is opened. On the **Sales order lines** FastTab, add a line that has the following settings:
+
+    - **Item number:** *T0100*
+    - **Quantity:** *5*
+
+1. On the **Line details** FastTab, on the **Delivery** tab, set the **Confirmed ship date** field to today's date.
+1. On the **Sales order lines** FastTab, add a second line that has the following settings:
+
+    - **Item number:** *L0101*
+    - **Quantity:** *20*
+
+1. On the **Line details** FastTab, on the **Delivery** tab, set the **Confirmed ship date** field to today's date.
+1. For each line that you just added, follow these steps to reserve inventory:
+
+    1. Select the line to reserve.
+    2. On the **Sales order lines** FastTab, select **Inventory \> Reservation**.
+    3. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the inventory.
+    4. Close the **Reservation** page.
+
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+
+    When the release is completed, you receive informational messages that show the wave and load IDs that were created.
 
 ### Create sales order 2
 
-Do the following:
-
-1. Go to **Sales and Marketing > Sales orders > All sales orders**.
+1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create sales order 2.
-1. In the **Create sales order** dialog box enter the following:
-    - **Customer account** - *US-011*
-    - **Warehouse** - *61*
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-011*
+    - **Warehouse:** *61*
+
 1. Select **OK**.
-1. Your new sales order opens. On the **Sales order lines** FastTab, add a line with the following settings:
-    - **Item number** - *L0101*
-    - **Quantity** - *20*
-1. On the **Line details** FastTab, open the **Delivery** tab and set the **Confirmed ship date** to today's date.
-1. On the **Sales order lines** FastTab, add a second line with the following settings:
-    - **Item number** - *T0100*
-    - **Quantity** - *2*
-1. On the **Line details** FastTab, open the **Delivery** tab and set the **Confirmed ship date** to today's date.
-1. Reserve inventory for each of the lines you just added by doing the following for each line:
-    - Select the line you need to reserve.
-    - On the **Sales order lines** toolbar, select **Inventory > Reservation**.
-    - The **Reservation** page opens. Select **Reserve lot** on the Action Pane to reserve the inventory. Then close the **Reservation** page.
-1. On  the Action Pane, open the **Warehouse** tab and then select **Release to warehouse**.
-1. When the release completes, informational messages will be displayed the the wave and load IDs created.
+1. The new sales order is opened. On the **Sales order lines** FastTab, add a line that has the following settings:
+
+    - **Item number:** *L0101*
+    - **Quantity:** *20*
+
+1. On the **Line details** FastTab, on the **Delivery** tab, set the **Confirmed ship date** field to today's date.
+1. On the **Sales order lines** FastTab, add a second line that has the following settings:
+
+    - **Item number:** *T0100*
+    - **Quantity:** *2*
+
+1. On the **Line details** FastTab, on the **Delivery** tab, set the **Confirmed ship date** field to today's date.
+1. For each line that you just added, follow these steps to reserve inventory:
+
+    1. Select the line to reserve.
+    2. On the **Sales order lines** FastTab, select **Inventory \> Reservation**.
+    3. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the inventory.
+    4. Close the **Reservation** page.
+
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+
+    When the release is completed, you receive informational messages that show the wave and load IDs that were created.
 
 ### Get work IDs and license plate numbers
 
-Two different work IDs should have been created, each with two pick lines. Find their work IDs and license plate assignments by doing the following:
+Two work IDs should have been created, each of which has two pick lines. Follow these steps to find the work IDs and license plate assignments.
 
-1. Go to **Warehouse management > Work > Work details**.
-1. In the **Overview** grid, search the **Order number** column for the two sales orders you just created and make a note of the corresponding **Work ID** for each sales order.
-1. On the **Lines** grid, make note of the location from which each item will be picked. (Select a row from the **Overview** grid to view related information on the **Lines** grid.)
-1. Go to **Inventory management > Inquiries and reports > On-hand list**.
-1. Select **Dimensions** on the Action Pane to open the **Dimension display** dialog box. Make sure the **License plate**, **Warehouse** and **Item number** check boxes are selected and then select **OK**.
-1. Set the following on the **Filters** pane:
-    - **Item number**
-        - **is one of** - *L0101* and *T100*
-    - **Warehouse**
-        - **begins with** - *61*
-1. Make note of the **License plate** values shown.
+1. Go to **Warehouse management \> Work \> Work details**.
+1. In the **Overview** grid, search the **Order number** column for the two sales orders that you just created. For each sales order, make a note of the corresponding work ID.
+1. Select the row for each sales order to show related information in the **Lines** grid. Make a note of the location that each item will be picked from.
+1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
+1. On the Action Pane, select **Dimensions** to open the **Dimension display** dialog box.
+1. Make sure that the **License plate**, **Warehouse**, and **Item number** check boxes are selected, and then select **OK**.
+1. In the **Filters** pane, set the following filters:
 
-## <a name="example-scenario"></a>Example Scenario
+    - **Item number** – **is one of** – *L0101* and *T100*
+    - **Warehouse** – **begins with** – *61*
 
-### Mobile device flow execution – Work confirmation setup for product
+1. Make a note of the **License plate** values that are shown.
 
-1. Sign in to the warehouse app as user in warehouse 61.
-1. Enter mobile device menu item: **Outbound > Cluster pick create**.
-1. **TASK: Assign work to Cluster** opens.
-1. Enter the Work ID for sales order 1 to assign it to cluster position 1.
-1. Select **OK** (**✔**).
-1. Enter the Work ID for sales order 2 to assign it to cluster position 2.
-1. Select **OK** (**✔**).
-1. **TASK: Cluster Pick Create: Pick** - *Item L0101 2 PL* opens.
+## <a name="example-scenario"></a>Example scenario
 
-Because the cluster profile set the number of positions as 2, the system will automatically direct you to the first consolidate pick (2 Pallets (PL) of item L0101).
+### Mobile device flow execution – Work confirmation setup for the product
 
-During the following steps, you can select the **DETAILS** tab on the screen to view additional information pertaining to the task, such as picking location.
+1. Sign in to the warehouse app as a user in warehouse *61*.
+1. Go to **Outbound \> Cluster pick create**.
 
-1. Set **ITEM** to *L0101*. This is to confirm the item number as configured on the **Mobile Device Menu Item** - **Work confirmation setup**.
-1. Enter the license plate number associated with the item in the location being picked. You will pick 2 pallets.
-1. Set **LP** to *LP_PICK_01*.
-1. Select **OK** (**✔**).
-1. **TASK: Sort: Cluster Pick Create** opens. Here you will sort the 2 picked pallets into a pick position. This could be a tote or container to separate the picked inventory by sales order.
-1. View the details presented on screen for the **Item** (*L0101*) and **Quantity** (*20* ea) to be sorted into **Position 1** (sales order 1).
-1. Set **POSITION NA...** to *1*.
-1. Select **OK** (**✔**).
-1. View the details presented on screen for the **Item** (*L0101*) and **Quantity** (*20* ea) to be sorted into **Position 2** (sales order 2).
-1. Set **POSITION NA...** to *2*.
-1. Select **OK** (**✔**).
-1. **TASK: Cluster Pick Create: Pick** - *Item T0100 7 ea* opens.
+    The **TASK: Assign work to Cluster** page appears.
 
-In this scenario, position 1 can't accept the full quantity of items to be picked to fulfill sales order 1. A position must be marked as being full. In this scenario, you will do a partial pick of the second item. The second item to be picked will be partially picked for position 1. New work will be created to pick the remaining quantity to fulfill the order.
+1. Enter the work ID for sales order 1 to assign it to cluster position 1.
+1. Select **OK** (check mark symbol).
+1. Enter the work ID for sales order 2 to assign it to cluster position 2.
+1. Select **OK** (check mark symbol).
 
-1. Select the menu button (**≡**).
-1. In the menu, select **Position full**.
-1. Identify the position that is full, select *1*.
-1. Select **OK** (**✔**).
-1. Enter the pick quantity that can still be picked into position 1. The system knows which item number is being picked.
+    The **TASK: Cluster Pick Create: Pick** page appears and shows *Item L0101 2 PL*.
+
+Because the cluster profile set the number of positions to 2, the system automatically directs you to the first consolidate pick: two pallets (PL) of item *L0101*.
+
+At any time during the following steps, you can select the **Details** tab to view additional information about the task, such as the picking location.
+
+1. Set the **ITEM** field to *L0101*. In this way, you confirm the item number as it's configured on the **Mobile Device Menu Item** - **Work confirmation setup**.
+1. Enter the license plate number that is associated with the item in the location that is being picked. You will pick two pallets.
+1. Set the **LP** field to *LP\_PICK\_01*.
+1. Select **OK** (check mark symbol).
+
+    The **TASK: Sort: Cluster Pick Create** page appears. Here, you will sort the two picked pallets into a pick position. This position might be a tote or container that is used to separate the picked inventory by sales order.
+
+1. View the details that are shown for the item (*L0101*) and quantity (*20* ea) that will be sorted into position 1 (for sales order 1).
+1. Set the **POSITION NA** field to *1*.
+1. Select **OK** (check mark symbol).
+1. View the details that are shown for the item (*L0101*) and quantity (*20* ea) that will be sorted into position 2 (for sales order 2).
+1. Set the **POSITION NA** field to *2*.
+1. Select **OK** (check mark symbol).
+
+    The **TASK: Cluster Pick Create: Pick** page appears and shows *Item T0100 7 ea*.
+
+In this scenario, position 1 can't accept the full quantity of items that must be picked to fulfill sales order 1. A position must be marked as full. In this scenario, you will do a partial pick of the second item. The second item will be partially picked for position 1, and new work will be created to pick the remaining quantity to fulfill the order.
+
+1. Select the Menu button (sometimes referred to as the hamburger or the hamburger button), and then select **Position full**.
+1. Identify the position that is full, and select *1*.
+1. Select **OK** (check mark symbol).
+1. Enter the pick quantity that can still be picked into position 1. The system can determine which item number is being picked.
 1. Enter *2*.
-1. Select **OK** (**✔**).
+1. Select **OK** (check mark symbol).
 1. Confirm the item number to complete the pick of the remaining item into position 2.
-1. Set **ITEM** to *T0100*.
-Select **OK** (**✔**).
-1. Enter the license plate the item is being picked from by setting **LP** to *LPREPL04*.
-1. Select **OK** (**✔**).
-1. View the details presented on screen for the **Item** (*T0100*) and **Quantity** (*2* ea) to be sorted into **Position 2** (sales order 2).
-1. Set **POSITION NA...** to *2*.
-1. Select **OK** (**✔**).
-1. View the details presented on screen for the **Item** (*T0100*) and **Quantity** (*2* ea) to be sorted into **Position 1** (sales order 1).
-1. Set **POSITION NA...** to *1*.
-1. Select **OK** (**✔**).
-1. **TASK: Cluster Pick Create: Put** opens.
+1. Set the **ITEM** field to *T0100*.
+1. Select **OK** (check mark symbol).
+1. Enter the license plate that the item is being picked from by setting the **LP** field to *LPREPL04*.
+1. Select **OK** (check mark symbol).
+1. View the details that are shown for the item (*T0100*) and quantity (*2* ea) that will be sorted into position 2 (for sales order 2).
+1. Set the **POSITION NA** field to *2*.
+1. Select **OK** (check mark symbol).
+1. View the details that are shown for the item (*T0100*) and quantity (*2* ea) that will be sorted into position 1 (for sales order 1).
+1. Set the **POSITION NA** field to *1*.
+1. Select **OK** (check mark symbol).
 
-In this scenario, the cluster pick has completed and the user is directed to put away the picked items from position 1 and position 2 into the staging location STAGE01. Review the on screen information, a total quantity of 44 will be put to the staging location. Then select **OK** (**✔**). The message **Cluster Completed** is displayed on the screen.
+    The **TASK: Cluster Pick Create: Put** page appears.
 
-You can now use **Sales Picking** menu item to pick the remaining quantity, and the **Sales loading** menu item to move the items from the staging location to the loading dock.
+In this scenario, the cluster pick has been completed, and the user is directed to put away the picked items from position 1 and position 2 into staging location *STAGE01*.
+
+1. Review the information on the page. It shows that a total quantity of *44* will be put to the staging location.
+1. Select **OK** (check mark symbol).
+
+    You receive a "Cluster Completed" message.
+
+You can now use the **Sales Picking** menu item to pick the remaining quantity. You can then use the **Sales loading** menu item to move the items from the staging location to the loading dock.
