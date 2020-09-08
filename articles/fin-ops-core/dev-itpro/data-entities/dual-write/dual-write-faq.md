@@ -110,10 +110,10 @@ In a failover event, dual-write continues to work after the failover transition 
 
 Each linked environment-pair (Finance and Operations apps environment and Common Data Service environment) should be treated as a single unit and refreshed accordingly. For example, if you are refreshing a sandbox from production, then both Finance and Operations app sandbox environment and the Common Data Service sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
 
-    + Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
-    + Common Data Service entities: **DualwriteRuntimeConfiguration**. 
++ Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
++ Common Data Service entities: **DualwriteRuntimeConfiguration**. 
     
-The environments need to be relinked and maps reactivated manually. We’ll be publishing the detailed steps for this process soon and this answer will be updated with a link to the new docs article once ready.
+The environments need to be relinked and maps reactivated manually. We'll be publishing the detailed steps for this process soon and this answer will be updated with a link to the new docs article once ready.
 
 ### I need real-time integration, and I want to move some entities or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern? 
 
