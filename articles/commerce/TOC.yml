@@ -244,7 +244,7 @@
           href: retail-hardware-station-configuration-installation.md
         - name: Mass deployment of self-service components
           href: dev-itpro/retail-mass-deployment.md
-        - name: Retail component events for diagnostics and troubleshooting
+        - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
         - name: Apply a deployable package
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -1082,6 +1082,10 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+      - name: Brazil
+        items:
+        - name: Commerce localization for Brazil
+          href: localizations/latam-bra-commerce-localization.md 
       - name: Eastern Europe
         items: 
         - name: Common
