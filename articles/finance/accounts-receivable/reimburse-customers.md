@@ -51,8 +51,8 @@ When you create reimbursement transactions, a vendor invoice is created for the 
 4. To reimburse specific customer accounts, expand Records to include, click **Filter**, and specify the customer accounts in the query.
 
     The credit amounts are transferred to the vendor accounts of the customers and are processed as ordinary payments. If a customer doesn't have a vendor account, a one-time vendor account is automatically created for the customer.
-5.  To view the reimbursement transactions that were created, use the **Reimbursement** page.
-6.  In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process.
+5.  To view the reimbursement transactions that were created, use the Reimbursement report (**Accounts Receivable > Inquiries and reports > Reimbursement report**).
+6.  In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process. See [Vendor payment overview](../accounts-payable/Vendor-payments-workspace.md) for information about paying vendors. 
 
 
 
