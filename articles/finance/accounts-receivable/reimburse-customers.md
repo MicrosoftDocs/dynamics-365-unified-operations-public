@@ -3,7 +3,7 @@
 
 title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
-author: ShivamPandey-msft
+author: JodiChristiansen
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: JodiChristiansen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -46,13 +46,13 @@ The following table shows the prerequisites that must be in place before you sta
 When you create reimbursement transactions, a vendor invoice is created for the amount of the credit balance. The reimbursement process removes the credit balance for the customer account and creates a balance due for the vendor account that corresponds to the customer.
 
 1.  In Accounts receivable, run the **Reimbursement** process.
-2.  Follow one of these steps:
-    -   To reimburse specific customer accounts, click **Select**, and specify the customer accounts in the query.
-    -   To reimburse all customer accounts, click **OK**.
+2.  To group all transactions together regardless of ledger dimensions, mark the **Summarize customer** parameter. To only group transactions with similar ledger dimensions leave it unmarked.
+3. Mark **Include customers with outstanding debit transactions** to select customers with unsettled debit amounts.
+4. To reimburse specific customer accounts, expand Records to include, click **Filter**, and specify the customer accounts in the query.
 
     The credit amounts are transferred to the vendor accounts of the customers and are processed as ordinary payments. If a customer doesn't have a vendor account, a one-time vendor account is automatically created for the customer.
-3.  To view the reimbursement transactions that were created, use the **Reimbursement** page.
-4.  In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process.
+5.  To view the reimbursement transactions that were created, use the **Reimbursement** page.
+6.  In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process.
 
 
 
