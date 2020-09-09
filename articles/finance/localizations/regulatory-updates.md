@@ -50,6 +50,9 @@ For the latest regulatory update plans, refer to the following table.
 |--------------------|---------------|-------|-------|
 |      Austria         |   September 2020      | 10.0.15      |   VAT declaration format U30 has been updated for 2020 reporting   |
 |      Bahrain         |   July 2020      | 10.0.12      |   Reverse charge   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Invoice issue deadline (GCC)   |
+|      Bahrain         |   July 2020      | 10.0.12      |   VAT declaration for Bahrain   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Sales invoices for Bahrain   |
 |      Brazil         |   August 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST declaration PR   |
 |      Brazil         |   March 2020      | 10.0.11      |   SPED ECD layout 8   |
 |      Brazil         |   April 2020      | 10.0.11      |   Technical note NT2019.001 v1.40   |
@@ -65,16 +68,16 @@ For the latest regulatory update plans, refer to the following table.
 |      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 in Finance and Operations    |
 |      India         |   August 2020, July 2020      | 10.0.3, 10.0.12HF      |   TCS on Sales of Goods as per section 206C (1H) - Threshold as per PAN based accumulation of transactions.  |
 |      India         |   August 2020, June 2020      | 10.0.13, 10.0.12HF      |   Credit/Debit note against export Invoice  |
-|      India         |   August 2020      | 10.0.13, 10.0.12 HF, 10.0.11HF      |   Electronic Invoice under GST  |
+|      India         |   August 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Electronic Invoice under GST  |
 |      India         |   May 2020      | 10.0.13, 10.0.12      |   New GSTR-1 and GSTR-2 return format  |
 |      India         |   July 2020      | 10.0.13      |   New GSTR (ANX-1 & ANX-2)  offline Tool (Beta version)  |
 |      India         |   May 2020      | 10.0.12      |   Improvements in unit price and cost price handling in Stock transfer orders  |
 |      India         |   May 2020      | 10.0.12      |   Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt)  |
 |      Italy         |   May 2020      | 10.0.12, 10.0.11      |   Modello 770 / 2019 format change |
-|      Italy         |   July 2020      | 10.0.13HF, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
+|      Italy         |   July 2020      | 10.0.13, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
 |      Kuwait         |   July 2020      | 10.0.12      |   Reverse charge |
 |      Malaysia         |   July 2020      | 10.0.13      |   SST report |
-|      Mexico         |   September 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   CFDI URL schema location based on Anexo 20 document |
+|      Mexico         |   September 2020      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL schema location based on Anexo 20 document |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (version 10) |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report dialog change: to provide possibility to select Contact person across companies |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of only on the header |
