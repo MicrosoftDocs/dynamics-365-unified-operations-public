@@ -45,8 +45,8 @@ The following table shows the prerequisites that must be in place before you sta
 
 When you create reimbursement transactions, a vendor invoice is created for the amount of the credit balance. The reimbursement process removes the credit balance for the customer account and creates a balance due for the vendor account that corresponds to the customer.
 
-1.  In Accounts receivable, run the **Reimbursement** process.
-2.  To group all transactions together regardless of ledger dimensions, mark the **Summarize customer** parameter. To only group transactions with similar ledger dimensions leave it unmarked.
+1.  In Accounts receivable, run the **Reimbursement** process (**Accounts receivable > Periodic tasks > Reimbursement**).
+2.  To group all transactions together regardless of ledger dimensions, set the **Summarize customer** parameter to **Yes**. To only group transactions with similar ledger dimensions set it to **No**.
 3. Mark **Include customers with outstanding debit transactions** to select customers with unsettled debit amounts.
 4. To reimburse specific customer accounts, expand Records to include, click **Filter**, and specify the customer accounts in the query.
 
