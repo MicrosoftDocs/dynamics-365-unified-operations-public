@@ -1370,6 +1370,12 @@
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
           - name: ValueMetadata type
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+    - name: Process automation framework
+      items:
+      - name: Process automation framework development
+        href: process-automation/process-automation-framework.md
+      - name: Type registration
+        href: process-automation/type-registration.md
     - name: Regression suite automation tool
       items:
       - name: Regression suite automation tool overview
