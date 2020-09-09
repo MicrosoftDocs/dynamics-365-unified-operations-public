@@ -40,7 +40,7 @@ To create a number sequence for a pro number, do the following:
 1. Go to **Transportation management \> Setup \> Carriers \> Number sequences**.
 1. Select **New** to create a new number sequence.
 1. Enter a unique ID and descriptive name for the number sequence.
-1. In the *Number sequence type* field, *Pro number* is the only option.
+1. In the **Number sequence type** field, *Pro number* is the only option.
 1. In the **Check digit** field, *Check digit* is the only option and is set up as a generic engine.
 1. On the **Sequence** FastTab, provide information about the sequence.
 1. Close the page.
