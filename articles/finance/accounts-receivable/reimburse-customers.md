@@ -3,7 +3,7 @@
 
 title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
-author: JodiChristiansen
+author: Jchrist
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
