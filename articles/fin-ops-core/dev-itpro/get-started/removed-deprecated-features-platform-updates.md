@@ -55,7 +55,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | We will provide a new form in a future update.|
 | **Product areas affected**         | System Administartion. |
 | **Deployment option**              | All |
-| **Status**                         | By Dec 31, 2020, this form will be removed.   |
+| **Status**                         | By April 1, 2021, this form will be removed.   |
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
