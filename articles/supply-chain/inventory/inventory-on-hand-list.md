@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: InventOnhandItem
+# ms.search.form: InventOnhandItem, InventOnHandItemListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
