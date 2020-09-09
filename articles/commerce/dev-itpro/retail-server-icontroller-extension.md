@@ -224,6 +224,7 @@ The Retail Server APIs support different authorization roles. Access to the cont
         public static readonly string[] All;
     }
  ```
+###  Register the extension
 
 8. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
 9. Update the Commerce Scale Unit **web.config** file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
@@ -237,6 +238,9 @@ The Retail Server APIs support different authorization roles. Access to the cont
 ```
 
 10. In Microsoft Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
+
+### Validate the extension
+
 11. To verify that the extension loaded successfully, you can browse the Retail Server metadata. Confirm that your entities and methods appear in the list. To browse the metadata, open a URL in the following format in a web browser:
 
     **https://RS-URL/Commerce/$metadata**
@@ -280,7 +284,7 @@ The following example shows how to update the **add** element in the **RetailPro
     <?xml version="1.0" encoding="utf-8"?> 
     <retailProxyExtensions> 
         <composition> 
-            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
+            <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" /> 
         </composition> 
     </retailProxyExtensions> 
 ```
