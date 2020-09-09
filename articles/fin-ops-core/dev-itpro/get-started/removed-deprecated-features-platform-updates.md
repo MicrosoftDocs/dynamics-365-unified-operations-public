@@ -41,6 +41,22 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.14 of Finance and Operations apps
+
+> [!NOTE]
+> Version 10.0.14 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### Online users form 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The information in this form is not accurate and it doesn't show the required information and it can be confusing and misleading, this was an old form supporting Client/server architecture. Also in a could service, information on the infrastructure is irrelevant. |
+| **Replaced by another feature?**   | We will provide a new form in a future update.|
+| **Product areas affected**         | System Administartion. |
+| **Deployment option**              | All |
+| **Status**                         | By Dec 31, 2020, this form will be removed.   |
+
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
 > [!NOTE]
