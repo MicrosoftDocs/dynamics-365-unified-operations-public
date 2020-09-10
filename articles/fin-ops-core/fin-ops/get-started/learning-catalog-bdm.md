@@ -6,6 +6,10 @@ ms.date: 02/27/2020
 ms.topic: article
 ms.author: v-lshann
 
+ms.prod:
+ms.service: Dynamics365Operations
+ms.technology:
+
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
