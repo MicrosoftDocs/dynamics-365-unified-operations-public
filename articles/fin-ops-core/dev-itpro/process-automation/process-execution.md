@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process execution
 
-For the Process Automation Framework to execute the process we must implement the ProcessAutomationTask interface. This is mandatory. The Process Automation Framework via this interface will provide us with an instance of ProcessScheduleWorkItem which contains information concerning the series and an occurrence if applicable that is being executed and the Execution ID. We will create the batch task that need to be run and provide them to the Process Automation Framework. The Process Automation Framework creates the batch header and the tasks provided.
+For the process automation framework to execute the process we must implement the ProcessAutomationTask interface. This is mandatory. The process automation framework via this interface will provide us with an instance of ProcessScheduleWorkItem which contains information concerning the series and an occurrence if applicable that is being executed and the Execution ID. We will create the batch task that need to be run and provide them to the process automation framework. The process automation framework creates the batch header and the tasks provided.
 
 Polled processes don't have occurrences because they may get executed very frequently and that would create far more occurrences then we want to track so we use a unique execution ID to track every execution of a polled process. Scheduled processes are also assigned an execution ID.
 

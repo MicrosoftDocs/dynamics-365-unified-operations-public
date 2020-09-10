@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize the user interface
 
-The Process Automation Framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the ProcessScheduleSeries form. If the intention is to display the ProcessScheduleSeries form for a specific product area then those customizations are required so the framework can display data specific to the product area.
+The process automation framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the ProcessScheduleSeries form. If the intention is to display the ProcessScheduleSeries form for a specific product area then those customizations are required so the framework can display data specific to the product area.
 
 ## Weekly Calendar View
 
@@ -38,7 +38,7 @@ The Process Automation Framework supports some UI customizations. Most of this s
 
 Interface which allows customizing the appearance of occurrence cards on the weekly calendar view. There are 6 static methods on this interface, one for each status of an occurrence: Scheduled, Waiting, Running, Successful, Failed, and Disabled. This allows for a customized occurrence card for each one of these status. Each of these methods returns an instance of ProcessScheduleOccurrenceCard.
 
-The Process Automation Framework provides a default implementation in the class ProcessScheduleOccurrenceCardBuilder. Uptake teams will inherit from this class and override functionality as needed and register their derived class via sys-plugin for their specific type in a similar manner to many of the plug-ins documented above.
+The process automation framework provides a default implementation in the class ProcessScheduleOccurrenceCardBuilder. Uptake teams will inherit from this class and override functionality as needed and register their derived class via sys-plugin for their specific type in a similar manner to many of the plug-ins documented above.
 
 An instance of ProcessScheduleOccurrenceCardBuilderContract is passed into each of the 6 methods and can be used to retrieve information about the occurrence. The derived class can invoke the default implementation for each of these 6 methods which returns the ProcessScheduleOccurrenceCard instance and then modify whatever is needed and return it.
 
@@ -65,7 +65,7 @@ Method | Description
 
 ### ProcessScheduleOccurrenceCalendarViewContract class
 
-Use this class to restrict what Process Automation Framework series the weekly calendar view should display. See ProcessScheduleSeries.getProcessScheduleOccurrenceCalendarViewcontract() as an example of how to use this.
+Use this class to restrict what process automation framework series the weekly calendar view should display. See ProcessScheduleSeries.getProcessScheduleOccurrenceCalendarViewcontract() as an example of how to use this.
 
 Method | Description
 ---|---

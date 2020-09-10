@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process parameters
 
-Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range, or a customer number, etc… Teams implementing the Process Automation Framework create their own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters then this section can be skipped.
+Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range, or a customer number, etc… Teams implementing the process automation framework create their own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters then this section can be skipped.
 
 When a series is created by the user in the UI, the series wizard will host N form parts for the process which contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided via type registration. The form part will implement interfaces which allow the developer to initialize, validate, and write their custom parameters.
 
@@ -42,7 +42,7 @@ The following interfaces are used to maintain these parameters.
 
 ## ProcessScheduleParametersIInitialize interface
 
-This interface allows the opportunity to initialize any parameters when the user is interacting with the Process Automation Framework UI. The form part built for the wizard which displays process specific parameters implements this interface.
+This interface allows the opportunity to initialize any parameters when the user is interacting with the process automation framework UI. The form part built for the wizard which displays process specific parameters implements this interface.
 
 ## ProcessScheduleParametersIValidate interface
 

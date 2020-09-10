@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If a process isn’t going to support user configurable queries via SysQueryForm, then this section may be skipped.
 
-The Process Automation Framework provides limited support for custom queries via the SysQueryForm form. This allows users to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. This custom query criteria are stored for each occurrence of a given series
+The process automation framework provides limited support for custom queries via the SysQueryForm form. This allows users to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. This custom query criteria are stored for each occurrence of a given series
 and can be modified individually if desired. The framework also provides an API to apply the custom criteria to the query used for process execution when the occurrence executes.
 
 **Note**: The query criteria that are applied by the user are saved individually, as opposed to the entire query object, to allow for better support of query extensions. As a result, extensions made to existing queries for already existing query criteria shouldn't cause breaking changes with this approach. A new extension, in this case, shouldn't
@@ -42,7 +42,7 @@ If a process isn’t going to support custom queries via SysQueryForm, then this
 
 ## ProcessScheduleIQueryable interface
 
-This interface retrieves the original query, before the end user modifies it, and the user modified query. These queries will be used to apply criteria when the process executes or extract criteria when the user makes changes. These criteria will be stored by the Process Automation Framework. This interface is up taken on the criteria form
+This interface retrieves the original query, before the end user modifies it, and the user modified query. These queries will be used to apply criteria when the process executes or extract criteria when the user makes changes. These criteria will be stored by the process automation framework. This interface is up taken on the criteria form
 for a given Process Automation implementation. An example uptake of this interface can be found on the VendPaymProposalAutomationCriteria form. A sample implementation of the SysQueryForm form can also be found on the same form.
 
 Method | Description
