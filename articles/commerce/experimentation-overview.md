@@ -61,12 +61,15 @@ Click on the links below to learn more about the phases:
 
 ## Experiment statuses
 The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
-1. Not Started - The experiment isn't connected to a page or fragment yet.
-1. Draft - The experiment is connected to a page or fragment.
-1. Published - The experiment is ready to go live once it is started in the third-party service.
+1. Draft - The experiment is connected to a page or fragment in Commerce and is being edited.
+1. Published - The experiment is ready to go live, once it is started in the third-party service.
 1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
 
 <<need updated diagram from Charla/Jo>>
 
-Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service.
+Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service:
+1. Draft - The experiment is setup in the third-party service but hasn't started yet.
+1. Running - The experiment has started and is collecting data.
+1. Paused - The experiment is paused and not collecting data. You will need to resume it so it starts collecting data again.
+1. Archived - The experiment has run its course and has been cataloged for future reference.
