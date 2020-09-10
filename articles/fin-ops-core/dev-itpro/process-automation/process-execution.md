@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Process execution
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 # Process execution
 
 In order for the Process Automation Framework to execute the process we must implement the ProcessAutomationTask interface. This is mandatory. The Process Automation Framework via this interface will provide us with an instance of ProcessScheduleWorkItem which contains information concerning the series and an occurrence if applicable that is being

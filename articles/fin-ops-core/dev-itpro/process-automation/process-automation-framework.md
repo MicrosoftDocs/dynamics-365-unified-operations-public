@@ -1,4 +1,34 @@
-# Implement the Process Automation Framework
+---
+# required metadata
+
+title: Process automation framework development
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
+# Process automation framework development
 
 For an overview of process automation, see [Process automation](../fin-ops-core/dev-itpro/sysadmin/process-automation).
 

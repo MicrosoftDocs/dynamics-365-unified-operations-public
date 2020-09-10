@@ -1,5 +1,35 @@
 
-# Type Registration
+---
+# required metadata
+
+title: Type registration
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
+# Type registration
 
 Implementing the process automation framework starts with the concept of a type within the Process Automation Framework. The types are stored in the table ProcessScheduleType. A type is a unique process which integrates with the batch framework and makes use of SysOperations framework specifically the class SysOperationServiceController. If an existing process uses RunBaseBatch then consider wrapping it with SysOperationServiceController. The process automation framework does not support RunBaseBatch. These are a few examples of different types registered with the process automation framework:
 

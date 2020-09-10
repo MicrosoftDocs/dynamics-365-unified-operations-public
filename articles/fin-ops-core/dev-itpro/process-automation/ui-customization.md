@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Customize the user interface
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 # Customize the user interface
 
 The Process Automation Framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the ProcessScheduleSeries form. If the

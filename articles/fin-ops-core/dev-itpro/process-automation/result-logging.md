@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Log results and messages
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 # Log results and messages
 
 The Process Automation Framework supports logging of results and messages. There are 2 reasons why a process should write results and messages:

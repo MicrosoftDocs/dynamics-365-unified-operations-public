@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Process parameters
+description: 
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 # Process parameters
 
 Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range, or a customer number, etc… Teams implementing the Process Automation Framework create their own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters then this section can be skipped.
