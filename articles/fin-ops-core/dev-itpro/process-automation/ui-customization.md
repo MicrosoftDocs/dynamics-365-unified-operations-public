@@ -46,7 +46,7 @@ An instance of ProcessScheduleOccurrenceCardBuilderContract is passed into each 
 
 This class allows for the customization of the appearance of an occurrence card which is shown on the calendar view. The first two lines are controlled by the framework and cannot be modified. The sub-header is the “Completed at…” phrase. The message is the status word “Completed” with the blue background.
 
-![Default occurrence card with status and time.](media/update-schedule.png)
+![Default occurrence card with status and time.](media/uptake-schedule.png)
 
 Method | Description
 ---|---
