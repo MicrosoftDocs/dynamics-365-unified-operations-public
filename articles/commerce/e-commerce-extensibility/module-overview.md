@@ -84,19 +84,30 @@ To create a new theme see the [Create a new theme](create-theme.md) document for
 ##### Clone a theme
 To clone the fabrikam theme as a starter to your own theme follow the below steps:
 
-1. Use the CLI **clone** command to create a copy of the fabrikam theme.  Example ```yarn msdyn365 clone fabrikam MY_NEW_THEME``` where MY_NEW_THEME is the name of the new theme.
+1. Use the [CLI clone](cli-command-reference.md) command to create a copy of the fabrikam theme.  Example ```yarn msdyn365 clone fabrikam MY_NEW_THEME``` where MY_NEW_THEME is the name of the new theme.
 1. The clone command will make a copy of a module and put it under the **/src/modules** directory.  A theme is just a special module that is stored under the **/src/themes** directory.  You'll need to manually copy the new theme from the **src/modules** into the **src/themes** directory.  If no themes directory exists, you can manually create it first.
-1. Within the theme directory you'll find a file called MY_NEW_THEME.definition.json, where MY_NEW_THEME is the name provided with the clone command.  This file will list the metadata used in site builder such as the theme friendly name and description.
+1. Within the theme directory you will find a file called MY_NEW_THEME.definition.json, where MY_NEW_THEME is the name provided with the clone command in step 1.  This file will list the metadata used in site builder such as the theme friendly name and description.
 
 The last step will be to change the SCSS for any modules that you need.  Each starter kit module SCSS is stored under the themes **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a colors.scss file which contains the common color definitions.
 
 Once a theme is created or modified using the Online SDK, the configuration package can be uploaded via LCS see the [Package configurations and deploy them to an onlin environment](package-deploy.md) for details.  Once themes are deployed, from within site builder you can change between available themes, see the [Select a site theme](../select-site-theme.md) document for more information.
 
+### Extending a module's view
+You may have a requirement that is more involved than CSS changes alone and you may need to change or alter the HTML on a starter kit module.  This can be achieved by overriding a module's view inside of a theme.  Since these changes are scoped to a site theme, changing a sites theme can end up changing the complete look and feel of a module.  The advantage of changing a module view is that over time as the store starter kit modules are updated the updates are still applied.  So for example a starter kit module business logic could be improved over time and the view override will continue to work on the updated starter kit module code.
 
+To extend a module see the [Extend a theme to add module extensions](theme-module-extensions.md) document.  You can find examples of module theme extensions in the starter **fabrikam** theme.  
 
-
-
-CSS.  You can change the theme SCSS for a schange the layout or add some extra The first and easiest 
-
+#### Module definition extensions
+Not only can you extend a modules view, but you can also extend a starter kit module definition to add or remove module configurations.  For example if a store starter kit module has a configuration for a title string you could add an additional sub-title string configuration that can be set in the site builder.  You can also configure additional data actions, slots and resources on a starter kit module.  You can then access these new configurations from within a modules view extension.  For more information see the [Theme definitions extensions](theme-module-extensions.md) document.
 
 ### Cloning a store starter kit module
+If you cannot achieve the desired changes to a starter kit module but would like to use it as a starter you can [clone](clone-starter-module.md) the module.  This may be needed in scenarios where you need to change the business logic coded in the module that is not exposed in the module's view thus a view override won't do what you need.  Cloning will create a new module with a copy of the code from the starter kit module that was cloned and can then be changed as needed.  
+
+Cloning should be a last resort since future updates to a starter kit module will not be picked up by the cloned module automatically.  In this case you will need to decide if any updates are needed in the cloned module and manually added.  To do this after a starter kit module is updated you can create a new clone then diff the code with your cloned module.  
+
+See the [SDK and store starter kit updates](sdk-updates.md) for more information on getting starter kit updates.
+
+### Creating a custom module
+Generally if you need a feautre that isn't available in the starter kit set of modules, yoy can [create a custom module](create-new-module.md).  Creating a custom module is easy and can be done using the [add-module CLI command](cli-command-reference.md). Similar to starter kit modules, SCSS files can be added to the site theme and different themes can optionally change the modules view with a [module view extensions](theme-module-extensions.md) or the module definition can be extended as needed.
+
+
