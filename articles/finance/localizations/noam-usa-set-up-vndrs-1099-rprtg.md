@@ -5,7 +5,7 @@ title: Set up vendors for 1099 reporting
 description: This topic explains how to set up vendor records so that a 1099 box is associated with a main account. 
 author: v-kiarnd
 manager: Ann Beebe
-ms.date: 08/3/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.13
 # Set up vendors for 1099 reporting
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to set up vendor records so that a 1099 box is associated with a main account. It's best to complete these setup steps before you post vendor transactions. For more information, see [Year-end 1099 reporting](noam-usa-year-end-1099-reporting.md).
 
