@@ -40,3 +40,4 @@ Once the experiment is setup in the third-party service, the next step is to con
     > Remember to enable the "Experiment on pages or fragments" feature flag if you want to experiment on a full page or fragment.
 1. In the final step, click on **Generate variations and exit wizard** to auto-generate the variations. These are nothing but copies of the original page or fragment you previously chose. 
 1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a **control** or base variation to compare to by leaving it unchanged.
+1. If creating a partial page variation, select the module to be experimented on, click on the ellipsis for more options and then click on **Add to experiment**.
