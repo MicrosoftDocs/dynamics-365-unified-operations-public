@@ -107,7 +107,7 @@ Variant 2:
 5. With confirmation the bundle is exploded on the IC sales order; IC purchase order and Original sales order is updated as well. But in the original sales order the bundle functionality is not considered.
 
 **Resolution**
-Bundle item is not available for the purchase order, because if you check the sales order lines for the bundle item, the quantity will be 0 and status = Cancelled. This is by design. The sales order is not buying the Bundle item but only its components. If you need to buy a bundle, consider whether you need to mark it as Bundle item, as it is designed for Revenue recognition scenarios. For details on bundle items, see (here)[https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-setup#bundles]. For additional information also check this (blog)[https://msdynamicsworld.com/story/bundling-and-sales-order-processing-revenue-recognition-microsoft-dynamics-365-finance-part-5]
+Bundle item is not available for the purchase order, because if you check the sales order lines for the bundle item, the quantity will be 0 and status = Cancelled. This is by design. The sales order is not buying the Bundle item but only its components. If you need to buy a bundle, consider whether you need to mark it as Bundle item, as it is designed for Revenue recognition scenarios. For details on bundle items, see (here)[https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-setup#bundles].
 
 
 ## Additional resources
