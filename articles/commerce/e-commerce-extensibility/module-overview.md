@@ -76,7 +76,7 @@ When making CSS changes to a module the first thing to check is can it be done w
 If the style presets option isn't available for the element you need to change but you know the CSS needed to make the change, you can easily create a [CSS override file](../css-override-files.md) and upload it from within the site builder tool. In general if you can use tools such as a modern browsers HTML/CSS debugging tools, and can modify the CSS to your liking, you can then copy those changes into a single CSS override file.  When the e-Commerce page is rendered, after the theme module CSS is applied, the overrides file is then applied and will override the specific CSS for that module.  This is great for fast experimentation against the live site and can easily be removed if not needed.
 
 #### Theme changes
-If your CSS changes are more involved, the next level of customization is making changes to the site theme using the Online SDK.  The site theme will contain all of the CSS the modules require using SCSS files within the theme.  By default the **fabrikam** starter theme is provided and can be used for your online site, however it's generally advisible to create a new custom theme.  Creating a custom theme is easy and you can even **clone** the fabrikam theme to make a copy as a start to your own theme.  See the [Theming overview](theming.md) document for more information.
+If your CSS changes are more involved, the next level of customization is making changes to the site theme using the Online SDK.  The site theme will contain all of the CSS the modules require using SCSS files within the theme.  By default the **fabrikam** starter theme is provided and can be used for your online site, however it's generally advisable to create a new custom theme.  Creating a custom theme is easy and you can even **clone** the fabrikam theme to make a copy as a start to your own theme.  See the [Theming overview](theming.md) document for more information.
 
 ##### Create a new theme
 To create a new theme see the [Create a new theme](create-theme.md) document for details.
@@ -108,6 +108,6 @@ Cloning should be a last resort since future updates to a starter kit module wil
 See the [SDK and store starter kit updates](sdk-updates.md) for more information on getting starter kit updates.
 
 ### Creating a custom module
-Generally if you need a feautre that isn't available in the starter kit set of modules, yoy can [create a custom module](create-new-module.md).  Creating a custom module is easy and can be done using the [add-module CLI command](cli-command-reference.md). Similar to starter kit modules, SCSS files can be added to the site theme and different themes can optionally change the modules view with a [module view extensions](theme-module-extensions.md) or the module definition can be extended as needed.
+Generally, if you need a feature that is not available in the starter kit set of modules, you can [create a custom module](create-new-module.md).  Creating a custom module is easy and can be done using the [add-module CLI command](cli-command-reference.md). Similar to starter kit modules, SCSS files can be added to the site theme and different themes can optionally change the modules view with a [module view extensions](theme-module-extensions.md) or the module definition can be extended as needed.
 
 
