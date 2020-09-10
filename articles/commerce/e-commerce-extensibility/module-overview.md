@@ -44,7 +44,7 @@ Modules represent the core building blocks that make up an online e-Commerce pag
 * A script module that injects JavaScript inside of the HTML on a page
 
 ## Store starter kit modules
-Microsoft Dynamics 365 Commerce provides a **store starter kit** set of modules to use when building your pages.  See [Starter kit overview](../starter-kit-overview.md) document for more details.  
+Microsoft Dynamics 365 Commerce provides a **store starter kit** set of modules to use when building your pages.  See [Starter kit overview](../starter-kit-overview.md) document for more details.  The CSS for each module can be changed using style presets, CSS overrides or custom theme changes.  Module views can also be extended to change the rendered HTML of a starter kit module if needed and each starter kit module can be cloned into a new custom module for deeper changes if needed.
 
 To see how a site builder page builder interacts with modules see the [Work with modules](../work-with-modules.md) document.
 
