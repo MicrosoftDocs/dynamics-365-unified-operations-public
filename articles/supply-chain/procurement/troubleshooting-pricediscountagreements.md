@@ -98,6 +98,7 @@ This is working as expected. As requisitions are not always being approved, we d
 ## Trade agreements can be created from the rejected RFQs as well. System does not prevent creation of Trade agreement journals if the RFQ line has not be accepted.
 It is possible to create trade agreements for any replies for an RFQ, regardless of whether they were accepted or rejected. For more details, see here (Request For Quotations)[https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/request-quotations]
 
+
 ## Additional resources
 
 [Purchase agreements](purchase-agreements.md)
