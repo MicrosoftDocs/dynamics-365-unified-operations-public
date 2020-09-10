@@ -790,8 +790,8 @@
           href: fixed-assets/straight-line-service-life-depreciation.md
     - name: Asset leasing
       items:
-    - name: Asset leasing overview
-      href: asset-leasing/asset-leasing-overview.md
+      - name: Asset leasing overview
+        href: asset-leasing/asset-leasing-overview.md
     - name: General ledger
       items:
       - name: General ledger overview
