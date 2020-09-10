@@ -40,6 +40,7 @@ Results and messages are a multi-level logging system. A process has one to N re
 Both scheduled processes and polled processes support result and message logging. All processes should create a result. At the very least the result should communicate that everything was successful. For processes that are doing work that affects user work and is visible to users they should create results that are more detailed. Using the vendor invoice example from above, users want to see that their invoices are posted and if the results don’t show that in the process automation framework it will cause confusion – even if there are other ways to see this information.
 
 This screen shot is the results view.
+
 ![Status, time, and message for execution result.](media/execution-results.png)
 
 This screen shot is the message view and was obtained by clicking view log from the result view.
@@ -48,16 +49,11 @@ This screen shot is the message view and was obtained by clicking view log from 
 
 ## ProcessExecutionSourceLink table
 
-This table contains the resultsof the process that get created while the processing is executing. This table contains a RefTableId and a RefRecId. These are links to any source record in SQL and is typically
-something the process is processing. This table contains a Header and a Message. The Header field will be displayed as a column in the results grid. The message can be anything we want it to be. For example, if
-vendor payment proposal is creating a payment journal then the RefTableId would be the table ID of LedgerJournalTable. The RefRecId would be the RecId of the LedgerJournalTable record the payment journal
-created by the executing process. We could set the Header field to be the ‘Journal Number’. We can even make this a jump ref so the user can click on the journal number which would take them directly into the
-payment journal. The message field can be any message we want to display. For example, “Payment journal created successfully”.
+This table contains the results of the process that get created while the processing is executing. This table contains a RefTableId and a RefRecId. These are links to any source record in SQL and is typically something the process is processing. This table contains a Header and a Message. The Header field will be displayed as a column in the results grid. The message can be anything we want it to be. For example, if vendor payment proposal is creating a payment journal then the RefTableId would be the table ID of LedgerJournalTable. The RefRecId would be the RecId of the LedgerJournalTable record the payment journal created by the executing process. We could set the Header field to be the ‘Journal Number’. We can even make this a jump ref so the user can click on the journal number which would take them directly into the payment journal. The message field can be any message we want to display. For example, “Payment journal created successfully”.
 
 If the process is processing many items such as posting many invoices then we can create as many ProcessExecutionSourceLink records as we have invoices.
 
-If the process is processing large numbers of items (millions) then consider summarizing them into batches if users doesn’t need to see the details of each. For example, the subledger transfer to GL process
-creates a record in this table for each Transfer ID transferred instead of a record for each voucher transferred to GL.
+If the process is processing large numbers of items (millions) then consider summarizing them into batches if users doesn’t need to see the details of each. For example, the subledger transfer to GL process creates a record in this table for each Transfer ID transferred instead of a record for each voucher transferred to GL.
 
 Method | Description
 ---|---

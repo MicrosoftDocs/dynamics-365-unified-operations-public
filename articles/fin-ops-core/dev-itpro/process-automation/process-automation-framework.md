@@ -56,14 +56,14 @@ Some of the examples shown are test examples and are not representative of shipp
 
 ## Tasks
 
-| Section                  | Required For Scheduled Process | Required For Background Process |
-|------------------------------|---------------|-----------------------|
-| Type Registration            | Yes           | Yes                   |
-| Series Registration          | Not supported | Yes                   |
-| Process Parameters           | No            | Not supported         |
-| User Configurable Queries    | No            | Not supported         |
-| Process Execution            | Yes           | Yes                   |
-| Results and Message Logging  | Yes           | Yes                   |
-| User Interface Customization | No            | See Below             |
+| Section                                             | Required For Scheduled Process | Required For Background Process |
+|-----------------------------------------------------|---------------|-----------------------|
+| [Type registration](type-registration.md)           | Yes           | Yes                   |
+| [Series registration](series-registration.md)       | Not supported | Yes                   |
+| [Process parameters](process-parameters.md)         | No            | Not supported         |
+| [User-configurable queries](user-queries.md)        | No            | Not supported         |
+| [Process execution](process-execution.md)           | Yes           | Yes                   |
+| [Log results and messages](result-logging.md)       | Yes           | Yes                   |
+| [Customize the user interface](ui-customization.md) | No            | See Below             |
 
 Except for the sub sections series list page and Results and Messages, most of the User Interface Customization section is not supported for background processes.
