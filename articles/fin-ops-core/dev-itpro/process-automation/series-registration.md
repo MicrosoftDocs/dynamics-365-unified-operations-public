@@ -83,9 +83,9 @@ internal final class VendInvoicePostProcessScheduleSeriesRegistration implements
 Method | Description
 ---|---
 `public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This is the name of the type.
-`public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` |This is the name of the series. Be descriptive so it is easy to understand the purpose of the series from the name.
+`public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` |This is the name of the series. Be descriptive so it's easy to understand the purpose of the series from the name.
 `public Description parmDescription(Description _description = description)` | This is a description of the series.
-`public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This is the user id that is the owner of the series.
+`public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This is the user ID that is the owner of the series.
 `public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This is the list of patterns for this series. Note: At present we only support one pattern per series. This may change in the future. Insert into the list an instance of the class ProcessScheduleSeriesPatternItem.
 
 ## ProcessScheduleSeriesPatternItem class
@@ -95,7 +95,7 @@ When configuring the pattern applicable fields are determined based on the Unit.
 Method | Description
 ---|---
 `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time this series runs which maybe in minutes, or hours.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes this is the how often the process gets run within the context of the unit. It is an integer which combined with the unit will define how often the process runs.
+`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes this is the how often the process gets run within the context of the unit. It's an integer which combined with the unit will define how often the process runs.
 `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` |  Indicates the start date of the series. The time should be the empty time.
 `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | Indicates the end date of the series. The time should be the empty time.
 `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | Indicates the time the series should run. The date should be set to the empty date.
@@ -182,5 +182,5 @@ Method | Description
 `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time.
 `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This is how many units of time specified by parmUnit() above this processes should be executed.
 `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This is the next scheduled execution of the process in UTC.
-`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process will not get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the from time.
-`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process will not get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the to time.
+`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process won't get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the from time.
+`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process won't get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the to time.

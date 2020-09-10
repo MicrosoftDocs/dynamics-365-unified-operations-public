@@ -39,7 +39,7 @@ Implementing the process automation framework starts with the concept of a type 
 
 To register your type with the Process Automation Framework implement the ProcessScheduleITypeRegistration interface. This interface has a single method which returns an instance of ProcessScheduleTypeRegistrationItem.
 
-If your process uses a feature flag then you must disable/enable the type as the feature is enabled/disabled. Disabling the feature flag for a type will cause the type to not display in the UI. The scheduler will not schedule any occurrences or background processes for that type for execution. The execution side of the framework will not create any batch jobs for that type. Enabling the type will cause any occurrences or background processes scheduled to run in the past to be immediately executed. Often this is desired but if not then consider disabling any series related to the type prior to disabling the feature flag.
+If your process uses a feature flag then you must disable/enable the type as the feature is enabled/disabled. Disabling the feature flag for a type will cause the type to not display in the UI. The scheduler won't schedule any occurrences or background processes for that type for execution. The execution side of the framework won't create any batch jobs for that type. Enabling the type will cause any occurrences or background processes scheduled to run in the past to be immediately executed. Often this is desired but if not then consider disabling any series related to the type prior to disabling the feature flag.
 
 Feature management has events that can be subscribed to. The API to use to enable/disable types is ProcessScheduleTypeRegistration.enableOrDisableType().
 
@@ -47,7 +47,7 @@ Every time a Database Synchronization is run types and series get refreshed from
 
 Here is an example of a sample process for a scheduled type:
 
-Note: A background process would not need to set the parameter tab list as background processes do not support parameters.
+Note: A background process would not need to set the parameter tab list as background processes don't support parameters.
 
 Note: The type name is not shown in the UI. This should be a developer created string like “VendorInvoiceBatchPosting”. This is used internally as a key to referencing your type for various purposes. It must Not be a label.
 

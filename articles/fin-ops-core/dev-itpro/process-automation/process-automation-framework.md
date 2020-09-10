@@ -34,14 +34,14 @@ For an overview of process automation, see [Process automation](../fin-ops-core/
 
 You should use the public APIs to implement process automation.
 
-- Do not selecting from, inserting into, or directly reference the process automation tables.
-- Do not extend the Process Automation Framework or integrate your code with the classes.
-- Do not subscribe to table events such as insert/update/delete. We skip most of those events.
+- Don't selecting from, inserting into, or directly reference the process automation tables.
+- Don't extend the Process Automation Framework or integrate your code with the classes.
+- Don't subscribe to table events such as insert/update/delete. We skip most of those events.
 - If functionality is missing that you need please submit feature requests.
 
 We anticipate that we will be adding features in the future and integrating too deeply with this framework could cause your integration to break.
 
-Some of the examples shown are test examples and are not representative of shipping quality code. As always, it is expected that any processes built via the Process Framework will follow all the best practices and quality standards.
+Some of the examples shown are test examples and are not representative of shipping quality code. As always, it's expected that any processes built via the Process Framework will follow all the best practices and quality standards.
 
 ## Definitions
 
