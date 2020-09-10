@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchRFQTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -94,6 +94,9 @@ When a purchase requisition is linked to a purchase agreement, the max limit fro
 
 **Fix**
 This is working as expected. As requisitions are not always being approved, we do not want to "reserve" quantity or amount on the purchase agreement - hence we are not running into meeting the max limit on the purchase agreement. 
+
+## Trade agreements can be created from the rejected RFQs as well. System does not prevent creation of Trade agreement journals if the RFQ line has not be accepted.
+It is possible to create trade agreements for any replies for an RFQ, regardless of whether they were accepted or rejected. For more details, see here (Request For Quotations)[https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/request-quotations]
 
 ## Additional resources
 
