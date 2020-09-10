@@ -41,7 +41,7 @@ Modules represent the core building blocks that make up an online e-Commerce pag
 * A content block module that is featured on a page, and that shows a product image and description, together with a "call-to-action" button that can be used to purchase the product or get more information about it
 * A promo banner module that highlights a promotion as a banner on a page
 * A header module that is made up of smaller module components, such as a search module, a sign-in module, and a navigation module
-* A script module that injects JavaScript onto page
+* A script module that injects JavaScript inside of the HTML on a page
 
 Microsoft Dynamics 365 Commerce provides a **store starter kit** set of modules to use when building your pages.  See [Starter kit overview](..\starter-kit-overview.md) document for more details.  
 
