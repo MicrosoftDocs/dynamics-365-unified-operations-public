@@ -32,27 +32,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Process Automation Framework supports logging of results and messages. There are 2 reasons why a process should write results and messages:
 
-1. Results and the message log communicate to the system administrator or whichever roles have access the state of a process. It's important that a process’ results are monitored by someone and if failures start
-occurring that they can be seen and either fixed or an issue raised with the owner of the process.
+1. Results and the message log communicate to the system administrator or whichever roles have access the state of a process. It's important that a process’ results are monitored by someone and if failures start occurring that they can be seen and either fixed or an issue raised with the owner of the process.
+2. Results should communicate what the process did. If the process posts Vendor Invoices then the results should show all the vendor invoices with the status of each that were posted with links to drill into each vendor invoice.
 
-2. Results should communicate what the process did. If the process posts Vendor Invoices then the results should show all the vendor invoices with the status of each that were posted with links to drill
-into each vendor invoice.
+Results and messages are a multi-level logging system. A process has one to N results. Each result has one to N message specific to that result. A message is a composition child of the result. A result is typically something the process is processing. For example, if the process is posting vendor invoices then we would log each vendor invoice as a result. We could then log multiple messages associated this result for each posting of each vendor invoice. If the posting of the vendor invoice is successful it's ok to leave the message log empty as the success of the operation should be obvious when looking at the result. If warnings occur, then they could be written to the message log even if the posting was successful. This gives transparency to the users as to what each process is doing and what the results are.
 
-Results and messages are a multi-level logging system. A process has one to N results. Each result has one to N message specific to that result. A message is a composition child of the result. A result is typically
-something the process is processing. For example, if the process is posting vendor invoices then we would log each vendor invoice as a result. We could then log multiple messages associated this result for
-each posting of each vendor invoice. If the posting of the vendor invoice is successful it's ok to leave the message log empty as the success of the operation should be obvious when looking at the result.
-If warnings occur, then they could be written to the message log even if the posting was successful. This gives transparency to the users as to what each process is doing and what the results are.
-
-Both scheduled processes and polled processes support result and message logging. All processes should create a result. At the very least the result should communicate that everything was successful. For processes
-that are doing work that affects user work and is visible to users they should create results that are more detailed. Using the vendor invoice example from above, users want to see that their invoices are posted and
-if the results don’t show that in the process automation framework it will cause confusion – even if there are other ways to see this information.
+Both scheduled processes and polled processes support result and message logging. All processes should create a result. At the very least the result should communicate that everything was successful. For processes that are doing work that affects user work and is visible to users they should create results that are more detailed. Using the vendor invoice example from above, users want to see that their invoices are posted and if the results don’t show that in the process automation framework it will cause confusion – even if there are other ways to see this information.
 
 This screen shot is the results view.
-![](media/image1.png)
+![Status, time, and message for execution result.](media/execution-results.png)
 
 This screen shot is the message view and was obtained by clicking view log from the result view.
 
-![](media/image2.png)
+![Exception type and message for an individual message.](media/execution-message-log.png)
 
 ## ProcessExecutionSourceLink table
 
