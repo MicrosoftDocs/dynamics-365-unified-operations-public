@@ -1,0 +1,33 @@
+# User-configurable queries
+
+If a process isn’t going to support user configurable queries via SysQueryForm, then this section may be skipped.
+
+The Process Automation Framework provides limited support for custom queries via the SysQueryForm form. This allows users to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. This custom query criteria are stored for each occurrence of a given series
+and can be modified individually if desired. The framework also provides an API to apply the custom criteria to the query used for process execution when the occurrence executes.
+
+**Note**: The query criteria that are applied by the user are saved individually, as opposed to the entire query object, to allow for better support of query extensions. As a result, extensions made to existing queries for already existing query criteria should not cause breaking changes with this approach. A new extension, in this case, should not
+require a modification or recreation of the query criteria for a saved series or occurrences, unless desired.
+
+If a process isn’t going to support custom queries via SysQueryForm, then this section may be skipped.
+
+## ProcessScheduleIQueryable interface
+
+This interface retrieves the original query, before the end user modifies it, and the user modified query. These queries will be used to apply criteria when the process executes or extract criteria when the user makes changes. These criteria will be stored by the Process Automation Framework. This interface is up taken on the criteria form
+for a given Process Automation implementation. An example uptake of this interface can be found on the VendPaymProposalAutomationCriteria form. A sample implementation of the SysQueryForm form can also be found on the same form.
+
+Method | Description
+---|---
+`public Query getOriginalQuery()` | Get the original unmodified query to use as a basis for comparison.
+`public Query getQueryForApplicationOrExtractionOfQueryCriteria()` | Gets the modified or, to be modified, query used for application or extraction of query criteria.
+
+**Note**: The query that is used on the implementation of the ProcessScheduleIQueryable must have the same structure as the query that is used during the execution of the underlying process that is being automated. Any structural deviation that is not additive in nature will result in runtime errors when applying the saved query criteria at runtime. It is recommended to either used a designed query or to utilize shared logic that builds up the query to ensure that the query structure remains the same.
+
+## ProcessScheduleQueryCriteriaApplicator class
+
+This class is used to apply saved query criteria for a given occurrence to the runtime instance of the query that is being used for execution during a Process Automation occurrence execution. This API must be called by an up taking process at a point in the execution that the query is ready to accept the saved criteria. If a designed query or
+shared logic that builds up the query is used, then this call can typically occur after the query has been properly initialized. An example uptake of this API can be found in the constructFromAutomationExecutionContract() method in the CustVendCreatePaymJournal class.
+
+Method | Description
+---|---
+`public static void applyCriteriaForOccurrenceExecution(Query _queryToApplyCriteria, RefRecId _scheduleOccurrenceRecId)` | 
+
