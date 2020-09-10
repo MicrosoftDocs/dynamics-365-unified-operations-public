@@ -69,6 +69,13 @@ An invoiced sales order was deleted by mistake. Is there a way to restore this o
 **Resolution**
 If the deleted Sales Order has already been invoiced, it can be found via:  Customer Account > Transactions > Original document > View details. On this screen, find the corresponding invoice you are looking for and click on the invoice to see the actual invoice details along with the sales order reference. You should be able to access the sales order details as well from here.
 
+## Deadline of SO header cannot be found in the data entity "SalesOrderHeaderV2Entity"
+
+This field does not exist on the SalesOrderHeaderV2Entity.
+
+## Need to delete orphaned sales order records
+If the system ended up with orphaned sales order records and those need to be cleaned up, use the 'Sales Order Deletion Periodic Jobs' to achieve that. It can be accessed from  Sales and marketing > Periodic > Clean Up Or Retail and commerce > Retail and commerce IT > Clean Up
+
 
 ## Additional resources
 
