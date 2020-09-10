@@ -88,6 +88,28 @@ When a broker contract is setup with a Percent Category and a Charges value that
 **Resolution**
 Broker claims with negative broker charge amount is not supported and hence the approving amount is always calculated as a positive number.
 
+## Is there a way of calculating commissions on already posted invoices?
+If commissions need to be calculated for posted invoices, that is not supported currently. 
+
+##  Bundle Item is not supported within Intercompany Process
+**Scenario**
+Variant 1:
+1. Create a sales order in the legal entity of the subsidiary and add an item marked as bundle=yes
+2. Create Sales order confirmation (Sell > Generate > Confirm sales order)
+3. With confirmation the bundle is exploded on the sales order
+4. Go to menu Sales order > Purchase order: it is not possible to select the bundle item. Only the components are visible
+
+Variant 2:
+1. Create a sales order in the legal entity of the subsidiary and add an item marked as bundle=yes
+2. Go to menu Sales order > Purchase order and create a purchase order by using the vendor of the main company (IC settings should be available) - with confirmation IC purchase order and IC sales order are created
+3. Go to IC sales order (Manage > Intercompany tracing > Intercompany sales order)
+4. Create Sales order confirmation (Sell > Generate > Confirm sales order)
+5. With confirmation the bundle is exploded on the IC sales order; IC purchase order and Original sales order is updated as well. But in the original sales order the bundle functionality is not considered.
+
+**Resolution**
+Bundle item is not available for the purchase order, because if you check the sales order lines for the bundle item, the quantity will be 0 and status = Cancelled. This is by design. The sales order is not buying the Bundle item but only its components. If you need to buy a bundle, consider whether you need to mark it as Bundle item, as it is designed for Revenue recognition scenarios. For details on bundle items, see (here)[https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-setup#bundles]. For additional information also check this (blog) https://msdynamicsworld.com/story/bundling-and-sales-order-processing-revenue-recognition-microsoft-dynamics-365-finance-part-5
+
+
 ## Additional resources
 
 [Get started with Sales Orders](get-started.md)
