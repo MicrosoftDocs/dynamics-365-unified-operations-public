@@ -63,6 +63,13 @@ If there is work associated to the sales order (even if the work is closed), it 
 ## It is not possible to cancel an intercompany PO that is linked to a sales order. Error message: Quantity cannot be reduced because the remaining update quantity changes sign
 This issue has been fixed in 10.0.13. It is possible to cancel an intercompany PO that is linked to a sales order from 10.0.13.
 
+## Is it possible to restore an invoiced sales order that was deleted?
+An invoiced sales order was deleted by mistake. Is there a way to restore this or see the deleted sales order details?
+
+**Resolution**
+If the deleted Sales Order has already been invoiced, it can be found via:  Customer Account > Transactions > Original document > View details. On this screen, find the corresponding invoice you are looking for and click on the invoice to see the actual invoice details along with the sales order reference. You should be able to access the sales order details as well from here.
+
+
 ## Additional resources
 
 [Get started with Sales Orders](get-started.md)
