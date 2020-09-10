@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.13
 # Trial balance with transactional detail report
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 
