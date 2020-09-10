@@ -1380,6 +1380,14 @@
         href: process-automation/series-registration.md
       - name: Process parameters
         href: process-automation/process-parameters.md
+      - name: User-configurable queries
+        href: process-automation/user-queries.md
+      - name: Process execution
+        href: process-automation/process-execution.md
+      - name: Log results and messages
+        href: process-automation/result-logging.md
+      - name: Customize the user interface
+        href: process-automation/ui-customization.md
     - name: Regression suite automation tool
       items:
       - name: Regression suite automation tool overview
