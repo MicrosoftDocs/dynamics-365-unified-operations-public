@@ -30,31 +30,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process automation framework development
 
-For an overview of process automation, see [Process automation](../sysadmin/process-automation.md).
+Process automation allows simple scheduling of processes that will be run by the batch server. The process automation framework is a set of APIs that lets you implement process automation.
 
-You should use the public APIs to implement process automation.
+You should use only the public APIs to implement process automation.
 
-- Don't selecting from, inserting into, or directly reference the process automation tables.
-- Don't extend the Process Automation Framework or integrate your code with the classes.
-- Don't subscribe to table events such as insert/update/delete. We skip most of those events.
+- Don't select from, insert into, or directly reference the process automation tables.
+- Don't extend the framework or integrate your code with the classes.
+- Don't subscribe to table events such as insert, update, and delete. Finance and Operations apps skip most of those events.
 - If functionality is missing that you need please submit feature requests.
 
-We anticipate that we will be adding features in the future and integrating too deeply with this framework could cause your integration to break.
+We plan to add features in the future and integrating too deeply with this framework could cause your integration to break.
 
-Some of the examples shown are test examples and are not representative of shipping quality code. As always, it's expected that any processes built via the Process Framework will follow all the best practices and quality standards.
+Some of the examples for the framework are are not representative of shipping quality code. As always, it's expected that processes built using the framework will follow all the best practices and quality standards.
+
+For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
 ## Definitions
 
 | Term | Definition                                                                             |
 |------------------|--------------------------------------------------------------------------------- |
-| Poller             | The poller is a system critical batch process which runs every minute that invokes various subsystems of the process automation framework. It consults with the schedule to see what processes are ready to run and then it invokes the execution side of the framework to ensure processes get executed. |
-| Scheduled Process  | A process that is scheduled by users in the UI. Occurrences for these processes can be seen on a calendar view. |
-| Background Process | A background process that runs frequently that doesn’t require user input and performs some background processing. Subledger transfer to GL is an example of a polled process. The term “Polled” is synonymous with the term “Background”.  |
-| Type               | Throughout this documentation when we use the term type we are referring to ProcessScheduleType which is discussed in Type Registration section below.                                                                      |
-| Series             | Every process that has a registered type must have a series. Series for scheduled processes are created in the UI by end users. Series for background processes are created via series registration. See the Series Registration section for details. |
-| Date/Times         | All process automation framework dates are stored in UTC and displayed in the user preferred timezone. |
+| Poller             | The poller is a system-critical batch process that runs every minute, invoking various subsystems of the process automation framework. It consults with the schedule to see what processes are ready to run and then it invokes the execution side of the framework to ensure that processes are executed. |
+| Scheduled process  | A process that is scheduled by users in the UI. Occurrences for these processes can be seen on a calendar view. |
+| Background process | A background process that runs frequently that doesn’t require user input and performs some background processing. Subledger transfer to GL is an example of a polled process. The term **polled** is synonymous with the term **background**.  |
+| Type               | In these docs, the term **type** refers to **ProcessScheduleType**, as discussed in [Type registration](type-registration.md). |
+| Series             | Every process that has a registered type must have a series. Series for scheduled processes are created in the UI by end users. Series for background processes are created via series registration. For more information, see [Series registration](series-registration.md). |
+| Date and time         | All framework dates are stored in UTC and displayed in the user-preferred timezone. |
 
 ## Tasks
+
+Implementing a process automation solution consists of a sets of tasks, some required and some optional.
+
+Most of the user interface customizations are not supported for background processes. The series list page and logging results and messages is supported.
 
 | Section                                             | Required For Scheduled Process | Required For Background Process |
 |-----------------------------------------------------|---------------|-----------------------|
@@ -65,5 +71,3 @@ Some of the examples shown are test examples and are not representative of shipp
 | [Process execution](process-execution.md)           | Yes           | Yes                   |
 | [Log results and messages](result-logging.md)       | Yes           | Yes                   |
 | [Customize the user interface](ui-customization.md) | No            | See Below             |
-
-Except for the sub sections series list page and Results and Messages, most of the User Interface Customization section is not supported for background processes.
