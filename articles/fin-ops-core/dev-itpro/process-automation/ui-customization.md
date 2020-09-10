@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize the user interface
-description: 
+description: This topic describes how to customize the user interface using the process automation framework.
 author: RyanCCarlson2
 manager: AnnBe
 ms.date: 09/10/2020
@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize the user interface
 
-The Process Automation Framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the ProcessScheduleSeries form. If the
-intention is to display the ProcessScheduleSeries form for a specific product area then those customizations are required so the framework can display data specific to the product area.
+The Process Automation Framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the ProcessScheduleSeries form. If the intention is to display the ProcessScheduleSeries form for a specific product area then those customizations are required so the framework can display data specific to the product area.
 
 ## Weekly Calendar View
 

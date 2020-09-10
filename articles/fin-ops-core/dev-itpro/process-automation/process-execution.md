@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process execution
-description: 
+description: This topic describes how to execute processes for the process automation framework.
 author: RyanCCarlson2
 manager: AnnBe
 ms.date: 09/10/2020
@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process execution
 
-In order for the Process Automation Framework to execute the process we must implement the ProcessAutomationTask interface. This is mandatory. The Process Automation Framework via this interface will provide us with an instance of ProcessScheduleWorkItem which contains information concerning the series and an occurrence if applicable that is being
-executed and the Execution ID. We will create the batch task that need to be run and provide them to the Process Automation Framework. The Process Automation Framework creates the batch header and the tasks provided.
+For the Process Automation Framework to execute the process we must implement the ProcessAutomationTask interface. This is mandatory. The Process Automation Framework via this interface will provide us with an instance of ProcessScheduleWorkItem which contains information concerning the series and an occurrence if applicable that is being executed and the Execution ID. We will create the batch task that need to be run and provide them to the Process Automation Framework. The Process Automation Framework creates the batch header and the tasks provided.
 
 Polled processes don't have occurrences because they may get executed very frequently and that would create far more occurrences then we want to track so we use a unique execution ID to track every execution of a polled process. Scheduled processes are also assigned an execution ID.
 
@@ -39,7 +38,7 @@ The method getListOfWorkToBePerformed() decides if  work to be done. If there is
 
 We support a list for those processes that do parallel processing and want multiple batch tasks. If the process being executed is an older process that implements RunBaseBatch then it can’t be returned via the list. Two options exist in this case:
 
-1. Convert the process to SysOperationServiceController. See this link for more information regarding the [SysOperations Framework](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/sysoperation-framework-overview).
+1. Convert the process to SysOperationServiceController. See this link for more information regarding the [SysOperations Framework](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
 2. Wrap the legacy RunBaseBatch class with a new class inheriting from SysOperationServiceController. See the class LedgerCovTotalProcessAutomationProcessor as an example of how to do this.
 
 It's preferable to follow option 1 if feasible.

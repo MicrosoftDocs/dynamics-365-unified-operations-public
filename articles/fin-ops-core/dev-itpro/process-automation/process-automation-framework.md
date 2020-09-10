@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process automation framework development
-description: 
+description: This topic provides an overview of development with the process automation framework.
 author: RyanCCarlson2
 manager: AnnBe
 ms.date: 09/10/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process automation framework development
 
-For an overview of process automation, see [Process automation](../fin-ops-core/dev-itpro/sysadmin/process-automation).
+For an overview of process automation, see [Process automation](../sysadmin/process-automation.md).
 
 You should use the public APIs to implement process automation.
 

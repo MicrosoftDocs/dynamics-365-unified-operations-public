@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Process execution
-description: 
+title: User-configurable queries
+description: This topic describes how to create and use configurable queries with the process automation framework.
 author: RyanCCarlson2
 manager: AnnBe
 ms.date: 09/10/2020

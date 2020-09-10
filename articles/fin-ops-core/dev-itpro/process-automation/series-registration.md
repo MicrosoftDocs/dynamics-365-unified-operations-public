@@ -2,7 +2,7 @@
 # required metadata
 
 title: Series registration
-description: 
+description: This topic describes how to create a series for the process automation framework.
 author: RyanCCarlson2
 manager: AnnBe
 ms.date: 09/10/2020
@@ -110,9 +110,9 @@ Method | Description
 
 Method | Description
 ---|---
-`public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays) | Indicates if the process should be run every X number of days.
-`public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval) | Indicate the number of days
-`public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay) |  Indicates if the process should be run every weekday.
+`public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays)` | Indicates if the process should be run every X number of days.
+`public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval)` | Indicate the number of days
+`public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay)` |  Indicates if the process should be run every weekday.
 
 ### Methods applicable to unit month
 
