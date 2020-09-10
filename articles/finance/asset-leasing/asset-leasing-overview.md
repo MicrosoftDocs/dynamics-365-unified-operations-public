@@ -135,6 +135,7 @@ The initial recognition of a leased asset is recognized using the calculated pre
 Operating lease entry of US GAAP <BR>
    Debit: Right-of-use asset <BR>
      Credit: Operating lease liability <BR>
+  
 Finance lease entry for IFRS and US GAAP: <br>
    Debit: Right of use asset <BR>
      Credit: Operating lease liability <br>
