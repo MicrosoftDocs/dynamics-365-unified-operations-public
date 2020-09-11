@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: ER Import a configuration from Lifecycle Services
+title: Import a configuration from Lifecycle Services
 description: This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# ER Import a configuration from Lifecycle Services
+# Import a configuration from Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#configuration) from the [project-level Asset library](../..lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
 
-In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies. To complete these steps, you must first complete the steps in [ER Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Access to LCS is also required.
+In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies. To complete these steps, you must first complete the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Access to LCS is also required.
 
 1. Sign in to the application by using one of the following roles:
 
@@ -48,13 +48,13 @@ In this example, you will select the desired version of the ER configuration and
 > [!NOTE]
 > Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the Asset library that the user wants to [access](../../lifecycle-services/asset-library.md#asset-library-support) to import ER configurations.
 >
-> You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance. If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS. To access project-level Asset libraries from an ER repository for importing ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.
+> You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance. If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS. To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.
 
 ## Delete a shared version of a data model configuration
 
 1. In the tree, select **Sample model configuration**.
 
-    You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [ER Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
+    You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
 
 2. In the list, find and select the desired record.
 
