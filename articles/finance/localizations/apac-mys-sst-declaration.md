@@ -31,6 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 # SST-02 declaration for Malaysia
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
 
