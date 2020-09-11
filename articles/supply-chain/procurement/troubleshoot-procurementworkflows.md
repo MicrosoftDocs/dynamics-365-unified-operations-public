@@ -82,9 +82,9 @@ For a purchase order under change management: When a requested change is "just" 
 **Fix**
 The cancelling on the delivery remainder is not having an influence on the contents of the confirmation journal.
 
-Cancelling of delivery remainder functionality should be used for when the line has been partially received and then remainder quality is being cancelled, in the process step after the PO has been confirmed with the Vendor.
+Cancelling of delivery remainder functionality should be used when the line has been partially received and then remainder quality is being cancelled, in the process step after the PO has been confirmed with the Vendor.
 
-In case of the PO confirmation, the line that is not required anymore should be removed from the PO not cancelled. 
+In case this should be reflected on the PO confirmation, the quantity should either be adjusted on the PO line which will require a confirmation. Or if nothing have been received on the line it can be removed and a reconfirmation will be required. 
 
 ## Cancelled purchase orders show in draft list in purchase order preparation workspace
 After cancellation of purchase orders that were in a confirmed state, the cancelled Purchase Orders still show in the list of Draft PO's in the "Purchase order preparation" workspace. 
