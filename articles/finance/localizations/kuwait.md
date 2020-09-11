@@ -34,4 +34,4 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic includes information and links to documentation resources for Kuwait.
 
-- [Reverse charge](emea-reverse-charge.md)
+- [Reverse charge VAT](emea-reverse-charge.md)
