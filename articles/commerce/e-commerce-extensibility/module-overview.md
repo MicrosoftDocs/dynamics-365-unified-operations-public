@@ -59,17 +59,20 @@ Microsoft Dynamics 365 Commerce provides a [store starter kit](../starter-kit-ov
 To see how a site builder page builder interacts with modules see the [Work with modules](../work-with-modules.md) document.
 
 ## Get started with module development
-The store starter kit provides a broad set of modules for use on your online site, however you may have requirements that will require some module customization.  
+The store starter kit provides a broad set of modules for use on your online site, however you may have requirements that will require some module or theme customization. Module and theme customization requires the use of the Online SDK (software development kit) inside of a development environment.
 
-To get started with module development you will need to install a set of tools and the Dynamics 365 Commerce Online SDK (software development kit).  See the [Set up a development environment](setup-dev-environment.md) for step by step instructions to set up a dev environment and create your first custom module.
+To get started you will need to install a set of tools and the Dynamics 365 Commerce Online SDK (software development kit).  See the [Set up a development environment](setup-dev-environment.md) for step by step instructions to set up a dev environment and create your first custom module.
 
-## Starter kit module change options
-The following provides a reference to help you pick the best option for your scenarios.  There are several different levels of module customizations available from overriding the CSS in the site builder tool, extending a store starter kit module's view, cloning a store starter kit module or creating a new custom module. It's important to pick the right option for your needs.  For example if you choose to clone a module, you are making a brand new copy of the module and will no longer get updates to the code if the store starter kit module is updated.  You will have to update those modules manually if required.  So cloning should only be used if absolutely necessary.
+## Starter kit module customization options
+There are several different levels of module customizations available from overriding module CSS in the site builder tool, extending a store starter kit module's view, cloning a store starter kit module or creating a new custom module. It's important to pick the right option for your needs.  For example if you choose to clone a module, you are making a brand new copy of the module and will no longer get updates to the code if the store starter kit module is updated.  You will have to update those modules manually if required.  So cloning should only be used if absolutely necessary.  The below reference should help in picking the right solution for your requirements.
 
 ### Style changes
 If you have a scenario where a store starter kit module does everything you need but you want to change the module look and feel, this can usually be done with CSS changes.  CSS changes will even allow you to hide unwanted elements in a module if desired.  The site **theme** contains the CSS for all modules in SCSS files.  In some cases you can make CSS changes directly in the site builder tool which would not require any module or theme customizations at all.  The first two options below do not require the use of the Online SDK and are the easiest/fastest way to make CSS changes to a module.
 
 #### Style presets
+
+[!Style Presets][/media/module-overview-1.png]
+
 When making CSS changes to a module the first thing to check is can it be done with using the custom [style preset](../style-presets.md) option in the site builder tool.  Each module has the ability to surface some style options that can be changed in the style preset UI in the site builder tool.  This allows simple changes for some CSS within a module, an example might be the background color of the module or the text color and size.  Note, this option is only available with version 10.0.12 release of the store starter kit and is limited to whatever options the starter kit modules expose.
 
 To add style presets to custom modules see the [Configure theme style presets](theme-style-presets.md) document. 
