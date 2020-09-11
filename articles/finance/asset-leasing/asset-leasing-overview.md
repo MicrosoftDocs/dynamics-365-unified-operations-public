@@ -115,7 +115,7 @@ The **accounting framework** shows the selected accounting standard, either IFRS
 
 - **Present value** is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here. The present value will use the asset fair value setup.
 
-- **Short-term lease** If the lease is less than or equal to the defined value, the lease will be classified as a short-term lease.
+- **Short-term lease** If the lease term is less than or equal to the defined value, the lease will be classified as a short-term lease.
 
 - **Low value** If the asset fair value is less than or equal to the value defined, the lease will be classified as a low-value lease.
 
