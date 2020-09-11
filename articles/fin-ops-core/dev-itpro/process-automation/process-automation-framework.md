@@ -49,9 +49,9 @@ For more information about process automation, see [Process automation](../sysad
 
 | Term | Definition                                                                             |
 |------------------|--------------------------------------------------------------------------------- |
-| Poller             | The poller is a system-critical batch process that runs every minute, invoking various subsystems of the process automation framework. It consults with the schedule to see what processes are ready to run and then it invokes the execution side of the framework to ensure that processes are executed. |
+| Poller             | The poller is a system-critical batch process that runs every minute, invoking various subsystems of the process automation framework. It consults with the schedule to see what processes are ready to run and then it invokes the runtime side of the framework to ensure that processes are run. |
 | Scheduled process  | A process that is scheduled by users in the UI. Occurrences for these processes can be seen on a calendar view. |
-| Background process | A background process that runs frequently that doesn’t require user input and performs some background processing. Subledger transfer to GL is an example of a polled process. The term **polled** is synonymous with the term **background**.  |
+| Background process | A background process that runs frequently that doesn’t require user input and performs some background processing. Subledger transfer to general ledger is an example of a polled process. The term **polled** is synonymous with the term **background**.  |
 | Type               | In these docs, the term **type** refers to **ProcessScheduleType**, as discussed in [Type registration](type-registration.md). |
 | Series             | Every process that has a registered type must have a series. Series for scheduled processes are created in the UI by end users. Series for background processes are created via series registration. For more information, see [Series registration](series-registration.md). |
 | Date and time         | All framework dates are stored in UTC and displayed in the user-preferred timezone. |
@@ -68,6 +68,6 @@ Most of the user interface customizations aren't supported for background proces
 | [Series registration](series-registration.md)       | Not supported | Yes                   |
 | [Process parameters](process-parameters.md)         | No            | Not supported         |
 | [User-configurable queries](user-queries.md)        | No            | Not supported         |
-| [Process execution](process-execution.md)           | Yes           | Yes                   |
+| [Run the process](process-execution.md)           | Yes           | Yes                   |
 | [Log results and messages](result-logging.md)       | Yes           | Yes                   |
 | [Customize the user interface](ui-customization.md) | No            | See Below             |

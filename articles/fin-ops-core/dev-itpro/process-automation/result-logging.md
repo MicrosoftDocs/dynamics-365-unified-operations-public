@@ -41,7 +41,7 @@ Both scheduled processes and polled processes support result and message logging
 
 This screenshot is the results view.
 
-![Status, time, and message for execution result.](media/execution-results.png)
+![Status, time, and message for result.](media/execution-results.png)
 
 This screenshot is the message view and is accessed by clicking view log from the result view.
 
@@ -49,11 +49,11 @@ This screenshot is the message view and is accessed by clicking view log from th
 
 ## ProcessExecutionSourceLink table
 
-This table contains the results that are created while the processing is running. This table contains a **RefTableId** and a **RefRecId**. These fields are links to any source record in SQL and are typically something the process is processing. This table contains **Header** and **Message** fields. The **Header** field will be displayed as a column in the results grid. The message can be anything we want it to be. For example, if vendor payment proposal is creating a payment journal then the **RefTableId** would be the table ID of **LedgerJournalTable**. The **RefRecId** would be the **RecId** of the **LedgerJournalTable** record that the payment journal created by the executing process. We could set the **Header** field to be the **Journal Number**. You can even make this value a jump reference so the user can click on the journal number that would take them directly into the payment journal. The **Message** field can contain any message we want to display. For example, **Payment journal created successfully**.
+This table contains the results that are created while the processing is running. This table contains a **RefTableId** and a **RefRecId**. These fields are links to any source record in SQL and are typically something the process is processing. This table contains **Header** and **Message** fields. The **Header** field will be displayed as a column in the results grid. The message can be anything we want it to be. For example, if vendor payment proposal is creating a payment journal then the **RefTableId** would be the table ID of **LedgerJournalTable**. The **RefRecId** would be the **RecId** of the **LedgerJournalTable** record that the payment journal created by the running process. We could set the **Header** field to be the **Journal Number**. You can even make this value a jump reference so the user can click on the journal number that would take them directly into the payment journal. The **Message** field can contain any message we want to display. For example, **Payment journal created successfully**.
 
 If the process is processing many items such as posting many invoices, then you can create as many **ProcessExecutionSourceLink** records as you have invoices.
 
-If the process is processing large numbers of items (millions), then consider summarizing them into batches if users don’t need to see the details of each. For example, the subledger transfer to GL process creates a record in this table for each Transfer ID transferred instead of a record for each voucher transferred to GL.
+If the process is processing large numbers of items (millions), then consider summarizing them into batches if users don’t need to see the details of each. For example, the subledger transfer to general ledger process creates a record in this table for each Transfer ID transferred instead of a record for each voucher transferred to general ledger.
 
 Method | Description
 ---|---

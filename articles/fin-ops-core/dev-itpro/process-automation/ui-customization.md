@@ -101,7 +101,7 @@ For an example, see the **CustVendPaymProposalAutomationOccurrenceCardRenderer**
 Method | Description
 ---|---
 `public ProcessScheduleOccurrence getOccurrenceBeingRendered()` | This method returns the occurrence being rendered in the occurrence card.
-`public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | This method returns the executing information for this occurrence. The information typically includes the results of the batch job, the start time, and the end time.
+`public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | This method returns the running information for this occurrence. The information typically includes the results of the batch job, the start time, and the end time.
 `public void makeCardSubHeaderInvisible()` | Makes the card's subheader invisible. See the screenshot above and documentation underneath it to determine which line is the subheader.
 `public void makeCardButtonsInvisible()` | This value specifies whether the **Disable** and **Edit** buttons on the occurrence card invisible or not.
 `public void setColumnsOnOccurrenceCardDetailGroup(int _numberOfColumns)` | Allows the number of columns on the occurrence card to be customized. The default is 2 columns.

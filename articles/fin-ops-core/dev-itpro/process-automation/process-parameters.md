@@ -32,12 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range or a customer number. you must create your own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters, then you can skip this task.
 
-When a series is created by the user in the UI, the series wizard will host N form parts for the process which contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided by type registration. The form part will implement interfaces which allow you to initialize, validate, and write the custom parameters.
+When a series is created by the user in the UI, the series wizard hosts multiple form parts with each form part containing a related set of parameters. The form parts for the process contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided by type registration. The form part will implement interfaces which allow you to initialize, validate, and write the custom parameters.
+
+the series wizard hosts multiple form parts with each form part containing a related set of parameters.”
 
 The custom parameter tables typically have 2 types of records.
 
 - A template record that is bound to the series that serves as a template for all occurrences.
-- A record that is specific to an occurrence and contains the parameters to use when executing that specific occurrence. Users can override the parameters for each occurrence as needed.
+- A record that is specific to an occurrence and contains the parameters to use when running that specific occurrence. Users can override the parameters for each occurrence as needed.
 
 Parameter tables typically have a foreign key (**RecId**) to the **ProcessScheduleSeries** table and a foreign key (**RecId**) to the **ProcessScheduleOccurrence** table. The template record will have a series foreign key without a foreign key to the occurrence. All other records will have both.
 
@@ -256,7 +258,7 @@ implements ProcessScheduleIDeleteSeries
 
 ## ProcessScheduleIExplodeOccurrences interface
 
-When a user creates a new series via the UI we explode all the future occurrences. This means that if the series is a series executing every day then the framework creates an occurrence for every day. This action is called **exploding the series**. When we explode the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
+When a user creates a new series via the UI we generate all the future occurrences. This means that if the series is a series that runs every day then the framework creates an occurrence for every day. This action is called **generating the series**. When we generate the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
 
 A SQL database temp table is passed in so that you can do set creation of parameter records for optimal performance.
 
@@ -265,7 +267,7 @@ The example below has a parameter table storing a single parameter named **Type*
 ```xpp
 using System.ComponentModel.Composition;
 
-// Provider for cash flow forecast automation explode occurrences.
+// Provider for cash flow forecast automation generate occurrences.
 [Export(identifierStr(Dynamics.AX.Application.ProcessScheduleIExplodeOccurrences))]
 [ExportMetadata(extendedTypeStr(ProcessScheduleTypeName), 'LedgerCovTotalProcessAutomation')]
 internal final class LedgerCovTotalProcessAutomationExplodeOccurrencesProvider

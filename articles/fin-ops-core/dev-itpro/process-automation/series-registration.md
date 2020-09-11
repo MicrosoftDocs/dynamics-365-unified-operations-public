@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Series registration
 
-Every process must have a series. A series is similar in concept to a meeting series in outlook only our series are series of scheduled executions of a process. Most Scheduled process types have their series created in the UI by end users and never need to implement series registration. If the process being implemented is a schedule series then skip this section.
+Every process must have a series. A series is similar in concept to a meeting series in outlook only our series are series of scheduled runs of a process. Most Scheduled process types have their series created in the UI by end users and never need to implement series registration. If the process being implemented is a schedule series then skip this section.
 
 Background processes typically create a series via code using series registration as background processes tend to be “under the hood” processes that don’t allow user interaction. To create a series via code implement the ProcessScheduleISeriesRegistration interface. This contains a single method returning an instance of ProcessScheduleSeriesRegistrationItem.
 
@@ -104,7 +104,7 @@ Method | Description
 
 Method | Description
 ---|---
-`public NoYes parmOnSunday(NoYes _onSunday = onSunday)' | Indicate which day(s) of the week you would like the process to run on by selecting the appropriate methods for the day of the week. For example, parmOnMonday() will execute the job on a Monday.
+`public NoYes parmOnSunday(NoYes _onSunday = onSunday)' | Indicate which day(s) of the week you would like the process to run on by selecting the appropriate methods for the day of the week. For example, parmOnMonday() will run the job on a Monday.
 
 ### Methods applicable to the unit day
 
@@ -134,7 +134,7 @@ Method | Description
 
 The process automation framework in 10.0.13 allows system administrators to modify background process settings via the background dialog. Some background processes have restrictions on how often they want to run. We've introduced an interface a background process can implement which gets invoked and allows the background process to ensure that the unit and polling interval are within their allowed range.
 
-Here is an example that prevents this process from ever being run every minute or every hour. Once a day is the most frequent this process allows. However, a process could implement the rules such that more frequent execution is required.
+Here is an example that prevents this process from ever being run every minute or every hour. Once a day is the most frequent this process allows. However, a process could implement the rules such that more frequent runs are required.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -180,7 +180,7 @@ Method | Description
 ---|---
 `public UserId parmOwnerId(UserId _ownerId = ownerId)` | The owner of the process. This will be used when creating batch jobs as the batch jobs will be created under this user's context.
 `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This value is how many units of time specified by parmUnit() above this processes should be executed.
-`public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled execution of the process in UTC.
-`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16-hour time range may span the date boundary. This method specifies when the sleep should start.
-`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This method specifies when the sleep should end.
+`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This value is how many units of time specified by parmUnit() above this processes should be run.
+`public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled run of the process in UTC.
+`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't run during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16-hour time range may span the date boundary. This method specifies when the sleep should start.
+`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't run during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This method specifies when the sleep should end.
