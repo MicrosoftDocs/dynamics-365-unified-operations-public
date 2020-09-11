@@ -70,6 +70,7 @@ There are several different levels of module customizations available from overr
 If you have a scenario where a store starter kit module does everything you need but you want to change the module look and feel, this can usually be done with CSS changes.  CSS changes will even allow you to hide unwanted elements in a module if desired.  The site **theme** contains the CSS for all modules in SCSS files.  In some cases you can make CSS changes directly in the site builder tool which would not require any module or theme customizations at all.  The first two options below do not require the use of the Online SDK and are the easiest/fastest way to make CSS changes to a module.
 
 #### Style presets
+A [style preset](../style-presets.md) is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from site builder. The following image shows the style presets available on the selected P
 
 ![Style Presets](media/module-overview-1.png)
 
