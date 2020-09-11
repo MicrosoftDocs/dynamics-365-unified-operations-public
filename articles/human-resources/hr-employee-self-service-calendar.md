@@ -58,18 +58,19 @@ Human resources roles can also access the company calendar from **Leave and abse
 
 [!include [banner](includes/preview-feature.md)]
 
-Additional filters and options are now available in calendars. All calendars now include view options that allow you to view:
+Calendars now contain additional filters and options. All calendars include view options for:
+
 - Approved requests
 - Pending requests
 - Employees with leave requests
 - Employees without leave requests
 - Employee birthdays
-- Time off requests 
+- Time-off requests 
 - Leave of absence requests
 
-These options that are aviallabe are determined based on how the calendards are configured in the leave and absence parameters. 
+Calendar configuration in Leave and absence parameters determine available view options.
 
-Calendars can also be filtered by manager or department. The primary position assignment will determine the employees displayed when these filters are set. 
+You can also filter calendars by manager or department. The primary position assignment determines the employees displayed when these filters are set. 
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
