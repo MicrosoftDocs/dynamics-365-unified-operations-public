@@ -42,11 +42,11 @@ Public preview features should only be enabled on Tier 2 sandbox environments. S
 
 A list of the requirements for using Finance Insights follows, along with links to sources of additional information where possible. 
 
-### System requirements
-A Tier 2 Sandbox environment (multi-box) is required to preview Finance Insights. For more background on environments, please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
-
 ### Legal requirements
 To apply for the preview program, please fill out [Finance Insights Preview for Dynamics 365 Finance agreement](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).   
+
+### System requirements
+A Tier 2 Sandbox environment (multi-box) is required to preview Finance Insights. For more background on environments, please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 ### Version information
 This document applies to Finance and Operations 10.0.11 (PU35) or after.
@@ -71,34 +71,27 @@ Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Se
 Some configuration steps must be completed to use Finance Insights. For more information about the procedures that configure Finance Insights see [Configuration for Finance Insights](configure-for-fin-insites.md).
 
 ### Deploy the F&O environment
-
 Complete the following steps to deploy the Dynamics 365 Finance and Operations envrionment. 
 
 1. Create or update an F&O environment in LCS. The environment needs App Version 10.0.11/Platform Update 35 or later versions.
 2. The environment must be an HA environment in Sandbox (also known as a Tier-2 environment). Please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning) for more details.
 3. If using Contoso demo data, additional sample data is required to use payment predictions, cashflow forecasting, and budget forecasting.  Please follow the steps at <TBD> to add the sample data needed (content for payment predictor at [Financials R&D All](https://microsoft.sharepoint.com/:f:/t/FinancialsRDAll909/Essk-ZaYVvxPrKNIHmbJNS8BWKCMxcMsubO_NVxECcsLfg?e=iwOR9e)
 
-### Set up the data lake
-Complete the steps described in [Azure Data Lake overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-overview) to set up an Azure Data Lake Storage and supporting resources in your Azure subscription.
-
-### Configure entity store
-Complete the steps described in [Make Entity store available as a Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake) to set up the entity store that uses the Azure resources from the previous step.
-
-### Configure CDS resources and Power AI
-Complete the steps described in <TBD> to configure the required CDS resources (content at Configure CDS and Configure AI builder integrator).
+### Configure CDS and Azure resouces
+Complete the steps described in [Configuration for Finance Insights](configure-for-fin-insites.md) to configure CDS and Azure resources.
 
 ### Create data integrator project
-After creating a model in the previous step, create a data integrator project to flow data back into Dynamics 365 for Finance by completing the steps in <TBD> (content at Create Data Integrator Project).  
+Create a data integrator project to flow data back into Dynamics 365 for Finance by completing the steps in [Create data integrator project](create-data-integrate-project.md).  
 
 ## Enable Finance Insights capabilities
 
 When you've completed the configuration steps and set up demo data, you must also enable each of the capabilities that you plan to use, Cash flow forecasts, Customer payment predictions, and Budget proposals. 
 
-### Enable cashflow forecasting
-Complete the steps described in [Enble Cash flow forecasts](enable-cash-flow-forecasting.md) to build and use a machine learning model along with your organization's data to generate cash flow forecasts.
-
 ### Enable customer payment predictions
 Complete the steps described in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to build and use a machine learning model along with your organization's data to generate predictions of when customers are likely to pay outstanding invoices, as well as predictions of when specific invoices are likely to be paid.
+
+### Enable cashflow forecasting
+Complete the steps described in [Enble Cash flow forecasts](enable-cash-flow-forecasting.md) to build and use a machine learning model along with your organization's data to generate cash flow forecasts.
   
 ### Enable Budget proposals
 Complete the steps described in [Enable Budget proposals](enable-budget-proposal.md) to use a machine learning model along with your organization's historical data to generate a budget proposal that help you begin your budgeting process with effectiveness than a manual process provides. 
@@ -111,9 +104,6 @@ Follow the steps described in <TBD> to setup and use cashflow forecasting. For m
 See [Evaluate the initial customer payment prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/evaluate-payment-prediction?branch=bob-fi-evaluate-payment-prediction) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/improve-model?branch=bob-fi-improve-model) for information help you adjust the data that's used to build the predcition so improve its effectiveness. 
 
 Follow the guides at <TBD> to understand and improve the initial payment predictor model (contact at https://microsoft.sharepoint.com/:w:/t/AIforOAG/EahnJjqfQBlMrKRX4oYe_uUBpgtY9UsPXzeU17ERbIrEqA?e=FvJF0f and https://microsoft.sharepoint.com/:w:/t/AIforOAG/EbAsTOn26blNrFQLzMh8VgMBLHcqhxO8I1VfKrURUEP29w?e=8j3tPm).
-
-### Provide feedback to Microsoft
-Part of your commitment as part of this preview program is to provide feedback to Microsoft.  Please complete the relevant portions of <TBD>.  Multiple users at your company can fill out the survey if they have participated in any step of the process or evaluated the feature. The steps to complete are lised in the [Setting up Finance Insights](https://microsoft.sharepoint.com/:w:/t/AIforOAG/EXwSu5F8R2VLvYcjp20ct_oBmoZXpqz0l9L1OcaNoyPNrA?e=tLBOjI) document. 
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
