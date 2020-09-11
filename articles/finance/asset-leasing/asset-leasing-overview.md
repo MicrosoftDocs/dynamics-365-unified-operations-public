@@ -153,13 +153,13 @@ Credit: Finance lease liability <br>
 
 **Accrued lease payment**: An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting lease liability account against wither vendor subledger in case of the lessor is defined as a vendor or posting the credit side to notes payable ledger account then the payment will be executed against either vendor or notes payable.
 
-Operating lease entry of US GAAP:
-Debit: Operating lease liability
-Credit: Vendor liability (subledger)/Notes payable  
+Operating lease entry of US GAAP  <br>
+Debit: Operating lease liability  <br>
+Credit: Vendor liability (subledger)/Notes payable  <br>  
 
-Finance lease entry for IFRS and US GAAP:
-Debit: Finance lease liability
-Credit: Vendor liability (subledger)/Notes payable 
+Finance lease entry for IFRS and US GAAP  <br>
+Debit: Finance lease liability  <br>
+Credit: Vendor liability (subledger)/Notes payable  <br>
 
 **Asset depreciation**: The right-of-use asset is depreciated over the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will carried over fixed assets module only. 
 
