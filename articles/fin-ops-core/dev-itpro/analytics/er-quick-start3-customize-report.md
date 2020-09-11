@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customize the provided ER configurations to generate a custom electronic document
+title: Customize Electronic reporting configurations to generate an electronic document
 description: This topic explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/25/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Customize the provided ER configurations to generate a custom electronic document
+# Customize Electronic reporting configurations to generate an electronic document
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,26 +56,25 @@ Assume that you need to specify a federal tax identification code as a new custo
 - [Adopt the changes in the new versions of the standard ER configurations in your custom ER configurations](#RebaseCustomERConfigurations).
 - [Add, post, and send a customer invoice by using new versions of the custom ER configurations](#ProcessInvoice3).
 
-All the following procedures can be done in the **DEMF** company.
+The following procedures can all be completed in the **DEMF** company.
 
 ## <a name="ConfigureER"></a>Configure the ER framework
 
-As a user in the Electronic Reporting Functional Consultant or the Electronic Reporting Developer role, you must configure the minimal set of ER parameters before you can start to use the ER framework to design a custom version of every standard ER configuration of the ER solution using to generate e-invoices.
+As a user in the ER Functional consultant or Developer role, you must configure the minimal set of ER parameters before you can start to use the framework to design a custom versions of the standard configurations of the ER solution used to generate e-invoices.
 
 ### Configure ER parameters
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
 3. On the **Electronic reporting parameters** page, on the **General** tab, set the **Enable design mode** option to **Yes**.
-4. On the **Attachments** tab, set the following parameters:
-    - In the **Configurations** field, select the **File** type for the **DEMF** company.
-    - In the **Job archive**, **Temporary**, **Baseline**, and **Others** fields, select the **File** type.
+4. On the **Attachments** tab, in the **Configurations** field, select **File**.
+5. In the **Job archive**, **Temporary**, **Baseline**, and **Others** fields, select the **File** type.
 
 For more information about ER parameters, see [Configure the ER framework](electronic-reporting-er-configure-parameters.md).
 
 ### Activate an ER configuration provider
 
-Every ER configuration that is added is marked as owned by an ER configuration provider. The ER configuration provider that is activated in the **Electronic reporting** workspace is used for this purpose. Therefore, you must activate an ER configuration provider in the **Electronic reporting** workspace before you start to add or edit ER configurations.
+Every added ER configuration is marked as owned by an ER configuration provider. The ER configuration provider that is activated in the **Electronic reporting** workspace is used for this purpose. Therefore, you must activate an ER configuration provider in the **Electronic reporting** workspace before you start to add or edit ER configurations.
 
 > [!NOTE]
 > Only the owner of an ER configuration can edit it. Therefore, before an ER configuration can be edited, the appropriate ER configuration provider must be activated in the **Electronic reporting** workspace.
@@ -110,8 +109,8 @@ To add the standard ER configurations to your current Finance instance, you must
 2. On the **Localization configurations** page, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the Microsoft provider.
 3. On the **Configuration repositories** page, select the repository of the **Global** type, and then select **Open**. If you're prompted for authorization to connect to Regulatory Configuration Service, follow the authorization instructions.
 4. On the **Configuration repository** page, in the configuration tree in the left pane, select the **Peppol Sales Invoice** format configuration.
-5. On the **Versions** FastTab, select version **11.2.2** of the selected ER format configuration.
-6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
+5. On the **Versions** FastTab, select version **11.2.2**.
+6. Select **Import** to download the selected version from the Global repository.
 
 ![Configuration repository page](./media/er-quick-start3-import-solution1.png)
 
@@ -126,16 +125,16 @@ To add the standard ER configurations to your current Finance instance, you must
 4. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**.
 5. In the configuration tree in the left pane, expand **UBL Sales invoice**.
 
-Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported as part of the provided ER solution. Since new versions of ER configurations are constantly published to the Global and LCS repositories to keep the corresponding ER solutions compliant with new requirements, at the current moment the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
+Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global and LCS repositories to keep the corresponding solutions compliant with new requirements, the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
 
 ![Configurations page](./media/er-quick-start3-imported-solution1a.png)
 
-To simulate the state of ER configurations that you would have in the current Finance instance if you would import the version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, in August 7th, 2019), do the following:
+To simulate the state of ER configurations that you would have in the current Finance instance if you import version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, in August 7th, 2019), do the following:
 
-- Use the **Delete** option on the Action pane to delete all ER configurations that have been published after August 7th, 2019.
-- Use the **Delete** option on the **Versions** FastTab to delete all versions of ER configurations that have been published after August 7th, 2019.
+- UOn the Action Pane, select **Delete** to delete all ER configurations that have been published after August 7th, 2019.
+- On the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that have been published after August 7th, 2019.
 
-Make sure that the following ER configurations are eventually available in the configuration tree:
+Verify that the following ER configurations are eventually available in the configuration tree:
 
 - **Invoice model** ER data model configuration (initially named as **Customer invoice model**):
     - Version 11 of it contains the version 10 of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the selected for import **Peppol Sales Invoice** ER format.
