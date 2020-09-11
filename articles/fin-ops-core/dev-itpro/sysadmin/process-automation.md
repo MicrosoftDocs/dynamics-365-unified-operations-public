@@ -39,13 +39,16 @@ The central administration page for all process automations is found in the Syst
 
 Any processes that are disabled in feature management will not show when the feature is disabled. Additionally, the Process automation scheduling engine will not schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately.
 
-## Calendar view 
+## Calendar view
+
 One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You will see this view on the right side of the **Process automation** page. It will be populated with the scheduled work for the selected series. 
 
 [![Process automation calendar](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## Occurrence changes
-Each occurrence can be modified without impacting other occurrences defined by the series that originated them. Occurrences of scheduled work can be edited from the calendar view by selecting the **View/Edit** button and selecting **Occurrence**. This allows you access to all the settings originally shown in the series setup wizard and provides the ability to make a one-off change for the selected occurrence. An occurrence of scheduled work can also be turned off by selecting the **Disable** button from the calendar view. 
 
-## Developer documentation 
-Developer documentation is currently being written to allow developers to extend the process automation framework. This documentation will provide information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically.
+Each occurrence can be modified without impacting other occurrences defined by the series that originated them. Occurrences of scheduled work can be edited from the calendar view by selecting the **View/Edit** button and selecting **Occurrence**. This allows you access to all the settings originally shown in the series setup wizard and provides the ability to make a one-off change for the selected occurrence. An occurrence of scheduled work can also be turned off by selecting the **Disable** button from the calendar view.
+
+## Developer documentation
+
+The process automation framework allows developers to extend the process automation framework. This documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically. For more information, see [Process automation framework](../process-automation/process-automation-framework.md).
