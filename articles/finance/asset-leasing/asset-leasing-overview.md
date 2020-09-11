@@ -105,13 +105,13 @@ The first period will start with period zero, if the annuity type is annuity due
 
 **Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that are used as the basis for the classification tests. The result of the classification tests are used to automatically specify the lease type.
 
-The **accounting framework** shows the selected accounting standard, either IFRS 16 and ASC 842, that you're supporting. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile. Asset leasing also supports the older accounting standards IFRS 17 and ASC 840.
+The **accounting framework** shows the selected accounting standard, either IFRS 16 and ASC 842, that you're supporting. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile.
 
 **Lease types** indicate which of the two types of leases will be used, either a finance lease or an operating lease. Under a finance lease, risks and rewards that are related to the leased asset are transferred to the lessee. Under an operating lease, risks and rewards that are related to leased asset remain with the lessor. A third option is an automated identification of the lease type, either finance or operating, based on the defined thresholds in the book. This automatic identification is performed during the lease reclassification test.
 
 **Thresholds** are used in the lease classification tests to determine if the asset classified as one of the following.
 
-- **Lease term** is the percentage of the useful life. The system will classify the lease as finance if the threshold is set to automatic, and if the lease term over the asset’s useful life is greater than or equal to the percentage defined here. The lease term will use the useful life setup.
+- **Lease term** is the percentage of the useful life to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic, and if the lease term over the asset’s useful life is greater than or equal to the percentage defined here.
 
 - **Present value** is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here. The present value will use the asset fair value setup.
 Short-term lease If the lease is less than or equal to the defined value, the lease will be classified as a short-term lease.
