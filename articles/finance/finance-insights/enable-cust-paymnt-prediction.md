@@ -40,7 +40,12 @@ This topic describes the steps for turning on and configuring the Customer payme
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps.
 
-1. Turn on the Customer payment insights (preview) feature in the **Feature management** workspace.
+1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
+
+    Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to   enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS) :
+	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)
+
+2. Turn on the Customer payment insights (preview) feature in the **Feature management** workspace.
 
     1. Go to **System administration \> Workspaces \> Feature management**.
     2. Find the feature that is named **Customer payment insights (preview)**.
@@ -48,7 +53,7 @@ This topic describes the steps for turning on and configuring the Customer payme
 
     The Customer payment insights feature is now turned on and ready to be configured.
 
-2. Configure the Customer payment insights (preview) feature.
+3. Configure the Customer payment insights (preview) feature.
 
     1. Go to **Credit and collections \> Setup \> Finance Insights \> Finance insights parameters**.
 
@@ -61,7 +66,7 @@ This topic describes the steps for turning on and configuring the Customer payme
 
         - **On time** – This bucket includes payments that are predicted to be paid on or before the transaction due date.
         - **Late** – This bucket includes payments that are predicted to be paid after the transaction due date but before the start of the "very late" transaction period.
-        - **Very late** – This bucket includes payments that are predicted to be paid after the start of the "very late" transaction period.
+        - **Very late** – This bucket includes payments that are predicted to be paid after the start of the "very late" transaction period
 
         > [!NOTE]
         > After the AI prediction model for customer payments has been created, if you change the "very late" transaction period and select **Change late threshold**, the existing prediction model is deleted and a new model is created. The new prediction model will move transactions into the "very late" period, based on the settings that were entered to define it.
