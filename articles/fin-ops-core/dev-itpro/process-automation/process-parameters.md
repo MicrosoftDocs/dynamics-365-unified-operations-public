@@ -258,6 +258,8 @@ implements ProcessScheduleIDeleteSeries
 
 ## ProcessScheduleIExplodeOccurrences interface
 
+[!include [banner](../includes/banner.md)]
+
 When a user creates a new series via the UI we generate all the future occurrences. This means that if the series is a series that runs every day then the framework creates an occurrence for every day. This action is called **generating the series**. When we generate the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
 
 A SQL database temp table is passed in so that you can do set creation of parameter records for optimal performance.

@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process automation framework development
 
+[!include [banner](../includes/banner.md)]
+
 Process automation allows simple scheduling of processes that will be run by the batch server. The process automation framework is a set of APIs that lets you implement process automation.
 
 You should use only the public APIs to implement process automation.

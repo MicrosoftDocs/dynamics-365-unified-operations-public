@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize the user interface
 
+[!include [banner](../includes/banner.md)]
+
 The process automation framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to display the **ProcessScheduleSeries** form for a specific product area, then customizations are required so that the framework can display data specific to the product area.
 
 ## Weekly Calendar View
@@ -44,7 +46,7 @@ An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into e
 
 ### ProcessScheduleOccurrenceCard class
 
-This class lets you customize the appearance of an occurrence card which is shown on the calendar view. The first two lines are controlled by the framework and can't be modified. The subheader is the **Completed at** phrase. The message is the status word **Completed** with the blue background.
+This class lets you customize the appearance of an occurrence card that is shown on the calendar view. The first two lines are controlled by the framework and can't be modified. The subheader is the **Completed at** phrase. The message is the status word **Completed** with the blue background.
 
 ![Default occurrence card with status and time.](media/uptake-schedule.png)
 
@@ -52,11 +54,11 @@ Method | Description
 ---|---
 `public str parmSubHeader(str _subHeader = cardSubHeader)` | The subheader is the third line of the occurrence card shown in the screenshot.
 `public str parmStatusMessage(str _statusMessage = statusMessage)` | The status message represents the status of the process and has a colored background.
-`public ProcessExecutionOccurrenceCardStatusColor parmStatusColor(ProcessExecutionOccurrenceCardStatusColor _statusColor = statusColor)` | The color of the background which contains the status message.
+`public ProcessExecutionOccurrenceCardStatusColor parmStatusColor(ProcessExecutionOccurrenceCardStatusColor _statusColor = statusColor)` | The color of the background that contains the status message.
 
 ### ProcessScheduleIShowOccurrenceCalendarView interface
 
-This interface must be implemented by forms which will display the weekly calendar view. The **ProcessScheduleSeries** form is an example of a form that implements this interface.
+This interface must be implemented by forms that will display the weekly calendar view. The **ProcessScheduleSeries** form is an example of a form that implements this interface.
 
 Method | Description
 ---|---
@@ -71,7 +73,7 @@ Method | Description
 ---|---
 `public static ProcessScheduleOccurrenceCalendarViewContract construct()` | Use this constructor if the intention is to display occurrences for one to many types.
 `internal static ProcessScheduleOccurrenceCalendarViewContract newFromScheduleSeries(ProcessScheduleSeries _scheduleSeries)` | Use this constructor if the intention is to display occurrences for a single series.
-`public void AddScheduleType(ProcessScheduleTypeName _scheduleTypeName)` | If not displaying a single series then use this to add the types to be displayed.
+`public void AddScheduleType(ProcessScheduleTypeName _scheduleTypeName)` | If not displaying a single series, then use this value to add the types to be displayed.
 
 ### ProcessScheduleOccurrenceCalendarViewRenderer class
 
@@ -79,7 +81,7 @@ Use this class to render the weekly calendar view onto an existing form. A form 
 
 Method | Description
 ---|---
-`public static ProcessScheduleICalendarView renderCalendarViewInFormControl(FormGroupControl _containingGroupControl)` | This will render the weekly calendar view within the specified form group control.
+`public static ProcessScheduleICalendarView renderCalendarViewInFormControl(FormGroupControl _containingGroupControl)` | This method renders the weekly calendar view within the specified form group control.
 
 ### Render interfaces
 
@@ -113,7 +115,7 @@ Method | Description
 
 ### ProcessScheduleISeriesFormController interface
 
-The series list page uses this controller to determine which types will have their series displayed on the **ProcessScheduleSeries** list page. This class uses the **SysPlugIn** class. The menu item which the uptake teams use to launch the **ProcessScheduleSeries** form is used as the key to invoking the specified plugin. This key allows each usage of this form to customize what types are displayed.
+The series list page uses this controller to determine which types will have their series displayed on the **ProcessScheduleSeries** list page. This class uses the **SysPlugIn** class. The menu item that the you use to launch the **ProcessScheduleSeries** form is used as the key to invoking the specified plugin. This key allows each usage of this form to customize what types are displayed.
 
 ```xpp
 // Implementation of the ProcessScheduleISeriesFormController for the admin view of the process schedule series form.
@@ -132,7 +134,7 @@ internal class ProcessScheduleSeriesFormAdminController implements ProcessSchedu
 
 ### ProcessScheduleSeriesFormContract
 
-This class is a contract that is used by the series list page to determine which **ProcessScheduleType** is displayed on the series list page. This could be used on a workspace to show only those series for specific types related to the work space.
+This class is a contract that is used by the series list page to determine which **ProcessScheduleType** is displayed on the series list page. This class could be used on a workspace to show only those series for specific types related to the work space.
 
 Method | Description
 ---|---
@@ -191,7 +193,7 @@ Method | Description
 
 ### ProcessExecutionMessageLogDialog
 
-This interface allows the message log to be opened in the context of something from the source domain. For example, the message log could be opened from a posted vendor invoice window to show what message were logged while it was posted by a process automation framework enabled process. The posted vendor invoice window would need to implement this interface. Useing this interface saves uptake teams from having to have their own private results/messaging subsystems.
+This interface allows the message log to be opened in the context of something from the source domain. For example, the message log could be opened from a posted vendor invoice window to show what message were logged while it was posted by a process automation framework enabled process. The posted vendor invoice window would need to implement this interface. Using this interface saves you from having to build your own private results/messaging subsystems.
 
 Method | Description
 ---|---

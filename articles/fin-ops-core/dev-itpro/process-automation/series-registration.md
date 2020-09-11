@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Series registration
 
+[!include [banner](../includes/banner.md)]
+
 Every process must have a series. A series is similar in concept to a meeting series in outlook only our series are series of scheduled runs of a process. Most Scheduled process types have their series created in the UI by end users and never need to implement series registration. If the process being implemented is a schedule series then skip this section.
 
 Background processes typically create a series via code using series registration as background processes tend to be “under the hood” processes that don’t allow user interaction. To create a series via code implement the ProcessScheduleISeriesRegistration interface. This contains a single method returning an instance of ProcessScheduleSeriesRegistrationItem.

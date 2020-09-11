@@ -77,7 +77,9 @@ internal final class ProcessAutomationTaskTestImplementation extends ProcessAuto
 
 ## ProcessScheduleWorkItem class
 
-This class has many pieces of information and is designed to represent a process that is to be run. The intent of this class is to provide uptake teams with this information.
+[!include [banner](../includes/banner.md)]
+
+This class has many pieces of information and is designed to represent a process that is to be run.
 
 Method | Description
 ---|---

@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Log results and messages
 
+[!include [banner](../includes/banner.md)]
+
 The process automation framework supports logging of results and messages. There are two reasons why a process should write results and messages:
 
 1. Results and the message log communicate the state of a process to the system administrator or whichever roles have access. It's important that process results are monitored and seen by someone. If failures occur, they can either be fixed or an issue raised with the process owner.
