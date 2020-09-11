@@ -113,20 +113,27 @@ During the RCS setup, you will complete these tasks:
 
 1. Sign in to your RCS account.
 2. In the **Globalization features** workspace, in the **Environments** section, select the **e-Invoicing** tile.
-3. On the Action Pane, select **Key Vault parameters**.
+3. Select **Service environments**
+
+    ![Selecting Service environments](media/e-invoicing-services-get-started-select-service-environments.png)
+
+> [!NOTE]
+> The option **Connected applications** will grant access for the automatic configuration of Electronic invoicing add-on on the Finance or Supply Management through the RCS, but for now, this feature is still under development.
+
+4. On the Action Pane, select **Key Vault parameters**.
 
     ![Selecting Key Vault parameter](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
-4. On the Action Pane, select **New** to add a key vault.
-5. In the **Key Vault URI** field, enter the value of the **DNS name** attribute of the key vault resource that you configured in Azure. For information about where to find the **DNS name** value, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+5. On the Action Pane, select **New** to add a key vault.
+6. In the **Key Vault URI** field, enter the value of the **DNS name** attribute of the key vault resource that you configured in Azure. For information about where to find the **DNS name** value, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
     ![Key Vault URI field](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-6. On the **Certificates** FastTab, select **Add**, and enter the digital certificate names and the key vault secrets. Both sets of values are configured on the key vault resource in Azure.
+7. On the **Certificates** FastTab, select **Add**, and enter the digital certificate names and the key vault secrets. Both sets of values are configured on the key vault resource in Azure.
 
     ![Adding certificates](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
-7. If your country/region-specific invoice requires a chain of certificates to apply a digital signature, select **Chain of certificates** on the Action Pane, and then enter the sequence of certificates or key vault secrets that make up the chain.
+8. If your country/region-specific invoice requires a chain of certificates to apply a digital signature, select **Chain of certificates** on the Action Pane, and then enter the sequence of certificates or key vault secrets that make up the chain.
 
 ### Set up the RCS integration with the Electronic invoicing add-on server
 
@@ -177,8 +184,11 @@ During this setup, you will complete the following tasks:
 The Electronic invoice integration feature is enabled via flighting. Flighting is a concept that allows a feature to be ON or OFF by default. The following steps enable a flight in a non-production environment. 
 
 1. Execute the following SQL command:
+
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+    
 2. After making the above change, perform an IISReset on all AOS's
 
 ### Turn on the Electronic invoicing add-on integration feature
