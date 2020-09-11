@@ -48,7 +48,14 @@ You can also create position-based leave benefits, such as executive-only benefi
 
 2. Under **Details**, enter the **Name**, **Start date**, **Description**, and **Leave type** for your plan.
 
-If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, leave types are configured in the **Accrual schedule** instead of under **Details**. For each record in the accrual schedule table, you can define a leave type.
+If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, leave types are configured in the **Accrual schedule** instead of under **Details**. For each record in the accrual schedule table, you can define a leave type. Also, when this feature is enabled new data entities will need to be used for integrations or other scenarios where entities need to be used. 
+
+The new entities are:
+- Leave and absence bank transaction V2
+- Leave and absence enrollment V2
+- Leave and absence plan tier V2
+- Leave and absence plan V2
+- Leave time off request V2
 
  > [!IMPORTANT]
    > After you enable this feature, you can't turn it off.
