@@ -36,7 +36,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 Complete the following steps to enable the Cash flow forecasts capability within Finance Insights. <!--*Do customers need to complete configuration steps before they enable this feature?*-->
 
-1. Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS) :
+1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
+
+	Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS) :
 	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1), ('BudgetIntelligentBudgetRegisterProposalFeature', 1)
 
 2. Go to the **Feature management** workspace and complete the following steps. 
