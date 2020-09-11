@@ -30,9 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User-configurable queries
 
+[!include [banner](../includes/banner.md)]
+
 If the process isn’t going to support user configurable queries via SysQueryForm, then you can skip this task.
 
-The process automation framework provides limited support for custom queries via the **SysQueryForm** form. A custom query allow a user to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. The custom query criteria are stored for each occurrence of a given series and can be modified individually. The framework also provides an API to apply the custom criteria to the query used for running the process for each occurrence.
+The process automation framework provides limited support for custom queries via the **SysQueryForm** form. A custom query allows a user to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. The custom query criteria are stored for each occurrence of a given series and can be modified individually. The framework also provides an API to apply the custom criteria to the query used for running the process for each occurrence.
 
 > [!NOTE]
 > The query criteria that are applied by the user are saved individually, as opposed to the entire query object, to allow for better support of query extensions. As a result, extensions made to existing queries for already existing query criteria shouldn't cause breaking changes with this approach. A new extension, in this case, shouldn't require a modification or recreation of the query criteria for a saved series or occurrences, but it is allowed.
@@ -51,7 +53,7 @@ Method | Description
 
 ## ProcessScheduleQueryCriteriaApplicator class
 
-This class is used to apply saved query criteria for a given occurrence to the runtime instance of the query that is being used when running a process. This API must be called by an up taking process at a point in the run that the query is ready to accept the saved criteria. If a designed query or shared logic that builds up the query is used, then this call can typically occur after the query has been properly initialized. An example uptake of this API can be found in the **CustVendCreatePaymJournal.constructFromAutomationExecutionContract** method.
+This class is used to apply saved query criteria for a given occurrence to the runtime instance of the query that is being used when running a process. This API must be called by an up taking process at a point in the run that the query is ready to accept the saved criteria. If a designed query or shared logic that builds up the query is used, then this call can typically occur after the query has been properly initialized. An example of using this API can be found in the **CustVendCreatePaymJournal.constructFromAutomationExecutionContract** method.
 
 Method | Description
 ---|---
