@@ -2278,6 +2278,10 @@
           href: localizations/tasks/use-assemble-list-fixed-asset.md
         - name: Use disassemble list for fixed assets
           href: localizations/tasks/use-disassemble-list-fixed-assets.md          
+      - name: Kuwait
+        items: 
+        - name: Kuwait overview
+          href: localizations/kuwait.md
       - name: Latvia
         items:
         - name: Latvia overview
@@ -2370,6 +2374,10 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -2428,6 +2436,10 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+      - name: Qatar
+        items: 
+        - name: Qatar overview
+          href: localizations/qatar.md
       - name: Russia
         items:
         - name: Russia overview
