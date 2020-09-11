@@ -36,10 +36,10 @@ This topic describes a generic approach for setting up reverse charge functional
 
 > [!NOTE]                                                                                  
 > The availability of the functionality is managed by the following features in the **Feature management** workspace:
-•	No specific feature: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Saudi Arabia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, United Arabic Emirates
-•	*Reverse charge for additional countries*: Bahrain, Kuwait, Oman, and Qatar
-•	*Enable reverse charge mechanism for VAT/GST scheme*: all other countries/regions except for Brazil, India, Russia
-Refer to the How to enable Reverse charge mechanism for VAT/GST scheme feature for details.
+ - No specific feature: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Saudi Arabia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, United Arabic Emirates
+ - *Reverse charge for additional countries*: Bahrain, Kuwait, Oman, and Qatar
+ - *Enable reverse charge mechanism for VAT/GST scheme*: all other countries/regions except for Brazil, India, Russia
+See [How to enable Reverse charge mechanism for VAT/GST scheme feature](#How-to-enable-Reverse-charge-mechanism-for-VAT/GST-scheme-feature) for details.
 
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
@@ -129,3 +129,14 @@ When a purchase invoice that has the reverse charge is posted, two sales tax tra
 In the following screenshot, one transaction has the **Sales tax receivable** direction, and the other transaction has the **Sales tax payable** direction. 
 
 ![Posted sales tax](media/apac-sau-posted-sales-tax.png)
+
+# How to enable Reverse charge mechanism for VAT/GST scheme feature
+In the **Feature management** workspace find feature and click Enable.
+After the feature is enabled, a Revere charge tab will be available in all legal entities. You can switch on a the Reverse charge funclionality by setting Reverse charge option to ON.
+The following forms and menu items will be availabe:
+
+
+
+
+
+
