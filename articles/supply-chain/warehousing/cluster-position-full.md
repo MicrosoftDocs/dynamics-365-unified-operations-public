@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 The *Cluster position full* feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes. In a common scenario, not all items on a work order fit into a selected container. Warehouse workers who are cluster picking have few options in this scenario: they must either change to a larger container size or work with their supervisor to come up with a different solution.
 
-This feature introduces the ability to run the *full* option on one of the work units in a cluster. In older versions, this option was available only for regular order picking, not for cluster picking. However, this feature differs from the standard full-button flow in that it cancels the remaining work. It doesn't suggest that the user add another bin to the same cluster, and it doesn't automatically create new work.
+This feature introduces the ability to run the **Full** button on one of the work units in a cluster. In older versions, this option was available only for regular order picking, not for cluster picking. However, this feature differs from the standard **Full** button in that it cancels the remaining work. It doesn't suggest that the user add another bin to the same cluster, and it doesn't automatically create new work.
 
 ## Turn on the Cluster position full feature
 
@@ -58,7 +58,7 @@ You must specify whether cluster IDs are automatically generated, how many posit
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Cluster profiles**.
 1. In the list pane, select the **Create Cluster** record.
-1. On the **General** FastTab, set the following values:
+1. On the **General** FastTab, verify the following values:
 
     - **Generate cluster ID:** *Yes*
     - **Activate positions:** *Yes*
@@ -67,7 +67,7 @@ You must specify whether cluster IDs are automatically generated, how many posit
     - **Break cluster at:** *Put*
     - **Sort verification type:** *Position scan*
 
-1. Select the **Cluster sorting** FastTab. The grid should be blank (that is, it should contain no lines).
+1. In the **Cluster sorting** FastTab. The grid should be blank (that is, it should contain no lines).
 
 ### Work templates
 
@@ -85,7 +85,7 @@ You must define how the picking work for cluster picking is created.
 You must specify where items are picked from and where they are put.
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
-1. In the list pane, set the **Work order type** field to *Sales orders*.
+1. In the list header, set the **Work order type** field to *Sales orders*.
 1. Make sure that the following sales order directives from the demo data are listed. If they aren't available, you won't be able to complete the scenario.
 
     - 61 Cluster pick
@@ -97,6 +97,7 @@ You must configure a mobile device menu item to use existing work that is direct
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. In the list pane, select the **Cluster Pick Create** record.
+1. Select **Edit** in the Action pane.
 1. On the **General** FastTab, set the following values:
 
     - **Directed by:** *Cluster picking*
@@ -117,6 +118,14 @@ You must configure a mobile device menu item to use existing work that is direct
 
         - **Work class ID:** *SO Pick*
         - **Work order type:** *Sales orders*
+
+1. Go to **Work confirmation setup** in the Action pane.
+1. Select **Edit**.
+1. Enter the following values on the line in grid.
+    - **Work type** - *Pick*
+    - **Product confirmation** - *Select the check box*
+
+1. Select **Save** in the Action pane and close the page.
 
 ## Create picking work
 
@@ -198,7 +207,7 @@ Two work IDs should have been created, each of which has two pick lines. Follow 
 1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
 1. On the Action Pane, select **Dimensions** to open the **Dimension display** dialog box.
 1. Make sure that the **License plate**, **Warehouse**, and **Item number** check boxes are selected, and then select **OK**.
-1. In the **Filters** pane, set the following filters:
+1. In the **Filter** pane, set the following filters:
 
     - **Item number** – **is one of** – *L0101* and *T100*
     - **Warehouse** – **begins with** – *61*
@@ -225,7 +234,7 @@ Because the cluster profile set the number of positions to 2, the system automat
 
 At any time during the following steps, you can select the **Details** tab to view additional information about the task, such as the picking location.
 
-1. Set the **ITEM** field to *L0101*. In this way, you confirm the item number as it's configured on the **Mobile Device Menu Item** - **Work confirmation setup**.
+1. Set the **ITEM** field to *L0101*. In this way, you confirm the item number as it's configured on the **Mobile Device Menu Item** in the **Work confirmation setup** page.
 1. Enter the license plate number that is associated with the item in the location that is being picked. You will pick two pallets.
 1. Set the **LP** field to *LP\_PICK\_01*.
 1. Select **OK** (check mark symbol).
