@@ -75,7 +75,7 @@ After you have embedded a canvas app on a page and confirmed that it is working 
 1.  [Share the canvas app](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app) with the appropriate users so they can access the app in Power Apps. 
 
 2.  Ensure the targeted users have the appropriate personalizations so that the embedded app appears when they view the page. There are a few ways this can be accomplished: 
-    - [Recommended] Utilize the [Saved views](saved-views.md) feature to create and publish a view that includes the embedded app. This will ensure that all users with the security roles targeted by the published view will see the app via Finance and Operations. 
+    - [Recommended] Utilize the [Saved views](saved-views.md) feature to create and publish a view that includes the embedded app. This will ensure that all users with the security roles targeted by the published view will see the app via Finance and Operations apps. 
     - If you don't have the Saved views feature enabled, you can also have the system administrator push a personalization with the embedded app to all users or a subset of users. Alternatively, you can export your page's personalizations, send them to one or more users, and have each of those users import those changes. The personalization toolbar has actions that allow you to export and import personalizations. 
     
 > [!NOTE]
