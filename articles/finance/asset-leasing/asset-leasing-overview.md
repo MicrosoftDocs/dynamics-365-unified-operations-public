@@ -113,7 +113,7 @@ The **accounting framework** shows the selected accounting standard, either IFRS
 
 - **Lease term** is the percentage of the useful life to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic, and if the lease term over the asset’s useful life is greater than or equal to the percentage defined here.
 
-- **Present value** is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here. The present value will use the asset fair value setup.
+- **Present value** is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic and if present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here.
 
 - **Short-term lease** If the lease term is less than or equal to the defined value, the lease will be classified as a short-term lease.
 
