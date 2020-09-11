@@ -52,5 +52,5 @@ Because Power Apps portals authentication is linked to the Contacts entity in Co
 
 When authenticated users from a different tenant need to be added to Finance and Operations as users, you must use the [Create new user](../sysadmin/tasks/create-new-users.md) process in Finance and Operations. This process adds cross-tenant users as Microsoft Azure Active Directory (Azure AD) business-to-business (B2B) guest users.
 
-> [!Note]
-> Access from Power Apps Portal will fail if the user (authenticated or anonynous) has been assigned system administrator role on Finance and Operations.
+> [!NOTE]
+> Access from the Power Apps Portal will fail if the user (authenticated or anonynous) has been assigned the System administrator role in any Finance and Operations apps.
