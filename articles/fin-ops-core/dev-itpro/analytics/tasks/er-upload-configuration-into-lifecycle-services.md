@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: ER Upload a configuration into Lifecycle Services
+title: Upload a configuration into Lifecycle Services
 description: This topic explains how a user in the System administrator or Electronic reporting developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe 
-ms.date: 08/27/2020
+ms.date: 09/11/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# ER Upload a configuration into Lifecycle Services
+# Upload a configuration into Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +47,7 @@ In this example, you will create a configuration and upload it into LCS for a sa
 > [!NOTE]
 > Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [Asset library](../../lifecycle-services/asset-library#asset-library-support.md) that is used to import ER configurations.
 >
-> You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance. If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS. To access project-level Asset libraries from an ER repository for importing ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.
+> You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance. If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS. To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.
 
 ## Create a new data model configuration
 
