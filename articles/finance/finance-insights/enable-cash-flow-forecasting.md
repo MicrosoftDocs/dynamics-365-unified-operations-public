@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
+> [!NOTE]
+   > Please setup Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
+   
 Complete the following steps to enable the Cash flow forecasts capability within Finance Insights. <!--*Do customers need to complete configuration steps before they enable this feature?*-->
 
 1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
