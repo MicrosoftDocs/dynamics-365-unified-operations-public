@@ -82,7 +82,7 @@ The **commencement date** is the date that the lessor makes the asset available 
 The **lease term** represents the length of lease period, in months.
 
 > [!NOTE] 
-> The definition of the lease term is based on the number of periods, or intervals, in the payment schedule. The defined number of intervals will be converted to months.
+> The definition of the lease term is based on the number of periods, or intervals, in the payment schedule lines. The defined number of intervals will be converted to months.
 
 The **payment schedule line** captures the lease payments per period. It also specifies whether a renewal period will be exercised and included in the initial measurement of the right-of-use asset and lease liability. You can also define the start date of the lease due payments, and the period intervals that represent the length of the lease, which can be days, months, or years.
 
