@@ -67,7 +67,7 @@ The following diagram shows the lease book, the lease, calculated payment schedu
   
 **Lease** The lease carries the asset lease information that represents the foundation of the asset leasing, lease information source is lease contract and management decision that are both are done outside of Microsoft Dynamics 365 Finance. The asset's fair value is the price that would be paid for an asset in a transaction at the measurement date. This value might depend on the asset type, market conditions, and other criteria that can be taken into consideration in the assessment. The asset fair value will be considered in the classification test equation.
 
-The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset useful will be considered in the classification test equation. It differes from the useful life as defined in Fixed assets.
+The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset will be considered in the classification test equation. It differes from the useful life as defined in Fixed assets.
 
 The **incremental borrowing rate** represents the interest rate that will be used to calculate the present value. The system will use the implicit rate if it's defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
 
