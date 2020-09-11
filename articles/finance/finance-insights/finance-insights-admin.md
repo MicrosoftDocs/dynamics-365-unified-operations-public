@@ -101,9 +101,7 @@ Follow the steps described in <TBD> to setup and use cashflow forecasting. For m
 (content at https://microsoft.sharepoint.com/:w:/t/FinancialsRDAll909/ER8QIZ77pnBArbigDMiJx0EBlAYLh8cfTIaBeUVOzKCHtg?e=8xMqK6).
 
 ## Understand and improve initial payment predictor model
-See [Evaluate the initial customer payment prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/evaluate-payment-prediction?branch=bob-fi-evaluate-payment-prediction) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/improve-model?branch=bob-fi-improve-model) for information help you adjust the data that's used to build the predcition so improve its effectiveness. 
-
-Follow the guides at <TBD> to understand and improve the initial payment predictor model (contact at https://microsoft.sharepoint.com/:w:/t/AIforOAG/EahnJjqfQBlMrKRX4oYe_uUBpgtY9UsPXzeU17ERbIrEqA?e=FvJF0f and https://microsoft.sharepoint.com/:w:/t/AIforOAG/EbAsTOn26blNrFQLzMh8VgMBLHcqhxO8I1VfKrURUEP29w?e=8j3tPm).
+See [Evaluate the initial customer payment prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/evaluate-payment-prediction?branch=bob-fi-evaluate-payment-prediction) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/improve-model?branch=bob-fi-improve-model) for information help you adjust the data that's used to build the predcition so improve its effectiveness.
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
