@@ -65,7 +65,7 @@ System is allowing the posting of transactions to suspended ledger accounts on c
 Result: This allows posting transactions to the suspended leger accounts.
 
 **Resolution**
-With reversals, our recommendation is to skip all validations to ensure that the same transaction that was posted is also reversed.  The customer will have to post an adjusting entry in GL, so as to move the balance from the suspended account to the new main account that replaces the suspended account.
+This is allowed in order to to be able to correct postings.
 
 ## Product receipt Voucher number is consumed even if no financial voucher is generated, during Product Receipt
 When the "Accrue liability on product receipt" is OFF on the item model group, then no postings to GL will happen. However, there is a physical event that is recorded for the purpose of accounting in subledger and that needs a voucher number. This is what is referenced in the Inventory transactions.
