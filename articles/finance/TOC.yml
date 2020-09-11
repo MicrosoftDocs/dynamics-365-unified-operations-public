@@ -3024,6 +3024,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Default reporting experiences in IaaS environments
           href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+        - name: Document reporting preview options
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
         - name: Printing
           items:
           - name: Document printing overview
