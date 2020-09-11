@@ -71,7 +71,7 @@ If you have a scenario where a store starter kit module does everything you need
 
 #### Style presets
 
-[!Style Presets][/media/module-overview-1.png]
+[!Style Presets](/media/module-overview-1.png)
 
 When making CSS changes to a module the first thing to check is can it be done with using the custom [style preset](../style-presets.md) option in the site builder tool.  Each module has the ability to surface some style options that can be changed in the style preset UI in the site builder tool.  This allows simple changes for some CSS within a module, an example might be the background color of the module or the text color and size.  Note, this option is only available with version 10.0.12 release of the store starter kit and is limited to whatever options the starter kit modules expose.
 
