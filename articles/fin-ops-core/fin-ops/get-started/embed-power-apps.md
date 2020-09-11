@@ -39,7 +39,7 @@ To learn more about embedding Power Apps, watch the short [How to embed Power Ap
 
 ### Overview
 
-Before embedding a canvas app from Power Apps into the client, you first need to find or build an app with the desired visuals and/or functionality. We will not describe the detailed process for building apps here. The [Introduction to Power Apps](https://docs.microsoft.com/powerapps/getting-started) topic is a good starting point if you are new to Power Apps.
+Before embedding a canvas app from Power Apps into the client, you first need to find or build an app with the desired visuals and/or functionality. We will not describe the detailed process for building apps here. See the [Power Apps documentation](https://docs.microsoft.com/en-us/powerapps/) if you are new to Power Apps.
 
 When you are ready to embed a specific canvas app, you can choose between one of two ways of accessing the app on a page, whichever route better fits your scenario. The first way is through the Power Apps button that has been added to the standard Action Pane. Apps added using this mechanism will appear as menu items inside the Power Apps menu button. When selected, each of these menu items will open a side pane that contains the embedded app. Alternatively, you may choose to embed an app directly on a page as a new tab, FastTab, blade, or as a new section in a workspace.
 
