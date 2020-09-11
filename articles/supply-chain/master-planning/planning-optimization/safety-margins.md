@@ -146,7 +146,7 @@ The system can handle a setup where one or more calendars are defined. The follo
 
 #### Calendar that is used for the duration
 
-The defined calendars control the actual total lead time in calendar days, from supply the order date to the demand requirement date. The following calendar prioritization is used:
+The defined calendars control the actual total lead time in calendar days, from the supply order date to the demand requirement date. The following calendar prioritization is used:
 
 - **Purchase lead time** – Only the coverage group calendar is considered.
 - **Receipt margin** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
