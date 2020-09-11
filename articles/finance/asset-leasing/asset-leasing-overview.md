@@ -71,7 +71,7 @@ The **asset useful life** represents the remaining periods of the useful life of
 
 The **incremental borrowing rate** represents the interest rate that will be used to calculate the present value. The system will use the implicit rate if it's defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
 
-The **annuity type** represents the lease payment due either at the beginning of the payment period or at the end of the period. This could be payment-in-advance (at the beginning of the lease payment period), or payment arrears (at the end of the lease payment period).
+The **annuity type** represents the lease payment due either at the beginning of the payment period or at the end of the period. This could be payment-in-advance (annuity due) (at the beginning of the lease payment period), or ordinary annuity  (at the end of the lease payment period).
 
 The first month will be considered period number zero for payment in advance; the first month will be considered period one for payment arrears.
 
