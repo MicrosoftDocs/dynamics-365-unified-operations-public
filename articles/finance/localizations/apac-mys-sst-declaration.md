@@ -5,7 +5,7 @@ title: SST-02 declaration for Malaysia
 description: This topic explains how to configure and generate the SST-02 return form for Malaysia.
 author: sndray
 manager: AnnBe
-ms.date: 07/29/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.13
 # SST-02 declaration for Malaysia
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
 
