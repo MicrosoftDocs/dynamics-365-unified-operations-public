@@ -68,6 +68,6 @@ Most of the user interface customizations aren't supported for background proces
 | [Series registration](series-registration.md)       | Not supported | Yes                   |
 | [Process parameters](process-parameters.md)         | No            | Not supported         |
 | [User-configurable queries](user-queries.md)        | No            | Not supported         |
-| [Run the process](process-execution.md)           | Yes           | Yes                   |
-| [Log results and messages](result-logging.md)       | Yes           | Yes                   |
+| [Run the process](run-process.md)                   | Yes           | Yes                   |
+| [Log results and messages](log-results.md)          | Yes           | Yes                   |
 | [Customize the user interface](ui-customization.md) | No            | See Below             |
