@@ -85,7 +85,7 @@ When items are Registered on a Purchase order, it is possible to reserve the inv
 *Is there a way to block this?*
 		
 **Resolution:**
-The Registered items are expected to be phyiscally arrived in the warehouse orinventory, hence this is available for reservation.
+The Registered items are expected to be phyiscally arrived in the warehouse or inventory, hence this is available for reservation.
 
 ## Language settings on legal entity not reflected in purchase orders - the product name is shown in the company language.
 
@@ -99,10 +99,10 @@ The product name in a purchase order shows up in system language, and not in the
 *Issue: The product name is still shown in EN-US, the same as what was set as the system language.*
 
 **Resolution**
-On the purchase orders, the product is always show in the system language. When a confirmation journal is created, then the PO language 
+On the purchase orders, the product is always show in the system language. When a confirmation journal is created, then the PO language is used. 
 
 ## Approved vendor list by product entity does not allow to change effective date.
-The "Approved vendor list by product" doesn’t allow to change effective date. 
+The "Approved vendor list by product" doesn’t allow to change effective date by using the entity. 
 
 **Scenario**
 1. Suppose, a product has an approved vendor with effective date 01/11/2018 and expiration date ‘never’.
