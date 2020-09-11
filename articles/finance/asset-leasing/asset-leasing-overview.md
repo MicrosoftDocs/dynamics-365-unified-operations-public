@@ -96,7 +96,7 @@ The **payment frequency** indicates whether the payment is monthly, quarterly, s
 - Semiannually, 2 periods per year
 - Annually, 1 period per year. 
 
-The first period will start with period zero, if the annuity type is annuity due. Otherwise the first period will start start with one, if the annuity type is payment arrears.
+The first period will start with period zero, if the annuity type is annuity due. Otherwise the first period will start with one, if the annuity type is payment arrears.
 
 **Months** indicates the number of calendar months over the length of the lease. The payment amount is the amount due as defined in the payment frequency. The calculated present value is the present value-based lease payment per period, the compounding intervals, and the incremental borrowing rate.
 
@@ -283,7 +283,7 @@ The **ROU asset transactions** page lists initial recognition, accumulated depre
 
 [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
 
-The **Lease liability transactions** page showsthe initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
 [![XXX](./media/overview-21.png)](./media/overview-21.png)
 
