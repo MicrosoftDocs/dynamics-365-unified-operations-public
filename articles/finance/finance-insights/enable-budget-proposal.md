@@ -36,12 +36,17 @@ ms.dyn365.ops.version: AX 10.0.13
 
 Complete the following steps to enable the Budget proposals feature within Finance Insights. 
 
-1. After step 1 from *previous page, **Enabled cash flow forecasting**, then go to the **Feature Management** workspace.
+1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
+
+	Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS) :
+	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)
+
+3. After step 1 from *previous page, **Enabled cash flow forecasting**, then go to the **Feature Management** workspace.
 
    - Click 'Check for updates'.
    - Search for 'Budget proposal' and enable that feature.
 
-2. Open the **Budget proposals** page (**Budgeting > Setup > basic Budgeting > Budget proposal (preview)**). Choose **Enable feature**.
+4. Open the **Budget proposals** page (**Budgeting > Setup > basic Budgeting > Budget proposal (preview)**). Choose **Enable feature**.
 
 
 #### Privacy notice
