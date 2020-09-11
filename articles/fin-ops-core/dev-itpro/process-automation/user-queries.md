@@ -32,11 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If the process isn’t going to support user configurable queries via SysQueryForm, then you can skip this task.
 
-The process automation framework provides limited support for custom queries via the **SysQueryForm** form. This allows users to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. The custom query criteria are stored for each occurrence of a given series and can be modified individually if desired. The framework also provides an API to apply the custom criteria to the query used for process execution when the occurrence executes.
+The process automation framework provides limited support for custom queries via the **SysQueryForm** form. A custom query allow a user to add custom criteria to limit how a process runs. The framework has logic to extract user provider custom criteria and tables to store the criteria. The custom query criteria are stored for each occurrence of a given series and can be modified individually. The framework also provides an API to apply the custom criteria to the query used for process execution when the occurrence executes.
 
 > [!NOTE]
-> The query criteria that are applied by the user are saved individually, as opposed to the entire query object, to allow for better support of query extensions. As a result, extensions made to existing queries for already existing query criteria shouldn't cause breaking changes with this approach. A new extension, in this case, shouldn't
-require a modification or recreation of the query criteria for a saved series or occurrences, unless desired.
+> The query criteria that are applied by the user are saved individually, as opposed to the entire query object, to allow for better support of query extensions. As a result, extensions made to existing queries for already existing query criteria shouldn't cause breaking changes with this approach. A new extension, in this case, shouldn't require a modification or recreation of the query criteria for a saved series or occurrences, but it is allowed.
 
 ## ProcessScheduleIQueryable interface
 
@@ -48,7 +47,7 @@ Method | Description
 `public Query getQueryForApplicationOrExtractionOfQueryCriteria()` | Gets the modified or, to be modified, query used for application or extraction of query criteria.
 
 > [!NOTE]
-> The query that is used on the implementation of the **ProcessScheduleIQueryable** must have the same structure as the query that is used during the execution of the underlying process that is being automated. Any structural deviation that is not additive in nature results in runtime errors when applying the saved query criteria at runtime. To ensure that the query structure remains the same, you should use either a designed query, or you should utilize shared logic that builds up the query.
+> The query that is used on the implementation of the **ProcessScheduleIQueryable** must have the same structure as the query that is used during the execution of the underlying process that is being automated. Any structural deviation that isn't additive in nature results in runtime errors when applying the saved query criteria at runtime. To ensure that the query structure remains the same, you should use either a designed query, or you should utilize shared logic that builds up the query.
 
 ## ProcessScheduleQueryCriteriaApplicator class
 

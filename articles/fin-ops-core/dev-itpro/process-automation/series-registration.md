@@ -82,20 +82,20 @@ internal final class VendInvoicePostProcessScheduleSeriesRegistration implements
 
 Method | Description
 ---|---
-`public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This is the name of the type.
-`public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` |This is the name of the series. Be descriptive so it's easy to understand the purpose of the series from the name.
-`public Description parmDescription(Description _description = description)` | This is a description of the series.
-`public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This is the user ID that is the owner of the series.
-`public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This is the list of patterns for this series. Note: At present we only support one pattern per series. This may change in the future. Insert into the list an instance of the class ProcessScheduleSeriesPatternItem.
+`public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This value is the name of the type.
+`public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` |This value is the name of the series. Be descriptive so it's easy to understand the purpose of the series from the name.
+`public Description parmDescription(Description _description = description)` | This value is a description of the series.
+`public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This value is the user ID that is the owner of the series.
+`public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This value is the list of patterns for this series. Only one pattern per series is supported. (This might change in the future.) Insert into the list an instance of the class **ProcessScheduleSeriesPatternItem**.
 
 ## ProcessScheduleSeriesPatternItem class
 
-When configuring the pattern applicable fields are determined based on the Unit. Not all methods defined below work for all units. The methods that apply to units are defined below. Other combinations will be ignored. For polled processes only unit and the polling interval are used. All other fields are ignored.
+When configuring the pattern, applicable fields are determined based on the Unit. Not all methods defined below work for all units. The methods that apply to units are defined below. Other combinations will be ignored. For polled processes, only unit and the polling interval are used. The other fields are ignored.
 
 Method | Description
 ---|---
 `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time this series runs which maybe in minutes, or hours.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes this is the how often the process gets run within the context of the unit. It's an integer which combined with the unit will define how often the process runs.
+`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes, this value is how often the process gets run within the context of the unit. It's an integer that combined with the unit will define how often the process runs.
 `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` |  Indicates the start date of the series. The time should be the empty time.
 `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | Indicates the end date of the series. The time should be the empty time.
 `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | Indicates the time the series should run. The date should be set to the empty date.
@@ -123,16 +123,16 @@ Method | Description
 
 ### Modifying Background Processes
 
-The polling interval and unit can be modified in the process automation framework by system administrators. However, many background process that exist today have their own specific UI built to manage this. We provide away to update these values programmatically via these APIs:
+The polling interval and unit can be modified in the process automation framework by system administrators. However, many background processes that exist today have their own specific UI built to manage this. We provide away to update these values programmatically via these APIs:
 
 Method | Description
 ---|---
 `public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | Gets the polling interval, the unit, and the next scheduled date time for a polled process.
 `public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | Allows the polling interval, the unit, and the next scheduled date time for a polled process to be modified.
 
-## Validating Background dialog 
+## Validating Background dialog
 
-The process automation framework in 10.0.13 allows system administrators to modify background process settings via the background dialog. Some background processes have restrictions on how often they want to run. We have introduced an interface a background process can implement which gets invoked and allows the background process to ensure that the unit and polling interval are within their allowed range.
+The process automation framework in 10.0.13 allows system administrators to modify background process settings via the background dialog. Some background processes have restrictions on how often they want to run. We've introduced an interface a background process can implement which gets invoked and allows the background process to ensure that the unit and polling interval are within their allowed range.
 
 Here is an example that prevents this process from ever being run every minute or every hour. Once a day is the most frequent this process allows. However, a process could implement the rules such that more frequent execution is required.
 
@@ -178,9 +178,9 @@ This class contains the validation parameters being validated for the background
 
 Method | Description
 ---|---
-`public UserId parmOwnerId(UserId _ownerId = ownerId)` | The owner of the process. This will be used when creating batch jobs as the batch jobs will be created under this users context.
+`public UserId parmOwnerId(UserId _ownerId = ownerId)` | The owner of the process. This will be used when creating batch jobs as the batch jobs will be created under this user's context.
 `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This is how many units of time specified by parmUnit() above this processes should be executed.
-`public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This is the next scheduled execution of the process in UTC.
-`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process won't get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the from time.
-`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process won't get executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This is the to time.
+`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This value is how many units of time specified by parmUnit() above this processes should be executed.
+`public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled execution of the process in UTC.
+`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16-hour time range may span the date boundary. This method specifies when the sleep should start.
+`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't executed during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This method specifies when the sleep should end.

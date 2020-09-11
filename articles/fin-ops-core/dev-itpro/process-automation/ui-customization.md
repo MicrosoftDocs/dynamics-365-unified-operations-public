@@ -30,27 +30,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize the user interface
 
-The process automation framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to display the **ProcessScheduleSeries** form for a specific product area then customizations are required so that the framework can display data specific to the product area.
+The process automation framework supports some UI customizations. Most of this section is optional since the framework provides defaults for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to display the **ProcessScheduleSeries** form for a specific product area, then customizations are required so that the framework can display data specific to the product area.
 
 ## Weekly Calendar View
 
 ### ProcessScheduleIBuildOccurrenceCard interface
 
-This interface lets you customize the appearance of occurrence cards on the weekly calendar view. There are 6 static methods on this interface, one for each status of an occurrence: **Scheduled**, **Waiting**, **Running**, **Successful**, **Failed**, and **Disabled**. This allows for a customized occurrence card for each one of these status. Each of these methods returns an instance of **ProcessScheduleOccurrenceCard**.
+This interface lets you customize the appearance of occurrence cards on the weekly calendar view. There is a static method on the interface for each status of an occurrence: **Scheduled**, **Waiting**, **Running**, **Successful**, **Failed**, and **Disabled**. You can create a customized occurrence card for each status value. Each of these methods returns an instance of **ProcessScheduleOccurrenceCard**.
 
-The framework provides a default implementation in the class **ProcessScheduleOccurrenceCardBuilder**. You inherit from this class and override the functionality as needed. Then register your derived class via sys-plugin for you specific type in a similar manner to many of the plug-ins in the framework docs.
+The framework provides a default implementation in the class **ProcessScheduleOccurrenceCardBuilder**. You inherit from this class and override the functionality as needed. Then register your derived class via sys-plugin for your specific type in a similar manner to many of the plug-ins in the framework docs.
 
-An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into each of the 6 methods and can be used to retrieve information about the occurrence. The derived class can invoke the default implementation for each of these 6 methods which returns the **ProcessScheduleOccurrenceCard** instance and then modify whatever is needed and return it.
+An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into each of the methods and can be used to retrieve information about the occurrence. The derived class can invoke the default implementation for each of the static methods that returns the **ProcessScheduleOccurrenceCard** instance and then modify whatever is needed and return it.
 
 ### ProcessScheduleOccurrenceCard class
 
-This class lets you customize the appearance of an occurrence card which is shown on the calendar view. The first two lines are controlled by the framework and can't be modified. The sub-header is the **Completed at** phrase. The message is the status word **Completed** with the blue background.
+This class lets you customize the appearance of an occurrence card which is shown on the calendar view. The first two lines are controlled by the framework and can't be modified. The subheader is the **Completed at** phrase. The message is the status word **Completed** with the blue background.
 
 ![Default occurrence card with status and time.](media/uptake-schedule.png)
 
 Method | Description
 ---|---
-`public str parmSubHeader(str _subHeader = cardSubHeader)` | The SubHeader is the third line of the occurrence card shown in the screenshot.
+`public str parmSubHeader(str _subHeader = cardSubHeader)` | The subheader is the third line of the occurrence card shown in the screenshot.
 `public str parmStatusMessage(str _statusMessage = statusMessage)` | The status message represents the status of the process and has a colored background.
 `public ProcessExecutionOccurrenceCardStatusColor parmStatusColor(ProcessExecutionOccurrenceCardStatusColor _statusColor = statusColor)` | The color of the background which contains the status message.
 
@@ -61,7 +61,7 @@ This interface must be implemented by forms which will display the weekly calend
 Method | Description
 ---|---
 `ProcessScheduleOccurrenceCalendarViewContract getProcessScheduleOccurrenceCalendarViewContract()` | Return the contract the weekly view will use to determine which types should be displayed.
-`void refreshAfterChangeToCalendarView()` | This is a callback from the weekly view indicating the parent form should refresh due to changes on the weekly calendar view.
+`void refreshAfterChangeToCalendarView()` | This value is a callback from the weekly view indicating the parent form should refresh because of changes on the weekly calendar view.
 
 ### ProcessScheduleOccurrenceCalendarViewContract class
 
@@ -75,7 +75,7 @@ Method | Description
 
 ### ProcessScheduleOccurrenceCalendarViewRenderer class
 
-Use this class to render the weekly calendar view onto an existing form. A form part will be created and initialized properly. An example of this is in use on the **ProcessScheduleSeries** form.
+Use this class to render the weekly calendar view onto an existing form. A form part will be created and initialized properly. An example of this class is in use on the **ProcessScheduleSeries** form.
 
 Method | Description
 ---|---
@@ -83,7 +83,7 @@ Method | Description
 
 ### Render interfaces
 
-There are several interfaces which allow customization of how occurrences processes are rendered in the calendar view. One exists for each status of a process:
+There are several interfaces that allow customization of how occurrences processes are rendered in the calendar view. One exists for each status of a process:
 
 - **ProcessScheduleIRenderDisabledOccurrenceCard**
 - **ProcessScheduleIRenderFailedOccurrenceCard**
@@ -101,9 +101,9 @@ For an example, see the **CustVendPaymProposalAutomationOccurrenceCardRenderer**
 Method | Description
 ---|---
 `public ProcessScheduleOccurrence getOccurrenceBeingRendered()` | This method returns the occurrence being rendered in the occurrence card.
-`public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | This method returns the executing information for this occurrence. This typically includes the results of the batch job, start and end date times, etc…
-`public void makeCardSubHeaderInvisible()` | Makes the cardsub header invisible. See the screenshot above and documentation underneath it to determine which line is the subheader.
-`public void makeCardButtonsInvisible()` | This makes the disabled and edit buttons on the occurrence card invisible.
+`public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | This method returns the executing information for this occurrence. The information typically includes the results of the batch job, the start time, and the end time.
+`public void makeCardSubHeaderInvisible()` | Makes the card's subheader invisible. See the screenshot above and documentation underneath it to determine which line is the subheader.
+`public void makeCardButtonsInvisible()` | This value specifies whether the **Disable** and **Edit** buttons on the occurrence card invisible or not.
 `public void setColumnsOnOccurrenceCardDetailGroup(int _numberOfColumns)` | Allows the number of columns on the occurrence card to be customized. The default is 2 columns.
 `public FormButtonControl addButtonControl(FormControlName _buttonControlName)` | Allows a new button to be added to the occurrence card.
 `public FormStaticTextControl addStaticTextControl(FormControlName _staticTextControlName)` | Allows a static text control to be added to the occurrence card.
@@ -113,7 +113,7 @@ Method | Description
 
 ### ProcessScheduleISeriesFormController interface
 
-The series list page uses this controller to determine which types will have their series displayed on the **ProcessScheduleSeries** list page. This is a class which makes use of **SysPlugIn**. The menu item which the uptake teams use to launch the **ProcessScheduleSeries** form is used as the key to invoking the specified plugin. This allows each usage of this form to customize what types are displayed.
+The series list page uses this controller to determine which types will have their series displayed on the **ProcessScheduleSeries** list page. This class uses the **SysPlugIn** class. The menu item which the uptake teams use to launch the **ProcessScheduleSeries** form is used as the key to invoking the specified plugin. This key allows each usage of this form to customize what types are displayed.
 
 ```xpp
 // Implementation of the ProcessScheduleISeriesFormController for the admin view of the process schedule series form.
@@ -132,7 +132,7 @@ internal class ProcessScheduleSeriesFormAdminController implements ProcessSchedu
 
 ### ProcessScheduleSeriesFormContract
 
-This is a contract used by the series list page to determine which **ProcessScheduleType** should be displayed on the series list page. This could be used on a workspace to show only those series for specific types related to the work space.
+This class is a contract that is used by the series list page to determine which **ProcessScheduleType** is displayed on the series list page. This could be used on a workspace to show only those series for specific types related to the work space.
 
 Method | Description
 ---|---
@@ -143,7 +143,7 @@ Method | Description
 
 ### ProcessExecutionIResultsController interface
 
-This interface lets you customize the results window to our process. It lets you set the column header label for the **Header** field on the results grid and lets you make the value of the header column a link that can be clicked on. This interface should be implemented by a class that is a plug-in. Here is a sample plug-in.
+This interface lets you customize the results window to our process. It lets you set the column header label for the **Header** field on the results grid and lets you make the value of the header column a hyperlink. This interface should be implemented by a class that is a plug-in. Here is a sample plug-in.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -186,12 +186,12 @@ This class lets you customize the header column label and specify if the data in
 
 Method | Description
 ---|---
-`public static ProcessExecutionResultsDialogContract newForSourceLinkHeader(LabelId _sourceLinkHeaderLabel, boolean _shouldSourceLinkHeaderBeLinkToSourceLinkDetails)` | Provide the label that will be used as a column title for the header column. Provide a Boolean value that indicates if the UI should render the value of the header column as a hyper link that can be clicked on.
+`public static ProcessExecutionResultsDialogContract newForSourceLinkHeader(LabelId _sourceLinkHeaderLabel, boolean _shouldSourceLinkHeaderBeLinkToSourceLinkDetails)` | Provide the label that will be used as a column title for the header column. Provide a Boolean value that indicates if the UI should render the value of the header column as a hyperlink.
 `public LabelId parmExecutionResultsDialogCaption(LabelId _executionResultsDialogCaption = executionResultsDialogCaption)` | Sets the caption for the results dialog.
 
 ### ProcessExecutionMessageLogDialog
 
-This interface allows the message log to be opened in the context of something from the source domain. For example, the message log could be opened from a posted vendor invoice window to show what message were logged while it was posted by a process automation framework enabled process. The posted vendor invoice window would need to implement this interface. This saves uptake teams from having to have their own private results/messaging subsystems.
+This interface allows the message log to be opened in the context of something from the source domain. For example, the message log could be opened from a posted vendor invoice window to show what message were logged while it was posted by a process automation framework enabled process. The posted vendor invoice window would need to implement this interface. Useing this interface saves uptake teams from having to have their own private results/messaging subsystems.
 
 Method | Description
 ---|---
@@ -199,7 +199,7 @@ Method | Description
 
 ### ProcessExecutionMessageLogContract class
 
-This contract lets you restrict the message log to a specific item from the source domain. There must be a record in **ProcessExecutionSourceLink** which has a **RefRecId** and **RefTableId** that matches what is sent by this contract.
+This contract lets you restrict the message log to a specific item from the source domain. There must be a record in **ProcessExecutionSourceLink** that has a **RefRecId** and **RefTableId** that matches what this contract sends.
 
 Method | Description
 ---|---

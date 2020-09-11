@@ -37,11 +37,11 @@ You should use only the public APIs to implement process automation.
 - Don't select from, insert into, or directly reference the process automation tables.
 - Don't extend the framework or integrate your code with the classes.
 - Don't subscribe to table events such as insert, update, and delete. Finance and Operations apps skip most of those events.
-- If functionality is missing that you need please submit feature requests.
+- If functionality is missing that you need, then submit feature requests.
 
 We plan to add features in the future and integrating too deeply with this framework could cause your integration to break.
 
-Some of the examples for the framework are are not representative of shipping quality code. As always, it's expected that processes built using the framework will follow all the best practices and quality standards.
+Some of the examples for the framework aren't representative of shipping quality code. As always, it's expected that processes built using the framework will follow all the best practices and quality standards.
 
 For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
@@ -58,9 +58,9 @@ For more information about process automation, see [Process automation](../sysad
 
 ## Tasks
 
-Implementing a process automation solution consists of a sets of tasks, some required and some optional.
+Implementing a process automation solution consists of a set of tasks, some required and some optional.
 
-Most of the user interface customizations are not supported for background processes. The series list page and logging results and messages is supported.
+Most of the user interface customizations aren't supported for background processes. The series list page and logging results and messages is supported.
 
 | Section                                             | Required For Scheduled Process | Required For Background Process |
 |-----------------------------------------------------|---------------|-----------------------|

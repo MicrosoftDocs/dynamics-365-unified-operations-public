@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process parameters
 
-Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range or a customer number. you must create your own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters then you can skip this task.
+Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range or a customer number. you must create your own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters, then you can skip this task.
 
 When a series is created by the user in the UI, the series wizard will host N form parts for the process which contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided by type registration. The form part will implement interfaces which allow you to initialize, validate, and write the custom parameters.
 
 The custom parameter tables typically have 2 types of records.
 
-- A template record that is bound to the series which serves as a template for all occurrences.
+- A template record that is bound to the series that serves as a template for all occurrences.
 - A record that is specific to an occurrence and contains the parameters to use when executing that specific occurrence. Users can override the parameters for each occurrence as needed.
 
 Parameter tables typically have a foreign key (**RecId**) to the **ProcessScheduleSeries** table and a foreign key (**RecId**) to the **ProcessScheduleOccurrence** table. The template record will have a series foreign key without a foreign key to the occurrence. All other records will have both.
@@ -45,7 +45,7 @@ The following interfaces are used to maintain these parameters.
 
 ## ProcessScheduleParametersIInitialize interface
 
-This interface allows you to initialize any parameters when the user is interacting with the process automation framework UI. The form part built for the wizard which displays process specific parameters implements this interface.
+This interface allows you to initialize any parameters when the user is interacting with the process automation framework UI. The form part built for the wizard which displays process-specific parameters implements this interface.
 
 ## ProcessScheduleParametersIValidate interface
 
@@ -256,11 +256,11 @@ implements ProcessScheduleIDeleteSeries
 
 ## ProcessScheduleIExplodeOccurrences interface
 
-When a user creates a new series via the UI we explode all the future occurrences. This means that if the series is a series executing every day then the framework creates an occurrence for every day. This is called **exploding the series**. When we explode the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
+When a user creates a new series via the UI we explode all the future occurrences. This means that if the series is a series executing every day then the framework creates an occurrence for every day. This action is called **exploding the series**. When we explode the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
 
 A SQL database temp table is passed in so that you can do set creation of parameter records for optimal performance.
 
-The example below has a parameter table storing a single parameter named **Type** which is not related to the process automation framework type but is instead specific to cash flow forecasting:
+The example below has a parameter table storing a single parameter named **Type** which isn't related to the process automation framework type but is instead specific to cash flow forecasting:
 
 ```xpp
 using System.ComponentModel.Composition;
