@@ -3,7 +3,7 @@
 
 title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 01/24/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

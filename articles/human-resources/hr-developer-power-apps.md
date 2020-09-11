@@ -9,7 +9,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
-ms.technology: Dynamics 365 Human Resources;PowerApps;Flow;Common Data Service
+ms.technology:
 # optional metadata
 
 ms.search.form: 

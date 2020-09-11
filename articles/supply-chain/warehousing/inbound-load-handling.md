@@ -4,7 +4,7 @@
 title: Warehouse handling of inbound loads for purchase orders
 description: This topic describes the warehouse handling process for inbound loads for purchase orders.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: 
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: Release 10.0.10
 ---
 
 # Warehouse handling of inbound loads for purchase orders

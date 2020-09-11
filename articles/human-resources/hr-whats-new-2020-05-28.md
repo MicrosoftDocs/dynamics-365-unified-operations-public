@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (May 28, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for May 28, 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/28/2020
@@ -108,3 +108,10 @@ In this release, HR can create a rule to suspend leave accruals for employees wi
 ## DMF entity available for accrual suspensions (June 1)
 
 A DMF entity is now available for accrual suspensions.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

@@ -23,3 +23,7 @@ To run the Environment re-provisioning tool on the destination environment, run 
 5. Monitor the progress of the package deployment.
 
 For more information about how to apply a deployable package, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+
+### Re-activate POS devices
+
+If you use point of sale (POS) devices, after you import a database you must activate the POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).

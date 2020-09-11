@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Suspend leave
 
-[!include [banner](includes/preview-feature.md)]
-
 You can suspend leave for an employee to stop leave accruals from being processed for selected leave types. 
 
 ## Suspend leave and absence for an employee
