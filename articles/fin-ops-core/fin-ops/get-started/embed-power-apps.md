@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ---
 
-# Embed Microsoft Power Apps
+# Embed canvas apps from Power Apps
 
 [!include [banner](../includes/banner.md)]
 
