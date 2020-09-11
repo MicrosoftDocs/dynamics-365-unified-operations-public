@@ -161,7 +161,7 @@ Finance lease entry for IFRS and US GAAP  <br>
 Debit: Finance lease liability  <br>
 Credit: Vendor liability (subledger)/Notes payable  <br>
 
-**Asset depreciation**: The right-of-use asset is depreciated over the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will be executedfrom  fixed assets module only. 
+**Asset depreciation**: The right-of-use asset is depreciated over whichever is less the asset useful life, or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will be executedfrom  fixed assets module only. 
 
 Operating lease entry of US GAAP <br>
    Debit: Lease expense <br>
