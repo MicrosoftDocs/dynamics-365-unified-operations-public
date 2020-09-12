@@ -64,6 +64,16 @@ This topic provides links to topics about financials development.
     + [Create exchange rate providers](../financial/create-exchange-rate-providers.md)
     + [Create exchange rate providers in Finance and Operations version 8.0](../financial/create-exchange-rate-8.md)
 
+- Process automation framework
+
+    + [Type registration](../process-automation/type-registration.md)
+    + [Series registration](../process-automation/series-registration.md)
+    + [Process parameters](../process-automation/process-parameters.md)
+    + [User-configurable queries](../process-automation/user-queries.md)
+    + [Run the process](../process-automation/run-process.md)
+    + [Log results and messages](../process-automation/log-results.md)
+    + [Customize the user interface](../process-automation/ui-customization.md)
+
 - [Settle transactions by using CustTrans::settleTransaction](../financial/settletransact-obsolete.md)
 
 - [Extend the budget planning layout](../../../finance/budgeting/extending-budget-planning-layout.md)
