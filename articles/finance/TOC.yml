@@ -2778,6 +2778,8 @@
           href: localizations/noam-usa-year-end-1099-reporting.md
         - name: Form 1099 for the public sector
           href: localizations/noam-usa-form-1099-public-sector.md
+        - name: Set up vendors for 1099 reporting
+          href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
     - name: Human resources
       items:
       - name: Human resources overview
