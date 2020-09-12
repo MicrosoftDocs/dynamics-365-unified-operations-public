@@ -5,7 +5,7 @@ title: Document reporting preview options
 description: This topic provides information about the options available in the embedded document reporting previewer.
 author: tjvass
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Platform update 34
 # Document reporting preview options
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 
 Finance and Operations apps offer an expanded collection of options to use while previewing documents within the embedded PDF viewer. This topic describes the **Export** and **Network Printer** options.
