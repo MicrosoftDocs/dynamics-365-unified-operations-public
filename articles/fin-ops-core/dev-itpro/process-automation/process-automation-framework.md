@@ -72,4 +72,4 @@ Most of the user interface customizations aren't supported for background proces
 | [User-configurable queries](user-queries.md)        | No            | Not supported         |
 | [Run the process](run-process.md)                   | Yes           | Yes                   |
 | [Log results and messages](log-results.md)          | Yes           | Yes                   |
-| [Customize the user interface](ui-customization.md) | No            | See Below             |
+| [Customize the user interface](ui-customization.md) | No            | See [Customize the user interface](ui-customization.md). |
