@@ -3,7 +3,7 @@
 
 title: Troubleshoot "Dynamics 365 for Finance and Operations - Warehosing" mobile app connection issues
 description: This topic describes how to resolve issues that you might encounter while trying to configure the warehouse mobile app connection to Dynamics.
-author: VanyaKashperuk
+author: Ivan (Vanya) Kashperuk
 manager: tfehr
 ms.date: 09/13/2020
 ms.topic: article
