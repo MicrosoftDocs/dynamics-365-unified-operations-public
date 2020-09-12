@@ -22,7 +22,7 @@ ms.tgt_pltfrm:
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
 ---
