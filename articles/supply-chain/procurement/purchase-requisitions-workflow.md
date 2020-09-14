@@ -118,7 +118,7 @@ Additional resources
 
 [Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
-[Defining business process workflows for purchase requisitions](https://www.microsoft.com/en-us/download/details.aspx?id=101821)
+[Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 
 [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 
