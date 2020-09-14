@@ -34,8 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The process automation framework supports logging of results and messages. There are two reasons why a process should write results and messages:
 
-1. Results and the message log communicate the state of a process to the system administrator or whichever roles have access. It's important that process results are monitored and seen by someone. If failures occur, they can either be fixed or an issue raised with the process owner.
-2. Results should communicate what the process did. If the process posts Vendor Invoices, then the results could show all the vendor invoices. Each result would show the status along with a link to the vendor invoice.
+- Results and the message log communicate the state of a process to the system administrator or whichever roles have access. It's important that process results are monitored and seen by someone. If failures occur, they can either be fixed or an issue raised with the process owner.
+- Results should communicate what the process did. If the process posts Vendor Invoices, then the results could show all the vendor invoices. Each result would show the status along with a link to the vendor invoice.
 
 Results and messages are a multi-level logging system. A process has one or more results. Each result has one or more messages specific to that result. A message is a composition child of the result. A result is typically something the process is processing. For example, if the process is posting vendor invoices, then you would log each vendor invoice as a result. You could then log multiple messages associated this result for each posting of each vendor invoice. If the posting of the vendor invoice is successful, it's ok to leave the message log empty as the success of the operation should be obvious when looking at the result. If warnings occur, then you should write them to the message log even if the posting was successful. These messages give transparency to the users as to what each process is doing and what the results are.
 

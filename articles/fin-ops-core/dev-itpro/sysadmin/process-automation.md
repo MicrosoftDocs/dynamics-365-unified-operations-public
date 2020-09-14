@@ -51,4 +51,4 @@ Each occurrence can be modified without impacting other occurrences defined by t
 
 ## Developer documentation
 
-The process automation framework allows developers to extend the process automation framework. This documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically. For more information, see [Process automation framework](../process-automation/process-automation-framework.md).
+The process automation framework allows developers to extend the process automation framework. The [Process automation framework](../process-automation/process-automation-framework.md) documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically.

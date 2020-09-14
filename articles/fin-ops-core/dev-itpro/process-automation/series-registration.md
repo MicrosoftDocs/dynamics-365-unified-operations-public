@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Every process must have a series. A series is similar in concept to a meeting series in outlook only our series are series of scheduled runs of a process. Most Scheduled process types have their series created in the UI by end users and never need to implement series registration. If the process being implemented is a schedule series then skip this section.
 
-Background processes typically create a series via code using series registration as background processes tend to be “under the hood” processes that don’t allow user interaction. To create a series via code implement the ProcessScheduleISeriesRegistration interface. This contains a single method returning an instance of ProcessScheduleSeriesRegistrationItem.
+Background processes typically create a series via code using series registration as background processes tend to be “under the hood” processes that don’t allow user interaction. To create a series via code implement the **ProcessScheduleISeriesRegistration** interface. This contains a single method returning an instance of **ProcessScheduleSeriesRegistrationItem**.
 
 The process automation framework allows system administrators to change the default polling interval and unit for background processes.
 
@@ -42,11 +42,7 @@ Here is an example of a test series used to test the framework:
 
 ```xpp
 using System.ComponentModel.Composition;
-/// <summary>
-/// Implements the <c>ProcessScheduleISeriesRegistration</c> to
-register the vendor invoice batch posting task 'Series' with the Process
-Automation.
-/// </summary>
+// Implements the ProcessScheduleISeriesRegistration to register the vendor invoice batch posting task 'Series' with the Process Automation.
 [Export(identifierStr(Dynamics.AX.Application.ProcessScheduleISeriesRegistration))]
 [ExportMetadata(classStr(ProcessScheduleISeriesRegistration), classStr(VendInvoicePostProcessScheduleSeriesRegistration))]
 internal final class VendInvoicePostProcessScheduleSeriesRegistration implements ProcessScheduleISeriesRegistration
@@ -140,9 +136,8 @@ Here is an example that prevents this process from ever being run every minute o
 
 ```xpp
 using System.ComponentModel.Composition;
-/// <summary>
-/// Provider to validate background settings.
-/// </summary>
+
+// Provider to validate background settings.
 [Export(identifierStr(Dynamics.AX.Application.ProcessScheduleISeriesValidateBackgroundDialog))]
 [ExportMetadata(extendedTypeStr(ProcessScheduleTypeName), 'ProcessAutomationExploder')]
 internal final class ProcessScheduleExplodeAutomationBackgroundDialogValidationProvider implements ProcessScheduleISeriesValidateBackgroundDialog

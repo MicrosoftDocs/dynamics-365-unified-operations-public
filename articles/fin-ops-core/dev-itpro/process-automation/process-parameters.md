@@ -34,8 +34,6 @@ Most processes have custom parameters they need to store that are specific to th
 
 When a series is created by the user in the UI, the series wizard hosts multiple form parts with each form part containing a related set of parameters. The form parts for the process contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided by type registration. The form part will implement interfaces which allow you to initialize, validate, and write the custom parameters.
 
-the series wizard hosts multiple form parts with each form part containing a related set of parameters.”
-
 The custom parameter tables typically have 2 types of records.
 
 - A template record that is bound to the series that serves as a template for all occurrences.
