@@ -17,13 +17,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -50,7 +50,7 @@ The **Equipment downtime** scenario has these dependencies:
 To configure the scenario, follow these steps:
 
 1. Log into Supply Chain Management.
-2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#configure-metrics).
 4. Navigate to **Production control**.
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
