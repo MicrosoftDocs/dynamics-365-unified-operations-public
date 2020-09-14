@@ -234,7 +234,7 @@ Because the cluster profile set the number of positions to 2, the system automat
 
 At any time during the following steps, you can select the **Details** tab to view additional information about the task, such as the picking location.
 
-1. Set the **ITEM** field to *L0101*. In this way, you confirm the item number as it's configured on the **Mobile Device Menu Item** in the **Work confirmation setup** page.
+1. Set the **ITEM** field to *L0101*. This confirms the item number, which is required for this menu item (you configured this earlier by selecting **Work confirmation setup**  from the **Mobile device menu item** page when you created this menu item).
 1. Enter the license plate number that is associated with the item in the location that is being picked. You will pick two pallets.
 1. Set the **LP** field to *LP\_PICK\_01*.
 1. Select **OK** (check mark symbol).
