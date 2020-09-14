@@ -89,7 +89,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 
 4.  Click **Setup Azure DevOps**.
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
-6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![LCS-Project-Settings-VSO-Setup-1](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
+6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![Enter the personal access token that you created in the previous section.](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
 7.  Click **Continue**.
 8.  Select the VSO project to use, and then click **Continue**.
 9.  Click **Save**.
