@@ -102,7 +102,7 @@ If privileges that require more than one specific full user license have been as
 The totals per specific full user license counts aren't divided into *base* licenses and *attach* licenses.
 
 > [!NOTE]
-> The total count per specific full user license and evaluation of custom privileges are included starting in the release of the platform update for version 10.1.13. The report can't separate the *base* and *attach* license requirements. Therefore, it lists only the total full user licenses requirements.
+> The total count per specific full user license and evaluation of custom privileges are included starting in the release of the platform update for version 10.0.13. The report can't separate the *base* and *attach* license requirements. Therefore, it lists only the total full user licenses requirements.
 
 ## Additional resources
 
