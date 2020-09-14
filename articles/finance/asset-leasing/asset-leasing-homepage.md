@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing home page
-description: This topic describes the Asset movement report, which serves as a rollforward report for the right-of-use asset balances for each lease.
+description: This topic provides an overview of Asset leasing documentation, and links to specific topics.
 author: moaamer
 manager: Ann Beebe
 ms.date: 09/14/2020
@@ -35,4 +35,6 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists and briefly describes the reports that are available in Asset leasing. You can display most reports by completing similar steps. 
+This topic provides an overview of Asset leasing documentation, and links to specific topics. 
+
+Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helpd generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.  
