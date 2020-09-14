@@ -108,7 +108,7 @@ If you have an on-premises deployment, the option to search for existing issues 
 
 [!NOTE]
 If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
-    [![wiki2](./media/wiki2.png)](./media/wiki2.png)
+    [![Click to connect to Lifecycle Services.](./media/wiki2.png)](./media/wiki2.png)
 
 
 ### Search for a fix
