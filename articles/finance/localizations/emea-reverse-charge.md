@@ -36,9 +36,10 @@ This topic describes a generic approach for setting up reverse charge functional
                                                                                  
 The availability of the functionality is managed by the following features in the **Feature management** workspace:
  - No specific feature: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Saudi Arabia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, United Arabic Emirates
- - *Reverse charge for additional countries*: Bahrain, Kuwait, Oman, and Qatar
- - *Enable reverse charge mechanism for VAT/GST scheme*: all other countries/regions except for Brazil, India, Russia.
- See [How to enable Reverse charge mechanism for VAT/GST scheme feature](#How-to-enable-Reverse-charge-mechanism-for-VAT-GST-scheme-feature) for details.
+ - ***Reverse charge for additional countries***: Bahrain, Kuwait, Oman, and Qatar
+ - ***Enable reverse charge mechanism for VAT/GST scheme***: all other countries/regions except for Brazil, India, Russia.
+ 
+ See [How to enable Reverse charge mechanism for VAT/GST scheme feature](##How-to-enable-Reverse-charge-mechanism-for-VAT-GST-scheme-feature) for details.
 
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
@@ -89,7 +90,7 @@ We recommend that you use separate sales tax groups for sales operations and pur
 </tr>
 </table>
 
-## Set up reverse charge groups
+## Set up reverse charge item groups
 On the **Reverse charge item groups** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge item groups**), you can define groups of products or services, or individual products or services, that the reverse charge can be applied to. For each reverse charge item group, define the list of items, item groups, and categories for sales and/or purchases.
 
 ## Set up reverse charge rules
@@ -129,13 +130,12 @@ In the following screenshot, one transaction has the **Sales tax receivable** di
 
 ![Posted sales tax](media/apac-sau-posted-sales-tax.png)
 
-# How to enable Reverse charge mechanism for VAT/GST scheme feature
-In the **Feature management** workspace find feature and click Enable.
-After the feature is enabled, a Revere charge tab will be available in all legal entities. You can switch on a the Reverse charge funclionality by setting Reverse charge option to ON.
-The following forms and menu items will be availabe:
+## How to enable Reverse charge mechanism for VAT/GST scheme feature
+In the **Feature management** workspace find a feature and click **Enable**.
+After the feature is enabled, a **Revere charge** tab will be available in all legal entities. You can switch on the Reverse charge functionality for the legal entity by setting the **Enable reverse charge** option to ON.
+The following forms and menu items related to the feature setup will be available:
+ - **Reverse charge item groups** (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge item groups**), see [Set up reverse charge item groups](##Set-up-reverse-charge-item-groups) for details
+ - **Reverse charge rules**  (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge rules**), see [Set up reverse charge rules](##Set-up-reverse-charge-rules)
+ - **Foreign trade parameters** (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Foreign trade** &gt; **Foreign trade parameters**), see [Set up Country/region properties](##Set-up-Country-region-properties)
 
-
-
-
-
-
+A **Reverse charge** check box will be available in the **Sales tax group** form, see [Set up sales tax groups and item sales tax groups](##Set-up-sales-tax-groups-and-item-sales-tax-groups), and in the **Posted sales tax**, see [Reverse charge on a sales invoice](##Reverse-charge-on-a-sales-invoice) and [Reverse charge on a purchase invoice](##Reverse-charge-on-a-purchase-invoice) for details.
