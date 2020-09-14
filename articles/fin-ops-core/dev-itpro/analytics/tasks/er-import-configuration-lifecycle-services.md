@@ -52,8 +52,7 @@ In this example, you will select the desired version of the ER configuration and
 
 ## Delete a shared version of a data model configuration
 
-1. Go to **Organization administration \> Electronic reporting \> Configurations**.
-2. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
+1. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
 
     You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
 
