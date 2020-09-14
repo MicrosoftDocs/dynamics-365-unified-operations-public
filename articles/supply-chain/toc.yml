@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.14 (November 2020)
+            href: get-started/whats-new-scm-10-0-14.md
           - name: Supply Chain Management 10.0.13 (October 2020)
             href: get-started/whats-new-scm-10-0-13.md
           - name: Supply Chain Management 10.0.12 (August 2020)
             href: get-started/whats-new-scm-10-0-12.md
-          - name: Supply Chain Management 10.0.11 (July 2020)
-            href: get-started/whats-new-scm-10-0-11.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed Microsoft Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -333,7 +333,7 @@
           href: asset-management/work-orders/automatic-update-of-asset-counters.md
         - name: Maintenance checklists
           href: asset-management/work-orders/maintenance-checklists.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime for work orders
           href: asset-management/work-orders/maintenance-downtime.md
         - name: Add fault to work order
           href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +367,7 @@
           href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
         - name: Create work orders
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
       - name: Capacity planning
         items:
@@ -633,13 +633,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
       - name: Power BI content
         items:
@@ -1345,8 +1345,6 @@
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Planning with negative on-hand quantities
-          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
@@ -1355,16 +1353,20 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Approve planned orders
+          href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Planning with negative on-hand quantities
+          href: master-planning/planning-optimization/negative-on-hand.md 
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -1827,10 +1829,6 @@
             href: pim/tasks/obsolete-product-variants.md
           - name: Exclude products from Master planning
             href: pim/tasks/exclude-products-master-planning.md
-        - name: Dual-use goods
-          href: pim/dual-use.md
-        - name: Country of origin
-          href: pim/country-of-origin.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -1839,6 +1837,20 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Hazardous materials
+          items:
+          - name: Hazardous materials overview
+            href: pim/hazmat-overview.md
+          - name: Set up hazardous materials
+            href: pim/hazmat-setup.md
+          - name: Hazardous materials in products, orders, shipments, and loads
+            href: pim/hazmat-items.md
+          - name: Hazardous materials inquiries and reports
+            href: pim/hazmat-reports.md
         - name: Translation of product information FAQ
           href: pim/translations-product-related-information.md
         - name: Search for product during order entry
@@ -2611,6 +2623,8 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization

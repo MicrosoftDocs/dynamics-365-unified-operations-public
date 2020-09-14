@@ -345,4 +345,7 @@ You can import reviewed configurations from RCS by using the ER repository of th
 8. Compare the contents of the generated outputs.
 
 ## Additional resources
-[Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+- [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+- [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
+

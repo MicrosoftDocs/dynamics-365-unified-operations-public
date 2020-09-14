@@ -5,7 +5,7 @@ title: Customize embedded reports in analytical workspaces
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: TJVass
 manager: AnnBe
-ms.date: 06/29/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,6 +45,12 @@ Power users can use web-friendly design tools to customize the analytical report
 
 > [!IMPORTANT]
 > Customizations that are made to the embedded analytical reports are automatically deployed by the service and made available to other users of the system.
+
+### Edit embedded reports in analytical workspaces
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+
+The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Important points about embedded analytical reports
 
