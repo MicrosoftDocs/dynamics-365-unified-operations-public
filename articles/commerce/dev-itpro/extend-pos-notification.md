@@ -53,7 +53,7 @@ Inside the operation, you can write custom logic to specify what should happen w
 
 ### Example
 
-To notify the POS user to prepare orders for pickup, inside CRT, check whether there is an order for pickup. If there is, update the notification response with the relevant parameters. The POS parses the response and shows the notification. When the POS user selects the notification, the POS calls the operation by using the parameter from the notification. (The extension logic determines whether parameters should be sent.) Inside the operation, the POS reads all the pending orders for pickup and shows it in the UI so that the POS user can take further action.
+To notify the POS user to prepare orders for pickup, inside CRT, check whether there is an order for pickup. If there is, update the notification response with the relevant parameters. The POS parses the response and shows the notification. When the POS user selects the notification, the POS calls the operation by using the parameter from the notification. (The extension logic determines whether parameters should be sent.) Inside the operation, the POS reads all the pending orders for pickup and shows the orders in the UI so that the POS user can take further action.
 
 ## Required steps to make notifications available for a custom operation
 
@@ -77,7 +77,7 @@ To extend the notification service in CRT, override **GetNotificationsExtensionS
 
 The Retail software development kit (SDK) includes a sample that shows how to extend the notification service (**RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.NotificationSample**).
 
-+ **GetNotificationsExtensionServiceRequest** – This request contains the operation ID, staff, and channel. Based on the configuration of Retail headquarters, the POS runs the notification scheduler for each configured operation.
++ **GetNotificationsExtensionServiceRequest** – This class contains the operation ID, staff, and channel. Based on the configuration of Retail headquarters, the POS runs the notification scheduler for each configured operation.
 + **GetNotificationsExtensionServiceResponse** – In the response, return the notification detail entity (**NotificationDetailCollection**), update **GetNotificationsExtensionServiceResponse**, and return all the notifications. Because the response is a collection, multiple notifications can be returned.
 
 ## Properties of the notification detail entity
@@ -101,8 +101,8 @@ The notification detail entity has the following properties.
 2. Rename the project according to the standard naming convention.
 3. Inside the project, there is a class file that is named **NotificationExtensionService.cs**. Open this file.
 4. The **GetNotificationsExtensionServiceRequest** class is overridden to add a custom notification. Override **GetNotificationsExtensionServiceRequest**, and return **GetNotificationsExtensionServiceResponse**.
-5. Either create a new class and override **GetNotificationsExtensionServiceRequest**, or use the sample template. The following steps assume that the template is used.
-6. In the **NotificationExtensionService** class, there is a method that is named **Process**. The code inside that method checks the operation ID and then, based on the operation ID, creates a notification details object and adds any notifications. Check whether the operation ID is custom operation ID, and then write logic to check whether there are any notifications. If there are, create a notification object that contains the details, and return it together with the response. The POS will then parse the response and show the notification.
+5. Either create a new class and override **GetNotificationsExtensionServiceRequest**, or use the sample template. 
+6. In the **NotificationExtensionService** class, there is a method that is named **Process**. The code inside that method checks the operation ID and then, based on the operation ID, creates a notification details object and adds any notifications. Check whether the operation ID is custom operation ID, and then write logic to check whether there are any notifications. If there are, create a notification object that contains the details, and return it together with the response. The POS will then parse the response and show the notification. The following code example is based on the template.
 
     > [!NOTE]
     > Remove the sample implementation inside the process method. Keep only the custom logic.
@@ -162,13 +162,12 @@ The notification detail entity has the following properties.
 7. After you've completed your changes, build the project, and drop the output library into **\\RetailServer\\webroot\\bin\\Ext**.
 8. Register the output library in the **CommerceRuntime.Ext.config** file.
 9. In the POS, create a new operation that has the same operation ID that is used in the CRT extension. In this example, the operation ID is **5000**. You can use any operation ID that is above 5000.
-
-    When the POS user selects the notification tile, the POS framework calls the operation handler for the operation ID that is used. Inside the handler, add the required logic to specify what should happen when the POS user selects the notification. For information about how to create a POS operation request, response, and handler, see [Show order notifications in the point of sale (POS)](add-POS-operations.md).
+10. When the POS user selects the notification tile, the POS framework calls the operation handler for the operation ID that is used. Inside the handler, add the required logic to specify what should happen when the POS user selects the notification. For information about how to create a POS operation request, response, and handler, see [Show order notifications in the point of sale (POS)](add-POS-operations.md).
 
     > [!NOTE]
     > The action property in the Notification detail entity will be sent to the POS operation request. Use that action property to pass any custom information from the notification service to the POS.
 
-10. Configure the notification scheduler according to the instructions in [Show order notifications in the point of sale (POS)](../notifications-pos.md).
+11. Configure the notification scheduler according to the instructions in [Show order notifications in the point of sale (POS)](../notifications-pos.md).
 
 ## Validate the customization
 
