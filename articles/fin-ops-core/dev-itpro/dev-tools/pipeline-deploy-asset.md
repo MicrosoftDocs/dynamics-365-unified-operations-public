@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy assets by using Azure Pipelines
-description: The topic explains how you can deploy assets from the LCS asset library using pipelines in Microsoft Azure DevOps.
+description: This topic explains how you can deploy assets from the LCS asset library using pipelines in Microsoft Azure DevOps.
 author: jorisdg
 manager: AnnBe
 ms.date: 03/05/2020
