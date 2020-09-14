@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: rubencdelgado 
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -180,7 +180,7 @@ When you use the test connector to demonstrate support for external gift cards, 
 ## External gift cards for the call center and storefront
 
 > [!NOTE]
-> External gift card support for call center and storefront is enabled in the **Feature management** workspace. The feature **Omni-channel payments** must first be enabled, once that feature is enabled, select **Enable advanced external gift card** and enable it as well. 
+> External gift card support for call center and storefront can be enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. 
 
 ### Tokenization
 
