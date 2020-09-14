@@ -5,7 +5,7 @@ title: Set up technical support for Finance and Operations apps
 description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
