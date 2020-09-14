@@ -5,7 +5,7 @@ title: Create a leave and absence plan
 description: Create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -48,7 +48,15 @@ You can also create position-based leave benefits, such as executive-only benefi
 
 2. Under **Details**, enter the **Name**, **Start date**, **Description**, and **Leave type** for your plan.
 
-If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, leave types are configured in the **Accrual schedule** instead of under **Details**. For each record in the accrual schedule table, you can define a leave type.
+If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, leave types are configured in the **Accrual schedule** instead of under **Details**. For each record in the accrual schedule table, you can define a leave type. Also, when this feature is enabled, you'll need to use new data entities for integrations or other scenarios where you need to use entities. 
+
+The new entities are:
+
+- Leave and absence bank transaction V2
+- Leave and absence enrollment V2
+- Leave and absence plan tier V2
+- Leave and absence plan V2
+- Leave time off request V2
 
  > [!IMPORTANT]
    > After you enable this feature, you can't turn it off.

@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.14 (November 2020)
+            href: get-started/whats-new-scm-10-0-14.md
+          - name: Supply Chain Management 10.0.13 (October 2020)
+            href: get-started/whats-new-scm-10-0-13.md
           - name: Supply Chain Management 10.0.12 (August 2020)
             href: get-started/whats-new-scm-10-0-12.md
-          - name: Supply Chain Management 10.0.11 (July 2020)
-            href: get-started/whats-new-scm-10-0-11.md
-          - name: Supply Chain Management 10.0.10 (May 2020)
-            href: get-started/whats-new-scm-10-0-10.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed Microsoft Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -333,7 +333,7 @@
           href: asset-management/work-orders/automatic-update-of-asset-counters.md
         - name: Maintenance checklists
           href: asset-management/work-orders/maintenance-checklists.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime for work orders
           href: asset-management/work-orders/maintenance-downtime.md
         - name: Add fault to work order
           href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +367,7 @@
           href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
         - name: Create work orders
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
       - name: Capacity planning
         items:
@@ -633,13 +633,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
       - name: Power BI content
         items:
@@ -1269,6 +1269,8 @@
           href: inventory/tasks/maintain-barcode-types.md
         - name: Check the availability of stock
           href: inventory/tasks/check-availability-stock.md
+        - name: Inventory on-hand list
+          href: inventory/inventory-on-hand-list.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
         - name: Transfer physical inventory within the warehouse
@@ -1343,8 +1345,6 @@
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Planning with negative on-hand quantities
-          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
@@ -1353,16 +1353,22 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Safety margins
+          href: master-planning/planning-optimization/safety-margins.md
+        - name: Approve planned orders
+          href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Planning with negative on-hand quantities
+          href: master-planning/planning-optimization/negative-on-hand.md 
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -1825,10 +1831,6 @@
             href: pim/tasks/obsolete-product-variants.md
           - name: Exclude products from Master planning
             href: pim/tasks/exclude-products-master-planning.md
-        - name: Dual-use goods
-          href: pim/dual-use.md
-        - name: Country of origin
-          href: pim/country-of-origin.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -1837,6 +1839,20 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Hazardous materials
+          items:
+          - name: Hazardous materials overview
+            href: pim/hazmat-overview.md
+          - name: Set up hazardous materials
+            href: pim/hazmat-setup.md
+          - name: Hazardous materials in products, orders, shipments, and loads
+            href: pim/hazmat-items.md
+          - name: Hazardous materials inquiries and reports
+            href: pim/hazmat-reports.md
         - name: Translation of product information FAQ
           href: pim/translations-product-related-information.md
         - name: Search for product during order entry
@@ -1953,7 +1969,7 @@
             href: production-control/tasks/define-resource-capabilities.md
           - name: Routes and operations
             href: production-control/routes-operations.md
-          - name: Warehouse work policies
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
           - name: Create working time scheduling properties
             href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2609,6 +2625,8 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
@@ -2651,10 +2669,14 @@
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
           - name: Zone threshold replenishment
             href: warehousing/zone-threshold-replenishment.md
+          - name: Replenishment over location capacity
+            href: warehousing/replenishment-over-location-capacity.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
+          - name: Confirm outbound shipments from batch jobs
+            href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
@@ -2683,10 +2705,8 @@
         items:
         - name: Warehouse work policies
           items:
-          - name: Warehouse work policies overview
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
-          - name: Set up warehouse work policies
-            href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
           - name: Movement of inventory with associated work in Warehouse management
             href: warehousing/move-inventory-associated-work.md
           - name: Create a work class
@@ -2747,6 +2767,8 @@
             href: inventory/warehouse-template.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
+          - name: Create location directives
+            href: warehousing/create-location-directive.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
@@ -2817,6 +2839,8 @@
         href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
       - name: Create a new transportation management engine
         href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Extend inventory on-hand data entities
+        href: inventory/extend-on-hand-entities.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

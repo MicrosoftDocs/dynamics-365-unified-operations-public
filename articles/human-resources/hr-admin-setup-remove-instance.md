@@ -5,7 +5,7 @@ title: Remove an instance
 description: This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -75,7 +75,7 @@ To remove a Human Resources environment from an existing Power Apps environment,
 4. Sign in to LCS using the account that you used to subscribe to Human Resources. 
 5. Select the Human Resources project that contains the environment. 
 6. In your LCS project, select the **Human Resources App Management** tile. 
-7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
+7. Select the instance you would like to remove, which should be marked with a Deployment status of **Deleted**.
 8. Select **Remove instance** and confirm your decision. 
 
 ## Recover a soft-deleted environment

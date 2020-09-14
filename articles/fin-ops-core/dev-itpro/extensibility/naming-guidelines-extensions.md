@@ -68,6 +68,12 @@ Fields, field groups, indexes, relations, and metadata elements added in extensi
 + Include a prefix, term, or abbreviation at the beginning of the name of the metadata node. For example, an approving worker foreign key field is added as part of a table extension, and **WHS** is one of prefixes that are dedicated to other elements in the hosting model. In this case, the field might be named **WHSApprovingWorker**.
 
 ## Naming variables and methods added in extension classes
-Variables and methods added in extension classes must have a name that is unique across both the type that is being extended and all other extension classes that extend the same type. Therefore, **these variables and methods should include a prefix** that minimizes the risk of conflicts across models. 
 
-+ Include a prefix, term, or abbreviation at the beginning of the member name. For example, an approving worker class-level variable might be named **WHSApprovingWorker** if **WHS** is one of the prefixes that are used by other elements in the model. An **approveWork** method might be named **WHSApproveWork** if **WHS** is one of the prefixes that are used by other elements in the hosting model.
+Variables and methods added in extension classes must have a name that is unique across both the type that is being extended and all other extension classes that extend the same type. You should take care to create unique and readable names for variables and methods. When you can't create a unique name, then you should apply a prefix to minimize the risk of conflicts across models. 
+
++ Create unique and readable names for variables and methods. For example, an approving worker class-level member variable might be named **approvingWorkerForLocalWarehouse** if the area of functionality is related to supporting some local warehouse extension functionality. An **approveWork** method for the same area of functionality might be named **approveWorkForLocalWarehouse**. 
+ 
++ When you cannot create a unique and readable name, then add a prefix, term, or an abbreviation at the beginning of the member variable or method name. For example, an approving worker class-level member variable might be named **whsApprovingWorker** if **WHS** is one of the prefixes that is used by other elements in the model. An **approveWork** method might be named **whsApproveWork** if **WHS** is a prefix that is used by other elements in the hosting model. 
+ 
++ Avoid generic names, because the risk is high that multiple extensions could be using the same term or that the base functionality would be enhanced with an identical name in a future release. Some example of names likely to collide are **Approver**, **Delay**, **Group**, **Lookup**, and **Process**.   
+

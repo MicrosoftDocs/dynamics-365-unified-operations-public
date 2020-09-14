@@ -3,7 +3,7 @@ title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,6 +58,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Provide the overview information for the implementation project.
 - Describe the vision and goals for the project in a few sentences. This information will help Microsoft understand the goals that you want to achieve and how you define success for the project.
+- Provide the Partner MPN ID, which you can get from the implementation partner team. If a partner is not involved or not yet identified, choose the appropriate option in the implementation partner drop-down list. Note that providing accurate partner data is a pre-requisite for [FastTrack Program](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/commerce/toc.json) assignment. You could miss the opportunity for valuable services if you do not provide the correct partner information. Once partner identified, you need to update the MPN ID.
 - Specify the estimated number of user licenses after full roll-out including current licenses. This number can differ from the current license purchase. If no change is planned, provide the current user license count. If a license type isn't applicable, enter **0** (zero).
 - If your implementation project is a demo project, or if you're moving from another tenant, provide the details.
 
@@ -97,7 +98,7 @@ The **Welcome** page provides general guidance and information that you will nee
 - The **FastTrack** page introduces the FastTrack program. It explains what the program consists of and how your implementation can benefit from it.
 - We strongly recommend that you watch the existing [TechTalks](https://community.dynamics.com/365/b/alltechtalks) and subscribe to upcoming TechTalks as Microsoft continues to share best practice guidance and information about the changes that are occurring in the product and platform.
 
-## Next Steps
+## Next steps
 
 The **Next Steps** page provides additional resources about the most critical aspects of the implementation. You can access this page at any time during the implementation.
 

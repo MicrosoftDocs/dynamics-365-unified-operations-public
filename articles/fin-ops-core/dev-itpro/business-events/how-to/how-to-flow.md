@@ -3,7 +3,7 @@
 
 title: Business events and Microsoft Power Automate
 description: This topics provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 

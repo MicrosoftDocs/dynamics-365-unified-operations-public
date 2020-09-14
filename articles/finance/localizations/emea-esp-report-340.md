@@ -113,7 +113,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 13.  Select **VAT report lines** to open the **VAT report lines** page. On this page, you can view the details of the VAT transactions that are transferred to the VAT report. If any of the lines that are automatically transferred don't have to be reported, you can edit or delete them.
 
-![VAT report lines page(media/3_VAT_report_lines.png)
+![VAT report lines page](media/3_VAT_report_lines.png)
 
 14.  Select **Posted sales tax** to open **Posted sales tax** page. On this page, you can review the posted sales tax transactions.
 15.  Close the **Posted sales tax** and **VAT report lines** pages.

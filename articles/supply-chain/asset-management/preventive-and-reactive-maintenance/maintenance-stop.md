@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Maintenance downtime
-description: This topic explains maintenance downtime in Asset Management.
+title: Maintenance downtime activities
+description: This topic explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -30,11 +30,9 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Maintenance downtime
+# Maintenance downtime activities
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period. For example, you can create a maintenance downtime registration for Production line 10 in Production Hall 29-A on production site 02. The maintenance downtime registration has a start and end time indicating the period in which the assets related to the maintenance stop are not available for production.
 
@@ -84,7 +82,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 ![Figure 3](media/21-preventive-maintenance.png)
 
-11. After you get an overview of the capacity load, if you want to make adjustments on work order maintenance jobs or maintenance schedule lines, return to the **Maintenance downtime activites** details view and select the lines you want to adjust on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs.
+11. After you get an overview of the capacity load, if you want to make adjustments on work order maintenance jobs or maintenance schedule lines, return to the **Maintenance downtime activities** details view and select the lines you want to adjust on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs.
 
 12. Click the **Adjust** button and update expected start/end dates, service level, or responsible maintenance workers for the selected work order maintenance jobs or maintenance schedule lines.
 

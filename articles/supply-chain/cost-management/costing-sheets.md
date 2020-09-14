@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CostSheetDesigner
+ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

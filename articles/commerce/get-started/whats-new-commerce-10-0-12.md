@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.12 (August 2020)
+title: What's new or changed in Dynamics 365 Commerce 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.12. 
 author: josaw1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.12
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.12 (August 2020)
+# What's new or changed in Dynamics 365 Commerce 10.0.12 (August 2020)
 
 [!include [banner](../includes/banner.md)]
 

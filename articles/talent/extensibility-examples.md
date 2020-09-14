@@ -9,7 +9,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
+ms.technology:
 # optional metadata
 
 ms.search.form: 
