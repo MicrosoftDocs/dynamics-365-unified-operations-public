@@ -51,61 +51,66 @@ In this example, you will create a configuration and upload it into LCS for a sa
 
 ## Create a new data model configuration
 
-1. Select **Create configuration** to open the drop-down dialog box.
+1. Go to **Organization administration \> Electronic reporting \> Configurations**.
+2. On the **Configurations** page, select **Create configuration** to open the drop-down dialog box.
 
     In this example, you will create a configuration that contains a sample data model for electronic documents. This data model configuration will be uploaded into LCS later.
 
-2. In the **Name** field, enter **Sample model configuration**.
-3. In the **Description** field, enter **Sample model configuration**.
-4. Select **Create configuration**.
-5. Select **Model designer**.
-6. Select **New**.
-7. In the **Name** field, enter **Entry point**.
-8. Select **Add**.
-9. Select **Save**.
-10. Close the page.
-11. Select **Change status**.
-12. Select **Complete**.
-13. Select **OK**.
-14. Close the page.
+3. In the **Name** field, enter **Sample model configuration**.
+4. In the **Description** field, enter **Sample model configuration**.
+5. Select **Create configuration**.
+6. Select **Model designer**.
+7. Select **New**.
+8. In the **Name** field, enter **Entry point**.
+9. Select **Add**.
+10. Select **Save**.
+11. Close the page.
+12. Select **Change status**.
+13. Select **Complete**.
+14. Select **OK**.
+15. Close the page.
 
 ## Register a new repository
 
-1. Select **Repositories**.
+1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
+
+2. In the **Configuration providers** section, select the **Litware, Inc.** tile.
+
+3. On the **Litware, Inc.** tile, select **Repositories**.
 
     You can now open the list of repositories for the Litware, Inc. configuration provider.
 
-2. Select **Add** to open the drop-down dialog box.
+4. Select **Add** to open the drop-down dialog box.
 
     You can now add a new repository.
 
-3. In the **Configuration repository enter** field, select **LCS**.
-4. Select **Create repository**.
-5. In the **Project** field, enter or select a value.
+5. In the **Configuration repository enter** field, select **LCS**.
+6. Select **Create repository**.
+7. In the **Project** field, enter or select a value.
 
     For this example, select the desired LCS project. You must have [access](#accessconditions) to the project.
 
-6. Select **OK**.
+8. Select **OK**.
 
     Complete a new repository entry.
 
-7. In the list, mark the selected row.
+9. In the list, mark the selected row.
 
     For this example, select the **LCS** repository record.
 
     Note that a registered repository is marked by the current provider. In other words, only configurations that are owned by that provider can be put in this repository and therefore uploaded into the selected LCS project.
 
-8. Select **Open**.
+10. Select **Open**.
 
     You open the repository to view the list of ER configurations. If the selected project hasn't yet been used for ER configurations sharing, the list will be empty.
 
-9. Close the page.
-10. Close the page.
+11. Close the page.
+12. Close the page.
 
 ## Upload a configuration into LCS
 
-1. Select **Configurations**.
-2. In the tree, select **Sample model configuration**.
+1. Go to **Organization administration \> Electronic reporting \> Configurations**.
+2. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
 
     You must select a created configuration that has been already completed.
 
