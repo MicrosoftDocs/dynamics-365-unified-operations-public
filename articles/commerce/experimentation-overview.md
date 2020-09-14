@@ -49,7 +49,6 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
 ## Experimentation journey
 The diagram below shows the user's experimentation journey in Commerce and the third-party service - it is a cyclical process that can take a few iterations to learn and get the desired results:
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
-<<need diagram from Charla/Jo>>
 
 Click on the links below to learn more about the phases:
 1. [Identify](experimentation-identify.md)
@@ -66,10 +65,10 @@ The **Experiments** tab in site builder shows the following statuses in the **Co
 1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
 1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
 
-<<need updated diagram from Charla/Jo>>
-
 Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service:
 1. Draft - The experiment is setup in the third-party service but hasn't started yet.
 1. Running - The experiment has started and is collecting data.
 1. Paused - The experiment is paused and not collecting data. You will need to resume it so it starts collecting data again.
 1. Archived - The experiment has run its course and has been cataloged for future reference.
+
+![Experimentation statuses](./media/experimentation_statuses.png "Experimentation statuses")
