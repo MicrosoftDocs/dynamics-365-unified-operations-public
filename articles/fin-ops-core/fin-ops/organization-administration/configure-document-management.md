@@ -162,7 +162,7 @@ When you work with attachments, you might want to scan the files for viruses and
 
 The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
 
-- **Docu.delegateScanDocument()** – This delegate applies the file scanning logic when uploading a new document attachment or when a user tries to preview or download an existing attachment. The corresponding action will fail if the scanning service determines that the file is malicious.
+- **Docu.delegateScanDocument()** – This delegate applies the file scanning logic when a new document attachment is uploaded, or when a user tries to preview or download an existing attachment. The corresponding action will fail if the scanning service determines that the file is malicious.
 -  **Docu.delegateScanDeletedDocument()** – This delegate applies the file scanning logic to documents in the attachments recycle bin when a user tries to preview or download a file. The corresponding action will fail if the scanning service determines that the file is malicious.
 
 ### Implementation details
