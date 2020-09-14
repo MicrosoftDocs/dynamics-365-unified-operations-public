@@ -125,15 +125,17 @@ In the same way that you can select (or unselect) all rows in the grid by select
 When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ## Pinned system columns
-The row selection and row status columns in the new grid are pinned or frozen on the leftmost aspect of the grid, which means that when these columns are included in a grid they will be visible to the user regardless of the horizontal scroll position in the grid.   
+The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
 
 **10.0.9 / Platform update 33 and later**
+
 The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and 10.0.7 / Platform update 31**
+
 The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
 
 1.	**Enable the flight**: Execute the following SQL statement: 
@@ -153,10 +155,10 @@ If your organization discovers a page that has some issues utilizing the new gri
 
  ```this.forceLegacyGrid();```
 
-This API will be honored until the October 2021 release when the new grid control becomes mandatory. Please report any issues to Microsoft which require this API to be utilized.
+This API will be honored until the October 2021 release, when the new grid control becomes mandatory. If any issues require that this API be used, report them to Microsoft.
 
-## [Developer] Size to Available width columns
-If a developer sets the WidthMode property to be SizeToAvailable on columns inside the new grid, these columns will start with the same width as they would with the SizeToContent width mode setting, but will stretch to use any extra available width inside the grid. If multiple columns are set to SizeToAvailable, they will share any extra available space in the grid. If a user manually resizes one of these columns, however, the column will be static at that width and will no longer stretch to take up extra available grid width.  
+## [Developer] Size-to-available-width columns
+If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
 
 ## Known issues
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
