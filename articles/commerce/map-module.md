@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.13
 # Map module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 
