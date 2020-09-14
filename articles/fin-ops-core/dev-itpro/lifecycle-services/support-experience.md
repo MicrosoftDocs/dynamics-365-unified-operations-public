@@ -98,27 +98,8 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 12. Sign in to Visual Studio Online.
 13. Click **Accept**.
 
-## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)
-If you are on Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
-
-[!WARNING]
-If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
-
-1.  In the client, click the **Help** menu, or question mark icon, in the upper-right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
-2.  Click **Contact your support team**.
-3.  Enter information in the **Issue** and **Description** fields.
-4.  Optional: Enter the time when the issue occurred (Platform update 3 feature).
-5.  Optional: Set the **Work stoppage** fields to **Yes**.
-6.  Optional: Upload a task recording.
-7.  Set the option to share your email address with LCS to **Yes**. The **Submit** button won't be available unless you share your email address.
-8.  Click **Submit**. 
-
-[![Contact Support](./media/contact-support.png)](./media/contact-support.png)
-
-You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the associated LCS project.
-
-## Create an issue in the Finance and Operations client (Finance and Operations platform update 4 and platform update 3 KB 4010473)
-If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
+## Create an issue 
+The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
 [!WARNING]
 If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
