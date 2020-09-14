@@ -52,7 +52,8 @@ In this example, you will select the desired version of the ER configuration and
 
 ## Delete a shared version of a data model configuration
 
-1. In the tree, select **Sample model configuration**.
+1. Go to **Organization administration \> Electronic reporting \> Configurations**.
+2. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
 
     You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
 
@@ -79,29 +80,32 @@ In this example, you will select the desired version of the ER configuration and
 
 ## Import a shared version of a data model configuration from LCS
 
-1. In the list, mark the selected row.
+1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
+
+2. In the **Configuration providers** section, select the **Litware, Inc.** tile.
+
+3. On the **Litware, Inc.** tile, select **Repositories**.
 
     You can now open the list of repositories for the Litware, Inc. configuration provider.
 
-2. Select **Repositories**.
-3. Select **Open**.
+4. Select **Open**.
 
     For this example, select the **LCS** repository, and open it. You must have [access](#accessconditions) to the LCS project and to the Asset library that is accessed by the selected ER repository.
 
-4. In the list, mark the selected row.
+5. In the list, mark the selected row.
 
     For this example, select the first version of **Sample model configuration** in the version list.
 
-5. Select **Import**.
-6. Select **Yes** to confirm the import of the selected version from LCS.
+6. Select **Import**.
+7. Select **Yes** to confirm the import of the selected version from LCS.
 
     An informational message confirms that the selected version was successfully imported.
 
-7. Close the page.
 8. Close the page.
-9. Select **Configurations**.
-10. In the tree, select **Sample model configuration**.
-11. In the list, find and select the desired record.
+9. Close the page.
+10. Select **Configurations**.
+11. In the tree, select **Sample model configuration**.
+12. In the list, find and select the desired record.
 
     For this example, select the version of the configuration that has a status of **Shared**.
 
