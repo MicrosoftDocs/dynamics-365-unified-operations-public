@@ -88,19 +88,19 @@ To open the test recorder, sign in to Cloud POS, and then, on the **Settings** p
 
 To end a recording session, select **Stop**. Note that you can't restart a recording session after you end it. Therefore, make sure that the recording session is completed before you end it.
 
-[![Stop](./media/Stop.png)](./media/Stop.png)
+[![Stop button on test recorder](./media/Stop.png)](./media/Stop.png)
 
 ### Pause a recording session
 
 To temporarily stop (pause) a recording session, select **Pause**. Steps that you perform after you select **Pause** aren't recorded.
 
-[![Pause](./media/Pause.png)](./media/Pause.png)
+[![Pause button on test recorder](./media/Pause.png)](./media/Pause.png)
 
 ### Continue a recording session
 
 To resume a recording session after you've paused it, select **Recording**.
 
-[![Recording](./media/Recording.png)](./media/Recording.png)
+[![Recording button on test recorder](./media/Recording.png)](./media/Recording.png)
 
 ### Start and end a task
 
@@ -121,7 +121,7 @@ Tasks can be nested inside other tasks. In this way, you can better organize ver
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add an annotation to any step by selecting the **Edit** button (pencil symbol) to the right of the step.
 
 > [!div class="mx-imgBorder"]
-> [![Annotation](./media/Annotation.png)](./media/Annotation.png)
+> [![Annotation pencil button on test recorder](./media/Annotation.png)](./media/Annotation.png)
 
 ### Add text and notes
 
