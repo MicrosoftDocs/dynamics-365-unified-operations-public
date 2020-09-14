@@ -76,7 +76,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 </tr>
 <tr class="even">
 <td>Request new features and functionality.</td>
-<td>Visit <a href="https://experience.dynamics.com/ideas/"><span style="color: #0066cc;">Dynamics 365 Appliation Ideas</span></a> to view, search, or vote for existing ideas, or to add new ideas.</td>
+<td>Visit <a href="https://experience.dynamics.com/ideas/"><span style="color: #0066cc;">Dynamics 365 Application Ideas</span></a> to view, search, or vote for existing ideas, or to add new ideas.</td>
 </tr>
 </tbody>
 </table>
