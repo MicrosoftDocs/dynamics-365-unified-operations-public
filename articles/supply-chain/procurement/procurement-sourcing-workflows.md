@@ -75,7 +75,7 @@ You can assign an approval step to the following groups of participants.
 
 ## Additional resources
 
-- [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)
 
