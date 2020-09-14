@@ -39,7 +39,7 @@ The availability of the functionality is managed by the following features in th
  - ***Reverse charge for additional countries***: Bahrain, Kuwait, Oman, and Qatar
  - ***Enable reverse charge mechanism for VAT/GST scheme***: all other countries/regions except for Brazil, India, Russia.
  
- See [How to enable Reverse charge mechanism for VAT/GST scheme feature](##How-to-enable-Reverse-charge-mechanism-for-VAT-GST-scheme-feature) for details.
+ See [How to enable Reverse charge mechanism for VAT/GST scheme feature](##How-to-enable-Reverse-charge-mechanism-for-VATGST-scheme-feature) for details.
 
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
@@ -136,6 +136,6 @@ After the feature is enabled, a **Revere charge** tab will be available in all l
 The following forms and menu items related to the feature setup will be available:
  - **Reverse charge item groups** (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge item groups**), see [Set up reverse charge item groups](##Set-up-reverse-charge-item-groups) for details
  - **Reverse charge rules**  (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Reverse charge rules**), see [Set up reverse charge rules](##Set-up-reverse-charge-rules)
- - **Foreign trade parameters** (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Foreign trade** &gt; **Foreign trade parameters**), see [Set up Country/region properties](##Set-up-Country-region-properties)
+ - **Foreign trade parameters** (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Foreign trade** &gt; **Foreign trade parameters**), see [Set up Country/region properties](##Set-up-Countryregion-properties)
 
 A **Reverse charge** check box will be available in the **Sales tax group** form, see [Set up sales tax groups and item sales tax groups](##Set-up-sales-tax-groups-and-item-sales-tax-groups), and in the **Posted sales tax**, see [Reverse charge on a sales invoice](##Reverse-charge-on-a-sales-invoice) and [Reverse charge on a purchase invoice](##Reverse-charge-on-a-purchase-invoice) for details.
