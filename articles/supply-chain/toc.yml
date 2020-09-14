@@ -2623,6 +2623,8 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
