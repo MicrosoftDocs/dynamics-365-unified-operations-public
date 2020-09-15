@@ -321,6 +321,11 @@ If you use resource groups to manage groups of machines, production lines or wor
   :::image type="content" source="media/instruction-guides-RouteOperationRelation-AddGuide.png" alt-text="Adding a Guide to a route operation relation and relevant stages of the operation.":::
 
 ### Instructions in the shop floor experience
+Dynamics 365 SCM will resolve the relevant guides for the jobs that are shown on the shop floor experience. Use the Guides button on order to access the relevant guides.
+:::image type="content" source="media/instruction-guides-Shopfloor1.png" alt-text="Guides button in the shop floor experience.":::
+
+Shop floor workers will then wear the HoloLens and access the respective guide by glancing at the QR code and activating the respective guidance.
+:::image type="content" source="media/instruction-guides-Shopfloor2.png" alt-text="QR code to access guides from within HoloLens guides.":::
 
 ### Resolving logic for Guides
 
