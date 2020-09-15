@@ -171,7 +171,7 @@ The following illustration presents a matrix that summarizes which calendars app
 - **Warehouse (WH):** Yellow
 - **Vendor (V):** Blue
 
-![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)
+[![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## Calculating delays
 
