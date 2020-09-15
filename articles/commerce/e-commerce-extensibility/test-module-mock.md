@@ -5,7 +5,7 @@ title: Test modules with module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
 manager: annbe
-ms.date: 07/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
