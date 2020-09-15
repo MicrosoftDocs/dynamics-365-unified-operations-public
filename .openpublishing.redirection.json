@@ -1,5 +1,50 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-bdm",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-business-user",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-developer.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-developer",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-administrator",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-functional-consultant",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-partner-sales",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-project-manager",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "../../../finance/get-started/learning-catalog-solution-architect",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/xpp-data-query.md",
       "redirect_url": "xpp-data/xpp-data-home-page",
