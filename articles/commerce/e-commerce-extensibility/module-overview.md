@@ -133,25 +133,27 @@ To clone the fabrikam theme as a starter to your own theme follow the below step
 1. The clone command will make a copy of a module and put it under the **/src/modules** directory.  A theme is just a special module that is stored under the **/src/themes** directory.  You'll need to manually copy the new theme from the **src/modules** into the **src/themes** directory.  If no themes directory exists, you can manually create it first.
 1. Within the theme directory you will find a file called MY_NEW_THEME.definition.json, where MY_NEW_THEME is the name provided with the clone command in step 1.  This file will list the metadata used in site builder such as the theme friendly name and description.
 
-The last step will be to change the SCSS for any modules that you need.  Each starter kit module SCSS is stored under the themes **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a colors.scss file which contains the common color definitions.
+##### Modify module CSS in a theme
+Once you have a custom theme created, the SCSS can be modified as needed. Each starter kit module SCSS is stored under the themes **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a colors.scss file which contains the common color definitions.
 
-Once a theme is created or modified using the Online SDK, the configuration package can be uploaded via LCS see the [Package configurations and deploy them to an online environment](package-deploy.md) for details.  Once themes are deployed, from within site builder you can change between available themes, see the [Select a site theme](../select-site-theme.md) document for more information.
+Once a theme is created or modified using the online SDK, a configuration package can be build and uploaded via LCS, see the [Package configurations and deploy them to an online environment](package-deploy.md) for details.  Once themes are deployed, the theme can be set for a site from the site builder tool, see the [Select a site theme](../select-site-theme.md) document for more information.
 
-### Extending a module's view
-You may have a requirement that is more involved than CSS changes alone and you may need to change or alter the HTML on a starter kit module.  
+##### Extending a module's view in a theme
+You may have a requirement that is more involved than CSS changes alone and you may need to change or alter the HTML on a starter kit module. Starter kit modules have been built with a separation of the React view file from the main component, allowing the view file to be overridden inside a theme.
 
-An example is you would like to re-order the HTML on the **Buybox** module on the product details page to have the product details show up above the price.  While CSS changes alone might be able to achieve this, by extending the module view you can alter the HTML on the page which could have better performance and behave better across different page sizes. 
+An example is you would like to re-order the HTML on the **Buybox** module on the product details page to have the product details show up above the price.  While CSS changes alone might be able to achieve this, by extending the module view you can alter the HTML on the page which could have more performant and responsive layout design.
 
-Extending a module view can be achieved by overriding a module's view inside of a theme.  Since these changes are scoped to a site theme, changing a sites theme can end up changing the complete look and feel of a module if desired.  An advantage of changing a module view (versus cloning a module) is that over time as the store starter kit modules are updated the updates are still applied.  For example, a starter kit module business logic could be improved over time and the view override will continue to work on the updated starter kit module code.
+Extending a module view can be achieved by overriding a module's view inside of a theme.  Since these changes are scoped to a site theme, changing a sites theme can end up changing the complete look and feel of a module if desired.  An advantage of changing a module view versus cloning a module, is that over time as the store starter kit modules are updated the updates are still applied.  For example, a starter kit module business logic could be improved over time and the view override will continue to work on the updated starter kit module code.
 
 To extend a module see the [Extend a theme to add module extensions](theme-module-extensions.md) document.  You can find examples of module theme extensions in the starter **fabrikam** theme.  
 
-#### Module definition extensions
-Not only can you extend a modules view, but you can also extend a starter kit module definition to add or remove module configurations.  
+##### Extending a module definition extension
+Not only can you extend a modules view, but you can also extend a starter kit module definition to add or remove module configurations, slots, data actions or resources.  You can then access these new configurations from within a modules view extension, so in general when you add a theme definition extension you will also extend the module's view.  For more information see the [Theme definitions extensions](theme-module-extensions.md) document.
 
-For example if a store starter kit module has a configuration for a title string you could add an additional sub-title string configuration that can be set in the site builder.
+For example if a store starter kit module has a configuration for a title string you could add an additional sub-title string configuration to the module definition extension that can be set in the site builder and rendered in the module's extended view.
 
-You can also configure additional data actions, slots and resources on a starter kit module.  You can then access these new configurations from within a modules view extension, so in general when you add a theme definition extension you will also extend the module's view.  For more information see the [Theme definitions extensions](theme-module-extensions.md) document.
+#### Override a starter kit component
+The starter kit contains a set of helper component files that contain helper APIs that some modules use to render HTML or handle events that call server APIs.  These components can be overriden and changed as needed.  An example component is the **Price** component which renders the appropriate price including the markup for a price strike through if applicable.  If you need the pricing UI to change, you can override the specific component. See the [Override a starter kit component](theme-component-override.md) for more information.
 
 ### Cloning a store starter kit module
 If you cannot achieve the desired changes to a starter kit module but would like to use it as a starter you can [clone](clone-starter-module.md) a module.  This may be needed in scenarios where you need to change the business logic coded in the module that is not exposed in the module's view thus a view override won't do what you need.  Cloning will create a new module with a copy of the code from the starter kit module that was cloned and can then be changed as needed.  
