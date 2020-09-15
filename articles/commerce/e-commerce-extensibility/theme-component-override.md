@@ -60,16 +60,11 @@ The following is a list of components includes as part of the store starter kit.
 | Product       | This component is used to render the HTML to display the products in a card format across the site. It consists of product image, title, description, price and rating. |
 | PromoCode     | This component is used to apply promotion or discount codes to cart. This works in combination with the cart state present in global state package to apply or remove a promotion in the cart. |
 | Rating        | This component is used to render the HTML to display the product rating across the site. It does not make any API call. This component also handles the click event to update the rating. |
-| SocialMedia | This component is used to render the social media icons for sharing a product on the buybox module. Currently it supports Facebook, LinkedIn, Mail, Pintrest, Twitter.
-| WishListIcon  | This component is used to render the HTML to display the wishlist-icon in the header module. This component handles the click event to navigate to the wishlist  page. |
+| SocialMedia | This component is used to render the social media icons for sharing a product on the buybox module. Currently it supports Facebook, LinkedIn, Mail, Pinterest, Twitter.
+| WishListIcon  | This component is used to render the HTML to display the wishlist-icon in the header module. This component handles the click event to navigate to the wish list  page. |
 
 ## Override a component in a theme
 To override a component in a theme, you can use CLI command ```yarn msdyn365 add-component-override [themeName] [componentName] [--list-components]```.  Once complete you will find a new typescript file under the theme's ```\view\components``` directory.  This file can now be modified as required. 
 
 ### Example
 ```yarn msdyn365 add-component-override spring add-to-cart```
-
-
-
-
-
