@@ -39,7 +39,7 @@ A purchase agreement has to be associated to the purchase order at the time of c
 
 ## What check triggers the prompt 'Update prices and discounts entered manually or external document' message?
 
-We prompt this when changing the shipping date because often times this means that a different trade or sales agreement can get triggered, resulting in a price change. It can also effect warehouse schedules and other related information. It gets triggered whenever any of the dates have been changed, to ensure that the user is aware of price changes that can happen due to this change.
+We prompt this when changing the shipping date because often times this means that a different trade or sales agreement can get triggered, resulting in a price change. It can also effect warehouse schedules and other related information. It gets triggered whenever any of the dates or some other parameters have been changed, to ensure that the user is aware of price changes that can happen due to this change. This is the TAE (Trade Agreement Evaluation) prompt, find the full description (Trade Agreement Evaluation Policies)[https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper].
 
 ## Purchase order receipt does not include all charges
 
@@ -55,11 +55,12 @@ We prompt this when changing the shipping date because often times this means th
 This is dependent on how the miscellaneous charges have been setup. Please see this blog for how to set this according your requirements. [Post Misc. charges at time of Product receipt](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/)
 
 ## Trade agreement price and discounts are not applied on purchase order lines imported through data management (DMF)
-Trade agreements that are applicable for purchase order lines do not get applied to lines imported through data management, though the same trade agreements are applied on regular purchase order lines created manually.
+## Trade agreement price and discounts are not applied on sales order lines imported through data management (DMF)
+Trade agreements that are applicable for sales or purchase order lines do not get applied to lines imported through data management, though the same trade agreements are applied on regular sales or purchase order lines created manually.
 
 **Scenario**
 1. Create a purchase order for a vendor that has a trade agreement set up for line discount percentage.
-2 Import purchase order lines with price set for eg., through the entity Purchase Order Lines V2
+2. Import purchase order lines with price set for eg., through the entity Purchase Order Lines V2
 3. Check field "Line discount percentage".
 4. Result: The line discount percentage is not updated after import of these lines.
 
@@ -67,7 +68,9 @@ Trade agreements that are applicable for purchase order lines do not get applied
 When purchase order lines that are imported via data management already are decorated with price information, then the trade agreement will not be re-evaluated for these lines. 
 
 **Workaround**
-Import the purchase order lines without setting any of the price information, then the trade agreements will get kicked in and the purcase order lines would get updated based on the defined trade agreements.
+Import the purchase order lines without setting any of the price information, then the trade agreements will get kicked in and the purchase order lines would get updated based on the defined trade agreements.
+
+This is the expected behavior and works similarly for both Sales and Purchase Orders.
 
 ## Vendor rebate is not cumulated based on invoices.
 Posting invoices with different due dates is not reflected to the vendor rebates that is generated from the invoices.
