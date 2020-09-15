@@ -102,7 +102,7 @@ A [CSS override file](../css-override-files.md) can be uploaded using site build
 
 In general, if you can use tools such as a modern browser's HTML/CSS debugging tools, and can modify the CSS to your liking, you can then copy those changes into a single CSS override file. 
 
-For example, if you wanted to hide the wishlist icon in the **Header** module, first you may notice the module does not have a configuration setting to turn this on or off, but you can use CSS to hide the element.  By using the F12 web browser tools, you can find the CSS class name to use and play with CSS until you get what you desire. Below is a CSS example to hide wishlist link in the **Header** module.
+For example, if you wanted to hide the wish list icon in the **Header** module, first you may notice the module does not have a configuration setting to turn this on or off, but you can use CSS to hide the element.  By using the F12 web browser tools, you can find the CSS class name to use and play with CSS until you get what you desire. Below is a CSS example to hide wish list link in the **Header** module.
 
 ```CSS
 a.msc-wishlist-icon.ms-header__wishlist-desktop.msc-btn {
@@ -117,11 +117,11 @@ If you need to target a change to just a single (or a few but not all) instance(
 ![Custom CSS class name](media/module-overview-2.png)
 
 #### Theme changes
-If your CSS changes are more involved or you want to make the changes permanent, the next level of customization is making changes to the site theme using the Online SDK.  The site theme contains all of the CSS the modules require using SCSS files.  By default the **fabrikam** starter theme is provided and can be used for your online site, however it is generally advisable to create a new custom theme.  Creating a custom theme is easy and you can even **clone** the fabrikam theme to make a copy as a start to your own theme.  See the [Theming overview](theming.md) document for more information.  
+If your CSS changes are more involved or you want to make the changes permanent, the next level of customization is making changes to the site [theme](theming.md) using the Online SDK.  The site theme contains all of the CSS the modules require using SCSS files.  By default the **fabrikam** starter theme is provided and can be used for your online site, however it is generally advisable to create a new custom theme.  Creating a custom theme is easy and you can even **clone** the fabrikam theme to make a copy as a start to your own theme.  See below for details on how to create and clone a theme.
 
 If you are hosting multiple sites in a single Dynamics 365 Commerce instance you can create as many themes as needed.  You can even create a base theme that other themes inherit from to minimize common changes across themes.  See the [Extend a theme from a base theme](extend-theme.md) document for more information.
 
-Not only does a theme allow you to customize the module CSS, it also supports extending module views and definitions, see below for more information.
+Not only does a theme allow you to customize the module CSS, it also supports extending module views and definitions and override starter kit components, see below for more information.
 
 ##### Create a new theme
 To create a new theme see the [Create a new theme](create-theme.md) document for details.  Creating a theme this way will give you a boiler plate theme that is empty and has no SCSS files for the starter kit module.  See the next section if you want to create a new theme that has starter kit styles as a starter.
