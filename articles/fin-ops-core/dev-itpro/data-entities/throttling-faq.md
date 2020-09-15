@@ -1,4 +1,4 @@
-# Self-service deployment FAQ
+# Priority-based Throttling FAQ
 
 [!include[banner](../includes/banner.md)]
 
