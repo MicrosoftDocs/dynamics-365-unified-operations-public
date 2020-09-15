@@ -75,7 +75,7 @@ Custom theme changes can be made to:
 * [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions or resources
 * [Override a starter kit component](theme-component-override.md) to change the component behavior
 
-If deeper changes are needed to a module such as business logic that can't be changed in the module view or component, then a starter kit module can be cloned into a new custom module.  More details are provided below as to which option is best for various requirements.
+If deeper changes are needed to a module such as business logic that can't be changed in the module view or component, then a starter kit module can be [cloned](clone-starter-module.md) into a new custom module.  More details are provided below as to which option is best for various requirements.
 
 ### Picking the right store starter kit module customization option
 As listed above, there are many options available to customize a store starter kit module.  It is important to pick the right option for your needs.  
