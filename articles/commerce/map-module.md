@@ -5,7 +5,7 @@ title: Map module
 description: This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -42,7 +42,8 @@ A map module shows the locations of stores on an interactive map that is rendere
 
 A map module works in conjunction with the store selector module to determine the geographic locations of stores that must be rendered on a map. Store selector and map modules interact when a user selects a store in one of those modules on a site page. Map modules can be extended for other scenarios, beyond interaction with store selector modules. However, module customization is required.
 
-The map module was introduced in Commerce version 10.0.13.
+> [!NOTE]
+> The map module is available in Dynamics 365 Commerce 10.0.13 release.
 
 The following image shows an example of a map module that is used on a store locations page.
 
