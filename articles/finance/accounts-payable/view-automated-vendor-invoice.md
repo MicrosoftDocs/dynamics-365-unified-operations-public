@@ -29,17 +29,17 @@ ms.dyn365.ops.version: 10.0.14
 ---
 
 # View vendor invoice automation results
- 
+
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to view the status of vendor invoices that are in the automated submit-to-workflow process. The details of the automation history are maintained for each imported vendor invoice. The **Automated receipt match status** and the **Automated submit to workflow status** will be displayed on the **Pending vendor invoices** page, depending on which business processes you have chosen to automate. You can view the details and make a plan to focus on the invoices that failed an automated step. After correcting the issue, you can resume the automated process for the imported invoice. 
+This topic explains how to view the status of vendor invoices that are in the automated submit-to-workflow process. Details of the automation history are maintained for each imported vendor invoice. Depending on the business processes that you've automated, the **Pending vendor invoices** page shows **Automated receipt match status** and **Automated submit to workflow status** values. You can view the details and make a plan to focus on the invoices that failed an automated step. Then, after you correct the issue, you can resume the automated process for the imported invoice.
 
-You must pause automated processing before you can edit an invoice that's been submitted. If an invoice needs to be paused from the submit-to-workflow automation process, unmark the **Include in Automated processing** setting on the **Vendor invoices** page. This will keep automation from running until you mark the **Include in Automated processing** setting. An invoice can be paused from further automation when it’s not yet in workflow, and isn’t in use by the automated process.
+Before you can edit an invoice that has been submitted, you must pause the automated processing. If an invoice in the automated submit-to-workflow process must be paused, clear the **Include in Automated processing** setting on the **Vendor invoices** page. Automation will then be prevented from running until you select the **Include in Automated processing** setting again. An invoice can be paused from further automation if it isn't yet in the workflow system and isn't used by the automated process.
 
-You can view the **Automation status** on the **Vendor invoices** page for an imported invoice that’s subject to the submit-to-workflow process. The following statuses are tracked:
+If an imported invoice is subject to the submit-to-workflow process, you can view its **Automation status** value on the **Vendor invoices** page. The following statuses are tracked:
 
-- **Included** – The automated processes are running properly and have not reached completion, based on the configuration that’s defined on the **Accounts payable parameters** page.
-- **Paused** – The automated processes defined in the **Accounts payable parameters** page have run, but at least one of the steps in the process failed. The Paused status is also applied if the **Include in automated processing** setting was cleared. You can view the failures by clicking the **View most recent results** button.
-- **In workflow** – The imported invoice has been submitted to workflow, either by the submit-to-workflow automated process, or manually. 
+- **Included** – The automated processes that are defined on the **Accounts payable parameters** page are running correctly but haven't yet been completed.
+- **Paused** – The automated processes that are defined on the **Accounts payable parameters** page have run, but at least one step in the process failed. The **Paused** status is also applied if the **Include in automated processing** setting was cleared. You can view the failures by selecting **View most recent results**.
+- **In workflow** – The imported invoice has been submitted to the workflow system, either by the automated submit-to-workflow process or manually.
 - **Workflow complete** – The workflow process has been completed for the imported invoice.
