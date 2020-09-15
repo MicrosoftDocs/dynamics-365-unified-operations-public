@@ -75,7 +75,12 @@ Custom theme changes can be made to:
 * [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions or resources
 * [Override a starter kit component](theme-component-override.md) to change the component behavior
 
-If deeper changes are needed to a module such as business logic that can't be changed in the module view or component, then a starter kit module can be [cloned](clone-starter-module.md) into a new custom module.  More details are provided below as to which option is best for various requirements.
+Additional customization options include:
+* [Data action overrides](data-action-overrides.md) which allow the customization of any built in data action
+* [Cloning a starter kit module](clone-starter-module.md) will create a new copy of the store starter kit module and allow you to change any part of it, this is helpful for changes that cannot be done with any of the other methods
+* [Creating a custom module](create-new-module.md) is useful when a custom solution is needed that the starter kit modules do not provide.
+
+More details are provided below as to which option is best for various requirements.
 
 ### Picking the right store starter kit module customization option
 As listed above, there are many options available to customize a store starter kit module.  It is important to pick the right option for your needs.  
@@ -154,6 +159,9 @@ For example if a store starter kit module has a configuration for a title string
 
 #### Override a starter kit component
 The starter kit contains a set of helper component files that contain helper APIs that some modules use to render HTML or handle events that call server APIs.  These components can be overriden and changed as needed.  An example component is the **Price** component which renders the appropriate price including the markup for a price strike through if applicable.  If you need the pricing UI to change, you can override the specific component. See the [Override a starter kit component](theme-component-override.md) for more information.
+
+### Data action overrides
+[Data action overrides](data-action-overrides.md) allow the customization of any core data action.  Data actions generally call server side APIs and can apply additional business logic if needed on the return data before the module uses it.  By overriding a data action, a copy will be added to the **/src/action** directory, you can then modify the code as desired.  Once a data action is overridden all modules that called the original data action will now call the new one.  Note data action overrides are global and not scoped to a theme.  
 
 ### Cloning a store starter kit module
 If you cannot achieve the desired changes to a starter kit module but would like to use it as a starter you can [clone](clone-starter-module.md) a module.  This may be needed in scenarios where you need to change the business logic coded in the module that is not exposed in the module's view thus a view override won't do what you need.  Cloning will create a new module with a copy of the code from the starter kit module that was cloned and can then be changed as needed.  
