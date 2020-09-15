@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend a theme to add component overrides
+title: This topic provides an overview of how to override a starter kit components to allow customizations within a theme.
 description: This topic provides an overview of 
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Extend a theme to add component overrides
+# Override a starter kit component in a theme
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ This topic provides an overview of how to override a starter kit components to a
 ## Overview
 The Dynamics 365 Commerce e-Commerce starter kit contains a set of overridable typescript components that are used by various starter kit modules.  These components contain helper APIs called by some starter kit modules that contain business and other logic to help in rendering the appropriate module HTML markup or making server side calls.  If you need to change any logic in a component, the component can be overwritten for a selected theme using the CLI [add-component-override](cli-command-reference.md) command. 
 
-For example if you want to change the logic for strike through pricing, you can look at overriding the **Price** component and make some changes.  Other changes such as [module view overrides](theme-module-extensions.md) can also be used for other changes.  If the component
+For example if you want to change the logic for strike-through pricing, you can look at overriding the **Price** component and make changes.  Other changes such as [module view overrides](theme-module-extensions.md) can also be used for visual changes.  In rare cases, you may need to [clone a module]() to make all the changes you need.  Cloning a module will make a copy of the module.
 
 ## Component list
 To get a list of components you can use the following CLI command. 
