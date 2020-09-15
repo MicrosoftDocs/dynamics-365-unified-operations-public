@@ -78,10 +78,12 @@ Custom theme changes can be made to:
 If deeper changes are needed to a module such as business logic that can't be changed in the module view or component, then a starter kit module can be cloned into a new custom module.  More details are provided below as to which option is best for various requirements.
 
 ### Picking the right store starter kit module customization option
-As listed above, there are many options available to customize a store starter kit module.  It is important to pick the right option for your needs.  For example, if you choose to clone a module, you are making a brand new copy of the module and will no longer get updates to the code if the store starter kit module it was based off of is updated in a future store starter kit release.  You will have to update those modules manually if required.  So cloning should only be used if absolutely necessary.  The below reference should help in picking the right solution for your requirements.
+As listed above, there are many options available to customize a store starter kit module.  It is important to pick the right option for your needs.  
+
+For example, if you choose to clone a module, you are making a brand new copy of the module and will no longer get updates to the code if the store starter kit module it was based off of is updated in a future store starter kit release.  You will have to update those modules manually if required.  So cloning should only be used if absolutely necessary.  The below reference should help in picking the right solution for your requirements.
 
 #### Style changes
-If you have a scenario where a store starter kit module does everything you need but you want to change the module look and feel, this can usually be done with CSS changes.  CSS changes will even allow you to hide unwanted elements in a module if desired.  The site **theme** contains the CSS for all modules in SCSS files.  In some cases you can make CSS changes directly in the site builder tool which would not require any module or theme customizations at all.  The first two options below do not require the use of the Online SDK and are the easiest/fastest way to make CSS changes to a module.
+If you have a scenario where a store starter kit module does everything you need but you want to change the module look and feel, this can usually be done with CSS changes.  CSS changes will even allow you to hide unwanted elements in a module if desired.  The site [theme](theming.md) contains the CSS for all modules in SCSS files.  In some cases you can make CSS changes directly in the site builder tool which would not require any module or theme customizations at all.  The first two options below do not require the use of the Online SDK and are the easiest/fastest way to make CSS changes to a module.
 
 ##### Style presets
 A [style preset](../style-presets.md) is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from site builder. Style presets can be access from with the site builder tool by selecting the **Design** tab.  There are both global and module specific styles that can be modified.  The following image shows the style presets available on **Promo banner** module, notice an example is the modules **Background** color.  When changed the new color will be used for all instances of the module on the site.
@@ -94,7 +96,7 @@ A current limitation is that style changes are globally scoped, meaning that mod
 
 If you are building custom modules, you can expose style presets for site authors to use, see the [Configure theme style presets](theme-style-presets.md) document for more information. 
 
-#### CSS override file
+##### CSS override file
 A [CSS override file](../css-override-files.md) can be uploaded inside of the site builder tool.  This file contains additional CSS to change any style on a page as needed.  When an e-Commerce page is rendered, after the theme module CSS is applied, the overrides file is then applied and will override the specific CSS for that module.  This is great for fast experimentation against the live site and can easily be removed if not needed.
 
 In general, if you can use tools such as a modern browser's HTML/CSS debugging tools, and can modify the CSS to your liking, you can then copy those changes into a single CSS override file. 
