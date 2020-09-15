@@ -3,7 +3,7 @@
 
 title: Footer module 
 description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
-author: anupamar
+author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
