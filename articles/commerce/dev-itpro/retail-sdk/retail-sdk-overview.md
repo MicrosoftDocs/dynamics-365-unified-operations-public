@@ -396,6 +396,11 @@ also use these values during package generation. -->
     $(SdkReferencesPath)\Microsoft.Dynamics.Retail.RetailServerLibrary.dll</RetailServerLibraryPathForProxyGeneration>
 ```
 
+
+![Global values in the BuildTools\Customization.settings file](media/retailsdk07.png)
+
+
+
 The following values are the global values. These values control how the build manages binaries, components, and how packages are named, versioned, and code-signed.
 
 + **AssemblyNamePrefix**
@@ -409,9 +414,6 @@ The following values are the global values. These values control how the build m
 + **AssemblyOriginatorKeyFile**
 + **ModernPOSPackageCertificateKeyFile**
 + **RetailServerLibraryPathForProxyGeneration**
-
-
-![Global values in the BuildTools\Customization.settings file](media/retailsdk07.png)
 
 It's a good practice to sign your assemblies by using a strong name, even though a strong name isn't required. For information about how to create your own key file if you don't already have one, see [How to: Create a public-private key pair](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).
 
