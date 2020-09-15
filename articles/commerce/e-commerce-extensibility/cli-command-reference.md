@@ -45,7 +45,6 @@ yarn msdyn365 {command} {command-arguments}
 For information about each command, see the entries in this topic, or use the **yarn --help** or **yarn msdyn365 {command} --help** command.
 
 
-
 ## add-component-override
 
 **Usage**
@@ -54,9 +53,13 @@ For information about each command, see the entries in this topic, or use the **
 yarn msdyn365 add-component-override <themeName> <componentName> <--list-components>
 ```
 
-This command adds a component to the specified theme component folder.  The component can then be modified as desired.
+This command adds a component to the specified theme component folder.  The component can then be modified as desired. Use the "--list-components" option to see a list of components.
 
-**Example**
+**Examples**
+
+``` bash
+yarn msdyn365 add-component-override --list-components
+```
 
 ``` bash
 yarn msdyn365 add-component-override spring-theme add-to-cart.component
