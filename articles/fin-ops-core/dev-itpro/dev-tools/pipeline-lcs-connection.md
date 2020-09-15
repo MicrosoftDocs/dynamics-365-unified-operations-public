@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create an LCS connection in Azure Pipelines
 
-The [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Microsoft Azure DevOps has several pipeline tasks that let you perform actions in Microsoft Dynamics Lifecycle Services (LCS). For example, you can upload assets, download assets, and service an environment. For the connection with LCS to work, you must set up a new service connection in Azure DevOps. This service connection provides the authentication details that are required to connect to LCS. For more information about service connections in Azure DevOps, see [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops).
+The [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Microsoft Azure DevOps has several pipeline tasks that let you perform actions in Microsoft Dynamics Lifecycle Services (LCS). For example, you can upload assets, download assets, and service an environment. For the connection with LCS to work, you must set up a new service connection in Azure DevOps. This service connection provides the authentication details that are required to connect to LCS. For more information about service connections in Azure DevOps, see [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints).
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
-> Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser).
+> Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](https://docs.microsoft.com/azure/devops/marketplace/install-extension).
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ To enable direct connections from Azure DevOps to LCS on a user's behalf, you mu
 
 ## Create the Dynamics Lifecycle Services service connection
 
-You can create a new service connection either directly from a pipeline task or from your project's settings page. For more information about how to create service connections, see [Create a service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops#create-a-service-connection). In the dialog box for the **Dynamics Lifecycle Services** service connection, provide the following information:
+You can create a new service connection either directly from a pipeline task or from your project's settings page. For more information about how to create service connections, see [Create a service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints#create-a-service-connection). In the dialog box for the **Dynamics Lifecycle Services** service connection, provide the following information:
 
 - **Authentication Endpoint** – The default value works for all Azure AD tenants in the Azure cloud. If your Azure AD is in a national cloud, see [National clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
 - **Lifecycle Services API Endpoint** – Provide the endpoint.
