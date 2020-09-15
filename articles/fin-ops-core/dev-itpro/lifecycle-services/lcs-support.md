@@ -37,49 +37,41 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Task</th>
 <th>More information</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Ask the community.</td>
-<td>Go to the <a href="https://community.dynamics.com/"><span style="color: #0066cc;">Dynamics 365 Community page</span></a> to get help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://community.dynamics.com/">Dynamics 365 Community</a> page to get help with your questions from the Microsoft Dynamics community.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Get help with questions about licensing.</td>
 <td>Contact your partner or a Microsoft sales representative.</td>
 </tr>
-<tr class="even">
-  <td>Use the <strong>Issue search</strong> tool.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use <strong>Issue search</strong> to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
+<tr>
+<td>Use the <strong>Issue search</strong> tool.</td>
+<td>In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed. For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Get in-app support.</td>
-<td>Select the <strong>Help</strong> option (<strong>?</strong>) in the upper-right corner of the app. Select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft.</td>
+<td>Select the <strong>Help</strong> button (<strong>?</strong>) in the upper-right corner of the app, and then select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS. There, admins can determine whether they should provide in-house support or submit the issues to Microsoft.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Open a support ticket with the Microsoft Support team.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, the <strong>Support</strong> tile is a tool that helps you manage support incidents. To submit issues directly to Microsoft, go to the <strong>Support</strong> tile in your LCS project. From there, you can submit issues in two ways:
+<td>In <a href="https://lcs.dynamics.com/">LCS</a>, the <strong>Support</strong> tile opens a tool that helps you manage support incidents. To submit issues directly to Microsoft, select the <strong>Support</strong> tile in your LCS project. You can then submit issues in two ways:
 <ul>
-<li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
-<li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit an incident</strong> and follow the instructions to submit the incident. After you submit the incident, you will receive an email message from the Microsoft Support engineer assigned to your case.</li>
+<li>On the <strong>Active issue</strong> tab, select your issue, and then select <strong>Submit to Microsoft</strong>.</li>
+<li>On the <strong>Submitted to Microsoft</strong> tab, select <strong>Submit an incident</strong>, and then follow the on-screen instructions to submit the incident. After you submit an incident, you will receive an email message from the Microsoft Support engineer who is assigned to your case.</li>
 </ul>
 </td>
 </tr>
-</tr>
-<tr class="even">
+<tr>
 <td>Request new features and functionality.</td>
-<td>Visit <a href="https://experience.dynamics.com/ideas/"><span style="color: #0066cc;">Dynamics 365 Application Ideas</span></a> to view, search, or vote for existing ideas, or to add new ideas.</td>
+<td>Visit <a href="https://experience.dynamics.com/ideas/">Dynamics 365 Application Ideas</a> to view, search, or vote for existing ideas, or to add new ideas.</td>
 </tr>
 </tbody>
 </table>
-
-
-
