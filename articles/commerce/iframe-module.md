@@ -42,6 +42,9 @@ An iframe module provides an iframe (inline frame) that hosts external content o
 
 An iframe module requires a target URL. It then hosts the content of the target page inside an HTML **iframe** element. External URLs must be on the allow list (also known as a "whitelist") per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed by using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
+> [!NOTE]
+> The iframe module is available in the Dynamics 365 Commerce 10.0.13 release.
+
 The following image shows examples of iframe modules that showcase external videos on site pages.
 
 ![Example of iframe modules that showcase external videos](./media/ecommerce-iframe.PNG)
