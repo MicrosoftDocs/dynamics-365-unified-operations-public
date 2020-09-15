@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic provides an overview of how to override a starter kit components to allow customizations within a theme.
 
 ## Overview
-The Dynamics 365 Commerce e-Commerce starter kit contains a set of overridable typescript components that are used by various starter kit modules.  These components contain helper APIs called by some starter kit modules that contain business and other logic to help in rendering the appropriate module HTML markup or making server side calls.  If you need to change any logic in a component, the component can be overwritten for a selected theme using the CLI [add-component-override](cli-command-reference.md) command. 
+The Dynamics 365 Commerce store starter kit contains a set of overridable typescript components that are used by various starter kit modules.  These components contain helper APIs called by some starter kit modules that contain business and other logic to help in rendering the appropriate module HTML markup, handle some events and make some server side calls.  If you need to change any logic in a component, the component can be overwritten for a selected theme using the CLI [add-component-override](cli-command-reference.md) command. 
 
-For example if you want to change the logic for strike-through pricing, you can look at overriding the **Price** component and make changes.  Other changes such as [module view overrides](theme-module-extensions.md) can also be used for visual changes.  In rare cases, you may need to [clone a module]() to make all the changes you need.  Cloning a module will make a copy of the module.
+For example if you want to change the logic for strike-through pricing, you can look at overriding the **Price** component and make changes.  Other changes such as [module view overrides](theme-module-extensions.md) can also be used for visual changes.  In rare cases, you may need to [clone a module](clone-starter-module.md) to make all the changes you need.
 
 ## Component list
 To get a list of components you can use the following CLI command. 
@@ -62,8 +62,9 @@ This component does not make any API calls.
  |
 | PromoCode     | This component is used to apply promotion or discount codes to cart. This works in combination with the cart state present in global state package to apply or remove a promotion in the cart. |
 | Rating        | This component is used to render the HTML to display the product rating across the site. It does not make any API call. This component also handles the click event to update the rating. |
+| SocialMedia | This component is used to render the social media icons for sharing a product on the buybox module. Currently it supports Facebook, LinkedIn, Mail, Pintrest, Twitter.
 | WishListIcon  | This component is used to render the HTML to display the wishlist-icon in the header module. This component handles the click event to navigate to the wishlist  page. |
-| SocialMeida 
+
 
 ## Override a component in a theme
 To override a component in a theme, you can use CLI command ```yarn msdyn365 add-component-override [themeName] [componentName] [--list-components]```.  Once complete you will find a new typescript file under the theme's ```\view\components``` directory.  This file can now be modified as required. 
