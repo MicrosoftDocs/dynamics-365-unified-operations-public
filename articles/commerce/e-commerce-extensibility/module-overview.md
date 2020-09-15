@@ -63,7 +63,7 @@ Using the site builder tool, the following changes can be made:
 
 ### Configuration changes using the online SDK
 Custom theme changes can be made to:
-* [Modify the module CSS](../css-override-files.md)
+* [Modify the module CSS](../css-override-files.md) to change any of the modules styling
 * [Extend a module's view](extend-theme.md) to change the rendered HTML layout
 * [Extend a module's definition file](extend-theme.md) to add or remove configuration fields or data actions
 * [Override a starter kit component](theme-component-override.md). The starter kit contains a set of components that can be overridden
