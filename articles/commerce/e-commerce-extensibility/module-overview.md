@@ -68,7 +68,7 @@ Custom theme changes can be made to:
 * [Extend a module's definition file](extend-theme.md) to add or remove configuration fields or data actions
 * [Override a starter kit component](theme-component-override.md). The starter kit contains a set of components that can be overridden
 
-If deeper changes are needed to a module such as business logic that can't be changed in the modules view or component, then a starter kit module can be cloned into a new custom module.  More details are provided below as to which option is best for various requirements.
+If deeper changes are needed to a module such as business logic that can't be changed in the module view or component, then a starter kit module can be cloned into a new custom module.  More details are provided below as to which option is best for various requirements.
 
 To see how a site builder page builder interacts with modules see the [Work with modules](../work-with-modules.md) document.
 
