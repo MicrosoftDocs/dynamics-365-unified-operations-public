@@ -37,7 +37,7 @@ This topic provides an overview of the Retail software development kit (SDK). Mi
 
 ## Retail SDK overview
 
-The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image show the relationship between the development environment and the cloud components.
+The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
 
 ![Commerce components](media/developer-environment.png)
 
