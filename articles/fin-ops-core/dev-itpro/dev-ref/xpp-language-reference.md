@@ -20,8 +20,7 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 72181
-ms.assetid: fe5d3cdd-8b3d-4967-98a2-dadada18a421
+ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -36,25 +35,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 X++ is an object-oriented, application-aware, and data-aware programming language used in enterprise resource planning (ERP) programming and in database applications. It provides system classes for a broad range of system programming areas, highlighted in the following table.
 
-| X++ language attributes | Description |
+| X++ language feature | Description |
 |-----|-----|
-| **Classes**                 | In addition to system classes, there are also application classes for managing many types of business processes. Reflection on classes is supported.            |
-| **Tables**                  | X++ programmers can access the relational tables. X++ includes keywords that match most of the keywords in standard SQL. Reflection on tables is supported. |
-| **User interface**          | Manipulation of user interface items, such as forms and reports.|
-| **Best practice checks**    | X++ code is checked for syntax errors during compile time. The compile process also performs best practice checks. Violations of best practices can generate compiler messages.|
-| **Garbage collection**      | The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused. |
-| **Interoperability**        | Interoperability between classes written in X++ and in C\# (or other .NET Framework languages) is supported.                                                       |
-| **File manipulation**       | File input and output is supported, including XML building and parsing. |
-| **Collections**             | Dynamic arrays are supported and the X++ includes several collection objects.|
+| Classes              | In addition to system classes, there are also application classes for managing many types of business processes. Reflection on classes is supported. |
+| Tables               | X++ programmers can access the relational tables. X++ includes keywords that match most of the keywords in standard SQL. Reflection on tables is supported. |
+| User interface       | Manipulation of user interface items, such as forms and reports.|
+| Best practice checks | X++ code is checked for syntax errors during compile time. The compile process also performs best practice checks. Violations of best practices can generate compiler messages.|
+| Garbage collection   | The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused. |
+| Interoperability     | Interoperability between classes written in X++ and in C\# (or other .NET Framework languages) is supported.                                      |
+| File manipulation    | File input and output is supported, including XML building and parsing. |
+| Collections          | Dynamic arrays are supported and the X++ includes several collection objects.|
 
 The X++ language programming guide is divided into these sections: 
-+ [X++ attribute classes](xpp-attribute-classes.md) 
-+ [X++ classes and methods](xpp-classes-methods.md) 
-+ [X++ data selection and manipulation](xpp-data-query.md) 
-+ [X++ macros](xpp-macros.md) 
-+ [X++ operators](xpp-operators.md) 
-+ [X++ statements and loops](xpp-statements-loops.md)
-+ [X++ variables and data types](xpp-variables-data-types.md)
+
++ [Variables and data types](xpp-variables-data-types.md)
++ [Statements, loops, and exception handling](xpp-conditional.md)
++ [Operators](xpp-operators.md) 
++ [Classes and methods](xpp-classes-methods.md) 
++ [Data selection and manipulation](xpp-data/xpp-data-home-page.md)
++ [Macros](xpp-macros.md) 
++ [Attribute classes](xpp-attribute-classes.md) 
 
 ## Additional resources
 + [X++ Syntax](xpp-syntax.md)

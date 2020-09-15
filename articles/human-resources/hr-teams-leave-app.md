@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -87,11 +87,11 @@ You can ask the bot to:
 
    ![Human Resources Teams leave app request leave](./media/hr-teams-leave-app-bot-request.png)
  
-After you start a leave request, you can adjust the days right within the card, or you can select **Edit details** to add additional information to your request.
+After you start a leave request, you can adjust the days right within the card.
 
 ![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
  
-When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+When you're done entering information, select **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
 
 ![Human Resources Teams leave app submit request](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -135,15 +135,43 @@ The **Time off** tab allows you to view:
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
+### Teams notifications
+
+When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+
+If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
+
+![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
+
+## View your team's leave calendar
+
+If you're a manager with direct reports, you can view your team's approved and pending time off.
+
+1. In the Human Resources app in Teams, select **Time off**.
+
+2. Select **Team calendar**.
+
+   ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
+
+The calendar displays your direct reports' approved and pending time off.
+
+![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+
 ## Privacy notice
 
-With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/) which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
+### Microsoft Language Understanding Intelligent Service (LUIS)
+
+With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/), which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
 
 By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input,  which results in an enhanced conversational user experience. The LUIS service and Azure bot framework may have varying levels of compliance compared to Dynamics 365 Human Resources. While the LUIS service has access to only the user queries and is not designed to be connected to the user’s Dynamics 365 Human Resources data or account, a user of the Dynamics 365 Human Resources bot could voluntarily enter a query containing Customer Data, Personal Data, or other data and such query content could get sent to the LUIS service and the Azure bot framework. 
 
 The content of user’s queries and messages is retained in LUIS system for a maximum of 30 days, is encrypted at rest, and is not used for training or service improvement. Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/). 
+To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).
+
+### Microsoft Azure Event Grid and Microsoft Teams
+
+When using the notifications feature for the Dynamics 365 Human Resources app in Teams, certain customer data will flow outside of the geographic region where your tenant’s Human Resources service is deployed. Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored for up to 24 hours and processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements.
 
 ## See also
 

@@ -55,7 +55,7 @@ Like most containers, a footer module supports properties for the heading and th
 ## Create a footer module
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New page fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
+1. In the **New fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.
 1. In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.
@@ -72,7 +72,7 @@ To help guarantee that a header appears on every page, follow these steps on eve
 1. In the **Footer** slot of the **Default page** module, add the footer fragment that you created.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
 
-By adding the page fragment to page templates, you help guarantee that the footer is rendered on every page.
+By adding the fragment to page templates, you help guarantee that the footer is rendered on every page.
 
 ## Additional resources
 
