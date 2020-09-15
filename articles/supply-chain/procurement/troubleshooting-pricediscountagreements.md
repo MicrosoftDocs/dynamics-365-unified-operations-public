@@ -82,12 +82,18 @@ Customization as extension could be considered so that the due date and the rela
 ## Unit price in purchase order is not calculated based on UOM conversion
 Trade agreement Prices are not recalculated according to unit conversion definitions when a unit is changed on a purchase order.
 
+**Resolution**
 Price is always obtained from trade agreements (or other price settings in the system e.g. sales agreements; item price) and the price is set for a Unit. 
 
-If the unit is changed on an order line then the system will look for a price for that particular unit and apply that price; if no price is found for the unit it will not apply the price. The unit conversion cannot be used to recalculate the price into an other unit. Theoretically, it could be that the price is different for a box with 10 than 10xthe price of 1.
+If the unit is changed on an order line, then the system will look for a price for that particular unit and apply that price; if no price is found for the unit it will not apply the price. The unit conversion cannot be used to recalculate the price into an other unit. Theoretically, it could be that the price is different for a box with 10 than 10xthe price of 1.
 
 **Workaround**
 A way to overcome this is to make sure that there are trade agreements for the particular units that are expected to be used on order lines for the item.
+
+## Currency conversion issues with trade agreements
+Trade agreement Prices are not recalculated according to currency when the currency is different on a purchase order.
+
+We have a feature called 'Generic currency' that'll let you define prices and discounts in only one currency and then convert to other currencies on the fly. Furthermore, after conversion, the feature can automatically apply the genius 'Smart rounding'.  
 
 ## When opening the Purchase agreement form in a line view mode, it is not possible to personalize the screen to add the Price unit field in the overview of the line.
 Certain shared fields in the agreement framework cannot be included in personalization as requested. This is due to the implemented datamodel. Hence, the price unit field cannot be personalized.
