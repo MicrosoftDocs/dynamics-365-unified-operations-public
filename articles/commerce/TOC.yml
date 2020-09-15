@@ -1976,7 +1976,7 @@
           items:
           - name: Create a new module
             href: e-commerce-extensibility/create-new-module.md 
-          - name: Clone a starter kit module
+          - name: Clone a module library module
             href: e-commerce-extensibility/clone-starter-module.md
           - name: Add module configuration fields
             href: e-commerce-extensibility/add-module-config-fields.md
