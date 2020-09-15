@@ -76,18 +76,6 @@ This field does not exist on the SalesOrderHeaderV2Entity.
 ## Need to delete orphaned sales order records
 If the system ended up with orphaned sales order records and those need to be cleaned up, use the 'Sales Order Deletion Periodic Jobs' to achieve that. It can be accessed from  Sales and marketing > Periodic > Clean Up Or Retail and commerce > Retail and commerce IT > Clean Up
 
-## Broker claim is not calculating negative amount
-When a broker contract is setup with a Percent Category and a Charges value that is negative, broker claim is not negative when calculated.
- 
-**Scenario** 
- 1. Create and approve a broker contract which is approved with a negative charge amount. 
- 2. Create a sales order for a customer that will be applicable to the contract. Invoice it.
- 3. Go to Broker claims and review the Approving amount calculated. 
- 4. It should have been calculated as a negative number, but it is a positive number.
-
-**Resolution**
-Broker claims with negative broker charge amount is not supported and hence the approving amount is always calculated as a positive number.
-
 ## Is there a way of calculating commissions on already posted invoices?
 If commissions need to be calculated for posted invoices, that is not supported currently. 
 
@@ -108,7 +96,6 @@ Variant 2:
 
 **Resolution**
 Bundle item is not available for the purchase order, because if you check the sales order lines for the bundle item, the quantity will be 0 and status = Cancelled. This is by design. The sales order is not buying the Bundle item but only its components. If you need to buy a bundle, consider whether you need to mark it as Bundle item, as it is designed for Revenue recognition scenarios. For details on bundle items, see (here)[https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-setup#bundles].
-
 
 ## Additional resources
 
