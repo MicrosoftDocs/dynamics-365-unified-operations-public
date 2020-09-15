@@ -81,4 +81,24 @@ The status of the configuration is updated to **Share**, and the configuration i
 - Import it into your Dynamics 365 instance. For more information, see [(ER) Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Share it with a third party or an external organization, see [RCS Share Electronic reporting (ER) configurations with external organizations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
 
-![Derived Intrastat Contoso configuration version in the Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Derived Intrastat Contoso configuration version in the Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+
+## Delete a configuration from the Global repository
+You can delete a configuration that your organization has created, by using the following steps: 
+1.	Check your configuration provider is **Active**. For more information see prerequisites above.
+2.	Click **repository** on your active configuration provider.
+3.	Select repository type **Global** and click **Open**.
+4.	Find the configuration that you want to delete by using the **Filter** functionality.
+5.	Select the version of the configuration that you want to delete and click **Delete**:
+
+    ![Delete configuration from global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Delete_from_GlobalRepo.JPG)
+
+6.	In the confirmation message box select **Yes**.
+
+    ![Delete configuration version confirmation message](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+7.	The configuration version is deleted, and confirmation message is shown. 
+
+> [!NOTE]
+> Configurations can only be deleted by the Configuration provider that created them. If the configuration has been shared with another organization that configuration/version will need to be unshared prior to deletion.
+ 
