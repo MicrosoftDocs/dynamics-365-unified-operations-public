@@ -5,7 +5,7 @@ title: Architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
