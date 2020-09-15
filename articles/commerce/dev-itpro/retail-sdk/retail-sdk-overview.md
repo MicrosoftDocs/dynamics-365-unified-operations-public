@@ -394,7 +394,7 @@ also use these values during package generation. -->
 
 <RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''">
     $(SdkReferencesPath)\Microsoft.Dynamics.Retail.RetailServerLibrary.dll</RetailServerLibraryPathForProxyGeneration>
-```xml
+```
 
 The following values are the global values. These values control how the build manages binaries, components, and how packages are named, versioned, and code-signed.
 
