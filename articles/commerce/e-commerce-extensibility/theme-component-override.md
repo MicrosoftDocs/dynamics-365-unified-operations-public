@@ -32,24 +32,38 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of ..
+This topic provides an overview of how to override a starter kit components to allow customizations within a theme.
 
 ## Overview
-The Dynamics 365 Commerce e-Commerce starter kit contains a set of typescript components that are used by the starter kit modules.  These components contain helper APIs called by the starter kit modules that contain business and other logic to help in rendering the appropriate module HTML markup.  If you need to change any logic in a comonent, they can be overwritten for a selected theme using the CLI [add-component-override](cli.md) command.
+The Dynamics 365 Commerce e-Commerce starter kit contains a set of overridable typescript components that are used by various starter kit modules.  These components contain helper APIs called by some starter kit modules that contain business and other logic to help in rendering the appropriate module HTML markup or making server side calls.  If you need to change any logic in a component, the component can be overwritten for a selected theme using the CLI [add-component-override](cli-command-reference.md) command. 
 
-Components can be found under the "\node_modules\@msdyn365-commerce\components\src\add-to-cart" inside the installed Online SDK directory.
+For example if you want to change the logic for strike through pricing, you can look at overriding the **Price** component and make some changes.  Other changes such as [module view overrides](theme-module-extensions.md) can also be used for other changes.  If the component
 
 ## Component list
-The following is a list of components includes as part of the store starter kit.  The below list may differ based on the version of the store starter kit being used.
+To get a list of components you can use the following CLI command. 
 
+```bash
+yarn msdyn365 add-component-override --list-components
+```
+
+Component source code can be found under the "\node_modules\@msdyn365-commerce\components\src\" inside the installed Online SDK directory.  You may want to browse the source code to see what options are available within each component.
+
+The following is a list of components includes as part of the store starter kit.  The list may differ based on the version of the store starter kit being used.
 
 | Component                 | Description                                                           |
 |---------------------------|-----------------------------------------------------------------------|
-| add-to-cart.component.tsx | temp description |
-| add-to-cart.test.tsx      | temp description |
+| AddToCart     | temp description |
+| AddToWishlist | temp description |
+| CartIcon      | temp description |
+| CartLineItem  | temp description |
+| Price         | temp description |
+| Product       | temp description |
+| PromoCode     | temp description |
+| Rating        | temp description |
+| WishListIcon  | temp description |
 
 ## Override a component in a theme
-To override a component in a theme, you can use CLI command ```yarn msdyn365 add-component-override [themeName] [componentName] [--list-components]```.
+To override a component in a theme, you can use CLI command ```yarn msdyn365 add-component-override [themeName] [componentName] [--list-components]```.  Once complete you will find a new typescript file under the theme's ```\view\components``` directory.  This file can now be modified as required. 
 
 ### Example
 ```yarn msdyn365 add-component-override spring add-to-cart```
