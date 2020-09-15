@@ -83,9 +83,9 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 > [!IMPORTANT]
 > The **add to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
 
-    ![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
+![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Commerce Scale Unit interaction
 
