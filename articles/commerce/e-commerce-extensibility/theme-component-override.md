@@ -57,14 +57,11 @@ The following is a list of components includes as part of the store starter kit.
 | CartIcon      | This component is used to render the HTML to display the cart-icon in the header module. The cart-icon component will navigate to the cart page on click.  The store starter kit also has a cart-icon module apart from this component. If the cart-icon module is not configured in header, then this component is used as a fall back. |
 | CartLineItem  | This component is used to render the HTML to display a single cart line item. It consists of product image, product configuration selected in buybox, product quantity, product price with discounts.  |
 | Price         | This component is used to render the HTML to display the product price across the site in the correct formatting. It does not make any API call. |
-| Product       | This component is used to render the HTML to display the products in a card format across the site. It consists of product image, title, description, price and rating.
-This component does not make any API calls.
- |
+| Product       | This component is used to render the HTML to display the products in a card format across the site. It consists of product image, title, description, price and rating. |
 | PromoCode     | This component is used to apply promotion or discount codes to cart. This works in combination with the cart state present in global state package to apply or remove a promotion in the cart. |
 | Rating        | This component is used to render the HTML to display the product rating across the site. It does not make any API call. This component also handles the click event to update the rating. |
 | SocialMedia | This component is used to render the social media icons for sharing a product on the buybox module. Currently it supports Facebook, LinkedIn, Mail, Pintrest, Twitter.
 | WishListIcon  | This component is used to render the HTML to display the wishlist-icon in the header module. This component handles the click event to navigate to the wishlist  page. |
-
 
 ## Override a component in a theme
 To override a component in a theme, you can use CLI command ```yarn msdyn365 add-component-override [themeName] [componentName] [--list-components]```.  Once complete you will find a new typescript file under the theme's ```\view\components``` directory.  This file can now be modified as required. 
