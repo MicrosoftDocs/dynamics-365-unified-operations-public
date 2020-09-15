@@ -5,7 +5,7 @@ title: Multiple LCS projects and production environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/07/2018
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ Every LCS Implementation project that runs on the same Azure AD tenant must sati
 
 Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
 
-Users who access multiple environments in parallel must be licensed separately for each environment. For more licensing information, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be documented outside the system. For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 ## Disadvantages of multiple LCS projects
 

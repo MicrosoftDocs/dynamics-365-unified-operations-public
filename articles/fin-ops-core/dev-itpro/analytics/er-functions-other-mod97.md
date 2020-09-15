@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="MOD_97">MOD_97 ER function</a>
+# MOD_97 ER function
 
 [!include [banner](../includes/banner.md)]
 

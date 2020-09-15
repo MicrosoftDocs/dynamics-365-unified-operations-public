@@ -5,7 +5,7 @@ title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/22/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -203,9 +203,6 @@ Export is the process of retrieving data from a system using data entities. The 
 
 After the project is created and saved you can export the project to create a job. During the export process, you can see a graphical view of the status of the job and the record count. This view shows multiple records so you can review the status of each record prior to downloading the actual files.
 
-- While importing the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
-- If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
-
 [![Execution summary](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
 
 [![Record counts](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
@@ -261,10 +258,6 @@ During data entity import:
 - If data entities fail (shown with a red X or yellow triangle icon on the data entity tile) after you click **Import**, click **View staging data** on each tile under the **Execution summary** page to review the errors. Sort and scroll through the records with Transfer status = Error to display the errors in the Message section. Download the staging table. Fix a record (or all records) directly in staging by clicking **Edit, Validate all, and Copy data to target**, or fix the import file (not staging file) and reimport the data.
 - If data entities fail (shown with a red x or yellow triangle icon on the data entity tile) after you click **Import**, and **View staging data** shows no data, go back to the **Execution summary** page. Go to **View execution log**, select the data entity, and review the **Log text, Staging log details, and Infolog** for more information. **Staging log details** will display **Error column** (field) details and **Log description** will describe errors in detail.
 - If data entities fail, you can check the import file to see if there's an extra line in the file with text which displays, "This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters. By default, an Excel destination component will not support more than 255 characters. The default type of Excel will be set based on the first few rows". This line is added during data export. If this line exists, delete this line, re-package the data entity, and try to import.
-
-### Troubleshooting the System users entity
-- When you import the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
-- If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 ## Features flighted in data management and enabling flighted features
 The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. 

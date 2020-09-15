@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# <a name="ScreenDestinationType">Screen destination</a>
+# Screen destination
 
 [!include [banner](../includes/banner.md)]
 

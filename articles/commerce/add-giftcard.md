@@ -5,7 +5,7 @@ title: Gift card module
 description: This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,14 +31,18 @@ ms.dyn365.ops.version: Release 10.0.5
 # Gift card module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Gift cards are a common form of payment, and the gift card module can be used in a checkout module to accept gift cards. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider.
+Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
 
-For more information on support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md)
+There are two gift card modules available:
+
+- **Gift card** - This module can be used on a checkout page to redeem a gift card as tender. 
+- **Gift card balance check** - This module can be used on any page to check the balance on a gift card. This module is available in Commerce release 10.0.14 and later.
 
 The following image shows an example of a gift card module on a checkout page.
 
@@ -67,8 +71,18 @@ For instructions on how to add a gift card module to a checkout page and set the
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Cart module](add-cart-module.md)
+
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
+
+[Payment module](payment-module.md)
+
+[Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
 
 [Support for external gift cards](./dev-itpro/gift-card.md)

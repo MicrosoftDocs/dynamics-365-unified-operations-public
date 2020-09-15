@@ -83,7 +83,7 @@ If you are also using the Field Service solution, make sure to re-enable the **Q
 
 Sales orders can be created in either Sales or Supply Chain Management. If you create a sales order in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a sales order in Supply Chain Management, it's synced to Sales in real time. Note the following points:
 
-+ You can activate and sync orders from Sales only if all the products on the order come from Finance and Operations apps. Therefore, there can be no write-in products.
++ Write-in products on Dynamics 365 Sales will appear as product categories in Dynamics 365 Supply Chain Management.
 + Discount calculation and rounding:
 
     - The discount calculation model in Sales differs from the discount calculation model in Supply Chain Management. In Supply Chain Management, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synced to Sales. To help ensure that the full discount amount from a sales line in Supply Chain Management is correctly synced to Sales, the full amount must be synced without being divided by the line quantity. Therefore, you must define the discount calculation method as **Line item** in Sales.

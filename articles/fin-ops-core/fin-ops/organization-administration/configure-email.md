@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -108,7 +108,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. On-premises Exchange servers are currently not supported for the **Exchange** mail provider. |
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 

@@ -231,7 +231,7 @@ When you use this approach, the **Operation relations** page becomes your primar
 If you don't specify an operations resource or resource group as part of the resource requirements for an operation, the applicable resources might operate at different speeds. Therefore, the time that is required in order to process an operation might vary. To resolve this issue, you can use the **Formula** field on the operation relation to specify how the process time is calculated. The following options are available:
 
 - **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
-- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. This value is multiplied by the order quantity and the **Factor** value from the operation relation.
+- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**.
 - **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
 - **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 

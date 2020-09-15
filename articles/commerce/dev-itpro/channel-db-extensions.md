@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Headquarters (HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
-In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Finance and Operations, and Dynamics 365 Commerce.
+In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 Finance and Commerce.
 
 Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions.
 
@@ -47,9 +47,7 @@ We have made some improvements to how extensions are handled during an upgrade. 
 
 ## Ext schema
 
-In Finance and Operations and Commerce we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Operations and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
-
-We introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Commerce and Finance and Operations, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
+In Finance and Commerce there is a now schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions will not have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition. 
 
 > [!NOTE]
 > If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Changes will not be automatically pushed to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
@@ -103,6 +101,7 @@ END;
 - Don't use any of the crt, ax or dbo schema data types in ext schema. Create custom types in ext schema and use it.
 - Don’t modify any views, procedures, functions, or any of the database artifacts.
 - Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+- Don't access any dbo.objects from extension scripts because dbo schema objects will not be available in Commerce scale unit deployments.
 
 
 ```sql
