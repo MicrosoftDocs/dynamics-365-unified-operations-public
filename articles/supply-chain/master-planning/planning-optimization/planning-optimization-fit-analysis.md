@@ -5,7 +5,7 @@ title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/07/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,8 +56,8 @@ The following table shows the various results that can be shown after a fit anal
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
-| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is pending. Currently, actions aren't generated during master planning when Planning Optimization is enabled, regardless of this setting. The main purpose of actions is to suggest changes to existing orders. Evaluate if actions are actively applied as part of your business processes or if e.g. delay information is sufficient. | October 2021 |
-| Base calendars | Calendars using base calendar: _\#_ | This feature is pending. Currently, the base calendar is ignored when Planning Optimization is enabled. Evaluate if based calendar is needed for your business processes or if setup directly in calendars is sufficient. | April 2021 | 
+| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is pending. Currently, actions aren't generated during master planning when Planning Optimization is enabled, regardless of this setting. The main purpose of actions is to suggest changes to existing orders. Evaluate if actions are actively applied as part of your business processes or if a delay in the information is sufficient. | October 2021 |
+| Base calendars | Calendars using base calendar: _\#_ | This feature is pending. Currently, the base calendar is ignored when Planning Optimization is enabled. Evaluate if the base calendar is needed for your business processes or if direct setup in calendars is sufficient. | April 2021 | 
 | Batch disposition codes | Non-nettable batch disposition masters: _\#_ | This feature is pending. Currently, batch disposition codes are ignored when Planning Optimization is enabled. | October 2021 |
 | Capable to promise (CTP) | Default order settings with delivery date control set to CTP: _\#_ | This feature is pending. Currently, CTP is ignored when Planning Optimization is enabled, regardless of this setting. | October 2021 |
 | Copy static to dynamic plan | Copy of static to dynamic plan is enabled on the master planning parameters. | Planning Optimization doesn't copy the static plan to the dynamic plan, regardless of this setting. In general, this concept is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. | October 2021 |
@@ -80,7 +80,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOM/formula lines with formula measurement: _\#_ | This feature is pending. Currently, formula measurement is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | October 2021 |
 | Production | BOM/formula lines with item substitution (plan groups): _\#_ | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | October 2021 |
 | Production | BOM/formula lines with negative quantity: _\#_ | This feature is pending. BOM and formula lines that have negative quantity will be included with a quantity of 0 (zero) and a warning will be issued when Planning Optimization is enabled. Update master data to avoid warnings. | October 2021 |
-| Production | BOM/formula lines with resource consumption: _\#_ | This feature is pending. Currently, BOM and formula lines that have resource consumption are ignored when Planning Optimization is enabled. Until supported material requirement will be set to the production start date. | April 2021 |
+| Production | BOM/formula lines with resource consumption: _\#_ | This feature is pending. Currently, BOM and formula lines that have resource consumption are ignored when Planning Optimization is enabled. When this feature is supported, the material requirement will be set to the production start date. | April 2021 |
 | Production | BOM/formula lines with step consumption: _\#_ | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | October 2021 |
 | Production | BOMs with constant scrap or variable scrap defined: _\#_ | This feature is pending. Currently, constant scrap and variable scrap that are defined on BOMs are ignored when Planning Optimization is enabled. | October 2021 |
 | Production | BOMs with subcontracting: _\#_ | This feature is pending. Currently, the subcontracting setup on BOMs is ignored when Planning Optimization is enabled, regardless of this setting. | October 2021 |
