@@ -33,22 +33,22 @@ ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides an overview of the Retail software development kit (SDK). The Microsoft Dynamics 365 Commerce platform provides a rich SDK that developers can use to customize and add new features to the product. The multi-tier architecture of the Commerce platform provides simplified options for customizing and extending the client, business logic, and data layers independently of each other. The Retail SDK includes libraries, NuGet packages, a point of sale (POS) application, code samples, templates, and tools. You can use it to create extensions apps, add features, and change existing functionality of Commerce.
+This topic provides an overview of the Retail software development kit (SDK). Microsoft Dynamics 365 Commerce provides a rich SDK that developers can use to customize and add new features to the product. The multi-tier architecture of the Dynamics 365 Commerce provides simplified options for customizing and extending the client, business logic, and data layers independently of each other. The Retail SDK includes libraries, NuGet packages, a point of sale (POS) application, code samples, templates, and tools. You can use it to create extensions apps, add features, and change existing functionality of Commerce.
 
 ## Retail SDK overview
 
-The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation.
+The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image show the relationship between the development environment and the cloud components.
+
+![Commerce components](media/developer-environment.png)
 
 > [!NOTE]
 > The Retail SDK supports the Transport Layer Security (TLS) 1.2 standard. Any customization that you build by using the Retail SDK should follow the TLS 1.2 standard.
-
-![Commerce components](media/developer-environment.png)
 
 ## Download the Retail SDK
 
 The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../dev-itpro/deployment/apply-deployable-package-system.md).
 
-To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the hotfix inside the K:\\RetailSDK\\Update folder.
+To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the SDK inside the K:\\RetailSDK\\Update folder.
 
 If the current version of the Retail SDK contains extensions, the configuration files and extension projects must be merged from the previous version of the SDK to the new version after an upgrade. This merge is required only if your previous version of the SDK includes extensions, and those extensions must be migrated to the new version. For more information and detailed instructions, see [Upgrade the Retail channel extension to the latest Retail SDK](../RetailSDK-update.md). We recommend that you integrate the SDK with a source control system such as Git or Azure.
 
@@ -112,7 +112,7 @@ The following table shows the folders that the Retail SDK contains to help with 
 </tr>
 <tr>
 <td>BuildTools</td>
-<td>This folder contains scripts, sample cert, and a Customization.settings (packaging metadata) file. Don't change any files in this folder, except Customization.settings.
+<td>This folder contains scripts, sample certificates, and a Customization.settings (packaging metadata) file. Don't change any files in this folder, except Customization.settings.
 </td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@ The following table shows the folders that the Retail SDK contains to help with 
 </tr>
 <tr>
 <td>Packages</td>
-<td>The out Retail deployable package that is generated after the SDK build for packaging will be copied to this folder (Packages\RetailDeployablePackage). The Retail deployable package is deployed to different environments (test, sandbox, and production) by using LCS.</td>
+<td>The Retail deployable package that is generated after the SDK build for packaging will be copied to this folder (Packages\RetailDeployablePackage). The Retail deployable package is deployed to different environments (test, sandbox, and production) by using LCS.</td>
 </tr>
 <td>PaymentExternals</td>
 <td>Extension payment assemblies must be copied. The following three subfolders hold various payment files:
@@ -143,7 +143,7 @@ The following table shows the folders that the Retail SDK contains to help with 
 </tr>
 <tr>
 <td>Payments</td>
-<td>The folder contains the sample Payment Connector project for e-Commerce.</td>
+<td>The folder contains the sample Payment Connector project for E-Commerce Add-in for Dynamics 365 Commerce.</td>
 </tr>
 <tr>
 <td>pkgs</td>
@@ -179,7 +179,7 @@ The following table shows the folders that the Retail SDK contains to help with 
 <li><strong>RetailServer</strong> – Sample Retail server extension projects.</li>
 <li><strong>SampleExtensionsTest</strong> – The sample project for creating an extension test project.</li>
 <li><strong>ShoppingApp</strong> – The sample mobile app (Retailer shopping app) for users in Android and iOS.</li>
-<li><strong>TypeScriptProxy</strong> – Sample Proxy projects that show how to generate TypeScript for the POS.</li>
+<li><strong>TypeScriptProxy</strong> – Sample proxy projects that show how to generate TypeScript for the POS.</li>
 </ul>
 </td>
 </tr>
@@ -326,7 +326,7 @@ The following tables provide information about the components in the Retail SDK 
 </tbody>
 </table>
 
-### Payment
+### Payment connector
 
 <table>
 <tbody>
@@ -371,7 +371,45 @@ You should build all the extensions and required out-of-box projects. ([Use MSBu
 
 For Modern POS, create an app package signing certificate to build correctly, or use Cloud POS. For information about how to create a PFX file, see [Create a certificate for package signing](https://docs.microsoft.com/windows/msix/package/create-certificate-package-signing). Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name by using the **ModernPOSPackageCertificateKeyFile** element.
 
-The BuildTools\\Customization.settings file holds most of the configuration values for the Retail SDK. The highlighted values in the following illustration are the global values. These values control how the build is managed for binaries, components, and packages are named, versioned, and code-signed.
+The BuildTools\\Customization.settings file holds most of the configuration values for the Retail SDK. 
+
+```xml
+<!-- This section is for global settings and code signing. Any build file will inherit these values if applicable.
+also use these values during package generation. -->
+<AssemblyNamePrefix>MyCompany</AssemblyNamePrefix>
+<CustomAssemblyVersion Condition="'$(CustomAssemblyVersion)' == ''">1.0.0.0</CustomAssemblyVersion>
+<CustomVersion Condition="'$(CustomVersion)' == ''">1.0.0.1</CustomVersion>
+<CustomName Condition="'$(CustomName)' == ''">MyCompany Retail Customization</CustomName>
+<CustomDescription Condition="'$(CustomDescription)' == ''">MyCompany Retail Customization</CustomDescription>
+<CustomPublisher Condition="'$(CustomPublisher)' == ''">MyCompany Ltd.</CustomPublisher>
+<CustomCopyright Condition="'$(CustomCopyright)' == ''">MyCompany (c) 2015</CustomCopyright>
+
+<SignAssembly Condition="'$(SignAssembly)' == ''">true</SignAssembly>
+<DelaySign Condition="'$(DelaySign)' == ''">false</DelaySign>
+<AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == '' and '$(SignAssembly)' == 'true'">
+    $(MSBuildThisFileDirectory)\StrongNameSigningCert-Contoso.snk</AssemblyOriginatorKeyFile>
+
+<ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' == ''">
+    $(MSBuildThisFileDirectory)\ModernPOSAppxSigningCert-Contoso.pfx</ModernPOSPackageCertificateKeyFile>
+
+<RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''">
+    $(SdkReferencesPath)\Microsoft.Dynamics.Retail.RetailServerLibrary.dll</RetailServerLibraryPathForProxyGeneration>
+```xml
+
+The following values are the global values. These values control how the build manages binaries, components, and how packages are named, versioned, and code-signed.
+
++ **AssemblyNamePrefix**
++ **CustomAssemblyVersion**
++ **CustomVersion**
++ **CustomName**
++ **CustomDescription**
++ **CustomPublisher**
++ **CustomCopyright**
++ **SignAssembly**
++ **AssemblyOriginatorKeyFile**
++ **ModernPOSPackageCertificateKeyFile**
++ **RetailServerLibraryPathForProxyGeneration**
+
 
 ![Global values in the BuildTools\Customization.settings file](media/retailsdk07.png)
 
@@ -415,7 +453,7 @@ A good Application Lifecycle Management (ALM) solution provides version control,
 
 ### Branching and versioning
 
-To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops).
+To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance).
 
 ![Branching and merging](media/retailsdk12.png)
 
@@ -425,6 +463,6 @@ It's important to emphasize that the non-customized Retail SDK should be stored 
 
 ### Customization branch
 
-For development, a new customization branch should be created. At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. It's the branch that will be used for the team's development. The version of the customization branch must be incremented at least every time that a build is created for testing. It can even be incremented every day. The file version to increment is defined by using the **CustomVersion** property in the Customization.setting file. If you update it and rebuild, all binaries, packages, and manifest files are updated accordingly.
+For development, a new customization branch should be created. At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. It's the branch that will be used for the team's development. The version of the customization branch must be incremented at least every time that a build is created for testing. It can even be incremented every day. The file version to increment is defined by using the **CustomVersion** property in the Customization.setting file. If you update the version and rebuild, all binaries, packages, and manifest files are updated accordingly.
 
 The **CustomAssemblyVersion** property should be updated only when the update isn't backward-compatible and/or for major new releases. In other words, you should rarely update this property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on Microsoft version 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you either increment the version or create a source control label.
