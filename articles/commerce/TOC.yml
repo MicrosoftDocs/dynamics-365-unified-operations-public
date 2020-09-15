@@ -956,9 +956,9 @@
           href: add-privacy-page.md
         - name: Replace user IDs associated with tracked content changes
           href: replace-IDs-tracked-changes.md
-      - name: Starter kit
+      - name: Module library
         items: 
-        - name: Starter kit overview
+        - name: Module library overview
           href: starter-kit-overview.md
         - name: Container modules
           items:
@@ -2070,7 +2070,7 @@
           items:
           - name: Package configurations and deploy them to an online environment
             href: e-commerce-extensibility/package-deploy.md
-          - name: SDK and store starter kit updates
+          - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
       - name: Retail SDK
         items:
