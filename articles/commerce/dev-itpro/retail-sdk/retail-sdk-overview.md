@@ -396,11 +396,6 @@ also use these values during package generation. -->
     $(SdkReferencesPath)\Microsoft.Dynamics.Retail.RetailServerLibrary.dll</RetailServerLibraryPathForProxyGeneration>
 ```
 
-
-![Global values in the BuildTools\Customization.settings file](media/retailsdk07.png)
-
-
-
 The following values are the global values. These values control how the build manages binaries, components, and how packages are named, versioned, and code-signed.
 
 + **AssemblyNamePrefix**
