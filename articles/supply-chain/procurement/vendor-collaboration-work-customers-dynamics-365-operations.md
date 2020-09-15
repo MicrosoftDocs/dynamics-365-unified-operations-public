@@ -110,13 +110,13 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
     If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case.
 
-    Enhance the accissibility of the Open published requests for quotation link, which is currently located on the far righthand side of the vendor bidding workspace, by enabling the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to an easily discoverable tile and moves it to a prominent location.
+    Enhance the accessibility of the Open published requests for quotation link, which is currently located on the far right-hand side of the vendor bidding workspace, by enabling the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to an easily discoverable tile and moves it to a prominent location.
 
 - Select the **Closed published requests for quotations** link to see a list of closed RFQs that are available to the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
 
     A closed RFQ shows all vendor bids down to the line level. As bids are awarded or rejected, this information is reflected in the closed RFQ. Any attachments that are included in the bid are also available.
 
-**Note:** This functionality is only available if the Public sector cofiguration is enabled.
+**Note:** This functionality is only available if the Public sector configuration is enabled.
 
 ### Bidding
 
