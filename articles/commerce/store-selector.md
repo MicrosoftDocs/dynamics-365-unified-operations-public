@@ -69,7 +69,7 @@ For this scenario to work, products should be configured so that the **pickup** 
 
 The following image shows an example of a store selector module used on a PDP.
 
-![Example of a store selector module](./media/BOPIS.PNG)
+![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
 
 ## Find stores mode
 
@@ -77,7 +77,7 @@ The store selector module also supports a **Find stores** mode. This mode can be
 
 The following illustration shows an example of a store selector module that is used together with a map module on a store locations page.
 
-![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module and a map module on a store locations page](./media/ecommerce-Storelocator.PNG)
 
 ## Render a map
 
