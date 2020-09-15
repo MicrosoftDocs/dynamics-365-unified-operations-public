@@ -60,22 +60,33 @@ The following topics are available to help configure and use Asset leasing.
 ### Manage asset leases
 This group of topics describes the process for adding leases, creating payment invoices, adjusting leases, importing lease information and impairing a right-of-use asset. 
 
- - [Add or copy a lease]()
- - [Create a payment invoice]()
- - [Record right-of-use asset depreciation]()
- - [Reverse posted lease transactions]()
- - [Adjust a lease]()
- - [Impaire a right-of use asset]()
- - [Reverse posted lease transactions]()
- - [Adjust a lease]()
- - [Impair a right-of-use asset]()
- - [Associate a lease with a fixed asset]()
- - []()
- - []()
- - []()
- - []()
- - []()
- - []()
+ - [Add or copy a lease](add-lease.md)
+ - [Create a payment invoice](create-payment-invoice.md)
+ - [Record right-of-use asset depreciation](record-rou-asset-depreciation.md)
+ - [Reverse posted lease transactions](reverse-posted-lease-trans.md)
+ - [Adjust a lease](adjust-lease.md)
+ - [Impaire a right-of use asset](impair-rou-asset.md)
+ - [Reverse posted lease transactions](reverse-posted-lease-trans.md)
+ - [Impair a right-of-use asset](impair-rou-asset.md)
+ - [Associate a lease with a fixed asset](associate-lease-with-fixed-asset.md)
+ - [Record leases in foreign currencies](record-leases-foreign-currency.md)
+ - [Revalue lease payments tied to an index rate](revalue-payments-tied-2-index-rate.md)
+ - [Reclassify short-term portion of lease liability](reclassify-st-lease-liability.md)
+ - [View liability, asset, and expense transactions](view-asset-transactions.md)
+ - [Compound interval functionality](compound-interval-functionality.md)
+ - [Confirm monthly journal entries in a batch](confirm-payment-schedules-in-batch.md)
+ - [Create monthly journal entries in a batch](create-monthly-journals-batch.md)
+ - [Transition methods](transition-methods.md)
+ - [Post transaction adjustment journal entries](post-transition-adjustment-entries.md)
+ - [Dual reporting](dual-reporting.md)
+ - [Set up a lease workflow](set-up-lease-wrkflw.md)
+ - [Use lease approval workflows](use-create-lease-wrkflw.md)
+ - [Manage lease through the Lease import framework](manage-leases-thru-imprt-framewrk.md)
+ 
+### Asset leasing reporting
+This topic describes the reports that are available for asset leases. 
+
+ - [Asset leasing reports](asset-leasing-rprts.md)
  
 
 
