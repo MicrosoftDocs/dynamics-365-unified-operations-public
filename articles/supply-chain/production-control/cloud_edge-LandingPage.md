@@ -31,7 +31,14 @@ ms.dyn365.ops.version: AX 10.0.15
 
 # Cloud and Edge scale units for manufacturing and warehouse management workloads
 
-Companies within manufacturing and distribution need to be able to execute key business processes 24x7 without interruption and at scale. Companies are challenged on this in situations spanning from plain provider and Azure outage scenarios, unreliable connections, network latency, to business processes competing for the same system resources. The ability to execute daily mission critical processes must be agnostic to such situations. Cloud and Edge will enable companies to execute key mission critical manufacturing and warehouse processes without interruptions.
+This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
+
+:::image type="content" source="../Cloud and Edge/media/HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
+
+Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity (such as provider outages, Azure outages, unreliable connections, or network latency) to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
+
+> [!TIP]
+> Navigate directly to the scale unit management environment for your Dynamics 365 Supply Chain Management environment. [Click Here](https://sum.dynamics.com)   
 
 ## Scale units for dedicated workloads
 
@@ -42,4 +49,28 @@ A workload is a defined set of business functionality that can be factored out a
 - Manufacturing execution
 - Warehouse management
 
-Scale units in th s
+Within manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
+
+- Enable machine operators and shop floor supervisors to access the operational production plan.
+- Enable machine operators to keep the plan current by executing discrete and process manufacturing jobs.
+- Enable the shop floor supervisor to adjust the operational plan.
+- Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
+
+For warehouse execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
+
+- Enable warehouse workers and warehouses to access planned warehouse work.
+- Enable warehouse workers to execute warehouse work using the warehouse mobile application.
+- Enable warehouse workers and managers to perform inquiries into on-hand inventory.
+- Enable warehouse workers and managers to create and execute inventory movements.
+- Enable warehouse workers to register receipts and do put-away.
+- Enable warehouse workers to ship orders with outbound document printing on the edge.
+
+## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
+
+## Creating an edge scale unit for preview using your custom on-premises hardware appliance  
+
+## Managing scale units and workloads
+
+## Architecture details for Cloud and Edge topologies
+
+## Monitoring and troubleshooting data synchronization
