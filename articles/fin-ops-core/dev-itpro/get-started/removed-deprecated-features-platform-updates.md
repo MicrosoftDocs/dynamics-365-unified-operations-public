@@ -51,11 +51,11 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The information in this form is not accurate and it doesn't show the required information and it can be confusing and misleading, this was an old form supporting Client/server architecture. Also in a could service, information on the infrastructure is irrelevant. |
+| **Reason for deprecation/removal** | This is a legacy form that was built for the old client/server architecture. The information in this form is not always accurate and can therefore be confusing and misleading. |
 | **Replaced by another feature?**   | We will provide a new form in a future update.|
 | **Product areas affected**         | System Administartion. |
 | **Deployment option**              | All |
-| **Status**                         | By April 1, 2021, this form will be removed.   |
+| **Status**                         | By October 2021, this form will be removed.   |
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
