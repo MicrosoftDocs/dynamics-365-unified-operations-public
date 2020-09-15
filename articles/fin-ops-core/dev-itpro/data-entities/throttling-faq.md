@@ -68,10 +68,6 @@ No.
 
 No.
 
-## Is the throttling load balanced / can we omit specific AOS?
-
-We will consider this request in a future release.
-
 ## Will throttling monitoring be available (when) in Azure Application Insights?
 
 Monitoring will be onboarded to any available tool in the future.
