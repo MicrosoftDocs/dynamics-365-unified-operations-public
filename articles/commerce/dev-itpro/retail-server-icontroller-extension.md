@@ -72,11 +72,11 @@ The following illustration shows the class structure of the extension.
 8. Add the **BindEntity** attribute on the controller class. This attribute is required if you're creating a new controller and exposing an entity.
 
 ```csharp
-    [BindEntity(typeof(SimpleEntity))]
+[BindEntity(typeof(SimpleEntity))]
 ```
 
 > [!NOTE]
-> Step 7 and 8 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
+> Steps 7 and 8 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
 
 The following sample code creates a simple Retail Server API to return an entity, a string, and a bool value. The CRT request and response used in the sample is not included in this sample. For an example of the CRT request and response, see [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md).
 
@@ -86,58 +86,56 @@ The following sample code creates a simple Retail Server API to return an entity
 > Extension code should not bound the existing OOB entity, such as Customer or Product.
 
 ```csharp
+// New extended controller.
+[RoutePrefix("SimpleExtension")]  
+[BindEntity(typeof(SimpleEntity))]
+public class SimpleExtensionController : IController
+{
     /// <summary>
-        /// New extended controller.
-        /// </summary>
-        [RoutePrefix("SimpleExtension")]  
-        [BindEntity(typeof(SimpleEntity))]
-        public class SimpleExtensionController : IController
-        {
-            /// <summary>
-            /// The action to get the string value.
-            /// </summary>
-            /// <param name="context">The context parameters.</param>
-            /// <param name="stringValue">The string value parameters.</param>
-            /// <returns>The string value.</returns>
-            [HttpPost]
-            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-            public async Task<string> GetStringValue(IEndpointContext context, string stringValue)
-            {
-                GetStringValueResponse resp = await context.ExecuteAsync<GetStringValueResponse>
-                                         (new GetStringValueRequest(stringValue)).ConfigureAwait(false);
-                return resp.StringValue;
-            }
+    /// The action to get the string value.
+    /// </summary>
+    /// <param name="context">The context parameters.</param>
+    /// <param name="stringValue">The string value parameters.</param>
+    /// <returns>The string value.</returns>
+    [HttpPost]
+    [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+    public async Task<string> GetStringValue(IEndpointContext context, string stringValue)
+    {
+        GetStringValueResponse resp = await context.ExecuteAsync<GetStringValueResponse>
+                                    (new GetStringValueRequest(stringValue)).ConfigureAwait(false);
+        return resp.StringValue;
+    }
 
-            /// <summary>
-            /// The action to get the bool value.
-            /// </summary>
-            /// <param name="context">The context parameters.</param>
-            /// <param name="boolValue">The string value parameters.</param>
-            /// <returns>The bool value.</returns>
-            [HttpPost]
-            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-            public async Task<bool> GetBoolValue(IEndpointContext context, string boolValue)
-            {
-                GetBoolValueResponse resp = await context.ExecuteAsync<GetBoolValueResponse>
-                                           (new GetBoolValueRequest(boolValue)).ConfigureAwait(false);
-                return resp.BoolValue;
-            }
+    /// <summary>
+    /// The action to get the bool value.
+    /// </summary>
+    /// <param name="context">The context parameters.</param>
+    /// <param name="boolValue">The string value parameters.</param>
+    /// <returns>The bool value.</returns>
+    [HttpPost]
+    [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+    public async Task<bool> GetBoolValue(IEndpointContext context, string boolValue)
+    {
+        GetBoolValueResponse resp = await context.ExecuteAsync<GetBoolValueResponse>
+                                    (new GetBoolValueRequest(boolValue)).ConfigureAwait(false);
+        return resp.BoolValue;
+    }
 
-            /// <summary>
-            /// The action to get the simple entity.
-            /// </summary>
-            /// <param name="context">The context parameters.</param>
-            /// <param name="name">The name parameters.</param>
-            /// <returns>The simple entity.</returns>
-            [HttpPost]
-            [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
-            public async Task<SimpleEntity> GetSimpleEntity(IEndpointContext context, string name)
-            {
-                GetSimpleEntityResponse resp = await context.ExecuteAsync<GetSimpleEntityResponse>
-                                               (new GetSimpleEntityRequest(name)).ConfigureAwait(false);
-                return resp.SimpleEntityObj;
-            }
-        }
+    /// <summary>
+    /// The action to get the simple entity.
+    /// </summary>
+    /// <param name="context">The context parameters.</param>
+    /// <param name="name">The name parameters.</param>
+    /// <returns>The simple entity.</returns>
+    [HttpPost]
+    [Authorization(CommerceRoles.Customer, CommerceRoles.Employee)]
+    public async Task<SimpleEntity> GetSimpleEntity(IEndpointContext context, string name)
+    {
+        GetSimpleEntityResponse resp = await context.ExecuteAsync<GetSimpleEntityResponse>
+                                        (new GetSimpleEntityRequest(name)).ConfigureAwait(false);
+        return resp.SimpleEntityObj;
+    }
+}
 ```
 
 ### Sample code for a controller class not bounded to a custom entity
@@ -183,60 +181,51 @@ namespace Contoso.UnboundController.Sample
 The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles that are specified in the controller method **Authorizations** attribute. The following example shows the supported authorization roles.
 
 ```csharp
-    // Summary:
-    // Represents the type of logon type.
-    [DataContract]
-    public static class CommerceRoles
-    {
-        //
-        // Summary:
-        //     Anonymous Role.
-        [DataMember]
-        public const string Anonymous = "Anonymous";
-        //
-        // Summary:
-        //     SharePoint Role used by Connector.
-        [DataMember]
-        public const string Storefront = "Storefront";
-        //
-        // Summary:
-        //     Employee Role.
-        [DataMember]
-        public const string Employee = "Employee";
-        //
-        // Summary:
-        //     Customer Role.
-        [DataMember]
-        public const string Customer = "Customer";
-        //
-        // Summary:
-        //     Represents the Device level of authentication.
-        [DataMember]
-        public const string Device = "Device";
-        //
-        // Summary:
-        //     Represents Application level of authentication.
-        [DataMember]
-        public const string Application = "Application";
-        //
-        // Summary:
-        //     The list of all possible Microsoft.Dynamics.Commerce.Runtime.DataModel.CommerceRoles
-        //     values.
-        public static readonly string[] All;
-    }
+// Represents the type of logon type.
+[DataContract]
+public static class CommerceRoles
+{
+    // Anonymous Role.
+    [DataMember]
+    public const string Anonymous = "Anonymous";
+
+    // SharePoint Role used by Connector.
+    [DataMember]
+    public const string Storefront = "Storefront";
+
+    // Employee Role.
+    [DataMember]
+    public const string Employee = "Employee";
+
+    // Customer Role.
+    [DataMember]
+    public const string Customer = "Customer";
+
+    // Represents the Device level of authentication.
+    [DataMember]
+    public const string Device = "Device";
+
+    // Represents Application level of authentication.
+    [DataMember]
+    public const string Application = "Application";
+
+    // The list of all possible Microsoft.Dynamics.Commerce.Runtime.DataModel.CommerceRoles values.
+    public static readonly string[] All;
+}
  ```
-###  Register the extension
+
+### Register the extension
 
 1. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
 2. Update the Commerce Scale Unit **web.config** file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
-```xml
+    ```xml
     <extensionComposition>
-    <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
-    If you host in an application with a bin folder, this is not required. -->
-    <add source="assembly" value="SimpleExtensionSample" >
+        <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
+        If you host in an application with a bin folder, this is not required. -->
+        <add source="assembly" value="SimpleExtensionSample" >
     </extensionComposition>
-```
+    ```
 
 3. In Internet Information Services (IIS), restart the Commerce Scale Unit to load the new extension.
 
@@ -250,11 +239,11 @@ The Retail Server APIs support different authorization roles. Access to the cont
 
 You don't have to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you're using Retail SDK version 10.0.10 or earlier.
 
-
 ## Generate the Typescript proxy for POS
+
 The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
 
-**Steps to generate the proxy files**
+### Steps to generate the proxy files
 
 1. In Visual Studio 2017, open the sample proxy template project from **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** in Visual Studio 2017. Rename the project if a new name is required.
 2. Add the Retail Server extension project to this proxy template project as a project reference project. Remove the existing **StoreHoursSample** project reference.
@@ -267,7 +256,7 @@ The POS uses the Typescript proxy to access the Retail Server APIs and CRT entit
     </ItemGroup>
     ```
 
-5.  Under the **\<Copy\>** node, update the **DestinationFolder** path of your POS extension folder, so that generated proxy files are automatically copied to the POS extension folder automatically. The generated proxy files will also be copied to **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService**. The following example shows how to update the path.
+5. Under the **\<Copy\>** node, update the **DestinationFolder** path of your POS extension folder, so that generated proxy files are automatically copied to the POS extension folder automatically. The generated proxy files will also be copied to **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService**. The following example shows how to update the path.
 
     ```xml
     <Copy SourceFiles="@(GeneratedDataServiceContracts)" DestinationFolder="$(SdkRootPath)\POS\Extensions\Sample\DataService" SkipUnchangedFiles="true" />
