@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot Purchase orders
-description: This topic describes how to fix issues that you might encounter while working with Purchase Orders.
+title: Troubleshoot purchase orders
+description: This topic describes how to fix issues that you might encounter while working with purchase orders.
 author: SmithaNataraj
 manager: tfehr
-ms.date: 05/07/2020
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,112 +25,131 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: smnatara
-ms.search.validFrom: 2020-5-7
-ms.dyn365.ops.version: AX 10.0.14
+ms.search.validFrom: 2020-9-16
+ms.dyn365.ops.version: Release 10.0.14
 
 ---
-# Troubleshoot Purchase Orders 
+# Troubleshoot purchase orders
 
-This topic describes how to fix common issues that you might encounter while working with Purchase Orders.
+This topic describes how to fix common issues that you might encounter while working with purchase orders.
 
-## This action can only be completed after the line number %1 is fully distributed.
+## This action can only be completed after the line number is fully distributed
 
-This is an issue that could occur due to inconsistency in purchase order distributions. 
+This issue may occur due to inconsistencies in purchase order distributions.
 
-**Resolution**
-It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more in the blog[Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing > Periodic tasks > Clean up > Purchase order distribution reset**. For more information, see the blog post [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
-## Purchase order Line Numbers are not following the increment defined in system parameter, when purchase orders are imported through data management (DMF)
-The line numbers for imported purchase order lines through data entity "Purchase order lines V2" are not defaulting to system line number increment specified in system parameters when adding auto-generated line numbers in DMF. When you create a PO and add lines manually through UI, it is correctly incrementing. However, when using DMF it is not.
+## Purchase order line numbers don't follow the increment defined in system parameters when purchase orders are imported through data management
 
-**Resolution**
-When importing the lines via the Data Management framework it will use the data management frameworks methods of assigning line numbers, when the line number is not already assigned in the imported entity. And that method is increments of 1.
+### Issue description
 
-**Workaround**
-A way to do this could be to make sure that the desired line numbers are already given in the entity data when importing the purchase order line, then they will not be overwritten by the data management framework.
+Auto-generated line numbers for purchase order lines imported through the data entity "Purchase order lines V2" don't default to system line number increment specified in system parameters. When you create a purchase order and add lines manually through user interface, the line numbers increment correctly. However, when using the data management framework (DMF), they don't.
 
-## Tax group and Cash discount are not defaulted from Invoice account
-The customer has a different invoice account than the customer account. When a Purchase order is created, Tax group and Cash discount are not defaulted from the Invoice account. 
+This occurs because, when importing lines via the data management framework (DMF), the system uses the data management framework's methods of assigning line numbers when they aren't already assigned in the imported entity. That method always increments by 1.
 
-**Resolution**
-The defaulting of of tax group, cash discounts and other price information that should be defaulted from the customer is based on the customer account and not the invoice account.
+### Workaround
 
-## "Object reference not set" error seen during purchase order confirmation, or "Exception has been thrown by the target of an invocation", exception thrown during vendor invoice posting.
+Make sure that the desired line numbers are already given in the entity data when importing the purchase order lines. Then they won't be overwritten by the data management framework.
 
-**Resolution**
-This is an issue that could occur due to inconsistency in purchase order distributions. 
+## Tax group and cash discount are not defaulted from the invoice account
 
-It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more in the blog[Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+If you are using an invoice account that differs from the customer account, when a purchase order is created, the tax group and cash discount are not defaulted from the invoice account.
 
-## One or more accounting distributions is either over-distributed or under-distributed.
-The user sees the error "One or more accounting distributions is either over-distributed or under-distributed".
+This is by design. The default values for tax group, cash discounts and other price information is based on the customer account and not the invoice account.
 
-**Fix**
-This is an issue that could occur due to inconsistency in purchase order distributions. 
+## "Object reference not set" error is shown while confirming a purchase order, or "Exception has been thrown by the target of an invocation" occurs during vendor invoice posting
 
-It is possible to unblock the above issues and reset the purchase order to a draft state using Procurement and Sourcing > Periodic Task > Clean up > Purchase Order Distribution Reset. See more in the blog [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+This issue could occur due to inconsistency in purchase order distributions.
 
-## Can I show only Purchase orders created by me?
+To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing > Periodic tasks > Clean up > Purchase order distribution reset**. For more information, see the blog post [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
-This functionality is not available currently.
+## One or more accounting distributions is either over-distributed or under-distributed
 
-## Able to reserve inventory and transact against goods in Registered status on the purchase order.
+### Issue description
 
-When items are Registered on a Purchase order, it is possible to reserve the inventory, i.e. it is possible to create transactions against the Registered Inventory.
+You see the error "One or more accounting distributions is either over-distributed or under-distributed."
 
-**Scenario**
-1. Create PO
-2. Register the PO line
-3. It is possible to generate reservation or transaction against Registered inventory. 
-*Is there a way to block this?*
-		
-**Resolution:**
-The Registered items are expected to be phyiscally arrived in the warehouse or inventory, hence this is available for reservation.
+### Issue fix
 
-## Language settings on legal entity not reflected in purchase orders - the product name is shown in the company language.
+This issue can occur due to inconsistency in purchase order distributions.
 
-The product name in a purchase order shows up in system language, and not in the language set for the legal entity in which the purchase order has been created.
+To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing > Periodic tasks > Clean up > Purchase order distribution reset**. For more information, see the blog post [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
-**Scenario**
-1. System language EN-US
-2. Make sure there is a product that has languages en-us and de maintained for translations for the product name.
-3. Change the language of a legal entity to DE.
-4. Create a  purchase order with this product in the legal entity DE.
-*Issue: The product name is still shown in EN-US, the same as what was set as the system language.*
+## Can I show only purchase orders created by me?
 
-**Resolution**
-On the purchase orders, the product is always show in the system language. When a confirmation journal is created, then the PO language is used. 
+This functionality is not currently available.
 
-## Approved vendor list by product entity does not allow to change effective date.
-The "Approved vendor list by product" doesn’t allow to change effective date by using the entity. 
+## Able to reserve inventory and transact against registered inventory on a purchase order
 
-**Scenario**
-1. Suppose, a product has an approved vendor with effective date 01/11/2018 and expiration date ‘never’.
-2. Then, it is not possible to change the effective date to 01/10/2018 Or 01/12/2018. 
-3. The following error is seen: "Cannot create a record in Approved supplier list (PdsApproveVendorList). The 'Expiration' value needs to be greater than or equal to the 'Effective' value."
+### Issue description
 
-**Resolution**
-It is only possible to extend the period that the vendor is approved for. 
+When items are in the *Registered* state on a purchase order, it is still possible to reserve the inventory. In other words, it is possible to create transactions against the registered inventory.
 
-1. To bring the effective date to an earlier date than any of existing records (periods) given for that item-vendor, the expiration date on the new period has to be before any of the expiration dates in the existing records.
-2. To bring the expiration date to a later date than any of the existing periods, the effective date has to be after the latest expiration date of any existing records.
-3. To reduce the overall time period that the vendor is approved, this has to be done through UI by either deleting records or modifying existing records - or by using the truncate switch when importing which deletes all existing records in the table for approved vendors by item. 
+### Reproduce the issue
 
-For this example scenario described above, where there is a record of effective date 01/11/2018 and expiration date ‘never’, it would be possible to import a new record with effective date 01/10/2018 and expiration date before "never". However it is not possible to reduce the period so that the effective date is updated to 01/12/2018 via data management. This would have to be done through the UI.
+One way to reproduce this issue is do the following:
 
-## After changing the Delivery address on the purchase order header, the Delivery name is not synchronized.
-**Scenario**
-1. The address on the header of a purchase order is updated to an address that is not a delivery address. 
-*Issue: The address updates on the purchase order - however the delivery name does not update based on the updated address.*
+1. Create a purchase order.
+2. Register the purchase order line.
+3. Note that it is possible to generate reservations or transactions against the registered inventory.
 
-**Resolution**
- Only if the address selected is classified as a delivery address, then the delivery name will also be updated according to the selected address. Otherwise, the delivery name is not updated.
+### Issue resolution
 
-## Is it possible to find the User who cancelled a Purchase Order (PO)
-This information is not tracked, if the purchase order is not under change management. If you use change management you can see who submitted the change (a cancellation) and who approved it.
+This is by design. The registered items are expected to have physically arrived in the warehouse or inventory, hence they are available for reservation.
 
+## Language settings on the legal entity aren't reflected in purchase orders
+
+### Issue description
+
+The product name in a purchase order is shown using the system language rather than the language set for the legal entity in which the purchase order was created.
+
+### Reproduce the issue
+
+One way to reproduce this issue is do the following:
+
+1. Set the system language to *EN-US* (US English).
+1. Make sure there is a product that has languages *EN-US* and *DE* (German) maintained for translations for the product name.
+1. Change the language of a legal entity to *DE*.
+1. Create a  purchase order with this product in the legal entity where *DE* is set as the language.
+1. Note that the product name is still shown in US English, which matches the system language.
+
+### Issue resolution
+
+This is by design. On purchase orders, the product is always show in the system language. When a confirmation journal is created, then the purchase order language is used.
+
+## Approved vendor list by product entity doesn't allow the effective date to be changed
+
+### Issue description
+
+Suppose a product has an approved vendor with effective date *01/11/2018* and expiration date *Never*, but if you try to change the effective date to *01/10/2018* or *01/12/2018*, the following error is shown:
+
+> Cannot create a record in Approved supplier list (PdsApproveVendorList). The 'Expiration' value needs to be greater than or equal to the 'Effective' value.
+
+### Issue fix
+
+It is only possible to extend the period that the vendor is approved for. The following rules apply:
+
+- To bring the effective date to an earlier date than any of the existing records (periods) given for that item vendor, the expiration date on the new period must be before any of the expiration dates in the existing records.
+- To bring the expiration date to a later date than any of the existing periods, the effective date must be after the latest expiration date of any existing record.
+- To reduce the overall time period that the vendor is approved, you must either delete records or modify existing records&mdash;or use the truncate switch when importing, which deletes all existing records in the table for approved vendors by item.
+
+For the example scenario described in the issue description, where there is a record of effective date *01/11/2018* and expiration date *Never*, it would be possible to import a new record with effective date *01/10/2018* and expiration date before *Never*. However it isn't possible to reduce the period so that the effective date is updated to *01/12/2018* via data management. You would have to do this through the user interface.
+
+## After changing the delivery address on the purchase order header, the delivery name isn't synchronized
+
+### Issue description
+
+The address on the header of a purchase order is updated to an address that is not a delivery address. The address updates on the purchase order, but the delivery name doesn't update based on the updated address.
+
+### Issue resolution
+
+This is by design. Only if the selected address is classified as a delivery address will the delivery name also be updated according to the selected address. Otherwise, the delivery name isn't updated.
+
+## Is it possible to find the user who cancelled a purchase order?
+
+This information is not tracked unless the purchase order is under change management. If you use change management, then you can see who submitted the change (a cancellation) and who approved it.
 
 ## Additional resources
 
-[Get started with Purchase Orders](purchase-order-overview.md)
+[Get started with Purchase Orders](purchase-order-overview.md)  
 [Creation of Purchase Orders](create-purchase-order.md)
