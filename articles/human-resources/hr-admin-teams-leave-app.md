@@ -92,7 +92,6 @@ After you've enabled notifications for the Human Resources Teams app, you can tu
 | Issue | Status |
 | --- | --- |
 | Horizontal scrolling doesn't work on Android phones | Horizontal scrolling isn't an issue on iOS or desktop devices. We're working on a fix for Android. |
-| Error: There is an issue finding an environment to connect to. | You might receive this error even if you've verified that the user can access one or more Human Resources environments. Also, you might not see all the environments you expect. Until we fix this issue, delete the user and then import them in again to resolve the problem. |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
 | Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters. |
