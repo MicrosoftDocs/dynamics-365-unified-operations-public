@@ -61,9 +61,9 @@ Go to LCS main page (https://lcs.dynamics.com  for production or https://lcs.tie
 Click + button and create Implementation project.
 Make sure there is at least one sandbox slot available to deploy.
 
-:::image type="content" source="../Cloud and Edge/media/Cloud_Edge-LCS2.png" alt-text="Select LCS project type":::
+:::image type="content" source="./media/cloud_edge-LCS2.png" alt-text="Select LCS project type":::
 
-:::image type="content" source="../Cloud and Edge/media/Cloud_Edge-LCS3.png" alt-text="Navigate to LCS to configure your environment":::
+:::image type="content" source="./media/cloud_edge-LCS3.png" alt-text="Navigate to LCS to configure your environment":::
 
 ### Setup and deploy LBD environment with empty database
 
@@ -81,9 +81,9 @@ Make sure there is at least one sandbox slot available to deploy.
 1. Service LBD environment with combined application/platform package that was uploaded in previous step.
 1. Service LBD environment with custom deployable package that was uploaded in previous step.
 
-:::image type="content" source="../Cloud and Edge/media/Cloud_Edge-LCS-ServiceLBDEnv1.png" alt-text="Service LBD Environment 1":::
+:::image type="content" source="./media/cloud_edge-LCS-ServiceLBDEnv1.png" alt-text="Service LBD Environment 1":::
 
-:::image type="content" source="../Cloud and Edge/media/Cloud_Edge-LCS-ServiceLBDEnv2.png" alt-text="Service LBD Environment 2":::
+:::image type="content" source="./media/cloud_edge-LCS-ServiceLBDEnv2.png" alt-text="Service LBD Environment 2":::
 
 ### Update topology
 
@@ -103,6 +103,7 @@ Make sure there is at least one sandbox slot available to deploy.
     >         & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
 
 1. Redeploy the environment.
+
 - This can be done by triggering Update Settings action from LCS without changing any of the values in the form.
 - That action will redeploy environment and PreDeployment.ps1 will be invoked before deployment which will update environment's topology.
 - Update Settings action is used to update some topology values such as certificate thumbprints, but it can be used for this purposes if all the values are left unchanged.
@@ -110,8 +111,8 @@ Make sure there is at least one sandbox slot available to deploy.
 - Prepare - This is triggered through LCS Maintain > Update Settings.
 - Deploy - This needs to be triggered after preparation step is done (takes couple of minutes). Deploy can be triggered from environment's details LCS page.
 
-:::image type="content" source="../Cloud and Edge/media/Cloud_Edge-LCS-ServiceLBD-UpdateSettings.png" alt-text="Deploy upodates from LBD":::
+:::image type="content" source="./media/cloud_edge-LCS-ServiceLBD-UpdateSettings.png" alt-text="Deploy updates from LBD":::
 
 ### Configure Scale Unit environment
 
-Use [Scale Unit Manager portal](https://sum.dynamcis.com) to connect your scale unit to your Dynamics 365 hub environment. Go here for more details
+Use [Scale Unit Manager portal](https://sum.dynamcis.com) to connect your scale unit to your Dynamics 365 hub environment. Go here for more details on the Scale Unit Manager.

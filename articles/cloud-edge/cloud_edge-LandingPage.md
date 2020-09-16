@@ -36,12 +36,12 @@ ms.dyn365.ops.version: AX 10.0.15
 
 This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
 
-:::image type="content" source="../Cloud and Edge/media/HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
 Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity (such as provider outages, Azure outages, unreliable connections, or network latency) to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
 
 > [!TIP]
-> Navigate directly to the scale unit management environment for your Dynamics 365 Supply Chain Management environment. [Click Here](https://sum.dynamics.com)   
+> Navigate directly to the scale unit management environment for your Dynamics 365 Supply Chain Management environment. [Click Here](https://sum.dynamics.com)
 
 ## Scale units for dedicated workloads
 
