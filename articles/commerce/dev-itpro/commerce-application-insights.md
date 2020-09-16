@@ -211,14 +211,15 @@ If the path is changed, update the library path in step 5, 6, and 7 to one that 
 
 5. Open the tsconfig.json form the POS.Extensions project and under the exclude section add an entry to the Libraries folder:
 
-```
+```typescript
 "exclude": [
     "Libraries"
   ],
 ```
 
 6. Open the tsconfig.json form the POS.Extensions project and under the 'compilerOptions' section add the following properties :
-```
+
+```typescript
 "baseUrl": ".",
 "moduleResolution": "node",
 "paths": {
@@ -228,7 +229,7 @@ If the path is changed, update the library path in step 5, 6, and 7 to one that 
 
 7. Edit the Pos.Extensions.csproj under the 'CopyPosExtensionsFiles' add the below targets to have the Application Insights library be copied over to the POS application and be ready for consumption by the extension code:
 
-```
+```typescript
 <JavaScriptFileList Include="Libraries\\**\\*.js">
     <InProject>false</InProject>
     <Visible>false</Visible>
@@ -237,7 +238,7 @@ If the path is changed, update the library path in step 5, 6, and 7 to one that 
 
 8. Include the following in the 'manifest.json' file of the POS extension folder(package) that is consuming the Application Insights library:
 
-```
+```typescript
 {
   "dependencies": [
     {
@@ -255,7 +256,7 @@ Now the Application Insights library is now ready to be consumed and used in POS
 1. Create a new typescript file inside the POS extension folder(package) and name it as AppInsights.ts
 2. Copy the below code to used by the extensions in order to track events using Application Insights (update the instrumentation key created in the Azure App insights).
 
-```
+```typescript
 import { ApplicationInsights } from "applicationinsights-web";
 
 /**
@@ -293,7 +294,7 @@ export class AppInsights {
 ```
 3. In the desired extension code log the events by calling the AppInsights class like below:
 
-```
+```typescript
 AppInsights.instance.trackEvent({
     name: "extensionTest",
     properties: {
