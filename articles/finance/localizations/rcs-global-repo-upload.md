@@ -85,11 +85,11 @@ The status of the configuration is updated to **Share**, and the configuration i
 
 ## Delete a configuration from the Global repository
 You can delete a configuration that your organization has created, by using the following steps: 
-1.	Check your configuration provider is **Active**. For more information see prerequisites above.
+1.	In the **Electronic reporting** workspace, check your configuration provider is **Active**. For more information see prerequisites above.
 2.	Click **repository** on your active configuration provider.
 3.	Select repository type **Global** and click **Open**.
-4.	Find the configuration that you want to delete by using the **Filter** functionality.
-5.	Select the version of the configuration that you want to delete and click **Delete**:
+4.	Find the configuration that you want to delete by using the **Filter** functionality in the **Filter FastTab**.
+5.	Select the version of the configuration that you want to delete in the **Version FastTab** and click **Delete**:
 
     ![Delete configuration from global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Delete_from_GlobalRepo.JPG)
 
