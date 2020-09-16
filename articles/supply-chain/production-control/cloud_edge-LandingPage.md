@@ -29,7 +29,10 @@ ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: AX 10.0.15
 ---
 
-# Cloud and Edge scale units for manufacturing and warehouse management workloads
+# Cloud and Edge scale units for manufacturing and warehouse management workloads - public preview
+
+> [!CAUTION]
+> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to these Preview Terms. [**LINK MISSING**]
 
 This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
 
@@ -67,7 +70,10 @@ For warehouse execution, cloud and edge scale units deliver the following capabi
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 
-## Creating an edge scale unit for preview using your custom on-premises hardware appliance  
+## Creating an edge scale unit for preview using your custom on-premises hardware appliance
+  
+In the public preview you can create on-premises edge scale units on your custom hardware using the Local Business Data environments.
+Please find more details [here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 
 ## Managing scale units and workloads
 
