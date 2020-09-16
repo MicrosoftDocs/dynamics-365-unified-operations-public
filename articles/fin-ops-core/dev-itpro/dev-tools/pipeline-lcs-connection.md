@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an LCS connection in Azure Pipelines
-description: The topic explains how to set up a connection to LCS from Microsoft Azure DevOps.
+description: This topic explains how to set up a connection to Microsoft Dynamics Lifecycle Services (LCS) from Azure DevOps.
 author: jorisdg
 manager: AnnBe
 ms.date: 03/05/2020
@@ -29,42 +29,40 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a Lifecycle Services (LCS) connection in Azure Pipelines
+# Create an LCS connection in Azure Pipelines
 
-The [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps has several pipeline tasks that allow you to perform actions in Dynamics Lifecycle Services (LCS). For example, you can upload and download assets, or service an environment. For this connection with LCS to work, you have to set up a new **Service Connection** in Azure DevOps that provides the authentication details needed to connect. For more information about **Service Connections** in Azure DevOps, see [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops).
+The [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Microsoft Azure DevOps has several pipeline tasks that let you perform actions in Microsoft Dynamics Lifecycle Services (LCS). For example, you can upload assets, download assets, and service an environment. For the connection with LCS to work, you must set up a new service connection in Azure DevOps. This service connection provides the authentication details that are required to connect to LCS. For more information about service connections in Azure DevOps, see [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints).
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
-> Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser).
+> Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](https://docs.microsoft.com/azure/devops/marketplace/install-extension).
 
 ## Prerequisites
 
-You'll need credentials for a user that has access to one or more LCS projects you wish to interact with. Ensure the user has previously logged in to LCS successfully, and opened the dashboard of the project you'll interact with from Azure DevOps.
+You must have the credentials for a user who has access to one or more LCS projects that you want to interact with from Azure DevOps. Make sure that this user has successfully signed in to LCS before, and has opened the dashboard for the projects that you want to interact with.
 
 > [!NOTE]
-> LCS does not support service-to-service authentication. As a result, only regular user credentials (username/password) can be used. Since the pipelines do not run interactively, the account you'll use can not have multi-factor authentication set up. We recommend to set up a separate user account with limited access and strong credentials that can be rotated reguarly for security purposes.
+> LCS doesn't support service-to-service authentication. Therefore, only regular user credentials (that is, a user name and password) can be used. Because the pipelines don't run interactively, multifactor authentication must not be set up for the account that you use. We recommend that you set up a separate user account that has limited access and strong credentials that can regularly be rotated for security purposes.
 
-To allow connections from Azure DevOps directly to LCS on a user's behalf, you must register an application in your Azure Active Directory (AAD).
+To enable direct connections from Azure DevOps to LCS on a user's behalf, you must register an application in your Azure Active Directory (Azure AD).
 
-1. Follow the instructions in [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) and add a new **Redirect URI**:
+1. Follow the instructions in [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app), and add a new redirect URI:
 
-    - Select **Public client/native (mobile & desktop)**
-    - Enter a valid URI (this URI can be anything, for example `http://localhost`)
+    1. Select **Public client/native (mobile & desktop)**.
+    2. Enter any valid URI, such as `http://localhost`.
 
-2. Add permissions to the application registration to access the LCS web APIs. Follow the instructions in [Add permissions to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis). When requesting the API permissions, select **APIs my organization uses** and search for **Dynamics Lifecycle services**.
-
-3. Ensure that the account you'll use has given consent for the application registration in Azure AD. Follow the instructions in [Configure the way end-users consent to an application in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent#grant-admin-consent-to-enterprise-apps-in-the-azure-portal). You can either enable a specific user or [grant admin consent for the whole tenant](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent#grant-admin-consent-to-enterprise-apps-in-the-azure-portal).
+2. Add permissions to the application registration to access the LCS web APIs. Follow the instructions in [Add permissions to access your web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api). When you request the API permissions, select **APIs my organization uses**, and search for **Dynamics Lifecycle services**.
+3. Make sure that the account that you will use has given consent for the application registration in Azure AD. Follow the instructions in [Configure the way end-users consent to an application in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent). You can either enable a specific user or grant admin consent for the whole tenant.
 
 ## Create the Dynamics Lifecycle Services service connection
 
-You can create a new connection from a pipeline task directly, or from your project's settings page. For more information on creating service connections, see [Create a service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops). On the **Dynamics Lifecycle Services** service connection dialog, provide the following information.
+You can create a new service connection either directly from a pipeline task or from your project's settings page. For more information about how to create service connections, see [Create a service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints#create-a-service-connection). In the dialog box for the **Dynamics Lifecycle Services** service connection, provide the following information:
 
-- Authentication Endpoint: The default value provided works for all Azure Active Directory (AAD) tenants in the Azure cloud. If your AAD is located in a national cloud,  see [Nation clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
-- Lifecycle Services API Endpoint: Provide the endpoint.
-- Username: Provide the email alias of the user credentials.
-- Password: Provide the password of the user credentials.
-- Application (Client) ID: Provide the ID previously created for your application registration in AAD.
-- Service connection name: Provide a meaninful name for the connection. This name will show in the connection dropdown on pipeline tasks that require an LCS connection.
-- Description: Provide an optional description for this connection.
-
+- **Authentication Endpoint** – The default value works for all Azure AD tenants in the Azure cloud. If your Azure AD is in a national cloud, see [National clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
+- **Lifecycle Services API Endpoint** – Provide the endpoint.
+- **Username** – Provide the email alias for the user credentials.
+- **Password** – Provide the password for the user credentials.
+- **Application (Client) ID** – Provide the ID that was previously created for your application registration in Azure AD.
+- **Service connection name** – Provide a meaningful name for the connection. This name will appear in the connection field for pipeline tasks that require an LCS connection.
+- **Description** – Provide an optional description of this connection.
