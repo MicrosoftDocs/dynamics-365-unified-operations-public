@@ -188,7 +188,7 @@ Sometimes, a solution might contain different implementations of an entity map. 
 1. Import the dual-write core solution.
 
     1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this topic to import the dual-write core solution from AppSource into Power Apps.
-    2. Verify that the dual-write core solution is listed under **Solutions** in PowerApps.
+    2. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Upgrade the entity maps.
 
