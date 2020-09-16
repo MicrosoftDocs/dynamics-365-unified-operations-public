@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 ## Included in this release
 
 -  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
-[Saved views](../fin-ops/get-started/saved-views.md). 
+[Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views). 
 
 - The **Position actions** form has an updated dimensions grid and new dialogue (469495).
 
