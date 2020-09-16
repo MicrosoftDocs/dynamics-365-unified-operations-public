@@ -62,7 +62,7 @@ If the app doesn't automatically sign you in, select the **Settings** tab to sig
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
 
 > [!NOTE]
-> The public preview version of the app previously didn't support the System Administrator security role. It now supports this role.
+> The public preview version of the app previously didn't support the System Administrator security role. The app now supports this role.
  
 ## Use the bot
 
