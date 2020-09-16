@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources (September 8, 2020)
+# What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Included in this release
 
 -  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
-[Saved views](../../fin-ops/get-started/saved-views.md). 
+[Saved views](../fin-ops/get-started/saved-views.md). 
 
 - The **Position actions** form has an updated dimensions grid and new dialogue (469495).
 
