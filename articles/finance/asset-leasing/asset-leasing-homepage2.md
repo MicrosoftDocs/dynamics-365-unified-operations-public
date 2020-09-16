@@ -89,4 +89,24 @@ This topic describes the reports that are available for asset leases.
  - [Asset leasing reports](asset-leasing-rprts.md)
  
 
+## Additional resources
+
+### What's new and in development
+
+Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
+
+### Blogs
+
+You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+
+#### Task guides
+Additional help is available as task guides. To access task guides, click the Help button on any page.
+
+### Videos
+
+Check out the how-to videos that are now available on the 
+[Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
 
