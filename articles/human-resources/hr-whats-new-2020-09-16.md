@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
-author: Darinkramer
-manager: AnnBe
-ms.date: 9/16/2020
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 16, 2020.
+author: jcart1106
+manager: tfehr
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -24,98 +24,59 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
-ms.search.validFrom: 2020-09-08
+ms.author: jcart
+ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (September 8, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (September 8, 2020)
 
-## New Platform functionality (Platform 37)
-Saved views is generally available with this release. 
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
-### Uptake new Default Financial Dimensions grid and dialog pattern throughout D365HR - (469495)
+## Included in this release
 
-This release updates the user interface when adding default financial dimensions on the position actions form.  The dimensions grid has been updated and a new dialogue has been introduced.
+-  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
+[Saved views](../../fin-ops/get-started/saved-views.md). 
 
-### Benefits screens don’t take into consideration the Restrict access to worker information parameter - (393384)
+- The **Position actions** form has an updated dimensions grid and new dialogue (469495).
 
-With this release, if the Restrict access to worker information is set to yes in Advanced access in Human Resources Shared parameters, benefit screens will only show the appropriate workers. 
-### Calendar Generation Options are not available in the WorkCalendarEntity - (477055)
+- If you set **Restrict access to worker information** to yes in **Advanced access** in **Human Resources Shared parameters**, benefits forms now show only the appropriate workers (393384).
 
-With this release the following fields were added to the WorkCalendar entity:
--	Default ending time
--	Default starting time
--	Is Friday working day
--	Is Monday working day
--	Is Saturday working day
--	Is Sunday working day
--	Is Thursday working day
--	Is Tuesday working day
--	Is Wednesday working day
--	Work calendar holiday ID
+- New calender generation options in the **WorkCalendar** entity (477055):<br>- Default ending time<br>-	Default starting time<br>-	Is Friday working day<br>-	Is Monday working day<br>-	Is Saturday working day<br>- Is Sunday working day<br>- Is Thursday working day<br>- Is Tuesday working day<br>- Is Wednesday working day<br>- Work calendar holiday ID
 
-### LeaveBankTransactionV1 Entity not populating actual reasoncodeID value - (477823)
+- The **LeaveBankTransactionV1** entity now includes the reason code (477823).
 
-This release includes the reason code in the LeaveBankTransactionV1 entity. 
+- You can now save task recordings (492923).
 
-### Saving of task recording in LCS isn’t possible - (492923)
+- Data is now published successfully from **HCMWorkerContactEntity** (427620).
 
-With this release, task recordings can now be saved. 
+- The **Compensation** fast tab now displays for the contractor worker type in the **Worker actions** form (482494).
 
-### Data loss while publishing data using Excel Connector with the entity HcmWorkerContactEntity - (427620)
+- The **Level** and **Plan** fields are now mandatory if you set **Fixed compensation**. An error message displays if you leave these fields blank (482497).
 
-With this release, data is published successfully from the HCMWorkerContactEntity. 
+- The **Plan type** field in **Benefits** is now a dropdown list (488768).
 
-### Personnel action for a Contractor incorrectly hides compensation fast tab after saving - (482494)
+- System administrators now receive a notification if a custom field is deleted from Human Resources (481408).
 
-This release corrects the issue where adding a worker type of contractor, the compensation fast tab was not visible in the Worker Actions form. With this fix, the interface will display the compensation fast tab in this scenario.  
+- During the terminate employee process, Human Resources behaves as expected and doesn't change the selected company after appearing to lock (479877). 
 
-### No error thrown on attempting to complete hire action if fixed compensation action is set, but level and plan are blank - (482497)
+- Managers can no longer add a number column through personalization (485317).
 
-With this release, level and plan are now marked as mandatory in the user experience along with providing an error message. 
+- Managers can no longer remove the data range filter from identification numbers expiring (485321).
 
-### When creating new benefit plan, plan type field is no longer a drop list - (488768)
+- When the **Reports to** field is empty, position details still display when hovering over the position (433328).
 
-With this release, the plan type field is now a drop list. 
+- Employees can now view benefit plan information in Employee self service (481676).
 
-### Removal of custom fields from HR does not alert that CDS custom field is also not removed - (481408)
+- Employees can now see all registered courses (429048).
 
-With this release, system administrators will receive a notification if a custom field is deleted from Dynamics 365 Human Resources. 
+- You can now restrict viewing options for the **Professional certificates** page. You can restrict viewing options to the current legal entity, by worker status, and by worker type. 
 
-### Terminate employee process experiencing performance issues - (479877)
-
-With this release, the application will behave as expected and not change the selected company after appearing to lock for a period of time. 
-
-### Identification numbers expiring for my team – manager is able to add a Number column - (485317)
-
-With this release, managers can’t add the number column through personalization. 
-
-### Identification numbers expiring for my team – manager is able to remove the data range filter - (485321)
-
-With this release, managers can’t remove the filter from identification numbers expiring. 
-
-### Hover over position assigned to employee is empty in case the position in "reports to" is not assigned to any worker - (433328)
-
-With this release, even if the reports to field is empty, the position details are still displayed when hovering over the position. 
-
-### Information regarding the Benefit plan not available in ESS for user only with Employee role. - (481676)
-
-With this release, employees can view benefit plan information. 
-
-### An employee registered to a course from another company cannot see the next registered course in his employee self-service - (429048)
-
-With this release, employees can see all registered courses. 
-
-### Filter Professional Certificates page - (451501)
-
-This release updates the user interface to have additional viewing options to restrict to the current legal entity, by worker status and by worker type. 
 
 ## In Preview
 
-### Human Resources application in Teams
+### Human Resources app in Teams
 
 Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
 
@@ -124,14 +85,14 @@ Employees can view and request time away from work within Microsoft Teams. They 
 
 ### Human Resources app in Teams preview features
  
--  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers will be able to approve or deny time-off requests. Submitters will be notified if the request was approved or denied. For more information, see:
+-  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers can approve or deny time-off requests. Submitters will be notified if the request was approved or denied. For more information, see:
    - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
    - [Enable notifications for the Human Resources app in Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) in Human Resources documentation
    - [Turn Teams notifications on or off for individual users](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) in Human Resources documentation
    - [Teams notifications](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) in Human Resources documentation
    - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
  
-- **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work. For more information, see:
+- **Manager time-off calendar**: Managers can see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work. For more information, see:
    - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
    - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
 
@@ -149,7 +110,7 @@ This feature also promotes the workflow options that appear in the personnel act
 
 ### Leave and absence calendar
 
-Additional calendar options for leave and absence calendars [View team and company calendars] (https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-calendar)
+This release includes additional calendar options for leave and absence calendars. For more information, see [View team and company calendars](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-calendar).
 
 ## Coming Soon
 
@@ -159,7 +120,7 @@ Checklist entities for Onboarding, Offboarding, Transfers, and Business processe
 
 ### Benefits management reason codes
 
-Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionally.
+Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionality.
 
 ## See also
 
