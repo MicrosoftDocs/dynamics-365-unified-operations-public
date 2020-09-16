@@ -1,4 +1,4 @@
-**Export ledger transactions**
+# Export ledger transactions
 
 The feature described in this topic is used to export the total balance of each
 ledger account for a specific period to a plain text (ASCII) file in .CED
@@ -8,37 +8,33 @@ create an accounting report according to country/region-specific requirements.
 This functionality is available for legal entities that have their primary
 address in Belgium.
 
-Prerequisites
-=============
+## Prerequisites
 
-Create posting journals
------------------------
+### Create posting journals
 
 1.  Go to **General ledger \> Journal setup \> Posting journals**.
 
 2.  On the **Journal setup** page, select **Create**. Posting journals and
     corresponding number sequences are automatically created.
 
-Export ledger transactions to a plain text file in CED format
-=============================================================
+## Export ledger transactions to a plain text file in CED format
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), in the Shared asset library,
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library,
     download the latest versions of the Electronic reporting (ER) configurations
     for the following report format:
 
 -   Ledger transaction export format (BE)
 
->   For more information, see Download Electronic reporting configurations from
->   Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1.  In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Export
+2.  In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Export
     ledger transactions**.
 
-2.  In the **Export ledger transactions to an ASCII file in CED format** dialog
+3.  In the **Export ledger transactions to an ASCII file in CED format** dialog
     box, in the **Format mapping** field, select the **Ledger transaction export
     format (BE)** format that you just downloaded, and then select **OK**.
 
-3.  In the **Electronic report parameters** dialog box, set the following
+4.  In the **Electronic report parameters** dialog box, set the following
     fields.
 
 | **Field**          | **Description**                                                             |
@@ -47,7 +43,7 @@ Export ledger transactions to a plain text file in CED format
 | To date            | Enter the last day of the reporting period.                                 |
 | Reporting in euros | Set this option to **Yes** if the company uses a currency other than euros. |
 
-4.  Select **OK** to generate and download the .txt file.
+5.  Select **OK** to generate and download the .txt file.
 
     For example, you post the following ledger transactions in the DEMF company.
 
@@ -59,11 +55,9 @@ Export ledger transactions to a plain text file in CED format
 
 In this case, the file that is generated contains the following data.
 
-![](media/0b5bb919597459a03cf883ad3e58e0b8.png)
+![](media/1_Export_ledger_transactions.png)
 
->   A screenshot of a cell phone Description automatically generated
-
->   Here is an explanation of the columns in this file:
+Here is an explanation of the columns in this file:
 
 -   The first column shows the ledger account code.
 
