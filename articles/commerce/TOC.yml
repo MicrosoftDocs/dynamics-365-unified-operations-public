@@ -996,8 +996,6 @@
           items:
           - name: Breadcrumb module
             href: add-breadcrumb.md
-      - name: Run experiments on e-commerce pages
-        href: experimentation.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
