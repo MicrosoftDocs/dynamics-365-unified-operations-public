@@ -71,7 +71,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 - Employees can now see all registered courses (429048).
 
-- You can now restrict viewing options for the **Professional certificates** page. You can restrict viewing options to the current legal entity, by worker status, and by worker type. 
+- You can now restrict viewing options for the **Professional certificates** page. You can restrict viewing options to the current legal entity, by worker status, and by worker type (451501). 
 
 
 ## In Preview
