@@ -1268,6 +1268,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
