@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Interactive components overview
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
 
