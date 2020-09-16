@@ -112,7 +112,7 @@ The first step is to customize your entity maps by modifying existing entity map
 
 2. Confirm the entity maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
 
-    ![Adding a new Address books entity map](media/confirm-new-entity-maps.png)
+    ![Confirmation of new entity maps](media/confirm-new-entity-maps.png)
 
 ### Create a new dual-write solution and add your components (Customized entity maps)
 
