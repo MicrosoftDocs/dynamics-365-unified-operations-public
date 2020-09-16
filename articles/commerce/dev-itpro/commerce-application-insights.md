@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to log events to [Customer Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) from Commerce runtime (CRT) extensions.
+This topic explains how to log events to [Customer Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) from Commerce runtime (CRT) and POS extensions.
 
 ## Log an event to Application Insights
 
@@ -197,3 +197,116 @@ For detailed information about how to build deployable packages, see [Create dep
 9. After the extension has been successfully deployed, open an instance of Modern POS (MPOS) or POS (CPOS) that has been activated against the Commerce Scale Unit.
 10. Run the extension scenario that that uses custom Application Insights logging.
 11. Refresh the query in Application Insights to verify that the traces from the extension are logged correctly.
+
+## Log events to Application Insights in the POS extension projects
+
+1. Open the ModernPOS.sln or CloudPos.sln from RetailSDK\POS.
+2. Create a 'Libraries' folder in Pos.Extensions project.
+3. Navigate to the 'Libraries' folder using Command prompt and run the 'npm i --save @microsoft/applicationinsights-web' command to install the npm package for java script App insights package. Once the package is installed the 'POS/Extensions/Libraries' folder should contain 'node_modules' folder containing the Application Insights library files.
+
+npm package must be installed before running the command. [npm package can be downloaded and installed from here](https://nodejs.org/en/).
+
+4. Check that the path 'POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js' exists in the library (this may change if the Application Insights library updates this path in the future versions).
+If the path is changed, update the library path in step 5, 6, and 7 to one that points to the main Application Insights library.
+
+5. Open the tsconfig.json form the POS.Extensions project and under the exclude section add an entry to the Libraries folder:
+
+```
+"exclude": [
+    "Libraries"
+  ],
+```
+
+6. Open the tsconfig.json form the POS.Extensions project and under the 'compilerOptions' section add the following properties :
+```
+"baseUrl": ".",
+"moduleResolution": "node",
+"paths": {
+    "applicationinsights-web": [ "Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web" ]
+}
+```
+
+7. Edit the Pos.Extensions.csproj under the 'CopyPosExtensionsFiles' add the below targets to have the Application Insights library be copied over to the POS application and be ready for consumption by the extension code:
+
+```
+<JavaScriptFileList Include="Libraries\\**\\*.js">
+    <InProject>false</InProject>
+    <Visible>false</Visible>
+</JavaScriptFileList>
+```
+
+8. Include the following in the 'manifest.json' file of the POS extension folder(package) that is consuming the Application Insights library:
+
+```
+{
+  "dependencies": [
+    {
+      "alias": "applicationinsights-web",
+      "format": "amd",
+      "modulePath": "../Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web"
+    }
+  ]
+}
+```
+Now the Application Insights library is now ready to be consumed and used in POS.
+
+## Consume the library and log events
+
+1. Create a new typescript file inside the POS extension folder(package) and name it as AppInsights.ts
+2. Copy the below code to used by the extensions in order to track events using Application Insights (update the instrumentation key created in the Azure App insights).
+
+```
+import { ApplicationInsights } from "applicationinsights-web";
+
+/**
+ * Example implementation of an Application Insights singleton that can be used to log events and metrics on Application Insights.
+ */
+export class AppInsights {
+    private static _instance: AppInsights = null;
+    private _applicationInsights: ApplicationInsights = null;
+
+    /**
+     * Gets a global reference to an application insights reference that may be used by other extension code.
+     * @returns {ApplicationInsights} The ApplicationInsights instance that may be used to log events.
+     */
+    public static get instance(): ApplicationInsights {
+        if (AppInsights._instance === null) {
+            AppInsights._instance = new AppInsights();
+        }
+
+        return AppInsights._instance._applicationInsights;
+    }
+
+    /**
+     * Initializes a new instance of AppInsights.
+     */
+    constructor() {
+        this._applicationInsights = new ApplicationInsights({
+            config: {
+                instrumentationKey: 'YOUR_INSTRUMENTATION_KEY_GOES_HERE'
+                /* ...Other Configuration Options... */
+            }
+        });
+        this._applicationInsights.loadAppInsights();
+    }
+}
+```
+3. In the desired extension code log the events by calling the AppInsights class like below:
+
+```
+AppInsights.instance.trackEvent({
+    name: "extensionTest",
+    properties: {
+        "property1": "value1",
+        "property2": "value2",
+    },
+    measurements: {
+        "measurement1": 1,
+        "measurement2": 2,
+    },
+});
+```
+
+
+
+
