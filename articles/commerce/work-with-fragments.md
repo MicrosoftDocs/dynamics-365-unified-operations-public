@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Work with fragments 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
