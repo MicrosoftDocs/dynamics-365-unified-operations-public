@@ -35,8 +35,10 @@ ms.dyn365.ops.version: AX 10.0.14
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to add a new custom button to a POS header bar. POS header bar extension is supported starting for Dynamics 365 Commerce version 10.0.14 or later.
+The custom header button must contain a html file to describe the control UX, styles, themes and CSS and typescript view model file for the logic. The class inside the file View model file must extend from CustomPackingItem class to inherit the header button properties and events. Cart changed event handler is exposed for the header button to get notified if something changes in the cart, extension code can do custom logic based on cart events if required or do custom business logic.
 
-Events and properties exposed for the CustomPackingItem class:
+
+## Events and properties exposed for the CustomPackingItem class:
 
 **Properties:**
 
@@ -76,12 +78,14 @@ Manifest.json schema is updated with nodes for the header button extension:
 ```
 
 
-Steps to add a custom button in the POS header bar
+## Steps to add a custom button in the POS header bar
+
 The below steps walkthrough how to add a custom button in the header bar and show the amount due by reading it form the cart.
+
 1.	Start Microsoft Visual Studio 2017.
 2.	Open the ModernPOS/CloudPOS solution from …\RetailSDK\POS.
-3.	In the POS.Extensions project, create a folder that is named HeaderExtensionSample.
-4.	In the HeaderExtensionSample folder, create a new html file and name it as CartAmountDuePackingItem.html and copy paste the below code:
+3.	In the POS.Extensions project, create a folder that is named **HeaderExtensionSample.**
+4.	In the **HeaderExtensionSample** folder, create a new html file and name it as CartAmountDuePackingItem.html and copy paste the below code:
 
 ```html
     <!DOCTYPE html>
@@ -114,7 +118,7 @@ The below steps walkthrough how to add a custom button in the header bar and sho
     </html>
 ```
 
-5.	In the HeaderExtensionSample folder, create a typescript file and name it as CartAmountDuePackingItem.ts and copy paste the below code:
+5.	In the **HeaderExtensionSample** folder, create a typescript file and name it as CartAmountDuePackingItem.ts and copy paste the below code:
 
 ```typescript
     /**
@@ -233,8 +237,8 @@ The below steps walkthrough how to add a custom button in the header bar and sho
         }
     }
 ```
-6.	In the HeaderExtensionSample folder, create a JSON file that is named manifest.json.
-7.	In the manifest.json file, add the following code.
+6.	In the **HeaderExtensionSample** folder, create a JSON file that is named **manifest.json.**
+7.	In the **manifest.json** file, add the following code.
 
 ```typescript
     {
@@ -261,7 +265,7 @@ The below steps walkthrough how to add a custom button in the header bar and sho
     }
 ```
 
-8.	In the POS.Extensions project, open the extensions.json file, and update it with HeaderExtensionSample samples, so that the POS includes this extension at runtime.
+8.	In the POS.Extensions project, open the extensions.json file, and update it with HeaderExtensionSample package details, so that the POS can include this extension package during intial load.
 
 ```typescript
   {
@@ -275,7 +279,7 @@ The below steps walkthrough how to add a custom button in the header bar and sho
 9.	Build the project.
 
 
-**Validate the customization**
+### Validate the customization
 
 Follow these steps to validate the customization.
 
