@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.1
 # Process credit cards without a hardware station
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
 
