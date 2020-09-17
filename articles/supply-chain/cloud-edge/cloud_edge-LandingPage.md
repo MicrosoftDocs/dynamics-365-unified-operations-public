@@ -61,12 +61,12 @@ Within manufacturing execution, cloud and edge scale units deliver the following
 
 For warehouse execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
 
-- Enable warehouse workers and warehouses to access planned warehouse work.
 - Enable warehouse workers to execute warehouse work using the warehouse mobile application.
 - Enable warehouse workers and managers to perform inquiries into on-hand inventory.
 - Enable warehouse workers and managers to create and execute inventory movements.
-- Enable warehouse workers to register receipts and do put-away.
-- Enable warehouse workers to ship orders with outbound document printing on the edge.
+- Enable warehouse wave methods processing, for replenishment and containerization on Edge.
+- Enable warehouse worker to register returns and purchase orders and conduct put away on Edge.
+- Enable warehouse worker to adjust inventory quantities on Edge.
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 

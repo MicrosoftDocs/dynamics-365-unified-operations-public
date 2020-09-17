@@ -61,9 +61,9 @@ Go to LCS main page (https://lcs.dynamics.com  for production or https://lcs.tie
 Click + button and create Implementation project.
 Make sure there is at least one sandbox slot available to deploy.
 
-:::image type="content" source="./media/cloud_edge-LCS2.png" alt-text="Select LCS project type":::
+:::image type="content" source="./media/cloud_edge-LBD-LCS2.png" alt-text="Select LCS project type":::
 
-:::image type="content" source="./media/cloud_edge-LCS3.png" alt-text="Navigate to LCS to configure your environment":::
+:::image type="content" source="./media/cloud_edge-LBD-LCS3.png" alt-text="Navigate to LCS to configure your environment":::
 
 ### Setup and deploy LBD environment with empty database
 
@@ -81,9 +81,9 @@ Make sure there is at least one sandbox slot available to deploy.
 1. Service LBD environment with combined application/platform package that was uploaded in previous step.
 1. Service LBD environment with custom deployable package that was uploaded in previous step.
 
-:::image type="content" source="./media/cloud_edge-LCS-ServiceLBDEnv1.png" alt-text="Service LBD Environment 1":::
+:::image type="content" source="./media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png" alt-text="Service LBD Environment 1":::
 
-:::image type="content" source="./media/cloud_edge-LCS-ServiceLBDEnv2.png" alt-text="Service LBD Environment 2":::
+:::image type="content" source="./media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png" alt-text="Service LBD Environment 2":::
 
 ### Update topology
 
@@ -111,8 +111,23 @@ Make sure there is at least one sandbox slot available to deploy.
 - Prepare - This is triggered through LCS Maintain > Update Settings.
 - Deploy - This needs to be triggered after preparation step is done (takes couple of minutes). Deploy can be triggered from environment's details LCS page.
 
-:::image type="content" source="./media/cloud_edge-LCS-ServiceLBD-UpdateSettings.png" alt-text="Deploy updates from LBD":::
+:::image type="content" source="./media/cloud_edge-LBD-LCS-ServiceLBD-UpdateSettings.png" alt-text="Deploy updates from LBD":::
 
-### Configure Scale Unit environment
+### Assign your LBD edge scale unit to a hub
 
-Use [Scale Unit Manager portal](https://sum.dynamcis.com) to connect your scale unit to your Dynamics 365 hub environment. Go here for more details on the Scale Unit Manager.
+#### Configuration step on the hub environment
+
+In order to assign your scale unit to a Dynamics 365 Supply Chain Management hub environment run the following steps in the hub environment:
+
+- Go to ScaleUnitHubSetup menu item
+- Enter the following value
+  - Name
+  - Hub AAD client id
+  - Get it the value from
+    - Hub and Scale unit setup values  (Web view)
+- Prepare workloads to be configured (see section below)
+- Enter the scale units and their associated work loads
+- Click on Setup Hub
+:::image type="content" source="media/cloud_edge-LBD-ConfigureHub.png" alt-text="Configure you hub for a edge scale unit":::
+
+### Configuration step on the LBD scale unit environment
