@@ -71,42 +71,45 @@ Dynamics 365 Commerce provides a module library of modules to use when building 
 
 ### Code-free style changes
 
-Using the site builder tool, the following changes can be made:
+Using Commerce site builder, the following code-free style changes can be made.
 
-* [Style presets](../style-presets.md) will allow a limited set of style changes for each module
-* [CSS overrides](../css-override-files.md) to override any module CSS
+- [Style presets](../style-presets.md) allow a limited set of style changes for each module.
+- [CSS overrides](../css-override-files.md) are used to override any module Cascading Style Sheets (CSS).
 
 ### Configuration changes using the online SDK
 
-Custom theme changes can be made to:
+Custom theme changes using the online SDK can be made to:
 
-* [Modify the module CSS](../css-override-files.md) to change any of the modules styling
-* [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout
-* [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions or resources
-* [Override a starter kit component](theme-component-override.md) to change the component behavior
+- [Modify the module CSS](../css-override-files.md) to change any of the modules styling.
+- [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout.
+- [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions, or resources.
+- [Override a module library component](theme-component-override.md) to change the component behavior.
 
 Additional customization options include:
 
-* [Data action overrides](data-action-overrides.md) which allow the customization of any built in data action
-* [Cloning a starter kit module](clone-starter-module.md) will create a new copy of the module library module and allow you to change any part of it, this is helpful for changes that cannot be done with any of the other methods
-* [Creating a custom module](create-new-module.md) is useful when a custom solution is needed that the starter kit modules do not provide.
+- [Data action overrides](data-action-overrides.md) that allow the customization of any built-in data action.
+- [Cloning a module library kit module](clone-starter-module.md) to create a new copy of a module library module and allow you to change any part of it. This option is used for changes that can't be done with any of the other methods.
+- [Creating a custom module](create-new-module.md) for when a custom solution is needed that the module library modules do not provide.
 
-More details are provided below as to which option is best for various requirements.
+More details on which option is best for various requirements are provided in the following section.
 
 ## Pick the right module library module customization option
 
 As listed above, there are many options available to customize a module library module. It is important to pick the right option for your needs.  
 
-For example, if you choose to clone a module, you are making a brand new copy of the module and will no longer get updates to the code if the module library module it was based off of is updated in a future module library release.  You will have to update those modules manually if required.  So cloning should only be used if absolutely necessary.  The below reference should help in picking the right solution for your requirements.
+For example, if you choose to clone a module library module, you will be making a brand new copy of the module and will no longer get updates to the code if the module library module it was based on is updated in a future module library release. Since you would then need to update the cloned modules manually if required, cloning should only be used if absolutely necessary. 
+
+The reference below should help you to pick the right solution for your requirements.
 
 ### Style changes
 
-If you have a scenario where a module library module does everything you need but you want to change the module look and feel, this can usually be done with CSS changes.  CSS changes will even allow you to hide unwanted elements in a module if desired.  The site [theme](theming.md) contains the CSS for all modules in SCSS files.  In some cases you can make CSS changes directly in the site builder tool which would not require any module or theme customizations at all.  The first two options below do not require the use of the Online SDK and are the easiest/fastest way to make CSS changes to a module.
+If you have a scenario where a module library module does everything you need but you want to change the module's look and feel, this can usually be done with CSS changes. CSS changes can allow you to hide unwanted elements in a module if desired. A site's [theme](theming.md) contains the CSS for all modules in Sassy Cascading Style Sheets (SCSS) files. In some cases you can make CSS changes that would not require any module or theme customizations directly in Commerce site builder. The first two options below do not require the use of the online SDK and are the easiest and fastest ways to make CSS changes to a module.
 
 #### Style presets
 
-A [style preset](../style-presets.md) is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from site builder. Style presets can be accessed from within the site builder tool by selecting the **Design** tab.  There are both global and module specific styles that can be modified.  
-When making CSS changes to a module the first thing to check is can it be done with using the custom [style preset](../style-presets.md) option in the site builder tool.  Each module has the ability to surface some style options that can be changed in the style preset UI in the site builder tool as shown above.  This allows simple changes for some CSS within a module including background color, text color and text size.  Note, this option is only available with version 10.0.12 release of the module library and is limited to a specific set of options for each starter kit module.
+A [style preset](../style-presets.md) is a stored set of all authorable style values across a site's theme. It can be used to immediately change the look of a site from Commerce site builder. Style presets can be accessed from within site builder by selecting the **Design** tab. Both global and module-specific styles can be modified. 
+
+When making CSS changes to a module, the first thing to check is whether they can be done with using the custom [style preset](../style-presets.md) option in site builder. As mentioned above, each module has the ability to surface some style options that can be changed in the style preset UI of site builder. This allows simple changes for some CSS within a module including background color, text color and text size.  Note, this option is only available with version 10.0.12 release of the module library and is limited to a specific set of options for each module library module.
 
 A current limitation is that style changes are globally scoped, meaning that module changes made will be reflected on all pages that leverage the module.  So if you set a background color on a module, the color will be used on all pages that use that module.  If you have a need to only change the style of a module on a single page and not others, you may want to consider CSS overrides (covered below) or adding new custom configurations to an existing module using module definition extensions (covered below).
 
@@ -142,11 +145,11 @@ If your CSS changes are more involved or you want to make the changes permanent,
 
 If you are hosting multiple sites in a single Dynamics 365 Commerce instance you can create as many themes as needed.  You can even create a base theme that other themes inherit from to minimize common changes across themes.  See the [Extend a theme from a base theme](extend-theme.md) document for more information.
 
-Not only does a theme allow you to customize the module CSS, it also supports extending module views and definitions and override starter kit components, see below for more information.
+Not only does a theme allow you to customize the module CSS, it also supports extending module views and definitions and override module library components, see below for more information.
 
 #### Create a new theme
 
-To create a new theme see the [Create a new theme](create-theme.md) document for details.  Creating a theme this way will give you a boiler plate theme that is empty and has no SCSS files for the starter kit module.  See the next section if you want to create a new theme that has starter kit styles as a starter.
+To create a new theme see the [Create a new theme](create-theme.md) document for details.  Creating a theme this way will give you a boiler plate theme that is empty and has no SCSS files for the module library module. See the next section if you want to create a new theme that uses module library styles as a starter.
 
 #### Clone the fabrikam theme
 
@@ -158,29 +161,29 @@ To clone the fabrikam theme as a starter to your own theme follow the below step
 
 #### Modify module CSS in a theme
 
-Once you have a custom theme created, the SCSS can be modified as needed. Each starter kit module SCSS is stored under the themes **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a colors.scss file which contains the common color definitions.
+Once you have a custom theme created, the SCSS can be modified as needed. Each module library module SCSS is stored under the themes **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a colors.scss file which contains the common color definitions.
 
 Once a theme is created or modified using the online SDK, a configuration package can be build and uploaded via LCS, see the [Package configurations and deploy them to an online environment](package-deploy.md) for details.  Once themes are deployed, the theme can be set for a site from the site builder tool, see the [Select a site theme](../select-site-theme.md) document for more information.
 
 #### Extend a module's view in a theme
 
-You may have a requirement that is more involved than CSS changes alone and you may need to change or alter the HTML on a starter kit module. Starter kit modules have been built with a separation of the React view file from the main component, allowing the view file to be overridden inside a theme.
+You may have a requirement that is more involved than CSS changes alone and you may need to change or alter the HTML on a module library module. Module library modules have been built with a separation of the React view file from the main component, allowing the view file to be overridden inside a theme.
 
 An example is you would like to re-order the HTML on the **Buybox** module on the product details page to have the product details show up above the price.  While CSS changes alone might be able to achieve this, by extending the module view you can alter the HTML on the page which could have more performant and responsive layout design.
 
-Extending a module view can be achieved by overriding a module's view inside of a theme.  Since these changes are scoped to a site theme, changing a sites theme can end up changing the complete look and feel of a module if desired.  An advantage of changing a module view versus cloning a module, is that over time as the module library modules are updated the updates are still applied.  For example, a starter kit module business logic could be improved over time and the view override will continue to work on the updated starter kit module code.
+Extending a module view can be achieved by overriding a module's view inside of a theme.  Since these changes are scoped to a site theme, changing a sites theme can end up changing the complete look and feel of a module if desired.  An advantage of changing a module view versus cloning a module, is that over time as the module library modules are updated the updates are still applied.  For example, a module library module business logic could be improved over time and the view override will continue to work on the updated module library module code.
 
 To extend a module see the [Extend a theme to add module extensions](theme-module-extensions.md) document.  You can find examples of module theme extensions in the starter **fabrikam** theme.  
 
 #### Extend a module definition extension
 
-Not only can you extend a modules view, but you can also extend a starter kit module definition to add or remove module configurations, slots, data actions or resources.  You can then access these new configurations from within a modules view extension, so in general when you add a theme definition extension you will also extend the module's view.  For more information see the [Theme definitions extensions](theme-module-extensions.md) document.
+Not only can you extend a modules view, but you can also extend a module library module definition to add or remove module configurations, slots, data actions or resources.  You can then access these new configurations from within a modules view extension, so in general when you add a theme definition extension you will also extend the module's view.  For more information see the [Theme definitions extensions](theme-module-extensions.md) document.
 
 For example if a module library module has a configuration for a title string you could add an additional sub-title string configuration to the module definition extension that can be set in the site builder and rendered in the module's extended view.
 
-### Override a starter kit component
+### Override a module library component
 
-The starter kit contains a set of helper component files that contain helper APIs that some modules use to render HTML or handle events that call server APIs.  These components can be overriden and changed as needed.  An example component is the **Price** component which renders the appropriate price including the markup for a price strike through if applicable.  If you need the pricing UI to change, you can override the specific component. See the [Override a starter kit component](theme-component-override.md) for more information.
+The module library contains a set of helper component files that contain helper APIs that some modules use to render HTML or handle events that call server APIs.  These components can be overriden and changed as needed.  An example component is the **Price** component which renders the appropriate price including the markup for a price strike through if applicable.  If you need the pricing UI to change, you can override the specific component. See the [Override a module library component](theme-component-override.md) for more information.
 
 ## Data action overrides
 
@@ -188,15 +191,15 @@ The starter kit contains a set of helper component files that contain helper API
 
 ## Clone a module library module
 
-If you cannot achieve the desired changes to a starter kit module but would like to use it as a starter you can [clone](clone-starter-module.md) a module.  This may be needed in scenarios where you need to change the business logic coded in the module that is not exposed in the module's view thus a view override won't do what you need.  Cloning will create a new module with a copy of the code from the starter kit module that was cloned and can then be changed as needed.  
+If you cannot achieve the desired changes to a module library module but would like to use it as a starter you can [clone](clone-starter-module.md) a module.  This may be needed in scenarios where you need to change the business logic coded in the module that is not exposed in the module's view thus a view override won't do what you need.  Cloning will create a new module with a copy of the code from the module library module that was cloned and can then be changed as needed.  
 
-Cloning should be a last resort since future updates to a starter kit module will not be picked up by the cloned module automatically.  In this case you will need to decide if any updates are needed in the cloned module and manually added.  To do this after a starter kit module is updated you can create a new clone then diff the code with your cloned module.  
+Cloning should be a last resort since future updates to a module library module will not be picked up by the cloned module automatically.  In this case you will need to decide if any updates are needed in the cloned module and manually added.  To do this after a module library module is updated you can create a new clone then diff the code with your cloned module.  
 
-See the [SDK and module library updates](sdk-updates.md) for more information on getting starter kit updates.
+See the [SDK and module library updates](sdk-updates.md) for more information on getting module library updates.
 
 ## Create a custom module
 
-If you need a feature that is not available in the starter kit set of modules, you can [create a custom module](create-new-module.md).  Creating a custom module is easy and can be done using the [add-module CLI command](cli-command-reference.md). Similar to starter kit modules, SCSS files can be added to the site theme and different themes can optionally change the modules view with a [module view extensions](theme-module-extensions.md) or the module definition can be extended as needed.
+If you need a feature that is not available in the module library set of modules, you can [create a custom module](create-new-module.md).  Creating a custom module is easy and can be done using the [add-module CLI command](cli-command-reference.md). Similar to module library modules, SCSS files can be added to the site theme and different themes can optionally change the modules view with a [module view extensions](theme-module-extensions.md) or the module definition can be extended as needed.
 
 ## Additional resources
 
