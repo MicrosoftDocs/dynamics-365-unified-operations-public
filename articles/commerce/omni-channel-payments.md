@@ -201,7 +201,7 @@ Follow these steps to run the scenario.
 3. Add one or more lines to the transaction.
 4. Select **Orders** to see the order options.
 5. Select **Ship all**, and then, when you're prompted, select **Customer order**.
-6. In the shipping method page, select **Standard overnight**, and then click **OK** to accept today's date as the shipping date. 
+6. In the shipping method page, select **Standard overnight**, and then select **OK** to accept today's date as the shipping date. 
 7. Select **OK** to accept the current date as the date of pickup.
 8. Select **Pay card** to initiate the payment.
 9. Tender the card payment for the amount that is due for the deposit. 
