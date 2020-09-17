@@ -29,8 +29,8 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Setup
-Once a hypothesis and metrics are defined, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be one or more experiments with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
+# Setup an experiment
+Once a hypothesis and metrics are defined, follow the required steps to create an experiment in the third-party service. These steps will vary from service to service, but the end result will be an experiment with a set of variations to be shown to experiment participants. If the connector is configured properly, the list of experiments and variations from here will surface in site builder within about 5 minutes.
 
 Every experiment needs metrics to measure its impact. Follow the steps below to enable metrics computation in the third-party service using live telemetry events from Dynamics 365 Commerce:
 1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
