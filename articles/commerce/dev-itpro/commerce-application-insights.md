@@ -200,15 +200,15 @@ For detailed information about how to build deployable packages, see [Create dep
 
 ## Log events to Application Insights in the POS extension projects
 
-1. Open the ModernPOS.sln or CloudPos.sln from RetailSDK\POS.
-2. Create a 'Libraries' folder in Pos.Extensions project.
-3. Navigate to the 'Libraries' folder using Command prompt and run the 'npm i --save @microsoft/applicationinsights-web' command to install the npm package for java script App insights package. Once the package is installed the 'POS/Extensions/Libraries' folder should contain 'node_modules' folder containing the Application Insights library files.
+1. Navigate to RetailSDK\POS\Extensions folder and create a new folder called 'Libraries'.
+2. Navigate to the 'Libraries' folder using Command prompt and run the 'npm i --save @microsoft/applicationinsights-web' command to install the npm package for java script App insights package. Once the package is installed the 'POS/Extensions/Libraries' folder should contain 'node_modules' folder containing the Application Insights library files.
 
 npm package must be installed before running the command. [npm package can be downloaded and installed from here](https://nodejs.org/en/).
 
-4. Check that the path 'POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js' exists in the library (this may change if the Application Insights library updates this path in the future versions).
+3. Check that the path 'POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js' exists in the library (this may change if the Application Insights library updates this path in the future versions).
 If the path is changed, update the library path in step 5, 6, and 7 to one that points to the main Application Insights library.
 
+4. Open the ModernPOS.sln or CloudPos.sln from RetailSDK\POS.
 5. Open the tsconfig.json form the POS.Extensions project and under the exclude section add an entry to the Libraries folder:
 
 ```typescript
@@ -220,14 +220,13 @@ If the path is changed, update the library path in step 5, 6, and 7 to one that 
 6. Open the tsconfig.json form the POS.Extensions project and under the 'compilerOptions' section add the following properties :
 
 ```typescript
-"baseUrl": ".",
-"moduleResolution": "node",
+"baseUrl": "./",
 "paths": {
     "applicationinsights-web": [ "Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web" ]
 }
 ```
 
-7. Edit the Pos.Extensions.csproj under the 'CopyPosExtensionsFiles' add the below targets to have the Application Insights library be copied over to the POS application and be ready for consumption by the extension code:
+7. Edit the Pos.Extensions.csproj under the 'CopyPosExtensionsFiles' section add the below targets to have the Application Insights library be copied over to the POS application and be ready for consumption by the extension code:
 
 ```typescript
 <JavaScriptFileList Include="Libraries\\**\\*.js">
@@ -253,8 +252,9 @@ Now the Application Insights library is now ready to be consumed and used in POS
 
 ## Consume the library and log events
 
-1. Create a new typescript file inside the POS extension folder(package) and name it as AppInsights.ts
-2. Copy the below code to used by the extensions in order to track events using Application Insights (update the instrumentation key created in the Azure App insights).
+1. Open the ModernPOS.sln or CloudPos.sln from RetailSDK\POS.
+2. Create a new typescript file inside the POS extension folder(package) and name it as AppInsights.ts
+3. Copy the below code to used by the extensions in order to track events using Application Insights (update the instrumentation key created in the Azure App insights).
 
 ```typescript
 import { ApplicationInsights } from "applicationinsights-web";
@@ -292,7 +292,7 @@ export class AppInsights {
     }
 }
 ```
-3. In the desired extension code log the events by calling the AppInsights class like below:
+4. In the desired extension code log the events by calling the AppInsights class like below:
 
 ```typescript
 AppInsights.instance.trackEvent({
