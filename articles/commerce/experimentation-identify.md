@@ -36,7 +36,7 @@ Identify is the first stage in the experimentation journey where you decide the 
 Define the assumption or theory you want to validate with your experiment and the success metrics that you expect it to impact.
 
 ## Decide what you want to experiment on
-Define the scope of the experiment - full or partial. Think **partial** if you want to target a specific portion of a page and do not want to affect content that is not part of the experiment. Think **full** if you want to target an entire page or fragment. In this case, a new instance copy of the entire page or fragment is created i.e. content changes will not be synchronized across experimentation instances.
+Define the scope of the experiment - full or partial. Choose **partial** if you want to target a specific portion of a page. In this case, content changes made to the default page or fragment will be automatically synchronized across variations. Choose **full** if you want to target an entire page or fragment. In this case, separate copies of the default page or fragment are created i.e. content changes will need to be manually synchronized across variations.
 
 ## Decide how you want to publish your experiment
 Think about whether you want to schedule your experiment to be published in a publish group or directly publish to your live site. This will help you determine where you want to create your experiment.
