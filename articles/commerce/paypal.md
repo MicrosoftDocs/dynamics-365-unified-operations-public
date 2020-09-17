@@ -40,7 +40,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 | Term | Description |
 |---|---|
-| PayPal Checkout | Also known as the PayPal "button", PayPal Checkout describes customer experience and integration supported by the PayPal Connector. |
+| PayPal Wallet | Also known as the PayPal "button", PayPal Checkout describes customer experience and integration supported by the PayPal Connector. |
 | Wallet | A payment type which does not include traditional payment characteristics, such as the BIN range and expiration date, that are used to differentiate among credit and debit card types. |
 
 ## Overview
@@ -55,11 +55,11 @@ The Microsoft Dynamics 365 Payment Connector for PayPal is not available in Chin
 
 ## Functional overview
 
-### PayPal Checkout in Storefront 
+### PayPal Wallet in Storefront 
 
-The connector supports the use of the PayPal Checkout, or PayPal button, for e-commerce payments. When the connector is configured for the web Storefront, at the time of checkout customers will be presented with the option to pay using the PayPal button. When the customer selects the PayPal button, they will be redirected to a PayPal Checkout mini browser window where they will be authenticated by PayPal and be able to select their method of payment. Upon succesful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. Once the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to the Commerce back office.
+The connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the connector is configured for the web Storefront, at the time of checkout customers will be presented with the option to pay using the PayPal button. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini browser window where they will be authenticated by PayPal and be able to select their method of payment. Upon succesful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. Once the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to the Commerce back office.
 
-For more information on PayPal Checkout, please visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
+For more information on PayPal Wallet, please visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
 
 ### Fulfillment
 
