@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic explains how to add a new custom button to a POS header bar. The POS header bar extension is supported by Dynamics 365 Commerce version 10.0.14 or later. The custom header button must contain an HTML file with CSS to describe the control user interface, styles, and themes, and a typescript view model file to specify the logic. The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic based on cart events or do custom business logic.
 
-## Events and properties exposed for the CustomPackingItem class
+## CustomPackingItem class
 
 ### Properties
 
@@ -55,10 +55,10 @@ This topic explains how to add a new custom button to a POS header bar. The POS 
 | **get visible(): boolean** | Gets the visible value. |
 | **set visible(isVisible: boolean)** | Sets the visible value. |
 | **abstract onReady(packedElement: HTMLElement, unpackedElement: HTMLElement): void** | Called when the control element is ready. |
-| **dispose(): void** | Disposes the control releasing its resources. |
+| **dispose(): void** | Disposes of the control and releases its resources. |
 | **protected abstract init(state: ICustomPackingItemState): void** | Initializes the control. |
 
-Manifest.json schema is updated with nodes for the header button extension:
+You must add nodes for the header button extension in the **manifest.json**, and shown in the following code example.
 
 ```typescript
 "header": {
@@ -80,7 +80,7 @@ The following steps show how to add a custom button in the header bar and show t
 1. Start Microsoft Visual Studio 2017.
 2. Open the **ModernPOS/CloudPOS** solution from **\RetailSDK\POS**.
 3. In the **POS.Extensions** project, create a folder named **HeaderExtensionSample**.
-4. In the **HeaderExtensionSample** folder, create a new HTML file and name it **CartAmountDuePackingItem.html**.
+4. In the **HeaderExtensionSample** folder, create a new HTML file named **CartAmountDuePackingItem.html**.
 5. Copy and paste the following code into the file.
 
     ```html
