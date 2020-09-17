@@ -99,6 +99,9 @@ The following omni-channel payment scenarios are supported:
 - Buy in store A, pick up in store B
 - Buy in store A, ship to customer
 
+    > [!NOTE]
+    > Payments made in the Call Center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the point of sale. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
+
 Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omni-channel payments. 
 
 The following sections describe the steps for each scenario and show how to run the scenario by using demo data. 
