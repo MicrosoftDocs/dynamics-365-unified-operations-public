@@ -38,4 +38,4 @@ EU Directive lists the information that is required by suppliers for their custo
 - For credit notes, the number and date of the original invoice are printed along with the reason for correction.
 
 > [!NOTE]
-> Verify on the **Form setup** page (**Accounts receivable** > **Setup** > **Forms** > **Form setup**, on the **General tab**), that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency**.
+> Verify on the **Form setup** page (**Accounts receivable** > **Setup** > **Forms** > **Form setup** and **Project management and accounting** > **Setup** > **Forms** > **Form setup*, on the **General tab**), that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency**.
