@@ -86,6 +86,8 @@
         href: data-entities/integration-overview.md
       - name: Priority-based throttling
         hreF: data-entities/priority-based-throttling.md
+      - name: Priority-based throttling FAQ
+        href: data-entities/throttling-faq.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
