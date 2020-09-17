@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Starter kit overview 
-description: This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
+title: Module library overview 
+description: This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
 author:  anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,22 +29,21 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Starter kit overview
-
+# Module library overview
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
+This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
 
 ## Overview
 
-The Dynamics 365 Commerce starter kit is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
+The Dynamics 365 Commerce module library is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
 
-Themes can be applied to the modules in the starter kit to change their look and feel. The themes use Cascading Style Sheets (CSS). A theme for a fictitious e-Commerce site that is named "Fabrikam" is provided as part of the starter kit and can be used as a reference.
+Themes can be applied to the modules in the module library to change their look and feel. The themes use Cascading Style Sheets (CSS). A theme for a fictitious e-Commerce site that is named "Fabrikam" is provided as part of the module library and can be used as a reference.
 
-## Starter kit modules
+## Module library modules
 
-The following types of modules are provided in the starter kit:
+The following types of modules are provided in the module library:
 
 - **Container module** – A container module is a simple module that acts as a host for other modules. It controls the layout of the modules that are inside it.
 - **Marketing modules** – Marketing modules include content block, text block, video player, and carousel modules. All these modules can be used to showcase content. They can be put on any page and are driven by data from the content management system (CMS).

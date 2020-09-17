@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -333,7 +333,7 @@
           href: asset-management/work-orders/automatic-update-of-asset-counters.md
         - name: Maintenance checklists
           href: asset-management/work-orders/maintenance-checklists.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime for work orders
           href: asset-management/work-orders/maintenance-downtime.md
         - name: Add fault to work order
           href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +367,7 @@
           href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
         - name: Create work orders
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
       - name: Capacity planning
         items:
@@ -1353,6 +1353,8 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
+        - name: Safety margins
+          href: master-planning/planning-optimization/safety-margins.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -2623,6 +2625,8 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization

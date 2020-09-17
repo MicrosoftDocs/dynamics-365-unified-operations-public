@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Shipping address module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
