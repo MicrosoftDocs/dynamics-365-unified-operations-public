@@ -105,7 +105,7 @@ One way to reproduce this issue is do the following:
 1. Update the match status and post.
 1. Note that the error "Account number for transaction type Purchase expenditure for product does not exist" is now shown when we generate an invoice form a purchase order.
 
-### Issue fix
+### Issue resolution
 
 This is dependent on the parameter settings for invoices and invoice groups. See this blog bost ofr rull details: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
 

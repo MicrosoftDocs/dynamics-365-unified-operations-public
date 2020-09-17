@@ -65,7 +65,7 @@ SysWorkflowParticipantProvider-resolveParticipants<br>
 SysWorkflowServiceProvider-resolveParticipant<br>
 SysWorkflowQueue-resume
 
-### Issue fix
+### Issue resolution
 
 This is an issue that could occur due to inconsistency in purchase order distributions.
 
@@ -85,7 +85,7 @@ It is possible to unblock this issue and reset the purchase order to a *Draft* s
 
 For a purchase order under change management, when a requested change is "just" to cancel a delivery remainder on the line(s), the purchase order will, when it is approved, go directly to a *Confirmed* state and no journal is created.
 
-### Issue fix
+### Issue resolution
 
 Cancelling the delivery remainder doesn't influence the contents of the confirmation journal. This functionality should be used when the line has been partially received and the remainder quality is to be cancelled in the process step after the purchase order has been confirmed with the vendor.
 
@@ -97,7 +97,7 @@ If this should be reflected on the purchase order confirmation, the quantity sho
 
 After cancelling purchase orders that were in a *Confirmed* state, the cancelled purchase orders still appear in the list of draft purchase orders in the **Purchase order preparation** workspace.
 
-### Issue fix
+### Issue resolution
 
 This happens only for purchase orders that are under change management because the cancellation is seen as a change that needs to be approved. The approval can be done automatically by the system. Therefore, the process is to submit the cancelled purchase order to the approval workflow so that it can get into an *Approved* state. Once this is done, the purchase order will not appear in the list of draft purchase orders in the **Purchase order preparation** workspace.
 

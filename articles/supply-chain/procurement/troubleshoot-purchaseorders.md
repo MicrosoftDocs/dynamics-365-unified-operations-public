@@ -69,7 +69,7 @@ To unblock this issue and reset the purchase order to a *Draft* state, go to **P
 
 You see the error "One or more accounting distributions is either over-distributed or under-distributed."
 
-### Issue fix
+### Issue resolution
 
 This issue can occur due to inconsistency in purchase order distributions.
 
@@ -125,7 +125,7 @@ Suppose a product has an approved vendor with effective date *01/11/2018* and ex
 
 > Cannot create a record in Approved supplier list (PdsApproveVendorList). The 'Expiration' value needs to be greater than or equal to the 'Effective' value.
 
-### Issue fix
+### Issue resolution
 
 It is only possible to extend the period that the vendor is approved for. The following rules apply:
 
