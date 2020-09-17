@@ -85,7 +85,7 @@ The status of the configuration is updated to **Share**, and the configuration i
 
 ## Delete a configuration from the Global repository
 You can delete a configuration that your organization has created, by using the following steps: 
-1.	In the **Electronic reporting** workspace, check your configuration provider is **Active**. For more information see prerequisites above.
+1.	In the **Electronic reporting** workspace, check your configuration provider is **Active**. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 2.	Click **repository** on your active configuration provider.
 3.	Select repository type **Global** and click **Open**.
 4.	Find the configuration that you want to delete by using the **Filter** functionality in the **Filter FastTab**.
