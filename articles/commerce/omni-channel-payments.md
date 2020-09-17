@@ -5,7 +5,7 @@ title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -100,7 +100,7 @@ The following omni-channel payment scenarios are supported:
 - Buy in store A, ship to customer
 
     > [!NOTE]
-    > Payments made in the Call Center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the point of sale. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
+    > Payments made in the call center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
 
 Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omni-channel payments. 
 
