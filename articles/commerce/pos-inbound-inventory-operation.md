@@ -140,6 +140,18 @@ Validations occur during the receiving process for the document lines. They incl
 
 Over-receiving isn't permitted for transfer order documents. Users will always receive errors if they try to receive more than was shipped for the transfer order line.
 
+### Close purchase order lines
+
+You could close the remaining quantity of inbound purchase order during the receiving process if the shipper has confirmed that they can’t ship the full quantity that was requested. To use this capability, the company must be configured to allow underdelivery of purchase orders. Additionally, an underdelivery tolerance percentage must be defined for the purchase order line.
+
+To configure the company to allow underdelivery of purchase orders, in HQ, go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**. On the **Delivery** tab, turn on the **Accept underdelivery** parameter. Then run the **1070** (**Channel configuration**) distribution schedule job to sync the setting changes to channels.
+
+**Underdelivery** tolerance percentage for a purchase order line can be predefined on products as part of the product configurations in HQ. Alternatively, they can be set or overwritten on a specific purchase order in HQ.
+
+After an organization completes the purchase order underdelivery configurations, POS users will see a new **Close remaining quantity** option in the **Details** pane when an inbound purchase order line is selected in the **Inbound inventory** operation. If the user closes the remaining quantity, POS performs a validation to verify whether the quantity being closed is within the underdelivery tolerance percentage defined on the purchase order line. If the underdelivery tolerance is exceeded, an error message is displayed and the user won’t be able to close the remaining quantity until the previously received quantity plus the **Receiving now** quantity meets or exceeds the minimal quantity that needs to be received based on the underdelivery tolerance percentage. 
+
+With **Close remaining quantity** option turned on for a purchase order line, when the user completes the receipt by using the **Finish receiving** action, a closure request is also sent to HQ, and any unreceived quantity of this order line will be cancelled and the line is considered fully received. 
+
 ### Receiving location-controlled items
 
 If the items that are being received are location-controlled, users can select the location where they want to receive the items during the receiving process. We recommend that you configure a default receiving location for your store warehouse, to make this process more efficient. Even if a default location is configured, users can override the receiving location on selected lines as they require.
