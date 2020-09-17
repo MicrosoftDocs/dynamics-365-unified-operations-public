@@ -33,11 +33,24 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic describes how to fix common issues that you might encounter while working with Discrete Manufacturing.
 
-##  Changing the location in a sales order header does not update the tax information 
-If site or warehouse or delivery address is being changed on a sales order header or at the line level, the case tax information is not getting updated for the lines automatically.
+##  Warehouse management processes are currently being used. If work lines are not yet registered, you can cancel the created work and any load or shipment lines, and then continue with the picking or shipping process.
+The cause of this is because the inventory transaction is in status Picked which means that the material is picked. Therefore it is not possible to reserve or release work for that line.
 		
 **Resolution/Fix**
-That's because the delivery address, site and warehouse doesn't automatically get changed at the line level either - you'll need to update that yourself
+You can:
 
-##  When there are two trade agreements for the same/overlapping period, then the same agreement line is always picked.
-If there are two trade agreements defined for the same/overlapping period, then when creating sales order lines with those items, the same trade agreement seems to be picked each time.
+1. Reverse production order status to Estimated or Released
+2. Or click "Stop and unpick" button on the Warehouse tab of the production order (this will unpick all picked transactions). Then, click "Remove stop" to proceed with processing the production order.
+
+Here is an explanation of the Unpick and Stop function:
+
+**Unpick**
+This action will reverse the status of inventory transactions for BOM/Formula lines in status "Picked" to "On order". The lines gets to status "Picked" when work for raw material picking is completed. This state blocks the production order from being reset to status: Created. The Unpick function can then be used to revert the transactions from status Picked, and then the production order can be reset to status Created.
+
+**Stop**
+This actions sets a stop flag on the production order which prevents any status update on the production order (You can find the Stop flag field under the Warehouse fasttab on the production order details page).
+
+>Note:
+>- The fields are only visible when the production order is created for items enabled for the warehouse processes.
+>- The field group is only visible under the Warehouse tab in the production order details page. The fields are not visible under the Warehouse tab in the production order list page
+
