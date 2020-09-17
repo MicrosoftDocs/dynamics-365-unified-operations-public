@@ -36,5 +36,5 @@ Every experiment needs metrics to measure its impact. Follow the steps below to 
 1. Go to the **Pages** tab in site builder's left navigation pane and click on the desired page. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module of interest.
 1. Click on **View** to see the list of all event IDs associated and copy the one(s) you want to paste into the third-party service. If you need more than one event ID, view and copy them one by one. 
-    - Click [here](https://docs.microsoft.com) to view all available events and attributes, including tracking page views and revenue.
+    - Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-component-events-diagnostics-troubleshooting#e-commerce-events) to view all available events and attributes, including tracking page views and revenue.
 1. Use the event as described in the third-party service to track success metrics for the experiment.
