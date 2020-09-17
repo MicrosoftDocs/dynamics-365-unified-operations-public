@@ -43,6 +43,28 @@ When CSP is turned on for an e-Commerce site, it helps enhance security by block
 
 For more information about CSP, see [Content Security Policy Reference](https://content-security-policy.com/).
 
+## CSP Settings
+
+### Turn off CSP for a site
+
+To prevent CSP from applying policies to your site, you can turn it off for that site.
+
+1. In the site builder tool, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Disable content security policy** check box.
+
+    ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
+
+1. Select **Save and Publish**.
+
+
+### Enable report only mode
+If enabled, content security policy will not be enforced, but any violations will be reported to URI's specified by the report-uri directive.
+
+### Enable nonce
+Enabling nonce (number used once) will block the execution of all inline script except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module.  A unique cryptographic nonce (number used once) is generated and added to each script specified in the CSP header.
+
+
 ## CSP directives in Commerce
 
 The following CSP directives can be used on Commerce sites.
@@ -113,21 +135,6 @@ You can turn off CSP in a page mock by using the following code.
 	}
 }
 ```
-
-## Enable Nonce
-Enabling nonce (number used once) will block the execution of all inline script except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module.  A unique cryptographic nonce (number used once) is generated and added to each script specified in the CSP header.
-
-## Turn off CSP for a site
-
-To prevent CSP from applying policies to your site, you can turn it off for that site.
-
-1. In the site builder tool, select the site you are working on.
-1. Select **Site settings**, and then select the **Extensions** tab.
-1. On the **Content security policy** tab, select the **Disable content security policy** check box.
-
-    ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
-
-1. Select **Save and Publish**.
 
 ## Additional resources
 
