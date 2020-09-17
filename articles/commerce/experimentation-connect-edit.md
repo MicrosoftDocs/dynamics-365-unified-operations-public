@@ -47,7 +47,7 @@ Next, choose the procedure below that matches the scope of your experiment.
     > [!NOTE]
     > Remember to enable the "Experiment on pages or fragments" feature flag if you want to experiment on a full page or fragment.
 1. In the final step, click on **Generate variations and exit wizard** to auto-generate the variations. These are nothing but copies of the original page or fragment you previously chose. 
-1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a **control** or base variation to compare to by leaving it unchanged.
+1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a control or base variation to compare to by leaving one of the variations unchanged.
 1. Select the module to be experimented on, click on the ellipsis for more options and then click on **Add to experiment**.
 
 ## Edit variations for experiment with entire scope
@@ -56,5 +56,5 @@ Next, choose the procedure below that matches the scope of your experiment.
     > [!NOTE]
     > Remember to enable the "Experiment on pages or fragments" feature flag if you want to experiment on a full page or fragment.
 1. In the final step, click on **Generate variations and exit wizard** to auto-generate the variations. These are nothing but copies of the original page or fragment you previously chose. 
-1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a **control** or base variation to compare to by leaving it unchanged.
+1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a control or base variation to compare to by leaving one of the variations unchanged.
 
