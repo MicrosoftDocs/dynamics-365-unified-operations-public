@@ -40,3 +40,5 @@ Define the scope of the experiment - full or partial. Choose **partial** if you 
 
 ## Decide how you want to publish your experiment
 Think about whether you want to schedule your experiment to be published in a publish group or directly publish to your live site. This will help you determine where you want to create your experiment.
+
+Read more about [publishing your experiment](experimentation-preview-publish.md).
