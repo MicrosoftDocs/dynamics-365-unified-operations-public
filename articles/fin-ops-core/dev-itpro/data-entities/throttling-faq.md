@@ -1,84 +1,116 @@
-# Priority-based Throttling FAQ
+---
+# required metadata
 
-[!include[banner](../includes/banner.md)]
+title: Priority-based throttling FAQ
+description: This topic provides information about frequently asked questions (FAQ) about priority-based throttling for Odata and custom service-based integrations.
+author: hasaid
+manager: AnnBe
+ms.date: 09/14/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 21311
+ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: sunilg
+ms.search.validFrom: 2020-07-31
+ms.dyn365.ops.version: Platform update 37
+
+---
+
+# Priority-based throttling FAQ
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides answers to some frequently asked questions about [Priority-based throttling](priority-based-batch-scheduling.md). 
 
-## Can you post the link to the Data managment Yammer group?
+## How do I access the Data managment Yammer group?
 
-Group link https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417 
+[Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417)
 
-## Will a retry request get preferential treatment over a brand new request?
+## Will a retry request receive preferential treatment over a new request?
 
 No. 
 
-## Is the report that was used to determine when throttling might happen ?
+## Is there a report that determines when throttling might happen?
 
-Yes, a report will be provided than can be accessed through LCS Raw logs within environment monitoring page.
+Yes. A report will be provided than can be accessed through LCS Raw logs within environment monitoring page.
 
 ## Will throttling impact DIXF and Batch?
 
-No, Throttling is only for Odata and custom service integrations.
+No. Throttling is only for Odata and custom service integrations.
 
-## In Preview, if Priorities are not configured , will my requests get throttled ?
+## In Preview, if Priorities are not configured, will my requests get throttled?
 
-No, Only telemetry will be available, but the actual throttling happen if you configure priorities and this is the recommended approach in NON prod environment within the Preview period
+No, as only the telemetry is available. The actual throttling happens if you configure priorities, This is the recommended approach in NON-prod environment within the Preview period.
 
 ## What happens to the requests if user didn't retry the throttled request? 
 
-Current if the request is not retried when a 429 error received, it will not be processed.
+Currently, if the request is not retried when a 429 error is received, the request will not be processed.
 
-## Will historic throttling information be used to advise on resizing of environments?
+## Will historic throttling information be used to advise when resizing environments?
 
-Yes, for 1 month, you can export to ecxel for more analysis and archiving.
+Yes. For one month, you can export the information to Microsoft Excel for more analysis and archiving.
 
-## Is throttling functionality D365 version specific? If yes in which version is this available?
+## Is throttling functionality version specific? If yes, in which version is this available?
 
-Priority based throttling (This feature) will be available in Preview starting platform update 37.
+Priority based throttling will be available in Preview starting with the **Platform updates for version 10.0.13 of Finance and Operations apps** release.
 
-## Any plans to provide and Enable/Disable option per "Priority mapping" grid entry?
+## Are there plans to provide an option for the Priority mapping grid entry?
 
 We will consider this request in a future release.
 
-## Will my interactive users’ requests get throttled ?
+## Will my interactive users’ requests get throttled?
 
-No, there will be no impact on interactive (Online) users requests.
+No. There will be no impact on interactive (Online) users requests.
 
-## If I am facing performance issue in F&O while loading a form or processing a business document how that performance issue is different from Throttling?
+## If I am facing performance issue in Dynamics 365 Finance while loading a page or processing a business document, how is that performance issue different from throttling?
 
-Throttling will help maintain a healthy system when there is a resource constraint, it will not impact any forms actions.
+Throttling will help maintain a healthy system when there is a resource constraint and it will not impact any page actions.
 
 ## How can I determine the wait time before retrying a throttled request?
 
-When a request get throttled, the response header will include a time to be used in retry logic.
+When a request is throttled, the response header will include a time to be used in retry logic.
 
 ## Is it recommended to use a dedicated integration account, instead of just the generic admin user account?
 
-Yes, but it is not mandatory.
+Yes, it is recommended but is not mandatory.
 
-## Is Throttling dependable of the Tier your FO environment is running on?
+## Is throttling dependent on the Tier your environment is running on?
 
-In the initial release, No. throttling will calculate its threshold based on the resources available per environment.
+In the initial release, No. Throttling will calculate its threshold based on the resources available for each environment.
 
-## Is there any specification on legal entity  ?
-
-No.
-
-## is throttling impact BYOD export ?
+## Is there any specification on legal entity?
 
 No.
 
-## Will throttling monitoring be available (when) in Azure Application Insights?
+## Does throttling impact BYOD export?
+
+No.
+
+## Will throttling monitoring be available you are in Azure Application Insights?
 
 Monitoring will be onboarded to any available tool in the future.
 
-## If a Production environment is regularly running out of resources wouldn't Microsoft need to re-size it? Is that not correct?
+## If a Production environment is regularly running out of resources wouldn't Microsoft need to re-size it? 
 
-Correct, Sizing estimate will also need to be revalidated and uploaded.
+Yes. Sizing estimate will also need to be revalidated and uploaded.
 
 ## After April 2021, could priority-based throttling be overridden by the system?
 
-System will use default values if no priorities are configured after April 2021.
+The system will use default values if no priorities are configured after April 2021.
 
 ## Can the throttling engine be configured (thresholds)?
 
