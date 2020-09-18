@@ -71,6 +71,9 @@ The following cart module settings can be configured at **Site Settings \> Exten
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. The route can be configured at the site level, allowing retailers to take the customer back to the home page or any other page on the site.
 
+>[!IMPORTANT]
+> Beginning Dynamics 365 Commerce 10.0.14 release, items in cart will be aggregated based on the settings defined in the Online functionality profile for the online store in Headquarters. For more information, see how to create an [Online functionality profile](online-functionality-profile.md) and set the properties necessary for aggregation.
+
 ## Commerce Scale Unit interaction
 
 The cart module retrieves product information by using Commerce Scale Unit APIs. The cart ID from the browser cookie is used to retrieve all the product information from Commerce Scale Unit.
@@ -114,3 +117,5 @@ To add a cart module to a new page and set the required properties, follow these
 [Gift card module](add-giftcard.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+
+[Online functionality profile](online-functionality-profile.md)
