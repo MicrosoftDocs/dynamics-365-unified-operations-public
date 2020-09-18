@@ -5,7 +5,7 @@ title: Log extension events to Application Insights
 description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/15/2020
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -213,10 +213,10 @@ For detailed information about how to build deployable packages, see [Create dep
 
 5. Check that the file **POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js** exists in the library.
 
-    The filename might change in future versions of the Application Insights library. If the path changes, update the library path in steps 8 and 10 to one that points to the main Application Insights library.
+    The file name might change in future versions of the Application Insights library. If the path changes, update the library path in steps 8 and 10 to a path that points to the main Application Insights library.
 
-6. Open the **ModernPOS.sln** or **CloudPos.sln** from **RetailSDK\POS**.
-7. Open the **tsconfig.json** file from the **POS.Extensions** project. Under the **exclude** section, add an entry to the **Libraries** folder:
+6. Open **ModernPOS.sln** or **CloudPos.sln** from **RetailSDK\POS**.
+7. Open the **tsconfig.json** file from the **POS.Extensions** project. Under the **exclude** section, add an entry to the **Libraries** folder.
 
     ```typescript
     "exclude": [
@@ -224,7 +224,7 @@ For detailed information about how to build deployable packages, see [Create dep
       ],
     ```
 
-8. Open the **tsconfig.json** file from the **POS.Extensions** project. Under the **compilerOptions** section, add the following properties:
+8. Open the **tsconfig.json** file from the **POS.Extensions** project. Under the **compilerOptions** section, add the following properties.
 
     ```typescript
     "baseUrl": "./",
@@ -233,7 +233,7 @@ For detailed information about how to build deployable packages, see [Create dep
     }
     ```
 
-9. Edit the **Pos.Extensions.csproj** file in the **CopyPosExtensionsFiles** section. Add the following targets to have the Application Insights library be copied over to the POS application, so that they can be consumed by the extension code
+9. Edit the **Pos.Extensions.csproj** file in the **CopyPosExtensionsFiles** section. Add the following targets to copy the Application Insights library to the POS application, so that the targets can be consumed by the extension code.
 
     ```typescript
     <JavaScriptFileList Include="Libraries\\**\\*.js">
@@ -242,7 +242,7 @@ For detailed information about how to build deployable packages, see [Create dep
     </JavaScriptFileList>
     ```
 
-10. Include the following node in the **manifest.json** file of the POS extension folder (package) that is consuming the Application Insights library:
+10. Include the following node in the **manifest.json** file of the POS extension folder (package) that is consuming the Application Insights library.
 
     ```typescript
     {
@@ -262,7 +262,7 @@ The Application Insights library is now ready to be consumed and used in POS.
 
 1. Open the **ModernPOS.sln** or **CloudPos.sln** solution from **RetailSDK\POS**.
 2. Create a new TypeScript file inside the POS extension folder (package) and name it **AppInsights.ts**.
-3. Copy the following code to the file. The code is used by the extensions to track events using Application Insights. Use the instrumentation key created in the Azure App Insights.
+3. Copy the following code to the file. The code is used by the extensions to track events using Application Insights. Use the instrumentation key created in Azure App Insights.
 
     ```typescript
     import { ApplicationInsights } from "applicationinsights-web";
@@ -275,8 +275,8 @@ The Application Insights library is now ready to be consumed and used in POS.
         private _applicationInsights: ApplicationInsights = null;
 
         /**
-         * Gets a global reference to an application insights reference that may be used by other extension code.
-         * @returns {ApplicationInsights} The ApplicationInsights instance that may be used to log events.
+         * Gets a global reference to an Application Insights reference that can be used by other extension code.
+         * @returns {ApplicationInsights} The ApplicationInsights instance that can be used to log events.
          */
         public static get instance(): ApplicationInsights {
             if (AppInsights._instance === null) {
@@ -301,7 +301,7 @@ The Application Insights library is now ready to be consumed and used in POS.
     }
     ```
 
-4. In the desired extension code log the events by calling the AppInsights class as shown in the following code example.
+4. In the extension code, log the events by calling the AppInsights class as shown in the following code example.
 
     ```typescript
     AppInsights.instance.trackEvent({
