@@ -72,7 +72,7 @@ To enable report only mode, follow these steps.
 
 Enabling nonce (number used once) will block the execution of all inline scripts except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module. A unique cryptographic nonce is generated and added to each script specified in the CSP header.
 
-To nonce, follow these steps.
+To enable nonce, follow these steps.
 
 1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.
