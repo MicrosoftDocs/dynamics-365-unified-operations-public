@@ -51,12 +51,12 @@ The diagram below shows the user's experimentation journey in Commerce and the t
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 Click on the links below to learn more about the phases:
-1. [Identify the goals for an experiment](experimentation-identify.md)
-1. [Setup an experiment](experimentation-setup.md)
-1. [Connect and edit an experiment](experimentation-connect-edit.md)
-1. [Preview and publish an experiment](experimentation-preview-publish.md)
-1. [Run and monitor an experiment](experimentation-run-monitor.md)
-1. [Review and complete an experiment](experimentation-review-complete.md)
+1. [Identify the goals for your experiment](experimentation-identify.md)
+1. [Setup your experiment](experimentation-setup.md)
+1. [Connect and edit your experiment](experimentation-connect-edit.md)
+1. [Preview and publish your experiment](experimentation-preview-publish.md)
+1. [Run and monitor your experiment](experimentation-run-monitor.md)
+1. [Review and complete your experiment](experimentation-review-complete.md)
 
 ## Experiment statuses
 The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
