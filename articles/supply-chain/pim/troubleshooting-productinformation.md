@@ -34,5 +34,18 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ##  Unable to rename a released product 
 		
-**Resolution/Fix**
+**Resolution**
 It is not possible to rename item numbers for released products as it would lead to corrupted data. We only allow it if and only if you need to repair data corruption caused by a previous rename of the primary key of a released product, as we indicate in https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#finance-and-operations-1000-with-platform-update-24
+
+## Flushing Principle is not being defaulted from the product onto the BOM Line.
+When adding an item to a BOM Line, the system is not defaulting the Flushing principle information previously set up in the Item, i.e. the flushing principle from the iteam does not show up on the BOM Line form.
+
+**Resolution**
+If a Flushing Principle is specified on the BOM line, then that will be the flushing principle. Otherwise, though the Flushing principle from the item does not show up on the BOM Line, the Flushing principle that is set on the Item will be used for processing if the Flushing principle is blank/not set on the BOM line.
+
+This design cannot be changed, because it might be breaking some customizations which are assuming the current behavior.
+
+## It is possible save duplicate barcode for different items or same item with different dimension.
+Barcode uniqueness is not enforced currently. Putting this restriction on the metadata would be a breaking change - and we do have evidence that there are customers who will be broken by this change. We will consider a broader design change to enable this feature in the future.
+
+
