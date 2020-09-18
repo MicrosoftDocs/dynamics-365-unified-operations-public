@@ -83,7 +83,7 @@ Custom theme changes using the online SDK can be made to:
 - [Modify the module CSS](../css-override-files.md) to change any of the modules' styling.
 - [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout.
 - [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions, or resources.
-- [Override a module library component](theme-component-override.md) to change the component behavior.
+- [Override a module library component](override-theme-component.md) to change the component behavior.
 
 Additional customization options include:
 
