@@ -37,7 +37,7 @@ To connect your experiment in Commerce, go to the **Experiments** tab in site bu
 > [!NOTE]
 > One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
 
-Next, choose the procedure below that matches the scope of your experiment based on what you identified earlier in the [Identify the goals for your experiment](experimentation-identify.md) stage.
+Next, choose the procedure below that matches the scope of your experiment based on what you decided earlier in the [Identify the goals for your experiment](experimentation-identify.md) stage.
 
 ## Edit variations for an experiment with partial scope
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
