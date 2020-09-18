@@ -2,7 +2,7 @@
 # required metadata
 
 title: Model aggregate data
-description: This tutorial will walk you through the process of modeling aggregate data .
+description: This tutorial will walk you through the process of modeling aggregate data.
 author: MilindaV2
 manager: AnnBe
 ms.date: 12/18/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial will walk you through the process of modeling aggregate data .
+This tutorial will walk you through the process of modeling aggregate data.
 
 ## Prerequisites
 
