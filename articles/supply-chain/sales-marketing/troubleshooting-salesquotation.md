@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot sales quotations
-description: This topic describes how to fix issues that you might encounter while working with Sales Quotations.
+description: This topic describes how to fix issues that you might encounter while you work with sales quotations.
 author: SmithaNataraj
 manager: tfehr
 ms.date: 09/16/2020
@@ -31,17 +31,17 @@ ms.dyn365.ops.version: Release 10.0.14
 ---
 # Troubleshoot sales quotations
 
-This topic describes how to fix common issues that you might encounter while working with sales quotations.
+This topic describes how to fix issues that you might encounter while you work with sales quotations.
 
-## Unable to change the sales quantity of a sales quotation for a service item
+## I can't change the sales quantity of a sales quotation for a service item.
 
 ### Issue description
 
-This issue occurs if you try to set a sales quantity (`SalesQty` field) for an item of type "service" on a sales quotation line. As a result, you'll see the message "Update not allowed for field Quantity"
+If you try to set a sales quantity (**SalesQty** field) for an item of the *Service* type on a sales quotation line, you will receive the following message: "Update not allowed for field Quantity."
 
 ### Issue resolution
 
-It isn't possible to set a sales quantity for products that are service items. For example, if you offer a service to install an item, it doesn't make sense to record a quantity because there is no physical item, but rather a service.
+You can't set a sales quantity for products that are service items. For example, if you offer a service to install an item, it doesn't make sense to record a quantity, because there is no physical item. There is only a service.
 
 ## Additional resources
 
