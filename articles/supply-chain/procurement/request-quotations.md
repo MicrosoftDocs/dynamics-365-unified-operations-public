@@ -131,7 +131,7 @@ following default values:
 
 ### Fields that should be included in the bid
 
-By turning on the **Select RFQ fields to include in vendor RFQ reply forms** feature, you can specify the default field values vendors see on bids. The feature adds toggles to **Procurement and sourcing > Setup ? Procurement and sourcing parameters > Request for quotation > Default request for quotation**. The **RFQ fields included in vendor RFQ reply forms** toggles are found on this page. Setting these toggles to **No** prevents vendors from seeing the data in these fields when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+By turning on the **Select RFQ fields to include in vendor RFQ reply forms** feature, you can specify the default field values vendors see on bids. The feature adds toggles to **Procurement and sourcing > Setup > Procurement and sourcing parameters > Request for quotation > Default request for quotation**. The **RFQ fields included in vendor RFQ reply forms** toggles are found on this page. Setting these toggles to **No** prevents vendors from seeing the data in these fields when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
 
 You can override these values for a specific RFQ case.
 
@@ -397,7 +397,7 @@ the information of the accepted bid:
 
 -   Vendor
 
--  External number
+-   External number
 
 -   External description
 
