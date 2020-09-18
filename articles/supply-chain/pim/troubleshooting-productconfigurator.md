@@ -50,10 +50,9 @@ For example: When the input number is 1000 and the percentage is 2.40, the expec
 **Resolution**
 This is happening because of the way Microsoft solver foundation is representing numbers internally by using fractions, the result of the calculation for the 2.4 example is represented as 27021597764222975 / 1125899906842624 = 23.99999999999999911182158029987476766109466552734375 and .NET will return 23 when casting this value to an Integer.
 
-This behavior will not be changed as other scenarios depend on it. In the given example the problem can be solved by introducing and additional Decimal attribute and a calculation. 
+This behavior will not be changed as other scenarios depend on it. In the given example, the problem can be solved by introducing and additional Decimal attribute and a calculation. 
 
-Attributes
-
+Attributes:
 Input (integer)
 Percent (decimal)
 ResultDecimal (decimal)
