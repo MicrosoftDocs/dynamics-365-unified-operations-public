@@ -48,5 +48,9 @@ Microsoft provides the following reports for data entities, which can be downloa
 
 You may also find the Tables report of interest--it lists each table, and its table group.
 
+## Scripts
+
+You can download the scripts to run these reports from [fin-ops-doc-scripts](https://github.com/microsoft/fin-ops-doc-scripts).
+
 ## Additional resources
 [Data entities overview](data-entities.md)

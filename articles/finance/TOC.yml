@@ -160,7 +160,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1268,6 +1268,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -2278,6 +2280,10 @@
           href: localizations/tasks/use-assemble-list-fixed-asset.md
         - name: Use disassemble list for fixed assets
           href: localizations/tasks/use-disassemble-list-fixed-assets.md          
+      - name: Kuwait
+        items: 
+        - name: Kuwait overview
+          href: localizations/kuwait.md
       - name: Latvia
         items:
         - name: Latvia overview
@@ -2370,6 +2376,10 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -2428,6 +2438,10 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+      - name: Qatar
+        items: 
+        - name: Qatar overview
+          href: localizations/qatar.md
       - name: Russia
         items:
         - name: Russia overview
@@ -2766,6 +2780,8 @@
           href: localizations/noam-usa-year-end-1099-reporting.md
         - name: Form 1099 for the public sector
           href: localizations/noam-usa-form-1099-public-sector.md
+        - name: Set up vendors for 1099 reporting
+          href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
     - name: Human resources
       items:
       - name: Human resources overview
@@ -3012,6 +3028,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Default reporting experiences in IaaS environments
           href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+        - name: Document reporting preview options
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
         - name: Printing
           items:
           - name: Document printing overview

@@ -5,7 +5,7 @@ title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Media gallery module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -103,7 +102,7 @@ To add a media gallery module to a marketing page, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
