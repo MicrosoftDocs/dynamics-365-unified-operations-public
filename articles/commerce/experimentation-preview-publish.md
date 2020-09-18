@@ -41,7 +41,7 @@ Experiment variations created within site builder can also be scheduled for publ
 
 Some things to keep in mind:
 - When adding a page or fragment to a publish group, any experiments running on it will be removed.
-- Within a publish group, you can connect a page or fragment to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained in the *Connect and edit* section. 
+- Within a publish group, you can connect a page or fragment to your experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained in the *Connect and edit* section. 
 - Experiments that are already connected to pages in live site, will not be available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in live site, cannot be associated with other experiments in publish groups and vice-versa.
 - When you publish a publish group, all content within it will be published, whether it has an experiment or not.
 - Since publish groups continue to persist even after they have been published to live site, any experiments in them will also persist and limit your ability to associate other experiments to the same page or fragment. To avoid this, make sure to delete any publish groups with persisting experiments first. Similarly, if you want to delete a page or fragment experiment in live site that also exists in publish groups, make sure to first delete it from the publish groups.
