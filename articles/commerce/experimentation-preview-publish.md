@@ -29,20 +29,19 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Preview and publish
-Once you edit the variation experiences in Commerce, follow the steps below to preview and publish them:
-1. Click on **Preview** to review the variation you are currently working on and ensure everything looks good. If you want to preview a different variation, select it from the variation drop down and click preview again.
-1. Click on **Publish** to publish all variations that belong to the experiment.
+# Preview and publish your experiment
+Once you edit the variations in Commerce, follow the steps below to preview and publish them:
+1. Click on **Preview** in the top bar to review the variation you are currently working on and ensure everything looks good. If you want to preview a different variation, select it from the variation drop down and click preview again.
+1. Click on **Publish** in the top bar to publish all variations that belong to the experiment.
     > [!NOTE]
-    > If the page has an unpublished URL, make sure to publish the page URL first or it will not be visible to end-users. See more details on how to save, preview and publish a page [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+    > If the page has an unpublished URL, make sure to publish the URL first or it will not be visible to end-users. See more details on how to save, preview and publish a page [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
     
 ## Publish experiments with publish groups
-Experiment variations created within site builder can also be scheduled for publishing with a publish group. You can either create pages within a publish group or add existing ones to it. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+Experiment variations created within site builder can also be scheduled for publishing with a publish group. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
 
 Some things to keep in mind:
-1. While adding a page or fragment to a publish group, any experiments running on it will be removed.
-1. Within a publish group, you can connect a page or fragment to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained in the *Connect and edit* section. 
-1. Experiments that are already connected to pages in live site, will not be available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in live site, cannot be associated with other experiments in publish groups and vice-versa.
-1. When you publish a publish group, all content within it will be published, whether it has an experiment or not.
-1. Since publish groups continue to persist even after they have been published to live site, any experiments in them will also persist and limit your ability to associate other experiments to the same page or fragment. To avoid this, make sure to delete any publish groups with persisting experiments first.
-1. If you want to delete a page or fragment experiment in live site that also exists in publish groups, make sure to first delete it from the publish groups.
+- When adding a page or fragment to a publish group, any experiments running on it will be removed.
+- Within a publish group, you can connect a page or fragment to an experiment either through the **Experiments** tab or the **Pages** / **Fragments** tab as explained in the *Connect and edit* section. 
+- Experiments that are already connected to pages in live site, will not be available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in live site, cannot be associated with other experiments in publish groups and vice-versa.
+- When you publish a publish group, all content within it will be published, whether it has an experiment or not.
+- Since publish groups continue to persist even after they have been published to live site, any experiments in them will also persist and limit your ability to associate other experiments to the same page or fragment. To avoid this, make sure to delete any publish groups with persisting experiments first. Similarly, if you want to delete a page or fragment experiment in live site that also exists in publish groups, make sure to first delete it from the publish groups.
