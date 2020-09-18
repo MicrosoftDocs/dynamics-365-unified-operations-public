@@ -5,7 +5,7 @@ title: Manage Content Security Policy (CSP)
 description: This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Manage Content Security Policy (CSP)
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
@@ -47,23 +46,37 @@ For more information about CSP, see [Content Security Policy Reference](https://
 
 ### Turn off CSP for a site
 
-To prevent CSP from applying policies to your site, you can turn it off for that site.
+To prevent CSP from applying policies to your site, you can turn it off for that site in site builder.
 
-1. In the site builder tool, select the site you are working on.
+To turn off CSP for a site, follow these steps.
+
+1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, select the **Disable content security policy** check box.
 
     ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
 
-1. Select **Save and Publish**.
-
+1. Select **Save and publish**.
 
 ### Enable report only mode
-If enabled, content security policy will not be enforced, but any violations will be reported to URI's specified by the report-uri directive.
+
+If CSP is enabled, content security policy will not be enforced, but any violations will be reported to URIs specified by the report-uri directive.
+
+To enable report only mode, follow these steps.
+
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Enable report only mode** check box.
 
 ### Enable nonce
-Enabling nonce (number used once) will block the execution of all inline script except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module.  A unique cryptographic nonce (number used once) is generated and added to each script specified in the CSP header.
 
+Enabling nonce (number used once) will block the execution of all inline scripts except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module. A unique cryptographic nonce is generated and added to each script specified in the CSP header.
+
+To nonce, follow these steps.
+
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Enable Nonce** check box.
 
 ## CSP directives in Commerce
 
@@ -83,9 +96,9 @@ The following CSP directives can be used on Commerce sites.
 
 ### Example: Configure a CSP directive
 
-The following example shows how to configure a CSP directive so that an external script can be called from your site.
+The following example procedure shows how to configure a CSP directive so that an external script can be called from your site.
 
-1. In the site builder tool, select the site you are working on.
+1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, under **script-src**, select **Add**, and then enter the full URL of the external script that should be called.
 
