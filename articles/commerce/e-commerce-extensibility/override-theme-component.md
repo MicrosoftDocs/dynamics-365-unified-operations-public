@@ -5,7 +5,7 @@ title: Override a module library component in a theme
 description: This topic describes how to override module library components to allow customizations within a theme. 
 author: samjarawan
 manager: annbe
-ms.date: 09/17/2020
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
