@@ -325,7 +325,7 @@ will appear on the **Send** page and will receive the email invitation.
 ## Receiving and registering RFQ replies
 
 When you send an RFQ, a reply sheet is automatically generated. As you receive
-bids on an RFQ, , you must enter them via the **Request for quotation** page by
+bids on an RFQ, you must enter them via the **Request for quotation** page by
 clicking the action **Edit RFQ reply.** This will allow you to enter the bid
 information in a dedicated bid form. Initially, the **Reply progress** will be
 **Not started**. When you click **Edit RFQ reply,** the progress status is
