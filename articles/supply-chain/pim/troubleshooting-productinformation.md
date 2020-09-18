@@ -48,4 +48,10 @@ This design cannot be changed, because it might be breaking some customizations 
 ## It is possible save duplicate barcode for different items or same item with different dimension.
 Barcode uniqueness is not enforced currently. Putting this restriction on the metadata would be a breaking change - and we do have evidence that there are customers who will be broken by this change. We will consider a broader design change to enable this feature in the future.
 
+## Error when editing Items record templates: 'The warehouse location cannot be created because the item is not stocked. To stock items, the Stocked product option on the associated item model group must be selected'
+This happens when creating template for items that are not stocked, using the Options > Record info > Company accounts template button.
+
+**Resolution**
+Creating product templates require extra product-specific logic and so the generic Company accounts template button cannot be used for this purpose. One must used the following button in the Action pane: Product > New > Template > Create shared template instead.
+
 
