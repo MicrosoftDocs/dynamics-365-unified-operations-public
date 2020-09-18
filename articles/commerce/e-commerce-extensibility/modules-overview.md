@@ -168,7 +168,7 @@ To clone the fabrikam theme as a starter for your own theme, follow the below st
 
 Once you have a custom theme created, the SCSS can be modified as needed. Each module library module SCSS is stored under a theme's **/styles/04-modules** directory. There are many other SCSS files that can also be changed if needed, for example under the **//styles/00-settings** you'll find a **colors.scss** file which contains common color definitions.
 
-Once a theme is created or modified using the online SDK, a configuration package can be build and uploaded via Microsoft Dynamics Lifecyle Services (LCS), for details see [Package configurations and deploy them to an online environment](package-deploy.md). Once a theme is deployed, the theme can be set for a site from within site builder. For more information, see [Select a site theme](../select-site-theme.md).
+Once a theme is created or modified using the online SDK, a configuration package can be build and uploaded via Microsoft Dynamics Lifecycle Services (LCS), for details see [Package configurations and deploy them to an online environment](package-deploy.md). Once a theme is deployed, the theme can be set for a site from within site builder. For more information, see [Select a site theme](../select-site-theme.md).
 
 #### Extend a module's view in a theme
 
@@ -188,7 +188,7 @@ For example, if a module library module has a configuration for a title string, 
 
 ### Override a module library component
 
-The module library contains a set of helper component files that contain APIs that some modules use to render HTML or handle events that call server APIs. These components can be overriden and changed as needed. An example of such a component is the "price" component that renders the appropriate price including the markup for a price strike through if applicable. If you need the rendering of the price to change, you can override the specific component. For more information, see the [Override a module library component](override-theme-component.md).
+The module library contains a set of helper component files that contain APIs that some modules use to render HTML or handle events that call server APIs. These components can be overridden and changed as needed. An example of such a component is the "price" component that renders the appropriate price including the markup for a price strike through if applicable. If you need the rendering of the price to change, you can override the specific component. For more information, see the [Override a module library component](override-theme-component.md).
 
 ## Data action overrides
 
