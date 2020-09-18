@@ -61,3 +61,7 @@ Select a feature area to learn more about it.
 - [Manage your e-Commerce site](online-store-overview.md)
 - [Fraud protection](dev-itpro/DFP.md)
 - [Commerce development and extensibility](dev-itpro/dev-retail-home-page.md)
+
+## eLearning courses
+
+For online courses and training, check out [Dynamics 365 Commerce on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
