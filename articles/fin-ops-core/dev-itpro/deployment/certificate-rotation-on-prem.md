@@ -360,9 +360,9 @@ This certificate is used to encrypt data stored in the database. By default ther
 In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day for three consecutive days. Depending on the amount of data, the batch job might be able to finish running in less time. In order to enable the batch job a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB):
 
 ```sql
-    INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
+INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
 
-    INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 1)
+INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 1)
 ```
 
 > [!WARNING]
