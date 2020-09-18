@@ -262,7 +262,7 @@ The Application Insights library is now ready to be consumed and used in POS.
 
 1. Open the **ModernPOS.sln** or **CloudPos.sln** solution from **RetailSDK\POS**.
 2. Create a new TypeScript file inside the POS extension folder (package) and name it **AppInsights.ts**.
-3. Copy the following code to the file. The code is used by the extensions to track events using Application Insights. You must update the instrumentation key created in the Azure App Insights.
+3. Copy the following code to the file. The code is used by the extensions to track events using Application Insights. Use the instrumentation key created in the Azure App Insights.
 
     ```typescript
     import { ApplicationInsights } from "applicationinsights-web";
