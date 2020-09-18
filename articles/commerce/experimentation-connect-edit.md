@@ -30,16 +30,14 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Connect your experiment and edit its variations
-
-You've identified what you want to .... link to Identify topic... next step is to connect the experiment to Commerce and then you'll edit your variations. 
+Once the experiment is setup in the third-party service, the next step is to connect it to an entity in Commerce and edit its variations.
 
 ## Connect your experiment
-
 To connect your experiment in Commerce, go to the **Experiments** tab in site builder and click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
-    > [!NOTE]
-    > One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
+> [!NOTE]
+> One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
 
-Next, choose the procedure below that matches the scope of your experiment.
+Next, choose the procedure below that matches the scope of your experiment based on what you identified earlier in the [Identify the goals for your experiment](experimentation-identify.md) stage.
 
 ## Edit variations for an experiment with partial scope
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
