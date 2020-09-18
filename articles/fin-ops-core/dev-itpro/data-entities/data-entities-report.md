@@ -2,10 +2,10 @@
 # required metadata
 
 title: Find information about standard data entities
-description: This topic describes how to get information about the standard data entities that are available for Microsoft Dynamics 365 Finance.
+description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
 author: margoc
 manager: AnnBe
-ms.date: 12/14/2017
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,11 +42,18 @@ Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) conta
 ## Data entity reports
 Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep):
 
-- **Data entities** lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
-- **Data entities fields** lists each field in a data entity, and the table that it originates from.
-- **Aggregate data entities** lists the aggregate data entities, and the fields that each contains.
-
-You may also find the Tables report of interest--it lists each table, and its table group.
+- Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
+- Aggregate measures
+- Config keys
+- Config key groups
+- Data entities: Lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
+- Data entities fields: Lists each field in a data entity, and the table that it originates from.
+- KPIs
+- License codes
+- Menu items
+- SSRS reports: Lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report.
+- Tables: Lists each table and its table group.
+- Workflow type: Lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
 
 ## Scripts
 
