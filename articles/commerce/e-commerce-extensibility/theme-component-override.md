@@ -44,7 +44,7 @@ For example, if you want to change the logic for strikethrough pricing, you can 
 
 To obtain a list of components, you can use the following CLI command. 
 
-```bash
+``` bash
 yarn msdyn365 add-component-override --list-components
 ```
 
@@ -71,7 +71,9 @@ To override a component in a theme, you can run the CLI command ```yarn msdyn365
 
 ### Example
 
-```yarn msdyn365 add-component-override spring add-to-cart```
+``` bash
+yarn msdyn365 add-component-override spring add-to-cart
+```
 
 ## Additional resources
 
