@@ -47,7 +47,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
     - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
     
 ## Experimentation journey
-The diagram below shows the user's experimentation journey in Commerce and the third-party service - it is a cyclical process that can take a few iterations to learn and get the desired results:
+The image below shows the user's experimentation journey in Commerce and the third-party service - it is a cyclical process that can take a few iterations to learn and get the desired results:
 ![Experimentation user journey](./media/experimentation-user-journey.png "Experimentation user journey")
 
 Click on the links below to learn more about the phases:
@@ -71,4 +71,5 @@ Similarly you can also use the **third-party status** field to understand the st
 1. Paused - The experiment is paused and not collecting data. You will need to resume it so it starts collecting data again.
 1. Archived - The experiment has run its course and has been cataloged for future reference.
 
+Below is an image that shows both sets of statuses and how they relate to each other:
 ![Experimentation statuses](./media/experimentation_statuses.png "Experimentation statuses")
