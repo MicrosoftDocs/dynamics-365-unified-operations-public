@@ -29,11 +29,11 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Connect an experiment and edit variations
+# Connect your experiment and edit its variations
 
 You've identified what you want to .... link to Identify topic... next step is to connect the experiment to Commerce and then you'll edit your variations. 
 
-## Connect the experiment
+## Connect your experiment
 
 To connect your experiment in Commerce, go to the **Experiments** tab in site builder and click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
     > [!NOTE]
@@ -41,7 +41,7 @@ To connect your experiment in Commerce, go to the **Experiments** tab in site bu
 
 Next, choose the procedure below that matches the scope of your experiment.
 
-## Edit variations for experiment with partial scope
+## Edit variations for an experiment with partial scope
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
 1. In the next step, set the experimentation scope to **entire** if experimenting on the full entity and to **partial** if experimenting on a small portion of the entity. If you associate your experiment with a page that uses a layout, you will only be able to scope the experiment to the entire page.
     > [!NOTE]
@@ -50,11 +50,10 @@ Next, choose the procedure below that matches the scope of your experiment.
 1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a control or base variation to compare to by leaving one of the variations unchanged.
 1. Select the module to be experimented on, click on the ellipsis for more options and then click on **Add to experiment**.
 
-## Edit variations for experiment with entire scope
+## Edit variations for an experiment with entire scope
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
 1. In the next step, set the experimentation scope to **entire** if experimenting on the full entity and to **partial** if experimenting on a small portion of the entity. If you associate your experiment with a page that uses a layout, you will only be able to scope the experiment to the entire page.
     > [!NOTE]
     > Remember to enable the "Experiment on pages or fragments" feature flag if you want to experiment on a full page or fragment.
 1. In the final step, click on **Generate variations and exit wizard** to auto-generate the variations. These are nothing but copies of the original page or fragment you previously chose. 
 1. In the editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You can also optionally establish a control or base variation to compare to by leaving one of the variations unchanged.
-
