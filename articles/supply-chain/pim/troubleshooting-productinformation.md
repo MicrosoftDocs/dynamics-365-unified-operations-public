@@ -57,9 +57,43 @@ Creating product templates require extra product-specific logic and so the gener
 ## Product attribute help text is not defaulted onto the Released product
 When description and help text is added in the product attributes, the description and help text are not visible or defaulted in the released products. This is by design. 
 
-## Quantity defaulted is different when registered from BOM and registered from BOM Version 
+## Quantity defaulted is different when registered from BOM and when registered from BOM Version 
 When adding an item to a BOM, the quantity defaulted is 1 and not the quantity defined in the minimum field in the default order settings. When adding the item from the BOM version (item and variant selected), then the defaulted quantity takes into account the minimum set in default order settings for the specific dimensions.
 
 **Resolution**
 This is the expected behavior and is a known issue that the logic is different in the BOM and the BOM version. A change of behavior could affect many different customer scenarios, so this behavior will not be changed.
 
+## Unable to change the attached images that were uploaded from the Product Document Attachment data entity, in the Released product details. 
+**Business Scenario**
+1. Attach images on items through the Product document attachment data entity. 
+2. Result: The item image is showing against the item but when they click on change image, nothing shows in the list of uploaded images. Also, no attachments are showing against the item either. 
+
+**Resolution**
+The EcoResProductDocumentAttachmentEntity entity ("Product document attachments") will import document attachment for the Products, not the Released products (aka items).
+In order to see the attachments on the item in the Released product details form, the EcoResReleasedProductDocumentAttachmentEntity entity ("Released product document attachments") must be used instead.
+
+## Flow connector getting error message  "update not allowed for field 'ProductNumber'
+The issue occurs when trying to update the "Product number" field using the released products entity V2 and flow.
+
+**Resolution**
+This is working as expected. This functionality was removed (to avoid data corruption) as of Finance and Operations 10.0.0 with Platform update 24. In exceptional cases (in other words, to repair data corruption caused by a previous rename of the primary key of a released product), it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products.
+
+## Cannot create a released product variant in another legal entity
+When trying to release the master without the variants and create the variants in each of the legal entities where needed, it is not possible to release via "variant suggestions" or create them manually. 
+
+**Cause**
+This is working as designed. The product master and the dimensions that the master could take are kept at a "shared" level. As these relations are kept at a shared level it is not possible to create the available dimensions for a shared product master in the specific company where they are released and then replicate the process in each legal entity where needed. The customer must change the release process to adapt to to the designed process:
+
+**Resolution**
+The process to release products is to create the shared product master and the dimensions that could be released to the legal entities and using variant suggestions or the combinations needed can be manually created and then released to the needed companies. 
+
+An alternative approach, is to directly create the released product. 
+
+## Releasing the variant in another company throws error 'Product variant with specified dimensions has already been created'
+If a product variant has already been released in a company A, releasing the variant in another company B using the New button in the Released product variants form will throw an error "Product variant with specified dimensions has already been created.".
+
+**Possible Cause**
+The New button in the Released product variants form creates the variant and release it in the company context. If the variant has already been created, the New button cannot be used to release it in another company. 
+
+**Resolution**
+Go to the Product Master form and use the Release product button to release the existing variant in the desired company.
