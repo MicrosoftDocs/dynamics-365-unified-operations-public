@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Identify
+# Identify the goals for your experiment
 Identify is the first stage in the experimentation journey where you decide the what and how for your experiment. Here are some things to consider:
 
 ## Create a hypothesis and configure metrics
