@@ -54,4 +54,12 @@ This happens when creating template for items that are not stocked, using the Op
 **Resolution**
 Creating product templates require extra product-specific logic and so the generic Company accounts template button cannot be used for this purpose. One must used the following button in the Action pane: Product > New > Template > Create shared template instead.
 
+## Product attribute help text is not defaulted onto the Released product
+When description and help text is added in the product attributes, the description and help text are not visible or defaulted in the released products. This is by design. 
+
+## Quantity defaulted is different when registered from BOM and registered from BOM Version 
+When adding an item to a BOM, the quantity defaulted is 1 and not the quantity defined in the minimum field in the default order settings. When adding the item from the BOM version (item and variant selected), then the defaulted quantity takes into account the minimum set in default order settings for the specific dimensions.
+
+**Resolution**
+This is the expected behavior and is a known issue that the logic is different in the BOM and the BOM version. A change of behavior could affect many different customer scenarios, so this behavior will not be changed.
 
