@@ -120,16 +120,18 @@ Before you can create an RFQ case, you must set up RFQ information on the
 can specify default values that are copied to the RFQ. You can specify the
 following default values:
 
--   The purchase type of new RFQs: **Purchase order** or **Purchase agreement**
+-   The purchase type of new RFQs: **Purchase order** or **Purchase agreement**.
 
--   The expiration date and time offset from the day the RFQ case is created
+-   The expiration date and time offset from the day the RFQ case is created.
 
 -   Solicitation type, which may default a specific scoring method to the RFQ
-    case
+    case.
 
--   Delivery information and payment terms
+-   Delivery information and payment terms.
 
--   Fields that should be included in the bid
+### Fields that should be included in the bid
+
+By turning on the **Select RFQ fields to include in vendor RFQ reply forms** feature you can specify the default field values vendors see on bids. The feature adds toggles to **Procurement and sourcing > Setup ? Procurement and sourcing parameters > Request for quotation > Default request for quotation**. The **RFQ fields included in vendor RFQ reply forms** toggles are found on this page. Setting these toggles to **No** pervents vendors from seeing the data in these fields when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
 
 You can override these values for a specific RFQ case.
 
@@ -267,6 +269,7 @@ You can add a questionnaire to an RFQ case. This questionnaire then appears on
 all RFQ replies after you send the RFQ. The completion of the questionnaire is
 a mandatory task before the bid can be submitted.
 
+You can change the **RFQ fields included in vendor RFQ reply forms** values from the **Set RFQ reply defaults** page. This page is located in the **Replies** section of the **Quotation** ribbon. Newly create RFQ cases will have the default values selected. These defaults can be changed for individual RFQ cases.
 
 There are three ways to select the vendors to add to an RFQ case:
 
