@@ -54,3 +54,10 @@ This actions sets a stop flag on the production order which prevents any status 
 >- The fields are only visible when the production order is created for items enabled for the warehouse processes.
 >- The field group is only visible under the Warehouse tab in the production order details page. The fields are not visible under the Warehouse tab in the production order list page
 
+## Resource name not updated after being modified in Global address book
+Whenever the worker name is modified from the global address book, resource name is not getting updated based on these changes, in the resource group master.
+
+**Resolution**
+This is currently an unsupported scenario. To resolve the issue, you need to manually update the resource name. 
+
+## 
