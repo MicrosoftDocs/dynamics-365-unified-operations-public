@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic describes how to fix common issues that you might encounter while working with Discrete Manufacturing.
 
-##  Warehouse management processes are currently being used. If work lines are not yet registered, you can cancel the created work and any load or shipment lines, and then continue with the picking or shipping process.
+##  Error 'Warehouse management processes are currently being used. If work lines are not yet registered, you can cancel the created work and any load or shipment lines, and then continue with the picking or shipping process'
 The cause of this is because the inventory transaction is in status Picked which means that the material is picked. Therefore it is not possible to reserve or release work for that line.
 		
 **Resolution/Fix**
@@ -60,4 +60,22 @@ Whenever the worker name is modified from the global address book, resource name
 **Resolution**
 This is currently an unsupported scenario. To resolve the issue, you need to manually update the resource name. 
 
-## 
+## 'Insert the active version of bill of material and route?' popup not displayed while creating new production order
+When creating a new production order, after entering the item number, the Site & Warehouse are automatically defaulted with the site and warehouse defined in ‘Default order settings’ of the FG item and active BOM & Route are inserted without the pop-up alert message “Insert active version for bill of material and route?”.
+
+**Resolution**
+The user is not prompted for inserting BOM and route when selecting a product that has site and warehouse is defined in the default order settings. It will only be prompted when the product does not have those defined in the default order settings.
+
+## While performing multiple Report as Finished actions on a production order having scrap percentage setup in the route, suggested Good and Error quantities are incorrect for the second report as finished and beyond
+**Business Scenario**
+During the production cycle, the users will have to report the produced quantity in the system using the ‘Report as finished’ functionality. This will be done by multiple users at all production sites. During this action, the system initiates a value which is not correct at all.
+
+For each ‘Report as finished’, the user will have to get rid of the wrong value in order to get accurate values to report to Production managers.
+
+**Resolution**
+In the current implementation the good and error quantities in the report as finished dialog is calculated from the route transactions that has been generated from posted route card journals on the production order.
+
+In this scenario the route card journal is set up to be automatically created when doing report as finished. When the report as finished dialog is opened for the first time on the production order, the error quantity will be shown as zero, because no route card journals exists on the production order. When completing the first report as finished with quantity = 10, a route card journal is automatically created and posted with error quantity 1.11 and good quantity = 10. When doing the second report as finished the error quantity will default to 1.11 in the report as finished dialog, because that is the quantity that is found from the route card journal that was posted when the first report as finished was completed. The good quantity is calculated as the remaining quantity minus the error quantities that have been previous posted. In this scenario 90 pieces remains to be reported as finished and 1.11 was posted as error quantity in the first reporting therefore the good quantity defaulted in the dialog for the second report as finished will be calculated as 90-1.11 = 88.89.
+
+As a suggestion to obtain the desired behavior, consider overriding the defaulted good quantity of 88.89 with 90 and remove the error quantity of 1.11 and then complete the report as finished without selecting the End option. When doing that, a route card journal will be created and posted with good quantity = 90 and error quantity = 10. After that, open the report as finished dialog again. Now the error quantity will show as 11.11 which is the sum of the error quantities from the two reporting as finished processes. The good quantity will default to -11.11 because no good quantities remains to be reported as finished and the error quantity is subtracted.
+
