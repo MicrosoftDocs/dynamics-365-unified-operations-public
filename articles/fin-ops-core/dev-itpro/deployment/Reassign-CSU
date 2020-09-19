@@ -47,12 +47,17 @@ The following steps can be performed while the stores are still operational
 # Configure data synchronization
 
 The following steps are optional, but recommended
-1. In Commerce HQ, navigate to Channel Database group form
+1. In Commerce HQ, navigate to **Channel Database group** form
 2. Create a new Channel Database group
-3. Assign the new Commerce Scale Unit to the newly created Channel Database group
-4. Navigate to Channel Database form and select the record for the new Channel Database form
-5. Add desired channel to this new channel database
-6. Run Full sync on this new Channel database form
+3. Set Commerce channel schema as **AX7**
+4. Select **Save** to save the group
+5. Navigate to Channel Database form and select the record for the new Channel Database form
+6. Add desired channel(s) to this new channel database
+7. Set the **Channel database group** field to the newly created Channel database group from Step 2 above.
+8. Navigate to **Distribution Schedule** form.
+9. For each job, add the newly created Channel database group from Step 2 above to the **Channel database group** list. 
+10. Navigate to Channel Database form and select the record for the new Channel Database form
+11. Select **Full data sync** on this new Channel database with **9999 All jobs**.
 
 The following steps must be performed during planned downtime for your channels.
 
@@ -68,9 +73,10 @@ The following steps must be performed during planned downtime for your channels.
 1. Navigate to Store details page
 2. Set Live Channel Database field to new Commerce Scale Unit
 3. Set Channel profile field to the new Commerce Scale Unit
-4. Navigate to jobs definition for Channel configuration job and run Full sync (will apply to all databases)
-5. If you are using Cloud Point of Sale, you will need to use the URL of Cloud Point of Sale for the new CSU, and re-active the POS device. 
-6. For MPOS, close, re-open and login on each POS device.
+4. Navigate to the **Distirbution Schedule** form.
+5. Run Channel configuration job (1070) and POS redeployment (1160) by selecting **Run now** (or **Create batch job** for asynchronous processing) for each job. 
+6. If you are using Cloud Point of Sale, you will need to use the URL of Cloud Point of Sale for the new CSU, and re-active the POS device. 
+7. For MPOS, close, re-open and login on each POS device.
 
 The following steps can happen outside of planned downtime for your channels.
 
