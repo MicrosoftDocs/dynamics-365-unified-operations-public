@@ -79,3 +79,26 @@ In this scenario the route card journal is set up to be automatically created wh
 
 As a suggestion to obtain the desired behavior, consider overriding the defaulted good quantity of 88.89 with 90 and remove the error quantity of 1.11 and then complete the report as finished without selecting the End option. When doing that, a route card journal will be created and posted with good quantity = 90 and error quantity = 10. After that, open the report as finished dialog again. Now the error quantity will show as 11.11 which is the sum of the error quantities from the two reporting as finished processes. The good quantity will default to -11.11 because no good quantities remains to be reported as finished and the error quantity is subtracted.
 
+## Production order are not displayed in Marking form
+
+**Business Scenario**
+1. Create production order of level 1 item
+2. Create production order of level 2 item
+3. Estimate both orders
+4. Go to production formula of level 1 item
+5. Select line for level 2 item and click "Inventory" and then "Marking"
+Result: Production order for level 2 item should be there, but is not shown.
+
+**Possible cause**
+Standard cost items, WMS and CW items cannot be handled with marking. Verify if the items are any of these types.
+
+## Unable to end the production order, the following error occurs 'Calculating BOM consumptionCost value must be negative upon issue from inventory'
+This issue has been fixed in 10.0.15.
+
+## When status is changed for a production order from "Reported as finished" to "End" the following error message is displayed - 'Update conflict. The standard cost does not match with the financial inventory value after the update' and the infolog message 'A critical error has occurred in function InventCostMovement.checkVariance'. 
+The cause of this error message is by design as the underlying data was changed by another process, while this was running. Process will try 5 attempts to update the data and if there is an update conflict still, then the process will throw the update conflict exception. Mitigation is to resume the batch job and it should finish.
+
+**Resolution**
+If the batch job consistently fails on resuming, then:
+Check that the Rounding precision for Ledger's default currency has not changed to a value that is not compliant with the rounding applied to values in InventSum. If it has changed, we probably need to change it back. Look for ModifiedDateTime would typically in this case show that it was recently changed.
+
