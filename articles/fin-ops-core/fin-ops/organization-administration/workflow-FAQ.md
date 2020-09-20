@@ -65,5 +65,5 @@ When running under Active Directory Federation Services (AD FS) in an upgraded e
 ## Why am I getting SQL deadlocks on workflow processing? 
 The default field value for the **Number of workflow items per batch** on the **Workflow parameters** page is 0. A value of 0 causes the  default to change to 20 items per batch. Be careful when adjusting this value because a high number of items per batch (> 40) can cause SQL deadlocks.
 
-## What is the Workflow Enhanced Error feature in 10.0.13?
-The Workflow Enhanced Error feature adds some error codes to help differentiate different classes of workflow error. The error messages reported will largely be the same with minor differences to make them clearer.
+## What is the Workflow Enhanced Error feature?
+The Workflow Enhanced Error feature in 10.0.13 adds some error codes to help differentiate different classes of workflow error. The error messages reported will largely be the same with minor differences to make them clearer.
