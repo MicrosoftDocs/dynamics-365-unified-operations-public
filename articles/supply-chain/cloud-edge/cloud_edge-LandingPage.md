@@ -77,6 +77,8 @@ Within manufacturing execution, cloud and edge scale units deliver the following
 - Enable the shop floor supervisor to adjust the operational plan.
 - Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
 
+Go [here](cloud_edge-workload-manufacturing.md) for more information.
+
 ### Dedicated warehouse management workload capabilities in a scale unit
 
 For warehouse execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
@@ -87,6 +89,8 @@ For warehouse execution, cloud and edge scale units deliver the following capabi
 - Enable warehouse wave methods processing, for replenishment and containerization on Edge.
 - Enable warehouse worker to register returns and purchase orders and conduct put away on Edge.
 - Enable warehouse worker to adjust inventory quantities on Edge.
+
+Go [here](cloud_edge-workload-warehousing.md) for more information.
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 
