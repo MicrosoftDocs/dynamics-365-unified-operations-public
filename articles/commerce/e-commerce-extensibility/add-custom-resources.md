@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic presents an overview of how to add custom resources such as font files that you can be accessed within your theme.
 
 ## Overview
-Some scenarios require adding custom static files such as font or CSS files that can be accessed from within a module or a theme.  These static files can be added to a **public** folder within your SDK customization code which will be included in the configuration package generated with the [CLI ```yarn msdyn365 pack``` command](cli-command-reference).  A relative path can then be used to access the resource.
+Some scenarios require adding custom static files such as font or CSS files that can be accessed from within a module or a theme.  These static files can be added to a **public** folder within your SDK customization code which will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md).  A relative path can then be used to access the resource.
 
 ## Example
 Resources such as a font can be added to the ```/public``` directory or any subdirectory under this directory.  For example adding a font called "NewFont-Regular" may have multiple font files added to the ```/public``` directory including "NewFont-Regular.eot", "NewFont-Regular.woff", "NewFont-Regular.ttv", and "NewFont-Regular.svg".
