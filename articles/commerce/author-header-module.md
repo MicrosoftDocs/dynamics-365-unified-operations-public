@@ -69,8 +69,10 @@ The following modules can be used in a header module:
 - **Store selector** - The Store selector module can be included to the Header's store selector slot. This allows the user to browse and find stores nearby. They can also set a store as a Preferred store which then displays on the header. When included to the Header, the Store selector module must be set to module property "Mode=Find stores" only. For more information, see [Store selector](store-selector.md).
 
 >[!NOTE]
+>Cart icon module support in header module is available in Dynamics 365 Commerce 10.0.11 release
 >Site selector support on header module is available in Dynamics 365 Commerce 10.0.14 release.
 >Store selector support in header module is available in Dynamics 365 Commerce 10.0.15 release.
+
 
 ## Create a header fragment for a page
 
