@@ -27,9 +27,8 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
-# Engineering change management overview
+# Engineering Change Management overview
 
-<!-- KFM: should we call it "Engineering change management" or "Product engineering"? -->
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,30 +47,24 @@ Engineering change management helps you plan and manage product versioning, life
 - Engineering change requests with workflow support
 - Engineering change orders with workflow support
 
-## Turn on the project engineering solution for your system
+## Turn on Engineering Change Management for your system
 
-To enable it, turn on the configuration key **Engineering Change Management**.
+First you will need to enable the feature **(Preview) Engineering Change Management** by doing the following:
 
-<!-- KFM: We would normally provide a longer description of how to this, something like:
+ 1. Go to feature management
 
-    1. Place your system into maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-    2. Go to **System administration \> Setup \> License configuration**.
-    3. Expand the **XXXX** section.
-    4. Select the **XXXXXX** check box.
-    5. Turn off maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
-Can we do that here? Do we also need to do anything in feature management? The private preview version of this document probably needs to describe how to enable the flight too.
-
-Enable feature "Engineering Change Management" by doing the following:
-
- a. Go to feature management
-
- b. Check for updates and enable the feature
+ 2. Check for updates and enable the feature **(Preview) Engineering Change Management**
 
  3. Enable configuration key "Engineering Change Management"
 
- a. Enable maintenance mode on your environment.
+ 4. Enable maintenance mode on your environment.
 
- b. Enable "Engineering Change Management" under “Trade”
+ 5. Enable "Engineering Change Management" under “Trade”
 
- -->
+Secondly, you will need turn on the configuration key **Engineering Change Management** by doing the following:
+
+    1. Place your system into maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    2. Go to **System administration \> Setup \> License configuration**.
+    3. Expand the **Trade** section.
+    4. Select the **Engineering Change Management** check box.
+    5. Turn off maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
