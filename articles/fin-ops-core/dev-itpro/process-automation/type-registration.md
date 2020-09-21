@@ -32,27 +32,32 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Implementing a process using the process automation framework starts with the concept of a type within the framework. The types are stored in the **ProcessScheduleType** table. A type is a unique process that integrates with the batch framework and makes use of **SysOperations** framework, specifically the **SysOperationServiceController** class. Here are a few examples of different types registered with the process automation framework:
+To implement a process by using the process automation framework, you must first understand the concept of a *type* in the framework. A type is a unique process that is integrated with the batch framework and that uses the **SysOperations** framework, specifically the **SysOperationServiceController** class. The types are stored in the **ProcessScheduleType** table.
+
+Here are a few examples of different types that are registered with the process automation framework:
 
 - Vendor Payment Proposal (**VendPaymProposalAutomationTypeRegistrationProvider** class)
 - Vendor Invoice Posting (**VendInvoicePostProcessScheduleTypeRegistration** class)
 - Subledger transfer to general ledger (**SubledgerJournalVoucherTransferServiceRegistration** class)
 
-If an existing process uses **RunBaseBatch**, then consider wrapping it with **SysOperationServiceController**. The framework does not support **RunBaseBatch**.
+If an existing process uses **RunBaseBatch**, consider wrapping it with **SysOperationServiceController**. The process automation framework doesn't support **RunBaseBatch**.
 
-To register your type with the framework, you must implement the **ProcessScheduleITypeRegistration** interface. This interface has a single method which returns an instance of **ProcessScheduleTypeRegistrationItem**.
+To register your type with the process automation framework, you must implement the **ProcessScheduleITypeRegistration** interface. This interface has a single method that returns an instance of **ProcessScheduleTypeRegistrationItem**.
 
-If your process uses a feature flag, then you must disable and enable the type as the feature is disabled and enabled, respectively. If you disable the feature flag for a type, then the type doesn't show up in the UI. The scheduler won't schedule any occurrences or background processes of that type for running. The runtime side of the framework won't create any batch jobs for that type. If you enable the feature flag for a type, then the type will cause any occurrences or background processes that are scheduled to run in the past to be immediately run. This behavior is usually what you want, but if not then consider disabling any series related to the type before disabling the feature flag.
+If your process uses a feature flag, you must disable and enable the type as the feature is disabled and enabled, respectively.
+
+- If you disable the feature flag for a type, the type doesn't appear in the user interface (UI). The scheduler won't schedule any occurrences or background processes of that type to run, and the runtime side of the process automation framework won't create any batch jobs for that type.
+- If you enable the feature flag for a type, any occurrences or background processes that are scheduled to run in the past will be run immediately. Usually, this behavior is what you want. However, if it isn't what you want, consider disabling any series that is related to the type before you disable the feature flag.
 
 Feature management has events that you can subscribe to. The method that you use to enable and disable types is **ProcessScheduleTypeRegistration.enableOrDisableType**.
 
-Every time a database synchronization runs, types and series are refreshed from their definitions in code excluding those background settings that are editable by the system administrator. The framework does this by hooking **SysSetup**. This can be triggered manually by the system administrator through the **System Administration->Setup->Initialize background** settings.
+Every time that a database synchronization runs, types and series are updated from their definitions in code. The only background settings that aren't updated are those that can be edited by the system admin. The process automation framework does this update by hooking **SysSetup**. The system admin can manually trigger this update through the settings at **System administration \> Setup \> Initialize background**.
 
-Here is an example of a sample process for a scheduled type. Some things to note:
+The following example shows a process for a scheduled type. Note the following points:
 
-- A background process doesn't need to set the parameter tab list, because background processes don't support parameters.
-- The type name isn't shown in the UI. The name should be a developer-created string like **VendorInvoiceBatchPosting**. This name is used internally as a key to referencing your type for various purposes. It **can't** be a label.
-- The type name is used heavily with **SysPlugIn** pattern. Most of the interfaces implemented for this framework follow the **SysPlugIn** pattern and require that the type name is supplied by the export metadata attribute. Following this pattern, the framework in most cases only invokes the implementation of an interface for the type being operated on and not other types. Code examples in these docs follow this patter.
+- A background process doesn't have to set the parameter tab list, because background processes don't support parameters.
+- The type name isn't shown in the UI. The name should be a developer-created string such as **VendorInvoiceBatchPosting**. It's used internally as a key to reference your type for various purposes. It **cannot** be a label.
+- The type name is used heavily with the **SysPlugIn** pattern. Most of the interfaces that are implemented for the process automation framework follow the **SysPlugIn** pattern and require that the type name be supplied by the export metadata attribute. In most cases in this pattern, the framework invokes the implementation of an interface only for the type that is being operated on, not for other types. Code examples in this topic and related topics follow this pattern.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -95,7 +100,7 @@ implements ProcessScheduleITypeRegistration
 }
 ```
 
-This following code example shows feature management for a process automation framework type:
+The following example shows feature management for a process automation framework type.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -186,27 +191,27 @@ internal final class VendPaymProposalAutomationFeature implements IFeatureMetada
 ## ProcessScheduleITypeRegistration class
 
 ## ProcessScheduleTypeRegistrationItem class
-  
-The ProcessScheduleTypeRegistrationItem class is used as a part of type registration and contains information specific to your type.
 
-Method | Description
----|---
-`public ProcessScheduleTypeName parmName(ProcessScheduleTypeName _name = name)` | The type name that is passed to the **item.parmName** method isn't displayed to users. This value is a developer-defined string that is used when invoking various events and should be assigned as a constant and not a label. **Never use a label as a type name.** Use names like **VendPaymentProposal**.
-`public ProcessScheduleProcessType parmScheduleType(ProcessScheduleProcessType _scheduleType = scheduleType)` | This method determines if the process is scheduled or a polled.
-`public ProcessScheduleTypeCompanyScope parmCompanyScope(ProcessScheduleTypeCompanyScope _companyScope = companyScope)` |  This method determines if the process is a single company or a global process. A single company process sets the company context in batch depending upon what company the user is in when a series is created. If the scope is global, then the company context is ignored and all jobs will run in **dat**.
-`public LabelId parmLabelId(LabelId _labelId = labelId)` | The label returned by this method is displayed to users and represents the display name for your type. For example, **Vendor payment proposal**.
-`public className parmProcessAutomationTaskClassName(ClassName _processAutomationTaskClassName = processAutomationTaskClassName)` | The class name returned by this method is the class name of your class that will implement the **ProcessAutomationTask** interface.
-`public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | Determines if the type you're registering is enabled by default. If your type is feature-managed, then default this value from the state of the feature. Be sure to implement the enabled and disabled feature management events. Enable and disable your type within the framework appropriately by using **ProcessScheduleTypeRegistration.enableOrDisableType** method. Example code is shown in this topic.
-`public List parmParameterTabItemList(List _parameterTabList = parameterTabList)` | A process can have many parameter pages in the UI containing parameters specific to the process. These parameter pages surface as form parts on the create series wizard and edit occurrence dialog. For each parameter page, an instance of the class **ProcessSchedulelTypeRegistrationParameterTabItem** must be constructed and returned in the list. If the process doesn't need parameter pages, then return **null**. For more information, see [Process parameters](process-parameters.md).
-`public static ProcessScheduleTypeRegistrationItem construct()` | Constructs an instance of the ProcessScheduleTypeRegistrationItem class.
+The **ProcessScheduleTypeRegistrationItem** class is used as a part of type registration and contains information that is specific to your type.
+
+| Method | Description |
+|---|---|
+| `public ProcessScheduleTypeName parmName(ProcessScheduleTypeName _name = name)` | The type name that is passed to the **item.parmName** method isn't shown to users. This value is a developer-defined string that is used when various events are invoked. It should be assigned as a constant, not as a label. **Never use a label as a type name.** Use names such as **VendPaymentProposal**. |
+| `public ProcessScheduleProcessType parmScheduleType(ProcessScheduleProcessType _scheduleType = scheduleType)` | This method determines whether the process is scheduled or polled. |
+| `public ProcessScheduleTypeCompanyScope parmCompanyScope(ProcessScheduleTypeCompanyScope _companyScope = companyScope)` | This method determines whether the process is a single-company process or a global process. A single-company process sets the company context in a batch, depending on the company that the user is in when a series is created. If the scope is global, the company context is ignored, and all jobs are in **dat**. |
+| `public LabelId parmLabelId(LabelId _labelId = labelId)` | The label that this method returns is shown to users and represents the display name for your type. An example is **Vendor payment proposal**. |
+| `public className parmProcessAutomationTaskClassName(ClassName _processAutomationTaskClassName = processAutomationTaskClassName)` | The class name that this method returns is the class name of the class that will implement the **ProcessAutomationTask** interface. |
+| `public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | This method determines whether the type that you're registering is enabled by default. If your type is feature-managed, a default value is taken from the state of the feature. Be sure to implement the enabled and disabled feature management events. Enable and disable your type in the process automation framework in the appropriate way, by using **ProcessScheduleTypeRegistration.enableOrDisableType** method. Example code is shown earlier in this topic. |
+| `public List parmParameterTabItemList(List _parameterTabList = parameterTabList)` | A process can have many parameter pages in the UI. These parameter pages contain parameters that are specific to the process. They are surfaced as form parts in the create series wizard and edit occurrence dialog box. For each parameter page, an instance of the **ProcessSchedulelTypeRegistrationParameterTabItem** class must be constructed and returned in the list. If the process doesn't require parameter pages, return **null**. For more information, see [Process parameters](process-parameters.md). |
+| `public static ProcessScheduleTypeRegistrationItem construct()` | This method constructs an instance of the **ProcessScheduleTypeRegistrationItem** class. |
 
 ## ProcessSchedulelTypeRegistrationParameterTabItem class
 
-The **ProcessSchedulelTypeRegistrationParameterTabItem** class represents information specific to a single parameter page.
+The **ProcessSchedulelTypeRegistrationParameterTabItem** class represents information that is specific to a single parameter page.
 
-Method | Description
----|---
-`public MenuItemName parmMenuItemName(MenuItemName _menuItemName = menuItemName)` | The series wizard supports parameter pages using embedded form part. This value is the menu item to the form part created by the team that owns the process.
-`public LabelId parmCaption(LabelId _caption = caption)` | This value is the caption on this parameter page.
-`public LabelId parmHelpText(LabelId _helpText = helpText)` | This value is the help text for this parameter page.
-`public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | Constructor initializing the instance with the given menu item name.
+| Method | Description |
+|---|---|
+| `public MenuItemName parmMenuItemName(MenuItemName _menuItemName = menuItemName)` | The series wizard supports parameter pages by using embedded form parts. This value is the menu item that goes to the form part that is created by the team that owns the process. |
+| `public LabelId parmCaption(LabelId _caption = caption)` | This value is the caption on the parameter page. |
+| `public LabelId parmHelpText(LabelId _helpText = helpText)` | This value is the Help text for the parameter page. |
+| `public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | This method is the constructor that initializes the instance with the specified menu item name. |
