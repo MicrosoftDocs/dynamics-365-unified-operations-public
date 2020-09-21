@@ -38,18 +38,22 @@ ms.dyn365.ops.version: Retail 10.0.15 update
 This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
 Dynamics 365 Commerce will now enable the Retailers to be able to specify and create 'Timeslots' for the 'Pickup' mode(s) of delivery. 
-- Timeslot is a specific interval of time, where the customer can choose to pickup thier order form a specific store/location. 
-- Timelsot management is only available to the 'Pickup' mode of delivery in Dynamics 365 Commerce. 
 
-![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
+![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
+
+- **Timeslot** is a specific interval of time, where the customer can choose to pickup thier order form a specific store/location. 
+- **Timelsot management** is **only** available to the **'Pickup'** mode of delivery in Dynamics 365 Commerce. 
 
 Retailers can choose to specify the following attributes within a 'Timeslot' template. 
+
 - *Time Interval*: The time duration that can be alloted per timeslot. (15 mins / 30 mins / 1 hour etc...) 
 - *Slots per interval*: The number of customers that can be served per time interval. ( 1,2... only whole numbers)
 - *Active hours of delivery*: The time period between which the 'Pickup' is allowed. 
 - *Active Days*: Days on which the above timeslots can be applied. 
 - *Start & End Date*: Start and end date from which the timeslots are applicable. (Does not effect any active pickup orders)
 - *Minumum & Maximum calendar limit*: The closest or farthest timeslots that can be selected for a pickup order. 
+
+![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
 
 Only a single Timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
