@@ -19,7 +19,7 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm:
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: retail
 ms.author: aamiral
