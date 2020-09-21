@@ -290,9 +290,9 @@ Because you've updated your certificates, the configuration file that is present
 
 3. Change the thumbprints to the new thumbprints that you previously configured. (You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.)
 
-	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![Deployment settings thumbprint image 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![Deployment settings thumbprint](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![Deployment settings thumbprint image 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
@@ -308,9 +308,9 @@ Because you've updated your certificates, the configuration file that is present
 
 	Here is an example of how the name of the same thumbprint might differ.
 
-	![Deployment settings thumbprint example](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![Deployment settings thumbprint example 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![Deployment settings thumbprint example](media/642f6434da9cdeac3651b765acca08fa.png)
+	![Deployment settings thumbprint example 2](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
