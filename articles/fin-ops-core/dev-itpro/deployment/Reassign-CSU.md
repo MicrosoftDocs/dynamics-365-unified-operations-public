@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.0
 This article explains how to re-assign a Commerce Store Channel to a different Commerce Scale Unit (CSU) than the one it is currently operating with. Re-assigning to a different CSU involves downtime for that channel. This article describes best practices to re-assign channels while minimizing business disruption and downtime. This applies to both re-assignment of channels between cloud-hosted Commerce Scale Units to other cloud-hosted CSUs, between self-hosted Commerce Scale Units to other self-hosted CSUs, as well as between cloud-hosted and self-hosted CSUs, and in either direction. 
 
 ## Planning for downtime
-With the steps described in this article, all long running system processes involved in this exercise (including synchronization of master data for products, prices, customers, etc.) are run before the actual re-assignment, while the stores are operational. The critical period of re-assignment during which you must take a planned downtime in your enviornment will involve data synchronization of a very small payload of channel configuration data to the new Commerce Scale Unit. In most cases, this synchronization can complete in under 10 minutes. However, from an operational perspective, you will need to plan for a longer downtime window to allow for all pre-requisite steps to complete (e.g. closing all shifts, synchronizing transactions to to HQ, posting statements, etc.), which will vary by each organization.
+With the steps described in this article, all long running system processes involved in this exercise (including synchronization of master data for products, prices, customers, etc.) are run before the actual re-assignment, while the stores are operational. The critical period of re-assignment during which you must take a planned downtime in your environment will involve data synchronization of a very small payload of channel configuration data to the new Commerce Scale Unit. In most cases, this synchronization can complete in under 10 minutes. However, from an operational perspective, you will need to plan for a longer downtime window to allow for all pre-requisite steps to complete (e.g. closing all shifts, synchronizing transactions to to HQ, posting statements, etc.), which will vary by each organization.
 
 ## Pre-requisities
 Perform all the below steps first in sandbox UAT environment and then repeat in a production environment. This will allow you to measure and estimate the actual downtime you can expect in a production environment. 
@@ -73,7 +73,7 @@ The following steps must be performed during planned downtime for your channels.
 1. Navigate to **Store details** page.
 2. Set Live Channel Database field to new Commerce Scale Unit.
 3. Set Channel profile field to the new Commerce Scale Unit.
-4. Navigate to the **Distirbution Schedule** form.
+4. Navigate to the **Distribution Schedule** form.
 5. Run Channel configuration job (1070) and POS redeployment (1160) by selecting **Run now** (or **Create batch job** for asynchronous processing) for each job. 
 6. If you are using Cloud Point of Sale, you will need to use the URL of Cloud Point of Sale for the new CSU, and re-active the POS device. 
 7. For MPOS, close, re-open and login on each POS device.
