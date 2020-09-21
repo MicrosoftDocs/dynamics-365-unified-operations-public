@@ -48,7 +48,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
     
 ## Experimentation journey
 The image below shows the user's experimentation journey in Commerce and the third-party service - it is a cyclical process that can take a few iterations to learn and get the desired results:
-![Experimentation user lifecycle](./media/experimentation_lifecycle.svg "Experimentation user lifecycle")
+![Experimentation lifecycle](./media/experimentation_lifecycle.svg "Experimentation lifecycle")
 
 Click on the links below to learn more about the phases:
 1. [Identify the goals for your experiment](experimentation-identify.md)
