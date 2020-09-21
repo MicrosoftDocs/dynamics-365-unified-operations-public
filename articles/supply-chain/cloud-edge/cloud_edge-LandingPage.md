@@ -65,12 +65,16 @@ A workload is a defined set of business functionality that can be factored out a
 - Manufacturing execution
 - Warehouse management
 
+### Dedicated manufacturing workload capabilities in a scale unit
+
 Within manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
 
 - Enable machine operators and shop floor supervisors to access the operational production plan.
 - Enable machine operators to keep the plan current by executing discrete and process manufacturing jobs.
 - Enable the shop floor supervisor to adjust the operational plan.
 - Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
+
+### Dedicated warehouse management workload capabilities in a scale unit
 
 For warehouse execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
 
@@ -83,13 +87,13 @@ For warehouse execution, cloud and edge scale units deliver the following capabi
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 
-## Creating an edge scale unit for preview using your custom on-premises hardware appliance
+### Managing cloud scale units and workloads
+
+### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
 In the public preview you can create on-premises edge scale units on your custom hardware using the Local Business Data environments.
 Please find more details [here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 
-## Managing scale units and workloads
+### Architecture details for Cloud and Edge topologies
 
-## Architecture details for Cloud and Edge topologies
-
-## Monitoring and troubleshooting data synchronization
+### Monitoring and troubleshooting data synchronization
