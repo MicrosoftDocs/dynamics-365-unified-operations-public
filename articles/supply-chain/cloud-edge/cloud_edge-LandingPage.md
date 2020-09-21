@@ -31,17 +31,30 @@ ms.dyn365.ops.version: AX 10.0.15
 
 # Cloud and Edge scale units for manufacturing and warehouse management workloads - public preview
 
-> [!CAUTION]
-> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to these Preview Terms. [**LINK MISSING**]
-
 This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
-
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
 Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity (such as provider outages, Azure outages, unreliable connections, or network latency) to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
 
-> [!TIP]
-> Navigate directly to the scale unit management environment for your Dynamics 365 Supply Chain Management environment. [Click Here](https://sum.dynamics.com)
+### Public preview information
+
+The Cloud & Edge preview for Dynamics 365 Supply Chain Management is made available on the condition you agree to these Preview Terms. [**LINK MISSING**]
+>
+> [!IMPORTANT]
+> In order to sign up to the Cloud & Edge preview for Dynamics 365 Supply Chain Management your organization must already have a live Dynamics 365 Supply Chain Management cloud environment.
+> The scale units capability are in public preview at the moment.
+As the one signing up, your user account must be user in the specific tenant and also a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
+>
+> When you  sign up for the preview, you will select the tenant and go through the sign up steps. As soon as a preview capacity can be allocated an email will be sent with provisioning details and the promotion codes for two environments (a cloud hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environment as Tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code.
+>After confirmation to Microsoft, the one of the environments will be configured to function as cloud hub the other as a scale unit. You can then configure the scale units and deploy select Warehouse management an manufacturing workloads using the Scale Unit Manager portal.
+>
+>Please note! Preview environments will be deleted automatically after 60 days. After the preview environment has been deleted, you may sign up and queue for a new preview deployment.
+>
+>Navigate here to sign up for the preview> https://SUM.DYNAMICS.COM
+
+The preview will allow you receive one environment that will function as a cloud based hub of your supply chain management environment and one environment that will function as a cloud scale unit. For the preview both environment will be hosted in a data center in northern USA.
+You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit to the cloud hub that you have received as part of the preview program. 
+
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
 ## Scale units for dedicated workloads
 
