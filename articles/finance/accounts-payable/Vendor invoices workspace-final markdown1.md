@@ -1,10 +1,41 @@
-**Vendor invoice entry workspace**
+---
+# required metadata
 
--   07/10/2020
+title: Vendor invoice entry workspace
+description: This topic describes the capabilities that are available through Power BI to display information about vendor invoices that's filtered for specific users in a graphical format.
+author: abruer
+manager: AnnBe
+ms.date: 09/21/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
--   3 minutes to read
+# optional metadata
 
-** Important**
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: shpandey
+ms.search.validFrom: 2020-09-21
+ms.dyn365.ops.version: 10.0.14
+---
+
+
+
+# Vendor invoice entry workspace
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic describes the capabilities that are available through Power BI to display information about vendor invoices that's filtered for specific users in a graphical format.
 
 Dynamics 365 for Finance and Operations has evolved into purpose-built
 applications to help you manage specific business functions. For more
@@ -18,7 +49,7 @@ transaction grids, and related vendor information. The **Analytics** page uses
 the capabilities of Microsoft Power BI to show visuals that are related to
 vendor invoices.
 
-**Setup needed to view Power BI content**
+## Setup needed to view Power BI content
 
 The following setup needs to be completed for data to display in **Vendor
 invoice entry** Power BI visuals.
@@ -55,9 +86,9 @@ invoice entry** Power BI visuals.
 12. Please note the users must have the security role AP Manager or AP Clerk in
     order to view this information.
 
-**My work view**
+## My work view
 
-**Company selection**
+### Company selection
 
 You will see a dropdown menu to select a **Company**. By default, it will show
 you the information for the company in which you log in upon signing into D365.
@@ -66,7 +97,7 @@ the newly selected company. Clicking on the tile will bring you to that form and
 change your logged in company (as seen in the upper right hand corner) to that
 of the one in the dropdown selection.
 
-**Summary tiles**
+### Summary tiles
 
 The tiles in the **Summary of pending invoices** section give an overview of the
 state of your vendor invoices. You can see journals that aren't yet posted,
@@ -82,7 +113,7 @@ invoice journals**, **Journals- Assigned to me**, and **Invoice pool**.
 The information in the **Summary** section is for the company set as the default
 for your login.
 
-**Creating new records**
+### Creating new records
 
 Use the **New** dropdown menu to create a new invoice record using one of the
 available options:
@@ -102,7 +133,7 @@ the logged-in company. For example, if your logged-in company is UMSF, but your
 filter company is GBSI, when you click New and make your selection, it will
 create that record in GBSI.
 
-**Documents not invoiced grids**
+### Documents not invoiced grids
 
 The **Documents not invoiced** section contains grids that show documents
 awaiting vendor invoices. From the **Open purchase orders** grid, you will see
@@ -122,7 +153,7 @@ in the grid.
 On the **Find purchase order** grid, use the **Search** bar to search for a
 purchase order.
 
-**Related information**
+### Related information
 
 You can view **Posted invoices** information using the links on the right side
 of the workspace, to include **Open vendor invoices**, **Invoice journal**, and
@@ -131,7 +162,7 @@ access a filtered list to show all **Vendors on hold** or use the **All
 vendors** link. **All purchase orders** and **Open prepayments** links are also
 available.
 
-**Analytics page**
+### Analytics page
 
 The **Analytics-All companies** page provides important metrics, such as vendor
 invoices that are in approval by approver and by company. This page contains two
@@ -144,7 +175,7 @@ enabled in Feature management.
 The following table shows the visualizations that are available on each report
 page.
 
-| **ANALYTICS PAGE**              |                                             |
+| ANALYTICS PAGE                  |                                             |
 |---------------------------------|---------------------------------------------|
 | **Report page**                 | **Visualization**                           |
 | Vendor invoice overview         | Pending vendor invoices in automation[^1]   |
