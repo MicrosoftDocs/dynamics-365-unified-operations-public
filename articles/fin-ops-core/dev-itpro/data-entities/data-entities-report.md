@@ -44,8 +44,8 @@ Microsoft provides the following reports for data entities, which can be downloa
 
 - Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
 - Aggregate measures: Lists the aggregate measures.
-- Config keys - Lists the configuration keys. 
-- Config key groups - Lists the configuration key groups.
+- Config keys: Lists the configuration keys. 
+- Config key groups: Lists the configuration key groups.
 - Data entities: Lists each data entity. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
 - Data entities fields: Lists each field in a data entity, and the table that it originates from.
 - KPIs: Lists the KPIs.
