@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Run and monitor your experiment
+![Experimentation user journey - Run & Monitor](./media/experimentation_run_monitor.svg "Experimentation user journey - Run & Monitor")
 Once the variations are connected and edited in Commerce, follow the steps below to run the experiment in the third-party service and track user interactions to compute success metrics:
 1. Run the experiment in the third-party service so the right variation experiences can be shown to end-users. If the experiment is not running in the third-party service, the experiment variations will not be shown i.e. all end-users will continue to see the existing version of the page.
 1. Let the experiment run for however long it takes to gather sufficient data for statistical analyses in the third-party service.
