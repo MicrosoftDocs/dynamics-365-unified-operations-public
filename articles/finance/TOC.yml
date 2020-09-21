@@ -76,8 +76,6 @@
             href: get-started/whats-new-changed-10-0-13.md     
           - name: Finance 10.0.12 (August 2020)
             href: get-started/whats-new-changed-10-0-12.md     
-          - name: Finance 10.0.11 (July 2020)
-            href: get-started/whats-new-changed-10-0-11.md                    
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -160,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1268,6 +1266,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
