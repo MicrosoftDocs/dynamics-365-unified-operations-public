@@ -88,6 +88,9 @@ Follow these steps to configure 'Timeslot' for the 'pickup' mode of delivery.
 
 ## Timeslot selection on POS orders 
 
+![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png "POS Timeslot Pickup")
 
 ## Timeslot selection on eCommerce orders 
+
+![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
 
