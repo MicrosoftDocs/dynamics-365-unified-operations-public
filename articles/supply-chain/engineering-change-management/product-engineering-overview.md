@@ -51,12 +51,12 @@ Engineering change management helps you plan and manage product versioning, life
 First, enable engineering change management by doing the following:
 
 1. Go to [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-1. Check for updates and enable the feature **(Preview) Engineering change management**.
+1. Check for updates and enable the feature **(Preview) Engineering Change Management**.
 
 Then, turn on the engineering change management configuration key by doing the following:
 
 1. Place your system into maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** section.
-1. Select the **Engineering change management** check box.
+1. Select the **Engineering Change Management** check box.
 1. Turn off maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
