@@ -3,7 +3,7 @@
 
 title: Use cash control limits
 description: This topic explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
-author: velofog
+author: v-kiarnd
 manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: v-kiarnd
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 
