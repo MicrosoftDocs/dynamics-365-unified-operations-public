@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8.0
 ---
 
-# Overview
+# Re-assign channel to a different Commerce Scale Unit
 This article explains how to re-assign a Commerce Store Channel to a different Commerce Scale Unit (CSU) than the one it is currently operating with. Re-assigning to a different CSU involves downtime for that channel. This article describes best practices to re-assign channels while minimizing business disruption and downtime. This applies to both re-assignment of channels between cloud-hosted Commerce Scale Units to other cloud-hosted CSUs, between self-hosted Commerce Scale Units to other self-hosted CSUs, as well as between cloud-hosted and self-hosted CSUs, and in either direction. 
 
 # Planning for downtime
