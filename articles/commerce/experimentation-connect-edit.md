@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Connect your experiment and edit its variations
+![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg "Experimentation user journey - Connect & Edit")
 Once the experiment is setup in the third-party service, the next step is to connect it to an entity in Commerce and edit its variations.
 
 ## Connect your experiment
