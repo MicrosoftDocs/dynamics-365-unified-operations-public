@@ -40,7 +40,7 @@ This topic describes where to find API documentation in Visual Studio and on the
 
 ### Application class and table documentation is in Visual Studio
 
-You can find documentation for the Application classes in Microsoft Visual Studio by searching for the application programming interface (API) in Application Explorer and then displaying the code. You can find additional metadata about the API in the **Properties** window. You can also download a list of all the tables in the [Technical Reference Reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).
+You can find documentation for the Application classes in Microsoft Visual Studio by searching for the application programming interface (API) in Application Explorer and then displaying the code. You can find additional metadata about the API in the **Properties** window. You can also download a list of all the tables in the [Technical Reference Reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
 
 ### Programming with application tables and classes
 
