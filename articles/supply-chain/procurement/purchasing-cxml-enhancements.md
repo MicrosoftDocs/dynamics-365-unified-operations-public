@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-The _Purchasing cXML Enhancements_ feature builds on the [existing external catalog functionality](set-up-external-catalog-for-punchout.md) that is used for purchase requisitions. This existing functionality is known as _PunchOut_. Although a purchase order doesn't have to originate from a purchase requisition, there must be a connection between the supplier on a purchase order and the parameters that are used to send the purchase order document.
+The _Purchasing cXML Enhancements_ feature builds on the [existing external catalog functionality](set-up-external-catalog-for-punchout.md) that is used for purchase requisitions. This existing functionality is known as _PunchOut_. Although a purchase order doesn't have to originate from a purchase requisition, there must be a connection between the vendor on a purchase order and the parameters that are used to send the purchase order document.
 
 ## Turn on the Purchasing cXML Enhancements feature
 
@@ -59,13 +59,13 @@ Go to **Procurement and sourcing \> Setup \> cXML management \> cXML parameters*
 
 - **cXML test mode** – This global parameter affects the way that purchase orders are physically sent from the batch job. Select one of the following values:
 
-    - **Test** – In this mode, the batch job can be running, and the XML document for the message is generated, but it isn't sent. Instead, it's saved on the purchase order request for review purposes. This mode is helpful when you're in an initial implementation, and you want to see how data is entered in the cXML message. You might also want to generate sample messages that you can send to suppliers for initial validation.
-    - **Live** – In this mode, the feature uses the [external catalog settings](#external-catalog-setup) to physically transmit each document to the supplier.
+    - **Test** – In this mode, the batch job can be running, and the XML document for the message is generated, but it isn't sent. Instead, it's saved on the purchase order request for review purposes. This mode is helpful when you're in an initial implementation, and you want to see how data is entered in the cXML message. You might also want to generate sample messages that you can send to vendors for initial validation.
+    - **Live** – In this mode, the feature uses the [external catalog settings](#external-catalog-setup) to physically transmit each document to the vendor.
 
 - **Send purchase request updates** – Set this option to *Yes* to send an update message for purchase orders. Set it to *No* to prevent the message from being sent. Most vendors prefer not to receive update messages. Instead, they require that customers contact them by phone or email if a purchase order should be changed. This parameter is a global parameter, and no override can be specified on the external catalog for each vendor. A purchase order will be marked as updated if you post a second confirmation on a purchase order, but the first confirmation has already been sent and acknowledged by the vendor. If there is a second confirmation, but the first confirmation hasn't been sent, the second confirmation will be treated as a new document. You can confirm a purchase order as many times as you want until one confirmation is sent. The next confirmation will then be treated as an update message.
 - **Send purchase request delete** – Set this option to *Yes* to send a delete message for purchase orders. Set it to *No* to prevent the message from being sent. Most vendors prefer not to receive delete messages. Instead, they require that customers contact them by phone or email if a purchase order was sent by mistake. This parameter is a global parameter, and no override can be specified on the external catalog for each vendor. A purchase order will be marked as deleted if you cancel the purchase order in Supply Chain Management.
 - **Archive file** – Specify the file path where you want to export and save archived cXML documents. The path is used when you run the purge function from the **Purchase order request** page.
-- **Max characters for street line** – Enter the maximum number of characters that can be used in the street field for addresses in the cXML document. This global parameter affects all suppliers unless an override is specified on the external catalog properties.
+- **Max characters for street line** – Enter the maximum number of characters that can be used in the street field for addresses in the cXML document. This global parameter affects all vendors unless an override is specified on the external catalog properties.
 
 ## <a name="vendor-setup"></a>Set up vendor purchase orders to use cXML
 
@@ -83,13 +83,13 @@ On the **External catalogs** page, for each of your catalogs, you can set up the
 > [!NOTE]
 > When you confirm a purchase order that can be sent via cXML, the system looks up the vendor that is associated with the purchase order and then finds the first active external catalog that is associated with that vendor. The system then uses the settings from that external catalog to send the purchase order. If multiple external catalogs are set up, the system uses only the first external catalog that it finds, based on the vendor on the purchase order. Therefore, we recommend that you create just one external catalog for each vendor.
 
-![External catalog settings](media/cxml-supplier-catalog.png "External catalog settings")
+![External catalog settings](media/cxml-vendor-catalog.png "External catalog settings")
 
 ### Set the PunchOut protocol type
 
 On the **General** FastTab of the **External catalogs** page, set the **Punchout protocol type** field to _cXML_. This option will be the only available option, unless a partner has extended the functionality and provides an additional option in the extension.
 
-If you're also using the catalog for PunchOut, you must also [set up the message format](set-up-external-catalog-for-punchout.md). The message format is used to establish the connection to the supplier in the PunchOut transaction from the requisition. When a purchase order is sent, the order properties will be used to establish the connection with a supplier.
+If you're also using the catalog for PunchOut, you must also [set up the message format](set-up-external-catalog-for-punchout.md). The message format is used to establish the connection to the vendor in the PunchOut transaction from the requisition. When a purchase order is sent, the order properties will be used to establish the connection with a vendor.
 
 ### <a name="set-order-properties"></a>Set the order properties
 
@@ -103,15 +103,15 @@ Every time that you add one or more properties to the grid, use the right column
 
 Use the default properties in the following way:
 
-- **BUYER\_COOKIE** – This tracking field can be used to indicate specific information for your company. Unless you have an agreement with the supplier about how this property is used, it doesn't have very much meaning in the purchase order send. Therefore, you should set it to a simple value.
+- **BUYER\_COOKIE** – This tracking field can be used to indicate specific information for your company. Unless you have an agreement with the vendor about how this property is used, it doesn't have very much meaning when sending a purchase order. Therefore, you should set it to a simple value.
 - **DELIVERTO** – When the shipping address is entered in the document from the purchase order, the **Attention information** field is used to set the **DeliverTo** field in the XML message. If you require that this value be a requester name, and you will set the requester field on the purchase order header, enter the value _REQUESTER_ for this property, so that the requester name will be entered in the **DeliverTo** field in the XML. In this case, the primary email address and phone number that are used will be from the requester instead of the orderer.
-- **DEPLOYMENTMODE** – Set this property as required by the vendor. The values are usually _PRODUCTION_ or _TEST_. Set the value based on your communication with the supplier. Usually, it must match the intended system behind the **ORDERCHECKURL** value that the supplier indicates as a test or production system.
-- **FIXEDBILLADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the supplier differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the supplier, and that the address is set up in the supplier's system. The billing address is the primary invoice address that is specified for the legal entity in Supply Chain Management.
-- **FIXEDSHIPADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the supplier differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the supplier, and that the address is set up in the supplier's system. The shipping address is the address that is specified on the header of the purchase order. Most suppliers accept only header addresses, not line addresses. Although there are fields for line addresses in the XML, they will be set to the header address.
+- **DEPLOYMENTMODE** – Set this property as required by the vendor. The values are usually _PRODUCTION_ or _TEST_. Set the value based on your communication with the vendor. Usually, it must match the intended system behind the **ORDERCHECKURL** value that the vendor indicates as a test or production system.
+- **FIXEDBILLADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the vendor, and that the address is set up in the vendor's system. The billing address is the primary invoice address that is specified for the legal entity in Supply Chain Management.
+- **FIXEDSHIPADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the vendor, and that the address is set up in the vendor's system. The shipping address is the address that is specified on the header of the purchase order. Most vendors accept only header addresses, not line addresses. Although there are fields for line addresses in the XML, they will be set to the header address.
 - **FROM\_DOMAIN** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **FROM\_IDENTITY** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **ORDERCHECKURL** – Enter the URL to transmit the purchase order documents to. This URL starts with `https://` and is supplied by your vendor.
-- **PAYLOAD\_ID** – Enter a prefix value for the payload ID, as required for the business processes that are in place for the current supplier.
+- **PAYLOAD\_ID** – Enter a prefix value for the payload ID, as required for the business processes that are in place for the current vendor.
 - **SENDER\_DOMAIN** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **SENDER\_IDENTITY** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **SHARED\_SECRET** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
@@ -119,25 +119,25 @@ Use the default properties in the following way:
 - **TO\_DOMAIN** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **TO\_IDENTITY** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **USERAGENT** – Enter a value to identify the system that you're using. For example, enter _Dynamics 365 Supply Chain Management_.
-- **VERSION** – Enter a cXML version number, if the supplier requests this information. The default version is *1.2.008*. This version is stable and is accepted by most vendors.
-- **RESPONSETEXT** – Enter any custom text that you expect the supplier to return in the cXML response message after the order has been sent. In this way, the system can mark the message as _Acknowledged_. If the response doesn't match standard text or the customer text that you enter here, the request will be marked as _Error_.
+- **VERSION** – Enter a cXML version number, if the vendor requests this information. The default version is *1.2.008*. This version is stable and is accepted by most vendors.
+- **RESPONSETEXT** – Enter any custom text that you expect the vendor to return in the cXML response message after the order has been sent. In this way, the system can mark the message as _Acknowledged_. If the response doesn't match standard text or the customer text that you enter here, the request will be marked as _Error_.
 - **RESPONSETEXTSUB** – Set this property to _TRUE_ if you want to search the vendor response text for the values that are specified in the **RESPONSETEXT** field. For example, the vendor might return a long string that includes "OK" in the response. In this case, you can enter _OK_ in the **RESPONSETEXT** field and set **RESPONSETESTSUB** to _TRUE_ to search for "OK" anywhere in the response. The order can then be set to _Acknowledged_.
 - **CONTENTTYPE** – In a typical catalog setup, you don't have to set this property. If you receive a server 500 error from a vendor's system when you send a purchase order, you can do testing by setting this property to _FALSE_. That value will change a setting in the web request and might enable the message to be sent for some platforms.
-- **ENABLEHEADERS** – Set this property to _TRUE_ to send headers together with the post of the purchase order. You must set this property only if the supplier requires it. If you set this property to _TRUE_, add extra custom properties that are based on the names that the supplier provides, and prefix them with _H\__. Typical examples include **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID**, and **H\_ACTIONREQUEST**. The following custom properties are included in the default properties:
+- **ENABLEHEADERS** – Set this property to _TRUE_ to send headers together with the purchase order. You must set this property only if the vendor requires it. If you set this property to _TRUE_, add extra custom properties that are based on the names that the vendor provides, and prefix them with _H\__. Typical examples include **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID**, and **H\_ACTIONREQUEST**. The following custom properties are included in the default properties:
 
     - **H\_USERID** – If the trading partner requires that you send a user ID as part of the URL to submit a purchase order, enter the value here.
     - **H\_PASSWORD** – If the trading partner requires that you send a password as part of the URL to submit a purchase order, enter the value here.
 
 - **ENABLEMANUALPO** – If this property is set to _TRUE_, when users manually create purchase orders (that is, when they don't start from a requisition), those purchase orders will inherit the setting of the **Send purchase order via cXML** option from the vendor. If this property isn't set, or if it's set to _FALSE_, the **Send purchase order via cXML** option won't be set on the purchase order header for manually created purchase orders. For purchase orders that are created from a requisition, the setting of the **Send purchase order via cXML** option is always inherited from the vendor, regardless of the setting of this property. For more information, see the [Set up vendor purchase orders to use cXML](#vendor-setup) section earlier in this topic.
 - **PUNCHOUTPOONLY** – If this property is set to _TRUE_, only purchase requisition lines that are created from the PunchOut process will set the **Send purchase order via cXML** option on the purchase order header. In addition, the purchase requisition line type of all lines on the purchase order must be _External catalog item_. Otherwise, the cXML purchase order can't be created.
-- **PUNCHOUTSHIPTO** – If this property is set to _TRUE_, the default address of the legal entity will be added to the PunchOut setup request message when the user opens an external catalog. This address is added as the **ShipTo** address. Suppliers will use the **ShipTo** address to show pricing based on the company location.
-- **TRACEPUNCHOUT** – Set this property to _TRUE_ if you receive an error message when you try to browse to an external catalog from the requisition. Trace information will then be filled in for the **PunchOutSetupRequest** and **PunchOutResponse** messages that are sent between Supply Chain Management and the supplier site. You can view this information on the **cXML cart message log** page, which you can open from the **External catalog setup** page for the vendor catalog that you're have having issues with. You should set this property to _TRUE_ only if you're troubleshooting, because it creates a large performance overhead on the database for each PunchOut. For more information, see the [View the cXML cart message log for external catalog PunchOut](#message-log) section later in this topic.
-- **REPLACENEWLINE** – Set this property to _TRUE_ if you're having an issue because a supplier's system is sending a **PunchOutResponse** message that includes newline characters (\\n). This issue might occur if the supplier's messages are parsed through middleware or a procurement hub. If you're having an issue with a new vendor setup, set the **TRACEPUNCHOUT** property to _TRUE_ to view the **PunchOutResponse** message and determine whether the XML tags are broken up by newline characters.
+- **PUNCHOUTSHIPTO** – If this property is set to _TRUE_, the default address of the legal entity will be added to the PunchOut setup request message when the user opens an external catalog. This address is added as the **ShipTo** address. Vendors will use the **ShipTo** address to show pricing based on the company location.
+- **TRACEPUNCHOUT** – Set this property to _TRUE_ if you receive an error message when you try to browse to an external catalog from the requisition. Trace information will then be filled in for the **PunchOutSetupRequest** and **PunchOutResponse** messages that are sent between Supply Chain Management and the vendor site. You can view this information on the **cXML cart message log** page, which you can open from the **External catalog setup** page for the vendor catalog that you're have having issues with. You should set this property to _TRUE_ only if you're troubleshooting, because it creates a large performance overhead on the database for each PunchOut. For more information, see the [View the cXML cart message log for external catalog PunchOut](#message-log) section later in this topic.
+- **REPLACENEWLINE** – Set this property to _TRUE_ if you're having an issue because a vendor's system is sending a **PunchOutResponse** message that includes newline characters (\\n). This issue might occur if the vendor's messages are parsed through middleware or a procurement hub. If you're having an issue with a new vendor setup, set the **TRACEPUNCHOUT** property to _TRUE_ to view the **PunchOutResponse** message and determine whether the XML tags are broken up by newline characters.
 - **POCOMMENTS** – Set this property to _TRUE_ if you want the cXML document to include notes that are attached to the purchase order in Supply Chain Management. The attachment text is included in the header comments in the purchase order message. For more information about how the system selects and processes these attachments, see the [Attach notes to a purchase order](#attach-po-notes) section later in this topic.
 - **VENDCOMMENTS** – Set this property to _TRUE_ if you want the cXML document to include notes that are attached to the purchase order in Supply Chain Management. The attachment text is included in the header comments in the purchase order message. For more information about how the system selects and processes these attachments, see the [Attach notes to a purchase order](#attach-po-notes) section.
 - **CLEANAMP** – Set this property to _TRUE_ if you receive an error message when you try to do a PunchOut to a vendor, and the vendor's return URL includes incorrectly encoded ampersands (\&).
 - **PUNCHOUTTZ** – Set this property to _TRUE_ if the vendor that you're working with uses the International Organization for Standardization (ISO) 8601 standard to do a specific validation of the date/time of PunchOut request message. Supply Chain Management uses the Coordinated Universal Time (UTC) date in the **PunchOutSetupRequest** message. Therefore, when you set this property to _TRUE_, *+00:00* is added to the date/time format.
-- **WMSADDRESSID** – Set this property to _TRUE_ to use the warehouse number on the purchase order header as the **addressID** value in the **ShipTo** address for the purchase order request that is sent to the supplier. If you set a value for the **FIXEDSHIPADDRESSID** property, that value takes precedence over this value. Therefore, you should use one property or the other to set the **addressID** value in the **ShipTo** address for the document.
+- **WMSADDRESSID** – Set this property to _TRUE_ to use the warehouse number on the purchase order header as the **addressID** value in the **ShipTo** address for the purchase order request that is sent to the vendor. If you set a value for the **FIXEDSHIPADDRESSID** property, that value takes precedence over this value. Therefore, you should use one property or the other to set the **addressID** value in the **ShipTo** address for the document.
 - **PUNCHOUTSHIPTOUSER** – This property works together with the **PUNCHOUTSHIPTO** property. If **PUNCHOUTSHIPTO** is set to _TRUE_, the address for the legal entity is picked up. If **PUNCHOUTSHIPTOUSER** is set to _TRUE_, the primary address from the PunchOut user is used instead of the legal entity address.
 
 ### Activate the external catalog
@@ -158,7 +158,7 @@ Attachments will be included with a purchase order only if their **Type** field 
 
 ## <a name="message-log"></a>View the cXML cart message log for external catalog PunchOut
 
-When you set the **Punchout protocol type** field to _cXML_ for an external catalog, the system will capture a message log of the baskets that come back from suppliers. This log can be used for troubleshooting and other data purposes.
+When you set the **Punchout protocol type** field to _cXML_ for an external catalog, the system will capture a message log of the carts that come back from vendors. This log can be used for troubleshooting and other data purposes.
 
 To open the log for an external catalog, select the relevant catalog, and then, on the Action Pane, select **cXML cart message log**. The **cXML cart message log** page shows a list of the carts that have been returned, the XML that is related to those carts, and the lines that were created on the related purchase requisition.
 
@@ -197,7 +197,7 @@ When you create a purchase order for a vendor, it will inherit the setting of th
 
 ![Purchase order set to use cXML](media/cxml-purchase-order.png "Purchase order set to use cXML")
 
-When you create a purchase order from a purchase requisition that came from a PunchOut flow, all the required line details will be filled in. You can then manually add purchase order lines or copy them from other purchase orders. Be sure to set all required fields. These required fields include the external reference number, which is the supplier number that will be used in the cXML message.
+When you create a purchase order from a purchase requisition that came from a PunchOut flow, all the required line details will be filled in. You can then manually add purchase order lines or copy them from other purchase orders. Be sure to set all required fields. These required fields include the external reference number, which is the vendor number that will be used in the cXML message.
 
 ![Example of an external reference number](media/cxml-line-details.png "Example of an external reference number")
 
@@ -205,7 +205,7 @@ When you've finished filling in all the details for the purchase order, be sure 
 
 After the purchase order is confirmed, you can view the status of the confirmation through the **Purchase order confirmations** journals. On the Action Pane, on the **Purchase** tab, in the **Journals** group, select **Purchase order confirmations**.
 
-Each purchase order can have many confirmations. Each confirmation is marked with an incremental number. In the following illustration, the purchase order is *00000275*, and the confirmation is *00000275-1*. This numbering reflects standard Supply Chain Management functionality, where changes in a purchase order, and therefore the type of cXML message that should be sent to the supplier, are identified based on the confirmation. As the illustration shows, the **Purchase order confirmations** page also includes **Order send status** and **Order request vendor status** fields. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section later in this topic.
+Each purchase order can have many confirmations. Each confirmation is marked with an incremental number. In the following illustration, the purchase order is *00000275*, and the confirmation is *00000275-1*. This numbering reflects standard Supply Chain Management functionality, where changes in a purchase order, and therefore the type of cXML message that should be sent to the vendor, are identified based on the confirmation. As the illustration shows, the **Purchase order confirmations** page also includes **Order send status** and **Order request vendor status** fields. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section later in this topic.
 
 ![Purchase order confirmations page](media/cxml-po-confirmations.png "Purchase order confirmations page")
 
@@ -215,7 +215,7 @@ The **Purchase order request** page includes two grids. The grid in the upper pa
 
 ![Purchase order request page](media/cxml-po-request.png "Purchase order request page")
 
-If the batch job is set up and running, the document will be sent. You can view the status change after the document has been sent. In the following illustration, the **Order send status** field is set to _Sent_. The **Order request vendor status** field is set to _Acknowledged_ to indicate that the supplier received the document, and was able to read it and store it in its system. The grid on the **Purchase order request history** tab shows the time when the document was sent. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section.
+If the batch job is set up and running, the document will be sent. You can view the status change after the document has been sent. In the following illustration, the **Order send status** field is set to _Sent_. The **Order request vendor status** field is set to _Acknowledged_ to indicate that the vendor received the document, and was able to read it and store it in its system. The grid on the **Purchase order request history** tab shows the time when the document was sent. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section.
 
 ![Status messages on the Purchase order request page](media/cxml-po-request-2.png "Status messages on the Purchase order request page")
 
@@ -225,7 +225,7 @@ To activate the batch job for sending purchase order requests, go to **Procureme
 
 For example, your vendor has a policy that states that all orders that are received by 1 PM will be shipped on the same day. In this case, you might have to run the batch only a few times during the morning to communicate any orders that you have. The remaining orders will then be sent the next day. This decision is purely a business decision. You can review it and set the parameters for it accordingly.
 
-The process will look for purchase order request documents that have a status of *Waiting*. If you have an order that you must send to a supplier immediately, you can select **Submit job** and set the **Batch processing** option to *No*.
+The process will look for purchase order request documents that have a status of *Waiting*. If you have an order that you must send to a vendor immediately, you can select **Submit job** and set the **Batch processing** option to *No*.
 
 ## <a name="monitor-po-requests"></a>Monitor purchase order requests
 
@@ -247,7 +247,7 @@ The grid in the upper part of the **Purchase order request** page might show the
 - **Order request vendor status** – This field can have one of the following values:
 
     - **Waiting** – The document is waiting to be sent.
-    - **Acknowledged** – The document has been acknowledged as received from the vendor. You can review the detailed XML message that is returned from the supplier by selecting the **Response XML** tab in the lower part of the page.
+    - **Acknowledged** – The document has been acknowledged as received by the vendor. You can review the detailed XML message that is returned from the vendor by selecting the **Response XML** tab in the lower part of the page.
     - **Error** – The document was sent to the vendor, but an error occurred. You can review the error message by selecting the **Response XML** tab in the lower part of the page.
 
 The grid on the **Purchase order request history** tab in the lower part of the **Purchase order request** page might show the following values:
@@ -255,8 +255,8 @@ The grid on the **Purchase order request history** tab in the lower part of the 
 - **Order request type** – This field can have one of the following values:
 
     - **New** – The line is marked as new immediately after the purchase order is confirmed.
-    - **Update** – If a confirmation has already been sent and acknowledged by the supplier, the next confirmation will be marked as _Update_. Updates will be sent only if the **Send purchase request updates** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
-    - **Delete** – If a confirmation has already been sent and acknowledged by the supplier, but the purchase order is canceled, the confirmation that is waiting will be marked as _Delete_. Deletions will be sent only if the **Send purchase request delete** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
+    - **Update** – If a confirmation has already been sent and acknowledged by the vendor, the next confirmation will be marked as _Update_. Updates will be sent only if the **Send purchase request updates** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
+    - **Delete** – If a confirmation has already been sent and acknowledged by the vendor, but the purchase order is canceled, the confirmation that is waiting will be marked as _Delete_. Deletions will be sent only if the **Send purchase request delete** option is set to *Yes* in the [global cXML parameters](#cxml-parameters).
 
 - **Request time** – The time when the order confirmation was created. You can compare the request time with the order status time to determine the time between confirmation and vendor acknowledgment.
 - **Order send status** – This field is the same as the **Order send status** field in the upper part of the page. It's repeated here to make it easier to view the status at the confirmation level. If the **Order request type** field is set to *New*, and the purchase order is reconfirmed before a confirmation is sent, the **Order send status** field is set to *Archive*.
@@ -280,5 +280,4 @@ To view the content of a vendor acknowledgment or error response, select the **R
 ## Additional resources
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
-- [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)
