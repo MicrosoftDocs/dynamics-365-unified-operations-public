@@ -1371,8 +1371,8 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 
 ### X++ financial statements
 
-|                                                 |                                                                                                          |
-|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|   |  |
+|------------|--------------------|
 | <strong>Reason for deprecation/removal</strong> |                         This functionality has been replaced by another feature.                         |
 |  <strong>Replaced by another feature?</strong>  | Management Reporter (labeled <strong>Financial reporting</strong> in the current version of Dynamics AX) |
 |     <strong>Product areas affected</strong>     |                                              General ledger                                              |
