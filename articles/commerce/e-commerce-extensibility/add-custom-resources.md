@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom static resources
-description: This topic presents an overview of how to add custom resources such as font files that you can be accessed within your theme.
+description: This topic presents an overview of how to add custom resources such as font files, images, css files that you can be accessed within your theme.
 author: samjarawan
 manager: annbe
 ms.date: 09/15/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of how to add custom resources such as font files that you can be accessed within your theme.
+This topic presents an overview of how to add custom resources such as font files, images, css files that you can be accessed within your theme.
 
 ## Overview
 Some scenarios require adding custom static files such as font or CSS files that can be accessed from within a module or a theme.  These static files can be added to a **public** folder within your SDK customization code which will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md).  A relative path can then be used to access the resource.
@@ -58,6 +58,18 @@ body {
     font-family: 'NewFont-Regular', Fallback, sans-serif;
 }
 ```
+
+## Dynamic access to the public path
+When deploying your e-Commerce customizations via LCS, the physical paths will change, thus any files stored in the ```/public``` directory will change.  This means you cannot provide a static physical path from within your code.  However there is a helper API **getAsset** which is available to get the path.  
+
+The below example shows how to use the **getAsset** api to generate a URL to a font file stored in the ```/public/webfonts``` directory.
+
+```typescript
+import { getAsset } from '@msdyn365-commerce/core';
+
+const url = `${getAsset('webfonts/fa-solid-900.woff', this.props.context.request)}`;
+```
+
 
 
 
