@@ -30,20 +30,20 @@ ms.dyn365.ops.version: 8.0
 # Re-assign channel to a different Commerce Scale Unit
 This article explains how to re-assign a Commerce Store Channel to a different Commerce Scale Unit (CSU) than the one it is currently operating with. Re-assigning to a different CSU involves downtime for that channel. This article describes best practices to re-assign channels while minimizing business disruption and downtime. This applies to both re-assignment of channels between cloud-hosted Commerce Scale Units to other cloud-hosted CSUs, between self-hosted Commerce Scale Units to other self-hosted CSUs, as well as between cloud-hosted and self-hosted CSUs, and in either direction. 
 
-# Planning for downtime
+## Planning for downtime
 With the steps described in this article, all long running system processes involved in this exercise (including synchronization of master data for products, prices, customers, etc.) are run before the actual re-assignment, while the stores are operational. The critical period of re-assignment during which you must take a planned downtime in your enviornment will involve data synchronization of a very small payload of channel configuration data to the new Commerce Scale Unit. In most cases, this synchronization can complete in under 10 minutes. However, from an operational perspective, you will need to plan for a longer downtime window to allow for all pre-requisite steps to complete (e.g. closing all shifts, synchronizing transactions to to HQ, posting statements, etc.), which will vary by each organization.
 
-# Pre-requisities
+## Pre-requisities
 Perform all the below steps first in sandbox UAT environment and then repeat in a production environment. This will allow you to measure and estimate the actual downtime you can expect in a production environment. 
 
-# Re-assignment steps
+## Re-assignment steps
 
 The following steps can be performed while the stores are still operational.
 
 1. For the desired store, navigate to **Store details** page.
 2. Set **Live Channel Database** field to existing CSU.
 
-# Configure data synchronization
+## Configure data synchronization
 
 The following steps are optional, but recommended.
 
@@ -61,14 +61,14 @@ The following steps are optional, but recommended.
 
 The following steps must be performed during planned downtime for your channels.
 
-# Prepare for re-assignment
+## Prepare for re-assignment
 
 1. On all Point of Sale devices, ensure all Shifts are closed.
 2. Logout on all POS devices.
 3. Validate all POS offline transactions are synchronized to HQ.
 4. Validate all Statements are posted.
 
-# Re-assign channels to new Commerce Scale Unit
+## Re-assign channels to new Commerce Scale Unit
 
 1. Navigate to **Store details** page.
 2. Set Live Channel Database field to new Commerce Scale Unit.
@@ -80,7 +80,7 @@ The following steps must be performed during planned downtime for your channels.
 
 The following steps can happen outside of planned downtime for your channels.
 
-# Post re-assignment steps
+## Post re-assignment steps
 
 The following steps are optional, but recommended.
 
