@@ -51,6 +51,9 @@ As the one signing up, your user account must be user in the specific tenant and
 >
 >Navigate here to sign up for the preview> https://SUM.DYNAMICS.COM
 
+> [!WARNING]
+> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units.  
+
 The preview will allow you receive one environment that will function as a cloud based hub of your supply chain management environment and one environment that will function as a cloud scale unit. For the preview both environment will be hosted in a data center in northern USA.
 You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit to the cloud hub that you have received as part of the preview program. 
 
