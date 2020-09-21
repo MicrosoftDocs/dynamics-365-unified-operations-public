@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, ProdSetupCostEstimation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
