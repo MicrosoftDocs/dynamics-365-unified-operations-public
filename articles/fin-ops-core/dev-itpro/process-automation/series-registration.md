@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Every process must have a series. A series is similar in concept to a meeting series in outlook only our series are series of scheduled runs of a process. Most Scheduled process types have their series created in the UI by end users and never need to implement series registration. If the process being implemented is a schedule series then skip this section.
+Every process must have a *series*. The concept of a series in process automation resembles the concept of a meeting series in Microsoft Outlook. However, a series in process automation is a series of scheduled runs of a process. For most scheduled process types, users create the series in the user interface (UI), and series registration never has to be implemented. However, if the process that is being implemented is a schedule series, you can skip this task.
 
-Background processes typically create a series via code using series registration as background processes tend to be “under the hood” processes that don’t allow user interaction. To create a series via code implement the **ProcessScheduleISeriesRegistration** interface. This contains a single method returning an instance of **ProcessScheduleSeriesRegistrationItem**.
+Background processes typically create a series via code, by using series registration, because background processes tend to be "under the hood" processes that don't allow for user interaction. To create a series via code, you implement the **ProcessScheduleISeriesRegistration** interface. This interface contains a single method that returns an instance of **ProcessScheduleSeriesRegistrationItem**.
 
-The process automation framework allows system administrators to change the default polling interval and unit for background processes.
+The process automation framework lets system admins change the default polling interval and unit for background processes.
 
-Here is an example of a test series used to test the framework:
+Here is an example of a test series that is used to test the process automation framework.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -78,61 +78,61 @@ internal final class VendInvoicePostProcessScheduleSeriesRegistration implements
 
 ## ProcessScheduleSeriesRegistrationItem class
 
-Method | Description
----|---
-`public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This value is the name of the type.
-`public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` |This value is the name of the series. Be descriptive so it's easy to understand the purpose of the series from the name.
-`public Description parmDescription(Description _description = description)` | This value is a description of the series.
-`public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This value is the user ID that is the owner of the series.
-`public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This value is the list of patterns for this series. Only one pattern per series is supported. (This might change in the future.) Insert into the list an instance of the class **ProcessScheduleSeriesPatternItem**.
+| Method | Description |
+|---|---|
+| `public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This value is the name of the type. |
+| `public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` | This value is the name of the series. Be descriptive, so that the purpose of the series is clear from the name. |
+| `public Description parmDescription(Description _description = description)` | This value is a description of the series. |
+| `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This value is the user ID of the owner of the series. |
+| `public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This value is the list of patterns for the series. Currently, only one pattern per series is supported. However, this limitation might change in the future. Insert an instance of the **ProcessScheduleSeriesPatternItem** class into the list. |
 
 ## ProcessScheduleSeriesPatternItem class
 
-When configuring the pattern, applicable fields are determined based on the Unit. Not all methods defined below work for all units. The methods that apply to units are defined below. Other combinations will be ignored. For polled processes, only unit and the polling interval are used. The other fields are ignored.
+When the pattern is configured, applicable fields are determined based on the unit. Not all methods that are defined in the following table work for all units. The methods that apply to units are defined in the tables later in this section. Other combinations will be ignored. For polled processes, only the unit and the polling interval are used. Other fields are ignored.
 
-Method | Description
----|---
-`public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time this series runs which maybe in minutes, or hours.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes, this value is how often the process gets run within the context of the unit. It's an integer that combined with the unit will define how often the process runs.
-`public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` |  Indicates the start date of the series. The time should be the empty time.
-`public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | Indicates the end date of the series. The time should be the empty time.
-`public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | Indicates the time the series should run. The date should be set to the empty date.
+| Method | Description |
+|---|---|
+| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | This value is the unit of time that the series runs in. The unit can be minutes or hours. |
+| `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes, this value is an integer that, together with the unit, defines how often the process runs. |
+| `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` | This value indicates the start date of the series. The time should be set to the empty time. |
+| `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | This value indicates the end date of the series. The time should be set to the empty time. |
+| `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | This value indicates the time when the series should run. The date should be set to the empty date. |
 
-### Methods applicable to the unit week
+### Methods that are applicable to the week unit
 
-Method | Description
----|---
-`public NoYes parmOnSunday(NoYes _onSunday = onSunday)' | Indicate which day(s) of the week you would like the process to run on by selecting the appropriate methods for the day of the week. For example, parmOnMonday() will run the job on a Monday.
+| Method | Description |
+|---|---|
+| `public NoYes parmOnSunday(NoYes _onSunday = onSunday)` | Indicate the days of the week that you want the process to run on by selecting the appropriate methods for the day of the week. For example, **parmOnMonday()** will run the job on a Monday. |
 
-### Methods applicable to the unit day
+### Methods that are applicable to the day unit
 
-Method | Description
----|---
-`public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays)` | Indicates if the process should be run every X number of days.
-`public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval)` | Indicate the number of days
-`public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay)` |  Indicates if the process should be run every weekday.
+| Method | Description |
+|---|---|
+| `public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays)` | This value indicates whether the process should run every *X* number of days. |
+| `public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval)` | Indicate the number of days. |
+| `public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay)` | This value indicates whether the process should run every weekday. |
 
-### Methods applicable to unit month
+### Methods that are applicable to the month unit
 
-Method | Description
----|---
-`public NoYes parmDoesRepeatOnDayOfMonth(NoYes _doesRepeatOnDayOfMonth = doesRepeatOnDayOfMonth)` | Indicates the process should run on a specific day of every month.
-`public Day parmMonthlyRepeatDayOfMonth(Day _monthlyRepeatDayOfMonth = monthlyRepeatDayOfMonth)` | The day of month the process should run on.
+| Method | Description |
+|---|---|
+| `public NoYes parmDoesRepeatOnDayOfMonth(NoYes _doesRepeatOnDayOfMonth = doesRepeatOnDayOfMonth)` | This value indicates that the process should run on a specific day of every month. |
+| `public Day parmMonthlyRepeatDayOfMonth(Day _monthlyRepeatDayOfMonth = monthlyRepeatDayOfMonth)` | This value indicates the day of month when the process should run. |
 
-### Modifying Background Processes
+### Modifying background processes
 
-The polling interval and unit can be modified in the process automation framework by system administrators. However, many background processes that exist today have their own specific UI built to manage this. We provide away to update these values programmatically via these APIs:
+System admins can modify the polling interval and unit in the process automation framework. However, many background processes that currently exist have their own specific UI that is built to manage these changes. Microsoft provides a way to programmatically modify these values via the following APIs.
 
-Method | Description
----|---
-`public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | Gets the polling interval, the unit, and the next scheduled date time for a polled process.
-`public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | Allows the polling interval, the unit, and the next scheduled date time for a polled process to be modified.
+| Method | Description |
+|---|---|
+| `public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | This method gets the polling interval, the unit, and the next scheduled date/time for a polled process. |
+| `public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | This method enables changes to the polling interval, the unit, and the next scheduled date/time for a polled process. |
 
-## Validating Background dialog
+## Validating the background dialog
 
-The process automation framework in 10.0.13 allows system administrators to modify background process settings via the background dialog. Some background processes have restrictions on how often they want to run. We've introduced an interface a background process can implement which gets invoked and allows the background process to ensure that the unit and polling interval are within their allowed range.
+In version 10.0.13, the process automation framework lets system admins modify background process settings via the background dialog. Some background processes have restrictions on the frequency of their runs. Microsoft has introduced an interface that a background process can implement. When this interface is invoked, it enables the background process to ensure that the unit and polling interval are within their allowed range.
 
-Here is an example that prevents this process from ever being run every minute or every hour. Once a day is the most frequent this process allows. However, a process could implement the rules such that more frequent runs are required.
+The following example prevents this process from ever being run every minute or every hour. The process can run a maximum of one time per day. However, a process can implement the rules in such a way that more frequent runs are required.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -163,21 +163,21 @@ internal final class ProcessScheduleExplodeAutomationBackgroundDialogValidationP
 
 ## ProcessScheduleISeriesValidateBackgroundDialog interface
 
-This interface allows background processes to validate user input when background settings are edited by the user via the **ProcessScheduleSeriesBackgroundDialog**.
+The **ProcessScheduleISeriesValidateBackgroundDialog** interface enables background processes to validate user input when users edit background settings via **ProcessScheduleSeriesBackgroundDialog**.
 
-Method | Description
----|---
-`boolean validateBackgroundProcessParameters(ProcessScheduleSeriesBackgroundValidationParameters _validationParameters)` | Implement any validation rules for the process in this method.
+| Method | Description |
+|---|---|
+| `boolean validateBackgroundProcessParameters(ProcessScheduleSeriesBackgroundValidationParameters _validationParameters)` | Use this method to implement any validation rules for the process. |
 
 ## ProcessScheduleSeriesBackgroundValidationParameters class
 
-This class contains the validation parameters being validated for the background processes being edited.
+The **ProcessScheduleSeriesBackgroundValidationParameters** class contains the validation parameters that are validated for the background processes that are being edited.
 
-Method | Description
----|---
-`public UserId parmOwnerId(UserId _ownerId = ownerId)` | The owner of the process. This will be used when creating batch jobs as the batch jobs will be created under this user's context.
-`public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time.
-`public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. This value is how many units of time specified by parmUnit() above this processes should be run.
-`public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled run of the process in UTC.
-`public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't run during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16-hour time range may span the date boundary. This method specifies when the sleep should start.
-`public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The framework allows system administrators to put a process to sleep for a time range. The process isn't run during this time range regardless of what the parmPolledNextScheduleDateTime() is set to. This time range is a maximum of 16 hours. This 16 hour time range may span the date boundary. This method specifies when the sleep should end.
+| Method | Description |
+|---|---|
+| `public UserId parmOwnerId(UserId _ownerId = ownerId)` | This value is the owner of the process. It will be used when batch jobs are created, because batch jobs will be created under this user's context. |
+| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | This value is the unit of time. |
+| `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | This value is the polling interval. It defines the number of units of time (as specified by **parmUnit()**) that the process should be run. |
+| `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled run of the process in Coordinated Universal Time (UTC). |
+| `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. This method specifies when the sleep should start. |
+| `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. This method specifies when the sleep should end. |
