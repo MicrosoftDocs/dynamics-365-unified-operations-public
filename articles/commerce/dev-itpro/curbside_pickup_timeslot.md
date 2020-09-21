@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create and update store hours
-description: This topic describes how to create and update store hours in Commerce Headquarters.
+title: Create and update timeslots for 'Pickup' delivery mode(s)
+description: This topic describes how to create and update 'Timeslots' in Commerce Headquarters and enable them for the 'Pickup' delivery mode(s).
 author: josaw1
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 9/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,63 +24,70 @@ ms.custom:
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
-ms.search.validFrom: 2019-07-30
-ms.dyn365.ops.version: Retail 10.0.1 update
+ms.search.validFrom: 2020-09-20
+ms.dyn365.ops.version: Retail 10.0.15 update
 
 ---
 
-# Create and update store hours
+# Create and update timeslots for 'Pickup' delivery mode(s)
 
 [!include [banner](../../includes/banner.md)]
 
 ## Overview
 
-From a single place, retailers can create, maintain, and manage the store hours for different stores across geographic regions. The store hours can then be shown on point of sale (POS) terminals. In this way, cashiers can share store hours with customers and better help shoppers who are interested in inventory in other stores. The store hours can also be printed on receipts, in case customers want to return to the store later.
+This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
-Multiple store hours can be configured across different channels. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
+Dynamics 365 Commerce will now enable the Retailers to be able to specify and create 'Timeslots' for the 'Pickup' mode(s) of delivery. 
+- Timeslot is a specific interval of time, where the customer can choose to pickup thier order form a specific store/location. 
+- Timelsot management is only available to the 'Pickup' mode of delivery in Dynamics 365 Commerce. 
 
-If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier can select a date and location, and can also print a pickup receipt that includes the store hours.
+![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
 
-This functionality is available in Microsoft Dynamics 365 Retail versions 8.1.2 and later.
+Retailers can choose to specify the following attributes within a 'Timeslot' template. 
+- *Time Interval*: The time duration that can be alloted per timeslot. (15 mins / 30 mins / 1 hour etc...) 
+- *Slots per interval*: The number of customers that can be served per time interval. ( 1,2... only whole numbers)
+- *Active hours of delivery*: The time period between which the 'Pickup' is allowed. 
+- *Active Days*: Days on which the above timeslots can be applied. 
+- *Start & End Date*: Start and end date from which the timeslots are applicable. (Does not effect any active pickup orders)
+- *Minumum & Maximum calendar limit*: The closest or farthest timeslots that can be selected for a pickup order. 
 
-## Configure store hours
+Only a single Timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
-Follow these steps to configure store hours.
+If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. 
 
-1. Go to **Retail and Commerce** \> **Channel Setup** \> **Store hours**.
-2. Select **New** to create a new store hours template. To use an existing template, select the template in the left pane.
-3. In the **Add range** dialog box, define the date range, the store hours, and any holidays that are required.
+## Enable 'Timeslot' for pickup mode of delivery.
 
-    - If store hours don't change, select **Never ends** in the **End date** field.
-    - If the store hours are for a specific month, week, or day, set the appropriate dates in the **Start Date** and **End date** fields.
+To be able to create and use the 'Timeslot' for the 'Pickup' mode of delivery, the 'Curbside' feature needs to be enabled on the 'Feature Management' workspace. 
+
+<INSERT IMAGE FOR THE FEATURE FLAG & FINAL NAME>
+
+## Configure 'Timeslot' per 'Pickup' mode of delivery.
+
+Follow these steps to configure 'Timeslot' for the 'pickup' mode of delivery.
+
+1. Go to **Commerce** \> **Channel Setup** \> **Timeslot management**.
+2. Select **New** to create a new Timeslot template & provide a *ID* and *Description*. To use an existing template, select the template in the left pane.
+3. In the **Time settings** TAB, click *Add* to open a slider control and define the date range, Time period, Time slot durartion, active days etc...
+
+    - If Timeslots are going to be as-is for long time, leave the **End date** field 'BLANK'.
+    - If the Timeslots in a day are going to vary - create additional entries on the **Time settings** TAB - ensure that the date and times do not overlap. 
 
     > [!NOTE]
-    > You can create multiple templates that have overlapping start and end dates. Therefore, you can, for example, define store hours for stores in different time zones.
+    > You can create multiple templates, but only one template can be associated with a single channel/store. 
 
-    ![Add range dialog box](../dev-itpro/media/Storehours1.png "Add range dialog box")
+    ![Add Time Settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.png "Add Time Settings dialog box")
 
-4. Associate the store hours template with the stores where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
+4. Associate the 'Timeslot' template with the stores/channels where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
 
-    - Only one store hours template can be associated with each store.
+    - Only one 'Timeslot' template can be associated with each store/channel.
     - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the POS for reference.
 
-    ![Choose organization nodes dialog box](../dev-itpro/media/Storehours2.png "Choose organization nodes dialog box")
+    ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
 
-5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the store hours available to the POS.
+5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the Timeslot details are available to the POS.
 
-## Add store hours to printed receipts
+## Timeslot selection on POS orders 
 
-Follow these steps to add store hours to the printed POS receipts.
 
-1. Open the receipt designer.
-2. Select **Footer** in the lower-left corner.
-3. Drag the **Store hours** element from the left pane to the footer at the bottom of the receipt template.
-4. You can edit the default label on the **Store hours** element as you require.
-5. Save the receipt, and close the receipt designer.
-6. On the **Distribution schedule** page, run the **1070** and **1090** jobs.
-7. Sign in to the POS.
-8. Complete a sale, and select to print a receipt.
+## Timeslot selection on eCommerce orders 
 
-POS receipts now include the store hours. If any holidays were included in the template, they are shown on the receipt.
-
-![Receipt example](../dev-itpro/media/Storehours3.png "Receipt example")
