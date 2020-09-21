@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -290,9 +290,9 @@ Because you've updated your certificates, the configuration file that is present
 
 3. Change the thumbprints to the new thumbprints that you previously configured. (You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.)
 
-	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![Deployment settings thumbprint image 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![Deployment settings thumbprint](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![Deployment settings thumbprint image 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
@@ -308,9 +308,9 @@ Because you've updated your certificates, the configuration file that is present
 
 	Here is an example of how the name of the same thumbprint might differ.
 
-	![Deployment settings thumbprint example](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![Deployment settings thumbprint example 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![Deployment settings thumbprint example](media/642f6434da9cdeac3651b765acca08fa.png)
+	![Deployment settings thumbprint example 2](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
@@ -355,7 +355,7 @@ This procedure should be completed either after a successful certificate rotatio
 
 ### Data encryption certificate
 
-This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
 In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day until all of the data has been reencrypted. In order to enable the batch job a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB):
 
