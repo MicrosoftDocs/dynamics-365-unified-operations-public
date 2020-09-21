@@ -247,14 +247,14 @@ export interface IExperimentationListener {
      * @param userId The user ID of the current user being served the experiment
      */
     initializeClientSide(config: any, userId: string): boolean;
-
     /**
      * Tracks a successful user conversion event.
      *
      * @param eventType The name of the event that occurred
      * @param payload Any additional tags or data related to the conversion event
+     * @param attributes Optional parameter containing user attributes pertaining to the user that triggered the event
      */
-    trackEvent(eventType: string, payload: any): void;
+    trackEvent(eventType: string, payload: any, attributes?: any): void;
 }
 ```
 
