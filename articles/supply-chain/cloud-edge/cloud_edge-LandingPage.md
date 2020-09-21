@@ -83,12 +83,11 @@ Go [here](cloud_edge-workload-manufacturing.md) for more information.
 
 For warehouse execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
 
-- Enable warehouse workers to execute warehouse work using the warehouse mobile application.
-- Enable warehouse workers and managers to perform inquiries into on-hand inventory.
-- Enable warehouse workers and managers to create and execute inventory movements.
-- Enable warehouse wave methods processing, for replenishment and containerization on Edge.
-- Enable warehouse worker to register returns and purchase orders and conduct put away on Edge.
-- Enable warehouse worker to adjust inventory quantities on Edge.
+- Enable selected wave methods processing, for sales orders and demand replenishment.
+- Enable warehouse workers to execute sales and demand replenishment warehouse work using the warehouse app.
+- Enable warehouse workers to perform inquiries into on-hand inventory using the warehouse app.
+- Enable warehouse workers to create and execute inventory movements using the warehouse app.
+- Enable warehouse worker to register purchase orders and conduct put away using the warehouse app.
 
 Go [here](cloud_edge-workload-warehousing.md) for more information.
 
