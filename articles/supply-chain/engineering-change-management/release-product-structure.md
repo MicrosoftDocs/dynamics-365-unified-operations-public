@@ -1,7 +1,7 @@
 ---
-# Release product structure
+# required metadata
 
-title: Release management
+title: Release product structure
 description: To ensure that engineering relevant data of products can easily be reused in different legal entities, you can release complete product structures in addition to releasing products with their engineering versions. This means that you can release multi-level bill of material structures together with the parent in a single release action.
 author: t-benebo
 manager: tfehr
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
