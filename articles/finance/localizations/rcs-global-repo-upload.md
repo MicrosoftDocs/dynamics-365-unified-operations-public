@@ -5,7 +5,7 @@ title: Create ER configurations in RCS and upload them to the Global repository
 description: This topic explains how to create an Electronic reporting (ER) configuration in Microsoft Regulatory Configuration Services (RCS) and upload it to the Global repository.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -84,21 +84,22 @@ The status of the configuration is updated to **Share**, and the configuration i
     ![Derived Intrastat Contoso configuration version in the Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## Delete a configuration from the Global repository
-You can delete a configuration that your organization has created, by using the following steps: 
-1.	In the **Electronic reporting** workspace, check your configuration provider is **Active**. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-2.	Click **repository** on your active configuration provider.
-3.	Select repository type **Global** and click **Open**.
-4.	Find the configuration that you want to delete by using the **Filter** functionality in the **Filter FastTab**.
-5.	Select the version of the configuration that you want to delete in the **Version FastTab** and click **Delete**:
+Complete the following steps to delete a configuration that your organization has created.
+
+1. In the **Electronic reporting** workspace, verify that your configuration provider is **Active**. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. On your active configuration provider, select **repository**.
+3. Select the repository type **Global**, and select **Open**.
+4. On the **Filter** FastTab, find the configuration that you want to delete by using the **Filter** functionality.
+5. On the **Version** FastTab, select the version of the configuration that you want to delete, and then select **Delete**:
 
     ![Delete configuration from global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Delete_from_GlobalRepo.JPG)
 
-6.	In the confirmation message box select **Yes**.
+6. In the confirmation message box, select **Yes**.
 
     ![Delete configuration version confirmation message](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
-7.	The configuration version is deleted, and confirmation message is shown. 
+The configuration version is deleted, and confirmation message is shown. 
 
 > [!NOTE]
-> Configurations can only be deleted by the Configuration provider that created them. If the configuration has been shared with another organization that configuration/version will need to be unshared prior to deletion.
+> Configurations can only be deleted by the Configuration provider that created them. If the configuration has been shared with another organization, the configuration will need to be unshared before you delete it.
  
