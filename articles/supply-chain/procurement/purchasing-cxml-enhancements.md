@@ -83,7 +83,7 @@ On the **External catalogs** page, for each of your catalogs, you can set up the
 > [!NOTE]
 > When you confirm a purchase order that can be sent via cXML, the system looks up the vendor that is associated with the purchase order and then finds the first active external catalog that is associated with that vendor. The system then uses the settings from that external catalog to send the purchase order. If multiple external catalogs are set up, the system uses only the first external catalog that it finds, based on the vendor on the purchase order. Therefore, we recommend that you create just one external catalog for each vendor.
 
-![External catalog settings](media/cxml-vendor-catalog.png "External catalog settings")
+![External catalog settings](media/cxml-supplier-catalog.png "External catalog settings")
 
 ### Set the PunchOut protocol type
 
