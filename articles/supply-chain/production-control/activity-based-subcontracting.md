@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
+ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule, PlanActivityServiceDetails, PlanActivityServiceWizard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
