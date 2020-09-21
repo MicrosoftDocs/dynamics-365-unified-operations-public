@@ -91,10 +91,15 @@ Follow these steps to configure 'Timeslot' for the 'pickup' mode of delivery.
 5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the Timeslot details are available to the POS.
 
 ## Timeslot selection on POS orders 
+1. In POS, once a order / order line is identified for 'Pickup' 
+2. Cashier can select the 'Pickup' store/location
+3. Once the location is selected - the Pickup Date and Timeslot selection is prompted. 
 
 ![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png "POS Timeslot Pickup")
 
 ## Timeslot selection on eCommerce orders 
+1. In eCommerce, the timeslot selection is displayed only at the 'Checkout' page.  
+2. Based on the 'Pickup mode' the Pickup Date and Timeslot selection is prompted. 
 
 ![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
 
