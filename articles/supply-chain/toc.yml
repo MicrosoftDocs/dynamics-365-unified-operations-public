@@ -1763,9 +1763,11 @@
           href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
         - name: Import vendor catalogs
           href: procurement/vendor-catalogs-import.md
-        - name: Set up an external catalog for PunchOut eProcurement
+        - name: Set up an external catalog for PunchOut e-procurement
           href: procurement/set-up-external-catalog-for-punchout.md
-        - name: Use external catalogs for PunchOut eProcurement
+        - name: Purchasing cXML enhancements
+          href: procurement/purchasing-cxml-enhancements.md
+        - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
         - name: Vendor collaboration mobile workspace
           href: procurement/vendor-collaboration-mobile-workspace.md

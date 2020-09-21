@@ -2036,6 +2036,8 @@
             href: localizations/apac-ind-GST-tax-journal.md
           - name: Generate the GSTR report data for tax returns
             href: localizations/apac-ind-GST-tax-returns.md
+          - name: Enable multi-batch processing for GSTR reports
+            href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
         - name: Tax engine
