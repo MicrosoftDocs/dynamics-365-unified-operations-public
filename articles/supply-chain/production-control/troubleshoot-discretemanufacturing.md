@@ -126,3 +126,4 @@ This issue can fixed by posting additional journals for those operations which d
 
 After this, you can see the route card should show the quantities posted. It should then be possible to end the production orders successfully.
 
+
