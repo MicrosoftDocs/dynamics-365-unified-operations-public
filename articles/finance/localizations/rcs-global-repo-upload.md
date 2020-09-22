@@ -79,7 +79,7 @@ To share a new or derived configuration with your organization, you can upload i
 The status of the configuration is updated to **Share**, and the configuration is uploaded to the Global repository. From there, you can work with it in the following ways:
 
 - Import it into your Dynamics 365 instance. For more information, see [(ER) Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Share it with a third party or an external organization, see [RCS Share Electronic reporting (ER) configurations with external organizations](media/rcs-global-share-configuration.md)
+- Share it with a third party or an external organization, see [RCS Share Electronic reporting (ER) configurations with external organizations](rcs-global-repo-share-configuration.md)
 
     ![Derived Intrastat Contoso configuration version in the Global repository](media/RCS_Config_upload_GlobalRepo.JPG)
 
