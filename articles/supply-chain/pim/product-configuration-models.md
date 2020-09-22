@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
+ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
