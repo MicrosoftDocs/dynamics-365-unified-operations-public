@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a mobile device menu item to provide a pick line overview
-description: This topic explains how to define when warehouse workers will be shown a list of all work lines when they are processing warehouse work on a mobile device. This can be useful for warehouse workers who often need to get an overview of the pick lines in a work order so they can better optimize their picking sequence.
+description: This topic explains how to define when a list of all work lines will be shown to warehouse workers who are processing warehouse work on a mobile device. This capability can be useful for warehouse workers who often require an overview of the pick lines in a work order so that they can optimize their picking sequence.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 09/03/2020
@@ -32,45 +32,45 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to configure pick line overview options for mobile device menu items used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines related to their current task, which can help workers to better optimize their picking sequence. This feature provides options that replace the standard **Skip** button, which lets workers to cycle through each line, one at a time, in a fixed order (though that option is still available).
+This topic explains how to configure options that are related to the pick line overview for mobile device menu items that are used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines that are related to their current task. This capability can help workers optimize their picking sequence. The feature provides options that replace the standard **Skip** button that lets workers cycle through the lines one at a time, in a fixed order. (However, the option to use that button is still available.)
 
-Administrators can configure each menu item individually to control how, when, and where the warehouse app will present the pick line overview.
+Admins can configure each menu item individually to control how, when, and where the warehouse app presents the pick line overview.
 
-## Turn on the work pick line overview feature
+## Turn on the Work pick line overview feature
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** _Warehouse management_
 - **Feature name:** _Work pick line overview_
 
-## Configure menu items to show list of all work lines
+## Configure menu items to show a list of all work lines
 
-To set up a mobile device menu item to provide a pick line overview:
+To set up a mobile device menu item to provide a pick line overview, follow these steps.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Select or create a menu item that is related to picking work, and set the following values:
 
-1. Select or create a menu item related to picking work that uses the following settings:
+    - **Mode:** *Work*
+    - **Use existing work:** *Yes*
+    - **Directed by:** *User directed* or *System directed*
 
-    - **Mode** - *Work*
-    - **Use existing work** - *Yes*
-    - **Directed by** - *User directed* or *System directed*.
+    For more information about how to create menu items and use the various settings that are available on the **Mobile device menu items** page, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
-    For more information about how to create menu items and use the various settings available on the **Mobile device menu items** page, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+1. On the **General** FastTab, configure the feature by setting the **Show work line list** field to one of the following values:
 
-1. On the **General** FastTab, configure this feature by setting **Show work line list** to one of the following values:
+    - **Show only upon request** – Workers can choose to view the pick line list by selecting the **Skip to** button in the warehouse app.
+    - **Show at the start of every pick** – Workers see the list every time that they start or finish a pick line. They can also view the list again by selecting the **Skip to** button in the warehouse app.
+    - **Show at the start of the first pick only** – Workers see the list every time that they start new picking work, but not after each line. They can also view the list again by selecting the **Skip to** button in the warehouse app.
+    - **Never show** – The standard **Skip** button appears in the warehouse app, and display of the work line list is turned off. The **Skip** button lets workers cycle through the lines one at a time, in a fixed order. They can also cycle through the list as many times as they require, until all lines have been processed.
 
-    - **Show only upon request** - Workers will be able to choose to see the pick line list by selecting the **Skip to** button on the warehouse app.
-    - **Show at the start of every pick** - Workers will see the list every time they start or complete a pick line, and can see it again by selecting the **Skip to** button on the warehouse app.
-    - **Show at the start of the first pick only** - Workers will see the list each time they start a new picking work, but not after each line. If needed, they can see the list again by selecting the **Skip to** button on the warehouse app.
-    - **Never show** - Provides the standard **Skip** button on the warehouse app, thereby disabling the work lines list display. The **Skip** button lets workers cycle through each line, one at a time, in a fixed order, and to cycle through the list as many times as required until all lines have been processed.
+1. On the Action Pane, select **Save**.
 
-1. On the Action Pane, select **Save**. Provided you set **Show work line list** to anything other than *Never show*, the **Field list** button on the Action Pane becomes active.
+    If you set the **Show work line list** field to any value except *Never show*, the **Field list** button on the Action Pane becomes available.
 
 1. On the Action Pane, select **Field list**.
+1. On the **Field list** page, configure the information that the warehouse app shows for each line in the list.
 
-1. The **Field list** page opens. Use the settings here to configure the information that will be displayed by the warehouse app for each line in the list. The following settings are provided:
+    - The **Primary control** field is always set to *LineNum*. Therefore, each row in the list begins with a line number.
+    - Use the remaining **Display field** fields to add up to seven additional display fields, as you require. In each **Display field** field, select the name of a work line field. Each line will then show a value for that field. The values will be shown in the order that you select here. You can leave some of the **Display field** fields blank if you don't require all seven values.
 
-    - **Primary control** is always set to *LineNum*, which means that each row in the list will begin with a line number.
-    - Add up to seven additional display fields using the remaining seven **Display field** drop-down lists. Select a work-line field name from each drop-down list, as required, to display a value for that field for each line. The values will be shown in the same order that you choose here. If you don't require all seven values, just leave the unneeded drop-down lists set to blank.
-
-1. On the Action Pane, select **Save** and then close the **Field list** page.
+1. On the Action Pane, select **Save**, and then close the **Field list** page.
