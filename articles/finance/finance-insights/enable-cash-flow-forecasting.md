@@ -37,13 +37,13 @@ ms.dyn365.ops.version: AX 10.0.13
 This topic describes the steps for enabling the Cash flow forecasts feature within Finance Insights. 
 
 > [!NOTE]
-   > Please setup Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
+   > Set up Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
    
 Complete the following steps to enable the Cash flow forecasts capability within Finance Insights. 
 
-1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
+1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you don't see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
 
-	Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS) :
+	Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS):
 	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)
 
 2. Go to the **Feature management** workspace and complete the following steps. 
