@@ -3,7 +3,7 @@
 
 title: Product dimensions
 description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
-author: cvocph
+author: t-benebo 
 manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
@@ -26,7 +26,7 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
 
