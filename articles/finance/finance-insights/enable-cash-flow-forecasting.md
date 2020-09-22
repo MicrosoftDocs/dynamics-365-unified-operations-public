@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable Cash flow forecasts 
-description: This topic lists the for enabling the Cash flow forecasts feature within Finance Insights. 
+description: This topic lists the steps to complete to enable the Cash flow forecasts feature within Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/24/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists the for enabling the Cash flow forecasts feature within Finance Insights.
+TThis topic lists the steps to complete to enable the Cash flow forecasts feature within Finance Insights. 
 
 > [!NOTE]
    > Please setup Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
