@@ -44,18 +44,18 @@ Deploy the environments by completing the following steps.
 
 1. Create or update a Dynamics 365 Finance environment in Lifecycle Services (LCS). The environment needs App Version 10.0.11/Platform Update 35 or later.
   
-2. The environment must be an high availability (HA) environment in Sandbox (also known as a Tier-2 environment).For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+2. The environment must be an high availability (HA) environment in Sandbox (also known as a Tier-2 environment). For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
-3. If you are using Contoso demo data, you'll need additional sample data to use Customer payment predictions, Cashflow forecasts, and Budget forecasts. See [Set up demo data for Payment predictions](set-up-demo-data.md) for information about setting up demo data specifically for Customer payment predictions.
+3. If you are using Contoso demo data you'll need additional sample data to use Customer payment predictions, Cashflow forecasts, and Budget forecasts. See [Set up demo data for Payment predictions](set-up-demo-data.md) for information about setting up demo data specifically for Customer payment predictions.
 
   
 ## Configure the Common Data Service 
 
 1. Create a new Common data services environment in the same Active Directory Tenant. To do this, open the Environments page on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    
-      [![Power Platform Admin Center](./media/power-pltfrm-admin-center.png)](power-pltfrm-admin-center.png)
+      [![Power Platform Admin Center](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
    
-   - Click +New environment
+   - Click **+New environment**.
    - Select a Sandbox for the environment Type.
    - Set **Create Database** to **Yes**. 
    - Click **Next**.
@@ -81,10 +81,10 @@ Deploy the environments by completing the following steps.
 
 ### Record the CDS Directory ID and user's Azure Active Directory object ID
 
-1. Record CDS Directory ID
+1. Record CDS Directory ID.
    - Go to the [Azure portal](https://portal.azure.com).
    - Log in using the user ID that was used to create the CDS environment.
-   - Go to Azure Active Directory
+   - Go to Azure Active Directory.
    - Copy the Tenant ID and record it as the CDS Directory ID.
 2. Record the user's Azure Active Directory object ID.
    - Go to the [Azure portal](https://portal.azure.com).
@@ -94,7 +94,7 @@ Deploy the environments by completing the following steps.
 
 ### Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
 
-A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual Setup section below. 
+A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual setup section below. 
 
 A PowerShell script has been provided to easily set up the Azure resources described in [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). The steps for configuring Azure using the script are as follows. You will need rights to create an Azure resource group, Azure resources, and an AAD application. See [Check Azure AD permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app) for details on required permissions.
 
@@ -114,12 +114,12 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
 
-### Manual Setup
+### Manual setup
 
 #### Add Applications to the Azure Active Directory Tenant
 1. Go to Azure Active Directory
-2. Go to Manage > Enterprise Applications
-3. Search for the following applications, using App ID (see steps below if you cannot find those applications)
+2. Go to **Manage > Enterprise Applications**.
+3. Search for the following applications, using App ID (see steps below if you cannot find those applications).
  
 | Application                                 | App ID                                  |
 |---------------------------------------------|-----------------------------------------|
@@ -130,7 +130,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
 1. On your local machine: Click on the **Start** menu and search for powershell.
 2. Right-click **Windows Powershell** and choose **Run as administrator**.
-3. Run the following command to install “AzureAD” module
+3. Run the following command to install “AzureAD” module.
    - Install-Module -Name AzureAD
    - If NuGet provider is required to continue, select “Y” to install it.
    - If the **Untrusted repository** message appears, select “Y” to continue.
@@ -151,10 +151,10 @@ If you are unable to find any of the preceding applications, try the following i
      - **Account kind**: You must select **StorageV2**.
      - In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows.
      - Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
-   - Go to the storage account that you created
-     - Go to **Access keys** from the menu on the left
-     - Copy and save the connection string for either Key1 or key2
-     - Copy and save the storage account name
+   - Go to the storage account that you created.
+     - Go to **Access keys** from the menu on the left.
+     - Copy and save the connection string for either Key1 or key2.
+     - Copy and save the storage account name.
 
 2. Create a new **Key Vault** using the following instructions:
    - In the Azure portal, create a new Key Vault.
@@ -162,7 +162,7 @@ If you are unable to find any of the preceding applications, try the following i
    - After Key Vault is created, select it in the list, and then select **Secrets**.
    - Select **Generate/Import**.
    - In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
-   - Enter a name for the secret. Make a note of the name, because you will have to provide it later.
+   - Enter a name for the secret. Make a note of the name, because you'll have to provide it later.
    - In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
    - Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
    - Go to the Key Valut Overview and note the DNS Name.
@@ -175,24 +175,24 @@ If you are unable to find any of the preceding applications, try the following i
       - **Redirect URI setup**: Provide the URL for your Dynamics instance, such as, &lt;https://yourdynamicsinstance.dynamics.com/auth&gt;. 
       - Go to the app just created, and save its **Application (client) ID**. You will have to provide this key when setting up the key vault later.
     - Go to **API permissions**.
-      - Then select ‘+ Add a permission’.
+      - Select **+ Add a permission**.
       - Select **Azure Key vault**.
       - After you select delegated permissions, select **user_impersonation**.
-      - Click **Add permissions**. The result will look similar to the following illustration. 
+      - Click **Add permissions**.  
     - Select **Certificates & secrets** on the menu for the app. Create Key Vault Secrets by completing the following steps.
-      - Select ‘+ New client secret’.
+      - Select **New client secret**.
       - In the Key Description field, enter a name.
-      - Select a duration, and then select Add.
-      - A secret is generated in the Value field.
-      - Copy and save the Secrete value
+      - Select a duration, and then select **Add**.
+      - A secret is generated in the **Value** field.
+      - Copy and save the secrete value
 
 4. Create Key Vault Secrets using the following instructions:
-    - Go to the Key Vault created previously and select Secrets.
+    - Go to the Key Vault created previously and select **Secrets**.
     - For each secrete name in the table below repeat the following steps:
-      - Select Generate/Import.
-      - In the Create a secret dialog box, in the Upload options field, select Manual.
-      - Create the secret name and value from the table below.
-      - Select Enabled, and then select Create. The secret is created and added to Key Vault
+      - Select **Generate/Import**.
+      - In the **Create a secret** dialog box, select **Manual** in the **Upload options** field.
+      - Create the secret name and value from the following table.
+      - Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
 
     |     Secret   Name                        |     Secret   value                                                                 |
     |------------------------------------------|------------------------------------------------------------------------------------|
@@ -242,12 +242,12 @@ If you are unable to find any of the preceding applications, try the following i
  
  2. Set **Enable Data Lake integration** to **Yes**. 
  
- 3. Set Azure key vault. 
+ 3. Set the following Azure key vault values. 
  
     - Application (client) ID: This is the Application client ID that you create above. 
-    - Application Secrete: The secrete you saved for the application created above
-    - DNS name: You can find the DNS name on the application details page for the application you created above
-    - Secrete name: storage-account-connection-string
+    - Application Secrete: The secret you saved for the application created above.
+    - DNS name: You can find the DNS name on the application details page for the application you created above.
+    - Secrete name: storage-account-connection-string.
    
 ## Configure the Data Lake
 
@@ -263,7 +263,7 @@ Add Azure Data Lake add-in to the environment using LCS.
 
   |     Value                                                                                |     Description                                    |
   |------------------------------------------------------------------------------------------|----------------------------------------------------|
-  |     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: Azure portal > Azure Active Directory > Tenant ID          |
+  |     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: **Azure portal > Azure Active Directory > Tenant ID**          |
   |     Provide   the DNS name of your Key Vault                                             |     The   DNS name of the Key Vault (same as what is used in Entity store). For example, &lt;https://customkeyvault.vault.azure.net/&gt;                                               |
   |     Provide   the secret that contains the name of the storage account                   |     storage-account-name                                      |
   |     Secret   Name for App ID to be used for accessing Data Lake                          |     app-id                                                    |
@@ -284,12 +284,11 @@ Add Azure Data Lake add-in to the environment using LCS.
 
    |     Value                                                         |     Description                                                 |
    |-------------------------------------------------------------------|-----------------------------------------------------------------|
-   |     CDS   Organization URL                                        |     The   CDS Organization URL of the CDS instance.           Make.powerapps.com     Click the **Settings** icon (right upper corner)  Advance  Setting  Copy the URL (ending with dynamics.com)    |
-   |     CDS   Org ID                                                  |     The   Environment ID of the CDS instance.     Make.powerapps.com           Settings   > Customizations > Developer resources > Instance Reference   Information > ID                                    |
-   |     CDS   Tenant ID (Directory ID  from AAD)                      |     The   Tenant ID of the CDS instance.     Go   to: **Azure portal > Azure Active Directory > Tenant ID**       |
-   |     Provide   user object ID who has system administrator role    |     The   AAD User Object ID of the user in CDS. This user must be a System Administrator of the CDS instance  **Azure Active directory > Users > select your user > Identity > Object   ID**      |
-   |     Is this the default CDS environment for the tenant?         |     If the CDS instance was the first production instance created, Click the checkbox. If the CDS instance was created manually, clear the checkbox.                                                  |
-
+   |     CDS   Organization URL                                        |     The   CDS Organization URL of the CDS instance. Make.powerapps.com  Click the **Settings** icon (right upper corner)  Advance  Setting  Copy the URL (ending with dynamics.com)    |
+   |     CDS   Org ID                                                  |     The Environment ID of the CDS instance. Make.powerapps.com **Settings   > Customizations > Developer resources > Instance Reference Information > ID**                                    |
+   |     CDS   Tenant ID (Directory ID  from AAD)                      |     The Tenant ID of the CDS instance.  Go to: **Azure portal > Azure Active Directory > Tenant ID**       |
+   |     Provide   user object ID who has system administrator role    |     The AAD User Object ID of the user in CDS. This user must be a System Administrator of the CDS instance  **Azure Active directory > Users > select your user > Identity > Object ID**      |
+   |     Is this the default CDS environment for the tenant?         |     If the CDS instance was the first production instance created, Select the check box. If the CDS instance was created manually, clear the check box.                                                  |
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
