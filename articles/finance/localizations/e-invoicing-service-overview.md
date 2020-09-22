@@ -5,7 +5,7 @@ title: Electronic invoicing add-on overview
 description: This topic provides information about the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/04/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,7 +49,7 @@ The Electronic invoicing add-on can help you achieve the following goals:
 - Built-in export, import, and integration, and easy extensibility in the processing of e-invoice documents
 - Easy reuse of the same export, import, and integration configurations across companies
 
-To use the Electronic invoicing add-on, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). You must then follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+To use the Electronic invoicing add-on, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Next, follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## Availability
 
@@ -82,7 +82,7 @@ The Electronic invoicing add-on can be used in scenarios where you must create a
     - Built-in, easily extendable, and configurable integration with additional content for several countries
 
     > [!NOTE]
-    > Currently, a limited number of direct submissions is supported. For more information, see the [Availability](#availability) section earlier in this topic. Support will be extended in the future.
+    > Currently, a limited number of direct submissions are supported. For more information, see the [Availability](#availability) section earlier in this topic. Support will be extended in the future.
 
 - Handling of responses from web services, including configurable exception message handling
 - Support for electronic signatures (for example, by using the XMLDSig signing algorithm)
@@ -110,7 +110,7 @@ The following illustration shows how data flows to and from the Electronic invoi
 ![Data flow for the Electronic invoicing add-on](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
-Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Please consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 ## Additional resources
 
