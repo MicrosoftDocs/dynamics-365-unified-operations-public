@@ -185,7 +185,7 @@ Additional limitations of unsupported processing at edge scale units are:
 
 ### Production
 Warehouse management integration for production scenarios is currently not supported.
-### Warehouse operations and exception handing
+
 |Process                                      |Cloud scale unit|Edge scale unit  |
 |---------------------------------------------|----------------|-----------------|
 |<p>**All warehouse management processes related to production:**</p>**<li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li> Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li>**|**No**|**No** |
