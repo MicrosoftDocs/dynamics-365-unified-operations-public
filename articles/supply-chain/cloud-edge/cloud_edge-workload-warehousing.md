@@ -168,7 +168,7 @@ Additional limitations of unsupported processing at edge scale units are:
 |Location inquire                             |Yes             |Yes              |
 |Adjustment (In/out)                          |Yes             |No               |
 |**Min/max replenishment processing**         |**No**          |**No**           |
-|**Min/max replenishment processing**         |**No**          |**No**           |
+|**Slotting replenishment processing**        |**No**          |**No**           |
 |Cycle counting and Counting discrepancy processing|Yes        |No               |
 |Reprint label                                |Yes             |No               |
 |License plate build                          |Yes             |No               |
