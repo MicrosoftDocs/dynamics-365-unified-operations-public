@@ -42,7 +42,7 @@ This topic list the steps for enabling the Customer payment predictions feature 
 
 1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
 
-    Using information from the Llifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to   enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS):
+    Using information from the Lifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to   enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS):
 	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)
 
 2. Turn on the Customer payment insights (preview) feature in the **Feature management** workspace.
