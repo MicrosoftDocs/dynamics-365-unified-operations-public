@@ -73,3 +73,4 @@ Similarly you can also use the **third-party status** field to understand the st
 
 Below is an image that shows both sets of statuses and how they relate to each other:
 ![Experimentation statuses](./media/experimentation_statuses.svg "Experimentation statuses")
+[ ![Image alt text](experimentation_statuses.svg) ](experimentation_statuses.svg#lightbox)
