@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Complete the following steps to enable the Budget proposals feature within Finance Insights. 
+This topic lists the steps for enabling the Budget proposals feature within Finance Insights. 
 
 1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you cannot see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
 
@@ -43,8 +43,8 @@ Complete the following steps to enable the Budget proposals feature within Finan
 
 3. After step 1 from *previous page, **Enabled cash flow forecasting**, then go to the **Feature Management** workspace.
 
-   - Click 'Check for updates'.
-   - Search for 'Budget proposal' and enable that feature.
+   - Click **Check for updates**.
+   - Search for "Budget proposal" and enable that feature.
 
 4. Open the **Budget proposals** page (**Budgeting > Setup > basic Budgeting > Budget proposal (preview)**). Choose **Enable feature**.
 
