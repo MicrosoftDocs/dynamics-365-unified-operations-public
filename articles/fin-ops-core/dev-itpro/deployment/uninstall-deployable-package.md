@@ -5,7 +5,7 @@ title: Uninstall a package
 description: This topic explains how to remove a deployable package from your environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ A model is a design-time concept that is part of a package. When a model isn't t
 - Build and deploy any modules that references were removed from.
 - All references to and from the modules must be removed before you begin to uninstall the module. To remove all a module's references, add a single class to the model. This class should contain no code. It should contain only a reference to the application platform.
 - A Microsoft module cannot be removed.  If this is attempted, a validation error will be shown on the package in Lifecycle Services.
-- A module cannot be removed, that is part of the AOT deployable package being installed.  If you wish to remove a module, be sure that it is not part of the package before adding the name to the ModuleToRemove.txt file.
+- A module cannot be removed if it is part of the AOT deployable package being installed.  If you wish to remove a module, be sure that it is not part of the package before adding the name to the ModuleToRemove.txt file.
 
 ## Uninstall a package
 
