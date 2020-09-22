@@ -630,8 +630,8 @@
           href: dev-tools/introduction-visual-studio.md
         - name: Application Checker
           items:
-          - name: Install BaseX for Application Checker
-            href: dev-tools/install-basex.md
+          - name: Application checker
+            href: dev-tools/application-checker.md
         - name: Application Explorer
           href: dev-tools/application-explorer.md
         - name: Build and debug projects
