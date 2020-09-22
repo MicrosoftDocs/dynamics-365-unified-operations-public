@@ -23,7 +23,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry:
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
