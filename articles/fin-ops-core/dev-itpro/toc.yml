@@ -628,10 +628,8 @@
           href: dev-tools/development-tools-overview.md
         - name: Development tools tutorial
           href: dev-tools/introduction-visual-studio.md
-        - name: Application Checker
-          items:
-          - name: Application checker
-            href: dev-tools/application-checker.md
+        - name: Application checker
+          href: dev-tools/application-checker.md
         - name: Application Explorer
           href: dev-tools/application-explorer.md
         - name: Build and debug projects
