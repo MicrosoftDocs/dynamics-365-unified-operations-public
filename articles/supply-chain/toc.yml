@@ -1651,6 +1651,8 @@
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
         href: procurement/procurement-sourcing-workflows.md
+      - name: Troubleshoot procurement and sourcing workflows
+        href: procurement/troubleshoot-procurementworkflows.md
       - name: Procurement catalogs
         items:
         - name: Procurement catalogs overview
@@ -1691,6 +1693,8 @@
           href: procurement/purchase-order-mobile-workspace.md
         - name: Record the receipt of goods on the purchase order
           href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+        - name: Troubleshoot purchase orders
+          href: procurement/troubleshoot-purchaseorders.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -1721,6 +1725,8 @@
           href: procurement/tasks/create-purchase-agreement.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
+        - name: Troubleshoot prices, discounts, agreements, and rebates
+          href: procurement/troubleshooting-pricediscountagreements.md
       - name: Purchasing policies
         items:
         - name: Purchasing policies overview
@@ -1735,6 +1741,8 @@
           href: procurement/product-receipt-against-purchase-orders.md
         - name: Overview of vendor invoices
           href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Troubleshoot product receipts and invoicing
+          href: procurement/troubleshooting-productreceiptinvoicing.md
       - name: Vendor management and collaboration
         items:
         - name: Set up and maintain vendor collaboration
@@ -2257,6 +2265,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Troubleshoot sales orders
+          href: sales-marketing/troubleshooting-sales.md
       - name: Sales agreements
         items:
         - name: Sales agreements overview
@@ -2279,6 +2289,8 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+        - name: Troubleshoot sales quotations
+          href: sales-marketing/troubleshooting-salesquotation.md
       - name: Returns
         items:
         - name: Sales returns
