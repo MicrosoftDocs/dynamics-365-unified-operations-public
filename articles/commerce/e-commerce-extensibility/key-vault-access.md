@@ -36,27 +36,24 @@ This topic describes
 
 ## Overview
 
-Some e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that should be stored securely. This information can be stored in an Azure key vault storage and securely accessed as needed. The Azure Key Vault provides opportunity to import cryptographic keys, certificates to Azure, and to manage them. In the following sections we’re going to explore how to setup your eCommerce application to communicate with your own Key Vault to retrieve secured information.
+Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that should be stored securely. This information can be stored in an [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) storage and securely accessed as needed. The Azure Key Vault provides the ability to import and manage cryptographic keys and certificates. 
 
-At a high level, we will first create a Key Vault to store your secured information. After that, we will configure your eCommerce application to securely communicate with Retail Server and finally we will set up your Retail Server to securely communicate with your Key Vault.
+The below information will provide the details on how to create a Key Vault to securily store information, how to configure e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault and how to access these secret values from within your e-Commerce components.
 
-We will then go over how to access these secret values from within your eCommerce application.
+## Create a Key Vault to store application secrets
+You will need an Azure account to access the Key Vault feature.
 
-Create a Key Vault to store Application secrets
+1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
+1.	Select the **Create a resource** option.
+1.	Search for **Key Vault** and click on **Create**.
+1.	Select the subscription and resource group you would like this Key Vault to be a part of.
+1.	Enter a name, region and pricing tier for your Key Vault.
+1.	Select the **Next** button and create access policies and assign permissions to users.
+1.	Leave all other settings as they are and click on **Review + create** and then select **Create** after you have reviewed the configuration.
+1.	Wait for deployment to complete.
+1.	After the Key Vault has successfully has successfully been deployed, add any secrets you wish to add under Secrets.
 
-The first step is to create Key Vault in Azure that will store secret values that your application will later access.
-
-1.	Navigate to your Azure Portal homepage
-2.	Select Create a resource
-3.	Search for Key Vault and click on Create
-4.	Select the subscription and resource group you would like this Key Vault to be a part of
-5.	Enter a name, region and pricing tier for your KeyVault
-6.	Next create access policies and assign permissions to users
-7.	Leave all other settings as they are and click on Review + create and then select Create after you have reviewed the configuration.
-8.	Wait for deployment to complete
-9.	After the Key Vault has successfully has successfully been deployed, add any secrets you wish to add under Secrets
-
-Configure Server to Server Auth between your Node application and Retail Server
+## Configure Server to Server Auth between your Node application and Retail Server
 Next we will configure your Node application to securely communicate with Retail Server
 
 For the next steps, you will need to have the Tenant ID of the App Service hosting your Node application and Client ID of the managed identity tied to your App Service.
