@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: InventJournalTableWorkflowDropDialog
+ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
