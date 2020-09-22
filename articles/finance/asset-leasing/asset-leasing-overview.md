@@ -249,19 +249,21 @@ The **Payment schedule** page lists future payment schedules for a lease ID. The
 
 [![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
 
-Click **General journal** to post the initial recognition transaction. 
+Click **Initial recognition** to create initial recognition journal. 
 
 [![General journals selection](./media/overview-14.png)](./media/overview-14.png)
 
-The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
+Click **Asset leasing journals** to post the initial recognition transaction. 
 
 [![Payment schedule for an ROU transaction](./media/overview-15.png)](./media/overview-15.png)
 
-The **Lease liability amortization schedule** shows the interest amount that's calculated for each period. 
+The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
+ 
 
 [![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
 
-Create the journal, and then go to **General journals**.
+The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
+Create the journal, and then go to **Asset leasing journals**.
 
 [![General journals link](./media/overview-17.png)](./media/overview-17.png)
 
