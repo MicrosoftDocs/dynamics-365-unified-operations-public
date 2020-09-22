@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:
+ms.search.form: PurchTable, SysSecRolesEditUsers
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -138,7 +138,7 @@ Additional limitations of unsupported processing at edge scale units are:
 |**Wave label**                               |**No**          |**No**             |
 |**Reverse work**                             |**No**          |**No**             |
 
- 
+
 ### Inbound
 |Process                                      |Cloud scale unit  |Edge scale unit  |
 |---------------------------------------------|----------------|-------------------|
@@ -182,7 +182,6 @@ Additional limitations of unsupported processing at edge scale units are:
 |Remove container from group                  |Yes             |No               |
 |Cancel work                                  |Yes             |No               |
 
-
 ### Production
 Warehouse management integration for production scenarios is currently not supported.
 
@@ -195,19 +194,10 @@ A number of batch jobs runs on both the cloud and edge scale units.
 On the cloud scale unit deployments you can manually maintain the batch jobs under:
 **Warehouse management \> Periodic tasks \> Back-office workload management** where three jobs can be maintained:
 - Process work status update events 
-- Process actual work creation events
-- <!--?????-->Process … receipt updates
+- Process wave execution control transfer events
+- Register source order receipts
 
 On the edge scale units the you can manually maintain the batch jobs under:
-**Warehouse management \> Periodic tasks \> Workload management** where threes jobs can be maintained: 
--	Process planned work creation event 
--	Process wave table records
--	<!--?????-->Receipt…
-
-## Warehouse work – Planned work
-As part of the wave processing the scale unit deployment process will create **Planned warehouse work** which can be viewed from **Warehouse management \> Work \> Planned work details** on both the cloud and scale units.
-The warehouse work will remain planned until the **Process planned work creation event** (part of Process work status update events) completes. When the event completes, (actual) warehouse work has been created from the planned work.
-The Processing status of the planned work provides insight into the processing. When the processing status of the planned warehouse work is **_Queued_**, then planned warehouse work has been created, however is not yet ready to be turned into actual warehouse work. When the processing status of the planned warehouse work is **_Pending_**, then planned warehouse work is ready to be turned into actual warehouse work. When the processing status of the planned warehouse work is **_Completed_**, then the planned warehouse work has been turned into actual warehouse work. When the processing status of the planned warehouse work is Failed, then the planned warehouse work could not be turned into actual warehouse work.
-The reason for getting into a case of having **Planned warehouse work** in status **_Failed_** can be investigated by opening the **Log** and depending on the information proper action taken before trying to process the event again. You can either **Delete**<!--?????--> or **Rerun**<!--?????-->
-An example for a failing **Planned warehouse work** creation could be when a location directive setup change gets done searching for physical inventory on-hand availability in a different area of a warehouse in the middle of the  the process.
-When selecting to show **_Completed_**, the actual work lines for the work created from the planned work can be viewed from the lower grid in the form. The **Work ID** is identical with the **Planned Work ID**, which enables easy navigation between planned work and (actual) work.
+**Warehouse management \> Periodic tasks \> Workload management** where two jobs can be maintained: 
+- Process wave table records
+- Process wave execution control transfer events
