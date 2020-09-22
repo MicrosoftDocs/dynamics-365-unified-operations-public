@@ -61,4 +61,4 @@ Several frequently used actions create a new database that won't have the same r
 Although the new database doesn't have any restore point history, it does begin to accrue new restore points from that time onward. After you perform any of the previously mentioned actions, you can't perform it again by using the same restore date and time.
 
 ### Restore is denied for environments that run Platform update 20 or earlier
-The restore database process cannot be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported Platform updates](..//migration-upgrade/versions-update-policy.md).
+The restore database process cannot be completed if the environment is running Platform update 20 or earlier. For more information, see the list of currently supported Platform updates in the [Software lifecycle policy and cloud releases](..//migration-upgrade/versions-update-policy.md).
