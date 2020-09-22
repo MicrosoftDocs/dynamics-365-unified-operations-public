@@ -51,7 +51,7 @@ The following illustration shows the message view. To open this view, select **V
 
 ## ProcessExecutionSourceLink table
 
-The **ProcessExecutionSourceLink** table contains the results that are created while the processing is running. This table contains **RefTableId** and **RefRecId** fields. These fields are links to any source record in SQL and are typically something that the process is processing. This table also contains **Header** and **Message** fields. The **Header** field will be shown as a column in the result grid. The message can be anything that you want it to be.
+The **ProcessExecutionSourceLink** table contains the results that are created while the processing is running. This table contains **RefTableId** and **RefRecId** fields. These fields are links to any source record in Microsoft SQL Server and are typically something that the process is processing. This table also contains **Header** and **Message** fields. The **Header** field will be shown as a column in the result grid. The message can be anything that you want it to be.
 
 For example, if vendor payment proposal is creating a payment journal, the **RefTableId** value is the table ID of the **LedgerJournalTable** table. The **RefRecId** value is the **RecId** value of the **LedgerJournalTable** record that the payment journal created by the running process. In this case, you can set the **Header** field to the journal number. You can even make this value a jump reference, so that users can select the journal number to go directly to the payment journal. You can set the **Message** field to any message that you want to show, such as **Payment journal created successfully**.
 
@@ -89,7 +89,7 @@ The **ProcessExecutionMessageLog** table contains messages that are related to a
 
 ## ProcessExecutionMessageLogItem class
 
-The message log stores messages as strings and messages as label IDs. You don't have to set both values. Label IDs are preferred, because they support translation of messages in the user interface (UI) for the message log. However, the messages are provided for backward compatibility with processes that don't support logging of label IDs.
+The message log stores messages as both strings and label IDs. You don't have to set both values. Label IDs are preferred, because they support translation of messages in the user interface (UI) for the message log. However, the messages are provided for backward compatibility with processes that don't support logging of label IDs.
 
 Use the appropriate constructor for your scenario.
 
