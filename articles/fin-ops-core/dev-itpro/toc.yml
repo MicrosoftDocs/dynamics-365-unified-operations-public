@@ -154,6 +154,8 @@
                       href: data-entities/dual-write/enable-entity-map.md
                 - name: Currency data-type migration for dual-write
                   href: data-entities/dual-write/currrency-decimal-places.md
+                - name: Set up the mapping for the sales order status fields
+                  href: data-entities/dual-write/sales-status-map.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
