@@ -44,33 +44,19 @@ Commerce supports the creation, editing, and management of page and content trea
 1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment a user. You can purcahse a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see the [Configure and enable connectors](e-commerce-extensibility/connectors.md) topic. 
 1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level by going to **Tenant Settings -> Features** or at the site level at **Site Settings -> Features**.
     - Enable the **Experimentation** flag to create experiment variations of modules within a page without affecting or copying other content that isn't part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
-    - Enable the **Experimentation on pages or fragments** flag is you want to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
+    - Enable the **Experimentation on pages or fragments** flag to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
     
-## Experimentation journey
-The image below shows the user's experimentation journey in Commerce and the third-party service - it is an iterative process that can take a few iterations to learn and get the desired results:
+## Experimentation lifecycle
+Setting up an experiment, creating variations, and running an experiment is an iterative process. You may want to re-do some of the steps along the way to get the results you want. The image below illustrates the exerimentation lifecycle in Commerce and the third-party service. 
+
 ![Experimentation lifecycle](./media/TEST.svg "Experimentation lifecycle")
 
-Click on the links below to learn more about the phases:
+To learn more about each step in the experimentation process, refer to the following topics.
 1. [Identify the goals for your experiment](experimentation-identify.md)
-1. [Setup your experiment](experimentation-setup.md)
+1. [Set up your experiment](experimentation-setup.md)
 1. [Connect and edit your experiment](experimentation-connect-edit.md)
 1. [Preview and publish your experiment](experimentation-preview-publish.md)
 1. [Run and monitor your experiment](experimentation-run-monitor.md)
 1. [Review and complete your experiment](experimentation-review-complete.md)
 
-## Experiment statuses
-The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
-1. Draft - The experiment is connected to a page or fragment in Commerce and is being edited.
-1. Published - The experiment is ready to go live, once it is started in the third-party service.
-1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
-1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
-
-Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service:
-1. Draft - The experiment is setup in the third-party service but hasn't started yet.
-1. Running - The experiment has started and is collecting data.
-1. Paused - The experiment is paused and not collecting data. You will need to resume it so it starts collecting data again.
-1. Archived - The experiment has run its course and has been cataloged for future reference.
-
-Below is an image that shows both sets of statuses and how they relate to each other:
-
-[ ![](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+To learn where an experiment is in the lifecycle, go to the **Experiments** page in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experiment-status.md) topic.
