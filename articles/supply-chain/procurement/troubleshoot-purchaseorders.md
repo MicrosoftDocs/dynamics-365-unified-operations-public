@@ -49,7 +49,7 @@ This issue occurs because, when you import lines via DMF, if line numbers aren't
 
 ### Issue workaround
 
-Make sure that the desired line numbers are already given in the entity data when you import the purchase order lines. In this case, DMF won't overwrite the line numbers.
+Make sure that the desired line numbers are already given in the data entity line number fields when you import the purchase order lines. In this case, DMF won't overwrite the line numbers.
 
 ## A default tax group and a default cash discount aren't filled in from the invoice account.
 
