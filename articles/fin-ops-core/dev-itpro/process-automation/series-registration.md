@@ -108,16 +108,16 @@ When the pattern is configured, applicable fields are determined based on the un
 
 | Method | Description |
 |---|---|
-| `public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays)` | This value indicates whether the process should run every *X* number of days. |
-| `public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval)` | Indicate the number of days. |
-| `public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay)` | This value indicates whether the process should run every weekday. |
+| `public NoYes parmDoesRepeatEveryNumberOfDays(NoYes _doesRepeatEveryNumberOfDays = doesRepeatEveryNumberOfDays)` | Indicates whether the process should run every *X* number of days. |
+| `public int parmDailyRepeatInterval(int _dailyRepeatInterval = dailyRepeatInterval)` | Indicates the number of days. |
+| `public NoYes parmDoesRepeatEveryWeekDay(NoYes _doesRepeatEveryWeekDay = doesRepeatEveryWeekDay)` | Indicates whether the process should run every weekday. |
 
 ### Methods that are applicable to the month unit
 
 | Method | Description |
 |---|---|
-| `public NoYes parmDoesRepeatOnDayOfMonth(NoYes _doesRepeatOnDayOfMonth = doesRepeatOnDayOfMonth)` | This value indicates that the process should run on a specific day of every month. |
-| `public Day parmMonthlyRepeatDayOfMonth(Day _monthlyRepeatDayOfMonth = monthlyRepeatDayOfMonth)` | This value indicates the day of month when the process should run. |
+| `public NoYes parmDoesRepeatOnDayOfMonth(NoYes _doesRepeatOnDayOfMonth = doesRepeatOnDayOfMonth)` | The process should run on a specific day of every month. |
+| `public Day parmMonthlyRepeatDayOfMonth(Day _monthlyRepeatDayOfMonth = monthlyRepeatDayOfMonth)` | The day of month when the process should run. |
 
 ### Modifying background processes
 
