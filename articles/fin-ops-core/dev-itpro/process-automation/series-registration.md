@@ -92,17 +92,17 @@ When the pattern is configured, applicable fields are determined based on the un
 
 | Method | Description |
 |---|---|
-| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | This value is the unit of time that the series runs in. The unit can be minutes or hours. |
+| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time that the series runs in. The unit can be minutes or hours. |
 | `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes, this value is an integer that, together with the unit, defines how often the process runs. |
-| `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` | This value indicates the start date of the series. The time should be set to the empty time. |
-| `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | This value indicates the end date of the series. The time should be set to the empty time. |
-| `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | This value indicates the time when the series should run. The date should be set to the empty date. |
+| `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` | The start date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
+| `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | The end date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
+| `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | The time when the series should run. The date should be set to the [empty date](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
 
 ### Methods that are applicable to the week unit
 
 | Method | Description |
 |---|---|
-| `public NoYes parmOnSunday(NoYes _onSunday = onSunday)` | Indicate the days of the week that you want the process to run on by selecting the appropriate methods for the day of the week. For example, **parmOnMonday()** will run the job on a Monday. |
+| `public NoYes parmOnSunday(NoYes _onSunday = onSunday)` | The days of the week that you want the process to run on by selecting the appropriate methods for the day of the week. For example, **parmOnMonday()** will run the job on a Monday. |
 
 ### Methods that are applicable to the day unit
 
@@ -125,8 +125,8 @@ System admins can modify the polling interval and unit in the process automation
 
 | Method | Description |
 |---|---|
-| `public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | This method gets the polling interval, the unit, and the next scheduled date/time for a polled process. |
-| `public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | This method enables changes to the polling interval, the unit, and the next scheduled date/time for a polled process. |
+| `public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | Gets the polling interval, the unit, and the next scheduled date/time for a polled process. |
+| `public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | Enables changes to the polling interval, the unit, and the next scheduled date/time for a polled process. |
 
 ## Validating the background dialog
 
@@ -167,7 +167,7 @@ The **ProcessScheduleISeriesValidateBackgroundDialog** interface enables backgro
 
 | Method | Description |
 |---|---|
-| `boolean validateBackgroundProcessParameters(ProcessScheduleSeriesBackgroundValidationParameters _validationParameters)` | Use this method to implement any validation rules for the process. |
+| `boolean validateBackgroundProcessParameters(ProcessScheduleSeriesBackgroundValidationParameters _validationParameters)` | Implements any validation rules that you have for the process. |
 
 ## ProcessScheduleSeriesBackgroundValidationParameters class
 
@@ -175,9 +175,9 @@ The **ProcessScheduleSeriesBackgroundValidationParameters** class contains the v
 
 | Method | Description |
 |---|---|
-| `public UserId parmOwnerId(UserId _ownerId = ownerId)` | This value is the owner of the process. It will be used when batch jobs are created, because batch jobs will be created under this user's context. |
-| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | This value is the unit of time. |
-| `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | This value is the polling interval. It defines the number of units of time (as specified by **parmUnit()**) that the process should be run. |
-| `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | This value is the next scheduled run of the process in Coordinated Universal Time (UTC). |
-| `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. This method specifies when the sleep should start. |
-| `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. This method specifies when the sleep should end. |
+| `public UserId parmOwnerId(UserId _ownerId = ownerId)` | The owner of the process. It will be used when batch jobs are created, because batch jobs will be created under this user's context. |
+| `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time. |
+| `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | The polling interval. It defines the number of units of time (as specified by **parmUnit()**) that the process should be run. |
+| `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | The next scheduled run of the process in Coordinated Universal Time (UTC). |
+| `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | Specifies when the sleep should start. The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. |
+| `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | Specifies when the sleep should end. The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary.  |
