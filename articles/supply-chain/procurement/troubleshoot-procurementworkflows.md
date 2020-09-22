@@ -33,37 +33,19 @@ ms.dyn365.ops.version: Release 10.0.14
 
 This topic describes how to fix issues that you might encounter while you work with procurement and sourcing workflows.
 
-## Because change management is turned on, changes to a purchase order are allowed only in a Draft state.
+## Error when re-submitting a purchase order to the workflow after a change: "Changes to purchase order X are allowed only in a Draft state when change management is activated"
 
 This issue occurs only if the purchase order was in a *Confirmed* state before you requested changes. If you request changes while the purchase order is in an *Approved* state, the workflow can be processed successfully.
 
 ### Error description
 
-The following error occurs in the workflow when a purchase order is resubmitted after a request change:
+The following error occurs in the workflow when a purchase order is resubmitted after a change:
 
 > Stopped (error): X++ Exception: Changes to purchase order PO0000569 are only allowed in state Draft when change management is activated at<br>
 SysWorkflowParticipantProvider-resolve<br>
 SysWorkflowParticipantProvider-resolveParticipants<br>
 SysWorkflowServiceProvider-resolveParticipant<br>
 SysWorkflowQueue-resume
-
-### Reproduce the issue
-
-The following procedure shows one way to reproduce the issue.
-
-1. Create and activate a purchase order workflow and a purchase order line workflow.
-1. Turn on change management for purchase orders by going to **Procurement and Sourcing \> Setup \> Procurement** and setting the **Sourcing parameter** option to *Yes*.
-1. Go to **Accounts payable \> All purchase orders \> purchase order**.
-1. Create a purchase order that has a purchase order line.
-1. Submit the workflow.
-1. Approve the workflow from the line level, so that it's approved and completed. At this point, the purchase order is also approved.
-1. Confirm the purchase order.
-1. Select **Request change**.
-1. Select **Update line** and then **Delivery remainder**.
-1. Change the **Delivery remainder** value.
-1. Submit it back to the workflow.
-1. Check the workflow purchase order line history.
-1. Notice that the workflow error occurs.
 
 ### Issue resolution
 
@@ -89,7 +71,7 @@ For a purchase order that is subject to change management, if the only change th
 
 Cancellation of a delivery remainder doesn't affect the contents of the confirmation journal. This functionality should be used when the line has been partially received, and the remainder quality should be canceled in the process step after the purchase order has been confirmed with the vendor.
 
-If this should be reflected on the purchase order confirmation, the quantity should be adjusted on the purchase order line. In this case, confirmation will be required. Alternatively, if nothing has been received on the line, the quantity can be removed. In this case, reconfirmation will be required.
+If this should be reflected on the purchase order confirmation, the quantity should be adjusted on the purchase order line so that the confirmation will be required. Alternatively, if nothing has been received on the line, the quantity can be removed. In this case, reconfirmation will be required.
 
 ## Canceled purchase orders appear in the draft list in the Purchase order preparation workspace.
 
@@ -101,6 +83,3 @@ After you cancel purchase orders that were in a *Confirmed* state, the canceled 
 
 This issue occurs only for purchase orders that are subject to change management. It occurs because the cancellation is considered a change that must be approved. The approval can be done automatically by the system. Therefore, the process is to submit the canceled purchase order to the approval workflow so that it can go to an *Approved* state. At that point, the purchase order will no longer appear in the list of draft purchase orders in the **Purchase order preparation** workspace.
 
-## Additional resources
-
-[Get started with Procurement workflows](procurement-sourcing-workflows.md)
