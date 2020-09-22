@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans
+ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
