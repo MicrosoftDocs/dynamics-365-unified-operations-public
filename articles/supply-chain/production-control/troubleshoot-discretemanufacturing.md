@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 10.0.14
 This topic describes how to fix common issues that you might encounter while working with Discrete Manufacturing.
 
 ##  Error 'Warehouse management processes are currently being used. If work lines are not yet registered, you can cancel the created work and any load or shipment lines, and then continue with the picking or shipping process'
-The cause of this is because the inventory transaction is in status Picked which means that the material is picked. Therefore it is not possible to reserve or release work for that line.
-		
-**Resolution/Fix**
-You can:
+The cause of this is that the inventory transaction is in status Picked which means that the material is picked. Therefore, it is not possible to reserve or release work for that line.
+
+**Issue Resolution**
 
 1. Reverse production order status to Estimated or Released
 2. Or click "Stop and unpick" button on the Warehouse tab of the production order (this will unpick all picked transactions). Then, click "Remove stop" to proceed with processing the production order.
@@ -101,4 +100,29 @@ The cause of this error message is by design as the underlying data was changed 
 **Resolution**
 If the batch job consistently fails on resuming, then:
 Check that the Rounding precision for Ledger's default currency has not changed to a value that is not compliant with the rounding applied to values in InventSum. If it has changed, we probably need to change it back. Look for ModifiedDateTime would typically in this case show that it was recently changed.
+
+## Release to warehouse fails with error "Item RM could not be fully reserved. Ensure that the full quantity is available, or reserve the items manually if the Reservation field on the BOM line is set to Manual or Started. Could not release the order to warehouse because some materials could not be reserved". However, the status is updated to Released.
+A production order that is set to Require full reservation, but all items are not available, when released throws the above error. But, the status is updated to Released though nothing has been released to the warehouse. 
+
+**Resolution**
+This behavior is by design and is working as expected.
+
+## When starting a Batch order from the mobile device the picking list journal is not created nor posted, though the production start parameters are set to 'Always' for 'Automatic BOM Consumption' and 'Complete picking list journal' is set.
+The Production Control -> Start Default parameters are not used by the hand held flow for starting a production or batch order. Automatic BOM consumption on the hand held device is fixed to Flushing principle. That means that only formula or BOM lines with flushing principle Start will be flushed when using the hand held device for starting.
+
+**Resolution**
+Ensure to set the flushing principle on the formula lines.
+
+## Unable to end production orders after completion. Getting the error for 'Report as Finished' 'Total good quantity reported as finished for the production will be X. Feedback for the last operation is 0.00 in total', for production order end 'Negative cost amount for receipts is not allowed'.
+When you try to post a report as finished journal on a production order and you get the message “Total good quantity reported as finished for the production will be X. Feedback for the last operation is 0.00 in total”. 
+
+**Possible cause**
+This happens if the quantities posted in the last operations were incorrect, i.e. the quantities posted when they were ended or started.
+
+For example if production was started but the quantity to be started is not allocated, then the route card journal will be posted with nothing. Validate this by going to the View -> Route Card, for the production order.
+
+**Workaround**
+This issue can fixed by posting additional journals for those operations which did not have the journals posted correctly. You can do this by **Starting** the production order again and choosing to post the additional journals. This will not start the production order, but will only post the journals. 
+
+After this, you can see the route card should show the quantities posted. It should then be possible to end the production orders successfully.
 
