@@ -48,7 +48,7 @@ Dynamics 365 Commerce supports the creation, editing, and management of page and
     
 ## Experimentation journey
 The image below shows the user's experimentation journey in Commerce and the third-party service - it is an iterative process that can take a few iterations to learn and get the desired results:
-![Experimentation lifecycle](./media/experimentation_lifecycle.svg "Experimentation lifecycle")
+![Experimentation lifecycle](./media/TEST.svg "Experimentation lifecycle")
 
 Click on the links below to learn more about the phases:
 1. [Identify the goals for your experiment](experimentation-identify.md)
@@ -72,4 +72,4 @@ Similarly you can also use the **third-party status** field to understand the st
 1. Archived - The experiment has run its course and has been cataloged for future reference.
 
 Below is an image that shows both sets of statuses and how they relate to each other:
-![Experimentation statuses](./media/TEST.svg "Experimentation statuses")
+![Experimentation statuses](./media/experimentation_statuses.svg "Experimentation statuses")
