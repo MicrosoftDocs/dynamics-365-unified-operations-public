@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Outbound workload visualization
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-<!-- KFM: I think this is a preview feature, so I added the preview banner. Please confirm. -->
 
 Outbound workload visualization is suitable to be displayed on warehouse performance screens.
 
@@ -39,26 +37,12 @@ Advanced setup capabilities accessible from the **Outbound workload visualizatio
 
 This functionality can be used to track the progress of picking work. The feature is integrated with labor management and, if labor management is set, visualization can show a calculation of the number of left for the displayed picking work (filtered).
 
-## Turn on outbound workload visualization
+## Turn on the outbound workload visualization feature
 
-Before you can use the feature described in this topic, you must add it to your system by adding the flight and then enable the feature in feature management.
+Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
-### Add the outbound workload visualization flight
-
-To add the outbound workload visualization flight to your system:
-
-- **Flight name**: WHSOutboundWorkLoadVisualizationFeature
-- **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('WHSOutboundWorkLoadVisualizationFeature', 1);`
-
-<!-- KFM: I borrowed this SQL query from somewhere else. Please confirm. Also, we really should not publish documentation for flighted features. Ideally, we should be able to delete this before we publish. Also, do we need to activate this in Feature Management? -->
-
-### Enable the outbound workload visualization feature
-
-To enable the feature after adding the flight:
-
-1. Go to **System administration > Workspaces > Feature management**.
-1. Select **Check for updates** to update the list after you have added the flight. (You may need to do this a few times before the feature shows up.)
-1. Find and enable the **Outbound workload visualization** feature.
+- **Module:** *Warehouse management*
+- **Feature name:** *Outbound workload visualization*
 
 ## Set up outbound workload visualizations
 
@@ -68,7 +52,7 @@ To set up an outbound workload visualization:
 
 1. Go to **Warehouse management \> Warehouse monitoring reports \> Outbound workload visualization**.
 
-1. The **Outbound workload visualization** page opens. This is where your visualization will be shown once you create some filters. You can create as many filters (views) as you want, and all are saved under your user account for later use. <!-- KFM: Does this mean that other users won't be able to see my filters? All users must create their own? -->
+1. The **Outbound workload visualization** page opens. This is where your visualization will be shown once you create some filters. You can create as many filters (views) as you want, and all are saved under your user account for later use. This means that each user will have their own set of self-created filters, which aren't shared with other users.
 
 1. On the Action Pane, open the **Filters** tab and then select **Configure filters**.
 
@@ -89,7 +73,10 @@ To set up an outbound workload visualization:
 
     ![Configure filters](media/work-viz-filters-1.png "Configure filters")
 
-1. Close the **Configure filters** page to return to the **Outbound workload visualizations** page, which now shows data based on your new filter settings. Your new filter is now available and selected in the **Filter** drop-down list.
+1. Close the **Configure filters** page to return to the **Outbound workload visualizations** page, which now shows data based on your new filter settings. Your new filter is now available and selected in the **Filter** drop-down list. The following information and settings are available at the top of the chart:
+    - **Filter** - This list includes all of the filters that you have created so far. Choose a filter to see its data in the chart.
+    - **Last refreshed** - Shows the date and time the information in the chart was last updated.
+    - **Estimated/actual time**: If you have labor standards set on your system, then set this to *Yes* if you'd like to show accumulated estimated picking times at the top of each column in the chart. If you aren't using labor standards, this setting is disabled.
 
     ![Example visualization](media/work-viz-chart.png "Example visualization")
 
