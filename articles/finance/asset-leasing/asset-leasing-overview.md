@@ -238,8 +238,6 @@ Move to the **Lease classification test** FastTab to check the value in the **Le
 
 The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
 
-[![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
-
 
 [![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
