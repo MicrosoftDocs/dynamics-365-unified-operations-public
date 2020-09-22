@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PlanActivity, ReqSupplyDemandSchedule
+ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
