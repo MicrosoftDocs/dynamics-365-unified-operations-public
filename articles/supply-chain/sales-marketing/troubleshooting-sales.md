@@ -69,7 +69,7 @@ To fix this issue, follow these steps.
 
 1. Cancel the work, and put inventory back into the desired location. Go to the relevant load of the sales order, and select either **Reduce picked quantity** on the load line or **Reverse work** on the Action Pane.
 
-    The work now has a status of *Cancelled*, and new inventory movement work is automatically created and processed to put inventory back into the location that was described at the time of reversal.
+    The work now has a status of *Canceled*, and new inventory movement work is automatically created and processed to put inventory back into the location that was described at the time of reversal.
 
 2. Delete the load. The shipment is also deleted.
 3. You should now be able to go to the sales order and cancel it.
