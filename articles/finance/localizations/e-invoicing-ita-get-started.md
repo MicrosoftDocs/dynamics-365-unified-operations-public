@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on for Italy
 description: This topic provides information that will help you get started with the Electronic invoicing add-on for Italy Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
