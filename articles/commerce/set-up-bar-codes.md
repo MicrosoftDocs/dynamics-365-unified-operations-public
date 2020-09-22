@@ -47,7 +47,7 @@ You can create bar codes manually or automatically. To create bar codes, complet
 1. [Set up bar code mask characters](set-up-bar-code-masks.md).
 2. [Set up bar code masks](set-up-bar-code-masks.md).
 3. Configure bar code setups.
-4. [Create bar codes for products](../supply-chain/pim/tasks/create-bar-code-product.md)
+4. [Create bar codes for products](../supply-chain/pim/tasks/create-bar-code-product.md).
 
 ## Additional resources
 
