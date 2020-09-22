@@ -113,8 +113,3 @@ The following procedure shows one way to reproduce the issue.
 ### Issue resolution
 
 This depends on the parameter settings for invoices and invoice groups. For more information, see the following blog post: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
-
-## Additional resources
-
-[Product receipts against purchase orders](product-receipt-against-purchase-orders.md)  
-[Vendor Invoicing](vendor-invoices-overview.md)

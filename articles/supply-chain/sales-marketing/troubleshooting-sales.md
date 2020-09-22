@@ -142,7 +142,3 @@ The following procedure shows another way to reproduce the issue.
 The bundle item isn't available for the purchase order because, if you examine the sales order lines for the bundle item, you will notice that the quantity is *0* (zero) and the status is *Cancelled*. This behavior is by design. The sales order buys only the components of the bundle item. It doesn't buy the bundle item itself.
 
 If you must buy a bundle, consider whether you have to mark it as bundle item, because this functionality is actually designed for revenue recognition scenarios. For more information about bundle items, see [Bundles](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-## Additional resources
-
-[Get started with sales orders](get-started.md)
