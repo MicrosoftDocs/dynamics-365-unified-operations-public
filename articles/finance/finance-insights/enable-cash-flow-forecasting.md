@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps for turning on and enabling the Cash flow forecasts feature within Finance Insights. 
+This topic describes the steps for enabling the Cash flow forecasts feature within Finance Insights. 
 
 > [!NOTE]
    > Please setup Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
