@@ -113,7 +113,7 @@ When you're testing your solutions for compatibility with the version dimension,
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
-1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the point of sale (POS) applications. This behavior resembles the current behavior of the config dimension throughout Commerce.
+1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-Commerce applications.   These Commerce specific applications will not support users selling/shipping or returning/receiving inventory by the version dimension.  Inventory availability lookup functions will not discern inventory by version dimension in Commerce apps.  This behavior resembles the current behavior of the config dimension throughout Commerce.
 
 #### Turn on the version dimension
 
