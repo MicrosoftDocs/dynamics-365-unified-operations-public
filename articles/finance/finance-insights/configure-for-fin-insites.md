@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration for Finance Insights (preview)
-description: This topic walks through the configuration steps that will enable your system to the capability that's available in Finance Insights. 
+description: This topic walks through the configuration steps that will enable your system to use the capability that's available in Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Configuration for Finance Insights
 
-Finance Insights combines functionality from Microsoft Dynamics 365 Finance, with the Microsoft Common Data Service (CDS), Microsoft Azure, and Microsoft AI Builder to provide powerful forecasting tools for your organizations. This topic walks through the configuration steps that will enable your system to the capability that's available in Finance Insights. 
+Finance Insights combines functionality from Microsoft Dynamics 365 Finance, with the Microsoft Common Data Service (CDS), Microsoft Azure, and Microsoft AI Builder to provide powerful forecasting tools for your organizations. This topic walks through the configuration steps that will enable your system to use the capability that's available in Finance Insights. 
 
 ## Deploy Dynamics 365 Finance
 
