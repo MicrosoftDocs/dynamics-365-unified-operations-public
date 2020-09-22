@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Experimentation in Dynamics 365 Commerce
-description: Enable the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support will be enabled for e-commerce pages, as well as entities within a page.
+title: Identify goals for an experiment
+description: This topic describes how to establish the goals for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,8 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Identify the goals for your experiment
+# Identify goals for an experiment
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. The first phase in the experimentation lifecycle includes identifying the goals for the experiment and deciding how you want to set up the experiment in Commerce.
 
 [ ![Experimentation user journey - Identify](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 
