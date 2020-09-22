@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/04/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,13 +64,13 @@ You can use the Electronic invoicing add-on with your current license. No additi
 
 ## Prerequisites
 
-Before you complete the steps in this topic, the following prerequisites must be in place:
+Before you complete the steps in this topic, you must have the following prerequisites in place:
 
-- You must have access to your LCS account.
-- You must have an LCS deployment project that includes Finance or Supply Chain Management version 10.0.12 or later.
-- You must have access to your RCS account.
-- You must turn on the Globalization feature for your RCS account through the **Feature management** module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
-- You must create a key vault resource and a storage account in Azure. For more information, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+- Access to your LCS account.
+- An LCS deployment project that includes Finance or Supply Chain Management version 10.0.12 or later.
+- Access to your RCS account.
+- Turn on the Globalization feature for your RCS account through the **Feature management** module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
+- Create a key vault resource and a storage account in Azure. For more information, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 ## Overview
 
@@ -113,19 +113,19 @@ During the RCS setup, you will complete these tasks:
 
 1. Sign in to your RCS account.
 2. In the **Globalization features** workspace, in the **Environments** section, select the **e-Invoicing** tile.
-3. Select **Service environments**
+3. Select **Service environments**.
 
     ![Selecting Service environments](media/e-invoicing-services-get-started-select-service-environments.png)
 
 > [!NOTE]
-> The option **Connected applications** will grant access for the automatic configuration of Electronic invoicing add-on on the Finance or Supply Management through the RCS, but for now, this feature is still under development.
+> The option **Connected applications** grants access for the automatic configuration of the Electronic invoicing add-on in Finance or Supply Management through the RCS. However currently, this feature is still under development.
 
 4. On the Action Pane, select **Key Vault parameters**.
 
     ![Selecting Key Vault parameter](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
 5. On the Action Pane, select **New** to add a key vault.
-6. In the **Key Vault URI** field, enter the value of the **DNS name** attribute of the key vault resource that you configured in Azure. For information about where to find the **DNS name** value, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+6. In the **Key Vault URI** field, enter the **DNS name** attribute value of the key vault resource that you configured in Azure. For information about where to find the **DNS name** value, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
     ![Key Vault URI field](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
@@ -244,8 +244,8 @@ If the submitted invoice document requires an update after the response of the s
 ![Setting up response types](media/e-invoicing-services-get-started-set-up-response-types.png)
 
 ## e-Invoicing feature names by country 
-The following table describes other e-Invoicing features avaliable to download from the Electronic reporting Global respository to generate electronic invoices.
-In RCS, you can download the e-Invoicing features listed in this table, the ER configurations, and the avaliable e-Invoicing feature setups.
+The following table describes other e-Invoicing features available to download from the Electronic reporting Global repository to generate electronic invoices.
+In RCS, you can download the e-Invoicing features listed in this table, the ER configurations, and the available e-Invoicing feature setups.
 In Finance, you can enable the related feature references on the **Electronic document parameters** page to issue electronic invoices for these countries. For more information, see the section, [Turn on country/region-specific e-Invoicing features](#region-specific) earlier in this topic.
 
 | Feature name                      | Description                                 | ER configurations                                                                                                  | Setups                                                                                                                                                         | Country/Region  | Feature reference      |
