@@ -24,7 +24,7 @@ ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 # ms.search.industry:
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
 
