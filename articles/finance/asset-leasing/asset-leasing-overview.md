@@ -271,13 +271,10 @@ The **Lease liability amortization schedule** also shows in the interest transac
 
 The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
-[![Depreciation transactions on the Asset depreciation schedule](./media/overview-19.png)](./media/overview-19.png)
-
-The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 
 [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
 
-The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 
 [![XXX](./media/overview-21.png)](./media/overview-21.png)
 
