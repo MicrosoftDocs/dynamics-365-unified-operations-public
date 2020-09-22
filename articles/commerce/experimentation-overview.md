@@ -72,4 +72,4 @@ Similarly you can also use the **third-party status** field to understand the st
 1. Archived - The experiment has run its course and has been cataloged for future reference.
 
 Below is an image that shows both sets of statuses and how they relate to each other:
-[ ![Image alt text](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+[ ![Experimentation statuses](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
