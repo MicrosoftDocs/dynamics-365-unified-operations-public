@@ -65,6 +65,8 @@ Visual profiles are assigned to registers, and they specify the visual elements 
 > [!NOTE]
 > The **Right** layout and date/time display don't apply to the sign-in screen in compact view.
 
+You need to run the **1090** (**Registers**) distribution schedule job to synchronize the latest visual profile configurations to channel database.
+
 ## Screen layouts
 
 Screen layout configurations determine the actions, content, and placement of UI controls on the POS **Welcome** screen and **Transaction** screen.
@@ -84,6 +86,8 @@ Screen layout configurations determine the actions, content, and placement of UI
 ### Assignment
 
 Screen layouts can be assigned at the store, register, or user level. The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment. In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level. In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.
+
+Depending on at which level the screen layouts are assigned, you need to run the **1070** (**Channel configuration**), **1090** (**Registers**) and/or **1060** (**Staff**) distribution schedule jobs to synchronize the latest screen layout configurations to channel database.
 
 ### Layout sizes
 
