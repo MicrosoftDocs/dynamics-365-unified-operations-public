@@ -178,7 +178,7 @@ To switch back to the original database, reverse this process. In other words, s
 If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
 
 1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
-2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail deployable package.
+2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail self-service deployable package.
 
 ### Reprovision the target environment
 
