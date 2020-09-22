@@ -47,7 +47,7 @@ If you're using the Payment predictions capability in Finance Insights, you'll n
 
 3. Post invoices for the customers that were added. The invoices that were imported in the previous steps must be posted. To do so, open the **Free Text Invoice batch invoicing** page.
 
-   In the opened panel click **Records To Include > Filter**. Add the list of customers from step 2, separated by commas, into the **Invoice account** field (you can also find the customers entity in the package and obtain the customer IDs from there):
+   In the opened panel click **Records To Include > Filter**. Add the list of customers from step 2, separated by commas, into the **Invoice account** field (you can also find the Customers entity in the package and obtain the customer IDs from there):
    US-SM1,US-SM2,US-SM3,US-SM4,US-SM5,US-MD6,US-MD7,US-MD8,US-LG9,US-LG10
 
    Post the invoices in the background by opening the **Run in background** tab on the **Batch Invoicing** page, and setting **Batch processing** to **Yes**. When you click **OK**, the batch posting job will start.
