@@ -47,4 +47,4 @@ Similarly you can also use the **third-party status** field to understand the st
 
 Below is an image that shows both sets of statuses and how they relate to each other:
 
-[ ![](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+[ ![Experimentation statuses](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
