@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable Budget proposal 
-description:  
+description: This topic lists the steps for enabling the Budget proposals feature within Finance Insights.  
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/24/2020
