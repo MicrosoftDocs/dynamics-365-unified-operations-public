@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create data integrator project 
-description: This topics lists the steps that must be completed to create a data inegrator project. 
+description: This topic lists the steps that must be completed to create a data integrator project. 
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/24/2020
@@ -34,15 +34,15 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Complete the following steps to create a data integrator project.
+This topic lists the steps that must be completed to create a data integrator project. Complete the following steps to create the project.
 
-1. Login to Microsoft Dynamics 365 for Finance.
+1. Log in to Microsoft Dynamics 365 for Finance.
 
 2. Open the **Data entities** page (**Workspaces > Data Management > Data entities**). Wait until the all the data entities have refreshed before continuing to the next step. 
 
 3. Open the [Power Apps](https://make.powerapps.com/) portal.
    - Choose the appropriate environment.
-   - On the left hand navigation pane select Data > Connections. Connect to appropriate instances of:
+   - On the left navigation pane select **Data > Connections. Connect to appropriate instances of:**
      - Dynamics 365
      - Dynamics 365 for Fin & Ops
 
@@ -54,7 +54,7 @@ Complete the following steps to create a data integrator project.
    - Select the appropriate connections for
      - Dynamics 365
      - Dynamics 365 for Fin & Ops
-    - Chose the appropriate Organization mapping
+    - Choose the appropriate Organization mapping
     - Click Create
 
 5. Open the [Power Apps environments](https://admin.powerapps.com/environments).
