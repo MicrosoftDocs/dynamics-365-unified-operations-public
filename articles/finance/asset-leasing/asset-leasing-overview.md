@@ -220,19 +220,19 @@ Enter the mandatory fields under the **General** FastTab.
 
 [![Mandatory fields under the General FastTab](./media/overview-04.png)](./media/overview-04.png)
 
-Move to the **Payment schedule lines** FastTab and enter a payment line, then click the **Create schedules** button. Then click the **Books** button. 
+Move to the **Payment schedule lines** FastTab and enter a payment line, then click the **Create schedules** button.
 
 [![Payment line FastTab](./media/overview-05.png)](./media/overview-05.png)
 
-The **Book details** form represents the associated books to a lease, each lease can carry on more than one book as illustrated in the following screenshot.
+Click the **Books** button. 
 
 [![Book details highlighted](./media/overview-06.png)](./media/overview-06.png)
 
-Switch to **General** FastTab in **Book details** form; the **Initial right-of-use asset** and **Initial lease liability** are calculated. 
+Switch to **General** FastTab; the **Initial right-of-use asset** and **lease liability** are calculated. 
 
 [![Lease status highlighted](./media/overview-07.png)](./media/overview-07.png)
 
-Move to the **Lease classification test** FastTab in **Book details** form to check the value in the **Lease type** field of which determined automatically based on the **Lease book** setup. 
+Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
 [![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
 
 
@@ -241,7 +241,7 @@ The automatic **Lease type** is classified based on the defied criteria that's d
 
 [![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
-Go to **Payment schedule** under the **Function** section in the **Book details** form.  
+Go to **Payment schedule** under the **Function** section.  
 
 [![List of payment schedules](./media/overview-12.png)](./media/overview-12.png)
 
@@ -263,11 +263,9 @@ The payment schedule for the right-of-use asset transactions are shown in the fo
 [![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
 
 The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
-Create the journal, and then go to **Asset leasing journals**.
+Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
 
-The **Lease liability amortization schedule** also shows in the interest transactions.
-
-[![Interest transactions on the Lease liability amortization schedule](./media/overview-18.png)](./media/overview-18.png)
+[![Interest transactions on the Lease liability amortization schedule](./media/overview-17.png)](./media/overview-17.png)
 
 The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
