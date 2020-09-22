@@ -78,7 +78,7 @@ The following table shows examples of accounts that you must create for leased a
 To assign accounts to the lease books and groups that have been created, you must configure parameters for Asset leasing.
 
 1. Go to **Asset leasing \> Setup \> Lease posting parameters**.
-2. On the **Accounts** tab, open the **Lease accounts** drop-down. Select the **Lease asset** from the **Posting types** for the lease drop-down. The preceding table shows the accounts that are related to operating and finance leases.
+2. On the **Accounts** tab, open the **Lease accounts** FastTab. Select the **Lease asset** from the **Posting types** for the lease drop-down. The preceding table shows the accounts that are related to operating and finance leases.
 
     > [!NOTE]
     > This step requires that you set up separate accounts for both operating and finance leases. After the **Lease asset** selection is completed, continue to enter information for the **Lease liability** and other required posting types. Companies that adhere to the IFRS 16 accounting framework don't have to set up the operating account relationships, because all leases under IFRS 16 are classified as finance leases.
