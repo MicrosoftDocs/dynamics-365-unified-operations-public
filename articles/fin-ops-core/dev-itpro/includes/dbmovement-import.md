@@ -26,3 +26,5 @@ Here is an explanation of the parameters:
 
 > [!NOTE]
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
+
+For information about how to complete the manual import operations into a Tier 1 environment, see [Import the database](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-exportuat#import-the-database). 

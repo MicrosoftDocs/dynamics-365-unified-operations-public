@@ -2,7 +2,7 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts can help you quickly and efficiently enter data. 
+description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The following keyboard shortcuts can help you quickly and efficiently enter data.
+The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -242,6 +242,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a row in the lookup                                                                                        | Up arrow / Down arrow            |
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
+
 ## Additional resources
 
 - [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

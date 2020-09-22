@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 02/02/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 # ms.search.industry:
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -86,7 +86,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
-- The databases must be hosted in the same Azure geographic region.
+- The databases must be hosted in the same Azure geographic region, unless the databases are Spartan-managed.  Databases are Spartan-managed when you see 'spartan' as part of the fully qualified SQL server address.
 - The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
 ## Steps to complete after a database refresh for environments that use Commerce functionality

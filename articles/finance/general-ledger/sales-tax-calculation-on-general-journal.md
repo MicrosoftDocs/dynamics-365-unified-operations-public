@@ -70,23 +70,6 @@ The following diagram illustrates the rule graphically.
 
 If a voucher has journal line where the account type is **Vendor**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for vendor accounts. 
 
-•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
-
-•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Receivable.
-
-•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Receivable.
-
-
-Otherwise, sales tax direction is Sales Tax Payable.
-
-The following diagram illustrates the rule graphically.
-
-![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
-
-### Account type is Customer
-
-If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for customer accounts.
-
 •	If the sales tax code is use tax, then sales tax direction is Use Tax.
 
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
@@ -96,6 +79,22 @@ If a voucher has journal line where the account type is **Customer**, all the jo
 •	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Payable.
 
 Otherwise, sales tax direction is Sales Tax Receivable.
+
+The following diagram illustrates the rule graphically.
+
+![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
+
+### Account type is Customer
+
+If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for customer accounts.
+
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
+
+•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Receivable.
+
+•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Receivable.
+
+Otherwise, sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 

@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,7 +103,10 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 ### Can I select the day and time to update?
 
-Customers can configure the day and maintenance time windows in LCS. Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through LCS. The production ready deployable package will be made available to all customers via the Action Center in Lifecycle services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments.
+Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.
+
+Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
 
@@ -125,7 +128,7 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 Before any feature is removed from the product, the deprecation notice will be announced in the product documentation 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 ### Can I delay an update?
 
@@ -145,18 +148,18 @@ Critical issues should always be submitted to the support team via Lifecycle Ser
 
 ### How much time do I get for validation?
 
-You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll out.
+You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll-out.
 
 ### What happens when the service update is complete?
 
 Once the service update is applied by Microsoft you will receive a notification if the update was successful or if it was not able to be applied.  There can be several reasons an update was unable to be applied:
 
 - Pending Package Sign-off - If a package is pending signoff, Microsoft will not apply the service update to production.  
-- Deployment Failure - If there was a deployment failure ,the environment will be rolled-back to the original state.
+- Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.
  
 ### If there is a failure, can I reschedule the update to be auto applied?
 
-You will not be able to reschedule the update per se, but you may to apply the package when it is convenient for you, just as you might schedule to apply any other update.
+You will not be able to reschedule the update per se, but you may apply the package when it is convenient for you, just as you might schedule to apply any other update.
 
 ### Will critical hotfixes be automatically applied to my sandbox/ production environment during auto-update?
 
@@ -224,7 +227,7 @@ Individual hotfixes will not be supported after 8.1. Customers must update to th
 
 ### Will you notify me about critical hotfixes released for the monthly update that I’m on? 
 
-Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign-up to be notified when an open issue is resolved.  
+Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign up to be notified when an open issue is resolved.  
 
 ### How can I upgrade to 8.x?
 
@@ -250,7 +253,7 @@ All in-instore components must be running released software that is less than on
 
 ### Will there continue to be backward compatibility for the in-store components?
 
-Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll out updates to stores.
 
 ### What options are available for updating in-store components across my organization?
 

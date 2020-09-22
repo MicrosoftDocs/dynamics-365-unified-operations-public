@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISEMPTY">ISEMPTY ER function</a>
+# ISEMPTY ER function
 
 [!include [banner](../includes/banner.md)]
 

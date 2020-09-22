@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0.11
 # Automate vendor payment proposals
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Organizations that pay vendors on a recurring schedule can now automate the process of generating vendor payment proposals. Vendor payment proposal automations define the following details:
 
