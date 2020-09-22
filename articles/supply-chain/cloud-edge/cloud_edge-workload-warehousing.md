@@ -120,7 +120,7 @@ Additional limitations of unsupported processing at edge scale units are:
 |Release to warehouse                         |Yes             |No                 |
 |**Shipment consolidation**                   |**No**          |**No**             |
 |**Cross docking (picking work)**             |**No**          |**No**             |
-|Shipment wave processing                     |<p>(No)</p>But the finalization of the Wave status is handled in the cloud</p>       |<p>(Yes)</p>But without:<ul><li>Parallel work creation></li><li>Load building, Sorting</li> <li>Containerization</li><li>Wave label printing</li></li></ul><p>Note:</p>Cloud access is needed to finalize the Wave status as part of the wave processing</p>|
+|Shipment wave processing                     |<p>(No)</p>But the finalization of the Wave status is handled in the cloud</p>       |<p>(Yes)</p>But without:<ul><li>Parallel work creation</li><li>Load building, Sorting</li> <li>Containerization</li><li>Wave label printing</li></li></ul><p>Note:</p>Cloud access is needed to finalize the Wave status as part of the wave processing</p>|
 |Warehouse work processing                    | No             |<p>(Yes)</p>But only for:<ul><li>Sales picking</li><li>Sales loading</li><li>Without the use of active tracking dimensions</li></ul>|
 |**Cluster picking**                          |**No**          |**No**             |
 |**Packing processing**                       |**No**          |**No**             |
