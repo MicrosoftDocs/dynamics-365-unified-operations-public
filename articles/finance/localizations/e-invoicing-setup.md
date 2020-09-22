@@ -5,7 +5,7 @@ title: Set up the Electronic invoicing add-on
 description: This topic explains how to set up the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,7 @@ The configurability relies on the Electronic reporting (ER) format configuration
 
 "The Electronic invoicing add-on feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server. The feature setup combines, among other things, the use of ER configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
 
-The following illustrations shows the main components of an Electronic invoicing add-on feature.
+The following illustration shows the main components of an Electronic invoicing add-on feature.
 
 ![Electronic invoicing add-on feature overview](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
@@ -127,11 +127,11 @@ The following table describes the fields that are available on the **Actions** F
 
 | Field        | Description |
 |--------------|-------------|
-| Action       | There are eigth predefined actions:<ul><li><strong>Sign document</strong></li><li><strong>FileStoreActionName</strong></li><li><strong>Transform document</strong></li><li><strong>Process response</strong></li><li><strong>Call REST web service</strong></li><li><strong>Call Mexican PAC service</strong></li><li><strong>Call Brazilian SEFAZ service</strong></li><li><strong>Call Italian SDI service</strong></li></ul> |
+| Action       | There are eight predefined actions:<ul><li><strong>Sign document</strong></li><li><strong>FileStoreActionName</strong></li><li><strong>Transform document</strong></li><li><strong>Process response</strong></li><li><strong>Call REST web service</strong></li><li><strong>Call Mexican PAC service</strong></li><li><strong>Call Brazilian SEFAZ service</strong></li><li><strong>Call Italian SDI service</strong></li></ul> |
 | Action name  | The name of the action and its execution order. |
 | Description  | A description of the action. |
 | Enable retry | A selected check box indicates that the action can be retried if the previous attempt is unsuccessful. |
-| Retry action | In the event of a retry, the action that the retry is started from. The retry then ends on the current action (inclusive retry). For actions that have them, The **Minimum back off** and **Maximum back off** parameters specify the minimum number and maximum number of retries. |
+| Retry action | In the event of a retry, the action that the retry is started from. The retry then ends on the current action (inclusive retry). For actions that have them, the **Minimum back off** and **Maximum back off** parameters specify the minimum number and maximum number of retries. |
 
 #### Parameters FastTab
 
@@ -182,7 +182,7 @@ The available parameters vary, depending on the action that is selected on the *
 |---------------------------------|-------------|
 | Input file                      | The source file that provides the data that must be run to the action. |
 | Direction                       | A value that indicates whether the import format or the export format should be used. |
-| Configuration id                | The format that should be run. |
+| Configuration ID                | The format that should be run. |
 | Configuration version           | If no configuration version is specified, the most recent version will be used. |
 | Configuration integration point | The source file that provides data to the reporting runtime. |
 
