@@ -42,7 +42,7 @@ Deploy the environments by completing the following steps.
 
 1. Create or update a Dynamics 365 Finance environment in Lifecycle Services (LCS). The environment needs App Version 10.0.11/Platform Update 35 or later.
   
-2. The environment must be an high availability (HA) environment in Sandbox (also known as a Tier-2 environment). For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+2. The environment must be a high availability (HA) environment in Sandbox (also known as a Tier-2 environment). For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 3. If you are using Contoso demo data you'll need additional sample data to use Customer payment predictions, Cashflow forecasts, and Budget forecasts. See [Set up demo data for Payment predictions](set-up-demo-data.md) for information about setting up demo data specifically for Customer payment predictions.
 
@@ -126,8 +126,8 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 | AI Builder Authorization Service            | ad40333e-9910-4b61-b281-e3aeeb8c3ef3    |
 
 If you are unable to find any of the preceding applications, try the following in Enterprise Applications:
-1. On your local machine: Click on the **Start** menu and search for powershell.
-2. Right-click **Windows Powershell** and choose **Run as administrator**.
+1. On your local machine: Click on the **Start** menu and search for "powershell".
+2. Right-click **Windows PowerShell** and choose **Run as administrator**.
 3. Run the following command to install “AzureAD” module.
    - Install-Module -Name AzureAD
    - If NuGet provider is required to continue, select “Y” to install it.
@@ -147,7 +147,7 @@ If you are unable to find any of the preceding applications, try the following i
      - **Location**: Select the data center where your environment is located.
      - **Performance**: We recommend that you select **Standard**.
      - **Account kind**: You must select **StorageV2**.
-     - In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows.
+     - In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services, such as Power BI data flows.
      - Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
    - Go to the storage account that you created.
      - Go to **Access keys** from the menu on the left.
@@ -163,7 +163,7 @@ If you are unable to find any of the preceding applications, try the following i
    - Enter a name for the secret. Make a note of the name, because you'll have to provide it later.
    - In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
    - Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
-   - Go to the Key Valut Overview and note the DNS Name.
+   - Go to the Key Vault Overview and note the DNS Name.
    
  3. Create and register an Azure Active directory application using the following instructions: 
     - In the Azure portal, select Azure Active Directory, and then select App registrations.
@@ -182,7 +182,7 @@ If you are unable to find any of the preceding applications, try the following i
       - In the Key Description field, enter a name.
       - Select a duration, and then select **Add**.
       - A secret is generated in the **Value** field.
-      - Copy and save the secrete value
+      - Copy and save the secrete value.
 
 4. Create Key Vault Secrets using the following instructions:
     - Go to the Key Vault created previously and select **Secrets**.
@@ -261,7 +261,7 @@ Add Azure Data Lake add-in to the environment using LCS.
 
   |     Value                                                                                |     Description                                    |
   |------------------------------------------------------------------------------------------|----------------------------------------------------|
-  |     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located .           Go   to: **Azure portal > Azure Active Directory > Tenant ID**          |
+  |     Tenant   ID of the Azure Subscription where the Key Vault is located.                |     This   is the tenant Id where the storage account, apps and Key Vaults are located.           Go   to: **Azure portal > Azure Active Directory > Tenant ID**          |
   |     Provide   the DNS name of your Key Vault                                             |     The   DNS name of the Key Vault (same as what is used in Entity store). For example, &lt;https://customkeyvault.vault.azure.net/&gt;                                               |
   |     Provide   the secret that contains the name of the storage account                   |     storage-account-name                                      |
   |     Secret   Name for App ID to be used for accessing Data Lake                          |     app-id                                                    |
