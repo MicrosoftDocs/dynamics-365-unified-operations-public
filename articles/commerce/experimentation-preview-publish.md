@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Preview and publish your experiment
-![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg "Experimentation user journey - Preview & Publish")
+
+[ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+
 Once you edit the variations in Commerce, follow the steps below to preview and publish them:
 1. Click on **Preview** in the top bar to review the variation you are currently working on and ensure everything looks good. If you want to preview a different variation, select it from the variation drop down and click preview again.
 1. Click on **Publish** in the top bar to publish all variations that belong to the experiment.
