@@ -66,10 +66,10 @@ This topic describes the steps for turning on and configuring the Customer payme
 
         - **On time** – This bucket includes payments that are predicted to be paid on or before the transaction due date.
         - **Late** – This bucket includes payments that are predicted to be paid after the transaction due date but before the start of the "very late" transaction period.
-        - **Very late** – This bucket includes payments that are predicted to be paid after the start of the "very late" transaction period
+        - **Very late** – This bucket includes payments that are predicted to be paid after the start of the "very late" transaction period.
 
         > [!NOTE]
-        > After the AI prediction model for customer payments has been created, if you change the "very late" transaction period and select **Change late threshold**, the existing prediction model is deleted and a new model is created. The new prediction model will move transactions into the "very late" period, based on the settings that were entered to define it.
+        > If you change the "very late" transaction period and select **Change late threshold** after the AI prediction model for customer payments has been created, the existing prediction model is deleted and a new model is created. The new prediction model will move transactions into the "very late" period, based on the settings that were entered to define it.
 
     4. After you've finished defining the "very late" transaction period, select **Create prediction model** to create the prediction model. The **Prediction model** section on the **Financial insights parameters** page shows the status of the prediction model.
 
@@ -109,7 +109,7 @@ For the transaction that is selected in the grid, the **Payment prediction** sec
 
 The **Customer insights** section shows the current invoice, payment, and collections statistics for the customer for the selected transaction. The **Customer history** section shows the customer's payment history in the **On time**, **Late**, and **Very late** buckets.
 
-The data in the **Top factors**, **Customer insights**, and **Customer history** sections helps explain the payment predictions. Therefore, it can help increase your confidence in the efficacy of the predictions.
+The data in the **Top factors**, **Customer insights**, and **Customer history** sections helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
 
 [![Graphical indicators for payment predictions in the Related information pane](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
@@ -141,7 +141,7 @@ For the transaction that is selected in the grid, the **Payment prediction** sec
 
 The **Customer insights** section shows the current invoice, payment, and collections statistics for the customer for the selected transaction. The **Customer history** section shows the customer's payment history in the **On time**, **Late**, and **Very late** buckets.
 
-The data in the **Top factors**, **Customer insights**, and **Customer history** sections helps explain the payment predictions. Therefore, it can help increase your confidence in the efficacy of the predictions.
+The data in the **Top factors**, **Customer insights**, and **Customer history** sections helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
 
 ## Improving the accuracy of payment predictions
 
