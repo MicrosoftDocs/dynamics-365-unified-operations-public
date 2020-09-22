@@ -42,7 +42,7 @@ When CSP is turned on for an e-Commerce site, it helps enhance security by block
 
 For more information about CSP, see [Content Security Policy Reference](https://content-security-policy.com/).
 
-## CSP Settings
+## CSP settings
 
 ### Turn off CSP for a site
 
