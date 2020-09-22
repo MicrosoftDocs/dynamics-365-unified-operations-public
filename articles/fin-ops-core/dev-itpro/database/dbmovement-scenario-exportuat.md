@@ -174,7 +174,7 @@ After these services have been stopped, rename the AxDB database **AxDB\_orig**,
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
-### Post-steps for Commerce environments
+### Post steps for Commerce environments
 If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
 
 1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
