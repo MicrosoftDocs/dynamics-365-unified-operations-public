@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps for turning on and configuring the Customer payment predictions feature. You turn on the feature in the **Feature management** workspace, and you enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you use the feature effectively.
+This topic describes the steps for turning on and configuring the Customer payment predictions feature. The feature is turned on in the **Feature management** workspace, and you enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you use the feature effectively.
 
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps.
