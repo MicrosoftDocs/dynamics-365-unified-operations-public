@@ -288,7 +288,7 @@ Because you've updated your certificates, the configuration file that is present
 
 	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. Change the thumbprints to the new thumbprints that you previously configured. (You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.)
+3. Change the thumbprints to the new thumbprints that you previously configured. You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.
 
 	![Deployment settings thumbprint image 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
@@ -357,7 +357,7 @@ This procedure should be completed either after a successful certificate rotatio
 
 This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
-In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day until all of the data has been reencrypted. In order to enable the batch job a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB):
+In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day until all of the data has been re-encrypted. In order to enable the batch job, a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB).
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
@@ -371,7 +371,7 @@ ELSE
   INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-After the commands above have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. Once the batch job has been created, the schedule can be modified from the UI.
+After the above commands have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
