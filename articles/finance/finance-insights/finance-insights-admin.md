@@ -38,7 +38,7 @@ Finance Insights provides configurable and extensible models to help you accurat
 
 Finance Insights preview is available to for trial deployments in the United Stated of America, Europe and United Kingdom. We are incrementally adding support in additional regions.
 
-Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment can't be migrated to a production environment. See [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/en-us/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) for more information.
+Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment can't be migrated to a production environment. See [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) for more information.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ A list of the requirements for using Finance Insights follows, along with links 
 To apply for the preview program, please fill out [Finance Insights Preview for Dynamics 365 Finance agreement](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).   
 
 ### System requirements
-A Tier 2 Sandbox environment (multi-box) is required to preview Finance Insights. For more background on environments, please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+A Tier 2 Sandbox environment (multi-box) is required to preview Finance Insights. For more background on environments, please see [Environment planning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 ### Version information
 This document applies to Finance and Operations 10.0.11 (PU35) or after.
