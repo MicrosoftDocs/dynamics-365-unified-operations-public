@@ -241,11 +241,11 @@ The automatic **Lease type** is classified based on the defied criteria that's d
 
 [![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
-Go to **Payment schedule** under the **Function** section.  The **Payment schedule** page lists future payment schedules for a lease ID. 
+Go to **Payment schedule** under the **Function** section.  
 
 [![List of payment schedules](./media/overview-12.png)](./media/overview-12.png)
 
-Then **Confirm schedule** to be able to post the **Initial recognition** transactions. 
+The **Payment schedule** page lists future payment schedules for a lease ID. Then **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
 [![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
 
