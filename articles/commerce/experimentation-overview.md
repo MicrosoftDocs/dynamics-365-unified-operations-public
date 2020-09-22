@@ -59,4 +59,4 @@ To learn more about each step in the experimentation process, refer to the follo
 1. [Run and monitor your experiment](experimentation-run-monitor.md)
 1. [Review and complete your experiment](experimentation-review-complete.md)
 
-To learn where an experiment is in the lifecycle, go to the **Experiments** page in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experiment-status.md) topic.
+To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experiment-status.md) topic.
