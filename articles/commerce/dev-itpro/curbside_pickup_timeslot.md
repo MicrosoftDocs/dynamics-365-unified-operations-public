@@ -35,23 +35,25 @@ ms.dyn365.ops.version: Retail 10.0.15 update
 
 ## Overview
 
+The time-slot feature provides a way for retailers to define a time slot for items that have pickup delivery mode(s). A time slot allows the retailer to define what days/times orders can be picked up from a store. In addition, they can also define the number of orders that can be picked up in a given window.  This way a retailer can limit  the number of orders to be picked up at a given time/day which in-turn allows them to  provide a quality experience for their customers. 
+
 This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
-Dynamics 365 Commerce will now enable the Retailers to be able to specify and create 'Timeslots' for the 'Pickup' mode(s) of delivery. 
-
+Below is an example of time slot selection during ecommerce checkout
 ![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
 
-- **Timeslot** is a specific interval of time, where the customer can choose to pickup thier order form a specific store/location. 
-- **Timelsot management** is **only** available to the **'Pickup'** mode of delivery in Dynamics 365 Commerce. 
+-Time slots for your retail channel
+Timeslot is a specific interval of time, where the customer can choose to pickup their order from a specific store/location. This time slot management is only available to only available to the 'Pickup' mode of delivery in Dynamics 365 Commerce.
+A timeslot includes the following fields.
+•	Mode of delivery: This is the Pickup mode of delivery for which the timeslot applies to. 
+•	Minimum and Maximum: This is the earliest and farthest days that can be selected for pickup relative to the day in which the order is placed. The Minimum ensures there is enough time for the retailer to process the order before its ready for pickup. The Maximum ensures the user cannot pick a date that is too far into the future. E.g. With a minimum=1, if the order is being placed on 9/20/2020 it means the earliest day available for pickup will be the next eligible day i.e 9/21/2020. Similarly, you can also define a Maximum. With Minimum and Maximum defined, a user can only see and pick a certain set of days on their checkout experience.  Is there a min/max on this? 
 
-Retailers can choose to specify the following attributes within a 'Timeslot' template. 
-
-- *Time Interval*: The time duration that can be alloted per timeslot. (15 mins / 30 mins / 1 hour etc...) 
-- *Slots per interval*: The number of customers that can be served per time interval. ( 1,2... only whole numbers)
-- *Active hours of delivery*: The time period between which the 'Pickup' is allowed. 
-- *Active Days*: Days on which the above timeslots can be applied. 
-- *Start & End Date*: Start and end date from which the timeslots are applicable. (Does not effect any active pickup orders)
-- *Minumum & Maximum calendar limit*: The closest or farthest timeslots that can be selected for a pickup order. 
+•	Start & End Date: Each time slot entry has a start and end date for which the timeslots are applicable. This provides the flexibility to add different time slots through the year E.g. Fall vs Christmas hours. Once  an order is already placed changing the start and end date on the timeslots will not apply to the existing order. 
+•	Active hours of pickup: This defines the time period between which the pickup is allowed. E.g. You can define the pickup times to be 2pm to 5pm everyday. This allows the pickup times to be independent of store hours and allows a retailer to configure it per their business needs.
+•	Time Interval: This defines the time duration that can be allotted for each timeslot. E.g. it could be in increments of 15 mins, 30 mins,  1 hour etc.. 
+•	Slots per interval: This defines the number of orders that can be served in each time interval. E.g.  1, 2, 3 or any whole number. This allows the retailer to define how many customers/orders they want to serve for pickup within a given time interval.
+•	Active Days: This defines the days during which the pick up time slots are active. E.g. Mon, Tue, Wed, Sun etc. This allows the retailer to define days when then want to support pickup orders.
+•	Retail channel: Each timeslot can be associated to one or more retail stores. Depending on each stores operational hours, one or more timeslots can be created and associated to a channel. 
 
 ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
 
