@@ -5,7 +5,7 @@ title: Point of sale (POS) APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -227,7 +227,7 @@ The following is a list of APIs exposed to perform payment-related functionality
 |-------------------------------------------|----------------------------------------|--------------------------|
 | GetGiftCardByIdServiceRequest             |                                        |                          |
 | GetPaymentCardTypeByBinRangeClientRequest |                                        |                          |
-| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or send the message to signature capture device based on the configuration | 10.0.15 |
+| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or send the message to signature capture device based on the configuration. | 10.0.15 |
 
 ### Peripherals
 
