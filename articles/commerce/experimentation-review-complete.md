@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Review and complete your experiment
-![Experimentation user journey - Review & Complete](./media/experimentation_review_complete.svg "Experimentation user journey - Review & Complete")
+
+[ ![Experimentation user journey - Review & Complete](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
+
 After your experiment ends and has sufficient results to determine whether it was a success or not, the winning experience can be promoted to all users of the website as follows:
 1. Go to the **Experiments** tab in site builder and click on the desired experiment.
 1. Click the **Complete** button on the top bar once the experiment has run and gathered sufficient data.
