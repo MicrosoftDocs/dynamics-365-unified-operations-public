@@ -30,8 +30,9 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Review the status of an experiment
+There are many steps involved in setting up and running an experiment in Dynamics 365 Commerce. For information on the experimentation lifecycle, see [Experimentation in Dynamics 365 Commerce](experimentation-overview.md).
 
-To learn where an experiment is in the lifecycle, go to the Experiments page in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service.
+To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service.
 The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
 1. Draft - The experiment is connected to a page or fragment in Commerce and is being edited.
 1. Published - The experiment is ready to go live, once it is started in the third-party service.
