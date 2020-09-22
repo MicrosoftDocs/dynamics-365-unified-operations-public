@@ -2,10 +2,10 @@
 # required metadata
 
 title: Experimentation in Dynamics 365 Commerce
-description: Enable the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support will be enabled for e-commerce pages, as well as entities within a page.
+description: Experimentation enables the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support is enabled for e-commerce pages and entities within a page.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,22 +29,22 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# E-commerce experimentation
+# Experimentation in Dynamics 365 Commerce
 
 ## Overview
-Experimentation is the process of using controlled experiments such as A/B tests to validate hypotheses and making decisions with data-driven confidence. Use e-commerce experimentation to scientifically measure the impact of proposed changes to your website and thereby drive higher conversion rates.
+You can use controlled experiments such as A/B tests in Dynamics 365 Commerce to validate hypotheses and make decisions with data-driven confidence. e-Commerce experimentation enables you to scientifically measure the impact of proposed changes to your website and drive higher conversion rates as a result.
 
-Dynamics 365 Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Integrations with third-party services enable the creation of experiments and treatment assignments. Real-time event streams from Commerce enable the analytics defining experiment results in the third-party service to help support or refute the hypothesis.
+Commerce supports the creation, editing, and management of page and content treatments also known as **variations** within site builder. Commerce integrates with third-party services which you use to enable the creation of experiments and treatment assignments. Real-time event streams are captured in Commerce and enable the analytics that define the experiment results in the third-party service. You then use the analytics help support or refute your hypothesis.
 
 > [!NOTE]
-> Commerce supports A/B testing on pages, modules and fragments. Multi-variate and multi-page tests can currently only be accomplished using fragments.
+> Commerce supports A/B testing on pages, modules, and fragments. Multi-variate and multi-page tests can currently only be accomplished using fragments.
 
-## Prerequisites
-1. **Get the right Commerce version** - Upgrade your module library, online channel extensibility SDK and Commerce scale unit to version 10.0.13.
-1. **Setup an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to each user. You can setup a third-party connector purchased from [AppSource](https://appsource.microsoft.com), following directions provided by the publisher. You can also use the sample test connector from Commerce following instructions [here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/connectors), to test the experimentation workflow without needing to configure an external service.
-1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level (Tenant Settings -> Features) or at the site level (Site Settings -> Features).
-    - Set the **Experimentation** flag to on to enable creating experiment variations of modules within a page, without affecting or copying other content that is not part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this will stop all experiments from being shown to users, and remove all editing functions within site builder.
-    - Set the **Experimentation on pages or fragments** flag to on to enable experiments to be run on a page or fragment. This mode creates a full instance copy of the entire page or fragment for all modules within it.  Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances is not a concern. Disabling it will prevent creation and editing of new experiments on pages and fragments.
+## Set up prerequisites
+1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility SDK, and Commerce scale unit to Commerce version 10.0.13 or later.
+1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment a user. You can purcahse a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see the [Configure and enable connectors](e-commerce-extensibility/connectors.md) topic. 
+1. **Turn on the experimentation feature flags** - You can enable experimentation at the tenant level by going to **Tenant Settings -> Features** or at the site level at **Site Settings -> Features**.
+    - Enable the **Experimentation** flag to create experiment variations of modules within a page without affecting or copying other content that isn't part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
+    - Enable the **Experimentation on pages or fragments** flag is you want to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
     
 ## Experimentation journey
 The image below shows the user's experimentation journey in Commerce and the third-party service - it is an iterative process that can take a few iterations to learn and get the desired results:
