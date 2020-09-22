@@ -581,8 +581,9 @@ Only user accounts that have the Global Administrator directory role can add cer
     > [!NOTE]
     > If the script does not set the context to the correct tenant once you authenticate, you can pass the tenantid as a parameter to ensure the context is set correctly
     > ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -TenantId 'xxxx-xxxx-xxxx-xxxx'
-  
+    > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -TenantId 'xxxx-xxxx-xxxx-xxxx'
+    > ```
+    
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell
