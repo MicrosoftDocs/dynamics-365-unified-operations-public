@@ -41,7 +41,7 @@ Some Dynamics 365 Commerce e-Commerce development scenarios require business-sen
 The below information will provide the details on how to create a Key Vault to securily store information, how to configure e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault and how to access these secret values from within your e-Commerce components.
 
 ## Create a Key Vault to store application secrets
-You will need an Azure account to access the Key Vault feature.
+You will need an Azure account to access the Key Vault feature, follow the below steps to create a new Key Vault.
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1.	Select the **Create a resource** option.
@@ -53,10 +53,10 @@ You will need an Azure account to access the Key Vault feature.
 1.	Wait for deployment to complete.
 1.	After the Key Vault has successfully has successfully been deployed, add any secrets you wish to add under Secrets.
 
-## Configure Server to Server Auth between your Node application and Retail Server
-Next we will configure your Node application to securely communicate with Retail Server
+## Configure Server to Server Auth between the e-Commerce Node application and Retail Server
+Next the e-Commerce Node application needs to be configured to securely communicate with Retail Server
 
-For the next steps, you will need to have the Tenant ID of the App Service hosting your Node application and Client ID of the managed identity tied to your App Service.
+For the next steps, you will need to have the **Tenant ID** of the App Service hosting your Node application and Client ID of the managed identity tied to your App Service.
 
 (Note for Sam, not sure if we have to include this). If you do not have access to your App Service, work with your Service Integrator to get the following information.
 Finding your Tenant Id:
