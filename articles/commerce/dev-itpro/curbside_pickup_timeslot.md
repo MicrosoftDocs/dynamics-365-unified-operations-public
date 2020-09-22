@@ -94,7 +94,7 @@ Timeslot must be defined in Headquarters for the respective pickup mode of deliv
 
     ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
 
-5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the Timeslot details are available to the POS.
+5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to sync the data to the channels.
 
 ## Timeslot selection on POS orders 
 In POS, when an order / order line is identified for 'Pickup',  Cashier can select the 'Pickup' store/location and choose a date and timeslot.
