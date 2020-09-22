@@ -223,10 +223,11 @@ The following is a list of APIs exposed to perform cart-related functionality.
 
 The following is a list of APIs exposed to perform payment-related functionality.
 
-| POS API                                   |
-|-------------------------------------------|
-| GetGiftCardByIdServiceRequest             |
-| GetPaymentCardTypeByBinRangeClientRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| GetGiftCardByIdServiceRequest             |                                        |                          |
+| GetPaymentCardTypeByBinRangeClientRequest |                                        |                          |
+| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or send the message to signature capture device based on the configuration | 10.0.15 |
 
 ### Peripherals
 
