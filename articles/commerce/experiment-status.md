@@ -32,18 +32,19 @@ ms.dyn365.ops.version: AX 10.0.13
 # Review the status of an experiment
 There are many steps involved in setting up and running an experiment in Dynamics 365 Commerce. For information on the experimentation lifecycle, see [Experimentation in Dynamics 365 Commerce](experimentation-overview.md).
 
-To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service.
-The **Experiments** tab in site builder shows the following statuses in the **Commerce status** field to help you quickly see what state your experiment is in:
-1. Draft - The experiment is connected to a page or fragment in Commerce and is being edited.
-1. Published - The experiment is ready to go live, once it is started in the third-party service.
-1. Unpublished - An experiment that is live isn't visible to users anymore, even if it is running in the third-party service.
-1. Completed - The experiment has run its course and the right variation has been promoted to be shown to all users.
+To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service that is being used to enable the creation of experiments and variation assignments.
 
-Similarly you can also use the **third-party status** field to understand the state of your experiment in the third-party service:
-1. Draft - The experiment is setup in the third-party service but hasn't started yet.
-1. Running - The experiment has started and is collecting data.
-1. Paused - The experiment is paused and not collecting data. You will need to resume it so it starts collecting data again.
-1. Archived - The experiment has run its course and has been cataloged for future reference.
+In the **Commerce status** column, the following values may be displayed. 
+1. Draft - The experiment is connected to a page or fragment in Commerce and is being edited.
+1. Published - The experiment is ready to go live in Commerce and hasn't been started in the third-party service.
+1. Unpublished - The experiment is live but isn't visible to users, even if it's running in the third-party service.
+1. Completed - The experiment has run its course and a variation was promoted to live for all website users.
+
+Similarly, in the **third-party status** column, the following values may be displayed to indicate what status the experiments are in the third-party service.
+1. Draft - The experiment is set up in the third-party service but hasn't been started.
+1. Running - The experiment was started in the third-party service and is collecting data.
+1. Paused - The experiment is paused and not collecting data. You must resume the experiment so it starts collecting data again.
+1. Archived - The experiment has run its course and has been cataloged in the third-party service for future reference.
 
 Below is an image that shows both sets of statuses and how they relate to each other:
 
