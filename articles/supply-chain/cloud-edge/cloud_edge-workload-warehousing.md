@@ -148,12 +148,12 @@ Additional limitations of unsupported processing at edge scale units are:
 |Purchase order Release to warehouse (Warehouse order processing)|Yes  |No         |
 |Purchase order item receiving and put away   |<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|<p>Yes:</p>With Warehouse order<p>No:</p>Without warehouse order|
 |Purchase order line receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
-|Return order receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
+|Return order receiving and put away          |Yes              |No                 |
 |Mixed license plate receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 |Load item receiving|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 |License plate receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
-|Transfer order item receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
-|Transfer order line receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
+|Transfer order item receiving and put away   |Yes               |No                |
+|Transfer order line receiving and put away   |Yes               |No                |
 |Work cancellation|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 |Purchase order product receipt processing    |Yes              |No                 |
 |Cross docking work creation as part of receiving|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
