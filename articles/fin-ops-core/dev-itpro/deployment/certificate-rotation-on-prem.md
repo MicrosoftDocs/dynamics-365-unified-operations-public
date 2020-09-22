@@ -371,7 +371,7 @@ ELSE
   INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-Once the commands above have been executed restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. Once the batch job has been created, the schedule can modified from the UI.
+After the commands above have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. Once the batch job has been created, the schedule can be modified from the UI.
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
