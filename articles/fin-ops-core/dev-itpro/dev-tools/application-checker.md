@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 The application checker tool is a set of technologies that allow you to gain insight into your application code (both source and metadata) in ways that have not been possible before. The technology is based on representing both source code and metadata in XML and providing rich search facilities by using the XQuery language to express declarative queries over the source code. The current implementation runs inside a BaseX repository running locally on the developer's box. 
 
 For information on installing and using the application checker, see [Dynamics365FO-AppChecker](https://github.com/microsoft/Dynamics365FO-AppChecker).
