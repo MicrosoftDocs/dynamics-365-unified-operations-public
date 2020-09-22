@@ -80,11 +80,11 @@ internal final class VendInvoicePostProcessScheduleSeriesRegistration implements
 
 | Method | Description |
 |---|---|
-| `public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | This value is the name of the type. |
-| `public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` | This value is the name of the series. Be descriptive, so that the purpose of the series is clear from the name. |
-| `public Description parmDescription(Description _description = description)` | This value is a description of the series. |
-| `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | This value is the user ID of the owner of the series. |
-| `public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | This value is the list of patterns for the series. Currently, only one pattern per series is supported. However, this limitation might change in the future. Insert an instance of the **ProcessScheduleSeriesPatternItem** class into the list. |
+| `public ProcessScheduleTypeName parmTypeName(ProcessScheduleTypeName _typeName = typeName)` | The name of the type. |
+| `public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _SeriesName = seriesName)` | The name of the series. Be descriptive, so that the purpose of the series is clear from the name. |
+| `public Description parmDescription(Description _description = description)` | The description of the series. |
+| `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | The user ID of the owner of the series. |
+| `public List parmProcessScheduleSeriesPatternList(List _seriesPatternList = seriesPatternList)` | The list of patterns for the series. Currently, only one pattern per series is supported. However, this limitation might change in the future. Insert an instance of the **ProcessScheduleSeriesPatternItem** class into the list. |
 
 ## ProcessScheduleSeriesPatternItem class
 
