@@ -64,8 +64,8 @@ The August 2020 release of the dual-write orchestration package contains the fea
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix | Fixes issues where records would be skipped in certain cases during project execution. | General availability |
 | Manage multiple entity maps | As part of day-to-day operations, you might need to bulk handle entity maps. For example, you might want to simultaneously enable or pause a set of entity maps. Instead of doing this one-by-one, which is cumbersome and time consuming, you can now enable, pause, resume, or stop more than one entity map at the same time in the dual-write list page. | General availability |
+| Bug fix | Fixes issues where records would be skipped in certain cases during project execution. | General availability |
 
 ## June 2020 release
 
