@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 10.0.15 update
 
 ---
 
-# Create and update timeslots for 'Pickup' delivery mode(s)
+# Create and update timeslots for Pickup' delivery mode(s)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0
 Below is an example of time slot selection during ecommerce checkout
 ![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
 
-## Time slots for your retail channel
+## Time slots 
 
 Timeslot is a specific interval of time, where the customer can choose to pickup their order from a specific store/location. This time slot management is only available available to the 'Pickup' mode of delivery in Dynamics 365 Commerce.
 
@@ -71,7 +71,7 @@ Only a single Timeslot template can be configured per channel. These channels in
 If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. 
 
 
-## Configure 'Timeslot' in Headquarters
+## Configuring Timeslot in Headquarters
 
 Timeslot must be defined in Headquarters for the respective pickup mode of delivery for POS and e-commerce channels to leverage it.
 
@@ -99,6 +99,7 @@ Timeslot must be defined in Headquarters for the respective pickup mode of deliv
 ## Timeslot selection on POS orders 
 In POS, when an order / order line is identified for 'Pickup',  Cashier can select the 'Pickup' store/location and choose a date and timeslot.
 
+Below is an example of time slot selection in a POS order
 ![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png "POS Timeslot Pickup")
 
 ## Timeslot selection on eCommerce orders 
@@ -107,6 +108,10 @@ To enable timeslot selection on an e-commerce order, see Pickup information modu
 [!NOTE]
 >An e-commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
 
-Example of e-commerce order with timeslot information during pickup.
+Below is an example of e-commerce order with timeslot information during pickup.
 ![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
+
+## Additional resources
+[Checkout pickup information](checkout-pickupinfo.md)
+
 
