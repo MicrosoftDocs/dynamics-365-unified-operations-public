@@ -5,7 +5,7 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -174,9 +174,10 @@ After these services have been stopped, rename the AxDB database **AxDB\_orig**,
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
-### Post steps for Commerce environments
-If you are using commerce channels, when importing a database to a Developer environment, which was originally exported from a self-service sandbox, the following additional steps need to be performed on the destination Developer environment. Without doing these steps, commerce channels will not function: 
-1.	To restore commerce channels functionality, apply the latest Microsoft Service Update or Quality Update, which will create the channel database.
+### Post-steps for Commerce environments
+If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
+
+1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
 2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail deployable package.
 
 ### Reprovision the target environment
