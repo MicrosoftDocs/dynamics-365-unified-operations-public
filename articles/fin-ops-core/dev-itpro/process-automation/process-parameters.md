@@ -30,40 +30,42 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process parameters
 
-Most processes have custom parameters they need to store that are specific to their processes. For example, perhaps a process needs a date range or a customer number. you must create your own UI and custom tables to display and store these parameters. If a type doesn’t have any parameters, then you can skip this task.
+[!include [banner](../includes/banner.md)]
 
-When a series is created by the user in the UI, the series wizard hosts multiple form parts with each form part containing a related set of parameters. The form parts for the process contain the UI the user uses to enter the parameters. These form parts are built by the developer of the process and provided by type registration. The form part will implement interfaces which allow you to initialize, validate, and write the custom parameters.
+In most cases, a process must store custom parameters that are specific to its processes. For example, a process might require a date range or a customer number. You must create your own user interface (UI) and custom tables to show and store these parameters. If a type doesn't have any parameters, you can skip this task.
 
-The custom parameter tables typically have 2 types of records.
+When a user creates a series in the UI, the series wizard hosts multiple form parts, each of which contains a related set of parameters. The form parts for the process contain the UI that the user uses to enter the parameters. These form parts are built by the developer of the process and provided through type registration. A form part implements interfaces that let you initialize, validate, and write the custom parameters.
+
+The custom parameter tables typically have two types of records:
 
 - A template record that is bound to the series that serves as a template for all occurrences.
-- A record that is specific to an occurrence and contains the parameters to use when running that specific occurrence. Users can override the parameters for each occurrence as needed.
+- A record that is specific to an occurrence and contains the parameters that will be used when that occurrence runs. Users can override the parameters for each occurrence as they require.
 
-Parameter tables typically have a foreign key (**RecId**) to the **ProcessScheduleSeries** table and a foreign key (**RecId**) to the **ProcessScheduleOccurrence** table. The template record will have a series foreign key without a foreign key to the occurrence. All other records will have both.
+Parameter tables typically have one foreign key (**RecId**) to the **ProcessScheduleSeries** table and another foreign key (**RecId**) to the **ProcessScheduleOccurrence** table. The template record has a series foreign key, but it doesn't have a foreign key to the occurrence. All other records have both foreign keys.
 
 The following interfaces are used to maintain these parameters.
 
 ## ProcessScheduleParametersIInitialize interface
 
-This interface allows you to initialize any parameters when the user is interacting with the process automation framework UI. The form part built for the wizard which displays process-specific parameters implements this interface.
+The **ProcessScheduleParametersIInitialize** interface lets you initialize parameters when the user interacts with the UI of the process automation framework. The form part that is built for the wizard that shows process-specific parameters implements this interface.
 
 ## ProcessScheduleParametersIValidate interface
 
-This interface allows you to validate the parameters the user enters on the form part.
+The **ProcessScheduleParametersIValidate** interface lets you validate the parameters that the user enters in the form part.
 
 ## ProcessScheduleParametersIWrite interface
 
-This interface allows you to write the parameters to their custom parameter tables.
+The **ProcessScheduleParametersIWrite** interface lets you write the parameters to their custom parameter tables.
 
 ## Example
 
-The following code example shows the above 3 interfaces used on a sample test process. This sample form part contains a single string called a message.
+In the following example, the three interfaces that were just described are used for a sample test process. In this example, the form part contains a single string that is known as a *message*.
 
 ```xpp
 [Form]
 public class ProcessScheduleSampleUptakeFirstFormPart
 extends ProcessScheduleParametersFormPart
-implements ProcessScheduleParametersIWrite, ProcessScheduleParametersIValidate,  ProcessScheduleParametersIInitialize
+implements ProcessScheduleParametersIWrite, ProcessScheduleParametersIValidate, ProcessScheduleParametersIInitialize
 {
 
     private ProcessScheduleSchedulingContract schedulingContract;
@@ -170,11 +172,11 @@ implements ProcessScheduleParametersIWrite, ProcessScheduleParametersIValidate, 
 
 ## ProcessScheduleIDeleteOccurrence interface
 
-Implement this interface to receive an event indicating a user or the system has deleted occurrence(s). We should delete the parameters related to that occurrence.
+Implement the **ProcessScheduleIDeleteOccurrence** interface to receive an event that indicates that a user or the system has deleted occurrences. The parameters that are related to that occurrence should be deleted.
 
-This interface is invoked via SysPlugIn for a specific type. Use the Type Name created when the type was registered.
+This interface is invoked via **SysPlugIn** for a specific type. Use the type name that was created when the type was registered.
 
-Note that a SQL Database Temp table is passed in so that we can do set based deletes.
+Note that a Microsoft Azure SQL Database temp table is passed in so that you can do set-based deletes.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -218,9 +220,9 @@ implements ProcessScheduleIDeleteOccurrence
 
 ## ProcessScheduleIDeleteSeries interface
 
-This interface is similar to** ProcessScheduleIDeleteOccurrence**. This event is invoked whenever a series is deleted. You should delete all parameter records for all occurrences including the series template record.
+The **ProcessScheduleIDeleteSeries** interface resembles **ProcessScheduleIDeleteOccurrence**. The event is invoked whenever a series is deleted. You should delete all parameter records for all occurrences. These records include the series template record.
 
-A SQL database temp table is passed in so that you can do set-based deletes.
+A SQL Database temp table is passed in so that you can do set-based deletes.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -256,13 +258,11 @@ implements ProcessScheduleIDeleteSeries
 
 ## ProcessScheduleIExplodeOccurrences interface
 
-[!include [banner](../includes/banner.md)]
+When a user creates a new series through the UI, all the future occurrences are generated. Therefore, if the series runs every day, the process automation framework creates an occurrence for every day. This action is known as *generating the series*. The **ProcessScheduleIExplodeOccurrences** event is fired when the series is generated. The series template record should be used as a template to create parameter records for each occurrence in the parameter tables.
 
-When a user creates a new series via the UI we generate all the future occurrences. This means that if the series is a series that runs every day then the framework creates an occurrence for every day. This action is called **generating the series**. When we generate the series this event fires. Parameter records for each occurrence should be created in the parameter tables using the series template record as a template.
+A SQL Database temp table is passed in so that you can do set-based creation of parameter records for optimal performance.
 
-A SQL database temp table is passed in so that you can do set creation of parameter records for optimal performance.
-
-The example below has a parameter table storing a single parameter named **Type** which isn't related to the process automation framework type but is instead specific to cash flow forecasting:
+In the following example, a parameter table stores a single parameter that is named **Type**. This parameter isn't related to the process automation framework type but is specific to cash flow forecasting.
 
 ```xpp
 using System.ComponentModel.Composition;
