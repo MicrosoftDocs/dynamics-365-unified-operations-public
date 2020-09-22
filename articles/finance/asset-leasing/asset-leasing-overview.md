@@ -265,8 +265,6 @@ The payment schedule for the right-of-use asset transactions are shown in the fo
 The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
 Create the journal, and then go to **Asset leasing journals**.
 
-[![General journals link](./media/overview-17.png)](./media/overview-17.png)
-
 The **Lease liability amortization schedule** also shows in the interest transactions.
 
 [![Interest transactions on the Lease liability amortization schedule](./media/overview-18.png)](./media/overview-18.png)
