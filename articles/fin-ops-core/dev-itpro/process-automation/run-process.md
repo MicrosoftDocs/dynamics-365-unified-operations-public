@@ -83,16 +83,16 @@ The **ProcessScheduleWorkItem** class has many pieces of information and is desi
 
 | Method | Description |
 |---|---|
-| `public ProcessExecutionId parmExecutionId(ProcessExecutionId _executionId = executionId)` | A polled process gets a new, unique execution ID every time that it's run. Because scheduled processes are only ever run one time for each occurrence, each occurrence only ever has one execution ID. The execution ID is used to log errors. |
+| `public ProcessExecutionId parmExecutionId(ProcessExecutionId _executionId = executionId)` | The execution ID is used to log errors. A polled process gets a new, unique execution ID every time that it's run. Because scheduled processes are only ever run one time for each occurrence, each occurrence only ever has one execution ID. |
 | `public RefRecId parmProcessScheduleOccurrenceRecId(RefRecId _scheduleOccurrenceRecId = scheduleOccurrenceRecId)` | The occurrence that is being run. Use this method to reference occurrence-specific parameter information in parameter tables. Polled processes don't have a **RecId** value for an occurrence. |
 | `public RefRecId parmProcessScheduleSeriesPatternRecId(RefRecId _scheduleSeriesPatternRecId = scheduleSeriesPatternRecId)` | The series pattern that the process is associated with. Currently, series can have only one pattern. All parameter records typically have a foreign key to this pattern. |
 | `public ProcessScheduleProcessType parmProcessScheduleType(ProcessScheduleProcessType _scheduleType = scheduleType)` | The schedule type of the process: polled or scheduled. |
 | `public ProcessScheduleTypeName parmProcessScheduleTypeName(ProcessScheduleTypeName _scheduleTypeName = scheduleTypeName)` | The type name that the process and series are associated with, such as **VendPaymentProposal**. This name is an internal developer name and isn't shown to the user. |
 | `public List parmLegalEntityList(List _legalEntityList = legalEntityList)` | The list of legal entities that the process will be run against. If the process is a global process, this list will be **null**. If the process is run against a single company, this list will contain a single company. Multiple companies aren't currently supported, but they might be supported in the future. |
-| `public Name getName()` | This method returns the occurrence name. If a type is polled, this method returns the series name. |
-| `public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _seriesName = seriesName)` | This method gets the name of the series. |
-| `public Name parmOccurrenceName(Name _occurrenceName = occurrenceName)` | This method gets the occurrence name. If the process is a polled process, the value will be empty. |
+| `public Name getName()` | Returns the occurrence name. If a type is polled, this method returns the series name. |
+| `public ProcessScheduleSeriesName parmSeriesName(ProcessScheduleSeriesName _seriesName = seriesName)` | The name of the series. |
+| `public Name parmOccurrenceName(Name _occurrenceName = occurrenceName)` | The occurrence name. If the process is a polled process, the value will be empty. |
 | `public List parmTaskList(List _taskList = taskList)` | The list of batch tasks that the process automation framework should add to the batch. If this list is **null**, it's assumed that no work must be done, and nothing will be created in a batch. |
 | `public ProcessScheduleDateTime parmScheduledDateTime(ProcessScheduleDateTime _scheduledDateTime = scheduledDateTime)` | The date and time when the process was scheduled to run. This date and time might differ from the actual date and time when the process runs. |
 | `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | The owner of the occurrence that is being run. |
-| `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | This method initializes an instance of **ProcessScheduleWorkItem** from another instance. |
+| `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | Initializes an instance of **ProcessScheduleWorkItem** from another instance. |
