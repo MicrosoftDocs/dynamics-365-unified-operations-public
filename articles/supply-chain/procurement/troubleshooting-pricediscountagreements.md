@@ -68,18 +68,9 @@ The resolution depends on the way that the miscellaneous charges have been set u
 
 Trade agreements that are applicable to sales or purchase order lines aren't applied on lines that are imported through data management. However, the same trade agreements are applied on sales or purchase order lines that are manually created.
 
-### Reproduce the issue
-
-The following procedure shows one way to reproduce the issue.
-
-1. Create a purchase order for a vendor that has a trade agreement that is set up for a line discount percentage.
-2. Import purchase order lines where the price is set (for example, through the *Purchase Order Lines V2* entity).
-3. Enable **Line discount percentage**.
-4. Notice that the line discount percentage isn't updated after these lines are imported.
-
 ### Reason for the issue
 
-If purchase order lines that are imported via data management already include price information, the trade agreement won't be reevaluated for those lines.
+If purchase order lines that are imported via data management already include price information, the trade agreement won't be reevaluated for those lines. For example, if **Line discount percentage** or any of the price and discount values is set for a line, then trade agreements will not be looked up for that line.
 
 ### Issue workaround
 
