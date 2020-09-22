@@ -198,13 +198,13 @@ During setup, you will complete these tasks:
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
 2. On the **Features** tab, select the **Enable** check box in the row for feature reference **BR00053**.
 
-### Import the ER data model, data model mapping, and formats that are required for NF-e fiscal documents
+### Import the ER data model mapping required for NF-e fiscal documents
 
 1. Sign in to Finance.
 2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Select **Repositories**.
 4. Select **Global resource \> Open**.
-5. Import **Fiscal documents**, **Fiscal documents mapping**, **NF-e submit export format (BR), NF-e submit import format (BR)**, **NF-e status request export format (BR)**, **NF-e cancel export format (BR)**, **NF-e discard export format (BR)**, and **NF-e correction letter export format (BR)**.
+5. Import **Fiscal documents mapping** configurations.
 
 ### Import ER configurations and set up the response types for fiscal documents
 
