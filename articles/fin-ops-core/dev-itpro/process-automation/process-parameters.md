@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In most cases, a process must store custom parameters that are specific to its processes. For example, a process might require a date range or a customer number. You must create your own user interface (UI) and custom tables to show and store these parameters. If a type doesn't have any parameters, you can skip this task.
 
-When a user creates a series in the UI, the series wizard hosts multiple form parts, each of which contains a related set of parameters. The form parts for the process contain the UI that the user uses to enter the parameters. These form parts are built by the developer of the process and provided through type registration. A form part implements interfaces that let you initialize, validate, and write the custom parameters.
+When a user creates a series in the UI, the **Create series** wizard hosts multiple form parts, each of which contains a related set of parameters. The form parts for the process contain the UI that the user uses to enter the parameters. These form parts are built by the developer of the process and provided through type registration. A form part implements interfaces that let you initialize, validate, and write the custom parameters.
 
 The custom parameter tables typically have two types of records:
 
