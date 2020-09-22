@@ -34,9 +34,11 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
+Finance Insights provides configurable and extensible models to help you accurately and intelligently predict your company’s cash flow, predict when you'll receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent, machine learning models. These new capabilities, paired with automation in vendor payments and collections, provide a rich and intelligent financial system to drive decision making and help you take actions that respond effectively to current and anticipated business challenges.
+
 Finance Insights preview is available to for trial deployments in the United Stated of America, Europe and United Kingdom. We are incrementally adding support in additional regions.
 
-Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment may not be migrated to a production environment. Please read Supplemental Terms of Use for Microsoft Dynamics 365 Previews for more details.
+Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment can't be migrated to a production environment. See [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/en-us/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) for more information.
 
 ## Prerequisites
 
@@ -57,25 +59,18 @@ At least one year of customer invoices is needed to properly train the machine l
 Sample data is available for demo systems that have the Contoso demo data set on them. 
 
 ### Roles and permissions
-Changes will be made to Microsoft Dynamics 365 for Finance, Lifecycle Services, PowerApps, and Azure.  Proper permissions will be required across these three environments. For example:
+Changes will be made to Microsoft Dynamics 365 for Finance, Lifecycle Services, PowerApps, and Azure. Proper permissions will be required across these three environments. For example:
 
 - A new environment will be created in the Power Platform.
 - A storage account, key vault, and application will be created in Azure.
 - The AI Builder application will need to be authorized to access the data lake by the Active Directory tenant administrator.
 - Feature will be enabled in Dynamics 365.
 
-Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Services (LCS) will be  helpful for completing this process.
+Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Services (LCS) will be helpful for completing this process.
 
 ## Configuring Finance Insights 
 
 Some configuration steps must be completed to use Finance Insights. For more information about the procedures that configure Finance Insights see [Configuration for Finance Insights](configure-for-fin-insites.md).
-
-### Deploy the F&O environment
-Complete the following steps to deploy the Dynamics 365 Finance and Operations envrionment. 
-
-1. Create or update an F&O environment in LCS. The environment needs App Version 10.0.11/Platform Update 35 or later versions.
-2. The environment must be an HA environment in Sandbox (also known as a Tier-2 environment). Please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning) for more details.
-3. If using Contoso demo data, additional sample data is required to use payment predictions, cashflow forecasting, and budget forecasting.  Please follow the steps at <TBD> to add the sample data needed (content for payment predictor at [Financials R&D All](https://microsoft.sharepoint.com/:f:/t/FinancialsRDAll909/Essk-ZaYVvxPrKNIHmbJNS8BWKCMxcMsubO_NVxECcsLfg?e=iwOR9e)
 
 ### Configure CDS and Azure resouces
 Complete the steps described in [Configuration for Finance Insights](configure-for-fin-insites.md) to configure CDS and Azure resources.
@@ -96,12 +91,12 @@ Complete the steps described in [Enble Cash flow forecasts](enable-cash-flow-for
 ### Enable Budget proposals
 Complete the steps described in [Enable Budget proposals](enable-budget-proposal.md) to use a machine learning model along with your organization's historical data to generate a budget proposal that help you begin your budgeting process with effectiveness than a manual process provides. 
 
-### Setup and use cashflow forecasting
-Follow the steps described in <TBD> to setup and use cashflow forecasting. For more information, see [Set up Cash flow forecasting]() 
-(content at https://microsoft.sharepoint.com/:w:/t/FinancialsRDAll909/ER8QIZ77pnBArbigDMiJx0EBlAYLh8cfTIaBeUVOzKCHtg?e=8xMqK6).
+### Setup and use Cash flow forecasting
+To see the steps to set up and use cash flow forecasting, see [Enable Cash flow forecasting](enable-cash-flow-forecasting.md). To learn more about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
 
 ## Understand and improve initial payment predictor model
-See [Evaluate the initial customer payment prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/evaluate-payment-prediction?branch=bob-fi-evaluate-payment-prediction) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/improve-model?branch=bob-fi-improve-model) for information help you adjust the data that's used to build the predcition so improve its effectiveness.
+
+See [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](improve-model.md) for information help you adjust the data that's used to build the predcition so improve its effectiveness.
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
