@@ -233,6 +233,7 @@ Switch to **General** FastTab; the **Initial right-of-use asset** and **lease li
 [![Lease status highlighted](./media/overview-07.png)](./media/overview-07.png)
 
 Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
+[![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
 
 [![XXX](./media/overview-08.png)](./media/overview-08.png)
 
