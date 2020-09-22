@@ -41,9 +41,9 @@ You should use only the public APIs to implement process automation, and you sho
 - Don't subscribe to table events such as insert, update, and delete. Finance and Operations apps skip most of those events.
 - If functionality that you require is missing, submit feature requests.
 
-Microsoft plans to add features in the future. If you integrate too deeply with the process automation framework, your integration might break.
+Microsoft plans to add features in the future. If you integrate too deeply with the process automation framework, your integration might break when those features are added.
 
-Some of the examples for the process automation framework aren't representative of shipping quality code. As always, the expectation is that processes that are built by using the framework will follow all best practices and quality standards.
+Some of the examples for the process automation framework aren't representative of release-quality code. As always, the expectation is that processes that are built by using the framework will follow all best practices and quality standards.
 
 For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
@@ -62,7 +62,7 @@ For more information about process automation, see [Process automation](../sysad
 
 Implementation of a process automation solution consists of a set of tasks, some of which are required and some of which are optional.
 
-Most of the UI customizations aren't supported for background processes. The series list page and logging of results and messages are supported.
+Most of the UI customizations aren't supported for background processes. The **Series** list page and logging of results and messages are supported.
 
 | Task                                                | Required for a scheduled process | Required for a background process |
 |-----------------------------------------------------|----------------------------------|-----------------------------------|
