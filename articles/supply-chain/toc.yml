@@ -2821,18 +2821,20 @@
           items:
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
+          - name: Scan bar codes using a camera in the warehouse app
+            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Configure field names in warehouse app
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
-          - name: Scan bar codes using a camera in the warehouse app
-            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: License plate receiving with the warehouse app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
             href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+          - name: Set up a mobile device menu item to provide a pick line overview
+            href: warehousing/pick-line-overview.md
           - name: Create a mobile device menu item for license plate consolidation
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
