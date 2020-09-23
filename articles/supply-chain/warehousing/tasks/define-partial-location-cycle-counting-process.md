@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

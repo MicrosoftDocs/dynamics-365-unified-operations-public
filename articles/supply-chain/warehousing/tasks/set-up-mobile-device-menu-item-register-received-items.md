@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSRFMenuItem, WHSRFMenu   
+ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

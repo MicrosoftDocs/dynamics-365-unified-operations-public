@@ -13,7 +13,7 @@ ms.service: dynamics-ax-applications
 
 # optional metadata
 
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException
 # ROBOTS:
 audience: Application User
 # ms.devlang:

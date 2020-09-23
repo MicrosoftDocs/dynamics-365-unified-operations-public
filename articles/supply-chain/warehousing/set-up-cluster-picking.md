@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

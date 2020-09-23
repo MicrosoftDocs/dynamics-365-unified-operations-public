@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSWorkException, WHSWorker   
+ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException    
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
