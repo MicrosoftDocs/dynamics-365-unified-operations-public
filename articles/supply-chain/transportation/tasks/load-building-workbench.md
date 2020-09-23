@@ -1,4 +1,32 @@
-﻿## Load building workbench
+--- 
+# required metadata 
+ 
+title: Load building workbench
+description: This procedure shows how to work with the Load building workbench. 
+author: kamaybac
+manager:  
+ms.date: 10/16/2020
+ms.topic: business-process 
+ms.prod:  
+ms.service: dynamics-ax-applications 
+ms.technology:  
+ 
+# optional metadata 
+ 
+ms.search.form: TMSLoadBuildWorkbench   
+audience: Application User 
+# ms.devlang:  
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations 
+# ms.tgt_pltfrm:  
+# ms.custom:  
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: 
+ms.search.validFrom: 2020-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
+---
+## Load building workbench
 
 The load building workbench allows you to apply load building strategies when creating loads.
 
