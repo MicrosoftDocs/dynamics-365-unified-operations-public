@@ -33,8 +33,9 @@ ms.dyn365.ops.version: Platform update 37
 # Priority-based throttling FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](priority-based-batch-scheduling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
 ## How do I access the Data management Yammer group?
 
