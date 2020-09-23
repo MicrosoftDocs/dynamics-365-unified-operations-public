@@ -94,9 +94,9 @@ When the pattern is configured, applicable fields are determined based on the un
 |---|---|
 | `public ProcessScheduleUnit parmUnit(ProcessScheduleUnit _unit = unit)` | The unit of time that the series runs in. The unit can be minutes or hours. |
 | `public ProcessScheduleInterval parmPollingInterval(ProcessScheduleInterval _pollingInterval = pollingInterval)` | For polled processes, this value is an integer that, together with the unit, defines how often the process runs. |
-| `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` | The start date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
-| `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | The end date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
-| `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | The time when the series should run. The date should be set to the [empty date](../dev-ref/xpp-variables-data-types#null-values-for-data-types). |
+| `public ProcessScheduleDateTime parmStartDate(ProcessScheduleDateTime _startDate = startDate)` | The start date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types.md#null-values-for-data-types). |
+| `public ProcessScheduleDateTime parmEndDate(ProcessScheduleDateTime _endDate = endDate)` | The end date of the series. The time should be set to the [empty time](../dev-ref/xpp-variables-data-types.md#null-values-for-data-types). |
+| `public ProcessScheduleDateTime parmTime(ProcessScheduleDateTime _time = time)` | The time when the series should run. The date should be set to the [empty date](../dev-ref/xpp-variables-data-types.md#null-values-for-data-types). |
 
 ### Methods that are applicable to the week unit
 
