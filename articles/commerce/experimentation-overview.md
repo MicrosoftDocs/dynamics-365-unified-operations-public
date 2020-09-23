@@ -54,12 +54,12 @@ Setting up an experiment, creating variations, and running an experiment is an i
 [ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 To learn more about each step in the experimentation process, refer to the following topics.
-1. [Identify the goals for your experiment](experimentation-identify.md)
-1. [Set up your experiment](experimentation-setup.md)
-1. [Connect and edit your experiment](experimentation-connect-edit.md)
-1. [Preview and publish your experiment](experimentation-preview-publish.md)
-1. [Run and monitor your experiment](experimentation-run-monitor.md)
-1. [Review and complete your experiment](experimentation-review-complete.md)
+1. [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md)
+1. [Set up an experiment](experimentation-setup.md)
+1. [Connect and edit an experiment](experimentation-connect-edit.md)
+1. [Preview and publish an experiment](experimentation-preview-publish.md)
+1. [Run and monitor an experiment](experimentation-run-monitor.md)
+1. [Review and complete an experiment](experimentation-review-complete.md)
 
 > [!NOTE]
 > To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is displayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experiment-status.md) topic.
