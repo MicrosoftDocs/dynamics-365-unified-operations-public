@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Experimentation in Dynamics 365 Commerce
-description: Enable the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support will be enabled for e-commerce pages, as well as entities within a page.
+title: Preview and publish an experiment
+description: This topic describes how to preview and publish an experiment from Dynamics 365 Commerce.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,18 +29,29 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Preview and publish your experiment
+# Preview and publish an experiment
+
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to preview and publish your experiment in Commerce.
 
 [ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
-Once you edit the variations in Commerce, follow the steps below to preview and publish them:
-1. Click on **Preview** in the top bar to review the variation you are currently working on and ensure everything looks good. If you want to preview a different variation, select it from the variation drop down and click preview again.
-1. Click on **Publish** in the top bar to publish all variations that belong to the experiment.
-    > [!NOTE]
-    > If the page has an unpublished URL, make sure to publish the URL first or it will not be visible to end-users. See more details on how to save, preview and publish a page [here](https://docs.microsoft.com/en-us/dynamics365/commerce/save-preview-publish-page).
+After you edit your variations, you'll preview your variations and then publish the experiment.
+
+## Preview variations
+You can preview your variations and continue editing them until they look the way you want them to.
+
+1. In editor view in site builder, use the variations drop-down menu below the command bar to select the content you want to preview. 
+1. Select **Preview** in the top bar. A preview of what the content will look like when it's published is displayed.
+1. To preview a different variation, select it from the variation drop-down and select **Preview** again.
+
+## Publish your experiment
+If you aren't using a publish group to schedule when your experiment goes live and you want to publish immediately, select **Publish** in the top bar. All variations that belong to the experiment will be published.
     
-## Publish experiments with publish groups
-Experiment variations created within site builder can also be scheduled for publishing with a publish group. Click [here](https://docs.microsoft.com/en-us/dynamics365/commerce/publish-groups) to learn more about publish groups.
+    > [!IMPORTANT]
+    > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For more details, refer to the [Save, preview, and publish a page](save-preview-publish-page) topic.
+    
+### Publish experiments with publish groups
+Variations created in site builder can be scheduled for publishing with a publish group. For more information on publish groups, refer to the [Work with publish groups](publish-groups.md) topic.
 
 Some things to keep in mind:
 - When adding a page or fragment to a publish group, any experiments running on it will be removed.
