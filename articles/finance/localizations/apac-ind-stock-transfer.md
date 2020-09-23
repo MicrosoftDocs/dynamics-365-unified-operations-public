@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-You can use transfer orders to process inventory transfers between warehouses. In India, if the shipping and receiving branches of the organization have different tax registration numbers, the India Goods and Services Tax (GST) should be calculated and posted for the transfer order. The tax base may be defined as the current cost price of the item being transferred or a special transfer price. The tax amount should be posted as GST payable for the transfer shipment, and as GST recoverable upon the transfer receipt. An **Interim transit** account is used as an offset account for the posting and is nullified when the transfer order is fully received. 
+You can use transfer orders to process inventory transfers between warehouses. In India, if the shipping and receiving branches of the organization have different tax registration numbers, the India Goods and Services Tax (GST) should be calculated and posted for the transfer order. The tax base may be defined as the current cost price of the item being transferred or a special transfer price. The tax amount should be posted as GST payable for the transfer shipment and as GST recoverable upon the transfer receipt. An **Interim transit** account is used as an offset account for the posting and is nullified when the transfer order is fully received. 
 
 The **Stock transfer** functionality that is available for India supports this process.
 
@@ -56,6 +56,17 @@ You can define a default transfer order type and a default price type for transf
 - **Cost price** – The cost price, or the on-hand price, of the item will be used for stock transfer orders.
 - **Transfer price** – The transfer price that is set up for the item will be used for stock transfer orders.
 
+### Configure Master planning parameters
+
+You can define a default transfer order type and a default price type for transfer orders that are created when confirming planned orders in the **Master planning** module. On the **Master planning parameters** page, on the **Standard update** tab, select **Transfer type** and **Price type** in the **Firm - Transfer** group.
+
+> [!NOTE]
+> These parameters are only available if th "(Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning" feature is enabled in the **Feature management** workspace.
+
+### Set up item master parameters
+
+To calculate GST for an item in a stock transfer order, you need to configure certain parameters on the **Released product details** page, such as **HSN codes** and **Tax rate types**. See [Assign HSN codes and SACs to products](apac-ind-gst-hsn-service-accounting-codes.md#assign-hsn-codes-and-sacs-to-products) for more details.
+
 ### Configure transfer pricing
 
 You can configure the prices that will be used when processing stock transfers for an item. To do this, on the **Released product details** page open the **Transfer price** page.
@@ -63,10 +74,6 @@ You can configure the prices that will be used when processing stock transfers f
 ### Configure stock transfer posting
 
 You can configure the posting accounts for stock transfers in the **Inventory management** module on the **Transfer order** tab on the **Posting** page. 
-
-### Configure Master planning parameters
-
-You can define a default transfer order type and a default price type for transfer orders that are created when confirming planned orders in the **Master planning** module. On the **Master planning parameters** page, on the **Standard update** tab, select **Transfer type** and **Price type** in the **Firm - Transfer** group.
 
 ## Create and post a stock transfer order
 
