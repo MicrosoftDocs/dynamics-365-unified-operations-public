@@ -82,11 +82,11 @@ You may get CORS (cross origin) errors when calling Retail Server APIs from your
 ...
 ```
 
-### Mixed Content errors
-When the Retail server is configured with HTTP instead of HTTPS you may see "Mixed Content" errors when rendering e-Commerce content.  Ensure the Retail server is configured with an HTTPS end point.
+### Mixed content errors
+When the Retail Server is configured with HTTP instead of HTTPS, you may receive "Mixed Content" errors when rendering e-Commerce content. Ensure the Retail Server is configured with an HTTPS end point to avoid this type of error.
 
 ### Retail calls are failing 404 error
-404 errors may result due to the channel ID and OUN being incorrect, please ensure they are correct in the **.env** file.  See the [Configure a development environment (.env) file](configure-env-file.md) for details on how to set this.
+404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) topic for details.
 
 
 ## Additional resources
