@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.15
 
 # Warehouse management workload for cloud and edge scale units - public preview
 > [!WARNING]
-> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units.  
+> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units. Make sure only using the below mentioned supported processes.  
 
 ## Warehouse execution for edge scale units
 This feature allows edge scale units to run selected processes from your warehouse management workload. Cloud scale units run their workloads in the cloud using dedicated processing capacity in your selected Azure region. With edge scale units, you can run certain workloads independently on premises, even while temporarily disconnected from the cloud.
@@ -76,8 +76,8 @@ The **Warehouse app** receiving process will get recorded at the edge scale unit
 Without the **Release to warehouse** process - and thereby not having **Warehouse orders** - the cloud scale unit can process the warehouse receiving and work processing. 
 ![Inbound process flow](./media/WES_Inbound_flow.png)
  
-## Supported processes and Roles
-Not all the warehouse management processes can be supported for a WES deployment and therefore it is recommended to use dedicated **Roles** as part of the warehouse management processes to avoid user confusions.
+## Supported processes and roles
+Not all the warehouse management processes can be supported for a WES deployment and therefore it is recommended to use dedicated roles as part of the warehouse management processes to avoid user confusions.
 To ease this process a sample role Warehouse Manager on workload can be found as part of the demo data in **System administration \> Security \> Security configuration**.
 This role is intended for warehouse managers when accessing the WES at the edge scale unit where the role grants user access to the forms of relevance within the context of the workload hosted on the edge.
 The assignment of roles to users is part of the initial full data synchronization from the Cloud scale unit to the Edge scale unit. 
@@ -102,13 +102,13 @@ The current supported work order types for WES scale unit deployments are:
 
 All other source documents processing is currently not supported. This means that it will not be possible to e.g. release a transfer order to an edge scale unit warehouse and process the outbound warehouse picking and shipping operations on edge scale unit deployments, nor will it be possible to run the process on the deployed cloud scale unit deployments.
 
-Additional limitations of unsupported processing at edge scale units are:
-- Inbound and outbound processing for items having any active tracking dimensions such as batch or serial number dimensions.
-- Inventory status change processes and processing with a blocking inventory status value.
-- Integration to quality management.
-- Integration to production.
-- Catch weight item processing.
-- Over- under delivery processes are not supported.
+Additional limitation details within the supported processes at edge scale units are:
+- Inbound and outbound processing for items having any active tracking dimensions such as batch or serial number dimensions is not supported
+- Inventory status change processes and processing with a blocking inventory status value is not supported
+- Integration to quality management is not supported
+- Integration to production is not supported
+- Catch weight item processing is not supported
+- Over- under delivery processing is not supported
  
 ### Outbound (Only support for sales orders and demand replenishment)
 >[!Warning]
@@ -171,14 +171,14 @@ Additional limitations of unsupported processing at edge scale units are:
 |**Min/max replenishment processing**         |**No**          |**No**           |
 |**Slotting replenishment processing**        |**No**          |**No**           |
 |Cycle counting and Counting discrepancy processing|Yes        |No               |
-|Reprint label                                |Yes             |No               |
+|Reprint label (License plate printing)       |Yes             |No               |
 |License plate build                          |Yes             |No               |
 |License plate break                          |Yes             |No               |
 |Change warehouse                             |Yes             |Yes              |
 |Driver check in                              |Yes             |No               |
 |Driver check out                             |Yes             |No               |
 |Change batch disposition code                |Yes             |No               |
-|Display open work list                       |Yes             |Yes              |
+|Display open work list                       |Yes             |No               |
 |Consolidate license plates                   |Yes             |No               |
 |Remove container from group                  |Yes             |No               |
 |Cancel work                                  |Yes             |No               |
