@@ -162,19 +162,17 @@ Additional limitation details within the supported processes at edge scale units
 ### Warehouse operations and exception handing
 |Process                                      |Cloud scale unit|Edge scale unit  |
 |---------------------------------------------|----------------|-----------------|
-|Movement                                     |No              |Yes              |
-|Movement by template                         |No              |Yes              |
 |License plate inquire                        |Yes             |Yes              |
 |Item inquire                                 |Yes             |Yes              |
 |Location inquire                             |Yes             |Yes              |
+|Change warehouse                             |Yes             |Yes              |
+|Movement                                     |No              |Yes              |
+|Movement by template                         |No              |Yes              |
 |Adjustment (In/out)                          |Yes             |No               |
-|**Min/max replenishment processing**         |**No**          |**No**           |
-|**Slotting replenishment processing**        |**No**          |**No**           |
 |Cycle counting and Counting discrepancy processing|Yes        |No               |
 |Reprint label (License plate printing)       |Yes             |No               |
 |License plate build                          |Yes             |No               |
 |License plate break                          |Yes             |No               |
-|Change warehouse                             |Yes             |Yes              |
 |Driver check in                              |Yes             |No               |
 |Driver check out                             |Yes             |No               |
 |Change batch disposition code                |Yes             |No               |
@@ -182,6 +180,8 @@ Additional limitation details within the supported processes at edge scale units
 |Consolidate license plates                   |Yes             |No               |
 |Remove container from group                  |Yes             |No               |
 |Cancel work                                  |Yes             |No               |
+|**Min/max replenishment processing**         |**No**          |**No**           |
+|**Slotting replenishment processing**        |**No**          |**No**           |
 
 ### Production
 Warehouse management integration for production scenarios is currently not supported.
