@@ -122,7 +122,7 @@ Additional limitation details within the supported processes at edge scale units
 |**Shipment consolidation**                   |**No**          |**No**             |
 |**Cross docking (picking work)**             |**No**          |**No**             |
 |Shipment wave processing                     |<p>(No)</p>But the finalization of the Wave status is handled in the cloud</p>       |<p>(Yes)</p>But without:<ul><li>Parallel work creation</li><li>Load building, Sorting</li> <li>Containerization</li><li>Wave label printing</li></li></ul><p>Note:</p>Cloud access is needed to finalize the Wave status as part of the wave processing</p>|
-|Warehouse work processing                    | No             |<p>(Yes)</p>But only for:<ul><li>Sales picking</li><li>Sales loading</li><li>Without the use of active tracking dimensions</li></ul>|
+|Warehouse work processing (incl. LP print)   | No             |<p>(Yes)</p>But only for:<ul><li>Sales picking</li><li>Sales loading</li><li>Without the use of active tracking dimensions</li></ul>|
 |**Cluster picking**                          |**No**          |**No**             |
 |**Packing processing**                       |**No**          |**No**             |
 |**Outbound sorting processing**              |**No**          |**No**             |
@@ -177,9 +177,9 @@ Additional limitation details within the supported processes at edge scale units
 |Driver check out                             |Yes             |No               |
 |Change batch disposition code                |Yes             |No               |
 |Display open work list                       |Yes             |No               |
-|Consolidate license plates                   |Yes             |No               |
-|Remove container from group                  |Yes             |No               |
-|Cancel work                                  |Yes             |No               |
+|**Consolidate license plates**               |**No**          |**No**           |
+|**Remove container from group**              |**No**          |**No**           |
+|**Cancel work**                              |**No**          |**No**           |
 |**Min/max replenishment processing**         |**No**          |**No**           |
 |**Slotting replenishment processing**        |**No**          |**No**           |
 
