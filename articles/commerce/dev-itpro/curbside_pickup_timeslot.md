@@ -40,7 +40,7 @@ The time-slot feature provides a way for retailers to define a time slot for ite
 This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
 Below is an example of time slot selection during ecommerce checkout
-![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
+![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG "eCommerce Timeslot Pickup")
 
 ## Time slots 
 
@@ -64,7 +64,7 @@ A timeslot can be defined using the following properties
 
 **Retail channel**: Each timeslot can be associated to one or more retail stores.  Depending on each stores operational hours, one or more timeslot entries can be created and associated to a channel. 
 
-![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
+![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG "HQ Timeslot overview")
 
 Only a single Timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
@@ -85,14 +85,14 @@ Timeslot must be defined in Headquarters for the respective pickup mode of deliv
     > [!NOTE]
     > You can create multiple templates, but only one template can be associated with a single channel/store. 
 
-    ![Add Time Settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.png "Add Time Settings dialog box")
+    ![Add Time Settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG "Add Time Settings dialog box")
 
 4. Associate the 'Timeslot' template with the stores/channels where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
 
     - Only one 'Timeslot' template can be associated with each store/channel.
     - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the POS for reference.
 
-    ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.png "HQ Timeslot overview")
+    ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG "HQ Timeslot overview")
 
 5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to sync the data to the channels.
 
@@ -109,7 +109,7 @@ To enable timeslot selection on an e-commerce order, see Pickup information modu
 >An e-commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
 
 Below is an example of e-commerce order with timeslot information during pickup.
-![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.png "eCommerce Timeslot Pickup")
+![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG "eCommerce Timeslot Pickup")
 
 ## Additional resources
 [Checkout pickup information](checkout-pickupinfo.md)
