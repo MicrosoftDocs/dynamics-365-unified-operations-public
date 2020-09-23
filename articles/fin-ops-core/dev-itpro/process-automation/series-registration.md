@@ -128,9 +128,9 @@ System admins can modify the polling interval and unit in the process automation
 | `public static ProcessScheduleSeriesPollingDetails getPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName)` | Gets the polling interval, the unit, and the next scheduled date/time for a polled process. |
 | `public static void setPollingDetailsForSeries(ProcessScheduleTypeName _typeName, ProcessScheduleSeriesName _seriesName, ProcessScheduleSeriesPollingDetails _pollingDetails)` | Enables changes to the polling interval, the unit, and the next scheduled date/time for a polled process. |
 
-## Validating the background dialog
+## Validating background process settings
 
-In version 10.0.13, the process automation framework lets system admins modify background process settings via the background dialog. Some background processes have restrictions on the frequency of their runs. Microsoft has introduced an interface that a background process can implement. When this interface is invoked, it enables the background process to ensure that the unit and polling interval are within their allowed range.
+In version 10.0.13, the process automation framework lets system admins modify background process settings via the **Edit background process** section. Some background processes have restrictions on the frequency of their runs. Microsoft has introduced an interface that a background process can implement. When this interface is invoked, it enables the background process to ensure that the unit and polling interval are within their allowed range.
 
 The following example prevents this process from ever being run every minute or every hour. The process can run a maximum of one time per day. However, a process can implement the rules in such a way that more frequent runs are required.
 
