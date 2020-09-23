@@ -70,6 +70,25 @@ Make sure to restart the Node.js server with a "yarn start" command so that the 
 
 If you have the **MSDyn365_HOST** variable value set to your e-Commerce site URL, you can also navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
 
+## Troubleshooting
+
+### CORS errors
+You may get CORS (cross origin) errors when calling Retail Server APIs from your browser, this may surface in the browser network trace as **(failed) net::ERR_FAILED**. To fix this you need to change the “AllowedOrigins” setting in the Retail service web.config to allow the call to go through as shown below.
+
+```
+...
+<add key="AllowedOrigins" value="*" />
+<!-- <add key="AllowedOrigins" value="https://usnconeboxax1pos.cloud.onebox.dynamics.com;https://usnconeboxax1ecom.cloud.onebox.dynamics.com" /> -->
+...
+```
+
+### Mixed Content errors
+When the Retail server is configured with HTTP instead of HTTPS you may see "Mixed Content" errors when rendering e-Commerce content.  Ensure the Retail server is configured with an HTTPS end point.
+
+### Retail calls are failing 404 error
+404 errors may result due to the channel ID and OUN being incorrect, please ensure they are correct in the **.env** file.  See the [Configure a development environment (.env) file](configure-env-file.md) for details on how to set this.
+
+
 ## Additional resources
 
 [Setup a development environment](setup-dev-environment.md)
