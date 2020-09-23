@@ -66,6 +66,7 @@ This topic provides links to topics about financials development.
 
 - Process automation framework
 
+    + [Process automation framework](../process-automation/process-automation-framework.md)
     + [Type registration](../process-automation/type-registration.md)
     + [Series registration](../process-automation/series-registration.md)
     + [Process parameters](../process-automation/process-parameters.md)
