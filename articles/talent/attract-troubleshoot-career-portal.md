@@ -38,7 +38,7 @@ Attract users can't apply for jobs from the career portal. When they try to appl
 
 ## Cause
 
-This problem occurs with the Talent Relationship Team doesn't have the Talent user role.
+This problem occurs when the Talent Relationship Team doesn't have the Talent user role.
 
 ## Resolution
 
@@ -72,4 +72,7 @@ Assign the Talent user role to the Talent Relationship Team.
 
    ![Apply role](./media/attract-troubleshoot-career-portal-apply-role.png)
 
-9. Test your changes by signing in to the career portal from a new browser window and applying for the job from the career portal. 
+9. Test your changes:
+
+   - Sign in to the career portal from a new browser window.
+   - Apply for the job from the career portal. 
