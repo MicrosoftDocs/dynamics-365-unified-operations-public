@@ -47,8 +47,8 @@ You can preview your variations and continue editing them until they look the wa
 ## Publish your experiment
 If you aren't using a publish group to schedule when your experiment goes live and you want to publish immediately, select **Publish** in the top bar. All variations that belong to the experiment will be published.
     
-    > [!IMPORTANT]
-    > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For more details, refer to the [Save, preview, and publish a page](save-preview-publish-page) topic.
+> [!IMPORTANT]
+> If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For more details, refer to the [Save, preview, and publish a page](save-preview-publish-page) topic.
     
 ### Use publish groups to schedule when your experiment goes live
 Variations created in site builder can be scheduled for publishing by using a publish group. For more information on publish groups, refer to the [Work with publish groups](publish-groups.md) topic.
