@@ -46,9 +46,9 @@ No.
 
 ## Is there a report that determines when throttling might occur?
 
-Yes. A report will be provided and can be accessed through the Raw logs within environment monitoring page in Microsoft Dynamics Lifecycle Services (LCS).
+Yes. A report will be provided and can be accessed through the **Raw logs** within environment monitoring page in Microsoft Dynamics Lifecycle Services (LCS).
 
-## Will throttling affect the Data Import/Export Framework (DIXF) and Batch?
+## Will throttling affect the Data Import/Export Framework (DIXF) and batch?
 
 No. Throttling is only for OData and custom service integrations.
 
@@ -88,11 +88,11 @@ When a request is throttled, the response header includes a time that will be us
 
 Yes, we recommend this approach. However, it isn't mandatory.
 
-## Does throttling depend on the tier that your environment is running on?
+## Does throttling depend on the tier that my environment is running on?
 
 In the initial release, no. Throttling will calculate its threshold based on the resources that are available for each environment.
 
-## Is there any specification on legal entity?
+## Is throttling functionality legal entity–specific?
 
 No.
 
