@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: TMSLoadBuildWorkbench   
+ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
