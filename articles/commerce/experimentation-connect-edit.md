@@ -62,7 +62,7 @@ To connect your experiment in Commerce, you'll launch the **Connect experiment**
 > A page can only be connected to one experiment at a time. To connect a page to a different experiment, delete the experiment the page is currently connected to.
 
 1. Choose the page or fragment you want to run your experiment on.
-1. Set the experimentation scope to **entire** or **partial**, based on the choice you made in the [Determine the scope of your experiment](#Determine-the-scope-of-your-experiment) section above.
+1. Set the experimentation scope to **entire** or **partial**, based on the choice you made in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
     > [!NOTE]
     > The **Experimentation on pages or fragments** feature flag must be enabled if you want to experiment on a full page or fragment. Refer to the [Experimentation in Dynamics 365 Commerce](experimentation-overview.md) topic for more information.
     
@@ -71,7 +71,7 @@ To connect your experiment in Commerce, you'll launch the **Connect experiment**
 ## Edit your variations
 When you exit the wizard, variations are created for you. The variations are simply copies of the original page or fragment that you previously chose to associate with the experiment. 
 
-Next, you'll edit the variations so they reflect the choices that you need to verify the experiment hypothesis. Choose the procedure below that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#Determine-the-scope-of-your-experiment) section above.
+Next, you'll edit the variations so they reflect the choices that you need to verify the experiment hypothesis. Choose the procedure below that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
 
 ### Experiments with partial scope
 Follow these steps if you defined the scope of your experiment as **partial** in the **Connect experiment** wizard.
