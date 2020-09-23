@@ -108,3 +108,14 @@ After this, you can see the route card should show the quantities posted. It sho
 
 ## Is it possible to report a production order as 'Finished' with error quantity only and without any time or material quantity reported?
 It is not possible to only report error quantity on the production order, without goods quantity. This is **not** a supported scenario. The report as finished update will eventually fail when trying to End the production order with the error message: "Missing report as finished quantity" 
+
+## Is it possible to trace finished goods serial numbers against the consumed goods serial numbers?
+Tracing of finished goods serials against consumed serials for material consumed by the production order for making the finished goods is currently not supported. This capability is on the backlog for a future release.
+
+## Is it possible to Report as Finished for error quantity only with no time or material reported.  
+When an absence code is selected in an electronic timecard or in the job card terminal, it is not possible to enter an absence reason code. The reason codes are set on the absence. 
+
+## 
+The production order is finished, but the wrong items have been consumed for a part of the order. The inventory status of these items indicate that they are physically reserved. This is likely preventing the production order from being ended.
+
+If there are materials with a Reserved physical status, then these materials are not consumed (consumed materials are in status Deducted). You cannot end a production order with materials in Reserved physical status, so you have to remove the reservations. You can do that from the Reservation page which can be accessed from the Production BOM line page.
