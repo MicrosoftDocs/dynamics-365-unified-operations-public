@@ -219,6 +219,11 @@ The following table lists the available triggers and denotes whether they can be
 | PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
 | PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
+## Inventory triggers
+| Trigger              | Type           | Description                                             | Release		|
+|----------------------|----------------|---------------------------------------------------------|--------------------------|
+| PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
+| PreUpdateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is updated. | 10.0.15 |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
