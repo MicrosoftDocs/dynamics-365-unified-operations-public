@@ -5,7 +5,7 @@ title: Priority-based throttling FAQ
 description: This topic provides answers to some frequently asked questions (FAQ) about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
 author: hasaid
 manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
