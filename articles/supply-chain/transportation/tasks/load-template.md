@@ -1,4 +1,33 @@
-﻿## Load Template
+--- 
+# required metadata 
+ 
+title: Set up Load template
+description: This procedure shows how to set up a load template. 
+author: kamaybac
+manager:  
+ms.date: 10/16/2020
+ms.topic: business-process 
+ms.prod:  
+ms.service: dynamics-ax-applications 
+ms.technology:  
+ 
+# optional metadata 
+ 
+ms.search.form: WHSLoadTemplate   
+audience: Application User 
+# ms.devlang:  
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations 
+# ms.tgt_pltfrm:  
+# ms.custom:  
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: 
+ms.search.validFrom: 2020-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
+---
+
+## Load Template
 
 When you create a new load, you can assign a load template that contains information about equipment and measures such as height, width, depth, and volume of the load.
 
