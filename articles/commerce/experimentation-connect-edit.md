@@ -41,8 +41,8 @@ Before you connect your experiment in Commerce, you'll need to make some decisio
 
 ### Determine the scope of your experiment
 When you connect an experiment in Commerce, you are prompted to define the scope of the experiment. Experiments in Commerce are defined as **partial** scope or **entire** scope.
-- Choose **partial** if you want to target a specific portion of a page for the experiment. Changes you make to the default page or fragment that aren't related to the experiment are automatically synchronized across variations. 
-- Choose **entire** if you want to target an entire page or fragment. Separate copies of the default page or fragment are created in this scenario. In other words, if you make changes to content that aren't related to the experiment, you'll have to manually synchronize the changes across variations.
+- Choose **partial** if you want to target a specific portion of a page for the experiment. Changes that are made to parts of the default page or fragment that aren't related to the experiment are automatically synchronized across variations. 
+- Choose **entire** if you want to target an entire page or fragment. Separate copies of the default page or fragment are created in this scenario. In other words, if you make any changes to the default page or fragment that the experiment is associated with, you'll have to manually synchronize those changes across all variations.
 
 > [!NOTE]
 > If you associate your experiment with a page that uses a layout, you can only scope the experiment as **entire**.
