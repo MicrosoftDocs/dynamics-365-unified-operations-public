@@ -47,8 +47,8 @@ When you connect an experiment in Commerce, you are prompted to define the scope
 > [!NOTE]
 > If you associate your experiment with a page that uses a layout, you can only scope the experiment as **entire**.
 
-### Decide whether you want to schedule when your experiment is published
-If you want to schedule when your experiment is published to your live site, you need to make sure the content you want to associate with the experiment is available in a publish group before you connect the experiment. 
+### Decide if you want to schedule when your experiment is published
+If you want to schedule when your experiment is published to your live site, make sure the content you want to associate with the experiment is available in a publish group *before* you connect the experiment. 
 
 For more information about publish groups, refer to [Work with publish groups](publish-groups.md)
 
