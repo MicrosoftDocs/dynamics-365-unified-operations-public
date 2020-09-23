@@ -31,27 +31,35 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect an experiment and edit variations
 
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. After you've set up your experiment in a third-party service, you'll connect the experiment to Dynamics 365 Commerce and edit the experiment variations.
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. After you've set up your experiment in a third-party service, you'll connect the experiment in Dynamics 365 Commerce and edit the experiment variations.
 
 [ ![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
+## Planning considerations
 
-## Determine the scope of your experiment
-When you connect an experiment in Commerce, you must next define the scope of the experiment. Experiments can be full scope or partial scope. Choose **partial** if you want to target a specific portion of a page. In this case, content changes made to the default page or fragment will be automatically synchronized across variations. Choose **full** if you want to target an entire page or fragment. In this case, separate copies of the default page or fragment are created i.e. content changes will need to be manually synchronized across variations.
+Before you connect your experiment in Commerce, you'll need to make some decisions that impact the way Commerce manages your content.
 
-## Decide how you want to publish your experiment
-Think about whether you want to schedule your experiment to be published in a publish group or directly publish to your live site. This will help you determine where you want to create your experiment.
+### Determine the scope of your experiment
+When you connect an experiment in Commerce, you are prompted to define the scope of the experiment. Experiments in Commerce are defined as **partial** scope or **full** scope.
+- Choose **partial** if you want to target a specific portion of a page for the experiment. Changes you make to the default page or fragment that aren't related to the experiment are automatically synchronized across variations. 
+- Choose **full** if you want to target an entire page or fragment. Separate copies of the default page or fragment are created in this scenario. In other words, if you make changes to content that aren't related to the experiment, you'll have to manually synchronize the changes across variations.
 
-Read more about [publishing your experiment](experimentation-preview-publish.md).## Connect your experiment
-To connect your experiment in Commerce, go to the **Experiments** tab in site builder and click **Connect** to open the *Connect experiment* wizard. This wizard can also be accessed from within a page or fragment editor when in the edit mode, by clicking on **Connect experiment** in the command bar.
+### Decide how you want to publish your experiment
+You need to decide whether you want to schedule your experiment to be published to your live site in a publish group, or directly publish to your live site. Your choice will dictate where you'll create your experiment.
+
+For more information, refer to the [Preview and publish an experiment](experimentation-preview-publish.md) topic.
+
+## Connect your experiment
+To connect your experiment in Commerce, you'll launch the **Connect experiment** wizard. The wizard walks you through the steps required to connect your experiment. When you complete the wizard, your experiment is connected and variations are created and ready to be edited.
+
+To launch the wizard, select the **Experiments** tab in site builder and then select **Connect**. Alternatively, tThe wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** in the command bar.
+
 > [!NOTE]
-> One page can only be connected to one experiment at a time. To connect a page to a different experiment, you will need to first delete the existing experiment.
+> A page can only be connected to one experiment at a time. To connect a page to a different experiment, delete the experiment the page is currently connected to.
 
 
-
-
-
-Next, choose the procedure below that matches the scope of your experiment based on what you decided earlier in the [Identify the goals for your experiment](experimentation-identify.md) stage.
+## Edit your variations
+When you exit the wizard, Commerce creates the variations that you defined in the third-party service. Choose the procedure below that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#Determine-the-scope-of-your-experiment) section above.
 
 ## Edit variations for an experiment with partial scope
 1. As a first step in the wizard, choose a page or fragment to be experimented upon.
