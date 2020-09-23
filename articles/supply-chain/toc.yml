@@ -205,7 +205,7 @@
       - name: India
         items: 
         - name: Stock transfer orders
-          href: localizations/apac-ind-stock-transfer.md    
+          href: ../finance/localizations/apac-ind-stock-transfer.md    
       - name: Russia
         items: 
         - name: Russia overview
