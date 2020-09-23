@@ -82,35 +82,35 @@ The following illustration shows these details:
 
 ## Example 2
 
-The `GETENUMVALUEBYNAME` and [`LISTOFFIELDS`](er-functions-list-listoffields.md) functions allow you to fetch values and labels of supported enumerations (application enumerations, data model enumerations, format enumerations) as text values.
+The `GETENUMVALUEBYNAME` and [`LISTOFFIELDS`](er-functions-list-listoffields.md) functions let you fetch values and labels of supported enumerations as text values. (The supported enumerations are application enumerations, data model enumerations, and format enumerations.)
 
-In the illustration, the **TransType** data source is introduced in a model mapping. This data source refers to the **LedgerTransType** application enumeration.
+In the following illustration, the **TransType** data source is introduced in a model mapping. This data source refers to the **LedgerTransType** application enumeration.
 
 ![Data source of a model mapping that refers to an application enumeration](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
-The following illustration shows the **TransTypeList** data source that is configured in a model mapping. This data source is configured based on the **TransType** application enumeration by using the `LISTOFFIELDS` function to return all enumeration values as a list of records containing fields to expose the details of every enumeration value.
+The following illustration shows the **TransTypeList** data source that is configured in a model mapping. This data source is configured based on the **TransType** application enumeration. The `LISTOFFIELDS` function is used to return all enumeration values as a list of records that contain fields. In this way, the details of every enumeration value are exposed.
 
 > [!NOTE]
-> The **EnumValue** field is configured for the **TransTypeList** data source by using the `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` expression. This field returns an enumeration value of every record in this list.
+> The **EnumValue** field is configured for the **TransTypeList** data source by using the `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` expression. This field returns an enumeration value for every record in this list.
 
 ![Data source of a model mapping that that returns all enumeration values of a selected enumeration as a list of records](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
-The next illustration shows the **VendTrans** data source that is configured in a model mapping. This data source returns vendor transaction records from the **VendTrans** application table. The ledger type of every transaction is defined by the value of the **TransType** field.
+The following illustration shows the **VendTrans** data source that is configured in a model mapping. This data source returns vendor transaction records from the **VendTrans** application table. The ledger type of every transaction is defined by the value of the **TransType** field.
 
 > [!NOTE]
-> The **TransTypeTitle** field is configured for the **VendTrans** data source by using the `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label` expression. This field returns the label of an enumeration value of the current transaction as a text if this enumeration value is available. Otherwise, the blank string value is returned.
+> The **TransTypeTitle** field is configured for the **VendTrans** data source by using the `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label` expression. This field returns the label of an enumeration value of the current transaction as text, if this enumeration value is available. Otherwise, it returns a blank string value.
 >
-> The **TransTypeTitle** field is bound to the **LedgerType** field of a data model that allows this information to be used in every ER format that uses this data model as a source of data.
+> The **TransTypeTitle** field is bound to the **LedgerType** field of a data model that enables this information to be used in every ER format that uses the data model as a source of data.
 
 ![Data source of a model mapping that that returns vendor transactions](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 The following illustration shows how you can use the [data source debugger](er-debug-data-sources.md) to test the configured model mapping.
 
-![Use data source debugger to test configured model mapping](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Using the data source debugger to test the configured model mapping](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 The **LedgerType** field of a data model exposes labels of transaction types as expected.
 
-When you plan to use this approach for large transactional data, execution performace must be considered. For more information, see [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
+If you plan to use this approach for a large amount of transactional data, you must consider execution performance. For more information, see [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md).
 
 ## Additional resources
 
