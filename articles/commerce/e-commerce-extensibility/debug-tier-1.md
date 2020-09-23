@@ -5,7 +5,7 @@ title: Debug against a Tier 1 Commerce development environment
 description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
 author: samjarawan
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -73,7 +73,7 @@ If you have the **MSDyn365_HOST** variable value set to your e-Commerce site URL
 ## Troubleshooting
 
 ### CORS errors
-You may get CORS (cross origin) errors when calling Retail Server APIs from your browser, this may surface in the browser network trace as **(failed) net::ERR_FAILED**. To fix this you need to change the “AllowedOrigins” setting in the Retail service web.config to allow the call to go through as shown below.
+You may get CORS (cross origin) errors when calling Retail Server APIs from your browser. These errors may surface in the browser network trace as **(failed) net::ERR_FAILED**. To fix these errors, change the **AllowedOrigins** setting in the Retail service web.config to allow the call to go through, as shown below.
 
 ```
 ...
