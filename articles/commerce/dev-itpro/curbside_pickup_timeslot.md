@@ -108,8 +108,8 @@ To enable timeslot selection on an e-commerce order, see Pickup information modu
 [!NOTE]
 >An e-commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
 
-Below is an example of e-commerce order with timeslot information during pickup.
-![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG "eCommerce Timeslot Pickup")
+Below is an example of e-commerce order with timeslot information selected for pickup
+![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG "eCommerce Timeslot Pickup")
 
 ## Additional resources
 [Checkout pickup information](checkout-pickupinfo.md)
