@@ -572,7 +572,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     
     Install-Module Az
     Import-Module Az
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
     > [!IMPORTANT]
@@ -581,14 +581,14 @@ Only user accounts that have the Global Administrator directory role can add cer
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
     ```
 
 > [!NOTE]
-> If the script does not set the context to the correct tenant when you authenticate, you can pass the tenant ID as a parameter to ensure the context is set to the correct tenant.
+> In case of having multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure the context is set to the correct tenant.
 
 > ```powershell
-> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -TenantId 'xxxx-xxxx-xxxx-xxxx'
+> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
 ### <a name="setupfile"></a> 12. Set up file storage
