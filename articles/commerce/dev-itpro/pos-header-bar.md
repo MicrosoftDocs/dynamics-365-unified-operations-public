@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom buttons to the POS header bar
-description: This topic explains how to add a new custom button to a POS header bar. 
+description: This topic explains how to add a new custom button to the POS header bar. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/16/2020
@@ -34,54 +34,56 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add a new custom button to a POS header bar. The POS header bar extension is supported by Dynamics 365 Commerce version 10.0.14 or later. The custom header button must contain an HTML file with CSS to describe the control user interface, styles, and themes, and a typescript view model file to specify the logic. The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic based on cart events or do custom business logic.
+This topic explains how to add a new custom button to the header bar in the point of sale (POS). The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.
+
+The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes. It must also contain a TypeScript view model file that specifies the logic. The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic that is based on cart events, or it can do custom business logic.
 
 ## CustomPackingItem class
 
 ### Properties
 
-| Property                        | Description                                           |
-|---------------------------------|-------------------------------------------------------|
-| **CustomPackingItemPosition**   | The item's position relative to the POS header items. |
-| **ICustomPackingItemContext**   | The context of the custom header packing item.        |
+| Property | Description |
+|----------|-------------|
+| CustomPackingItemPosition | The item's position relative to the POS header items. |
+| ICustomPackingItemContext | The context of the custom header packing item. |
 
 ### Events and methods
 
-| Event or method       | Description  |
-|-----------------------|--------------|
-| **cartChangedHandler** | Handler for the CartUpdated event. |
-| **constructor(id: string, context: ICustomPackingItemContext)** | Creates a new instance of the **CustomHeaderPackingItem** class. |
-| **id()** | Gets the custom header packing item identifier. |
-| **get visible(): boolean** | Gets the visible value. |
-| **set visible(isVisible: boolean)** | Sets the visible value. |
-| **abstract onReady(packedElement: HTMLElement, unpackedElement: HTMLElement): void** | Called when the control element is ready. |
-| **dispose(): void** | Disposes of the control and releases its resources. |
-| **protected abstract init(state: ICustomPackingItemState): void** | Initializes the control. |
+| Event or method | Description |
+|-----------------|-------------|
+| cartChangedHandler | The handler for the **CartUpdated** event. |
+| constructor(id: string, context: ICustomPackingItemContext) | This method creates a new instance of the **CustomHeaderPackingItem** class. |
+| id() | This method gets the identifier of the custom header packing item. |
+| get visible(): boolean | This method gets the visible value. |
+| set visible(isVisible: boolean) | This method sets the visible value. |
+| abstract onReady(packedElement: HTMLElement, unpackedElement: HTMLElement): void | This method is called when the control element is ready. |
+| dispose(): void | This method disposes of the control and releases its resources. |
+| protected abstract init(state: ICustomPackingItemState): void | This method initializes the control. |
 
-You must add nodes for the header button extension in the **manifest.json**, and shown in the following code example.
+You must add nodes for the header button extension in the **manifest.json** file, as shown in the following example.
 
 ```typescript
 "header": {
-        "customPackingItems": [
-            {
+    "customPackingItems": [
+        {
             "name": " name of the control",
             "description": "Description.",
             "modulePath": " view model file name with path",
             "htmlPath": " html file name with path"
-            }
-        ]
         }
+    ]
+}
 ```
 
-## Add a custom button in the POS header bar
+## Add a custom button to the POS header bar
 
-The following steps show how to add a custom button in the header bar and show the amount due by reading it from the cart.
+Follow these steps to add a custom button to the header bar and show the amount due by reading it from the cart.
 
-1. Start Microsoft Visual Studio 2017.
-2. Open the **ModernPOS/CloudPOS** solution from **\RetailSDK\POS**.
-3. In the **POS.Extensions** project, create a folder named **HeaderExtensionSample**.
-4. In the **HeaderExtensionSample** folder, create a new HTML file named **CartAmountDuePackingItem.html**.
-5. Copy and paste the following code into the file.
+1. Open Visual Studio 2017.
+2. Open the **ModernPOS/CloudPOS** solution from **\\RetailSDK\\POS**.
+3. In the **POS.Extensions** project, create a folder that is named **HeaderExtensionSample**.
+4. In the **HeaderExtensionSample** folder, create an HTML file that is named **CartAmountDuePackingItem.html**.
+5. Copy the following code, and paste it into the file.
 
     ```html
     <!DOCTYPE html>
@@ -113,8 +115,8 @@ The following steps show how to add a custom button in the header bar and show t
     </html>
     ```
 
-6. In the **HeaderExtensionSample** folder, create a typescript file and name it **CartAmountDuePackingItem.ts**.
-7. Copy and paste the following code into the file.
+6. In the **HeaderExtensionSample** folder, create a TypeScript file that is named **CartAmountDuePackingItem.ts**.
+7. Copy the following code, and paste it into the file.
 
     ```typescript
     import {
@@ -225,8 +227,8 @@ The following steps show how to add a custom button in the header bar and show t
     }
     ```
 
-8. In the **HeaderExtensionSample** folder, create a JSON file named **manifest.json**.
-9. Copy and paste the following code into the file.
+8. In the **HeaderExtensionSample** folder, create a JavaScript Object Notation (JSON) file that is named **manifest.json**.
+9. Copy the following code, and paste it into the file.
 
     ```typescript
     {
@@ -236,42 +238,42 @@ The following steps show how to add a custom button in the header bar and show t
         "version": "10.0.14",
         "minimumPosVersion": "9.24.0.0",
         "components": {
-        "extend": {
-            "header": {
-            "customPackingItems": [
-                {
-                "name": " CartAmountDuePackingItem",
-                "description": "An item showing amount due.",
-                "modulePath": " CartAmountDuePackingItem",
-                "htmlPath": " CartAmountDuePackingItem.html"
+            "extend": {
+                "header": {
+                    "customPackingItems": [
+                        {
+                            "name": " CartAmountDuePackingItem",
+                            "description": "An item showing amount due.",
+                            "modulePath": " CartAmountDuePackingItem",
+                            "htmlPath": " CartAmountDuePackingItem.html"
+                        }
+                    ]
                 }
-            ]
             }
-        }
-
         }
     }
     ```
 
-10. In the **POS.Extensions** project, open the **extensions.json** file, and update the **HeaderExtensionSample** package details, so that the POS can include this extension package during the initial load.
+10. In the **POS.Extensions** project, open the **extensions.json** file.
+11. Update the details of the **HeaderExtensionSample** package, so that the POS can include this extension package during the initial load.
 
     ```typescript
     {
-    "extensionPackages": [
-        {
-        "baseUrl": "HeaderExtensionSample"
-        }
-    ]
+        "extensionPackages": [
+            {
+                "baseUrl": "HeaderExtensionSample"
+            }
+        ]
     }
     ```
 
-11. Build the project.
+12. Build the project.
 
 ### Validate the customization
 
 Follow these steps to validate the customization.
 
-1. Sign into POS by entering the operator ID and password.
-2. In the header bar, the custom button should be visible.
+1. Sign in to the POS by entering the operator ID and password.
+2. Look at the header bar. The custom button that you added should be visible.
 
-The extension package status can be viewed on the [POS settings page](view-pos-extension-package-details.md).
+You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).
