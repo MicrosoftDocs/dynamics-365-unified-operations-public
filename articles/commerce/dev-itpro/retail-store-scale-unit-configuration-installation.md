@@ -132,7 +132,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 4. On the drop-down menu, select **Configuration file**.
 
     > [!NOTE]
-    > To help ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    > To help ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.  If, for any reason, the configuration file is not the same filename as the installer executable, either the executable must be run via command line to specify the configuration file or rename the XML configuration file to have the same base name as the executable filename.   
     >
     > For on-premises deployments, the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
