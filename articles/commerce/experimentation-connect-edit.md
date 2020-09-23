@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Experimentation in Dynamics 365 Commerce
-description: Enable the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support will be enabled for e-commerce pages, as well as entities within a page.
+title: Connect an experiment and edit variations
+description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commmerce, and how to edit variations for the experiment.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,9 +31,10 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect an experiment and edit variations
 
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. After you've set up your experiment in a third-party service, you'll connect the experiment to Dynamics 365 Commerce and edit the experiment variations.
+
 [ ![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
-Once the experiment is setup in the third-party service, the next step is to connect it to an entity in Commerce and edit its variations.
 
 ## Determine the scope of your experiment
 When you connect an experiment in Commerce, you must next define the scope of the experiment. Experiments can be full scope or partial scope. Choose **partial** if you want to target a specific portion of a page. In this case, content changes made to the default page or fragment will be automatically synchronized across variations. Choose **full** if you want to target an entire page or fragment. In this case, separate copies of the default page or fragment are created i.e. content changes will need to be manually synchronized across variations.
