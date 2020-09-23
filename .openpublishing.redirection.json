@@ -1,5 +1,11 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/install-basex.md",
+      "redirect_url": "application-checker",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/learning-catalog.md",
       "redirect_url": "../../../finance/get-started/learning-catalog",
       "redirect_document_id": "false"
