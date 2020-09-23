@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Stock transfers for India
+title: Stock transfer orders for India
 description:  This topic provides information about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Stock transfers for India
+# Stock transfer orders for India
 
 [!include [banner](../includes/banner.md)]
 
