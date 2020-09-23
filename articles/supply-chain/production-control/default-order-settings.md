@@ -57,8 +57,11 @@ There are three types of default order settings for purchases, sales, and invent
 - Purchase agreement lines
 - Request for quotation lines
 - Purchase requisition lines
-- Consignment replenishment lines
+- Consignment replenishment lines (partially supported, see note)
 - Planned purchase orders
+
+> [!NOTE]
+> For consignment replenishment order lines, the only settings from the **Purchase order** FastTab of the **Default order settings** page that apply are the **Default site** field, **Default warehouse** field, and **Stopped** check box.
 
 The default order settings for sales are used when creating:
 
