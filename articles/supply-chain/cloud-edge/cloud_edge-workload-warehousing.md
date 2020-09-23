@@ -108,6 +108,7 @@ Additional limitations of unsupported processing at edge scale units are:
 - Integration to quality management.
 - Integration to production.
 - Catch weight item processing.
+- Over- under delivery processes are not supported.
  
 ### Outbound (Only support for sales orders and demand replenishment)
 >[!Warning]
