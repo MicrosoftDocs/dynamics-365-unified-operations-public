@@ -5,7 +5,7 @@ title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -415,7 +415,6 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
     Additionally, verify that the transactions that don't have a corresponding record in the [ext].ContosoRetailTransactionTable extension table on the channel side are also uploaded. Verify that these transactions have default values for the seat number and server staff ID. The seat number should be set to **0** (zero), and the server staff ID should be set to **000160**.
     
-#### MPOS Offline transaction sync:
- 
- Switch MPOS to offline mode and do some transaction and switch back to online and verify the data is synced properly from offline database to channel database and then to headquarters.
+#### MPOS offline transaction sync
+ Switch MPOS to offline mode and do some transaction. Switch back to online and verify that the data is synced properly from the offline database to the channel database and then to headquarters.
 
