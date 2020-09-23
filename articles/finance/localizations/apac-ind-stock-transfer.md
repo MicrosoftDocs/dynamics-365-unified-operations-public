@@ -44,6 +44,7 @@ You should enable the following features in the **Feature management** workspace
 
 - (India) Improvements in unit price and cost price handling in Stock transfer orders
 - (Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning
+- Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order
 
 See [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about Feature management.
 
@@ -65,7 +66,7 @@ You can define a default transfer order type and a default price type for transf
 
 ### Set up item master parameters
 
-To calculate GST for an item in a stock transfer order, you need to configure certain parameters on the **Released product details** page, such as **HSN codes** and **Tax rate types**. See [Assign HSN codes and SACs to products](apac-ind-gst-hsn-service-accounting-codes.md#assign-hsn-codes-and-sacs-to-products) for more details.
+To calculate GST for an item in a stock transfer order, you need to configure certain parameters on the **Released product details** page, such as **HSN codes** and **Tax rate type**. See [Assign HSN codes and SACs to products](apac-ind-gst-hsn-service-accounting-codes.md#assign-hsn-codes-and-sacs-to-products) for more details.
 
 ### Configure transfer pricing
 
@@ -79,7 +80,18 @@ You need to configure the **Interim transit** account on the following pages:
 - On the **Tax setup** page, click **Setup**, and on the **Setup** page specify the **Interim transit for stock transfer** account for all GST components that may be created for GST on stock transfer. See [Define main accounts](apac-ind-gst-map-configuration-tax-types.md#define-main-accounts-1) for more information on the posting setup for GST.
 
 > [!NOTE]
-> The accounts used to post interim transit amounts should have **Interim transit** specified in the **Posting type** field on the **Posting validation** tab of the **Main accounts** page.
+> The accounts that are used to post interim transit amounts should have **Interim transit** specified in the **Posting type** field on the **Posting validation** tab of the **Main accounts** page.
+
+You also need to set up main accounts to post inventory cost for transfer orders. In the **Inventory management** module, on the **Posting** page, on the **Inventory** tab, specify the following accounts:
+
+- **Inventory issue**
+- **Inventory receipt**
+- **Inter-unit payable**
+- **Inter-unit receivable**
+- **Inventory expenditure, loss**
+
+> [!NOTE]
+> The **Inventory expenditure, loss** account is required to post the scrap amount when receiving a transfer order with scrap.
 
 ## Create and post a stock transfer order
 
@@ -107,3 +119,6 @@ You need to configure the **Interim transit** account on the following pages:
 1. Select the **Tax information** tab to set up taxes for the transaction, and enter details. You can change the default information that is displayed in the fields.
 1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
 1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
+
+    > [!NOTE]
+    > If the "Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previousely posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt, and select a previousely posted shipment in the **Shipment voucher** field.
