@@ -5,7 +5,7 @@ title: Default order settings for dimensions and product variants
 description: Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. 
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,8 +57,11 @@ There are three types of default order settings for purchases, sales, and invent
 - Purchase agreement lines
 - Request for quotation lines
 - Purchase requisition lines
-- Consignment replenishment lines
+- Consignment replenishment lines (partially supported, see note)
 - Planned purchase orders
+
+> [!NOTE]
+> For consignment replenishment order lines, the only settings from the **Purchase order** FastTab of the **Default order settings** page that apply are the **Default site** field, **Default warehouse** field, and **Stopped** check box.
 
 The default order settings for sales are used when creating:
 
