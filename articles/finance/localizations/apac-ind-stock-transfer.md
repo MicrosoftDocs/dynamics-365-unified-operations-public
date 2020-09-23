@@ -122,3 +122,5 @@ You also need to set up main accounts to post inventory cost for transfer orders
 
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previousely posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt, and select a previousely posted shipment in the **Shipment voucher** field.
+    
+You also can cancel a previousely posted stock transfer order shipment, provided that no receipts are posted for this order yet. On the **Transfer orders** page, click **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previousely posted shipment, click **Cancel**, and confirm the cancellation of the shipment. The shipment will be cancelled, and all inventory movements and GST that was posted for the shipment will be reversed. You need to enable the **Transfer Order Cancellation** feature to be able to cancel transfer order shipments.
