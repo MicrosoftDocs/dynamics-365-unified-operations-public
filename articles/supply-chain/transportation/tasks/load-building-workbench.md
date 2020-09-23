@@ -62,7 +62,7 @@ To create a load building strategy, follow these steps:
 
 You can now assign the load building strategy to a load building template, or use it directly in the load planning workbench.
 
-### Use load building strategy in the load planning workbench
+### Use load building strategy in the load building workbench
 
 In the Load building workbench follow these steps:
 
