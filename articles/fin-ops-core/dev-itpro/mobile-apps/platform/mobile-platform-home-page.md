@@ -155,8 +155,8 @@ During development it can be useful to attach a debugger to get more detailed in
 
 ## Troubleshooting the app
 
-### Issues with date and time controls on iOS14
-Due to changes introduced in iOS14, date and time controls in the Finance and Operations mobile app no longer work after a user updates their device to iOS14. After moving to iOS14, neither the date picker nor the time picker open by touch the keyboard, and the user is unable to type in a new date or time or clear out the existing value. This issue is being investigated but does not have a solution currently.
+### No current support for iOS14 due to issues with date and time controls
+Due to changes introduced in iOS14, date and time controls in the Finance and Operations mobile app no longer work after a user updates their device to iOS14. After moving to iOS14, neither the date picker nor the time picker open by touch or the keyboard, and the user is unable to type in a new date or time or clear out the existing value. This issue is currently being investigated.
 
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
