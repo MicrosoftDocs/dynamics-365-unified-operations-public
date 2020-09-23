@@ -74,5 +74,5 @@ Assign the Talent user role to the Talent Relationship Team.
 
 9. Test your changes:
 
-   - Sign in to the career portal from a new browser window.
-   - Apply for the job from the career portal. 
+   1. Sign in to the career portal from a new browser window.
+   2. Apply for the job from the career portal. 
