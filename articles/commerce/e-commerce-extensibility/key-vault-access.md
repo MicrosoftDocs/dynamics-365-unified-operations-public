@@ -120,7 +120,7 @@ Next, navigate to your Retail Server AX UI to add the Key Vault details in Retai
  ![Key Vault Secrets](media/key-vault-04.png)
 
 ## Accessing secret values within your e-Commerce Node application
-Once all the above configuration is complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
+Once the above configuration is complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -135,13 +135,13 @@ export interface ISecretValue {
 }
 ```
 
-To import this into your code, add `msdyn365Commerce`  to import statement for ‘@msdyn365-commerce/core’
+To import this into your code, add `msdyn365Commerce` to the import statement for the ‘@msdyn365-commerce/core’ library as shown below.
 
 ```typescript
 import msdyn365Commerce, { IRequestContext, … } from '@msdyn365-commerce/core';
 ```
 
-To use the `SecretManager` to access the secret value:
+The below example shows how to use the `SecretManager` to access the secret value:
 
 ```typescript
 const secretValue: ISecretValue | undefined = await msdyn365Commerce.secretManager?.getSecretValue('secretKey', requestContext.apiSettings.baseUrl);
@@ -149,21 +149,21 @@ const secretValue: ISecretValue | undefined = await msdyn365Commerce.secretManag
 
 Note that `secretManager` is a nullable property on msdyn365Commerce, this is because `SecretManager` can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If `secretManager` is undefined it means the code is running in the context of a browser (client-side). 
 
-What this means practically for you as a developer is that you should only use the `SecretManager` on code that is guaranteed to run server-side (e.g. data-actions that will run only server-side) as you will otherwise be unable to access the secret value. If you do happen to include this in code that will run in both contexts (server and client side) it’s important to include a fallback option if `secretManager` happens to be undefined.
+What this means practically for you as a developer is that you should only use the `SecretManager` on code that is guaranteed to run server-side (e.g. data-actions that will run only on server-side) as you will otherwise be unable to access the secret value. If you do happen to include this in code that will run in both contexts (server and client side) it is important to include a fallback option if `secretManager` happens to be undefined.
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
-Local Development
+## Local Development
 
-Your Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. What this means is that when developing locally, `SecretManager` will be unable to retrieve secrets from your Key Vault. 
+Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, `SecretManager` will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file. In here you can configure secretKeys and secretValues that will only be used when developing locally.
 
-Instead you can create a secrets directory in your Node application and add a secrets.json. In here you can configure secretKeys and secretValues that will only be used when developing locally.
+**As a reminder, everything under secrets/ should be added to your gitignore file to help prevent credentials/secrets from being leaked online**
 
-**As a gentle reminder, everything under secrets/ should be added to your gitignore file to help prevent credentials/secrets from being leaked online**
-
-secrets/secrets.json
+The below is a sample 'secrets/secrets.json' file:
+```json
 {
     "secretKey": "secretValue!"
 }
+```
 
 If you do not configure this file, during local development you may run into errors as your `SecretManager` attempts to communicate with your Key Vault but fails to do so.
