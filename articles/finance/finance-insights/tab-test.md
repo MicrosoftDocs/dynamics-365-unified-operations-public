@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview)
+title: Configuration for Finance Insights test (preview)
 description: This topic walks through the configuration steps that will enable your system to use the capability that's available in Finance Insights. 
 author: ShivamPandey-msft
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Configuration for Finance Insights (preview)
+# Configuration for Finance Insights test (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
