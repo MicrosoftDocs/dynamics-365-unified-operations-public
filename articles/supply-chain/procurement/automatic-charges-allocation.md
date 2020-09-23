@@ -37,32 +37,7 @@ Based on which customer your working with or what item you're selling, you may w
 
 Automatic charges, which are referred to as auto charges, are applied automatically when you create a sales order or purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
 
-## <a name="flights"></a>Turn on flights to enable automatic allocation features on your system
-
-Some of the features described in this topic won't be present on your system unless you enable certain *flights*. You only need to enable the flights for those features you plan to use.
-
-### Enable purchase charges to and from amounts
-
-To enable the from and to amount for purchase orders, enable the following flight:
-
-- **Flight name**: PurchAutoChargesFromAndToAmountFeaure
-- **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('PurchAutoChargesFromAndToAmountFeature', 1);`
-
-### Enable charges by site and warehouse
-
-To enable changes by site and warehouse for both purchase and sales orders, enable the following flight:
-
-- **Flight name**: AutoChargesSetupBySiteAndWarehouseFeature
-- **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('AutoChargesSetupBySiteAndWarehouseFeature', 1);`
-
-### Enable charges allocation on the sales order
-
-To enable charges allocation for sales orders, enable the following flight:
-
-- **Flight name**: SalesChargesAllocationFeature
-- **SQL query**: `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES('SalesChargesAllocationFeature', 1);`
-
-<!-- KFM: Do we also need to turn these on in feature management? -->
+<!-- KFM: Do we need to turn anything on in feature management? -->
 
 ## Setup charges codes
 
@@ -119,61 +94,61 @@ To create charge groups for sales orders:
 1. Expand the **Purchase order defaults** FastTab and, in the **Sales order** section, set **Charges group** to your newly created charge group.
 
 ## Define auto charges
-<!-- KFM: Continue here -->
-Once you have your charge codes set up, you can start defining the auto charges by doing the following:
 
-1. For purchase orders: **Procurement and sourcing \> Setup \> Charges \> Automatic charges**
+Once you have your charge codes set up, define the auto charges by doing the following:
 
-For sales orders: **Accounts receivable \> Setup \> Charges \> Auto charges**
+1. Open one of the following pages:
+    - For purchase orders: **Procurement and sourcing \> Setup \> Charges \> Automatic charges**
+    - For sales orders: **Accounts receivable \> Setup \> Charges setup \> Auto charges**
+1. From the **Level** drop-down list in the list pane, select the level at which your auto charge applies by selecting one of the following:
+    - **Main** - Apply charges to the order header.
+    - **Line** - Apply charges to the order lines.
+1. Select an existing auto charge to edit it, or select **New** to define a new one.
+1. Use the **Account code** drop-down list to identify the scope of accounts that will be affected.  Select one of the following values:
+    - **Table** - Assign charges to a specific customer or vendor.
+    - **Group** - Assign charges to a miscellaneous charges group.
+    - **All** - Assign charges to all customers or vendors.
+1. In the **Customer relation** or **Vendor relation** field, select a specific customer or vendor if you set **Account code** to *Table* , or select a customer or vendor charges group if you set **Account code** to *Group*.
+1. Use the **Item code** drop-down list to identify the scope of items that will be affected. You can only select an item code when you define auto charges at the lines level. Select one of the following values:
+    - **Table** - Assign charges to a specific item.
+    - **Group** - Assign charges to an item charges group.
+    - **All** - Assign charges to all items.
+1. In the **Item relation** field, select a specific item if you set **Item code** to *Table* , or select an item charges group if you set **Item code** to *Group*.
+1. *For sales orders only*: Use the **Mode of delivery code** drop-down list to identify the scope of delivery modes affected.  Select one of the following values:
+    - **Table** - Assign charges to a specific mode of delivery.
+    - **Group** - Assign charges to a mode of delivery group.
+    - **All** - Assign charges to all modes of delivery.
+1. *For sales orders only*: In the **Mode of delivery relation** field, select a specific mode of delivery if you set **Mode of delivery code** to *Table* , or select a mode of delivery group if you set **Mode of delivery code** to *Group*.
+1. Expand the **Lines** FastTab to define the charges and the charges rates to use when the current auto charge is applied. You can use the toolbar here to add as many lines as you need. For each line, make the following settings.
+    - **Currency** - Select the currency to use to calculate the charge.
+    - **Charges code** - Select the code for the charge.
+    - **Category** - Select one of the following values:
+        - **Fixed** - The charge is entered as a fixed amount on the line. Fixed charges can be used on charges in the order header and on the order lines.
+        - **Pcs** - The charge is based on the unit. These charges can only be used on order lines and will appear when you calculate the order total
+        - **Percent** - The charge is entered as a percentage on the line. Percentage charges can be used on charges in the order header and on the order lines.
+        - **Intercompany percent** - The charge is entered as a percentage on the line for intercompany orders. Intercompany percentage charges can be used only on order lines.
+        - **External** - The charge is calculated by a third-party service that is associated with one or more shipping carriers.
+    - **Charges value** - Enter the charge value based on the **Category** selected.
+    - **Charges currency code** - Specify a currency for the charge to use a difference currency than is specified in the **Currency** field. This is only possible if the **Debit type** or **Credit type** is either *Ledger account* or *Item* for the selected **Charges code**.
+    - **From amount** - Specify a starting amount to apply the auto charge to. In this context, the amount refers to the order total.
+    - **To amount** - Specify the ending amount to apply the auto charge to. In this context, the amount refers to the order total.
+    - **Sales tax group** - Specify a sales tax group.
+    - **Site** and **Warehouse** - Specify a site and warehouse if you want charges to only be applied for a specific site and warehouse
+    - **Keep** - Select this check box to keep the charges transactions after invoicing so that the charge is applied every time that you create a new invoice for the selected customer account.
 
-1. Click **New** to define a new auto charge
-1. In the **Level** field, indicate the level to apply the auto charge with the following values:
-    - Main – Apply charges to the order header
-    - Line – Apply charges to the order lines
-1. Select an account in the **Account code** field from the following values:
-    - Table – Assign charges to a specific customer or vendor
-    - Group – Assign charges to a miscellaneous charges group
-    - All – Assign charges to all customers or vendors
-1. In the **Customer relation** or **Vendor relation** field, select a specific customer or vendor if you selected **Table** , or select a customer or vendor charges group if you selected **Group**.
-1. In the **Item code** field, select an item code. You can select an item code only when you define auto charges at the lines level.
-    - Table – Assign charges to a specific item.
-    - Group – Assign charges to an item charges group
-    - All - Assign charges to all items
-1. In the **Item relation** field, select a specific item if you selected **Table** , or select an item charges group if you select **Group**.
-1. For sales orders only: In the **Mode of delivery code** field, select a mode of delivery code
-    - Table – Assign charges to a specific mode of delivery
-    - Group - Assign charges to a mode of delivery group
-    - All – Assign charges to all modes of delivery
-1. Expand the **Lines** FastTab to define the charges and the charges rates to use when the current auto charge is applied
-1. In the **Currency** field, select the currency to use to calculate the charge.
-1. In the **Charges code** field, select the code for the charge.
-1. Specify how to calculate the charge in the **Category** field and enter a value in the **Charges value** field:
-    - Fixed – The charge is entered as a fixed amount on the line. Fixed charges can be used on charges in the order header and on the order lines.
-    - Pcs – The charge is based on the unit. These charges can only be used on order lines and will appear when you calculate the order total
-    - Percent – The charge is entered as a percentage on the line. Percentage charges can be used on charges in the order header and on the order lines.
-    - Intercompany percent – The charge is entered as a percentage on the line for intercompany orders. Intercompany percentage charges can be used only on order lines.
-    - External – The charge is calculated by a third-party service that is associated with one or more shipping carriers.
-1. In the **Charges currency code** field, specify a currency for the charge to use a difference currency than is specified in the **Currency** field. This is possible if the Debit or Credit type is either Ledger account or Item for the selected charges code.
-1. Specify a starting amount to apply the auto charge to in the From amount field. In the To amount field, specify the ending amount to apply the auto charge to. Amount in this context refers to the order total.
-
-1. Sales orders only: to calculate tiered charges refer to documentation on [tiered charges on sales orders](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders)
-
-1. Optional: In the Sales tax group field, specify a sales tax group
-1. Optional: Specify site and warehouse if you want charges to only be applied for a specific site and warehouse
-
-1. Select the **Keep** check box to keep the charges transactions after invoicing, so that the charge is applied every time that you create a new invoice for the selected customer account.
+1. *For sales orders only*: For details about how to calculate tiered charges, see [tiered charges on sales orders](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## Allocate charges from header to line
-
-The following section details the steps needed to allocate header level charges to the line. The following steps assume that you already have a header level charge of a 'fixed amount' type set up and an order where this charge is already applied to. The order must also have line items already created.
+<!-- KFM: Continue here -->
+This section details the steps needed to allocate header level charges to the line. The following steps assume that you already have a header level charge of type *fixed amount* set up and an order where this charge is already applied. The order must also already have line items created.
 
 1. In the top ribbon of the order:
     - For sales orders: Go to **Purchase \> Charges \> Allocate charges**
     - For purchase orders: Go to **Sell \> Charges \> Allocate charges**
 1. Specify how you want to allocate the charges by specifying a value in **Charges allocation** field:
-    - Net amount – allocate charges according to each line amount relative to the total net amount
-    - Quantity – allocate charges according to the number of units for each line relative to the total number of unit
-    - Per line – allocate charges equally among the total number of lines
+    - Net amount - allocate charges according to each line amount relative to the total net amount
+    - Quantity - allocate charges according to the number of units for each line relative to the total number of unit
+    - Per line - allocate charges equally among the total number of lines
 1. In the **Allocate charges to lines** field, specify whether to allocate charges to **All lines, Positive lines** , or **Negative lines**.
 1. Select **Allocate all** to allocate charges to order lines, even if the charge code has a debit type other than Item.
 1. Select **Received** to allocate charges only to received order lines
