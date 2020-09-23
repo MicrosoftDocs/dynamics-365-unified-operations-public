@@ -154,7 +154,7 @@ Additional limitations of unsupported processing at edge scale units are:
 |License plate receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 |Transfer order item receiving and put away   |Yes               |No                |
 |Transfer order line receiving and put away   |Yes               |No                |
-|Work cancellation|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
+|Work cancellation|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|<p>(Yes)</p> Without <b>Unregister receipt when canceling work</b>|
 |Purchase order product receipt processing    |Yes              |No                 |
 |Cross docking work creation as part of receiving|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 
