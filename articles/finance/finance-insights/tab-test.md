@@ -52,7 +52,7 @@ Deploy the environments by completing the following steps.
 You can complete the steps as listed or use the attached PowerShell script to speed up the configuration. 
 
 
-# [Configure the Common Data Service](#tab/configure-the-common-data-service)
+# [Configuration steps](#tab/configuration-steps)
 
 1. Create a new Common data services environment in the same Active Directory Tenant. To do this, open the Environments page on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    
@@ -79,7 +79,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
    - Change the **Maximum file size** (in kilobytes) to 51,200.
    - Click **OK** to save the changes.
 
-# [PowerShell CDS script](#tab/powershell-cds-script)
+# [PowerShell configuration script](#tab/powershell-configuration-script)
 
     Write-Output 'The following modules need to be present for execution of this script:'
     Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
