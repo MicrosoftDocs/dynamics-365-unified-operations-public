@@ -35,7 +35,7 @@ Outbound workload visualization is suitable to be displayed on warehouse perform
 
 Advanced setup capabilities accessible from the **Outbound workload visualization** page enable warehouse managers and supervisors to create custom workload charts that can be used to monitor progress of current work and what is left of it. Warehouse managers can create multiple views and set up auto refresh as needed.
 
-This functionality can be used to track the progress of picking work. The feature is integrated with labor management and, if labor management is set, visualization can show a calculation of the number of left for the displayed picking work (filtered).
+This functionality can be used to track the progress of picking work. The feature is integrated with labor management and, if labor management is set, visualization can show a calculation of the number of hours left for the displayed picking work (filtered).
 
 ## Turn on the outbound workload visualization feature
 
@@ -56,12 +56,12 @@ To set up an outbound workload visualization:
 
 1. On the Action Pane, open the **Filters** tab and then select **Configure filters**.
 
-1. The **Configure filters** page opens. Select **New** on the Action Pane to add new filter and make the following settings for it: <!-- KFM: I'm guessing about this. Also, we should describe the **Estimated/Actual time** setting -->
+1. The **Configure filters** page opens. Select **New** on the Action Pane to add new filter and make the following settings for it:
 
     - **X-axis group table** – Select the table that contains the field by which you will group the X-axis values.
-    - **X-axis group field** – Select the field (from the selected **X-axis group table** ) by which you will group the X-axis values.
+    - **X-axis group field** – Select the field (from the selected **X-axis group table**) by which you will group the X-axis values.
     - **X-axis value table** – Select the table that contains the field by which the groups can be further analyzed.
-    - **X-axis value field** –Select the field (from the selected **X-axis value table** ) that provides values to be analyzed for each of the groups
+    - **X-axis value field** –Select the field (from the selected **X-axis value table**) that provides values to be analyzed for each of the groups
     - **Auto-refresh** – Choose whether the visualization should be auto-refreshed.
     - **Refresh interval (minutes)** – Enter the number of minutes between each auto refresh.
     - **Display level** – Choose whether the chart should display _Open lines_ or _Open header counts_.
@@ -86,7 +86,7 @@ To set up an outbound workload visualization:
 
 ## Example: Outbound workload visualization for zones
 
-Suppose you want to set up a visualization that shows work lines for each zone and their status (_Open_, _Closed_, or _Cancelled_). To do this, you could set up a filter with the following settings:
+Suppose you want to set up a visualization that shows work lines for each zone and their status (_Open_, _Closed_, or _Canceled_). To do this, you could set up a filter with the following settings:
 
 - **Filter name** – Enter a name for this filter (such as _Zone vs. work status_).
 - **Description** – Enter a short description for this filter (such as _Zone vs. work status_).
@@ -102,4 +102,4 @@ The resulting chart might look like this:
 
 ![Example visualization](media/work-viz-chart.png "Example visualization")
 
-This example chart shows two zones identified as **FLOOR** and **BULK**, plus a zone called **Blank**. Zone **Blank** represents all work lines that aren't members of any zones. The chart always shows all unrelated filtered data as **Blank** to provide as much visibility as possible. The chart shows three closed lines and four open lines in zone **FLOOR**; four closed lines, one open line, and 24 cancelled lines in zone **BULK**; and 8 closed lines that aren't part of any zone, which are therefore listed as **Blank**.
+This example chart shows two zones identified as **FLOOR** and **BULK**, plus a zone called **Blank**. Zone **Blank** represents all work lines that aren't members of any zones. The chart always shows all unrelated filtered data as **Blank** to provide as much visibility as possible. The chart shows three closed lines and four open lines in zone **FLOOR**; four closed lines, one open line, and 24 canceled lines in zone **BULK**; and 8 closed lines that aren't part of any zone and are therefore listed as **Blank**.
