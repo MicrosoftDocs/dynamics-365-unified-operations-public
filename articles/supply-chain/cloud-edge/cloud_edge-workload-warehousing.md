@@ -146,7 +146,7 @@ Additional limitations of unsupported processing at edge scale units are:
 |Load and TMS processing                      |Yes             |No                 |
 |Shipment confirmation                        |Yes             |No                 |
 |Purchase order Release to warehouse (Warehouse order processing)|Yes  |No         |
-|Purchase order item receiving and put away   |<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|<p>Yes:</p>With Warehouse order<p>No:</p>Without warehouse order|
+|Purchase order item receiving and put away   |<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|<p>Yes:</p>With Warehouse order, but only when using two mobile device menu items: One for receiving (<b>Purchase order item receiving</b>) and another with <b>Use existing work</b> to process the put-away<p>No:</p>Without warehouse order|
 |Purchase order line receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
 |Return order receiving and put away          |Yes              |No                 |
 |Mixed license plate receiving and put away|<p>Yes:</p>Without Warehouse order<p>No:</p>With warehouse order|No|
