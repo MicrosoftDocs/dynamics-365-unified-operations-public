@@ -55,6 +55,9 @@ The following image shows an example of timeslot selection using the Pickup info
 
 - **Heading** - This property allows you to configure a heading for the module.
 
+## Displaying timeslot after placing an order
+Once an order is placed, the timeslot information that was selected can be viewed in the [Order confirmation module](order-confirmation-module.md) and [Order details module](account-management.md). These modules have a new property called **Show timeslot information** which should be set to true to display the selected timeslot during an order.
+
 ## Add a checkout pickup information module to a page
 
 For instructions on how to add a checkout pickup information module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
@@ -64,9 +67,10 @@ The following image shows an example of ecommerce checkout page with timeslots f
 
 ## Additional resources
 
-[Cart module](add-cart-module.md)
-
-[Cart icon module](cart-icon-module.md)
+[Timeslot for pickup](./dev-itpro/curbside_pickup_timeslot.md)
 
 [Checkout module](add-checkout-module.md)
 
+[Order confirmation module](order-confirmation-module.md) 
+
+[Order details module](account-management.md)
