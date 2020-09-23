@@ -64,5 +64,5 @@ To learn more about each step in the experimentation process, refer to the follo
 > [!NOTE]
 > To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is displayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experiment-status.md) topic.
 
-## Next step
+## Next topic
 [Identify a hypothesis and determine success metrics for an experiment](experimentation-identify.md) 
