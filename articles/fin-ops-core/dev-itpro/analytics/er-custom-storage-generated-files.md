@@ -38,7 +38,7 @@ The application programming interface (API) of the Electronic reporting (ER) fra
 
 ## Prerequisites
 
-You must deploy a topology that supports continuous build. (For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) You must have access to this topology for one of the following roles:
+You must deploy a topology that supports continuous build. (For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)) You must have access to this topology for one of the following roles:
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
