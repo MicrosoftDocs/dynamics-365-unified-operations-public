@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Identify a hypothesis and determine metrics for an experiment
+# Identify a hypothesis and determine success metrics for an experiment
 There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. The first phase in the experimentation lifecycle includes identifying the hypothesis and goals for the experiment and determining the metrics you'll track to evaluate success.
 
 [ ![Experimentation user journey - Identify](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
