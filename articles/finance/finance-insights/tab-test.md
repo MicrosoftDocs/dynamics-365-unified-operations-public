@@ -51,6 +51,7 @@ Deploy the environments by completing the following steps.
 
 You can complete the steps as listed or use the attached PowerShell script to speed up the configuration. 
 
+
 # [Configure the Common Data Service](#tab/configure-the-common-data-service)
 
 1. Create a new Common data services environment in the same Active Directory Tenant. To do this, open the Environments page on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -78,19 +79,19 @@ You can complete the steps as listed or use the attached PowerShell script to sp
    - Change the **Maximum file size** (in kilobytes) to 51,200.
    - Click **OK** to save the changes.
 
- # [PowerShell CDS script](#tab/powershell-cds-script)
+# [PowerShell CDS script](#tab/powershell-cds-script)
 
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
+    Write-Output 'The following modules need to be present for execution of this script:'
+    Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
+    Write-Output '  Microsoft.PowerApps.PowerShell'
+    Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
 
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
+    try {
+        $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
+        if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
+            Write-Warning 'User declined to install required modules.'
+            return
+        }
 
     $module = 'Microsoft.PowerApps.Administration.PowerShell'
     if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
@@ -247,18 +248,18 @@ try {
       Write-Output 'Values for PowerAI LCS Add-In:'
       Write-Output ("  CDS orgainization url:             " + $crmOrg.WebApplicationUrl)
       Write-Output ("  CDS orgainization ID:              " + $crmOrg.OrganizationId)
-  }
-  catch {
-      Write-Error $_.Exception.Message
-      Write-Warning $_.Exception.StackTrace
-      $inner = $_.Exception.InnerException
-      while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
+    }
+    catch {
         Write-Error $_.Exception.Message
         Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
+        $inner = $_.Exception.InnerException
+        while ($null -ne $inner) {
+          Write-Output 'Inner Exception:'
+          Write-Error $_.Exception.Message
+          Write-Warning $_.Exception.StackTrace
+          $inner = $inner.InnerException
+        }
       }
-    }
 
 
 ## Configuring Azure setup
