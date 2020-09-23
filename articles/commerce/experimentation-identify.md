@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Identify goals for an experiment
-description: This topic describes how to establish the goals for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
+title: Identify a hypothesis and determine metrics for an experiment
+description: This topic describes how to establish the hypothesis and success metrics for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
 author:  sushma-rao 
 manager: AnnBe
 ms.date: 10/01/2020
@@ -29,20 +29,16 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Identify goals for an experiment
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. The first phase in the experimentation lifecycle includes identifying the goals for the experiment and deciding how you want to set up the experiment in Commerce.
+# Identify a hypothesis and determine metrics for an experiment
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. The first phase in the experimentation lifecycle includes identifying the hypothesis and goals for the experiment and determining the metrics you'll track to evaluate success.
 
 [ ![Experimentation user journey - Identify](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 
-Identify is the first stage in the experimentation journey where you decide the what and how for your experiment. Here are some things to consider:
+Before you set up the experiment in the third-party service and connect it to Dynamics 365 Commerce, you need to define exactly what it is you want to test and decide which metrics to track during the experiment to intepret the results. 
 
-## Create a hypothesis and configure metrics
-Define the assumption or theory you want to validate with your experiment and the success metrics that you expect it to impact.
+A hypothesis is a statement where you predict the outcome of the experiment. Many factors go into defining a hypothesis, for example, research about user behavior and website data you've collected. With the hypothesis, you'll define the assumption or theory you want to validate with your experiment. An example of a hypothesis for your experiment may be "*a picture of a white t-shirt on my home page will drive more clickthroughs on my site than a navy sweater during summer months because people want to wear something lightweight and light color in the summer.*" In that case, you'll create variations that include a white t-shirt and a navy sweater, and publish both at the same time.
 
-## Decide what you want to experiment on
-Define the scope of the experiment - full or partial. Choose **partial** if you want to target a specific portion of a page. In this case, content changes made to the default page or fragment will be automatically synchronized across variations. Choose **full** if you want to target an entire page or fragment. In this case, separate copies of the default page or fragment are created i.e. content changes will need to be manually synchronized across variations.
+Metrics you collect during the experiment track how your website users respond to the variations. Choose which metrics to track based on what you believe will give you the best insight into determining whether your hypothesis is valid. In the example above, you may choose to track bounce rate or conversion rate. 
 
-## Decide how you want to publish your experiment
-Think about whether you want to schedule your experiment to be published in a publish group or directly publish to your live site. This will help you determine where you want to create your experiment.
-
-Read more about [publishing your experiment](experimentation-preview-publish.md).
+## Next step
+[Set up your experiment](ADD WHATEVER LINK IS NEXT}
