@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetFaultArea 
+ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
