@@ -40,12 +40,12 @@ This topic lists the help topics that are available for Asset leasing, and inclu
 Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.  
 
 ## Asset leasing topics
-The following topics are available to help configure and use Asset leasing. 
+The following topic is available to help configure and use Asset leasing. 
 
- - [Asset leasing overview](asset-leasing-overview.md) This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
+ - [Asset leasing overview](asset-leasing-overview.md) - This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
  
  ### Set up Asset leasing
- This group of topics can help you configure Asset leasing in a manner that's optimal for your organizations' business situation. There are also topics on the following tasks: 
+ This group of topics can help you configure Asset leasing in a manner that's optimal for your organizations' business situation.  
   
   - [Configure lease parameters](config-lease-parameters.md) 
   - [Set up lease books](set-up-lease-books.md)
@@ -99,7 +99,7 @@ Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink
 
 You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.
 
 #### Task guides
 Additional help is available as task guides. To access task guides, click the Help button on any page.
@@ -108,5 +108,3 @@ Additional help is available as task guides. To access task guides, click the He
 
 Check out the how-to videos that are now available on the 
 [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
