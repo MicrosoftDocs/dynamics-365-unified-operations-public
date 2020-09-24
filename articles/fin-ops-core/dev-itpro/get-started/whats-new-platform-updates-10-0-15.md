@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.15 of Finance and Operations apps (Janu
 description: This topic lists the features are included in the platform updates for version 10.0.15 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,6 +41,9 @@ This topic lists the features that are included in the platform updates for vers
 - **Auto-update:** January 2021
 
 ## Features included in this release
+
+-  Azure Pipelines task for asset deployment now supports self-service environments<br>- For more information to enable this support, see
+[Deploy assets by using Azure Pipelines](../dev-tools/pipeline-deploy-asset.md).
 
 -  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
 [Article that provides details](URL to article that provides feature details).
