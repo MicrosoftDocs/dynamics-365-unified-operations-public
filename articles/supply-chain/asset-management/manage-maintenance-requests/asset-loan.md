@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetObjectLoanSend 
+ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
