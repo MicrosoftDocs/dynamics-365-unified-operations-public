@@ -984,8 +984,6 @@
         href: finance-insights/finance-insights-admin.md
       - name: Configuration and administration
         items:
-        - name: Configure Finance Insights test
-          href: finance-insights/tab-test.md
         - name: Configure Finance Insights
           href: finance-insights/configure-for-fin-insites.md
         - name: Set up demo data for Payment predictions
