@@ -237,9 +237,7 @@ Switch to **General** FastTab; the **Initial right-of-use asset** and **lease li
 Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
 [![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
 
-
 The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
-
 
 [![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
@@ -261,7 +259,6 @@ Click **Asset leasing journals** to post the initial recognition transaction.
 
 The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
  
-
 [![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
 
 The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
@@ -271,16 +268,15 @@ Create the journal, and then go to **Asset leasing journals**. The **Lease liabi
 
 The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
-
 [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
 
 The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 
-[![XXX](./media/overview-21.png)](./media/overview-21.png)
+[![Right-of-use asset transactions](./media/overview-21.png)](./media/overview-21.png)
 
 The **Lease liability transactions** page showsthe initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
-[![XXX](./media/overview-22.png)](./media/overview-22.png)
+[![List of lease liability transactions](./media/overview-22.png)](./media/overview-22.png)
 
 
 
