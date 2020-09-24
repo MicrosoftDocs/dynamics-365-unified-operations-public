@@ -5,7 +5,7 @@ title: Migrate channel to a different Commerce Scale Unit
 description: This topic explains how to migrate a Commerce Channel to a different Commerce Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,7 +30,8 @@ ms.dyn365.ops.version: 8.0
 # Migrate channel to a different Commerce Scale Unit
 This article explains how to migrate a Commerce Store Channel to a different Commerce Scale Unit (CSU) than the one it is currently operating with. You may choose to migrate channel(s) to a different CSU for better load isolation & resource governance between channels, for reduced latency to your Stores, or for managing different update/extension deployment schedules for staged roll-out and pilots. Migrating to a different CSU involves downtime for that channel. This article describes best practices to migrate channels while minimizing business disruption and downtime. This applies to both migration of channels between cloud-hosted Commerce Scale Units to other cloud-hosted CSUs, between self-hosted Commerce Scale Units to other self-hosted CSUs, as well as between cloud-hosted and self-hosted CSUs, and in either direction. 
 
->[!Note] If you migrate channels between CSUs, temporary sales data used for journal records & POS reports, from prior to the migration, will no longer be available at POS after migration. Journals and Channel reports will start afresh with new data after the migration.
+> [!Note] 
+> If you migrate channels between CSUs, temporary sales data used for journal records and POS reports, from prior to the migration, will no longer be available at POS after migration. Journals and Channel reports will start afresh with new data after the migration.
 
 ## Planning for downtime
 With the steps described in this article, all long running system processes involved in this exercise (including synchronization of master data for products, prices, customers, etc.) are run before the actual migration, while the stores are operational. The critical period of migration during which you must take a planned downtime in your environment will involve data synchronization of a very small payload of channel configuration data to the new Commerce Scale Unit. In most cases, this synchronization can complete in under 10 minutes. However, from an operational perspective, you will need to plan for a longer downtime window to allow for all pre-requisite steps to complete (e.g. closing all shifts, synchronizing transactions to to HQ, posting statements, etc.), which will vary by each organization.
@@ -67,7 +68,7 @@ The following steps must be performed during planned downtime for your channels.
 
 1. On all Point of Sale devices, ensure all Shifts are closed.
 2. Logout on all POS devices.
-3. Validate all POS offline transactions are synchronized to HQ. Run P-jobs for all existing channel database(s) that will be migrated. If you proceed to migration before P-jobs have completed, your number sequences will not match and you will need to [Reset receipt number sequences](https://docs.microsoft.com/en-us/dynamics365/commerce/reset_receipt_number_sequence).
+3. Validate all POS offline transactions are synchronized to HQ. Run P-jobs for all existing channel database(s) that will be migrated. If you proceed to migration before P-jobs have completed, your number sequences will not match and you will need to [Reset receipt number sequences](../../../commerce/reset_receipt_number_sequence.md).
 4. Validate all Statements are posted.
 
 ## Migrate channels to new Commerce Scale Unit
@@ -79,7 +80,7 @@ The following steps must be performed during planned downtime for your channels.
 5. Run **Channel configuration job (1070)** and **POS redeployment job (1160)** by selecting **Run now** (or **Create batch job** for asynchronous processing) for each job. After the jobs complete, your channels have now migrated to the new CSU. 
 6. If you are using Cloud Point of Sale, you will need to use the URL of Cloud Point of Sale for the new CSU, and re-active the POS device. 
 7. For MPOS, close, re-open and login on each POS device.
-8. If you re-activate before P-jobs have completed, your number sequences will not match and you will need to [Reset receipt number sequences](https://docs.microsoft.com/en-us/dynamics365/commerce/reset_receipt_number_sequence).
+8. If you re-activate before P-jobs have completed, your number sequences will not match and you will need to [Reset receipt number sequences](../../../commerce/reset_receipt_number_sequence.md).
 
 ## Post migration steps
 
