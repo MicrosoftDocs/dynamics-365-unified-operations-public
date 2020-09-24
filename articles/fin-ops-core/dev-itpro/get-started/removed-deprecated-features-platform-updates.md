@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,6 +40,22 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Platform updates for version 10.0.15 of Finance and Operations apps
+
+> [!NOTE]
+> Version 10.0.15 hasn't been released yet. This information is provided for planning purposes. The content and the functionality of version 10.0.15 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+### Visual Studio add-in to apply metadata hotfixes
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
+| **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
+| **Product areas affected**         | Visual Studio add-ins |
+| **Deployment option**              | Development virtual machines |
+| **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
+
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
