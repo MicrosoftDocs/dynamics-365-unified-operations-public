@@ -92,10 +92,10 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Periods** - These are the lease periods that reflect the compounding internal and annuity type. The compounding interval determines how periods will be divided. You can set the following compounding intervals:
 
-- Monthly, 12 periods per year
-- Quarterly, 4 periods per year
-- Semiannually, 2 periods per year
-- Annually, 1 period per year
+  - Monthly, 12 periods per year
+  - Quarterly, 4 periods per year
+  - Semiannually, 2 periods per year
+  - Annually, 1 period per year
 
 The first period will start with period zero, if the annuity type is annuity due. Otherwise the first period will start with one, if the annuity type is payment arrears.
 
