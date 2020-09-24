@@ -49,7 +49,7 @@ While the experiment is running, you may decide to modify your variations based 
 
 If you decide to make changes to variations despite the impact on your data, follow the steps below.  
 1. Go to the **Experiments** tab in site builder and select the experiment. 
-1. Select the variation you want to update from the **Variations** drop-down.
+1. Select the variation you want to update from the drop-down.
 1. Make the changes you want, then preview and publish the variations. See [Preview and publish an experiment](experimentation-preview-publish.md) for more information.
 1. Go to the third-party service and make any setup-related changes required by the service.
     
