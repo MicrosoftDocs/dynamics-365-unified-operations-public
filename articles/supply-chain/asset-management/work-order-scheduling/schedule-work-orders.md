@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderSchdulePreviewPart 
+ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
