@@ -112,4 +112,4 @@ There are many topics about manufacturing and supply chain management on the [Dy
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 on Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).
+For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
