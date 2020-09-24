@@ -5,7 +5,7 @@ title: Asset leasing quick start
 description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease at a high level. 
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/01/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-09-01
+ms.author: moaamer
+ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ---
 
@@ -88,7 +88,7 @@ The **payment schedule line** captures the lease payments per period. It also sp
 
 The **payment frequency** indicates whether the payment is monthly, quarterly, semiannually, or annually. The end date is calculated automatically based on the start date and the number of periods entered.
 
-**Payment schedule** represents the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods and the annuity type.
+**Payment schedule** represents the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods, and the annuity type.
 
 **Periods** represent the lease periods that reflect the compounding internal and annuity type. The compounding interval determines how periods will be divided. You can set the following compounding intervals:
 
