@@ -94,7 +94,7 @@ The various environments are provisioned at different times. The following table
 | Production                      | At production system readiness | A production deployment request must be submitted in LCS. Deployment is done through the Dynamics Service Engineering (DSE) team within two business days. |
 
 > [!IMPORTANT]
-> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the Azure DevOps source repository.
+> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. We strongly recommend using the same dedicated environment admin account on all environments. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the Azure DevOps source repository.
 
 ### Production system readiness
 
@@ -123,7 +123,7 @@ Additional environments can be purchased as add-ons, or they can be deployed as 
 ![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
-> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Assign the environments an owner who will be responsible for their status and maintenance. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.
+> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Assign the environments an owner who will be responsible for their status and maintenance. We strongly recommend using the same dedicated environment admin account on all environments. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.
 
 ### Deployment considerations for development environments
 
