@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -288,11 +288,11 @@ Because you've updated your certificates, the configuration file that is present
 
 	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. Change the thumbprints to the new thumbprints that you previously configured. (You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.)
+3. Change the thumbprints to the new thumbprints that you previously configured. You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.
 
-	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![Deployment settings thumbprint image 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![Deployment settings thumbprint](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![Deployment settings thumbprint image 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
@@ -308,9 +308,9 @@ Because you've updated your certificates, the configuration file that is present
 
 	Here is an example of how the name of the same thumbprint might differ.
 
-	![Deployment settings thumbprint example](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![Deployment settings thumbprint example 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![Deployment settings thumbprint example](media/642f6434da9cdeac3651b765acca08fa.png)
+	![Deployment settings thumbprint example 2](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
@@ -355,9 +355,23 @@ This procedure should be completed either after a successful certificate rotatio
 
 ### Data encryption certificate
 
-This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
-In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day for three consecutive days. Depending on the amount of data, the batch job might be able to finish running in less time.
+In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day until all of the data has been re-encrypted. In order to enable the batch job, a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB).
+
+```sql
+IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
+  UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
+ELSE
+  INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
+ 
+IF (EXISTS(SELECT * FROM SECURITYCONFIG WHERE [KEY_] = 'EnableEncryptedDataRotation'))
+  UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
+ELSE
+  INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
+```
+
+After the above commands have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
