@@ -78,7 +78,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
    - Click **Settings > Email Configuration**.
    - Change the **Maximum file size** (in kilobytes) to 51,200.
    - Click **OK** to save the changes.
----
+
 # [PowerShell configuration script](#tab/powershell-configuration-script)
 
     Write-Output 'The following modules need to be present for execution of this script:'
@@ -300,7 +300,6 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 8. Use the information from the script output to install the **Export to Data Lake** add-in in Lifecycle Services (LCS).
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
----
 
 # [PowerShell configuration script for Azure setup](#tab/powershell-configuration-script-for-azure-setup)
 
