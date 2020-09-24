@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderTableCreateRelated 
+ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
