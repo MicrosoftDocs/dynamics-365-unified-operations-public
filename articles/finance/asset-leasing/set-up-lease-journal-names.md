@@ -41,6 +41,6 @@ Lease journal names specify the journals that Asset leasing transactions are pos
 To configure lease journal names, follow these steps.
 
 1. Go to **Asset leasing \> Setup \> Asset leasing parameters**.
-2. On the **General** tab, in the **Initial recognition journal name** field, select a journal. All initial recognition journal entries will be posted to this journal name.
+2. On the **General** tab, in the **Initial recognition journal name** field, and select a journal. All initial recognition journal entries will be posted to this journal name.
 3. In the **Invoice journal name** field, select a journal. If the **Pay to vendor** option is set to **Yes** for the lease book, lease and expense payment invoices will be posted to this journal name.
 4. In the **Lease journal name** field, select a journal. All depreciation, interest, and short-term reclassification entries will be posted to this journal name. If the **Pay to vendor** option is set to **No** for the lease book, lease payments and expense payment entries will also be posted to this journal name.
