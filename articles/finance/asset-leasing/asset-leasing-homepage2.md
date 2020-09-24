@@ -5,7 +5,7 @@ title: Asset leasing home page
 description: This topic provides an overview of Asset leasing documentation, and links to specific topics.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/14/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-09-14
+ms.author: moaamer
+ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ---
 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic lists the help topics that are available for Asset leasing, and includes links to specific topics. 
 
-Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helpd generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.  
+Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.  
 
 ## Asset leasing topics
 The following topics are available to help configure and use Asset leasing. 
@@ -58,7 +58,7 @@ The following topics are available to help configure and use Asset leasing.
   - [Assign user roles](lease-user-roles.md)
 
 ### Manage asset leases
-This group of topics describes the process for adding leases, creating payment invoices, adjusting leases, importing lease information and impairing a right-of-use asset. 
+This group of topics describes the process for adding leases, creating payment invoices, adjusting leases, importing lease information, and impairing a right-of-use asset. 
 
  - [Add or copy a lease](add-lease.md)
  - [Create a payment invoice](create-payment-invoice.md)
