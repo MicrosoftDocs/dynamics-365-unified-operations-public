@@ -52,10 +52,10 @@ By default, all Sandbox Standard Acceptance Test environments use Microsoft Azur
 
 However, access can be granted to your source system using your public IP address.  This can be enabled in different manners, depending on your environment type and RDP access.  In either case, connecting to the database will require specifying the server and the database explicitly.  The information that is available from the environment details page in Microsoft Dynamics Lifecycle Services (LCS) will provide this information. 
 
-Find the username record for **axdbadmin**, and note the SQL server and database in the format **{sqlServer\\sqlDatabase}** such as 'spartan-nam-opsprod365433.database.windowsnet\DBOpsProd365_SandboxUAT_d2145fe' where the server value for SSMS would be 'spartan-nam-opsprod365433.database.windowsnet' and the database value would be 'DBOpsProd365_SandboxUAT_d2145fe'.  The database must be specified using the **Connection Properties** button in the SSMS connection dialog screen.  Use the axdbadmin username and password.
+Find the username record for **axdbadmin**, and note the SQL server and database in the format **{sqlServer\\sqlDatabase}** such as 'spartan-nam-opsprod365433\DBOpsProd365_SandboxUAT_d2145fe' where the server value for SSMS would be 'spartan-nam-opsprod365433.database.windows.net' and the database value would be 'DBOpsProd365_SandboxUAT_d2145fe'.  The database must be specified using the **Options** button in the SSMS connection dialog screen.  Use the axdbadmin username and password.
 
 ### Microsoft managed environments with RDP access available
-If you have RDP access to your Sandbox, logon to the Sandbox AOS VM and open Microsoft SQL Server Management Studio (SSMS). In SSMS, enter the SQL Server, username, and password. On the **Connection Properties** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+If you have RDP access to your Sandbox, logon to the Sandbox AOS VM and open Microsoft SQL Server Management Studio (SSMS). In SSMS, enter the SQL Server, username, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
@@ -71,7 +71,7 @@ Note that these rules are deleted whenever you perform a database refresh, or da
 ### Microsoft managed environments without RDP access
 If you no longer have RDP access to your Sandbox, you can instead add your IP address to the **allowlist** in a self-service fashion from Lifecycle Services (LCS).  Visit your Sandbox enviornment details page in LCS, and under the **Maintain** -> **Enable access** dialog add your source environment's IP address.  This will expire after a number of hours.
 
-Before the entry expires, connect to the Sandbox database by entering the SQL Server, username, and password. On the **Connection Properties** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+Before the entry expires, connect to the Sandbox database by entering the SQL Server, username, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
@@ -87,7 +87,7 @@ Unfortunately Self-service type Sandbox environments are not supported for AX 20
 ## Clear sandbox database of all objects
 In this step, we will clean out the sandbox database that has Finance and Operations schema.  This will provide a blank or empty database from which you can bring your source AX 2012 schema and later the data as well.  In the event the data upgrade fails, you can always come back to this step and start fresh.
 
-Using SQL Server Management Studio (SSMS), connect to your Sandbox database as you had in prior steps.  Right-click on the database name and select **Tasks** -> **Generate scripts**.  Click Next to advance beyond the Introduction screen, and then on the Choose Objects screen click on the 'Select specific database objects' option.  
+Using SQL Server Management Studio (SSMS), connect to your Sandbox database as you had in prior steps.  Right-click on the database name and select **Generate scripts**.  Click Next to advance beyond the Introduction screen, and then on the Choose Objects screen click on the 'Select specific database objects' option.  
 
 Check the boxes next to:
 * Tables
@@ -112,8 +112,43 @@ Run the AX2012SchemaPublish.ps1 script with the following parameters:
 * AX2012DBName - this is the name of your AX 2012 database
 * TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps
 * TargetDBName - this is the name of your AXDB, retrieved in prior steps
+* AxDBAdminPassword - this is the password for the axdbadmin SQL account
 
 During execution, the script will make use of SqlPackage.exe to extract only the database and schema definitions from your 2012 database as 2012DBSource.dacpac in the working directory.  Next, it will publish this to your Sandbox environment using the Profile.publish.xml publishing profile included in the toolkit.  This publishing profile will skip over several object types such as SQL Views, SQL Users, Statistics, and other objects which are not required for the upgrade.
 
 When finished, verify that you can see the tables in the Sandbox database via SSMS and confirm that they are indeed empty and have no data.
 
+## Transfer data from AX 2012 to the sandbox database
+Now that the schema is in place, we now need to transfer the data to the target tables.  This will be done using a SQL linked server, and also making use of parallelism features available in Powershell version 7.0+ that is included in the Database Movement Toolkit.
+
+Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , go to this folder location using the Command Prompt application.
+
+Run the AX2012DataTransfer.ps1 script with the following parameters:
+* SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted
+* AX2012DBName - this is the name of your AX 2012 database
+* TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps
+* TargetDBName - this is the name of your AXDB, retrieved in prior steps
+* AxDBAdminPassword - this is the password for the axdbadmin SQL account
+* LinkedServerName - this is the name of the link server to be created
+* DegreeOfParallelism - this is the number of tables that will be processed in parallel.  This should be equal to 50% of the cores available on the source environment, as it is CPU and RAM intensive.
+
+During execution, the script will create a linked server if one doesn't yet exist between the source server and the sandbox server.  From there, it will copy data from all of the AX 2012 tables in to the target database, using the DegreeOfParallelism parameter to process multiple tables at once.
+
+## Apply the data upgrade package from Lifecycle Services
+Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS Project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012#identify-the-project-as-an-ax-2012-upgrade).
+
+From your environment details page, use the **Maintain** -> **Apply updates** button and wait for the list of packages to load.  By scrolling to the bottom of the list, you will start to see Data Upgrade packages that are being pulled in to the list of packages from the Shared asset library.  It make take some time to load all of the available upgrade packages.
+
+Select the upgrade package that matches the version you wish to achieve, such as AX2012DataUpgrade-10-0-14 to upgrade to 10.0.14 for example.
+
+### Troubleshooting data upgrade errors
+There are several ways to troubleshoot data upgrade errors.  In some cases, you can view the error in the deployable package logs from LCS.  This is the case when the error is related to starting/stopping services, Database synchronization, and so forth.  
+
+If the upgrade fails on an upgrade script, you can view these in the ReleaseUpdateScriptsErrorLog table in the Sandbox database.  You can access this table using previous steps to connect to the sandbox database.
+
+If you can fix the data, you may then resume the upgrade from LCS.  Note that you cannot resume from LCS more than 8 times, continuing to resume after this number of retries will just result in another failure as the backend systems will not allow more attempts.  If this is the case, you can use the **Abort** button to cancel the upgrade package and start over by clearing all objects from the Sandbox database.
+
+## Copy the database to Production for mock go live and actual go live
+After the data upgrade is complete, apply the same customization packages from your Sandbox environment on to your Production environment. Thereafter, you can copy your Sandbox environment AXDB database to the Production environment.
+
+To perform the copy operation, see [Copy the Sandbox database to Production](../database/dbmovement-scenario-goldenconfig#Copy-Sandbox-Database-Production).
