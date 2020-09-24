@@ -1226,6 +1226,22 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Electronic invoicing add-on
+        items: 
+        - name: Electronic invoicing add-on overview
+          href: localizations/e-invoicing-service-overview.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Get started with the Electronic invoicing add-on
+          href: localizations/e-invoicing-get-started.md
+        - name: Get started with Electronic invoicing add-on for Brazil
+          href: localizations/e-invoicing-bra-get-started.md
+        - name: Get started with Electronic invoicing add-on for Italy
+          href: localizations/e-invoicing-ita-get-started.md
+        - name: Get started with the Electronic invoicing add-on for Mexico
+          href: localizations/e-invoicing-mex-get-started.md
+        - name: Set up the Electronic invoicing add-on
+          href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -3562,6 +3578,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
           - name: Design multilingual reports
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Compress large outbound documents
+            href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
