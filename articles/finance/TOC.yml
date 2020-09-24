@@ -792,7 +792,7 @@
       items:
       - name: Asset leasing home page
         href: asset-leasing/asset-leasing-homepage2.md
-      - name: Asset leasing quick start
+      - name: Asset leasing get started
         href: asset-leasing/asset-leasing-quick-start.md
     - name: General ledger
       items:
