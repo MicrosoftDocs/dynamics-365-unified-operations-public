@@ -64,6 +64,5 @@ When using publish groups with experiments, there are some important considerati
 ## Previous topic
 [Connect and edit an experiment](experimentation-connect-edit.md)
 
-
 ## Next topic
 [Run and monitor an experiment](experimentation-run-monitor.md)
