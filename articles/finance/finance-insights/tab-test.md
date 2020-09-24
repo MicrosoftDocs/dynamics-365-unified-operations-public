@@ -300,6 +300,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 8. Use the information from the script output to install the **Export to Data Lake** add-in in Lifecycle Services (LCS).
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
+---
 
 # [PowerShell configuration script for Azure setup](#tab/powershell-configuration-script-for-azure-setup)
 
@@ -742,7 +743,7 @@ function New-FinanceDataLakeAzureResources {
         $inner = $inner.InnerException
       }
     }
-
+---
 
   ### Manual setup
 
