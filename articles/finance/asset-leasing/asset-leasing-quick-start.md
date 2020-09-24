@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing quick start
-description: This topic describes the Asset leasing capability and walks through the steps for creating a asset lease at a high level. 
+description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease at a high level. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 09/01/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the Asset leasing capability and walks through the steps for creating a asset lease at a high level. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helpd generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable and General ledger.
+This topic describes the Asset leasing capability and walks through the steps for creating an asset lease at a high level. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable and General ledger.
 
 For more information regarding accounting standards, refer to the standard documentation of IFRS 16 and US GAAP ASC 842.
 
@@ -59,15 +59,15 @@ Asset leasing integrates with General ledger to ensure that all posted lease tra
 ## Asset leasing components 
 Asset leasing maps lease information, payment schedules, starting and ending dates, and the payment frequency. It also automates calculations for present value, monthly lease payments, interest, and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, that are based on the framework defined by the accounting standard you’re following.
 
-The following diagram shows the lease book, the lease, calculated payment schedule, books and lease classification tests and the corresponding accounting transactions.
+The following diagram shows the lease book, the lease, calculated payment schedule, the classification tests for leases and lease books, and the corresponding accounting transactions.
 
 [![Leasing, lease book and payment schedule](./media/overview-02.png)](./media/overview-02.png)
 
-**Lease book** The lease books includes all the lease contract information such as lease terms, fair value, and lease payments. It also includes the accounting standard that you're following, the lease type and thresholds that are considered in lease classification test. The lease book also contains the lease transactions that posted to general ledger. 
+**Lease book** The lease book includes all the lease contract information such as lease terms, fair value, and lease payments. It also includes the accounting standard that you're following, the lease type and thresholds that are considered in lease classification test. The lease book also contains the lease transactions that posted to general ledger. 
   
 **Lease** The lease carries the asset lease information that represents the foundation of the asset leasing, lease information source is lease contract and management decision that are both are done outside of Microsoft Dynamics 365 Finance. The asset's fair value is the price that would be paid for an asset in a transaction at the measurement date. This value might depend on the asset type, market conditions, and other criteria that can be taken into consideration in the assessment. The asset fair value will be considered in the classification test equation.
 
-The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset will be considered in the classification test equation. It differes from the useful life as defined in Fixed assets.
+The **asset useful life** represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset will be considered in the classification test equation. It differs from the useful life as defined in Fixed assets.
 
 The **incremental borrowing rate** represents the interest rate that will be used to calculate the present value. The system will use the implicit rate if it's defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
 
@@ -104,7 +104,7 @@ The first period will start with period zero, if the annuity type is annuity due
 > [!NOTE] 
 > The present value is calculated based on the discounted cash flow equation.
 
-**Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that are used as the basis for the classification tests. The result of the classification tests are used to automatically specify the lease type.
+**Books** are the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that's used as the basis for the classification tests. Classification tests are used to specify the lease type automatically.
 
 The **accounting framework** shows the selected accounting standard, either IFRS 16 and ASC 842, that you're supporting. The accounting standard is designated on the book that’s associated with the lease. The accounting standard will determine the ledger accounts that are specified in the posting profile.
 
@@ -162,7 +162,7 @@ Finance lease entry for IFRS and US GAAP  <br>
 Debit: Finance lease liability  <br>
 Credit: Vendor liability (subledger)/Notes payable  <br>
 
-**Asset depreciation**: The right-of-use asset is depreciated over whichever is less the asset useful life, or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will be executedfrom  fixed assets module only. 
+**Asset depreciation**: The right-of-use asset is depreciated over whichever is less the asset useful life, or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset the depreciation transactions will be executed from fixed assets module only. 
 
 Operating lease entry of US GAAP <br>
    Debit: Lease expense <br>
@@ -172,15 +172,15 @@ Finance lease entry for IFRS and US GAAP: <br>
    Debit: Depreciation of right of use asset expense <br>
      Credit: Right of use asset accumulated depreciation   <br>
 
-**Short term lease** A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
+**Short-term lease** A short-term lease is recognized as an expense, which will affect organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
 
-Short term lease entry for IFRS and US GAAP <br>
+Short-term lease entry for IFRS and US GAAP <br>
    Debit: Lease expense <br>
      Credit: Vendor liability (subledger)/ Notes payable <br>
 
 **Low value lease** A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
 
-Short term lease entry for IFRS and US GAAP <br>
+Short-term lease entry for IFRS and US GAAP <br>
    Debit: Lease expense <br>
      Credit: Vendor liability (subledger)/Notes payable <br>
 
@@ -274,7 +274,7 @@ The **ROU asset transactions** page lists initial recognition, accumulated depre
 
 [![Right-of-use asset transactions](./media/overview-21.png)](./media/overview-21.png)
 
-The **Lease liability transactions** page showsthe initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
 [![List of lease liability transactions](./media/overview-22.png)](./media/overview-22.png)
 
