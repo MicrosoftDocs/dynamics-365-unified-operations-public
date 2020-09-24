@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane 
+ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
