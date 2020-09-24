@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetObjectJobType 
+ms.search.form: EntAssetObjectJobType, EntAssetObjectType 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
