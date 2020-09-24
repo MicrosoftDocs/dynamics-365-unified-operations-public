@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetMaintenanceStopCopy 
+ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
