@@ -5,7 +5,7 @@ title: GETENUMVALUEBYNAME ER function
 description: This topic provides information about how the GETENUMVALUEBYNAME Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 09/17/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
