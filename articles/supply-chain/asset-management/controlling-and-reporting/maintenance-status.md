@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetStatusCalculate 
+ms.search.form: EntAssetStatusCalculate, EntAssetStatus 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
