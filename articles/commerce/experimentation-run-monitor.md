@@ -45,7 +45,7 @@ You need to do research to determine the optimal time you'll need to keep the ex
 While the experiment is running, you may decide to modify your variations based on the results that are coming in. 
 
 > [!IMPORTANT]
-> If you make changes to an active experiment in Commerce or the third-party service, your results may be significantly impacted. Consider letting the experiment run its course and then creating a new experiment for major changes.
+> If you make changes to a live experiment in Commerce or the third-party service, your results may be significantly impacted. Consider letting the experiment run its course and then creating a new experiment for major changes.
 
 If you decide to make changes to variations despite the impact on your data, follow the steps below.  
 1. Go to the **Experiments** tab in site builder and select the experiment. 
