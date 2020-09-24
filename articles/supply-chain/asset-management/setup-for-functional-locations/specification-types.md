@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationTypeCopy
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationTypeCopy, EntAssetAttributeType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
