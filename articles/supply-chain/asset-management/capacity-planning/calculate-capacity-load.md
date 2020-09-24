@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetCapacityLoad 
+ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
