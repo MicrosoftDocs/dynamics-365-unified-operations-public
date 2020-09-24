@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure the ledger
-description: This topic provides information about how to configure the ledger for each legal entity. It includes information about selecting currencies, fiscal calendars, the chart of accounts, and the account structures to be used with each legal entity.
+description: This topic provides information about configuring ledgers for each legal entity. It includes information about selecting currencies, fiscal calendars, the chart of accounts, and the account structures to be used with each legal entity.
 author: rprofit
 manager: 
-ms.date: 09/15/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,8 +22,8 @@ ms.search.scope:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
-ms.search.validFrom: 2018-10
+ms.author: rprofit
+ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.1
 
 ---
@@ -32,25 +32,25 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to configure the ledger for each legal entity. It includes information about selecting currencies, fiscal calendars, the chart of accounts, and the account structures to be used with each legal entity.
+This topic provides information about configuring ledgers for each legal entity. It includes information about selecting currencies, fiscal calendars, the chart of accounts, and the account structures to be used with each legal entity.
 
 ## Selecting the chart of accounts
 Each legal entity in Dynamics 365 Finance must be configured with details about the Ledger. The **Ledger** page allows you to select which chart of accounts and account structures will be used for the selected legal entity. You can share your chart of accounts and the account structures by configuring the **Ledger** page in each legal entity to use the same chart of accounts and account structures. It is also possible to share a portion of the configuration in each legal entity and have specific configuration in each legal entity. 
 
-If there are differences in the chart of accounts or account structures between your legal entities, it is recommended to consider if you can use the legal entity override features to meet the requirements for differences in each legal entity. When you can use the same chart of accounts and account structures and manage the exceptions through the legal entity overrides, the long-term maintenance of the chart of accounts and reporting can be simplified. 
+If your legal entities need different charts of accounts or account structures, the legal entity override feature might provide a useful option. Using the same chart of accounts and account structures  for multiple legal entities, and managing the exceptions through the legal entity overrides, can simplify their maintenance over time.
 
 To configure the chart of accounts for a legal entity, open **General ledger > Ledger setup > Ledger** page. Click the **Chart of accounts** drop-down button and select the chart of accounts to use. It is important to note that the chart of accounts cannot be changed after you have selected a value and posted transactions in the legal entity. 
 
 For more information on how to plan and configure the chart of accounts and main accounts see [Plan the chart of accounts](plan-chart-of-accounts.md).
 
 ## Selecting account structures
-Each legal entity in Dynamics 365 Finance can be configured to use one or more account structures. Each account structures defines the financial dimensions and combinations of main accounts and financial dimensions that will be allowed when posting transactions. You can use the same account structures in more than one legal entity. 
+Each legal entity in Dynamics 365 Finance can be configured to use one or more account structures. Each account structure defines the financial dimensions and combinations of main accounts and financial dimensions that will be allowed when posting transactions. You can use the same account structures in more than one legal entity. 
 
-If you have multiple account structures it is important to note that you can only select account structures that do not have overlapping main account and financial dimension combinations. For example, you have one account strucuture is configured to add a Business unit for main accounts between 1000 and 1999. In another account structures, you have added a Department financial dimension for main accounts that begin with 1. In this example, only one of the account strcutres would be allowed to be added into the same legal entity.
+If you have multiple account structures it is important to note that you can only select account structures that do not have overlapping main account and financial dimension combinations. For example, you have one account structure is configured to add a Business unit for main accounts between 1000 and 1999. In another account structures, you have added a Department financial dimension for main accounts that begin with 1. In this example, only one of the account structures would be allowed to be added into the same legal entity.
 
-To configure **Account structures** for your ledger, use the **Add** button on the **Account structures** FastTab, select an account structures from the list, and then click **Select**. It may take a few minutes for the account structures to be added and saved. It is important to note that the account strctures selected must be active in order for the details of the account structures to be effective in the legal entities where it is linked.
+To configure **Account structures** for your ledger, use the **Add** button on the **Account structures** FastTab, select an account structure from the list, and then click **Select**. It may take a few minutes for the account structures to be added and saved. It is important to note that the account structures selected must be active in order for the details of the account structures to be effective in the legal entities where it is linked.
 
-To remove an account structures, you can click **Remove** on the **Account structures** FastTab. It is important to note that removing an account structures from your ledger does not remove any transactions that were posted with the configuration of that account structures. 
+To remove an account structure, you can click **Remove** on the **Account structures** FastTab. It is important to note that removing an account structure from your ledger does not remove any transactions that were posted with the configuration of that account structures. 
 
 For more information about setting up your account structures see [Configure account structures](configure-account-structures.md).
 
@@ -61,7 +61,7 @@ To select the calendar, click the **Fiscal calendars** drop-down button and choo
 
 If a fiscal calendar is not selected in a legal entity, an error message will be received when a user tries to post a transaction in the legal entity. 
 
-For more information, see [Fiscal calendars, fiscal years, and periods](fiscal-calendars-fiscal-years-periods.md).
+For more information, see [Fiscal calendars, fiscal years, and periods](../budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 ## Use a balancing financial dimension
 After you have selected the **Chart of accounts** and added one or more **Account structures**, you can optionally select a single financial dimension that exists in all the account structures to be the **Balancing financial dimension**. The financial dimension that you select here must be balanced in all accounting entries. In other words, the debits and credits must be equal for the main account and *Balancing financial dimension**. The system creates transactions automatically to balance the entries based on the main accounts that are identified in the **Accounts for automatic transaction** page in the **Interunit - credit** and **Interunit - debit** fields.
@@ -69,7 +69,7 @@ After you have selected the **Chart of accounts** and added one or more **Accoun
 For more information about balancing entires see the [Balanced journals for interunit accounting](example-balanced-journals-interunit-accounting.md) page. 
 
 ## Configure currencies for the ledger
-The **Ledger** page is also used to control and define the currencies that will be used when posting transactions into the general ledger. You must specify the **Accounting currency**, which is the currency used in the **Accounting currency** column in the general ledger on all vouchers. You can optionally select a second currency in the **Reporting currency** column. If you select a currency, all transactons will be recorded in the selected currency in the general ledger on all vouchers in the **Reporting currency** column on vouchers. 
+The **Ledger** page is also used to control and define the currencies that will be used when posting transactions into the general ledger. You must specify the **Accounting currency**, which is the currency used in the **Accounting currency** column in the general ledger on all vouchers. You can optionally select a second currency in the **Reporting currency** column. If you select a currency, all transactions will be recorded in the selected currency in the general ledger on all vouchers in the **Reporting currency** column on vouchers. 
 
 When transactions are posted in a different currency, the system will automatically convert the transaction amount from the transactions currency into the accounting currency and reporting currencies on the voucher. In the **Accounting currency exchange rate type** field select the exchange rate type that is configured with the exchange rates that should be used to convert values from the transaction currency to the accounting currency on the vouchers. If you selected a different reporting currency, you must also select the **Reporting currency exchange rate type** to indicate which exchange rate will be used when converting from the transaction currency to the reporting currency on a voucher. 
 
