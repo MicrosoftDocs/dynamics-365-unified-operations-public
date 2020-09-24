@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Asset leasing overview
-description: This topic describes the Asset leasing capability and defines the terminology used in the user interface and the documentation. 
+title: Asset leasing quick start
+description: This topic describes the Asset leasing capability and walks through the steps for creating a asset lease at a high level. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 09/01/2020
@@ -30,12 +30,12 @@ ms.search.validFrom: 2020-09-01
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Asset leasing overview
+# Asset leasing quick start
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the Asset leasing capability and defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helpd generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable and General ledger.
+This topic describes the Asset leasing capability and walks through the steps for creating a asset lease at a high level. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helpd generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable and General ledger.
 
 For more information regarding accounting standards, refer to the standard documentation of IFRS 16 and US GAAP ASC 842.
 
@@ -54,9 +54,9 @@ The main components that define a leased asset include the following:
 
 For off-balance sheet leases, the system calculates the straight-line lease expense over whichever is less: the economic life of the asset, or the lease term. Finally, lease adjustments measure contract modifications such as a lease extension or expansion, and the impairment transaction that writes down the right-of-use asset for non-recoverable costs.
 
-Asset leasing is integrated with General ledger, which ensures that all posted lease transactions update your chart of accounts. Asset leasing is integrated with accounts payable to track lessor invoices in Accounts payable and take future payments from there. The integration with Fixed assets lets you track leases in the fixed assets register and post right-of-use assets transactions, including the initial recognition, depreciation, and impairment of the asset, from within Fixed assets.   
+Asset leasing integrates with General ledger to ensure that all posted lease transactions update your chart of accounts. Asset leasing integrates with accounts payable to track lessor invoices in Accounts payable and take future payments from there. The integration with Fixed assets lets you track leases in the fixed assets register and post right-of-use assets transactions, including the initial recognition, depreciation, and impairment of the asset, from within Fixed assets.   
 
-## Asset leasing components in Microsoft Dynamics 365 Finance.
+## Asset leasing components 
 Asset leasing maps lease information, payment schedules, starting and ending dates, and the payment frequency. It also automates calculations for present value, monthly lease payments, interest, and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, that are based on the framework defined by the accounting standard you’re following.
 
 The following diagram shows the lease book, the lease, calculated payment schedule, books and lease classification tests and the corresponding accounting transactions.
@@ -91,6 +91,7 @@ The **payment frequency** indicates whether the payment is monthly, quarterly, s
 **Payment schedule** represents the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods and the annuity type.
 
 **Periods** represent the lease periods that reflect the compounding internal and annuity type. The compounding interval determines how periods will be divided. You can set the following compounding intervals:
+
 - Monthly, 12 periods per year
 - Quarterly, 4 periods per year
 - Semiannually, 2 periods per year
@@ -109,7 +110,7 @@ The **accounting framework** shows the selected accounting standard, either IFRS
 
 **Lease types** indicate which of the two types of leases will be used, either a finance lease or an operating lease. Under a finance lease, risks and rewards that are related to the leased asset are transferred to the lessee. Under an operating lease, risks and rewards that are related to leased asset remain with the lessor. A third option is an automated identification of the lease type, either finance or operating, based on the defined thresholds in the book. This automatic identification is performed during the lease reclassification test.
 
-**Thresholds** are used in the lease classification tests to determine if the asset classified as one of the following.
+**Thresholds** are used in the lease classification tests to determine if the asset classified as one of the following:
 
 - **Lease term** is the percentage of the useful life to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic, and if the lease term over the asset’s useful life is greater than or equal to the percentage defined here.
 
@@ -125,9 +126,9 @@ Classification tests include Transfer of ownership, Purchase option, Lease term,
 
 [![Lease classification tests](./media/overview-03.png)](./media/overview-03.png)
 
-Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16/ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
+Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16 or ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
 
-**Initial recognition**
+## Initial recognition
 The initial recognition of a leased asset is recognized using the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the Operating lease liability as follows. If a fixed asset is associated to the lease the initial recognition entry will be reflected as fixed asset acquisition, in this scenario you'll need to define fixed assets posting profile to post to right-of-use asset account. 
 
 > [!NOTE]
@@ -214,6 +215,7 @@ Impairment entry for IFRS and US GAAP: <br>
 >[!NOTE]
 > In case of the lease is linked to fixed asset the lease impairment should be posted from Fixed assets since asset depreciation is run from fixed assets module.
 
+## Create an asset lease
 To create a New lease, go to **Asset leasing > Common > Lease summary**. 
 
 Enter the mandatory fields under the **General** FastTab. 
