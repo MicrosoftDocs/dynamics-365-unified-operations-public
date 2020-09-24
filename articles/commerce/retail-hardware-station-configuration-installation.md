@@ -68,7 +68,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 
 7. Enter the host name of the computer that you're installing Retail hardware station on. Additionally, enter the electronic funds transfer (EFT) terminal ID that is associated with that computer for merchant account information.
 
-8. To utilize the configuration file or initial installation through mass deployment functionality, enter the certificate thumbprint that is to be used during the installation below.
+8. To utilize the configuration file or initial installation using mass deployment, enter the certificate thumbprint that is to be used during the installation below.
 
 ### Download the Retail hardware station installer
 
@@ -90,13 +90,13 @@ This topic explains how to configure, download, and install Retail hardware stat
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
-7. If desired for mass deployment or command line deployment, repeat the above steps but for the configuration file download, which is a button next to the **Download** selected previously.
+7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
 
     > [!NOTE]
-    > - If for any reason the configuration file downloaded does not have the same base filename as the installer, either rename the XML configuration file to be the same base name or run the installer via command line to specify the configuration file.
+    > - If the configuration file downloaded does not have the same base file name as the installer, either rename the XML configuration file to be the same base name or run the installer using command line to specify the configuration file.
     > - Note that the configuration file is not required for the installation of Commerce hardware station.
 
-8. After the files have been saved, run the installer. (This step might differ, depending on your browser.)
+8. After the files have been saved, run the installer. (This step might differ depending on your browser.)
 
 ### Run the installer
 
