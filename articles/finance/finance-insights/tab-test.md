@@ -78,7 +78,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
    - Click **Settings > Email Configuration**.
    - Change the **Maximum file size** (in kilobytes) to 51,200.
    - Click **OK** to save the changes.
-
+---
 # [PowerShell configuration script](#tab/powershell-configuration-script)
 
     Write-Output 'The following modules need to be present for execution of this script:'
@@ -260,7 +260,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
           $inner = $inner.InnerException
         }
       }
-
+---
 
 ## Configuring Azure setup
 
