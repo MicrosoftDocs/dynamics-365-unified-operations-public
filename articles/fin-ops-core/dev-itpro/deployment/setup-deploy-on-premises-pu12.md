@@ -585,7 +585,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     ```
 
 > [!NOTE]
-> In case of having multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure the context is set to the correct tenant.
+> If you have multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure that the context is set to the correct tenant.
 
 > ```powershell
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
