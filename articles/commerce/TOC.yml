@@ -1006,24 +1006,6 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
-      - name: Experimentation
-        items:
-        - name: Experimentation in Dynamics 365 Commerce
-          href: experimentation-overview.md
-        - name: Identify a hypothesis and determine metrics for an experiment
-          href: experimentation-identify.md
-        - name: Set up an experiment
-          href: experimentation-setup.md
-        - name: Connect and edit an experiment
-          href: experimentation-connect-edit.md
-        - name: Preview and publish an experiment
-          href: experimentation-preview-publish.md
-        - name: Run and monitor an experiment
-          href: experimentation-run-monitor.md
-        - name: Promote a variation and complete an experiment
-          href: experimentation-review-complete.md
-        - name: Review the status of an experiment
-          href: experimentation-status.md
       - name: Error handling
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
