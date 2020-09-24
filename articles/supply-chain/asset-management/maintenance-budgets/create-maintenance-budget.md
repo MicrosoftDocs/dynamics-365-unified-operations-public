@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetBudgetLineAdjust 
+ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
