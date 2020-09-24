@@ -57,4 +57,4 @@ If you decide to make changes to variations despite the impact on your data, fol
 [Preview and publish an experiment](experimentation-preview-publish.md)
 
 ## Next topic
-[Review and complete an experiment](experimentation-review-complete.md)
+[Promote a variation and complete an experiment](experimentation-review-complete.md)
