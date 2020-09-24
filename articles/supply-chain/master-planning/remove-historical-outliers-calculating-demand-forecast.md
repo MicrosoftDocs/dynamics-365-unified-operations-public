@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup
+ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
