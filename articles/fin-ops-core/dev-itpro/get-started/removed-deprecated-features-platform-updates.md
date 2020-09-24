@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 ## Platform updates for version 10.0.15 of Finance and Operations apps
 
 > [!NOTE]
-> Version 10.0.15 hasn't been released yet. This information is provided for planning purposes. The content and the functionality of version 10.0.15 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> Version 10.0.15 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### Visual Studio add-in to apply metadata hotfixes
 
