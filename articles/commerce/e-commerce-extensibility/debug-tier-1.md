@@ -5,7 +5,7 @@ title: Debug against a Tier 1 Commerce development environment
 description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
 author: samjarawan
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,6 +69,25 @@ MSDyn365Commerce_OUN=128
 Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
 If you have the **MSDyn365_HOST** variable value set to your e-Commerce site URL, you can also navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+
+## Troubleshooting
+
+### CORS errors
+You may get CORS (cross origin) errors when calling Retail Server APIs from your browser. These errors may surface in the browser network trace as **(failed) net::ERR_FAILED**. To fix these errors, change the **AllowedOrigins** setting in the Retail service web.config to allow the call to go through, as shown below.
+
+```
+...
+<add key="AllowedOrigins" value="*" />
+<!-- <add key="AllowedOrigins" value="https://usnconeboxax1pos.cloud.onebox.dynamics.com;https://usnconeboxax1ecom.cloud.onebox.dynamics.com" /> -->
+...
+```
+
+### Mixed content errors
+When the Retail Server is configured with HTTP instead of HTTPS, you may receive "Mixed Content" errors when rendering e-Commerce content. Ensure the Retail Server is configured with an HTTPS end point to avoid this type of error.
+
+### Retail calls are failing 404 error
+404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) topic for details.
+
 
 ## Additional resources
 

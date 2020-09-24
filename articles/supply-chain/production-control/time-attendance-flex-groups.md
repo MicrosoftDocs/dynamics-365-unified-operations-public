@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JmgFlexGroup 
+ms.search.form: JmgFlexGroup, JmgFlexCorrection
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

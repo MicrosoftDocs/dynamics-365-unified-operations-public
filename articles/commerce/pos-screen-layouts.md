@@ -5,7 +5,7 @@ title: POS user interface visual configurations
 description: This topic provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,7 +24,7 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
@@ -65,6 +65,8 @@ Visual profiles are assigned to registers, and they specify the visual elements 
 > [!NOTE]
 > The **Right** layout and date/time display don't apply to the sign-in screen in compact view.
 
+You need to run the **1090** (**Registers**) distribution schedule job to synchronize the latest visual profile configurations to the channel database.
+
 ## Screen layouts
 
 Screen layout configurations determine the actions, content, and placement of UI controls on the POS **Welcome** screen and **Transaction** screen.
@@ -84,6 +86,8 @@ Screen layout configurations determine the actions, content, and placement of UI
 ### Assignment
 
 Screen layouts can be assigned at the store, register, or user level. The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment. In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level. In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.
+
+Depending on which level the screen layouts are assigned, you need to run the **1070** (**Channel configuration**), **1090** (**Registers**), and/or **1060** (**Staff**) distribution schedule jobs to synchronize the latest screen layout configurations to the channel database.
 
 ### Layout sizes
 

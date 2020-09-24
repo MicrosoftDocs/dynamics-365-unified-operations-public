@@ -34,11 +34,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information.In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
 
 ![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
 
 ![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
+
+![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
 
 ## Install and setup
 
@@ -90,7 +92,6 @@ After you've enabled notifications for the Human Resources Teams app, you can tu
 | Issue | Status |
 | --- | --- |
 | Horizontal scrolling doesn't work on Android phones | Horizontal scrolling isn't an issue on iOS or desktop devices. We're working on a fix for Android. |
-| Error: There is an issue finding an environment to connect to. | You might receive this error even if you've verified that the user can access one or more Human Resources environments. Also, you might not see all the environments you expect. Until we fix this issue, delete the user and then import them in again to resolve the problem. |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
 | Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters. |
@@ -107,9 +108,15 @@ The content of user’s queries and messages is retained in LUIS system for a ma
 
 To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).
 
-### Microsoft Azure Event Grid and Microsoft Teams
+### Microsoft Teams, Azure Event Grid, and Azure Cosmos DB
 
-When using the notifications feature for the Dynamics 365 Human Resources app in Teams, certain customer data will flow outside of the geographic region where your tenant’s Human Resources service is deployed. Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored for up to 24 hours and processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements.
+When using the Dynamics 365 Human Resources app in Microsoft Teams, certain customer data may flow outside of the geographic region where your tenant’s Human Resources service is deployed.
+
+Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored in Microsoft Azure Event Grid for up to 24 hours and will be processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+While conversing with the chat bot in the Human Resources app, the conversation content may be stored in Azure Cosmos DB and transmitted to Microsoft Teams. This data may be stored in Azure Cosmos DB for up to 24 hours and may be processed outside of the geographic region where your tenant's Human Resources service is deployed, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+To restrict access to the Human Resources app in Microsoft Teams for your organization or users within your organization, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## See also 
 

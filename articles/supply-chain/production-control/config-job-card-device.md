@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JmgRegistrationSetupTouch
+ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

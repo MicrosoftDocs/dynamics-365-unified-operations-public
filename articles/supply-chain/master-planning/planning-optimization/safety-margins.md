@@ -165,13 +165,13 @@ The following rules are applied to determine whether the planning engine can use
 
 #### Calendar setup overview matrix
 
-The following illustration presents a matrix that summarizes which calendars apply when safety margins are calculated. The following abbreviations and colors are used to indicate where each type of calendar is specified:
+The following illustration presents a matrix that summarizes which calendars apply when safety margins are calculated. (Select the image to open a high-resolution version of it.) The following abbreviations and colors are used to indicate where each type of calendar is specified:
 
 - **Coverage group (CG):** Green
 - **Warehouse (WH):** Yellow
 - **Vendor (V):** Blue
 
-![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)
+[![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## Calculating delays
 

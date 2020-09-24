@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable
+ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

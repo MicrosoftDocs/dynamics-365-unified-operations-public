@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schema formats for IoT Hub messages
-description: This topic describes how you should design your message schema for use in IoT Intelligence.
+description: This topic explains how you should design a message schema that you can use in IoT Intelligence.
 author: robinarh
 manager: tfehr
 ms.date: 04/25/2020
@@ -28,70 +28,66 @@ ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Message schema formats for IoT Hub
+# Schema formats for IoT Hub messages
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how you should design your message schema for use in IoT Intelligence.
+This topic explains how you should design a message schema that you can use in IoT Intelligence.
 
 ## Message requirements
 
-There are a few rules that apply to monitoring messages in IoT Intelligence.
+The following rules apply to the monitoring of messages in IoT Intelligence:
 
-+ Message schemas must be in JSON format.
-
-+ A Unix milliseconds timestamp property must be present in the IoT hub message.
-
-+ A message is tracked only if it contains all the properties defined in the scenario setup. For example, if you define **id**, **timestamp**, and **value** properties then this message is monitored:
++ Message schemas must be in JavaScript Object Notation (JSON) format.
++ A UNIX **timestamp** property, where the value is expressed in milliseconds (ms), must be present in the Microsoft Azure IoT Hub message.
++ A message is tracked only if it contains all the properties that are defined in the scenario setup. For example, if you define **id**, **timestamp**, and **value** properties, the following message is monitored.
 
     ```json
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-            "value": True
-        }
+    {
+        "id": "IoTInt.Machine1225.PartOut",
+        "timestamp": 1576016821614,
+        "value": True
+    }
     ```
 
-    This message isn't monitored, because the **value** property is missing:
+    This message isn't monitored, because the **value** property is missing.
 
     ```json
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-        }
+    {
+        "id": "IoTInt.Machine1225.PartOut",
+        "timestamp": 1576016821614,
+    }
     ```
 
-+ IoT Intelligence ignores properties in the message that aren't defined in the scenario configuration. For example, if you define **id**, **timestamp**, and **value** properties, then IoT Intelligence will monitor all of these messages:
++ IoT Intelligence ignores properties in the message that aren't defined in the scenario configuration. For example, if you define **id**, **timestamp**, and **value** properties, IoT Intelligence will monitor all the following messages.
 
     ```json
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-            "value": True
-        },
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-            "value": True,
-            "machine" : "Machine1225",
-        },
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-            "value": True,
-            "activity": "PartOut"
-        },
+    {
+        "id": "IoTInt.Machine1225.PartOut",
+        "timestamp": 1576016821614,
+        "value": True
+    },
+    {
+        "id": "IoTInt.Machine1225.PartOut",
+        "timestamp": 1576016821614,
+        "value": True,
+        "machine" : "Machine1225",
+    },
+    {
+        "id": "IoTInt.Machine1225.PartOut",
+        "timestamp": 1576016821614,
+        "value": True,
+         "activity": "PartOut"
+    },
     ```
 
 + IoT Intelligence silently ignores messages that don't match the scenario configuration criteria.
-
 + You can define and use multiple types of message schemas.
-
-+ Every type of message schema does not need to be defined. Only schemas that will be used for the IoT Intelligence scenarios need to be defined.
++ Not every type of message schema must be defined. Only schemas that will be used for the IoT Intelligence scenarios must be defined.
 
 ## Id-value pair schema
 
-Using an id-value pair is a common pattern for IoT Intelligence message schemas. By using an id-value pair, your message schema is the same across all the scenarios. For example, a message for the **Equipment downtime** or **Production delays** scenario might look like this:
+An id-value pair is a common pattern for IoT Intelligence message schemas. By using an id-value pair, you ensure that your message schema is the same across all the scenarios. For example, here is a message for the **Equipment downtime** or **Production delays** scenario.
 
 ```json
 {
@@ -101,7 +97,8 @@ Using an id-value pair is a common pattern for IoT Intelligence message schemas.
 }
 ```
 
-A message for the **Product quality** scenario might look like this:
+Here is a message for the **Product quality** scenario.
+
 ```json
 {
     "id": "IoTInt.Machine1225.Temperature",
@@ -110,6 +107,6 @@ A message for the **Product quality** scenario might look like this:
 }
 ```
 
-Both contain **id** and **value** properties. The **id** values can be mapped in the **Signal Data Values** table during scenario setup. For the **Equipment downtime** scenario, you would map the **IoTInt.Machine1225.PartOut** value. For the **Product quality** scenario, you would map the **IoTInt.Machine1225.Temperature** value.
+Both the preceding messages contain **id** and **value** properties. The **id** values can be mapped in the **Signal Data Values** table during scenario setup. For the **Equipment downtime** scenario, you will map the **IoTInt.Machine1225.PartOut** value. For the **Product quality** scenario, you will map the **IoTInt.Machine1225.Temperature** value.
 
 For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
