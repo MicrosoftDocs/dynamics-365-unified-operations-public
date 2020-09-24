@@ -524,7 +524,7 @@
             href: deployment/onprem-reuseadfs.md
         - name: Local agent
           items:
-          - name: AD FS Office 365 compatibility
+          - name: AD FS Microsoft 365 compatibility
             href: deployment/onprem-adfscompatibility.md
           - name: Local agent pre-deployment and post-deployment scripts
             href: lifecycle-services/pre-post-scripts.md

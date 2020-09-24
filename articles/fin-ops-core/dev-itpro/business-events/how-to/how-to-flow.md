@@ -78,7 +78,7 @@ This topic shows how to perform the following tasks:
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Office 365 account.
+13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Microsoft 365 account.
 
 14.  Fill in the message with the required fields.
 
