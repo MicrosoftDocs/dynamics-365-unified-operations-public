@@ -3,9 +3,9 @@
 
 title: Performance troubleshooting using tools in Lifecycle Services (LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues in your sandbox and production environments.
-author: meeramahabala
+author: laneswenka
 manager: AnnBe
-ms.date: 03/04/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -46,26 +46,16 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
 - **Live View** – Shows current DTU, executing statements, and blocking statements. The current **SQL Now** page that shows performance issues will be replaced with **Live View**.
 
-    [![Live View](./media/LiveView.jpg)](./media/LiveView.jpg)
-
 - **Queries** – Shows a list of predefined queries that can be used to retrieve metrics on demand. Examples of queries include a current blocking tree, a list of active plan guides, and a list of most expensive queries.
-
-    [![Queries](./media/Queries.jpg)](./media/Queries.jpg)
  
     > [!IMPORTANT]
     > To help guarantee that the query results are returned instantaneously, most of the queries are run synchronously. However, if there is an ongoing performance issue, synchronous query execution might cause a time-out error. To address this issue, a new **Use Fast Query** option has been added. By default, this option is turned on for most queries. If you receive a time-out error after you run a query, turn the **Use Fast Query** option off, and then try to run the query again. The query will now run asynchronously.
 
 - **Actions** – Shows a list of predefined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement. Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed. 
 
-    [![Actions](./media/Actions.jpg)](./media/Actions.jpg)
-
 - **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10:00 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
 
-    [![Performance Metrics](./media/perfmetrics.jpg)](./media/perfmetrics.jpg)
-
 - **Index Analysis** – Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index along with additional table metrics.
-
-    [![Index Analysis](./media/IndexAnalysis.jpg)](./media/IndexAnalysis.jpg)
 
 - **Queries** tab and **Actions** tab – For details about the queries that are shown on the **Queries** and **Actions** tabs, see the [Query cookbook](querycookbook.md).
 

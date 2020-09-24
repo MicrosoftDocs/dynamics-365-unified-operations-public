@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Configure and enable connectors
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 

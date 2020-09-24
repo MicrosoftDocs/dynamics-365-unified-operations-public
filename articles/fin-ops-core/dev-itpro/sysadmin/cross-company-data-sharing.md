@@ -111,7 +111,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 ## Customer and vendor master data sharing
 Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you would like to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
 
-With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Master company sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
+With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
 > Default dimensions set up against a customer or vendor cannot be shared across companies. When configuring the customer or vendor record for cross-company data sharing, the **DefaultDimension** field is disabled, and cannot be included in the data sharing policy.

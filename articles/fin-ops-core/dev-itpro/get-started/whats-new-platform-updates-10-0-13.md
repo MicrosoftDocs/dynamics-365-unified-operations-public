@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.13 of Finance and Operations apps (Octo
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.13
 # Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.13 of Finance and Operations apps. (These updates were formerly referred to as *Platform update 37*.) This version has a build number of 7.0.5746 and is available on the following schedule:
 
@@ -57,7 +56,7 @@ This topic lists the features that are included in the platform updates for vers
 -  [Upgrade three jQuery components libraries](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
 
 -  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
-[Task recorder resources](../user-interface/task-recorder.md#validate). 
+[Task recorder resources](../user-interface/task-recorder.md#validate). To use this feature in combination with the Regression suite automation tool (RSAT), you must update to RSAT 2.0, which will be available in October 2020.  
 
 
 ## Additional resources

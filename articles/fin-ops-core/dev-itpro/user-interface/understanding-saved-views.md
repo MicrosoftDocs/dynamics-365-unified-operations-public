@@ -5,7 +5,7 @@ title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Platform update 28
 # Build forms that fully utilize saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 

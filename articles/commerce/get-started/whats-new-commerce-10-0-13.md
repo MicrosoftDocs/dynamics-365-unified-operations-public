@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.13. 
 author: josaw1
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-04-30 
-ms.dyn365.ops.version: 10.0.12
+ms.dyn365.ops.version: 10.0.13
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.13 (October 2020)
+# What's new or changed in Dynamics 365 Commerce 10.0.13 (October 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.12. This version has a build number of 10.0.569 and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.13. This version has a build number of 10.0.569 and is available on the following schedule:
 
 - **Preview release:** July 2020
 - **General availability (self-update):** September 2020
@@ -49,6 +48,7 @@ The following features are included in this release. The feature titles link to 
 - [Site builder WYSIWYG improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
 - [Media gallery](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Media gallery module](../media-gallery-module.md).
 - [Map module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - For more information, see [Map module](../map-module.md).
+- [Review function in POS inventory operations](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/review-function-pos-inventory-operations)
 
 
 
@@ -56,7 +56,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Commerce 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
+Dynamics 365 Commerce 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd)

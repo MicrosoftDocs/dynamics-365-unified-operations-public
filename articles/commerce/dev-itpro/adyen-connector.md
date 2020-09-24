@@ -210,17 +210,13 @@ The following countries have Dynamics 365 Commerce components available as well 
 | Austria | ✔ |
 | Belgium | ✔ |
 | Canada | ✔ |
-| Croatia | ✔ |
-| Cyprus | ✔ |
 | Czech Republic | ✔ |
 | Denmark | ✔ |
 | Estonia | ✔ |
 | Finland | ✔ |
 | France | ✔ |
 | Germany | ✔ |
-| Greece | ✔ |
 | Hungary | ✔ |
-| Hong Kong | ✔ |
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
@@ -229,10 +225,7 @@ The following countries have Dynamics 365 Commerce components available as well 
 | Netherlands | ✔ |
 | Norway | ✔ |
 | Poland | ✔ |
-| Portugal | ✔ |
 | Singapore | ✔ |
-| Slovakia | ✔ |
-| Slovenia | ✔ |
 | Switzerland | ✔ |
 | Spain | ✔ |
 | Sweden | ✔ |

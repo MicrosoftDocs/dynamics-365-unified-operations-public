@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WrkCtrCapability, WrkCtrTable
+ms.search.form: WrkCtrCapability, WrkCtrTable, WrkCtrCapRes, WrkCtrApplicableResources
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
 -  Calculating totals
--  Grouping data
 -  Typing ahead of the system
 -  Evaluating math expressions 
+-  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
+-  Pinned system columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. These totals are shown in a footer section at the bottom of the grid. 
@@ -75,21 +75,6 @@ If the calculation is taking too long, you can cancel the operation by selecting
 
 Totals will update automatically as you update, delete, or create rows in the dataset.  
 
-## Grouping data
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping** capability in tabular grids allows users to organize their data in interesting ways within Finance and Operations apps. As this feature extends the **Totals** feature, **Grouping** also allows you to get meaningful insights into the data by providing subtotals at the group level.
-
-To use this feature, right-click on the column you wish to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
--  Data value for the group 
--  Column label (This information will be especially useful after multiple levels of grouping are supported.)
--  Number of data rows in this group
--  Subtotals for any column configured to show totals
-
-With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
-
-If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported in version 10.0.9 with Platform update 33.
-
-To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
-
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
 
@@ -113,13 +98,44 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## Grouping tabular data
+[!include [preview banner](../includes/preview-banner.md)]
+
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **(Preview) Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+
+To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by column** to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
+-  Data value for the group 
+-  Column name (This information will be especially useful after multiple levels of grouping are supported.)  
+-  Number of data rows in this group
+-  Subtotals for any column configured to show totals
+
+With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
+
+If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported as of version 10.0.9/Platform update 33.
+
+To undo grouping in a grid, right-click the grouping column and select **Ungroup**.  
+
+### Expanding and collapsing groups
+The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
+
+### Selecting and unselecting rows at the group level
+In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless if all rows are selected, no rows are selected, or only some rows are selected.
+
+### Hiding column names
+When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
+
+## Pinned system columns
+The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
+
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
 
 **10.0.9 / Platform update 33 and later**
+
 The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and 10.0.7 / Platform update 31**
+
 The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
 
 1.	**Enable the flight**: Execute the following SQL statement: 
@@ -135,11 +151,14 @@ The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 
 All subsequent user sessions will start with the new grid control enabled.
 
 ## [Developer] Opting out individual pages from using the new grid 
-If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the form's `run()` method.
+If your organization discovers a page that has some issues utilizing the new grid, an API is available starting in version 10.0.13/Platform update 37 to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
-This API will be honored until the October 2021 release when the new grid control becomes mandatory. Please report any issues to Microsoft which require this API to be utilized. 
+This API will be honored until the October 2021 release, when the new grid control becomes mandatory. If any issues require that this API be used, report them to Microsoft.
+
+## [Developer] Size-to-available-width columns
+If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
 
 ## Known issues
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
