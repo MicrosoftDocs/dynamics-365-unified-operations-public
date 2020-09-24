@@ -59,7 +59,7 @@ To learn more about each step in the experimentation process, refer to the follo
 1. [Connect and edit an experiment](experimentation-connect-edit.md)
 1. [Preview and publish an experiment](experimentation-preview-publish.md)
 1. [Run and monitor an experiment](experimentation-run-monitor.md)
-1. [Review and complete an experiment](experimentation-review-complete.md)
+1. [Promote a variation and complete an experiment](experimentation-review-complete.md)
 
 > [!NOTE]
 > To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is displayed with the status of each experiment in both Commerce and the third-party service. For more information, refer to the [Review the status of an experiment](experimentation-status.md) topic.
