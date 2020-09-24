@@ -93,7 +93,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
 
     > [!NOTE]
-    > - If the configuration file downloaded does not have the same base file name as the installer, either rename the XML configuration file to be the same base name or run the installer using command line to specify the configuration file.
+    > - If the configuration file downloaded does not have the same base file name as the installer, either rename the XML configuration file to be the same base name or run the installer using the command line to specify the configuration file.
     > - Note that the configuration file is not required for the installation of Commerce hardware station.
 
 8. After the files have been saved, run the installer. (This step might differ depending on your browser.)
