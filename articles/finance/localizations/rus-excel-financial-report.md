@@ -4,7 +4,7 @@
 title: Configure financial reports in Excel (Russia)
 description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
 author: Anasyash
-ms.date: 03/01/2019
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -112,13 +112,14 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
         For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports.md#configure-er-to-use-the-results-of-financial-report-calculations).
 
-5. Bind the calculated values of financial report cells to elements of the ER format cells:
+6. Bind the calculated values of financial report cells to elements of the ER format cells:
 
     > [!NOTE]
-    > In the current example, elements are binded already in the format, so to handle the example steps, you first need to unbind them:
-    >   Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
-    >   Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
-    > You'll not need to do these steps for your new reports. 
+    > In the current example, elements are already bound in the format. To complete the steps in the example, you must first unbind the elements.
+    > 
+    > Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**. 
+    > Repeat this for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**. 
+    > You won't need to do this for your new reports. 
     
     1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
     2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
