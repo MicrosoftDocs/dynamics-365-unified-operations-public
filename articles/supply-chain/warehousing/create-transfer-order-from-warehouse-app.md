@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and can following scan one or more license plates using the app. When the warehouse worker selects the **Complete order** a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates.
+This feature lets warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and then they can scan one or more license plates using the app to add license plates to the transfer order. When the warehouse worker selects  **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates.
 
 ## <a name="enable-create-transfer-order-from-warehouse-app"></a>Enable the create transfer orders from Warehouse app feature
 
@@ -49,18 +49,26 @@ The feature is dependent on having the feature [Process warehouse app events](wa
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select **New** to add a new menu item. Then make the following settings to get started:
+
     - **Menu item name** - Assign a name as it should appear in Supply Chain Management
     - **Title** - Assign a menu name as it should be presented to workers in the warehouse app.
     - **Mode** - Set to *Indirect* (this warehouse app will not create work)
     - **Activity code** - Set to *Create transfer order from license plates* to enable the warehouse workers to create a transfer order based on one or more scanned license plates.
-1. Use the **Order line creation policy** setting to control how transfer order lines will be created by this menu item. The lines will get created/updated based on the on-hand inventory registered for the scanned license plates. Choose one of the following values:
+
+1. Use the **Transfer order line creation policy** setting to control how transfer order lines will be created by this menu item. The lines will get created/updated based on the on-hand inventory registered for the scanned license plates. Choose one of the following values:
+
     - **No reservation** - The transfer order lines will not get reserved.
     - **License plate guided with line reservation** – The transfer order lines will get reserved and use the License plate guided strategy option, which stores the relevant license plate IDs associated with the order lines. Located license plate ID values can therefore be used as part of the work creation process for the transfer order lines.
+
 1. Use the **Outbound shipment policy** setting to add more automation to the outbound transfer order shipment process, as needed. When a worker selects the **Complete order** button, the app creates the *Complete order* warehouse app event, which will save the value you choose here in the **Outbound shipment policy** field for each line in the current transfer order. Later, when the event queue is processed by a batch job to create the transfer order, the value stored in this field can be read by the batch job, and may therefore control how that job processes each line. Choose one of the following:
-    - **None**
-    - **Release to warehouse**
-    - **Ship confirm**
-    - **Release and ship confirm**
+
+    - **None** - No automated processing is done.
+    - **Release to warehouse** - Automates the release to warehouse process.
+    - **Ship confirm** - Automates the ship confirmation process.
+    - **Release and ship confirm** - Automates both the release to warehouse and ship confirmation processes.
+
+## Adding the mobile device menu item to a menu
+
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**
 1. Select **Edit**.
 1. Select a existing menu following selection of the new menu item under **Available menus and menu items**. Add the menu item by selecting the right-arrow button.
