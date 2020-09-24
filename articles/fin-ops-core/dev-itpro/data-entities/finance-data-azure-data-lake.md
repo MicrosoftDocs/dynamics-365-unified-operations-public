@@ -36,7 +36,15 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Azure Data Lake** feature may not be available in all regions and environments supported by Microsoft Dynamics 365 Finance and Operations apps. If you are not able to find the **Export to Azure Data Lake** functionality in Life cycle services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. If you would like access to this feature, send an email to the feature team at **FnODataLakePreview@service.microsoft.com**. We will try and make this feature available soon. At this time, the **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud based Tier-2 or higher environment to enable this feature.
+> **Export to Azure Data Lake** feature is in limited preview and may not be available in all regions and environments supported by Microsoft Dynamics 365 Finance and Operations apps. If you are not able to find the **Export to Azure Data Lake** functionality in Life cycle services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. 
+
+> Our previews are now closed. We will enable additional environments in the coming months in several regions. We are accepting requests from customers who would like to join the preview. Complete the survey by visiting the link below if you would like to join the preview in the future. We will contact you when we are ready to include you. Optionally, you can also join a yammer group by completing the survey below. You can stay in touch and ask questions that will help you understand the feature. https://aka.ms/FnODataLakePreviewSurvey 
+
+> Until the feature is enabled in your environment, you have the option to prototype/ plan the feature implementation using GitHub tools below.The tool will enable you to export data from your sandbox environment into a storage account in the same format as exported by the feature. 
+https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md
+
+>At this time, **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud based Tier-2 or higher environment to enable this feature.
+
 > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in the topic, [Make entity store available as a Data Lake](entity-store-data-lake.md).
  
  
