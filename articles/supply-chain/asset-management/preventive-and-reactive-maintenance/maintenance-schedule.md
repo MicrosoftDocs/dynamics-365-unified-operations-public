@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetObjectCalendarCreateWO 
+ms.search.form: EntAssetObjectCalendarCreateWO, EntAssetObjectCalendarListPagePoolsOpen 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
