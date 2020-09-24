@@ -792,8 +792,8 @@
       items:
       - name: Asset leasing home page
         href: asset-leasing/asset-leasing-homepage2.md
-      - name: Asset leasing overview
-        href: asset-leasing/asset-leasing-overview.md
+      - name: Asset leasing quick start
+        href: asset-leasing/asset-leasing-quick-start.md
     - name: General ledger
       items:
       - name: General ledger overview
