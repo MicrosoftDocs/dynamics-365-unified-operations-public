@@ -35,7 +35,7 @@ There are many steps involved in setting up and running an experiment on an e-Co
 
 [ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
-After you edit your variations, you'll preview your variations and then publish the experiment.
+After you [connect your experiment and edit your variations](experimentation-connect-edit.md), you'll preview your variations and then publish the experiment.
 
 ## Preview variations
 You can preview your variations and continue editing them until they look the way you want them to.
