@@ -81,12 +81,10 @@ To assign accounts to the lease books and groups that have been created, you mus
 2. On the **Accounts** tab, open the **Lease accounts** FastTab. Determine the main accounts for finance and operation leases to corresponding **Posting type**. The preceding table shows the accounts that are related to operating and finance leases.
 
     > [!NOTE]
-    > This step requires that you set up separate accounts for both operating and finance leases for each posting type except **Lease expense offset** and **Lease increase/decrease**. Companies that adhere to the IFRS 16 accounting framework have to add an operating lease main account but since the field is mandatory but the system will not use this account, because all leases under IFRS 16 are classified as finance leases.
+    > This step requires that you set up separate accounts for both operating and finance leases for each posting type except **Lease expense offset** and **Lease increase/decrease**. Companies that adhere to the IFRS 16 accounting framework must add a main account for operating lease. But the system will not use this account even though it's a required field because all leases under IFRS 16 are classified as finance leases.
     >[!NOTE]
-    > **Lease increase/decrease** will be used as posting type for additional asset considerations **Initial direct cost, Lease incentives, Lease prepayments and Dismantling costs** but post to Right-of-use asset main account of which defined to **Lease asset**.        
+    > **Lease increase/decrease** will be used as posting type for additional asset considerations, including **Initial direct cost, Lease incentives, Lease prepayments and Dismantling costs**, but post to the Right-of-use asset main account which defaults to **Lease asset**.        
     
-    
-
 3. To select a specific lease group corresponding to main account, in the **Account Code** field, select **Group**. Then, in the **Account/Group number** field, select the lease group to assign to the main account.
 4. To assign account codes to the administrative costs that have been set up in the system, on the **Executory costs** FastTab, in the **Expense type** field, select an expense. Then assign the finance and operating accounts to use for each book.
 
