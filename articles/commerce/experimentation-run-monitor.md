@@ -53,3 +53,8 @@ If you decide to make changes to variations despite the impact on your data, fol
 1. Make the changes you want, then preview and publish the variations. See [Preview and publish an experiment](experimentation-preview-publish.md) for more information.
 1. Go to the third-party service and make any setup-related changes required by the service.
     
+## Previous topic
+[Preview and publish an experiment](experimentation-preview-publish.md)
+
+## Next topic
+[Review and complete an experiment](experimentation-review-complete.md)
