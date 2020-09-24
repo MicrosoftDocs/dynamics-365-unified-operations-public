@@ -65,7 +65,7 @@ This group of topics describes the process for adding leases, creating payment i
  - [Record right-of-use asset depreciation](record-rou-asset-depreciation.md)
  - [Reverse posted lease transactions](reverse-posted-lease-trans.md)
  - [Adjust a lease](adjust-lease.md)
- - [Impaire a right-of use asset](impair-rou-asset.md)
+ - [Impair a right-of use asset](impair-rou-asset.md)
  - [Reverse posted lease transactions](reverse-posted-lease-trans.md)
  - [Impair a right-of-use asset](impair-rou-asset.md)
  - [Associate a lease with a fixed asset](associate-lease-with-fixed-asset.md)
