@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetRequestLifecycleState 
+ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
