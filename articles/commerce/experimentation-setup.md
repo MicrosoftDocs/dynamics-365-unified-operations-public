@@ -35,8 +35,10 @@ There are many steps involved in setting up and running an experiment on an e-Co
 
 [ ![Experimentation user journey - Setup](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
+After you [define a hypothesis and determine what success metrics you want to use](experimentation-identify.md), you'll need to set up your experiment in the third-party service. 
+
 ## Set up your experiment in the third-party service
-After you define a hypothesis and determine what success metrics you want to use as described in the [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md) topic, you'll need to set up your experiment. By now you should have chosen and installed a third-party service to run and monitor your experiment, and set up an experimentation connector. These prerequisites are listed in the [Experimentation in Dynamics 365 Commerce](experimentation-overview.md) topic.
+By now you should have chosen and installed a third-party service to run and monitor your experiment, and set up an experimentation connector. These prerequisites are listed in the [Experimentation in Dynamics 365 Commerce](experimentation-overview.md) topic.
 
 Follow the steps required to create your experiment in the third-party service. The steps will vary from service to service, but the end result will be an experiment with a set of variations to be published live on your e-Commerce website. If the connector is configured properly, the complete list of experiments you set up in the third-party service will surface in site builder within about 5 minutes.
 
