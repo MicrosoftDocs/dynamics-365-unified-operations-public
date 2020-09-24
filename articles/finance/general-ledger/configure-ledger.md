@@ -3,7 +3,7 @@
 
 title: Configure the ledger
 description: This topic provides information about configuring ledgers for each legal entity. It includes information about selecting currencies, fiscal calendars, the chart of accounts, and the account structures to be used with each legal entity.
-author: rprofit
+author: kweekley
 manager: 
 ms.date: 09/24/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rprofit
+ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.1
 
@@ -57,9 +57,9 @@ For more information about setting up your account structures see [Configure acc
 ## Configuring calendars for the ledger
 Another component of the ledger is the **Fiscal calendar**. Each legal entity must have a fiscal calendar selected. You can use the same fiscal calendar in more than one legal entity. When you select a calendar for the **Ledger**, a copy of the fiscal calendar is made and is referred to as the **Ledger calendar**. The **Ledger calendar** allows you to select the status of the periods and modules within each period. Click **Ledger calendar** in the Action Pane to access and make updates to the calendar for the selected legal entity.
 
-To select the calendar, click the **Fiscal calendars** drop-down button and choose the calendar from the list. If you change the fiscal calendar after transactions have been posted in the legal entity, you will need to click the **Recalculate ledger periods** button. This will open a dialog where you can update the ledger balances for the periods in your calendar. It is generally recommended to run the **Recalculate ledger periods** process in **Batch** mode when noncritical processes are occurring in your system. Depending on the volume of transactions and financial dimension combinations, this can be a long running process. 
+To select the calendar, click the **Fiscal calendars** drop-down button and choose the calendar from the list. If you change the fiscal calendar after transactions have been posted in the legal entity, you will need to click the **Recalculate ledger periods** button. This will open a dialog where you can update the ledger balances for the periods in your calendar. We recommend running the **Recalculate ledger periods** process in **Batch** mode when noncritical processes are occurring in your system. Depending on the number of transactions and financial dimension combinations, this process can take some time to complete. 
 
-If a fiscal calendar is not selected in a legal entity, an error message will be received when a user tries to post a transaction in the legal entity. 
+If a fiscal calendar is not selected in a legal entity, an error message will display when you try to post a transaction in the legal entity. 
 
 For more information, see [Fiscal calendars, fiscal years, and periods](../budgeting/fiscal-calendars-fiscal-years-periods.md).
 
