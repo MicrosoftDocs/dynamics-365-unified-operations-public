@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. This capability consists of features that are turned on in Feature management. These features apply only to vendor invoices, not to invoices that are processed through the **Invoice journal** or **Invoice register journal** page.
 
-Organizations often work with third parties to process paper invoices by using an optical character recognition (OCR) service provider. The service provider returns receives machine-readable invoice metadata. To help with automation, the Accounts payable automation features let you consume these artifacts from Accounts payable.
+Organizations often work with third parties to process paper invoices by using an optical character recognition (OCR) service provider. The service provider returns machine-readable invoice metadata. To help with automation, the Accounts payable automation features let you consume these artifacts from Accounts payable.
 
 You can automate some Accounts payable vendor invoicing processes. These processes include submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines. The automated process shows information about the progress of a vendor invoice as it moves through each of the processes. This capability can help Accounts payable clerks and managers process vendor invoices more efficiently. It also helps reduce the errors and inefficiencies that can occur when information is manually entered and processed.
 
@@ -52,7 +52,7 @@ The automation processes can be used to perform these tasks:
 
 As part of a touchless Accounts payable invoicing process, you can have the system automatically submit an imported invoice to the workflow system. The process will run in the background, at a frequency that you specify (either hourly or daily). The capability to automatically submit imported invoices to the workflow system requires that your process begin with an imported invoice. To ensure that the invoice can be processed from start to finish without manual intervention, an automated posting task must be included in the workflow configuration.
 
-Invoices that are related to purchase orders (POs) and invoices that contain a non-PO procurement category, and non-stocked lines, can automatically be submitted to the workflow system. Invoices that are manually entered and invoices that are created via the **Vendor collaboration invoicing** workspace must be manually submitted to the workflow system.
+'Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system. Invoices that are manually entered and invoices that are created via the **Vendor collaboration invoicing** workspace must be manually submitted to the workflow system.
 
 The automation feature provides a flexible framework that lets you define company-specific rules for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.
 
