@@ -80,7 +80,7 @@ Follow these steps to set up the invoice issue deadline functionality.
 > [!NOTE] 
 > This validation (**Warning** and **Error**) is applicabe to sales invoices which posted on the base of packing slip. 
 
-    ![Accounts receivable parameters page](media/gcc-invoice-issue-deadline-ar-parameters.jpg)
+ ![Accounts receiveble parameters](media/gcc-invoice-issue-deadline-ar-parameters.jpg)
 
 Based on the settings, the system enters a value in the **Invoice issue due date** field in the packing slip journal and product receipt journal. 
 You can view all the packing slips that aren't yet invoiced by going to **Sales and marketing** \> **Sales orders** \> **Order shipping** \> **Packing slip not invoiced**. 
