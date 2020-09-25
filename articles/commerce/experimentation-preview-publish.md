@@ -31,13 +31,11 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Preview and publish an experiment
 
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to preview and publish your experiment in Commerce.
+There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to preview and publish your experiment in Commerce after you've [connected your experiment and edited your variations](experimentation-connect-edit.md).
 
 [ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
-After you [connect your experiment and edit your variations](experimentation-connect-edit.md), you'll preview your variations and then publish the experiment.
-
-## Preview variations
+## Preview your experiment variations
 You can preview your variations and continue editing them until they look the way you want them to.
 
 1. In editor view in site builder, use the variations drop-down menu below the command bar to select the content you want to preview. 
@@ -45,7 +43,7 @@ You can preview your variations and continue editing them until they look the wa
 1. To preview a different variation, select it from the variation drop-down and select **Preview** again.
 
 ## Publish your experiment
-If you aren't using a publish group to schedule when your experiment goes live and you want to publish immediately, select **Publish** in the top bar. All variations that belong to the experiment will be published.
+If you aren't using a publish group to schedule when your experiment goes live and you want to publish immediately, select **Publish** in the command bar. All variations that belong to the experiment will be published.
     
 > [!IMPORTANT]
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For more details, refer to the [Save, preview, and publish a page](save-preview-publish-page.md) topic.
