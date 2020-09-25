@@ -117,7 +117,7 @@ You can also generate FTI forms when you post an FTI, by turning **Print invoice
 The ER framework currently supports the following destinations for generated documents:
 
 - **Downloaded file** – Generated forms are offered as downloads that you can save by using the browser.
-- **Screen** – Microsoft Office 365 Excel is used to preview generated FTI forms in Excel format.
+- **Screen** – Microsoft 365 Excel is used to preview generated FTI forms in Excel format.
 - **SharePoint folder** – Generated forms are stored based on the settings of the Document management framework.
 - **Application archive** – Generated forms are stored as attachments of execution log records in the Microsoft Azure Storage.
 - **Email** – Generated forms are sent as email attachments.

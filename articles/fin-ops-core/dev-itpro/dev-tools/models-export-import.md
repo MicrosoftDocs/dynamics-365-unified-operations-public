@@ -80,9 +80,3 @@ If you install a model on a development environment that contains customizations
     [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
-
-<!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
-
-
-
-
