@@ -41,7 +41,7 @@ To create and populate a product owner group:
 
 1. Go to **Engineering change management \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
-3. In the **Product owner** field, enter a name for the group. <!-- KFM: What kind of value? How is this different from the name? BNG it is like when you use Name and Description for other fields, Name would be Product owner and name would be description, labels should be name and description here... KFM: OK, I wrote it like that for now (though it looks kind of silly). If we change these labels, we need to remember to update these steps.  -->
+3. In the **Product owner** field, enter a name for the group. <!-- KFM: These labels are odd and may be changed.  -->
 4. In the **Name** field, enter a description of the group.
 5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
 
@@ -54,7 +54,7 @@ To assign a product owner group to a product:
 
 While a product had an owner assigned, only the members of that product owner group can edit the **Product owner** setting.
 
-The product owner is also visible on the released product form. 
+The product owner is also visible on the released product form.
 
 ## Product owners and releasing products
 

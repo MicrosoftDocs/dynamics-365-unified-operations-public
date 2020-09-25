@@ -105,9 +105,9 @@ When you are reviewing a request for change, use the **Dependencies** option to 
 
 <!-- KFM: We should provide just a bit more detail about where we find these buttons. I think they are somewhere on the Action Pane. -->
 
-### Review and approve change requests
+<!-- ### Review and approve change requests
 
-<!-- KFM: Maybe we should review this process here. Maybe just a link to the HOL. -->
+KFM: Maybe we should add a section to review this process here. Or maybe just a link to the HOL. -->
 
 ### Create a change order from a change request
 
@@ -139,7 +139,7 @@ Typical stakeholders for approving an engineering change order include:
 
 You can choose whether the engineering change order should be processed directly after approval as part of the workflow, or as a manual step afterwards. Processing an engineering change order will update engineering data on the actual product.
 
-While you are reviewing a request for change, use the **Dependencies** option on the Action Pane to assess the impact of the proposed change on open transactions like sales orders, production orders, and inventory on-hand. With the **Search** option, the system scans all open transactions, which you can then view using the **View** option. You can block the open transactions or notify the responsible user via processing the actions. <!-- KFM: where is these options? BNG these options are inside the business impact form/ dependencies. "Where used", or "Impacted products" maybe? We should have a procedure for how to review a request for change, including steps for how to use each of these options. -->
+While you are reviewing a request for change, use the **Dependencies** option on the Action Pane to assess the impact of the proposed change on open transactions like sales orders, production orders, and inventory on-hand. With the **Search** option, the system scans all open transactions, which you can then view using the **View** option. You can block the open transactions or notify the responsible user via processing the actions. <!-- KFM: We should have a procedure for how to review a request for change, including steps for how to use each of these options. -->
 
 ### Engineering change orders in engineering or operational companies
 

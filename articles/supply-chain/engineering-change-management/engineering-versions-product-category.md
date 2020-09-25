@@ -149,7 +149,7 @@ For each row that you add to the grid, make the following settings:
 | **Value** | Select the default value for the attribute  |
 | **Mandatory** | For attributes of type Boolean, setting this to *Yes* means that users must set the attribute to *Yes* (otherwise, it can be *Yes* or *No*). For other data types, this is just informational. |
 | **Batch attribute** | Controls whether the attribute should be propagated through the batch functionality. |
-| **Inheritance attribute** | <!-- KFM: What does this do?  -->  |
+<!--  | **Inheritance attribute** | KFM: What does this do? | -->
 
 ### The Readiness policy FastTab
 

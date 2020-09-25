@@ -64,16 +64,16 @@ If a new engineering version is created for a product, the system will check whe
 
 ### View open readiness checks for a product or product version
 
-To find the open readiness checks for a product, open its **Released products details** page. On the Action Pane, open the **Product** tab and, from the **Readiness checks** group, select **Readiness checks**. Or, from the **Product version** page, select **Readiness checks** from the group **Checklist**. <!-- KFM: Where can we find it? What is it called? BNG updated. KFM: The last sentence should name the tab. -->. 
+To find the open readiness checks for a product, open its **Released products details** page. On the Action Pane, open the **Product** tab and, from the **Readiness checks** group, select **Readiness checks**. Or, from the **Product version** page, select **Readiness checks** from the group **Checklist**. <!-- KFM: The last sentence should name the tab. -->.
 
 ### View open readiness checks assigned to you
 
 To see the open readiness checks assigned to you, do one of the following:
 
 - Go to **Engineering change management \> Common \> Product readiness \> My open readiness checks**.
-- Go to  **Product information management \> Workspaces \> Product readiness for discrete manufacturing**. <!-- KFM: Where do I find my readiness checks here? -->
+- Go to  **Product information management \> Workspaces \> Product readiness for discrete manufacturing**.
 
-The setup for who is assigned to the readiness check is done at the engineering product category. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check. <!-- KFM: How do we make this assignment? We should probably describe this in the topic about creating categories and refer to that from here. BNG agree-->
+The setup for who is assigned to the readiness check is done at the engineering product category. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 ## Process open readiness checks
 
@@ -112,7 +112,7 @@ On the readiness policy, you can set up the readiness checks. Select **Add syste
 | **Company** | In case a single company is chosen, you must specify the company here |
 | **Owner type** | Select if the readiness check is assigned to a person or a team |
 | **Name** | Select the person or team to whom the check must be assigned |
-| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be set up with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. <!-- KFM: We should provide detailed instructions for how to set up the checklist. BNG this is standard, not only for product engineering, should not be the focus of this topic. KFM: I found this in the AX2012 docs: https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/using-questionnaires. Should we link to that?-->|
+| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be set up with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. For more information about how to create questionnaires, see [Using questionnaires](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
 | **Automatic approval** | Will check/ complete also set the readiness check to Approved? |
 | **Mandatory** | Is the readiness check mandatory or can it be skipped? |
 
@@ -150,7 +150,7 @@ The following table describes the settings available on **General** FastTab of a
 
 Add a row on the **Readiness control** FastTab for each type of readiness check that you want to include in the policy. Use the following buttons in the **All products** FastTab to add and remove rows as needed:
 
-- **Add check** - Adds a standard readiness check to the policy. Select this to open the **Add check** dialog box, which lists the available checks that you can choose from. <!-- KFM: Where does this list come from? Can we add more here? Should we describe each of the (default) checks shown here? BNG it is a finite list that comes out of the box, it has a relevant -->
+- **Add check** - Adds a standard readiness check to the policy. Select this to open the **Add check** dialog box, which lists the available checks that you can choose from.
 - **Add existing questionnaire** - Adds a new blank row to the grid, which you can use to assign an existing questionnaire using the settings listed in the following table.
 - **Copy** - Adds a copy of the selected row to the grid.
 - **Delete** - Deletes the selected row from the grid.
@@ -168,6 +168,6 @@ For each row you add, make the settings described in the following table.
 | **Company** | If you set **Execute in** to *Single company*, then select the applicable company here. |
 | **Owner type** | Choose whether readiness checks generated by this row should be assigned to a *Team* or to an individual *Person*. |
 | **Owner** | Choose the person or team who will be assigned readiness checks generated by this row (depending on the **Owner type**). |
-| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be set up with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. <!-- KFM: We should provide detailed instructions for how to set up the checklist. BNG is using the standard questionnaires, this should be a separate topic, not related to product engineering. KFM: Maybe link to: https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/using-questionnaires --> |
+| **Questionnaire** | Select the questionnaire which should be used for the checklist. This is a local checklist in the company for the readiness check. It must be set up with an evaluation based on correct answers, so the system can evaluate if the checklist is correctly answered. For more information about how to create questionnaires, see [Using questionnaires](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
 | **Automatic approval** |  Readiness check records include an **Approved** check box, which indicates approval status. Select this check box for checks that should be set to approved immediately after the assigned user has completed them. Clear this box to require explicit approval as an extra step. |
 | **Mandatory** | Select this check box for checks that must be completed by the assigned user (can't be skipped). Mandatory checks can't be skipped. |
