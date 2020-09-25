@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Run and monitor an experiment
 
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this topic, you'll need to [publish](experimentation-preview-publish.md) your experiment in Commerce, 
+This topic describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this topic, you'll need to [publish](experimentation-preview-publish.md) your experiment in Commerce. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
 
 [ ![Experimentation user journey - Run & Monitor](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
