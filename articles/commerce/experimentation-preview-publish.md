@@ -49,14 +49,13 @@ If you aren't using a publish group to schedule when your experiment goes live a
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For more details, refer to the [Save, preview, and publish a page](save-preview-publish-page.md) topic.
     
 ### Use publish groups to schedule when your experiment goes live
-Variations created in site builder can be scheduled for publishing by using a publish group. For more information on publish groups, refer to the [Work with publish groups](publish-groups.md) topic.
+Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by going to the **Experiments** tab or the **Pages** or **Fragments** tab. For more information, refer to the [Connect an experiment and edit variations](experimentation-connect-edit.md) topic. For more information on publish groups, refer to the [Work with publish groups](publish-groups.md) topic.
 
 When using publish groups with experiments, there are some important considerations to be aware of.
 - Content that you want to associate with the experiment must be available in a publish group *before* you connect the experiment. 
 - When you add a page or fragment that has an experiment running on it to a publish group, the experiment will be removed from the page or fragment in the publish group.
-- Within a publish group, you can connect a page or fragment to your experiment by using the **Experiments** tab or the **Pages** or **Fragments** tab. For more information, refer to the [Connect an experiment and edit variations](experimentation-connect-edit.md) topic.
 - Experiments that are connected to pages in a live site aren't available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in a live site aren't available to other experiments in publish groups and vice-versa.
-- When you publish a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
+- When you publish or schedule a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
 - Because a publish group continues to persist after it's been published to a live site, experiments in the publish group will also persist. Therefore, you won't be able to associate other experiments with the same page or fragment. To avoid this limitation, delete any publish groups with persisting experiments. Similarly, if you want to delete an experiment in a live site that also exists in a publish group, delete it from the publish group first.
 
 ## Previous topic
