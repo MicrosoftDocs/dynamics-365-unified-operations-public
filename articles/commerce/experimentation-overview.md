@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ## Overview
 You can run controlled experiments such as A/B tests in Dynamics 365 Commerce to validate hypotheses about the effectiveness of your e-Commerce pages and make decisions with data-driven confidence. e-Commerce experimentation enables you to scientifically measure the impact of proposed changes to your website and drive higher conversion rates as a result.
 
-Commerce supports the creation, editing, and management of page and content treatments (known as **variations**) within site builder. Commerce integrates with third-party services that you use to enable the creation of experiments and variation assignments. Real-time event streams are captured in Commerce and enable the analytics that define the experiment results in the third-party service. You then use the analytics help support or refute your hypothesis.
+Commerce supports the creation, editing, and management of page and content treatments (known as **variations**) within site builder. Commerce integrates with third-party services that you use to enable the creation of experiments and variation assignments. Real-time event streams are captured in Commerce and enable the analytics that define the experiment results in the third-party service. You then use the analytics to help support or refute your hypothesis.
 
 > [!NOTE]
 > Commerce supports A/B testing on pages, modules, and fragments. Multi-variate and multi-page tests can currently only be accomplished using fragments.
@@ -42,14 +42,13 @@ Commerce supports the creation, editing, and management of page and content trea
 ## Set up prerequisites
 1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility SDK, and Commerce scale unit to Commerce version 10.0.13 or later.
 1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see the [Configure and enable connectors](e-commerce-extensibility/connectors.md) topic. 
-1. **Choose and install a third-party service** - You'll use a third-party service to run and monitor your experiment while it's connected to Commerce. Choose which service you want to use and follow the publisher's instructions to install it.
 1. **Turn on the experimentation feature flags in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings -> Features** or at the site level at **Site Settings -> Features**.
     - Enable the **Experimentation** flag to create experiment variations of modules within a page without affecting or copying other content that isn't part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
-    - Enable the **Experimentation on pages or fragments** flag to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
+    - Enable the **Experiment on pages or fragments** flag to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
 
     
 ## Experimentation lifecycle
-Setting up an experiment, creating variations, and running an experiment is an iterative process. You may want to re-do some of the steps along the way to get the results you want. The image below illustrates the exerimentation lifecycle in Commerce and the third-party service. 
+Setting up an experiment, creating variations, and running an experiment is an iterative process. The image below illustrates the exerimentation lifecycle in Commerce and the third-party service. 
 
 [ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
