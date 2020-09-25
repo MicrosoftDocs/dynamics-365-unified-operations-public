@@ -163,7 +163,7 @@ For the full list of RS APIS, check this doc: [Commerce Scale Unit customer and 
 
 1.  Create a new POST request in postman with the below Request URL, Params and Headers parameters:
 
-    POST Request URL: <https://Retail>serverurl/Commerce/Customers('2001')/GetOrderHistory
+    **POST Request URL:** <https://Retail>serverurl/Commerce/Customers('2001')/GetOrderHistory
 
     **Note:** ‘2001’ is the actual customer id, replace it with your customer id.
 
@@ -181,7 +181,7 @@ For the full list of RS APIS, check this doc: [Commerce Scale Unit customer and 
 | OUN           | Operating unit number (This retail channel operating unit number) |
 | authorization | id\_token { access\_token }                                       |
 
-access_token – Copy paste access_token generated in the authorization request. Prefix it with ‘*id_token ‘*
+**access_token** – Copy paste access_token generated in the authorization request. Prefix it with ‘*id_token ‘*
 
 2.  After this request execution, the response body will contain the customer order history.
 
@@ -208,7 +208,7 @@ access_token – Copy paste access_token generated in the authorization request.
 
     **Microsoft.IdentityModel.Clients.ActiveDirectory** and **Microsoft.Dynamics.Commerce.RetailProxy**.
 
-    Microsoft.Dynamics.Commerce.RetailProxy NuGet package can added from RetailSDK\\pkgs folder, in the NuGet manager add a local repository for the RetailSDK\\pkgs folder.
+    Microsoft.Dynamics.Commerce.RetailProxy NuGet package can added from **RetailSDK\\pkgs** folder, in the NuGet manager add a local repository for the RetailSDK\\pkgs folder.
 
 2.  Add the below variables in the Program.cs file:
 
