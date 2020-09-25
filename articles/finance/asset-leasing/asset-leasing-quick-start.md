@@ -216,64 +216,74 @@ Impairment entry for IFRS and US GAAP: <br>
 > If the lease is linked to a fixed asset, the lease impairment should be posted from Fixed assets because asset depreciation is run from the Fixed assets module.
 
 ## Create an asset lease
-To create a new lease, go to **Asset leasing > Common > Lease summary**. 
+Complete the following steps to create a new lease. 
 
-Enter the required fields on the **General** FastTab. 
+1. Go to **Asset leasing > Common > Lease summary**. Enter the required fields on the **General** FastTab. 
+   - **Lease details**
+   - **Asset useful life (Months)**
+   - **Lease group**
+   - **Incremental borrowing rate (%)**
+   - **Compounding interval**
+   - **Annuity type**
+   - **Currency**
+   - **Commencement date**
 
 [![Mandatory fields under the General FastTab](./media/overview-04.png)](./media/overview-04.png)
 
-Move to the **Payment schedule lines** FastTab and enter a payment line, then select **Create schedules**.
+2. Move to the **Payment schedule lines** FastTab and enter a payment line, then select **Create schedules**.
 
 [![Payment line FastTab](./media/overview-05.png)](./media/overview-05.png)
 
-Select **Books**. 
+3. Select **Books**. 
 
 [![Book details highlighted](./media/overview-06.png)](./media/overview-06.png)
 
-Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
+4. Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
 
 [![Lease status highlighted](./media/overview-07.png)](./media/overview-07.png)
 
-Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
+5. Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
+
 [![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
 
-The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
+   The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
 
 [![Help text sample](./media/overview-10.png)](./media/overview-10.png)
 
-Go to **Payment schedule** under the **Function** section.  
+6.  Go to **Payment schedule** under the **Function** section.  
 
 [![List of payment schedules](./media/overview-12.png)](./media/overview-12.png)
 
-The **Payment schedule** page lists future payment schedules for a lease ID. Select **Confirm schedule** to be able to post the **Initial recognition** transactions. 
+   The **Payment schedule** page lists future payment schedules for a lease ID. Select **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
 [![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
 
-Select **Initial recognition** to create initial recognition journal. 
+7. Select **Initial recognition** to create initial recognition journal. 
 
 [![General journals selection](./media/overview-14.png)](./media/overview-14.png)
 
-Select **Asset leasing journals** to post the initial recognition transaction. 
+8. Select **Asset leasing journals** to post the initial recognition transaction. 
 
 [![Payment schedule for an ROU transaction](./media/overview-15.png)](./media/overview-15.png)
 
-The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
+   The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
  
 [![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
 
-The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
-Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
+   The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
+   
+9. Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
 
 [![Interest transactions on the Lease liability amortization schedule](./media/overview-17.png)](./media/overview-17.png)
 
-The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
+   The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
 [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
 
-The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
+   The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 
 [![Right-of-use asset transactions](./media/overview-21.png)](./media/overview-21.png)
 
-The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
+   The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
 [![List of lease liability transactions](./media/overview-22.png)](./media/overview-22.png)
