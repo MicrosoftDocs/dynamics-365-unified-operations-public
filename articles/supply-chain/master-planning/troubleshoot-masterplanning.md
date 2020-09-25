@@ -41,5 +41,21 @@ The purpose of Master planning is to ensure that you have supply to meet demand.
 **Resolution/Fix**
 That's because the delivery address, site and warehouse doesn't automatically get changed at the line level either - you'll need to update that yourself
 
-##  When there are two trade agreements for the same/overlapping period, then the same agreement line is always picked.
-If there are two trade agreements defined for the same/overlapping period, then when creating sales order lines with those items, the same trade agreement seems to be picked each time.
+## BOM explosion behaves differently when a production order is firmed and when work is created manually and the production order is estimated
+### Issue description
+If a BOM is exploded when the Production order is firmed, the items are not exploded. If a work order is created manually and the Production order is estimated, the items are exploded.
+
+### Issue Resolution
+This is working as expected, because the explosion when the production order is firmed would point to the planned order, that in this case seems not to be firmed at that point. In the case of doing it when the production order is estimated, the explosion is triggered from the released production order where no planned order exists.
+
+## No updates on "Delay" after rescheduling a planned order
+In order to update the delay for planned orders, ensure that the "Perform explosion after re-scheduling" is enabled, it is under the Explosion fast-tab when rescheduling.
+
+## Production scheduling does not consider safety margins set on item coverage for pegged supply
+Master planning considers the safety margins but when scheduling planned production orders ignores the safety margins.
+
+### Resolution/Workaround
+This is working as expected. Margins are only considered during master planning, not during manual scheduling. Expectation is that these margins act as a buffer during the planning phase to give some "margin" for the actual process. 
+
+To get the desired result, the margin can be removed and the route must be updated to include the desired time e.g. as queue time. This way both master planning and manual scheduling should provide the same result.
+
