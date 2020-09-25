@@ -228,7 +228,7 @@
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-      - name: Invoice automation    
+      - name: Vendor invoice automation    
         items: 
         - name: Submit invoices to the workflow system and match product receipt lines
           href: accounts-payable/submit-invoice-workflow-automatically.md
@@ -266,7 +266,7 @@
         href: accounts-payable/mobile-invoice-approvals.md
       - name: Vendor collaboration invoicing workspace
         href: accounts-payable/vendor-portal-invoicing-workspace.md
-      - name: Vendor invoice automation
+      - name: Invoice automation for scanned documents
         href: accounts-payable/vendor-invoice-automation.md
       - name: Broker contract management
         href: accounts-payable/broker-contract.md
