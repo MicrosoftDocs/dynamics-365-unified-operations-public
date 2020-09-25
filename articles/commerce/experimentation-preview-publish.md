@@ -38,7 +38,7 @@ This topic describes how to preview and publish your experiment in Commerce afte
 ## Preview your experiment variations
 You can preview your variations and continue editing them until they look the way you want them to.
 
-1. In editor view in site builder, use the variations drop-down menu below the command bar to select the content you want to preview. 
+1. In site builder, use the variations drop-down menu below the command bar to select the content you want to preview. 
 1. Select **Preview** in the top bar. A preview of what the content will look like when it's published is displayed.
 1. To preview a different variation, select it from the variation drop-down and select **Preview** again.
 
