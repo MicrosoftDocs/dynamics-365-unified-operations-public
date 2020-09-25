@@ -176,6 +176,10 @@ To pull data from a new channel table to HQ, you have two options:
 ## Other scenarios
 For the remaining push and pull scenarios, only the information for the sample resource file is described, because initialization is the same as we described in the previous sections.
 
+### Push existing headquarters tables to channel database which are not part of CDX configurations
+
+In this case the extension should create a new sub job with the same name as the core table and create the same table in the channel database ext schema and map it. Since CDX doesn’t support multiple sub job for the same table, the sub job name must match the core table name to avoid any future conflicts because in the future the headquarters table may be added for CDX push/pull by OOB product with the sub job name same as the core table. CDX framework will automatically merge if it find any duplicate sub job names.
+
 ### Push existing columns that aren't mapped as part of any subjobs
 
 You can push the existing unmapped column to either new extension columns or existing columns in the channel database, as shown in the following example. 
