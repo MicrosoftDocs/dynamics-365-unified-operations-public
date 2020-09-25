@@ -2,7 +2,7 @@
 # required metadata
 
 title: Review the status of an experiment
-description: This topic explains what status an experiment has in the experimentation lifecycle in Dynamics 365 Commerce . 
+description: This topic explains what status an experiment has in the experimentation lifecycle in Dynamics 365 Commerce. 
 author:  sushma-rao 
 manager: AnnBe
 ms.date: 10/01/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.13
 # Review the status of an experiment
 There are many steps involved in setting up and running an experiment in Dynamics 365 Commerce. For information on the experimentation lifecycle, see [Experimentation in Dynamics 365 Commerce](experimentation-overview.md).
 
-To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is diplayed with the status of each experiment in both Commerce and the third-party service that is being used to enable the creation of experiments, assign variations, and analyze data.
+To learn where an experiment is in the lifecycle, go to the **Experiments** tab in site builder. A list of experiments is displayed with the status of each experiment in both Commerce and the third-party service that is being used to enable the creation of experiments, assign variations, and analyze data.
 
 In the **Commerce status** column, the following values may be displayed. 
 1. **Draft** - The experiment is connected to a page or fragment in Commerce and is being edited.
