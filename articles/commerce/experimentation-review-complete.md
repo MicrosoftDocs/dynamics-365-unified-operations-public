@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Promote a variation and complete an experiment
 
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to promote the variation that produced the best results in your experiment, and how to complete the experiment.
+This topic describes how to promote the variation that produced the best results in your experiment, and how to complete the experiment. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
 
 [ ![Experimentation user journey - Review & Complete](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
