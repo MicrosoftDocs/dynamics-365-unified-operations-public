@@ -5,7 +5,7 @@ title: Priority-based throttling
 description: This topic provides information about priority-based throttling for Odata and custom service-based integrations.
 author: hasaid
 manager: AnnBe
-ms.date: 09/18/2020
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: Platform update 37
 # Priority-based throttling
 
 [!include [banner](../includes/banner.md)]
+
+[!NOTE]
+> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Priority integration** page.  
 
 
 Priority-based throttling prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
