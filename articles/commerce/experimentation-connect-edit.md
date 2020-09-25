@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect an experiment and edit variations
-description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commmerce, and how to edit variations for the experiment.
+description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
 manager: AnnBe
 ms.date: 10/01/2020
