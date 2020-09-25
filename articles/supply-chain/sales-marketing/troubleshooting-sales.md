@@ -111,34 +111,6 @@ Supply Chain Management doesn't currently support the calculation of commissions
 
 ## A bundle item isn't supported in an intercompany process.
 
-### Reproduce the issue – Scenario 1
-
-The following procedure shows one way to reproduce the issue.
-
-1. In the legal entity of the subsidiary, create a sales order, and add an item where the **Bundle** option is set to *Yes*.
-1. Go to **Sell \> Generate \> Confirm sales order** to confirm the sales order.
-
-    After confirmation, the bundle is exploded on the sales order.
-
-1. Go to **Sales order \> Purchase order**.
-1. Notice that you can't select the bundle item. Only the components are visible.
-
-### Reproduce the issue – Scenario 2
-
-The following procedure shows another way to reproduce the issue.
-
-1. In the legal entity of the subsidiary, create a sales order, and add an item where the **Bundle** option is set to *Yes*.
-2. Go to **Sales order \> Purchase order**, and create a purchase order by using the vendor of the main company. (Intercompany settings should be available.) 
-
-    After confirmation, an intercompany purchase order and an intercompany sales order are created.
-
-3. Go to **Manage \> Intercompany tracing \> Intercompany sales order** to go to the intercompany sales order.
-4. Go to **Sell \> Generate \> Confirm sales order** to confirm the sales order.
-
-    After confirmation, the bundle is exploded on the intercompany sales order. The intercompany purchase order and the original sales order are also updated. However, the bundle functionality isn't considered on the original sales order.
-
-### Issue resolution
-
 The bundle item isn't available for the purchase order because, if you examine the sales order lines for the bundle item, you will notice that the quantity is *0* (zero) and the status is *Cancelled*. This behavior is by design. The sales order buys only the components of the bundle item. It doesn't buy the bundle item itself.
 
 If you must buy a bundle, consider whether you have to mark it as bundle item, because this functionality is actually designed for revenue recognition scenarios. For more information about bundle items, see [Bundles](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
