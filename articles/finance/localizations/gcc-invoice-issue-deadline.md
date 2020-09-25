@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Invoice issue deadline (GCC)
+# Invoice issue deadline
 
 [!include [banner](../includes/banner.md)]
 
