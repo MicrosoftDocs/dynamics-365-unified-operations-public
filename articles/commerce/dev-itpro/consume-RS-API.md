@@ -50,11 +50,11 @@ To browse the metadata, open the Retail server URL in the following format in a 
 
 **https://RS-URL/Commerce/$metadata**
 
-**Security and authentication to consume the RS APIs:**
+## Security and authentication to consume the RS APIs:
 
-**Authentication methods**
+### Authentication methods
 
-**[For detailed information on auth flows and configuration check this doc.](https://docs.microsoft.com/en-us/dynamics365/commerce/arch-auth-flow) **
+[For detailed information on auth flows and configuration check this doc.](https://docs.microsoft.com/en-us/dynamics365/commerce/arch-auth-flow)
 
 Access to each of the application programming interfaces (APIs) on the Retail server is natively restricted by one or more of the following roles:
 
@@ -74,7 +74,7 @@ In this document we will focus on how to setup **Application** auth flows and ac
 
 Before accessing the APIs from the external application, the external application must be registered in Azure App registration and registered application details must be added in the headquarters.
 
-**Register the application in Azure App registrations**
+## Register the application in Azure App registrations
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, and not the other way around.
 
@@ -98,7 +98,7 @@ Registering your application establishes a trust relationship between your app a
 
 When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Also referred to as just ***client ID***, this value uniquely identifies your application in the Microsoft identity platform.
 
-### **Add a client secret**
+### Add a client secret
 
 The client secret, known also as an *application password*, is a string value your app can use in place of a certificate to identity itself.
 
@@ -114,7 +114,7 @@ The client secret, known also as an *application password*, is a string value y
 
 6.  **Record the secret's value** for use in your client application code - it's *never displayed again* after you leave this page.
 
-**Register the app in Fiancé and operation for Retail server to trust this app **
+## Register the app in Fiancé and operation for Retail server to trust this app
 
 1.  In Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 
@@ -130,7 +130,7 @@ The client secret, known also as an *application password*, is a string value y
 
 7.  Navigate to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule** and run CDX Job **1110**.
 
-**Access the RS APIs using Postman**
+### Access the RS APIs using Postman
 
 There are several third-party tools that allow you to authenticate to Azure Service and compose and send Web API requests and view responses. Postman is one of the most popular. [Download and install the postman client tool.](https://www.postman.com/)
 
@@ -140,15 +140,15 @@ To access the API, first generate the authorization token and then access the AP
 
 For the full list of RS APIS, check this doc: [Commerce Scale Unit customer and consumer APIs](https://docs.microsoft.com/en-us/dev-itpro/retail-server-customer-consumer-api.md)
 
-**Generate authorization token with postman**
+### Generate authorization token with postman
 
 1.  Create a new Get request in postman with the below Request URL and Body parameters:
 
-> Get Request URL: [https://login.microsoftonline.com/{tenant-id}/oauth2/token](https://login.microsoftonline.com/%7btenant-id%7d/oauth2/token)
->
-> Tenant-id can be obtained from your Azure app registration overview page, next to the client id you should be able to see the tenant -id
->
-> **Body parameters**
+    **Get Request URL:** [https://login.microsoftonline.com/{tenant-id}/oauth2/token](https://login.microsoftonline.com/%7btenant-id%7d/oauth2/token)
+
+ Tenant-id can be obtained from your Azure app registration overview page, next to the client id you should be able to see the tenant-id
+
+**Body parameters**
 
 | Key            | Value                                                         |
 |----------------|---------------------------------------------------------------|
@@ -157,9 +157,9 @@ For the full list of RS APIS, check this doc: [Commerce Scale Unit customer and 
 | client\_secret | The client secret generated during the Azure app registration |
 | resource       | Retail server URL                                             |
 
-1.  After this request execution, in the response body the **access\_token** will be generated. Copy this token value, we will use this token to connect to the retail server.
+2.  After this request execution, in the response body the **access\_token** will be generated. Copy this token value, we will use this token to connect to the retail server.
 
-**GetOrderHistory using the postman**
+### GetOrderHistory using the postman
 
 1.  Create a new POST request in postman with the below Request URL, Params and Headers parameters:
 
@@ -183,9 +183,9 @@ For the full list of RS APIS, check this doc: [Commerce Scale Unit customer and 
 
 access_token – Copy paste access_token generated in the authorization request. Prefix it with ‘*id_token ‘*
 
-1.  After this request execution, the response body will contain the customer order history.
+2.  After this request execution, the response body will contain the customer order history.
 
-**Access the RS APIs using console application**
+## Access the RS APIs using console application
 
 1.  Create a new Console application using VS 2017.
 
@@ -202,7 +202,7 @@ access_token – Copy paste access_token generated in the authorization request.
   </appSettings>
 
 ```
-Update the configuration settings with actual vales.
+**Update the configuration settings with actual vales.**
 
 1.  Add the below NuGet packages using the NuGet package manager for the project:
 
