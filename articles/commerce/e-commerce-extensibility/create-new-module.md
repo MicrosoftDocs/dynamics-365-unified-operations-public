@@ -68,6 +68,19 @@ To preview the new module in a local web browser, follow these steps.
 
 Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
+## Deferred module rendering
+By default all modules are rendered server side, however deferred loading of some modules may be needed to improve page load performance. See the client side rendering section inside the [page load actions](page-load-data-action) for more information.
+
+Any references to the window or document objects which are available only in the context of a browser should be handled appropriately during server side rendering. This will avoid unexpected rendering behavior such as page flicker and DOM mismatch issues. The below SDK utility function can be used for this purpose:
+
+```
+import MsDyn365 from '@msdyn365-commerce/core';
+
+if (MsDyn365.isBrowser) {
+    return new URL(window.location.href);
+}
+```
+
 ## Additional resources
 [CLI command reference](cli-command-reference.md)
 
