@@ -46,7 +46,7 @@ The **Submitted by** value in the workflow is the user ID that was entered for t
 
 ## Matching posted product receipts to invoice lines that have a three-way matching policy
 
-As part of a touchless Accounts payable invoicing process, the system can automatically match posted product receipts to invoice lines. A three-way matching policy must be defined for this task. This feature is available if the **Automate vendor invoices** feature has been enabled on the **Feature management** page.
+As part of a touchless Accounts payable invoicing process, the system can automatically match posted product receipts to invoice lines. A three-way matching policy must be defined for this task. This feature is available if the **Vendor invoice automation** feature has been enabled on the **Feature management** page.
 
 The process will run until the matched product receipt quantity equals the invoice quantity. As part of this process, you can specify the maximum number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed. The process will run in the background, either hourly or daily. You can run the automated matching process as part of the process for submitting invoices to the workflow system. Alternatively, you can run it as a standalone process. The settings for the match-product-receipts-to-invoice-lines process are configured on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).
 
