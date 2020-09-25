@@ -42,9 +42,9 @@ Use the data and analytics related to the experiment in the third-party service 
 
 1. Go to the **Experiments** tab in site builder and select the experiment.
 1. Select **Complete experiment** on the top bar.
-1. In the **Complete the experiment** dialog, select **Review the experiment data in \<your third-party service\>**. The third-party service opens where you can validate your choice.
+1. In the **Complete the experiment** dialog, select **Review the experiment data**. The third-party service opens where you can validate the metrics and determine which variation performed the best.
 1. In the **Complete the experiment** dialog in site builder, select the winning variation and then select **Next**.
-1. Open the third-party service and stop and/or archive the experiment.
+1. Open the third-party service and stop the experiment.
 1. In site builder, select **Complete** to overwrite the original live page and publish the winning variation so that it's available to all users of your website. 
 
 > [!NOTE]
