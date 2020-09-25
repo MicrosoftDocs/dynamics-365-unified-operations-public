@@ -228,15 +228,9 @@ Complete the following steps to create a new lease.
    - **Currency**
    - **Commencement date**
 
-[![Mandatory fields under the General FastTab](./media/overview-04.png)](./media/overview-04.png)
-
 2. Move to the **Payment schedule lines** FastTab and enter a payment line, then select **Create schedules**.
 
-[![Payment line FastTab](./media/overview-05.png)](./media/overview-05.png)
-
 3. Select **Books**. 
-
-[![Book details highlighted](./media/overview-06.png)](./media/overview-06.png)
 
 4. Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
 
@@ -244,15 +238,9 @@ Complete the following steps to create a new lease.
 
 5. Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
 
-[![Book and Book type](./media/overview-09.png)](./media/overview-09.png)
-
    The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
 
-[![Help text sample](./media/overview-10.png)](./media/overview-10.png)
-
 6.  Go to **Payment schedule** under the **Function** section.  
-
-[![List of payment schedules](./media/overview-12.png)](./media/overview-12.png)
 
    The **Payment schedule** page lists future payment schedules for a lease ID. Select **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
@@ -260,11 +248,7 @@ Complete the following steps to create a new lease.
 
 7. Select **Initial recognition** to create initial recognition journal. 
 
-[![General journals selection](./media/overview-14.png)](./media/overview-14.png)
-
 8. Select **Asset leasing journals** to post the initial recognition transaction. 
-
-[![Payment schedule for an ROU transaction](./media/overview-15.png)](./media/overview-15.png)
 
    The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
  
