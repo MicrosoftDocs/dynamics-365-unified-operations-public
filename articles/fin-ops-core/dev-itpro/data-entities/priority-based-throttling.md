@@ -72,7 +72,7 @@ After you have registered your service in Azure AD and in your Finance and Opera
 
 When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
 
-```x++
+```C#
     if (!response.IsSuccessStatusCode) 
             { 
                 if ((int)response.StatusCode == 429) 
