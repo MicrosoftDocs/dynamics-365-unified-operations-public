@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderChecklist 
+ms.search.form: EntAssetWorkOrderChecklist, EntAssetMobileWorkOrderLineChecklistDetails 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
