@@ -54,7 +54,7 @@ The Retail channel performance PowerBI.com solution lets you quickly build your 
 5. Scroll or search to find **Microsoft Dynamics AX Retail channel performance**, and then click **Get it now**.
 6. Enter your Dynamics AX URL in the following format: `https://<tenant>.cloudax.dynamics.com` (for example, `https://YourAOSTenant.cloudax.dynamics.com`). Then click **Next** to pull data from Dynamics AX data storage into this Power BI dashboard.
 7. Select **oAuth2** as the authentication method, and then click **Sign in**.
-8. To sign in, enter an Microsoft 365 account that has permission to access your Dynamics AX environment.
+8. To sign in, enter a Microsoft 365 account that has permission to access your Dynamics AX environment.
 9. After data is successfully pulled from Dynamics AX into Power BI, you can view your personal **Retail channel performance** dashboard in Power BI by clicking **Retail channel performance dashboard** in the left navigation pane.
 
     [![Retail channel performance dashboard](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
