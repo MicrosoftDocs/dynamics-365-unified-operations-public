@@ -61,28 +61,31 @@ To connect your experiment in Commerce, you'll launch the **Connect experiment**
 1. To launch the wizard, select the **Experiments** tab in site builder and then select **Connect**. Alternatively, the wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** in the command bar.
 
 > [!NOTE]
-> A page can only be connected to one experiment at a time. To connect a page to a different experiment, delete the experiment the page is currently connected to.
+> A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment the page is currently connected to.
 
 1. Choose the page or fragment you want to run your experiment on.
 1. Set the experimentation scope to **entire** or **partial**, based on the choice you made in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
     > [!NOTE]
-    > The **Experimentation on pages or fragments** feature flag must be enabled if you want to experiment on a full page or fragment. Refer to the [Experimentation in Dynamics 365 Commerce](experimentation-overview.md) topic for more information.
+    > The **Experiment on pages or fragments** feature flag must be enabled if you want to experiment on a full page or fragment. Refer to the [Experimentation in Dynamics 365 Commerce](experimentation-overview.md) topic for more information.
     
-1. In the final step of the wizard, select **Generate variations and exit wizard**. Variations are created for the experiment. The variations that are created are simply copies of the original page or fragment you previously chose to associate with the experiment. 
+1. In the final step of the wizard, select **Generate variations and exit wizard**. Variations are created for the experiment. 
 
 ## Edit your variations
-When you exit the wizard, variations are created for you. The variations are simply copies of the original page or fragment that you previously chose to associate with the experiment. 
+When you exit the wizard, variations are created for you. 
 
-Next, you'll edit the variations so they reflect the choices that you need to verify the experiment hypothesis. Choose the procedure below that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
+Next, you'll edit the variations so they reflect the choices that you need to verify in the experiment hypothesis. Choose the procedure below that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
 
-### Experiments with partial scope
+### Edit variations for experiments with partial scope
 Follow these steps if you defined the scope of your experiment as **partial** in the **Connect experiment** wizard.
 
 1. In editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You may want to also establish a control or base variation by leaving one of the variations unchanged.
 1. Select the module to be experimented on, select the ellipsis, and then select **Add to experiment**.
 
-### Experiments with entire scope
-If you defined the scope of your experiment as **entire** in the **Connect experiment** wizard, while in editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You may want to also establish a control or base variation by leaving one of the variations unchanged.
+### Edit variations for experiments with entire scope
+If you defined the scope of your experiment as **entire** in the **Connect experiment** wizard, while in editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. 
+
+> [!NOTE]
+> In either case, you may want to also establish a control or base variation by leaving one of the variations unchanged.
 
 ## Previous topic
 [Set up an experiment](experimentation-setup.md) 
