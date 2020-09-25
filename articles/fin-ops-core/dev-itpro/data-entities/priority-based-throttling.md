@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 37
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttle priority mapping** page.  
+> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
 
 
 Priority-based throttling prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
