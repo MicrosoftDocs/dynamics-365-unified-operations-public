@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
