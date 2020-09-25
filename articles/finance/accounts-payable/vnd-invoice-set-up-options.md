@@ -41,14 +41,14 @@ This topic describes the options that are available for setting up and configuri
 
 To set up or view information about a background task, go to **System administration \> Setup \> Process automations**, and select the **Background task** tab.
 
-To achieve touchless automation from the import process through vendor invoice posting, you must set the **Vendor invoice workflow** field. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in your workflow configuration. To set up a workflow, go to **Accounts payable \> Setup \> Accounts payable workflows**.
+To achieve touchless automation from the import process through vendor invoice posting, you must set up a Vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in your workflow configuration. .
 
 ## Parameters for submitting imported vendor invoices to the workflow system
 
-Specific parameters are used to submit imported vendor invoices to the workflow system. Additionally, some parameters are used to match posted product receipt lines to pending vendor invoice lines. On the **Vendor invoice automation** tab of the **Accounts payable parameters** page, enter the following configuration settings:
+Specific parameters are used to submit imported vendor invoices to the workflow system. Additionally, some parameters are used to match posted product receipt lines to pending vendor invoice lines. On the **Vendor invoice automation** tab of the **Accounts payable parameters** page, the parameters that you must set are divided between the following sections:
 
-- Submit imported invoices to workflow
-- Match post product receipt lines to pending vendor invoice lines
+- Vendor invoices workflow
+- Match product receipts automatically
 
 The following parameters are available:
 
@@ -58,7 +58,7 @@ The following parameters are available:
 
 - **Match product receipts to invoice lines prior to automatically submitting** – If you set this option to **Yes**, the imported invoice can't automatically be submitted to the workflow system until the matched product receipt quantity equals the invoice quantity. By setting this option to **Yes**, you enable automatic matching of posted product receipts to invoice lines that a three-way matching policy is defined for. That process will run until the matched product receipt quantity equals the invoice quantity. At that point, the invoice is automatically submitted to the workflow system.
 
-    This option is available only if the **Enable invoice matching validation** option is selected. When this option is selected, the **Automatically match product receipts to invoice lines** option is automatically selected.
+    The 'Match product receipts to invoice lines prior to automatically submitting option is available only if the **Enable invoice matching validation** option is selected. When this option is selected, the **Automatically match product receipts to invoice lines** option is automatically selected.
 
 - **Require the calculated totals to equal the imported totals for automatic workflow submission** – If you set this option to **Yes**, the invoice can't automatically be submitted to the workflow system until the totals that are calculated for the invoice equal the imported totals. If this option is set to **No**, the invoice can automatically be submitted to the workflow system, but it can't be posted until the calculated totals are corrected so that they match the imported totals. If you don't import the invoice amount or the sales tax amount, this option should be set to **No**.
 - **Automatically match product receipts to invoice lines** – If you set this option to **Yes**, background processing can be used to do automatic matching of posted product receipts to invoice lines that a three-way matching policy is defined for. That process will run until the matched product receipt quantity equals the invoice quantity, or until the value of the **Number of times to attempt automatic matching** field is reached. The process can be run until the invoice has been submitted to the workflow system.
