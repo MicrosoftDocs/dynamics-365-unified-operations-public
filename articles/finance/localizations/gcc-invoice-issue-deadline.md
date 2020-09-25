@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to configure Microsoft Dynamics 365 Finance so that it complies with legal requirements for the tax invoice issue deadline. The tax invoice issue date must be no later than the data that is set in the legislation. For example, invoice should be issued not later than the fifteenth day of the month following the month during which the Supply took place. 
+This topic explains how to configure Microsoft Dynamics 365 Finance so that it complies with legal requirements for the invoice issue deadline. For example, invoice should be issued not later than the fifteenth day of the month following the month during which the Supply took place or not later than fifteenth day the Supply took place. 
 
 
 ## Prerequisites
