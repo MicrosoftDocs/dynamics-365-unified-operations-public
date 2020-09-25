@@ -1006,6 +1006,10 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
+      - name: Experimentation
+        items:
+        - name: Experimentation in Dynamics 365 Commerce
+          href: experimentation-overview.md
       - name: Error handling
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
