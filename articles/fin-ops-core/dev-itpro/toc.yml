@@ -1415,7 +1415,7 @@
       - name: Develop and release
         href: lcs-solutions/lcs-solutions-app-source.md
       - name: Stage and publish
-        href: lcs-solutions/marketing-content-lcs-solutions.md
+        href: /azure/marketplace/partner-center-portal/create-new-operations-offer
       - name: Add methodologies
         href: lcs-solutions/methodologies-lcs-solutions.md
       - name: Set up Business process modeler libraries
