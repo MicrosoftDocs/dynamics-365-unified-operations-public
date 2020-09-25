@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scheduling engine performance
+title: Improve scheduling engine performance
 description: This topic provides information about the scheduling engine and how to improve performance. 
 author: ChristianRytt
 manager: tfehr
@@ -30,15 +30,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# Scheduling engine performance
+# Improve scheduling engine performance
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about delayed dates in master planning. A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.
-
-## Introduction
-
-The resource scheduling engine is used when scheduling routes for planned and released production orders. The engine was originally released as part of AX 2012 and has gone through several improvements since its release.
+The resource scheduling engine is used when scheduling routes for planned and released production orders. The engine was originally released as part of Dynamics AX 2012 and has gone through several improvements since its release.
 
 The [job shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling) is known in academia as an extremely complex combinatorial problem where solution time grows exponentially with the number of decision variables. We are seeing cases where customers set up production routes and related data in a way that results in a scheduling problem that can't be solved in reasonable time even on the most modern hardware. This topic will help you understand the workings of the scheduling engine and how a specific setup can have influence on the performance.
 
