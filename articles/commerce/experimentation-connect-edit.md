@@ -58,7 +58,7 @@ For more information about publish groups, refer to [Work with publish groups](p
 ## Connect your experiment
 To connect your experiment in Commerce, you'll launch the **Connect experiment** wizard. The wizard walks you through the steps required to connect your experiment. When you complete the wizard, your experiment is connected and variations are created and ready to be edited.
 
-1. To launch the wizard, select the **Experiments** tab in site builder and then select **Connect**. Alternatively, tThe wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** in the command bar.
+1. To launch the wizard, select the **Experiments** tab in site builder and then select **Connect**. Alternatively, the wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** in the command bar.
 
 > [!NOTE]
 > A page can only be connected to one experiment at a time. To connect a page to a different experiment, delete the experiment the page is currently connected to.
