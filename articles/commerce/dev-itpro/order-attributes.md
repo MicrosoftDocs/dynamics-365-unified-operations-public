@@ -5,7 +5,7 @@ title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Commerce Headquarters, the point of sale (POS), and the Commerce runtime (CRT). 
 
-Headquarters now includes pages for editing and updating attribute values. Therefore, you can set the values for call center orders in Headquarters. In POS use the Attributes panel to set or update the attribute value in POS. If you don't require a UI and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
+Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in Headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
 
 ## Why and when you should order attributes
 
