@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription 
+ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
