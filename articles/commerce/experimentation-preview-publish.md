@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Preview and publish an experiment
 
-There are many steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. This topic describes how to preview and publish your experiment in Commerce after you've [connected your experiment and edited your variations](experimentation-connect-edit.md).
+This topic describes how to preview and publish your experiment in Commerce after you've [connected your experiment and edited your variations](experimentation-connect-edit.md). The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
 
 [ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
