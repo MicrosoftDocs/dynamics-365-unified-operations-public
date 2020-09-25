@@ -48,7 +48,7 @@ Commerce supports the creation, editing, and management of page and content trea
 
     
 ## Experimentation lifecycle
-Setting up an experiment, creating variations, and running an experiment is an iterative process. The image below illustrates the exerimentation lifecycle in Commerce and the third-party service. 
+Setting up an experiment, creating variations, and running an experiment is an iterative process. The image below illustrates the experimentation lifecycle in Commerce and the third-party service. 
 
 [ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
