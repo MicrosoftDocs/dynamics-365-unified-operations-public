@@ -70,12 +70,12 @@ The following table describes the current supported versions of various Commerce
 
 | Component | Latest available release | Latest available component version number | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and Operations apps | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.12 | 9.22 | 10.0.9 | 9.19 |
-| Commerce module library | 10.0.12 | 9.22 | 10.0.9 | 9.22 |
-| Commerce Scale Unit (self-hosted) | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| Modern POS | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| Hardware Station | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
+| Finance and Operations apps | 10.0.12 | 10.0.12 | 10.0.10 | 10.0.10 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.12 | 9.22 | 10.0.10 | 9.20 |
+| Commerce module library | 10.0.12 | 9.22 | 10.0.10 | 9.20 |
+| Commerce Scale Unit (self-hosted) | 10.0.12 | 9.22 | 10.0.6 | 9.16 |
+| Modern POS | 10.0.12 | 9.22 | 10.0.6 | 9.16 |
+| Hardware Station | 10.0.12 | 9.22 | 10.0.6 | 9.16 |
 
 ## One Version requirements
 
