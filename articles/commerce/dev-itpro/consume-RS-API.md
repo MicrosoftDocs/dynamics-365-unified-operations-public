@@ -130,7 +130,7 @@ The client secret, known also as an *application password*, is a string value y
 
 7.  Navigate to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule** and run CDX Job **1110**.
 
-### Access the RS APIs using Postman
+## Access the RS APIs using Postman
 
 There are several third-party tools that allow you to authenticate to Azure Service and compose and send Web API requests and view responses. Postman is one of the most popular. [Download and install the postman client tool.](https://www.postman.com/)
 
