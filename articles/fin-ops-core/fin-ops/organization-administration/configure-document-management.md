@@ -76,7 +76,7 @@ To configure SharePoint storage, follow these steps.
 
 SharePoint communication works for the current user only if the following conditions are met:
 
-- An Microsoft 365 license is associated with the user's account.
+- A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The user has access to the folder that the document is stored in.
