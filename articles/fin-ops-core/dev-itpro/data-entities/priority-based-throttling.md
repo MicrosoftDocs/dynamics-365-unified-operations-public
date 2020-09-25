@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
-[!NOTE]
+? [!NOTE]
 > The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Priority integration** page.  
 
 
