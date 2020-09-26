@@ -38,9 +38,9 @@ A hypothesis is a statement where you predict the outcome of the experiment. Man
 
 Metrics you collect during the experiment track how your website users respond to the variations. Choose which metrics to track based on what you believe will give you the best insight into determining whether your hypothesis is valid. In the example above, you may choose to use click-through rate. Refer to the [Commerce component events for diagnostics and troubleshooting](../dev-itpro/retail-component-events-diagnostics-troubleshooting#e-commerce-events.md) topic to review all of the available events and attributes.
 
-## Previous topic
+## Previous step
 [Experimentation in Dynamics 365 Commerce](experimentation-overview.md)
 
 
-## Next topic
+## Next step
 [Set up an experiment](experimentation-setup.md)
