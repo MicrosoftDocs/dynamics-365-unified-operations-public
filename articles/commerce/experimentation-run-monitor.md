@@ -50,8 +50,8 @@ If for any reason you need to modify your variations, follow the steps below.
 1. Make needed changes, then preview and publish the variations. For more information, see [Preview and publish an experiment](experimentation-preview-publish.md).
 1. Go to the third-party service to make any experiment setup-related changes.
     
-## Previous topic
+## Previous step
 [Preview and publish an experiment](experimentation-preview-publish.md)
 
-## Next topic
+## Next step
 [Promote a variation and complete an experiment](experimentation-review-complete.md)
