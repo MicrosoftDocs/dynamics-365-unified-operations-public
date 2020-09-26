@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Promote a variation and complete an experiment
 
-This topic describes how to promote the variation that produced the best results in your experiment, and how to complete the experiment. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
+This topic describes how to promote the variation that produced the best results in your experiment, and how to complete the experiment. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
 [ ![Experimentation user journey - Review & Complete](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
@@ -42,8 +42,8 @@ Use the data and analytics related to the experiment in the third-party service 
 
 1. Go to the **Experiments** tab in site builder and select the experiment.
 1. Select **Complete experiment** on the top bar.
-1. In the **Complete the experiment** dialog, select **Review the experiment data**. The third-party service opens where you can validate the metrics and determine which variation performed the best.
-1. In the **Complete the experiment** dialog in site builder, select the winning variation and then select **Next**.
+1. In the **Complete the experiment** dialog menu, select **Review the experiment data**. The third-party service opens where you can validate the metrics and determine which variation performed the best.
+1. In the **Complete the experiment** dialog menu in site builder, select the winning variation and then select **Next**.
 1. Open the third-party service and stop the experiment.
 1. In site builder, select **Complete** to overwrite the original live page and publish the winning variation so that it's available to all users of your website. 
 
