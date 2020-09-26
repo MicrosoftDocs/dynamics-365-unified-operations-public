@@ -58,8 +58,8 @@ When using publish groups with experiments, there are some important considerati
 - When you publish or schedule a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
 - Because a publish group continues to persist after it's been published to a live site, experiments in the publish group will also persist. Therefore, you won't be able to associate other experiments with the same page or fragment. To avoid this limitation, delete any publish groups with persisting experiments. Similarly, if you want to delete an experiment in a live site that also exists in a publish group, delete it from the publish group first.
 
-## Previous topic
+## Previous step
 [Connect and edit an experiment](experimentation-connect-edit.md)
 
-## Next topic
+## Next step
 [Run and monitor an experiment](experimentation-run-monitor.md)
