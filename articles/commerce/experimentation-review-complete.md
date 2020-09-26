@@ -59,5 +59,5 @@ While it's not required that you delete a completed experiment in Commerce, you 
 1. Select **Unpublish** in the command bar to remove the variation content from the live site.
 1. Select **Delete** in the command bar to delete the experiment.
 
-## Previous topic
+## Previous step
 [Run and monitor an experiment](experimentation-run-monitor.md)
