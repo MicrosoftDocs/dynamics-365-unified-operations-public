@@ -50,9 +50,9 @@ Every experiment needs metrics to measure the impact of the variations and to va
     - To learn how to view all of the available events and attributes, including page views and revenue tracking, see [Commerce component events for diagnostics and troubleshooting](../dev-itpro/retail-component-events-diagnostics-troubleshooting#e-commerce-events.md).
 1. Take any other steps for tracking metrics as required in the third-party service.
 
-## Previous topic
+## Previous step
 [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md) 
 
 
-## Next topic
+## Next step
 [Connect and edit an experiment](experimentation-connect-edit.md)
