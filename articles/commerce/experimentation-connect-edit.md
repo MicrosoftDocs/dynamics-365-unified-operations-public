@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect an experiment and edit variations
 
-This topic describes how to connect your experiment in Commerce and make changes to your variations so they align with your hypothesis. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
+This topic describes how to connect your experiment in Commerce and make changes to your variations so they align with your hypothesis. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
 [ ![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
