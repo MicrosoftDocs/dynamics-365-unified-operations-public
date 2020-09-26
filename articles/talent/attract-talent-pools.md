@@ -118,7 +118,7 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
 - The **Documents** tab shows any documents that the candidate has added from his or her profile or during job applications. You can use this tab o manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
 
-    To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft Office 365. You can also download the documents to your local computer by using the **Download** option for each document.
+    To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
 - The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Source candidates with LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

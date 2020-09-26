@@ -78,8 +78,6 @@ We provide an OData REST endpoint. This endpoint exposes all the data entities t
 > [!NOTE]
 > When working with data entities using OData, all fields in the entity key must be provided to make a successful OData call.
 
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
-
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
 ### Supported features from the OData specification
