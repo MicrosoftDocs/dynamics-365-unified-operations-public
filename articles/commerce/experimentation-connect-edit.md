@@ -89,9 +89,9 @@ If you defined the scope of your experiment as **entire** in the **Connect exper
 > [!NOTE]
 > In either case, you may also want to establish a control or base variation by leaving one of the variations unchanged.
 
-## Previous topic
+## Previous step
 [Set up an experiment](experimentation-setup.md) 
 
 
-## Next topic
+## Next step
 [Preview and publish an experiment](experimentation-preview-publish.md)
