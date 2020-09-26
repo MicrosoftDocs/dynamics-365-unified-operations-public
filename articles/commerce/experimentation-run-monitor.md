@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Run and monitor an experiment
 
-This topic describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this topic, you'll need to [publish](experimentation-preview-publish.md) your experiment in Commerce. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Other steps are covered in separate topics.
+This topic describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this topic, you'll need to [publish](experimentation-preview-publish.md) your experiment in Commerce. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
 [ ![Experimentation user journey - Run & Monitor](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
@@ -45,10 +45,9 @@ If for any reason you need to modify your variations, follow the steps below.
 > [!IMPORTANT]
 > If you make changes to a live experiment in Commerce or the third-party service, your results may be significantly impacted. Consider letting the experiment run its course and then creating a new experiment for major changes.
 
-If you decide to make changes to variations, follow the steps below.  
 1. Go to the **Experiments** tab in site builder and select the experiment. 
-1. Select the variation you want to update from the drop-down.
-1. Make the changes you want, then preview and publish the variations. See [Preview and publish an experiment](experimentation-preview-publish.md) for more information.
+1. Select the variation you want to update from the drop-down menu.
+1. Make needed changes, then preview and publish the variations. For more information, see [Preview and publish an experiment](experimentation-preview-publish.md).
 1. Go to the third-party service to make any experiment setup-related changes.
     
 ## Previous topic
