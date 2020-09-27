@@ -168,16 +168,19 @@ This topic includes a summary of the new features and critical bug fixes release
  ### New GSTR Return format
  Under this feature format of GSTR -1 and GSTR-2 Return has been updated as per new format updated by one of the GSP.  
  Following new information is added in the existing report :  
+
 **GSTR-1 Return**  
  Following additional columns have been added: - 
- **Sales Invoice and Bill of Supply**:  
+
+**Sales Invoice and Bill of Supply**:  
 
 
 
 **Sales credit Debit note**: 
 
-###GSTR-2 Return:  
+ ### GSTR-2 Return:  
  Following additional columns have been added: - 
+
  **Purchase Invoice and Bill of supply**:
  
  
