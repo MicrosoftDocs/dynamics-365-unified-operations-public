@@ -173,6 +173,7 @@ This topic includes a summary of the new features and critical bug fixes release
  Following additional columns have been added: - 
 
 **Sales Invoice and Bill of Supply**:  
+| Diffrential % of tax rate  | Supply covered under sec.7 of IGST Act | Would you claim refund  | Return filling month  | Return filling Quater  |
 
 
 
