@@ -173,21 +173,25 @@ This topic includes a summary of the new features and critical bug fixes release
  Following additional columns have been added: - 
 
 **Sales Invoice and Bill of Supply**:  
-| Diffrential % of tax rate  | Supply covered under sec.7 of IGST Act | Would you claim refund  | Return filling month  | Return filling Quater  |
-
-
+| Diffrential % of tax rate | Supply covered under sec.7 of IGST Act | Would you claim refund ?  | Return filling month  | Return filling Quater |
 
 **Sales credit Debit note**: 
+| Applicable % of Tax rate | Supply covered under section 7  | Would you claim refund  | Type of export  | Shipping port code-Export  |
+   
+| Shipping Bill number-Export | Shipping Bill date-Export | Return filling month | Return filling Quater  | GSTIN of E-commerce Market place  |
 
  ### GSTR-2 Return:  
  Following additional columns have been added: - 
 
  **Purchase Invoice and Bill of supply**:
  
- 
+ | Supply covered unde section 7 of IGST Act | Would you claim refund? | Return filling month | Return filling Quater |
+
  **Purchase Credit and Debit note**:  
  
- 
+ | Supply covered unde section 7 of IGST Act | Would you claim refund? | Type of Import | Bill of entry-port code | Bill of entry No. |
+ | Bill of entry Date | Bill of entry Value | Return filling month | Return filling Quater  |
+
  **Dynamics 365 Finance** 
   
   Please find information about the update for Dynamics 365 Finance in KB article:
@@ -218,4 +222,39 @@ This topic includes a summary of the new features and critical bug fixes release
    (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order)  
 
 
+  ## Critical Fixes : 
+
+  - In the intercompany transaction, one company post-sales order and in another company purchase order is generated automatically. However, the location 
+    of the buyer company in tax information is not defaulting correctly in the auto-generated purchase order. 
+  - When withholding tax transaction is posted in foreign currency than at the time of withholding tax settlement to authority imbalance error will pop up. 
+  - The withholding tax (TCS) is not getting calculated for inter-company purchase return order even after updating the line details. 
+  - When Importing data via data entity "Ledger journal line transaction tax information" thrown error: “Results. Matching record with key 
+   'Registration  Number': 29AGNPB4831B1Z1 for the data source 'GSTIN' does not exist”.  
+  - Vendor tax information is imported through data entity form then on refreshing data. The system is allowing the user to select more than one primary
+    tax information details in vendor tax information 
+  - When a customer is trying to do import purchase order the value of IGST tax is not getting displayed in the Totals tab after doing purchase order totals 
+    and purchase order invoice. 
+  -	Field transaction type should be disabled in the sales quotation form. User can manually add and update the field transaction type in the sales quotation form. 
+    If it is updated to value, not None or Expense, the Customer tax information will be invisible. 
+  - The system currently allowing deletion of HSN/SAC code from master setup form even there is posted and opened transactions exist. 
+  -	While posting foreign vendor payment and applied the withholding tax of Non-Residence.  If the user changes currency rates on transaction, a similar
+    exchange rate not applied for withholding tax calculation. instead, it is taking from the system. Due to this, there is an imbalance in posting and 
+    stopped posting the transaction. 
+  -	The system is not showing the tax-adjusted amount at the time of bill of entry to tax document form of the invoice posting form. 
+  -	BOE (Bill of entry) number column is present in Product receipt form but BOE number is not being displayed in the same. 
+  -	Load on inventory tax amount posting to Purchase expenditure for expense account instead of  Cost of project account/ Fixed asset account when purchase 
+    order placed with procurement category (both Project or fixed asset scenarios ). 
+  -	Tax amount not showing correctly in the purchase requisition form. Tax amount of the first line only showing in the Total form instead of all the lines.   
+  -	When a customer is trying to do General journal with having a project in the account type and vendor in the offset account with a load on inventory 
+    and after posting when user check project statement the value of project cost is showing without adding the tax amount.  
+  -	GSTR - Customer cannot select Financial year while running Purchase register Reports. 
+  -	When the user is posting tax journal with the combination of ledger account and “customer account” system populates an error message. 
   
+  ## Upcoming critical fixes in 10.0.14  
+  
+  - You manually adjust and apply the tax amount of India TDS withholding tax in a vendor invoice journal. You observed the adjustment is lost (reset)
+    if you change the Invoice number in the journal before posting.  
+  -	GST amount not showing correctly. GST amount showing in foreign currency whereas Subtotal and Total amount showing in INR. the GST amount should be 
+    converted and added to the subtotal to display the correct total amount.   
+  - Billing Rule Details is displaying empty for Existing Entries when India localization Tax Extension is Turned On 
+
