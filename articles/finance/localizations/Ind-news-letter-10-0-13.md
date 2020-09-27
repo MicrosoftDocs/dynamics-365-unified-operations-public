@@ -164,3 +164,54 @@ This topic includes a summary of the new features and critical bug fixes release
  Taxable Document (India). version.64.119 
  Tax (India GST). version.	64.119.226 
  (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order) 
+ 
+ ### New GSTR Return format
+ Under this feature format of GSTR -1 and GSTR-2 Return has been updated as per new format updated by one of the GSP.  
+ Following new information is added in the existing report :  
+**GSTR-1 Return**  
+ Following additional columns have been added: - 
+ **Sales Invoice and Bill of Supply**:  
+
+
+
+**Sales credit Debit note**: 
+
+###GSTR-2 Return:  
+ Following additional columns have been added: - 
+ **Purchase Invoice and Bill of supply**:
+ 
+ 
+ **Purchase Credit and Debit note**:  
+ 
+ 
+ **Dynamics 365 Finance** 
+  
+  Please find information about the update for Dynamics 365 Finance in KB article:
+  (https://support.microsoft.com/en-us/help/4578803) 
+  New GSTR-1 and GSTR-2 returns are  now supported in following or later versions of Finance: 
+ 
+  Dynamics 365 Finance version                   App build number  
+  10.0.13                                        10.0.569.10002 
+  Make sure your application import one of the required Tax configuration versions  
+  
+  **Tax configuration name Version** 
+    Taxable Document. Version.82  
+    Taxable Document (India). version.82.155 
+    Tax (India GST). version.82.155.300 
+
+  **Dynamics AX 2012 R3** 
+   Please find information about the update for AX2012 R3 in KB article: 
+   (https://support.microsoft.com/en-us/help/4577212) 
+   URL to download the package:  
+   https://fix.lcs.dynamics.com/Issue/Details?bugId=3982391 
+   Import one of the required Tax configuration versions  
+   (Added 'Applicable Percentage of tax' rate on CGST/SGST/IGST/CESS)  
+   Import below tax configuration version  
+   **Tax configuration name	Version** 
+   Taxable Document. Version.64 
+   Taxable Document (India). version.64.119 
+   Tax (India GST). version.64.119.226 
+   (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order)  
+
+
+  
