@@ -46,6 +46,6 @@ Similarly, in the **third-party status** column, the following values may be dis
 - **Paused** - The experiment is paused and not collecting data. You must resume the experiment for it to collect data again.
 - **Archived** - The experiment has run its course and has been cataloged in the third-party service for future reference.
 
-The image below shows both sets of statuses and how they relate to each other.
+The diagram below shows both sets of statuses and how they relate to each other.
 
 [ ![Experimentation statuses](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
