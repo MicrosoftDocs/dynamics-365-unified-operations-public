@@ -286,7 +286,7 @@ Impairment entry for IFRS and US GAAP: <br>
 > If the lease is linked to a fixed asset, the lease impairment should be posted from Fixed assets because asset depreciation is run from the Fixed assets module.
 
 **Dual currency**
-Lease transactions can be posted in a currency other than the accounting and reporting currency. The currency exchange rate is defined in General ledger at the commencement date. You can change the exchange rates by setting the **Fixed rate** field to **Yes** when you create the lease. When you enter lease transactions, the initial recognition and subsequent depreciation transactions will use the exhange rate as of the commencement date. The subsequent payment and interest transactions will use the current active exchange rate. 
+Lease transactions can be posted in a currency other than the accounting and reporting currency. The currency exchange rate is defined in General ledger at the commencement date. You can change the exchange rates by setting the **Fixed rate** field to **Yes** when you create the lease. When you enter lease transactions, the initial recognition and subsequent depreciation transactions will use the exchange rate as of the commencement date. The subsequent payment and interest transactions will use the current active exchange rate. 
 
 ## Create an asset lease
 Complete the following steps to create a new lease. 
