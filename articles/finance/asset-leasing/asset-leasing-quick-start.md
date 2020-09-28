@@ -77,7 +77,7 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Compounding interval** - This represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year), or annually (1 period per year). The number of periods will be considered in the present value calculation.
 
-- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. This will be the base date of all lease calculations and posting transactions. The commencement date should be at the beginning of a period (first of the month) to ensure accurate subsequent calculations. You can utilize **Contract signature date** to enter the actual date when the contract was signed.
+- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. This will be the base date of all lease calculations and posting transactions. The commencement date should be at the beginning of a period (first of the month) to ensure the accuracy of subsequent calculations. You can use the **Contract signature date** field to enter the actual date when the contract was signed.
 
 - **Lease term** - This is the length of the lease period, in months.
 
@@ -217,12 +217,12 @@ Impairment entry for IFRS and US GAAP: <br>
 > If the lease is linked to a fixed asset, the lease impairment should be posted from Fixed assets because asset depreciation is run from the Fixed assets module.
 
 **Dual currency**
-Lease transaction currency could be posted in a different currency than accounting and reporting currency. The currency exchange rate is called from defined exchange rates in **General ledger** at the commencement date. The user can change the exchange rates by using fix rate option while creating the lease. In course of transactions, initial recognition and subsequent depreciation transaction will take the exchange rate at commencement date, in the other hand the subsequent payment and interest transactions will use spot rate.
+Lease transactions can be posted in a currency other than the accounting and reporting currency. The currency exchange rate is defined in General ledger at the commencement date. You can change the exchange rates by setting the **Fixed rate** field to **Yes** when you create the lease. When you enter lease transactions, the initial recognition and subsequent depreciation transactions will use the exhange rate as of the commencement date. The subsequent payment and interest transactions will use the current active exchange rate. 
 
 ## Create an asset lease
 Complete the following steps to create a new lease. 
 
-1. Enable **Asset leasing** module from **Feature management** workspace, move to **All** to be able to filter on **Asset leasing** then select enable.
+1. To use **Asset leasing**, you must enable it in the **Feature management** workspace. From the **Feature management** workspace, select **All** so that all features are listed on the page. Select **Asset leasing**, and then click **Enable now**.
 2. Go to **Asset leasing > Common > Lease summary**. Enter the required fields on the **General** FastTab. 
    - **Lease details**
    - **Asset useful life (Months)**
@@ -261,12 +261,9 @@ Complete the following steps to create a new lease.
 
    The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
-[![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
+   [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
 
    The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 
-[![Right-of-use asset transactions](./media/overview-21.png)](./media/overview-21.png)
-
    The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
-[![List of lease liability transactions](./media/overview-22.png)](./media/overview-22.png)
