@@ -5,7 +5,7 @@ title: Manage changes to engineering products
 description: Engineering change management gives you the possibility to have a structured process to manage changes to engineering products. There are structured processes for proposing, requesting, and making changes. This are also processes for reviewing and approving changes, assessing the impact on existing transactions, and following up.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -101,19 +101,18 @@ The **Source** FastTab lets you track the starting point of this change request.
 
 ### Evaluate the business impact of a change request
 
-When you are reviewing a request for change, use the **Dependencies** option to assess the impact of the requested change on open transaction such as sales orders, production orders, and inventory on hand. The **search** option scans all open transactions, which you can view by selecting **view**. If the issue that requires a change is found critical, you can already block the open transactions or notify the responsible user via processing the actions.
+When you are reviewing a request for change, you can search for dependencies to assess the impact of the requested change on open transaction such as sales orders, production orders, and inventory on hand. To do so:
 
-<!-- KFM: We should provide just a bit more detail about where we find these buttons. I think they are somewhere on the Action Pane. -->
-
-<!-- ### Review and approve change requests
-
-KFM: Maybe we should add a section to review this process here. Or maybe just a link to the HOL. -->
+1. Go to **Engineering change management \> Common \> Engineering change management \> Engineering change requests**.
+1. Either open an existing change requests or select **New** from the Action Pane to create a new one.
+1. On the Action Pane, open the **Change request** tab and then, from the Business impact group, select one of the following:\
+    - **Search**: Scans all open transactions and then opens the **Business impact to open transactions** dialog box, which lists all transactions affected by the change.
+    - **View previous search**: opens the **Business impact to open transactions** dialog box, which lists the results from the previous search (without doing a new search).
+1. If the issue that requires a change is found critical, you can already block the open transactions or notify the responsible user using the toolbar buttons on the **Business impact to open transactions** dialog box.
 
 ### Create a change order from a change request
 
-When an engineer reviews the engineering change request, they can directly create an engineering change order from the change request form by selecting **Copy link and products** in the Action Pane, under the group **Engineering change order**.
-
-<!-- KFM: When we describe items in the Action Pane, we should name the tab, group, and button. For example: "On the Action Pane, open the **Product** tab and, from the **Set up** group, select **Unit conversions**."​  -->
+When an engineer reviews the engineering change request, they can directly create an engineering change order from the change request page. On the Action Pane, open the **Change request** tab and, from the **Engineering change order** group, select **Copy link and products**.
 
 ## Engineering change orders
 
@@ -122,8 +121,6 @@ Engineering change orders let you make changes to engineering products using a s
 - Manually select products
 - Use the bill of material to include products lower in the product structure (children)
 - Use a where-used search to include products higher in the product structure (parents)
-
-<!-- KFM: If possible, we should describe this form and all of its FastTabs and fields, like we do above for engineering change requests. -->
 
 When the proposal for changes is finished, the review and approval process will be handled by a workflow. You can set up different workflows based on the priority and severity.
 
@@ -139,7 +136,7 @@ Typical stakeholders for approving an engineering change order include:
 
 You can choose whether the engineering change order should be processed directly after approval as part of the workflow, or as a manual step afterwards. Processing an engineering change order will update engineering data on the actual product.
 
-While you are reviewing a request for change, use the **Dependencies** option on the Action Pane to assess the impact of the proposed change on open transactions like sales orders, production orders, and inventory on-hand. With the **Search** option, the system scans all open transactions, which you can then view using the **View** option. You can block the open transactions or notify the responsible user via processing the actions. <!-- KFM: We should have a procedure for how to review a request for change, including steps for how to use each of these options. -->
+While you are reviewing a request for change, use the **Dependencies** option on the Action Pane to assess the impact of the proposed change on open transactions like sales orders, production orders, and inventory on-hand. With the **Search** option, the system scans all open transactions, which you can then view using the **View** option. You can block the open transactions or notify the responsible user via processing the actions.
 
 ### Engineering change orders in engineering or operational companies
 
@@ -153,7 +150,7 @@ As described in [Engineering company and data ownership rules](engineering-org-d
 
     When the engineering change order is processed in the engineering company, the products are created and/or updated in the engineering company only, so you must also release the products to operational companies to have the product master data updated too.
 
-- You can release directly from the engineering change order manually by selecting **Release product structure** on the Action Pane, under the group **Product releases**. <!-- KFM: On the Action Pane, open the **XXXX** tab and, from the **YYYY** group, select **ZZZZ**."​  --> This is the same option as when doing it from a released products form. For more information see [Release product structure](release-product-structure.md).
+- You can release directly from the engineering change order. With the change order open, on the Action Pane, open the **Change order** tab and, from the **Product releases** group, select **Release product structure**. It works the same as when doing it from a released products form. For more information see [Release product structure](release-product-structure.md).
 - You can release automatically from the engineering change order based on:
   - Re-releasing to companies where the product was previously released. Select **Search** to scan all previous releases, and then view the results by selecting **view**. The **View** page shows the previous product releases and lets you select which ones you would like to release. Close the **View** page and select **Process** to re-release them.
   - Auto-release settings in the release control of the engineering product category. You can do this as part of the workflow. With the block **collect release proposal** , the release proposal will be populated with **re-releasing proposals** (see previous bullet) and products to companies based on the **auto release** check mark in the release control of the engineering product category. The result can be viewed also via the **view** option as described in the previous bullet. With the block **process release proposal** , the products will be released as well. If you choose to only collect the release proposal as part of the workflow, you can manually start the release via the **process** option as described in the previous bullet.
@@ -162,13 +159,13 @@ As described in [Engineering company and data ownership rules](engineering-org-d
 
 As soon as an engineering change request is approved, you can follow it up with an engineering change order. You can combine multiple engineering change requests into a single engineering change order, which can even include different products. You'd typically do this when applying the same change needs to multiple products. However, you can't create multiple engineering change orders from a single engineering change request.
 
-To follow up a change request with a change request, select **Copy link and products** on the Action Pane of the engineering change request. <!-- KFM: On the Action Pane, open the **XXXX** tab and, from the **YYYY** group, select **ZZZZ**."​  --> You can then select the engineering change order that you would like to connect it to or to create a new engineering change order to follow the specific request.
+To follow up a change request with a change order, open the change request and then, on the Action Pane, open the **Change order** tab and, from the **Engineering change order** group, select **Copy link and products**. You can then select the engineering change order that you would like to connect it to or to create a new engineering change order to follow the specific request.
 
 ## Engineering change order report
 
 Engineering change order reports describe the changes made in an engineering change order. They are useful both during the review and approval process and afterwards, so you can review the changes made by a selected engineering change order.
 
-To view the engineering change order report, select**Engineering change order report** on the Action Pane, under the group **View**. <!-- KFM: On the Action Pane, open the **XXXX** tab and, from the **YYYY** group, select **ZZZZ**."​  -->
+To view the engineering change order report, open the relevant change order. Then, on the Action Pane, open the **Change order** tab and, from the **View** group, select **Engineering change order report**.
 
 ## Fields on the engineering change order
 

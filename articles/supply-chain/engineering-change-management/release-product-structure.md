@@ -5,7 +5,7 @@ title: Release product structure
 description: To ensure that engineering relevant data of products can easily be reused in different legal entities, you can release complete product structures in addition to releasing products with their engineering versions. This means that you can release multi-level bill of material structures together with the parent in a single release action.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -39,7 +39,7 @@ To make process more efficient, the engineering relevant data, including the pro
 
 Note that you can release both standard products and engineering products with the release product structure. When doing so, the whole product structure will be released, including the BOM and route from the company where they are being released.
 
-<!-- KFM: Add a link somewhere here to the demo script for how to release a product (when we've converted the demo). -->
+<!-- KFM: Add a link somewhere here to the demo script for how to release a product. -->
 
 ## Released data for a product when using the release product structure
 
@@ -71,7 +71,7 @@ Each release of engineering product starts when somebody from the engineering co
 - The user can choose whether the product should be released with BOM and/or routes and if they should be released approved and active.
 - The user can change the effective-from dates of the products.
 
-<!-- KFM: Add a link somewhere here to the demo script for how to accept a product (when we've converted the demo). -->
+<!-- KFM: Add a link somewhere here to the demo script for how to accept a product. -->
 
 > [!NOTE]
 > For standard products, you can release from any legal entity to any other legal entity. For engineering products, you can only release from the engineering company legal entity.
@@ -122,7 +122,7 @@ These settings apply for both engineering products and standard products.
 | Setting | Description |
 | --- | --- |
 | **Company accounts ID** | Select the company that the line applies for. The parameters on the line will apply when products are released to this company. |
-| **Template released product** | Adds a template for the product <!-- KFM: We should describe what affect this has. (Note from original doc: need to add which are the fields in the template released product here – need a developer to take a look at this) --> |
+| **Template released product** | Adds a template for the product |
 | **Copy BOM approval** | Select this check box to copy bill of materials approval status to the receiving company. |
 | **Copy BOM activation** | Select this check box to copy the bill of materials activation status to the receiving company. |
 | **Copy route approval** | Select this check box to copy route approval status to the receiving company.|

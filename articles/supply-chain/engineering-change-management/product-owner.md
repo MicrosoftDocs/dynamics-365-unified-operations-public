@@ -5,7 +5,7 @@ title: Product owner
 description: The product owner is a group of users who are responsible for certain products. When a product owner group is assigned to a product, the members of the group are the only ones who can release that product. The product owner can also be used in the approval workflow.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -41,7 +41,7 @@ To create and populate a product owner group:
 
 1. Go to **Engineering change management \> Setup \> Product owners**.
 2. Select **New** on the Action Pane.
-3. In the **Product owner** field, enter a name for the group. <!-- KFM: These labels are odd and may be changed.  -->
+3. In the **Product owner** field, enter a name for the group.
 4. In the **Name** field, enter a description of the group.
 5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
 
@@ -66,4 +66,3 @@ For example: product X is assigned to the product owner group *Design cabinets*.
 
 Because product owners know whether certain engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this by setting them up as participant providers in the workflows used for engineering change management. The system will then assign approval tasks in the workflows based on the products that are in engineering change requests and engineering change orders. For more information, see [Engineering change management](engineering-change-management.md).
 
-<!-- KFM: I think this section misses some details about whether and how we can use owner-group records as part of a workflow.  BNG let's leave this for later-->

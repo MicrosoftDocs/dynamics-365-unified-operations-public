@@ -5,7 +5,7 @@ title: Product readiness
 description: Use readiness checks to ensure that the needed master data is completed for a product before it is used in transactions.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -64,7 +64,7 @@ If a new engineering version is created for a product, the system will check whe
 
 ### View open readiness checks for a product or product version
 
-To find the open readiness checks for a product, open its **Released products details** page. On the Action Pane, open the **Product** tab and, from the **Readiness checks** group, select **Readiness checks**. Or, from the **Product version** page, select **Readiness checks** from the group **Checklist**. <!-- KFM: The last sentence should name the tab. -->.
+To find the open readiness checks for a product, open its **Released products details** page. On the Action Pane, open the **Product** tab and, from the **Readiness checks** group, select **Readiness checks**. Or, from the **Product version** page, select **Readiness checks** from the group **Checklist**.
 
 ### View open readiness checks assigned to you
 
@@ -76,8 +76,6 @@ To see the open readiness checks assigned to you, do one of the following:
 The setup for who is assigned to the readiness check is done at the engineering product category. It can be a person or a team. In case a team is assigned, there is one person of the team that needs to process the readiness check. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 ## Process open readiness checks
-
-<!-- KFM: This section should probably be replaced with a procedure that describes explicitly how to do these things. Both of the subsections here could be combined into a single procedure (they mostly repeat). -->
 
 ### Process system and manual readiness checks
 

@@ -5,7 +5,7 @@ title: Engineering versions and engineering product category
 description: The engineering version concept ensures that different states of a product and its data are kept current and clear and can be visualized in the system
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -63,8 +63,6 @@ You can choose to update this data on an existing version or create a new versio
 The first version is automatically created when you create the engineering product. The version will follow the version number rule defined in the engineering category for the product. To transition to a subsequent version, the product must be added into an engineering change order as a line and the **Impact** must be set to *New version*. The engineering change order will include the details of the change from the current version into the following version.
 
 Note that an engineering product can only be in a single engineering change order at a time. This is to ensure data accuracy and avoid overlapping or contradictory changes in the product. Note that in the engineering change order, the engineer responsible for the change order is shown in the engineering change order **Header** view. If the engineer belongs to a team, the team lead will be shown in the **Responsible** field.
-
-<!-- KFM: We should describe how to make an engineering version and what the settings are, like we do below for engineering product categories. -->
 
 ## Track versions in transactions
 
@@ -125,7 +123,7 @@ Make the following settings in the **Details** FastTab of an engineering product
 | **Product subtype** | Choose whether this category will hold products or product masters. For product masters, product dimensions will be used.
 | **Product dimension group** | The **Track version in transactions** setting helps you choose the product subtype. If you want to track the version in transactions, then the product dimension groups where the version is used will be shown. If you don't want to track the version in transactions, then only product dimension groups where it is not used will be shown. |
 | **Product lifecycle state at creation** | Set up the default product lifecycle state at creation of a new engineering product. For more information see [Product lifecycle state and transactions](product-lifecycle-state-transactions.md). |
-| **Version number rule** | Select the version number rule that applies to this engineering product category. The rules can be setup as:<ul><li>**Manual** - You choose the version number for each new version.</li><li>**Automatic**: The system sets the version number based on a format that you define. When setting up the format, use # to position a number and any other character to position a constant value. For example, if you defined the format as "V-##", the first version will be 'V-01', the second version 'V-02', and so on.</li><li>**List**: the system takes the next number from a predefined list of custom values defined by you.</li><ul><!-- KFM: We should have a separate topic or section that describes how to create version number rules of all types. Then link there from here. --> |
+| **Version number rule** | Select the version number rule that applies to this engineering product category. The rules can be setup as:<ul><li>**Manual** - You choose the version number for each new version.</li><li>**Automatic**: The system sets the version number based on a format that you define. When setting up the format, use "#" to position a digit and any other character to position a constant value. For example, if you defined the format as "V-##", the first version will be "V-01", the second version "V-02", and so on.</li><li>**List**: the system takes the next number from a predefined list of custom values defined by you.</li><ul> |
 | **Enforce effectivity** | Choose whether the effectivity dates of engineering versions must be contiguous, or whether to allow gaps and overlaps. This setting affects the way you can use the **Effective from** and **Effective to** settings for each engineering version where this category applies. Choose one of the following:<ul><li>**Yes** - Each version must specify an **Effective from** value, and neither overlaps nor gaps are allowed between versions. The date range for each engineering version connects directly to the previous and next engineering versions (if they exist). In this scenario, the newest version is always used, and older versions aren't used anymore.</li><li>**No** - There are no restrictions on the effectivity date fields for engineering versions, and both overlaps and gaps are allowed. In this scenario, multiple versions can be active at the same time and you can choose to work with any active version.</li></ul><p>This setting also affects  bills of materials and routes connected to a product version. For details, see [Connect bills of materials and routes to engineering versions](#boms-routes).</p> |
 | **Use number rule&nbsp;nomenclature** | Set this to *Yes* to enable rules for defining a product number using number sequences, engineering attribute names and values, and text constants as segments. Select the **Edit** button to create and/or modify the rules. |
 | **Use name rule&nbsp;nomenclature** | Set this to *Yes* to enable rules for defining the name using the engineering attribute names, engineering attribute values, and text constants as segments. Select the **Edit** button to create and/or modify the rules. |
@@ -149,7 +147,6 @@ For each row that you add to the grid, make the following settings:
 | **Value** | Select the default value for the attribute  |
 | **Mandatory** | For attributes of type Boolean, setting this to *Yes* means that users must set the attribute to *Yes* (otherwise, it can be *Yes* or *No*). For other data types, this is just informational. |
 | **Batch attribute** | Controls whether the attribute should be propagated through the batch functionality. |
-<!--  | **Inheritance attribute** | KFM: What does this do? | -->
 
 ### The Readiness policy FastTab
 

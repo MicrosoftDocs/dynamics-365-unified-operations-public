@@ -5,7 +5,7 @@ title: Product lifecycle state and transactions
 description: When an engineering product traverses through its lifecycle, it's important that you can control which transactions are allowed per lifecycle state. As an example, when products aren't yet in a mature state, they shouldn't be put on a sales order and on the other end, if a product is reaching its end-of-life state, you want to ensure that the inflow of this product can be controlled.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 

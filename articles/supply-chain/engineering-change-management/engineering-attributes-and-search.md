@@ -5,7 +5,7 @@ title: Engineering attributes and engineering attribute search
 description: To ensure that all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-31
+ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.13
 ---
 
@@ -65,14 +65,13 @@ To view, create, or edit an engineering attribute:
     - **Attribute type** - Select an attribute type defined on the Attribute types page (see also the previous section).
     - **Friendly name** - Enter a name to identify this attribute in the user interface elsewhere in the system. 
     - **Description** - Enter a description of the attribute.
-    - **Help text** - Enter help text to tell other users what this attribute is for. <!-- KFM: Maybe mention where this text is shown, if we can find out. -->
+    - **Help text** - Enter help text to tell other users what this attribute is for.
     - **Default value** - Enter or select a default value for the attribute. The options presented here will depend on the **Attribute type** you selected.
     - **Currency** - If the **Attribute type** you selected is a currency, then select the currency in which this attribute will accept and display values.
 1. If the **Attribute type** you selected is an integer or decimal, then the **Range** FastTab is shown. Make the following settings here as needed:
     - **Tolerance action** - Choose how the system should respond when a user enters a value outside of the range specified here. Choose *Warning* to display a warning but allow the user to save the value. Choose *Not allowed* to show a warning and also disallow saving until the user corrects the value.
     - **Minimum** - Enter the minimum recommended or accepted value.
     - **Maximum** -  Enter the maximum recommended or accepted value.
-    <!-- - **Increment** -  KFM: What does this do? Set to zero to disable? BNG separate topic for this. KFM: I think we should be able to provide a brief description here, but are you saying we should just remove this point? -->
 
 ### Connect engineering attributes to an engineering product category
 
@@ -95,5 +94,3 @@ You must specify the engineering category where this product belongs to. The cat
 ## Search for products using engineering attribute values
 
 With the engineering attribute search, you can find products by searching for their engineering attributes values. This makes it easy to find engineering products based on their characteristics. You can search within products of an engineering product category, or across all engineering products. The search is available on product master data pages, and from transactional places in the system such as sales orders. On a transactional item, such as a sales order, you can even use the engineering attribute form to search and add the product to the sales order lines with the **Add as new line** button. The product result of the search can be directly added to the order.
-
-<!-- KFM: We should provide just a bit more detail about where we find the search button. I think it's somewhere on the Action Pane. -->
