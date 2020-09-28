@@ -234,11 +234,9 @@ Complete the following steps to create a new lease.
 
 4. Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
 
-[![Lease status highlighted](./media/overview-07.png)](./media/overview-07.png)
-
 5. Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
 
-   The automatic **Lease type** is classified based on the defied criteria that's defined on the **Books** page.
+   The automatic **Lease type** is classified based on the criteria that are defined on the **Books** page.
 
 6.  Go to **Payment schedule** under the **Function** section.  
 
@@ -250,15 +248,11 @@ Complete the following steps to create a new lease.
 
 8. Select **Asset leasing journals** to post the initial recognition transaction. 
 
-   The payment schedule for the right-of-use asset transactions are shown in the following illustration. 
+   From the payment schedule you can open a detailed page that lists the right-of-use asset transactions. 
  
-[![Lease liability amortization schedule](./media/overview-16.png)](./media/overview-16.png)
-
    The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
    
 9. Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
-
-[![Interest transactions on the Lease liability amortization schedule](./media/overview-17.png)](./media/overview-17.png)
 
    The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
