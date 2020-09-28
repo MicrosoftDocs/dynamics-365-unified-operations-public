@@ -12,7 +12,7 @@ ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
-ms.search.form: 
+ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
