@@ -3,7 +3,7 @@
 
 title: Set up the advanced bank reconciliation import process
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. 
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -41,7 +41,7 @@ The setup for bank statement import varies, depending on the format of your elec
 ## Set time zone preference
 When you configure the bank statement import settings, it can be important to consider the time zone of the date-time data within the bank statement files that will be imported. The default is to assume any date and time values are already in Coordinated Universal Time (UTC) and so no time zone conversion will be applied when you import the data. 
 
-There is an option available to specify a time zone to use for importing data. This option is availble in the **Time zone preference** field on each **Source data format details** page (**Data management workspace > Configure data sources > Select a data format > Regional settings** FastTab). This time zone preference you enter will apply to all the imports that use that source data format. You can create as many data source formats as needed for importing data from multiple time zones.  
+There is an option available to specify a time zone to use for importing data. This option is available in the **Time zone preference** field on each **Source data format details** page (**Data management workspace > Configure data sources > Select a data format > Regional settings** FastTab). This time zone preference you enter will apply to all the imports that use that source data format. You can create as many data source formats as needed for importing data from multiple time zones.  
 
 This time zone might not be the same as a user’s or company’s time zone, so be sure to clarify what time zone the date and time data is using. We recommend that you consider the following points when setting a time zone preference. 
 
