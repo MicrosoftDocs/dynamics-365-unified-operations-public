@@ -44,16 +44,17 @@ To take advantage of this feature, you will need to perform a one time setup in 
  
 The first step is to create a new ROPC (resource owner password credentials) flow in your Azure AD B2C tenant. To proceed with the following steps you will need to be signed in with user that has global administrator privileges.
  
-1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant.
-1.	Click **User flows**, and select **New user flow**.
-1.	Click the **All** tab and select **Sign in using ROPC**.
+1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant and select the **Azure AD B2C** service.
+1.	Select **User flows**, and **New user flow**.
+1.	Select **Sign in using resource owner password credentials (ROPC)** and select **Create**.
 1.	Provide a name for the user flow, such as ROPC_Auth. Copy the full name and save it, as this information as it will later be used as `ropcUserFlowName`  in your credentials.json file.
 1.	Under **Application claims**, click **Show more**.
 1.	Select the application **"Display Name"**, **"Email Addresses"**,**"Given Name"**, **"Identity provider"**, **"SurName"**, **"User’s object ID"** claims.
-1.	Select **OK**, and then select **Create**.
-1.	Select **Run user flow**.
+1.	Select **OK** and then select **Create**.
+1.	Select the new user flow and **Run user flow**.
 
 
-You will then see an endpoint such as this example: ```https://<b2cTenant>.b2clogin.com/<loginDomain>/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```
+You will then see an endpoint similar to the below example: ```https://<b2cTenant>.b2clogin.com/<loginDomain>/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```
+![Run user flow example](/media/local-sign-in.png)
 
 
