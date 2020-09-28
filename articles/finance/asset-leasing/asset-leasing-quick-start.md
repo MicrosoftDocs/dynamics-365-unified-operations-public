@@ -128,7 +128,7 @@ Classification tests include Transfer of ownership, Purchase option, Lease term,
 
 Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16 or ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
 
-## Transactions
+## Asset leasing transactions
 **Initial recognition**
 The initial recognition of a leased asset is recognized using the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability as follows. If a fixed asset is associated to the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you'll need to define a fixed assets posting profile in order to post to the right-of-use asset account. 
 
