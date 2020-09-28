@@ -36,13 +36,13 @@ This topic describes how to add custom static resources such as font, image, and
 
 ## Overview
 
-Some scenarios require adding custom static resources such as font or CSS files that can be accessed from within a module or a theme. These static files can be added to a "/public" folder within your SDK customization code so they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md). Relative paths can then be used to access the resources.
+Some scenarios require adding custom static resources such as font, image, or CSS files that can be accessed from within a module or a theme. These static files can be added to a ```/public``` folder within your SDK customization code so that they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md#pack). Relative paths can then be used to access the resources.
 
 ## Example
 
 Resources can be added to the ```/public``` directory or any subdirectory under this directory. For example, adding a font called "NewFont-Regular" may entail adding multiple font files such as "NewFont-Regular.eot", "NewFont-Regular.woff", "NewFont-Regular.ttv", and "NewFont-Regular.svg" to the ```/public``` directory.
 
-Relative paths in the Sassy CSS (SCSS) file can then be used to point to the static files. The following SCSS example is taken from a theme which is located in the ```/src/themes/spring``` folder.  When the command-line interface (CLI) command **pack** is used, the SCSS code is compiled into a zip file created in the ```/build/public/static/css/spring``` directory. A relative path is then used to access the font.
+After adding files to the ```/public``` directory, relative paths in the Sassy CSS (SCSS) file can then be used to point to them. The following SCSS example is taken from a theme that is located in the ```/src/themes/spring``` folder. When the command-line interface (CLI) command **pack** is used, the SCSS code is compiled into a zip file created in the ```/build/public/static/css/spring``` directory. A relative path is then used to access the font.
 
 ```
 @import "bootstrap/scss/bootstrap";
@@ -63,7 +63,8 @@ body {
 
 ## Dynamic access to the public path
 
-When deploying your e-Commerce customizations via Microsoft LifeCycle Services (LCS), the physical paths to any files stored in the ```/public``` directory will change. This means that you cannot provide a static physical path to these files from within your code. However, there is a helper API named **getAsset** which is available to get the path.  
+When deploying your e-Commerce customizations via Microsoft LifeCycle Services (LCS), the physical paths to any files stored in the ```/public``` directory will change. This means that you cannot provide a static physical path to these files from within your code. However, there is a helper API named **getAsset** which is available to help you obtain the path.
+
 The following example shows how to use the **getAsset** API to generate a URL to a font file stored in the ```/public/webfonts``` directory.
 
 ```typescript
