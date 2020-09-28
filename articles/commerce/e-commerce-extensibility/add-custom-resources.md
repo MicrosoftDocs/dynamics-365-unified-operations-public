@@ -75,6 +75,8 @@ const url = `${getAsset('webfonts/fa-solid-900.woff', this.props.context.request
 
 ## Additional resources
 
+[CLI command reference](cli-command-reference.md)
+
 [Theming overview](theming.md)
 
 [Create a new theme](create-theme.md)
