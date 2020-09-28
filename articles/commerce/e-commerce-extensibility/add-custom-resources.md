@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom static resources
+title: Add custom resources to your customization code
 description: This topic describes how to add custom static resources such as font, image, and CSS files to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add custom resources
+# Add custom resources to your customization code
 
 [!include [banner](../includes/banner.md)]
 
