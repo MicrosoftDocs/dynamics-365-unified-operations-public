@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md",
+      "redirect_url": "/azure/marketplace/partner-center-portal/create-new-operations-offer",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/install-basex.md",
       "redirect_url": "application-checker",
       "redirect_document_id": "false"
