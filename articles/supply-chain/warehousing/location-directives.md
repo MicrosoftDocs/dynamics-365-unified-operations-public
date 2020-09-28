@@ -78,7 +78,7 @@ Location directives have many common fields that are available for setup in each
 | --- | --- | --- |
 | **Location directives** | *Locate by* | *Purchase orders* |
 | **Location directives** | *Applicable disposition code* | *Purchase orders* |
-| **Location directives** | *Disposition code* | *Purchase orders* |*Purchase orders* |
+| **Location directives** | *Disposition code* | *Purchase orders* |
 | **Location directives** | *Applicable disposition code* |*Finished goods put away* |
 | **Location directives** | *Disposition code* | *Finished goods put away* |
 | **Location directives** | *Applicable disposition code* |*Return orders* |
