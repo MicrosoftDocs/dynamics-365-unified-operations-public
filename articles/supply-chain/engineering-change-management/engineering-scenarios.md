@@ -382,7 +382,7 @@ The product can now be sold to a customer. To add the product to a sales order:
 
 ## Request changes in the engineering product
 
-The product was sent to a customer, but the customer wasn't completely satisfied and returned feedback with suggestions for improvement. The salesclerk, while talking with the customer on the phone, can request the changes that the customer is describing by doing the following:
+The product was sent to a customer, but the customer wasn't completely satisfied and returned feedback with suggestions for improvement. The sales clerk, while talking with the customer on the phone, can request the changes that the customer is describing by doing the following:
 
 1. Go to **Sales and marketing &gt; Sales orders &gt; All sales orders**.
 
@@ -392,7 +392,7 @@ The product was sent to a customer, but the customer wasn't completely satisfied
 
     ![Create engineering change request from a sales order](media/sales-order-eng-change-request.png "Create engineering change request from a sales order")
 
-1. Now the salesclerk fills in the engineering change request page based on the customer feedback. Make the following settings:
+1. Now the sales clerk fills in the engineering change request page based on the customer feedback. Make the following settings:
 
     - **Change request** – *555*
     - **Title** – *Z0001 customer change*
@@ -410,7 +410,7 @@ The product was sent to a customer, but the customer wasn't completely satisfied
 
 ## Make changes to the product using an engineering change order
 
-Because the salesclerk knows this product is important and designed especially for the customer, the salesclerk calls an engineer at DEMF to make them aware of the change request so the engineer can speed up the process.
+Because the sales clerk knows this product is important and designed especially for the customer, the sales clerk calls an engineer at DEMF to make them aware of the change request so the engineer can speed up the process.
 
 The engineer will now review the request by the customer and make a change order for the product.
 
