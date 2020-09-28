@@ -55,32 +55,32 @@ There is layer of caching of product specific data in the e-Commerce rendering N
 The below entities can be increased to get better performance as needed using the Dynamics 365 Online SDK.  For more information see [Data cache settings](e-commerce-extensibility/data-action-cache-settings.md).
 
 ```json
-{  
+{
     "checkPeriodInSeconds": 1800,
-    "ttlInSeconds": {
+    "ttlInSeconds": {   
         "SimpleProduct": 1800,
-        "FullProduct": 1800,  
-        "ProductRating": 1800,
-        "Category": 1800,
-        "ProductCatalog": 1800,
-        "OrgUnit": 1800,
-        "ChannelConfiguration": 1800,
-        "CategoryHierarchy": 1800,
-        "AttributeValue": "1800"
-    },
+        "FullProduct": 1800,
+        "ProductRating": 1800,
+        "Category": 1800,
+        "ProductCatalog": 1800,
+        "OrgUnit": 1800,
+        "ChannelConfiguration": 1800,
+        "CategoryHierarchy": 1800,
+        "AttributeValue": "1800"
+    },      
     "ttrInSeconds": {
-        "SimpleProduct": 900,
-        "FullProduct": 900,
-        "Product": 900,
-        "ProductRating": 900,
-        "Category": 900,
-        "ProductCatalog": 300,
-        "OrgUnit": 1800,
-        "ChannelConfiguration": 1800,
-        "CategoryHierarchy": 1800,
-        "AttributeValue": 900,        
-        "ProductDimensionValue": 900  
-    }
+        "SimpleProduct": 900,
+        "FullProduct": 900,
+        "Product": 900,
+        "ProductRating": 900,
+        "Category": 900,
+        "ProductCatalog": 300,
+        "OrgUnit": 1800,
+        "ChannelConfiguration": 1800,
+        "CategoryHierarchy": 1800,
+        "AttributeValue": 900,
+        "ProductDimensionValue": 900
+    }
 }
 ```
 
