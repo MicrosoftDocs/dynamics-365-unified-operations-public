@@ -5,7 +5,7 @@ title: Manage Content Security Policy (CSP)
 description: This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/18/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
