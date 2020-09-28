@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom

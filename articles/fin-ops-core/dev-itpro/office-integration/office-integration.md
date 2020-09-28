@@ -118,11 +118,11 @@ A preview for supported file types is provided on the **Preview** FastTab. Basic
 
 ### Office Licensing
 
-#### What Office 365 licenses are available?
+#### What Microsoft 365 licenses are available?
 
-There are lots of [Office 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
+There are lots of [Microsoft 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
 
-#### After purchasing an Office 365 license, what needs to be done to set up SharePoint storage for attachments?
+#### After purchasing a Microsoft 365 license, what needs to be done to set up SharePoint storage for attachments?
 
 Open the Document Parameters form and ensure that the SharePoint server has been automatically discovered and set. Now open or create a Document Type, set the Document Type's location to "SharePoint" and select the folder that the files should be stored in.
 

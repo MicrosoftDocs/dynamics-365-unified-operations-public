@@ -72,7 +72,7 @@ For more information about how to import ER configurations, see [Manage the ER c
 5.	In the **Title** field, enter **Free text invoice (Excel) Contoso** as the title of the new template.
 6.	Select **OK** to confirm the start of the editing process.
 
-The BDM template editor page appears. You can use Microsoft Office 365 to edit the selected template online in the embedded control.
+The BDM template editor page appears. You can use Microsoft 365 to edit the selected template online in the embedded control.
 
 ![BDM template editor page](./media/BDM-AddFldExcel-EditableTemplate.png)
 

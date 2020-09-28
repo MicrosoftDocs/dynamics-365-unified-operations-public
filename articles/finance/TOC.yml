@@ -76,8 +76,6 @@
             href: get-started/whats-new-changed-10-0-13.md     
           - name: Finance 10.0.12 (August 2020)
             href: get-started/whats-new-changed-10-0-12.md     
-          - name: Finance 10.0.11 (July 2020)
-            href: get-started/whats-new-changed-10-0-11.md                    
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -160,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1228,6 +1226,22 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Electronic invoicing add-on
+        items: 
+        - name: Electronic invoicing add-on overview
+          href: localizations/e-invoicing-service-overview.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Get started with the Electronic invoicing add-on
+          href: localizations/e-invoicing-get-started.md
+        - name: Get started with Electronic invoicing add-on for Brazil
+          href: localizations/e-invoicing-bra-get-started.md
+        - name: Get started with Electronic invoicing add-on for Italy
+          href: localizations/e-invoicing-ita-get-started.md
+        - name: Get started with the Electronic invoicing add-on for Mexico
+          href: localizations/e-invoicing-mex-get-started.md
+        - name: Set up the Electronic invoicing add-on
+          href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1268,6 +1282,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -2036,6 +2052,8 @@
             href: localizations/apac-ind-GST-tax-journal.md
           - name: Generate the GSTR report data for tax returns
             href: localizations/apac-ind-GST-tax-returns.md
+          - name: Enable multi-batch processing for GSTR reports
+            href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
         - name: Tax engine
@@ -2278,6 +2296,10 @@
           href: localizations/tasks/use-assemble-list-fixed-asset.md
         - name: Use disassemble list for fixed assets
           href: localizations/tasks/use-disassemble-list-fixed-assets.md          
+      - name: Kuwait
+        items: 
+        - name: Kuwait overview
+          href: localizations/kuwait.md
       - name: Latvia
         items:
         - name: Latvia overview
@@ -2370,6 +2392,10 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -2428,6 +2454,10 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+      - name: Qatar
+        items: 
+        - name: Qatar overview
+          href: localizations/qatar.md
       - name: Russia
         items:
         - name: Russia overview
@@ -2766,6 +2796,8 @@
           href: localizations/noam-usa-year-end-1099-reporting.md
         - name: Form 1099 for the public sector
           href: localizations/noam-usa-form-1099-public-sector.md
+        - name: Set up vendors for 1099 reporting
+          href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
     - name: Human resources
       items:
       - name: Human resources overview
@@ -3012,6 +3044,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Default reporting experiences in IaaS environments
           href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+        - name: Document reporting preview options
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
         - name: Printing
           items:
           - name: Document printing overview
@@ -3544,6 +3578,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
           - name: Design multilingual reports
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Compress large outbound documents
+            href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information. The **Time off** tab provides more detailed information.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. In addition, you can send people information about your upcoming time off in teams and chats outside the Human Resources app.
 
 ## Install the app
 
@@ -61,8 +61,8 @@ If the app doesn't automatically sign you in, select the **Settings** tab to sig
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
 
-> [!WARNING]
-> The app doesn't currently support the System Administrator security role, and will display an error message if you sign in with a System Administrator account. To sign in with a different account, on the **Settings** tab, select the **Switch accounts** button, and then sign in with a user account that doesn’t have System Administrator privileges.
+> [!NOTE]
+> The app now supports the System Administrator security role.
  
 ## Use the bot
 
@@ -135,13 +135,33 @@ The **Time off** tab allows you to view:
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
-### Teams notifications
+### Respond to Teams notifications
 
 When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
 
 ![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
+
+## Send upcoming time-off information to your coworkers
+
+After you install the Human Resources app for Teams, you can easily send information about your upcoming time off to your coworkers in teams or chats.
+
+1. In a team or chat in Teams, select the Human Resources button below the chat window.
+
+   ![Human Resources button below chat window](./media/hr-teams-leave-app-chat-button.png)
+
+2. Select the leave request you want to share. If you want to share a draft leave request, select **Drafts** first.
+
+   ![Select an upcoming leave request to share](./media/hr-teams-leave-app-chat-search.png)
+
+Your leave request will display in the chat.
+
+![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
+
+If you shared a draft request, it will display as a draft:
+
+![Human Resources draft leave request card](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## View your team's leave calendar
 
@@ -169,9 +189,15 @@ The content of user’s queries and messages is retained in LUIS system for a ma
 
 To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).
 
-### Microsoft Azure Event Grid and Microsoft Teams
+### Microsoft Teams, Azure Event Grid, and Azure Cosmos DB
 
-When using the notifications feature for the Dynamics 365 Human Resources app in Teams, certain customer data will flow outside of the geographic region where your tenant’s Human Resources service is deployed. Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored for up to 24 hours and processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements.
+When using the Dynamics 365 Human Resources app in Microsoft Teams, certain customer data may flow outside of the geographic region where your tenant’s Human Resources service is deployed.
+
+Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored in Microsoft Azure Event Grid for up to 24 hours and will be processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+While conversing with the chat bot in the Human Resources app, the conversation content may be stored in Azure Cosmos DB and transmitted to Microsoft Teams. This data may be stored in Azure Cosmos DB for up to 24 hours and may be processed outside of the geographic region where your tenant's Human Resources service is deployed, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+To restrict access to the Human Resources app in Microsoft Teams for your organization or users within your organization, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## See also
 
