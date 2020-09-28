@@ -77,7 +77,7 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Compounding interval** - This represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year), or annually (1 period per year). The number of periods will be considered in the present value calculation.
 
-- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. This will be the base date of all lease calculations and posting transactions.
+- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. This will be the base date of all lease calculations and posting transactions. The commencement date should be at the beginning of a period (first of the month) to ensure accurate subsequent calculations. You can utilize **Contract signature date** to enter the actual date when the contract was signed.
 
 - **Lease term** - This is the length of the lease period, in months.
 
@@ -216,10 +216,14 @@ Impairment entry for IFRS and US GAAP: <br>
 >[!NOTE]
 > If the lease is linked to a fixed asset, the lease impairment should be posted from Fixed assets because asset depreciation is run from the Fixed assets module.
 
+**Dual currency**
+Lease transaction currency could be posted in a different currency than accounting and reporting currency. The currency exchange rate is called from defined exchange rates in **General ledger** at the commencement date. The user can change the exchange rates by using fix rate option while creating the lease. In course of transactions, initial recognition and subsequent depreciation transaction will take the exchange rate at commencement date, in the other hand the subsequent payment and interest transactions will use spot rate.
+
 ## Create an asset lease
 Complete the following steps to create a new lease. 
 
-1. Go to **Asset leasing > Common > Lease summary**. Enter the required fields on the **General** FastTab. 
+1. Enable **Asset leasing** module from **Feature management** workspace, move to **All** to be able to filter on **Asset leasing** then select enable.
+2. Go to **Asset leasing > Common > Lease summary**. Enter the required fields on the **General** FastTab. 
    - **Lease details**
    - **Asset useful life (Months)**
    - **Lease group**
@@ -229,31 +233,31 @@ Complete the following steps to create a new lease.
    - **Currency**
    - **Commencement date**
 
-2. Move to the **Payment schedule lines** FastTab and enter a payment line, then select **Create schedules**.
+3. Move to the **Payment schedule lines** FastTab and enter a payment line, then select **Create schedules**.
 
-3. Select **Books**. 
+4. Select **Books**. 
 
-4. Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
+5. Switch to the **General** FastTab. The **Initial right-of-use asset** and **lease liability** are calculated. 
 
-5. Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
+6. Move to the **Lease classification test** FastTab to check the value in the **Lease type** field. 
 
    The automatic **Lease type** is classified based on the criteria that are defined on the **Books** page.
 
-6.  Go to **Payment schedule** under the **Function** section.  
+7.  Go to **Payment schedule** under the **Function** section.  
 
    The **Payment schedule** page lists future payment schedules for a lease ID. Select **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
 [![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
 
-7. Select **Initial recognition** to create initial recognition journal. 
+8. Select **Initial recognition** to create initial recognition journal. 
 
-8. Select **Asset leasing journals** to post the initial recognition transaction. 
+9. Select **Asset leasing journals** to post the initial recognition transaction. 
 
    From the payment schedule you can open a detailed page that lists the right-of-use asset transactions. 
  
    The **Lease liability amortization schedule** shows the interest amount that's calculated for each period.
    
-9. Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
+10. Create the journal, and then go to **Asset leasing journals**. The **Lease liability amortization schedule** also shows in the interest transactions.
 
    The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
