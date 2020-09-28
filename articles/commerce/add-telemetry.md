@@ -69,6 +69,8 @@ To create a reusable fragment for your external script code in site builder, fol
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish**.
 
+Note: if Content security policy (CSP) is enabled, ensure the external URLs are added to the **script-src** within the CSP setting.  See the [Manage Content Security Policy (CSP)](manage-csp.md) for more information.
+
 ## Add a fragment that includes script code to a template
 
 To add a fragment that includes script code to a template in site builder, follow these steps.
