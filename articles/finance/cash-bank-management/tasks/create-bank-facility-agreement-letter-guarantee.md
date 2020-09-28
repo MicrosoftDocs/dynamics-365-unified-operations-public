@@ -3,7 +3,7 @@
  
 title: Create a bank facility agreement for the letter of guarantee
 description: This task creates a bank facility agreement to process a letter of guarantee. 
-author: ShylaThompson
+author: panolte
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
