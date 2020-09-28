@@ -51,10 +51,10 @@ The first step is to create a new ROPC (resource owner password credentials) flo
 1.	Under **Application claims**, click **Show more**.
 1.	Select the application **"Display Name"**, **"Email Addresses"**,**"Given Name"**, **"Identity provider"**, **"SurName"**, **"User’s object ID"** claims.
 1.	Select **OK** and then select **Create**.
-1.	Select the new user flow and **Run user flow**.
+1.	Select the new user flow and **Run user flow**. You should then see an endpoint similar to the below example screen shot: ```https://<b2cTenant>.b2clogin.com/<loginDomain>/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
+1.	Copy `b2cTenant` save it, as this information as it will later be used in your credentials.json.
+1.	Copy `loginDomain` save it, as this information as it will later be used in your credentials.json.
 
-
-You will then see an endpoint similar to the below example: ```https://<b2cTenant>.b2clogin.com/<loginDomain>/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```
 ![Run user flow example](media/local-sign-in.png)
 
 
