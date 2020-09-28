@@ -56,11 +56,11 @@ invoice entry** Power BI visuals.
 
 1.  Go to the **Feature management** workspace.
 
-2.  Filter to find the **Automate vendor invoices** feature.
+2.  Filter to find the **Vendor invoice automation** feature.
 
 3.  Click on **Enable** button.
 
-4.  Go to **Accounts payable \> Setup \> Accounts payable parameters \> Vendor
+4.  Go to **Accounts payable > Setup > Accounts payable parameters > Vendor
     invoice automation**.
 
 5.  Set **Automatically submit imported invoices to workflow** = Yes.
@@ -70,18 +70,18 @@ invoice entry** Power BI visuals.
 
 7.  Review other settings per your desired system behavior.
 
-8.  Go to **System administration \> Setup \> System Parameters** to
+8.  Go to **System administration > Setup > System Parameters** to
     set **System currency** and **System Exchange Rate**.
 
-9.  Go to **General Ledger \> Setup \> Ledger** to set **Accounting
+9.  Go to **General Ledger > Setup > Ledger** to set **Accounting
     Currency** and **Exchange Rate Type**.
 
 10. Define exchange rates between Transaction currencies and Accounting
     currency, Accounting currency and System currency. To do this, go
-    to **General Ledger \> Currencies \> Currency exchange rates**.
+    to **General Ledger > Currencies > Currency exchange rates**.
 
-11. Go to **System administration \> Setup \> Entity Store** and look for
-    **Vendor invoice automation measure.** Click **Refresh** button.
+11. Go to **System administration > Setup > Entity Store** and look for
+    **Vendor invoice automation measure.** Click the **Refresh** button.
 
 12. Please note the users must have the security role AP Manager or AP Clerk in
     order to view this information.
