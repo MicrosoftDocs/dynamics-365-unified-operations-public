@@ -55,6 +55,6 @@ The first step is to create a new ROPC (resource owner password credentials) flo
 
 
 You will then see an endpoint similar to the below example: ```https://<b2cTenant>.b2clogin.com/<loginDomain>/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```
-![Run user flow example](/media/local-sign-in.png)
+![Run user flow example](media/local-sign-in.png)
 
 
