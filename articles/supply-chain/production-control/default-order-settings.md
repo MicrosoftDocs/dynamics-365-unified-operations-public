@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
