@@ -63,7 +63,7 @@ body {
 
 ## Dynamic access to the public path
 
-When deploying your e-Commerce customizations via Microsoft LifeCycle Services (LCS), the physical paths to any files stored in the ```/public``` directory will change. This means that you cannot provide a static physical path to these files from within your code. However, there is a helper API named **getAsset** which is available to help you obtain the path.
+When deploying your e-Commerce customizations via Microsoft LifeCycle Services (LCS), the physical paths to any files stored in the ```/public``` directory will change, so you cannot provide static physical paths to these files from within your code. However, there is a helper API named **getAsset** which is available to help you obtain the path.
 
 The following example shows how to use the **getAsset** API to generate a URL to a font file stored in the ```/public/webfonts``` directory.
 
