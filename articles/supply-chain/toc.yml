@@ -1909,6 +1909,8 @@
       items:
       - name: Engineering change management overview
         href: engineering-change-management/product-engineering-overview.md
+      - name: Engineering change management feature walkthrough
+        href: engineering-change-management/engineering-scenarios.md
       - name: Engineering change management parameters
         href: engineering-change-management/engineering-parameters.md
       - name: Establish common values for engineering change management

@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: Release 10.0.15
 ---
 
 <!-- Beatriz: note that the topic that the reference to the product lifecycle state in the doc page refers to 
