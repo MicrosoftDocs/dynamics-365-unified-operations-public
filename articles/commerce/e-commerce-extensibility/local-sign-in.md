@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mocking signed in state during local development
-description: 
+description: This topic describes how to mock a signed in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
 manager: annbe
 ms.date: 09/15/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to
+This topic describes how to mock a signed in user in a Dynamics 365 Commerce online local development environment.
 
 ## Overview
 
