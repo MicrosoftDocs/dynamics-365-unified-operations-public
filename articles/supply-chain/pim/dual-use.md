@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  COODualUseCerts, COORules
+ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
