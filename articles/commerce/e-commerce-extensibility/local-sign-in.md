@@ -55,6 +55,6 @@ The first step is to create a new ROPC (resource owner password credentials) flo
 1.	Copy `b2cTenant` save it, as this information as it will later be used in your credentials.json.
 1.	Copy `loginDomain` save it, as this information as it will later be used in your credentials.json.
 
-![Run user flow example](media/local-sign-in.png)
+![Run user flow example](media/local-sign-in-01.png)
 
 
