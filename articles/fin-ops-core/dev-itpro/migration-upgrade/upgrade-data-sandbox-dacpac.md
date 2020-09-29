@@ -57,7 +57,7 @@ Find the username record for **axdbadmin**, and note the SQL server and database
 ### Microsoft managed environments with RDP access available
 If you have RDP access to your Sandbox, logon to the Sandbox AOS VM and open Microsoft SQL Server Management Studio (SSMS). In SSMS, enter the SQL Server, username, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
-After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
+After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command:
 
 ```sql
 -- Create database-level firewall setting for IP a.b.c.d 
@@ -73,7 +73,7 @@ If you no longer have RDP access to your Sandbox, you can instead add your IP ad
 
 Before the entry expires, connect to the Sandbox database by entering the SQL Server, username, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
-After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
+After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command:
 
 ```sql
 -- Create database-level firewall setting for IP a.b.c.d 
@@ -105,34 +105,38 @@ When ready to proceed, execute this script directly against the AXDB database of
 ## Publish the schema from AX 2012 to the sandbox database
 Now that the database is empty, we can bring your non-upgraded 2012 schema.  In this step, you will want to get the latest version of the [Database Movement toolkit](../database/database-movement-toolkit.md) downloaded to your source environment.  
 
-Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , go to this folder location using the Command Prompt application or Powershell. 
+Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , change directory to this folder location using Powershell. 
 
 Run the AX2012SchemaPublish.ps1 script with the following parameters:
-* SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted
-* AX2012DBName - this is the name of your AX 2012 database
-* TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps
-* TargetDBName - this is the name of your AXDB, retrieved in prior steps
-* AxDBAdminPassword - this is the password for the axdbadmin SQL account
+* SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted  (ex. localhost)
+* AX2012DBName - this is the name of your AX 2012 database (ex. MicrosoftDynamicsAX)
+* TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps  (ex. spartan-srv-12345.database.windows.net)
+* TargetDBName - this is the name of your AXDB, retrieved in prior steps (ex. d365opsprod-12345)
+* AxDBAdminPassword - this is the password for the axdbadmin SQL account 
 
 During execution, the script will make use of SqlPackage.exe to extract only the database and schema definitions from your 2012 database as 2012DBSource.dacpac in the working directory.  Next, it will publish this to your Sandbox environment using the Profile.publish.xml publishing profile included in the toolkit.  This publishing profile will skip over several object types such as SQL Views, SQL Users, Statistics, and other objects which are not required for the upgrade.
 
 When finished, verify that you can see the tables in the Sandbox database via SSMS and confirm that they are indeed empty and have no data.
 
+*In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
+
 ## Transfer data from AX 2012 to the sandbox database
 Now that the schema is in place, we now need to transfer the data to the target tables.  This will be done using a SQL linked server, and also making use of parallelism features available in Powershell version 7.0+ that is included in the Database Movement Toolkit.
 
-Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , go to this folder location using the Command Prompt application.
+Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , change directory to this folder location using Powershell.
 
 Run the AX2012DataTransfer.ps1 script with the following parameters:
-* SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted
-* AX2012DBName - this is the name of your AX 2012 database
-* TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps
-* TargetDBName - this is the name of your AXDB, retrieved in prior steps
+* SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted (ex. localhost)
+* AX2012DBName - this is the name of your AX 2012 database (ex. MicrosoftDynamicsAX)
+* TargetServerName - this is the server value of your sandbox database server, retrieved in prior steps  (ex. spartan-srv-12345.database.windows.net)
+* TargetDBName - this is the name of your AXDB, retrieved in prior steps  (ex. d365opsprod-12345)
 * AxDBAdminPassword - this is the password for the axdbadmin SQL account
-* LinkedServerName - this is the name of the link server to be created
-* DegreeOfParallelism - this is the number of tables that will be processed in parallel.  This should be equal to 50% of the cores available on the source environment, as it is CPU and RAM intensive.
+* LinkedServerName - this is the name of the link server to be created (ex. AX2012Link)
+* DegreeOfParallelism - this is the number of tables that will be processed in parallel.  This should be equal to 50% of the cores available on the source environment, as it is CPU and RAM intensive. (ex. 3)
 
 During execution, the script will create a linked server if one doesn't yet exist between the source server and the sandbox server.  From there, it will copy data from all of the AX 2012 tables in to the target database, using the DegreeOfParallelism parameter to process multiple tables at once.
+
+*In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
 
 ## Apply the data upgrade package from Lifecycle Services
 Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS Project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012#identify-the-project-as-an-ax-2012-upgrade).
@@ -146,7 +150,7 @@ There are several ways to troubleshoot data upgrade errors.  In some cases, you 
 
 If the upgrade fails on an upgrade script, you can view these in the ReleaseUpdateScriptsErrorLog table in the Sandbox database.  You can access this table using previous steps to connect to the sandbox database.
 
-If you can fix the data, you may then resume the upgrade from LCS.  Note that you cannot resume from LCS more than 8 times, continuing to resume after this number of retries will just result in another failure as the backend systems will not allow more attempts.  If this is the case, you can use the **Abort** button to cancel the upgrade package and start over by clearing all objects from the Sandbox database.
+If you can fix the data, you may then resume the upgrade from LCS.  Note that you cannot resume from LCS more than 8 times, continuing to resume after this number of retries will just result in another failure as the backend systems will not allow more attempts.  If this is the case, you can use the **Abort** button to cancel the upgrade package. *In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
 
 ## Copy the database to Production for mock go live and actual go live
 After the data upgrade is complete, apply the same customization packages from your Sandbox environment on to your Production environment. Thereafter, you can copy your Sandbox environment AXDB database to the Production environment.
