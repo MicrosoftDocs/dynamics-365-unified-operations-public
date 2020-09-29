@@ -236,6 +236,8 @@
                     href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                   - name: General troubleshooting
                     href: data-entities/dual-write/dual-write-troubleshooting.md
+            - name: Dual-write frequently asked questions
+              href: data-entities/dual-write/dual-write-faq.md                  
           - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario

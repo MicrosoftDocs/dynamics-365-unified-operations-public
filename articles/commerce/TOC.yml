@@ -274,6 +274,8 @@
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
         - name: Implement Finance and Operations Commerce projects
@@ -2052,6 +2054,8 @@
             href: e-commerce-extensibility/theme-module-extensions.md
           - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
+          - name: Add custom resources to your customization code
+            href: e-commerce-extensibility/add-custom-resources.md
         - name: Inject script
           items:
           - name: Script injectors
