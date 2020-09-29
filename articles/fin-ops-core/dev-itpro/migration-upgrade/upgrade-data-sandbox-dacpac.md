@@ -136,6 +136,8 @@ Run the AX2012DataTransfer.ps1 script with the following parameters:
 * LinkedServerName - this is the name of the link server to be created (ex. AX2012Link)
 * DegreeOfParallelism - this is the number of tables that will be processed in parallel.  This should be equal to 50% of the cores available on the source environment, as it is CPU and RAM intensive. (ex. 3)
 
+<img src="./media/upgrade-dacpac-xfer.png" width="800px" />
+
 During execution, the script will create a linked server if one doesn't yet exist between the source server and the sandbox server.  From there, it will copy data from all of the AX 2012 tables in to the target database, using the DegreeOfParallelism parameter to process multiple tables at once.
 
 *In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
