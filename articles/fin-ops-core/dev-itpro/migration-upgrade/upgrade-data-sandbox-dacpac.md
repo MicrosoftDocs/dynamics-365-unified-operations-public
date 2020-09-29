@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This overview will help customers who may no longer have Remote Desktop Protocol (RDP) access to their Sandbox Tiers 2-5 environments on their upgrade journey from Microsoft Dynamics AX 2012 to Finance and Operations apps.  Utilizing a new dacpac based file format and the [Database movement toolkit](database-movement-toolkit.md), customers can bring their AX 2012 schema and data in to an existing empty database in a sandbox environment.
+This overview will help customers who may no longer have Remote Desktop Protocol (RDP) access to their Sandbox Tiers 2-5 environments on their upgrade journey from Microsoft Dynamics AX 2012 to Finance and Operations apps.  Utilizing a new dacpac based file format and the [Database movement toolkit](../database/database-movement-toolkit.md), customers can bring their AX 2012 schema and data in to an existing empty database in a sandbox environment.
 
 **We strongly recommend** that you run the data upgrade process in a development environment before you run it in a shared sandbox environment. This approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
@@ -103,7 +103,7 @@ On the Set Scripting Options screen, click on the **Advanced** button and change
 When ready to proceed, execute this script directly against the AXDB database of your Sandbox environment.  It will take some time to complete, on average 15-20 minutes.
 
 ## Publish the schema from AX 2012 to the sandbox database
-Now that the database is empty, we can bring your non-upgraded 2012 schema.  In this step, you will want to get the latest version of the [Database Movement toolkit](../database/database-movement-toolkit.md) downloaded to your source environment.  
+Now that the database is empty, we can bring your non-upgraded 2012 schema.  In this step, you will want to get the latest version of the [Database movement toolkit](../database/database-movement-toolkit.md) downloaded to your source environment.  
 
 Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\, change directory to this folder location using Powershell. 
 
