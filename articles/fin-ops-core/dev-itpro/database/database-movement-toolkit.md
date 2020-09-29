@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 30
 
 # Database movement toolkit
 
-The Database movement toolkit is a ZIP file hosted in Microsoft Dynamics Lifecycle Services (LCS) and is available for download.  This topic explains the components of the toolkit, how to download it, and any recent changes.
+The Database movement toolkit is a ZIP file hosted in Microsoft Dynamics Lifecycle Services (LCS). This toolkit is available for download. It contains a series of scripts that enhance the customer experience for movement of data between developer environments and sandbox environments. This topic explains the components of the toolkit, how to download it, and any recent changes.
 
 ## Download the latest version
 
@@ -37,15 +37,15 @@ The toolkit is available in the LCS Shared Asset Library under the **Models** se
 
 ## Toolkit components
 
-The toolkit is comprised of three primary components, listed below.
+The toolkit contains the following primary components:
 
-- **Sqlpackage.exe** - This tool is used to perform extract and publish actions against Microsoft Azure SQL databases as well as SQL Server databases hosted on Tier1 DevTest environments.  
-- **Powershell 7.0** - This is a self-contained version of Powershell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
-- **Powershell script** - There are several scripts included to provide an enhanced and more automated experience for scenarios such as AX 2012 data upgrade.
+- **Sqlpackage.exe** - This tool is used to perform extract and publish actions against Microsoft Azure SQL databases, as well as SQL Server databases hosted on Tier1 DevTest environments.  
+- **PowerShell 7.0** - This is a self-contained version of Powershell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
+- **PowerShell script** - There are several scripts included to provide an enhanced and more automated experience for scenarios such as AX 2012 data upgrade.
 
 ## Supported scenarios
 
-The toolkit supports various scenarios listed below, and more will be added over time.  
+The toolkit currently supports the following scenarios. More will be added over time.  
 
 * [Upgrade from AX 2012 - Data upgrade in sandbox environments](../migration-upgrade/upgrade-data-sandbox-dacpac.md)
 
