@@ -81,6 +81,10 @@ if (MsDyn365.isBrowser) {
 }
 ```
 
+## Module Error handling 
+If a module encounters an error while sever side rendering the failed module will get wrapped into an **ErrorModule** component to prevent any module level render error from breaking the page. For example, a module using document/window objects during a server side render would fail since these objects are non-existent on server side and in that case, the module is wrapped in an error component. The module would then attempt to render again on client. In development mode, to see if a module failed on server side, you can provide a ?debug=true query string parameter.
+
+
 ## Additional resources
 [CLI command reference](cli-command-reference.md)
 
