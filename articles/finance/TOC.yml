@@ -218,7 +218,7 @@
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
         href: accounts-payable/three-way-matching-policies.md
-      - name: Accounts payable invoice processing automation
+      - name: Vendor invoice automation
         items:
         - name: Automating vendor invoicing processes overview
           href: accounts-payable/auto-vendr-invc-process.md
@@ -266,7 +266,7 @@
         href: accounts-payable/mobile-invoice-approvals.md
       - name: Vendor collaboration invoicing workspace
         href: accounts-payable/vendor-portal-invoicing-workspace.md
-      - name: Vendor invoice automation
+      - name: Invoice automation for scanned documents
         href: accounts-payable/vendor-invoice-automation.md
       - name: Broker contract management
         href: accounts-payable/broker-contract.md
