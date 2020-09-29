@@ -68,7 +68,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 
 7. Enter the host name of the computer that you're installing Retail hardware station on. Additionally, enter the electronic funds transfer (EFT) terminal ID that is associated with that computer for merchant account information.
 
-8. To utilize the configuration file or initial installation using mass deployment, enter the certificate thumbprint that is to be used during the installation below.
+8. To utilize the configuration file or initial installation using mass deployment, enter the certificate thumbprint that is to be used during the installation that's detailed in the next section.
 
 ### Download the Retail hardware station installer
 
