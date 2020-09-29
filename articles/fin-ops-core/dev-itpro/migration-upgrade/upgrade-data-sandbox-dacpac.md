@@ -114,6 +114,8 @@ Run the AX2012SchemaPublish.ps1 script with the following parameters:
 * TargetDBName - this is the name of your AXDB, retrieved in prior steps (ex. d365opsprod-12345)
 * AxDBAdminPassword - this is the password for the axdbadmin SQL account 
 
+<img src="./media/upgrade-dacpac-extract.png" width="800px" />
+
 During execution, the script will make use of SqlPackage.exe to extract only the database and schema definitions from your 2012 database as 2012DBSource.dacpac in the working directory.  Next, it will publish this to your Sandbox environment using the Profile.publish.xml publishing profile included in the toolkit.  This publishing profile will skip over several object types such as SQL Views, SQL Users, Statistics, and other objects which are not required for the upgrade.
 
 When finished, verify that you can see the tables in the Sandbox database via SSMS and confirm that they are indeed empty and have no data.
