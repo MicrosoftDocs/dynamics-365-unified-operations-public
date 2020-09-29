@@ -5,7 +5,7 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,7 +69,8 @@ To create a reusable fragment for your external script code in site builder, fol
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish**.
 
-Note: if Content security policy (CSP) is enabled, ensure the external URLs are added to the **script-src** within the CSP setting.  See the [Manage Content Security Policy (CSP)](manage-csp.md) for more information.
+> [!NOTE]
+> If content security policy (CSP) is enabled for your site, ensure that all external URLs are added to the **script-src** CSP directive in Commerce site builder. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
 ## Add a fragment that includes script code to a template
 
