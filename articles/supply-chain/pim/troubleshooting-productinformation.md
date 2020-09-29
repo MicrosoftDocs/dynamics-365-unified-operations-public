@@ -47,9 +47,9 @@ It is not possible to rename item numbers for released products as it would lead
 When adding an item to a BOM Line, the system is not defaulting the Flushing principle information previously set up in the Item, i.e. the flushing principle from the iteam does not show up on the BOM Line form.
 
 **Resolution**
-If a Flushing Principle is specified on the BOM line, then that will be the flushing principle. Otherwise, though the Flushing principle from the item does not show up on the BOM Line, the Flushing principle that is set on the Item will be used for processing if the Flushing principle is blank/not set on the BOM line.
+If a Flushing Principle is specified on the BOM line, then that will be the flushing principle that would be applicable for the BOM line. Otherwise, though the Flushing principle from the item does not show up on the BOM Line, the Flushing principle that is set on the Item will be applicable for the BOM line if the Flushing principle is blank/not set on the BOM line.
 
-This design cannot be changed, because it might be breaking some customizations which are assuming the current behavior.
+This is not the way the usual defaulting logic works in the product in general. However this design cannot be changed, because it might be breaking some customizations which are assuming the current behavior.
 
 ## It is possible save duplicate barcode for different items or same item with different dimension.
 Barcode uniqueness is not enforced currently. Putting this restriction on the metadata would be a breaking change - and we do have evidence that there are customers who will be broken by this change. We will consider a broader design change to enable this feature in the future.
