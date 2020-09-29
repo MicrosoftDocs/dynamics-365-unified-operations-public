@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Consume the Retail Server APIs in external application
-description: This topic describes how to consume the Retail server (RS) APIs in external application.
+title: Consume Retail Server APIs in external applications
+description: This topic describes how to consume the Retail Server APIs in external applications.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/25/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Consume the Retail Server APIs in external applications
+# Consume Retail Server APIs in external applications
 
 [!include [banner](../includes/banner.md)]
 
