@@ -23,8 +23,8 @@ ms.search.scope:  Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
-ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: 10.0.15
+ms.search.validFrom: 2017-06-16
+ms.dyn365.ops.version: Platform update 30
 ---
 
 # Database movement toolkit
