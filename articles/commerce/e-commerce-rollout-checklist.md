@@ -40,7 +40,7 @@ The document will cover various areas to ensure a successful performant e-Commer
 
 ## Infrastructure setup
 ### General information
-It is pivotal that the sub systems including the Node rendering service, site builder, Commerce scale unit & recommendations services are co-located in the same regions. The e-Commerce scale unit setup allows the select specific region. The specific region decision be made with respect to the customers regional location.
+It is pivotal that the sub systems including the Node rendering service, site builder, Commerce scale unit & recommendations services are co-located in the same regions. The e-Commerce scale unit setup allows you to the select specific region. The specific region decision should be made with respect to the customers regional location.
 
 ### Sandbox environments 
 To ensure the best performance from a sandbox environments make sure the Retail SQL configuration is optimal. The default configuration may need updating depending on the results of the performance analysis tools found later in this document.
@@ -109,10 +109,10 @@ Any extra, unused JSS or CSS should be removed to reduce the size of the downloa
 Image requests should always include the width and height parameters. If the width and height are NOT provided, then image caching will not be optimized.
 
 #### Retail API
-Adopt the **SearchByCriteria** retail Api for custom modules, wherever possible. This API returns product attributes as well.
+Adopt the **SearchByCriteria** retail API for custom modules, wherever possible. This API returns product attributes as well.
 
 #### Metatags
-Use preconnect & dns-prefetch metatags for different services being consumed. For exampple rendering endpoint, image endpoints, fonts, files, visual studio application insight trace calls etc. 
+Use preconnect & dns-prefetch metatags for different services being consumed. For example rendering endpoint, image endpoints, fonts, files, visual studio application insight trace calls etc. 
 
 ## Tools for performance analysis
 ### Page Load times 
