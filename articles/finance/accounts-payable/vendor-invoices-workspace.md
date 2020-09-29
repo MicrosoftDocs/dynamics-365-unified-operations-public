@@ -37,11 +37,6 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the workspace that's related to vendor invoices and that takes advantage of the capabilities available through Power BI. The workspace displays information about vendor invoices that's filtered for specific users in a graphical format.
 
-*Dynamics 365 for Finance and Operations has evolved into purpose-built
-applications to help you manage specific business functions. For more
-information about these changes, see [Dynamics 365 Licensing
-Guide](https://go.microsoft.com/fwlink/?LinkId=866544).*
-
 The **Vendor invoice entry** workspace shows information that's related to 
  vendor invoice processing. This workspace includes a **My work** view and
 an **Analytics - all companies** page. The **My work** view shows summary tiles, vendor
@@ -151,81 +146,18 @@ access a filtered list to show all **Vendors on hold** or use the **All
 vendors** link. **All purchase orders** and **Open prepayments** links are also
 available.
 
-### Analytics page
+### Analytics – all companies page
 
-The **Analytics-All companies** page provides important metrics, such as vendor
-invoices that are in approval by approver and by company. This page contains two
-report pages. One page provides an overview, and the second provides details on
-workflow.
+When the “Automatically submit imported invoices to workflow” **toggle** is selected in the Accounts payable parameters page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
 
 The following table shows the visualizations that are available on each report
 page.
 
-|      Report page                      	|      Visualization                                                                                                                                                                                                                                                                                                                                                                                         	|
-|---------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+|      Report page                      	|      Visualization                                    	|
+|---------------------------------------	|-------------------------------------------------------	|
 |     Vendor invoice overview           	|     Pending vendor invoices in   automation in system currency <br>     Invoices that failed to import  <br>    Invoices in workflow <br>     Touchless invoices last 30 days <br>     Total automated invoices last 30   days <br>     Balance of open invoices in   system currency <br>     Reasons for failures, last 30   days <br>     Percent of posted invoices that   were processed automatically <br>     Days to process an invoice    	|
 |     Automation status                 	|     Touchless invoices last 30 days <br>     Touchless invoices last 30 days by company <br>     Touchless invoices last 30 days by vendor group <br>     Percent of posted invoices that were processed   automatically <br>     Days to process an invoice                                                                                                                                                                   	|
 |     Invoices that failed to import    	|     Invoices that failed to import <br>     Invoices that failed to import   by company <br>                                                                                                                                                                                                                                                                                                                         	|
 |     Reasons for automation failure    	|     Invoices failed <br>     Invoices failed by company <br>     Invoices failed by vendor group <br>                                                                                                                                                                                                                                                                                                                     	|
 |     Workflow status                   	|     Invoices in workflow <br>     Vendor invoice workflow   instances <br>     Assignment per approver <br>     Vendor invoice workflow per   company <br>     Average days in workflow by   approver                                                                                                                                                                                                                          	|
 
-*Michele's original content follows:*
-
-| ANALYTICS PAGE                  |                                             |
-|---------------------------------|---------------------------------------------|
-| **Report page**                 | **Visualization**                           |
-| Vendor invoice overview         | Pending vendor invoices in automation[^1]   |
-| Workflow status                 | Invoices in workflow                        |
-| Automation status               | Touchless invoices last 30 days (count)[^3] |
-| Invoices that failed to import  | Invoices failed to import(count)            |
-| Reasons for automation failures | Invoices failed                             |
-
-[^1]: This value is calculated using the system currency.
-
--   Pending vendor invoices in automation (count)[^2]
-
-[^2]: This is a count of all pending invoices in automation in any state.
-
--   Invoices that failed to import
-
--   Invoices in workflow
-
--   Touchless invoices last 30 days
-
--   Balance of open invoices in system currency
-
--   Reasons for failures, last 30 days
-
--   Percent of posted invoices that were processed automatically
-
--   Days to process an invoice
-
--   Vendor invoice workflow instances
-
--   Assignment per approver
-
--   Average days in workflow
-
--   Per company
-
-[^3]: This metric will only display if the user has enabled “Automatically
-submit imported invoice to workflow” In Feature management.
-
--   Total automated invoices last 30 days (count)
-
--   Touchless invoices last 30 days per company
-
--   Touchless invoices last 30 days per vendor group
-
--   Touchless invoices per company: Percent of posted invoices that were
-    processed automatically
-
--   Touchless invoices per company: Days to process an invoice
-
--   Invoices failed by vendor
-
--   Reasons for failures, last 30 days
-
--   Invoices failed by company by company
-
--   Invoices failed by vendor
