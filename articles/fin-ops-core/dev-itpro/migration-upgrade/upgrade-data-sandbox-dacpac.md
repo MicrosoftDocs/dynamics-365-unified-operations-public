@@ -159,4 +159,4 @@ If you can fix the data, you may then resume the upgrade from LCS.  Note that yo
 ## Copy the database to Production for mock go live and actual go live
 After the data upgrade is complete, apply the same customization packages from your Sandbox environment on to your Production environment. Thereafter, you can copy your Sandbox environment AXDB database to the Production environment.
 
-To perform the copy operation, see [Copy the Sandbox database to Production](../database/dbmovement-scenario-goldenconfig#Copy-Sandbox-Database-Production).
+To perform the copy operation, see [Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
