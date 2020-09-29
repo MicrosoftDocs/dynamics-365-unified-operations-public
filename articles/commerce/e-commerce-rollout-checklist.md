@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: E-Commerce rollout checklist
-description: This topic describes some best practices in rolling out Dynamics 365 Commerce E-Commerce system.---
+title: E-Commerce rollout best practices
+description: This topic describes some best practices in rolling out Dynamics 365 Commerce E-Commerce system.
 # required metadata
 
 title: Add module configuration fields
@@ -32,7 +32,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# E-Commerce rollout checklist
+# E-Commerce rollout best practices
 
 [!include [banner](../includes/banner.md)]
 
