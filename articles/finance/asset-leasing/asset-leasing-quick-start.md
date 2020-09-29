@@ -129,157 +129,82 @@ Classification tests include Transfer of ownership, Purchase option, Lease term,
 Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16 or ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
 
 ## Asset leasing transactions
-**Initial recognition** The initial recognition of a leased asset uses the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability account as follows. If a fixed asset is associated with the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you must define a fixed assets posting profile  to post to the right-of-use asset account. 
+
+#### Initial recognition 
+The initial recognition of a leased asset uses the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability account as follows. If a fixed asset is associated with the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you must define a fixed assets posting profile  to post to the right-of-use asset account. 
 
 > [!NOTE]
 > Operating leases are supported only by US GAAP ASC 842.
 
-Operating lease entry of US GAAP <BR>
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|     Right-of-use asset      	|     Operating   lease liability    	|
-  
-   Debit: Right-of-use asset <BR>
-     Credit: Operating lease liability <BR>
-  
-Finance lease entry for IFRS and US GAAP <br>
-   Debit: Right of use asset <BR>
-     Credit: Operating lease liability <br>
-  
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|     Right-of-use   asset    	|     Operating   lease liability    	|
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Operating   lease under  US GAAP          	|     Right-of-use   asset    	|     Operating   lease liability    	|
+|     Finance lease   under IFRS and US GAAP    	|     Right-of-use   asset    	|     Operating   lease liability    	|
 
-**Lease liability amortization (interest expense)** The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate, and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on the organization’s balance sheet. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
+#### Lease liability amortization (interest expense) 
+The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate, and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on the organization’s balance sheet. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
 
-Operating lease entry of US GAAP <br>
- Debit: Lease expense <br>
-    Credit: Operating lease liability <br>
-    
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|     Interest expense         	|     Finance lease liability       	|
-  
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Operating lease liability entry under  US GAAP ASC 842  	|     Interest expense    	    |     Operating lease liability       	|
+|     Finance lease liability entry under IFRS and US GAAP    	|     Interest expense    	    |     Finance lease liability         	|
 
-Finance lease entry for IFRS and US GAAP <br>
-Debit: Interest expense <br>
-Credit: Finance lease liability <br>
+#### Accrued lease payment
+An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting the lease liability account against whether a vendor subledger in case of the lessor is defined as a vendor, or posting the credit side to a notes payable ledger account then the payment will be executed against either vendor or notes payable.
 
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|     Interest expense         	|     Finance lease liability       	|
-  
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Operating   lease under  US GAAP          	|  Operating lease liability    |   Vendor liability (subledger)/Notes payable  |
+|     Finance lease   under IFRS and US GAAP    	|  Finance lease liability      |   Vendor liability (subledger)/Notes payable 	|
 
-**Accrued lease payment** An accrued lease payment is recognized as a lease future payment that’s due to process as a payment transaction from the bank or cash accounts. The lease payment due decreases the lease liability by debiting the lease liability account against whether a vendor subledger in case of the lessor is defined as a vendor, or posting the credit side to a notes payable ledger account then the payment will be executed against either vendor or notes payable.
+#### Asset depreciation
+The right-of-use asset is depreciated over whichever is less - the asset useful life or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between the straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset, the depreciation transactions will be executed from fixed assets module only. 
 
-Operating lease entry of US GAAP  <br>
-Debit: Operating lease liability  <br>
-Credit: Vendor liability (subledger)/Notes payable  <br>  
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Operating   lease under  US GAAP          	|  Lease expense                |   Right-of-use asset accumulated depreciation 	|
+|     Finance lease   under IFRS and US GAAP    	|   Depreciation of right-of-use asset expense   |   Right-of-use asset accumulated depreciation 	|
 
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|  Operating lease liability   	|    Vendor liability               	|
+#### Short-term lease
+A short-term lease is recognized as an expense, which will affect an organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
 
-Finance lease entry for IFRS and US GAAP  <br>
-Debit: Finance lease liability  <br>
-Credit: Vendor liability (subledger)/Notes payable  <br>
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Short-term lease entry under IFRS and US GAAP    	|  Lease expense                |   Vendor liability (subledger)/Notes payable 	|
 
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|  Finance lease liability     	|  Vendor liability (subledger)/Notes payable  	|
+#### Low value lease
+A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
 
-**Asset depreciation** The right-of-use asset is depreciated over whichever is less - the asset useful life or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between the straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset, the depreciation transactions will be executed from fixed assets module only. 
-
-Operating lease entry of US GAAP <br>
-   Debit: Lease expense <br>
-     Credit: Right of use asset accumulated depreciation <br>
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|    Lease expense            	|  Right-of-use asset accumulated depreciation	|
-
-Finance lease entry for IFRS and US GAAP <br>
-   Debit: Depreciation of right of use asset expense <br>
-     Credit: Right of use asset accumulated depreciation   <br>
+|     Type                                      	|     Debit                   	|     Credit                         	|
+|-----------------------------------------------	|-----------------------------	|------------------------------------	|
+|     Low-value lease entry under IFRS and US GAAP    	|  Lease expense                |   Vendor liability (subledger)/Notes payable 	|
 
 
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|  Depreciation of right-of-use asset expense	|  Right-of-use asset accumulated depreciation	|
+#### Index revaluation
+This is the asset leasing account for variable lease payments measured by an index rate. Changes in lease payments caused by index rate fluctuations constitute a lease adjustment under IFRS 16. The lease liability and right-of-use assets will be adjusted to account for the new payments. 
 
-**Short-term lease** A short-term lease is recognized as an expense, which will affect an organization’s income statement. The generated lease payment due will debit the lease expense account, and credit the notes payable or vendor subledger account.
-
-Short-term lease entry for IFRS and US GAAP <br>
-   Debit: Lease expense <br>
-     Credit: Vendor liability (subledger)/ Notes payable <br>
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|     Lease expense       	|   Vendor liability (subledger)/ Notes payable	|
-
-**Low value lease** A low-value lease is recognized as an expense that will affect your organization’s income statement. The generated lease payment due will debit the lease expense and crediting notes payable or vendor subledger.
-
-Short-term lease entry for IFRS and US GAAP <br>
-   Debit: Lease expense <br>
-     Credit: Vendor liability (subledger)/Notes payable <br>
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|    Lease expense       	|  Vendor liability (subledger)/Notes payable 	|
-
-
-**Index revaluation** This is the asset leasing account for variable lease payments measured by an index rate. Changes in lease payments caused by index rate fluctuations constitute a lease adjustment under IFRS 16. The lease liability and right-of-use assets will be adjusted to account for the new payments. 
-
-Index revaluation entry for IFRS in case of increase <br>
-   Debit: Right of use asset <br>
-     Credit: Operating lease liability
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|   Right-of-use asset        	|   Operating lease liability        	|
-
-
-Index revaluation entry for IFRS in case of decrease <br>
-   Debit: Operating lease liability <br>
-     Credit: Right of use asset <br>
-     
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|   Operating lease liability  	|     Right-of-use asset            	|
-
+|     Type                                      	|     Debit                            	|     Credit                	|
+|-----------------------------------------------	|-------------------------------------	|----------------------------	|
+|   Index revaluation entry under IFRS in case of increase 	|  Right-of-use   asset       |   Operating lease liability |
+|   Index revaluation entry under IFRS in case of decrease 	|  Operating lease liability  |   Right-of-use   asset      |
 
 When payments change because of a change in the index rate, only the variable payments will change unless there are additional changes to cash flows, such as a change in lease terms related to interest rates under US GAAP ASC 842.
 
-**Lease adjustment** Asset leasing allows leases to be adjusted if the lease terms are modified, the lease is extended, or if there are additional circumstances under which a lease requires an adjustment. Lease adjustments are posted to increase or decrease right-of-use asset and lease liability. The adjustment process takes carryover ending balances of liability amortization and asset balance at the adjustment date. When a lease is linked to fixed asset, the right-of-use adjustment will be posted using the ID that's assigned in Fixed assets. 
+#### Lease adjustment
+Asset leasing allows leases to be adjusted if the lease terms are modified, the lease is extended, or if there are additional circumstances under which a lease requires an adjustment. Lease adjustments are posted to increase or decrease right-of-use asset and lease liability. The adjustment process takes carryover ending balances of liability amortization and asset balance at the adjustment date. When a lease is linked to fixed asset, the right-of-use adjustment will be posted using the ID that's assigned in Fixed assets. 
 
-Lease adjustment entry for IFRS and US GAAP in case of increase <br>
-   Debit: Right of use asset <br>
-     Credit: Operating lease liability <br>
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|   Right-of-use asset   	|    Operating lease liability  	|
+|     Type                                      	|     Debit                            	|     Credit                	|
+|-----------------------------------------------	|-------------------------------------	|----------------------------	|
+|   Lease adjustment entry for IFRS and US GAAP in case of increase 	|  Right-of-use   asset       |   Operating lease liability |
+|   Lease adjustment entry for IFRS and US GAAP in case of decrease 	|  Operating lease liability  |   Right-of-use   asset      |
 
 
-Lease adjustment entry for IFRS and US GAAP in case of decrease<br>
-   Debit: Operating lease liability <br>
-     Credit: Right of use asset <br>
+#### Lease impairment
+This represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date, and periods remaining. The remaining right-of-use asset will be amortized on a straight-line bases. The lease impairment logic considers the asset carryover value of which exist in the asset depreciation schedule.  
 
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|  Operating lease liability    	|  Right-of-use asset    	|
-
-
-**Lease impairment** This represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date, and periods remaining. The remaining right-of-use asset will be amortized on a straight-line bases. The lease impairment logic considers the asset carryover value of which exist in the asset depreciation schedule.  
-
-Impairment entry for IFRS and US GAAP: <br>
-  Debit: Impairment expense <br>
-     Credit: Right of use asset <br>
-
-|     Debit                   	|     Credit                         	|
-|-----------------------------	|------------------------------------	|
-|   Impairment expense   	|    Right-of-use asset   	|
-
+|     Type                                      	|     Debit                            	|     Credit                	|
+|-----------------------------------------------	|-------------------------------------	|----------------------------	|
+|   Impairment entry for IFRS and US GAAP       	|  Impairment expense                   |    Right-of-use   asset     |
 
 >[!NOTE]
 > If the lease is linked to a fixed asset, the lease impairment should be posted from Fixed assets because asset depreciation is run from the Fixed assets module.
