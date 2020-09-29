@@ -5,7 +5,7 @@ title: Add custom resources to your customization code
 description: This topic describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
 manager: annbe
-ms.date: 09/28/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -42,7 +42,7 @@ Resources can be added to the ```/public``` directory or any subdirectory under 
 
 After adding files to the ```/public``` directory, relative paths in the Sassy CSS (SCSS) file can then be used to point to them. The following SCSS example is taken from a theme that is located in the ```/src/themes/spring``` folder. When the command-line interface (CLI) command **pack** is used, the SCSS code is compiled into a zip file created in the ```/build/public/static/css/spring``` directory. A relative path is then used to access the font.
 
-```typescript
+```SCSS
 @import "bootstrap/scss/bootstrap";
 
 @font-face {
