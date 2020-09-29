@@ -47,7 +47,7 @@ The toolkit is comprised of three primary components, listed below.
 
 The toolkit supports various scenarios listed below, and more will be added over time.  
 
-* [Upgrade from AX 2012 - Data upgrade in sandbox environments](../migration-upgrade/upgrade-data-sandbox-dacpac.md)
+* [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](../migration-upgrade/upgrade-data-sandbox-dacpac.md)
 
 ## Versions
 
