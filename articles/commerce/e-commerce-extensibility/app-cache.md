@@ -34,7 +34,7 @@ This topic provides an overview of supported data action cache options in Dynami
 
 ## Overview
 
-The Dynamics 365 Commerce online software development kit (SDK) supports caching entities at the application level. This enables caching of data action responses to improve rendering performance and reduce server load. For more information, see [Data actions overview](data-actions.md).
+The Dynamics 365 Commerce online software development kit (SDK) supports caching entities at the application level, which enables caching of data action responses to improve rendering performance and reduce server load. For more information, see [Data actions overview](data-actions.md).
 
 ## Caching a data action
 
@@ -58,14 +58,13 @@ export class FullProductInput implements IActionInput {
 }
 
 ```
-
 ## Supported cache types
 
 The following cache types are supported and can be set on the **dataCacheType** property:
 
 - **request**: Action input caches the entity for the life cycle of the request, in other words all of the subsequent data action inputs with the same cachekey (within the same request) shall be served from the request cache.
 
-- **application**: Action input caches the entity for the life cycle of the application (subject to TTR/TTL defined in cache settings, see below), in other words all of the subsequent data action inputs with the same cachekey shall be served from the application cache.
+- **application**: Action input caches the entity for the life cycle of the application (subject to time to refresh (TTR) and time to live (TTL) values as defined in cache settings), in other words all of the subsequent data action inputs with the same cachekey shall be served from the application cache.
 
 - **instance**: Instance is a special cache type setting primarily used for aggregator data actions that do not make a request and extract information from other data actions, for example a categories hierarchy. Such data actions are run on server and client independently. If the instance is not specified, then such aggregator data actions would contain duplicate data.
 
