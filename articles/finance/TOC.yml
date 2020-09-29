@@ -222,12 +222,22 @@
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
         href: accounts-payable/three-way-matching-policies.md
+      - name: Vendor invoice automation
+        items:
+        - name: Automating vendor invoicing processes overview
+          href: accounts-payable/auto-vendr-invc-process.md
       - name: Accounts payable invoice matching
         items:
         - name: Accounts payable invoice matching overview
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+      - name: Invoice automation
+        items:         
+        - name: Automated vendor invoicing processes overview
+          href: accounts-payable/auto-vendr-invc-process.md
+        - name: Setup options for vendor invoice automation
+          href: accounts-payable/vnd-invoice-set-up-options.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
@@ -260,7 +270,7 @@
         href: accounts-payable/mobile-invoice-approvals.md
       - name: Vendor collaboration invoicing workspace
         href: accounts-payable/vendor-portal-invoicing-workspace.md
-      - name: Vendor invoice automation
+      - name: Invoice automation for scanned documents
         href: accounts-payable/vendor-invoice-automation.md
       - name: Broker contract management
         href: accounts-payable/broker-contract.md
