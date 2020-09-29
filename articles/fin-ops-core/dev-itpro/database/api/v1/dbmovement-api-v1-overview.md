@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
-Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint. Resources that are available on the v1 endpoint (<https://lcsapi.lcs.dynamics.com/databasemovement/v1>) are currently in private preview status and are receiving additional feedback. Updates to the API might be breaking in nature.
+Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint. Use the table of contents to the left to view details of each endpoint available.
 
-## Connect with us
 
-All feedback is being retrieved from the private preview program. To sign up, [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
