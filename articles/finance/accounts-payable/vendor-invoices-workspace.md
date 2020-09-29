@@ -60,10 +60,10 @@ invoice entry** Power BI visuals.
 5.  Go to **Accounts payable > Setup > Accounts payable parameters > Vendor
     invoice automation**. For more information, see [Setup options for vendor invoice automation](vnd-invoice-set-up-options.md).
 
-6.  Set **Automatically submit imported invoices to workflow** = Yes.
+6.  Set **Automatically submit imported invoices to workflow** to **Yes**.
 
 7.  To **Match product receipts automatically**, set **Automatically match
-    product receipts to invoices lines** = Yes.
+    product receipts to invoices lines** to **Yes**.
 
 8.  Review other settings per your desired system behavior.
 
@@ -80,7 +80,7 @@ invoice entry** Power BI visuals.
 12. Go to **System administration > Setup > Entity Store** and look for
     **Vendor invoice automation measure.** Click the **Refresh** button.
 
-13. Please note the users must have the security role AP Manager or AP Clerk in
+13. Please note the users must have the security role accounts payable manager or clerk in
     order to view this information.
 
 ## My work view
@@ -148,7 +148,7 @@ available.
 
 ### Analytics – all companies page
 
-When the “Automatically submit imported invoices to workflow” **toggle** is selected in the Accounts payable parameters page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
+When the **Automatically submit imported invoices to workflow** **toggle** is selected on the Accounts payable parameters page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
 
 The following table shows the visualizations that are available on each report
 page.
