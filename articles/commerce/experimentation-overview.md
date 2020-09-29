@@ -31,12 +31,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Experimentation in Dynamics 365 Commerce
 
-You can run controlled experiments such as A/B tests in Dynamics 365 Commerce to validate hypotheses about the effectiveness of your e-Commerce pages and make decisions with data-driven confidence. e-Commerce experimentation enables you to scientifically measure the impact of proposed changes to your website and drive higher conversion rates as a result.
+You can run controlled experiments in Dynamics 365 Commerce to validate hypotheses about the effectiveness of your e-Commerce pages and make decisions with data-driven confidence. Commerce supports A/B testing on pages, modules, and fragments and enables you to scientifically measure the impact of proposed changes to your website and drive higher conversion rates as a result.
 
 Commerce supports the creation, editing, and management of page and content treatments (known as **variations**) within site builder. Commerce integrates with third-party services that you use to enable the creation of experiments and variation assignments. Real-time event streams are captured in Commerce and enable the analytics that define the experiment results in the third-party service. You then use the analytics to help support or refute your hypothesis.
-
-> [!NOTE]
-> Commerce supports A/B testing on pages, modules, and fragments. Multi-variate and multi-page tests can currently only be accomplished using fragments.
 
 ## Set up prerequisites
 1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility SDK, and Commerce scale unit to Commerce version 10.0.13 or later.
