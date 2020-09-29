@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments
-description: This topic explains how to achieve data upgrade in Sandbox utilizing the dacpac file format from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
+title: Upgrade from AX 2012 - Data upgrade in sandbox environments
+description: This topic will help customers who may no longer have Remote Desktop protocol (RDP) access to their Sandbox Tiers 2-5 environments on their upgrade journey from Microsoft Dynamics AX 2012 to Finance and Operations apps.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This overview will help customers who may no longer have Remote Desktop protocol (RDP) access to their Sandbox Tiers 2-5 environments on their upgrade journey from Microsoft Dynamics AX 2012 to Finance and Operations.  Utilizing a new dacpac based file format, and the Database Movement Toolkit, customers can bring their AX 2012 schema and data in to an existing empty database in a Sandbox.
+This overview will help customers who may no longer have Remote Desktop Protocol (RDP) access to their Sandbox Tiers 2-5 environments on their upgrade journey from Microsoft Dynamics AX 2012 to Finance and Operations apps.  Utilizing a new dacpac based file format and the [Database movement toolkit](database-movement-toolkit.md), customers can bring their AX 2012 schema and data in to an existing empty database in a sandbox environment.
 
-**We strongly recommend** that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
+**We strongly recommend** that you run the data upgrade process in a development environment before you run it in a shared sandbox environment. This approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 In this process guide, you will learn how to:
 
@@ -82,7 +82,7 @@ EXECUTE sp_set_database_firewall_rule N'AX 2012 Upgrade without RDP', 'a.b.c.d',
 This will create a second entry in the firewall rules that will not expire.  Note that these rules are deleted whenever you perform a database refresh, or database import from Lifecycle Services.
 
 ### Self-service environments
-Unfortunately Self-service type Sandbox environments are not supported for AX 2012 upgrade scenarios as they do not support Data Upgrade packages at this time.  Microsoft is working to add this support, and will update this article at a later date with more details.
+Unfortunately, self-service type Sandbox environments are not supported for AX 2012 upgrade scenarios as they do not support Data Upgrade packages at this time.  Microsoft is working to add this support, and will update this article at a later date with more details.
 
 ## Clear sandbox database of all objects
 In this step, we will clean out the sandbox database that has Finance and Operations schema.  This will provide a blank or empty database from which you can bring your source AX 2012 schema and later the data as well.  In the event the data upgrade fails, you can always come back to this step and start fresh.
@@ -105,7 +105,7 @@ When ready to proceed, execute this script directly against the AXDB database of
 ## Publish the schema from AX 2012 to the sandbox database
 Now that the database is empty, we can bring your non-upgraded 2012 schema.  In this step, you will want to get the latest version of the [Database Movement toolkit](../database/database-movement-toolkit.md) downloaded to your source environment.  
 
-Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\ , change directory to this folder location using Powershell. 
+Assuming you have unzipped the toolkit to C:\dbmovement-toolkit\, change directory to this folder location using Powershell. 
 
 Run the AX2012SchemaPublish.ps1 script with the following parameters:
 * SourceServerName - this can be localhost or wherever your source AX 2012 database is hosted  (ex. localhost)
@@ -143,9 +143,9 @@ During execution, the script will create a linked server if one doesn't yet exis
 *In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
 
 ## Apply the data upgrade package from Lifecycle Services
-Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS Project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012#identify-the-project-as-an-ax-2012-upgrade).
+Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012#identify-the-project-as-an-ax-2012-upgrade).
 
-From your environment details page, use the **Maintain** -> **Apply updates** button and wait for the list of packages to load.  By scrolling to the bottom of the list, you will start to see Data Upgrade packages that are being pulled in to the list of packages from the Shared asset library.  It make take some time to load all of the available upgrade packages.
+From your environment details page, use the **Maintain** -> **Apply updates** button and wait for the list of packages to load.  By scrolling to the bottom of the list, you will start to see data upgrade packages that are being pulled in to the list of packages from the Shared asset library.  It make take some time to load all of the available upgrade packages.
 
 Select the upgrade package that matches the version you wish to achieve, such as AX2012DataUpgrade-10-0-14 to upgrade to 10.0.14 for example.
 
