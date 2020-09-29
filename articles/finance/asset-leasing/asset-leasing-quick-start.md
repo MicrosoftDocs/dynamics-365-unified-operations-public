@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing get started
-description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease at a high level. 
+description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 09/24/2020
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the Asset leasing capability and walks through the steps for creating an asset lease at a high level. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable, and General ledger.
+This topic describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable, and General ledger.
 
 For more information regarding accounting standards, refer to the standard documentation for IFRS 16 and US GAAP ASC 842.
 
@@ -77,7 +77,7 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Compounding interval** - This represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year), or annually (1 period per year). The number of periods will be considered in the present value calculation.
 
-- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. This will be the base date of all lease calculations and posting transactions. The commencement date should be at the beginning of a period (first of the month) to ensure the accuracy of subsequent calculations. You can use the **Contract signature date** field to enter the actual date when the contract was signed.
+- **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. All lease calculations and transactions will be based on the commencement date. The commencement date should be at the beginning of a period (first of the month) to ensure the accuracy of subsequent calculations. You can use the **Contract signature date** field to enter the actual date when the contract was signed.
 
 - **Lease term** - This is the length of the lease period, in months.
 
@@ -129,8 +129,7 @@ Classification tests include Transfer of ownership, Purchase option, Lease term,
 Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16 or ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
 
 ## Asset leasing transactions
-**Initial recognition**
-The initial recognition of a leased asset is recognized using the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability as follows. If a fixed asset is associated to the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you'll need to define a fixed assets posting profile in order to post to the right-of-use asset account. 
+**Initial recognition** The initial recognition of a leased asset uses the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability account as follows. If a fixed asset is associated with the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you must define a fixed assets posting profile  to post to the right-of-use asset account. 
 
 > [!NOTE]
 > Operating leases are supported only by US GAAP ASC 842.
@@ -237,7 +236,7 @@ Index revaluation entry for IFRS in case of increase <br>
 
 |     Debit                   	|     Credit                         	|
 |-----------------------------	|------------------------------------	|
-|   Right-of-use asset    	|   Operating lease liability   	|
+|   Right-of-use asset        	|   Operating lease liability        	|
 
 
 Index revaluation entry for IFRS in case of decrease <br>
@@ -246,7 +245,7 @@ Index revaluation entry for IFRS in case of decrease <br>
      
 |     Debit                   	|     Credit                         	|
 |-----------------------------	|------------------------------------	|
-|    Operating lease liability  	|     Right-of-use asset   	|
+|   Operating lease liability  	|     Right-of-use asset            	|
 
 
 When payments change because of a change in the index rate, only the variable payments will change unless there are additional changes to cash flows, such as a change in lease terms related to interest rates under US GAAP ASC 842.
