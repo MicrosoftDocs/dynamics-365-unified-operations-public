@@ -143,7 +143,7 @@ During execution, the script will create a linked server if one doesn't yet exis
 *In case of an error and you need to start over, proceed back to step **Clear sandbox database of all objects.***
 
 ## Apply the data upgrade package from Lifecycle Services
-Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012#identify-the-project-as-an-ax-2012-upgrade).
+Now that the schema, and data has been moved to the Sandbox environment you can now start the data upgrade process.  As a pre-requisite, be sure that your LCS project has been configured for AX 2012 Upgrade, to learn more visit [Identify the project as an AX 2012 upgrade](upgrade-overview-2012.md#identify-the-project-as-an-ax-2012-upgrade).
 
 From your environment details page, use the **Maintain** -> **Apply updates** button and wait for the list of packages to load.  By scrolling to the bottom of the list, you will start to see data upgrade packages that are being pulled in to the list of packages from the Shared asset library.  It make take some time to load all of the available upgrade packages.
 
