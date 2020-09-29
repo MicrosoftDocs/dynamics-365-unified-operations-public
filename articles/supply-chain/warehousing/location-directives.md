@@ -138,12 +138,12 @@ The fields displayed on the Location directives FastTab are specific to the **Wo
     >[!IMPORTANT]
     >This field is available only on selected **Work order types** where replenishment is permitted, see the table **Fields specific to work order types** at the beginning of this topic for the complete list.
 
-- **Locate by** -
+- **Locate by** - Determines if the put away quantity will be the entire quantity on the license plate, or if it will be item by item. When doing mixed license plate receiving the license plate can be used as the determining factor for where items should go if the setting is *Mixed License Plate*. *ASN receiving* is used when receiving by shipment. Otherwise, *Item* should be used.
 
     >[!IMPORTANT]
     >This field is available only on selected **Work order types** where replenishment is permitted, see the table **Fields specific to work order types** at the beginning of this topic for the complete list.
 
-- **Disposition code** -
+- **Disposition code** - Disposition code is used on *Purchase orders*, *Finished goods putaway*, and *Return orders* type **Put** location directives. It is used to guide the flow to use a specific location directive, depending on disposition code selected by the user on the warehouse mobile application. For example, to direct returned goods to an Inspection location before being returned to stock.
 
     >[!IMPORTANT]
     >This field is available only on selected **Work order types** where replenishment is permitted, see the table **Fields specific to work order types** at the beginning of this topic for the complete list.
