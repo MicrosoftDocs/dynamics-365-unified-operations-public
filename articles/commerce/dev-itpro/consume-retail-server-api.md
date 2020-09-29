@@ -115,147 +115,145 @@ To access the API, first generate the authorization token and then access the AP
 
 For the full list of APIS, check this doc: [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 
-### Generate authorization token with postman
+### Generate authorization token with Postman
 
 1. Create a new Get request in postman with the below Request URL and Body parameters:
 
-    **Get Request URL:** [https://login.microsoftonline.com/{tenant-id}/oauth2/token](https://login.microsoftonline.com/%7btenant-id%7d/oauth2/token)
+    ```rest
+    https://login.microsoftonline.com/{tenant-id}/oauth2/token
+    ```
 
- Tenant-id can be obtained from your Azure app registration overview page, next to the client id you should be able to see the tenant-id
+    The **tenant-id** can be obtained from your Azure app registration overview page. The **tenant-id** is next to the client ID.
 
-**Body parameters**
+    Body parameters
 
-| Key            | Value                                                         |
-|----------------|---------------------------------------------------------------|
-| grant\_type    | client\_credentials                                           |
-| client\_id     | The client id generated during the Azure app registration     |
-| client\_secret | The client secret generated during the Azure app registration |
-| resource       | Retail server URL                                             |
+    | Key            | Value                                                         |
+    |----------------|---------------------------------------------------------------|
+    | grant\_type    | client\_credentials                                           |
+    | client\_id     | The client id generated during the Azure app registration     |
+    | client\_secret | The client secret generated during the Azure app registration |
+    | resource       | Retail server URL                                             |
 
-2.  After this request execution, in the response body the **access\_token** will be generated. Copy this token value, we will use this token to connect to the retail server.
+2. After the request runs, the **access\_token** will be generated in the response body. Copy this token value. You will use the token to connect to the retail server.
 
 ### GetOrderHistory using the postman
 
-1.  Create a new POST request in postman with the below Request URL, Params and Headers parameters:
+1. Create a new POST request in Postman with this request URL, parameters, and headers:
 
-    **POST Request URL:** <https://Retail>serverurl/Commerce/Customers('2001')/GetOrderHistory
+    ```rest
+    <https://Retail>serverurl/Commerce/Customers('2001')/GetOrderHistory
+    ```
 
-    **Note:** ‘2001’ is the actual customer id, replace it with your customer id.
+    Replace **2001** with your customer ID.
 
-**Params**
+    Parameters
 
-| Key         | Value |
-|-------------|-------|
-| $top        | 10    |
-| api-version | 7.3   |
+    | Key         | Value |
+    |-------------|-------|
+    | $top        | 10    |
+    | api-version | 7.3   |
 
-**Headers parameters**
+    Headers parameters**
 
-| Key           | Value                                                             |
-|---------------|-------------------------------------------------------------------|
-| OUN           | Operating unit number (This retail channel operating unit number) |
-| authorization | id\_token { access\_token }                                       |
+    | Key           | Value                                                             |
+    |---------------|-------------------------------------------------------------------|
+    | OUN           | Operating unit number (This retail channel operating unit number) |
+    | authorization | id\_token { access\_token }                                       |
 
-**access_token** – Copy paste access_token generated in the authorization request. Prefix it with ‘*id_token ‘*
+    For the **access_token**, copy and paste the **access_token** generated in the authorization request. Prefix it with **id_token**.
 
-2.  After this request execution, the response body will contain the customer order history.
+2. After this request runs, the response body will contain the customer order history.
 
-## Access the RS APIs using console application
+## Access the RS APIs using a console application
 
-1.  Create a new Console application using VS 2017.
+1. Create a new Console application using Visual Studio 2017.
 
-2.  In the app.config include the below configuration
+2. In the **app.config** file, include the below configuration:
 
-```xml
-  <appSettings>
-    <add key="aadClientId" value="client id generated during app registration in Azure" />
-    <add key="aadClientSecret" value="client secret generated during app registration in Azure" />
-    <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
-    <add key="retailServerUrl" value="https://RetailserverURL/Commerce" />
-    <add key="resource" value="https://REtailServerURL" />
-    <add key="operatingUnitNumber" value="OUN value" />
-  </appSettings>
+    ```xml
+    <appSettings>
+        <add key="aadClientId" value="client id generated during app registration in Azure" />
+        <add key="aadClientSecret" value="client secret generated during app registration in Azure" />
+        <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
+        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" />
+        <add key="resource" value="https://REtailServerURL" />
+        <add key="operatingUnitNumber" value="OUN value" />
+    </appSettings>
+    ```
 
-```
-**Update the configuration settings with actual vales.**
+### Update the configuration settings with actual vales
 
-1.  Add the below NuGet packages using the NuGet package manager for the project:
+1. Add the following NuGet packages using the NuGet package manager for the project.
 
-    **Microsoft.IdentityModel.Clients.ActiveDirectory** and **Microsoft.Dynamics.Commerce.RetailProxy**.
+    + Microsoft.IdentityModel.Clients.ActiveDirectory**
+    + **Microsoft.Dynamics.Commerce.RetailProxy**.
 
-    Microsoft.Dynamics.Commerce.RetailProxy NuGet package can added from **RetailSDK\\pkgs** folder, in the NuGet manager add a local repository for the RetailSDK\\pkgs folder.
+    The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
 
-2.  Add the below variables in the Program.cs file:
+2. Add the following variables to the **Program.cs** file:
 
-```C#
+    ```C#
     private static string clientId;
     private static string clientSecret;
     private static Uri retailServerUrl;
     private static string resource;
     private static string operatingUnitNumber;
     private static Uri authority;
+    ```
 
-```
+3. In the **Program.cs** file, add **GetConfiguration** method to read the app settings.
 
-3.  In the Program.cs file add GetConfiguration method to read the app settings.
+    ```C#
+    private static void GetConfiguration()
+    {
+        clientId = ConfigurationManager.AppSettings["aadClientId"];
+        clientSecret = ConfigurationManager.AppSettings["aadClientSecret"];
+        authority = new Uri(ConfigurationManager.AppSettings["aadAuthority"]);
+        retailServerUrl = new Uri(ConfigurationManager.AppSettings["retailServerUrl"]);
+        operatingUnitNumber = ConfigurationManager.AppSettings["operatingUnitNumber"];
+        resource = ConfigurationManager.AppSettings["resource"];
+    }
+    ```
 
-```C#
+4. In the **Program.cs** file, add the **CreateManagerFactory** method to get the access token:
 
-        private static void GetConfiguration()
+    ```C#
+    private static async Task<ManagerFactory> CreateManagerFactory()
+    {
+        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
+        AuthenticationResult authResult = null;
+        authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
+
+        ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
+        RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
+        ManagerFactory factory = ManagerFactory.Create(retailServerContext);
+        return factory;
+    }
+    ```
+
+5. Add the **GetOrderHistory** method to read the orders.
+
+    ```C#
+    private static async Task<Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder>> GetOrderHistory(string customerId)
+    {
+        QueryResultSettings querySettings = new QueryResultSettings
         {
-            clientId = ConfigurationManager.AppSettings["aadClientId"];
-            clientSecret = ConfigurationManager.AppSettings["aadClientSecret"];
-            authority = new Uri(ConfigurationManager.AppSettings["aadAuthority"]);
-            retailServerUrl = new Uri(ConfigurationManager.AppSettings["retailServerUrl"]);
-            operatingUnitNumber = ConfigurationManager.AppSettings["operatingUnitNumber"];
-            resource = ConfigurationManager.AppSettings["resource"];
-        }
+            Paging = new PagingInfo() { Top = 10, Skip = 10 }
+        };
 
-```
+        ManagerFactory managerFactory = await CreateManagerFactory();
+        ICustomerManager customerManage = managerFactory.GetManager<ICustomerManager>();
+        return await customerManage.GetOrderHistory(customerId, querySettings);
+    }
+    ```
 
-4. In the Program.cs file add the **CreateManagerFactory** method to get the access token:
+6. In the **main** method call the **GetOrderHistory** method to read the records.
 
-```C#
-
-        private static async Task<ManagerFactory> CreateManagerFactory()
-        {
-            Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
-            AuthenticationResult authResult = null;
-            authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
-
-            ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
-            RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
-            ManagerFactory factory = ManagerFactory.Create(retailServerContext);
-            return factory;
-        }
-
-```
-
-5. Add the GetOrderHistory method to read the orders
-
-```C#
-        private static async Task<Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder>> GetOrderHistory(string customerId)
-        {
-            QueryResultSettings querySettings = new QueryResultSettings
-            {
-                Paging = new PagingInfo() { Top = 10, Skip = 10 }
-            };
-
-            ManagerFactory managerFactory = await CreateManagerFactory();
-            ICustomerManager customerManage = managerFactory.GetManager<ICustomerManager>();
-            return await customerManage.GetOrderHistory(customerId, querySettings);
-        }
-
-```
-
-6. In the main method call the GetOrderHistory method to read the records
-
-```C#
-        static void Main(string[] args)
-        {
-            GetConfiguration();
-            Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
-            Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
-        }
-
-```
+    ```C#
+    static void Main(string[] args)
+    {
+        GetConfiguration();
+        Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
+        Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
+    }
+    ```
