@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Consume the Retail Server APIs in external application
+# Consume the Retail Server APIs in external applications
 
 [!include [banner](../includes/banner.md)]
 
