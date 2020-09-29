@@ -32,7 +32,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add module configuration fields
+# E-Commerce rollout checklist
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ To ensure the best performance from a sandbox environments make sure the Retail 
 
 ## Cache configuration
 ### Image Caching 
-THe default CDN cache time for images is set to 5 minutes. This means after 5 minutes the next request to get a specific image will need to be retrieved from the origin, so it will be slower. The setting has been increased, please open a support ticket to have this increased.
+The default CDN cache time for images is set to 5 minutes. This means after 5 minutes the next request to get a specific image will need to be retrieved from the origin, so it will be slower. The setting has been increased, please open a support ticket to have this increased.
 
 ### Retail data caching
 There is layer of caching of product specific data in the e-Commerce rendering Node layer. Caching times are different for different for each entity type.
