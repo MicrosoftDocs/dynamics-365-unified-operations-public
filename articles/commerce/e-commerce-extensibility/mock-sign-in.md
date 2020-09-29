@@ -172,7 +172,7 @@ After using the information collected in the Azure setup steps to populate your 
 
 ## Mock sign-in status
 
-Once all of the above configuration steps are complete, start up your e-Commerce Node application in local dev mode using the **yarn start** commmand. Sign-in status is controlled using the **mockUser** query parameter and works to mock the signed-in state on mock pages as well as on published pages (for example, ```https://localhost:4000?mock=homepage&mockUser=true``` or ```https://localhost:4000?mockUser=true```).
+Once all of the above configuration steps are complete, start up your e-Commerce Node application in local dev mode using the **yarn start** command. Sign-in status is controlled using the **mockUser** query parameter and works to mock the signed-in state on mock pages as well as on published pages (for example, ```https://localhost:4000?mock=homepage&mockUser=true``` or ```https://localhost:4000?mockUser=true```).
  
 Use **mockUser=\<true|false|name>** to control the signed-in behavior. The behavior of each of the query parameter values is described in the table below.
 
