@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSReplenishmentTemplates
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
