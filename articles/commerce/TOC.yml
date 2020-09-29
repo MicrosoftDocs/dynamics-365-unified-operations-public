@@ -2054,6 +2054,8 @@
             href: e-commerce-extensibility/theme-module-extensions.md
           - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
+          - name: Add custom resources to your customization code
+            href: e-commerce-extensibility/add-custom-resources.md
         - name: Inject script
           items:
           - name: Script injectors
