@@ -63,7 +63,7 @@ body {
 
 When you deploy your e-Commerce customizations using Microsoft Lifecycle Services (LCS), the physical paths to any files stored in the ```/public``` directory will change, so you cannot provide static physical paths to these files from within your code. However, there is a helper API named **getAsset** that is available to help you obtain the path.
 
-The following example shows how to use the **getAsset** API to generate a URL to a font file stored in the ```/public/webfonts``` directory.
+The following example from a custom module .tsx file shows how to use the **getAsset** API to generate a URL to a font file stored in the ```/public/webfonts``` directory.
 
 ```typescript
 import { getAsset } from '@msdyn365-commerce/core';
