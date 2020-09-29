@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor invoice entry workspace
-description: This topic describes the workspace that's related to vendor invoices and that takes advantage of the capabilities available through Power BI.
+description: This topic lists the steps for setting up the workspace that's related to vendor invoices and that displays the information that's available through Power BI. 
 author: abruer
 manager: AnnBe
 ms.date: 09/28/2020
@@ -35,25 +35,19 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the workspace that's related to vendor invoices and that takes advantage of the capabilities available through Power BI. The workspace displays information about vendor invoices that's filtered for specific users in a graphical format.
+This topic lists the steps for setting up the workspace that's related to vendor invoices and that displays the information that's available through Power BI. The workspace displays information about vendor invoices that's filtered for specific users in a graphical format.
 
-The **Vendor invoice entry** workspace shows information that's related to 
- vendor invoice processing. This workspace includes a **My work** view and
-an **Analytics - all companies** page. The **My work** view shows summary tiles, vendor
-transaction grids, and related vendor information. The **Analytics** page uses
-the capabilities of Microsoft Power BI to show visuals that are related to
-vendor invoices.
+The **Vendor invoice entry** workspace shows information that's related to vendor invoice processing. This workspace includes a **My work** view and an **Analytics - all companies** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor invoices.
 
-## Setup needed to view Power BI content
+## Set up the workspace to view Power BI content
 
-The following setup needs to be completed for data to display in **Vendor
-invoice entry** Power BI visuals.
+The following setup needs to be completed for data to display in **Vendor invoice entry** Power BI visuals.
 
 1.  Go to the **Feature management** workspace.
 
-2.  Filter to find the **Vendor invoice automation** feature.
+2.  Filter the list find the **Vendor invoice automation** feature.
 
-3.  Click on **Enable** button.
+3.  Click the **Enable now** button.
 
 4.  To ensure that the invoice can be processed from start to finish without manual intervention, set up a vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**.
 
@@ -65,7 +59,7 @@ invoice entry** Power BI visuals.
 7.  To **Match product receipts automatically**, set **Automatically match
     product receipts to invoices lines** to **Yes**.
 
-8.  Review other settings per your desired system behavior.
+8.  Review the additional optional settings based on your organization's needs.
 
 9.  Go to **System administration > Setup > System Parameters** to
     set **System currency** and **System Exchange Rate**.
@@ -73,15 +67,15 @@ invoice entry** Power BI visuals.
 10.  Go to **General Ledger > Setup > Ledger** to set **Accounting
     Currency** and **Exchange Rate Type**.
 
-11. Define exchange rates between Transaction currencies and Accounting
-    currency, Accounting currency and System currency. To do this, go
+11. Enter the exchange rates between the transaction currency and the accounting
+    currency, and between the accounting currency and system currency. To do this, go
     to **General Ledger > Currencies > Currency exchange rates**.
 
 12. Go to **System administration > Setup > Entity Store** and look for
     **Vendor invoice automation measure.** Click the **Refresh** button.
 
-13. Please note the users must have the security role accounts payable manager or clerk in
-    order to view this information.
+13. To view this information, you must have the security role accounts payable manager or clerk in
+    order.
 
 ## My work view
 
