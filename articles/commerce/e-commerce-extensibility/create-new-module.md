@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -36,7 +36,7 @@ This topic describes how to create a new module in Dynamics 365 Commerce.
 
 ## Overview
 
-To create a new module in Commerce, the online Software Development Kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
+To create a new module in Commerce, the online software development kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-module MODULE\_NAME**
 
@@ -69,11 +69,12 @@ To preview the new module in a local web browser, follow these steps.
 Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
 ## Deferred module rendering
-By default all modules are rendered server side, however deferred loading of some modules may be needed to improve page load performance. See the client side rendering section inside the [page load actions](page-load-data-action) for more information.
 
-Any references to the window or document objects which are available only in the context of a browser should be handled appropriately during server side rendering. This will avoid unexpected rendering behavior such as page flicker and DOM mismatch issues. The below SDK utility function can be used for this purpose:
+By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
 
-```
+Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The following SDK utility function can be used for this purpose.
+
+```typescript
 import MsDyn365 from '@msdyn365-commerce/core';
 
 if (MsDyn365.isBrowser) {
@@ -81,11 +82,14 @@ if (MsDyn365.isBrowser) {
 }
 ```
 
-## Module Error handling 
-If a module encounters an error while sever side rendering the failed module will get wrapped into an **ErrorModule** component to prevent any module level render error from breaking the page. For example, a module using document/window objects during a server side render would fail since these objects are non-existent on server side and in that case, the module is wrapped in an error component. The module would then attempt to render again on client. In development mode, to see if a module failed on server side, you can provide a ?debug=true query string parameter.
+## Module error handling 
 
+If a module encounters an error durng server-side rendering, the failed module will get wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail since these objects are non-existent on the server-side. Therefore, in this case the module would be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to see if a module failed on server side, you can provide a `?debug=true` query string parameter.
 
 ## Additional resources
+
+[Page load data actions](page-load-data-action.md)
+
 [CLI command reference](cli-command-reference.md)
 
 [Clone a module library module](clone-starter-module.md)
