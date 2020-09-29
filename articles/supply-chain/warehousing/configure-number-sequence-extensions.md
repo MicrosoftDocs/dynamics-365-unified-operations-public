@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSNumberSequenceExtension
+ms.search.form: WHSNumberSequenceExt
 # ROBOTS:
 audience: Application User
 # ms.devlang:
