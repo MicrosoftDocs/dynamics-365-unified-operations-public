@@ -38,14 +38,6 @@ This topic lists frequently asked questions about dual-write and provides brief 
 
 ## Dual-write setup
 
-### Is dual-write available for Government Community Cloud?
-
-No. Dual-write requires that the Finance and Operations environment and the Common Data Service environment be in the same tenant. However, Finance and Operations apps aren't available in Government Community Cloud (GCC). For more information, see [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
-
-### I don't have a license for Dynamics 365 Sales or Dynamics 365 Field Service, but I want to have the sales order data in Common Data Service. Can I achieve this goal without buying a license?
-
-If you have a valid license for a Finance and Operations app, you can enable dual-write between Common Data Service and the Finance and Operations app. The license doesn't include capacity that is consumed by the replicated data. If you require additional capacity, you must purchase it separately. The license doesn't include use rights for the customer engagement apps (for example, Microsoft Dynamics 365 Sales and Dynamics 365 Marketing). You must purchase those licenses separately.
-
 ### Do you plan to enable dual-write to use Common Data Service as a hub between multiple Finance and Operations environments? If Common Data Service is used as a hub, data can be synced between two or more Finance and Operations environments.
 
 The current plan of record is to restrict dual-write to a one-to-one (1:1) mapping between a single Finance and Operations environment and a single Common Data Service environment.
@@ -101,10 +93,6 @@ When the integration is in live sync mode, if the sync fails on one of the apps,
 ### When live synchronization is paused and then resumed, does it follow the sequence of changes? For example, if the Name field in the Finance and Operations app is changed from NameA to NameB to NameC, is customer engagement data changed from NameA to NameB to NameC, or is it changed directly from NameA to NameC?
 
 The integration follows the complete sequence of changes. In the example, the customer engagement app data is changed from **NameA** to **NameB** to **NameC**.
-
-### How does dual-write work after a Disaster Recovery event? Does it automatically work with the secondary instance that is deployed in the secondary Azure region?
-
-In a failover event, dual-write continues to work after the failover transition is completed, if both the Finance and Operations environment and the Common Data Service environment are accessible. Finance and Operations environments and Common Data Service environments use the standard failover process. For more information about system availability, see [Cloud deployment overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview#availability).
 
 ### How do I handle a Finance and Operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are no longer in sync. Is the synchronization done automatically?
 
