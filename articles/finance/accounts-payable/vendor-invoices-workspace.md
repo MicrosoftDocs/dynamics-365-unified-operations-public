@@ -148,7 +148,7 @@ available.
 
 ### Analytics – all companies page
 
-When the **Automatically submit imported invoices to workflow** **toggle** is selected on the Accounts payable parameters page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
+When the **Automatically submit imported invoices to workflow** field is set to **Yes** on the **Accounts payable parameters** page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
 
 The following table shows the visualizations that are available on each report
 page.
