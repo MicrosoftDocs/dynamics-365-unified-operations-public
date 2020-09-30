@@ -59,7 +59,7 @@ Access to each of the APIs is natively restricted according to the following rol
 - Customer – Access to APIs associated with this role requires an authenticated customer. E-Commerce sites generally use these APIs for operations such as retrieving order history and changing customer details.
 - Application – Access to APIs associated with this role requires application-level authentication, such as Azure Active Directory (Azure AD) service-to-service authentication.
 - Anonymous – APIs associated with this role are primarily used by e-Commerce sites without user authentication.
-- Customized APIs – Access to APIs associated with this role can be restricted using any of the methods described above such as POS device activation, customer authentication, and anonymous authentication.
+- Customized APIs – Access to APIs associated with this role can be restricted using methods such as POS device activation, customer authentication, and anonymous authentication.
 
 External application integration would need only **Application** authentication flow to access the APIs. E-commerce application integration would need **Customer** authentication.
 
@@ -130,13 +130,13 @@ For the full list of APIS, check this doc: [Commerce Scale Unit customer and con
     | Key            | Value                                                         |
     |----------------|---------------------------------------------------------------|
     | grant\_type    | client\_credentials                                           |
-    | client\_id     | The client id generated during the Azure app registration     |
+    | client\_id     | The client ID generated during the Azure app registration     |
     | client\_secret | The client secret generated during the Azure app registration |
     | resource       | Retail server URL                                             |
 
 2. After the request runs, the **access\_token** will be generated in the response body. Copy this token value. You will use the token to connect to the retail server.
 
-### GetOrderHistory using the postman
+### GetOrderHistory using the Postman
 
 1. Create a new POST request in Postman with this request URL, parameters, and headers:
 
@@ -188,7 +188,7 @@ For the full list of APIS, check this doc: [Commerce Scale Unit customer and con
     + Microsoft.IdentityModel.Clients.ActiveDirectory**
     + **Microsoft.Dynamics.Commerce.RetailProxy**.
 
-    The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
+    The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can be added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
 
 2. Add the following variables to the **Program.cs** file:
 
