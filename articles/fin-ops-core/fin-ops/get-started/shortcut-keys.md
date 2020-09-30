@@ -39,6 +39,8 @@ The following keyboard shortcuts can help you quickly and efficiently enter data
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
+Some of the shortcuts on this page are **key chords**, meaning they require two consecutive sets of key combinations (separated by a comma) that need to be independently  pressed to trigger the required action. For example, the shortcut "Alt+M,A" requires the user to first press "Alt+M", release the keys, and then press "A". 
+
 ## Finding a shortcut
 
 As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page.
@@ -199,7 +201,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
 
-## Personalization shortcuts
+## [Personalization](personalize-user-experience.md) shortcuts 
 
 | To do this                                                                                                             | Press                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -243,19 +245,18 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
-## Task recorder shortcuts
+## [Task recorder](../../dev-itpro/user-interface/task-recorder.md) shortcuts 
 
 | To do this                                                                    | Press                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| Stop the recording                                                            | Alt+R,S                    |
+| Stop the recording (while recording)                                          | Alt+R,S                    |
 | Toggle the visibility of the Task recorder pane (while recording)             | Alt+R,T                    |
-| Toggle Rails mode                                                             | Alt+R,L                    |
-| Go to the previous step (task guide)                                          | Alt+R,P                    |
-| Go to the next step (task guide)                                              | Alt+R,N                    |
-| Toggle focus between the page and the task guide qtip                         | Alt+R,F                    |
-| Expand/collapse something...                                                  | Alt+R,C                    |
-| Show more/less information in the task guide qtip                             | Alt+R,M                    |
-| Toggle focus between the page and the task guide qtip                         | Alt+R,F                    |
+| Toggle Rails mode (while playing a task guide)                                | Alt+R,L                    |
+| Go to the previous step (while playing a task guide)                          | Alt+R,P                    |
+| Go to the next step (while playing a task guide)                              | Alt+R,N                    |
+| Toggle focus between the page and the task guide qtip (while playing a task guide) | Alt+R,F               |
+| Expand/collapse the task guide qtip (while playing a task guide)              | Alt+R,C                    |
+| Show more/less information in the task guide qtip (while playing a task guide) | Alt+R,M                    |
 
 
 ## Additional resources
