@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Data action cache options
 
+[!include [banner](../includes/banner.md)]
+
 This topic provides an overview of supported data action cache options in Dynamics 365 Commerce.
 
 ## Overview
