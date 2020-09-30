@@ -131,7 +131,7 @@ First you will need to create a new **App Registration** under **Azure Active Di
  > [!NOTE]
  > You will only have once chance to copy the secret value so it's important to do so now.
 
-Next, you will add an access policy in your Key Vault.
+Next, to add an access policy in your Key Vault, follow these steps.
 
 1. Go to your Key Vault.
 1. Select **Access policies**, and then select **Add Access Policy**.
@@ -140,20 +140,22 @@ Next, you will add an access policy in your Key Vault.
 1. Leave **Authorized application** blank.
 1. Select **Save**.
 
-Next, you will add the Key Vault details in Retail Server.
+Next, to add the Key Vault details in Retail Server, follow these steps.
 
-1.	Navigate to your Retail Server AX UI.
-1.	Navigate to the form **Key Vault parameters**, if you don't know where it is located you can type that name in the search box and once found click [ENTER]. 
-1.	Click on **New** and give a Name to represent your **Key Vault**.
-1.	Configure the **Key Vault URL** (found on your Key Vault’s overview page as Vault URI), **Key Vault client** (Application ID of the Registered App) and **Key Vault secret key** (the secret value saved from the app registration process).
-1.	Next, add the secrets you wish to access from Retail Server. For example if the secret name is ‘retail-server-test-secret’ add **Name** as ‘retail-server-test-secret’ and **Secre**t as ‘vault:///retail-server-test-secret'. The **Secret type** should be set to Manual.
-1.	Click on **Validat**e to test your configuration. If everything was configured correctly you will see a message popup with the test ‘Validation successful’.
+1.	In Commerce headquarters, navigate to **Retail Server**.
+1.	Go to **Key Vault parameters**. 
+1.	Select **New** and enter a name to represent your Key Vault.
+1.	Enter the **Key Vault URL**. This is the **Vault URI** value on your Key Vault's Overview page. 
+1. Enter the **Key Vault client**. This is the application ID of the registered app. 
+1. Enter the **Key Vault secret key**. This is the secret value saved from the app registration process.
+1.	Add the secrets you want to access from Retail Server. For example, if the secret name is "retail-server-test-secret", add "retail-server-test-secret" as the **Name**, and "vault:///retail-server-test-secret" as the **Secret**. The **Secret type** should be set to **Manual**.
+1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says "Validation successful."
  
- ![Key Vault Secrets](media/key-vault-04.png)
+ ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
 
 ## Access secret values within your e-Commerce Node application
 
-Once the above configuration is complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
+Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -168,32 +170,32 @@ export interface ISecretValue {
 }
 ```
 
-To import this into your code, add `msdyn365Commerce` to the import statement for the ‘@msdyn365-commerce/core’ library as shown below.
+To import this into your code, add `msdyn365Commerce` to the import statement for the ‘@msdyn365-commerce/core’ library as shown in the following example.
 
 ```typescript
 import msdyn365Commerce, { IRequestContext, … } from '@msdyn365-commerce/core';
 ```
 
-The below example shows how to use the `SecretManager` to access the secret value:
+The following example shows how to use the `SecretManager` class to access the secret value:
 
 ```typescript
 const secretValue: ISecretValue | undefined = await msdyn365Commerce.secretManager?.getSecretValue('secretKey', requestContext.apiSettings.baseUrl);
 ```
 
-Note that `secretManager` is a nullable property on msdyn365Commerce, this is because `SecretManager` can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If `secretManager` is undefined it means the code is running in the context of a browser (client-side). 
+Note that `secretManager` is a nullable property on msdyn365Commerce, since the `SecretManager` class can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If the `secretManager` property is undefined, it means that the code is running in the context of a browser (client-side). 
 
-What this means practically for you as a developer is that you should only use the `SecretManager` on code that is guaranteed to run server-side (e.g. data-actions that will run only on server-side) as you will otherwise be unable to access the secret value. If you do happen to include this in code that will run in both contexts (server and client side) it is important to include a fallback option if `secretManager` happens to be undefined.
+What this means practically for you as a developer is that you should only use the `SecretManager` class on code that is guaranteed to run server-side (e.g. data-actions that will run only on server-side), since you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server and client side), it is important to include a fallback option if the `secretManager` property happens to be undefined.
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
 ## Local development
 
-Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, `SecretManager` will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file. In here you can configure secretKeys and secretValues that will only be used when developing locally.
+Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file. In here you can configure secretKeys and secretValues that will only be used when developing locally.
 
 > [!NOTE]
 > Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
 
-The below is a sample 'secrets/secrets.json' file:
+The following is an example of a "secrets/secrets.json" file:
 
 ```json
 {
@@ -201,4 +203,18 @@ The below is a sample 'secrets/secrets.json' file:
 }
 ```
 
-If you do not configure this file, during local development you may run into errors as your `SecretManager` attempts to communicate with your Key Vault but fails to do so.
+If you do not configure this file, during local development you may run into errors as the `SecretManager` class attempts to communicate with your Key Vault but fails to do so.
+
+## Additional resources
+
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Interactive components overview](interactive-components.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
