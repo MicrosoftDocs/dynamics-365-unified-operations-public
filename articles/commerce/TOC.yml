@@ -2164,7 +2164,7 @@
           href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
-        - name: Consume Headless commerce engine APIs
+        - name: Consume Retail Server APIs in external applications
           href: dev-itpro/consume-retail-server-api
       - name: Commerce Runtime (CRT) extensibility
         items:
