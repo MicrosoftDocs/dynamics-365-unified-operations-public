@@ -52,7 +52,6 @@ If you aren't using a publish group to schedule when your experiment goes live a
 Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by going to the **Experiments** tab or the **Pages** or **Fragments** tab. For more information, see [Connect an experiment and edit variations](experimentation-connect-edit.md) topic. For information about publish groups, see [Work with publish groups](publish-groups.md).
 
 When using publish groups with experiments, there are some important considerations to be aware of.
-- Content that you want to associate with the experiment must be available in a publish group *before* you connect the experiment. 
 - When you add a page or fragment that has an experiment running on it to a publish group, the experiment will be removed from the page or fragment in the publish group.
 - Experiments that are connected to pages in a live site aren't available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in a live site aren't available to other experiments in publish groups and vice versa.
 - When you publish or schedule a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
