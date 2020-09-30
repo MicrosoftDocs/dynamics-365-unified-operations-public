@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Instructions with Dynamics 365 Guides for workers in production
+title: Provide mixed-reality Guides for workers in production
 description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides to help production workers complete tasks in assembly, quality assurance, safety, and certification-related procedures.
  
 author: cabeln
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.15
 
 ---
 
-# Instructions with Dynamics 365 Guides for workers in production
+# Provide mixed-reality Guides for workers in production
 
 Workers in production processes will benefit from relevant instructions that are provided at the right time in the context of their work. *Instructions* apply in several domains of work, including: assembly, service, operations, certification, and safety. Across all of these core business functions, ongoing training instructions can help empower workers to achieve more and work better.
 
@@ -83,13 +83,13 @@ Service managers can assign Guides, for example, to specific [products](../../co
 
 Rollout new processes and ensure increased consistency by turning employee knowledge into a repeatable tool.
 
-Quality assurance managers can assign guides for example to [products](../../commerce/product.md) that walk through routines of quality assessment.
+Quality assurance managers can assign guides, for example, to [products](../../commerce/product.md) that walk through routines of quality assessment.
 
 ### Certifications
 
 ![Use Guides for certification related tasks](media/instruction-guides-hero-certification.png "Use Guides for certification related tasks")
 
-Ensure every employee meets high standards by quickly identifying who needs help where.
+Ensure every employee meets high standards by quickly identifying who needs help and where.
 
 ### Safety
 
@@ -97,7 +97,7 @@ Ensure every employee meets high standards by quickly identifying who needs help
 
 Provide instructions that walk through dangerous procedures virtually before attempting in the physical environment. With a mixed reality approach, workers can experience dangerous procedures virtually.
 
-Production managers can provide dedicated handling instructions for hazardous material handling or delicate handling procedures by assigning instructions to [product items](../../commerce/product.md), [routes](routes-operations.md) and [operations](routes-operations.md#operation-relations).
+Production managers can provide dedicated handling instructions for hazardous material handling or delicate handling procedures by assigning instructions to [product items](../../commerce/product.md), [routes](routes-operations.md), and [operations](routes-operations.md#operation-relations).
 
 ## Get started with instructions and Guides
 
@@ -268,7 +268,7 @@ You can add a guide to any [bill of materials](bill-of-material-bom.md) (BOM).
 
 ### Typical scenario using bills of materials
 
-Guides attached to a BOM provide shop floor workers with instructions that explain ho to prepare and handle material from a BOM. Guides can also be assigned to versions of a BOM.
+Guides attached to a BOM provide shop floor workers with instructions that explain how to prepare and handle material from a BOM. Guides can also be assigned to versions of a BOM.
 
 > [!NOTE]
 > Guides can't currently be attached to individual BOM lines.
@@ -291,7 +291,7 @@ You can add a guide to any [bill of materials version](bill-of-material-bom.md#b
 
 ### Typical scenario using bill of materials versions
 
-Guides attached to an individual BOM version provide shop floor workers with instructions that explain ho to prepare and handle material for a version of a BOM that is different from the generic BOM or other versions of it.
+Guides attached to an individual BOM version provide shop floor workers with instructions that explain how to prepare and handle material for a version of a BOM that is different from the generic BOM or other versions of it.
 
 > [!NOTE]
 > Guides can't currently be attached to individual BOM lines.
@@ -319,7 +319,7 @@ You can add a guide to any [route](routes-operations.md).
 
 Routes are typically used to specify how a certain released product shall be produced based on a BOM or BOM version and with a set of resources or resource groups.
 
-Assign a Guide to a route to provide step by step instructions for the respective production process.
+Assign a Guide to a route to provide step-by-step instructions for the respective production process.
 
 ### Add a Guide to a route
 
@@ -409,7 +409,7 @@ You can add Guides to the following production data:
 - [Route versions](#route-versions)
 - [Route operation relations](#route-operation-relations)
 
-When Supply Chain Management generates the jobs for the production floor it will collect the relevant Guides from those sources. Please be aware of the following important rules.
+When Supply Chain Management generates the jobs for the production floor, it will collect the relevant Guides from those sources. Take note of the following important rules.
 
 > [!Important]
 > If you attach a BOM version or formula version to a route or production order, then any Guides attached to this version, and also the Guides attached to the parent BOM or formula of that version, will be shown on the job.
