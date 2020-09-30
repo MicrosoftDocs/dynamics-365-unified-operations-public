@@ -232,8 +232,12 @@
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-      - name: Invoice automation
-        items:         
+      - name: Vendor invoice automation    
+        items: 
+        - name: Submit invoices to the workflow system and match product receipt lines
+          href: accounts-payable/submit-invoice-workflow-automatically.md
+        - name: View vendor invoice automation results
+          href: accounts-payable/view-automated-vendor-invoice.md
         - name: Automated vendor invoicing processes overview
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
