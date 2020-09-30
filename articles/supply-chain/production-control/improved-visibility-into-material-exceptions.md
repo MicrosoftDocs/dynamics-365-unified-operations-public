@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JmgShopSupervisorWorkspace 
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
