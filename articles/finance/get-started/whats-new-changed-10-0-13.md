@@ -29,10 +29,9 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.13 (October 2020)
+# What's new or changed in Dynamics 365 Finance 10.0.13 (October 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.13. This version has a build number of 10.0.569 and is available as follows:
 

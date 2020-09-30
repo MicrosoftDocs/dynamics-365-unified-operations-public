@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

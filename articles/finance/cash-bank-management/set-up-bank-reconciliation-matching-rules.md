@@ -24,7 +24,7 @@ ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

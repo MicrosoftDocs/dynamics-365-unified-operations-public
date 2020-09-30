@@ -42,8 +42,9 @@ These topics describe dual-write integration.
 
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
-    
+
 + [What's new or changed in dual-write](whats-new-dual-write.md)
++ [Frequently asked questions](dual-write-faq.md)    
     
 ## Dual-write setup
 
@@ -58,6 +59,7 @@ These topics describe dual-write integration.
     + [Enable entity map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
++ [Set up the mapping for the sales order status fields](sales-status-map.md)
 
 ## Managing dual-write after setup
 

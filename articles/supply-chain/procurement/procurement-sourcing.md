@@ -61,7 +61,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
--   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
+-   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
 -   [Vendor portal user security](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
@@ -104,7 +104,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 -   [Record the receipt of goods on the purchase order](tasks/record-receipt-goods-purchase-order.md)
 -   [Purchase requisition workflow](purchase-requisitions-workflow.md)
--   [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)
+-   [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821) (white paper)
 -   [Purchasing policies overview](purchase-policies.md)
 -   [Create purchasing policies](tasks/create-purchasing-policies.md)
 

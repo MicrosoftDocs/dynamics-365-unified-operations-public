@@ -98,8 +98,6 @@
             href: get-started/whats-new-commerce-10-0-13.md
           - name: Commerce 10.0.12 (August 2020)
             href: get-started/whats-new-commerce-10-0-12.md
-          - name: Commerce 10.0.11 (July 2020)
-            href: get-started/whats-new-commerce-10-0-11.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -182,7 +180,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -276,6 +274,8 @@
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
         - name: Implement Finance and Operations Commerce projects
@@ -956,9 +956,9 @@
           href: add-privacy-page.md
         - name: Replace user IDs associated with tracked content changes
           href: replace-IDs-tracked-changes.md
-      - name: Starter kit
+      - name: Module library
         items: 
-        - name: Starter kit overview
+        - name: Module library overview
           href: starter-kit-overview.md
         - name: Container modules
           items:
@@ -1976,7 +1976,7 @@
           items:
           - name: Create a new module
             href: e-commerce-extensibility/create-new-module.md 
-          - name: Clone a starter kit module
+          - name: Clone a module library module
             href: e-commerce-extensibility/clone-starter-module.md
           - name: Add module configuration fields
             href: e-commerce-extensibility/add-module-config-fields.md
@@ -2054,6 +2054,8 @@
             href: e-commerce-extensibility/theme-module-extensions.md
           - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
+          - name: Add custom resources to your customization code
+            href: e-commerce-extensibility/add-custom-resources.md
         - name: Inject script
           items:
           - name: Script injectors
@@ -2070,7 +2072,7 @@
           items:
           - name: Package configurations and deploy them to an online environment
             href: e-commerce-extensibility/package-deploy.md
-          - name: SDK and store starter kit updates
+          - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
       - name: Retail SDK
         items:
@@ -2148,6 +2150,8 @@
           href: implementation-considerations-devices.md
         - name: POS Cart view events and handlers
           href: dev-itpro/cart-view-handlers.md
+        - name: Add custom buttons to the POS header bar
+          href: dev-itpro/pos-header-bar.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
