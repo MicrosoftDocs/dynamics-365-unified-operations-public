@@ -114,9 +114,7 @@ Run the AX2012SchemaPublish.ps1 script with the following parameters:
 * TargetDBName - this is the name of your AXDB, retrieved in prior steps (ex. d365opsprod-12345)
 * AxDBAdminPassword - this is the password for the axdbadmin SQL account 
 
-![Upgrade dacpac extract](media/upgrade-dacpac-extract.png)
-<img src="./media/upgrade-dacpac-extract.png" width="800px" />
-
+![Run the AX2012SchemaPublish.ps1 script](media/upgrade-dacpac-extract.png)
 
 During execution, the script will make use of SqlPackage.exe to extract only the database and schema definitions from your 2012 database as 2012DBSource.dacpac in the working directory.  Next, it will publish this to your Sandbox environment using the Profile.publish.xml publishing profile included in the toolkit.  This publishing profile will skip over several object types such as SQL Views, SQL Users, Statistics, and other objects which are not required for the upgrade.
 
@@ -138,7 +136,7 @@ Run the AX2012DataTransfer.ps1 script with the following parameters:
 * LinkedServerName - this is the name of the link server to be created (ex. AX2012Link)
 * DegreeOfParallelism - this is the number of tables that will be processed in parallel.  This should be equal to 50% of the cores available on the source environment, as it is CPU and RAM intensive. (ex. 3)
 
-<img src="./media/upgrade-dacpac-xfer.png" width="800px" />
+![Run the AX2012DataTransfer.ps1 script](media/upgrade-dacpac-xfer.png)
 
 During execution, the script will create a linked server if one doesn't yet exist between the source server and the sandbox server.  From there, it will copy data from all of the AX 2012 tables in to the target database, using the DegreeOfParallelism parameter to process multiple tables at once.
 
