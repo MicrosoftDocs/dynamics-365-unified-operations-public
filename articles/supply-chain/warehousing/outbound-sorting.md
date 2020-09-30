@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
