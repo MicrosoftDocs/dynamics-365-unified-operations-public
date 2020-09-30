@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSParameters
+ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

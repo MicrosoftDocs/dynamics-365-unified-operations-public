@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSReservationHierarchy, WHSInventTableReservationHierarchy
+ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
