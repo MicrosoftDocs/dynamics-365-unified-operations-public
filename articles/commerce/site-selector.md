@@ -2,10 +2,10 @@
 # required metadata
 
 title: Site selector module
-description: This topic covers the Site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -33,29 +33,30 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the Site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-When a business has different sites across markets, regions, locales etc a shopper needs an easy way to switch between these sites and choose the site of their preference to shop. For this scenario, a Site selector module allows a user to browse across multiple sites.
 
-The module must be configured with the list of sites (market or region or locales) that the user can browse. 
+When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and choose their preferred shopping site. To accomodate this scenario, the site selector module allows a user to browse across multiple sites.
+
+The site selector module must be configured with the list of sites (market or region or locales) that site users can browse. 
 
 > [!NOTE]
-> The Site selector module is available in the Dynamics 365 Commerce 10.0.14 release.
+> The site selector module is available in the Dynamics 365 Commerce 10.0.14 release.
 
-The following image shows examples of Site selector module featured on the header of the page.
-![Example of Site selector module](./media/ecommerce-sitepicker.PNG)
+The following example image shows a site selector module featured on the header of a site page.
+![Example of a site selector module on the header of a site page](./media/ecommerce-sitepicker.PNG)
 
 ## Site selector module properties
 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
 | Heading | Text | The heading for the module. |
-| Site options | Name, Image, Url | For each site that you want to include provide a name, a link to the site home page and an optional image (icon) to be displayed. Icon can be a flag or some represention of the market, region, locale etc|
+| Site options | Name, Image, URL | For each site that you want to include provide a name, a link to the site home page and an optional image to be displayed. The image can be a flag or some represention of a market, region, locale.|
 
 ## Add a Site selector module to a page
-Site selector module can be added to the [Header module](author-header-module.md) under the site selector slot. Once added, define a heading and the Site options. 
 
+The site selector module can be added to the [Header module](author-header-module.md) under the site selector slot. Once added, you can define a heading and the site options. 
 
 ## Additional resources
 
