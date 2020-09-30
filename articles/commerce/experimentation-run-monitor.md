@@ -35,7 +35,7 @@ This topic describes how to run and monitor your experiment in a third-party app
 
 [ ![Experimentation user journey - Run & Monitor](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
-Follow the instructions for how to activate or run your experiment in the third-party service. If your experiment is not running in the third-party service, the correct variations won't be displayed on your site and your site will continue to display the existing version of the page.
+After you publish your variations, all the steps you need to do in Commerce to run your experiment are done. The next step is determining which variation to show to each user when they request a page. The third-party service makes that determination, but first you have to activate the experiment within the service. Since the steps for activating an experiment vary from service to service, you'll need to follow the instructions included with your service or provider. If the experiment is not activated, users will only see the default version of the page - no variations will be displayed.
 
 You'll need to keep the experiment running long enough to gather data for statistically valid results. Use the third-party service to monitor the experiment-related data and analytics while the experiment is running.
 
