@@ -43,8 +43,8 @@ Before you connect your experiment in Commerce, you'll need to make some decisio
 
 ### Determine the scope of your experiment
 When you connect an experiment, you are prompted to define the scope of the experiment. Experiments are defined as **partial** scope or **entire** scope.
-- Choose **partial** if you want to target a specific portion of a page for the experiment. Changes that are made to parts of the default page or fragment that aren't related to the experiment are automatically synchronized across variations. 
-- Choose **entire** if you want to target an entire page or fragment. Separate copies of the default page or fragment are created in this scenario. If you make any changes to the default page or fragment that the experiment is associated with, you'll have to manually synchronize those changes across all variations.
+- Choose **partial** if you want to conduct an experiment on a specific portion of a page. If you select this option, you must identify which modules are included in the experiment. Changes that are made to parts of the default page or fragment that aren't related to the experiment are automatically synchronized across variations.
+- Choose **entire** if you want to conduct an experiment on an entire page or fragment. Separate copies of the default page or fragment are created. You won't have to select which modules are included in the experiment because the whole editing surface is available to change. You can add, delete, and re-order modules as needed. However, if any changes are made to the default page or fragment that the experiment is associated with, those changes have to be manually synchronized across all variations.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
