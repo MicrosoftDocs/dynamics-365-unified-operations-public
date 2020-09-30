@@ -82,18 +82,24 @@ For each individual work line the location directives will be evaluated, and a l
 >There are special cases where the location to pick from or put to are pre-selected.
 >For example, during the _purchase registration_ the first pick is always from the location where the registration happens. Another example is the **Inventory movement by template**, where the location to pick from is selected by the warehouse worker and only the put locations are found through **Location directives**.
 
+For more information about location directives, see [Work with location directives](location-directives.md).
+
+<!--HHM: Karl, this can be removed as it is added to locations-directives.md. Leaving it here for your review.
 ### Multiple SKU
 
-One of the criteria evaluated on the location directive is the **Multiple SKU** option. 
-The **Multiple SKU** option on the **Location directives** is used for work 
+One of the criteria evaluated on the location directive is the **Multiple SKU** option.
+
+The **Multiple SKU** option on the **Location directives** is used for work
 lines handling more than one item number (it shows up as blank in the work details and as "Multiple" for the the **Warehouse app** processing pages.
 
-An typical example scenario would be when using a **Work template** setup with more than one _pick/put_ pair. Here you might want the search for a specific put **_Staging location type_**.  
+An typical example scenario would be when using a **Work template** setup with more than one *pick/put* pair. Here you might want the search for a specific put ***Staging location type***.
+
 >[!Note]
 > You will not be able to use the **Edit query** option when having the **Multiple SKU** enabled because the query cannot evaluate on item level, when having multiple items.
 To make sure the desired **Location directive** get selected you can use the **Directive code** to guide the selection of the **Location directive** related to the work template put lines having this **Directive code** assigned.
 
-Unless you always only operate with single item or mixed item operations, it is important to define two **Location directives** for the **_Put_** **Work type**. One with the **Multiple SKU** enabled and another without. Not doing this often results in unexpected business process locations coming from the used **Location directive**.
+Unless you always only operate with single item or mixed item operations, it is important to define two **Location directives** for the **_Put_** **Work type**. One with the **Multiple SKU** enabled and another without. Not doing this often results in unexpected business process locations coming from the used **Location directive**. -->
 
+<!--HHM: Karl, this can be removed as it is added to locations-directives.md. Leaving it here for your review.
 ### Batch enabled
-For processes using the **Location directives** to find locations to pick  batch number tracked items from, it is important to select the **Batch enabled** setting on the **Location directive actions** to include the search for locations holding batch number tracked items.
+For processes using the **Location directives** to find locations to pick  batch number tracked items from, it is important to select the **Batch enabled** setting on the **Location directive actions** to include the search for locations holding batch number tracked items. -->
