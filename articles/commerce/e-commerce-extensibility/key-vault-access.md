@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Using Azure Key Vault Azure Key Vault with Dynamics 365 Commerce E-Commerce
-description: This topic describes  
+title: Set up Azure Key Vault for secure key management
+description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,88 +28,120 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Using Azure Key Vault with Dynamics 365 Commerce E-Commerce
+# Set up Azure Key Vault for secure key management
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes 
+This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 
 ## Overview
 
-Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that should be stored securely. This information can be stored in an [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) storage and securely accessed as needed. The Azure Key Vault provides the ability to import and manage cryptographic keys and certificates. 
+Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
-The below information will provide the details on how to create a Key Vault to securily store information, how to configure e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault and how to access these secret values from within your e-Commerce components.
+The instructions below provide the details on how to create a Key Vault to securely store sensitive information, how to configure your e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault, and how to access secret values from within your e-Commerce components.
 
 ## Create a Key Vault to store application secrets
-You will need an Azure account to access the Key Vault feature, follow the below steps to create a new Key Vault.
+
+The first step is to to create a new Key Vault to store application secrets. You will need an Azure account to access Azure Key Vault.
+
+To create a new Key Vault, follow these steps.
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
-1.	Select the **Create a resource** option.
-1.	Search for **Key Vault** and click on **Create**.
+1.	Select **Create a resource**.
+1.	Search for **Key Vault**, and then select **Create**.
 1.	Select the subscription and resource group you would like this Key Vault to be a part of.
-1.	Enter a name, region and pricing tier for your Key Vault.
-1.	Select the **Next** button and create access policies and assign permissions to users.
-1.	Leave all other settings as they are and click on **Review + create** and then select **Create** after you have reviewed the configuration.
-1.	Wait for deployment to complete.
-1.	After the Key Vault has successfully has successfully been deployed, add any secrets you wish to add under Secrets.
+1.	Enter a name, region, and pricing tier for your Key Vault.
+1.	Select **Next**, and then create access policies and assign permissions to users. Leave all other settings as is.
+1.	Select **Review + create**. and then  .
+1.	After you have reviewed the configuration, select **Create** and then wait for the deployment to complete.
+1.	After the Key Vault has successfully been deployed, you can add any secrets under **Secrets**.
 
-## Configure Server to Server Auth between the e-Commerce Node application and Retail Server
-The e-Commerce Node application needs to be configured to securely communicate with Retail Server.
+## Configure server-to-server authentication between the e-Commerce Node application and Retail Server
 
-For the next steps, you will need to have the **Tenant ID** of the App Service hosting your Node application and Client ID of the managed identity tied to your App Service.
+Next, the e-Commerce Node application needs to be configured to securely communicate with Retail Server.
 
-If you do not have access to your App Service, work with your Service Integrator or support to get the following information.
-### Finding your Tenant Id
-1.	Navigate to your Azure Portal homepage and switch to the directory containing the App Service hosting your Node application.
-1.	Navigate to **Azure Active Directory**.
-1.	Click on **Properties** in the left pane.
+For the next steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
+
+### Find your tenant ID
+
+To find your tenant ID, follow these steps.
+
+1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
+1. Go to the directory containing the Azure App Service hosting your Node application.
+1.	Go to **Azure Active Directory**.
+1.	In the left navigation pane, select **Properties**.
 1.	Find and copy the **Tenant ID**.
 
-### Finding the Client ID of the Managed Identity for your Node Application
-1.	Navigate to your Azure Portal homepage and switch to the directory containing the App Service hosting your Node application.
-1.	Search and navigate to the App Service hosting your Node Application.
-1.	Click on **Identity** in the left pane.
-1.	Click on the **User assigned** tab.
-1.	Click on the Managed Identity resource and note the **Client ID** on the overview page.
+### Find the client ID of the managed identity for your Node application
 
-![Find the Client ID](media/key-vault-01.png)
+To find the client ID of the managed identity for your Node application, follow these steps.
 
-### Adding your Node application’s details into Retail Server’s authentication allow-list
-1.	Navigate to your Retail Server AX UI.
-1.	Navigate to the form **Commerce Shared Parameters**, if you don't know where it is located you can type that name in the search box and once found click [ENTER].
+1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
+1. Go to the directory containing the Azure App Service hosting your Node application.
+1.	In the left navigation pane, select **Identity**.
+1.	Select the **User assigned** tab.
+1.	Select the managed identity resource for your Node application.
+1. In the left navigation pane, select **Overview**, and then copy the **Client ID** value.
+
+The following example image highlights the **Client ID** value on the Azure Portal **Overview** page.
+
+![Azure Portal Overview page with the Client ID value highlighted](media/key-vault-01.png)
+
+### Add your Node application details into Retail Server’s authentication allow list
+
+To add your Node application details into Retail Server's authentication allow list, follow these steps.
+
+1. In Commerce headquarters, navigate to **Retail Server**.
+1.	Go to **Commerce Shared Parameters**.
 1.	Select the **Identity Providers** tab, you will see a pane displaying 3 grids.
-1.	In the first grid **Identity Providers**, click on **Add**
-1.	Add an entry with **Issuer Value**: `https://sts.windows.net/<TENANT_ID>/` (replace TENANT_ID with the **Tenant ID** found above), **Name**: `Azure AD` and **Type**: `Azure Active Directory`.
-1.	In the second grid, **Relying Parties**, add an entry with the client id of your Managed Identity. Select the **Type** to be `Confidential`, **UserType** to be `Application` and provide a Name for your Node application.
-1.	Finally, in the last grid **Server Resource IDS**, add an entry with Server Resource Id of https://commerce.dynamics.com and hit **Save**.
+1.	In the first section named **IDENTITY PROVIDERS**, select **Add**.
+1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID.
+1. For **Name**, enter **Azure AD**.
+1. For **Type**, enter **Active Directory**.
+1.	In the second section named **RELYING PARTIES**, add an entry with the client ID of your managed identity. 
+1. For **Type**, select **Confidential**.
+1. For **UserType**, select **Application**.
+1. Provide a name for your Node application.
+1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
-As a result, you should have the following configuration similar to the below screen shot:
+You should now have a configuration similar to the the following image.
 ![Retail Server authentication allow list](media/key-vault-02.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
 
-## Add Key Vault details to your Retail Server
-Follow the below steps to configure your Retail Server to securely communicate with your own Key Vault.
+## Add Key Vault details to Retail Server
+
+Follow the below steps to configure Retail Server to securely communicate with your Key Vault.
 
 First you will need to create a new **App Registration** under **Azure Active Directory** to represent your Retail Server so you can register your Key Vault with Retail Server.
 
-1.	Navigate to **Azure Active Directory**.
-2. In the left pane click on **App registrations**.
-3.	Click on **New registration** and give it a name (e.g. RetailServer).
-4.	In the overview panel note the **Application (client) ID** and save the value for later use.
-5.	Now click on **Certificates & secrets** and select **New client secret**. For expiry date select **Never** and add a description. This secret value is what will enable communication between your Retail Server and the Key Vault
+1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
+1. Go to the directory containing the Azure App Service hosting your Node application.
+1.	Go to **Azure Active Directory**.
+1. In the left navigation pane, select **App registrations**.
+1. Select **New registration** and then enter a name (for example, "RetailServer").
+1. In the overview panel, copy and save the **Application (client) ID** value for later use.
+1. Select **Certificates & secrets**, and then select **New client secret**. 
+1. For **Description**, add a description (for example, "retail-server-secret"). 
+1. For **Expires**, select **Never**.
+1. In the **Value** box, copy the secret value and store it safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
 
-![App registration](media/key-vault-03.png)
+    ![App registration](media/key-vault-03.png)
  
-6.	Copy the secret value and store it safe place. **You will only have once chance to copy the secret value so it’s important to do so now**.
-7.	Now go back to the Key Vault you created in the first step, the one that you will use to store application secrets.
-8.	Click on **Access policies** and then click on **Add Access Policy**.
-9.	Select **Key**, **Secret**, & **Certificate Management** for the first option.
-10.	For **select principal**, search for and select the App you just registered (e.g. RetailServer).
-11.	Leave **Authorized application** blank.
-12.	Click on Save.
+ > [!NOTE]
+ > You will only have once chance to copy the secret value so it's important to do so now.
 
-Next, navigate to your Retail Server AX UI to add the Key Vault details in Retail Server
+Next, you will add an access policy in your Key Vault.
+
+1. Go to your Key Vault.
+1. Select **Access policies**, and then select **Add Access Policy**.
+1.	For the first option, select **Key**, **Secret**, and **Certificate Management**.
+1. For **select principal**, search for and select the app you registered earlier(for example, "RetailServer").
+1. Leave **Authorized application** blank.
+1. Select **Save**.
+
+Next, you will add the Key Vault details in Retail Server.
+
 1.	Navigate to your Retail Server AX UI.
 1.	Navigate to the form **Key Vault parameters**, if you don't know where it is located you can type that name in the search box and once found click [ENTER]. 
 1.	Click on **New** and give a Name to represent your **Key Vault**.
@@ -119,7 +151,8 @@ Next, navigate to your Retail Server AX UI to add the Key Vault details in Retai
  
  ![Key Vault Secrets](media/key-vault-04.png)
 
-## Accessing secret values within your e-Commerce Node application
+## Access secret values within your e-Commerce Node application
+
 Once the above configuration is complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
 
 ```typescript
@@ -153,13 +186,15 @@ What this means practically for you as a developer is that you should only use t
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
-## Local Development
+## Local development
 
 Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, `SecretManager` will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file. In here you can configure secretKeys and secretValues that will only be used when developing locally.
 
-**As a reminder, everything under secrets/ should be added to your gitignore file to help prevent credentials/secrets from being leaked online**
+> [!NOTE]
+> Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
 
 The below is a sample 'secrets/secrets.json' file:
+
 ```json
 {
     "secretKey": "secretValue!"
