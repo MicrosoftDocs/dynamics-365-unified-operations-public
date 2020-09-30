@@ -5,7 +5,7 @@ title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/06/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ The Planning Optimization functionality doesn't currently support all the featur
 Eventually, Planning Optimization will replace the existing built-in Supply Chain Management planning engine.
 
 > [!NOTE]
-> You need to request an exception from migration to Planning Optimization, in case your master planning process don’t include production (master planning generate Planned production orders) and you require usage of the built-in master planning engine beyond version 10.0.15. Starting from version 10.0.16 an error will be shown, on environments when running built-in master planning without generation of Planned production orders. Planning Optimization should be used for all new deployments that don’t generate Planned production orders during master planning. Owners of existing environments, running the built-in master planning engine without generation of Planned production orders, will receive a mail with details about the exception process. In general it is recommended to work with a partner to evaluate and plan the migration to Planning Optimization.
+> You need to request an exception from migration to Planning Optimization if your master planning process does not include production (master planning generated planned production orders) and you require the built-in master planning engine beyond version 10.0.15. Starting in version 10.0.16, an error will be shown in environments when running built-in master planning without generation of planned production orders. Planning Optimization should be used for all new deployments that do not generate planned production orders during master planning. Owners of existing environments running the built-in master planning engine without generation of Planned production orders, will receive a mail with details about the exception process. We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
 
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
