@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to skip the **Change due** dialog in the point of sale (POS) when a transaction is paid in full and there is no change due.
+This topic describes how to skip the **Change due** dialog in the point of sale (POS) when a transaction is paid in full and there's no change due.
 
 ## Overview
 
-With the prevalence of use of credit cards for payments at the POS, most transactions don't require change to be provided to the customer. In Commerce you can configure POS so that the  **Change due** dialog is skipped unless there is actually change due back to the customer. The **Change due** dialog will also be shown if the receipt format for gift receipts is configured to print **As required**. When gift receipts are configured to print **As required**, the option to print a gift receipt is included in the **Change due** dialog, supersceding the **Skip change due** configuration.
+With the prevalence of use of credit cards for payments at the POS, most transactions don't require change to be provided to the customer. In Commerce, you can configure POS so that the  **Change due** dialog is skipped unless there's actually change due back to the customer. The **Change due** dialog will also be shown if the receipt format for gift receipts is configured to print **As required**. When gift receipts are configured to print **As required**, the option to print a gift receipt is included in the **Change due** dialog, superseding the **Skip change due** configuration.
 
 ## Configure **Change due** 
 
@@ -47,4 +47,4 @@ The property you need to configure to skip the **Change due** dialog is found in
 1. Open the functionality profile for the target store and select **Edit**. 
 1. Expand the **Functions** FastTab. Under the **Terminal** subheading, in the **Change due** field, select **Skip when zero**. 
 1. Select **Save** and then run the **1070** channel configuration distribution schedule.
-1. Once the changes are synchronized, log out of the POS and log back in. Perform a transaction that has no change due to the customer to verify that the **Change due** dialog isn't displayed.  
+1. Once the changes are synchronized, log out of the POS and log back in. Make a transaction that has no change due to the customer to verify that the **Change due** dialog isn't displayed.  
