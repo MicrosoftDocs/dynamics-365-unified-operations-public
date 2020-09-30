@@ -40,15 +40,15 @@ The **Stock transfer** functionality that is available for India supports this p
 
 ### Enable stock transfer functionality
 
-You should enable the following features in the **Feature management** workspace:
+Enable the following features in the **Feature management** workspace:
 
 - (India) Improvements in unit price and cost price handling in Stock transfer orders
 - (Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning
-- Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order
+- Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order
 
-See [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about Feature management.
+For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about Feature management.
 
-You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. See [India Goods and Services Tax (GST) overview](apac-ind-gst.md) for more details.   
+You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. For more information, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).   
 
 ### Set up default transfer type and price type for transfer orders
 
@@ -66,23 +66,23 @@ You can define a default transfer order type and a default price type for transf
 
 ### Set up item master parameters
 
-To calculate GST for an item in a stock transfer order, you need to configure certain parameters on the **Released product details** page, such as **HSN codes** and **Tax rate type**. See [Assign HSN codes and SACs to products](apac-ind-gst-hsn-service-accounting-codes.md#assign-hsn-codes-and-sacs-to-products) for more details.
+To calculate GST for an item in a stock transfer order, you need to configure certain parameters on the **Released product details** page, such as **HSN codes** and **Tax rate type**. For more information, see [Assign HSN codes and SACs to products](apac-ind-gst-hsn-service-accounting-codes.md#assign-hsn-codes-and-sacs-to-products).
 
 ### Configure transfer pricing
 
-You can configure the prices that will be used when processing stock transfers for an item. To do this, on the **Released product details** page open the **Transfer price** page.
+You can configure the prices that will be used when processing stock transfers for an item. To do this, open the **Transfer price** page from the **Released product details** page.
 
 ### Configure stock transfer posting
 
-You need to configure the **Interim transit** account on the following pages:
+You must configure the **Interim transit** account, which is done on the following pages:
 
 - In the **Inventory management** module, on the **Posting** page, on the **Transfer order** tab, specify the **Interim transit** account.
-- On the **Tax setup** page, click **Setup**, and on the **Setup** page specify the **Interim transit for stock transfer** account for all GST components that may be created for GST on stock transfer. See [Define main accounts](apac-ind-gst-map-configuration-tax-types.md#define-main-accounts-1) for more information on the posting setup for GST.
+- On the **Tax setup** page, click **Setup**, and on the **Setup** page specify the **Interim transit for stock transfer** account for all GST components that may be created for GST on stock transfer. For more information, see [Define main accounts](apac-ind-gst-map-configuration-tax-types.md#define-main-accounts-1) for more information on the posting setup for GST.
 
 > [!NOTE]
 > The accounts that are used to post interim transit amounts should have **Interim transit** specified in the **Posting type** field on the **Posting validation** tab of the **Main accounts** page.
 
-You also need to set up main accounts to post inventory cost for transfer orders. In the **Inventory management** module, on the **Posting** page, on the **Inventory** tab, specify the following accounts:
+You must also set up main accounts to post inventory cost for transfer orders to. Specify the following accounts from the **Inventory** tab on the **Posting** page in **Inventory management**: 
 
 - **Inventory issue**
 - **Inventory receipt**
@@ -96,18 +96,18 @@ You also need to set up main accounts to post inventory cost for transfer orders
 ## Create and post a stock transfer order
 
 1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
-1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
-1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
-1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
+2. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
+3. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
+4. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
     
 
     > [!NOTE]
     > If you select **Transfer order** in the **Transfer type** field, the transfer order will be posted based on the standard transfer order process.
 
 1. In the **Price type** field, select a default price type for transfer order lines.
-1. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
-1. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
-1. In the **Price type** field, select the price type for the transfer order line, from the following options:
+2. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
+3. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
+4. In the **Price type** field, select the price type for the transfer order line, from the following options:
     
     - **Cost price** – The cost price, or the on-hand price, of the item is used for the transfer order line.
     - **Transfer price** – The transfer price that is set up for the item is used for the transfer order line.
@@ -116,11 +116,11 @@ You also need to set up main accounts to post inventory cost for transfer orders
     > If the **Price type** is set to **Transfer price**, the quantity of the items that are defined for the combination of item and dimension on the **Transfer price** page is displayed in the **Transfer quantity** field, but it can be modified.
 
 1. In the **Unit price** field, enter the cost price or the transfer price for one unit of the item.
-1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
-1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
-1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
+2. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+3. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
+4. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
     > [!NOTE]
-    > If the "Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
+    > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
     
-You can also cancel a previously posted stock transfer order shipment, provided that no receipts are posted for this order yet. On the **Transfer orders** page, click **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment, click **Cancel**, and confirm the cancellation of the shipment. The shipment will be cancelled, and all inventory movements and GST that was posted for the shipment will be reversed. You need to enable the "Transfer Order Cancellation" feature in the **Feature management** workspace to be able to cancel transfer order shipments.
+You can also cancel a previously posted stock transfer order shipment, if no receipts have been posted for this order. On the **Transfer orders** page, click **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Click **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
