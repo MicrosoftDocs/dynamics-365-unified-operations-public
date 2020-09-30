@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
