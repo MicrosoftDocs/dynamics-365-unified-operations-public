@@ -80,7 +80,7 @@ The e-commerce storefront is the customer-facing website rendering system. It's 
 
 #### Site builder
 
-Site builder is the web-based authoring interface for the content management and storefront website rendering systems. It provides a what-you-see-is-what-you-get (WYSIWYG) editor for site managers and content authors who perform the day-to-day workflow tasks of managing and producing the marketing content for the e-commerce experience. In site builder, a marketer can provide more marketing detail for specific products to enhance the shopping experience for consumers. In addition, site builder includes integrated accessibility reporting, URL management, site map generation, and image focal point management, among other features. For more information, see [Online store overview](https://docs.microsoft.com/dynamics365/commerce/online-store-overview).
+Site builder is the web-based authoring interface for the content management and storefront website rendering systems. Visual page builder in site builder is a what-you-see-is-what-you-get (WYSIWYG) editor for site managers and content authors who perform the day-to-day workflow tasks of managing and producing the marketing content for the e-commerce experience. In site builder, a marketer can provide more marketing detail for specific products to enhance the shopping experience for consumers. In addition, site builder includes integrated accessibility reporting, URL management, site map generation, and image focal point management, among other features. For more information, see [Online store overview](https://docs.microsoft.com/dynamics365/commerce/online-store-overview).
 
 #### External services and apps
 
