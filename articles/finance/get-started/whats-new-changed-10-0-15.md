@@ -44,15 +44,16 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
- - [Regulatory Configuration Service – Simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
  - [Automatic collection task creation](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/automatic-collection-task-creation)
  - [Touchless email reminders to customer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/touchless-email-reminders-customer)
 - [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)
+ - [Regulatory Configuration Service – Simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md). 
+Dynamics 365 Finance 10.0.15 includes platform updates. To learn more, see [Platform updates for version 10.0.15 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
