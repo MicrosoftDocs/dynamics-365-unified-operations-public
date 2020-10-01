@@ -110,9 +110,13 @@ Your Node application will now be able to securely communicate and request Key V
 
 ## Add Key Vault details to Retail Server
 
-Next, you will configure Retail Server to securely communicate with your Key Vault. You will first need to create a new **App Registration** under **Azure Active Directory** to represent your Retail Server so that you can register your Key Vault with Retail Server.
+Next, you will configure Retail Server to securely communicate with your Key Vault. 
 
 ### Create a new app registration and add a client secret
+
+You will first need to create a new app registration under Azure AD to represent your Retail Server so that you can register your Key Vault with Retail Server.
+
+To create a new app registration, follow these steps.
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1. Go to the directory containing the Azure App Service hosting your Node application.
