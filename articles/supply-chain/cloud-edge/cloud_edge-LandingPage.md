@@ -120,10 +120,10 @@ Once you have been granted access to the preview program you will receive two pr
 At this point you can start configuring scale units and workloads in your preview environment using the scale unit manager portal.
 
 ### Managing cloud scale units and workloads
+Enter the scale unit manager portal and select the navigation item 
 
 ### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
 In the public preview you can create on-premises edge scale units on your custom hardware using the Local Business Data environments.
 Please find more details on [on-premises scale units in preview here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 
-### Architecture details for Cloud and Edge topologies
