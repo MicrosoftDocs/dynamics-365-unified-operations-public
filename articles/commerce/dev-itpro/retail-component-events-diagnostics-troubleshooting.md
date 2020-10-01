@@ -192,3 +192,27 @@ Button and link clicks for the following types of elements on an E-Commerce webs
 - Add to cart button
 - Checkout button
 - Place order button
+
+The schema for Click action is as follows:
+
+Click
+IPayLoad = {
+        contentCategory: Name of element clicked on,
+        contentAction:  {
+            pgname: Name of page,
+            mname: name of module,
+            etext: Text of element clicked on,
+            recid: Product ID if a product was clicked on,
+            etype: ‘click’,
+        }
+    };
+
+### Page views
+Page view events are logged for each page view operation.
+
+The schema for a Page View action is as follows: 
+
+PageView
+IPageViewInfo = {
+    title;
+}
