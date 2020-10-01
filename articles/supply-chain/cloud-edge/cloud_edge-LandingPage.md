@@ -28,11 +28,7 @@ ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: AX 10.0.15
 ---
-> [!IMPORTANT]
-> The preview for cloud and edge will become available for existing customers of Dynamics 365 Supply Chain Management during October.
->
->The Build 10.0.15 needs to be enabled for deployment in your LCS environment. We will be providing respective information on how to enable this in a private Yammer group to which we invite interested and eligible parties.
-
+ 
 # Cloud and Edge scale units for manufacturing and warehouse management workloads - public preview
 
 This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
@@ -41,8 +37,13 @@ Companies working with manufacturing and distribution must be able to execute ke
 
 ### Public preview information
 
-The Cloud & Edge preview for Dynamics 365 Supply Chain Management is made available on the condition you agree to these Preview Terms. [**LINK MISSING**]
+The Cloud & Edge preview for Dynamics 365 Supply Chain Management is made available on the condition you agree to these [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+
+> [!IMPORTANT]
+> The preview for cloud and edge scale units will become available for existing customers of Dynamics 365 Supply Chain Management during October.
 >
+>You must be part of the Early Access Program (aka PEAP) for Finance & Operations to get access to the October preview release build 10.0.15 / PU 39 for deployment in your LCS environment. You can join the PEAP program via a membership in broader  [Dynamics Insider program](https://experience.dynamics.com/insider) and then by selecting the specific program "Finance & Operations: Preview early access program (PEAP).
+
 > [!IMPORTANT]
 > In order to sign up to the Cloud & Edge preview for Dynamics 365 Supply Chain Management your organization must already have a live Dynamics 365 Supply Chain Management cloud environment.
 > The scale units capability are in public preview at the moment.
@@ -53,7 +54,7 @@ As the one signing up, your user account must be user in the specific tenant and
 >
 >Please note! Preview environments will be deleted automatically after 60 days or if they appear to not be utilized. After the preview environment has been deleted, you may sign up and queue for a new preview deployment.
 >
->Navigate here to sign up for the preview> https://SUM.DYNAMICS.COM
+>Navigate to the Scale Unit Manager portal to sign up for the preview [Scale Unit Manager portal](https://SUM.DYNAMICS.COM)
 
 > [!WARNING]
 > Please note that certain business functionality is not fully supported in the public preview when using workloads scale units. See more details in the sections that explain the functional workload details.
@@ -61,9 +62,9 @@ As the one signing up, your user account must be user in the specific tenant and
 The preview will allow you receive one environment that will function as a cloud based hub of your supply chain management environment and one environment that will function as a cloud scale unit. For the preview both environment will be hosted in a data center in northern USA.
 You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit for the the cloud hub that you have received as part of the preview program.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
-
 ## Scale units for dedicated workloads
+
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
 Scale units for supply chain management extend your central Dynamics 365 Supply Chain Management cloud hub environment with dedicated processing capacity. Scale units can run in the cloud or on the edge in your local facility premises. Scale units are always connected to the cloud hub environment and receive all information to run the dedicated processing for assigned workloads.
 
