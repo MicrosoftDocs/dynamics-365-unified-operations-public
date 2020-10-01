@@ -82,7 +82,7 @@ Within manufacturing execution, cloud and edge scale units deliver the following
 - Enable the shop floor supervisor to adjust the operational plan.
 - Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
 
-Go [here](cloud_edge-workload-manufacturing.md) for more information.
+Review the [manufacturing scale unit workload details](cloud_edge-workload-manufacturing.md) for more information.
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
@@ -94,9 +94,9 @@ For warehouse execution, cloud and edge scale units deliver the following capabi
 - Enable warehouse workers to create and execute inventory movements using the warehouse app.
 - Enable warehouse worker to register purchase orders and conduct put away using the warehouse app.
 
-Go [here](cloud_edge-workload-warehousing.md) for more information.
+Review the [warehouse scale unit workload details](cloud_edge-workload-warehousing.md) for more information.
 
-## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
+## Onboarding to using scale units for your Dynamics 365  Supply Chain Management environment
 
 ### The deployment of the preview for cloud and edge scale units
 
@@ -115,13 +115,15 @@ Click on the Sign up now! button in order to submit your LCS tenant to participa
 
 Microsoft will review your request and inform you about the next steps.  
 
-### Managing cloud scale units and workloads
+Once you have been granted access to the preview program you will receive two promo codes for your LCS project. You should now deploy two environments in LCS with these promo codes. The environments should be for the PEAP build 10.0.15. Once completed you should reply in email such that we can commence the final step to enable one of those environments to become the Cloud hub, the other a cloud scale unit in your preview deployment. We will let you know once this step is completed.
 
-Once you have been granted preview environments in the cloud and edge program  
+At this point you can start configuring scale units and workloads in your preview environment using the scale unit manager portal.
+
+### Managing cloud scale units and workloads
 
 ### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
 In the public preview you can create on-premises edge scale units on your custom hardware using the Local Business Data environments.
-Please find more details [here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
+Please find more details on [on-premises scale units in preview here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 
 ### Architecture details for Cloud and Edge topologies
