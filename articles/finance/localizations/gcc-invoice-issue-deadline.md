@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Invoice issue deadline (GCC)
+title: Invoice issue deadline (GBL)
 description: This topic provides information about how to calculate the due dates for issuing customer invoices for all countries.
 author: v-oloski
 manager: Annbe
@@ -20,7 +20,7 @@ ms.reviewer:
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: GCC
+ms.search.region: GBL
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2020-07-03
