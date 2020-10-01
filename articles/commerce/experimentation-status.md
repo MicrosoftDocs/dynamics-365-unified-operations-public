@@ -37,7 +37,7 @@ To learn where an experiment is in the lifecycle, go to the **Experiments** tab 
 In the **Commerce status** column, the following values may be displayed. 
 - **Draft** - The experiment is connected to a page or fragment in Commerce and is being edited.
 - **Published** - The experiment variations are ready to be displayed on your website. If the experiment is running in the third-party service, website users will see a variation of the page or fragment as selected by the third-party service.
-- **Unpublished** - The experiment is no longer  available on your website. Website users will only see the default version of the page or fragment even if the experiment is running in the third-party service.
+- **Unpublished** - The experiment is no longer available on your website. Website users will only see the default version of the page or fragment even if the experiment is running in the third-party service.
 - **Completed** - The experiment has run its course and a variation was promoted to live for all website users.
 
 Similarly, in the **third-party status** column, the following values may be displayed to indicate what status the experiments are in the third-party service.
