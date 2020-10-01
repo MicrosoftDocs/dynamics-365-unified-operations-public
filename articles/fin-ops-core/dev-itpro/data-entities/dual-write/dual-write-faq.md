@@ -101,7 +101,7 @@ Each linked environment-pair (Finance and Operations apps environment and Common
 + Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Common Data Service entities: **DualwriteRuntimeConfiguration**. 
     
-The environments need to be relinked and maps reactivated manually. We'll be publishing the detailed steps for this process soon and this answer will be updated with a link to the new docs article once ready.
+The environments need to be relinked and maps reactivated manually.
 
 ### I need real-time integration, and I want to move some entities or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern? 
 
