@@ -48,26 +48,28 @@ This topic describes posting types used for asset leasing transactions.
 ## Lease asset
 The account associated with the right-of-use asset. This account will be debited when initially recognizing a lease under the new standards IFRS 16 and ASC 842. This account may either be debited or credited for a modified lease, depending on whether the modification increases or decreases the lease liability.
 
-Example journal entries:
-Initial recognition
-Dr. Lease asset XXX
-Cr. Lease liability XXX
+**Example journal entries**
+**Entry**: Initial recognition **Debit**: Lease asset XXX **Credit**: Lease liability XXX
+
+|     Transaction   type       	|     Debit          	|     Credit               	|
+|------------------------------	|--------------------	|--------------------------	|
+|     Initial   recognition    	|     Lease asset    	|     Lease   liability    	|
 
 ## Lease liability
 The account associated with the lease liability arising from the discounting of payments under the new standards IFRS 16 and ASC 842. This account will be credited upon initial recognition under the new standards. This account will be debited for lease payments and credited for interest accruals.
 
-Example journal entries:
-Initial recognition
-Dr. Lease asset XXX
-Cr. Lease liability XXX
+#### Example journal entries
+Initial recognition **Debit**: Lease asset XXX **Credit**: Lease liability XXX
 
-Interest Accrual
-Dr. Interest expense XXX
-Cr. Lease liability XXX
+Interest Accrual **Debit**: Interest expense XXX **Credit**: Lease liability XXX
 
-Lease payment
-Dr. Lease liability XXX
-Cr. Vendor payable/lease payment XXX
+Lease payment **Debit**: Lease liability XXX **Credit**: Vendor payable/lease payment XXX
+
+|     Transaction   type       	|     Debit                  	|     Credit                            	|
+|------------------------------	|----------------------------	|---------------------------------------	|
+|     Initial   recognition    	|     Lease asset            	|     Lease   liability                 	|
+|     Interest accrual         	|     Interest   expense     	|     Lease liability                   	|
+|     Lease payment            	|     Lease   liability      	|     Vendor   payable/lease payment    	|
 
 ## Short-term lease liability
 The account associated with the short-term lease liability when the short-term lease liability reclass journal entry is posted. This account will be credited for the short-term liability from the amortization schedule on the last day of the month while the same amount will be debited on the first day of the next month.
