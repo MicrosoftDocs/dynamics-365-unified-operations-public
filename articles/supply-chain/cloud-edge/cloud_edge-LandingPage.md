@@ -98,10 +98,19 @@ Go [here](cloud_edge-workload-warehousing.md) for more information.
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 
-In the public preview the [Scale Unit Manager portal](https://SUM.DYNAMICS.COM) shows the list of Tenants that your account is part of and where in LCS a project exists where toy are owner or environment admin.
+### The deployment of the preview for cloud and edge scale units
+
+The following diagram shows the sign-up and provisioning flow for the public preview of cloud and edge scale units.
+:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Diagram of the preview sign-up steps":::
+
+### Selecting your LCS project tenant and the detailed preview process
+
+In the public preview the [Scale Unit Manager portal](https://SUM.DYNAMICS.COM) shows the list of Tenants that your account is part of and you are and owner or environment admin in the in a LCS project.
+You will also see the sign-up status for each tenant.
+
 :::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::
 
-You can use the Sign up her and provide your business email for further communication.
+Click on the Sign up now! button in order to submit your LCS tenant to participate in the preview. You need to accept the terms and supply your business email address for further communication in regards to the preview signup process.
 :::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::  
 
 Microsoft will review your request and inform you about the next steps.  
@@ -116,6 +125,3 @@ In the public preview you can create on-premises edge scale units on your custom
 Please find more details [here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 
 ### Architecture details for Cloud and Edge topologies
-
-### Monitoring and troubleshooting data synchronization
- 
