@@ -216,3 +216,79 @@ PageView
 IPageViewInfo = {
     title;
 }
+
+### Cart operations
+The following Cart related events are logged
+
+- Add item to cart
+- Update item in cart
+- Remove item from cart
+- Checkout
+- Product Page view
+
+The schema for Cart events is as follows:
+
+/***
+ * Defines the telemetry properties to track for a Cart object
+ * @property products       {IProductInfo[]}    - Array of product information
+ * @property orderId        {string}            - ID for the order
+ * @property cartId         {string}            - ID for the current cart object
+ * @property cartVersion    {string}            - Version number for the current cart object
+ */
+export interface ICartInfo {
+    products: IProductInfo[];
+    orderId: string;
+    cartId: string;
+    cartVersion: string;
+}
+
+### Purchase
+When an order is submitted, a Purchase event is logged. The schema for a Purchase event is as follows:
+
+/***
+ * Defines the telemetry properties to track for a Purchase event
+ * @property id            {string}         - Transaction ID
+ * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
+ * @property revenue       {number}         - Revenue from this transaction
+ * @property tax           {number}         - Tax amount
+ * @property shippingCost  {number}         - Shipping cost
+ * @property products      {IProductInfo[]} - List of products in this transaction
+ */
+export interface IProductTransaction {
+    id: string;
+    affiliation?: string;
+    revenue?: number;
+    tax?: number;
+    shippingCost?: number;
+    products?: IProductInfo[];
+}
+
+
+### Product details
+Product details are logged for Cart and Purchase operations. The schema for Product details is as follows:
+
+/***
+ * Defines the telemetry properties to track for a Product object
+ * @property productChannelId       {string}   - Product channel ID
+ * @property productChannelName     {string}   - Product channel name
+ * @property productCategoryId      {string}   - Product category ID
+ * @property productCategoryName    {string}   - Product category name
+ * @property productId              {string}   - Product ID
+ * @property productName            {string}   - Product name
+ * @property productSku             {string}   - Product SKU
+ * @property productPrice           {string}   - Product price
+ * @property productQuantity        {string}   - Product quantity
+ * @property productCurrency        {string}   - Product currency code
+ */
+export interface IProductInfo {
+    productChannelId: string;
+    productChannelName: string;
+    productCategoryId: string;
+    productCategoryName: string;
+    productId: string;
+    productName: string;
+    productSku: string;
+    productPrice: string;
+    productQuantity: string;
+    productCurrency: string;
+}
