@@ -183,13 +183,13 @@ If you're having trouble signing into or using the Human Resources Teams app, tr
 
 ### Can't sign into the Human Resources app in Teams
 
-If you can't sign into the app, contact your system administrator. Your system administrator will need to verify that you have an associated record in Human Resources.
+If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
 If you receive an error when you're trying to approve leave requests in the Teams app, perform the following troubleshooting steps:
 
-1. Verify that the Teams account is the same one you use for accessing Human Resources.
+1. Verify that the account you're using to sign into Microsoft Teams is the same one you use for accessing Dynamics 365 Human Resources.
 
 2. Verify that you're a valid approver for the request by checking the workflow settings for leave approval. For more information about leave request workflows, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
 

@@ -102,7 +102,7 @@ If a user is having trouble signing into or using the Human Resources Teams app,
 
 ### Can't sign into the Human Resources app in Teams
 
-If a user contacts you because they can't sign into the app, verify that the user has an associated record in Human Resources.
+If a user contacts you because they can't sign into the app, verify that the user has an associated employee record in Human Resources.
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
