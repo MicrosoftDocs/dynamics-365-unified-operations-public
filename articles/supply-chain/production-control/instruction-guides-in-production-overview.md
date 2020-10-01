@@ -6,7 +6,7 @@ description: This topic explains how to integrate the production management modu
  
 author: cabeln
 manager: sorenand
-ms.date: 29/09/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,13 +57,13 @@ You can attach guides to various aspects of production control including:
 > [!NOTE]
 > You can also attach Guides with Asset Management. For more information about that option, see [Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
 
-When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#resolving-logic-for-guides) on the job card. When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and starts showing the required instructions.
+When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#logic) on the job card. When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and starts showing the required instructions.
 
 The following subsections describe a few selected scenarios where companies across industries can see the biggest value when using Guides to present instructions for manufacturing.
 
 ### Assembly
 
-[![Assembly](./media/instruction-guides-hero-assembly.png)](./media/work-guides-hero-assembly.png)
+![Use Guides in assembly tasks](media/instruction-guides-hero-assembly.png "Use Guides in service tasks")
 
 Instructions in assembly operations show workers the tools and parts they need and how to use them in real work situations.
 
@@ -107,7 +107,7 @@ To enable instructions in production processes, Supply Chain Management provides
 
 To use this feature, your system must include the following:
 
-- [Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/) version 10.0.13 or later.
+- [Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/) version 10.0.15 or later.
 - [Dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management apps.
 - [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
 
@@ -189,7 +189,7 @@ To add a Guide to a resource group:
 
 ## <a name="released-products"></a>Associate a Guide to a released product
 
-You can add a guide to any [released product](../pim/tasks/create-released-product-single-company).
+You can add a guide to any [released product](../pim/tasks/create-released-product-single-company.md).
 
 ### Typical scenario using released products
 
@@ -394,7 +394,7 @@ Then put on a HoloLens and access the respective guide by glancing at the QR cod
 
 ![QR code to access guides using a HoloLens](media/instruction-guides-Shopfloor2.png "QR code to access guides using a HoloLens")
 
-## Resolving the logic for selecting Guides
+## <a name="logic"></a>Resolving the logic for selecting Guides
 
 You can add Guides to the following production data:
 
