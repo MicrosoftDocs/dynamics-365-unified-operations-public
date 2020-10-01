@@ -37,7 +37,7 @@ This topic covers the site selector module and describes how to add it to site p
 
 ## Overview
 
-When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and choose their preferred shopping site. To accomodate this scenario, the site selector module allows a user to browse across multiple sites.
+When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and to choose their preferred shopping site. To accomodate this scenario, the site selector module allows a user to browse across multiple sites.
 
 The site selector module must be configured with the list of sites (market or region or locales) that site users can browse. 
 
@@ -52,14 +52,18 @@ The following example image shows a site selector module featured on the header 
 | Property name             | Value                 | Description |
 |---------------------------|-----------------------|-------------|
 | Heading | Text | The heading for the module. |
-| Site options | Name, Image, URL | For each site that you want to include provide a name, a link to the site home page and an optional image to be displayed. The image can be a flag or some represention of a market, region, locale.|
+| Site options | Name, Image, URL | This property specifies a name, a link to the site home page, and an optional image to be displayed for each site to be included in the module. The image can be a flag or some represention of a market, region, locale.|
 
-## Add a Site selector module to a page
+## Add a site selector module to a page
 
-The site selector module can be added to the [Header module](author-header-module.md) under the site selector slot. Once added, you can define a heading and the site options. 
+The site selector module can be added to the [Header module](author-header-module.md) under the site selector slot. Once added, you can define the module heading and site options. 
 
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
 
 [Header module](author-header-module.md)
+
+[Breadcrumb module](add-breadcrumb.md)
+
+[Navigation menu module](nav-menu-module.md)
