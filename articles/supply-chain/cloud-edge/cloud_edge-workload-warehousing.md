@@ -109,6 +109,7 @@ Additional limitation details within the supported processes at edge scale units
 - Integration to production is not supported
 - Catch weight item processing is not supported
 - Over- under delivery processing is not supported
+- Negative inventory on-hand processing is not supported
  
 ### Outbound (Only support for sales orders and demand replenishment)
 >[!Warning]
