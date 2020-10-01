@@ -102,6 +102,19 @@ For every module, a class name is defined that matches the module name. In this 
 
 Custom themes can be created by using the Dynamics 365 Commerce online SDK. They can then be stored in the **/src/themes/** folder. For more information, see [Create a theme](create-theme.md).
 
+## RTL and LTR support within a theme
+
+You may have need to support both RTL (right to left) and LTR (left to right) languages on your e-Commerce site.  Themes support the ability to specify different RTL and/or LTR SCSS files.  Each theme has a ```styles/THEME_NAME.theme.scss``` file, for example using the ```yarn msdyn365 add-theme spring``` [CLI command](cli-command-reference.md) to create a new theme called "spring" will create a file ```\src\themes\spring\styles\spring.theme.scss``` which contains the SCSS for the theme.  The SCSS files get compiled to CSS files (when using the ```yarn start``` or ```yarn pack``` commands) and used when pages are rendered.  To support specific RTL or LTR versions of the SCSS file, you can provide additional file(s) using the following file naming convention: "THEME_NAME.rtl.theme.scss" for RTL support and "THEME_NAME.ltr.theme.scss" for LTR support.  When a page renders the appropriate CSS file will be chosen for the given language setting.  If you only support need support for a single language, you can just leverage the default THEME_NAME.theme.scss file.
+
+### RTL and LRT best practices
+Since the CSS in LTR and RTL layouts generally are the same except for a few properties, those properties can be set in their respective “theme” files and then a "base-style" file can be created that can be shared (and imported) by both the RTL an LTR SCSS files.
+
+Example
+* THEME_NAME-ltr.theme.scss - Contains specific properties for the LTR layout
+* THEME_NAME-rtl.theme.scss - Contains specific properties for the RTL layout
+* base-style.scss - Contains shared styles and is imported in above two files
+
+
 ## Additional resources
 
 [Create a new theme](create-theme.md)
