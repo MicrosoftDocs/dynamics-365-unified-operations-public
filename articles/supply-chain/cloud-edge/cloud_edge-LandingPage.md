@@ -28,6 +28,10 @@ ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: AX 10.0.15
 ---
+> [!IMPORTANT]
+> The preview for cloud and edge will become available for existing customers of Dynamics 365 Supply Chain Management during October.
+>
+>The Build 10.0.15 needs to be enabled for deployment in your LCS environment. We will be providing respective information on how to enable this in a private Yammer group to which we invite interested and eligible parties.
 
 # Cloud and Edge scale units for manufacturing and warehouse management workloads - public preview
 
@@ -45,17 +49,17 @@ The Cloud & Edge preview for Dynamics 365 Supply Chain Management is made availa
 As the one signing up, your user account must be user in the specific tenant and also a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
 >
 > When you  sign up for the preview, you will select the tenant and go through the sign up steps. As soon as a preview capacity can be allocated an email will be sent with provisioning details and the promotion codes for two environments (a cloud hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environment as Tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code.
->After confirmation to Microsoft, the one of the environments will be configured to function as cloud hub the other as a scale unit. You can then configure the scale units and deploy select Warehouse management an manufacturing workloads using the Scale Unit Manager portal.
+>After confirmation to Microsoft, the one of the environments will be configured to function as cloud hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management an manufacturing workloads using the [Scale Unit Manager portal](https://SUM.DYNAMICS.COM).
 >
->Please note! Preview environments will be deleted automatically after 60 days. After the preview environment has been deleted, you may sign up and queue for a new preview deployment.
+>Please note! Preview environments will be deleted automatically after 60 days or if they appear to not be utilized. After the preview environment has been deleted, you may sign up and queue for a new preview deployment.
 >
 >Navigate here to sign up for the preview> https://SUM.DYNAMICS.COM
 
 > [!WARNING]
-> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units.  
+> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units. See more details in the sections that explain the functional workload details.
 
 The preview will allow you receive one environment that will function as a cloud based hub of your supply chain management environment and one environment that will function as a cloud scale unit. For the preview both environment will be hosted in a data center in northern USA.
-You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit to the cloud hub that you have received as part of the preview program. 
+You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit for the the cloud hub that you have received as part of the preview program.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
@@ -93,7 +97,17 @@ Go [here](cloud_edge-workload-warehousing.md) for more information.
 
 ## Onboarding to to using scale units for your Dynamics 365  Supply Chain Management environment
 
+In the public preview the [Scale Unit Manager portal](https://SUM.DYNAMICS.COM) shows the list of Tenants that your account is part of and where in LCS a project exists where toy are owner or environment admin.
+:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::
+
+You can use the Sign up her and provide your business email for further communication.
+:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::  
+
+Microsoft will review your request and inform you about the next steps.  
+
 ### Managing cloud scale units and workloads
+
+Once you have been granted preview environments in the cloud and edge program  
 
 ### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
@@ -103,3 +117,4 @@ Please find more details [here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
 ### Architecture details for Cloud and Edge topologies
 
 ### Monitoring and troubleshooting data synchronization
+ 
