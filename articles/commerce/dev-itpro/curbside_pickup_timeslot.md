@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create and update timeslots for 'Pickup' delivery mode(s)
+title: Create and update timeslots for 'Pickup' delivery mode(s).
 description: This topic describes how to create and update 'Timeslots' in Commerce Headquarters and enable them for the 'Pickup' delivery mode(s).
 author: josaw1
 manager: AnnBe
-ms.date: 9/20/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,83 +35,89 @@ ms.dyn365.ops.version: Retail 10.0.15 update
 
 ## Overview
 
-The time-slot feature provides a way for retailers to define a time slot for items that have pickup delivery mode(s). A time slot allows the retailer to define what days/times orders can be picked up from a store. In addition, they can also define the number of orders that can be picked up in a given window.  This way a retailer can limit  the number of orders to be picked up at a given time/day which in-turn allows them to  provide a quality experience for their customers. 
+The timeslot feature provides a way for retailers to define a time slot for items that have pickup delivery mode(s). A timeslot allows the retailer to define what days and times orders can be picked up from a store. In addition, they can also define the number of orders that can be picked up in a given time window. This way a retailer can limit  the number of orders that can be picked up at a given day and time, which results in a better quality experience for their customers. 
 
-This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
+> [!NOTE] 
+> This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
-Below is an example of time slot selection during ecommerce checkout
-![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG "eCommerce Timeslot Pickup")
+The following image shows an example of timeslot selection during e-Commerce checkout.
+![Example of timeslot selection during e-Commerce checkout](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
-## Time slots 
+## Timeslots 
 
-Timeslot is a specific interval of time, where the customer can choose to pickup their order from a specific store/location. This time slot management is only available available to the 'Pickup' mode of delivery in Dynamics 365 Commerce.
+A timeslot is a specific interval of time when a customer can choose to pick up their order from a specific store or location. This timeslot management feature is only available using the "Pickup" mode of delivery in Dynamics 365 Commerce.
 
-A timeslot can be defined using the following properties
+A timeslot can be defined using the following properties:
 
-**Mode of delivery**: This is the Pickup mode of delivery for which the timeslot applies to. 
+**Mode of delivery**: This is the pickup mode of delivery that the timeslot applies to. 
 
-**Minimum and Maximum**: This is the earliest and farthest days that can be selected for pickup relative to the day in which the order is placed.  Minimum ensures there is enough time for the retailer to process the order before its ready for pickup.  Maximum ensures the user cannot pick a date that is too far into the future. E.g. With a minimum=1, if the order is being placed on 9/20/2020 it means the earliest day available for pickup will be the next eligible day i.e 9/21/2020. Similarly, you can also define a Maximum. With Minimum and Maximum defined, a user can only see and pick a certain set of days on their checkout experience.  Both numbers can be expressed in decimals E.g. 0.8 implies in 4hours.
+**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Number values can also be expressed in decimals (for example...).
 
-**Start & End Date**: Each time slot entry has a start and end date for which the timeslots are applicable. This provides the flexibility to add different time slots through the year E.g. Fall vs Christmas hours. Once an order is already placed changing the start and end date on the timeslots will not apply to the existing order. When defining Start and End dates, you have to take into account store closure dates E.g. Christmas day, and ensure a timeslot is not defined for these days.
+**Start and end date**: Each timeslot entry has a start and end date. This provides the flexibility to add different timeslots throughout the year (for example, holiday hours). Once an order is placed, changing the start and end date on the timeslots will not apply to the existing order. When defining start and end dates, you must take into account store closure dates (for example, Christmas day), and ensure that a timeslot is not defined for these days.
 
-**Active hours of pickup**: This defines the time period between which the pickup is allowed. E.g. You can define the pickup times to be 2pm to 5pm everyday. This allows the pickup times to be independent of store hours and allows a retailer to configure it per their business needs. When defining activing hours of pickup, you need to ensure store hours are taken into account and pickup time is not defined during store closure.
+**Active hours of pickup**: This defines the time period withing which pickup is allowed (for example, you can define the pickup times to be between 2 PM and 5 PM every day). This allows the pickup times to be independent of store hours and allows a retailer to configure them for their specific business needs. When defining the active hours of pickup, you must ensure that store hours are taken into account and that pickup time is not defined for when the store is closed.
 
-**Time Interval**: This defines the time duration that can be alotted for each timeslot. E.g. it could be in increments of 15 mins, 30 mins,  1 hour etc.. 
+**Time interval**: This defines the time duration that can be allotted for each timeslot (for example, the time duration of each timeslot could be in increments of 15 minutes, 30 minutes, 1 hour, or some other duration). 
 
-**Slots per interval**: This defines the number of orders that can be served in each time interval. E.g.  1, 2, 3 or any whole number. This allows the retailer to define how many customers/orders they want to serve for pickup within a given time interval.
+**Slots per interval**: This defines the number of orders that can be served in each time interval (for example, 1, 2, 3, or any whole number). This allows the retailer to define how many customers or orders they want to serve for pickup within a given time interval.
 
-**Active Days**: This defines the days during which the pick up time slots are active. E.g. Mon, Tue, Wed, Sun etc. This allows the retailer to define days when then want to support pickup orders.
+**Active days**: This defines the days during which the pick up timeslots are active (for example, Monday, Tuesday, Wednesday, Sunday, etc.). This allows retailers to define the days they want to support pickup orders.
 
-**Retail channel**: Each timeslot can be associated to one or more retail stores.  Depending on each stores operational hours, one or more timeslot entries can be created and associated to a channel. 
+**Retail channel**: Each timeslot can be associated with one or more retail stores. Depending on each store's hours of operation, one or more timeslot entries can be created and associated with a channel. 
 
-![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG "HQ Timeslot overview")
+![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG)
 
-Only a single Timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
+Only a single timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
 If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. 
 
+## Configure the timeslot feature in Commerce headquarters
 
-## Configuring Timeslot in Headquarters
+Timeslots must be defined in Commerce headquarters for each pickup mode of delivery so that point of sale (POS) and e-Commerce channels can reference them.
 
-Timeslot must be defined in Headquarters for the respective pickup mode of delivery for POS and e-commerce channels to leverage it.
+To configure the timeslot feature in Commerce headquarters, follow these steps.
 
 1. Go to **Commerce** \> **Channel Setup** \> **Timeslot management**.
-2. Select **New** to create a new Timeslot template & provide a *ID* and *Description*. To use an existing template, select the template in the left pane.
-3. In the **Time settings** TAB, click *Add* to open a slider control and define the date range, Time period, Time slot durartion, active days etc...
+1. Select **New** to create a new timeslot template. To use an existing template, select the template in the left navigation pane.
+1. Enter an **ID** and **Description**.
+1. On the **Time settings** tab, select **Add** to open a slider control to define the date range, time period, time slot duration, active days, and other settings.
 
-    - If Timeslots are going to be as-is for long time, leave the **End date** field 'BLANK'.
-    - If the Timeslots in a day are going to vary - create additional entries on the **Time settings** TAB - ensure that the date and times do not overlap. 
+    - If timeslots are going to be static for the forseeable future, leave **End date** blank.
+    - If the timeslots in a day are going to vary, create additional entries on the **Time settings** tab to ensure that the dates and times do not overlap. 
 
     > [!NOTE]
-    > You can create multiple templates, but only one template can be associated with a single channel/store. 
+    > You can create multiple templates, but only one template can be associated with a single channel or store. 
 
     ![Add Time Settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG "Add Time Settings dialog box")
 
-4. Associate the 'Timeslot' template with the stores/channels where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
+1. Associate the 'Timeslot' template with the stores/channels where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
 
     - Only one 'Timeslot' template can be associated with each store/channel.
     - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the POS for reference.
 
     ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG "HQ Timeslot overview")
 
-5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to sync the data to the channels.
+1. On the **Distribution schedule** page, run the **1070** and **1090** jobs to sync the data to the channels.
 
 ## Timeslot selection on POS orders 
+
 In POS, when an order / order line is identified for 'Pickup',  Cashier can select the 'Pickup' store/location and choose a date and timeslot.
 
 Below is an example of time slot selection in a POS order
 ![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png "POS Timeslot Pickup")
 
 ## Timeslot selection on eCommerce orders 
+
 To enable timeslot selection on an e-commerce order, see Pickup information module for details. 
 
-[!NOTE]
->An e-commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
+> [!NOTE]
+> An e-Commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
 
-Below is an example of e-commerce order with timeslot information selected for pickup
-![eCommerce Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG "eCommerce Timeslot Pickup")
+The following image shows an example of an e-Commerce order with timeslot information selected for pickup.
+![Example of an e-Commerce order with timeslot information selected for pickup](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG "eCommerce Timeslot Pickup")
 
 ## Additional resources
+
 [Checkout pickup information](checkout-pickupinfo.md)
 
 
