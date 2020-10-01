@@ -74,7 +74,7 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 }
 ...
 ```
-The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of October 2nd, 2020.
+The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **October 2nd, 2020**.
 
 | Commerce Scale Unit version | Maximum SSK version |
 | --------------- | --------------- |
