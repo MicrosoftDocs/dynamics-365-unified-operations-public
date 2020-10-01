@@ -5,7 +5,7 @@ title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
 manager: annbe
-ms.date: 09/30/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -91,9 +91,8 @@ The following example image highlights the **Client ID** value on the Azure Port
 
 To add your Node application details into Retail Server's authentication allow list, follow these steps.
 
-1. In Commerce headquarters, navigate to **Retail Server**.
-1.	Go to **Commerce Shared Parameters**.
-1.	Select the **Identity Providers** tab, you will see a pane displaying 3 grids.
+1. In Commerce headquarters, go to **Commerce Shared Parameters**.
+1.	Select the **Identity Providers** tab.
 1.	In the first section named **IDENTITY PROVIDERS**, select **Add**.
 1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID.
 1. For **Name**, enter **Azure AD**.
@@ -121,10 +120,10 @@ First you will need to create a new **App Registration** under **Azure Active Di
 1. In the left navigation pane, select **App registrations**.
 1. Select **New registration** and then enter a name (for example, "RetailServer").
 1. In the overview panel, copy and save the **Application (client) ID** value for later use.
-1. Select **Certificates & secrets**, and then select **New client secret**. 
-1. For **Description**, add a description (for example, "retail-server-secret"). 
-1. For **Expires**, select **Never**.
-1. In the **Value** box, copy the secret value and store it safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
+1. Select **Certificates & secrets**, and then under **Client secrets** select **New client secret**. 
+1. In the **Add a client secret** dialog box, enter a description under **Description** (for example, "retail-server-secret"). 
+1. Under **Expires**, select **Never**, and then select **OK**.
+1. On the **Certificates & secrets** page, copy the secret value In the **Value** box of your new client secret and store it safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
 
     ![App registration](media/key-vault-03.png)
  
@@ -155,7 +154,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 
 ## Access secret values within your e-Commerce Node application
 
-Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in your `RequestContext` under `requestContext.apiSettings.baseUrl` which is accessed through action context in actions and `props.context` in modules.
+Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
