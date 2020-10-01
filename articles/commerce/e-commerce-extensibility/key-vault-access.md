@@ -38,7 +38,7 @@ This topic describes how to set up Azure Key Vault to provide secure key managem
 
 Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
-The instructions below provide the details on how to create a Key Vault to securely store sensitive information, how to configure your e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault, and how to access secret values from within your e-Commerce components.
+The following instructions show how to create a Key Vault to securely store sensitive information, how to configure your e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault, and how to access secret values from within your e-Commerce components.
 
 ## Create a Key Vault to store application secrets
 
@@ -52,7 +52,7 @@ To create a new Key Vault, follow these steps.
 1.	Select the subscription and resource group you would like this Key Vault to be a part of.
 1.	Enter a name, region, and pricing tier for your Key Vault.
 1.	Select **Next**, and then create access policies and assign permissions to users. Leave all other settings as is.
-1.	Select **Review + create**. and then  .
+1.	Select **Review + create**.
 1.	After you have reviewed the configuration, select **Create** and then wait for the deployment to complete.
 1.	After the Key Vault has successfully been deployed, you can add any secrets under **Secrets**.
 
@@ -60,9 +60,9 @@ To create a new Key Vault, follow these steps.
 
 Next, the e-Commerce Node application needs to be configured to securely communicate with Retail Server.
 
-For the next steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
+For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
 
-### Find your tenant ID
+### Find and copy your tenant ID
 
 To find your tenant ID, follow these steps.
 
@@ -72,7 +72,7 @@ To find your tenant ID, follow these steps.
 1.	In the left navigation pane, select **Properties**.
 1.	Find and copy the **Tenant ID**.
 
-### Find the client ID of the managed identity for your Node application
+### Find and copy the client ID of the managed identity for your Node application
 
 To find the client ID of the managed identity for your Node application, follow these steps.
 
@@ -95,30 +95,30 @@ To add your Node application details into Retail Server's authentication allow l
 1.	Select the **Identity Providers** tab.
 1.	In the first section named **IDENTITY PROVIDERS**, select **Add**.
 1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID.
-1. For **Name**, enter **Azure AD**.
-1. For **Type**, enter **Active Directory**.
+1. For **Name**, enter "Azure AD".
+1. For **Type**, enter "Active Directory".
 1.	In the second section named **RELYING PARTIES**, add an entry with the client ID of your managed identity. 
 1. For **Type**, select **Confidential**.
 1. For **UserType**, select **Application**.
 1. Provide a name for your Node application.
 1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
-You should now have a configuration similar to the the following image.
+You should now have a configuration similar to that seen in the following example image.
 ![Retail Server authentication allow list](media/key-vault-02.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
 
 ## Add Key Vault details to Retail Server
 
-Follow the below steps to configure Retail Server to securely communicate with your Key Vault.
+Next, you will configure Retail Server to securely communicate with your Key Vault. You will first need to create a new **App Registration** under **Azure Active Directory** to represent your Retail Server so that you can register your Key Vault with Retail Server.
 
-First you will need to create a new **App Registration** under **Azure Active Directory** to represent your Retail Server so you can register your Key Vault with Retail Server.
+### Create a new app registration and add a client secret
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1. Go to the directory containing the Azure App Service hosting your Node application.
 1.	Go to **Azure Active Directory**.
 1. In the left navigation pane, select **App registrations**.
-1. Select **New registration** and then enter a name (for example, "RetailServer").
+1. Select **New registration**, and then enter a name (for example, "RetailServer").
 1. In the overview panel, copy and save the **Application (client) ID** value for later use.
 1. Select **Certificates & secrets**, and then under **Client secrets** select **New client secret**. 
 1. In the **Add a client secret** dialog box, enter a description under **Description** (for example, "retail-server-secret"). 
@@ -129,22 +129,25 @@ First you will need to create a new **App Registration** under **Azure Active Di
  
  > [!NOTE]
  > You will only have once chance to copy the secret value so it's important to do so now.
+ 
+ ### Add an access policy in your Key Vault
 
 Next, to add an access policy in your Key Vault, follow these steps.
 
 1. Go to your Key Vault.
 1. Select **Access policies**, and then select **Add Access Policy**.
 1.	For the first option, select **Key**, **Secret**, and **Certificate Management**.
-1. For **select principal**, search for and select the app you registered earlier(for example, "RetailServer").
+1. For **Select principal**, search for and select the app you registered earlier (for example, "RetailServer").
 1. Leave **Authorized application** blank.
 1. Select **Save**.
 
+### Add the Key Vault details in Retail Server
+
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
-1.	In Commerce headquarters, navigate to **Retail Server**.
-1.	Go to **Key Vault parameters**. 
-1.	Select **New** and enter a name to represent your Key Vault.
-1.	Enter the **Key Vault URL**. This is the **Vault URI** value on your Key Vault's Overview page. 
+1.	In Commerce headquarters, go to **Key Vault parameters**. 
+1.	Select **New**, and then enter a name to represent your Key Vault.
+1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
 1. Enter the **Key Vault secret key**. This is the secret value saved from the app registration process.
 1.	Add the secrets you want to access from Retail Server. For example, if the secret name is "retail-server-test-secret", add "retail-server-test-secret" as the **Name**, and "vault:///retail-server-test-secret" as the **Secret**. The **Secret type** should be set to **Manual**.
@@ -154,7 +157,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 
 ## Access secret values within your e-Commerce Node application
 
-Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the following interface. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
+Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -183,7 +186,7 @@ const secretValue: ISecretValue | undefined = await msdyn365Commerce.secretManag
 
 Note that `secretManager` is a nullable property on msdyn365Commerce, since the `SecretManager` class can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If the `secretManager` property is undefined, it means that the code is running in the context of a browser (client-side). 
 
-What this means practically for you as a developer is that you should only use the `SecretManager` class on code that is guaranteed to run server-side (e.g. data-actions that will run only on server-side), since you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server and client side), it is important to include a fallback option if the `secretManager` property happens to be undefined.
+What this means practically for you as a developer is that you should only use the `SecretManager` class on code that is guaranteed to run server-side (for example, data actions that will run only on server-side), since you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server-side and client-side), it is important to include a fallback option if the `secretManager` property happens to be undefined.
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
