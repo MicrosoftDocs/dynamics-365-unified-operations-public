@@ -59,3 +59,9 @@ This is working as expected. Margins are only considered during master planning,
 
 To get the desired result, the margin can be removed and the route must be updated to include the desired time e.g. as queue time. This way both master planning and manual scheduling should provide the same result.
 
+##  Planned orders are generated despite having items in stock and Production orders already exist for the items
+A potential way to resolve this could be setting the Positive days on the coverage group, since this will determine if onhand can be used for the demand. Then new planned order will not be generated for the items that are in stock.
+
+
+
+
