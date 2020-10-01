@@ -101,7 +101,7 @@ Each linked environment-pair (Finance and Operations apps environment and Common
 + Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Common Data Service entities: **DualwriteRuntimeConfiguration**. 
     
-The environments need to be relinked and maps reactivated manually. We'll be publishing the detailed steps for this process soon and this answer will be updated with a link to the new docs article once ready.
+The environments need to be relinked and maps reactivated manually.
 
 ### I need real-time integration, and I want to move some entities or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern? 
 
@@ -117,7 +117,7 @@ Yes. You can use both [computed fields and virtual fields](https://docs.microsof
 
 ### When I use the Common Data Service offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Common Data Service environment and the Finance and Operations environment?
 
-You can interact with Common Data Service data offline when using the Dynamics 365 for phones app or the Field Service Mobile app in offline mode. In both cases, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Common Data Service will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the Finance and Operations environment when the mapping is up and running again. 
+You can interact with Common Data Service data offline when using the [Dynamics 365 for phones app](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](https://docs.microsoft.com/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Common Data Service will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the Finance and Operations environment when the mapping is up and running again. 
 
 ## Mapping concepts between apps
 
