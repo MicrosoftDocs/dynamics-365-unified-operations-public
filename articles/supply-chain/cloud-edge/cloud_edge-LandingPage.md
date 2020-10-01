@@ -62,13 +62,17 @@ As the one signing up, your user account must be user in the specific tenant and
 The preview will allow you receive one environment that will function as a cloud based hub of your supply chain management environment and one environment that will function as a cloud scale unit. For the preview both environment will be hosted in a data center in northern USA.
 You will also have the possibility to configure an on-premise environment using LBD and configure this as an edge scale unit for the the cloud hub that you have received as part of the preview program.
 
-## Scale units for dedicated workloads
+## Scale units and dedicated workloads in public preview
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
 Scale units for supply chain management extend your central Dynamics 365 Supply Chain Management cloud hub environment with dedicated processing capacity. Scale units can run in the cloud or on the edge in your local facility premises. Scale units are always connected to the cloud hub environment and receive all information to run the dedicated processing for assigned workloads.
 
-A workload is a defined set of business functionality that can be factored out and delegated to a scale unit. As of today two types of workloads are supported:
+:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Scale unit options with public preview ":::
+
+With the public preview we offer participants to experience configurations of a cloud hub environment with selected workloads on a cloud scale unit which can be configured using the Scale Unit Manager portal. Preview participants who have access to a LBD (Local Business Data) on-premises environment can configure such as an edge scale unit.  
+
+The preview features two kinds of workloads of which one of each may be assigned per scale unit. A workload is a defined set of business functionality that can be factored out and delegated to a scale unit. As of today two types of workloads are supported:
 
 - Manufacturing execution
 - Warehouse management
@@ -126,4 +130,3 @@ Enter the scale unit manager portal and select the navigation item
   
 In the public preview you can create on-premises edge scale units on your custom hardware using the Local Business Data environments.
 Please find more details on [on-premises scale units in preview here](cloud_edge-EdgeScaleUnitsUsingLBD.md).
-
