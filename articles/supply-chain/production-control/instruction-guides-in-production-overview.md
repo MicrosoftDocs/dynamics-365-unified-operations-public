@@ -3,9 +3,8 @@
 
 title: Provide mixed-reality Guides for workers in production
 description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides to help production workers complete tasks in assembly, quality assurance, safety, and certification-related procedures.
- 
 author: cabeln
-manager: sorenand
+manager: tfehr
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
