@@ -40,7 +40,7 @@ The toolkit is available in the LCS Shared Asset Library under the **Models** se
 The toolkit contains the following primary components:
 
 - **Sqlpackage.exe** - This tool is used to perform extract and publish actions against Microsoft Azure SQL databases, as well as SQL Server databases hosted on Tier1 DevTest environments.  
-- **PowerShell 7.0** - This is a self-contained version of Powershell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
+- **PowerShell 7.0** - This is a self-contained version of PowerShell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
 - **PowerShell script** - There are several scripts included to provide an enhanced and more automated experience for scenarios such as AX 2012 data upgrade.
 
 ## Supported scenarios
@@ -56,12 +56,4 @@ The toolkit currently supports the following scenarios. More will be added over 
 | :------ | :------ |
 | Initial | Toolkit uploaded to LCS Shared Asset Library.|
 
-#### Fixes
-| Fix | Details |
-| :------ | :------ | 
-| N/A | Not applicable  | 
 
-#### Known Issues
-| Issue | Details |
-| :------ | :------ |
-| N/A | Not applicable | 
