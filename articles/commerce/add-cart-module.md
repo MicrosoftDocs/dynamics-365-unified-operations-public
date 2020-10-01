@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -71,8 +71,8 @@ The following cart module settings can be configured at **Site Settings \> Exten
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. The route can be configured at the site level, allowing retailers to take the customer back to the home page or any other page on the site.
 
->[!IMPORTANT]
-> Beginning Dynamics 365 Commerce 10.0.14 release, items in cart will be aggregated based on the settings defined in the Online functionality profile for the online store in Headquarters. For more information, see how to create an [Online functionality profile](online-functionality-profile.md) and set the properties necessary for aggregation.
+> [!IMPORTANT]
+> Beginning with the Dynamics 365 Commerce 10.0.14 release, items in the cart will be aggregated based on the settings defined in the online functionality profile for the online store in COmmerce headquarters. For more information how to create an online functionality profile and set the properties necessary for aggregation, see [Create an online functionality profile](online-functionality-profile.md).
 
 ## Commerce Scale Unit interaction
 
@@ -118,4 +118,4 @@ To add a cart module to a new page and set the required properties, follow these
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
-[Online functionality profile](online-functionality-profile.md)
+[Create an online functionality profile](online-functionality-profile.md)
