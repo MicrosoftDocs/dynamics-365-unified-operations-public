@@ -42,7 +42,7 @@ The following instructions show how to create a Key Vault to securely store sens
 
 ## Create a Key Vault to store application secrets
 
-The first step is to to create a new Key Vault to store application secrets. You will need an Azure account to access Azure Key Vault.
+The first step is to create a new Key Vault to store application secrets. You will need an Azure account to access Azure Key Vault.
 
 To create a new Key Vault, follow these steps.
 
@@ -103,7 +103,7 @@ To add your Node application details into Retail Server's authentication allow l
 1. Provide a name for your Node application.
 1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
-You should now have a configuration similar to that seen in the following example image.
+You should now have a configuration similar to the one in the following example image.
 ![Retail Server authentication allow list](media/key-vault-02.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
@@ -157,7 +157,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 
 ## Access secret values within your e-Commerce Node application
 
-Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Note that along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
+Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -192,12 +192,12 @@ If the request to fetch the secret value fails, the error property will be set. 
 
 ## Local development
 
-Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file. In here you can configure secretKeys and secretValues that will only be used when developing locally.
+Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
 
 > [!NOTE]
 > Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
 
-The following is an example of a "secrets/secrets.json" file:
+The following example shows the contents of a "secrets/secrets.json" file:
 
 ```json
 {
