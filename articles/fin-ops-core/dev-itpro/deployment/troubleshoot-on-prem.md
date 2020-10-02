@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1497,7 +1497,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
    at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
 ```
 
-**Reason:** This issue occurs because the SQL account used by Dynamics 365 for Finance and Operations does not have sufficient permissions to execute the operation.
+**Reason:** This issue occurs because the SQL account used by Finance and Operations apps does not have sufficient permissions to execute the operation.
 
 **Resolution:** Execute the following command in your SQL Server:
 
