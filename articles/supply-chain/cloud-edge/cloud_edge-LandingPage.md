@@ -124,7 +124,7 @@ Once you have been granted access to the preview program you will receive two pr
 At this point you can start configuring scale units and workloads in your preview environment using the scale unit manager portal.
 
 ### Managing cloud scale units and workloads
-Enter the scale unit manager portal and select the navigation item 
+Once you have Enter the scale unit manager portal and select the navigation item 
 
 ### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
