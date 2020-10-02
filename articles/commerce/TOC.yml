@@ -74,8 +74,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-      - name: Get support for Dynamics 365 Commerce
-        href: retail-support.md
+      - name: Get support for Finance and Operations apps or Lifecycle Services (LCS)
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Commerce
