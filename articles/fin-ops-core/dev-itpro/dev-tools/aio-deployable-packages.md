@@ -5,7 +5,7 @@ title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ Customers can update the software in their environments by applying software dep
 This topic outlines the best practices for creating and managing an all-in-one deployable package.
 
 > [!IMPORTANT]
-> - Support for deployable packages that are **not** all-in-one deployable packages will end October 31, 2020.
+> - The enforcement of all-in-one packages will be done in phases. Request to extend the support for deployable packages that are **not** all-in-one deployable packages will end October 31, 2020. The extension approval will be subject to valid justification.
 > - If a payment connector is currently deployed in your environment, you will have to [create a payment connector package](../../../commerce/dev-itpro/payment-connector-package.md) and include it in the all-in-one deployable package.
 > - If you currently use Microsoft Dynamics 365 Commerce functionality for the retail point of sale, you will also have to [synchronize self-service installers](../../../commerce/dev-itpro/Synchronize-installers.md).
 
@@ -61,6 +61,10 @@ There are two primary methods for creating an all-in-one deployable package:
 ## What if my ISV packages don't contain source code?
 
 ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an all-in-one deployable package. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
+
+## How can I deploy ISV licenses?
+
+ISVs can send license deployable packages to provide or update a license. However, for self-service environments licenses should also be included in an all-in-one deployable package. You can add a task to your build or release pipelines to add any licenses you have to a deployable package. For more information, see [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md).
 
 ## Why are these packages important?
 

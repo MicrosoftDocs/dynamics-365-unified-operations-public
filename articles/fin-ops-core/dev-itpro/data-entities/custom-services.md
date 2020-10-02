@@ -63,10 +63,6 @@ For more information about custom services, see:
 - [Using Custom Services \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
 - [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
 
-<!--
-- [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
-
-
 ### JSON-based custom service
 
 This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server.

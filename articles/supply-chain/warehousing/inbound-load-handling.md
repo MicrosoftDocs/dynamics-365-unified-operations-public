@@ -4,7 +4,7 @@
 title: Warehouse handling of inbound loads for purchase orders
 description: This topic describes the warehouse handling process for inbound loads for purchase orders.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: 
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: Release 10.0.10
 ---
 
 # Warehouse handling of inbound loads for purchase orders
@@ -71,7 +71,7 @@ When an inbound load first arrives at the warehouse, warehouse workers must regi
 
 - **A mobile device menu that is configured to support load receiving**
 
-    The [Dynamics 365 for Finance and Operations – Warehousing app](install-configure-warehousing-app.md) for mobile devices supports the following work creation processes:
+    The [warehouse app](install-configure-warehousing-app.md) for mobile devices supports the following work creation processes:
 
     - Load item receiving
     - Load item receiving and put away
@@ -290,7 +290,7 @@ To work through these scenarios by using the specified sample records and values
 
 Before warehouse receiving clerks can use a mobile device to register inbound inventory that is linked to a load, you must create a mobile device menu item for that purpose.
 
-In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the Warehousing app.
+In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the warehouse app.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**, and make sure that your mobile device menu includes a menu item that has the following settings:
 

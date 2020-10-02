@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -47,6 +47,10 @@ You can submit requests for time off, view your vacation and leave balances, and
 5. Enter information in **Comment**, if needed.
 
 6. Select **Submit** when you're ready to submit your request. Otherwise, select **Save draft**.
+
+## Add an attachment to an existing request
+
+When updating an existing time off request, you can add an attachment. You can also see all of the related requests for a specific date. 
 
 ## View leave balances
 

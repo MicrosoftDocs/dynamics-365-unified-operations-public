@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -36,7 +36,7 @@ This topic describes how to create a new module in Dynamics 365 Commerce.
 
 ## Overview
 
-To create a new module in Commerce, the online Software Development Kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
+To create a new module in Commerce, the online software development kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-module MODULE\_NAME**
 
@@ -68,10 +68,31 @@ To preview the new module in a local web browser, follow these steps.
 
 Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
+## Deferred module rendering
+
+By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
+
+Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The following SDK utility function can be used for this purpose.
+
+```typescript
+import MsDyn365 from '@msdyn365-commerce/core';
+
+if (MsDyn365.isBrowser) {
+    return new URL(window.location.href);
+}
+```
+
+## Module error handling 
+
+If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server-side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on server side use a `?debug=true` query string parameter.
+
 ## Additional resources
+
+[Page load data actions](page-load-data-action.md)
+
 [CLI command reference](cli-command-reference.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 

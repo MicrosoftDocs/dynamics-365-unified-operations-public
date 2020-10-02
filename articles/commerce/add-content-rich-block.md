@@ -5,7 +5,7 @@ title: Text block module
 description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Text block module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -49,6 +48,10 @@ Text block modules can be used in the following ways:
 * To add custom messages on a product details page. (for example, "Free shipping for orders over $50").
 * For disclaimers and contact details on product details pages, cart pages, checkout pages, and other pages (for example, "Shipping and returns are subject to store policies").
 
+The following image shows an example of a text block module that is used on a home page.
+
+![Example of a text block module](./media/ecommerce-textblock.PNG)
+
 ## Text block module properties
 
 | Property name     | Value                                            | Description |
@@ -61,19 +64,25 @@ Text block modules can be used in the following ways:
 
 To add a text block module to a new page and set the required properties, follow these steps.
 
-1. Create a page template that is named **Content template**. 
-1. In the **Body** slot, add a **Default page** module.
-1. Finish editing the template, and publish it.
-1. Use the content template that you just created to create a page that is named **Content page**.
-1. In the **Main** slot of the new page, add a container module.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter **Content template**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default page** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select **Content template**. Under **Page name**, enter **Content page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Width** property to **Fill container**.
-1. Add a text block module to the container module. 
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Text block** module, and then select **OK**. 
 1. In the property pane of the text block module, add text to the **Rich text** field.
-1. Finish editing the page, and publish it.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 

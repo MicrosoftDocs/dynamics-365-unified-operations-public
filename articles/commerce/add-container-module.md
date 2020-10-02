@@ -5,7 +5,7 @@ title: Container module
 description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Container module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -49,6 +48,10 @@ Three container modules are supported: container, container with 2-slots, and co
 - A site author wants a three-column layout, where three modules appear side by side. Therefore, the site author uses a container module of the container with 3-slots type.
 - A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container of the contain type that has six columns inside it.
 - A site author wants to put a module on a page but doesn't want it to fill the screen. Therefore, the site author adds the module to a container module and sets the container's **Width** property to **Fit container**.
+
+The following image shows an example of a container module that contains a carousel module in Commerce site builder. In this example, the **Width** property of the container module is set to **Fill Screen**.
+
+![Example of a container module](./media/ecommerce-container.PNG)
 
 ## Container module properties
 
@@ -103,23 +106,32 @@ Additional properties can be used to optimize the layout for different view port
 
 To add a container player module to a new page and set the required properties, follow these steps.
 
-1. Create a page template that is named **container template**. 
-1. In the **Body** slot, add a **Default page** module.
-1. Finish editing the template, and publish it.
-1. Use the container template that you just created to create a page that is named **container page**.
-1. In the **Main** slot of the new page, add a container module.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the video player template that you created. Under **Page name**, enter **Container page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
-1. In the container module, add a content block module.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Content block** module, and then select **OK**.
 1. In the property pane for the content block module, configure the heading, image, and layout.
-1. Save and preview the page. You should see one feature module that fits within the width of the container module.
+1. Select **Save**, and then select **Preview** to preview the page. You should see one feature module that fits within the width of the container module.
 1. In the property pane for the container module, change the value of the **Number of columns** property to **3**.
-1. Add two more content block modules to the container module.
-1. Save and preview the page. You should now see three content block modules that appear side by side.
-1. After you've achieved the layout that you want, finish editing the page, and publish it.
+1. Add two more content block modules to the container module, and configure them.
+1. Select **Save**, and then select **Preview** to preview the page. You should now see three content block modules that appear side by side.
+1. After you've achieved the layout that you want, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
+
+[Accordion module](add-accordion.md)
+
+[Tab module](add-tab.md)
 
 [Carousel module](add-carousel.md)
 

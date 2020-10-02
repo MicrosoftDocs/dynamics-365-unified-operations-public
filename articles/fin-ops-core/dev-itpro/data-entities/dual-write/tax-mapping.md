@@ -42,30 +42,30 @@ Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) a
 
 Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
 
-| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
--------------------------|---------------------------------
-Tax codes                   | msdyn\_taxcodes.md | 
-Tax groups                 | msdyn\_taxgroups.md | 
-Tax item groups             | msdyn\_taxitemgroups.md | 
-Tax Exemptions             | msdyn\_taxexemptcodes.md | 
-Tax Authorities             | msdyn\_taxauthorities.md | 
-Withholding tax codes       | msdyn\_withholdingtaxcodes.md | 
-Withholding tax groups     | msdyn\_withholdingtaxgroups.md | 
-Tax Ledger Account Group | msdyn\_taxpostinggroups     | 
+Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+-------------------------|---------------------------------|----|
+Item sales tax group | msdyn_taxitemgroups |
+Sales tax authorities | msdyn_taxauthorities |
+Sales tax exempt code entity CDS | msdyn_taxexemptcodes |
+Sales tax groups | msdyn_taxgroups |
+Sales tax ledger posting groups V2 | msdyn_taxpostinggroups |
+Withholding tax codes | msdyn_withholdingtaxcodes |
+Withholding tax groups | msdyn_withholdingtaxgroups | 
+
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
 [!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
+
+[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
 
 [!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
 
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
+[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
+
+[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 
 [!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
 
 [!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 

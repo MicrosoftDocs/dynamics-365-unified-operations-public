@@ -5,7 +5,7 @@ title: Promo banner module
 description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Promo banner module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -52,6 +51,12 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 "Save big with back to school sale. Shop Now."
 
+"Shop for Thanksgiving SALE!" 
+
+The following image shows an example of a promo banner.
+
+![Example of a promo banner module](./media/ecommerce-Promobanner.PNG)
+
 ## Promo banner module properties
 
 | Property name             | Value                              | Description |
@@ -68,7 +73,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 To add a promo banner module to a page and set the required properties, follow these steps.
 
-1. Select **New** to create a page template.
+1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. Under **Page Outline**, add a **Default page** module to the **Body** slot. 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
@@ -78,7 +83,7 @@ To add a promo banner module to a page and set the required properties, follow t
 1. Under **Page Outline**, add a promo banner module to the container module.
 1. In the settings for the banner module, add one or more banner messages. Each message can have text together with a link. You can edit the other properties to customize the module further.
 1. Select **Save**, and then select **Preview** to preview the page. At the top of the page, you should see an alert that shows the text that you added.
-1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE]
 > A promo banner is typically used in the page header slot or a subheader slot.
@@ -86,7 +91,7 @@ To add a promo banner module to a page and set the required properties, follow t
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Carousel module](add-carousel.md)
 

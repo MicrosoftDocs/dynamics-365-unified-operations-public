@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -114,7 +114,7 @@ Additionally, when an item is tag-tracked, there is an **Outbound tag capturing 
 **When catch weight tag tracking is used**, a tag must always be created for every catch weight unit that is received, and every tag must always be associated with a weight.
 
 For example, **Box** is the catch weight unit, and you receive one pallet of eight boxes. In this case, eight unique catch weight tags must be created, and a weight must be associated with each tag. Depending on the inbound catch weight tag, either the weight of all eight boxes can be captured, and the average weight can then be distributed to each box, or a unique weight can be captured for each box.
-When using the **Use existing catch weight tags when reporting production orders as finished** feature with the process enabled via a mobile device menu item, the inventory gets updated based on existing catch weight tag information. As a result, the Warehousing app does not prompt for capturing the catch weight tag data as part of a production report as a finished operation.
+When using the **Use existing catch weight tags when reporting production orders as finished** feature with the process enabled via a mobile device menu item, the inventory gets updated based on existing catch weight tag information. As a result, the warehouse app does not prompt for capturing the catch weight tag data as part of a production report as a finished operation.
 
 **When catch weight tag tracking isn't used**, the weight can be captured for each dimension set (for example, for each license plate and tracking dimension). Alternatively, the weight can be captured based on an aggregated level, such as five license plates (pallets).
 
@@ -175,7 +175,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 - The functionality for cluster picking isn't supported for catch weight products.
 - Pick and pack warehouse processing isn't supported for catch weight products.
-- For catch weight products, work that is defined in a work template can be run automatically.
+- For catch weight products, work that is defined in a work template cannot be run automatically.
 - For catch weight products, the system doesn't support manual packing station processing where packed container picking work is created after containers are closed.
 - The functionality for pcs-by-pcs scanning isn't supported for catch weight products.
 
@@ -202,7 +202,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 ### Catch weight tags
 
-A catch weight tag can be created by using a warehousing app process, it can be manually created in the form, or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped.
+A catch weight tag can be created by using a warehouse app process, it can be manually created in the form, or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped.
 
 In addition to the restrictions that currently apply for catch weight products, tagged catch weight products have other restrictions that currently apply.
 

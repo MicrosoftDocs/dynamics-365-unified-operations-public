@@ -5,7 +5,7 @@ title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: kfend
 manager: AnnBe
-ms.date: 03/24/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,3 +60,5 @@ This topic provides links to documentation resources for Italy.
 - [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
+- [Tax plafond](emea-ita-exil-tax-plafond.md)
+- [Customer electronic invoices](emea-ita-e-invoices.md)

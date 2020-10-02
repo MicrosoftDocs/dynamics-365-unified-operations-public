@@ -5,7 +5,7 @@ title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -42,7 +42,9 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+
+5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the accrual process.
 
@@ -60,7 +62,9 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+
+5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the accrual process.
 
@@ -110,5 +114,5 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 ## See also
 
-- [Leave and absence overview](hr-leave-and-absence-overview.md)
-- [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+[Leave and absence overview](hr-leave-and-absence-overview.md)</br>
+[Create a leave and absence plan](hr-leave-and-absence-plans.md)

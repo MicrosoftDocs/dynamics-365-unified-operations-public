@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Manage employee leave
-
-[!include [banner](includes/preview-feature.md)]
 
 You can manage an employee's leave by leave type. This includes expiring leave enrollment and adjusting leave type balances. 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure and install Commerce Scale Unit
-description: This topic explains how you can use self-service to configure Commerce Scale Unit in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
+title: Configure and install Commerce Scale Unit (self-hosted)
+description: This topic explains how you can use self-service to configure Commerce Scale Unit (self-hosted) in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure and install Commerce Scale Unit
+# Configure and install Commerce Scale Unit (self-hosted)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure a Commerce Scale Unit (previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This topic explains how you can use self-service to configure a Commerce Scale Unit (Self-hosted, previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (Formerly called Secrets) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
@@ -132,7 +132,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 4. On the drop-down menu, select **Configuration file**.
 
     > [!NOTE]
-    > To help ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    > To ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.   
     >
     > For on-premises deployments, the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).

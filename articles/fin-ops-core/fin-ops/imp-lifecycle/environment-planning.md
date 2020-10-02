@@ -77,8 +77,8 @@ The standard cloud offer includes three environments:
 - **Tier-2 environment: Standard Acceptance Testing** – One Standard Acceptance Testing (UAT) instance is provided for the duration of the subscription. This instance is a non-production multi-box instance that customers can use for UAT, integration testing, and training. Additional sandbox/staging instances can be purchased separately as an optional add-on.
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
-    - **File storage:** Every customer receives 100 gigabytes (GB) of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
-    - **Database storage:** Every subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
+    - **File storage:** Every customer receives a certain amount of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
+    - **Database storage:** Every subscription includes a certain amount of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, as well as the currently included free file and storage capacity, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
     
 > [!IMPORTANT]
 > Microsoft promises service and data high availability as well as minimal servicing downtime guarantees as part of the Dynamics 365 software license agreement (SLA) for production environments. The SLA goals do not apply to non-production environments.
@@ -94,7 +94,7 @@ The various environments are provisioned at different times. The following table
 | Production                      | At production system readiness | A production deployment request must be submitted in LCS. Deployment is done through the Dynamics Service Engineering (DSE) team within two business days. |
 
 > [!IMPORTANT]
-> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the Azure DevOps source repository.
+> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. We strongly recommend using the same dedicated environment admin account on all environments. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the Azure DevOps source repository.
 
 ### Production system readiness
 
@@ -123,7 +123,7 @@ Additional environments can be purchased as add-ons, or they can be deployed as 
 ![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
-> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Assign the environments an owner who will be responsible for their status and maintenance. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.
+> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Assign the environments an owner who will be responsible for their status and maintenance. We strongly recommend using the same dedicated environment admin account on all environments. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.
 
 ### Deployment considerations for development environments
 

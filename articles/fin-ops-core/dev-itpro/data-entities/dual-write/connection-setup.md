@@ -5,7 +5,7 @@ title: Supported scenarios for dual-write setup
 description: This topic describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,12 +38,15 @@ ms.search.validFrom: 2020-01-06
 
 You can set up a dual-write connection between a Finance and Operations environment and a Common Data Service environment.
 
-+ A **Finance and Operations environment** provides the underlying platform for **Finance and Operations apps** (for example, Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Retail, and Dynamics 365 Human Resources).
++ A **Finance and Operations environment** provides the underlying platform for **Finance and Operations apps** (for example, Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Retail).
 + A **Common Data Service environment** provides the underlying platform for **model-driven apps in Dynamics 365** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
+
+>[!IMPORTANT]
+>Human Resources in Finance and Operations supports dual-write connections, but the Dynamics 365 Human Resources app doesn't.
 
 The setup mechanism varies, depending on your subscription and the environment.
 
-+ For new instances of Finance and Operations apps, the setup of a dual-write connection begins in Microsoft Dynamics Lifecycle Services (LCS). If you have a license for Microsoft Power Platform, you will get a new Common Data Service environment if your tenant doesn't have one.
++ For new instances of Finance and Operations apps, the setup of a dual-write connection begins in Microsoft Dynamics Lifecycle Services (LCS). If you have a license for Power Platform, you will get a new Common Data Service environment if your tenant doesn't have one.
 + For existing instances Finance and Operations apps, the setup of a dual-write connection begins in the Finance and Operations environment.
 
 The following setup scenarios are supported:

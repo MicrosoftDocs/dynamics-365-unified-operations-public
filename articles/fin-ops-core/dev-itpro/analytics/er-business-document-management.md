@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 Business users use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Users can also define the dataflow to specify what application data is placed in generated documents. The ER framework generates outbound documents in Microsoft Office formats (Excel workbooks or Word documents) by using predefined templates. The templates are populated with required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This is represented by an ER format configuration that can contain templates you can use to generate different outbound documents. Business users can use this framework to manage required business documents.
 
-**Business document management** is built on top of the ER framework and enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
+**Business document management** is built on top of the ER framework and enables business users to edit business document templates by using Microsoft 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
 
 > [!NOTE]
 > Be aware that Business document management allows you to modify templates that are used to produce business documents such as orders, invoices, etc. While a template has been modified and a new version of it has been published, this version is used to generate required business documents. Business document management cannot be used to modify already generated business documents.
@@ -175,7 +175,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 The selected document type is company-specific and will be used when the user is working with Business document management in the company for which the selected document type is configured. When the user is working with Business document management in another company, the same selected document type will be used if one has not been configured for this company. When a document type has been configured, it will be used instead of the one selected in the **SharePoint document type** field.
 
 > [!NOTE]
-> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in  Office 365. For more information, see [Edit a template in Office 365](#EditInOffice365).
+> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in  Microsoft 365. For more information, see [Edit a template in Microsoft 365](#EditInOffice365).
 
 ## Configure access permissions
 
@@ -300,13 +300,13 @@ The **New document** option is always available for a template in an ER format c
 
 5. Select **OK** to confirm the start of the editing process.
 
-The **BDM template editor** page will open. The selected template will be available for online editing by using Office 365.
+The **BDM template editor** page will open. The selected template will be available for online editing by using Microsoft 365.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Edit a template in Office 365</a>
+### <a name="EditInOffice365">Edit a template in Microsoft 365</a>
 
-You can modify the template using Office 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template's storage (by default, the Azure blob storage). This is configured for the ER framework.
+You can modify the template using Microsoft 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template's storage (by default, the Azure blob storage). This is configured for the ER framework.
 
 ![Business document management template editor page](./media/BDM-Overview-EditingLayout2.png)
 
@@ -403,10 +403,10 @@ When you edit the template from an ER format that is owned by the current active
 
 ## Frequently asked questions
 
-#### I selected **Edit document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
-This is a known issue with the Office 365 redirection. This happens when you sign to Office 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back.
+#### I selected **Edit document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Microsoft 365 web page.
+This is a known issue with the Microsoft 365 redirection. This happens when you sign to Microsoft 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back.
 
-#### I understand how to edit a template by using Office 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
+#### I understand how to edit a template by using Microsoft 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
 Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template changes in the generated business document:
 
 1. Make changes in the template by using the Office desktop application.

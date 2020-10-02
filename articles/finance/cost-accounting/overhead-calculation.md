@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
+ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

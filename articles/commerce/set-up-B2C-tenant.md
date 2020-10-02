@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/28/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -81,7 +81,7 @@ Once the B2C tenant has been created, you will create a B2C application within t
 
 To create the B2C application, follow these steps.
 
-1. In the Azure portal, select **Applications** and then select **Add**.
+1. In the Azure portal, select **Applications(Legacy)** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API**, select **Yes**.
 1. For **Allow implicit flow**, select **Yes** (the default value).
@@ -95,7 +95,7 @@ Reply URLs are important as they provide an allow list of the return domains whe
 
 In the **Reply URL** box on the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
-- ``https://fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (The domain should match the e-commerce domain completely. If you have multiple domains, you need to add this URL for each domain.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## Create user flow policies

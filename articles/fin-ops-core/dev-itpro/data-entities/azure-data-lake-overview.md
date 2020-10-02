@@ -5,7 +5,7 @@ title: Azure Data Lake overview
 description: This topic provides an overview of Microsoft Azure Data Lake. Data Lake is a technology that is designed to make big data analytics and artificial intelligence (AI) available in the Azure cloud.
 author: MilindaV2
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Platform update 34
 # Azure Data Lake overview
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## What is Azure Data Lake?
 

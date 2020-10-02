@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for 10.0.11 (July 2020)
-          href: get-started/whats-new-platform-update-35.md
-        - name: Platform updates for 10.0.10 (May 2020)
-          href: get-started/whats-new-platform-update-34.md
-        - name: Platform update 33 (April 2020)
-          href: get-started/whats-new-platform-update-33.md
+        - name: Platform updates for 10.0.14 (November 2020)
+          href: get-started/whats-new-platform-updates-10-0-14.md
+        - name: Platform updates for 10.0.13 (October 2020)
+          href: get-started/whats-new-platform-updates-10-0-13.md
+        - name: Platform updates for 10.0.12 (August 2020)
+          href: get-started/whats-new-platform-update-10-0-12.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -84,6 +84,10 @@
       items:
       - name: Choose a data integration (import/export) strategy
         href: data-entities/integration-overview.md
+      - name: Priority-based throttling
+        hreF: data-entities/priority-based-throttling.md
+      - name: Priority-based throttling FAQ
+        href: data-entities/throttling-faq.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -128,6 +132,8 @@
             items: 
             - name: Dual-write home page
               href: data-entities/dual-write/dual-write-home-page.md
+            - name: What's new or changed in dual-write
+              href: data-entities/dual-write/whats-new-dual-write.md
             - name: Dual-write overview
               href: data-entities/dual-write/dual-write-overview.md
             - name: Dual-write setup
@@ -148,10 +154,18 @@
                       href: data-entities/dual-write/link-your-environment.md
                     - name: Enable entity map for dual-write
                       href: data-entities/dual-write/enable-entity-map.md
+                - name: Currency data-type migration for dual-write
+                  href: data-entities/dual-write/currrency-decimal-places.md
+                - name: Set up the mapping for the sales order status fields
+                  href: data-entities/dual-write/sales-status-map.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
+                - name: Handling multiple entity maps
+                  href: data-entities/dual-write/multiple-entity-maps.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
@@ -198,6 +212,8 @@
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
+                - name: Inventory availability
+                  href: data-entities/dual-write/inventory-availability.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
@@ -220,6 +236,8 @@
                     href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                   - name: General troubleshooting
                     href: data-entities/dual-write/dual-write-troubleshooting.md
+            - name: Dual-write frequently asked questions
+              href: data-entities/dual-write/dual-write-faq.md                  
           - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
@@ -360,6 +378,8 @@
       items: 
       - name: Azure Data Lake overview
         href: data-entities/azure-data-lake-overview.md
+      - name: Configure export to Azure Data Lake
+        href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Make entity store available as a Data Lake 
@@ -452,9 +472,9 @@
           href: ../fin-ops/imp-lifecycle/architecture-overview.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Apply updates and extensions to cloud hosted Retail channel components
+        - name: Apply updates and extensions to Commerce Scale Unit (cloud)
           href: deployment/Update-retail-channel.md  
-        - name: Initialize Retail Cloud Scale Unit
+        - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Retail data residency
           href: deployment/retail-data-residency.md
@@ -488,10 +508,14 @@
             href: deployment/certificate-rotation-on-prem.md
           - name: Client internet connectivity
             href: user-interface/client-disconnected.md
+          - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+            href: deployment/onprem-batchonly.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
+          - name: On-premises disaster recovery configuration
+            href: deployment/onprem-dr.md
           - name: PowerBI.com integration with on-premises environments
             href: analytics/entity-store-on-prem.md
           - name: Reconfigure environments
@@ -504,7 +528,7 @@
             href: deployment/onprem-reuseadfs.md
         - name: Local agent
           items:
-          - name: AD FS Office 365 compatibility
+          - name: AD FS Microsoft 365 compatibility
             href: deployment/onprem-adfscompatibility.md
           - name: Local agent pre-deployment and post-deployment scripts
             href: lifecycle-services/pre-post-scripts.md
@@ -588,6 +612,14 @@
           href: dev-tools/pipeline-create-deployable-package.md
         - name: X++ model-versioning in Azure Pipelines
           href: dev-tools/pipeline-model-version.md
+        - name: Download assets by using Azure Pipelines
+          href: dev-tools/pipeline-asset-download.md
+        - name: Upload assets by using Azure Pipelines
+          href: dev-tools/pipeline-asset-upload.md
+        - name: Deploy assets by using Azure Pipelines
+          href: dev-tools/pipeline-deploy-asset.md
+        - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
+          href: dev-tools/pipeline-lcs-connection.md        
       - name: Fleet Management sample application
         items:
         - name: End-to-end scenario for the Fleet Management sample application
@@ -600,10 +632,8 @@
           href: dev-tools/development-tools-overview.md
         - name: Development tools tutorial
           href: dev-tools/introduction-visual-studio.md
-        - name: Application Checker
-          items:
-          - name: Install BaseX for Application Checker
-            href: dev-tools/install-basex.md
+        - name: Application checker
+          href: dev-tools/application-checker.md
         - name: Application Explorer
           href: dev-tools/application-explorer.md
         - name: Build and debug projects
@@ -703,9 +733,29 @@
             - name: Events
               href: dev-ref/xpp-events.md
           - name: X++ data selection and manipulation
-            href: dev-ref/xpp-data-query.md
-          - name: Data access using the SysDa API
-            href: dev-ref/sysda.md
+            items:
+            - name: X++ data selection and manipulation overview
+              href: dev-ref/xpp-data/xpp-data-home-page.md
+            - name: Select statement
+              href: dev-ref/xpp-data/xpp-select-statement.md
+            - name: Select data
+              href: dev-ref/xpp-data/xpp-select.md
+            - name: Insert data
+              href: dev-ref/xpp-data/xpp-insert.md
+            - name: Update data
+              href: dev-ref/xpp-data/xpp-update.md
+            - name: Delete data
+              href: dev-ref/xpp-data/xpp-delete.md
+            - name: While select statement
+              href: dev-ref/xpp-data/xpp-while-select.md
+            - name: Writing a select statement as an expression
+              href: dev-ref/xpp-data/xpp-select-expression.md
+            - name: Transactional integrity
+              href: dev-ref/xpp-data/xpp-transaction.md
+            - name: Conversion of operations from set-based to record-by-record
+              href: dev-ref/xpp-data/xpp-data-perf.md
+            - name: Data access using the SysDa API
+              href: dev-ref/sysda.md
           - name: X++ macros
             href: dev-ref/xpp-macros.md
           - name: X++ attribute classes
@@ -744,76 +794,58 @@
           href: dev-ref/system-tables.md
         - name: System classes
           items:
-          - name: A classes
-            href: dev-ref/a-classes.md
-          - name: B classes
-            href: dev-ref/b-classes.md
-          - name: C classes
-            href: dev-ref/c-classes.md
-          - name: D classes
-            href: dev-ref/d-classes.md
-          - name: E classes
-            href: dev-ref/e-classes.md
-          - name: F classes (FieldBinding to FormBuildAnimateControl)
-            href: dev-ref/fieldbinding-classes.md
-          - name: F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-            href: dev-ref/formbuildbuttoncontrol-classes.md
-          - name: F classes (FormBuildFilterPaneControl to FormBuildRealControl)
-            href: dev-ref/formbuildfilterpanecontrol-classes.md
-          - name: F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
-            href: dev-ref/formbuildreferencecontrol-classes.md
-          - name: F classes (FormChangeTracker to FormControlEventArgs)
-            href: dev-ref/formchangetracker-classes.md
-          - name: F classes (FormDataObject to FormFastTabHeaderControl)
-            href: dev-ref/formdataobject-classes.md
-          - name: F classes (FormFastTabSummarySeparator to FormGridControl)
-            href: dev-ref/formfasttabsummaryseparator-classes.md
-          - name: F classes (FormGroupControl to FormIntControl)
-            href: dev-ref/formgroupcontrol-classes.md
-          - name: F classes (FormListBoxControl to FormNotifyEventArgs)
-            href: dev-ref/formlistboxcontrol-classes.md
-          - name: F classes (FormObject to FormRealControl)
-            href: dev-ref/formobject-classes.md
-          - name: F classes (FormReferenceControl to FormStringControl)
-            href: dev-ref/formreferencecontrol-classes.md
-          - name: F classes (FormTabControl to FormWindowControl)
-            href: dev-ref/formtabcontrol-classes.md
-          - name: G classes
-            href: dev-ref/g-classes.md
-          - name: H classes
-            href: dev-ref/h-classes.md
-          - name: I classes
-            href: dev-ref/i-classes.md
-          - name: J classes
-            href: dev-ref/j-classes.md
-          - name: K classes
-            href: dev-ref/k-classes.md
-          - name: L classes
-            href: dev-ref/l-classes.md
-          - name: M classes
-            href: dev-ref/m-classes.md
-          - name: N classes
-            href: dev-ref/n-classes.md
-          - name: O classes
-            href: dev-ref/o-classes.md
-          - name: P classes
-            href: dev-ref/p-classes.md
-          - name: Q classes
-            href: dev-ref/q-classes.md
-          - name: R classes
-            href: dev-ref/r-classes.md
-          - name: S classes
-            href: dev-ref/s-classes.md
-          - name: T classes
-            href: dev-ref/t-classes.md
-          - name: U classes
-            href: dev-ref/u-classes.md
-          - name: V classes
-            href: dev-ref/v-classes.md
-          - name: W classes
-            href: dev-ref/w-classes.md
-          - name: X classes
-            href: dev-ref/x-classes.md
+          - name: System class list
+            href: dev-ref/system-classes/toc.yml
+          - name: System classes grouped alphabetically
+            items:
+            - name: A classes
+              href: dev-ref/a-classes.md
+            - name: B classes
+              href: dev-ref/b-classes.md
+            - name: C classes
+              href: dev-ref/c-classes.md
+            - name: D classes
+              href: dev-ref/d-classes.md
+            - name: E classes
+              href: dev-ref/e-classes.md
+            - name: F classes
+              href: dev-ref/f-classes.md
+            - name: G classes
+              href: dev-ref/g-classes.md
+            - name: H classes
+              href: dev-ref/h-classes.md
+            - name: I classes
+              href: dev-ref/i-classes.md
+            - name: J classes
+              href: dev-ref/j-classes.md
+            - name: K classes
+              href: dev-ref/k-classes.md
+            - name: L classes
+              href: dev-ref/l-classes.md
+            - name: M classes
+              href: dev-ref/m-classes.md
+            - name: N classes
+              href: dev-ref/n-classes.md
+            - name: O classes
+              href: dev-ref/o-classes.md
+            - name: P classes
+              href: dev-ref/p-classes.md
+            - name: Q classes
+              href: dev-ref/q-classes.md
+            - name: R classes
+              href: dev-ref/r-classes.md
+            - name: S classes
+              href: dev-ref/s-classes.md
+            - name: T classes
+              href: dev-ref/t-classes.md
+            - name: U classes
+              href: dev-ref/u-classes.md
+            - name: V classes
+              href: dev-ref/v-classes.md
+            - name: W classes
+              href: dev-ref/w-classes.md
+            - name: X classes
+              href: dev-ref/x-classes.md
       - name: Extensibility
         items:
         - name: Extensibility home page
@@ -1048,6 +1080,8 @@
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
+      - name: Project onboarding
+        href: lifecycle-services/project-onboarding.md
       - name: Subscription estimator
         href: lifecycle-services/subscription-estimator.md
       - name: Configure security
@@ -1118,6 +1152,20 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+    - name: Microsoft Power Platform integration
+      items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
+      - name: Entity modeling
+        href: power-platform/entity-modeling.md
+      - name: Application lifecycle management
+        href: power-platform/application-lifecycle-management.md
+      - name: Finance and Operations and Common Data Service admin reference
+        href: power-platform/admin-reference.md
+      - name: Power Apps portals with Finance and Operations
+        href: power-platform/power-portal-reference.md
+      - name: Finance and Operations virtual entities FAQ
+        href: power-platform/faq.md
     - name: Mobile platform
       items:
       - name: Mobile platform resources
@@ -1324,15 +1372,31 @@
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
           - name: ValueMetadata type
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+    - name: Process automation framework
+      items:
+      - name: Process automation framework development
+        href: process-automation/process-automation-framework.md
+      - name: Type registration
+        href: process-automation/type-registration.md
+      - name: Series registration
+        href: process-automation/series-registration.md
+      - name: Process parameters
+        href: process-automation/process-parameters.md
+      - name: User-configurable queries
+        href: process-automation/user-queries.md
+      - name: Run the process
+        href: process-automation/run-process.md
+      - name: Log results and messages
+        href: process-automation/log-results.md
+      - name: Customize the user interface
+        href: process-automation/ui-customization.md
     - name: Regression suite automation tool
       items:
       - name: Regression suite automation tool overview
         href: perf-test/rsat/rsat-overview.md
       - name: Installation and configuration
         href: perf-test/rsat/rsat-install-configure.md
-      - name: Data agnostic testing using the Regression Suite Automation Tool
-        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-      - name: Run test cases
+      - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
       - name: Validate expected values
         href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1404,12 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Use the Regression suite automation tool tutorial
+      - name: Regression suite automation tool tutorial and other features
         href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
+      - name: Data agnostic testing using the Regression Suite Automation Tool
+        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services
@@ -1351,7 +1417,7 @@
       - name: Develop and release
         href: lcs-solutions/lcs-solutions-app-source.md
       - name: Stage and publish
-        href: lcs-solutions/marketing-content-lcs-solutions.md
+        href: /azure/marketplace/partner-center-portal/create-new-operations-offer
       - name: Add methodologies
         href: lcs-solutions/methodologies-lcs-solutions.md
       - name: Set up Business process modeler libraries
@@ -1414,6 +1480,8 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Encryption in Finance and Operations apps
+          href: sysadmin/encryption.md
         - name: Set the session idle timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
@@ -1428,8 +1496,18 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Import or export customized security configuration using Data management
+          href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings
           href: sysadmin/tasks/security-diagstics-task-recordings.md
+        - name: Extensible data security policies
+          href: sysadmin/extensible-data-security-policies.md
+        - name: Create a security policy
+          href: sysadmin/create-simple-security-policy.md
+      - name: Stay compliant with user licensing requirements
+        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Process automation
+        href: sysadmin/process-automation.md
       - name: Batch processing
         items:
         - name: Batch processing overview
@@ -1442,6 +1520,8 @@
           href: sysadmin/copy-batch-job.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
+        - name: Daylight saving time support for active batch periods
+          href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
         - name: Batch job to handle SQL index defragmentation
@@ -1488,6 +1568,8 @@
           href: migration-upgrade/prepare-data-upgrade.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
+        - name: AX 2012 upgrade - On-premises environments
+          href: migration-upgrade/on-prem-upgrade-2012.md
         - name: AX 2012 upgrade - Cutover testing
           href: migration-upgrade/upgrade-cutover-testing.md
         - name: AX 2012 upgrade - Post-upgrade tasks
@@ -1634,7 +1716,7 @@
           href: user-interface/check-box-tree-controls.md
         - name: Filtering options
           href: user-interface/filtering.md
-        - name: PowerApps Host control
+        - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
       - name: Window management
         items:

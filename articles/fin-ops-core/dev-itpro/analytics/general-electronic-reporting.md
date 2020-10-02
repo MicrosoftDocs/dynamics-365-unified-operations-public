@@ -172,13 +172,13 @@ An ER repository stores ER configurations. The following types of ER repositorie
 - LCS shared library
 - LCS project
 - File system
-- Regulatory Configuration Services (RCS)
+- RCS
 - Operations resources
-
+- Global repository
 
 An **LCS shared library** repository provides access to the list of configurations within the Shared asset library in Lifecycle Services (LCS). This type of ER repository can only be registered for the Microsoft provider. From the LCS Shared asset library you can import the latest versions of ER configurations into the current instance.
 
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
+An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your Finance and Operations apps.
 
 A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current instance. 
 
@@ -189,9 +189,13 @@ Note that this repository type is accessible in the following environments:
 
 For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
 
-An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
+An **RCS** repository provides access to the list of configurations of a specific instance of [Configuration service (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
 
-For more information, see [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+For more information, see [Import Electronic reporting (ER) configurations from RCS](./rcs-download-configurations.md).
+
+A **Global repository** repository provides access to the list of configurations within the global repository in the [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). This type of ER repository can only be registered for the Microsoft provider. From the global repository, you can import the latest versions of ER configurations into the current instance.
+
+For more information, see [Import Electronic reporting (ER) configurations from Global repository of Configuration service](./er-download-configurations-global-repo.md).
 
 An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using corresponding the ER repository.
 

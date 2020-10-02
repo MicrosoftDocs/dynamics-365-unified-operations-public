@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISVALIDCHARACTERISO7064">ISVALIDCHARACTERISO7064 ER function</a>
+# ISVALIDCHARACTERISO7064 ER function
 
 [!include [banner](../includes/banner.md)]
 

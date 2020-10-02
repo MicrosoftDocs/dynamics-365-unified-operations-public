@@ -5,7 +5,7 @@ title: Enable change tracking for entities
 description: Use change tracking to enable incremental export of data from Finance and Operations.
 author: Milindav2
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,7 +52,7 @@ You can enable change tracking when you publish one or more entities to a data s
     |----------------------|-------------------------|
     | Enable primary table | Changes that are made to any fields in the primary table trigger a change in entity. Changes that are made to fields in secondary tables don't trigger a change in entity. |
     | Enable entire entity | Changes that are made to any fields in any table in the entity trigger a change in entity. |
-    | Enable Custom query  | Select a set of custom fields from any tables that must trigger a change in entity. |
+    | Enable Custom query  | Uses a custom query that identifies the tables on which changes must be tracked. The custom query is defined in the entity. |
 
     > [!NOTE]
     > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
@@ -68,19 +68,21 @@ The following example shows how to add a static method to an entity. You must ma
 
 ```xpp
 public static Query defaultCTQuery()
-    {
-        Query q;
-        q = new Query();
-        QueryBuildDataSource qbd = q.addDataSource(tablename2id('CustTable'));
-        qbd = qbd.addDataSource(tablename2id('DirPartyTable'));
-        qbd.relations(true);
-        qbd = qbd.addDataSource(tablename2id('DirPartyLocation'));
-        qbd.addRange(fieldname2id(tablename2id('DirPartyLocation'),'IsPrimary')).value("1");
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyTable'),'RecId'),fieldName2Id(tableName2Id('DirPartyLocation'),'Party'));
-        qbd = qbd.addDataSource(tableName2Id('LogisticsPostalAddress'));
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyLocation'),'Location'),fieldName2Id(tableName2Id('LogisticsPostalAddress'),'Location'));
-        return q;
-    }
+{
+	Query q = new Query();    
+    
+	QueryBuildDataSource custDs = q.addDataSource(tableNum(CustTable));
+
+	QueryBuildDataSource partyDs = custDs.addDataSource(tableNum(DirPartyTable));
+	partyDs.relations(true);
+
+	QueryBuildDataSource locationDs = partyDs.addDataSource(tableNum(DirPartyLocation));
+	locationDs.addRange(fieldNum(DirPartyLocation, IsPrimary)).value(queryValue(NoYes::Yes));        
+	locationDs.addLink(fieldNum(DirPartyTable, RecId), fieldNum(DirPartyLocation, Party));
+
+	QueryBuildDataSource addressDs = locationDs.addDataSource(tableStr(LogisticsPostalAddress));        
+	addressDs.addLink(fieldNum(DirPartyLocation, Location), fieldNum(LogisticsPostalAddress, Location));
+
+	return q;
+}
 ```

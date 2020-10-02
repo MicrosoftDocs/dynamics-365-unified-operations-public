@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -55,7 +55,7 @@ Follow these steps to generate and store an **Inventory value storage** report.
 1. Select **New**.
 1. In the **Inventory value** dialog box that appears, set the following values to define which records are included in your report:
 
-    - On the **Parameters** FastTab, enter a unique name for the report, and use the fields in the **Date interval** section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - On the **Parameters** FastTab, enter a unique name for the report, and use the fields in the **Date interval** section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
     - On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report.
     - On the **Run in the background** FastTab, specify how, when, and how often the report is generated.
 

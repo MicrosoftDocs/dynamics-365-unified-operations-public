@@ -5,7 +5,7 @@ title: Italian sales tax books
 description: The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters
+ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters, LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -79,7 +79,11 @@ In some cases, the <strong>Italian sales tax book</strong> field is set automati
 <li>Accounts payable parameters</li>
 <li>Project management and accounting parameters</li>
 </ul>
-For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.</td>
+For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
+
+
+In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
+</td>
 </tr>
 </tbody>
 </table>
@@ -237,5 +241,25 @@ When the setup is completed, the sales tax book sections appear on the **Number 
 
 Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
 
+## Additional information
+Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
 
+ - Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) 
+ - Reverse vendor transaction (**All vendors** page, select **Transactions** > **Reverse**). 
+ 
+These functions must be hidden using the functionality of Privileges. For more information, see [Role based security privileges](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#privileges) 
 
+To hide these functions from the user interface for all security roles, follow these steps:
+
+1.	Go to **System administration** > **Security** > **Security configuration**.
+2.	On the **Privileges** tab, select **Reverse customer transactions**.
+3.	Select **Action menu items** > **TransactionReversal_Cust**. 
+4.	Select **Deny** for **Read**, **Update**, **Create**, **Delete**.
+
+![Security configuration](./media/security-configuration.png)
+
+5.	On the **Unpublished objects** tab, select **Publish all**.
+
+![Unpublished objects](./media/unpublished-objects.png)
+
+7.	Repeat these steps for the privilege, **Reverse vendor transactions**.

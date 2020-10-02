@@ -142,6 +142,7 @@ The following fiscal integration samples are currently available in the Retail S
 - [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md)
 - [Fiscal registration service integration sample for Czech Republic](emea-cze-fi-sample.md)
 - [Control unit integration sample for Sweden](./emea-swe-fi-sample.md)
+- [Fiscal registration service integration sample for Germany](./emea-deu-fi-sample.md)
 
 The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 

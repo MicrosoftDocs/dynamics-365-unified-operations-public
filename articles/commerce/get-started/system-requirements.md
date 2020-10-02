@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System requirements for cloud deployments
+title: System requirements for cloud deployments of Dynamics 365 Commerece
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# System requirements for cloud deployments
+# System requirements for cloud deployments of Dynamics 365 Commerece
 
 [!include [banner](../includes/banner.md)]
 
@@ -149,7 +149,7 @@ The computer must meet all system requirements for installing and using the foll
 - Microsoft Internet Information Services (IIS)
 - Third-party hardware
 
-## Commerce Scale Unit requirements
+## Commerce Scale Unit (self-hosted) requirements
 
 > [!NOTE]
 > Starting August 1, 2019, Commerce Scale Unit and other client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).

@@ -5,7 +5,7 @@ title: Deploy a new e-Commerce tenant
 description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -101,8 +101,6 @@ To access site builder, go to the **e-Commerce** tab on the **Retail management*
 [Configure your domain name](configure-your-domain-name.md)
 
 [Create an e-Commerce site](create-ecommerce-site.md)
-
-[Set up an online store channel](online-stores.md)
 
 [Associate an online site with a channel](associate-site-online-store.md)
 

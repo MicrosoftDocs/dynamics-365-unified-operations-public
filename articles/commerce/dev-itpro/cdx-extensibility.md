@@ -5,7 +5,7 @@ title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -148,6 +148,9 @@ To pull data from a new channel table to HQ, you have two options:
 
 + Update the existing resource file with the new information, so that you don't have to add a new line. To upload you set the **IsUpload** attribute to **true** in the resource file and add information about your custom pull job, as shown in the following example.
 
+> [!NOTE]
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
+
     ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
     ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
@@ -168,10 +171,14 @@ To pull data from a new channel table to HQ, you have two options:
     </Subjob>
     ```
   > [!NOTE]
-  > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
+  > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job. 
 
 ## Other scenarios
 For the remaining push and pull scenarios, only the information for the sample resource file is described, because initialization is the same as we described in the previous sections.
+
+### Push existing headquarters tables to channel database that are not part of CDX configurations
+
+In this case, the extension should create a new sub job with the same name as the core table and create the same table in the channel database ext schema and map it. Because CDX doesn’t support multiple sub jobs for the same table, the sub job name must match the core table name to avoid any future conflicts. In the future, the headquarters table may be added for CDX push/pull by out-of-band (OOB) products with the sub job name same as the core table. CDX framework will automatically merge if there are any duplicate sub job names.
 
 ### Push existing columns that aren't mapped as part of any subjobs
 
@@ -257,7 +264,7 @@ We recommend that you implement these changes on an untouched Retail software de
    1. Copy the **ContosoRetailExtensionTablesUpdate.sql** file from the Retail SDK folder. You can run the other sample files in a similar manner.
    2. Open the script in Microsoft SQL Server Browser, and run the script against your channel database.
 
-      This step creates the extension tables and views that are required in order to customize the transactional tables. Note that the script also creates other tables that are used for other sample scenarios.
+      This step creates the extension tables that are required in order to customize the transactional tables. Note that the script also creates other tables that are used for other sample scenarios.
 
 ### Extend the data in the sample
 
@@ -310,7 +317,7 @@ The sample CDX resource file in the Retail SDK contains additional customization
 
 **ChannelDBSchema='ext'** – This field is included so that the resource reads from the extension schema in the channel database.
 
-**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the orginal subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob di, system will throw duplicate subjob error for the same table.
+**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the original subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob di, system will throw duplicate subjob error for the same table.
 
 **TargetTableName ="CONTOSORETAILTRANSACTIONTABLE"** - Your channel extension table name.
 
@@ -367,16 +374,15 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
       When the initialization is completed, the CDX scheduler jobs, subjob definitions, and distribution schedules are updated by using the original RetailCDXSeedDataAX7 resource and the customized RetailCDXSeedDataAX7_ContosoRetailExtension resource.
 
-#### Test the customization
+#### Validate the customization
 
 1. Verify that your customization works correctly:
 
     1. After the initialization is completed, go to **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler**, and then select the **Scheduler subjobs** link.
     2. On the subjobs table, search for the **RetailTransactionTable** subjob ID.
-    3. On the **Set up** FastTab, verify that the **Channel table name** field is set to **[ext].RetailTransactionTableView**.
-    4. In the details section, in the **Channel field mapping** section, verify that the new custom (extension) columns are listed in the mapping.
+    3. In the details area, under the **Channel field mapping** section, verify that the new custom (extension) columns are listed in the mapping.
 
-2. Test that the CDX job will upload and pull from the original and extension tables on the channel side by using their unified view:
+2. Test that the CDX job will upload and pull from the original and extension tables on the channel side(a view combining original and extensible tables is generated by the CDX framework):
 
     1. Create some transactions in Retail Modern POS (MPOS).
     2. Because the extension table isn't used in the Commerce Runtime (CRT) and MPOS, you must manually insert data into the extension table. Run the following script after you change the required values.
@@ -412,3 +418,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
 3. If the upload session is applied successfully, go to **Retail and Commerce** > **Inquiries and reports** > **Store transactions**, and search for the new transactions that you just uploaded. Verify that the transactions, seat number, and server staff ID custom columns have the expected values.
 
     Additionally, verify that the transactions that don't have a corresponding record in the [ext].ContosoRetailTransactionTable extension table on the channel side are also uploaded. Verify that these transactions have default values for the seat number and server staff ID. The seat number should be set to **0** (zero), and the server staff ID should be set to **000160**.
+    
+#### MPOS offline transaction sync
+ Switch MPOS to offline mode and do some transaction. Switch back to online and verify that the data is synced properly from the offline database to the channel database and then to headquarters.
+

@@ -45,15 +45,7 @@ When RSAT generates the Excel parameter file for a test case, validation steps a
 
 ## Validate expected values using operators
 
-You can also use operators in your validation steps. To utilize this feature, you need to edit the config file named **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** in the Regression suite automation tool installation folder. Edit the file and modify the value of the **AddOperatorFieldsToExcelValidation** to **true**.
-
-```Xml
-<add key=" AddOperatorFieldsToExcelValidation" value="true" />
-```
-
-In previous versions of the Regression suite automation tool, you could only validate if a control value is equal to an expected value. This new feature allows you to validate that a variable is not equal, less than, or greater than a specified value.
-
-If you have been using an older version of the tool, you will need to regenerate new Excel parameter files to take advantage of this functionality. In the Excel file, a new **Operator** field will appear, as shown in the following image.
+You can also use operators in validation steps to validate that a variable is not equal, less than, or greater than a specified value. To use this feature, open the **Settings** tab and select the **Optional** tab. Turn on the setting named **Use operators for validation**. This option is available as of RSAT version 1.210. If you have been using an older version of the tool, you must regenerate new Excel parameter files to take advantage of this functionality. In the Excel file, a new **Operator** field will appear, as shown in the following image.
 
 ![Validation in Excel in earlier version](media/validate-test-case-example.png)
 

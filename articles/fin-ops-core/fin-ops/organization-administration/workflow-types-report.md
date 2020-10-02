@@ -3,7 +3,7 @@
 
 title: Workflow types report
 description: This topic points you to a report that lists the available workflow types.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -40,4 +40,4 @@ To create a workflow, you must first select the *type* of workflow that you want
 
 ## View the report
 
-The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
+The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization. For more information, see [Find information about standard data entities](../../dev-itpro/data-entities/data-entities-report.md).

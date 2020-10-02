@@ -5,7 +5,7 @@ title: Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Modern POS (MPOS) triggers and printing
+# POS triggers
 
 [!include [banner](../../includes/banner.md)]
 
@@ -167,6 +167,8 @@ The following table lists the available triggers and denotes whether they can be
 | PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
+| PreResendEmailReceiptTrigger (10.0.13)	| Cancelable 	 | Executed before sending the email from the Show journal view.|
+
 
 
 ## Shift triggers
@@ -217,6 +219,11 @@ The following table lists the available triggers and denotes whether they can be
 | PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
 | PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
+## Inventory triggers
+| Trigger              | Type           | Description                                             | Release		|
+|----------------------|----------------|---------------------------------------------------------|--------------------------|
+| PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
+| PreUpdateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is updated. | 10.0.15 |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
