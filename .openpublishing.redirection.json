@@ -12996,6 +12996,9 @@
     {
       "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md",
       "redirect_url": "/dynamics365/human-resources/hr-learning-depending-question",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/retail/add-recommendations-control-pos-screen.md",
       "redirect_url": "/dynamics365/commerce/add-recommendations-control-pos-screen",
       "redirect_document_id": "false"
