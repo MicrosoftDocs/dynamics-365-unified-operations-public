@@ -110,7 +110,7 @@ After this, you can see the route card should show the quantities posted. It sho
 It is not possible to only report error quantity on the production order, without goods quantity. This is **not** a supported scenario. The report as finished update will eventually fail when trying to End the production order with the error message: "Missing report as finished quantity" 
 
 ## Is it possible to trace finished goods serial numbers against the consumed goods serial numbers?
-Tracing of finished goods serials against consumed serials for material consumed by the production order for making the finished goods is currently not supported. This capability is on the backlog for a future release.
+Tracing of finished goods serials against consumed serials for material consumed by the production order for making the finished goods is currently not supported.
 
 ## Is it possible to Report as Finished for error quantity only with no time or material reported.  
 When an absence code is selected in an electronic timecard or in the job card terminal, it is not possible to enter an absence reason code. The reason codes are set on the absence. 
