@@ -42,7 +42,7 @@ This document will focus on the "Web Storefront" box from the below [Commerce ar
 
 ![High-level architectural overview](media/architecture-overview-web-storefront.jpg)
 
-## Component-based architecture
+## Web Storefront component-based architecture
 
 The architecture of the platform takes advantage of a reuse-based approach to define, implement, and compose loosely coupled independent components. In this approach, the emphasis is on separation of concerns.
 
