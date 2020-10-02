@@ -388,6 +388,8 @@
       items:
       - name: Overview
         href: database/dbmovement-operations.md
+      - name: Database movement toolkit
+        href: database/database-movement-toolkit.md
       - name: Quick start guides
         items:
         - name: Refresh database
@@ -1566,6 +1568,8 @@
           href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
+        - name: AX 2012 upgrade - Data upgrade in sandbox environments using dacpac process
+          href: migration-upgrade/upgrade-data-sandbox-dacpac.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
         - name: AX 2012 upgrade - On-premises environments

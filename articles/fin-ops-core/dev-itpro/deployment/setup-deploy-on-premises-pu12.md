@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -798,7 +798,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Set ALLOW_SNAPSHOT_ISOLATION ON
     3. Set the specified database file and log settings
     4. GRANT VIEW SERVER STATE TO axdbadmin
-    5. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    5. GRANT ALTER ANY EVENT SESSION TO axdbadmin
+    6. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    7. GRANT ALTER ANY EVENT SESSION TO [contoso\svc-AXSF$]
 
 2. Run the following command to reset the database users.
 
