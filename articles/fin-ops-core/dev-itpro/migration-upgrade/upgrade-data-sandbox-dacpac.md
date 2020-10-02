@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-
 description: This topic will help customers who no longer have Remote Desktop protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -130,7 +130,7 @@ When the script has finished running, open SSMS, and verify that you can see the
 
 ## Transfer data from AX 2012 to the sandbox database
 
-Now that the schema is in place, you must transfer the data to the target tables. A SQL linked server will be used for this transfer. The transfer will also take advantage of parallelism features that are available in the instance of Windows PowerShell version 7.0 or later that is included in the Database Movement toolkit.
+Now that the schema is in place, you must transfer the data to the target tables. A SQL-linked server will be used for this transfer. The transfer will also take advantage of parallelism features that are available in the instance of Windows PowerShell version 7.0 or later that is included in the Database Movement toolkit.
 
 Use Windows PowerShell to change the directory to the folder location where you unzipped the Database movement toolkit (for example, C:\\dbmovement-toolkit\\). Then run the **AX2012DataTransfer.ps1** script. Use the following parameters:
 
