@@ -122,12 +122,31 @@ In order to assign your scale unit to a Dynamics 365 Supply Chain Management hub
 - Navigate to the *ScaleUnitHubSetup* menu item
 - Enter the following value
   - Name
-  - Hub AAD client id
-  - Get it the value from
-    - Hub and Scale unit setup values  (Web view)
+  - Hub AAD client id(Availble from  AAD App registrations in the Azure portal)
 - Prepare workloads to be configured (see section below)
 - Enter the scale units and their associated work loads
 - Click on Setup Hub
 :::image type="content" source="media/cloud_edge-lbd-configurehub.png" alt-text="Configure you hub for a edge scale unit":::
 
 ### Configuration step on the LBD scale unit environment
+
+- Go to ScaleUnitSetup menuitem
+- Enter the following value
+  - Name (should match the value you have entered in the Hub setup)
+  - Hub resource Id
+    - https://usnconeboxax1aos.cloud.onebox.dynamics.com 
+  - Hub url
+    - https://usnconeboxax1aos.cloud.onebox.dynamics.com/  (NOTE THE / AT THE END)
+  - Hub AAD tenant id
+    - https://login.windows-ppe.net/AX7Partner.ccsctp.net 
+  - Hub AAD client id & Hub encrypted secret(Availble from AAD App registrations in the Azure portal)
+- Click on "Initialize scale unit" to bootstrap the scale unit with initialization data from the hub.
+- Click Deploy.
+
+
+#### Prepare workloads to be configured
+##### WES
+Before configuring the WES workload the **Organization-wide work blocking** and **Automatic assigning of the guids on WHS user creation** (should be enabled by default) features should be enabled from feature management.
+
+##### MES
+Nothing to be done here.
