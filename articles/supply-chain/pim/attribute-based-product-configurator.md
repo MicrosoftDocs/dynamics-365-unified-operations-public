@@ -5,7 +5,7 @@ title: Attribute-based sales prices for constraint-based product configuration
 description: This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. 
 author: sorenva 
 manager: tfehr
-ms.date: 08/17/2020
+ms.date: 10/2/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,16 +24,16 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: Release 10.0.15
 ---
 
 # Attribute-based sales prices for constraint-based product configuration
 
 This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
 
-## Define your default currency
-<!-- KFM: Retitle and re-target to also mention the "attach price model" option ? -->
-Before you start building your price models, you must define a default currency, which is used when you build your sales price models. You can also choose to attach an Excel-based price breakdown to the order or quotation lines. The price breakdown will enable you to share details with customers about how you arrived at a specific sales price for a configured product.
+## Set relevant product information management parameters
+
+Before you start building your price models, you must define a default currency, which is used when you build your sales price models. You can also choose whether to attach an Excel file with a price breakdown for all order or quotation lines. The price breakdown will enable you to share details with customers about how you arrived at a specific sales price for a configured product.
 
 To set your default currency:
 
@@ -43,8 +43,10 @@ To set your default currency:
 
     ![Set the default currency for constraint-based product configuration](media/prod-config-currency.png "Set the default currency for constraint-based product configuration")
 
+1. If you'd like to attach an Excel file with a price breakdown for all order or quotation lines, then in the **Price model** section, set **Attach** to *Yes*.
+
 ## <a name="build-price-model"></a>Build your sales price models
-<!-- KFM: Can we give one or two sentences that describe what a sales price model is and how we are going to use it? Mention how it relates to product configuration models. -->
+
 To build a sales price model:
 
 1. Go to  **Product information management \> Products \> Product configuration models**.
@@ -101,7 +103,7 @@ To test how the sales prices behave in a configuration session, open the edit pa
 
 ![Test your product model](media/prod-config-test.png "Test your product model")
 
-The downloaded spreadsheet shows both the absolute value and the contribution as a percentage for each active price element. If you have set the **Price breakdown** parameter, this Excel sheet gets attached to the order or quotation line. <!-- KFM: Where is the **Price breakdown** parameter? Is this now called **Attach** (Under **Price Model** on **Product information management parameters**)? -->
+The downloaded spreadsheet shows both the absolute value and the contribution as a percentage for each active price element. If you have set the **Attach** price model option on the **Product information management parameters** page, this Excel sheet gets attached to the order or quotation line.
 
 ![Excel spreadsheet showing price breakdown](media/prod-config-excel-example.png "Excel spreadsheet showing price breakdown")
 
@@ -118,7 +120,7 @@ To set up selection criteria for price models:
     - **Name** - Enter a name for this row.
     - **Description** - Briefly describe the query and what it is for.
     - **Price model** - Select a [price model](#build-price-model) (from the current configuration model) that the query will apply when triggered.
-    - **Order type** - <!-- KFM: What does this do? Where do these options come from? -->
+    - **Order type** - Select the type of order where the query will apply.
     - **Valid from** - Specify the first day where the query will apply.
     - **Expire by** - Specify the last date where the query will apply.
 
@@ -137,11 +139,10 @@ To set up selection criteria for price models:
 
 ## Set attribute-based sales prices for the product model version
 
-The final step is to specify attribute-based sales prices for the product model version. <!-- KFM: Can we add a couple of sentences that mention what we are doing here and why? --> To do this:
+The final step is to specify attribute-based sales prices for the product model version. To do this:
 
 1. Go to  **Product information management \> Products \> Product configuration models**.
 1. Select the target product configuration model.
 1. On the Action Pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
 1. The **Versions** page opens. Make sure the **Pricing method** is set to **Attribute based**.
     ![Set the pricing method to attribute based](media/prod-config-versions.png "Set the pricing method to attribute based")
-
