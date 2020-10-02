@@ -222,10 +222,6 @@
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
         href: accounts-payable/three-way-matching-policies.md
-      - name: Vendor invoice automation
-        items:
-        - name: Automating vendor invoicing processes overview
-          href: accounts-payable/auto-vendr-invc-process.md
       - name: Accounts payable invoice matching
         items:
         - name: Accounts payable invoice matching overview
@@ -234,14 +230,14 @@
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Vendor invoice automation    
         items: 
-        - name: Submit invoices to the workflow system and match product receipt lines
-          href: accounts-payable/submit-invoice-workflow-automatically.md
-        - name: View vendor invoice automation results
-          href: accounts-payable/view-automated-vendor-invoice.md
         - name: Automated vendor invoicing processes overview
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
           href: accounts-payable/vnd-invoice-set-up-options.md
+        - name: Submit invoices to the workflow system and match product receipt lines
+          href: accounts-payable/submit-invoice-workflow-automatically.md
+        - name: View vendor invoice automation results
+          href: accounts-payable/view-automated-vendor-invoice.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
