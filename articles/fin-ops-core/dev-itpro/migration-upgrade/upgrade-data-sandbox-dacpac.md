@@ -53,11 +53,11 @@ By default, all sandbox Standard Acceptance Test environments use Azure SQL Data
 
 However, your public IP address can be used to grant access to your source system. Different methods can be used to grant this access, depending on your environment type and RDP access. Regardless of the method, connection to the database requires that the server and the database be explicitly specified. You can find this information on the environment details page in LCS. 
 
-Find the user name record for **axdbadmin**, and make a note of the SQL server and the SQL database in the format **{sqlServer\\sqlDatabase}**, such as **spartan-nam-opsprod365433\\DBOpsProd365\_SandboxUAT\_d2145fe**. In this case, the server value for SQL Server Management Studio (SSMS) is **spartan-nam-opsprod365433.database.windows.net**, and the database value is **DBOpsProd365\_SandboxUAT\_d2145fe**. To specify the database, you must select **Options** in the SSMS connection dialog box. Use the **axdbadmin** credentials (user name and password).
+Find the user name record for **axdbadmin**, and make a note of the server and the database in the format **{sqlServer\\sqlDatabase}**, such as **spartan-nam-opsprod365433\\DBOpsProd365_SandboxUAT_d2145fe**. In this case, the server value for Microsoft SQL Server Management Studio (SSMS) is **spartan-nam-opsprod365433.database.windows.net**, and the database value is **DBOpsProd365_SandboxUAT_d2145fe**. To specify the database, you must select **Options** in the SSMS connection dialog box. Use the **axdbadmin** credentials (user name and password).
 
 ### Microsoft-managed environments where RDP access is available
 
-If you have RDP access to your sandbox, sign in to the sandbox AOS virtual machine (VM), and open SSMS. In SSMS, enter the SQL server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+If you have RDP access to your sandbox, sign in to the sandbox AOS virtual machine (VM), and open SSMS. In SSMS, enter the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
@@ -72,9 +72,9 @@ Note that firewall rules are deleted whenever you do a database refresh or whene
 
 ### Microsoft-managed environments without RDP access
 
-If you no longer have RDP access to your sandbox, you can add your IP address to the allow list in a self-service manner from LCS. In LCS, open the environment details page for your sandbox environment, select **Maintain** \> **Enable access**, and then, in the dialog box, add the IP address of your source environment. This entry will expire after several hours.
+If you no longer have RDP access to your sandbox, you can add your IP address to the allow list in a self-service manner from LCS. In LCS, open the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then, in the dialog box, add the IP address of your source environment. This entry will expire after several hours.
 
-Before the entry expires, connect to the sandbox database by entering the SQL server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+Before the entry expires, connect to the sandbox database by entering the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
@@ -103,13 +103,13 @@ Open SSMS, and connect to your sandbox database as you did in the previous step.
 * Full text catalogs
 * User-defined table types
 
-On the **Set Scripting Options** page, select **Advanced**, and then change the **Script DROP and CREATE** value to **Script DROP**. Select **OK**, and then select the **Save to new query window** option. Select **Next** to move through the summary. The query window that appears shows all the scripts in the correct order so that the objects can be dropped from the database.
+On the **Set Scripting Options** page, select **Advanced**, and then change the **Script DROP and CREATE** value to **Script DROP**. Select **OK**, and then select the **Save to new query window** option. Select **Next** to move through the summary. The query window that appears contains a script that lists all the objects in the correct order so that the objects can be dropped from the database.
 
-When you're ready to continue, run the script directly against the AXDB database of your sandbox environment. This script takes an average of 15 to 20 minutes to run.
+When you're ready to continue, run the script in the query window that was generated directly against the AXDB database of your sandbox environment. This script takes an average of 15 to 20 minutes to run.
 
 ## Publish the schema from AX 2012 to the sandbox database
 
-Now that the database is empty, you can bring your non-upgraded 2012 schema. For this step, you should download the latest version of the [Database movement toolkit](../database/database-movement-toolkit.md) into your source environment.
+Now that the database is empty, you can publish your non-upgraded 2012 schema. For this step, you should download the latest version of the [Database movement toolkit](../database/database-movement-toolkit.md) into your source environment.
 
 Use Windows PowerShell to change the directory to the folder location where you unzipped the Database movement toolkit (for example, C:\\dbmovement-toolkit\\). Then run the **AX2012SchemaPublish.ps1** script. Use the following parameters:
 
@@ -117,7 +117,7 @@ Use Windows PowerShell to change the directory to the folder location where you 
 * **AX2012DBName** – The name of your AX 2012 database (for example, **MicrosoftDynamicsAX**).
 * **TargetServerName** – The server value of your sandbox database server (for example, **spartan-srv-12345.database.windows.net**). You retrieved this value in a previous step.
 * **TargetDBName** – The name of your AXDB database (for example, **d365opsprod-12345**). You retrieved this value in a previous step.
-* **AxDBAdminPassword** – The password for the **axdbadmin** SQL account.
+* **AxDBAdminPassword** – The password for the **axdbadmin** database account.
 
 ![Running the AX2012SchemaPublish.ps1 script](media/upgrade-dacpac-extract.png)
 
@@ -138,9 +138,9 @@ Use Windows PowerShell to change the directory to the folder location where you 
 * **AX2012DBName** – The name of your AX 2012 database (for example, **MicrosoftDynamicsAX**).
 * **TargetServerName** – The server value of your sandbox database server (for example, **spartan-srv-12345.database.windows.net**). You retrieved this value in a previous step.
 * **TargetDBName** – The name of your AXDB database (for example, d365opsprod-12345). You retrieved this value in a previous step.
-* **AxDBAdminPassword** – The password for the axdbadmin SQL account.
-* **LinkedServerName** – The name of the linked server to create (for example, **AX2012Link**).
-* **DegreeOfParallelism** – The number of tables that should be processed in parallel (for example, **3**). The value should be 50 percent of the number of cores that are available in the source environment, because the script is CPU-intensive and RAM-intensive.
+* **AxDBAdminPassword** – The password for the axdbadmin database account.
+* **LinkedServerName** – The name of the SQL-linked server to create (for example, **AX2012Link**).
+* **DegreeOfParallelism** – The number of tables that should be processed in parallel (for example, **3**). The value should be no more than half of the number of cores that are available in the source environment, because the script is CPU-intensive and RAM-intensive.
 
 ![Running the AX2012DataTransfer.ps1 script](media/upgrade-dacpac-xfer.png)
 
@@ -163,7 +163,7 @@ There are several ways to troubleshoot data upgrade errors. In some cases, you c
 
 If the upgrade fails while an upgrade script is running, you can view the errors in the ReleaseUpdateScriptsErrorLog table in the sandbox database. To access this table, connect to the sandbox database by using the information in previous steps.
 
-If you can fix the data, you can resume the upgrade from LCS. However, note that you can't resume from LCS more than eight times. Any attempt to resume more than eight times will cause another failure, because the back-end systems don't allow more attempts. In this case, you can use the **Abort** button to cancel the upgrade package.
+If you can fix the data, you can resume the upgrade from LCS. However, note that you can't resume from LCS more than eight times. Any attempt to resume more than eight times will cause another failure, because the servicing systems don't allow more attempts. In this case, you can use the **Abort** button to cancel the upgrade package and try again later.
 
 > [!NOTE]
 > If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
