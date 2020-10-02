@@ -232,7 +232,7 @@
     - name: Troubleshoot Human Resources
       items:
       - name: Get support
-        href: hr-admin-troubleshooting-support.md
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
       - name: Optimize performance by scheduling batch jobs after hours
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
