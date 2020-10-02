@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 10.0.15
 > [!CAUTION]
 > The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to these Preview Terms. [**LINK MISSING**]
 
-Edge scale units can deployed by creating a Local Business Data environment and configuring it to function as a scale unit for an Dynamics 365 Supply Chain Management environment in the cloud that has been configure to function as a hub for scale units.  
+Edge scale units can be deployed by creating a Local Business Data environment and then configuring it to function as a scale unit. This is achieved by associating the LBD environment with a Dynamics 365 Supply Chain Management Cloud environment, that has been configured to function as a hub for scale units.  
 
-This document describes how to setup an on-premises LBD environment as an edge scale unit which can be associated to a cloud service fabric based environment which has been configured to function as a hub.
+This document describes how to setup an on-premises LBD environment as an edge scale unit, which can then be associated to a hub-configured cloud service fabric based environment.
 
 ## Steps to create an environment for an on-premise edge scale unit using LBD deployment mechanics
 
