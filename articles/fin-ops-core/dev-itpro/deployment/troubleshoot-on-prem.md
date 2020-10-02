@@ -1497,7 +1497,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
    at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
 ```
 
-**Reason:** This issue occurs because the SQL account used by Finance and Operations apps does not have sufficient permissions to execute the operation.
+**Reason:** This issue occurs because the SQL Server account used by Finance + Operations does not have sufficient permissions to execute the operation.
 
 **Resolution:** Execute the following command in your SQL Server:
 
