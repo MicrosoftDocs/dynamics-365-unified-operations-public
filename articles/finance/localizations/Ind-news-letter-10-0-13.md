@@ -103,7 +103,7 @@ Currently, you can't post credit or debit notes against a posted export invoice.
 
 #### Dynamics AX 2012 R3
 
-- For information about the update for AX 2012 R3, see the following KB article: [Credit/Debit note against Export order for India in Dynamics AX2012 R3](https://support.microsoft.com/help/4579851)
+- For information about the update for AX 2012 R3, see the following KB article: [Credit/Debit note against Export order for India in Dynamics AX2012 R3](https://support.microsoft.com/help/4579851).
 - [Download the package](https://fix.lcs.dynamics.com/Issue/Details?bugId=3982391).
 
 ### New GST Return offline tool (trial version prototype) for India
