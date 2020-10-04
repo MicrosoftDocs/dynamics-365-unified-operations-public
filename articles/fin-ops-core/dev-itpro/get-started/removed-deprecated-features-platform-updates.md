@@ -175,6 +175,19 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto-generated links to assist in navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
 
+
+## Unrelated to platform update
+
+### Workflow request change dialog box no longer includes user selection drop-down list
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We do not guarantee all outbound requests from an AOS are on a dedicated IP address due to the recent changes to improve networking and resolve SQL connectivity issues on Self Service. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Self service environments with customizations currently relying on FTP |
+| **Deployment option**              | All |
+| **Status**                         | This feature is no longer supported | 
+| **Workarounds**                    | Customizations currently relying on FTP could consider [the actions here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/known-issues-new-deployment-experience).| 
+
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md).
 
