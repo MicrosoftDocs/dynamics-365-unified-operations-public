@@ -154,12 +154,12 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* If you use the Microsoft Edge based on Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. 
-     1. Open a new browser tab in Microsoft Edge.
-     2. Enter **edge://flags** and click enter.
-     3. Search for the **ClickOnce Support** option. You can search for it, or try this direct link: **edge://flags/#edge-click-once**
-     4. Set the drop-down to **Enabled**.
-     5. Click **Restart Browser** option. 
+* If you use Microsoft Edge with the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. 
+     1. Open a new browser in Microsoft Edge.
+     2. Enter **edge://flags** and select **Enter**.
+     3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
+     4. Set the drop-down menu option to **Enabled**.
+     5. Select**Restart Browser**.
 
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
 
