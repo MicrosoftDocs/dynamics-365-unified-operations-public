@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail data residency
-description: This topic provides information about data residency considerations when deploying the Retail Cloud Scale Unit.
+title: Commerce data residency
+description: This topic provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: AnnBe
 ms.date: 04/17/2019
@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 8.0
 ---
 
 
-# Retail data residency
+# Commerce data residency
 
 [!include[banner](../includes/banner.md)]
 
 
 ## Choose a region
 
-When you initialize a Retail Cloud Scale Unit (RCSU), you need to select a data center location to host. To minimize network latency and improve performance, you should choose a datacenter location that is in proximity to the channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You can also reference a web-based utility, such as [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
+When you initialize a Commerce Scale Unit (cloud), you need to select a data center location to host. To minimize network latency and improve performance, you should choose a datacenter location that is in proximity to the channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You can also reference a web-based utility, such as [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
 
 ## Data between regions
 
@@ -49,15 +49,17 @@ You can configure Commerce Data Exchange (CDX) so that only specific segments of
 
 ### Prerequisites
 
-Before you configure the record segments that will be synchronized, you need to configure Channel database groups. These database groups must be configured for each RCSU where you want to synchronize segmented data. All RCSUs in the same Channel database group receive the data that is needed to serve all the channels in that RCSU. You will need to create a separate database group for each RCSU channel database where you plan to synchronize segmented data. To do this, perform the following steps:
+Before you configure the record segments that will be synchronized, you need to configure Channel database groups. These database groups must be configured for each CSU where you want to synchronize segmented data. All CSUs in the same Channel database group receive the data that is needed to serve all the channels in that CSU. You will need to create a separate database group for each CSU channel database where you plan to synchronize segmented data. To do this, perform the following steps:
 
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Channel database group**.
-2. Create a new database group for each RCSU where you want to synchronize segmented data.
-3. Go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Channel database**.
-4. Select the Channel database for the corresponding Retail Cloud Scale Unit.
-5. Select **Edit** and choose the channel database group that you created in step 2.
-6. Select **Save**. 
-7. Select **Full data sync for all jobs** for the selected channel database.
+2. Create a new database group for each CSU where you want to synchronize segmented data.
+3. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
+4. Add the newly created Channel database group to each scheduler job.
+5. Go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Channel database**.
+6. Select the Channel database for the corresponding Commerce Scale Unit (cloud).
+7. Select **Edit** and choose the channel database group that you created in step 2.
+8. Select **Save**. 
+9. Select **Full data sync for all jobs** for the selected channel database.
 
 ### Available controls for synchronizing segments of data to different RCSUs
 
