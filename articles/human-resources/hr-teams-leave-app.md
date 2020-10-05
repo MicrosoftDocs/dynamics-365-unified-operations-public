@@ -173,8 +173,6 @@ If you're a manager with direct reports, you can view your team's approved and p
 
 The calendar displays your direct reports' approved and pending time off.
 
-![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
-
 ## Troubleshooting
 
 If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
