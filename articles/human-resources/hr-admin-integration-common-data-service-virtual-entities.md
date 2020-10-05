@@ -80,8 +80,8 @@ First, you need to register the app in the Azure portal so the Microsoft identit
 
 11. Record the secret's value. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
-   > [!IMPORTANT]
-   > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
+    > [!IMPORTANT]
+    > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
 
 ### Install the Dynamics 365 HR Virtual Entity app
 
