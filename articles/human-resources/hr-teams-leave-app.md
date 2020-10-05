@@ -95,7 +95,7 @@ When you're done entering information, select **Submit** to submit it for approv
 
 ## Manage your leave in Teams
 
-The **Time off** tab allows you to view:
+The **Time off** tab allows you to view: 
 
 - Balance information for each leave type you're enrolled in
 
