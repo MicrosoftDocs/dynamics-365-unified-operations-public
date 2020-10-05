@@ -5,7 +5,7 @@ title: Set up technical support for Finance and Operations apps
 description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,13 +101,13 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 ## Create an issue 
 The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
-[!WARNING]
-If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
+> [!WARNING]
+> If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
-[!NOTE]
-If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
+> [!NOTE]
+> If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
     [![Click to connect to Lifecycle Services.](./media/wiki2.png)](./media/wiki2.png)
 
 
@@ -115,13 +115,15 @@ If you haven’t already connected to Lifecycle Services (LCS), a dialog box wil
 
 After you connect to LCS, you can search for existing Microsoft published updates and fixes. Enter your issue in the **Search** box and press **Enter**. 
 
-[!NOTE]
-If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
+> [!NOTE]
+> If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
 
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
 - **Download view** - By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
-[!NOTE]
-The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
+
+    > [!NOTE]
+    > The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
+    
 - **Request view** - By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the Azure DevOps project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
 ### Search for project work items in Azure DevOps
@@ -134,8 +136,8 @@ When you search for published Azure DevOps work items using the support search b
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
-[!NOTE]
-The published Azure DevOps work items are only visible to your organization's users.  
+> [!NOTE]
+> The published Azure DevOps work items are only visible to your organization's users.  
 
 ### Create and submit a new issue
 If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
@@ -147,20 +149,21 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 1.  Go to [lcs.dynamics.com,](https://lcs.dynamics.com/en/) and sign in.
 2.  Open the LCS project that is associated with the environment that you want to view issues for.
 3.  Click the **Support** tile. A list of the issues that have been created appears.
+
 [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
 2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
 
-[!NOTE]
-There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
+    > [!NOTE]
+    > There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
 
 3.  The Azure DevOps editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
 
 ### Troubleshoot issues
-[!NOTE]
-The information in this section is not applicable to on-premises deployments.
+> [!NOTE]
+> The information in this section is not applicable to on-premises deployments.
 
 Issues that are created through the client contain metadata about the environment. When those issues are selected in the **Issue** grid, the **Troubleshoot** button becomes available. When you click **Troubleshoot**, the **Event monitoring** page opens. This page lets you access events and logs that are related to the issue. The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported. 
 [![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
@@ -181,10 +184,11 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 6.  Describe your issue, provide your contact information, and then click **Submit**.
 
 ## Support settings 
-[!NOTE]
-The information in this section is not applicable to on-premises deployments. 
+> [!NOTE]
+> The information in this section is not applicable to on-premises deployments. 
 
 When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
+
 [![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
 
 ## Support plans (on-premises only)
