@@ -37,7 +37,7 @@ Dynamics 365 Human Resources is a virtual data source in Common Data Service. It
 
 To enable CRUD operations on Human Resources entities from Common Data Service, you must make the entities available as virtual entities in Common Data Service. This lets you perform CRUD operations from Common Data Service and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
 
-## Available virtual entities for Human Resources apps
+## Available virtual entities for Human Resources
 
 All Open Data Protocol (OData) entities in Human Resources are available as virtual entities in Common Data Service. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Common Data Service. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
 
