@@ -55,7 +55,7 @@ The list provides the following columns, which are also numbered in the previous
 1. **Selection column**: The left-hand column shows a check mark to indicate which jobs have been selected by the worker. It is possible to select multiple jobs in the list. To select all the jobs, tap the check mark in the column header. When a single job is selected, details about that job are shown at the bottom of the screen.
 1. **Job status column**: This column indicates the status of each job using icons. Jobs with no icon have a status of *Not started*. A green triangle icon indicates jobs with a status of*Started*. The icon with the two yellow vertical lines indicates jobs with a status of*Stopped*.
 1. **High priority column**: Jobs that show an exclamation mark in this column have high priority.
-1. **Oder**: Shows the production order number for a job.
+1. **Order**: Shows the production order number for a job.
 1. **Description**: Shows a description of the operation that a job is part of.
 1. **Requested**: Shows the quantity that a job is planned to produce.
 1. **Started**: Shows the quantity that has already been started for a job.
@@ -70,7 +70,7 @@ The list provides the following columns, which are also numbered in the previous
 The list provides the following columns:
 
 - **Selection column**: The left-hand column shows a check mark to indicate which jobs have been selected by the worker. It is possible to select multiple jobs in the list. To select all the jobs, tap the check mark in the column header. When a single job is selected, details about that job are shown at the bottom of the screen.
-- **Oder**: Shows the production order number for a job.
+- **Order**: Shows the production order number for a job.
 - **Description**: Shows a description of the operation that a job is part of.
 - **Requested**: Shows the quantity that a job is planned to produce.
 - **Started**: Shows the quantity that has already been started for a job.
