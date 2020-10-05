@@ -195,3 +195,9 @@ Features in Feature Management are defined as feature classes. A feature class *
     [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
     internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
     
+### What is the IFeatureLifecycle implemented by some feature classes?
+IFeatureLifecycle is a Microsoft-internal mechanism for indicating feature lifecycle stage. 
+Features can be:
+- PrivatePreview - needs a flight to be visible
+- PublicPreview - shown by default but with a warning that the feature is in preview
+- Released - fully released
