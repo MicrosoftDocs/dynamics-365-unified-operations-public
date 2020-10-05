@@ -85,11 +85,15 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
     [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    
     [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  Click **Setup Azure DevOps**.
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
-6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![Enter the personal access token that you created in the previous section.](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
+6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. 
+
+    [![Enter the personal access token that you created in the previous section.](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
+
 7.  Click **Continue**.
 8.  Select the VSO project to use, and then click **Continue**.
 9.  Click **Save**.
@@ -119,6 +123,7 @@ After you connect to LCS, you can search for existing Microsoft published update
 > If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
 
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
+
 - **Download view** - By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
 
     > [!NOTE]
@@ -143,6 +148,7 @@ When you search for published Azure DevOps work items using the support search b
 If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
 
 ## Work with issues in LCS
+
 ### View issues
 In the LCS **Support** tile, issues are stored as work items in the Azure DevOps project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of Azure DevOps project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in Azure DevOps, the changes will be reflected in Support issues. Issues can be assigned to any user in the Azure DevOps project. Users don't need to have access to LCS to work with issues in Azure DevOps.
 
@@ -150,7 +156,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 2.  Open the LCS project that is associated with the environment that you want to view issues for.
 3.  Click the **Support** tile. A list of the issues that have been created appears.
 
-[![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
+    [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
@@ -166,7 +172,9 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 > The information in this section is not applicable to on-premises deployments.
 
 Issues that are created through the client contain metadata about the environment. When those issues are selected in the **Issue** grid, the **Troubleshoot** button becomes available. When you click **Troubleshoot**, the **Event monitoring** page opens. This page lets you access events and logs that are related to the issue. The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported. 
+
 [![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
+
 [![LCS-Monitoring-1024x419](./media/lcs-monitoring-1024x4191-1024x419.png)](./media/lcs-monitoring-1024x4191.png)
 
 ### Submit an issue to Microsoft
@@ -184,6 +192,7 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 6.  Describe your issue, provide your contact information, and then click **Submit**.
 
 ## Support settings 
+
 > [!NOTE]
 > The information in this section is not applicable to on-premises deployments. 
 
@@ -192,6 +201,7 @@ When you deploy your application from Lifecycle Services, no configuration is re
 [![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
 
 ## Support plans (on-premises only)
+
 The following customer and partner support plans are available for on-premises deployments.
 - **Customer** 
     - Software assurance
