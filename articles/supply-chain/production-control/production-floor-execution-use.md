@@ -144,4 +144,13 @@ Workers can open a document attached to a job by selecting the **Instructions** 
 
 ## Open a mixed-reality Guide for HoloLens
 
-When a worker chooses a job, the production floor execution interface can show a list of relevant Guides (if available) that can provide mixed-reality instructions through a Microsoft HoloLens. When the worker chooses a guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and starts showing the required instructions. For information about creating and using Guides for HoloLens, see [Provide mixed-reality Guides for workers in production](instruction-guides-in-production-overview.md).
+[Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) can help empower workers by providing hands-on learning with mixed reality. You can define standardized processes with step-by-step instructions that guide workers to the tools and parts they need and show workers how to use these tools in real work situations. The process works like this:
+
+1. Each time a worker opens a job list on the shop floor execution interface, it finds all relevant Guides for the jobs shown.
+1. The worker selects the **Guides** button to view the list of Guides.
+1. The worker selects a relevant Guide from the list.
+1. The shop floor execution interface displays a QR code for the selected Guide.
+1. The worker puts on a HoloLens and glances at the QR code to launch the Guide.
+1. The worker works through the Guide to learn the task.
+
+For more information about how to create, assign, and use Guides for HoloLens, see [Provide mixed-reality Guides for workers in production](instruction-guides-in-production-overview.md).
