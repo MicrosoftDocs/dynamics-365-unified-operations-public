@@ -159,7 +159,7 @@ Additionally, the Finance and Operations architecture is being enhanced to build
 
 Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions on Microsoft-managed environments. <strong>Microsoft will plan and work with customers to move them to an appropriate data center beginning October 19, 2020. This will happen in a phased approach and select customers will receive advance notification before we migrate them to a supported region.</strong>
 
-If there are other customer workloads that are not part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with the customer to coordinate a plan for the overall migration. For more information, <strong>please see the FAQ on regions below.</strong>
+If there are other customer workloads that are not part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with the customer to coordinate a plan for the overall migration. For more information, see [Frequently asked questions](cloud-deployment-overview.md#frequently-asked-questions).
 
 ## Frequently asked questions
 
