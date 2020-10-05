@@ -39,7 +39,7 @@ The following keyboard shortcuts can help you quickly and efficiently enter data
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
-Some of the shortcuts on this page are **key chords**, meaning they require two consecutive sets of key combinations (separated by a comma) that need to be independently  pressed to trigger the required action. For example, the shortcut "Alt+M,A" requires the user to first press "Alt+M", release the keys, and then press "A". 
+Some of the shortcuts on this page are *key chords*, meaning they require two consecutive sets of key combinations (separated by a comma) that need to be independently pressed to trigger the required action. For example, the shortcut "Alt+M,A" requires the user to first press "Alt+M", release the keys, and then press "A". 
 
 ## Finding a shortcut
 
@@ -245,7 +245,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
-## [Task recorder](../../dev-itpro/user-interface/task-recorder.md) shortcuts 
+## [Task recorder](../../dev-itpro/user-interface/task-recorder.md)shortcuts 
 
 | To do this                                                                    | Press                      |
 |-------------------------------------------------------------------------------|----------------------------|
@@ -254,11 +254,11 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Toggle Rails mode (while playing a task guide)                                | Alt+R,L                    |
 | Go to the previous step (while playing a task guide)                          | Alt+R,P                    |
 | Go to the next step (while playing a task guide)                              | Alt+R,N                    |
-| Toggle focus between the page and the annimated pop-up prompt (while playing a task guide) | Alt+R,F               |
-| Expand/collapse the the annimated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
-| Show more/less information in the the annimated pop-up prompt (while playing a task guide) | Alt+R,M                    |
+| Toggle focus between the page and the animated pop-up prompt (while playing a task guide) | Alt+R,F               |
+| Expand/collapse the animated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
+| Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
 ## Additional resources
 
-- [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
