@@ -108,15 +108,15 @@ You may have requirements to support both right-to-left (RTL) and left-to-right 
 
 Each theme has a **styles\THEME_NAME.theme.scss** file that is created using the **yarn msdyn365 add-theme** command-line interface (CLI) command. For example, using the command **yarn msdyn365 add-theme spring** to create a new theme called "spring" will create the file "\src\themes\spring\styles\spring.theme.scss", which contains the SCSS code for the theme. SCSS files are compiled into CSS files when using the **yarn start** or **yarn pack** commands, and are then used to render site pages. 
 
-To support specific RTL or LTR versions of a SCSS file, you can provide additional file(s) using the following file naming convention: **THEME_NAME.rtl.theme.scss** for RTL support and **THEME_NAME.ltr.theme.scss** for LTR support. When a page renders, the appropriate CSS file will be referenced according to the browser language setting. If you only need support for a single language, you can just use the default **THEME_NAME.theme.scss** file.
+To support specific RTL or LTR versions of a SCSS file, you can provide additional files using the following file naming convention: **THEME_NAME.rtl.theme.scss** for RTL support and **THEME_NAME.ltr.theme.scss** for LTR support. When a page renders, the appropriate CSS file will be referenced according to the browser language setting. If you only need support for a single language, use the default **THEME_NAME.theme.scss** file.
 
-## RTL and LRT best practices
+## RTL and LTR best practices
 
-Since the CSS code used in LTR and RTL layouts is generally the same except for a few properties, those differing properties can be specified in their respective "theme" files and a "base-style" file can be created to be shared (and imported) by both the RTL and LTR SCSS files.
+Because the CSS code used in RTL and LTR layouts is generally the same except for a few properties, those differing properties can be specified in their respective "theme" files and a "base-style" file can be created to be shared (and imported) by both the RTL and LTR SCSS files.
 
-- **THEME_NAME-ltr.theme.scss** - Contains specific properties for the LTR layout.
 - **THEME_NAME-rtl.theme.scss** - Contains specific properties for the RTL layout.
-- **base-style.scss** - Contains shared styles and is imported in above two files.
+- **THEME_NAME-ltr.theme.scss** - Contains specific properties for the LTR layout.
+- **base-style.scss** - Contains shared styles and is imported in the two THEME_NAME files.
 
 ## Additional resources
 
