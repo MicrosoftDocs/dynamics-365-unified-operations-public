@@ -96,6 +96,31 @@ To override the signing flow, follow these steps.
 > [!NOTE]
 > The thumbprint of the certificate that is used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly, even if the certificate is stored in Azure Key Vault storage. For more information, see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic.
 
+### Using certificate profiles in Commerce channels
+
+In Commerce version 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature.
+
+To apply the new feature in the CRT extension, follow these steps.
+
+1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail software development kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
+
+2. Add custom handler for CertificateSignatureServiceRequest in the SequentialSignatureRegister project.
+
+3. To read a secret call, GetUserDefinedSecretCertificateServiceRequest using a constructor with profileId parameter. That will start the functionality working with settings from Certificate profiles. Based on the settings, the certificate will be retrieved either from Azure Key Vault or local machine storage.
+	
+	GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
+	GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+	
+	X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+	
+4. When the certificate is retrieved, proceed with data signing.
+
+5. Build the CRT extension project.
+
+6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
+
+7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
+
 ## Specifying application attributes that will be printed on receipts
 
 You can use custom fields to print the following application attributes on receipts<!-- (for more information, see [Cash registers for France](./emea-fra-cash-registers.md))-->:
