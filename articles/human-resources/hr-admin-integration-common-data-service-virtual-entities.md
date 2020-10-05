@@ -41,7 +41,7 @@ All Open Data Protocol (OData) entities in Human Resources are available as virt
 
 You can view the list of virtual entities enabled in the environment, and begin working with the entities in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
 
-![Dynamics 365 HR Virtual Entities in Power Apps](/media/hr-admin-integration-virtual-entities.jpg)
+![Dynamics 365 HR Virtual Entities in Power Apps](./media/hr-admin-integration-virtual-entities.jpg)
 
 ## Virtual entities versus natural entities
 
@@ -103,7 +103,7 @@ Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to
 
 The install takes a few minutes. When it completes, continue to the next steps.
 
-![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](/media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### Configure the virtual entity data source 
 
@@ -132,7 +132,7 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
 9. Select **Save & Close**.
 
-   ![Microsoft HR Data Source](/media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR Data Source](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 ### Grant app permissions in Human Resources
 
@@ -177,7 +177,7 @@ When setup completes, you can select the virtual entities you want to generate a
 
 9. Save and close the entity page.
 
-![Available HR Entities](/media/hr-admin-integration-virtual-entities-available.jpg)
+![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
 
 > [!NOTE]
 > You can generate multiple virtual entities at once by using the **Change Multiple Records** page. Select multiple records on the page, and select **Edit** on the ribbon. You can then change the **Has Been Generated** property for all selected records.
