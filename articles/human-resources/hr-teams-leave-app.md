@@ -4,8 +4,8 @@
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
-ms.date: 09/30/2020
+manager: tfehr
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Manage leave requests in Teams
-
-[!include [banner](includes/preview-feature.md)]
 
 The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. In addition, you can send people information about your upcoming time off in teams and chats outside the Human Resources app.
 
