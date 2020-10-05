@@ -209,8 +209,8 @@ You can specify specific types of information that you want to receive from vend
 1. Open the **Request for quotation** tab.
 1. Select the **Default requests for quotation** reply fields link under the **Set up default values for requests for quotations** heading.
 1. The **Default request for quotation reply fields** dialog box opens.
-1. In the **Header** and **Line** sections, select the check box for each field you want to include in by default in new RFQs.
-1. The **RFQ fields included in vendor RFQ reply forms** includes a slider for each available RFQ field. Set the slider to *No* for each field where you want to prevent vendors from seeing data when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+1. In the **Header** and **Line** sections, select the check box for each field you want to include by default in new RFQs.
+1. The **RFQ fields included in vendor RFQ reply forms** includes a slider for each field that is available for use in RFQ reply forms. Fields set to *Yes* in this section will be included (together with their values) in RFQ reply forms. Set the slider to *No* for each field where you want to prevent vendors from seeing data when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
 
 ## Creating and sending an RFQ
 
