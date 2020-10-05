@@ -34,11 +34,11 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes a generic approach for setting up reverse charge functionality for countries/regions that adopt the VAT or GST schemes.
                                                                                  
-The country/region availability of the functionality is managed by the following features in the **Feature management** workspace:
+The country/region availability of the functionality is managed by the following features in the **Feature management** workspace.
 
 | Feature                                              | Country/region                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| No   specific feature                                | Austria </br> Belgium</br Bulgaria </br> Croatia </br> Cyprus </br> Czech Republic </br> Denmark  </br> Estonia  </br>Finland  </br>France  </br>Germany  </br>Hungary  </br>Iceland  </br>Ireland  </br>Italy  </br>Latvia  </br>Liechtenstein  </br>Lithuania  </br>Luxembourg  </br>Netherlands  </br>Norway Poland </br>Portugal </br>Romania  </br>Saudi Arabia </br>Singapore  </br>Slovakia  </br>Slovenia  </br>Spain  </br>Sweden  </br>Switzerland  </br>United Kingdom  </br>United Arabic Emirates |
+| No   specific feature                                | Austria </br>Belgium </br>Bulgaria </br>Croatia </br>Cyprus </br>Czech Republic </br>Denmark  </br>Estonia  </br>Finland  </br>France  </br>Germany  </br>Hungary  </br>Iceland  </br>Ireland  </br>Italy  </br>Latvia  </br>Liechtenstein  </br>Lithuania  </br>Luxembourg  </br>Netherlands  </br>Norway Poland </br>Portugal </br>Romania  </br>Saudi Arabia </br>Singapore  </br>Slovakia  </br>Slovenia  </br>Spain  </br>Sweden  </br>Switzerland  </br>United Kingdom  </br>United Arabic Emirates |
 | Reverse   charge for additional countries            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Enable   reverse charge mechanism for VAT/GST scheme | All other countries/regions   except:  </br>Brazil  </br>India  </br>Russia                                                                                                                                                                                                                                                                                                                                                                                         |
  
@@ -112,7 +112,7 @@ Additionally, you can specify whether a notification appears and the document li
 - **Prompt** – A notification appears to confirm that the reverse charge can be applied.
 - **Set** – The document line is updated without additional notification.
 
-## Set up Country/region properties
+## <a name="Set-up-Country/region-properties"></a>Set up Country/region properties
 On the **Foreign trade parameters** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Foreign trade** &gt; **Foreign trade parameters**), on the **Country/region properties** tab, set the country/region of the current legal entity to *Domestic*. Set the **Country/region type** of the EU countries/regions that participate in the EU trade with the current legal entity to *EU*. Set the **Country/region type** of the GCC countries/regions that participate in the GCC trade with the current legal entity to *GCC*.
 
 ## Set up default parameters
@@ -140,6 +140,6 @@ After you enable the feature, the **Reverse charge** tab is available in all leg
 The following pages and menu items related to the feature setup will be available:
  - **Reverse charge item groups** (**Tax** > **Setup** > **Sales tax** > **Reverse charge item groups**). For more information, see the [Set up reverse charge item groups](#reverse-charge-item-group) section.
  - **Reverse charge rules**  (**Tax** > **Setup** > **Sales tax** > **Reverse charge rules**). See [Set up reverse charge rules](#reverse-charge-rules).
- - **Foreign trade parameters** (**Tax** > **Setup** > **Sales tax** > **Foreign trade** > **Foreign trade parameters**). See [Set up Country/region properties](#Set-up-Countryregion-properties).
+ - **Foreign trade parameters** (**Tax** > **Setup** > **Sales tax** > **Foreign trade** > **Foreign trade parameters**). See [Set up Country/region properties](#Set-up-Country/region-properties).
 
 The **Reverse charge** check box will be available on the **Sales tax group** and **Posted sales tax** pages. For more information, see the sections, [Set up sales tax groups and item sales tax groups](#sales-tax-item-sales-tax-groups), [Reverse charge on a sales invoice](#reverse-charge-sale), and [Reverse charge on a purchase invoice](#reverse-charge-purchase).
