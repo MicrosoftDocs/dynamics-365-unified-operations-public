@@ -75,6 +75,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Common Data Service entities
         href: hr-developer-entities.md
+      - name: Configure Common Data Service virtual entities
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
