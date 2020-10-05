@@ -69,7 +69,7 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 ### Turn Teams notifications on or off for individual users
 
-After you've enabled notifications for the Human Resources Teams app, you can turn notifications on or off for individual users.
+ After you've enabled notifications for the Human Resources Teams app, you can turn notifications on or off for individual users.
 
 1. In Human Resources, select **System administration**.
 

@@ -179,7 +179,7 @@ If you're having trouble signing into or using the Human Resources Teams app, tr
 
 ### Can't sign into the Human Resources app in Teams
 
-If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
+ If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
