@@ -348,7 +348,7 @@ After you import the configurations, on the **Commerce parameters** page, on the
 ### Renitialize Commerce components
 
 > [!NOTE]
-> You only need to complete the steps of this section if you are updating an existing evironment.
+> You only need to complete the steps of this section if you are updating an existing environment.
 
 To enable audit events, you must reinitialize the Commerce Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Commerce Scheduler.
 
