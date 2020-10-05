@@ -301,10 +301,10 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
 
-# [PowerShell configuration script for Azure setup](#tab/powershell-configuration-script-for-azure-setup)
+# [PowerShell configuration script for Azure CLI](#tab/powershell-configuration-script-for-azure-cli)
 
-function New-FinanceDataLakeAzureResources {
-    $defaultSecretExpiryInYear = 1
+    function New-FinanceDataLakeAzureResources {
+       $defaultSecretExpiryInYear = 1
 
     $MicrosoftDynamicsERPMicroservicesAppId = '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
     $MicrosoftDynamicsERPMicroservicesCDSAppId = '703e2651-d3fc-48f5-942c-74274233dba8'
