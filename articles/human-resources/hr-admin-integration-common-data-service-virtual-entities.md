@@ -177,10 +177,10 @@ When setup completes, you can select the virtual entities you want to generate a
 
 9. Save and close the entity page.
 
-![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
-
 > [!NOTE]
 > You can generate multiple virtual entities at once by using the **Change Multiple Records** page. Select multiple records on the page, and select **Edit** on the ribbon. You can then change the **Has Been Generated** property for all selected records.
+
+![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
 
 > [!NOTE]
 > To streamline the process of generating virtual entities in future releases, the process will occur in a page in Human Resources.
