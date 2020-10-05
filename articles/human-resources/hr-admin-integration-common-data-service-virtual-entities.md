@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Human Resources
 
 Dynamics 365 Human Resources is a virtual data source in Common Data Service. It provides full create, read, update, and delete (CRUD) operations from Common Data Service and Microsoft Power Platform. The data for virtual entities isn't stored in Common Data Service, but in the application database. 
 
-To enable CRUD operations on Human Resources entities from Common Data Service, you must make the entities available as virtual entities in Common Data Service. This allows you to perform CRUD operations from Common Data Service and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
+To enable CRUD operations on Human Resources entities from Common Data Service, you must make the entities available as virtual entities in Common Data Service. This lets you perform CRUD operations from Common Data Service and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
 
 ## Available virtual entities for Human Resources apps
 
-All Open Data Protocol (OData) entities in Human Resources are available as virtual entites in Common Data Service. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Common Data Service. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
+All Open Data Protocol (OData) entities in Human Resources are available as virtual entities in Common Data Service. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Common Data Service. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
 
 You can view the list of virtual entities enabled in the environment, and begin working with the entities in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
 
@@ -45,14 +45,14 @@ You can view the list of virtual entities enabled in the environment, and begin 
 
 ## Virtual entities versus natural entities
 
-Virtual entities for Human Resources aren't the same as the natural Common Data Service entities created for Human Resources. The natural entities for Human Resources are generated separately and maintained in the HCM Common solution in Common Data Service. With natural entities, the data resides in Common Data Service and requires synchronization with the Human Resources application database.
+Virtual entities for Human Resources aren't the same as the natural Common Data Service entities created for Human Resources. The natural entities for Human Resources are generated separately and maintained in the HCM Common solution in Common Data Service. With natural entities, the data is stored in Common Data Service and requires synchronization with the Human Resources application database.
 
 > [!NOTE]
 > For a list of the natural Common Data Service entities for Human Resources, see [Common Data Service entities](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-developer-entities).
 
 ## Setup
 
-You need to do the following setup steps to enable virtual entities in your environment. 
+Follow these setup steps to enable virtual entities in your environment. 
 
 ### Register the app in Microsoft Azure
 
@@ -70,7 +70,7 @@ First, you need to register the app in the Azure portal so the Microsoft identit
 
 6. Select **Register**.
 
-7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You will enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. In the left navigation pane, select **Certificates and secrets**.
 
@@ -78,14 +78,14 @@ First, you need to register the app in the Azure portal so the Microsoft identit
 
 10. Provide a description, select a duration, and select **Add**.
 
-11. Record the secret's value. You will enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Record the secret's value. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
    > [!IMPORTANT]
    > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
 
 ### Install the Dynamics 365 HR Virtual Entity app
 
-You must install the Dynamics 365 HR Virtual Entity app in your Power Apps environment. This deploys the virtual entity solution package to CDS.
+Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to deploy the virtual entity solution package to Common Data Service.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -101,7 +101,7 @@ You must install the Dynamics 365 HR Virtual Entity app in your Power Apps envir
 
 7. Select **Install**.
 
-This will take a few minutes to install. When the install completes, continue to the next steps.
+The install takes a few minutes. When it completes, continue to the next steps.
 
 ![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](/media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
@@ -126,7 +126,7 @@ The next step is to configure the virtual entity data source in the Power Apps e
 8. Enter the required information for the data source configuration.
 
    - **Target URL**: The URL of your Human Resources namespace.
-   - **Tenant ID**: The Azure AD tenant ID.
+   - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
    - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure).
    - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure).
 
@@ -136,7 +136,7 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
 ### Grant app permissions in Human Resources
 
-You must grant permissions for the two Azure AD applications in Human Resources:
+Grant permissions for the two Azure AD applications in Human Resources:
 
 - The app created for your tenant in the Microsoft Azure portal
 - The Dynamics 365 HR Virtual Entity app installed in the Power Apps environment 
@@ -145,9 +145,9 @@ You must grant permissions for the two Azure AD applications in Human Resources:
 
 2. Select **New** to create a new application record:
 
-    - In the **Client Id** field, enter the client ID of the app you registered in the Microsoft Azure portal.
+    - In the **Client ID** field, enter the client ID of the app you registered in the Microsoft Azure portal.
     - In the **Name** field, enter the name of the app you registered in the Microsoft Azure portal.
-    - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power apps environment.
+    - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power Apps environment.
 
 3. Select **New** to create a second application record:
 
@@ -176,8 +176,6 @@ When setup completes, you can select the virtual entities you want to generate a
 8. On the entity page, change the **Has Been Generated** property to **Yes** for the entity.
 
 9. Save and close the entity page.
-
-This enables the virtual entity in your environment.
 
 ![Available HR Entities](/media/hr-admin-integration-virtual-entities-available.jpg)
 
