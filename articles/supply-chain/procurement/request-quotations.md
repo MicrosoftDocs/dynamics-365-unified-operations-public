@@ -5,7 +5,7 @@ title: Requests for quotation (RFQs) overview
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
 author: mkirknel
 manager: tfehr
-ms.date: 09/18/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,12 +44,9 @@ the vendor invoice.
 
 The RFQ process consists of the following tasks:
 
-1.  Create and send an RFQ to one or more vendors.
-
-2.  Receive and register bids (RFQ replies).
-
-3.  Transfer bids that you accept to a purchase order, purchase agreement, or
-    purchase requisition.
+1. Create and send an RFQ to one or more vendors.
+1. Receive and register bids (RFQ replies).
+1. Transfer bids that you accept to a purchase order, purchase agreement, or purchase requisition.
 
 The following illustration shows an overview of the RFQ process.
 
@@ -120,18 +117,10 @@ Before you can create an RFQ case, you must set up RFQ information on the
 can specify default values that are copied to the RFQ. You can specify the
 following default values:
 
--   The purchase type of new RFQs: **Purchase order** or **Purchase agreement**.
-
--   The expiration date and time offset from the day the RFQ case is created.
-
--   Solicitation type, which may default a specific scoring method to the RFQ
-    case.
-
--   Delivery information and payment terms.
-
-### Fields that should be included in the bid
-
-By turning on the **Select RFQ fields to include in vendor RFQ reply forms** feature, you can specify the default field values vendors see on bids. The feature adds toggles to **Procurement and sourcing > Setup > Procurement and sourcing parameters > Request for quotation > Default request for quotation**. The **RFQ fields included in vendor RFQ reply forms** toggles are found on this page. Setting these toggles to **No** prevents vendors from seeing the data in these fields when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+- The purchase type of new RFQs: **Purchase order** or **Purchase agreement**.
+- The expiration date and time offset from the day the RFQ case is created.
+- Solicitation type, which may default a specific scoring method to the RFQ case.
+- Delivery information and payment terms.
 
 You can override these values for a specific RFQ case.
 
@@ -148,21 +137,14 @@ use for the email notification that is sent to vendors. When a template is
 created in **Email templates**, it can contain the following replacement
 tokens:
 
--   %RFQ case%
-
--   %Reason for bid return%
-
--   %Reason for amendment%
-
--   %Amendment prepared by%
-
--   %Company%
-
--   %RFQ case name%
-
--   %Expiry Date Time%
-
--   %Date%
+- %RFQ case%
+- %Reason for bid return%
+- %Reason for amendment%
+- %Amendment prepared by%
+- %Company%
+- %RFQ case name%
+- %Expiry Date Time%
+- %Date%
 
 The %Reason for bid return% and %Reason for amendment% tokens are replaced by
 text that the procurement professional can enter when he or she completes the
@@ -176,17 +158,12 @@ cancellation notification to the vendor's contact persons. The template must be
 selected on the **Procurement and sourcing parameters** page. When the template
 is created, it can contain the following replacements tokens:
 
--   %Reason for cancellation%
-
--   %RFQ case%
-
--   %RFQ cancelled by%
-
--   %Company%
-
--   %RFQ case name%
-
--   %Date%
+- %Reason for cancellation%
+- %RFQ case%
+- %RFQ cancelled by%
+- %Company%
+- %RFQ case name%
+- %Date%
 
 The %Reason for cancellation% token is replaced by text that the procurement
 professional can enter in the **Cancellation** wizard. The %Date% token is
@@ -223,6 +200,18 @@ that can be used when you score bids. You must set up solicitation types,
 scoring methods, and scoring criteria on the **Solicitation type** and **Scoring
 method** pages.
 
+## Choose fields to be included in RFQs by default
+
+You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration, and printed on RFQ reply sheets sent to vendors. These fields are also included on the RFQ return document that you can send to vendors if, for example, you want to negotiate prices or delivery times.
+
+1. If you haven't already done so, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable the *Select RFQ fields to include in vendor RFQ reply forms* feature.
+1. Go to **Procurement and sourcing > Setup > Procurement and sourcing parameters**.
+1. Open the **Request for quotation** tab.
+1. Select the **Default requests for quotation** reply fields link under the **Set up default values for requests for quotations** heading.
+1. The **Default request for quotation reply fields** dialog box opens.
+1. In the **Header** and **Line** sections, select the check box for each field you want to include in by default in new RFQs.
+1. The **RFQ fields included in vendor RFQ reply forms** includes a slider for each available RFQ field. Set the slider to *No* for each field where you want to prevent vendors from seeing data when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+
 ## Creating and sending an RFQ
 
 You create an RFQ case, select the vendors that you want to bid on the RFQ case,
@@ -235,19 +224,13 @@ type or the **Purchase agreement** purchase type.
 If the RFQ case is of the **Purchase order** type, the following behavior occurs
 that deviates from other types of RFQ cases:
 
--   When RFQ case lines are created, inventory transactions are generated that
-    have a receipt status of **Quotation receipt**.
-
--   When you accept a bid, a purchase order is generated.
+- When RFQ case lines are created, inventory transactions are generated that have a receipt status of **Quotation receipt**.
+- When you accept a bid, a purchase order is generated.
 
 If the RFQ is of the **Purchase agreement** type, the following behavior occurs that deviates from other RFQ cases:
 
--   The RFQ case is used for an agreement to purchase a specific quantity or
-    value of product over time. You must select the date range that applies to
-    the purchase agreement and the name of the person who manages the purchase
-    agreement.
-
--   When you accept a bid, a purchase agreement is generated.
+- The RFQ case is used for an agreement to purchase a specific quantity or value of product over time. You must select the date range that applies to the purchase agreement and the name of the person who manages the purchase agreement.
+- When you accept a bid, a purchase agreement is generated.
 
 If the RFQ case is generated from a purchase requisition, the **Purchase
 requisition** type is automatically assigned. You can't manually create an RFQ
@@ -269,7 +252,7 @@ You can add a questionnaire to an RFQ case. This questionnaire then appears on
 all RFQ replies after you send the RFQ. The completion of the questionnaire is
 a mandatory task before the bid can be submitted.
 
-You can change the **RFQ fields included in vendor RFQ reply forms** values from the **Set RFQ reply defaults** page. This page is located in the **Replies** section of the **Quotation** ribbon. Newly create RFQ cases will have the default values selected. These defaults can be changed for individual RFQ cases.
+You can change the **RFQ fields included in vendor RFQ reply forms** values from the **Set RFQ reply defaults** page. This page is located in the **Replies** section of the **Quotation** ribbon. Newly created RFQ cases will have the default values selected. These defaults can be changed for individual RFQ cases.
 
 There are three ways to select the vendors to add to an RFQ case:
 
@@ -283,7 +266,6 @@ If you set **Use vendor for recalculating prices** and **Use vendor specific
 item information** to **Yes** on the **Sending request for quotation** page when
 you sent the RFQ to a vendor, some vendor-specific information is automatically
 entered in the RFQ for that vendor.
-
 
 ## Amending an RFQ case
 
@@ -320,7 +302,6 @@ vendors](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/
 If you want to invite additional vendors to bid, and no changes have been made
 to the RFQ case, you can use the **Send** button. The vendors that you added
 will appear on the **Send** page and will receive the email invitation.
-
 
 ## Receiving and registering RFQ replies
 
@@ -385,28 +366,19 @@ When you accept a bid of the **Purchase requisition** type, the purchase
 requisition lines will be updated with the following information that reflects
 the information of the accepted bid:
 
--   Unit price
-
--   Discount percentage
-
--   Discount amount
-
--   Purchase charges
-
--   Line charges
-
--   Vendor
-
--   External number
-
--   External description
-
+- Unit price
+- Discount percentage
+- Discount amount
+- Purchase charges
+- Line charges
+- Vendor
+- External number
+- External description
 
 The following table shows how the RFQ status changes as you accept and reject
 bids from vendors.
 
-Statuses – highest and lowest
------------------------------
+## Statuses – highest and lowest
 
 On the Vendor tab of the RFQ case, you can see the lines with the highest and
 the lowest status for a particular vendor. When the vendor is added, and no
