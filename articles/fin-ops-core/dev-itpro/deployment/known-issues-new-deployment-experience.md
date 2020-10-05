@@ -39,10 +39,8 @@ This topic describes the known issues with [self-service deployment](infrastruct
 ### Features not intended to be implemented
 The following LCS features are deprecated and will not be implemented in self-service deployment.
 
-| **Feature**        | **Description**   |
-|--------------------|--------|
-| System diagnostics | System diagnostics has been deprecated. All data and functionality provided by system diagnostics today will be available through other features in the product and LCS. |
-| Service requests   | Service requests are being replaced with self-service actions. |
+- **System diagnostics:** System diagnostics has been deprecated. All data and functionality provided by system diagnostics today will be available through other features in the product and LCS. 
+ - **Service requests:**  Service requests are being replaced with self-service actions. 
 
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
@@ -55,9 +53,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
 
-| **Feature**  | **Description**                     |
-|--------------|-------------------------------------|
-| Custom fonts | Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
+- **Custom fonts:** Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
 
 ### Features not supported anymore
 
