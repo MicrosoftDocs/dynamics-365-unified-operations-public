@@ -36,7 +36,7 @@ The production floor execution interface is set up for each specific device on t
 
 ## Set the configuration and filters for a specific device
 
-To set configuration and job filters for a device, sign in to the **Production floor execution** page using an account with a security role that includes the *Maintain time supervisor* duty. Of the out-of-box security roles, only *Shop floor supervisor* have this duty. To set the configuration and filters, do the following:
+To set configuration and job filters for a device, sign in to the **Production floor execution** page using an account with a security role that includes the *Maintain time supervisor* duty. Of the out-of-box security roles, only *Shop floor supervisor* has this duty. To set the configuration and filters, do the following:
 
 1. Go to the device you want to set up and sign in to Supply Chain Management as a shop floor supervisor (using an account that includes the *Maintain time supervisor* duty).
 1. Make sure a configuration is available for the device that you are setting up. If no configuration already exists, then a default configuration is provided. For more information about how to make a configuration, see: [Configure the production floor execution interface](production-floor-execution-configure.md).
@@ -80,4 +80,4 @@ Often, you will run the production floor execution interface on a device used ex
 
 By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. Thereafter, a Supply Chain Management user must sign in again. However, you can extend the time-out limit to up to 90 days.
 
-To extend the time-out limit, sign in to Supply Chain Managment. Then go to **System administration \> Users \> Session extensions**. Then specify the Supply Chain Management user account used to sign in to the device and the number of hours the session should stay active for.
+To extend the time-out limit, sign in to Supply Chain Management. Then go to **System administration \> Users \> Session extensions**. Then specify the Supply Chain Management user account used to sign in to the device and the number of hours the session should stay active for.

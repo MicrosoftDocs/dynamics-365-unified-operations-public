@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the production floor execution interface
-description: This topic describes how to create one or more configurations production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific for that browser and device. In the configuration you set the policies that must be applicable for a specific usage.
+description: This topic describes how to create one or more configurations production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific for that browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
 manager: tfehr
 ms.date: 10/05/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 The production floor execution interface is used by shop floor workers to register their daily work, such as when starting a job, reporting feedback on jobs, registering indirect activities, and reporting absence. These registrations are the basis for tracking progress and cost on production orders and for calculating the basis for the workers' pay.
 
-When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific for that browser and device. In the configuration you set the policies that must be applicable for a specific usage, such as:
+When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific for that browser and device. In the configuration, you set the policies that must be applicable for a specific usage, such as:
 
 - On a device located the company hall, employees clock-in when they come into the office and clock-out when they leave for the day.
 
@@ -78,13 +78,13 @@ Then configure each of the various options for the selected device configuration
 
 - **Report quantity at clock-out** - Set this to *Yes* to prompt workers to report feedback on jobs in progress when clocking out. When set to *No*, workers won't be prompted.
 
-- **Lock employee** - When this option is set to *No*, each worker will be logged out immediately after they make a registration (such as a new job), and then the device will return to the log-in page. When this option is set to *Yes*, each worker will stay logged in to the job card device. However, the worker will still be able to log out manually to allow another worker to log in while the job card device remains running under the same system user account. For more information about these types of accounts, see [Assigned users](config-job-card-device.md#assigned-users).
+- **Lock employee** - When this option is set to *No*, each worker will be signed out immediately after they make a registration (such as a new job), and then the device will return to the sign-in page. When this option is set to *Yes*, each worker will stay signed in to the job card device. However, the worker will still be able to sign out manually to allow another worker to sign in while the job card device remains running under the same system user account. For more information about these types of accounts, see [Assigned users](config-job-card-device.md#assigned-users).
 
-- **Use the actual time of registration** - Set this to *Yes* to set the time for each new registration to be equal to the exact time that registration was submitted by a worker. Set to *No* to use the log-in time instead. You'll usually want to set this to *Yes* if you have enabled the **Lock employee** and/or **Single worker** options, where workers often remain logged in for longer periods.
+- **Use the actual time of registration** - Set this to *Yes* to set the time for each new registration to be equal to the exact time that registration was submitted by a worker. Set to *No* to use the sign-in time instead. You'll usually want to set this to *Yes* if you have enabled the **Lock employee** and/or **Single worker** options, where workers often remain signed in for longer periods.
 
-- **Single worker** - Set this option to *Yes* if only one worker uses each job card device where this configuration is active. When this option is selected, the **Lock employee** option is automatically set to *Yes*. In addition, this option removes the requirement (and ability) for the worker to log in using a badge ID (or similar). Instead the worker signs in to Supply Chain Management using a system user account linked to a *time registered worker* (from the *workers* table) and gets logged in to the job card device as that worker at the same time.
+- **Single worker** - Set this option to *Yes* if only one worker uses each job card device where this configuration is active. When this option is selected, the **Lock employee** option is automatically set to *Yes*. In addition, this option removes the requirement (and ability) for the worker to sign in using a badge ID (or similar). Instead the worker signs in to Supply Chain Management using a system user account linked to a *time registered worker* (from the *workers* table) and gets signed in to the job card device as that worker at the same time.
 
-- **Allow locking the touchscreen** - Set this option to *Yes* to allow workers to lock the job card device touchscreen so they can sanitize it. When enabled, a **Lock screen for sanitizing** button is added to the device log-in page. When a worker selects this button, the touchscreen temporarily locks to prevent unintended input and a countdown timer is shown. The worker can now safely clean the device and the screen. When the countdown completes, the touchscreen automatically unlocks again.
+- **Allow locking the touchscreen** - Set this option to *Yes* to allow workers to lock the job card device touchscreen so they can sanitize it. When enabled, a **Lock screen for sanitizing** button is added to the device sign-in page. When a worker selects this button, the touchscreen temporarily locks to prevent unintended input and a countdown timer is shown. The worker can now safely clean the device and the screen. When the countdown completes, the touchscreen automatically unlocks again.
 
 - **Screen lock duration** - When the **Allow locking touchscreen** option is enabled, use this option so specify number of seconds the touchscreen should be locked for sanitizing. The duration must be between 5 and 120 seconds.
 

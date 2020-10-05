@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.15
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The production floor execution interface is optimized for touch interaction. It's design provides visual contrast that meets accessibility requirements for shop floor environments. It offers the same functional capabilities as the job card device, but also offers the ability to start multiple jobs in parallel from a job list (this is also known as job bundling). From the job list, workers can open a Dynamics 365 Guide to get visual instructions using a HoloLens.
+The production floor execution interface is optimized for touch interaction. Its design provides visual contrast that meets accessibility requirements for shop floor environments. It offers the same functional capabilities as the job card device, but also offers the ability to start multiple jobs in parallel from a job list (this is also known as job bundling). From the job list, workers can open a Dynamics 365 Guide to get visual instructions using a HoloLens.
 
 ## Sign in to the production floor execution interface as a worker
 
@@ -50,7 +50,7 @@ The **All jobs** tab provides a job list, which shows all the production jobs th
 
 ![The All jobs tab](media/pfei-all-jobs-tab.png "The All jobs tab")
 
-The list provides the following columns, which are also numbered in the previous screen shot:
+The list provides the following columns, which are also numbered in the previous screenshot:
 
 1. **Selection column**: The left-hand column shows a check mark to indicate which jobs have been selected by the worker. It is possible to select multiple jobs in the list. To select all the jobs, tap the check mark in the column header. When a single job is selected, details about that job are shown at the bottom of the screen.
 1. **Job status column**: This column indicates the status of each job using icons. Jobs with no icon have a status of *Not started*. A green triangle icon indicates jobs with a status of*Started*. The icon with the two yellow vertical lines indicates jobs with a status of*Stopped*.
@@ -104,7 +104,7 @@ On completing (or partially completing) a job, workers can report scrap by going
 
 ## Complete a job and start a new job
 
-Usually, workers complete a job by selecting one ore more current jobs on the **Active jobs** tab and selecting **Report progress.** Then they enter the quantity produced (good quantity) and setting the status to *Complete*. If more than one job was selected, then the worker uses the **Previous** and **Next** buttons to switch between them. The worker then selects a new job from the **All jobs** list and start it by selecting the **Start job** button.
+Usually, workers complete a job by selecting one or more current jobs on the **Active jobs** tab and selecting **Report progress.** Then they enter the quantity produced (good quantity) and setting the status to *Complete*. If more than one job was selected, then the worker uses the **Previous** and **Next** buttons to switch between them. The worker then selects a new job from the **All jobs** list and start it by selecting the **Start job** button.
 
 Workers can also start a new job while their previous job is still open by going to the **All jobs** page, selecting a new job, and then selecting the **Start job** button. In this case, the **Start job** dialog box will inform the worker that she or he is currently working on a job, so they must choose to either **Stop** or **Complete** this job before starting the next one.
 
@@ -134,9 +134,9 @@ For both scenarios, when Shannon confirms the selection, she will either return 
 
 ## Working on breaks
 
-The worker can register a break. Breaks can be flexible defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
+The worker can register a break. Breaks can be flexibly defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
 
-The worker registers a break by selecting the **Break** button and then selects the card that represent the break type (such as lunch). On confirming the selection, the device either shows the sign-in screen or a screen that will wait for her to confirm that she has returned from her break, depending on how the production floor execution interface is configured (see also [Configure the production floor execution interface](production-floor-execution-configure.md)).
+The worker registers a break by selecting the **Break** button and then selects the card that represents the break type (such as lunch). On confirming the selection, the device either shows the sign-in screen or a screen that will wait for her to confirm that she has returned from her break, depending on how the production floor execution interface is configured (see also [Configure the production floor execution interface](production-floor-execution-configure.md)).
 
 ## Open an instruction
 
