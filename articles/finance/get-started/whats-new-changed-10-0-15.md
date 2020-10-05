@@ -48,6 +48,8 @@ The following features are included in this release. The feature titles link to 
  - [Vendor invoice automation – Automation history for vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-enhanced-historical-information-experience-vendor-invoices)
 - [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)
  - [Regulatory Configuration Service – Simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+ 
+ - [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
 
 
 ## Additional resources
