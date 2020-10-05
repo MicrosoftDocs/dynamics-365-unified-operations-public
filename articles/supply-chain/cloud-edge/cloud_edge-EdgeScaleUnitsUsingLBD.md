@@ -57,7 +57,7 @@ This table provides an overview on the deployment steps
 
 ### Create LCS On-Premise Implementation project
 
-Go to LCS main page (https://lcs.dynamics.com  for production or https://lcs.tie.dynamics.com  for test environments).
+Go to LCS main page (https://lcs.dynamics.com for production or https://lcs.tie.dynamics.com for test environments).
 Click + button and create Implementation project.
 Make sure there is at least one sandbox slot available to deploy.
 
@@ -122,7 +122,7 @@ In order to assign your scale unit to a Dynamics 365 Supply Chain Management hub
 - Navigate to the *ScaleUnitHubSetup* menu item
 - Enter the following value
   - Name
-  - Hub AAD client id(Availble from  AAD App registrations in the Azure portal)
+  - Hub AAD client id (Available from  AAD App registrations in the Azure portal)
 - Prepare workloads to be configured (see section below)
 - Enter the scale units and their associated work loads
 - Click on Setup Hub
@@ -136,17 +136,19 @@ In order to assign your scale unit to a Dynamics 365 Supply Chain Management hub
   - Hub resource Id
     - https://usnconeboxax1aos.cloud.onebox.dynamics.com 
   - Hub url
-    - https://usnconeboxax1aos.cloud.onebox.dynamics.com/  (NOTE THE / AT THE END)
+    - https://usnconeboxax1aos.cloud.onebox.dynamics.com/  (note the trailing '/')
   - Hub AAD tenant id
     - https://login.windows-ppe.net/AX7Partner.ccsctp.net 
-  - Hub AAD client id & Hub encrypted secret(Availble from AAD App registrations in the Azure portal)
+  - Hub AAD client id & Hub encrypted secret (Available from AAD App registrations in the Azure portal)
 - Click on "Initialize scale unit" to bootstrap the scale unit with initialization data from the hub.
 - Click Deploy.
 
-
 #### Prepare workloads to be configured
+
 ##### WES
+
 Before configuring the WES workload the **Organization-wide work blocking** and **Automatic assigning of the guids on WHS user creation** (should be enabled by default) features should be enabled from feature management.
 
 ##### MES
+
 Nothing to be done here.
