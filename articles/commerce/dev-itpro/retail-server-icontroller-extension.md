@@ -178,7 +178,7 @@ namespace Contoso.UnboundController.Sample
 
 ```
 
-The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles that are specified in the controller method **Authorizations** attribute. The following example shows the supported authorization roles. Extension code **should not use the CommerceAuthorization attribute** instead of **Authorizations** attribute. CommerceAuthorization attribute is supported only in SDK version earlier than 10.0.11.
+The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles that are specified in the controller method **Authorizations** attribute. The following example shows the supported authorization roles. Extension code should not use the **CommerceAuthorization** attribute instead of the **Authorizations** attribute. The **CommerceAuthorization** attribute is only supported in SDK versions earlier than 10.0.11.
 
 
 ```csharp
