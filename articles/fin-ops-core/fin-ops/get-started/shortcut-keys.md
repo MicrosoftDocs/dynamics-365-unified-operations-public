@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -254,9 +254,9 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Toggle Rails mode (while playing a task guide)                                | Alt+R,L                    |
 | Go to the previous step (while playing a task guide)                          | Alt+R,P                    |
 | Go to the next step (while playing a task guide)                              | Alt+R,N                    |
-| Toggle focus between the page and the task guide qtip (while playing a task guide) | Alt+R,F               |
-| Expand/collapse the task guide qtip (while playing a task guide)              | Alt+R,C                    |
-| Show more/less information in the task guide qtip (while playing a task guide) | Alt+R,M                    |
+| Toggle focus between the page and the annimated pop-up prompt (while playing a task guide) | Alt+R,F               |
+| Expand/collapse the the annimated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
+| Show more/less information in the the annimated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
 ## Additional resources
 
