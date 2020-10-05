@@ -41,7 +41,7 @@ All Open Data Protocol (OData) entities in Human Resources are available as virt
 
 You can view the list of virtual entities enabled in the environment, and begin working with the entities in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
 
-![Dynamics 365 HR Virtual Entities in Power Apps](./media/hr-admin-integration-virtual-entities.jpg)
+![Dynamics 365 HR Virtual Entities in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## Virtual entities versus natural entities
 
