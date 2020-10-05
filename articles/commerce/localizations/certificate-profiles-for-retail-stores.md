@@ -2,7 +2,7 @@
 # required metadata
 
 title: User-defined certificate profiles for retail stores
-description: This topic provides an overview of the usage of certificates in retail stores. 
+description: This topic provides an overview about how certificates are used in retail stores.
 author: josaw
 manager: annbe
 ms.date: 10/09/2020
@@ -34,94 +34,94 @@ ms.dyn365.ops.version: 10.0.15
 
 ## Overview
 
-This topic provides an overview of the certificate profiles that are available in Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature with support of the local certificates. 
+This topic provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/manage-secrets) feature by adding support for local certificates.
 
-While operating in the offline mode, the point of sale (POS) can't access the certificates stored in the Azure Key vault, and the local certificate should be used instead. The following capabilities are supported.
-  - Using local certificates in key vault fallback scenarios.
-  - Using local certificates without key vault (e.g. in on-premises installation).
-  - Gradual update of certificates, where some stores terminals use a new version of the certificate and other stores and terminals continue using the previous version.
+While the point of sale (POS) is running in offline mode, it can't access the certificates that are stored in the key vault. The local certificate should be used instead. The following capabilities are supported:
 
-The certificates profiles functionality enables you to specify a default certificate and set the order that certificates are searched within the same certificate profile. It also provides a similar setup approach for local and key vault certificates - add company-specific settings for certificates but have the unique cross-company identifier for each certificate used in the Commerce channels.
+- Using local certificates in key vault fallback scenarios
+- Using local certificates without a key vault (for example in an on-premises installation)
+- Gradual update of certificates, where some stores and terminals use a new version of the certificate, but other stores and terminals continue to use the previous version
 
-### Scenarios 
+The certificate profiles functionality lets you specify a default certificate and set the order that certificates in the same certificate profile are searched in. This functionality also provides a similar setup approach for local certificates and Key Vault certificates. You can add company-specific settings for certificates, but the unique cross-company identifier for each certificate can be used in the Commerce channels.
 
-The certificate profiles functionality supports the following scenarios in the Commerce channels.
-  - Using a local certificate in key vault fallback scenarios, for example:
-    - When the key vault storage is not accessible,
-    - If a certificate is not found in the key vault storage,
-    - When POS is operating in the offline mode.
-  - Using local certificates only without storing them in the key vault (e.g. in on-premises installation).
-  - Gradual update of certificates with use of new version of a certificate only in stores or terminals where the new version is already available.
-  - Using the same certificate in several companies.
+### Scenarios
+
+The certificate profiles functionality supports the following scenarios in the Commerce channels:
+
+- Use a local certificate in key vault fallback scenarios. Here are some examples of these fallback scenarios:
+
+    - The key vault storage isn't accessible.
+    - A certificate isn't found in the key vault storage.
+    - The POS is running in offline mode.
+
+- Use local certificates, but without storing them in the key vault (for example, in an on-premises installation).
+- Do a gradual update of certificates, where a new version of the certificate is used only in stores or on terminals where the new version is already available.
+- Use the same certificate in several companies.
 
 ## Set up certificate profiles
 
-This section describes how to set up certificate profiles. Before you use certificate profiles in Commerce channels, configure the following settings. 
+The following procedure explains how to set up certificate profiles. Before you use certificate profiles in the Commerce channels, follow these steps to configure the settings.
 
-1. Enable the **User-defined certificate profiles for retail stores** feature on the **Feature management** page.
-
-2. Go to **System administration \> Setup \> Certificate profiles**. Create a new record and enter a value for these fields: **Certificate profile**, **Name**, **Description**.
+1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
+2. Go to **System administration \> Setup \> Certificate profiles**.
+3. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
 
     > [!NOTE]
-    > The **Certificate profile** is a unique identifier of a certificate across all companies and Commerce components.
+    > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
 
-3. Add a line on the **Legal entities** tab and select a company that the current certificate profile will be used for. Add other legal entities in certificate profile lines if necessary.
-
-4. Select **Settings** to enter company-specific settings for the certificate profile.
+3. On the **Legal entities** tab, add a line, and select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
+4. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile.
 
 ### Certificate profile settings
 
-The **Certificate profile settings** page opens when you select **Settings** in certificate profile lines. This page allows you to specify which certificates can be used when the current certificate profile is called in the Commerce channels, and the order that certificates will be searched.
+When you select **Settings** for certificate profile lines, the **Certificate profile settings** page appears. This page lets you specify which certificates can be used when the current certificate profile is called in the Commerce channels. You can also specify the order that certificates should be searched in.
 
 > [!NOTE]
-> The **Priority** field is assigned automatically. The value **1** is the highest priority. When a new line is added on the **Certificate profile settings** page, it gets the priority that follows the last existing line. To change the priority of a specific line, put your cursor on the line and select the **Move up** button to increase priority, or **Move down** to decrease priority.
+> The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority or **Move down** to decrease the priority.
 
-The following parameters need to be specified when a new line is added to the **Certificate profile settings** page.
+When you add a new line to the **Certificate profile settings** page, set the following fields:
 
-  - **Location type**: This parameter identifies where the certificate is stored. It has two values: **Local certificate** and **Key Vault**.
-  - **Key Vault certificate**: This parameter is required if **Location type** is set to **Key Vault**. Specify a **Key Vault certificate secret** in this field.
-
-    > [!NOTE]
-    > Before using a Key Vault certificate in certificate profiles, upload a certificate to the key vault storage and follow the instructions provided in the [Set up the Azure Key Vault client](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client) topic. 
-
-  - **Store name**: This parameter is optional and available for local certificates only. It enables you to specify a default store name for searching local certificates. 
-
-  - **Store location**: This parameter is optional and available for local certificates only. It enables you to specify a default store location for searching local certificates. 
+- **Location type** – Select the location where the certificate is stored. This field has two possible values: **Local certificate** and **Key Vault**.
+- **Key Vault certificate** – This field is required if you set the **Location type** field to **Key Vault**. Use it to specify a Key Vault certificate secret.
 
     > [!NOTE]
-    > The default store name and store location are added to simplify searching local certificates in the Commerce runtime. The X509StoreProvider has a list of folders where certificates are stored. It attempts to find a certificate in the other folders on the list if the default store name and the default store location aren't specified.
+    > Before you use a Key Vault certificate in certificate profiles, be sure to upload a certificate to the key vault storage, and follow the instructions in [Set up the Azure Key Vault client](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
-  - **Thumbprint**: This field is mandatory and available only for local certificates. The certificate thumbprint must be specified here.
+- **Store name** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store name that should be used to search local certificates.
+- **Store location** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store location that should be used to search local certificates.
 
-  - **Comments**: This field is optional and enables users to make notes.
+    > [!NOTE]
+    > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list.
 
-### Workflow: searching certificates in the Commerce runtime
+- **Thumbprint** – This field is required and available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
+- **Comments** – This field is optional and lets users enter notes.
 
-When a certificate profile is called in the Commerce runtime, the basic workflow for searching the certificate is as follows.
+### Workflow: Searching certificates in the Commerce runtime
 
-1. The system identifies if the certificate profile has company-specific settings for the current legal entity. 
-1. The system attempts to find the certificate using the **Certificate profile settings** from the line with the **Priority** equal to 1. 
-    - If the **Location type** is set to **Key Vault**, the certificate is searched in the **Key vault parameters** first by the **Key Vault certificate secret** field, and then it's searched in the key vault storage.
-    - If the **Location type** is set to **Local certificate**, the X509StoreProvider searches the certificate by default store name and store location if these parameters are specified, and then in all other folders from its list of folders.
-1. If the certificate isn't found, the same process is followed for the line with the **Priority** equal to 2, etc.
+Here is the basic workflow that is used to search for a certificate when a certificate profile is called in the Commerce runtime.
+
+1. The system identifies whether the certificate profile has company-specific settings for the current legal entity.
+1. The system tries to find the certificate by using the values on the **Certificate profile settings** page for the line where the **Priority** field is set to **1**.
+
+    - If the **Location type** field is set to **Key Vault**, the value of the **Key Vault certificate secret** field is used to search for the certificate on the **Key vault parameters** page. The certificate is then searched for in the key vault storage.
+    - If the **Location type** field is set to **Local certificate**, X509StoreProvider first searches for the certificate by using the default store name and store location, if these parameters are specified. It then searches in all other folders on its list of folders.
+
+1. If the certificate isn't found, the process is repeated for the line where the **Priority** field is set to **2**, and so on.
 
 > [!NOTE]
-> If the certificate profile has no settings for the current legal entity or if searching the certificate was unsuccessful for all lines of the **Certificate profile settings** page, it means that the certificate is not found.
+> If the certificate profile has no settings for the current legal entity, or if the certificate search is unsuccessful for all lines on the **Certificate profile settings** page, the certificate isn't found.
 
-#### Caching results of searching certificates
+#### Caching the results of certificate searches
 
-The results of searching certificates are cached. The default expiration time for a cache is 1 hour. This time can be customized for up to 24 hours.
-
+The results of certificate searches are cached. The default expiration time for a cache is one hour. However, this time can be customized and can be set to a maximum value of 24 hours.
 
 ### Gradual update
 
-When a new version of the certificate is introduced, but it can't be updated in all stores at the same time, the certificate profiles functionality allows the certificate to be updated gradually.
+If a new version of the certificate is introduced, but it can't be updated in all stores at the same time, the certificate profiles functionality enables the certificate to be updated gradually.
 
-1. Find a certificate profile and the line that should be updated, and select **Settings**.
-1. Add a new line and specify settings related to the latest version of the certificate.
-1. Increase the **Priority** of the new line by using the **Move up** button, and set it above the line with the previous version of the same certificate.
+1. Find a certificate profile and the line that should be updated, and then select **Settings**.
+1. Add a line, and specify settings that are related to the latest version of the certificate.
+1. Increase the **Priority** value of the new line. Use the **Move up** button to move the line so that it's above the line for the previous version of the same certificate.
 
-    > [!NOTE]
-    > In the Commerce runtime, the new version of the certificate will be called first, and if the certificate isn't updated yet in a specific store or terminal, the previous version will be called.
-
-
+> [!NOTE]
+> In the Commerce runtime, the new version of the certificate will be called first. If the certificate hasn't yet been updated in a specific store or on a specific terminal, the previous version will be called.
