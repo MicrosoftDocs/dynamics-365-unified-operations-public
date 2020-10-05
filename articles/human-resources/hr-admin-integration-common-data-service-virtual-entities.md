@@ -50,7 +50,7 @@ You can view the list of virtual entities enabled in the environment, and begin 
 Virtual entities for Human Resources aren't the same as the natural Common Data Service entities created for Human Resources. The natural entities for Human Resources are generated separately and maintained in the HCM Common solution in Common Data Service. With natural entities, the data is stored in Common Data Service and requires synchronization with the Human Resources application database.
 
 > [!NOTE]
-> For a list of the natural Common Data Service entities for Human Resources, see [Common Data Service entities](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-developer-entities).
+> For a list of the natural Common Data Service entities for Human Resources, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## Setup
 
