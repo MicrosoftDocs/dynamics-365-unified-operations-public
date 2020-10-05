@@ -742,6 +742,9 @@ A PowerShell script has been provided to easily set up the Azure resources descr
         $inner = $inner.InnerException
       }
     }
+```azurecli-interactive
+az login
+```
 ---
 
   ### Manual setup
