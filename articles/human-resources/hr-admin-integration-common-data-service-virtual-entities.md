@@ -41,7 +41,7 @@ All Open Data Protocol (OData) entities in Human Resources are available as virt
 
 You can view the list of virtual entities enabled in the environment, and begin working with the entities in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
 
-![Dynamics 365 HR Virtual Entities in Power Apps](/images/PowerAppsHRSolution.jpg)
+![Dynamics 365 HR Virtual Entities in Power Apps](/media/hr-admin-integration-virtual-entities.jpg)
 
 ## Virtual entities versus natural entities
 
@@ -88,82 +88,110 @@ First, you need to register the app in the Azure portal so the Microsoft identit
 You must install the Dynamics 365 HR Virtual Entity app in your Power Apps environment. This deploys the virtual entity solution package to CDS.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
 2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
 3. In the **Resources** section of the page, select **Dynamics 365 apps**.
+
 4. Select the **Install app** action.
+
 5. Select **Dynamics 365 HR Virtual Entity**, and select **Next**.
+
 6. Review and mark to agree to the terms of service.
+
 7. Select **Install**.
 
 This will take a few minutes to install. When the install completes, continue to the next steps.
 
-![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](/images/PPAC_InstallVEApp.jpg)
+![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](/media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### Configure the virtual entity data source 
 
 The next step is to configure the virtual entity data source in the Power Apps environment. 
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
 2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
 3. Select the **Environment URL** in the **Details** section of the page.
+
 4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the application page.
+
 5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and Operations Virtual Data Source Configurations**.
+
 6. Select **Results**.
+
 7. Select the **Microsoft HR Data Source** record.
+
 8. Enter the required information for the data source configuration.
+
    - **Target URL**: The URL of your Human Resources namespace.
    - **Tenant ID**: The Azure AD tenant ID.
-   - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You obtained this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure).
-   - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You obtained this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure)
+   - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure).
+   - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-Microsoft-Azure).
+
 9. Select **Save & Close**.
 
-![Microsoft HR Data Source](/images/MicrosoftHRDataSource.jpg)
-
-
+   ![Microsoft HR Data Source](/media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 ### Grant app permissions in Human Resources
 
-You must grant permissions for the two Azure Active Directory applications in the Human Resources application. The first app is the one created for your tenant in the Microsoft Azure portal. The second is Microsoft's Dynamics 365 HR Virtual Entity app installed in the Power Apps environment. 
+You must grant permissions for the two Azure AD applications in Human Resources:
+
+- The app created for your tenant in the Microsoft Azure portal
+- The Dynamics 365 HR Virtual Entity app installed in the Power Apps environment 
 
 1. In Human Resources, open the **Azure Active Directory applications** page.
+
 2. Select **New** to create a new application record:
+
     - In the **Client Id** field, enter the client ID of the app you registered in the Microsoft Azure portal.
     - In the **Name** field, enter the name of the app you registered in the Microsoft Azure portal.
     - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power apps environment.
+
 3. Select **New** to create a second application record:
+
     - **Client Id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
     - **Name**: Dynamics 365 HR Virtual Entity
     - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power Apps environment.
 
-
 ## Generate virtual entities
 
-After setup is complete, you are able to select the virtual entities you want to generate and enable in your CDS instance.
+When setup completes, you can select the virtual entities you want to generate and enable in your Common Data Service instance.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. In the Environments list, select the Power Apps environment associated with your Human Resources instance.
-3. Select the **Environment URL** in the Details section of the page.
-4. In the Solution Health Hub, select the **Advanced Find** icon in the icon group to the right of the top application page.
-5. On the Advanced Find page, in the **Look for** drop-down list, select **Available HR Entities**.
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. Select the **Environment URL** in the **Details** section of the page.
+
+4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the page.
+
+5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Available HR Entities**.
+
 6. Use the filter options to find the entity or entities you want to enable.
+
 7. Select an entity from the list.
+
 8. On the entity page, change the **Has Been Generated** property to **Yes** for the entity.
+
 9. Save and close the entity page.
 
 This enables the virtual entity in your environment.
 
-![Available HR Entities](/images/AvailableHREntities.jpg)
+![Available HR Entities](/media/hr-admin-integration-virtual-entities-available.jpg)
 
-!Note: You can generate multiple virtual entities at once by using the Change Multiple Records page. Select multiple records on the page, and select the **Edit** action on the ribbon. You are then able to change the **Has Been Generated** property for all selected records.
+> [!NOTE]
+> You can generate multiple virtual entities at once by using the **Change Multiple Records** page. Select multiple records on the page, and select **Edit** on the ribbon. You can then change the **Has Been Generated** property for all selected records.
 
-!Note: In upcoming releases of Human Resources, this process to generate the virtual entities will be controlled in a page in the Human Resources application, streamlining the process.
+> [!NOTE]
+> To streamline the process of generating virtual entities in future releases, the process will occur in a page in Human Resources.
 
+## See also
 
-##Related Reading
-
-- [What is Common Data Service?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)
-- [Entity overview](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/entity-overview)
-- [Entity relationships overview](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/relationships-overview)
-- [Create and edit virtual entities that contain data from an external data source](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/create-edit-virtual-entities)
-- [What is Power Apps portals?](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
-- [Overview of creating apps in Power Apps](https://docs.microsoft.com/en-us/powerapps/maker/)
+[What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Create and edit virtual entities that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
+[Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
