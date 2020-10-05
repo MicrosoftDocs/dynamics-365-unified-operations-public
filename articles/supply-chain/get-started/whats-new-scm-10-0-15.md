@@ -44,7 +44,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Cloud and edge
+- Cloud and edge scale units
 - [Create and process transfer orders from the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)
 - [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)
 - [Engineering Change Management](#)
