@@ -46,7 +46,7 @@ Enable the following features in the **Feature management** workspace:
 - (Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning
 - Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order
 
-For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about Feature management.
+For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. For more information, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).   
 
@@ -77,7 +77,7 @@ You can configure the prices that will be used when processing stock transfers f
 You must configure the **Interim transit** account, which is done on the following pages:
 
 - In the **Inventory management** module, on the **Posting** page, on the **Transfer order** tab, specify the **Interim transit** account.
-- On the **Tax setup** page, click **Setup**, and on the **Setup** page specify the **Interim transit for stock transfer** account for all GST components that may be created for GST on stock transfer. For more information, see [Define main accounts](apac-ind-gst-map-configuration-tax-types.md#define-main-accounts-1) for more information on the posting setup for GST.
+- On the **Tax setup** page, click **Setup**, and on the **Setup** page specify the **Interim transit for stock transfer** account for all GST components that may be created for GST on stock transfer. For more information, see [Define main accounts](apac-ind-gst-map-configuration-tax-types.md#define-main-accounts-1).
 
 > [!NOTE]
 > The accounts that are used to post interim transit amounts should have **Interim transit** specified in the **Posting type** field on the **Posting validation** tab of the **Main accounts** page.
@@ -123,4 +123,4 @@ You must also set up main accounts to post inventory cost for transfer orders to
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
     
-You can also cancel a previously posted stock transfer order shipment, if no receipts have been posted for this order. On the **Transfer orders** page, click **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Click **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
+You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
