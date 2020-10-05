@@ -51,20 +51,20 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 > Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
 
 ### Features not intended to be implemented
-The following feature is deprecated and will not be implemented in the modern deployment experience.
+The following feature is deprecated and will not be implemented in self-service deployment.
 
 - **Custom fonts:** Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
 
 ### Features no longer supported
-The following feature is no longer supported in the modern deployment experience.
+The following feature is no longer supported in self-service deployment.
 
 - **CFTP:** Customizations currently relying on FTP could are not supported on Self Service and should consider the following actions.
 
-1. Add retries. (This should be viewed as a short to medium term option. The current infrastructure design allows control and data calls to occasionally have matching IP. This design is subject to change.)
-2. Disabling the FTP requirement for control and data being from the same IP. (Please evaluate the security implications for your situation in this case.)
-3. Remove the use of FTP. For example, use powerapps to pull the files in and make api calls into F&O to import the files using the Data Integration framework. [Additional options here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview)
-4. Use SFTP
-Note that we have not guaranteed static outbound IP addresses for some years, as discussed [at this blog post](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
+ 1. Add retries. (This should be viewed as a short to medium term option. The current infrastructure design allows control and data calls to occasionally have matching IP. This design is subject to change.)
+ 2. Disabling the FTP requirement for control and data being from the same IP. (Please evaluate the security implications for your situation in this case.)
+ 3. Remove the use of FTP. For example, use powerapps to pull the files in and make api calls into F&O to import the files using the Data Integration framework. [Additional options here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview)
+ 4. Use SFTP
+ Note that we have not guaranteed static outbound IP addresses for some years, as discussed [at this blog post](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
 
  Our general recommendation is to follow item 3. Do not use a direct connection from Dynamics to an SFTP, instead use a Logic App in between the two. With the Logic app you have   two options:
 
