@@ -1,15 +1,36 @@
 ---
-title: 
-description: 
+# required metadata
+
+title: Configure the production floor execution interface
+description: This topic describes how to create one or more configurations production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific for that browser and device. In the configuration you set the policies that must be applicable for a specific usage.
+author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
+ms.prod: 
 ms.service: dynamics-ax-applications
-author: 
-ms.author: 
-manager: tfehr
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: johanho
+ms.search.validFrom: 2020-10-05
+ms.dyn365.ops.version: Release 10.0.15
 ---
 
 # Configure the production floor execution interface
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The production floor execution interface is used by shop floor workers to register their daily work, such as when starting a job, reporting feedback on jobs, registering indirect activities, and reporting absence. These registrations are the basis for tracking progress and cost on production orders and for calculating the basis for the workers' pay.
 

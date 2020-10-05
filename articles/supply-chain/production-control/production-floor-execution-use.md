@@ -1,15 +1,36 @@
 ---
-title: 
-description: 
+# required metadata
+
+title: How workers use the production floor execution interface
+description: This topic describes how to use the production floor execution interface from a worker's point of view.
+author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
+ms.prod: 
 ms.service: dynamics-ax-applications
-author: 
-ms.author: 
-manager: tfehr
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: johanho
+ms.search.validFrom: 2020-10-05
+ms.dyn365.ops.version: Release 10.0.15
 ---
 
 # How workers use the production floor execution interface
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The production floor execution interface is optimized for touch interaction. It's design provides visual contrast that meets accessibility requirements for shop floor environments. It offers the same functional capabilities as the job card device, but also offers the ability to start multiple jobs in parallel from a job list (this is also known as job bundling). From the job list, workers can open a Dynamics 365 Guide to get visual instructions using a HoloLens.
 
@@ -17,7 +38,7 @@ The production floor execution interface is optimized for touch interaction. It'
 
 A supervisor or technical staff must prepare the device and open the right page in Supply Chain Management before the workers can start using it. To learn more about how to set up the device, see [Set up a device to run the production floor execution interface](production-floor-execution-setup.md).
 
-Once the device has been prepared, it shows the sign-in page, which shows information about the status of jobs for the local work cell (updated periodically). Workers can sign inhere using their badge ID. Workers don't need to have a user account for Supply Chain Management, but they must have a *time registered worker* account to use when signing in.
+Once the device has been prepared, it shows the sign-in page, which shows information about the status of jobs for the local work cell (updated periodically). Workers sign in here using their badge IDs. Workers don't need to have a user account for Supply Chain Management, but they must have a *time registered worker* account to use when signing in.
 
 ![The production floor execution interface sign in page](media/pfei-sign-in-page.png "The production floor execution interface sign-in page")
 

@@ -1,15 +1,36 @@
 ---
-title: 
-description: 
+# required metadata
+
+title: Set up a device to run the production floor execution interface
+description: The production floor execution interface is set up for each specific device on the production floor. Companies typically set up each device differently depending on the purpose the device serves. For example, a company could have one device in the reception area, where workers clock in and clock out, and another on the shop floor where workers manage their jobs.
+author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
+ms.prod: 
 ms.service: dynamics-ax-applications
-author: 
-ms.author: 
-manager: tfehr
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: johanho
+ms.search.validFrom: 2020-10-05
+ms.dyn365.ops.version: Release 10.0.15
 ---
 
 # Set up a device to run the production floor execution interface
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The production floor execution interface is set up for each specific device on the production floor. Companies typically set up each device differently depending on the purpose the device serves. For example, a company could have one device in the reception area, where workers clock in and clock out, and another on the shop floor where workers manage their jobs.
 
