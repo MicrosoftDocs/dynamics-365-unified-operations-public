@@ -70,7 +70,7 @@ Our general recommendation is to remove the use of FTP. Do not use a direct conn
 
 - Use the native SFTP connector (as described in [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp)), which still requires some port opening on the firewall to call the on-premises service. Consider that for Logic Apps, the list of IPs is much shorter than the entire [region whitelisting](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config#outbound) and the [limits and configuration in Power Automate](https://docs.microsoft.com/power-automate/limits-and-config#logic-apps).
 
-- Use the “Local Filesystem” connector, as described in [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP whitelisting which is deprecated in self-service while keeping very high level of security.
+- Use the “Local Filesystem” connector, as described in [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway for Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP whitelisting, which is deprecated in self-service deployment, while keeping a very high level of security.
 
 
 > [!NOTE]
